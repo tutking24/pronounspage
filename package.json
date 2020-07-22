@@ -1,0 +1,26 @@
+{
+  "name": "avris-zaimki",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "canvas": "^2.6.1",
+    "nuxt": "^2.13.0",
+    "vue-matomo": "^3.13.5-0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "git+ssh://git@gitlab.com:Avris/FontAwesomePro.git",
+    "avris-daemonise": "^0.0.2",
+    "bootstrap": "^4.5.0",
+    "clipboard": "^2.0.6",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
+  }
+}
