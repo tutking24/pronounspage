@@ -212,21 +212,11 @@ export const templates = {
         'honorific': 'panu',
     }, false, [
         new Article(
-            'Rozmowa Ewy Tomaszewicz',
-            'Magdalenę Stonawską i Loë Fjorsigviss łączy nie tylko miłość, ale też pasja: obie lewicują fanów na konwentach fantastycznych.',
+            'Rozmowa Ewy Tomaszewicz z Loë Fjorsigviss i Magdaleną Stonawską',
+            'Tęcza w fandomie',
             'w: „Replika” #83',
             2020,
-            ['<em>– Powiedzcie kilka słów o sobie.</em>\n' +
-            '<em>MS:</em> Nazywam się Magdalena Stonawska i lewicuję fanów fantastyki, to znaczy staram się wpuszczać do życia fandomu tematykę tęczowo-równościową, której jest tam moim zdaniem za mało.\n' +
-            '<em>LF:</em> Mnie wszyscy znają jako Loë Fjorsigviss. Organizuję konwenty fantastyczne od prawie pięciu lat. Lewicowanie fandomu przyszło mi naturalnie.\n' +
-            '<em>– Loë, ty osobą niebinarną, prawda?</em>\n' +
-            '<em>LF:</em> Tak, nic jestem dziewczynką. I zdecydowanie nie jestem chłopcem\n.' +
-            '<em>– Jak powinnam do ciebie mówić?</em>\n' +
-            '<em>LF:</em> Formy żeńskie są w porządku, używam ich z przyzwyczajenia, ale coraz częściej korzystam też z zaimków „dukajowych”.\n' +
-            '<em>– Czyli?</em>\n' +
-            '<em>LF:</em> Jacek Dukaj w „Perfekcyjnej niedoskonałości” opisał postaci postludzkie (Post Haman Being, phoebe), które nie miały fizycznego ciała i ukazywały się w formie hologramów. Używały neutralnych zaimków. Dukaj nie chciał używać zaimków nijakich, więc stworzył formy z „u”: „onu zrobiłu”, „jenu sprawa” itp. Obecnie to jedna z opcji coraz chętniej wybieranych przez osoby niebinarne w Polsce.\n' +
-            '<em>– Na pewno zdarzyło ci się dyszeć, że wymyślanie kolejnych form i zaimków to jakaś fanaberia. Dlaczego to, jak się do ciebie zwracają inni, jest ważne?</em>\n' +
-            '<em>LF:</em> Od kiedy pamiętam, uwierało mnie mówienie o sobie jako o dziewczynie czy kobiecie. Nie utożsamiałum się z tym. Zorientowałum się, że mogę nie być kobietą, nie ze względu na dysforię płciową, tylko ze względu na euforię. Kiedy dopuściłum do siebie myśl, że są inne opcje, zaczęłum esksperymentować i poprosiłum parę znajomych osób, żeby spróbowały tak się do mnie zwracać. Gdy zaczęły tak do mnie mówić, poczułum ogromną ulgę. Kiedy mówię o sobie, ta inna forma przychodzi mi z trudem, ciągle samu mam z nią problem, ale to uczucie, kiedy inni mówią o mnie w ten sposób, powiedziało mi, że to może być faktycznie dobry kierunek, że nie jestem dziewczyną ani chłopakiem, ale kimś poza tym. I to było naprawdę wspaniałe i wyzwalające uczucie.'],
+            ['<em>[Loë Fjorsigviss]</em> Od kiedy pamiętam, uwierało mnie mówienie o sobie jako o dziewczynie czy kobiecie. Nie utożsamiałum się z tym. Zorientowałum się, że mogę nie być kobietą, nie ze względu na dysforię płciową, tylko ze względu na euforię. Kiedy dopuściłum do siebie myśl, że są inne opcje, zaczęłum esksperymentować i poprosiłum parę znajomych osób, żeby spróbowały tak się do mnie zwracać. Gdy zaczęły tak do mnie mówić, poczułum ogromną ulgę. Kiedy mówię o sobie, ta inna forma przychodzi mi z trudem, ciągle samu mam z nią problem, ale to uczucie, kiedy inni mówią o mnie w ten sposób, powiedziało mi, że to może być faktycznie dobry kierunek, że nie jestem dziewczyną ani chłopakiem, ale kimś poza tym. I to było naprawdę wspaniałe i wyzwalające uczucie.'],
             '',
             'https://replika-online.pl/spis-tresci-83/',
         ),
