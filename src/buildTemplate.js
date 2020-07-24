@@ -2,11 +2,22 @@ import {Template} from "./classes";
 import Compressor from "./compressor";
 import {templates} from "./data";
 
+const templatesWithAliases = {}
+for (let base in templates) {
+    if (templates.hasOwnProperty(base)) {
+        const template = templates[base];
+        templatesWithAliases[base] = template;
+        for (let alias of template.aliases) {
+            templatesWithAliases[alias] = template;
+        }
+    }
+}
+
 export default (path) => {
     const templateStr = path.split(',');
-    const base = templates[templateStr[0]]
+    const base = templatesWithAliases[templateStr[0]]
 
     return templateStr.length === 1
-        ? templates[templateStr[0]]
+        ? templatesWithAliases[templateStr[0]]
         : Template.from(Compressor.uncompress(templateStr, base ? base.toArray() : null));
 }

@@ -35,7 +35,7 @@ export const templates = {
         'verb_go': 'szedł',
         'verb_o': 'ó',
         'honorific': 'pan',
-    }, false),
+    }, false, [], ['on/jego']),
     ona: new Template('Rodzaj żeński', {
         'pronoun_n': 'ona',
         'pronoun_g': 'jej',
@@ -54,7 +54,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pani',
-    }, false),
+    }, false, ['ona/jej']),
     ono: new Template('Rodzaj nijaki', {
         'pronoun_n': 'ono',
         'pronoun_g': 'jego',
@@ -201,7 +201,7 @@ export const templates = {
             2020,
             ['Znalazłom ten portfel na przystanku, wciśnięty między krzesełka. Podniosłom go, trochę bezmyślnie, trochę dla zabicia czasu. Autobus miał przyjechać za kwadrans. Mogłom co prawda iść piechota ̨, ale było ciemno, zimno i lało, a ja byłom bardzo zmęczone. Usiadłom więc na plastikowym krzesełku i otworzyłom portfel.'],
         ),
-    ]),
+    ], ['ono/jego']),
     onu: new Template('Rodzaj postpłciowy, dukaizmy', {
         'pronoun_n': 'onu',
         'pronoun_g': 'jenu',
@@ -260,7 +260,7 @@ export const templates = {
             2020,
             ['Émeraude odpięłu się i pokazału palec lekarce. Przełączału się między dwoma trybami – wszystko albo nic. Kilka miesięcy temu doznału kontuzji, naciągając mocno ścięgno zginacza.'],
         ),
-    ]),
+    ], ['unu/jenu']),
     'onæ': new Template('Formy z „ae” lub ligaturą „æ”', {
         'pronoun_n': 'onæ',
         'pronoun_g': 'jæ',
@@ -279,7 +279,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panæ',
-    }, false, []),
+    }, false, [], ['onæ/jæ']),
     oni: new Template('Formy męskoosobowe liczby mnogiej', {
         'pronoun_n': 'oni',
         'pronoun_g': 'ich',
@@ -302,7 +302,7 @@ export const templates = {
         new Book('Karolina Fedyk', 'Skrzydła', '', 2019),
         new Book('Weronika Mamuna', 'Obca, która była', 'w: „Tęczowe i fantastyczne”', 2020),
         new Book('Agnieszka Żak', 'Dorastanie w czasach cyborgizacji', 'w: „Tęczowe i fantastyczne”', 2020),
-    ]),
+    ], ['oni/ich']),
     one: new Template('Formy niemęskoosobowe liczby mnogiej', {
         'pronoun_n': 'one',
         'pronoun_g': 'ich',
@@ -323,7 +323,7 @@ export const templates = {
         'honorific': 'państwo',
     }, true, [
         new Book('Artur Nowrot', 'Smocze dziecko', 'w: „Tęczowe i fantastyczne”', 2020),
-    ]),
+    ], ['one/ich']),
     onx: new Template('Formy z iksem', {
         'pronoun_n': 'onx',
         'pronoun_g': 'jex',
@@ -342,7 +342,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panx',
-    }, false, []),
+    }, false, [], ['onx/jex']),
     on_: new Template('Formy z podkreślnikiem', {
         'pronoun_n': 'on_',
         'pronoun_g': 'je_',
@@ -363,7 +363,7 @@ export const templates = {
         'honorific': 'pan_',
     }, false, [
         new Book('R.S. Benedict', 'Moje angielskie imię', 'w: „Nowa Fantastyka 3/2019', 2019),
-    ]),
+    ], ['on_/je_']),
     vono: new Template('Rodzaj nijaki z neozaimkami vono/viego', {
         'pronoun_n': 'vono',
         'pronoun_g': 'viego',
@@ -390,7 +390,7 @@ export const templates = {
             2003,
             ['Kuwale było tylko pół pokolenia młodsze ode mnie i prawdopodobnie mieliśmy wiele podobnych poglądów na świat, vono jednak nieco ekstremalniej wierzyło we wszystko to, w co wierzyliśmy my. Nauka i technologia zdawały się dawać vu wszystko, czego chciało.'],
         ),
-    ]),
+    ], ['vono/viego']),
 };
 
 export const otherSources = [
