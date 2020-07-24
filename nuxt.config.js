@@ -1,6 +1,7 @@
 const title = 'Zaimki.pl';
 const description = 'To narzędzie udostępnia linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
+const colour = '#C71585';
 
 export default {
     mode: 'universal',
@@ -14,7 +15,7 @@ export default {
 
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: title },
-            { hid: 'theme-color', name: 'theme-color', content: '#C71585' },
+            { hid: 'theme-color', name: 'theme-color', content: colour },
 
             { hid: 'og:type', property: 'og:type', content: 'article' },
             { hid: 'og:title', property: 'og:title', content: title },
@@ -41,6 +42,16 @@ export default {
     modules: [
         '@nuxtjs/pwa',
     ],
+    pwa: {
+        manifest: {
+            name: title,
+            short_name: title,
+            description: description,
+            background_color: '#ffffff',
+            theme_color: colour,
+            lang: 'pl',
+        }
+    },
     build: {},
     env: {
       baseUrl: process.env.BASE_URL
