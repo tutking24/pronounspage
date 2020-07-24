@@ -6,7 +6,8 @@
         </p>
 
         <p>
-            To narzędzie udostępnia linki do przykładów użycia (w prostych zdaniach oraz w literaturze i prasie)
+            To narzędzie udostępnia linki do przykładów użycia
+            (w prostych zdaniach oraz w literaturze, prasie, filmach i serialach)
             zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”,
             lecz także form niebinarnych.
         </p>

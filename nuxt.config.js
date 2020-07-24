@@ -14,7 +14,7 @@
  */
 
 const title = 'Zaimki.pl';
-const description = 'To narzędzie udostępnia linki do przykładów użycia (w prostych zdaniach oraz w literaturze i prasie) zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
+const description = 'To narzędzie udostępnia linki do przykładów użycia (w prostych zdaniach oraz w literaturze, prasie, filmach i serialach) zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
 
 export default {

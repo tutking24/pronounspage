@@ -3,7 +3,7 @@
         <Homepage/>
         <h1>
             <Icon v="books"/>
-            Niebinarna polszczyzna w literaturze i prasie
+            Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
         </h1>
 
         <LiteratureMenu all/>
