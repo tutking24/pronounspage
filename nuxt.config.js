@@ -1,18 +1,3 @@
-/*
-<meta property="og:type" content="article" />
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:url" content="{{ app.request.uri }}" />
-<meta property="og:image" content="{{ image }}" />
-<meta property="og:logo" content="{{ app.request.uriForPath(asset('build/images/avatar-square.jpg')) }}" />
-<meta property="og:site_name" content="{{ esse('main.title') }}" />
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ description }}">
-<meta name="twitter:image" content="{{ image }}">
-<meta name="twitter:site" content="{{ esse('about/contact.data.twitter.niceUrl') }}" />
- */
-
 const title = 'Zaimki.pl';
 const description = 'To narzędzie udostępnia linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
