@@ -498,7 +498,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panø',
-    }, false, [], ['onø/jeø'], 'Formy te używają samogłoski nosowej <a href="https://pl.wikipedia.org/wiki/%C3%98">„ø”</a>, która występowała w pisowni polszczyzny od XII do XV wieku, i została zastąpiona przez „ą” i „ę”. Miała zatem zastosowanie dosyć zbliżone do obecnego w powyższych formach. '),
+    }, false, false, [], ['onø/jeø'], 'Formy te używają samogłoski nosowej <a href="https://pl.wikipedia.org/wiki/%C3%98">„ø”</a>, która występowała w pisowni polszczyzny od XII do XV wieku, i została zastąpiona przez „ą” i „ę”. Miała zatem zastosowanie dosyć zbliżone do obecnego w powyższych formach. '),
     vono: new Template('Rodzaj nijaki z neozaimkami vono/viego', {
         'pronoun_n': 'vono',
         'pronoun_g': 'viego',
