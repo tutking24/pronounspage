@@ -25,6 +25,38 @@ const zapachKosmosu = new Book(
     'oprócz tego także postaci niebinarne używające męskich i żeńskich form',
 );
 
+const confirmatio = new Book(
+    'Bartek Biedrzycki',
+    'Confirmatio Vir Llamki, albo o wizycie Nieziemca Macka Simma na Starej Ziemi',
+    'w: „Dzieje się”',
+    2018,
+    ['Usiedli. Vir wskoczyło na łóżko i zainstalowało się tam po turecku, Simm przysiadł na obrotowym krześle przy biurku.\n– Jak dorosnę, to chcę polecieć na Marsa.\n– Przecież już byłoś u mnie dwa razy.\n– Ale ja chcę na stałe'],
+);
+
+const perfekcyjna = new Book(
+    'Jacek Dukaj',
+    'Perfekcyjna niedoskonałość',
+    '',
+    2003,
+    ['– Do Creytona powinniśmy dotrzeć w ciągu trzydziestu ośmiu k-godzin. Nawet zważywszy na utratę krwi pana i stahs McPherson– \n– Chciałuś powiedzieć – przerwał nu Zamoyski – powinniśmy byli tam dotrzeć. Samu twierdzisz, że po odcięciu od Plateau nie wiesz nawet, w którą stronę lecimy. Swoją drogą, zastanawiam się, jak to możliwe. Przecież chyba pamiętasz, gdzie celowałuś.'],
+);
+
+const silaNizsza = new Book(
+    'Marta Kisiel',
+    'Siła niższa',
+    '',
+    2016,
+    ['– Ja co prawda słabo znam gościa - odparł po kilku chwilach - ale tak sobie myślę, że on to nie lubi nikogo. \n– Nawet swojego człowieka? Przecież jest aniołem stróżem. Ja swoich zawsze lubiłom. Jak miałobym im stróżować bez lubienia?'],
+);
+
+const smoczaPerla = new Book(
+    'Yoon Ha Lee',
+    'Smocza perła',
+    'tłumaczenie: Agnieszka Fulińska i Aleksandra Klęczar',
+    2019,
+    ['– Idzie ci lepiej niż zwykle – oznajmiło w końcu Sujin. Nie zauważyłam, że pogrążone w lekturze książki dotyczącej chemii zwracało na nas w ogóle uwagę.'],
+);
+
 export const templates = {
     on: new Template('Rodzaj męski', {
         'pronoun_n': 'on',
@@ -46,6 +78,9 @@ export const templates = {
         'verb_o': 'ó',
         'honorific': 'pan',
     }, false, [
+        confirmatio,
+        perfekcyjna,
+        silaNizsza,
         zapachKosmosu,
         new Book('Ursula K. Le Guin', 'Lewa ręka ciemności', 'tłum. Lech Jęczmyk', 1987, [], 'postać niebinarna używająca form męskich'),
     ], ['on/jego']),
@@ -69,6 +104,8 @@ export const templates = {
         'verb_o': 'o',
         'honorific': 'pani',
     }, false, [
+        smoczaPerla,
+        zapachKosmosu,
         new Book('Ann Leckie', 'Zabójcza sprawiedliwość', 'tłum. Danuta Górska', 2015, [], 'postać niebinarna używająca form żeńskich'),
         new Book('Ann Leckie', 'Zabójczy miecz', 'tłum. Danuta Górska', 2016, [], 'postać niebinarna używająca form żeńskich'),
         new Book('Ursula K. Le Guin', 'Królowa Zimy', 'w: „Wszystkie strony świata”', 'tłum. Lech Jęczmyk', 1980, 'postać niebinarna używająca form żeńskich'),
@@ -115,13 +152,7 @@ export const templates = {
             '',
             'https://www.netflix.com/watch/70177979',
         ),
-        new Book(
-            'Bartek Biedrzycki',
-            'Confirmatio Vir Llamki, albo o wizycie Nieziemca Macka Simma na Starej Ziemi',
-            'w: „Dzieje się”',
-            2018,
-            ['Usiedli. Vir wskoczyło na łóżko i zainstalowało się tam po turecku, Simm przysiadł na obrotowym krześle przy biurku.\n– Jak dorosnę, to chcę polecieć na Marsa.\n– Przecież już byłoś u mnie dwa razy.\n– Ale ja chcę na stałe'],
-        ),
+        confirmatio,
         new Book(
             'Anna Kańtoch',
             'Niepełnia',
@@ -148,26 +179,14 @@ export const templates = {
             '',
             2019,
         ),
-        new Book(
-            'Marta Kisiel',
-            'Siła niższa',
-            '',
-            2016,
-            ['– Ja co prawda słabo znam gościa - odparł po kilku chwilach - ale tak sobie myślę, że on to nie lubi nikogo. \n– Nawet swojego człowieka? Przecież jest aniołem stróżem. Ja swoich zawsze lubiłom. Jak miałobym im stróżować bez lubienia?'],
-        ),
+        silaNizsza,
         new Book(
             'Maja Lidia Kossakowska',
             'Siewca wiatru',
             '',
             2004,
         ),
-        new Book(
-            'Yoon Ha Lee',
-            'Smocza perła',
-            'tłumaczenie: Agnieszka Fulińska i Aleksandra Klęczar',
-            2019,
-            ['– Idzie ci lepiej niż zwykle – oznajmiło w końcu Sujin. Nie zauważyłam, że pogrążone w lekturze książki dotyczącej chemii zwracało na nas w ogóle uwagę.'],
-        ),
+        smoczaPerla,
         new Book(
             'Stanisław Lem',
             'Maska',
@@ -330,13 +349,7 @@ export const templates = {
             '',
             'https://replika-online.pl/spis-tresci-83/',
         ),
-        new Book(
-            'Jacek Dukaj',
-            'Perfekcyjna niedoskonałość',
-            '',
-            2003,
-            ['– Do Creytona powinniśmy dotrzeć w ciągu trzydziestu ośmiu k-godzin. Nawet zważywszy na utratę krwi pana i stahs McPherson– \n– Chciałuś powiedzieć – przerwał nu Zamoyski – powinniśmy byli tam dotrzeć. Samu twierdzisz, że po odcięciu od Plateau nie wiesz nawet, w którą stronę lecimy. Swoją drogą, zastanawiam się, jak to możliwe. Przecież chyba pamiętasz, gdzie celowałuś.'],
-        ),
+        perfekcyjna,
         zapachKosmosu,
         new Book(
             'Artur Nowrot',
@@ -353,7 +366,7 @@ export const templates = {
             2020,
             ['Émeraude odpięłu się i pokazału palec lekarce. Przełączału się między dwoma trybami – wszystko albo nic. Kilka miesięcy temu doznału kontuzji, naciągając mocno ścięgno zginacza.'],
         ),
-    ], ['unu/jenu']),
+    ], ['onu/jenu']),
     'onæ': new Template('Formy z „ae” lub ligaturą „æ”', {
         'pronoun_n': 'onæ',
         'pronoun_g': 'jæ',

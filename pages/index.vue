@@ -197,7 +197,7 @@
                 return null;
             },
             usedBaseEquals() {
-                return this.templates[this.usedBase].equals(this.selectedTemplate);
+                return this.usedBase && this.templates[this.usedBase].equals(this.selectedTemplate);
             },
             longLink() {
                 const base = this.templates[this.selectedTemplate.morphemes.pronoun_n];
