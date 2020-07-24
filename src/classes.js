@@ -132,13 +132,13 @@ export const morphemes = [
 
 const escape = s => {
     return (s || '')
-        .replace(',', '')
-        .replace('!', '')
-        .replace('.', '')
-        //.replace('/', '%2F')
-        .replace('#', '%23')
-        .replace('?', '%3F')
-        .replace('&', '%26');
+        .replace(/,/g, '')
+        .replace(/!/g, '')
+        .replace(/\./g, '')
+        //.replace(/\/', '%2F')
+        .replace(/#/g, '%23')
+        .replace(/\?/g, '%3F')
+        .replace(/&/g, '%26');
 }
 
 export class Template {
