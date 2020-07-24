@@ -142,9 +142,10 @@ const escape = s => {
 }
 
 export class Template {
-    constructor (description, morphemes, plural, sources = [], aliases = [], history = null) {
+    constructor (description, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
         this.description = description;
         this.morphemes = morphemes
+        this.pluralHonorific = pluralHonorific;
         this.plural = plural;
         this.sources = sources;
         this.aliases = aliases;
@@ -160,7 +161,7 @@ export class Template {
     }
 
     clone() {
-        return new Template(this.description, clone(this.morphemes), this.plural);
+        return new Template(this.description, clone(this.morphemes), this.plural, this.pluralHonorific);
     }
 
     equals(other) {
@@ -171,6 +172,7 @@ export class Template {
         return [
             ...Object.values(this.morphemes).map(s => escape(s)),
             this.plural ? 1 : 0,
+            this.pluralHonorific ? 1 : 0,
             escape(this.description),
         ];
     }
@@ -180,16 +182,16 @@ export class Template {
     }
 
     static from(data) {
-        if (data.length === morphemes.length + 1) {
+        if (data.length === morphemes.length + 2) {
             data.push('');
         }
 
-        if (data.length !== morphemes.length + 2
+        if (data.length !== morphemes.length + 3
             || data[0].length === 0
             || data[data.length - 1].length > 48
-            || data[data.length - 2].length === 0
             || ![0, 1].includes(parseInt(data[morphemes.length]))
-            || data.slice(1, data.length - 2).filter(s => s.length > 7).length
+            || ![0, 1].includes(parseInt(data[morphemes.length + 1]))
+            || data.slice(1, data.length - 3).filter(s => s.length > 7).length
         ) {
             return null;
         }
@@ -199,6 +201,6 @@ export class Template {
             m[morphemes[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(data[data.length - 1], m, parseInt(data[morphemes.length]) === 1)
+        return new Template(data[data.length - 1], m, parseInt(data[morphemes.length]) === 1, parseInt(data[morphemes.length + 1]) === 1)
     }
 }

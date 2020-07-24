@@ -2,7 +2,7 @@
     <div v-if="sources.length">
         <h2 class="h4">
             <Icon v="books"/>
-            Przykłady z literatury i prasy:
+            Przykłady z literatury, prasy, filmów i seriali:
         </h2>
 
         <LiteratureMenu/>

@@ -13,7 +13,11 @@ export const examples = [
     Example.parse('Po{verb_go}{verb_middle}m z {pronoun_i} do szkoły.|Po{verb_go}śmy z {pronoun_i} do szkoły.'),
     Example.parse('Rozmawialiśmy o {pronoun_l} ostatnio.'),
     Example.parse('Każd{adjective_n} z nich chciał{verb_end_about} czego innego.|Wszys{pronoun_all} z nich chci{verb_middle} czego innego.'),
-    Example.parse('To miło, że nas {honorific} odwiedził{verb_end_about}.|To miło, że nas {honorific} odwiedzi{verb_end_about}.'),
+];
+
+export const examplesHonorific = [
+    Example.parse('To miło, że nas {honorific} odwiedza.|To miło, że nas {honorific} odwiedzają.'),
+    Example.parse('Czy będzie {honorific} kontynuować subskrypcję?|Czy będą {honorific} kontynuować subskrypcję?'),
 ];
 
 const zapachKosmosu = new Book(
@@ -77,7 +81,7 @@ export const templates = {
         'verb_go': 'szedł',
         'verb_o': 'ó',
         'honorific': 'pan',
-    }, false, [
+    }, false, false, [
         confirmatio,
         perfekcyjna,
         silaNizsza,
@@ -103,7 +107,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pani',
-    }, false, [
+    }, false, false, [
         smoczaPerla,
         zapachKosmosu,
         new Book('Ann Leckie', 'Zabójcza sprawiedliwość', 'tłum. Danuta Górska', 2015, [], 'postać niebinarna używająca form żeńskich'),
@@ -129,7 +133,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [
+    }, false, false, [
         new Article(
             'Małgorzata Goślińska',
             'Zrobimy z ciebie mężczyznę',
@@ -259,7 +263,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [], []),
+    }, false, false, [], []),
     'ono/jejgo': new Template('Rodzaj nijaki', {
         'pronoun_n': 'ono',
         'pronoun_g': 'jejgo',
@@ -279,7 +283,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [], []),
+    }, false, false, [], []),
     'ono/jeno': new Template('Neorodzaj gramatyczny, z elementami rodzaju nijakiego i dukaizmów', {
         'pronoun_n': 'ono',
         'pronoun_g': 'jeno',
@@ -299,7 +303,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [], []),
+    }, false, false, [], []),
     'ono/jenu': new Template('Rodzaj nijaki z dukaizmami zamiast form męskich', {
         'pronoun_n': 'ono',
         'pronoun_g': 'jenu',
@@ -319,7 +323,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [], []),
+    }, false, false, [], []),
     onu: new Template('Rodzaj postpłciowy, dukaizmy', {
         'pronoun_n': 'onu',
         'pronoun_g': 'jenu',
@@ -339,7 +343,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panu',
-    }, false, [
+    }, false, false, [
         new Article(
             'Rozmowa Ewy Tomaszewicz z Loë Fjorsigviss i Magdaleną Stonawską',
             'Tęcza w fandomie',
@@ -386,7 +390,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panæ',
-    }, false, [], ['onæ/jæ']),
+    }, false, false, [], ['onæ/jæ']),
     oni: new Template('Formy męskoosobowe liczby mnogiej', {
         'pronoun_n': 'oni',
         'pronoun_g': 'ich',
@@ -406,7 +410,7 @@ export const templates = {
         'verb_go': 'szli',
         'verb_o': 'o',
         'honorific': 'państwo',
-    }, true, [
+    }, true, true, [
         new Book('Karolina Fedyk', 'Skrzydła', '', 2019),
         new Book('Weronika Mamuna', 'Obca, która była', 'w: „Tęczowe i fantastyczne”', 2020),
         new Book('Agnieszka Żak', 'Dorastanie w czasach cyborgizacji', 'w: „Tęczowe i fantastyczne”', 2020),
@@ -430,7 +434,7 @@ export const templates = {
         'verb_go': 'szły',
         'verb_o': 'o',
         'honorific': 'państwo',
-    }, true, [
+    }, true, true, [
         new Book('Artur Nowrot', 'Smocze dziecko', 'w: „Tęczowe i fantastyczne”', 2020),
     ], ['one/ich']),
     onx: new Template('Formy z iksem', {
@@ -452,7 +456,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panx',
-    }, false, [], ['onx/jex']),
+    }, false, false, [], ['onx/jex']),
     on_: new Template('Formy z podkreślnikiem', {
         'pronoun_n': 'on_',
         'pronoun_g': 'je_',
@@ -472,7 +476,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pan_',
-    }, false, [
+    }, false, false, [
         new Book('R.S. Benedict', 'Moje angielskie imię', 'w: „Nowa Fantastyka” 3/2019', 2019),
     ], ['on_/je_']),
     onø: new Template('Formy z samogłoską nosową', {
@@ -514,7 +518,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pań',
-    }, false, [
+    }, false, false, [
         new Book(
             'Greg Egan',
             'Stan wyczerpania',

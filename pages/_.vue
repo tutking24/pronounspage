@@ -33,6 +33,12 @@
                         <span v-else>{{part.str}}</span>
                     </span>
                 </li>
+                <li v-for="example in examplesHonorific" class="my-1">
+                    <span v-for="part in example.parts[selectedTemplate.pluralHonorific]">
+                        <strong v-if="part.variable">{{selectedTemplate.morphemes[part.str]}}</strong>
+                        <span v-else>{{part.str}}</span>
+                    </span>
+                </li>
             </ul>
         </section>
 
@@ -64,13 +70,14 @@
 </template>
 
 <script>
-    import { examples, templates } from "~/src/data";
+    import { examples, examplesHonorific, templates } from "~/src/data";
     import { buildTemplate, getTemplate } from "../src/buildTemplate";
 
     export default {
         data() {
             return {
                 examples: examples,
+                examplesHonorific: examplesHonorific,
                 templates: templates,
                 getTemplate: getTemplate,
 

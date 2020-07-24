@@ -66,26 +66,32 @@
                     <p>
                         Przykłady użycia w zdaniu:
                     </p>
-                    <ul>
-                        <li v-for="example in examples">
-                            <span v-for="part in example.parts[selectedTemplate.plural]">
-                                <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
-                                       :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
-                                       :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
-                                       maxlength="7"
-                                       @focus="selectedMorpheme = part.str"
-                                       @blur="selectedMorpheme = ''"
-                                />
-                                <span v-else>{{part.str}}</span>
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="my-3">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="plural" v-model="selectedTemplate.plural">
-                            <label class="custom-control-label" for="plural">Liczba mnoga</label>
+                    <template v-for="(typeExamples, isHonorific) in {0: examples, 1: examplesHonorific}">
+                        <ul>
+                            <li v-for="example in typeExamples">
+                                <span v-for="part in example.parts[bool(isHonorific) ? selectedTemplate.pluralHonorific : selectedTemplate.plural]">
+                                    <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
+                                           :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
+                                           :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
+                                           maxlength="7"
+                                           @focus="selectedMorpheme = part.str"
+                                           @blur="selectedMorpheme = ''"
+                                    />
+                                    <span v-else>{{part.str}}</span>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="my-3">
+                            <div class="custom-control custom-switch" v-if="bool(isHonorific)">
+                                <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedTemplate.pluralHonorific">
+                                <label class="custom-control-label" for="pluralHonorific">Liczba mnoga <Icon v="level-up"/></label>
+                            </div>
+                            <div class="custom-control custom-switch" v-else>
+                                <input type="checkbox" class="custom-control-input" id="plural" v-model="selectedTemplate.plural">
+                                <label class="custom-control-label" for="plural">Liczba mnoga <Icon v="level-up"/></label>
+                            </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
                 <div class="card-footer" v-if="customise && link">
                     <div class="input-group my-2">
@@ -157,7 +163,7 @@
 </template>
 
 <script>
-    import { examples, templates } from "~/src/data";
+    import { examples, examplesHonorific, templates } from "~/src/data";
     import Compressor from "../src/compressor";
     import ClipboardJS from 'clipboard';
     import { getTemplate } from "../src/buildTemplate";
@@ -166,6 +172,7 @@
         data() {
             return {
                 examples: examples,
+                examplesHonorific: examplesHonorific,
                 templates: templates,
                 getTemplate: getTemplate,
 
@@ -216,6 +223,9 @@
         methods: {
             focusLink() {
                 setTimeout(_ => this.$refs.link.select(), 100);
+            },
+            bool(v) {
+                return !!parseInt(v);
             }
         }
     }
