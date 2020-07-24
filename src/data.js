@@ -526,7 +526,7 @@ export const templates = {
             2003,
             ['Kuwale było tylko pół pokolenia młodsze ode mnie i prawdopodobnie mieliśmy wiele podobnych poglądów na świat, vono jednak nieco ekstremalniej wierzyło we wszystko to, w co wierzyliśmy my. Nauka i technologia zdawały się dawać vu wszystko, czego chciało.'],
         ),
-    ], ['vono/viego'], 'Forma została stworzona przez tłumacza Paweł Wieczorek dla oddania stworzonych przez Grega Egana form ve/vir.'),
+    ], ['vono/viego'], 'Forma została stworzona przez tłumacza Pawła Wieczorka dla oddania stworzonych przez Grega Egana form ve/vir.'),
 };
 
 export const otherSources = [
