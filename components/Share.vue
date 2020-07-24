@@ -26,7 +26,7 @@
     export default {
         props: {
             title: { default: 'Zaimki.pl' },
-            networks: { default: ['twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
+            networks: { default: _ => ['twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
         },
         data() {
             return {
