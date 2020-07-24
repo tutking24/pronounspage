@@ -97,6 +97,18 @@ export class Article extends Source {
     }
 }
 
+export class Movie extends Source {
+    icon() {
+        return 'film';
+    }
+}
+
+export class Series extends Source {
+    icon() {
+        return 'tv';
+    }
+}
+
 export const morphemes = [
     'pronoun_n',
     'pronoun_g',

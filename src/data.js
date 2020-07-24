@@ -1,4 +1,4 @@
-import { Article, Book, Example, Template } from './classes'
+import { Article, Book, Movie, Series, Example, Template } from './classes'
 
 export const examples = [
     Example.parse('Myślę, że {pronoun_n} jest bardzo mił{adjective_n}.|Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}'),
@@ -85,6 +85,16 @@ export const templates = {
             ],
             'Milo - historia życia i śmierci',
             'https://tvn24.pl/magazyn-tvn24/zrobimy-z-ciebie-mezczyzne,242,4189'
+        ),
+        new Series(
+            '',
+            'Star Trek: Następne Pokolenie, sezon 5 odcinek 17 „Wyklęci”/„Presja społeczna”',
+            'tłumaczenie: Kamil Borek',
+            1991,
+            ['– Radzisz sobie, jakbyś dorastało w wahadłowcu.\n' +
+            '– Dorastałom. Moi rodzice to piloci. Latałom z nimi, zanim umiałom chodzić.'],
+            '',
+            'https://www.netflix.com/watch/70177979',
         ),
         new Book(
             'Bartek Biedrzycki',
