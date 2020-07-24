@@ -16,6 +16,15 @@ export const examples = [
     Example.parse('To miło, że nas {honorific} odwiedził{verb_end}.|To miło, że nas {honorific} odwiedzi{verb_end}.'),
 ];
 
+const zapachKosmosu = new Book(
+    'Ginny Nawrocka',
+    'Cierpki zapach kosmosu',
+    'w: „Tęczowe i fantastyczne”',
+    2020,
+    ['Ja, Gosia, Ewa i Jacek. Gosia była najmłodsza... Jest najmłodsza. Jacek jest z tego samego roku, co ja, ale onu urodziłu się na początku, a ja pod koniec. A Ewa jest pięć lat starszy ode mnie.'],
+    'oprócz tego także postaci niebinarne używające męskich i żeńskich form',
+);
+
 export const templates = {
     on: new Template('Rodzaj męski', {
         'pronoun_n': 'on',
@@ -35,7 +44,10 @@ export const templates = {
         'verb_go': 'szedł',
         'verb_o': 'ó',
         'honorific': 'pan',
-    }, false, [], ['on/jego']),
+    }, false, [
+        zapachKosmosu,
+        new Book('Ursula K. Le Guin', 'Lewa ręka ciemności', 'tłum. Lech Jęczmyk', 1987, [], 'postać niebinarna używająca form męskich'),
+    ], ['on/jego']),
     ona: new Template('Rodzaj żeński', {
         'pronoun_n': 'ona',
         'pronoun_g': 'jej',
@@ -54,7 +66,11 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'pani',
-    }, false, ['ona/jej']),
+    }, false, [
+        new Book('Ann Leckie', 'Zabójcza sprawiedliwość', 'tłum. Danuta Górska', 2015, [], 'postać niebinarna używająca form żeńskich'),
+        new Book('Ann Leckie', 'Zabójczy miecz', 'tłum. Danuta Górska', 2016, [], 'postać niebinarna używająca form żeńskich'),
+        new Book('Ursula K. Le Guin', 'Królowa Zimy', 'w: „Wszystkie strony świata”', 'tłum. Lech Jęczmyk', 1980, 'postać niebinarna używająca form żeńskich'),
+    ], ['ona/jej']),
     ono: new Template('Rodzaj nijaki', {
         'pronoun_n': 'ono',
         'pronoun_g': 'jego',
@@ -237,14 +253,7 @@ export const templates = {
             2003,
             ['– Do Creytona powinniśmy dotrzeć w ciągu trzydziestu ośmiu k-godzin. Nawet zważywszy na utratę krwi pana i stahs McPherson– \n– Chciałuś powiedzieć – przerwał nu Zamoyski – powinniśmy byli tam dotrzeć. Samu twierdzisz, że po odcięciu od Plateau nie wiesz nawet, w którą stronę lecimy. Swoją drogą, zastanawiam się, jak to możliwe. Przecież chyba pamiętasz, gdzie celowałuś.'],
         ),
-        new Book(
-            'Ginny Nawrocka',
-            'Cierpki zapach kosmosu',
-            'w: „Tęczowe i fantastyczne”',
-            2020,
-            ['Ja, Gosia, Ewa i Jacek. Gosia była najmłodsza... Jest najmłodsza. Jacek jest z tego samego roku, co ja, ale onu urodziłu się na początku, a ja pod koniec. A Ewa jest pięć lat starszy ode mnie.'],
-            'oprócz tego także postaci niebinarne używające męskich i żeńskich form',
-        ),
+        zapachKosmosu,
         new Book(
             'Artur Nowrot',
             'Smocze dziecko',
@@ -394,14 +403,6 @@ export const templates = {
 };
 
 export const otherSources = [
-    // niebinarne on
-    new Book('Ursula K. Le Guin', 'Lewa ręka ciemności', 'tłum. Lech Jęczmyk', 1987, [], 'postać niebinarna używająca form męskich'),
-
-    // niebinarne ona
-    new Book('Ann Leckie', 'Zabójcza sprawiedliwość', 'tłum. Danuta Górska', 2015, [], 'postać niebinarna używająca form żeńskich'),
-    new Book('Ann Leckie', 'Zabójczy miecz', 'tłum. Danuta Górska', 2016, [], 'postać niebinarna używająca form żeńskich'),
-    new Book('Ursula K. Le Guin', 'Królowa Zimy', 'w: „Wszystkie strony świata”', 'tłum. Lech Jęczmyk', 1980, 'postać niebinarna używająca form żeńskich'),
-
     // neozaimki
     new Book(
         'Greg Egan',
@@ -419,5 +420,3 @@ export const otherSources = [
     // inne
     new Book('Marta Magdalena Lasik', 'Zwierciadło w dziurce od klucza', 'w: „Skafander i melonik”', 2018),
 ];
-
-// „”
