@@ -9,27 +9,36 @@
         <LiteratureMenu all/>
 
         <section>
+            <ul>
+                <li v-for="template in templates" v-if="template.sources.length">
+                    <a :href="'#' + (template.name ? template.name().replace(/\//g, '-') : 'inne')">
+                        {{ template.description }}
+                        <small v-if="template.name">({{ template.name() }})</small>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
             <Share title="Niebinarna polszczyzna w literaturze, prasie, filmach i serialach"/>
         </section>
 
-        <div v-for="template in templates">
-            <template v-if="template.sources.length">
-                <h2 v-if="template.name" class="h4">
-                    <nuxt-link :to="'/' + template.pronoun()">
-                        {{ template.description }}
-                        <small>({{ template.name() }})</small>
-                    </nuxt-link>
-                </h2>
-                <h2 v-else class="h4">
+        <div v-for="template in templates" v-if="template.sources.length">
+            <h2 v-if="template.name" class="h4" :id="template.name().replace(/\//g, '-')">
+                <nuxt-link :to="'/' + template.pronoun()">
                     {{ template.description }}
-                </h2>
+                    <small>({{ template.name() }})</small>
+                </nuxt-link>
+            </h2>
+            <h2 v-else class="h4" id="inne">
+                {{ template.description }}
+            </h2>
 
-                <ul class="list-unstyled">
-                    <li v-for="source in template.sources">
-                        <Source :source="source"/>
-                    </li>
-                </ul>
-            </template>
+            <ul class="list-unstyled">
+                <li v-for="source in template.sources">
+                    <Source :source="source"/>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
