@@ -180,6 +180,10 @@ export class Template {
     }
 
     static from(data) {
+        if (data.length === morphemes.length + 1) {
+            data.push('');
+        }
+
         if (data.length !== morphemes.length + 2
             || data[0].length === 0
             || data[data.length - 1].length > 48
