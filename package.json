@@ -13,6 +13,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "canvas": "^2.6.1",
     "nuxt": "^2.13.0",
+    "shareon": "^1.2.1",
     "vue-matomo": "^3.13.5-0"
   },
   "devDependencies": {

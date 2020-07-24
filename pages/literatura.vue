@@ -8,6 +8,10 @@
 
         <LiteratureMenu all/>
 
+        <section>
+            <Share title="Niebinarna polszczyzna w literaturze, prasie, filmach i serialach"/>
+        </section>
+
         <div v-for="template in templates">
             <template v-if="template.sources.length">
                 <h2 v-if="template.name" class="h4">

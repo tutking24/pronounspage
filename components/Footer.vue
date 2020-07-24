@@ -13,5 +13,8 @@
             na licencji
             <a href="https://mit.avris.it" target="_blank" rel="noopener">MIT</a>.
         </section>
+        <section class="text-center small">
+            <Share/>
+        </section>
     </footer>
 </template>

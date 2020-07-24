@@ -36,6 +36,10 @@
             </ul>
         </section>
 
+        <section>
+            <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
+        </section>
+
         <section v-if="templates[selectedTemplate.pronoun()] && templates[selectedTemplate.pronoun()].sources.length">
             <Literature :sources="templates[selectedTemplate.pronoun()].sources"/>
         </section>
