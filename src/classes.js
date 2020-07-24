@@ -142,12 +142,13 @@ const escape = s => {
 }
 
 export class Template {
-    constructor (description, morphemes, plural, sources = [], aliases = []) {
+    constructor (description, morphemes, plural, sources = [], aliases = [], history = null) {
         this.description = description;
         this.morphemes = morphemes
         this.plural = plural;
         this.sources = sources;
         this.aliases = aliases;
+        this.history = history;
     }
 
     pronoun() {

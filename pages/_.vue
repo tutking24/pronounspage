@@ -36,6 +36,13 @@
             </ul>
         </section>
 
+        <section v-if="selectedTemplate.history">
+            <div class="alert alert-info">
+                <Icon v="info-circle"/>
+                <span v-html="selectedTemplate.history"></span>
+            </div>
+        </section>
+
         <section>
             <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
         </section>

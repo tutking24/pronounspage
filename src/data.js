@@ -366,7 +366,7 @@ export const templates = {
             2020,
             ['Émeraude odpięłu się i pokazału palec lekarce. Przełączału się między dwoma trybami – wszystko albo nic. Kilka miesięcy temu doznału kontuzji, naciągając mocno ścięgno zginacza.'],
         ),
-    ], ['onu/jenu']),
+    ], ['onu/jenu'], 'Formy te zostały stworzone przez <a href="https://pl.wikipedia.org/wiki/Jacek_Dukaj" target="_blank" rel="noopener">Jacka Dukaja</a> do książki <a href="https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskona%C5%82o%C5%9B%C4%87" target="_blank" rel="noopener">„Perfekcyjna niedoskonałość”</a>. Używają jej tam istoty post-ludzkie (phoebe), które nie mają określonej płci. Od nazwiska autora te formy gramatyczne są nazywane „dukaizmami”.'),
     'onæ': new Template('Formy z „ae” lub ligaturą „æ”', {
         'pronoun_n': 'onæ',
         'pronoun_g': 'jæ',
@@ -473,7 +473,7 @@ export const templates = {
         'verb_o': 'o',
         'honorific': 'pan_',
     }, false, [
-        new Book('R.S. Benedict', 'Moje angielskie imię', 'w: „Nowa Fantastyka 3/2019', 2019),
+        new Book('R.S. Benedict', 'Moje angielskie imię', 'w: „Nowa Fantastyka” 3/2019', 2019),
     ], ['on_/je_']),
     onø: new Template('Formy z samogłoską nosową', {
         'pronoun_n': 'onø',
@@ -494,7 +494,7 @@ export const templates = {
         'verb_go': 'szł',
         'verb_o': 'o',
         'honorific': 'panø',
-    }, false, [], ['onø/jeø']),
+    }, false, [], ['onø/jeø'], 'Formy te używają samogłoski nosowej <a href="https://pl.wikipedia.org/wiki/%C3%98">„ø”</a>, która występowała w pisowni polszczyzny od XII do XV wieku, i została zastąpiona przez „ą” i „ę”. Miała zatem zastosowanie dosyć zbliżone do obecnego w powyższych formach. '),
     vono: new Template('Rodzaj nijaki z neozaimkami vono/viego', {
         'pronoun_n': 'vono',
         'pronoun_g': 'viego',
@@ -522,7 +522,7 @@ export const templates = {
             2003,
             ['Kuwale było tylko pół pokolenia młodsze ode mnie i prawdopodobnie mieliśmy wiele podobnych poglądów na świat, vono jednak nieco ekstremalniej wierzyło we wszystko to, w co wierzyliśmy my. Nauka i technologia zdawały się dawać vu wszystko, czego chciało.'],
         ),
-    ], ['vono/viego']),
+    ], ['vono/viego'], 'Forma została stworzona przez tłumacza Paweł Wieczorek dla oddania stworzonych przez Grega Egana form ve/vir.'),
 };
 
 export const otherSources = [
