@@ -42,7 +42,7 @@
                                 Sugestie:
                             </li>
                             <li class="list-inline-item" v-for="(template, pronoun) in templates">
-                                <button :class="['btn', pronoun === selectedTemplate.morphemes.pronoun_n ? 'btn-primary' : 'btn-outline-primary', 'btn-sm']"
+                                <button :class="['btn', template.name() === selectedTemplate.name() ? 'btn-primary' : 'btn-outline-primary', 'btn-sm']"
                                         @click="selectedTemplate = templates[pronoun].clone()"
                                 >
                                     {{template.name()}}
@@ -100,8 +100,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body border-top" v-if="templates[selectedTemplate.pronoun()] && templates[selectedTemplate.pronoun()].sources.length">
-                    <Literature :sources="templates[selectedTemplate.pronoun()].sources"/>
+                <div class="card-body border-top" v-if="getTemplate(selectedTemplate.name()) && getTemplate(selectedTemplate.name()).sources.length">
+                    <Literature :sources="getTemplate(selectedTemplate.name()).sources"/>
                 </div>
             </div>
         </section>
@@ -124,7 +124,7 @@
                 <li class="my-2">
                     <Icon v="books"/>
                     <nuxt-link to="/literatura">
-                        Niebinarna polszczyzna w literaturze
+                        Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
                     </nuxt-link>
                     <!-- https://docs.google.com/document/d/1ddgYxlZk0S6sDx7eVCMMXHQEvtXpDztpYQxomALXBXM/edit -->
                     – przykłady zebrane przez Pawła Dembowskiego.
@@ -160,12 +160,14 @@
     import { examples, templates } from "~/src/data";
     import Compressor from "../src/compressor";
     import ClipboardJS from 'clipboard';
+    import { getTemplate } from "../src/buildTemplate";
 
     export default {
         data() {
             return {
                 examples: examples,
                 templates: templates,
+                getTemplate: getTemplate,
 
                 selectedTemplate: templates['on'].clone(),
                 selectedMorpheme: '',
@@ -178,11 +180,24 @@
         },
         computed: {
             usedBase() {
-                const pronoun = this.selectedTemplate.morphemes.pronoun_n;
-                return this.templates[pronoun] !== undefined
-                    && this.selectedTemplate.equals(this.templates[pronoun])
-                        ? pronoun
-                        : null;
+                const name = this.selectedTemplate.name();
+                for (let key in this.templates) {
+                    if (this.templates.hasOwnProperty(key)) {
+                        if (key === name) {
+                            return key;
+                        }
+                        for (let alias of this.templates[key].aliases) {
+                            if (alias === name) {
+                                return key;
+                            }
+                        }
+                    }
+                }
+
+                return null;
+            },
+            usedBaseEquals() {
+                return this.templates[this.usedBase].equals(this.selectedTemplate);
             },
             longLink() {
                 const base = this.templates[this.selectedTemplate.morphemes.pronoun_n];
@@ -195,7 +210,7 @@
                 if (!this.selectedTemplate.pronoun()) {
                     return null;
                 }
-                return process.env.baseUrl + '/' + (this.usedBase || this.longLink);
+                return process.env.baseUrl + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink);
             },
         },
         methods: {

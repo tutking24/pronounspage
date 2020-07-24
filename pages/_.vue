@@ -40,8 +40,8 @@
             <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
         </section>
 
-        <section v-if="templates[selectedTemplate.pronoun()] && templates[selectedTemplate.pronoun()].sources.length">
-            <Literature :sources="templates[selectedTemplate.pronoun()].sources"/>
+        <section v-if="getTemplate(selectedTemplate.name()) && getTemplate(selectedTemplate.name()).sources.length">
+            <Literature :sources="getTemplate(selectedTemplate.name()).sources"/>
         </section>
 
         <Separator icon="info"/>
@@ -58,13 +58,14 @@
 
 <script>
     import { examples, templates } from "~/src/data";
-    import buildTemplate from "../src/buildTemplate";
+    import { buildTemplate, getTemplate } from "../src/buildTemplate";
 
     export default {
         data() {
             return {
                 examples: examples,
                 templates: templates,
+                getTemplate: getTemplate,
 
                 selectedTemplate: buildTemplate(this.$route.path.substr(1)),
             }

@@ -1,4 +1,4 @@
-import buildTemplate from "../src/buildTemplate";
+import { buildTemplate } from "../src/buildTemplate";
 import { createCanvas, registerFont, loadImage } from 'canvas';
 
 export default async function (req, res, next) {

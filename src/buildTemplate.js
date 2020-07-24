@@ -13,7 +13,11 @@ for (let base in templates) {
     }
 }
 
-export default (path) => {
+export const getTemplate = (id) => {
+    return templatesWithAliases[id];
+}
+
+export const buildTemplate = (path) => {
     const templateStr = path.split(',');
     const base = templatesWithAliases[templateStr[0]]
 
