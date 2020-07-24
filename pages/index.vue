@@ -16,19 +16,9 @@
                 Wybierz sposród najpopularniejszych:
             </p>
 
-            <div class="d-block d-md-none">
-                <nuxt-link v-for="(template, pronoun) in templates" :to="'/' + pronoun" :key="pronoun" class="btn btn-outline-primary m-2">
-                    {{pronoun}}
-                </nuxt-link>
-            </div>
-
-            <div class="d-none d-md-block">
-                <div class="btn-group btn-block" role="group">
-                    <nuxt-link v-for="(template, pronoun) in templates" :to="'/' + pronoun" :key="pronoun" class="btn btn-outline-primary btn-lg">
-                        {{pronoun}}
-                    </nuxt-link>
-                </div>
-            </div>
+            <nuxt-link v-for="(template, pronoun) in templates" :to="'/' + pronoun" :key="pronoun" class="btn btn-outline-primary m-2 btn-md-lg">
+                {{template.name()}}
+            </nuxt-link>
         </section>
 
         <section>
@@ -55,7 +45,7 @@
                                 <button :class="['btn', pronoun === selectedTemplate.morphemes.pronoun_n ? 'btn-primary' : 'btn-outline-primary', 'btn-sm']"
                                         @click="selectedTemplate = templates[pronoun].clone()"
                                 >
-                                    {{pronoun}}
+                                    {{template.name()}}
                                 </button>
                             </li>
                         </ul>
@@ -234,6 +224,12 @@
         }
         &[size="0"] {
             width: .5rem !important;
+        }
+    }
+
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .btn-md-lg {
+            @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
         }
     }
 </style>
