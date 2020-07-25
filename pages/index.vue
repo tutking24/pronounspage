@@ -66,10 +66,10 @@
                     <p>
                         Przykłady użycia w zdaniu:
                     </p>
-                    <template v-for="(typeExamples, isHonorific) in {0: examples, 1: examplesHonorific}">
+                    <template v-for="isHonorific in [false, true]">
                         <ul>
-                            <li v-for="example in typeExamples">
-                                <span v-for="part in example.parts[bool(isHonorific) ? selectedTemplate.pluralHonorific : selectedTemplate.plural]">
+                            <li v-for="example in examples" v-if="example.isHonorific === isHonorific">
+                                <span v-for="part in example[(isHonorific ? selectedTemplate.pluralHonorific : selectedTemplate.plural) ? 'pluralParts' : 'singularParts']">
                                     <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
                                            :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
                                            :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
@@ -82,7 +82,7 @@
                             </li>
                         </ul>
                         <div class="my-3">
-                            <div class="custom-control custom-switch" v-if="bool(isHonorific)">
+                            <div class="custom-control custom-switch" v-if="isHonorific">
                                 <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedTemplate.pluralHonorific">
                                 <label class="custom-control-label" for="pluralHonorific">Liczba mnoga <Icon v="level-up"/></label>
                             </div>
@@ -163,7 +163,7 @@
 </template>
 
 <script>
-    import { examples, examplesHonorific, templates } from "~/src/data";
+    import { examples, templates } from "~/src/data";
     import Compressor from "../src/compressor";
     import ClipboardJS from 'clipboard';
     import { getTemplate } from "../src/buildTemplate";
@@ -172,7 +172,6 @@
         data() {
             return {
                 examples: examples,
-                examplesHonorific: examplesHonorific,
                 templates: templates,
                 getTemplate: getTemplate,
 
@@ -224,9 +223,6 @@
             focusLink() {
                 setTimeout(_ => this.$refs.link.select(), 100);
             },
-            bool(v) {
-                return !!parseInt(v);
-            }
         }
     }
 </script>

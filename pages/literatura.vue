@@ -16,6 +16,11 @@
                         <small v-if="template.name">({{ template.name() }})</small>
                     </a>
                 </li>
+                <li>
+                    <a href="#inne">
+                        Inne formy
+                    </a>
+                </li>
             </ul>
         </section>
 
@@ -23,33 +28,42 @@
             <Share title="Niebinarna polszczyzna w literaturze, prasie, filmach i serialach"/>
         </section>
 
-        <div v-for="template in templates" v-if="template.sources.length">
-            <h2 v-if="template.name" class="h4" :id="template.name().replace(/\//g, '-')">
+        <section v-for="template in templates" v-if="template.sources.length">
+            <h2 class="h4" :id="template.name().replace(/\//g, '-')">
                 <nuxt-link :to="'/' + template.pronoun()">
                     {{ template.description }}
                     <small>({{ template.name() }})</small>
                 </nuxt-link>
             </h2>
-            <h2 v-else class="h4" id="inne">
-                {{ template.description }}
-            </h2>
 
             <ul class="list-unstyled">
                 <li v-for="source in template.sources">
-                    <Source :source="source"/>
+                    <Source :name="source"/>
                 </li>
             </ul>
-        </div>
+        </section>
+
+        <section>
+            <h2 class="h4" id="inne">
+                Inne formy
+            </h2>
+
+            <ul class="list-unstyled">
+                <li v-for="source in otherSources">
+                    <Source :name="source"/>
+                </li>
+            </ul>
+        </section>
     </div>
 </template>
 
 <script>
-    import { templates, otherSources } from '../src/data'
+    import { templates, sources } from '../src/data'
 
     export default {
         data() {
             return {
-                templates: [...Object.values(templates), {description: 'Inne formy', sources: otherSources}],
+                templates: templates,
             };
         },
         head() {
@@ -61,6 +75,17 @@
                     { hid: 'twitter:title', property: 'twitter:title', content: title },
                 ],
             }
+        },
+        computed: {
+            otherSources() {
+                const other = new Set(Object.keys(sources));
+                for (let template of Object.values(this.templates)) {
+                    for (let source of template.sources) {
+                        other.delete(source);
+                    }
+                }
+                return other;
+            },
         },
     }
 </script>

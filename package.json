@@ -21,6 +21,7 @@
     "avris-daemonise": "^0.0.2",
     "bootstrap": "^4.5.0",
     "clipboard": "^2.0.6",
+    "csv-loader": "^3.0.3",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2"
   }

@@ -9,7 +9,7 @@
 
         <ul class="list-unstyled">
             <li v-for="source in sources" class="my-2">
-                <Source :source="source"/>
+                <Source :name="source"/>
             </li>
         </ul>
     </div>

@@ -52,7 +52,19 @@ export default {
             lang: 'pl',
         }
     },
-    build: {},
+    build: {
+        extend (config, ctx) {
+            config.module.rules.push({
+                test: /\.csv|\.tsv$/,
+                loader: 'csv-loader',
+                options: {
+                    dynamicTyping: true,
+                    header: true,
+                    skipEmptyLines: true,
+                }
+            })
+        },
+    },
     env: {
       baseUrl: process.env.BASE_URL
     },

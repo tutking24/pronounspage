@@ -28,13 +28,7 @@
 
             <ul>
                 <li v-for="example in examples" class="my-1">
-                    <span v-for="part in example.parts[selectedTemplate.plural]">
-                        <strong v-if="part.variable">{{selectedTemplate.morphemes[part.str]}}</strong>
-                        <span v-else>{{part.str}}</span>
-                    </span>
-                </li>
-                <li v-for="example in examplesHonorific" class="my-1">
-                    <span v-for="part in example.parts[selectedTemplate.pluralHonorific]">
+                    <span v-for="part in example[(example.isHonorific ? selectedTemplate.pluralHonorific : selectedTemplate.plural) ? 'pluralParts' : 'singularParts']">
                         <strong v-if="part.variable">{{selectedTemplate.morphemes[part.str]}}</strong>
                         <span v-else>{{part.str}}</span>
                     </span>
@@ -70,14 +64,13 @@
 </template>
 
 <script>
-    import { examples, examplesHonorific, templates } from "~/src/data";
+    import { examples, templates } from "~/src/data";
     import { buildTemplate, getTemplate } from "../src/buildTemplate";
 
     export default {
         data() {
             return {
                 examples: examples,
-                examplesHonorific: examplesHonorific,
                 templates: templates,
                 getTemplate: getTemplate,
 
