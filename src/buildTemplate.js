@@ -24,10 +24,18 @@ export const buildTemplate = (templates, path) => {
     const templatesWithAliases = addAliasesToTemplates(templates);
 
     const templateStr = path.split(',');
-    const base = templatesWithAliases[templateStr[0]]
+
+    let base = null;
+    for (let option of templateStr[0].split('&')) {
+        if (!base) {
+            base = templatesWithAliases[option]
+        } else {
+            base = base.merge(templatesWithAliases[option])
+        }
+    }
 
     return templateStr.length === 1
-        ? templatesWithAliases[templateStr[0]]
+        ? base
         : Template.from(Compressor.uncompress(templateStr, base ? base.toArray() : null));
 }
 

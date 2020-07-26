@@ -14,7 +14,10 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedTemplate.description">
                     <em>
-                        ({{selectedTemplate.description}})
+                        ({{Array.isArray(selectedTemplate.description)
+                            ? ('Formy wymienne: ' + selectedTemplate.description.join(' lub '))
+                            : selectedTemplate.description
+                        }})
                     </em>
                 </p>
             </div>
@@ -29,7 +32,7 @@
             <ul>
                 <li v-for="example in examples" class="my-1">
                     <span v-for="part in example[(example.isHonorific ? selectedTemplate.pluralHonorific : selectedTemplate.plural) ? 'pluralParts' : 'singularParts']">
-                        <strong v-if="part.variable">{{selectedTemplate.morphemes[part.str]}}</strong>
+                        <strong v-if="part.variable">{{selectedTemplate.getMorpheme(part.str, counter)}}</strong>
                         <span v-else>{{part.str}}</span>
                     </span>
                 </li>
@@ -75,6 +78,13 @@
                 getTemplate: getTemplate,
 
                 selectedTemplate: buildTemplate(templates, this.$route.path.substr(1)),
+
+                counter: 0,
+            }
+        },
+        mounted() {
+            if (process.client) {
+                setInterval(_ => this.counter++, 1000);
             }
         },
         head() {

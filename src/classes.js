@@ -1,3 +1,5 @@
+import {buildDict} from "./helpers";
+
 export class ExamplePart {
     constructor(variable, str) {
         this.variable = variable;
@@ -106,14 +108,16 @@ export const MORPHEMES = [
 ];
 
 const escape = s => {
+    if (Array.isArray(s)) {
+        s = s.join('&');
+    }
     return (s || '')
         .replace(/,/g, '')
         .replace(/!/g, '')
         .replace(/\./g, '')
         //.replace(/\/', '%2F')
         .replace(/#/g, '%23')
-        .replace(/\?/g, '%3F')
-        .replace(/&/g, '%26');
+        .replace(/\?/g, '%3F');
 }
 
 export class Template {
@@ -131,8 +135,19 @@ export class Template {
         return this.morphemes['pronoun_n'];
     }
 
-    name() {
-        return this.morphemes['pronoun_n'] + '/' + this.morphemes['pronoun_g'];
+    nameOptions() {
+        const options = new Set();
+        const optionsN = this.morphemes.pronoun_n.split('&');
+        const optionsG = this.morphemes.pronoun_g.split('&');
+        for (let i in optionsN) {
+            options.add(optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1]);
+        }
+
+        return [...options]
+    }
+
+    name(glue = ' lub ') {
+        return this.nameOptions().join(glue)
     }
 
     clone() {
@@ -141,6 +156,34 @@ export class Template {
 
     equals(other) {
         return this.toString() === other.toString();
+    }
+
+    merge(other) {
+        if (this.plural !== other.plural || this.pluralHonorific !== other.pluralHonorific) {
+            // Cannot mix plurality
+            return null;
+        }
+
+        return new Template(
+            Array.isArray(this.description) ? [...this.description, other.description] : [this.description, other.description],
+            buildDict(function* (that, other) {
+                for (let morpheme of MORPHEMES) {
+                    yield [morpheme, (that.morphemes[morpheme] || '') + '&' + (other.morphemes[morpheme] || '')]
+                }
+            }, this, other),
+            this.plural,
+            this.pluralHonorific,
+        );
+    }
+
+    getMorpheme(morpheme, counter = 0) {
+        if (!this.morphemes[morpheme]) {
+            return null;
+        }
+
+        const options = this.morphemes[morpheme].split('&');
+
+        return options[counter % options.length]
     }
 
     toArray() {
