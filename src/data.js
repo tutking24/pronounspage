@@ -1,6 +1,9 @@
 import { Source, Example } from './classes'
 import { buildDict, buildList } from './helpers';
-import { parseTemplates } from './buildTemplate';
+import { parseTemplates, getTemplate } from './buildTemplate';
+
+import templatesRaw from '../data/templates.tsv';
+export const templates = parseTemplates(templatesRaw);
 
 import examplesRaw from '../data/examples.tsv';
 export const examples = buildList(function* () {
@@ -32,7 +35,21 @@ export const sources = buildDict(function* () {
     }
 });
 
-// TODO wymienne: jurewicz
+export const sourcesForMultipleForms = {
+    'on&ona': ['jurewicz'],
+}
 
-import templatesRaw from '../data/templates.tsv';
-export const templates = parseTemplates(templatesRaw);
+export const getSources = (selectedTemplate) => {
+    if (!selectedTemplate) {
+        return [];
+    }
+
+    let sources = [];
+    for (let option of selectedTemplate.nameOptions()) {
+        const template = getTemplate(templates, option);
+        if (template && template.sources.length) {
+            sources = [...sources, ...template.sources];
+        }
+    }
+    return sources;
+}

@@ -50,8 +50,8 @@
             <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
         </section>
 
-        <section v-if="getTemplate(templates, selectedTemplate.name()) && getTemplate(templates, selectedTemplate.name()).sources.length">
-            <Literature :sources="getTemplate(templates, selectedTemplate.name()).sources"/>
+        <section v-if="sources.length">
+            <Literature :sources="sources"/>
         </section>
 
         <Separator icon="info"/>
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-    import { examples, templates } from "~/src/data";
+    import { examples, templates, getSources } from "~/src/data";
     import { buildTemplate, getTemplate } from "../src/buildTemplate";
 
     export default {
@@ -105,6 +105,11 @@
                     { hid: 'twitter:image', property: 'twitter:image', content: banner },
                 ],
             }
+        },
+        computed: {
+            sources() {
+                return getSources(this.selectedTemplate);
+            },
         },
     }
 </script>

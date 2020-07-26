@@ -133,8 +133,8 @@
                 <div class="card-footer" v-if="link">
                     <LinkInput :link="link"/>
                 </div>
-                <div class="card-body border-top" v-if="getTemplate(templates, selectedTemplate.name()) && getTemplate(templates, selectedTemplate.name()).sources.length">
-                    <Literature :sources="getTemplate(templates, selectedTemplate.name()).sources"/>
+                <div class="card-body border-top" v-if="sources.length">
+                    <Literature :sources="sources"/>
                 </div>
             </div>
         </section>
@@ -190,7 +190,7 @@
 </template>
 
 <script>
-    import { examples, templates } from "~/src/data";
+    import { examples, templates, getSources } from "~/src/data";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
 
@@ -250,6 +250,9 @@
                 }
 
                 return process.env.baseUrl + '/' + this.multiple.join('&');
+            },
+            sources() {
+                return getSources(this.selectedTemplate);
             },
         },
         methods: {
