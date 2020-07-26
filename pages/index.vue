@@ -205,7 +205,7 @@
                 selectedMorpheme: '',
 
                 customiseMultiple: false,
-                multiple: [],
+                multiple: ['on', 'ona'],
 
                 customise: false,
             }
