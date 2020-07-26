@@ -15,6 +15,17 @@
         </section>
         <section class="text-center small">
             <Share/>
+            <div class="mt-2">
+                <SquareButton link="https://avris.it">
+                    <Icon v="user-edit"/>
+                </SquareButton>
+                <SquareButton link="https://paypal.me/AndreAvris">
+                    <Icon v="paypal" set="b"/>
+                </SquareButton>
+                <SquareButton link="https://gitlab.com/Avris/Zaimki">
+                    <Icon v="gitlab" set="b"/>
+                </SquareButton>
+            </div>
         </section>
     </footer>
 </template>
