@@ -209,7 +209,7 @@ export class Template {
             || data[data.length - 1].length > 48
             || ![0, 1].includes(parseInt(data[MORPHEMES.length]))
             || ![0, 1].includes(parseInt(data[MORPHEMES.length + 1]))
-            || data.slice(1, data.length - 3).filter(s => s.length > 7).length
+            || data.slice(1, data.length - 3).filter(s => s.length > 12).length
         ) {
             return null;
         }
