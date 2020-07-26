@@ -47,8 +47,8 @@
             <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
         </section>
 
-        <section v-if="getTemplate(selectedTemplate.name()) && getTemplate(selectedTemplate.name()).sources.length">
-            <Literature :sources="getTemplate(selectedTemplate.name()).sources"/>
+        <section v-if="getTemplate(templates, selectedTemplate.name()) && getTemplate(templates, selectedTemplate.name()).sources.length">
+            <Literature :sources="getTemplate(templates, selectedTemplate.name()).sources"/>
         </section>
 
         <Separator icon="info"/>
@@ -74,7 +74,7 @@
                 templates: templates,
                 getTemplate: getTemplate,
 
-                selectedTemplate: buildTemplate(this.$route.path.substr(1)),
+                selectedTemplate: buildTemplate(templates, this.$route.path.substr(1)),
             }
         },
         head() {

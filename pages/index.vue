@@ -106,8 +106,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body border-top" v-if="getTemplate(selectedTemplate.name()) && getTemplate(selectedTemplate.name()).sources.length">
-                    <Literature :sources="getTemplate(selectedTemplate.name()).sources"/>
+                <div class="card-body border-top" v-if="getTemplate(templates, selectedTemplate.name()) && getTemplate(templates, selectedTemplate.name()).sources.length">
+                    <Literature :sources="getTemplate(templates, selectedTemplate.name()).sources"/>
                 </div>
             </div>
         </section>

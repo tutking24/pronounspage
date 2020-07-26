@@ -1,5 +1,15 @@
-import { buildTemplate } from "../src/buildTemplate";
+import { buildTemplate, parseTemplates } from "../src/buildTemplate";
 import { createCanvas, registerFont, loadImage } from 'canvas';
+import Papa from 'papaparse';
+import fs from 'fs';
+
+const loadTsv = (filename) => {
+    return Papa.parse(fs.readFileSync(__dirname + '/../data/' + filename).toString('utf-8'), {
+        dynamicTyping: true,
+        header: true,
+        skipEmptyLines: true,
+    }).data;
+};
 
 export default async function (req, res, next) {
     if (req.url.substr(req.url.length - 4) !== '.png') {
@@ -8,7 +18,11 @@ export default async function (req, res, next) {
         res.end();
         return;
     }
-    const template = buildTemplate(decodeURIComponent(req.url.substr(1, req.url.length - 5)));
+
+    const template = buildTemplate(
+        parseTemplates(loadTsv('templates.tsv')),
+        decodeURIComponent(req.url.substr(1, req.url.length - 5))
+    );
 
     const width = 1200
     const height = 600
