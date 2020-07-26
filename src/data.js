@@ -45,6 +45,13 @@ export const getSources = (selectedTemplate) => {
     }
 
     let sources = [];
+    for (let multiple in sourcesForMultipleForms) {
+        if (sourcesForMultipleForms.hasOwnProperty(multiple)) {
+            if (multiple === selectedTemplate.morphemes.pronoun_n) {
+                sources = [...sources, ...sourcesForMultipleForms[multiple]]
+            }
+        }
+    }
     for (let option of selectedTemplate.nameOptions()) {
         const template = getTemplate(templates, option);
         if (template && template.sources.length) {
