@@ -12,5 +12,6 @@ oni,oni/ich	Formy męskoosobowe liczby mnogiej	oni	ich	nich	im	ich	nimi	nich	cy	
 one,one/ich	Formy niemęskoosobowe liczby mnogiej	one	ich	nich	im	je	nimi	nich	tkie	e	ł	o	ły	ły	ały	ęły	szły	o	państwo	TRUE	TRUE		smoczeDzieko
 onx,onx/jex	Formy z iksem	onx	jex	nix	jex	jex	nix	nix		x			x	x	x	ę	szł	o	panx	FALSE	FALSE
 on_,on_/je_	Formy z podkreślnikiem	on_	je_	ni_	je_	je_	ni_	ni_		_			_	_	_	ę	szł	o	pan_	FALSE	FALSE		angielskieImie
+on*,on*/je*	Formy z gwiazdką	on*	je*	ni*	je*	je*	ni*	ni*		*			*	*	*	ę	szł	o	pan*	FALSE	FALSE
 onø,onø/jeø	Formy z samogłoską nosową	onø	jenø	nienø	nø	nø	nøm	nøm		ø			ø	ø	ø	ę	szł	o	panø	FALSE	FALSE	"Formy te używają samogłoski nosowej <a href=""https://pl.wikipedia.org/wiki/%C3%98"">„ø”</a>, która występowała w pisowni polszczyzny od XII do XV wieku, i została zastąpiona przez „ą” i „ę”. Miała zatem zastosowanie dosyć zbliżone do obecnego w powyższych formach."
 vono,vono/vego	Rodzaj nijaki z neozaimkami vono/vego	vono	vego	viego	vu	vo	vim	vim		e			o	o	o	ę	szł	o	pań	FALSE	FALSE	Forma została stworzona przez tłumacza Pawła Wieczorka dla oddania stworzonych przez Grega Egana form ve/vir.	stanWyczerpania
