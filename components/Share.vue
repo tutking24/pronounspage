@@ -1,8 +1,8 @@
 <template>
-    <div class="shareon">
-        <a v-for="network in networks" :href="link(network)" target="_blank" rel="noopener" class="btn-square m-1" :style="'background-color: ' + colour(network)">
+    <div>
+        <SquareButton v-for="network in networks" :link="link(network)" :colour="colour(network)">
             <Icon :v="icon(network)" set="b"/>
-        </a>
+        </SquareButton>
     </div>
 </template>
 
@@ -77,32 +77,3 @@
         }
     }
 </script>
-
-<style lang="scss" scoped>
-    @import "assets/style";
-    $size: 2.2rem;
-
-    .btn-square {
-        display: inline-grid;
-        place-items: center;
-
-        height: $size;
-        min-width: $size;
-
-        background-color: #ccc;
-        border-radius: $border-radius;
-        border: none;
-        color: white;
-        line-height: 1.5;
-        font-size: $size * 0.6;
-        transition: opacity 300ms ease;
-
-        &:hover {
-            border: none;
-            cursor: pointer;
-            opacity: .7;
-            color: white;
-            text-decoration: none;
-        }
-    }
-</style>
