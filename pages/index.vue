@@ -94,17 +94,7 @@
                     </template>
                 </div>
                 <div class="card-footer" v-if="customise && link">
-                    <div class="input-group my-2">
-                        <input class="form-control" readonly :value="link.replace('https://', '').replace('http://', '')" id="link" ref="link">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary btn-clipboard" data-clipboard-target="#link" :data-clipboard-text="link" @click="focusLink">
-                                <Icon v="clipboard"/>
-                            </button>
-                            <a :href="link" target="_blank" rel="noopener" class="btn btn-outline-secondary">
-                                <Icon v="external-link"/>
-                            </a>
-                        </div>
-                    </div>
+                    <LinkInput :link="link"/>
                 </div>
                 <div class="card-body border-top" v-if="getTemplate(templates, selectedTemplate.name()) && getTemplate(templates, selectedTemplate.name()).sources.length">
                     <Literature :sources="getTemplate(templates, selectedTemplate.name()).sources"/>
@@ -165,7 +155,6 @@
 <script>
     import { examples, templates } from "~/src/data";
     import Compressor from "../src/compressor";
-    import ClipboardJS from 'clipboard';
     import { getTemplate } from "../src/buildTemplate";
 
     export default {
@@ -180,9 +169,6 @@
 
                 customise: false,
             }
-        },
-        mounted () {
-            new ClipboardJS('.btn-clipboard');
         },
         computed: {
             usedBase() {
@@ -219,11 +205,6 @@
                 return process.env.baseUrl + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink);
             },
         },
-        methods: {
-            focusLink() {
-                setTimeout(_ => this.$refs.link.select(), 100);
-            },
-        }
     }
 </script>
 
