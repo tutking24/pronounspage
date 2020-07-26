@@ -47,8 +47,9 @@ export default async function (req, res, next) {
         context.font = 'regular 48pt Quicksand'
         context.fillText('Moje zaimki to:', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-        context.font = 'bold 70pt Quicksand'
-        context.fillText(template.name(), width / leftRatio + imageSize / 1.5, height / 2 + 72)
+        const templateNameOptions = template.nameOptions();
+        context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
+        context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
     } else {
         context.font = 'regular 120pt Quicksand'
         context.fillText('Zaimki.pl', width / leftRatio + imageSize / 1.5, height / 2 + 48)
