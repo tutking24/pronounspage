@@ -32,5 +32,7 @@ export const sources = buildDict(function* () {
     }
 });
 
+// TODO wymienne: jurewicz
+
 import templatesRaw from '../data/templates.tsv';
 export const templates = parseTemplates(templatesRaw);
