@@ -1,6 +1,6 @@
 <template>
     <div>
-        <SquareButton v-for="network in networks" :link="link(network)" :colour="colour(network)">
+        <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>
     </div>
