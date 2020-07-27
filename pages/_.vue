@@ -50,7 +50,7 @@
             <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
         </section>
 
-        <section v-if="sources.length">
+        <section v-if="Object.keys(sources).length">
             <Literature :sources="sources"/>
         </section>
 

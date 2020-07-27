@@ -41,21 +41,21 @@ export const sourcesForMultipleForms = {
 
 export const getSources = (selectedTemplate) => {
     if (!selectedTemplate) {
-        return [];
+        return {};
     }
 
-    let sources = [];
+    let sources = {};
     for (let multiple in sourcesForMultipleForms) {
         if (sourcesForMultipleForms.hasOwnProperty(multiple)) {
             if (multiple === selectedTemplate.morphemes.pronoun_n) {
-                sources = [...sources, ...sourcesForMultipleForms[multiple]]
+                sources[multiple] = sourcesForMultipleForms[multiple];
             }
         }
     }
     for (let option of selectedTemplate.nameOptions()) {
         const template = getTemplate(templates, option);
         if (template && template.sources.length) {
-            sources = [...sources, ...template.sources];
+            sources[option] = template.sources;
         }
     }
     return sources;

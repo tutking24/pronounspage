@@ -133,7 +133,7 @@
                 <div class="card-footer" v-if="link">
                     <LinkInput :link="link"/>
                 </div>
-                <div class="card-body border-top" v-if="sources.length">
+                <div class="card-body border-top" v-if="Object.keys(sources).length">
                     <Literature :sources="sources"/>
                 </div>
             </div>
