@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-show="!filter || filter === source.type">
         <Icon :v="source.icon()"/>
         <strong>{{source.author}}<span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener">{{source.title}}</a><span v-else>{{source.title}}</span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
         <ul v-if="source.fragments.length">
@@ -16,6 +16,7 @@
     export default {
         props: {
             name: { required: true },
+            filter: { default: '' },
         },
         data() {
             return {

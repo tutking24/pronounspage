@@ -34,6 +34,22 @@
             <Share title="Niebinarna polszczyzna w literaturze, prasie, filmach i serialach"/>
         </section>
 
+        <section>
+            <span class="mr-2 mb-3">
+                <Icon v="filter"/>
+                Filtruj:
+            </span>
+            <div class="btn-group">
+                <button v-for="(config, type) in sourceTypes"
+                        :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
+                        @click="filter = type"
+                >
+                    <Icon :v="config.icon"/>
+                    {{ config.text }}
+                </button>
+            </div>
+        </section>
+
         <section v-for="template in templates" v-if="template.sources.length">
             <h2 class="h4" :id="toId(template.name())">
                 <nuxt-link :to="'/' + template.pronoun()">
@@ -44,7 +60,7 @@
 
             <ul class="list-unstyled">
                 <li v-for="source in template.sources">
-                    <Source :name="source"/>
+                    <Source :name="source" :filter="filter"/>
                 </li>
             </ul>
         </section>
@@ -59,7 +75,7 @@
 
             <ul class="list-unstyled">
                 <li v-for="source in sources">
-                    <Source :name="source"/>
+                    <Source :name="source" :filter="filter"/>
                 </li>
             </ul>
         </section>
@@ -71,7 +87,7 @@
 
             <ul class="list-unstyled">
                 <li v-for="source in otherSources">
-                    <Source :name="source"/>
+                    <Source :name="source" :filter="filter"/>
                 </li>
             </ul>
         </section>
@@ -80,12 +96,15 @@
 
 <script>
     import { templates, sources, sourcesForMultipleForms } from '../src/data'
+    import { Source } from "../src/classes";
 
     export default {
         data() {
             return {
                 templates: templates,
                 sourcesForMultipleForms: sourcesForMultipleForms,
+                sourceTypes: Source.TYPES,
+                filter: '',
             };
         },
         head() {

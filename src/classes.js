@@ -63,13 +63,6 @@ function clone(mainObject) {
 }
 
 export class Source {
-    ICONS = {
-        Book: 'book-open',
-        Article: 'newspaper',
-        Movie: 'film',
-        Series: 'tv',
-    }
-
     constructor (type, author, title, extra, year, fragments = [], comment = null, link = null) {
         this.type = type;
         this.author = author;
@@ -81,8 +74,18 @@ export class Source {
         this.link = link;
     }
 
+    static get TYPES() {
+        return {
+            '': { icon: 'clipboard-list', text: 'Wszystkie' },
+            Book: { icon: 'book-open', text: 'Książki' },
+            Article: { icon:'newspaper', text: 'Prasa' },
+            // Movie: { icon:'film', text: 'Filmy' },
+            Series: { icon:'tv', text: 'Seriale' },
+        }
+    }
+
     icon() {
-        return this.ICONS[this.type] || 'horizontal-rule';
+        return Source.TYPES[this.type].icon;
     }
 }
 
