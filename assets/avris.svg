@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 120 120"
+     shape-rendering="geometricPrecision">
+    
+    <path d="M 120 0
+             A 120 120 0 0 1 0 120
+             A 80 80 0 0 1 80 40
+             A 40 40 0 0 0 40 80
+             A 80 80 0 0 0 120 0
+             Z" fill="#fff"/>
+</svg>

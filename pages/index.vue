@@ -181,8 +181,7 @@
                     <a href="https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html" target="_blank" rel="noopener">
                         Maniak marudzi #27: Niebinarne tłumaczenia
                     </a>
-                    – artykuł pokazujący, że „nie da się przetłumaczyć they/them” na polski
-                    to tylko wymówka.
+                    – artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.
                 </li>
             </ul>
         </section>

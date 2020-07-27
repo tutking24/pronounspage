@@ -18,11 +18,10 @@
     $size: 2.2rem;
 
     .btn-square {
-        display: inline-grid;
-        place-items: center;
-
+        display: inline-block;
         height: $size;
         min-width: $size;
+        text-align: center;
 
         background-color: $primary;
         border-radius: $border-radius;
@@ -38,6 +37,15 @@
             opacity: .7;
             color: white;
             text-decoration: none;
+        }
+
+        img {
+            width: 1em;
+        }
+
+        .fa-fw {
+            position: relative;
+            top: .2em;
         }
     }
 </style>

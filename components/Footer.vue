@@ -17,7 +17,7 @@
             <Share/>
             <div class="mt-2">
                 <SquareButton link="https://avris.it">
-                    <Icon v="user-edit"/>
+                    <img src="~assets/avris.svg"/>
                 </SquareButton>
                 <SquareButton link="https://paypal.me/AndreAvris">
                     <Icon v="paypal" set="b"/>
