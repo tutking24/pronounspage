@@ -107,6 +107,14 @@
                 filter: '',
             };
         },
+        mounted() {
+            if (process.client && window.location.hash) {
+                const $hashEl = this.$el.querySelector(window.location.hash);
+                if ($hashEl) {
+                    $hashEl.scrollIntoView();
+                }
+            }
+        },
         head() {
             const title = 'Niebinarna polszczyzna w literaturze';
             return {
