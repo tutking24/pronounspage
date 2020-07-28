@@ -163,6 +163,12 @@
                     – przykłady zebrane przez Pawła Dembowskiego.
                 </li>
                 <li class="my-2">
+                    <Icon v="newspaper"/>
+                    <a href="https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc" target="_blank" rel="noopener">
+                        Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym. Rozmawialiśmy z jej twórcą i twórczynium
+                    </a>
+                </li>
+                <li class="my-2">
                     <Icon v="comment-alt-edit"/>
                     <a href="https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio" target="_blank" rel="noopener">
                         Czemu KAŻDY powinien mieć zaimki w bio
