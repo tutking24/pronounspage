@@ -148,19 +148,19 @@
             </h2>
             <ul class="list-unstyled">
                 <li class="my-2">
-                    <Icon v="globe-europe"/>
-                    <a href="https://pronoun.is/" target="_blank" rel="noopener">
-                        Pronoun.is
-                    </a>
-                    – anglojęzyczna inspiracja dla tej strony.
-                </li>
-                <li class="my-2">
                     <Icon v="books"/>
                     <nuxt-link to="/literatura">
                         Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
                     </nuxt-link>
                     <!-- https://docs.google.com/document/d/1ddgYxlZk0S6sDx7eVCMMXHQEvtXpDztpYQxomALXBXM/edit -->
                     – przykłady zebrane przez Pawła Dembowskiego.
+                </li>
+                <li class="my-2">
+                    <Icon v="globe-europe"/>
+                    <a href="https://pronoun.is/" target="_blank" rel="noopener">
+                        Pronoun.is
+                    </a>
+                    – anglojęzyczna inspiracja dla tej strony.
                 </li>
                 <li class="my-2">
                     <Icon v="newspaper"/>
