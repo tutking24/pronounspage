@@ -44,6 +44,7 @@
         messenger: 'facebook-messenger',
         reddit: 'reddit-alien',
         telegram: 'telegram-plane',
+        facebook: 'facebook-f',
     }
 
     export default {
