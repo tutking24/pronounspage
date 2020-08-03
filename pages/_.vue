@@ -77,7 +77,7 @@
                 templates: templates,
                 getTemplate: getTemplate,
 
-                selectedTemplate: buildTemplate(templates, this.$route.path.substr(1)),
+                selectedTemplate: buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, '')),
 
                 counter: 0,
             }
@@ -93,7 +93,7 @@
             }
 
             const title = 'Moje zaimki to: ' + this.selectedTemplate.name();
-            const banner = `${process.env.baseUrl}/banner${this.$route.path}.png`;
+            const banner = `${process.env.baseUrl}/banner${this.$route.path.replace(/\/$/, '')}.png`;
 
             return {
                 title: title,

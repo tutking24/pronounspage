@@ -16,7 +16,7 @@
                 Wybierz sposród najpopularniejszych:
             </p>
 
-            <nuxt-link v-for="(template, pronoun) in templates" :to="'/' + pronoun" :key="pronoun" class="btn btn-outline-primary m-2 btn-md-lg">
+            <nuxt-link v-for="(template, pronoun) in templates" :to="addSlash('/' + pronoun)" :key="pronoun" class="btn btn-outline-primary m-2 btn-md-lg">
                 {{template.name()}}
             </nuxt-link>
         </section>
@@ -247,14 +247,14 @@
                 if (!this.selectedTemplate.pronoun()) {
                     return null;
                 }
-                return process.env.baseUrl + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink);
+                return this.addSlash(process.env.baseUrl + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
             },
             linkMultiple() {
                 if (!this.multiple.length) {
                     return null;
                 }
 
-                return process.env.baseUrl + '/' + this.multiple.join('&');
+                return this.addSlash(process.env.baseUrl + '/' + this.multiple.join('&'));
             },
             sources() {
                 return getSources(this.selectedTemplate);
@@ -268,6 +268,9 @@
                 } else {
                     this.multiple.push(name);
                 }
+            },
+            addSlash(link) {
+                return link + (link.substr(link.length - 1) === '*' ? '/' : '');
             }
         },
     }
