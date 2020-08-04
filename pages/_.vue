@@ -59,12 +59,12 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_n') }}</td>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_g') }} / {{ selectedTemplate.getMorpheme('pronoun_g_acc') }}</td>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_d') }}</td>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_a') }}</td>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_i') }}</td>
-                        <td>{{ selectedTemplate.getMorpheme('pronoun_l') }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_n', counter) }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_g', counter) }} / {{ selectedTemplate.getMorpheme('pronoun_g_acc', counter) }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_d', counter) }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_a', counter) }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_i', counter) }}</td>
+                        <td>{{ selectedTemplate.getMorpheme('pronoun_l', counter) }}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -82,10 +82,10 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>-{{ selectedTemplate.getMorpheme('verb_middle') }}{{ selectedTemplate.plural ? 'śmy' : 'm'}}</td>
-                        <td>-{{ selectedTemplate.getMorpheme('verb_middle') }}{{ selectedTemplate.plural ? 'ście' : 'ś'}}</td>
-                        <td>-{{ selectedTemplate.getMorpheme('verb_end_about') }}</td>
-                        <td>-{{ selectedTemplate.getMorpheme('adjective_n') }}</td>
+                        <td>-{{ selectedTemplate.getMorpheme('verb_middle', counter) }}{{ selectedTemplate.plural ? 'śmy' : 'm'}}</td>
+                        <td>-{{ selectedTemplate.getMorpheme('verb_middle', counter) }}{{ selectedTemplate.plural ? 'ście' : 'ś'}}</td>
+                        <td>-{{ selectedTemplate.getMorpheme('verb_end_about', counter) }}</td>
+                        <td>-{{ selectedTemplate.getMorpheme('adjective_n', counter) }}</td>
                     </tr>
                     </tbody>
                 </table>
