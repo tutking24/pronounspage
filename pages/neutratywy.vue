@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <Homepage/>
         <h1>
             <Icon v="atom-alt"/>
             Słownik neutratywów
@@ -13,12 +14,46 @@
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
                 z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
             </p>
+            <div class="alert alert-info small">
+                <p>
+                    <strong>Czym są neutratywy?</strong>
+                </p>
+                <p>
+                    Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+                </p>
+                <p>
+                    <strong>Dlaczego warto tworzyć neutratywy?</strong>
+                </p>
+                <p>
+                    Z tych samych powodów co feminatywy!
+                </p>
+                <p>
+                    O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+                    Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+                </p>
+                <p>
+                    Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
+                    choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
+                    Coraz więcej osób używa w odniesieniu do siebie
+                    <nuxt-link to="/ono">rodzaju nijakiego</nuxt-link> i <nuxt-link to="/">innych form</nuxt-link>.
+                    Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
+                    gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
+                    Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+                </p>
+            </div>
             <p>
                 Aby dodać swoją propozycję:
                 <button class="btn btn-outline-success btn-sm" @click="$refs.form.$el.scrollIntoView()">
                     <Icon v="plus-circle"/>
                     Formularz zgłoszeniowy
                 </button>
+            </p>
+            <p>
+                Obserwuj Słownik na Facebooku:
+                <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                    <Icon v="facebook" set="b"/>
+                    fb.com/neutratywy
+                </a>
             </p>
             <p>
                 Dla form neutralnych innych niż rzeczowniki zapraszamy na
@@ -34,7 +69,7 @@
         <Separator icon="book-open" colour="nouns"/>
 
         <section>
-            <input class="form-control border-nouns" v-model="filter" autofocus placeholder="Filtruj listę…"/>
+            <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…"/>
         </section>
 
         <section class="table-responsive">
