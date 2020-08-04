@@ -9,6 +9,7 @@ $ yarn install
 # configure environment
 $ cp .env.dist .env
 $ nano .env
+$ node server/initDb.js
 
 # serve with hot reload at localhost:3000
 $ yarn dev

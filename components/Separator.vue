@@ -1,5 +1,5 @@
 <template>
-    <div class="separator">
+    <div :class="'separator separator-' + colour">
         <div class="mask"></div>
         <span v-if="icon"><Icon :v="icon"/></span>
     </div>
@@ -8,7 +8,8 @@
 <script>
     export default {
         props: {
-            icon: { }
+            icon: { },
+            colour: { 'default': 'primary' },
         },
     }
 </script>
@@ -34,7 +35,6 @@
                 width: 100%;
                 height: $size/2;
                 border-radius: 125px / 12px;
-                box-shadow: 0 0 $size/5 $primary;
             }
         }
         > span {
@@ -46,11 +46,23 @@
             left: 50%;
             margin-left: -$size/2;
             border-radius: 100%;
-            box-shadow:0 2px 4px $primary;
-            background: theme-color-level('primary', $alert-bg-level);
-            color: $primary;
             display: grid;
             place-items: center;
+        }
+    }
+
+    @each $color, $value in $theme-colors {
+        .separator-#{$color} {
+            > .mask {
+                &:after {
+                    box-shadow: 0 0 $size/5 $value;
+                }
+            }
+            > span {
+                box-shadow:0 2px 4px $value;
+                background: theme-color-level($color, $alert-bg-level);
+                color: $value;
+            }
         }
     }
 </style>

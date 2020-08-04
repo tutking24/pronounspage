@@ -90,11 +90,6 @@
                     </tbody>
                 </table>
             </div>
-
-            <!--
-
-            pronoun_all	adjective_n	adjective_ll	adjective_middle	verb_end_inter	verb_end_about	verb_middle	verb_nasal	verb_go	verb_o
-            -->
         </section>
 
         <section v-if="selectedTemplate.history">
