@@ -7,6 +7,19 @@
 
         <section>
             <About/>
+            <p>
+                <nuxt-link to="/literatura" class="btn btn-outline-primary btn-sm">
+                    <Icon v="books"/>
+                    Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
+                </nuxt-link>
+            </p>
+            <p>
+                Neutralne formy rzeczowników zbieramy tutaj:
+                <nuxt-link to="/neutratywy" class="btn btn-outline-nouns btn-sm">
+                    <Icon v="atom-alt"/>
+                    Słownik neutratywów
+                </nuxt-link>
+            </p>
         </section>
 
         <Separator icon="link"/>
@@ -188,6 +201,18 @@
                         Maniak marudzi #27: Niebinarne tłumaczenia
                     </a>
                     – artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.
+                </li>
+                <li class="my-2">
+                    <Icon v="facebook" set="b"/>
+                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
+                        Słownik Neutratywów Języka Polskiego
+                    </a>
+                </li>
+                <li class="my-2">
+                    <Icon v="facebook" set="b"/>
+                    <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
+                        Słownik Empatyczny Języka Polskiego
+                    </a>
                 </li>
             </ul>
         </section>

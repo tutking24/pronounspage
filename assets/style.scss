@@ -13,6 +13,11 @@ $container-max-widths: (
 ) !default;
 
 
+$nouns: #0F3974;
+$theme-colors: (
+    "nouns": $nouns,
+);
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
@@ -85,4 +90,12 @@ code {
     border: 1px solid $code-color;
     padding: .2em;
     border-radius: $border-radius-sm;
+}
+
+@for $columns from 1 through 12 {
+    .table-fixed-#{$columns} {
+        th, td {
+            width: (100% / $columns);
+        }
+    }
 }

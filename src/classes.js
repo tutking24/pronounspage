@@ -225,3 +225,62 @@ export class Template {
         return new Template(data[data.length - 1], m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
     }
 }
+
+export class Noun {
+    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id}) {
+        this.id = id;
+        this.masc = masc.split('|');
+        this.fem = fem.split('|');
+        this.neutr = neutr.split('|');
+        this.mascPl = mascPl.split('|');
+        this.femPl = femPl.split('|');
+        this.neutrPl = neutrPl.split('|');
+        this.approved = !!approved;
+        this.base = base_id;
+    }
+
+    matches(filter) {
+        if (!filter) {
+            return true;
+        }
+
+        for (let field of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
+            for (let value of this[field]) {
+                if (value.indexOf(filter) > -1) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+export class NounTemplate {
+    constructor(masc, fem, neutr, mascPl, femPl, neutrPl) {
+        this.masc = masc;
+        this.fem = fem;
+        this.neutr = neutr;
+        this.mascPl = mascPl;
+        this.femPl = femPl;
+        this.neutrPl = neutrPl;
+    }
+
+    fill(stem) {
+        return {
+            masc: this.masc.map(e => stem + e),
+            fem: this.fem.map(e => stem + e),
+            neutr: this.neutr.map(e => stem + e),
+            mascPl: this.mascPl.map(e => stem + e),
+            femPl: this.femPl.map(e => stem + e),
+            neutrPl: this.neutrPl.map(e => stem + e),
+            base: null,
+        }
+    }
+
+    toString() {
+        return Object.values(this)
+            .map(es => es.map(e => '-' + e).join('/'))
+            .join(', ')
+            ;
+    }
+}

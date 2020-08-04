@@ -3,6 +3,8 @@ const description = 'To narzędzie udostępnia linki do przykładów użycia zai
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
 const colour = '#C71585';
 
+const bodyParser = require('body-parser');
+
 export default {
     mode: 'universal',
     target: 'server',
@@ -41,6 +43,7 @@ export default {
     buildModules: [],
     modules: [
         '@nuxtjs/pwa',
+        '@nuxtjs/axios',
     ],
     pwa: {
         manifest: {
@@ -66,9 +69,16 @@ export default {
         },
     },
     env: {
-      baseUrl: process.env.BASE_URL
+        baseUrl: process.env.BASE_URL,
+        secret: process.env.SECRET,
     },
     serverMiddleware: {
+        '/': bodyParser.json(),
+        '/nouns': '~/server/nouns.js',
         '/banner': '~/server/banner.js',
     },
+    axios: {
+        baseURL: process.env.BASE_URL,
+    }
+
 }
