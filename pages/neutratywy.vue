@@ -101,7 +101,7 @@
                             <li v-for="w in noun.mascPl">{{ w }}</li>
                         </ul>
 
-                        <small v-if="noun.base">
+                        <small v-if="noun.base && nouns[noun.base]">
                             <p><strong>Propozycja zmiany na:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
@@ -124,7 +124,7 @@
                             <li v-for="w in noun.femPl">{{ w }}</li>
                         </ul>
 
-                        <small v-if="noun.base">
+                        <small v-if="noun.base && nouns[noun.base]">
                             <p><strong>Propozycja zmiany na:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
@@ -142,7 +142,7 @@
                             <li v-for="w in noun.neutrPl">{{ w }}</li>
                         </ul>
 
-                        <small v-if="noun.base">
+                        <small v-if="noun.base && nouns[noun.base]">
                             <p><strong>Propozycja zmiany na:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
