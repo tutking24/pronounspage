@@ -69,7 +69,7 @@
         <Separator icon="book-open" colour="nouns"/>
 
         <section>
-            <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…"/>
+            <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
         </section>
 
         <section class="table-responsive">
@@ -208,6 +208,16 @@
                 nounsRaw: await app.$axios.$get(`/nouns/all?secret=${route.query.secret || ''}`),
             };
         },
+        mounted() {
+            if (process.client && window.location.hash) {
+                console.log(window.location.hash, this.$refs.filter)
+                this.filter = window.location.hash.substr(1);
+                setTimeout(_ => {
+                    this.$refs.filter.scrollIntoView();
+                    this.$refs.filter.focus();
+                }, 1000);
+            }
+        },
         methods: {
             edit(noun) {
                 this.$refs.form.edit(noun);
@@ -243,6 +253,17 @@
                     }
                 }, this);
             },
+        },
+        watch: {
+            filter() {
+                if (process.client) {
+                    if (this.filter) {
+                        window.location.hash = this.filter;
+                    } else {
+                        history.pushState('', document.title, window.location.pathname + window.location.search);
+                    }
+                }
+            }
         },
         head() {
             const title = 'Słownik neutratywów';

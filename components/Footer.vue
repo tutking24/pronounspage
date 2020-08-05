@@ -3,7 +3,7 @@
         <Separator icon="user-friends"/>
         <section class="small text-center">
             <p>
-                Autorza strony:
+                <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
 
                 Andrea
                 (<nuxt-link to="/onu">onu</nuxt-link>,
