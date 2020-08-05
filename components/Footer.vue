@@ -17,7 +17,8 @@
                 <a href="mailto:pawel.dembowski@gmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>),
 
                 Sybilla Mykofanes
-                (<nuxt-link to="/ona&ono">ona/ono</nuxt-link>).
+                (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
+                <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>).
             </p>
 
             <p>
