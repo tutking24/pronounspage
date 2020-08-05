@@ -8,14 +8,14 @@
         <section>
             <About/>
             <p>
-                <nuxt-link to="/literatura" class="btn btn-outline-primary btn-sm">
+                <nuxt-link to="/literatura" class="btn btn-outline-primary">
                     <Icon v="books"/>
                     Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
                 </nuxt-link>
             </p>
             <p>
                 Neutralne formy rzeczowników zbieramy tutaj:
-                <nuxt-link to="/neutratywy" class="btn btn-outline-nouns btn-sm">
+                <nuxt-link to="/neutratywy" class="btn btn-outline-nouns">
                     <Icon v="atom-alt"/>
                     Słownik neutratywów
                 </nuxt-link>

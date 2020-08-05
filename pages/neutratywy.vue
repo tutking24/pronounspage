@@ -43,21 +43,21 @@
             </div>
             <p>
                 Aby dodać swoją propozycję:
-                <button class="btn btn-outline-success btn-sm" @click="$refs.form.$el.scrollIntoView()">
+                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
                     <Icon v="plus-circle"/>
                     Formularz zgłoszeniowy
                 </button>
             </p>
             <p>
                 Obserwuj Słownik na Facebooku:
-                <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm">
+                <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info">
                     <Icon v="facebook" set="b"/>
                     fb.com/neutratywy
                 </a>
             </p>
             <p>
                 Dla form neutralnych innych niż rzeczowniki zapraszamy na
-                <nuxt-link to="/" class="btn btn-outline-primary btn-sm">
+                <nuxt-link to="/" class="btn btn-outline-primary">
                     <Icon v="tags"/>
                     Zaimki.pl
                 </nuxt-link>
