@@ -109,6 +109,7 @@
                     Zgłoś propozycję
                 </template>
             </button>
+            <p class="small text-muted mt-1">Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.</p>
         </form>
     </section>
 </template>
