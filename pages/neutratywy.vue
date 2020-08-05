@@ -68,6 +68,13 @@
 
         <Separator icon="book-open" colour="nouns"/>
 
+        <section v-if="secret">
+            <div class="alert alert-info">
+                <strong>{{ nounsCountApproved }}</strong> wpisów zatwierdzonych,
+                <strong>{{ nounsCountPending }}</strong> oczekuje na moderację.
+            </div>
+        </section>
+
         <section>
             <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
         </section>
@@ -252,6 +259,12 @@
                         yield [w.id, new Noun(w)];
                     }
                 }, this);
+            },
+            nounsCountApproved() {
+                return Object.values(this.nouns).filter(n => n.approved).length;
+            },
+            nounsCountPending() {
+                return Object.values(this.nouns).filter(n => !n.approved).length;
             },
         },
         watch: {
