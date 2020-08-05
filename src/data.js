@@ -1,4 +1,4 @@
-import { Source, Example } from './classes'
+import {Source, Example, NounTemplate} from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 
@@ -60,3 +60,17 @@ export const getSources = (selectedTemplate) => {
     }
     return sources;
 }
+
+export const nounTemplates = [
+    new NounTemplate(['log'], ['lożka'], ['logum'], ['logowie'], ['lożki'], ['loga', 'loża']),
+    new NounTemplate([''], ['ka'], ['um'], ['owie'], ['ki'], ['a']),
+    new NounTemplate(['ca'], ['czyni'], ['cum'], ['cy'], ['czynie'], ['ca']),
+    new NounTemplate(['k'], ['czka'], ['kum', 'czę'], ['cy'], ['czki'], ['ka', 'cza']),
+    new NounTemplate(['t'], ['tka'], ['tum'], ['ci'], ['tki'], ['ta']),
+    new NounTemplate(['n'], ['nka'], ['nię', 'num'], ['ni'], ['nki'], ['na', 'ństwo', 'nięta']),
+    new NounTemplate(['wy'], ['wa'], ['we'], ['wi'], ['we'], ['we']),
+    new NounTemplate(['ny'], ['na'], ['ne'], ['ni'], ['ne'], ['ne']),
+    new NounTemplate(['rz'], ['rka'], ['rzę', 'rzum'], ['rze'], ['rki'], ['rzęta', 'rza']),
+    new NounTemplate(['er'], ['ra'], ['rum'], ['rowie'], ['ry'], ['ra']),
+];
+

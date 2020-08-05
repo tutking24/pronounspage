@@ -114,7 +114,7 @@
 </template>
 
 <script>
-    import { NounTemplate } from '../src/classes';
+    import { nounTemplates } from '../src/data';
 
     export default {
         props: {
@@ -133,12 +133,7 @@
                 },
                 submitting: false,
                 afterSubmit: false,
-                templates: [
-                    new NounTemplate(['log'], ['lożka'], ['logum'], ['logowie'], ['lożki'], ['loga']),
-                    new NounTemplate([''], ['ka'], ['um'], ['owie'], ['ki'], ['a']),
-                    new NounTemplate(['ca'], ['czyni'], ['cum'], ['cy'], ['czynie'], ['ca']),
-                    new NounTemplate(['k'], ['czka'], ['kum'], ['cy'], ['czki'], ['ka']),
-                ],
+                templates: nounTemplates,
                 templateBase: '',
                 templateVisible: false,
             }
