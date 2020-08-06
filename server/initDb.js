@@ -8,7 +8,7 @@ const fixtures = [
     ['filolog', 'filolożka', 'filologum', 'filologowie', 'filolożki', 'filologa'],
 ];
 
-async function initDb () {
+async function initDb() {
     const db = await sqlite.open({
         filename: __dirname + '/../data/db.sqlite',
         driver: sqlite3.Database,

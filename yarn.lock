@@ -2484,6 +2484,11 @@ colorette@^1.2.0:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha512-puCDz0CzydiSYOrnXpz/PKd69zRrribezjtE9yd4zvytoRc8+RY/KJPvtPFKZS3E3wP6neGyMe0vOTlHO5L3Pw==
 
+"colors@>= 0.3.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -5064,6 +5069,14 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
+mailer@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/mailer/-/mailer-0.6.7.tgz#012d69b2554864976d9d77f5326b35097653f653"
+  integrity sha1-AS1pslVIZJdtnXf1Mms1CXZT9lM=
+  dependencies:
+    colors ">= 0.3.0"
+    nodemailer "0.1.20"
+
 make-dir@^1.0.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -5245,6 +5258,11 @@ mime@^2.3.1, mime@^2.4.4:
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
   integrity sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
+
+mimelib-noiconv@*:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/mimelib-noiconv/-/mimelib-noiconv-0.1.9.tgz#eadce6f9ce226842501a203e95bcee96af8189f2"
+  integrity sha1-6tzm+c4iaEJQGiA+lbzulq+BifI=
 
 mimic-fn@^2.0.0, mimic-fn@^2.1.0:
   version "2.1.0"
@@ -5560,6 +5578,13 @@ node-res@^5.0.1:
     mime-types "^2.1.19"
     on-finished "^2.3.0"
     vary "^1.1.2"
+
+nodemailer@0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-0.1.20.tgz#a91748a448eddf35fe24d7272c8187ddcc38e253"
+  integrity sha1-qRdIpEjt3zX+JNcnLIGH3cw44lM=
+  dependencies:
+    mimelib-noiconv "*"
 
 "nopt@2 || 3":
   version "3.0.6"
