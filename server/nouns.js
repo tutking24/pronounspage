@@ -45,6 +45,24 @@ const remove = async (db, id) => {
     `);
 }
 
+const trollWords = [
+    'cipeusz',
+    'feminazi',
+    'bruksela',
+    'zboczeń',
+];
+
+const isTroll = (body) => {
+    const jsonBody = JSON.stringify(body);
+    for (let trollWord of trollWords) {
+        if (jsonBody.indexOf(trollWord) > -1) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 export default async function (req, res, next) {
     const db = await sqlite.open({
         filename: __dirname + '/../data/db.sqlite',
@@ -64,18 +82,20 @@ export default async function (req, res, next) {
             ORDER BY approved, masc
         `);
     } else if (req.method === 'POST' && url === '/submit') {
-        const id = ulid()
-        await db.get(SQL`
-            INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id)
-            VALUES (
-                ${id},
-                ${req.body.data.masc.join('|')}, ${req.body.data.fem.join('|')}, ${req.body.data.neutr.join('|')},
-                ${req.body.data.mascPl.join('|')}, ${req.body.data.femPl.join('|')}, ${req.body.data.neutrPl.join('|')},
-                0, ${req.body.data.base}
-            )
-        `);
-        if (isAdmin) {
-            await approve(db, id);
+        if (isAdmin || !isTroll(req.body.data)) {
+            const id = ulid()
+            await db.get(SQL`
+                INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id)
+                VALUES (
+                    ${id},
+                    ${req.body.data.masc.join('|')}, ${req.body.data.fem.join('|')}, ${req.body.data.neutr.join('|')},
+                    ${req.body.data.mascPl.join('|')}, ${req.body.data.femPl.join('|')}, ${req.body.data.neutrPl.join('|')},
+                    0, ${req.body.data.base}
+                )
+            `);
+            if (isAdmin) {
+                await approve(db, id);
+            }
         }
         result = 'ok';
     } else if (req.method === 'POST' && url.startsWith('/approve/') && isAdmin) {
