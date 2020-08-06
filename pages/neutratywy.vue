@@ -76,7 +76,19 @@
         </section>
 
         <section>
-            <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <Icon v="filter"/>
+                    </span>
+                </div>
+                <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
+                <div class="input-group-append" v-if="filter">
+                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                        <Icon v="times"/>
+                    </button>
+                </div>
+            </div>
         </section>
 
         <section class="table-responsive">
@@ -99,7 +111,8 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="noun in nouns" v-if="noun.matches(filter)" :class="{'mark-left': !noun.approved}">
+                <template v-if="visibleNouns.length">
+                <tr v-for="noun in visibleNouns" :class="{'mark-left': !noun.approved}">
                     <td>
                         <ul class="list-singular">
                             <li v-for="w in noun.masc">{{ w }}</li>
@@ -188,6 +201,15 @@
                         </ul>
                     </td>
                 </tr>
+                </template>
+                <template v-else>
+                    <tr>
+                        <td :colspan="secret ? 4 : 3" class="text-center">
+                            <Icon v="search"/>
+                            Nie znaleziono słów spełniających podane kryterium.
+                        </td>
+                    </tr>
+                </template>
                 </tbody>
             </table>
         </section>
@@ -259,6 +281,9 @@
                         yield [w.id, new Noun(w)];
                     }
                 }, this);
+            },
+            visibleNouns() {
+                return Object.values(this.nouns).filter(n => n.matches(this.filter));
             },
             nounsCountApproved() {
                 return Object.values(this.nouns).filter(n => n.approved).length;
