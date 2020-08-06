@@ -70,8 +70,8 @@
 
         <section v-if="secret">
             <div class="alert alert-info">
-                <strong>{{ nounsCountApproved }}</strong> wpisów zatwierdzonych,
-                <strong>{{ nounsCountPending }}</strong> oczekuje na moderację.
+                <strong>{{ nounsCountApproved() }}</strong> wpisów zatwierdzonych,
+                <strong>{{ nounsCountPending() }}</strong> oczekuje na moderację.
             </div>
         </section>
 
@@ -111,8 +111,8 @@
                 </tr>
                 </thead>
                 <tbody>
-                <template v-if="visibleNouns.length">
-                <tr v-for="noun in visibleNouns" :class="{'mark-left': !noun.approved}">
+                <template v-if="visibleNouns().length">
+                <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}">
                     <td>
                         <ul class="list-singular">
                             <li v-for="w in noun.masc">{{ w }}</li>
@@ -239,11 +239,11 @@
         },
         mounted() {
             if (process.client && window.location.hash) {
-                console.log(window.location.hash, this.$refs.filter)
                 this.filter = window.location.hash.substr(1);
+                this.$refs.filter.focus();
+                this.$refs.filter.scrollIntoView();
                 setTimeout(_ => {
                     this.$refs.filter.scrollIntoView();
-                    this.$refs.filter.focus();
                 }, 1000);
             }
         },
@@ -273,15 +273,6 @@
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },
-        },
-        computed: {
-            nouns() {
-                return buildDict(function* (that) {
-                    for (let w of that.nounsRaw) {
-                        yield [w.id, new Noun(w)];
-                    }
-                }, this);
-            },
             visibleNouns() {
                 return Object.values(this.nouns).filter(n => n.matches(this.filter));
             },
@@ -290,6 +281,15 @@
             },
             nounsCountPending() {
                 return Object.values(this.nouns).filter(n => !n.approved).length;
+            },
+        },
+        computed: {
+            nouns() {
+                return buildDict(function* (that) {
+                    for (let w of that.nounsRaw) {
+                        yield [w.id, new Noun(w)];
+                    }
+                }, this);
             },
         },
         watch: {
