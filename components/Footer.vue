@@ -18,6 +18,7 @@
 
                 Sybilla Mykofanes
                 (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
+                <a href="https://twitter.com/mykofanes" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
                 <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>).
             </p>
 
