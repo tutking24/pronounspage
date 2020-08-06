@@ -39,7 +39,7 @@
                 Wybierz formy wymienne:
             </p>
 
-            <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary btn-lg btn-block">
+            <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary btn-block">
                 <Icon v="sliders-h-square"/>
                 Wybierz formy wymienne
             </a>
@@ -72,7 +72,7 @@
                 Lub dopasuj bardziej szczegółowo:
             </p>
 
-            <a v-if="!customise" href="#" @click.prevent="customise = true" class="btn btn-outline-primary btn-lg btn-block">
+            <a v-if="!customise" href="#" @click.prevent="customise = true" class="btn btn-outline-primary btn-block">
                 <Icon v="sliders-h-square"/>
                 Kreator
             </a>

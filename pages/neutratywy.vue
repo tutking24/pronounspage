@@ -75,8 +75,8 @@
             </div>
         </section>
 
-        <section>
-            <div class="input-group mb-3">
+        <section class="sticky-top">
+            <div class="input-group mb-3 bg-white">
                 <div class="input-group-prepend">
                     <span class="input-group-text">
                         <Icon v="filter"/>
@@ -86,6 +86,12 @@
                 <div class="input-group-append" v-if="filter">
                     <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                         <Icon v="times"/>
+                    </button>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                        <Icon v="plus-circle"/>
+                        Zgłoś
                     </button>
                 </div>
             </div>
