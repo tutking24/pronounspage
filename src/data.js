@@ -67,6 +67,7 @@ export const nounTemplates = [
     new NounTemplate(['ca'], ['czyni'], ['cum'], ['cy'], ['czynie'], ['ca']),
     new NounTemplate(['k'], ['czka'], ['kum', 'czę'], ['cy'], ['czki'], ['ka', 'cza']),
     new NounTemplate(['t'], ['tka'], ['tum'], ['ci'], ['tki'], ['ta']),
+    new NounTemplate(['sta'], ['stka'], ['stum', 'szczę'], ['ści'], ['stki'], ['sta', 'szcza']),
     new NounTemplate(['n'], ['nka'], ['nię', 'num'], ['ni'], ['nki'], ['na', 'ństwo', 'nięta']),
     new NounTemplate(['wy'], ['wa'], ['we'], ['wi'], ['we'], ['we']),
     new NounTemplate(['ny'], ['na'], ['ne'], ['ni'], ['ne'], ['ne']),
