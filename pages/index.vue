@@ -29,9 +29,17 @@
                 Wybierz sposród najpopularniejszych:
             </p>
 
-            <nuxt-link v-for="(template, pronoun) in templates" :to="addSlash('/' + pronoun)" :key="pronoun" class="btn btn-outline-primary m-2 btn-md-lg">
-                {{template.name()}}
-            </nuxt-link>
+            <ul class="list-unstyled">
+                <li v-for="(template, pronoun) in templates" :key="pronoun" class="my-1">
+                    <nuxt-link :to="addSlash('/' + pronoun)">
+                        <strong>{{template.name()}}</strong>
+                        –
+                        {{template.description}}
+                    </nuxt-link>
+
+                    <!--{{JSON.stringify(template)}}-->
+                </li>
+            </ul>
         </section>
 
         <section>
