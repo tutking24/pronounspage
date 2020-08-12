@@ -1,14 +1,14 @@
 key	description	pronoun_n	pronoun_g	pronoun_g_acc	pronoun_d	pronoun_a	pronoun_i	pronoun_l	pronoun_all	adjective_n	adjective_ll	adjective_middle	verb_end_inter	verb_end_about	verb_middle	verb_nasal	verb_go	verb_o	honorific	plural	pluralHonorific	history	sources
 on,on/jego	Rodzaj męski	on	jego	niego	mu	go	nim	nim		y					e	ą	szedł	ó	pan	FALSE	FALSE		genderqueer,confirmatio,perfekcyjna,silaNizsza,zapachKosmosu,lewaReka
 ona,ona/jej	Rodzaj żeński	ona	jej	niej	jej	ją	nią	niej		a			a	a	a	ę	szł	o	pani	FALSE	FALSE		margot,smoczaPerla,zapachKosmosu,zabSpraw,zabMiecz
-ono/jego,ono	Rodzaj nijaki	ono	jego	niego	mu	je	nim	nim		e			o	o	o	ę	szł	o	pań	FALSE	FALSE		milo,milo2,starTrek,confirmatio,niepelnia,dozywocie,lichoNiebozatko,lichoAniol,silaNizsza,siewca,smoczaPerla,maska,ekonomiaNiesam,rzekaBogow,doBlyskPod,siedemKapit,listopadBez,ofiara,uratowacKotka
+ono/jego,ono	Rodzaj nijaki	ono	jego	niego	mu	je	nim	nim		e			o	o	o	ę	szł	o	pań	FALSE	FALSE		milo,milo2,starTrek,hen,confirmatio,niepelnia,dozywocie,lichoNiebozatko,lichoAniol,silaNizsza,siewca,smoczaPerla,maska,ekonomiaNiesam,rzekaBogow,doBlyskPod,siedemKapit,listopadBez,ofiara,uratowacKotka
 ono/jej	Rodzaj nijaki z formami żeńskimi zamiast męskich	ono	jej	niej	jej	je	nią	niej		e			o	o	o	ę	szł	o	pań	FALSE	FALSE
-ono/jejgo	Rodzaj nijaki	ono	jejgo	niejgo	jejmu	jejgo	niąnim	niejnim		e			o	o	o	ę	szł	o	pań	FALSE	FALSE
+ono/jejgo	Rodzaj nijaki z formami łączonymi	ono	jejgo	niejgo	jejmu	jejgo	niąnim	niejnim		e			o	o	o	ę	szł	o	pań	FALSE	FALSE
 ono/jeno	Neorodzaj gramatyczny, z elementami rodzaju nijakiego i dukaizmów	ono	jeno	nieno	nu	no	niemu	niem		e			o	u	o	ę	szł	o	pań	FALSE	FALSE
 ono/jenu	Rodzaj nijaki z dukaizmami zamiast form męskich	ono	jenu	nienu	nu	nu	num	num		e			o	o	o	ę	szł	o	pań	FALSE	FALSE
 onu,onu/jenu	Rodzaj postpłciowy, dukaizmy	onu	jenu	nienu	nu	nu	num	num		u			u	u	u	ę	szł	o	panu	FALSE	FALSE	"Formy te zostały stworzone przez <a href=""https://pl.wikipedia.org/wiki/Jacek_Dukaj"" target=""_blank"" rel=""noopener"">Jacka Dukaja</a> do książki <a href=""https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskona%C5%82o%C5%9B%C4%87"" target=""_blank"" rel=""noopener"">„Perfekcyjna niedoskonałość”</a>. Używają jej tam istoty post-ludzkie (phoebe), które nie mają określonej płci. Od nazwiska autora te formy gramatyczne są nazywane „dukaizmami”."	queerZaimki,loe,perfekcyjna,samounicestwienie,zapachKosmosu,smoczeDzieko,interwencja
 onæ,onæ/jæ	Formy z „ae” lub ligaturą „æ”	onæ	jæ	næ	jæ	jæ	næm	næm		æ			æ	æ	æ	ą	szł	o	panæ	FALSE	FALSE		nieOnaNieOn
-oni,oni/ich	Formy męskoosobowe liczby mnogiej	oni	ich	nich	im	ich	nimi	nich	cy	i	l	e	li	li	eli	ęli	szli	o	państwo	TRUE	TRUE		komiksKlamstwo,nawrockaBiogram,odzyskiwanieA,skrzydla,obcaByla,cyborgizacja
+oni,oni/ich	Formy męskoosobowe liczby mnogiej	oni	ich	nich	im	ich	nimi	nich	cy	i	l	e	li	li	eli	ęli	szli	o	państwo	TRUE	TRUE		degrassi,komiksKlamstwo,nawrockaBiogram,odzyskiwanieA,skrzydla,obcaByla,cyborgizacja
 one,one/ich	Formy niemęskoosobowe liczby mnogiej	one	ich	nich	im	je	nimi	nich	tkie	e	ł	o	ły	ły	ały	ęły	szły	o	państwo	TRUE	TRUE		protestPoezja,oneDay
 on/a,on/a/jego/jej	Formy z ukośnikiem	on/a	jego/jej	niego/niej	mu/jej	go/ją	nim/ą	nim/ej		y/a			/a	/a	e/a	ą	szł	o	pan/i	FALSE	FALSE		polskieStonewall
 onx,onx/jex	Formy z iksem	onx	jex	nix	jex	jex	nix	nix		x			x	x	x	ę	szł	o	panx	FALSE	FALSE		reyDomurat
