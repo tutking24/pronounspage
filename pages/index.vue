@@ -36,8 +36,13 @@
                         –
                         {{template.description}}
                     </nuxt-link>
-
-                    <!--{{JSON.stringify(template)}}-->
+                </li>
+                <li class="my-1">
+                    <nuxt-link to="/on&ona">
+                        <strong>on lub ona</strong>
+                        –
+                        Formy wymienne
+                    </nuxt-link>
                 </li>
             </ul>
         </section>
