@@ -292,7 +292,10 @@
         computed: {
             nouns() {
                 return buildDict(function* (that) {
-                    for (let w of that.nounsRaw) {
+                    const sorted = that.nounsRaw.sort((a, b) => {
+                        return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase());
+                    });
+                    for (let w of sorted) {
                         yield [w.id, new Noun(w)];
                     }
                 }, this);
