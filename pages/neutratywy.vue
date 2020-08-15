@@ -293,6 +293,12 @@
             nouns() {
                 return buildDict(function* (that) {
                     const sorted = that.nounsRaw.sort((a, b) => {
+                        if (a.approved && !b.approved) {
+                            return 1;
+                        }
+                        if (!a.approved && b.approved) {
+                            return -1;
+                        }
                         return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase());
                     });
                     for (let w of sorted) {
