@@ -30,14 +30,14 @@
             </p>
 
             <ul class="list-unstyled">
-                <li v-for="(template, pronoun) in templates" :key="pronoun" class="my-1">
+                <li v-for="(template, pronoun) in templates" :key="pronoun" :class="separators.includes(pronoun) ? 'mt-3 mb-1' : 'my-1'">
                     <nuxt-link :to="addSlash('/' + pronoun)">
                         <strong>{{template.name()}}</strong>
                         –
                         {{template.description}}
                     </nuxt-link>
                 </li>
-                <li class="my-1">
+                <li class="mt-3 mb-1">
                     <nuxt-link to="/on&ona">
                         <strong>on lub ona</strong>
                         –
@@ -251,6 +251,8 @@
                 multiple: ['on', 'ona'],
 
                 customise: false,
+
+                separators: ['ono/jego', 'onu', 'oni', 'onæ', 'vono'],
             }
         },
         computed: {
