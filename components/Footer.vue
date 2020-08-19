@@ -2,25 +2,36 @@
     <footer>
         <Separator icon="user-friends"/>
         <section class="small text-center">
-            <p>
+            <p class="mb-2">
                 <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
-
-                Andrea
-                (<nuxt-link to="/onu">onu</nuxt-link>,
-                <a href="https://avris.it" target="_blank" rel="noopener"><Icon v="globe"/></a>,
-                <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                <a href="mailto:andrea@avris.it" target="_blank" rel="noopener"><Icon v="envelope"/></a>),
-
-                Paweł Dembowski
-                (<nuxt-link to="/on">on</nuxt-link>,
-                <a href="https://twitter.com/VaultAusir" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                <a href="mailto:pawel.dembowski@gmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>),
-
-                Sybilla Mykofanes
-                (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
-                <a href="https://twitter.com/mykofanes" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>).
             </p>
+
+            <ul class="list-unstyled">
+                <li>
+                    Andrea
+                    (<nuxt-link to="/onu">onu</nuxt-link>,
+                    <a href="https://avris.it" target="_blank" rel="noopener"><Icon v="globe"/></a>,
+                    <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
+                    <a href="mailto:andrea@avris.it" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
+                    – kod, język
+                </li>
+
+                <li>
+                    Paweł Dembowski
+                    (<nuxt-link to="/on">on</nuxt-link>,
+                    <a href="https://twitter.com/VaultAusir" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
+                    <a href="mailto:pawel.dembowski@gmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
+                    – język, literatura
+                </li>
+
+                <li>
+                    Sybilla Mykofanes
+                    (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
+                    <a href="https://twitter.com/mykofanes" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
+                    <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
+                    – neutratywy
+                </li>
+            </ul>
 
             <p>
                 Kod jest
