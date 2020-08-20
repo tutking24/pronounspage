@@ -103,7 +103,7 @@
                 <tr>
                     <th class="text-nowrap">
                         <Icon v="mars"/>
-                        maskulinatyw
+                        maskulatyw
                     </th>
                     <th class="text-nowrap">
                         <Icon v="venus"/>

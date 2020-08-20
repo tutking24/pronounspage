@@ -19,7 +19,7 @@
                         <th></th>
                         <th class="text-nowrap">
                             <Icon v="mars"/>
-                            <span class="d-none d-md-inline">maskulinatyw</span>
+                            <span class="d-none d-md-inline">maskulatyw</span>
                             <span class="d-md-none">mask.</span>
                         </th>
                         <th class="text-nowrap">
