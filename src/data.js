@@ -36,7 +36,7 @@ export const sources = buildDict(function* () {
 });
 
 export const sourcesForMultipleForms = {
-    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'mlotThora', 'krolowaZimy', 'statekUmarlych', 'starWarsKoPo'],
+    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo'],
 }
 
 export const getSources = (selectedTemplate) => {
