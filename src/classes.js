@@ -81,6 +81,7 @@ export class Source {
             Article: { icon:'newspaper', text: 'Prasa' },
             // Movie: { icon:'film', text: 'Filmy' },
             Series: { icon:'tv', text: 'Seriale' },
+            Other: { icon:'comment-alt-lines', text: 'Inne' },
         }
     }
 
