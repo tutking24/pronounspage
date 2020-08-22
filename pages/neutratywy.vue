@@ -128,7 +128,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany na:</strong></p>
+                            <p><strong>Propozycja zmiany z:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
                             </ul>
@@ -151,7 +151,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany na:</strong></p>
+                            <p><strong>Propozycja zmiany z:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
                             </ul>
@@ -169,7 +169,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany na:</strong></p>
+                            <p><strong>Propozycja zmiany z:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
                             </ul>
