@@ -178,7 +178,6 @@
                     <nuxt-link to="/literatura">
                         Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
                     </nuxt-link>
-                    <!-- https://docs.google.com/document/d/1ddgYxlZk0S6sDx7eVCMMXHQEvtXpDztpYQxomALXBXM/edit -->
                     – przykłady zebrane przez Pawła Dembowskiego.
                 </li>
                 <li class="my-2">
@@ -214,6 +213,12 @@
                         Maniak marudzi #27: Niebinarne tłumaczenia
                     </a>
                     – artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.
+                </li>
+                <li class="my-2">
+                    <Icon v="play-circle"/>
+                    <a href="https://www.youtube.com/watch?v=YOEB6Ixp048" target="_blank" rel="noopener">
+                        Nie-binarny język polski – seminarium naukowe (Queer UW)
+                    </a>
                 </li>
                 <li class="my-2">
                     <Icon v="facebook" set="b"/>
