@@ -75,3 +75,4 @@ export const nounTemplates = [
     new NounTemplate(['er'], ['ra'], ['rum'], ['rowie'], ['ry'], ['ra']),
 ];
 
+export const separators = ['ono/jego', 'onu/jenu', 'oni/ich', 'onæ/jæ', 'vono/vego', 'on&ona'];

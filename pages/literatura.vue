@@ -9,20 +9,21 @@
         <LiteratureMenu all/>
 
         <section>
-            <ul>
-                <li v-for="template in templates" v-if="template.sources.length">
+            <ul class="list-unstyled">
+                <li v-for="template in templates" v-if="template.sources.length" :class="separators.includes(template.name()) ? 'mt-3 mb-1' : 'my-1'">
                     <a :href="'#' + toId(template.name())">
-                        {{ template.description }}
-                        <small v-if="template.name">({{ template.name() }})</small>
+                        <strong>{{ template.name() }}</strong>
+                        –
+                        <small>{{ template.description }}</small>
                     </a>
                 </li>
-                <li v-for="(sources, multiple) in sourcesForMultipleForms">
+                <li v-for="(sources, multiple) in sourcesForMultipleForms" :class="separators.includes(multiple) ? 'mt-3 mb-1' : 'my-1'">
                     <a :href="'#' + toId(multiple)">
                         Formy wymienne
                         <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
                     </a>
                 </li>
-                <li>
+                <li class="mt-3 mb-1">
                     <a href="#inne">
                         Inne formy
                     </a>
@@ -95,7 +96,7 @@
 </template>
 
 <script>
-    import { templates, sources, sourcesForMultipleForms } from '../src/data'
+    import { templates, sources, sourcesForMultipleForms, separators } from '../src/data'
     import { Source } from "../src/classes";
 
     export default {
@@ -105,6 +106,7 @@
                 sourcesForMultipleForms: sourcesForMultipleForms,
                 sourceTypes: Source.TYPES,
                 filter: '',
+                separators: separators,
             };
         },
         mounted() {

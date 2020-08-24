@@ -30,11 +30,11 @@
             </p>
 
             <ul class="list-unstyled">
-                <li v-for="(template, pronoun) in templates" :key="pronoun" :class="separators.includes(pronoun) ? 'mt-3 mb-1' : 'my-1'">
+                <li v-for="(template, pronoun) in templates" :key="pronoun" :class="separators.includes(template.name()) ? 'mt-3 mb-1' : 'my-1'">
                     <nuxt-link :to="addSlash('/' + pronoun)">
                         <strong>{{template.name()}}</strong>
                         –
-                        {{template.description}}
+                        <small>{{template.description}}</small>
                     </nuxt-link>
                 </li>
                 <li class="mt-3 mb-1">
@@ -238,7 +238,7 @@
 </template>
 
 <script>
-    import { examples, templates, getSources } from "~/src/data";
+    import { examples, templates, getSources, separators } from "~/src/data";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
 
@@ -257,7 +257,7 @@
 
                 customise: false,
 
-                separators: ['ono/jego', 'onu', 'oni', 'onæ', 'vono'],
+                separators: separators,
             }
         },
         computed: {
