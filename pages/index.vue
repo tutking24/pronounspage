@@ -194,6 +194,12 @@
                     </a>
                 </li>
                 <li class="my-2">
+                    <Icon v="radio"/>
+                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
+                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w Halo Radio
+                    </a>
+                </li>
+                <li class="my-2">
                     <Icon v="comment-alt-edit"/>
                     <a href="https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio" target="_blank" rel="noopener">
                         Czemu KAŻDY powinien mieć zaimki w bio
