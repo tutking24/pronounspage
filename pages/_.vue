@@ -93,9 +93,9 @@
         </section>
 
         <section v-if="selectedTemplate.history">
-            <div class="alert alert-info">
+            <div class="alert alert-info" v-for="part in selectedTemplate.history.split('@')">
                 <Icon v="info-circle"/>
-                <span v-html="selectedTemplate.history"></span>
+                <span v-html="part"></span>
             </div>
         </section>
 
