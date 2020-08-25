@@ -40,6 +40,12 @@
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
                 </p>
+                <p>
+                    <Icon v="radio"/>
+                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
+                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w Halo.Radio
+                    </a>
+                </p>
             </div>
             <p>
                 Aby dodać swoją propozycję:
