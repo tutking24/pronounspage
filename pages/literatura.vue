@@ -19,8 +19,9 @@
                 </li>
                 <li v-for="(sources, multiple) in sourcesForMultipleForms" :class="separators.includes(multiple) ? 'mt-3 mb-1' : 'my-1'">
                     <a :href="'#' + toId(multiple)">
-                        Formy wymienne
-                        <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
+                        <strong>{{ multiple.replace(/&/g, ' lub ') }}</strong>
+                        –
+                        <small>Formy wymienne</small>
                     </a>
                 </li>
                 <li class="mt-3 mb-1">

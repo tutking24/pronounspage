@@ -14,11 +14,11 @@
                 </nuxt-link>
             </p>
             <p>
-                Neutralne formy rzeczowników zbieramy tutaj:
                 <nuxt-link to="/neutratywy" class="btn btn-outline-nouns">
                     <Icon v="atom-alt"/>
                     Słownik neutratywów
                 </nuxt-link>
+                – tutaj zbieramy neutralne formy rzeczowników
             </p>
         </section>
 
