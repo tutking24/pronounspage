@@ -7,7 +7,7 @@
 
         <p>
             Udostępniamy tutaj linki do przykładów użycia
-            (w prostych zdaniach oraz w literaturze, prasie, filmach i serialach)
+            (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
             zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”,
             lecz także form niebinarnych.
         </p>

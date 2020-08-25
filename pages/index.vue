@@ -10,7 +10,7 @@
             <p>
                 <nuxt-link to="/literatura" class="btn btn-outline-primary">
                     <Icon v="books"/>
-                    Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
+                    Niebinarna polszczyzna w tekstach kultury
                 </nuxt-link>
             </p>
             <p>
@@ -176,7 +176,7 @@
                 <li class="my-2">
                     <Icon v="books"/>
                     <nuxt-link to="/literatura">
-                        Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
+                        Niebinarna polszczyzna w tekstach kultury
                     </nuxt-link>
                     – przykłady zebrane przez Pawła Dembowskiego.
                 </li>

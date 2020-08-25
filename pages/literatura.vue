@@ -3,7 +3,7 @@
         <Homepage/>
         <h1>
             <Icon v="books"/>
-            Niebinarna polszczyzna w literaturze, prasie, filmach i serialach
+            Niebinarna polszczyzna w tekstach kultury
         </h1>
 
         <LiteratureMenu all/>
@@ -32,7 +32,7 @@
         </section>
 
         <section>
-            <Share title="Niebinarna polszczyzna w literaturze, prasie, filmach i serialach"/>
+            <Share title="Niebinarna polszczyzna w tekstach kultury"/>
         </section>
 
         <section>
@@ -118,7 +118,7 @@
             }
         },
         head() {
-            const title = 'Niebinarna polszczyzna w literaturze';
+            const title = 'Niebinarna polszczyzna w tekstach kultury';
             return {
                 title: title,
                 meta: [
