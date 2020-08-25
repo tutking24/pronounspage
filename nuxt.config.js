@@ -64,6 +64,7 @@ export default {
                     dynamicTyping: true,
                     header: true,
                     skipEmptyLines: true,
+                    delimiter: '\t',
                 }
             })
         },
