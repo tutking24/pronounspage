@@ -41,14 +41,27 @@
                 <Icon v="filter"/>
                 Filtruj:
             </span>
-            <div class="btn-group">
-                <button v-for="(config, type) in sourceTypes"
-                        :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
-                        @click="filter = type"
-                >
-                    <Icon :v="config.icon"/>
-                    {{ config.text }}
-                </button>
+            <div class="d-inline-block d-md-none">
+                <div class="btn-group-vertical">
+                    <button v-for="(config, type) in sourceTypes"
+                            :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
+                            @click="filter = type"
+                    >
+                        <Icon :v="config.icon"/>
+                        {{ config.text }}
+                    </button>
+                </div>
+            </div>
+            <div class="d-none d-md-inline-block">
+                <div class="btn-group">
+                    <button v-for="(config, type) in sourceTypes"
+                            :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
+                            @click="filter = type"
+                    >
+                        <Icon :v="config.icon"/>
+                        {{ config.text }}
+                    </button>
+                </div>
             </div>
         </section>
 

@@ -78,10 +78,11 @@ export class Source {
         return {
             '': { icon: 'clipboard-list', text: 'Wszystkie' },
             Book: { icon: 'book-open', text: 'Książki' },
-            Article: { icon:'newspaper', text: 'Prasa' },
+            Article: { icon: 'newspaper', text: 'Prasa' },
             // Movie: { icon:'film', text: 'Filmy' },
-            Series: { icon:'tv', text: 'Seriale' },
-            Other: { icon:'comment-alt-lines', text: 'Inne' },
+            Series: { icon: 'tv', text: 'Seriale' },
+            Song: { icon: 'music', text: 'Muzyka' },
+            Other: { icon: 'comment-alt-lines', text: 'Inne' },
         }
     }
 
