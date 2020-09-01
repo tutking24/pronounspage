@@ -13,7 +13,7 @@
                     <a href="https://avris.it" target="_blank" rel="noopener"><Icon v="globe"/></a>,
                     <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
                     <a href="mailto:andrea@avris.it" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                    – kod, język
+                    – <a href="https://gitlab.com/Avris/Zaimki" target="_blank" rel="noopener">kod</a>, język
                 </li>
 
                 <li>
@@ -21,7 +21,7 @@
                     (<nuxt-link to="/on">on</nuxt-link>,
                     <a href="https://twitter.com/VaultAusir" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
                     <a href="mailto:pawel.dembowski@gmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                    – język, literatura
+                    – język, <nuxt-link to="/literatura">literatura</nuxt-link>
                 </li>
 
                 <li>
@@ -29,7 +29,7 @@
                     (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
                     <a href="https://twitter.com/mykofanes" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
                     <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                    – neutratywy
+                    – <nuxt-link to="/neutratywy">neutratywy</nuxt-link>
                 </li>
             </ul>
 

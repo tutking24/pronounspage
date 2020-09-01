@@ -210,7 +210,7 @@
                     <a href="https://avris.it/blog/genderneutralizacja-polszczyzny" target="_blank" rel="noopener">
                         Genderneutralizacja polszczyzny?
                     </a>
-                    – mój artykuł opisujący, dlaczego język neutralny płciowo jest ważny,
+                    – artykuł opisujący, dlaczego język neutralny płciowo jest ważny,
                     i zbierający pomysły na stworzenie takiego.
                 </li>
                 <li class="my-2">
