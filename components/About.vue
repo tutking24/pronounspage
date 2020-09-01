@@ -28,17 +28,5 @@
                 (więcej powodów tutaj).
             </a>
         </p>
-
-        <div class="alert alert-warning">
-            <p class="mb-0 small">
-                <Icon v="exclamation-triangle"/>
-                Strona jest w wersji βeta!
-                Przykłady, formy gramatyczne i linki mogą się jeszcze mocno zmienić!
-                Jeśli masz jakieś sugestie lub uwagi, daj mi proszę znać
-                <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener">na Twitterze</a>
-                lub
-                <a href="mailto:andrea@avris.it" target="_blank" rel="noopener">przez maila</a>.
-            </p>
-        </div>
     </div>
 </template>
