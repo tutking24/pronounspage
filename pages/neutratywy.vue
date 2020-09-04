@@ -229,6 +229,8 @@
         <Separator icon="plus" colour="nouns"/>
 
         <NounSubmitForm ref="form" :secret="secret"/>
+
+        <ScrollButton colour="#0F3974"/>
     </div>
 </template>
 
