@@ -62,18 +62,18 @@ export const getSources = (selectedTemplate) => {
     return sources;
 }
 
-export const nounTemplates = [
-    new NounTemplate(['log'], ['lożka'], ['logum'], ['logowie'], ['lożki'], ['loga', 'loża']),
-    new NounTemplate([''], ['ka'], ['um'], ['owie'], ['ki'], ['a']),
-    new NounTemplate(['ca'], ['czyni'], ['cum'], ['cy'], ['czynie'], ['ca']),
-    new NounTemplate(['k'], ['czka'], ['kum', 'czę'], ['cy'], ['czki'], ['ka', 'cza']),
-    new NounTemplate(['t'], ['tka'], ['tum'], ['ci'], ['tki'], ['ta']),
-    new NounTemplate(['sta'], ['stka'], ['stum', 'szczę'], ['ści'], ['stki'], ['sta', 'szcza']),
-    new NounTemplate(['n'], ['nka'], ['nię', 'num'], ['ni'], ['nki'], ['na', 'ństwo', 'nięta']),
-    new NounTemplate(['wy'], ['wa'], ['we'], ['wi'], ['we'], ['we']),
-    new NounTemplate(['ny'], ['na'], ['ne'], ['ni'], ['ne'], ['ne']),
-    new NounTemplate(['rz'], ['rka'], ['rzę', 'rzum'], ['rze'], ['rki'], ['rzęta', 'rza']),
-    new NounTemplate(['er'], ['ra'], ['rum'], ['rowie'], ['ry'], ['ra']),
-];
+import nounTemplatesRaw from '../data/nounTemplates.tsv';
+export const nounTemplates = buildList(function* () {
+    for (let t of nounTemplatesRaw) {
+        yield new NounTemplate(
+            t.masc.replace(/-/g, '').split('/'),
+            t.fem.replace(/-/g, '').split('/'),
+            t.neutr.replace(/-/g, '').split('/'),
+            t.mascPl.replace(/-/g, '').split('/'),
+            t.femPl.replace(/-/g, '').split('/'),
+            t.neutrPl.replace(/-/g, '').split('/'),
+        );
+    }
+});
 
 export const separators = ['ono/jego', 'onu/jenu', 'oni/ich', 'onæ/jæ', 'vono/vego', 'on&ona'];
