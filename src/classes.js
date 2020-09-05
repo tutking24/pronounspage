@@ -126,7 +126,8 @@ const escape = s => {
 }
 
 export class Template {
-    constructor (description, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
+    constructor (canonicalName, description, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
+        this.canonicalName = canonicalName;
         this.description = description;
         this.morphemes = morphemes
         this.plural = plural;
@@ -156,7 +157,7 @@ export class Template {
     }
 
     clone() {
-        return new Template(this.description, clone(this.morphemes), this.plural, this.pluralHonorific);
+        return new Template(this.canonicalName, this.description, clone(this.morphemes), this.plural, this.pluralHonorific);
     }
 
     equals(other) {
@@ -170,6 +171,7 @@ export class Template {
         }
 
         return new Template(
+            this.canonicalName + '&' + other.canonicalName,
             Array.isArray(this.description) ? [...this.description, other.description] : [this.description, other.description],
             buildDict(function* (that, other) {
                 for (let morpheme of MORPHEMES) {
@@ -224,7 +226,7 @@ export class Template {
             m[MORPHEMES[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(data[data.length - 1], m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
+        return new Template(m.pronoun_n, data[data.length - 1], m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
     }
 }
 

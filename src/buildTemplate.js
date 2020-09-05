@@ -47,6 +47,7 @@ export const parseTemplates = (templatesRaw) => {
             yield [
                 aliases[0],
                 new Template(
+                    aliases[0],
                     t.description,
                     buildDict(function* () {
                         for (let morpheme of MORPHEMES) {

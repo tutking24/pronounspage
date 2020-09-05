@@ -49,7 +49,7 @@ export const getSources = (selectedTemplate) => {
     let sources = {};
     for (let multiple in sourcesForMultipleForms) {
         if (sourcesForMultipleForms.hasOwnProperty(multiple)) {
-            if (multiple === selectedTemplate.morphemes.pronoun_n) {
+            if (multiple === selectedTemplate.canonicalName) {
                 sources[multiple] = sourcesForMultipleForms[multiple];
             }
         }
