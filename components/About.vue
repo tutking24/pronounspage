@@ -21,6 +21,12 @@
         </p>
 
         <p>
+            Formy neutralne płciowo
+            – jak np. “moi drodzy/drogie”, “drogie osoby”, “wszys* chętn*”, “jesteś wspanialx”, itp. –
+            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
+        </p>
+
+        <p>
             Warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych
             – nawet jeśli jesteś cis i używasz „on” lub „ona” – ponieważ dzięki temu pokazujesz wsparcie dla społeczności trans
             i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
