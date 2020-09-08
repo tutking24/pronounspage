@@ -1,4 +1,4 @@
-import {buildDict} from "./helpers";
+import {buildDict, buildList} from "./helpers";
 
 export class ExamplePart {
     constructor(variable, str) {
@@ -227,6 +227,53 @@ export class Template {
         }
 
         return new Template(m.pronoun_n, data[data.length - 1], m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
+    }
+}
+
+export class TemplateGroup {
+    constructor(name, templates, description = null) {
+        this.name = name;
+        this.templates = templates;
+        this.description = description;
+    }
+}
+
+export class TemplateLibrary {
+    constructor(groups, templates) {
+        this.groups = groups;
+        this.templates = templates;
+    }
+
+    *split(filter = null, includeOthers = true) {
+        let templatesLeft = Object.keys(this.templates);
+        const that = this;
+
+        for (let g of this.groups) {
+            yield [g, buildList(function* () {
+                for (let t of g.templates) {
+                    templatesLeft = templatesLeft.filter(i => i !== t);
+                    const template = that.templates[t] || t;
+                    if (!filter || filter(template)) {
+                        yield template;
+                    }
+                }
+            })];
+        }
+
+        if (!templatesLeft.length || !includeOthers) {
+            return;
+        }
+
+        yield [
+            new TemplateGroup('Inne formy', templatesLeft),
+            buildList(function* () {
+                for (let t of templatesLeft) {
+                    if (!filter || filter(that.templates[t])) {
+                        yield that.templates[t];
+                    }
+                }
+            }),
+        ];
     }
 }
 

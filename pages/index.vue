@@ -29,20 +29,27 @@
                 Wybierz sposród najpopularniejszych:
             </p>
 
-            <ul class="list-unstyled">
-                <li v-for="(template, pronoun) in templates" :key="pronoun" :class="separators.includes(template.name()) ? 'mt-3 mb-1' : 'my-1'">
-                    <nuxt-link :to="addSlash('/' + pronoun)">
-                        <strong>{{template.name()}}</strong>
-                        –
-                        <small>{{template.description}}</small>
-                    </nuxt-link>
-                </li>
-                <li class="mt-3 mb-1">
-                    <nuxt-link to="/on&ona">
-                        <strong>on lub ona</strong>
-                        –
-                        Formy wymienne
-                    </nuxt-link>
+            <ul class="list-group">
+                <li v-for="[group, groupTemplates] in templateLibrary.split()" class="list-group-item">
+                    <p class="h5">
+                        {{ group.name }}
+                    </p>
+                    <div class="small my-1" v-if="group.description">
+                        <Icon v="info-circle"/>
+                        <em>{{ group.description }}</em>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li v-for="template in groupTemplates" :key="template.canonicalName">
+                            <nuxt-link v-if="typeof template === 'string'" :to="'/' + template">
+                                <strong>{{template.replace(/&/g, ' lub ')}}</strong>
+                            </nuxt-link>
+                            <nuxt-link v-else :to="addSlash('/' + template.canonicalName)">
+                                <strong>{{template.name()}}</strong>
+                                –
+                                <small>{{template.description}}</small>
+                            </nuxt-link>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
@@ -257,7 +264,7 @@
 </template>
 
 <script>
-    import { examples, templates, getSources, separators } from "~/src/data";
+    import { examples, templates, getSources, templateLibrary } from "~/src/data";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
 
@@ -267,6 +274,7 @@
                 examples: examples,
                 templates: templates,
                 getTemplate: getTemplate,
+                templateLibrary: templateLibrary,
 
                 selectedTemplate: templates['on'].clone(),
                 selectedMorpheme: '',
@@ -275,8 +283,6 @@
                 multiple: ['on', 'ona'],
 
                 customise: false,
-
-                separators: separators,
             }
         },
         computed: {

@@ -1,4 +1,4 @@
-import {Source, Example, NounTemplate} from './classes'
+import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary} from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 
@@ -77,4 +77,15 @@ export const nounTemplates = buildList(function* () {
     }
 });
 
-export const separators = ['ono/jego', 'onu/jenu', 'oni/ich', 'onæ/jæ', 'vono/vego', 'on&ona'];
+import templateGroupsRaw from '../data/templateGroups.tsv';
+export const templateGroups = buildList(function* () {
+    for (let g of templateGroupsRaw) {
+        yield new TemplateGroup(
+            g.name,
+            g.templates.split(','),
+            g.description,
+        );
+    }
+});
+
+export const templateLibrary = new TemplateLibrary(templateGroups, templates);

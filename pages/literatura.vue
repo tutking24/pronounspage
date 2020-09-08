@@ -9,31 +9,44 @@
         <LiteratureMenu all/>
 
         <section>
-            <ul class="list-unstyled">
-                <li v-for="template in templates" v-if="template.sources.length" :class="separators.includes(template.name()) ? 'mt-3 mb-1' : 'my-1'">
-                    <a :href="'#' + toId(template.name())">
-                        <strong>{{ template.name() }}</strong>
-                        –
-                        <small>{{ template.description }}</small>
-                    </a>
-                </li>
-                <li v-for="(sources, multiple) in sourcesForMultipleForms" :class="separators.includes(multiple) ? 'mt-3 mb-1' : 'my-1'">
-                    <a :href="'#' + toId(multiple)">
-                        <strong>{{ multiple.replace(/&/g, ' lub ') }}</strong>
-                        –
-                        <small>Formy wymienne</small>
-                    </a>
-                </li>
-                <li class="mt-3 mb-1">
-                    <a href="#inne">
-                        Inne formy
-                    </a>
-                </li>
-            </ul>
+            <Share title="Niebinarna polszczyzna w tekstach kultury"/>
         </section>
 
         <section>
-            <Share title="Niebinarna polszczyzna w tekstach kultury"/>
+            <button v-if="!tocShown" class="btn btn-outline-primary btn-block" @click="tocShown = true">
+                <Icon v="list"/>
+                Pokaż spis treści
+            </button>
+            <ul v-if="tocShown" class="list-group">
+                <li v-for="[group, groupTemplates] in templateLibrary.split(filterTemplate, false)" class="list-group-item">
+                    <p class="h5">
+                        {{ group.name }}
+                    </p>
+                    <div class="small my-1" v-if="group.description">
+                        <Icon v="info-circle"/>
+                        <em>{{ group.description }}</em>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li v-for="template in groupTemplates" :key="template.canonicalName">
+                            <a v-if="typeof template === 'string'" :href="'#' + toId(template)">
+                                <strong>{{ template.replace(/&/g, ' lub ') }}</strong>
+                            </a>
+                            <a v-else :href="'#' + toId(template.name())">
+                                <strong>{{ template.name() }}</strong>
+                                –
+                                <small>{{ template.description }}</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <p class="h5 mb-0">
+                        <a href="#inne">
+                            <strong>Inne formy</strong>
+                        </a>
+                    </p>
+                </li>
+            </ul>
         </section>
 
         <section>
@@ -112,7 +125,7 @@
 </template>
 
 <script>
-    import { templates, sources, sourcesForMultipleForms, separators } from '../src/data'
+    import { templates, sources, sourcesForMultipleForms, templateLibrary } from '../src/data'
     import { Source } from "../src/classes";
 
     export default {
@@ -120,9 +133,10 @@
             return {
                 templates: templates,
                 sourcesForMultipleForms: sourcesForMultipleForms,
+                templateLibrary: templateLibrary,
+                tocShown: false,
                 sourceTypes: Source.TYPES,
                 filter: '',
-                separators: separators,
             };
         },
         mounted() {
@@ -162,6 +176,12 @@
         methods: {
             toId(str) {
                 return str.replace(/\//g, '-').replace(/&/g, '_');
+            },
+            filterTemplate(t) {
+                if (typeof t === 'string') {
+                    return Object.keys(sourcesForMultipleForms).includes(t);
+                }
+                return t.sources.length;
             }
         },
     }
