@@ -82,6 +82,7 @@ export class Source {
             // Movie: { icon:'film', text: 'Filmy' },
             Series: { icon: 'tv', text: 'Seriale' },
             Song: { icon: 'music', text: 'Muzyka' },
+            Poetry: { icon: 'scroll', text: 'Poezja' },
             Other: { icon: 'comment-alt-lines', text: 'Inne' },
         }
     }
