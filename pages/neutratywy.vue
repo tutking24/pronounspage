@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <Homepage/>
-        <h1>
+        <Header/>
+        <h2>
             <Icon v="atom-alt"/>
             Słownik neutratywów
-        </h1>
+        </h2>
 
         <section>
             <p>

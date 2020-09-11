@@ -1,11 +1,11 @@
 <template>
     <NotFound v-if="!selectedTemplate"/>
     <div class="container" v-else>
-        <Homepage/>
-        <h1>
+        <Header/>
+        <h2>
             <Icon v="tag"/>
             Moje zaimki to:
-        </h1>
+        </h2>
 
         <section>
             <div class="alert alert-primary">

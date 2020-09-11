@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <Homepage/>
-        <h1>
+        <Header/>
+        <h2>
             <Icon v="books"/>
             Niebinarna polszczyzna w tekstach kultury
-        </h1>
+        </h2>
 
         <LiteratureMenu all/>
 
