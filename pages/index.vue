@@ -185,30 +185,11 @@
             </h2>
             <ul class="list-unstyled">
                 <li class="my-2">
-                    <Icon v="books"/>
-                    <nuxt-link to="/literatura">
-                        Niebinarna polszczyzna w tekstach kultury
-                    </nuxt-link>
-                    – przykłady zebrane przez Pawła Dembowskiego.
-                </li>
-                <li class="my-2">
                     <Icon v="globe-europe"/>
                     <a href="https://pronoun.is/" target="_blank" rel="noopener">
                         Pronoun.is
                     </a>
                     – anglojęzyczna inspiracja dla tej strony.
-                </li>
-                <li class="my-2">
-                    <Icon v="newspaper"/>
-                    <a href="https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc" target="_blank" rel="noopener">
-                        Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym. Rozmawialiśmy z jej twórcą i twórczynium
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="radio"/>
-                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
-                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w Halo.Radio
-                    </a>
                 </li>
                 <li class="my-2">
                     <Icon v="comment-alt-edit"/>
@@ -247,6 +228,27 @@
                     <Icon v="facebook" set="b"/>
                     <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
                         Słownik Empatyczny Języka Polskiego
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="h3 mb-3 mt-5">
+                <Icon v="tv"/>
+                Zaimki.pl w mediach
+            </h2>
+            <ul class="list-unstyled">
+                <li class="my-2">
+                    <Icon v="newspaper"/>
+                    <a href="https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc" target="_blank" rel="noopener">
+                        Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym.
+                        Rozmawialiśmy z jej twórcą i twórczynium
+                        – <strong>Queer.pl</strong>
+                    </a>
+                </li>
+                <li class="my-2">
+                    <Icon v="radio"/>
+                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
+                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>
                     </a>
                 </li>
             </ul>
