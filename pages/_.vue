@@ -123,14 +123,13 @@
 
 <script>
     import { examples, templates, getSources } from "~/src/data";
-    import { buildTemplate, getTemplate } from "../src/buildTemplate";
+    import { buildTemplate } from "../src/buildTemplate";
 
     export default {
         data() {
             return {
                 examples: examples,
                 templates: templates,
-                getTemplate: getTemplate,
 
                 selectedTemplate: buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, '')),
 
