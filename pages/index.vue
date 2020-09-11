@@ -14,7 +14,7 @@
                 </nuxt-link>
             </p>
             <p>
-                <nuxt-link to="/neutratywy" class="btn btn-outline-nouns">
+                <nuxt-link to="/neutratywy" class="btn btn-outline-primary">
                     <Icon v="atom-alt"/>
                     Słownik neutratywów
                 </nuxt-link>

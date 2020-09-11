@@ -13,11 +13,6 @@ $container-max-widths: (
 ) !default;
 
 
-$nouns: #0F3974;
-$theme-colors: (
-    "nouns": $nouns,
-);
-
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";

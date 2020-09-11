@@ -72,7 +72,7 @@
             <Share title="Słownik neutratywów"/>
         </section>
 
-        <Separator icon="book-open" colour="nouns"/>
+        <Separator icon="book-open"/>
 
         <section v-if="secret">
             <div class="alert alert-info">
@@ -88,7 +88,7 @@
                         <Icon v="filter"/>
                     </span>
                 </div>
-                <input class="form-control border-nouns" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
+                <input class="form-control border-primary" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
                 <div class="input-group-append" v-if="filter">
                     <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                         <Icon v="times"/>
@@ -143,7 +143,7 @@
                             </ul>
                         </small>
 
-                        <button v-if="!secret" class="btn btn-outline-nouns btn-sm m-1 hover-show" @click="edit(noun)">
+                        <button v-if="!secret" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
                             <Icon v="pen"/>
                             Zaproponuj zmianę
                         </button>
@@ -205,7 +205,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button class="btn btn-outline-nouns btn-sm m-1" @click="edit(noun)">
+                                <button class="btn btn-outline-primary btn-sm m-1" @click="edit(noun)">
                                     <Icon v="pen"/>
                                     Edytuj
                                 </button>
@@ -226,7 +226,7 @@
             </table>
         </section>
 
-        <Separator icon="plus" colour="nouns"/>
+        <Separator icon="plus"/>
 
         <NounSubmitForm ref="form" :secret="secret"/>
 
@@ -380,7 +380,7 @@
     }
 
     .mark-left {
-        border-left: 3px solid $nouns;
+        border-left: 3px solid $primary;
     }
 
     tr {

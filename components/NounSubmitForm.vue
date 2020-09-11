@@ -77,7 +77,7 @@
                 </button>
             </div>
 
-            <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-nouns btn-block">
+            <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary btn-block">
                 <Icon v="copy"/>
                 Użyj szablonu
             </a>
@@ -92,7 +92,7 @@
                     <ul>
                         <li v-for="template in templates" class="my-2">
                             {{ template.toString() }}
-                            <button type="button" class="btn btn-outline-nouns btn-sm" @click="form = template.fill(templateBase)">
+                            <button type="button" class="btn btn-outline-primary btn-sm" @click="form = template.fill(templateBase)">
                                 <Icon v="copy"/>
                             </button>
                         </li>
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <button class="btn btn-nouns btn-block" :disabled="submitting">
+            <button class="btn btn-primary btn-block" :disabled="submitting">
                 <template v-if="submitting">
                     <Icon v="circle-notch fa-spin"/>
                 </template>
