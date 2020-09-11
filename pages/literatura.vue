@@ -148,7 +148,7 @@
             }
         },
         head() {
-            const title = 'Niebinarna polszczyzna w tekstach kultury';
+            const title = 'Niebinarna polszczyzna w tekstach kultury • Zaimki.pl';
             return {
                 title: title,
                 meta: [

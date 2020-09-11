@@ -327,7 +327,7 @@
             }
         },
         head() {
-            const title = 'Słownik neutratywów';
+            const title = 'Słownik neutratywów • Zaimki.pl';
             const description = 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.';
             const banner = `${process.env.baseUrl}/bannerNouns.png`;
 
