@@ -6,7 +6,7 @@
                 Zaimki.pl
             </nuxt-link>
         </h1>
-        <p :class="['text-' + align, 'mb-0']">
+        <p class="mb-0'">
             <nuxt-link to="/" class="btn btn-outline-primary btn-sm">
                 <Icon v="home"/>
                 Strona główna
