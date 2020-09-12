@@ -213,6 +213,14 @@
                     – artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.
                 </li>
                 <li class="my-2">
+                    <Icon v="comment-alt-edit"/>
+                    <a href="http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/" target="_blank" rel="noopener">
+                        Równi wobec języka – o języku neutralnym płciowo
+                    </a>
+                    – artykuł Agnieszki Wąsowskiej
+
+                </li>
+                <li class="my-2">
                     <Icon v="play-circle"/>
                     <a href="https://www.youtube.com/watch?v=YOEB6Ixp048" target="_blank" rel="noopener">
                         Nie-binarny język polski – seminarium naukowe (Queer UW)
