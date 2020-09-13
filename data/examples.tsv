@@ -1,7 +1,7 @@
 singular	plural	isHonorific
 Myślę, że {pronoun_n} jest bardzo mił{adjective_n}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}	FALSE
 Tęsknię za {pronoun_g} śmiechem.		FALSE
-Napiszę do {pronoun_g_acc} później		FALSE
+Napiszę do {pronoun_g_acc} później.		FALSE
 Powiedział{verb_middle_inter}m {pronoun_d}, że {pronoun_a} lubię.	Powiedzi{verb_middle_inter}śmy {pronoun_d}, że {pronoun_a} lubimy.	FALSE
 Chciał{verb_end_inter}bym pójść do kina.	Chci{verb_middle_inter}byśmy pójść do kina.	FALSE
 Czy będziesz grał{verb_end_about} z nami?	Czy będziecie gra{verb_end_about} z nami?	FALSE
