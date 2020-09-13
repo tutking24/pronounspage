@@ -218,7 +218,6 @@
                         Równi wobec języka – o języku neutralnym płciowo
                     </a>
                     – artykuł Agnieszki Wąsowskiej
-
                 </li>
                 <li class="my-2">
                     <Icon v="play-circle"/>
