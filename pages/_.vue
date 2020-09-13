@@ -31,10 +31,7 @@
 
             <ul>
                 <li v-for="example in examples" class="my-1">
-                    <span v-for="part in example[(example.isHonorific ? selectedTemplate.pluralHonorific : selectedTemplate.plural) ? 'pluralParts' : 'singularParts']">
-                        <strong v-if="part.variable">{{selectedTemplate.getMorpheme(part.str, counter)}}</strong>
-                        <span v-else>{{part.str}}</span>
-                    </span>
+                    <Example :example="example" :template="selectedTemplate" :counter="counter"/>
                 </li>
             </ul>
         </section>

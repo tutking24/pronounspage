@@ -19,16 +19,18 @@ export default async function (req, res, next) {
         return;
     }
 
+    const templateName = decodeURIComponent(req.url.substr(1, req.url.length - 5));
+
     const template = buildTemplate(
         parseTemplates(loadTsv('templates.tsv')),
-        decodeURIComponent(req.url.substr(1, req.url.length - 5))
+        templateName,
     );
 
     const width = 1200
     const height = 600
     const mime = 'image/png';
     const imageSize = 200;
-    const leftRatio = template ? 4 : 5;
+    const leftRatio = template || templateName === 'dowolne' ? 4 : 5;
 
     registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', { family: 'Quicksand', weight: 'regular'});
     registerFont('static/fonts/quicksand-v21-latin-ext_latin-700.ttf', { family: 'Quicksand', weight: 'bold'});
@@ -43,11 +45,11 @@ export default async function (req, res, next) {
     const image = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
     context.drawImage(image, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25)
 
-    if (template) {
+    if (template || templateName === 'dowolne') {
         context.font = 'regular 48pt Quicksand'
         context.fillText('Moje zaimki to:', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-        const templateNameOptions = template.nameOptions();
+        const templateNameOptions = templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
         context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
         context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
     } else {

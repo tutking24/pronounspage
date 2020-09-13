@@ -173,6 +173,16 @@
                         </div>
                     </div>
                 </li>
+                <li class="list-group-item">
+                    <p class="h5">
+                        <nuxt-link to="/dowolne">Dowolne zaimki</nuxt-link>
+                    </p>
+                    <p>
+                        Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
+                        innym nie przeszkadza zwracanie się w dowolny sposób
+                        – o ile wiadomo z kontekstu, że to o nich mowa.
+                    </p>
+                </li>
             </ul>
         </section>
 
