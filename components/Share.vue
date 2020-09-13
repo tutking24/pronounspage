@@ -1,5 +1,9 @@
 <template>
     <div>
+        <p class="small mb-0">
+            <Icon v="share"/>
+            Udostępnij:
+        </p>
         <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>
