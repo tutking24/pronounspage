@@ -41,10 +41,19 @@
             </p>
         </section>
         <section class="text-center small">
-            <Share/>
-            <div class="mt-2">
+            <p class="small mb-0">
+                <Icon v="users"/>
+                Kontakt, social media, wsparcie:
+            </p>
+            <div class="mb-3">
                 <SquareButton link="https://avris.it">
                     <img src="~assets/avris.svg"/>
+                </SquareButton>
+                <SquareButton link="https://facebook.com/neutratywy/">
+                    <Icon v="facebook-f" set="b"/>
+                </SquareButton>
+                <SquareButton link="https://instagram.com/neutratywy/">
+                    <Icon v="instagram" set="b"/>
                 </SquareButton>
                 <SquareButton link="https://paypal.me/AndreAvris">
                     <Icon v="paypal" set="b"/>
@@ -53,6 +62,7 @@
                     <Icon v="gitlab" set="b"/>
                 </SquareButton>
             </div>
+            <Share/>
         </section>
     </footer>
 </template>

@@ -64,9 +64,9 @@
                 </li>
                 <li class="mb-3">
                     Obserwuj Słownik na Instagramie:
-                    <a href="https://www.instagram.com/neutratywypl/" target="_blank" rel="noopener" class="btn btn-outline-info">
+                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener" class="btn btn-outline-info">
                         <Icon v="instagram" set="b"/>
-                        instagram.com/neutratywypl
+                        instagram.com/neutratywy
                     </a>
                 </li>
                 <li class="mb-3">

@@ -237,20 +237,20 @@
                 </li>
                 <li class="my-2">
                     <Icon v="instagram" set="b"/>
-                    <a href="https://www.instagram.com/neutratywypl/" target="_blank" rel="noopener">
-                        Słownik Neutratywów Języka Polskiego
+                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener">
+                        „Słownik Neutratywów Języka Polskiego” na Instagramie
                     </a>
                 </li>
                 <li class="my-2">
                     <Icon v="facebook" set="b"/>
                     <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
-                        Słownik Neutratywów Języka Polskiego
+                        „Słownik Neutratywów Języka Polskiego” na
                     </a>
                 </li>
                 <li class="my-2">
                     <Icon v="facebook" set="b"/>
                     <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
-                        Słownik Empatyczny Języka Polskiego
+                        „Słownik Empatyczny Języka Polskiego” na Facebooku
                     </a>
                 </li>
             </ul>
