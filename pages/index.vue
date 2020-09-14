@@ -244,7 +244,7 @@
                 <li class="my-2">
                     <Icon v="facebook" set="b"/>
                     <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
-                        „Słownik Neutratywów Języka Polskiego” na
+                        „Słownik Neutratywów Języka Polskiego” na Facebooku
                     </a>
                 </li>
                 <li class="my-2">
