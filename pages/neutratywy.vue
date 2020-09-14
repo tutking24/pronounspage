@@ -47,27 +47,36 @@
                     </a>
                 </p>
             </div>
-            <p>
-                Aby dodać swoją propozycję:
-                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
-                    <Icon v="plus-circle"/>
-                    Formularz zgłoszeniowy
-                </button>
-            </p>
-            <p>
-                Obserwuj Słownik na Facebooku:
-                <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info">
-                    <Icon v="facebook" set="b"/>
-                    fb.com/neutratywy
-                </a>
-            </p>
-            <p>
-                Dla form neutralnych innych niż rzeczowniki zapraszamy na
-                <nuxt-link to="/" class="btn btn-outline-primary">
-                    <Icon v="tags"/>
-                    Zaimki.pl
-                </nuxt-link>
-            </p>
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    Aby dodać swoją propozycję:
+                    <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                        <Icon v="plus-circle"/>
+                        Formularz zgłoszeniowy
+                    </button>
+                </li>
+                <li class="mb-3">
+                    Obserwuj Słownik na Facebooku:
+                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info">
+                        <Icon v="facebook" set="b"/>
+                        fb.com/neutratywy
+                    </a>
+                </li>
+                <li class="mb-3">
+                    Obserwuj Słownik na Instagramie:
+                    <a href="https://www.instagram.com/neutratywypl/" target="_blank" rel="noopener" class="btn btn-outline-info">
+                        <Icon v="instagram" set="b"/>
+                        instagram.com/neutratywypl
+                    </a>
+                </li>
+                <li class="mb-3">
+                    Dla form neutralnych innych niż rzeczowniki zapraszamy na
+                    <nuxt-link to="/" class="btn btn-outline-primary">
+                        <Icon v="tags"/>
+                        Zaimki.pl
+                    </nuxt-link>
+                </li>
+            </ul>
 
             <Share title="Słownik neutratywów"/>
         </section>
