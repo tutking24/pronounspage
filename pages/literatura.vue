@@ -24,7 +24,7 @@
                     </p>
                     <div class="small my-1" v-if="group.description">
                         <Icon v="info-circle"/>
-                        <em>{{ group.description }}</em>
+                        <em v-html="group.description"></em>
                     </div>
                     <ul class="list-unstyled">
                         <li v-for="template in groupTemplates" :key="template.canonicalName">
