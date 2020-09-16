@@ -176,6 +176,7 @@ export class Template {
         return new Template(
             this.canonicalName + '&' + other.canonicalName,
             Array.isArray(this.description) ? [...this.description, other.description] : [this.description, other.description],
+            this.normative && other.normative,
             buildDict(function* (that, other) {
                 for (let morpheme of MORPHEMES) {
                     yield [morpheme, (that.morphemes[morpheme] || '') + '&' + (other.morphemes[morpheme] || '')]
