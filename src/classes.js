@@ -128,9 +128,10 @@ const escape = s => {
 }
 
 export class Template {
-    constructor (canonicalName, description, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
+    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
         this.canonicalName = canonicalName;
         this.description = description;
+        this.normative = normative;
         this.morphemes = morphemes
         this.plural = plural;
         this.pluralHonorific = pluralHonorific;
@@ -159,7 +160,7 @@ export class Template {
     }
 
     clone() {
-        return new Template(this.canonicalName, this.description, clone(this.morphemes), this.plural, this.pluralHonorific);
+        return new Template(this.canonicalName, this.description, this.normative, clone(this.morphemes), this.plural, this.pluralHonorific);
     }
 
     equals(other) {
@@ -228,7 +229,7 @@ export class Template {
             m[MORPHEMES[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(m.pronoun_n, data[data.length - 1], m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
+        return new Template(m.pronoun_n, data[data.length - 1], false, m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
     }
 }
 

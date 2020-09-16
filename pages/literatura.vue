@@ -36,6 +36,7 @@
                                 –
                                 <small>{{ template.description }}</small>
                             </a>
+                            <span v-if="template.normative" class="badge badge-secondary">Normatywne</span>
                         </li>
                     </ul>
                 </li>

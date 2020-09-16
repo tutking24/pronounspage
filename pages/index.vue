@@ -44,6 +44,7 @@
                                 –
                                 <small>{{template.description}}</small>
                             </nuxt-link>
+                            <span v-if="template.normative" class="badge badge-secondary">Normatywne</span>
                         </li>
                     </ul>
                 </li>
