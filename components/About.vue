@@ -44,7 +44,7 @@
 
         <p>
             Już teraz w codziennej polszczyźnie używamy wielu form neutralnych płciowo:
-            „moje kochanie <nuxt-link to="/ono">zrobiło</nuxt-link> mi niespodziankę”,
+            „moje <nuxt-link to="/neutratywy#kochanie">kochanie</nuxt-link> <nuxt-link to="/ono">zrobiło</nuxt-link> mi niespodziankę”,
             „proszę przyjść do szkoły z <nuxt-link to="/neutratywy#rodzic">rodzicem</nuxt-link>”,
             „w urzędzie powiedziano mi, że...”,
             „<nuxt-link to="/oni">dzwonili</nuxt-link> z gazowni”,
