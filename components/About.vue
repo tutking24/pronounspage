@@ -24,14 +24,6 @@
         </p>
 
         <p>
-            Formy neutralne płciowo
-            – jak np. „<nuxt-link to="/on/a">moi drodzy/drogie</nuxt-link>”,
-            „drogie osoby”, „<nuxt-link to="/on*/">wszys* chętn*</nuxt-link>”,
-            „<nuxt-link to="/onx">jesteś wspanialx</nuxt-link>”, itp. –
-            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
-        </p>
-
-        <p>
             Warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych
             – nawet jeśli jesteś cis i używasz
             „<nuxt-link to="/on">on</nuxt-link>” lub „<nuxt-link to="/ona">ona</nuxt-link>”
@@ -40,6 +32,24 @@
             <a href="https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio" target="_blank" rel="noopener">
                 (więcej powodów tutaj).
             </a>
+        </p>
+
+        <p>
+            Formy neutralne płciowo
+            – jak np. „<nuxt-link to="/on/a">moi drodzy/drogie</nuxt-link>”,
+            „drogie osoby”, „<nuxt-link to="/on*/">wszys* chętn*</nuxt-link>”,
+            „<nuxt-link to="/onx">jesteś wspanialx</nuxt-link>”, itp. –
+            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
+        </p>
+
+        <p>
+            Już teraz w codziennej polszczyźnie używamy wielu form neutralnych płciowo:
+            „moje kochanie <nuxt-link to="/ono">zrobiło</nuxt-link> mi niespodziankę”,
+            „proszę przyjść do szkoły z <nuxt-link to="/neutratywy#rodzic">rodzicem</nuxt-link>”,
+            „w urzędzie powiedziano mi, że...”,
+            „<nuxt-link to="/oni">dzwonili</nuxt-link> z gazowni”,
+            „będę robić”, itp.
+            Tutaj idziemy po prostu o krok dalej.
         </p>
     </div>
 </template>
