@@ -1,8 +1,8 @@
 <template>
     <footer>
         <Separator icon="user-friends"/>
-        <div class="d-flex flex-column flex-md-row justify-content-around my-4">
-            <div class="small text-center">
+        <div class="d-flex flex-column flex-md-row justify-content-around mt-4 mb-5">
+            <div class="small text-center d-flex flex-column justify-content-center">
                 <p class="mb-2">
                     <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
                 </p>
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
 
-                <p>
+                <p class="mb-0">
                     Kod jest
                     <a href="https://gitlab.com/Avris/Zaimki" target="_blank" rel="noopener">udostępniony</a>
                     na licencji
