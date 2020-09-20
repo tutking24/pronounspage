@@ -244,18 +244,6 @@
                     – <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40
                 </li>
                 <li class="my-2">
-                    <Icon v="instagram" set="b"/>
-                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener">
-                        „Słownik Neutratywów Języka Polskiego” na Instagramie
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="facebook" set="b"/>
-                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
-                        „Słownik Neutratywów Języka Polskiego” na Facebooku
-                    </a>
-                </li>
-                <li class="my-2">
                     <Icon v="facebook" set="b"/>
                     <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
                         „Słownik Empatyczny Języka Polskiego” na Facebooku
@@ -280,6 +268,25 @@
                     <Icon v="radio"/>
                     <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
                         Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="h3 mb-3 mt-5">
+                <Icon v="hashtag"/>
+                Social media
+            </h2>
+            <ul class="list-unstyled">
+                <li class="my-2">
+                    <Icon v="instagram" set="b"/>
+                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener">
+                        „Słownik Neutratywów Języka Polskiego” na Instagramie
+                    </a>
+                </li>
+                <li class="my-2">
+                    <Icon v="facebook" set="b"/>
+                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
+                        „Słownik Neutratywów Języka Polskiego” na Facebooku
                     </a>
                 </li>
             </ul>
