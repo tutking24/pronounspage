@@ -237,6 +237,13 @@
                     </a>
                 </li>
                 <li class="my-2">
+                    <Icon v="play-circle"/>
+                    <a href="https://rss.com/podcasts/bezwstydny/75056/" target="_blank" rel="noopener">
+                        Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (Bezwstydne Podcast)
+                    </a>
+                    – <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40
+                </li>
+                <li class="my-2">
                     <Icon v="instagram" set="b"/>
                     <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener">
                         „Słownik Neutratywów Języka Polskiego” na Instagramie
