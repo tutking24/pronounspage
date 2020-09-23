@@ -62,7 +62,7 @@
             }
         },
         head() {
-            const title = 'Moje zaimki to: dowolne';
+            const title = 'Moje zaimki to: dowolne • Zaimki.pl';
             const banner = `${process.env.baseUrl}/banner/dowolne.png`;
 
             return {

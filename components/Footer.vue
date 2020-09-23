@@ -7,32 +7,7 @@
                     <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
                 </p>
 
-                <ul class="list-unstyled">
-                    <li>
-                        Andrea
-                        (<nuxt-link to="/onu">onu</nuxt-link>,
-                        <a href="https://avris.it" target="_blank" rel="noopener"><Icon v="globe"/></a>,
-                        <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                        <a href="mailto:andrea@avris.it" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                        – <a href="https://gitlab.com/Avris/Zaimki" target="_blank" rel="noopener">kod</a>, język
-                    </li>
-
-                    <li>
-                        Paweł Dembowski
-                        (<nuxt-link to="/on">on</nuxt-link>,
-                        <a href="https://twitter.com/VaultAusir" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                        <a href="mailto:pawel.dembowski@gmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                        – język, <nuxt-link to="/literatura">literatura</nuxt-link>
-                    </li>
-
-                    <li>
-                        Zuzanna Sybilla Grzybowska
-                        (<nuxt-link to="/ona&ono/jej">ona/ono</nuxt-link>,
-                        <a href="https://twitter.com/mykofanes" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>,
-                        <a href="mailto:zuzannagrzybowska@protonmail.com" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
-                        – <nuxt-link to="/neutratywy">neutratywy</nuxt-link>
-                    </li>
-                </ul>
+                <Authors/>
 
                 <p class="mb-0">
                     Kod jest

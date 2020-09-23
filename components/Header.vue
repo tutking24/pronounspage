@@ -33,6 +33,7 @@
                     { link: '/', icon: 'home', text: 'Zaimki', textLong: 'Lista zaimków', extra: ['all'] },
                     { link: '/literatura', icon: 'books', text: 'Teksty kultury', textLong: 'Przykłady z tekstów kultury' },
                     { link: '/neutratywy', icon: 'atom-alt', text: 'Neutratywy', textLong: 'Słownik neutratywów' },
+                    { link: '/kontakt', icon: 'comment-alt-smile', text: 'Kontakt' },
                 ],
             };
         },
