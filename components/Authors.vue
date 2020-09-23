@@ -8,10 +8,12 @@
             <a v-if="author.mail" :href="'mailto:' + author.mail" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
             –
             <template v-for="(link, area, index) in author.areas">
-                <nuxt-link v-if="link && link.indexOf('/') === 0" :to="link">{{ area }}</nuxt-link>
-                <a v-else-if="link" :href="link" target="_blank" rel="noopener">{{ area }}</a>
-                <span v-else>{{ area }}</span>
-                <span v-if="index < Object.keys(author.areas).length - 1">, </span>
+                <Spaceless>
+                    <nuxt-link v-if="link && link.indexOf('/') === 0" :to="link">{{ area }}</nuxt-link>
+                    <a v-else-if="link" :href="link" target="_blank" rel="noopener">{{ area }}</a>
+                    <span v-else>{{ area }}</span>
+                    <span v-if="index < Object.keys(author.areas).length - 1">, </span>
+                </Spaceless>
             </template>
         </li>
     </ul>
