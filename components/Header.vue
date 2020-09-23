@@ -8,7 +8,7 @@
         </h1>
         <div class="d-block d-md-none">
             <div class="btn-group-vertical btn-block nav-custom mb-2">
-                <nuxt-link v-for="link in links" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
+                <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
                     {{ link.textLong || link.text }}
                 </nuxt-link>
@@ -16,7 +16,7 @@
         </div>
         <div class="d-none d-md-block">
             <div class="btn-group btn-block nav-custom mb-2">
-                <nuxt-link v-for="link in links" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
+                <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
                     {{ link.text }}
                 </nuxt-link>
