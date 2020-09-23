@@ -125,6 +125,7 @@
 <script>
     import { templates, sources, sourcesForMultipleForms, templateLibrary } from '../src/data'
     import { Source } from "../src/classes";
+    import { head } from "../src/helpers";
 
     export default {
         data() {
@@ -146,14 +147,9 @@
             }
         },
         head() {
-            const title = 'Niebinarna polszczyzna w tekstach kultury • Zaimki.pl';
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: title },
-                    { hid: 'twitter:title', property: 'twitter:title', content: title },
-                ],
-            }
+            return head({
+                title: 'Niebinarna polszczyzna w tekstach kultury',
+            });
         },
         computed: {
             otherSources() {

@@ -120,6 +120,7 @@
 <script>
     import { examples, templates, getSources } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
+    import { head } from "../src/helpers";
 
     export default {
         data() {
@@ -138,23 +139,10 @@
             }
         },
         head() {
-            if (!this.selectedTemplate) {
-                return {};
-            }
-
-            const title = 'Moje zaimki to: ' + this.selectedTemplate.name();
-            const banner = `${process.env.baseUrl}/banner${this.$route.path.replace(/\/$/, '')}.png`;
-
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: title },
-                    { hid: 'twitter:title', property: 'twitter:title', content: title },
-
-                    { hid: 'og:logo', property: 'og:logo', content: banner },
-                    { hid: 'twitter:image', property: 'twitter:image', content: banner },
-                ],
-            }
+            return this.selectedTemplate ? head({
+                title: 'Moje zaimki to: ' + this.selectedTemplate.name(),
+                banner: `banner${this.$route.path.replace(/\/$/, '')}.png`,
+            }) : {};
         },
         computed: {
             sources() {

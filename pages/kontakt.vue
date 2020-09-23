@@ -12,17 +12,13 @@
 </template>
 
 <script>
+    import { head } from "../src/helpers";
+
     export default {
         head() {
-            const title = 'Kontakt • Zaimki.pl';
-
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: title },
-                    { hid: 'twitter:title', property: 'twitter:title', content: title },
-                ],
-            }
+            return head({
+                title: 'Kontakt',
+            });
         },
     }
 </script>

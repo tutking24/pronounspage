@@ -245,6 +245,7 @@
 <script>
     import { Noun } from "~/src/classes";
     import { buildDict } from "../src/helpers";
+    import { head } from "../src/helpers";
 
     export default {
         data() {
@@ -335,24 +336,11 @@
             }
         },
         head() {
-            const title = 'Słownik neutratywów • Zaimki.pl';
-            const description = 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.';
-            const banner = `${process.env.baseUrl}/bannerNouns.png`;
-
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: title },
-                    { hid: 'twitter:title', property: 'twitter:title', content: title },
-
-                    { hid: 'description', name: 'description', content: description },
-                    { hid: 'og:description', property: 'og:description', content: description },
-                    { hid: 'twitter:description', property: 'twitter:description', content: description },
-
-                    { hid: 'og:logo', property: 'og:logo', content: banner },
-                    { hid: 'twitter:image', property: 'twitter:image', content: banner },
-                ],
-            }
+            return head({
+                title: 'Słownik neutratywów',
+                description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.',
+                banner: 'bannerNouns.png',
+            });
         },
     }
 </script>

@@ -54,6 +54,7 @@
 
 <script>
     import { examples, templates } from "~/src/data";
+    import { head } from "../src/helpers";
 
     export default {
         data() {
@@ -62,19 +63,10 @@
             }
         },
         head() {
-            const title = 'Moje zaimki to: dowolne • Zaimki.pl';
-            const banner = `${process.env.baseUrl}/banner/dowolne.png`;
-
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og:title', property: 'og:title', content: title },
-                    { hid: 'twitter:title', property: 'twitter:title', content: title },
-
-                    { hid: 'og:logo', property: 'og:logo', content: banner },
-                    { hid: 'twitter:image', property: 'twitter:image', content: banner },
-                ],
-            }
+            return head({
+                title: 'Moje zaimki to: dowolne',
+                banner: 'banner/dowolne.png',
+            });
         },
         methods: {
             randomTemplate() {
