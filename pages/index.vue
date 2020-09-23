@@ -2,19 +2,21 @@
     <div class="container">
         <section>
             <About/>
-            <p>
-                <nuxt-link to="/literatura" class="btn btn-outline-primary">
-                    <Icon v="books"/>
-                    Niebinarna polszczyzna w tekstach kultury
-                </nuxt-link>
-            </p>
-            <p>
-                <nuxt-link to="/neutratywy" class="btn btn-outline-primary">
-                    <Icon v="atom-alt"/>
-                    Słownik neutratywów
-                </nuxt-link>
-                – tutaj zbieramy neutralne formy rzeczowników
-            </p>
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    <nuxt-link to="/literatura" class="btn btn-outline-primary">
+                        <Icon v="books"/>
+                        Niebinarna polszczyzna w tekstach kultury
+                    </nuxt-link>
+                </li>
+                <li class="mb-3">
+                    <nuxt-link to="/neutratywy" class="btn btn-outline-primary">
+                        <Icon v="atom-alt"/>
+                        Słownik neutratywów
+                    </nuxt-link>
+                    – tutaj zbieramy neutralne formy rzeczowników
+                </li>
+            </ul>
         </section>
 
         <Separator icon="link"/>
