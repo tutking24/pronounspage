@@ -30,7 +30,7 @@
         data() {
             return {
                 links: [
-                    { link: '/', icon: 'home', text: 'Zaimki', textLong: 'Lista zaimków', extra: ['all'] },
+                    { link: '/', icon: 'home', text: 'Zaimki', textLong: 'Lista zaimków', extra: ['all', 'dowolne'] },
                     { link: '/literatura', icon: 'books', text: 'Teksty kultury', textLong: 'Przykłady z tekstów kultury' },
                     { link: '/neutratywy', icon: 'atom-alt', text: 'Neutratywy', textLong: 'Słownik neutratywów' },
                     { link: '/kontakt', icon: 'comment-alt-smile', text: 'Kontakt' },
