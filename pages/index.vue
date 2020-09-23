@@ -1,10 +1,5 @@
 <template>
     <div class="container">
-        <h1>
-            <Icon v="tags"/>
-            Zaimki.pl
-        </h1>
-
         <section>
             <About/>
             <p>

@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <h1>
+        <h2>
             <Icon v="person-dolly-empty"/>
             Strony nie znaleziono
-        </h1>
+        </h2>
 
         <p class="h4 mt-4">
             <nuxt-link to="/">

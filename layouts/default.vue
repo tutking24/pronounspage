@@ -1,6 +1,7 @@
 <template>
     <div class="d-flex flex-column vh-100">
         <div class="flex-grow-1">
+            <Header/>
             <Nuxt/>
         </div>
         <div class="container">

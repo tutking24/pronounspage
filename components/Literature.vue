@@ -1,11 +1,11 @@
 <template>
     <div v-if="Object.keys(sources).length">
         <h2 class="h4">
-            <Icon v="books"/>
-            Przykłady z tekstów kultury:
+            <nuxt-link to="/literatura">
+                <Icon v="books"/>
+                Przykłady z tekstów kultury:
+            </nuxt-link>
         </h2>
-
-        <LiteratureMenu/>
 
         <section v-for="(optionSources, option) in sources">
             <h3 class="h5">

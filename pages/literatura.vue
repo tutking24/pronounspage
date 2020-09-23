@@ -1,12 +1,9 @@
 <template>
     <div class="container">
-        <Header/>
         <h2>
             <Icon v="books"/>
             Niebinarna polszczyzna w tekstach kultury
         </h2>
-
-        <LiteratureMenu all/>
 
         <section>
             <Share title="Niebinarna polszczyzna w tekstach kultury"/>

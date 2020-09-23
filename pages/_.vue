@@ -1,7 +1,6 @@
 <template>
     <NotFound v-if="!selectedTemplate"/>
     <div class="container" v-else>
-        <Header/>
         <h2>
             <Icon v="tag"/>
             Moje zaimki to:

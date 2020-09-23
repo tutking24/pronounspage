@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <Header/>
         <h2>
             <Icon v="atom-alt"/>
             Słownik neutratywów
