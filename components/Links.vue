@@ -56,13 +56,13 @@
             <li class="my-2">
                 <Icon v="instagram" set="b"/>
                 <a href="https://www.instagram.com/inkluzywnamowa/" target="_blank" rel="noopener">
-                    @inkluzywnamowa na Instagramie
+                    @inkluzywnamowa
                 </a>
             </li>
             <li class="my-2">
                 <Icon v="facebook" set="b"/>
                 <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
-                    „Słownik Empatyczny Języka Polskiego” na Facebooku
+                    Słownik Empatyczny Języka Polskiego
                 </a>
             </li>
         </ul>

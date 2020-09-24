@@ -4,7 +4,7 @@
         <div class="d-flex flex-column flex-md-row justify-content-around mt-4 mb-5">
             <div class="small text-center d-flex flex-column justify-content-center">
                 <p class="mb-2">
-                    <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
+                    <nuxt-link to="/neutratywy#autorzę">Autorza</nuxt-link> strony:
                 </p>
 
                 <Authors/>
@@ -16,7 +16,7 @@
                     <a href="https://mit.avris.it" target="_blank" rel="noopener">MIT</a>.
                 </p>
             </div>
-            <div class="text-center">
+            <div class="text-center d-flex flex-column justify-content-center">
                 <p class="small mb-0">
                     <Icon v="users"/>
                     Kontakt, social media, wsparcie:

@@ -1,11 +1,8 @@
 <template>
     <ul :class="{'list-unstyled': !expanded}">
-        <li v-for="author in authors">
+        <li v-for="author in authors" class="mb-2">
             {{ author.name }}
-            (<nuxt-link :to="author.pronounsLink">{{ author.pronouns }}</nuxt-link>,
-            <a v-if="author.website" :href="author.website" target="_blank" rel="noopener"><Icon v="globe"/></a>
-            <a v-if="author.twitter" :href="'https://twitter.com/' + author.twitter" target="_blank" rel="noopener"><Icon v="twitter" set="b"/></a>
-            <a v-if="author.mail" :href="'mailto:' + author.mail" target="_blank" rel="noopener"><Icon v="envelope"/></a>)
+            (<nuxt-link :to="author.pronounsLink">{{ author.pronouns }}</nuxt-link>)
             –
             <template v-for="(link, area, index) in author.areas">
                 <Spaceless>
@@ -15,6 +12,19 @@
                     <span v-if="index < Object.keys(author.areas).length - 1">, </span>
                 </Spaceless>
             </template>
+            <br/>
+            <a v-if="author.website" :href="author.website" target="_blank" rel="noopener" class="badge badge-light border">
+                <Icon v="globe"/>
+                Blog
+            </a>
+            <a v-if="author.twitter" :href="'https://twitter.com/' + author.twitter" target="_blank" rel="noopener" class="badge badge-light border">
+                <Icon v="twitter" set="b"/>
+                Twitter
+            </a>
+            <a v-if="author.mail" :href="'mailto:' + author.mail" target="_blank" rel="noopener" class="badge badge-light border">
+                <Icon v="envelope"/>
+                Email
+            </a>
         </li>
     </ul>
 </template>
@@ -52,12 +62,13 @@
                     },
                     {
                         name: 'Zuzanna Sybilla Grzybowska',
-                        pronouns: 'ona/ono',
-                        pronounsLink: '/ona&ono/jej',
+                        pronouns: 'on/ona/ono',
+                        pronounsLink: '/on&ona&ono',
                         twitter: 'mykofanes',
                         mail: 'zuzannagrzybowska@protonmail.com',
                         areas: {
                             neutratywy: '/neutratywy',
+                            'social media': null,
                         },
                     },
                 ],
