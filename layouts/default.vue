@@ -3,6 +3,7 @@
         <div class="flex-grow-1">
             <Header/>
             <Nuxt/>
+            <ScrollButton/>
         </div>
         <div class="container">
             <Footer/>

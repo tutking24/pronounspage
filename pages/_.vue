@@ -112,8 +112,6 @@
             <About/>
             <Homepage align="center"/>
         </section>
-
-        <ScrollButton/>
     </div>
 </template>
 

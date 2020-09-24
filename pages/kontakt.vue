@@ -5,9 +5,14 @@
             Kontakt
         </h2>
 
-        <section>
+        <section class="mt-0">
+            <p class="mb-2">
+                <nuxt-link to="/neutratywy#autor">Autorza</nuxt-link> strony:
+            </p>
             <Authors expanded/>
         </section>
+
+        <Socials/>
     </div>
 </template>
 

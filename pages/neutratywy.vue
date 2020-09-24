@@ -13,69 +13,25 @@
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
                 z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
             </p>
-            <div class="alert alert-info small">
-                <p>
-                    <strong>Czym są neutratywy?</strong>
-                </p>
-                <p>
-                    Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
-                </p>
-                <p>
-                    <strong>Dlaczego warto tworzyć neutratywy?</strong>
-                </p>
-                <p>
-                    Z tych samych powodów co feminatywy!
-                </p>
-                <p>
-                    O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
-                    Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
-                </p>
-                <p>
-                    Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
-                    choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
-                    Coraz więcej osób używa w odniesieniu do siebie
-                    <nuxt-link to="/ono">rodzaju nijakiego</nuxt-link> i <nuxt-link to="/">innych form</nuxt-link>.
-                    Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
-                    gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
-                    Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
-                </p>
-                <p>
-                    <Icon v="radio"/>
-                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
-                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w Halo.Radio
-                    </a>
-                </p>
-            </div>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    Aby dodać swoją propozycję:
-                    <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
-                        <Icon v="plus-circle"/>
-                        Formularz zgłoszeniowy
-                    </button>
-                </li>
-                <li class="mb-3">
-                    Obserwuj Słownik na Facebooku:
-                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener" class="btn btn-outline-info">
-                        <Icon v="facebook" set="b"/>
-                        fb.com/neutratywy
-                    </a>
-                </li>
-                <li class="mb-3">
-                    Obserwuj Słownik na Instagramie:
-                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener" class="btn btn-outline-info">
-                        <Icon v="instagram" set="b"/>
-                        instagram.com/neutratywy
-                    </a>
-                </li>
-                <li class="mb-3">
-                    Dla form neutralnych innych niż rzeczowniki zapraszamy na
-                    <nuxt-link to="/" class="btn btn-outline-primary">
-                        <Icon v="tags"/>
-                        Zaimki.pl
-                    </nuxt-link>
-                </li>
-            </ul>
+            <p>
+                <strong>Czym są neutratywy?</strong>
+                Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+            </p>
+            <p>
+                <strong>Dlaczego warto tworzyć neutratywy?</strong>
+                Z tych samych powodów co feminatywy!
+                O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+                Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+            </p>
+            <p>
+                Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
+                choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
+                Coraz więcej osób używa w odniesieniu do siebie
+                <nuxt-link to="/ono">rodzaju nijakiego</nuxt-link> i <nuxt-link to="/">innych form</nuxt-link>.
+                Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
+                gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
+                Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+            </p>
 
             <Share title="Słownik neutratywów"/>
         </section>
@@ -237,8 +193,6 @@
         <Separator icon="plus"/>
 
         <NounSubmitForm ref="form" :secret="secret"/>
-
-        <ScrollButton/>
     </div>
 </template>
 

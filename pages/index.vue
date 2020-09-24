@@ -1,28 +1,27 @@
 <template>
     <div class="container">
+        <h2>
+            <Icon v="tags"/>
+            Skąd potrzeba niebinarnych zaimków?
+        </h2>
+
         <section>
             <About/>
-            <ul class="list-unstyled">
-                <li class="mb-3">
-                    <nuxt-link to="/literatura" class="btn btn-outline-primary">
-                        <Icon v="books"/>
-                        Niebinarna polszczyzna w tekstach kultury
-                    </nuxt-link>
-                </li>
-                <li class="mb-3">
-                    <nuxt-link to="/neutratywy" class="btn btn-outline-primary">
-                        <Icon v="atom-alt"/>
-                        Słownik neutratywów
-                    </nuxt-link>
-                    – tutaj zbieramy neutralne formy rzeczowników
-                </li>
-            </ul>
+        </section>
+
+        <section>
+            <Share/>
         </section>
 
         <Separator icon="link"/>
 
         <section>
-            <ul class="list-group">
+            <h2>
+                <Icon v="tags"/>
+                Propozycje form
+            </h2>
+
+            <ul class="list-group mt-4">
                 <li v-for="[group, groupTemplates] in templateLibrary.split()" class="list-group-item">
                     <p class="h5">
                         {{ group.name }}
@@ -187,109 +186,10 @@
         <Separator icon="bookmark"/>
 
         <section>
-            <h2 class="h3 mb-3">
-                <Icon v="bookmark"/>
-                Dodatkowe materiały:
-            </h2>
-            <ul class="list-unstyled">
-                <li class="my-2">
-                    <Icon v="globe-europe"/>
-                    <a href="https://pronoun.is/" target="_blank" rel="noopener">
-                        Pronoun.is
-                    </a>
-                    – anglojęzyczna inspiracja dla tej strony.
-                </li>
-                <li class="my-2">
-                    <Icon v="comment-alt-edit"/>
-                    <a href="https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio" target="_blank" rel="noopener">
-                        Czemu KAŻDY powinien mieć zaimki w bio
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="comment-alt-edit"/>
-                    <a href="https://avris.it/blog/genderneutralizacja-polszczyzny" target="_blank" rel="noopener">
-                        Genderneutralizacja polszczyzny?
-                    </a>
-                    – artykuł opisujący, dlaczego język neutralny płciowo jest ważny,
-                    i zbierający pomysły na stworzenie takiego.
-                </li>
-                <li class="my-2">
-                    <Icon v="comment-alt-edit"/>
-                    <a href="https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html" target="_blank" rel="noopener">
-                        Maniak marudzi #27: Niebinarne tłumaczenia
-                    </a>
-                    – artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.
-                </li>
-                <li class="my-2">
-                    <Icon v="comment-alt-edit"/>
-                    <a href="http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/" target="_blank" rel="noopener">
-                        Równi wobec języka – o języku neutralnym płciowo
-                    </a>
-                    – artykuł Agnieszki Wąsowskiej
-                </li>
-                <li class="my-2">
-                    <Icon v="play-circle"/>
-                    <a href="https://www.youtube.com/watch?v=YOEB6Ixp048" target="_blank" rel="noopener">
-                        Nie-binarny język polski – seminarium naukowe (Queer UW)
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="play-circle"/>
-                    <a href="https://rss.com/podcasts/bezwstydny/75056/" target="_blank" rel="noopener">
-                        Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (Bezwstydne Podcast)
-                    </a>
-                    – <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40
-                </li>
-                <li class="my-2">
-                    <Icon v="facebook" set="b"/>
-                    <a href="https://facebook.com/slownikempatyczny" target="_blank" rel="noopener">
-                        „Słownik Empatyczny Języka Polskiego” na Facebooku
-                    </a>
-                </li>
-            </ul>
-
-            <h2 class="h3 mb-3 mt-5">
-                <Icon v="tv"/>
-                Zaimki.pl w mediach
-            </h2>
-            <ul class="list-unstyled">
-                <li class="my-2">
-                    <Icon v="newspaper"/>
-                    <a href="https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc" target="_blank" rel="noopener">
-                        Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym.
-                        Rozmawialiśmy z jej twórcą i twórczynium
-                        – <strong>Queer.pl</strong>
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="radio"/>
-                    <a href="https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00" target="_blank" rel="noopener">
-                        Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>
-                    </a>
-                </li>
-            </ul>
-
-            <h2 class="h3 mb-3 mt-5">
-                <Icon v="hashtag"/>
-                Social media
-            </h2>
-            <ul class="list-unstyled">
-                <li class="my-2">
-                    <Icon v="instagram" set="b"/>
-                    <a href="https://instagram.com/neutratywy/" target="_blank" rel="noopener">
-                        „Słownik Neutratywów Języka Polskiego” na Instagramie
-                    </a>
-                </li>
-                <li class="my-2">
-                    <Icon v="facebook" set="b"/>
-                    <a href="https://facebook.com/neutratywy" target="_blank" rel="noopener">
-                        „Słownik Neutratywów Języka Polskiego” na Facebooku
-                    </a>
-                </li>
-            </ul>
+            <Links/>
+            <Media/>
+            <Socials/>
         </section>
-
-        <ScrollButton/>
     </div>
 </template>
 
