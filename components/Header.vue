@@ -17,8 +17,9 @@
         <div class="d-none d-md-block">
             <div class="btn-group btn-block nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
-                    <Icon :v="link.icon"/>
-                    {{ link.text }}
+                    <Icon :v="link.icon" size="1.6"/>
+                    <br/>
+                    <span class="text-nowrap">{{ link.text }}</span>
                 </nuxt-link>
             </div>
         </div>
