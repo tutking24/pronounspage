@@ -9,7 +9,7 @@
 
                 <Authors/>
 
-                <p class="mb-0">
+                <p>
                     Kod jest
                     <a href="https://gitlab.com/Avris/Zaimki" target="_blank" rel="noopener">udostępniony</a>
                     na licencji
