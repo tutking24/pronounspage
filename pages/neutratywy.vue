@@ -216,7 +216,7 @@
         },
         mounted() {
             if (process.client && window.location.hash) {
-                this.filter = window.location.hash.substr(1);
+                this.filter = decodeURIComponent(window.location.hash.substr(1));
                 this.$refs.filter.focus();
                 this.$refs.filter.scrollIntoView();
                 setTimeout(_ => {

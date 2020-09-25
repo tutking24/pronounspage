@@ -7,7 +7,7 @@
 
         <section class="mt-0">
             <p class="mb-2">
-                <nuxt-link to="/neutratywy#autorzę">Autorza</nuxt-link> strony:
+                <nuxt-link to="/neutratywy#autorze">Autorza</nuxt-link> strony:
             </p>
             <Authors expanded/>
         </section>
