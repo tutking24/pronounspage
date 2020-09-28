@@ -1,4 +1,5 @@
 import {buildDict, buildList} from "./helpers";
+import MORPHEMES from '../data/morphemes';
 
 export class ExamplePart {
     constructor(variable, str) {
@@ -91,28 +92,6 @@ export class Source {
         return Source.TYPES[this.type].icon;
     }
 }
-
-export const MORPHEMES = [
-    'pronoun_n',
-    'pronoun_g',
-    'pronoun_g_acc',
-    'pronoun_d',
-    'pronoun_a',
-    'pronoun_i',
-    'pronoun_l',
-    'pronoun_all',
-    'adjective_n',
-    'adjective_ll',
-    'adjective_middle',
-    'verb_end_inter',
-    'verb_end_about',
-    'verb_middle_inter',
-    'verb_middle_about',
-    'verb_nasal',
-    'verb_go',
-    'verb_o',
-    'honorific',
-];
 
 const escape = s => {
     if (Array.isArray(s)) {
