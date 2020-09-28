@@ -31,14 +31,27 @@
 
     export default {
         data() {
+            const links = [];
+            links.push({ link: '/', icon: 'home', text: t('home.header'), textLong: t('home.headerLong'), extra: ['all', this.config.template.any.route] });
+
+            if (this.config.sources.enabled) {
+                links.push({ link: '/' + this.config.sources.route, icon: 'books', text: t('sources.header'), textLong: t('sources.headerLong') });
+            }
+
+            if (this.config.nouns.enabled) {
+                links.push({ link: '/' + this.config.nouns.route, icon: 'atom-alt', text: t('nouns.header'), textLong: t('nouns.headerLong') });
+            }
+
+            if (this.config.links.enabled) {
+                links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: t('links.header'), textLong: t('links.headerLong') });
+            }
+
+            if (this.config.contact.enabled) {
+                links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: t('contact.header')});
+            }
+
             return {
-                links: [
-                    { link: '/', icon: 'home', text: t('home.header'), textLong: t('home.headerLong'), extra: ['all', 'dowolne'] }, // TODO multilingual "any"
-                    { link: '/literatura', icon: 'books', text: t('sources.header'), textLong: t('sources.headerLong') },
-                    { link: '/neutratywy', icon: 'atom-alt', text: t('nouns.header'), textLong: t('nouns.headerLong') },
-                    { link: '/linki', icon: 'bookmark', text: t('links.header'), textLong: t('links.headerLong') },
-                    { link: '/kontakt', icon: 'comment-alt-smile', text: t('contact.header') },
-                ],
+                links,
             };
         },
         methods: {

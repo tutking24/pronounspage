@@ -40,7 +40,7 @@ export default {
     css: [],
     plugins: [
         { src: '~/plugins/vue-matomo.js', ssr: false },
-        { src: '~/plugins/plugin-translate.js' },
+        { src: '~/plugins/globals.js' },
     ],
     components: true,
     buildModules: [],

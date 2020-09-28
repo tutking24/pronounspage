@@ -1,0 +1,116 @@
+locale: 'pl'
+
+template:
+    any:
+        route: 'dowolne'
+
+sources:
+    enabled: true
+    route: 'literatura'
+
+nouns:
+    enabled: true
+    route: 'neutratywy'
+
+
+links:
+    enabled: true
+    route: 'linki'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            headline: 'Pronoun.is'
+            extra: '– anglojęzyczna inspiracja dla tej strony.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
+            headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
+            headline: 'Genderneutralizacja polszczyzny?'
+            extra: '– artykuł opisujący, dlaczego język neutralny płciowo jest ważny, i zbierający pomysły na stworzenie takiego.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
+            headline: 'Maniak marudzi #27: Niebinarne tłumaczenia'
+            extra: '– artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/'
+            headline: 'Równi wobec języka – o języku neutralnym płciowo'
+            extra: '– artykuł Agnieszki Wąsowskiej'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
+            headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
+            extra: ''
+        -
+            icon: 'play-circle'
+            url: 'https://rss.com/podcasts/bezwstydny/75056/'
+            headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (Bezwstydne Podcast)'
+            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
+        -
+            icon: 'instagram'
+            iconSet: 'b'
+            url: 'https://www.instagram.com/inkluzywnamowa/'
+            headline: '@inkluzywnamowa'
+        -
+            icon: 'facebook'
+            iconSet: 'b'
+            url: 'https://facebook.com/slownikempatyczny'
+            headline: 'Słownik Empatyczny Języka Polskiego'
+    media:
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc'
+            headline: 'Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym. Rozmawialiśmy z jej twórcą i twórczynium – <strong>Queer.pl</strong>'
+        -
+            icon: 'radio'
+            url: 'https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00'
+            headline: 'Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>'
+    socials:
+        -
+            icon: 'instagram'
+            iconSet: 'b'
+            url: 'https://instagram.com/neutratywy'
+            headline: '<strong>instagram.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
+        -
+            icon: 'facebook'
+            iconSet: 'b'
+            url: 'https://facebook.com/neutratywy'
+            headline: '<strong>fb.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
+
+contact:
+    enabled: true
+    route: 'kontakt'
+    authors:
+        -
+            name: 'Andrea'
+            pronouns: 'onu'
+            pronounsLink: '/onu'
+            website: 'https://avris.it'
+            twitter: 'AvrisIT'
+            mail: 'andrea@avris.it'
+            areas:
+                kod: 'https://gitlab.com/Avris/Zaimki'
+                język: ~
+        -
+            name: 'Paweł Dembowski'
+            pronouns: 'on'
+            pronounsLink: '/on'
+            twitter: 'VaultAusir'
+            mail: 'pawel.dembowski@gmail.com'
+            areas:
+                język: ~
+                literatura: '/literatura'
+        -
+            name: 'Zuzanna Sybilla Grzybowska'
+            pronouns: 'on/ona/ono'
+            pronounsLink: '/on&ona&ono'
+            twitter: 'mykofanes'
+            mail: 'zuzannagrzybowska@protonmail.com'
+            areas:
+                neutratywy: '/neutratywy'
+                social_media: ~

@@ -70,7 +70,6 @@ template:
     others: 'Inne formy'
     othersRaw: 'inne'
     or: 'lub'
-    declension: 'Odmiana'
 
 sources:
     header: 'Teksty kultury'
