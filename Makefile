@@ -12,3 +12,7 @@ stop:
 
 deploy: install
 	yarn build
+
+switch:
+	-rm data
+	ln -s ./locale/${LANG} ./data

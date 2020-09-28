@@ -9,7 +9,7 @@ $ yarn install
 # configure environment
 $ cp .env.dist .env
 $ nano .env
-$ ln -s locale/pl data    # or other locale
+$ make switch LANG=pl
 $ node server/initDb.js
 
 # serve with hot reload at localhost:3000
