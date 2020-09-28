@@ -2,36 +2,11 @@
     <div class="container">
         <h2>
             <Icon v="atom-alt"/>
-            Słownik neutratywów
+            <T>nouns.headerLong</T>
         </h2>
 
         <section>
-            <p>
-                Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów!
-            </p>
-            <p>
-                Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
-                z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
-            </p>
-            <p>
-                <strong>Czym są neutratywy?</strong>
-                Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
-            </p>
-            <p>
-                <strong>Dlaczego warto tworzyć neutratywy?</strong>
-                Z tych samych powodów co feminatywy!
-                O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
-                Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
-            </p>
-            <p>
-                Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
-                choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
-                Coraz więcej osób używa w odniesieniu do siebie
-                <nuxt-link to="/ono">rodzaju nijakiego</nuxt-link> i <nuxt-link to="/">innych form</nuxt-link>.
-                Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
-                gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
-                Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
-            </p>
+            <T>nouns.intro</T>
 
             <Share title="Słownik neutratywów"/>
         </section>
@@ -40,8 +15,8 @@
 
         <section v-if="secret">
             <div class="alert alert-info">
-                <strong>{{ nounsCountApproved() }}</strong> wpisów zatwierdzonych,
-                <strong>{{ nounsCountPending() }}</strong> oczekuje na moderację.
+                <strong>{{ nounsCountApproved() }}</strong> <T>nouns.approved</T>,
+                <strong>{{ nounsCountPending() }}</strong> <T>nouns.pending</T>.
             </div>
         </section>
 
@@ -52,7 +27,7 @@
                         <Icon v="filter"/>
                     </span>
                 </div>
-                <input class="form-control border-primary" v-model="filter" placeholder="Filtruj listę…" ref="filter"/>
+                <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
                 <div class="input-group-append" v-if="filter">
                     <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                         <Icon v="times"/>
@@ -61,7 +36,7 @@
                 <div class="input-group-append">
                     <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
                         <Icon v="plus-circle"/>
-                        Zgłoś
+                        <T>nouns.submit.action</T>
                     </button>
                 </div>
             </div>
@@ -73,15 +48,15 @@
                 <tr>
                     <th class="text-nowrap">
                         <Icon v="mars"/>
-                        maskulatyw
+                        <T>nouns.masculine</T>
                     </th>
                     <th class="text-nowrap">
                         <Icon v="venus"/>
-                        feminatyw
+                        <T>nouns.feminine</T>
                     </th>
                     <th class="text-nowrap">
                         <Icon v="neuter"/>
-                        neutratyw
+                        <T>nouns.neuter</T>
                     </th>
                     <th v-if="secret"></th>
                 </tr>
@@ -98,7 +73,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany z:</strong></p>
+                            <p><strong><T>nouns.edited</T>:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
                             </ul>
@@ -109,7 +84,7 @@
 
                         <button v-if="!secret" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
                             <Icon v="pen"/>
-                            Zaproponuj zmianę
+                            <T>nouns.edit</T>
                         </button>
                     </td>
                     <td>
@@ -121,7 +96,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany z:</strong></p>
+                            <p><strong><T>nouns.edited</T>:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
                             </ul>
@@ -139,7 +114,7 @@
                         </ul>
 
                         <small v-if="noun.base && nouns[noun.base]">
-                            <p><strong>Propozycja zmiany z:</strong></p>
+                            <p><strong><T>nouns.edited</T>:</strong></p>
                             <ul class="list-singular">
                                 <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
                             </ul>
@@ -153,25 +128,25 @@
                             <li v-if="!noun.approved">
                                 <button class="btn btn-success btn-sm m-1" @click="approve(noun)">
                                     <Icon v="check"/>
-                                    Zatwierdź
+                                    <T>crud.approve</T>
                                 </button>
                             </li>
                             <li v-else @click="hide(noun)">
                                 <button class="btn btn-outline-secondary btn-sm m-1">
                                     <Icon v="times"/>
-                                    Schowaj
+                                    <T>crud.hide</T>
                                 </button>
                             </li>
                             <li>
                                 <button class="btn btn-outline-danger btn-sm m-1" @click="remove(noun)">
                                     <Icon v="trash"/>
-                                    Usuń
+                                    <T>crud.remove</T>
                                 </button>
                             </li>
                             <li>
                                 <button class="btn btn-outline-primary btn-sm m-1" @click="edit(noun)">
                                     <Icon v="pen"/>
-                                    Edytuj
+                                    <T>crud.edit</T>
                                 </button>
                             </li>
                         </ul>
@@ -182,7 +157,7 @@
                     <tr>
                         <td :colspan="secret ? 4 : 3" class="text-center">
                             <Icon v="search"/>
-                            Nie znaleziono słów spełniających podane kryterium.
+                            <T>nouns.empty</T>
                         </td>
                     </tr>
                 </template>

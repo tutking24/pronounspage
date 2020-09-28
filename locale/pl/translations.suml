@@ -1,0 +1,183 @@
+title: 'Zaimki.pl'
+description: 'Udostępniamy tutaj linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.'
+
+home:
+    link: 'Strona główna'
+    header: 'Zaimki'
+    headerLong: 'Lista zaimków'
+    why: 'Skąd potrzeba niebinarnych zaimków?'
+    about:
+        - >
+            Polska gramatyka jest skomplikowana i silnie zgenderyzowana.
+            Nie oznacza to jednak, że niemożliwe jest używanie innych form niż „{/on=on}” i „{/ona=ona}”.
+        - >
+            Udostępniamy tutaj linki do przykładów użycia
+            (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
+            zaimków i innych form płciowych – nie tylko normatywnych „{/on=on}” i „{/ona=ona}”,
+            lecz także form niebinarnych.
+        - >
+            Dlaczego należy je respektować?
+            Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
+            Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+            A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
+            Czy to uszanujesz, świadczy wyłącznie o Tobie.
+        - >
+            Warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych
+            – nawet jeśli jesteś cis i używasz
+            „{/on=on}” lub „{/ona=ona}”.
+            – ponieważ dzięki temu pokazujesz wsparcie dla społeczności trans
+            i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
+            {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        - >
+            Formy neutralne płciowo – jak np. „{/on/a=moi drodzy/drogie}”,
+            „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp. –
+            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
+        - >
+            Już teraz w codziennej polszczyźnie używamy wielu form neutralnych płciowo:
+            „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
+            „proszę przyjść do szkoły z {rodzic}em”,
+            „w urzędzie powiedziano mi, że...”,
+            „{/oni=dzwonili} z gazowni”,
+            „będę robić”, itp.
+            Tutaj idziemy po prostu o krok dalej.
+    templates: 'Propozycje form'
+    generator:
+        header: 'Generator form'
+        description: >
+            Możesz także użyć poniższego narzędzia, w którym uzupełnisz luki w zdaniach
+            zgodnie z formami, których używasz, by wygenerować gotowy do udostępniania innym link.
+        button: 'Pokaż generator'
+        header2: 'Wygeneruj link'
+        base: 'Na podstawie'
+        alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
+    whatisit: 'O co chodzi w tej stronie?'
+
+template:
+    examples: 'Przykłady użycia w zdaniu'
+    plural: 'Liczba mnoga'
+    intro: 'Moje zaimki to'
+    normative: 'Normatywne'
+    alt:
+        button: 'Wygeneruj link do form wymiennych'
+        header: 'Formy wymienne'
+    any:
+        header: 'Dowolne zaimki'
+        short: 'dowolne'
+        description: >
+            Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
+            innym nie przeszkadza zwracanie się w dowolny sposób – o ile wiadomo z kontekstu, że to o nich mowa.
+        options: 'przejrzyj listę możliwości [share]{/=tutaj}.'
+    others: 'Inne formy'
+    othersRaw: 'inne'
+    or: 'lub'
+    declension: 'Odmiana'
+
+sources:
+    header: 'Teksty kultury'
+    headerLong: 'Przykłady z tekstów kultury'
+    headerLonger: 'Niebinarna polszczyzna w tekstach kultury'
+    toc: 'Pokaż spis treści'
+    type:
+        All: 'Wszystkie'
+        Book: 'Książki'
+        Article: 'Prasa'
+        Movie: 'Filmy'
+        Series: 'Seriale'
+        Song: 'Muzyka'
+        Poetry: 'Poezja'
+        Other: 'Inne'
+
+nouns:
+    header: 'Neutratywy'
+    headerLong: 'Słownik neutratywów'
+    intro:
+        - >
+            Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów!
+
+        - >
+            Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
+            z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
+
+        - >
+            <strong>Czym są neutratywy?</strong>
+            Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+
+        - >
+            <strong>Dlaczego warto tworzyć neutratywy?</strong>
+            Z tych samych powodów co feminatywy!
+            O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+            Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+
+        - >
+            Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
+            choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
+            Coraz więcej osób używa w odniesieniu do siebie
+            {/ono=rodzaju nijakiego} i {/=innych form}.
+            Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
+            gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
+            Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+
+    approved: 'wpisów zatwierdzonych'
+    pending: 'oczekuje na moderację'
+    edit: 'Zaproponuj zmianę'
+    edited: 'Propozycja zmiany z'
+    editing: 'Edytujesz istniejący wpis'
+    empty: 'Nie znaleziono słów spełniających podane kryterium.'
+
+    submit:
+        action: 'Zgłoś'
+        actionLong: 'Zgłoś propozycję'
+        thanks: 'Dziękujemy za zgłoszenie!'
+        another: 'Zgłoś kolejne słowo'
+        moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
+
+    template: 'Użyj szablonu'
+    root: 'Rdzeń rzeczownika'
+
+    masculine: 'maskulatyw'
+    masculineShort: 'mask.'
+    feminine: 'feminatyw'
+    feminineShort: 'fem.'
+    neuter: 'neutratyw'
+    neuterShort: 'neutr.'
+
+    singular: 'liczba pojedyncza'
+    singularShort: 'l. poj.'
+    plural: 'liczba mnoga'
+    pluralShort: 'l. mn.'
+
+links:
+    header: 'Materiały'
+    headerLong: 'Dodatkowe materiały'
+
+    media: 'Zaimki.pl w mediach'
+
+    social: 'Social media'
+
+contact:
+    header: 'Kontakt'
+    authors: '{Autor}za strony'
+
+share: 'Udostępnij'
+
+crud:
+    approve: 'Zatwierdź'
+    hide: 'Schowaj'
+    remove: 'Usuń'
+    edit: 'Edytuj'
+    filter: 'Filtruj'
+    filterLong: 'Filtruj listę…'
+
+beta: >
+    Strona jest w wersji βeta!
+    Przykłady, formy gramatyczne i linki mogą się jeszcze mocno zmienić!
+    Jeśli masz jakieś sugestie lub uwagi, daj mi proszę znać
+    {https://twitter.com/AvrisIT=na Twitterze} lub {mailto:andrea@avris.it=przez maila}.
+
+footer:
+    source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'
+    links: 'Kontakt, social media, wsparcie'
+
+notFound:
+    message: 'Strony nie znaleziono'
+    back: 'Wróć na główną'

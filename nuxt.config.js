@@ -1,5 +1,7 @@
-const title = 'Zaimki.pl';
-const description = 'Udostępniamy tutaj linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
+import translations from './server/translations';
+
+const title = translations.title;
+const description = translations.description;
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
 const colour = '#C71585';
 
@@ -38,6 +40,7 @@ export default {
     css: [],
     plugins: [
         { src: '~/plugins/vue-matomo.js', ssr: false },
+        { src: '~/plugins/plugin-translate.js' },
     ],
     components: true,
     buildModules: [],
@@ -76,6 +79,7 @@ export default {
     env: {
         baseUrl: process.env.BASE_URL,
         secret: process.env.SECRET,
+        lang: process.env.LANG,
     },
     serverMiddleware: {
         '/': bodyParser.json(),

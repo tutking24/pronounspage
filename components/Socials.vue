@@ -2,7 +2,7 @@
     <section>
         <h2 class="h3">
             <Icon v="hashtag"/>
-            Social media
+            <T>links.social</T>
         </h2>
         <ul class="list-unstyled">
             <li class="my-2">

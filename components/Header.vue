@@ -3,7 +3,7 @@
         <h1 class="mb-3">
             <nuxt-link to="/">
                 <Icon v="tags"/>
-                Zaimki.pl
+                <T>title</T>
             </nuxt-link>
         </h1>
         <div class="d-block d-md-none">
@@ -27,15 +27,17 @@
 </template>
 
 <script>
+    import t from '../src/translator';
+
     export default {
         data() {
             return {
                 links: [
-                    { link: '/', icon: 'home', text: 'Zaimki', textLong: 'Lista zaimków', extra: ['all', 'dowolne'] },
-                    { link: '/literatura', icon: 'books', text: 'Teksty kultury', textLong: 'Przykłady z tekstów kultury' },
-                    { link: '/neutratywy', icon: 'atom-alt', text: 'Neutratywy', textLong: 'Słownik neutratywów' },
-                    { link: '/linki', icon: 'bookmark', text: 'Materiały', textLong: 'Dodatkowe materiały' },
-                    { link: '/kontakt', icon: 'comment-alt-smile', text: 'Kontakt' },
+                    { link: '/', icon: 'home', text: t('home.header'), textLong: t('home.headerLong'), extra: ['all', 'dowolne'] }, // TODO multilingual "any"
+                    { link: '/literatura', icon: 'books', text: t('sources.header'), textLong: t('sources.headerLong') },
+                    { link: '/neutratywy', icon: 'atom-alt', text: t('nouns.header'), textLong: t('nouns.headerLong') },
+                    { link: '/linki', icon: 'bookmark', text: t('links.header'), textLong: t('links.headerLong') },
+                    { link: '/kontakt', icon: 'comment-alt-smile', text: t('contact.header') },
                 ],
             };
         },

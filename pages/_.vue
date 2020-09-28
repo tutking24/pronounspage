@@ -3,18 +3,18 @@
     <div class="container" v-else>
         <h2>
             <Icon v="tag"/>
-            Moje zaimki to:
+            <T>template.intro</T>:
         </h2>
 
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong>{{ selectedTemplate.name() }}</strong>
+                    <strong>{{ selectedTemplate.name(glue) }}</strong>
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedTemplate.description">
                     <em>
                         ({{Array.isArray(selectedTemplate.description)
-                            ? ('Formy wymienne: ' + selectedTemplate.description.join(' lub '))
+                            ? ('Formy wymienne: ' + selectedTemplate.description.join(glue))
                             : selectedTemplate.description
                         }})
                     </em>
@@ -25,7 +25,7 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                Przykłady użycia w zdaniu:
+                <T>template.examples</T>:
             </h2>
 
             <ul>
@@ -38,7 +38,7 @@
         <section>
             <h2 class="h4">
                 <Icon v="spell-check"/>
-                Odmiana:
+                <T>template.declension</T>:
             </h2>
 
             <div class="table-responsive">
@@ -96,7 +96,7 @@
         </section>
 
         <section>
-            <Share :title="'Moje zaimki to: ' + selectedTemplate.name()"/>
+            <Share :title="`${$t('template.intro')}: ${selectedTemplate.name(glue)}`"/>
         </section>
 
         <section v-if="Object.keys(sources).length">
@@ -107,9 +107,9 @@
         <section class="mb-0">
             <h2 class="h4">
                 <Icon v="info-circle"/>
-                O co chodzi w tej stronie?
+                <T>home.whatisit</T>:
             </h2>
-            <About/>
+            <T>home.about</T>
             <Homepage align="center"/>
         </section>
     </div>
@@ -125,6 +125,7 @@
             return {
                 examples: examples,
                 templates: templates,
+                glue: ' ' + this.$t('template.or') + ' ',
 
                 selectedTemplate: buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, '')),
 
@@ -138,7 +139,7 @@
         },
         head() {
             return this.selectedTemplate ? head({
-                title: 'Moje zaimki to: ' + this.selectedTemplate.name(),
+                title: 'Moje zaimki to: ' + this.selectedTemplate.name(this.glue),
                 banner: `banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
         },

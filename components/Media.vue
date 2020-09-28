@@ -2,7 +2,7 @@
     <section>
         <h2 class="h3">
             <Icon v="tv"/>
-            Zaimki.pl w mediach
+            <T>links.media</T>
         </h2>
         <ul class="list-unstyled">
             <li class="my-2">

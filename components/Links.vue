@@ -2,7 +2,7 @@
     <section :class="{'mt-0': top}">
         <h2 class="mb-3">
             <Icon v="bookmark"/>
-            Dodatkowe materiały
+            <T>links.headerLong</T>
         </h2>
         <ul class="list-unstyled">
             <li class="my-2">

@@ -9,6 +9,7 @@ $ yarn install
 # configure environment
 $ cp .env.dist .env
 $ nano .env
+$ ln -s locale/pl data    # or other locale
 $ node server/initDb.js
 
 # serve with hot reload at localhost:3000
@@ -26,5 +27,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Copyright
  
- * **Author:** Andrea Prusinowski [(Avris.it)](https://avris.it)
+ * **Author:** Andrea [(Avris.it)](https://avris.it)
  * **Licence:** [MIT](https://mit.avris.it)

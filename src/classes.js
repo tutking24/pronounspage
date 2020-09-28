@@ -76,14 +76,14 @@ export class Source {
 
     static get TYPES() {
         return {
-            '': { icon: 'clipboard-list', text: 'Wszystkie' },
-            Book: { icon: 'book-open', text: 'Książki' },
-            Article: { icon: 'newspaper', text: 'Prasa' },
-            // Movie: { icon:'film', text: 'Filmy' },
-            Series: { icon: 'tv', text: 'Seriale' },
-            Song: { icon: 'music', text: 'Muzyka' },
-            Poetry: { icon: 'scroll', text: 'Poezja' },
-            Other: { icon: 'comment-alt-lines', text: 'Inne' },
+            '': 'clipboard-list',
+            Book: 'book-open',
+            Article: 'newspaper',
+            // Movie: 'film',
+            Series: 'tv',
+            Song: 'music',
+            Poetry: 'scroll',
+            Other: 'comment-alt-lines',
         }
     }
 
@@ -155,7 +155,7 @@ export class Template {
         return [...options]
     }
 
-    name(glue = ' lub ') {
+    name(glue) {
         return this.nameOptions().join(glue)
     }
 

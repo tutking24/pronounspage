@@ -2,12 +2,12 @@
     <div class="container">
         <h2>
             <Icon v="comment-alt-smile"/>
-            Kontakt
+            <T>contact.header</T>
         </h2>
 
         <section class="mt-0">
             <p class="mb-2">
-                <nuxt-link to="/neutratywy#autorze">Autorza</nuxt-link> strony:
+                <T>contact.authors</T>:
             </p>
             <Authors expanded/>
         </section>
@@ -22,7 +22,7 @@
     export default {
         head() {
             return head({
-                title: 'Kontakt',
+                title: this.$t('contact.header'),
             });
         },
     }

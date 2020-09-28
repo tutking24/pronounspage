@@ -10,24 +10,12 @@
 </template>
 
 <script>
-    import translations from '../data/pl/translations.suml';
+    import t from '../src/translator';
 
     export default {
         data() {
             return {
-                txt: this.translate(this.$slots.default[0].text),
-            }
-        },
-        methods: {
-            translate(key) {
-                let value = translations;
-                for (let part of key.split('.')) {
-                    value = value[part];
-                    if (value === undefined) {
-                        return value;
-                    }
-                }
-                return value;
+                txt: t(this.$slots.default[0].text),
             }
         },
     }

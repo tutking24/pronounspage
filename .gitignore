@@ -1,4 +1,5 @@
-/data/db.sqlite
+/data
+/locale/*/db.sqlite
 
 /daemonise.json
 /daemonise.log

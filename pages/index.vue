@@ -2,11 +2,11 @@
     <div class="container">
         <h2>
             <Icon v="tags"/>
-            Skąd potrzeba niebinarnych zaimków?
+            <T>home.why</T>
         </h2>
 
         <section>
-            <About/>
+            <T>home.about</T>
         </section>
 
         <section>
@@ -18,7 +18,7 @@
         <section>
             <h2>
                 <Icon v="tags"/>
-                Propozycje form
+                <T>home.templates</T>
             </h2>
 
             <ul class="list-group mt-4">
@@ -33,10 +33,10 @@
                     <ul class="list-unstyled">
                         <li v-for="template in groupTemplates" :key="template.canonicalName">
                             <nuxt-link v-if="typeof template === 'string'" :to="'/' + template">
-                                <strong>{{template.replace(/&/g, ' lub ')}}</strong>
+                                <strong>{{template.replace(/&/g, ' ' + $t('template.or') + ' ')}}</strong>
                             </nuxt-link>
                             <nuxt-link v-else :to="addSlash('/' + template.canonicalName)">
-                                <strong>{{template.name()}}</strong>
+                                <strong>{{template.name(glue)}}</strong>
                                 –
                                 <small>{{template.description}}</small>
                             </nuxt-link>
@@ -47,12 +47,12 @@
                 <li class="list-group-item">
                     <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary btn-block">
                         <Icon v="sliders-h-square"/>
-                        Wygeneruj link do form wymiennych
+                        <T>template.alt.button</T>
                     </a>
                     <div v-else class="card">
                         <div class="card-header">
                             <Icon v="sliders-h-square"/>
-                            Formy wymienne:
+                            <T>template.alt.header</T>:
                         </div>
                         <div class="card-body">
                             <div class="card-title">
@@ -74,32 +74,31 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
-                        Generator form
+                        <T>home.generator.header</T>
                     </p>
                     <p>
-                        Możesz także użyć poniższego narzędzia, w którym uzupełnisz luki w zdaniach
-                        zgodnie z formami, których używasz, by wygenerować gotowy do udostępniania innym link.
+                        <T>home.generator.description</T>
                     </p>
                     <a v-if="!customise" href="#" @click.prevent="customise = true" class="btn btn-outline-primary btn-block">
                         <Icon v="sliders-h-square"/>
-                        Pokaż generator
+                        <T>home.generator.button</T>
                     </a>
                     <div v-else class="card mb-5">
                         <div class="card-header">
                             <Icon v="sliders-h-square"/>
-                            Wygeneruj link
+                            <T>home.generator.header2</T>
                         </div>
                         <div class="card-body">
                             <div class="card-title border-bottom pb-3">
                                 <ul class="list-inline d-inline mb-0">
                                     <li class="list-inline-item pt-1 h5">
-                                        Na podstawie:
+                                        <T>home.generator.base</T>:
                                     </li>
                                     <li class="list-inline-item" v-for="(template, pronoun) in templates">
-                                        <button :class="['btn', template.name() === selectedTemplate.name() ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
+                                        <button :class="['btn', template.name(glue) === selectedTemplate.name(glue) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
                                                 @click="selectedTemplate = templates[pronoun].clone()"
                                         >
-                                            {{template.name()}}
+                                            {{template.name(glue)}}
                                         </button>
                                     </li>
                                 </ul>
@@ -107,7 +106,7 @@
 
                             <div class="alert alert-primary">
                                 <p class="h3 mb-0 text-center">
-                                    {{ selectedTemplate.name() }}
+                                    {{ selectedTemplate.name(glue) }}
                                     <br/>
                                     <input v-model="selectedTemplate.description"
                                            class="form-control form-input p-0 form-control-sm"
@@ -118,7 +117,7 @@
                             </div>
 
                             <p>
-                                Przykłady użycia w zdaniu:
+                                <T>template.examples</T>:
                             </p>
                             <template v-for="isHonorific in [false, true]">
                                 <ul>
@@ -138,27 +137,22 @@
                                 <div class="my-3">
                                     <div class="custom-control custom-switch" v-if="isHonorific">
                                         <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedTemplate.pluralHonorific">
-                                        <label class="custom-control-label" for="pluralHonorific">Liczba mnoga <Icon v="level-up"/></label>
+                                        <label class="custom-control-label" for="pluralHonorific"><T>template.plural</T> <Icon v="level-up"/></label>
                                     </div>
                                     <div class="custom-control custom-switch" v-else>
                                         <input type="checkbox" class="custom-control-input" id="plural" v-model="selectedTemplate.plural">
-                                        <label class="custom-control-label" for="plural">Liczba mnoga <Icon v="level-up"/></label>
+                                        <label class="custom-control-label" for="plural"><T>template.plural</T> <Icon v="level-up"/></label>
                                     </div>
                                 </div>
                             </template>
                             <p class="small">
                                 <Icon v="info-circle"/>
-                                Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.
+                                <T>home.generator.alt</T>
                             </p>
                             <div class="alert alert-warning">
                                 <p class="mb-0 small">
                                     <Icon v="exclamation-triangle"/>
-                                    Strona jest w wersji βeta!
-                                    Przykłady, formy gramatyczne i linki mogą się jeszcze mocno zmienić!
-                                    Jeśli masz jakieś sugestie lub uwagi, daj mi proszę znać
-                                    <a href="https://twitter.com/AvrisIT" target="_blank" rel="noopener">na Twitterze</a>
-                                    lub
-                                    <a href="mailto:andrea@avris.it" target="_blank" rel="noopener">przez maila</a>.
+                                    <T>beta</T>
                                 </p>
                             </div>
                         </div>
@@ -172,12 +166,10 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
-                        <nuxt-link to="/dowolne">Dowolne zaimki</nuxt-link>
+                        <nuxt-link to="/dowolne"><T>template.any.header</T></nuxt-link>
                     </p>
                     <p>
-                        Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
-                        innym nie przeszkadza zwracanie się w dowolny sposób
-                        – o ile wiadomo z kontekstu, że to o nich mowa.
+                        <T>template.any.description</T>
                     </p>
                 </li>
             </ul>
@@ -213,11 +205,13 @@
                 multiple: ['on', 'ona'],
 
                 customise: false,
+
+                glue: ' ' + this.$t('template.or') + ' ',
             }
         },
         computed: {
             usedBase() {
-                const name = this.selectedTemplate.name();
+                const name = this.selectedTemplate.name(this.glue);
                 for (let key in this.templates) {
                     if (this.templates.hasOwnProperty(key)) {
                         if (key === name) {

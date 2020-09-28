@@ -2,17 +2,17 @@
     <div class="container">
         <h2>
             <Icon v="books"/>
-            Niebinarna polszczyzna w tekstach kultury
+            <T>sources.headerLonger</T>
         </h2>
 
         <section>
-            <Share title="Niebinarna polszczyzna w tekstach kultury"/>
+            <Share :title="$t('sources.headerLonger')"/>
         </section>
 
         <section>
             <button v-if="!tocShown" class="btn btn-outline-primary btn-block" @click="tocShown = true">
                 <Icon v="list"/>
-                Pokaż spis treści
+                <T>sources.toc</T>
             </button>
             <ul v-if="tocShown" class="list-group">
                 <li v-for="[group, groupTemplates] in templateLibrary.split(filterTemplate, false)" class="list-group-item">
@@ -26,10 +26,10 @@
                     <ul class="list-unstyled">
                         <li v-for="template in groupTemplates" :key="template.canonicalName">
                             <a v-if="typeof template === 'string'" :href="'#' + toId(template)">
-                                <strong>{{ template.replace(/&/g, ' lub ') }}</strong>
+                                <strong>{{ template.replace(/&/g, glue) }}</strong>
                             </a>
-                            <a v-else :href="'#' + toId(template.name())">
-                                <strong>{{ template.name() }}</strong>
+                            <a v-else :href="'#' + toId(template.name(glue))">
+                                <strong>{{ template.name(glue) }}</strong>
                                 –
                                 <small>{{ template.description }}</small>
                             </a>
@@ -39,8 +39,8 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5 mb-0">
-                        <a href="#inne">
-                            <strong>Inne formy</strong>
+                        <a :href="'#' + $t('template.othersRaw')">
+                            <strong><T>template.others</T></strong>
                         </a>
                     </p>
                 </li>
@@ -50,37 +50,37 @@
         <section>
             <span class="mr-2 mb-3">
                 <Icon v="filter"/>
-                Filtruj:
+                <T>crud.filter</T>:
             </span>
             <div class="d-inline-block d-md-none">
                 <div class="btn-group-vertical">
-                    <button v-for="(config, type) in sourceTypes"
+                    <button v-for="(icon, type) in sourceTypes"
                             :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
                             @click="filter = type"
                     >
-                        <Icon :v="config.icon"/>
-                        {{ config.text }}
+                        <Icon :v="icon"/>
+                        <T>sources.type.{{type || 'All'}}</T>
                     </button>
                 </div>
             </div>
             <div class="d-none d-md-inline-block">
                 <div class="btn-group">
-                    <button v-for="(config, type) in sourceTypes"
+                    <button v-for="(icon, type) in sourceTypes"
                             :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
                             @click="filter = type"
                     >
-                        <Icon :v="config.icon"/>
-                        {{ config.text }}
+                        <Icon :v="icon"/>
+                        <T>sources.type.{{type || 'All'}}</T>
                     </button>
                 </div>
             </div>
         </section>
 
         <section v-for="template in templates" v-if="template.sources.length">
-            <h2 class="h4" :id="toId(template.name())">
+            <h2 class="h4" :id="toId(template.name(glue))">
                 <nuxt-link :to="'/' + template.pronoun()">
                     {{ template.description }}
-                    <small>({{ template.name() }})</small>
+                    <small>({{ template.name(glue) }})</small>
                 </nuxt-link>
             </h2>
 
@@ -94,7 +94,7 @@
         <section v-for="(sources, multiple) in sourcesForMultipleForms">
             <h2 class="h4" :id="toId(multiple)">
                 <nuxt-link :to="'/' + multiple">
-                    Formy wymienne
+                    <T>template.alt.header</T>
                     <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
                 </nuxt-link>
             </h2>
@@ -107,8 +107,8 @@
         </section>
 
         <section>
-            <h2 class="h4" id="inne">
-                Inne formy
+            <h2 class="h4" :id="$t('template.othersRaw')">
+                <T>template.others</T>
             </h2>
 
             <ul class="list-unstyled">
@@ -134,6 +134,7 @@
                 tocShown: false,
                 sourceTypes: Source.TYPES,
                 filter: '',
+                glue: ' ' + this.$t('template.or') + ' ',
             };
         },
         mounted() {
