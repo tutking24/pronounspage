@@ -1,6 +1,7 @@
 locale: 'pl'
 
 template:
+    default: 'on'
     any:
         route: 'dowolne'
 

@@ -198,7 +198,7 @@
                 getTemplate: getTemplate,
                 templateLibrary: templateLibrary,
 
-                selectedTemplate: templates['on'].clone(),
+                selectedTemplate: templates[this.config.template.default].clone(),
                 selectedMorpheme: '',
 
                 customiseMultiple: false,
