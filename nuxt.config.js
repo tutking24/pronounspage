@@ -66,7 +66,11 @@ export default {
                     skipEmptyLines: true,
                     delimiter: '\t',
                 }
-            })
+            });
+            config.module.rules.push({
+                test: /\.suml$/,
+                    loader: 'suml-loader',
+            });
         },
     },
     env: {
@@ -80,6 +84,5 @@ export default {
     },
     axios: {
         baseURL: process.env.BASE_URL,
-    }
-
+    },
 }
