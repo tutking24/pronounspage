@@ -147,7 +147,7 @@
         },
         head() {
             return head({
-                title: 'Niebinarna polszczyzna w tekstach kultury',
+                title: this.$t('sources.headerLonger'),
             });
         },
         computed: {

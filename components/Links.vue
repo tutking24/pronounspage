@@ -5,7 +5,7 @@
             <T>links.headerLong</T>
         </h2>
         <ul class="list-unstyled">
-            <Link v-for="link in config.links.links" :link="link"/>
+            <Link v-for="link in config.links.links" :link="link" :key="link.url"/>
         </ul>
     </section>
 </template>

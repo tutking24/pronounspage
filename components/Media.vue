@@ -5,7 +5,7 @@
             <T>links.media</T>
         </h2>
         <ul class="list-unstyled">
-            <Link v-for="link in config.links.media" :link="link"/>
+            <Link v-for="link in config.links.media" :link="link" :key="link.url"/>
         </ul>
     </section>
 </template>

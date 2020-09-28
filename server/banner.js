@@ -55,7 +55,7 @@ export default async function (req, res, next) {
         context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
     } else {
         context.font = 'regular 120pt Quicksand'
-        context.fillText('Zaimki.pl', width / leftRatio + imageSize / 1.5, height / 2 + 48)
+        context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + 48)
     }
 
     res.setHeader('content-type', mime);

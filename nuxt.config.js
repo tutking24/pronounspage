@@ -1,4 +1,5 @@
 import translations from './server/translations';
+import config from './server/config';
 
 const title = translations.title;
 const description = translations.description;
@@ -88,5 +89,28 @@ export default {
     },
     axios: {
         baseURL: process.env.BASE_URL,
+    },
+    router: {
+        extendRoutes(routes, resolve) {
+            if (config.sources.enabled) {
+                routes.push({ path: '/' + config.sources.route, component: resolve(__dirname, 'routes/sources.vue') });
+            }
+
+            if (config.nouns.enabled) {
+                routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
+            }
+
+            if (config.links.enabled) {
+                routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
+            }
+
+            if (config.contact.enabled) {
+                routes.push({ path: '/' + config.contact.route, component: resolve(__dirname, 'routes/contact.vue') });
+            }
+
+            routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
+
+            routes.push({ path: '*', component: resolve(__dirname, 'routes/template.vue') });
+        },
     },
 }

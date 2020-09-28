@@ -266,8 +266,8 @@
         },
         head() {
             return head({
-                title: 'Słownik neutratywów',
-                description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.',
+                title: this.$t('nouns.headerLong'),
+                description: this.$t('nouns.description'),
                 banner: 'bannerNouns.png',
             });
         },

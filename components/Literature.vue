@@ -1,7 +1,7 @@
 <template>
-    <div v-if="Object.keys(sources).length">
+    <div v-if="config.sources.enabled && Object.keys(sources).length">
         <h2 class="h4">
-            <nuxt-link to="/literatura">
+            <nuxt-link :to="'/' + config.sources.route">
                 <Icon v="books"/>
                 <T>sources.headerLong</T>:
             </nuxt-link>
@@ -42,6 +42,7 @@
             return {
                 templates: templates,
                 getTemplate: getTemplate,
+                glue: ' ' + this.$t('template.or') + ' ',
             }
         }
     }

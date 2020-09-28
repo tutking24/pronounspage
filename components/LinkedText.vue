@@ -34,7 +34,7 @@
                     );
                 }
 
-                return h('nuxt-link', {props: { to: linkBuffer || '/neutratywy#' + buffer }}, buffer);
+                return h('nuxt-link', {props: { to: linkBuffer || '/' + this.config.nouns.route + '#' + buffer }}, buffer);
             }
             const addChild = _ => {
                 if (!buffer) {

@@ -12,7 +12,6 @@ nouns:
     enabled: true
     route: 'neutratywy'
 
-
 links:
     enabled: true
     route: 'linki'

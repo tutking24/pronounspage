@@ -166,7 +166,7 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
-                        <nuxt-link to="/dowolne"><T>template.any.header</T></nuxt-link>
+                        <nuxt-link :to="'/' + config.template.any.route"><T>template.any.header</T></nuxt-link>
                     </p>
                     <p>
                         <T>template.any.description</T>
@@ -271,7 +271,7 @@
 </script>
 
 <style lang="scss">
-    @import "assets/style";
+    @import "../assets/style";
 
     .form-input {
         text-align: center;

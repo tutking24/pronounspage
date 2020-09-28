@@ -90,7 +90,7 @@
         },
         head() {
             return this.selectedTemplate ? head({
-                title: 'Moje zaimki to: ' + this.selectedTemplate.name(this.glue),
+                title: `${this.$t('template.intro')}: ${this.selectedTemplate.name(this.glue)}`,
                 banner: `banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
         },
@@ -101,7 +101,3 @@
         },
     }
 </script>
-
-<style lang="scss">
-
-</style>

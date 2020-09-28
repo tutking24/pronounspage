@@ -60,8 +60,8 @@
         },
         head() {
             return head({
-                title: 'Moje zaimki to: dowolne',
-                banner: 'banner/dowolne.png',
+                title: `${this.$t('template.intro')}: ${this.$t('template.any.short')}`,
+                banner: `banner/${this.$t('template.any.short')}.png`,
             });
         },
         methods: {
