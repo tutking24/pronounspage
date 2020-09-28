@@ -2,12 +2,12 @@
     <section>
         <div v-if="afterSubmit" class="alert alert-success text-center">
             <p>
-                Dziękujemy za zgłoszenie!
+                <T>nouns.submit.thanks</T>
             </p>
             <p>
                 <button class="btn btn-success" @click="afterSubmit = false">
                     <Icon v="plus"/>
-                    Zgłoś kolejne słowo
+                    <T>nouns.submit.another</T>
                 </button>
             </p>
         </div>
@@ -19,18 +19,18 @@
                         <th></th>
                         <th class="text-nowrap">
                             <Icon v="mars"/>
-                            <span class="d-none d-md-inline">maskulatyw</span>
-                            <span class="d-md-none">mask.</span>
+                            <span class="d-none d-md-inline"><T>nouns.masculine</T></span>
+                            <span class="d-md-none"><T>nouns.masculineShort</T></span>
                         </th>
                         <th class="text-nowrap">
                             <Icon v="venus"/>
-                            <span class="d-none d-md-inline">feminatyw</span>
-                            <span class="d-md-none">fem.</span>
+                            <span class="d-none d-md-inline"><T>nouns.feminine</T></span>
+                            <span class="d-md-none"><T>nouns.feminineShort</T></span>
                         </th>
                         <th class="text-nowrap">
                             <Icon v="neuter"/>
-                            <span class="d-none d-md-inline">neutratyw</span>
-                            <span class="d-md-none">neutr.</span>
+                            <span class="d-none d-md-inline"><T>nouns.neuter</T></span>
+                            <span class="d-md-none"><T>nouns.neuterShort</T></span>
                         </th>
                         <th v-if="secret"></th>
                     </tr>
@@ -38,8 +38,8 @@
                     <tbody>
                     <tr>
                         <th class="text-nowrap">
-                            <span class="d-none d-md-inline">⋅ liczba pojedyncza</span>
-                            <span class="d-md-none">⋅ l. poj.</span>
+                            <span class="d-none d-md-inline">⋅ <T>nouns.singular</T></span>
+                            <span class="d-md-none">⋅ <T>nouns.singularShort</T></span>
                         </th>
                         <td>
                             <NounForm v-model="form.masc"/>
@@ -53,8 +53,8 @@
                     </tr>
                     <tr>
                         <th class="text-nowrap">
-                            <span class="d-none d-md-inline">⁖ liczba mnoga</span>
-                            <span class="d-md-none">⁖ l. mn.</span>
+                            <span class="d-none d-md-inline">⁖ <T>nouns.plural</T></span>
+                            <span class="d-md-none">⁖ <T>nouns.pluralShort</T></span>
                         </th>
                         <td>
                             <NounForm v-model="form.mascPl"/>
@@ -71,7 +71,7 @@
             </div>
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
-                Edytujesz istniejący wpis
+                <T>nouns.editing</T>
                 <button class="btn btn-sm float-right" @click="form.base = null">
                     <Icon v="times"/>
                 </button>
@@ -79,15 +79,15 @@
 
             <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary btn-block">
                 <Icon v="copy"/>
-                Użyj szablonu
+                <T>nouns.template</T>
             </a>
             <div v-else class="card mb-3">
                 <a href="#" class="card-header" @click.prevent="templateVisible = false">
                     <Icon v="copy"/>
-                    Użyj szablonu
+                    <T>nouns.template</T>
                 </a>
                 <div class="card-body">
-                    Rdzeń rzeczownika: <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
+                    <T>nouns.root</T>: <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
 
                     <ul>
                         <li v-for="template in templates" class="my-2">
@@ -106,10 +106,10 @@
                 </template>
                 <template v-else>
                     <Icon v="plus"/>
-                    Zgłoś propozycję
+                    <T>nouns.submit.actionLong</T>
                 </template>
             </button>
-            <p class="small text-muted mt-1">Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.</p>
+            <p class="small text-muted mt-1"><T>nouns.submit.moderation</T></p>
         </form>
     </section>
 </template>

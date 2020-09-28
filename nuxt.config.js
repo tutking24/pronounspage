@@ -1,5 +1,8 @@
-const title = 'Zaimki.pl';
-const description = 'Udostępniamy tutaj linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.';
+import translations from './server/translations';
+import config from './server/config';
+
+const title = translations.title;
+const description = translations.description;
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
 const colour = '#C71585';
 
@@ -38,6 +41,7 @@ export default {
     css: [],
     plugins: [
         { src: '~/plugins/vue-matomo.js', ssr: false },
+        { src: '~/plugins/globals.js' },
     ],
     components: true,
     buildModules: [],
@@ -66,12 +70,17 @@ export default {
                     skipEmptyLines: true,
                     delimiter: '\t',
                 }
-            })
+            });
+            config.module.rules.push({
+                test: /\.suml$/,
+                    loader: 'suml-loader',
+            });
         },
     },
     env: {
         baseUrl: process.env.BASE_URL,
         secret: process.env.SECRET,
+        lang: process.env.LANG,
     },
     serverMiddleware: {
         '/': bodyParser.json(),
@@ -80,6 +89,28 @@ export default {
     },
     axios: {
         baseURL: process.env.BASE_URL,
-    }
+    },
+    router: {
+        extendRoutes(routes, resolve) {
+            if (config.sources.enabled) {
+                routes.push({ path: '/' + config.sources.route, component: resolve(__dirname, 'routes/sources.vue') });
+            }
 
+            if (config.nouns.enabled) {
+                routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
+            }
+
+            if (config.links.enabled) {
+                routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
+            }
+
+            if (config.contact.enabled) {
+                routes.push({ path: '/' + config.contact.route, component: resolve(__dirname, 'routes/contact.vue') });
+            }
+
+            routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
+
+            routes.push({ path: '*', component: resolve(__dirname, 'routes/template.vue') });
+        },
+    },
 }

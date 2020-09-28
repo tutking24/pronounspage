@@ -2,20 +2,18 @@
     <div class="container">
         <h2>
             <Icon v="tag"/>
-            Moje zaimki to:
+            <T>template.intro</T>:
         </h2>
 
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong>dowolne</strong>
+                    <strong><T>template.any.short</T></strong>
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2">
                     <em>
-                        Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
-                        innym nie przeszkadza zwracanie się w dowolny sposób
-                        – o ile wiadomo z kontekstu, że to o nich mowa
-                        (przejrzyj listę możliwości <nuxt-link to="/"><Icon v="share"/>tutaj</nuxt-link>).
+                        <T>template.any.description</T>
+                        (<T>template.any.options</T>)
                     </em>
                 </p>
             </div>
@@ -24,7 +22,7 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                Przykłady użycia w zdaniu:
+                <T>template.examples</T>:
             </h2>
 
             <ul>
@@ -35,16 +33,16 @@
         </section>
 
         <section>
-            <Share title="Moje zaimki to: dowolne"/>
+            <Share :title="`${$t('template.intro')}: ${$t('template.any.short')}`"/>
         </section>
 
         <Separator icon="info"/>
         <section class="mb-0">
             <h2 class="h4">
                 <Icon v="info-circle"/>
-                O co chodzi w tej stronie?
+                <T>home.whatisit</T>:
             </h2>
-            <About/>
+            <T>home.about</T>
             <Homepage align="center"/>
         </section>
     </div>
@@ -62,8 +60,8 @@
         },
         head() {
             return head({
-                title: 'Moje zaimki to: dowolne',
-                banner: 'banner/dowolne.png',
+                title: `${this.$t('template.intro')}: ${this.$t('template.any.short')}`,
+                banner: `banner/${this.$t('template.any.short')}.png`,
             });
         },
         methods: {

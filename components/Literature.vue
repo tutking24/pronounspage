@@ -1,9 +1,9 @@
 <template>
-    <div v-if="Object.keys(sources).length">
+    <div v-if="config.sources.enabled && Object.keys(sources).length">
         <h2 class="h4">
-            <nuxt-link to="/literatura">
+            <nuxt-link :to="'/' + config.sources.route">
                 <Icon v="books"/>
-                Przykłady z tekstów kultury:
+                <T>sources.headerLong</T>:
             </nuxt-link>
         </h2>
 
@@ -11,12 +11,12 @@
             <h3 class="h5">
                 <nuxt-link :to="'/' + option">
                     <span v-if="option.includes('&')">
-                        Formy wymienne
-                        <small>({{ option.replace(/&/g, ' lub ') }})</small>
+                        <T>template.alt.header</T>
+                        <small>({{ option.replace(/&/g, glue) }})</small>
                     </span>
                     <span v-else>
                         {{ getTemplate(templates, option).description }}
-                        <small>({{ getTemplate(templates, option).name() }})</small>
+                        <small>({{ getTemplate(templates, option).name(glue) }})</small>
                     </span>
                 </nuxt-link>
             </h3>
@@ -42,6 +42,7 @@
             return {
                 templates: templates,
                 getTemplate: getTemplate,
+                glue: ' ' + this.$t('template.or') + ' ',
             }
         }
     }

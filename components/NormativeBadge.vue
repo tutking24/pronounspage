@@ -1,7 +1,7 @@
 <template>
     <span class="badge badge-secondary toggle-hover">
         <Icon v="book-open"/>
-        <span class="togglable">Normatywne</span>
+        <span class="togglable"><T>template.normative</T></span>
     </span>
 </template>
 

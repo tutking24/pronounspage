@@ -3,7 +3,7 @@
         <h1 class="mb-3">
             <nuxt-link to="/">
                 <Icon v="tags"/>
-                Zaimki.pl
+                <T>title</T>
             </nuxt-link>
         </h1>
         <div class="d-block d-md-none">
@@ -27,16 +27,31 @@
 </template>
 
 <script>
+    import t from '../src/translator';
+
     export default {
         data() {
+            const links = [];
+            links.push({ link: '/', icon: 'home', text: t('home.header'), textLong: t('home.headerLong'), extra: ['all', this.config.template.any.route] });
+
+            if (this.config.sources.enabled) {
+                links.push({ link: '/' + this.config.sources.route, icon: 'books', text: t('sources.header'), textLong: t('sources.headerLong') });
+            }
+
+            if (this.config.nouns.enabled) {
+                links.push({ link: '/' + this.config.nouns.route, icon: 'atom-alt', text: t('nouns.header'), textLong: t('nouns.headerLong') });
+            }
+
+            if (this.config.links.enabled) {
+                links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: t('links.header'), textLong: t('links.headerLong') });
+            }
+
+            if (this.config.contact.enabled) {
+                links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: t('contact.header')});
+            }
+
             return {
-                links: [
-                    { link: '/', icon: 'home', text: 'Zaimki', textLong: 'Lista zaimków', extra: ['all', 'dowolne'] },
-                    { link: '/literatura', icon: 'books', text: 'Teksty kultury', textLong: 'Przykłady z tekstów kultury' },
-                    { link: '/neutratywy', icon: 'atom-alt', text: 'Neutratywy', textLong: 'Słownik neutratywów' },
-                    { link: '/linki', icon: 'bookmark', text: 'Materiały', textLong: 'Dodatkowe materiały' },
-                    { link: '/kontakt', icon: 'comment-alt-smile', text: 'Kontakt' },
-                ],
+                links,
             };
         },
         methods: {

@@ -1,0 +1,15 @@
+singular	plural	isHonorific
+Myślę, że {pronoun_n} jest bardzo mił{adjective_n}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}	FALSE
+Tęsknię za {pronoun_g} śmiechem.		FALSE
+Napiszę do {pronoun_g_acc} później.		FALSE
+Powiedział{verb_middle_inter}m {pronoun_d}, że {pronoun_a} lubię.	Powiedzi{verb_middle_inter}śmy {pronoun_d}, że {pronoun_a} lubimy.	FALSE
+Chciał{verb_end_inter}bym pójść do kina.	Chci{verb_middle_inter}byśmy pójść do kina.	FALSE
+Czy będziesz grał{verb_end_about} z nami?	Czy będziecie gra{verb_end_about} z nami?	FALSE
+Kiedy będziesz m{verb_o}gł{verb_end_about} się z nami spotkać?	Kiedy będziecie m{verb_o}g{verb_end_about} się z nami spotkać?	FALSE
+Gdy był{verb_middle_inter}m w domu, zacz{verb_nasal}ł{verb_middle_inter}m gotować.	Gdy by{verb_end_inter}śmy w domu, zacz{verb_nasal}śmy gotować.	FALSE
+Dostał{verb_middle_inter}m wyniki egzaminu i jestem z nich zadowolon{adjective_n}.	Dosta{verb_end_inter}śmy wyniki egzaminu i jesteśmy z nich zadowol{adjective_middle}n{adjective_n}.	FALSE
+Po{verb_go}{verb_middle_inter}m z {pronoun_i} do szkoły.	Po{verb_go}śmy z {pronoun_i} do szkoły.	FALSE
+Rozmawialiśmy o {pronoun_l} ostatnio.		FALSE
+Każd{adjective_n} z nich chciał{verb_end_about} czego innego.	Wszys{pronoun_all} z nich chci{verb_middle_about} czego innego.	FALSE
+To miło, że nas {honorific} odwiedza.	To miło, że nas {honorific} odwiedzają.	TRUE
+Czy będzie {honorific} kontynuować subskrypcję?	Czy będą {honorific} kontynuować subskrypcję?	TRUE

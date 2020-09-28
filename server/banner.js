@@ -2,6 +2,7 @@ import { buildTemplate, parseTemplates } from "../src/buildTemplate";
 import { createCanvas, registerFont, loadImage } from 'canvas';
 import Papa from 'papaparse';
 import fs from 'fs';
+import translations from '../server/translations';
 
 const loadTsv = (filename) => {
     return Papa.parse(fs.readFileSync(__dirname + '/../data/' + filename).toString('utf-8'), {
@@ -47,14 +48,14 @@ export default async function (req, res, next) {
 
     if (template || templateName === 'dowolne') {
         context.font = 'regular 48pt Quicksand'
-        context.fillText('Moje zaimki to:', width / leftRatio + imageSize / 1.5, height / 2 - 36)
+        context.fillText(translations.template.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
         const templateNameOptions = templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
         context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
         context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
     } else {
         context.font = 'regular 120pt Quicksand'
-        context.fillText('Zaimki.pl', width / leftRatio + imageSize / 1.5, height / 2 + 48)
+        context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + 48)
     }
 
     res.setHeader('content-type', mime);

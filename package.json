@@ -20,6 +20,7 @@
     "sql-template-strings": "^2.2.2",
     "sqlite": "^4.0.12",
     "sqlite3": "^5.0.0",
+    "suml-loader": "^0.1.1",
     "ulid": "^2.3.0",
     "vue-matomo": "^3.13.5-0"
   },

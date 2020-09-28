@@ -7852,6 +7852,18 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
+suml-loader@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/suml-loader/-/suml-loader-0.1.1.tgz#b9ce45822ed9f7255cf868cc4d4be263d6b8cd4c"
+  integrity sha512-K7tcM6FXgzZIL6KT1JkK2eXajQztT2QdQOwg+t+HoApLiwGv/qPg7je8TYxP+N9fAL7VOL5/Ze1etgX134FOvA==
+  dependencies:
+    suml "^0.2.1"
+
+suml@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/suml/-/suml-0.2.1.tgz#f2ed3566ba3618fa2e5731b0b048d684814eda9f"
+  integrity sha512-QS97EY1DxZGMljvy8V1I5Mh31pvX9CcthmgnmKtJ5gI0BncUaTJSeskRTCfkXadD59NcYZq0438CATr3Oyegfw==
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
