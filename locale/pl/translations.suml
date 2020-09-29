@@ -146,6 +146,26 @@ nouns:
     plural: 'liczba mnoga'
     pluralShort: 'l. mn.'
 
+names:
+    header: 'Imiona'
+    headerLong: 'Neutralne imiona'
+    description: 'Przedstawiamy słownik neutralnych płciowo imion wraz z przydatnymi informacjami na ich temat.'
+    intro:
+        - >
+            Przedstawiamy słownik neutralnych płciowo imion wraz z przydatnymi informacjami na ich temat.
+        - >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque vel tellus fringilla, sodales ex lobortis, congue nisl.
+            Vivamus non magna et nibh egestas maximus quis vel urna. Ut tristique nunc vel mollis fermentum.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Cras vel suscipit diam. Nunc sem lacus, dignissim rutrum libero a, gravida euismod neque.
+    origin: 'Pochodzenie'
+    meaning: 'Znaczenie'
+    usage: 'Użycie'
+    legally: 'USC może uznać za'
+    count: 'Osób w rejestrze PESEL'
+    empty: 'Nie znaleziono imion spełniających podane kryterium.'
+
 links:
     header: 'Materiały'
     headerLong: 'Dodatkowe materiały'

@@ -100,6 +100,10 @@ export default {
                 routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
             }
 
+            if (config.names.enabled) {
+                routes.push({ path: '/' + config.names.route, component: resolve(__dirname, 'routes/names.vue') });
+            }
+
             if (config.links.enabled) {
                 routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
             }

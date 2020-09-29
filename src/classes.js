@@ -280,7 +280,7 @@ export class Noun {
 
         for (let field of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
             for (let value of this[field]) {
-                if (value.indexOf(filter) > -1) {
+                if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
                     return true;
                 }
             }
@@ -316,5 +316,34 @@ export class NounTemplate {
             .map(es => es.map(e => '-' + e).join('/'))
             .join(', ')
             ;
+    }
+}
+
+export class Name {
+    constructor(name, origin, meaning, usage, legally, pros, cons, notablePeople, count, links) {
+        this.name = name;
+        this.origin = origin;
+        this.meaning = meaning;
+        this.usage = usage;
+        this.legally = legally;
+        this.pros = pros;
+        this.cons = cons;
+        this.notablePeople = notablePeople;
+        this.count = count; // TODO
+        this.links = links.filter(l => l.trim().length);
+    }
+
+    matches(filter) {
+        if (!filter) {
+            return true;
+        }
+
+        for (let field of ['name', 'meaning']) {
+            if ((this[field] || '').toLowerCase().indexOf(filter.toLowerCase()) > -1) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

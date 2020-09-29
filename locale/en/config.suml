@@ -13,6 +13,9 @@ sources:
 nouns:
     enabled: false
 
+names:
+    enabled: false
+
 links:
     enabled: true
     route: 'links'

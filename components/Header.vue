@@ -54,6 +54,10 @@
                 links.push({ link: '/' + this.config.nouns.route, icon: 'atom-alt', text: this.$t('nouns.header'), textLong: this.$t('nouns.headerLong') });
             }
 
+            if (this.config.names.enabled) {
+                links.push({ link: '/' + this.config.names.route, icon: 'signature', text: this.$t('names.header'), textLong: this.$t('names.headerLong') });
+            }
+
             if (this.config.links.enabled) {
                 links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: this.$t('links.header'), textLong: this.$t('links.headerLong') });
             }

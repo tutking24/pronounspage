@@ -38,3 +38,27 @@ export const head = ({title, description, banner}) => {
 
     return meta;
 }
+
+export const clearUrl = url => {
+    url = url.trim()
+        .replace('http://www.', '')
+        .replace('https://www.', '')
+        .replace('http://', '')
+        .replace('https://', '');
+
+    const qPos = url.indexOf('?')
+    if (qPos > -1) {
+        url = url.substr(0, qPos);
+    }
+
+    const hPos = url.indexOf('#')
+    if (hPos > -1) {
+        url = url.substr(0, hPos);
+    }
+
+    if (url.substr(url.length - 1) === '/') {
+        url = url.substr(0, url.length - 1);
+    }
+
+    return decodeURIComponent(url);
+}

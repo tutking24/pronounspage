@@ -1,4 +1,4 @@
-import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary} from './classes'
+import { Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name } from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 
@@ -97,3 +97,21 @@ export const templateGroups = buildList(function* () {
 });
 
 export const templateLibrary = new TemplateLibrary(templateGroups, templates);
+
+import namesRaw from '../data/names.tsv';
+export const names = buildDict(function* () {
+    for (let n of namesRaw) {
+        yield [n.name, new Name(
+            n.name,
+            n.origin,
+            n.meaning,
+            n.usage,
+            n.legally,
+            n.pros ? n.pros.split(',') : [],
+            n.cons ? n.cons.split(',') : [],
+            n.notablePeople ? n.notablePeople.split(',') : [],
+            n.count,
+            n.links ? n.links.split(' ') : [],
+        )];
+    }
+});
