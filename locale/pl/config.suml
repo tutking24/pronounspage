@@ -1,4 +1,5 @@
 locale: 'pl'
+localeSwitch: true
 
 template:
     default: 'on'

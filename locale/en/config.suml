@@ -1,4 +1,5 @@
 locale: 'en'
+localeSwitch: false
 
 template:
     default: 'he'

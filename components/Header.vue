@@ -1,11 +1,23 @@
 <template>
     <header class="mb-4">
-        <h1 class="mb-3">
-            <nuxt-link to="/">
-                <Icon v="tags"/>
-                <T>title</T>
-            </nuxt-link>
-        </h1>
+        <div class="mb-3 d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <h1 class="text-nowrap">
+                <nuxt-link to="/">
+                    <Icon v="tags"/>
+                    <T>title</T>
+                </nuxt-link>
+            </h1>
+            <ul class="list-inline small mb-0" v-if="config.localeSwitch">
+                <li v-for="(options, locale) in locales" :key="locale" class="list-inline-item">
+                    <strong v-if="locale === config.locale">
+                        {{options.name}}
+                    </strong>
+                    <a v-else :href="options.url">
+                        {{options.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="d-block d-md-none">
             <div class="btn-group-vertical btn-block nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
@@ -27,31 +39,32 @@
 </template>
 
 <script>
-    import t from '../src/translator';
+    import { locales } from '../src/data';
 
     export default {
         data() {
             const links = [];
-            links.push({ link: '/', icon: 'home', text: t('home.header'), textLong: t('home.headerLong'), extra: ['all', this.config.template.any.route] });
+            links.push({ link: '/', icon: 'home', text: this.$t('home.header'), textLong: this.$t('home.headerLong'), extra: ['all', this.config.template.any.route] });
 
             if (this.config.sources.enabled) {
-                links.push({ link: '/' + this.config.sources.route, icon: 'books', text: t('sources.header'), textLong: t('sources.headerLong') });
+                links.push({ link: '/' + this.config.sources.route, icon: 'books', text: this.$t('sources.header'), textLong: this.$t('sources.headerLong') });
             }
 
             if (this.config.nouns.enabled) {
-                links.push({ link: '/' + this.config.nouns.route, icon: 'atom-alt', text: t('nouns.header'), textLong: t('nouns.headerLong') });
+                links.push({ link: '/' + this.config.nouns.route, icon: 'atom-alt', text: this.$t('nouns.header'), textLong: this.$t('nouns.headerLong') });
             }
 
             if (this.config.links.enabled) {
-                links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: t('links.header'), textLong: t('links.headerLong') });
+                links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: this.$t('links.header'), textLong: this.$t('links.headerLong') });
             }
 
             if (this.config.contact.enabled) {
-                links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: t('contact.header')});
+                links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: this.$t('contact.header')});
             }
 
             return {
                 links,
+                locales,
             };
         },
         methods: {

@@ -2,6 +2,13 @@ import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary} from './c
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 
+export const locales = {
+    en: { name: 'English', url: 'https://en.pronouns.page' },
+    pl: { name: 'Polski', url: 'https://zaimki.pl' },
+    de: { name: 'Deutsch', url: 'https://de.pronouns.page' },
+    nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
+}
+
 import templatesRaw from '../data/templates.tsv';
 export const templates = parseTemplates(templatesRaw);
 
@@ -35,6 +42,7 @@ export const sources = buildDict(function* () {
     }
 });
 
+// TODO move to locale
 export const sourcesForMultipleForms = {
     'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1'],
     'ona&onu': ['liniaOporuMix'],
