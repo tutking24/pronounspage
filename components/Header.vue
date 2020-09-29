@@ -62,6 +62,10 @@
                 links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: this.$t('links.header'), textLong: this.$t('links.headerLong') });
             }
 
+            if (this.config.english.enabled) {
+                links.push({ link: '/' + this.config.english.route, icon: 'globe-americas', text: this.$t('english.header'), textLong: this.$t('english.headerLong') });
+            }
+
             if (this.config.contact.enabled) {
                 links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: this.$t('contact.header')});
             }

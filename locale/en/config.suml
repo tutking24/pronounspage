@@ -16,6 +16,9 @@ nouns:
 names:
     enabled: false
 
+english:
+    enabled: false
+
 links:
     enabled: true
     route: 'links'

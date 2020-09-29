@@ -174,6 +174,30 @@ links:
 
     social: 'Social media'
 
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Polish nonbinary pronouns'
+    description: 'If you don''t speak Polish, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            Polish is a strongly gendered language:
+            even saying something as simple as “I did” requires specifying which gender you are.
+        - >
+            It's problematic for nonbinary people,
+            because we cannot simply switch one set of pronouns for another to express our identity.
+            We need to come up with a system that also includes
+            neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
+            (also: nouns like “painter”, “politician”, “journalist” etc. are also gendered,
+            but that's [atom-alt] {/neutratywy=a story for another time}).
+        - >
+            This website is an effort to put together in a structured and accessible way
+            the existing ideas for less gendered pronouns and other forms.
+            The website is in Polish [home] (see: {/=Homepage}),
+            but if you don't speak it, yet still are interested in
+            how this language tries to cope with the omnipresent binaries,
+            we've prepared a short overview of those ideas in English.
+
 contact:
     header: 'Kontakt'
     authors: '{Autor}za strony'

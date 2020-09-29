@@ -91,6 +91,42 @@ links:
             url: 'https://facebook.com/neutratywy'
             headline: '<strong>fb.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
 
+english:
+    enabled: false
+    route: 'english'
+    templateGroups:
+        -
+            name: 'Normative forms'
+            description:
+                - 'Wiele osób niebinarnych, ze względu na ograniczenia polszczyzny lub zwyczajnie dlatego, że tak im bardziej pasuje, decyduje się zwyczajnie używać form „on” lub „ona” – czy to zgodnie z ich płcią przypisaną przy urodzeniu, czy przeciwnie. Nie ujmuje to im niebinarności! Zaimki ≠ płeć.'
+            table: {on: 'Masculine', ona: 'Feminine'}
+        -
+            name: 'Neutrative forms'
+            description:
+                - 'Ze względu na użycie już istniejącego w polszczyźnie rodzaju nijakiego jest to jedna z najczęściej używanych oraz łatwych do zrozumienia opcji. Formy takie jak „zrobiłom” czy „poszłoś”, choć poprawne gramatycznie, dopiero od niedawna są szerzej używane, i dla wielu brzmią dehumanizująco (póki nie zostaną znormalizowane). W odmianie wiele form nijakich jest tożsamych z męskimi, dlatego niektóre osoby wolą używać zmodyfikowanych wariantów wykorzystujących inne zaimki przy zachowaniu nijakiej koniugacji czasowników.'
+            table: {ono: 'Neutrative', ono/jej: 'Neutrative with female declension'}
+        -
+            name: 'Dukaisms'
+            description:
+                - 'Neologiczne formy stworzone oryginalnie dla powieści fantastycznych. Choć system dukaizmów jest spójny i analogiczny do form normatywnych, to dla nieznaznajomionych brzmi obco. Jest to jedna z najczęściej wybieranych opcji. Niektóre osoby używają też zmodyfikowanych wariantów wykorzystujących inne zaimki w części przypadków przy zachowaniu dukajowskiej koniugacji czasowników.'
+                - 'Formy te zostały stworzone przez {https://pl.wikipedia.org/wiki/Jacek_Dukaj=Jacka Dukaja} do książki {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjna niedoskonałość”}. Używają jej tam istoty post-ludzkie (phoebe), które nie mają określonej płci. Od nazwiska autora te formy gramatyczne są nazywane „dukaizmami”.'
+            table: {onu: ''}
+        -
+            name: 'Plural forms'
+            description:
+                - 'Normatywne formy mnogie mogą być używane do opisu pojedyńczej osoby, w tym jako dosłowne tłumaczenie angielskiego „they/them”. Są poprawne i bez tworzenia neogramatyki, a ich zamysł jest łatwy do zrozumienia dla osób znających angielski odpowiednik, aczkolwiek dla wielu jest to dezorientujące. Używanie ich wciąż wymaga wyboru między zgenderyzowanymi wersjami („oni” lub „one”). Nienormatywne formy mnogie mogą służyć nie tylko do opisu pojedyńczych osób, ale również grup mieszanych lub o nieznanej płci.'
+            table: {oni: 'Male & mixed plurals', one: 'Female plurals'}
+        -
+            name: 'Placeholder forms'
+            description:
+                - 'Formy te używają placeholderów / znaków zastępujących w miejscu różnic między wersją męską a żeńską. Są przydatne w piśmie, ale ciężkie lub niemożliwe do wymówienia. Intencja jest łatwa do zrozumienia. Często są też używane w zwrotach do grupy osób lub osoby o nieznanej płci.'
+            table: {onæ: '', on/a: '', onx: '', on_: '', on*: '', onø: ''}
+        -
+            name: 'Interchangeable forms'
+            description:
+                - 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i nijakich) i można się do nich zwracać w dowolnej z nich.'
+
+
 contact:
     enabled: true
     route: 'kontakt'
