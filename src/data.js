@@ -1,4 +1,4 @@
-import { Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name } from './classes'
+import { Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person } from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 
@@ -113,5 +113,17 @@ export const names = buildDict(function* () {
             n.count,
             n.links ? n.links.split(' ') : [],
         )];
+    }
+});
+
+import peopleRaw from '../data/people.tsv';
+export const people = buildList(function* () {
+    for (let p of peopleRaw) {
+        yield new Person(
+            p.name,
+            p.description,
+            p.pronouns.split(','),
+            p.sources ? p.sources.split(',') : [],
+        );
     }
 });

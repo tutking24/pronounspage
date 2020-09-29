@@ -347,3 +347,20 @@ export class Name {
         return false;
     }
 }
+
+
+export class Person {
+    constructor(name, description, pronouns, sources = []) {
+        this.name = name;
+        this.description = description;
+        this.pronouns = {};
+        for (let p of pronouns) {
+            const [language, display, link] = p.split(':');
+            if (this.pronouns[language] === undefined) {
+                this.pronouns[language] = [];
+            }
+            this.pronouns[language].push({display: display, link: link});
+        }
+        this.sources = sources;
+    }
+}

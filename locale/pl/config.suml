@@ -91,6 +91,10 @@ links:
             url: 'https://facebook.com/neutratywy'
             headline: '<strong>fb.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
 
+people:
+    enabled: false
+    route: 'znane'
+
 english:
     enabled: false
     route: 'english'

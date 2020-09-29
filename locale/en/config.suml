@@ -16,6 +16,9 @@ nouns:
 names:
     enabled: false
 
+people:
+    enabled: false
+
 english:
     enabled: false
 

@@ -39,8 +39,6 @@
 </template>
 
 <script>
-    import { locales } from '../src/data';
-
     export default {
         data() {
             const links = [];
@@ -62,6 +60,10 @@
                 links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: this.$t('links.header'), textLong: this.$t('links.headerLong') });
             }
 
+            if (this.config.people.enabled) {
+                links.push({ link: '/' + this.config.people.route, icon: 'user-friends', text: this.$t('people.header'), textLong: this.$t('people.headerLong') });
+            }
+
             if (this.config.english.enabled) {
                 links.push({ link: '/' + this.config.english.route, icon: 'globe-americas', text: this.$t('english.header'), textLong: this.$t('english.headerLong') });
             }
@@ -72,7 +74,6 @@
 
             return {
                 links,
-                locales,
             };
         },
         methods: {

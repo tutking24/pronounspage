@@ -174,6 +174,40 @@ links:
 
     social: 'Social media'
 
+people:
+    header: 'Znane osoby'
+    headerLong: 'Zaimki znanych osób'
+    headerLonger: 'Zaimki znanych osób – ściąga dla prasy'
+    description: 'Polska prasa często idzie na łatwiznę i opisuje osoby używające they/them jako po prostu „on” lub „ona”, wymazując tym samym ich niebinarną tożsamość. Stworzyłośmy zatem małą ściągawkę, kto używa jakich zaimków.'
+    intro:
+        - >
+            Wiele osób dziennikarskich, stojąc przed wyzwaniem stworzenia materiału o osobie z zagranicy,
+            która w innym języku używa form neutralnych (jak np. angielskie <em>they/them</em>),
+            poddaje się i idzie na łatwiznę – zwyczajnie używając normatywnych form męskich lub żeńskich.
+            Niestety, wymazuje to niebinarną część tożsamości tej osoby
+            i przyczynia się do utrwalania szkodliwego błędnego mniemania,
+            jakoby osoby niebinarne były tylko „kobietami-light” czy „mężczyznami-light”.
+        - >
+            Śpieszymy zatem z pomocą!
+            {/ona/ich=Przygotowałośmy} {/english=anglojęzyczny przegląd polskich form neutralnych},
+            w którym tłumaczymy różne opcje osobom nieznającym polskiego.
+            {/ona/ich=Rozesłałośmy} go do paru znanych osób z pytaniem, czy mają preferencje,
+            jak chciałyby być opisywane przez polskie media i polskie fandomy.
+            Liczymy, że lista będzie się z czasem wydłużała.
+        - >
+            Póki co, {/ona/ich=zebrałośmy} tu raptem parę znanych osób niebinarnych.
+            Co więc robić, jeśli danej osoby tutaj nie ma?
+            Przede wszystkim, nie idź na łatwiznę i nie opisuj jej zaimkami, które <em>wydaje ci się</em>,
+            że <em>„powinna”</em> używać ze względu na „męskie” czy „żeńskie” ciało.
+            Niektórzy używają zamiennie na przykład „they” i „she”, wtedy żeńskie zaimki w polszczyźnie są na miejscu.
+            W przciwnym wypadku zajrzyj na naszą [home] {/=stronę główną},
+            gdzie opisujemy neutralne możliwości. Zapoznaj się z nimi i na tej podstawie dokonaj wyboru.
+            Możesz też spróbować spytać bezpośrednio osobę zainteresowaną o jej preferencje
+            – posiłkując się naszymi {/english=anglojęzycznymi materiałami}.
+    languages:
+        pl: 'Polskie zaimki'
+        en: 'Angielskie zaimki'
+
 english:
     header: 'English'
     headerLong: 'An overview in English'

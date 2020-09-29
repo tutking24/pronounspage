@@ -108,6 +108,10 @@ export default {
                 routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
             }
 
+            if (config.people.enabled) {
+                routes.push({ path: '/' + config.people.route, component: resolve(__dirname, 'routes/people.vue') });
+            }
+
             if (config.english.enabled) {
                 routes.push({ path: '/' + config.english.route, component: resolve(__dirname, 'routes/english.vue') });
             }
