@@ -16,7 +16,9 @@
                 <h3 class="h4">
                     {{templateGroup.name}}
                 </h3>
-                <p v-for="p in templateGroup.description" v-html="p"></p>
+                <p v-for="p in templateGroup.description">
+                    <LinkedText :text="p"/>
+                </p>
                 <EnglishTable v-if="templateGroup.table" :t="templateGroup.table"/>
             </li>
         </ul>
