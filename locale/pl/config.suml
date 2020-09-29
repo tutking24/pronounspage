@@ -1,5 +1,5 @@
 locale: 'pl'
-localeSwitch: true
+localeSwitch: false
 
 template:
     default: 'on'
