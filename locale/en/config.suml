@@ -1,0 +1,61 @@
+locale: 'en'
+
+template:
+    default: 'he'
+    any:
+        route: 'any'
+
+sources:
+    enabled: true
+    route: 'sources'
+
+nouns:
+    enabled: false
+
+links:
+    enabled: true
+    route: 'links'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            headline: 'Pronoun.is'
+            extra: '– inspiration for this website.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
+            headline: 'Why EVERYONE should have pronouns in their bio'
+    media: []
+    socials: []
+
+contact:
+    enabled: true
+    route: 'contact'
+    authors:
+        -
+            name: 'Andrea'
+            pronouns: 'they'
+            pronounsLink: '/they'
+            website: 'https://avris.it'
+            twitter: 'AvrisIT'
+            mail: 'andrea@avris.it'
+            areas:
+                code: 'https://gitlab.com/Avris/Zaimki'
+                language: ~
+        -
+            name: 'Paweł Dembowski'
+            pronouns: 'he'
+            pronounsLink: '/he'
+            twitter: 'VaultAusir'
+            mail: 'pawel.dembowski@gmail.com'
+            areas:
+                languages: ~
+                sources: '/sources'
+        -
+            name: 'Zuzanna Sybilla Grzybowska'
+            pronouns: 'he/she/they'
+            pronounsLink: '/he&she&they'
+            twitter: 'mykofanes'
+            mail: 'zuzannagrzybowska@protonmail.com'
+            areas:
+                social_media: ~

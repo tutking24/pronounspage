@@ -110,7 +110,7 @@ export default {
 
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
-            routes.push({ path: '*', component: resolve(__dirname, 'routes/template.vue') });
+            routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });
         },
     },
 }

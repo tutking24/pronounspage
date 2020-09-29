@@ -120,13 +120,13 @@ export class Template {
     }
 
     pronoun() {
-        return this.morphemes['pronoun_n'];
+        return this.morphemes[MORPHEMES[0]];
     }
 
     nameOptions() {
         const options = new Set();
-        const optionsN = this.morphemes.pronoun_n.split('&');
-        const optionsG = this.morphemes.pronoun_g.split('&');
+        const optionsN = this.morphemes[MORPHEMES[0]].split('&');
+        const optionsG = this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
             options.add(optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1]);
         }
@@ -209,7 +209,7 @@ export class Template {
             m[MORPHEMES[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(m.pronoun_n, data[data.length - 1], false, m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
+        return new Template(m[MORPHEMES[0]], data[data.length - 1], false, m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
     }
 }
 

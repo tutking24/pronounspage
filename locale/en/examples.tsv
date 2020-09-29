@@ -1,0 +1,2 @@
+singular	plural	isHonorific
+foo {pronoun_subject} bar {pronoun_object} test {possessive_determiner} test {possessive_pronoun} test {reflexive}.		FALSE

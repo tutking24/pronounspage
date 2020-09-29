@@ -189,6 +189,7 @@
     import { examples, templates, getSources, templateLibrary } from "~/src/data";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
+    import MORPHEMES from '../data/morphemes';
 
     export default {
         data() {
@@ -231,7 +232,7 @@
                 return this.usedBase && this.templates[this.usedBase].equals(this.selectedTemplate);
             },
             longLink() {
-                const base = this.templates[this.selectedTemplate.morphemes.pronoun_n];
+                const base = this.templates[this.selectedTemplate.morphemes[MORPHEMES[0]]];
 
                 return base
                     ? Compressor.compress(this.selectedTemplate.toArray(), base.toArray()).join(',')
