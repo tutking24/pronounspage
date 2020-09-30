@@ -55,8 +55,8 @@
         },
         head() {
             return head({
-                title: this.$t('english.headerLonger'),
-                description: this.$t('english.description'),
+                title: this.$t('people.headerLonger'),
+                description: this.$t('people.description'),
             });
         },
     }

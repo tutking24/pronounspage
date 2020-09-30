@@ -189,7 +189,7 @@ people:
             jakoby osoby niebinarne były tylko „kobietami-light” czy „mężczyznami-light”.
         - >
             Śpieszymy zatem z pomocą!
-            {/ona/ich=Przygotowałośmy} {/english=anglojęzyczny przegląd polskich form neutralnych},
+            {/ona/ich=Przygotowałośmy} [globe-americas] {/english=anglojęzyczny przegląd polskich form neutralnych},
             w którym tłumaczymy różne opcje osobom nieznającym polskiego.
             {/ona/ich=Rozesłałośmy} go do paru znanych osób z pytaniem, czy mają preferencje,
             jak chciałyby być opisywane przez polskie media i polskie fandomy.
@@ -203,7 +203,7 @@ people:
             W przciwnym wypadku zajrzyj na naszą [home] {/=stronę główną},
             gdzie opisujemy neutralne możliwości. Zapoznaj się z nimi i na tej podstawie dokonaj wyboru.
             Możesz też spróbować spytać bezpośrednio osobę zainteresowaną o jej preferencje
-            – posiłkując się naszymi {/english=anglojęzycznymi materiałami}.
+            – posiłkując się naszymi [globe-americas] {/english=anglojęzycznymi materiałami}.
     languages:
         pl: 'Polskie zaimki'
         en: 'Angielskie zaimki'
@@ -227,7 +227,7 @@ english:
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
-            The website is in Polish [home] (see: {/=Homepage}),
+            The website is in Polish (see: [home] {/=Homepage}),
             but if you don't speak it, yet still are interested in
             how this language tries to cope with the omnipresent binaries,
             we've prepared a short overview of those ideas in English.

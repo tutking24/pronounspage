@@ -35,8 +35,8 @@
         components: { EnglishTable },
         head() {
             return head({
-                title: this.$t('people.headerLonger'),
-                description: this.$t('people.description'),
+                title: this.$t('english.headerLonger'),
+                description: this.$t('english.description'),
             });
         },
     }

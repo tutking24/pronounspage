@@ -89,7 +89,7 @@ export class Source {
     }
 
     icon() {
-        return Source.TYPES[this.type].icon;
+        return Source.TYPES[this.type];
     }
 }
 
