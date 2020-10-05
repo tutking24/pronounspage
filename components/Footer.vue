@@ -19,14 +19,17 @@
                     <T>footer.links</T>:
                 </p>
                 <div class="mb-3">
-                    <SquareButton link="https://avris.it">
-                        <img src="~assets/avris.svg"/>
+                    <SquareButton link="https://twitter.com/neutratywy">
+                        <Icon v="twitter" set="b"/>
                     </SquareButton>
-                    <SquareButton link="https://facebook.com/neutratywy/">
+                    <SquareButton link="https://facebook.com/neutratywy">
                         <Icon v="facebook-f" set="b"/>
                     </SquareButton>
-                    <SquareButton link="https://instagram.com/neutratywy/">
+                    <SquareButton link="https://instagram.com/neutratywy">
                         <Icon v="instagram" set="b"/>
+                    </SquareButton>
+                    <SquareButton link="https://avris.it">
+                        <img src="~assets/avris.svg"/>
                     </SquareButton>
                     <SquareButton link="https://paypal.me/AndreAvris">
                         <Icon v="paypal" set="b"/>

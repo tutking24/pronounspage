@@ -85,15 +85,20 @@ links:
             headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
     socials:
         -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/neutratywy'
+            headline: '@neutratywy'
+        -
             icon: 'instagram'
             iconSet: 'b'
             url: 'https://instagram.com/neutratywy'
-            headline: '<strong>instagram.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
+            headline: '@neutratywy'
         -
             icon: 'facebook'
             iconSet: 'b'
             url: 'https://facebook.com/neutratywy'
-            headline: '<strong>fb.com/neutratywy</strong> – „Słownik Neutratywów Języka Polskiego”'
+            headline: 'fb.com/neutratywy'
 
 people:
     enabled: false
