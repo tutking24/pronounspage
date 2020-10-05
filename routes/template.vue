@@ -44,6 +44,36 @@
             </div>
         </section>
 
+        <section v-if="templateGroup && templateGroup.group.description">
+            <ul class="list-group mt-4">
+                <li class="list-group-item">
+                    <p class="h5">
+                        {{ templateGroup.group.name }}
+                    </p>
+                    <div class="small my-1">
+                        <Icon v="info-circle"/>
+                        <em v-html="templateGroup.group.description"></em>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li v-for="template in templateGroup.groupTemplates" :key="template.canonicalName">
+                            <nuxt-link v-if="typeof template === 'string'" :to="'/' + template">
+                                <strong>{{template.replace(/&/g, ' ' + $t('template.or') + ' ')}}</strong>
+                            </nuxt-link>
+                            <nuxt-link v-else :to="addSlash('/' + template.canonicalName)">
+                                <strong>{{template.name(glue)}}</strong>
+                                –
+                                <small>{{template.description}}</small>
+                            </nuxt-link>
+                            <NormativeBadge v-if="template.normative"/>
+                        </li>
+                    </ul>
+                </li>
+                <nuxt-link to="/" class="list-group-item list-group-item-action text-center">
+                    <Icon v="ellipsis-h-alt"/>
+                </nuxt-link>
+            </ul>
+        </section>
+
         <section>
             <Share :title="`${$t('template.intro')}: ${selectedTemplate.name(glue)}`"/>
         </section>
@@ -65,7 +95,7 @@
 </template>
 
 <script>
-    import { examples, templates, getSources } from "~/src/data";
+    import { examples, templates, getSources, templateLibrary } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
     import { head } from "../src/helpers";
     import GrammarTables from "../data/GrammarTables";
@@ -73,12 +103,14 @@
     export default {
         components: { GrammarTables },
         data() {
+            const selectedTemplate = buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, ''));
             return {
-                examples: examples,
-                templates: templates,
+                examples,
+                templates,
                 glue: ' ' + this.$t('template.or') + ' ',
 
-                selectedTemplate: buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, '')),
+                selectedTemplate,
+                templateGroup: templateLibrary.find(selectedTemplate),
 
                 counter: 0,
             }
@@ -93,6 +125,11 @@
                 title: `${this.$t('template.intro')}: ${this.selectedTemplate.name(this.glue)}`,
                 banner: `banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
+        },
+        methods: {
+            addSlash(link) {
+                return link + (link.substr(link.length - 1) === '*' ? '/' : '');
+            },
         },
         computed: {
             sources() {

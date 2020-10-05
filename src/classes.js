@@ -258,6 +258,17 @@ export class TemplateLibrary {
             }),
         ];
     }
+
+    find(template) {
+        for (let [group, groupTemplates] of this.split()) {
+            for (let t of groupTemplates) {
+                if (t.canonicalName === template.canonicalName) {
+                    return {group, groupTemplates};
+                }
+            }
+        }
+        return null;
+    }
 }
 
 export class Noun {

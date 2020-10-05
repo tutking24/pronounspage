@@ -266,7 +266,7 @@
             },
             addSlash(link) {
                 return link + (link.substr(link.length - 1) === '*' ? '/' : '');
-            }
+            },
         },
     }
 </script>
