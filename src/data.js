@@ -1,6 +1,7 @@
 import { Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person } from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
+import sourcesForMultipleForms from '../data/sourcesMultiple';
 
 export const locales = {
     en: { name: 'English', url: 'https://en.pronouns.page' },
@@ -41,13 +42,6 @@ export const sources = buildDict(function* () {
         ];
     }
 });
-
-// TODO move to locale
-export const sourcesForMultipleForms = {
-    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krem', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1'],
-    'ona&onu': ['liniaOporuMix'],
-    'ono/jego&ono/jej': ['kazmierczak'],
-}
 
 export const getSources = (selectedTemplate) => {
     if (!selectedTemplate) {
