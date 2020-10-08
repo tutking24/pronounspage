@@ -44,7 +44,7 @@ export const sources = buildDict(function* () {
 
 // TODO move to locale
 export const sourcesForMultipleForms = {
-    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1'],
+    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krem', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1'],
     'ona&onu': ['liniaOporuMix'],
     'ono/jego&ono/jej': ['kazmierczak'],
 }
