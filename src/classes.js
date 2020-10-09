@@ -260,6 +260,10 @@ export class TemplateLibrary {
     }
 
     find(template) {
+        if (template === undefined) {
+            return null;
+        }
+
         for (let [group, groupTemplates] of this.split()) {
             for (let t of groupTemplates) {
                 if (t.canonicalName === template.canonicalName) {

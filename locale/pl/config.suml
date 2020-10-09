@@ -171,5 +171,5 @@ contact:
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
                 neutratywy: '/neutratywy'
-                imiona: '/imiona'
+                # imiona: '/imiona'
                 social_media: ~
