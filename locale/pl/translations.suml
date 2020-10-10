@@ -469,7 +469,7 @@ english:
 
 contact:
     header: 'Kontakt'
-    authors: '{Autor}za strony'
+    authors: '{/neutratywy#autor=Autorza} strony'
 
 share: 'Udostępnij'
 

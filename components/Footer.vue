@@ -19,15 +19,12 @@
                     <T>footer.links</T>:
                 </p>
                 <div class="mb-3">
-                    <SquareButton link="https://twitter.com/neutratywy">
-                        <Icon v="twitter" set="b"/>
+                    <SquareButton
+                            v-for="link in [...config.contact.contacts, ...config.links.socials]"
+                            :link="link.url">
+                        <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                     </SquareButton>
-                    <SquareButton link="https://facebook.com/neutratywy">
-                        <Icon v="facebook-f" set="b"/>
-                    </SquareButton>
-                    <SquareButton link="https://instagram.com/neutratywy">
-                        <Icon v="instagram" set="b"/>
-                    </SquareButton>
+                    <br/>
                     <SquareButton link="https://avris.it">
                         <img src="~assets/avris.svg"/>
                     </SquareButton>

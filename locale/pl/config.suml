@@ -94,6 +94,11 @@ links:
             url: 'https://www.facebook.com/queerowymaj/videos/vb.192608494083516/3605197302863422/'
             headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
     socials:
+        #-
+        #    icon: 'twitter'
+        #    iconSet: 'b'
+        #    url: 'https://twitter.com/PronounsPage'
+        #    headline: '@PronounsPage'
         -
             icon: 'twitter'
             iconSet: 'b'
@@ -153,6 +158,11 @@ english:
 contact:
     enabled: true
     route: 'kontakt'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
     authors:
         -
             name: 'Andrea'
