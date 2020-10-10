@@ -20,7 +20,7 @@
                 </p>
                 <div class="mb-3">
                     <SquareButton
-                            v-for="link in [...config.contact.contacts, ...config.links.socials]"
+                            v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
                             :link="link.url">
                         <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                     </SquareButton>
