@@ -25,7 +25,7 @@ names:
 faq:
     enabled: true
     route: 'pytania'
-    questions: ['nonbinary', 'respect', 'asking', 'usage', 'best', 'bio', 'nouns', 'normative', 'group', 'changing', 'own', 'preferred', 'gender', 'grandpa']
+    questions: ['nonbinary', 'respect', 'asking', 'usage', 'best', 'success', 'bio', 'nouns', 'normative', 'group', 'changing', 'own', 'preferred', 'gender', 'grandpa']
 
 links:
     enabled: true
@@ -164,6 +164,7 @@ contact:
             areas:
                 kod: 'https://gitlab.com/Avris/Zaimki'
                 język: ~
+                pytania: '/pytania'
         -
             name: 'Paweł Dembowski'
             pronouns: 'on'

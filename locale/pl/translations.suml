@@ -266,6 +266,20 @@ faq:
                     Rozwój języka jest najczęściej procesem długotrwałym, nie zdarza się z dnia na dzień.
                     Póki co, wszystkie propozycje form kotłują się w kotle codziennego użycia –
                     zapewne kiedyś coś się z niego wyklaruje.
+        success:
+            question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
+            answer:
+                - >
+                    No z takim podejściem to na pewno nie…
+                - >
+                    To samo mówiono kiedyś o „ministrze”, „posłance”, „pedagożce”, „reżyserce”, „gościni”, etc.
+                    Dziś feminatywy są używane coraz częściej, i mało kogo jeszcze dziwią czy bulwersują.
+                    Z neutratywami i niebinarnymi formami językowymi może być podobnie.
+                - >
+                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb jego użytkowników.
+                    Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
+                    jest jedynie narzędziem do porozumiewania się.
+                    Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
         bio:
             question: 'Czemu warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych?'
             answer:
@@ -300,7 +314,7 @@ faq:
                     Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
 
         normative:
-            question: 'Czy można mówić po polsku w posób neutralny płciowo bez tworzenia neogramatyki?'
+            question: 'Czy można mówić po polsku w sposób neutralny płciowo bez tworzenia neogramatyki?'
             answer:
                 - >
                     Do pewnego stopnia tak. Często jednak napotykamy konstrukcje,
@@ -386,7 +400,6 @@ faq:
                     do kształtowania swojego języka ojczystego zgodnie ze swoimi potrzebami,
                     to zastanów się, czy samx walczyłxbyś po tej samej stronie, co dziadek.
 
-# „”
 
 links:
     header: 'Materiały'

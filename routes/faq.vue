@@ -17,6 +17,8 @@
 </template>
 
 <script>
+    import { head } from "../src/helpers";
+
     export default {
         mounted() {
             if (process.client && window.location.hash) {
@@ -32,6 +34,11 @@
                     $el[0].scrollIntoView();
                 }, 1000);
             }
+        },
+        head() {
+            return head({
+                title: this.$t('faq.headerLong'),
+            });
         },
     };
 </script>
