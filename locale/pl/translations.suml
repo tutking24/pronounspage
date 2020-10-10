@@ -75,6 +75,7 @@ sources:
     header: 'Teksty kultury'
     headerLong: 'Przykłady z tekstów kultury'
     headerLonger: 'Niebinarna polszczyzna w tekstach kultury'
+    subheader: 'Korpus językowy niebinarnej polszczyzny'
     toc: 'Pokaż spis treści'
     type:
         All: 'Wszystkie'

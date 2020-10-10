@@ -5,6 +5,10 @@
             <T>sources.headerLonger</T>
         </h2>
 
+        <p v-if="$t('sources.subheader')">
+            <em><T>sources.subheader</T></em>
+        </p>
+
         <section>
             <Share :title="$t('sources.headerLonger')"/>
         </section>
