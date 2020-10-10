@@ -194,3 +194,12 @@ contact:
                 neutratywy: '/neutratywy'
                 # imiona: '/imiona'
                 social_media: ~
+
+support:
+    enabled: true
+    links:
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/AndreAvris'
+            headline: 'PayPal'

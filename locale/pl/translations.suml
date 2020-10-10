@@ -471,6 +471,12 @@ contact:
     header: 'Kontakt'
     authors: '{/neutratywy#autor=Autorza} strony'
 
+support:
+    header: 'Wsparcie'
+    description: >
+        Jeśli chcesz się zrzucić na serwer, domeny, wlepki itp., lub zwyczajnie postawić autorzom piwo,
+        możesz skorzystać z poniższego linku (wspomnij o „zaimki.pl” w opisie transakcji):
+
 share: 'Udostępnij'
 
 crud:
