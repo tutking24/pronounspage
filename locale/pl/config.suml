@@ -22,6 +22,11 @@ names:
     countSex: { M: 'mars', K: 'venus' }
     countOrdinal: { 1: 'pierwsze imię', 2: 'drugie imię' }
 
+faq:
+    enabled: true
+    route: 'pytania'
+    questions: ['nonbinary', 'respect', 'asking', 'usage', 'best', 'bio', 'nouns', 'normative', 'group', 'changing', 'own', 'preferred', 'gender', 'grandpa']
+
 links:
     enabled: true
     route: 'linki'

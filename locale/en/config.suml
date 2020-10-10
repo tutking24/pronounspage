@@ -22,6 +22,11 @@ people:
 english:
     enabled: false
 
+faq:
+    enabled: false
+    route: 'faq'
+    questions: []
+
 links:
     enabled: true
     route: 'links'

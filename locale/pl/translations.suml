@@ -167,6 +167,227 @@ names:
     count: 'Osób w rejestrze PESEL'
     empty: 'Nie znaleziono imion spełniających podane kryterium.'
 
+faq:
+    header: 'FAQ'
+    headerLong: 'Często zadawane pytania'
+    questions:
+        nonbinary:
+            question: 'Czym jest niebinarność?'
+            answer:
+                - >
+                    Płeć jest zdecydowanie bardziej skomplikowaną sprawą niż prosty podział kobieta/mężczyzna.
+                    Nawet pod względem czysto biologicznym wyróżniamy płeć chromosomalną, genetyczną, hormonalną, fenotypową…
+                    Nie zawsze jedna się z drugą zgadza, nie zawsze są one zero-jedynkowe
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(więcej info tutaj)}.
+                    Natomiast pod względem kulturowym „płeć” jest konceptem społecznym.
+                    W zależności od miejsca i czasu bycie „kobietą” i „mężczyzną” może oznaczać radykalnie różne
+                    prawa, obowiązki, zasady… W Europie mężczyźni nosili buty na obcasie i rajtuzy,
+                    rdzenni mieszkańcy Ameryki Północnej od wieków rozróżniają trzecią płeć
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, itd. itd.
+                - >
+                    Niebinarność to zbiorczy termin („umbrella term”) opisujący doświaczenie osób,
+                    które nie wpisują się w binarny podział kobieta/mężczyzna.
+                    Obejmuje na przykład osoby {https://gender.wikia.org/wiki/Agender=agender},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
+                    {https://gender.wikia.org/wiki/Demigirl=demidziewczęta},
+                    {https://gender.wikia.org/wiki/Demiboy=demichłopców},
+                    i {https://gender.wikia.org/wiki/Non-binary=wiele innych tożsamości}.
+                - >
+                    Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
+                    Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
+                    Chodzi o to, by być wolnymi od ról płciowych, a nie tworzyć nowe.
+        respect:
+            question: 'Czemu mam respektować jakieś <em>dziwne</em> formy?'
+            answer:
+                - >
+                    Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
+                    Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+                    A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
+                    Czy to uszanujesz, świadczy wyłącznie o Tobie.
+                - >
+                    Wiele niepolskich imion też brzmi dla polskiego ucha „dziwnie”
+                    – ale zamiast wymyślać ludziom „lepsze” imiona,
+                    po prostu dopytujemy, jak wymówić czy zapisać to, które naprawdę noszą, no nie?
+                - >
+                    „Dziwne formy” to tylko kwestia przyzwyczajenia.
+        asking:
+            question: 'Skąd mam wiedzieć, jak się do kogoś zwracać?'
+            answer:
+                - >
+                    Można po prostu spytać! Tak, to może być trochę niezręczne, ale przestanie być, gdy zaczniemy to częściej robić.
+                    Nie mamy przecież problemu pytać o imię albo o przejście na „ty”, więc czemu wzbraniamy się pytać o zaimki?
+                - >
+                    (Tylko, prosimy, nie pytaj „jesteś chłopakiem czy dziewczyną?”. Takie pytanie implikuje, że są tylko dwie poprawne opcje,
+                    i sugeruje niezdrową ciekawość genitaliami danej osoby. Wystarczy spytać po prostu „jak mam się do ciebie zwracać?”)
+                - >
+                    Warto też normalizować samodzielne podawanie zaimków poprzez przedstawianie się nie tylko imieniem, lecz również zaimkami.
+                    „Hej, jestem Michał, {/on=on/jego}”. To nic trudnego – a dla osób trans i niebinarnych znaczy bardzo wiele.
+                    Jeszcze łatwiej zrobić to online: po prostu wrzucić zaimki (lub link do przykładów z naszej strony) do bio.
+                - >
+                    Język polski, choć przeważnie bardzo problematyczny dla osób niebinarnych, tutaj paradoksalnie ułatwia nam sprawę.
+                    W przeciwieństwie do np. angielskiego, gdzie zgenderyzowanych zaimków używa się mówiąc <em>o kimś</em>,
+                    język polski wymaga określenia się przy mówieniu <em>o sobie</em> lub <em>do kogoś</em>.
+                    Jeśli więc ktoś mówi „zrobiłom”, wiesz i bez pytania, by mówić do niego „zrobiłoś”.
+                - >
+                    Pamiętaj też, że wiele osób może używać innych zaimków i innego imienia w zależności od sytuacji.
+                    Może na przykład nie być wyoutowana przed rodziną czy współpracownikami,
+                    ale wśród przyjaciół czuć się komfortowo używając nieortodoksyjnych form.
+                    Bądź uważnx, obserwuj, spytaj „jak się mam do ciebie zwracać przy szefie?”, itp.
+                - >
+                    Niektórzy podają wiele zestawów zaimków, na przykład „{/on&ona=on/ona}” czy „{/onu&on=onu/on}”.
+                    Oznacza to, że pasują im wszystkie te formy. Najczęściej są one podawane w kolejności od najbardziej lubianej.
+        usage:
+            question: 'Czy ktoś tego w ogóle używa?'
+            answer:
+                - >
+                    Tak! Niemal wszystkie formy, które {/=tu prezentujemy},
+                    zostały nam podesłane przez osoby rzeczywiście ich używające,
+                    albo wzięte z tekstów literatury.
+                    Ewentualnie {/ona/ich=uzupełniłośmy} je jedynie w miejscach, gdzie którejś części brakowało,
+                    próbując zachować spójność całości – na przykład wymyślając formę grzecznościową „szanowne pań”
+                    dla {/ono=formy nijakiej} albo zaimek {/ony=„ony”} dla liczby mnogiej dukaizmów, którego u Dukaja brakowało.
+                - >
+                    Dwie formy liczby mnogiej {/ona/ich=stowrzyłośmy} same,
+                    próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
+                    bez zdawania się na zgenderyzowane rodzaje: męsko- i niemęskoosobowy.
+        best:
+            question: 'Ale dużo tych form… Która jest <em>najlepsza</em>?'
+            answer:
+                - >
+                    Celem projektu nie jest {https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo)=preskryptywizm}.
+                    Nie chcemy narzucać żadnej formy, ani twierdzić, że któraś jest lepsza od innych.
+                - >
+                    Preferujemy podejście {https://pl.wikipedia.org/wiki/Deskryptywizm_(j%C4%99zykoznawstwo)=deskryptywistyczne} –
+                    opisujemy jedynie istniejące już w żywej polszczyźnie (jakkolwiek niszowo) formy,
+                    próbujemy je ustrukturyzować, opisać, uzupełnić, zebrać w jedno miejsce przykłady użycia…
+                - >
+                    Oferujemy przegląd możliwości, ale każdx może samx wybrać, jakie formy najlepiej jex reprezentują.
+                - >
+                    Rozwój języka jest najczęściej procesem długotrwałym, nie zdarza się z dnia na dzień.
+                    Póki co, wszystkie propozycje form kotłują się w kotle codziennego użycia –
+                    zapewne kiedyś coś się z niego wyklaruje.
+        bio:
+            question: 'Czemu warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych?'
+            answer:
+                - >
+                    Jeśli jesteś cis i używasz „{/on=on}” lub „{/ona=ona}”, możesz myśleć, że Twoje zaimki są <em>oczywiste</em>.
+                    I być może tak jest – o ile wymieniasz w profilu swoje (nacechowane płciowo) imię albo w awatarze masz swoje zdjęcie.
+                    Wielu jednak tego nie robi – i ciężko zgadnąć, jak się do nich zwrócić.
+                - >
+                    Przede wszystkim chodzi jednak o co innego: nie każdy używa zaimków, które są dla innych „oczywiste”.
+                    Osoby trans chcą, by zwracano się do nich poprawnie, niezależnie czy są „passing”,
+                    niezależnie czy przeszły już tranzycję (o ile w ogóle chcą ją przechodzić).
+                    Osoby niebinarne często nie wyglądają „niebinarnie”,
+                    a silnie zgenderyzowana polszczyzna nie oferuje domyślnego neutralnego zaimka.
+                - >
+                    I choć jest to dla nas niezmiernie ważne, by zwracano się do nas poprawnie,
+                    publikowanie swoich zaimków niesie też ze sobą spore ryzyko i mocno nas eksponuje.
+                - >
+                    Jeśli umieszczasz swoje zaimki w profilu, choć samx nie masz takiej potrzeby,
+                    to pokazujesz wsparcie dla społeczności trans
+                    i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
+                    {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        nouns:
+            question: 'Czym są neutratywy? Dlaczego warto je tworzyć i ich uzywać?'
+            answer:
+                - >
+                    Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+                    Nazwa została ukuta w analogii do feminatywów
+                    przez {https://twitter.com/VaultAusir=Pawła Dembowskiego}, współautora strony.
+                - >
+                    Dlaczego są potrzebne? Z tych samych powodów co feminatywy!
+                    O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+                    Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+
+        normative:
+            question: 'Czy można mówić po polsku w posób neutralny płciowo bez tworzenia neogramatyki?'
+            answer:
+                - >
+                    Do pewnego stopnia tak. Często jednak napotykamy konstrukcje,
+                    które zmuszają nas albo do wyboru opcji binarnej, albo do tworzenia nowych form.
+                - >
+                    Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
+                    wciąż jednak pomija osoby niebinarne.
+                    Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
+                    (alternatywa dla {/neutratywy=neutratywów})
+                    są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
+                    Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
+                    {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
+                - >
+                    W kwestii zaimków, czasowników i przymiotników, można używać rodzaju nijakiego,
+                    który {https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208=zdaniem Rady Języka Polskiego}
+                    jest poprawny nawet w formach 1. i 2. osoby („byłom”, „zrobiłoś”).
+                    Trzeba jednak zauważyć, że (przynajmniej dopóki nie zostanie znormalizowane inne użycie)
+                    formy te brzmią dla wielu infantylnie.
+                    Używajmy ich więc tylko wobec osób, które wprost sobie tego życzą.
+                - >
+                    W wielu zdaniach da się uniknąć form binarnych,
+                    korzystając ze strony biernej („przypomniało mi się” zamiast „przypomniałem sobie” / „przypomniałam sobie”),
+                    imiesłowów („zrobiwszy”),
+                    bezokolicznikowego czasu przyszłego („będę robić” zamiast „będę robił” / „będę robiła”),
+                    czy też z czasu teraźniejszego lub przyszłego w funkcji czasu przeszłego („idę wczoraj do szkoły i jak się nie potknę!”).
+                    Niestety wymaga to niezłej dozy językowej gimnastyki…
+                - >
+                    Inne przykłady form neutralnych płciowo w codziennej, normatywnej polszczyźnie:
+                    „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
+                    „proszę przyjść do szkoły z {rodzic}em”,
+                    „w urzędzie powiedziano mi, że…”,
+                    „{/oni=dzwonili} z gazowni”…
+        group:
+            question: 'Jak zwracać się do osoby, której płci nie znamy, lub do mieszanej grupy osób?'
+            answer:
+                - >
+                    Wiele form, które {/=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
+                    „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp.
+        changing:
+            question: 'Czy mogę zmienić swoje zaimki?'
+            answer:
+                - >
+                    Jak najbardziej! Nikogo nie dziwi, gdy ktoś zmienia w ciągu życia poglądy, styl, zainteresowania…
+                    Czemu miało by być dziwne, że ktoś odkrył część swojej tożsamości, że przestało mu się podobać jego imię,
+                    że odkrył etykietkę, która świetnie opisuje to, jak od dawna się czuł, itp. itd.?
+        own:
+            question: 'Czy to dziwne, że nie mogę się przyzwyczaić do <em>swoich własnych</em> zaimków?'
+            answer:
+                - >
+                    Ani trochę! Znamy wiele osób, które po latach używania form zgodnych z ich płcią nadaną przy urodzeniu,
+                    zapominają się, gdy używają nowych form. Siła przyzwyczajenia jest silna, zwłaszcza dla osób,
+                    które nie doświadczają mocnej {https://gender.wikia.org/wiki/Dysphoria=dysforii płciowej}.
+                - >
+                    Zaimki ≠ płeć.
+                    Płeć nie zmieni ci się nagle, jeśli czasem powiesz „zrobiłem”, gdy chciałuś powiedzieć „zrobiłum”.
+                    Nie przejmuj się. Eksperymentuj. Sprawdź, z czym czujesz się najlepiej.
+        preferred:
+            question: 'Czemu nie mówić „preferowane zaimki”?'
+            answer:
+                - >
+                    Bo to sugeruje, że czyjeś zaimki to tylko fanaberia.
+                    Jeśli ktoś tylko „preferuje” żeńskie zaimki, to nie obrazi się, jak będę mówić do niego formami męskimi, prawda?
+                    W końcu wygląda jak facet, a mi tak będzie łatwiej!
+                - >
+                    Nie. To są nasze zaimki. Nie żadne „preferowane zaimki”. To nasze imiona, nie „preferowane imiona”.
+                    Jeśli zależy ci na twoich transpłciowych i niebinarnych znajomych i krewnych, zwracaj się do nich poprawnie.
+        gender:
+            question: 'Czemu nie mówić „zaimki płciowe”?'
+            answer:
+                - >
+                    Bo zaimki ≠ płeć. Zaimki to tylko gramatyka.
+                    Osoby niebinarne mogą używać (i w sporej części używają) form binarnych,
+                    niektóre lesbijki ze względów kulturowych i historycznych używają form męskich, itp.
+                - >
+                    Mów po prostu „zaimki”. To prościej i sensowniej.
+        grandpa:
+            question: 'Czy po to mój dziadek walczył na wojnie, by teraz ktoś mówił o sobie „ono”?'
+            answer:
+                - >
+                    Tak.
+                - >
+                    Walczył o wolność. A jeśli myślisz, że wolność ta wcale nie obejmuje wolności Polaków
+                    do kształtowania swojego języka ojczystego zgodnie ze swoimi potrzebami,
+                    to zastanów się, czy samx walczyłxbyś po tej samej stronie, co dziadek.
+
+# „”
+
 links:
     header: 'Materiały'
     headerLong: 'Dodatkowe materiały'

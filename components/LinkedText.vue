@@ -54,7 +54,10 @@
                     isLink = false;
                     continue;
                 } else if (isLink && c === '=') {
-                    linkBuffer = buffer;
+                    if (linkBuffer) {
+                        linkBuffer += '='
+                    }
+                    linkBuffer += buffer;
                     buffer = '';
                     continue;
                 } else if (c === '[') {

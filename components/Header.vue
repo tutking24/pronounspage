@@ -56,6 +56,10 @@
                 links.push({ link: '/' + this.config.names.route, icon: 'signature', text: this.$t('names.header'), textLong: this.$t('names.headerLong') });
             }
 
+            if (this.config.faq.enabled) {
+                links.push({ link: '/' + this.config.faq.route, icon: 'map-marker-question', text: this.$t('faq.header'), textLong: this.$t('faq.headerLong') });
+            }
+
             if (this.config.links.enabled) {
                 links.push({ link: '/' + this.config.links.route, icon: 'bookmark', text: this.$t('links.header'), textLong: this.$t('links.headerLong') });
             }

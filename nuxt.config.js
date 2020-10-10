@@ -104,6 +104,10 @@ export default {
                 routes.push({ path: '/' + config.names.route, component: resolve(__dirname, 'routes/names.vue') });
             }
 
+            if (config.faq.enabled) {
+                routes.push({ path: '/' + config.faq.route, component: resolve(__dirname, 'routes/faq.vue') });
+            }
+
             if (config.links.enabled) {
                 routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
             }
