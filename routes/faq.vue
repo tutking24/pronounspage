@@ -13,6 +13,10 @@
                 </div>
             </details>
         </section>
+
+        <section>
+            <Share :title="$t('faq.headerLong')"/>
+        </section>
     </div>
 </template>
 

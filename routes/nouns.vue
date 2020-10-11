@@ -8,7 +8,7 @@
         <section>
             <T>nouns.intro</T>
 
-            <Share title="Słownik neutratywów"/>
+            <Share :title="$t('nouns.headerLonger')"/>
         </section>
 
         <Separator icon="book-open"/>

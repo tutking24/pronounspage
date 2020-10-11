@@ -3,6 +3,10 @@
         <Links top/>
         <Media/>
         <Socials/>
+
+        <section>
+            <Share :title="$t('links.headerLong')"/>
+        </section>
     </div>
 </template>
 
