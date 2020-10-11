@@ -1,4 +1,4 @@
-import { Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person } from './classes'
+import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person, NounDeclension} from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
 import sourcesForMultipleForms from '../data/sourcesMultiple';
@@ -119,5 +119,12 @@ export const people = buildList(function* () {
             p.pronouns.split(','),
             p.sources ? p.sources.split(',') : [],
         );
+    }
+});
+
+import nounDeclensionTemplatesRaw from '../data/nounDeclension.tsv';
+export const nounDeclensionTemplates = buildList(function* () {
+    for (let d of nounDeclensionTemplatesRaw) {
+        yield new NounDeclension(d);
     }
 });

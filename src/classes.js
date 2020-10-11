@@ -334,6 +334,64 @@ export class NounTemplate {
     }
 }
 
+
+export class NounDeclension {
+    constructor(endings) {
+        this.singular = {}
+        this.plural = {}
+        for (let k in endings) {
+            if (!endings.hasOwnProperty(k)) {
+                continue;
+            }
+            const value = endings[k] ? endings[k].split('/') : null;
+            if (k.endsWith('_pl')) {
+                this.plural[k.substr(0, k.length - 3)] = value;
+            } else {
+                this.singular[k] = value;
+            }
+        }
+    }
+
+    matches(word, plural) {
+        const plurality = plural ? 'plural' : 'singular';
+        const rep = Object.keys(this[plurality])[0];
+        for (let ending of this[plurality][rep] || []) {
+            if (word.endsWith(ending)) {
+                return ending.length;
+            }
+        }
+        return 0;
+    }
+
+    hasSingular() {
+        return Object.values(this.singular).filter(x => x !== null).length > 0;
+    }
+
+    hasPlural() {
+        return Object.values(this.plural).filter(x => x !== null).length > 0;
+    }
+
+    decline(word, plural) {
+        const plurality = plural ? 'plural' : 'singular';
+        const rep = Object.keys(this[plurality])[0];
+        const base = word.substring(0, word.length - this.matches(word, plural));
+        const options = this[plurality];
+
+        return buildDict(function*() {
+            for (let k in options) {
+                if (!options.hasOwnProperty(k)) {
+                    continue;
+                }
+                yield [
+                    k,
+                    options[k].map(o => base + o),
+                ];
+            }
+        });
+    }
+}
+
+
 export class Name {
     constructor(name, origin, meaning, usage, legally, pros, cons, notablePeople, count, links) {
         this.name = name;
