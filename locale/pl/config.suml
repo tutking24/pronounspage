@@ -25,7 +25,7 @@ names:
 faq:
     enabled: true
     route: 'pytania'
-    questions: ['nonbinary', 'respect', 'asking', 'usage', 'best', 'success', 'bio', 'nouns', 'normative', 'group', 'changing', 'own', 'preferred', 'gender', 'grandpa']
+    questions: ['nonbinary', 'respect', 'asking', 'usage', 'best', 'success', 'bio', 'keyboard', 'nouns', 'normative', 'group', 'changing', 'own', 'preferred', 'gender', 'grandpa']
 
 links:
     enabled: true

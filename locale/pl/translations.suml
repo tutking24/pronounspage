@@ -301,6 +301,21 @@ faq:
                     to pokazujesz wsparcie dla społeczności trans
                     i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
                     {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        keyboard:
+            question: 'Ale tych znaków nie ma na klawiaturze!'
+            answer:
+                - >
+                    Znaki {/onæ=„æ”}, {/onø=„ø”} czy „ₐ” mogą być ciekawymi placeholderami dla form neutralnych,
+                    ale niestety nie są bezpośrednio dostępne z klawiatury.
+                    Dla okazjonalnego użycia wystarczy kopiuj-wklej (albo z naszej strony, albo np. z
+                    {https://unicode-table.com/=Unicode Character Table}).
+                    Co jednak, gdy używasz ich częściej?
+                - >
+                    Pod Windowsem możesz ściągnąć {https://www.microsoft.com/en-us/download/details.aspx?id=102134=MSKLC},
+                    którym stworzysz spersonalizowany układ klawiatury.
+                    Pod MacOS możesz wejść w Ustawienia systemu → Klawiatura → Tekst i dodać zasady podmieniania znaków,
+                    lub skorzystać z apliacji {https://folivora.ai/=BetterTouchTool}.
+
         nouns:
             question: 'Czym są neutratywy? Dlaczego warto je tworzyć i ich uzywać?'
             answer:
