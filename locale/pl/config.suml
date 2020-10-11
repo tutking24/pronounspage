@@ -186,8 +186,8 @@ contact:
                 literatura: '/literatura'
         -
             name: 'Zuzanna Sybilla Grzybowska'
-            pronouns: 'on/ona/ono'
-            pronounsLink: '/on&ona&ono'
+            pronouns: 'ono/ona/on'
+            pronounsLink: '/ono&ona&on'
             twitter: 'mykofanes'
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
