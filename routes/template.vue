@@ -40,7 +40,7 @@
         <section v-if="selectedTemplate.history">
             <div class="alert alert-info" v-for="part in selectedTemplate.history.split('@')">
                 <Icon v="info-circle"/>
-                <span v-html="part"></span>
+                <LinkedText :text="part"/>
             </div>
         </section>
 
@@ -99,9 +99,10 @@
     import { buildTemplate } from "../src/buildTemplate";
     import { head } from "../src/helpers";
     import GrammarTables from "../data/templates/GrammarTables";
+    import LinkedText from "../components/LinkedText";
 
     export default {
-        components: { GrammarTables },
+        components: {LinkedText, GrammarTables },
         data() {
             const selectedTemplate = buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, ''));
             return {

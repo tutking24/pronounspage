@@ -20,9 +20,7 @@
                     return h(Icon, {props: { v: buffer}});
                 }
 
-                const bufferNode = buffer.indexOf('<') !== -1
-                    ? [ h('span', {domProps: { innerHTML: buffer }}) ]
-                    : buffer;
+                const bufferNode = [ h('span', {domProps: { innerHTML: buffer }}) ];
 
                 if (!isLink) {
                     return bufferNode;
