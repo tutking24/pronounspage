@@ -11,7 +11,7 @@
             <Share :title="$t('nouns.headerLong')"/>
         </section>
 
-        <Separator icon="book-open"/>
+        <NounsExtra/>
 
         <Loading :value="nounsRaw">
             <section v-if="secret">
@@ -181,8 +181,10 @@
     import { Noun } from "~/src/classes";
     import { buildDict } from "../src/helpers";
     import { head } from "../src/helpers";
+    import NounsExtra from "../data/nouns/NounsExtra.vue";
 
     export default {
+        components: { NounsExtra },
         data() {
             return {
                 filter: '',
