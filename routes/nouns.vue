@@ -64,7 +64,7 @@
                     </thead>
                     <tbody>
                     <template v-if="visibleNouns().length">
-                    <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}">
+                    <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}" :key="noun.id">
                         <td>
                             <ul class="list-singular">
                                 <li v-for="w in noun.masc">{{ w }}</li>
@@ -108,10 +108,14 @@
                         </td>
                         <td>
                             <ul class="list-singular">
-                                <li v-for="w in noun.neutr">{{ w }}</li>
+                                <li v-for="w in noun.neutr">
+                                    <Declension :word="w"/>
+                                </li>
                             </ul>
                             <ul class="list-plural">
-                                <li v-for="w in noun.neutrPl">{{ w }}</li>
+                                <li v-for="w in noun.neutrPl">
+                                    <Declension :word="w" plural :singularOptions="noun.neutr"/>
+                                </li>
                             </ul>
 
                             <small v-if="noun.base && nouns[noun.base]">
@@ -289,7 +293,7 @@
         li {
             white-space: nowrap;
         }
-        li:before {
+        >li:before {
             content: "⋅";
             display: inline-block;
             width: $fa-fw-width;
@@ -302,7 +306,7 @@
         li {
             white-space: nowrap;
         }
-        li:before {
+        >li:before {
             content: "⁖";
             display: inline-block;
             width: $fa-fw-width;
