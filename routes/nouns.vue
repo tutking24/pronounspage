@@ -8,7 +8,7 @@
         <section>
             <T>nouns.intro</T>
 
-            <Share :title="$t('nouns.headerLonger')"/>
+            <Share :title="$t('nouns.headerLong')"/>
         </section>
 
         <Separator icon="book-open"/>

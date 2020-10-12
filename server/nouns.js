@@ -1,5 +1,4 @@
-const sqlite = require('sqlite');
-const sqlite3 = require('sqlite3');
+const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
 import { ulid } from 'ulid'
 
@@ -64,10 +63,7 @@ const isTroll = (body) => {
 }
 
 export default async function (req, res, next) {
-    const db = await sqlite.open({
-        filename: __dirname + '/../data/db.sqlite',
-        driver: sqlite3.Database,
-    });
+    const db = await dbConnection();
 
     const [url, queryString] = req.url.split('?');
     const query = parseQuery(queryString || '');

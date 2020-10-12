@@ -1,5 +1,6 @@
 install:
 	yarn
+	node server/migrate.js
 
 run:
 	yarn dev
@@ -12,6 +13,7 @@ stop:
 
 deploy: install
 	yarn build
+	node server/migrate.js
 
 switch:
 	-rm data

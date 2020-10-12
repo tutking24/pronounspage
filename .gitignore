@@ -1,6 +1,8 @@
 /data
 /locale/*/db.sqlite
 
+/db.sqlite
+
 /daemonise.json
 /daemonise.log
 

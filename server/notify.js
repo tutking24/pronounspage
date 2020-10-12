@@ -1,13 +1,9 @@
-const sqlite = require('sqlite');
-const sqlite3 = require('sqlite3');
+const dbConnection = require('./db');
 const mailer = require('mailer');
 require('dotenv').config({ path:__dirname + '/../.env' });
 
 async function notify() {
-    const db = await sqlite.open({
-        filename: __dirname + '/../data/db.sqlite',
-        driver: sqlite3.Database,
-    });
+    const db = await dbConnection();
 
     const awaitingModeration = (await db.get(`SELECT count(*) as c FROM nouns WHERE approved = 0`)).c;
     if (!awaitingModeration) {
