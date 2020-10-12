@@ -20,21 +20,34 @@
                     return h(Icon, {props: { v: buffer}});
                 }
 
+                const bufferNode = buffer.indexOf('<') !== -1
+                    ? [ h('span', {domProps: { innerHTML: buffer }}) ]
+                    : buffer;
+
                 if (!isLink) {
-                    return buffer.indexOf('<') !== -1
-                        ? h('span', {domProps: { innerHTML: buffer }})
-                        : buffer;
+                    return bufferNode;
                 }
 
-                if (linkBuffer.indexOf('https://') === 0 || linkBuffer.indexOf('http://') === 0 || linkBuffer.indexOf('mailto:') === 0) {
+                if (linkBuffer.indexOf('https://') === 0
+                    || linkBuffer.indexOf('http://') === 0
+                    || linkBuffer.indexOf('mailto:') === 0
+                ) {
                     return h(
                         'a',
                         {domProps: {href: linkBuffer, target: '_blank', rel: 'noopener'}},
-                        buffer,
+                        bufferNode,
                     );
                 }
 
-                return h('nuxt-link', {props: { to: linkBuffer || '/' + this.config.nouns.route + '#' + buffer }}, buffer);
+                if (linkBuffer.indexOf('#') === 0) {
+                    return h(
+                        'a',
+                        {domProps: {href: linkBuffer}},
+                        bufferNode,
+                    );
+                }
+
+                return h('nuxt-link', {props: { to: linkBuffer || '/' + this.config.nouns.route + '#' + buffer }}, bufferNode);
             }
             const addChild = _ => {
                 if (!buffer) {

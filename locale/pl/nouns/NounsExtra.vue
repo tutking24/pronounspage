@@ -2,7 +2,7 @@
     <div>
         <Separator icon="atom-alt"/>
 
-        <h3>
+        <h3 :id="$t('nouns.personNouns.id')">
             <T>nouns.personNouns.header</T>
             <small><NormativeBadge/></small>
         </h3>
@@ -62,7 +62,7 @@
 
         <Separator icon="atom-alt"/>
 
-        <h3>
+        <h3 :id="$t('nouns.dukajNouns.id')">
             <T>nouns.dukajNouns.header</T>
         </h3>
 
@@ -125,7 +125,7 @@
 
         <Separator icon="atom-alt"/>
 
-        <h3>
+        <h3 :id="$t('nouns.neuterNouns.id')">
             <T>nouns.neuterNouns.header</T>
         </h3>
 

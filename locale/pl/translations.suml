@@ -115,11 +115,12 @@ nouns:
 
         - >
             Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
-            <strong>neutratywami</strong>, <strong>dukatywami</strong> i <strong>osobatywami</strong>.
+            {#neutratywy=<strong>neutratywami</strong>}, {#dukatywy=<strong>dukatywami</strong>} i {#osobatywy=<strong>osobatywami</strong>}.
 
     personNouns:
         header: 'Osobatywy'
         label: 'osobatyw'
+        id: 'osobatywy'
         info:
             - >
                 Są to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
@@ -129,6 +130,7 @@ nouns:
     dukajNouns:
         header: 'Dukatywy'
         label: 'dukatyw'
+        id: 'dukatywy'
         info:
             - >
                 Analogicznie do tzw. {/onu=dukaizmów} („zrobiłum”, „poszłuś”)
@@ -144,6 +146,7 @@ nouns:
     neuterNouns:
         header: 'Neutratywy'
         label: 'neutratyw'
+        id: 'neutratywy'
         info:
             - >
                 Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.

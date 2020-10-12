@@ -198,12 +198,21 @@
                     this.nounsRaw = data;
                 });
                 if (window.location.hash) {
-                    this.filter = decodeURIComponent(window.location.hash.substr(1));
-                    this.$refs.filter.focus();
-                    this.$refs.filter.scrollIntoView();
-                    setTimeout(_ => {
-                        this.$refs.filter.scrollIntoView();
-                    }, 1000);
+                    const anchor = decodeURIComponent(window.location.hash.substr(1));
+                    this.$nextTick(_ => {
+                        const $anchor = document.getElementById(anchor);
+                        console.log($anchor);
+                        if ($anchor) {
+                            $anchor.scrollIntoView();
+                        } else {
+                            this.filter = anchor;
+                            this.$refs.filter.focus();
+                            this.$refs.filter.scrollIntoView();
+                            setTimeout(_ => {
+                                this.$refs.filter.scrollIntoView();
+                            }, 1000);
+                        }
+                    })
                 }
             }
         },
