@@ -1,6 +1,7 @@
 import translations from './server/translations';
 import config from './server/config';
 
+const locale = config.locale;
 const title = translations.title;
 const description = translations.description;
 const banner = process.env.BASE_URL + '/banner/zaimki.png';
@@ -48,6 +49,9 @@ export default {
     modules: [
         '@nuxtjs/pwa',
         '@nuxtjs/axios',
+        ['@nuxtjs/redirect-module', {
+            rules: config.redirects,
+        }]
     ],
     pwa: {
         manifest: {
@@ -56,7 +60,7 @@ export default {
             description: description,
             background_color: '#ffffff',
             theme_color: colour,
-            lang: 'pl',
+            lang: locale,
         }
     },
     build: {
@@ -80,7 +84,7 @@ export default {
     env: {
         baseUrl: process.env.BASE_URL,
         secret: process.env.SECRET,
-        lang: process.env.LANG,
+        lang: locale,
     },
     serverMiddleware: {
         '/': bodyParser.json(),

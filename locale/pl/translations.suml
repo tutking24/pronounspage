@@ -88,8 +88,8 @@ sources:
         Other: 'Inne'
 
 nouns:
-    header: 'Neutratywy'
-    headerLong: 'Słownik neutratywów'
+    header: 'Rzeczowniki'
+    headerLong: 'Słownik neutralnych rzeczowników'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
         - >
@@ -346,7 +346,7 @@ faq:
                     Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
                     wciąż jednak pomija osoby niebinarne.
                     Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
-                    (alternatywa dla {/neutratywy=neutratywów})
+                    (alternatywa dla {/rzeczowniki=neutratywów})
                     są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
@@ -481,7 +481,7 @@ english:
             We need to come up with a system that also includes
             neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
             (also: nouns like “painter”, “politician”, “journalist” etc. are also gendered,
-            but that's [atom-alt] {/neutratywy=a story for another time}).
+            but that's [atom-alt] {/rzeczowniki=a story for another time}).
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
@@ -492,7 +492,7 @@ english:
 
 contact:
     header: 'Kontakt'
-    authors: '{/neutratywy#autor=Autorza} strony'
+    authors: '{/rzeczowniki#autor=Autorza} strony'
 
 support:
     header: 'Wsparcie'
