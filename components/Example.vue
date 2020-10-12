@@ -1,6 +1,6 @@
 <template>
     <span>
-        <span v-for="part in example[(example.isHonorific ? template.pluralHonorific : template.plural) ? 'pluralParts' : 'singularParts']">
+        <span v-for="part in example[(example.isHonorific ? template.isPluralHonorific(counter) : template.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
             <strong v-if="part.variable">{{template.getMorpheme(part.str, counter)}}</strong>
             <span v-else>{{part.str}}</span>
         </span>

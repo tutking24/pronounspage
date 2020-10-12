@@ -56,8 +56,8 @@ export const parseTemplates = (templatesRaw) => {
                             yield [morpheme, t[morpheme]];
                         }
                     }),
-                    t.plural,
-                    t.pluralHonorific,
+                    [t.plural],
+                    [t.pluralHonorific],
                     t.sources ? t.sources.split(',') : [],
                     aliases.slice(1),
                     t.history,
