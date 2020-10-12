@@ -122,7 +122,7 @@
                 glue: ' ' + this.$t('template.or') + ' ',
 
                 selectedTemplate,
-                nameOptions: selectedTemplate.nameOptions(),
+                nameOptions: selectedTemplate ? selectedTemplate.nameOptions() : [],
                 templateGroup: templateLibrary.find(selectedTemplate),
 
                 counter: 0,
