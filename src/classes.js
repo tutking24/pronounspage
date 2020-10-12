@@ -1,5 +1,5 @@
 import {buildDict, buildList} from "./helpers";
-import MORPHEMES from '../data/morphemes';
+import MORPHEMES from '../data/templates/morphemes';
 
 export class ExamplePart {
     constructor(variable, str) {

@@ -98,7 +98,7 @@
     import { examples, templates, getSources, templateLibrary } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
     import { head } from "../src/helpers";
-    import GrammarTables from "../data/GrammarTables";
+    import GrammarTables from "../data/templates/GrammarTables";
 
     export default {
         components: { GrammarTables },

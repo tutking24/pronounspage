@@ -1,7 +1,7 @@
 import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person, NounDeclension} from './classes'
 import { buildDict, buildList } from './helpers';
 import { parseTemplates, getTemplate } from './buildTemplate';
-import sourcesForMultipleForms from '../data/sourcesMultiple';
+import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
 
 export const locales = {
     en: { name: 'English', url: 'https://en.pronouns.page' },
@@ -10,10 +10,10 @@ export const locales = {
     nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
 }
 
-import templatesRaw from '../data/templates.tsv';
+import templatesRaw from '../data/templates/templates.tsv';
 export const templates = parseTemplates(templatesRaw);
 
-import examplesRaw from '../data/examples.tsv';
+import examplesRaw from '../data/templates/examples.tsv';
 export const examples = buildList(function* () {
     for (let e of examplesRaw) {
         yield new Example(
@@ -24,7 +24,7 @@ export const examples = buildList(function* () {
     }
 });
 
-import sourcesRaw from '../data/sources.tsv';
+import sourcesRaw from '../data/sources/sources.tsv';
 export const sources = buildDict(function* () {
     for (let s of sourcesRaw) {
         yield [
@@ -65,7 +65,7 @@ export const getSources = (selectedTemplate) => {
     return sources;
 }
 
-import nounTemplatesRaw from '../data/nounTemplates.tsv';
+import nounTemplatesRaw from '../data/nouns/nounTemplates.tsv';
 export const nounTemplates = buildList(function* () {
     for (let t of nounTemplatesRaw) {
         yield new NounTemplate(
@@ -79,7 +79,7 @@ export const nounTemplates = buildList(function* () {
     }
 });
 
-import templateGroupsRaw from '../data/templateGroups.tsv';
+import templateGroupsRaw from '../data/templates/templateGroups.tsv';
 export const templateGroups = buildList(function* () {
     for (let g of templateGroupsRaw) {
         yield new TemplateGroup(
@@ -92,7 +92,7 @@ export const templateGroups = buildList(function* () {
 
 export const templateLibrary = new TemplateLibrary(templateGroups, templates);
 
-import namesRaw from '../data/names.tsv';
+import namesRaw from '../data/names/names.tsv';
 export const names = buildDict(function* () {
     for (let n of namesRaw) {
         yield [n.name, new Name(
@@ -110,7 +110,7 @@ export const names = buildDict(function* () {
     }
 });
 
-import peopleRaw from '../data/people.tsv';
+import peopleRaw from '../data/people/people.tsv';
 export const people = buildList(function* () {
     for (let p of peopleRaw) {
         yield new Person(
@@ -122,7 +122,7 @@ export const people = buildList(function* () {
     }
 });
 
-import nounDeclensionTemplatesRaw from '../data/nounDeclension.tsv';
+import nounDeclensionTemplatesRaw from '../data/nouns/nounDeclension.tsv';
 export const nounDeclensionTemplates = buildList(function* () {
     for (let d of nounDeclensionTemplatesRaw) {
         yield new NounDeclension(d);

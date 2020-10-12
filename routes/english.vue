@@ -28,7 +28,7 @@
 </template>
 
 <script>
-    import EnglishTable from "../data/EnglishTable";
+    import EnglishTable from "../data/templates/EnglishTable";
     import { head } from "../src/helpers";
 
     export default {

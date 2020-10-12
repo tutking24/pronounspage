@@ -189,7 +189,7 @@
     import { examples, templates, getSources, templateLibrary } from "~/src/data";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
-    import MORPHEMES from '../data/morphemes';
+    import MORPHEMES from '../data/templates/morphemes';
 
     export default {
         data() {

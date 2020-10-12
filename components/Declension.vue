@@ -14,7 +14,7 @@
 
 <script>
     import { nounDeclensionTemplates } from "../src/data";
-    import cases from "../data/declension";
+    import cases from "../data/nouns/cases";
 
     export default {
         props: {

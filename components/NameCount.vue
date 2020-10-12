@@ -16,7 +16,7 @@
 </template>
 
 <script>
-    import nameCount from '../data/nameCount/nameCount';
+    import nameCount from '../data/names/nameCount';
 
     export default {
         props: {

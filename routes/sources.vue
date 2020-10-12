@@ -126,7 +126,7 @@
 
 <script>
     import { templates, sources, templateLibrary } from '../src/data'
-    import sourcesForMultipleForms from '../data/sourcesMultiple';
+    import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
     import { Source } from "../src/classes";
     import { head } from "../src/helpers";
 

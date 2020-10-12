@@ -1,7 +1,7 @@
 import { Template } from "./classes";
 import Compressor from "./compressor";
 import { buildDict } from "./helpers";
-import MORPHEMES from '../data/morphemes';
+import MORPHEMES from '../data/templates/morphemes';
 
 export const addAliasesToTemplates = (templates) => {
     const templatesWithAliases = {}
