@@ -147,11 +147,6 @@ export class Template {
     }
 
     merge(other) {
-        if (this.plural !== other.plural || this.pluralHonorific !== other.pluralHonorific) {
-            // Cannot mix plurality
-            return null;
-        }
-
         return new Template(
             this.canonicalName + '&' + other.canonicalName,
             Array.isArray(this.description) ? [...this.description, other.description] : [this.description, other.description],
@@ -159,10 +154,11 @@ export class Template {
             buildDict(function* (that, other) {
                 for (let morpheme of MORPHEMES) {
                     yield [morpheme, (that.morphemes[morpheme] || '') + '&' + (other.morphemes[morpheme] || '')]
+                    //yield [morpheme, buildMorpheme(that.morphemes[morpheme], that.plural) + '&' + buildMorpheme(other.morphemes[morpheme], other.plural)]
                 }
             }, this, other),
-            this.plural,
-            this.pluralHonorific,
+            [...this.plural, ...other.plural],
+            [...this.pluralHonorific, ...other.pluralHonorific],
         );
     }
 
@@ -176,11 +172,19 @@ export class Template {
         return options[counter % options.length]
     }
 
+    isPlural(counter = 0) {
+        return this.plural[counter % this.plural.length]
+    }
+
+    isPluralHonorific(counter = 0) {
+        return this.pluralHonorific[counter % this.pluralHonorific.length]
+    }
+
     toArray() {
         return [
             ...Object.values(this.morphemes).map(s => escape(s)),
-            this.plural ? 1 : 0,
-            this.pluralHonorific ? 1 : 0,
+            this.plural.map(p => p ? 1 : 0).join(''),
+            this.pluralHonorific.map(p => p ? 1 : 0).join(''),
             escape(this.description),
         ];
     }
@@ -209,7 +213,14 @@ export class Template {
             m[MORPHEMES[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(m[MORPHEMES[0]], data[data.length - 1], false, m, parseInt(data[MORPHEMES.length]) === 1, parseInt(data[MORPHEMES.length + 1]) === 1)
+        return new Template(
+            m[MORPHEMES[0]],
+            data[data.length - 1],
+            false,
+            m,
+            data[MORPHEMES.length].split('').map(p => parseInt(p) === 1),
+            data[MORPHEMES.length + 1].split('').map(p => parseInt(p) === 1),
+        )
     }
 }
 
@@ -260,7 +271,7 @@ export class TemplateLibrary {
     }
 
     find(template) {
-        if (template === undefined) {
+        if (!template) {
             return null;
         }
 

@@ -122,7 +122,7 @@
                             <template v-for="isHonorific in [false, true]">
                                 <ul>
                                     <li v-for="example in examples" v-if="example.isHonorific === isHonorific">
-                                <span v-for="part in example[(isHonorific ? selectedTemplate.pluralHonorific : selectedTemplate.plural) ? 'pluralParts' : 'singularParts']">
+                                <span v-for="part in example[(isHonorific ? selectedTemplate.isPluralHonorific() : selectedTemplate.isPlural()) ? 'pluralParts' : 'singularParts']">
                                     <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
                                            :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
                                            :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
@@ -136,11 +136,11 @@
                                 </ul>
                                 <div class="my-3">
                                     <div class="custom-control custom-switch" v-if="isHonorific">
-                                        <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedTemplate.pluralHonorific">
+                                        <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedTemplate.pluralHonorific[0]">
                                         <label class="custom-control-label" for="pluralHonorific"><T>template.plural</T> <Icon v="level-up"/></label>
                                     </div>
                                     <div class="custom-control custom-switch" v-else>
-                                        <input type="checkbox" class="custom-control-input" id="plural" v-model="selectedTemplate.plural">
+                                        <input type="checkbox" class="custom-control-input" id="plural" v-model="selectedTemplate.plural[0]">
                                         <label class="custom-control-label" for="plural"><T>template.plural</T> <Icon v="level-up"/></label>
                                     </div>
                                 </div>

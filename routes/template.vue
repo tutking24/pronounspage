@@ -9,12 +9,24 @@
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong>{{ selectedTemplate.name(glue) }}</strong>
+                    <strong v-if="nameOptions.length === 1">
+                        {{ selectedTemplate.name(glue) }}
+                    </strong>
+                    <template v-else>
+                        <template v-for="(nameOption, i) in nameOptions">
+                            <nuxt-link :to="'/' + addSlash(nameOption)">
+                                <strong>
+                                    {{ nameOption }}
+                                </strong>
+                            </nuxt-link>
+                            <span v-if="i < nameOptions.length - 1">{{ glue }}</span>
+                        </template>
+                    </template>
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedTemplate.description">
                     <em>
                         ({{Array.isArray(selectedTemplate.description)
-                            ? ('Formy wymienne: ' + selectedTemplate.description.join(glue))
+                            ? ($t('template.alt.header') + ': ' + selectedTemplate.description.join(glue))
                             : selectedTemplate.description
                         }})
                     </em>
@@ -111,6 +123,7 @@
                 glue: ' ' + this.$t('template.or') + ' ',
 
                 selectedTemplate,
+                nameOptions: selectedTemplate.nameOptions(),
                 templateGroup: templateLibrary.find(selectedTemplate),
 
                 counter: 0,

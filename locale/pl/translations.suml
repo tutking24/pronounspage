@@ -215,7 +215,7 @@ faq:
     header: 'FAQ'
     headerLong: 'Często zadawane pytania'
     questions:
-        nonbinary:
+        niebinarnosc:
             question: 'Czym jest niebinarność?'
             answer:
                 - >
@@ -240,7 +240,7 @@ faq:
                     Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
                     Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
                     Chodzi o to, by być wolnymi od ról płciowych, a nie tworzyć nowe.
-        respect:
+        czemu-respektowac:
             question: 'Czemu mam respektować jakieś <em>dziwne</em> formy?'
             answer:
                 - >
@@ -254,7 +254,7 @@ faq:
                     po prostu dopytujemy, jak wymówić czy zapisać to, które naprawdę noszą, no nie?
                 - >
                     „Dziwne formy” to tylko kwestia przyzwyczajenia.
-        asking:
+        skad-wiedziec-jak-sie-zwracac:
             question: 'Skąd mam wiedzieć, jak się do kogoś zwracać?'
             answer:
                 - >
@@ -280,7 +280,7 @@ faq:
                 - >
                     Niektórzy podają wiele zestawów zaimków, na przykład „{/on&ona=on/ona}” czy „{/onu&on=onu/on}”.
                     Oznacza to, że pasują im wszystkie te formy. Najczęściej są one podawane w kolejności od najbardziej lubianej.
-        usage:
+        kto-uzywa:
             question: 'Czy ktoś tego w ogóle używa?'
             answer:
                 - >
@@ -294,7 +294,7 @@ faq:
                     Dwie formy liczby mnogiej {/ona/ich=stowrzyłośmy} same,
                     próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
                     bez zdawania się na zgenderyzowane rodzaje: męsko- i niemęskoosobowy.
-        best:
+        najlepsza-forma:
             question: 'Ale dużo tych form… Która jest <em>najlepsza</em>?'
             answer:
                 - >
@@ -310,7 +310,7 @@ faq:
                     Rozwój języka jest najczęściej procesem długotrwałym, nie zdarza się z dnia na dzień.
                     Póki co, wszystkie propozycje form kotłują się w kotle codziennego użycia –
                     zapewne kiedyś coś się z niego wyklaruje.
-        success:
+        to-sie-nie-uda:
             question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
             answer:
                 - >
@@ -345,7 +345,7 @@ faq:
                     to pokazujesz wsparcie dla społeczności trans
                     i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
                     {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
-        keyboard:
+        klawiatura:
             question: 'Ale tych znaków nie ma na klawiaturze!'
             answer:
                 - >
@@ -359,8 +359,7 @@ faq:
                     którym stworzysz spersonalizowany układ klawiatury.
                     Pod MacOS możesz wejść w Ustawienia systemu → Klawiatura → Tekst i dodać zasady podmieniania znaków,
                     lub skorzystać z apliacji {https://folivora.ai/=BetterTouchTool}.
-
-        nouns:
+        neutratywy:
             question: 'Czym są neutratywy? Dlaczego warto je tworzyć i ich uzywać?'
             answer:
                 - >
@@ -379,8 +378,7 @@ faq:
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
-
-        normative:
+        normatywne-opcje:
             question: 'Czy można mówić po polsku w sposób neutralny płciowo bez tworzenia neogramatyki?'
             answer:
                 - >
@@ -414,20 +412,20 @@ faq:
                     „proszę przyjść do szkoły z {rodzic}em”,
                     „w urzędzie powiedziano mi, że…”,
                     „{/oni=dzwonili} z gazowni”…
-        group:
+        grupy:
             question: 'Jak zwracać się do osoby, której płci nie znamy, lub do mieszanej grupy osób?'
             answer:
                 - >
                     Wiele form, które {/=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
                     „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp.
-        changing:
+        zmiana:
             question: 'Czy mogę zmienić swoje zaimki?'
             answer:
                 - >
                     Jak najbardziej! Nikogo nie dziwi, gdy ktoś zmienia w ciągu życia poglądy, styl, zainteresowania…
                     Czemu miało by być dziwne, że ktoś odkrył część swojej tożsamości, że przestało mu się podobać jego imię,
                     że odkrył etykietkę, która świetnie opisuje to, jak od dawna się czuł, itp. itd.?
-        own:
+        wlasne:
             question: 'Czy to dziwne, że nie mogę się przyzwyczaić do <em>swoich własnych</em> zaimków?'
             answer:
                 - >
@@ -438,7 +436,7 @@ faq:
                     Zaimki ≠ płeć.
                     Płeć nie zmieni ci się nagle, jeśli czasem powiesz „zrobiłem”, gdy chciałuś powiedzieć „zrobiłum”.
                     Nie przejmuj się. Eksperymentuj. Sprawdź, z czym czujesz się najlepiej.
-        preferred:
+        preferowane-zaimki:
             question: 'Czemu nie mówić „preferowane zaimki”?'
             answer:
                 - >
@@ -448,7 +446,7 @@ faq:
                 - >
                     Nie. To są nasze zaimki. Nie żadne „preferowane zaimki”. To nasze imiona, nie „preferowane imiona”.
                     Jeśli zależy ci na twoich transpłciowych i niebinarnych znajomych i krewnych, zwracaj się do nich poprawnie.
-        gender:
+        zaimki-plciowe:
             question: 'Czemu nie mówić „zaimki płciowe”?'
             answer:
                 - >
@@ -457,7 +455,7 @@ faq:
                     niektóre lesbijki ze względów kulturowych i historycznych używają form męskich, itp.
                 - >
                     Mów po prostu „zaimki”. To prościej i sensowniej.
-        grandpa:
+        a-moj-dziadek:
             question: 'Czy po to mój dziadek walczył na wojnie, by teraz ktoś mówił o sobie „ono”?'
             answer:
                 - >
