@@ -335,6 +335,25 @@ faq:
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+        neutratywy-brzmia-dziwnie:
+            question: 'Ale nazwy feminatywów i neutratywów brzmią jak…'
+            answer:
+                - >
+                    „Pilotka” jak czapka? „Reżyserka” to pomieszczenie?
+                - >
+                    Ech, tak jakby słowa w rodzaju męskim miały tylko jedno znaczenie.
+                     „Adwokat” to alkohol,
+                    „akademik” to dom studencki,
+                    „bliźniak” – budynek,
+                    „energetyk” – napój,
+                    „grafik” – harmonogram,
+                    „informator” – ulotka dla turystów,
+                    „kosmetyk” – przedmiot,
+                    „miotacz” – ognia,
+                    „pilot” – do telewizora…
+                - >
+                    Tak, niektóre słowa mają więcej niż jedno znaczenie. To nic nowego ani złego.
+                    Od tego mamy kontekst, by wiedzieć, o które znaczenie chodzi.
         normatywne-opcje:
             question: 'Czy można mówić po polsku w sposób neutralny płciowo bez tworzenia neogramatyki?'
             answer:
