@@ -518,6 +518,11 @@ support:
         Jeśli chcesz się zrzucić na serwer, domeny, wlepki itp., lub zwyczajnie postawić autorzom piwo,
         możesz skorzystać z poniższego linku (wspomnij o „zaimki.pl” w opisie transakcji):
 
+user:
+    header: 'Konto'
+    headerLong: 'Twoje konto'
+
+
 share: 'Udostępnij'
 
 crud:

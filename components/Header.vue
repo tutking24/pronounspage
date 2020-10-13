@@ -76,6 +76,10 @@
                 links.push({ link: '/' + this.config.contact.route, icon: 'comment-alt-smile', text: this.$t('contact.header')});
             }
 
+            if (this.config.user.enabled) {
+                links.push({ link: '/' + this.config.user.route, icon: 'user', text: this.$t('user.header'), textLong: this.$t('user.headerLong')});
+            }
+
             return {
                 links,
             };

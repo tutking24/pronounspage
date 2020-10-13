@@ -1,5 +1,6 @@
 import translations from './server/translations';
 import config from './server/config';
+import fs from 'fs';
 
 const title = translations.title;
 const description = translations.description;
@@ -78,17 +79,18 @@ export default {
         },
     },
     env: {
-        baseUrl: process.env.BASE_URL,
-        secret: process.env.SECRET,
-        lang: process.env.LANG,
+        BASE_URL: process.env.BASE_URL,
+        SECRET: process.env.SECRET,
+        PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
     },
     serverMiddleware: {
         '/': bodyParser.json(),
-        '/nouns': '~/server/nouns.js',
         '/banner': '~/server/banner.js',
+        '/api/nouns': '~/server/nouns.js',
+        '/api/user': '~/server/user.js',
     },
     axios: {
-        baseURL: process.env.BASE_URL,
+        baseURL: process.env.BASE_URL + '/api',
     },
     router: {
         extendRoutes(routes, resolve) {
@@ -124,6 +126,9 @@ export default {
                 routes.push({ path: '/' + config.contact.route, component: resolve(__dirname, 'routes/contact.vue') });
             }
 
+            if (config.user.enabled) {
+                routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
+            }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });

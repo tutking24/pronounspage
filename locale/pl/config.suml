@@ -202,3 +202,7 @@ support:
             iconSet: 'b'
             url: 'https://paypal.me/AndreAvris'
             headline: 'PayPal'
+
+user:
+    enabled: true
+    route: 'konto'

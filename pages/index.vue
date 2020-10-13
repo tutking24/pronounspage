@@ -242,14 +242,14 @@
                 if (!this.selectedTemplate.pronoun()) {
                     return null;
                 }
-                return this.addSlash(process.env.baseUrl + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
+                return this.addSlash(process.env.BASE_URL + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
             },
             linkMultiple() {
                 if (!this.multiple.length) {
                     return null;
                 }
 
-                return this.addSlash(process.env.baseUrl + '/' + this.multiple.join('&'));
+                return this.addSlash(process.env.BASE_URL + '/' + this.multiple.join('&'));
             },
             sources() {
                 return getSources(this.selectedTemplate);
