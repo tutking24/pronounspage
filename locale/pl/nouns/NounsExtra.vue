@@ -1,5 +1,20 @@
 <template>
     <div>
+        <div class="btn-group btn-block">
+            <a :href="'#' + $t('nouns.personNouns.id')" class="btn btn-outline-primary">
+                <Icon v="atom-alt"/>
+                <T>nouns.personNouns.header</T>
+            </a>
+            <a :href="'#' + $t('nouns.dukajNouns.id')" class="btn btn-outline-primary">
+                <Icon v="atom-alt"/>
+                <T>nouns.dukajNouns.header</T>
+            </a>
+            <a :href="'#' + $t('nouns.neuterNouns.id')" class="btn btn-outline-primary">
+                <Icon v="atom-alt"/>
+                <T>nouns.neuterNouns.header</T>
+            </a>
+        </div>
+
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.personNouns.id')">
@@ -113,9 +128,12 @@
                             </li>
                         </ul>
                         <ul class="list-plural">
+                            <li><Icon v="question-square"/></li>
+                            <!--
                             <li v-for="w in noun.neutrPl">
                                 <Declension :word="w" plural :singularOptions="noun.neutr" :template="dukajDeclension"/>
                             </li>
+                            -->
                         </ul>
                     </td>
                 </tr>
