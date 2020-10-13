@@ -23,7 +23,7 @@ export default async function (req, res, next) {
     const templateName = decodeURIComponent(req.url.substr(1, req.url.length - 5));
 
     const template = buildTemplate(
-        parseTemplates(loadTsv('templates.tsv')),
+        parseTemplates(loadTsv('templates/templates.tsv')),
         templateName,
     );
 
