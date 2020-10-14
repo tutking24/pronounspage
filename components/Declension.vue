@@ -1,9 +1,9 @@
 <template>
     <span>
-        <template v-if="template">
+        <template v-if="declensionTemplate">
             <a href="#" @click.prevent="visible = !visible">{{ word }}</a>
             <ul v-if="visible" class="list-unstyled small m-2 p-2 border">
-                <li v-for="(declined, c) in template.decline(word, plural)">
+                <li v-for="(declined, c) in declensionTemplate.decline(word, plural)">
                     <strong>{{c}} <small>({{cases[c]}})</small></strong> {{ declined.join(' / ') }}
                 </li>
             </ul>
@@ -20,11 +20,12 @@
         props: {
             word: { required: true },
             plural: { type: Boolean },
-            singularOptions: {  },
+            singularOptions: { },
+            template: { },
         },
         data() {
             return {
-                template: this.findTemplate(),
+                declensionTemplate: this.template || this.findTemplate(),
                 cases,
                 visible: false,
             }

@@ -287,7 +287,7 @@ export class TemplateLibrary {
 }
 
 export class Noun {
-    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id}) {
+    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved = true, base_id = null}) {
         this.id = id;
         this.masc = masc.split('|');
         this.fem = fem.split('|');

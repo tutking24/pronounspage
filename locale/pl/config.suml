@@ -8,11 +8,11 @@ template:
 
 sources:
     enabled: true
-    route: 'literatura'
+    route: 'korpus'
 
 nouns:
     enabled: true
-    route: 'neutratywy'
+    route: 'rzeczowniki'
 
 names:
     enabled: false
@@ -190,7 +190,7 @@ contact:
             twitter: 'mykofanes'
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
-                neutratywy: '/neutratywy'
+                neutratywy: '/rzeczowniki'
                 # imiona: '/imiona'
                 social_media: ~
 
@@ -202,3 +202,7 @@ support:
             iconSet: 'b'
             url: 'https://paypal.me/AndreAvris'
             headline: 'PayPal'
+
+redirects:
+    - { from: '^/neutratywy', to: '/rzeczowniki' }
+    - { from: '^/literatura', to: '/korpus' }
