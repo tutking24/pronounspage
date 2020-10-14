@@ -77,3 +77,5 @@ contact:
 user:
     enabled: true
     route: 'account'
+
+redirects: []

@@ -11,7 +11,7 @@
             <Share :title="$t('nouns.headerLong')"/>
         </section>
 
-        <Separator icon="book-open"/>
+        <NounsExtra/>
 
         <Loading :value="nounsRaw">
             <section v-if="secret">
@@ -181,8 +181,10 @@
     import { Noun } from "~/src/classes";
     import { buildDict } from "../src/helpers";
     import { head } from "../src/helpers";
+    import NounsExtra from "../data/nouns/NounsExtra.vue";
 
     export default {
+        components: { NounsExtra },
         data() {
             return {
                 filter: '',
@@ -196,12 +198,21 @@
                     this.nounsRaw = data;
                 });
                 if (window.location.hash) {
-                    this.filter = decodeURIComponent(window.location.hash.substr(1));
-                    this.$refs.filter.focus();
-                    this.$refs.filter.scrollIntoView();
-                    setTimeout(_ => {
-                        this.$refs.filter.scrollIntoView();
-                    }, 1000);
+                    const anchor = decodeURIComponent(window.location.hash.substr(1));
+                    this.$nextTick(_ => {
+                        const $anchor = document.getElementById(anchor);
+                        console.log($anchor);
+                        if ($anchor) {
+                            $anchor.scrollIntoView();
+                        } else {
+                            this.filter = anchor;
+                            this.$refs.filter.focus();
+                            this.$refs.filter.scrollIntoView();
+                            setTimeout(_ => {
+                                this.$refs.filter.scrollIntoView();
+                            }, 1000);
+                        }
+                    })
                 }
             }
         },

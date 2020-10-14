@@ -88,35 +88,85 @@ sources:
         Other: 'Inne'
 
 nouns:
-    header: 'Neutratywy'
-    headerLong: 'Słownik neutratywów'
+    header: 'Rzeczowniki'
+    headerLong: 'Neutralne i niebinarne rzeczowniki'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
         - >
-            Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów!
+            Rodzaj męski {https://pl.wikipedia.org/wiki/Męska_dominacja_językowa=jest wyraźnie uprzywilejowany}
+            w polskim słownictwie, słowotwórstwie, gramatyce oraz frazeologii.
+            W większości przypadków nazwy zawodów, relacji rodzinnych, itp. są domyślnie męskie,
+            co wpływa negatywnie na reprezentację osób innych płci
+            oraz {https://journals.sagepub.com/doi/10.1177/0261927X12463008=zniekształca nasze postrzeganie świata}.
 
         - >
-            Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
-            z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
+            Wszystkie chyba wiemy, czym są {https://pl.wikipedia.org/wiki/Feminatywum=feminatywy}.
+            Mimo oporów niektórych środowisk, powoli przyjmują się one w codziennej polszczyźnie.
+            „Reżyserka”, „prawniczka”, „psycholożka” czy nawet „gościni” już coraz mniej nas dziwią.
+            I bardzo dobrze!
 
         - >
-            <strong>Czym są neutratywy?</strong>
-            Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+            Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
+            Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
+            Jeśli używają {/ono=rodzaju nijakiego}, {/onu=dukaizmów} czy {/=innych nienormatywnych form},
+            to które formy rzeczowników pasują do nich gramatycznie?
+            Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
+            Jak opisywać grupy mieszane?
 
         - >
-            <strong>Dlaczego warto tworzyć neutratywy?</strong>
-            Z tych samych powodów co feminatywy!
-            O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
-            Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+            Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
+            {#neutratywy=<strong>neutratywami</strong>} (formy nijakie),
+            {#dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
+            i {#osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
 
-        - >
-            Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
-            choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
-            Coraz więcej osób używa w odniesieniu do siebie
-            {/ono=rodzaju nijakiego} i {/=innych form}.
-            Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
-            gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
-            Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+    personNouns:
+        header: 'Osobatywy'
+        label: 'osobatyw'
+        id: 'osobatywy'
+        info:
+            - >
+                Są to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
+                Zupełnie nie wskazują na płeć, są więc idealne do opisu grup czy też pojedyńczych osób, których płci nie znamy.
+                Są normatywne i łatwe do odmiany.
+
+    dukajNouns:
+        header: 'Dukatywy'
+        label: 'dukatyw'
+        id: 'dukatywy'
+        info:
+            - >
+                Analogicznie do tzw. {/onu=dukaizmów} („zrobiłum”, „poszłuś”)
+                można też tworzyć dukajowe rzeczowniki.
+            - >
+                Formy te zostały stworzone przez {https://pl.wikipedia.org/wiki/Jacek_Dukaj=Jacka Dukaja}
+                do książki {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjna niedoskonałość”},
+                gdzie używają jej istoty post-ludzkie (phoebe), które nie mają określonej płci.
+            - >
+                Dukatywy pasują gramatycznie do {/onu=dukaizmów}, np. „moju pięknu partneru przyszłu do domu”.
+                Odmiana jest prosta, wg podanego niżej schematu.
+            - >
+                Niestety, Dukaj nie używa postpłciowych rzeczowników w liczbie mnogiej
+                (poza np. odmienianym męskoosobowo „phoebe'wie”).
+                Jeśli masz propozycje, jak odmieniać dukatywy w liczbie mnogiej, daj nam znać.
+
+    neuterNouns:
+        header: 'Neutratywy'
+        label: 'neutratyw'
+        id: 'neutratywy'
+        info:
+            - >
+                Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.
+                Używają obecnych w normatywnej polszczyźnie końcówek nijakich,
+                takich jak „-rze”, „-cze”, „-o”, czy zapożyczonej z łaciny „-um”.
+            - >
+                Formy te pasują gramatycznie do {/ono=form nijakich}, np. „moje piękne partnerze przyszło do domu”.
+            - >
+                Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
+                z wyszczególnieniem ich formy męskiej, żeńskiej i nijakiej.
+                Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
+
+
+    examples: 'Przykłady'
 
     approved: 'wpisów zatwierdzonych'
     pending: 'oczekuje na moderację'
@@ -325,7 +375,7 @@ faq:
                     przez {https://twitter.com/VaultAusir=Pawła Dembowskiego}, współautora strony.
                 - >
                     Dlaczego są potrzebne? Z tych samych powodów co feminatywy!
-                    O ile łatwiej byłoby, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+                    O ile łatwiej było by, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
                     Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
                 - >
                     Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
@@ -335,6 +385,16 @@ faq:
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+        neutratywy-a-neutralne:
+            question: 'Czym się różnią neutratywy od terminów neutralnych płciowo?'
+            answer:
+                - >
+                    Neutratyw to słowo najczęściej w rodzaju nijakim analogiczne do feminatywu,
+                    powstałe, by określić osobę używającą rodzaju nijakiego.
+                    Natomiast termin neutralny płciowo w ogóle nie wskazuje na płeć.
+                - >
+                    Przykładowo: „{studencie}” to neutratyw,
+                    natomiast „osoba studencka/studiująca” to termin neutralny płciowo.
         neutratywy-brzmia-dziwnie:
             question: 'Ale nazwy feminatywów i neutratywów brzmią jak…'
             answer:
@@ -364,7 +424,7 @@ faq:
                     Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
                     wciąż jednak pomija osoby niebinarne.
                     Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
-                    (alternatywa dla {/neutratywy=neutratywów})
+                    (alternatywa dla {/rzeczowniki=neutratywów})
                     są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
@@ -499,7 +559,7 @@ english:
             We need to come up with a system that also includes
             neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
             (also: nouns like “painter”, “politician”, “journalist” etc. are also gendered,
-            but that's [atom-alt] {/neutratywy=a story for another time}).
+            but that's [atom-alt] {/rzeczowniki=a story for another time}).
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
@@ -510,7 +570,7 @@ english:
 
 contact:
     header: 'Kontakt'
-    authors: '{/neutratywy#autor=Autorza} strony'
+    authors: '{/rzeczowniki#autor=Autorza} strony'
 
 support:
     header: 'Wsparcie'
