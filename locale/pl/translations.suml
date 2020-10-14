@@ -521,6 +521,21 @@ support:
 user:
     header: 'Konto'
     headerLong: 'Twoje konto'
+    tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
+    login:
+        placeholder: 'Email (lub nazwa użytkownika, jeśli już posiadasz konto)'
+        action: 'Zaloguj'
+        emailSent: 'Na adres <strong>%email%</strong> wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
+        userNotFound: 'Użytkownik nie został znaleziony.'
+        email:
+            subject: 'Twój kod logowania to %code%'
+            content: |
+                Aby potwierdzić swój adres email, użyj kodu: %code%.
+
+                Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+    code:
+        action: 'Sprawdź'
+        invalid: 'Kod nieprawidłowy.'
 
 
 share: 'Udostępnij'

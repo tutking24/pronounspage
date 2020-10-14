@@ -2,14 +2,61 @@
     <div class="container">
         <h2>
             <Icon v="user"/>
-            <T>user.header</T>
+            <T>user.headerLong</T>
         </h2>
+
+        <div v-if="error" class="alert alert-danger">
+            <p class="mb-0">
+                <Icon v="exclamation-triangle"/>
+                <T>{{error}}</T>
+            </p>
+        </div>
+
+        <div v-if="payload && payload.authenticated">
+            Logged in as <strong>{{payload.uid}}</strong>.
+        </div>
+        <div v-else-if="token === null">
+            <form @submit.prevent="login">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" v-model="usernameOrEmail"
+                           :placeholder="$t('user.login.placeholder')" autofocus required/>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">
+                            <Icon v="sign-in"/>
+                            <T>user.login.action</T>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div v-else-if="payload && !payload.code">
+            <div class="alert alert-success">
+                <p class="mb-0">
+                    <Icon v="envelope-open-text"/>
+                    <T :params="{email: payload.email}">user.login.emailSent</T>
+                </p>
+            </div>
+
+            <form @submit.prevent="validate">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control text-center" v-model="code"
+                           placeholder="000000" autofocus required minlength="0" maxlength="6"
+                           inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                    />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">
+                            <Icon v="key"/>
+                            <T>user.code.action</T>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
         <div v-if="token">
             <pre><code>{{JSON.stringify(token)}}</code></pre>
             <pre>{{JSON.stringify(payload, null, 4)}}</pre>
         </div>
-        <button v-else class="btn btn-primary" @click="login">Zaloguj</button>
     </div>
 </template>
 
@@ -21,7 +68,11 @@
         data() {
             return {
                 token: null,
-            }
+                usernameOrEmail: '',
+                code: '',
+
+                error: '',
+            };
         },
         computed: {
             payload() {
@@ -38,8 +89,33 @@
         },
         methods: {
             async login() {
-                this.token = await this.$axios.$post(`/user`);
+                await this.post(`/user/init`, {
+                    usernameOrEmail: this.usernameOrEmail
+                });
             },
+            async validate() {
+                await this.post(`/user/validate`, {
+                    code: this.code
+                }, {
+                    headers: {
+                        authorization: 'Bearer ' + this.token,
+                    },
+                });
+            },
+            async post(url, data, options = {}) {
+                this.error = '';
+
+                const response = await this.$axios.$post(url, data, options);
+
+                if (response.error) {
+                    this.error = response.error;
+                    this.usernameOrEmail = '';
+                    this.code = '';
+                    return;
+                }
+
+                this.token = response.token;
+            }
         },
         head() {
             return head({

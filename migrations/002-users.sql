@@ -10,7 +10,7 @@ CREATE TABLE users (
 
 CREATE TABLE authenticators (
     id TEXT NOT NULL PRIMARY KEY,
-    userId TEXT NOT NULL,
+    userId TEXT,
     type TEXT NOT NULL,
     payload TEXT NOT NULL,
     validUntil INTEGER,
