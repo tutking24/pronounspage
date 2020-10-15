@@ -132,6 +132,8 @@ const issueAuthentication = async (db, user) => {
             roles: 'user',
             avatarSource: null,
         }
+        await db.get(SQL`INSERT INTO users(id, username, email, roles, avatarSource)
+            VALUES (${dbUser.id}, ${dbUser.username}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
     }
 
     return {

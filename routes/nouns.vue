@@ -200,7 +200,6 @@
                     const anchor = decodeURIComponent(window.location.hash.substr(1));
                     this.$nextTick(_ => {
                         const $anchor = document.getElementById(anchor);
-                        console.log($anchor);
                         if ($anchor) {
                             $anchor.scrollIntoView();
                         } else {
