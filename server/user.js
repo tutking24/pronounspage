@@ -11,6 +11,8 @@ const now = Math.floor(Date.now() / 1000);
 
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
+const normalise = s => s.trim().toLowerCase();
+
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
@@ -56,9 +58,9 @@ const init = async (db, usernameOrEmail) => {
     }
 
     if (isEmail) {
-        user = await db.get(SQL`SELECT * FROM users WHERE email = ${usernameOrEmail}`);
+        user = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(usernameOrEmail)}`);
     } else {
-        user = await db.get(SQL`SELECT * FROM users WHERE username = ${usernameOrEmail}`);
+        user = await db.get(SQL`SELECT * FROM users WHERE lower(trim(username)) = ${normalise(usernameOrEmail)}`);
     }
 
     if (!user && !isEmail) {
@@ -67,7 +69,7 @@ const init = async (db, usernameOrEmail) => {
 
     const payload = {
         username: isEmail ? (user ? user.username : null) : usernameOrEmail,
-        email: isEmail ? usernameOrEmail : user.email,
+        email: isEmail ? normalise(usernameOrEmail) : user.email,
         code: isTest ? '999999' : makeId(6, '0123456789'),
     }
 
@@ -96,7 +98,7 @@ const validate = async (db, user, code) => {
         return {error: 'user.tokenExpired'};
     }
 
-    if (authenticator.payload.code !== code) {
+    if (authenticator.payload.code !== normalise(code)) {
         return {error: 'user.code.invalid'};
     }
 
@@ -114,7 +116,7 @@ const defaultUsername = async (db, email) => {
     let c = 0;
     while (true) {
         let proposal = base + (c || '');
-        let dbUser = await db.get(SQL`SELECT id FROM users WHERE username = ${proposal}`);
+        let dbUser = await db.get(SQL`SELECT id FROM users WHERE lower(trim(username)) = ${normalise(proposal)}`);
         if (!dbUser) {
             return proposal;
         }
@@ -123,12 +125,12 @@ const defaultUsername = async (db, email) => {
 }
 
 const issueAuthentication = async (db, user) => {
-    let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${user.email}`);
+    let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`);
     if (!dbUser) {
         dbUser = {
             id: ulid(),
             username: await defaultUsername(db, user.email),
-            email: user.email,
+            email: normalise(user.email),
             roles: 'user',
             avatarSource: null,
         }
@@ -149,12 +151,12 @@ const changeUsername = async (db, user, username) => {
         return { error: 'user.account.changeUsername.invalid' }
     }
 
-    const dbUser = await db.get(SQL`SELECT * FROM users WHERE username = ${username}`);
+    const dbUser = await db.get(SQL`SELECT * FROM users WHERE lower(trim(username)) = ${normalise(username)}`);
     if (dbUser) {
         return { error: 'user.account.changeUsername.taken' }
     }
 
-    await db.get(SQL`UPDATE users SET username = ${username} WHERE email = ${user.email}`);
+    await db.get(SQL`UPDATE users SET username = ${username} WHERE email = ${normalise(user.email)}`);
 
     return await issueAuthentication(db, user);
 }
