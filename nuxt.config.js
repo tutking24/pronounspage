@@ -53,7 +53,8 @@ export default {
         '@nuxtjs/axios',
         ['@nuxtjs/redirect-module', {
             rules: config.redirects,
-        }]
+        }],
+        'cookie-universal-nuxt',
     ],
     pwa: {
         manifest: {

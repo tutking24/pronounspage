@@ -83,6 +83,7 @@
                 }
 
                 this.$store.commit('setToken', this.token);
+                this.$cookies.set('token', this.$store.state.token);
 
                 return jwt.verify(this.token, process.env.PUBLIC_KEY, {
                     algorithm: 'RS256',
@@ -124,6 +125,7 @@
             logout() {
                 this.token = null;
                 this.$store.commit('setToken', null);
+                this.$cookies.removeAll();
             }
         },
         head() {

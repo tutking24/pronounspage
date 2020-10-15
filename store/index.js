@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken';
-import { Session } from '../src/helpers';
 
 export const state = () => ({
     token: null,
@@ -11,25 +10,27 @@ export const mutations = {
         if (!token) {
             state.token = null;
             state.user = null;
-            Session.remove('token');
             return;
         }
 
-        const user = jwt.verify(token, process.env.PUBLIC_KEY, {
-            algorithm: 'RS256',
-            audience: process.env.BASE_URL,
-            issuer: process.env.BASE_URL,
-        });
+        let user;
+        try {
+            user = jwt.verify(token, process.env.PUBLIC_KEY, {
+                algorithm: 'RS256',
+                audience: process.env.BASE_URL,
+                issuer: process.env.BASE_URL,
+            });
+        } catch {
+            user = null;
+        }
 
         if (user && user.authenticated) {
             state.token = token;
             state.user = user;
-            Session.set('token', token);
             return;
         }
 
         state.token = null;
         state.user = null;
-        Session.remove('token');
     }
 }
