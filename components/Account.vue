@@ -20,7 +20,7 @@
             <p>{{ email }}</p>
         </div>
 
-        <p v-if="$user().roles === 'admin'">
+        <p v-if="$admin()">
             <span class="badge badge-primary"><T>user.account.admin</T></span>
         </p>
 
@@ -45,9 +45,7 @@
             async changeUsername() {
                 await this.post(`/user/change-username`, {
                     username: this.username
-                }, {
-                    headers: {...this.$auth()},
-                });
+                }, { headers: this.$auth() });
             },
             async post(url, data, options = {}) {
                 this.error = '';

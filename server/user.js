@@ -5,18 +5,11 @@ const SQL = require('sql-template-strings');
 import { ulid } from 'ulid';
 import translations from "./translations";
 const mailer = require('./mailer');
+import authenticate from './authenticate';
 
 const now = Math.floor(Date.now() / 1000);
 
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
-
-const getUser = (authorization) => {
-    if (!authorization || !authorization.startsWith('Bearer ')) {
-        return null;
-    }
-
-    return jwt.validate(authorization.substring(7));
-}
 
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
@@ -109,7 +102,7 @@ const validate = async (db, user, code) => {
 
     await invalidateAuthenticator(db, authenticator);
 
-    return await authenticate(db, user);
+    return await issueAuthentication(db, user);
 }
 
 const defaultUsername = async (db, email) => {
@@ -129,7 +122,7 @@ const defaultUsername = async (db, email) => {
     }
 }
 
-const authenticate = async (db, user) => {
+const issueAuthentication = async (db, user) => {
     let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${user.email}`);
     if (!dbUser) {
         dbUser = {
@@ -161,15 +154,14 @@ const changeUsername = async (db, user, username) => {
 
     await db.get(SQL`UPDATE users SET username = ${username} WHERE email = ${user.email}`);
 
-    return await authenticate(db, user);
+    return await issueAuthentication(db, user);
 }
 
 export default async function (req, res, next) {
     const db = await dbConnection();
+    const user = authenticate(req);
 
     let result = {error: 'notfound'}
-
-    const user = getUser(req.headers.authorization);
 
     if (req.method === 'POST' && req.url === '/init' && req.body.usernameOrEmail) {
         result = await init(db, req.body.usernameOrEmail)

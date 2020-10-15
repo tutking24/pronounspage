@@ -86,7 +86,6 @@ export default {
     },
     env: {
         BASE_URL: process.env.BASE_URL,
-        SECRET: process.env.SECRET,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
     },
     serverMiddleware: {
