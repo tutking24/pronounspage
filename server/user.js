@@ -53,6 +53,12 @@ const init = async (db, usernameOrEmail) => {
     let user = undefined;
 
     const isEmail = usernameOrEmail.indexOf('@') > -1;
+    let isTest = false;
+
+    if (process.env.NODE_ENV === 'development' && usernameOrEmail.endsWith('+')) {
+        isTest = true;
+        usernameOrEmail = usernameOrEmail.substring(0, usernameOrEmail.length - 1);
+    }
 
     if (isEmail) {
         user = await db.get(SQL`SELECT * FROM users WHERE email = ${usernameOrEmail}`);
@@ -67,16 +73,18 @@ const init = async (db, usernameOrEmail) => {
     const payload = {
         username: isEmail ? (user ? user.username : null) : usernameOrEmail,
         email: isEmail ? usernameOrEmail : user.email,
-        code: makeId(6, '0123456789'),
+        code: isTest ? '999999' : makeId(6, '0123456789'),
     }
 
     const codeKey = await saveAuthenticator(db, 'email', user, payload, 15);
 
-    mailer(
-        payload.email,
-        `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
-        translations.user.login.email.content.replace('%code%', payload.code),
-    )
+    if (!isTest) {
+        mailer(
+            payload.email,
+            `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
+            translations.user.login.email.content.replace('%code%', payload.code),
+        )
+    }
 
     return {
         token: jwt.sign({...payload, code: null, codeKey}, '15m'),
@@ -103,6 +111,7 @@ const validate = async (db, user, code) => {
 const defaultUsername = async (db, email) => {
     const base = email.substring(0, email.indexOf('@'))
         .padEnd(4, '0')
+        .substring(0, 12)
         .replace(/[^A-Za-z0-9._-]/g, '_');
 
     let c = 0;
