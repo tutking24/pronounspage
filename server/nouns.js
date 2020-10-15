@@ -1,6 +1,7 @@
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
 import { ulid } from 'ulid'
+import authenticate from './authenticate';
 
 const parseQuery = (queryString) => {
     const query = {};
@@ -64,20 +65,17 @@ const isTroll = (body) => {
 
 export default async function (req, res, next) {
     const db = await dbConnection();
-
-    const [url, queryString] = req.url.split('?');
-    const query = parseQuery(queryString || '');
-
-    const isAdmin = query['secret'] === process.env.SECRET;
+    const user = authenticate(req);
+    const isAdmin = user && user.authenticated && user.roles === 'admin';
 
     let result = {error: 'Not found'}
-    if (req.method === 'GET' && url === '/all') {
+    if (req.method === 'GET' && req.url === '/all') {
         result = await db.all(`
             SELECT * FROM nouns
             ${isAdmin ? '' : 'WHERE approved = 1'}
             ORDER BY approved, masc
         `);
-    } else if (req.method === 'POST' && url === '/submit') {
+    } else if (req.method === 'POST' && req.url === '/submit') {
         if (isAdmin || !isTroll(req.body.data)) {
             const id = ulid()
             await db.get(SQL`
@@ -94,14 +92,14 @@ export default async function (req, res, next) {
             }
         }
         result = 'ok';
-    } else if (req.method === 'POST' && url.startsWith('/approve/') && isAdmin) {
-        await approve(db, getId(url));
+    } else if (req.method === 'POST' && req.url.startsWith('/approve/') && isAdmin) {
+        await approve(db, getId(req.url));
         result = 'ok';
-    } else if (req.method === 'POST' && url.startsWith('/hide/') && isAdmin) {
-        await hide(db, getId(url));
+    } else if (req.method === 'POST' && req.url.startsWith('/hide/') && isAdmin) {
+        await hide(db, getId(req.url));
         result = 'ok';
-    } else if (req.method === 'POST' && url.startsWith('/remove/') && isAdmin) {
-        await remove(db, getId(url));
+    } else if (req.method === 'POST' && req.url.startsWith('/remove/') && isAdmin) {
+        await remove(db, getId(req.url));
         result = 'ok';
     }
 

@@ -4,26 +4,19 @@
 
 ```bash
 # install dependencies
-$ yarn install
+$ make install
 
 # configure environment
-$ cp .env.dist .env
 $ nano .env
 $ make switch LANG=pl
-$ node server/initDb.js
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ make run
 
 # build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+$ make deploy
+$ nuxt start
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## Copyright
  

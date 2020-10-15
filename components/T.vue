@@ -13,9 +13,12 @@
     import t from '../src/translator';
 
     export default {
+        props: {
+            params: {},
+        },
         data() {
             return {
-                txt: t(this.$slots.default[0].text),
+                txt: t(this.$slots.default[0].text, this.params || {}),
             }
         },
     }

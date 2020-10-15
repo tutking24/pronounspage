@@ -203,6 +203,10 @@ support:
             url: 'https://paypal.me/AndreAvris'
             headline: 'PayPal'
 
+user:
+    enabled: true
+    route: 'konto'
+
 redirects:
     - { from: '^/neutratywy', to: '/rzeczowniki' }
     - { from: '^/literatura', to: '/korpus' }

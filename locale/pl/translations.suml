@@ -578,6 +578,36 @@ support:
         Jeśli chcesz się zrzucić na serwer, domeny, wlepki itp., lub zwyczajnie postawić autorzom piwo,
         możesz skorzystać z poniższego linku (wspomnij o „zaimki.pl” w opisie transakcji):
 
+user:
+    header: 'Konto'
+    headerLong: 'Twoje konto'
+    tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
+    login:
+        placeholder: 'Email (lub nazwa użytkownika, jeśli już posiadasz konto)'
+        action: 'Zaloguj'
+        emailSent: 'Na adres <strong>%email%</strong> wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
+        userNotFound: 'Użytkownik nie został znaleziony.'
+        email:
+            subject: 'Twój kod logowania to %code%'
+            content: |
+                Aby potwierdzić swój adres email, użyj kodu: %code%.
+
+                Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+    code:
+        action: 'Sprawdź'
+        invalid: 'Kod nieprawidłowy.'
+    account:
+        changeUsername:
+            header: 'Nazwa użytkownika'
+            action: 'Zmień'
+            invalid: 'Nazwa użytkownika musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
+            taken: 'Ta nazwa użytkownika jest zajęta.'
+        changeEmail:
+            header: 'Adres email'
+            action: 'Zmień'
+        admin: 'Adminię'
+    logout: 'Wyloguj'
+
 share: 'Udostępnij'
 
 crud:

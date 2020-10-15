@@ -14,7 +14,7 @@
         <NounsExtra/>
 
         <Loading :value="nounsRaw">
-            <section v-if="secret">
+            <section v-if="$admin()">
                 <div class="alert alert-info">
                     <strong>{{ nounsCountApproved() }}</strong> <T>nouns.approved</T>,
                     <strong>{{ nounsCountPending() }}</strong> <T>nouns.pending</T>.
@@ -44,7 +44,7 @@
             </section>
 
             <section class="table-responsive">
-                <table :class="'table table-striped table-hover table-fixed-' + (secret ? 4 : 3)">
+                <table :class="'table table-striped table-hover table-fixed-' + ($admin() ? 4 : 3)">
                     <thead>
                     <tr>
                         <th class="text-nowrap">
@@ -59,7 +59,7 @@
                             <Icon v="neuter"/>
                             <T>nouns.neuter</T>
                         </th>
-                        <th v-if="secret"></th>
+                        <th v-if="$admin()"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -83,7 +83,7 @@
                                 </ul>
                             </small>
 
-                            <button v-if="!secret" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
+                            <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
                                 <Icon v="pen"/>
                                 <T>nouns.edit</T>
                             </button>
@@ -128,7 +128,7 @@
                                 </ul>
                             </small>
                         </td>
-                        <td v-if="secret">
+                        <td v-if="$admin()">
                             <ul class="list-unstyled">
                                 <li v-if="!noun.approved">
                                     <button class="btn btn-success btn-sm m-1" @click="approve(noun)">
@@ -160,7 +160,7 @@
                     </template>
                     <template v-else>
                         <tr>
-                            <td :colspan="secret ? 4 : 3" class="text-center">
+                            <td :colspan="$admin() ? 4 : 3" class="text-center">
                                 <Icon v="search"/>
                                 <T>nouns.empty</T>
                             </td>
@@ -173,7 +173,7 @@
 
         <Separator icon="plus"/>
 
-        <NounSubmitForm ref="form" :secret="secret"/>
+        <NounSubmitForm ref="form"/>
     </div>
 </template>
 
@@ -189,12 +189,11 @@
             return {
                 filter: '',
                 nounsRaw: undefined,
-                secret: this.$route.query.secret,
             }
         },
         mounted() {
             if (process.client) {
-                this.$axios.$get(`/nouns/all?secret=${this.$route.query.secret || ''}`).then(data => {
+                this.$axios.$get(`/nouns/all`, { headers: this.$auth() }).then(data => {
                     this.nounsRaw = data;
                 });
                 if (window.location.hash) {
@@ -221,7 +220,7 @@
                 this.$refs.form.edit(noun);
             },
             async approve(noun) {
-                await this.$axios.$post(`/nouns/approve/${noun.id}?secret=${this.secret || ''}`);
+                await this.$axios.$post(`/nouns/approve/${noun.id}`, {}, { headers: this.$auth() });
                 if (noun.base) {
                     delete this.nouns[noun.base];
                 }
@@ -230,7 +229,7 @@
                 this.$forceUpdate();
             },
             async hide(noun) {
-                await this.$axios.$post(`/nouns/hide/${noun.id}?secret=${this.secret || ''}`);
+                await this.$axios.$post(`/nouns/hide/${noun.id}`, {}, { headers: this.$auth() });
                 noun.approved = false;
                 this.$forceUpdate();
             },
@@ -238,7 +237,7 @@
                 if (!confirm('Czy na pewno usunąć ten wpis?')) {
                     return false;
                 }
-                await this.$axios.$post(`/nouns/remove/${noun.id}?secret=${this.secret || ''}`);
+                await this.$axios.$post(`/nouns/remove/${noun.id}`, {}, { headers: this.$auth() });
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },

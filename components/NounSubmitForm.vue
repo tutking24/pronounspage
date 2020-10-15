@@ -32,7 +32,7 @@
                             <span class="d-none d-md-inline"><T>nouns.neuter</T></span>
                             <span class="d-md-none"><T>nouns.neuterShort</T></span>
                         </th>
-                        <th v-if="secret"></th>
+                        <th v-if="$admin()"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -118,9 +118,6 @@
     import { nounTemplates } from '../src/data';
 
     export default {
-        props: {
-            secret: {},
-        },
         data() {
             return {
                 form: {
@@ -142,9 +139,9 @@
         methods: {
             async submit(event) {
                 this.submitting = true;
-                await this.$axios.$post(`/nouns/submit?secret=${this.secret}`, {
+                await this.$axios.$post(`/nouns/submit`, {
                     data: this.form,
-                });
+                }, { headers: this.$auth() });
 
                 this.submitting = false;
                 this.afterSubmit = true;

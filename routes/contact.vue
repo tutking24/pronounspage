@@ -42,10 +42,8 @@
 
 <script>
     import { head } from "../src/helpers";
-    import Icon from "../components/Icon";
 
     export default {
-        components: {Icon},
         head() {
             return head({
                 title: this.$t('contact.header'),

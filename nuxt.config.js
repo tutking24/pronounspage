@@ -1,5 +1,6 @@
 import translations from './server/translations';
 import config from './server/config';
+import fs from 'fs';
 
 const locale = config.locale;
 const title = translations.title;
@@ -43,6 +44,7 @@ export default {
     plugins: [
         { src: '~/plugins/vue-matomo.js', ssr: false },
         { src: '~/plugins/globals.js' },
+        { src: '~/plugins/auth.js' },
     ],
     components: true,
     buildModules: [],
@@ -51,7 +53,8 @@ export default {
         '@nuxtjs/axios',
         ['@nuxtjs/redirect-module', {
             rules: config.redirects,
-        }]
+        }],
+        'cookie-universal-nuxt',
     ],
     pwa: {
         manifest: {
@@ -82,17 +85,17 @@ export default {
         },
     },
     env: {
-        baseUrl: process.env.BASE_URL,
-        secret: process.env.SECRET,
-        lang: locale,
+        BASE_URL: process.env.BASE_URL,
+        PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
     },
     serverMiddleware: {
         '/': bodyParser.json(),
-        '/nouns': '~/server/nouns.js',
         '/banner': '~/server/banner.js',
+        '/api/nouns': '~/server/nouns.js',
+        '/api/user': '~/server/user.js',
     },
     axios: {
-        baseURL: process.env.BASE_URL,
+        baseURL: process.env.BASE_URL + '/api',
     },
     router: {
         extendRoutes(routes, resolve) {
@@ -128,6 +131,9 @@ export default {
                 routes.push({ path: '/' + config.contact.route, component: resolve(__dirname, 'routes/contact.vue') });
             }
 
+            if (config.user.enabled) {
+                routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
+            }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });

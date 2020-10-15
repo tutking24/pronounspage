@@ -74,4 +74,8 @@ contact:
             areas:
                 social_media: ~
 
+user:
+    enabled: true
+    route: 'account'
+
 redirects: []
