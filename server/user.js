@@ -8,6 +8,8 @@ const mailer = require('./mailer');
 
 const now = Math.floor(Date.now() / 1000);
 
+const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
+
 const getUser = (authorization) => {
     if (!authorization || !authorization.startsWith('Bearer ')) {
         return null;
@@ -105,14 +107,16 @@ const validate = async (db, user, code) => {
         return {error: 'user.code.invalid'};
     }
 
-    return await authenticate(db, user, authenticator);
+    await invalidateAuthenticator(db, authenticator);
+
+    return await authenticate(db, user);
 }
 
 const defaultUsername = async (db, email) => {
     const base = email.substring(0, email.indexOf('@'))
         .padEnd(4, '0')
         .substring(0, 12)
-        .replace(/[^A-Za-z0-9._-]/g, '_');
+        .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_');
 
     let c = 0;
     while (true) {
@@ -125,7 +129,7 @@ const defaultUsername = async (db, email) => {
     }
 }
 
-const authenticate = async (db, user, authenticator) => {
+const authenticate = async (db, user) => {
     let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${user.email}`);
     if (!dbUser) {
         dbUser = {
@@ -137,14 +141,27 @@ const authenticate = async (db, user, authenticator) => {
         }
     }
 
-    invalidateAuthenticator(db, authenticator);
-
     return {
         token: jwt.sign({
             ...dbUser,
             authenticated: true,
         }),
     };
+}
+
+const changeUsername = async (db, user, username) => {
+    if (username.length < 4 || username.length > 16 || !username.match(new RegExp(`^[${USERNAME_CHARS}]+$`))) {
+        return { error: 'user.account.changeUsername.invalid' }
+    }
+
+    const dbUser = await db.get(SQL`SELECT * FROM users WHERE username = ${username}`);
+    if (dbUser) {
+        return { error: 'user.account.changeUsername.taken' }
+    }
+
+    await db.get(SQL`UPDATE users SET username = ${username} WHERE email = ${user.email}`);
+
+    return await authenticate(db, user);
 }
 
 export default async function (req, res, next) {
@@ -158,6 +175,8 @@ export default async function (req, res, next) {
         result = await init(db, req.body.usernameOrEmail)
     } else if (req.method === 'POST' && req.url === '/validate' && req.body.code) {
         result = await validate(db, user, req.body.code);
+    } else if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
+        result = await changeUsername(db, user, req.body.username);
     }
 
     res.setHeader('content-type', 'application/json');

@@ -596,7 +596,17 @@ user:
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
-
+    account:
+        changeUsername:
+            header: 'Nazwa użytkownika'
+            action: 'Zmień'
+            invalid: 'Nazwa użytkownika musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
+            taken: 'Ta nazwa użytkownika jest zajęta.'
+        changeEmail:
+            header: 'Adres email'
+            action: 'Zmień'
+        admin: 'Adminię'
+    logout: 'Wyloguj'
 
 share: 'Udostępnij'
 
