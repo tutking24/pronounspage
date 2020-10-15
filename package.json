@@ -17,6 +17,8 @@
     "canvas": "^2.6.1",
     "cookie-universal-nuxt": "^2.1.4",
     "dotenv": "^8.2.0",
+    "js-base64": "^3.5.2",
+    "js-md5": "^0.7.3",
     "jsonwebtoken": "^8.5.1",
     "mailer": "^0.6.7",
     "nuxt": "^2.13.0",

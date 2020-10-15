@@ -607,6 +607,9 @@ user:
             action: 'Zmień'
         admin: 'Adminię'
     logout: 'Wyloguj'
+    avatar:
+        header: 'Avatar'
+        change: 'Zmień avatar na'
 
 share: 'Udostępnij'
 
