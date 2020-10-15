@@ -1,4 +1,4 @@
-M	D	C	B	N	Msc	W	M_pl	D_pl	C_pl	B_pl	N_pl	Msc_pl	W_pl
+M. l.p. (kto? co?)	D. l.p. (kogo? czego?)	C. l. p. (komu? czemu?)	B. l.p. (kogo? co?)	N. l.p. (z kim? z czym?) 	Msc. l.p. (o kim? o czym?)	W. l.p. (o!)	M. l.m. (kto? co) 	D. l.m. (kogo? czego?)	 C. l. m. (komu? czemu?) 	  B. l.m. (kogo? co?) 	N. l.m. (z kim? z czym?)     	  Msc. l.m. (o kim? o czym?)    	W. l.m. (o!)
 aspi	aspi	aspi	aspi	aspim	aspi	aspi	aspi	aspich	aspi	aspi	aspimi	aspich	aspi
 enby	enby	enby	enby	enbym	enby	enby	enby/enbies	enbych	enby/enbies	enby/enbies	enbymi	enbych	enby/enbies
 hero	hera	heru	hero	herem	rze	hero	hera	her	herom	hera	herami	herach	hera
@@ -37,7 +37,7 @@ ce	cego	cemu	ce	cym/cem	cym/cem	ce	ce	cych	cym	ce	cymi	cych	ce
 be	bego	bemu	be	bym/bem	bym/bem	be	be	bych	bym	be	bymi	bych	be
 ne	nego	nemu	ne	nym/nem	nym/nem	ne	ne	nych	nym	ne	nymi	nych	ne
 me	mego	memu	me	mym/mem	mym/mem	me	me	mych	mym	me	mymi	mych	me
-łe	łego	łemu	łe	łym/łem	łym/łem	łe	łe	łych	łym	łe	łymi	łych
+łe	łego	łemu	łe	łym/łem	łym/łem	łe	łe	łych	łym	łe	łymi	łych	
 cieśle	cieśli	cieśli	cieśle	cieślem	cieśli	cieśle	cieśle	cieśli	cieślom	cieśle	cieślami	cieślach	cieśli
 bóstwo	bóstwa	bóstwu	bóstwo	bóstwem	bóstwie	bóstwo	bóstwa	bóstw	bóstwom	bóstwa	bóstwami	bóstwach	bóstwa
 barmaństwo	barmaństwa	barmaństwu	barmaństwo	barmaństwem	barmaństwie	barmaństwo	barmaństwo	barmaństwa	barmaństwu	barmaństwo	barmaństwem	barmaństwie	barmaństwo
@@ -68,6 +68,8 @@ leśnicze	leśniczego	leśniczemu	leśnicze	leśniczym/leśniczem	leśniczym/le�
 nastawnicze	nastawniczego	nastawniczemu	nastawnicze	nastawniczym/nastawniczem	nastawniczym/nastawniczem	nastawnicze	nastawnicze	nastawniczych	nastawniczym	nastawnicze	nastawniczymi	nastawniczych	nastawnicze
 do	da	du	do	dem	dzie	de	da	dów	dom	da	dami	dach	da
 sze	sza	szu	sze	szem	szu	sze	sze	szy/szów	szom	sze	szami	szach	sze
-budownicze	budowniczego	budowniczemu	budownicze	budowniczym/budowniczem	budowniczym/budowniczem	budownicze	budownicz	budowniczych	budowniczom	budownicze	budowniczymi	budowniczych
+budownicze	budowniczego	budowniczemu	budownicze	budowniczym/budowniczem	budowniczym/budowniczem	budownicze	budownicz	budowniczych	budowniczom	budownicze	budowniczymi	budowniczych	
 sie	sia	siu	sie	siem	siu	sie	sia	ś/siów	siom	sie	siami	siach	sie
 bo	ba	bu	bo	bem	bu	bo	ba	bów	bom	ba	bami	bach	ba
+two	twa	twu	two	twem	twie	two	two	twa	twu	two	twem	twie	two
+							rodzice	rodziców	rodzicom 	rodziców	rodzicami	rodzicach	rodzice
