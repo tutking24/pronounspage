@@ -11,181 +11,181 @@
             <Share :title="$t('nouns.headerLong')"/>
         </section>
 
-        <NounsExtra/>
+        <NounsExtra>
+            <details class="border mb-3" ref="dictionary">
+                <summary class="bg-light p-3" @click="loadNouns">
+                    <h4 class="h5 d-inline">
+                        <Icon v="book"/>
+                        <T>nouns.dictionary</T>
+                    </h4>
+                </summary>
+                <div class="border-top">
+                    <Loading :value="nounsRaw">
+                        <section v-if="$admin()" class="px-3">
+                            <div class="alert alert-info">
+                                <strong>{{ nounsCountApproved() }}</strong> <T>nouns.approved</T>,
+                                <strong>{{ nounsCountPending() }}</strong> <T>nouns.pending</T>.
+                            </div>
+                        </section>
 
-        <details class="border mb-3" ref="dictionary">
-            <summary class="bg-light p-3" @click="loadNouns">
-                <h4 class="h5 d-inline">
-                    <Icon v="book"/>
-                    <T>nouns.dictionary</T>
-                </h4>
-            </summary>
-            <div class="border-top">
-                <Loading :value="nounsRaw">
-                    <section v-if="$admin()" class="px-3">
-                        <div class="alert alert-info">
-                            <strong>{{ nounsCountApproved() }}</strong> <T>nouns.approved</T>,
-                            <strong>{{ nounsCountPending() }}</strong> <T>nouns.pending</T>.
-                        </div>
-                    </section>
-
-                    <section class="sticky-top">
-                        <div class="input-group mb-3 bg-white">
-                            <div class="input-group-prepend">
+                        <section class="sticky-top">
+                            <div class="input-group mb-3 bg-white">
+                                <div class="input-group-prepend">
                                 <span class="input-group-text">
                                     <Icon v="filter"/>
                                 </span>
-                            </div>
-                            <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
-                            <div class="input-group-append" v-if="filter">
-                                <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
-                                    <Icon v="times"/>
-                                </button>
-                            </div>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
-                                    <Icon v="plus-circle"/>
-                                    <T>nouns.submit.action</T>
-                                </button>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="table-responsive">
-                        <table :class="'table table-striped table-hover table-fixed-' + ($admin() ? 4 : 3)">
-                            <thead>
-                            <tr>
-                                <th class="text-nowrap">
-                                    <Icon v="mars"/>
-                                    <T>nouns.masculine</T>
-                                </th>
-                                <th class="text-nowrap">
-                                    <Icon v="venus"/>
-                                    <T>nouns.feminine</T>
-                                </th>
-                                <th class="text-nowrap">
-                                    <Icon v="neuter"/>
-                                    <T>nouns.neuter</T>
-                                </th>
-                                <th v-if="$admin()"></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <template v-if="visibleNouns().length">
-                            <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}" :key="noun.id">
-                                <td>
-                                    <ul class="list-singular">
-                                        <li v-for="w in noun.masc">{{ w }}</li>
-                                    </ul>
-                                    <ul class="list-plural">
-                                        <li v-for="w in noun.mascPl">{{ w }}</li>
-                                    </ul>
-
-                                    <small v-if="noun.base && nouns[noun.base]">
-                                        <p><strong><T>nouns.edited</T>:</strong></p>
-                                        <ul class="list-singular">
-                                            <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
-                                        </ul>
-                                        <ul class="list-plural">
-                                            <li v-for="w in nouns[noun.base].mascPl">{{ w }}</li>
-                                        </ul>
-                                    </small>
-
-                                    <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
-                                        <Icon v="pen"/>
-                                        <T>nouns.edit</T>
+                                </div>
+                                <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
+                                <div class="input-group-append" v-if="filter">
+                                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                                        <Icon v="times"/>
                                     </button>
-                                </td>
-                                <td>
-                                    <ul class="list-singular">
-                                        <li v-for="w in noun.fem">{{ w }}</li>
-                                    </ul>
-                                    <ul class="list-plural">
-                                        <li v-for="w in noun.femPl">{{ w }}</li>
-                                    </ul>
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                                        <Icon v="plus-circle"/>
+                                        <T>nouns.submit.action</T>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
 
-                                    <small v-if="noun.base && nouns[noun.base]">
-                                        <p><strong><T>nouns.edited</T>:</strong></p>
-                                        <ul class="list-singular">
-                                            <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
-                                        </ul>
-                                        <ul class="list-plural">
-                                            <li v-for="w in nouns[noun.base].femPl">{{ w }}</li>
-                                        </ul>
-                                    </small>
-                                </td>
-                                <td>
-                                    <ul class="list-singular">
-                                        <li v-for="w in noun.neutr">
-                                            <Declension :word="w"/>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-plural">
-                                        <li v-for="w in noun.neutrPl">
-                                            <Declension :word="w" plural :singularOptions="noun.neutr"/>
-                                        </li>
-                                    </ul>
-
-                                    <small v-if="noun.base && nouns[noun.base]">
-                                        <p><strong><T>nouns.edited</T>:</strong></p>
-                                        <ul class="list-singular">
-                                            <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
-                                        </ul>
-                                        <ul class="list-plural">
-                                            <li v-for="w in nouns[noun.base].neutrPl">{{ w }}</li>
-                                        </ul>
-                                    </small>
-                                </td>
-                                <td v-if="$admin()">
-                                    <ul class="list-unstyled">
-                                        <li v-if="!noun.approved">
-                                            <button class="btn btn-success btn-sm m-1" @click="approve(noun)">
-                                                <Icon v="check"/>
-                                                <T>crud.approve</T>
-                                            </button>
-                                        </li>
-                                        <li v-else @click="hide(noun)">
-                                            <button class="btn btn-outline-secondary btn-sm m-1">
-                                                <Icon v="times"/>
-                                                <T>crud.hide</T>
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn btn-outline-danger btn-sm m-1" @click="remove(noun)">
-                                                <Icon v="trash"/>
-                                                <T>crud.remove</T>
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button class="btn btn-outline-primary btn-sm m-1" @click="edit(noun)">
-                                                <Icon v="pen"/>
-                                                <T>crud.edit</T>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            </template>
-                            <template v-else>
+                        <section class="table-responsive">
+                            <table :class="'table table-striped table-hover table-fixed-' + ($admin() ? 4 : 3)">
+                                <thead>
                                 <tr>
-                                    <td :colspan="$admin() ? 4 : 3" class="text-center">
-                                        <Icon v="search"/>
-                                        <T>nouns.empty</T>
-                                    </td>
+                                    <th class="text-nowrap">
+                                        <Icon v="mars"/>
+                                        <T>nouns.masculine</T>
+                                    </th>
+                                    <th class="text-nowrap">
+                                        <Icon v="venus"/>
+                                        <T>nouns.feminine</T>
+                                    </th>
+                                    <th class="text-nowrap">
+                                        <Icon v="neuter"/>
+                                        <T>nouns.neuter</T>
+                                    </th>
+                                    <th v-if="$admin()"></th>
                                 </tr>
-                            </template>
-                            </tbody>
-                        </table>
-                    </section>
+                                </thead>
+                                <tbody>
+                                <template v-if="visibleNouns().length">
+                                    <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}" :key="noun.id">
+                                        <td>
+                                            <ul class="list-singular">
+                                                <li v-for="w in noun.masc">{{ w }}</li>
+                                            </ul>
+                                            <ul class="list-plural">
+                                                <li v-for="w in noun.mascPl">{{ w }}</li>
+                                            </ul>
 
-                    <Separator icon="plus"/>
+                                            <small v-if="noun.base && nouns[noun.base]">
+                                                <p><strong><T>nouns.edited</T>:</strong></p>
+                                                <ul class="list-singular">
+                                                    <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
+                                                </ul>
+                                                <ul class="list-plural">
+                                                    <li v-for="w in nouns[noun.base].mascPl">{{ w }}</li>
+                                                </ul>
+                                            </small>
 
-                    <div class="px-3">
-                        <NounSubmitForm ref="form"/>
-                    </div>
-                </Loading>
-            </div>
-        </details>
+                                            <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
+                                                <Icon v="pen"/>
+                                                <T>nouns.edit</T>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <ul class="list-singular">
+                                                <li v-for="w in noun.fem">{{ w }}</li>
+                                            </ul>
+                                            <ul class="list-plural">
+                                                <li v-for="w in noun.femPl">{{ w }}</li>
+                                            </ul>
+
+                                            <small v-if="noun.base && nouns[noun.base]">
+                                                <p><strong><T>nouns.edited</T>:</strong></p>
+                                                <ul class="list-singular">
+                                                    <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
+                                                </ul>
+                                                <ul class="list-plural">
+                                                    <li v-for="w in nouns[noun.base].femPl">{{ w }}</li>
+                                                </ul>
+                                            </small>
+                                        </td>
+                                        <td>
+                                            <ul class="list-singular">
+                                                <li v-for="w in noun.neutr">
+                                                    <Declension :word="w"/>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-plural">
+                                                <li v-for="w in noun.neutrPl">
+                                                    <Declension :word="w" plural :singularOptions="noun.neutr"/>
+                                                </li>
+                                            </ul>
+
+                                            <small v-if="noun.base && nouns[noun.base]">
+                                                <p><strong><T>nouns.edited</T>:</strong></p>
+                                                <ul class="list-singular">
+                                                    <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
+                                                </ul>
+                                                <ul class="list-plural">
+                                                    <li v-for="w in nouns[noun.base].neutrPl">{{ w }}</li>
+                                                </ul>
+                                            </small>
+                                        </td>
+                                        <td v-if="$admin()">
+                                            <ul class="list-unstyled">
+                                                <li v-if="!noun.approved">
+                                                    <button class="btn btn-success btn-sm m-1" @click="approve(noun)">
+                                                        <Icon v="check"/>
+                                                        <T>crud.approve</T>
+                                                    </button>
+                                                </li>
+                                                <li v-else @click="hide(noun)">
+                                                    <button class="btn btn-outline-secondary btn-sm m-1">
+                                                        <Icon v="times"/>
+                                                        <T>crud.hide</T>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-outline-danger btn-sm m-1" @click="remove(noun)">
+                                                        <Icon v="trash"/>
+                                                        <T>crud.remove</T>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-outline-primary btn-sm m-1" @click="edit(noun)">
+                                                        <Icon v="pen"/>
+                                                        <T>crud.edit</T>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </template>
+                                <template v-else>
+                                    <tr>
+                                        <td :colspan="$admin() ? 4 : 3" class="text-center">
+                                            <Icon v="search"/>
+                                            <T>nouns.empty</T>
+                                        </td>
+                                    </tr>
+                                </template>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <Separator icon="plus"/>
+
+                        <div class="px-3">
+                            <NounSubmitForm ref="form"/>
+                        </div>
+                    </Loading>
+                </div>
+            </details>
+        </NounsExtra>
     </div>
 </template>
 

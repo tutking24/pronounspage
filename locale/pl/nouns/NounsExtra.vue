@@ -1,82 +1,64 @@
 <template>
     <div>
         <div class="btn-group btn-block">
-            <a :href="'#' + $t('nouns.personNouns.id')" class="btn btn-outline-primary">
+            <a :href="'#' + $t('nouns.neuterNouns.id')" class="btn btn-outline-primary">
                 <Icon v="atom-alt"/>
-                <T>nouns.personNouns.header</T>
+                <T>nouns.neuterNouns.header</T>
             </a>
             <a :href="'#' + $t('nouns.dukajNouns.id')" class="btn btn-outline-primary">
                 <Icon v="atom-alt"/>
                 <T>nouns.dukajNouns.header</T>
             </a>
-            <a :href="'#' + $t('nouns.neuterNouns.id')" class="btn btn-outline-primary">
+            <a :href="'#' + $t('nouns.personNouns.id')" class="btn btn-outline-primary">
                 <Icon v="atom-alt"/>
-                <T>nouns.neuterNouns.header</T>
+                <T>nouns.personNouns.header</T>
             </a>
         </div>
 
         <Separator icon="atom-alt"/>
 
-        <h3 :id="$t('nouns.personNouns.id')">
-            <T>nouns.personNouns.header</T>
-            <small><NormativeBadge/></small>
+        <h3 :id="$t('nouns.neuterNouns.id')">
+            <T>nouns.neuterNouns.header</T>
         </h3>
 
-        <T>nouns.personNouns.info</T>
+        <T>nouns.neuterNouns.info</T>
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
-                <h4 class="h5 d-inline"><T>nouns.examples</T></h4>
+                <h4 class="h5 d-inline"><T>nouns.neuterNouns.alt.header</T></h4>
             </summary>
-            <div class="border-top table-responsive">
-                <table class="table table-striped table-hover table-fixed-3">
-                    <thead>
-                    <tr>
-                        <th class="text-nowrap">
-                            <Icon v="mars"/>
-                            <T>nouns.masculine</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <Icon v="venus"/>
-                            <T>nouns.feminine</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <Icon v="neuter"/>
-                            <T>nouns.personNouns.label</T>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr v-for="noun in personNouns" :key="noun.id">
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in noun.masc">{{ w }}</li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in noun.mascPl">{{ w }}</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in noun.fem">{{ w }}</li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in noun.femPl">{{ w }}</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in noun.neutr">{{ w }}</li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in noun.neutrPl">{{ w }}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="border-top">
+                <div class="p-4 pb-0">
+                    <T>nouns.neuterNouns.alt.info</T>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-fixed-3">
+                        <thead>
+                        <tr>
+                            <th v-for="templates in neuterAltDeclensionTemplates" class="text-nowrap">
+                                <ul class="list-inline mb-0">
+                                    <li v-for="template in templates" class="list-inline-item">
+                                        <nuxt-link :to="'/' + template">
+                                            {{ template }}
+                                        </nuxt-link>
+                                    </li>
+                                </ul>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="(declensions, word) in neuterAltDeclension" :key="word">
+                            <td v-for="declension in declensions">
+                                <Declension :word="word" :template="declension" open condense/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </details>
+
+        <slot></slot>
 
         <Separator icon="atom-alt"/>
 
@@ -149,44 +131,64 @@
 
         <Separator icon="atom-alt"/>
 
-        <h3 :id="$t('nouns.neuterNouns.id')">
-            <T>nouns.neuterNouns.header</T>
+        <h3 :id="$t('nouns.personNouns.id')">
+            <T>nouns.personNouns.header</T>
+            <small><NormativeBadge/></small>
         </h3>
 
-        <T>nouns.neuterNouns.info</T>
+        <T>nouns.personNouns.info</T>
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
-                <h4 class="h5 d-inline"><T>nouns.neuterNouns.alt.header</T></h4>
+                <h4 class="h5 d-inline"><T>nouns.examples</T></h4>
             </summary>
-            <div class="border-top">
-                <div class="p-4 pb-0">
-                    <T>nouns.neuterNouns.alt.info</T>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover table-fixed-3">
-                        <thead>
-                        <tr>
-                            <th v-for="templates in neuterAltDeclensionTemplates" class="text-nowrap">
-                                <ul class="list-inline mb-0">
-                                    <li v-for="template in templates" class="list-inline-item">
-                                        <nuxt-link :to="'/' + template">
-                                            {{ template }}
-                                        </nuxt-link>
-                                    </li>
-                                </ul>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr v-for="(declensions, word) in neuterAltDeclension" :key="word">
-                            <td v-for="declension in declensions">
-                                <Declension :word="word" :template="declension" open condense/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="border-top table-responsive">
+                <table class="table table-striped table-hover table-fixed-3">
+                    <thead>
+                    <tr>
+                        <th class="text-nowrap">
+                            <Icon v="mars"/>
+                            <T>nouns.masculine</T>
+                        </th>
+                        <th class="text-nowrap">
+                            <Icon v="venus"/>
+                            <T>nouns.feminine</T>
+                        </th>
+                        <th class="text-nowrap">
+                            <Icon v="neuter"/>
+                            <T>nouns.personNouns.label</T>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="noun in personNouns" :key="noun.id">
+                        <td>
+                            <ul class="list-singular">
+                                <li v-for="w in noun.masc">{{ w }}</li>
+                            </ul>
+                            <ul class="list-plural">
+                                <li v-for="w in noun.mascPl">{{ w }}</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="list-singular">
+                                <li v-for="w in noun.fem">{{ w }}</li>
+                            </ul>
+                            <ul class="list-plural">
+                                <li v-for="w in noun.femPl">{{ w }}</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="list-singular">
+                                <li v-for="w in noun.neutr">{{ w }}</li>
+                            </ul>
+                            <ul class="list-plural">
+                                <li v-for="w in noun.neutrPl">{{ w }}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </details>
     </div>

@@ -1,3 +1,6 @@
 <template>
-    <Separator icon="book-open"/>
+    <div>
+        <Separator icon="book-open"/>
+        <slot></slot>
+    </div>
 </template>
