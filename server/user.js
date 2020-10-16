@@ -166,15 +166,15 @@ export default async function (req, res, next) {
     const user = authenticate(req);
 
     if (req.method === 'POST' && req.url === '/init' && req.body.usernameOrEmail) {
-        return renderJson(await init(db, req.body.usernameOrEmail));
+        return renderJson(res, await init(db, req.body.usernameOrEmail));
     }
 
     if (req.method === 'POST' && req.url === '/validate' && req.body.code) {
-        return renderJson(await validate(db, user, req.body.code));
+        return renderJson(res, await validate(db, user, req.body.code));
     }
 
     if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
-        return renderJson(await changeUsername(db, user, req.body.username));
+        return renderJson(res, await changeUsername(db, user, req.body.username));
     }
 
     return renderJson(res, {error: 'Not found'}, 404);
