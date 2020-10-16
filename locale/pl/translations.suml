@@ -625,6 +625,11 @@ user:
         header: 'Avatar'
         change: 'Zmień'
 
+profile:
+    names: 'Imiona'
+    pronouns: 'Zaimki'
+    words: 'Słowa'
+
 share: 'Udostępnij'
 
 crud:

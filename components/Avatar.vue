@@ -1,5 +1,5 @@
 <template>
-    <img :src="gravatar(user.email)" alt="" class="rounded-circle"/>
+    <img :src="gravatar" alt="" class="rounded-circle"/>
 </template>
 
 <script>
@@ -9,12 +9,13 @@
     export default {
         props: {
             user: { required: true },
+            size: { 'default': 128 }
         },
-        methods: {
+        computed: {
             gravatar(email, size = 128) {
-                const fallback = `https://avi.avris.it/${size}/${Base64.encode(email).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+                const fallback = `https://avi.avris.it/${this.size}/${Base64.encode(this.user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
 
-                return `https://www.gravatar.com/avatar/${md5(email)}?d=${encodeURIComponent(fallback)}&s=${size}`;
+                return `https://www.gravatar.com/avatar/${this.user.emailHash || md5(this.user.email)}?d=${encodeURIComponent(fallback)}&s=${this.size}`;
             }
         },
     }

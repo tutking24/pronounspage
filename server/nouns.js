@@ -3,15 +3,7 @@ const SQL = require('sql-template-strings');
 import { ulid } from 'ulid'
 import authenticate from './authenticate';
 
-const parseQuery = (queryString) => {
-    const query = {};
-    const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
-    for (let i = 0; i < pairs.length; i++) {
-        let pair = pairs[i].split('=');
-        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
-    }
-    return query;
-}
+
 
 const getId = url => url.match(/\/([^/]+)$/)[1];
 

@@ -128,14 +128,14 @@
                     });
                 }
 
-                // if (this.config.user.enabled) {
-                //     links.push({
-                //         link: '/' + this.config.user.route,
-                //         icon: 'user',
-                //         text: this.user ? '@' + this.user.username : this.$t('user.header'),
-                //         textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
-                //     });
-                // }
+                if (this.config.user.enabled) {
+                    links.push({
+                        link: '/' + this.config.user.route,
+                        icon: 'user',
+                        text: this.user ? '@' + this.user.username : this.$t('user.header'),
+                        textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
+                    });
+                }
 
                 return links;
             },

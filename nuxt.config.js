@@ -93,6 +93,7 @@ export default {
         '/banner': '~/server/banner.js',
         '/api/nouns': '~/server/nouns.js',
         '/api/user': '~/server/user.js',
+        '/api/profile': '~/server/profile.js',
     },
     axios: {
         baseURL: process.env.BASE_URL + '/api',
@@ -135,6 +136,8 @@ export default {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
             }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
+
+            routes.push({ path: '/@*', component: resolve(__dirname, 'routes/profile.vue') });
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });
         },
