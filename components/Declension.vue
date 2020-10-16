@@ -1,10 +1,10 @@
 <template>
     <span>
         <template v-if="declensionTemplate">
-            <a href="#" @click.prevent="visible = !visible">{{ word }}</a>
-            <ul v-if="visible" class="list-unstyled small m-2 p-2 border">
-                <li v-for="(declined, c) in declensionTemplate.decline(word, plural)">
-                    <strong>{{c}} <small>({{cases[c]}})</small></strong> {{ declined.join(' / ') }}
+            <a v-if="!open" href="#" @click.prevent="visible = !visible">{{ word }}</a>
+            <ul v-if="visible" :class="['list-unstyled', 'small', open ? '' : 'm-2 p-2 border']">
+                <li v-for="(declined, c) in declensionTemplate.decline(word, plural)" class="text-nowrap">
+                    <strong>{{c}} <small v-if="!condense">({{cases[c]}})</small></strong> {{ declined.join(' / ') }}
                 </li>
             </ul>
         </template>
@@ -22,12 +22,14 @@
             plural: { type: Boolean },
             singularOptions: { },
             template: { },
+            open: { type: Boolean },
+            condense: { type: Boolean },
         },
         data() {
             return {
                 declensionTemplate: this.template || this.findTemplate(),
                 cases,
-                visible: false,
+                visible: this.open,
             }
         },
         methods: {

@@ -164,9 +164,18 @@ nouns:
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
                 z wyszczególnieniem ich formy męskiej, żeńskiej i nijakiej.
                 Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
+        alt:
+            header: 'Alternatywne wzory odmiany'
+            info:
+                - >
+                    Choć zaimek {/ono=„ono”} jest nijaki, to poza mianownikiem przybiera formy identyczne z męskimi.
+                    Dlatego też wiele osób binarnych używa „ono” z alternatywną odmianą.
+                - >
+                    Słownik Neutratywów podaje odmianę pasującą do {/ono=„ono/jego”},
+                    lecz możliwa jest też odmiana zgodna z pozostałymi opcjami:
 
     examples: 'Przykłady'
-    dictionary: 'Słownik neutratywów'
+    dictionary: 'Słownik Neutratywów'
 
     approved: 'wpisów zatwierdzonych'
     pending: 'oczekuje na moderację'
