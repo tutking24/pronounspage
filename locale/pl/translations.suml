@@ -301,7 +301,7 @@ faq:
                     próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
                     bez zdawania się na zgenderyzowane rodzaje: męsko- i niemęskoosobowy.
         najlepsza-forma:
-            question: 'Ale dużo tych form… Która jest <em>najlepsza</em>?'
+            question: 'Ale dużo tego… Po co to całe mnożenie form? Która jest <em>najlepsza</em>?'
             answer:
                 - >
                     Celem projektu nie jest {https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo)=preskryptywizm}.
@@ -316,6 +316,11 @@ faq:
                     Rozwój języka jest najczęściej procesem długotrwałym, nie zdarza się z dnia na dzień.
                     Póki co, wszystkie propozycje form kotłują się w kotle codziennego użycia –
                     zapewne kiedyś coś się z niego wyklaruje.
+                - >
+                    Ze względu na barwną fleksyjność języka polskiego
+                    i silny poziom zgeneryzowania gramatyki i słownictwa
+                    nie jest łatwo „narzucić” konkrente formy, nawet gdybyśmy chciały.
+                    Zanim wytworzą się uniwersalne, niebinarne rozwiązania - musimy sobie jakoś z tym poradzić.
         to-sie-nie-uda:
             question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
             answer:
