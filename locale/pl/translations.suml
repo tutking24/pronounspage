@@ -609,7 +609,7 @@ user:
     logout: 'Wyloguj'
     avatar:
         header: 'Avatar'
-        change: 'Zmień avatar na'
+        change: 'Zmień'
 
 share: 'Udostępnij'
 

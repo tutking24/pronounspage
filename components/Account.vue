@@ -2,16 +2,18 @@
     <section>
         <div class="card mb-3">
             <div class="card-body d-flex flex-column flex-md-row">
-                <div class="mx-2 text-center d-flex flex-row flex-md-column">
-                    <p>
+                <div class="mx-2 text-center">
+                    <p class="mb-0">
                         <Avatar :user="$user()"/>
                     </p>
-                    <p class="text-center flex-grow-1">
+                    <p>
                         <a href="https://gravatar.com" target="_blank" rel="noopener" class="small">
+                            <Icon v="external-link"/>
                             <T>user.avatar.change</T>
-                            <br/>
-                            Gravatar.com
                         </a>
+                    </p>
+                    <p v-if="$admin()">
+                        <span class="badge badge-primary"><T>user.account.admin</T></span>
                     </p>
                 </div>
                 <div class="mx-2 flex-grow-1">
@@ -34,10 +36,6 @@
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
                         <p>{{ email }}</p>
                     </div>
-
-                    <p v-if="$admin()">
-                        <span class="badge badge-primary"><T>user.account.admin</T></span>
-                    </p>
                 </div>
             </div>
         </div>
