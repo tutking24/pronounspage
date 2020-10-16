@@ -1,3 +1,6 @@
+import md5 from 'js-md5';
+import { Base64 } from 'js-base64';
+
 export const buildDict = (fn, ...args) => {
     const dict = {};
     for (let [key, value] of fn(...args)) {
@@ -83,9 +86,29 @@ export const parseQuery = (queryString) => {
     return query;
 }
 
-export const render = (res, content, status = 200) => {
-    res.status = status;
+export const renderText = (res, content, status = 200) => {
+    res.statusCode = status;
     res.setHeader('content-type', 'application/json');
     res.write(JSON.stringify(content));
     res.end();
+}
+
+export const renderJson = (res, content, status = 200) => {
+    res.statusCode = status;
+    res.setHeader('content-type', 'application/json');
+    res.write(JSON.stringify(content));
+    res.end();
+}
+
+export const renderImage = (res, canvas, mime, status = 200) => {
+    res.statusCode = status;
+    res.setHeader('content-type', mime);
+    res.write(canvas.toBuffer(mime));
+    res.end();
+}
+
+export const gravatar = (user, size = 128) => {
+    const fallback = `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+
+    return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallback)}&s=${size}`;
 }

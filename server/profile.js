@@ -1,6 +1,6 @@
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
-import {buildDict, render} from "../src/helpers";
+import {buildDict, renderJson} from "../src/helpers";
 import { ulid } from 'ulid'
 import authenticate from './authenticate';
 import md5 from 'js-md5';
@@ -50,7 +50,7 @@ export default async function (req, res, next) {
             AND profiles.active = 1
             ORDER BY profiles.locale
         `)
-        return render(res, buildDict(function* () {
+        return renderJson(res, buildDict(function* () {
             for (let profile of profiles) {
                 yield [profile.locale, buildProfile(profile)];
             }
@@ -58,8 +58,8 @@ export default async function (req, res, next) {
     }
 
     if (!user || !user.authenticated) {
-        return render(res, {error: 'unauthorised'}, 401);
+        return renderJson(res, {error: 'unauthorised'}, 401);
     }
 
-    return render(res, { error: 'notfound' }, 404);
+    return renderJson(res, { error: 'notfound' }, 404);
 }

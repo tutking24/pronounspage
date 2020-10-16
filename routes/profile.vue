@@ -109,6 +109,7 @@
         head() {
             return head({
                 title: `@${this.username}`,
+                banner: `banner/@${this.username}.png`,
             });
         },
     }

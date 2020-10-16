@@ -3,20 +3,17 @@
 </template>
 
 <script>
-    import md5 from 'js-md5';
-    import { Base64 } from 'js-base64';
+    import { gravatar } from "../src/helpers";
 
     export default {
         props: {
             user: { required: true },
             size: { 'default': 128 }
         },
-        computed: {
-            gravatar(email, size = 128) {
-                const fallback = `https://avi.avris.it/${this.size}/${Base64.encode(this.user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
-
-                return `https://www.gravatar.com/avatar/${this.user.emailHash || md5(this.user.email)}?d=${encodeURIComponent(fallback)}&s=${this.size}`;
-            }
+        data() {
+            return {
+                gravatar: gravatar(this.user, this.size),
+            };
         },
     }
 </script>

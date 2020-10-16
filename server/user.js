@@ -1,5 +1,5 @@
 import jwt from './jwt';
-import { makeId } from '../src/helpers';
+import {makeId, renderJson} from '../src/helpers';
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
 import { ulid } from 'ulid';
@@ -165,17 +165,17 @@ export default async function (req, res, next) {
     const db = await dbConnection();
     const user = authenticate(req);
 
-    let result = {error: 'notfound'}
-
     if (req.method === 'POST' && req.url === '/init' && req.body.usernameOrEmail) {
-        result = await init(db, req.body.usernameOrEmail)
-    } else if (req.method === 'POST' && req.url === '/validate' && req.body.code) {
-        result = await validate(db, user, req.body.code);
-    } else if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
-        result = await changeUsername(db, user, req.body.username);
+        return renderJson(await init(db, req.body.usernameOrEmail));
     }
 
-    res.setHeader('content-type', 'application/json');
-    res.write(JSON.stringify(result));
-    res.end();
+    if (req.method === 'POST' && req.url === '/validate' && req.body.code) {
+        return renderJson(await validate(db, user, req.body.code));
+    }
+
+    if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
+        return renderJson(await changeUsername(db, user, req.body.username));
+    }
+
+    return renderJson(res, {error: 'Not found'}, 404);
 }
