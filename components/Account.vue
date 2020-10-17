@@ -40,6 +40,14 @@
             </div>
         </div>
 
+        <Loading :value="profiles"><template v-if="profiles !== undefined">
+            <ul class="list-group mb-3">
+                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
+                    <ProfileOverview :profile="profiles[locale]" :locale="locale"/>
+                </li>
+            </ul>
+        </template></Loading>
+
         <p>
             <button class="btn btn-outline-secondary btn-sm" @click="logout">
                 <Icon v="sign-out"/>
@@ -57,7 +65,12 @@
                 email: this.$user().email,
 
                 error: '',
-            };
+
+                profiles: undefined,
+            }
+        },
+        async mounted() {
+            this.profiles = await this.$axios.$get(`/profile/get/${this.$user().username}`);
         },
         methods: {
             async changeUsername() {
@@ -85,3 +98,11 @@
         },
     }
 </script>
+
+<style lang="scss" scoped>
+    @import "assets/style";
+
+    .profile-current {
+        border-left: 3px solid $primary;
+    }
+</style>

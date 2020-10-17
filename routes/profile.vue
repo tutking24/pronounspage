@@ -1,10 +1,19 @@
 <template>
     <div class="container">
         <template v-if="profile">
-            <h2>
-                <Avatar :user="profile"/>
-                @{{username}}
-            </h2>
+            <div class="mb-3 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <h2 class="text-nowrap">
+                    <Avatar :user="profile"/>
+                    @{{username}}
+                </h2>
+                <div class="list-group">
+                    <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
+                                :locale="locale" :link="`/@${username}`"
+                                :class="['list-group-item list-group-item-action small px-3 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
+                        {{options.name}}
+                    </LocaleLink>
+                </div>
+            </div>
 
             <section v-if="profile.description.trim().length">
                 <p v-for="line in profile.description.split('\n')" class="mb-1">
@@ -77,8 +86,10 @@
     import { head } from "../src/helpers";
     import { templates } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
+    import LocaleLink from "../components/LocaleLink";
 
     export default {
+        components: {LocaleLink},
         data() {
             return {
                 username: this.$route.params.pathMatch,

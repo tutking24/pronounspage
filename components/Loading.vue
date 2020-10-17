@@ -1,9 +1,9 @@
 <template>
     <section class="w-100">
-        <div v-show="isLoaded">
+        <div v-if="isLoaded">
             <slot/>
         </div>
-        <p class="text-center" v-show="!isLoaded">
+        <p class="text-center" v-if="!isLoaded">
             <Spinner :size="size"/>
         </p>
     </section>
