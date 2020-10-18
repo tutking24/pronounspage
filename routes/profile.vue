@@ -27,7 +27,7 @@
                         <Icon v="birthday-cake"/>
                         {{ profile.age }}
                     </li>
-                    <li v-for="link in profile.links" class="list-inline-item">
+                    <li v-for="link in profile.links" class="list-inline-item pr-2">
                         <ProfileLink :link="link"/>
                     </li>
                 </ul>
@@ -35,7 +35,7 @@
 
             <section v-if="Object.keys(profile.flags).length">
                 <ul class="list-inline">
-                    <li v-for="(name, flag) in profile.flags" class="list-inline-item">
+                    <li v-for="(name, flag) in profile.flags" class="list-inline-item pr-2">
                         <Flag :name="name" :src="`/flags/${flag}.png`"/>
                     </li>
                 </ul>
