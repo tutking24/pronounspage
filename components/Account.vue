@@ -41,6 +41,7 @@
         </div>
 
         <Loading :value="profiles"><template v-if="profiles !== undefined">
+            <h3 class="h4"><T>profile.list</T>:</h3>
             <ul class="list-group mb-3">
                 <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
                     <ProfileOverview :profile="profiles[locale]" :locale="locale"/>

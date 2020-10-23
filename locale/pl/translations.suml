@@ -686,6 +686,7 @@ profile:
     names: 'Imiona'
     pronouns: 'Zaimki'
     words: 'Słowa'
+    list: 'Twoje wizytówki'
     init: 'Stwórz wizytówkę'
     show: 'Pokaż'
     edit: 'Edytuj'

@@ -1,6 +1,6 @@
 <template>
     <NotFound v-if="!selectedTemplate"/>
-    <div class="container" v-else>
+    <div v-else class="container">
         <h2>
             <Icon v="tag"/>
             <T>template.intro</T>:
