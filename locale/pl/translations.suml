@@ -309,6 +309,20 @@ faq:
                     Dwie formy liczby mnogiej {/ona/ich=stowrzyłośmy} same,
                     próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
                     bez zdawania się na zgenderyzowane rodzaje: męsko- i niemęskoosobowy.
+        zaimki:
+            question: 'Przecież to nie są tylko zaimki, więc skąd nazwa zaimki.pl?'
+            answer:
+                - >
+                    To fakt... Choć w wielu innych językach zgenderyzowane formy osobowe to głównie zaimki,
+                    to w polszczyźnie na płeć wskazuje też wiele innych części mowy: czasowniki, przymiotniki, rzeczowniki...
+                    Teoretycznie powinnośmy więc mówić bardziej ogólnie, o „formach językowych wskazujących na płeć”, a nie „zaimkach”.
+                    Brzmi to jednak dość topornie, no nie?
+                - >
+                    Naszym zdaniem, ze względu na to, że
+                    zaimki tak czy siak narzucają użycie pasującej do nich odmiany pozostałych części mowy
+                    („{/on=on} zrobił”, „{/ona=ona} jest bystra”, „{/onu=onu} byłu pilotum”...),
+                    oraz to, że ludzie znający angielski są przyzwyczajeni do mówienia o „zaimkach”,
+                    to używanie ich jako skrótu myślowego jest uzasadnione. A i domena bardziej chwytliwa.
         najlepsza-forma:
             question: 'Ale dużo tego… Po co to całe mnożenie form? Która jest <em>najlepsza</em>?'
             answer:
@@ -344,6 +358,34 @@ faq:
                     Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
                     jest jedynie narzędziem do porozumiewania się.
                     Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
+        autorytet:
+            question: 'Czy potwierdza te wymysły czyjś autorytet?'
+            answer:
+                - >
+                    I tak, i nie... Większość prezentowanych tutaj form
+                    nie należy do {https://pl.wikipedia.org/wiki/Norma_językowa=normy językowej},
+                    lecz do {https://pl.wikipedia.org/wiki/Uzus_językowy=uzusu językowego}
+                    – czyli rzeczywistego stanu funkcjonowania polszczyzny w danej wspólnocie językowej,
+                    niezależnie od tego, co językoznawcy zdążyli już (o ile w ogóle zamierzają)
+                    umieścić w gramatykach i słownikach.
+                    A i samą normę możemy podzielić na wzorcową i użytkowa –
+                    bo poprawność językowa nie jest zero-jedynkowa, ma różne odcienie.
+                - >
+                    Tak jak {https://pl.wikipedia.org/wiki/Neologizm=neologizmy} same w sobie nie są błędami językowymi,
+                    nawet jeśli jeszcze nie pojawiły się w słownikach,
+                    albo jak nie jest wymagana zgoda Rady Języka Polskiego,
+                    by używać emojis czy akronimów kultury internetowej,
+                    tak samo i nienormatywne zaimki nie są niczym z natury złym.
+                - >
+                    Rozumiemy jednak potrzebę znalezienia jakiejś oficjalnej legitymizacji
+                    dla używania „kontrowersyjnych” form językowych.
+                    Dlatego w sekcji [bookmark]{/linki=Dodatkowe materiały}
+                    linkujemy między innymi do opinii RJP,
+                    która potwierdza poprawność gramatyczną pierwszo- i drugoosobowych nijakich czasowników („byłom”, „zrobiłoś”),
+                    do seminariów naukowych i prac akademickich na temat niebinarności w języku, etc.
+                    Jesteśmy też w kontakcie ze studentem slawistyki piszącym o tym pracę dyplomową
+                    oraz lektorką polonistyki planującą wydać podręcznik obejmujący nowe formy.
+                    Mamy nadzieję, że będziemy mogły tu ich prace opublikować, gdy zostaną ukończone.
         bio:
             question: 'Czemu warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych?'
             answer:
@@ -365,6 +407,21 @@ faq:
                     to pokazujesz wsparcie dla społeczności trans
                     i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
                     {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        tłumaczenie:
+            question: 'Czemu to takie ważne, żeby tłumaczyć niebinarne zaimki? Nie można po prostu przerobić niebinarnej postaci na faceta albo babę?'
+            answer:
+                - >
+                    Zadaniem osoby tłumaczącej jest przełożyć dzieło na inny język – a nie zniekształcać je według swojego widzimisię.
+                    Nieważne, jakie masz poglądy, co myślisz o niebinarności, jak dużym wyzwaniem jest
+                    przetłumaczenie na polski np. angielskiego <em>they/them</em> czy hiszpańskiego <em>elle</em>, itp.
+                    – skoro autorzy oryginału stworzyli daną postać jako niebinarną i chcieli, by odbiorcy o tym wiedzieli,
+                    to tłumacze obdzierający tę postać z niebinarności zakłamują przekaz dzieła i nie wykonują dobrze swojej pracy.
+                - >
+                    Jeśli w jakiejś książce postać jest smoczycą, to w procesie tłumaczenia nie zmienisz jej gatunku
+                    tylko dlatego, że nie wierzysz w smoki, no nie?
+                    Czemu więc osoby tłumaczące ośmielają się zmieniać postaciom płeć?
+                - >
+                    To nie kwestia ideologii. To kwestia prawdy i wierności oryginałowi.
         klawiatura:
             question: 'Ale tych znaków nie ma na klawiaturze!'
             answer:

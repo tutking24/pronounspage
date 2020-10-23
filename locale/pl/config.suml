@@ -33,12 +33,17 @@ links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
+            lang: ['en']
             headline: 'Pronoun.is'
             extra: '– anglojęzyczna inspiracja dla tej strony.'
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
             headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208'
+            headline: 'Opinia Rady Języka Polskiego o formach „byłom”, „byłoś”, itp.'
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
@@ -56,6 +61,12 @@ links:
             extra: '– Michał Radomił Wiśniewski o „wojnie kulturowej” o zaimki, o naszym projekcie i o dukaizmach.'
         -
             icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
+            headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
+            extra: '– ANGLICA. An International Journal of English Studies'
+        -
+            icon: 'comment-alt-edit'
             url: 'http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/'
             headline: 'Równi wobec języka – o języku neutralnym płciowo'
             extra: '– artykuł Agnieszki Wąsowskiej'
@@ -69,6 +80,11 @@ links:
             url: 'https://rss.com/podcasts/bezwstydny/75056/'
             headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (Bezwstydne Podcast)'
             extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=BX8ld20YeUc'
+            headline: 'Wideoesej „Mistycyzmu Popkulturowego”'
+            extra: 'o tym, jak polscy tłumacze (nie) radzą sobie z formami gramatycznymi w przypadku postaci niebinarnych'
         -
             icon: 'instagram'
             iconSet: 'b'
