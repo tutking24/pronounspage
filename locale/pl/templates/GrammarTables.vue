@@ -42,8 +42,8 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.plural ? 'śmy' : 'm'}}</td>
-                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.plural ? 'ście' : 'ś'}}</td>
+                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.isPlural(counter) ? 'śmy' : 'm'}}</td>
+                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.isPlural(counter) ? 'ście' : 'ś'}}</td>
                     <td>-{{ selectedTemplate.getMorpheme('verb_end_about', counter) }}</td>
                     <td>-{{ selectedTemplate.getMorpheme('adjective_n', counter) }}</td>
                 </tr>
