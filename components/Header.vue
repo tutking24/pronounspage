@@ -7,7 +7,7 @@
                     <T>title</T>
                 </nuxt-link>
             </h1>
-            <ul class="list-inline small mb-0" v-if="config.localeSwitch">
+            <ul class="list-inline small mb-0" v-if="Object.keys(locales).length > 1">
                 <li v-for="(options, locale) in locales" :key="locale" class="list-inline-item">
                     <strong v-if="locale === config.locale">
                         {{options.name}}
