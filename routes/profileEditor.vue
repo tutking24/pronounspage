@@ -136,7 +136,7 @@
                 const profile = profiles[locale];
                 return {
                     names: dictToList(profile.names),
-                    pronouns: {},
+                    pronouns: [],
                     description: '',
                     birthday: profile.birthday,
                     links: Object.keys(profile.links).length ? profile.links : [],
@@ -146,12 +146,12 @@
             }
 
             return {
-                names: {},
-                pronouns: {},
+                names: [],
+                pronouns: [],
                 description: '',
                 birthday: null,
-                links: {},
-                flags: {},
+                links: [],
+                flags: [],
                 words: defaultWords,
             };
         },
