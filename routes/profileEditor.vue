@@ -122,7 +122,7 @@
                         pronouns: dictToList(profile.pronouns),
                         description: profile.description,
                         birthday: profile.birthday,
-                        links: profile.links,
+                        links: Object.keys(profile.links).length ? profile.links : [],
                         flags: dictToList(profile.flags),
                         words: profile.words.map(x => dictToList(x)),
                     };
@@ -139,7 +139,7 @@
                     pronouns: {},
                     description: '',
                     birthday: profile.birthday,
-                    links: profile.links,
+                    links: Object.keys(profile.links).length ? profile.links : [],
                     flags: dictToList(profile.flags),
                     words: defaultWords,
                 };
