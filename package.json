@@ -21,7 +21,7 @@
     "js-md5": "^0.7.3",
     "jsonwebtoken": "^8.5.1",
     "mailer": "^0.6.7",
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.14.7",
     "sql-template-strings": "^2.2.2",
     "sqlite": "^4.0.12",
     "sqlite3": "^5.0.0",

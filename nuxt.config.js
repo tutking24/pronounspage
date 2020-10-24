@@ -11,7 +11,6 @@ const colour = '#C71585';
 const bodyParser = require('body-parser');
 
 export default {
-    mode: 'universal',
     target: 'server',
     head: {
         title: title,
