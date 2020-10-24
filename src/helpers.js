@@ -124,6 +124,9 @@ export const dictToList = dict => {
 }
 
 export const listToDict = list => {
+    if (Object.keys(list).length === 0) {
+        return {}
+    }
     const dict = {};
     for (let el of list) {
         dict[el.key] = el.value;

@@ -76,5 +76,12 @@ contact:
 user:
     enabled: true
     route: 'account'
+    profileEditorRoute: 'my-card'
+    profile:
+        defaultWords:
+            - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
+            - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']
+            - ['pretty', 'handsome', 'cute']
+            - ['partner', 'boyfriend', 'girlfriend', 'joyfriend']
 
 redirects: []

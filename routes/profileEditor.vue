@@ -85,9 +85,16 @@
 </template>
 
 <script>
-    import { head, dictToList, listToDict } from "../src/helpers";
+    import { head, dictToList, listToDict, buildList } from "../src/helpers";
     import { templates } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
+    import config from '../data/config.suml';
+
+    const defaultWords = config.user.profile.defaultWords.map(c => buildList(function* () {
+        for (let word of c) {
+            yield {key: word, value: 0};
+        }
+    }))
 
     export default {
         data() {
@@ -134,7 +141,7 @@
                     birthday: profile.birthday,
                     links: profile.links,
                     flags: dictToList(profile.flags),
-                    words: [{}, {}, {}, {}], // TODO defaults
+                    words: defaultWords,
                 };
             }
 
@@ -145,7 +152,7 @@
                 birthday: null,
                 links: {},
                 flags: {},
-                words: [{}, {}, {}, {}],
+                words: defaultWords,
             };
         },
         methods: {
