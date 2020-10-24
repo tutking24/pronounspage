@@ -44,7 +44,7 @@
             <h3 class="h4"><T>profile.list</T>:</h3>
             <ul class="list-group mb-3">
                 <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
-                    <ProfileOverview :profile="profiles[locale]" :locale="locale"/>
+                    <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
                 </li>
             </ul>
         </template></Loading>
@@ -95,6 +95,9 @@
             logout() {
                 this.$store.commit('setToken', null);
                 this.$cookies.removeAll();
+            },
+            setProfiles(profiles) {
+                this.profiles = profiles;
             },
         },
     }

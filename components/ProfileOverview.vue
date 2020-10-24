@@ -10,9 +10,10 @@
                 <Icon v="edit"/>
                 <T>profile.edit</T>
             </LocaleLink>
-            <LocaleLink :locale="locale" link="/TODOS" class="badge badge-light">
+            <Spinner v-if="deleting"/>
+            <a v-else href="#" class="badge badge-light" @click.prevent="removeProfile(locale)">
                 <Icon v="trash-alt"/>
-            </LocaleLink>
+            </a>
         </span>
         <span v-else>
             <LocaleLink :locale="locale" :link="`/${config.user.profileEditorRoute}`" class="badge badge-light border">
@@ -28,6 +29,21 @@
         props: {
             profile: { required: true },
             locale: { required: true },
-        }
+        },
+        data() {
+            return {
+                deleting: false,
+            }
+        },
+        methods: {
+            async removeProfile() {
+                await this.$confirm(this.$t('profile.deleteConfirm'), 'danger');
+
+                this.deleting = true;
+                const response = await this.$axios.$post(`/profile/delete/${this.config.locale}`, {}, { headers: this.$auth() });
+                this.deleting = false;
+                this.$emit('update', response);
+            },
+        },
     }
 </script>

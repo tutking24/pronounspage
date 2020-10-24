@@ -38,7 +38,7 @@ const buildProfile = profile => {
     };
 };
 
-const fetchProfile = async (db, res, username, self) => {
+const fetchProfiles = async (db, res, username, self) => {
     const profiles = await db.all(SQL`
         SELECT profiles.*, users.username, users.email FROM profiles LEFT JOIN users on users.id == profiles.userId 
         WHERE users.username = ${username}
@@ -65,7 +65,7 @@ export default async function (req, res, next) {
 
     if (req.method === 'GET' && req.url.startsWith('/get/')) {
         const username = req.url.substring(5);
-        return await fetchProfile(db, res, username, user && user.authenticated && user.username === username)
+        return await fetchProfiles(db, res, username, user && user.authenticated && user.username === username)
     }
 
     if (!user || !user.authenticated) {
@@ -83,7 +83,16 @@ export default async function (req, res, next) {
                     ${JSON.stringify(req.body.words)}, 1
         )`);
 
-        return fetchProfile(db, res, user.username, true);
+        return fetchProfiles(db, res, user.username, true);
+    }
+
+    if (req.method === 'POST' && req.url.startsWith('/delete/')) {
+        const locale = req.url.substring(8);
+        const userId = (await db.get(SQL`SELECT id FROM users WHERE username = ${user.username}`)).id;
+
+        await db.get(SQL`DELETE FROM profiles WHERE userId = ${userId} AND locale = ${locale}`);
+
+        return fetchProfiles(db, res, user.username, true);
     }
 
     return renderJson(res, { error: 'notfound' }, 404);

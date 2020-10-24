@@ -698,6 +698,7 @@ profile:
     show: 'Pokaż'
     edit: 'Edytuj'
     delete: 'Usuń'
+    deleteConfirm: 'Czy na pewno chcesz usunąć tę wizytówkę?'
     editor:
         header: 'Edytor wizytówki'
         save: 'Zapisz wizytówkę'
@@ -725,3 +726,8 @@ footer:
 notFound:
     message: 'Strony nie znaleziono'
     back: 'Wróć na główną'
+
+confirm:
+    header: 'Czy jesteś pewnx?'
+    yes: 'Tak, na pewno'
+    no: 'Nie, anuluj'
