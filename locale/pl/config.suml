@@ -221,6 +221,7 @@ support:
 user:
     enabled: true
     route: 'konto'
+    profileEditorRoute: 'wizytówka'
 
 redirects:
     - { from: '^/neutratywy', to: '/rzeczowniki' }

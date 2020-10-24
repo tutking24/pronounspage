@@ -112,3 +112,33 @@ export const gravatar = (user, size = 128) => {
 
     return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallback)}&s=${size}`;
 }
+
+export const dictToList = dict => {
+    const list = [];
+    for (let key in dict) {
+        if (dict.hasOwnProperty(key)) {
+            list.push({key, value: dict[key]});
+        }
+    }
+    return list;
+}
+
+export const listToDict = list => {
+    const dict = {};
+    for (let el of list) {
+        dict[el.key] = el.value;
+    }
+    return dict;
+}
+
+export const curry = function (func) {
+    return function curried(...args) {
+        if (args.length >= func.length) {
+            return func.apply(this, args);
+        } else {
+            return function(...args2) {
+                return curried.apply(this, args.concat(args2));
+            }
+        }
+    };
+}

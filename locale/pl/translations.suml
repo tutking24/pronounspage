@@ -683,14 +683,24 @@ user:
         change: 'Zmień'
 
 profile:
+    description: 'Opis'
     names: 'Imiona'
     pronouns: 'Zaimki'
+    pronounsInfo: 'Możesz tu wpisać zaimek lub wkleić linka do niego.'
     words: 'Słowa'
+    birthday: 'Wiek'
+    birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
+    links: 'Linki'
+    column: 'Kolumna'
+
     list: 'Twoje wizytówki'
     init: 'Stwórz wizytówkę'
     show: 'Pokaż'
     edit: 'Edytuj'
     delete: 'Usuń'
+    editor:
+        header: 'Edytor wizytówki'
+        save: 'Zapisz wizytówkę'
 
 share: 'Udostępnij'
 

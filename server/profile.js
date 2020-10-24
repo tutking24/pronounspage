@@ -38,27 +38,52 @@ const buildProfile = profile => {
     };
 };
 
+const fetchProfile = async (db, res, username, self) => {
+    const profiles = await db.all(SQL`
+        SELECT profiles.*, users.username, users.email FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        WHERE users.username = ${username}
+        AND profiles.active = 1
+        ORDER BY profiles.locale
+    `);
+
+    return renderJson(res, buildDict(function* () {
+        for (let profile of profiles) {
+            yield [
+                profile.locale,
+                {
+                    ...buildProfile(profile),
+                    birthday: self ? profile.birthday : undefined,
+                }
+            ];
+        }
+    }));
+}
+
 export default async function (req, res, next) {
     const db = await dbConnection();
     const user = authenticate(req);
 
-
     if (req.method === 'GET' && req.url.startsWith('/get/')) {
-        const profiles = await db.all(SQL`
-            SELECT profiles.*, users.username, users.email FROM profiles LEFT JOIN users on users.id == profiles.userId 
-            WHERE users.username = ${req.url.substring(5)}
-            AND profiles.active = 1
-            ORDER BY profiles.locale
-        `)
-        return renderJson(res, buildDict(function* () {
-            for (let profile of profiles) {
-                yield [profile.locale, buildProfile(profile)];
-            }
-        }));
+        const username = req.url.substring(5);
+        return await fetchProfile(db, res, username, user && user.authenticated && user.username === username)
     }
 
     if (!user || !user.authenticated) {
         return renderJson(res, {error: 'unauthorised'}, 401);
+    }
+
+    if (req.method === 'POST' && req.url.startsWith('/save/')) {
+        const locale = req.url.substring(6);
+        const userId = (await db.get(SQL`SELECT id FROM users WHERE username = ${user.username}`)).id;
+
+        await db.get(SQL`DELETE FROM profiles WHERE userId = ${userId} AND locale = ${locale}`);
+        await db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active)
+            VALUES (${ulid()}, ${userId}, ${locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+                    ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links)}, ${JSON.stringify(req.body.flags)},
+                    ${JSON.stringify(req.body.words)}, 1
+        )`);
+
+        return fetchProfile(db, res, user.username, true);
     }
 
     return renderJson(res, { error: 'notfound' }, 404);

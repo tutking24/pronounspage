@@ -1,17 +1,25 @@
 <template>
     <NotFound v-if="!profile"/>
     <div v-else class="container">
-        <div class="mb-3 d-flex justify-content-between align-items-center flex-column flex-md-row">
+        <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="profile"/>
                 @{{username}}
             </h2>
-            <div class="list-group" v-if="Object.keys(profiles).length > 1">
-                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
-                            :locale="locale" :link="`/@${username}`"
-                            :class="['list-group-item list-group-item-action small px-3 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
-                    {{options.name}}
-                </LocaleLink>
+            <div>
+                <nuxt-link v-if="$user() && $user().username === username" :to="`/${config.user.profileEditorRoute}`"
+                           class="btn btn-outline-primary btn-sm"
+                >
+                    <Icon v="edit"/>
+                    <T>profile.edit</T>
+                </nuxt-link>
+                <div class="list-group" v-if="Object.keys(profiles).length > 1">
+                    <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
+                                :locale="locale" :link="`/@${username}`"
+                                :class="['list-group-item list-group-item-action small px-3 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
+                        {{options.name}}
+                    </LocaleLink>
+                </div>
             </div>
         </div>
 
@@ -59,7 +67,9 @@
                 </h3>
 
                 <ul class="list-unstyled">
-                    <li v-for="(opinion, pronoun) in profile.pronouns"><Opinion :word="buildTemplate(pronoun).name('')" :opinion="opinion" :link="`/${pronoun}`"/></li>
+                    <li v-for="{link, template, opinion} in pronounTemplates">
+                        <Opinion :word="template.name(glue)" :opinion="opinion" :link="`/${link}`"/>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -85,25 +95,19 @@
     import { head } from "../src/helpers";
     import { templates } from "~/src/data";
     import { buildTemplate } from "../src/buildTemplate";
-    import LocaleLink from "../components/LocaleLink";
 
     export default {
-        components: {LocaleLink},
         data() {
             return {
                 username: this.$route.params.pathMatch,
                 profiles: {},
+                glue: ' ' + this.$t('template.or') + ' ',
             }
         },
         async asyncData({ app, route }) {
             return {
                 profiles: await app.$axios.$get(`/profile/get/${route.params.pathMatch}`),
             };
-        },
-        methods: {
-            buildTemplate(link) {
-                return buildTemplate(templates, link);
-            },
         },
         computed: {
             profile() {
@@ -114,6 +118,24 @@
                 }
 
                 return null;
+            },
+            pronounTemplates() {
+                const pronounTemplates = [];
+                for (let pronoun in this.profile.pronouns) {
+                    if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
+
+                    const link = pronoun.replace(new RegExp('^' + process.env.BASE_URL), '').replace(new RegExp('^/'), '');
+                    const template = buildTemplate(templates, link);
+
+                    if (template) {
+                        pronounTemplates.push({
+                            link,
+                            template,
+                            opinion: this.profile.pronouns[pronoun],
+                        });
+                    }
+                }
+                return pronounTemplates;
             },
         },
         head() {

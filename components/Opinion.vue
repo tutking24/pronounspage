@@ -27,11 +27,3 @@
         },
     }
 </script>
-
-<style lang="scss" scoped>
-    img.icon {
-        height: 1em;
-        width: 1.25em;
-        text-align: center;
-    }
-</style>

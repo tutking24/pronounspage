@@ -134,6 +134,7 @@
                         icon: 'user',
                         text: this.user ? '@' + this.user.username : this.$t('user.header'),
                         textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
+                        extra: ['/' + this.config.user.profileEditorRoute, this.$user() ? '/@' + this.$user().username : null],
                     });
                 }
 
@@ -142,7 +143,9 @@
         },
         methods: {
             isActiveRoute(link) {
-                return this.$route.path === link.link || (link.extra || []).includes(this.$route.name);
+                return this.$route.path === link.link
+                    || (link.extra || []).includes(this.$route.name)
+                    || (link.extra || []).includes(this.$route.path);
             },
         },
     }

@@ -87,6 +87,7 @@ export default {
     env: {
         BASE_URL: process.env.BASE_URL,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
+        LOCALE: config.locale,
     },
     serverMiddleware: {
         '/': bodyParser.json(),
@@ -134,6 +135,7 @@ export default {
 
             if (config.user.enabled) {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
+                routes.push({path: '/' + config.user.profileEditorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
             }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
