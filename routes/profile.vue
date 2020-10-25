@@ -23,18 +23,18 @@
             </div>
         </div>
 
-        <section v-if="profile.description.trim().length">
+        <section v-if="profile.age ||profile.description.trim().length">
             <p v-for="line in profile.description.split('\n')" class="mb-1">
                 {{ line }}
             </p>
+            <p v-if="profile.age">
+                <Icon v="birthday-cake"/>
+                {{ profile.age }}
+            </p>
         </section>
 
-        <section v-if="profile.age || Object.keys(profile.links).length">
+        <section v-if="Object.keys(profile.links).length">
             <ul class="list-inline">
-                <li v-if="profile.age" class="list-inline-item">
-                    <Icon v="birthday-cake"/>
-                    {{ profile.age }}
-                </li>
                 <li v-for="link in profile.links" class="list-inline-item pr-2">
                     <ProfileLink :link="link"/>
                 </li>

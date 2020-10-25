@@ -1,9 +1,9 @@
 <template>
     <span>
-        <img v-if="icon.startsWith('https://')" :src="icon" class="icon"/>
-        <Icon v-else :v="icon" :set="iconSet"/>
+        <img v-if="provider.icon.startsWith('https://')" :src="provider.icon" class="icon"/>
+        <Icon v-else :v="provider.icon" :set="provider.iconSet || 'l'"/>
         <a :href="link" target="_blank" rel="noopener">
-            {{text}}
+            {{provider.text}}
         </a>
     </span>
 </template>
@@ -11,47 +11,59 @@
 <script>
     import {clearUrl} from "../src/helpers";
 
-    const REGEX_TWITTER = '^https://twitter.com/([^/]+)';
-    const REGEX_CAKE = '^https://cake.avris.it/([bgoprc][A-E][0-6])$';
+    const LINK_PROVIDERS = {
+        twitter: {
+            regex: '^https://twitter.com/([^/]+)',
+            icon: 'twitter',
+            iconSet: 'b',
+        },
+        email: {
+            regex: '^mailto:([^/]+)',
+            icon: 'envelope',
+        },
+        reddit: {
+            regex: '^https://reddit.com/u/([^/]+)',
+            icon: 'reddit',
+            iconSet: 'b',
+        },
+        telegram: {
+            regex: '^https://t.me/([^/]+)',
+            icon: 'telegram',
+            iconSet: 'b',
+        },
+        paypal: {
+            regex: '^https://paypal.me/([^/]+)',
+            icon: 'paypal',
+            iconSet: 'b',
+        },
+        cake: {
+            regex: '^https://cake.avris.it/([bgoprc][A-E][0-6])$',
+            icon: 'https://cake.avris.it/favicon.png',
+        },
+    };
 
     export default {
         props: {
             link: { required: true },
         },
         computed: {
-            type() {
-                if (this.link.match(REGEX_TWITTER)) {
-                    return 'twitter';
+            provider() {
+                for (let name in LINK_PROVIDERS) {
+                    if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
+                    const provider = LINK_PROVIDERS[name];
+                    const m = this.link.match(provider.regex);
+                    if (m) {
+                        return {
+                            ...provider,
+                            text: m[1],
+                        };
+                    }
                 }
 
-                if (this.link.match(REGEX_CAKE)) {
-                    return 'cake';
-                }
-
-                return 'other';
-            },
-            icon() {
                 return {
-                    twitter: 'twitter',
-                    cake: 'https://cake.avris.it/favicon.png',
-                    other: 'globe-europe',
-                }[this.type];
-            },
-            iconSet() {
-                return {
-                    twitter: 'b',
-                }[this.type] || 'l';
-            },
-            text() {
-                if (this.type === 'twitter') {
-                    return this.link.match(REGEX_TWITTER)[1];
+                    icon: 'globe-europe',
+                    text: clearUrl(this.link),
                 }
-
-                if (this.type === 'cake') {
-                    return this.link.match(REGEX_CAKE)[1];
-                }
-
-                return clearUrl(this.link);
             },
         }
     };
