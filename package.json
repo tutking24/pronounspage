@@ -27,7 +27,8 @@
     "sqlite3": "^5.0.0",
     "suml-loader": "^0.1.1",
     "ulid": "^2.3.0",
-    "vue-matomo": "^3.13.5-0"
+    "vue-matomo": "^3.13.5-0",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "git+ssh://git@gitlab.com:Avris/FontAwesomePro.git",

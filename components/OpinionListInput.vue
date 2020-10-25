@@ -1,5 +1,5 @@
 <template>
-    <ListInput v-model="v" :prototype="{key: '', value: 0}" v-slot="s">
+    <ListInput v-model="v" :prototype="{key: '', value: 0}" v-slot="s" :group="group">
         <div class="input-group-prepend">
             <button type="button" :class="['btn', parseInt(s.val.value) === 1 ? 'btn-primary' : 'btn-outline-secondary']"
                     @click="s.update({key: s.val.key, value: 1})">
@@ -20,7 +20,10 @@
 
 <script>
     export default {
-        props: { value: {} },
+        props: {
+            value: {},
+            group: {},
+        },
         data() { return { v: this.value } },
         watch: { v() { this.$emit('input', this.v); } }
     }

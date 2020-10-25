@@ -1,9 +1,14 @@
 <template>
-    <ul class="list-unstyled">
-        <li v-for="(v, i) in value" ref="items">
+    <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" class="list-unstyled" :group="group">
+        <li v-for="(v, i) in iVal" ref="items">
             <div class="input-group mb-1">
-                <slot v-bind:val="value[i]" v-bind:update="curry(update)(i)">
-                    <input v-model="value[i]" type="text" class="form-control" required/>
+                <div class="input-group-prepend">
+                    <button class="btn btn-light border handle" type="button">
+                        <Icon v="bars"/>
+                    </button>
+                </div>
+                <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)">
+                    <input v-model="iVal[i]" type="text" class="form-control" required/>
                 </slot>
                 <div class="input-group-append">
                     <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)">
@@ -13,25 +18,36 @@
             </div>
         </li>
 
-        <li>
+        <li slot="footer">
             <button class="btn btn-outline-success btn-block" type="button" @click.prevent="add">
                 <Icon v="plus"/>
             </button>
         </li>
-    </ul>
+    </draggable>
 </template>
 
 <script>
     import { curry } from "../src/helpers";
+    import draggable from 'vuedraggable'
 
     export default {
+        components: {
+            draggable,
+        },
         props: {
             value: {},
             prototype: { 'default': '' },
+            group: {},
         },
         data() {
             return {
+                iVal: this.value,
                 curry: curry,
+            }
+        },
+        watch: {
+            value() {
+                this.iVal = this.value;
             }
         },
         methods: {
@@ -54,3 +70,10 @@
         },
     }
 </script>
+
+<style lang="scss" scoped>
+    .ghost {
+        opacity: 0.5;
+        background: #c8ebfb;
+    }
+</style>

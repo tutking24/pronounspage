@@ -72,7 +72,7 @@
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
                     </h4>
-                    <OpinionListInput v-model="words[i]"/>
+                    <OpinionListInput v-model="words[i]" group="words"/>
                 </template>
             </div>
 
