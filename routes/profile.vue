@@ -80,8 +80,8 @@
                 <T>profile.words</T>
             </h3>
 
-            <div class="d-flex">
-                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="w-25">
+            <div>
+                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="float-left w-50 w-md-25">
                     <ul class="list-unstyled">
                         <li v-for="(opinion, word) in group"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>

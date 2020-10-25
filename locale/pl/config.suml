@@ -224,7 +224,7 @@ user:
     profileEditorRoute: 'wizytówka'
     profile:
         defaultWords:
-            - ['pan', 'pani', 'pań', 'panu']
+            - ['pan', 'pani', 'państwo', 'pań', 'panu']
             - ['osoba', 'mężczyzna', 'kobieta', 'enby', 'facet', 'baba', 'ziom', 'laska']
             - ['ładnx', 'przystojnx', 'słodkx']
             - ['partner', 'chłopak', 'dziewczyna']
