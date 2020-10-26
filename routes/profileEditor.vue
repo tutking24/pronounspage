@@ -28,10 +28,10 @@
                     <Icon v="link"/>
                     <T>profile.pronouns</T>
                 </h3>
-                <OpinionListInput v-model="pronouns"/>
-                <p class="small text-muted">
+                <p class="small text-muted mb-0">
                     <T>profile.pronounsInfo</T>
                 </p>
+                <OpinionListInput v-model="pronouns"/>
             </div>
 
             <div class="form-group">
@@ -40,6 +40,19 @@
                     <T>profile.description</T>
                 </h3>
                 <textarea class="form-control" v-model="description" maxlength="256" rows="4"/>
+            </div>
+
+            <div class="form-group">
+                <h3 class="h4">
+                    <Icon v="flag"/>
+                    <T>profile.flags</T>
+                </h3>
+                <p class="small text-muted mb-0">
+                    <T>profile.flagsInfo</T>
+                </p>
+                <ButtonList v-model="flags" :options="allFlags" v-slot="s">
+                    <Flag :name="s.desc" :src="`/flags/${s.v}.png`"/>
+                </ButtonList>
             </div>
 
             <div class="form-group">
@@ -57,10 +70,10 @@
                     <Icon v="birthday-cake"/>
                     <T>profile.birthday</T>
                 </h3>
-                <input type="date" class="form-control" v-model="birthday"/>
-                <p class="small text-muted">
+                <p class="small text-muted mb-0">
                     <T>profile.birthdayInfo</T>
                 </p>
+                <input type="date" class="form-control" v-model="birthday"/>
             </div>
 
             <div class="form-group">
@@ -100,6 +113,7 @@
         data() {
             return {
                 saving: false,
+                allFlags: process.env.FLAGS,
             };
         },
         async asyncData({ app, store }) {
@@ -123,7 +137,7 @@
                         description: profile.description,
                         birthday: profile.birthday,
                         links: Object.keys(profile.links).length ? profile.links : [],
-                        flags: dictToList(profile.flags),
+                        flags: profile.flags,
                         words: profile.words.map(x => dictToList(x)),
                     };
                 }
@@ -140,7 +154,7 @@
                     description: '',
                     birthday: profile.birthday,
                     links: Object.keys(profile.links).length ? profile.links : [],
-                    flags: dictToList(profile.flags),
+                    flags: profile.flags,
                     words: defaultWords,
                 };
             }
@@ -166,8 +180,8 @@
                     pronouns: listToDict(this.pronouns),
                     description: this.description,
                     birthday: this.birthday,
-                    links: this.links,
-                    flags: listToDict(this.flags),
+                    links: [...this.links],
+                    flags: [...this.flags],
                     words: this.words.map(x => listToDict(x)),
                 }, { headers: this.$auth() });
                 this.saving = false;

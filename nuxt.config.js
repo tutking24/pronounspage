@@ -1,6 +1,7 @@
 import translations from './server/translations';
 import config from './server/config';
 import fs from 'fs';
+import {buildDict} from "./src/helpers";
 
 const locale = config.locale;
 const title = translations.title;
@@ -87,6 +88,16 @@ export default {
         BASE_URL: process.env.BASE_URL,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
         LOCALE: config.locale,
+        FLAGS: buildDict(function *() {
+            for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
+                yield [
+                    flag.replace(new RegExp('\.png$'), ''),
+                    flag.replace(new RegExp('\.png$'), '')
+                        .replace(new RegExp('_', 'g'), '')
+                        .trim()
+                ];
+            }
+        }),
     },
     serverMiddleware: {
         '/': bodyParser.json(),

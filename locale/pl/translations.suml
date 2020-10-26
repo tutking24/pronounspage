@@ -690,6 +690,8 @@ profile:
     words: 'Słowa'
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
+    flags: 'Flagi'
+    flagsInfo: 'Przeciągnij swoje pride''owe flagi do poniższej ramki.'
     links: 'Linki'
     column: 'Kolumna'
 
