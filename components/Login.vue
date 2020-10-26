@@ -20,7 +20,7 @@
             <div class="alert alert-success">
                 <p class="mb-0">
                     <Icon v="envelope-open-text"/>
-                    <T :params="{email: payload.email}">user.login.emailSent</T>
+                    <T>user.login.emailSent</T>
                 </p>
             </div>
 
