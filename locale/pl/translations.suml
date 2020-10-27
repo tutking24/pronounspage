@@ -656,7 +656,7 @@ user:
     login:
         placeholder: 'Email (lub nazwa użytkownika, jeśli już posiadasz konto)'
         action: 'Zaloguj'
-        emailSent: 'Na adres <strong>%email%</strong> wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
+        emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
         userNotFound: 'Użytkownik nie został znaleziony.'
         email:
             subject: 'Twój kod logowania to %code%'
@@ -664,6 +664,8 @@ user:
                 Aby potwierdzić swój adres email, użyj kodu: %code%.
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+        why: >
+            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=przykład}).
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
@@ -676,11 +678,38 @@ user:
         changeEmail:
             header: 'Adres email'
             action: 'Zmień'
+            invalid: 'Nieprawidłowy adres email.'
+            taken: 'Ten adres jest zajęty.'
         admin: 'Adminię'
     logout: 'Wyloguj'
     avatar:
         header: 'Avatar'
         change: 'Zmień'
+    deleteAccount: 'Usuń konto'
+    deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
+
+profile:
+    description: 'Opis'
+    names: 'Imiona'
+    pronouns: 'Zaimki'
+    pronounsInfo: 'Możesz tu wpisać zaimek lub wkleić linka do niego.'
+    words: 'Słowa'
+    birthday: 'Wiek'
+    birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
+    flags: 'Flagi'
+    flagsInfo: 'Przeciągnij swoje pride''owe flagi do poniższej ramki.'
+    links: 'Linki'
+    column: 'Kolumna'
+
+    list: 'Twoje wizytówki'
+    init: 'Stwórz wizytówkę'
+    show: 'Pokaż'
+    edit: 'Edytuj'
+    delete: 'Usuń'
+    deleteConfirm: 'Czy na pewno chcesz usunąć tę wizytówkę?'
+    editor:
+        header: 'Edytor wizytówki'
+        save: 'Zapisz wizytówkę'
 
 share: 'Udostępnij'
 
@@ -705,3 +734,13 @@ footer:
 notFound:
     message: 'Strony nie znaleziono'
     back: 'Wróć na główną'
+
+confirm:
+    header: 'Czy jesteś pewnx?'
+    yes: 'Tak, na pewno'
+    no: 'Nie, anuluj'
+
+terms:
+    header: 'Regulamin'
+    lastUpdate: 'Ostatnia aktualizacja'
+    consent: 'Zakładając konto, akceptujesz'

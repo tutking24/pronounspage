@@ -13,6 +13,10 @@
                 </Spaceless>
             </template>
             <br/>
+            <nuxt-link v-if="author.profile" :to="`/@${author.profile}`" class="badge badge-light border">
+                <Icon v="id-card"/>
+                @{{author.profile}}
+            </nuxt-link>
             <a v-if="author.website" :href="author.website" target="_blank" rel="noopener" class="badge badge-light border">
                 <Icon v="globe"/>
                 Blog

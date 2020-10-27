@@ -35,6 +35,12 @@
                         <Icon v="gitlab" set="b"/>
                     </SquareButton>
                 </div>
+                <p v-if="config.user.enabled" class="small">
+                    <nuxt-link :to="`/${config.user.termsRoute}`">
+                        <Icon v="gavel"/>
+                        <T>terms.header</T>
+                    </nuxt-link>
+                </p>
                 <Share/>
             </div>
         </div>

@@ -4,10 +4,10 @@ import { parseTemplates, getTemplate } from './buildTemplate';
 import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
 
 export const locales = {
-    en: { name: 'English', url: 'https://en.pronouns.page' },
+    // en: { name: 'English', url: 'https://en.pronouns.page' },
     pl: { name: 'Polski', url: 'https://zaimki.pl' },
-    de: { name: 'Deutsch', url: 'https://de.pronouns.page' },
-    nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
+    // de: { name: 'Deutsch', url: 'https://de.pronouns.page' },
+    // nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
 }
 
 import templatesRaw from '../data/templates/templates.tsv';

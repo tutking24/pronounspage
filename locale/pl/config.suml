@@ -1,5 +1,4 @@
 locale: 'pl'
-localeSwitch: false
 
 template:
     default: 'on'
@@ -181,6 +180,7 @@ contact:
     authors:
         -
             name: 'Andrea'
+            profile: 'andrea'
             pronouns: 'onu'
             pronounsLink: '/onu'
             website: 'https://avris.it'
@@ -222,6 +222,14 @@ support:
 user:
     enabled: true
     route: 'konto'
+    profileEditorRoute: 'wizytówka'
+    termsRoute: 'regulamin'
+    profile:
+        defaultWords:
+            - ['pan', 'pani', 'państwo', 'pań', 'panu']
+            - ['osoba', 'mężczyzna', 'kobieta', 'enby', 'facet', 'baba', 'ziom', 'laska']
+            - ['ładnx', 'przystojnx', 'słodkx']
+            - ['partner', 'chłopak', 'dziewczyna', 'mąż', 'żona']
 
 redirects:
     - { from: '^/neutratywy', to: '/rzeczowniki' }

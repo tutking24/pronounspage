@@ -1,21 +1,19 @@
 <template>
-    <img :src="gravatar(user.email)" alt="" class="rounded-circle"/>
+    <img :src="gravatar" alt="" class="rounded-circle"/>
 </template>
 
 <script>
-    import md5 from 'js-md5';
-    import { Base64 } from 'js-base64';
+    import { gravatar } from "../src/helpers";
 
     export default {
         props: {
             user: { required: true },
+            size: { 'default': 128 }
         },
-        methods: {
-            gravatar(email, size = 128) {
-                const fallback = `https://avi.avris.it/${size}/${Base64.encode(email).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
-
-                return `https://www.gravatar.com/avatar/${md5(email)}?d=${encodeURIComponent(fallback)}&s=${size}`;
-            }
+        data() {
+            return {
+                gravatar: gravatar(this.user, this.size),
+            };
         },
     }
 </script>

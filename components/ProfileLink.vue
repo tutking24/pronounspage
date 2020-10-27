@@ -1,0 +1,76 @@
+<template>
+    <span>
+        <img v-if="provider.icon.startsWith('https://')" :src="provider.icon" class="icon"/>
+        <Icon v-else :v="provider.icon" :set="provider.iconSet || 'l'"/>
+        <a :href="link" target="_blank" rel="noopener">
+            {{provider.text}}
+        </a>
+    </span>
+</template>
+
+<script>
+    import {clearUrl} from "../src/helpers";
+
+    const LINK_PROVIDERS = {
+        twitter: {
+            regex: '^https://twitter.com/([^/]+)',
+            icon: 'twitter',
+            iconSet: 'b',
+        },
+        email: {
+            regex: '^mailto:([^/]+)',
+            icon: 'envelope',
+        },
+        reddit: {
+            regex: '^https://reddit.com/u/([^/]+)',
+            icon: 'reddit',
+            iconSet: 'b',
+        },
+        telegram: {
+            regex: '^https://t.me/([^/]+)',
+            icon: 'telegram',
+            iconSet: 'b',
+        },
+        paypal: {
+            regex: '^https://paypal.me/([^/]+)',
+            icon: 'paypal',
+            iconSet: 'b',
+        },
+        cake: {
+            regex: '^https://cake.avris.it/([bgoprc][A-E][0-6])$',
+            icon: 'https://cake.avris.it/favicon.png',
+        },
+    };
+
+    export default {
+        props: {
+            link: { required: true },
+        },
+        computed: {
+            provider() {
+                for (let name in LINK_PROVIDERS) {
+                    if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
+                    const provider = LINK_PROVIDERS[name];
+                    const m = this.link.match(provider.regex);
+                    if (m) {
+                        return {
+                            ...provider,
+                            text: m[1],
+                        };
+                    }
+                }
+
+                return {
+                    icon: 'globe-europe',
+                    text: clearUrl(this.link),
+                }
+            },
+        }
+    };
+</script>
+
+<style lang="scss" scoped>
+    .icon {
+        height: 1em;
+    }
+</style>

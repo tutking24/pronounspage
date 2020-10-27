@@ -19,6 +19,13 @@
                 <div class="mx-2 flex-grow-1">
                     <Alert type="danger" :message="error"/>
 
+                    <div v-if="changeEmailAuthId" class="alert alert-success">
+                        <p class="mb-0 narrow-message">
+                            <Icon v="envelope-open-text"/>
+                            <T>user.login.emailSent</T>
+                        </p>
+                    </div>
+
                     <form @submit.prevent="changeUsername">
                         <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
                         <div class="input-group mb-3">
@@ -32,20 +39,54 @@
                         </div>
                     </form>
 
-                    <div>
+                    <form @submit.prevent="changeEmail">
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
-                        <p>{{ email }}</p>
-                    </div>
+                        <div v-if="!changeEmailAuthId" class="input-group mb-3">
+                            <input type="email" class="form-control" v-model="email" required/>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary">
+                                    <T>user.account.changeEmail.action</T>
+                                </button>
+                            </div>
+                        </div>
+                        <div v-else class="input-group mb-3">
+                            <input type="text" class="form-control text-center" v-model="code"
+                                   placeholder="000000" autofocus required minlength="0" maxlength="6"
+                                   inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                                   ref="code"
+                            />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary">
+                                    <Icon v="key"/>
+                                    <T>user.code.action</T>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
-        <p>
-            <button class="btn btn-outline-secondary btn-sm" @click="logout">
+        <Loading :value="profiles"><template v-if="profiles !== undefined">
+            <h3 class="h4"><T>profile.list</T>:</h3>
+            <ul class="list-group mb-3">
+                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
+                    <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
+                </li>
+            </ul>
+        </template></Loading>
+
+        <section>
+            <a href="#" class="badge badge-light border" @click.prevent="logout">
                 <Icon v="sign-out"/>
                 <T>user.logout</T>
-            </button>
-        </p>
+            </a>
+
+            <a href="#" class="badge badge-light border" @click.prevent="deleteAccount">
+                <Icon v="trash-alt"/>
+                <T>user.deleteAccount</T>
+            </a>
+        </section>
     </section>
 </template>
 
@@ -57,18 +98,22 @@
                 email: this.$user().email,
 
                 error: '',
-            };
+                changeEmailAuthId: null,
+                code: '',
+
+                profiles: undefined,
+            }
+        },
+        async mounted() {
+            this.profiles = await this.$axios.$get(`/profile/get/${this.$user().username}`);
         },
         methods: {
             async changeUsername() {
-                await this.post(`/user/change-username`, {
-                    username: this.username
-                }, { headers: this.$auth() });
-            },
-            async post(url, data, options = {}) {
                 this.error = '';
 
-                const response = await this.$axios.$post(url, data, options);
+                const response = await this.$axios.$post(`/user/change-username`, {
+                    username: this.username,
+                }, { headers: this.$auth() });
 
                 if (response.error) {
                     this.error = response.error;
@@ -78,10 +123,59 @@
                 this.$store.commit('setToken', response.token);
                 this.$cookies.set('token', this.$store.state.token);
             },
+            async changeEmail() {
+                this.error = '';
+
+                const response = await this.$axios.$post(`/user/change-email`, {
+                    email: this.email,
+                    authId: this.changeEmailAuthId,
+                    code: this.code,
+                }, { headers: this.$auth() });
+
+                if (response.error) {
+                    this.error = response.error;
+                    return;
+                }
+
+                if (!this.changeEmailAuthId) {
+                    this.changeEmailAuthId = response.authId;
+                    this.$nextTick(_ => {
+                        this.$refs.code.focus();
+                    });
+                } else {
+                    this.changeEmailAuthId = null;
+                    this.code = null;
+
+                    this.$store.commit('setToken', response.token);
+                    this.$cookies.set('token', this.$store.state.token);
+                }
+            },
             logout() {
                 this.$store.commit('setToken', null);
                 this.$cookies.removeAll();
             },
+            setProfiles(profiles) {
+                this.profiles = profiles;
+            },
+            async deleteAccount() {
+                await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
+
+                const response = await this.$axios.$post(`/user/delete`, {}, { headers: this.$auth() });
+
+                this.logout();
+            },
         },
     }
 </script>
+
+<style lang="scss" scoped>
+    @import "assets/style";
+
+    .profile-current {
+        border-left: 3px solid $primary;
+    }
+
+    .narrow-message {
+        max-width: 56ch;
+    }
+</style>

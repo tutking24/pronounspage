@@ -1,17 +1,11 @@
+import {renderJson} from "../src/helpers";
+
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
 import { ulid } from 'ulid'
 import authenticate from './authenticate';
 
-const parseQuery = (queryString) => {
-    const query = {};
-    const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
-    for (let i = 0; i < pairs.length; i++) {
-        let pair = pairs[i].split('=');
-        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
-    }
-    return query;
-}
+
 
 const getId = url => url.match(/\/([^/]+)$/)[1];
 
@@ -68,14 +62,15 @@ export default async function (req, res, next) {
     const user = authenticate(req);
     const isAdmin = user && user.authenticated && user.roles === 'admin';
 
-    let result = {error: 'Not found'}
     if (req.method === 'GET' && req.url === '/all') {
-        result = await db.all(`
+        return renderJson(res, await db.all(`
             SELECT * FROM nouns
             ${isAdmin ? '' : 'WHERE approved = 1'}
             ORDER BY approved, masc
-        `);
-    } else if (req.method === 'POST' && req.url === '/submit') {
+        `));
+    }
+
+    if (req.method === 'POST' && req.url === '/submit') {
         if (isAdmin || !isTroll(req.body.data)) {
             const id = ulid()
             await db.get(SQL`
@@ -91,19 +86,23 @@ export default async function (req, res, next) {
                 await approve(db, id);
             }
         }
-        result = 'ok';
-    } else if (req.method === 'POST' && req.url.startsWith('/approve/') && isAdmin) {
-        await approve(db, getId(req.url));
-        result = 'ok';
-    } else if (req.method === 'POST' && req.url.startsWith('/hide/') && isAdmin) {
-        await hide(db, getId(req.url));
-        result = 'ok';
-    } else if (req.method === 'POST' && req.url.startsWith('/remove/') && isAdmin) {
-        await remove(db, getId(req.url));
-        result = 'ok';
+        return renderJson(res, 'ok');
     }
 
-    res.setHeader('content-type', 'application/json');
-    res.write(JSON.stringify(result));
-    res.end()
+    if (req.method === 'POST' && req.url.startsWith('/approve/') && isAdmin) {
+        await approve(db, getId(req.url));
+        return renderJson(res, 'ok');
+    }
+
+    if (req.method === 'POST' && req.url.startsWith('/hide/') && isAdmin) {
+        await hide(db, getId(req.url));
+        return renderJson(res, 'ok');
+    }
+
+    if (req.method === 'POST' && req.url.startsWith('/remove/') && isAdmin) {
+        await remove(db, getId(req.url));
+        return renderJson(res, 'ok');
+    }
+
+    return renderJson(res, {error: 'Not found'}, 404);
 }

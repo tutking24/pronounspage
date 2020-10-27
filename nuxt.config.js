@@ -1,6 +1,7 @@
 import translations from './server/translations';
 import config from './server/config';
 import fs from 'fs';
+import {buildDict} from "./src/helpers";
 
 const locale = config.locale;
 const title = translations.title;
@@ -11,7 +12,6 @@ const colour = '#C71585';
 const bodyParser = require('body-parser');
 
 export default {
-    mode: 'universal',
     target: 'server',
     head: {
         title: title,
@@ -87,12 +87,24 @@ export default {
     env: {
         BASE_URL: process.env.BASE_URL,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
+        LOCALE: config.locale,
+        FLAGS: buildDict(function *() {
+            for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
+                yield [
+                    flag.replace(new RegExp('\.png$'), ''),
+                    flag.replace(new RegExp('\.png$'), '')
+                        .replace(new RegExp('_', 'g'), '')
+                        .trim()
+                ];
+            }
+        }),
     },
     serverMiddleware: {
         '/': bodyParser.json(),
         '/banner': '~/server/banner.js',
         '/api/nouns': '~/server/nouns.js',
         '/api/user': '~/server/user.js',
+        '/api/profile': '~/server/profile.js',
     },
     axios: {
         baseURL: process.env.BASE_URL + '/api',
@@ -133,8 +145,12 @@ export default {
 
             if (config.user.enabled) {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
+                routes.push({path: '/' + config.user.profileEditorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
+                routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
+
+            routes.push({ path: '/@*', component: resolve(__dirname, 'routes/profile.vue') });
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });
         },

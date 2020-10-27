@@ -7,7 +7,7 @@
                     <T>title</T>
                 </nuxt-link>
             </h1>
-            <ul class="list-inline small mb-0" v-if="config.localeSwitch">
+            <ul class="list-inline small mb-0" v-if="Object.keys(locales).length > 1">
                 <li v-for="(options, locale) in locales" :key="locale" class="list-inline-item">
                     <strong v-if="locale === config.locale">
                         {{options.name}}
@@ -128,21 +128,24 @@
                     });
                 }
 
-                // if (this.config.user.enabled) {
-                //     links.push({
-                //         link: '/' + this.config.user.route,
-                //         icon: 'user',
-                //         text: this.user ? '@' + this.user.username : this.$t('user.header'),
-                //         textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
-                //     });
-                // }
+                if (this.config.user.enabled) {
+                    links.push({
+                        link: '/' + this.config.user.route,
+                        icon: 'user',
+                        text: this.user ? '@' + this.user.username : this.$t('user.header'),
+                        textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
+                        extra: ['/' + this.config.user.profileEditorRoute, this.$user() ? '/@' + this.$user().username : null],
+                    });
+                }
 
                 return links;
             },
         },
         methods: {
             isActiveRoute(link) {
-                return this.$route.path === link.link || (link.extra || []).includes(this.$route.name);
+                return this.$route.path === link.link
+                    || (link.extra || []).includes(this.$route.name)
+                    || (link.extra || []).includes(this.$route.path);
             },
         },
     }

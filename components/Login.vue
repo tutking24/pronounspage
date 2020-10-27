@@ -14,13 +14,23 @@
                         </button>
                     </div>
                 </div>
+                <p class="small">
+                    <T>user.login.why</T>
+                </p>
+                <p class="small text-muted">
+                    <T>terms.consent</T>
+                    <nuxt-link :to="`/${config.user.termsRoute}`">
+                        <Icon v="gavel"/>
+                        <T>terms.header</T>
+                    </nuxt-link>
+                </p>
             </form>
         </div>
         <div v-else-if="payload && !payload.code">
             <div class="alert alert-success">
                 <p class="mb-0">
                     <Icon v="envelope-open-text"/>
-                    <T :params="{email: payload.email}">user.login.emailSent</T>
+                    <T>user.login.emailSent</T>
                 </p>
             </div>
 

@@ -8,8 +8,23 @@
         <div class="container">
             <Footer/>
         </div>
+        <Confirm ref="confirm"/>
     </div>
 </template>
+
+<script>
+    import Vue from 'vue';
+
+    export default {
+        mounted() {
+            Vue.prototype.$confirm = (message, color='primary') => {
+                return new Promise((resolve, reject) => {
+                    this.$refs.confirm.show(message, color, resolve, reject);
+                });
+            };
+        }
+    }
+</script>
 
 <style lang="scss">
     @import "assets/style";

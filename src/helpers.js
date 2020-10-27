@@ -1,3 +1,6 @@
+import md5 from 'js-md5';
+import { Base64 } from 'js-base64';
+
 export const buildDict = (fn, ...args) => {
     const dict = {};
     for (let [key, value] of fn(...args)) {
@@ -71,4 +74,74 @@ export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
     }
 
     return result;
+}
+
+export const parseQuery = (queryString) => {
+    const query = {};
+    const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+    for (let i = 0; i < pairs.length; i++) {
+        let pair = pairs[i].split('=');
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+    }
+    return query;
+}
+
+export const renderText = (res, content, status = 200) => {
+    res.statusCode = status;
+    res.setHeader('content-type', 'application/json');
+    res.write(JSON.stringify(content));
+    res.end();
+}
+
+export const renderJson = (res, content, status = 200) => {
+    res.statusCode = status;
+    res.setHeader('content-type', 'application/json');
+    res.write(JSON.stringify(content));
+    res.end();
+}
+
+export const renderImage = (res, canvas, mime, status = 200) => {
+    res.statusCode = status;
+    res.setHeader('content-type', mime);
+    res.write(canvas.toBuffer(mime));
+    res.end();
+}
+
+export const gravatar = (user, size = 128) => {
+    const fallback = `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+
+    return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallback)}&s=${size}`;
+}
+
+export const dictToList = dict => {
+    const list = [];
+    for (let key in dict) {
+        if (dict.hasOwnProperty(key)) {
+            list.push({key, value: dict[key]});
+        }
+    }
+    return list;
+}
+
+export const listToDict = list => {
+    if (Object.keys(list).length === 0) {
+        return {}
+    }
+    const dict = {};
+    for (let el of list) {
+        dict[el.key] = el.value;
+    }
+    return dict;
+}
+
+export const curry = function (func) {
+    return function curried(...args) {
+        if (args.length >= func.length) {
+            return func.apply(this, args);
+        } else {
+            return function(...args2) {
+                return curried.apply(this, args.concat(args2));
+            }
+        }
+    };
 }
