@@ -676,6 +676,8 @@ user:
         changeEmail:
             header: 'Adres email'
             action: 'Zmień'
+            invalid: 'Nieprawidłowy adres email.'
+            taken: 'Ten adres jest zajęty.'
         admin: 'Adminię'
     logout: 'Wyloguj'
     avatar:

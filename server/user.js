@@ -161,6 +161,56 @@ const changeUsername = async (db, user, username) => {
     return await issueAuthentication(db, user);
 }
 
+const validateEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const changeEmail = async (db, user, email, authId, code) => {
+    if (!validateEmail(email)) {
+        return { error: 'user.account.changeEmail.invalid' }
+    }
+
+    const dbUser = await db.get(SQL`SELECT * FROM users WHERE lower(trim(email)) = ${normalise(email)}`);
+    if (dbUser) {
+        return { error: 'user.account.changeEmail.taken' }
+    }
+
+    if (!authId) {
+        const payload = {
+            from: user.email,
+            to: normalise(email),
+            code: makeId(6, '0123456789'),
+        };
+
+        const authId = await saveAuthenticator(db, 'changeEmail', user, payload, 15);
+
+        mailer(
+            payload.to,
+            `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
+            translations.user.login.email.content.replace('%code%', payload.code),
+        )
+
+        return { authId };
+    }
+
+    const authenticator = await findAuthenticator(db, authId, 'changeEmail');
+    if (!authenticator) {
+        return {error: 'user.tokenExpired'};
+    }
+
+    if (authenticator.payload.code !== normalise(code)) {
+        return {error: 'user.code.invalid'};
+    }
+
+    await invalidateAuthenticator(db, authenticator);
+
+    await db.get(SQL`UPDATE users SET email = ${authenticator.payload.to} WHERE email = ${normalise(user.email)}`);
+    user.email = authenticator.payload.to;
+
+    return await issueAuthentication(db, user);
+}
+
 const removeAccount = async (db, user) => {
     const userId = (await db.get(SQL`SELECT id FROM users WHERE username = ${user.username}`)).id;
     if (!userId) {
@@ -186,6 +236,10 @@ export default async function (req, res, next) {
 
     if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
         return renderJson(res, await changeUsername(db, user, req.body.username));
+    }
+
+    if (req.method === 'POST' && req.url === '/change-email' && user && user.authenticated && req.body.email) {
+        return renderJson(res, await changeEmail(db, user, req.body.email, req.body.authId, req.body.code));
     }
 
     if (req.method === 'POST' && req.url === '/delete' && user && user.authenticated) {
