@@ -118,3 +118,7 @@ footer:
 notFound:
     message: 'Page was not found'
     back: 'Go back to the homepage'
+
+terms:
+    header: 'Terms of Service'
+    lastUpdate: 'Last Updated'

@@ -14,6 +14,13 @@
                         </button>
                     </div>
                 </div>
+                <p class="small text-muted">
+                    <T>terms.consent</T>
+                    <nuxt-link :to="`/${config.user.termsRoute}`">
+                        <Icon v="gavel"/>
+                        <T>terms.header</T>
+                    </nuxt-link>
+                </p>
             </form>
         </div>
         <div v-else-if="payload && !payload.code">

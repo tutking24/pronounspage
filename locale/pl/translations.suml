@@ -733,3 +733,8 @@ confirm:
     header: 'Czy jesteś pewnx?'
     yes: 'Tak, na pewno'
     no: 'Nie, anuluj'
+
+terms:
+    header: 'Regulamin'
+    lastUpdate: 'Ostatnia aktualizacja'
+    consent: 'Zakładając konto, akceptujesz'

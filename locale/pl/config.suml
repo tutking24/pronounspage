@@ -222,12 +222,13 @@ user:
     enabled: true
     route: 'konto'
     profileEditorRoute: 'wizytówka'
+    termsRoute: 'regulamin'
     profile:
         defaultWords:
             - ['pan', 'pani', 'państwo', 'pań', 'panu']
             - ['osoba', 'mężczyzna', 'kobieta', 'enby', 'facet', 'baba', 'ziom', 'laska']
             - ['ładnx', 'przystojnx', 'słodkx']
-            - ['partner', 'chłopak', 'dziewczyna']
+            - ['partner', 'chłopak', 'dziewczyna', 'mąż', 'żona']
 
 redirects:
     - { from: '^/neutratywy', to: '/rzeczowniki' }

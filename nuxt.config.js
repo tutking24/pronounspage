@@ -146,6 +146,7 @@ export default {
             if (config.user.enabled) {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
                 routes.push({path: '/' + config.user.profileEditorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
+                routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
