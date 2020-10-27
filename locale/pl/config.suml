@@ -180,6 +180,7 @@ contact:
     authors:
         -
             name: 'Andrea'
+            profile: 'andrea'
             pronouns: 'onu'
             pronounsLink: '/onu'
             website: 'https://avris.it'

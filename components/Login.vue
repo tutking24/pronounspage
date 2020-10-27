@@ -14,6 +14,9 @@
                         </button>
                     </div>
                 </div>
+                <p class="small">
+                    <T>user.login.why</T>
+                </p>
                 <p class="small text-muted">
                     <T>terms.consent</T>
                     <nuxt-link :to="`/${config.user.termsRoute}`">

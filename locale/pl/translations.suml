@@ -664,6 +664,8 @@ user:
                 Aby potwierdzić swój adres email, użyj kodu: %code%.
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+        why: >
+            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=przykład}).
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
