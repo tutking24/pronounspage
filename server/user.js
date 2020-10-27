@@ -161,6 +161,17 @@ const changeUsername = async (db, user, username) => {
     return await issueAuthentication(db, user);
 }
 
+const removeAccount = async (db, user) => {
+    const userId = (await db.get(SQL`SELECT id FROM users WHERE username = ${user.username}`)).id;
+    if (!userId) {
+        return false;
+    }
+    await db.get(SQL`DELETE FROM profiles WHERE userId = ${userId}`)
+    await db.get(SQL`DELETE FROM authenticators WHERE userId = ${userId}`)
+    await db.get(SQL`DELETE FROM users WHERE id = ${userId}`)
+    return true;
+}
+
 export default async function (req, res, next) {
     const db = await dbConnection();
     const user = authenticate(req);
@@ -175,6 +186,10 @@ export default async function (req, res, next) {
 
     if (req.method === 'POST' && req.url === '/change-username' && user && user.authenticated && req.body.username) {
         return renderJson(res, await changeUsername(db, user, req.body.username));
+    }
+
+    if (req.method === 'POST' && req.url === '/delete' && user && user.authenticated) {
+        return renderJson(res, await removeAccount(db, user));
     }
 
     return renderJson(res, {error: 'Not found'}, 404);

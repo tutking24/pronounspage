@@ -49,12 +49,17 @@
             </ul>
         </template></Loading>
 
-        <p>
-            <button class="btn btn-outline-secondary btn-sm" @click="logout">
+        <section>
+            <a href="#" class="badge badge-light border" @click.prevent="logout">
                 <Icon v="sign-out"/>
                 <T>user.logout</T>
-            </button>
-        </p>
+            </a>
+
+            <a href="#" class="badge badge-light border" @click.prevent="deleteAccount">
+                <Icon v="trash-alt"/>
+                <T>user.deleteAccount</T>
+            </a>
+        </section>
     </section>
 </template>
 
@@ -98,6 +103,13 @@
             },
             setProfiles(profiles) {
                 this.profiles = profiles;
+            },
+            async deleteAccount() {
+                await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
+
+                const response = await this.$axios.$post(`/user/delete`, {}, { headers: this.$auth() });
+
+                this.logout();
             },
         },
     }

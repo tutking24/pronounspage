@@ -681,6 +681,8 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Zmień'
+    deleteAccount: 'Usuń konto'
+    deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
 
 profile:
     description: 'Opis'
