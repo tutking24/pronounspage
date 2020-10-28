@@ -5,7 +5,7 @@ home:
     link: 'Homepage'
     header: 'Pronouns'
     headerLong: 'List of pronouns'
-    why: 'Skąd potrzeba niebinarnych zaimków?'
+    why: 'What''s the deal with pronouns?'
     about:
         - >
             Udostępniamy tutaj linki do przykładów użycia
@@ -69,10 +69,11 @@ template:
     or: 'or'
 
 sources:
-    header: 'Teksty kultury'
-    headerLong: 'Przykłady z tekstów kultury'
-    headerLonger: 'Niebinarna polszczyzna w tekstach kultury'
-    toc: 'Pokaż spis treści'
+    header: 'Sources'
+    headerLong: 'Examples from cultural texts'
+    headerLonger: 'Examples from cultural texts'
+    subheader: 'Text corpus of gender neutral language'
+    toc: 'Show table of contents'
     type:
         All: 'All'
         Book: 'Books'
@@ -85,9 +86,9 @@ sources:
 
 links:
     header: 'Links'
-    headerLong: 'Dodatkowe materiały'
+    headerLong: 'Extra links'
 
-    media: 'Zaimki.pl w mediach'
+    media: 'Pronouns.page in the media'
 
     social: 'Social media'
 
@@ -95,21 +96,77 @@ contact:
     header: 'Contact'
     authors: 'Authors of the website'
 
+user:
+    header: 'Account'
+    headerLong: 'Your account'
+    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    login:
+        placeholder: 'Email (or username, if you''re already registered)'
+        action: 'Log in'
+        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
+        userNotFound: 'User not found.'
+        email:
+            subject: 'Your login code is %code%'
+            content: |
+                To confirm your email address, use the following code: %code%.
+
+                If you didn't order this code, simply ignore this message.
+        why: >
+            Registering lets you manage your cards ({/@andrea=like this one}).
+    code:
+        action: 'Validate'
+        invalid: 'Invalid code.'
+    account:
+        changeUsername:
+            header: 'Username'
+            action: 'Change'
+            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
+            taken: 'This username is taken.'
+        changeEmail:
+            header: 'Email address'
+            action: 'Change'
+            invalid: 'Invalid email address.'
+            taken: 'This address is taken.'
+        admin: 'Admin'
+    logout: 'Log out'
+    avatar:
+        header: 'Avatar'
+        change: 'Change'
+    deleteAccount: 'Delete account'
+    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+
+profile:
+    description: 'Description'
+    names: 'Names'
+    pronouns: 'Pronouns'
+    pronounsInfo: 'You can enter a pronoun or a link.'
+    words: 'Words'
+    birthday: 'Age'
+    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    flags: 'Flags'
+    flagsInfo: 'Drag & drop your pride flags into this frame.'
+    links: 'Links'
+    column: 'Column'
+
+    list: 'Your cards'
+    init: 'Create a card'
+    show: 'Show'
+    edit: 'Edit'
+    delete: 'Delete'
+    deleteConfirm: 'Are you sure you want to delete this card?'
+    editor:
+        header: 'Card editor'
+        save: 'Save your card'
+
 share: 'Share'
 
 crud:
-    approve: 'Zatwierdź'
-    hide: 'Schowaj'
-    remove: 'Usuń'
-    edit: 'Edytuj'
-    filter: 'Filtruj'
-    filterLong: 'Filtruj listę…'
-
-beta: >
-    Strona jest w wersji βeta!
-    Przykłady, formy gramatyczne i linki mogą się jeszcze mocno zmienić!
-    Jeśli masz jakieś sugestie lub uwagi, daj mi proszę znać
-    {https://twitter.com/AvrisIT=na Twitterze} lub {mailto:andrea@avris.it=przez maila}.
+    approve: 'Approve'
+    hide: 'Hide'
+    remove: 'Remove'
+    edit: 'Edit'
+    filter: 'Filter'
+    filterLong: 'Filter the list…'
 
 footer:
     source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'
@@ -119,6 +176,12 @@ notFound:
     message: 'Page was not found'
     back: 'Go back to the homepage'
 
+confirm:
+    header: 'Are you sure?'
+    yes: 'Yes, I''m sure'
+    no: 'No, cancel'
+
 terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
+    consent: 'By registering you''re accepting the'

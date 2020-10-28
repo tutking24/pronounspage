@@ -119,19 +119,19 @@
                             <p>
                                 <T>template.examples</T>:
                             </p>
-                            <template v-for="isHonorific in [false, true]">
+                            <template v-for="isHonorific in [false, true]" v-if="examples.filter(e => e.isHonorific === isHonorific).length">
                                 <ul>
                                     <li v-for="example in examples" v-if="example.isHonorific === isHonorific">
-                                <span v-for="part in example[(isHonorific ? selectedTemplate.isPluralHonorific() : selectedTemplate.isPlural()) ? 'pluralParts' : 'singularParts']">
-                                    <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
-                                           :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
-                                           :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
-                                           maxlength="12"
-                                           @focus="selectedMorpheme = part.str"
-                                           @blur="selectedMorpheme = ''"
-                                    />
-                                    <span v-else>{{part.str}}</span>
-                                </span>
+                                        <span v-for="part in clearExampleParts(example[(isHonorific ? selectedTemplate.isPluralHonorific() : selectedTemplate.isPlural()) ? 'pluralParts' : 'singularParts'])">
+                                            <input v-if="part.variable" v-model="selectedTemplate.morphemes[part.str]"
+                                                   :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
+                                                   :size="selectedTemplate.morphemes[part.str] ? selectedTemplate.morphemes[part.str].length : 0"
+                                                   maxlength="12"
+                                                   @focus="selectedMorpheme = part.str"
+                                                   @blur="selectedMorpheme = ''"
+                                            />
+                                            <span v-else>{{part.str}}</span>
+                                        </span>
                                     </li>
                                 </ul>
                                 <div class="my-3">
@@ -187,6 +187,7 @@
 
 <script>
     import { examples, templates, getSources, templateLibrary } from "~/src/data";
+    import { ExamplePart } from "~/src/classes";
     import Compressor from "../src/compressor";
     import { getTemplate } from "../src/buildTemplate";
     import MORPHEMES from '../data/templates/morphemes';
@@ -266,6 +267,9 @@
             },
             addSlash(link) {
                 return link + (link.substr(link.length - 1) === '*' ? '/' : '');
+            },
+            clearExampleParts(parts) {
+                return parts.map(p => new ExamplePart(p.variable, p.str.replace(/^'/, '')));
             },
         },
     }

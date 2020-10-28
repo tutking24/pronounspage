@@ -1,4 +1,4 @@
-import {buildDict, buildList} from "./helpers";
+import {buildDict, buildList, capitalise} from "./helpers";
 import MORPHEMES from '../data/templates/morphemes';
 
 export class ExamplePart {
@@ -27,7 +27,7 @@ export class Example {
         const parts = [];
         let lastPosition = 0;
 
-        for (let m of str.matchAll(/{([a-z_]+)}/g)) {
+        for (let m of str.matchAll(/{('?[a-z_]+)}/g)) {
             const textBefore = str.substr(lastPosition, m.index - lastPosition);
             if (textBefore.length) {
                 parts.push(new ExamplePart(false, textBefore));
@@ -163,13 +163,21 @@ export class Template {
     }
 
     getMorpheme(morpheme, counter = 0) {
+        let capital = false;
+        if (morpheme.startsWith("'")) {
+            capital = true;
+            morpheme = morpheme.substring(1);
+        }
+
         if (!this.morphemes[morpheme]) {
             return null;
         }
 
         const options = this.morphemes[morpheme].split('&');
 
-        return options[counter % options.length]
+        const result = options[counter % options.length];
+
+        return capital ? capitalise(result) : result;
     }
 
     isPlural(counter = 0) {

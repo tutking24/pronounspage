@@ -44,6 +44,11 @@ links:
 contact:
     enabled: true
     route: 'contact'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
     authors:
         -
             name: 'Andrea'
@@ -73,6 +78,15 @@ contact:
             areas:
                 social_media: ~
 
+support:
+    enabled: true
+    links:
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/AndreAvris'
+            headline: 'PayPal'
+
 user:
     enabled: true
     route: 'account'
@@ -83,6 +97,6 @@ user:
             - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
             - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']
             - ['pretty', 'handsome', 'cute']
-            - ['partner', 'boyfriend', 'girlfriend', 'joyfriend']
+            - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
 
 redirects: []
