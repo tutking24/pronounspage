@@ -8,7 +8,9 @@ export default ({ app }) => {
     Vue.prototype.$t = t;
     Vue.prototype.config = config;
     Vue.prototype.locales = buildDict(function* () {
-        yield [ config.locale, locales[config.locale] ];
+        if (config.locale !== '_') {
+            yield [ config.locale, locales[config.locale] ];
+        }
         for (let l in locales) {
             if (locales.hasOwnProperty(l) && l !== config.locale) {
                 yield [l, locales[l]];

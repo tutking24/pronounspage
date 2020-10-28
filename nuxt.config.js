@@ -145,12 +145,19 @@ export default {
 
             if (config.user.enabled) {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
-                routes.push({path: '/' + config.user.profileEditorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
                 routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
-            routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
-            routes.push({ path: '/@*', component: resolve(__dirname, 'routes/profile.vue') });
+            if (config.profile.enabled) {
+                routes.push({path: '/@*', component: resolve(__dirname, 'routes/profile.vue')});
+                if (config.profile.editorEnabled) {
+                    routes.push({path: '/' + config.profile.editorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
+                }
+            }
+
+            if (config.template.enabled) {
+                routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
+            }
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });
         },

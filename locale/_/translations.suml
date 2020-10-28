@@ -1,0 +1,14 @@
+title: 'Pronouns.page'
+description: 'Usage examples of personal pronouns and gender neutral language.'
+
+template:
+    or: 'or'
+
+notFound:
+    message: 'Page was not found'
+    back: 'Go back to the homepage'
+
+confirm:
+    header: 'Are you sure?'
+    yes: 'Yes, I''m sure'
+    no: 'No, cancel'

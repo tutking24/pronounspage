@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer v-if="config.header">
         <Separator icon="user-friends"/>
         <div class="d-flex flex-column flex-md-row justify-content-around mt-4 mb-5">
             <div class="small text-center d-flex flex-column justify-content-center">

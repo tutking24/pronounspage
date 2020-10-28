@@ -1,0 +1,23 @@
+<template>
+    <div class="container">
+        <div class="list-group">
+            <a v-for="(options, locale) in locales" :key="locale" :href="options.url" class="list-group-item list-group-item-action list-group-item-hoverable">
+                <div class="h3">
+                    {{ options.name }}
+                </div>
+            </a>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+    @import "assets/style";
+
+    .list-group-item-hoverable {
+        &:hover {
+            color: $primary;
+            border-left: 3px solid $primary;
+            padding-left: calc(#{$list-group-item-padding-x} - 2px);
+        }
+    }
+</style>

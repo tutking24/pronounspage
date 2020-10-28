@@ -1,6 +1,9 @@
 locale: 'en'
 
+header: true
+
 template:
+    enabled: true
     default: 'he'
     any:
         route: 'any'
@@ -90,13 +93,16 @@ support:
 user:
     enabled: true
     route: 'account'
-    profileEditorRoute: 'my-card'
     termsRoute: 'terms'
-    profile:
-        defaultWords:
-            - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
-            - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']
-            - ['pretty', 'handsome', 'cute']
-            - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
+
+profile:
+    enabled: true
+    editorEnabled: true
+    profileEditorRoute: 'my-card'
+    defaultWords:
+        - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
+        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']
+        - ['pretty', 'handsome', 'cute']
+        - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
 
 redirects: []

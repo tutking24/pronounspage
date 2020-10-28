@@ -1,0 +1,42 @@
+locale: '_'
+
+header: false
+
+template:
+    enabled: false
+
+sources:
+    enabled: false
+
+nouns:
+    enabled: false
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+english:
+    enabled: false
+
+faq:
+    enabled: false
+
+links:
+    enabled: false
+
+contact:
+    enabled: false
+
+support:
+    enabled: false
+
+user:
+    enabled: false
+
+profile:
+    enabled: true
+    editorEnabled: false
+
+redirects: []

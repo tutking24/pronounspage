@@ -1,13 +1,12 @@
 <template>
-    <NotFound v-if="!profile"/>
-    <div v-else class="container">
+    <div v-if="profile" class="container">
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="profile"/>
                 @{{username}}
             </h2>
             <div>
-                <nuxt-link v-if="$user() && $user().username === username" :to="`/${config.user.profileEditorRoute}`"
+                <nuxt-link v-if="$user() && $user().username === username" :to="`/${config.profile.editorRoute}`"
                            class="btn btn-outline-primary btn-sm"
                 >
                     <Icon v="edit"/>
@@ -89,6 +88,23 @@
             </div>
         </section>
     </div>
+    <div v-else-if="Object.keys(profiles).length" class="container">
+        <h2 class="text-nowrap mb-3">
+            <Avatar :user="profiles[Object.keys(profiles)[0]]"/>
+            @{{username}}
+        </h2>
+
+        <div class="list-group">
+            <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
+                        :locale="locale" :link="`/@${username}`"
+                        class="list-group-item list-group-item-action list-group-item-hoverable">
+                <div class="h3">
+                    {{options.name}}
+                </div>
+            </LocaleLink>
+        </div>
+    </div>
+    <NotFound v-else/>
 </template>
 
 <script>
@@ -98,7 +114,7 @@
 
     export default {
         data() {
-            return {
+             return {
                 username: this.$route.params.pathMatch,
                 profiles: {},
                 glue: ' ' + this.$t('template.or') + ' ',
@@ -149,9 +165,19 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "assets/style";
+
     .avatar {
         width: 100%;
         max-width: 5rem;
         max-height: 5rem;
+    }
+
+    .list-group-item-hoverable {
+        &:hover {
+            color: $primary;
+            border-left: 3px solid $primary;
+            padding-left: calc(#{$list-group-item-padding-x} - 2px);
+        }
     }
 </style>

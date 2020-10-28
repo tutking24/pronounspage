@@ -116,7 +116,10 @@
     export default {
         components: {LinkedText, GrammarTables },
         data() {
-            const selectedTemplate = buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, ''));
+            const selectedTemplate = this.config.template.enabled
+                ? buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, ''))
+                : null;
+
             return {
                 examples,
                 templates,

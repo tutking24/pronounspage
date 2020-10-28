@@ -1,5 +1,5 @@
 <template>
-    <header class="mb-4">
+    <header v-if="config.header" class="mb-4">
         <div class="mb-3 d-flex justify-content-between align-items-center flex-column flex-md-row">
             <h1 class="text-nowrap">
                 <nuxt-link to="/">
@@ -7,7 +7,7 @@
                     <T>title</T>
                 </nuxt-link>
             </h1>
-            <ul class="list-inline small mb-0" v-if="Object.keys(locales).length > 1">
+            <ul v-if="Object.keys(locales).length > 1" class="list-inline small mb-0">
                 <li v-for="(options, locale) in locales" :key="locale" class="list-inline-item">
                     <strong v-if="locale === config.locale">
                         {{options.name}}
@@ -35,6 +35,14 @@
                 </nuxt-link>
             </div>
         </div>
+    </header>
+    <header v-else class="mb-4">
+        <h1 class="text-nowrap">
+            <nuxt-link to="/">
+                <Icon v="tags"/>
+                <T>title</T>
+            </nuxt-link>
+        </h1>
     </header>
 </template>
 

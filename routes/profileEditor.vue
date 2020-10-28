@@ -103,7 +103,7 @@
     import { buildTemplate } from "../src/buildTemplate";
     import config from '../data/config.suml';
 
-    const defaultWords = config.user.profile.defaultWords.map(c => buildList(function* () {
+    const defaultWords = config.profile.defaultWords.map(c => buildList(function* () {
         for (let word of c) {
             yield {key: word, value: 0};
         }
