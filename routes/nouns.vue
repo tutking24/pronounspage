@@ -179,10 +179,13 @@
                                         <td :colspan="$admin() ? 4 : 3">
                                             <nav>
                                                 <ul class="pagination pagination-sm justify-content-center">
-                                                    <li v-for="(_, i) in new Array(pages)" :class="['page-item', i === page ? 'active' : '']">
-                                                        <a class="page-link" href="#" @click.prevent="page = i">
-                                                            {{i + 1}}
+                                                    <li v-for="p in pagesRange" :class="['page-item', p.page === page ? 'active' : '', p.enabled ? '' : 'disabled']">
+                                                        <a v-if="p.enabled" class="page-link" href="#" @click.prevent="page = p.page">
+                                                            {{p.text}}
                                                         </a>
+                                                        <span v-else class="page-link">
+                                                            {{p.text}}
+                                                        </span>
                                                     </li>
                                                 </ul>
                                             </nav>
@@ -305,6 +308,21 @@
             },
             pages() {
                 return Math.ceil(this.visibleNouns.length / PER_PAGE);
+            },
+            pagesRange() {
+                const vPages = [];
+                vPages.push({page: 0, text: '«', enabled: this.page > 0});
+                vPages.push({page: this.page - 1, text: '‹', enabled: this.page > 0});
+                for (let i = 0; i < this.pages; i++) {
+                    if (i <= 4 || (this.page - 3 <= i && i <= this.page + 3) || i >= this.pages - 3) {
+                        vPages.push({page: i, text: i + 1, enabled: true});
+                    } else if (vPages[vPages.length - 1].text !== '…') {
+                        vPages.push({text: '…', enabled: false});
+                    }
+                }
+                vPages.push({page: this.page + 1, text: '›', enabled: this.page < this.pages - 1});
+                vPages.push({page: this.pages - 1, text: '»', enabled: this.page < this.pages - 1});
+                return vPages;
             },
             nounsCountApproved() {
                 return Object.values(this.nouns).filter(n => n.approved).length;
