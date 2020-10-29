@@ -23,8 +23,8 @@
                     <Loading :value="nounsRaw">
                         <section v-if="$admin()" class="px-3">
                             <div class="alert alert-info">
-                                <strong>{{ nounsCountApproved() }}</strong> <T>nouns.approved</T>,
-                                <strong>{{ nounsCountPending() }}</strong> <T>nouns.pending</T>.
+                                <strong>{{ nounsCountApproved }}</strong> <T>nouns.approved</T>,
+                                <strong>{{ nounsCountPending }}</strong> <T>nouns.pending</T>.
                             </div>
                         </section>
 
@@ -52,7 +52,7 @@
 
                         <section class="table-responsive">
                             <table :class="'table table-striped table-hover table-fixed-' + ($admin() ? 4 : 3)">
-                                <thead>
+                                <thead ref="thead" id="thead">
                                 <tr>
                                     <th class="text-nowrap">
                                         <Icon v="mars"/>
@@ -70,8 +70,8 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <template v-if="visibleNouns().length">
-                                    <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}" :key="noun.id">
+                                <template v-if="visibleNouns.length">
+                                    <tr v-for="noun in visibleNounsPage" :class="{'mark-left': !noun.approved}" :key="noun.id">
                                         <td>
                                             <ul class="list-singular">
                                                 <li v-for="w in noun.masc">{{ w }}</li>
@@ -174,6 +174,21 @@
                                     </tr>
                                 </template>
                                 </tbody>
+                                <tfoot v-if="pages > 1">
+                                    <tr>
+                                        <td :colspan="$admin() ? 4 : 3">
+                                            <nav>
+                                                <ul class="pagination pagination-sm justify-content-center">
+                                                    <li v-for="(_, i) in new Array(pages)" :class="['page-item', i === page ? 'active' : '']">
+                                                        <a class="page-link" href="#" @click.prevent="page = i">
+                                                            {{i + 1}}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                </tfoot>
                             </table>
                         </section>
 
@@ -195,12 +210,15 @@
     import { head } from "../src/helpers";
     import NounsExtra from "../data/nouns/NounsExtra.vue";
 
+    const PER_PAGE = 30;
+
     export default {
         components: { NounsExtra },
         data() {
             return {
                 filter: '',
                 nounsRaw: undefined,
+                page: 0,
             }
         },
         mounted() {
@@ -257,15 +275,6 @@
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },
-            visibleNouns() {
-                return Object.values(this.nouns).filter(n => n.matches(this.filter));
-            },
-            nounsCountApproved() {
-                return Object.values(this.nouns).filter(n => n.approved).length;
-            },
-            nounsCountPending() {
-                return Object.values(this.nouns).filter(n => !n.approved).length;
-            },
         },
         computed: {
             nouns() {
@@ -288,6 +297,21 @@
                     }
                 }, this);
             },
+            visibleNouns() {
+                return Object.values(this.nouns).filter(n => n.matches(this.filter));
+            },
+            visibleNounsPage() {
+                return this.visibleNouns.slice(this.page * PER_PAGE, (this.page + 1) * PER_PAGE);
+            },
+            pages() {
+                return Math.ceil(this.visibleNouns.length / PER_PAGE);
+            },
+            nounsCountApproved() {
+                return Object.values(this.nouns).filter(n => n.approved).length;
+            },
+            nounsCountPending() {
+                return Object.values(this.nouns).filter(n => !n.approved).length;
+            },
         },
         watch: {
             filter() {
@@ -297,6 +321,12 @@
                     } else {
                         history.pushState('', document.title, window.location.pathname + window.location.search);
                     }
+                    this.page = 0;
+                    setTimeout(_ => {
+                        if (this.$refs.thead) {
+                            this.$refs.thead.scrollIntoView();
+                        }
+                    }, 300);
                 }
             }
         },
