@@ -105,6 +105,7 @@ export default {
         '/api/nouns': '~/server/nouns.js',
         '/api/user': '~/server/user.js',
         '/api/profile': '~/server/profile.js',
+        '/api/admin': '~/server/admin.js',
     },
     axios: {
         baseURL: process.env.BASE_URL + '/api',
@@ -148,6 +149,8 @@ export default {
                 routes.push({path: '/' + config.user.profileEditorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
                 routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
+            routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
+
             routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
 
             routes.push({ path: '/@*', component: resolve(__dirname, 'routes/profile.vue') });

@@ -50,7 +50,7 @@
                             </div>
                         </section>
 
-                        <Table :data="visibleNouns()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" ref="dictionarytable">
+                        <Table :data="visibleNouns()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
                             <template v-slot:header>
                                 <th class="text-nowrap">
                                     <Icon v="mars"/>

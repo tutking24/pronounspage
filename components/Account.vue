@@ -13,7 +13,7 @@
                         </a>
                     </p>
                     <p v-if="$admin()">
-                        <span class="badge badge-primary"><T>user.account.admin</T></span>
+                        <nuxt-link to="/admin" class="badge badge-primary"><T>user.account.admin</T></nuxt-link>
                     </p>
                 </div>
                 <div class="mx-2 flex-grow-1">

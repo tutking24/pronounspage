@@ -1,5 +1,5 @@
 <template>
-    <img :src="gravatar" alt="" class="rounded-circle"/>
+    <img :src="gravatar" alt="" class="rounded-circle" :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
 </template>
 
 <script>
@@ -8,7 +8,8 @@
     export default {
         props: {
             user: { required: true },
-            size: { 'default': 128 }
+            size: { 'default': 128 },
+            dsize: { 'default': '6rem' },
         },
         data() {
             return {
@@ -17,12 +18,3 @@
         },
     }
 </script>
-
-<style lang="scss" scoped>
-    $size: 6rem;
-    img {
-        width: 100%;
-        max-width: $size;
-        max-height: $size;
-    }
-</style>

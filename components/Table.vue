@@ -1,6 +1,6 @@
 <template>
     <section class="table-responsive">
-        <table :class="'table table-striped table-hover table-fixed-' + columns">
+        <table :class="['table table-striped table-hover', fixed ? 'table-fixed-' + columns : '']">
             <thead ref="thead">
             <tr>
                 <slot name="header"></slot>
@@ -53,6 +53,7 @@
             perPage: { 'default': 30 },
             rowKey: { 'default': 'id' },
             marked: {},
+            fixed: { type: Boolean },
         },
         data() {
             return {

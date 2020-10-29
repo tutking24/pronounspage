@@ -745,5 +745,13 @@ terms:
     lastUpdate: 'Ostatnia aktualizacja'
     consent: 'Zakładając konto, akceptujesz'
 
+admin:
+    header: 'Panel adminia'
+    user:
+        user: 'Użytkownik'
+        email: 'Email'
+        roles: 'Role'
+        profiles: 'Profile'
+
 table:
     empty: 'Pusto…'
