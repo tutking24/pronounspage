@@ -140,7 +140,7 @@
         head() {
             return this.selectedTemplate ? head({
                 title: `${this.$t('template.intro')}: ${this.selectedTemplate.name(this.glue)}`,
-                banner: `banner${this.$route.path.replace(/\/$/, '')}.png`,
+                banner: `api/banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
         },
         methods: {

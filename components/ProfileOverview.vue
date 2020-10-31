@@ -36,11 +36,11 @@
             }
         },
         methods: {
-            async removeProfile() {
+            async removeProfile(locale) {
                 await this.$confirm(this.$t('profile.deleteConfirm'), 'danger');
 
                 this.deleting = true;
-                const response = await this.$axios.$post(`/profile/delete/${this.config.locale}`, {}, { headers: this.$auth() });
+                const response = await this.$axios.$post(`/profile/delete/${locale}`, {}, { headers: this.$auth() });
                 this.deleting = false;
                 this.$emit('update', response);
             },

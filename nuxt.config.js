@@ -86,6 +86,7 @@ export default {
     },
     env: {
         BASE_URL: process.env.BASE_URL,
+        TITLE: title,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
         LOCALE: config.locale,
         FLAGS: buildDict(function *() {
@@ -102,15 +103,7 @@ export default {
             }
         }),
     },
-    serverMiddleware: {
-        '/': bodyParser.json(),
-        '/banner': '~/server/banner.js',
-        '/api/nouns': '~/server/nouns.js',
-        '/api/user': '~/server/user.js',
-        '/api/profile': '~/server/profile.js',
-        '/api/admin': '~/server/admin.js',
-        '/api/sources': '~/server/sources.js',
-    },
+    serverMiddleware: ['~/server/index.js'],
     axios: {
         baseURL: process.env.BASE_URL + '/api',
     },

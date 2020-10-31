@@ -1,11 +1,10 @@
-import { buildTemplate, parseTemplates } from "../src/buildTemplate";
-import { createCanvas, registerFont, loadImage } from 'canvas';
-import { loadTsv } from './tsv';
-import translations from '../server/translations';
-import {gravatar, renderImage, renderText} from "../src/helpers";
-const dbConnection = require('./db');
-const SQL = require('sql-template-strings');
-
+import { Router } from 'express';
+import SQL from 'sql-template-strings';
+import {createCanvas, loadImage, registerFont} from "canvas";
+import translations from "../translations";
+import {gravatar} from "../../src/helpers";
+import {buildTemplate, parseTemplates} from "../../src/buildTemplate";
+import {loadTsv} from "../../src/tsv";
 
 const drawCircle = (context, image, x, y, size) => {
     context.save();
@@ -23,14 +22,9 @@ const drawCircle = (context, image, x, y, size) => {
     context.restore();
 }
 
+const router = Router();
 
-export default async function (req, res, next) {
-    if (req.url.substr(req.url.length - 4) !== '.png') {
-        return renderText(res, 'Not found', 404);
-    }
-
-    const templateName = decodeURIComponent(req.url.substr(1, req.url.length - 5));
-
+router.get('/banner/:templateName.png', async (req, res) => {
     const width = 1200
     const height = 600
     const mime = 'image/png';
@@ -55,12 +49,11 @@ export default async function (req, res, next) {
         context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + 48);
     }
 
-    if (templateName.startsWith('@')) {
-        const db = await dbConnection();
-        const user = await db.get(SQL`SELECT username, email FROM users WHERE username=${templateName.substring(1)}`);
+    if (req.params.templateName.startsWith('@')) {
+        const user = await req.db.get(SQL`SELECT username, email FROM users WHERE username=${req.params.templateName.substring(1)}`);
         if (!user) {
             await fallback();
-            return renderImage(res, canvas, mime);
+            return res.set('content-type', mime).send(canvas.toBuffer(mime));
         }
 
         const avatar = await loadImage(gravatar(user, imageSize));
@@ -78,28 +71,30 @@ export default async function (req, res, next) {
         context.drawImage(logo, width / leftRatio + imageSize, height / 2 + logoSize - 4, logoSize, logoSize / 1.25)
         context.fillText(translations.title, width / leftRatio + imageSize + 36, height / 2 + 48);
 
-        return renderImage(res, canvas, mime);
+        return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
 
     const template = buildTemplate(
-        parseTemplates(loadTsv(__dirname + '/../data/templates/templates.tsv')),
-        templateName,
+        parseTemplates(loadTsv(__dirname + '/../../data/templates/templates.tsv')),
+        req.params.templateName,
     );
 
     const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
 
-    if (!template && templateName !== 'dowolne') {
+    if (!template && req.params.templateName !== 'dowolne') { // TODO
         await fallback();
-        return renderImage(res, canvas, mime);
+        return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
 
     context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25)
     context.font = 'regular 48pt Quicksand'
     context.fillText(translations.template.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-    const templateNameOptions = templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
+    const templateNameOptions = req.params.templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
     context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
     context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
 
-    return renderImage(res, canvas, mime);
-}
+    return res.set('content-type', mime).send(canvas.toBuffer(mime));
+});
+
+export default router;

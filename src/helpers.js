@@ -21,7 +21,7 @@ export const head = ({title, description, banner}) => {
     const meta = { meta: [] };
 
     if (title) {
-        title += ' • Zaimki.pl';
+        title += ' • ' + process.env.TITLE;
         meta.title = title;
         meta.meta.push({ hid: 'og:title', property: 'og:title', content: title });
         meta.meta.push({ hid: 'twitter:title', property: 'twitter:title', content: title });
@@ -74,37 +74,6 @@ export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
     }
 
     return result;
-}
-
-export const parseQuery = (queryString) => {
-    const query = {};
-    const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
-    for (let i = 0; i < pairs.length; i++) {
-        let pair = pairs[i].split('=');
-        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
-    }
-    return query;
-}
-
-export const renderText = (res, content, status = 200) => {
-    res.statusCode = status;
-    res.setHeader('content-type', 'application/json');
-    res.write(JSON.stringify(content));
-    res.end();
-}
-
-export const renderJson = (res, content, status = 200) => {
-    res.statusCode = status;
-    res.setHeader('content-type', 'application/json');
-    res.write(JSON.stringify(content));
-    res.end();
-}
-
-export const renderImage = (res, canvas, mime, status = 200) => {
-    res.statusCode = status;
-    res.setHeader('content-type', mime);
-    res.write(canvas.toBuffer(mime));
-    res.end();
 }
 
 export const gravatar = (user, size = 128) => {

@@ -1,6 +1,6 @@
 const dbConnection = require('./db');
 require('dotenv').config({ path:__dirname + '/../.env' });
-const mailer = require('./mailer');
+const mailer = require('../src/mailer');
 
 async function notify() {
     const db = await dbConnection();

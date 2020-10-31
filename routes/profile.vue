@@ -7,7 +7,7 @@
             </h2>
             <div>
                 <nuxt-link v-if="$user() && $user().username === username" :to="`/${config.profile.editorRoute}`"
-                           class="btn btn-outline-primary btn-sm"
+                           class="btn btn-outline-primary btn-sm mb-2"
                 >
                     <Icon v="edit"/>
                     <T>profile.edit</T>
@@ -158,7 +158,7 @@
         head() {
             return head({
                 title: `@${this.username}`,
-                banner: `banner/@${this.username}.png`,
+                banner: `api/banner/@${this.username}.png`,
             });
         },
     }

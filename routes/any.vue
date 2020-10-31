@@ -61,7 +61,7 @@
         head() {
             return head({
                 title: `${this.$t('template.intro')}: ${this.$t('template.any.short')}`,
-                banner: `banner/${this.$t('template.any.short')}.png`,
+                banner: `api/banner/${this.$t('template.any.short')}.png`,
             });
         },
         methods: {
