@@ -15,6 +15,7 @@ sources:
 nouns:
     enabled: true
     route: 'rzeczowniki'
+    collapsable: true
 
 names:
     enabled: false

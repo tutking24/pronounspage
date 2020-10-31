@@ -13,7 +13,9 @@ sources:
     route: 'sources'
 
 nouns:
-    enabled: false
+    enabled: true
+    route: 'nouns'
+    collapsable: false
 
 names:
     enabled: false
@@ -25,7 +27,7 @@ english:
     enabled: false
 
 faq:
-    enabled: false
+    enabled: true
     route: 'faq'
 
 links:
@@ -74,8 +76,8 @@ contact:
                 sources: '/sources'
         -
             name: 'Zuzanna Sybilla Grzybowska'
-            pronouns: 'he/she/they'
-            pronounsLink: '/he&she&they'
+            pronouns: 'they/she/he'
+            pronounsLink: '/they&she&he'
             twitter: 'mykofanes'
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
