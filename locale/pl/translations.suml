@@ -163,6 +163,8 @@ nouns:
                 Niestety, Dukaj nie używa postpłciowych rzeczowników w liczbie mnogiej
                 (poza np. odmienianym męskoosobowo „phoebe'wie”).
                 Jeśli masz propozycje, jak odmieniać dukatywy w liczbie mnogiej, daj nam znać.
+        extended:
+            header: 'Przykład odmiany'
 
     neuterNouns:
         header: 'Neutratywy'
@@ -179,6 +181,8 @@ nouns:
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
                 z wyszczególnieniem ich formy męskiej, żeńskiej i nijakiej.
                 Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
+        extended:
+            header: 'Przykład odmiany'
         alt:
             header: 'Alternatywne wzory odmiany'
             info:

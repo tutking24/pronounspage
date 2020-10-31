@@ -25,6 +25,24 @@
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
+                <h4 class="h5 d-inline"><T>nouns.neuterNouns.extended.header</T></h4>
+            </summary>
+            <div class="border-top">
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="p-3">
+                        <h5>⋅ <T>nouns.singular</T></h5>
+                        <Declension word="" :template="neuterExtendedDeclension" open/>
+                    </div>
+                    <div class="p-3">
+                        <h5>⁖ <T>nouns.plural</T></h5>
+                        <Declension word="" :template="neuterExtendedDeclension" open plural/>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="border mb-3">
+            <summary class="bg-light p-3">
                 <h4 class="h5 d-inline"><T>nouns.neuterNouns.alt.header</T></h4>
             </summary>
             <div class="border-top">
@@ -126,6 +144,25 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </details>
+
+        <details class="border mb-3">
+            <summary class="bg-light p-3">
+                <h4 class="h5 d-inline"><T>nouns.dukajNouns.extended.header</T></h4>
+            </summary>
+            <div class="border-top">
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="p-3">
+                        <h5>⋅ <T>nouns.singular</T></h5>
+                        <Declension word="" :template="dukajExtendedDeclension" open/>
+                    </div>
+                    <div class="p-3">
+                        <h5>⁖ <T>nouns.plural</T></h5>
+                        <Icon v="question-square"/>
+                        <!-- <Declension word="" :template="dukajExtendedDeclension" open plural/> -->
+                    </div>
+                </div>
             </div>
         </details>
 
@@ -252,6 +289,40 @@
                 dukajDeclension: new NounDeclension({
                     M: 'u', D: 'u', C: 'u', B: 'u', N: 'um', Msc: 'um', W: 'u',
                     M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'y', N_pl: 'ami', Msc_pl: 'ach', W_pl: 'y',
+                }),
+                dukajExtendedDeclension: new NounDeclension({
+                    M: 'tenu kosmicznu twórcu',
+                    D: 'tenu kosmicznenu twórcu',
+                    C: 'tewu kosmicznewu twórcu',
+                    B: 'tenu kosmicznenu twórcu',
+                    N: 'tum kosmicznum twórcum',
+                    Msc: 'tum kosmicznum twórcum',
+                    W: 'tenu kosmicznu twórcu',
+
+                    M_pl: '',
+                    D_pl: '',
+                    C_pl: '',
+                    B_pl: '',
+                    N_pl: '',
+                    Msc_pl: '',
+                    W_pl: '',
+                }),
+                neuterExtendedDeclension: new NounDeclension({
+                    M: 'to kosmiczne twórcze',
+                    D: 'tego kosmicznego twórcza',
+                    C: 'temu kosmicznemu twórczu',
+                    B: 'to kosmiczne twórcze',
+                    N: 'tym kosmicznym twórczem',
+                    Msc: 'tym kosmicznym twórczu',
+                    W: 'to kosmiczne twórcze',
+
+                    M_pl: 'te kosmiczne twórcza',
+                    D_pl: 'tych kosmicznych twórczy',
+                    C_pl: 'tym kosmicznym twórczom',
+                    B_pl: 'te kosmiczne twórcza',
+                    N_pl: 'tymi kosmicznymi twórczami',
+                    Msc_pl: 'tych kosmicznych twórczach',
+                    W_pl: 'te kosmiczne twórcza',
                 }),
                 neuterAltDeclensionTemplates: [
                     ['ono/jego'], // , 'vono/vego', 'ono/jejgo'],
