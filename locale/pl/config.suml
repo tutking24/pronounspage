@@ -201,6 +201,7 @@ contact:
                 pytania: '/pytania'
         -
             name: 'Paweł Dembowski'
+            profile: 'ausir'
             pronouns: 'on'
             pronounsLink: '/on'
             twitter: 'VaultAusir'
@@ -210,6 +211,7 @@ contact:
                 literatura: '/literatura'
         -
             name: 'Sybil Zuz Grzybowskie'
+            profile: 'Sybil'
             pronouns: 'ono/ona/on'
             pronounsLink: '/ono&ona&on'
             twitter: 'mykofanes'
