@@ -90,6 +90,9 @@ export default {
         LOCALE: config.locale,
         FLAGS: buildDict(function *() {
             for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
+                if (flag.startsWith('.')) {
+                    continue;
+                }
                 yield [
                     flag.replace(new RegExp('\.png$'), ''),
                     flag.replace(new RegExp('\.png$'), '')
