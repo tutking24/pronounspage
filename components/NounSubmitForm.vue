@@ -13,10 +13,10 @@
         </div>
         <form v-else @submit.prevent="submit">
             <div class="table-responsive">
-                <table class="table table-borderless table-sm table-fixed-4">
+                <table :class="'table table-borderless table-sm table-fixed-' + (config.nouns.plurals ? '4' : '3')">
                     <thead>
                     <tr>
-                        <th></th>
+                        <th v-if="config.nouns.plurals"></th>
                         <th class="text-nowrap">
                             <Icon v="mars"/>
                             <span class="d-none d-md-inline"><T>nouns.masculine</T></span>
@@ -37,7 +37,7 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th class="text-nowrap">
+                        <th v-if="config.nouns.plurals" class="text-nowrap">
                             <span class="d-none d-md-inline">⋅ <T>nouns.singular</T></span>
                             <span class="d-md-none">⋅ <T>nouns.singularShort</T></span>
                         </th>
@@ -51,7 +51,7 @@
                             <NounForm v-model="form.neutr"/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr v-if="config.nouns.plurals">
                         <th class="text-nowrap">
                             <span class="d-none d-md-inline">⁖ <T>nouns.plural</T></span>
                             <span class="d-md-none">⁖ <T>nouns.pluralShort</T></span>
@@ -77,28 +77,30 @@
                 </button>
             </div>
 
-            <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary btn-block">
-                <Icon v="copy"/>
-                <T>nouns.template</T>
-            </a>
-            <div v-else class="card mb-3">
-                <a href="#" class="card-header" @click.prevent="templateVisible = false">
+            <template v-if="config.nouns.templates">
+                <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary btn-block">
                     <Icon v="copy"/>
                     <T>nouns.template</T>
                 </a>
-                <div class="card-body">
-                    <T>nouns.root</T>: <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
+                <div v-else class="card mb-3">
+                    <a href="#" class="card-header" @click.prevent="templateVisible = false">
+                        <Icon v="copy"/>
+                        <T>nouns.template</T>
+                    </a>
+                    <div class="card-body">
+                        <T>nouns.root</T>: <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
 
-                    <ul>
-                        <li v-for="template in templates" class="my-2">
-                            {{ template.toString() }}
-                            <button type="button" class="btn btn-outline-primary btn-sm" @click="form = template.fill(templateBase)">
-                                <Icon v="copy"/>
-                            </button>
-                        </li>
-                    </ul>
+                        <ul>
+                            <li v-for="template in templates" class="my-2">
+                                {{ template.toString() }}
+                                <button type="button" class="btn btn-outline-primary btn-sm" @click="form = template.fill(templateBase)">
+                                    <Icon v="copy"/>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </template>
 
             <button class="btn btn-primary btn-block" :disabled="submitting">
                 <template v-if="submitting">
@@ -116,6 +118,7 @@
 
 <script>
     import { nounTemplates } from '../src/data';
+    import config from "../data/config.suml";
 
     export default {
         data() {
@@ -139,7 +142,7 @@
         methods: {
             async submit(event) {
                 this.submitting = true;
-                await this.$axios.$post(`/nouns/submit`, {
+                await this.$axios.$post(`/nouns/submit/${this.config.locale}`, {
                     data: this.form,
                 }, { headers: this.$auth() });
 

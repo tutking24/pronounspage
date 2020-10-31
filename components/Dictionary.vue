@@ -51,7 +51,7 @@
                     <ul class="list-singular">
                         <li v-for="w in s.el.masc">{{ w }}</li>
                     </ul>
-                    <ul class="list-plural">
+                    <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.mascPl">{{ w }}</li>
                     </ul>
 
@@ -60,7 +60,7 @@
                         <ul class="list-singular">
                             <li v-for="w in nouns[s.el.base].masc">{{ w }}</li>
                         </ul>
-                        <ul class="list-plural">
+                        <ul v-if="config.nouns.plurals" class="list-plural">
                             <li v-for="w in nouns[s.el.base].mascPl">{{ w }}</li>
                         </ul>
                     </small>
@@ -74,7 +74,7 @@
                     <ul class="list-singular">
                         <li v-for="w in s.el.fem">{{ w }}</li>
                     </ul>
-                    <ul class="list-plural">
+                    <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.femPl">{{ w }}</li>
                     </ul>
 
@@ -83,7 +83,7 @@
                         <ul class="list-singular">
                             <li v-for="w in nouns[s.el.base].fem">{{ w }}</li>
                         </ul>
-                        <ul class="list-plural">
+                        <ul v-if="config.nouns.plurals" class="list-plural">
                             <li v-for="w in nouns[s.el.base].femPl">{{ w }}</li>
                         </ul>
                     </small>
@@ -91,12 +91,14 @@
                 <td>
                     <ul class="list-singular">
                         <li v-for="w in s.el.neutr">
-                            <Declension :word="w"/>
+                            <Declension v-if="config.nouns.declension" :word="w"/>
+                            <template v-else>{{w}}</template>
                         </li>
                     </ul>
-                    <ul class="list-plural">
+                    <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.neutrPl">
-                            <Declension :word="w" plural :singularOptions="s.el.neutr"/>
+                            <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr"/>
+                            <template v-else>{{w}}</template>
                         </li>
                     </ul>
 
@@ -105,7 +107,7 @@
                         <ul class="list-singular">
                             <li v-for="w in nouns[s.el.base].neutr">{{ w }}</li>
                         </ul>
-                        <ul class="list-plural">
+                        <ul v-if="config.nouns.plurals" class="list-plural">
                             <li v-for="w in nouns[s.el.base].neutrPl">{{ w }}</li>
                         </ul>
                     </small>
@@ -146,11 +148,13 @@
             </template>
         </Table>
 
-        <Separator icon="plus"/>
+        <template v-if="config.nouns.submit">
+            <Separator icon="plus"/>
 
-        <div class="px-3">
-            <NounSubmitForm ref="form"/>
-        </div>
+            <div class="px-3">
+                <NounSubmitForm ref="form"/>
+            </div>
+        </template>
     </Loading>
 </template>
 
@@ -178,7 +182,7 @@
                 if (this.nounsRaw !== undefined) {
                     return;
                 }
-                this.nounsRaw = await this.$axios.$get(`/nouns/all`, { headers: this.$auth() });
+                this.nounsRaw = await this.$axios.$get(`/nouns/all/${this.config.locale}`, { headers: this.$auth() });
             },
             async setFilter(filter) {
                 this.filter = filter;

@@ -16,6 +16,10 @@ nouns:
     enabled: true
     route: 'rzeczowniki'
     collapsable: true
+    plurals: true
+    declension: true
+    submit: true
+    templates: true
 
 names:
     enabled: false

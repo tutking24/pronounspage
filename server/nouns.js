@@ -62,24 +62,27 @@ export default async function (req, res, next) {
     const user = authenticate(req);
     const isAdmin = user && user.authenticated && user.roles === 'admin';
 
-    if (req.method === 'GET' && req.url === '/all') {
-        return renderJson(res, await db.all(`
+    if (req.method === 'GET' && req.url.startsWith('/all/')) {
+        const locale = req.url.substring(5);
+        return renderJson(res, await db.all(SQL`
             SELECT * FROM nouns
-            ${isAdmin ? '' : 'WHERE approved = 1'}
+            WHERE locale = ${locale}
+            AND approved >= ${isAdmin ? 0 : 1}
             ORDER BY approved, masc
         `));
     }
 
-    if (req.method === 'POST' && req.url === '/submit') {
+    if (req.method === 'POST' && req.url.startsWith('/submit/')) {
+        const locale = req.url.substring(8);
         if (isAdmin || !isTroll(req.body.data)) {
             const id = ulid()
             await db.get(SQL`
-                INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id)
+                INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id, locale)
                 VALUES (
                     ${id},
                     ${req.body.data.masc.join('|')}, ${req.body.data.fem.join('|')}, ${req.body.data.neutr.join('|')},
                     ${req.body.data.mascPl.join('|')}, ${req.body.data.femPl.join('|')}, ${req.body.data.neutrPl.join('|')},
-                    0, ${req.body.data.base}
+                    0, ${req.body.data.base}, ${locale}
                 )
             `);
             if (isAdmin) {

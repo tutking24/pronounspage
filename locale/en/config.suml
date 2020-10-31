@@ -16,6 +16,10 @@ nouns:
     enabled: true
     route: 'nouns'
     collapsable: false
+    plurals: false
+    declension: false
+    submit: true
+    templates: false
 
 names:
     enabled: false
