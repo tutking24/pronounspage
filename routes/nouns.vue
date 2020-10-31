@@ -50,132 +50,122 @@
                             </div>
                         </section>
 
-                        <section class="table-responsive">
-                            <table :class="'table table-striped table-hover table-fixed-' + ($admin() ? 4 : 3)">
-                                <thead>
-                                <tr>
-                                    <th class="text-nowrap">
-                                        <Icon v="mars"/>
-                                        <T>nouns.masculine</T>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <Icon v="venus"/>
-                                        <T>nouns.feminine</T>
-                                    </th>
-                                    <th class="text-nowrap">
-                                        <Icon v="neuter"/>
-                                        <T>nouns.neuter</T>
-                                    </th>
-                                    <th v-if="$admin()"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <template v-if="visibleNouns().length">
-                                    <tr v-for="noun in visibleNouns()" :class="{'mark-left': !noun.approved}" :key="noun.id">
-                                        <td>
-                                            <ul class="list-singular">
-                                                <li v-for="w in noun.masc">{{ w }}</li>
-                                            </ul>
-                                            <ul class="list-plural">
-                                                <li v-for="w in noun.mascPl">{{ w }}</li>
-                                            </ul>
+                        <Table :data="visibleNouns()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+                            <template v-slot:header>
+                                <th class="text-nowrap">
+                                    <Icon v="mars"/>
+                                    <T>nouns.masculine</T>
+                                </th>
+                                <th class="text-nowrap">
+                                    <Icon v="venus"/>
+                                    <T>nouns.feminine</T>
+                                </th>
+                                <th class="text-nowrap">
+                                    <Icon v="neuter"/>
+                                    <T>nouns.neuter</T>
+                                </th>
+                                <th v-if="$admin()"></th>
+                            </template>
 
-                                            <small v-if="noun.base && nouns[noun.base]">
-                                                <p><strong><T>nouns.edited</T>:</strong></p>
-                                                <ul class="list-singular">
-                                                    <li v-for="w in nouns[noun.base].masc">{{ w }}</li>
-                                                </ul>
-                                                <ul class="list-plural">
-                                                    <li v-for="w in nouns[noun.base].mascPl">{{ w }}</li>
-                                                </ul>
-                                            </small>
+                            <template v-slot:row="s">
+                                <td>
+                                    <ul class="list-singular">
+                                        <li v-for="w in s.el.masc">{{ w }}</li>
+                                    </ul>
+                                    <ul class="list-plural">
+                                        <li v-for="w in s.el.mascPl">{{ w }}</li>
+                                    </ul>
 
-                                            <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(noun)">
-                                                <Icon v="pen"/>
-                                                <T>nouns.edit</T>
+                                    <small v-if="s.el.base && nouns[s.el.base]">
+                                        <p><strong><T>nouns.edited</T>:</strong></p>
+                                        <ul class="list-singular">
+                                            <li v-for="w in nouns[s.el.base].masc">{{ w }}</li>
+                                        </ul>
+                                        <ul class="list-plural">
+                                            <li v-for="w in nouns[s.el.base].mascPl">{{ w }}</li>
+                                        </ul>
+                                    </small>
+
+                                    <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(s.el)">
+                                        <Icon v="pen"/>
+                                        <T>nouns.edit</T>
+                                    </button>
+                                </td>
+                                <td>
+                                    <ul class="list-singular">
+                                        <li v-for="w in s.el.fem">{{ w }}</li>
+                                    </ul>
+                                    <ul class="list-plural">
+                                        <li v-for="w in s.el.femPl">{{ w }}</li>
+                                    </ul>
+
+                                    <small v-if="s.el.base && nouns[s.el.base]">
+                                        <p><strong><T>nouns.edited</T>:</strong></p>
+                                        <ul class="list-singular">
+                                            <li v-for="w in nouns[s.el.base].fem">{{ w }}</li>
+                                        </ul>
+                                        <ul class="list-plural">
+                                            <li v-for="w in nouns[s.el.base].femPl">{{ w }}</li>
+                                        </ul>
+                                    </small>
+                                </td>
+                                <td>
+                                    <ul class="list-singular">
+                                        <li v-for="w in s.el.neutr">
+                                            <Declension :word="w"/>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-plural">
+                                        <li v-for="w in s.el.neutrPl">
+                                            <Declension :word="w" plural :singularOptions="s.el.neutr"/>
+                                        </li>
+                                    </ul>
+
+                                    <small v-if="s.el.base && nouns[s.el.base]">
+                                        <p><strong><T>nouns.edited</T>:</strong></p>
+                                        <ul class="list-singular">
+                                            <li v-for="w in nouns[s.el.base].neutr">{{ w }}</li>
+                                        </ul>
+                                        <ul class="list-plural">
+                                            <li v-for="w in nouns[s.el.base].neutrPl">{{ w }}</li>
+                                        </ul>
+                                    </small>
+                                </td>
+                                <td v-if="$admin()">
+                                    <ul class="list-unstyled">
+                                        <li v-if="!s.el.approved">
+                                            <button class="btn btn-success btn-sm m-1" @click="approve(s.el)">
+                                                <Icon v="check"/>
+                                                <T>crud.approve</T>
                                             </button>
-                                        </td>
-                                        <td>
-                                            <ul class="list-singular">
-                                                <li v-for="w in noun.fem">{{ w }}</li>
-                                            </ul>
-                                            <ul class="list-plural">
-                                                <li v-for="w in noun.femPl">{{ w }}</li>
-                                            </ul>
+                                        </li>
+                                        <li v-else @click="hide(s.el)">
+                                            <button class="btn btn-outline-secondary btn-sm m-1">
+                                                <Icon v="times"/>
+                                                <T>crud.hide</T>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-outline-danger btn-sm m-1" @click="remove(s.el)">
+                                                <Icon v="trash"/>
+                                                <T>crud.remove</T>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="btn btn-outline-primary btn-sm m-1" @click="edit(s.el)">
+                                                <Icon v="pen"/>
+                                                <T>crud.edit</T>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </template>
 
-                                            <small v-if="noun.base && nouns[noun.base]">
-                                                <p><strong><T>nouns.edited</T>:</strong></p>
-                                                <ul class="list-singular">
-                                                    <li v-for="w in nouns[noun.base].fem">{{ w }}</li>
-                                                </ul>
-                                                <ul class="list-plural">
-                                                    <li v-for="w in nouns[noun.base].femPl">{{ w }}</li>
-                                                </ul>
-                                            </small>
-                                        </td>
-                                        <td>
-                                            <ul class="list-singular">
-                                                <li v-for="w in noun.neutr">
-                                                    <Declension :word="w"/>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-plural">
-                                                <li v-for="w in noun.neutrPl">
-                                                    <Declension :word="w" plural :singularOptions="noun.neutr"/>
-                                                </li>
-                                            </ul>
-
-                                            <small v-if="noun.base && nouns[noun.base]">
-                                                <p><strong><T>nouns.edited</T>:</strong></p>
-                                                <ul class="list-singular">
-                                                    <li v-for="w in nouns[noun.base].neutr">{{ w }}</li>
-                                                </ul>
-                                                <ul class="list-plural">
-                                                    <li v-for="w in nouns[noun.base].neutrPl">{{ w }}</li>
-                                                </ul>
-                                            </small>
-                                        </td>
-                                        <td v-if="$admin()">
-                                            <ul class="list-unstyled">
-                                                <li v-if="!noun.approved">
-                                                    <button class="btn btn-success btn-sm m-1" @click="approve(noun)">
-                                                        <Icon v="check"/>
-                                                        <T>crud.approve</T>
-                                                    </button>
-                                                </li>
-                                                <li v-else @click="hide(noun)">
-                                                    <button class="btn btn-outline-secondary btn-sm m-1">
-                                                        <Icon v="times"/>
-                                                        <T>crud.hide</T>
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="btn btn-outline-danger btn-sm m-1" @click="remove(noun)">
-                                                        <Icon v="trash"/>
-                                                        <T>crud.remove</T>
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="btn btn-outline-primary btn-sm m-1" @click="edit(noun)">
-                                                        <Icon v="pen"/>
-                                                        <T>crud.edit</T>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </template>
-                                <template v-else>
-                                    <tr>
-                                        <td :colspan="$admin() ? 4 : 3" class="text-center">
-                                            <Icon v="search"/>
-                                            <T>nouns.empty</T>
-                                        </td>
-                                    </tr>
-                                </template>
-                                </tbody>
-                            </table>
-                        </section>
+                            <template v-slot:empty>
+                                <Icon v="search"/>
+                                <T>nouns.empty</T>
+                            </template>
+                        </Table>
 
                         <Separator icon="plus"/>
 
@@ -194,6 +184,8 @@
     import { buildDict } from "../src/helpers";
     import { head } from "../src/helpers";
     import NounsExtra from "../data/nouns/NounsExtra.vue";
+
+    const PER_PAGE = 30;
 
     export default {
         components: { NounsExtra },
@@ -257,6 +249,8 @@
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },
+
+            // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
             visibleNouns() {
                 return Object.values(this.nouns).filter(n => n.matches(this.filter));
             },
@@ -296,6 +290,10 @@
                         window.location.hash = this.filter;
                     } else {
                         history.pushState('', document.title, window.location.pathname + window.location.search);
+                    }
+                    if (this.$refs.dictionarytable) {
+                        this.$refs.dictionarytable.reset();
+                        this.$refs.dictionarytable.focus();
                     }
                 }
             }
@@ -338,10 +336,6 @@
             width: $fa-fw-width;
             text-align: center;
         }
-    }
-
-    .mark-left {
-        border-left: 3px solid $primary;
     }
 
     tr {
