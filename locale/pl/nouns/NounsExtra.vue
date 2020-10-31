@@ -291,13 +291,13 @@
                     M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'y', N_pl: 'ami', Msc_pl: 'ach', W_pl: 'y',
                 }),
                 dukajExtendedDeclension: new NounDeclension({
-                    M: 'tu kosmicznu twórcu',
-                    D: 'teno kosmiczneno twórcu',
+                    M: 'tenu kosmicznu twórcu',
+                    D: 'tenu kosmicznenu twórcu',
                     C: 'tewu kosmicznewu twórcu',
-                    B: 'tu kosmicznu twórcu',
+                    B: 'tenu kosmicznenu twórcu',
                     N: 'tum kosmicznum twórcum',
                     Msc: 'tum kosmicznum twórcum',
-                    W: 'tu kosmicznu twórcu',
+                    W: 'tenu kosmicznu twórcu',
 
                     M_pl: '',
                     D_pl: '',
