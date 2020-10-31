@@ -11,6 +11,7 @@ template:
 sources:
     enabled: true
     route: 'sources'
+    submit: true
 
 nouns:
     enabled: true

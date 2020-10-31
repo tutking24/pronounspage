@@ -112,3 +112,8 @@ img.icon {
 
     }
 }
+
+label.required::after {
+    color: $danger;
+    content: ' *';
+}

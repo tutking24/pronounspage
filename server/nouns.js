@@ -74,15 +74,15 @@ export default async function (req, res, next) {
 
     if (req.method === 'POST' && req.url.startsWith('/submit/')) {
         const locale = req.url.substring(8);
-        if (isAdmin || !isTroll(req.body.data)) {
+        if (isAdmin || !isTroll(req.body)) {
             const id = ulid()
             await db.get(SQL`
                 INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id, locale)
                 VALUES (
                     ${id},
-                    ${req.body.data.masc.join('|')}, ${req.body.data.fem.join('|')}, ${req.body.data.neutr.join('|')},
-                    ${req.body.data.mascPl.join('|')}, ${req.body.data.femPl.join('|')}, ${req.body.data.neutrPl.join('|')},
-                    0, ${req.body.data.base}, ${locale}
+                    ${req.body.masc.join('|')}, ${req.body.fem.join('|')}, ${req.body.neutr.join('|')},
+                    ${req.body.mascPl.join('|')}, ${req.body.femPl.join('|')}, ${req.body.neutrPl.join('|')},
+                    0, ${req.body.base}, ${locale}
                 )
             `);
             if (isAdmin) {

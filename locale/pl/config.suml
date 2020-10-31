@@ -11,6 +11,7 @@ template:
 sources:
     enabled: true
     route: 'korpus'
+    submit: true
 
 nouns:
     enabled: true

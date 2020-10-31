@@ -13,6 +13,14 @@
             <Share :title="$t('sources.headerLonger')"/>
         </section>
 
+        <section v-if="config.sources.submit">
+            <button v-if="!submitShown" class="btn btn-outline-success btn-block" @click="submitShown = true">
+                <Icon v="plus-circle"/>
+                <T>sources.submit.header</T>
+            </button>
+            <SourceSubmitForm v-else/>
+        </section>
+
         <section>
             <button v-if="!tocShown" class="btn btn-outline-primary btn-block" @click="tocShown = true">
                 <Icon v="list"/>
@@ -140,6 +148,7 @@
                 sourceTypes: Source.TYPES,
                 filter: '',
                 glue: ' ' + this.$t('template.or') + ' ',
+                submitShown: false,
             };
         },
         mounted() {

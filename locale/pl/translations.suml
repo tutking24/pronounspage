@@ -86,6 +86,21 @@ sources:
         Song: 'Muzyka'
         Poetry: 'Poezja'
         Other: 'Inne'
+    submit:
+        header: 'Zgłoś przykład do dodania'
+        action: 'Zgłoś'
+        templates: 'Które zaimki/formy są użyte?'
+        type: 'Rodzaj źródła kultury'
+        author: 'Autor'
+        title: 'Tytuł'
+        extra: 'Dodatkowe dane (tłumaczenie, czasopismo, …)'
+        year: 'Rok wydania (polskiej wersji)'
+        fragments: 'Fragmenty'
+        comment: 'Komentarz'
+        link: 'Link do treści'
+        thanks: 'Dziękujemy za zgłoszenie!'
+        another: 'Zgłoś kolejne źródło'
+        moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
 
 nouns:
     header: 'Rzeczowniki'

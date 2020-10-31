@@ -106,6 +106,7 @@ export default {
         '/api/user': '~/server/user.js',
         '/api/profile': '~/server/profile.js',
         '/api/admin': '~/server/admin.js',
+        '/api/sources': '~/server/sources.js',
     },
     axios: {
         baseURL: process.env.BASE_URL + '/api',

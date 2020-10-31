@@ -1,6 +1,6 @@
 const mailer = require('mailer');
 
-module.exports = (to, subject, body) => {
+module.exports = (to, subject, body = undefined, html = undefined) => {
     mailer.send({
         host: process.env.MAILER_HOST,
         port: parseInt(process.env.MAILER_PORT),
@@ -12,6 +12,7 @@ module.exports = (to, subject, body) => {
         to,
         subject,
         body,
+        html,
     },
     function(err){
         if (err) {

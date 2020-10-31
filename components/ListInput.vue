@@ -59,7 +59,7 @@
             add() {
                 this.$emit('input', [...this.value, this.prototype]);
                 this.$nextTick(_ => {
-                    this.$refs.items[this.value.length - 1].querySelector('input').focus();
+                    this.$refs.items[this.value.length - 1].querySelector('input,textarea,select').focus();
                 });
             },
             update(i, val) {
