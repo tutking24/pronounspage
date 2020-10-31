@@ -11,7 +11,7 @@
                 <T>profile.edit</T>
             </LocaleLink>
             <Spinner v-if="deleting"/>
-            <a v-else href="#" class="badge badge-light" @click.prevent="removeProfile(locale)">
+            <a v-else href="#" class="badge badge-light" @click.prevent="removeProfile(locale)" :aria-label="$t('profile.delete')">
                 <Icon v="trash-alt"/>
             </a>
         </span>

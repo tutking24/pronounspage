@@ -3,7 +3,7 @@
         <li v-for="(v, i) in iVal" ref="items">
             <div class="input-group mb-1">
                 <div class="input-group-prepend">
-                    <button class="btn btn-light border handle" type="button">
+                    <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
                         <Icon v="bars"/>
                     </button>
                 </div>
@@ -11,7 +11,7 @@
                     <input v-model="iVal[i]" type="text" class="form-control" required/>
                 </slot>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)">
+                    <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
                         <Icon v="times"/>
                     </button>
                 </div>
@@ -19,7 +19,7 @@
         </li>
 
         <li slot="footer">
-            <button class="btn btn-outline-success btn-block" type="button" @click.prevent="add">
+            <button class="btn btn-outline-success btn-block" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
                 <Icon v="plus"/>
             </button>
         </li>

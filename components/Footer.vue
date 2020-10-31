@@ -21,17 +21,19 @@
                 <div class="mb-3">
                     <SquareButton
                             v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
-                            :link="link.url">
+                            :link="link.url"
+                            :aria-label="link.icon"
+                    >
                         <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                     </SquareButton>
                     <br/>
-                    <SquareButton link="https://avris.it">
-                        <img src="~assets/avris.svg"/>
+                    <SquareButton link="https://avris.it" aria-label="avris.it">
+                        <img src="~assets/avris.svg" alt="Avris"/>
                     </SquareButton>
-                    <SquareButton link="https://paypal.me/AndreAvris">
+                    <SquareButton link="https://paypal.me/AndreAvris" aria-label="PayPal">
                         <Icon v="paypal" set="b"/>
                     </SquareButton>
-                    <SquareButton link="https://gitlab.com/Avris/Zaimki">
+                    <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
                         <Icon v="gitlab" set="b"/>
                     </SquareButton>
                 </div>

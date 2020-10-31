@@ -4,7 +4,7 @@
             <Icon v="share"/>
             <T>share</T>:
         </p>
-        <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)">
+        <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)" :aria-label="network">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>
     </div>

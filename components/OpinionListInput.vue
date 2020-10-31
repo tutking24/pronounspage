@@ -2,14 +2,17 @@
     <ListInput v-model="v" :prototype="{key: '', value: 0}" v-slot="s" :group="group">
         <div class="input-group-prepend">
             <button type="button" :class="['btn', parseInt(s.val.value) === 1 ? 'btn-primary' : 'btn-outline-secondary']"
+                    :aria-label="$t('profile.opinion.yes')"
                     @click="s.update({key: s.val.key, value: 1})">
                 <Icon v="heart"/>
             </button>
             <button type="button" :class="['btn', parseInt(s.val.value) === 0 ? 'btn-primary' : 'btn-outline-secondary']"
+                    :aria-label="$t('profile.opinion.meh')"
                     @click="s.update({key: s.val.key, value: 0})">
                 <Icon v="thumbs-up"/>
             </button>
             <button type="button" :class="['btn', parseInt(s.val.value) === -1 ? 'btn-primary' : 'btn-outline-secondary']"
+                    :aria-label="$t('profile.opinion.no')"
                     @click="s.update({key: s.val.key, value: -1})">
                 <Icon v="thumbs-down"/>
             </button>

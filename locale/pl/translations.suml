@@ -726,6 +726,11 @@ profile:
         header: 'Edytor wizytówki'
         save: 'Zapisz wizytówkę'
 
+    opinion:
+        yes: 'Tak'
+        meh: 'Meh'
+        no: 'Nie'
+
 share: 'Udostępnij'
 
 crud:
@@ -733,6 +738,7 @@ crud:
     hide: 'Schowaj'
     remove: 'Usuń'
     edit: 'Edytuj'
+    add: 'Dodaj'
     filter: 'Filtruj'
     filterLong: 'Filtruj listę…'
 
@@ -770,3 +776,5 @@ admin:
 
 table:
     empty: 'Pusto…'
+    sort: 'Przeciągnij by posortować'
+    scrollUp: 'Przewiń na samą górę'
