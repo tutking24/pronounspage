@@ -24,7 +24,7 @@ const drawCircle = (context, image, x, y, size) => {
 
 const router = Router();
 
-router.get('/banner/:templateName.png', async (req, res) => {
+router.get('/banner/:templateName*.png', async (req, res) => {
     const width = 1200
     const height = 600
     const mime = 'image/png';
