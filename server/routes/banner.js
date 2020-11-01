@@ -25,6 +25,7 @@ const drawCircle = (context, image, x, y, size) => {
 const router = Router();
 
 router.get('/banner/:templateName*.png', async (req, res) => {
+    const templateName = req.params.templateName + req.params[0];
     const width = 1200
     const height = 600
     const mime = 'image/png';
@@ -49,8 +50,8 @@ router.get('/banner/:templateName*.png', async (req, res) => {
         context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + 48);
     }
 
-    if (req.params.templateName.startsWith('@')) {
-        const user = await req.db.get(SQL`SELECT username, email FROM users WHERE username=${req.params.templateName.substring(1)}`);
+    if (templateName.startsWith('@')) {
+        const user = await req.db.get(SQL`SELECT username, email FROM users WHERE username=${templateName.substring(1)}`);
         if (!user) {
             await fallback();
             return res.set('content-type', mime).send(canvas.toBuffer(mime));
@@ -76,12 +77,12 @@ router.get('/banner/:templateName*.png', async (req, res) => {
 
     const template = buildTemplate(
         parseTemplates(loadTsv(__dirname + '/../../data/templates/templates.tsv')),
-        req.params.templateName,
+        templateName,
     );
 
     const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
 
-    if (!template && req.params.templateName !== 'dowolne') { // TODO
+    if (!template && templateName !== 'dowolne') { // TODO
         await fallback();
         return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
@@ -90,7 +91,7 @@ router.get('/banner/:templateName*.png', async (req, res) => {
     context.font = 'regular 48pt Quicksand'
     context.fillText(translations.template.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-    const templateNameOptions = req.params.templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
+    const templateNameOptions = templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
     context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
     context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
 
