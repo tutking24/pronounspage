@@ -73,6 +73,17 @@
             </div>
         </div>
 
+        <Loading :value="profiles">
+            <template v-slot:header>
+                <h3 class="h4"><T>profile.list</T>:</h3>
+            </template>
+            <ul v-if="profiles !== undefined" class="list-group">
+                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
+                    <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
+                </li>
+            </ul>
+        </Loading>
+
         <Loading :value="socialConnections">
             <template v-slot:header>
                 <h3 class="h4"><T>user.socialConnection.list</T>:</h3>
@@ -81,17 +92,6 @@
                 <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', 'en' === config.locale ? 'profile-current' : '']">
                     <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]"
                                       @disconnected="socialConnections[provider] = undefined" @setAvatar="setAvatar"/>
-                </li>
-            </ul>
-        </Loading>
-
-        <Loading :value="profiles">
-            <template v-slot:header>
-                <h3 class="h4"><T>profile.list</T>:</h3>
-            </template>
-            <ul v-if="profiles !== undefined" class="list-group">
-                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
-                    <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
                 </li>
             </ul>
         </Loading>
