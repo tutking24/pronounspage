@@ -6,7 +6,13 @@
                     <p class="mb-0">
                         <Avatar :user="$user()"/>
                     </p>
-                    <p>
+                    <p v-if="$user().avatarSource" class="mt-3">
+                        Gravatar:
+                        <a href="#" @click.prevent="setAvatar(null)">
+                            <Avatar :user="$user()" grav dsize="2rem"/>
+                        </a>
+                    </p>
+                    <p v-else>
                         <a href="https://gravatar.com" target="_blank" rel="noopener" class="small">
                             <Icon v="external-link"/>
                             <T>user.avatar.change</T>
@@ -73,7 +79,8 @@
             </template>
             <ul v-if="socialConnections !== undefined" class="list-group">
                 <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', 'en' === config.locale ? 'profile-current' : '']">
-                    <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]" @disconnected="socialConnections[provider] = undefined"/>
+                    <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]"
+                                      @disconnected="socialConnections[provider] = undefined" @setAvatar="setAvatar"/>
                 </li>
             </ul>
         </Loading>
@@ -182,6 +189,12 @@
                 const response = await this.$axios.$post(`/user/delete`);
 
                 this.logout();
+            },
+            async setAvatar(source) {
+                const response = await this.$axios.$post(`/user/set-avatar`, {source});
+
+                this.$store.commit('setToken', response.token);
+                this.$cookies.set('token', this.$store.state.token);
             },
         },
     }

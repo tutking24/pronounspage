@@ -6,6 +6,7 @@ import translations from "../translations";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import config from '../config';
+import avatar from '../avatar';
 
 const now = Math.floor(Date.now() / 1000);
 
@@ -63,7 +64,7 @@ const defaultUsername = async (db, email) => {
     }
 }
 
-const fetchOrCreateUser = async (db, user) => {
+const fetchOrCreateUser = async (db, user, avatarSource = null) => {
     let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`);
     if (!dbUser) {
         dbUser = {
@@ -71,11 +72,13 @@ const fetchOrCreateUser = async (db, user) => {
             username: await defaultUsername(db, user.name || user.email),
             email: normalise(user.email),
             roles: 'user',
-            avatarSource: null,
+            avatarSource: avatarSource,
         }
         await db.get(SQL`INSERT INTO users(id, username, email, roles, avatarSource)
             VALUES (${dbUser.id}, ${dbUser.username}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
     }
+
+    dbUser.avatar = await avatar(db, dbUser);
 
     return dbUser;
 }
@@ -255,7 +258,6 @@ const socialLoginHandlers = {
         }
     },
     facebook(r) {
-        console.log(r);
         return {
             id: r.profile.id,
             email: r.profile.email,
@@ -266,7 +268,6 @@ const socialLoginHandlers = {
         }
     },
     google(r) {
-        console.log(r);
         return {
             id: r.profile.sub,
             email: r.profile.email_verified !== false ? r.profile.email : undefined,
@@ -296,7 +297,7 @@ router.get('/user/social/:provider', async (req, res) => {
     const dbUser = await fetchOrCreateUser(req.db, user || {
         email: payload.email || `${payload.id}@${req.params.provider}.oauth`,
         name: payload.name,
-    });
+    }, req.params.provider);
 
     const token = jwt.sign({
         ...dbUser,
@@ -345,6 +346,20 @@ router.post('/user/social-connection/:provider/disconnect', async (req, res) => 
     await invalidateAuthenticator(req.db, auth.id)
 
     return res.json('ok');
+});
+
+router.post('/user/set-avatar', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE users
+        SET avatarSource = ${req.body.source || null}
+        WHERE id = ${req.user.id}
+    `)
+
+    return res.json({token: await issueAuthentication(req.db, req.user)});
 });
 
 export default router;

@@ -12,7 +12,9 @@
         </span>
         <span v-else class="text-center">
             <span class="mr-3">
-                <Avatar :src="connection.avatar" :user="$user()" dsize="2rem"/>
+                <a href="#" @click.prevent="$emit('setAvatar', provider)">
+                    <Avatar :src="connection.avatar" :user="$user()" dsize="2rem"/>
+                </a>
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>

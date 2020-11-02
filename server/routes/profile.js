@@ -3,6 +3,7 @@ import SQL from 'sql-template-strings';
 import md5 from "js-md5";
 import {buildDict} from "../../src/helpers";
 import {ulid} from "ulid";
+import avatar from "../avatar";
 
 const calcAge = birthday => {
     if (!birthday) {
@@ -21,41 +22,33 @@ const calcAge = birthday => {
     return parseInt(Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25));
 }
 
-const buildProfile = profile => {
-    return {
-        id: profile.id,
-        userId: profile.userId,
-        username: profile.username,
-        emailHash: md5(profile.email),
-        names: JSON.parse(profile.names),
-        pronouns: JSON.parse(profile.pronouns),
-        description: profile.description,
-        age: calcAge(profile.birthday),
-        links: JSON.parse(profile.links),
-        flags: JSON.parse(profile.flags),
-        words: JSON.parse(profile.words),
-    };
-};
-
 const fetchProfiles = async (db, username, self) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.*, users.username, users.email FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource FROM profiles LEFT JOIN users on users.id == profiles.userId 
         WHERE users.username = ${username}
         AND profiles.active = 1
         ORDER BY profiles.locale
     `);
 
-    return buildDict(function* () {
-        for (let profile of profiles) {
-            yield [
-                profile.locale,
-                {
-                    ...buildProfile(profile),
-                    birthday: self ? profile.birthday : undefined,
-                }
-            ];
-        }
-    });
+    const p = {}
+    for (let profile of profiles) {
+        p[profile.locale] = {
+            id: profile.id,
+            userId: profile.userId,
+            username: profile.username,
+            emailHash: md5(profile.email),
+            names: JSON.parse(profile.names),
+            pronouns: JSON.parse(profile.pronouns),
+            description: profile.description,
+            age: calcAge(profile.birthday),
+            links: JSON.parse(profile.links),
+            flags: JSON.parse(profile.flags),
+            words: JSON.parse(profile.words),
+            avatar: await avatar(db, profile),
+            birthday: self ? profile.birthday : undefined,
+        };
+    }
+    return p;
 };
 
 const router = Router();

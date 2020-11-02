@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
+import avatar from '../avatar';
 
 const router = Router();
 
@@ -9,7 +10,7 @@ router.get('/admin/users', async (req, res) => {
     }
 
     const users = await req.db.all(SQL`
-        SELECT u.id, u.username, u.email, u.roles, p.locale
+        SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
         ORDER BY u.id DESC
@@ -22,6 +23,7 @@ router.get('/admin/users', async (req, res) => {
                 ...user,
                 locale: undefined,
                 profiles: user.locale ? [user.locale] : [],
+                avatar: await avatar(req.db, user),
             }
         } else {
             groupedUsers[user.id].profiles.push(user.locale);

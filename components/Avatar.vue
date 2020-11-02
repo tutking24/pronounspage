@@ -1,5 +1,6 @@
 <template>
-    <img :src="src || gravatar" alt="" class="rounded-circle" :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
+    <img :src="grav ? gravatar : (src || user.avatar || gravatar)" alt="" class="rounded-circle"
+         :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
 </template>
 
 <script>
@@ -8,9 +9,10 @@
     export default {
         props: {
             user: { required: true },
+            src: {},
             size: { 'default': 128 },
             dsize: { 'default': '6rem' },
-            src: {},
+            grav: { type: Boolean },
         },
         data() {
             return {
