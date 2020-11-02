@@ -28,9 +28,16 @@
                     {{s.el.username}}
                 </td>
                 <td>
-                    <a :href="`mailto:${s.el.email}`" target="_blank" rel="noopener">
-                        {{s.el.email}}
-                    </a>
+                    <p>
+                        <a :href="`mailto:${s.el.email}`" target="_blank" rel="noopener">
+                            {{s.el.email}}
+                        </a>
+                    </p>
+                    <ul v-if="s.el.socialConnections.length" class="list-inline">
+                        <li v-for="conn in s.el.socialConnections" class="list-inline-item">
+                            <Icon :v="socialProviders[conn].icon || conn" set="b"/>
+                        </li>
+                    </ul>
                 </td>
                 <td>
                     <span :class="['badge', s.el.roles === 'admin' ? 'badge-primary' : 'badge-light']">
@@ -53,8 +60,12 @@
 
 <script>
     import {head} from "../src/helpers";
+    import {socialProviders} from "../src/data";
 
     export default {
+        data() {
+            return { socialProviders }
+        },
         async asyncData({ app, store }) {
             if (!store.state.user || store.state.user.roles !== 'admin') {
                 return {};

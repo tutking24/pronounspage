@@ -118,3 +118,7 @@ export const curry = function (func) {
 export const capitalise = function (word) {
     return word.substring(0, 1).toUpperCase() + word.substring(1);
 }
+
+export const now = function () {
+    return Math.floor(Date.now() / 1000);
+}

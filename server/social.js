@@ -1,4 +1,4 @@
-export default {
+export const config = {
     defaults: {
         origin: process.env.BASE_URL,
         transport: 'session',
@@ -25,3 +25,36 @@ export default {
         callback: '/api/user/social/google',
     }
 }
+
+export const handlers = {
+    twitter(r) {
+        return {
+            id: r.profile.id_str,
+            email: r.profile.email,
+            name: r.profile.screen_name,
+            avatar: r.profile.profile_image_url_https.replace('_normal', '_400x400'),
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+    facebook(r) {
+        return {
+            id: r.profile.id,
+            email: r.profile.email,
+            name: r.profile.name,
+            avatar: r.profile.picture.data.url,
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+    google(r) {
+        return {
+            id: r.profile.sub,
+            email: r.profile.email_verified !== false ? r.profile.email : undefined,
+            name: r.profile.email,
+            avatar: r.profile.picture,
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+};

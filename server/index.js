@@ -24,7 +24,7 @@ app.use(async function (req, res, next) {
     next();
 });
 
-router.use(grant.express()(require('./social').default));
+router.use(grant.express()(require('./social').config));
 
 app.use(require('./routes/banner').default);
 

@@ -1,14 +1,13 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {buildDict, makeId} from "../../src/helpers";
+import {buildDict, makeId, now} from "../../src/helpers";
 import translations from "../translations";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import config from '../config';
 import avatar from '../avatar';
-
-const now = Math.floor(Date.now() / 1000);
+import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
@@ -21,7 +20,7 @@ const saveAuthenticator = async (db, type, user, payload, validForMinutes = null
         ${user ? user.id : null},
         ${type},
         ${JSON.stringify(payload)},
-        ${validForMinutes ? (now + validForMinutes * 60) : null}
+        ${validForMinutes ? (now() + validForMinutes * 60) : null}
     )`);
     return id;
 }
@@ -30,7 +29,7 @@ const findAuthenticator = async (db, id, type) => {
     const authenticator = await db.get(SQL`SELECT * FROM authenticators
         WHERE id = ${id}
         AND type = ${type}
-        AND (validUntil IS NULL OR validUntil > ${now})
+        AND (validUntil IS NULL OR validUntil > ${now()})
     `);
 
     if (authenticator) {
@@ -42,7 +41,7 @@ const findAuthenticator = async (db, id, type) => {
 
 const invalidateAuthenticator = async (db, id) => {
     await db.get(SQL`UPDATE authenticators
-        SET validUntil = ${now}
+        SET validUntil = ${now()}
         WHERE id = ${id}
     `);
 }
@@ -246,39 +245,6 @@ router.post('/user/delete', async (req, res) => {
     return res.json(true);
 });
 
-const socialLoginHandlers = {
-    twitter(r) {
-        return {
-            id: r.profile.id_str,
-            email: r.profile.email,
-            name: r.profile.screen_name,
-            avatar: r.profile.profile_image_url_https.replace('_normal', '_400x400'),
-            access_token: r.access_token,
-            access_secret: r.access_secret,
-        }
-    },
-    facebook(r) {
-        return {
-            id: r.profile.id,
-            email: r.profile.email,
-            name: r.profile.name,
-            avatar: r.profile.picture.data.url,
-            access_token: r.access_token,
-            access_secret: r.access_secret,
-        }
-    },
-    google(r) {
-        return {
-            id: r.profile.sub,
-            email: r.profile.email_verified !== false ? r.profile.email : undefined,
-            name: r.profile.email,
-            avatar: r.profile.picture,
-            access_token: r.access_token,
-            access_secret: r.access_secret,
-        }
-    },
-};
-
 router.get('/user/social/:provider', async (req, res) => {
     const payload = socialLoginHandlers[req.params.provider](req.session.grant.response)
 
@@ -286,7 +252,7 @@ router.get('/user/social/:provider', async (req, res) => {
         SELECT * FROM authenticators
         WHERE type = ${req.params.provider}
         AND payload LIKE ${'{"id":"' + payload.id + '"%'}
-        AND (validUntil IS NULL OR validUntil > ${now})
+        AND (validUntil IS NULL OR validUntil > ${now()})
     `)
 
     const user = auth ? await req.db.get(SQL`
@@ -319,9 +285,9 @@ router.get('/user/social-connections', async (req, res) => {
 
     const authenticators = await req.db.all(SQL`
         SELECT type, payload FROM authenticators
-        WHERE type IN (`.append(Object.keys(socialLoginHandlers).map(k => `'${k}'`).join(',')).append(SQL`)
+        WHERE type IN (`.append(Object.keys(socialLoginConfig).map(k => `'${k}'`).join(',')).append(SQL`)
         AND userId = ${req.user.id}
-        AND (validUntil IS NULL OR validUntil > ${now})
+        AND (validUntil IS NULL OR validUntil > ${now()})
     `));
 
     return res.json(buildDict(function* () {
@@ -340,7 +306,7 @@ router.post('/user/social-connection/:provider/disconnect', async (req, res) => 
         SELECT id FROM authenticators
         WHERE type = ${req.params.provider}
         AND userId = ${req.user.id}
-        AND (validUntil IS NULL OR validUntil > ${now})
+        AND (validUntil IS NULL OR validUntil > ${now()})
     `)
 
     await invalidateAuthenticator(req.db, auth.id)
