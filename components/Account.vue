@@ -89,7 +89,7 @@
                 <h3 class="h4"><T>user.socialConnection.list</T>:</h3>
             </template>
             <ul v-if="socialConnections !== undefined" class="list-group">
-                <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', 'en' === config.locale ? 'profile-current' : '']">
+                <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', socialConnections[provider] !== undefined ? 'profile-current' : '']">
                     <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]"
                                       @disconnected="socialConnections[provider] = undefined" @setAvatar="setAvatar"/>
                 </li>
