@@ -67,7 +67,7 @@ router.post('/profile/save/:locale', async (req, res) => {
     await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${userId} AND locale = ${req.params.locale}`);
     await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active)
         VALUES (${ulid()}, ${userId}, ${req.params.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
-                ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links)}, ${JSON.stringify(req.body.flags)},
+                ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)},
                 ${JSON.stringify(req.body.words)}, 1
     )`);
 
