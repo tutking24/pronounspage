@@ -13,9 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({
     secret: process.env.SECRET,
-    cookie: {
-        secure: process.env.NODE_ENV === 'production',
-    },
+    cookie: {},
 }));
 
 app.use(async function (req, res, next) {
