@@ -4,6 +4,10 @@
 
         <div v-if="token === null">
             <form @submit.prevent="login">
+                <p>
+                    <Icon v="info-circle"/>
+                    <T>user.login.why</T>
+                </p>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" v-model="usernameOrEmail"
                            :placeholder="$t('user.login.placeholder')" autofocus required/>
@@ -14,9 +18,12 @@
                         </button>
                     </div>
                 </div>
-                <p class="small">
-                    <T>user.login.why</T>
-                </p>
+                <div class="btn-group btn-block mb-3">
+                    <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                        <Icon :v="providerOptions.icon || provider" set="b"/>
+                        {{ providerOptions.name }}
+                    </a>
+                </div>
                 <p class="small text-muted">
                     <T>terms.consent</T>
                     <nuxt-link :to="`/${config.user.termsRoute}`">
@@ -54,6 +61,7 @@
 
 <script>
     import jwt from 'jsonwebtoken';
+    import {socialProviders} from "../src/data";
 
     export default {
         data() {
@@ -63,6 +71,8 @@
                 code: '',
 
                 error: '',
+
+                socialProviders,
             };
         },
         computed: {

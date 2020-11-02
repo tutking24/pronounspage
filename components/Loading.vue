@@ -1,5 +1,6 @@
 <template>
     <section class="w-100">
+        <slot name="header"></slot>
         <div v-if="isLoaded">
             <slot/>
         </div>

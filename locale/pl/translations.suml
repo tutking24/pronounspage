@@ -684,7 +684,7 @@ user:
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
         why: >
-            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=przykład}).
+            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=takimi jak ta}).
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
@@ -706,6 +706,12 @@ user:
         change: 'Zmień'
     deleteAccount: 'Usuń konto'
     deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
+    socialConnection:
+        list: 'Połączenia z social media'
+        connect: 'Połącz'
+        refresh: 'Odśwież'
+        disconnect: 'Rozłącz'
+        disconnectConfirm: 'Czy na pewno chcesz usunąć to połączenie? (Zawsze możesz logować się przez maila %email%)'
 
 profile:
     description: 'Opis'

@@ -100,7 +100,7 @@
         methods: {
             async submit() {
                 this.submitting = true;
-                await this.$axios.$post(`/sources/submit/${this.config.locale}`, this.form, { headers: this.$auth() });
+                await this.$axios.$post(`/sources/submit/${this.config.locale}`, this.form);
 
                 this.submitting = false;
                 this.afterSubmit = true;

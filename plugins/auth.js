@@ -11,11 +11,6 @@ export default ({app, store}) => {
     }
 
     Vue.prototype.$user = _ => store.state.user;
-    Vue.prototype.$auth = _ => {
-        return store.state.token ? {
-            authorization: 'Bearer ' + store.state.token,
-        } : {};
-    };
     Vue.prototype.$admin = _ => {
         return store.state.user && store.state.user.authenticated && store.state.user.roles === 'admin';
     };

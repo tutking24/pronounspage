@@ -10,6 +10,12 @@ export const locales = {
     // nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
 }
 
+export const socialProviders = {
+    twitter: { name: 'Twitter' },
+    facebook: { name: 'Facebook' },
+    google: { name: 'Google' },
+}
+
 import templatesRaw from '../data/templates/templates.tsv';
 export const templates = parseTemplates(templatesRaw);
 

@@ -1,5 +1,5 @@
 <template>
-    <img :src="gravatar" alt="" class="rounded-circle" :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
+    <img :src="src || gravatar" alt="" class="rounded-circle" :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
 </template>
 
 <script>
@@ -10,6 +10,7 @@
             user: { required: true },
             size: { 'default': 128 },
             dsize: { 'default': '6rem' },
+            src: {},
         },
         data() {
             return {

@@ -182,7 +182,7 @@
                 if (this.nounsRaw !== undefined) {
                     return;
                 }
-                this.nounsRaw = await this.$axios.$get(`/nouns/all/${this.config.locale}`, { headers: this.$auth() });
+                this.nounsRaw = await this.$axios.$get(`/nouns/all/${this.config.locale}`);
             },
             async setFilter(filter) {
                 this.filter = filter;
@@ -200,7 +200,7 @@
                 this.$refs.form.edit(noun);
             },
             async approve(noun) {
-                await this.$axios.$post(`/nouns/approve/${noun.id}`, {}, { headers: this.$auth() });
+                await this.$axios.$post(`/nouns/approve/${noun.id}`);
                 if (noun.base) {
                     delete this.nouns[noun.base];
                 }
@@ -209,7 +209,7 @@
                 this.$forceUpdate();
             },
             async hide(noun) {
-                await this.$axios.$post(`/nouns/hide/${noun.id}`, {}, { headers: this.$auth() });
+                await this.$axios.$post(`/nouns/hide/${noun.id}`);
                 noun.approved = false;
                 this.$forceUpdate();
             },
@@ -217,7 +217,7 @@
                 if (!confirm('Czy na pewno usunąć ten wpis?')) {
                     return false;
                 }
-                await this.$axios.$post(`/nouns/remove/${noun.id}`, {}, { headers: this.$auth() });
+                await this.$axios.$post(`/nouns/remove/${noun.id}`);
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },

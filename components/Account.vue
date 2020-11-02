@@ -67,14 +67,27 @@
             </div>
         </div>
 
-        <Loading :value="profiles"><template v-if="profiles !== undefined">
-            <h3 class="h4"><T>profile.list</T>:</h3>
-            <ul class="list-group mb-3">
+        <Loading :value="socialConnections">
+            <template v-slot:header>
+                <h3 class="h4"><T>user.socialConnection.list</T>:</h3>
+            </template>
+            <ul v-if="socialConnections !== undefined" class="list-group">
+                <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', 'en' === config.locale ? 'profile-current' : '']">
+                    <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]" @disconnected="socialConnections[provider] = undefined"/>
+                </li>
+            </ul>
+        </Loading>
+
+        <Loading :value="profiles">
+            <template v-slot:header>
+                <h3 class="h4"><T>profile.list</T>:</h3>
+            </template>
+            <ul v-if="profiles !== undefined" class="list-group">
                 <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
                     <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
                 </li>
             </ul>
-        </template></Loading>
+        </Loading>
 
         <section>
             <a href="#" class="badge badge-light border" @click.prevent="logout">
@@ -91,6 +104,8 @@
 </template>
 
 <script>
+    import {socialProviders} from "../src/data";
+
     export default {
         data() {
             return {
@@ -102,10 +117,14 @@
                 code: '',
 
                 profiles: undefined,
+
+                socialProviders,
+                socialConnections: undefined,
             }
         },
         async mounted() {
             this.profiles = await this.$axios.$get(`/profile/get/${this.$user().username}`);
+            this.socialConnections = await this.$axios.$get(`/user/social-connections`);
         },
         methods: {
             async changeUsername() {
@@ -113,7 +132,7 @@
 
                 const response = await this.$axios.$post(`/user/change-username`, {
                     username: this.username,
-                }, { headers: this.$auth() });
+                });
 
                 if (response.error) {
                     this.error = response.error;
@@ -130,7 +149,7 @@
                     email: this.email,
                     authId: this.changeEmailAuthId,
                     code: this.code,
-                }, { headers: this.$auth() });
+                });
 
                 if (response.error) {
                     this.error = response.error;
@@ -160,7 +179,7 @@
             async deleteAccount() {
                 await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
 
-                const response = await this.$axios.$post(`/user/delete`, {}, { headers: this.$auth() });
+                const response = await this.$axios.$post(`/user/delete`);
 
                 this.logout();
             },

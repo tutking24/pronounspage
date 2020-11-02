@@ -175,7 +175,7 @@
             },
             async save() {
                 this.saving = true;
-                const response = await this.$axios.$post(`/profile/save/${this.config.locale}`, {
+                await this.$axios.$post(`/profile/save/${this.config.locale}`, {
                     names: listToDict(this.names),
                     pronouns: listToDict(this.pronouns),
                     description: this.description,
@@ -183,7 +183,7 @@
                     links: [...this.links],
                     flags: [...this.flags],
                     words: this.words.map(x => listToDict(x)),
-                }, { headers: this.$auth() });
+                });
                 this.saving = false;
                 this.$router.push(`/@${this.$user().username}`)
             },

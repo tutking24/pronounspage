@@ -1,11 +1,22 @@
 import express from 'express';
 import authenticate from '../src/authenticate';
 import dbConnection from './db';
+import session from 'express-session';
+import cookieParser from 'cookie-parser';
+import grant from "grant";
+import router from "./routes/user";
 
 const app = express()
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(session({
+    secret: process.env.SECRET,
+    cookie: {
+        secure: process.env.NODE_ENV === 'production',
+    },
+}));
 
 app.use(async function (req, res, next) {
     req.rawUser = authenticate(req);
@@ -13,7 +24,9 @@ app.use(async function (req, res, next) {
     req.admin = req.user && req.user.roles === 'admin';
     req.db = await dbConnection();
     next();
-})
+});
+
+router.use(grant.express()(require('./social').default));
 
 app.use(require('./routes/banner').default);
 

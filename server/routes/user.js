@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {makeId} from "../../src/helpers";
+import {buildDict, makeId} from "../../src/helpers";
 import translations from "../translations";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
+import config from '../config';
 
 const now = Math.floor(Date.now() / 1000);
 
@@ -46,7 +47,7 @@ const invalidateAuthenticator = async (db, id) => {
 }
 
 const defaultUsername = async (db, email) => {
-    const base = email.substring(0, email.indexOf('@'))
+    const base = email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
         .padEnd(4, '0')
         .substring(0, 12)
         .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_');
@@ -62,12 +63,12 @@ const defaultUsername = async (db, email) => {
     }
 }
 
-const issueAuthentication = async (db, user) => {
+const fetchOrCreateUser = async (db, user) => {
     let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`);
     if (!dbUser) {
         dbUser = {
             id: ulid(),
-            username: await defaultUsername(db, user.email),
+            username: await defaultUsername(db, user.name || user.email),
             email: normalise(user.email),
             roles: 'user',
             avatarSource: null,
@@ -76,12 +77,16 @@ const issueAuthentication = async (db, user) => {
             VALUES (${dbUser.id}, ${dbUser.username}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
     }
 
-    return {
-        token: jwt.sign({
-            ...dbUser,
-            authenticated: true,
-        }),
-    };
+    return dbUser;
+}
+
+const issueAuthentication = async (db, user) => {
+    const dbUser = await fetchOrCreateUser(db, user);
+
+    return jwt.sign({
+        ...dbUser,
+        authenticated: true,
+    });
 }
 
 const validateEmail = (email) => {
@@ -150,7 +155,7 @@ router.post('/user/validate', async (req, res) => {
 
     await invalidateAuthenticator(req.db, authenticator);
 
-    return res.json(await issueAuthentication(req.db, req.rawUser));
+    return res.json({token: await issueAuthentication(req.db, req.rawUser)});
 });
 
 router.post('/user/change-username', async (req, res) => {
@@ -169,7 +174,7 @@ router.post('/user/change-username', async (req, res) => {
 
     await req.db.get(SQL`UPDATE users SET username = ${req.body.username} WHERE email = ${normalise(req.user.email)}`);
 
-    return res.json(await issueAuthentication(req.db, req.user));
+    return res.json({token: await issueAuthentication(req.db, req.user)});
 });
 
 router.post('/user/change-email', async (req, res) => {
@@ -218,7 +223,7 @@ router.post('/user/change-email', async (req, res) => {
     await req.db.get(SQL`UPDATE users SET email = ${authenticator.payload.to} WHERE email = ${normalise(req.user.email)}`);
     req.user.email = authenticator.payload.to;
 
-    return res.json(await issueAuthentication(req.db, req.user));
+    return res.json({token: await issueAuthentication(req.db, req.user)});
 });
 
 router.post('/user/delete', async (req, res) => {
@@ -236,6 +241,110 @@ router.post('/user/delete', async (req, res) => {
     await req.db.get(SQL`DELETE FROM users WHERE id = ${userId}`)
 
     return res.json(true);
+});
+
+const socialLoginHandlers = {
+    twitter(r) {
+        return {
+            id: r.profile.id_str,
+            email: r.profile.email,
+            name: r.profile.screen_name,
+            avatar: r.profile.profile_image_url_https.replace('_normal', '_400x400'),
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+    facebook(r) {
+        console.log(r);
+        return {
+            id: r.profile.id,
+            email: r.profile.email,
+            name: r.profile.name,
+            avatar: r.profile.picture.data.url,
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+    google(r) {
+        console.log(r);
+        return {
+            id: r.profile.sub,
+            email: r.profile.email_verified !== false ? r.profile.email : undefined,
+            name: r.profile.email,
+            avatar: r.profile.picture,
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+};
+
+router.get('/user/social/:provider', async (req, res) => {
+    const payload = socialLoginHandlers[req.params.provider](req.session.grant.response)
+
+    const auth = await req.db.get(SQL`
+        SELECT * FROM authenticators
+        WHERE type = ${req.params.provider}
+        AND payload LIKE ${'{"id":"' + payload.id + '"%'}
+        AND (validUntil IS NULL OR validUntil > ${now})
+    `)
+
+    const user = auth ? await req.db.get(SQL`
+        SELECT * FROM users
+        WHERE id = ${auth.userId}
+    `) : req.user;
+
+    const dbUser = await fetchOrCreateUser(req.db, user || {
+        email: payload.email || `${payload.id}@${req.params.provider}.oauth`,
+        name: payload.name,
+    });
+
+    const token = jwt.sign({
+        ...dbUser,
+        authenticated: true,
+    });
+
+    if (auth) {
+        await invalidateAuthenticator(req.db, auth.id);
+    }
+    await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
+
+    return res.cookie('token', token).redirect('/' + config.user.route);
+});
+
+router.get('/user/social-connections', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const authenticators = await req.db.all(SQL`
+        SELECT type, payload FROM authenticators
+        WHERE type IN (`.append(Object.keys(socialLoginHandlers).map(k => `'${k}'`).join(',')).append(SQL`)
+        AND userId = ${req.user.id}
+        AND (validUntil IS NULL OR validUntil > ${now})
+    `));
+
+    return res.json(buildDict(function* () {
+        for (let auth of authenticators) {
+            yield [auth.type, JSON.parse(auth.payload)];
+        }
+    }));
+});
+
+router.post('/user/social-connection/:provider/disconnect', async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const auth = await req.db.get(SQL`
+        SELECT id FROM authenticators
+        WHERE type = ${req.params.provider}
+        AND userId = ${req.user.id}
+        AND (validUntil IS NULL OR validUntil > ${now})
+    `)
+
+    await invalidateAuthenticator(req.db, auth.id)
+
+    return res.json('ok');
 });
 
 export default router;
