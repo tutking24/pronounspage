@@ -1,4 +1,4 @@
 key	description	normative	pronoun_subject	pronoun_object	possessive_determiner	possessive_pronoun	reflexive	plural	pluralHonorific	history	sources
-he,he/him	Masculine	TRUE	he	him	his	his	himself	FALSE	FALSE		natGeo,genderqueer,confirmatio,perfekcyjna,silaNizsza,lewaReka,zapachKosmosu
-she,she/her	Feminine	TRUE	she	her	her	hers	herself	FALSE	FALSE		margotWywiad,margot,zabSpraw,zabMiecz,smoczaPerla,zapachKosmosu
-they,they/them	Neutral (?)	TRUE	they	them	their	theirs	themselves	TRUE	TRUE		rjpBylom,starTrek,kazmierczak2,milo,hen,fakty,milo2,confirmatio,niepelnia,dozywocie,lichoNiebozatko,lichoAniol,lichoLato,silaNizsza,siewca,smoczaPerla,maska,ekonomiaNiesam,rzekaBogow,fluff,doBlyskPod,siedemKapit,zaczytana,listopadBez,ofiara,uratowacKotka
+he,he/him	Masculine	TRUE	he	him	his	his	himself	FALSE	FALSE
+she,she/her	Feminine	TRUE	she	her	her	hers	herself	FALSE	FALSE
+they,they/them	Neutral (?)	TRUE	they	them	their	theirs	themselves	TRUE	TRUE

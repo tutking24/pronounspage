@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" v-if="otherSources.length">
                     <p class="h5 mb-0">
                         <a :href="'#' + $t('template.othersRaw')">
                             <strong><T>template.others</T></strong>
@@ -68,8 +68,7 @@
                 <div class="btn-group-vertical">
                     <button v-for="(icon, type) in sourceTypes"
                             :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
-                            @click="filter = type"
-                    >
+                            @click="filter = type">
                         <Icon :v="icon"/>
                         <T>sources.type.{{type || 'All'}}</T>
                     </button>
@@ -118,7 +117,7 @@
             </ul>
         </section>
 
-        <section>
+        <section v-if="otherSources.length">
             <h2 class="h4" :id="$t('template.othersRaw')">
                 <T>template.others</T>
             </h2>

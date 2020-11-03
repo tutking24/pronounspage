@@ -8,35 +8,7 @@ home:
     why: 'What''s the deal with pronouns?'
     about:
         - >
-            Udostępniamy tutaj linki do przykładów użycia
-            (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
-            zaimków i innych form płciowych – nie tylko normatywnych „{/on=on}” i „{/ona=ona}”,
-            lecz także form niebinarnych.
-        - >
-            Dlaczego należy je respektować?
-            Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
-            Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
-            A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
-            Czy to uszanujesz, świadczy wyłącznie o Tobie.
-        - >
-            Warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych
-            – nawet jeśli jesteś cis i używasz
-            „{/on=on}” lub „{/ona=ona}”.
-            – ponieważ dzięki temu pokazujesz wsparcie dla społeczności trans
-            i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
-            {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(więcej powodów tutaj).}
-        - >
-            Formy neutralne płciowo – jak np. „{/on/a=moi drodzy/drogie}”,
-            „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp. –
-            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
-        - >
-            Już teraz w codziennej polszczyźnie używamy wielu form neutralnych płciowo:
-            „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
-            „proszę przyjść do szkoły z {rodzic}em”,
-            „w urzędzie powiedziano mi, że...”,
-            „{/oni=dzwonili} z gazowni”,
-            „będę robić”, itp.
-            Tutaj idziemy po prostu o krok dalej.
+            TODO
     templates: 'Propozycje form'
     generator:
         header: 'Generator form'
