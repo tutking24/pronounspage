@@ -33,7 +33,7 @@ router.get('/nouns/all/:locale', async (req, res) => {
 });
 
 router.post('/nouns/submit/:locale', async (req, res) => {
-    if (!(req.user && $req.user.admin) && isTroll(JSON.stringify(body))) {
+    if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
 
@@ -44,7 +44,7 @@ router.post('/nouns/submit/:locale', async (req, res) => {
             ${id},
             ${req.body.masc.join('|')}, ${req.body.fem.join('|')}, ${req.body.neutr.join('|')},
             ${req.body.mascPl.join('|')}, ${req.body.femPl.join('|')}, ${req.body.neutrPl.join('|')},
-            0, ${req.body.base}, ${locale}
+            0, ${req.body.base}, ${req.params.locale}
         )
     `);
 
