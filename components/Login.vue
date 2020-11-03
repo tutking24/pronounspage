@@ -46,6 +46,7 @@
                     <input type="text" class="form-control text-center" v-model="code"
                            placeholder="000000" autofocus required minlength="0" maxlength="6"
                            inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                           ref="code"
                     />
                     <div class="input-group-append">
                         <button class="btn btn-primary">
@@ -120,6 +121,12 @@
                 }
 
                 this.token = response.token;
+
+                this.$nextTick(_ => {
+                    if (this.$refs.code) {
+                        this.$refs.code.focus();
+                    }
+                })
             },
         },
     }
