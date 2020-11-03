@@ -49,7 +49,7 @@ const invalidateAuthenticator = async (db, id) => {
 const defaultUsername = async (db, email) => {
     const base = email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
         .padEnd(4, '0')
-        .substring(0, 12)
+        .substring(0, 14)
         .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_');
 
     let c = 0;
