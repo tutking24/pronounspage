@@ -273,6 +273,16 @@ router.post('/user/delete', async (req, res) => {
     return res.json(true);
 });
 
+router.post('/user/:id/set-roles', async (req, res) => {
+    if (!req.admin) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`UPDATE users SET roles = ${req.body.roles} WHERE id = ${req.params.id}`);
+
+    return res.json('ok');
+});
+
 router.get('/user/social/:provider', async (req, res) => {
     if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
         return res.status(400).redirect('/' + config.user.route);

@@ -783,6 +783,7 @@ admin:
         email: 'Email'
         roles: 'Role'
         profiles: 'Profile'
+        confirmRole: 'Czy na pewno chcesz zmienić rolę osoby @%username% na "%role%"?'
 
 table:
     empty: 'Pusto…'

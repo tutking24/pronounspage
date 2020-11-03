@@ -6,7 +6,7 @@
             <T>admin.header</T>
         </h2>
 
-        <Table :data="users" :columns="4">
+        <Table :data="Object.values(users)" :columns="4">
             <template v-slot:header>
                 <th class="text-nowrap">
                     <T>admin.user.user</T>
@@ -40,9 +40,10 @@
                     </ul>
                 </td>
                 <td>
-                    <span :class="['badge', s.el.roles === 'admin' ? 'badge-primary' : 'badge-light']">
+                    <a href="#" :class="['badge', s.el.roles === 'admin' ? 'badge-primary' : 'badge-light']"
+                       @click.prevent="setRole(s.el.id, s.el.roles === 'admin' ? 'user' : 'admin')">
                         {{s.el.roles}}
-                    </span>
+                    </a>
                 </td>
                 <td>
                     <ul class="list-unstyled">
@@ -76,8 +77,17 @@
             } });
 
             return {
-                users: Object.values(users),
+                users,
             };
+        },
+        methods: {
+            async setRole(userId, role) {
+                await this.$confirm(this.$t('admin.user.confirmRole', {username: this.users[userId].username, role}));
+
+                const response = await this.$axios.$post(`/user/${userId}/set-roles`, { roles: role });
+
+                this.users[userId].roles = role;
+            }
         },
         head() {
             return head({
