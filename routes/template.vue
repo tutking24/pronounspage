@@ -117,7 +117,7 @@
         components: {LinkedText, GrammarTables },
         data() {
             const selectedTemplate = this.config.template.enabled
-                ? buildTemplate(templates, this.$route.path.substr(1).replace(/\/$/, ''))
+                ? buildTemplate(templates, decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, '')))
                 : null;
 
             return {
