@@ -246,6 +246,10 @@ router.post('/user/delete', async (req, res) => {
 });
 
 router.get('/user/social/:provider', async (req, res) => {
+    if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
+        return res.status(400).redirect('/' + config.user.route);
+    }
+
     const payload = socialLoginHandlers[req.params.provider](req.session.grant.response)
 
     const auth = await req.db.get(SQL`
