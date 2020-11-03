@@ -150,7 +150,7 @@ export default {
             if (config.profile.enabled) {
                 routes.push({path: '/@*', component: resolve(__dirname, 'routes/profile.vue')});
                 if (config.profile.editorEnabled) {
-                    routes.push({path: '/' + config.profile.editorRoute, component: resolve(__dirname, 'routes/profileEditor.vue')});
+                    routes.push({path: '/editor', component: resolve(__dirname, 'routes/profileEditor.vue')});
                 }
             }
 

@@ -6,7 +6,7 @@
                 <Icon v="id-card"/>
                 <T>profile.show</T>
             </LocaleLink>
-            <LocaleLink :locale="locale" :link="`/${config.profile.editorRoute}`" class="badge badge-light border">
+            <LocaleLink :locale="locale" link="/editor" class="badge badge-light border">
                 <Icon v="edit"/>
                 <T>profile.edit</T>
             </LocaleLink>
@@ -16,7 +16,7 @@
             </a>
         </span>
         <span v-else>
-            <LocaleLink :locale="locale" :link="`/${config.profile.editorRoute}`" class="badge badge-light border">
+            <LocaleLink :locale="locale" link="/editor" class="badge badge-light border">
                 <Icon v="plus-circle"/>
                 <T>profile.init</T>
             </LocaleLink>

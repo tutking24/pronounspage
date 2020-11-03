@@ -6,7 +6,7 @@
                 @{{username}}
             </h2>
             <div>
-                <nuxt-link v-if="$user() && $user().username === username" :to="`/${config.profile.editorRoute}`"
+                <nuxt-link v-if="$user() && $user().username === username" to="/editor"
                            class="btn btn-outline-primary btn-sm mb-2"
                 >
                     <Icon v="edit"/>

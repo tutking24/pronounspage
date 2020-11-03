@@ -105,7 +105,6 @@ user:
 profile:
     enabled: true
     editorEnabled: true
-    profileEditorRoute: 'my-card'
     defaultWords:
         - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
         - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']

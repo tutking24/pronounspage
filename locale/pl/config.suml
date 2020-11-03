@@ -238,7 +238,6 @@ user:
 profile:
     enabled: true
     editorEnabled: true
-    editorRoute: 'wizytówka'
     defaultWords:
         - ['pan', 'pani', 'państwo', 'pań', 'panu']
         - ['osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska']
