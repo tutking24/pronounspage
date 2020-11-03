@@ -6,7 +6,7 @@
             <T>admin.header</T>
         </h2>
 
-        <Table :data="Object.values(users)" :columns="4">
+        <Table :data="Object.values(users)" :columns="4" count>
             <template v-slot:header>
                 <th class="text-nowrap">
                     <T>admin.user.user</T>

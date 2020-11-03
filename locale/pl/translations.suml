@@ -787,5 +787,6 @@ admin:
 
 table:
     empty: 'Pusto…'
+    count: 'Liczba'
     sort: 'Przeciągnij by posortować'
     scrollUp: 'Przewiń na samą górę'

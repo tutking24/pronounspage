@@ -2,6 +2,12 @@
     <section class="table-responsive">
         <table :class="['table table-striped table-hover', fixed ? 'table-fixed-' + columns : '']">
             <thead ref="thead">
+            <tr v-if="count">
+                <td :colspan="columns">
+                    <T>table.count</T>:
+                    <strong>{{ data.length }}</strong>
+                </td>
+            </tr>
             <tr>
                 <slot name="header"></slot>
             </tr>
@@ -23,10 +29,10 @@
                 </tr>
             </template>
             </tbody>
-            <tfoot v-if="pages > 1">
+            <tfoot>
             <tr>
                 <td :colspan="columns">
-                    <nav>
+                    <nav v-if="pages > 1">
                         <ul class="pagination pagination-sm justify-content-center">
                             <li v-for="p in pagesRange" :class="['page-item', p.page === page ? 'active' : '', p.enabled ? '' : 'disabled']">
                                 <a v-if="p.enabled" class="page-link" href="#" @click.prevent="page = p.page">
@@ -54,6 +60,7 @@
             rowKey: { 'default': 'id' },
             marked: {},
             fixed: { type: Boolean },
+            count: { type: Boolean },
         },
         data() {
             return {
