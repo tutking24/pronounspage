@@ -62,11 +62,9 @@ router.post('/profile/save/:locale', async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const userId = (await req.db.get(SQL`SELECT id FROM users WHERE username = ${req.user.username}`)).id;
-
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${userId} AND locale = ${req.params.locale}`);
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
     await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active)
-        VALUES (${ulid()}, ${userId}, ${req.params.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+        VALUES (${ulid()}, ${req.user.id}, ${req.params.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)},
                 ${JSON.stringify(req.body.words)}, 1
     )`);
@@ -75,9 +73,7 @@ router.post('/profile/save/:locale', async (req, res) => {
 });
 
 router.post('/profile/delete/:locale', async (req, res) => {
-    const userId = (await req.db.get(SQL`SELECT id FROM users WHERE username = ${req.user.username}`)).id;
-
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${userId} AND locale = ${req.params.locale}`);
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });

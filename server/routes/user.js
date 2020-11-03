@@ -96,7 +96,40 @@ const validateEmail = (email) => {
     return re.test(String(email).toLowerCase());
 }
 
+const reloadUser = async (req, res, next) => {
+    if (!req.user) {
+        next();
+        return;
+    }
+
+    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE id = ${req.user.id}`);
+
+    if (!dbUser) {
+        res.clearCookie('token');
+        next();
+        return;
+    }
+
+    if (req.user.username !== dbUser.username
+        || req.user.email !== dbUser.email
+        || req.user.roles !== dbUser.roles
+        || req.user.avatarSource !== dbUser.avatarSource
+    ) {
+        const newUser = {
+            ...dbUser,
+            authenticated: true,
+            avatar: await avatar(req.db, dbUser),
+        };
+        const token = jwt.sign(newUser);
+        res.cookie('token', token);
+        req.user = {...req.user, ...newUser};
+    }
+    next();
+}
+
 const router = Router();
+
+router.use(reloadUser);
 
 router.post('/user/init', async (req, res) => {
     let user = undefined;
@@ -174,7 +207,7 @@ router.post('/user/change-username', async (req, res) => {
         return res.json({ error: 'user.account.changeUsername.taken' })
     }
 
-    await req.db.get(SQL`UPDATE users SET username = ${req.body.username} WHERE email = ${normalise(req.user.email)}`);
+    await req.db.get(SQL`UPDATE users SET username = ${req.body.username} WHERE id = ${req.user.id}`);
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
 });
@@ -222,7 +255,7 @@ router.post('/user/change-email', async (req, res) => {
 
     await invalidateAuthenticator(req.db, authenticator);
 
-    await req.db.get(SQL`UPDATE users SET email = ${authenticator.payload.to} WHERE email = ${normalise(req.user.email)}`);
+    await req.db.get(SQL`UPDATE users SET email = ${authenticator.payload.to} WHERE id = ${req.user.id}`);
     req.user.email = authenticator.payload.to;
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
@@ -233,14 +266,9 @@ router.post('/user/delete', async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const userId = (await req.db.get(SQL`SELECT id FROM users WHERE username = ${req.user.username}`)).id;
-    if (!userId) {
-        return res.json(false);
-    }
-
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${userId}`)
-    await req.db.get(SQL`DELETE FROM authenticators WHERE userId = ${userId}`)
-    await req.db.get(SQL`DELETE FROM users WHERE id = ${userId}`)
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id}`)
+    await req.db.get(SQL`DELETE FROM authenticators WHERE userId = ${req.user.id}`)
+    await req.db.get(SQL`DELETE FROM users WHERE id = ${req.user.id}`)
 
     return res.json(true);
 });
