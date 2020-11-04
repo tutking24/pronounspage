@@ -2,7 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {createCanvas, loadImage, registerFont} from "canvas";
 import translations from "../translations";
-import {gravatar} from "../../src/helpers";
+import avatar from '../avatar';
 import {buildTemplate, parseTemplates} from "../../src/buildTemplate";
 import {loadTsv} from "../../src/tsv";
 
@@ -51,15 +51,15 @@ router.get('/banner/:templateName*.png', async (req, res) => {
     }
 
     if (templateName.startsWith('@')) {
-        const user = await req.db.get(SQL`SELECT username, email FROM users WHERE username=${templateName.substring(1)}`);
+        const user = await req.db.get(SQL`SELECT id, username, email, avatarSource FROM users WHERE username=${templateName.substring(1)}`);
         if (!user) {
             await fallback();
             return res.set('content-type', mime).send(canvas.toBuffer(mime));
         }
 
-        const avatar = await loadImage(gravatar(user, imageSize));
+        const avatarImage = await loadImage(await avatar(req.db, user));
 
-        drawCircle(context, avatar, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize);
+        drawCircle(context, avatarImage, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize);
 
         context.font = `regular 48pt Quicksand`
         context.fillText('@' + user.username, width / leftRatio + imageSize, height / 2)

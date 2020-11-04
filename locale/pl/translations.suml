@@ -779,9 +779,9 @@ terms:
 admin:
     header: 'Panel adminia'
     user:
-        user: 'Użytkownik'
+        user: 'Użytkownicze'
         email: 'Email'
-        roles: 'Role'
+        roles: 'Rola'
         profiles: 'Profile'
         confirmRole: 'Czy na pewno chcesz zmienić rolę osoby @%username% na "%role%"?'
 
