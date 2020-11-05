@@ -117,3 +117,7 @@ label.required::after {
     color: $danger;
     content: ' *';
 }
+
+.mw-input {
+    min-width: 16ch;
+}

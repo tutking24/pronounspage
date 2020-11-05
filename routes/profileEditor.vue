@@ -31,7 +31,7 @@
                 <p class="small text-muted mb-0">
                     <T>profile.pronounsInfo</T>
                 </p>
-                <OpinionListInput v-model="pronouns"/>
+                <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
             </div>
 
             <div class="form-group">
@@ -39,7 +39,7 @@
                     <Icon v="comment-edit"/>
                     <T>profile.description</T>
                 </h3>
-                <textarea class="form-control" v-model="description" maxlength="256" rows="4"/>
+                <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="4"/>
             </div>
 
             <div class="form-group">
@@ -73,7 +73,7 @@
                 <p class="small text-muted mb-0">
                     <T>profile.birthdayInfo</T>
                 </p>
-                <input type="date" class="form-control" v-model="birthday"/>
+                <input type="date" class="form-control form-control-sm" v-model="birthday"/>
             </div>
 
             <div class="form-group">
@@ -186,6 +186,12 @@
                 });
                 this.saving = false;
                 this.$router.push(`/@${this.$user().username}`)
+            },
+            validatePronoun(pronoun) {
+                const link = pronoun.replace(new RegExp('^' + process.env.BASE_URL), '').replace(new RegExp('^/'), '');
+                const template = buildTemplate(templates, link);
+
+                return template ? null : 'profile.pronounsNotFound'
             },
         },
         head() {

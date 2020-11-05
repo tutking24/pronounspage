@@ -1,7 +1,7 @@
 <template>
     <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" class="list-unstyled" :group="group">
         <li v-for="(v, i) in iVal" ref="items">
-            <div class="input-group mb-1">
+            <div class="input-group input-group-sm mb-1">
                 <div class="input-group-prepend">
                     <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
                         <Icon v="bars"/>
@@ -19,7 +19,7 @@
         </li>
 
         <li slot="footer">
-            <button class="btn btn-outline-success btn-block" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
+            <button class="btn btn-outline-success btn-block btn-sm" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
                 <Icon v="plus"/>
             </button>
         </li>
