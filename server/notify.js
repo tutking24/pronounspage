@@ -18,10 +18,12 @@ async function notify() {
 
     console.log('Entries awaiting moderation: ', awaitingModerationGrouped);
 
-    for (let admin of process.env.MAILER_ADMINS.split(',')) {
-        console.log('Sending email to ' + admin)
+    const admins = await db.all(`SELECT email FROM users WHERE roles = 'admin'`);
+
+    for (let { email } of admins) {
+        console.log('Sending email to ' + email)
         mailer(
-            admin,
+            email,
             '[Pronouns] Dictionary entries awaiting moderation: ' + JSON.stringify(awaitingModerationGrouped),
             JSON.stringify(awaitingModerationGrouped)
         );
