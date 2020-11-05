@@ -123,7 +123,7 @@
         },
         async asyncData({ app, route }) {
             return {
-                profiles: await app.$axios.$get(`/profile/get/${route.params.pathMatch}`),
+                profiles: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
             };
         },
         computed: {
