@@ -55,7 +55,7 @@ const defaultUsername = async (db, email) => {
     let c = 0;
     while (true) {
         let proposal = base + (c || '');
-        let dbUser = await db.get(SQL`SELECT id FROM users WHERE lower(trim(username)) = ${normalise(proposal)}`);
+        let dbUser = await db.get(SQL`SELECT id FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(proposal)}`);
         if (!dbUser) {
             return proposal;
         }
@@ -146,7 +146,7 @@ router.post('/user/init', async (req, res) => {
     if (isEmail) {
         user = await req.db.get(SQL`SELECT * FROM users WHERE email = ${normalise(usernameOrEmail)}`);
     } else {
-        user = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(username)) = ${normalise(usernameOrEmail)}`);
+        user = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(usernameOrEmail)}`);
     }
 
     if (!user && !isEmail) {
@@ -202,7 +202,7 @@ router.post('/user/change-username', async (req, res) => {
         return { error: 'user.account.changeUsername.invalid' }
     }
 
-    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(username)) = ${normalise(req.body.username)}`);
+    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(req.body.username)}`);
     if (dbUser) {
         return res.json({ error: 'user.account.changeUsername.taken' })
     }
