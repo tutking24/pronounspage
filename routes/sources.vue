@@ -59,62 +59,62 @@
             </ul>
         </section>
 
-        <section>
-            <span class="mr-2 mb-3">
-                <Icon v="filter"/>
-                <T>crud.filter</T>:
-            </span>
-            <div class="d-inline-block d-md-none">
-                <div class="btn-group-vertical">
-                    <button v-for="(icon, type) in sourceTypes"
-                            :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
-                            @click="filter = type">
-                        <Icon :v="icon"/>
-                        <T>sources.type.{{type || 'All'}}</T>
+        <section class="sticky-top bg-white">
+            <div class="input-group mb-1 bg-white">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <Icon v="filter"/>
+                    </span>
+                </div>
+                <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
+                <div class="input-group-append" v-if="filter">
+                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                        <Icon v="times"/>
                     </button>
                 </div>
             </div>
-            <div class="d-none d-md-inline-block">
-                <div class="btn-group">
-                    <button v-for="(icon, type) in sourceTypes"
-                            :class="['btn', type === filter ? 'btn-primary' : 'btn-outline-primary']"
-                            @click="filter = type"
-                    >
-                        <Icon :v="icon"/>
+
+            <div class="btn-group btn-block">
+                <button v-for="(icon, type) in sourceTypes"
+                        :class="['btn btn-sm', type === filterType ? 'btn-primary' : 'btn-outline-primary']"
+                        @click="filterType = type"
+                >
+                    <Icon :v="icon"/>
+                    <span class="d-none d-md-inline">
                         <T>sources.type.{{type || 'All'}}</T>
-                    </button>
-                </div>
+                    </span>
+                </button>
             </div>
         </section>
 
         <section v-for="template in templates" v-if="template.sources.length">
-            <h2 class="h4" :id="toId(template.name(glue))">
-                <nuxt-link :to="'/' + template.pronoun()">
-                    {{ template.description }}
-                    <small>({{ template.name(glue) }})</small>
-                </nuxt-link>
-            </h2>
-
-            <SourceList :names="template.sources" :filter="filter"/>
+            <SourceList :names="template.sources" :filter="filter" :filterType="filterType">
+                <h2 class="h4" :id="toId(template.name(glue))">
+                    <nuxt-link :to="'/' + template.pronoun()">
+                        {{ template.description }}
+                        <small>({{ template.name(glue) }})</small>
+                    </nuxt-link>
+                </h2>
+            </SourceList>
         </section>
 
         <section v-for="(sources, multiple) in sourcesForMultipleForms">
-            <h2 class="h4" :id="toId(multiple)">
-                <nuxt-link :to="'/' + multiple">
-                    <T>template.alt.header</T>
-                    <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
-                </nuxt-link>
-            </h2>
-
-            <SourceList :names="sources" :filter="filter"/>
+            <SourceList :names="sources" :filter="filter" :filterType="filterType">
+                <h2 class="h4" :id="toId(multiple)">
+                    <nuxt-link :to="'/' + multiple">
+                        <T>template.alt.header</T>
+                        <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
+                    </nuxt-link>
+                </h2>
+            </SourceList>
         </section>
 
         <section v-if="otherSources.length">
-            <h2 class="h4" :id="$t('template.othersRaw')">
-                <T>template.others</T>
-            </h2>
-
-            <SourceList :names="otherSources" :filter="filter"/>
+            <SourceList :names="otherSources" :filter="filter" :filterType="filterType">
+                <h2 class="h4" :id="$t('template.othersRaw')">
+                    <T>template.others</T>
+                </h2>
+            </SourceList>
         </section>
     </div>
 </template>
@@ -134,6 +134,7 @@
                 tocShown: false,
                 sourceTypes: Source.TYPES,
                 filter: '',
+                filterType: '',
                 glue: ' ' + this.$t('template.or') + ' ',
                 submitShown: false,
                 sortSources,
