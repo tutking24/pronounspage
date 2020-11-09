@@ -175,7 +175,7 @@
             },
             async save() {
                 this.saving = true;
-                await this.$axios.$post(`/profile/save/${this.config.locale}`, {
+                await this.$axios.$post(`/profile/save`, {
                     names: listToDict(this.names),
                     pronouns: listToDict(this.pronouns),
                     description: this.description,

@@ -23,16 +23,16 @@ const approve = async (db, id) => {
 
 const router = Router();
 
-router.get('/nouns/all/:locale', async (req, res) => {
+router.get('/nouns/all', async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT * FROM nouns
-        WHERE locale = ${req.params.locale}
+        WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
         ORDER BY approved, masc
     `));
 });
 
-router.post('/nouns/submit/:locale', async (req, res) => {
+router.post('/nouns/submit', async (req, res) => {
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
@@ -44,7 +44,7 @@ router.post('/nouns/submit/:locale', async (req, res) => {
             ${id},
             ${req.body.masc.join('|')}, ${req.body.fem.join('|')}, ${req.body.neutr.join('|')},
             ${req.body.mascPl.join('|')}, ${req.body.femPl.join('|')}, ${req.body.neutrPl.join('|')},
-            0, ${req.body.base}, ${req.params.locale}
+            0, ${req.body.base}, ${req.config.locale}
         )
     `);
 

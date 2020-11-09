@@ -5,6 +5,7 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
+import config from './config';
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(session({
 }));
 
 app.use(async function (req, res, next) {
+    req.config = config;
     req.rawUser = authenticate(req);
     req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
     req.admin = req.user && req.user.roles === 'admin';

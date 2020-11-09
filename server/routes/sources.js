@@ -23,11 +23,11 @@ const buildEmail = (data, user) => {
 
 const router = Router();
 
-router.post('/sources/submit/:locale', async (req, res) => {
+router.post('/sources/submit', async (req, res) => {
     const emailBody = buildEmail(req.body, req.user);
 
     for (let admin of process.env.MAILER_ADMINS.split(',')) {
-        mailer(admin, `[Pronouns][${req.params.locale}] Source submission`, undefined, emailBody);
+        mailer(admin, `[Pronouns][${req.config.locale}] Source submission`, undefined, emailBody);
     }
 
     return res.json({ result: 'ok' });

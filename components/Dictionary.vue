@@ -182,7 +182,7 @@
                 if (this.nounsRaw !== undefined) {
                     return;
                 }
-                this.nounsRaw = await this.$axios.$get(`/nouns/all/${this.config.locale}`);
+                this.nounsRaw = await this.$axios.$get(`/nouns/all`);
             },
             async setFilter(filter) {
                 this.filter = filter;

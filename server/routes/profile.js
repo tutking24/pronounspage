@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import md5 from "js-md5";
-import {buildDict} from "../../src/helpers";
 import {ulid} from "ulid";
 import avatar from "../avatar";
 
@@ -57,14 +56,14 @@ router.get('/profile/get/:username', async (req, res) => {
     return res.json(await fetchProfiles(req.db, req.params.username, req.user && req.user.username === req.params.username))
 });
 
-router.post('/profile/save/:locale', async (req, res) => {
+router.post('/profile/save', async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
     await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active)
-        VALUES (${ulid()}, ${req.user.id}, ${req.params.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+        VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)},
                 ${JSON.stringify(req.body.words)}, 1
     )`);
@@ -72,8 +71,8 @@ router.post('/profile/save/:locale', async (req, res) => {
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });
 
-router.post('/profile/delete/:locale', async (req, res) => {
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
+router.post('/profile/delete', async (req, res) => {
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });

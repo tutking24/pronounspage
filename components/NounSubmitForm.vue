@@ -142,7 +142,7 @@
         methods: {
             async submit(event) {
                 this.submitting = true;
-                await this.$axios.$post(`/nouns/submit/${this.config.locale}`, this.form);
+                await this.$axios.$post(`/nouns/submit`, this.form);
 
                 this.submitting = false;
                 this.afterSubmit = true;
