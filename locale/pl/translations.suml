@@ -765,6 +765,7 @@ crud:
     add: 'Dodaj'
     filter: 'Filtruj'
     filterLong: 'Filtruj listę…'
+    search: 'Szukaj…'
 
 beta: >
     Strona jest w wersji βeta!
