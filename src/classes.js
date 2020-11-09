@@ -88,6 +88,18 @@ export class Source {
         }
     }
 
+    static get TYPES_PRIORITIES() {
+        return {
+            Book: 1,
+            Article: 2,
+            Movie: 3,
+            Series: 3,
+            Song: 0,
+            Poetry: 0,
+            Other: 4,
+        }
+    }
+
     icon() {
         return Source.TYPES[this.type];
     }

@@ -31,11 +31,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul v-if="person.sources.length" class="list-unstyled mt-3">
-                    <li v-for="source in person.sources">
-                        <Source :name="source"/>
-                    </li>
-                </ul>
+                <SourceList v-if="person.sources.length" :names="person.sources"/>
             </li>
         </ul>
 

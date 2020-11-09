@@ -27,7 +27,7 @@
                 <T>sources.toc</T>
             </button>
             <ul v-if="tocShown" class="list-group">
-                <li v-for="[group, groupTemplates] in templateLibrary.split(filterTemplate, false)" class="list-group-item">
+                <li v-for="[group, groupTemplates] in templateLibrary.split(filterTemplate, false)" v-if="groupTemplates.length" class="list-group-item">
                     <p class="h5">
                         {{ group.name }}
                     </p>
@@ -95,11 +95,7 @@
                 </nuxt-link>
             </h2>
 
-            <ul class="list-unstyled">
-                <li v-for="source in template.sources">
-                    <Source :name="source" :filter="filter"/>
-                </li>
-            </ul>
+            <SourceList :names="template.sources" :filter="filter"/>
         </section>
 
         <section v-for="(sources, multiple) in sourcesForMultipleForms">
@@ -110,11 +106,7 @@
                 </nuxt-link>
             </h2>
 
-            <ul class="list-unstyled">
-                <li v-for="source in sources">
-                    <Source :name="source" :filter="filter"/>
-                </li>
-            </ul>
+            <SourceList :names="sources" :filter="filter"/>
         </section>
 
         <section v-if="otherSources.length">
@@ -122,17 +114,13 @@
                 <T>template.others</T>
             </h2>
 
-            <ul class="list-unstyled">
-                <li v-for="source in otherSources">
-                    <Source :name="source" :filter="filter"/>
-                </li>
-            </ul>
+            <SourceList :names="otherSources" :filter="filter"/>
         </section>
     </div>
 </template>
 
 <script>
-    import { templates, sources, templateLibrary } from '../src/data'
+    import { templates, sources, templateLibrary, sortSources } from '../src/data'
     import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
     import { Source } from "../src/classes";
     import { head } from "../src/helpers";
@@ -148,6 +136,7 @@
                 filter: '',
                 glue: ' ' + this.$t('template.or') + ' ',
                 submitShown: false,
+                sortSources,
             };
         },
         mounted() {
@@ -176,7 +165,7 @@
                         other.delete(source);
                     }
                 }
-                return other;
+                return [...other];
             },
         },
         methods: {
