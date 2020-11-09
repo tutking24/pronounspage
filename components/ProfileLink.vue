@@ -13,8 +13,18 @@
 
     const LINK_PROVIDERS = {
         twitter: {
-            regex: '^https://twitter.com/([^/]+)',
+            regex: '^https?://(?:www.)?twitter.com/([^/]+)',
             icon: 'twitter',
+            iconSet: 'b',
+        },
+        facebook: {
+            regex: '^https?://(?:www.)?facebook.com/([^/]+)',
+            icon: 'facebook',
+            iconSet: 'b',
+        },
+        instagram: {
+            regex: '^https?://(?:www.)?instagram.com/([^/]+)',
+            icon: 'instagram',
             iconSet: 'b',
         },
         email: {
@@ -22,17 +32,17 @@
             icon: 'envelope',
         },
         reddit: {
-            regex: '^https://reddit.com/u/([^/]+)',
+            regex: '^https?://(?:www.)?reddit.com/u/([^/]+)',
             icon: 'reddit',
             iconSet: 'b',
         },
         telegram: {
-            regex: '^https://t.me/([^/]+)',
+            regex: '^https?://(?:www.)?t.me/([^/]+)',
             icon: 'telegram',
             iconSet: 'b',
         },
         paypal: {
-            regex: '^https://paypal.me/([^/]+)',
+            regex: '^https?://(?:www.)?paypal.me/([^/]+)',
             icon: 'paypal',
             iconSet: 'b',
         },
