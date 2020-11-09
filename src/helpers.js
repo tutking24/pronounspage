@@ -119,6 +119,11 @@ export const capitalise = function (word) {
     return word.substring(0, 1).toUpperCase() + word.substring(1);
 }
 
+export const camelCase = function (words) {
+    const text = words.map(capitalise).join('');
+    return text.substring(0, 1).toLowerCase() + text.substring(1);
+}
+
 export const now = function () {
     return Math.floor(Date.now() / 1000);
 }

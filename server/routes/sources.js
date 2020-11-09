@@ -1,12 +1,17 @@
 import { Router } from 'express';
 import mailer from "../../src/mailer";
+import {camelCase, capitalise} from "../../src/helpers";
+
+const generateId = title => {
+    return camelCase(title.split(' ').slice(0, 2));
+}
 
 const buildEmail = (data, user) => {
     const human = [
         `<li><strong>user:</strong> ${user ? user.username : ''}</li>`,
         `<li><strong>templates:</strong> ${data.templates}</li>`,
     ];
-    const tsv = ['???'];
+    const tsv = [generateId(data.title) || '???'];
 
     for (let field of ['type','author','title','extra','year','fragments','comment','link']) {
         human.push(`<li><strong>${field}:</strong> ${field === 'fragments' ? `<pre>${data[field]}</pre>`: data[field]}</li>`);
