@@ -120,7 +120,7 @@
 </template>
 
 <script>
-    import { templates, sources, templateLibrary, sortSources } from '../src/data'
+    import { templates, sources, templateLibrary } from '../src/data'
     import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
     import { Source } from "../src/classes";
     import { head } from "../src/helpers";
@@ -137,7 +137,6 @@
                 filterType: '',
                 glue: ' ' + this.$t('template.or') + ' ',
                 submitShown: false,
-                sortSources,
             };
         },
         mounted() {

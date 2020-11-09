@@ -27,7 +27,7 @@
 </template>
 
 <script>
-    import { templates, sortSources } from "../src/data";
+    import { templates } from "../src/data";
     import { getTemplate } from "../src/buildTemplate";
 
     export default {
@@ -39,7 +39,6 @@
                 templates: templates,
                 getTemplate: getTemplate,
                 glue: ' ' + this.$t('template.or') + ' ',
-                sortSources,
             }
         }
     }
