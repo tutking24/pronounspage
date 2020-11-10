@@ -2,7 +2,7 @@ locale: 'en'
 
 header: true
 
-template:
+pronouns:
     enabled: true
     default: 'he'
     any:
@@ -112,3 +112,16 @@ profile:
         - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
 
 redirects: []
+
+api:
+    examples:
+        pronouns_all: ['/api/pronouns']
+        pronouns_one:
+            - '/api/pronouns/she/her'
+            - '/api/pronouns/she/her?examples[]=Did%20you%20ask%20%7Bpronoun_object%7D%20to%20join%20us%3F'
+
+        sources_all: ['/api/sources']
+        sources_one: ['/api/sources/queerZaimki']  # TODO
+
+        nouns_all: ['/api/nouns']
+        nouns_search: ['/api/nouns/search/person']

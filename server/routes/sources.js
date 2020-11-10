@@ -10,7 +10,7 @@ const generateId = title => {
 const buildEmail = (data, user) => {
     const human = [
         `<li><strong>user:</strong> ${user ? user.username : ''}</li>`,
-        `<li><strong>templates:</strong> ${data.templates}</li>`,
+        `<li><strong>pronouns:</strong> ${data.pronouns}</li>`,
     ];
     const tsv = [generateId(data.title) || '???'];
 

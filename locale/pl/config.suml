@@ -2,7 +2,7 @@ locale: 'pl'
 
 header: true
 
-template:
+pronouns:
     enabled: true
     default: 'on'
     any:
@@ -145,7 +145,7 @@ people:
 english:
     enabled: false
     route: 'english'
-    templateGroups:
+    pronounGroups:
         -
             name: 'Normative forms'
             description:

@@ -3,7 +3,7 @@ import SQL from 'sql-template-strings';
 import {createCanvas, loadImage, registerFont} from "canvas";
 import { loadSuml } from '../loader';
 import avatar from '../avatar';
-import {buildTemplate, parseTemplates} from "../../src/buildTemplate";
+import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {loadTsv} from "../../src/tsv";
 
 const translations = loadSuml('translations');
@@ -26,8 +26,8 @@ const drawCircle = (context, image, x, y, size) => {
 
 const router = Router();
 
-router.get('/banner/:templateName*.png', async (req, res) => {
-    const templateName = req.params.templateName + req.params[0];
+router.get('/banner/:pronounName*.png', async (req, res) => {
+    const pronounName = req.params.pronounName + req.params[0];
     const width = 1200
     const height = 600
     const mime = 'image/png';
@@ -52,8 +52,8 @@ router.get('/banner/:templateName*.png', async (req, res) => {
         context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + 48);
     }
 
-    if (templateName.startsWith('@')) {
-        const user = await req.db.get(SQL`SELECT id, username, email, avatarSource FROM users WHERE username=${templateName.substring(1)}`);
+    if (pronounName.startsWith('@')) {
+        const user = await req.db.get(SQL`SELECT id, username, email, avatarSource FROM users WHERE username=${pronounName.substring(1)}`);
         if (!user) {
             await fallback();
             return res.set('content-type', mime).send(canvas.toBuffer(mime));
@@ -77,25 +77,25 @@ router.get('/banner/:templateName*.png', async (req, res) => {
         return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
 
-    const template = buildTemplate(
-        parseTemplates(loadTsv(__dirname + '/../../data/templates/templates.tsv')),
-        templateName,
+    const pronoun = buildPronoun(
+        parsePronouns(loadTsv(__dirname + '/../../data/pronouns/pronouns.tsv')),
+        pronounName,
     );
 
     const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
 
-    if (!template && templateName !== 'dowolne') { // TODO
+    if (!pronoun && pronounName !== 'dowolne') { // TODO
         await fallback();
         return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
 
     context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25)
     context.font = 'regular 48pt Quicksand'
-    context.fillText(translations.template.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
+    context.fillText(translations.pronouns.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-    const templateNameOptions = templateName === 'dowolne' ? ['dowolne'] : template.nameOptions();
-    context.font = `bold ${templateNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
-    context.fillText(templateNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (templateNameOptions.length <= 2 ? 72 : 24))
+    const pronounNameOptions = pronounName === 'dowolne' ? ['dowolne'] : pronoun.nameOptions();
+    context.font = `bold ${pronounNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
+    context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24))
 
     return res.set('content-type', mime).send(canvas.toBuffer(mime));
 });

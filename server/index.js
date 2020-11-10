@@ -34,7 +34,7 @@ app.use(require('./routes/user').default);
 app.use(require('./routes/profile').default);
 app.use(require('./routes/admin').default);
 
-app.use(require('./routes/templates').default);
+app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
 app.use(require('./routes/nouns').default);
 

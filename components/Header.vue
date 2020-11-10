@@ -62,7 +62,7 @@
                     icon: 'home',
                     text: this.$t('home.header'),
                     textLong: this.$t('home.headerLong'),
-                    extra: ['all', this.config.template.any.route],
+                    extra: ['all', this.config.pronouns.any.route],
                 });
 
                 if (this.config.sources.enabled) {

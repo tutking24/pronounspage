@@ -9,7 +9,7 @@ home:
     about:
         - >
             TODO
-    templates: 'Propozycje form'
+    pronouns: 'Propozycje form'
     generator:
         header: 'Generator form'
         description: >
@@ -21,7 +21,7 @@ home:
         alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
     whatisit: 'O co chodzi w tej stronie?'
 
-template:
+pronouns:
     examples: 'Example usage in sentences'
     plural: 'Plural'
     intro: 'My pronouns are'
@@ -389,3 +389,8 @@ terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
     consent: 'By registering you''re accepting the'
+
+api:
+    header: 'Public API'
+    example: 'Example'
+    query: 'Query string parameters'

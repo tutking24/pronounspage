@@ -1,5 +1,5 @@
 import {buildDict, buildList, capitalise} from "./helpers";
-import MORPHEMES from '../data/templates/morphemes';
+import MORPHEMES from '../data/pronouns/morphemes';
 
 export class ExamplePart {
     constructor(variable, str) {
@@ -110,7 +110,7 @@ const escape = s => {
         .replace(/\?/g, '%3F');
 }
 
-export class Template {
+export class Pronoun {
     constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
         this.canonicalName = canonicalName;
         this.description = description;
@@ -143,7 +143,7 @@ export class Template {
     }
 
     clone() {
-        return new Template(this.canonicalName, this.description, this.normative, clone(this.morphemes), this.plural, this.pluralHonorific);
+        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), this.plural, this.pluralHonorific);
     }
 
     equals(other) {
@@ -151,7 +151,7 @@ export class Template {
     }
 
     merge(other) {
-        return new Template(
+        return new Pronoun(
             this.canonicalName + '&' + other.canonicalName,
             Array.isArray(this.description) ? [...this.description, other.description] : [this.description, other.description],
             this.normative && other.normative,
@@ -225,7 +225,7 @@ export class Template {
             m[MORPHEMES[parseInt(i)]] = data[parseInt(i)];
         }
 
-        return new Template(
+        return new Pronoun(
             m[MORPHEMES[0]],
             data[data.length - 1],
             false,
@@ -236,61 +236,61 @@ export class Template {
     }
 }
 
-export class TemplateGroup {
-    constructor(name, templates, description = null) {
+export class PronounGroup {
+    constructor(name, pronouns, description = null) {
         this.name = name;
-        this.templates = templates;
+        this.pronouns = pronouns;
         this.description = description;
     }
 }
 
-export class TemplateLibrary {
-    constructor(groups, templates) {
+export class PronounLibrary {
+    constructor(groups, pronouns) {
         this.groups = groups;
-        this.templates = templates;
+        this.pronouns = pronouns;
     }
 
     *split(filter = null, includeOthers = true) {
-        let templatesLeft = Object.keys(this.templates);
+        let pronounsLeft = Object.keys(this.pronouns);
         const that = this;
 
         for (let g of this.groups) {
             yield [g, buildList(function* () {
-                for (let t of g.templates) {
-                    templatesLeft = templatesLeft.filter(i => i !== t);
-                    const template = that.templates[t] || t;
-                    if (!filter || filter(template)) {
-                        yield template;
+                for (let t of g.pronouns) {
+                    pronounsLeft = pronounsLeft.filter(i => i !== t);
+                    const pronoun = that.pronouns[t] || t;
+                    if (!filter || filter(pronoun)) {
+                        yield pronoun;
                     }
                 }
             })];
         }
 
-        if (!templatesLeft.length || !includeOthers) {
+        if (!pronounsLeft.length || !includeOthers) {
             return;
         }
 
         yield [
-            new TemplateGroup('Inne formy', templatesLeft),
+            new PronounGroup('Inne formy', pronounsLeft),
             buildList(function* () {
-                for (let t of templatesLeft) {
-                    if (!filter || filter(that.templates[t])) {
-                        yield that.templates[t];
+                for (let t of pronounsLeft) {
+                    if (!filter || filter(that.pronouns[t])) {
+                        yield that.pronouns[t];
                     }
                 }
             }),
         ];
     }
 
-    find(template) {
-        if (!template) {
+    find(pronoun) {
+        if (!pronoun) {
             return null;
         }
 
-        for (let [group, groupTemplates] of this.split()) {
-            for (let t of groupTemplates) {
-                if (t.canonicalName === template.canonicalName) {
-                    return {group, groupTemplates};
+        for (let [group, groupPronouns] of this.split()) {
+            for (let t of groupPronouns) {
+                if (t.canonicalName === pronoun.canonicalName) {
+                    return {group, groupPronouns};
                 }
             }
         }

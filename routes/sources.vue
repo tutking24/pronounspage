@@ -27,7 +27,7 @@
                 <T>sources.toc</T>
             </button>
             <ul v-if="tocShown" class="list-group">
-                <li v-for="[group, groupTemplates] in templateLibrary.split(filterTemplate, false)" v-if="groupTemplates.length" class="list-group-item">
+                <li v-for="[group, groupPronouns] in pronounLibrary.split(filterPronoun, false)" v-if="groupPronouns.length" class="list-group-item">
                     <p class="h5">
                         {{ group.name }}
                     </p>
@@ -36,23 +36,23 @@
                         <em v-html="group.description"></em>
                     </div>
                     <ul class="list-unstyled">
-                        <li v-for="template in groupTemplates" :key="template.canonicalName">
-                            <a v-if="typeof template === 'string'" :href="'#' + toId(template)">
-                                <strong>{{ template.replace(/&/g, glue) }}</strong>
+                        <li v-for="pronoun in groupPronouns" :key="pronoun.canonicalName">
+                            <a v-if="typeof pronoun === 'string'" :href="'#' + toId(pronoun)">
+                                <strong>{{ pronoun.replace(/&/g, glue) }}</strong>
                             </a>
-                            <a v-else :href="'#' + toId(template.name(glue))">
-                                <strong>{{ template.name(glue) }}</strong>
+                            <a v-else :href="'#' + toId(pronoun.name(glue))">
+                                <strong>{{ pronoun.name(glue) }}</strong>
                                 –
-                                <small>{{ template.description }}</small>
+                                <small>{{ pronoun.description }}</small>
                             </a>
-                            <NormativeBadge v-if="template.normative"/>
+                            <NormativeBadge v-if="pronoun.normative"/>
                         </li>
                     </ul>
                 </li>
                 <li class="list-group-item" v-if="otherSources.length">
                     <p class="h5 mb-0">
-                        <a :href="'#' + $t('template.othersRaw')">
-                            <strong><T>template.others</T></strong>
+                        <a :href="'#' + $t('pronouns.othersRaw')">
+                            <strong><T>pronouns.others</T></strong>
                         </a>
                     </p>
                 </li>
@@ -87,12 +87,12 @@
             </div>
         </section>
 
-        <section v-for="template in templates" v-if="template.sources.length">
-            <SourceList :names="template.sources" :filter="filter" :filterType="filterType">
-                <h2 class="h4" :id="toId(template.name(glue))">
-                    <nuxt-link :to="'/' + template.pronoun()">
-                        {{ template.description }}
-                        <small>({{ template.name(glue) }})</small>
+        <section v-for="pronoun in pronouns" v-if="pronoun.sources.length">
+            <SourceList :names="pronoun.sources" :filter="filter" :filterType="filterType">
+                <h2 class="h4" :id="toId(pronoun.name(glue))">
+                    <nuxt-link :to="'/' + pronoun.pronoun()">
+                        {{ pronoun.description }}
+                        <small>({{ pronoun.name(glue) }})</small>
                     </nuxt-link>
                 </h2>
             </SourceList>
@@ -102,7 +102,7 @@
             <SourceList :names="sources" :filter="filter" :filterType="filterType">
                 <h2 class="h4" :id="toId(multiple)">
                     <nuxt-link :to="'/' + multiple">
-                        <T>template.alt.header</T>
+                        <T>pronouns.alt.header</T>
                         <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
                     </nuxt-link>
                 </h2>
@@ -111,8 +111,8 @@
 
         <section v-if="otherSources.length">
             <SourceList :names="otherSources" :filter="filter" :filterType="filterType">
-                <h2 class="h4" :id="$t('template.othersRaw')">
-                    <T>template.others</T>
+                <h2 class="h4" :id="$t('pronouns.othersRaw')">
+                    <T>pronouns.others</T>
                 </h2>
             </SourceList>
         </section>
@@ -120,7 +120,7 @@
 </template>
 
 <script>
-    import { templates, sources, templateLibrary } from '../src/data'
+    import { pronouns, sources, pronounLibrary } from '../src/data'
     import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
     import { Source } from "../src/classes";
     import { head } from "../src/helpers";
@@ -128,14 +128,14 @@
     export default {
         data() {
             return {
-                templates: templates,
+                pronouns,
                 sourcesForMultipleForms: sourcesForMultipleForms,
-                templateLibrary: templateLibrary,
+                pronounLibrary,
                 tocShown: false,
                 sourceTypes: Source.TYPES,
                 filter: '',
                 filterType: '',
-                glue: ' ' + this.$t('template.or') + ' ',
+                glue: ' ' + this.$t('pronouns.or') + ' ',
                 submitShown: false,
             };
         },
@@ -155,8 +155,8 @@
         computed: {
             otherSources() {
                 const other = new Set(Object.keys(sources));
-                for (let template of Object.values(this.templates)) {
-                    for (let source of template.sources) {
+                for (let pronoun of Object.values(this.pronouns)) {
+                    for (let source of pronoun.sources) {
                         other.delete(source);
                     }
                 }
@@ -172,7 +172,7 @@
             toId(str) {
                 return str.replace(/\//g, '-').replace(/&/g, '_');
             },
-            filterTemplate(t) {
+            filterPronoun(t) {
                 if (typeof t === 'string') {
                     return Object.keys(sourcesForMultipleForms).includes(t);
                 }

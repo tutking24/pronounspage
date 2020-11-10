@@ -2,18 +2,18 @@
     <div class="container">
         <h2>
             <Icon v="tag"/>
-            <T>template.intro</T>:
+            <T>pronouns.intro</T>:
         </h2>
 
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong><T>template.any.short</T></strong>
+                    <strong><T>pronouns.any.short</T></strong>
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2">
                     <em>
-                        <T>template.any.description</T>
-                        (<T>template.any.options</T>)
+                        <T>pronouns.any.description</T>
+                        (<T>pronouns.any.options</T>)
                     </em>
                 </p>
             </div>
@@ -22,18 +22,18 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                <T>template.examples</T>:
+                <T>pronouns.examples</T>:
             </h2>
 
             <ul>
                 <li v-for="example in examples" class="my-1">
-                    <Example :example="example" :template="randomTemplate()" link/>
+                    <Example :example="example" :pronoun="randomPronoun()" link/>
                 </li>
             </ul>
         </section>
 
         <section>
-            <Share :title="`${$t('template.intro')}: ${$t('template.any.short')}`"/>
+            <Share :title="`${$t('pronouns.intro')}: ${$t('pronouns.any.short')}`"/>
         </section>
 
         <Separator icon="info"/>
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-    import { examples, templates } from "~/src/data";
+    import { examples, pronouns } from "~/src/data";
     import { head } from "../src/helpers";
 
     export default {
@@ -60,14 +60,14 @@
         },
         head() {
             return head({
-                title: `${this.$t('template.intro')}: ${this.$t('template.any.short')}`,
-                banner: `api/banner/${this.$t('template.any.short')}.png`,
+                title: `${this.$t('pronouns.intro')}: ${this.$t('pronouns.any.short')}`,
+                banner: `api/banner/${this.$t('pronouns.any.short')}.png`,
             });
         },
         methods: {
-            randomTemplate() {
-                const keys = Object.keys(templates);
-                return templates[keys[keys.length * Math.random() << 0]];
+            randomPronoun() {
+                const keys = Object.keys(pronouns);
+                return pronouns[keys[keys.length * Math.random() << 0]];
             },
         }
     }

@@ -5,7 +5,7 @@
 <script>
     export default {
         props: {
-            selectedTemplate: { required: true },
+            selectedPronoun: { required: true },
             counter: { required: true },
         }
     }

@@ -12,23 +12,21 @@
         <Separator icon="list"/>
 
         <ul class="list-group mt-5">
-            <li v-for="templateGroup in config.english.templateGroups" class="list-group-item">
+            <li v-for="pronounGroup in config.english.pronounGroups" class="list-group-item">
                 <h3 class="h4">
-                    {{templateGroup.name}}
+                    {{pronounGroup.name}}
                 </h3>
-                <p v-for="p in templateGroup.description">
+                <p v-for="p in pronounGroup.description">
                     <LinkedText :text="p"/>
                 </p>
-                <EnglishTable v-if="templateGroup.table" :t="templateGroup.table"/>
+                <EnglishTable v-if="pronounGroup.table" :t="pronounGroup.table"/>
             </li>
         </ul>
-
-        <ScrollButton/>
     </div>
 </template>
 
 <script>
-    import EnglishTable from "../data/templates/EnglishTable";
+    import EnglishTable from "../data/pronouns/EnglishTable";
     import { head } from "../src/helpers";
 
     export default {

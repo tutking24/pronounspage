@@ -19,12 +19,13 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_n', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_g', counter) }} / {{ selectedTemplate.getMorpheme('pronoun_g_acc', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_d', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_a', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_i', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_l', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_n', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_g', counter) }} / {{
+                        selectedPronoun.getMorpheme('pronoun_g_acc', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_d', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_a', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_i', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_l', counter) }}</td>
                 </tr>
                 </tbody>
             </table>
@@ -42,10 +43,10 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.isPlural(counter) ? 'śmy' : 'm'}}</td>
-                    <td>-{{ selectedTemplate.getMorpheme('verb_middle_inter', counter) }}{{ selectedTemplate.isPlural(counter) ? 'ście' : 'ś'}}</td>
-                    <td>-{{ selectedTemplate.getMorpheme('verb_end_about', counter) }}</td>
-                    <td>-{{ selectedTemplate.getMorpheme('adjective_n', counter) }}</td>
+                    <td>-{{ selectedPronoun.getMorpheme('verb_middle_inter', counter) }}{{selectedPronoun.isPlural(counter) ? 'śmy' : 'm'}}</td>
+                    <td>-{{ selectedPronoun.getMorpheme('verb_middle_inter', counter) }}{{selectedPronoun.isPlural(counter) ? 'ście' : 'ś'}}</td>
+                    <td>-{{ selectedPronoun.getMorpheme('verb_end_about', counter) }}</td>
+                    <td>-{{ selectedPronoun.getMorpheme('adjective_n', counter) }}</td>
                 </tr>
                 </tbody>
             </table>
@@ -56,7 +57,7 @@
 <script>
     export default {
         props: {
-            selectedTemplate: { required: true },
+            selectedPronoun: { required: true },
             counter: { required: true },
         }
     }

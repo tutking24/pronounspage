@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { loadTsv } from '../loader';
-import {buildTemplate, parseTemplates} from "../../src/buildTemplate";
+import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {buildList} from "../../src/helpers";
 import {Example} from "../../src/classes";
 
@@ -12,7 +12,7 @@ const buildExample = e => new Example(
 
 const requestExamples = r => {
     if (!r || !r.length) {
-        return loadTsv('templates/examples');
+        return loadTsv('pronouns/examples');
     }
 
     return buildList(function* () {
@@ -34,17 +34,17 @@ const addExamples = (pronoun, examples) => {
 const router = Router();
 
 router.get('/pronouns', async (req, res) => {
-    const templates = parseTemplates(loadTsv('templates/templates'));
-    for (let template in templates) {
-        if (!templates.hasOwnProperty(template)) { continue; }
-        templates[template].examples = addExamples(templates[template], requestExamples(req.query.examples))
+    const pronouns = parsePronouns(loadTsv('pronouns/pronouns'));
+    for (let pronoun in pronouns) {
+        if (!pronouns.hasOwnProperty(pronoun)) { continue; }
+        pronouns[pronoun].examples = addExamples(pronouns[pronoun], requestExamples(req.query.examples))
     }
-    return res.json(templates);
+    return res.json(pronouns);
 });
 
 router.get('/pronouns/:pronoun*', async (req, res) => {
-    const pronoun = buildTemplate(
-        parseTemplates(loadTsv('templates/templates')),
+    const pronoun = buildPronoun(
+        parsePronouns(loadTsv('pronouns/pronouns')),
         req.params.pronoun + req.params[0],
     );
     if (pronoun) {

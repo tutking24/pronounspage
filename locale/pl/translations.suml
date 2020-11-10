@@ -40,7 +40,7 @@ home:
             „{/oni=dzwonili} z gazowni”,
             „będę robić”, itp.
             Tutaj idziemy po prostu o krok dalej.
-    templates: 'Propozycje form'
+    pronouns: 'Propozycje form'
     generator:
         header: 'Generator form'
         description: >
@@ -52,7 +52,7 @@ home:
         alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
     whatisit: 'O co chodzi w tej stronie?'
 
-template:
+pronouns:
     examples: 'Przykłady użycia w zdaniu'
     plural: 'Liczba mnoga'
     intro: 'Moje zaimki to'
@@ -89,7 +89,7 @@ sources:
     submit:
         header: 'Zgłoś przykład do dodania'
         action: 'Zgłoś'
-        templates: 'Które zaimki/formy są użyte?'
+        pronouns: 'Które zaimki/formy są użyte?'
         type: 'Rodzaj źródła kultury'
         author: 'Autor'
         title: 'Tytuł'

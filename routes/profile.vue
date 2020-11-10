@@ -66,8 +66,8 @@
                 </h3>
 
                 <ul class="list-unstyled">
-                    <li v-for="{link, template, opinion} in pronounTemplates">
-                        <Opinion :word="template.name(glue)" :opinion="opinion" :link="`/${link}`"/>
+                    <li v-for="{link, pronoun, opinion} in pronounOpinions">
+                        <Opinion :word="pronoun.name(glue)" :opinion="opinion" :link="`/${link}`"/>
                     </li>
                 </ul>
             </div>
@@ -109,15 +109,15 @@
 
 <script>
     import { head } from "../src/helpers";
-    import { templates } from "~/src/data";
-    import { buildTemplate } from "../src/buildTemplate";
+    import { pronouns } from "~/src/data";
+    import { buildPronoun } from "../src/buildPronoun";
 
     export default {
         data() {
              return {
                 username: this.$route.params.pathMatch,
                 profiles: {},
-                glue: ' ' + this.$t('template.or') + ' ',
+                glue: ' ' + this.$t('pronouns.or') + ' ',
                 allFlags: process.env.FLAGS,
             }
         },
@@ -136,23 +136,23 @@
 
                 return null;
             },
-            pronounTemplates() {
-                const pronounTemplates = [];
+            pronounOpinions() {
+                const pronounOpinions = [];
                 for (let pronoun in this.profile.pronouns) {
                     if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
 
                     const link = pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), '');
-                    const template = buildTemplate(templates, link);
+                    const pronounEntity = buildPronoun(pronouns, link);
 
-                    if (template) {
-                        pronounTemplates.push({
+                    if (pronounEntity) {
+                        pronounOpinions.push({
                             link,
-                            template,
-                            opinion: this.profile.pronouns[pronoun],
+                            pronoun: pronounEntity,
+                            opinion: this.profile.pronouns[pronounEntity],
                         });
                     }
                 }
-                return pronounTemplates;
+                return pronounOpinions;
             },
         },
         head() {

@@ -99,8 +99,8 @@
 
 <script>
     import { head, dictToList, listToDict, buildList } from "../src/helpers";
-    import { templates } from "~/src/data";
-    import { buildTemplate } from "../src/buildTemplate";
+    import { pronouns } from "~/src/data";
+    import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
 
     const defaultWords = config.profile.defaultWords.map(c => buildList(function* () {
@@ -170,8 +170,8 @@
             };
         },
         methods: {
-            buildTemplate(link) {
-                return buildTemplate(templates, link);
+            buildPronoun(link) {
+                return buildPronoun(pronouns, link);
             },
             async save() {
                 this.saving = true;
@@ -189,9 +189,8 @@
             },
             validatePronoun(pronoun) {
                 const link = pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), '');
-                const template = buildTemplate(templates, link);
 
-                return template ? null : 'profile.pronounsNotFound'
+                return buildPronoun(pronouns, link) ? null : 'profile.pronounsNotFound'
             },
         },
         head() {

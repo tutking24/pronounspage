@@ -18,11 +18,11 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_subject', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('pronoun_object', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('possessive_determiner', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('possessive_pronoun', counter) }}</td>
-                    <td>{{ selectedTemplate.getMorpheme('reflexive', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_subject', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('pronoun_object', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('possessive_determiner', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('possessive_pronoun', counter) }}</td>
+                    <td>{{ selectedPronoun.getMorpheme('reflexive', counter) }}</td>
                 </tr>
                 </tbody>
             </table>
@@ -33,7 +33,7 @@
 <script>
     export default {
         props: {
-            selectedTemplate: { required: true },
+            selectedPronoun: { required: true },
             counter: { required: true },
         }
     }

@@ -37,7 +37,7 @@
                            required maxlength="255"/>
                 </div>
                 <div class="form-group">
-                    <label for="templates"><T>sources.submit.extra</T></label>
+                    <label for="pronouns"><T>sources.submit.extra</T></label>
                     <input type="text" id="extra" class="form-control" v-model="form.extra"
                            maxlength="255"/>
                 </div>
@@ -53,8 +53,8 @@
                     </ListInput>
                 </div>
                 <div class="form-group">
-                    <label for="templates" class="required"><T>sources.submit.templates</T></label>
-                    <input type="text" id="templates" class="form-control" v-model="form.templates"
+                    <label for="pronouns" class="required"><T>sources.submit.pronouns</T></label>
+                    <input type="text" id="pronouns" class="form-control" v-model="form.pronouns"
                            required maxlength="255"/>
                 </div>
                 <div class="form-group">
@@ -82,7 +82,7 @@
         data() {
             return {
                 form: {
-                    templates: '',
+                    pronouns: '',
                     type: '',
                     author: '',
                     title: '',
@@ -105,7 +105,7 @@
                 this.submitting = false;
                 this.afterSubmit = true;
                 this.form = {
-                    templates: '',
+                    pronouns: '',
                     type: '',
                     author: '',
                     title: '',

@@ -41,7 +41,7 @@
         data() {
             return {
                 groups: [{
-                    enabled: this.config.template.enabled,
+                    enabled: this.config.pronouns.enabled,
                     header: 'home.header',
                     icon: 'tags',
                     endpoints: {

@@ -1,16 +1,16 @@
 <template>
-    <NotFound v-if="!selectedTemplate"/>
+    <NotFound v-if="!selectedPronoun"/>
     <div v-else class="container">
         <h2>
             <Icon v="tag"/>
-            <T>template.intro</T>:
+            <T>pronouns.intro</T>:
         </h2>
 
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
                     <strong v-if="nameOptions.length === 1">
-                        {{ selectedTemplate.name(glue) }}
+                        {{ selectedPronoun.name(glue) }}
                     </strong>
                     <template v-else>
                         <template v-for="(nameOption, i) in nameOptions">
@@ -23,11 +23,11 @@
                         </template>
                     </template>
                 </h2>
-                <p class="h6 small text-center mb-0 mt-2" v-if="selectedTemplate.description">
+                <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        ({{Array.isArray(selectedTemplate.description)
-                            ? ($t('template.alt.header') + ': ' + selectedTemplate.description.join(glue))
-                            : selectedTemplate.description
+                        ({{Array.isArray(selectedPronoun.description)
+                            ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
+                            : selectedPronoun.description
                         }})
                     </em>
                 </p>
@@ -37,46 +37,46 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                <T>template.examples</T>:
+                <T>pronouns.examples</T>:
             </h2>
 
             <ul>
                 <li v-for="example in examples" class="my-1">
-                    <Example :example="example" :template="selectedTemplate" :counter="counter"/>
+                    <Example :example="example" :pronoun="selectedPronoun" :counter="counter"/>
                 </li>
             </ul>
         </section>
 
-        <GrammarTables :selectedTemplate="selectedTemplate" :counter="counter"/>
+        <GrammarTables :selectedPronoun="selectedPronoun" :counter="counter"/>
 
-        <section v-if="selectedTemplate.history">
-            <div class="alert alert-info" v-for="part in selectedTemplate.history.split('@')">
+        <section v-if="selectedPronoun.history">
+            <div class="alert alert-info" v-for="part in selectedPronoun.history.split('@')">
                 <Icon v="info-circle"/>
                 <LinkedText :text="part"/>
             </div>
         </section>
 
-        <section v-if="templateGroup && templateGroup.group.description">
+        <section v-if="pronounGroup && pronounGroup.group.description">
             <ul class="list-group mt-4">
                 <li class="list-group-item">
                     <p class="h5">
-                        {{ templateGroup.group.name }}
+                        {{ pronounGroup.group.name }}
                     </p>
                     <div class="small my-1">
                         <Icon v="info-circle"/>
-                        <em v-html="templateGroup.group.description"></em>
+                        <em v-html="pronounGroup.group.description"></em>
                     </div>
                     <ul class="list-unstyled">
-                        <li v-for="template in templateGroup.groupTemplates" :key="template.canonicalName">
-                            <nuxt-link v-if="typeof template === 'string'" :to="'/' + template">
-                                <strong>{{template.replace(/&/g, ' ' + $t('template.or') + ' ')}}</strong>
+                        <li v-for="pronoun in pronounGroup.groupPronouns" :key="pronoun.canonicalName">
+                            <nuxt-link v-if="typeof pronoun === 'string'" :to="'/' + pronoun">
+                                <strong>{{pronoun.replace(/&/g, ' ' + $t('pronouns.or') + ' ')}}</strong>
                             </nuxt-link>
-                            <nuxt-link v-else :to="addSlash('/' + template.canonicalName)">
-                                <strong>{{template.name(glue)}}</strong>
+                            <nuxt-link v-else :to="addSlash('/' + pronoun.canonicalName)">
+                                <strong>{{pronoun.name(glue)}}</strong>
                                 –
-                                <small>{{template.description}}</small>
+                                <small>{{pronoun.description}}</small>
                             </nuxt-link>
-                            <NormativeBadge v-if="template.normative"/>
+                            <NormativeBadge v-if="pronoun.normative"/>
                         </li>
                     </ul>
                 </li>
@@ -87,7 +87,7 @@
         </section>
 
         <section>
-            <Share :title="`${$t('template.intro')}: ${selectedTemplate.name(glue)}`"/>
+            <Share :title="`${$t('pronouns.intro')}: ${selectedPronoun.name(glue)}`"/>
         </section>
 
         <section v-if="Object.keys(sources).length">
@@ -107,27 +107,27 @@
 </template>
 
 <script>
-    import { examples, templates, getSources, templateLibrary } from "~/src/data";
-    import { buildTemplate } from "../src/buildTemplate";
+    import { examples, pronouns, getSources, pronounLibrary } from "~/src/data";
+    import { buildPronoun } from "../src/buildPronoun";
     import { head } from "../src/helpers";
-    import GrammarTables from "../data/templates/GrammarTables";
+    import GrammarTables from "../data/pronouns/GrammarTables";
     import LinkedText from "../components/LinkedText";
 
     export default {
         components: {LinkedText, GrammarTables },
         data() {
-            const selectedTemplate = this.config.template.enabled
-                ? buildTemplate(templates, decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, '')))
+            const selectedPronoun = this.config.pronouns.enabled
+                ? buildPronoun(pronouns, decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, '')))
                 : null;
 
             return {
                 examples,
-                templates,
-                glue: ' ' + this.$t('template.or') + ' ',
+                pronouns,
+                glue: ' ' + this.$t('pronouns.or') + ' ',
 
-                selectedTemplate,
-                nameOptions: selectedTemplate ? selectedTemplate.nameOptions() : [],
-                templateGroup: templateLibrary.find(selectedTemplate),
+                selectedPronoun,
+                nameOptions: selectedPronoun ? selectedPronoun.nameOptions() : [],
+                pronounGroup: pronounLibrary.find(selectedPronoun),
 
                 counter: 0,
             }
@@ -138,8 +138,8 @@
             }
         },
         head() {
-            return this.selectedTemplate ? head({
-                title: `${this.$t('template.intro')}: ${this.selectedTemplate.name(this.glue)}`,
+            return this.selectedPronoun ? head({
+                title: `${this.$t('pronouns.intro')}: ${this.selectedPronoun.name(this.glue)}`,
                 banner: `api/banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
         },
@@ -150,7 +150,7 @@
         },
         computed: {
             sources() {
-                return getSources(this.selectedTemplate);
+                return getSources(this.selectedPronoun);
             },
         },
     }

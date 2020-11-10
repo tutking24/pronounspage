@@ -1,6 +1,6 @@
-import {Source, Example, NounTemplate, TemplateGroup, TemplateLibrary, Name, Person, NounDeclension} from './classes'
+import {Source, Example, NounTemplate, PronounGroup, PronounLibrary, Name, Person, NounDeclension} from './classes'
 import { buildDict, buildList } from './helpers';
-import { parseTemplates, getTemplate } from './buildTemplate';
+import { parsePronouns, getPronoun } from './buildPronoun';
 import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
 
 export const locales = {
@@ -16,10 +16,10 @@ export const socialProviders = {
     google: { name: 'Google' },
 }
 
-import templatesRaw from '../data/templates/templates.tsv';
-export const templates = parseTemplates(templatesRaw);
+import pronounsRaw from '../data/pronouns/pronouns.tsv';
+export const pronouns = parsePronouns(pronounsRaw);
 
-import examplesRaw from '../data/templates/examples.tsv';
+import examplesRaw from '../data/pronouns/examples.tsv';
 export const examples = buildList(function* () {
     for (let e of examplesRaw) {
         yield new Example(
@@ -49,23 +49,23 @@ export const sources = buildDict(function* () {
     }
 });
 
-export const getSources = (selectedTemplate) => {
-    if (!selectedTemplate) {
+export const getSources = (selectedPronoun) => {
+    if (!selectedPronoun) {
         return {};
     }
 
     let sources = {};
     for (let multiple in sourcesForMultipleForms) {
         if (sourcesForMultipleForms.hasOwnProperty(multiple)) {
-            if (multiple === selectedTemplate.canonicalName) {
+            if (multiple === selectedPronoun.canonicalName) {
                 sources[multiple] = sourcesForMultipleForms[multiple];
             }
         }
     }
-    for (let option of selectedTemplate.nameOptions()) {
-        const template = getTemplate(templates, option);
-        if (template && template.sources.length) {
-            sources[option] = template.sources;
+    for (let option of selectedPronoun.nameOptions()) {
+        const pronoun = getPronoun(pronouns, option);
+        if (pronoun && pronoun.sources.length) {
+            sources[option] = pronoun.sources;
         }
     }
     return sources;
@@ -85,18 +85,18 @@ export const nounTemplates = buildList(function* () {
     }
 });
 
-import templateGroupsRaw from '../data/templates/templateGroups.tsv';
-export const templateGroups = buildList(function* () {
-    for (let g of templateGroupsRaw) {
-        yield new TemplateGroup(
+import pronounGroupsRaw from '../data/pronouns/pronounGroups.tsv';
+export const pronounGroups = buildList(function* () {
+    for (let g of pronounGroupsRaw) {
+        yield new PronounGroup(
             g.name,
-            g.templates.split(','),
+            g.pronouns.split(','),
             g.description,
         );
     }
 });
 
-export const templateLibrary = new TemplateLibrary(templateGroups, templates);
+export const pronounLibrary = new PronounLibrary(pronounGroups, pronouns);
 
 import namesRaw from '../data/names/names.tsv';
 export const names = buildDict(function* () {

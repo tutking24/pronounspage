@@ -1,7 +1,7 @@
 title: 'Pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
-template:
+pronouns:
     or: 'or'
 
 notFound:

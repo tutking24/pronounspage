@@ -11,12 +11,12 @@
             <h3 class="h5">
                 <nuxt-link :to="'/' + option">
                     <span v-if="option.includes('&')">
-                        <T>template.alt.header</T>
+                        <T>pronouns.alt.header</T>
                         <small>({{ option.replace(/&/g, glue) }})</small>
                     </span>
                     <span v-else>
-                        {{ getTemplate(templates, option).description }}
-                        <small>({{ getTemplate(templates, option).name(glue) }})</small>
+                        {{ getPronoun(pronouns, option).description }}
+                        <small>({{ getPronoun(pronouns, option).name(glue) }})</small>
                     </span>
                 </nuxt-link>
             </h3>
@@ -27,8 +27,8 @@
 </template>
 
 <script>
-    import { templates } from "../src/data";
-    import { getTemplate } from "../src/buildTemplate";
+    import { pronouns } from "../src/data";
+    import { getPronoun } from "../src/buildPronoun";
 
     export default {
         props: {
@@ -36,9 +36,9 @@
         },
         data() {
             return {
-                templates: templates,
-                getTemplate: getTemplate,
-                glue: ' ' + this.$t('template.or') + ' ',
+                pronouns,
+                getPronoun: getPronoun,
+                glue: ' ' + this.$t('pronouns.or') + ' ',
             }
         }
     }

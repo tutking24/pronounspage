@@ -2,7 +2,7 @@ locale: '_'
 
 header: false
 
-template:
+pronouns:
     enabled: false
 
 sources:
