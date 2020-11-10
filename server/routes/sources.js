@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import mailer from "../../src/mailer";
-import {camelCase, capitalise} from "../../src/helpers";
+import { camelCase } from "../../src/helpers";
+import { loadTsv } from '../loader';
 
 const generateId = title => {
     return camelCase(title.split(' ').slice(0, 2));
@@ -21,7 +22,25 @@ const buildEmail = (data, user) => {
     return `<ul>${human.join('')}</ul><pre>${tsv.join('\t')}</pre>`;
 }
 
+const loadSources = () => {
+    return loadTsv('sources/sources').map(s => {
+        if (s.author) {
+            s.author = s.author.replace('^', '');
+        }
+        s.fragments = s.fragments.split('@').map(f => f.replace(/\|/g, '\n'));
+        return s;
+    });
+}
+
 const router = Router();
+
+router.get('/sources', async (req, res) => {
+    return res.json(loadSources());
+});
+
+router.get('/sources/:key', async (req, res) => {
+    return res.json([...loadSources().filter(s => s.key === req.params.key), null][0]);
+});
 
 router.post('/sources/submit', async (req, res) => {
     const emailBody = buildEmail(req.body, req.user);

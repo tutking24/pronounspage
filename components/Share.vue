@@ -59,7 +59,7 @@
         data() {
             return {
                 preset: {
-                    url: process.env.BASE_URL + this.$route.path,
+                    url: this.$base + this.$route.path,
                     title: this.title,
                     extra: {
                         media: '',

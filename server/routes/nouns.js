@@ -23,11 +23,22 @@ const approve = async (db, id) => {
 
 const router = Router();
 
-router.get('/nouns/all', async (req, res) => {
+router.get('/nouns', async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT * FROM nouns
         WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
+        ORDER BY approved, masc
+    `));
+});
+
+router.get('/nouns/search/:term', async (req, res) => {
+    const term = '%' + req.params.term + '%';
+    return res.json(await req.db.all(SQL`
+        SELECT * FROM nouns
+        WHERE locale = ${req.config.locale}
+        AND approved >= ${req.admin ? 0 : 1}
+        AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
         ORDER BY approved, masc
     `));
 });

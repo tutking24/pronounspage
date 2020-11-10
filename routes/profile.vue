@@ -141,7 +141,7 @@
                 for (let pronoun in this.profile.pronouns) {
                     if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
 
-                    const link = pronoun.replace(new RegExp('^' + process.env.BASE_URL), '').replace(new RegExp('^/'), '');
+                    const link = pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), '');
                     const template = buildTemplate(templates, link);
 
                     if (template) {

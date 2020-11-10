@@ -87,8 +87,8 @@
 
                 return jwt.verify(this.token, process.env.PUBLIC_KEY, {
                     algorithm: 'RS256',
-                    audience: process.env.BASE_URL,
-                    issuer: process.env.BASE_URL,
+                    audience: this.$base,
+                    issuer: this.$base,
                 });
             }
         },

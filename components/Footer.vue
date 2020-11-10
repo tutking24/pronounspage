@@ -37,12 +37,20 @@
                         <Icon v="gitlab" set="b"/>
                     </SquareButton>
                 </div>
-                <p v-if="config.user.enabled" class="small">
-                    <nuxt-link :to="`/${config.user.termsRoute}`">
-                        <Icon v="gavel"/>
-                        <T>terms.header</T>
-                    </nuxt-link>
-                </p>
+                <ul v-if="config.user.enabled" class="list-inline small">
+                    <li class="list-inline-item">
+                        <nuxt-link :to="`/${config.user.termsRoute}`">
+                            <Icon v="gavel"/>
+                            <T>terms.header</T>
+                        </nuxt-link>
+                    </li>
+                    <li class="list-inline-item">
+                        <nuxt-link to="/api">
+                            <Icon v="laptop-code"/>
+                            <T>api.header</T>
+                        </nuxt-link>
+                    </li>
+                </ul>
                 <Share/>
             </div>
         </div>

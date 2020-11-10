@@ -118,7 +118,6 @@
 
 <script>
     import { nounTemplates } from '../src/data';
-    import config from "../data/config.suml";
 
     export default {
         data() {

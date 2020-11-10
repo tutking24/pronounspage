@@ -2,12 +2,14 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {buildDict, makeId, now} from "../../src/helpers";
-import translations from "../translations";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
-import config from '../config';
+import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
+
+const config = loadSuml('config');
+const translations = loadSuml('translations');
 
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 

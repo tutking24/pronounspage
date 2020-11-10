@@ -1,7 +1,9 @@
-import translations from './server/translations';
-import config from './server/config';
+import { loadSuml } from './server/loader';
 import fs from 'fs';
 import {buildDict} from "./src/helpers";
+
+const config = loadSuml('config');
+const translations = loadSuml('translations');
 
 const locale = config.locale;
 const title = translations.title;
@@ -157,6 +159,8 @@ export default {
             if (config.template.enabled) {
                 routes.push({ path: '/' + config.template.any.route, component: resolve(__dirname, 'routes/any.vue') });
             }
+
+            routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/template.vue') });
         },

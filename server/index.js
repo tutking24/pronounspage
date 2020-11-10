@@ -5,7 +5,7 @@ import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
-import config from './config';
+import { loadSuml } from './loader';
 
 const app = express()
 
@@ -18,7 +18,7 @@ app.use(session({
 }));
 
 app.use(async function (req, res, next) {
-    req.config = config;
+    req.config = loadSuml('config');
     req.rawUser = authenticate(req);
     req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
     req.admin = req.user && req.user.roles === 'admin';
@@ -34,8 +34,9 @@ app.use(require('./routes/user').default);
 app.use(require('./routes/profile').default);
 app.use(require('./routes/admin').default);
 
-app.use(require('./routes/nouns').default);
+app.use(require('./routes/templates').default);
 app.use(require('./routes/sources').default);
+app.use(require('./routes/nouns').default);
 
 export default {
     path: '/api',

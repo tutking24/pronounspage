@@ -188,7 +188,7 @@
                 this.$router.push(`/@${this.$user().username}`)
             },
             validatePronoun(pronoun) {
-                const link = pronoun.replace(new RegExp('^' + process.env.BASE_URL), '').replace(new RegExp('^/'), '');
+                const link = pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), '');
                 const template = buildTemplate(templates, link);
 
                 return template ? null : 'profile.pronounsNotFound'

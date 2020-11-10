@@ -243,14 +243,14 @@
                 if (!this.selectedTemplate.pronoun()) {
                     return null;
                 }
-                return this.addSlash(process.env.BASE_URL + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
+                return this.addSlash(this.$base + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
             },
             linkMultiple() {
                 if (!this.multiple.length) {
                     return null;
                 }
 
-                return this.addSlash(process.env.BASE_URL + '/' + this.multiple.join('&'));
+                return this.addSlash(this.$base + '/' + this.multiple.join('&'));
             },
             sources() {
                 return getSources(this.selectedTemplate);

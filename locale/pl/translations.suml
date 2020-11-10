@@ -805,3 +805,8 @@ table:
     count: 'Liczba'
     sort: 'Przeciągnij by posortować'
     scrollUp: 'Przewiń na samą górę'
+
+api:
+    header: 'Publiczne API'
+    example: 'Przykład'
+    query: 'Query string parameters'

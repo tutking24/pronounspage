@@ -1,10 +1,12 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {createCanvas, loadImage, registerFont} from "canvas";
-import translations from "../translations";
+import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import {buildTemplate, parseTemplates} from "../../src/buildTemplate";
 import {loadTsv} from "../../src/tsv";
+
+const translations = loadSuml('translations');
 
 const drawCircle = (context, image, x, y, size) => {
     context.save();

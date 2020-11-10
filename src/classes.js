@@ -6,14 +6,6 @@ export class ExamplePart {
         this.variable = variable;
         this.str = str;
     }
-
-    format(form) {
-        if (!this.variable) {
-            return this.str[form.plural];
-        }
-
-        return form[this.str[form.plural]];
-    }
 }
 
 export class Example {
@@ -44,12 +36,12 @@ export class Example {
         return parts;
     }
 
-    format(form) {
-        return Example.ucfirst(this.parts.map(part => part.format(form)).join(''));
-    }
+    format(pronoun) {
+        const plural = this.isHonorific ? pronoun.pluralHonorific[0] : pronoun.plural[0];
 
-    static ucfirst(str) {
-        return str[0].toUpperCase() + str.slice(1);
+        return capitalise(this[plural ? 'pluralParts' : 'singularParts'].map(part => {
+            return part.variable ? pronoun.getMorpheme(part.str) : part.str;
+        }).join(''));
     }
 }
 

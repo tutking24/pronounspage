@@ -5,6 +5,7 @@ import { locales } from '../src/data';
 import {buildDict} from "../src/helpers";
 
 export default ({ app }) => {
+    Vue.prototype.$base = process.env.BASE_URL;
     Vue.prototype.$t = t;
     Vue.prototype.config = config;
     Vue.prototype.locales = buildDict(function* () {
