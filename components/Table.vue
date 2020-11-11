@@ -104,7 +104,7 @@
 </script>
 
 <style lang="scss">
-    @import "assets/style";
+    @import "assets/variables";
 
     .marked {
         border-left: 3px solid $primary;

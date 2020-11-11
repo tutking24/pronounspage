@@ -86,7 +86,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     .modal {
         background-color: rgba($black, 0.5);

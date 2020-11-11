@@ -14,7 +14,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
     $size: 2.2rem;
 
     .btn-square {

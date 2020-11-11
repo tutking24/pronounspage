@@ -15,7 +15,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     // https://front-back.com/pure-css-3-fancy-separator/
 

@@ -36,7 +36,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     .scroll-btn {
         position: fixed;

@@ -160,7 +160,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     @include media-breakpoint-down('sm', $grid-breakpoints) {
         .nav-custom {

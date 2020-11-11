@@ -274,7 +274,7 @@
 </script>
 
 <style lang="scss">
-    @import "assets/style";
+    @import "assets/variables";
 
     .list-singular {
         padding-left: 0;
