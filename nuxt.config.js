@@ -8,7 +8,7 @@ const translations = loadSuml('translations');
 const locale = config.locale;
 const title = translations.title;
 const description = translations.description;
-const banner = process.env.BASE_URL + '/banner/zaimki.png';
+const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 
 const bodyParser = require('body-parser');
