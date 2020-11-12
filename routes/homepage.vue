@@ -149,12 +149,6 @@
                                 <Icon v="info-circle"/>
                                 <T>home.generator.alt</T>
                             </p>
-                            <div class="alert alert-warning">
-                                <p class="mb-0 small">
-                                    <Icon v="exclamation-triangle"/>
-                                    <T>beta</T>
-                                </p>
-                            </div>
                         </div>
                         <div class="card-footer" v-if="link">
                             <LinkInput :link="link"/>

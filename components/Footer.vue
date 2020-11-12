@@ -26,7 +26,7 @@
                     >
                         <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                     </SquareButton>
-                    <br/>
+                    <br v-if="config.links.socials.length > 2"/>
                     <SquareButton link="https://avris.it" aria-label="avris.it">
                         <img src="~assets/avris.svg" alt="Avris"/>
                     </SquareButton>

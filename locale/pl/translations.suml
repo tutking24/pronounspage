@@ -749,7 +749,6 @@ profile:
     editor:
         header: 'Edytor wizytówki'
         save: 'Zapisz wizytówkę'
-
     opinion:
         yes: 'Tak'
         meh: 'Meh'
@@ -766,12 +765,6 @@ crud:
     filter: 'Filtruj'
     filterLong: 'Filtruj listę…'
     search: 'Szukaj…'
-
-beta: >
-    Strona jest w wersji βeta!
-    Przykłady, formy gramatyczne i linki mogą się jeszcze mocno zmienić!
-    Jeśli masz jakieś sugestie lub uwagi, daj mi proszę znać
-    {https://twitter.com/AvrisIT=na Twitterze} lub {mailto:andrea@avris.it=przez maila}.
 
 footer:
     source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'

@@ -20,7 +20,7 @@ nouns:
     plurals: false
     declension: false
     submit: true
-    templates: false
+    templates: true
 
 names:
     enabled: false
@@ -48,6 +48,16 @@ links:
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
             headline: 'Why EVERYONE should have pronouns in their bio'
+        -
+            icon: 'book-open'
+            url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
+            headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
+        -
+            icon: 'wikipedia-w'
+            iconSet: 'b'
+            url: 'https://lgbta.wikia.org/wiki/Neopronouns'
+            headline: 'LGBTA Wiki on Neopronouns'
+
     media: []
     socials: []
 
@@ -70,23 +80,23 @@ contact:
             areas:
                 code: 'https://gitlab.com/Avris/Zaimki'
                 language: ~
-        -
-            name: 'Paweł Dembowski'
-            pronouns: 'he'
-            pronounsLink: '/he'
-            twitter: 'VaultAusir'
-            mail: 'pawel.dembowski@gmail.com'
-            areas:
-                languages: ~
-                sources: '/sources'
-        -
-            name: 'Zuzanna Sybilla Grzybowska'
-            pronouns: 'they/she/he'
-            pronounsLink: '/they&she&he'
-            twitter: 'mykofanes'
-            mail: 'zuzannagrzybowska@protonmail.com'
-            areas:
-                social_media: ~
+#        -
+#            name: 'Paweł Dembowski'
+#            pronouns: 'he'
+#            pronounsLink: '/he'
+#            twitter: 'VaultAusir'
+#            mail: 'pawel.dembowski@gmail.com'
+#            areas:
+#                languages: ~
+#                sources: '/sources'
+#        -
+#            name: 'Zuzanna Sybilla Grzybowska'
+#            pronouns: 'they/she/he'
+#            pronounsLink: '/they&she&he'
+#            twitter: 'mykofanes'
+#            mail: 'zuzannagrzybowska@protonmail.com'
+#            areas:
+#                social_media: ~
 
 support:
     enabled: true
