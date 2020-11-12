@@ -148,7 +148,7 @@
                         pronounOpinions.push({
                             link,
                             pronoun: pronounEntity,
-                            opinion: this.profile.pronouns[pronounEntity],
+                            opinion: this.profile.pronouns[pronoun],
                         });
                     }
                 }
