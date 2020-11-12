@@ -17,7 +17,7 @@ nouns:
     enabled: true
     route: 'nouns'
     collapsable: false
-    plurals: false
+    plurals: true
     declension: false
     submit: true
     templates: true
@@ -116,9 +116,9 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['mx.', 'mr.', 'miss', 'sir', 'ma''am']
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis']
-        - ['pretty', 'handsome', 'cute']
+        - ['mx.', 'mr.', 'miss', 'sir', 'madam']
+        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis', 'sib']
+        - ['pretty', 'handsome', 'cute', 'hot']
         - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
 
 redirects: []
