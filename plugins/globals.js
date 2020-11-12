@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import t from '../src/translator';
 import config from '../data/config.suml';
-import { locales } from '../src/data';
 import {buildDict} from "../src/helpers";
 
 export default ({ app }) => {
@@ -10,11 +9,11 @@ export default ({ app }) => {
     Vue.prototype.config = config;
     Vue.prototype.locales = buildDict(function* () {
         if (config.locale !== '_') {
-            yield [ config.locale, locales[config.locale] ];
+            yield [ config.locale, process.env.LOCALES[config.locale] ];
         }
-        for (let l in locales) {
-            if (locales.hasOwnProperty(l) && l !== config.locale) {
-                yield [l, locales[l]];
+        for (let l in process.env.LOCALES) {
+            if (process.env.LOCALES.hasOwnProperty(l) && l !== config.locale) {
+                yield [l, process.env.LOCALES[l]];
             }
         }
     });

@@ -6,6 +6,12 @@ const config = loadSuml('config');
 const translations = loadSuml('translations');
 
 const locale = config.locale;
+const locales = buildDict(function* () {
+    for (let locale of process.env.LOCALES.split('|')) {
+        const [code, name, url] = locale.split(',');
+        yield [code, {name, url}];
+    }
+});
 const title = translations.title;
 const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
@@ -91,6 +97,7 @@ export default {
         TITLE: title,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
         LOCALE: config.locale,
+        LOCALES: locales,
         FLAGS: buildDict(function *() {
             for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
                 if (flag.startsWith('.')) {

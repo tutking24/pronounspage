@@ -3,13 +3,6 @@ import { buildDict, buildList } from './helpers';
 import { parsePronouns, getPronoun } from './buildPronoun';
 import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
 
-export const locales = {
-    // en: { name: 'English', url: 'https://en.pronouns.page' },
-    pl: { name: 'Polski', url: 'https://zaimki.pl' },
-    // de: { name: 'Deutsch', url: 'https://de.pronouns.page' },
-    // nl: { name: 'Nederlands', url: 'https://nl.pronouns.page' },
-}
-
 export const socialProviders = {
     twitter: { name: 'Twitter' },
     facebook: { name: 'Facebook' },
