@@ -57,6 +57,10 @@ links:
             iconSet: 'b'
             url: 'https://lgbta.wikia.org/wiki/Neopronouns'
             headline: 'LGBTA Wiki on Neopronouns'
+        -
+            icon: 'book-open'
+            url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
+            headline: 'Academic papers on neopronouns'
 
     media: []
     socials: []
@@ -72,6 +76,7 @@ contact:
     authors:
         -
             name: 'Andrea'
+            profile: 'andrea'
             pronouns: 'they'
             pronounsLink: '/they'
             website: 'https://avris.it'
@@ -80,6 +85,7 @@ contact:
             areas:
                 code: 'https://gitlab.com/Avris/Zaimki'
                 language: ~
+                faq: '/faq'
 #        -
 #            name: 'Paweł Dembowski'
 #            pronouns: 'he'
