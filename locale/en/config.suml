@@ -38,6 +38,7 @@ faq:
 links:
     enabled: true
     route: 'links'
+    blogRoute: 'blog'
     links:
         -
             icon: 'globe-europe'

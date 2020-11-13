@@ -88,8 +88,12 @@ export default {
             });
             config.module.rules.push({
                 test: /\.suml$/,
-                    loader: 'suml-loader',
+                loader: 'suml-loader',
             });
+            config.module.rules.push({
+                test: /\.md$/,
+                use: ['html-loader', 'markdown-loader']
+            })
         },
     },
     env: {
@@ -136,6 +140,7 @@ export default {
 
             if (config.links.enabled) {
                 routes.push({ path: '/' + config.links.route, component: resolve(__dirname, 'routes/links.vue') });
+                routes.push({ path: '/' + config.links.blogRoute + '/:slug', component: resolve(__dirname, 'routes/blog.vue') });
             }
 
             if (config.people.enabled) {

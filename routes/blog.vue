@@ -1,0 +1,37 @@
+<template>
+    <NotFound v-if="!content"/>
+    <div v-else class="container blog-post">
+        <div v-html="content"></div>
+    </div>
+</template>
+
+<script>
+    import { head } from "../src/helpers";
+
+    export default {
+        async asyncData({route}) {
+            try {
+                const content = (await import(`../locale/pl/blog/${route.params.slug}.md`)).default;
+                const title = content.match('<h1[^>]*>([^<]+)</h1>')[1];
+
+                return {
+                    content,
+                    title,
+                }
+            } catch {
+                return {};
+            }
+        },
+        head() {
+            return head({
+                title: this.title,
+            });
+        },
+    };
+</script>
+
+<style lang="scss">
+    .blog-post img {
+        max-width: 100%;
+    }
+</style>

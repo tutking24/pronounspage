@@ -37,6 +37,7 @@ faq:
 links:
     enabled: true
     route: 'linki'
+    blogRoute: 'blog'
     links:
         -
             icon: 'globe-europe'
@@ -57,6 +58,15 @@ links:
             url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
             headline: 'Genderneutralizacja polszczyzny?'
             extra: '– artykuł opisujący, dlaczego język neutralny płciowo jest ważny, i zbierający pomysły na stworzenie takiego.'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/gwiezdne-wojny'
+            headline: 'Niebinarność w „Gwiezdnych Wojnach”'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/czas-sie-obnosic'
+            headline: 'Nadszedł czas się obnosić!'
+            extra: '– przemówienie Sybilli z Wrocławskiego Marszu Równości'
         -
             icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
