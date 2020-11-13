@@ -13,10 +13,12 @@
             try {
                 const content = (await import(`../locale/pl/blog/${route.params.slug}.md`)).default;
                 const title = content.match('<h1[^>]*>([^<]+)</h1>')[1];
+                const img = content.match('<img src="([^"]+)"[^>]*>')[1];
 
                 return {
                     content,
                     title,
+                    img,
                 }
             } catch {
                 return {};
@@ -25,6 +27,7 @@
         head() {
             return head({
                 title: this.title,
+                banner: this.img,
             });
         },
     };
