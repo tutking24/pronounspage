@@ -61,6 +61,11 @@ links:
             icon: 'book-open'
             url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
             headline: 'Academic papers on neopronouns'
+        -
+            icon: 'newspaper'
+            url: 'https://www.nytimes.com/2020/01/21/books/review/whats-your-pronoun-dennis-baron.html'
+            headline: 'English’s Pronoun Problem Is Centuries Old'
+            extra: '– The New York Times'
 
     media: []
     socials: []
