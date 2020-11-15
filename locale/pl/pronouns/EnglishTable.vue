@@ -47,9 +47,9 @@
 </template>
 
 <script>
-    import { pronouns } from "../../src/data";
-    import { getPronoun } from "../../src/buildPronoun";
-    import { buildDict } from "../../src/helpers";
+    import { pronouns } from "../../../src/data";
+    import { getPronoun } from "../../../src/buildPronoun";
+    import { buildDict } from "../../../src/helpers";
 
     export default {
         props: {
