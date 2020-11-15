@@ -18,19 +18,19 @@
                         <small>{{description}}</small>
                     </nuxt-link>
                 </th>
-                <td v-if="pronouns[pronoun].plural">
+                <td v-if="pronouns[pronoun].plural[0]">
                     Dosta<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}śmy</strong>
                 </td>
                 <td v-else>
                     Dostał<strong>{{pronouns[pronoun].morphemes.verb_middle_inter}}m</strong>
                 </td>
-                <td v-if="pronouns[pronoun].plural">
+                <td v-if="pronouns[pronoun].plural[0]">
                     Gra<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}ście</strong>
                 </td>
                 <td v-else>
                     Grał<strong>{{pronouns[pronoun].morphemes.verb_middle_inter}}ś</strong>
                 </td>
-                <td v-if="pronouns[pronoun].plural">
+                <td v-if="pronouns[pronoun].plural[0]">
                     Powiedzieli <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
                     że [<strong>{{pronouns[pronoun].morphemes.pronoun_n}}</strong>]
                     są ładn<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>

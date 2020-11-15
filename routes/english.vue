@@ -11,17 +11,15 @@
 
         <Separator icon="list"/>
 
-        <ul class="list-group mt-5">
-            <li v-for="pronounGroup in config.english.pronounGroups" class="list-group-item">
-                <h3 class="h4">
-                    {{pronounGroup.name}}
-                </h3>
-                <p v-for="p in pronounGroup.description">
-                    <LinkedText :text="p"/>
-                </p>
-                <EnglishTable v-if="pronounGroup.table" :t="pronounGroup.table"/>
-            </li>
-        </ul>
+        <section v-for="pronounGroup in config.english.pronounGroups">
+            <h3 class="h4">
+                {{pronounGroup.name}}
+            </h3>
+            <p v-for="p in pronounGroup.description">
+                <LinkedText :text="p"/>
+            </p>
+            <EnglishTable v-if="pronounGroup.table" :t="pronounGroup.table"/>
+        </section>
     </div>
 </template>
 

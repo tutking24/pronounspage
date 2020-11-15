@@ -153,39 +153,97 @@ people:
     route: 'znane'
 
 english:
-    enabled: false
+    enabled: true
     route: 'english'
     pronounGroups:
         -
             name: 'Normative forms'
             description:
-                - 'Wiele osób niebinarnych, ze względu na ograniczenia polszczyzny lub zwyczajnie dlatego, że tak im bardziej pasuje, decyduje się zwyczajnie używać form „on” lub „ona” – czy to zgodnie z ich płcią przypisaną przy urodzeniu, czy przeciwnie. Nie ujmuje to im niebinarności! Zaimki ≠ płeć.'
+                - >
+                    Because of the limitations of Polish grammar, or simply because they just prefer it that way,
+                    many nonbinary people decides to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
+                    – either the same as their gender assigned at birth or the opposite.
+                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
             table: {on: 'Masculine', ona: 'Feminine'}
         -
             name: 'Neutrative forms'
             description:
-                - 'Ze względu na użycie już istniejącego w polszczyźnie rodzaju nijakiego jest to jedna z najczęściej używanych oraz łatwych do zrozumienia opcji. Formy takie jak „zrobiłom” czy „poszłoś”, choć poprawne gramatycznie, dopiero od niedawna są szerzej używane, i dla wielu brzmią dehumanizująco (póki nie zostaną znormalizowane). W odmianie wiele form nijakich jest tożsamych z męskimi, dlatego niektóre osoby wolą używać zmodyfikowanych wariantów wykorzystujących inne zaimki przy zachowaniu nijakiej koniugacji czasowników.'
+                - >
+                    Polish has three grammatical genders: masculine, feminine and neuter.
+                    Why don't enbies simply use neuter then?
+                - >
+                    The thing is, historically this grammatical gender has only been applied
+                    to inanimate objects, pets and kids (in a very limited way).
+                    To apply it for adults sounds dehumanizing for most {https://avris.it/blog/queers-typics=typic} listeners
+                    and using the neuter forms of verbs in the 1st and 2nd person
+                    is so rare that {https://avris.it/blog/queers-typics=typic} listeners (falsely) think that it's incorrect.
+                    Eg. one could say „dziecko zrobił<strong>o</strong>” (=“the kid has done”),
+                    but the kid themselves would use the forms corresponding to their assigned gender:
+                    „zrobił<strong>em</strong>”/„zrobił<strong>am</strong>” (=“I have done”),
+                    but not „zrobił<strong>om</strong>”.
+                - >
+                    In a way, a parallel could be drawn between the Polish neuter forms and the English “it” pronoun.
+                    To call someone an “it” is offensive
+                    – unless it itself wants us to use “it/its” {https://twitter.com/search?q=it%2Fits&f=user=(and many do)}.
+                    The main difference is that English has singular “they”,
+                    while Polish doesn't yet have any normative form that would fit better.
+                    That's why English “it” is niche,
+                    while Polish neuter is one of the most popular choices among nonbinary,
+                    in hopes of normalising the new usage.
+                - >
+                    There's one more issue with neuter, though: it is neutral in nominative (the “who?”),
+                    but in other cases (the “whose?”, “whom?”, etc.) if falls back to being identical to masculine forms.
+                    That's why some enbies mix up multiple forms, for instance using neuter verbs, yet feminine pronouns, etc.
             table: {ono: 'Neutrative', ono/jej: 'Neutrative with female declension'}
         -
             name: 'Dukaisms'
             description:
-                - 'Neologiczne formy stworzone oryginalnie dla powieści fantastycznych. Choć system dukaizmów jest spójny i analogiczny do form normatywnych, to dla nieznaznajomionych brzmi obco. Jest to jedna z najczęściej wybieranych opcji. Niektóre osoby używają też zmodyfikowanych wariantów wykorzystujących inne zaimki w części przypadków przy zachowaniu dukajowskiej koniugacji czasowników.'
-                - 'Formy te zostały stworzone przez {https://pl.wikipedia.org/wiki/Jacek_Dukaj=Jacka Dukaja} do książki {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjna niedoskonałość”}. Używają jej tam istoty post-ludzkie (phoebe), które nie mają określonej płci. Od nazwiska autora te formy gramatyczne są nazywane „dukaizmami”.'
+                - >
+                    Those forms are neologisms, originally created for a science fiction novel
+                    {https://en.wikipedia.org/wiki/Perfect_Imperfection=Perfect Imperfection}
+                    by {https://en.wikipedia.org/wiki/Jacek_Dukaj=Jacek Dukaj} (hence their name).
+                    It's a brand new grammatical gender used by post-human beings (phoebe) that don't have a specified gender.
+                - >
+                    It's a consistent and relatively complete system, but for people who hear it for the first time,
+                    it might sound alien and “incorrect”.
+                    It's one of the most popular choices among nonbinary folks.
             table: {onu: ''}
         -
             name: 'Plural forms'
             description:
-                - 'Normatywne formy mnogie mogą być używane do opisu pojedyńczej osoby, w tym jako dosłowne tłumaczenie angielskiego „they/them”. Są poprawne i bez tworzenia neogramatyki, a ich zamysł jest łatwy do zrozumienia dla osób znających angielski odpowiednik, aczkolwiek dla wielu jest to dezorientujące. Używanie ich wciąż wymaga wyboru między zgenderyzowanymi wersjami („oni” lub „one”). Nienormatywne formy mnogie mogą służyć nie tylko do opisu pojedyńczych osób, ale również grup mieszanych lub o nieznanej płci.'
+                - >
+                    Using plural forms to describe a single person is basically a loan translation
+                    of the English {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=“singular they”},
+                    but it does have roots in Polish {https://pl.wikipedia.org/wiki/Per_wy=historical and regional honorifics} as well.
+                    Keep in mind, though, that Polish speakers aren't yet too used to the idea of referring to one person in plural forms,
+                    so it might lead to misunderstandings.
+                - >
+                    The bad news is that there's two grammatical genders in plural:
+                    „{/oni=oni}” for male and mixed-gender groups, and „{/one=one}” for female groups
+                    (to oversimplify a lot).
+                    Still, whichever forms is chosen by a person, the plurality itself already points to them being nonbinary.
             table: {oni: 'Male & mixed plurals', one: 'Female plurals'}
         -
             name: 'Placeholder forms'
             description:
-                - 'Formy te używają placeholderów / znaków zastępujących w miejscu różnic między wersją męską a żeńską. Są przydatne w piśmie, ale ciężkie lub niemożliwe do wymówienia. Intencja jest łatwa do zrozumienia. Często są też używane w zwrotach do grupy osób lub osoby o nieznanej płci.'
+                - >
+                    Another approach is to take the part of the word that differs between the male and female form,
+                    and to either replace it with a placeholder, or use the placeholder to merge those parts together.
+                    For instance “dear readers” can be translated as „drodzy_gie czytelnicy_czki”,
+                    „drodzy/gie czytelnicy/czki”, „drog* czytelnic*”, etc.
+                - >
+                    The main usage of such forms is to address a group of people or an unspecified person
+                    (“dear reader”), however there are nonbinary people who use similar approach in the first person too.
+                    It's very easy to understand the intent behind using those forms,
+                    even to listeners unfamiliar with the concept of nonbinary.
+                    The main disadvantage is that in most cases they are only usable in writing,
+                    while being hard or impossible to pronounce.
             table: {onæ: '', on/a: '', onx: '', on_: '', on*: '', onø: ''}
         -
             name: 'Interchangeable forms'
             description:
-                - 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i nijakich) i można się do nich zwracać w dowolnej z nich.'
+                - >
+                    Many nonbinary people use more than one form interchangeably and are fine with being called either of them.
 
 
 contact:

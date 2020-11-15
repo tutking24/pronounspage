@@ -24,9 +24,9 @@
                         <T>people.languages.{{locale}}</T>:
                         <ul class="list-inline d-inline">
                             <li v-for="pronoun in pronouns" class="list-inline-item">
-                                <a :href="`${locales[locale].url}/${pronoun.link}`" target="_blank" rel="noopener">
+                                <LocaleLink :link="'/' + pronoun.link" :locale="locale">
                                     <strong>{{pronoun.display}}</strong>
-                                </a>
+                                </LocaleLink>
                             </li>
                         </ul>
                     </li>
