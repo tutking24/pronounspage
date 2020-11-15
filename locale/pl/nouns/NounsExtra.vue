@@ -296,8 +296,8 @@
                     W: 'tenu kosmicznu twórcu',
 
                     M_pl: 'teny kosmiczny twórcy',
-                    D_pl: 'tenych kosmicznenych twórcych',
-                    C_pl: 'tenym kosmicznenym twórcym',
+                    D_pl: 'tenych kosmicznych twórcych',
+                    C_pl: 'tenym kosmicznym twórcym',
                     B_pl: 'teny kosmiczneny twórcy',
                     N_pl: 'tumy kosmicznumy twórcumy',
                     Msc_pl: 'tumych kosmicznumych twórcych',
