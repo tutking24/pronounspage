@@ -95,6 +95,11 @@ links:
             url: 'https://www.nytimes.com/2020/01/21/books/review/whats-your-pronoun-dennis-baron.html'
             headline: 'English’s Pronoun Problem Is Centuries Old'
             extra: '– The New York Times'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
+            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
+            extra: '– Tom Scott'
 
     media: []
     socials: []
