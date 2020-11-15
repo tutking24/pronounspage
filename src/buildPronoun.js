@@ -39,6 +39,10 @@ export const buildPronoun = (pronouns, path) => {
         ? base
         : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null));
 
+    if (!process.env.CONFIG) {
+        return pronoun;
+    }
+
     if (!pronoun && process.env.CONFIG.pronouns.emoji !== false && isEmoji(path)) {
         pronoun = buildPronounFromTemplate(path, process.env.CONFIG.pronouns.emoji);
     }
