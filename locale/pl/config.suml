@@ -170,7 +170,7 @@ english:
             description:
                 - >
                     Because of the limitations of Polish grammar, or simply because they just prefer it that way,
-                    many nonbinary people decides to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
+                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
                     – either the same as their gender assigned at birth or the opposite.
                     That doesn't make them any less nonbinary! Pronouns ≠ gender.
             table: {on: 'Masculine', ona: 'Feminine'}
