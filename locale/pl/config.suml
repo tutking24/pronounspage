@@ -5,8 +5,7 @@ header: true
 pronouns:
     enabled: true
     default: 'on'
-    any:
-        route: 'dowolne'
+    any: 'dowolne'
     plurals: true
     honorifics: true
     multiple:

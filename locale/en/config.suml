@@ -5,8 +5,7 @@ header: true
 pronouns:
     enabled: true
     default: 'he'
-    any:
-        route: 'any'
+    any: 'any'
     plurals: true
     honorifics: false
     multiple:

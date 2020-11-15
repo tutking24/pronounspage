@@ -182,7 +182,7 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
-                        <nuxt-link :to="'/' + config.pronouns.any.route"><T>pronouns.any.header</T></nuxt-link>
+                        <nuxt-link :to="'/' + config.pronouns.any"><T>pronouns.any.header</T></nuxt-link>
                     </p>
                     <p>
                         <T>pronouns.any.description</T>

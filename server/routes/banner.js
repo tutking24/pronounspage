@@ -84,7 +84,7 @@ router.get('/banner/:pronounName*.png', async (req, res) => {
 
     const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
 
-    if (!pronoun && pronounName !== req.config.pronouns.any.route) {
+    if (!pronoun && pronounName !== req.config.pronouns.any) {
         await fallback();
         return res.set('content-type', mime).send(canvas.toBuffer(mime));
     }
@@ -93,7 +93,7 @@ router.get('/banner/:pronounName*.png', async (req, res) => {
     context.font = 'regular 48pt Quicksand'
     context.fillText(translations.pronouns.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 
-    const pronounNameOptions = pronounName === req.config.pronouns.any.route ? [req.config.pronouns.any.route] : pronoun.nameOptions();
+    const pronounNameOptions = pronounName === req.config.pronouns.any ? [req.config.pronouns.any] : pronoun.nameOptions();
     context.font = `bold ${pronounNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
     context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24))
 

@@ -170,7 +170,7 @@ export default {
             }
 
             if (config.pronouns.enabled) {
-                routes.push({ path: '/' + config.pronouns.any.route, component: resolve(__dirname, 'routes/any.vue') });
+                routes.push({ path: '/' + config.pronouns.any, component: resolve(__dirname, 'routes/any.vue') });
             }
 
             routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
