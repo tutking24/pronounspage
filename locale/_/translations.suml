@@ -12,3 +12,6 @@ confirm:
     header: 'Are you sure?'
     yes: 'Yes, I''m sure'
     no: 'No, cancel'
+
+table:
+    scrollUp: 'Scroll to the top'
