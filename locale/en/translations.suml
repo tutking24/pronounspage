@@ -408,6 +408,15 @@ terms:
     lastUpdate: 'Last Updated'
     consent: 'By registering you''re accepting the'
 
+admin:
+    header: 'Admin panel'
+    user:
+        user: 'User'
+        email: 'Email'
+        roles: 'Role'
+        profiles: 'Profiles'
+        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+
 table:
     empty: 'Empty…'
     count: 'Count'
