@@ -143,7 +143,7 @@ export class Pronoun {
     }
 
     clone() {
-        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), this.plural, this.pluralHonorific);
+        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), [...this.plural], [...this.pluralHonorific]);
     }
 
     equals(other) {
