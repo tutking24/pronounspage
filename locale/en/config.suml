@@ -7,6 +7,8 @@ pronouns:
     default: 'he'
     any:
         route: 'any'
+    plurals: true
+    honorifics: false
 
 sources:
     enabled: true

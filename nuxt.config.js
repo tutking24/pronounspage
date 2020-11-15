@@ -100,6 +100,7 @@ export default {
         BASE_URL: process.env.BASE_URL,
         TITLE: title,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
+        CONFIG: config,
         LOCALE: config.locale,
         LOCALES: locales,
         FLAGS: buildDict(function *() {

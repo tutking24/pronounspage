@@ -193,12 +193,15 @@ export class Pronoun {
     }
 
     toArray() {
-        return [
-            ...Object.values(this.morphemes).map(s => escape(s)),
-            this.plural.map(p => p ? 1 : 0).join(''),
-            this.pluralHonorific.map(p => p ? 1 : 0).join(''),
-            escape(this.description),
-        ];
+        const elements = Object.values(this.morphemes).map(s => escape(s));
+        if (process.env.CONFIG.pronouns.plurals) {
+            elements.push(this.plural.map(p => p ? 1 : 0).join(''));
+            if (process.env.CONFIG.pronouns.honorifics) {
+                elements.push(this.pluralHonorific.map(p => p ? 1 : 0).join(''));
+            }
+        }
+        elements.push(escape(this.description));
+        return elements;
     }
 
     toString() {
@@ -206,16 +209,29 @@ export class Pronoun {
     }
 
     static from(data) {
-        if (data.length === MORPHEMES.length + 2) {
+        let extraFields = 1; // description
+
+        if (process.env.CONFIG.pronouns.plurals) {
+            extraFields += 1;
+            if (![0, 1].includes(parseInt(data[MORPHEMES.length]))) {
+                return null;
+            }
+            if (process.env.CONFIG.pronouns.honorifics) {
+                extraFields += 1;
+                if (![0, 1].includes(parseInt(data[MORPHEMES.length + 1]))) {
+                    return null;
+                }
+            }
+        }
+
+        if (data.length === MORPHEMES.length + extraFields - 1) {
             data.push('');
         }
 
-        if (data.length !== MORPHEMES.length + 3
+        if (data.length !== MORPHEMES.length + extraFields
             || data[0].length === 0
             || data[data.length - 1].length > 48
-            || ![0, 1].includes(parseInt(data[MORPHEMES.length]))
-            || ![0, 1].includes(parseInt(data[MORPHEMES.length + 1]))
-            || data.slice(1, data.length - 3).filter(s => s.length > 12).length
+            || data.slice(1, data.length - extraFields).filter(s => s.length > 12).length
         ) {
             return null;
         }

@@ -7,6 +7,8 @@ pronouns:
     default: 'on'
     any:
         route: 'dowolne'
+    plurals: true
+    honorifics: true
 
 sources:
     enabled: true
