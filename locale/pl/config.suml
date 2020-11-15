@@ -9,6 +9,13 @@ pronouns:
         route: 'dowolne'
     plurals: true
     honorifics: true
+    multiple:
+        name: 'Formy wymienne'
+        description: 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i nijakich) i można się do nich zwracać w dowolnej z nich.'
+        examples: ['on&ona', 'on&ono', 'ona&ono', 'on&onu', 'ona&onu', 'ono/jego&ono/jej']
+    emoji: false
+    null: false
+    others: 'Inne formy'
 
 sources:
     enabled: true

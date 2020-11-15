@@ -1,6 +1,6 @@
 import { Pronoun } from "./classes";
 import Compressor from "./compressor";
-import { buildDict } from "./helpers";
+import {buildDict, isEmoji} from "./helpers";
 import MORPHEMES from '../data/pronouns/morphemes';
 
 export const addAliasesToPronouns = (pronouns) => {
@@ -35,9 +35,19 @@ export const buildPronoun = (pronouns, path) => {
         }
     }
 
-    return pronounStr.length === 1
+    let pronoun = pronounStr.length === 1
         ? base
         : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null));
+
+    if (!pronoun && process.env.CONFIG.pronouns.emoji !== false && isEmoji(path)) {
+        pronoun = buildPronounFromTemplate(path, process.env.CONFIG.pronouns.emoji);
+    }
+
+    if (!pronoun && process.env.CONFIG.pronouns.null !== false && path.startsWith(':') && path.length < 12) {
+        pronoun = buildPronounFromTemplate(path.substring(1), process.env.CONFIG.pronouns.null);
+    }
+
+    return pronoun;
 }
 
 export const parsePronouns = (pronounsRaw) => {
@@ -65,4 +75,24 @@ export const parsePronouns = (pronounsRaw) => {
             ];
         }
     });
+}
+
+export const buildPronounFromTemplate = (key, template) => {
+    return new Pronoun(
+        key,
+        template.description,
+        template.normative || false,
+        buildDict(function*(morphemes) {
+            for (let k in morphemes) {
+                if (morphemes.hasOwnProperty(k)) {
+                    yield [k, morphemes[k].replace(/#/g, key)];
+                }
+            }
+        }, template.morphemes),
+        template.plural || false,
+        template.pluralHonorific || false,
+        template.sources || [],
+        template.aliases || [],
+        template.history || null,
+    )
 }

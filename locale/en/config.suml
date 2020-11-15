@@ -9,6 +9,33 @@ pronouns:
         route: 'any'
     plurals: true
     honorifics: false
+    multiple:
+        name: 'Interchangeable forms'
+        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        examples: ['he&she', 'he&they', 'she&they']
+    null:
+        description: 'No pronouns / null pronouns / pronounless'
+        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
+        morphemes:
+            pronoun_subject: '#'
+            pronoun_object: '#'
+            possessive_determiner: '#''s'
+            possessive_pronoun: '#''s'
+            reflexive: '#self'
+        examples: [':Andrea', ':S']
+        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
+    emoji:
+        description: 'Emojiself pronouns'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        morphemes:
+            pronoun_subject: '#'
+            pronoun_object: '#'
+            possessive_determiner: '#''s'
+            possessive_pronoun: '#''s'
+            reflexive: '#self'
+        examples: ['💫', '💙']
+        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+    others: 'Other pronouns'
 
 sources:
     enabled: true

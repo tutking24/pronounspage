@@ -28,23 +28,19 @@
                     </p>
                     <div class="small my-1" v-if="group.description">
                         <Icon v="info-circle"/>
-                        <em v-html="group.description"></em>
+                        <LinkedText :text="group.description"/>
                     </div>
-                    <ul class="list-unstyled">
-                        <li v-for="pronoun in groupPronouns" :key="pronoun.canonicalName">
-                            <nuxt-link v-if="typeof pronoun === 'string'" :to="'/' + pronoun">
-                                <strong>{{pronoun.replace(/&/g, ' ' + $t('pronouns.or') + ' ')}}</strong>
-                            </nuxt-link>
-                            <nuxt-link v-else :to="addSlash('/' + pronoun.canonicalName)">
-                                <strong>{{pronoun.name(glue)}}</strong>
-                                –
-                                <small>{{pronoun.description}}</small>
-                            </nuxt-link>
-                            <NormativeBadge v-if="pronoun.normative"/>
-                        </li>
-                    </ul>
+                    <SimplePronounList :pronouns="groupPronouns"/>
                 </li>
-                <li class="list-group-item">
+                <li v-if="config.pronouns.multiple !== false" class="list-group-item">
+                    <p class="h5">
+                        {{ config.pronouns.multiple.name }}
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.multiple.description">
+                        <Icon v="info-circle"/>
+                        <em v-html="config.pronouns.multiple.description"></em>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.multiple.examples" class="mb-3"/>
                     <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary btn-block">
                         <Icon v="sliders-h-square"/>
                         <T>pronouns.alt.button</T>
@@ -71,6 +67,32 @@
                             <LinkInput :link="linkMultiple"/>
                         </div>
                     </div>
+                </li>
+                <li v-if="config.pronouns.null !== false" class="list-group-item">
+                    <p class="h5">
+                        {{ config.pronouns.null.description }}
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.null.history">
+                        <Icon v="info-circle"/>
+                        <LinkedText :text="config.pronouns.null.history"/>
+                    </div>
+                    <div class="small my-1">
+                        <LinkedText :text="config.pronouns.null.template"/>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.null.examples" class="mb-3"/>
+                </li>
+                <li v-if="config.pronouns.emoji !== false" class="list-group-item">
+                    <p class="h5">
+                        {{ config.pronouns.emoji.description }}
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.emoji.history">
+                        <Icon v="info-circle"/>
+                        <LinkedText :text="config.pronouns.emoji.history"/>
+                    </div>
+                    <div class="small my-1">
+                        <LinkedText :text="config.pronouns.emoji.template"/>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.emoji.examples" class="mb-3"/>
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
@@ -183,7 +205,6 @@
     import { examples, pronouns, getSources, pronounLibrary } from "~/src/data";
     import { ExamplePart } from "~/src/classes";
     import Compressor from "../src/compressor";
-    import { getPronoun } from "../src/buildPronoun";
     import MORPHEMES from '../data/pronouns/morphemes';
 
     export default {
@@ -191,7 +212,6 @@
             return {
                 examples,
                 pronouns,
-                getPronoun,
                 pronounLibrary,
 
                 selectedPronoun: pronouns[this.config.pronouns.default].clone(),

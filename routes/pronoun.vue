@@ -108,8 +108,8 @@
 
 <script>
     import { examples, pronouns, getSources, pronounLibrary } from "~/src/data";
-    import { buildPronoun } from "../src/buildPronoun";
-    import { head } from "../src/helpers";
+    import {buildPronoun} from "../src/buildPronoun";
+    import {head} from "../src/helpers";
     import GrammarTables from "../data/pronouns/GrammarTables";
     import LinkedText from "../components/LinkedText";
 

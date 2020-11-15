@@ -130,7 +130,9 @@ export class Pronoun {
     nameOptions() {
         const options = new Set();
         const optionsN = this.morphemes[MORPHEMES[0]].split('&');
-        const optionsG = this.morphemes[MORPHEMES[1]].split('&');
+        const optionsG = this.morphemes[MORPHEMES[1]] === this.morphemes[MORPHEMES[0]]
+            ? this.morphemes[MORPHEMES[2]].split('&')
+            : this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
             options.add(optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1]);
         }
@@ -287,7 +289,7 @@ export class PronounLibrary {
         }
 
         yield [
-            new PronounGroup('Inne formy', pronounsLeft),
+            new PronounGroup(process.env.CONFIG.pronouns.others, pronounsLeft),
             buildList(function* () {
                 for (let t of pronounsLeft) {
                     if (!filter || filter(that.pronouns[t])) {
