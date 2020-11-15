@@ -15,6 +15,8 @@ app.use(cookieParser());
 app.use(session({
     secret: process.env.SECRET,
     cookie: {},
+    resave: false,
+    saveUninitialized: false,
 }));
 
 app.use(async function (req, res, next) {
