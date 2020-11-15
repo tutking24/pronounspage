@@ -133,12 +133,9 @@
                                 </li>
                             </ul>
                             <ul class="list-plural">
-                                <li><Icon v="question-square"/></li>
-                                <!--
                                 <li v-for="w in noun.neutrPl">
                                     <Declension :word="w" plural :singularOptions="noun.neutr" :template="dukajDeclension"/>
                                 </li>
-                                -->
                             </ul>
                         </td>
                     </tr>
@@ -159,8 +156,7 @@
                     </div>
                     <div class="p-3">
                         <h5>⁖ <T>nouns.plural</T></h5>
-                        <Icon v="question-square"/>
-                        <!-- <Declension word="" :template="dukajExtendedDeclension" open plural/> -->
+                        <Declension word="" :template="dukajExtendedDeclension" open plural/>
                     </div>
                 </div>
             </div>
@@ -288,7 +284,7 @@
                 ],
                 dukajDeclension: new NounDeclension({
                     M: 'u', D: 'u', C: 'u', B: 'u', N: 'um', Msc: 'um', W: 'u',
-                    M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'y', N_pl: 'ami', Msc_pl: 'ach', W_pl: 'y',
+                    M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'y', N_pl: 'umy', Msc_pl: 'ych', W_pl: 'y',
                 }),
                 dukajExtendedDeclension: new NounDeclension({
                     M: 'tenu kosmicznu twórcu',
@@ -299,13 +295,13 @@
                     Msc: 'tum kosmicznum twórcum',
                     W: 'tenu kosmicznu twórcu',
 
-                    M_pl: '',
-                    D_pl: '',
-                    C_pl: '',
-                    B_pl: '',
-                    N_pl: '',
-                    Msc_pl: '',
-                    W_pl: '',
+                    M_pl: 'teny kosmiczny twórcy',
+                    D_pl: 'tenych kosmicznych twórcych',
+                    C_pl: 'tenym kosmicznym twórcym',
+                    B_pl: 'teny kosmiczneny twórcy',
+                    N_pl: 'tumy kosmicznumy twórcumy',
+                    Msc_pl: 'tumych kosmicznumych twórcych',
+                    W_pl: 'teny kosmiczny twórcy',
                 }),
                 neuterExtendedDeclension: new NounDeclension({
                     M: 'to kosmiczne twórcze',
