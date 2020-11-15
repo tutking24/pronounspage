@@ -249,10 +249,10 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['pan', 'pani', 'państwo', 'pań', 'panu']
-        - ['osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska']
+        - ['maskulatywy', 'feminatywy', 'neutratywy', 'dukatywy', 'osobatywy']
+        - ['pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
         - ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
-        - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie']
+        - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
 
 redirects:
     - { from: '^/neutratywy', to: '/rzeczowniki' }
