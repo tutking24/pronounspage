@@ -23,7 +23,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'rzeczowniki'
+    route: 'słownik'
     collapsable: true
     plurals: true
     declension: true
@@ -321,7 +321,9 @@ profile:
         - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
 
 redirects:
-    - { from: '^/neutratywy', to: '/rzeczowniki' }
+    - { from: '^/neutratywy', to: '/słownik' }
+    - { from: '^/rzeczowniki', to: '/słownik' }
+    - { from: '^/slownik', to: '/słownik' }
     - { from: '^/literatura', to: '/korpus' }
 
 api:

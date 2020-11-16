@@ -1,20 +1,5 @@
 <template>
     <div>
-        <div class="btn-group btn-block">
-            <a :href="'#' + $t('nouns.neuterNouns.id')" class="btn btn-outline-primary">
-                <Icon v="atom-alt"/>
-                <T>nouns.neuterNouns.header</T>
-            </a>
-            <a :href="'#' + $t('nouns.dukajNouns.id')" class="btn btn-outline-primary">
-                <Icon v="atom-alt"/>
-                <T>nouns.dukajNouns.header</T>
-            </a>
-            <a :href="'#' + $t('nouns.personNouns.id')" class="btn btn-outline-primary">
-                <Icon v="atom-alt"/>
-                <T>nouns.personNouns.header</T>
-            </a>
-        </div>
-
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.neuterNouns.id')">
@@ -22,6 +7,8 @@
         </h3>
 
         <T>nouns.neuterNouns.info</T>
+
+        <slot></slot>
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
@@ -75,8 +62,6 @@
                 </div>
             </div>
         </details>
-
-        <slot></slot>
 
         <Separator icon="atom-alt"/>
 

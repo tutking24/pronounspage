@@ -43,7 +43,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'nouns'
+    route: 'dictionary'
     collapsable: false
     plurals: true
     declension: false

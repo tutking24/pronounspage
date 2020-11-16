@@ -2,8 +2,10 @@
     <div>
         <h2>
             <Icon v="atom-alt"/>
-            <T>nouns.headerLong</T>
+            <T>nouns.headerLonger</T>
         </h2>
+
+        <NounsNav/>
 
         <section>
             <T>nouns.intro</T>
@@ -30,10 +32,11 @@
 
 <script>
     import { head } from "../src/helpers";
+    import NounsNav from "../data/nouns/NounsNav.vue";
     import NounsExtra from "../data/nouns/NounsExtra.vue";
 
     export default {
-        components: { NounsExtra },
+        components: { NounsNav, NounsExtra },
         mounted() {
             if (process.client) {
                 if (window.location.hash) {
@@ -56,7 +59,7 @@
         },
         head() {
             return head({
-                title: this.$t('nouns.headerLong'),
+                title: this.$t('nouns.headerLonger'),
                 description: this.$t('nouns.description'),
                 banner: this.config.locale === 'pl' ? 'bannerNouns.png' : undefined,
             });

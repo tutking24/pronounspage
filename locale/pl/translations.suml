@@ -103,8 +103,9 @@ sources:
         moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
 
 nouns:
-    header: 'Rzeczowniki'
-    headerLong: 'Neutralne i niebinarne rzeczowniki'
+    header: 'Słownik'
+    headerLong: 'Słownik: neutralne rzeczowniki'
+    headerLonger: 'Neutralne i niebinarne rzeczowniki'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
         - >

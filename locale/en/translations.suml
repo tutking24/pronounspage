@@ -91,8 +91,9 @@ sources:
         moderation: 'Submissions will have to get approved before getting published.'
 
 nouns:
-    header: 'Nouns'
-    headerLong: 'Dictionary of gender neutral language'
+    header: 'Dictionary'
+    headerLong: 'Dictionary of neutral nouns'
+    headerLonger: 'Dictionary of gender neutral language'
     description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
     intro:
         - >
