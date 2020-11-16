@@ -1,6 +1,6 @@
 <template>
     <NotFound v-if="!$admin()"/>
-    <div v-else class="container">
+    <div v-else>
         <h2>
             <Icon v="user-cog"/>
             <T>admin.header</T>

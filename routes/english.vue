@@ -12,7 +12,7 @@
         <Separator icon="list"/>
 
         <section v-for="pronounGroup in config.english.pronounGroups">
-            <h3 class="h4">
+            <h3>
                 {{pronounGroup.name}}
             </h3>
             <p v-for="p in pronounGroup.description">

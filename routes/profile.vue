@@ -1,5 +1,5 @@
 <template>
-    <div v-if="profile" class="container">
+    <div v-if="profile">
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="profile"/>
@@ -88,7 +88,7 @@
             </div>
         </section>
     </div>
-    <div v-else-if="Object.keys(profiles).length" class="container">
+    <div v-else-if="Object.keys(profiles).length">
         <h2 class="text-nowrap mb-3">
             <Avatar :user="profiles[Object.keys(profiles)[0]]"/>
             @{{username}}
