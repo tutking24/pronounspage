@@ -62,7 +62,7 @@
                     icon: 'home',
                     text: this.$t('home.header'),
                     textLong: this.$t('home.headerLong'),
-                    extra: ['all', this.config.pronouns.any],
+                    extra: ['/' + this.config.pronouns.any],
                 });
 
                 if (this.config.sources.enabled) {
@@ -142,7 +142,7 @@
                         icon: 'user',
                         text: this.user ? '@' + this.user.username : this.$t('user.header'),
                         textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
-                        extra: ['/' + this.config.user.profileEditorRoute, this.$user() ? '/@' + this.$user().username : null],
+                        extra: ['/editor', this.$user() ? '/@' + this.$user().username : null],
                     });
                 }
 
@@ -151,9 +151,9 @@
         },
         methods: {
             isActiveRoute(link) {
-                return this.$route.path === link.link
+                return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
-                    || (link.extra || []).includes(this.$route.path);
+                    || (link.extra || []).includes(decodeURIComponent(this.$route.path));
             },
         },
     }
