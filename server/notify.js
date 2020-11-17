@@ -5,15 +5,20 @@ const mailer = require('../src/mailer');
 async function notify() {
     const db = await dbConnection();
 
-    const awaitingModeration = (await db.all(`SELECT locale, count(*) as c FROM nouns WHERE approved = 0 GROUP BY locale`));
+    const awaitingModeration = [
+        ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 GROUP BY locale`)),
+    ];
     if (!awaitingModeration.length) {
         console.log('No entries awaiting moderation');
         return;
     }
 
     const awaitingModerationGrouped = {}
+    let count = 0;
     for (let m of awaitingModeration) {
-        awaitingModerationGrouped[m.locale] = m.c;
+        awaitingModerationGrouped[m.type + '-' + m.locale] = m.c;
+        count += m.c;
     }
 
     console.log('Entries awaiting moderation: ', awaitingModerationGrouped);
@@ -24,8 +29,8 @@ async function notify() {
         console.log('Sending email to ' + email)
         mailer(
             email,
-            '[Pronouns] Dictionary entries awaiting moderation: ' + JSON.stringify(awaitingModerationGrouped),
-            JSON.stringify(awaitingModerationGrouped)
+            '[Pronouns] Dictionary entries awaiting moderation: ' + count,
+            'Dictionary entries awaiting moderation: \n' + JSON.stringify(awaitingModerationGrouped, null, 4),
         );
     }
 }
