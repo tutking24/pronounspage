@@ -1,16 +1,31 @@
 <template>
-    <section class="btn-group btn-block mb-2">
-        <a :href="'#' + $t('nouns.neuterNouns.id')" class="btn btn-outline-primary">
-            <Icon v="atom-alt"/>
-            <T>nouns.neuterNouns.header</T>
-        </a>
-        <a :href="'#' + $t('nouns.dukajNouns.id')" class="btn btn-outline-primary">
-            <Icon v="atom-alt"/>
-            <T>nouns.dukajNouns.header</T>
-        </a>
-        <a :href="'#' + $t('nouns.personNouns.id')" class="btn btn-outline-primary">
-            <Icon v="atom-alt"/>
-            <T>nouns.personNouns.header</T>
-        </a>
+    <section>
+        <div class="d-none d-md-inline-flex btn-group btn-block mb-2">
+            <a v-for="(icon, name) in links" :href="'#' + $t(`nouns.${name}.id`)" class="btn btn-outline-primary">
+                <Icon :v="icon"/>
+                <T>nouns.{{name}}.header</T>
+            </a>
+        </div>
+        <div class="d-block d-md-none btn-group-vertical btn-block mb-2">
+            <a v-for="(icon, name) in links" :href="'#' + $t(`nouns.${name}.id`)" class="btn btn-outline-primary">
+                <Icon :v="icon"/>
+                <T>nouns.{{name}}.header</T>
+            </a>
+        </div>
     </section>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                links: {
+                    neuterNouns: 'neuter',
+                    dukajNouns: 'genderless',
+                    personNouns: 'user-friends',
+                    inclusive: 'book-heart',
+                }
+            };
+        },
+    }
+</script>

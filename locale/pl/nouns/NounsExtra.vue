@@ -3,6 +3,7 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.neuterNouns.id')">
+            <Icon v="neuter"/>
             <T>nouns.neuterNouns.header</T>
         </h3>
 
@@ -66,6 +67,7 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.dukajNouns.id')">
+            <Icon v="genderless"/>
             <T>nouns.dukajNouns.header</T>
         </h3>
 
@@ -150,6 +152,7 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.personNouns.id')">
+            <Icon v="user-friends"/>
             <T>nouns.personNouns.header</T>
             <small><NormativeBadge/></small>
         </h3>
@@ -207,6 +210,27 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </details>
+
+        <Separator icon="atom-alt"/>
+
+        <h3 :id="$t('nouns.inclusive.id')">
+            <Icon v="book-heart"/>
+            <T>nouns.inclusive.headerLong</T>
+        </h3>
+
+        <T>nouns.inclusive.info</T>
+
+        <details class="border mb-3">
+            <summary class="bg-light p-3" @click="$refs.inclusivedictionary.loadEntries()">
+                <h4 class="h5 d-inline">
+                    <Icon v="book-heart"/>
+                    <T>nouns.inclusive.headerLong</T>
+                </h4>
+            </summary>
+            <div class="border-top">
+                <InclusiveDictionary ref="inclusivedictionary"/>
             </div>
         </details>
     </div>

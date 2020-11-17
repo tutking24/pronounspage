@@ -39,6 +39,7 @@ app.use(require('./routes/admin').default);
 app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
 app.use(require('./routes/nouns').default);
+app.use(require('./routes/inclusive').default);
 
 export default {
     path: '/api',

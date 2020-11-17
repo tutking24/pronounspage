@@ -4,15 +4,15 @@ import {ulid} from "ulid";
 import {isTroll} from "../../src/helpers";
 
 const approve = async (db, id) => {
-    const { base_id } = await db.get(SQL`SELECT base_id FROM nouns WHERE id=${id}`);
+    const { base_id } = await db.get(SQL`SELECT base_id FROM inclusive WHERE id=${id}`);
     if (base_id) {
         await db.get(SQL`
-            DELETE FROM nouns
+            DELETE FROM inclusive
             WHERE id = ${base_id}
         `);
     }
     await db.get(SQL`
-        UPDATE nouns
+        UPDATE inclusive
         SET approved = 1, base_id = NULL
         WHERE id = ${id}
     `);
@@ -20,38 +20,37 @@ const approve = async (db, id) => {
 
 const router = Router();
 
-router.get('/nouns', async (req, res) => {
+router.get('/inclusive', async (req, res) => {
     return res.json(await req.db.all(SQL`
-        SELECT * FROM nouns
+        SELECT * FROM inclusive
         WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
-        ORDER BY approved, masc
+        ORDER BY approved, insteadOf
     `));
 });
 
-router.get('/nouns/search/:term', async (req, res) => {
+router.get('/inclusive/search/:term', async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await req.db.all(SQL`
-        SELECT * FROM nouns
+        SELECT * FROM inclusive
         WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
-        AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
-        ORDER BY approved, masc
+        AND (insteadOf like ${term} OR say like ${term})
+        ORDER BY approved, insteadOf
     `));
 });
 
-router.post('/nouns/submit', async (req, res) => {
+router.post('/inclusive/submit', async (req, res) => {
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id, locale)
+        INSERT INTO inclusive (id, insteadOf, say, because, approved, base_id, locale)
         VALUES (
             ${id},
-            ${req.body.masc.join('|')}, ${req.body.fem.join('|')}, ${req.body.neutr.join('|')},
-            ${req.body.mascPl.join('|')}, ${req.body.femPl.join('|')}, ${req.body.neutrPl.join('|')},
+            ${req.body.insteadOf.join('|')}, ${req.body.say.join('|')}, ${req.body.because},
             0, ${req.body.base}, ${req.config.locale}
         )
     `);
@@ -63,13 +62,13 @@ router.post('/nouns/submit', async (req, res) => {
     return res.json('ok');
 });
 
-router.post('/nouns/hide/:id', async (req, res) => {
+router.post('/inclusive/hide/:id', async (req, res) => {
     if (!req.admin) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`
-        UPDATE nouns
+        UPDATE inclusive
         SET approved = 0
         WHERE id = ${req.params.id}
     `);
@@ -77,7 +76,7 @@ router.post('/nouns/hide/:id', async (req, res) => {
     return res.json('ok');
 });
 
-router.post('/nouns/approve/:id', async (req, res) => {
+router.post('/inclusive/approve/:id', async (req, res) => {
     if (!req.admin) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -87,13 +86,13 @@ router.post('/nouns/approve/:id', async (req, res) => {
     return res.json('ok');
 });
 
-router.post('/nouns/remove/:id', async (req, res) => {
+router.post('/inclusive/remove/:id', async (req, res) => {
     if (!req.admin) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`
-        DELETE FROM nouns
+        DELETE FROM inclusive
         WHERE id = ${req.params.id}
     `);
 
