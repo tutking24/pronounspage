@@ -134,6 +134,10 @@ links:
             icon: 'play-circle'
             url: 'https://www.facebook.com/queerowymaj/videos/vb.192608494083516/3605197302863422/'
             headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
+            headline: 'Niebinarne postaci w uniwersum "Gwiezdnych wojen". Jak unika się neutratywów w polskim tłumaczeniu? – <strong>Queer.pl</strong> na podstawie naszego artykułu'
     socials:
         #-
         #    icon: 'twitter'
