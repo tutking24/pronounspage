@@ -82,6 +82,11 @@ links:
             url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
             headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
         -
+            icon: 'book-open'
+            url: 'https://apastyle.apa.org/style-grammar-guidelines/grammar/singular-they'
+            headline: 'Style and grammar guidelines regarding singular “they”'
+            extra: '– American Psychological Association'
+        -
             icon: 'wikipedia-w'
             iconSet: 'b'
             url: 'https://lgbta.wikia.org/wiki/Neopronouns'
