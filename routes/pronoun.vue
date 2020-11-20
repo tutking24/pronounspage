@@ -98,7 +98,7 @@
         <section class="mb-0">
             <h2 class="h4">
                 <Icon v="info-circle"/>
-                <T>home.whatisit</T>:
+                <T>home.whatisit</T>
             </h2>
             <T>home.about</T>
             <Homepage align="center"/>
