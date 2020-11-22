@@ -152,10 +152,9 @@ support:
     enabled: true
     links:
         -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/AndreAvris'
-            headline: 'PayPal'
+            icon: 'coffee'
+            url: 'https://ko-fi.com/radajezykaneutralnego'
+            headline: 'Ko-Fi'
 
 user:
     enabled: true
