@@ -72,7 +72,7 @@ links:
             headline: 'Niebinarność w „Gwiezdnych Wojnach”'
         -
             icon: 'comment-alt-edit'
-            url: '/blog/czas-sie-obnosic'
+            url: '/blog/czas-się-obnosić'
             headline: 'Nadszedł czas się obnosić!'
             extra: '– przemówienie Sybilli z Wrocławskiego Marszu Równości'
         -
@@ -267,6 +267,9 @@ contact:
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
     authors:
+        -
+            name: 'Rada Języka Neutralnego'
+            link: '/blog/rada-języka-neutralnego'
         -
             name: 'Andrea'
             profile: 'andrea'
