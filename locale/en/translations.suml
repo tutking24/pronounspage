@@ -304,7 +304,7 @@ support:
     header: 'Support'
     description: >
         If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the link below (please mention „pronouns.page” in the transaction description):
+        you can use the link below:
 
 user:
     header: 'Account'
