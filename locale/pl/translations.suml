@@ -752,7 +752,7 @@ profile:
     opinion:
         yes: 'Tak'
         jokingly: 'Żartobliwie'
-        meh: 'Ujdzie'
+        meh: 'Spoko'
         no: 'Nie'
 
 share: 'Udostępnij'
