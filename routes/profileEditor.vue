@@ -14,6 +14,10 @@
             </div>
         </div>
 
+        <section>
+            <OpinionLegend/>
+        </section>
+
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
             <div class="form-group">
                 <h3 class="h4">
@@ -170,9 +174,6 @@
             };
         },
         methods: {
-            buildPronoun(link) {
-                return buildPronoun(pronouns, link);
-            },
             async save() {
                 this.saving = true;
                 await this.$axios.$post(`/profile/save`, {
@@ -188,7 +189,7 @@
                 this.$router.push(`/@${this.$user().username}`)
             },
             validatePronoun(pronoun) {
-                const link = pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), '');
+                const link = decodeURIComponent(pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), ''));
 
                 return buildPronoun(pronouns, link) ? null : 'profile.pronounsNotFound'
             },

@@ -138,6 +138,10 @@ links:
             icon: 'newspaper'
             url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
             headline: 'Niebinarne postaci w uniwersum "Gwiezdnych wojen". Jak unika się neutratywów w polskim tłumaczeniu? – <strong>Queer.pl</strong> na podstawie naszego artykułu'
+        -
+            icon: 'newspaper'
+            url: 'https://vibez.pl/wydarzenia/osoby-transplciowe-kim-sa-i-jak-sie-do-nich-zwracac-oto-krotki-poradnik-6577363618974496a'
+            headline: 'Osoby transpłciowe - kim są i jak się do nich zwracać? Oto krótki poradnik – <strong>Vibez.pl</strong>'
     socials:
         #-
         #    icon: 'twitter'
@@ -270,6 +274,7 @@ contact:
         -
             name: 'Rada Języka Neutralnego'
             link: '/blog/rada-języka-neutralnego'
+            bold: true
         -
             name: 'Andrea'
             profile: 'andrea'
@@ -300,7 +305,7 @@ contact:
             twitter: 'mykofanes'
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
-                neutratywy: '/rzeczowniki'
+                neutratywy: '/słownik'
                 # imiona: '/imiona'
                 social_media: ~
 

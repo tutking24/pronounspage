@@ -15,7 +15,7 @@ router.get('/admin/users', async (req, res) => {
         SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
-        ORDER BY u.id DESC
+        ORDER BY u.roles ASC, u.id DESC
     `);
 
     const authenticators = await req.db.all(SQL`

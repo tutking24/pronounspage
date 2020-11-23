@@ -12,8 +12,10 @@
         async asyncData({route}) {
             try {
                 const content = (await import(`../locale/pl/blog/${route.params.slug}.md`)).default;
-                const title = content.match('<h1[^>]*>([^<]+)</h1>')[1];
-                const img = content.match('<img src="([^"]+)"[^>]*>')[1];
+                const titleMatch = content.match('<h1[^>]*>([^<]+)</h1>');
+                const title = titleMatch ? titleMatch[1] : null;
+                const imgMatch = content.match('<img src="([^"]+)"[^>]*>');
+                const img = imgMatch ? imgMatch[1] : null;
 
                 return {
                     content,

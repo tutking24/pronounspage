@@ -105,14 +105,27 @@ export default {
         LOCALES: locales,
         FLAGS: buildDict(function *() {
             for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
+                let flagDisplay = flag
+                    .replace(new RegExp('\.png$'), '')
+                    .replace(new RegExp('_', 'g'), '')
+                    .trim();
+
                 if (flag.startsWith('.')) {
                     continue;
                 }
+
+                if (flag.startsWith('-')) {
+                    const tell = '-' + config.locale + '-';
+                    if (flag.startsWith(tell)) {
+                        flagDisplay = flagDisplay.substring(tell.length);
+                    } else {
+                        continue;
+                    }
+                }
+
                 yield [
                     flag.replace(new RegExp('\.png$'), ''),
-                    flag.replace(new RegExp('\.png$'), '')
-                        .replace(new RegExp('_', 'g'), '')
-                        .trim()
+                    flagDisplay,
                 ];
             }
         }),

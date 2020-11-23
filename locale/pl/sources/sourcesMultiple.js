@@ -1,5 +1,5 @@
 export default {
-    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krem', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1'],
+    'on&ona': ['genderneutralizacja', 'niebTlum', 'jurewicz', 'krem', 'krolowaZimy', 'mlotThora', 'statekUmarlych', 'starWarsKoPo', 'luBart1', 'vaki'],
     'ona&onu': ['liniaOporuMix'],
     'ono/jego&ono/jej': ['kazmierczak'],
 };
