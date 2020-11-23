@@ -14,6 +14,10 @@
             </div>
         </div>
 
+        <section>
+            <OpinionLegend/>
+        </section>
+
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
             <div class="form-group">
                 <h3 class="h4">

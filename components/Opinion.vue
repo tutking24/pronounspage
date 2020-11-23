@@ -5,6 +5,11 @@
             <nuxt-link v-if="link" :to="link">{{ word }}</nuxt-link>
             <span v-else>{{ word }}</span>
         </strong>
+        <span v-else-if="opinion === 2">
+            <Icon v="grin-tongue" :aria-label="$t('profile.opinion.jokingly')"/>
+            <nuxt-link v-if="link" :to="link">{{ word }}</nuxt-link>
+            <span v-else>{{ word }}</span>
+        </span>
         <span v-else-if="opinion === 0">
             <Icon v="thumbs-up" :aria-label="$t('profile.opinion.meh')"/>
             <nuxt-link v-if="link" :to="link">{{ word }}</nuxt-link>

@@ -751,7 +751,8 @@ profile:
         save: 'Zapisz wizytówkę'
     opinion:
         yes: 'Tak'
-        meh: 'Meh'
+        jokingly: 'Żartobliwie'
+        meh: 'Ujdzie'
         no: 'Nie'
 
 share: 'Udostępnij'
