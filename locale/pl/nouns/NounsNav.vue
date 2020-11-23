@@ -20,8 +20,8 @@
         data() {
             return {
                 links: {
-                    neuterNouns: 'neuter',
-                    dukajNouns: 'genderless',
+                    neuterNouns: 'deer',
+                    dukajNouns: 'ghost',
                     personNouns: 'user-friends',
                     inclusive: 'book-heart',
                 }

@@ -149,6 +149,9 @@ nouns:
         header: 'Dukatywy'
         label: 'dukatyw'
         id: 'dukatywy'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym duszkiem krzyczącym „-łu”.'
+            caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
         info:
             - >
                 Analogicznie do tzw. {/onu=dukaizmów} („zrobiłum”, „poszłuś”)
@@ -170,6 +173,9 @@ nouns:
         header: 'Neutratywy'
         label: 'neutratyw'
         id: 'neutratywy'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym łosiem trzymającym łom.'
+            caption: 'Ze względu na końcówki „-łom” i „-łoś”, „-ło”, flaga rodzaju nijakiego i neutratywów przedstawia łosia z łomem.'
         info:
             - >
                 Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.

@@ -3,11 +3,19 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.neuterNouns.id')">
-            <Icon v="neuter"/>
+            <Icon v="deer"/>
             <T>nouns.neuterNouns.header</T>
         </h3>
 
-        <T>nouns.neuterNouns.info</T>
+        <div class="d-flex flex-column flex-md-row">
+            <div>
+                <T>nouns.neuterNouns.info</T>
+            </div>
+            <figure>
+                <img src="/img/łoś.jpg" :alt="$t('nouns.neuterNouns.flag.alt')"/>
+                <figcaption><T>nouns.neuterNouns.flag.caption</T></figcaption>
+            </figure>
+        </div>
 
         <slot></slot>
 
@@ -67,11 +75,19 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.dukajNouns.id')">
-            <Icon v="genderless"/>
+            <Icon v="ghost"/>
             <T>nouns.dukajNouns.header</T>
         </h3>
 
-        <T>nouns.dukajNouns.info</T>
+        <div class="d-flex flex-column flex-md-row">
+            <div>
+                <T>nouns.dukajNouns.info</T>
+            </div>
+            <figure>
+                <img src="/img/dukaizmy.png" :alt="$t('nouns.dukajNouns.flag.alt')"/>
+                <figcaption><T>nouns.dukajNouns.flag.caption</T></figcaption>
+            </figure>
+        </div>
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
@@ -425,3 +441,19 @@
         },
     }
 </script>
+
+<style lang="scss">
+    @import "assets/variables";
+
+    figure {
+        width: 100%;
+        max-width: 24rem;
+        padding: $spacer;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            font-size: $small-font-size;
+        }
+    }
+</style>

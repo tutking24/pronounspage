@@ -145,7 +145,7 @@
 </script>
 
 <style lang="scss">
-    @import "assets/style";
+    @import "assets/variables";
 
     @include media-breakpoint-up('md') {
         .w-md-50 {
