@@ -274,6 +274,7 @@ contact:
         -
             name: 'Rada Języka Neutralnego'
             link: '/blog/rada-języka-neutralnego'
+            bold: true
         -
             name: 'Andrea'
             profile: 'andrea'

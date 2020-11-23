@@ -15,7 +15,7 @@
         </section>
 
         <section>
-            <h3>
+            <h3 class="mb-3">
                 <Icon v="users"/>
                 <T>contact.authors</T>
             </h3>
