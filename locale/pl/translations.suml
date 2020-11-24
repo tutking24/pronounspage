@@ -154,18 +154,17 @@ nouns:
             caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
         info:
             - >
-                Analogicznie do tzw. {/onu=dukaizmów} („zrobiłum”, „poszłuś”)
+                Analogicznie do tzw. {/onu=dukaizmów / rodzaju postpłciowego} („zrobiłum”, „poszłuś”)
                 można też tworzyć dukajowe rzeczowniki.
             - >
-                Formy te zostały stworzone przez {https://pl.wikipedia.org/wiki/Jacek_Dukaj=Jacka Dukaja}
-                do książki {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjna niedoskonałość”},
-                gdzie używają jej istoty post-ludzkie (phoebe), które nie mają określonej płci.
+                Sam Dukaj w {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjnej niedoskonałości”}
+                nie tworzył rzeczownikowych odpowiedników rodzaju postpłciowego,
+                lecz używał słów męskich („ambasador”) i męsko brzmiących imion („Maximillian”, „Michał”, „Słowiński”),
+                które odmieniał postpłciowymi lub męskoosobowymi końcówkami.
+                Nie powstrzymuje nas to jednak przed wymyśleniem brakujących form, by system był spójny i kompletny.
             - >
                 Dukatywy pasują gramatycznie do {/onu=dukaizmów}, np. „moju pięknu partneru przyszłu do domu”.
                 Odmiana jest prosta, wg podanego niżej schematu.
-                Niestety, Dukaj nie używa postpłciowych rzeczowników w liczbie mnogiej
-                (poza np. odmienianym męskoosobowo „phoebe'owie”).
-                Brakujące formy zostały wymyślone przez nas.
         extended:
             header: 'Przykład odmiany'
 
