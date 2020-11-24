@@ -189,7 +189,12 @@
                 this.$router.push(`/@${this.$user().username}`)
             },
             validatePronoun(pronoun) {
-                const link = decodeURIComponent(pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), ''));
+                const link = decodeURIComponent(
+                    pronoun
+                        .replace(new RegExp('^' + this.$base), '')
+                        .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
+                        .replace(new RegExp('^/'), '')
+                );
 
                 return buildPronoun(pronouns, link) ? null : 'profile.pronounsNotFound'
             },

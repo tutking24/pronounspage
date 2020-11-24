@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
+import {buildLocaleList} from "../src/helpers";
 
 const app = express()
 
@@ -21,6 +22,7 @@ app.use(session({
 
 app.use(async function (req, res, next) {
     req.config = loadSuml('config');
+    req.locales = buildLocaleList();
     req.rawUser = authenticate(req);
     req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
     req.admin = req.user && req.user.roles === 'admin';

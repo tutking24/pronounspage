@@ -1,17 +1,12 @@
 import { loadSuml } from './server/loader';
 import fs from 'fs';
-import {buildDict} from "./src/helpers";
+import {buildDict, buildLocaleList} from "./src/helpers";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
 
 const locale = config.locale;
-const locales = buildDict(function* () {
-    for (let locale of process.env.LOCALES.split('|')) {
-        const [code, name, url] = locale.split(',');
-        yield [code, {name, url}];
-    }
-});
+const locales = buildLocaleList();
 const title = translations.title;
 const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';

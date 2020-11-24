@@ -145,7 +145,12 @@
                 for (let pronoun in this.profile.pronouns) {
                     if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
 
-                    const link = decodeURIComponent(pronoun.replace(new RegExp('^' + this.$base), '').replace(new RegExp('^/'), ''));
+                    const link = decodeURIComponent(
+                        pronoun
+                            .replace(new RegExp('^' + this.$base), '')
+                            .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
+                            .replace(new RegExp('^/'), '')
+                    );
                     const pronounEntity = buildPronoun(pronouns, link);
 
                     if (pronounEntity) {
