@@ -174,7 +174,7 @@ nouns:
         id: 'neutratywy'
         flag:
             alt: 'Flaga osób niebinarnych z naniesionym łosiem trzymającym łom.'
-            caption: 'Ze względu na końcówki „-łom” i „-łoś”, „-ło”, flaga rodzaju nijakiego i neutratywów przedstawia łosia z łomem.'
+            caption: 'Ze względu na końcówki „-łom”, „-łoś” i „-ło”, flaga rodzaju nijakiego i neutratywów przedstawia łosia z łomem.'
         info:
             - >
                 Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.
