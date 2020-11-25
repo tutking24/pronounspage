@@ -112,6 +112,16 @@ links:
             headline: 'Wideoesej „Mistycyzmu Popkulturowego”'
             extra: 'o tym, jak polscy tłumacze (nie) radzą sobie z formami gramatycznymi w przypadku postaci niebinarnych'
         -
+            icon: 'gamepad-alt'
+            url: 'https://twitter.com/neutratywy/status/1329918251560787968'
+            headline: 'Gra „Bugsnax”'
+            extra: 'w której występuje postać niebinarna używająca {/onu=dukazimów}.'
+        -
+            icon: 'microphone-stand'
+            url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
+            headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
+            extra: '– 6 kolorów gier wideo'
+        -
             icon: 'instagram'
             iconSet: 'b'
             url: 'https://www.instagram.com/inkluzywnamowa/'
