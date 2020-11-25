@@ -73,7 +73,7 @@ router.get('/admin/stats', async (req, res) => {
                 if (pronouns[p] === undefined) {
                     pronouns[p] = 0;
                 }
-                pronouns[p]++;
+                pronouns[p] += pr[pronoun] === 1 ? 1 : 0.5;
             }
         }
 
