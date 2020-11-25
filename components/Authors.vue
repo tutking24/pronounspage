@@ -1,14 +1,10 @@
 <template>
     <ul :class="{'list-unstyled': !expanded}">
-        <li v-for="author in config.contact.authors" :class="['mb-2', author.bold ? 'bold' : '']">
-            <template v-if="author.link">
-                <a :href="author.link" target="_blank" rel="noopener">
-                    {{ author.name }}
-                </a>
-            </template>
-            <template v-else>
+        <li v-for="author in config.contact.authors" class="mb-2">
+            <Icon v-if="!expanded" :v="author.group ? 'users' : 'user'"/>
+            <a :href="author.link" target="_blank" rel="noopener">
                 {{ author.name }}
-            </template>
+            </a>
             <template v-if="author.pronouns">
                 (<nuxt-link :to="author.pronounsLink">{{ author.pronouns }}</nuxt-link>)
                 –
@@ -49,9 +45,3 @@
         },
     }
 </script>
-
-<style lang="scss" scoped>
-    .bold {
-        font-weight: bold;
-    }
-</style>
