@@ -125,7 +125,7 @@ router.get('/nouns/:word.png', async (req, res) => {
     const noun = (await req.db.all(SQL`
         SELECT * FROM nouns
         WHERE locale = ${req.config.locale}
-        AND approved = 1
+        AND approved >= ${req.admin ? 0 : 1}
         AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
         ORDER BY masc
     `)).filter(noun =>

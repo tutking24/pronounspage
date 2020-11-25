@@ -49,19 +49,29 @@
             <template v-slot:row="s"><template v-if="s">
                 <td>
                     <ul class="list-singular">
-                        <li v-for="w in s.el.masc">{{ w }}</li>
+                        <li v-for="w in s.el.masc">
+                            {{ w }}
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
+                        </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
-                        <li v-for="w in s.el.mascPl">{{ w }}</li>
+                        <li v-for="w in s.el.mascPl">
+                            {{ w }}
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
+                        </li>
                     </ul>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].masc">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].masc">
+                                {{ w }}
+                            </li>
                         </ul>
                         <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].mascPl">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].mascPl">
+                                {{ w }}
+                            </li>
                         </ul>
                     </small>
 
@@ -72,19 +82,29 @@
                 </td>
                 <td>
                     <ul class="list-singular">
-                        <li v-for="w in s.el.fem">{{ w }}</li>
+                        <li v-for="w in s.el.fem">
+                            {{ w }}
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
+                        </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
-                        <li v-for="w in s.el.femPl">{{ w }}</li>
+                        <li v-for="w in s.el.femPl">
+                            {{ w }}
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
+                        </li>
                     </ul>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].fem">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].fem">
+                                {{ w }}
+                            </li>
                         </ul>
                         <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].femPl">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].femPl">
+                                {{ w }}
+                            </li>
                         </ul>
                     </small>
                 </td>
@@ -93,12 +113,14 @@
                         <li v-for="w in s.el.neutr">
                             <Declension v-if="config.nouns.declension" :word="w"/>
                             <template v-else>{{w}}</template>
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.neutrPl">
                             <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr"/>
                             <template v-else>{{w}}</template>
+                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
 
@@ -281,6 +303,12 @@
         list-style: none;
         li {
             white-space: nowrap;
+            a:not([href='#']) {
+                display: none;
+            }
+            &:hover a:not([href='#']) {
+                display: inline;
+            }
         }
         >li:before {
             content: "⋅";
@@ -294,6 +322,12 @@
         list-style: none;
         li {
             white-space: nowrap;
+            a:not([href='#']) {
+                display: none;
+            }
+            &:hover a:not([href='#']) {
+                display: inline;
+            }
         }
         >li:before {
             content: "⁖";
