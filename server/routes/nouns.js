@@ -1,6 +1,10 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
+import {createCanvas, loadImage, registerFont} from "canvas";
+import {loadSuml} from "../loader";
+
+const translations = loadSuml('translations');
 
 const isTroll = (body) => {
     return ['cipeusz', 'feminazi', 'bruksela', 'zboczeń'].some(t => body.indexOf(t) > -1);
@@ -101,6 +105,88 @@ router.post('/nouns/remove/:id', async (req, res) => {
     `);
 
     return res.json('ok');
+});
+
+const findBaseForm = (noun, query) => {
+    for (let form of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
+        for (let formPart of noun[form].split('|')) {
+            if (formPart.toLowerCase() === query.toLowerCase()) {
+                return formPart;
+            }
+        }
+    }
+
+    return null;
+}
+
+router.get('/nouns/:word.png', async (req, res) => {
+    const query = req.params.word.toLowerCase();
+    const term = '%' + query + '%';
+    const noun = (await req.db.all(SQL`
+        SELECT * FROM nouns
+        WHERE locale = ${req.config.locale}
+        AND approved = 1
+        AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
+        ORDER BY masc
+    `)).filter(noun =>
+        noun.masc.toLowerCase().split('|').includes(query)
+        || noun.fem.toLowerCase().split('|').includes(query)
+        || noun.neutr.toLowerCase().split('|').includes(query)
+        || noun.mascPl.toLowerCase().split('|').includes(query)
+        || noun.femPl.toLowerCase().split('|').includes(query)
+        || noun.neutrPl.toLowerCase().split('|').includes(query)
+    )[0]
+
+    if (!noun) {
+        return res.status(404).json({error: 'Not found'});
+    }
+
+    const base = findBaseForm(noun, query);
+
+    const width = 1200;
+    const height = 600;
+    const padding = 48;
+    const mime = 'image/png';
+
+    registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', { family: 'Quicksand', weight: 'regular'});
+    registerFont('static/fonts/quicksand-v21-latin-ext_latin-700.ttf', { family: 'Quicksand', weight: 'bold'});
+    registerFont('node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.ttf', { family: 'FontAwesome', weight: 'regular'});
+
+    const canvas = createCanvas(width, height);
+    const context = canvas.getContext('2d');
+
+    context.fillStyle = '#fff';
+    context.fillRect(0, 0, width, height);
+    context.fillStyle = '#000';
+
+    context.font = 'bold 64pt Quicksand';
+    context.fillText(base, width / 2 - context.measureText(base).width / 2, 100);
+
+    for (let [column, key, icon] of [[0, 'masculine', '\uf222'], [1, 'feminine', '\uf221'], [2, 'neuter', '\uf22c']]) {
+        context.font = 'regular 24pt FontAwesome';
+        context.fillText(icon, column * (width - 2 * padding) / 3 + padding, 172);
+
+        context.font = 'bold 24pt Quicksand';
+        context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, 172);
+    }
+
+    context.font = 'regular 24pt Quicksand';
+    ['masc', 'fem', 'neutr'].forEach((form, column) => {
+        let i = 0;
+        for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']])
+        noun[form + key].split('|').forEach(part => {
+            context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, 224 + i * 48);
+            i++;
+        });
+    })
+
+    context.fillStyle = '#C71585';
+    context.font = 'regular 24pt FontAwesome';
+    context.fillText('\uf02c', padding, height - padding);
+    context.font = `regular 24pt Quicksand`;
+    context.fillText(translations.title, padding + 48, height - padding);
+
+    return res.set('content-type', mime).send(canvas.toBuffer(mime));
 });
 
 export default router;
