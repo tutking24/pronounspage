@@ -160,14 +160,14 @@ router.get('/nouns/:word.png', async (req, res) => {
     context.fillStyle = '#000';
 
     context.font = 'bold 64pt Quicksand';
-    context.fillText(base, width / 2 - context.measureText(base).width / 2, 100);
+    context.fillText(base, width / 2 - context.measureText(base).width / 2, 120);
 
     for (let [column, key, icon] of [[0, 'masculine', '\uf222'], [1, 'feminine', '\uf221'], [2, 'neuter', '\uf22c']]) {
         context.font = 'regular 24pt FontAwesome';
-        context.fillText(icon, column * (width - 2 * padding) / 3 + padding, 172);
+        context.fillText(icon, column * (width - 2 * padding) / 3 + padding, 192);
 
         context.font = 'bold 24pt Quicksand';
-        context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, 172);
+        context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, 192);
     }
 
     context.font = 'regular 24pt Quicksand';
@@ -175,7 +175,7 @@ router.get('/nouns/:word.png', async (req, res) => {
         let i = 0;
         for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']])
         noun[form + key].split('|').forEach(part => {
-            context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, 224 + i * 48);
+            context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, 244 + i * 48);
             i++;
         });
     })
