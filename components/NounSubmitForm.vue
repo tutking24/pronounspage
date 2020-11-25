@@ -57,13 +57,13 @@
                             <span class="d-md-none">⁖ <T>nouns.pluralShort</T></span>
                         </th>
                         <td>
-                            <NounForm v-model="form.mascPl"/>
+                            <NounForm v-model="form.mascPl" :required="config.nouns.pluralsRequired"/>
                         </td>
                         <td>
-                            <NounForm v-model="form.femPl"/>
+                            <NounForm v-model="form.femPl" :required="config.nouns.pluralsRequired"/>
                         </td>
                         <td>
-                            <NounForm v-model="form.neutrPl"/>
+                            <NounForm v-model="form.neutrPl" :required="config.nouns.pluralsRequired"/>
                         </td>
                     </tr>
                     </tbody>
@@ -126,9 +126,9 @@
                     masc: [''],
                     fem: [''],
                     neutr: [''],
-                    mascPl: [''],
-                    femPl: [''],
-                    neutrPl: [''],
+                    mascPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    femPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
                     base: null,
                 },
                 submitting: false,
@@ -149,9 +149,9 @@
                     masc: [''],
                     fem: [''],
                     neutr: [''],
-                    mascPl: [''],
-                    femPl: [''],
-                    neutrPl: [''],
+                    mascPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    femPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
                     base: null,
                 };
                 this.templateVisible = false;

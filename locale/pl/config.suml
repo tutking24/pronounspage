@@ -26,6 +26,7 @@ nouns:
     route: 'słownik'
     collapsable: true
     plurals: true
+    pluralsRequired: true
     declension: true
     submit: true
     templates: true

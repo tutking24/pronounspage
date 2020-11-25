@@ -322,9 +322,9 @@ export class Noun {
         this.masc = masc.split('|');
         this.fem = fem.split('|');
         this.neutr = neutr.split('|');
-        this.mascPl = mascPl.split('|');
-        this.femPl = femPl.split('|');
-        this.neutrPl = neutrPl.split('|');
+        this.mascPl = mascPl ? mascPl.split('|') : [];
+        this.femPl = femPl ? femPl.split('|') : [];
+        this.neutrPl = neutrPl ? neutrPl.split('|') : [];
         this.approved = !!approved;
         this.base = base_id;
     }

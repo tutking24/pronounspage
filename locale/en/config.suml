@@ -46,6 +46,7 @@ nouns:
     route: 'dictionary'
     collapsable: false
     plurals: true
+    pluralsRequired: false
     declension: false
     submit: true
     templates: true

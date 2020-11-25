@@ -174,7 +174,7 @@ router.get('/nouns/:word.png', async (req, res) => {
     ['masc', 'fem', 'neutr'].forEach((form, column) => {
         let i = 0;
         for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']])
-        noun[form + key].split('|').forEach(part => {
+        noun[form + key].split('|').filter(x => x.length).forEach(part => {
             context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, 244 + i * 48);
             i++;
         });
