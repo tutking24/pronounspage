@@ -42,13 +42,13 @@
                             <span class="d-md-none">⋅ <T>nouns.singularShort</T></span>
                         </th>
                         <td>
-                            <NounForm v-model="form.masc"/>
+                            <NounForm v-model="form.masc" required/>
                         </td>
                         <td>
-                            <NounForm v-model="form.fem"/>
+                            <NounForm v-model="form.fem" required/>
                         </td>
                         <td>
-                            <NounForm v-model="form.neutr"/>
+                            <NounForm v-model="form.neutr" required/>
                         </td>
                     </tr>
                     <tr v-if="config.nouns.plurals">
