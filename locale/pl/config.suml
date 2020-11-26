@@ -154,11 +154,11 @@ links:
             url: 'https://vibez.pl/wydarzenia/osoby-transplciowe-kim-sa-i-jak-sie-do-nich-zwracac-oto-krotki-poradnik-6577363618974496a'
             headline: 'Osoby transpłciowe - kim są i jak się do nich zwracać? Oto krótki poradnik – <strong>Vibez.pl</strong>'
     socials:
-        #-
-        #    icon: 'twitter'
-        #    iconSet: 'b'
-        #    url: 'https://twitter.com/PronounsPage'
-        #    headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
         -
             icon: 'twitter'
             iconSet: 'b'

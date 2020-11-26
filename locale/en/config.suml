@@ -108,7 +108,12 @@ links:
             extra: '– Tom Scott'
 
     media: []
-    socials: []
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
 
 contact:
     enabled: true
@@ -119,6 +124,10 @@ contact:
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
     authors:
+        -
+            name: 'Group “Rada Języka Neutralnego”'
+            link: 'https://zaimki.pl/blog/rada-języka-neutralnego'
+            group: true
         -
             name: 'Andrea'
             profile: 'andrea'
@@ -166,7 +175,15 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['mx.', 'mr.', 'miss', 'sir', 'madam']
+        -
+            - 'mx.'
+            - 'mr.'
+            - 'miss'
+            - 'sir'
+            - 'ma''am'
+            - 'madam'
+            - 'shazam'
+            - 'zam'
         - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis', 'sib']
         - ['pretty', 'handsome', 'cute', 'hot']
         - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
