@@ -377,7 +377,7 @@ profile:
     opinion:
         yes: 'Yes'
         jokingly: 'Jokingly'
-        meh: 'Meh'
+        meh: 'Okay'
         no: 'Nope'
 
 share: 'Share'
