@@ -30,7 +30,7 @@
                     <SquareButton link="https://avris.it" aria-label="avris.it">
                         <img src="~assets/avris.svg" alt="Avris"/>
                     </SquareButton>
-                    <SquareButton v-for="s in config.support.links" :link="s.url" :aria-label="s.headline">
+                    <SquareButton v-for="s in config.support.links" :key="s.url" :link="s.url" :aria-label="s.headline">
                         <Icon :v="s.icon" :set="s.iconSet || 'l'"/>
                     </SquareButton>
                     <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
