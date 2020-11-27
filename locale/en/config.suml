@@ -119,6 +119,7 @@ links:
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
+    recommended: []
 
 contact:
     enabled: true

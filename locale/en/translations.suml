@@ -286,6 +286,7 @@ faq:
 links:
     header: 'Links'
     headerLong: 'Extra links'
+    recommended: 'We recommend'
 
     media: 'Pronouns.page in the media'
 

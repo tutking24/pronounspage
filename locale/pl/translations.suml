@@ -607,6 +607,7 @@ faq:
 links:
     header: 'Materiały'
     headerLong: 'Dodatkowe materiały'
+    recommended: 'Polecamy'
 
     media: 'Zaimki.pl w mediach'
 

@@ -194,7 +194,6 @@
         <Separator icon="bookmark"/>
 
         <section>
-            <Links/>
             <Media/>
             <Socials/>
         </section>

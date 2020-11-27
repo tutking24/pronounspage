@@ -3,6 +3,7 @@
         <Links top/>
         <Media/>
         <Socials/>
+        <Recommended/>
 
         <section>
             <Share :title="$t('links.headerLong')"/>
