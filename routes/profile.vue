@@ -73,7 +73,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="clearfix">
             <h3>
                 <Icon v="scroll-old"/>
                 <T>profile.words</T>
