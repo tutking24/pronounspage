@@ -1,7 +1,7 @@
 <template>
     <ul class="list-unstyled">
         <li v-for="(value, key, i) in data" v-if="expanded || i < 10">
-            <slot v-bind:k="k" v-bind:v="v">
+            <slot v-bind:k="key" v-bind:v="value">
                 <strong>{{key}}</strong>: {{value}}
             </slot>
         </li>
