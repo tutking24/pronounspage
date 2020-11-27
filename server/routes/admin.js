@@ -59,8 +59,9 @@ router.get('/admin/stats', async (req, res) => {
     const locales = {};
     for (let locale in req.locales) {
         if (!req.locales.hasOwnProperty(locale)) { continue; }
-        const profiles = await req.db.all(SQL`SELECT pronouns FROM profiles WHERE locale=${locale}`);
+        const profiles = await req.db.all(SQL`SELECT pronouns, flags FROM profiles WHERE locale=${locale}`);
         const pronouns = {}
+        const flags = {}
         for (let profile of profiles) {
             const pr = JSON.parse(profile.pronouns);
             for (let pronoun in pr) {
@@ -75,6 +76,14 @@ router.get('/admin/stats', async (req, res) => {
                 }
                 pronouns[p] += pr[pronoun] === 1 ? 1 : 0.5;
             }
+
+            const fl = JSON.parse(profile.flags);
+            for (let flag of fl) {
+                if (flags[flag] === undefined) {
+                    flags[flag] = 0;
+                }
+                flags[flag] += 1;
+            }
         }
 
         locales[locale] = {
@@ -82,6 +91,7 @@ router.get('/admin/stats', async (req, res) => {
             url: req.locales[locale].url,
             profiles: profiles.length,
             pronouns: sortByValue(pronouns, true),
+            flags: sortByValue(flags, true),
             nouns: {
                 approved: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=1`)).c,
                 awaiting: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=0`)).c,

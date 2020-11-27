@@ -424,6 +424,7 @@ table:
     count: 'Count'
     sort: 'Drag to sort'
     scrollUp: 'Scroll to the top'
+    more: 'Show more'
 
 api:
     header: 'Public API'

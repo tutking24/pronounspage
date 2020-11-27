@@ -86,11 +86,14 @@
                             <Icon v="tags"/>
                             Pronouns
                         </h4>
-                        <ul class="list-unstyled">
-                            <li v-for="(count, pronoun) in locale.pronouns" v-if="count >= 10">
-                                <strong>{{pronoun}}</strong>: {{count}}
-                            </li>
-                        </ul>
+                        <ListExpandable :data="locale.pronouns"/>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="h5">
+                            <Icon v="flag"/>
+                            Flags
+                        </h4>
+                        <ListExpandable :data="locale.flags"/>
                     </div>
                     <div class="flex-grow-1">
                         <h4 class="h5">
@@ -118,7 +121,9 @@
 
     export default {
         data() {
-            return { socialProviders }
+            return {
+                socialProviders,
+            }
         },
         async asyncData({ app, store }) {
             if (!store.state.user || store.state.user.roles !== 'admin') {
