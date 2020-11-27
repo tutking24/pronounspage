@@ -106,6 +106,11 @@ links:
             url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
             headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
             extra: '– Tom Scott'
+        -
+            icon: 'twitch'
+            iconSet: 'b'
+            url: 'https://pronouns.alejo.io/'
+            headline: 'Display pronouns in Twitch Chat'
 
     media: []
     socials:
