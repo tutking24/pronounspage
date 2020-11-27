@@ -215,7 +215,8 @@ english:
                     The main difference is that English has singular “they”,
                     while Polish doesn't yet have any normative form that would fit better.
                     That's why English “it” is niche,
-                    while Polish neuter is one of the most popular choices among nonbinary people,
+                    while Polish neuter is one of the most popular choices among nonbinary people
+                    (including ones who use "they" in English),
                     in hopes of normalising the new usage.
                 - >
                     There's one more issue with neuter, though: it is neutral in nominative (the “who?”),
@@ -223,12 +224,12 @@ english:
                     That's why some enbies mix multiple forms, for instance using neuter verbs, yet feminine pronouns, etc.
             table: {ono: 'Neutrative', ono/jej: 'Neutrative with female declension'}
         -
-            name: 'Dukaisms'
+            name: 'Neopronouns (dukaisms)'
             description:
                 - >
                     Those forms are neologisms, originally created for a science fiction novel
                     {https://en.wikipedia.org/wiki/Perfect_Imperfection=Perfect Imperfection}
-                    by {https://en.wikipedia.org/wiki/Jacek_Dukaj=Jacek Dukaj} (hence their name).
+                    by {https://en.wikipedia.org/wiki/Jacek_Dukaj=Jacek Dukaj} (hence they are also known as “dukaisms”).
                     It's a brand new grammatical gender used by post-human beings (phoebe) that don't have a specified gender.
                 - >
                     It's a consistent and relatively complete system, but for people who hear it for the first time,
@@ -249,6 +250,11 @@ english:
                     „{/oni=oni}” for male and mixed-gender groups, and „{/one=one}” for female groups
                     (to oversimplify a lot).
                     Still, whichever forms is chosen by a person, the plurality itself already points to them being nonbinary.
+                - >
+                    Unlike the English “singular they”, which only requires changing the third person form,
+                    in Polish this requires plural forms to be used also in first and second person.
+                    In the case of first person, it might be perceived as something akin to the “royal we”.
+
             table: {oni: 'Male & mixed plurals', one: 'Female plurals'}
         -
             name: 'Placeholder forms'
