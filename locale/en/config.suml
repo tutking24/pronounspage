@@ -170,6 +170,11 @@ support:
             icon: 'coffee'
             url: 'https://ko-fi.com/radajezykaneutralnego'
             headline: 'Ko-Fi'
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/RJNeutralnego'
+            headline: 'PayPal'
 
 user:
     enabled: true
