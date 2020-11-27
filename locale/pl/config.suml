@@ -122,16 +122,6 @@ links:
             url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
             headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
             extra: '– 6 kolorów gier wideo'
-        -
-            icon: 'instagram'
-            iconSet: 'b'
-            url: 'https://www.instagram.com/inkluzywnamowa/'
-            headline: '@inkluzywnamowa'
-        -
-            icon: 'facebook'
-            iconSet: 'b'
-            url: 'https://facebook.com/slownikempatyczny'
-            headline: 'Słownik Empatyczny Języka Polskiego'
     media:
         -
             icon: 'newspaper'
@@ -143,7 +133,7 @@ links:
             headline: 'Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>'
         -
             icon: 'play-circle'
-            url: 'https://www.facebook.com/queerowymaj/videos/vb.192608494083516/3605197302863422/'
+            url: 'https://www.facebook.com/watch/?v=3605197302863422'
             headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
         -
             icon: 'newspaper'
@@ -175,6 +165,16 @@ links:
             url: 'https://facebook.com/neutratywy'
             headline: 'fb.com/neutratywy'
     recommended:
+        -
+            icon: 'instagram'
+            iconSet: 'b'
+            url: 'https://www.instagram.com/inkluzywnamowa/'
+            headline: '@inkluzywnamowa'
+        -
+            icon: 'facebook'
+            iconSet: 'b'
+            url: 'https://facebook.com/slownikempatyczny'
+            headline: 'Słownik Empatyczny Języka Polskiego'
         -
             icon: 'newspaper'
             url: 'https://www.facebook.com/absurdalnikmlem'
