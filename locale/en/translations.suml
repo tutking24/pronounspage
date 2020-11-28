@@ -38,6 +38,7 @@ home:
         header2: 'Generate a link'
         base: 'Based on'
         alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
+        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'What''s the deal with pronouns?'
 
 pronouns:
@@ -58,6 +59,7 @@ pronouns:
     others: 'Other forms'
     othersRaw: 'other'
     or: 'or'
+    grammarTable: 'Table'
 
 sources:
     header: 'Sources'

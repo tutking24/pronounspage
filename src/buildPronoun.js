@@ -75,6 +75,7 @@ export const parsePronouns = (pronounsRaw) => {
                     t.sources ? t.sources.split(',') : [],
                     aliases.slice(1),
                     t.history,
+                    t.pronounceable,
                 )
             ];
         }
@@ -93,10 +94,11 @@ export const buildPronounFromTemplate = (key, template) => {
                 }
             }
         }, template.morphemes),
-        template.plural || false,
-        template.pluralHonorific || false,
+        [template.plural || false],
+        [template.pluralHonorific || false],
         template.sources || [],
         template.aliases || [],
         template.history || null,
+        false,
     )
 }

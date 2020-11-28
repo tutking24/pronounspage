@@ -42,7 +42,7 @@
 
             <ul>
                 <li v-for="example in examples" class="my-1">
-                    <Example :example="example" :pronoun="selectedPronoun" :counter="counter"/>
+                    <Example :example="example" :pronoun="selectedPronoun" :counter="counter" pronunciation/>
                 </li>
             </ul>
         </section>

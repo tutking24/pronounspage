@@ -1,6 +1,8 @@
 import {buildDict, buildList, capitalise} from "./helpers";
 import MORPHEMES from '../data/pronouns/morphemes';
 
+const config = process.env.CONFIG || global.config;
+
 export class ExamplePart {
     constructor(variable, str) {
         this.variable = variable;
@@ -42,6 +44,44 @@ export class Example {
         return capitalise(this[plural ? 'pluralParts' : 'singularParts'].map(part => {
             return part.variable ? pronoun.getMorpheme(part.str) : part.str;
         }).join(''));
+    }
+
+    pronounce(pronoun) {
+        const plural = this.isHonorific ? pronoun.pluralHonorific[0] : pronoun.plural[0];
+
+        let interchangable = false;
+
+        const buildPronunciation = m => {
+            if (pronoun.isInterchangable(m)) {
+                interchangable = true;
+            }
+            const pronunciation = pronoun.getPronunciation(m);
+            const morpheme = pronoun.getMorpheme(m);
+
+            return pronunciation
+                ? `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
+                : morpheme;
+        }
+
+        const ssml = '<speak>' + this[plural ? 'pluralParts' : 'singularParts'].map(part => {
+            return part.variable
+                ? buildPronunciation(part.str)
+                : part.str;
+        }).join('') + '</speak>';
+
+        if (interchangable) {
+            return null;
+        }
+
+        return ssml;
+    }
+
+    toString() {
+        return this.singularParts.map(part => part.variable ? '{' + part.str + '}' : part.str).join('')
+            + '|'
+            + this.pluralParts.map(part => part.variable ? '{' + part.str + '}' : part.str).join('')
+            + '|'
+            + (this.isHonorific ? '1' : '0');
     }
 }
 
@@ -111,16 +151,24 @@ const escape = s => {
 }
 
 export class Pronoun {
-    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null) {
+    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null, pronounceable = true) {
         this.canonicalName = canonicalName;
         this.description = description;
         this.normative = normative;
-        this.morphemes = morphemes
+        this.morphemes = {}
+        this.pronunciations = {}
+        for (let m in morphemes) {
+            if (!morphemes.hasOwnProperty(m)) { continue; }
+            const [morpheme, pronunciation] = morphemes[m] ? morphemes[m].split('|') : [null, null];
+            this.morphemes[m] = morpheme;
+            this.pronunciations[m] = pronunciation;
+        }
         this.plural = plural;
         this.pluralHonorific = pluralHonorific;
         this.sources = sources;
         this.aliases = aliases;
         this.history = history;
+        this.pronounceable = pronounceable;
     }
 
     pronoun() {
@@ -145,7 +193,7 @@ export class Pronoun {
     }
 
     clone() {
-        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), [...this.plural], [...this.pluralHonorific]);
+        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), [...this.plural], [...this.pluralHonorific], this.pronounceable);
     }
 
     equals(other) {
@@ -165,6 +213,7 @@ export class Pronoun {
             }, this, other),
             [...this.plural, ...other.plural],
             [...this.pluralHonorific, ...other.pluralHonorific],
+            false,
         );
     }
 
@@ -186,6 +235,20 @@ export class Pronoun {
         return capital ? capitalise(result) : result;
     }
 
+    getPronunciation(morpheme, counter = 0) {
+        if (!this.pronunciations[morpheme]) {
+            return null;
+        }
+
+        const options = this.pronunciations[morpheme].split('&');
+
+        return options[counter % options.length];
+    }
+
+    isInterchangable(morpheme) {
+        return (this.morphemes[morpheme.replace(/^'/, '')] || '').includes('&');
+    }
+
     isPlural(counter = 0) {
         return this.plural[counter % this.plural.length]
     }
@@ -196,9 +259,14 @@ export class Pronoun {
 
     toArray() {
         const elements = Object.values(this.morphemes).map(s => escape(s));
-        if (process.env.CONFIG.pronouns.plurals) {
+        Object.values(this.pronunciations).forEach((p, i) => {
+            if (p) {
+                elements[i] += '|' + escape(p);
+            }
+        });
+        if (config.pronouns.plurals) {
             elements.push(this.plural.map(p => p ? 1 : 0).join(''));
-            if (process.env.CONFIG.pronouns.honorifics) {
+            if (config.pronouns.honorifics) {
                 elements.push(this.pluralHonorific.map(p => p ? 1 : 0).join(''));
             }
         }
@@ -213,12 +281,12 @@ export class Pronoun {
     static from(data) {
         let extraFields = 1; // description
 
-        if (process.env.CONFIG.pronouns.plurals) {
+        if (config.pronouns.plurals) {
             extraFields += 1;
             if (![0, 1].includes(parseInt(data[MORPHEMES.length]))) {
                 return null;
             }
-            if (process.env.CONFIG.pronouns.honorifics) {
+            if (config.pronouns.honorifics) {
                 extraFields += 1;
                 if (![0, 1].includes(parseInt(data[MORPHEMES.length + 1]))) {
                     return null;
@@ -233,7 +301,7 @@ export class Pronoun {
         if (data.length !== MORPHEMES.length + extraFields
             || data[0].length === 0
             || data[data.length - 1].length > 48
-            || data.slice(1, data.length - extraFields).filter(s => s.length > 12).length
+            || data.slice(1, data.length - extraFields).filter(s => s.length > 24).length
         ) {
             return null;
         }
@@ -250,6 +318,7 @@ export class Pronoun {
             m,
             data[MORPHEMES.length].split('').map(p => parseInt(p) === 1),
             data[MORPHEMES.length + 1].split('').map(p => parseInt(p) === 1),
+            false,
         )
     }
 }
@@ -289,7 +358,7 @@ export class PronounLibrary {
         }
 
         yield [
-            new PronounGroup(process.env.CONFIG.pronouns.others, pronounsLeft),
+            new PronounGroup(config.pronouns.others, pronounsLeft),
             buildList(function* () {
                 for (let t of pronounsLeft) {
                     if (!filter || filter(that.pronouns[t])) {

@@ -19,13 +19,12 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_n', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_g', counter) }} / {{
-                        selectedPronoun.getMorpheme('pronoun_g_acc', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_d', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_a', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_i', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_l', counter) }}</td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_i" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_l" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -43,10 +42,22 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>-{{ selectedPronoun.getMorpheme('verb_middle_inter', counter) }}{{selectedPronoun.isPlural(counter) ? 'śmy' : 'm'}}</td>
-                    <td>-{{ selectedPronoun.getMorpheme('verb_middle_inter', counter) }}{{selectedPronoun.isPlural(counter) ? 'ście' : 'ś'}}</td>
-                    <td>-{{ selectedPronoun.getMorpheme('verb_end_about', counter) }}</td>
-                    <td>-{{ selectedPronoun.getMorpheme('adjective_n', counter) }}</td>
+                    <td>
+                        <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
+                                  prepend="–"
+                                  :append="selectedPronoun.isPlural(counter) ? 'śmy' : 'm'"
+                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕmɨ' : 'm'"
+                        />
+                    </td>
+                    <td>
+                        <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
+                                  prepend="–"
+                                  :append="selectedPronoun.isPlural(counter) ? 'ście' : 'ś'"
+                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕʨ̑ɛ' : 'ɕ'"
+                        />
+                    </td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="verb_end_about" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="adjective_n" :counter="counter" prepend="–"/></td>
                 </tr>
                 </tbody>
             </table>

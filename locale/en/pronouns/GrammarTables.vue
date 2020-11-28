@@ -2,7 +2,7 @@
     <section>
         <h2 class="h4">
             <Icon v="spell-check"/>
-            Odmiana:
+            <T>pronouns.grammarTable</T>:
         </h2>
 
         <div class="table-responsive">
@@ -18,11 +18,11 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_subject', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('pronoun_object', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('possessive_determiner', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('possessive_pronoun', counter) }}</td>
-                    <td>{{ selectedPronoun.getMorpheme('reflexive', counter) }}</td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_determiner" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -31,7 +31,9 @@
 </template>
 
 <script>
+    import Morpheme from "../../../components/Morpheme";
     export default {
+        components: {Morpheme},
         props: {
             selectedPronoun: { required: true },
             counter: { required: true },

@@ -8,6 +8,8 @@ import router from "./routes/user";
 import { loadSuml } from './loader';
 import {buildLocaleList} from "../src/helpers";
 
+global.config = loadSuml('config');
+
 const app = express()
 
 app.use(express.json());
@@ -21,7 +23,7 @@ app.use(session({
 }));
 
 app.use(async function (req, res, next) {
-    req.config = loadSuml('config');
+    req.config = global.config;
     req.locales = buildLocaleList();
     req.rawUser = authenticate(req);
     req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
@@ -41,6 +43,7 @@ app.use(require('./routes/admin').default);
 app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
 app.use(require('./routes/nouns').default);
+app.use(require('./routes/pronounce').default);
 
 export default {
     path: '/api',

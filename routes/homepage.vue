@@ -148,7 +148,7 @@
                                             <input v-if="part.variable" v-model="selectedPronoun.morphemes[part.str]"
                                                    :class="['form-control form-input p-0', {'active': selectedMorpheme === part.str}]"
                                                    :size="selectedPronoun.morphemes[part.str] ? selectedPronoun.morphemes[part.str].length : 0"
-                                                   maxlength="12"
+                                                   maxlength="24"
                                                    @focus="selectedMorpheme = part.str"
                                                    @blur="selectedMorpheme = ''"
                                             />
@@ -170,6 +170,10 @@
                             <p class="small">
                                 <Icon v="info-circle"/>
                                 <T>home.generator.alt</T>
+                            </p>
+                            <p class="small" v-if="config.pronunciation.enabled">
+                                <Icon v="info-circle"/>
+                                <T>home.generator.pronunciation</T>
                             </p>
                         </div>
                         <div class="card-footer" v-if="link">

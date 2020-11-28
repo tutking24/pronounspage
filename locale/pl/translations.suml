@@ -50,6 +50,7 @@ home:
         header2: 'Wygeneruj link'
         base: 'Na podstawie'
         alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
+        pronunciation: 'Możesz tu również podać wymowę używając pionowej kreski i IPA, np. <code>onø|ˈɔ̃nø</code> = „onø” z wymową /ˈɔ̃nø/.'
     whatisit: 'O co chodzi w tej stronie?'
 
 pronouns:
@@ -70,6 +71,7 @@ pronouns:
     others: 'Inne formy'
     othersRaw: 'inne'
     or: 'lub'
+    grammarTable: 'Odmiana'
 
 sources:
     header: 'Teksty kultury'

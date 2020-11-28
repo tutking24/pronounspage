@@ -16,6 +16,12 @@ pronouns:
     null: false
     others: 'Inne formy'
 
+pronunciation:
+    enabled: true
+    language: 'pl-PL'
+    voice: 'Ewa'
+    engine: 'standard'
+
 sources:
     enabled: true
     route: 'korpus'

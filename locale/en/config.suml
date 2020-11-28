@@ -36,6 +36,12 @@ pronouns:
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
     others: 'Other pronouns'
 
+pronunciation:
+    enabled: true
+    language: 'en-GB'
+    voice: 'Emma'
+    engine: 'neural'
+
 sources:
     enabled: true
     route: 'sources'
