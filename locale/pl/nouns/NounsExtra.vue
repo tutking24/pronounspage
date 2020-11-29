@@ -289,9 +289,9 @@
                 ],
                 dukajNouns: [
                     new Noun({
-                        id: 'austronauta',
-                        masc: 'austronauta', fem: 'austronautka', neutr: 'austronautu',
-                        mascPl: 'austronauci', femPl: 'austronautki', neutrPl: 'austronauty',
+                        id: 'astronauta',
+                        masc: 'astronauta', fem: 'astronautka', neutr: 'astronautu',
+                        mascPl: 'astronauci', femPl: 'astronautki', neutrPl: 'astronauty',
                     }),
                     new Noun({
                         id: 'Europejczyk',
