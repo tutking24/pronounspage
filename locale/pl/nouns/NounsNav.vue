@@ -23,7 +23,7 @@
                     neuterNouns: 'deer',
                     dukajNouns: 'ghost',
                     personNouns: 'user-friends',
-                    inclusive: 'book-heart',
+                    // inclusive: 'book-heart',
                 }
             };
         },
