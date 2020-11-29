@@ -83,6 +83,7 @@ pronouns:
                 examples:
                     - ['usłyszałam dzwonek telefonu', 'zadzwonił telefon']
                     - ['przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył']
+                    - ['powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu']
             -
                 header: 'Strona bierna'
                 examples:
@@ -104,6 +105,7 @@ pronouns:
                 examples:
                     - ['usiadłem na kanapie', 'usiadłszy na kanapie']
                     - ['wypiłam herbatę', 'wypiwszy herbatę']
+                    - ['posprzątałem mieszkanie', 'mieszkanie posprzątane']
             -
                 header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
                 examples:
