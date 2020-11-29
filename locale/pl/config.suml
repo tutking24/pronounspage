@@ -187,6 +187,11 @@ links:
             url: 'https://www.facebook.com/absurdalnikmlem'
             headline: 'Absurdalnik Mlem!'
             extra: ' – zin promujący lekką i absurdalną fantastykę; ma politykę umieszczania zaimków w bio.'
+        -
+            icon: 'newspaper'
+            url: 'https://www.facebook.com/absurdalnikmlem'
+            headline: 'Whosome'
+            extra: ' – portal poświęcony Doctor Who i popkulturze; ma politykę umieszczania zaimków w bio.'
 
 
 people:
