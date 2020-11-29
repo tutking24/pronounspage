@@ -89,6 +89,7 @@ pronouns:
                     - ['przypomniałem sobie', 'przypomniało mi się']
                     - ['zmarzłam', 'zrobiło mi się zimno']
                     - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi']
+                    - ['zrobiłem', 'udało mi się zrobić']
             -
                 header: 'Bezokolicznikowy czas przyszły'
                 examples:
