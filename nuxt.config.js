@@ -31,7 +31,7 @@ export default {
             { hid: 'og:title', property: 'og:title', content: title },
             { hid: 'og:description', property: 'og:description', content: description },
             { hid: 'og:site_name', property: 'og:site_name', content: title },
-            { hid: 'og:logo', property: 'og:logo', content: banner },
+            { hid: 'og:image', property: 'og:image', content: banner },
 
             { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
             { hid: 'twitter:title', property: 'twitter:title', content: title },
