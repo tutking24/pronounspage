@@ -14,6 +14,7 @@ pronouns:
         examples: ['on&ona', 'on&ono', 'ona&ono', 'on&onu', 'ona&onu', 'ono/jego&ono/jej']
     emoji: false
     null: false
+    avoiding: 'unikanie'
     others: 'Inne formy'
 
 pronunciation:

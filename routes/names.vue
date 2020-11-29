@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <h2>
             <Icon v="signature"/>
             <T>names.headerLong</T>

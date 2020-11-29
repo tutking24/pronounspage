@@ -5,7 +5,7 @@
             <Nuxt/>
             <ScrollButton/>
         </div>
-        <div class="container">
+        <div>
             <Footer/>
         </div>
         <Confirm ref="confirm"/>

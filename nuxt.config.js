@@ -179,6 +179,9 @@ export default {
 
             if (config.pronouns.enabled) {
                 routes.push({ path: '/' + config.pronouns.any, component: resolve(__dirname, 'routes/any.vue') });
+                if (config.pronouns.avoiding) {
+                    routes.push({ path: '/' + config.pronouns.avoiding, component: resolve(__dirname, 'routes/avoiding.vue') });
+                }
             }
 
             routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });

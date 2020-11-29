@@ -1,6 +1,6 @@
 <template>
     <NotFound v-if="!selectedPronoun"/>
-    <div v-else class="container">
+    <div v-else>
         <h2>
             <Icon v="tag"/>
             <T>pronouns.intro</T>:

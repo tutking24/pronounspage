@@ -192,6 +192,14 @@
                         <T>pronouns.any.description</T>
                     </p>
                 </li>
+                <li v-if="config.pronouns.avoiding" class="list-group-item">
+                    <p class="h5">
+                        <nuxt-link :to="'/' + config.pronouns.avoiding"><T>pronouns.avoiding.header</T></nuxt-link>
+                    </p>
+                    <p>
+                        <T>pronouns.avoiding.description</T>
+                    </p>
+                </li>
             </ul>
         </section>
 

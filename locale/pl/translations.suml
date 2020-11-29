@@ -68,6 +68,53 @@ pronouns:
             Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
             innym nie przeszkadza zwracanie się w dowolny sposób – o ile wiadomo z kontekstu, że to o nich mowa.
         options: 'przejrzyj listę możliwości [share]{/=tutaj}.'
+    avoiding:
+        header: 'Unikanie form nacechowanych płciowo'
+        description: >
+            Niektóre osoby niebinarne preferują używanie form unikających precyzowania płci
+            zamiast tych nacechowanych czy to binarnie czy niebinarnie.
+            Warto też używać ich mówiąc o osobach, których płci nie znamy.
+            Choć w silnie zgenderyzowanym języku polskim jest to względnie trudne do zrobienia
+            i może lekko zmieniać znaczenie zdania,
+            to jednak wcale nie jest niemożliwe.
+        ideas:
+            -
+                header: 'Zmiana podmiotu zdania'
+                examples:
+                    - ['usłyszałam dzwonek telefonu', 'zadzwonił telefon']
+                    - ['przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył']
+            -
+                header: 'Strona bierna'
+                examples:
+                    - ['przypomniałem sobie', 'przypomniało mi się']
+                    - ['zmarzłam', 'zrobiło mi się zimno']
+                    - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi']
+            -
+                header: 'Bezokolicznikowy czas przyszły'
+                examples:
+                    - ['będę robiła', 'będę robić']
+                    - ['będę jadł', 'będę jeść']
+            -
+                header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
+                examples:
+                    - ['gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę']
+            -
+                header: 'Imiesłowy'
+                examples:
+                    - ['usiadłem na kanapie', 'usiadłszy na kanapie']
+                    - ['wypiłam herbatę', 'wypiwszy herbatę']
+            -
+                header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
+                examples:
+                    - ['zarządca', 'osoba zarządzająca']
+                    - ['kandydaci i kandydatki', 'osoby kandydujące']
+                    - ['proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z rodzicem']
+            -
+                header: 'Staropolska, rzeczownikowa odmiana przymiotników'
+                examples:
+                    - ['jestem szczęśliwa!', 'jestem szczęśliw!']
+                    - ['czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?']
+
     others: 'Inne formy'
     othersRaw: 'inne'
     or: 'lub'

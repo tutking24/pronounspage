@@ -34,6 +34,7 @@ pronouns:
             reflexive: '#self'
         examples: ['💫', '💙']
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+    avoiding: false
     others: 'Other pronouns'
 
 pronunciation:

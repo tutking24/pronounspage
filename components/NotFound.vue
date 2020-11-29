@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <h2>
             <Icon v="person-dolly-empty"/>
             <T>notFound.message</T>
