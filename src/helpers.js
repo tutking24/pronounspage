@@ -35,7 +35,7 @@ export const head = ({title, description, banner}) => {
 
     if (banner) {
         banner = process.env.BASE_URL + '/' + banner.replace(/^\//, '');
-        meta.meta.push({ hid: 'og:logo', property: 'og:logo', content: banner });
+        meta.meta.push({ hid: 'og:image', property: 'og:image', content: banner });
         meta.meta.push({ hid: 'twitter:image', property: 'twitter:image', content: banner });
     }
 
