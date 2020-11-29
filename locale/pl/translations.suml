@@ -201,6 +201,9 @@ nouns:
         header: 'Dukatywy'
         label: 'dukatyw'
         id: 'dukatywy'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym duszkiem krzyczącym „-łu”.'
+            caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
         info:
             - >
                 Analogicznie do tzw. {/onu=dukaizmów / rodzaju postpłciowego} („zrobiłum”, „poszłuś”)
@@ -221,6 +224,9 @@ nouns:
         header: 'Neutratywy'
         label: 'neutratyw'
         id: 'neutratywy'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym łosiem trzymającym łom.'
+            caption: 'Ze względu na końcówki „-łom”, „-łoś” i „-ło”, flaga rodzaju nijakiego i neutratywów przedstawia łosia z łomem.'
         info:
             - >
                 Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.
@@ -275,6 +281,23 @@ nouns:
     singularShort: 'l. poj.'
     plural: 'liczba mnoga'
     pluralShort: 'l. mn.'
+
+    inclusive:
+        header: 'Inkluzywność'
+        headerLong: 'Słownik inkluzywnego języka'
+        id: 'inkluzywnosc'
+        insteadOf: 'Zamiast'
+        say: 'Lepiej mów'
+        because: 'Ponieważ'
+        info:
+            - >
+                Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
+                Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
+                to nasz język też musi być włączający.
+            - >
+                Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
+                Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
+                jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
 
 names:
     header: 'Imiona'

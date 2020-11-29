@@ -1,0 +1,256 @@
+<template>
+    <Loading :value="entriesRaw">
+        <section v-if="$admin()" class="px-3">
+            <div class="alert alert-info">
+                <strong>{{ entriesCountApproved() }}</strong> <T>nouns.approved</T>,
+                <strong>{{ entriesCountPending() }}</strong> <T>nouns.pending</T>.
+            </div>
+        </section>
+
+        <section class="sticky-top">
+            <div class="input-group mb-3 bg-white">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <Icon v="filter"/>
+                    </span>
+                </div>
+                <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
+                <div class="input-group-append" v-if="filter">
+                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                        <Icon v="times"/>
+                    </button>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                        <Icon v="plus-circle"/>
+                        <T>nouns.submit.action</T>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <Table :data="visibleEntries()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+            <template v-slot:header>
+                <th class="text-nowrap">
+                    <Icon v="comment-times"/>
+                    <T>nouns.inclusive.insteadOf</T>
+                </th>
+                <th class="text-nowrap">
+                    <Icon v="comment-check"/>
+                    <T>nouns.inclusive.say</T>
+                </th>
+                <th class="text-nowrap">
+                    <Icon v="comment-dots"/>
+                    <T>nouns.inclusive.because</T>
+                </th>
+                <th v-if="$admin()"></th>
+            </template>
+
+            <template v-slot:row="s"><template v-if="s">
+                <td>
+                    <ul class="list-untyled">
+                        <li v-for="w in s.el.insteadOf">{{w}}</li>
+                    </ul>
+
+                    <small v-if="s.el.base && entries[s.el.base]">
+                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <ul class="list-untyled">
+                            <li v-for="w in entries[s.el.base].insteadOf">{{w}}</li>
+                        </ul>
+                    </small>
+
+                    <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(s.el)">
+                        <Icon v="pen"/>
+                        <T>nouns.edit</T>
+                    </button>
+                </td>
+                <td>
+                    <ul class="list-untyled">
+                        <li v-for="w in s.el.say">{{w}}</li>
+                    </ul>
+
+                    <small v-if="s.el.base && entries[s.el.base]">
+                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <ul class="list-untyled">
+                            <li v-for="w in entries[s.el.base].say">{{w}}</li>
+                        </ul>
+                    </small>
+                </td>
+                <td>
+                    <p v-for="p in s.el.because.split('\n\n')">{{p}}</p>
+
+                    <small v-if="s.el.base && entries[s.el.base]">
+                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <ul class="list-untyled">
+                            <p v-for="p in entries[s.el.base].because.split('\n\n')">{{p}}</p>
+                        </ul>
+                    </small>
+                </td>
+                <td v-if="$admin()">
+                    <ul class="list-unstyled">
+                        <li v-if="!s.el.approved">
+                            <button class="btn btn-success btn-sm m-1" @click="approve(s.el)">
+                                <Icon v="check"/>
+                                <T>crud.approve</T>
+                            </button>
+                        </li>
+                        <li v-else @click="hide(s.el)">
+                            <button class="btn btn-outline-secondary btn-sm m-1">
+                                <Icon v="times"/>
+                                <T>crud.hide</T>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-danger btn-sm m-1" @click="remove(s.el)">
+                                <Icon v="trash"/>
+                                <T>crud.remove</T>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-outline-primary btn-sm m-1" @click="edit(s.el)">
+                                <Icon v="pen"/>
+                                <T>crud.edit</T>
+                            </button>
+                        </li>
+                    </ul>
+                </td>
+            </template></template>
+
+            <template v-slot:empty>
+                <Icon v="search"/>
+                <T>nouns.empty</T>
+            </template>
+        </Table>
+
+        <template v-if="config.nouns.submit">
+            <Separator icon="plus"/>
+
+            <div class="px-3">
+                <InclusiveSubmitForm ref="form"/>
+            </div>
+        </template>
+    </Loading>
+</template>
+
+<script>
+    import { InclusiveEntry } from "~/src/classes";
+    import { buildDict } from "../src/helpers";
+
+    export default {
+        props: {
+            load: {type: Boolean}
+        },
+        data() {
+            return {
+                filter: '',
+                entriesRaw: undefined,
+            }
+        },
+        mounted() {
+            if (this.load) {
+                this.loadEntries();
+            }
+        },
+        methods: {
+            async loadEntries() {
+                if (this.entriesRaw !== undefined) {
+                    return;
+                }
+                this.entriesRaw = await this.$axios.$get(`/inclusive`);
+            },
+            async setFilter(filter) {
+                this.filter = filter;
+                await this.loadEntries();
+                this.focus();
+            },
+            focus() {
+                this.$el.focus();
+                this.$el.scrollIntoView();
+                setTimeout(_ => {
+                    this.$el.scrollIntoView();
+                }, 1000);
+            },
+            edit(entry) {
+                this.$refs.form.edit(entry);
+            },
+            async approve(entry) {
+                await this.$axios.$post(`/inclusive/approve/${entry.id}`);
+                if (entry.base) {
+                    delete this.entries[entry.base];
+                }
+                entry.approved = true;
+                entry.base = null;
+                this.$forceUpdate();
+            },
+            async hide(entry) {
+                await this.$axios.$post(`/inclusive/hide/${entry.id}`);
+                entry.approved = false;
+                this.$forceUpdate();
+            },
+            async remove(entry) {
+                if (!confirm('Czy na pewno usunąć ten wpis?')) {
+                    return false;
+                }
+                await this.$axios.$post(`/inclusive/remove/${entry.id}`);
+                delete this.entries[entry.id];
+                this.$forceUpdate();
+            },
+
+            // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
+            visibleEntries() {
+                return Object.values(this.entries).filter(n => n.matches(this.filter));
+            },
+            entriesCountApproved() {
+                return Object.values(this.entries).filter(n => n.approved).length;
+            },
+            entriesCountPending() {
+                return Object.values(this.entries).filter(n => !n.approved).length;
+            },
+        },
+        computed: {
+            entries() {
+                if (this.entriesRaw === undefined) {
+                    return {};
+                }
+
+                return buildDict(function* (that) {
+                    const sorted = that.entriesRaw.sort((a, b) => {
+                        if (a.approved && !b.approved) {
+                            return 1;
+                        }
+                        if (!a.approved && b.approved) {
+                            return -1;
+                        }
+                        return a.insteadOf.toLowerCase().localeCompare(b.insteadOf.toLowerCase());
+                    });
+                    for (let w of sorted) {
+                        yield [w.id, new InclusiveEntry(w)];
+                    }
+                }, this);
+            },
+        },
+        watch: {
+            filter() {
+                if (process.client) {
+                    if (this.$refs.dictionarytable) {
+                        this.$refs.dictionarytable.reset();
+                        this.$refs.dictionarytable.focus();
+                    }
+                }
+            }
+        },
+    }
+</script>
+
+<style lang="scss">
+    @import "assets/variables";
+
+    tr {
+        .hover-show {
+            opacity: 0;
+        }
+        &:hover .hover-show {
+            opacity: 1;
+        }
+    }
+</style>

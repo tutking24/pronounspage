@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     .list-group-item-hoverable {
         &:hover {

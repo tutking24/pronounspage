@@ -502,6 +502,33 @@ export class NounDeclension {
 }
 
 
+export class InclusiveEntry {
+    constructor({id, insteadOf, say, because, approved = true, base_id = null}) {
+        this.id = id;
+        this.insteadOf = insteadOf.split('|');
+        this.say = say.split('|');
+        this.because = because;
+        this.approved = !!approved;
+        this.base = base_id;
+    }
+
+    matches(filter) {
+        if (!filter) {
+            return true;
+        }
+
+        for (let field of ['insteadOf', 'say']) {
+            for (let value of this[field]) {
+                if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
+
+
 export class Name {
     constructor(name, origin, meaning, usage, legally, pros, cons, notablePeople, count, links) {
         this.name = name;

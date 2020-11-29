@@ -3,12 +3,9 @@ import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
+import {isTroll} from "../../src/helpers";
 
 const translations = loadSuml('translations');
-
-const isTroll = (body) => {
-    return ['cipeusz', 'feminazi', 'bruksela', 'zboczeń'].some(t => body.indexOf(t) > -1);
-}
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM nouns WHERE id=${id}`);

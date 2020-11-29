@@ -32,7 +32,6 @@
                             <span class="d-none d-md-inline"><T>nouns.neuter</T></span>
                             <span class="d-md-none"><T>nouns.neuterShort</T></span>
                         </th>
-                        <th v-if="$admin()"></th>
                     </tr>
                     </thead>
                     <tbody>

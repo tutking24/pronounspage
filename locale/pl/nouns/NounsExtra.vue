@@ -3,10 +3,19 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.neuterNouns.id')">
+            <Icon v="deer"/>
             <T>nouns.neuterNouns.header</T>
         </h3>
 
-        <T>nouns.neuterNouns.info</T>
+        <div class="d-flex flex-column flex-md-row">
+            <div>
+                <T>nouns.neuterNouns.info</T>
+            </div>
+            <figure>
+                <img src="/img/łoś.jpg" :alt="$t('nouns.neuterNouns.flag.alt')"/>
+                <figcaption><T>nouns.neuterNouns.flag.caption</T></figcaption>
+            </figure>
+        </div>
 
         <slot></slot>
 
@@ -66,10 +75,19 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.dukajNouns.id')">
+            <Icon v="ghost"/>
             <T>nouns.dukajNouns.header</T>
         </h3>
 
-        <T>nouns.dukajNouns.info</T>
+        <div class="d-flex flex-column flex-md-row">
+            <div>
+                <T>nouns.dukajNouns.info</T>
+            </div>
+            <figure>
+                <img src="/img/dukaizmy.png" :alt="$t('nouns.dukajNouns.flag.alt')"/>
+                <figcaption><T>nouns.dukajNouns.flag.caption</T></figcaption>
+            </figure>
+        </div>
 
         <details class="border mb-3">
             <summary class="bg-light p-3">
@@ -150,6 +168,7 @@
         <Separator icon="atom-alt"/>
 
         <h3 :id="$t('nouns.personNouns.id')">
+            <Icon v="user-friends"/>
             <T>nouns.personNouns.header</T>
             <small><NormativeBadge/></small>
         </h3>
@@ -207,6 +226,27 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </details>
+
+        <Separator icon="atom-alt"/>
+
+        <h3 :id="$t('nouns.inclusive.id')">
+            <Icon v="book-heart"/>
+            <T>nouns.inclusive.headerLong</T>
+        </h3>
+
+        <T>nouns.inclusive.info</T>
+
+        <details class="border mb-3">
+            <summary class="bg-light p-3" @click="$refs.inclusivedictionary.loadEntries()">
+                <h4 class="h5 d-inline">
+                    <Icon v="book-heart"/>
+                    <T>nouns.inclusive.headerLong</T>
+                </h4>
+            </summary>
+            <div class="border-top">
+                <InclusiveDictionary ref="inclusivedictionary"/>
             </div>
         </details>
     </div>
@@ -401,3 +441,19 @@
         },
     }
 </script>
+
+<style lang="scss">
+    @import "assets/variables";
+
+    figure {
+        width: 100%;
+        max-width: 24rem;
+        padding: $spacer;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            font-size: $small-font-size;
+        }
+    }
+</style>
