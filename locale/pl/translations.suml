@@ -33,7 +33,7 @@ home:
             „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp. –
             są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
         - >
-            Już teraz w codziennej polszczyźnie używamy wielu form neutralnych płciowo:
+            Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
             „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
             „proszę przyjść do szkoły z {rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
@@ -515,6 +515,21 @@ faq:
                     Czemu więc osoby tłumaczące ośmielają się zmieniać postaciom płeć?
                 - >
                     To nie kwestia ideologii. To kwestia prawdy i wierności oryginałowi.
+        męskie:
+            question: 'Czy nie można po prostu używać męskich wersji jako neutralnych?'
+            answer:
+                - >
+                    Nie, bo wersje męskie wcale nie są neutralne. Są… cóż… męskie!
+                - >
+                    Polski jest językiem, który bardzo konkretnie rozróżnia formy gramatyczne nacechowane płciowo.
+                    Samo to, że rodzaj męski „rozpycha się” po języku jako domyślny wybór w przypadku jakichkolwiek wątpliwości
+                    (np. gdy nie znamy czyjejś płci, gdy nie mówimy o nikim konkretnym, lub gdy mówimy o mieszanej grupie osób),
+                    nie oznacza jeszcze, że jest jakkolwiek „neutralny”.
+                - >
+                    {https://pl.wikipedia.org/wiki/Męska_dominacja_językowa=Męska dominacja językowa}
+                    nie jest przejawem neutralnego języka, lecz wręcz przeciwnie: patriarchatu.
+                    Wpływa negatywnie na reprezentację osób innych płci
+                    oraz {https://journals.sagepub.com/doi/10.1177/0261927X12463008=zniekształca nasze postrzeganie świata}.
         klawiatura:
             question: 'Ale tych znaków nie ma na klawiaturze!'
             answer:
