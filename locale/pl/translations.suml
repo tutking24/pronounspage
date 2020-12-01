@@ -87,9 +87,22 @@ pronouns:
             -
                 header: 'Strona bierna'
                 examples:
+                    - ['zgubił telefon', 'telefon został zgubiony']
+                    - ['znalazłam telefon', 'telefon został znaleziony']
+            -
+                header: 'Forma bezosobowa'
+                examples:
+                    - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi']
+                    - ['znalazłam telefon', 'znaleziono telefon']
+            -
+                header: 'Bezosobowe użycie 3. os. mnogiej'
+                examples:
+                    - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi']
+            -
+                header: 'Podmiot logiczny w celowniku'
+                examples:
                     - ['przypomniałem sobie', 'przypomniało mi się']
                     - ['zmarzłam', 'zrobiło mi się zimno']
-                    - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi']
                     - ['zrobiłem', 'udało mi się zrobić']
             -
                 header: 'Bezokolicznikowy czas przyszły'
@@ -113,7 +126,19 @@ pronouns:
                     - ['kandydaci i kandydatki', 'osoby kandydujące']
                     - ['proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z rodzicem']
             -
+                header: 'Skrócone zaimki'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - ['to dla niego', 'to dlań']
+                    - ['mieszkam u niej', 'mieszkam uń']
+            -
+                header: 'Skrócone zaimki + strona bierna'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - ['zrobiła', 'było przezeń zrobione']
+            -
                 header: 'Staropolska, rzeczownikowa odmiana przymiotników'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
                 examples:
                     - ['jestem szczęśliwa!', 'jestem szczęśliw!']
                     - ['czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?']
