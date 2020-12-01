@@ -10,6 +10,9 @@
 
         <section v-for="idea in $t('pronouns.avoiding.ideas')">
             <h3>{{idea.header}}</h3>
+            <p v-if="idea.description">
+                {{idea.description}}
+            </p>
             <ul>
                 <li v-for="[exampleFrom, exampleTo] in idea.examples">
                     {{exampleFrom}} → <strong>{{exampleTo}}</strong>
