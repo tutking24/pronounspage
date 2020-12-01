@@ -152,9 +152,8 @@ router.get('/nouns/:word.png', async (req, res) => {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext('2d');
 
-    context.fillStyle = '#fff';
-    context.fillRect(0, 0, width, height);
-    context.fillStyle = '#000';
+    const bg = await loadImage('static/bg.png');
+    context.drawImage(bg, 0, 0, width, height);
 
     context.font = 'bold 64pt Quicksand';
     context.fillText(base, width / 2 - context.measureText(base).width / 2, 120);
