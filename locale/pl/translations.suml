@@ -120,6 +120,11 @@ pronouns:
                     - ['wypiłam herbatę', 'wypiwszy herbatę']
                     - ['posprzątałem mieszkanie', 'mieszkanie posprzątane']
             -
+                header: 'Unikanie trybu przypuszczającego'
+                examples:
+                    - ['czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?']
+                    - ['może bym tak pojechała na wakacje?', 'może pojadę na wakacje?']
+            -
                 header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
                 examples:
                     - ['zarządca', 'osoba zarządzająca']
