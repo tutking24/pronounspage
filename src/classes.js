@@ -112,7 +112,7 @@ export class Source {
             '': 'clipboard-list',
             Book: 'book-open',
             Article: 'newspaper',
-            // Movie: 'film',
+            Movie: 'film',
             Series: 'tv',
             Song: 'music',
             Poetry: 'scroll',
