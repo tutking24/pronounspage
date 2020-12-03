@@ -93,8 +93,8 @@ router.get('/admin/stats', async (req, res) => {
             pronouns: sortByValue(pronouns, true),
             flags: sortByValue(flags, true),
             nouns: {
-                approved: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=1`)).c,
-                awaiting: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=0`)).c,
+                approved: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=1 AND deleted=0`)).c,
+                awaiting: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=0 AND deleted=0`)).c,
             }
         };
     }
