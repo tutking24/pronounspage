@@ -51,6 +51,27 @@ export const buildPronoun = (pronouns, path) => {
         pronoun = buildPronounFromTemplate(path.substring(1), process.env.CONFIG.pronouns.null);
     }
 
+    const p = path.split('/').filter(s => !!s);
+    if (!pronoun && process.env.CONFIG.pronouns.slashes !== false && p.length === MORPHEMES.length) {
+        pronoun = new Pronoun(
+            `${p[0]}/${p[1]}`,
+            '',
+            false,
+            buildDict(function*() {
+                let i = 0;
+                for (let m of MORPHEMES) {
+                    yield [m, p[i++]];
+                }
+            }),
+            [ p[p.length - 1].endsWith('selves') ],  // TODO English specific, extract somewhere
+            [ false ],
+            [],
+            [],
+            null,
+            false,
+        )
+    }
+
     return pronoun;
 }
 
