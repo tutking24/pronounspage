@@ -6,8 +6,8 @@ async function notify() {
     const db = await dbConnection();
 
     const awaitingModeration = [
-        ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 GROUP BY locale`)),
-        ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
     ];
     if (!awaitingModeration.length) {
         console.log('No entries awaiting moderation');

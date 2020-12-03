@@ -96,7 +96,7 @@ function clone(mainObject) {
 }
 
 export class Source {
-    constructor (type, author, title, extra, year, fragments = [], comment = null, link = null) {
+    constructor (type, author, title, extra, year, fragments = [], comment = null, link = null, submitter = null) {
         this.type = type;
         this.author = author;
         this.title = title;
@@ -105,6 +105,7 @@ export class Source {
         this.fragments = fragments;
         this.comment = comment;
         this.link = link;
+        this.submitter = submitter;
     }
 
     static get TYPES() {
@@ -386,7 +387,7 @@ export class PronounLibrary {
 }
 
 export class Noun {
-    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved = true, base_id = null}) {
+    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved = true, base_id = null, author = null}) {
         this.id = id;
         this.masc = masc.split('|');
         this.fem = fem.split('|');
@@ -396,6 +397,7 @@ export class Noun {
         this.neutrPl = neutrPl ? neutrPl.split('|') : [];
         this.approved = !!approved;
         this.base = base_id;
+        this.author = author;
     }
 
     matches(filter) {
@@ -503,13 +505,15 @@ export class NounDeclension {
 
 
 export class InclusiveEntry {
-    constructor({id, insteadOf, say, because, approved = true, base_id = null}) {
+    constructor({id, insteadOf, say, because, approved = true, base_id = null, categories = '', links = '[]'}) {
         this.id = id;
         this.insteadOf = insteadOf.split('|');
         this.say = say.split('|');
         this.because = because;
         this.approved = !!approved;
         this.base = base_id;
+        this.categories = categories ? categories.split(',') : [];
+        this.links = JSON.parse(links);
     }
 
     matches(filter) {

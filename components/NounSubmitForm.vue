@@ -166,6 +166,7 @@
                     neutrPl: word.neutrPl,
                     base: word.id,
                 }
+                this.afterSubmit = false;
                 this.$el.scrollIntoView();
             }
         },

@@ -45,6 +45,24 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="form-group">
+                <label><strong><T>nouns.inclusive.categories</T>:</strong></label>
+                <a v-for="category in config.nouns.inclusive.categories"
+                   href="#" :class="['badge border mx-2', form.categories.includes(category) ? 'badge-primary' : 'badge-light']"
+                   @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
+                >
+                    {{ category }}
+                </a>
+            </div>
+
+            <div class="form-group">
+                <label><strong><T>nouns.inclusive.sources</T>:</strong></label>
+                <ListInput v-model="form.links" v-slot="s">
+                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" required/>
+                </ListInput>
+            </div>
+
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
                 <T>nouns.editing</T>
@@ -75,6 +93,8 @@
                     insteadOf: [''],
                     say: [''],
                     because: '',
+                    categories: [],
+                    links: [],
                     base: null,
                 },
                 submitting: false,
@@ -92,6 +112,8 @@
                     insteadOf: [''],
                     say: [''],
                     because: '',
+                    categories: [],
+                    links: [],
                     base: null,
                 };
             },
@@ -100,8 +122,11 @@
                     insteadOf: word.insteadOf,
                     say: word.say,
                     because: word.because,
+                    categories: word.categories,
+                    links: word.links,
                     base: word.id,
                 }
+                this.afterSubmit = false;
                 this.$el.scrollIntoView();
             }
         },

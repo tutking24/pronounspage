@@ -29,7 +29,7 @@
             </div>
         </section>
 
-        <Table :data="visibleNouns()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+        <Table :data="visibleNouns()" columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
             <template v-slot:header>
                 <th class="text-nowrap">
                     <Icon v="mars"/>
@@ -43,7 +43,7 @@
                     <Icon v="neuter"/>
                     <T>nouns.neuter</T>
                 </th>
-                <th v-if="$admin()"></th>
+                <th></th>
             </template>
 
             <template v-slot:row="s"><template v-if="s">
@@ -74,11 +74,6 @@
                             </li>
                         </ul>
                     </small>
-
-                    <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(s.el)">
-                        <Icon v="pen"/>
-                        <T>nouns.edit</T>
-                    </button>
                 </td>
                 <td>
                     <ul class="list-singular">
@@ -134,30 +129,46 @@
                         </ul>
                     </small>
                 </td>
-                <td v-if="$admin()">
-                    <ul class="list-unstyled">
-                        <li v-if="!s.el.approved">
-                            <button class="btn btn-success btn-sm m-1" @click="approve(s.el)">
-                                <Icon v="check"/>
-                                <T>crud.approve</T>
-                            </button>
+                <td>
+                    <ul class="list-unstyled list-btn-concise">
+                        <!--
+                        <li v-if="s.el.author" class="small">
+                            <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
+                                <Icon v="user"/>
+                                <span class="btn-label">
+                                    <T>crud.author</T>:
+                                    @{{s.el.author}}
+                                </span>
+                            </nuxt-link>
                         </li>
-                        <li v-else @click="hide(s.el)">
-                            <button class="btn btn-outline-secondary btn-sm m-1">
-                                <Icon v="times"/>
-                                <T>crud.hide</T>
-                            </button>
-                        </li>
+                        -->
+                        <template v-if="$admin()">
+                            <li v-if="!s.el.approved">
+                                <button class="btn btn-concise btn-success btn-sm m-1" @click="approve(s.el)">
+                                    <Icon v="check"/>
+                                    <span class="btn-label"><T>crud.approve</T></span>
+                                </button>
+                            </li>
+                            <li v-else @click="hide(s.el)">
+                                <button class="btn btn-concise btn-outline-secondary btn-sm m-1">
+                                    <Icon v="times"/>
+                                    <span class="btn-label"><T>crud.hide</T></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn btn-concise btn-outline-danger btn-sm m-1" @click="remove(s.el)">
+                                    <Icon v="trash"/>
+                                    <span class="btn-label"><T>crud.remove</T></span>
+                                </button>
+                            </li>
+                        </template>
                         <li>
-                            <button class="btn btn-outline-danger btn-sm m-1" @click="remove(s.el)">
-                                <Icon v="trash"/>
-                                <T>crud.remove</T>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="btn btn-outline-primary btn-sm m-1" @click="edit(s.el)">
+                            <button class="btn btn-concise btn-outline-primary btn-sm m-1" @click="edit(s.el)">
                                 <Icon v="pen"/>
-                                <T>crud.edit</T>
+                                <span class="btn-label">
+                                    <T v-if="$admin()">crud.edit</T>
+                                    <T v-else>nouns.edit</T>
+                                </span>
                             </button>
                         </li>
                     </ul>
@@ -343,6 +354,30 @@
         }
         &:hover .hover-show {
             opacity: 1;
+        }
+    }
+
+    .btn-concise {
+        white-space: nowrap;
+    }
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .list-btn-concise {
+            min-width: 3rem;
+
+            li {
+                height: 2.5rem;
+            }
+        }
+        .btn-concise {
+            position: absolute;
+
+            .btn-label {
+                display: none;
+            }
+
+            &:hover .btn-label {
+                display: inline;
+            }
         }
     }
 </style>

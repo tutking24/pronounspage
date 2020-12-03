@@ -37,6 +37,8 @@ nouns:
     declension: true
     submit: true
     templates: true
+    inclusive:
+        categories: ['interpłciowość', 'lgbtq+', 'niepełnosprawność', 'rasa', 'trans']
 
 names:
     enabled: false

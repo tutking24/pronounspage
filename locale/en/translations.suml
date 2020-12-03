@@ -394,6 +394,7 @@ crud:
     filter: 'Filter'
     filterLong: 'Filter the list…'
     search: 'Search…'
+    author: 'Added by'
 
 footer:
     source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'

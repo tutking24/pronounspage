@@ -29,7 +29,7 @@
             </div>
         </section>
 
-        <Table :data="visibleEntries()" :columns="$admin() ? 4 : 3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+        <Table :data="visibleEntries()" columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
             <template v-slot:header>
                 <th class="text-nowrap">
                     <Icon v="comment-times"/>
@@ -43,7 +43,7 @@
                     <Icon v="comment-dots"/>
                     <T>nouns.inclusive.because</T>
                 </th>
-                <th v-if="$admin()"></th>
+                <th></th>
             </template>
 
             <template v-slot:row="s"><template v-if="s">
@@ -52,17 +52,28 @@
                         <li v-for="w in s.el.insteadOf">{{w}}</li>
                     </ul>
 
+                    <ul class="list-inline">
+                        <li v-for="category in s.el.categories" class="list-inline-item">
+                            <span class="badge badge-primary">
+                                {{category}}
+                            </span>
+                        </li>
+                    </ul>
+
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
                             <li v-for="w in entries[s.el.base].insteadOf">{{w}}</li>
                         </ul>
-                    </small>
 
-                    <button v-if="!$admin()" class="btn btn-outline-primary btn-sm m-1 hover-show" @click="edit(s.el)">
-                        <Icon v="pen"/>
-                        <T>nouns.edit</T>
-                    </button>
+                        <ul class="list-inline">
+                            <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
+                            <span class="badge badge-primary">
+                                {{category}}
+                            </span>
+                            </li>
+                        </ul>
+                    </small>
                 </td>
                 <td>
                     <ul class="list-untyled">
@@ -79,37 +90,69 @@
                 <td>
                     <p v-for="p in s.el.because.split('\n\n')">{{p}}</p>
 
+                    <ul class="list-unstyled small">
+                        <li v-for="link in s.el.links">
+                            <a :href="link" target="_blank" rel="noopener">
+                                <Icon v="external-link"/>
+                                {{clearUrl(link)}}
+                            </a>
+                        </li>
+                    </ul>
+
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-untyled">
-                            <p v-for="p in entries[s.el.base].because.split('\n\n')">{{p}}</p>
+                        <p v-for="p in entries[s.el.base].because.split('\n\n')">{{p}}</p>
+
+                        <ul class="list-unstyled small">
+                            <li v-for="link in entries[s.el.base].links">
+                                <a :href="link" target="_blank" rel="noopener">
+                                    <Icon v="external-link"/>
+                                    {{clearUrl(link)}}
+                                </a>
+                            </li>
                         </ul>
                     </small>
                 </td>
-                <td v-if="$admin()">
-                    <ul class="list-unstyled">
-                        <li v-if="!s.el.approved">
-                            <button class="btn btn-success btn-sm m-1" @click="approve(s.el)">
-                                <Icon v="check"/>
-                                <T>crud.approve</T>
-                            </button>
+                <td>
+                    <ul class="list-unstyled list-btn-concise">
+                        <!--
+                        <li v-if="s.el.author" class="small">
+                            <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
+                                <Icon v="user"/>
+                                <span class="btn-label">
+                                    <T>crud.author</T>:
+                                    @{{s.el.author}}
+                                </span>
+                            </nuxt-link>
                         </li>
-                        <li v-else @click="hide(s.el)">
-                            <button class="btn btn-outline-secondary btn-sm m-1">
-                                <Icon v="times"/>
-                                <T>crud.hide</T>
-                            </button>
-                        </li>
+                        -->
+                        <template v-if="$admin()">
+                            <li v-if="!s.el.approved">
+                                <button class="btn btn-concise btn-success btn-sm m-1" @click="approve(s.el)">
+                                    <Icon v="check"/>
+                                    <span class="btn-label"><T>crud.approve</T></span>
+                                </button>
+                            </li>
+                            <li v-else @click="hide(s.el)">
+                                <button class="btn btn-concise btn-outline-secondary btn-sm m-1">
+                                    <Icon v="times"/>
+                                    <span class="btn-label"><T>crud.hide</T></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn btn-concise btn-outline-danger btn-sm m-1" @click="remove(s.el)">
+                                    <Icon v="trash"/>
+                                    <span class="btn-label"><T>crud.remove</T></span>
+                                </button>
+                            </li>
+                        </template>
                         <li>
-                            <button class="btn btn-outline-danger btn-sm m-1" @click="remove(s.el)">
-                                <Icon v="trash"/>
-                                <T>crud.remove</T>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="btn btn-outline-primary btn-sm m-1" @click="edit(s.el)">
+                            <button class="btn btn-concise btn-outline-primary btn-sm m-1" @click="edit(s.el)">
                                 <Icon v="pen"/>
-                                <T>crud.edit</T>
+                                <span class="btn-label">
+                                    <T v-if="$admin()">crud.edit</T>
+                                    <T v-else>nouns.edit</T>
+                                </span>
                             </button>
                         </li>
                     </ul>
@@ -134,7 +177,7 @@
 
 <script>
     import { InclusiveEntry } from "~/src/classes";
-    import { buildDict } from "../src/helpers";
+    import { buildDict, clearUrl } from "../src/helpers";
 
     export default {
         props: {
@@ -144,6 +187,7 @@
             return {
                 filter: '',
                 entriesRaw: undefined,
+                clearUrl,
             }
         },
         mounted() {
@@ -251,6 +295,30 @@
         }
         &:hover .hover-show {
             opacity: 1;
+        }
+    }
+
+    .btn-concise {
+        white-space: nowrap;
+    }
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .list-btn-concise {
+            min-width: 3rem;
+
+            li {
+                height: 2.5rem;
+            }
+        }
+        .btn-concise {
+            position: absolute;
+
+            .btn-label {
+                display: none;
+            }
+
+            &:hover .btn-label {
+                display: inline;
+            }
         }
     }
 </style>

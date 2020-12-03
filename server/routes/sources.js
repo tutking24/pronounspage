@@ -18,6 +18,7 @@ const buildEmail = (data, user) => {
         human.push(`<li><strong>${field}:</strong> ${field === 'fragments' ? `<pre>${data[field]}</pre>`: data[field]}</li>`);
         tsv.push(field === 'fragments' ? (data[field].join('@').replace(/\n/g, '|')) : data[field]);
     }
+    tsv.push(user ? user.id : '');
 
     return `<ul>${human.join('')}</ul><pre>${tsv.join('\t')}</pre>`;
 }

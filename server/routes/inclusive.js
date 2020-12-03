@@ -7,7 +7,8 @@ const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM inclusive WHERE id=${id}`);
     if (base_id) {
         await db.get(SQL`
-            DELETE FROM inclusive
+            UPDATE inclusive
+            SET deleted=1
             WHERE id = ${base_id}
         `);
     }
@@ -25,6 +26,7 @@ router.get('/inclusive', async (req, res) => {
         SELECT * FROM inclusive
         WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
+        AND deleted = 0
         ORDER BY approved, insteadOf
     `));
 });
@@ -35,6 +37,7 @@ router.get('/inclusive/search/:term', async (req, res) => {
         SELECT * FROM inclusive
         WHERE locale = ${req.config.locale}
         AND approved >= ${req.admin ? 0 : 1}
+        AND deleted = 0
         AND (insteadOf like ${term} OR say like ${term})
         ORDER BY approved, insteadOf
     `));
@@ -47,11 +50,12 @@ router.post('/inclusive/submit', async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO inclusive (id, insteadOf, say, because, approved, base_id, locale)
+        INSERT INTO inclusive (id, insteadOf, say, because, approved, base_id, locale, author_id, categories, links)
         VALUES (
             ${id},
             ${req.body.insteadOf.join('|')}, ${req.body.say.join('|')}, ${req.body.because},
-            0, ${req.body.base}, ${req.config.locale}
+            0, ${req.body.base}, ${req.config.locale}, ${req.user ? req.user.id : null},
+            ${req.body.categories.join(',')}, ${JSON.stringify(req.body.links)}
         )
     `);
 
@@ -92,7 +96,8 @@ router.post('/inclusive/remove/:id', async (req, res) => {
     }
 
     await req.db.get(SQL`
-        DELETE FROM inclusive
+        UPDATE inclusive
+        SET deleted=1
         WHERE id = ${req.params.id}
     `);
 

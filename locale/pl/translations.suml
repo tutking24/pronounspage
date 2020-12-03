@@ -328,6 +328,8 @@ nouns:
                 Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
                 Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
                 jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
+        categories: 'Kategorie'
+        sources: 'Linki źródłowe'
 
 names:
     header: 'Imiona'
@@ -886,6 +888,7 @@ crud:
     filter: 'Filtruj'
     filterLong: 'Filtruj listę…'
     search: 'Szukaj…'
+    author: 'Dodane przez'
 
 footer:
     source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'
