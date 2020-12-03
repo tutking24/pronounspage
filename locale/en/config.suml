@@ -216,6 +216,7 @@ profile:
             - 'sir'
             - 'ma''am'
             - 'madam'
+            - 'sai'
             - 'shazam'
             - 'zam'
         - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis', 'sib']
