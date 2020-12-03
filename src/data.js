@@ -61,6 +61,14 @@ export const getSources = (selectedPronoun) => {
             sources[option] = pronoun.sources;
         }
     }
+
+    if (Object.keys(sources).length === 0) {
+        const pronoun = getPronoun(pronouns, selectedPronoun.canonicalName);
+        if (pronoun && pronoun.sources.length) {
+            sources[selectedPronoun.canonicalName] = pronoun.sources;
+        }
+    }
+
     return sources;
 }
 

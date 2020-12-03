@@ -96,6 +96,21 @@ links:
             headline: 'Style and grammar guidelines regarding singular “they”'
             extra: '– American Psychological Association'
         -
+            icon: 'book-open'
+            url: 'https://apastyle.apa.org/blog/singular-they'
+            headline: 'Welcome, singular “they”'
+            extra: '– American Psychological Association'
+        -
+            icon: 'trophy'
+            url: 'https://www.americandialect.org/2015-word-of-the-year-is-singular-they'
+            headline: '2015 Word of the Year is singular “they”'
+            extra: '– American Dialect Society'
+        -
+            icon: 'trophy'
+            url: 'https://www.americandialect.org/2019-word-of-the-year-is-my-pronouns-word-of-the-decade-is-singular-they'
+            headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
+            extra: '– American Dialect Society'
+        -
             icon: 'wikipedia-w'
             iconSet: 'b'
             url: 'https://lgbta.wikia.org/wiki/Neopronouns'

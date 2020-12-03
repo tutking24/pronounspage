@@ -90,7 +90,7 @@
         <section v-for="pronoun in pronouns" v-if="pronoun.sources.length">
             <SourceList :names="pronoun.sources" :filter="filter" :filterType="filterType">
                 <h2 class="h4" :id="toId(pronoun.name(glue))">
-                    <nuxt-link :to="'/' + pronoun.pronoun()">
+                    <nuxt-link :to="'/' + pronoun.canonicalName">
                         {{ pronoun.description }}
                         <small>({{ pronoun.name(glue) }})</small>
                     </nuxt-link>
