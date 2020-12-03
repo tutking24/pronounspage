@@ -928,3 +928,7 @@ api:
     header: 'Publiczne API'
     example: 'Przykład'
     query: 'Query string parameters'
+
+quotation:
+    start: '„'
+    end: '”'

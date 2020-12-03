@@ -7,13 +7,15 @@ one,one/one's	Specific “one”	TRUE	one	one	one's	one's	oneself	FALSE	FALSE	TR
 e,e/em	Neopronoun “e”	FALSE	e|i	em|ɛm	es|iz	ems|ɛmz	emself|ɛmsɛlf	FALSE	FALSE	TRUE	First created in 1890 by James Rogers based on {/he=he} and {/them=them} pronoun sets. Since then multiple versions were created, differing in declension and capitalisation.
 ae,æ,ae/aer,æ/ær	Neopronoun “ae” / “æ”	FALSE	ae|ei	aer|ɛɹ	aer|ɛɹ	aers|ɛɹz	aerself|ɛɹsɛlf	FALSE	FALSE	TRUE	Created by David Lindsay for a 1920 novel <em>A Voyage to Arcturus</em>, where it's used by an alien, third-sex species.
 thon,thon/thons	Neopronoun “thon”	FALSE	thon|ðɑn	thon|ðɑn	thons|ðɑnz	thon's|ðɑnz	thonself|ðɑnsɛlf	FALSE	FALSE	TRUE	Created by Charles Crozat Converse in 1858, thon/thons/thonself is one of the first known examples of creating a gender neutral pronoun. “Thon” is a contraction of “that one”.
-co,co/cos	Neopronoun “co”	FALSE	co|ko	co|ko	cos|koz	co's|koz	coself|kosɛlf	FALSE	FALSE	TRUE	Created by Mary Orovan in 1970, derived from the Indo-European _*ko_.
-ve,ve/ver	Neopronoun “ve”	FALSE	ve|vi	ver|vəɹ	vis|viz	vers|vəɹz	verself|vəɹsɛlf	FALSE	FALSE	TRUE	Used eg. by Greg Egan in <em>Distress</em> (1995) and <em>Diaspora</em> (1998), and by Keri Hulme in <em>The Bone People</em> (1984).
-vi,vi/vir	Neopronoun “vi”	FALSE	vi|vi	vir|viɹ	vis|viz	virs|viɹz	virself|viɹsɛlf	FALSE	FALSE	TRUE	Used eg. by Greg Egan in <em>Distress</em> (1995) and <em>Diaspora</em> (1998), and by Keri Hulme in <em>The Bone People</em> (1984).
-xe,xe/xem	Neopronoun “xe”	FALSE	xe|zi	xem|zɛm	xyr|ziɹ	xyrs|ziɹz	xyrself|zɛmsɛlf	FALSE	FALSE	TRUE	Coined by Don Rickter in an issue of <em>Unitarian Universalist</em> in 1973.
+co,co/cos	Neopronoun “co/cos”	FALSE	co|ko	co|ko	cos|koz	co's|koz	coself|kosɛlf	FALSE	FALSE	TRUE	Created by Mary Orovan in 1970, derived from the Indo-European _*ko_.
+ve,ve/ver	Neopronoun “ve/ver”	FALSE	ve|vi	ver|vəɹ	vis|viz	vers|vəɹz	verself|vəɹsɛlf	FALSE	FALSE	TRUE	Used eg. by Greg Egan in <em>Distress</em> (1995) and <em>Diaspora</em> (1998), and by Keri Hulme in <em>The Bone People</em> (1984).	distress
+vi,vi/vir	Neopronoun “vi/vir”	FALSE	vi|vi	vir|viɹ	vis|viz	virs|viɹz	virself|viɹsɛlf	FALSE	FALSE	TRUE	Used eg. by Greg Egan in <em>Distress</em> (1995) and <em>Diaspora</em> (1998), and by Keri Hulme in <em>The Bone People</em> (1984).
+xe,xe/xem	Neopronoun “xe/xem”	FALSE	xe|zi	xem|zɛm	xyr|ziɹ	xyrs|ziɹz	xyrself|zɛmsɛlf	FALSE	FALSE	TRUE	Coined by Don Rickter in an issue of <em>Unitarian Universalist</em> in 1973.
 ey,ey/em	Elverson pronouns	FALSE	ey|eɪ	em|ɛm	eir|ɛɹ	eirs|ɛɹz	emselves|ɛmsɛlf	TRUE	TRUE	TRUE	Coined by Christine M. Elverson in 1975 for a contest to create an alternative to the singular {/they=they}. Those forms are created by dropping “th” from “they”.
 per,per/per	Person pronouns	FALSE	per|pəɹ	per|pəɹ	per|pəɹ	pers|pəɹz	perself|pəɹsɛlf	FALSE	FALSE	TRUE	Coined by John Clark in an issue of the <em>Newsletter of the American Anthropological Association</em> in 1972, derived from the word “person”.
 hu,hu/hum	Humanist pronouns	FALSE	hu|hju	hum|hjum	hus|hjuz	hus|hjuz	huself|hjusɛlf	FALSE	FALSE	TRUE	Coined by Sasha Newborn in 1982, based on the word “human”.
 e/em/eir	Spivak pronouns	FALSE	e|i	em|ɛm	eir|ɛɹ	eirs|ɛɹz	emself|ɛmsɛlf	FALSE	FALSE	TRUE	Coined by Michael Spivak in 1990 for his manual <em>The Joy of TeX</em> to avoid gendering people in the examples.
-ze,ze/zir	Neopronoun “ze”	FALSE	ze|zi	zir|zəɹ	zir|zəɹ	zirs|zəɹz	zirself|zəɹsɛlf	FALSE	FALSE	TRUE	Based on the German plural 3rd person pronoun <em>sie</em>.
-fae,fæ,fae/faer,fæ/fær	Neopronoun “fae”	FALSE	fae|feɪ	faer|fɛɹ	faer|fɛɹ	faers|fɛɹz	faerself|fɛɹsɛlf	FALSE	FALSE	TRUE	Created in 2014 by Tumblr user shadaras.
+ze,ze/zir	Neopronoun “ze/zir”	FALSE	ze|zi	zir|zəɹ	zir|zəɹ	zirs|zəɹz	zirself|zəɹsɛlf	FALSE	FALSE	TRUE	Based on the German plural 3rd person pronoun <em>sie</em>.
+fae,fæ,fae/faer,fæ/fær	Neopronoun “fae/faer”	FALSE	fae|feɪ	faer|fɛɹ	faer|fɛɹ	faers|fɛɹz	faerself|fɛɹsɛlf	FALSE	FALSE	TRUE	Created in 2014 by Tumblr user shadaras.
+zhe,zhe/zher	Neopronoun “zhe/zher”	FALSE	zhe	zher	zher	zhers	zherself	FALSE	FALSE	FALSE
+ze/hir	Neopronoun “ze/hir”	FALSE	ze	hir	hir	hirs	hirself	FALSE	FALSE	FALSE		differentlyAnimated,prefaceTo,buckingThe

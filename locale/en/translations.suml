@@ -434,3 +434,7 @@ api:
     header: 'Public API'
     example: 'Example'
     query: 'Query string parameters'
+
+quotation:
+    start: '“'
+    end: '”'
