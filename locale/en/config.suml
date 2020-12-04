@@ -83,6 +83,11 @@ links:
             headline: 'Pronoun.is'
             extra: '– inspiration for this website.'
         -
+            icon: 'chart-pie'
+            url: 'https://gendercensus.com/'
+            headline: 'Gender Census'
+            extra: '– annual survey about the language used by nonbinary people'
+        -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
             headline: 'Why EVERYONE should have pronouns in their bio'
@@ -111,6 +116,16 @@ links:
             headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
             extra: '– American Dialect Society'
         -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
+            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
+            extra: '– Tom Scott'
+        -
+            icon: 'book-open'
+            url: 'https://blogs.illinois.edu/view/25/677177'
+            headline: 'A Brief History of Singular “they”'
+            extra: '– Dennis Baron'
+        -
             icon: 'wikipedia-w'
             iconSet: 'b'
             url: 'https://lgbta.wikia.org/wiki/Neopronouns'
@@ -125,10 +140,15 @@ links:
             headline: 'English’s Pronoun Problem Is Centuries Old'
             extra: '– The New York Times'
         -
-            icon: 'play-circle'
-            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
-            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
-            extra: '– Tom Scott'
+            icon: 'user-edit'
+            url: 'http://faculty.las.illinois.edu/debaron/'
+            headline: 'Dennis Baron'
+            extra: '– author of “What''s your pronoun?”, has been researching gender-neutrality for some 40 years now'
+        -
+            icon: 'book-open'
+            url: 'https://ojs.lib.uwo.ca/index.php/wpl_clw/article/download/966/456'
+            headline: 'Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German'
+            extra: '– Levi C. R. Hord'
         -
             icon: 'twitch'
             iconSet: 'b'
