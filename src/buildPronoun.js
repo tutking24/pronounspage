@@ -21,6 +21,26 @@ export const getPronoun = (pronouns, id) => {
     return addAliasesToPronouns(pronouns)[id];
 }
 
+const buildPronounFromTemplate = (key, template) => {
+    return new Pronoun(
+        key,
+        template.description,
+        template.normative || false,
+        buildDict(function*(morphemes) {
+            for (let k in morphemes) {
+                if (morphemes.hasOwnProperty(k)) {
+                    yield [k, morphemes[k].replace(/#/g, key)];
+                }
+            }
+        }, template.morphemes),
+        [template.plural || false],
+        [template.pluralHonorific || false],
+        template.aliases || [],
+        template.history || '',
+        false,
+    );
+}
+
 export const buildPronoun = (pronouns, path) => {
     const pronounsWithAliases = addAliasesToPronouns(pronouns);
 
@@ -66,7 +86,6 @@ export const buildPronoun = (pronouns, path) => {
             [ p[p.length - 1].endsWith('selves') ],  // TODO English specific, extract somewhere
             [ false ],
             [],
-            [],
             null,
             false,
         )
@@ -93,7 +112,6 @@ export const parsePronouns = (pronounsRaw) => {
                     }),
                     [t.plural],
                     [t.pluralHonorific],
-                    t.sources ? t.sources.split(',') : [],
                     aliases.slice(1),
                     t.history,
                     t.pronounceable,
@@ -103,23 +121,3 @@ export const parsePronouns = (pronounsRaw) => {
     });
 }
 
-export const buildPronounFromTemplate = (key, template) => {
-    return new Pronoun(
-        key,
-        template.description,
-        template.normative || false,
-        buildDict(function*(morphemes) {
-            for (let k in morphemes) {
-                if (morphemes.hasOwnProperty(k)) {
-                    yield [k, morphemes[k].replace(/#/g, key)];
-                }
-            }
-        }, template.morphemes),
-        [template.plural || false],
-        [template.pluralHonorific || false],
-        template.sources || [],
-        template.aliases || [],
-        template.history || null,
-        false,
-    )
-}

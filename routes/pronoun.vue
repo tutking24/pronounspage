@@ -90,8 +90,8 @@
             <Share :title="`${$t('pronouns.intro')}: ${selectedPronoun.name(glue)}`"/>
         </section>
 
-        <section v-if="Object.keys(sources).length">
-            <Literature :sources="sources"/>
+        <section v-if="Object.values(sourceLibrary.getForPronounExtended(selectedPronoun.canonicalName)).filter(x => !!x).length">
+            <Literature :sources="sourceLibrary.getForPronounExtended(selectedPronoun.canonicalName)"/>
         </section>
 
         <Separator icon="info"/>
@@ -112,6 +112,7 @@
     import {head} from "../src/helpers";
     import GrammarTables from "../data/pronouns/GrammarTables";
     import LinkedText from "../components/LinkedText";
+    import {SourceLibrary} from "../src/classes";
 
     export default {
         components: {LinkedText, GrammarTables },
@@ -132,6 +133,11 @@
                 counter: 0,
             }
         },
+        async asyncData({app}) {
+            return {
+                sources: await app.$axios.$get(`/sources`),
+            }
+        },
         mounted() {
             if (process.client) {
                 setInterval(_ => this.counter++, 1000);
@@ -149,8 +155,8 @@
             },
         },
         computed: {
-            sources() {
-                return getSources(this.selectedPronoun);
+            sourceLibrary() {
+                return new SourceLibrary(this.sources);
             },
         },
     }

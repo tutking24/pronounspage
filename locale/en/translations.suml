@@ -49,6 +49,7 @@ pronouns:
     alt:
         button: 'Generate a link to interchangeable forms'
         header: 'Interchangeable forms'
+        raw: 'interchangeable'
     any:
         header: 'Any pronouns'
         short: 'any'
@@ -80,6 +81,7 @@ sources:
         header: 'Submit an example to be added'
         action: 'Submit'
         pronouns: 'Which pronouns have been used?'
+        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
         type: 'Source type'
         author: 'Author'
         title: 'Title'

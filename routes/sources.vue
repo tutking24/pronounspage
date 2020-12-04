@@ -49,7 +49,14 @@
                         </li>
                     </ul>
                 </li>
-                <li class="list-group-item" v-if="otherSources.length">
+                <li class="list-group-item" v-if="sourceLibrary.multiple.length">
+                    <p class="h5 mb-0">
+                        <a :href="'#' + $t('pronouns.alt.raw')">
+                            <strong><T>pronouns.alt.header</T></strong>
+                        </a>
+                    </p>
+                </li>
+                <li class="list-group-item" v-if="sourceLibrary.getForPronoun('')">
                     <p class="h5 mb-0">
                         <a :href="'#' + $t('pronouns.othersRaw')">
                             <strong><T>pronouns.others</T></strong>
@@ -87,8 +94,8 @@
             </div>
         </section>
 
-        <section v-for="pronoun in pronouns" v-if="pronoun.sources.length">
-            <SourceList :names="pronoun.sources" :filter="filter" :filterType="filterType">
+        <section v-for="pronoun in pronouns" v-if="sourceLibrary.getForPronoun(pronoun.canonicalName).length">
+            <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :filter="filter" :filterType="filterType">
                 <h2 class="h4" :id="toId(pronoun.name(glue))">
                     <nuxt-link :to="'/' + pronoun.canonicalName">
                         {{ pronoun.description }}
@@ -98,8 +105,9 @@
             </SourceList>
         </section>
 
-        <section v-for="(sources, multiple) in sourcesForMultipleForms">
-            <SourceList :names="sources" :filter="filter" :filterType="filterType">
+        <a :id="$t('pronouns.alt.raw')"/>
+        <section v-for="multiple in sourceLibrary.multiple" v-if="sourceLibrary.getForPronoun(multiple).length">
+            <SourceList :sources="sourceLibrary.getForPronoun(multiple)" :filter="filter" :filterType="filterType">
                 <h2 class="h4" :id="toId(multiple)">
                     <nuxt-link :to="'/' + multiple">
                         <T>pronouns.alt.header</T>
@@ -109,8 +117,8 @@
             </SourceList>
         </section>
 
-        <section v-if="otherSources.length">
-            <SourceList :names="otherSources" :filter="filter" :filterType="filterType">
+        <section v-if="sourceLibrary.getForPronoun('')">
+            <SourceList :sources="sourceLibrary.getForPronoun('')" :filter="filter" :filterType="filterType">
                 <h2 class="h4" :id="$t('pronouns.othersRaw')">
                     <T>pronouns.others</T>
                 </h2>
@@ -120,16 +128,14 @@
 </template>
 
 <script>
-    import { pronouns, sources, pronounLibrary } from '../src/data'
-    import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
-    import { Source } from "../src/classes";
+    import { pronouns, pronounLibrary } from '../src/data'
+    import { Source, SourceLibrary } from "../src/classes";
     import { head } from "../src/helpers";
 
     export default {
         data() {
             return {
                 pronouns,
-                sourcesForMultipleForms: sourcesForMultipleForms,
                 pronounLibrary,
                 tocShown: false,
                 sourceTypes: Source.TYPES,
@@ -138,6 +144,11 @@
                 glue: ' ' + this.$t('pronouns.or') + ' ',
                 submitShown: false,
             };
+        },
+        async asyncData({app}) {
+            return {
+                sources: await app.$axios.$get(`/sources`),
+            }
         },
         mounted() {
             if (process.client && window.location.hash) {
@@ -153,31 +164,17 @@
             });
         },
         computed: {
-            otherSources() {
-                const other = new Set(Object.keys(sources));
-                for (let pronoun of Object.values(this.pronouns)) {
-                    for (let source of pronoun.sources) {
-                        other.delete(source);
-                    }
-                }
-                for (let sources of Object.values(this.sourcesForMultipleForms)) {
-                    for (let source of sources) {
-                        other.delete(source);
-                    }
-                }
-                return [...other];
+            sourceLibrary() {
+                return new SourceLibrary(this.sources);
             },
         },
         methods: {
             toId(str) {
                 return str.replace(/\//g, '-').replace(/&/g, '_');
             },
-            filterPronoun(t) {
-                if (typeof t === 'string') {
-                    return Object.keys(sourcesForMultipleForms).includes(t);
-                }
-                return t.sources.length;
-            }
+            filterPronoun(pronoun) {
+                return this.sourceLibrary.getForPronoun(pronoun.canonicalName).length > 0;
+            },
         },
     }
 </script>

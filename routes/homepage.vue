@@ -179,9 +179,6 @@
                         <div class="card-footer" v-if="link">
                             <LinkInput :link="link"/>
                         </div>
-                        <div class="card-body border-top" v-if="Object.keys(sources).length">
-                            <Literature :sources="sources"/>
-                        </div>
                     </div>
                 </li>
                 <li class="list-group-item">
@@ -213,7 +210,7 @@
 </template>
 
 <script>
-    import { examples, pronouns, getSources, pronounLibrary } from "~/src/data";
+    import { examples, pronouns, pronounLibrary } from "~/src/data";
     import { ExamplePart } from "~/src/classes";
     import Compressor from "../src/compressor";
     import MORPHEMES from '../data/pronouns/morphemes';
@@ -276,9 +273,6 @@
                 }
 
                 return this.addSlash(this.$base + '/' + this.multiple.join('&'));
-            },
-            sources() {
-                return getSources(this.selectedPronoun);
             },
         },
         methods: {

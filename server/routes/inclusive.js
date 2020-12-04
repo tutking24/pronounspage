@@ -23,23 +23,25 @@ const router = Router();
 
 router.get('/inclusive', async (req, res) => {
     return res.json(await req.db.all(SQL`
-        SELECT * FROM inclusive
-        WHERE locale = ${req.config.locale}
-        AND approved >= ${req.admin ? 0 : 1}
-        AND deleted = 0
-        ORDER BY approved, insteadOf
+        SELECT i.*, u.username AS author FROM inclusive i
+        LEFT JOIN users u ON i.author_id = u.id
+        WHERE i.locale = ${req.config.locale}
+        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.deleted = 0
+        ORDER BY i.approved, i.insteadOf
     `));
 });
 
 router.get('/inclusive/search/:term', async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await req.db.all(SQL`
-        SELECT * FROM inclusive
-        WHERE locale = ${req.config.locale}
-        AND approved >= ${req.admin ? 0 : 1}
-        AND deleted = 0
-        AND (insteadOf like ${term} OR say like ${term})
-        ORDER BY approved, insteadOf
+        SELECT i.*, u.username AS author FROM inclusive i
+        LEFT JOIN users u ON i.author_id = u.id
+        WHERE i.locale = ${req.config.locale}
+        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.deleted = 0
+        AND (i.insteadOf like ${term} OR i.say like ${term})
+        ORDER BY i.approved, i.insteadOf
     `));
 });
 

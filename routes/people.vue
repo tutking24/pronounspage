@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                 </ul>
-                <SourceList v-if="person.sources.length" :names="person.sources"/>
+                <!-- TODO <SourceList v-if="person.sources.length" :names="person.sources"/> -->
             </li>
         </ul>
 
@@ -42,6 +42,7 @@
 <script>
     import { people } from "~/src/data";
     import { head } from "../src/helpers";
+    import {SourceLibrary} from "../src/classes";
 
     export default {
         data() {
@@ -49,11 +50,21 @@
                 people,
             }
         },
+        async asyncData({app}) {
+            return {
+                sources: await app.$axios.$get(`/sources`),
+            }
+        },
         head() {
             return head({
                 title: this.$t('people.headerLonger'),
                 description: this.$t('people.description'),
             });
+        },
+        computed: {
+            sourceLibrary() {
+                return new SourceLibrary(this.sources);
+            },
         },
     }
 </script>

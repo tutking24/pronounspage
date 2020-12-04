@@ -21,7 +21,7 @@
                 </nuxt-link>
             </h3>
 
-            <SourceList :names="optionSources"/>
+            <SourceList :sources="optionSources"/>
         </section>
     </div>
 </template>

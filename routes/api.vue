@@ -56,7 +56,7 @@
                     icon: 'books',
                     endpoints: {
                         sources_all: ['GET', '/api/sources'],
-                        sources_one: ['GET', '/api/sources/{key}'],
+                        sources_one: ['GET', '/api/sources/{id}'],
                     },
                 }, {
                     enabled: this.config.nouns.enabled,

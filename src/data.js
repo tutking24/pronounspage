@@ -1,7 +1,6 @@
 import {Source, Example, NounTemplate, PronounGroup, PronounLibrary, Name, Person, NounDeclension} from './classes'
 import { buildDict, buildList } from './helpers';
-import { parsePronouns, getPronoun } from './buildPronoun';
-import sourcesForMultipleForms from '../data/sources/sourcesMultiple';
+import { parsePronouns } from './buildPronoun';
 
 export const socialProviders = {
     twitter: { name: 'Twitter' },
@@ -22,55 +21,6 @@ export const examples = buildList(function* () {
         );
     }
 });
-
-import sourcesRaw from '../data/sources/sources.tsv';
-export const sources = buildDict(function* () {
-    for (let s of sourcesRaw) {
-        yield [
-            s.key,
-            new Source(
-                s.type,
-                s.author,
-                s.title,
-                s.extra,
-                s.year,
-                s.fragments ? s.fragments.replace(/\|/g, '\n').split('@') : [],
-                s.comment,
-                s.link,
-            )
-        ];
-    }
-});
-
-export const getSources = (selectedPronoun) => {
-    if (!selectedPronoun) {
-        return {};
-    }
-
-    let sources = {};
-    for (let multiple in sourcesForMultipleForms) {
-        if (sourcesForMultipleForms.hasOwnProperty(multiple)) {
-            if (multiple === selectedPronoun.canonicalName) {
-                sources[multiple] = sourcesForMultipleForms[multiple];
-            }
-        }
-    }
-    for (let option of selectedPronoun.nameOptions()) {
-        const pronoun = getPronoun(pronouns, option);
-        if (pronoun && pronoun.sources.length) {
-            sources[option] = pronoun.sources;
-        }
-    }
-
-    if (Object.keys(sources).length === 0) {
-        const pronoun = getPronoun(pronouns, selectedPronoun.canonicalName);
-        if (pronoun && pronoun.sources.length) {
-            sources[selectedPronoun.canonicalName] = pronoun.sources;
-        }
-    }
-
-    return sources;
-}
 
 import nounTemplatesRaw from '../data/nouns/nounTemplates.tsv';
 export const nounTemplates = buildList(function* () {

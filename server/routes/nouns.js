@@ -30,7 +30,7 @@ router.get('/nouns', async (req, res) => {
         SELECT n.*, u.username AS author FROM nouns n
         LEFT JOIN users u ON n.author_id = u.id
         WHERE n.locale = ${req.config.locale}
-        AND deleted = 0
+        AND n.deleted = 0
         AND n.approved >= ${req.admin ? 0 : 1}
         ORDER BY n.approved, n.masc
     `));
@@ -39,12 +39,13 @@ router.get('/nouns', async (req, res) => {
 router.get('/nouns/search/:term', async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await req.db.all(SQL`
-        SELECT * FROM nouns
-        WHERE locale = ${req.config.locale}
-        AND approved >= ${req.admin ? 0 : 1}
-        AND deleted = 0
-        AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
-        ORDER BY approved, masc
+        SELECT n.*, u.username AS author FROM nouns n
+        LEFT JOIN users u ON n.author_id = u.id
+        WHERE n.locale = ${req.config.locale}
+        AND n.approved >= ${req.admin ? 0 : 1}
+        AND n.deleted = 0
+        AND (n.masc like ${term} OR n.fem like ${term} OR n.neutr like ${term} OR n.mascPl like ${term} OR n.femPl like ${term} OR n.neutrPl like ${term})
+        ORDER BY n.approved, n.masc
     `));
 });
 

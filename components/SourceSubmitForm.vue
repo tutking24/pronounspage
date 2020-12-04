@@ -54,8 +54,12 @@
                 </div>
                 <div class="form-group">
                     <label for="pronouns" class="required"><T>sources.submit.pronouns</T></label>
-                    <input type="text" id="pronouns" class="form-control" v-model="form.pronouns"
-                           required maxlength="255"/>
+                    <p class="small text-muted mb-0">
+                        <T>sources.submit.pronounsInfo</T>
+                    </p>
+                    <ListInput v-model="form.pronouns" v-slot="s">
+                        <input v-model="s.val" type="text" class="form-control" @keyup="s.update(s.val)" required maxlength="24"/>
+                    </ListInput>
                 </div>
                 <div class="form-group">
                     <label for="comment"><T>sources.submit.comment</T></label>
@@ -82,7 +86,7 @@
         data() {
             return {
                 form: {
-                    pronouns: '',
+                    pronouns: [''],
                     type: '',
                     author: '',
                     title: '',
@@ -105,7 +109,7 @@
                 this.submitting = false;
                 this.afterSubmit = true;
                 this.form = {
-                    pronouns: '',
+                    pronouns: [''],
                     type: '',
                     author: '',
                     title: '',

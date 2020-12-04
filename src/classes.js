@@ -96,16 +96,20 @@ function clone(mainObject) {
 }
 
 export class Source {
-    constructor (type, author, title, extra, year, fragments = [], comment = null, link = null, submitter = null) {
+    constructor ({id, pronouns, type, author, title, extra, year, fragments = '', comment = null, link = null, submitter = null, approved, base_id = null,}) {
+        this.id = id;
+        this.pronouns = pronouns ? pronouns.split(';') : [];
         this.type = type;
         this.author = author;
         this.title = title;
         this.extra = extra;
         this.year = year;
-        this.fragments = fragments;
+        this.fragments = fragments ? fragments.replace(/\|/g, '\n').split('@') : [];
         this.comment = comment;
         this.link = link;
         this.submitter = submitter;
+        this.approved = approved;
+        this.base_id = base_id;
     }
 
     static get TYPES() {
@@ -138,6 +142,101 @@ export class Source {
     }
 }
 
+
+export class SourceLibrary {
+    constructor(rawSources) {
+        this.sources = rawSources.map(s => new Source(s));
+        this.map = {};
+        const multiple = new Set();
+        const pronouns = new Set();
+
+        for (let source of this.sources) {
+            if (!source.pronouns.length) {
+                if (this.map[''] === undefined) { this.map[''] = []; }
+                this.map[''].push(source);
+                continue;
+            }
+            for (let pronoun of source.pronouns) {
+                if (this.map[pronoun] === undefined) { this.map[pronoun] = []; }
+                this.map[pronoun].push(source);
+
+                pronouns.add(pronoun);
+                if (pronoun.includes('&')) {
+                    multiple.add(pronoun);
+                }
+            }
+        }
+        this.pronouns = [...pronouns];
+        this.multiple = [...multiple];
+        this.cache = {}
+    }
+
+    getForPronoun(pronoun) {
+        if (this.cache[pronoun] === undefined) {
+            let sources = this.map[pronoun] || [];
+
+            if (pronoun === '') {
+                for (let p of this.pronouns) {
+                    // add pronouns that have never been requested to "other"
+                    if (this.cache[p] === undefined) {
+                        sources = [...sources, ...this.map[p]];
+                    }
+                }
+            }
+
+            this.cache[pronoun] = sources
+                .map(s => this.addMetaData(s))
+                .sort((a, b) => {
+                    if (a.typePriority !== b.typePriority) {
+                        return b.typePriority - a.typePriority;
+                    }
+
+                    return a.sortString.localeCompare(b.sortString);
+                });
+        }
+
+        return this.cache[pronoun];
+    }
+
+    getForPronounExtended(pronoun) {
+        let sources = {};
+        const s = this.getForPronoun(pronoun);
+        sources[pronoun] = s.length ? s : undefined;
+
+        if (pronoun.includes('&')) {
+            for (let option of pronoun.split('&')) {
+                const s = this.getForPronoun(option);
+                sources[option] = s.length ? s : undefined;
+            }
+        }
+
+        return sources;
+    }
+
+    addMetaData(source) {
+        source.typePriority = Source.TYPES_PRIORITIES[source.type];
+
+        source.sortString = source.author || 'ZZZZZ' + source.title; // if no author, put on the end
+        if (source.sortString.includes('^')) {
+            const index = source.sortString.indexOf('^');
+            source.sortString = source.sortString.substring(index + 1) + ' ' + source.sortString.substring(0, index);
+        }
+
+        source.index = [
+            (source.author || '').replace('^', ''),
+            source.title,
+            source.extra,
+            source.year,
+            //...source.fragments,
+            source.comment,
+            source.link,
+        ].join(' ').toLowerCase().replace(/<\/?[^>]+(>|$)/g, '');
+
+        return source;
+    }
+}
+
+
 const escape = s => {
     if (Array.isArray(s)) {
         s = s.join('&');
@@ -152,7 +251,7 @@ const escape = s => {
 }
 
 export class Pronoun {
-    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, sources = [], aliases = [], history = null, pronounceable = true) {
+    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, aliases = [], history = '', pronounceable = true) {
         this.canonicalName = canonicalName;
         this.description = description;
         this.normative = normative;
@@ -166,7 +265,6 @@ export class Pronoun {
         }
         this.plural = plural;
         this.pluralHonorific = pluralHonorific;
-        this.sources = sources;
         this.aliases = aliases;
         this.history = history;
         this.pronounceable = pronounceable;
@@ -194,7 +292,17 @@ export class Pronoun {
     }
 
     clone() {
-        return new Pronoun(this.canonicalName, this.description, this.normative, clone(this.morphemes), [...this.plural], [...this.pluralHonorific], this.pronounceable);
+        return new Pronoun(
+            this.canonicalName,
+            this.description,
+            this.normative,
+            clone(this.morphemes),
+            [...this.plural],
+            [...this.pluralHonorific],
+            [...this.aliases],
+            this.history,
+            this.pronounceable
+        );
     }
 
     equals(other) {
@@ -214,6 +322,8 @@ export class Pronoun {
             }, this, other),
             [...this.plural, ...other.plural],
             [...this.pluralHonorific, ...other.pluralHonorific],
+            [],
+            '',
             false,
         );
     }
@@ -319,6 +429,8 @@ export class Pronoun {
             m,
             data[MORPHEMES.length].split('').map(p => parseInt(p) === 1),
             data[MORPHEMES.length + 1].split('').map(p => parseInt(p) === 1),
+            [],
+            null,
             false,
         )
     }

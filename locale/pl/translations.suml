@@ -61,6 +61,7 @@ pronouns:
     alt:
         button: 'Wygeneruj link do form wymiennych'
         header: 'Formy wymienne'
+        raw: 'wymienne'
     any:
         header: 'Dowolne zaimki'
         short: 'dowolne'
@@ -172,6 +173,7 @@ sources:
         header: 'Zgłoś przykład do dodania'
         action: 'Zgłoś'
         pronouns: 'Które zaimki/formy są użyte?'
+        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. “onu”, “ono/jej”, “on&ona”'
         type: 'Rodzaj źródła kultury'
         author: 'Autor'
         title: 'Tytuł'

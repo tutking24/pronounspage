@@ -1,56 +1,105 @@
 import { Router } from 'express';
-import mailer from "../../src/mailer";
-import { camelCase } from "../../src/helpers";
-import { loadTsv } from '../loader';
+import SQL from "sql-template-strings";
+import {ulid} from "ulid";
 
-const generateId = title => {
-    return camelCase(title.split(' ').slice(0, 2));
-}
-
-const buildEmail = (data, user) => {
-    const human = [
-        `<li><strong>user:</strong> ${user ? user.username : ''}</li>`,
-        `<li><strong>pronouns:</strong> ${data.pronouns}</li>`,
-    ];
-    const tsv = [generateId(data.title) || '???'];
-
-    for (let field of ['type','author','title','extra','year','fragments','comment','link']) {
-        human.push(`<li><strong>${field}:</strong> ${field === 'fragments' ? `<pre>${data[field]}</pre>`: data[field]}</li>`);
-        tsv.push(field === 'fragments' ? (data[field].join('@').replace(/\n/g, '|')) : data[field]);
+const approve = async (db, id) => {
+    const { base_id } = await db.get(SQL`SELECT base_id FROM sources WHERE id=${id}`);
+    if (base_id) {
+        await db.get(SQL`
+            UPDATE sources
+            SET deleted=1
+            WHERE id = ${base_id}
+        `);
     }
-    tsv.push(user ? user.id : '');
-
-    return `<ul>${human.join('')}</ul><pre>${tsv.join('\t')}</pre>`;
-}
-
-const loadSources = () => {
-    return loadTsv('sources/sources').map(s => {
-        if (s.author) {
-            s.author = s.author.replace('^', '');
-        }
-        s.fragments = s.fragments.split('@').map(f => f.replace(/\|/g, '\n'));
-        return s;
-    });
+    await db.get(SQL`
+        UPDATE sources
+        SET approved = 1, base_id = NULL
+        WHERE id = ${id}
+    `);
 }
 
 const router = Router();
 
 router.get('/sources', async (req, res) => {
-    return res.json(loadSources());
+    return res.json(await req.db.all(SQL`
+        SELECT s.*, u.username AS submitter FROM sources s
+        LEFT JOIN users u ON s.submitter_id = u.id
+        WHERE s.locale = ${req.config.locale}
+        AND s.deleted = 0
+        AND s.approved >= ${req.admin ? 0 : 1}
+    `));
 });
 
-router.get('/sources/:key', async (req, res) => {
-    return res.json([...loadSources().filter(s => s.key === req.params.key), null][0]);
+router.get('/sources/:id', async (req, res) => {
+    return res.json(await req.db.all(SQL`
+        SELECT s.*, u.username AS submitter FROM sources s
+        LEFT JOIN users u ON s.submitter_id = u.id
+        WHERE s.locale = ${req.config.locale}
+        AND s.deleted = 0
+        AND s.approved >= ${req.admin ? 0 : 1}
+        AND s.id = ${req.params.id}
+    `));
 });
 
 router.post('/sources/submit', async (req, res) => {
-    const emailBody = buildEmail(req.body, req.user);
+    console.log(req.body.fragments);
+    console.log(req.body.fragments.join('@'));
+    console.log(req.body.fragments.join('@').replace(/\n/g, '|'));
 
-    for (let admin of process.env.MAILER_ADMINS.split(',')) {
-        mailer(admin, `[Pronouns][${req.config.locale}] Source submission`, undefined, emailBody);
+    const id = ulid();
+    await req.db.get(SQL`
+        INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, submitter_id, base_id)
+        VALUES (
+            ${id}, ${req.config.locale}, ${req.body.pronouns.join(';')},
+            ${req.body.type}, ${req.body.author}, ${req.body.title}, ${req.body.extra}, ${req.body.year},
+            ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link},
+            ${req.user ? req.user.id : null}, ${req.body.base}  
+        )
+    `);
+
+    if (req.admin) {
+        await approve(req.db, id);
     }
 
-    return res.json({ result: 'ok' });
+    return res.json('ok');
+});
+
+router.post('/sources/hide/:id', async (req, res) => {
+    if (!req.admin) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE sources
+        SET approved = 0
+        WHERE id = ${req.params.id}
+    `);
+
+    return res.json('ok');
+});
+
+router.post('/sources/approve/:id', async (req, res) => {
+    if (!req.admin) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await approve(req.db, req.params.id);
+
+    return res.json('ok');
+});
+
+router.post('/sources/remove/:id', async (req, res) => {
+    if (!req.admin) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE sources
+        SET deleted=1
+        WHERE id = ${req.params.id}
+    `);
+
+    return res.json('ok');
 });
 
 export default router;
