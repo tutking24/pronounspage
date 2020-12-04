@@ -281,7 +281,12 @@ export class Pronoun {
             ? this.morphemes[MORPHEMES[2]].split('&')
             : this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
-            options.add(optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1]);
+            let nameOption = optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
+            if (nameOption === 'they/them' && this.morphemes['reflexive'].split('&')[i] === 'themself') {
+                // TODO english specific, extract
+                nameOption = 'they/them/themself';
+            }
+            options.add(nameOption);
         }
 
         return [...options]
