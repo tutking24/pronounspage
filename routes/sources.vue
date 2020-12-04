@@ -103,7 +103,7 @@
                 <h2 class="h4" :id="toId(multiple)">
                     <nuxt-link :to="'/' + multiple">
                         <T>pronouns.alt.header</T>
-                        <small>({{ multiple.replace(/&/g, ' lub ') }})</small>
+                        <small>({{ multiple.replace(/&/g, glue) }})</small>
                     </nuxt-link>
                 </h2>
             </SourceList>
