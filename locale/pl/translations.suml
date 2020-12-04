@@ -95,6 +95,7 @@ pronouns:
                 examples:
                     - ['pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi']
                     - ['znalazłam telefon', 'znaleziono telefon']
+                    - ['jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy']
             -
                 header: 'Bezosobowe użycie 3. os. mnogiej'
                 examples:
