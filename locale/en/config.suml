@@ -237,11 +237,13 @@ profile:
             - 'ma''am'
             - 'madam'
             - 'sai'
+            - 'mir'
             - 'shazam'
             - 'zam'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'bro', 'sis', 'sib']
+            - 'comrade'
+        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
         - ['pretty', 'handsome', 'cute', 'hot']
-        - ['partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate']
+        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling']
 
 redirects: []
 
