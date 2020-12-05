@@ -185,7 +185,6 @@
                 return this.sourceLibrary.getForPronoun(pronoun.canonicalName).length > 0;
             },
             edit(source) {
-                console.log(source);
                 this.submitShown = true;
                 this.$nextTick(() => this.$refs.form.edit(source));
             }

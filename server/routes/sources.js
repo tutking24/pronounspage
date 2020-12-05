@@ -42,10 +42,6 @@ router.get('/sources/:id', async (req, res) => {
 });
 
 router.post('/sources/submit', async (req, res) => {
-    console.log(req.body.fragments);
-    console.log(req.body.fragments.join('@'));
-    console.log(req.body.fragments.join('@').replace(/\n/g, '|'));
-
     const id = ulid();
     await req.db.get(SQL`
         INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, submitter_id, base_id)
