@@ -18,7 +18,7 @@ Current members:
  - [@szymon](/@szymon)
  - [@Tess](/@Tess)
 
-Our logo is a black moose (pl. “łoś”) with a crowbar (pol. “łom”) (a nod to Polish neuter endings verb “-łom” and “-łoś”)
+Our logo is a black moose (pl. “łoś”) with a crowbar (pol. “łom”) (a nod to Polish neuter verb endings “-łom” and “-łoś”)
 against the background of the non-binary pride flag.
 
 [(Polish page)](https://zaimki.pl/blog/rada-j%C4%99zyka-neutralnego)
