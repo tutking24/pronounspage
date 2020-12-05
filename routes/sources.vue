@@ -56,7 +56,7 @@
                         </a>
                     </p>
                 </li>
-                <li class="list-group-item" v-if="sourceLibrary.getForPronoun('')">
+                <li class="list-group-item" v-if="sourceLibrary.getForPronoun('', pronounLibrary)">
                     <p class="h5 mb-0">
                         <a :href="'#' + $t('pronouns.othersRaw')">
                             <strong><T>pronouns.others</T></strong>
@@ -126,8 +126,8 @@
             </SourceList>
         </section>
 
-        <section v-if="sourceLibrary.getForPronoun('')">
-            <SourceList :sources="sourceLibrary.getForPronoun('')" :filter="filter" :filterType="filterType" manage @edit-source="edit">
+        <section v-if="sourceLibrary.getForPronoun('', pronounLibrary)">
+            <SourceList :sources="sourceLibrary.getForPronoun('', pronounLibrary)" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="$t('pronouns.othersRaw')">
                     <T>pronouns.others</T>
                 </h2>

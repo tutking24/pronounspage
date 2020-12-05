@@ -175,14 +175,13 @@ export class SourceLibrary {
         this.cache = {}
     }
 
-    getForPronoun(pronoun) {
+    getForPronoun(pronoun, pronounLibrary = null) {
         if (this.cache[pronoun] === undefined) {
             let sources = this.map[pronoun] || [];
 
             if (pronoun === '') {
                 for (let p of this.pronouns) {
-                    // add pronouns that have never been requested to "other"
-                    if (this.cache[p] === undefined) {
+                    if (!pronounLibrary.isCanonical(p)) {
                         sources = [...sources, ...this.map[p]];
                     }
                 }
