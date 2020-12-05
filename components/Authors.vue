@@ -34,6 +34,10 @@
                 <Icon v="envelope"/>
                 Email
             </a>
+            <a v-if="author.orcid" :href="'https://orcid.org/' + author.orcid" target="_blank" rel="noopener" class="badge badge-light border">
+                <Icon v="file"/>
+                ORCID
+            </a>
         </li>
     </ul>
 </template>

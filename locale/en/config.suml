@@ -204,6 +204,8 @@ contact:
             profile: 'szymon'
             pronouns: 'he'
             pronounsLink: '/he'
+            mail: 'misiek.sz.93@gmail.com'
+            orcid: '0000-0002-0214-0387'
             areas:
                 language: ~
                 sources: '/sources'
