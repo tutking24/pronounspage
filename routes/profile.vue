@@ -148,6 +148,7 @@
                     const link = decodeURIComponent(
                         pronoun
                             .toLowerCase()
+                            .trim()
                             .replace(new RegExp('^' + this.$base), '')
                             .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
                             .replace(new RegExp('^/'), '')
