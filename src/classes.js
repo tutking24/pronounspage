@@ -352,6 +352,10 @@ export class Pronoun {
     }
 
     getPronunciation(morpheme, counter = 0) {
+        if (morpheme.startsWith("'")) {
+            morpheme = morpheme.substring(1);
+        }
+
         if (!this.pronunciations[morpheme]) {
             return null;
         }
