@@ -28,12 +28,10 @@
         </div>
         <input v-model="s.val.key" class="form-control mw-input" @keyup="s.update(s.val)" required/>
         <div v-if="validation && s.val.key" class="input-group-append">
-            <span v-if="validation(s.val.key)" class="input-group-text bg-danger text-white">
-                <small>
-                    <Icon v="exclamation-triangle"/>
-                    <span class="ml-1">{{$t(validation(s.val.key))}}</span>
-                </small>
-            </span>
+            <small v-if="validation(s.val.key)" class="input-group-text bg-danger text-white">
+                <Icon v="exclamation-triangle"/>
+                <span class="ml-1">{{$t(validation(s.val.key))}}</span>
+            </small>
         </div>
     </ListInput>
 </template>

@@ -37,7 +37,7 @@
                            required maxlength="255"/>
                 </div>
                 <div class="form-group">
-                    <label for="pronouns"><T>sources.submit.extra</T></label>
+                    <label for="extra"><T>sources.submit.extra</T></label>
                     <input type="text" id="extra" class="form-control" v-model="form.extra"
                            maxlength="255"/>
                 </div>
@@ -59,6 +59,12 @@
                     </p>
                     <ListInput v-model="form.pronouns" v-slot="s">
                         <input v-model="s.val" type="text" class="form-control" @keyup="s.update(s.val)" required maxlength="24"/>
+                        <div v-if="s.val && !pronounLibrary.isCanonical(s.val)" class="input-group-append">
+                            <small class="input-group-text bg-danger text-white">
+                                <Icon v="exclamation-triangle"/>
+                                <span class="ml-1"><T>profile.pronounsNotFound</T></span>
+                            </small>
+                        </div>
                     </ListInput>
                 </div>
                 <div class="form-group">
@@ -89,6 +95,8 @@
 </template>
 
 <script>
+    import {pronounLibrary} from "../src/data";
+
     export default {
         data() {
             return {
@@ -107,6 +115,8 @@
 
                 submitting: false,
                 afterSubmit: false,
+
+                pronounLibrary,
             }
         },
         methods: {
