@@ -189,23 +189,24 @@ contact:
                 code: 'https://gitlab.com/Avris/Zaimki'
                 language: ~
                 faq: '/faq'
-#        -
-#            name: 'Paweł Dembowski'
-#            pronouns: 'he'
-#            pronounsLink: '/he'
-#            twitter: 'VaultAusir'
-#            mail: 'pawel.dembowski@gmail.com'
-#            areas:
-#                languages: ~
-#                sources: '/sources'
-#        -
-#            name: 'Zuzanna Sybilla Grzybowska'
-#            pronouns: 'they/she/he'
-#            pronounsLink: '/they&she&he'
-#            twitter: 'mykofanes'
-#            mail: 'zuzannagrzybowska@protonmail.com'
-#            areas:
-#                social_media: ~
+        -
+            name: 'Paweł Dembowski'
+            profile: 'Ausir'
+            pronouns: 'he'
+            pronounsLink: '/he'
+            twitter: 'VaultAusir'
+            mail: 'pawel.dembowski@gmail.com'
+            areas:
+                language: ~
+                sources: '/sources'
+        -
+            name: 'Szymon Misiek'
+            profile: 'szymon'
+            pronouns: 'he'
+            pronounsLink: '/he'
+            areas:
+                language: ~
+                sources: '/sources'
 
 support:
     enabled: true
