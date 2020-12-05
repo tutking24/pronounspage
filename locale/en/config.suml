@@ -174,8 +174,8 @@ contact:
             headline: 'contact@pronouns.page'
     authors:
         -
-            name: 'Team “Rada Języka Neutralnego”'
-            link: 'https://zaimki.pl/blog/rada-języka-neutralnego'
+            name: 'The “Neutral Language Council” collective'
+            link: '/blog/neutral-language-council'
             group: true
         -
             name: 'Andrea'
