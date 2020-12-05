@@ -247,9 +247,8 @@
                 this.$forceUpdate();
             },
             async remove(noun) {
-                if (!confirm('Czy na pewno usunąć ten wpis?')) {
-                    return false;
-                }
+                await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
+
                 await this.$axios.$post(`/nouns/remove/${noun.id}`);
                 delete this.nouns[noun.id];
                 this.$forceUpdate();

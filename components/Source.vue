@@ -1,7 +1,57 @@
 <template>
-    <div class="my-2">
+    <div class="my-2" v-if="!deleted">
         <Icon :v="source.icon()"/>
         <strong><template v-if="source.author">{{source.author.replace('^', '')}}</template><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener">{{source.title}}</a><span v-else>{{source.title}}</span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
+        <ul class="list-inline" v-if="manage && $admin()">
+            <li v-if="!source.approved" class="list-inline-item">
+                <span class="badge badge-danger">
+                    <Icon v="map-marker-question"/>
+                    <T>nouns.pending</T>
+                </span>
+            </li>
+            <!--
+            <li v-if="source.submitter" class="list-inline-item">
+                <nuxt-link :to="`/@${source.submitter}`" class="badge badge-light border btn-sm m-1">
+                    <Icon v="user"/>
+                    <span class="btn-label">
+                        <T>crud.author</T>:
+                        @{{source.submitter}}
+                    </span>
+                </nuxt-link>
+            </li>
+            -->
+            <li v-if="!source.approved" class="list-inline-item">
+                <a href="#" class="badge badge-success btn-sm m-1" @click.prevent="approve()">
+                    <Icon v="check"/>
+                    <span class="btn-label"><T>crud.approve</T></span>
+                </a>
+            </li>
+            <li v-else class="list-inline-item">
+                <a href="#" class="badge badge-light border border-secondary btn-sm m-1" @click.prevent="hide()">
+                    <Icon v="times"/>
+                    <span class="btn-label"><T>crud.hide</T></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="badge badge-light border border-danger btn-sm m-1" @click.prevent="remove()">
+                    <Icon v="trash"/>
+                    <span class="btn-label"><T>crud.remove</T></span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="badge badge-light border border-primary btn-sm m-1" @click.prevent="$emit('edit-source', source)">
+                    <Icon v="pen"/>
+                    <span class="btn-label">
+                        <T>crud.edit</T>
+                    </span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <span v-for="p in source.pronouns" :class="['badge', pronounLibrary.isCanonical(p) ? 'badge-success' : 'badge-danger']">
+                    {{p}}
+                </span>
+            </li>
+        </ul>
         <ul v-if="source.fragments.length">
             <li v-for="fragment in source.fragments">
                 <T>quotation.start</T><span v-html="fragment.replace(/\n/g, '<br/>')"></span><T>quotation.end</T>
@@ -11,9 +61,38 @@
 </template>
 
 <script>
+    import {pronounLibrary} from "../src/data";
+
     export default {
         props: {
             source: { required: true },
+            manage: { type: Boolean },
+        },
+        data() {
+            return {
+                pronounLibrary,
+                deleted: false,
+            }
+        },
+        methods: {
+            async approve() {
+                await this.$axios.$post(`/sources/approve/${this.source.id}`);
+                this.source.approved = true;
+                this.source.base = null;
+                this.$forceUpdate();
+            },
+            async hide() {
+                await this.$axios.$post(`/sources/hide/${this.source.id}`);
+                this.source.approved = false;
+                this.$forceUpdate();
+            },
+            async remove() {
+                await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
+
+                await this.$axios.$post(`/sources/remove/${this.source.id}`);
+                this.deleted = true;
+                this.$forceUpdate();
+            },
         },
     }
 </script>

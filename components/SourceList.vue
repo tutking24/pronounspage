@@ -3,7 +3,7 @@
         <slot></slot>
         <ul class="list-unstyled">
             <li v-for="source in sources" v-if="isVisible(source)" class="my-2">
-                <Source :source="source"/>
+                <Source :source="source" :manage="manage" @edit-source="edit"/>
             </li>
         </ul>
     </div>
@@ -15,6 +15,7 @@
             sources: { required: true },
             filter: { default: '' },
             filterType: { default: '' },
+            manage: { type: Boolean },
         },
         methods: {
             isVisible(source) {
@@ -28,6 +29,10 @@
 
                 return true;
             },
+            edit(source) {
+                // TODO it should be possible to do it nicer
+                this.$emit('edit-source', source);
+            }
         },
         computed: {
             notEmpty() {

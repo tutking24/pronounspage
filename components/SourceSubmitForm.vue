@@ -71,6 +71,13 @@
                     <input type="url" id="link" class="form-control" v-model="form.link"
                            maxlength="255"/>
                 </div>
+                <div class="alert alert-info" v-if="form.base">
+                    <Icon v="info-circle"/>
+                    <T>nouns.editing</T>
+                    <button class="btn btn-sm float-right" @click="form.base = null">
+                        <Icon v="times"/>
+                    </button>
+                </div>
                 <button class="btn btn-success btn-block" :disabled="submitting">
                     <Icon v="plus-circle"/>
                     <T>sources.submit.action</T>
@@ -95,6 +102,7 @@
                     fragments: [],
                     comment: '',
                     link: '',
+                    base: null,
                 },
 
                 submitting: false,
@@ -118,7 +126,24 @@
                     fragments: [],
                     comment: '',
                     link: '',
+                    base: null,
                 }
+            },
+            edit(source) {
+                this.form = {
+                    pronouns: source.pronouns,
+                    type: source.type,
+                    author: source.author,
+                    title: source.title,
+                    extra: source.extra,
+                    year: source.year,
+                    fragments: source.fragments,
+                    comment: source.comment,
+                    link: source.link,
+                    base: source.id,
+                }
+                this.afterSubmit = false;
+                this.$el.scrollIntoView();
             },
         },
     }

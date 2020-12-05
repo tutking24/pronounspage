@@ -18,7 +18,7 @@
                 <Icon v="plus-circle"/>
                 <T>sources.submit.header</T>
             </button>
-            <SourceSubmitForm v-else/>
+            <SourceSubmitForm v-else ref="form"/>
         </section>
 
         <section>
@@ -66,6 +66,15 @@
             </ul>
         </section>
 
+        <section v-if="$admin()" class="px-3">
+            <div class="alert alert-info">
+                <strong>{{ sourceLibrary.countApproved }}</strong> <T>nouns.approved</T>,
+                <a href="#" @click.prevent="filter='__awaiting__'">
+                    <strong>{{ sourceLibrary.countPending }}</strong> <T>nouns.pending</T>.
+                </a>
+            </div>
+        </section>
+
         <section class="sticky-top bg-white">
             <div class="input-group mb-1 bg-white">
                 <div class="input-group-prepend">
@@ -95,7 +104,7 @@
         </section>
 
         <section v-for="pronoun in pronouns" v-if="sourceLibrary.getForPronoun(pronoun.canonicalName).length">
-            <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :filter="filter" :filterType="filterType">
+            <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="toId(pronoun.name(glue))">
                     <nuxt-link :to="'/' + pronoun.canonicalName">
                         {{ pronoun.description }}
@@ -107,7 +116,7 @@
 
         <a :id="$t('pronouns.alt.raw')"/>
         <section v-for="multiple in sourceLibrary.multiple" v-if="sourceLibrary.getForPronoun(multiple).length">
-            <SourceList :sources="sourceLibrary.getForPronoun(multiple)" :filter="filter" :filterType="filterType">
+            <SourceList :sources="sourceLibrary.getForPronoun(multiple)" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="toId(multiple)">
                     <nuxt-link :to="'/' + multiple">
                         <T>pronouns.alt.header</T>
@@ -118,7 +127,7 @@
         </section>
 
         <section v-if="sourceLibrary.getForPronoun('')">
-            <SourceList :sources="sourceLibrary.getForPronoun('')" :filter="filter" :filterType="filterType">
+            <SourceList :sources="sourceLibrary.getForPronoun('')" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="$t('pronouns.othersRaw')">
                     <T>pronouns.others</T>
                 </h2>
@@ -175,6 +184,11 @@
             filterPronoun(pronoun) {
                 return this.sourceLibrary.getForPronoun(pronoun.canonicalName).length > 0;
             },
+            edit(source) {
+                console.log(source);
+                this.submitShown = true;
+                this.$nextTick(() => this.$refs.form.edit(source));
+            }
         },
     }
 </script>

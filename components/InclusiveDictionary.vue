@@ -232,9 +232,8 @@
                 this.$forceUpdate();
             },
             async remove(entry) {
-                if (!confirm('Czy na pewno usunąć ten wpis?')) {
-                    return false;
-                }
+                await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
+
                 await this.$axios.$post(`/inclusive/remove/${entry.id}`);
                 delete this.entries[entry.id];
                 this.$forceUpdate();

@@ -391,6 +391,7 @@ crud:
     approve: 'Approve'
     hide: 'Hide'
     remove: 'Remove'
+    removeConfirm: 'Are you sure you want to remove this item?'
     edit: 'Edit'
     add: 'Add'
     filter: 'Filter'

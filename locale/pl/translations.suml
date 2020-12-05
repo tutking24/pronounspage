@@ -886,6 +886,7 @@ crud:
     approve: 'Zatwierdź'
     hide: 'Schowaj'
     remove: 'Usuń'
+    removeConfirm: 'Czy na pewno usunąć ten wpis?'
     edit: 'Edytuj'
     add: 'Dodaj'
     filter: 'Filtruj'

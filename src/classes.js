@@ -149,8 +149,12 @@ export class SourceLibrary {
         this.map = {};
         const multiple = new Set();
         const pronouns = new Set();
+        this.countApproved = 0;
+        this.countPending = 0;
 
         for (let source of this.sources) {
+            this[source.approved ? 'countApproved' : 'countPending']++;
+
             if (!source.pronouns.length) {
                 if (this.map[''] === undefined) { this.map[''] = []; }
                 this.map[''].push(source);
@@ -230,6 +234,7 @@ export class SourceLibrary {
             //...source.fragments,
             source.comment,
             source.link,
+            source.approved ? '' : '__awaiting__',
         ].join(' ').toLowerCase().replace(/<\/?[^>]+(>|$)/g, '');
 
         return source;
@@ -457,6 +462,7 @@ export class PronounLibrary {
     constructor(groups, pronouns) {
         this.groups = groups;
         this.pronouns = pronouns;
+        this.canonicalNames = Object.keys(this.pronouns);
     }
 
     *split(filter = null, includeOthers = true) {
@@ -504,6 +510,15 @@ export class PronounLibrary {
             }
         }
         return null;
+    }
+
+    isCanonical(pronoun) {
+        for (let p of pronoun.split('&')) {
+            if (!this.canonicalNames.includes(p)) {
+                return false
+            }
+        }
+        return true;
     }
 }
 
