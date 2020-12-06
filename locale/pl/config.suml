@@ -142,6 +142,10 @@ links:
             url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
             headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
             extra: '– 6 kolorów gier wideo'
+        -
+            icon: 'info-circle'
+            url: 'https://docs.google.com/document/d/1xkX0LE1EiwGqRyVFsMImmY2XnsO7f8jFUjUbUC77r6Y/edit'
+            headline: 'Poradnik, jak urzędowo zmienić imię w Polsce'
     media:
         -
             icon: 'newspaper'
