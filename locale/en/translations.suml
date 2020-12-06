@@ -441,3 +441,8 @@ api:
 quotation:
     start: '“'
     end: '”'
+
+localise:
+    short: 'Adding language versions'
+    long: 'Want to create a new language version? Check out'
+    longLink: 'this manual!'

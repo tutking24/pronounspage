@@ -51,6 +51,14 @@
                         </nuxt-link>
                     </li>
                 </ul>
+                <ul v-if="config.user.enabled" class="list-inline small">
+                    <li class="list-inline-item">
+                        <LocaleLink locale="en" link="/blog/creating-new-language-version">
+                            <Icon v="language"/>
+                            <T>localise.short</T>
+                        </LocaleLink>
+                    </li>
+                </ul>
                 <Share/>
             </div>
         </div>

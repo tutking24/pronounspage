@@ -20,6 +20,12 @@
                 <T>contact.authors</T>
             </h3>
             <Authors expanded/>
+            <small>
+                <T>localise.long</T>
+                <LocaleLink locale="en" link="/blog/creating-new-language-version">
+                    <T>localise.longLink</T>
+                </LocaleLink>
+            </small>
         </section>
 
         <section>

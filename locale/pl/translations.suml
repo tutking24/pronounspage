@@ -936,3 +936,8 @@ api:
 quotation:
     start: '„'
     end: '”'
+
+localise:
+    short: 'Dodawanie nowych wersji językowych'
+    long: 'Chcesz dodać nową wersję językową? Informacje znajdziesz w'
+    longLink: 'tej instrukcji.'
