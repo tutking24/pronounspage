@@ -13,9 +13,15 @@
                     <T>profile.edit</T>
                 </nuxt-link>
                 <div class="list-group" v-if="Object.keys(profiles).length > 1">
+                    <a :href="`https://pronouns.page/@${username}`" v-if="$user() && $user().username === username"
+                       class="list-group-item list-group-item-action small px-4 py-2 text-center"
+                    >
+                        <Icon v="external-link"/>
+                        pronouns.page/@{{username}}
+                    </a>
                     <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
                                 :locale="locale" :link="`/@${username}`"
-                                :class="['list-group-item list-group-item-action small px-3 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
+                                :class="['list-group-item list-group-item-action small px-4 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
                         {{options.name}}
                     </LocaleLink>
                 </div>
