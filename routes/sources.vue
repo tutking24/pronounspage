@@ -36,7 +36,7 @@
                         <em v-html="group.description"></em>
                     </div>
                     <ul class="list-unstyled">
-                        <li v-for="pronoun in groupPronouns" :key="pronoun.canonicalName">
+                        <li v-for="pronoun in groupPronouns" :key="pronoun.canonicalName" v-if="config.sources.mergePronouns[pronoun.canonicalName] === undefined">
                             <a v-if="typeof pronoun === 'string'" :href="'#' + toId(pronoun)">
                                 <strong>{{ pronoun.replace(/&/g, glue) }}</strong>
                             </a>
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <section v-for="pronoun in pronouns" v-if="sourceLibrary.getForPronoun(pronoun.canonicalName).length">
+        <section v-for="pronoun in pronouns" v-if="config.sources.mergePronouns[pronoun.canonicalName] === undefined && sourceLibrary.getForPronoun(pronoun.canonicalName).length">
             <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="toId(pronoun.name(glue))">
                     <nuxt-link :to="'/' + pronoun.canonicalName">

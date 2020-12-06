@@ -27,6 +27,13 @@ sources:
     enabled: true
     route: 'korpus'
     submit: true
+    mergePronouns:
+        ono/jej: 'ono'
+        ono/jejgo: 'ono'
+        ono/jeno: 'ono'
+        ono/jenu: 'ono'
+        vono/vego: 'ono'
+        ono/eno: 'ono'
 
 nouns:
     enabled: true

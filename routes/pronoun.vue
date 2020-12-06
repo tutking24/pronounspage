@@ -90,8 +90,8 @@
             <Share :title="`${$t('pronouns.intro')}: ${selectedPronoun.name(glue)}`"/>
         </section>
 
-        <section v-if="Object.values(sourceLibrary.getForPronounExtended(selectedPronoun.canonicalName)).filter(x => !!x).length">
-            <Literature :sources="sourceLibrary.getForPronounExtended(selectedPronoun.canonicalName)"/>
+        <section v-if="Object.values(groupedSources).filter(x => !!x).length">
+            <Literature :sources="groupedSources"/>
         </section>
 
         <Separator icon="info"/>
@@ -157,6 +157,14 @@
         computed: {
             sourceLibrary() {
                 return new SourceLibrary(this.sources);
+            },
+            groupedSources() {
+                let key = this.selectedPronoun.canonicalName;
+                if (this.config.sources.mergePronouns[key] !== undefined) {
+                    key = this.config.sources.mergePronouns[key];
+                }
+                console.log(key);
+                return this.sourceLibrary.getForPronounExtended(key);
             },
         },
     }

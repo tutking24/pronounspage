@@ -48,6 +48,8 @@ sources:
     enabled: true
     route: 'sources'
     submit: true
+    mergePronouns:
+        they/them/themself: 'they'
 
 nouns:
     enabled: true
