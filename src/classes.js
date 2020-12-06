@@ -286,9 +286,9 @@ export class Pronoun {
             : this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
             let nameOption = optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
-            if (nameOption === 'they/them') {
+            if (nameOption === 'they/them' && this.morphemes['reflexive'].split('&')[i] === 'themself') {
                 // TODO english specific, extract
-                nameOption += '/' + this.morphemes['reflexive'].split('&')[i];
+                nameOption = 'they/them/themself';
             }
             options.add(nameOption);
         }
