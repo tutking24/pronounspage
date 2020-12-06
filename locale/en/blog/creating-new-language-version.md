@@ -64,7 +64,7 @@ If plural sentence is the same as singular you can leave the second column empty
 ## And more…
 
 The steps above are the bare minimum to get things started. Once you're done with them,
-please send zip the entire directory (and whatever other materials you'd like to share)
+please zip the entire directory (and whatever other materials you'd like to share)
 and send the zip to [contact@pronouns.page](mailto:contact@pronouns.page) (or submit a pull request).
 
 With those files we'll be able to put your version on a test server so that you (and we) can see the result
