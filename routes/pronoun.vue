@@ -163,7 +163,6 @@
                 if (this.config.sources.mergePronouns[key] !== undefined) {
                     key = this.config.sources.mergePronouns[key];
                 }
-                console.log(key);
                 return this.sourceLibrary.getForPronounExtended(key);
             },
         },

@@ -26,6 +26,7 @@
     "js-base64": "^3.5.2",
     "js-md5": "^0.7.3",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
     "mailer": "^0.6.7",
     "markdown-loader": "^6.0.0",
     "nuxt": "^2.14.7",
