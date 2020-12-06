@@ -8,6 +8,7 @@ async function notify() {
     const awaitingModeration = [
         ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'sources' as type, locale, count(*) as c FROM sources WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
     ];
     if (!awaitingModeration.length) {
         console.log('No entries awaiting moderation');
@@ -29,8 +30,8 @@ async function notify() {
         console.log('Sending email to ' + email)
         mailer(
             email,
-            '[Pronouns] Dictionary entries awaiting moderation: ' + count,
-            'Dictionary entries awaiting moderation: \n' + JSON.stringify(awaitingModerationGrouped, null, 4),
+            '[Pronouns.page] Entries awaiting moderation: ' + count,
+            'Entries awaiting moderation: \n' + JSON.stringify(awaitingModerationGrouped, null, 4),
         );
     }
 }
