@@ -38,23 +38,21 @@
     export default {
         components: { NounsNav, NounsExtra },
         mounted() {
-            if (process.client) {
-                if (window.location.hash) {
-                    const anchor = decodeURIComponent(window.location.hash.substr(1));
-                    this.$nextTick(_ => {
-                        const $anchor = document.getElementById(anchor);
-                        if ($anchor) {
-                            $anchor.scrollIntoView();
+            if (process.client && window.location.hash) {
+                const anchor = decodeURIComponent(window.location.hash.substr(1));
+                this.$nextTick(_ => {
+                    const $anchor = document.getElementById(anchor);
+                    if ($anchor) {
+                        $anchor.scrollIntoView();
+                    } else {
+                        if (this.$refs.dictionarywrapper) {
+                            this.$refs.dictionarywrapper.open = true;
+                            this.$refs.collapsabledictionary.setFilter(anchor);
                         } else {
-                            if (this.$refs.dictionarywrapper) {
-                                this.$refs.dictionarywrapper.open = true;
-                                this.$refs.collapsabledictionary.setFilter(anchor);
-                            } else {
-                                this.$refs.dictionary.setFilter(anchor);
-                            }
+                            this.$refs.dictionary.setFilter(anchor);
                         }
-                    })
-                }
+                    }
+                });
             }
         },
         head() {

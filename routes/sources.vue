@@ -161,10 +161,15 @@
         },
         mounted() {
             if (process.client && window.location.hash) {
-                const $hashEl = this.$el.querySelector(window.location.hash);
-                if ($hashEl) {
-                    $hashEl.scrollIntoView();
-                }
+                const anchor = decodeURIComponent(window.location.hash.substr(1));
+                this.$nextTick(_ => {
+                    const $anchor = document.getElementById(anchor);
+                    if ($anchor) {
+                        $anchor.scrollIntoView();
+                    } else {
+                        this.filter = anchor;
+                    }
+                })
             }
         },
         head() {
@@ -187,6 +192,17 @@
             edit(source) {
                 this.submitShown = true;
                 this.$nextTick(() => this.$refs.form.edit(source));
+            }
+        },
+        watch: {
+            filter() {
+                if (process.client) {
+                    if (this.filter) {
+                        window.location.hash = this.filter;
+                    } else {
+                        history.pushState('', document.title, window.location.pathname + window.location.search);
+                    }
+                }
             }
         },
     }
