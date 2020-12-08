@@ -959,7 +959,7 @@ flags:
     Bisexual: 'Biseksualn{adjective_n}'
     Butch: 'Butch, Bacz'
     Ceterosexual: 'Ceteroseksualn{adjective_n}'
-    Cis_Ally: 'Osoba sojusznicza'
+    Cis_Ally: 'Cis osoba sojusznicza'
     Demiboy: 'Demichłopię' # Demichłopak
     Demigender: 'Demipłciow{adjective_n}'
     Demigirl: 'Demidziewczę'  # demidziewczyna
@@ -997,7 +997,7 @@ flags:
     Queerplatonic: 'Queerplatoniczn{adjective_n}'
     Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
     Sapphic: 'Safick{adjective_n}'  # Safik, Sapphic
-    Straight_Ally: 'Osoba sojusznicza'
+    Straight_Ally: 'Hetero osoba sojusznicza'
     Toric: 'Toryczn{adjective_n}'
     Transfeminine: 'Transkobiec{adjective_n}'
     Transgender: 'Transpłciow{adjective_n}'
