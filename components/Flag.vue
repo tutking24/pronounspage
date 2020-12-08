@@ -1,7 +1,7 @@
 <template>
-    <span>
+    <span :title="name">
         <img :src="src" alt=""/>
-        {{ name }}
+        {{ translatedName }}
     </span>
 </template>
 
@@ -10,7 +10,15 @@
         props: {
             name: { required: true },
             src: { required: true },
-        }
+            pronoun: { required: true },
+        },
+        computed: {
+            translatedName() {
+                return this.pronoun.format(
+                    this.$t(`flags.${this.name.replace(/ /g, '_')}`, {}, false) || this.name
+                );
+            },
+        },
     }
 </script>
 

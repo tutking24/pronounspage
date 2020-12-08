@@ -388,6 +388,8 @@ profile:
         - ['per ty', 'per wy', 'pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
         - ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
         - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
+    flags:
+        defaultPronoun: 'on_'
 
 redirects:
     - { from: '^/neutratywy', to: '/s%C5%82ownik' }

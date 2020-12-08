@@ -55,7 +55,7 @@
                     <T>profile.flagsInfo</T>
                 </p>
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
-                    <Flag :name="s.desc" :src="`/flags/${s.v}.png`"/>
+                    <Flag :name="s.desc" :src="`/flags/${s.v}.png`" :pronoun="mainPronoun"/>
                 </ButtonList>
             </div>
 
@@ -188,7 +188,7 @@
                 this.saving = false;
                 this.$router.push(`/@${this.$user().username}`)
             },
-            validatePronoun(pronoun) {
+            normalisePronoun(pronoun) {
                 const link = decodeURIComponent(
                     pronoun
                         .toLowerCase()
@@ -198,7 +198,30 @@
                         .replace(new RegExp('^/'), '')
                 );
 
-                return buildPronoun(pronouns, link) ? null : 'profile.pronounsNotFound'
+                return buildPronoun(pronouns, link);
+            },
+            validatePronoun(pronoun) {
+                return this.normalisePronoun(pronoun) ? null : 'profile.pronounsNotFound'
+            },
+        },
+        computed: {
+            mainPronoun() {
+                let mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
+                let mainOpinion = -1;
+                for (let {key: pronoun, value: opinion} of this.pronouns) {
+                    if (opinion === 2) {
+                        opinion = 0.5;
+                    }
+                    if (opinion > mainOpinion) {
+                        const p = this.normalisePronoun(pronoun);
+                        if (p) {
+                            mainPronoun = p;
+                            mainOpinion = opinion;
+                        }
+                    }
+                }
+
+                return mainPronoun;
             },
         },
         head() {

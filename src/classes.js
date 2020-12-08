@@ -384,6 +384,10 @@ export class Pronoun {
         return this.pluralHonorific[counter % this.pluralHonorific.length]
     }
 
+    format(str) {
+        return str.replace(/{[^}]+}/g, m => this.morphemes[m.substring(1, m.length - 1)]);
+    }
+
     toArray() {
         const elements = Object.values(this.morphemes).map(s => escape(s));
         Object.values(this.pronunciations).forEach((p, i) => {

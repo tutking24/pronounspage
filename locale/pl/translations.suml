@@ -941,3 +941,67 @@ localise:
     short: 'Dodawanie nowych wersji językowych'
     long: 'Chcesz dodać nową wersję językową? Informacje znajdziesz w'
     longLink: 'tej instrukcji.'
+
+flags:
+    Abrosexual: 'Abroseksualn{adjective_n}'
+    Achillean: 'Achillejsk{adjective_n}'
+    Agender: 'Apłciow{adjective_n}'
+    Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
+    Androgyne: 'Androgyniczn{adjective_n}'
+    Androsexual: 'Androseksualn{adjective_n}'
+    Aporagender: 'Aporapłciow{adjective_n}'
+    Aroace: 'Aromantyczno-Aseksualn{adjective_n}'
+    Aromantic: 'Aromantyczn{adjective_n}'
+    Asexual: 'Aseksualn{adjective_n}'
+    Autigender: 'Autypłciow{adjective_n}'  # Autigenderow{adjective_n}
+    Bear: 'Misiek'
+    Bigender: 'Bipłciow{adjective_n}'  # Dwupłciow{adjective_n}
+    Bisexual: 'Biseksualn{adjective_n}'
+    Butch: 'Butch, Bacz'
+    Ceterosexual: 'Ceteroseksualn{adjective_n}'
+    Cis_Ally: 'Osoba sojusznicza'
+    Demiboy: 'Demichłopię' # Demichłopak
+    Demigender: 'Demipłciow{adjective_n}'
+    Demigirl: 'Demidziewczę'  # demidziewczyna
+    Demiromantic: 'Demiromantyczn{adjective_n}'
+    Demisexual: 'Demiseksualn{adjective_n}'
+    Diamoric: 'Diamoryczn{adjective_n}'
+    Enbian: 'Enbiańsk{adjective_n}'  # Niebiańsk{adjective_n}
+    Gender_questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
+    Genderfae: 'Nimficzn{adjective_n}'
+    Genderfaun: 'Fauniczn{adjective_n}'
+    Genderfluid: 'Płynnopłciow{adjective_n}'
+    Genderflux: 'Zmiennopłciow{adjective_n}'
+    Genderqueer: 'Nienormatywn{adjective_n} płciowo'  # Płeć Queerowa
+    Greyasexual: 'Szaroaseksualn{adjective_n}'
+    Greyaromantic: 'Szaroaromantyczn{adjective_n}'
+    Gynesexual: 'Gyneseksualn{adjective_n}'
+    Intersex: 'Interpłciow{adjective_n}'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Skórzak'
+    Lesbian: 'Lesbijka'
+    Lipstick_Lesbian: 'Kobieca lesbijka'
+    Maverique: 'Maweryczn{adjective_n}'
+    Nebularomantic: 'Mglistoromantyczn{adjective_n}'
+    Neutrois: 'Neutraln{adjective_n} płciowo'
+    Nonbinary: 'Niebinarn{adjective_n}'
+    Omnisexual: 'Omniseksualn{adjective_n}'
+    Pangender: 'Panpłciow{adjective_n}'  # Pangenderow{adjective_n} Wszechpłciow{adjective_n}
+    Pansexual: 'Panseksualn{adjective_n}'
+    Polyamorous: 'Poliamoryczn{adjective_n}'
+    Polysexual: 'Poliseksualn{adjective_n}'
+    Pomosexual: 'Pomoseksualn{adjective_n}'
+    Progress_Pride: 'Progresywn{adjective_n}'
+    Queer: 'Queer (kłir)'
+    Queerian: 'Queerejsk{adjective_n}'
+    Queerplatonic: 'Queerplatoniczn{adjective_n}'
+    Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
+    Sapphic: 'Safick{adjective_n}'  # Safik, Sapphic
+    Straight_Ally: 'Osoba sojusznicza'
+    Toric: 'Toryczn{adjective_n}'
+    Transfeminine: 'Transkobiec{adjective_n}'
+    Transgender: 'Transpłciow{adjective_n}'
+    Transmasculine: 'Transmęsk{adjective_n}'
+    Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
+    Trixic: 'Triksyjsk{adjective_n}'
+    Xenogender: 'Ksenopłciow{adjective_n}'

@@ -250,6 +250,8 @@ profile:
         - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
         - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
         - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+    flags:
+        defaultPronoun: 'they'
 
 redirects: []
 

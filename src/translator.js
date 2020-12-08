@@ -1,11 +1,13 @@
 import translations from '../data/translations.suml';
 
-export default (key, params = {}) => {
+export default (key, params = {}, warn = true) => {
     let value = translations;
     for (let part of key.split('.')) {
         value = value[part];
         if (value === undefined) {
-            console.error('Cannot find translation: ' + key);
+            if (warn) {
+                console.error('Cannot find translation: ' + key);
+            }
             return undefined;
         }
     }

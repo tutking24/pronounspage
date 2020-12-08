@@ -6,12 +6,14 @@
                 @{{username}}
             </h2>
             <div>
-                <nuxt-link v-if="$user() && $user().username === username" to="/editor"
-                           class="btn btn-outline-primary btn-sm mb-2"
-                >
-                    <Icon v="edit"/>
-                    <T>profile.edit</T>
-                </nuxt-link>
+                <div class="text-right">
+                    <nuxt-link v-if="$user() && $user().username === username" to="/editor"
+                               class="btn btn-outline-primary btn-sm mb-2"
+                    >
+                        <Icon v="edit"/>
+                        <T>profile.edit</T>
+                    </nuxt-link>
+                </div>
                 <div class="list-group" v-if="Object.keys(profiles).length > 1">
                     <a :href="`https://pronouns.page/@${username}`" v-if="$user() && $user().username === username"
                        class="list-group-item list-group-item-action small px-4 py-2 text-center"
@@ -41,7 +43,7 @@
         <section v-if="profile.flags.length">
             <ul class="list-inline">
                 <li v-for="flag in profile.flags" class="list-inline-item pr-2">
-                    <Flag :name="allFlags[flag]" :src="`/flags/${flag}.png`"/>
+                    <Flag :name="allFlags[flag]" :src="`/flags/${flag}.png`" :pronoun="mainPronoun"/>
                 </li>
             </ul>
         </section>
@@ -170,6 +172,21 @@
                     }
                 }
                 return pronounOpinions;
+            },
+            mainPronoun() {
+                let mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
+                let mainOpinion = -1;
+                for (let {pronoun, opinion} of this.pronounOpinions) {
+                    if (opinion === 2) {
+                        opinion = 0.5;
+                    }
+                    if (opinion > mainOpinion) {
+                        mainPronoun = pronoun;
+                        mainOpinion = opinion;
+                    }
+                }
+
+                return mainPronoun;
             },
         },
         head() {
