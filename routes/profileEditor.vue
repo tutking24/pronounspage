@@ -55,7 +55,7 @@
                     <T>profile.flagsInfo</T>
                 </p>
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
-                    <Flag :name="s.desc" :src="`/flags/${s.v}.png`" :pronoun="mainPronoun"/>
+                    <Flag :name="s.desc.split('|')[0]" :alt="s.desc.split('|')[1]" :img="`/flags/${s.v}.png`"/>
                 </ButtonList>
             </div>
 
@@ -102,7 +102,7 @@
 </template>
 
 <script>
-    import { head, dictToList, listToDict, buildList } from "../src/helpers";
+    import {head, dictToList, listToDict, buildList, buildDict} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
@@ -117,7 +117,6 @@
         data() {
             return {
                 saving: false,
-                allFlags: process.env.FLAGS,
             };
         },
         async asyncData({ app, store }) {
@@ -222,6 +221,23 @@
                 }
 
                 return mainPronoun;
+            },
+            allFlags() {
+                const that = this;
+                const flags = buildList(function*() {
+                    for (let key in process.env.FLAGS) {
+                        if (!process.env.FLAGS.hasOwnProperty(key)) { continue; }
+                        yield [key, that.$translateForPronoun(process.env.FLAGS[key], that.mainPronoun) + '|' + process.env.FLAGS[key]];
+                    }
+                });
+
+                flags.sort((a, b) => a[1].localeCompare(b[1]));
+
+                return buildDict(function *() {
+                    for (let [key, display] of flags) {
+                        yield [key, display];
+                    }
+                });
             },
         },
         head() {

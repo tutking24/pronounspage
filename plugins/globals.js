@@ -6,6 +6,10 @@ import {buildDict} from "../src/helpers";
 export default ({ app }) => {
     Vue.prototype.$base = process.env.BASE_URL;
     Vue.prototype.$t = t;
+    Vue.prototype.$translateForPronoun = (str, pronoun) =>
+        pronoun.format(
+            t(`flags.${str.replace(/ /g, '_')}`, {}, false) || str
+        );
     Vue.prototype.config = config;
     Vue.prototype.locales = buildDict(function* () {
         if (config.locale !== '_') {
