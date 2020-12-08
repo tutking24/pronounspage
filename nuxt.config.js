@@ -14,6 +14,42 @@ const colour = '#C71585';
 
 const bodyParser = require('body-parser');
 
+const buildFlags = () => {
+    const flags = [];
+    for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
+        let flagDisplay = flag
+            .replace(new RegExp('\.png$'), '')
+            .replace(new RegExp('_', 'g'), '')
+            .trim();
+
+        if (flag.startsWith('.')) {
+            continue;
+        }
+
+        if (flag.startsWith('-')) {
+            const tell = '-' + config.locale + '-';
+            if (flag.startsWith(tell)) {
+                flagDisplay = flagDisplay.substring(tell.length);
+            } else {
+                continue;
+            }
+        }
+
+        flags.push([
+            flag.replace(new RegExp('\.png$'), ''),
+            flagDisplay,
+        ]);
+    }
+
+    flags.sort((a, b) => a[1].localeCompare(b[1]));
+
+    return buildDict(function *() {
+        for (let [key, display] of flags) {
+            yield [key, display];
+        }
+    });
+};
+
 export default {
     target: 'server',
     head: {
@@ -98,32 +134,7 @@ export default {
         CONFIG: config,
         LOCALE: config.locale,
         LOCALES: locales,
-        FLAGS: buildDict(function *() {
-            for (let flag of fs.readdirSync(__dirname + '/static/flags/')) {
-                let flagDisplay = flag
-                    .replace(new RegExp('\.png$'), '')
-                    .replace(new RegExp('_', 'g'), '')
-                    .trim();
-
-                if (flag.startsWith('.')) {
-                    continue;
-                }
-
-                if (flag.startsWith('-')) {
-                    const tell = '-' + config.locale + '-';
-                    if (flag.startsWith(tell)) {
-                        flagDisplay = flagDisplay.substring(tell.length);
-                    } else {
-                        continue;
-                    }
-                }
-
-                yield [
-                    flag.replace(new RegExp('\.png$'), ''),
-                    flagDisplay,
-                ];
-            }
-        }),
+        FLAGS: buildFlags(),
     },
     serverMiddleware: ['~/server/index.js'],
     axios: {
