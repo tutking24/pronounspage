@@ -149,6 +149,12 @@ pronouns:
                 examples:
                     - ['jestem szczęśliwa!', 'jestem szczęśliw!']
                     - ['czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?']
+            -
+                header: 'Skróty'
+                examples:
+                    - ['Katarzyna Nowak', 'K. Nowak']
+                    - ['Szanowny Pan Białek', 'Sz. P. Białek']
+                    - ['Towarzyszka Q', 'Tow. Q']
 
     others: 'Inne formy'
     othersRaw: 'inne'
