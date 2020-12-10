@@ -957,7 +957,7 @@ flags:
     Bear: 'Misiek'
     Bigender: 'Bipłciow{adjective_n}'  # Dwupłciow{adjective_n}
     Bisexual: 'Biseksualn{adjective_n}'
-    Butch: 'Butch, Bacz'
+    Butch: 'Butch'
     Ceterosexual: 'Ceteroseksualn{adjective_n}'
     Cis_Ally: 'Cis osoba sojusznicza'
     Demiboy: 'Demichłopię' # Demichłopak
@@ -967,6 +967,7 @@ flags:
     Demisexual: 'Demiseksualn{adjective_n}'
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
+    Gay: 'Gej'
     Gender_questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'

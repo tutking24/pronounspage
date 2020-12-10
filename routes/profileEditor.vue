@@ -227,7 +227,11 @@
                 const flags = buildList(function*() {
                     for (let key in process.env.FLAGS) {
                         if (!process.env.FLAGS.hasOwnProperty(key)) { continue; }
-                        yield [key, that.$translateForPronoun(process.env.FLAGS[key], that.mainPronoun) + '|' + process.env.FLAGS[key]];
+                        yield [
+                            key,
+                            (key.startsWith('-') ? process.env.FLAGS[key] : that.$translateForPronoun(process.env.FLAGS[key], that.mainPronoun))
+                                + '|' + process.env.FLAGS[key]
+                        ];
                     }
                 });
 
