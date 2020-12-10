@@ -5,7 +5,7 @@
                 <strong>{{pronoun.replace(/&/g, ' ' + $t('pronouns.or') + ' ')}}</strong>
             </nuxt-link>
             <nuxt-link v-else :to="addSlash('/' + pronoun.canonicalName)">
-                <strong>{{pronoun.name(glue)}}</strong>
+                <strong>{{pronoun.name(glue)}}</strong><small v-if="pronoun.smallForm">/{{pronoun.morphemes[pronoun.smallForm]}}</small>
                 –
                 <small>{{pronoun.description}}</small>
             </nuxt-link>

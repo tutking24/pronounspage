@@ -115,6 +115,9 @@ export const parsePronouns = (pronounsRaw) => {
                     aliases.slice(1),
                     t.history,
                     t.pronounceable,
+                    t.thirdForm,
+                    t.smallForm,
+                    t.sourcesInfo,
                 )
             ];
         }

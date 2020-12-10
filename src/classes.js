@@ -255,7 +255,7 @@ const escape = s => {
 }
 
 export class Pronoun {
-    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, aliases = [], history = '', pronounceable = true) {
+    constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, aliases = [], history = '', pronounceable = true, thirdForm = null, smallForm = null, sourcesInfo = null) {
         this.canonicalName = canonicalName;
         this.description = description;
         this.normative = normative;
@@ -272,6 +272,9 @@ export class Pronoun {
         this.aliases = aliases;
         this.history = history;
         this.pronounceable = pronounceable;
+        this.thirdForm = thirdForm;
+        this.smallForm = smallForm;
+        this.sourcesInfo = sourcesInfo;
     }
 
     pronoun() {
@@ -286,13 +289,10 @@ export class Pronoun {
             : this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
             let nameOption = optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
-            if (nameOption === 'they/them') {
-                // TODO english specific, extract
-                nameOption += '/' + this.morphemes['reflexive'].split('&')[i];
-            } else if (nameOption === 'e/em') {
-                // TODO english specific, extract
-                nameOption += '/' + this.morphemes['possessive_determiner'].split('&')[i];
+            if (this.thirdForm) {
+                nameOption += '/' + this.morphemes[this.thirdForm].split('&')[i];
             }
+
             options.add(nameOption);
         }
 

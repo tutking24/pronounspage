@@ -7,7 +7,7 @@
             </nuxt-link>
         </h2>
 
-        <section v-for="(optionSources, option) in sources">
+        <section v-for="(optionSources, option) in sources" v-if="optionSources">
             <h3 class="h5">
                 <nuxt-link :to="'/' + option">
                     <span v-if="option.includes('&')">
@@ -21,7 +21,7 @@
                 </nuxt-link>
             </h3>
 
-            <SourceList :sources="optionSources"/>
+            <SourceList :pronoun="pronoun" :sources="optionSources"/>
         </section>
     </div>
 </template>
@@ -32,6 +32,7 @@
 
     export default {
         props: {
+            pronoun: { required: true },
             sources: { required: true },
         },
         data() {

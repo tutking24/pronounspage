@@ -104,7 +104,7 @@
         </section>
 
         <section v-for="pronoun in pronouns" v-if="config.sources.mergePronouns[pronoun.canonicalName] === undefined && sourceLibrary.getForPronoun(pronoun.canonicalName).length">
-            <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :filter="filter" :filterType="filterType" manage @edit-source="edit">
+            <SourceList :sources="sourceLibrary.getForPronoun(pronoun.canonicalName)" :pronoun="pronoun" :filter="filter" :filterType="filterType" manage @edit-source="edit">
                 <h2 class="h4" :id="toId(pronoun.name(glue))">
                     <nuxt-link :to="'/' + pronoun.canonicalName">
                         {{ pronoun.description }}

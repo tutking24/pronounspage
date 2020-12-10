@@ -1,6 +1,10 @@
 <template>
     <div v-if="notEmpty">
         <slot></slot>
+        <div v-if="pronoun && pronoun.sourcesInfo" class="alert alert-info small">
+            <Icon v="info-circle"/>
+            <LinkedText :text="pronoun.sourcesInfo"/>
+        </div>
         <ul class="list-unstyled">
             <li v-for="source in sources" v-if="isVisible(source)" class="my-2">
                 <Source :source="source" :manage="manage" @edit-source="edit"/>
@@ -13,6 +17,7 @@
     export default {
         props: {
             sources: { required: true },
+            pronoun: { },
             filter: { default: '' },
             filterType: { default: '' },
             manage: { type: Boolean },

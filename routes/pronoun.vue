@@ -9,9 +9,9 @@
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong v-if="nameOptions.length === 1">
-                        {{ selectedPronoun.name(glue) }}
-                    </strong>
+                    <template v-if="nameOptions.length === 1">
+                        <strong>{{ selectedPronoun.name(glue) }}</strong><small v-if="selectedPronoun.smallForm">/{{selectedPronoun.morphemes[selectedPronoun.smallForm]}}</small>
+                    </template>
                     <template v-else>
                         <template v-for="(nameOption, i) in nameOptions">
                             <nuxt-link :to="'/' + addSlash(nameOption)">
@@ -72,7 +72,7 @@
                                 <strong>{{pronoun.replace(/&/g, ' ' + $t('pronouns.or') + ' ')}}</strong>
                             </nuxt-link>
                             <nuxt-link v-else :to="addSlash('/' + pronoun.canonicalName)">
-                                <strong>{{pronoun.name(glue)}}</strong>
+                                <strong>{{pronoun.name(glue)}}</strong><small v-if="pronoun.smallForm">/{{pronoun.morphemes[pronoun.smallForm]}}</small>
                                 –
                                 <small>{{pronoun.description}}</small>
                             </nuxt-link>
@@ -91,7 +91,7 @@
         </section>
 
         <section v-if="Object.values(groupedSources).filter(x => !!x).length">
-            <Literature :sources="groupedSources"/>
+            <Literature :pronoun="selectedPronoun" :sources="groupedSources"/>
         </section>
 
         <Separator icon="info"/>
