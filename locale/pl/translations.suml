@@ -944,7 +944,7 @@ localise:
 
 flags:
     Abrosexual: 'Abroseksualn{adjective_n}'
-    Achillean: 'Achillejsk{adjective_n}'
+    Achillean: 'Achillejsk{adjective_n_alt}'
     Agender: 'Apłciow{adjective_n}'
     Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
     Androgyne: 'Androgyniczn{adjective_n}'
@@ -966,7 +966,7 @@ flags:
     Demiromantic: 'Demiromantyczn{adjective_n}'
     Demisexual: 'Demiseksualn{adjective_n}'
     Diamoric: 'Diamoryczn{adjective_n}'
-    Enbian: 'Enbiańsk{adjective_n}'  # Niebiańsk{adjective_n}
+    Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
     Gender_questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'
@@ -983,6 +983,7 @@ flags:
     Lipstick_Lesbian: 'Kobieca lesbijka'
     Maverique: 'Maweryczn{adjective_n}'
     Nebularomantic: 'Mglistoromantyczn{adjective_n}'
+    Neopronouns: 'Neozaimki'
     Neutrois: 'Neutraln{adjective_n} płciowo'
     Nonbinary: 'Niebinarn{adjective_n}'
     Omnisexual: 'Omniseksualn{adjective_n}'
@@ -993,15 +994,15 @@ flags:
     Pomosexual: 'Pomoseksualn{adjective_n}'
     Progress_Pride: 'Progresywn{adjective_n}'
     Queer: 'Queer (kłir)'
-    Queerian: 'Queerejsk{adjective_n}'
+    Queerian: 'Queerejsk{adjective_n_alt}'
     Queerplatonic: 'Queerplatoniczn{adjective_n}'
     Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
-    Sapphic: 'Safick{adjective_n}'  # Safik, Sapphic
+    Sapphic: 'Safick{adjective_n_alt}'  # Safik, Sapphic
     Straight_Ally: 'Hetero osoba sojusznicza'
     Toric: 'Toryczn{adjective_n}'
     Transfeminine: 'Transkobiec{adjective_n}'
     Transgender: 'Transpłciow{adjective_n}'
-    Transmasculine: 'Transmęsk{adjective_n}'
+    Transmasculine: 'Transmęsk{adjective_n_alt}'
     Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
-    Trixic: 'Triksyjsk{adjective_n}'
+    Trixic: 'Triksyjsk{adjective_n_alt}'
     Xenogender: 'Ksenopłciow{adjective_n}'
