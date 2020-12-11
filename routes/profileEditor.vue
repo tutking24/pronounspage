@@ -157,7 +157,7 @@
                     description: '',
                     birthday: profile.birthday,
                     links: Object.keys(profile.links).length ? profile.links : [],
-                    flags: profile.flags,
+                    flags: profile.flags.filter(f => !f.startsWith('-')),
                     words: defaultWords,
                 };
             }

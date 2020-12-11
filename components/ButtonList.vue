@@ -2,7 +2,7 @@
     <div>
         <draggable tag="ul" v-model="iVal" ghostClass="ghost" @end="$emit('input', iVal)" :group="ulid"
                    class="list-inline border rounded drop-empty px-3 py-2">
-            <li v-for="val in iVal" class="list-inline-item py-1">
+            <li v-for="val in iVal" v-if="options[val]" class="list-inline-item py-1">
                 <a href="#" class="badge badge-light border p-2" @click.prevent="$emit('input', iVal.filter(v => v !== val))">
                     <slot v-bind:v="val" v-bind:desc="options[val]">
                         {{ val }}
