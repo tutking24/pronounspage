@@ -20,5 +20,6 @@ xe,xe/xem	Neopronoun “xe/xem”	FALSE	xe|zi	xem|zɛm	xyr|ziɹ	xyrs|ziɹz	xemse
 ze,ze/hir	Neopronoun “ze/hir”	FALSE	ze|zi	hir|hɪɹ	hir|hɪɹ	hirs|hɪɹz	hirself|hɪɹsɛlf	FALSE	FALSE	TRUE
 ze/zir	Neopronoun “ze/zir”	FALSE	ze|zi	zir|zəɹ	zir|zəɹ	zirs|zəɹz	zirself|zəɹsɛlf	FALSE	FALSE	TRUE	Based on the German plural 3rd person pronoun <em>sie</em>.
 zhe,zhe/zher	Neopronoun “zhe/zher”	FALSE	zhe|ʒi	zher|ʒəɹ	zher|ʒəɹ	zhers|ʒəɹz	zherself|ʒəɹsɛlf	FALSE	FALSE	TRUE
-ne,ne/nir	Neopronoun “ne/nir”	FALSE	ne|ni	nir|nəɹ	nir|nəɹ	nirs|nəɹz	nirself|nəɹsɛlf	FALSE	FALSE	TRUE
+ne/nir	Neopronoun “ne/nir”	FALSE	ne|ni	nir|nəɹ	nir|nəɹ	nirs|nəɹz	nirself|nəɹsɛlf	FALSE	FALSE	TRUE
 s/he,s/he/hir	Neopronoun “s/he”	FALSE	s/he|shi	hir|hɪɹ	hir|hɪɹ	hirs|hɪɹz	hirself|hɪɹsɛlf	FALSE	FALSE	TRUE
+ne,ne/nem	Neopronoun “ne/nem”	FALSE	ne|ni	nem|nəm	nir|nəɹ	nirs|nəɹz	nemself|nəmsɛlf	FALSE	FALSE	TRUE
