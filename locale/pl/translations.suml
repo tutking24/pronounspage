@@ -978,7 +978,7 @@ flags:
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
     Gay: 'Gej'
-    Gender_Questioning: 'Rozważając_ {adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
+    Gender_Questioning: 'Rozważając{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'
     Genderfluid: 'Płynnopłciow{adjective_n}'
@@ -991,9 +991,8 @@ flags:
     LGBTQ: 'LGBTQ'
     Leather_Pride: 'Skórzak'
     Lesbian: 'Lesbijka'
-    Lipstick_Lesbian: 'Kobieca lesbijka'
     Maverique: 'Maweryczn{adjective_n}'
-    Nebularomantic: 'Mglistoromantyczn{adjective_n}'
+    Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
     Neopronouns: 'Neozaimki'
     Neutrois: 'Neutraln{adjective_n} płciowo'
     Nonbinary: 'Niebinarn{adjective_n}'

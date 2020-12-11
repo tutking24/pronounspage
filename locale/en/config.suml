@@ -13,7 +13,7 @@ pronouns:
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
         examples: ['he&she', 'he&they', 'she&they']
     null:
-        description: 'No pronouns / null pronouns / pronounless'
+        description: 'No pronouns / null pronouns / pronounless / nameself'
         history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
         morphemes:
             pronoun_subject: '#'
