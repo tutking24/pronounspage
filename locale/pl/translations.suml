@@ -956,7 +956,7 @@ flags:
     Androgyne: 'Androgyniczn{adjective_n}'
     Androsexual: 'Androseksualn{adjective_n}'
     Aporagender: 'Aporapłciow{adjective_n}'
-    Aroace: 'Aromantyczno-Aseksualn{adjective_n}'
+    Aroace: 'Aro-as'
     Aromantic: 'Aromantyczn{adjective_n}'
     Asexual: 'Aseksualn{adjective_n}'
     Autigender: 'Autypłciow{adjective_n}'  # Autigenderow{adjective_n}
@@ -974,7 +974,7 @@ flags:
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
     Gay: 'Gej'
-    Gender_questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
+    Gender_Questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'
     Genderfluid: 'Płynnopłciow{adjective_n}'
@@ -994,6 +994,7 @@ flags:
     Neutrois: 'Neutraln{adjective_n} płciowo'
     Nonbinary: 'Niebinarn{adjective_n}'
     Omnisexual: 'Omniseksualn{adjective_n}'
+    Oriented_Aroace: 'Zorientowan{adjective_n} aro-as'
     Pangender: 'Panpłciow{adjective_n}'  # Pangenderow{adjective_n} Wszechpłciow{adjective_n}
     Pansexual: 'Panseksualn{adjective_n}'
     Polyamorous: 'Poliamoryczn{adjective_n}'
