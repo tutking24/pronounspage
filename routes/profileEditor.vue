@@ -1,6 +1,6 @@
 <template>
-    <NotFound v-if="!$user()"/>
-    <div v-else class="container">
+    <MustLogin v-if="!$user()"/>
+    <div v-else>
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="$user()"/>
@@ -171,6 +171,12 @@
                 flags: [],
                 words: defaultWords,
             };
+        },
+        mounted() {
+            if (process.client && !this.$user()) {
+                window.sessionStorage.setItem('after-login', window.location.pathname);
+                this.$router.push('/' + this.config.user.route);
+            }
         },
         methods: {
             async save() {

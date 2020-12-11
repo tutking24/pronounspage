@@ -908,6 +908,10 @@ notFound:
     message: 'Strony nie znaleziono'
     back: 'Wróć na główną'
 
+authRequired:
+    message: 'Musisz się zalogować, by zobaczyć tę stronę'
+    go: 'Przejdź do logowania'
+
 confirm:
     header: 'Czy jesteś pewnx?'
     yes: 'Tak, na pewno'
@@ -974,7 +978,7 @@ flags:
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
     Gay: 'Gej'
-    Gender_Questioning: 'Kwestionując{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
+    Gender_Questioning: 'Rozważając_ {adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'
     Genderfluid: 'Płynnopłciow{adjective_n}'

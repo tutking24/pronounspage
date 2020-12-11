@@ -1,6 +1,6 @@
 <template>
     <NotFound v-if="!content"/>
-    <div v-else class="container blog-post">
+    <div v-else class="blog-post">
         <div v-html="content"></div>
     </div>
 </template>

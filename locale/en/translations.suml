@@ -407,6 +407,10 @@ notFound:
     message: 'Page was not found'
     back: 'Go back to the homepage'
 
+authRequired:
+    message: 'You must log in to see this site'
+    go: 'Go to the login form'
+
 confirm:
     header: 'Are you sure?'
     yes: 'Yes, I''m sure'

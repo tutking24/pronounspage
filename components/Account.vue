@@ -132,6 +132,14 @@
         async mounted() {
             this.profiles = await this.$axios.$get(`/profile/get/${this.$user().username}`);
             this.socialConnections = await this.$axios.$get(`/user/social-connections`);
+
+            if (process.client) {
+                const redirectTo = window.sessionStorage.getItem('after-login');
+                if (this.$user() && redirectTo) {
+                    window.sessionStorage.removeItem('after-login')
+                    await this.$router.push(redirectTo);
+                }
+            }
         },
         methods: {
             async changeUsername() {
