@@ -994,7 +994,7 @@ flags:
     Maverique: 'Maweryczn{adjective_n}'
     Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
     Neopronouns: 'Neozaimki'
-    Neutrois: 'Neutraln{adjective_n} płciowo'
+    Neutrois: 'Neutralnopłciow{adjective_n}'
     Nonbinary: 'Niebinarn{adjective_n}'
     Omnisexual: 'Omniseksualn{adjective_n}'
     Oriented_Aroace: 'Zorientowan{adjective_n} aro-as'
@@ -1014,6 +1014,7 @@ flags:
     Transfeminine: 'Transkobiec{adjective_n}'
     Transgender: 'Transpłciow{adjective_n}'
     Transmasculine: 'Transmęsk{adjective_n_alt}'
+    Transneutral: 'Transneutraln{adjective_n}'
     Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
     Trixic: 'Triksyjsk{adjective_n_alt}'
     Xenogender: 'Ksenopłciow{adjective_n}'
