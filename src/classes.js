@@ -390,11 +390,12 @@ export class Pronoun {
 
     toArray() {
         const elements = Object.values(this.morphemes).map(s => escape(s));
-        Object.values(this.pronunciations).forEach((p, i) => {
-            if (p) {
-                elements[i] += '|' + escape(p);
-            }
-        });
+        // TODO #136
+        // Object.values(this.pronunciations).forEach((p, i) => {
+        //     if (p) {
+        //         elements[i] += '|' + escape(p);
+        //     }
+        // });
         if (config.pronouns.plurals) {
             elements.push(this.plural.map(p => p ? 1 : 0).join(''));
             if (config.pronouns.honorifics) {

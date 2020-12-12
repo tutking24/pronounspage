@@ -171,10 +171,12 @@
                                 <Icon v="info-circle"/>
                                 <T>home.generator.alt</T>
                             </p>
+                            <!-- TODO #136
                             <p class="small" v-if="config.pronunciation.enabled">
                                 <Icon v="info-circle"/>
                                 <T>home.generator.pronunciation</T>
                             </p>
+                            -->
                         </div>
                         <div class="card-footer" v-if="link">
                             <LinkInput :link="link"/>
@@ -258,7 +260,10 @@
                 const base = this.pronouns[this.selectedPronoun.morphemes[MORPHEMES[0]]];
 
                 return base
-                    ? Compressor.compress(this.selectedPronoun.toArray(), base.toArray()).join(',')
+                    ? Compressor.compress(
+                        this.selectedPronoun.toArray().map(x => x.split('|')[0]),
+                        base.toArray().map(x => x.split('|')[0])
+                    ).join(',')
                     : this.selectedPronoun.toString();
             },
             link() {
