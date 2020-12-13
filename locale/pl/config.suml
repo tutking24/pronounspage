@@ -12,7 +12,32 @@ pronouns:
         name: 'Formy wymienne'
         description: 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i nijakich) i można się do nich zwracać w dowolnej z nich.'
         examples: ['on&ona', 'on&ono', 'ona&ono', 'on&onu', 'ona&onu', 'ono/jego&ono/jej']
-    emoji: false
+    emoji:
+        description: 'Emojiself'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} to formy stworzone dla komunikacji online, nie są wymawialne.'
+        morphemes:
+            pronoun_n: '#'
+            pronoun_g: '#'
+            pronoun_g_acc: '#'
+            pronoun_d: '#'
+            pronoun_a: '#'
+            pronoun_i: '#'
+            pronoun_l: '#'
+            pronoun_all: ''
+            adjective_n: '#'
+            adjective_n_alt: '#'
+            adjective_ll: ''
+            adjective_middle: ''
+            verb_end_inter: '#'
+            verb_end_about: '#'
+            verb_middle_inter: '#'
+            verb_middle_about: '#'
+            verb_nasal: 'ą'
+            verb_go: 'szł'
+            verb_o: 'o'
+            honorific: '#'
+        examples: ['💫', '💙', '🐿']
+        template: 'Otwórz dowolny z przykładów i podmień emoji w URLu na swoje.'
     null: false
     avoiding: 'unikanie'
     others: 'Inne formy'
