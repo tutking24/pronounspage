@@ -192,6 +192,10 @@ links:
             icon: 'newspaper'
             url: 'https://vibez.pl/wydarzenia/osoby-transplciowe-kim-sa-i-jak-sie-do-nich-zwracac-oto-krotki-poradnik-6577363618974496a'
             headline: 'Osoby transpłciowe - kim są i jak się do nich zwracać? Oto krótki poradnik – <strong>Vibez.pl</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/duzyformat/7,127290,26594089,od-pewnego-czasu-gdy-prowadze-jakies-spotkanie-zwracam-sie.html'
+            headline: 'Od pewnego czasu, gdy prowadzę jakieś spotkanie, zwracam się do zebranych per „panie, panowie i osoby niebinarne” – Wojciech Orliński w dodatku do Gazety Wyborczej <strong>Duży Format</strong>'
     socials:
         -
             icon: 'twitter'
