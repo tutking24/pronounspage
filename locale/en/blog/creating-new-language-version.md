@@ -52,7 +52,7 @@ or you can just put them in some Word or Excel file for me to handle.
 This file is a table of pronouns. You can edit it in Excel or just a text editor (just keep the tabs where they were).
 Columns from `pronoun_subject` to `reflexive` can be removed and replaced with other forms relevant to your language.
 
-## pronouns/pronouns.tsv
+## pronouns/pronounGroups.tsv
 
 This table contains the groups of pronouns.
 
