@@ -149,11 +149,6 @@ links:
             extra: ''
         -
             icon: 'play-circle'
-            url: 'https://rss.com/podcasts/bezwstydny/75056/'
-            headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (Bezwstydne Podcast)'
-            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
-        -
-            icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=BX8ld20YeUc'
             headline: 'Wideoesej „Mistycyzmu Popkulturowego”'
             extra: 'o tym, jak polscy tłumacze (nie) radzą sobie z formami gramatycznymi w przypadku postaci niebinarnych'
@@ -196,6 +191,16 @@ links:
             icon: 'newspaper'
             url: 'https://wyborcza.pl/duzyformat/7,127290,26594089,od-pewnego-czasu-gdy-prowadze-jakies-spotkanie-zwracam-sie.html'
             headline: 'Od pewnego czasu, gdy prowadzę jakieś spotkanie, zwracam się do zebranych per „panie, panowie i osoby niebinarne” – Wojciech Orliński w dodatku do Gazety Wyborczej <strong>Duży Format</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://rss.com/podcasts/bezwstydny/75056/'
+            headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (<strong>Bezwstydne</strong> Podcast)'
+            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=aOyaeI30uKA'
+            headline: 'Inkluzywny język – Rozmowa z Kahą z Inkluzywnej Mowy (podcast <strong>SZAJN na głos</strong>)'
+            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 11:11'
     socials:
         -
             icon: 'twitter'
