@@ -194,11 +194,13 @@
 <script>
     import { Noun } from "~/src/classes";
     import { buildDict } from "../src/helpers";
+    import hash from "../plugins/hash";
 
     export default {
         props: {
             load: {type: Boolean}
         },
+        mixins: [ hash ],
         data() {
             return {
                 filter: '',
@@ -289,16 +291,10 @@
         },
         watch: {
             filter() {
-                if (process.client) {
-                    if (this.filter) {
-                        window.location.hash = this.filter;
-                    } else {
-                        history.pushState('', document.title, window.location.pathname + window.location.search);
-                    }
-                    if (this.$refs.dictionarytable) {
-                        this.$refs.dictionarytable.reset();
-                        this.$refs.dictionarytable.focus();
-                    }
+                this.setHash(this.config.nouns.hashNamespace || '', this.filter);
+                if (this.$refs.dictionarytable) {
+                    this.$refs.dictionarytable.reset();
+                    this.$refs.dictionarytable.focus();
                 }
             }
         },

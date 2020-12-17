@@ -71,6 +71,7 @@ nouns:
     templates: true
     inclusive:
         categories: ['interpłciowość', 'lgbtq+', 'niepełnosprawność', 'rasa', 'trans']
+    hashNamespace: 'neutratywy'
 
 names:
     enabled: false

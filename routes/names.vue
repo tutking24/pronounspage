@@ -97,8 +97,10 @@
 <script>
     import { names } from '~/src/data';
     import { head, clearUrl } from '~/src/helpers';
+    import hash from "../plugins/hash";
 
     export default {
+        mixins: [ hash ],
         data() {
             return {
                 names,
@@ -107,14 +109,14 @@
             }
         },
         mounted() {
-            if (process.client && window.location.hash) {
-                this.filter = decodeURIComponent(window.location.hash.substr(1));
+            this.handleHash('', filter => {
+                this.filter = filter;
                 this.$refs.filter.focus();
                 this.$refs.filter.scrollIntoView();
                 setTimeout(_ => {
                     this.$refs.filter.scrollIntoView();
                 }, 1000);
-            }
+            });
         },
         methods: {
             visibleNames() {
@@ -125,13 +127,7 @@
         },
         watch: {
             filter() {
-                if (process.client) {
-                    if (this.filter) {
-                        window.location.hash = this.filter;
-                    } else {
-                        history.pushState('', document.title, window.location.pathname + window.location.search);
-                    }
-                }
+                this.setHash('', this.filter);
             }
         },
         head() {

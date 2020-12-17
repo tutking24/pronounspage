@@ -140,8 +140,10 @@
     import { pronouns, pronounLibrary } from '../src/data'
     import { Source, SourceLibrary } from "../src/classes";
     import { head } from "../src/helpers";
+    import hash from "../plugins/hash";
 
     export default {
+        mixins: [ hash ],
         data() {
             return {
                 pronouns,
@@ -160,17 +162,10 @@
             }
         },
         mounted() {
-            if (process.client && window.location.hash) {
-                const anchor = decodeURIComponent(window.location.hash.substr(1));
-                this.$nextTick(_ => {
-                    const $anchor = document.getElementById(anchor);
-                    if ($anchor) {
-                        $anchor.scrollIntoView();
-                    } else {
-                        this.filter = anchor;
-                    }
-                })
-            }
+            this.handleHash('', filter => {
+                this.filter = filter;
+                this.$refs.filter.scrollIntoView();
+            });
         },
         head() {
             return head({
@@ -196,13 +191,7 @@
         },
         watch: {
             filter() {
-                if (process.client) {
-                    if (this.filter) {
-                        window.location.hash = this.filter;
-                    } else {
-                        history.pushState('', document.title, window.location.pathname + window.location.search);
-                    }
-                }
+                this.setHash('', this.filter);
             }
         },
     }

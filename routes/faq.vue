@@ -6,7 +6,7 @@
         </h2>
 
         <section>
-            <details v-for="question in Object.keys($t('faq.questions'))" class="border mb-3" :id="question" :ref="question.replace(/-/g, '_')">
+            <details v-for="question in Object.keys($t('faq.questions'))" class="border mb-3" :id="question" :ref="question.replace(/-/g, '_')" @click="setHash('', question)">
                 <summary class="bg-light p-3"><T>faq.questions.{{question}}.question</T></summary>
                 <div class="p-3 border-top">
                     <T>faq.questions.{{question}}.answer</T>
@@ -22,12 +22,13 @@
 
 <script>
     import { head } from "../src/helpers";
+    import hash from "../plugins/hash";
 
     export default {
+        mixins: [ hash ],
         mounted() {
-            if (process.client && window.location.hash) {
-                const active = decodeURIComponent(window.location.hash.substr(1));
-                const $el = this.$refs[active.replace(/-/g, '_')];
+            this.handleHash('', hash => {
+                const $el = this.$refs[hash.replace(/-/g, '_')];
                 if (!$el) {
                     return;
                 }
@@ -37,7 +38,7 @@
                 setTimeout(_ => {
                     $el[0].scrollIntoView();
                 }, 1000);
-            }
+            }, false)
         },
         head() {
             return head({

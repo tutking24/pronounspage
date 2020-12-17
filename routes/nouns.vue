@@ -34,26 +34,20 @@
     import { head } from "../src/helpers";
     import NounsNav from "../data/nouns/NounsNav.vue";
     import NounsExtra from "../data/nouns/NounsExtra.vue";
+    import hash from "../plugins/hash";
 
     export default {
         components: { NounsNav, NounsExtra },
+        mixins: [ hash ],
         mounted() {
-            if (process.client && window.location.hash) {
-                const anchor = decodeURIComponent(window.location.hash.substr(1));
-                this.$nextTick(_ => {
-                    const $anchor = document.getElementById(anchor);
-                    if ($anchor) {
-                        $anchor.scrollIntoView();
-                    } else {
-                        if (this.$refs.dictionarywrapper) {
-                            this.$refs.dictionarywrapper.open = true;
-                            this.$refs.collapsabledictionary.setFilter(anchor);
-                        } else {
-                            this.$refs.dictionary.setFilter(anchor);
-                        }
-                    }
-                });
-            }
+            this.handleHash(this.config.nouns.hashNamespace || '', filter => {
+                if (this.$refs.dictionarywrapper) {
+                    this.$refs.dictionarywrapper.open = true;
+                    this.$refs.collapsabledictionary.setFilter(filter);
+                } else {
+                    this.$refs.dictionary.setFilter(filter);
+                }
+            });
         },
         head() {
             return head({
