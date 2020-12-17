@@ -25,7 +25,7 @@ router.get('/pronounce/:pronoun*', async (req, res) => {
     const example = new Example(
         Example.parse(singular),
         Example.parse(plural || singular),
-        !!isHonorific,
+        !!parseInt(isHonorific || '0'),
     )
 
     const text = example.pronounce(pronoun);
