@@ -62,16 +62,19 @@ sources:
 
 nouns:
     enabled: true
-    route: 'słownik'
+    route: 'słowniki'
     collapsable: true
     plurals: true
     pluralsRequired: true
     declension: true
     submit: true
     templates: true
+    hashNamespace: 'neutratywy'
     inclusive:
         categories: ['interpłciowość', 'lgbtq+', 'niepełnosprawność', 'rasa', 'trans']
-    hashNamespace: 'neutratywy'
+        hashNamespace: 'inkluzywny'
+    terms:
+        hashNamespace: 'terminologia'
 
 names:
     enabled: false
@@ -477,10 +480,13 @@ census:
                 - 'osobatywy'
 
 redirects:
-    - { from: '^/neutratywy', to: '/s%C5%82ownik' }
-    - { from: '^/rzeczowniki', to: '/s%C5%82ownik' }
-    - { from: '^/slownik', to: '/s%C5%82ownik' }
-    - { from: '^/literatura', to: '/korpus' }
+    - { from: '^/neutratywy$', to: '/s%C5%82owniki' }
+    - { from: '^/rzeczowniki$', to: '/s%C5%82owniki' }
+    - { from: '^/slownik$', to: '/s%C5%82owniki' }
+    - { from: '^/slowniki$', to: '/s%C5%82owniki' }
+    - { from: '^/słownik$', to: '/s%C5%82owniki' }
+    - { from: '^/s%C5%82ownik$', to: '/s%C5%82owniki' }
+    - { from: '^/literatura$', to: '/korpus' }
 
 api:
     examples:

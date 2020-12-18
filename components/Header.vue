@@ -77,7 +77,7 @@
                 if (this.config.nouns.enabled) {
                     links.push({
                         link: '/' + this.config.nouns.route,
-                        icon: 'atom-alt',
+                        icon: 'book',
                         text: this.$t('nouns.header'),
                         textLong: this.$t('nouns.headerLong'),
                     });

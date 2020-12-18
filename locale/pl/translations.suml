@@ -194,9 +194,9 @@ sources:
         moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
 
 nouns:
-    header: 'Słownik'
-    headerLong: 'Słownik: neutralne rzeczowniki'
-    headerLonger: 'Neutralne i niebinarne rzeczowniki'
+    header: 'Słowniki'
+    headerLong: 'Słowniki neutralnego języka'
+    headerLonger: 'Słowniki neutralnego i niebinarnego języka'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
         - >
@@ -339,6 +339,20 @@ nouns:
                 jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
         categories: 'Kategorie'
         sources: 'Linki źródłowe'
+
+    terms:
+        header: 'Terminologia'
+        headerLong: 'Słownik terminologii queerowej'
+        id: 'terminologia'
+        info:
+            - >
+                Większość zwrotów i wyrażeń związanych ze środowiskiem LGBTQ+
+                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+                i jakie proponujemy dla nich polskie tłumaczenia.
+        term: 'Określenie'
+        original: 'Pochodzenie'
+        definition: 'Definicja'
 
 names:
     header: 'Imiona'

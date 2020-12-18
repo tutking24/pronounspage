@@ -44,6 +44,7 @@ app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
 app.use(require('./routes/nouns').default);
 app.use(require('./routes/inclusive').default);
+app.use(require('./routes/terms').default);
 app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
 

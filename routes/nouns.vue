@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>
-            <Icon v="atom-alt"/>
+            <Icon v="book"/>
             <T>nouns.headerLonger</T>
         </h2>
 

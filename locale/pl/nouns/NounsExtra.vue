@@ -239,7 +239,7 @@
 
         <T>nouns.inclusive.info</T>
 
-        <details class="border mb-3">
+        <details class="border mb-3" ref="inclusivedictionarywrapper">
             <summary class="bg-light p-3" @click="$refs.inclusivedictionary.loadEntries()">
                 <h4 class="h5 d-inline">
                     <Icon v="book-heart"/>
@@ -251,13 +251,38 @@
             </div>
         </details>
         -->
+
+        <!--
+        <Separator icon="atom-alt"/>
+
+        <h3 :id="$t('nouns.terms.id')">
+            <Icon v="flag"/>
+            <T>nouns.terms.headerLong</T>
+        </h3>
+
+        <T>nouns.terms.info</T>
+
+        <details class="border mb-3" ref="termsdictionarywrapper">
+            <summary class="bg-light p-3" @click="$refs.termsdictionary.loadEntries()">
+                <h4 class="h5 d-inline">
+                    <Icon v="flag"/>
+                    <T>nouns.terms.headerLong</T>
+                </h4>
+            </summary>
+            <div class="border-top">
+                <TermsDictionary ref="termsdictionary"/>
+            </div>
+        </details>
+        -->
     </div>
 </template>
 
 <script>
     import {Noun, NounDeclension} from "../../../src/classes";
+    import hash from "../../../plugins/hash";
 
     export default {
+        mixins: [ hash ],
         data() {
             return {
                 personNouns: [
@@ -441,6 +466,18 @@
                 },
             }
         },
+        mounted() {
+            this.handleHash(this.config.nouns.inclusive.hashNamespace, filter => {
+                this.$refs.inclusivedictionarywrapper.open = true;
+                this.$refs.inclusivedictionarywrapper.scrollIntoView();
+                this.$refs.inclusivedictionary.setFilter(filter);
+            });
+            this.handleHash(this.config.nouns.terms.hashNamespace, filter => {
+                this.$refs.termsdictionarywrapper.open = true;
+                this.$refs.termsdictionarywrapper.scrollIntoView();
+                this.$refs.termsdictionary.setFilter(filter);
+            });
+        }
     }
 </script>
 

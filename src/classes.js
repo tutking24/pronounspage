@@ -675,6 +675,31 @@ export class InclusiveEntry {
     }
 }
 
+export class TermsEntry {
+    constructor({id, term, original, definition, approved = true, base_id = null}) {
+        this.id = id;
+        this.term = term.split('|');
+        this.original = original ? original.split('|') : [];
+        this.definition = definition;
+        this.approved = !!approved;
+        this.base = base_id;
+    }
+
+    matches(filter) {
+        if (!filter) {
+            return true;
+        }
+
+        for (let field of ['term', 'original']) {
+            for (let value of this[field]) {
+                if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
 
 export class Name {
     constructor(name, origin, meaning, usage, legally, pros, cons, notablePeople, count, links) {

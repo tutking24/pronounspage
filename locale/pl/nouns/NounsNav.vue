@@ -24,6 +24,7 @@
                     dukajNouns: 'ghost',
                     personNouns: 'user-friends',
                     // inclusive: 'book-heart',
+                    // terms: 'flag',
                 }
             };
         },

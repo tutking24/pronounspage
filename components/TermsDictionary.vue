@@ -29,88 +29,28 @@
             </div>
         </section>
 
-        <Table :data="visibleEntries()" columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+        <Table :data="visibleEntries()" columns="1" fixed :marked="(el) => !el.approved" ref="dictionarytable">
             <template v-slot:header>
-                <th class="text-nowrap">
-                    <Icon v="comment-times"/>
-                    <T>nouns.inclusive.insteadOf</T>
-                </th>
-                <th class="text-nowrap">
-                    <Icon v="comment-check"/>
-                    <T>nouns.inclusive.say</T>
-                </th>
-                <th class="text-nowrap">
-                    <Icon v="comment-dots"/>
-                    <T>nouns.inclusive.because</T>
-                </th>
+                <th></th>
                 <th></th>
             </template>
 
             <template v-slot:row="s"><template v-if="s">
                 <td>
-                    <ul class="list-untyled">
-                        <li v-for="w in s.el.insteadOf">{{w}}</li>
-                    </ul>
-
-                    <ul class="list-inline">
-                        <li v-for="category in s.el.categories" class="list-inline-item">
-                            <span class="badge badge-primary">
-                                {{category}}
-                            </span>
-                        </li>
-                    </ul>
+                    <p>
+                        <strong>{{s.el.term.join(', ')}}</strong>
+                        <span v-if="s.el.original.length">({{s.el.original.join(', ')}})</span>
+                        – {{s.el.definition}}
+                    </p>
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].insteadOf">{{w}}</li>
-                        </ul>
 
-                        <ul class="list-inline">
-                            <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
-                            <span class="badge badge-primary">
-                                {{category}}
-                            </span>
-                            </li>
-                        </ul>
-                    </small>
-                </td>
-                <td>
-                    <ul class="list-untyled">
-                        <li v-for="w in s.el.say">{{w}}</li>
-                    </ul>
-
-                    <small v-if="s.el.base && entries[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].say">{{w}}</li>
-                        </ul>
-                    </small>
-                </td>
-                <td>
-                    <p v-for="p in s.el.because.split('\n\n')">{{p}}</p>
-
-                    <ul class="list-unstyled small">
-                        <li v-for="link in s.el.links">
-                            <a :href="link" target="_blank" rel="noopener">
-                                <Icon v="external-link"/>
-                                {{clearUrl(link)}}
-                            </a>
-                        </li>
-                    </ul>
-
-                    <small v-if="s.el.base && entries[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
-                        <p v-for="p in entries[s.el.base].because.split('\n\n')">{{p}}</p>
-
-                        <ul class="list-unstyled small">
-                            <li v-for="link in entries[s.el.base].links">
-                                <a :href="link" target="_blank" rel="noopener">
-                                    <Icon v="external-link"/>
-                                    {{clearUrl(link)}}
-                                </a>
-                            </li>
-                        </ul>
+                        <p>
+                            <strong>{{s.el.term.join(', ')}}</strong>
+                            <span v-if="s.el.original.length">({{s.el.original.join(', ')}})</span>
+                            – {{s.el.definition}}
+                        </p>
                     </small>
                 </td>
                 <td>
@@ -169,14 +109,14 @@
             <Separator icon="plus"/>
 
             <div class="px-3">
-                <InclusiveSubmitForm ref="form"/>
+                <TermsSubmitForm ref="form"/>
             </div>
         </template>
     </Loading>
 </template>
 
 <script>
-    import { InclusiveEntry } from "~/src/classes";
+    import { TermsEntry } from "~/src/classes";
     import { buildDict, clearUrl } from "../src/helpers";
     import hash from "../plugins/hash";
 
@@ -202,7 +142,7 @@
                 if (this.entriesRaw !== undefined) {
                     return;
                 }
-                this.entriesRaw = await this.$axios.$get(`/inclusive`);
+                this.entriesRaw = await this.$axios.$get(`/terms`);
             },
             async setFilter(filter) {
                 this.filter = filter;
@@ -220,7 +160,7 @@
                 this.$refs.form.edit(entry);
             },
             async approve(entry) {
-                await this.$axios.$post(`/inclusive/approve/${entry.id}`);
+                await this.$axios.$post(`/terms/approve/${entry.id}`);
                 if (entry.base) {
                     delete this.entries[entry.base];
                 }
@@ -229,14 +169,14 @@
                 this.$forceUpdate();
             },
             async hide(entry) {
-                await this.$axios.$post(`/inclusive/hide/${entry.id}`);
+                await this.$axios.$post(`/terms/hide/${entry.id}`);
                 entry.approved = false;
                 this.$forceUpdate();
             },
             async remove(entry) {
                 await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
 
-                await this.$axios.$post(`/inclusive/remove/${entry.id}`);
+                await this.$axios.$post(`/terms/remove/${entry.id}`);
                 delete this.entries[entry.id];
                 this.$forceUpdate();
             },
@@ -266,17 +206,17 @@
                         if (!a.approved && b.approved) {
                             return -1;
                         }
-                        return a.insteadOf.toLowerCase().localeCompare(b.insteadOf.toLowerCase());
+                        return a.term.toLowerCase().localeCompare(b.term.toLowerCase());
                     });
                     for (let w of sorted) {
-                        yield [w.id, new InclusiveEntry(w)];
+                        yield [w.id, new TermsEntry(w)];
                     }
                 }, this);
             },
         },
         watch: {
             filter() {
-                this.setHash(this.config.nouns.inclusive.hashNamespace || '', this.filter);
+                this.setHash(this.config.nouns.terms.hashNamespace || '', this.filter);
                 if (this.$refs.dictionarytable) {
                     this.$refs.dictionarytable.reset();
                     this.$refs.dictionarytable.focus();
