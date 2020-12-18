@@ -60,6 +60,10 @@ nouns:
     declension: false
     submit: true
     templates: true
+    inclusive:
+        enabled: false
+    terms:
+        enabled: false
 
 names:
     enabled: false

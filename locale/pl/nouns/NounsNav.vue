@@ -18,14 +18,22 @@
 <script>
     export default {
         data() {
+            const links = {
+                neuterNouns: 'deer',
+                dukajNouns: 'ghost',
+                personNouns: 'user-friends',
+            }
+
+            if (this.config.nouns.inclusive.enabled) {
+                links['inclusive'] = 'book-heart';
+            }
+
+            if (this.config.nouns.terms.enabled) {
+                links['terms'] = 'flag';
+            }
+
             return {
-                links: {
-                    neuterNouns: 'deer',
-                    dukajNouns: 'ghost',
-                    personNouns: 'user-friends',
-                    // inclusive: 'book-heart',
-                    // terms: 'flag',
-                }
+                links,
             };
         },
     }

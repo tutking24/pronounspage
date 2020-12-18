@@ -1,5 +1,9 @@
 <template>
-    <span :title="alt">
+    <a v-if="link" :href="`/${config.nouns.route}#${config.nouns.terms.hashNamespace}/${link}`" :title="alt">
+        <img :src="img" alt=""/>
+        {{ name }}
+    </a>
+    <span v-else :title="alt">
         <img :src="img" alt=""/>
         {{ name }}
     </span>
@@ -11,6 +15,25 @@
             name: { required: true },
             alt: { required: true },
             img: { required: true },
+            terms: { 'default': [] },
+        },
+        computed: {
+            link() {
+                if (!this.config.nouns.terms.enabled) {
+                    return null;
+                }
+
+                for (let term of this.terms) {
+                    if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
+                        return this.name;
+                    }
+                    if (term.original.toLowerCase().includes(this.alt.toLowerCase())) {
+                        return this.alt;
+                    }
+                }
+
+                return null;
+            },
         },
     }
 </script>

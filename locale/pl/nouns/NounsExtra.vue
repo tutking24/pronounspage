@@ -229,51 +229,51 @@
             </div>
         </details>
 
-        <!--
-        <Separator icon="atom-alt"/>
+        <template v-if="config.nouns.inclusive.enabled">
+            <Separator icon="atom-alt"/>
 
-        <h3 :id="$t('nouns.inclusive.id')">
-            <Icon v="book-heart"/>
-            <T>nouns.inclusive.headerLong</T>
-        </h3>
+            <h3 :id="$t('nouns.inclusive.id')">
+                <Icon v="book-heart"/>
+                <T>nouns.inclusive.headerLong</T>
+            </h3>
 
-        <T>nouns.inclusive.info</T>
+            <T>nouns.inclusive.info</T>
 
-        <details class="border mb-3" ref="inclusivedictionarywrapper">
-            <summary class="bg-light p-3" @click="$refs.inclusivedictionary.loadEntries()">
-                <h4 class="h5 d-inline">
-                    <Icon v="book-heart"/>
-                    <T>nouns.inclusive.headerLong</T>
-                </h4>
-            </summary>
-            <div class="border-top">
-                <InclusiveDictionary ref="inclusivedictionary"/>
-            </div>
-        </details>
-        -->
+            <details class="border mb-3" ref="inclusivedictionarywrapper">
+                <summary class="bg-light p-3" @click="$refs.inclusivedictionary.loadEntries()">
+                    <h4 class="h5 d-inline">
+                        <Icon v="book-heart"/>
+                        <T>nouns.inclusive.headerLong</T>
+                    </h4>
+                </summary>
+                <div class="border-top">
+                    <InclusiveDictionary ref="inclusivedictionary"/>
+                </div>
+            </details>
+        </template>
 
-        <!--
-        <Separator icon="atom-alt"/>
+        <template v-if="config.nouns.terms.enabled">
+            <Separator icon="atom-alt"/>
 
-        <h3 :id="$t('nouns.terms.id')">
-            <Icon v="flag"/>
-            <T>nouns.terms.headerLong</T>
-        </h3>
+            <h3 :id="$t('nouns.terms.id')">
+                <Icon v="flag"/>
+                <T>nouns.terms.headerLong</T>
+            </h3>
 
-        <T>nouns.terms.info</T>
+            <T>nouns.terms.info</T>
 
-        <details class="border mb-3" ref="termsdictionarywrapper">
-            <summary class="bg-light p-3" @click="$refs.termsdictionary.loadEntries()">
-                <h4 class="h5 d-inline">
-                    <Icon v="flag"/>
-                    <T>nouns.terms.headerLong</T>
-                </h4>
-            </summary>
-            <div class="border-top">
-                <TermsDictionary ref="termsdictionary"/>
-            </div>
-        </details>
-        -->
+            <details class="border mb-3" ref="termsdictionarywrapper">
+                <summary class="bg-light p-3" @click="$refs.termsdictionary.loadEntries()">
+                    <h4 class="h5 d-inline">
+                        <Icon v="flag"/>
+                        <T>nouns.terms.headerLong</T>
+                    </h4>
+                </summary>
+                <div class="border-top">
+                    <TermsDictionary ref="termsdictionary"/>
+                </div>
+            </details>
+        </template>
     </div>
 </template>
 

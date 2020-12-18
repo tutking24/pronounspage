@@ -43,7 +43,7 @@
         <section v-if="profile.flags.length">
             <ul class="list-inline">
                 <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item pr-2">
-                    <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)" :alt="allFlags[flag]" :img="`/flags/${flag}.png`"/>
+                    <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)" :alt="allFlags[flag]" :img="`/flags/${flag}.png`" :terms="terms"/>
                 </li>
             </ul>
         </section>
@@ -136,6 +136,7 @@
         async asyncData({ app, route }) {
             return {
                 profiles: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
+                terms: await app.$axios.$get(`/terms`),
             };
         },
         computed: {
