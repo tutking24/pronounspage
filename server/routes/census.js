@@ -61,4 +61,12 @@ router.post('/census/submit', async (req, res) => {
     return res.json(id);
 });
 
+router.get('/census/count', async (req, res) => {
+    return res.json((await req.db.get(SQL`
+        SELECT COUNT(*) as c FROM census
+        WHERE locale = ${req.config.locale}
+        AND edition = ${req.config.census.edition}
+    `)).c);
+});
+
 export default router;

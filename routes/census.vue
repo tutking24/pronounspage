@@ -6,6 +6,13 @@
         </h2>
 
         <template v-if="q === null">
+            <section v-if="$admin()">
+                <div class="alert alert-info">
+                    {{countResponses}}
+                    <T>census.replies</T>
+                </div>
+            </section>
+
             <section>
                 <T :params='{
                     questions: questions.length,
@@ -131,9 +138,11 @@
         },
         async asyncData({ app, store }) {
             const finished = await app.$axios.$get(`/census/finished`);
+            const countResponses = await app.$axios.$get(`/census/count`);
 
             return {
                 finished,
+                countResponses,
             };
         },
         methods: {
