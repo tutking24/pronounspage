@@ -128,6 +128,15 @@
                     });
                 }
 
+                if (this.config.census.enabled) {
+                    links.push({
+                        link: '/' + this.config.census.route,
+                        icon: 'user-chart',
+                        text: this.$t('census.header'),
+                        textLong: this.$t('census.headerLong'),
+                    });
+                }
+
                 if (this.config.contact.enabled) {
                     links.push({
                         link: '/' + this.config.contact.route,

@@ -14,7 +14,9 @@ export default (key, params = {}, warn = true) => {
 
     for (let k in params) {
         if (params.hasOwnProperty(k)) {
-            value = value.replace(new RegExp('%' + k + '%', 'g'), params[k])
+            value = Array.isArray(value)
+                ? value.map(v => v.replace(new RegExp('%' + k + '%', 'g'), params[k]))
+                : value.replace(new RegExp('%' + k + '%', 'g'), params[k]);
         }
     }
 

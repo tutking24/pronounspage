@@ -886,6 +886,36 @@ profile:
         meh: 'Spoko'
         no: 'Nie'
 
+census:
+    header: 'Cenzus'
+    headerLong: 'Cenzus płci'
+    description:
+        - >
+            Ciekawi Cię, jakiego języka używają polskie osoby niebinarne?
+            Które zaimki, rodzaje gramatyczne i inne formy są najpopularniejsze?
+            Jakimi etykietkami się opisujemy?
+            Jak te trendy zmieniają się w czasie?
+        - >
+            To super, bo nas też! Dlatego chcemy co roku przeprowadzać cenzus, w którym to zbadamy.
+            Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
+        - >
+            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
+            W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
+            By uniknąć tendencyjności, kolejność propozycji jest losowa.
+    agree: >
+        Wyrażam zgodę na przetwarzanie moich odpowiedzi
+        oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
+        do przeciwdziałania wandalizmom i spamowi.
+        Dane te nie są w stanie zidentyfikować żadnej osoby,
+        zostaną użyte wyłącznie w celu zapewnienia unikalności odpowiedzi
+        i usunięte po zamknięciu cenzusu.
+    start: 'Rozpocznij ankietę'
+    finished: >
+        Dziękujemy za wzięcie udziału w cenzusie!
+        Wyniki i wnioski ogłosimy wkrótce {/kontakt=w mediach społecznościowych}.
+    prev: 'Poprzednie pytanie'
+    next: 'Następne pytanie'
+
 share: 'Udostępnij'
 
 crud:

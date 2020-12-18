@@ -175,6 +175,10 @@ export default {
                 routes.push({ path: '/' + config.contact.route, component: resolve(__dirname, 'routes/contact.vue') });
             }
 
+            if (config.census.enabled) {
+                routes.push({ path: '/' + config.census.route, component: resolve(__dirname, 'routes/census.vue') });
+            }
+
             if (config.user.enabled) {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
                 routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});

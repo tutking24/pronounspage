@@ -426,6 +426,56 @@ profile:
     flags:
         defaultPronoun: 'on_'
 
+census:
+    enabled: false
+    route: 'cenzus'
+    open: true
+    edition: '2021'
+    start: '2021-03-01'
+    end: '2021-03-31'
+    questions:
+        -
+            type: 'radio'
+            question: 'Gdzie obecnie mieszkasz?'
+            options:
+                - 'w Polsce'
+                - 'za granicą'
+        -
+            type: 'number'
+            min: 12
+            max: 120
+            question: 'Ile masz lat?'
+        -
+            type: 'checkbox'
+            question: 'Jakimi słowami opisujesz swoją płeć?'
+            randomise: true
+            writein: true
+            options:
+                - 'niebinarn_'
+                - 'agender'
+                - 'agenderow_'
+                - 'bigender'
+                - 'bigenderow_'
+                - 'enby'
+                - 'niebinie'
+                - 'queer'
+        -
+            type: 'checkbox'
+            question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
+            randomise: true
+            writein: true
+            options:
+                - 'on/jego'
+                - 'ona/jej'
+                - 'ono/jego'
+                - 'ono/jej'
+                - 'onu/jenu'
+                - 'maskulatywy'
+                - 'feminatywy'
+                - 'neutratywy'
+                - 'dukatywy'
+                - 'osobatywy'
+
 redirects:
     - { from: '^/neutratywy', to: '/s%C5%82ownik' }
     - { from: '^/rzeczowniki', to: '/s%C5%82ownik' }
