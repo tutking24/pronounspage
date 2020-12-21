@@ -7,16 +7,20 @@
                     <T>title</T>
                 </nuxt-link>
             </h1>
-            <ul v-if="Object.keys(locales).length > 1" class="list-inline small mb-0">
-                <li v-for="(options, locale) in locales" :key="locale" class="list-inline-item">
-                    <strong v-if="locale === config.locale">
-                        {{options.name}}
-                    </strong>
-                    <a v-else :href="options.url">
-                        {{options.name}}
-                    </a>
-                </li>
-            </ul>
+            <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm">
+                <template v-slot:toggle>
+                    <Icon v="language"/>
+                    {{locales[config.locale].name}}
+                </template>
+
+                <template v-slot:menu>
+                    <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
+                        <a :href="options.url" class="dropdown-item">
+                            {{options.name}}
+                        </a>
+                    </li>
+                </template>
+            </Dropdown>
         </div>
         <div class="d-block d-md-none">
             <div class="btn-group-vertical btn-block nav-custom mb-2">
