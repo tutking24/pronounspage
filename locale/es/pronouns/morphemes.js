@@ -8,4 +8,5 @@ export default [
     'plural_indefinite_article',  // no example?
     'plural_direct_object_pronoun',
     'inflection',
+    'inflection_c',
 ];
