@@ -1,0 +1,157 @@
+locale: 'es'
+
+header: true
+
+pronouns:
+    enabled: true
+    default: 'él'
+    any: 'any'
+    plurals: false
+    honorifics: false
+    multiple:
+        name: 'Interchangeable forms'
+        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        examples: ['él&ella', 'él&elle', 'ella&elle']
+    null: false
+    emoji: false
+    slashes: false
+    avoiding: false
+    others: 'Other pronouns'
+
+pronunciation:
+    enabled: true
+    language: 'es-ES'
+    voice: 'Lucia'
+    engine: 'standard'
+
+sources:
+    enabled: true
+    route: 'sources'
+    submit: true
+    mergePronouns: {}
+
+nouns:
+    enabled: true
+    route: 'dictionary'
+    collapsable: false
+    plurals: false
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: false
+    inclusive:
+        enabled: false
+    terms:
+        enabled: false
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+english:
+    enabled: false
+
+faq:
+    enabled: true
+    route: 'faq'
+
+links:
+    enabled: true
+    route: 'links'
+    blogRoute: 'blog'
+    links: []
+    media: []
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
+    recommended: []
+
+contact:
+    enabled: true
+    route: 'contact'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
+    authors:
+        -
+            name: 'The “Neutral Language Council” collective'
+            link: '/blog/neutral-language-council'
+            group: true
+        -
+            name: 'Andrea'
+            profile: 'andrea'
+            pronouns: 'they'
+            pronounsLink: '/they'
+            website: 'https://avris.it'
+            twitter: 'AvrisIT'
+            mail: 'andrea@avris.it'
+            areas:
+                code: 'https://gitlab.com/Avris/Zaimki'
+                language: ~
+                faq: '/faq'
+        -
+            name: 'Paweł Dembowski'
+            profile: 'Ausir'
+            pronouns: 'he'
+            pronounsLink: '/he'
+            twitter: 'VaultAusir'
+            mail: 'pawel.dembowski@gmail.com'
+            areas:
+                language: ~
+                sources: '/sources'
+        -
+            name: 'TODO…'
+
+support:
+    enabled: true
+    links:
+        -
+            icon: 'coffee'
+            url: 'https://ko-fi.com/radajezykaneutralnego'
+            headline: 'Ko-Fi'
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/RJNeutralnego'
+            headline: 'PayPal'
+
+user:
+    enabled: true
+    route: 'account'
+    termsRoute: 'terms'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        - ['señor', 'señora', 'señore', 'don', 'doña', 'doñe', 'usted', 'tú', 'vos']
+        - ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'weón']
+        - ['lind_', 'guap_', 'bonit_', 'mon_', 'hermos_', 'sexi']
+        - ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
+    flags:
+        defaultPronoun: 'ell_'
+
+census:
+    enabled: false
+
+redirects: []
+
+api:
+    examples:
+        pronouns_all: ['/api/pronouns']
+        pronouns_one:
+            - '/api/pronouns/she/her'
+            - '/api/pronouns/she/her?examples[]=Did%20you%20ask%20%7Bpronoun_object%7D%20to%20join%20us%3F'
+
+        sources_all: ['/api/sources']
+        sources_one: ['/api/sources/01ERQRCV0XGVJ3T07MV9F6XQ83']
+
+        nouns_all: ['/api/nouns']
+        nouns_search: ['/api/nouns/search/person']

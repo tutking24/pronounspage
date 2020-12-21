@@ -1,0 +1,9 @@
+singular	plural	isHonorific
+Creo que {pronoun} es muy querid{inflection}.		FALSE
+Llamé a mi herman{inflection} esta mañana y me dijo que estará ocupad{inflection} esta tarde.		FALSE
+A mi amiga la quiero, pero a mi novi{inflection} {direct_object} amo mucho.		FALSE
+{'plural_definite_article} activist{inflection}s están presionando para la aceptación de los pronombres neutros.		FALSE
+Se acerca la navidad y no sé qué regalos comprar para {plural_pronoun}.		FALSE
+{'pronoun} dueñ{inflection} de esta tienda es una persona amable.		FALSE
+{'plural_direct_object_pronoun} vi anoche pero no me reconocieron.		FALSE
+Es {indefinite_article} de mis mejores alumn{inflection}s.		FALSE

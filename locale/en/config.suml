@@ -257,6 +257,9 @@ profile:
     flags:
         defaultPronoun: 'they'
 
+census:
+    enabled: false
+
 redirects: []
 
 api:

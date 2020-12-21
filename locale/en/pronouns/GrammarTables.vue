@@ -31,9 +31,7 @@
 </template>
 
 <script>
-    import Morpheme from "../../../components/Morpheme";
     export default {
-        components: {Morpheme},
         props: {
             selectedPronoun: { required: true },
             counter: { required: true },

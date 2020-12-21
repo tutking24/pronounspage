@@ -1,0 +1,13 @@
+key	description	normative	pronoun	direct_object_pronoun	definite_article	indefinite_article	plural_pronoun	plural_definite_article	plural_indefinite_article	plural_direct_object_pronoun	inflection	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+él,él/lo	masculine	TRUE	él	lo	el	un	ellos	los	unos	los	o	FALSE	FALSE	TRUE
+ella,ella/la	feminine	TRUE	ella	la	la	una	ellas	las	unas	las	a	FALSE	FALSE	TRUE
+elle,elle/le	neutral neo-pronoun	FALSE	elle	le	le	une	elles	les	unes	les	e	FALSE	FALSE	TRUE
+ellu,ellu/lu	proposed neutral neo-pronoun (uncommon)	FALSE	ellu	lu	lu	unu	ellus	lus	unus	lus	u	FALSE	FALSE	TRUE
+elli,elli/li	proposed neutral neo-pronoun (uncommon)	FALSE	elli	li	li	uni	ellis	lis	unis	lis	i	FALSE	FALSE	TRUE
+ol,ol/ol	proposed agender neo-pronoun (uncommon)	FALSE	ol	ol	ol	une	olles	oles	unes	oles	e	FALSE	FALSE	TRUE
+xelle,xelle/le	"neopronoun modeled on English ""xe"" (uncommon)"	FALSE	xelle	le	le	une	xelles	les	unes	les	e	FALSE	FALSE	TRUE
+ellx,ellx/lx	neutral (not pronounceable)	FALSE	ellx	lx	lx	unx	ellxs	lxs	unxs	lxs	x	FALSE	FALSE	FALSE
+ell_,ell_/l_	neutral (not pronounceable)	FALSE	ell_	l_	l_	un_	ell_s	l_s	un_s	l_s	_	FALSE	FALSE	FALSE
+ell*,ell*/l*	neutral (not pronounceable)	FALSE	ell*	l*	l*	un*	ell*s	l*s	un*s	l*s	*	FALSE	FALSE	FALSE
+ellæ,ellæ/læ	neutral (not pronounceable)	FALSE	ellæ	læ	læ	unæ	ellæs	læs	unæs	læs	æ	FALSE	FALSE	FALSE
+ell@,ell@/l@	mostly binary inclusive (not pronounceable)	FALSE	ell@	l@	l@	un@	ell@s	l@s	un@s	l@s	@	FALSE	FALSE	FALSE
