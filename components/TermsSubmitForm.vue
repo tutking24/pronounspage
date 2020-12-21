@@ -49,8 +49,6 @@
                 </table>
             </div>
 
-            <Debug :v="form"/>
-
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
                 <T>nouns.editing</T>
