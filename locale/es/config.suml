@@ -20,9 +20,15 @@ pronouns:
 
 pronunciation:
     enabled: true
-    language: 'es-ES'
-    voice: 'Lucia'
-    engine: 'standard'
+    voices:
+        ES:
+            language: 'es-ES'
+            voice: 'Lucia'
+            engine: 'standard'
+        MX:
+            language: 'es-MX'
+            voice: 'Mia'
+            engine: 'standard'
 
 sources:
     enabled: true

@@ -10,7 +10,7 @@ import S3 from 'aws-sdk/clients/s3';
 
 const router = Router();
 
-router.get('/pronounce/:pronoun*', async (req, res) => {
+router.get('/pronounce/:voice/:pronoun*', async (req, res) => {
     const pronounString = req.params.pronoun + req.params[0];
     const pronoun = buildPronoun(
         parsePronouns(loadTsv('pronouns/pronouns')),
@@ -34,10 +34,17 @@ router.get('/pronounce/:pronoun*', async (req, res) => {
         return res.status(404).json({error: 'Not found'});
     }
 
+    const voice = req.config.pronunciation.voices[req.params.voice];
+    if (!voice) {
+        return res.status(404).json({error: 'Not found'});
+    }
+
     const s3 = new S3(awsConfig);
     const polly = new Polly(awsConfig);
 
-    const key = `pronunciation/${req.config.locale}/${pronounString}/${sha1(text)}.mp3`;
+    const key = `pronunciation/${req.config.locale}-${req.params.voice}/${pronounString}/${sha1(text)}.mp3`;
+
+    console.log(key, voice);
 
     try {
         const s3getResponse = await s3.getObject({Key: key}).promise();
@@ -47,9 +54,9 @@ router.get('/pronounce/:pronoun*', async (req, res) => {
             TextType: 'ssml',
             Text: text,
             OutputFormat: 'mp3',
-            LanguageCode: req.config.pronunciation.language,
-            VoiceId: req.config.pronunciation.voice,
-            Engine: req.config.pronunciation.engine,
+            LanguageCode: voice.language,
+            VoiceId: voice.voice,
+            Engine: voice.engine,
         }).promise();
 
         const s3putResponse = await s3.putObject({

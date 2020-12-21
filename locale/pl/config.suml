@@ -44,9 +44,11 @@ pronouns:
 
 pronunciation:
     enabled: true
-    language: 'pl-PL'
-    voice: 'Ewa'
-    engine: 'standard'
+    voices:
+        PL:
+            language: 'pl-PL'
+            voice: 'Ewa'
+            engine: 'standard'
 
 sources:
     enabled: true

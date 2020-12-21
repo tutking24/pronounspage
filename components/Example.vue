@@ -7,11 +7,14 @@
         <small v-if="link">
             (<nuxt-link :to="'/' + pronoun.canonicalName">{{ pronoun.canonicalName }}</nuxt-link>)
         </small>
-        <a v-if="config.pronunciation.enabled && pronounce && pronoun.pronounceable && example.pronounce(pronoun)"
-           :href="pronunciationLink"
-           @click.prevent="pronounce">
-            <Icon v="volume"/>
-        </a>
+        <template v-if="config.pronunciation.enabled && pronounce && pronoun.pronounceable && example.pronounce(pronoun)">
+            <a v-for="(link, name) in pronunciationLinks"
+               class="mr-2"
+               :href="link"
+               @click.prevent="pronounce(link)">
+                <Icon v="volume"/><sub v-if="name">{{name}}</sub>
+            </a>
+        </template>
     </span>
 </template>
 
@@ -27,8 +30,8 @@
             pronunciation: { type: Boolean },
         },
         methods: {
-            pronounce() {
-                const sound = new Audio(this.pronunciationLink);
+            pronounce(link) {
+                const sound = new Audio(link);
                 sound.play();
             }
         },
@@ -52,8 +55,15 @@
             pronounToString() {
                 return this.pronounBase && pronouns[this.pronounBase].equals(this.pronoun) ? this.pronounBase : this.pronoun.toString();
             },
-            pronunciationLink() {
-                return `/api/pronounce/${this.pronounToString}?example=${encodeURIComponent(this.example.toString())}`;
+            pronunciationLinks() {
+                const justOne = Object.keys(this.config.pronunciation.voices).length === 1;
+
+                const links = {};
+                for (let country in this.config.pronunciation.voices) {
+                    if (!this.config.pronunciation.voices.hasOwnProperty(country)) { continue; }
+                    links[justOne ? '' : country] = `/api/pronounce/${country}/${this.pronounToString}?example=${encodeURIComponent(this.example.toString())}`;
+                }
+                return links;
             }
         }
     }
