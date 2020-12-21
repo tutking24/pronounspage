@@ -15,7 +15,7 @@
             name: { required: true },
             alt: { required: true },
             img: { required: true },
-            terms: { 'default': [] },
+            terms: { },
         },
         computed: {
             link() {
@@ -23,7 +23,7 @@
                     return null;
                 }
 
-                for (let term of this.terms) {
+                for (let term of this.terms || []) {
                     if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
                         return this.name;
                     }

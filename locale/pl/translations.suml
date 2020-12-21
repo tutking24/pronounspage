@@ -1022,6 +1022,7 @@ flags:
     Demisexual: 'Demiseksualn{adjective_n}'
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
+    Fa*afafine: 'Fa''afafine'
     Gay: 'Gej'
     Gender_Questioning: 'Rozważając{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
@@ -1032,11 +1033,15 @@ flags:
     Greyasexual: 'Szaroaseksualn{adjective_n}'
     Greyaromantic: 'Szaroaromantyczn{adjective_n}'
     Gynesexual: 'Gyneseksualn{adjective_n}'
+    Heteroflexible: 'Heteroelastyczn{adjective_n}'
+    Hijra: 'Hidźra'
+    Homoflexible: 'Homoelastyczn{adjective_n}'
     Intersex: 'Interpłciow{adjective_n}'
     LGBTQ: 'LGBTQ'
     Leather_Pride: 'Skórzak'
     Lesbian: 'Lesbijka'
     Maverique: 'Maweryczn{adjective_n}'
+    Muxe: 'Muxe'
     Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
     Neopronouns: 'Neozaimki'
     Neutrois: 'Neutralnopłciow{adjective_n}'
@@ -1054,6 +1059,7 @@ flags:
     Queerplatonic: 'Queerplatoniczn{adjective_n}'
     Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
     Sapphic: 'Safick{adjective_n_alt}'  # Safik, Sapphic
+    Sexuality_Questioning: 'Rozważając{adjective_n} swoją orientację'
     Straight_Ally: 'Hetero osoba sojusznicza'
     Toric: 'Toryczn{adjective_n}'
     Transfeminine: 'Transkobiec{adjective_n}'
@@ -1062,4 +1068,5 @@ flags:
     Transneutral: 'Transneutraln{adjective_n}'
     Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
     Trixic: 'Triksyjsk{adjective_n_alt}'
+    Two_Spirit: 'Dwie dusze'
     Xenogender: 'Ksenopłciow{adjective_n}'
