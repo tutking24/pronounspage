@@ -3,6 +3,7 @@
         <Links top/>
         <Media/>
         <Socials/>
+        <LanguageVersions/>
         <Recommended/>
 
         <section>

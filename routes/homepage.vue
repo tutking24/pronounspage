@@ -207,6 +207,7 @@
         <section>
             <Media/>
             <Socials/>
+            <LanguageVersions/>
         </section>
     </div>
 </template>

@@ -758,6 +758,8 @@ links:
 
     social: 'Social media'
 
+    languageVersions: 'Inne wersje językowe'
+
 people:
     header: 'Znane osoby'
     headerLong: 'Zaimki znanych osób'
