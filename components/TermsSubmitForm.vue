@@ -39,9 +39,17 @@
                             <textarea v-model="form.definition" class="form-control form-control-sm" required rows="3"></textarea>
                         </td>
                     </tr>
+                    <tr v-if="$admin()">
+                        <td colspan="3">
+                            <T>profile.flags</T>
+                            <ListInput v-model="form.flags" v-slot="s"/>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
+
+            <Debug :v="form"/>
 
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
@@ -73,6 +81,7 @@
                     term: [''],
                     original: [],
                     definition: '',
+                    flags: [],
                     base: null,
                 },
                 submitting: false,
@@ -90,6 +99,7 @@
                     term: [''],
                     original: [],
                     definition: '',
+                    flags: [],
                     base: null,
                 };
             },
@@ -98,6 +108,7 @@
                     term: word.term,
                     original: word.original,
                     definition: word.definition,
+                    flags: word.flags,
                     base: word.id,
                 }
                 this.afterSubmit = false;

@@ -676,11 +676,12 @@ export class InclusiveEntry {
 }
 
 export class TermsEntry {
-    constructor({id, term, original, definition, approved = true, base_id = null}) {
+    constructor({id, term, original, definition, flags = '[]', approved = true, base_id = null}) {
         this.id = id;
         this.term = term.split('|');
         this.original = original ? original.split('|') : [];
         this.definition = definition;
+        this.flags = JSON.parse(flags);
         this.approved = !!approved;
         this.base = base_id;
     }

@@ -52,11 +52,12 @@ router.post('/terms/submit', async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO terms (id, term, original, definition, approved, base_id, locale, author_id)
+        INSERT INTO terms (id, term, original, definition, approved, base_id, locale, author_id, flags)
         VALUES (
             ${id},
             ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${req.body.definition},
-            0, ${req.body.base}, ${req.config.locale}, ${req.user ? req.user.id : null}
+            0, ${req.body.base}, ${req.config.locale}, ${req.user ? req.user.id : null},
+            ${JSON.stringify(req.body.flags)}
         )
     `);
 

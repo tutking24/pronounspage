@@ -43,6 +43,10 @@
                         – {{s.el.definition}}
                     </p>
 
+                    <p v-if="s.el.flags.length" class="text-center">
+                        <img v-for="flag in s.el.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
+                    </p>
+
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
@@ -260,5 +264,9 @@
                 display: inline;
             }
         }
+    }
+
+    .flag {
+        height: 96px;
     }
 </style>
