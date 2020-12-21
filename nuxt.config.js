@@ -6,7 +6,7 @@ const config = loadSuml('config');
 const translations = loadSuml('translations');
 
 const locale = config.locale;
-const locales = buildLocaleList();
+const locales = buildLocaleList(locale);
 const title = translations.title;
 const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';

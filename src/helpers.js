@@ -1,6 +1,7 @@
 import md5 from 'js-md5';
 import { Base64 } from 'js-base64';
 import _ from 'lodash';
+import locales from './locales';
 
 export const buildDict = (fn, ...args) => {
     const dict = {};
@@ -137,11 +138,12 @@ export const isTroll = (body) => {
     return ['cipeusz', 'feminazi', 'bruksela', 'zboczeń'].some(t => body.indexOf(t) > -1);
 }
 
-export const buildLocaleList = () => {
+export const buildLocaleList = (current) => {
     return buildDict(function* () {
-        for (let locale of process.env.LOCALES.split('|')) {
-            const [code, name, url] = locale.split(',');
-            yield [code, {name, url}];
+        for (let [code, name, url, published] of locales) {
+            if (published || current === code) {
+                yield [code, {name, url}];
+            }
         }
     })
 }
