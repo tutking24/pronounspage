@@ -7,6 +7,7 @@
                     <T>title</T>
                 </nuxt-link>
             </h1>
+            <!--
             <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm">
                 <template v-slot:toggle>
                     <Icon v="language"/>
@@ -21,6 +22,16 @@
                     </li>
                 </template>
             </Dropdown>
+            -->
+            <div class="btn-group">
+                <a v-for="(options, locale) in locales" :key="locale"
+                   :href="options.url"
+                   :class="'btn btn-sm ' + (locale === config.locale ? 'btn-secondary disabled' : 'btn-outline-secondary')"
+                   :disabled="locale === config.locale"
+                >
+                    {{options.name}}
+                </a>
+            </div>
         </div>
         <div class="d-block d-md-none">
             <div class="btn-group-vertical btn-block nav-custom mb-2">
