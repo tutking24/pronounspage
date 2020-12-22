@@ -14,7 +14,8 @@
                     ({{stats.users.overall}}, {{stats.users.admins}} admins)
                 </summary>
                 <div class="border-top">
-                    <Table :data="Object.values(users)" :columns="4">
+                    <input class="form-control mt-4" v-model="userFilter" :placeholder="$t('crud.filterLong')"/>
+                    <Table :data="visibleUsers" :columns="4">
                         <template v-slot:header>
                             <th class="text-nowrap">
                                 <T>admin.user.user</T>
@@ -123,6 +124,7 @@
         data() {
             return {
                 socialProviders,
+                userFilter: '',
             }
         },
         async asyncData({ app, store }) {
@@ -147,6 +149,11 @@
 
                 this.users[userId].roles = role;
             }
+        },
+        computed: {
+            visibleUsers() {
+                return Object.values(this.users).filter(u => u.username.toLowerCase().includes(this.userFilter.toLowerCase()));
+            },
         },
         head() {
             return head({
