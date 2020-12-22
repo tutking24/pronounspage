@@ -456,6 +456,7 @@ quotation:
     end: '”'
 
 localise:
+    shorter: 'Añadir versiones'
     short: 'Añadir versiones en otras lenguas'
     long: '¿Quieres añadir una versión en otra lengua? ¡Consulta'
     longLink: 'este manual!'

@@ -6,10 +6,16 @@
         </h2>
         <ul class="list-unstyled">
             <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
-                <Icon v="long-arrow-right"/>
                 <a :href="options.url">
+                    <Icon v="long-arrow-right"/>
                     {{options.name}}
                 </a>
+            </li>
+            <li>
+                <LocaleLink locale="en" link="/blog/creating-new-language-version" class="small">
+                    <Icon v="plus"/>
+                    <T>localise.shorter</T>
+                </LocaleLink>
             </li>
         </ul>
     </section>
