@@ -229,7 +229,7 @@
                 selectedMorpheme: '',
 
                 customiseMultiple: false,
-                multiple: ['on', 'ona'],
+                multiple: this.config.pronouns.multiple.examples[0].split('&'),
 
                 customise: false,
 
@@ -284,8 +284,8 @@
         methods: {
             toggleMultiple(name) {
                 const index = this.multiple.indexOf(name);
-                if (homepage > -1) {
-                    this.multiple.splice(homepage, 1);
+                if (index > -1) {
+                    this.multiple.splice(index, 1);
                 } else {
                     this.multiple.push(name);
                 }
