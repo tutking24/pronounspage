@@ -32,13 +32,13 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'fuentes'
     submit: true
     mergePronouns: {}
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'diccionario'
     collapsable: false
     plurals: false
     pluralsRequired: false
@@ -61,11 +61,11 @@ english:
 
 faq:
     enabled: true
-    route: 'faq'
+    route: 'preguntas'
 
 links:
     enabled: true
-    route: 'links'
+    route: 'enlaces'
     blogRoute: 'blog'
     links: []
     media: []
@@ -79,7 +79,7 @@ links:
 
 contact:
     enabled: true
-    route: 'contact'
+    route: 'contacto'
     contacts:
         -
             icon: 'envelope'
@@ -100,8 +100,6 @@ contact:
             mail: 'andrea@avris.it'
             areas:
                 code: 'https://gitlab.com/Avris/Zaimki'
-                language: ~
-                faq: '/faq'
         -
             name: 'Paweł Dembowski'
             profile: 'Ausir'
@@ -111,7 +109,7 @@ contact:
             mail: 'pawel.dembowski@gmail.com'
             areas:
                 idioma: ~
-                fuentes: '/sources'
+                fuentes: '/fuentes'
         -
             name: 'Dante'
             profile: 'AkerAdardun'
@@ -137,8 +135,8 @@ support:
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'terms'
+    route: 'cuenta'
+    termsRoute: 'terinos'
 
 profile:
     enabled: true
@@ -160,11 +158,11 @@ api:
     examples:
         pronouns_all: ['/api/pronouns']
         pronouns_one:
-            - '/api/pronouns/she/her'
-            - '/api/pronouns/she/her?examples[]=Did%20you%20ask%20%7Bpronoun_object%7D%20to%20join%20us%3F'
+            - '/api/pronouns/ella'
+            - '/api/pronouns/ella?examples[]=Creo%20que%20%7Bpronoun%7D%20es%20muy%20querid%7Binflection%7D.'
 
         sources_all: ['/api/sources']
-        sources_one: ['/api/sources/01ERQRCV0XGVJ3T07MV9F6XQ83']
+        sources_one: ['/api/sources/01ET491ME8DPKNN1SV3NBK6KEA']
 
         nouns_all: ['/api/nouns']
-        nouns_search: ['/api/nouns/search/person']
+        nouns_search: ['/api/nouns/search/esposa']
