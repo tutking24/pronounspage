@@ -87,10 +87,6 @@ contact:
             headline: 'contact@pronouns.page'
     authors:
         -
-            name: 'The “Neutral Language Council” collective'
-            link: '/blog/neutral-language-council'
-            group: true
-        -
             name: 'Andrea'
             profile: 'andrea'
             pronouns: 'elle'
@@ -99,7 +95,7 @@ contact:
             twitter: 'AvrisIT'
             mail: 'andrea@avris.it'
             areas:
-                code: 'https://gitlab.com/Avris/Zaimki'
+                código: 'https://gitlab.com/Avris/Zaimki'
         -
             name: 'Paweł Dembowski'
             profile: 'Ausir'
