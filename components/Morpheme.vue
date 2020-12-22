@@ -1,7 +1,7 @@
 <template>
     <span>
         {{prepend}}{{ pronoun.getMorpheme(morpheme, counter) }}{{append}}
-        <span v-if="config.pronunciation.enabled && pronoun.pronounceable && pronoun.getPronunciation(morpheme, counter)" class="text-muted">
+        <span v-if="config.pronunciation.enabled && pronoun.pronounceable && pronoun.getPronunciation(morpheme, counter) && !pronoun.getPronunciation(morpheme, counter).startsWith('=')" class="text-muted">
             /{{prependPr}}{{pronoun.getPronunciation(morpheme, counter)}}{{appendPr}}/
         </span>
     </span>

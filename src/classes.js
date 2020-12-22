@@ -59,7 +59,10 @@ export class Example {
             const morpheme = pronoun.getMorpheme(m);
 
             return pronunciation
-                ? `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
+                ? (pronunciation.startsWith('=')
+                    ? pronunciation.substring(1)
+                    : `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
+                )
                 : morpheme;
         }
 
