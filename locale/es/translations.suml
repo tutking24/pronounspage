@@ -20,10 +20,10 @@ home:
             para que puedas mostrarle a la gente cómo prefieres que te llamen.
         - >
             ¿Por qué importa? Por simple decencia humana.
-            No llamarías “Samantha” a Ashely sólo porque a tí te gusta más ese nombre
-            o porque “tiene más cara de Samantha para tí”.
-            O incluso si ella <em>sí</em> se llama “Samantha” en su acta de nacimiento
-            pero detesta ese nombre y prefiere usar “Ashley”.
+            No llamarías “Lucía” a Alicia sólo porque a tí te gusta más ese nombre
+            o porque “tiene más cara de Lucía para tí”.
+            O incluso si ella <em>sí</em> se llama “Lucía” en su acta de nacimiento
+            pero detesta ese nombre y prefiere usar “Alicia”.
             Es exactamente lo mismo con los pronombres –
             si no quieres ser grosere con alguien, dirígete a elle correctamente.
             La única diferencia es que normalmente conocemos los nombres, pero no los pronombres.
@@ -37,8 +37,8 @@ home:
         button: 'Mostrar el generador'
         header2: 'Generar un enlace'
         base: 'Con base en'
-        alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el y ella</code> = „el” o „ella”.'
-        pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|elle</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
+        alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
+        pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
     whatisit: '¿Por qué importan los pronombres?'
 
 pronouns:
@@ -80,8 +80,8 @@ sources:
     submit:
         header: 'Enviar un ejemplo para que sea añadido'
         action: 'Enviar'
-        pronouns: '¿Qué pronombres han sido usados='
-        pronounsInfo: 'Introduce la forma más simple del pronombre, como se encuentra en el enlace, p. ej. “elle”, “él/lo”, “él y ella”'
+        pronouns: '¿Qué pronombres han sido usados?'
+        pronounsInfo: 'Introduce la forma más simple del pronombre, como se encuentra en el enlace, p. ej. “elle”, “él/lo”, “él o ella”'
         type: 'Tipo de fuente'
         author: 'Autor/a/e/x'
         title: 'Título'
@@ -144,23 +144,23 @@ nouns:
     pluralShort: 'pl.'
 
 faq:
-    header: 'FAQ'
+    header: 'Preguntas'
     headerLong: 'Preguntas frecuentes'
     questions:
         nonbinary:
-            question: '¿Qué es no binario?'
+            question: '¿Qué es ser <em>no binarie</em>?'
             answer:
                 - >
                     El género es mucho más complicado que una simple distinción entre masculino y femenino.
                     Incluso desde un punto de vista puramente biológico distinguimos sexo cromosómico,
                     sexo genético, sexo hormonal, sexo fenotípico…
                     No son necesariamente congruentes uno con el otro, no tienen que ser binarios.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(más información, en inglés, aquí)}.
+                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aquí)}.
                     Y cuando llegamos al aspecto cultural, el “género” es una construcción social.
                     Dependiendo del lugar y el momento “una mujer” o “un hombre” puede significar tener
                     derechos, obligaciones, reglas a seguir, etc. radicalmente diferentes. En Europa los hombres solían usar tacones altos y faldas,
                     muchos pueblos originarios de Norteamérica han reconocido un tercer género por siglos, como
-                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=Dos espíritus}, {https://es.wikipedia.org/wiki/Muxe=Muxe}, etc. etc.
+                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espíritus}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
                 - >
                     “No binarie” es un término que describe la identidad de personas que
                     no encajan en la distinción binaria de hombre/mujer.
@@ -169,7 +169,7 @@ faq:
                     {https://es.wikipedia.org/wiki/G%C3%A9nero_fluido=género fluído},
                     {https://gender.wikia.org/wiki/Demigirl=demichicas (en inglés)},
                     {https://gender.wikia.org/wiki/Demiboy=demichicos (en inglés)},
-                    i {https://es.wikipedia.org/wiki/G%C3%A9nero_no_binario=Y muches, muches más}.
+                    y {https://es.wikipedia.org/wiki/G%C3%A9nero_no_binario=muches, muches más}.
                 - >
                     No binario no es necesariamente algo “intermedio” entre masculino y femenino. Más bien está “más allá”.
                     Las personas no binarias no tienen que ser andróginas, o usar lenguaje neutro, etc.
@@ -179,11 +179,19 @@ faq:
             answer:
                 - >
                     Porque dirigirse a las personas en la manera que lo prefieren es la base de las relaciones sociales.
-                    No llamarías “Samantha” a Ashley, no le hablarías “de tú” a tu jefx o supervisore, etc.
+                    No llamarías “Lucía” a Alicia, no le hablarías “de tú” a tu jefx o supervisore, etc.
                     Y hay personas que no quieren ser llamadas “{/él=él}” o “{/ella=ella}”.
                     Si no puedes aceptarlo, eso sólo habla mal <em>de tí</em>.
+        solo-pronombres:
+            question: '¿Entonces basta con decirle “ella” a mi amigo?'
+            answer:
                 - >
-                    Los “pronombres extraños” son sólo cuestión de acostumbrarse.
+                    ¡No! El género está presente no sólo en los pronombres, sino en sustantivos, adjetivos, etc.
+                    No te refieres como “ella” a tu “amigo”, sino a tu “amiga”.
+                    Respetar la identidad de género de una persona implica respetarla no sólo en sus pronombres, sino
+                    en todo lo referente al lenguaje al referirnos a elle.
+                - >
+                    Así, decimos que <em>elle</em> es nuestre amigue, que puede ser profesore, estudiante, etc., y le queremos mucho.
         how-to-know:
             question: '¿Cómo sé cómo dirigirme a alguien?'
             answer:
@@ -204,13 +212,13 @@ faq:
                     Puede que todavía no hayan salido del clóset con algunes compañeres de trabajo, pero se sientan cómodes vivendo su verdad con amigues.
                     Sé conciente. Puedes, por ejemplo, preguntar “¿qué pronombres debería usar en frente de tu jefx?”, etc.
                 - >
-                    Algunas personas ofrecen varios pronombres, p. ej. “{/he&she=he/she}” o “{/they&he=they/he}”.
+                    Algunas personas ofrecen varios pronombres, p. ej. “{/él&ella=él o ella}” o “{/elle&él=elle o él}”.
                     Eso significa que les gustan todas esas formas. Normalmente, la primera opción es la que prefieren.
         who-uses-it:
             question: '¿Y sí se usa?'
             answer:
                 - >
-                    ¡Sí! Millones de personas no binarias en el mundo.
+                    ¡Sí! Millones de personas no binarias en el mundo lo hacen.
                     Cada pronombre enlistado aquí es usado por una persona en su día a día.
         authority:
             question: '¿Esos pronombres no binarios están aprobados por alguna autoridad?'
@@ -226,15 +234,15 @@ faq:
                     lo cual no hace el cambio ilegítimo de ninguna manera.
                     Eventualmente esas formas, de ser usadas con mucha frecuencia, son incluídas en los diccionarios..
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por ejemplo,
-                    acepta el uso del {/they=singular “they”} como un pronombre no binario del inglés.
+                    acepta el uso del {/they=“they” singular} como un pronombre no binario del inglés.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
+                    También puedes consultar {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=trabajos académicos}
+                    sobre los pronombres no binarios.
         bio:
             question: '¿Por qué debería incluir mis pronombres en mis redes sociales?'
             answer:
                 - >
-                    Si eres cis (= no eres trans) y usas „{/he=he}” o „{/she=she}” de acuerdo con tu género,
+                    Si eres cis (= no eres trans) y usas „{/él=él}” o „{/ella=ella}” de acuerdo con tu género,
                     puedes pensar que tus pronombres son <em>obvios</em>.
                     Y sí, tal vez lo sean – siempre y cuando menciones tu nombre en tu perfil (y este sea tradicionalmente masculino o femenino)
                     o si tu foto de perfil es una foto de tí.
@@ -250,7 +258,7 @@ faq:
                     Nos expone.
                     Pero si las personas cis hacen lo mismo, hacen el mundo mejor para nosotres.
                     Nos hace sentir más cómodes, segures, y bienvenides
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(más razones aquí).}
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(más razones (en inglés) aquí).}
         change:
             question: '¿Puedo cambiar mis pronombres?'
             answer:
@@ -263,7 +271,7 @@ faq:
             answer:
                 - >
                     ¡Para nada! Después de muchos años de usar los pronombres que mejor se adaptan al género asignado al nacer
-                    es fácil olvidarse a une misme cambiándolos.
+                    es fácil olvidarse a une misme el cambiarlos.
                 - >
                     Pronombres ≠ género.
                     Tu género no cambiará de repente porque alguien te llamó “elle”.
@@ -283,7 +291,7 @@ faq:
             answer:
                 - >
                     Porque género ≠ pronombres. Los pronombres son sólo gramática.
-                    Las personas no binarias pueden usar pronombres binarios, algunas lesbianas usan {/he=he/him} por razones culturales, etc.
+                    Las personas no binarias pueden usar pronombres binarios, algunas lesbianas usan {/él=él/lo} por razones culturales, etc.
                 - >
                     Simplemente di “pronombres”.
 
@@ -304,10 +312,10 @@ english: ~
 
 contact:
     header: 'Contacto'
-    authors: 'Authores/as/xs del sitio web'
+    authors: 'Autores/as/xs del sitio web'
 
 support:
-    header: 'Soporte'
+    header: 'Apóyanos'
     description: >
         Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
         puedes usar los siguientes enlaces:
@@ -361,7 +369,7 @@ profile:
     description: 'Descripción'
     names: 'Nombres'
     pronouns: 'Pronombres'
-    pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://en.pronouns.page/e”).'
+    pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://es.pronouns.page/ellx”).'
     pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
     words: 'Palabras'
     birthday: 'Edad'
@@ -402,7 +410,7 @@ crud:
 
 footer:
     source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
-    links: 'Contacto, redes sociales, soporte'
+    links: 'Contacto, redes sociales, apoyo'
 
 notFound:
     message: 'Página no encontrada'

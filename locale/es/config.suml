@@ -9,14 +9,14 @@ pronouns:
     plurals: false
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
-        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        name: 'Formas intercambiables'
+        description: 'Muchas personas no binarias usan más de una forma intercambiablemente y se sienten cómodas con cualquiera de las opciones.'
         examples: ['él&ella', 'él&elle', 'ella&elle']
     null: false
     emoji: false
     slashes: false
     avoiding: false
-    others: 'Other pronouns'
+    others: 'Otros pronombres'
 
 pronunciation:
     enabled: true
@@ -93,8 +93,8 @@ contact:
         -
             name: 'Andrea'
             profile: 'andrea'
-            pronouns: 'they'
-            pronounsLink: '/they'
+            pronouns: 'elle'
+            pronounsLink: '/elle'
             website: 'https://avris.it'
             twitter: 'AvrisIT'
             mail: 'andrea@avris.it'
@@ -105,15 +105,22 @@ contact:
         -
             name: 'Paweł Dembowski'
             profile: 'Ausir'
-            pronouns: 'he'
-            pronounsLink: '/he'
+            pronouns: 'él'
+            pronounsLink: '/él'
             twitter: 'VaultAusir'
             mail: 'pawel.dembowski@gmail.com'
             areas:
-                language: ~
-                sources: '/sources'
+                idioma: ~
+                fuentes: '/sources'
         -
-            name: 'TODO…'
+            name: 'Dante'
+            profile: 'AkerAdardun'
+            pronouns: 'él'
+            pronounsLink: '/él'
+            twitter: 'AkerAdardun'
+            mail: 'danteu2998@gmail.com'
+            areas:
+                traducción: ~
 
 support:
     enabled: true
@@ -138,7 +145,7 @@ profile:
     editorEnabled: true
     defaultWords:
         - ['señor', 'señora', 'señore', 'don', 'doña', 'doñe', 'usted', 'tú', 'vos']
-        - ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'weón']
+        - ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'pib_']
         - ['lind_', 'guap_', 'bonit_', 'mon_', 'hermos_', 'sexi']
         - ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
     flags:
