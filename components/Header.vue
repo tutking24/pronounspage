@@ -38,6 +38,9 @@
                 >
                     {{options.name}}
                 </a>
+                <LocaleLink locale="en" link="/blog/creating-new-language-version" class="btn btn-sm btn-outline-secondary">
+                    <Icon v="plus"/>
+                </LocaleLink>
             </div>
         </div>
         <div class="d-block d-md-none">
