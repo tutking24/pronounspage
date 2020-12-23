@@ -64,7 +64,7 @@ faq:
     route: 'preguntas'
 
 links:
-    enabled: true
+    enabled: false
     route: 'enlaces'
     blogRoute: 'blog'
     links: []
