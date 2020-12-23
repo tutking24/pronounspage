@@ -361,7 +361,7 @@ profile:
     description: 'Description'
     names: 'Names'
     pronouns: 'Pronouns'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (“http://en.pronouns.page/e”).'
+    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
     pronounsNotFound: 'We can''t find a link to this pronoun!'
     words: 'Words'
     birthday: 'Age'
