@@ -41,7 +41,7 @@ export const pronounGroups = buildList(function* () {
     for (let g of pronounGroupsRaw) {
         yield new PronounGroup(
             g.name,
-            g.pronouns.split(','),
+            g.pronouns ? g.pronouns.split(',') : [],
             g.description,
         );
     }

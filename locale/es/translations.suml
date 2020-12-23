@@ -32,8 +32,8 @@ home:
     generator:
         header: 'Generador'
         description: >
-            You can also use this tool where you out the blanks in sentences
-            and generate a link ready to share with others.
+            También puedes usar esta herramienta para llenar los espacios en blanco
+            y generar un enlace que puedes compartir.
         button: 'Mostrar el generador'
         header2: 'Generar un enlace'
         base: 'Con base en'

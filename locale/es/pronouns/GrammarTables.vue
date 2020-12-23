@@ -10,28 +10,29 @@
                 <thead>
                 <tr>
                     <th></th>
-                    <th>Pronoun</th>
-                    <th>Direct object pronoun</th>
-                    <th>Definite article</th>
-                    <th>Indefinite article</th>
-                    <th>Inflection</th>
+                    <th>Pronombre</th>
+                    <th>Pr. de objeto directo</th>
+                    <th>Artículo determinado</th>
+                    <th>Artículo indeterminado</th>
+                    <th>Flexión</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th><T>nouns.singular</T></th>
+                    <th>Singular</th>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="direct_object_pronoun" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="definite_article" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="indefinite_article" :counter="counter"/></td>
-                    <td rowspan="2"><Morpheme :pronoun="selectedPronoun" morpheme="inflection" :counter="counter" prepend="-"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="inflection" :counter="counter" prepend="-"/></td>
                 </tr>
                 <tr>
-                    <th><T>nouns.plural</T></th>
+                    <th>Plural</th>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_pronoun" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_direct_object_pronoun" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_definite_article" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_indefinite_article" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="inflection" :counter="counter" prepend="-" append="s"/></td>
                 </tr>
                 </tbody>
             </table>
