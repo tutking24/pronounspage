@@ -44,8 +44,6 @@ router.get('/pronounce/:voice/:pronoun*', async (req, res) => {
 
     const key = `pronunciation/${req.config.locale}-${req.params.voice}/${pronounString}/${sha1(text)}.mp3`;
 
-    console.log(key, voice);
-
     try {
         const s3getResponse = await s3.getObject({Key: key}).promise();
         return res.set('content-type', s3getResponse.ContentType).send(s3getResponse.Body);
