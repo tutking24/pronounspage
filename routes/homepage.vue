@@ -291,7 +291,7 @@
                 }
             },
             addSlash(link) {
-                return link + (link.substr(link.length - 1) === '*' ? '/' : '');
+                return link + (['*', `'`].includes(link.substr(link.length - 1)) ? '/' : '');
             },
             clearExampleParts(parts) {
                 return parts.map(p => new ExamplePart(p.variable, p.str.replace(/^'/, '')));

@@ -151,7 +151,7 @@
         },
         methods: {
             addSlash(link) {
-                return link + (link.substr(link.length - 1) === '*' ? '/' : '');
+                return link + (['*', `'`].includes(link.substr(link.length - 1)) ? '/' : '');
             },
         },
         computed: {
