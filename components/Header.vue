@@ -4,7 +4,7 @@
             <h1 class="text-nowrap">
                 <nuxt-link to="/">
                     <Icon v="tags"/>
-                    <T>title</T>
+                    <span class="higher"><T>title</T></span>
                 </nuxt-link>
             </h1>
             <!--
@@ -227,4 +227,9 @@
             }
         }
     };
+
+    .higher {
+        position: relative;
+        top: -0.1em;
+    }
 </style>

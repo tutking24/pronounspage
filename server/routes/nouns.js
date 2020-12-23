@@ -186,7 +186,7 @@ router.get('/nouns/:word.png', async (req, res) => {
     context.font = 'regular 24pt FontAwesome';
     context.fillText('\uf02c', padding, height - padding);
     context.font = `regular 24pt Quicksand`;
-    context.fillText(translations.title, padding + 48, height - padding);
+    context.fillText(translations.title, padding + 48, height - padding - 4);
 
     return res.set('content-type', mime).send(canvas.toBuffer(mime));
 });

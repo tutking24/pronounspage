@@ -47,8 +47,8 @@ router.get('/banner/:pronounName*.png', async (req, res) => {
         const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
         leftRatio = 5;
         context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25);
-        context.font = `regular ${translations.title.length < 10 ? 120 : 80}pt Quicksand`;
-        context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : 36));
+        context.font = `regular ${translations.title.length < 10 ? 120 : translations.title.length < 14 ? 80 : 72}pt Quicksand`;
+        context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : translations.title.length < 14 ? 24 : 24));
     }
 
     if (pronounName.startsWith('@')) {
