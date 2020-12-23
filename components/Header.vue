@@ -197,6 +197,10 @@
     @import "assets/variables";
 
     @include media-breakpoint-down('sm', $grid-breakpoints) {
+        h1 {
+            font-size: 2rem;
+        }
+
         .nav-custom {
             .btn {
                 border-left: 1px solid $gray-500;
