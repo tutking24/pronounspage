@@ -57,7 +57,7 @@ sources:
     mergePronouns:
         ono/jej: 'ono'
         ono/jejgo: 'ono'
-        ono/jeno: 'ono'
+        # ono/jeno: 'ono'
         ono/jenu: 'ono'
         vono/vego: 'ono'
         ono/eno: 'ono'
