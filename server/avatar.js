@@ -1,8 +1,10 @@
-import {gravatar, now} from "../src/helpers";
+import {fallbackAvatar, gravatar, now} from "../src/helpers";
 import SQL from "sql-template-strings";
 
 export default async (db, user) => {
-    if (user.avatarSource) {
+    if (user.avatarSource === 'gravatar') {
+        return gravatar(user);
+    } else if (user.avatarSource) {
         const auth = await db.get(SQL`
             SELECT payload FROM authenticators
             WHERE type = ${user.avatarSource}
@@ -14,5 +16,5 @@ export default async (db, user) => {
         }
     }
 
-    return gravatar(user);
+    return fallbackAvatar(user);
 }

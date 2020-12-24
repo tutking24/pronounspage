@@ -65,7 +65,7 @@ const defaultUsername = async (db, email) => {
     }
 }
 
-const fetchOrCreateUser = async (db, user, avatarSource = null) => {
+const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
     let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`);
     if (!dbUser) {
         dbUser = {
