@@ -78,11 +78,11 @@ export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
     return result;
 }
 
-export const fallbackAvatar = (user, size = 128) => {
+export const fallbackAvatar = (user, size = 240) => {
     return `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
 }
 
-export const gravatar = (user, size = 128) => {
+export const gravatar = (user, size = 240) => {
     return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallbackAvatar(user, size))}&s=${size}`;
 }
 
