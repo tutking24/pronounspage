@@ -232,8 +232,16 @@
         }
     };
 
-    .higher {
-        position: relative;
-        top: -0.1em;
+    h1 {
+        a {
+            text-decoration: none;
+            .higher {
+                position: relative;
+                top: -0.1em;
+            }
+            &:hover .higher {
+                text-decoration: underline;
+            }
+        }
     }
 </style>
