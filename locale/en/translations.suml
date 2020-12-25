@@ -50,6 +50,7 @@ pronouns:
         button: 'Generate a link to interchangeable forms'
         header: 'Interchangeable forms'
         raw: 'interchangeable'
+    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
     any:
         header: 'Any pronouns'
         short: 'any'

@@ -50,6 +50,7 @@ pronouns:
         button: 'Generar un enlace a las formas intercambiables'
         header: 'Formas intercambiables'
         raw: 'intercambiable'
+    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'  # TODO
     any:
         header: 'Cualquier pronombre'
         short: 'cualquiera'

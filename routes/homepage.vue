@@ -177,6 +177,10 @@
                                 <T>home.generator.pronunciation</T>
                             </p>
                             -->
+                            <div v-if="!usedBaseEquals" class="alert alert-warning">
+                                <Icon v="exclamation-triangle"/>
+                                <T>pronouns.generated</T>
+                            </div>
                         </div>
                         <div class="card-footer" v-if="link">
                             <LinkInput :link="link"/>

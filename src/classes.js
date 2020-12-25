@@ -454,7 +454,7 @@ export class Pronoun {
             config.pronouns.plurals ? data[MORPHEMES.length].split('').map(p => parseInt(p) === 1) : [false],
             config.pronouns.honorifics ? data[MORPHEMES.length + 1].split('').map(p => parseInt(p) === 1) : [false],
             [],
-            null,
+            '__generator__',
             false,
         )
     }

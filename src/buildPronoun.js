@@ -36,7 +36,7 @@ const buildPronounFromTemplate = (key, template) => {
         [template.plural || false],
         [template.pluralHonorific || false],
         template.aliases || [],
-        template.history || '',
+        ((template.history || '') + '@__generator__').replace(/^@/, ''),
         false,
     );
 }
@@ -86,7 +86,7 @@ export const buildPronoun = (pronouns, path) => {
             [ p[p.length - 1].endsWith('selves') ],  // TODO English specific, extract somewhere
             [ false ],
             [],
-            null,
+            '__generator__',
             false,
         )
     }

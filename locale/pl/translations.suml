@@ -62,6 +62,7 @@ pronouns:
         button: 'Wygeneruj link do form wymiennych'
         header: 'Formy wymienne'
         raw: 'wymienne'
+    generated: 'Ta forma została stworzona za pomocą generatora. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     any:
         header: 'Dowolne zaimki'
         short: 'dowolne'
