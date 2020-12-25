@@ -25,11 +25,12 @@
                     </a>
                 </div>
                 <p class="small text-muted">
+                    <Icon v="gavel"/>
                     <T>terms.consent</T>
-                    <nuxt-link :to="`/${config.user.termsRoute}`">
-                        <Icon v="gavel"/>
-                        <T>terms.header</T>
-                    </nuxt-link>
+                </p>
+                <p class="small text-muted">
+                    <Icon v="lock"/>
+                    <T>user.login.passwordless</T>
                 </p>
             </form>
         </div>

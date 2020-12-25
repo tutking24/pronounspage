@@ -330,6 +330,7 @@ user:
                 If you didn't order this code, simply ignore this message.
         why: >
             Registering lets you manage your cards ({/@andrea=like this one}).
+        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Validate'
         invalid: 'Invalid code.'
@@ -421,7 +422,7 @@ confirm:
 terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the'
+    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
 
 admin:
     header: 'Admin panel'

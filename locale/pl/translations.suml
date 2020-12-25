@@ -846,6 +846,7 @@ user:
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
         why: >
             Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=takimi jak ta}).
+        passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
@@ -968,7 +969,7 @@ confirm:
 terms:
     header: 'Regulamin'
     lastUpdate: 'Ostatnia aktualizacja'
-    consent: 'Zakładając konto, akceptujesz'
+    consent: 'Zakładając konto, akceptujesz {/regulamin=Regulamin}.'
 
 admin:
     header: 'Panel adminia'

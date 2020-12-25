@@ -338,6 +338,7 @@ user:
                 Si no solicitaste este código, simplemente ignora este mensaje.
         why: >
             Registrarte te permite manejar tus tarjetas ({/@andrea=como esta}).
+        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'  # TODO
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -429,7 +430,7 @@ confirm:
 terms:
     header: 'Térinos de Servicio'
     lastUpdate: 'Actualizados por última vez'
-    consent: 'Al registrarte, aceptas los'
+    consent: 'Al registrarte, aceptas los {/terinos=Térinos de Servicio}.'
 
 admin:
     header: 'Panel de Admins'
