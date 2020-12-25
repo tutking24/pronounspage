@@ -5,8 +5,6 @@ export default class Compressor {
         const baseFirst = base[0];
         const baseRest = base.slice(1);
 
-        console.log(data, base);
-
         if (dataFirst !== baseFirst || dataRest.length !== baseRest.length) {
             throw 'Cannot compress data, format does not match the base';
         }
