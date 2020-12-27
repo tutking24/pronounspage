@@ -14,14 +14,14 @@ pronouns:
         examples: ['he&she', 'he&they', 'she&they']
     null: false
     emoji: false
-    slashes: true
+    slashes: false
     avoiding: false
     others: 'Other pronouns'
 
 pronunciation:
     enabled: true
     voices:
-        GB:
+        CN:
             language: 'cmn-CN'
             voice: 'Zhiyu'
             engine: 'standard'
@@ -30,11 +30,21 @@ sources:
     enabled: true
     route: 'sources'
     submit: true
-    mergePronouns:
-        they/them/themself: 'they'
+    mergePronouns: {}
 
 nouns:
-    enabled: false
+    enabled: true
+    route: 'dictionary'
+    collapsable: false
+    plurals: true
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: true
+    inclusive:
+        enabled: false
+    terms:
+        enabled: false
 
 names:
     enabled: false
@@ -209,24 +219,12 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['沒有尊稱', '君', '先生', '小姐', '夫人', '同志', '太太']
+        - ['男', '女', '哥哥/弟弟', '姐姐/妹妹', '朋友']
+        - ['可愛', '美麗', '性感', '好看']
+        - ['男朋友', '女朋友', '知音', '丈夫', '妻子']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: '他'
 
 census:
     enabled: false
