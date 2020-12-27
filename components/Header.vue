@@ -60,6 +60,10 @@
                 </nuxt-link>
             </div>
         </div>
+        <div v-if="locales[config.locale].published === false" class="alert alert-warning">
+            <Icon v="exclamation-triangle"/>
+            This language version is still under construction!
+        </div>
     </header>
     <header v-else class="mb-4">
         <h1 class="text-nowrap">

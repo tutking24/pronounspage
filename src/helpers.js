@@ -144,7 +144,7 @@ export const buildLocaleList = (current) => {
     return buildDict(function* () {
         for (let [code, name, url, published] of locales) {
             if (published || current === code) {
-                yield [code, {name, url}];
+                yield [code, {name, url, published}];
             }
         }
     })
