@@ -124,7 +124,7 @@ links:
             icon: 'comment-alt-edit'
             url: '/blog/czas-się-obnosić'
             headline: 'Nadszedł czas się obnosić!'
-            extra: '– przemówienie Sybilli z Wrocławskiego Marszu Równości'
+            extra: '– przemówienie Sybila z Wrocławskiego Marszu Równości'
         -
             icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
@@ -395,8 +395,8 @@ contact:
         -
             name: 'Sybil Zuz Grzybowskie'
             profile: 'Sybil'
-            pronouns: 'ono/ona/on'
-            pronounsLink: '/ono&ona&on'
+            pronouns: 'on'
+            pronounsLink: '/on'
             twitter: 'mykofanes'
             mail: 'zuzannagrzybowska@protonmail.com'
             areas:
