@@ -1,0 +1,4 @@
+singular	plural	isHonorific
+{3rd_person}是一個非常好的學生。		FALSE
+我可以藉{2nd_person}的鉛筆嗎？		FALSE
+{3rd_person}告訴我那所房子是{3rd_person}的。		FALSE
