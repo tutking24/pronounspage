@@ -8,7 +8,7 @@ export default [
     'pronoun_l',
     'pronoun_all',
     'adjective_n',
-    'adjective_n_alt',
+    'adjective_n_k',
     'adjective_ll',
     'adjective_middle',
     'verb_end_inter',

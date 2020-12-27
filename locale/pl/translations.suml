@@ -1004,7 +1004,7 @@ localise:
 
 flags:
     Abrosexual: 'Abroseksualn{adjective_n}'
-    Achillean: 'Achillejsk{adjective_n_alt}'
+    Achillean: 'Achillejs{adjective_n_k}'
     Agender: 'Apłciow{adjective_n}'
     Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
     Androgyne: 'Androgyniczn{adjective_n}'
@@ -1026,7 +1026,7 @@ flags:
     Demiromantic: 'Demiromantyczn{adjective_n}'
     Demisexual: 'Demiseksualn{adjective_n}'
     Diamoric: 'Diamoryczn{adjective_n}'
-    Enbian: 'Enbiańsk{adjective_n_alt}'  # Niebiańsk{adjective_n}
+    Enbian: 'Enbiańs{adjective_n_k}'  # Niebiańsk{adjective_n}
     Fa*afafine: 'Fa''afafine'
     Gay: 'Gej'
     Gender_Questioning: 'Rozważając{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
@@ -1060,18 +1060,18 @@ flags:
     Pomosexual: 'Pomoseksualn{adjective_n}'
     Progress_Pride: 'Progresywn{adjective_n}'
     Queer: 'Queer (kłir)'
-    Queerian: 'Queerejsk{adjective_n_alt}'
+    Queerian: 'Queerejs{adjective_n_k}'
     Queerplatonic: 'Queerplatoniczn{adjective_n}'
     Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
-    Sapphic: 'Safick{adjective_n_alt}'  # Safik, Sapphic
+    Sapphic: 'Safic{adjective_n_k}'  # Safik, Sapphic
     Sexuality_Questioning: 'Rozważając{adjective_n} swoją orientację'
     Straight_Ally: 'Hetero osoba sojusznicza'
     Toric: 'Toryczn{adjective_n}'
     Transfeminine: 'Transkobiec{adjective_n}'
     Transgender: 'Transpłciow{adjective_n}'
-    Transmasculine: 'Transmęsk{adjective_n_alt}'
+    Transmasculine: 'Transmęs{adjective_n_k}'
     Transneutral: 'Transneutraln{adjective_n}'
     Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
-    Trixic: 'Triksyjsk{adjective_n_alt}'
+    Trixic: 'Triksyjs{adjective_n_k}'
     Two_Spirit: 'Dwie dusze'
     Xenogender: 'Ksenopłciow{adjective_n}'
