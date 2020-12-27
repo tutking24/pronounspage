@@ -7,6 +7,15 @@
                     <span class="higher"><T>title</T></span>
                 </nuxt-link>
             </h1>
+            <div v-if="config.locale === 'zh'" class="btn-group m-2">
+                <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
+                        :class="'btn btn-sm ' + (spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary')"
+                        :disabled="spelling === code"
+                        @click="setSpelling(code)"
+                >
+                    {{display}}
+                </button>
+            </div>
             <!--
             <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm">
                 <template v-slot:toggle>
@@ -82,6 +91,7 @@
         computed: {
             ...mapState([
                 'user',
+                'spelling',
             ]),
             links() {
                 const links = [];
@@ -192,6 +202,10 @@
                 return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
                     || (link.extra || []).includes(decodeURIComponent(this.$route.path));
+            },
+            setSpelling(spelling) {
+                this.$store.commit('setSpelling', spelling);
+                this.$cookies.set('spelling', this.$store.state.spelling);
             },
         },
     }

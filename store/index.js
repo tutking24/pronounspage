@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 export const state = () => ({
     token: null,
     user: null,
+    spelling: 'traditional',
 })
 
 export const mutations = {
@@ -32,5 +33,8 @@ export const mutations = {
 
         state.token = null;
         state.user = null;
-    }
+    },
+    setSpelling(state, spelling) {
+        state.spelling = spelling;
+    },
 }

@@ -3,7 +3,7 @@ import t from '../src/translator';
 import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
 
-export default ({ app }) => {
+export default ({ app, store }) => {
     Vue.prototype.$base = process.env.BASE_URL;
     Vue.prototype.$t = t;
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
@@ -21,4 +21,5 @@ export default ({ app }) => {
             }
         }
     });
+    store.commit('setSpelling', app.$cookies.get('spelling') || 'traditional');
 }

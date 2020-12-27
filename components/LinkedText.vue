@@ -1,5 +1,7 @@
 <script>
     import Icon from './Icon';
+    import {mapState} from "vuex";
+    import zhConverter from 'zh_cn_zh_tw';
 
     export default {
         props: {
@@ -20,7 +22,7 @@
                     return h(Icon, {props: { v: buffer}});
                 }
 
-                const bufferNode = [ h('span', {domProps: { innerHTML: buffer }}) ];
+                const bufferNode = [ h('span', {domProps: { innerHTML: this.handleSpelling(buffer) }}) ];
 
                 if (!isLink) {
                     return bufferNode;
@@ -45,7 +47,7 @@
                     );
                 }
 
-                return h('nuxt-link', {props: { to: linkBuffer || '/' + this.config.nouns.route + '#' + buffer }}, bufferNode);
+                return h('nuxt-link', {props: { to: linkBuffer || '/' + this.config.nouns.route + '#' + this.handleSpelling(buffer) }}, bufferNode);
             }
             const addChild = _ => {
                 if (!buffer) {
@@ -85,6 +87,20 @@
             addChild();
 
             return h('span', children);
+        },
+        computed: {
+            ...mapState([
+                'spelling',
+            ]),
+        },
+        methods: {
+            handleSpelling(str) {
+                if (this.config.locale !== 'zh' || this.spelling === 'traditional') {
+                    return str;
+                }
+
+                return zhConverter.convertToSimplifiedChinese(str);
+            }
         },
     }
 </script>

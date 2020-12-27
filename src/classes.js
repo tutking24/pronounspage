@@ -21,7 +21,7 @@ export class Example {
         const parts = [];
         let lastPosition = 0;
 
-        for (let m of str.matchAll(/{('?[a-z_]+)}/g)) {
+        for (let m of str.matchAll(/{('?[a-z0-9_]+)}/g)) {
             const textBefore = str.substr(lastPosition, m.index - lastPosition);
             if (textBefore.length) {
                 parts.push(new ExamplePart(false, textBefore));
