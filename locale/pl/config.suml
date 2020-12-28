@@ -209,6 +209,10 @@ links:
             url: 'https://www.youtube.com/watch?v=aOyaeI30uKA'
             headline: 'Inkluzywny język – Rozmowa z Kahą z Inkluzywnej Mowy (podcast <strong>SZAJN na głos</strong>)'
             extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 11:11'
+        -
+            icon: 'newspaper'
+            url: 'https://przekroj.pl/kultura/od-zjarania-swiata-rozmowa-z-marcelim-szpakiem-maciej-stroinski'
+            headline: 'Od zjarania świata – Rozmowa z Marcelim Szpakiem w <strong>Przekroju</strong>'
     socials:
         -
             icon: 'twitter'
