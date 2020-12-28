@@ -359,11 +359,11 @@ user:
 
 profile:
     description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    names: '名字'
+    pronouns: '代詞'
     pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
     pronounsNotFound: 'We can''t find a link to this pronoun!'
-    words: 'Words'
+    words: '詞匯'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     flags: 'Flags'
@@ -381,10 +381,10 @@ profile:
         header: 'Card editor'
         save: 'Save your card'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: '至愛'
+        jokingly: '諧謔'
+        meh: 'OK'
+        no: '不好'
 
 share: 'Share'
 
