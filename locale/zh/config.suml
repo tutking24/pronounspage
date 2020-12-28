@@ -11,7 +11,7 @@ pronouns:
     multiple:
         name: 'Interchangeable forms'
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
-        examples: ['he&she', 'he&they', 'she&they']
+        examples: ['他&她', '她&伊', '他&佢']
     null: false
     emoji:
         description: 'Emojiself pronouns'

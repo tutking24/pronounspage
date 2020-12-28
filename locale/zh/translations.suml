@@ -9,7 +9,7 @@ home:
     about:
         - >
             每個人都有代詞。 這是我們用來代替名字。
-            大部分人都用 {/他=“他/你”}和{/她=“她/你”} ，所以我們會根據人的外表自動假定要使用哪個。
+            大部分人都用 {/他=“他/你”} 和 {/她=“她/你”} ，所以我們會根據人的外表自動假定要使用哪個。
             但這實際上不是那麼簡單...
         - >
             性別很複雜，有些人“看起來不像”他們的性別。
@@ -94,10 +94,10 @@ sources:
         moderation: '提交的內容必須先獲得批准才能發布。'
 
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: '字典'
+    headerLong: '中性名詞詞典'
+    headerLonger: '性別中立語言詞典'
+    description: '不只是代詞！看看我們的性別中立名詞詞典。'
     intro:
         - >
             Inclusive and gender neutral is not just respecting someone's pronouns.
