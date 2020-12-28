@@ -13,7 +13,14 @@ pronouns:
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
         examples: ['he&she', 'he&they', 'she&they']
     null: false
-    emoji: false
+    emoji:
+        description: 'Emojiself pronouns'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        morphemes:
+            3rd_person: '#'
+            2nd_person: '#'
+        examples: ['💫', '💙']
+        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
     slashes: false
     avoiding: false
     others: 'Other pronouns'

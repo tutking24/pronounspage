@@ -287,7 +287,7 @@ export class Pronoun {
     nameOptions() {
         const options = new Set();
         const optionsN = this.morphemes[MORPHEMES[0]].split('&');
-        const optionsG = this.morphemes[MORPHEMES[1]] === this.morphemes[MORPHEMES[0]]
+        const optionsG = this.morphemes[MORPHEMES[1]] === this.morphemes[MORPHEMES[0]] && MORPHEMES.length > 2
             ? this.morphemes[MORPHEMES[2]].split('&')
             : this.morphemes[MORPHEMES[1]].split('&');
         for (let i in optionsN) {
