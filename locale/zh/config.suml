@@ -168,41 +168,48 @@ contact:
             headline: 'contact@pronouns.page'
     authors:
         -
-            name: 'The “Neutral Language Council” collective'
-            link: '/blog/neutral-language-council'
+            name: '台灣非二元酷兒浪子'
+            link: 'https://www.facebook.com/TaiwanNonbinary/'
             group: true
         -
             name: 'Andrea'
             profile: 'andrea'
-            pronouns: 'they'
-            pronounsLink: '/they'
             website: 'https://avris.it'
             twitter: 'AvrisIT'
             mail: 'andrea@avris.it'
             areas:
-                code: 'https://gitlab.com/Avris/Zaimki'
-                language: ~
-                faq: '/faq'
+                編碼: 'https://gitlab.com/Avris/Zaimki'
+
         -
             name: 'Paweł Dembowski'
-            profile: 'Ausir'
-            pronouns: 'he'
-            pronounsLink: '/he'
+            profile: 'ausir'
+            pronouns: '他'
+            pronounsLink: '/他'
             twitter: 'VaultAusir'
             mail: 'pawel.dembowski@gmail.com'
             areas:
-                language: ~
-                sources: '/sources'
+                翻譯監管: ~
+
         -
-            name: 'Szymon Misiek'
-            profile: 'szymon'
-            pronouns: 'he'
-            pronounsLink: '/he'
-            mail: 'misiek.sz.93@gmail.com'
-            orcid: '0000-0002-0214-0387'
+            name: '曹宗漢'
+            profile: 'fakinorb'
+            pronouns: '佢'
+            pronounsLink: '佢'
+            twitter: 'fakinorb'
+            mail: 'mimakatta.00@gmail.com'
             areas:
-                language: ~
-                sources: '/sources'
+                術語學: ~
+                翻譯: ~
+        -
+            name: '曹昌倫'
+            profile: 'TWFoodLover'
+            pronouns: '他'
+            pronounsLink: '他'
+            twitter: 'TWFoodLover'
+            mail: 'atsaotw@gmail.com'
+            areas:
+                翻譯: ~
+
 
 support:
     enabled: true
@@ -228,7 +235,7 @@ profile:
     defaultWords:
         - ['沒有尊稱', '君', '先生', '小姐', '夫人', '同志', '太太']
         - ['男', '女', '哥哥/弟弟', '姐姐/妹妹', '朋友']
-        - ['可愛', '美麗', '性感', '好看']
+        - ['可愛', '美麗', '性感', '好看', '帥哥']
         - ['男朋友', '女朋友', '知音', '丈夫', '妻子']
     flags:
         defaultPronoun: '他'

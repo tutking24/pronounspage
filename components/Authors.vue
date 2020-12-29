@@ -9,6 +9,9 @@
                 (<nuxt-link :to="author.pronounsLink">{{ author.pronouns }}</nuxt-link>)
                 –
             </template>
+            <template v-if="!author.pronouns && author.areas && Object.keys(author.areas).length">
+                –
+            </template>
             <template v-for="(link, area, index) in author.areas">
                 <Spaceless>
                     <nuxt-link v-if="link && link.indexOf('/') === 0" :to="link">{{ area.replace(/_/g, ' ') }}</nuxt-link>
