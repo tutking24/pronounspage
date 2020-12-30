@@ -228,6 +228,10 @@ links:
             headline: 'Jestem osobą niebinarną – rozmowa z Sybilem w <strong>Starej Piekarni</strong>'
             extra: '– o Słowniku Neutratywów i zaimki.pl od 6:20'
         -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=HOQazoVKf3c'
+            headline: 'Sybil u Wojtka Szota w audycji Godzina bez fikcji (<strong>Reset Obywatelski</strong>)'
+        -
             icon: 'newspaper'
             url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
             headline: 'Niebinarne postaci w uniwersum "Gwiezdnych wojen". Jak unika się neutratywów w polskim tłumaczeniu? – <strong>Queer.pl</strong> na podstawie naszego artykułu'

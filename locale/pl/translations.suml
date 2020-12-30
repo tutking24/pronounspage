@@ -869,7 +869,7 @@ user:
     deleteAccount: 'Usuń konto'
     deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
     socialConnection:
-        list: 'Połączenia z social media'
+        list: 'Połączenia z social mediami'
         connect: 'Połącz'
         refresh: 'Odśwież'
         disconnect: 'Rozłącz'
