@@ -6,6 +6,9 @@
             <LinkedText :text="link.headline"/>
         </a>
         <LinkedText :text="link.extra || ''"/>
+        <p v-if="link.quote" class="small pl-4">
+            <T>quotation.start</T><LinkedText :text="link.quote"/><T>quotation.end</T>
+        </p>
     </li>
 </template>
 

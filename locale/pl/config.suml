@@ -105,17 +105,28 @@ links:
             extra: '– anglojęzyczna inspiracja dla tej strony.'
         -
             icon: 'comment-alt-edit'
-            url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
-            headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
-        -
-            icon: 'comment-alt-edit'
             url: 'https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208'
             headline: 'Opinia Rady Języka Polskiego o formach „byłom”, „byłoś”, itp.'
+            quote: >
+                Nigdzie nie występuje zastrzeżenie, że nie tworzy się form 1. i 2. osoby rodzaju nijakiego w czasie przeszłym.
+                Tak więc z punktu widzenia gramatycznego formy <em>byłom, byłoś, robiłom, robiłoś, widziałom, widziałoś</em> itd.
+                są poprawne, zgodne z systemem językowym.
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
             headline: 'Genderneutralizacja polszczyzny?'
             extra: '– artykuł opisujący, dlaczego język neutralny płciowo jest ważny, i zbierający pomysły na stworzenie takiego.'
+            quote: >
+                Język, którego używamy, wpływa na to, jak myślimy.
+                Ciężko nam zatem będzie traktować wszystkich równościowo,
+                jeżeli nasza podświadomość będzie dzieliła wszystkich napotkanych ludzi na dwie kategorie.
+                No i żeby jeszcze były tylko dwie kategorie… Niektórzy ludzie nie należą do żadnej z tych dwóch opcji
+                (“and if that surprises you, you need to get out more” – Tom Scott).
+                Dla nich język polski jest jeszcze mniej łaskawy niż dla kobiet.
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
+            headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
         -
             icon: 'comment-alt-edit'
             url: '/blog/gwiezdne-wojny'
@@ -150,6 +161,10 @@ links:
             icon: 'comment-alt-edit'
             url: 'https://hackmd.io/@tranzycja/Hybqz17uv'
             headline: 'Transpłciowa młodzież w polskiej szkole'
+            quote: >
+                Jeśli chcesz rozbudzić w uczniach zainteresowanie językiem polskim, spróbuj odejść choć na jedną lekcję
+                od sztywnych reguł i z pomocą kategorii Literatura strony zaimki.pl
+                porozmawiać o ewolucji języka i neutratywach. Może uczniowie spróbują wymyślić własne?
         -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
@@ -170,10 +185,30 @@ links:
             url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
             headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
             extra: '– 6 kolorów gier wideo'
+            quote: >
+                Od początku wiedziałam, że nie chcę przepuszczać Floofty’enu przez magiel ciswashingu.
+                To jednak łatwiej było stwierdzić w teorii, niż zastosować w praktyce,
+                bo tak naprawdę nie miałam w tamtym czasie pojęcia, czy polszczyzna dysponuje już jakimiś formami niebinarnymi,
+                a jeśli tak, to jak się ich używa. Z pomocą przyszła mi nieoceniona strona Zaimki.pl i jej ekipa,
+                która cierpliwie odpowiadała na wszystkie moje pytania.
+                Gdy już znalazłam rzetelne źródło i miałam z kim o tym pogadać, to okazało się, że możliwości jest całe mnóstwo.
         -
             icon: 'info-circle'
             url: 'https://docs.google.com/document/d/1xkX0LE1EiwGqRyVFsMImmY2XnsO7f8jFUjUbUC77r6Y/edit'
             headline: 'Poradnik, jak urzędowo zmienić imię w Polsce'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/7,75410,26361697,prof-klosinska-dzban-to-slowo-nacechowane-pejoratywnie.html?disableRedirects=true'
+            headline: 'Prof. Katarzyna Kłosińska o neutralnych płciowo imionach'
+            quote: >
+                Od kilku lat coraz częściej dostajemy z urzędu stanu cywilnego prośby o opiniowanie imion neutralnych płciowo.
+                Najczęściej chodzi o nastolatki, których płeć biologiczna jest inna niż psychiczna,
+                są w trakcie procedury korekty płci lub nie identyfikują się ani jako kobieta, ani mężczyzna.
+                Chcą zmienić imię na takie, które nie będzie się kończyło ani na „a”, jak w polszczyźnie imiona kobiece,
+                ani na spółgłoskę, przypisaną imionom męskim.
+                Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
+                bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
+                należy uznać tę pierwszą za wyższą.
     media:
         -
             icon: 'newspaper'
@@ -188,6 +223,11 @@ links:
             url: 'https://www.facebook.com/watch/?v=3605197302863422'
             headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
         -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=wpxlmYBZywM'
+            headline: 'Jestem osobą niebinarną – rozmowa z Sybilem w <strong>Starej Piekarni</strong>'
+            extra: '– o Słowniku Neutratywów i zaimki.pl od 6:20'
+        -
             icon: 'newspaper'
             url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
             headline: 'Niebinarne postaci w uniwersum "Gwiezdnych wojen". Jak unika się neutratywów w polskim tłumaczeniu? – <strong>Queer.pl</strong> na podstawie naszego artykułu'
@@ -195,10 +235,22 @@ links:
             icon: 'newspaper'
             url: 'https://vibez.pl/wydarzenia/osoby-transplciowe-kim-sa-i-jak-sie-do-nich-zwracac-oto-krotki-poradnik-6577363618974496a'
             headline: 'Osoby transpłciowe - kim są i jak się do nich zwracać? Oto krótki poradnik – <strong>Vibez.pl</strong>'
+            quote: >
+                Pomocne mogą się też okazać neutratywy, czyli słowa i zwroty, które nie są nacechowane płciowo.
+                Niestety nasz język jest ubogi w formy niebinarne, takie jak choćby angielskie zaimki they/them,
+                dlatego tworzenie takich słów jest naprawdę potrzebne.
+                Z pomocą przychodzi jedna z nowych inicjatyw, czyli Słownik Neutratywów Języka Polskiego.
+                Na ich stronie znajdziecie formy neutratywnych zaimków, słów, a także przykłady ich użycia np. w tekstach kultury.
+                Odwiedźcie też ich profil na Instagramie.
+                Tłumaczą tam chociażby to, dlaczego zwrot transseksualistka nie jest najlepszy
+                i dlaczego powinno się mówić o korekcie płci, a nie "zmianie płci".
         -
             icon: 'newspaper'
             url: 'https://wyborcza.pl/duzyformat/7,127290,26594089,od-pewnego-czasu-gdy-prowadze-jakies-spotkanie-zwracam-sie.html'
             headline: 'Od pewnego czasu, gdy prowadzę jakieś spotkanie, zwracam się do zebranych per „panie, panowie i osoby niebinarne” – Wojciech Orliński w dodatku do Gazety Wyborczej <strong>Duży Format</strong>'
+            quote: >
+                Wprawdzie już nie prowadzę słowniczka neologizmów, dalej się jednak uważnie przyglądam przemianom języka.
+                Za najciekawsze słowo roku 2020 uważam "neutratyw".
         -
             icon: 'play-circle'
             url: 'https://rss.com/podcasts/bezwstydny/75056/'
@@ -213,6 +265,18 @@ links:
             icon: 'newspaper'
             url: 'https://przekroj.pl/kultura/od-zjarania-swiata-rozmowa-z-marcelim-szpakiem-maciej-stroinski'
             headline: 'Od zjarania świata – Rozmowa z Marcelim Szpakiem w <strong>Przekroju</strong>'
+            quote: >
+                Drugi ogromny poligon neopolszczyzny to wszelkiej maści queerowe i gender-benderowe fora, grupy i strony,
+                […] tam wykuwa się całkowicie nowa forma języka, dostosowana do opisywania zjawisk dotychczas
+                po polsku nieopisanych lub opisywanych na głębokich zapożyczeniach z angielszczyzny […]
+                Totalnie kibicuję tym dzieciakom, bo nie walczą z językiem dla popisów formalnych,
+                dogłaskania własnego ego czy czystej radości trollingu (choć są wśród nich też trolle wybitne),
+                tylko potrzebna im taka polszczyzna, w której mogą opisać siebie we własnych kategoriach,
+                a nie tych, które narzuca „normatywna” większość.
+                Cieszy mnie, że te środowiska się coraz lepiej organizują, podejmują coraz szerzej zakrojone inicjatywy,
+                jak choćby „Słownik Neutratywów Języka Polskiego” na fejsie,
+                i wydaje mi się to jednym z najciekawszych frontów walki o komunikacyjną przejrzystość polszczyzny w tym stuleciu,
+                o to, by język obejmował i wyrażał wszystkich, a nie tylko absolwentów kultury patriarchatu.
     socials:
         -
             icon: 'twitter'

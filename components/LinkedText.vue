@@ -19,7 +19,10 @@
             const children = [];
             const buildLink = _ => {
                 if (isIcon) {
-                    return h(Icon, {props: { v: buffer}});
+                    if (buffer === '…') {
+                        return h('span', '[…]');
+                    }
+                    return h(Icon, {props: { v: buffer }});
                 }
 
                 const bufferNode = [ h('span', {domProps: { innerHTML: this.handleSpelling(buffer) }}) ];
