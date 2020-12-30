@@ -26,7 +26,7 @@
                             </a>
                         </div>
                     </div>
-                    <p v-if="$admin()">
+                    <p v-if="$isGranted('panel') || $isGranted('users')">
                         <nuxt-link to="/admin" class="badge badge-primary"><T>user.account.admin</T></nuxt-link>
                     </p>
                 </div>

@@ -26,7 +26,7 @@ router.get('/terms', async (req, res) => {
         SELECT i.*, u.username AS author FROM terms i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${req.config.locale}
-        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
         AND i.deleted = 0
         ORDER BY i.term
     `));
@@ -38,7 +38,7 @@ router.get('/terms/search/:term', async (req, res) => {
         SELECT i.*, u.username AS author FROM terms i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${req.config.locale}
-        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
         AND i.deleted = 0
         AND (i.term like ${term} OR i.original like ${term})
         ORDER BY i.term
@@ -61,7 +61,7 @@ router.post('/terms/submit', async (req, res) => {
         )
     `);
 
-    if (req.admin) {
+    if (req.isGranted('terms')) {
         await approve(req.db, id);
     }
 
@@ -69,7 +69,7 @@ router.post('/terms/submit', async (req, res) => {
 });
 
 router.post('/terms/hide/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -83,7 +83,7 @@ router.post('/terms/hide/:id', async (req, res) => {
 });
 
 router.post('/terms/approve/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -93,7 +93,7 @@ router.post('/terms/approve/:id', async (req, res) => {
 });
 
 router.post('/terms/remove/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 

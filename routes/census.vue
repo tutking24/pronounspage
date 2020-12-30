@@ -6,7 +6,7 @@
         </h2>
 
         <template v-if="q === null">
-            <section v-if="$admin()">
+            <section v-if="$isGranted('census')">
                 <div class="alert alert-info">
                     {{countResponses}}
                     <T>census.replies</T>

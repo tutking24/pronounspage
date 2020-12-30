@@ -7,7 +7,7 @@ import {now, sortByValue} from "../../src/helpers";
 const router = Router();
 
 router.get('/admin/users', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -15,7 +15,7 @@ router.get('/admin/users', async (req, res) => {
         SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
-        ORDER BY u.roles ASC, u.id DESC
+        ORDER BY u.id DESC
     `);
 
     const authenticators = await req.db.all(SQL`
@@ -47,18 +47,19 @@ router.get('/admin/users', async (req, res) => {
 });
 
 router.get('/admin/stats', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
     const users = {
         overall: (await req.db.get(SQL`SELECT count(*) AS c FROM users`)).c,
-        admins: (await req.db.get(SQL`SELECT count(*) AS c FROM users WHERE roles=${'admin'}`)).c,
+        admins: (await req.db.get(SQL`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
     };
 
     const locales = {};
     for (let locale in req.locales) {
         if (!req.locales.hasOwnProperty(locale)) { continue; }
+        if (!req.isGranted('panel', locale)) { continue; }
         const profiles = await req.db.all(SQL`SELECT pronouns, flags FROM profiles WHERE locale=${locale}`);
         const pronouns = {}
         const flags = {}

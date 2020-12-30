@@ -31,7 +31,7 @@ router.get('/nouns', async (req, res) => {
         LEFT JOIN users u ON n.author_id = u.id
         WHERE n.locale = ${req.config.locale}
         AND n.deleted = 0
-        AND n.approved >= ${req.admin ? 0 : 1}
+        AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
         ORDER BY n.approved, n.masc
     `));
 });
@@ -42,7 +42,7 @@ router.get('/nouns/search/:term', async (req, res) => {
         SELECT n.*, u.username AS author FROM nouns n
         LEFT JOIN users u ON n.author_id = u.id
         WHERE n.locale = ${req.config.locale}
-        AND n.approved >= ${req.admin ? 0 : 1}
+        AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
         AND n.deleted = 0
         AND (n.masc like ${term} OR n.fem like ${term} OR n.neutr like ${term} OR n.mascPl like ${term} OR n.femPl like ${term} OR n.neutrPl like ${term})
         ORDER BY n.approved, n.masc
@@ -65,7 +65,7 @@ router.post('/nouns/submit', async (req, res) => {
         )
     `);
 
-    if (req.admin) {
+    if (req.isGranted('nouns')) {
         await approve(req.db, id);
     }
 
@@ -73,7 +73,7 @@ router.post('/nouns/submit', async (req, res) => {
 });
 
 router.post('/nouns/hide/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -87,7 +87,7 @@ router.post('/nouns/hide/:id', async (req, res) => {
 });
 
 router.post('/nouns/approve/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -97,7 +97,7 @@ router.post('/nouns/approve/:id', async (req, res) => {
 });
 
 router.post('/nouns/remove/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -128,7 +128,7 @@ router.get('/nouns/:word.png', async (req, res) => {
     const noun = (await req.db.all(SQL`
         SELECT * FROM nouns
         WHERE locale = ${req.config.locale}
-        AND approved >= ${req.admin ? 0 : 1}
+        AND approved >= ${req.isGranted('nouns') ? 0 : 1}
         AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
         ORDER BY masc
     `)).filter(noun =>

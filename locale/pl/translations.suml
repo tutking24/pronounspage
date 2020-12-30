@@ -990,7 +990,7 @@ admin:
     user:
         user: 'Użytkownicze'
         email: 'Email'
-        roles: 'Rola'
+        roles: 'Uprawnienia'
         profiles: 'Profile'
         confirmRole: 'Czy na pewno chcesz zmienić rolę osoby @%username% na "%role%"?'
 

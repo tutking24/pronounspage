@@ -1,6 +1,6 @@
 <template>
     <Loading :value="entriesRaw">
-        <section v-if="$admin()" class="px-3">
+        <section v-if="$isGranted('inclusive')" class="px-3">
             <div class="alert alert-info">
                 <strong>{{ entriesCountApproved() }}</strong> <T>nouns.approved</T>,
                 <strong>{{ entriesCountPending() }}</strong> <T>nouns.pending</T>.
@@ -126,7 +126,7 @@
                             </nuxt-link>
                         </li>
                         -->
-                        <template v-if="$admin()">
+                        <template v-if="$isGranted('inclusive')">
                             <li v-if="!s.el.approved">
                                 <button class="btn btn-concise btn-success btn-sm m-1" @click="approve(s.el)">
                                     <Icon v="check"/>
@@ -150,7 +150,7 @@
                             <button class="btn btn-concise btn-outline-primary btn-sm m-1" @click="edit(s.el)">
                                 <Icon v="pen"/>
                                 <span class="btn-label">
-                                    <T v-if="$admin()">crud.edit</T>
+                                    <T v-if="$isGranted('inclusive')">crud.edit</T>
                                     <T v-else>nouns.edit</T>
                                 </span>
                             </button>

@@ -175,3 +175,21 @@ export const shuffle = a => {
     }
     return a;
 }
+
+export const isGranted = (user, locale, area) => {
+    if (area === '*') {
+        return user.roles.split('|').includes('*');
+    }
+
+    for (let permission of user.roles.split('|')) {
+        if (permission === '*') {
+            return true;
+        }
+        const [ permissionLocale, permissionArea ] = permission.split('-');
+        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area)) {
+            return true;
+        }
+    }
+
+    return false;
+}

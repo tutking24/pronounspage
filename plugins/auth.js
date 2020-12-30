@@ -1,5 +1,6 @@
 import Vue from 'vue';
-import t from "../src/translator";
+import config from '../data/config.suml';
+import {isGranted} from "../src/helpers";
 
 export default ({app, store}) => {
     const token = app.$cookies.get('token');
@@ -11,7 +12,7 @@ export default ({app, store}) => {
     }
 
     Vue.prototype.$user = _ => store.state.user;
-    Vue.prototype.$admin = _ => {
-        return store.state.user && store.state.user.authenticated && store.state.user.roles === 'admin';
-    };
+    Vue.prototype.$isGranted = (area) => {
+        return store.state.user && store.state.user.authenticated && isGranted(store.state.user, config.locale, area);
+    }
 }

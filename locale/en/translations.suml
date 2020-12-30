@@ -429,7 +429,7 @@ admin:
     user:
         user: 'User'
         email: 'Email'
-        roles: 'Role'
+        roles: 'Permissions'
         profiles: 'Profiles'
         confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 

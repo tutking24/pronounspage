@@ -26,7 +26,7 @@ router.get('/inclusive', async (req, res) => {
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${req.config.locale}
-        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
         AND i.deleted = 0
         ORDER BY i.approved, i.insteadOf
     `));
@@ -38,7 +38,7 @@ router.get('/inclusive/search/:term', async (req, res) => {
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${req.config.locale}
-        AND i.approved >= ${req.admin ? 0 : 1}
+        AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
         AND i.deleted = 0
         AND (i.insteadOf like ${term} OR i.say like ${term})
         ORDER BY i.approved, i.insteadOf
@@ -61,7 +61,7 @@ router.post('/inclusive/submit', async (req, res) => {
         )
     `);
 
-    if (req.admin) {
+    if (req.isGranted('inclusive')) {
         await approve(req.db, id);
     }
 
@@ -69,7 +69,7 @@ router.post('/inclusive/submit', async (req, res) => {
 });
 
 router.post('/inclusive/hide/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -83,7 +83,7 @@ router.post('/inclusive/hide/:id', async (req, res) => {
 });
 
 router.post('/inclusive/approve/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -93,7 +93,7 @@ router.post('/inclusive/approve/:id', async (req, res) => {
 });
 
 router.post('/inclusive/remove/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 

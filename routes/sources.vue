@@ -66,7 +66,7 @@
             </ul>
         </section>
 
-        <section v-if="$admin()" class="px-3">
+        <section v-if="$isGranted('sources')" class="px-3">
             <div class="alert alert-info">
                 <strong>{{ sourceLibrary.countApproved }}</strong> <T>nouns.approved</T>,
                 <a href="#" @click.prevent="filter='__awaiting__'">

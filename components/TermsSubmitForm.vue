@@ -39,7 +39,7 @@
                             <textarea v-model="form.definition" class="form-control form-control-sm" required rows="3"></textarea>
                         </td>
                     </tr>
-                    <tr v-if="$admin()">
+                    <tr v-if="$isGranted('terms')">
                         <td colspan="3">
                             <T>profile.flags</T>
                             <ListInput v-model="form.flags" v-slot="s"/>

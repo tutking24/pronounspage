@@ -276,7 +276,7 @@ router.post('/user/delete', async (req, res) => {
 });
 
 router.post('/user/:id/set-roles', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('*')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 

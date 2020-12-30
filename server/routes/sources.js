@@ -26,7 +26,7 @@ router.get('/sources', async (req, res) => {
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale = ${req.config.locale}
         AND s.deleted = 0
-        AND s.approved >= ${req.admin ? 0 : 1}
+        AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
     `));
 });
 
@@ -36,7 +36,7 @@ router.get('/sources/:id', async (req, res) => {
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale = ${req.config.locale}
         AND s.deleted = 0
-        AND s.approved >= ${req.admin ? 0 : 1}
+        AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
         AND s.id = ${req.params.id}
     `));
 });
@@ -53,7 +53,7 @@ router.post('/sources/submit', async (req, res) => {
         )
     `);
 
-    if (req.admin) {
+    if (req.isGranted('sources')) {
         await approve(req.db, id);
     }
 
@@ -61,7 +61,7 @@ router.post('/sources/submit', async (req, res) => {
 });
 
 router.post('/sources/hide/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -75,7 +75,7 @@ router.post('/sources/hide/:id', async (req, res) => {
 });
 
 router.post('/sources/approve/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -85,7 +85,7 @@ router.post('/sources/approve/:id', async (req, res) => {
 });
 
 router.post('/sources/remove/:id', async (req, res) => {
-    if (!req.admin) {
+    if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
 
