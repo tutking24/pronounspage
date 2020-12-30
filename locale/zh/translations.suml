@@ -100,19 +100,8 @@ nouns:
     description: '不只是代詞！看看我們的性別中立名詞詞典。'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
-        - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
-        - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
-
+            名詞通常沒有性別。如果要指定性別，只需在開頭添加 “女/男”，例如女總統。
+            但是，下面列出的是同時具有性別選擇和性別中立選擇的名詞。
     approved: 'approved entries'
     pending: 'awaiting moderation'
     edit: 'Propose a change'

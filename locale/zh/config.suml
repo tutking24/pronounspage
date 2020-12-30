@@ -63,7 +63,7 @@ english:
     enabled: false
 
 faq:
-    enabled: true
+    enabled: false
     route: 'faq'
 
 links:
@@ -191,24 +191,26 @@ contact:
                 翻譯監管: ~
 
         -
-            name: '曹宗漢'
-            profile: 'fakinorb'
+            name: '曹冠霖'
+            profile: 'zoruaniac'
             pronouns: '佢'
             pronounsLink: '佢'
-            twitter: 'fakinorb'
+            twitter: 'zoruaniac'
             mail: 'mimakatta.00@gmail.com'
+            facebook: 'zoruaniac'
+            instagram: 'zoruaniac'
             areas:
                 術語學: ~
                 翻譯: ~
-        -
-            name: '曹昌倫'
-            profile: 'TWFoodLover'
-            pronouns: '他'
-            pronounsLink: '他'
-            twitter: 'TWFoodLover'
-            mail: 'atsaotw@gmail.com'
-            areas:
-                翻譯: ~
+    -
+        name: '曹昌倫'
+        profile: 'TWFoodLover'
+        pronouns: '他'
+        pronounsLink: '他'
+        twitter: 'TWFoodLover'
+        mail: 'atsaotw@gmail.com'
+        areas:
+            翻譯: ~
 
 
 support:
