@@ -67,88 +67,10 @@ faq:
     route: 'faq'
 
 links:
-    enabled: true
+    enabled: false
     route: 'links'
     blogRoute: 'blog'
-    links:
-        -
-            icon: 'globe-europe'
-            url: 'https://pronoun.is/'
-            headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
-        -
-            icon: 'chart-pie'
-            url: 'https://gendercensus.com/'
-            headline: 'Gender Census'
-            extra: '– annual survey about the language used by nonbinary people'
-        -
-            icon: 'comment-alt-edit'
-            url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
-            headline: 'Why EVERYONE should have pronouns in their bio'
-        -
-            icon: 'book-open'
-            url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
-            headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/style-grammar-guidelines/grammar/singular-they'
-            headline: 'Style and grammar guidelines regarding singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/blog/singular-they'
-            headline: 'Welcome, singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2015-word-of-the-year-is-singular-they'
-            headline: '2015 Word of the Year is singular “they”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2019-word-of-the-year-is-my-pronouns-word-of-the-decade-is-singular-they'
-            headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'play-circle'
-            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
-            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
-            extra: '– Tom Scott'
-        -
-            icon: 'book-open'
-            url: 'https://blogs.illinois.edu/view/25/677177'
-            headline: 'A Brief History of Singular “they”'
-            extra: '– Dennis Baron'
-        -
-            icon: 'wikipedia-w'
-            iconSet: 'b'
-            url: 'https://lgbta.wikia.org/wiki/Neopronouns'
-            headline: 'LGBTA Wiki on Neopronouns'
-        -
-            icon: 'book-open'
-            url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
-            headline: 'Academic papers on neopronouns'
-        -
-            icon: 'newspaper'
-            url: 'https://www.nytimes.com/2020/01/21/books/review/whats-your-pronoun-dennis-baron.html'
-            headline: 'English’s Pronoun Problem Is Centuries Old'
-            extra: '– The New York Times'
-        -
-            icon: 'user-edit'
-            url: 'http://faculty.las.illinois.edu/debaron/'
-            headline: 'Dennis Baron'
-            extra: '– author of “What''s your pronoun?”, has been researching gender-neutrality for some 40 years now'
-        -
-            icon: 'book-open'
-            url: 'https://ojs.lib.uwo.ca/index.php/wpl_clw/article/download/966/456'
-            headline: 'Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German'
-            extra: '– Levi C. R. Hord'
-        -
-            icon: 'twitch'
-            iconSet: 'b'
-            url: 'https://pronouns.alejo.io/'
-            headline: 'Display pronouns in Twitch Chat'
-
+    links: []
     media: []
     socials:
         -
@@ -202,15 +124,15 @@ contact:
             areas:
                 術語學: ~
                 翻譯: ~
-    -
-        name: '曹昌倫'
-        profile: 'TWFoodLover'
-        pronouns: '他'
-        pronounsLink: '他'
-        twitter: 'TWFoodLover'
-        mail: 'atsaotw@gmail.com'
-        areas:
-            翻譯: ~
+        -
+            name: '曹昌倫'
+            profile: 'TWFoodLover'
+            pronouns: '他'
+            pronounsLink: '他'
+            twitter: 'TWFoodLover'
+            mail: 'atsaotw@gmail.com'
+            areas:
+                翻譯: ~
 
 
 support:
