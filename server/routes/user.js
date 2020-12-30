@@ -72,7 +72,7 @@ const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
             id: ulid(),
             username: await defaultUsername(db, user.name || user.email),
             email: normalise(user.email),
-            roles: 'user',
+            roles: '',
             avatarSource: avatarSource,
         }
         await db.get(SQL`INSERT INTO users(id, username, email, roles, avatarSource)
