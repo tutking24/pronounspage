@@ -127,7 +127,6 @@
     export default {
         data() {
              return {
-                username: this.$route.params.pathMatch,
                 profiles: {},
                 glue: ' ' + this.$t('pronouns.or') + ' ',
                 allFlags: process.env.FLAGS,
@@ -140,6 +139,23 @@
             };
         },
         computed: {
+            username() {
+                const base = this.$route.params.pathMatch;
+
+                if (!this.profile) {
+                    return base;
+                }
+
+                if (this.profile.username !== base && process.client) {
+                    history.pushState(
+                        '',
+                        document.title,
+                        '/@' + this.profile.username,
+                    );
+                }
+
+                return this.profile.username;
+            },
             profile() {
                 for (let locale in this.profiles) {
                     if (locale === this.config.locale) {

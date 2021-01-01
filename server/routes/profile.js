@@ -4,6 +4,8 @@ import md5 from "js-md5";
 import {ulid} from "ulid";
 import avatar from "../avatar";
 
+const normalise = s => s.trim().toLowerCase();
+
 const calcAge = birthday => {
     if (!birthday) {
         return null;
@@ -24,7 +26,7 @@ const calcAge = birthday => {
 const fetchProfiles = async (db, username, self) => {
     const profiles = await db.all(SQL`
         SELECT profiles.*, users.id, users.username, users.email, users.avatarSource FROM profiles LEFT JOIN users on users.id == profiles.userId 
-        WHERE users.username = ${username}
+        WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(username)}
         AND profiles.active = 1
         ORDER BY profiles.locale
     `);
