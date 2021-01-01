@@ -216,14 +216,14 @@ nouns:
         - >
             Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
             Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
-            Jeśli używają {/ono=rodzaju nijakiego}, {/onu=dukaizmów} czy {/=innych nienormatywnych form},
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=dukaizmów} czy {/=innych nienormatywnych form},
             to które formy rzeczowników pasują do nich gramatycznie?
             Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
             Jak opisywać grupy mieszane?
 
         - >
             Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
-            {#neutratywy=<strong>neutratywami</strong>} (formy nijakie),
+            {#neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
             {#dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
             i {#osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
 
@@ -266,17 +266,17 @@ nouns:
         id: 'neutratywy'
         flag:
             alt: 'Flaga osób niebinarnych z naniesionym łosiem trzymającym łom.'
-            caption: 'Ze względu na końcówki „-łom”, „-łoś” i „-ło”, flaga rodzaju nijakiego i neutratywów przedstawia łosia z łomem.'
+            caption: 'Ze względu na końcówki „-łom”, „-łoś” i „-ło”, flaga rodzaju neutralnego i neutratywów przedstawia łosia z łomem.'
         info:
             - >
-                Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów.
-                Używają obecnych w normatywnej polszczyźnie końcówek nijakich,
+                Są to słowa ukute na neutralne wersje słów nacechowanych płciowo, analogicznie do feminatywów.
+                Używają obecnych w normatywnej polszczyźnie końcówek neutralnych,
                 takich jak „-rze”, „-cze”, „-o”, czy zapożyczonej z łaciny „-um”.
             - >
-                Formy te pasują gramatycznie do {/ono=form nijakich}, np. „moje piękne partnerze przyszło do domu”.
+                Formy te pasują gramatycznie do {/ono=form neutralnych}, np. „moje piękne partnerze przyszło do domu”.
             - >
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
-                z wyszczególnieniem ich formy męskiej, żeńskiej i nijakiej.
+                z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
                 Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
         extended:
             header: 'Przykład odmiany'
@@ -284,7 +284,7 @@ nouns:
             header: 'Alternatywne wzory odmiany'
             info:
                 - >
-                    Choć zaimek {/ono=„ono”} jest nijaki, to poza mianownikiem przybiera formy identyczne z męskimi.
+                    Choć zaimek {/ono=„ono”} jest neutralny, to poza mianownikiem przybiera formy identyczne z męskimi.
                     Dlatego też wiele osób binarnych używa „ono” z alternatywną odmianą.
                 - >
                     Słownik Neutratywów podaje odmianę pasującą do {/ono=„ono/jego”},
@@ -453,7 +453,7 @@ faq:
                     albo wzięte z tekstów literatury.
                     Ewentualnie {/ona/ich=uzupełniłośmy} je jedynie w miejscach, gdzie którejś części brakowało,
                     próbując zachować spójność całości – na przykład wymyślając formę grzecznościową „szanowne pań”
-                    dla {/ono=formy nijakiej} albo zaimek {/ony=„ony”} dla liczby mnogiej dukaizmów, którego u Dukaja brakowało.
+                    dla {/ono=formy neutralnej} albo zaimek {/ony=„ony”} dla liczby mnogiej dukaizmów, którego u Dukaja brakowało.
                 - >
                     Dwie formy liczby mnogiej {/ona/ich=stowrzyłośmy} same,
                     próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
@@ -530,7 +530,7 @@ faq:
                     dla używania „kontrowersyjnych” form językowych.
                     Dlatego w sekcji [bookmark]{/linki=Dodatkowe materiały}
                     linkujemy między innymi do opinii RJP,
-                    która potwierdza poprawność gramatyczną pierwszo- i drugoosobowych nijakich czasowników („byłom”, „zrobiłoś”),
+                    która potwierdza poprawność gramatyczną pierwszo- i drugoosobowych neutralnych czasowników („byłom”, „zrobiłoś”),
                     do seminariów naukowych i prac akademickich na temat niebinarności w języku, etc.
                     Jesteśmy też w kontakcie ze studentem slawistyki piszącym o tym pracę dyplomową
                     oraz lektorką polonistyki planującą wydać podręcznik obejmujący nowe formy.
@@ -615,11 +615,24 @@ faq:
                     Pod MacOS możesz przytrzymać dłużej klawisz „a” by móc wybrać opcję „æ” oraz klawisz „o” dla „ø”.
                     Możesz też wejść w Ustawienia systemu → Klawiatura → Tekst i dodać zasady podmieniania znaków,
                     lub skorzystać z apliacji {https://folivora.ai/=BetterTouchTool}.
+        nijaki:
+            question: 'Dlaczego mówicie „rodzaj neutralny” zamiast „rodzaj nijaki”?'
+            answer:
+                - >
+                    Bo to słowo jest zwyczajnie paskudne. Jest wykluczające. Odczłowieczające.
+                    {https://www.synonimy.pl/synonim/nijaki/=Kojarzy się} przeciętnością, bezbarwnością, bylejakością, nudą i mdłościami.
+                    Wiele osób uważa to za poważny problem
+                    (wśród nich {https://youtu.be/HOQazoVKf3c?t=1859=Mateusz Adamczyk},
+                    członkek Zespołu Retoryki i Komunikacji Publicznej Rady Języka Polskiego).
+                - >
+                    Dlatego proponujemy alternatywę, pochodzącą od łacińskiej nazwy tego rodzaju gramatycznego:
+                    {https://en.wiktionary.org/wiki/neuter#Latin=neuter}.
+                    Czyż „rodzaj neutralny” nie brzmi zdecydownie piękniej?
         neutratywy:
             question: 'Czym są neutratywy? Dlaczego warto je tworzyć i ich uzywać?'
             answer:
                 - >
-                    Są to słowa ukute na nijakie wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+                    Są to słowa ukute na neutralne wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
                     Nazwa została ukuta w analogii do feminatywów
                     przez {https://twitter.com/VaultAusir=Pawła Dembowskiego}, współautora strony.
                 - >
@@ -630,16 +643,16 @@ faq:
                     Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
                     choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
                     Coraz więcej osób używa w odniesieniu do siebie
-                    {/ono=rodzaju nijakiego} i {/=innych form}.
+                    {/ono=rodzaju neutralnego} i {/=innych form}.
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
-                    Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form nijakich.
+                    Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form neutralnych.
         neutratywy-a-neutralne:
             question: 'Czym się różnią neutratywy od terminów neutralnych płciowo?'
             answer:
                 - >
-                    Neutratyw to słowo najczęściej w rodzaju nijakim analogiczne do feminatywu,
-                    powstałe, by określić osobę używającą rodzaju nijakiego.
+                    Neutratyw to słowo najczęściej w rodzaju neutralnym analogiczne do feminatywu,
+                    powstałe, by określić osobę używającą rodzaju neutralnego.
                     Natomiast termin neutralny płciowo w ogóle nie wskazuje na płeć.
                 - >
                     Przykładowo: „{studencie}” to neutratyw,
@@ -678,7 +691,7 @@ faq:
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
                 - >
-                    W kwestii zaimków, czasowników i przymiotników, można używać rodzaju nijakiego,
+                    W kwestii zaimków, czasowników i przymiotników, można używać rodzaju neutralnego,
                     który {https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208=zdaniem Rady Języka Polskiego}
                     jest poprawny nawet w formach 1. i 2. osoby („byłom”, „zrobiłoś”).
                     Trzeba jednak zauważyć, że (przynajmniej dopóki nie zostanie znormalizowane inne użycie)

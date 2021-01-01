@@ -10,7 +10,7 @@ pronouns:
     honorifics: true
     multiple:
         name: 'Formy wymienne'
-        description: 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i nijakich) i można się do nich zwracać w dowolnej z nich.'
+        description: 'Wiele osób niebinarnych używa zamiennie więcej niż jednej formy (np. męskich i żeńskich albo żeńskich i neutralnych) i można się do nich zwracać w dowolnej z nich.'
         examples: ['on&ona', 'on&ono', 'ona&ono', 'on&onu', 'ona&onu', 'ono/jego&ono/jej']
     emoji:
         description: 'Emojiself'

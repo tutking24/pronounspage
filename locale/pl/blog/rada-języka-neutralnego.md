@@ -17,4 +17,4 @@ Obecny skład:
  - [@szymon](/@szymon)
  - [@Tess](/@Tess)
 
-Logo kolektywu to czarny łoś z łomem (ze względu na nijakie końcówki czasowników: „-łom” i „-łoś”) na tle flagi osób niebinarnych.
+Logo kolektywu to czarny łoś z łomem (ze względu na neutralne końcówki czasowników: „-łom” i „-łoś”) na tle flagi osób niebinarnych.
