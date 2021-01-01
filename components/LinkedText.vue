@@ -14,14 +14,12 @@
 
             let isLink = false;
             let isIcon = false;
+            let isEscape = false;
             let buffer = '';
             let linkBuffer = '';
             const children = [];
             const buildLink = _ => {
                 if (isIcon) {
-                    if (buffer === '…') {
-                        return h('span', '[…]');
-                    }
                     return h(Icon, {props: { v: buffer }});
                 }
 
@@ -78,12 +76,24 @@
                     continue;
                 } else if (c === '[') {
                     addChild();
-                    isIcon = true;
-                    continue;
+                    if (isEscape) {
+                        isEscape = false;
+                    } else {
+                        isIcon = true;
+                        continue;
+                    }
                 } else if (c === ']') {
                     addChild();
-                    isIcon = false;
+                    if (isIcon) {
+                        isIcon = false;
+                        continue;
+                    }
+                } else if (c === '\\') {
+                    isEscape = true;
                     continue;
+                } else if (isEscape) {
+                    buffer += '\\';
+                    isEscape = false;
                 }
                 buffer += c;
             }
