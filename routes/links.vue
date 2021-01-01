@@ -2,9 +2,9 @@
     <div>
         <Links top/>
         <Media/>
+        <Recommended/>
         <Socials/>
         <LanguageVersions/>
-        <Recommended/>
 
         <section>
             <Share :title="$t('links.headerLong')"/>

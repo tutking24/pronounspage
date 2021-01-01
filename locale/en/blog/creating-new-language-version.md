@@ -4,9 +4,11 @@ So you're interested in helping us extend the platform to your native language? 
 
 But how do I do that, you ask?
 
-First, please contact us at [contact@pronouns.page](mailto:contact@pronouns.page) (or another way).
-Maybe someone already started working on that language? Maybe we have some useful tips?
-It would be useful to coordinate before you put work into it. 
+First, please [contact us](/contact).
+Maybe someone already started working on that language?
+It would be useful to coordinate before you put work into it.
+We'll invite you to our [Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software)
+and offer support.
 
 If you know how to work with tools like Git, Yarn, JavaScript etc.,
 you can head to [the source code](https://gitlab.com/Avris/Zaimki/),
@@ -15,6 +17,9 @@ You'll be able to see the changes in real time as you make them.
 Push them to a separate branch and submit a pull request.
 
 Otherwise, don't worry. You can still help localise the project without knowing how to code.
+I'll prepare all the necessary files in a dedicated Teams channel – you can just start editing.
+
+Alternatively:
 Click [here](https://gitlab.com/Avris/Zaimki/-/archive/main/Zaimki-main.zip) to download a zip file with the code.
 Don't mind everything else, just create a copy of the `/locale/en` directory,
 calling the copy according to the new language code.

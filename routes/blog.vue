@@ -38,7 +38,23 @@
 </script>
 
 <style lang="scss">
-    .blog-post img {
-        max-width: 100%;
+    @import "assets/variables";
+
+    .blog-post {
+        img {
+            max-width: 100%;
+        }
+
+        figure {
+            width: 100%;
+            max-width: 24rem;
+            padding: $spacer;
+            img {
+                width: 100%;
+            }
+            figcaption {
+                font-size: $small-font-size;
+            }
+        }
     }
 </style>

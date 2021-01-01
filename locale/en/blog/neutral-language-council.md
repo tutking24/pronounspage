@@ -1,12 +1,15 @@
 # The “Neutral Language Council” collective
 
-![](/img/łoś.jpg)
+<figure class="float-right">
+    <img src="/img/łoś.jpg"/>
+    <figcaption>Our logo is a black moose (pl. “łoś”) with a crowbar (pol. “łom”) (a nod to Polish neuter verb endings “-łom” and “-łoś”) against the background of the non-binary pride flag.</figcaption>
+</figure>
 
 [Pronouns.page](https://pronouns.page)
 and the Facebook fanpage [Słownik Neutratywów Języka Polskiego](https://facebook.com/neutratywy) (in Polish)
 are created by the “Neutral Language Council” collective.
 
-Current members:
+## <span class="fal fa-user-friends"></span> Current members:
 
  - [@andrea](/@andrea)
  - [@Arczi](/@Arczi)
@@ -18,7 +21,4 @@ Current members:
  - [@szymon](/@szymon)
  - [@Tess](/@Tess)
 
-Our logo is a black moose (pl. “łoś”) with a crowbar (pol. “łom”) (a nod to Polish neuter verb endings “-łom” and “-łoś”)
-against the background of the non-binary pride flag.
-
-[(Polish page)](https://zaimki.pl/blog/rada-j%C4%99zyka-neutralnego)
+## <span class="fal fa-link"></span> [Polish page](https://zaimki.pl/blog/rada-j%C4%99zyka-neutralnego)
