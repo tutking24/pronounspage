@@ -514,7 +514,7 @@ profile:
 
 census:
     enabled: false
-    route: 'cenzus'
+    route: 'spis'
     edition: '2021'
     start: '2021-01-01T00:00:00+01:00'  # TODO
     end: '2021-03-31T23:59:59+02:00'
@@ -768,6 +768,7 @@ redirects:
     - { from: '^/słownik$', to: '/s%C5%82owniki' }
     - { from: '^/s%C5%82ownik$', to: '/s%C5%82owniki' }
     - { from: '^/literatura$', to: '/korpus' }
+    - { from: '^/cenzus', to: '/spis' }
 
 api:
     examples:

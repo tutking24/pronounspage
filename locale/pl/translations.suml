@@ -931,8 +931,8 @@ profile:
         no: 'Nie'
 
 census:
-    header: 'Cenzus'
-    headerLong: 'Cenzus płci'
+    header: 'Spis'
+    headerLong: 'Niebinarny spis powszechny'
     description:
         - >
             Ciekawi Cię, jakiego języka używają polskie osoby niebinarne?
@@ -940,7 +940,7 @@ census:
             Jakimi etykietkami się opisujemy?
             Jak te trendy zmieniają się w czasie?
         - >
-            To super, bo nas też! Dlatego chcemy co roku przeprowadzać cenzus, w którym to zbadamy.
+            To super, bo nas też! Dlatego chcemy co roku przeprowadzać niebinarny spis powszechny, w którym to zbadamy.
             Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
         - >
             Jeśli swoją płeć opisujesz jako „kobieta – zawsze i wyłącznie” albo „mężczyzna – zawsze i wyłącznie”,
