@@ -191,7 +191,7 @@
                     return true;
                 }
                 if (this.question.type === 'radio') {
-                    return this.answers[this.q] !== undefined;
+                    return this.answers[this.q] !== undefined && this.answers[this.q] !== null;
                 }
                 if (this.question.type === 'checkbox') {
                     return this.answers[this.q] !== undefined && this.answers[this.q].length > 0;
