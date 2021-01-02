@@ -62,18 +62,20 @@
             </div>
             <form @submit.prevent="q++">
                 <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check" v-for="option in question.options">
+                    <div class="form-check mb-2" v-for="[option, help] in question.options">
                         <label class="form-check-label small">
                             <input type="radio" class="form-check-input" v-model="answers[q]" :name="'question' + q" :value="option" required/>
                             {{option}}
+                            <span v-if="help" class="text-muted">({{help}})</span>
                         </label>
                     </div>
                 </div>
                 <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check" v-for="option in question.options">
+                    <div class="form-check mb-2" v-for="[option, help] in question.options">
                         <label class="form-check-label small">
                             <input type="checkbox" class="form-check-input" v-model="answers[q]" :value="option"/>
                             {{option}}
+                            <span v-if="help" class="text-muted">({{help}})</span>
                         </label>
                     </div>
                 </div>
@@ -82,6 +84,9 @@
                 </div>
                 <div v-else-if="question.type === 'number'" class="form-group">
                     <input type="number" class="form-control" :min="question.min" :max="question.max" v-model="answers[q]" required/>
+                </div>
+                <div v-else-if="question.type === 'textarea'" class="form-group">
+                    <textarea class="form-control" v-model="answers[q]"/>
                 </div>
 
                 <div v-if="question.writein" class="form-group">
@@ -182,6 +187,9 @@
                 if (this.writins[this.q] !== '') {
                     return true;
                 }
+                if (this.question.optional) {
+                    return true;
+                }
                 if (this.question.type === 'radio') {
                     return this.answers[this.q] !== undefined;
                 }
@@ -192,7 +200,7 @@
                     const v = parseInt(this.answers[this.q]);
                     return this.answers[this.q] !== '' && v >= this.question.min && v <= this.question.max;
                 }
-                if (this.question.type === 'text') {
+                if (this.question.type === 'text' || this.question.type === 'textarea') {
                     return this.answers[this.q] !== '';
                 }
                 return true;

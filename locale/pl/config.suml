@@ -520,63 +520,80 @@ census:
     end: '2021-03-31T23:59:59+02:00'
     questions:
         -
-            type: 'number'
-            min: 12
-            max: 120
-            question: 'Ile masz lat?'
-        -
             type: 'radio'
             question: 'Jesteś…'
             options:
-                - 'osobą niebinarną'
-                - 'osobą cispłciową'
-                - 'binarną osobą transpłciową'
+                - ['osobą niebinarną']
+                - ['osobą cispłciową']
+                - ['binarną osobą transpłciową']
+        -
+            type: 'number'
+            min: 1900
+            max: 2010
+            question: 'Twój rok urodzenia'
         -
             type: 'radio'
             question: 'Gdzie obecnie mieszkasz?'
             options:
-                - 'w Polsce'
-                - 'za granicą'
+                - ['w Polsce']
+                - ['za granicą']
         -
             type: 'checkbox'
-            question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
+            question: 'Jakimi formami mówisz o sobie?'
             randomise: true
             writein: true
             instruction:
                 - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
             options:
-                - 'on/jego'
-                - 'ona/jej'
+                - ['rodzaj męski', '„byłem zmęczony”']
+                - ['rodzaj żeński', '„byłam zmęczona”']
+                - ['rodzaj neutralny', '„byłom zmęczone”']
+                - ['rodzaj postpłciowy', '„byłum zmęczonu”']
+                - ['liczba mnoga, rodzaj męskoosobowy', '„byliśmy zmęczeni”']
+                - ['liczba mnoga, rodzaj niemęskoosobowy', '„byłyśmy zmęczone”']
+                - ['liczba mnoga, rodzaj neutralny', '„byłośmy zmęczone”']
+                - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
+        -
+            type: 'checkbox'
+            question: 'Jak wolisz, by mówiono o Tobie?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+            options:
+                - ['on/jego', '„on jest fajny”, „lubię jego zwierzątko”']
+                - ['ona/jej', '„ona jest fajna”, „lubię jej zwierzątko”']
 
-                - 'ono/jego'
-                - 'ono/jej'
-                - 'ono/jejgo'
-                - 'ono/jeno'
-                - 'ono/jenu'
-                - 'vono/vego'
-                - 'ono/eno'
+                - ['ono/jego', '„ono jest fajne”, „lubię jego zwierzątko”']
+                - ['ono/jej', '„ono jest fajne”, „lubię jej zwierzątko”']
+                - ['ono/jejgo', '„ono jest fajne”, „lubię jejgo zwierzątko”']
+                - ['ono/jeno', '„ono jest fajne”, „lubię jeno zwierzątko”']
+                - ['ono/jenu', '„ono jest fajne”, „lubię jenu zwierzątko”']
+                - ['vono/vego', '„vono jest fajne”, „lubię vego zwierzątko”']
+                - ['ono/eno', '„ono jest fajne”, „lubię eno zwierzątko”']
 
-                - 'onu/jenu'
-                - 'onu/jejo'
-                - 'ne/nego'
+                - ['onu/jenu', '„onu jest fajnu”, „lubię jenu zwierzątko”']
+                - ['onu/jejo', '„onu jest fajnu”, „lubię jejgo zwierzątko”']
+                - ['ne/nego', '„ne jest fajnu”, „lubię nego zwierzątko”']
 
-                - 'oni/ich'
-                - 'one/ich'
-                - 'oni/e/ich'
-                - 'ona/ich'
-                - 'ony/ich'
-                - 'onie/ich'
+                - ['oni/ich', '„oni są fajni”, „lubię ich zwierzątko”']
+                - ['one/ich', '„one są fajne”, „lubię ich zwierzątko”']
+                - ['oni/e/ich', '„oni/e są fajni/e”, „lubię ich zwierzątko”']
+                - ['ona/ich', '„ona są fajne”, „lubię ich zwierzątko”']
+                - ['ony/ich', '„ony są fajne”, „lubię ich zwierzątko”']
+                - ['onie/ich', '„onie są fajne”, „lubię ich zwierzątko”']
 
-                - 'onæ/jæ'
-                - 'on/a/jego/jej'
-                - 'onx/jex'
-                - 'on_/je_'
-                - 'on*/je*'
-                - 'onø/jenø'
+                - ['onæ/jæ', '„onæ jest fajnæ”, „lubię jæ zwierzątko”']
+                - ['on/a/jego/jej', '„on/a jest fajny/a”, „lubię jego/jej zwierzątko”']
+                - ['onx/jex', '„onx jest fajnx”, „lubię jx zwierzątko”']
+                - ['on_/je_', '„on_ jest fajn_”, „lubię j_ zwierzątko”']
+                - ['on*/je*', '„on* jest fajn*”, „lubię j* zwierzątko”']
+                - ['onø/jenø', '„onø jest fajnø”, „lubię jø zwierzątko”']
 
-                - 'ony/jegy'
-                - '''n''/je'
+                - ['ony/jegy', '„ony jest fajny”, „lubię jegy zwierzątko”']
+                - ['''n''/je', '„''n'' jest fajn''”, „lubię je'' zwierzątko”']
         -
             type: 'checkbox'
             question: 'Jakich zaimków używasz po angielsku?'
@@ -586,35 +603,35 @@ census:
                 - >
                     Więcej informacji <a href="https://en.pronouns.page" target="_blank">na naszej anglojęzycznej stronie</a>.
             options:
-                - 'he/him'
-                - 'she/her'
+                - ['he/him']
+                - ['she/her']
 
-                - 'they/them/themselves'
-                - 'them/them/themself'
-                - 'it/its'
-                - 'one/one''s'
+                - ['they/them/themselves']
+                - ['them/them/themself']
+                - ['it/its']
+                - ['one/one''s']
 
-                - 'ae/aer'
-                - 'co/cos'
-                - 'e/em/eir'
-                - 'e/em/es'
-                - 'ey/em'
-                - 'fae/faer'
-                - 'hu/hum'
-                - 'ne/nem'
-                - 'ne/nir'
-                - 'per/per'
-                - 's/he/hir'
-                - 'thon/thons'
-                - 've/ver'
-                - 'vi/vir'
-                - 'xe/xem'
-                - 'ze/hir'
-                - 'ze/zir'
-                - 'zhe/zher'
+                - ['ae/aer']
+                - ['co/cos']
+                - ['e/em/eir']
+                - ['e/em/es']
+                - ['ey/em']
+                - ['fae/faer']
+                - ['hu/hum']
+                - ['ne/nem']
+                - ['ne/nir']
+                - ['per/per']
+                - ['s/he/hir']
+                - ['thon/thons']
+                - ['ve/ver']
+                - ['vi/vir']
+                - ['xe/xem']
+                - ['ze/hir']
+                - ['ze/zir']
+                - ['zhe/zher']
 
-                - 'nie znam angielskiego'
-                - 'nie mam preferencji po angielsku'
+                - ['nie znam / nie używam angielskiego']
+                - ['nie mam preferencji po angielsku']
         -
             type: 'checkbox'
             question: 'Jakich form rzeczownikowych używasz?'
@@ -624,24 +641,24 @@ census:
                 - >
                     Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
             options:
-                - 'maskulatywy (nauczyciel, partner, pracownik)'
-                - 'feminatywy (nauczycielka, partnerka, pracowniczka)'
-                - 'neutratywy (nauczyciełło, partnerze, pracownicze)'
-                - 'dukatywy (nauczycielu, partneru, pracowniku)'
-                - 'osobatywy (osoba nauczająca, osoba partnerska, osoba pracująca)'
+                - ['maskulatywy', 'nauczyciel, partner, pracownik']
+                - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
+                - ['neutratywy', 'nauczyciełło, partnerze, pracownicze']
+                - ['dukatywy', 'nauczycielu, partneru, pracowniku']
+                - ['osobatywy', 'osoba nauczająca, osoba partnerska, osoba pracująca']
         -
             type: 'checkbox'
             question: 'Jakich form grzecznościowych i tytułów używasz?'
             randomise: true
             writein: true
             options:
-                - 'per ty'
-                - 'per wy'
-                - 'pan'
-                - 'pani'
-                - 'państwo'
-                - 'pań'
-                - 'panu'
+                - ['per ty']
+                - ['per wy']
+                - ['pan']
+                - ['pani']
+                - ['państwo']
+                - ['pań']
+                - ['panu']
         -
             type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'
@@ -656,73 +673,84 @@ census:
                     czy się z nią identyfikujesz, czy nie.
                 - >
                     Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki#terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
-            options:
-                - 'niebinarn_'
-                - 'niebinie'
-                - 'apłciow_'
-                - 'agenderow_'
-                - 'bigenderow_'
-                - 'kłir'
-                - 'andogyniczn_'
-                - 'aporapłciow_'
-                - 'aporagenderow_'
-                - 'autypłciow_'
-                - 'autygenderow_'
-                - 'demipłciow_'
-                - 'demigenderow_'
-                - 'demidziewczę'
-                - 'demichłopię'
-                - 'maweryczn_'
-                - 'ksenopłciow_'
-                - 'ksenogenderow_'
-                - 'neutralnopłciow_'
-                - 'neutralnogenderow_'
-                - 'nienormatywn_ płciowo'
-                - 'panpłciow_'
-                - 'pangenderow_'
-                - 'płynnopłciow_'
-                - 'płynnogenderow_'
-                - 'zmiennopłciow_'
-                - 'zmiennogenderow_'
-                - 'rozważając_ swoją płeć'
-                - 'transkobiec_'
-                - 'trans kobieta'
-                - 'transmęsk_'
-                - 'trans mężczyzna'
-                - 'transgenderow_'
-                - 'transpłciow_'
-                - 'transneutraln_'
-                - 'tripłciow_'
-                - 'trigenderow_'
-                - 'kobiec_'
-                - 'kobieta'
-                - 'męsk_'
-                - 'mężczyzna'
 
-                - 'nonbinary'
-                - 'enby'
-                - 'agender'
-                - 'bigender'
-                - 'queer'
-                - 'androgyne'
-                - 'aporagender'
-                - 'autygender'
-                - 'demigender'
-                - 'demigirl'
-                - 'demiboy'
-                - 'maverique'
-                - 'xenogender'
-                - 'neutrois'
-                - 'genderqueer'
-                - 'pangender'
-                - 'genderfluid'
-                - 'genderflux'
-                - 'gender questioning'
-                - 'transfeminine'
-                - 'transgender'
-                - 'trans'
-                - 'transneutral'
-                - 'trigender'
+                - >
+                    Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
+                    czytaj jako „niebinarna”, „niebinarne”, itp. w zależności, którą opcję wolisz.
+                - >
+                    Wiele etykietek jest zduplikowanych (np. „agender”, „agenderow_”, „apłciow_”)
+                    – chcemy zobaczyć które możliwych form opisujących to samo zjawisko są popularniejsze.
+            options:
+                - ['niebinarn_']
+                - ['niebinie']
+                - ['apłciow_']
+                - ['agenderow_']
+                - ['bigenderow_']
+                - ['kłir']
+                - ['andogyniczn_']
+                - ['aporapłciow_']
+                - ['aporagenderow_']
+                - ['autypłciow_']
+                - ['autygenderow_']
+                - ['demipłciow_']
+                - ['demigenderow_']
+                - ['demidziewczę']
+                - ['demichłopię']
+                - ['maweryczn_']
+                - ['ksenopłciow_']
+                - ['ksenogenderow_']
+                - ['neutralnopłciow_']
+                - ['neutralnogenderow_']
+                - ['nienormatywn_ płciowo']
+                - ['panpłciow_']
+                - ['pangenderow_']
+                - ['płynnopłciow_']
+                - ['płynnogenderow_']
+                - ['zmiennopłciow_']
+                - ['zmiennogenderow_']
+                - ['rozważając_ swoją płeć']
+                - ['transkobiec_']
+                - ['trans kobieta']
+                - ['transmęsk_']
+                - ['trans mężczyzna']
+                - ['transgenderow_']
+                - ['transpłciow_']
+                - ['transneutraln_']
+                - ['tripłciow_']
+                - ['trigenderow_']
+                - ['kobiec_']
+                - ['kobieta']
+                - ['męsk_']
+                - ['mężczyzna']
+
+                - ['nonbinary']
+                - ['enby']
+                - ['agender']
+                - ['bigender']
+                - ['queer']
+                - ['androgyne']
+                - ['aporagender']
+                - ['autygender']
+                - ['demigender']
+                - ['demigirl']
+                - ['demiboy']
+                - ['maverique']
+                - ['xenogender']
+                - ['neutrois']
+                - ['genderqueer']
+                - ['pangender']
+                - ['genderfluid']
+                - ['genderflux']
+                - ['gender questioning']
+                - ['transfeminine']
+                - ['transgender']
+                - ['trans']
+                - ['transneutral']
+                - ['trigender']
+        -
+            type: 'textarea'
+            question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
+            optional: true
 
 redirects:
     - { from: '^/neutratywy$', to: '/s%C5%82owniki' }

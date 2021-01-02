@@ -943,6 +943,11 @@ census:
             To super, bo nas też! Dlatego chcemy co roku przeprowadzać cenzus, w którym to zbadamy.
             Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
         - >
+            Jeśli swoją płeć opisujesz jako „kobieta – zawsze i wyłącznie” albo „mężczyzna – zawsze i wyłącznie”,
+            to badanie nie jest skierowane do Ciebie (ale docenimy jeśli podzielisz się linkiem ze znajomymi!).
+            Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
+            „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
+        - >
             Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta od %start% do %end%.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
