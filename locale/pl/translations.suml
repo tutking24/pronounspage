@@ -1063,7 +1063,7 @@ flags:
     Enbian: 'Enbiańs{adjective_n_k}'  # Niebiańsk{adjective_n}
     Fa*afafine: 'Fa''afafine'
     Gay: 'Gej'
-    Gender_Questioning: 'Rozważając{adjective_n} swoją płeć'  # Zastanawiając{adjective_n} się nad swoją płcią
+    Gender_Questioning: 'Rozważając{adjective_n_c} swoją płeć'  # Zastanawiając{adjective_n_c} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
     Genderfaun: 'Fauniczn{adjective_n}'
     Genderfluid: 'Płynnopłciow{adjective_n}'
@@ -1098,10 +1098,10 @@ flags:
     Queerplatonic: 'Queerplatoniczn{adjective_n}'
     Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
     Sapphic: 'Safic{adjective_n_k}'  # Safik, Sapphic
-    Sexuality_Questioning: 'Rozważając{adjective_n} swoją orientację'
+    Sexuality_Questioning: 'Rozważając{adjective_n_c} swoją orientację'
     Straight_Ally: 'Hetero osoba sojusznicza'
     Toric: 'Toryczn{adjective_n}'
-    Transfeminine: 'Transkobiec{adjective_n}'
+    Transfeminine: 'Transkobiec{adjective_n_c}'
     Transgender: 'Transpłciow{adjective_n}'
     Transmasculine: 'Transmęs{adjective_n_k}'
     Transneutral: 'Transneutraln{adjective_n}'
