@@ -532,9 +532,75 @@ census:
                 - 'za granicą'
         -
             type: 'checkbox'
+            question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
+            randomise: true
+            writein: true
+            options:
+                - 'on/jego'
+                - 'ona/jej'
+
+                - 'ono/jego'
+                - 'ono/jej'
+                - 'ono/jejgo'
+                - 'ono/jeno'
+                - 'ono/jenu'
+                - 'vono/vego'
+                - 'ono/eno'
+
+                - 'onu/jenu'
+                - 'onu/jejo'
+                - 'ne/nego'
+
+                - 'oni/ich'
+                - 'one/ich'
+                - 'oni/e/ich'
+                - 'ona/ich'
+                - 'ony/ich'
+                - 'onie/ich'
+
+                - 'onæ/jæ'
+                - 'on/a/jego/jej'
+                - 'onx/jex'
+                - 'on_/je_'
+                - 'on*/je*'
+                - 'onø/jenø'
+
+                - 'ony/jegy'
+                - '''n''/je'
+        -
+            type: 'checkbox'
+            question: 'Jakich form rzeczownikowych używasz?'
+            randomise: true
+            writein: true
+            options:
+                - 'maskulatywy'
+                - 'feminatywy'
+                - 'neutratywy'
+                - 'dukatywy'
+                - 'osobatywy'
+        -
+            type: 'checkbox'
+            question: 'Jakich form grzecznościowych i tytułów używasz?'
+            randomise: true
+            writein: true
+            options:
+                - 'per ty'
+                - 'per wy'
+                - 'pan'
+                - 'pani'
+                - 'państwo'
+                - 'pań'
+                - 'panu'
+        -
+            type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'
             randomise: true
             writein: true
+            instruction: >
+                Przepraszamy, że liczba opcji w tym pytaniu jest tak przytłaczająca…
+                Chcemy zbadać wiele rzeczy.
+                Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie i przy każdej zaznaczyć,
+                czy się z nią identyfikujesz, czy nie.
             options:
                 - 'niebinarn_'
                 - 'niebinie'
@@ -602,67 +668,6 @@ census:
                 - 'trans'
                 - 'transneutral'
                 - 'trigender'
-        -
-            type: 'checkbox'
-            question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
-            randomise: true
-            writein: true
-            options:
-                - 'on/jego'
-                - 'ona/jej'
-
-                - 'ono/jego'
-                - 'ono/jej'
-                - 'ono/jejgo'
-                - 'ono/jeno'
-                - 'ono/jenu'
-                - 'vono/vego'
-                - 'ono/eno'
-
-                - 'onu/jenu'
-                - 'onu/jejo'
-                - 'ne/nego'
-
-                - 'oni/ich'
-                - 'one/ich'
-                - 'oni/e/ich'
-                - 'ona/ich'
-                - 'ony/ich'
-                - 'onie/ich'
-
-                - 'onæ/jæ'
-                - 'on/a/jego/jej'
-                - 'onx/jex'
-                - 'on_/je_'
-                - 'on*/je*'
-                - 'onø/jenø'
-
-                - 'ony/jegy'
-                - '''n''/je'
-        -
-            type: 'checkbox'
-            question: 'Jakich form rzeczownikowych używasz?'
-            randomise: true
-            writein: true
-            options:
-                - 'maskulatywy'
-                - 'feminatywy'
-                - 'neutratywy'
-                - 'dukatywy'
-                - 'osobatywy'
-        -
-            type: 'checkbox'
-            question: 'Jakich form grzecznościowych i tytułów używasz?'
-            randomise: true
-            writein: true
-            options:
-                - 'per ty'
-                - 'per wy'
-                - 'pan'
-                - 'pani'
-                - 'państwo'
-                - 'pań'
-                - 'panu'
 
 redirects:
     - { from: '^/neutratywy$', to: '/s%C5%82owniki' }

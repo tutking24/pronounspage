@@ -55,7 +55,10 @@
                 </div>
             </div>
             <p class="h4">{{q+1}}. {{question.question}}</p>
-            <form>
+            <div v-if="question.instruction" class="alert alert-info">
+                {{question.instruction}}
+            </div>
+            <form @submit.prevent="q++">
                 <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
                     <div class="form-check" v-for="option in question.options">
                         <label class="form-check-label small">
