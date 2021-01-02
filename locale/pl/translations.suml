@@ -945,7 +945,7 @@ census:
         - >
             Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta od %start% do %end%.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
-            By uniknąć tendencyjności, kolejność propozycji jest losowa.
+            By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
