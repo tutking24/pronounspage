@@ -513,7 +513,7 @@ profile:
         defaultPronoun: 'on_'
 
 census:
-    enabled: false
+    enabled: true
     route: 'cenzus'
     edition: '2021'
     start: '2021-01-01T00:00:00+01:00'  # TODO
@@ -526,6 +526,13 @@ census:
             question: 'Ile masz lat?'
         -
             type: 'radio'
+            question: 'Jesteś…'
+            options:
+                - 'osobą niebinarną'
+                - 'osobą cispłciową'
+                - 'binarną osobą transpłciową'
+        -
+            type: 'radio'
             question: 'Gdzie obecnie mieszkasz?'
             options:
                 - 'w Polsce'
@@ -535,6 +542,9 @@ census:
             question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
             randomise: true
             writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
             options:
                 - 'on/jego'
                 - 'ona/jej'
@@ -569,15 +579,56 @@ census:
                 - '''n''/je'
         -
             type: 'checkbox'
+            question: 'Jakich zaimków używasz po angielsku?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="https://en.pronouns.page" target="_blank">na naszej anglojęzycznej stronie</a>.
+            options:
+                - 'he/him'
+                - 'she/her'
+
+                - 'they/them/themselves'
+                - 'them/them/themself'
+                - 'it/its'
+                - 'one/one''s'
+
+                - 'ae/aer'
+                - 'co/cos'
+                - 'e/em/eir'
+                - 'e/em/es'
+                - 'ey/em'
+                - 'fae/faer'
+                - 'hu/hum'
+                - 'ne/nem'
+                - 'ne/nir'
+                - 'per/per'
+                - 's/he/hir'
+                - 'thon/thons'
+                - 've/ver'
+                - 'vi/vir'
+                - 'xe/xem'
+                - 'ze/hir'
+                - 'ze/zir'
+                - 'zhe/zher'
+
+                - 'nie znam angielskiego'
+                - 'nie mam preferencji po angielsku'
+        -
+            type: 'checkbox'
             question: 'Jakich form rzeczownikowych używasz?'
             randomise: true
             writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
             options:
-                - 'maskulatywy'
-                - 'feminatywy'
-                - 'neutratywy'
-                - 'dukatywy'
-                - 'osobatywy'
+                - 'maskulatywy (nauczyciel, partner, pracownik)'
+                - 'feminatywy (nauczycielka, partnerka, pracowniczka)'
+                - 'neutratywy (nauczyciełło, partnerze, pracownicze)'
+                - 'dukatywy (nauczycielu, partneru, pracowniku)'
+                - 'osobatywy (osoba nauczająca, osoba partnerska, osoba pracująca)'
         -
             type: 'checkbox'
             question: 'Jakich form grzecznościowych i tytułów używasz?'
@@ -596,11 +647,15 @@ census:
             question: 'Jakimi słowami opisujesz swoją płeć?'
             randomise: true
             writein: true
-            instruction: >
-                Przepraszamy, że liczba opcji w tym pytaniu jest tak przytłaczająca…
-                Chcemy zbadać wiele rzeczy.
-                Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie i przy każdej zaznaczyć,
-                czy się z nią identyfikujesz, czy nie.
+            instruction:
+                - >
+                    Przepraszamy, że liczba opcji w tym pytaniu jest tak przytłaczająca…
+                    Chcemy zbadać wiele rzeczy.
+                - >
+                    Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie i przy każdej zaznaczyć,
+                    czy się z nią identyfikujesz, czy nie.
+                - >
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki#terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
             options:
                 - 'niebinarn_'
                 - 'niebinie'

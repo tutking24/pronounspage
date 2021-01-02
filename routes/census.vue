@@ -56,7 +56,9 @@
             </div>
             <p class="h4">{{q+1}}. {{question.question}}</p>
             <div v-if="question.instruction" class="alert alert-info">
-                {{question.instruction}}
+                <p v-for="(line, i) in question.instruction" :class="i === question.instruction.length - 1 ? 'mb-0' : ''">
+                    <LinkedText :text="line"/>
+                </p>
             </div>
             <form @submit.prevent="q++">
                 <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
@@ -95,6 +97,12 @@
                 <button class="btn btn-primary" :disabled="!stepValid" @click="q++">
                     <T>census.next</T>
                     <Icon v="arrow-alt-right"/>
+                </button>
+            </div>
+
+            <div v-if="$user() && $user().username === 'andrea'" class="mt-4 btn-group btn-block">
+                <button v-for="(question, i) in questions" :class="['btn', q === i ? 'btn-primary' : 'btn-outline-primary']" :disabled="q === i" @click="q = i">
+                    {{i}}
                 </button>
             </div>
         </template>
