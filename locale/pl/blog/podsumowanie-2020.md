@@ -1,5 +1,7 @@
 # Podsumowanie roku 2020
 
+<small>31.12.2020 | [@andrea](/@andrea)</small>
+
 Cóż to był za rok!
 
 Zaczęło się od małego fanpejdża, dokumentu z kilkunastoma cytatami z książek i od posta na blogu z zarysem kilku tabelek!

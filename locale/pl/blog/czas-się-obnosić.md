@@ -4,7 +4,7 @@
 
 ![](/img/czas-sie-obnosic.jpg)
 
-Przemówienie Sybilli z Wrocławskiego Marszu Równości:
+Przemówienie Sybila z Wrocławskiego Marszu Równości:
 
 „Nadszedł czas się obnosić” - to zdanie, które siedzi w mojej głowie od czasu haniebnych słów prezydenta Polski.
 W swojej kampanii wyborczej odczłowieczył on nas i nazwał ideologią. I nie był to ani początek,
