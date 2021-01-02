@@ -644,7 +644,9 @@ census:
                 - ['they/them/themselves']
                 - ['they/them/themself']
                 - ['it/its']
-                - ['one/one''s']
+                -
+                    - >
+                        one/one's
 
                 - ['ae/aer']
                 - ['co/cos']
@@ -677,7 +679,7 @@ census:
                     Przepraszamy, że liczba opcji w tym pytaniu jest tak przytłaczająca…
                     Chcemy zbadać wiele rzeczy.
                 - >
-                    Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie i przy każdej zaznaczyć,
+                    Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
                     Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki#terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
@@ -687,7 +689,7 @@ census:
                     czytaj jako „niebinarna”, „niebinarne”, itp. w zależności, którą opcję wolisz.
                 - >
                     Wiele etykietek jest zduplikowanych (np. „agender”, „agenderow_”, „apłciow_”)
-                    – chcemy zobaczyć które możliwych form opisujących to samo zjawisko są popularniejsze.
+                    – chcemy zobaczyć które z możliwych form opisujących to samo zjawisko są popularniejsze.
             options:
                 - ['niebinarn_']
                 - ['niebinie']

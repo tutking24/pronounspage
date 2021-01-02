@@ -54,8 +54,8 @@
                     {{q}}/{{questions.length}}
                 </div>
             </div>
-            <p class="h4">{{q+1}}. {{question.question}}</p>
-            <div v-if="question.instruction" class="alert alert-info">
+            <p class="h4 mt-5 mb-3">{{q+1}}. {{question.question}}</p>
+            <div v-if="question.instruction" class="alert alert-info small">
                 <p v-for="(line, i) in question.instruction" :class="i === question.instruction.length - 1 ? 'mb-0' : ''">
                     <LinkedText :text="line"/>
                 </p>
