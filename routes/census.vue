@@ -16,8 +16,8 @@
             <section>
                 <T :params='{
                     questions: questions.length,
-                    start: config.census.start,
-                    end: config.census.end,
+                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
                 }'>census.description</T>
             </section>
 
@@ -25,7 +25,7 @@
                 <Share :title="$t('census.headerLong')"/>
             </section>
 
-            <section v-if="config.census.open">
+            <section v-if="open">
                 <div v-if="finished" class="alert alert-success">
                     <Icon v="badge-check"/>
                     <T>census.finished</T>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-lg" :disabled="!agreement" @click="start">
+                        <button class="btn btn-primary btn-lg" :disabled="!agreement" @click="startSurvey">
                             <T>census.start</T>
                         </button>
                     </div>
@@ -56,7 +56,7 @@
             </div>
             <p class="h4">{{q+1}}. {{question.question}}</p>
             <form>
-                <div v-if="question.type === 'radio'" class="form-group">
+                <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
                     <div class="form-check" v-for="option in question.options">
                         <label class="form-check-label small">
                             <input type="radio" class="form-check-input" v-model="answers[q]" :name="'question' + q" :value="option" required/>
@@ -64,7 +64,7 @@
                         </label>
                     </div>
                 </div>
-                <div v-else-if="question.type === 'checkbox'" class="form-group">
+                <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
                     <div class="form-check" v-for="option in question.options">
                         <label class="form-check-label small">
                             <input type="checkbox" class="form-check-input" v-model="answers[q]" :value="option"/>
@@ -72,7 +72,7 @@
                         </label>
                     </div>
                 </div>
-                <div v-else-if="question.type === 'etxt'" class="form-group">
+                <div v-else-if="question.type === 'text'" class="form-group">
                     <input type="text" class="form-control" v-model="answers[q]" required/>
                 </div>
                 <div v-else-if="question.type === 'number'" class="form-group">
@@ -80,7 +80,7 @@
                 </div>
 
                 <div v-if="question.writein" class="form-group">
-                    <input type="text" class="form-control form-control-sm" v-model="writins[q]"/>
+                    <input type="text" class="form-control form-control-sm" v-model="writins[q]" :placeholder="$t('census.writein')"/>
                 </div>
             </form>
 
@@ -97,6 +97,11 @@
         </template>
 
         <template v-else>
+            <div class="progress my-3">
+                <div class="progress-bar" role="progressbar" :style="`width: ${progress}%`" :aria-valuenow="q" aria-valuemin="0" :aria-valuemax="questions.length">
+                    {{q}}/{{questions.length}}
+                </div>
+            </div>
             <div class="alert alert-success">
                 <Icon v="badge-check"/>
                 <T>census.finished</T>
@@ -107,6 +112,7 @@
 
 <script>
     import {buildDict, head, shuffle} from "../src/helpers";
+    import {DateTime} from "luxon";
 
     export default {
         data() {
@@ -134,6 +140,7 @@
                         i++;
                     }
                 }),
+                DateTime,
             }
         },
         async asyncData({ app, store }) {
@@ -146,7 +153,7 @@
             };
         },
         methods: {
-            start() {
+            startSurvey() {
                 this.q = 0;
             }
         },
@@ -178,7 +185,17 @@
                     return this.answers[this.q] !== '';
                 }
                 return true;
-            }
+            },
+            start() {
+                return DateTime.fromISO(this.config.census.start).toLocal();
+            },
+            end() {
+                return DateTime.fromISO(this.config.census.end).toLocal();
+            },
+            open() {
+                const now = DateTime.utc().setZone(this.config.format.timezone);
+                return now >= this.start && now <= this.end;
+            },
         },
         watch: {
             async q() {
@@ -198,3 +215,16 @@
         },
     };
 </script>
+
+<style lang="scss">
+    @import "../assets/style";
+
+    .multi-column {
+        columns: 2;
+    }
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .multi-column {
+            columns: 3;
+        }
+    }
+</style>

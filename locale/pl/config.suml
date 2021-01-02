@@ -1,5 +1,8 @@
 locale: 'pl'
 
+format:
+    timezone: 'Europe/Warsaw'
+
 header: true
 
 pronouns:
@@ -512,11 +515,15 @@ profile:
 census:
     enabled: false
     route: 'cenzus'
-    open: true
     edition: '2021'
-    start: '2021-03-01'
-    end: '2021-03-31'
+    start: '2021-01-01T00:00:00+01:00'  # TODO
+    end: '2021-03-31T23:59:59+02:00'
     questions:
+        -
+            type: 'number'
+            min: 12
+            max: 120
+            question: 'Ile masz lat?'
         -
             type: 'radio'
             question: 'Gdzie obecnie mieszkasz?'
@@ -524,24 +531,77 @@ census:
                 - 'w Polsce'
                 - 'za granicą'
         -
-            type: 'number'
-            min: 12
-            max: 120
-            question: 'Ile masz lat?'
-        -
             type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'
             randomise: true
             writein: true
             options:
                 - 'niebinarn_'
-                - 'agender'
-                - 'agenderow_'
-                - 'bigender'
-                - 'bigenderow_'
-                - 'enby'
                 - 'niebinie'
+                - 'apłciow_'
+                - 'agenderow_'
+                - 'bigenderow_'
+                - 'kłir'
+                - 'andogyniczn_'
+                - 'aporapłciow_'
+                - 'aporagenderow_'
+                - 'autypłciow_'
+                - 'autygenderow_'
+                - 'demipłciow_'
+                - 'demigenderow_'
+                - 'demidziewczę'
+                - 'demichłopię'
+                - 'maweryczn_'
+                - 'ksenopłciow_'
+                - 'ksenogenderow_'
+                - 'neutralnopłciow_'
+                - 'neutralnogenderow_'
+                - 'nienormatywn_ płciowo'
+                - 'panpłciow_'
+                - 'pangenderow_'
+                - 'płynnopłciow_'
+                - 'płynnogenderow_'
+                - 'zmiennopłciow_'
+                - 'zmiennogenderow_'
+                - 'rozważając_ swoją płeć'
+                - 'transkobiec_'
+                - 'trans kobieta'
+                - 'transmęsk_'
+                - 'trans mężczyzna'
+                - 'transgenderow_'
+                - 'transpłciow_'
+                - 'transneutraln_'
+                - 'tripłciow_'
+                - 'trigenderow_'
+                - 'kobiec_'
+                - 'kobieta'
+                - 'męsk_'
+                - 'mężczyzna'
+
+                - 'nonbinary'
+                - 'enby'
+                - 'agender'
+                - 'bigender'
                 - 'queer'
+                - 'androgyne'
+                - 'aporagender'
+                - 'autygender'
+                - 'demigender'
+                - 'demigirl'
+                - 'demiboy'
+                - 'maverique'
+                - 'xenogender'
+                - 'neutrois'
+                - 'genderqueer'
+                - 'pangender'
+                - 'genderfluid'
+                - 'genderflux'
+                - 'gender questioning'
+                - 'transfeminine'
+                - 'transgender'
+                - 'trans'
+                - 'transneutral'
+                - 'trigender'
         -
             type: 'checkbox'
             question: 'Jakich zaimków i innych form nacechowanych płciowo używasz?'
@@ -550,14 +610,59 @@ census:
             options:
                 - 'on/jego'
                 - 'ona/jej'
+
                 - 'ono/jego'
                 - 'ono/jej'
+                - 'ono/jejgo'
+                - 'ono/jeno'
+                - 'ono/jenu'
+                - 'vono/vego'
+                - 'ono/eno'
+
                 - 'onu/jenu'
+                - 'onu/jejo'
+                - 'ne/nego'
+
+                - 'oni/ich'
+                - 'one/ich'
+                - 'oni/e/ich'
+                - 'ona/ich'
+                - 'ony/ich'
+                - 'onie/ich'
+
+                - 'onæ/jæ'
+                - 'on/a/jego/jej'
+                - 'onx/jex'
+                - 'on_/je_'
+                - 'on*/je*'
+                - 'onø/jenø'
+
+                - 'ony/jegy'
+                - '''n''/je'
+        -
+            type: 'checkbox'
+            question: 'Jakich form rzeczownikowych używasz?'
+            randomise: true
+            writein: true
+            options:
                 - 'maskulatywy'
                 - 'feminatywy'
                 - 'neutratywy'
                 - 'dukatywy'
                 - 'osobatywy'
+        -
+            type: 'checkbox'
+            question: 'Jakich form grzecznościowych i tytułów używasz?'
+            randomise: true
+            writein: true
+            options:
+                - 'per ty'
+                - 'per wy'
+                - 'pan'
+                - 'pani'
+                - 'państwo'
+                - 'pań'
+                - 'panu'
 
 redirects:
     - { from: '^/neutratywy$', to: '/s%C5%82owniki' }

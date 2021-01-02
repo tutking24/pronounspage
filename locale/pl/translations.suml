@@ -943,7 +943,7 @@ census:
             To super, bo nas też! Dlatego chcemy co roku przeprowadzać cenzus, w którym to zbadamy.
             Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
         - >
-            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
+            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta od %start% do %end%.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
             By uniknąć tendencyjności, kolejność propozycji jest losowa.
     agree: >
@@ -960,6 +960,7 @@ census:
     prev: 'Poprzednie pytanie'
     next: 'Następne pytanie'
     replies: 'odpowiedzi'
+    writein: 'Jeśli Twojej odpowiedzi nie ma powyżej, możesz ją wpisać tutaj.'
 
 share: 'Udostępnij'
 
