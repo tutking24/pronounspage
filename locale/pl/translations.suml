@@ -957,10 +957,10 @@ census:
         do przeciwdziałania wandalizmom i spamowi.
         Dane te nie są w stanie zidentyfikować żadnej osoby,
         zostaną użyte wyłącznie w celu zapewnienia unikalności odpowiedzi
-        i usunięte po zamknięciu cenzusu.
+        i usunięte po zamknięciu spisu.
     start: 'Rozpocznij ankietę'
     finished: >
-        Dziękujemy za wzięcie udziału w cenzusie!
+        Dziękujemy za wzięcie udziału w spisie powszechnym!
         Wyniki i wnioski ogłosimy wkrótce {/kontakt=w mediach społecznościowych}.
     prev: 'Poprzednie pytanie'
     next: 'Następne pytanie'
