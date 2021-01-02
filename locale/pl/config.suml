@@ -513,7 +513,7 @@ profile:
         defaultPronoun: 'on_'
 
 census:
-    enabled: false
+    enabled: true
     route: 'cenzus'
     edition: '2021'
     start: '2021-01-01T00:00:00+01:00'  # TODO
@@ -534,9 +534,13 @@ census:
         -
             type: 'radio'
             question: 'Gdzie obecnie mieszkasz?'
+            instruction:
+                - >
+                    Chcemy porównać, jak różni się język używany w kraju od języka używanego na emigracji.
             options:
                 - ['w Polsce']
                 - ['za granicą']
+                - ['nie chcę odpowiadać']
         -
             type: 'checkbox'
             question: 'Jakimi formami mówisz o sobie?'
@@ -556,7 +560,7 @@ census:
                 - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
         -
             type: 'checkbox'
-            question: 'Jak wolisz, by mówiono o Tobie?'
+            question: 'Jak chcesz, by mówiono/pisano o Tobie?'
             randomise: true
             writein: true
             instruction:
@@ -593,10 +597,41 @@ census:
                 - ['onø/jenø', '„onø jest fajnø”, „lubię jø zwierzątko”']
 
                 - ['ony/jegy', '„ony jest fajny”, „lubię jegy zwierzątko”']
-                - ['''n''/je', '„''n'' jest fajn''”, „lubię je'' zwierzątko”']
+                -
+                    - >
+                        'n'/je'
+                    - >
+                        „'n' jest fajn'”, „lubię je' zwierzątko”
         -
             type: 'checkbox'
-            question: 'Jakich zaimków używasz po angielsku?'
+            question: 'Jakich form rzeczownikowych używasz?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
+            options:
+                - ['maskulatywy', 'nauczyciel, partner, pracownik']
+                - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
+                - ['neutratywy', 'nauczyciełło, partnerze, pracownicze']
+                - ['dukatywy', 'nauczycielu, partneru, pracowniku']
+                - ['osobatywy', 'osoba nauczająca, osoba partnerska, osoba pracująca']
+        -
+            type: 'checkbox'
+            question: 'Jakich form grzecznościowych i tytułów chcesz, by używano wobec Ciebie?'
+            randomise: true
+            writein: true
+            options:
+                - ['„per ty”', '= można „per ty” nawet w oficjalnych sytuacjach']
+                - ['„per wy”', '„skądeście przyszli”']
+                - ['pan']
+                - ['pani']
+                - ['państwo']
+                - ['pań']
+                - ['panu']
+        -
+            type: 'checkbox'
+            question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
             randomise: true
             writein: true
             instruction:
@@ -607,7 +642,7 @@ census:
                 - ['she/her']
 
                 - ['they/them/themselves']
-                - ['them/them/themself']
+                - ['they/them/themself']
                 - ['it/its']
                 - ['one/one''s']
 
@@ -629,36 +664,9 @@ census:
                 - ['ze/hir']
                 - ['ze/zir']
                 - ['zhe/zher']
-
+            optionsLast:
                 - ['nie znam / nie używam angielskiego']
                 - ['nie mam preferencji po angielsku']
-        -
-            type: 'checkbox'
-            question: 'Jakich form rzeczownikowych używasz?'
-            randomise: true
-            writein: true
-            instruction:
-                - >
-                    Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
-            options:
-                - ['maskulatywy', 'nauczyciel, partner, pracownik']
-                - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
-                - ['neutratywy', 'nauczyciełło, partnerze, pracownicze']
-                - ['dukatywy', 'nauczycielu, partneru, pracowniku']
-                - ['osobatywy', 'osoba nauczająca, osoba partnerska, osoba pracująca']
-        -
-            type: 'checkbox'
-            question: 'Jakich form grzecznościowych i tytułów używasz?'
-            randomise: true
-            writein: true
-            options:
-                - ['per ty']
-                - ['per wy']
-                - ['pan']
-                - ['pani']
-                - ['państwo']
-                - ['pań']
-                - ['panu']
         -
             type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'

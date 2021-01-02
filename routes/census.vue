@@ -134,7 +134,7 @@
         data() {
             const questions = this.config.census.questions.map(q => {
                 if (q.randomise) {
-                    q.options = shuffle(q.options);
+                    q.options = [...shuffle(q.options), ...(q.optionsLast || [])];
                 }
                 return q;
             });
