@@ -966,6 +966,7 @@ census:
     next: 'Następne pytanie'
     replies: 'odpowiedzi'
     writein: 'Jeśli Twojej odpowiedzi nie ma powyżej, możesz ją wpisać tutaj.'
+    leave: 'Czy na pewno chcesz wyjść? Twoje dotychczasowe odpowiedzi nie zostaną zapisane!'
 
 share: 'Udostępnij'
 

@@ -227,6 +227,18 @@
                 }
             },
         },
+        async beforeRouteLeave (to, from, next) {
+            if (this.q !== null && this.q < this.questions.length) {
+                try {
+                    await this.$confirm(this.$t('census.leave'));
+                } catch {
+                    next(false);
+                    return;
+                }
+            }
+
+            next();
+        },
         head() {
             return head({
                 title: this.$t('census.headerLong'),
