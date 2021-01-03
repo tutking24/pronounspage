@@ -11,7 +11,7 @@ są tworzone przez kolektyw **„Rada Języka Neutralnego”**.
 ## <span class="fal fa-user-friends"></span> Obecny skład
 
  - [@andrea](/@andrea)
- - [@Arczi](/@Arczi)
+ - [@Archie](/@Archie)
  - [@ausir](/@ausir)
  - [@Kafka](/@Kafka)
  - [@Łucja](/@Łucja)

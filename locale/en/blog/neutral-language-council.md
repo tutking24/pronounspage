@@ -12,7 +12,7 @@ are created by the “Neutral Language Council” collective.
 ## <span class="fal fa-user-friends"></span> Current members:
 
  - [@andrea](/@andrea)
- - [@Arczi](/@Arczi)
+ - [@Archie](/@Archie)
  - [@ausir](/@ausir)
  - [@Kafka](/@Kafka)
  - [@Łucja](/@Łucja)
