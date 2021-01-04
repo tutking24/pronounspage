@@ -416,6 +416,19 @@ export class Pronoun {
     static from(data) {
         let extraFields = 1; // description
 
+        if (config.locale === 'pl') {
+            if (['0', '1'].includes(data[data.length - 1])) {
+                data.push(''); // description
+            }
+
+            if (data.length === 22) {
+                data.splice(8, 0, data[8]);
+                data.splice(8, 0, data[8]);
+            } else if (data.length === 23) {
+                data.splice(8, 0, data[8]);
+            }
+        }
+
         if (config.pronouns.plurals) {
             extraFields += 1;
             if (![0, 1].includes(parseInt(data[MORPHEMES.length]))) {
@@ -430,7 +443,7 @@ export class Pronoun {
         }
 
         if (data.length === MORPHEMES.length + extraFields - 1) {
-            data.push('');
+            data.push(''); // description
         }
 
         if (data.length !== MORPHEMES.length + extraFields
