@@ -241,7 +241,7 @@ export class SourceLibrary {
             source.title,
             source.extra,
             source.year,
-            //...source.fragments,
+            ...source.fragments,
             source.comment,
             source.link,
             source.approved ? '' : '__awaiting__',
