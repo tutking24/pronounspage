@@ -193,6 +193,8 @@ sources:
         thanks: 'Dziękujemy za zgłoszenie!'
         another: 'Zgłoś kolejne źródło'
         moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
+        key: 'Klucz'
+        keyInfo: 'Identyfikator do łączenia tekstów między wersjami językowymi i łączenia ze słownikiem'
 
 nouns:
     header: 'Słowniki'

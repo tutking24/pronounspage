@@ -77,6 +77,12 @@
                     <input type="url" id="link" class="form-control" v-model="form.link"
                            maxlength="255"/>
                 </div>
+                <div class="form-group" v-if="$isGranted('sources')">
+                    <label for="key"><T>sources.submit.key</T></label>
+                    <input type="text" id="key" class="form-control" v-model="form.key"
+                           maxlength="255"/>
+                    <p class="small text-muted"><T>sources.submit.keyInfo</T></p>
+                </div>
                 <div class="alert alert-info" v-if="form.base">
                     <Icon v="info-circle"/>
                     <T>nouns.editing</T>
@@ -110,6 +116,7 @@
                     fragments: [],
                     comment: '',
                     link: '',
+                    key: null,
                     base: null,
                 },
 
@@ -136,6 +143,7 @@
                     fragments: [],
                     comment: '',
                     link: '',
+                    key: null,
                     base: null,
                 }
             },
@@ -150,6 +158,7 @@
                     fragments: source.fragments,
                     comment: source.comment,
                     link: source.link,
+                    key: source.key,
                     base: source.id,
                 }
                 this.afterSubmit = false;

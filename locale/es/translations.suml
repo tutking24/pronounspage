@@ -94,6 +94,8 @@ sources:
         thanks: '¡Gracias por contribuir!'
         another: 'Enviar otro'
         moderation: 'Los envíos deben ser aprobados antes de ser publicados.'
+        key: 'Key'  # TODO
+        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
 
 nouns:
     header: 'Diccionario'

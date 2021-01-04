@@ -1,0 +1,5 @@
+-- Up
+
+ALTER TABLE sources ADD COLUMN key TEXT NULL DEFAULT NULL;
+
+-- Down

@@ -99,7 +99,7 @@ function clone(mainObject) {
 }
 
 export class Source {
-    constructor ({id, pronouns, type, author, title, extra, year, fragments = '', comment = null, link = null, submitter = null, approved, base_id = null,}) {
+    constructor ({id, pronouns, type, author, title, extra, year, fragments = '', comment = null, link = null, key = null, submitter = null, approved, base_id = null,}) {
         this.id = id;
         this.pronouns = pronouns ? pronouns.split(';') : [];
         this.type = type;
@@ -110,6 +110,7 @@ export class Source {
         this.fragments = fragments ? fragments.replace(/\|/g, '\n').split('@') : [];
         this.comment = comment;
         this.link = link;
+        this.key = key;
         this.submitter = submitter;
         this.approved = approved;
         this.base_id = base_id;

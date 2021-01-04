@@ -94,6 +94,9 @@ sources:
         thanks: 'Thanks for contributing!'
         another: 'Submit another one'
         moderation: 'Submissions will have to get approved before getting published.'
+        key: 'Key'
+        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
+
 
 nouns:
     header: 'Dictionary'

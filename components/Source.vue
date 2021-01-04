@@ -51,6 +51,11 @@
                     {{p}}
                 </span>
             </li>
+            <li class="list-inline-item" v-if="source.key">
+                <span class="badge badge-primary">
+                    <T>sources.submit.key</T>: {{source.key}}
+                </span>
+            </li>
         </ul>
         <ul v-if="source.fragments.length">
             <li v-for="fragment in source.fragments">
