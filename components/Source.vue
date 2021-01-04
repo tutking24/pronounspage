@@ -1,7 +1,9 @@
 <template>
     <div class="my-2" v-if="!deleted">
-        <Icon :v="source.icon()"/>
-        <strong><template v-if="source.author">{{source.author.replace('^', '')}}</template><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener">{{source.title}}</a><span v-else>{{source.title}}</span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
+        <h3 class="h6">
+            <Icon :v="source.icon()"/>
+            <strong><template v-if="source.author">{{source.author.replace('^', '')}}</template><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener">{{source.title}}</a><span v-else>{{source.title}}</span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
+        </h3>
         <ul class="list-inline" v-if="manage && $isGranted('sources')">
             <li v-if="!source.approved" class="list-inline-item">
                 <span class="badge badge-danger">
@@ -62,6 +64,19 @@
                 <T>quotation.start</T><span v-html="fragment.replace(/\n/g, '<br/>')"></span><T>quotation.end</T>
             </li>
         </ul>
+        <div v-if="source.versions.length" class="my-3">
+            <h4 class="h6"><T>sources.otherVersions</T>:</h4>
+            <ul>
+                <li v-for="version in source.versions">
+                    <h4 class="h6">
+                        <strong>
+                            <a :href="`${locales[version.locale].url}/${version.pronouns[0]}`" target="_blank" rel="noopener">{{locales[version.locale].name}}</a>:
+                        </strong>
+                    </h4>
+                    <Source :source="version"/>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -69,6 +84,7 @@
     import {pronounLibrary} from "../src/data";
 
     export default {
+        name: 'Source',
         props: {
             source: { required: true },
             manage: { type: Boolean },

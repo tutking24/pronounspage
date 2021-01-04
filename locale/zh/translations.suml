@@ -94,6 +94,7 @@ sources:
         moderation: '提交的內容必須先獲得批准才能發布。'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
+    otherVersions: 'In other languages' # TODO
 
 nouns:
     header: '字典'
