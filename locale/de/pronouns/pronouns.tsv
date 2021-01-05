@@ -1,0 +1,32 @@
+key	description	normative	pronoun_n	pronoun_g	pronoun_d	pronoun_a	article_n	article_g	article_d	article_a	demonstrative_n	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+er,er/sein	Maskulinum	TRUE	er	sein	ihm	ihn	der	des	dem	den	dieser	FALSE	FALSE	TRUE
+sie,sie/ihr	Femininum	TRUE	sie	ihr	ihr	sie	die	der	der	die	diese	FALSE	FALSE	TRUE
+es,es/sein	Neutrum	TRUE	es	sein	ihm	es	das	des	dem	das	dieses	FALSE	FALSE	TRUE
+A	Neopronomen "A"	FALSE	A	As	A	A						FALSE	FALSE	FALSE
+dey	Neopronomen "dey"	FALSE	dey	deren/der	denen/demm	demm						FALSE	FALSE	TRUE
+die	Neopronomen "die"	FALSE	die	deren	denen	die						FALSE	FALSE	FALSE
+el	Neopronomen "el"	FALSE	el	ems	em	en						FALSE	FALSE	FALSE
+em	Neopronomen "em"	FALSE	em	ems	em	em						FALSE	FALSE	FALSE
+en	Neopronomen "en"	FALSE	en	sein/e/r, enes	en	en						FALSE	FALSE	FALSE
+eos	Neopronomen "eos"	FALSE	eos	soi	ioi	ios						FALSE	FALSE	FALSE
+ey/em	Neopronomen "ey/em"	FALSE	ey	eys	em(m)	em(m)						FALSE	FALSE	FALSE
+et	Neopronomen "et"	FALSE	et	sien	siem	sierer						FALSE	FALSE	FALSE
+hän	Neopronomen "hän"	FALSE	hän	sir	sim	sin						FALSE	FALSE	FALSE
+hen	Neopronomen "hen"	FALSE	hen	hens	hen	hen						FALSE	FALSE	FALSE
+iks	Neopronomen "iks"	FALSE	iks	ikses	iks	iks						FALSE	FALSE	FALSE
+ind	Neopronomen "ind"	FALSE	ind	indd	inde	ind						FALSE	FALSE	FALSE
+le	Neopronomen "le"	FALSE	le	lein	lir	lich						FALSE	FALSE	FALSE
+per	Neopronomen "per"	FALSE	per	pers	per	per						FALSE	FALSE	FALSE
+sel	Neopronomen "sel"	FALSE	sel	serl	serl	sel						FALSE	FALSE	FALSE
+ser	Neopronomen "ser"	FALSE	ser	ses	sem	sen						FALSE	FALSE	FALSE
+sier	Neopronomen "sier"	FALSE	sier	sier	sier	sier						FALSE	FALSE	FALSE
+sier	Alternative zu "sier"	FALSE	sier	sien	siem	sien						FALSE	FALSE	FALSE
+they	Äquivalent zu englischem "them"	FALSE	they	their	them	them						FALSE	FALSE	FALSE
+vii	Neopronomen "vii"	FALSE	vii	vis	viiv	vii						FALSE	FALSE	FALSE
+x	Neopronomen "x"	FALSE	x	x	x	x						FALSE	FALSE	FALSE
+xier	Neopronomen "xier"	FALSE	xier	xies	xiem	xien						FALSE	FALSE	TRUE
+z/zet	Neopronomen "z/zet"	FALSE	z/zet	zets/zern	zerm	zern						FALSE	FALSE	FALSE
+er_sie	Neopronomen "er_sie"	FALSE	er_sie	sein_ihr	ihm_ihr	ihn_sie	der_die	des_der	dem_der	den_die	diese_r	FALSE	FALSE	FALSE
+er*sie	Neopronomen "er*sie"	FALSE	er*sie	sein*ihr	ihm*ihr	ihn*sie	der*die	des*der	dem*der	den*die	diese*r	FALSE	FALSE	FALSE
+er:sie	Neopronomen "er:sie"	FALSE	er:sie	sein:ihr	ihm:ihr	ihn:sie	der:die	des:der	dem:der	den:die	diese:r	FALSE	FALSE	FALSE
+ersie	Neopronomen "ersie"	FALSE	ersie	seinihr	ihmihr	ihnsie	derdie	desder	demder	dendie	dieseer	FALSE	FALSE	FALSE
