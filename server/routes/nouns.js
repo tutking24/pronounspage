@@ -3,7 +3,7 @@ import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
-import {isTroll} from "../../src/helpers";
+import {buildDict, isTroll} from "../../src/helpers";
 
 const translations = loadSuml('translations');
 
@@ -23,22 +23,45 @@ const approve = async (db, id) => {
     `);
 }
 
+const addVersions = async (req, nouns) => {
+    const keys = new Set();
+    nouns.filter(s => !!s && s.sources)
+        .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + k + `'`)));
+
+    const sources = await req.db.all(SQL`
+        SELECT s.*, u.username AS submitter FROM sources s
+        LEFT JOIN users u ON s.submitter_id = u.id
+        WHERE s.locale == ${req.config.locale}
+        AND s.deleted = 0
+        AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
+        AND s.key IN (`.append([...keys].join(',')).append(SQL`)
+    `));
+
+    const sourcesMap = {};
+    sources.forEach(s => sourcesMap[s.key] = s)
+
+    return nouns.map(n => {
+        n.sourcesData = (n.sources ? n.sources.split(',') : []).map(s => sourcesMap[s]);
+        return n;
+    });
+};
+
 const router = Router();
 
 router.get('/nouns', async (req, res) => {
-    return res.json(await req.db.all(SQL`
+    return res.json(await addVersions(req, await req.db.all(SQL`
         SELECT n.*, u.username AS author FROM nouns n
         LEFT JOIN users u ON n.author_id = u.id
         WHERE n.locale = ${req.config.locale}
         AND n.deleted = 0
         AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
         ORDER BY n.approved, n.masc
-    `));
+    `)));
 });
 
 router.get('/nouns/search/:term', async (req, res) => {
     const term = '%' + req.params.term + '%';
-    return res.json(await req.db.all(SQL`
+    return res.json(await addVersions(req, await req.db.all(SQL`
         SELECT n.*, u.username AS author FROM nouns n
         LEFT JOIN users u ON n.author_id = u.id
         WHERE n.locale = ${req.config.locale}
@@ -46,7 +69,7 @@ router.get('/nouns/search/:term', async (req, res) => {
         AND n.deleted = 0
         AND (n.masc like ${term} OR n.fem like ${term} OR n.neutr like ${term} OR n.mascPl like ${term} OR n.femPl like ${term} OR n.neutrPl like ${term})
         ORDER BY n.approved, n.masc
-    `));
+    `)));
 });
 
 router.post('/nouns/submit', async (req, res) => {
@@ -56,11 +79,12 @@ router.post('/nouns/submit', async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, approved, base_id, locale, author_id)
+        INSERT INTO nouns (id, masc, fem, neutr, mascPl, femPl, neutrPl, sources, approved, base_id, locale, author_id)
         VALUES (
             ${id},
             ${req.body.masc.join('|')}, ${req.body.fem.join('|')}, ${req.body.neutr.join('|')},
             ${req.body.mascPl.join('|')}, ${req.body.femPl.join('|')}, ${req.body.neutrPl.join('|')},
+            ${req.body.sources || null},
             0, ${req.body.base}, ${req.config.locale}, ${req.user ? req.user.id : null}
         )
     `);

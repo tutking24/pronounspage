@@ -68,6 +68,10 @@
                     </tbody>
                 </table>
             </div>
+            <div v-if="$isGranted('sources')" class="form-group">
+                <label><strong><T>sources.referenced</T>:</strong></label>
+                <ListInput v-model="form.sources"/>
+            </div>
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
                 <T>nouns.editing</T>
@@ -128,6 +132,7 @@
                     mascPl: this.config.nouns.pluralsRequired ? [''] : [],
                     femPl: this.config.nouns.pluralsRequired ? [''] : [],
                     neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    sources: [],
                     base: null,
                 },
                 submitting: false,
@@ -151,6 +156,7 @@
                     mascPl: this.config.nouns.pluralsRequired ? [''] : [],
                     femPl: this.config.nouns.pluralsRequired ? [''] : [],
                     neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
+                    sources: [],
                     base: null,
                 };
                 this.templateVisible = false;
@@ -164,6 +170,7 @@
                     mascPl: word.mascPl,
                     femPl: word.femPl,
                     neutrPl: word.neutrPl,
+                    sources: word.sources,
                     base: word.id,
                 }
                 this.afterSubmit = false;

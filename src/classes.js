@@ -554,7 +554,7 @@ export class PronounLibrary {
 }
 
 export class Noun {
-    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, approved = true, base_id = null, author = null}) {
+    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, sources = null, sourcesData = [], approved = true, base_id = null, author = null}) {
         this.id = id;
         this.masc = masc.split('|');
         this.fem = fem.split('|');
@@ -562,6 +562,8 @@ export class Noun {
         this.mascPl = mascPl ? mascPl.split('|') : [];
         this.femPl = femPl ? femPl.split('|') : [];
         this.neutrPl = neutrPl ? neutrPl.split('|') : [];
+        this.sources = sources ? sources.split(',') : [];
+        this.sourcesData = sourcesData.map(s => new Source(s));
         this.approved = !!approved;
         this.base = base_id;
         this.author = author;

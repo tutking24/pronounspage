@@ -97,6 +97,7 @@ sources:
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
     otherVersions: 'In other languages' # TODO
+    referenced: 'Examples of use' # TODO
 
 nouns:
     header: 'Wörterbuch'

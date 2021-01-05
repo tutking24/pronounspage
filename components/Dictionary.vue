@@ -74,6 +74,15 @@
                             </li>
                         </ul>
                     </small>
+
+                    <div v-if="s.el.sourcesData.length" class="div-three-columns">
+                        <p><strong><T>sources.referenced</T>:</strong></p>
+                        <ul class="list-unstyled">
+                            <li v-for="source in s.el.sourcesData">
+                                <Source :source="source"/>
+                            </li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
                     <ul class="list-singular">
@@ -374,5 +383,9 @@
                 display: inline;
             }
         }
+    }
+
+    .div-three-columns {
+        width: 300%;
     }
 </style>

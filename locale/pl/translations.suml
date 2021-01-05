@@ -196,6 +196,7 @@ sources:
         key: 'Klucz'
         keyInfo: 'Identyfikator do łączenia tekstów między wersjami językowymi i łączenia ze słownikiem'
     otherVersions: 'W innych językach'
+    referenced: 'Przykłady użycia'
 
 nouns:
     header: 'Słowniki'
