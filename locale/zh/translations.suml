@@ -94,6 +94,7 @@ sources:
         moderation: '提交的內容必須先獲得批准才能發布。'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
+        images: 'Images' # TODO
     otherVersions: 'In other languages' # TODO
     referenced: 'Examples of use' # TODO
 
@@ -445,6 +446,13 @@ localise:
     short: 'Adding language versions'
     long: 'Want to create a new language version? Check out'
     longLink: 'this manual!'
+
+images:
+    upload:
+        instruction: 'Click here or drag your pics here'  # TODO
+
+error:
+    generic: 'Something went wrong, please try again…'  # TODO
 
 flags:
     Abrosexual: '嫩性戀'

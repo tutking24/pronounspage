@@ -77,6 +77,10 @@
                     <input type="url" id="link" class="form-control" v-model="form.link"
                            maxlength="255"/>
                 </div>
+                <div class="form-group">
+                    <label><T>sources.submit.images</T></label>
+                    <ImageWidget v-model="form.images" multiple/>
+                </div>
                 <div class="form-group" v-if="$isGranted('sources')">
                     <label for="key"><T>sources.submit.key</T></label>
                     <input type="text" id="key" class="form-control" v-model="form.key"
@@ -115,6 +119,7 @@
                     year: '',
                     fragments: [],
                     comment: '',
+                    images: [],
                     link: '',
                     key: null,
                     base: null,
@@ -142,6 +147,7 @@
                     year: '',
                     fragments: [],
                     comment: '',
+                    images: [],
                     link: '',
                     key: null,
                     base: null,
@@ -157,6 +163,7 @@
                     year: source.year,
                     fragments: source.fragments,
                     comment: source.comment,
+                    images: source.images,
                     link: source.link,
                     key: source.key,
                     base: source.id,

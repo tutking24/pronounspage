@@ -195,6 +195,7 @@ sources:
         moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
         key: 'Klucz'
         keyInfo: 'Identyfikator do łączenia tekstów między wersjami językowymi i łączenia ze słownikiem'
+        images: 'Obrazki'
     otherVersions: 'W innych językach'
     referenced: 'Przykłady użycia'
 

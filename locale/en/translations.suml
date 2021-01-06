@@ -96,6 +96,7 @@ sources:
         moderation: 'Submissions will have to get approved before getting published.'
         key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
+        images: 'Images'
     otherVersions: 'In other languages'
     referenced: 'Examples of use'
 

@@ -70,12 +70,13 @@ router.get('/sources/:id', async (req, res) => {
 router.post('/sources/submit', async (req, res) => {
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, submitter_id, base_id)
+        INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, submitter_id, base_id)
         VALUES (
             ${id}, ${req.config.locale}, ${req.body.pronouns.join(';')},
             ${req.body.type}, ${req.body.author}, ${req.body.title}, ${req.body.extra}, ${req.body.year},
-            ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link}, ${req.body.key || null},
-            ${req.user ? req.user.id : null}, ${req.body.base}  
+            ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link},
+            ${req.body.key || null}, ${req.body.images || null},
+            ${req.user ? req.user.id : null}, ${req.body.base}
         )
     `);
 

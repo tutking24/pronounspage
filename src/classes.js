@@ -104,6 +104,7 @@ export class Source {
              comment = null, link = null,
              submitter = null, approved, base_id = null,
              key = null, versions = [], locale = config.locale,
+             images = null,
     }) {
         this.id = id;
         this.pronouns = pronouns ? pronouns.split(';') : [];
@@ -121,6 +122,7 @@ export class Source {
         this.key = key;
         this.versions = versions.map(v => new Source(v));
         this.locale = locale;
+        this.images = images ? images.split(',') : [];
     }
 
     static get TYPES() {

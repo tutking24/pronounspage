@@ -41,6 +41,7 @@
                 if (!fileList.length) {
                     return;
                 }
+                this.drag = false;
                 const formData = new FormData();
                 for (let file of fileList) {
                     formData.append(fieldName, file, file.name);
