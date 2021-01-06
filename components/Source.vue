@@ -68,10 +68,16 @@
             </li>
         </ul>
         <div v-if="source.versions.length" class="my-3">
-            <h4 class="h6"><T>sources.otherVersions</T>:</h4>
-            <ul>
+            <p>
+                <button :class="['btn', versionsShown ? 'btn-primary' : 'btn-outline-primary', 'btn-sm']" @click="versionsShown = !versionsShown">
+                    <Icon v="language"/>
+                    <T>sources.otherVersions</T>
+                    <Icon :v="versionsShown ? 'caret-up' : 'caret-down'"/>
+                </button>
+            </p>
+            <ul v-if="versionsShown">
                 <li v-for="version in source.versions">
-                    <h4 class="h6">
+                    <h4 class="h6 mb-2">
                         <strong>
                             <a :href="`${locales[version.locale].url}/${version.pronouns[0]}`" target="_blank" rel="noopener">{{locales[version.locale].name}}</a>:
                         </strong>
@@ -96,6 +102,7 @@
             return {
                 pronounLibrary,
                 deleted: false,
+                versionsShown: false,
             }
         },
         methods: {
