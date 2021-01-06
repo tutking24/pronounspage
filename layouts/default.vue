@@ -9,6 +9,7 @@
             <Footer/>
         </div>
         <Confirm ref="confirm"/>
+        <Lightbox/>
     </div>
 </template>
 

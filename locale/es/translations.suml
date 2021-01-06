@@ -467,6 +467,13 @@ localise:
     long: '¿Quieres añadir una versión en otra lengua? ¡Consulta'
     longLink: 'este manual!'
 
+images:
+    upload:
+        instruction: 'Click here or drag your pics here'  # TODO
+
+error:
+    generic: 'Something went wrong, please try again…'  # TODO
+
 flags:
     Abrosexual: 'Abrosexual'
     Achillean: 'Aquilean{inflection}'

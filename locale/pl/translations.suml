@@ -1039,6 +1039,13 @@ localise:
     long: 'Chcesz dodać nową wersję językową? Informacje znajdziesz w'
     longLink: 'tej instrukcji.'
 
+images:
+    upload:
+        instruction: 'Kliknij tutaj lub upuść tu obrazek'
+
+error:
+    generic: 'Coś poszło nie tak, spróbuj ponownie…'
+
 flags:
     Abrosexual: 'Abroseksualn{adjective_n}'
     Achillean: 'Achillejs{adjective_n_k}'

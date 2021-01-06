@@ -458,6 +458,14 @@ localise:
     short: 'Adding language versions'
     long: 'Want to create a new language version? Check out'
     longLink: 'this manual!'
+
+images:
+    upload:
+        instruction: 'Click here or drag your pics here'  # TODO
+
+error:
+    generic: 'Something went wrong, please try again…'  # TODO
+
 flags:
     Abrosexual: 'Abrosexual'
     Achillean: 'Aquilean{inflection}'

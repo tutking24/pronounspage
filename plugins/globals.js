@@ -4,6 +4,7 @@ import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
 
 export default ({ app, store }) => {
+    Vue.prototype.$eventHub = new Vue();
     Vue.prototype.$base = process.env.BASE_URL;
     Vue.prototype.$t = t;
     Vue.prototype.$translateForPronoun = (str, pronoun) =>

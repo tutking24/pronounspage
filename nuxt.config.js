@@ -135,6 +135,7 @@ export default {
         LOCALE: config.locale,
         LOCALES: locales,
         FLAGS: buildFlags(),
+        BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
     },
     serverMiddleware: ['~/server/index.js'],
     axios: {

@@ -48,6 +48,8 @@ app.use(require('./routes/terms').default);
 app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
 
+app.use(require('./routes/images').default);
+
 export default {
     path: '/api',
     handler: app,

@@ -459,3 +459,10 @@ localise:
     short: 'Adding language versions'
     long: 'Want to create a new language version? Check out'
     longLink: 'this manual!'
+
+images:
+    upload:
+        instruction: 'Click here or drag your pics here'
+
+error:
+    generic: 'Something went wrong, please try again…'
