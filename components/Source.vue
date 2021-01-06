@@ -1,7 +1,7 @@
 <template>
     <div class="my-2" v-if="!deleted">
         <div v-if="source.images.length" class="float-right">
-            <ImageThumb v-for="image in source.images" :id="image" class="m-2"/>
+            <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2"/>
         </div>
         <h3 class="h6">
             <Icon :v="source.icon()"/>
