@@ -1,7 +1,7 @@
 <template>
     <div :class="['lightbox-wrapper', currentUrl === null ? 'd-none' : '']" ref="wrapper" @click.self="hide">
-        <div :class="['lightbox-inner', center ? 'align-items-center' : '']" ref="inner" @click.self="hide">
-            <img class="lightbox-image" :src="currentUrl" ref="image" @load="loaded">
+        <div :class="['lightbox-inner', 'align-items-center']" ref="inner" @click.self="hide">
+            <img class="lightbox-image" :src="currentUrl" ref="image">
         </div>
         <span class="lightbox-menu">
             <span class="lightbox-close fal fa-times" @click="hide"></span>
@@ -14,7 +14,6 @@
         data() {
             return {
                 currentUrl: null,
-                center: false,
             };
         },
         mounted() {
@@ -23,13 +22,6 @@
             if (!process.client) {
                 return;
             }
-
-            document.addEventListener('resize', e => {
-                if (!this.currentUrl) {
-                    return;
-                }
-                this.center = this.$refs.image.offsetHeight < this.$refs.inner.offsetHeight;
-            });
 
             document.body.addEventListener('keyup', e => {
                 if (!this.currentUrl) {
@@ -52,12 +44,6 @@
             hide() {
                 this.currentUrl = null;
                 this.$refs.inner.blur();
-                this.center = false;
-            },
-            loaded() {
-                if (this.$refs.image.offsetHeight < this.$refs.inner.offsetHeight) {
-                    this.center = true;
-                }
             },
         },
     };
@@ -90,6 +76,7 @@
 
             img {
                 max-width: 100%;
+                max-height: 100%;
             }
         }
 
