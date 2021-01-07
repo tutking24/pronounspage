@@ -58,7 +58,6 @@ router.post('/images/upload', multer({limits: {fileSize: 5 * 1024 * 1024}}).any(
             canvas.getContext('2d').drawImage(image, 0, 0);
 
             if (square) {
-                console.log('crop to square');
                 canvas = cropToSquare(canvas);
             }
 

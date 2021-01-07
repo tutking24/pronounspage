@@ -7,3 +7,5 @@ Ist das {demonstrative_n}, {article_n} dich angerufen hat?	Sind das {demonstrati
 Ist das {demonstrative_n}, {article_g} Kanninchen du gesehen hast?	Sind das {demonstrative_n}, {article_g} Kanninchen du gesehen hast?	FALSE
 Ist das {demonstrative_n}, {article_d} mein Buch gefählt?	Sind das {demonstrative_n}, {article_d} mein Buch gefählt?	FALSE
 Ist das {demonstrative_n}, {article_a} du magst?	Sind das {demonstrative_n}, {article_a} du magst?	FALSE
+Mein{possesive_object} Freund{noun} hat mich gerade angerufen.	Mein{possesive_object} Freund{noun} haben mich gerade angerufen.	FALSE
+
