@@ -59,7 +59,7 @@
                 </span>
             </li>
         </ul>
-        <div v-if="source.images.length" class="float-right">
+        <div v-if="source.images.length" class="source-images">
             <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2"/>
         </div>
         <ul v-if="source.fragments.length">
@@ -127,3 +127,20 @@
         },
     }
 </script>
+
+<style lang="scss" scoped>
+    @import "assets/variables";
+
+    @include media-breakpoint-down('sm', $grid-breakpoints) {
+        .source-images {
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .source-images {
+            float: right;
+            max-width: 18rem;
+        }
+    }
+</style>

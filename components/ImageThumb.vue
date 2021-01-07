@@ -1,5 +1,5 @@
 <template>
-    <a :href="getUrl('big')" target="_blank" rel="noopener"
+    <a :href="getUrl('big')" target="_blank" rel="noopener" class="d-inline-block"
        @click.prevent="$eventHub.$emit('lightbox', getUrl('big'))"
     >
         <img :src="getUrl('thumb')" class="border rounded-lg"/>
