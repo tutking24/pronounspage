@@ -1,6 +1,6 @@
 <template>
     <div class="form-group">
-        <ul class="list-unstyled">
+        <draggable tag="ul" v-model="images" handle="img" ghostClass="ghost" @end="$emit('input', images)" class="list-unstyled">
             <li v-for="image in images" class="mb-4">
                 <ImageThumb :id="image"/>
                 <a href="#" @click.prevent="removeFile(image)" class="small">
@@ -8,13 +8,18 @@
                     <T>crud.remove</T>
                 </a>
             </li>
-        </ul>
+        </draggable>
         <ImageUploader :multiple="multiple" :name="name" @uploaded="addFiles"/>
     </div>
 </template>
 
 <script>
+    import draggable from 'vuedraggable'
+
     export default {
+        components: {
+            draggable,
+        },
         props: {
             value: {},
             multiple: {type: Boolean},
