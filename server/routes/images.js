@@ -42,7 +42,7 @@ const scaleDownTo = (image, size) => {
 
 const router = Router();
 
-router.post('/images/upload', multer({limits: {fileSize: 5 * 1024 * 1024}}).any('images[]', 12), async (req, res) => {
+router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any('images[]', 12), async (req, res) => {
     const s3 = new S3(awsConfig);
 
     const ids = [];
