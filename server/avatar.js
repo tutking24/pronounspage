@@ -2,7 +2,7 @@ import {fallbackAvatar, gravatar, now} from "../src/helpers";
 import SQL from "sql-template-strings";
 
 export default async (db, user) => {
-    if (user.avatarSource.startsWith('https://')) {
+    if (user.avatarSource && user.avatarSource.startsWith('https://')) {
         return user.avatarSource;
     } else if (user.avatarSource === 'gravatar') {
         return gravatar(user);
