@@ -464,6 +464,7 @@ localise:
 images:
     upload:
         instruction: 'Click here or drag your pics here'
+        instructionShort: 'Upload'
 
 error:
     generic: 'Something went wrong, please try again…'

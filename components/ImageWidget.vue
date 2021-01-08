@@ -9,7 +9,7 @@
                 </a>
             </li>
         </draggable>
-        <ImageUploader :multiple="multiple" :name="name" @uploaded="addFiles"/>
+        <ImageUploader :multiple="multiple" :name="name" form @uploaded="addFiles"/>
     </div>
 </template>
 

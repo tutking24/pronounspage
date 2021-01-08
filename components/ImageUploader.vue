@@ -1,6 +1,6 @@
 <template>
     <div
-          :class="['uploader-container', 'p-2', 'form-control', drag ? 'drag' : '']"
+          :class="['uploader-container', form ? 'form-control p-2' : 'btn btn-outline-primary btn-sm', drag ? 'drag' : '']"
           @dragover="drag=true" @dragleave="drag=false"
     >
         <input type="file"
@@ -9,16 +9,16 @@
                :disabled="uploading"
                @change="filesChange($event.target.name, $event.target.files)"
                accept="image/*">
-        <p v-if="errorMessage" class="text-danger">
+        <p v-if="errorMessage" class="text-danger mb-0">
             <Icon v="exclamation-circle"/>
             <T>{{errorMessage}}</T>
         </p>
-        <p v-else-if="uploading">
+        <p v-else-if="uploading" class="mb-0">
             <Spinner/>
         </p>
-        <p v-else>
+        <p v-else class="mb-0">
             <Icon v="upload"/>
-            <T>images.upload.instruction</T>
+            <T>images.upload.instruction{{small ? 'Short' : ''}}</T>
         </p>
     </div>
 </template>
@@ -28,6 +28,8 @@
         props: {
             multiple: {type: Boolean},
             name: {'default': 'images'},
+            form: {type: Boolean},
+            small: {type: Boolean}
         },
         data() {
             return {
@@ -73,8 +75,10 @@
     .uploader-container {
         position: relative;
         cursor: pointer;
-        &:hover, &.drag {
-            background: lighten($primary, 50%);
+        &.form-control {
+            &:hover, &.drag {
+                background: lighten($primary, 50%);
+            }
         }
     }
 

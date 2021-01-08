@@ -7,16 +7,17 @@
                         <Avatar :user="$user()"/>
                     </p>
                     <div class="mb-2">
-                        <div v-if="$user().avatarSource !== 'gravatar'" class="mt-3">
-                            Gravatar:
-                            <a href="#" @click.prevent="setAvatar('gravatar')">
-                                <Avatar :user="$user()" :src="gravatar($user())" dsize="2rem"/>
-                            </a>
-                        </div>
-                        <div v-else>
+                        <div v-if="$user().avatarSource === 'gravatar'" class="mt-3">
                             <a href="https://gravatar.com" target="_blank" rel="noopener" class="small">
                                 <Icon v="external-link"/>
                                 <T>user.avatar.change</T>
+                                Gravatar
+                            </a>
+                        </div>
+                        <div v-else class="mt-3">
+                            Gravatar:
+                            <a href="#" @click.prevent="setAvatar('gravatar')">
+                                <Avatar :user="$user()" :src="gravatar($user())" dsize="2rem"/>
                             </a>
                         </div>
                         <div v-if="$user().avatarSource">
@@ -25,6 +26,7 @@
                                 <T>crud.remove</T>
                             </a>
                         </div>
+                        <ImageUploader small @uploaded="uploaded"/>
                     </div>
                     <p v-if="$isGranted('panel') || $isGranted('users')">
                         <nuxt-link to="/admin" class="badge badge-primary"><T>user.account.admin</T></nuxt-link>
@@ -214,6 +216,9 @@
 
                 this.$store.commit('setToken', response.token);
                 this.$cookies.set('token', this.$store.state.token);
+            },
+            async uploaded(ids) {
+                await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-thumb.png`);
             },
         },
     }

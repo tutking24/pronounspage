@@ -1043,6 +1043,7 @@ localise:
 images:
     upload:
         instruction: 'Kliknij tutaj lub upuść tu obrazek'
+        instructionShort: 'Wgraj'
 
 error:
     generic: 'Coś poszło nie tak, spróbuj ponownie…'

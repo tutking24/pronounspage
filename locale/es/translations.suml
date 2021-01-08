@@ -471,6 +471,7 @@ localise:
 images:
     upload:
         instruction: 'Click here or drag your pics here'  # TODO
+        instructionShort: 'Upload' # TODO
 
 error:
     generic: 'Something went wrong, please try again…'  # TODO
