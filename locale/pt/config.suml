@@ -85,40 +85,11 @@ contact:
             icon: 'envelope'
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
-    authors:
-        -
-            name: 'The “Neutral Language Council” collective'
-            link: '/blog/neutral-language-council'
-            group: true
-        -
-            name: 'Andrea'
-            profile: 'andrea'
-            pronouns: 'elle'
-            pronounsLink: '/elle'
-            website: 'https://avris.it'
-            twitter: 'AvrisIT'
-            mail: 'andrea@avris.it'
-            areas:
-                code: 'https://gitlab.com/Avris/Zaimki'
-        -
-            name: 'Paweł Dembowski'
-            profile: 'Ausir'
-            pronouns: 'él'
-            pronounsLink: '/él'
-            twitter: 'VaultAusir'
-            mail: 'pawel.dembowski@gmail.com'
-            areas:
-                idioma: ~
-                fuentes: '/fuentes'
-        -
-            name: 'Dante'
-            profile: 'AkerAdardun'
-            pronouns: 'él'
-            pronounsLink: '/él'
-            twitter: 'AkerAdardun'
-            mail: 'danteu2998@gmail.com'
-            areas:
-                traducción: ~
+    team:
+        enabled: true
+        route: 'team'  # TODO
+        name: 'The “Neutral Language Council” collective'  # TODO
+    blog: {}
 
 support:
     enabled: true

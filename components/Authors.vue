@@ -1,30 +1,39 @@
 <template>
-    <ul :class="{'list-unstyled': !expanded}">
-        <li v-for="author in config.contact.authors" class="mb-2">
-            <Icon v-if="!expanded" :v="author.group ? 'users' : 'user'"/>
-            <a :href="author.link" target="_blank" rel="noopener">
-                {{ author.name }}
-            </a>
-            <nuxt-link v-if="author.profile" :to="`/@${author.profile}`" class="badge badge-light border">
-                @{{author.profile}}
+    <ul class="list-unstyled">
+        <li class="mb-2">
+            <Icon v="collective-logo.svg"/>
+            <nuxt-link :to="`/${config.contact.team.route}`">
+                <T>contact.team.name</T>
             </nuxt-link>
-            <br v-if="author.areas && Object.keys(author.areas).length"/>
-            <small v-for="(link, area, index) in author.areas">
-                <Spaceless>
-                    <nuxt-link v-if="link && link.indexOf('/') === 0" :to="link">{{ area.replace(/_/g, ' ') }}</nuxt-link>
-                    <a v-else-if="link" :href="link" target="_blank" rel="noopener">{{ area.replace(/_/g, ' ') }}</a>
-                    <span v-else>{{ area.replace(/_/g, ' ') }}</span>
-                    <span v-if="index < Object.keys(author.areas).length - 1">, </span>
-                </Spaceless>
-            </small>
         </li>
+        <li v-if="authors === undefined">
+            <Spinner/>
+        </li>
+        <template v-else>
+            <li v-for="author in authors" class="mb-2">
+                <Icon v="user"/>
+                {{ author.footerName }}
+                <nuxt-link :to="`/@${author.username}`" class="badge badge-light border">
+                    @{{author.username}}
+                </nuxt-link>
+                <br/>
+                <small>
+                    {{author.footerAreas.replace(/,/g, ', ')}}
+                </small>
+            </li>
+        </template>
     </ul>
 </template>
 
 <script>
     export default {
-        props: {
-            expanded: { type: Boolean }
+        data() {
+            return {
+                authors: undefined,
+            }
+        },
+        async mounted() {
+            this.authors = await this.$axios.$get(`/admin/list/footer`);
         },
     }
 </script>

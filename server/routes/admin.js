@@ -2,9 +2,55 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
-import {now, sortByValue} from "../../src/helpers";
+import {buildDict, now, sortByValue} from "../../src/helpers";
+import locales from '../../src/locales';
 
 const router = Router();
+
+router.get('/admin/list', async (req, res) => {
+    const admins = await req.db.all(SQL`
+        SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
+        FROM users u
+        LEFT JOIN profiles p ON p.userId = u.id
+        WHERE p.teamName IS NOT NULL AND p.teamName != ''
+        ORDER BY RANDOM()
+    `);
+
+    const adminsGroupped = buildDict(function*() {
+        yield [req.config.locale, []];
+        for (let [locale, , , published] of locales) {
+            if (locale !== req.config.locale && published) {
+                yield [locale, []];
+            }
+        }
+        yield ['', []];
+    });
+    for (let admin of admins) {
+        admin.avatar = await avatar(req.db, admin);
+        delete admin.id;
+        delete admin.email;
+
+        if (adminsGroupped[admin.locale] !== undefined) {
+            adminsGroupped[admin.locale].push(admin);
+        } else {
+            adminsGroupped[''].push(admin);
+        }
+    }
+
+    return res.json(adminsGroupped);
+});
+
+router.get('/admin/list/footer', async (req, res) => {
+    return res.json(await req.db.all(SQL`
+        SELECT u.username, p.footerName, p.footerAreas, p.locale
+        FROM users u
+        LEFT JOIN profiles p ON p.userId = u.id
+        WHERE p.locale = ${req.config.locale}
+          AND p.footerName IS NOT NULL AND p.footerName != ''
+          AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
+        ORDER BY RANDOM()
+    `));
+});
 
 router.get('/admin/users', async (req, res) => {
     if (!req.isGranted('users')) {

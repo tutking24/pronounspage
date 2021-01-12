@@ -181,6 +181,7 @@
                         link: '/' + this.config.contact.route,
                         icon: 'comment-alt-smile',
                         text: this.$t('contact.header'),
+                        extra: ['/' + this.config.contact.team.route],
                     });
                 }
 

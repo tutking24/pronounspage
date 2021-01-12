@@ -1,5 +1,7 @@
 # How to create a new language version of Pronouns.page
 
+<small>06.12.2020 | [@andrea](/@andrea)</small>
+
 So you're interested in helping us extend the platform to your native language? Awesome! 🥰
 
 But how do I do that, you ask?

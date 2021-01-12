@@ -134,7 +134,6 @@
             return head({
                 title: this.$t('names.headerLong'),
                 description: this.$t('names.description'),
-                banner: 'bannerNouns.png',
             });
         },
     }

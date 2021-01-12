@@ -47,6 +47,9 @@ const fetchProfiles = async (db, username, self) => {
             words: JSON.parse(profile.words),
             avatar: await avatar(db, profile),
             birthday: self ? profile.birthday : undefined,
+            teamName: profile.teamName,
+            footerName: profile.footerName,
+            footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
         };
     }
     return p;
@@ -64,10 +67,13 @@ router.post('/profile/save', async (req, res) => {
     }
 
     await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
-    await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active)
+    await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active, teamName, footerName, footerAreas)
         VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)},
-                ${JSON.stringify(req.body.words)}, 1
+                ${JSON.stringify(req.body.words)}, 1,
+                ${req.isGranted('users') ? req.body.teamName || null : ''},
+                ${req.isGranted('users') ? req.body.footerName || null : ''},
+                ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
     )`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));

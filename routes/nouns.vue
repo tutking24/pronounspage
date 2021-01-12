@@ -53,7 +53,6 @@
             return head({
                 title: this.$t('nouns.headerLonger'),
                 description: this.$t('nouns.description'),
-                banner: this.config.locale === 'pl' ? 'bannerNouns.png' : undefined,
             });
         },
     }

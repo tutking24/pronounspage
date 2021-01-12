@@ -14,11 +14,48 @@
             </div>
         </div>
 
-        <section>
-            <OpinionLegend/>
-        </section>
-
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
+            <div v-if="$isGranted('users')" class="border border-primary rounded p-4">
+                <h3 class="h4 mb-3">
+                    <Icon v="user-cog"/>
+                    Admin section
+                </h3>
+
+                <p class="small text-muted mb-0">
+                    This will be shown on the “Team” page.
+                    If you leave it empty, you won't show up there (for this language version).
+                    You can use a different display name in different language versions.
+                </p>
+
+                <div class="form-group">
+                    <label for="teamName">Team page display name:</label>
+                    <input class="form-control" name="teamName" maxlength="36" v-model="teamName"/>
+                </div>
+
+                <hr/>
+
+                <p class="small text-muted mb-0">
+                    If you feel that you've contributed to this language version enough to get credited in the footer
+                    (not saying how much that is, that's on you to decide 😉),
+                    then add your name and areas here (in the local language!).
+                    The team as a whole will be credited in the footer either way.
+                </p>
+
+                <div class="form-group">
+                    <label for="footerName">Footer display name:</label>
+                    <input class="form-control" name="footerName" maxlength="36" v-model="footerName"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="footerAreas">Areas responsible for / contributing to:</label>
+                    <ListInput v-model="footerAreas"/>
+                </div>
+            </div>
+
+            <section>
+                <OpinionLegend/>
+            </section>
+
             <div class="form-group">
                 <h3 class="h4">
                     <Icon v="signature"/>
@@ -142,6 +179,9 @@
                         links: Object.keys(profile.links).length ? profile.links : [],
                         flags: profile.flags,
                         words: profile.words.map(x => dictToList(x)),
+                        teamName: profile.teamName,
+                        footerName: profile.footerName,
+                        footerAreas: profile.footerAreas,
                     };
                 }
             }
@@ -159,6 +199,9 @@
                     links: Object.keys(profile.links).length ? profile.links : [],
                     flags: profile.flags.filter(f => !f.startsWith('-')),
                     words: defaultWords,
+                    teamName: profile.teamName,
+                    footerName: profile.footerName,
+                    footerAreas: [],
                 };
             }
 
@@ -170,6 +213,9 @@
                 links: [],
                 flags: [],
                 words: defaultWords,
+                teamName: '',
+                footerName: '',
+                footerAreas: [],
             };
         },
         mounted() {
@@ -189,6 +235,9 @@
                     links: [...this.links],
                     flags: [...this.flags],
                     words: this.words.map(x => listToDict(x)),
+                    teamName: this.teamName,
+                    footerName: this.footerName,
+                    footerAreas: this.footerAreas,
                 });
                 this.saving = false;
                 this.$router.push(`/@${this.$user().username}`)

@@ -853,6 +853,17 @@ english:
 contact:
     header: 'Kontakt'
     authors: '{/słowniki#autor=Autorza} strony'
+    team:
+        name: 'Kolektyw „Rada Języka Neutralnego”'
+        description:
+            - >
+                Inicjatywy zaimki.pl / {https://pronouns.page=pronouns.page}
+                oraz {https://facebook.com/neutratywy=Słownik Neutratywów Języka Polskiego}
+                są tworzone przez kolektyw „Rada Języka Neutralnego”.
+        logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
+        members: 'Obecny skład'
+        blog: 'Blog'
+        upcoming: 'Nadchodzące wersje językowe'
 
 support:
     header: 'Wsparcie'

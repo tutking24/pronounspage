@@ -444,44 +444,14 @@ contact:
             icon: 'envelope'
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
-    authors:
-        -
-            name: 'Rada Języka Neutralnego'
-            link: '/blog/rada-języka-neutralnego'
-            group: true
-        -
-            name: 'Andrea'
-            profile: 'andrea'
-            pronouns: 'onu'
-            pronounsLink: '/onu'
-            website: 'https://avris.it'
-            twitter: 'AvrisIT'
-            mail: 'andrea@avris.it'
-            areas:
-                kod: 'https://gitlab.com/Avris/Zaimki'
-                język: ~
-                pytania: '/pytania'
-        -
-            name: 'Paweł Dembowski'
-            profile: 'ausir'
-            pronouns: 'on'
-            pronounsLink: '/on'
-            twitter: 'VaultAusir'
-            mail: 'pawel.dembowski@gmail.com'
-            areas:
-                język: ~
-                literatura: '/literatura'
-        -
-            name: 'Sybil Zuz Grzybowskie'
-            profile: 'Sybil'
-            pronouns: 'on'
-            pronounsLink: '/on'
-            twitter: 'mykofanes'
-            mail: 'zuzannagrzybowska@protonmail.com'
-            areas:
-                neutratywy: '/słowniki'
-                # imiona: '/imiona'
-                social_media: ~
+    team:
+        enabled: true
+        route: 'kolektyw-rjn'
+        name: 'Kolektyw „Rada Języka Neutralnego”'
+    blog:
+        podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
+        gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
+        czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
 
 support:
     enabled: true

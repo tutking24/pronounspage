@@ -1,5 +1,6 @@
 <template>
-    <span :class="['fa' + set, 'fa-' + v, 'fa-fw']" :style="`font-size: ${size}em`"></span>
+    <img v-if="v.endsWith('.svg')" :src="`/img/${v}`" :style="`height: ${size}em; width: 1.25em; display: inline;`" alt=""/>
+    <span v-else :class="['fa' + set, 'fa-' + v, 'fa-fw']" :style="`font-size: ${size}em`"></span>
 </template>
 
 <script>

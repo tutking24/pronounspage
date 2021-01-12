@@ -94,11 +94,11 @@ sources:
         thanks: '¡Gracias por contribuir!'
         another: 'Enviar otro'
         moderation: 'Los envíos deben ser aprobados antes de ser publicados.'
-        key: 'Clave' 
-        keyInfo: 'Identificador para vincular fuentes entre versiones en varios idiomas y vincularlas con el diccionario' 
-        images: 'Imágenes' 
+        key: 'Clave'
+        keyInfo: 'Identificador para vincular fuentes entre versiones en varios idiomas y vincularlas con el diccionario'
+        images: 'Imágenes'
     otherVersions: 'En otros idiomas'
-    referenced: 'Ejemplos del uso' 
+    referenced: 'Ejemplos del uso'
 
 nouns:
     header: 'Diccionario'
@@ -319,6 +319,16 @@ english: ~
 contact:
     header: 'Contacto'
     authors: 'Autores/as/xs del sitio web'
+    team:
+        name: 'The “Neutral Language Council” collective'  # TODO
+        description:  # TODO
+            - >
+                {https://pronouns.page=Pronouns.page} and related initiatives
+                are created by the “Neutral Language Council” collective.
+        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+        members: 'Current members'  # TODO
+        blog: 'Blog'  # TODO
+        upcoming: 'Upcoming language versions'  # TODO
 
 support:
     header: 'Apóyanos'
@@ -343,7 +353,7 @@ user:
                 Si no solicitaste este código, simplemente ignora este mensaje.
         why: >
             Registrarte te permite manejar tus tarjetas ({/@andrea=como esta}).
-        passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'  
+        passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -470,11 +480,11 @@ localise:
 
 images:
     upload:
-        instruction: 'Haz clic aquí o arrastra tus imágenes aquí' 
+        instruction: 'Haz clic aquí o arrastra tus imágenes aquí'
         instructionShort: 'Subir'
 
 error:
-    generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'  
+    generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'

@@ -19,7 +19,7 @@
                 <Icon v="users"/>
                 <T>contact.authors</T>
             </h3>
-            <Authors expanded/>
+            <Authors/>
             <small>
                 <T>localise.long</T>
                 <LocaleLink locale="en" link="/blog/creating-new-language-version">
