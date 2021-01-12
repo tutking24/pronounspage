@@ -1,0 +1,32 @@
+key	description	normative	pronoun_n	pronoun_d	pronoun_a	pronoun_g	article_n	article_g	article_d	article_a	demonstrative_n	possesive_object	noun	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+er,er/sein	Maskulinum	TRUE	er	ihm	ihn	sein	der	dessen	dem	den	dieser			FALSE	FALSE	TRUE
+sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihr	die	deren	der	die	diese	e	in	FALSE	FALSE	TRUE
+es,es/sein	Neutrum	TRUE	es	ihm	es	sein	das	dessen	dem	das	dieses			FALSE	FALSE	TRUE
+A	Neopronomen "A"	FALSE	A	A	A	As	dA	dAs	dA	dA	diesA	A	A	FALSE	FALSE	TRUE
+dey	Neopronomen "dey"	FALSE	dey	denen/demm	demm	deren/der	dey	deyssen	deym	deyn	diesey	ey	ey	FALSE	FALSE	TRUE
+die	Neopronomen "die"	FALSE	die	denen	die	deren	die	deren	denen	die	diesie	ie	ie	FALSE	FALSE	TRUE
+el	Neopronomen "el"	FALSE	el	em	en	ems	del				diesel	el	el	FALSE	FALSE	TRUE
+em	Neopronomen "em"	FALSE	em	em	em	ems	dem				diesem	em	em	FALSE	FALSE	TRUE
+en	Neopronomen "en"	FALSE	en	en	en	sein/e/r, enes	den				diesen	en	en	FALSE	FALSE	TRUE
+eos	Neopronomen "eos"	FALSE	eos	ioi	ios	soi	deos				dieseos	eos	eos	FALSE	FALSE	TRUE
+ey,ey/em	Neopronomen "ey/em"	FALSE	ey	em(m)	em(m)	eys	dey				diesey	ey	ey	FALSE	FALSE	TRUE
+et	Neopronomen "et"	FALSE	et	siem	sierer	sien	det				dieset	et	et	FALSE	FALSE	TRUE
+hän	Neopronomen "hän"	FALSE	hän	sim	sin	sir	dehän				dieshän	hän	hän	FALSE	FALSE	TRUE
+hen	Neopronomen "hen"	FALSE	hen	hen	hen	hens	dehen				dieshen	hen	hen	FALSE	FALSE	TRUE
+iks	Neopronomen "iks"	FALSE	iks	iks	iks	ikses	deiks				diesiks	iks	iks	FALSE	FALSE	TRUE
+ind	Neopronomen "ind"	FALSE	ind	inde	ind	indd	deind				diesind	ind	ind	FALSE	FALSE	TRUE
+le	Neopronomen "le"	FALSE	le	lir	lich	lein	dele				diesle	le	le	FALSE	FALSE	TRUE
+per	Neopronomen "per"	FALSE	per	per	per	pers	deper				diesper	per	per	FALSE	FALSE	TRUE
+sel	Neopronomen "sel"	FALSE	sel	serl	sel	serl	desel				diessel	sel	sel	FALSE	FALSE	TRUE
+ser	Neopronomen "ser"	FALSE	ser	sem	sen	ses	deser				diesser	ser	ser	FALSE	FALSE	TRUE
+sier	Neopronomen "sier"	FALSE	sier	sier	sier	sier	desier				diessier	sier	sier	FALSE	FALSE	TRUE
+sier	Alternative zu "sier"	FALSE	sier	siem	sien	sien	desier				diessier	sier	sier	FALSE	FALSE	TRUE
+they	Äquivalent zu englischem "them"	FALSE	they	them	them	their	dethey				diesthey	they	they	FALSE	FALSE	TRUE
+vii	Neopronomen "vii"	FALSE	vii	viiv	vii	vis	devii				diesvii	vii	vii	FALSE	FALSE	TRUE
+x	Neopronomen "x"	FALSE	x	x	x	x	dex				diesx	x	x	FALSE	FALSE	TRUE
+xier	Neopronomen "xier"	FALSE	xier	xiem	xien	xies	dexier				diesxier	xier	xier	FALSE	FALSE	TRUE
+z/zet	Neopronomen "z/zet"	FALSE	z/zet	zerm	zern	zets/zern	dezet				dieszet	z/zet	z/zet	FALSE	FALSE	TRUE
+er_sie	Neopronomen "er_sie"	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	_e	_in	FALSE	FALSE	TRUE
+er*sie	Neopronomen "er*sie"	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	*e	*in	FALSE	FALSE	TRUE
+er:sie	Neopronomen "er:sie"	FALSE	er:sie	ihm:ihr	ihn:sie	sein:ihr	der:die	des:der	dem:der	den:die	diese:r	:e	:in	FALSE	FALSE	TRUE
+ersie	Neopronomen "ersie"	FALSE	ersie	ihmihr	ihnsie	seinihr	derdie	desder	demder	dendie	dieseer ??	??	??	FALSE	FALSE	TRUE
