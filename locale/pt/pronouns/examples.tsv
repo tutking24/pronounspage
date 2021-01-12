@@ -1,9 +1,8 @@
 singular	plural	isHonorific
-Creo que {pronoun} es muy querid{inflection}.		FALSE
-Llamé a mi herman{inflection} esta mañana y me dijo que estará ocupad{inflection} esta tarde.		FALSE
-A mi amiga la quiero, pero a mi novi{inflection} {direct_object_pronoun} amo mucho.		FALSE
-{'plural_definite_article} activistas progresiv{inflection}s están presionando para la aceptación de los pronombres neutros.		FALSE
-Se acerca la navidad y no sé qué regalos comprar para {plural_pronoun}.		FALSE
-{'definite_article} dueñ{inflection} de esta tienda es una persona amable.		FALSE
-{'plural_direct_object_pronoun} vi anoche pero no me reconocieron.		FALSE
-Es {indefinite_article} estudiante muy list{inflection}.		FALSE
+Eu acho que {pronoun} é muito simpáti{inflection_c}.		FALSE
+Liguei para {possessive} prim{inflection} esta manhã e ela disse que estará ocupad{inflection} esta tarde.		FALSE
+O Natal está chegando e não sei que presentes comprar para {plural_pronoun}.		FALSE
+{'definite_article} don{inflection} desta loja é uma pessoa gentil.		FALSE
+Eu {plural_definite_article} vi ontem à noite, mas {plural_pronoun} não me reconheceram.		FALSE
+{'pronoun} é {indefinite_article} alun{inflection} muito espert{inflection}.		FALSE
+{'pronoun} me disse que esta é a casa {de_pronoun}.		FALSE

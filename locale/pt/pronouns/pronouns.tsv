@@ -1,13 +1,23 @@
-key	description	normative	pronoun	direct_object_pronoun	definite_article	indefinite_article	plural_pronoun	plural_definite_article	plural_indefinite_article	plural_direct_object_pronoun	inflection	inflection_c	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-él,él/lo,el,el/lo	Masculino	TRUE	él	lo	el	un	ellos	los	unos	los	o	co	FALSE	FALSE	TRUE
-ella,ella/la	Femenino	TRUE	ella	la	la	una	ellas	las	unas	las	a	ca	FALSE	FALSE	TRUE
-elle,elle/le	Neopronombre neutro	FALSE	elle	le	le	une	elles|=éyes	les	unes	les	e	que	FALSE	FALSE	TRUE	Forma neutra, también llamada “lenguaje inclusivo”. Este pronombre es utilizado para referirse a personas no binarias, y también para grupos mixtos en cuanto a género, para no excluir a nadie.
-ellu,ellu/lu	Neopronombre neutro	FALSE	ellu	lu	lu	unu	ellus	lus	unus	lus	u	cu	FALSE	FALSE	TRUE	Forma neutra mucho menos común que “elle”.
-elli,elli/li	Neopronombre neutro	FALSE	elli|=éyi	li	li	uni	ellis|=éyis	lis	unis	lis	i	qui	FALSE	FALSE	TRUE	Forma neutra mucho menos común que “elle”.
-ól,ól/ol,ol,ol/ol	Neopronombre agénero	FALSE	ól	ol	ol	une	olles	oles	unes	oles	e	que	FALSE	FALSE	TRUE	Una forma propuesta para personas agéneros.
-xelle,xelle/le	Neopronombre basado en el pronombre inglés "xe"	FALSE	xelle	le	le	une	xelles|=séyes	les	unes	les	e	que	FALSE	FALSE	TRUE	Un neopronombre creado como traducción del neopronombre del inglés {https://en.pronouns.page/xe=”xe/xem”}.
-ellx,ellx/lx	Pronombre neutro con "x"	FALSE	ellx	lx	lx	unx	ellxs	lxs	unxs	lxs	x	cx	FALSE	FALSE	FALSE	Propuesta gráfica de pronombre inclusivo. Aunque ha sido calificado de impronunciable, y algunas personas han adjudicado su origen a influencias de Estados Unidos, se trata de una manera gráfica de representar un pronombre para personas no binarias y grupos mixtos, suele pronunciarse igual que {/elle=elle/le}, y tiene un uso extendido por Latinoamérica y la Península Ibérica.
-ell_,ell_/l_	Pronombre neutro con "_"	FALSE	ell_	l_	l_	un_	ell_s	l_s	un_s	l_s	_	c_	FALSE	FALSE	FALSE	Un pronombre creado para referirse tanto a personas no binarias como a grupos mixtos. Su uso corresponde a la escritura, y no hay una tendencia de pronunciación.
-ell*,ell*/l*	Pronombre neutro con "*"	FALSE	ell*	l*	l*	un*	ell*s	l*s	un*s	l*s	*	c_	FALSE	FALSE	FALSE	Un pronombre creado para referirse tanto a personas no binarias como a grupos mixtos. Su uso corresponde a la escritura, y no hay una tendencia de pronunciación.
-ellæ,ellæ/læ	Pronombre neutro con "æ"	FALSE	ellæ	læ	læ	unæ	ellæs	læs	unæs	læs	æ	cæ	FALSE	FALSE	FALSE	Un pronombre creado para referirse tanto a personas no binarias como a grupos mixtos.
-ell@,ell@/l@	Pronombre inclusivo binario	FALSE	ell@	l@	l@	un@	ell@s	l@s	un@s	l@s	@	c@	FALSE	FALSE	FALSE	Un pronombre creado para parecerse tanto a "a" como a "o". Ahora se percibe como inclusivo de hombres y mujeres pero no necesariamente de personas no binarias.
+key	description	normative	pronoun	de_pronoun	definite_article	indefinite_article	plural_pronoun	de_plural	plural_definite_article	plural_indefinite_article	inflection	inflection_c	possessive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+ele,ele/dele	Masculino	TRUE	ele	dele	o	um	eles	deles	os	uns	o	co	meu	FALSE	FALSE	TRUE
+ela,ela/dela	Feminino	TRUE	ela	dela	a	uma	elas	delas	as	umas	a	ca	minha	FALSE	FALSE	TRUE
+elu,elu/delu	Neutro	FALSE	elu	delu	ê	ume	elus	delus	ês	umes	e	que	mi	FALSE	FALSE	TRUE	Desenvolvimento do sistema “ilu” para se aproximar mais de “ele/ela”.
+ilu,ilu/dilu	Neutro	FALSE	ilu	dilu	ê	ume	ilus	dilus	ês	umes	e	que	mi	FALSE	FALSE	TRUE	Pronome neutro do latim, que é "illud".
+ile,ile/dile	Neutro	FALSE	ile	dile	ê	ume	iles	diles	ês	umes	e	que	mi	FALSE	FALSE	TRUE
+elx,elx/delx	Pronome gráfico com x	FALSE	elx	delx	x	umx	elxs	delxs	xs	umxs	x	cx	mx	FALSE	FALSE	FALSE
+el*,el*/del*	Pronome gráfico com *	FALSE	el*	del*	*	um*	el*s	del*s	*s	um*s	*	c*	m*	FALSE	FALSE	FALSE
+el,el/del	Neutro	FALSE	el	del	ê	ume	els	dels	ês	umes	e	que	mi	FALSE	FALSE	TRUE	Deleção da vogal marcadora de gênero.
+el@,el@/del@	Pronome gráfico com @	FALSE	el@	del@	@	um@	el@s	del@s	@s	um@s	@	c@	m@	FALSE	FALSE	FALSE
+el_,el_/del_	Pronome gráfico com _	FALSE	el_	del_	_	um_	el_s	del_s	_s	um_s	_	c_	m_	FALSE	FALSE	FALSE
+ili,ili/dili	Neutro	FALSE	ili	dili	i	uni	ilis	dilis	is	unis	i	qui	mi	FALSE	FALSE	TRUE
+el',el'/del'	Pronome gráfico com '	FALSE	el'	del'	'	um'	el's	del's	_'s	um's	'	c'	m'	FALSE	FALSE	FALSE
+ily,ily/dily	Neutro	FALSE	ily	dily	ê	uny	ilys	delys	ys	unys	e	que	mi	FALSE	FALSE	TRUE
+éli,éli/déli	Neutro	FALSE	éli	déli		ume	élis	délis	is	umés	e	que	mi	FALSE	FALSE	TRUE
+ael,ael/dael	Pronome gráfico	FALSE	ael	dael	?	?	aels	daels	ae	?	e	que	mi	FALSE	FALSE	FALSE
+elae,elae/delae	Pronome gráfico	FALSE	elae	delae	?	?	elaes	delaes	ae	?	e	que	mi	FALSE	FALSE	FALSE
+eld,eld/deld	Pronome gráfico	FALSE	eld	deld	?	?	elds	delds	?	?	e	que	mi	FALSE	FALSE	FALSE
+elé,elé/delé	Neutro	FALSE	elé	delé	ê	umé	elés	delés	?	?	e	que	mi	FALSE	FALSE	TRUE
+ilo,ilo/dilo	Neutro	FALSE	ilo	dilo	i	?	ilos	dilos	is	?	i	que	mi	FALSE	FALSE	TRUE
+êlu,êlu/dêlu	Neutro	FALSE	êlu	dêlu	ê	ume	êlus	dêlus	ês	umes	e	que	mi	FALSE	FALSE	TRUE
+yn,yn/dyn	Neutro	FALSE	yn	dyn	y	uni	yns	dyns	ys	unys	y	que	mi	FALSE	FALSE	TRUE
+ale,ale/dale	Neutro	FALSE	ale	dale	y	ume	ales	dales	ys	umes	y	quy	my	FALSE	FALSE	TRUE

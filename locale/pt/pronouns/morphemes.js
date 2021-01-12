@@ -1,12 +1,13 @@
 export default [
     'pronoun',
-    'direct_object_pronoun',  // no example?
-    'definite_article',  // no example?
+    'de_pronoun',
+    'definite_article',
     'indefinite_article',
     'plural_pronoun',
+    'de_plural',
     'plural_definite_article',
-    'plural_indefinite_article',  // no example?
-    'plural_direct_object_pronoun',
+    'plural_indefinite_article',
     'inflection',
     'inflection_c',
+    'possessive',
 ];

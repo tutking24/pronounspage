@@ -4,14 +4,14 @@ header: true
 
 pronouns:
     enabled: true
-    default: 'él'
+    default: 'ele'
     any: 'any'
     plurals: false
     honorifics: false
     multiple:
         name: 'Formas intercambiables'
         description: 'Muchas personas no binarias usan más de una forma intercambiablemente y se sienten cómodas con cualquiera de las opciones.'
-        examples: ['él&ella', 'él&elle', 'ella&elle']
+        examples: ['ele&ela', 'ele&elu', 'ela&elu']
     null: false
     emoji: false
     slashes: false
@@ -21,13 +21,13 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        ES:
-            language: 'es-ES'
-            voice: 'Lucia'
+        PT:
+            language: 'pt-PT'
+            voice: 'Cristiano'
             engine: 'standard'
-        MX:
-            language: 'es-MX'
-            voice: 'Mia'
+        BR:
+            language: 'pt-BR'
+            voice: 'Vitoria'
             engine: 'standard'
 
 sources:
@@ -87,6 +87,10 @@ contact:
             headline: 'contact@pronouns.page'
     authors:
         -
+            name: 'The “Neutral Language Council” collective'
+            link: '/blog/neutral-language-council'
+            group: true
+        -
             name: 'Andrea'
             profile: 'andrea'
             pronouns: 'elle'
@@ -95,10 +99,10 @@ contact:
             twitter: 'AvrisIT'
             mail: 'andrea@avris.it'
             areas:
-                código: 'https://gitlab.com/Avris/Zaimki'
+                code: 'https://gitlab.com/Avris/Zaimki'
         -
             name: 'Paweł Dembowski'
-            profile: 'ausir'
+            profile: 'Ausir'
             pronouns: 'él'
             pronounsLink: '/él'
             twitter: 'VaultAusir'
@@ -138,12 +142,12 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['señor', 'señora', 'señore', 'don', 'doña', 'doñe', 'usted', 'tú', 'vos']
-        - ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'pib_']
-        - ['lind_', 'guap_', 'bonit_', 'mon_', 'hermos_', 'sexi']
-        - ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
+        - ['senhor', 'senhora', 'senhore', 'dom', 'dona', 'done', 'tu', 'você']
+        - ['persona', 'home', 'mulher', 'garoto', 'garota', 'garote', 'rapaz', 'rapariga', 'raparigue', 'cara']
+        - ['lind_', 'formos_', 'bonit_', 'bel_', 'sexy']
+        - ['parceir_', 'namorad_', 'marid_', 'espos_', 'outra metade']
     flags:
-        defaultPronoun: 'ell_'
+        defaultPronoun: 'el_'
 
 census:
     enabled: false

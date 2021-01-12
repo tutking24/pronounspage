@@ -1,42 +1,42 @@
 title: 'pt.pronouns.page'
-description: 'Ejemplos de uso de pronombres personales y lenguaje neutro.'
+description: 'Exemplos de uso de pronomes pessoais e linguagem neutra.'
 
 home:
     link: 'Inicio'
-    header: 'Pronombres'
-    headerLong: 'Lista de pronombres'
-    why: '¿Por qué importan los pronombres?'
+    header: 'Pronomes'
+    headerLong: 'Lista de pronomes'
+    why: 'Por que os pronomes importam?'
     about:
         - >
-            Todes tenemos pronombres. Son las palabras que se usan en lugar del nombre para referirnos a alguien a quien ya mencionamos.
-            La mayoría de las personas usa {/él=“él”} y {/ella=“ella”}, así que asumimos automáticamente cuál usar con base en su apariencia.
-            Pero en realidad no es tan simple…
+            Todes temos pronomes. São as palavras que se usa em lugar do nome para referir-nos a alguém a quem já mencionamos.
+            A maioria das pessoas usa {/ele=“ele”} e {/ela=“ela”}, assim que assumimos automaticamente qual usar com base em sua aparência.
+            Mas na realidade não é tão simples…
         - >
-            El género es complicado. Algunas personas no “se ven” como su género.
-            Algunes prefieren ser llamades de manera distinta a lo que une asumiría.
-            Algunas personas no encajan en las casillas “masculino” o “femenino” y prefieren un lenguaje más neutro.
+            O gênero é complicado. Algumas pessoas não "aparecem" o seu género.
+            Alguns preferem ser chamados de maneira distinta a que se assumiria.
+            Algumas pessoas não encaixam nas etiquetas “masculino” o “feminino” e preferem uma língua neutra.
         - >
             Esta herramienta te permite enlazar a tus pronombres, con ejemplos de uso en oraciones,
             para que puedas mostrarle a la gente cómo prefieres que te llamen.
         - >
-            ¿Por qué importa? Por simple decencia humana.
-            No llamarías “Lucía” a Alicia sólo porque a tí te gusta más ese nombre
-            o porque “tiene más cara de Lucía para tí”.
+            Por que é importante? Por simplesmente decencia humana.
+            Não chamaria “Lucía” de Alicia só porque você gosta/tu gostas mais desse nome.
+            ou porque “tem mais cara de Lucía para você/tu”.
             O incluso si ella <em>sí</em> se llama “Lucía” en su acta de nacimiento
             pero detesta ese nombre y prefiere usar “Alicia”.
             Es exactamente lo mismo con los pronombres –
             si no quieres ser grosere con alguien, dirígete a elle correctamente.
             La única diferencia es que normalmente conocemos los nombres, pero no los pronombres.
             Nos presentamos con nuestro nombre, pero no con nuestros pronombres. ¡Hagamos un cambio!
-    pronouns: 'Lista de pronombres populares'
+    pronouns: 'Lista de pronomes populares'
     generator:
         header: 'Generador'
         description: >
             También puedes usar esta herramienta para llenar los espacios en blanco
             y generar un enlace que puedes compartir.
-        button: 'Mostrar el generador'
+        button: 'Mostrar o generator'
         header2: 'Generar un enlace'
-        base: 'Con base en'
+        base: 'Baseado em'
         alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
         pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
     whatisit: '¿Por qué importan los pronombres?'
@@ -44,16 +44,16 @@ home:
 pronouns:
     examples: 'Ejemplos de uso en oraciones'
     plural: 'Plural'
-    intro: 'Mis pronombres son'
+    intro: 'Meus pronomes são'
     normative: 'Normativo'
     alt:
         button: 'Generar un enlace a las formas intercambiables'
         header: 'Formas intercambiables'
         raw: 'intercambiable'
-    generated: 'Estos pronombres han sido creados con un generador. El equipo de pronouns.page no es responsable de ellos.'
+    generated: 'Estos pronombres han sido creados con un generador. El equipo de pronouns.page no es responsable de ellos.'  # TODO
     any:
-        header: 'Cualquier pronombre'
-        short: 'cualquiera'
+        header: 'Qualquer pronome'
+        short: 'qualquer'
         description: >
             Aunque para mucha gente sea muy importante que se utilicen pronombres específicos para hablar de elles,
             a otres no les molesta que les llamen de cualquier manera - mientras que en el contexto sea claro a quién se está hablando.
@@ -64,36 +64,36 @@ pronouns:
     grammarTable: 'Tabla'
 
 sources:
-    header: 'Fuentes'
-    headerLong: 'Ejemplos de contextos culturales'
-    headerLonger: 'Lenguaje neutro en textos culturales'
+    header: 'Fontes'
+    headerLong: 'Exemplos de contextos culturales'
+    headerLonger: 'Línguagem neutra em textos culturales'
     subheader: 'Corpus de texto de género neutro'
-    toc: 'Mostrar tabla de contenidos'
+    toc: 'Mostrar tabela de conteúdos'
     type:
         All: 'Todo'
-        Book: 'Libros'
+        Book: 'Livros'
         Article: 'Artículos'
-        Movie: 'Películas'
+        Movie: 'Filmes'
         Series: 'Series'
         Song: 'Música'
         Poetry: 'Poesía'
-        Other: 'Otros'
+        Other: 'Outros'
     submit:
         header: 'Enviar un ejemplo para que sea añadido'
         action: 'Enviar'
         pronouns: '¿Qué pronombres han sido usados?'
         pronounsInfo: 'Introduce la forma más simple del pronombre, como se encuentra en el enlace, p. ej. “elle”, “él/lo”, “él o ella”'
-        type: 'Tipo de fuente'
+        type: 'Tipo de fonte'
         author: 'Autor/a/e/x'
         title: 'Título'
-        extra: 'Información adicional (traductor/a/e/x, nombre de la revista, …)'
-        year: 'Año de publicación (de la versión en español)'
+        extra: 'Informação adicional (tradutor/a/e/x, nome da revista, …)'
+        year: 'Ano de publicação (da versão em português)'
         fragments: 'Fragmentos'
-        comment: 'Comentario'
+        comment: 'Comentário'
         link: 'Enlace al contenido'
-        thanks: '¡Gracias por contribuir!'
-        another: 'Enviar otro'
-        moderation: 'Los envíos deben ser aprobados antes de ser publicados.'
+        thanks: 'Obrigadx pela contribuição!'
+        another: 'Enviar outro'
+        moderation: 'Os envios tem que ser aprovados antes de serem publicados.'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
         images: 'Images' # TODO
@@ -101,10 +101,10 @@ sources:
     referenced: 'Examples of use' # TODO
 
 nouns:
-    header: 'Diccionario'
-    headerLong: 'Diccionario de sustantivos neutros'
-    headerLonger: 'Diccionario de lenguaje neutro'
-    description: '¡No son sólo pronombres! Consulta nuestro diccionario de lenguaje neutro.'
+    header: 'Dicionário'
+    headerLong: 'Dicionário de substantivos neutros'
+    headerLonger: 'Dicionário de linguagem neutra'
+    description: 'Não são só os pronomes! Consulta nosso dicionário de linguagem neutra.'
     intro:
         - >
             Usar lenguaje inclusivo y neutro respecto al género no es sólo usar los pronombres correctos de otra persona.
@@ -120,21 +120,21 @@ nouns:
             A continuación presentamos un diccionario con palabras a considerar.
             Puedes contribuir en él y añadir tus sugerencias.
 
-    approved: 'entradas aprobadas'
-    pending: 'esperando moderación'
-    edit: 'Proponer un cambio'
-    edited: 'Cambio propuesto'
-    editing: 'Estás editando una entrada existente'
+    approved: 'entradas aprovadas'
+    pending: 'esperando moderação'
+    edit: 'Propor um câmbio'
+    edited: 'Câmbio proposto'
+    editing: 'Está editando uma entrada existente'
     empty: 'No se encontraron palabras que coincidan con la búsqueda'
 
     submit:
         action: 'Enviar'
-        actionLong: 'Enviar una palabra'
-        thanks: '¡Gracias por contribuir!'
-        another: 'Enviar otra'
-        moderation: 'Los envíos deben ser aprobados antes de ser publicados.'
+        actionLong: 'Enviar uma palavra'
+        thanks: 'Obrigadx pela contribuição!'
+        another: 'Enviar outra'
+        moderation: 'Os envios devem ser aprovados antes de serem publicados.'
 
-    template: 'Usar una plantilla'
+    template: 'Usar uma plantila'
     root: 'Raíz'
 
     masculine: 'masculino'
@@ -154,34 +154,34 @@ faq:
     headerLong: 'Preguntas frecuentes'
     questions:
         nonbinary:
-            question: '¿Qué es ser <em>no binarie</em>?'
+            question: 'O que é <em>não binarie</em>?'
             answer:
                 - >
-                    El género es mucho más complicado que una simple distinción entre masculino y femenino.
-                    Incluso desde un punto de vista puramente biológico distinguimos sexo cromosómico,
+                    O gênero é muito mais complicado do que uma simples distinção entre masculino e feminino.
+                    Incluso desde um ponto de vista puramente biológico distinguimos sexo cromosómico,
                     sexo genético, sexo hormonal, sexo fenotípico…
                     No son necesariamente congruentes uno con el otro, no tienen que ser binarios.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aquí)}.
-                    Y cuando llegamos al aspecto cultural, el “género” es una construcción social.
-                    Dependiendo del lugar y el momento “una mujer” o “un hombre” puede significar tener
-                    derechos, obligaciones, reglas a seguir, etc. radicalmente diferentes. En Europa los hombres solían usar tacones altos y faldas,
-                    muchos pueblos originarios de Norteamérica han reconocido un tercer género por siglos, como
-                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espíritus}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
+                    E quando chamamos aspecto cultural, o “gênero” é uma construção social.
+                    Dependendo de lugar e o momento “uma mulher” ou “um homem” pode significar ter
+                    derechos, obligações, regras a seguir, etc. radicalmente diferentes. Na Europa os homens são acostumados a usar (tacones) altos e (faldas),
+                    muitos povos originarios da América da Norte há reconhecido um terceiro gênero por siglos, como
+                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dois espíritos}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
                 - >
-                    “No binarie” es un término que describe la identidad de personas que
-                    no encajan en la distinción binaria de hombre/mujer.
-                    Incluye personas
-                    {https://gsrdi.fandom.com/es/wiki/Ag%C3%A9nero=agénero},
-                    {https://es.wikipedia.org/wiki/G%C3%A9nero_fluido=género fluído},
-                    {https://gender.wikia.org/wiki/Demigirl=demichicas (en inglés)},
-                    {https://gender.wikia.org/wiki/Demiboy=demichicos (en inglés)},
-                    y {https://es.wikipedia.org/wiki/G%C3%A9nero_no_binario=muches, muches más}.
+                    “Não binárie” é um termo que descreve a identidade de pessoas que
+                    N˜åo encaixam na distinção binária de homem/mulher.
+                    Incluí pessoas
+                    {https://pt.wikipedia.org/wiki/Ageneridadeo=agênero},
+                    {https://pt.wikipedia.org/wiki/G%C3%AAnero-fluidoo=gênero-fluido},
+                    {https://pt.wikipedia.org/wiki/Demigeneridade=demigênero},
+                    {https://pt.wikipedia.org/wiki/Bigeneridade=bigênero},
+                    e {https://pt.wikipedia.org/wiki/G%C3%AAnero_n%C3%A3o-bin%C3%A1rio=muito, muito mais}.
                 - >
-                    No binario no es necesariamente algo “intermedio” entre masculino y femenino. Más bien está “más allá”.
-                    Las personas no binarias no tienen que ser andróginas, o usar lenguaje neutro, etc.
-                    Se trata de liberarse de los roles de género, no de crear nuevos.
+                    Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Mais (“más allá”).
+                    As pessoas não binárias não têm que ser andróginas, ou usar linguagem neutra, etc.
+                    Se trata de liberdade dos roles de gênero, não de criar novos.
         why-respect:
-            question: '¿Por qué debería respetar los pronombres <em>raros</em> de otra persona?'
+            question: 'Por que deveria respeitar os pronomes <em>raros</em> de outra pessoa?'
             answer:
                 - >
                     Porque dirigirse a las personas en la manera que lo prefieren es la base de las relaciones sociales.
@@ -317,24 +317,24 @@ people: ~
 english: ~
 
 contact:
-    header: 'Contacto'
-    authors: 'Autores/as/xs del sitio web'
+    header: 'Contato'
+    authors: 'Autores/as/xs do site'
 
 support:
-    header: 'Apóyanos'
+    header: 'Apoie-nos'
     description: >
         Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
         puedes usar los siguientes enlaces:
 
 user:
-    header: 'Cuenta'
-    headerLong: 'Tu cuenta'
+    header: 'Conta'
+    headerLong: 'Tua conta'
     tokenExpired: 'El token ha expirado. Por favor actualiza la página e inténtalo nuevamente.'
     login:
         placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
-        action: 'Iniciar sesión'
+        action: 'Iniciar sessão'
         emailSent: 'Te hemos enviado un correo electrónico con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
-        userNotFound: 'Usuarie no encontrade.'
+        userNotFound: 'Usuarie não encontrade.'
         email:
             subject: 'Tu código de inicio de sesión es %code%'
             content: |
@@ -343,27 +343,27 @@ user:
                 Si no solicitaste este código, simplemente ignora este mensaje.
         why: >
             Registrarte te permite manejar tus tarjetas ({/@andrea=como esta}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'  # TODO
+        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}' # TODO
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
     account:
         changeUsername:
-            header: 'Nombre de usuarie'
-            action: 'Cambiar'
+            header: 'Nome do usuarie'
+            action: 'Mude'
             invalid: 'El nombre de usuarie debe tener entre 4 y 16 caracteres y sólo puede contener números, letras, puntos, guiones y guionbajos.'
             taken: 'Este nombre de usuarie ya está en uso.'
         changeEmail:
-            header: 'Dirección de correo electrónico'
-            action: 'Cambiar'
-            invalid: 'Dirección de correo inválida.'
-            taken: 'Esta dirección ya está en uso.'
+            header: 'Endereço de e-mail'
+            action: 'Mude'
+            invalid: 'Endereço de e-mail inválido.'
+            taken: 'Este endereço já está em uso.'
         admin: 'Admin'
-    logout: 'Cerrar sesión'
+    logout: 'Fechar sessão'
     avatar:
         header: 'Avatar'
-        change: 'Cambiar'
-    deleteAccount: 'Eliminar cuenta'
+        change: 'Mude'
+    deleteAccount: 'Eliminar conta'
     deleteAccountConfirm: '¿Confirmas que quieres eliminar tu cuenta? ¡Esto será irreversible!'
     socialConnection:
         list: 'Conexiones de redes sociales'
@@ -373,35 +373,35 @@ user:
         disconnectConfirm: '¿Confirmas que quieres eliminar esta conexión? (Siempre puedes iniciar sesión usando el correo electrónico %email%)'
 
 profile:
-    description: 'Descripción'
-    names: 'Nombres'
-    pronouns: 'Pronombres'
+    description: 'Descrição'
+    names: 'Nomes'
+    pronouns: 'Pronomes'
     pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://es.pronouns.page/ellx”).'
     pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
-    words: 'Palabras'
-    birthday: 'Edad'
+    words: 'Palavras'
+    birthday: 'Idade'
     birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
-    flags: 'Banderas'
+    flags: 'Bandeiras'
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
     links: 'Enlaces'
     column: 'Columna'
 
-    list: 'Tus tarjetas'
-    init: 'Crea una tarjeta'
+    list: 'Teus cartões'
+    init: 'Criar um cartão'
     show: 'Mostrar'
     edit: 'Editar'
     delete: 'Eliminar'
     deleteConfirm: '¿Confirmas de que quieres eliminar esta tarjeta?'
     editor:
-        header: 'Editor de tarjetas'
-        save: 'Guarda tu tarjeta'
+        header: 'Editor de cartões'
+        save: 'Salve teu cartão'
     opinion:
-        yes: 'Sí'
-        jokingly: 'En broma'
-        meh: 'Okey'
-        no: 'No'
+        yes: 'Sim'
+        jokingly: 'Brincando'
+        meh: 'OK'
+        no: 'Não'
 
-share: 'Compartir'
+share: 'Compartilhar'
 
 crud:
     approve: 'Aprobar'
@@ -448,7 +448,7 @@ admin:
 
 table:
     empty: 'Vacío…'
-    count: 'Cuenta'
+    count: 'Conta'
     sort: 'Arrastra para ordenar'
     scrollUp: 'Subir hasta arriba'
     more: 'Mostrar más'
@@ -470,84 +470,96 @@ localise:
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'  # TODO
-        instructionShort: 'Upload' # TODO
+        instruction: 'Click here or drag your pics here'
+        instructionShort: 'Upload'
 
 error:
-    generic: 'Something went wrong, please try again…'  # TODO
+    generic: 'Something went wrong, please try again…'
 
 flags:
-    Abrosexual: 'Abrosexual'
+    Abroromantic: 'Abrorrómanti{inflection_c}'
+    Abrosexual: 'Abrossexual'
     Achillean: 'Aquilean{inflection}'
-    Agender: 'Agénero'
-    Anarcha-Queer: 'Anarco-queer'
+    Agender: 'Agênero'
+    Alloromantic_Asexual: 'Allorrómanti{inflection_c} assexual'
+    Anarcha-Queer: 'Anarcoqueer'
     Androgyne: 'Andrógin{inflection}'
-    Androsexual: 'Androsexual'
-    Aporagender: 'Aporagénero'
-    Archaeopronouns: 'Arqueopronombres'
-    Aroace: 'Arro-ase'
-    Aromantic: 'Arrománti{inflection_c}'
-    Asexual: 'Asexual'
-    Autigender: 'Autisgénero'
-    Bear: 'Oso'
+    Androsexual: 'Androssexual'
+    Aporagender: 'Aporagênero'
+    Aroace: 'Arro-ace'
+    Aromantic: 'Arromânti{inflection_c}'
+    Aromantic_Allosexual: 'Arrómanti{inflection_c} allossexual'
+    Asexual: 'Assexual'
+    Autigender: 'Autigênero'
+    Bear: 'Urso'
+    Bicurious: 'Bi-curios{inflection}'
     Bigender: 'Bigénero'
-    Bisexual: 'Bisexual'
+    Bisexual: 'Bissexual'
     Butch: 'Butch'
-    Ceterosexual: 'Ceterosexual'
+    Ceteroromantic: 'Ceterorrómanti{inflection_c}'
+    Ceterosexual: 'Ceterossexual'
     Cis_Ally: 'Aliad{inflection} cis'
-    Demiboy: 'Demichico'
-    Demigender: 'Demigénero'
-    Demigirl: 'Demichica'
-    Demiromantic: 'Demirrománti{inflection_c}'
-    Demisexual: 'Demisexual'
+    Demiboy: 'Demi-garoto'
+    Demigender: 'Demigênero'
+    Demigirl: 'Demi-garota'
+    Demiromantic: 'Demirromânti{inflection_c}'
+    Demisexual: 'Demissexual'
     Diamoric: 'Diamóri{inflection_c}'
-    Enbian: 'Nobian{inflection}'
+    Enbian: 'Nãobian{inflection}'
     Fa*afafine: 'Fa''afafine'
     Gay: 'Gay'
-    Gender_Questioning: 'Cuestionándose el género'
-    Genderfae: 'Hadagénero'
-    Genderfaun: 'Faunogénero'
-    Genderfluid: 'Género fluido'
-    Genderflux: 'Flujogénero'
-    Genderqueer: 'Género queer'
-    Greyasexual: 'Grisexual'
-    Greyaromantic: 'Grisrrománti{inflection_c}'
-    Gynesexual: 'Ginosexual'
-    Heteroflexible: 'Heteroflexible'
+    Gender_Questioning: 'Questionando o seu gênero'
+    Genderfae: 'Fadagênero'
+    Genderfaun: 'Faunogênero'
+    Genderfluid: 'Gênero-fluido'
+    Genderflux: 'Fluxo-gênero'
+    Genderqueer: 'Gênero queer'
+    Greyasexual: 'Assexual cinza'
+    Greyaromantic: 'Arromânti{inflection_c} cinza'
+    Gynesexual: 'Ginossexual'
+    Heteroflexible: 'Heteroflexível'
+    Heteroromantic: 'Heterorrómanti{inflection_c}'
+    Heterosexual: 'Heterossexual'
     Hijra: 'Hijra'
-    Homoflexible: 'Homoflexible'
-    Intersex: 'Intersexual'
+    Homoflexible: 'Homoflexível'
+    Homoromantic: 'Homorrómanti{inflection_c}'
+    Intersex: 'Intersexo'
     LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Orgullo de cuero'
-    Lesbian: 'Lesbiana'
+    Leather_Pride: 'Orgulho couro'
+    Lesbian: 'Lésbica'
+    Lesbiromantic: 'Lesbirrómanti{inflection_c}'
     Maverique: 'Maverique'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebulosarrománti{inflection_c}'
-    Neopronouns: 'Neopronombres'
-    Neutrois: 'Neutr{inflection}'
-    Nonbinary: 'No binari{inflection}'
-    Omnisexual: 'Omnisexual'
-    Oriented_Aroace: 'Arro-ase orientad{inflection}'
-    Pangender: 'Pangénero'
-    Pansexual: 'Pansexual'
+    Nebularomantic: 'Nebulosarromânti{inflection_c}'
+    Neopronouns: 'Neopronomes'
+    Neutrois: 'Neutrê'
+    Nonbinary: 'Não-binári{inflection}'
+    Omniromantic: 'Omnirrómanti{inflection_c}'
+    Omnisexual: 'Omnissexual'
+    Oriented_Aroace: 'Arro-ace orientad{inflection}'
+    Pangender: 'Pangênero'
+    Panromantic: 'Panrrómanti{inflection_c}'
+    Pansexual: 'Panssexual'
     Polyamorous: 'Poliamoros{inflection}'
-    Polysexual: 'Polisexual'
-    Pomosexual: 'Pomosexual'
+    Polyromantic: 'Polirrómanti{inflection_c}'
+    Polysexual: 'Polissexual'
+    Pomoromantic: 'Pomorrómanti{inflection_c}'
+    Pomosexual: 'Pomossexual'
     Progress_Pride: 'Orgullo progresivo'
-    Queer: 'Queer (cuir)'
+    Queer: 'Queer'
     Queerian: 'Queerian{inflection}'
-    Queerplatonic: 'Queerplatóni{inflection_c}'
-    Quoiromantic: 'Queerrománti{inflection_c}'
+    Queerplatonic: 'Queerplatôni{inflection_c}'
+    Quoiromantic: 'Queerromânti{inflection_c}'
     Sapphic: 'Sáfi{inflection_c}'
     Sexuality_Questioning: 'Cuestionándose la sexualidad'
     Straight_Ally: 'Aliad{inflection} hetero'
     Toric: 'Tóri{inflection_c}'
     Transfeminine: 'Transfemenin{inflection}'
-    Transgender: 'Transgénero'
+    Transgender: 'Transgênero'
     Transmasculine: 'Transmasculin{inflection}'
     Transneutral: 'Transneutr{inflection}'
-    Trigender: 'Trigénero'
-    Trixic: 'Tríci{inflection_c}'
-    Two_Spirit: 'Dos espíritus'
-    Xenogender: 'Xenogénero'
+    Trigender: 'Trigênero'
+    Trixic: 'Trízi{inflection_c}'
+    Two_Spirit: 'Dois-espíritos'
+    Xenogender: 'Xenogênero'
 
