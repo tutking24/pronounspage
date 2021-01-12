@@ -1,153 +1,153 @@
 title: 'nl.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+description: 'Usage examples of personal pronouns and gender neutral language.'  # TODO
 
 home:
-    link: 'Startseite'
-    header: 'Pronomen'
-    headerLong: 'Liste von Pronomen'
-    why: 'Warum sind Pronomen wichtig?'
+    link: 'Startpagina'
+    header: 'Voornaamwoorden'
+    headerLong: 'Lijst met voornaamwoorden'
+    why: 'What''s the deal with pronouns?'
     about:
         - >
-            Wir alle haben Pronomen. Es sind die Wörter, die wir nutzen, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”},sodass wir automatisch davon ausgehen, welches aufgrund des Aussehens zu verwenden ist.
-            Aber in Wahrheit ist es nicht so einfach…
+            We all have pronouns. They're those words that we use instead of calling someone by their name every time we mention them.
+            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
+            But it's actually not that simple…
         - >
-            Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
-            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden, als zuerst vermutet.
-            Manche Menschen passen nicht in die Boxen von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
+            Gender is complicated. Some people “don't look like” their gender.
+            Some prefer being called in a different way from what you'd assume.
+            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
         - >
-            Mit diesem Tool kannst du deine Pronomen, mit Beispielsätzen, verlinken,
-            sodass du Leuten zeigen kannst wie du genannt werden willst.
+            This tool lets you share a link to your pronouns, with example sentences,
+            so that you can show people how you like to be called.
         - >
-            Warum ist das wichtig? Why does it matter? Einfach wegen des menschlichen Anstands.
-            Du würdest Lea nicht “Marie” nennen, nur weil dir der Name besser gefällt
-            Oder weil “sie wie eine Marie für dich aussieht”.
-            Oder auch wenn sie in der Geburtsurkunde “Marie” stehen <em>hat</em>,
-            aber sie diesen Namen absolut hasst und lieber “Lea” benutzt.
-            Und es ist dasselbe mit Pronomen –
-            Wenn du einer anderen Person gegenüber nicht unhöflich sein willst, sprich sie richtig an.
-            Der einzige Unterschied ist, dass wir die Namen meistens kennen, die Pronomen hingegen nicht.
-            Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Das müssen wir ändern!
-    pronouns: 'Liste verbreiteter Pronomen'
+            Why does it matter? Because of simple human decency.
+            You wouldn't call Ashley “Samantha” just because you like that name more
+            or because “she looks like a Samantha to you”.
+            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
+            but she absolutely hates it and prefers to use “Ashley”.
+            And it's the exact same story with pronouns –
+            if you don't want to be rude towards someone, please address them properly.
+            The only difference is that we usually know names, but not pronouns.
+            We introduce ourselves with a name, but not pronouns. Let's change that!
+    pronouns: 'List of popular pronouns'
     generator:
         header: 'Generator'
         description: >
-            Du kannst dieses Tool auch nutzen um die Lücken zu füllen
-            und gleich einen Link generieren um ihn mit anderen zu teilen.
-        button: 'Zeige den Generator'
-        header2: 'Generiere einen Link'
-        base: 'Ausgehend von'
-        alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er” or „sie”.'
+            You can also use this tool where you out the blanks in sentences
+            and generate a link ready to share with others.
+        button: 'Show the generator'
+        header2: 'Generate a link'
+        base: 'Based on'
+        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'What''s the deal with pronouns?'
 
 pronouns:
-    examples: 'Beispiel Nutzung in Sätzen'
+    examples: 'Example usage in sentences'
     plural: 'Plural'
-    intro: 'Meine Pronomen sind'
-    normative: 'Normativ'
+    intro: 'Mijn voornaamwoorden zijn'
+    normative: 'Normative'
     alt:
-        button: 'Generiere einen link zu austauschbaren Formen'
-        header: 'Austauschbare Formen'
-        raw: 'austauschbar'
-    generated: 'Diese Pronomen wurden mit Hilfe eines Generators erstellt. Das Team von pronouns.page ist nicht verantwortlich für diese.'
+        button: 'Generate a link to interchangeable forms'
+        header: 'Interchangeable forms'
+        raw: 'interchangeable'
+    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
     any:
-        header: 'Beliebige Pronomen'
-        short: 'beliebig'
+        header: 'Any pronouns'
+        short: 'any'
         description: >
-            Auch wenn es für manche Menschen sehr wichtig ist bestimmte Pronomen zu nutzen wenn über sie geredet wird,
-            macht es anderen nichts aus - solange der Kontext klar ist über wen gesprochen wird.
+            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
+            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
         options: 'check out the options [share]{/=here}.'
-    others: 'Andere Formen'
-    othersRaw: 'andere'
-    or: 'oder'
-    grammarTable: 'Tabelle'
+    others: 'Other forms'
+    othersRaw: 'other'
+    or: 'or'
+    grammarTable: 'Table'
 
 sources:
-    header: 'Quellen'
-    headerLong: 'Beispiele aus kulturellen Texten'
-    headerLonger: 'Geschlechtsneutrale Sprache in kulturellen Texten'
-    subheader: 'Textkorpus der geschlechtsneutralen Sprache'
-    toc: 'Inhaltsverzeichnis anzeigen'
+    header: 'Bronnen'
+    headerLong: 'Examples from cultural texts'
+    headerLonger: 'Gender neutral language in cultural texts'
+    subheader: 'Text corpus of gender neutral language'
+    toc: 'Show table of contents'
     type:
-        All: 'Alle'
-        Book: 'Bücher'
-        Article: 'Artikel'
-        Movie: 'Filme'
-        Series: 'Serien'
-        Song: 'Musik'
-        Poetry: 'Gedichte'
-        Other: 'Sonstiges'
+        All: 'All'
+        Book: 'Books'
+        Article: 'Articles'
+        Movie: 'Movies'
+        Series: 'Series'
+        Song: 'Music'
+        Poetry: 'Poetry'
+        Other: 'Other'
     submit:
-        header: 'Reiche ein Beispiel zum ergänzen ein'
-        action: 'übermitteln'
-        pronouns: 'Welche Pronomen wurden genutzt?'
-        pronounsInfo: 'Gebe die einfachste Form des PRonomen ein, so wie es im Link ist. Z.B. “xier”, “er_sie”'
-        type: 'Quellentyp'
-        author: 'Autor'
-        title: 'Titel'
-        extra: 'Weitere Info (Übersetzer, Name der Zeitung, …)'
-        year: 'Erscheinungsjahr (der deutschen Version)'
-        fragments: 'Fragmente'
-        comment: 'Kommentar'
-        link: 'Link zum Inhalt'
-        thanks: 'Danke für deinen Beitrag!'
-        another: 'Ein weiteres Beispiel einreichen'
-        moderation: 'Einreichungen müssen erst genehmigt werden, bevor sie veröffentlicht werden.'
-        key: 'Key'  # TODO
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        header: 'Submit an example to be added'
+        action: 'Submit'
+        pronouns: 'Which pronouns have been used?'
+        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
+        type: 'Source type'
+        author: 'Author'
+        title: 'Title'
+        extra: 'Additional info (translator, name of journal, …)'
+        year: 'Release year (of the English version)'
+        fragments: 'Fragments'
+        comment: 'Comment'
+        link: 'Link to the content'
+        thanks: 'Thanks for contributing!'
+        another: 'Submit another one'
+        moderation: 'Submissions will have to get approved before getting published.'
+        key: 'Key'
+        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
+        images: 'Images'
+    otherVersions: 'In other languages'
+    referenced: 'Examples of use'
 
 nouns:
-    header: 'Wörterbuch'
-    headerLong: 'Wörterbuch der neutralen Nomen'
-    headerLonger: 'Wörterbuch für geschlechtsneutrale Sprache'
-    description: 'Es sind nicht nur Pronomen! Schaut euch unser Wörterbuch für geschlechtsneutrale Nomen an.'
+    header: 'Woordenboek'
+    headerLong: 'Dictionary of neutral nouns'
+    headerLonger: 'Dictionary of gender neutral language'
+    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
     intro:
         - >
-            Inklusive und geschlechtsneutrale Sprache heißt nicht nur die Pronomen einer Person zu respektieren.
-            Auch die Beschreibung des Jobs, der Position, der Beziehung, etc.,
-            kann in einer Weise genutzt werden, die nicht gleich auf das Geschlecht schließen lässt.
-            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jeder Ehepartner ist eine “Ehefrau” or ein “Ehemann”.
+            Inclusive and gender neutral is not just respecting someone's pronouns.
+            It's also describing their job, position, relationship etc.
+            in a way that doesn't assume their gender.
+            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
         - >
-            Wenn du dich auf eine Person beziehst, deren Geschlecht du nicht kennst,
-            auf eine Gruppe gemischten Geschlechts
-            und vor allem wenn es eine Nicht-Binäre Person ist die dies bevorzugt,
-            nutze die neutrale Form.
+            When referring to someone whose gender you don't know,
+            to a group of people of mixed gender,
+            and especially to nonbinary people who explicitly prefer them,
+            use the neutral forms.
         - >
-            Nachfolgend findest du eine Art Wörterbuch für Wörter auf die du achten solltest.
-            Du kannst dazu beitragen und deine Vorschläge hinzufügen.
+            Below we present a dictionary of the words to watch out for.
+            You can contribute to it and add your suggestions.
 
-    approved: 'freigegebene Einträge'
-    pending: 'auf Moderation wartend'
-    edit: 'Änderung vorschlagen'
-    edited: 'Änderungsvorschlag'
-    editing: 'Du bearbeitest einen bestehenden Eintrag'
-    empty: 'Keine Wörter gefunden die deinen Kriterien entsprechen.'
+    approved: 'approved entries'
+    pending: 'awaiting moderation'
+    edit: 'Propose a change'
+    edited: 'Proposed change of'
+    editing: 'You''re editing an existing entry'
+    empty: 'No words found that match your criteria.'
 
     submit:
-        action: 'Einreichen'
-        actionLong: 'Ein Wort einreichen'
-        thanks: 'Danke für deinen Beitrag!'
-        another: 'Einen weiteren Eintrag einreichen'
-        moderation: 'Einreichungen müssen erst genehmigt werden, bevor sie veröffentlicht werden.'
+        action: 'Submit'
+        actionLong: 'Submit a word'
+        thanks: 'Thank you for contributing!'
+        another: 'Submit another one'
+        moderation: 'Submissions will have to get approved before getting published.'
 
-    template: 'Eine Vorlage nutzen.'
-    root: 'Wurzel'
+    template: 'Use a template'
+    root: 'Root'
 
-    masculine: 'Maskulin'
-    masculineShort: 'Mask.'
-    feminine: 'Feminin'
-    feminineShort: 'Fem.'
-    neuter: 'Neutral'
-    neuterShort: 'Neutr.'
+    masculine: 'masculine'
+    masculineShort: 'masc.'
+    feminine: 'feminine'
+    feminineShort: 'fem.'
+    neuter: 'neutral'
+    neuterShort: 'neutr.'
 
-    singular: 'Singular'
-    singularShort: 'Sing.'
-    plural: 'Plural'
-    pluralShort: 'Pl.'
+    singular: 'singular'
+    singularShort: 'sing.'
+    plural: 'plural'
+    pluralShort: 'pl.'
 
 faq:
     header: 'FAQ'
@@ -365,18 +365,18 @@ user:
         disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'Omschrijving'
+    names: 'Namen'
+    pronouns: 'Voornaamwoorden'
     pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
     pronounsNotFound: 'We can''t find a link to this pronoun!'
-    words: 'Words'
-    birthday: 'Age'
+    words: 'Woorden'
+    birthday: 'Leeftijd'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
+    flags: 'Vlaggen'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     links: 'Links'
-    column: 'Column'
+    column: 'Kolom'
 
     list: 'Your cards'
     init: 'Create a card'
@@ -462,83 +462,97 @@ localise:
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'  # TODO
+        instruction: 'Click here or drag your pics here'
+        instructionShort: 'Upload'
 
 error:
-    generic: 'Something went wrong, please try again…'  # TODO
+    generic: 'Something went wrong, please try again…'
 
-flags:
-    Abrosexual: 'Abrosexual'
-    Achillean: 'Aquilean{inflection}'
-    Agender: 'Agénero'
-    Anarcha-Queer: 'Anarco-queer'
-    Androgyne: 'Andrógin{inflection}'
-    Androsexual: 'Androsexual'
-    Aporagender: 'Aporagénero'
-    Archaeopronouns: 'Arqueopronombres'
-    Aroace: 'Arro-ase'
-    Aromantic: 'Arrománti{inflection_c}'
-    Asexual: 'Asexual'
-    Autigender: 'Autisgénero'
-    Bear: 'Oso'
-    Bigender: 'Bigénero'
-    Bisexual: 'Bisexual'
+Flags:
+    Abroromantic: 'Abroromantisch'
+    Abrosexual: 'Abroseksueel'
+    Achillean: 'Achilleaan'
+    Agender: 'Agender'
+    Alloromantic_Asexual: 'Allromantisch aseksueel'
+    Anarcha-Queer: 'Queeranarchisme'
+    Androgyne: 'Androgyn'
+    Androsexual: 'Androseksueel'
+    Aporagender: 'Aporagender'
+    Aroace: 'Aroace'
+    Aromantic: 'Aromantisch'
+    Aromantic_Allosexual: 'Aromantisch alloseksueel'
+    Asexual: 'Aseksueel'
+    Autigender: 'Autigender'
+    Bear: 'Beer'
+    Bicurious: 'Bicurieus'
+    Bigender: 'Bigender'
+    Bisexual: 'Biseksueel'
     Butch: 'Butch'
-    Ceterosexual: 'Ceterosexual'
-    Cis_Ally: 'Aliad{inflection} cis'
-    Demiboy: 'Demichico'
-    Demigender: 'Demigénero'
-    Demigirl: 'Demichica'
-    Demiromantic: 'Demirrománti{inflection_c}'
-    Demisexual: 'Demisexual'
-    Diamoric: 'Diamóri{inflection_c}'
-    Enbian: 'Nobian{inflection}'
+    Ceteroromantic: 'Ceteroromantisch'
+    Ceterosexual: 'Ceteroseksueel'
+    Cis_Ally: 'Cis ally'
+    Demiboy: 'Demi-jongen'
+    Demigender: 'Demigender'
+    Demigirl: 'Demimeisje'
+    Demiromantic: 'Demiromantisch'
+    Demisexual: 'Demiseksueel'
+    Diamoric: 'Diamorisch'
+    Enbian: 'Enbisch'
     Fa*afafine: 'Fa''afafine'
     Gay: 'Gay'
-    Gender_Questioning: 'Cuestionándose el género'
-    Genderfae: 'Hadagénero'
-    Genderfaun: 'Faunogénero'
-    Genderfluid: 'Género fluido'
-    Genderflux: 'Flujogénero'
-    Genderqueer: 'Género queer'
-    Greyasexual: 'Grisexual'
-    Greyaromantic: 'Grisrrománti{inflection_c}'
-    Gynesexual: 'Ginosexual'
-    Heteroflexible: 'Heteroflexible'
+    Gender_Questioning: 'Genderbevragend'
+    Genderfae: 'Genderfee'
+    Genderfaun: 'Genderfaun'
+    Genderfluid: 'Genderfluïde'
+    Genderflux: 'Genderflux'
+    Genderqueer: 'Genderqueer'
+    Greyasexual: 'Grijsaseksueel'
+    Greyaromantic: 'Grijsaromantisch'
+    Gynesexual: 'Gynoseksueel'
+    Heteroflexible: 'Heteroflexibel'
+    Heteroromantic: 'Heteroromantisch'
+    Heterosexual: 'Heteroseksueel'
     Hijra: 'Hijra'
-    Homoflexible: 'Homoflexible'
-    Intersex: 'Intersexual'
-    LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Orgullo de cuero'
-    Lesbian: 'Lesbiana'
-    Maverique: 'Maverique'
+    Homoflexible: 'Homoflexibel'
+    Homoromantic: 'Homoromantisch'
+    Intersex: 'Intersekse'
+    LGBTQ: 'LHBTQ'
+    Leather_Pride: 'Leather pride'
+    Lesbian: 'Lesbisch'
+    Lesbiromantic: 'Lesbiromantisch'
+    Maverique: 'Maveriek'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebulosarrománti{inflection_c}'
-    Neopronouns: 'Neopronombres'
-    Neutrois: 'Neutr{inflection}'
-    Nonbinary: 'No binari{inflection}'
-    Omnisexual: 'Omnisexual'
-    Oriented_Aroace: 'Arro-ase orientad{inflection}'
-    Pangender: 'Pangénero'
-    Pansexual: 'Pansexual'
-    Polyamorous: 'Poliamoros{inflection}'
-    Polysexual: 'Polisexual'
-    Pomosexual: 'Pomosexual'
-    Progress_Pride: 'Orgullo progresivo'
-    Queer: 'Queer (cuir)'
-    Queerian: 'Queerian{inflection}'
-    Queerplatonic: 'Queerplatóni{inflection_c}'
-    Quoiromantic: 'Queerrománti{inflection_c}'
-    Sapphic: 'Sáfi{inflection_c}'
-    Sexuality_Questioning: 'Cuestionándose la sexualidad'
-    Straight_Ally: 'Aliad{inflection} hetero'
-    Toric: 'Tóri{inflection_c}'
-    Transfeminine: 'Transfemenin{inflection}'
-    Transgender: 'Transgénero'
-    Transmasculine: 'Transmasculin{inflection}'
-    Transneutral: 'Transneutr{inflection}'
-    Trigender: 'Trigénero'
-    Trixic: 'Tríci{inflection_c}'
-    Two_Spirit: 'Dos espíritus'
-    Xenogender: 'Xenogénero'
+    Nebularomantic: 'Nebularomantisch'
+    Neopronouns: 'Neovoornaamwoorden'
+    Neutrois: 'Neutrois'
+    Nonbinary: 'Non-binair'
+    Omniromantic: 'Omniromantisch'
+    Omnisexual: 'Omniseksueel'
+    Oriented_Aroace: 'Aroace georienteerd'
+    Pangender: 'Pangender'
+    Panromantic: 'Panromantisch'
+    Pansexual: 'Panseksueel'
+    Polyamorous: 'Polyamoreus'
+    Polyromantic: 'Polyromantisch'
+    Polysexual: 'Polyseksueel'
+    Pomoromantic: 'Pomoromantisch'
+    Pomosexual: 'Pomoseksueel'
+    Progress_Pride: 'Progress pride'
+    Queer: 'Queer'
+    Queerian: 'Queerisch'
+    Queerplatonic: 'Queerplatonisch'
+    Quoiromantic: 'Quoiromantisch'
+    Sapphic: 'Sapphisch'
+    Sexuality_Questioning: 'Seksualiteit bevragend'
+    Straight_Ally: 'Hetero ally'
+    Toric: 'Tórisch'
+    Transfeminine: 'Transfeminien'
+    Transgender: 'Transgender'
+    Transmasculine: 'Transmasculien'
+    Transneutral: 'Transneutraal'
+    Trigender: 'Trigender'
+    Trixic: 'Trixisch'
+    Two_Spirit: 'Bispiritueel'
+    Xenogender: 'Xenogender'
+
 

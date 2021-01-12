@@ -1,11 +1,5 @@
 singular	plural	isHonorific
-{'pronoun_n} ist so süß.	{pronoun_n} sind so süß.	FALSE
-Ist das {pronoun_g} Hund?		FALSE
-Ich bin {pronoun_d} erst kürzlich begegnet.		FALSE
-Ich verstehe {pronoun_a} so gut.		FALSE
-Ist das {demonstrative_n}, {article_n} dich angerufen hat?	Sind das {demonstrative_n}, {article_n} dich angerufen haben?	FALSE
-Ist das {demonstrative_n}, {article_g} Kanninchen du gesehen hast?	Sind das {demonstrative_n}, {article_g} Kanninchen du gesehen hast?	FALSE
-Ist das {demonstrative_n}, {article_d} mein Buch gefählt?	Sind das {demonstrative_n}, {article_d} mein Buch gefählt?	FALSE
-Ist das {demonstrative_n}, {article_a} du magst?	Sind das {demonstrative_n}, {article_a} du magst?	FALSE
-Mein{possesive_object} Freund{noun} hat mich gerade angerufen.	Mein{possesive_object} Freund{noun} haben mich gerade angerufen.	FALSE
-
+Ik denk dat {nominative} erg mooi is.		FALSE
+Ik vroeg {accusative} of ik {pronominal_poss} potlood mag lenen.		FALSE
+Dat huis is het {predicative_poss}.		FALSE
+{'nominative} ziet {reflexive} in de spiegel.		FALSE
