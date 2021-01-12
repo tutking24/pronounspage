@@ -91,7 +91,6 @@ contact:
     team:
         enabled: true
         route: 'team'  # TODO
-        name: 'The “Neutral Language Council” collective'  # TODO
     blog: {}
 
 

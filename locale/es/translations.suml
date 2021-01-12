@@ -320,7 +320,7 @@ contact:
     header: 'Contacto'
     authors: 'Autores/as/xs del sitio web'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
+        name: 'Cooperativa “Revolucionaria Academia Española”'
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives

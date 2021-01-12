@@ -447,7 +447,6 @@ contact:
     team:
         enabled: true
         route: 'kolektyw-rjn'
-        name: 'Kolektyw „Rada Języka Neutralnego”'
     blog:
         podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
         gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'

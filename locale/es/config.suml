@@ -88,7 +88,6 @@ contact:
     team:
         enabled: true
         route: 'team'  # TODO
-        name: 'Cooperativa “Revolucionaria Academia Española”'
     blog: {}
 
 support:

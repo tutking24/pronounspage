@@ -183,7 +183,6 @@ contact:
     team:
         enabled: true
         route: 'team'
-        name: 'The “Neutral Language Council” collective'
     blog:
         creating-new-language-version: 'How to create a new language version of Pronouns.page'
 
