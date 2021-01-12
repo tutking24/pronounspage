@@ -230,7 +230,8 @@ profile:
 census:
     enabled: false
 
-redirects: []
+redirects:
+    - { from: '^/blog/neutral-language-council$', to: '/team' }
 
 api:
     examples:

@@ -740,6 +740,7 @@ redirects:
     - { from: '^/s%C5%82ownik$', to: '/s%C5%82owniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
+    - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolekyw-rjn' }
 
 api:
     examples:
