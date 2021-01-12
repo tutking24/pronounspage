@@ -468,7 +468,7 @@ images:
 error:
     generic: 'Something went wrong, please try again…'
 
-Flags:
+flags:
     Abroromantic: 'Abroromantisch'
     Abrosexual: 'Abroseksueel'
     Achillean: 'Achilleaan'
