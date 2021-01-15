@@ -70,7 +70,7 @@
                             </nuxt-link>
                         </li>
                         -->
-                        <template v-if="$$isGranted('terms')">
+                        <template v-if="$isGranted('terms')">
                             <li v-if="!s.el.approved">
                                 <button class="btn btn-concise btn-success btn-sm m-1" @click="approve(s.el)">
                                     <Icon v="check"/>
