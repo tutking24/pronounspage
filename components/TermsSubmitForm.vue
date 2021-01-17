@@ -40,9 +40,20 @@
                         </td>
                     </tr>
                     <tr v-if="$isGranted('terms')">
-                        <td colspan="3">
+                        <td :colspan="$isGranted('terms') ? 1 : 3">
+                            <T>nouns.terms.category</T>
+                            <select v-model="form.category" class="form-control form-control-sm">
+                                <option value=""></option>
+                                <option v-for="category in config.nouns.terms.categories" :value="category">{{category}}</option>
+                            </select>
+                        </td>
+                        <td v-if="$isGranted('terms')">
                             <T>profile.flags</T>
                             <ListInput v-model="form.flags" v-slot="s"/>
+                        </td>
+                        <td v-if="$isGranted('terms')">
+                            <T>nouns.terms.images</T>
+                            <ImageWidget v-model="form.images" multiple/>
                         </td>
                     </tr>
                     </tbody>
@@ -79,7 +90,9 @@
                     term: [''],
                     original: [],
                     definition: '',
+                    category: '',
                     flags: [],
+                    images: [],
                     base: null,
                 },
                 submitting: false,
@@ -97,7 +110,9 @@
                     term: [''],
                     original: [],
                     definition: '',
+                    category: '',
                     flags: [],
+                    images: [],
                     base: null,
                 };
             },
@@ -106,7 +121,9 @@
                     term: word.term,
                     original: word.original,
                     definition: word.definition,
+                    category: word.category,
                     flags: word.flags,
+                    images: word.images,
                     base: word.id,
                 }
                 this.afterSubmit = false;

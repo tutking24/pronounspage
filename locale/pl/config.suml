@@ -81,6 +81,13 @@ nouns:
         hashNamespace: 'inkluzywny'
     terms:
         enabled: false
+        categories:
+            - 'orientacja seksualna'
+            - 'orientacja romantyczna'
+            - 'określenie orientacji romantycznej i seksualnej'
+            - 'płeć'
+            - 'ekspresja płciowa'
+            - 'model relacji'
         hashNamespace: 'terminologia'
 
 names:

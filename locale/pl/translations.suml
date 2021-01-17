@@ -357,7 +357,9 @@ nouns:
                 Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
                 i jakie proponujemy dla nich polskie tłumaczenia.
         term: 'Określenie'
-        original: 'Pochodzenie'
+        original: 'Pochodzenie, określenie angielskie'
+        category: 'Kategoria'
+        images: 'Dodatkowe obrazki, spoza katalogu flag'
         definition: 'Definicja'
 
 names:

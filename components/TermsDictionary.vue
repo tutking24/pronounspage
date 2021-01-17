@@ -39,23 +39,36 @@
                 <td>
                     <p>
                         <strong>{{s.el.term.join(', ')}}</strong>
-                        <span v-if="s.el.original.length">({{s.el.original.join(', ')}})</span>
+                        <span v-if="s.el.original.length">({{s.el.original.join('; ')}})</span>
                         – {{s.el.definition}}
+                        <template v-if="s.el.category">
+                            <br/>
+                            <span class="badge badge-primary">
+                                {{s.el.category}}
+                            </span>
+                        </template>
                     </p>
 
-                    <p v-if="s.el.flags.length" class="text-center">
+                    <p v-if="s.el.flags.length || s.el.images.length" class="text-center">
                         <img v-for="flag in s.el.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
+                        <img v-for="image in s.el.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
                     </p>
 
-                    <small v-if="s.el.base && entries[s.el.base]">
+                    <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
                         <p>
                             <strong>{{s.el.term.join(', ')}}</strong>
-                            <span v-if="s.el.original.length">({{s.el.original.join(', ')}})</span>
+                            <span v-if="s.el.original.length">({{s.el.original.join('; ')}})</span>
                             – {{s.el.definition}}
+                            <template v-if="s.el.category">
+                                <br/>
+                                <span class="badge badge-primary">
+                                {{s.el.category}}
+                            </span>
+                            </template>
                         </p>
-                    </small>
+                    </div>
                 </td>
                 <td>
                     <ul class="list-unstyled list-btn-concise">
