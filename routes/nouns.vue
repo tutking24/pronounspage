@@ -1,11 +1,11 @@
 <template>
     <div>
+        <NounsNav/>
+
         <h2>
             <Icon v="book"/>
             <T>nouns.headerLonger</T>
         </h2>
-
-        <NounsNav/>
 
         <section>
             <T>nouns.intro</T>

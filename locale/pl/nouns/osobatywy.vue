@@ -1,17 +1,12 @@
 <template>
     <div>
-        <h2>
-            <Icon v="book"/>
-            <T>nouns.headerLonger</T>
-        </h2>
-
         <NounsNav/>
 
-        <h3>
+        <h2>
             <Icon v="user-friends"/>
             <T>nouns.personNouns.header</T>
             <small><NormativeBadge/></small>
-        </h3>
+        </h2>
 
         <section>
             <T>nouns.personNouns.info</T>

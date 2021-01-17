@@ -1,16 +1,11 @@
 <template>
     <div>
-        <h2>
-            <Icon v="book"/>
-            <T>nouns.headerLonger</T>
-        </h2>
-
         <NounsNav/>
 
-        <h3>
+        <h2>
             <Icon v="deer"/>
             <T>nouns.neuterNouns.header</T>
-        </h3>
+        </h2>
 
         <div class="d-flex flex-column flex-md-row">
             <div>

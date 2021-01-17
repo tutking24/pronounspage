@@ -1,16 +1,11 @@
 <template>
     <div>
-        <h2>
-            <Icon v="book"/>
-            <T>nouns.headerLonger</T>
-        </h2>
-
         <NounsNav/>
 
-        <h3>
+        <h2>
             <Icon v="book-heart"/>
             <T>nouns.inclusive.headerLong</T>
-        </h3>
+        </h2>
 
         <section>
             <T>nouns.inclusive.info</T>

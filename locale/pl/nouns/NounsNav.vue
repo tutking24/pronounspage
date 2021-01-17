@@ -1,18 +1,18 @@
 <template>
     <section>
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2">
-            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`"
-               :class="['btn', $route.fullPath === `/${encodeURIComponent(config.nouns.route)}/${encodeURIComponent(route)}` ? 'btn-primary' : 'btn-outline-primary']">
+            <router-link v-for="{name, icon, route} in links" :to="buildRoute(route)"
+                         :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
-            </a>
+            </router-link>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2">
-            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`"
-               :class="['btn', $route.fullPath === `/${encodeURIComponent(config.nouns.route)}/${encodeURIComponent(route)}` ? 'btn-primary' : 'btn-outline-primary']">
+            <router-link v-for="{name, icon, route} in links" :to="buildRoute(route)"
+                         :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
-            </a>
+            </router-link>
         </div>
     </section>
 </template>
@@ -38,5 +38,13 @@
                 links,
             };
         },
+        methods: {
+            buildRoute(route) {
+                return `/${this.config.nouns.route}/${route}`;
+            },
+            isActiveRoute(route) {
+                return decodeURIComponent(this.$route.fullPath) === this.buildRoute(route);
+            },
+        }
     }
 </script>
