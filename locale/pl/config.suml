@@ -288,6 +288,15 @@ links:
                 jak choćby „Słownik Neutratywów Języka Polskiego” na fejsie,
                 i wydaje mi się to jednym z najciekawszych frontów walki o komunikacyjną przejrzystość polszczyzny w tym stuleciu,
                 o to, by język obejmował i wyrażał wszystkich, a nie tylko absolwentów kultury patriarchatu.
+        -
+            icon: 'newspaper'
+            url: 'https://babaodpolskiego.pl/2021/01/17/neutratywy/'
+            headline: 'Neutratywy – blog <strong>Baba od polskiego</strong>'
+            quote: >
+                W spektrum możliwości  neutralnego języka możecie odnaleźć się na stronie zaimki.pl
+                (to także portal dla wszystkich, którzy w języku szukają przestrzeni dla siebie).
+                Osoby niebinarne nie mają z jego użyciem problemów, to wpis dla osób cispłciowych,
+                które – nie oszukujmy się – nawet przy wielkiej empatii nie poczują tego samego dyskomfortu, co osoby niebinarne.
     socials:
         -
             icon: 'twitter'
