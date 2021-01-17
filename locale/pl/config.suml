@@ -68,17 +68,20 @@ sources:
 nouns:
     enabled: true
     route: 'słowniki'
-    collapsable: true
+    collapsable: false
     plurals: true
     pluralsRequired: true
     declension: true
     submit: true
     templates: true
-    hashNamespace: 'neutratywy'
+    subroutes:
+        - 'neutratywy'
+        - 'dukatywy'
+        - 'osobatywy'
     inclusive:
         enabled: false
         categories: ['interpłciowość', 'lgbtq+', 'niepełnosprawność', 'rasa', 'trans']
-        hashNamespace: 'inkluzywny'
+        route: 'inkluzywny'
     terms:
         enabled: false
         categories:
@@ -88,7 +91,7 @@ nouns:
             - 'płeć'
             - 'ekspresja płciowa'
             - 'model relacji'
-        hashNamespace: 'terminologia'
+        route: 'terminologia'
 
 names:
     enabled: false

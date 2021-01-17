@@ -1,13 +1,13 @@
 <template>
     <section>
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2">
-            <a v-for="(icon, name) in links" :href="'#' + $t(`nouns.${name}.id`)" class="btn btn-outline-primary">
+            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`" class="btn btn-outline-primary">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
             </a>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2">
-            <a v-for="(icon, name) in links" :href="'#' + $t(`nouns.${name}.id`)" class="btn btn-outline-primary">
+            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`" class="btn btn-outline-primary">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
             </a>
@@ -18,18 +18,18 @@
 <script>
     export default {
         data() {
-            const links = {
-                neuterNouns: 'deer',
-                dukajNouns: 'ghost',
-                personNouns: 'user-friends',
-            }
+            const links = [
+                {name: 'neuterNouns', icon: 'deer', route: 'neutratywy'},
+                {name: 'dukajNouns', icon: 'ghost', route: 'dukatywy'},
+                {name: 'personNouns', icon: 'user-friends', route: 'osobatywy'},
+            ];
 
             if (this.config.nouns.inclusive.enabled) {
-                links['inclusive'] = 'book-heart';
+                links.push({name: 'inclusive', icon: 'book-heart', route: this.config.nouns.inclusive.route});
             }
 
             if (this.config.nouns.terms.enabled) {
-                links['terms'] = 'flag';
+                links.push({name: 'terms', icon: 'flag', route: this.config.nouns.terms.route});
             }
 
             return {

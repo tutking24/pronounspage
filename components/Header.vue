@@ -114,11 +114,23 @@
                 }
 
                 if (this.config.nouns.enabled) {
+                    const extras = [];
+                    for (let subroute of this.config.nouns.subroutes || []) {
+                        extras.push(`/${this.config.nouns.route}/${subroute}`);
+                    }
+                    if (this.config.nouns.inclusive.enabled) {
+                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.inclusive.route}`);
+                    }
+                    if (this.config.nouns.terms.enabled) {
+                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.terms.route}`);
+                    }
+
                     links.push({
                         link: '/' + this.config.nouns.route,
                         icon: 'book',
                         text: this.$t('nouns.header'),
                         textLong: this.$t('nouns.headerLong'),
+                        extra: extras,
                     });
                 }
 
