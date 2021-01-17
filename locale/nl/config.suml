@@ -37,6 +37,7 @@ pronouns:
     slashes: true
     avoiding: false
     others: 'Other pronouns'
+    threeForms: true
 
 pronunciation:
     enabled: true

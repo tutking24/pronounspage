@@ -9,19 +9,19 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Subject</th>
-                    <th>Object</th>
-                    <th>Possessive determiner</th>
-                    <th>Possessive pronoun</th>
+                    <th>nominative TODO</th>
+                    <th>accusative TODO</th>
+                    <th>pronominal_poss TODO</th>
+                    <th>predicative_poss TODO</th>
                     <th>Reflexive</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_determiner" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="nominative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="accusative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronominal_poss" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="predicative_poss" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
                 </tr>
                 </tbody>
