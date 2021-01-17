@@ -1,10 +1,17 @@
 <template>
     <div>
         <h2>
+            <Icon v="book"/>
+            <T>nouns.headerLonger</T>
+        </h2>
+
+        <NounsNav/>
+
+        <h3>
             <Icon v="user-friends"/>
             <T>nouns.personNouns.header</T>
             <small><NormativeBadge/></small>
-        </h2>
+        </h3>
 
         <section>
             <T>nouns.personNouns.info</T>
@@ -70,8 +77,10 @@
 <script>
     import {Noun} from "../../../src/classes";
     import {head} from "../../../src/helpers";
+    import NounsNav from "./NounsNav";
 
     export default {
+        components: { NounsNav },
         data() {
             return {
                 personNouns: [

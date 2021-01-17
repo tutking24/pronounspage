@@ -1,9 +1,16 @@
 <template>
     <div>
         <h2>
+            <Icon v="book"/>
+            <T>nouns.headerLonger</T>
+        </h2>
+
+        <NounsNav/>
+
+        <h3>
             <Icon v="ghost"/>
             <T>nouns.dukajNouns.header</T>
-        </h2>
+        </h3>
 
         <div class="d-flex flex-column flex-md-row">
             <div>
@@ -97,8 +104,10 @@
 <script>
     import {Noun, NounDeclension} from "../../../src/classes";
     import {head} from "../../../src/helpers";
+    import NounsNav from "./NounsNav";
 
     export default {
+        components: { NounsNav },
         data() {
             return {
                 dukajNouns: [

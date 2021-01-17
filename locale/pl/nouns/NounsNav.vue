@@ -1,13 +1,15 @@
 <template>
     <section>
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2">
-            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`" class="btn btn-outline-primary">
+            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`"
+               :class="['btn', $route.fullPath === `/${encodeURIComponent(config.nouns.route)}/${encodeURIComponent(route)}` ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
             </a>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2">
-            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`" class="btn btn-outline-primary">
+            <a v-for="{name, icon, route} in links" :href="`/${config.nouns.route}/${route}`"
+               :class="['btn', $route.fullPath === `/${encodeURIComponent(config.nouns.route)}/${encodeURIComponent(route)}` ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
             </a>
