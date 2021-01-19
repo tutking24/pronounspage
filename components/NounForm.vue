@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="(synonym, i) in val" :key="i" class="input-group input-group-sm p-1">
-            <input type="text" class="form-control" v-model="val[i]" required ref="inp" maxlength="24">
+            <input type="text" class="form-control" v-model="val[i]" required ref="inp" :maxlength="maxlength">
             <div v-if="i || !required" class="input-group-append">
                 <button type="button" class="btn btn-outline-danger btn-sm" @click="remove(i)">
                     <Icon v="times"/>
@@ -20,7 +20,8 @@
     export default {
         props: {
             value: {required: true},
-            required: {type: Boolean}
+            required: {type: Boolean},
+            maxlength: {'default': 24},
         },
         data() {
             return {
