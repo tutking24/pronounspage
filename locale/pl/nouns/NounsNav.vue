@@ -1,14 +1,16 @@
 <template>
     <section>
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2">
-            <router-link v-for="{name, icon, route} in links" :to="buildRoute(route)"
+            <router-link v-for="{name, icon, route} in links" :key="name"
+                         :to="buildRoute(route)"
                          :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
             </router-link>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2">
-            <router-link v-for="{name, icon, route} in links" :to="buildRoute(route)"
+            <router-link v-for="{name, icon, route} in links" :key="name"
+                         :to="buildRoute(route)"
                          :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
                 <T>nouns.{{name}}.header</T>
