@@ -38,8 +38,8 @@
             <template v-slot:row="s"><template v-if="s">
                 <td>
                     <p>
-                        <strong>{{s.el.term.join(', ')}}</strong>
-                        <span v-if="s.el.original.length">({{s.el.original.join('; ')}})</span>
+                        <strong>{{s.el.term.map(x => x.trim()).join(', ')}}</strong>
+                        <span v-if="s.el.original.length">({{s.el.original.map(x => x.trim()).join('; ')}})</span>
                         – {{s.el.definition}}
                         <template v-if="s.el.category">
                             <br/>
