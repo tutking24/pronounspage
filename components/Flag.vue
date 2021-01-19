@@ -1,5 +1,5 @@
 <template>
-    <a v-if="link" :href="`/${config.nouns.route}#${config.nouns.terms.hashNamespace}/${link}`" :title="alt">
+    <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}/${link}`" :title="alt">
         <img :src="img" alt=""/>
         {{ name }}
     </a>
