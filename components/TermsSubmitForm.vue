@@ -33,7 +33,7 @@
                             <NounForm v-model="form.term" required maxlength="48"/>
                         </td>
                         <td>
-                            <NounForm v-model="form.original" maxlength="255"/>
+                            <NounForm v-model="form.original" maxlength="1024"/>
                         </td>
                         <td>
                             <textarea v-model="form.definition" class="form-control form-control-sm" required rows="3"></textarea>
