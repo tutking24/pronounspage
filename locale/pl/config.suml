@@ -516,11 +516,11 @@ profile:
         defaultPronoun: 'on_'
 
 census:
-    enabled: false
+    enabled: true
     route: 'spis'
     edition: '2021'
-    start: '2021-01-01T00:00:00+01:00'  # TODO
-    end: '2021-03-31T23:59:59+02:00'
+    start: '2021-02-01T00:00:00+01:00'
+    end: '2021-02-28T23:59:59+02:00'
     questions:
         -
             type: 'radio'
@@ -685,7 +685,7 @@ census:
                     Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
-                    Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki#terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
 
                 - >
                     Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”

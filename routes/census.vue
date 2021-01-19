@@ -60,7 +60,7 @@
                     <LinkedText :text="line"/>
                 </p>
             </div>
-            <form @submit.prevent="q++">
+            <form @submit.prevent="q++" ref="questionform">
                 <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
                     <div class="form-check mb-2" v-for="[option, help] in question.options">
                         <label class="form-check-label small">
@@ -225,6 +225,11 @@
                     });
                     this.finished = true;
                 }
+                this.$nextTick(() => {
+                    if (this.$refs.questionform) {
+                        this.$refs.questionform.querySelector('input,textarea').focus();
+                    }
+                });
             },
         },
         async beforeRouteLeave (to, from, next) {
