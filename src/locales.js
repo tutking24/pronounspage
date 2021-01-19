@@ -5,5 +5,6 @@ export default [
     ['nl', 'Nederlands', 'https://nl.pronouns.page', false],
     ['pl', 'Polski',     'https://zaimki.pl',        true],
     ['pt', 'Português',  'https://pt.pronouns.page', false],
+    ['yi', 'ייִדיש',      'https://yi.pronouns.page', false],
     ['zh', '中文',        'https://zh.pronouns.page', false],
 ];

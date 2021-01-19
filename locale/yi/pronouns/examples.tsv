@@ -1,0 +1,6 @@
+singular	plural	isHonorific
+איך טראַכט ‎אַז {pronoun_n} איז זייער ליב.	איך טראַכט ‎אַז {pronoun_n} זענען זייער ליב.	FALSE
+איז דאָס {pronoun_g} הויז?		FALSE
+איך האָב {pronoun_d} ערשט לעצטנס באַגעגנט.		FALSE
+איך פֿאַרשטיי {pronoun_a} זייער גוט.		FALSE
+איז דאָס {pronoun_n}, {article_n} וואָס האָט גערופן?	זענען דאָס {pronoun_n}, {article_n} וואָס האָבן גערופן?	FALSE

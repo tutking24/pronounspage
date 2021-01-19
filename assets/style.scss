@@ -114,3 +114,7 @@ blockquote {
     padding-left: $spacer;
     font-size: 1.1em;
 }
+
+[dir="rtl"] {
+    text-align: right;
+}
