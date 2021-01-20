@@ -64,11 +64,25 @@ faq:
     route: 'preguntas'
 
 links:
-    enabled: false
+    enabled: true
     route: 'enlaces'
     blogRoute: 'blog'
-    links: []
-    media: []
+    links:
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://www.aacademica.org/1.congreso.internacional.de.ciencias.humanas/1500'
+            headline: 'Fenómenos de convergencia y divergencia en el uso del lenguaje no binario'
+            extra: 'Descripción lingüística del uso de formas no binarias, en especial {/elle=elle/le}'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://accedacris.ulpgc.es/handle/10553/73757'
+            headline: 'El género no binario en la traducción al español: análisis del uso del lenguaje inclusivo no binario'
+            extra: 'Este trabajo aborda el uso de formas no binarias como resultado de traducciones del inglés al español.'
+    media:
+        -
+            icon: 'play-circle'
+            url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
+            headline: 'El lenguaje inclusivo de lxs polacxs – Ausir y Dante en un podcast <strong>Proyecto Polonia</strong>'
     socials:
         -
             icon: 'twitter'
