@@ -60,6 +60,21 @@
                 </nuxt-link>
             </div>
         </div>
+        <div :class="['hamburger-menu']"  :style="`opacity: ${hamburgerShown ? 1 : 0}`">
+            <button :class="['btn btn-outline-secondary btn-hamburger', hamburgerActive ? 'active' : '']"
+                    @click.stop="hamburgerActive = !hamburgerActive"
+            >
+                <Icon v="bars"/>
+            </button>
+            <div :class="['bg-white border p-3', hamburgerActive ? '' : 'd-none']">
+                <div class="btn-group-vertical btn-block nav-custom nav-custom-left mb-2">
+                    <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
+                        <Icon :v="link.icon"/>
+                        {{ link.textLong || link.text }}
+                    </nuxt-link>
+                </div>
+            </div>
+        </div>
         <div class="d-none d-md-block">
             <div class="btn-group btn-block nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
@@ -88,6 +103,12 @@
     import { mapState } from 'vuex'
 
     export default {
+        data() {
+            return {
+                hamburgerActive: false,
+                hamburgerShown: false,
+            };
+        },
         computed: {
             ...mapState([
                 'user',
@@ -220,6 +241,28 @@
                 this.$store.commit('setSpelling', spelling);
                 this.$cookies.set('spelling', this.$store.state.spelling);
             },
+            documentClicked() {
+                if (this.hamburgerActive) {
+                    this.hamburgerActive = false
+                }
+            },
+            updateShown() {
+                const st = document.body.scrollTop || document.querySelector('html').scrollTop;
+                this.hamburgerShown = st > 300;
+            },
+        },
+        created() {
+            if (process.client) {
+                document.addEventListener('click', this.documentClicked);
+                this.updateShown();
+                window.addEventListener('scroll', this.updateShown);
+            }
+        },
+        destroyed() {
+            if (process.client) {
+                document.removeEventListener('click', this.documentClicked);
+                document.removeEventListener('scroll', this.updateShown);
+            }
         },
     }
 </script>
@@ -248,8 +291,23 @@
         }
     }
 
+    .nav-custom-left {
+        .btn {
+            border-left: 1px solid $gray-500;
+            border-radius: 0;
+
+            &:hover, &:focus, &.active {
+                border-left: 3px solid $primary;
+                padding-left: calc(#{$btn-padding-x-sm} - 2px);
+                color: $primary;
+            }
+
+            text-align: left;
+        }
+    }
+
     @include media-breakpoint-up('md', $grid-breakpoints) {
-        .nav-custom {
+        .nav-custom:not(.nav-custom-left) {
             .btn {
                 border-bottom: 1px solid $gray-500;
                 border-radius: 0;
@@ -272,6 +330,22 @@
             }
             &:hover .higher {
                 text-decoration: underline;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: $spacer;
+        left: $spacer;
+        z-index: 1030;
+        transition: all .5s ease-in-out;
+        .btn-hamburger {
+            &:not(:active):not(:hover):not(:focus):not(.active) {
+                background-color: $white;
+            }
+            &.active {
+                background-color: $secondary;
             }
         }
     }
