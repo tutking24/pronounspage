@@ -10,7 +10,10 @@ pronouns:
     honorifics: false
     multiple:
         name: 'Interchangeable forms'
-        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        description: >
+            Many nonbinary people use more than one form interchangeably
+            and are fine with being called either of them.
+            Some like when others alternate between those forms when talking about them.
         examples: ['he&she', 'he&they', 'she&they']
     null:
         description: 'No pronouns / null pronouns / pronounless / nameself'
