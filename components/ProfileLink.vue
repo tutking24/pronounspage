@@ -2,7 +2,7 @@
     <span>
         <img v-if="provider.icon.startsWith('https://')" :src="provider.icon" class="icon"/>
         <Icon v-else :v="provider.icon" :set="provider.iconSet || 'l'"/>
-        <a :href="link" target="_blank" rel="noopener">
+        <a :href="linkTrimmed" target="_blank" rel="noopener">
             {{provider.text}}
         </a>
     </span>
@@ -57,11 +57,14 @@
             link: { required: true },
         },
         computed: {
+            linkTrimmed() {
+                return this.link.trim();
+            },
             provider() {
                 for (let name in LINK_PROVIDERS) {
                     if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
                     const provider = LINK_PROVIDERS[name];
-                    const m = this.link.match(provider.regex);
+                    const m = this.linkTrimmed.match(provider.regex);
                     if (m) {
                         return {
                             ...provider,
@@ -72,7 +75,7 @@
 
                 return {
                     icon: 'globe-europe',
-                    text: clearUrl(this.link),
+                    text: clearUrl(this.linkTrimmed),
                 }
             },
         }
