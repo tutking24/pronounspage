@@ -43,5 +43,6 @@
         bottom: $spacer;
         right: $spacer;
         transition: all .5s ease-in-out;
+        z-index: 1030;
     }
 </style>

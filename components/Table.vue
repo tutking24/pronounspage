@@ -2,6 +2,22 @@
     <section class="table-responsive">
         <table :class="['table table-striped table-hover', fixed ? 'table-fixed-' + columns : '']">
             <thead ref="thead">
+            <tr>
+                <td :colspan="columns + 1">
+                    <nav v-if="pages > 1">
+                        <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <li v-for="p in pagesRange" :class="['page-item', p.page === page ? 'active' : '', p.enabled ? '' : 'disabled']">
+                                <a v-if="p.enabled" class="page-link" href="#" @click.prevent="page = p.page">
+                                    {{p.text}}
+                                </a>
+                                <span v-else class="page-link">
+                                    {{p.text}}
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
             <tr v-if="count">
                 <td :colspan="columns">
                     <T>table.count</T>:
@@ -31,7 +47,7 @@
             </tbody>
             <tfoot>
             <tr>
-                <td :colspan="columns">
+                <td :colspan="columns + 1">
                     <nav v-if="pages > 1">
                         <ul class="pagination pagination-sm justify-content-center">
                             <li v-for="p in pagesRange" :class="['page-item', p.page === page ? 'active' : '', p.enabled ? '' : 'disabled']">

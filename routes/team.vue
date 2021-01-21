@@ -56,7 +56,7 @@
                     </a>
                 </h4>
                 <ul class="list-unstyled member-list">
-                    <li v-for="member in members" class="mb-2 d-flex">
+                    <li v-for="member in members" class="mb-3 d-flex">
                         <a :href="`https://pronouns.page/@${member.username}`">
                             <Avatar :user="member" dsize="4rem"/>
                         </a>
@@ -107,6 +107,12 @@
         }
         figcaption {
             font-size: $small-font-size;
+        }
+    }
+    @include media-breakpoint-down('md', $grid-breakpoints) {
+        figure {
+            float: none !important;
+            margin: 0 auto;
         }
     }
 

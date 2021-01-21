@@ -14,16 +14,17 @@
                         <T>profile.edit</T>
                     </nuxt-link>
                 </div>
-                <div class="list-group" v-if="Object.keys(profiles).length > 1">
+                <div v-if="Object.keys(profiles).length > 1" class="locale-list">
                     <a :href="`https://pronouns.page/@${username}`" v-if="$user() && $user().username === username"
-                       class="list-group-item list-group-item-action small px-4 py-2 text-center"
+                       class="btn btn-outline-secondary btn-sm mb-1 mr-1"
                     >
                         <Icon v="external-link"/>
                         pronouns.page/@{{username}}
                     </a>
+                    <br/>
                     <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
                                 :locale="locale" :link="`/@${username}`"
-                                :class="['list-group-item list-group-item-action small px-4 py-2 text-center', locale === config.locale ? 'active disabled' : '']">
+                                :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-1 mr-1']">
                         {{options.name}}
                     </LocaleLink>
                 </div>
@@ -229,6 +230,13 @@
             color: $primary;
             border-left: 3px solid $primary;
             padding-left: calc(#{$list-group-item-padding-x} - 2px);
+        }
+    }
+
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .locale-list {
+            max-width: 16rem;
+            text-align: right;
         }
     }
 </style>
