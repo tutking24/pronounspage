@@ -163,7 +163,7 @@ router.post('/user/init', async (req, res) => {
 
     const codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
 
-    if (!isTest) {
+    if (!isTest && !payload.email.endsWith('.oauth')) {
         mailer(
             payload.email,
             `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
