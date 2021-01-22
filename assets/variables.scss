@@ -4,8 +4,12 @@ $headings-font-family: Quicksand, -apple-system, BlinkMacSystemFont, "Segoe UI",
 $primary: #C71585;
 $alert-border-level: -3;
 
+$link-decoration: none;
+$link-hover-decoration: underline;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
 
 @import '~@fortawesome/fontawesome-pro/scss/variables';

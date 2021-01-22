@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex flex-column vh-100" :dir="config.dir || 'ltr'">
+    <div class="d-flex flex-column vh-100">
         <div class="flex-grow-1">
             <Header/>
             <Nuxt/>

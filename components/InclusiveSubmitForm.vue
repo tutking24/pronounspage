@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label><strong><T>nouns.inclusive.categories</T>:</strong></label>
                 <a v-for="category in config.nouns.inclusive.categories"
-                   href="#" :class="['badge border mx-2', form.categories.includes(category) ? 'badge-primary' : 'badge-light']"
+                   href="#" :class="['badge border mx-2', form.categories.includes(category) ? 'bg-primary' : 'bg-light']"
                    @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
                 >
                     {{ category }}
@@ -66,12 +66,12 @@
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
                 <T>nouns.editing</T>
-                <button class="btn btn-sm float-right" @click="form.base = null">
+                <button class="btn btn-sm float-end" @click="form.base = null">
                     <Icon v="times"/>
                 </button>
             </div>
 
-            <button class="btn btn-primary btn-block" :disabled="submitting">
+            <button class="btn btn-primary w-100" :disabled="submitting">
                 <template v-if="submitting">
                     <Icon v="circle-notch fa-spin"/>
                 </template>

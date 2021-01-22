@@ -29,7 +29,7 @@
                         <ImageUploader small @uploaded="uploaded"/>
                     </div>
                     <p v-if="$isGranted('panel') || $isGranted('users')">
-                        <nuxt-link to="/admin" class="badge badge-primary"><T>user.account.admin</T></nuxt-link>
+                        <nuxt-link to="/admin" class="badge bg-primary"><T>user.account.admin</T></nuxt-link>
                     </p>
                 </div>
                 <div class="mx-2 flex-grow-1">
@@ -47,11 +47,9 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" v-model="username"
                                    required minlength="4" maxlength="16"/>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary">
-                                    <T>user.account.changeUsername.action</T>
-                                </button>
-                            </div>
+                            <button class="btn btn-outline-primary">
+                                <T>user.account.changeUsername.action</T>
+                            </button>
                         </div>
                     </form>
 
@@ -59,11 +57,9 @@
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
                         <div v-if="!changeEmailAuthId" class="input-group mb-3">
                             <input type="email" class="form-control" v-model="email" required/>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary">
-                                    <T>user.account.changeEmail.action</T>
-                                </button>
-                            </div>
+                            <button class="btn btn-outline-primary">
+                                <T>user.account.changeEmail.action</T>
+                            </button>
                         </div>
                         <div v-else class="input-group mb-3">
                             <input type="text" class="form-control text-center" v-model="code"
@@ -71,12 +67,10 @@
                                    inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
                                    ref="code"
                             />
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-primary">
-                                    <Icon v="key"/>
-                                    <T>user.code.action</T>
-                                </button>
-                            </div>
+                            <button class="btn btn-outline-primary">
+                                <Icon v="key"/>
+                                <T>user.code.action</T>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -107,12 +101,12 @@
         </Loading>
 
         <section>
-            <a href="#" class="badge badge-light border" @click.prevent="logout">
+            <a href="#" class="badge bg-light text-dark border" @click.prevent="logout">
                 <Icon v="sign-out"/>
                 <T>user.logout</T>
             </a>
 
-            <a href="#" class="badge badge-light border" @click.prevent="deleteAccount">
+            <a href="#" class="badge bg-light text-dark border" @click.prevent="deleteAccount">
                 <Icon v="trash-alt"/>
                 <T>user.deleteAccount</T>
             </a>

@@ -11,17 +11,13 @@
 
         <section class="sticky-top">
             <div class="input-group mb-3 bg-white">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <Icon v="filter"/>
-                    </span>
-                </div>
+                <span class="input-group-text">
+                    <Icon v="filter"/>
+                </span>
                 <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
-                <div class="input-group-append" v-if="filter">
-                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
-                        <Icon v="times"/>
-                    </button>
-                </div>
+                <button v-if="filter" class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                    <Icon v="times"/>
+                </button>
             </div>
         </section>
 

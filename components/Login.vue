@@ -11,14 +11,12 @@
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" v-model="usernameOrEmail"
                            :placeholder="$t('user.login.placeholder')" autofocus required/>
-                    <div class="input-group-append">
-                        <button class="btn btn-primary">
-                            <Icon v="sign-in"/>
-                            <T>user.login.action</T>
-                        </button>
-                    </div>
+                    <button class="btn btn-primary">
+                        <Icon v="sign-in"/>
+                        <T>user.login.action</T>
+                    </button>
                 </div>
-                <div class="btn-group btn-block mb-3">
+                <div class="btn-group w-100 mb-3">
                     <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
                         <Icon :v="providerOptions.icon || provider" set="b"/>
                         {{ providerOptions.name }}
@@ -49,12 +47,10 @@
                            inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
                            ref="code"
                     />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary">
-                            <Icon v="key"/>
-                            <T>user.code.action</T>
-                        </button>
-                    </div>
+                    <button class="btn btn-primary">
+                        <Icon v="key"/>
+                        <T>user.code.action</T>
+                    </button>
                 </div>
             </form>
         </div>

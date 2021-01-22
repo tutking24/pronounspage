@@ -13,7 +13,7 @@
             <li v-for="author in authors" class="mb-2">
                 <Icon v="user"/>
                 {{ author.footerName }}
-                <nuxt-link :to="`/@${author.username}`" class="badge badge-light border">
+                <nuxt-link :to="`/@${author.username}`" class="badge bg-light text-dark border">
                     @{{author.username}}
                 </nuxt-link>
                 <br/>

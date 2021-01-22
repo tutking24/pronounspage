@@ -94,7 +94,7 @@
                 </div>
             </form>
 
-            <div class="btn-group btn-block">
+            <div class="btn-group w-100">
                 <button class="btn btn-outline-primary" :disabled="q === 0" @click="q--">
                     <Icon v="arrow-alt-left"/>
                     <T>census.prev</T>
@@ -105,7 +105,7 @@
                 </button>
             </div>
 
-            <div v-if="$user() && $user().username === 'andrea'" class="mt-4 btn-group btn-block">
+            <div v-if="$user() && $user().username === 'andrea'" class="mt-4 btn-group w-100">
                 <button v-for="(question, i) in questions" :class="['btn', q === i ? 'btn-primary' : 'btn-outline-primary']" :disabled="q === i" @click="q = i">
                     {{i}}
                 </button>

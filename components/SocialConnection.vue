@@ -5,7 +5,7 @@
             {{ providerOptions.name }}
         </span>
         <span v-if="connection === undefined">
-            <a :href="`/api/connect/${provider}`" class="badge badge-light border">
+            <a :href="`/api/connect/${provider}`" class="badge bg-light text-dark border">
                 <Icon v="link"/>
                 <T>user.socialConnection.connect</T>
             </a>
@@ -18,12 +18,12 @@
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>
-            <a :href="`/api/connect/${provider}`" class="badge badge-light border">
+            <a :href="`/api/connect/${provider}`" class="badge bg-light text-dark border">
                 <Icon v="sync"/>
                 <T>user.socialConnection.refresh</T>
             </a>
             <Spinner v-if="disconnecting"/>
-            <a v-else href="#" class="badge badge-light" @click.prevent="disconnect">
+            <a v-else href="#" class="badge bg-light text-dark" @click.prevent="disconnect">
                 <Icon v="unlink"/>
                 <T>user.socialConnection.disconnect</T>
             </a>

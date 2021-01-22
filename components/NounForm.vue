@@ -2,14 +2,12 @@
     <div>
         <div v-for="(synonym, i) in val" :key="i" class="input-group input-group-sm p-1">
             <input type="text" class="form-control" v-model="val[i]" required ref="inp" :maxlength="maxlength">
-            <div v-if="i || !required" class="input-group-append">
-                <button type="button" class="btn btn-outline-danger btn-sm" @click="remove(i)">
-                    <Icon v="times"/>
-                </button>
-            </div>
+            <button v-if="i || !required" type="button" class="btn btn-outline-danger btn-sm" @click="remove(i)">
+                <Icon v="times"/>
+            </button>
         </div>
         <div class="p-1">
-            <button type="button" class="btn btn-outline-success btn-sm btn-block" @click="add">
+            <button type="button" class="btn btn-outline-success btn-sm w-100" @click="add">
                 <Icon v="plus"/>
             </button>
         </div>

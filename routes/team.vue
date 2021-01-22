@@ -5,7 +5,7 @@
             <T>contact.team.name</T>
         </h2>
 
-        <figure class="float-right border rounded">
+        <figure class="float-end border rounded">
             <img src="/img/collective-logo.svg" alt=""/>
             <figcaption>
                 <p><T>contact.team.logo</T></p>
@@ -60,10 +60,10 @@
                         <a :href="`https://pronouns.page/@${member.username}`">
                             <Avatar :user="member" dsize="4rem"/>
                         </a>
-                        <span class="ml-2">
+                        <span class="ms-2">
                             {{ member.teamName }}
                             <br/>
-                            <a :href="`https://pronouns.page/@${member.username}`" class="badge badge-light border">
+                            <a :href="`https://pronouns.page/@${member.username}`" class="badge bg-light text-dark border">
                                 @{{member.username}}
                             </a>
                         </span>

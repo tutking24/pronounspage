@@ -53,6 +53,9 @@ const buildFlags = () => {
 export default {
     target: 'server',
     head: {
+        htmlAttrs: {
+            dir: config.dir || 'ltr',
+        },
         title: title,
         meta: [
             { charset: 'utf-8' },

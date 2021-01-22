@@ -2,24 +2,20 @@
     <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" class="list-unstyled" :group="group">
         <li v-for="(v, i) in iVal" ref="items">
             <div class="input-group input-group-sm mb-1">
-                <div class="input-group-prepend">
-                    <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
-                        <Icon v="bars"/>
-                    </button>
-                </div>
+                <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
+                    <Icon v="bars"/>
+                </button>
                 <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)">
                     <input v-model="iVal[i]" type="text" class="form-control" required/>
                 </slot>
-                <div class="input-group-append">
-                    <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
-                        <Icon v="times"/>
-                    </button>
-                </div>
+                <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
+                    <Icon v="times"/>
+                </button>
             </div>
         </li>
 
         <li slot="footer">
-            <button class="btn btn-outline-success btn-block btn-sm" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
+            <button class="btn btn-outline-success w-100 btn-sm" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
                 <Icon v="plus"/>
             </button>
         </li>

@@ -60,7 +60,7 @@
             }
             > span {
                 box-shadow:0 2px 4px $value;
-                background: theme-color-level($color, $alert-bg-level);
+                // FIXME background: theme-color-level($color, $alert-bg-level);
                 color: $value;
             }
         }

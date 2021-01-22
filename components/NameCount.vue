@@ -6,7 +6,7 @@
                     {{version}}
                     <small v-if="ordinalDesc">({{ ordinalDesc }})</small>:
                 </strong>
-                <span v-for="(icon, key) in config.names.countSex" :key="key" class="badge badge-light badge-big border mx-1">
+                <span v-for="(icon, key) in config.names.countSex" :key="key" class="badge bg-light text-dark badge-big border mx-1">
                     <Icon :v="icon"/>
                     {{ count(version, key, ordinal) }}
                 </span>

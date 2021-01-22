@@ -1,5 +1,5 @@
 <template>
-    <span class="badge badge-secondary toggle-hover">
+    <span class="badge bg-secondary toggle-hover">
         <Icon v="book-open"/>
         <span class="togglable"><T>pronouns.normative</T></span>
     </span>

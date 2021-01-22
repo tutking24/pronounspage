@@ -130,7 +130,7 @@
                 </template>
             </div>
 
-            <button class="btn btn-primary btn-block" type="submit">
+            <button class="btn btn-primary w-100" type="submit">
                 <Icon v="save"/>
                 <T>profile.editor.save</T>
             </button>

@@ -14,7 +14,7 @@
         </section>
 
         <section v-if="config.sources.submit">
-            <button v-if="!submitShown" class="btn btn-outline-success btn-block" @click="submitShown = true">
+            <button v-if="!submitShown" class="btn btn-outline-success w-100" @click="submitShown = true">
                 <Icon v="plus-circle"/>
                 <T>sources.submit.header</T>
             </button>
@@ -22,7 +22,7 @@
         </section>
 
         <section>
-            <button v-if="!tocShown" class="btn btn-outline-primary btn-block" @click="tocShown = true">
+            <button v-if="!tocShown" class="btn btn-outline-primary w-100" @click="tocShown = true">
                 <Icon v="list"/>
                 <T>sources.toc</T>
             </button>
@@ -77,20 +77,16 @@
 
         <section class="sticky-top bg-white">
             <div class="input-group mb-1 bg-white">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <Icon v="filter"/>
-                    </span>
-                </div>
+                <span class="input-group-text">
+                    <Icon v="filter"/>
+                </span>
                 <input class="form-control border-primary" v-model="filter" :placeholder="$t('crud.filterLong')" ref="filter"/>
-                <div class="input-group-append" v-if="filter">
-                    <button class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
-                        <Icon v="times"/>
-                    </button>
-                </div>
+                <button v-if="filter" class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
+                    <Icon v="times"/>
+                </button>
             </div>
 
-            <div class="btn-group btn-block">
+            <div class="btn-group w-100">
                 <button v-for="(icon, type) in sourceTypes"
                         :class="['btn btn-sm', type === filterType ? 'btn-primary' : 'btn-outline-primary']"
                         @click="filterType = type"

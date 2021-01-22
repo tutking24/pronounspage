@@ -16,7 +16,7 @@
                 </div>
                 <div v-if="Object.keys(profiles).length > 1" class="locale-list">
                     <a :href="`https://pronouns.page/@${username}`" v-if="$user() && $user().username === username"
-                       class="btn btn-outline-secondary btn-sm mb-1 mr-1"
+                       class="btn btn-outline-secondary btn-sm mb-1 me-1"
                     >
                         <Icon v="external-link"/>
                         pronouns.page/@{{username}}
@@ -24,7 +24,7 @@
                     <br/>
                     <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
                                 :locale="locale" :link="`/@${username}`"
-                                :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-1 mr-1']">
+                                :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-1 me-1']">
                         {{options.name}}
                     </LocaleLink>
                 </div>
@@ -89,7 +89,7 @@
             </h3>
 
             <div>
-                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="float-left w-50 w-md-25">
+                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="float-start w-50 w-md-25">
                     <ul class="list-unstyled">
                         <li v-for="(opinion, word) in group"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>

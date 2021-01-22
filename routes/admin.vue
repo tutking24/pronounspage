@@ -16,18 +16,16 @@
                 <div class="border-top">
                     <div class="input-group mt-4">
                         <input class="form-control" v-model="userFilter" :placeholder="$t('crud.filterLong')"/>
-                        <span class="input-group-append">
-                            <button :class="['btn', adminsFilter ? 'btn-secondary' : 'btn-outline-secondary']"
-                                    @click="adminsFilter = !adminsFilter"
-                            >
-                                Only admins
-                            </button>
-                            <button :class="['btn', localeFilter ? 'btn-secondary' : 'btn-outline-secondary']"
-                                    @click="localeFilter = !localeFilter"
-                            >
-                                Only this version
-                            </button>
-                        </span>
+                        <button :class="['btn', adminsFilter ? 'btn-secondary' : 'btn-outline-secondary']"
+                                @click="adminsFilter = !adminsFilter"
+                        >
+                            Only admins
+                        </button>
+                        <button :class="['btn', localeFilter ? 'btn-secondary' : 'btn-outline-secondary']"
+                                @click="localeFilter = !localeFilter"
+                        >
+                            Only this version
+                        </button>
                     </div>
                     <Table :data="visibleUsers" :columns="4">
                         <template v-slot:header>

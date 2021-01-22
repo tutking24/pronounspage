@@ -3,7 +3,7 @@
         <draggable tag="ul" v-model="iVal" ghostClass="ghost" @end="$emit('input', iVal)" :group="ulid"
                    class="list-inline border rounded drop-empty px-3 py-2">
             <li v-for="val in iVal" v-if="options[val]" class="list-inline-item py-1">
-                <a href="#" class="badge badge-light border p-2" @click.prevent="$emit('input', iVal.filter(v => v !== val))">
+                <a href="#" class="badge bg-light text-dark border p-2" @click.prevent="$emit('input', iVal.filter(v => v !== val))">
                     <slot v-bind:v="val" v-bind:desc="options[val]">
                         {{ val }}
                     </slot>
@@ -15,23 +15,21 @@
         </draggable>
         <div class="input-group py-1">
             <input v-model="search" class="form-control form-control-sm" :placeholder="$t('crud.search')"/>
-            <div class="input-group-append">
-                <button v-if="search" type="button" class="btn btn-light btn-sm border text-danger" @click.prevent="search = ''">
-                    <Icon v="times"/>
-                </button>
+            <button v-if="search" type="button" class="btn btn-light btn-sm border text-danger" @click.prevent="search = ''">
+                <Icon v="times"/>
+            </button>
 
-                <button v-if="all" type="button" class="btn btn-light btn-sm border" @click.prevent="all = false">
-                    <Icon v="caret-up"/>
-                </button>
-                <button v-else type="button" class="btn btn-light btn-sm border" @click.prevent="all = true">
-                    <Icon v="caret-down"/>
-                </button>
-            </div>
+            <button v-if="all" type="button" class="btn btn-light btn-sm border" @click.prevent="all = false">
+                <Icon v="caret-up"/>
+            </button>
+            <button v-else type="button" class="btn btn-light btn-sm border" @click.prevent="all = true">
+                <Icon v="caret-down"/>
+            </button>
         </div>
 
         <draggable tag="ul" v-model="remainingOptions" ghostClass="ghost" @end="$emit('input', iVal)" class="list-inline" :group="ulid">
             <li v-for="val in remainingOptions" v-if="(all && !search) || (search && options[val].toLowerCase().includes(search))" class="list-inline-item py-1">
-                <a href="#" class="badge badge-light p-2" @click.prevent="$emit('input', [...iVal, val])">
+                <a href="#" class="badge bg-light text-dark p-2" @click.prevent="$emit('input', [...iVal, val])">
                     <slot v-bind:v="val" v-bind:desc="options[val]">
                         {{ val }}
                     </slot>

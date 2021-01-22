@@ -41,7 +41,7 @@
                         <em v-html="config.pronouns.multiple.description"></em>
                     </div>
                     <SimplePronounList :pronouns="config.pronouns.multiple.examples" class="mb-3"/>
-                    <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary btn-block">
+                    <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary w-100">
                         <Icon v="sliders-h-square"/>
                         <T>pronouns.alt.button</T>
                     </a>
@@ -101,7 +101,7 @@
                     <p>
                         <T>home.generator.description</T>
                     </p>
-                    <a v-if="!customise" href="#" @click.prevent="customise = true" class="btn btn-outline-primary btn-block">
+                    <a v-if="!customise" href="#" @click.prevent="customise = true" class="btn btn-outline-primary w-100">
                         <Icon v="sliders-h-square"/>
                         <T>home.generator.button</T>
                     </a>
@@ -310,11 +310,11 @@
     .form-input {
         text-align: center;
         &.active {
-            @include alert-variant(
+            /*@include alert-variant(
                 theme-color-level('primary', $alert-bg-level),
                 theme-color-level('primary', $alert-border-level),
                 theme-color-level('primary', $alert-color-level)
-            );
+            );FIXME*/
         }
         &.form-control {
             width: auto;
@@ -325,9 +325,9 @@
         }
     }
 
-    @include media-breakpoint-up('md', $grid-breakpoints) {
+    /*@include media-breakpoint-up('md', $grid-breakpoints) {
         .btn-md-lg {
             @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
         }
-    }
+    }*/
 </style>

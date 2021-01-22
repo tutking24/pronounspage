@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="d-block d-md-none">
-            <div class="btn-group-vertical btn-block nav-custom mb-2">
+            <div class="btn-group-vertical d-flex nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
                     {{ link.textLong || link.text }}
@@ -67,7 +67,7 @@
                 <Icon v="bars"/>
             </button>
             <div :class="['bg-white border p-3', hamburgerActive ? '' : 'd-none']">
-                <div class="btn-group-vertical btn-block nav-custom nav-custom-left mb-2">
+                <div class="btn-group-vertical d-flex nav-custom nav-custom-left mb-2">
                     <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                         <Icon :v="link.icon"/>
                         {{ link.textLong || link.text }}
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="d-none d-md-block">
-            <div class="btn-group btn-block nav-custom mb-2">
+            <div class="btn-group d-flex nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon" size="1.6"/>
                     <br/>
@@ -270,7 +270,7 @@
 <style lang="scss" scoped>
     @import "assets/variables";
 
-    @include media-breakpoint-down('sm', $grid-breakpoints) {
+    @include media-breakpoint-down('md', $grid-breakpoints) {
         h1 {
             font-size: 2rem;
         }

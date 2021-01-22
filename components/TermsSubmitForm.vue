@@ -63,12 +63,12 @@
             <div class="alert alert-info" v-if="form.base">
                 <Icon v="info-circle"/>
                 <T>nouns.editing</T>
-                <button class="btn btn-sm float-right" @click="form.base = null">
+                <button class="btn btn-sm float-end" @click="form.base = null">
                     <Icon v="times"/>
                 </button>
             </div>
 
-            <button class="btn btn-primary btn-block" :disabled="submitting">
+            <button class="btn btn-primary w-100" :disabled="submitting">
                 <template v-if="submitting">
                     <Icon v="circle-notch fa-spin"/>
                 </template>
