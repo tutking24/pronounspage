@@ -1,45 +1,45 @@
 title: 'nl.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'  # TODO
+description: 'Gebruiksvoorbeelden van persoonlijke voornaamwoorden en genderneutrale taal.'
 
 home:
     link: 'Startpagina'
     header: 'Voornaamwoorden'
     headerLong: 'Lijst met voornaamwoorden'
-    why: 'What''s the deal with pronouns?'
+    why: 'Hoe zit dat nu met die voornaamwoorden?'
     about:
         - >
-            We all have pronouns. They're those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+        We gebruiken allemaal persoonlijke voornaamwoorden. Met deze woorden verwijzen we naar iemand zonder hun naam te noemen.
+        Meestal nemen we onderbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van die persoon hun uiterlijk.
+        Maar eigenlijk is het niet zo eenvoudig…
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            Gender is iets complex. Sommige mensen zien er niet uit zoals de meeste anderen met hun gender.
+        Bepaalde mensen worden liever anders aangesproken dan wat je zou verwachten.
+        Anderen passen in noch de “mannelijke” of “vrouwelijke” hokjes en verkiezen een meer genderneutraal taalgebruik.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Met deze tool kan je een link naar jouw persoonlijke voornaamwoorden delen.
+            Daarin vind je ook voorbeeldzinnen waarmee je anderen kan tonen hoe je het liefst aangesproken wordt.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
+        Waarom is dit nu belangrijk? Omwille van fatsoen.
+        Je spreekt Marie toch niet aan als “Lien” omdat jij die naam mooier vindt
+        of omdat ze er meer zoals een “Lien” uitziet volgens jou?
+        En zelfs al werd ze zo genoemd door haar ouders,
+        spreek haar aan als Marie als ze dit beter vindt dan haar oorspronkelijke naam.
+        En dit is hetzelfde als met voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
+        spreek die persoon aan zoals die dat wilt.
+        Het enige verschil is dat we vaak eerder elkaars namen dan elkaars voornaamwoorden kennen,
+        omdat we onszelf op die manier voorstellen. Laten we dit samen veranderen!
     pronouns: 'List of popular pronouns'
     generator:
         header: 'Generator'
         description: >
-            You can also use this tool where you out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
+            Je kunt ook deze tool gebruiken waarmee je de lege plekken
+            in de zinnen kunt invullen en een kunt link genereren die je met anderen kan delen.
+        button: 'Laat de generator zien'
         header2: 'Generate a link'
         base: 'Based on'
         alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+    whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
 
 pronouns:
     examples: 'Example usage in sentences'
@@ -47,16 +47,17 @@ pronouns:
     intro: 'Mijn voornaamwoorden zijn'
     normative: 'Normative'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
+        button: 'Genereer een link naar uitwisselbare vormen'
+        header: 'Uitwisselbare vormen'
         raw: 'interchangeable'
     generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
     any:
-        header: 'Any pronouns'
+        header: 'Elk voornaamwoord'
         short: 'any'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
+            Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
+            vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
+            - zolang de context duidelijk is wat betreft degene over wie wordt gesproken.
         options: 'check out the options [share]{/=here}.'
     others: 'Other forms'
     othersRaw: 'other'
@@ -65,8 +66,8 @@ pronouns:
 
 sources:
     header: 'Bronnen'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
+    headerLong: 'Voorbeelden vormen culturele teksten'
+    headerLonger: 'Genderneutrale taal in culturele teksten'
     subheader: 'Text corpus of gender neutral language'
     toc: 'Show table of contents'
     type:
@@ -103,7 +104,7 @@ sources:
 nouns:
     header: 'Woordenboek'
     headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
+    headerLonger: 'Woordenboek voor genderneutrale taal'
     description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
     intro:
         - >
@@ -488,6 +489,7 @@ flags:
     Androgyne: 'Androgyn'
     Androsexual: 'Androseksueel'
     Aporagender: 'Aporagender'
+    Archaeopronouns: 'Archeovoornaamwoorden'
     Aroace: 'Aroace'
     Aromantic: 'Aromantisch'
     Aromantic_Allosexual: 'Aromantisch alloseksueel'
@@ -555,7 +557,7 @@ flags:
     Sapphic: 'Sapphisch'
     Sexuality_Questioning: 'Seksualiteit bevragend'
     Straight_Ally: 'Hetero ally'
-    Toric: 'Tórisch'
+    Toric: 'Torisch'
     Transfeminine: 'Transfeminien'
     Transgender: 'Transgender'
     Transmasculine: 'Transmasculien'

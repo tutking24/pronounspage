@@ -9,12 +9,12 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
-        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        name: 'Uitwisselbare vormen'
+        description: 'Veel non-binaire personen gebruiken afwisselend meer dan een vorm en vinden het prima dat je beiden gebruikt.'
         examples: ['hij&zij', 'hij&hen', 'zij&hen']
     null:
-        description: 'No pronouns / null pronouns / pronounless / nameself'
-        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
+        description: 'Geen voornaamwoorden'
+        history: 'Sommige mensen gebruiken liever geen enkel voornaamwoord, en worden liever aangesproken met hun naam, initialen, of willen liever dat je voornaamwoorden ontwijkt door passieve zinnen te maken.'
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -22,18 +22,18 @@ pronouns:
             possessive_pronoun: '#''s'
             reflexive: '#self'
         examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
+        template: 'Open een van de voorbeelden en vervang de naam/initialen in de URL met jouw eigen naam of initialen.'
     emoji:
         description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojizelf} voornaamwoorden zijn bedoeld voor online communicatie en niet bedoeld om uitgesproken te worden.'
+        Morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
             possessive_determiner: '#''s'
             possessive_pronoun: '#''s'
             reflexive: '#self'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+        template: 'Open een van de voorbeelden en vervang de emoji in de URL met jouw eigen emoji.'
     slashes: true
     avoiding: false
     others: 'Other pronouns'
