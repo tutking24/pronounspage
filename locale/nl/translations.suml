@@ -8,26 +8,26 @@ home:
     why: 'Hoe zit dat nu met die voornaamwoorden?'
     about:
         - >
-        We gebruiken allemaal persoonlijke voornaamwoorden. Met deze woorden verwijzen we naar iemand zonder hun naam te noemen.
-        Meestal nemen we onderbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van die persoon hun uiterlijk.
-        Maar eigenlijk is het niet zo eenvoudig…
+            We gebruiken allemaal persoonlijke voornaamwoorden. Met deze woorden verwijzen we naar iemand zonder hun naam te noemen.
+            Meestal nemen we onderbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van die persoon hun uiterlijk.
+            Maar eigenlijk is het niet zo eenvoudig…
         - >
             Gender is iets complex. Sommige mensen zien er niet uit zoals de meeste anderen met hun gender.
-        Bepaalde mensen worden liever anders aangesproken dan wat je zou verwachten.
-        Anderen passen in noch de “mannelijke” of “vrouwelijke” hokjes en verkiezen een meer genderneutraal taalgebruik.
+            Bepaalde mensen worden liever anders aangesproken dan wat je zou verwachten.
+            Anderen passen in noch de “mannelijke” of “vrouwelijke” hokjes en verkiezen een meer genderneutraal taalgebruik.
         - >
             Met deze tool kan je een link naar jouw persoonlijke voornaamwoorden delen.
             Daarin vind je ook voorbeeldzinnen waarmee je anderen kan tonen hoe je het liefst aangesproken wordt.
         - >
-        Waarom is dit nu belangrijk? Omwille van fatsoen.
-        Je spreekt Marie toch niet aan als “Lien” omdat jij die naam mooier vindt
-        of omdat ze er meer zoals een “Lien” uitziet volgens jou?
-        En zelfs al werd ze zo genoemd door haar ouders,
-        spreek haar aan als Marie als ze dit beter vindt dan haar oorspronkelijke naam.
-        En dit is hetzelfde als met voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
-        spreek die persoon aan zoals die dat wilt.
-        Het enige verschil is dat we vaak eerder elkaars namen dan elkaars voornaamwoorden kennen,
-        omdat we onszelf op die manier voorstellen. Laten we dit samen veranderen!
+            Waarom is dit nu belangrijk? Omwille van fatsoen.
+            Je spreekt Marie toch niet aan als “Lien” omdat jij die naam mooier vindt
+            of omdat ze er meer zoals een “Lien” uitziet volgens jou?
+            En zelfs al werd ze zo genoemd door haar ouders,
+            spreek haar aan als Marie als ze dit beter vindt dan haar oorspronkelijke naam.
+            En dit is hetzelfde als met voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
+            spreek die persoon aan zoals die dat wilt.
+            Het enige verschil is dat we vaak eerder elkaars namen dan elkaars voornaamwoorden kennen,
+            omdat we onszelf op die manier voorstellen. Laten we dit samen veranderen!
     pronouns: 'List of popular pronouns'
     generator:
         header: 'Generator'
