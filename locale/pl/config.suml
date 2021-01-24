@@ -155,6 +155,10 @@ links:
             extra: '– przemówienie Sybila z Wrocławskiego Marszu Równości'
         -
             icon: 'comment-alt-edit'
+            url: '/blog/rekomendacja-formularze'
+            headline: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
+        -
+            icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
             headline: 'Maniak marudzi #27: Niebinarne tłumaczenia'
             extra: '– artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.'
