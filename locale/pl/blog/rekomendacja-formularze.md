@@ -19,7 +19,7 @@ Czy twój newsletter tak bardzo ucierpi, jeśli zamiast „Szanowna Pani Kowalsk
 A jeśli chcesz znać płeć osób klienckich tylko po to, by wykorzystywać te dane do
 kampanii marketingowych utrwalających szkodliwe stereotypy na temat płci
 i wciskających ludziom [niepotrzebnie zgenderyzowane produkty](https://www.reddit.com/r/pointlesslygendered),
-to nawet nie czytaj dalej – skoro masz w dupie inkluzywność, to po co tracić czas?
+to nawet nie czytaj dalej – skoro masz gdzieś inkluzywność, to po co tracić czas?
 
 ## Informuj, dlaczego potrzebujesz znać płeć
 
