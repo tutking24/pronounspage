@@ -491,6 +491,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
         podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
         gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
         czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
