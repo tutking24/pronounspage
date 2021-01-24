@@ -961,7 +961,7 @@ census:
             Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
         - >
-            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta od %start% do %end%.
+            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
     agree: >
