@@ -21,7 +21,7 @@
         props: {
             value: {required: true},
             required: {type: Boolean},
-            maxlength: {'default': 24},
+            maxlength: {'default': 36},
         },
         data() {
             return {
