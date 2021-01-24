@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-Myślę, że {pronoun_n} jest bardzo mił{adjective_n}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}.	FALSE
+Myślę, że {pronoun_n} jest bardzo mił{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	FALSE
 Tęsknię za {pronoun_g} śmiechem.		FALSE
 Napiszę do {pronoun_g_acc} później.		FALSE
 Powiedział{verb_middle_inter}m {pronoun_d}, że {pronoun_a} lubię.	Powiedzi{verb_middle_inter}śmy {pronoun_d}, że {pronoun_a} lubimy.	FALSE

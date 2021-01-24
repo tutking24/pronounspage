@@ -72,12 +72,12 @@ links:
             icon: 'comment-alt-edit'
             url: 'https://www.aacademica.org/1.congreso.internacional.de.ciencias.humanas/1500'
             headline: 'Fenómenos de convergencia y divergencia en el uso del lenguaje no binario'
-            extra: 'Descripción lingüística del uso de formas no binarias, en especial {/elle=elle/le}'
+            extra: ' – Descripción lingüística del uso de formas no binarias, en especial {/elle=elle/le}'
         -
             icon: 'comment-alt-edit'
             url: 'https://accedacris.ulpgc.es/handle/10553/73757'
             headline: 'El género no binario en la traducción al español: análisis del uso del lenguaje inclusivo no binario'
-            extra: 'Este trabajo aborda el uso de formas no binarias como resultado de traducciones del inglés al español.'
+            extra: ' – Este trabajo aborda el uso de formas no binarias como resultado de traducciones del inglés al español.'
     media:
         -
             icon: 'play-circle'
