@@ -95,6 +95,7 @@ nouns:
             - 'płeć'
             - 'ekspresja płciowa'
             - 'model relacji'
+            - 'język'
         route: 'terminologia'
 
 names:
