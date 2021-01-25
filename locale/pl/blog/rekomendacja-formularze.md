@@ -58,7 +58,6 @@ Płeć „biologiczną”?
  - gonady (jądra, jajniki, gonady o utkaniu mieszanym, jeden jajnik i jedno jądro, dysgenezja gonad, …)
  - wewnętrzne narządy (jajowody, nasieniowody, macica, …)
  - zewnętrzne genitalia
- - chromosomy płci
  - trzeciorzędowe cechy płciowe (biust, zarost na twarzy, wysokość głosu, jabłko Adama, …)
 
 Fajne źródło [tutaj](http://avant.edu.pl/wp-content/uploads/R_Zieminska_Teoria_feministyczna_a_niebinarne_pojecie_plci.pdf).
