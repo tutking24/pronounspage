@@ -96,6 +96,7 @@ nouns:
             - 'ekspresja płciowa'
             - 'model relacji'
             - 'język'
+            - 'pociąg'
         route: 'terminologia'
 
 names:
