@@ -10,6 +10,10 @@ sources:
 
 nouns:
     enabled: false
+    inclusive:
+        enabled: false
+    terms:
+        enabled: false
 
 names:
     enabled: false
@@ -28,6 +32,8 @@ links:
 
 contact:
     enabled: false
+    team:
+        enabled: false
 
 support:
     enabled: false
