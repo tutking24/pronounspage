@@ -212,6 +212,7 @@
             <Media/>
             <Socials/>
             <LanguageVersions/>
+            <Support/>
         </section>
     </div>
 </template>
