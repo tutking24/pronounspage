@@ -26,7 +26,7 @@ pronouns:
     emoji:
         description: 'Emojizelf voornaamwoorden'
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojizelf} voornaamwoorden zijn bedoeld voor online communicatie en niet bedoeld om uitgesproken te worden.'
-        Morphemes:
+        morphemes:
             nominative: '#'
             accusative: '#'
             pronominal_poss: '#'
