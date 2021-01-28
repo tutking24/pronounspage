@@ -18,8 +18,8 @@ pronouns:
         morphemes:
             nominative: '#'
             accusative: '#'
-            pronominal_poss: '#''s'
-            predicative_poss: '#''s'
+            pronominal_poss: '#'
+            predicative_poss: '#e'
             reflexive: '#zelf'
         examples: [':Andrea', ':S']
         template: 'Open een van de voorbeelden en vervang de naam/initialen in de URL met jouw eigen naam of initialen.'
@@ -29,8 +29,8 @@ pronouns:
         Morphemes:
             nominative: '#'
             accusative: '#'
-            pronominal_poss: '#''s'
-            predicative_poss: '#''s'
+            pronominal_poss: '#'
+            predicative_poss: '#e'
             reflexive: '#zelf'
         examples: ['💫', '💙']
         template: 'Open een van de voorbeelden en vervang de emoji in de URL met jouw eigen emoji.'

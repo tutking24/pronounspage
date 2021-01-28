@@ -286,13 +286,13 @@ faq:
                     No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
                     If you care about your trans and nonbinary friends and loved ones, then call them the right way.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    Omdat gender (is not) voornaamwoorden. Voornaamwoorden zijn gewoon grammatica.
+                    Non-binaire personen kunnen binaire voornaamwoorden gebruiken, sommige lesbische vrouwen gebruiken (he/him) voor culturele redenen etc.
                 - >
-                    Simply say “pronouns”.
+                    Zeg gewoon "voornaamwoorden".
 
 links:
     header: 'Links'
@@ -318,7 +318,7 @@ contact:
             - >
                 {https://pronouns.page=Pronouns.page} en gerelateerde initiatieven
                 zijn bedacht door het "Raad van Neutrale Taal" collectief.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+        logo: 'Het logo van het collectief is een combinatie van het transgender symbool en een spraakballon dat taal symboliseert.'
         members: 'Huidige leden'
         blog: 'Blog'
         upcoming: 'Komende taalversies'
@@ -334,7 +334,7 @@ user:
     headerLong: 'Jouw account'
     tokenExpired: 'Het token is verlopen. Ververs de pagina en probeer opnieuw.'
     login:
-        placeholder: 'Email (or username, if you''re already registered)'
+        placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
         action: 'Inloggen'
         emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
         userNotFound: 'Gebruiker niet gevonden.'
@@ -345,8 +345,8 @@ user:
 
                 Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
         why: >
-            Registering lets you manage your cards ({/@andrea=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            Door te registreren kun je een kaart ({/@andrea=zoals deze}) maken.
+        passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'
@@ -354,7 +354,7 @@ user:
         changeUsername:
             header: 'Gebruikersnaam'
             action: 'Verander'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
+            invalid: 'Jouw gebruikersnaam moet tussen 4 en 16 karakters lang zijn en kan alleen nummers, letters, puntjes, streepjes en onderstreepjes bevatten.'
             taken: 'Deze gebruikersnaam is al in gebruik.'
         changeEmail:
             header: 'E-mailadres'
@@ -367,50 +367,50 @@ user:
         header: 'Avatar'
         change: 'Verander'
     deleteAccount: 'Verwijder je account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+    deleteAccountConfirm: 'Weet je zeker dat je jouw account wil verwijderen? Dit is onomkeerbaar!'
     socialConnection:
         list: 'Sociale media-verbindingen'
         connect: 'Koppel'
         refresh: 'Vernieuw'
         disconnect: 'Ontkoppel'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        disconnectConfirm: 'Weet je zeker dat je deze koppeling wil verwijderen? (Je kunt altijd inloggen met de email %email%)'
 
 profile:
     description: 'Omschrijving'
     names: 'Namen'
     pronouns: 'Voornaamwoorden'
-    pronounsInfo: 'You can enter a pronoun (eg. “die” or “zij/haar”) or a link (eg. “http://nl.pronouns.page/zem”) or the custom five forms (eg. “hen/hen/hun/hunne/hunzelf”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: 'Je kunt een voornaamwoord (bijv. “die” of “zij/haar”) of een link (bijv. “http://nl.pronouns.page/zem”) of vijf eigen vormen (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.'
+    pronounsNotFound: 'We kunnen geen link naar dit voornaamwoord vinden!'
     words: 'Woorden'
     birthday: 'Leeftijd'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'
     flags: 'Vlaggen'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
+    flagsInfo: 'Klik en sleep jouw pridevlaggen naar deze frame.'
     links: 'Links'
     column: 'Kolom'
 
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
+    list: 'Jouw kaarten'
+    init: 'Creëer een kaart'
+    show: 'Laat zien'
     edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    delete: 'Verwijder'
+    deleteConfirm: 'Weet je zeker dat je deze kaart wilt verwijderen?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
+        header: 'Kaart editor'
+        save: 'Sla jouw kaart op'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: 'Ja'
+        jokingly: 'Voor de grap'
+        meh: 'Oké'
+        no: 'Nee'
 
 share: 'Deel'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
+    approve: 'Keur goede'
+    hide: 'Verberg'
+    remove: 'Verwijder'
+    removeConfirm: 'Weet je zeker dat je dit item wilt verwijderen?'
     edit: 'Edit'
     add: 'Toevoegen'
     filter: 'Filter'
@@ -436,9 +436,9 @@ confirm:
     no: 'Nee, annuleer'
 
 terms:
-    header: 'Servicevoorwaarden'
+    header: 'Gebruiksvoorwaarden'
     lastUpdate: 'Laatst bijgewerkt'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    consent: 'Door te registreren accepteer je de {/terms=gebruiksvoorwaarden}.'
 
 admin:
     header: 'Administratie paneel'
@@ -447,13 +447,13 @@ admin:
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Gebruikersprofielen'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        confirmRole: 'Weet je zeker dat je @%username%''s rol wilt veranderen naar "%role%"?'
 
 table:
     empty: 'Leeg…'
     count: 'Aantal'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
+    sort: 'Sleep om te sorteren'
+    scrollUp: 'Scroll naar boven'
     more: 'Laat meer zien'
 
 api:
@@ -466,14 +466,14 @@ quotation:
     end: '”'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Check out'
-    longLink: 'this manual!'
+    shorter: 'Voeg meer toe'
+    short: 'Nieuwe taalversie toevoegen'
+    long: 'Wil je een nieuwe taalversie maken? Bekijk'
+    longLink: 'deze handleiding!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
+        instruction: 'Klik hier of sleep jouw afbeeldingen hier'
         instructionShort: 'Upload'
 
 error:
