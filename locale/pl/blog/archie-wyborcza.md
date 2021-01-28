@@ -1,4 +1,4 @@
-# Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej
+# Przemówienie Archiego na konferencji prasowej ws. transfobii w Gazecie Wyborczej
 
 <small>03.10.2020 | [@Archie](/@Archie)</small>
 

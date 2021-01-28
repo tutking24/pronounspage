@@ -497,7 +497,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
-        arczi-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
+        archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
         rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
         podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
         gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
