@@ -2,7 +2,7 @@
 
 <small>03.10.2020 | [@Archie](/@Archie)</small>
 
-![](/img/czas-sie-obnosic.jpg)
+![](/img/lobby-lgbt-wyborcza.jpg)
 
 Przemówienie Sybila z Wrocławskiego Marszu Równości:
 
