@@ -1,13 +1,13 @@
 key	description	normative	nominative	accusative	pronominal_poss	predicative_poss	reflexive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-hij,hij/hem,hij/hem/zijn	Masculine	TRUE	hij	hem	zijn	zijne	zichzelf	FALSE	FALSE	TRUE
-zij,zij/haar,zij/haar/haar	Feminine	TRUE	zij	haar	haar	hare	haarzelf	FALSE	FALSE	TRUE
-hen,hen/hun,hen/hen/hun	Neutral	FALSE	hen	hen	hun	hunne	hunzelf	FALSE	FALSE	TRUE	Mogelijk ook met {/hen/hun/hun=“hun”} als accusatief.			Deze lijst van bronnen bevat zowel de versie met {/hen=“hen/hen/hun”} als {/hen/hun/hun=“/hen/hun/hun”}.
-hen/hun/hun	Neutral	FALSE	hen	hun	hun	hunne	hunzelf	FALSE	FALSE	TRUE	Mogelijk ook met {/hen/hen/hun=“hen”} als accusatief.			Deze lijst van bronnen bevat zowel de versie met {/hen=“hen/hen/hun”} als {/hen/hun/hun=“/hen/hun/hun”}.
-die/hen,die/hen/hun	Neutral	FALSE	die	hen	hun	hunne	hunzelf	FALSE	FALSE	TRUE
-die,die/die,die/diens,die/die/diens	Neutral	FALSE	die	die	diens	diense	dienzelf	FALSE	FALSE	TRUE
-dee,dee/dem,dee/dem/dijr	Neutral	FALSE	dee	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
-dij,dij/dem,dij/dem/dijr	Neutral	FALSE	dij	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
-hen/hens,hen/hen/hens	Neutral	FALSE	hen	hen	hens	hense	henzelf	FALSE	FALSE	TRUE
-zhij,zhij/zhaar,zhij/zhaar/zhaar	Neutral	FALSE	zhij	zhaar	zhaar	zhare	zhaarself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="zhe/zher"}.
-zem,zem/zeer,zem/zeer/zeer	Neutral	FALSE	zem	zeer	zeer	zere	zeerself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="ze/zir"}.
+zij,zij/haar,zij/haar/haar	Vrouwelijk	TRUE	zij	haar	haar	hare	haarzelf	FALSE	FALSE	TRUE
+hij,hij/hem,hij/hem/zijn	Mannelijk	TRUE	hij	hem	zijn	zijne	zichzelf	FALSE	FALSE	TRUE
+hen,hen/hun,hen/hen/hun	Neutraal	FALSE	hen	hen	hun	hunne	hunzelf	FALSE	FALSE	TRUE	Mogelijk ook met {/hen/hun/hun=“hun”} als accusatief.			Deze lijst van bronnen bevat zowel de versie met {/hen=“hen/hen/hun”} als {/hen/hun/hun=“/hen/hun/hun”}.
+hen/hun/hun	Neutraal	FALSE	hen	hun	hun	hunne	hunzelf	FALSE	FALSE	TRUE	Mogelijk ook met {/hen/hen/hun=“hen”} als accusatief.			Deze lijst van bronnen bevat zowel de versie met {/hen=“hen/hen/hun”} als {/hen/hun/hun=“/hen/hun/hun”}.
+die/hen,die/hen/hun	Neutraal	FALSE	die	hen	hun	hunne	hunzelf	FALSE	FALSE	TRUE
+die,die/die,die/diens,die/die/diens	Neutraal	FALSE	die	die	diens	diense	dienzelf	FALSE	FALSE	TRUE
+dee,dee/dem,dee/dem/dijr	Neutraal	FALSE	dee	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
+dij,dij/dem,dij/dem/dijr	Neutraal	FALSE	dij	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
+hen/hens,hen/hen/hens	Neutraal	FALSE	hen	hen	hens	hense	henzelf	FALSE	FALSE	TRUE
+zhij,zhij/zhaar,zhij/zhaar/zhaar	Neutraal	FALSE	zhij	zhaar	zhaar	zhare	zhaarself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="zhe/zher"}.
+zem,zem/zeer,zem/zeer/zeer	Neutraal	FALSE	zem	zeer	zeer	zere	zeerself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="ze/zir"}.
 
