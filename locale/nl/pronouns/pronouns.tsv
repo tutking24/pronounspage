@@ -8,5 +8,6 @@ die,die/die,die/diens,die/die/diens	Neutral	FALSE	die	die	diens	diense	dienzelf	
 dee,dee/dem,dee/dem/dijr	Neutral	FALSE	dee	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
 dij,dij/dem,dij/dem/dijr	Neutral	FALSE	dij	dem	dijr	dijre	dijrzelf	FALSE	FALSE	TRUE
 hen/hens,hen/hen/hens	Neutral	FALSE	hen	hen	hens	hense	henzelf	FALSE	FALSE	TRUE
-zhij,zhij/zhaar,zhij/zhaar/zhaar	Neutral	FALSE	zhij	zhaar	zhaar	zhare	zhaarself	FALSE	FALSE	TRUE	Based on the English pronoun "zhe/zher".
-zem,zem/zeer,zem/zeer/zeer	Neutral	FALSE	zem	zeer	zeer	zere	zeerself	FALSE	FALSE	TRUE	Based on the English pronoun "ze/zir".
+zhij,zhij/zhaar,zhij/zhaar/zhaar	Neutral	FALSE	zhij	zhaar	zhaar	zhare	zhaarself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="zhe/zher"}.
+zem,zem/zeer,zem/zeer/zeer	Neutral	FALSE	zem	zeer	zeer	zere	zeerself	FALSE	FALSE	TRUE	Gebaseerd op het Engelse voornaamwoord {https://en.pronouns.page/ze/zir="ze/zir"}.
+
