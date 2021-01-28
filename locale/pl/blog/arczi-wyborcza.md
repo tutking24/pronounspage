@@ -4,8 +4,6 @@
 
 ![](/img/lobby-lgbt-wyborcza.jpg)
 
-Przemówienie Sybila z Wrocławskiego Marszu Równości:
-
 Każdego dnia walczymy o widoczność osób będących pod parasolem transpłciowości przez tworzenie bezpiecznej
 i komfortowej przestrzeni językowej, dokładamy wszelkich starań, by rodzaj neutralny nie był rodzajem infantylnym,
 by zaimki inne niż ona i on przestały brzmieć dziwnie. Robimy to wszystko po to,
