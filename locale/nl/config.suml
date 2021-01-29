@@ -52,7 +52,7 @@ sources:
     route: 'bronnen'
     submit: true
     mergePronouns:
-        hen/hun/hun: 'hen/hun'
+        hen/hun/hun: 'hen'
 
 nouns:
     enabled: true
