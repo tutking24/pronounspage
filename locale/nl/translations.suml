@@ -142,8 +142,8 @@ nouns:
     masculineShort: 'mann.'
     feminine: 'vrouwelijk'
     feminineShort: 'vrouw.'
-    neuter: 'onzijdig'
-    neuterShort: 'onzij.'
+    neuter: 'neutraal'
+    neuterShort: 'neutr.'
 
     singular: 'enkelvoud'
     singularShort: 'enkelv.'
@@ -391,7 +391,7 @@ profile:
 
     list: 'Jouw kaarten'
     init: 'Creëer een kaart'
-    show: 'Laat zien'
+    show: 'Laat kaart zien'
     edit: 'Edit'
     delete: 'Verwijder'
     deleteConfirm: 'Weet je zeker dat je deze kaart wilt verwijderen?'
