@@ -87,7 +87,7 @@ nouns:
         categories: ['queer/lgbtq+', 'transpłciowość', 'interpłciowość', 'niepełnosprawność', 'rasa i narodowość']
         route: 'inkluzywny'
     terms:
-        enabled: false
+        enabled: true
         categories:
             - 'orientacja seksualna'
             - 'orientacja romantyczna'
