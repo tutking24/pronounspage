@@ -9,12 +9,12 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: '可互換形式'
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
         examples: ['他&她', '她&伊', '他&佢']
     null: false
     emoji:
-        description: 'Emojiself pronouns'
+        description: 'Emoji代詞 (表情代詞)'
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
         morphemes:
             3rd_person: '#'

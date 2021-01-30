@@ -303,10 +303,10 @@ contact:
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
+                are created by the “中立語推行委員會” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
+        blog: '博客'
         upcoming: 'Upcoming language versions'  # TODO
 
 support:
@@ -337,7 +337,7 @@ user:
         invalid: 'Invalid code.'
     account:
         changeUsername:
-            header: 'Username'
+            header: '用戶名'
             action: 'Change'
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
             taken: 'This username is taken.'
@@ -408,7 +408,7 @@ footer:
     links: 'Contact, social media, support'
 
 notFound:
-    message: 'Page was not found'
+    message: '找不到頁面'
     back: 'Go back to the homepage'
 
 authRequired:
@@ -421,12 +421,12 @@ confirm:
     no: '不是…'
 
 terms:
-    header: 'Terms of Service'
+    header: '服務條款'
     lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    consent: 'By registering you''re accepting the {/terms=服務條款}.'
 
 admin:
-    header: 'Admin panel'
+    header: '管理面板'
     user:
         user: 'User'
         email: 'Email'
@@ -459,7 +459,7 @@ localise:
 images:
     upload:
         instruction: 'Click here or drag your pics here'  # TODO
-        instructionShort: 'Upload' # TODO
+        instructionShort: '上載'
 
 error:
     generic: 'Something went wrong, please try again…'  # TODO
