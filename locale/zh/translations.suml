@@ -299,7 +299,7 @@ contact:
     header: '通訊錄'
     authors: '網站的作者'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
+        name: '中立語推行委員會'
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
