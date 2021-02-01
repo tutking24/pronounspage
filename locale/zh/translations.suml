@@ -287,9 +287,9 @@ links:
 
     media: 'Pronouns.page in the media'
 
-    social: 'Social media'
+    social: '社交媒體'
 
-    languageVersions: 'Other language versions'
+    languageVersions: '其他語言版本'
 
 people: ~
 
@@ -299,7 +299,7 @@ contact:
     header: '通訊錄'
     authors: '網站的作者'
     team:
-        name: '中立語推行委員會'
+        name: 'The “中立語推行委員會” collective'  # TODO
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
@@ -338,20 +338,20 @@ user:
     account:
         changeUsername:
             header: '用戶名'
-            action: 'Change'
+            action: '更改'
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
             taken: 'This username is taken.'
         changeEmail:
             header: '電郵地址'
-            action: 'Change'
+            action: '更改'
             invalid: 'Invalid email address.'
             taken: 'This address is taken.'
         admin: 'Admin'
-    logout: 'Log out'
+    logout: '登出'
     avatar:
         header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
+        change: '更改'
+    deleteAccount: '刪除帳戶'
     deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
     socialConnection:
         list: 'Social media connections'
@@ -442,7 +442,7 @@ table:
     more: 'Show more'
 
 api:
-    header: 'Public API'
+    header: '公開API'
     example: 'Example'
     query: 'Query string parameters'
 
