@@ -56,7 +56,7 @@
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.mascPl">
-                            {{ w }}
+                            <Spelling>{{ w }}</Spelling>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
@@ -65,12 +65,12 @@
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-singular">
                             <li v-for="w in nouns[s.el.base].masc">
-                                {{ w }}
+                                <Spelling>{{ w }}</Spelling>
                             </li>
                         </ul>
                         <ul v-if="config.nouns.plurals" class="list-plural">
                             <li v-for="w in nouns[s.el.base].mascPl">
-                                {{ w }}
+                                <Spelling>{{ w }}</Spelling>
                             </li>
                         </ul>
                     </small>
@@ -87,13 +87,13 @@
                 <td>
                     <ul class="list-singular">
                         <li v-for="w in s.el.fem">
-                            {{ w }}
+                            <Spelling>{{ w }}</Spelling>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.femPl">
-                            {{ w }}
+                            <Spelling>{{ w }}</Spelling>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
@@ -102,12 +102,12 @@
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-singular">
                             <li v-for="w in nouns[s.el.base].fem">
-                                {{ w }}
+                                <Spelling>{{ w }}</Spelling>
                             </li>
                         </ul>
                         <ul v-if="config.nouns.plurals" class="list-plural">
                             <li v-for="w in nouns[s.el.base].femPl">
-                                {{ w }}
+                                <Spelling>{{ w }}</Spelling>
                             </li>
                         </ul>
                     </small>
@@ -116,14 +116,14 @@
                     <ul class="list-singular">
                         <li v-for="w in s.el.neutr">
                             <Declension v-if="config.nouns.declension" :word="w"/>
-                            <template v-else>{{w}}</template>
+                            <template v-else><Spelling>{{w}}</Spelling></template>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.neutrPl">
                             <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr"/>
-                            <template v-else>{{w}}</template>
+                            <template v-else><Spelling>{{w}}</Spelling></template>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
@@ -131,10 +131,10 @@
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].neutr">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].neutr"><Spelling>{{ w }}</Spelling></li>
                         </ul>
                         <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].neutrPl">{{ w }}</li>
+                            <li v-for="w in nouns[s.el.base].neutrPl"><Spelling>{{ w }}</Spelling></li>
                         </ul>
                     </small>
                 </td>

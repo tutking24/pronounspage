@@ -1,11 +1,11 @@
 <template>
     <span>
         <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
-            <strong v-if="part.variable">{{pronoun.getMorpheme(part.str, counter)}}</strong>
-            <span v-else>{{part.str}}</span>
+            <strong v-if="part.variable"><Spelling>{{pronoun.getMorpheme(part.str, counter)}}</Spelling></strong>
+            <span v-else><Spelling>{{part.str}}</Spelling></span>
         </span>
         <small v-if="link">
-            (<nuxt-link :to="'/' + pronoun.canonicalName">{{ pronoun.canonicalName }}</nuxt-link>)
+            (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling>{{ pronoun.canonicalName }}</Spelling></nuxt-link>)
         </small>
         <template v-if="config.pronunciation.enabled && pronounce && pronoun.pronounceable && example.pronounce(pronoun)">
             <a v-for="(link, name) in pronunciationLinks"

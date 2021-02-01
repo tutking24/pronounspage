@@ -2,7 +2,7 @@
     <div class="my-2" v-if="!deleted">
         <h3 class="h6">
             <Icon :v="source.icon()"/>
-            <strong><template v-if="source.author">{{source.author.replace('^', '')}}</template><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener" v-html="addMarks(source.title)"></a><span v-else v-html="addMarks(source.title)"></span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
+            <strong><Spelling v-if="source.author">{{source.author.replace('^', '')}}</Spelling><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener"><Spelling :text="addMarks(source.title)"></Spelling></a><Spelling v-else :text="addMarks(source.title)"></Spelling></em></strong><template v-if="source.extra"> (<Spelling>{{source.extra}}</Spelling>)</template>, {{source.year}}<template v-if="source.comment">; <Spelling>{{source.comment}}</Spelling></template>
         </h3>
         <ul class="list-inline" v-if="manage && $isGranted('sources')">
             <li v-if="!source.approved" class="list-inline-item">
@@ -50,7 +50,7 @@
             </li>
             <li class="list-inline-item">
                 <span v-for="p in source.pronouns" :class="['badge', pronounLibrary.isCanonical(p) ? 'badge-success' : 'badge-danger']">
-                    {{p}}
+                    <Spelling>{{p}}</Spelling>
                 </span>
             </li>
             <li class="list-inline-item" v-if="source.key">

@@ -24,7 +24,7 @@
             <ul class="list-group mt-4">
                 <li v-for="[group, groupPronouns] in pronounLibrary.split()" class="list-group-item">
                     <p class="h5">
-                        {{ group.name }}
+                        <Spelling>{{ group.name }}</Spelling>
                     </p>
                     <div class="small my-1" v-if="group.description">
                         <Icon v="info-circle"/>
@@ -34,7 +34,7 @@
                 </li>
                 <li v-if="config.pronouns.multiple !== false" class="list-group-item">
                     <p class="h5">
-                        {{ config.pronouns.multiple.name }}
+                        <Spelling>{{ config.pronouns.multiple.name }}</Spelling>
                     </p>
                     <div class="small my-1" v-if="config.pronouns.multiple.description">
                         <Icon v="info-circle"/>
@@ -57,7 +57,7 @@
                                         <button :class="['btn', multiple.includes(pronounName) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
                                                 @click="toggleMultiple(pronounName)"
                                         >
-                                            {{pronoun.name()}}
+                                            <Spelling>{{pronoun.name()}}</Spelling>
                                         </button>
                                     </li>
                                 </ul>
@@ -70,7 +70,7 @@
                 </li>
                 <li v-if="config.pronouns.null !== false" class="list-group-item">
                     <p class="h5">
-                        {{ config.pronouns.null.description }}
+                        <Spelling>{{ config.pronouns.null.description }}</Spelling>
                     </p>
                     <div class="small my-1" v-if="config.pronouns.null.history">
                         <Icon v="info-circle"/>
@@ -83,7 +83,7 @@
                 </li>
                 <li v-if="config.pronouns.emoji !== false" class="list-group-item">
                     <p class="h5">
-                        {{ config.pronouns.emoji.description }}
+                        <Spelling>{{ config.pronouns.emoji.description }}</Spelling>
                     </p>
                     <div class="small my-1" v-if="config.pronouns.emoji.history">
                         <Icon v="info-circle"/>
@@ -120,7 +120,7 @@
                                         <button :class="['btn', pronoun.name(glue) === selectedPronoun.name(glue) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
                                                 @click="selectedPronoun = pronouns[pronounName].clone()"
                                         >
-                                            {{pronoun.name(glue)}}
+                                            <Spelling>{{pronoun.name(glue)}}</Spelling>
                                         </button>
                                     </li>
                                 </ul>
@@ -128,7 +128,7 @@
 
                             <div class="alert alert-primary">
                                 <p class="h3 mb-0 text-center">
-                                    {{ selectedPronoun.name(glue) }}
+                                    <Spelling>{{ selectedPronoun.name(glue) }}</Spelling>
                                     <br/>
                                     <input v-model="selectedPronoun.description"
                                            class="form-control form-input p-0 form-control-sm"
@@ -152,7 +152,7 @@
                                                    @focus="selectedMorpheme = part.str"
                                                    @blur="selectedMorpheme = ''"
                                             />
-                                            <span v-else>{{part.str}}</span>
+                                            <span v-else><Spelling>{{part.str}}</Spelling></span>
                                         </span>
                                     </li>
                                 </ul>
