@@ -547,6 +547,7 @@ census:
                 - ['osobą niebinarną']
                 - ['osobą cispłciową']
                 - ['binarną osobą transpłciową']
+                # - ['nie wiem']
         -
             type: 'number'
             min: 1900

@@ -168,6 +168,11 @@
                 countResponses,
             };
         },
+        mounted() {
+            if (process.client) {
+                this.finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
+            }
+        },
         methods: {
             startSurvey() {
                 this.q = 0;
@@ -224,6 +229,7 @@
                         writins: JSON.stringify(this.writins),
                     });
                     this.finished = true;
+                    window.localStorage.setItem('census-finished', '1');
                 }
                 this.$nextTick(() => {
                     if (this.$refs.questionform) {

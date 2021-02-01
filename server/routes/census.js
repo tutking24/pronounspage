@@ -38,19 +38,21 @@ router.get('/census/finished', async (req, res) => {
 });
 
 router.post('/census/submit', async (req, res) => {
-    if (await hasFinished(req)) {
-        return res.status(401).json({error: 'Unauthorised'});
-    }
+    const suspicious = await hasFinished(req);
 
     const id = ulid();
-    await req.db.get(SQL`INSERT INTO census (id, locale, edition, userId, fingerprint, answers, writins) VALUES (
+    await req.db.get(SQL`INSERT INTO census (id, locale, edition, userId, fingerprint, answers, writins, ip, userAgent, acceptLanguage, suspicious) VALUES (
         ${id},
         ${req.config.locale},
         ${req.config.census.edition},
         ${req.user ? req.user.id : null},
         ${buildFingerprint(req)},
         ${req.body.answers},
-        ${req.body.writins}
+        ${req.body.writins},
+        ${req.ip},
+        ${req.headers['user-agent']},
+        ${req.headers['accept-language']},
+        ${suspicious}
     )`);
 
     return res.json(id);
