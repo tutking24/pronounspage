@@ -563,6 +563,12 @@ census:
                 - ['w Polsce']
                 - ['za granicą']
                 - ['nie chcę odpowiadać']
+        # -
+        #     type: 'radio'
+        #     question: 'Język polski jest dla Ciebie…'
+        #     options:
+        #         - ['językiem rodzimym']
+        #         - ['kolejnym językiem']
         -
             type: 'checkbox'
             question: 'Jakimi formami mówisz o sobie?'
