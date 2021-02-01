@@ -88,6 +88,11 @@ contact:
             icon: 'envelope'
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
+    authors:
+        -
+            name: '台灣非二元酷兒浪子'
+            link: 'https://www.facebook.com/TaiwanNonbinary/'
+            group: true
     team:
         enabled: true
         route: 'team'  # TODO

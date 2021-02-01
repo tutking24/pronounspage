@@ -6,6 +6,12 @@
                 <T>contact.team.name</T>
             </nuxt-link>
         </li>
+        <li v-for="author in config.contact.authors || []" class="mb-2">
+            <Icon :v="author.group ? 'users' : 'user'"/>
+            <a :href="author.link" target="_blank" rel="noopener">
+                {{author.name}}
+            </a>
+        </li>
         <li v-if="authors === undefined">
             <Spinner/>
         </li>
