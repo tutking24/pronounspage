@@ -169,7 +169,7 @@
             };
         },
         mounted() {
-            if (process.client) {
+            if (process.client && !this.$user()) {
                 this.finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
             }
         },
