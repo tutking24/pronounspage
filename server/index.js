@@ -11,6 +11,7 @@ import {buildLocaleList, isGranted} from "../src/helpers";
 global.config = loadSuml('config');
 
 const app = express()
+app.enable('trust proxy')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

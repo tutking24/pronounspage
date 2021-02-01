@@ -3,8 +3,16 @@ import SQL from 'sql-template-strings';
 import sha1 from 'sha1';
 import {ulid} from "ulid";
 
+const getIp = req => {
+    try {
+        return req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.ips.join(',') || req.ip;
+    } catch {
+        return '';
+    }
+}
+
 const buildFingerprint = req => sha1(`
-    ${req.ip}
+    ${getIp(req)}
     ${req.headers['user-agent']}
     ${req.headers['accept-language']}
 `);
@@ -49,7 +57,7 @@ router.post('/census/submit', async (req, res) => {
         ${buildFingerprint(req)},
         ${req.body.answers},
         ${req.body.writins},
-        ${req.ip},
+        ${getIp(req)},
         ${req.headers['user-agent']},
         ${req.headers['accept-language']},
         ${suspicious}
