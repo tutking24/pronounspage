@@ -17,9 +17,7 @@ const hasFinished = async req => {
             AND edition = ${req.config.census.edition}
             AND userId = ${req.user.id}
         `);
-        if (byUser) {
-            return true;
-        }
+        return !!byUser;
     }
 
     const fingerprint = buildFingerprint(req);
