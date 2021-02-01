@@ -26,12 +26,9 @@ const hasFinished = async req => {
         WHERE locale = ${req.config.locale}
         AND edition = ${req.config.census.edition}
         AND fingerprint = ${fingerprint}
+        AND userId IS NULL
     `);
-    if (byFingerprint) {
-        return true;
-    }
-
-    return false;
+    return !!byFingerprint;
 }
 
 const router = Router();
