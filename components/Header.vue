@@ -84,9 +84,17 @@
                 </nuxt-link>
             </div>
         </div>
-        <div v-if="locales[config.locale].published === false" class="alert alert-warning">
+        <div v-if="locales[config.locale].published === false" class="alert alert-warning mt-3">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
+        </div>
+        <div v-if="showCensus" class="alert alert-info mt-3">
+            <a href="#" class="float-right" @click.prevent="dismissCensus">
+                <Icon v="times"/>
+            </a>
+            <Icon v="user-chart" size="2" class="d-inline-block float-left mr-3 mt-2"/>
+            <T>census.banner</T>
+
         </div>
     </header>
     <header v-else class="mb-4">
@@ -101,12 +109,14 @@
 
 <script>
     import { mapState } from 'vuex'
+    import {DateTime} from "luxon";
 
     export default {
         data() {
             return {
                 hamburgerActive: false,
                 hamburgerShown: false,
+                censusDismissed: false,
             };
         },
         computed: {
@@ -230,6 +240,21 @@
 
                 return links;
             },
+            showCensus() {
+                if (!process.client) {
+                    return false;
+                }
+                const finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
+                const dismissed = !!parseInt(window.localStorage.getItem('census-dismissed') || 0);
+                const alreadyIn = this.$route.path === '/' + this.config.census.route;
+                if (!this.config.census.enabled || finished || dismissed || this.censusDismissed || alreadyIn) {
+                    return false;
+                }
+                const start = DateTime.fromISO(this.config.census.start).toLocal();
+                const end = DateTime.fromISO(this.config.census.end).toLocal();
+                const now = DateTime.utc().setZone(this.config.format.timezone);
+                return now >= start && now <= end;
+            },
         },
         methods: {
             isActiveRoute(link) {
@@ -250,6 +275,10 @@
                 const st = document.body.scrollTop || document.querySelector('html').scrollTop;
                 this.hamburgerShown = st > 300;
             },
+            dismissCensus() {
+                window.localStorage.setItem('census-dismissed', '1');
+                this.censusDismissed = true;
+            }
         },
         created() {
             if (process.client) {
