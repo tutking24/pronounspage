@@ -88,13 +88,12 @@
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
         </div>
-        <div v-if="showCensus" class="alert alert-info mt-3">
+        <div v-show="showCensus" class="alert alert-info mt-3">
             <a href="#" class="float-right" @click.prevent="dismissCensus">
                 <Icon v="times"/>
             </a>
             <Icon v="user-chart" size="2" class="d-inline-block float-left mr-3 mt-2"/>
             <T>census.banner</T>
-
         </div>
     </header>
     <header v-else class="mb-4">
