@@ -15,10 +15,11 @@
     export default {
         props: {
             params: {},
+            silent: {type: Boolean}
         },
         data() {
             return {
-                txt: t(this.$slots.default[0].text, this.params || {}),
+                txt: t(this.$slots.default[0].text, this.params || {}, !this.silent),
             }
         },
     }

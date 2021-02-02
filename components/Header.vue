@@ -93,7 +93,7 @@
                 <Icon v="times"/>
             </a>
             <Icon v="user-chart" size="2" class="d-inline-block float-left mr-3 mt-2"/>
-            <T>census.banner</T>
+            <T silent>census.banner</T>
         </div>
     </header>
     <header v-else class="mb-4">
