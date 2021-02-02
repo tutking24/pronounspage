@@ -2,6 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import sha1 from 'sha1';
 import {ulid} from "ulid";
+import Papa from 'papaparse';
 
 const getIp = req => {
     try {
@@ -67,11 +68,52 @@ router.post('/census/submit', async (req, res) => {
 });
 
 router.get('/census/count', async (req, res) => {
+    if (!req.isGranted('census')) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
     return res.json((await req.db.get(SQL`
         SELECT COUNT(*) as c FROM census
         WHERE locale = ${req.config.locale}
         AND edition = ${req.config.census.edition}
     `)).c);
+});
+
+router.get('/census/export', async (req, res) => {
+    if (!req.isGranted('census')) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const report = [];
+    for (let {answers, writins} of await req.db.all(SQL`
+        SELECT answers, writins FROM census
+        WHERE locale = ${req.config.locale}
+        AND edition = ${req.config.census.edition}
+        AND suspicious = 0
+    `)) {
+        answers = JSON.parse(answers);
+        writins = JSON.parse(writins);
+
+        const answer = {};
+        let i = 0;
+        for (let question of config.census.questions) {
+            if (question.type === 'checkbox') {
+                for (let [option, comment] of question.options) {
+                    answer[`${i}_${option}`] = (answers[i.toString()] || []).includes(option);
+                }
+            } else {
+                answer[`${i}_`] = answers[i.toString()] || '';
+            }
+            if (question.writein) {
+                answer[`${i}__writein`] = writins[i.toString()] || '';;
+            }
+            i++;
+        }
+
+        report.push(answer);
+    }
+
+    return res.set('content-type', 'text/csv').send(Papa.unparse(report));
 });
 
 export default router;
