@@ -68,10 +68,6 @@ router.post('/census/submit', async (req, res) => {
 });
 
 router.get('/census/count', async (req, res) => {
-    if (!req.isGranted('census')) {
-        res.status(401).json({error: 'Unauthorised'});
-    }
-
     return res.json((await req.db.get(SQL`
         SELECT COUNT(*) as c FROM census
         WHERE locale = ${req.config.locale}
