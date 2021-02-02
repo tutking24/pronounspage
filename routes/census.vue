@@ -10,6 +10,10 @@
                 <div class="alert alert-info">
                     {{countResponses}}
                     <T>census.replies</T>
+
+                    <a href="/api/census/export" class="btn btn-outline-secondary btn-sm float-right">
+                        <Icon v="download"/>
+                    </a>
                 </div>
             </section>
 
