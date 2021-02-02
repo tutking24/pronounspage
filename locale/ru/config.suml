@@ -1,4 +1,4 @@
-locale: 'pl'
+locale: 'ru'
 
 format:
     timezone: 'Europe/Warsaw'
