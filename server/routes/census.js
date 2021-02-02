@@ -95,13 +95,13 @@ router.get('/census/export', async (req, res) => {
         for (let question of config.census.questions) {
             if (question.type === 'checkbox') {
                 for (let [option, comment] of question.options) {
-                    answer[`${i}_${option}`] = (answers[i.toString()] || []).includes(option);
+                    answer[`${i}_${option}`] = (answers[i.toString()] || []).includes(option) ? 1 : '';
                 }
             } else {
                 answer[`${i}_`] = answers[i.toString()] || '';
             }
             if (question.writein) {
-                answer[`${i}__writein`] = writins[i.toString()] || '';;
+                answer[`${i}__writein`] = writins[i.toString()] || '';
             }
             i++;
         }
