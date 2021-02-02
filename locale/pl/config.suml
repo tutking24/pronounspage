@@ -577,6 +577,12 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+                - >
+                    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                    ale nie możesz tego bezpiecznie robić, to je zaznacz.
+                - >
+                    Przy formach liczby mnogiej nie chodzi nam o grupę Ty + inne osoby,
+                    lecz o używanie gramatycznej mnogości dla opisania jednej osoby (podobnie do angielskiego they/them)
             options:
                 - ['rodzaj męski', '„byłem zmęczony”']
                 - ['rodzaj żeński', '„byłam zmęczona”']
@@ -638,6 +644,9 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
+                - >
+                    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                    ale nie możesz tego bezpiecznie robić, to je zaznacz.
             options:
                 - ['maskulatywy', 'nauczyciel, partner, pracownik']
                 - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
@@ -725,7 +734,7 @@ census:
                 - ['agenderow_']
                 - ['bigenderow_']
                 - ['kłir']
-                - ['andogyniczn_']
+                - ['andogyniczn_']  # TODO androgyniczn_
                 - ['aporapłciow_']
                 - ['aporagenderow_']
                 - ['autypłciow_']
@@ -781,6 +790,7 @@ census:
                 - ['genderflux']
                 - ['gender questioning']
                 - ['transfeminine']
+                - ['transmasculine']
                 - ['transgender']
                 - ['trans']
                 - ['transneutral']
