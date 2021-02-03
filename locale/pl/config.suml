@@ -338,6 +338,10 @@ links:
                 (to także portal dla wszystkich, którzy w języku szukają przestrzeni dla siebie).
                 Osoby niebinarne nie mają z jego użyciem problemów, to wpis dla osób cispłciowych,
                 które – nie oszukujmy się – nawet przy wielkiej empatii nie poczują tego samego dyskomfortu, co osoby niebinarne.
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/news/205242/niebinarny-spis-powszechny-dolacz-do-badania-nad-niebinarnoscia-w-jezyku-polskim'
+            headline: 'Niebinarny spis powszechny - dołącz do badania nad niebinarnością w języku polskim – <strong>Queer.pl</strong>'
     socials:
         -
             icon: 'twitter'
