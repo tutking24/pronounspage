@@ -386,7 +386,7 @@ profile:
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
-    pronounsInfo: 'Pode introduzir um pronome' (p. ex. “ele” o “ela”) o um enlace (“http://pt.pronouns.page/elx”).'
+    pronounsInfo: 'Pode introduzir um pronome (p. ex. “ele” o “ela”) o um enlace (“http://pt.pronouns.page/elx”).'
     pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
     words: 'Palavras'
     birthday: 'Idade'
