@@ -7,6 +7,7 @@ import mailer from "../../src/mailer";
 import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
+import cookieSettings from "../../src/cookieSettings";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -123,7 +124,7 @@ const reloadUser = async (req, res, next) => {
             avatar: await avatar(req.db, dbUser),
         };
         const token = jwt.sign(newUser);
-        res.cookie('token', token);
+        res.cookie('token', token, cookieSettings);
         req.user = {...req.user, ...newUser};
     }
     next();
