@@ -9,28 +9,28 @@ home:
     about:
         - >
             Todes temos pronomes. São as palavras que se usa em lugar do nome para referir-nos a alguém a quem já mencionamos.
-            A maioria das pessoas usa {/ele=“ele”} e {/ela=“ela”}, assim que assumimos automaticamente qual usar com base em sua aparência.
+            A maioria das pessoas usa {/ele=«ele»} e {/ela=«ela»}, assim que assumimos automaticamente qual usar com base em sua aparência.
             Mas na realidade não é tão simples…
         - >
-            O gênero é complicado. Algumas pessoas não "aparecem" o seu género.
+            O gênero é complicado. Algumas pessoas não «parecem» o seu género.
             Alguns preferem ser chamados de maneira distinta a que se assumiria.
-            Algumas pessoas não encaixam nas etiquetas “masculino” o “feminino” e preferem uma língua neutra.
+            Algumas pessoas não se encaixam nas etiquetas «masculino» o «feminino» e preferem uma língua neutra.
         - >
-            Esta herramienta te permite enlazar a tus pronombres, con ejemplos de uso en oraciones,
-            para que puedas mostrarle a la gente cómo prefieres que te llamen.
+            Essa ferramenta permite-te encontrar os teus pronomes, com exemplos de uso em enunciações
+            para que possas mostrá-los à gente como prefiras que te chamem
         - >
-            Por que é importante? Por simplesmente decencia humana.
-            Não chamaria “Lucía” de Alicia só porque você gosta/tu gostas mais desse nome.
-            ou porque “tem mais cara de Lucía para você/tu”.
-            O incluso si ella <em>sí</em> se llama “Lucía” en su acta de nacimiento
-            pero detesta ese nombre y prefiere usar “Alicia”.
-            Es exactamente lo mismo con los pronombres –
-            si no quieres ser grosere con alguien, dirígete a elle correctamente.
-            La única diferencia es que normalmente conocemos los nombres, pero no los pronombres.
-            Nos presentamos con nuestro nombre, pero no con nuestros pronombres. ¡Hagamos un cambio!
+            Por que é importante? Por uma simples decência humana.
+            Não chamaria «Lucía» de Alicia só porque você gosta/tu gostas mais desse nome.
+            ou porque «tem mais cara de Lucía para você/ti».
+            Ou inclusive se ela <em>sim</em> chama-se «Lucía» na sua certidão de nascimento
+            mas odeia esse nome e prefere usar «Alícia».
+            É exatamente o mesmo com os pronomes –
+            se não quiseres ser grosseiro para alguém, dirije-te a elx corretamente.
+            A única diferença é que geralmente conhecemos os nomes, mas não os pronomes.
+            Apresentamo-nos com o nosso nome, mas não com os nossos pronomes. Vamos lá mudar isso!
     pronouns: 'Lista de pronomes populares'
     generator:
-        header: 'Generador'
+        header: 'Generator'
         description: >
             También puedes usar esta herramienta para llenar los espacios en blanco
             y generar un enlace que puedes compartir.
@@ -42,7 +42,7 @@ home:
     whatisit: '¿Por qué importan los pronombres?'
 
 pronouns:
-    examples: 'Ejemplos de uso en oraciones'
+    examples: 'Exemplos de uso em frases'
     plural: 'Plural'
     intro: 'Meus pronomes são'
     normative: 'Normativo'
@@ -70,7 +70,7 @@ sources:
     subheader: 'Corpus de texto de género neutro'
     toc: 'Mostrar tabela de conteúdos'
     type:
-        All: 'Todo'
+        All: 'Tudo'
         Book: 'Livros'
         Article: 'Artículos'
         Movie: 'Filmes'
@@ -150,8 +150,8 @@ nouns:
     pluralShort: 'pl.'
 
 faq:
-    header: 'Preguntas'
-    headerLong: 'Preguntas frecuentes'
+    header: 'Perguntas'
+    headerLong: 'Preguntas frequentes'
     questions:
         nonbinary:
             question: 'O que é <em>não binarie</em>?'
@@ -279,38 +279,38 @@ faq:
                     ¡Para nada! Después de muchos años de usar los pronombres que mejor se adaptan al género asignado al nacer
                     es fácil olvidarse a une misme el cambiarlos.
                 - >
-                    Pronombres ≠ género.
+                    Pronomes ≠ gênero.
                     Tu género no cambiará de repente porque alguien te llamó “elle”.
-                    No te preocupes. Experimenta. Ve qué encaja mejor contigo.
+                    No te preocupes. Experimenta. Veja o que encaixa melhor contigo.
         preferred-pronouns:
-            question: '¿Por qué no debería decir “pronombres preferidos”?'
+            question: 'Por que não deveria dizer “pronomes preferidos”?'
             answer:
                 - >
                     Porque decirlo así sugiere que los pronombres son un capricho.
                     Si alguien simplemente “prefiere” que le digan “ella”, no se sentirá mal _realmente_ si la llamo “él”, ¿no?
                     Parece chico, después de todo, ¡Así que será más fácil para mí!
                 - >
-                    ¡No! Son nuestros pronombres. No nuestros “pronombres preferidos”. Son nuestros nombres, no nuestros “nombres preferidos”.
-                    Si te importan tus amigues y seres querides trans y no binaries, llámales de la manera correcta.
+                    Não! São nossos pronomes. Não nossos “pronomes preferidos”. São nossos nomes, não nossos “nomes preferidos”.
+                    Se te importam ses amigues e ses querides trans e não bináries, chama-lhes da maneira correta.
         gender-pronouns:
             question: '¿Por qué no debería decir “pronombres de género”?'
             answer:
                 - >
-                    Porque género ≠ pronombres. Los pronombres son sólo gramática.
-                    Las personas no binarias pueden usar pronombres binarios, algunas lesbianas usan {/él=él/lo} por razones culturales, etc.
+                    Porque gênero ≠ pronomes. Os pronomes são só gramática.
+                    As personas não binárias podem usar pronomes binários, algumas lesbianas usam {/ele=ele} por razões culturais, etc.
                 - >
-                    Simplemente di “pronombres”.
+                    Simplemente de “pronomes”.
 
 links:
     header: 'Enlaces'
     headerLong: 'Enlaces externos'
     recommended: 'Recomendamos'
 
-    media: 'Pronouns.page en los medios'
+    media: 'Pronouns.page nas midias'
 
-    social: 'Redes sociales'
+    social: 'Redes sociais'
 
-    languageVersions: 'Versiones en otras lenguas'
+    languageVersions: 'Versões em outros idiomas'
 
 people: ~
 
@@ -338,7 +338,7 @@ support:
 
 user:
     header: 'Conta'
-    headerLong: 'Tua conta'
+    headerLong: 'A conta'
     tokenExpired: 'El token ha expirado. Por favor actualiza la página e inténtalo nuevamente.'
     login:
         placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
@@ -361,8 +361,8 @@ user:
         changeUsername:
             header: 'Nome do usuarie'
             action: 'Mude'
-            invalid: 'El nombre de usuarie debe tener entre 4 y 16 caracteres y sólo puede contener números, letras, puntos, guiones y guionbajos.'
-            taken: 'Este nombre de usuarie ya está en uso.'
+            invalid: 'O nome de usuarie deve ter entre 4 e 16 caracteres e só pode contar números, letras, pontos, [guiones] e [guionbajos].'
+            taken: 'Este nome de usuarie já está em uso.'
         changeEmail:
             header: 'Endereço de e-mail'
             action: 'Mude'
@@ -374,37 +374,37 @@ user:
         header: 'Avatar'
         change: 'Mude'
     deleteAccount: 'Eliminar conta'
-    deleteAccountConfirm: '¿Confirmas que quieres eliminar tu cuenta? ¡Esto será irreversible!'
+    deleteAccountConfirm: 'Confirma que quer eliminar a conta? Isso será irreversible!'
     socialConnection:
-        list: 'Conexiones de redes sociales'
+        list: 'Conex˜ões de redes sociais'
         connect: 'Conectar'
         refresh: 'Actualizar'
         disconnect: 'Desconectar'
-        disconnectConfirm: '¿Confirmas que quieres eliminar esta conexión? (Siempre puedes iniciar sesión usando el correo electrónico %email%)'
+        disconnectConfirm: 'Confirma que quer excluir essa conexão? (Sempre pode iniciar sess˜åo usando seu endereso %email%)'
 
 profile:
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
-    pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://es.pronouns.page/ellx”).'
+    pronounsInfo: 'Pode introduzir um pronome' (p. ex. “ele” o “ela”) o um enlace (“http://pt.pronouns.page/elx”).'
     pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
     words: 'Palavras'
     birthday: 'Idade'
-    birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
+    birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
     flags: 'Bandeiras'
-    flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
+    flagsInfo: 'Arrasta as bandeiras de orgulho a esse marco.'
     links: 'Enlaces'
-    column: 'Columna'
+    column: 'Coluna'
 
-    list: 'Teus cartões'
+    list: 'Os cartões'
     init: 'Criar um cartão'
     show: 'Mostrar'
     edit: 'Editar'
-    delete: 'Eliminar'
+    delete: 'Excluir'
     deleteConfirm: '¿Confirmas de que quieres eliminar esta tarjeta?'
     editor:
         header: 'Editor de cartões'
-        save: 'Salve teu cartão'
+        save: 'Salve o cartão'
     opinion:
         yes: 'Sim'
         jokingly: 'Brincando'
@@ -414,36 +414,36 @@ profile:
 share: 'Compartilhar'
 
 crud:
-    approve: 'Aprobar'
+    approve: 'Aprovar'
     hide: 'Esconder'
-    remove: 'Quitar'
-    removeConfirm: '¿Confirmas que quieres quitar este ítem?'
+    remove: 'Excluir'
+    removeConfirm: 'Confirma que quer excluir esse item?'
     edit: 'Editar'
-    add: 'Añadir'
+    add: 'Adicionar'
     filter: 'Filtrar'
-    filterLong: 'Filtrar la lista…'
+    filterLong: 'Filtrar a lista…'
     search: 'Buscar…'
-    author: 'Añadido por'
+    author: 'Adicionado por'
 
 footer:
-    source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
-    links: 'Contacto, redes sociales, apoyo'
+    source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
+    links: 'Contato, redes sociais, apoio'
 
 notFound:
-    message: 'Página no encontrada'
-    back: 'Volver a la página de inicio'
+    message: 'Página não encontrada'
+    back: 'Voltar para a página de início'
 
 authRequired:
     message: 'Debes iniciar sesión para ver este sitio'
     go: 'Ir al sitio de inicio de sesión'
 
 confirm:
-    header: '¿Confirmas esta decisión?'
-    yes: 'Sí, lo estoy'
-    no: 'No, cancelar'
+    header: 'Aplicar essa decisão?'
+    yes: 'Sim, estou'
+    no: 'Não, cancelar'
 
 terms:
-    header: 'Térinos de Servicio'
+    header: 'Termos de Servicio'
     lastUpdate: 'Actualizados por última vez'
     consent: 'Al registrarte, aceptas los {/terinos=Térinos de Servicio}.'
 
@@ -457,15 +457,15 @@ admin:
         confirmRole: '¿Confirmas que quieres cambiar el rol de @%username% a "%role%"?'
 
 table:
-    empty: 'Vacío…'
+    empty: 'Vazio…'
     count: 'Conta'
-    sort: 'Arrastra para ordenar'
-    scrollUp: 'Subir hasta arriba'
-    more: 'Mostrar más'
+    sort: 'Arrasta para ordenar'
+    scrollUp: 'Arrasta para cima'
+    more: 'Mostrar mai'
 
 api:
     header: 'Public API'
-    example: 'Ejemplo'
+    example: 'Exemplo'
     query: 'Query string parameters'
 
 quotation:
@@ -473,15 +473,15 @@ quotation:
     end: '”'
 
 localise:
-    shorter: 'Añadir versiones'
-    short: 'Añadir versiones en otras lenguas'
-    long: '¿Quieres añadir una versión en otra lengua? ¡Consulta'
+    shorter: 'Adicionar versões'
+    short: 'Adicionar versões em outras línguas'
+    long: 'Quer adicionar uma versão em outra língua? Consulta!'
     longLink: 'este manual!'
 
 images:
     upload:
         instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instructionShort: 'Carregar'
 
 error:
     generic: 'Something went wrong, please try again…'
@@ -492,7 +492,7 @@ flags:
     Achillean: 'Aquilean{inflection}'
     Agender: 'Agênero'
     Alloromantic_Asexual: 'Allorrómanti{inflection_c} assexual'
-    Anarcha-Queer: 'Anarcoqueer'
+    Anarcha-Queer: 'Anarcaqueer'
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androssexual'
     Aporagender: 'Aporagênero'
@@ -555,7 +555,7 @@ flags:
     Polysexual: 'Polissexual'
     Pomoromantic: 'Pomorrómanti{inflection_c}'
     Pomosexual: 'Pomossexual'
-    Progress_Pride: 'Orgullo progresivo'
+    Progress_Pride: 'Orgulho progresivo'
     Queer: 'Queer'
     Queerian: 'Queerian{inflection}'
     Queerplatonic: 'Queerplatôni{inflection_c}'
@@ -569,7 +569,7 @@ flags:
     Transmasculine: 'Transmasculin{inflection}'
     Transneutral: 'Transneutr{inflection}'
     Trigender: 'Trigênero'
-    Trixic: 'Trízi{inflection_c}'
+    Trixic: 'Tríxi{inflection_c}'
     Two_Spirit: 'Dois-espíritos'
     Xenogender: 'Xenogênero'
 
