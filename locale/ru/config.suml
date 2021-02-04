@@ -7,7 +7,7 @@ header: true
 
 pronouns:
     enabled: true
-    default: 'on'
+    default: 'он'
     any: 'dowolne'
     plurals: true
     honorifics: true
@@ -52,9 +52,9 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        PL:
-            language: 'pl-PL'
-            voice: 'Ewa'
+        RU:
+            language: 'ru-RU'
+            voice: 'Tatyana'
             engine: 'standard'
 
 sources:
