@@ -404,7 +404,7 @@ crud:
     author: '添加人'
 
 footer:
-    source: '源代碼以。 {https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布'
+    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
     links: '通訊錄, 社交媒體, 支持'
 
 notFound:
