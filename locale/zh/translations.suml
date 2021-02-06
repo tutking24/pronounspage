@@ -364,8 +364,8 @@ profile:
     description: '傳記'
     names: '名字'
     pronouns: '代詞'
-    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“ http://zh.pronouns.page/佢”）
-   pronounsNotFound: '我們找不到這個代詞的鏈接！"
+    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“ http://zh.pronouns.page/佢”'
+    pronounsNotFound: '我們找不到這個代詞的鏈接'
     words: '詞匯'
     birthday: '嵗'
     birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
@@ -423,16 +423,16 @@ confirm:
 terms:
     header: '服務條款'
     lastUpdate: '最近更新時間'
-    consent: "通過註冊，您正在接受 {/terms=服務條款}.'
+    consent: '通過註冊，您正在接受 {/terms=服務條款}.'
 
 admin:
-   header: '管理面板'
-   user:
-       user: '帳戶'
-       email: '電郵地址'
-       roles: '角色'
-       profiles: '個人資料'
-       confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+    header: '管理面板'
+    user:
+        user: '帳戶'
+        email: '電郵地址'
+        roles: '角色'
+        profiles: '個人資料'
+        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 
 table:
     empty: '空……'

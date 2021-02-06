@@ -7,56 +7,58 @@
                     <span class="higher"><T>title</T></span>
                 </nuxt-link>
             </h1>
-            <div v-if="config.locale === 'zh'" class="btn-group m-2">
-                <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
-                        :class="'btn btn-sm ' + (spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary')"
-                        :disabled="spelling === code"
-                        @click="setSpelling(code)"
-                >
-                    {{display}}
-                </button>
-            </div>
-            <!--
-            <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm">
-                <template v-slot:toggle>
-                    <Icon v="language"/>
-                    {{locales[config.locale].name}}
-                </template>
+            <div>
+                <div v-if="config.locale === 'zh'" class="btn-group m-2">
+                    <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
+                            :class="'btn btn-sm ' + (spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary')"
+                            :disabled="spelling === code"
+                            @click="setSpelling(code)"
+                    >
+                        {{display}}
+                    </button>
+                </div>
+                <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm" class="d-inline-block">
+                    <template v-slot:toggle>
+                        <Icon v="language"/>
+                        {{locales[config.locale].name}}
+                    </template>
 
-                <template v-slot:menu>
-                    <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
-                        <a :href="options.url" class="dropdown-item">
-                            {{options.name}}
-                        </a>
-                    </li>
-                    <li class="dropdown-divider"></li>
-                    <li>
-                        <LocaleLink locale="en" link="/blog/creating-new-language-version" class="dropdown-item small">
-                            <Icon v="plus"/>
-                            <T>localise.shorter</T>
-                        </LocaleLink>
-                    </li>
-                </template>
-            </Dropdown>
-            -->
-            <div class="btn-group">
-                <a v-for="(options, locale) in locales" :key="locale"
-                   :href="options.url"
-                   :class="'btn btn-sm ' + (locale === config.locale ? 'btn-secondary disabled' : 'btn-outline-secondary')"
-                   :disabled="locale === config.locale"
-                >
-                    {{options.name}}
-                </a>
-                <LocaleLink locale="en" link="/blog/creating-new-language-version" class="btn btn-sm btn-outline-secondary">
-                    <Icon v="plus"/>
-                </LocaleLink>
+                    <template v-slot:menu>
+                        <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
+                            <a :href="options.url" class="dropdown-item">
+                                {{options.name}}
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <LocaleLink locale="en" link="/blog/creating-new-language-version" class="dropdown-item small">
+                                <Icon v="plus"/>
+                                <T>localise.shorter</T>
+                            </LocaleLink>
+                        </li>
+                    </template>
+                </Dropdown>
+                <!--
+                <div class="btn-group">
+                    <a v-for="(options, locale) in locales" :key="locale"
+                       :href="options.url"
+                       :class="'btn btn-sm ' + (locale === config.locale ? 'btn-secondary disabled' : 'btn-outline-secondary')"
+                       :disabled="locale === config.locale"
+                    >
+                        {{options.name}}
+                    </a>
+                    <LocaleLink locale="en" link="/blog/creating-new-language-version" class="btn btn-sm btn-outline-secondary">
+                        <Icon v="plus"/>
+                    </LocaleLink>
+                </div>
+                -->
             </div>
         </div>
         <div class="d-block d-md-none">
             <div class="btn-group-vertical btn-block nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
-                    {{ link.textLong || link.text }}
+                    <Spelling>{{ link.textLong || link.text }}</Spelling>
                 </nuxt-link>
             </div>
         </div>
@@ -70,7 +72,7 @@
                 <div class="btn-group-vertical btn-block nav-custom nav-custom-left mb-2">
                     <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                         <Icon :v="link.icon"/>
-                        {{ link.textLong || link.text }}
+                        <Spelling>{{ link.textLong || link.text }}</Spelling>
                     </nuxt-link>
                 </div>
             </div>
@@ -80,7 +82,7 @@
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon" size="1.6"/>
                     <br/>
-                    <span class="text-nowrap">{{ link.text }}</span>
+                    <span class="text-nowrap"><Spelling>{{ link.text }}</Spelling></span>
                 </nuxt-link>
             </div>
         </div>

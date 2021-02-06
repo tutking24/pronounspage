@@ -40,7 +40,7 @@ sources:
     mergePronouns: {}
 
 nouns:
-    enabled: true
+    enabled: false
     route: 'dictionary'
     collapsable: false
     plurals: true
