@@ -19,26 +19,24 @@
                     </nuxt-link>
                 </th>
                 <td v-if="pronouns[pronoun].plural[0]">
-                    Dosta<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}śmy</strong>
+                    Мы получи<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}</strong>
                 </td>
                 <td v-else>
-                    Dostał<strong>{{pronouns[pronoun].morphemes.verb_middle_inter}}m</strong>
+                    Я получи<strong>{{pronouns[pronoun].morphemes.verb_middle_inter}}</strong>
                 </td>
                 <td v-if="pronouns[pronoun].plural[0]">
-                    Gra<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}ście</strong>
+                    Вы игра<strong>{{pronouns[pronoun].morphemes.verb_end_inter}}</strong>
                 </td>
                 <td v-else>
-                    Grał<strong>{{pronouns[pronoun].morphemes.verb_middle_inter}}ś</strong>
+                    Ты грал<strong>{{pronouns[pronoun].morphemes.verb_end_about}}</strong>
                 </td>
                 <td v-if="pronouns[pronoun].plural[0]">
-                    Powiedzieli <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
-                    że [<strong>{{pronouns[pronoun].morphemes.pronoun_n}}</strong>]
-                    są ładn<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
+                    Они сказали <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
+                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}} красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
                 </td>
                 <td v-else>
-                    Powiedzieli <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
-                    że [<strong>{{pronouns[pronoun].morphemes.pronoun_n}}</strong>]
-                    jest ładn<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
+                    Они сказали <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
+                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}} красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
                 </td>
             </tr>
             </tbody>

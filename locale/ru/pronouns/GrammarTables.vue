@@ -9,18 +9,18 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Mianownik</th>
-                    <th>Dopełniacz</th>
-                    <th>Celownik</th>
-                    <th>Biernik</th>
-                    <th>Narzędnik</th>
-                    <th>Miejscownik</th>
+                    <th>Именительный</th>
+                    <th>Родительный</th>
+                    <th>Дательный</th>
+                    <th>Винителный</th>
+                    <th>Творителный</th>
+                    <th>Предложный</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_i" :counter="counter"/></td>
@@ -34,9 +34,9 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>1 os.</th>
-                    <th>2 os.</th>
-                    <th>3 os.</th>
+                    <th>1 ос.</th>
+                    <th>2 ос..</th>
+                    <th>3 ос.</th>
                     <th>Przymiotniki</th>
                 </tr>
                 </thead>
@@ -45,15 +45,15 @@
                     <td>
                         <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
                                   prepend="–"
-                                  :append="selectedPronoun.isPlural(counter) ? 'śmy' : 'm'"
-                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕmɨ' : 'm'"
+                                  :append="selectedPronoun.isPlural(counter) ? '' : ''"
+                                  :appendPr="selectedPronoun.isPlural(counter) ? '' : ''"
                         />
                     </td>
                     <td>
                         <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
                                   prepend="–"
-                                  :append="selectedPronoun.isPlural(counter) ? 'ście' : 'ś'"
-                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕʨ̑ɛ' : 'ɕ'"
+                                  :append="selectedPronoun.isPlural(counter) ? '' : ''"
+                                  :appendPr="selectedPronoun.isPlural(counter) ? '' : ''"
                         />
                     </td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="verb_end_about" :counter="counter" prepend="–"/></td>
