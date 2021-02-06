@@ -7,5 +7,5 @@ export default [
     ['pt', 'Português',  'https://pt.pronouns.page', false],
     ['ru', 'Русский',    'https://ru.pronouns.page', false],
     ['yi', 'ייִדיש',      'https://yi.pronouns.page', false],
-    ['zh', '中文',        'https://zh.pronouns.page', false],
+    ['zh', '中文',        'https://zh.pronouns.page', true],
 ];
