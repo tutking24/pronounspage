@@ -32,11 +32,11 @@
                 </td>
                 <td v-if="pronouns[pronoun].plural[0]">
                     Они сказали <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
-                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}} красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
+                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}}</strong> красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
                 </td>
                 <td v-else>
                     Они сказали <strong>{{pronouns[pronoun].morphemes.pronoun_d}}</strong>,
-                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}} красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
+                    что <strong>{{pronouns[pronoun].morphemes.pronoun_n}}</strong> красив<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
                 </td>
             </tr>
             </tbody>
