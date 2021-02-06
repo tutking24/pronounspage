@@ -1,6 +1,6 @@
 key	description	normative	pronoun_n	pronoun_g	pronoun_d	pronoun_a	pronoun_i	pronoun_l	adjective_n	adjective_n_c	adjective_n_k	verb_end_inter	verb_end_about	verb_middle_inter	verb_middle_about	verb_go	verb_o	honorific	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-она,она/её	женский род	TRUE	она	её	ей	её	ей / ею	ней	ый	ый	ки	а	а	а	а	шел	о	госпожа	FALSE	FALSE	TRUE				
-он,он/его	мужской род	TRUE	он	его	ему	его	им	нём	ая	ая	кая			е	е	шла	о	господин	FALSE	FALSE	TRUE				
+она,она/её	женский род	TRUE	она	её	ей	её	ей / ею	ней	ая	ая	ки	а	а	а	а	шла	о	госпожа	FALSE	FALSE	TRUE				
+он,он/его	мужской род	TRUE	он	его	ему	его	им	нём	ая	ая	кая			е	е	шел	о	господин	FALSE	FALSE	TRUE				
 оно/её	нейтральный род с женская формой	FALSE	оно	её	ей	её	ей / ею	ней	ое	ое	кое	о	о	о	о	шло	о	госпожне	FALSE	FALSE	TRUE				
 оно,оно/его	нейтральный род	TRUE	оно	его	ему	его	им	нём	ое	ое	кое	о	о	о	о	шло	о	госпожне	FALSE	FALSE	TRUE				
 оно/ено	неоместоимение «оно/ено»	FALSE	оно	ено	ену	ено	нему	нем	ое	ое	кое	о	о	о	о	шло	о	госпожне	FALSE	FALSE	TRUE				
@@ -10,6 +10,6 @@ key	description	normative	pronoun_n	pronoun_g	pronoun_d	pronoun_a	pronoun_i	pron
 ону,ону/ену	неоместоимение «ону/ену»	FALSE	ону	ену	еву	ену	нум	нум	у	у	ку	у	у	у	у	шлу	о	госпожну	FALSE	FALSE	TRUE				
 оны,оны/егы	неоместоимение «оны/егы»	FALSE	оны	егы	ны	гы	немы	немы	ы	ы	кы	ы	ы	ы	ы	шлы	о	госпожны	FALSE	FALSE	TRUE				
 он_,он_/е_	формы с нижним подчеркиванием	FALSE	он_	е_	е_	е_	е_	е_	_	_	к_	_	_	_	_	шл_	_	госпо_	FALSE	FALSE	FALSE				
-онх,онх/ех	формы с иксом	FALSE	онх	ех	ех	ех	ех	ех	х	х	кх	х	х	х	х	шлх	о	госпох	FALSE	FALSE	FALSE				
+онx,онx/еx	формы с иксом	FALSE	онx	еx	еx	еx	еx	еx	x	x	кx	x	x	x	x	шлx	о	госпоx	FALSE	FALSE	FALSE				
 он*,он*/е*	формы с знаком звёздочку	FALSE	он*	е*	е*	е*	е*	е*	*	*	к*	*	*	*	*	шл*	*	носпо*	FALSE	FALSE	FALSE				
 онø,онø/еø	формы с носовой гласный	FALSE	онø	eø	eø	eø	eø	eø	ø	ø	кø	ø	ø	ø	ø	шл	о	носпоø	FALSE	FALSE	TRUE				
