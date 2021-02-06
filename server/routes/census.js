@@ -58,9 +58,9 @@ router.post('/census/submit', async (req, res) => {
         ${buildFingerprint(req)},
         ${req.body.answers},
         ${req.body.writins},
-        ${getIp(req)},
-        ${req.headers['user-agent']},
-        ${req.headers['accept-language']},
+        null,
+        null,
+        null,
         ${suspicious}
     )`);
 
