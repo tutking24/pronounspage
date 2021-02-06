@@ -48,7 +48,7 @@ pronouns:
         button: '生成鏈接到可互換形式'
         header: '可互換形式'
         raw: '可互換'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+    generated: '那些代詞是使用生成器創建的。  pronouns.page團隊對此不承擔任何責任。'
     any:
         header: '任何代詞'
         short: '任何'
@@ -92,11 +92,11 @@ sources:
         thanks: '感謝您的貢獻！'
         another: '提交另一個'
         moderation: '提交的內容必須先獲得批准才能發布。'
-        key: 'Key'  # TODO
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        key: '键'
+        keyInfo: '用于在语言版本之间链接源并与字典链接的标识符'
+        images: '意象'
+    otherVersions: '在其他語言'
+    referenced: '榜樣'
 
 nouns:
     header: '字典'
@@ -281,11 +281,11 @@ faq:
                     Simply say “pronouns”.
 
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
+    header: '鏈接'
+    headerLong: '額外鏈接'
+    recommended: '建議'
 
-    media: 'Pronouns.page in the media'
+    media: 'Pronouns.page在傳媒'
 
     social: '社交媒體'
 
@@ -302,12 +302,12 @@ contact:
         name: '中立語推行委員會'
         description:  # TODO
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “中立語推行委員會” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
+                {https://pronouns.page=Pronouns.page} 及相關舉措
+                 由“中立語推行委員會”集體創建。
+        logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'  # TODO
+        members: '份子'  # TODO
         blog: '博客'
-        upcoming: 'Upcoming language versions'  # TODO
+        upcoming: '即將到來語言文本'  # TODO
 
 support:
     header: '支持'
@@ -331,46 +331,46 @@ user:
                 如果你沒有要求這個代碼，請忽略消息。
         why: >
             註冊可以讓你管理你的卡（{/@andrea=像這個}）。
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+        passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: '證實'
+        invalid: '不對代碼'
     account:
         changeUsername:
             header: '用戶名'
             action: '更改'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
-            taken: 'This username is taken.'
+            invalid: '用戶名必須介於4到16個字符之間，並且只能包含數字，字母，點，連字符和下劃線。'
+            taken: '該用戶名已被使用。'
         changeEmail:
             header: '電郵地址'
             action: '更改'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
+            invalid: '不對電子郵件'
+            taken: '這個電子郵件是已經用了'
+        admin: '管理員'
     logout: '登出'
     avatar:
-        header: 'Avatar'
+        header: '頭像'
         change: '更改'
     deleteAccount: '刪除帳戶'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+    deleteAccountConfirm: '確定要刪除您的帳戶嗎？ 這將是不可逆的！'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: '社交媒體'
+        connect: '連'
+        refresh: '祓飾'
+        disconnect: '掉線'
+        disconnectConfirm: '確定要刪除此連接嗎？  （您始終可以使用電子郵件登錄 %email%)'
 
 profile:
     description: '傳記'
     names: '名字'
     pronouns: '代詞'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“ http://zh.pronouns.page/佢”）
+   pronounsNotFound: '我們找不到這個代詞的鏈接！"
     words: '詞匯'
     birthday: '嵗'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
     flags: '旗幟'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
+    flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     links: '鏈接'
     column: '列'
 
@@ -379,7 +379,7 @@ profile:
     show: '眎'
     edit: '改寫'
     delete: '刪除'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    deleteConfirm: '確定要刪除此卡嗎？'
     editor:
         header: '卡編輯'
         save: '保存卡'
@@ -389,31 +389,31 @@ profile:
         meh: 'OK'
         no: '不好'
 
-share: 'Share'
+share: '這裡'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
+    approve: '贊成'
+    hide: '遮'
+    remove: '除'
+    removeConfirm: '您確定要刪除此項目嗎？'
+    edit: '編輯'
+    add: '添'
+    filter: '篩選'
+    filterLong: '篩選清單…'
+    search: '搜索'
+    author: '添加人'
 
 footer:
-    source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'
-    links: 'Contact, social media, support'
+    source: '源代碼以。 {https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布'
+    links: '通訊錄, 社交媒體, 支持'
 
 notFound:
     message: '找不到頁面'
-    back: 'Go back to the homepage'
+    back: '返回首頁'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: '您必須登錄才能看到此站點'
+    go: '進入登錄表格'
 
 confirm:
     header: '你有準兒沒有？'
@@ -422,47 +422,47 @@ confirm:
 
 terms:
     header: '服務條款'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=服務條款}.'
+    lastUpdate: '最近更新時間'
+    consent: "通過註冊，您正在接受 {/terms=服務條款}.'
 
 admin:
-    header: '管理面板'
-    user:
-        user: 'User'
-        email: 'Email'
-        roles: 'Role'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+   header: '管理面板'
+   user:
+       user: '帳戶'
+       email: '電郵地址'
+       roles: '角色'
+       profiles: '個人資料'
+       confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: '空……'
+    count: '計數'
+    sort: '拖動排序'
+    scrollUp: '滾動到頂部'
+    more: '展示更多'
 
 api:
     header: '公開API'
-    example: 'Example'
-    query: 'Query string parameters'
+    example: '例'
+    query: '查詢字符串參數'
 
 quotation:
     start: '“'
     end: '”'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Check out'
-    longLink: 'this manual!'
+    shorter: '添加更多'
+    short: '添語言文本'
+    long: '想要創建新的語言版本嗎？ 查看'
+    longLink: '這本手冊！'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'  # TODO
+        instruction: '單擊此處或將您的照片拖到此處'
         instructionShort: '上載'
 
 error:
-    generic: 'Something went wrong, please try again…'  # TODO
+    generic: '出了點問題，請重試...'
 
 flags:
     Abrosexual: '嫩性戀'
