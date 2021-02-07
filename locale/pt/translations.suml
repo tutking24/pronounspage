@@ -14,13 +14,13 @@ home:
         - >
             O gênero é complicado. Algumas pessoas não «parecem» o seu género.
             Alguns preferem ser chamados de maneira distinta a que se assumiria.
-            Algumas pessoas não se encaixam nas etiquetas «masculino» o «feminino» e preferem uma língua neutra.
+            Algumas pessoas não se encaixam nas etiquetas «masculino» ou «feminino» e preferem uma língua neutra.
         - >
             Essa ferramenta permite-te encontrar os teus pronomes, com exemplos de uso em enunciações
-            para que possas mostrá-los à gente como prefiras que te chamem
+            para que possas mostrá-los à gente como preferes que te chamem.
         - >
             Por que é importante? Por uma simples decência humana.
-            Não chamaria «Lucía» de Alicia só porque você gosta/tu gostas mais desse nome.
+            Não chamaria «Lucía» de Alicia só porque você gosta/tu gostas mais desse nome
             ou porque «tem mais cara de Lucía para você/ti».
             Ou inclusive se ela <em>sim</em> chama-se «Lucía» na sua certidão de nascimento
             mas odeia esse nome e prefere usar «Alícia».
@@ -32,14 +32,14 @@ home:
     generator:
         header: 'Generator'
         description: >
-            También puedes usar esta herramienta para llenar los espacios en blanco
-            y generar un enlace que puedes compartir.
+            Também podem usar esta ferramenta para preencher os espaços em branco
+             e gerar uma ligação que podem compartilhar.
         button: 'Mostrar o generator'
-        header2: 'Generar un enlace'
+        header2: 'Gerar uma ligação'
         base: 'Baseado em'
-        alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
-        pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
-    whatisit: '¿Por qué importan los pronombres?'
+        alt: 'Também podem introduzir formas intercambiáveis por separado em cada campo, p. ex. <code> ele & ela</code> = „ele” ou „ela”.'
+        pronunciation: 'Também podem especificar a pronúncia de uma entrada usando o AFI, p. ex. <code>elx|ˈe.l</code> = „elx”, se pronuncia /ˈe.l/.'
+    whatisit: 'Por quê importam os pronomes?'
 
 pronouns:
     examples: 'Exemplos de uso em frases'
@@ -47,27 +47,27 @@ pronouns:
     intro: 'Meus pronomes são'
     normative: 'Normativo'
     alt:
-        button: 'Generar un enlace a las formas intercambiables'
-        header: 'Formas intercambiables'
-        raw: 'intercambiable'
-    generated: 'Estos pronombres han sido creados con un generador. El equipo de pronouns.page no es responsable de ellos.'  # TODO
+        button: 'Gerar uma ligação à formas intercambiáveis'
+        header: 'Formas intercambiáveis'
+        raw: 'intercambiável'
+    generated: 'Estes pronomes foram criados com o gerador. A equipe de pronouns.page não é responsável por eles.'  # TODO
     any:
         header: 'Qualquer pronome'
         short: 'qualquer'
         description: >
-            Aunque para mucha gente sea muy importante que se utilicen pronombres específicos para hablar de elles,
-            a otres no les molesta que les llamen de cualquier manera - mientras que en el contexto sea claro a quién se está hablando.
-        options: 'Checa las opciones [compartir]{/=aquí}.'
-    others: 'Otras formas'
-    othersRaw: 'Otras'
-    or: 'o'
-    grammarTable: 'Tabla'
+            Enquanto para muita gente é importante que se utiliza pronomes específicos para falar delxs,
+            a outres não ês incomoda que são chamades de qualquer maneira - enquanto que no contexto seja claro a quem se está falando.
+        options: 'Verifique as opções [compartilhar]{/= aqui}.'
+    others: 'Outras formas'
+    othersRaw: 'Outras'
+    or: 'ou'
+    grammarTable: 'Tabela'
 
 sources:
     header: 'Fontes'
-    headerLong: 'Exemplos de contextos culturales'
-    headerLonger: 'Línguagem neutra em textos culturales'
-    subheader: 'Corpus de texto de género neutro'
+    headerLong: 'Exemplos de contextos culturais'
+    headerLonger: 'Línguagem neutra em textos culturais'
+    subheader: 'Corpus de texto de gênero neutro'
     toc: 'Mostrar tabela de conteúdos'
     type:
         All: 'Tudo'
@@ -79,7 +79,7 @@ sources:
         Poetry: 'Poesía'
         Other: 'Outros'
     submit:
-        header: 'Enviar un ejemplo para que sea añadido'
+        header: 'Enviar um exemplo para que seja adicionado'
         action: 'Enviar'
         pronouns: '¿Qué pronombres han sido usados?'
         pronounsInfo: 'Introduce la forma más simple del pronombre, como se encuentra en el enlace, p. ej. “elle”, “él/lo”, “él o ella”'
@@ -96,9 +96,9 @@ sources:
         moderation: 'Os envios tem que ser aprovados antes de serem publicados.'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        images: 'Imagens'
+    otherVersions: 'Em outros idiomas'
+    referenced: 'Exemplos de uso'
 
 nouns:
     header: 'Dicionário'
@@ -184,10 +184,10 @@ faq:
             question: 'Por que deveria respeitar os pronomes <em>raros</em> de outra pessoa?'
             answer:
                 - >
-                    Porque dirigirse a las personas en la manera que lo prefieren es la base de las relaciones sociales.
-                    No llamarías “Lucía” a Alicia, no le hablarías “de tú” a tu jefx o supervisore, etc.
-                    Y hay personas que no quieren ser llamadas “{/él=él}” o “{/ella=ella}”.
-                    Si no puedes aceptarlo, eso sólo habla mal <em>de tí</em>.
+                    Porque dirigir-se às pessoas da maneira que elas preferem é a base das relações sociais.
+                    Não chamaria “Lucía” de Alicia, não falaria “de você/tu” a seu chefe ou supervisore, etc.
+                    E tem as pessoas que não querem ser chamadas “{/ele=ele}” ou “{/ela=ela}”.
+                    Se não pode aceitar isso, só fala <em>de você/tu</em>.
         solo-pronombres:
             question: '¿Entonces basta con decirle “ella” a mi amigo?'
             answer:
@@ -199,27 +199,27 @@ faq:
                 - >
                     Así, decimos que <em>elle</em> es nuestre amigue, que puede ser profesore, estudiante, etc., y le queremos mucho.
         how-to-know:
-            question: '¿Cómo sé cómo dirigirme a alguien?'
+            question: 'Como eu devo me referir a alguém?'
             answer:
                 - >
-                    ¡Puedes preguntar! Sí, puede ser un poco incómodo, pero cuanto más lo hagamos, menos incómodo se vuelve.
-                    Si podemos preguntarle a alguien su nombre, ¿por qué no sus pronombres?
+                    Pode perguntar! Sim, pode ser um pouco desconfortável, mas quanto mais fazemos isso, isso se torna menos desconfortável.
+                    Se podemos perguntar a alguém seu nome, por quê não seus pronomes?
                 - >
-                    (Sólo que por favor no preguntes “¿eres niño o niña?”.
-                    Esta pregunta implica que sólo hay dos respuestas correctas,
-                    y sugiere una curiosidad poco saludable por los genitales de otras personas.
-                    En su lugar, puedes preguntar “¿cuáles son tus pronombres?” o “¿Cómo me debería dirigir a tí?”)
+                    (Só que por favor não perguntes “você é/tu és menino ou menina?”.
+                    Essa pergunta implica que tem só duas respostas corretas,
+                    e sugere uma curiosidade pouco saudável pelos genitais de outras pessoas.
+                    Invés disso, pode perguntar “quais são os seus/teus pronomes?” o “como eu deveria me referir a você/te?”)
                 - >
-                    También es importante normalizar el decir tus pronombres cuando te presentas con alguien.
-                    “Hola, soy Miguel, {/él=él/lo}”. No es difícil – ¡Pero significa mucho para las personas trans y no binarias!
-                    Es incluso más fácil en línea: Sólo pon tus pronombres (o un enlace a ejemplos de nuestro sitio web) en tu <em>bio</em>.
+                    Também é importante normalizar em contar seus/teus pronomes quando se apresenta com alguém.
+                    “Olá, sou Miguel, {/el=el/del}”. Não é difícil – mas significa muito para as pessoas trans e não binárias!
+                    A inclusão mais fácil da linha: Só coloque os seus/teus pronomes (o uma ligação aos exemplos do nosso site) em seu/teu <em>bio</em>.
                 - >
-                    También ten en mente que muchas personas usan un nombre y pronombres distintos en diferentes contextos.
-                    Puede que todavía no hayan salido del clóset con algunes compañeres de trabajo, pero se sientan cómodes vivendo su verdad con amigues.
-                    Sé conciente. Puedes, por ejemplo, preguntar “¿qué pronombres debería usar en frente de tu jefx?”, etc.
+                    Também tenha na mente que muitas pessoas usam um nome e pronomes distintos em diferentes contextos.
+                    Pode que no dia a dia sejam escondidos com alguns colegas de trabalho, mas se sentem confortável vivendo sua verdade com amigues.
+                    Seja consciente. Pode, por exemplo, perguntar “que pronomes eu deveria usar em frente de seu/teu chefe?”, etc.
                 - >
-                    Algunas personas ofrecen varios pronombres, p. ej. “{/él&ella=él o ella}” o “{/elle&él=elle o él}”.
-                    Eso significa que les gustan todas esas formas. Normalmente, la primera opción es la que prefieren.
+                    Algumas pessoas oferem vários pronomes, p. ex. “{/ele&ela=ele ou ela}” ou “{/ele&el=ele ou el}”.
+                    Isso significa que eles gostam de todas edsas formas. Normalmente, a primeira opção é a que preferem.
         who-uses-it:
             question: '¿Y sí se usa?'
             answer:
@@ -320,21 +320,21 @@ contact:
     header: 'Contato'
     authors: 'Autores/as/xs do site'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
-        description:  # TODO
+        name: 'O coletivo "Conselho da Língua Neutra"'
+        description:
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                são criadas pelo o coletivo “Conselho da Língua Neutra”.
+        logo: 'Logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'  # TODO
+        members: 'Membrxs atuais'
+        blog: 'Blog'
+        upcoming: 'Próximas versões'
 
 support:
     header: 'Apoie-nos'
     description: >
-        Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
-        puedes usar los siguientes enlaces:
+        Se gostaria de doar para o servidor, os domínios, stickers etc., ou simplemente comprar uma cerveja a autorxs,
+        podem usar as ligações seguintes:
 
 user:
     header: 'Conta'
