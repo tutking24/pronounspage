@@ -221,7 +221,7 @@ nouns:
         - >
             Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
             Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
-            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=dukaizmów} czy {/=innych nienormatywnych form},
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/=innych nienormatywnych form},
             to które formy rzeczowników pasują do nich gramatycznie?
             Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
             Jak opisywać grupy mieszane?
@@ -249,8 +249,8 @@ nouns:
             caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
         info:
             - >
-                Analogicznie do tzw. {/onu=dukaizmów / rodzaju postpłciowego} („zrobiłum”, „poszłuś”)
-                można też tworzyć dukajowe rzeczowniki.
+                Analogicznie do {/onu=rodzaju postpłciowego (dukaizmów)} („zrobiłum”, „poszłuś”)
+                można też tworzyć postpłciowe rzeczowniki.
             - >
                 Sam Dukaj w {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjnej niedoskonałości”}
                 nie tworzył rzeczownikowych odpowiedników rodzaju postpłciowego,
