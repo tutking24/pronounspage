@@ -4,7 +4,7 @@ description: '個人代詞和中性語言的用法例子'
 home:
     link: 'Homepage'
     header: '代詞'
-    headerLong: '代詞的单子'
+    headerLong: '代詞的清單'
     why: '代詞是什麼意思？'
     about:
         - >
@@ -27,7 +27,7 @@ home:
             如果你不想對某人無禮，請你使用正確的代詞。
             唯一的區別是我們通常知道名字，但不知道代詞。
             我們給自己介紹一個名字，而不是代詞。讓我們改變這種想法！
-    pronouns: '流行代詞的单子'
+    pronouns: '流行代詞的清單'
     generator:
         header: '生成器'
         description: >
