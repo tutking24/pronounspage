@@ -968,6 +968,9 @@ census:
             Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
+        - >
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>},
+            który trwa do 10 marca. Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
