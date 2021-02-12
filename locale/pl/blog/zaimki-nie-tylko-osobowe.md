@@ -46,7 +46,7 @@ Czemu więc tego nie zmienić? W bardzo łatwy sposób można przecież stworzy�
  - <u>Nikto</u> nie zrobiło zadania domowego. _(rodzaj neutralny)_
  - <u>Nikta</u> nie chciała robić prezentacji. _(rodzaj żeński)_
  - <u>Ktosiu</u> czeka na ciebie przed szkołą. _(rodzaj postpłciowy)_
- - <u>Kto</u> zrobił<u>o</u> ten bałagan. _(rodzaj neutralny)_
+ - <u>Kto</u> zrobił<u>o</u> ten bałagan? _(rodzaj neutralny)_
 
 Często da się również użyć form normatywnych innych niż męskie:
 

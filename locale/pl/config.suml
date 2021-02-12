@@ -502,6 +502,9 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        inkluzywne-liczebniki: 'Inkluzywne liczebniki'
+        zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
+        zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
         archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
         rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
         podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
