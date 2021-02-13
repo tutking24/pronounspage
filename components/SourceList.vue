@@ -6,7 +6,7 @@
             <LinkedText :text="pronoun.sourcesInfo"/>
         </div>
         <ul class="list-unstyled">
-            <li v-for="source in sources" v-if="isVisible(source)" class="my-2">
+            <li v-for="source in sources" :key="source.id" v-if="isVisible(source)" class="my-2">
                 <Source :source="source" :manage="manage" @edit-source="edit"/>
             </li>
         </ul>
