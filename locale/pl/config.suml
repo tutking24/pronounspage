@@ -342,6 +342,10 @@ links:
             icon: 'newspaper'
             url: 'https://queer.pl/news/205242/niebinarny-spis-powszechny-dolacz-do-badania-nad-niebinarnoscia-w-jezyku-polskim'
             headline: 'Niebinarny spis powszechny - dołącz do badania nad niebinarnością w języku polskim – <strong>Queer.pl</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://gazetalubuska.pl/on-ona-onu-trzy-plcie-to-tylko-metafora-czy-osoba-lgbt-czuje-sie-w-gorzowie-bezpiecznie/ar/c15-15436719?fbclid=IwAR1NuRd7YQXFXMdz7UilI7Rsj0NSyzqQap6D_5dIPk_iE4S1a86jthhyMGE'
+            headline: 'On, ona, onu. „Trzy płcie to tylko metafora”. Czy osoba LGBT czuje się w Gorzowie bezpiecznie? – <strong>Gazeta Lubelska</strong>'
     socials:
         -
             icon: 'twitter'
