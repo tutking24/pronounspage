@@ -10,6 +10,10 @@
                 <div class="alert alert-info">
                     {{countResponses}}
                     <T>census.replies</T>
+
+                    <a href="/api/census/export" class="btn btn-outline-secondary btn-sm float-right">
+                        <Icon v="download"/>
+                    </a>
                 </div>
             </section>
 
@@ -168,6 +172,11 @@
                 countResponses,
             };
         },
+        mounted() {
+            if (process.client && !this.$user()) {
+                this.finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
+            }
+        },
         methods: {
             startSurvey() {
                 this.q = 0;
@@ -224,6 +233,7 @@
                         writins: JSON.stringify(this.writins),
                     });
                     this.finished = true;
+                    window.localStorage.setItem('census-finished', '1');
                 }
                 this.$nextTick(() => {
                     if (this.$refs.questionform) {

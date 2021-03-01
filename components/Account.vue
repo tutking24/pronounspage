@@ -117,6 +117,7 @@
 <script>
     import {socialProviders} from "../src/data";
     import {gravatar} from "../src/helpers";
+    import cookieSettings from "../src/cookieSettings";
 
     export default {
         data() {
@@ -162,7 +163,7 @@
                 }
 
                 this.$store.commit('setToken', response.token);
-                this.$cookies.set('token', this.$store.state.token);
+                this.$cookies.set('token', this.$store.state.token, cookieSettings);
             },
             async changeEmail() {
                 this.error = '';
@@ -188,7 +189,7 @@
                     this.code = null;
 
                     this.$store.commit('setToken', response.token);
-                    this.$cookies.set('token', this.$store.state.token);
+                    this.$cookies.set('token', this.$store.state.token, cookieSettings);
                 }
             },
             logout() {
@@ -209,7 +210,7 @@
                 const response = await this.$axios.$post(`/user/set-avatar`, {source});
 
                 this.$store.commit('setToken', response.token);
-                this.$cookies.set('token', this.$store.state.token);
+                this.$cookies.set('token', this.$store.state.token, cookieSettings);
             },
             async uploaded(ids) {
                 await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-thumb.png`);

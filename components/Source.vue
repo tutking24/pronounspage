@@ -2,7 +2,7 @@
     <div class="my-2" v-if="!deleted">
         <h3 class="h6">
             <Icon :v="source.icon()"/>
-            <strong><template v-if="source.author">{{source.author.replace('^', '')}}</template><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener">{{source.title}}</a><span v-else>{{source.title}}</span></em></strong><template v-if="source.extra"> ({{source.extra}})</template>, {{source.year}}<template v-if="source.comment">; {{source.comment}}</template>
+            <strong><Spelling v-if="source.author">{{source.author.replace('^', '')}}</Spelling><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener"><Spelling :text="addMarks(source.title)"></Spelling></a><Spelling v-else :text="addMarks(source.title)"></Spelling></em></strong><template v-if="source.extra"> (<Spelling>{{source.extra}}</Spelling>)</template>, {{source.year}}<template v-if="source.comment">; <Spelling>{{source.comment}}</Spelling></template>
         </h3>
         <ul class="list-inline" v-if="manage && $isGranted('sources')">
             <li v-if="!source.approved" class="list-inline-item">
@@ -50,7 +50,7 @@
             </li>
             <li class="list-inline-item">
                 <span v-for="p in source.pronouns" :class="['badge', pronounLibrary.isCanonical(p) ? 'bg-success' : 'bg-danger', 'm-1']">
-                    {{p}}
+                    <Spelling>{{p}}</Spelling>
                 </span>
             </li>
             <li class="list-inline-item" v-if="source.key">
@@ -64,7 +64,7 @@
         </div>
         <ul v-if="source.fragments.length">
             <li v-for="fragment in source.fragments">
-                <T>quotation.start</T><span v-html="fragment.replace(/\n/g, '<br/>')"></span><T>quotation.end</T>
+                <T>quotation.start</T><span v-html="addMarks(fragment.replace(/\n/g, '<br/>'))"></span><T>quotation.end</T>
             </li>
         </ul>
         <div v-if="source.versions.length" class="my-3">
@@ -124,6 +124,9 @@
                 this.deleted = true;
                 this.$forceUpdate();
             },
+            addMarks(t) {
+                return t.replace(/\[\[/g, '<mark>').replace(/]]/g, '</mark>');
+            }
         },
     }
 </script>

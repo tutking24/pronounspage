@@ -1,9 +1,9 @@
 <script>
     import Icon from './Icon';
-    import {mapState} from "vuex";
-    import zhConverter from 'zh_cn_zh_tw';
+    import spelling from "../plugins/spelling";
 
     export default {
+        mixins: [ spelling ],
         props: {
             text: { required: true },
         },
@@ -100,20 +100,6 @@
             addChild();
 
             return h('span', children);
-        },
-        computed: {
-            ...mapState([
-                'spelling',
-            ]),
-        },
-        methods: {
-            handleSpelling(str) {
-                if (this.config.locale !== 'zh' || this.spelling === 'traditional') {
-                    return str;
-                }
-
-                return zhConverter.convertToSimplifiedChinese(str);
-            }
         },
     }
 </script>

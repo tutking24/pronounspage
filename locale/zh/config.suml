@@ -9,18 +9,18 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
-        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
+        name: '可互換形式'
+        description: '很多非二元性別的人使用多個代詞，不介意他人互換。'
         examples: ['他&她', '她&伊', '他&佢']
     null: false
     emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        description: '表情符號代詞'
+        history: '表情符號代詞用於網絡上的交流，沒有發音。'
         morphemes:
             3rd_person: '#'
             2nd_person: '#'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+        template: '打開一個例句，用自己的表情符號代替位址裏面的表情符號。'
     slashes: false
     avoiding: false
     others: 'Other pronouns'
@@ -40,7 +40,7 @@ sources:
     mergePronouns: {}
 
 nouns:
-    enabled: true
+    enabled: false
     route: 'dictionary'
     collapsable: false
     plurals: true
@@ -88,6 +88,11 @@ contact:
             icon: 'envelope'
             url: 'mailto:contact@pronouns.page'
             headline: 'contact@pronouns.page'
+    authors:
+        -
+            name: '台灣非二元酷兒浪子'
+            link: 'https://www.facebook.com/TaiwanNonbinary/'
+            group: true
     team:
         enabled: true
         route: 'team'  # TODO

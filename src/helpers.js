@@ -65,7 +65,13 @@ export const clearUrl = url => {
         url = url.substr(0, url.length - 1);
     }
 
-    return decodeURIComponent(url);
+    url = decodeURIComponent(url);
+
+    if (url.length > 48) {
+        url = url.substring(0, 28) + '...' + url.substring(url.length - 17);
+    }
+
+    return url;
 }
 
 export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') => {

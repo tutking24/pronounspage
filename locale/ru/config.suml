@@ -1,0 +1,806 @@
+locale: 'ru'
+
+format:
+    timezone: 'Europe/Warsaw'
+
+header: true
+
+pronouns:
+    enabled: true
+    default: 'он'
+    any: 'dowolne'
+    plurals: true
+    honorifics: true
+    multiple:
+        name: 'Formy wymienne'
+        description: >
+            Wiele osób niebinarnych używa zamiennie więcej niż jednej formy
+            (np. męskich i żeńskich albo żeńskich i neutralnych)
+            i albo można się do nich zwracać w dowolnej z nich.
+            Niektóre lubią gdy używa się wobec nich na zmianę różnych form.
+        examples: ['on&ona', 'on&ono', 'ona&ono', 'on&onu', 'ona&onu', 'ono/jego&ono/jej']
+    emoji:
+        description: 'Emojiself'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} to formy stworzone dla komunikacji online, nie są wymawialne.'
+        morphemes:
+            pronoun_n: '#'
+            pronoun_g: '#'
+            pronoun_g_acc: '#'
+            pronoun_d: '#'
+            pronoun_a: '#'
+            pronoun_i: '#'
+            pronoun_l: '#'
+            pronoun_all: ''
+            adjective_n: '#'
+            adjective_n_alt: '#'
+            adjective_ll: ''
+            adjective_middle: ''
+            verb_end_inter: '#'
+            verb_end_about: '#'
+            verb_middle_inter: '#'
+            verb_middle_about: '#'
+            verb_nasal: 'ą'
+            verb_go: 'szł'
+            verb_o: 'o'
+            honorific: '#'
+        examples: ['💫', '💙', '🐿']
+        template: 'Otwórz dowolny z przykładów i podmień emoji w URLu na swoje.'
+    null: false
+    avoiding: 'unikanie'
+    others: 'Inne formy'
+
+pronunciation:
+    enabled: true
+    voices:
+        RU:
+            language: 'ru-RU'
+            voice: 'Tatyana'
+            engine: 'standard'
+
+sources:
+    enabled: true
+    route: 'korpus'
+    submit: true
+    mergePronouns:
+        ono/jej: 'ono'
+        ono/jejgo: 'ono'
+        # ono/jeno: 'ono'
+        ono/jenu: 'ono'
+        vono/vego: 'ono'
+        ono/eno: 'ono'
+
+nouns:
+    enabled: true
+    route: 'słowniki'
+    collapsable: false
+    plurals: true
+    pluralsRequired: true
+    declension: true
+    submit: true
+    templates: true
+    subroutes:
+        - 'neutratywy'
+        - 'dukatywy'
+        - 'osobatywy'
+    inclusive:
+        enabled: false
+        categories: ['queer/lgbtq+', 'transpłciowość', 'interpłciowość', 'niepełnosprawność', 'rasa i narodowość']
+        route: 'inkluzywny'
+    terms:
+        enabled: false
+        categories:
+            - 'orientacja seksualna'
+            - 'orientacja romantyczna'
+            - 'określenie orientacji romantycznej i seksualnej'
+            - 'płeć'
+            - 'ekspresja płciowa'
+            - 'model relacji'
+            - 'język'
+        route: 'terminologia'
+
+names:
+    enabled: false
+    route: 'imiona'
+    legally: true
+    count: true
+    countSex: { M: 'mars', K: 'venus' }
+    countOrdinal: { 1: 'pierwsze imię', 2: 'drugie imię' }
+
+faq:
+    enabled: true
+    route: 'pytania'
+
+links:
+    enabled: true
+    route: 'linki'
+    blogRoute: 'blog'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            lang: ['en']
+            headline: 'Pronoun.is'
+            extra: '– anglojęzyczna inspiracja dla tej strony.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208'
+            headline: 'Opinia Rady Języka Polskiego o formach „byłom”, „byłoś”, itp.'
+            quote: >
+                Nigdzie nie występuje zastrzeżenie, że nie tworzy się form 1. i 2. osoby rodzaju nijakiego w czasie przeszłym.
+                Tak więc z punktu widzenia gramatycznego formy <em>byłom, byłoś, robiłom, robiłoś, widziałom, widziałoś</em> itd.
+                są poprawne, zgodne z systemem językowym.
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
+            headline: 'Genderneutralizacja polszczyzny?'
+            extra: '– artykuł opisujący, dlaczego język neutralny płciowo jest ważny, i zbierający pomysły na stworzenie takiego.'
+            quote: >
+                Język, którego używamy, wpływa na to, jak myślimy.
+                Ciężko nam zatem będzie traktować wszystkich równościowo,
+                jeżeli nasza podświadomość będzie dzieliła wszystkich napotkanych ludzi na dwie kategorie.
+                No i żeby jeszcze były tylko dwie kategorie… Niektórzy ludzie nie należą do żadnej z tych dwóch opcji
+                (“and if that surprises you, you need to get out more” – Tom Scott).
+                Dla nich język polski jest jeszcze mniej łaskawy niż dla kobiet.
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
+            headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/gwiezdne-wojny'
+            headline: 'Niebinarność w „Gwiezdnych Wojnach”'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/czas-się-obnosić'
+            headline: 'Nadszedł czas się obnosić!'
+            extra: '– przemówienie Sybila z Wrocławskiego Marszu Równości'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/rekomendacja-formularze'
+            headline: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
+            headline: 'Maniak marudzi #27: Niebinarne tłumaczenia'
+            extra: '– artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://opowiadania.org/wp-content/uploads/2020/09/opo16_gazeta_rd.pdf'
+            headline: 'Ludzie z komputera, ludzie z internetu'
+            extra: '– Michał Radomił Wiśniewski o „wojnie kulturowej” o zaimki, o naszym projekcie i o dukaizmach.'
+        -
+            icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
+            headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
+            extra: '– ANGLICA. An International Journal of English Studies'
+        -
+            icon: 'comment-alt-edit'
+            url: 'http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/'
+            headline: 'Równi wobec języka – o języku neutralnym płciowo'
+            extra: '– artykuł Agnieszki Wąsowskiej'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://hackmd.io/@tranzycja/Hybqz17uv'
+            headline: 'Transpłciowa młodzież w polskiej szkole'
+            quote: >
+                Jeśli chcesz rozbudzić w uczniach zainteresowanie językiem polskim, spróbuj odejść choć na jedną lekcję
+                od sztywnych reguł i z pomocą kategorii Literatura strony zaimki.pl
+                porozmawiać o ewolucji języka i neutratywach. Może uczniowie spróbują wymyślić własne?
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
+            headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
+            extra: ''
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=BX8ld20YeUc'
+            headline: 'Wideoesej „Mistycyzmu Popkulturowego”'
+            extra: 'o tym, jak polscy tłumacze (nie) radzą sobie z formami gramatycznymi w przypadku postaci niebinarnych'
+        -
+            icon: 'gamepad-alt'
+            url: 'https://twitter.com/neutratywy/status/1329918251560787968'
+            headline: 'Gra „Bugsnax”'
+            extra: 'w której występuje postać niebinarna używająca {/onu=dukazimów}.'
+        -
+            icon: 'microphone-stand'
+            url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
+            headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
+            extra: '– 6 kolorów gier wideo'
+            quote: >
+                Od początku wiedziałam, że nie chcę przepuszczać Floofty’enu przez magiel ciswashingu.
+                To jednak łatwiej było stwierdzić w teorii, niż zastosować w praktyce,
+                bo tak naprawdę nie miałam w tamtym czasie pojęcia, czy polszczyzna dysponuje już jakimiś formami niebinarnymi,
+                a jeśli tak, to jak się ich używa. Z pomocą przyszła mi nieoceniona strona Zaimki.pl i jej ekipa,
+                która cierpliwie odpowiadała na wszystkie moje pytania.
+                Gdy już znalazłam rzetelne źródło i miałam z kim o tym pogadać, to okazało się, że możliwości jest całe mnóstwo.
+        -
+            icon: 'info-circle'
+            url: 'https://docs.google.com/document/d/1xkX0LE1EiwGqRyVFsMImmY2XnsO7f8jFUjUbUC77r6Y/edit'
+            headline: 'Poradnik, jak urzędowo zmienić imię w Polsce'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/7,75410,26361697,prof-klosinska-dzban-to-slowo-nacechowane-pejoratywnie.html?disableRedirects=true'
+            headline: 'Prof. Katarzyna Kłosińska o neutralnych płciowo imionach'
+            quote: >
+                Od kilku lat coraz częściej dostajemy z urzędu stanu cywilnego prośby o opiniowanie imion neutralnych płciowo.
+                Najczęściej chodzi o nastolatki, których płeć biologiczna jest inna niż psychiczna,
+                są w trakcie procedury korekty płci lub nie identyfikują się ani jako kobieta, ani mężczyzna.
+                Chcą zmienić imię na takie, które nie będzie się kończyło ani na „a”, jak w polszczyźnie imiona kobiece,
+                ani na spółgłoskę, przypisaną imionom męskim.
+                Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
+                bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
+                należy uznać tę pierwszą za wyższą.
+    media:
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc'
+            headline: 'Zaimki.pl: powstała strona ułatwiająca dostosowanie języka polskiego osobom niebinarnym. Rozmawialiśmy z jej twórcą i twórczynium – <strong>Queer.pl</strong>'
+        -
+            icon: 'radio'
+            url: 'https://pod.co/haloradio/joanna-frejus-2020-08-23-17-00'
+            headline: 'Osoby redaktorskie Słownika Neutratywów u Joanny Frejus w <strong>Halo.Radio</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/watch/?v=3605197302863422'
+            headline: 'Niebinarność i język – rozmowa z twórczami strony zaimki.pl w <strong>Queerowy Maj</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=wpxlmYBZywM'
+            headline: 'Jestem osobą niebinarną – rozmowa z Sybilem w <strong>Starej Piekarni</strong>'
+            extra: '– o Słowniku Neutratywów i zaimki.pl od 6:20'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=HOQazoVKf3c'
+            headline: 'Sybil u Wojtka Szota w audycji Godzina bez fikcji (<strong>Reset Obywatelski</strong>)'
+            quote: >
+                Są różne problemy, jedne są bardziej podstawowe, inne mniej, ale wszystkie możemy rozwiązywać jednocześnie.
+                Bo to nie jest tak, że w momencie, w którym rozwiązujemy te bardziej poważne problemy, u kogoś nie znajdzie się siła by rozwiązać te mniejsze.
+                Są osoby, które nie są w stanie rozwiązać tych dużych problemów, ale są w stanie rozwiązać te mniejsze.
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=OKI_7pbziLM'
+            headline: 'Czy TERF to slur? – rozmowa z Tess w podcaście <strong>Pok0chawszy mówi</strong>'
+            extra: '– o Słowniku Neutratywów i zaimki.pl od 1:20:00'
+            quote: >
+                Pomysł był dość prosty, analogiczny do feminatywów, że skoro feminatywy wkluczają kobiety do obecności w języku,
+                to tak samo powinno się wkluczać osoby niebinarne, które w tym momencie w języku polskim reprezentacji nie mają.
+                Inicjatywą Słownika Neutratywów Rady Języka Neutralnego na ten rok jest walka o to, żeby mówić
+                „rodzaj neutralny” zamiast „rodzaj nijaki”, ponieważ „nijaki” jest formą obelgi, obrazy,
+                jak coś jest nijakiego, to krytykujemy. A przecież rodzaju nijakiego jest np. słowo „dziecko”,
+                a nie chcemy obrażać dzieci.
+        -
+            lang: ['es']
+            icon: 'play-circle'
+            url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
+            headline: 'El lenguaje inclusivo de lxs polacxs – Ausir i Dante w hiszpańskojęzycznym podcaście <strong>Proyecto Polonia</strong>'
+
+
+
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
+            headline: 'Niebinarne postaci w uniwersum "Gwiezdnych wojen". Jak unika się neutratywów w polskim tłumaczeniu? – <strong>Queer.pl</strong> na podstawie naszego artykułu'
+        -
+            icon: 'newspaper'
+            url: 'https://vibez.pl/wydarzenia/osoby-transplciowe-kim-sa-i-jak-sie-do-nich-zwracac-oto-krotki-poradnik-6577363618974496a'
+            headline: 'Osoby transpłciowe - kim są i jak się do nich zwracać? Oto krótki poradnik – <strong>Vibez.pl</strong>'
+            quote: >
+                Pomocne mogą się też okazać neutratywy, czyli słowa i zwroty, które nie są nacechowane płciowo.
+                Niestety nasz język jest ubogi w formy niebinarne, takie jak choćby angielskie zaimki they/them,
+                dlatego tworzenie takich słów jest naprawdę potrzebne.
+                Z pomocą przychodzi jedna z nowych inicjatyw, czyli Słownik Neutratywów Języka Polskiego.
+                Na ich stronie znajdziecie formy neutratywnych zaimków, słów, a także przykłady ich użycia np. w tekstach kultury.
+                Odwiedźcie też ich profil na Instagramie.
+                Tłumaczą tam chociażby to, dlaczego zwrot transseksualistka nie jest najlepszy
+                i dlaczego powinno się mówić o korekcie płci, a nie "zmianie płci".
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/duzyformat/7,127290,26594089,od-pewnego-czasu-gdy-prowadze-jakies-spotkanie-zwracam-sie.html'
+            headline: 'Od pewnego czasu, gdy prowadzę jakieś spotkanie, zwracam się do zebranych per „panie, panowie i osoby niebinarne” – Wojciech Orliński w dodatku do Gazety Wyborczej <strong>Duży Format</strong>'
+            quote: >
+                Wprawdzie już nie prowadzę słowniczka neologizmów, dalej się jednak uważnie przyglądam przemianom języka.
+                Za najciekawsze słowo roku 2020 uważam "neutratyw".
+        -
+            icon: 'play-circle'
+            url: 'https://rss.com/podcasts/bezwstydny/75056/'
+            headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (<strong>Bezwstydne</strong> Podcast)'
+            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=aOyaeI30uKA'
+            headline: 'Inkluzywny język – Rozmowa z Kahą z Inkluzywnej Mowy (podcast <strong>SZAJN na głos</strong>)'
+            extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 11:11'
+        -
+            icon: 'newspaper'
+            url: 'https://przekroj.pl/kultura/od-zjarania-swiata-rozmowa-z-marcelim-szpakiem-maciej-stroinski'
+            headline: 'Od zjarania świata – Rozmowa z Marcelim Szpakiem w <strong>Przekroju</strong>'
+            quote: >
+                Drugi ogromny poligon neopolszczyzny to wszelkiej maści queerowe i gender-benderowe fora, grupy i strony,
+                \[…] tam wykuwa się całkowicie nowa forma języka, dostosowana do opisywania zjawisk dotychczas
+                po polsku nieopisanych lub opisywanych na głębokich zapożyczeniach z angielszczyzny \[…]
+                Totalnie kibicuję tym dzieciakom, bo nie walczą z językiem dla popisów formalnych,
+                dogłaskania własnego ego czy czystej radości trollingu (choć są wśród nich też trolle wybitne),
+                tylko potrzebna im taka polszczyzna, w której mogą opisać siebie we własnych kategoriach,
+                a nie tych, które narzuca „normatywna” większość.
+                Cieszy mnie, że te środowiska się coraz lepiej organizują, podejmują coraz szerzej zakrojone inicjatywy,
+                jak choćby „Słownik Neutratywów Języka Polskiego” na fejsie,
+                i wydaje mi się to jednym z najciekawszych frontów walki o komunikacyjną przejrzystość polszczyzny w tym stuleciu,
+                o to, by język obejmował i wyrażał wszystkich, a nie tylko absolwentów kultury patriarchatu.
+        -
+            icon: 'newspaper'
+            url: 'https://babaodpolskiego.pl/2021/01/17/neutratywy/'
+            headline: 'Neutratywy – blog <strong>Baba od polskiego</strong>'
+            quote: >
+                W spektrum możliwości  neutralnego języka możecie odnaleźć się na stronie zaimki.pl
+                (to także portal dla wszystkich, którzy w języku szukają przestrzeni dla siebie).
+                Osoby niebinarne nie mają z jego użyciem problemów, to wpis dla osób cispłciowych,
+                które – nie oszukujmy się – nawet przy wielkiej empatii nie poczują tego samego dyskomfortu, co osoby niebinarne.
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/neutratywy'
+            headline: '@neutratywy'
+        -
+            icon: 'instagram'
+            iconSet: 'b'
+            url: 'https://instagram.com/neutratywy'
+            headline: '@neutratywy'
+        -
+            icon: 'facebook'
+            iconSet: 'b'
+            url: 'https://facebook.com/neutratywy'
+            headline: 'fb.com/neutratywy'
+    recommended:
+        -
+            icon: 'instagram'
+            iconSet: 'b'
+            url: 'https://www.instagram.com/inkluzywnamowa/'
+            headline: '@inkluzywnamowa'
+        -
+            icon: 'facebook'
+            iconSet: 'b'
+            url: 'https://facebook.com/slownikempatyczny'
+            headline: 'Słownik Empatyczny Języka Polskiego'
+        -
+            icon: 'newspaper'
+            url: 'https://www.facebook.com/absurdalnikmlem'
+            headline: 'Absurdalnik Mlem!'
+            extra: ' – zin promujący lekką i absurdalną fantastykę; ma politykę umieszczania zaimków w bio.'
+        -
+            icon: 'newspaper'
+            url: 'https://whosome.pl/redakcja/'
+            headline: 'Whosome'
+            extra: ' – portal poświęcony Doctor Who i popkulturze; ma politykę umieszczania zaimków w bio.'
+
+
+people:
+    enabled: false
+    route: 'znane'
+
+english:
+    enabled: true
+    route: 'english'
+    pronounGroups:
+        -
+            name: 'Normative forms'
+            description:
+                - >
+                    Because of the limitations of Polish grammar, or simply because they just prefer it that way,
+                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
+                    – either the same as their gender assigned at birth or the opposite.
+                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
+            table: {on: 'Masculine', ona: 'Feminine'}
+        -
+            name: 'Neutrative forms'
+            description:
+                - >
+                    Polish has three grammatical genders: masculine, feminine and neuter.
+                    Why don't enbies simply use neuter then?
+                - >
+                    The thing is, historically this grammatical gender has only been applied
+                    to inanimate objects, pets and kids (in a very limited way).
+                    To apply it for adults sounds dehumanizing for most {https://avris.it/blog/queer-typic=typic} listeners
+                    and using the neuter forms of verbs in the 1st and 2nd person
+                    is so rare that listeners (falsely) think that it's incorrect.
+                    Eg. one could say „dziecko zrobił<strong>o</strong>” (=“the kid has done”),
+                    but the kid themselves would use the forms corresponding to their assigned gender:
+                    „zrobił<strong>em</strong>”/„zrobił<strong>am</strong>” (=“I have done”),
+                    but not „zrobił<strong>om</strong>”.
+                - >
+                    In a way, a parallel could be drawn between the Polish neuter forms and the English “it” pronoun.
+                    To call someone an “it” is offensive
+                    – unless it itself wants us to use “it/its” {https://twitter.com/search?q=it%2Fits&f=user=(and many do)}.
+                    The main difference is that English has singular “they”,
+                    while Polish doesn't yet have any normative form that would fit better.
+                    That's why English “it” is niche,
+                    while Polish neuter is one of the most popular choices among nonbinary people
+                    (including ones who use "they" in English),
+                    in hopes of normalising the new usage.
+                - >
+                    There's one more issue with neuter, though: it is neutral in nominative (the “who?”),
+                    but in other cases (the “whose?”, “whom?”, etc.) if falls back to being identical to masculine forms.
+                    That's why some enbies mix multiple forms, for instance using neuter verbs, yet feminine pronouns, etc.
+            table: {ono: 'Neutrative', ono/jej: 'Neutrative with female declension'}
+        -
+            name: 'Neopronouns (dukaisms)'
+            description:
+                - >
+                    Those forms are neologisms, originally created for a science fiction novel
+                    {https://en.wikipedia.org/wiki/Perfect_Imperfection=Perfect Imperfection}
+                    by {https://en.wikipedia.org/wiki/Jacek_Dukaj=Jacek Dukaj} (hence they are also known as “dukaisms”).
+                    It's a brand new grammatical gender used by post-human beings (phoebe) that don't have a specified gender.
+                - >
+                    It's a consistent and relatively complete system, but for people who hear it for the first time,
+                    it might sound alien and “incorrect”.
+                    It's one of the most popular choices among nonbinary folks.
+            table: {onu: ''}
+        -
+            name: 'Plural forms'
+            description:
+                - >
+                    Using plural forms to describe a single person is basically a loan translation
+                    of the English {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=“singular they”},
+                    but it does have roots in Polish {https://pl.wikipedia.org/wiki/Per_wy=historical and regional honorifics} as well.
+                    Keep in mind, though, that Polish speakers aren't yet too used to the idea of referring to one person in plural forms,
+                    so it might lead to misunderstandings.
+                - >
+                    The bad news is that there's two grammatical genders in plural:
+                    „{/oni=oni}” for male and mixed-gender groups, and „{/one=one}” for female groups
+                    (to oversimplify a lot).
+                    Still, whichever forms is chosen by a person, the plurality itself already points to them being nonbinary.
+                - >
+                    Unlike the English “singular they”, which only requires changing the third person form,
+                    in Polish this requires plural forms to be used also in first and second person.
+                    In the case of first person, it might be perceived as something akin to the “royal we”.
+
+            table: {oni: 'Male & mixed plurals', one: 'Female plurals'}
+        -
+            name: 'Placeholder forms'
+            description:
+                - >
+                    Another approach is to take the part of the word that differs between the male and female form,
+                    and to either replace it with a placeholder, or use the placeholder to merge those parts together.
+                    For instance “dear readers” can be translated as „drodzy_gie czytelnicy_czki”,
+                    „drodzy/gie czytelnicy/czki”, „drog* czytelnic*”, etc.
+                - >
+                    The main usage of such forms is to address a group of people or an unspecified person
+                    (“dear reader”), however there are nonbinary people who use similar approach in the first person too.
+                    It's very easy to understand the intent behind using those forms,
+                    even to listeners unfamiliar with the concept of nonbinary.
+                    The main disadvantage is that in most cases they are only usable in writing,
+                    while being hard or impossible to pronounce.
+            table: {onæ: '', on/a: '', onx: '', on_: '', on*: '', onø: ''}
+        -
+            name: 'Interchangeable forms'
+            description:
+                - >
+                    Many nonbinary people use more than one form interchangeably and are fine with being called either of them.
+
+
+contact:
+    enabled: true
+    route: 'kontakt'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
+    team:
+        enabled: true
+        route: 'kolektyw-rjn'
+    blog:
+        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
+        podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
+        gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
+        czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
+
+support:
+    enabled: true
+    links:
+        -
+            icon: 'coffee'
+            url: 'https://ko-fi.com/radajezykaneutralnego'
+            headline: 'Ko-Fi'
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/RJNeutralnego'
+            headline: 'PayPal'
+
+user:
+    enabled: true
+    route: 'konto'
+    termsRoute: 'regulamin'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        - ['maskulatywy', 'feminatywy', 'neutratywy', 'dukatywy', 'osobatywy']
+        - ['per ty', 'per wy', 'pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
+        - ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
+        - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
+    flags:
+        defaultPronoun: 'on_'
+
+census:
+    enabled: true
+    route: 'spis'
+    edition: '2021'
+    start: '2021-02-01T00:00:00+01:00'
+    end: '2021-02-28T23:59:59+02:00'
+    questions:
+        -
+            type: 'radio'
+            question: 'Jesteś…'
+            options:
+                - ['osobą niebinarną']
+                - ['osobą cispłciową']
+                - ['binarną osobą transpłciową']
+        -
+            type: 'number'
+            min: 1900
+            max: 2010
+            question: 'Twój rok urodzenia'
+        -
+            type: 'radio'
+            question: 'Gdzie obecnie mieszkasz?'
+            instruction:
+                - >
+                    Chcemy porównać, jak różni się język używany w kraju od języka używanego na emigracji.
+            options:
+                - ['w Polsce']
+                - ['za granicą']
+                - ['nie chcę odpowiadać']
+        -
+            type: 'checkbox'
+            question: 'Jakimi formami mówisz o sobie?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+            options:
+                - ['rodzaj męski', '„byłem zmęczony”']
+                - ['rodzaj żeński', '„byłam zmęczona”']
+                - ['rodzaj neutralny', '„byłom zmęczone”']
+                - ['rodzaj postpłciowy', '„byłum zmęczonu”']
+                - ['liczba mnoga, rodzaj męskoosobowy', '„byliśmy zmęczeni”']
+                - ['liczba mnoga, rodzaj niemęskoosobowy', '„byłyśmy zmęczone”']
+                - ['liczba mnoga, rodzaj neutralny', '„byłośmy zmęczone”']
+                - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
+        -
+            type: 'checkbox'
+            question: 'Jak chcesz, by mówiono/pisano o Tobie?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+            options:
+                - ['on/jego', '„on jest fajny”, „lubię jego zwierzątko”']
+                - ['ona/jej', '„ona jest fajna”, „lubię jej zwierzątko”']
+
+                - ['ono/jego', '„ono jest fajne”, „lubię jego zwierzątko”']
+                - ['ono/jej', '„ono jest fajne”, „lubię jej zwierzątko”']
+                - ['ono/jejgo', '„ono jest fajne”, „lubię jejgo zwierzątko”']
+                - ['ono/jeno', '„ono jest fajne”, „lubię jeno zwierzątko”']
+                - ['ono/jenu', '„ono jest fajne”, „lubię jenu zwierzątko”']
+                - ['vono/vego', '„vono jest fajne”, „lubię vego zwierzątko”']
+                - ['ono/eno', '„ono jest fajne”, „lubię eno zwierzątko”']
+
+                - ['onu/jenu', '„onu jest fajnu”, „lubię jenu zwierzątko”']
+                - ['onu/jejo', '„onu jest fajnu”, „lubię jejgo zwierzątko”']
+                - ['ne/nego', '„ne jest fajnu”, „lubię nego zwierzątko”']
+
+                - ['oni/ich', '„oni są fajni”, „lubię ich zwierzątko”']
+                - ['one/ich', '„one są fajne”, „lubię ich zwierzątko”']
+                - ['oni/e/ich', '„oni/e są fajni/e”, „lubię ich zwierzątko”']
+                - ['ona/ich', '„ona są fajne”, „lubię ich zwierzątko”']
+                - ['ony/ich', '„ony są fajne”, „lubię ich zwierzątko”']
+                - ['onie/ich', '„onie są fajne”, „lubię ich zwierzątko”']
+
+                - ['onæ/jæ', '„onæ jest fajnæ”, „lubię jæ zwierzątko”']
+                - ['on/a/jego/jej', '„on/a jest fajny/a”, „lubię jego/jej zwierzątko”']
+                - ['onx/jex', '„onx jest fajnx”, „lubię jx zwierzątko”']
+                - ['on_/je_', '„on_ jest fajn_”, „lubię j_ zwierzątko”']
+                - ['on*/je*', '„on* jest fajn*”, „lubię j* zwierzątko”']
+                - ['onø/jenø', '„onø jest fajnø”, „lubię jø zwierzątko”']
+
+                - ['ony/jegy', '„ony jest fajny”, „lubię jegy zwierzątko”']
+                -
+                    - >
+                        'n'/je'
+                    - >
+                        „'n' jest fajn'”, „lubię je' zwierzątko”
+        -
+            type: 'checkbox'
+            question: 'Jakich form rzeczownikowych używasz?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
+            options:
+                - ['maskulatywy', 'nauczyciel, partner, pracownik']
+                - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
+                - ['neutratywy', 'nauczyciełło, partnerze, pracownicze']
+                - ['dukatywy', 'nauczycielu, partneru, pracowniku']
+                - ['osobatywy', 'osoba nauczająca, osoba partnerska, osoba pracująca']
+        -
+            type: 'checkbox'
+            question: 'Jakich form grzecznościowych i tytułów chcesz, by używano wobec Ciebie?'
+            randomise: true
+            writein: true
+            options:
+                - ['„per ty”', '= można „per ty” nawet w oficjalnych sytuacjach']
+                - ['„per wy”', '„skądeście przyszli”']
+                - ['pan']
+                - ['pani']
+                - ['państwo']
+                - ['pań']
+                - ['panu']
+        -
+            type: 'checkbox'
+            question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Więcej informacji <a href="https://en.pronouns.page" target="_blank">na naszej anglojęzycznej stronie</a>.
+            options:
+                - ['he/him']
+                - ['she/her']
+
+                - ['they/them/themselves']
+                - ['they/them/themself']
+                - ['it/its']
+                -
+                    - >
+                        one/one's
+
+                - ['ae/aer']
+                - ['co/cos']
+                - ['e/em/eir']
+                - ['e/em/es']
+                - ['ey/em']
+                - ['fae/faer']
+                - ['hu/hum']
+                - ['ne/nem']
+                - ['ne/nir']
+                - ['per/per']
+                - ['s/he/hir']
+                - ['thon/thons']
+                - ['ve/ver']
+                - ['vi/vir']
+                - ['xe/xem']
+                - ['ze/hir']
+                - ['ze/zir']
+                - ['zhe/zher']
+            optionsLast:
+                - ['nie znam / nie używam angielskiego']
+                - ['nie mam preferencji po angielsku']
+        -
+            type: 'checkbox'
+            question: 'Jakimi słowami opisujesz swoją płeć?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Przepraszamy, że liczba opcji w tym pytaniu jest tak przytłaczająca…
+                    Chcemy zbadać wiele rzeczy.
+                - >
+                    Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
+                    czy się z nią identyfikujesz, czy nie.
+                - >
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+
+                - >
+                    Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
+                    czytaj jako „niebinarna”, „niebinarne”, itp. w zależności, którą opcję wolisz.
+                - >
+                    Wiele etykietek jest zduplikowanych (np. „agender”, „agenderow_”, „apłciow_”)
+                    – chcemy zobaczyć które z możliwych form opisujących to samo zjawisko są popularniejsze.
+            options:
+                - ['niebinarn_']
+                - ['niebinie']
+                - ['apłciow_']
+                - ['agenderow_']
+                - ['bigenderow_']
+                - ['kłir']
+                - ['andogyniczn_']
+                - ['aporapłciow_']
+                - ['aporagenderow_']
+                - ['autypłciow_']
+                - ['autygenderow_']
+                - ['demipłciow_']
+                - ['demigenderow_']
+                - ['demidziewczę']
+                - ['demichłopię']
+                - ['maweryczn_']
+                - ['ksenopłciow_']
+                - ['ksenogenderow_']
+                - ['neutralnopłciow_']
+                - ['neutralnogenderow_']
+                - ['nienormatywn_ płciowo']
+                - ['panpłciow_']
+                - ['pangenderow_']
+                - ['płynnopłciow_']
+                - ['płynnogenderow_']
+                - ['zmiennopłciow_']
+                - ['zmiennogenderow_']
+                - ['rozważając_ swoją płeć']
+                - ['transkobiec_']
+                - ['trans kobieta']
+                - ['transmęsk_']
+                - ['trans mężczyzna']
+                - ['transgenderow_']
+                - ['transpłciow_']
+                - ['transneutraln_']
+                - ['tripłciow_']
+                - ['trigenderow_']
+                - ['kobiec_']
+                - ['kobieta']
+                - ['męsk_']
+                - ['mężczyzna']
+
+                - ['nonbinary']
+                - ['enby']
+                - ['agender']
+                - ['bigender']
+                - ['queer']
+                - ['androgyne']
+                - ['aporagender']
+                - ['autygender']
+                - ['demigender']
+                - ['demigirl']
+                - ['demiboy']
+                - ['maverique']
+                - ['xenogender']
+                - ['neutrois']
+                - ['genderqueer']
+                - ['pangender']
+                - ['genderfluid']
+                - ['genderflux']
+                - ['gender questioning']
+                - ['transfeminine']
+                - ['transgender']
+                - ['trans']
+                - ['transneutral']
+                - ['trigender']
+        -
+            type: 'textarea'
+            question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
+            optional: true
+
+redirects:
+    - { from: '^/neutratywy$', to: '/s%C5%82owniki' }
+    - { from: '^/rzeczowniki$', to: '/s%C5%82owniki' }
+    - { from: '^/slownik$', to: '/s%C5%82owniki' }
+    - { from: '^/slowniki$', to: '/s%C5%82owniki' }
+    - { from: '^/słownik$', to: '/s%C5%82owniki' }
+    - { from: '^/s%C5%82ownik$', to: '/s%C5%82owniki' }
+    - { from: '^/literatura$', to: '/korpus' }
+    - { from: '^/cenzus', to: '/spis' }
+    - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }
+    - { from: '^/blog/rada-języka-neutralnego$', to: '/kolektyw-rjn' }
+
+api:
+    examples:
+        pronouns_all: ['/api/pronouns']
+        pronouns_one:
+            - '/api/pronouns/ono/jej'
+            - '/api/pronouns/ono/jej?examples[]=Czy%20chcia%C5%82%7Bverb_end_inter%7Dby%C5%9B%20skorzysta%C4%87%20z%20naszej%20oferty%3F%7CCzy%20chci%7Bverb_middle_inter%7Dby%C5%9Bcie%20skorzysta%C4%87%20z%20naszej%20oferty%3F%7C0'
+
+        sources_all: ['/api/sources']
+        sources_one: ['/api/sources/01ERQRCV0EHWZ4SX05BRFCEFBZ']
+
+        nouns_all: ['/api/nouns']
+        nouns_search: ['/api/nouns/search/ateis']

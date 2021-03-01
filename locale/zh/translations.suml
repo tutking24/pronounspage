@@ -4,7 +4,7 @@ description: '個人代詞和中性語言的用法例子'
 home:
     link: 'Homepage'
     header: '代詞'
-    headerLong: '代詞的单子'
+    headerLong: '代詞的清單'
     why: '代詞是什麼意思？'
     about:
         - >
@@ -27,7 +27,7 @@ home:
             如果你不想對某人無禮，請你使用正確的代詞。
             唯一的區別是我們通常知道名字，但不知道代詞。
             我們給自己介紹一個名字，而不是代詞。讓我們改變這種想法！
-    pronouns: '流行代詞的单子'
+    pronouns: '流行代詞的清單'
     generator:
         header: '生成器'
         description: >
@@ -48,7 +48,7 @@ pronouns:
         button: '生成鏈接到可互換形式'
         header: '可互換形式'
         raw: '可互換'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+    generated: '那些代詞是使用生成器創建的。  pronouns.page團隊對此不承擔任何責任。'
     any:
         header: '任何代詞'
         short: '任何'
@@ -92,11 +92,11 @@ sources:
         thanks: '感謝您的貢獻！'
         another: '提交另一個'
         moderation: '提交的內容必須先獲得批准才能發布。'
-        key: 'Key'  # TODO
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        key: '键'
+        keyInfo: '用于在语言版本之间链接源并与字典链接的标识符'
+        images: '意象'
+    otherVersions: '在其他語言'
+    referenced: '榜樣'
 
 nouns:
     header: '字典'
@@ -107,34 +107,34 @@ nouns:
         - >
             名詞通常沒有性別。如果要指定性別，只需在開頭添加 “女/男”，例如女總統。
             但是，下面列出的是同時具有性別選擇和性別中立選擇的名詞。
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: '批准的條目'
+    pending: '等待審核'
+    edit: '提出改變'
+    edited: '提議改變'
+    editing: '你是在編輯現有條目'
+    empty: '沒有找到符合您條件的單詞'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: '递交'
+        actionLong: '递交一個字'
+        thanks: '感謝您的貢獻！'
+        another: '递交另一個'
+        moderation: '遞交的內容必須先批准才能發布。'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: '使用模板'
+    root: '根'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
-    feminineShort: 'fem.'
-    neuter: 'neutral'
-    neuterShort: 'neutr.'
+    masculine: '男子氣'
+    masculineShort: '男子氣'
+    feminine: '男子氣'
+    feminineShort: '男子氣'
+    neuter: '中性'
+    neuterShort: '中性'
 
-    singular: 'singular'
-    singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
+    singular: '單數'
+    singularShort: '單數'
+    plural: '複數'
+    pluralShort: '複數'
 
 faq:
     header: 'FAQ'
@@ -281,194 +281,195 @@ faq:
                     Simply say “pronouns”.
 
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
+    header: '鏈接'
+    headerLong: '額外鏈接'
+    recommended: '建議'
 
-    media: 'Pronouns.page in the media'
+    media: 'Pronouns.page在傳媒'
 
-    social: 'Social media'
+    social: '社交媒體'
 
-    languageVersions: 'Other language versions'
+    languageVersions: '其他語言版本'
 
 people: ~
 
 english: ~
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
+    header: '通訊錄'
+    authors: '網站的作者'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
+        name: '中立語推行委員會'
         description:  # TODO
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+                {https://pronouns.page=Pronouns.page} 及相關舉措
+                 由“中立語推行委員會”集體創建。
+        logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'  # TODO
+        members: '份子'  # TODO
+        blog: '博客'
+        upcoming: '即將到來語言文本'  # TODO
 
 support:
-    header: 'Support'
+    header: '支持'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        如果你想為這個網站捐款，或者買啤酒給作者，你可以用下面的鏈接:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    header: '帳戶'
+    headerLong: '你的帳戶'
+    tokenExpired: '令牌過期了。請刷新網站，然後再試一次。'
     login:
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        placeholder: '電子郵件（如果您已經註冊了，可以用你的戶名）'
+        action: '登錄'
+        emailSent: '我們已經通過電子郵件向您發送了6位數字的代碼。請在這裡輸入。代碼是可以用一次，有效期為15分鐘。'
+        userNotFound: '找不到用戶。'
         email:
-            subject: 'Your login code is %code%'
+            subject: '你的登錄代碼是：%code%'
             content: |
-                To confirm your email address, use the following code: %code%.
+                要確認你的電郵地址，請使用以下代碼: %code%.
 
-                If you didn't order this code, simply ignore this message.
+                如果你沒有要求這個代碼，請忽略消息。
         why: >
-            Registering lets you manage your cards ({/@andrea=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            註冊可以讓你管理你的卡（{/@andrea=像這個}）。
+        passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: '證實'
+        invalid: '不對代碼'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
-            taken: 'This username is taken.'
+            header: '用戶名'
+            action: '更改'
+            invalid: '用戶名必須介於4到16個字符之間，並且只能包含數字，字母，點，連字符和下劃線。'
+            taken: '該用戶名已被使用。'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
-    logout: 'Log out'
+            header: '電郵地址'
+            action: '更改'
+            invalid: '不對電子郵件'
+            taken: '這個電子郵件是已經用了'
+        admin: '管理員'
+    logout: '登出'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        header: '頭像'
+        change: '更改'
+    deleteAccount: '刪除帳戶'
+    deleteAccountConfirm: '確定要刪除您的帳戶嗎？ 這將是不可逆的！'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: '社交媒體'
+        connect: '連'
+        refresh: '祓飾'
+        disconnect: '掉線'
+        disconnectConfirm: '確定要刪除此連接嗎？  （您始終可以使用電子郵件登錄 %email%)'
 
 profile:
-    description: 'Description'
+    description: '傳記'
     names: '名字'
     pronouns: '代詞'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“ http://zh.pronouns.page/佢”'
+    pronounsNotFound: '我們找不到這個代詞的鏈接'
     words: '詞匯'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    links: 'Links'
-    column: 'Column'
+    birthday: '嵗'
+    birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
+    flags: '旗幟'
+    flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
+    links: '鏈接'
+    column: '列'
 
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    list: '你的卡'
+    init: '創卡'
+    show: '眎'
+    edit: '改寫'
+    delete: '刪除'
+    deleteConfirm: '確定要刪除此卡嗎？'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
+        header: '卡編輯'
+        save: '保存卡'
     opinion:
         yes: '至愛'
         jokingly: '諧謔'
         meh: 'OK'
         no: '不好'
 
-share: 'Share'
+share: '這裡'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
+    approve: '贊成'
+    hide: '遮'
+    remove: '除'
+    removeConfirm: '您確定要刪除此項目嗎？'
+    edit: '編輯'
+    add: '添'
+    filter: '篩選'
+    filterLong: '篩選清單…'
+    search: '搜索'
+    author: '添加人'
 
 footer:
-    source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'
-    links: 'Contact, social media, support'
+    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
+    links: '通訊錄, 社交媒體, 支持'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: '找不到頁面'
+    back: '返回首頁'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: '您必須登錄才能看到此站點'
+    go: '進入登錄表格'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
+    header: '你有準兒沒有？'
+    yes: '是的，我有準兒!'
+    no: '不是…'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: '服務條款'
+    lastUpdate: '最近更新時間'
+    consent: '通過註冊，您正在接受 {/terms=服務條款}.'
 
 admin:
-    header: 'Admin panel'
+    header: '管理面板'
     user:
-        user: 'User'
-        email: 'Email'
-        roles: 'Role'
-        profiles: 'Profiles'
+        user: '帳戶'
+        email: '電郵地址'
+        roles: '角色'
+        profiles: '個人資料'
         confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: '空……'
+    count: '計數'
+    sort: '拖動排序'
+    scrollUp: '滾動到頂部'
+    more: '展示更多'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: '公開API'
+    example: '例'
+    query: '查詢字符串參數'
 
 quotation:
     start: '“'
     end: '”'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Check out'
-    longLink: 'this manual!'
+    shorter: '添加更多'
+    short: '添語言文本'
+    long: '想要創建新的語言版本嗎？ 查看'
+    longLink: '這本手冊！'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'  # TODO
-        instructionShort: 'Upload' # TODO
+        instruction: '單擊此處或將您的照片拖到此處'
+        instructionShort: '上載'
 
 error:
-    generic: 'Something went wrong, please try again…'  # TODO
+    generic: '出了點問題，請重試...'
 
 flags:
     Abrosexual: '嫩性戀'
+    Abroromantic: '嫩浪漫傾向'
     Achillean: '阿喀琉人'
     Agender: '無性別'
+    Alloromantic_Asexual: '浪漫傾向無性戀'
     Anarcha-Queer: '酷兒安那其'
     Androgyne: '雙性同體'
     Androsexual: '男性戀'
@@ -476,13 +477,17 @@ flags:
     Archaeopronouns: '古老代詞'
     Aroace: '無浪漫情節無性戀'
     Aromantic: '無浪漫傾向'
+    Aromantic_Allosexual: '性戀無浪漫傾向'
     Asexual: '無性戀'
     Autigender: '孤獨症性別'
     Bear: '熊族'
+    Bicurious: '雙浪漫傾向'
     Bigender: '雙性別'
+    Biromantic: '雙性戀'
     Bisexual: '雙性戀'
     Butch: 'T'
-    Ceterosexual: '另性戀'
+    Ceteroromantic: '另性戀'
+    Ceterosexual: '另浪漫傾向'
     Cis_Ally: '順性别盟友'
     Demiboy: '半男'
     Demigender: '半性別'
@@ -503,24 +508,32 @@ flags:
     Greyaromantic: '灰無浪漫傾向'
     Gynesexual: '女性戀'
     Heteroflexible: '靈活異性戀'
+    Heteroromantic: '異戀情'
+    Heterosexual: '異性戀'
     Hijra: '海吉拉'
     Homoflexible: '靈活同性戀'
+    Homoromantic: '同浪漫傾向'
     Intersex: '間性人'
     LGBTQ: 'LGBTQ'
     Leather_Pride: '皮'
     Lesbian: '女同性戀'
+    Lesbiromantic: '女同浪漫傾向'
     Maverique: '孤膽性別'
     Muxe: 'Muxe'
     Nebularomantic: '星雲浪漫傾向'
     Neopronouns: '新代詞'
     Neutrois: '中立性別'
     Nonbinary: '非二元性別'
+    Omniromantic: '各浪漫傾向'
     Omnisexual: '各性戀'
     Oriented_Aroace: '定向無浪漫情節無性戀'
     Pangender: '泛性別'
+    Panromantic: '泛浪漫傾向'
     Pansexual: '泛性戀'
     Polyamorous: '多浪漫傾向'
+    Polyromantic: '多浪漫傾向'
     Polysexual: '多性戀'
+    Pomoromantic: '後現代浪漫傾向'
     Pomosexual: '後現代性戀'
     Progress_Pride: '進步'
     Queer: '酷兒'

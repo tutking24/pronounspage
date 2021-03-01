@@ -9,11 +9,11 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>nominative TODO</th>
-                    <th>accusative TODO</th>
-                    <th>pronominal_poss TODO</th>
-                    <th>predicative_poss TODO</th>
-                    <th>Reflexive</th>
+                    <th>Nominatief</th>
+                    <th>Accusatief</th>
+                    <th>Possessief</th>
+                    <th>Verbogen possessief</th>
+                    <th>Reflexief</th>
                 </tr>
                 </thead>
                 <tbody>

@@ -9,14 +9,14 @@ pronouns:
     plurals: false
     honorifics: false
     multiple:
-        name: 'Formas intercambiables'
-        description: 'Muchas personas no binarias usan más de una forma intercambiablemente y se sienten cómodas con cualquiera de las opciones.'
+        name: 'Formas intercambiáveis'
+        description: 'Muitas pessoas não binárias usam mais de uma forma intercambiavelmente e se sentem cómodas com qualquer das opções.'
         examples: ['ele&ela', 'ele&elu', 'ela&elu']
     null: false
     emoji: false
     slashes: false
     avoiding: false
-    others: 'Otros pronombres'
+    others: 'Outros pronomes'
 
 pronunciation:
     enabled: true
@@ -32,13 +32,13 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'fuentes'
+    route: 'fontes'
     submit: true
     mergePronouns: {}
 
 nouns:
     enabled: true
-    route: 'diccionario'
+    route: 'dicionario'
     collapsable: false
     plurals: false
     pluralsRequired: false
@@ -61,11 +61,11 @@ english:
 
 faq:
     enabled: true
-    route: 'preguntas'
+    route: 'perguntas'
 
 links:
     enabled: false
-    route: 'enlaces'
+    route: 'ligações'
     blogRoute: 'blog'
     links: []
     media: []
@@ -79,7 +79,7 @@ links:
 
 contact:
     enabled: true
-    route: 'contacto'
+    route: 'contato'
     contacts:
         -
             icon: 'envelope'
@@ -105,8 +105,8 @@ support:
 
 user:
     enabled: true
-    route: 'cuenta'
-    termsRoute: 'terinos'
+    route: 'conta'
+    termsRoute: 'termos'
 
 profile:
     enabled: true
@@ -128,8 +128,8 @@ api:
     examples:
         pronouns_all: ['/api/pronouns']
         pronouns_one:
-            - '/api/pronouns/ella'
-            - '/api/pronouns/ella?examples[]=Creo%20que%20%7Bpronoun%7D%20es%20muy%20querid%7Binflection%7D.'
+            - '/api/pronouns/ela'
+            - '/api/pronouns/ela?examples[]=Creo%20que%20%7Bpronoun%7D%20é%20muit%20querid%7Binflection%7D.'
 
         sources_all: ['/api/sources']
         sources_one: ['/api/sources/01ET491ME8DPKNN1SV3NBK6KEA']

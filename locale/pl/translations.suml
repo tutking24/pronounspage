@@ -221,7 +221,7 @@ nouns:
         - >
             Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
             Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
-            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=dukaizmów} czy {/=innych nienormatywnych form},
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/=innych nienormatywnych form},
             to które formy rzeczowników pasują do nich gramatycznie?
             Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
             Jak opisywać grupy mieszane?
@@ -249,8 +249,8 @@ nouns:
             caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
         info:
             - >
-                Analogicznie do tzw. {/onu=dukaizmów / rodzaju postpłciowego} („zrobiłum”, „poszłuś”)
-                można też tworzyć dukajowe rzeczowniki.
+                Analogicznie do {/onu=rodzaju postpłciowego (dukaizmów)} („zrobiłum”, „poszłuś”)
+                można też tworzyć postpłciowe rzeczowniki.
             - >
                 Sam Dukaj w {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjnej niedoskonałości”}
                 nie tworzył rzeczownikowych odpowiedników rodzaju postpłciowego,
@@ -946,6 +946,10 @@ profile:
 census:
     header: 'Spis'
     headerLong: 'Niebinarny spis powszechny'
+    banner: >
+        Trwa „Niebinarny spis powszechny”!
+        Jeśli jesteś osobą niebinarną i chcesz nam pomóc zbadać, jakiego języka używamy by się wyrażać,
+        {/spis=kliknij tutaj, by wypełnić formularz}.
     description:
         - >
             Ciekawi Cię, jakiego języka używają polskie osoby niebinarne?
@@ -961,9 +965,12 @@ census:
             Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
         - >
-            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta od %start% do %end%.
+            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
             W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
+        - >
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>},
+            który trwa do 10 marca. Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
@@ -1063,7 +1070,7 @@ flags:
     Alloromantic_Asexual: 'Alloromantyczn{adjective_n} aseksualn{adjective_n}'
     Agender: 'Apłciow{adjective_n}'
     Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
-    Androgyne: 'Androgyniczn{adjective_n}'
+    Androgyne: 'Androgynopłciow{adjective_n}'
     Androsexual: 'Androseksualn{adjective_n}'
     Aporagender: 'Aporapłciow{adjective_n}'
     Archaeopronouns: 'Archeozaimki'

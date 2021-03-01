@@ -23,7 +23,7 @@
             </div>
         </section>
 
-        <Table :data="visibleEntries()" columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+        <Table :data="visibleEntries()" :marked="(el) => !el.approved" fixed ref="dictionarytable">
             <template v-slot:header>
                 <th class="text-nowrap">
                     <Icon v="comment-times"/>
@@ -43,7 +43,7 @@
             <template v-slot:row="s"><template v-if="s">
                 <td>
                     <ul class="list-untyled">
-                        <li v-for="w in s.el.insteadOf">{{w}}</li>
+                        <li v-for="w in s.el.insteadOf" class="text-strike">{{w}}</li>
                     </ul>
 
                     <ul class="list-inline">
@@ -57,7 +57,7 @@
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].insteadOf">{{w}}</li>
+                            <li v-for="w in entries[s.el.base].insteadOf" class="text-strike">{{w}}</li>
                         </ul>
 
                         <ul class="list-inline">
@@ -82,7 +82,7 @@
                     </small>
                 </td>
                 <td>
-                    <p v-for="p in s.el.because.split('\n\n')">{{p}}</p>
+                    <p v-for="p in s.el.because.split('\n\n')"><LinkedText :text="p"/></p>
 
                     <ul class="list-unstyled small">
                         <li v-for="link in s.el.links">
@@ -95,7 +95,7 @@
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <p v-for="p in entries[s.el.base].because.split('\n\n')">{{p}}</p>
+                        <p v-for="p in entries[s.el.base].because.split('\n\n')"><LinkedText :text="p"/></p>
 
                         <ul class="list-unstyled small">
                             <li v-for="link in entries[s.el.base].links">

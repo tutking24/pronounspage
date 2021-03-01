@@ -53,7 +53,21 @@
                 width: 100%;
             }
             figcaption {
+                margin-top: $spacer / 2;
                 font-size: $small-font-size;
+            }
+        }
+
+        .forms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 3fr));
+            grid-gap: $spacer;
+            justify-items: center;
+            figure {
+                padding: 0;
+                figcaption {
+                    font-size: 90%;
+                }
             }
         }
     }

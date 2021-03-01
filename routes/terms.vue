@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T>: 2020-11-01</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T>: 2021-01-26</em></p>
 
         <p>
             These Terms of Service govern your access to and use of the Service provided on the website
@@ -48,7 +48,7 @@
         <p>
             It is forbidden to post on the Service any Content that might break the law or violate social norms,
             including but not limited to: propagation of totalitarian regimes, hate speech, racism, xenophobia,
-            homophobia, misogyny, harassment, impersonation, child pornography, unlawful conduct, misinformation,
+            homophobia, transphobia, queerphobia, misogyny, harassment, impersonation, child pornography, unlawful conduct, misinformation,
             sharing of someone else's personal data, spam, advertisement, copyright or trademark violations.
         </p>
 

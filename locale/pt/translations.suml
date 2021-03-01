@@ -1,88 +1,88 @@
 title: 'pt.pronouns.page'
-description: 'Exemplos de uso de pronomes pessoais e linguagem neutra.'
+description: 'Exemplos de uso de pronomes pessoais em linguagem neutra.'
 
 home:
-    link: 'Inicio'
+    link: 'Início'
     header: 'Pronomes'
     headerLong: 'Lista de pronomes'
     why: 'Por que os pronomes importam?'
     about:
         - >
-            Todes temos pronomes. São as palavras que se usa em lugar do nome para referir-nos a alguém a quem já mencionamos.
-            A maioria das pessoas usa {/ele=“ele”} e {/ela=“ela”}, assim que assumimos automaticamente qual usar com base em sua aparência.
-            Mas na realidade não é tão simples…
+            Todes temos pronomes. São as palavras que usamos no lugar do nome para referir-nos a alguém já mencionado.
+            A maioria das pessoas usa {/ele=«ele»} e {/ela=«ela»}. Assumimos automaticamente qual usar com base na aparência.
+            Mas a realidade não é tão simples…
         - >
-            O gênero é complicado. Algumas pessoas não "aparecem" o seu género.
-            Alguns preferem ser chamados de maneira distinta a que se assumiria.
-            Algumas pessoas não encaixam nas etiquetas “masculino” o “feminino” e preferem uma língua neutra.
+            O gênero é complexo. Algumas pessoas não «aparentam» o seu gênero.
+            Há quem prefira ser chamade de maneira distinta à que se assumiria.
+            Há ainda quem não se encaixa nas etiquetas «masculino» ou «feminino» e prefere um termo neutro.
         - >
-            Esta herramienta te permite enlazar a tus pronombres, con ejemplos de uso en oraciones,
-            para que puedas mostrarle a la gente cómo prefieres que te llamen.
+            Essa ferramenta permite que você encontre os seus pronomes, com exemplos de uso em enunciações
+            para que possa mostrar às pessoas como prefere ser chamade.
         - >
-            Por que é importante? Por simplesmente decencia humana.
-            Não chamaria “Lucía” de Alicia só porque você gosta/tu gostas mais desse nome.
-            ou porque “tem mais cara de Lucía para você/tu”.
-            O incluso si ella <em>sí</em> se llama “Lucía” en su acta de nacimiento
-            pero detesta ese nombre y prefiere usar “Alicia”.
-            Es exactamente lo mismo con los pronombres –
-            si no quieres ser grosere con alguien, dirígete a elle correctamente.
-            La única diferencia es que normalmente conocemos los nombres, pero no los pronombres.
-            Nos presentamos con nuestro nombre, pero no con nuestros pronombres. ¡Hagamos un cambio!
+            Por que é importante? Por uma simples questão de decência humana.
+            Você não chamaria «Lúcia» de «Alícia» só porque gosta mais desse nome
+            ou porque «fulana tem mais cara de Lúcia para você».
+            Ou inclusive se ela <em>sim</em> chama-se «Lúcia» na sua certidão de nascimento
+            mas odeia esse nome e prefere usar «Alícia».
+            É exatamente o mesmo com os pronomes –
+            se não quiser ser grosseiro com alguém, refere-se a el corretamente.
+            A única diferença é que geralmente conhecemos os nomes, mas não os pronomes.
+            Apresentamo-nos com o nosso nome, mas não com os nossos pronomes. Vamos lá mudar isso!
     pronouns: 'Lista de pronomes populares'
     generator:
-        header: 'Generador'
+        header: 'Gerador'
         description: >
-            También puedes usar esta herramienta para llenar los espacios en blanco
-            y generar un enlace que puedes compartir.
-        button: 'Mostrar o generator'
-        header2: 'Generar un enlace'
+            Também é possível usar esta ferramenta para preencher os espaços em branco
+             e gerar uma ligação que pode ser compartilhada.
+        button: 'Mostrar o gerador'
+        header2: 'Gerar uma ligação'
         base: 'Baseado em'
-        alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
-        pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
-    whatisit: '¿Por qué importan los pronombres?'
+        alt: 'Também é possível introduzir formas intercambiáveis por separado em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
+        pronunciation: 'Também é possível especificar a pronúncia de uma entrada usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
+    whatisit: 'Por que importam os pronomes?'
 
 pronouns:
-    examples: 'Ejemplos de uso en oraciones'
+    examples: 'Exemplos de uso em frases'
     plural: 'Plural'
     intro: 'Meus pronomes são'
     normative: 'Normativo'
     alt:
-        button: 'Generar un enlace a las formas intercambiables'
-        header: 'Formas intercambiables'
-        raw: 'intercambiable'
-    generated: 'Estos pronombres han sido creados con un generador. El equipo de pronouns.page no es responsable de ellos.'  # TODO
+        button: 'Gerar uma ligação à formas intercambiáveis'
+        header: 'Formas intercambiáveis'
+        raw: 'intercambiável'
+    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'  # TODO
     any:
         header: 'Qualquer pronome'
         short: 'qualquer'
         description: >
-            Aunque para mucha gente sea muy importante que se utilicen pronombres específicos para hablar de elles,
-            a otres no les molesta que les llamen de cualquier manera - mientras que en el contexto sea claro a quién se está hablando.
-        options: 'Checa las opciones [compartir]{/=aquí}.'
-    others: 'Otras formas'
-    othersRaw: 'Otras'
-    or: 'o'
-    grammarTable: 'Tabla'
+            Enquanto para muita gente é importante que se utilize pronomes específicos para falar dels,
+            a outres não ês incomoda que sejam chamades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
+        options: 'Verifique as opções [compartilhar]{/= aqui}.'
+    others: 'Outras formas'
+    othersRaw: 'Outras'
+    or: 'ou'
+    grammarTable: 'Tabela'
 
 sources:
     header: 'Fontes'
-    headerLong: 'Exemplos de contextos culturales'
-    headerLonger: 'Línguagem neutra em textos culturales'
-    subheader: 'Corpus de texto de género neutro'
+    headerLong: 'Exemplos de contextos culturais'
+    headerLonger: 'Linguagem neutra em textos culturais'
+    subheader: 'Corpus de texto de gênero neutro'
     toc: 'Mostrar tabela de conteúdos'
     type:
-        All: 'Todo'
+        All: 'Tudo'
         Book: 'Livros'
-        Article: 'Artículos'
+        Article: 'Artigos'
         Movie: 'Filmes'
-        Series: 'Series'
+        Series: 'Séries'
         Song: 'Música'
-        Poetry: 'Poesía'
+        Poetry: 'Poesia'
         Other: 'Outros'
     submit:
-        header: 'Enviar un ejemplo para que sea añadido'
+        header: 'Enviar um exemplo para que seja adicionado'
         action: 'Enviar'
-        pronouns: '¿Qué pronombres han sido usados?'
-        pronounsInfo: 'Introduce la forma más simple del pronombre, como se encuentra en el enlace, p. ej. “elle”, “él/lo”, “él o ella”'
+        pronouns: 'Que pronomes são usados?'
+        pronounsInfo: 'Digite a forma mais simples do pronome, como se encontra em uma ligação, p. ex. “elu”, “ele”, “ele ou ela”'
         type: 'Tipo de fonte'
         author: 'Autor/a/e/x'
         title: 'Título'
@@ -90,42 +90,41 @@ sources:
         year: 'Ano de publicação (da versão em português)'
         fragments: 'Fragmentos'
         comment: 'Comentário'
-        link: 'Enlace al contenido'
+        link: 'Link para o conteúdo'
         thanks: 'Obrigadx pela contribuição!'
         another: 'Enviar outro'
-        moderation: 'Os envios tem que ser aprovados antes de serem publicados.'
-        key: 'Key'  # TODO
+        moderation: 'Os envios devem ser aprovados antes de serem publicados.'
+        key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        images: 'Imagens'
+    otherVersions: 'Em outros idiomas'
+    referenced: 'Exemplos de uso'
 
 nouns:
     header: 'Dicionário'
     headerLong: 'Dicionário de substantivos neutros'
     headerLonger: 'Dicionário de linguagem neutra'
-    description: 'Não são só os pronomes! Consulta nosso dicionário de linguagem neutra.'
+    description: 'Não são só os pronomes! Consulte nosso dicionário de linguagem neutra.'
     intro:
         - >
-            Usar lenguaje inclusivo y neutro respecto al género no es sólo usar los pronombres correctos de otra persona.
-            También es describir su trabajo, posición, relación, etc.
-            de una manera que no asuma su género.
-            No todes les policías son “hombres de la ley”. No todas las parejas son un “esposo” o una “esposa”.
+            O uso de uma linguagem inclusiva e neutra respeitando o gênero não se resume aos pronomes.
+            Também é necessário se atentar a isso no uso de substantivos, adjetivos, artigos e numerais de uma maneira que não assuma o gênero.
+            Nem todes ês policias são “homens da lei”. Nem todos ês parceires são “marido/esposo” ou “esposa”.
         - >
-            Cuando te refieres a alguien cuyo género desconoces,
-            a un grupo de personas con varios géneros distintos,
-            y especialmente a personas no binarias que explícitamente lo prefieran,
-            usa las formas neutras.
+            Quando se refere a alguém de quem se conhece o gênero,
+            a um grupo de pessoas com vários gêneros distintos,
+            e especialmente às pessoas não binárias que as preferem explicitamente,
+            são usadas as formas neutras.
         - >
-            A continuación presentamos un diccionario con palabras a considerar.
-            Puedes contribuir en él y añadir tus sugerencias.
+            A seguir, apresentamos um dicionário com palavras a considerar.
+            Você pode contribuir e adicionar suas sugestões.
 
     approved: 'entradas aprovadas'
     pending: 'esperando moderação'
-    edit: 'Propor um câmbio'
-    edited: 'Câmbio proposto'
+    edit: 'Propor uma mudança'
+    edited: 'Mudança proposta'
     editing: 'Está editando uma entrada existente'
-    empty: 'No se encontraron palabras que coincidan con la búsqueda'
+    empty: 'Não encontramos palavras que coincidam com a busca'
 
     submit:
         action: 'Enviar'
@@ -134,8 +133,8 @@ nouns:
         another: 'Enviar outra'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
 
-    template: 'Usar uma plantila'
-    root: 'Raíz'
+    template: 'Usar um modelo'
+    root: 'Radical'
 
     masculine: 'masculino'
     masculineShort: 'masc.'
@@ -150,167 +149,165 @@ nouns:
     pluralShort: 'pl.'
 
 faq:
-    header: 'Preguntas'
-    headerLong: 'Preguntas frecuentes'
+    header: 'Perguntas'
+    headerLong: 'Perguntas frequentes'
     questions:
         nonbinary:
             question: 'O que é <em>não binarie</em>?'
             answer:
                 - >
                     O gênero é muito mais complicado do que uma simples distinção entre masculino e feminino.
-                    Incluso desde um ponto de vista puramente biológico distinguimos sexo cromosómico,
+                    A partir de um ponto de vista puramente biológico, distinguimos sexo cromossômico,
                     sexo genético, sexo hormonal, sexo fenotípico…
-                    No son necesariamente congruentes uno con el otro, no tienen que ser binarios.
+                    Eles não são necessariamente correspondentes um com o outro e nem sempre são binários.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aquí)}.
-                    E quando chamamos aspecto cultural, o “gênero” é uma construção social.
-                    Dependendo de lugar e o momento “uma mulher” ou “um homem” pode significar ter
-                    derechos, obligações, regras a seguir, etc. radicalmente diferentes. Na Europa os homens são acostumados a usar (tacones) altos e (faldas),
-                    muitos povos originarios da América da Norte há reconhecido um terceiro gênero por siglos, como
+                    Quando partimos para o aspecto cultural, o “gênero” é visto como uma construção social.
+                    Dependendo do lugar e do momento, ser “uma mulher” ou ser “um homem” pode significar ter
+                    direitos, obrigações e regras a seguir radicalmente diferentes. Na Europa, não é comum que os homens a usem saltos altos e saias,
+                    muitos povos originários da América da Norte reconhecem um terceiro gênero
                     {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dois espíritos}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
                 - >
                     “Não binárie” é um termo que descreve a identidade de pessoas que
-                    N˜åo encaixam na distinção binária de homem/mulher.
-                    Incluí pessoas
+                    não se encaixam na distinção binária de homem/mulher.
+                    Inclui pessoas
                     {https://pt.wikipedia.org/wiki/Ageneridadeo=agênero},
                     {https://pt.wikipedia.org/wiki/G%C3%AAnero-fluidoo=gênero-fluido},
                     {https://pt.wikipedia.org/wiki/Demigeneridade=demigênero},
                     {https://pt.wikipedia.org/wiki/Bigeneridade=bigênero},
                     e {https://pt.wikipedia.org/wiki/G%C3%AAnero_n%C3%A3o-bin%C3%A1rio=muito, muito mais}.
                 - >
-                    Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Mais (“más allá”).
-                    As pessoas não binárias não têm que ser andróginas, ou usar linguagem neutra, etc.
-                    Se trata de liberdade dos roles de gênero, não de criar novos.
+                    Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Vai além.
+                    As pessoas não binárias não têm que ser andróginas, usar linguagem neutra etc.
+                    Se trata de liberdade gênero, não de criar novos.
         why-respect:
-            question: 'Por que deveria respeitar os pronomes <em>raros</em> de outra pessoa?'
+            question: 'Por que devo respeitar os pronomes <em>raros</em> de outra pessoa?'
             answer:
                 - >
-                    Porque dirigirse a las personas en la manera que lo prefieren es la base de las relaciones sociales.
-                    No llamarías “Lucía” a Alicia, no le hablarías “de tú” a tu jefx o supervisore, etc.
-                    Y hay personas que no quieren ser llamadas “{/él=él}” o “{/ella=ella}”.
-                    Si no puedes aceptarlo, eso sólo habla mal <em>de tí</em>.
+                    Porque dirigir-se às pessoas da maneira que elas preferem é a base das relações sociais.
+                    Você não chamaria “Lúcia” de “Alicia”.
+                    Há pessoas que não querem ser tratadas por “{/ele=ele}” ou “{/ela=ela}”.
+                    Se não pode aceitar isso, só fale <em>de você mesmo</em>.
         solo-pronombres:
-            question: '¿Entonces basta con decirle “ella” a mi amigo?'
+            question: 'Então, é suficiente dizer adequar o gênero dos pronomes?'
             answer:
                 - >
-                    ¡No! El género está presente no sólo en los pronombres, sino en sustantivos, adjetivos, etc.
-                    No te refieres como “ella” a tu “amigo”, sino a tu “amiga”.
-                    Respetar la identidad de género de una persona implica respetarla no sólo en sus pronombres, sino
-                    en todo lo referente al lenguaje al referirnos a elle.
+                    Não! O gênero está presente não só nos pronomes, mas também em substantivos, adjetivos etc.
+                    Você não diz “ela” quando vai se referir a seu “amigo”, mas sim à sua “amiga”.
+                    Respeitar a identidade de gênero de uma pessoa implica a respeita não só nos pronomes, senão
+                    em toda a referência linguística a ela.
                 - >
-                    Así, decimos que <em>elle</em> es nuestre amigue, que puede ser profesore, estudiante, etc., y le queremos mucho.
+                    Assim, dizemos que <em>el</em> é nossê amigue, que pode ser profesore, estudante, etc., e gostamos muito del.
         how-to-know:
-            question: '¿Cómo sé cómo dirigirme a alguien?'
+            question: 'Como saber como eu devo me referir a alguém?'
             answer:
                 - >
-                    ¡Puedes preguntar! Sí, puede ser un poco incómodo, pero cuanto más lo hagamos, menos incómodo se vuelve.
-                    Si podemos preguntarle a alguien su nombre, ¿por qué no sus pronombres?
+                    Pode perguntar! Sim, pode ser um pouco desconfortável, mas quanto mais fazemos isso, isso se torna menos desconfortável.
+                    Se podemos perguntar a alguém seu nome, por que não seus pronomes?
                 - >
-                    (Sólo que por favor no preguntes “¿eres niño o niña?”.
-                    Esta pregunta implica que sólo hay dos respuestas correctas,
-                    y sugiere una curiosidad poco saludable por los genitales de otras personas.
-                    En su lugar, puedes preguntar “¿cuáles son tus pronombres?” o “¿Cómo me debería dirigir a tí?”)
+                    (Só que por favor não pergunte “você é menino ou menina?”.
+                    Essa pergunta implica em apenas duas respostas corretas,
+                    e sugere uma curiosidade pouco saudável pelos genitais de outras pessoas.
+                    Invés disso, pode perguntar “quais são os seus pronomes?” ou “como eu deveria me referir a você?”)
                 - >
-                    También es importante normalizar el decir tus pronombres cuando te presentas con alguien.
-                    “Hola, soy Miguel, {/él=él/lo}”. No es difícil – ¡Pero significa mucho para las personas trans y no binarias!
-                    Es incluso más fácil en línea: Sólo pon tus pronombres (o un enlace a ejemplos de nuestro sitio web) en tu <em>bio</em>.
+                    Também é importante normalizar contar seus pronomes quando se apresenta a alguém.
+                    “Olá, sou Miguel, {/el=el/del}”. Não é difícil – mas significa muito para as pessoas trans e não binárias!
+                    A inclusão mais fácil da linha: Só coloque os seus pronomes (o uma ligação aos exemplos do nosso site) em sua <em>bio</em>.
                 - >
-                    También ten en mente que muchas personas usan un nombre y pronombres distintos en diferentes contextos.
-                    Puede que todavía no hayan salido del clóset con algunes compañeres de trabajo, pero se sientan cómodes vivendo su verdad con amigues.
-                    Sé conciente. Puedes, por ejemplo, preguntar “¿qué pronombres debería usar en frente de tu jefx?”, etc.
+                    Também tenha na mente que muitas pessoas usam um nome e pronomes distintos em diferentes contextos.
+                    Pode ser que alguém no dia a dia se “esconda” no ambiente de trabalho, mas se sinta confortável vivendo sua verdade com amigues.
+                    Seja consciente. Você pode, por exemplo, perguntar “que pronomes eu deveria usar em frente de seu chefe?” etc.
                 - >
-                    Algunas personas ofrecen varios pronombres, p. ej. “{/él&ella=él o ella}” o “{/elle&él=elle o él}”.
-                    Eso significa que les gustan todas esas formas. Normalmente, la primera opción es la que prefieren.
+                    Algumas pessoas oferecem vários pronomes, p. ex. “{/ele&ela=ele ou ela}” ou “{/ele&el=ele ou el}”.
+                    Isso significa que eles gostam de todas essas formas. Normalmente, a primeira opção é a que preferem.
         who-uses-it:
-            question: '¿Y sí se usa?'
+            question: 'E isso se usa mesmo?'
             answer:
                 - >
-                    ¡Sí! Millones de personas no binarias en el mundo lo hacen.
-                    Cada pronombre enlistado aquí es usado por una persona en su día a día.
+                    Sim! Milhões de pessoas não binárias no mundo fazem isso.
+                    Cada pronome listado aqui é usado por alguém no seu dia a dia.
         authority:
-            question: '¿Esos pronombres no binarios están aprobados por alguna autoridad?'
+            question: 'Esses pronomes não binários estão aprovados por alguma autoridade?'
             answer:
                 - >
-                    El lenguaje no es un tipo de magia grabada en piedra y otorgada por los dioses.
-                    Es una herramienta que utilizamos para comunicarnos.
-                    Cuando cambiamos como sociedad, y cambia el mundo a nuestro alrededor,
-                    ajustamos el lenguaje que usamos para poder describirlo mejor.
-                    Nosotros somos los usuarios, así que <em>nosotros somos la autoridad</em> que dictamina cómo se usa.
+                    A língua não é um tipo de magia gravada em pedra e outorgada pelos deuses deusa.
+                    A língua é uma atividade essencialmente social, que evolui através do tempo, tal qual à sociedade.
+                    Mesmos somos os usuários, assim que <em>mesmos somos a autoridade</em> que dita como se usa.
                 - >
-                    Los diccionarios se toman su tiempo para registrar esas formas,
-                    lo cual no hace el cambio ilegítimo de ninguna manera.
-                    Eventualmente esas formas, de ser usadas con mucha frecuencia, son incluídas en los diccionarios..
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por ejemplo,
-                    acepta el uso del {/they=“they” singular} como un pronombre no binario del inglés.
+                    Os dicionários se tomam seu tempo para registrar essas formas,
+                    no qual n˜ão faz uma mudança ilegal de ninguma maneira.
+                    Eventualmente essas formas, de ser usadas com muita frequência, são incluídas em dicionários..
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por exemplo,
+                    aceita o uso de {/they=“they” singular} como um pronome não binário em inglês.
                 - >
-                    También puedes consultar {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=trabajos académicos}
-                    sobre los pronombres no binarios.
+                    Também pode consultar {https://scholar.google.com/scholar?hl=en&q=pronomes+não+binários=trabalhos académicos}
+                    sobre os pronomes não binários.
         bio:
-            question: '¿Por qué debería incluir mis pronombres en mis redes sociales?'
+            question: 'Porquê eu deveria colocar meus pronomes nas minhas redes sociais?'
             answer:
                 - >
-                    Si eres cis (= no eres trans) y usas „{/él=él}” o „{/ella=ella}” de acuerdo con tu género,
-                    puedes pensar que tus pronombres son <em>obvios</em>.
-                    Y sí, tal vez lo sean – siempre y cuando menciones tu nombre en tu perfil (y este sea tradicionalmente masculino o femenino)
-                    o si tu foto de perfil es una foto de tí.
-                    Muchas personas no cumplen con esas características – así que no siempre es fácil adivinar con qué pronombre prefieren ser llamades.
+                    Se você é/tu és cis (= não é/és trans) e usa/s „{/ele=ele}” ou „{/ela=ela}” de acordo com o seu gênero,
+                    pode pensar que seus/teus pronomes são <em>óbvios</em>.
+                    E sim, talvez eles são – sempre e quando menciona seu/teu nome em o perfil (e este seja tradicionalmente masculino ou feminino)
+                    ou se sua/tua foto de perfil é uma foto de você/tu.
+                    Muitas pessoas não cumprem com essas características – assim que não sempre é fácil adivinhar com que pronome prefere, ser chamades.
                 - >
-                    Pero se trata, sobre todo, de algo más importante: tal vez tus pronombres sean “obvios”,
-                    pero hay personas cuyos pronombres no lo son.
-                    Quieren que nos dirijamos a elles correctamente, independientemente de si “pasan” como su género,
-                    hayan transicionado o no (o quieran transicionar o no).
-                    Las personas no binarias no siempre “se ven no binarias”, no le debemos androginia a nadie.
+                    Mas se trata, sobretudo, de algo mais importante: talvez seus/teus pronomes são “óbvios”,
+                    mas tem pessoas quais pronomes não são.
+                    Querem que vamos abordá-los corretamente, independente de se “passam” como seu gênero,
+                    estão transicionando ou não (ou querem transacionar ou não).
+                    As pessoas não binárias não sempre “se vem não binárias”, não devemos a androginia a ninguém.
                 - >
-                    Compartir nuestros pronombres es importante para las personas trans, no binarias, y de género no conforme.
-                    Nos expone.
-                    Pero si las personas cis hacen lo mismo, hacen el mundo mejor para nosotres.
-                    Nos hace sentir más cómodes, segures, y bienvenides
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(más razones (en inglés) aquí).}
+                    Compartilhar nossos pronomes é importante para as pessoas trans, não binárias, e do gênero não conforme.
+                    Nos expõe.
+                    Mas se as pessoas cis fazem o mesmo, fazem o mundo melhor para nos.
+                    Faz-nos se sentir mais cómodes, segures, e bem-vindes
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mais razões (en inglés) aqui).}
         change:
-            question: '¿Puedo cambiar mis pronombres?'
+            question: 'Posso colocar os meus pronomes?'
             answer:
                 - >
-                    ¡Por supuesto! Nadie se sorprende cuando alguien cambia su punto de vista, estilo, hobbies…
-                    Así que ¿por qué sería extraño que ese alguien descubriera una parte de su identidad,
-                    o que le dejara de gustar su nombre, descubriera una etiqueta que encaja bien con elle, etc.?
+                    Claro! Ninguém se surpreende quando alguém muda seu ponto de vista, estilo, hobbies…
+                    Assim que por quê seria estranho que esse alguém descobrir uma parte de sua identidade,
+                    o que o deixara de gostar do seu nome, descobre uma etiqueta que encaixa bem com elu, etc.?
         get-used-to:
-            question: '¿Es raro que no me acostumbre a <em>mis propios</em> nuevos pronombres?'
+            question: 'É raro que não me acostumo com <em>meus próprios</em> novos pronomes?'
             answer:
                 - >
-                    ¡Para nada! Después de muchos años de usar los pronombres que mejor se adaptan al género asignado al nacer
-                    es fácil olvidarse a une misme el cambiarlos.
+                    Para nada! Depois de muitos anos de usar os pronomes que melhor se adaptam ao gênero assinado ao nascer
+                    é fácil esquecer a ume mesme os mudar.
                 - >
-                    Pronombres ≠ género.
-                    Tu género no cambiará de repente porque alguien te llamó “elle”.
-                    No te preocupes. Experimenta. Ve qué encaja mejor contigo.
+                    Pronomes ≠ gênero.
+                    Seu/teu gênero não vai mudar de repente porque alguém te chamou de “elu”.
+                    Não se preocupe. Experimenta. Veja o que encaixa melhor contigo.
         preferred-pronouns:
-            question: '¿Por qué no debería decir “pronombres preferidos”?'
+            question: 'Por que não deveria dizer “pronomes preferidos”?'
             answer:
                 - >
-                    Porque decirlo así sugiere que los pronombres son un capricho.
-                    Si alguien simplemente “prefiere” que le digan “ella”, no se sentirá mal _realmente_ si la llamo “él”, ¿no?
-                    Parece chico, después de todo, ¡Así que será más fácil para mí!
+                    Porque dizer assim sugere que os pronomes são um capricho.
+                    Se alguém simplesmente “prefere” que o chamam “ella”, não se sentiria mal realmente se ela a chamasse “ele”, não?
+                    Parece garoto, depois de tudo, assim será mais fácil para mim!
                 - >
-                    ¡No! Son nuestros pronombres. No nuestros “pronombres preferidos”. Son nuestros nombres, no nuestros “nombres preferidos”.
-                    Si te importan tus amigues y seres querides trans y no binaries, llámales de la manera correcta.
+                    Não! São nossos pronomes. Não nossos “pronomes preferidos”. São nossos nomes, não nossos “nomes preferidos”.
+                    Se te importam sus amigues e sus querides trans e não bináries, chama-lhes da maneira correta.
         gender-pronouns:
-            question: '¿Por qué no debería decir “pronombres de género”?'
+            question: 'Porquê não devo dizer “pronomes de gênero”?'
             answer:
                 - >
-                    Porque género ≠ pronombres. Los pronombres son sólo gramática.
-                    Las personas no binarias pueden usar pronombres binarios, algunas lesbianas usan {/él=él/lo} por razones culturales, etc.
+                    Porque gênero ≠ pronomes. Os pronomes são só gramática.
+                    As pessoas não binárias podem usar pronomes binários, algumas lesbianas usam {/ele=ele} por razões culturais, etc.
                 - >
-                    Simplemente di “pronombres”.
+                    Simplemente de “pronomes”.
 
 links:
     header: 'Enlaces'
     headerLong: 'Enlaces externos'
     recommended: 'Recomendamos'
 
-    media: 'Pronouns.page en los medios'
+    media: 'Pronouns.page nas midias'
 
-    social: 'Redes sociales'
+    social: 'Redes sociais'
 
-    languageVersions: 'Versiones en otras lenguas'
+    languageVersions: 'Versões em outros idiomas'
 
 people: ~
 
@@ -320,40 +317,40 @@ contact:
     header: 'Contato'
     authors: 'Autores/as/xs do site'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
-        description:  # TODO
+        name: 'O coletivo "Conselho da Língua Neutra"'
+        description:
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                são criadas pelo o coletivo “Conselho da Língua Neutra”.
+        logo: 'Logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'  # TODO
+        members: 'Membrxs atuais'
+        blog: 'Blog'
+        upcoming: 'Próximas versões'
 
 support:
     header: 'Apoie-nos'
     description: >
-        Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
-        puedes usar los siguientes enlaces:
+        Se gostaria de doar para o servidor, os domínios, stickers etc., ou simplemente comprar uma cerveja a autorxs,
+        podem usar as ligações seguintes:
 
 user:
     header: 'Conta'
-    headerLong: 'Tua conta'
-    tokenExpired: 'El token ha expirado. Por favor actualiza la página e inténtalo nuevamente.'
+    headerLong: 'A conta'
+    tokenExpired: 'O token expirou. Por favor atualize a página e tente novamente.'
     login:
-        placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
+        placeholder: 'Corrêo eletrónico (ou nome de usuarie, se já está(s) registrade)'
         action: 'Iniciar sessão'
-        emailSent: 'Te hemos enviado un correo electrónico con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
+        emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aquí. O código é de um uso e é válido por 15 minutos.'
         userNotFound: 'Usuarie não encontrade.'
         email:
-            subject: 'Tu código de inicio de sesión es %code%'
+            subject: 'O código de inicio da sessão é %code%'
             content: |
-                Para confirmar tu dirección de correo electrónico, introduce: %code%.
+                Para confirmar o seu/teu endereço email, digite: %code%.
 
-                Si no solicitaste este código, simplemente ignora este mensaje.
+                Se não solicitaste este código, simplesmente ignore esta mensagem.
         why: >
-            Registrarte te permite manejar tus tarjetas ({/@andrea=como esta}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}' # TODO
+            Registrar-se te permite dirigir os cartões ({/@andrea=como esta}).
+        passwordless: 'O site não grava qualquer senhas. {https://avris.it/blog/passwords-are-passé=More info.}' # TODO
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -361,8 +358,8 @@ user:
         changeUsername:
             header: 'Nome do usuarie'
             action: 'Mude'
-            invalid: 'El nombre de usuarie debe tener entre 4 y 16 caracteres y sólo puede contener números, letras, puntos, guiones y guionbajos.'
-            taken: 'Este nombre de usuarie ya está en uso.'
+            invalid: 'O nome de usuarie deve ter entre 4 e 16 caracteres e só pode contar números, letras, pontos, traços e sublinhados.'
+            taken: 'Este nome de usuarie já está em uso.'
         changeEmail:
             header: 'Endereço de e-mail'
             action: 'Mude'
@@ -374,37 +371,37 @@ user:
         header: 'Avatar'
         change: 'Mude'
     deleteAccount: 'Eliminar conta'
-    deleteAccountConfirm: '¿Confirmas que quieres eliminar tu cuenta? ¡Esto será irreversible!'
+    deleteAccountConfirm: 'Confirma que quer eliminar a conta? Isso será irreversível!'
     socialConnection:
-        list: 'Conexiones de redes sociales'
+        list: 'Conexões de redes sociais'
         connect: 'Conectar'
-        refresh: 'Actualizar'
+        refresh: 'Atualizar'
         disconnect: 'Desconectar'
-        disconnectConfirm: '¿Confirmas que quieres eliminar esta conexión? (Siempre puedes iniciar sesión usando el correo electrónico %email%)'
+        disconnectConfirm: 'Confirma que quer excluir essa conexão? (Sempre pode iniciar sessão usando seu endereço %email%)'
 
 profile:
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
-    pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://es.pronouns.page/ellx”).'
-    pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
+    pronounsInfo: 'Pode introduzir um pronome (p. ex. “ele” ou “ela”) ou um enlace (“http://pt.pronouns.page/elx”).'
+    pronounsNotFound: '˜Não podemos encontrar um enlace a este pronome!'
     words: 'Palavras'
     birthday: 'Idade'
-    birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
+    birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
     flags: 'Bandeiras'
-    flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
+    flagsInfo: 'Arrasta as bandeiras de orgulho a esse marco.'
     links: 'Enlaces'
-    column: 'Columna'
+    column: 'Coluna'
 
-    list: 'Teus cartões'
+    list: 'Os cartões'
     init: 'Criar um cartão'
     show: 'Mostrar'
     edit: 'Editar'
-    delete: 'Eliminar'
-    deleteConfirm: '¿Confirmas de que quieres eliminar esta tarjeta?'
+    delete: 'Excluir'
+    deleteConfirm: 'Confirmar que quer eliminar este cartão?'
     editor:
         header: 'Editor de cartões'
-        save: 'Salve teu cartão'
+        save: 'Salve o cartão'
     opinion:
         yes: 'Sim'
         jokingly: 'Brincando'
@@ -414,36 +411,36 @@ profile:
 share: 'Compartilhar'
 
 crud:
-    approve: 'Aprobar'
+    approve: 'Aprovar'
     hide: 'Esconder'
-    remove: 'Quitar'
-    removeConfirm: '¿Confirmas que quieres quitar este ítem?'
+    remove: 'Excluir'
+    removeConfirm: 'Confirma que quer excluir esse item?'
     edit: 'Editar'
-    add: 'Añadir'
+    add: 'Adicionar'
     filter: 'Filtrar'
-    filterLong: 'Filtrar la lista…'
+    filterLong: 'Filtrar a lista…'
     search: 'Buscar…'
-    author: 'Añadido por'
+    author: 'Adicionado por'
 
 footer:
-    source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
-    links: 'Contacto, redes sociales, apoyo'
+    source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
+    links: 'Contato, redes sociais, apoio'
 
 notFound:
-    message: 'Página no encontrada'
-    back: 'Volver a la página de inicio'
+    message: 'Página não encontrada'
+    back: 'Voltar para a página de início'
 
 authRequired:
     message: 'Debes iniciar sesión para ver este sitio'
     go: 'Ir al sitio de inicio de sesión'
 
 confirm:
-    header: '¿Confirmas esta decisión?'
-    yes: 'Sí, lo estoy'
-    no: 'No, cancelar'
+    header: 'Aplicar essa decisão?'
+    yes: 'Sim, estou'
+    no: 'Não, cancelar'
 
 terms:
-    header: 'Térinos de Servicio'
+    header: 'Termos de Servicio'
     lastUpdate: 'Actualizados por última vez'
     consent: 'Al registrarte, aceptas los {/terinos=Térinos de Servicio}.'
 
@@ -457,15 +454,15 @@ admin:
         confirmRole: '¿Confirmas que quieres cambiar el rol de @%username% a "%role%"?'
 
 table:
-    empty: 'Vacío…'
+    empty: 'Vazio…'
     count: 'Conta'
-    sort: 'Arrastra para ordenar'
-    scrollUp: 'Subir hasta arriba'
-    more: 'Mostrar más'
+    sort: 'Arrasta para ordenar'
+    scrollUp: 'Arrasta para cima'
+    more: 'Mostrar mai'
 
 api:
     header: 'Public API'
-    example: 'Ejemplo'
+    example: 'Exemplo'
     query: 'Query string parameters'
 
 quotation:
@@ -473,15 +470,15 @@ quotation:
     end: '”'
 
 localise:
-    shorter: 'Añadir versiones'
-    short: 'Añadir versiones en otras lenguas'
-    long: '¿Quieres añadir una versión en otra lengua? ¡Consulta'
+    shorter: 'Adicionar versões'
+    short: 'Adicionar versões em outras línguas'
+    long: 'Quer adicionar uma versão em outra língua? Consulta'
     longLink: 'este manual!'
 
 images:
     upload:
         instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instructionShort: 'Carregar'
 
 error:
     generic: 'Something went wrong, please try again…'
@@ -492,7 +489,7 @@ flags:
     Achillean: 'Aquilean{inflection}'
     Agender: 'Agênero'
     Alloromantic_Asexual: 'Allorrómanti{inflection_c} assexual'
-    Anarcha-Queer: 'Anarcoqueer'
+    Anarcha-Queer: 'Anarcaqueer'
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androssexual'
     Aporagender: 'Aporagênero'
@@ -555,7 +552,7 @@ flags:
     Polysexual: 'Polissexual'
     Pomoromantic: 'Pomorrómanti{inflection_c}'
     Pomosexual: 'Pomossexual'
-    Progress_Pride: 'Orgullo progresivo'
+    Progress_Pride: 'Orgulho progresivo'
     Queer: 'Queer'
     Queerian: 'Queerian{inflection}'
     Queerplatonic: 'Queerplatôni{inflection_c}'
@@ -569,7 +566,7 @@ flags:
     Transmasculine: 'Transmasculin{inflection}'
     Transneutral: 'Transneutr{inflection}'
     Trigender: 'Trigênero'
-    Trixic: 'Trízi{inflection_c}'
+    Trixic: 'Tríxi{inflection_c}'
     Two_Spirit: 'Dois-espíritos'
     Xenogender: 'Xenogênero'
 

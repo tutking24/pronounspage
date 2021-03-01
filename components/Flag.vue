@@ -1,11 +1,11 @@
 <template>
     <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}#${link.toLowerCase()}`" :title="alt">
-        <img :src="img" alt=""/>
-        {{ name }}
+        <img :src="img" alt="" class="rounded"/>
+        <Spelling>{{ name }}</Spelling>
     </a>
     <span v-else :title="alt">
-        <img :src="img" alt=""/>
-        {{ name }}
+        <img :src="img" alt="" class="rounded"/>
+        <Spelling>{{ name }}</Spelling>
     </span>
 </template>
 

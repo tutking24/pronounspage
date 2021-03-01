@@ -60,6 +60,7 @@
 <script>
     import jwt from 'jsonwebtoken';
     import {socialProviders} from "../src/data";
+    import cookieSettings from "../src/cookieSettings";
 
     export default {
         data() {
@@ -80,7 +81,7 @@
                 }
 
                 this.$store.commit('setToken', this.token);
-                this.$cookies.set('token', this.$store.state.token);
+                this.$cookies.set('token', this.$store.state.token, cookieSettings);
 
                 return jwt.verify(this.token, process.env.PUBLIC_KEY, {
                     algorithm: 'RS256',

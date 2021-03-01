@@ -6,13 +6,19 @@
                 <T>contact.team.name</T>
             </nuxt-link>
         </li>
+        <li v-for="author in config.contact.authors || []" class="mb-2">
+            <Icon :v="author.group ? 'users' : 'user'"/>
+            <a :href="author.link" target="_blank" rel="noopener">
+                <Spelling>{{author.name}}</Spelling>
+            </a>
+        </li>
         <li v-if="authors === undefined">
             <Spinner/>
         </li>
         <template v-else>
             <li v-for="author in authors" class="mb-2">
                 <Icon v="user"/>
-                {{ author.footerName }}
+                <Spelling>{{ author.footerName }}</Spelling>
                 <nuxt-link :to="`/@${author.username}`" class="badge bg-light text-dark border">
                     @{{author.username}}
                 </nuxt-link>

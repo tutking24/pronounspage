@@ -400,7 +400,7 @@ export class Pronoun {
     }
 
     format(str) {
-        return str.replace(/{[^}]+}/g, m => this.morphemes[m.substring(1, m.length - 1)]);
+        return str.replace(/{[^}]+}/g, m => this.morphemes[m.substring(1, m.length - 1)] || '');
     }
 
     toArray() {

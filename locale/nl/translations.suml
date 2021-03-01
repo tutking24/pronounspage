@@ -1,157 +1,158 @@
 title: 'nl.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'  # TODO
+description: 'Gebruiksvoorbeelden van persoonlijke voornaamwoorden en genderneutrale taal.'
 
 home:
     link: 'Startpagina'
     header: 'Voornaamwoorden'
     headerLong: 'Lijst met voornaamwoorden'
-    why: 'What''s the deal with pronouns?'
+    why: 'Hoe zit dat nu met die voornaamwoorden?'
     about:
         - >
-            We all have pronouns. They're those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            We gebruiken allemaal persoonlijke voornaamwoorden. Met deze woorden verwijzen we naar iemand zonder hun naam te noemen.
+            Meestal nemen we onderbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van die persoon hun uiterlijk.
+            Maar eigenlijk is het niet zo eenvoudig…
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            Gender is iets complex. Sommige mensen zien er niet uit zoals de meeste anderen met hun gender.
+            Bepaalde mensen worden liever anders aangesproken dan wat je zou verwachten.
+            Anderen passen in noch de “mannelijke” of “vrouwelijke” hokjes en verkiezen een meer genderneutraal taalgebruik.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Met deze tool kan je een link naar jouw persoonlijke voornaamwoorden delen.
+            Daarin vind je ook voorbeeldzinnen waarmee je anderen kan tonen hoe je het liefst aangesproken wordt.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            Waarom is dit nu belangrijk? Omwille van fatsoen.
+            Je spreekt Marie toch niet aan als “Lien” omdat jij die naam mooier vindt
+            of omdat ze er meer zoals een “Lien” uitziet volgens jou?
+            En zelfs al werd ze zo genoemd door haar ouders,
+            spreek haar aan als Marie als ze dit beter vindt dan haar oorspronkelijke naam.
+            En dit is hetzelfde als met voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
+            spreek die persoon aan zoals die dat wilt.
+            Het enige verschil is dat we vaak eerder elkaars namen dan elkaars voornaamwoorden kennen,
+            omdat we onszelf op die manier voorstellen. Laten we dit samen veranderen!
+    pronouns: 'Lijst van populaire voornaamwoorden'
     generator:
         header: 'Generator'
         description: >
-            You can also use this tool where you out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
+            Je kunt ook deze tool gebruiken waarmee je de lege plekken
+            in de zinnen kunt invullen en een kunt link genereren die je met anderen kan delen.
+        button: 'Laat de generator zien'
+        header2: 'Genereer een link'
+        base: 'Gebaseerd op'
+        alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+    whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
 
 pronouns:
-    examples: 'Example usage in sentences'
-    plural: 'Plural'
+    examples: 'Gebruiksvoorbeelden in zinnen'
+    plural: 'Meervoud'
     intro: 'Mijn voornaamwoorden zijn'
-    normative: 'Normative'
+    normative: 'Normatief'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
+        button: 'Genereer een link naar uitwisselbare vormen'
+        header: 'Uitwisselbare vormen'
         raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+    generated: 'Deze voornaamwoorden zijn gegenereerd door middel van een generator. Het team van pronouns.page is niet verantwoordelijk voor de inhoud.'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: 'Elk voornaamwoord'
+        short: 'elk'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
+            vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
+            - zolang de context duidelijk is wat betreft degene over wie wordt gesproken.
+        options: 'bekijk de mogelijkheden [share]{/=hier}.'
+    others: 'Andere vormen'
+    othersRaw: 'andere'
+    or: 'of'
+    grammarTable: 'Tabel'
 
 sources:
     header: 'Bronnen'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
-    toc: 'Show table of contents'
+    headerLong: 'Voorbeelden vormen culturele teksten'
+    headerLonger: 'Genderneutrale taal in culturele teksten'
+    subheader: 'Tekstcorpus van genderneutrale taal'
+    toc: 'Laat inhoudsopgave zien'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Other: 'Other'
+        All: 'Alle'
+        Book: 'Boeken'
+        Article: 'Artikelen'
+        Movie: 'Films'
+        Series: 'Serie'
+        Song: 'Muziek'
+        Poetry: 'Poëzie'
+        Other: 'Andere'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        header: 'Dien een voorbeeld in ter toevoeging aan de site'
+        action: 'Verstuur'
+        pronouns: 'Welke voornaamwoorden zijn gebruikt in het voorbeeld?'
+        pronounsInfo: 'Voer de simpelste versie van het voornaamwoord in, op de manier waarop het in de link staat, bijv. "hij", “hen/hun/hun”, “zij&hen”'
+        type: 'Type bron'
+        author: 'Auteur'
+        title: 'Titel'
+        extra: 'Aanvullende info (vertaler, naam van tijdschrift, …)'
+        year: 'Publicatiejaar (van de Nederlandse versie)'
+        fragments: 'Fragmenten'
+        comment: 'Commentaar'
+        link: 'Link naar de inhoud'
+        thanks: 'Bedankt voor je bijdrage!'
+        another: 'Dien nog een voorbeeld in'
+        moderation: 'Inzendingen zullen moeten worden goedgekeurd alvorens te worden gepubliceerd.'
+        key: 'Sleutel'
+        keyInfo: 'Identifier om bronnen te linken tussen verschillende vertalingen van de website en om met het woordenboek te linken'
+        images: 'Afbeeldingen'
+    otherVersions: 'In andere talen'
+    referenced: 'Gebruiksvoorbeelden'
 
 nouns:
     header: 'Woordenboek'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    headerLong: 'Woordenboek van naamwoorden'
+    headerLonger: 'Woordenboek voor genderneutrale taal'
+    description: 'Er zijn niet alleen voornaamwoorden! Bekijk ons woordenboek van genderneutrale naamwoorden.'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+            Inclusief en genderneutraal taalgebruik is niet alleen het respecteren van iemands voornaamwoorden.
+            Het houdt ook in het gebruik van woorden die hun baan, positie, relatie etc.
+            beschrijven op een manier die niet uitgaat van een bepaald gender.
+            Niet alle brandweerlieden zijn "brandweermannen". Niet elke echtgenoot is een "man" of een "vrouw."
         - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
+            Wanneer je refereert naar iemand wiens gender onbekend is,
+            naar een groep van mensen met verschillende genders
+            en vooral naar non-binaire personen die expliciet daaraan de voorkeur geven,
+            gebruik dan de neutrale vormen.
         - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
+            Hieronder presenteren we een woordenboek met de woorden die goed zijn om de weten.
+            Je kunt hieraan bijdragen en jouw suggesties toevoegen.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: 'goedgekeurde inzendingen'
+    pending: 'in afwachting van goedkeuring'
+    edit: 'Stel een verandering voor'
+    edited: 'Voorgestelde verandering van'
+    editing: 'Je bent een bestaande entry aan het bewerken.'
+    empty: 'Er zijn geen woorden gevonden die jouw criteria matchen.'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: 'Verstuur'
+        actionLong: 'Dien een woord in'
+        thanks: 'Bedankt voor je bijdrage!'
+        another: 'Dien nog een woord in'
+        moderation: 'Inzendingen zullen moeten worden goedgekeurd alvorens te worden gepubliceerd.'
 
-    template: 'Use a template'
+    template: 'Gebruik een sjabloon'
     root: 'Root'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
-    feminineShort: 'fem.'
-    neuter: 'neutral'
+    masculine: 'mannelijk'
+    masculineShort: 'mann.'
+    feminine: 'vrouwelijk'
+    feminineShort: 'vrouw.'
+    neuter: 'neutraal'
     neuterShort: 'neutr.'
 
-    singular: 'singular'
-    singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
+    singular: 'enkelvoud'
+    singularShort: 'enkelv.'
+    plural: 'meervoud'
+    pluralShort: 'meerv.'
 
 faq:
     header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    headerLong: 'Veelgestelde vragen'
     questions:
         nonbinary:
             question: 'What is nonbinary?'
@@ -285,24 +286,24 @@ faq:
                     No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
                     If you care about your trans and nonbinary friends and loved ones, then call them the right way.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    Omdat gender (is not) voornaamwoorden. Voornaamwoorden zijn gewoon grammatica.
+                    Non-binaire personen kunnen binaire voornaamwoorden gebruiken, sommige lesbische vrouwen gebruiken (he/him) voor culturele redenen etc.
                 - >
-                    Simply say “pronouns”.
+                    Zeg gewoon "voornaamwoorden".
 
 links:
     header: 'Links'
     headerLong: 'Extra links'
-    recommended: 'We recommend'
+    recommended: 'Wij raden aan'
 
-    media: 'Pronouns.page in the media'
+    media: 'Pronouns.page in de media'
 
-    social: 'Social media'
+    social: 'Sociale media'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'Andere taalversies'
 
 people: ~
 
@@ -310,154 +311,154 @@ english: ~
 
 contact:
     header: 'Contact'
-    authors: 'Authors of the website'
+    authors: 'De auteurs van de website'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
-        description:  # TODO
+        name: 'Het "Raad van Neutrale Taal" collectief'
+        description:
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+                {https://pronouns.page=Pronouns.page} en gerelateerde initiatieven
+                zijn bedacht door het "Raad van Neutrale Taal" collectief.
+        logo: 'Het logo van het collectief is een combinatie van het transgender symbool en een spraakballon dat taal symboliseert.'
+        members: 'Huidige leden'
+        blog: 'Blog'
+        upcoming: 'Komende taalversies'
 
 support:
-    header: 'Support'
+    header: 'Support ons'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        Als je wilt bijdragen aan de server, domeinen, stickers etc. of als je simpelweg een biertje voor de auteurs wil kopen,
+        kun je de onderstaande links gebruiken:
 
 user:
     header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    headerLong: 'Jouw account'
+    tokenExpired: 'Het token is verlopen. Ververs de pagina en probeer opnieuw.'
     login:
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
+        action: 'Inloggen'
+        emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
+        userNotFound: 'Gebruiker niet gevonden.'
         email:
-            subject: 'Your login code is %code%'
+            subject: 'Jouw logincode is %code%'
             content: |
-                To confirm your email address, use the following code: %code%.
+                Gebruik de volgende code om jouw e-mailadres te bevestigen: %code%.
 
-                If you didn't order this code, simply ignore this message.
+                Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
         why: >
-            Registering lets you manage your cards ({/@andrea=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            Door te registreren kun je een kaart ({/@andrea=zoals deze}) maken.
+        passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'Valideer'
+        invalid: 'Ongeldige code.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
-            taken: 'This username is taken.'
+            header: 'Gebruikersnaam'
+            action: 'Verander'
+            invalid: 'Jouw gebruikersnaam moet tussen 4 en 16 karakters lang zijn en kan alleen nummers, letters, puntjes, streepjes en onderstreepjes bevatten.'
+            taken: 'Deze gebruikersnaam is al in gebruik.'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
+            header: 'E-mailadres'
+            action: 'Verander'
+            invalid: 'Ongeldig e-mailadres.'
+            taken: 'Dit adres is al in gebruik.'
         admin: 'Admin'
-    logout: 'Log out'
+    logout: 'Uitloggen'
     avatar:
         header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        change: 'Verander'
+    deleteAccount: 'Verwijder je account'
+    deleteAccountConfirm: 'Weet je zeker dat je jouw account wil verwijderen? Dit is onomkeerbaar!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'Sociale media-verbindingen'
+        connect: 'Koppel'
+        refresh: 'Vernieuw'
+        disconnect: 'Ontkoppel'
+        disconnectConfirm: 'Weet je zeker dat je deze koppeling wil verwijderen? (Je kunt altijd inloggen met de email %email%)'
 
 profile:
     description: 'Omschrijving'
     names: 'Namen'
     pronouns: 'Voornaamwoorden'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: 'Je kunt een voornaamwoord (bijv. “die” of “zij/haar”) of een link (bijv. “http://nl.pronouns.page/zem”) of vijf eigen vormen (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.'
+    pronounsNotFound: 'We kunnen geen link naar dit voornaamwoord vinden!'
     words: 'Woorden'
     birthday: 'Leeftijd'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'
     flags: 'Vlaggen'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
+    flagsInfo: 'Klik en sleep jouw pridevlaggen naar deze frame.'
     links: 'Links'
     column: 'Kolom'
 
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
+    list: 'Jouw kaarten'
+    init: 'Creëer een kaart'
+    show: 'Laat kaart zien'
     edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    delete: 'Verwijder'
+    deleteConfirm: 'Weet je zeker dat je deze kaart wilt verwijderen?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
+        header: 'Kaart editor'
+        save: 'Sla jouw kaart op'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: 'Ja'
+        jokingly: 'Voor de grap'
+        meh: 'Oké'
+        no: 'Nee'
 
-share: 'Share'
+share: 'Deel'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
+    approve: 'Keur goede'
+    hide: 'Verberg'
+    remove: 'Verwijder'
+    removeConfirm: 'Weet je zeker dat je dit item wilt verwijderen?'
     edit: 'Edit'
-    add: 'Add'
+    add: 'Toevoegen'
     filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
+    filterLong: 'Filter de lijst…'
+    search: 'Zoek…'
+    author: 'Toegevoegd door'
 
 footer:
-    source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'
-    links: 'Contact, social media, support'
+    source: 'De broncode wordt {https://gitlab.com/Avris/Zaimki=gepubliceerd} onder de {https://mit.avris.it=MIT}-licentie.'
+    links: 'Contact, sociale media, support'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'Pagina niet gevonden'
+    back: 'Ga terug naar de Startpagina'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'U moet inloggen om deze pagina te bekijken'
+    go: 'Ga naar het inlogformulier'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
+    header: 'Weet je zeker dat?'
+    yes: 'Ja, dat weet ik zeker'
+    no: 'Nee, annuleer'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: 'Gebruiksvoorwaarden'
+    lastUpdate: 'Laatst bijgewerkt'
+    consent: 'Door te registreren accepteer je de {/terms=gebruiksvoorwaarden}.'
 
 admin:
-    header: 'Admin panel'
+    header: 'Administratie paneel'
     user:
-        user: 'User'
-        email: 'Email'
-        roles: 'Role'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        user: 'Gebruiker'
+        email: 'E-mail'
+        roles: 'Rol'
+        profiles: 'Gebruikersprofielen'
+        confirmRole: 'Weet je zeker dat je @%username%''s rol wilt veranderen naar "%role%"?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: 'Leeg…'
+    count: 'Aantal'
+    sort: 'Sleep om te sorteren'
+    scrollUp: 'Scroll naar boven'
+    more: 'Laat meer zien'
 
 api:
-    header: 'Public API'
-    example: 'Example'
+    header: 'Openbare API'
+    example: 'Voorbeeld'
     query: 'Query string parameters'
 
 quotation:
@@ -465,18 +466,18 @@ quotation:
     end: '”'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Check out'
-    longLink: 'this manual!'
+    shorter: 'Voeg meer toe'
+    short: 'Nieuwe taalversie toevoegen'
+    long: 'Wil je een nieuwe taalversie maken? Bekijk'
+    longLink: 'deze handleiding!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
+        instruction: 'Klik hier of sleep jouw afbeeldingen hier'
         instructionShort: 'Upload'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
 flags:
     Abroromantic: 'Abroromantisch'
@@ -488,6 +489,7 @@ flags:
     Androgyne: 'Androgyn'
     Androsexual: 'Androseksueel'
     Aporagender: 'Aporagender'
+    Archaeopronouns: 'Archeovoornaamwoorden'
     Aroace: 'Aroace'
     Aromantic: 'Aromantisch'
     Aromantic_Allosexual: 'Aromantisch alloseksueel'
@@ -555,7 +557,7 @@ flags:
     Sapphic: 'Sapphisch'
     Sexuality_Questioning: 'Seksualiteit bevragend'
     Straight_Ally: 'Hetero ally'
-    Toric: 'Tórisch'
+    Toric: 'Torisch'
     Transfeminine: 'Transfeminien'
     Transgender: 'Transgender'
     Transmasculine: 'Transmasculien'
@@ -564,5 +566,4 @@ flags:
     Trixic: 'Trixisch'
     Two_Spirit: 'Bispiritueel'
     Xenogender: 'Xenogender'
-
 

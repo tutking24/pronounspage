@@ -25,12 +25,12 @@
 
         <Table :data="visibleEntries()" columns="1" fixed :marked="(el) => !el.approved" ref="dictionarytable">
             <template v-slot:header>
-                <th></th>
+                <th class="cell-wide"></th>
                 <th></th>
             </template>
 
             <template v-slot:row="s"><template v-if="s">
-                <td>
+                <td class="cell-wide">
                     <p>
                         <strong>{{s.el.term.map(x => x.trim()).join(', ')}}</strong>
                         <span v-if="s.el.original.length">({{s.el.original.map(x => x.trim()).join('; ')}})</span>
@@ -270,6 +270,11 @@
             &:hover .btn-label {
                 display: inline;
             }
+        }
+    }
+    @include media-breakpoint-down('md', $grid-breakpoints) {
+        .cell-wide {
+            min-width: 90vw;
         }
     }
 

@@ -84,17 +84,20 @@ nouns:
         - 'osobatywy'
     inclusive:
         enabled: false
-        categories: ['interpłciowość', 'lgbtq+', 'niepełnosprawność', 'rasa', 'trans']
+        categories: ['queer/lgbtq+', 'transpłciowość', 'interpłciowość', 'niepełnosprawność', 'rasa i narodowość']
         route: 'inkluzywny'
     terms:
-        enabled: false
+        enabled: true
         categories:
             - 'orientacja seksualna'
             - 'orientacja romantyczna'
+            - 'orientacja tertiarna'
             - 'określenie orientacji romantycznej i seksualnej'
             - 'płeć'
             - 'ekspresja płciowa'
             - 'model relacji'
+            - 'język'
+            - 'pociąg'
         route: 'terminologia'
 
 names:
@@ -153,6 +156,10 @@ links:
             url: '/blog/czas-się-obnosić'
             headline: 'Nadszedł czas się obnosić!'
             extra: '– przemówienie Sybila z Wrocławskiego Marszu Równości'
+        -
+            icon: 'comment-alt-edit'
+            url: '/blog/rekomendacja-formularze'
+            headline: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
         -
             icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
@@ -331,6 +338,14 @@ links:
                 (to także portal dla wszystkich, którzy w języku szukają przestrzeni dla siebie).
                 Osoby niebinarne nie mają z jego użyciem problemów, to wpis dla osób cispłciowych,
                 które – nie oszukujmy się – nawet przy wielkiej empatii nie poczują tego samego dyskomfortu, co osoby niebinarne.
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/news/205242/niebinarny-spis-powszechny-dolacz-do-badania-nad-niebinarnoscia-w-jezyku-polskim'
+            headline: 'Niebinarny spis powszechny - dołącz do badania nad niebinarnością w języku polskim – <strong>Queer.pl</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://gazetalubuska.pl/on-ona-onu-trzy-plcie-to-tylko-metafora-czy-osoba-lgbt-czuje-sie-w-gorzowie-bezpiecznie/ar/c15-15436719?fbclid=IwAR1NuRd7YQXFXMdz7UilI7Rsj0NSyzqQap6D_5dIPk_iE4S1a86jthhyMGE'
+            headline: 'On, ona, onu. „Trzy płcie to tylko metafora”. Czy osoba LGBT czuje się w Gorzowie bezpiecznie? – <strong>Gazeta Lubelska</strong>'
     socials:
         -
             icon: 'twitter'
@@ -491,6 +506,11 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        inkluzywne-liczebniki: 'Inkluzywne liczebniki'
+        zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
+        zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
+        archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
+        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
         podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
         gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
         czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
@@ -538,6 +558,7 @@ census:
                 - ['osobą niebinarną']
                 - ['osobą cispłciową']
                 - ['binarną osobą transpłciową']
+                # - ['nie wiem']
         -
             type: 'number'
             min: 1900
@@ -553,6 +574,12 @@ census:
                 - ['w Polsce']
                 - ['za granicą']
                 - ['nie chcę odpowiadać']
+        # -
+        #     type: 'radio'
+        #     question: 'Język polski jest dla Ciebie…'
+        #     options:
+        #         - ['językiem rodzimym']
+        #         - ['kolejnym językiem']
         -
             type: 'checkbox'
             question: 'Jakimi formami mówisz o sobie?'
@@ -561,6 +588,12 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+                #- >
+                #    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                #    ale nie możesz tego bezpiecznie robić, to je zaznacz.
+                #- >
+                #    Przy formach liczby mnogiej nie chodzi nam o grupę Ty + inne osoby,
+                #    lecz o używanie gramatycznej mnogości dla opisania jednej osoby (podobnie do angielskiego they/them)
             options:
                 - ['rodzaj męski', '„byłem zmęczony”']
                 - ['rodzaj żeński', '„byłam zmęczona”']
@@ -622,6 +655,9 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
+                #- >
+                #    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                #    ale nie możesz tego bezpiecznie robić, to je zaznacz.
             options:
                 - ['maskulatywy', 'nauczyciel, partner, pracownik']
                 - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
@@ -709,7 +745,7 @@ census:
                 - ['agenderow_']
                 - ['bigenderow_']
                 - ['kłir']
-                - ['andogyniczn_']
+                - ['andogyniczn_']  # TODO androgyniczn_
                 - ['aporapłciow_']
                 - ['aporagenderow_']
                 - ['autypłciow_']
@@ -765,6 +801,7 @@ census:
                 - ['genderflux']
                 - ['gender questioning']
                 - ['transfeminine']
+                - ['transmasculine']
                 - ['transgender']
                 - ['trans']
                 - ['transneutral']
