@@ -125,11 +125,6 @@ blockquote {
     margin-bottom: $spacer;
 }
 
-/* RTL fix */
-.list-group, .list-unstyled {
-    padding-right: 0;
-}
-
 strike, .text-strike {
     text-decoration: line-through;
 }

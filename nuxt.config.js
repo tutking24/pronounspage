@@ -109,6 +109,12 @@ export default {
         }
     },
     build: {
+        postcss: {
+            plugins: [
+                require('autoprefixer'),
+                require('rtlcss'),
+            ],
+        },
         extend (config, ctx) {
             config.module.rules.push({
                 test: /\.csv|\.tsv$/,
