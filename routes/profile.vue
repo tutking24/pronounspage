@@ -6,7 +6,7 @@
                 @{{username}}
             </h2>
             <div>
-                <div class="text-right">
+                <div class="text-end">
                     <nuxt-link v-if="$user() && $user().username === username" to="/editor"
                                class="btn btn-outline-primary btn-sm mb-2"
                     >
@@ -228,8 +228,8 @@
     .list-group-item-hoverable {
         &:hover {
             color: $primary;
-            border-left: 3px solid $primary;
-            padding-left: calc(#{$list-group-item-padding-x} - 2px);
+            border-inline-start: 3px solid $primary;
+            padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
         }
     }
 

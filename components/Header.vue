@@ -69,7 +69,7 @@
                 <Icon v="bars"/>
             </button>
             <div :class="['bg-white border p-3', hamburgerActive ? '' : 'd-none']">
-                <div class="btn-group-vertical d-flex nav-custom nav-custom-left mb-2">
+                <div class="btn-group-vertical d-flex nav-custom nav-custom-start mb-2">
                     <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                         <Icon :v="link.icon"/>
                         <Spelling>{{ link.textLong || link.text }}</Spelling>
@@ -91,10 +91,10 @@
             This language version is still under construction!
         </div>
         <div v-show="showCensus" class="alert alert-info mt-3">
-            <a href="#" class="float-right" @click.prevent="dismissCensus">
+            <a href="#" class="float-end" @click.prevent="dismissCensus">
                 <Icon v="times"/>
             </a>
-            <Icon v="user-chart" size="2" class="d-inline-block float-left mr-3 mt-2"/>
+            <Icon v="user-chart" size="2" class="d-inline-block float-start mr-3 mt-2"/>
             <T silent>census.banner</T>
         </div>
     </header>
@@ -307,12 +307,12 @@
 
         .nav-custom {
             .btn {
-                border-left: 1px solid $gray-500;
+                border-inline-start: 1px solid $gray-500;
                 border-radius: 0;
 
                 &:hover, &:focus, &.active {
-                    border-left: 3px solid $primary;
-                    padding-left: calc(#{$btn-padding-x-sm} - 2px);
+                    border-inline-start: 3px solid $primary;
+                    padding-inline-start: calc(#{$btn-padding-x-sm} - 2px);
                     color: $primary;
                 }
 
@@ -321,14 +321,14 @@
         }
     }
 
-    .nav-custom-left {
+    .nav-custom-start {
         .btn {
-            border-left: 1px solid $gray-500;
+            border-inline-start: 1px solid $gray-500;
             border-radius: 0;
 
             &:hover, &:focus, &.active {
-                border-left: 3px solid $primary;
-                padding-left: calc(#{$btn-padding-x-sm} - 2px);
+                border-inline-start: 3px solid $primary;
+                padding-inline-start: calc(#{$btn-padding-x-sm} - 2px);
                 color: $primary;
             }
 
@@ -337,7 +337,7 @@
     }
 
     @include media-breakpoint-up('md', $grid-breakpoints) {
-        .nav-custom:not(.nav-custom-left) {
+        .nav-custom:not(.nav-custom-start) {
             .btn {
                 border-bottom: 1px solid $gray-500;
                 border-radius: 0;

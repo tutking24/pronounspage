@@ -16,8 +16,8 @@
     .list-group-item-hoverable {
         &:hover {
             color: $primary;
-            border-left: 3px solid $primary;
-            padding-left: calc(#{$list-group-item-padding-x} - 2px);
+            border-inline-start: 3px solid $primary;
+            padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
         }
     }
 </style>

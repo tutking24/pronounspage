@@ -223,7 +223,7 @@
     @import "assets/variables";
 
     .profile-current {
-        border-left: 3px solid $primary;
+        border-inline-start: 3px solid $primary;
     }
 
     .narrow-message {

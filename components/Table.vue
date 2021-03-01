@@ -123,6 +123,6 @@
     @import "assets/variables";
 
     .marked {
-        border-left: 3px solid $primary;
+        border-inline-start: 3px solid $primary;
     }
 </style>

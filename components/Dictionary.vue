@@ -308,7 +308,7 @@
     @import "assets/variables";
 
     .list-singular {
-        padding-left: 0;
+        padding-inline-start: 0;
         list-style: none;
         li {
             white-space: nowrap;
@@ -327,7 +327,7 @@
         }
     }
     .list-plural {
-        padding-left: 0;
+        padding-inline-start: 0;
         list-style: none;
         li {
             white-space: nowrap;

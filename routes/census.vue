@@ -11,7 +11,7 @@
                     {{countResponses}}
                     <T>census.replies</T>
 
-                    <a href="/api/census/export" class="btn btn-outline-secondary btn-sm float-right">
+                    <a href="/api/census/export" class="btn btn-outline-secondary btn-sm float-end">
                         <Icon v="download"/>
                     </a>
                 </div>

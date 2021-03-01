@@ -44,7 +44,7 @@
             bottom: 100%;
             margin-bottom: -$size/2;
             left: 50%;
-            margin-left: -$size/2;
+            margin-inline-start: -$size/2;
             border-radius: 100%;
             display: grid;
             place-items: center;
@@ -60,7 +60,7 @@
             }
             > span {
                 box-shadow:0 2px 4px $value;
-                // FIXME background: theme-color-level($color, $alert-bg-level);
+                background: tint-color($value, 80%);
                 color: $value;
             }
         }
