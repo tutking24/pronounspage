@@ -71,7 +71,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'słowniki'
+    route: 'slowniki'
     collapsable: false
     plurals: true
     pluralsRequired: true
@@ -812,12 +812,13 @@ census:
             optional: true
 
 redirects:
-    - { from: '^/neutratywy$', to: '/s%C5%82owniki' }
-    - { from: '^/rzeczowniki$', to: '/s%C5%82owniki' }
-    - { from: '^/slownik$', to: '/s%C5%82owniki' }
-    - { from: '^/slowniki$', to: '/s%C5%82owniki' }
+    - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }
+    - { from: '^/rzeczowniki$', to: '/slowniki' }
+    - { from: '^/slownik$', to: '/slowniki' }
+    - { from: '^/s%C5%82ownik$', to: '/slowniki' }
+    - { from: '^/s%C5%82owniki$', to: '/slowniki' }
     - { from: '^/słownik$', to: '/s%C5%82owniki' }
-    - { from: '^/s%C5%82ownik$', to: '/s%C5%82owniki' }
+    - { from: '^/słowniki', to: '/slowniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }
