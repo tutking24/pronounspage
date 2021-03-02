@@ -2,8 +2,8 @@ title: 'yi.pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
+    link: 'הײמזײַטל'
+    header: 'פּראָנאָםען'
     headerLong: 'List of pronouns'
     why: 'What''s the deal with pronouns?'
     about:
@@ -44,7 +44,7 @@ home:
 pronouns:
     examples: 'Example usage in sentences'
     plural: 'Plural'
-    intro: 'My pronouns are'
+    intro: 'מײַנע פּראָנאָמען זענען'
     normative: 'Normative'
     alt:
         button: 'Generate a link to interchangeable forms'
@@ -64,7 +64,7 @@ pronouns:
     grammarTable: 'Table'
 
 sources:
-    header: 'Sources'
+    header: 'קװאַלן'
     headerLong: 'Examples from cultural texts'
     headerLonger: 'Gender neutral language in cultural texts'
     subheader: 'Text corpus of gender neutral language'
@@ -102,7 +102,7 @@ sources:
 
 
 nouns:
-    header: 'Dictionary'
+    header: 'װערטערבוך'
     headerLong: 'Dictionary of neutral nouns'
     headerLonger: 'Dictionary of gender neutral language'
     description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
@@ -151,7 +151,7 @@ nouns:
     pluralShort: 'pl.'
 
 faq:
-    header: 'FAQ'
+    header: 'פֿראַגעס'
     headerLong: 'Frequently asked questions'
     questions:
         nonbinary:
@@ -295,7 +295,7 @@ faq:
                     Simply say “pronouns”.
 
 links:
-    header: 'Links'
+    header: 'פֿאַרבינדונגען'
     headerLong: 'Extra links'
     recommended: 'We recommend'
 
@@ -310,7 +310,7 @@ people: ~
 english: ~
 
 contact:
-    header: 'Contact'
+    header: 'קאָנטאַקט'
     authors: 'Authors of the website'
     team:
         name: 'The “Neutral Language Council” collective'  # TODO
@@ -330,8 +330,8 @@ support:
         you can use the links below:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
+    header: 'קאָנטע'
+    headerLong: 'דיין קאָנטע'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
     login:
         placeholder: 'Email (or username, if you''re already registered)'
@@ -376,33 +376,33 @@ user:
         disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'באַשרײַבונג'
+    names: 'נעמען'
+    pronouns: 'פּראָנאָםען'
     pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
     pronounsNotFound: 'We can''t find a link to this pronoun!'
-    words: 'Words'
-    birthday: 'Age'
+    words: 'װערטער'
+    birthday: 'עלטער'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
+    flags: 'פֿענער'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
-    links: 'Links'
+    links: 'פֿאַרבינדונגען'
     column: 'Column'
 
-    list: 'Your cards'
-    init: 'Create a card'
+    list: 'דײַנע‎ װיזיט־⁠קאַרטלעך'
+    init: 'מאַך אַ װיזיט־⁠קאַרטל'
     show: 'Show'
     edit: 'Edit'
     delete: 'Delete'
     deleteConfirm: 'Are you sure you want to delete this card?'
     editor:
-        header: 'Card editor'
+        header: 'רעדאַקציע פון די װיזיט־⁠קאַרטל'
         save: 'Save your card'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: 'יאָ'
+        jokingly: 'אין אַ שפּאַס'
+        meh: 'אָקײ'
+        no: 'נײן'
 
 share: 'Share'
 
@@ -493,7 +493,7 @@ flags:
     Aroace: 'אַראָ-אַס'
     Aromantic: 'אַראָמאַנטיש'
     Aromantic_Allosexual: 'אַראָמאַנטיש אַלאָסעקסועל'
-    Asexual: 'אָנחשקדיק'
+    Asexual: 'אָנחשקדיק (אַסעקסועל)'
     Autigender: 'אױטימיניק'
     Bear: 'בער'
     Bicurious: 'בי-נײַגעריק'
@@ -503,7 +503,7 @@ flags:
     Butch: 'בוטש'
     Ceteroromantic: 'צעטעראָראָמאַנטיש'
     Ceterosexual: 'צעטעראָסעקסועל'
-    Cis_Ally: 'ציס אַליאַ֜נט'
+    Cis_Ally: 'ציס אַליאַנט'
     Demiboy: 'האַלבייִנגל'
     Demigender: 'האַלבמיניק'
     Demigirl: 'האַלבמיידל'
@@ -511,13 +511,13 @@ flags:
     Demisexual: 'האַלבסעקסועל'
     Diamoric: 'דיאַמאָריש'
     Enbian: 'ענביש'
-    Fa*afafine: 'פֿאַ''אַפֿאַפֿינע'
-    Gay: 'פֿריילעך'
+    Fa*afafine: 'פֿאַ׳אַפֿאַפֿינע'
+    Gay: 'געי'
     Gender_Questioning: 'מין-פֿרעגנדיק'
     Genderfae: 'פֿעע-מיניק'
     Genderfaun: 'פֿאַון-מיניק'
-    Genderfluid: 'מי֜ן־פֿלי֜סיק'
-    Genderflux: 'מי֜ן־פֿליס'
+    Genderfluid: 'מין־פֿליסיק'
+    Genderflux: 'מין־פֿליס'
     Genderqueer: 'דזשענדער־טרייף'
     Greyaromantic: 'גרױ אַראָמאַנטיש'
     Greyasexual: 'גרױ אָנחשקדיק'
@@ -530,7 +530,7 @@ flags:
     Homoromantic: 'האָמאָראָמאַנטיש'
     Intersex: 'אנדרוגינוס'
     LGBTQ: 'לגבט"ק'
-    Leather_Pride: 'לע֜דערן שטאָלץ'
+    Leather_Pride: 'לעדערן שטאָלץ'
     Lesbian: 'לעזביאַנקע'
     Lesbiromantic: 'לעזביראָמאַנטיש'
     Maverique: 'זעלבשטענדיק-מיניק'
@@ -553,11 +553,11 @@ flags:
     Progress_Pride: 'פּראָגרעסיוו שטאָלץ'
     Queer: 'קוויר'
     Queerian: 'קוויריש'
-    Queerplatonic: 'קוויר-פּלאַטאָ֜ניש'
+    Queerplatonic: 'קוויר-פּלאַטאָניש'
     Quoiromantic: 'קוויראָמאַנטיש'
     Sapphic: 'סאַפיש'
     Sexuality_Questioning: 'אָריענטירונג-פֿרעגנדיק'
-    Straight_Ally: 'העטעראָ אַליאַ֜נט'
+    Straight_Ally: 'העטעראָ אַליאַנט'
     Toric: 'טאָריש'
     Transfeminine: 'טראַנספֿעמינין'
     Transgender: 'טראַנסמיניק'
@@ -565,6 +565,7 @@ flags:
     Transneutral: 'טראַנסנײטראַל'
     Trigender: 'דרײַ-מיניק'
     Trixic: 'טריקסיש'
+    Tumtum: 'טומטום‎'
     Two_Spirit: 'צװײ נשמות'
     Xenogender: 'קסענאָמיניק'
 

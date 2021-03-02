@@ -12,7 +12,7 @@ pronouns:
     multiple:
         name: 'Interchangeable forms'
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
-        examples: ['he&she', 'he&they', 'she&they']
+        examples: ['ער&זי', 'זי&זיי', 'ער&זיי']
     null:
         description: 'No pronouns / null pronouns / pronounless / nameself'
         history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
@@ -207,20 +207,11 @@ profile:
     defaultWords:
         -
             - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+            - 'פרוי'
+            - 'הער'
+        - ['person', 'מאַן', 'פרוי', 'פּאַרשױן', 'מענטש', 'בחור', 'ייִנגל', 'מײדל', 'מױד', 'יונג', 'ברודער', 'שװעסטער', 'מיטקינד']
+        - ['שײן', 'קראַסאַװעץ', 'הדרת־⁠פּנימדיק', 'חנעװדיק', 'רײצנדיק']
+        - ['חבֿר', 'חבֿרטע', 'פֿרײַנד', 'פֿרײַנדינע', 'מײדל', 'געלי֜בטער', 'פּאַרטנער', 'בײַשלעפֿער', 'זיװג', 'מאן', 'װײַב', 'פֿרױ']
     flags:
         defaultPronoun: 'ער'
 
