@@ -31,7 +31,7 @@
     "mailer": "^0.6.7",
     "markdown-loader": "^6.0.0",
     "multer": "^1.4.2",
-    "nuxt": "^2.15",
+    "nuxt": "^2.15.2",
     "rtlcss": "^3.1.2",
     "sha1": "^1.1.1",
     "sql-template-strings": "^2.2.2",
@@ -41,6 +41,7 @@
     "ulid": "^2.3.0",
     "vue-matomo": "^3.13.5-0",
     "vuedraggable": "^2.24.3",
+    "webpack": "^5.0",
     "zh_cn_zh_tw": "^1.0.7"
   },
   "devDependencies": {
@@ -55,7 +56,7 @@
     "postcss-loader": "^4.1.0",
     "postcss-url": "^10.1.1",
     "sass": "^1.26.10",
-    "sass-loader": "^9.0.2"
+    "sass-loader": "^10.1.1"
   },
   "peerDependencies": {
     "postcss": "^8.0.0"

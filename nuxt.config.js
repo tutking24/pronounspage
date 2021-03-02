@@ -50,6 +50,14 @@ const buildFlags = () => {
     });
 };
 
+const postCssPlugins = [
+    require('autoprefixer'),
+];
+
+if (config.dir === 'rtl') {
+    postCssPlugins.push(require('rtlcss'));
+}
+
 export default {
     target: 'server',
     head: {
@@ -110,10 +118,7 @@ export default {
     },
     build: {
         postcss: {
-            plugins: [
-                require('autoprefixer'),
-                require('rtlcss'),
-            ],
+            plugins: postCssPlugins,
         },
         extend (config, ctx) {
             config.module.rules.push({
