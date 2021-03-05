@@ -9,7 +9,7 @@ export default ({ app, store }) => {
     Vue.prototype.$t = t;
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
         pronoun.format(
-            t(`flags.${str.replace(/ /g, '_').replace(/\*/g, `'`)}`, {}, false) || str
+            t(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str
         );
     Vue.prototype.config = config;
     Vue.prototype.locales = buildDict(function* () {
