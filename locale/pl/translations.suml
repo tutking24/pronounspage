@@ -784,6 +784,8 @@ links:
     recommended: 'Polecamy'
 
     media: 'Zaimki.pl w mediach'
+    mediaGuests: 'Zaproszone'
+    mediaMentions: 'Wspomniane'
 
     social: 'Social media'
 

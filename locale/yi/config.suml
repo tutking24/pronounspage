@@ -160,7 +160,8 @@ links:
             url: 'https://pronouns.alejo.io/'
             headline: 'Display pronouns in Twitch Chat'
 
-    media: []
+    mediaGuests: []
+    mediaMentions: []
     socials:
         -
             icon: 'twitter'

@@ -68,7 +68,8 @@ links:
     route: 'ligações'
     blogRoute: 'blog'
     links: []
-    media: []
+    mediaGuests: []
+    mediaMentions: []
     socials:
         -
             icon: 'twitter'

@@ -86,7 +86,8 @@ links:
     route: 'links'
     blogRoute: 'blog'
     links: []
-    media: []
+    mediaGuests: []
+    mediaMentions: []
     socials:
         -
             icon: 'twitter'

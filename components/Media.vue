@@ -1,11 +1,22 @@
 <template>
-    <section v-if="config.links.media.length">
+    <section v-if="config.links.mediaGuests.length || config.links.mediaMentions.length">
         <h2 class="h3">
             <Icon v="tv"/>
             <T>links.media</T>
         </h2>
-        <ul class="list-unstyled">
-            <Link v-for="link in config.links.media" :link="link" :key="link.url"/>
+        <h3 v-if="config.links.mediaGuests.length && config.links.mediaMentions.length" class="h4 mt-3">
+            <Icon v="microphone-alt"/>
+            <T>links.mediaGuests</T>
+        </h3>
+        <ul class="list-unstyled" v-if="config.links.mediaGuests.length">
+            <Link v-for="link in config.links.mediaGuests" :link="link" :key="link.url"/>
+        </ul>
+        <h3 v-if="config.links.mediaGuests.length && config.links.mediaMentions.length" class="h4 mt-3">
+            <Icon v="quote-right"/>
+            <T>links.mediaMentions</T>
+        </h3>
+        <ul class="list-unstyled" v-if="config.links.mediaMentions.length">
+            <Link v-for="link in config.links.mediaMentions" :link="link" :key="link.url"/>
         </ul>
     </section>
 </template>

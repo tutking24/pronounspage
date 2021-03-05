@@ -233,7 +233,7 @@ links:
                 Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
                 bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
                 należy uznać tę pierwszą za wyższą.
-    media:
+    mediaGuests:
         -
             icon: 'newspaper'
             url: 'https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc'
@@ -276,9 +276,7 @@ links:
             icon: 'play-circle'
             url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
             headline: 'El lenguaje inclusivo de lxs polacxs – Ausir i Dante w hiszpańskojęzycznym podcaście <strong>Proyecto Polonia</strong>'
-
-
-
+    mediaMentions:
         -
             icon: 'newspaper'
             url: 'https://queer.pl/artykul/205052/niebinarne-postaci-w-uniwersum-gwiezdnych-wojen-jak-unika-sie-neutratywow-w-polskim-tlumaczeniu'
