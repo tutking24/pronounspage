@@ -276,6 +276,18 @@ links:
             icon: 'play-circle'
             url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
             headline: 'El lenguaje inclusivo de lxs polacxs – Ausir i Dante w hiszpańskojęzycznym podcaście <strong>Proyecto Polonia</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/lobby.lgbtq/videos/117221526885267'
+            headline: 'Konferencja prasowa <strong>Lobby LGBTQ</strong> ws. transfobii w Gazecie Wyborczej'
+            extra: '– przemówienie Archiego'
+            quote: >
+                Każdego dnia walczymy o widoczność osób będących pod parasolem transpłciowości
+                przez tworzenie bezpiecznej i komfortowej przestrzeni językowej,
+                dokładamy wszelkich starań, by rodzaj neutralny nie był rodzajem infantylnym,
+                by zaimki inne niż ona i on przestały brzmieć dziwnie.
+                Robimy to wszystko po to, by żadna osoba nie czuła się i nie była osobą wykluczoną,
+                dlatego właśnie popieramy i podpisałośmy list otwarty do Gazety Wyborczej.
     mediaMentions:
         -
             icon: 'newspaper'
