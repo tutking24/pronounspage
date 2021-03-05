@@ -314,6 +314,17 @@ links:
             headline: 'Inkluzywny język – Rozmowa z Kahą z Inkluzywnej Mowy (podcast <strong>SZAJN na głos</strong>)'
             extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 11:11'
         -
+            icon: 'book'
+            url: 'https://sjp.pwn.pl/mlodziezowe-slowo-roku/haslo/130-tysiecy-zgloszen-w-plebiscycie-Mlodziezowe-Slowo-Roku-2020-Komentarz-Anny-Ewy-Wileczek-po-miesiacu;6952033.html'
+            headline: '130 tysięcy zgłoszeń w plebiscycie Młodzieżowe Słowo Roku 2020! Komentarz Anny Ewy Wileczek – po miesiącu'
+            extra: ' – <strong>PWN</strong> notujące pojawienie się form neutratywnych'
+            quote: >
+                \[Młodzież] Dokonuje jednoznacznej identyfikacji osób
+                – od neutralnych: typiarz/typiara/, ziomal/ziomówa oraz „neutratywnie” motywowanego ziomczę
+                – po nacechowane pozytywnie formy typu: hotówa ‘atrakcyjna osoba najczęściej płci męskiej’
+                lub chad ‘niezwykle przystojny chłopak, obiekt powszechnej adoracji’,
+                a także przykłady negatywnych waloryzacji.
+        -
             icon: 'newspaper'
             url: 'https://przekroj.pl/kultura/od-zjarania-swiata-rozmowa-z-marcelim-szpakiem-maciej-stroinski'
             headline: 'Od zjarania świata – Rozmowa z Marcelim Szpakiem w <strong>Przekroju</strong>'
