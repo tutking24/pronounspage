@@ -190,6 +190,7 @@
                         icon: 'bookmark',
                         text: this.$t('links.header'),
                         textLong: this.$t('links.headerLong'),
+                        extra: ['blog', 'blogEntry'],
                     });
                 }
 

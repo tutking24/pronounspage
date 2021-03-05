@@ -23,19 +23,11 @@
             <T>contact.team.description</T>
         </section>
 
-        <section v-if="Object.keys(config.contact.blog).length">
-            <h3>
-                <Icon v="pen-nib"/>
-                <T>contact.team.blog</T>
-            </h3>
-            <ul>
-                <li v-for="(title, slug) in config.contact.blog" class="mb-2">
-                    <nuxt-link :to="`/blog/${slug}`">
-                        {{title}}
-                    </nuxt-link>
-                </li>
-            </ul>
-        </section>
+        <router-link :to="'/' + config.links.blogRoute" v-if="Object.keys(config.contact.blog).length"
+                     class="btn btn-outline-primary btn-lg">
+            <Icon v="pen-nib"/>
+            <T>contact.team.blog</T>
+        </router-link>
 
         <section>
             <h3>

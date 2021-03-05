@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <Links top/>
+    <div class="main">
+        <Blog/>
+        <Links/>
         <Media/>
         <Recommended/>
         <Socials/>
