@@ -1,7 +1,7 @@
 <template>
     <span>
         <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
-            <strong v-if="part.variable"><Spelling>{{pronoun.getMorpheme(part.str, counter)}}</Spelling></strong>
+            <strong v-if="part.variable"><Spelling :text="pronoun.getMorpheme(part.str, counter)"/></strong>
             <span v-else><Spelling>{{part.str}}</Spelling></span>
         </span>
         <small v-if="link">

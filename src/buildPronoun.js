@@ -50,7 +50,7 @@ export const buildPronoun = (pronouns, path) => {
     for (let option of pronounStr[0].split('&')) {
         if (!base) {
             base = pronounsWithAliases[option]
-        } else {
+        } else if (pronounsWithAliases[option]) {
             base = base.merge(pronounsWithAliases[option])
         }
     }
