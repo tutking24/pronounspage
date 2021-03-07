@@ -675,7 +675,7 @@ census:
             writein: true
             instruction:
                 - >
-                    Więcej informacji <a href="/słowniki" target="_blank">w zakładce „Słowniki”</a>.
+                    Więcej informacji <a href="/slowniki" target="_blank">w zakładce „Słowniki”</a>.
                 #- >
                 #    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
                 #    ale nie możesz tego bezpiecznie robić, to je zaznacz.
@@ -751,7 +751,7 @@ census:
                     Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
-                    Znaczenie etykietek możesz znaleźć w naszym <a href="/słowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
 
                 - >
                     Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
@@ -839,7 +839,7 @@ redirects:
     - { from: '^/s%C5%82ownik$', to: '/slowniki' }
     - { from: '^/s%C5%82owniki$', to: '/slowniki' }
     - { from: '^/słownik$', to: '/s%C5%82owniki' }
-    - { from: '^/słowniki', to: '/slowniki' }
+    - { from: '^/slowniki', to: '/slowniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }

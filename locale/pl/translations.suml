@@ -228,9 +228,9 @@ nouns:
 
         - >
             Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
-            {/słowniki/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
-            {/słowniki/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
-            i {/słowniki/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
+            {/slowniki/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
+            {/slowniki/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
+            i {/slowniki/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
 
     personNouns:
         header: 'Osobatywy'
@@ -687,7 +687,7 @@ faq:
                     Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
                     wciąż jednak pomija osoby niebinarne.
                     Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
-                    (alternatywa dla {/słowniki/neutratywy=neutratywów})
+                    (alternatywa dla {/slowniki/neutratywy=neutratywów})
                     są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
@@ -840,7 +840,7 @@ english:
             We need to come up with a system that also includes
             neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
             (also: nouns like “painter”, “politician”, “journalist” etc. are gendered as well,
-            but that's [book] {/słowniki=a story for another time}).
+            but that's [book] {/slowniki=a story for another time}).
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
@@ -851,7 +851,7 @@ english:
 
 contact:
     header: 'Kontakt'
-    authors: '{/słowniki/neutratywy#autor=Autorza} strony'
+    authors: '{/slowniki/neutratywy#autor=Autorza} strony'
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
         description:
