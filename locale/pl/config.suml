@@ -527,6 +527,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
         inkluzywne-liczebniki: 'Inkluzywne liczebniki'
         zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
         zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
