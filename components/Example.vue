@@ -5,7 +5,7 @@
             <span v-else><Spelling>{{part.str}}</Spelling></span>
         </span>
         <small v-if="link">
-            (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling>{{ pronoun.canonicalName }}</Spelling></nuxt-link>)
+            (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling :text="pronoun.canonicalName"/></nuxt-link>)
         </small>
         <template v-if="config.pronunciation.enabled && pronounce && pronoun.pronounceable && example.pronounce(pronoun)">
             <a v-for="(link, name) in pronunciationLinks"

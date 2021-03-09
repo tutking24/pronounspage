@@ -243,7 +243,7 @@
                 this.$router.push(`/@${this.$user().username}`)
             },
             normalisePronoun(pronoun) {
-                const link = decodeURIComponent(
+                return decodeURIComponent(
                     pronoun
                         .toLowerCase()
                         .trim()
@@ -251,11 +251,15 @@
                         .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
                         .replace(new RegExp('^/'), '')
                 );
-
-                return buildPronoun(pronouns, link);
+            },
+            normaliseAndBuildPronoun(pronoun) {
+                return buildPronoun(pronouns, this.normalisePronoun(pronoun));
             },
             validatePronoun(pronoun) {
-                return this.normalisePronoun(pronoun) ? null : 'profile.pronounsNotFound'
+                pronoun = this.normalisePronoun(pronoun);
+                return pronoun === this.config.pronouns.any || buildPronoun(pronouns, pronoun)
+                    ? null
+                    : 'profile.pronounsNotFound'
             },
         },
         computed: {
@@ -267,7 +271,7 @@
                         opinion = 0.5;
                     }
                     if (opinion > mainOpinion) {
-                        const p = this.normalisePronoun(pronoun);
+                        const p = this.normaliseAndBuildPronoun(pronoun);
                         if (p) {
                             mainPronoun = p;
                             mainOpinion = opinion;

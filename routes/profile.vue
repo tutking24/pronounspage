@@ -76,7 +76,7 @@
 
                 <ul class="list-unstyled">
                     <li v-for="{link, pronoun, opinion} in pronounOpinions">
-                        <Opinion :word="pronoun.name(glue) + (pronoun.smallForm ? '/' + pronoun.morphemes[pronoun.smallForm] : '')" :opinion="opinion" :link="`/${link}`"/>
+                        <Opinion :word="typeof pronoun === 'string' ? pronoun : (pronoun.name(glue) + (pronoun.smallForm ? '/' + pronoun.morphemes[pronoun.smallForm] : ''))" :opinion="opinion" :link="`/${link}`"/>
                     </li>
                 </ul>
             </div>
@@ -179,6 +179,16 @@
                             .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
                             .replace(new RegExp('^/'), '')
                     );
+
+                    if (link === this.config.pronouns.any) {
+                        pronounOpinions.push({
+                            link,
+                            pronoun: link,
+                            opinion: this.profile.pronouns[pronoun],
+                        });
+                        continue;
+                    }
+
                     const pronounEntity = buildPronoun(pronouns, link);
 
                     if (pronounEntity) {
@@ -195,6 +205,9 @@
                 let mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
                 let mainOpinion = -1;
                 for (let {pronoun, opinion} of this.pronounOpinions) {
+                    if (typeof pronoun === 'string') {
+                        continue;
+                    }
                     if (opinion === 2) {
                         opinion = 0.5;
                     }
