@@ -509,6 +509,15 @@ faq:
                     Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
                     jest jedynie narzędziem do porozumiewania się.
                     Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
+        nowomowa:
+            question: 'Toż to nowomowa!'
+            answer:
+                - >
+                    Nie, nie każda zmiana w języku to „nowomowa”.
+                - >
+                    Nowomowa u Orwella polegała na zubożaniu języka tak, by ludzie nie mogli wyrazić swojego niezadowolenia z systemu.
+                - >
+                    Nasz projekt próbuje wzbogacić język tak, by osoby niebinarne wreszcie mogły się w pełni wyrazić.
         autorytet:
             question: 'Czy potwierdza te wymysły czyjś autorytet?'
             answer:
