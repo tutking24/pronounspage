@@ -840,7 +840,6 @@ redirects:
     - { from: '^/s%C5%82ownik$', to: '/slowniki' }
     - { from: '^/s%C5%82owniki$', to: '/slowniki' }
     - { from: '^/słownik$', to: '/s%C5%82owniki' }
-    - { from: '^/slowniki', to: '/slowniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }
