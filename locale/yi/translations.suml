@@ -150,6 +150,24 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
+    nouns:
+        header: 'Neutral nouns'
+
+    terms:
+        header: 'Terminologia'
+        headerLong: 'Słownik terminologii queerowej'
+        info:
+            - >
+                Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+                i jakie proponujemy dla nich polskie tłumaczenia.
+        term: 'Określenie'
+        original: 'Pochodzenie, określenie angielskie'
+        category: 'Kategoria'
+        images: 'Dodatkowe obrazki, spoza katalogu flag'
+        definition: 'Definicja'
+
 faq:
     header: 'פֿראַגעס'
     headerLong: 'Frequently asked questions'

@@ -45,7 +45,7 @@
                 return `/${this.config.nouns.route}/${route}`;
             },
             isActiveRoute(route) {
-                return decodeURIComponent(this.$route.fullPath) === this.buildRoute(route);
+                return decodeURIComponent(this.$route.fullPath).replace(/\/$/, '') === this.buildRoute(route).replace(/\/$/, '');
             },
         }
     }

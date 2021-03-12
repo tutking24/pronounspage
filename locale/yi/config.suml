@@ -62,7 +62,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'orientacja seksualna'
+            - 'orientacja romantyczna'
+            - 'orientacja tertiarna'
+            - 'określenie orientacji romantycznej i seksualnej'
+            - 'płeć'
+            - 'ekspresja płciowa'
+            - 'model relacji'
+            - 'język'
+            - 'pociąg'
+        route: 'terminology'
 
 names:
     enabled: false
