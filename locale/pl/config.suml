@@ -866,6 +866,8 @@ census:
 
 redirects:
     - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }
+    - { from: '^/dukatywy$', to: '/slowniki/dukatywy' }
+    - { from: '^/osobatywy$', to: '/slowniki/osobatywy' }
     - { from: '^/rzeczowniki$', to: '/slowniki' }
     - { from: '^/slownik$', to: '/slowniki' }
     - { from: '^/s%C5%82ownik$', to: '/slowniki' }
