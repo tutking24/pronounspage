@@ -58,7 +58,7 @@
             <div class="btn-group-vertical d-flex nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
-                    <Spelling>{{ link.textLong || link.text }}</Spelling>
+                    <Spelling :text="link.textLong || link.text"/>
                 </nuxt-link>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <div class="btn-group-vertical d-flex nav-custom nav-custom-start mb-2">
                     <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                         <Icon :v="link.icon"/>
-                        <Spelling>{{ link.textLong || link.text }}</Spelling>
+                        <Spelling :text="link.textLong || link.text"/>
                     </nuxt-link>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon" size="1.6"/>
                     <br/>
-                    <span class="text-nowrap"><Spelling>{{ link.text }}</Spelling></span>
+                    <span class="text-nowrap"><Spelling :text="link.text"/></span>
                 </nuxt-link>
             </div>
         </div>

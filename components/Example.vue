@@ -2,7 +2,7 @@
     <span>
         <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
             <strong v-if="part.variable"><Spelling :text="pronoun.getMorpheme(part.str, counter)"/></strong>
-            <span v-else><Spelling>{{part.str}}</Spelling></span>
+            <span v-else><Spelling :text="part.str"/></span>
         </span>
         <small v-if="link">
             (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling :text="pronoun.canonicalName"/></nuxt-link>)

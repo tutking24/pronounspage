@@ -9,7 +9,7 @@
         <li v-for="author in config.contact.authors || []" class="mb-2">
             <Icon :v="author.group ? 'users' : 'user'"/>
             <a :href="author.link" target="_blank" rel="noopener">
-                <Spelling>{{author.name}}</Spelling>
+                <Spelling :text="author.name"/>
             </a>
         </li>
         <li v-if="authors === undefined">
@@ -18,7 +18,7 @@
         <template v-else>
             <li v-for="author in authors" class="mb-2">
                 <Icon v="user"/>
-                <Spelling>{{ author.footerName }}</Spelling>
+                <Spelling :text="author.footerName"/>
                 <nuxt-link :to="`/@${author.username}`" class="badge bg-light text-dark border">
                     @{{author.username}}
                 </nuxt-link>
