@@ -567,7 +567,7 @@ export class Noun {
         this.femPl = femPl ? femPl.split('|') : [];
         this.neutrPl = neutrPl ? neutrPl.split('|') : [];
         this.sources = sources ? sources.split(',') : [];
-        this.sourcesData = sourcesData.map(s => new Source(s));
+        this.sourcesData = sourcesData.filter(s => !!s).map(s => new Source(s));
         this.approved = !!approved;
         this.base = base_id;
         this.author = author;
