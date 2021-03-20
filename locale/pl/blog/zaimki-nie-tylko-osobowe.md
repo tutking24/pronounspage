@@ -86,4 +86,4 @@ proponujemy zwyczajnie niemęskoosobowe słowo: „<u>wszystkie</u>”.
 ## Podsumowując
 
 Polszczyzna skrywa męską dominację językową w wielu nieoczekiwanych miejscach.
-Ale wystarczy parę drobnych zmian, by tej męskości już więcej rozmówcom nie narzucać.
+Ale wystarczy parę drobnych zmian, by tej męskości już więcej rozmówczyniom nie narzucać.
