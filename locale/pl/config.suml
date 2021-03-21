@@ -558,6 +558,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        spis-2021: 'Niebinarny Spis Powszechny 2021 – wnioski'
         czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
         inkluzywne-liczebniki: 'Inkluzywne liczebniki'
         zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
@@ -627,12 +628,12 @@ census:
                 - ['w Polsce']
                 - ['za granicą']
                 - ['nie chcę odpowiadać']
-        # -
-        #     type: 'radio'
-        #     question: 'Język polski jest dla Ciebie…'
-        #     options:
-        #         - ['językiem rodzimym']
-        #         - ['kolejnym językiem']
+        -
+            type: 'radio'
+            question: 'Język polski jest dla Ciebie…'
+            options:
+                - ['językiem rodzimym']
+                - ['kolejnym językiem']
         -
             type: 'checkbox'
             question: 'Jakimi formami mówisz o sobie?'
@@ -641,12 +642,12 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
-                #- >
-                #    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
-                #    ale nie możesz tego bezpiecznie robić, to je zaznacz.
-                #- >
-                #    Przy formach liczby mnogiej nie chodzi nam o grupę Ty + inne osoby,
-                #    lecz o używanie gramatycznej mnogości dla opisania jednej osoby (podobnie do angielskiego they/them)
+                - >
+                    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                    ale nie możesz tego bezpiecznie robić, to je zaznacz.
+                - >
+                    Przy formach liczby mnogiej nie chodzi nam o grupę Ty + inne osoby,
+                    lecz o używanie gramatycznej mnogości dla opisania jednej osoby (podobnie do angielskiego they/them)
             options:
                 - ['rodzaj męski', '„byłem zmęczony”']
                 - ['rodzaj żeński', '„byłam zmęczona”']
@@ -656,6 +657,18 @@ census:
                 - ['liczba mnoga, rodzaj niemęskoosobowy', '„byłyśmy zmęczone”']
                 - ['liczba mnoga, rodzaj neutralny', '„byłośmy zmęczone”']
                 - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
+                - ['unikanie form nacechowanych płciowo', '„dopadło mnie zmęczenie”']
+        -
+            type: 'checkbox'
+            question: 'Jeśli chcesz używać wobec siebie nienormatywnych (neologicznych) form językowych w codziennym życiu, ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?'
+            randomise: false
+            writein: true
+            options:
+                - ['pasują mi normatywne, binarne formy']
+                - ['nic, używam form neologicznych']
+                - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
+                - ['strach przed transfobią/enbyfobią']
+                - ['ciężko mi się przyzwyczaić']
         -
             type: 'checkbox'
             question: 'Jak chcesz, by mówiono/pisano o Tobie?'
@@ -708,9 +721,9 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="/slowniki" target="_blank">w zakładce „Słowniki”</a>.
-                #- >
-                #    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
-                #    ale nie możesz tego bezpiecznie robić, to je zaznacz.
+                - >
+                    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                    ale nie możesz tego bezpiecznie robić, to je zaznacz.
             options:
                 - ['maskulatywy', 'nauczyciel, partner, pracownik']
                 - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
@@ -798,7 +811,7 @@ census:
                 - ['agenderow_']
                 - ['bigenderow_']
                 - ['kłir']
-                - ['andogyniczn_']  # TODO androgyniczn_
+                - ['androgyniczn_']
                 - ['aporapłciow_']
                 - ['aporagenderow_']
                 - ['autypłciow_']
@@ -833,9 +846,11 @@ census:
                 - ['kobieta']
                 - ['męsk_']
                 - ['mężczyzna']
+                - ['osoba']
 
                 - ['nonbinary']
                 - ['enby']
+                - ['nb']
                 - ['agender']
                 - ['bigender']
                 - ['queer']
@@ -863,6 +878,8 @@ census:
             type: 'textarea'
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
             optional: true
+    results:
+        spis-2021: 'Wnioski ze Spisu 2021'
 
 redirects:
     - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }

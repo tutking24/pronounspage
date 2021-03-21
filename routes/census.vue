@@ -17,6 +17,14 @@
                 </div>
             </section>
 
+            <section v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
+                <ul class="mb-0">
+                    <li v-for="(text, link) in config.census.results">
+                        <router-link :to="`/blog/${link}`">{{text}}</router-link>
+                    </li>
+                </ul>
+            </section>
+
             <section>
                 <T :params='{
                     questions: questions.length,
