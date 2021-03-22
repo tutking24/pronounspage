@@ -978,13 +978,15 @@ census:
             to badanie nie jest skierowane do Ciebie (ale docenimy jeśli podzielisz się linkiem ze znajomymi!).
             Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
+        #- >
+        #    Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
+        #    W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
+        #    By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
         - >
-            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
-            W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
-            By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
+            Następny Spis odbędzie się w <strong>lutym 2022</strong>.
         - >
-            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>},
-            który trwa do 10 marca. Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>}.
+            Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
