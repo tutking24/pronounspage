@@ -612,7 +612,7 @@ census:
                 - ['osobą niebinarną']
                 - ['osobą cispłciową']
                 - ['binarną osobą transpłciową']
-                # - ['nie wiem']
+                - ['nie wiem']
         -
             type: 'number'
             min: 1900
@@ -715,7 +715,7 @@ census:
                         „'n' jest fajn'”, „lubię je' zwierzątko”
         -
             type: 'checkbox'
-            question: 'Jakich form rzeczownikowych używasz?'
+            question: 'Jakich form rzeczownikowych używasz wobec siebie?'
             randomise: true
             writein: true
             instruction:
@@ -784,6 +784,7 @@ census:
             optionsLast:
                 - ['nie znam / nie używam angielskiego']
                 - ['nie mam preferencji po angielsku']
+                - ['bez użycia zaimków (nounself, emojiself, …)']
         -
             type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'
@@ -847,7 +848,7 @@ census:
                 - ['kobieta']
                 - ['męsk_']
                 - ['mężczyzna']
-                - ['osoba']
+                # - ['osoba'] ?
 
                 - ['nonbinary']
                 - ['enby']
