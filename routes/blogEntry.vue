@@ -16,7 +16,10 @@
     export default {
         async asyncData({route}) {
             try {
-                const content = (await import(`../data/blog/${route.params.slug}.md`)).default;
+                const content = (await import(`../data/blog/${route.params.slug}.md`)).default
+                    .replace(/<table>/g, '<div class="table-responsive"><table class="table table-striped small">')
+                    .replace(/<\/table>/g, '</table></div>')
+                ;
                 const titleMatch = content.match('<h1[^>]*>([^<]+)</h1>');
                 const title = titleMatch ? titleMatch[1] : null;
                 const imgMatch = content.match('<img src="([^"]+)"[^>]*>');

@@ -495,6 +495,9 @@ faq:
                     i silny poziom zgeneryzowania gramatyki i słownictwa
                     nie jest łatwo „narzucić” konkrente formy, nawet gdybyśmy chciały.
                     Zanim wytworzą się uniwersalne, niebinarne rozwiązania - musimy sobie jakoś z tym poradzić.
+                - >
+                    Kolektyw Rada Języka Neutralnego co roku organizuje {/spis=Niebinarny Spis Powszechny},
+                    by zbadać trendy niebinarnego języka i zidentyfikować, które formy zyskują z czasem na popularności.
         to-sie-nie-uda:
             question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
             answer:
@@ -956,9 +959,9 @@ profile:
 
 census:
     header: 'Spis'
-    headerLong: 'Niebinarny spis powszechny'
+    headerLong: 'Niebinarny Spis Powszechny'
     banner: >
-        Trwa „Niebinarny spis powszechny”!
+        Trwa „Niebinarny Spis Powszechny”!
         Jeśli jesteś osobą niebinarną i chcesz nam pomóc zbadać, jakiego języka używamy by się wyrażać,
         {/spis=kliknij tutaj, by wypełnić formularz}.
     description:
@@ -968,20 +971,22 @@ census:
             Jakimi etykietkami się opisujemy?
             Jak te trendy zmieniają się w czasie?
         - >
-            To super, bo nas też! Dlatego chcemy co roku przeprowadzać niebinarny spis powszechny, w którym to zbadamy.
+            To super, bo nas też! Dlatego chcemy co roku przeprowadzać Niebinarny Spis Powszechny, w którym to zbadamy.
             Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
         - >
             Jeśli swoją płeć opisujesz jako „kobieta – zawsze i wyłącznie” albo „mężczyzna – zawsze i wyłącznie”,
             to badanie nie jest skierowane do Ciebie (ale docenimy jeśli podzielisz się linkiem ze znajomymi!).
             Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
+        #- >
+        #    Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
+        #    W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
+        #    By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
         - >
-            Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
-            W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
-            By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
+            Następny Spis odbędzie się w <strong>lutym 2022</strong>.
         - >
-            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>},
-            który trwa do 10 marca. Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>}.
+            Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
