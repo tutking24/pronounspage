@@ -938,7 +938,9 @@ profile:
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
     flags: 'Flagi'
-    flagsInfo: 'Przeciągnij swoje pride''owe flagi do poniższej ramki.'
+    flagsInfo: >
+        Przeciągnij swoje pride''owe flagi do poniższej ramki.
+        Więcej informacji o etykietkach znajdziesz w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
     links: 'Linki'
     column: 'Kolumna'
 
