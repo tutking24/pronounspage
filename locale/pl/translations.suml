@@ -30,11 +30,11 @@ home:
             {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
         - >
             Formy neutralne płciowo – jak np. „{/on/a=moi drodzy/drogie}”,
-            „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp. –
+            „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp. –
             są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
         - >
             Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
-            „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
+            „moje {/slowniki/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
             „proszę przyjść do szkoły z {rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
             „{/oni=dzwonili} z gazowni”,
@@ -393,15 +393,15 @@ faq:
                     W zależności od miejsca i czasu bycie „kobietą” i „mężczyzną” może oznaczać radykalnie różne
                     prawa, obowiązki, zasady… W Europie mężczyźni nosili buty na obcasie i rajtuzy,
                     rdzenni mieszkańcy Ameryki Północnej od wieków rozróżniają trzecią płeć
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, itd. itd.
+                    {/slowniki/terminologia#Two Spirit=(two-spirit)}, itd. itd.
                 - >
                     Niebinarność to zbiorczy termin („umbrella term”) opisujący doświaczenie osób,
                     które nie wpisują się w binarny podział kobieta/mężczyzna.
-                    Obejmuje na przykład osoby {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demidziewczęta},
-                    {https://gender.wikia.org/wiki/Demiboy=demichłopców},
-                    i {https://gender.wikia.org/wiki/Non-binary=wiele innych tożsamości}.
+                    Obejmuje na przykład osoby {/slowniki/terminologia#Apłciowość=agender},
+                    {/slowniki/genderfluid=genderfluid},
+                    {/slowniki/terminologia#demidziewczę=demidziewczęta},
+                    {/slowniki/terminologia#demichłopię=demichłopców},
+                    i {/slowniki/terminologia#non-binary=wiele innych tożsamości}.
                 - >
                     Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
                     Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
@@ -728,7 +728,7 @@ faq:
             answer:
                 - >
                     Wiele form, które {/=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
-                    „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspanialx}”, itp.
+                    „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp.
         zmiana:
             question: 'Czy mogę zmienić swoje zaimki?'
             answer:
