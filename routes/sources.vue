@@ -14,11 +14,11 @@
         </section>
 
         <section v-if="config.sources.submit">
-            <button v-if="!submitShown" class="btn btn-outline-success w-100" @click="submitShown = true">
+            <SourceSubmitForm v-show="submitShown" ref="form"/>
+            <button v-show="!submitShown" class="btn btn-outline-success w-100" @click="submitShown = true">
                 <Icon v="plus-circle"/>
                 <T>sources.submit.header</T>
             </button>
-            <SourceSubmitForm v-else ref="form"/>
         </section>
 
         <section>
@@ -182,7 +182,10 @@
             },
             edit(source) {
                 this.submitShown = true;
-                this.$nextTick(() => this.$refs.form.edit(source));
+                this.$nextTick(() => {
+                    console.log(this.$refs);
+                    this.$refs.form.edit(source)
+                });
             }
         },
         watch: {

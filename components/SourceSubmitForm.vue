@@ -48,6 +48,7 @@
                 </div>
                 <div class="form-group">
                     <label for="fragments"><T>sources.submit.fragments</T></label>
+                    <p class="small text-muted mb-0"><T>sources.submit.fragmentsInfo</T></p>
                     <ListInput v-model="form.fragments" v-slot="s" id="fragments">
                         <textarea v-model="s.val" class="form-control" rows="3" @keyup="s.update(s.val)" required></textarea>
                     </ListInput>

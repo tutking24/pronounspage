@@ -188,6 +188,7 @@ sources:
         extra: 'Dodatkowe dane (tłumaczenie, czasopismo, …)'
         year: 'Rok wydania (polskiej wersji)'
         fragments: 'Fragmenty'
+        fragmentsInfo: 'Możesz zaznaczyć istotne słowa w następujący sposób: „Wtedy \[\[malarzu]] \[\[zauważyłu]], że wcale nie chce \[\[nu]] się pić.”'
         comment: 'Komentarz'
         link: 'Link do treści'
         thanks: 'Dziękujemy za zgłoszenie!'
