@@ -14,7 +14,7 @@
                         <T>pronouns.alt.header</T>
                         <small>({{ option.replace(/&/g, glue) }})</small>
                     </span>
-                    <span v-else>
+                    <span v-else-if="option">
                         {{ getPronoun(pronouns, option).description }}
                         <small>({{ getPronoun(pronouns, option).name(glue) }})</small>
                     </span>
@@ -32,7 +32,7 @@
 
     export default {
         props: {
-            pronoun: { required: true },
+            pronoun: { },
             sources: { required: true },
         },
         data() {

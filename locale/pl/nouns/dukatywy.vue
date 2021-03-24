@@ -93,11 +93,15 @@
                 </div>
             </div>
         </details>
+
+        <section v-if="sources && Object.keys(sources).length">
+            <Literature :sources="sources"/>
+        </section>
     </div>
 </template>
 
 <script>
-    import {Noun, NounDeclension} from "../../../src/classes";
+    import {Noun, NounDeclension, SourceLibrary} from "../../../src/classes";
     import {head} from "../../../src/helpers";
     import NounsNav from "./NounsNav";
 
@@ -148,7 +152,13 @@
                     Msc_pl: 'tumych kosmicznumych twórcych',
                     W_pl: 'teny kosmiczny twórcy',
                 }),
+                sources: undefined,
             }
+        },
+        async mounted() {
+            this.sources = {
+                '': new SourceLibrary(await this.$axios.$get(`/sources?pronoun=dukatywy`)).getForPronoun('dukatywy'),
+            };
         },
         head() {
             return head({

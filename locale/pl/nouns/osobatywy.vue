@@ -66,11 +66,15 @@
                 </table>
             </div>
         </details>
+
+        <section v-if="sources && Object.keys(sources).length">
+            <Literature :sources="sources"/>
+        </section>
     </div>
 </template>
 
 <script>
-    import {Noun} from "../../../src/classes";
+    import {Noun, SourceLibrary} from "../../../src/classes";
     import {head} from "../../../src/helpers";
     import NounsNav from "./NounsNav";
 
@@ -105,7 +109,13 @@
                         mascPl: 'prezesi', femPl: 'prezeski', neutrPl: 'osoby prezesujące',
                     }),
                 ],
+                sources: undefined,
             }
+        },
+        async mounted() {
+            this.sources = {
+                '': new SourceLibrary(await this.$axios.$get(`/sources?pronoun=osobatywy`)).getForPronoun('osobatywy'),
+            };
         },
         head() {
             return head({

@@ -49,7 +49,7 @@
                 </a>
             </li>
             <li class="list-inline-item">
-                <span v-for="p in source.pronouns" :class="['badge', pronounLibrary.isCanonical(p) ? 'bg-success' : 'bg-danger', 'm-1']">
+                <span v-for="p in source.pronouns" :class="['badge', pronounLibrary.isCanonical(p) || (config.sources.extraTypes || []).includes(p) ? 'bg-success' : 'bg-danger', 'm-1']">
                     <Spelling :text="p"/>
                 </span>
             </li>

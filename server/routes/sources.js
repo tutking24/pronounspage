@@ -47,13 +47,17 @@ const linkOtherVersions = async (req, sources) => {
 const router = Router();
 
 router.get('/sources', async (req, res) => {
-    return res.json(await linkOtherVersions(req, await req.db.all(SQL`
+    let sql = SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale = ${req.config.locale}
         AND s.deleted = 0
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
-    `)));
+    `;
+    if (req.query.pronoun) {
+        sql.append(SQL`AND s.pronouns LIKE ${'%' + req.query.pronoun + '%'}`)
+    }
+    return res.json(await linkOtherVersions(req, await req.db.all(sql)));
 });
 
 router.get('/sources/:id', async (req, res) => {
