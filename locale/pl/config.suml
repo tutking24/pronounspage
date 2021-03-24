@@ -397,7 +397,16 @@ links:
                 ale przecież mamy rodzaj nijaki w odniesieniu do chłopięcia, czy dziewczęcia.
                 Mówimy "to" dziecko, "to" dziewczę" i to jest rodzaj nijaki.
                 Dlatego rodzaj nijaki może być teoretycznie zastosowany w odniesieniu do osób, które są niebinarne.
-
+        -
+            icon: 'newspaper'
+            url: 'https://oko.press/mlodzi-coraz-czesciej-identyfikuja-sie-jako-lgbt-to-rewolucja-z-szacunku-i-empatii/'
+            headline: 'Młodzi coraz częściej identyfikują się jako LGBT+. To rewolucja z szacunku i empatii'
+            extra: ' – <strong>OKO.press</strong>'
+            quote: >
+                „W tym sensie queer jest dla mnie przede wszystkim kulturą życzliwości.”
+                A pierwszą jej praktykę stanowi pytanie o czyjeś zaimki \[link do zaimki.pl].
+                To mały, ale wyraźny sygnał, że nie chcę powodować czyjegoś cierpienia,
+                nawet jeśli nie wszystko, co o sobie mówi, jest dla mnie zrozumiałe.
     socials:
         -
             icon: 'twitter'
