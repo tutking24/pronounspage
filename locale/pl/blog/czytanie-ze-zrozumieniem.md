@@ -39,7 +39,7 @@ Nikto się na lewicy nie „gubi w meandrach” rewolucji językowej.
 Nie sądzę też, by ktokolwiek uważało feminatywy za „największy problem lewicy”.
 Jak już, to są częścią _rozwiązania_ problemu
 [męskiej dominacji językowej](https://pl.wikipedia.org/wiki/M%C4%99ska_dominacja_j%C4%99zykowa).
-A sugerowanie, że lewica dba głównie o język
+A sugerowanie, że największym problemem lewicy jest język
 (podczas gdy walczymy też z dyskryminacją, nienawiścią, ubóstwem, nierównościami, i całą masą innych problemów)
 wygląda na zamierzoną manipulację.
 
@@ -54,7 +54,7 @@ Na stronie głównej (więc nawet nie musiałaby zaglądać głęboko w podstron
 przedstawiamy zdecydowanie więcej opcji niż tylko [dukaizmy](/onu).
 Żadna z nich nie jest _normą_ wśród osób niebinarnych, stąd też taka ich mnogość.
 Nie twierdzimy autorytatywnie, że „należy korzystać z form postpłciowych” – a wręcz przeciwnie:
-informujemy wyłącznie jakie istnieją pomysły na neutralną płciowo polszczyznę,
+informujemy wyłącznie, jakie istnieją pomysły na neutralną płciowo polszczyznę,
 zachęcamy do dyskusji, eksperymentów i odkrywania swojej tożsamości.
 
 [Zbadałośmy nawet](/blog/spis-2021), jakie formy są obecnie najpopularniejsze
@@ -71,7 +71,7 @@ bo czują się bliżej jednej z binarnych płci, albo z całej masy innych powod
 Czemu taka „jasna”? Czy nasz malutki kolektyw jest już tak szeroko znany,
 że każda osoba słysząca newsa o neutralnym języku myśli sobie
 „ech, pewnie ta Rada Języka Neutralnego znowu coś knuje”?
-A może nasza nazwa jest za mało kreatywna i zbyt oczywista?
+A może autorka uważa naszą nazwę za mało kreatywną i zbyt oczywistą?
 Sorry, lubimy ją, nazwa zostaje 😜
 
 > Podpowiadam jednak lewicowej rewolucji kolejny problem.
@@ -91,16 +91,16 @@ Czy naprawdę potrzebujemy, by ktoś nam łaskawie „podpowiadał kolejne probl
 
 Artykuł kończy się następująco:
 
-> Nie wie już czy się śmiać czy płakać.
+> Nie wie[m] już czy się śmiać czy płakać.
 > Obawiam się, że to lewicowe szaleństwo nie ma końca lub gdzieś tam przy granicach absurdu
 > będzie musiała czyhać policja myśli, bo inaczej nie da się nad tym zapanować.
 
-[Argumentum ad równia pochyła](https://yourlogicalfallacyis.com/slippery-slope)
+Argumentum ad [równia pochyła](https://yourlogicalfallacyis.com/slippery-slope)
 i [bicie chochoła](https://yourlogicalfallacyis.com/strawman)
 zawsze na propsie, no nie?
 
 Bo wiadomo, że jak ktoś mówi „nie jestem ani mężczyzną, ani kobietą, więc proszę nie zwracaj się do mnie ani formami męskimi, ani żeńskimi”,
-to nieuchronnie prowadzi do utworzenia policji myśli!
+to nieuchronnie prowadzi do… utworzenia policji myśli!
 Podchodzenie do ludzi z życzliwością najwyrażniej panią redaktorkę przeraża i kojarzy się z Orwellem. W sumie to przykre…
 
 Aż kusi autorce „podpowiedzieć kolejny problem” dla prawicy.
