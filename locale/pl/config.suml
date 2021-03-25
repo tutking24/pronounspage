@@ -408,6 +408,16 @@ links:
                 A pierwszą jej praktykę stanowi pytanie o czyjeś zaimki \[link do zaimki.pl].
                 To mały, ale wyraźny sygnał, że nie chcę powodować czyjegoś cierpienia,
                 nawet jeśli nie wszystko, co o sobie mówi, jest dla mnie zrozumiałe.
+        -
+            icon: 'newspaper'
+            url: 'https://wpolityce.pl/polityka/543316-feminatywy-sa-juz-passe-problemem-lewicy-sa-neutratywy'
+            headline: '"Tęsknię za jenu śmiechem", czyli o zmaganiach lewicowej rewolucji z gramatyką postpłciową'
+            extra: ' – <strong>wPolityce.pl</strong>'
+            quote: >
+                Nie wie już czy się śmiać czy płakać.
+                Obawiam się, że to lewicowe szaleństwo nie ma końca lub gdzieś tam przy granicach absurdu
+                będzie musiała czyhać policja myśli, bo inaczej nie da się nad tym zapanować.
+
     socials:
         -
             icon: 'twitter'
