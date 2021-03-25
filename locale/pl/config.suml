@@ -578,6 +578,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        czytanie-ze-zrozumieniem: 'Czytanie ze zrozumieniem'
         spis-2021: 'Niebinarny Spis Powszechny 2021 – wnioski'
         czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
         inkluzywne-liczebniki: 'Inkluzywne liczebniki'
