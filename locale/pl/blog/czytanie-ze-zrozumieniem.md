@@ -2,7 +2,7 @@
 
 <small>13.02.2021 | [@andrea](/@andrea)</small>
 
-![](/img/łosiewicz-notka.png)
+![](/img/wpolityce.png)
 
 Doceniamy każdą obecność tematu języka neutralnego płciowo w mediach,
 nawet jeśli są to media prawicowe tworzące paszkwile na nasz temat.
@@ -34,6 +34,8 @@ Trzeba bardzo dużo złej woli, by udać, że widzi się konflikt między femina
 Oba są głównie przeznaczone dla innych grup osób, i wcale się ze sobą nie gryzą.
 Tak samo jak nie gryzą się samej pani dziennikarce maskulatywy z feminatywami.
 W swojej notce autorskiej użyła i jednych („autor”, „zastępca”) i drugich („współautorka”, „wiceszefowa”, „reporterka”).
+
+![](/img/łosiewicz-notka.png)
 
 Nikto się na lewicy nie „gubi w meandrach” rewolucji językowej.
 Nie sądzę też, by ktokolwiek uważało feminatywy za „największy problem lewicy”.
