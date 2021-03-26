@@ -133,7 +133,7 @@
                                     <input v-model="selectedPronoun.description"
                                            class="form-control form-input p-0 form-control-sm"
                                            :size="selectedPronoun.description.length + 3"
-                                           maxlength="48"
+                                           maxlength="64"
                                     />
                                 </p>
                             </div>

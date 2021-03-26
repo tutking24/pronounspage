@@ -441,6 +441,8 @@ export class Pronoun {
             }
         }
 
+        console.log(data);
+
         if (config.pronouns.plurals) {
             extraFields += 1;
             if (![0, 1].includes(parseInt(data[MORPHEMES.length]))) {
@@ -460,7 +462,7 @@ export class Pronoun {
 
         if (data.length !== MORPHEMES.length + extraFields
             || data[0].length === 0
-            || data[data.length - 1].length > 48
+            || data[data.length - 1].length > 64
             || data.slice(1, data.length - extraFields).filter(s => s.length > 24).length
         ) {
             return null;
