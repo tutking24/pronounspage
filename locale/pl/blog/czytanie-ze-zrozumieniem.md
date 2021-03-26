@@ -76,6 +76,9 @@ Czemu taka „jasna”? Czy nasz malutki kolektyw jest już tak szeroko znany,
 A może autorka uważa naszą nazwę za mało kreatywną i zbyt oczywistą?
 Sorry, lubimy ją, nazwa zostaje 😜
 
+Na stronie podajemy nasz skład osobowy, imiona, nazwiska, zaimki, profile społecznościowe, itp.
+Nie kryjemy, kto za tym stoi 😉
+
 > Podpowiadam jednak lewicowej rewolucji kolejny problem.
 > Trzeba teraz stworzyć całą etykietę ustalania, jak osoba,
 > do której chcemy się zwrócić się identyfikuje.
@@ -107,4 +110,5 @@ Podchodzenie do ludzi z życzliwością najwyrażniej panią redaktorkę przera�
 
 Aż kusi autorce „podpowiedzieć kolejny problem” dla prawicy.
 Strach przed policją myśli to jeszcze nic!
-Trzeba by się zacząć bać, że neutratywy doprowadzą do upadku cywilizacji łacińskiej, a co! 😂
+Trzeba by się zacząć bać, że neutratywy doprowadzą do upadku cywilizacji łacińskiej,
+krowy przestaną się nieść, a kurom mleko skiśnie, a co! 😂
