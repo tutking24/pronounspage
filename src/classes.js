@@ -297,11 +297,16 @@ export class Pronoun {
     nameOptions() {
         const options = new Set();
         const optionsN = this.morphemes[MORPHEMES[0]].split('&');
-        const optionsG = this.morphemes[MORPHEMES[1]] === this.morphemes[MORPHEMES[0]] && MORPHEMES.length > 2 && !config.pronouns.threeForms
-            ? this.morphemes[MORPHEMES[2]].split('&')
-            : this.morphemes[MORPHEMES[1]].split('&');
+        const optionsG = this.morphemes[MORPHEMES[1]].split('&');
+        const optionsGAlt = MORPHEMES.length > 2 ? this.morphemes[MORPHEMES[2]].split('&') : [];
+
         for (let i in optionsN) {
-            let nameOption = optionsN[i] + '/' + optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
+            let optionN = optionsN[i];
+            let optionG = optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
+            if (optionN === optionG && optionsGAlt.length && !config.pronouns.threeForms) {
+                optionG = optionsGAlt[i < optionsGAlt.length - 1 ? i : optionsGAlt.length - 1];
+            }
+            let nameOption = optionN + '/' + optionG;
             if (config.pronouns.threeForms) {
                 nameOption += '/' + this.morphemes[MORPHEMES[2]].split('&')[i];
             } else if (this.thirdForm) {
