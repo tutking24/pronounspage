@@ -18,24 +18,27 @@
                     <Icon v="users"/>
                     <T>footer.links</T>:
                 </p>
-                <div class="mb-3">
-                    <SquareButton
-                            v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
-                            :link="link.url"
-                            :aria-label="link.icon"
-                    >
-                        <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                    </SquareButton>
-                    <br v-show="config.links.socials.length > 2"/>
-                    <SquareButton link="https://avris.it" aria-label="avris.it">
-                        <img src="~assets/avris.svg" alt="Avris"/>
-                    </SquareButton>
-                    <SquareButton v-for="s in config.support.links" :key="s.url" :link="s.url" :aria-label="s.headline">
-                        <Icon :v="s.icon" :set="s.iconSet || 'l'"/>
-                    </SquareButton>
-                    <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
-                        <Icon v="gitlab" set="b"/>
-                    </SquareButton>
+                <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row']">
+                    <span>
+                        <SquareButton
+                                v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
+                                :link="link.url"
+                                :aria-label="link.icon"
+                        >
+                            <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                        </SquareButton>
+                    </span>
+                    <span>
+                        <SquareButton link="https://avris.it" aria-label="avris.it">
+                            <img src="~assets/avris.svg" alt="Avris"/>
+                        </SquareButton>
+                        <SquareButton v-for="s in config.support.links" :key="s.url" :link="s.url" :aria-label="s.headline">
+                            <Icon :v="s.icon" :set="s.iconSet || 'l'"/>
+                        </SquareButton>
+                        <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
+                            <Icon v="gitlab" set="b"/>
+                        </SquareButton>
+                    </span>
                 </div>
                 <ul v-if="config.user.enabled" class="list-inline small">
                     <li class="list-inline-item">
