@@ -460,7 +460,11 @@ links:
             url: 'https://whosome.pl/redakcja/'
             headline: 'Whosome'
             extra: ' – portal poświęcony Doctor Who i popkulturze; ma politykę umieszczania zaimków w bio.'
-
+        -
+            icon: 'user-friends'
+            url: 'https://www.facebook.com/centrum.rownik/posts/158108032840650'
+            headline: 'Centrum Równik'
+            extra: ' – rozdaje przypinki z zaimkami, również nienormatywnymi.'
 
 people:
     enabled: false
