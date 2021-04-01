@@ -13,7 +13,7 @@
             <ul>
                 <li v-for="([method, path, queryString], endpoint) in group.endpoints" class="my-3">
                     <p>
-                        <span class="badge bg-primary">{{method}}</span>
+                        <span class="badge bg-primary text-white">{{method}}</span>
                         <code>{{path}}</code>
                         <a v-for="example in config.api.examples[endpoint]" :href="$base + example" class="badge bg-light text-dark border mx-1" target="_blank" rel="noopener">
                             <Icon v="cog"/>

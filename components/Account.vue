@@ -29,7 +29,7 @@
                         <ImageUploader small @uploaded="uploaded"/>
                     </div>
                     <p v-if="$isGranted('panel') || $isGranted('users')">
-                        <nuxt-link to="/admin" class="badge bg-primary"><T>user.account.admin</T></nuxt-link>
+                        <nuxt-link to="/admin" class="badge bg-primary text-white"><T>user.account.admin</T></nuxt-link>
                     </p>
                 </div>
                 <div class="mx-2 flex-grow-1">

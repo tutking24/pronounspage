@@ -54,7 +54,7 @@
                 </span>
             </li>
             <li class="list-inline-item" v-if="source.key">
-                <span class="badge bg-primary">
+                <span class="badge bg-primary text-white">
                     <T>sources.submit.key</T>: {{source.key}}
                 </span>
             </li>

@@ -48,7 +48,7 @@
 
                     <ul class="list-inline">
                         <li v-for="category in s.el.categories" class="list-inline-item">
-                            <span class="badge bg-primary">
+                            <span class="badge bg-primary text-white">
                                 {{category}}
                             </span>
                         </li>
@@ -62,7 +62,7 @@
 
                         <ul class="list-inline">
                             <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
-                            <span class="badge bg-primary">
+                            <span class="badge bg-primary text-white">
                                 {{category}}
                             </span>
                             </li>

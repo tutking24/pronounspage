@@ -37,7 +37,7 @@
                         – {{s.el.definition}}
                         <template v-if="s.el.category">
                             <br/>
-                            <span class="badge bg-primary">
+                            <span class="badge bg-primary text-white">
                                 {{s.el.category}}
                             </span>
                         </template>
@@ -57,7 +57,7 @@
                             – {{s.el.definition}}
                             <template v-if="s.el.category">
                                 <br/>
-                                <span class="badge bg-primary">
+                                <span class="badge bg-primary text-white">
                                 {{s.el.category}}
                             </span>
                             </template>

@@ -12,7 +12,7 @@
     </form>
     <ul v-else class="list-unstyled">
         <li v-for="role in user.roles.split('|')">
-            <span class="badge bg-primary">{{role}}</span>
+            <span class="badge bg-primary text-white">{{role}}</span>
         </li>
     </ul>
 </template>
