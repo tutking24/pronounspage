@@ -1,11 +1,16 @@
 <template>
-    <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}#${link.toLowerCase()}`" :title="alt">
-        <img :src="img" alt="" class="rounded"/>
-        <Spelling :text="name"/>
-    </a>
-    <span v-else :title="alt">
-        <img :src="img" alt="" class="rounded"/>
-        <Spelling :text="name"/>
+    <span class="flag-wrapper">
+        <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}#${link.toLowerCase()}`" :title="alt">
+            <img :src="img" alt="" class="flag-mini rounded"/>
+            <Spelling :text="name"/>
+        </a>
+        <span v-else :title="alt">
+            <img :src="img" alt="" class="flag-mini rounded"/>
+            <Spelling :text="name"/>
+        </span>
+        <span class="flag-preview bg-white rouded p-2 border">
+            <img :src="img" alt="" class="rounded"/>
+        </span>
     </span>
 </template>
 
@@ -39,7 +44,25 @@
 </script>
 
 <style lang="scss" scoped>
-    img {
+    .flag-mini {
         height: 1rem;
+    }
+
+    .flag-wrapper {
+        position: relative;
+
+        .flag-preview {
+            position: absolute;
+            top: 1.5em;
+            left: 0;
+            z-index: 999;
+            display: none;
+        }
+
+        &:hover {
+            .flag-preview {
+                display: block;
+            }
+        }
     }
 </style>
