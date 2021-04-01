@@ -6,7 +6,7 @@ export default {
             }
 
             const anchor = decodeURIComponent(window.location.hash.substr(1));
-            this.$nextTick(_ => {
+            setTimeout(_ => {
                 const $anchor = document.getElementById(anchor);
                 if (checkAnchor && $anchor) {
                     $anchor.scrollIntoView();
@@ -15,7 +15,7 @@ export default {
                 } else if (anchor.startsWith(namespace + '/')) {
                     callback(anchor.substring(namespace.length + 1));
                 }
-            });
+            }, 500);
         },
         setHash(namespace, value) {
             if (!process.client) {
