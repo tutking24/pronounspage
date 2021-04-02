@@ -153,7 +153,7 @@ export default {
     },
     serverMiddleware: ['~/server/index.js'],
     axios: {
-        baseURL: process.env.BASE_URL + '/api',
+        baseURL: '/api',
     },
     router: {
         extendRoutes(routes, resolve) {
