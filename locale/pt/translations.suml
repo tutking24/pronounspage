@@ -91,7 +91,7 @@ sources:
         fragments: 'Fragmentos'
         comment: 'Comentário'
         link: 'Link para o conteúdo'
-        thanks: 'Obrigadx pela contribuição!'
+        thanks: 'Obrigade pela contribuição!'
         another: 'Enviar outro'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
         key: 'Key'
@@ -129,7 +129,7 @@ nouns:
     submit:
         action: 'Enviar'
         actionLong: 'Enviar uma palavra'
-        thanks: 'Obrigadx pela contribuição!'
+        thanks: 'Obrigade pela contribuição!'
         another: 'Enviar outra'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
 
