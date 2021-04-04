@@ -6,7 +6,7 @@
         <Recommended/>
         <Socials/>
         <LanguageVersions/>
-
+        <Support/>
         <section>
             <Share :title="$t('links.headerLong')"/>
         </section>
