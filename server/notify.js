@@ -2,6 +2,25 @@ const dbConnection = require('./db');
 require('dotenv').config({ path:__dirname + '/../.env' });
 const mailer = require('../src/mailer');
 
+// TODO duplication...
+const isGranted = (user, locale, area) => {
+    if (area === '*') {
+        return user.roles.split('|').includes('*');
+    }
+
+    for (let permission of user.roles.split('|')) {
+        if (permission === '*') {
+            return true;
+        }
+        const [ permissionLocale, permissionArea ] = permission.split('-');
+        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 async function notify() {
     const db = await dbConnection();
 
@@ -15,23 +34,35 @@ async function notify() {
         return;
     }
 
+    const admins = await db.all(`SELECT email, roles FROM users WHERE roles != ''`);
+
     const awaitingModerationGrouped = {}
     let count = 0;
     for (let m of awaitingModeration) {
-        awaitingModerationGrouped[m.type + '-' + m.locale] = m.c;
+        for (let admin of admins) {
+            if (isGranted(admin, m.locale, m.type)) {
+                if (awaitingModerationGrouped[admin.email] === undefined) {
+                    awaitingModerationGrouped[admin.email] = {};
+                }
+                awaitingModerationGrouped[admin.email][m.locale + '-' + m.type] = m.c;
+            }
+        }
         count += m.c;
     }
 
-    console.log('Entries awaiting moderation: ', awaitingModerationGrouped);
+    console.log('Entries awaiting moderation: ', count);
 
-    const admins = await db.all(`SELECT email FROM users WHERE roles = 'admin'`);
+    for (let email in awaitingModerationGrouped) {
+        if (!awaitingModerationGrouped.hasOwnProperty(email)) {
+            continue;
+        }
+        const message = awaitingModerationGrouped[email];
+        console.log('Sending email:', email, message);
 
-    for (let { email } of admins) {
-        console.log('Sending email to ' + email)
         mailer(
             email,
-            '[Pronouns.page] Entries awaiting moderation: ' + count,
-            'Entries awaiting moderation: \n' + JSON.stringify(awaitingModerationGrouped, null, 4),
+            '[Pronouns.page] There are entries awaiting moderation',
+            'Entries awaiting moderation: \n' + JSON.stringify(message, null, 4),
         );
     }
 }
