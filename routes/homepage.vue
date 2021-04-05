@@ -7,6 +7,14 @@
 
         <section>
             <T>home.about</T>
+
+            <div v-if="!user && $t('profile.banner', {}, false)" class="alert alert-info">
+                <nuxt-link to="/account" class="float-end btn btn-primary m-2 me-0">
+                    <Icon v="id-card"/>
+                    <Spelling :text="$t('profile.bannerButton')"/>
+                </nuxt-link>
+                <LinkedText :text="$t('profile.banner')"/>
+            </div>
         </section>
 
         <section>
@@ -222,6 +230,7 @@
     import { ExamplePart } from "~/src/classes";
     import Compressor from "../src/compressor";
     import MORPHEMES from '../data/pronouns/morphemes';
+    import {mapState} from "vuex";
 
     export default {
         data() {
@@ -242,6 +251,9 @@
             }
         },
         computed: {
+            ...mapState([
+                'user',
+            ]),
             usedBase() {
                 const name = this.selectedPronoun.name(this.glue);
                 for (let key in this.pronouns) {

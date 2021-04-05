@@ -414,6 +414,12 @@ profile:
         jokingly: 'Jokingly'
         meh: 'Okay'
         no: 'Nope'
+    banner: >
+        You can also use our website to create a card, {/@andrea=like this one},
+        containing your names, pronouns, pride flags, liked words, etc.
+        Then you can link to it in your bio or email footer.
+        Just create an account {/account=here}.
+    bannerButton: 'Create a card'
 
 share: 'Share'
 
