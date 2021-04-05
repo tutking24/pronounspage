@@ -9,7 +9,7 @@
             <T>home.about</T>
 
             <div v-if="!user && $t('profile.banner', {}, false)" class="alert alert-info">
-                <nuxt-link to="/account" class="float-end btn btn-primary m-2 me-0">
+                <nuxt-link :to="'/' + config.user.route" class="float-end btn btn-primary m-2 me-0">
                     <Icon v="id-card"/>
                     <Spelling :text="$t('profile.bannerButton')"/>
                 </nuxt-link>
