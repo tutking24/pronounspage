@@ -96,7 +96,7 @@
                 </ButtonList>
             </div>
 
-            <details class="form-group border rounded" open>
+            <details class="form-group border rounded">
                 <summary class="px-3 py-2 small">
                     <T>profile.flagsCustom</T>
                 </summary>
