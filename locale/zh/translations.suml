@@ -371,6 +371,8 @@ profile:
     birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
+    flagsCustom: 'Upload custom flags'  # TODO
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: '鏈接'
     column: '列'
 
@@ -388,6 +390,14 @@ profile:
         jokingly: '諧謔'
         meh: 'OK'
         no: '不好'
+
+#    TODO
+#    banner: >
+#        You can also use our website to create a card, {/@andrea=like this one},
+#        containing your names, pronouns, pride flags, liked words, etc.
+#        Then you can link to it in your bio or email footer.
+#        Just create an account {/account=here}.
+#    bannerButton: 'Create a card'
 
 share: '這裡'
 

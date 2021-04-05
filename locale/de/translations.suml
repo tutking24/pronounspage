@@ -384,6 +384,8 @@ profile:
     birthdayInfo: 'Wir veröffentlichen nicht dein Geburtstag, sondern nur das errechnete Alter.'
     flags: 'Flaggen'
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
+    flagsCustom: 'Upload custom flags'  # TODO
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'Links'
     column: 'Spalte'
 
@@ -401,6 +403,14 @@ profile:
         jokingly: 'Scherzhaft'
         meh: 'Okay'
         no: 'Nope'
+
+#    TODO
+#    banner: >
+#        You can also use our website to create a card, {/@andrea=like this one},
+#        containing your names, pronouns, pride flags, liked words, etc.
+#        Then you can link to it in your bio or email footer.
+#        Just create an account {/account=here}.
+#    bannerButton: 'Create a card'
 
 share: 'Teilen'
 

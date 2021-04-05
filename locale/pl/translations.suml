@@ -767,19 +767,6 @@ faq:
                     niektóre lesbijki ze względów kulturowych i historycznych używają form męskich, itp.
                 - >
                     Mów po prostu „zaimki”. To prościej i sensowniej.
-        moja-flaga:
-            question: 'Mojej flagi nie ma w edytorze wizytówki'
-            answer:
-                - >
-                    Aby uniknąć potencjalnych wandalizmów
-                    (flaga helikopterów szturmowych, MAPów, TERFów, itp.),
-                    zdecydowałośmy się nie umożliwiać wgrywania własnych obrazków na stronę.
-                    Oferujemy natomiast wybór spośród dość bogatej listy co popularniejszych flag
-                    – niestety siłą rzeczy musi być to wybór subiektywny.
-                - >
-                    Możesz spróbować wybrać najbliższą pasującą flagę, z którą się identyfikujesz.
-                    No i zawsze w polu „opis” możesz wpisać, co tylko ci się podoba.
-
         a-moj-dziadek:
             question: 'Czy po to mój dziadek walczył na wojnie, by teraz ktoś mówił o sobie „ono”?'
             answer:
@@ -942,6 +929,8 @@ profile:
     flagsInfo: >
         Przeciągnij swoje pride''owe flagi do poniższej ramki.
         Więcej informacji o etykietkach znajdziesz w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+    flagsCustom: 'Dodaj inne flagi'
+    flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
     column: 'Kolumna'
 

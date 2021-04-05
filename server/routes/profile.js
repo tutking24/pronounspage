@@ -44,6 +44,7 @@ const fetchProfiles = async (db, username, self) => {
             age: calcAge(profile.birthday),
             links: JSON.parse(profile.links),
             flags: JSON.parse(profile.flags),
+            customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
             avatar: await avatar(db, profile),
             birthday: self ? profile.birthday : undefined,
@@ -67,9 +68,9 @@ router.post('/profile/save', async (req, res) => {
     }
 
     await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
-    await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, words, active, teamName, footerName, footerAreas)
+    await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
         VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
-                ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)},
+                ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted('users') ? req.body.teamName || null : ''},
                 ${req.isGranted('users') ? req.body.footerName || null : ''},

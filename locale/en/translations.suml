@@ -293,17 +293,6 @@ faq:
                     Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
                 - >
                     Simply say “pronouns”.
-        add-flags:
-            question: 'My flag is not in the editor. Can you add it?'
-            answer:
-                - >
-                    To avoid potential vandalisms (flags of attack helicopters, MAPs, TERFs, etc.)
-                    we've decided not to allow uploading your own pictures to the flags editor.
-                    But we do offer a choice from a pretty long list of more popular flags
-                    – unfortunately that requires us to make a subjective choice.
-                - >
-                    You can try using the closest matching flag you identify with instead.
-                    And in the “description” field you can just write anything you want.
 
 links:
     header: 'Links'
@@ -397,6 +386,8 @@ profile:
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     flags: 'Flags'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
+    flagsCustom: 'Upload custom flags'
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
     links: 'Links'
     column: 'Column'
 

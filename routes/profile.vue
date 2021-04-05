@@ -44,7 +44,17 @@
         <section v-if="profile.flags.length">
             <ul class="list-inline">
                 <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item pr-2">
-                    <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)" :alt="allFlags[flag]" :img="`/flags/${flag}.png`" :terms="terms"/>
+                    <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
+                          :alt="allFlags[flag]"
+                          :img="`/flags/${flag}.png`"
+                          :terms="terms"/>
+                </li>
+                <li v-for="(desc, flag) in profile.customFlags" class="list-inline-item pr-2">
+                    <Flag :name="desc"
+                          :alt="desc"
+                          :img="buildImageUrl(flag, 'flag')"
+                          :terms="terms"
+                          custom/>
                 </li>
             </ul>
         </section>

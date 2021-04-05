@@ -1,8 +1,8 @@
 <template>
-    <a :href="buildImageUrl(id, 'big')" target="_blank" rel="noopener" class="d-inline-block"
-       @click.prevent="$eventHub.$emit('lightbox', buildImageUrl(id, 'big'))"
+    <a :href="buildImageUrl(id, bigSize)" target="_blank" rel="noopener" class="d-inline-block"
+       @click.prevent="$eventHub.$emit('lightbox', buildImageUrl(id, bigSize))"
     >
-        <img :src="buildImageUrl(id, 'thumb')" class="border rounded-lg"/>
+        <img :src="buildImageUrl(id, smallSize)" class="border rounded-lg" :style="`height: ${size}; width: auto;`"/>
     </a>
 </template>
 
@@ -10,11 +10,9 @@
     export default {
         props: {
             id: {required: true},
-        },
-        methods: {
-            getUrl(size) {
-                return `${process.env.BUCKET}/images/${this.id}-${size}.png`;
-            },
+            smallSize: {'default': 'thumb'},
+            bigSize: {'default': 'big'},
+            size: {'default': 'auto'}
         },
     }
 </script>

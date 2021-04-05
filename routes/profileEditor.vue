@@ -96,6 +96,15 @@
                 </ButtonList>
             </div>
 
+            <details class="form-group border rounded" open>
+                <summary class="px-3 py-2 small">
+                    <T>profile.flagsCustom</T>
+                </summary>
+                <div class="border-top">
+                    <ImageWidgetRich v-model="customFlags"/>
+                </div>
+            </details>
+
             <div class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
@@ -178,6 +187,7 @@
                         birthday: profile.birthday,
                         links: Object.keys(profile.links).length ? profile.links : [],
                         flags: profile.flags,
+                        customFlags: profile.customFlags,
                         words: profile.words.map(x => dictToList(x)),
                         teamName: profile.teamName,
                         footerName: profile.footerName,
@@ -198,6 +208,7 @@
                     birthday: profile.birthday,
                     links: Object.keys(profile.links).length ? profile.links : [],
                     flags: profile.flags.filter(f => !f.startsWith('-')),
+                    customFlags: profile.customFlags,
                     words: defaultWords,
                     teamName: profile.teamName,
                     footerName: profile.footerName,
@@ -212,6 +223,7 @@
                 birthday: null,
                 links: [],
                 flags: [],
+                customFlags: {},
                 words: defaultWords,
                 teamName: '',
                 footerName: '',
@@ -234,6 +246,7 @@
                     birthday: this.birthday,
                     links: [...this.links],
                     flags: [...this.flags],
+                    customFlags: {...this.customFlags},
                     words: this.words.map(x => listToDict(x)),
                     teamName: this.teamName,
                     footerName: this.footerName,

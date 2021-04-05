@@ -404,6 +404,8 @@ profile:
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     flags: 'פֿענער'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
+    flagsCustom: 'Upload custom flags'  # TODO
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'פֿאַרבינדונגען'
     column: 'Column'
 
@@ -421,6 +423,14 @@ profile:
         jokingly: 'אין אַ שפּאַס'
         meh: 'אָקײ'
         no: 'נײן'
+
+#    TODO
+#    banner: >
+#        You can also use our website to create a card, {/@andrea=like this one},
+#        containing your names, pronouns, pride flags, liked words, etc.
+#        Then you can link to it in your bio or email footer.
+#        Just create an account {/account=here}.
+#    bannerButton: 'Create a card'
 
 share: 'Share'
 
