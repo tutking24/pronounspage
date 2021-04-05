@@ -952,7 +952,7 @@ profile:
         Naszej strony możesz też użyć do stworzenia wizytówki, {/@andrea=takiej jak ta},
         zawierającej Twoje imiona, zaimki, flagi pride'owe, lubiane słowa, itp.
         Potem możesz do niej podlinkować w swoim bio czy stopce maila.
-        Wystarczy, że założysz konto {/account=tutaj}.
+        Wystarczy, że założysz konto {/konto=tutaj}.
     bannerButton: 'Stwórz wizytówkę'
 
 census:
