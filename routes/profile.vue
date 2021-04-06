@@ -113,9 +113,7 @@
 
         <Separator icon="heart"/>
 
-        <section>
-            <Support/>
-        </section>
+        <Support/>
     </div>
     <div v-else-if="Object.keys(profiles).length">
         <h2 class="text-nowrap mb-3">

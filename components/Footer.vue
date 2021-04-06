@@ -10,7 +10,7 @@
                 <Authors/>
 
                 <p>
-                    <T>footer.source</T>
+                    <T>footer.license</T>
                 </p>
             </div>
             <div class="text-center d-flex flex-column justify-content-center">

@@ -1,6 +1,6 @@
 <template>
-    <img v-if="v.endsWith('.svg')" :src="`/img/${v}`" :style="`height: ${size}em; width: 1.25em; display: inline;`" alt=""/>
-    <span v-else :class="['fa' + set, 'fa-' + v, 'fa-fw']" :style="`font-size: ${size}em`"></span>
+    <img v-if="icon.endsWith('.svg')" :src="`/img/${icon}`" :style="`height: ${size}em; width: ${size}em; display: inline;`" alt=""/>
+    <span v-else :class="['fa' + iconSet, 'fa-' + icon, 'fa-fw']" :style="`font-size: ${size}em`"></span>
 </template>
 
 <script>
@@ -9,6 +9,17 @@
             v: { required: true },
             set: { default: 'l' },
             size: { default: 1 },
-        }
+        },
+        computed: {
+            valueParts() {
+                return this.v.split(':');
+            },
+            icon() {
+                return this.valueParts[this.valueParts.length - 1];
+            },
+            iconSet() {
+                return this.valueParts.length > 1 ? this.valueParts[0] : this.set;
+            },
+        },
     }
 </script>
