@@ -174,6 +174,7 @@ export const sortByValue = (obj, reverse = false) => {
     return zip(sortedArray.sort((a, b) => reverse ? b[0] - a[0] : a[0] - b[0]), true);
 }
 
+// https://stackoverflow.com/a/6274381/3297012
 export const shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));

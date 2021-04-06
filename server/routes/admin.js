@@ -2,7 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
-import {buildDict, now, sortByValue} from "../../src/helpers";
+import {buildDict, now, shuffle, sortByValue} from "../../src/helpers";
 import locales from '../../src/locales';
 
 const router = Router();
@@ -41,15 +41,18 @@ router.get('/admin/list', async (req, res) => {
 });
 
 router.get('/admin/list/footer', async (req, res) => {
-    return res.json(await req.db.all(SQL`
+    const fromDb = await req.db.all(SQL`
         SELECT u.username, p.footerName, p.footerAreas, p.locale
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
         WHERE p.locale = ${req.config.locale}
           AND p.footerName IS NOT NULL AND p.footerName != ''
           AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
-        ORDER BY RANDOM()
-    `));
+    `);
+
+    const fromConfig = req.config.contact.authors || [];
+
+    return res.json(shuffle([...fromDb, ...fromConfig]));
 });
 
 router.get('/admin/users', async (req, res) => {

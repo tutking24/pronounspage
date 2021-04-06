@@ -6,24 +6,23 @@
                 <T>contact.team.name</T>
             </nuxt-link>
         </li>
-        <li v-for="author in config.contact.authors || []" class="mb-2">
-            <Icon :v="author.group ? 'users' : 'user'"/>
-            <a :href="author.link" target="_blank" rel="noopener">
-                <Spelling :text="author.name"/>
-            </a>
-        </li>
         <li v-if="authors === undefined">
             <Spinner/>
         </li>
         <template v-else>
             <li v-for="author in authors" class="mb-2">
-                <Icon v="user"/>
-                <Spelling :text="author.footerName"/>
-                <nuxt-link :to="`/@${author.username}`" class="badge bg-light text-dark border">
+                <Icon :v="author.group ? 'users' : 'user'"/>
+                <a v-if="author.link" :href="author.link" target="_blank" rel="noopener">
+                    <Spelling :text="author.footerName"/>
+                </a>
+                <span v-else>
+                    <Spelling :text="author.footerName"/>
+                </span>
+                <nuxt-link v-if="author.username" :to="`/@${author.username}`" class="badge bg-light text-dark border">
                     @{{author.username}}
                 </nuxt-link>
-                <br/>
-                <small>
+                <br v-if="author.footerAreas"/>
+                <small v-if="author.footerAreas">
                     {{author.footerAreas.replace(/,/g, ', ')}}
                 </small>
             </li>

@@ -91,9 +91,18 @@ contact:
             headline: 'contact@pronouns.page'
     authors:
         -
-            name: '台灣非二元酷兒浪子'
+            footerName: '台灣非二元酷兒浪子'
             link: 'https://www.facebook.com/TaiwanNonbinary/'
             group: true
+            footerAreas: '譯員'
+        -
+            footerName: 'Andrea'
+            username: 'andrea'
+            footerAreas: 'code'
+        -
+            footerName: '曹志豪 (離退休)'
+            username: 'zhihao'
+            footerAreas: '離退休譯員'
     team:
         enabled: true
         route: 'team'  # TODO
