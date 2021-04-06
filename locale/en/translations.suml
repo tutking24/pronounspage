@@ -293,6 +293,31 @@ faq:
                     Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
                 - >
                     Simply say “pronouns”.
+        flags:
+            question: 'Can you add this flag? Can you remove that flag?'
+            answer:
+                - >
+                    No.
+                - >
+                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
+                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
+                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
+                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
+                - >
+                    We did our best to select a list of flags that are the most popular
+                    and, to our best knowledge, unproblematic.
+                    We are not planning to extend or shrink that list.
+                - >
+                    If you don't like a flag, just don't use it.
+                    If your flag is missing, just upload it
+                    (it will be marked as user-generated to mitigate vandalisms).
+        custom-pronouns:
+            question: 'My pronouns aren''t listed'
+            answer:
+                - >
+                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
+                - >
+                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}
 
 links:
     header: 'Links'
