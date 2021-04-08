@@ -1,29 +1,29 @@
 title: 'fr.pronouns.page'
-description: 'Les exemples d'usage des pronoms personnels et langue neutral.'
+description: 'Les exemples d''usage des pronoms personnels et langue neutral.'
 
 home:
-    link: 'Page d'accueil'
+    link: 'Page d''accueil'
     header: 'Pronoms'
     headerLong: 'Une liste des pronoms'
     why: 'Pourquoi les pronoms sont importants?'
     about:
         - >
             Nous utilisons des pronoms tous les jours.
-			En fait, nous utilisons les pronoms plutôt les prénoms.
-			La plupart des gens utilisent «il» et «elle», mais pas tout est qu'il semble...
+            En fait, nous utilisons les pronoms plutôt les prénoms.
+            La plupart des gens utilisent «il» et «elle», mais pas tout est qu'il semble...
         - >
             Les personnes non binaires existent.
-			Certaines personnes ne «ressemblent» pas à un garçon ou à une fille.
-			Certaines personnes ne se sentent pas comme un garçon ou une fille.
-			Chaque personne a besoin une langue neutral.
+            Certaines personnes ne «ressemblent» pas à un garçon ou à une fille.
+            Certaines personnes ne se sentent pas comme un garçon ou une fille.
+            Chaque personne a besoin une langue neutral.
         - >
             Utiliser cet outil pour produire votre pronoms,
-			avec les exemples de phrases, et les partager.
+            avec les exemples de phrases, et les partager.
         - >
             Pourquoi les pronoms sont importants?
             Vous n'appelleriez pas Isabelle «Dominique» simplement parce que tu aimes plus ce nom,
-			ou parce que elle «ressemblent» à Dominique.
-			Si vous ne voulez pas être impoli, appeler personnes correctement.
+            ou parce que elle «ressemblent» à Dominique.
+            Si vous ne voulez pas être impoli, appeler personnes correctement.
     pronouns: 'List of popular pronouns'
     generator:
         header: 'Generator'
@@ -307,17 +307,17 @@ english: ~
 
 contact:
     header: 'Contact'
-    authors: 'Sites d'auteurs'
+    authors: 'Sites d''auteurs'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
-        description:  # TODO
+        name: 'The “Neutral Language Council” collective'
+        description:
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
                 are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
+        members: 'Current members'
+        blog: 'Blog'
+        upcoming: 'Upcoming language versions'
 
 support:
     header: 'Soutien'
@@ -397,7 +397,7 @@ profile:
     opinion:
         yes: 'Oui'
         jokingly: 'En plaisantant'
-        meh: 'D'accord'
+        meh: 'D''accord'
         no: 'Non'
 
 share: 'Partager'
@@ -415,12 +415,17 @@ crud:
     author: 'Créé par'
 
 footer:
-    source: 'Code source a {https://gitlab.com/Avris/Zaimki=published} sous la {https://mit.avris.it=MIT} license.'
+    # old version 'Code source a {https://gitlab.com/Avris/Zaimki=published} sous la {https://mit.avris.it=MIT} license.'
+    # TODO
+    license: >
+        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [b:mit.svg].<br/>
+        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de=CC BY-NC-SA 4.0}
+        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Contact, médias sociaux, soutien'
 
 notFound:
-    message: 'La page n'a pas été trouvée'
-    back: 'Retourner à la page d'accueil'
+    message: 'La page n''a pas été trouvée'
+    back: 'Retourner à la page d''accueil'
 
 authRequired:
     message: 'Vous devez être connecté pour visualiser cette page'
@@ -473,4 +478,93 @@ images:
         instructionShort: 'Télécharger'
 
 error:
-    generic: 'Quelque chose s'est rompu, essayez encore s''il vous plaît…'
+    generic: 'Quelque chose s''est rompu, essayez encore s''il vous plaît…'
+
+flags:
+    Abroromantic: 'Abroromantyczn{adjective_n}'
+    Abrosexual: 'Abroseksualn{adjective_n}'
+    Achillean: 'Achillejs{adjective_n_k}'
+    Alloromantic_Asexual: 'Alloromantyczn{adjective_n} aseksualn{adjective_n}'
+    Agender: 'Apłciow{adjective_n}'
+    Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
+    Androgyne: 'Androgynopłciow{adjective_n}'
+    Androsexual: 'Androseksualn{adjective_n}'
+    Aporagender: 'Aporapłciow{adjective_n}'
+    Archaeopronouns: 'Archeozaimki'
+    Aroace: 'Aro-as'
+    Aromantic: 'Aromantyczn{adjective_n}'
+    Aromantic_Allosexual: 'Aromantyczn{adjective_n} alloseksualn{adjective_n}'
+    Asexual: 'Aseksualn{adjective_n}'
+    Autigender: 'Autypłciow{adjective_n}'  # Autigenderow{adjective_n}
+    Bear: 'Misiek'
+    Bicurious: 'Bi-ciekaw{adjective_n}'
+    Bigender: 'Bipłciow{adjective_n}'  # Dwupłciow{adjective_n}
+    Biromantic: 'Biromantyczn{adjective_n}'
+    Bisexual: 'Biseksualn{adjective_n}'
+    Butch: 'Butch'
+    Ceteroromantic: 'Ceteroromantyczn{adjective_n}'
+    Ceterosexual: 'Ceteroseksualn{adjective_n}'
+    Cis_Ally: 'Cis osoba sojusznicza'
+    Demiboy: 'Demichłopię' # Demichłopak
+    Demigender: 'Demipłciow{adjective_n}'
+    Demigirl: 'Demidziewczę'  # demidziewczyna
+    Demiromantic: 'Demiromantyczn{adjective_n}'
+    Demisexual: 'Demiseksualn{adjective_n}'
+    Diamoric: 'Diamoryczn{adjective_n}'
+    Enbian: 'Enbiańs{adjective_n_k}'  # Niebiańsk{adjective_n}
+    Fa*afafine: 'Fa''afafine'
+    Gay: 'Gej'
+    Gender_Questioning: 'Rozważając{adjective_n_c} swoją płeć'  # Zastanawiając{adjective_n_c} się nad swoją płcią
+    Genderfae: 'Nimficzn{adjective_n}'
+    Genderfaun: 'Fauniczn{adjective_n}'
+    Genderfluid: 'Płynnopłciow{adjective_n}'
+    Genderflux: 'Zmiennopłciow{adjective_n}'
+    Genderqueer: 'Nienormatywn{adjective_n} płciowo'  # Płeć Queerowa
+    Greyasexual: 'Szaroaseksualn{adjective_n}'
+    Greyaromantic: 'Szaroaromantyczn{adjective_n}'
+    Gynesexual: 'Gyneseksualn{adjective_n}'
+    Heteroflexible: 'Heteroelastyczn{adjective_n}'
+    Heteroromantic: 'Heteroromantyczn{adjective_n}'
+    Heterosexual: 'Heteroseksualn{adjective_n}'
+    Hijra: 'Hidźra'
+    Homoflexible: 'Homoelastyczn{adjective_n}'
+    Homoromantic: 'Homoromantyczn{adjective_n}'
+    Intersex: 'Interpłciow{adjective_n}'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Skórzak'
+    Lesbian: 'Lesbijka'
+    Lesbiromantic: 'Lesbiromantyczn{adjective_n}'
+    Maverique: 'Niezależnopłciow{adjective_n}'
+    Muxe: 'Muxe'
+    Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
+    Neopronouns: 'Neozaimki'
+    Neutrois: 'Neutralnopłciow{adjective_n}'
+    Nonbinary: 'Niebinarn{adjective_n}'
+    Omniromantic: 'Omniromantyczn{adjective_n}'
+    Omnisexual: 'Omniseksualn{adjective_n}'
+    Oriented_Aroace: 'Zorientowan{adjective_n} aro-as'
+    Pangender: 'Panpłciow{adjective_n}'  # Pangenderow{adjective_n} Wszechpłciow{adjective_n}
+    Panromantic: 'Panromantyczn{adjective_n}'
+    Pansexual: 'Panseksualn{adjective_n}'
+    Polyamorous: 'Poliamoryczn{adjective_n}'
+    Polyromantic: 'Poliromantyczn{adjective_n}'
+    Polysexual: 'Poliseksualn{adjective_n}'
+    Pomoromantic: 'Pomoromantyczn{adjective_n}'
+    Pomosexual: 'Pomoseksualn{adjective_n}'
+    Progress_Pride: 'Progresywn{adjective_n}'
+    Queer: 'Queer (kłir)'
+    Queerian: 'Queerejs{adjective_n_k}'
+    Queerplatonic: 'Queerplatoniczn{adjective_n}'
+    Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
+    Sapphic: 'Safic{adjective_n_k}'  # Safik, Sapphic
+    Sexuality_Questioning: 'Rozważając{adjective_n_c} swoją orientację'
+    Straight_Ally: 'Hetero osoba sojusznicza'
+    Toric: 'Toryczn{adjective_n}'
+    Transfeminine: 'Transkobiec{adjective_n_c}'
+    Transgender: 'Transpłciow{adjective_n}'
+    Transmasculine: 'Transmęs{adjective_n_k}'
+    Transneutral: 'Transneutraln{adjective_n}'
+    Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
+    Trixic: 'Triksyjs{adjective_n_k}'
+    Two_Spirit: 'Dwie dusze'
+    Xenogender: 'Ksenopłciow{adjective_n}'
