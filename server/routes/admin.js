@@ -4,6 +4,7 @@ import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
 import {buildDict, now, shuffle, sortByValue} from "../../src/helpers";
 import locales from '../../src/locales';
+import {decodeTime} from "ulid";
 
 const router = Router();
 
@@ -95,6 +96,28 @@ router.get('/admin/users', async (req, res) => {
     return res.json(groupedUsers);
 });
 
+const formatMonth = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
+
+const buildChart = (rows) => {
+    const dates = rows.map(row => new Date(decodeTime(row.id)));
+
+    const chart = {};
+
+    let loop = dates[0];
+    const end = dates[dates.length - 1];
+    while(loop <= end){
+        chart[formatMonth(loop)] = 0;
+        loop = new Date(loop.setDate(loop.getDate() + 1));
+    }
+    chart[formatMonth(loop)] = 0;
+
+    for (let date of dates) {
+        chart[formatMonth(date)]++;
+    }
+
+    return chart;
+}
+
 router.get('/admin/stats', async (req, res) => {
     if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -103,6 +126,7 @@ router.get('/admin/stats', async (req, res) => {
     const users = {
         overall: (await req.db.get(SQL`SELECT count(*) AS c FROM users`)).c,
         admins: (await req.db.get(SQL`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
+        chart: buildChart(await req.db.all(SQL`SELECT id FROM users ORDER BY id`)),
     };
 
     const locales = {};
@@ -145,7 +169,8 @@ router.get('/admin/stats', async (req, res) => {
             nouns: {
                 approved: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=1 AND deleted=0`)).c,
                 awaiting: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=0 AND deleted=0`)).c,
-            }
+            },
+            chart: buildChart(await req.db.all(SQL`SELECT id FROM profiles WHERE locale=${locale} ORDER BY id`)),
         };
     }
 
