@@ -1,0 +1,476 @@
+title: 'fr.pronouns.page'
+description: 'Les exemples d'usage des pronoms personnels et langue neutral.'
+
+home:
+    link: 'Page d'accueil'
+    header: 'Pronoms'
+    headerLong: 'Une liste des pronoms'
+    why: 'Pourquoi les pronoms sont importants?'
+    about:
+        - >
+            Nous utilisons des pronoms tous les jours.
+			En fait, nous utilisons les pronoms plutôt les prénoms.
+			La plupart des gens utilisent «il» et «elle», mais pas tout est qu'il semble...
+        - >
+            Les personnes non binaires existent.
+			Certaines personnes ne «ressemblent» pas à un garçon ou à une fille.
+			Certaines personnes ne se sentent pas comme un garçon ou une fille.
+			Chaque personne a besoin une langue neutral.
+        - >
+            Utiliser cet outil pour produire votre pronoms,
+			avec les exemples de phrases, et les partager.
+        - >
+            Pourquoi les pronoms sont importants?
+            Vous n'appelleriez pas Isabelle «Dominique» simplement parce que tu aimes plus ce nom,
+			ou parce que elle «ressemblent» à Dominique.
+			Si vous ne voulez pas être impoli, appeler personnes correctement.
+    pronouns: 'List of popular pronouns'
+    generator:
+        header: 'Generator'
+        description: >
+            You can also use this tool where you out the blanks in sentences
+            and generate a link ready to share with others.
+        button: 'Show the generator'
+        header2: 'Generate a link'
+        base: 'Based on'
+        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
+        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
+    whatisit: 'What''s the deal with pronouns?'
+
+pronouns:
+    examples: 'Example usage in sentences'
+    plural: 'Plural'
+    intro: 'My pronouns are'
+    normative: 'Normative'
+    alt:
+        button: 'Generate a link to interchangeable forms'
+        header: 'Interchangeable forms'
+        raw: 'interchangeable'
+    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+    any:
+        header: 'Any pronouns'
+        short: 'any'
+        description: >
+            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
+            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
+        options: 'check out the options [share]{/=here}.'
+    others: 'Other forms'
+    othersRaw: 'other'
+    or: 'or'
+    grammarTable: 'Table'
+
+sources:
+    header: 'Sources'
+    headerLong: 'Examples from cultural texts'
+    headerLonger: 'Gender neutral language in cultural texts'
+    subheader: 'Text corpus of gender neutral language'
+    toc: 'Show table of contents'
+    type:
+        All: 'All'
+        Book: 'Books'
+        Article: 'Articles'
+        Movie: 'Movies'
+        Series: 'Series'
+        Song: 'Music'
+        Poetry: 'Poetry'
+        Other: 'Other'
+    submit:
+        header: 'Submit an example to be added'
+        action: 'Submit'
+        pronouns: 'Which pronouns have been used?'
+        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
+        type: 'Source type'
+        author: 'Author'
+        title: 'Title'
+        extra: 'Additional info (translator, name of journal, …)'
+        year: 'Release year (of the English version)'
+        fragments: 'Fragments'
+        comment: 'Comment'
+        link: 'Link to the content'
+        thanks: 'Thanks for contributing!'
+        another: 'Submit another one'
+        moderation: 'Submissions will have to get approved before getting published.'
+        key: 'Key'
+        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
+        images: 'Images'
+    otherVersions: 'In other languages'
+    referenced: 'Examples of use'
+
+
+nouns:
+    header: 'Dictionary'
+    headerLong: 'Dictionary of neutral nouns'
+    headerLonger: 'Dictionary of gender neutral language'
+    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    intro:
+        - >
+            Inclusive and gender neutral is not just respecting someone's pronouns.
+            It's also describing their job, position, relationship etc.
+            in a way that doesn't assume their gender.
+            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+        - >
+            When referring to someone whose gender you don't know,
+            to a group of people of mixed gender,
+            and especially to nonbinary people who explicitly prefer them,
+            use the neutral forms.
+        - >
+            Below we present a dictionary of the words to watch out for.
+            You can contribute to it and add your suggestions.
+
+    approved: 'approved entries'
+    pending: 'awaiting moderation'
+    edit: 'Propose a change'
+    edited: 'Proposed change of'
+    editing: 'You''re editing an existing entry'
+    empty: 'No words found that match your criteria.'
+
+    submit:
+        action: 'Submit'
+        actionLong: 'Submit a word'
+        thanks: 'Thank you for contributing!'
+        another: 'Submit another one'
+        moderation: 'Submissions will have to get approved before getting published.'
+
+    template: 'Use a template'
+    root: 'Root'
+
+    masculine: 'masculine'
+    masculineShort: 'masc.'
+    feminine: 'feminine'
+    feminineShort: 'fem.'
+    neuter: 'neutral'
+    neuterShort: 'neutr.'
+
+    singular: 'singular'
+    singularShort: 'sing.'
+    plural: 'plural'
+    pluralShort: 'pl.'
+
+faq:
+    header: 'FAQ'
+    headerLong: 'Frequently asked questions'
+    questions:
+        nonbinary:
+            question: 'What is nonbinary?'
+            answer:
+                - >
+                    Gender is way more complicated than just a simple distinction male/female.
+                    Even from a purely biological standpoint we distinguish chromosomal sex,
+                    genetic sex, hormonal sex, phenotypic sex…
+                    They aren't necessarily congruent with each other, they don't have to be binary.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
+                    And when we get to the cultural aspect, “gender” is a social construct.
+                    Depending on time and location being “a woman” or “a man” can mean having radically different
+                    rights, duties, norms… In Europe men used to wear high heels and stockings
+                    native peoples of North America have been recognising a third gender for centuries
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                - >
+                    Nonbinary is an umbrella term describing the identity of people
+                    who don't fit the binary man/woman distinction.
+                    It includes for instance people who are
+                    {https://gender.wikia.org/wiki/Agender=agender},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
+                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
+                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
+                    i {https://gender.wikia.org/wiki/Non-binary=and many many others}.
+                - >
+                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
+                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
+                    It's about being free from gender roles, not about creating new ones.
+        why-respect:
+            question: 'Why should I respect some <em>strange</em> pronouns?'
+            answer:
+                - >
+                    Because addressing people in the way they want to be addressed is the basis of social relations.
+                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
+                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
+                    If you don't accept that, it only shows <em>you</em> in bad light.
+                - >
+                    “Strange pronouns” are just a matter of getting used to.
+        how-to-know:
+            question: 'How do I know how to address someone?'
+            answer:
+                - >
+                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
+                    If we can ask somebody their name, why not their pronouns?
+                - >
+                    (Just please don't phrase it as “are you a boy or a girl?”.
+                    This question implies that there's just two correct answers,
+                    and it suggests unhealthy curiosity about someone's genitals.
+                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                - >
+                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
+                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary peopls it means so much!
+                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                - >
+                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
+                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
+                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                - >
+                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
+                    That means they like all of those forms. Usually, the first one is the preferred one.
+        who-uses-it:
+            question: 'Does anyone even use that?'
+            answer:
+                - >
+                    Yes! Millions of enbies all around the world.
+                    Every pronoun listed here has someone that actually uses it in everyday life.
+        authority:
+            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            answer:
+                - >
+                    Language is not some kind of god-given, ancient magic set in stone.
+                    It's just a tool that we use to communicate.
+                    When we change as a society, and when the world around us changes,
+                    we adjust the language we use to be able to better describe it.
+                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                - >
+                    Dictionaries take their time to start including those changes,
+                    which doesn't make the change illegitimate in any way.
+                    But eventually the new forms, if used often enough, get included in dictionaries.
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
+                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                - >
+                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
+                    on neopronouns.
+        bio:
+            question: 'Why should I put my pronouns in bio on social media?'
+            answer:
+                - >
+                    If you're cis (= not trans) and you use „{/he=he}” or „{/she=she}” matching your gender,
+                    you might think that your pronouns are <em>obvious</em>.
+                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
+                    or if you have your picture as avatar.
+                    Many people don't – so it's hard to guess how they want to be called.
+                - >
+                    But it's mostly about something more than that: your pronouns might be “obvious”,
+                    but there are people whose pronouns are not.
+                    They want to be addressed correctly, whether or not they “pass” as their gender,
+                    whether or not they have transitioned (or if they want to transition at all).
+                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                - >
+                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
+                    Alas, it also exposes and singles us out.
+                    But if cis people do the same, it means the world for us.
+                    It makes us feel more confortable, safe and welcome
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+        change:
+            question: 'Can I change my pronouns?'
+            answer:
+                - >
+                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
+                    So why would it be strange that they discovered a part of their identity,
+                    stopped liking their name, discovered a label that fits them well, etc.?
+        get-used-to:
+            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            answer:
+                - >
+                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
+                    it's easy to forget oneself when switching to different ones.
+                - >
+                    Pronouns ≠ gender.
+                    Your gender won't drastically change just because you got confused once when someone called you “them”.
+                    Don't worry. Experiment. See what fits you best.
+        preferred-pronouns:
+            question: 'Why shouldn''t I say “preferred pronouns”?'
+            answer:
+                - >
+                    Because this phrase suggests that someone's pronouns are just a whim.
+                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
+                    They look like a guy, after all, so it's gonna be easier for me!
+                - >
+                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
+                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+        gender-pronouns:
+            question: 'Why shouldn''t I say “gender pronouns”?'
+            answer:
+                - >
+                    Because gender ≠ pronouns. Pronouns are just grammar.
+                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                - >
+                    Simply say “pronouns”.
+
+links:
+    header: 'Links'
+    headerLong: 'Extra links'
+    recommended: 'We recommend'
+
+    media: 'Pronouns.page in the media'
+
+    social: 'Social media'
+
+    languageVersions: 'Other language versions'
+
+people: ~
+
+english: ~
+
+contact:
+    header: 'Contact'
+    authors: 'Sites d'auteurs'
+    team:
+        name: 'The “Neutral Language Council” collective'  # TODO
+        description:  # TODO
+            - >
+                {https://pronouns.page=Pronouns.page} and related initiatives
+                are created by the “Neutral Language Council” collective.
+        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+        members: 'Current members'  # TODO
+        blog: 'Blog'  # TODO
+        upcoming: 'Upcoming language versions'  # TODO
+
+support:
+    header: 'Soutien'
+    description: >
+        Si vous voulez contribuer au serveur, domaines, autocollants etc., ou juste achèter-nous une bière ,
+        vous pouvez utiliser les liens ci-dessous:
+
+user:
+    header: 'Compte'
+    headerLong: 'Votre compte'
+    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    login:
+        placeholder: 'Email (or username, if you''re already registered)'
+        action: 'Log in'
+        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
+        userNotFound: 'User not found.'
+        email:
+            subject: 'Your login code is %code%'
+            content: |
+                To confirm your email address, use the following code: %code%.
+
+                If you didn't order this code, simply ignore this message.
+        why: >
+            Registering lets you manage your cards ({/@andrea=like this one}).
+        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+    code:
+        action: 'Validate'
+        invalid: 'Invalid code.'
+    account:
+        changeUsername:
+            header: 'Username'
+            action: 'Change'
+            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
+            taken: 'This username is taken.'
+        changeEmail:
+            header: 'Email address'
+            action: 'Change'
+            invalid: 'Invalid email address.'
+            taken: 'This address is taken.'
+        admin: 'Admin'
+    logout: 'Log out'
+    avatar:
+        header: 'Avatar'
+        change: 'Change'
+    deleteAccount: 'Delete account'
+    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+    socialConnection:
+        list: 'Social media connections'
+        connect: 'Connect'
+        refresh: 'Refresh'
+        disconnect: 'Disconnect'
+        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+
+profile:
+    description: 'Description'
+    names: 'Names'
+    pronouns: 'Pronouns'
+    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
+    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    words: 'Words'
+    birthday: 'Age'
+    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    flags: 'Flags'
+    flagsInfo: 'Drag & drop your pride flags into this frame.'
+    links: 'Links'
+    column: 'Column'
+
+    list: 'Votre carte'
+    init: 'Créer une carte'
+    show: 'Montrer'
+    edit: 'Éditer'
+    delete: 'Supprimer'
+    deleteConfirm: 'Voulez-vous vraiment supprimer cette carte?'
+    editor:
+        header: 'Éditer de cartes'
+        save: 'Enregistrer votre carte'
+    opinion:
+        yes: 'Oui'
+        jokingly: 'En plaisantant'
+        meh: 'D'accord'
+        no: 'Non'
+
+share: 'Partager'
+
+crud:
+    approve: 'Approuver'
+    hide: 'Cacher'
+    remove: 'Supprimer'
+    removeConfirm: 'Voulez-vous vraiment supprimer ce-la?'
+    edit: 'Éditer'
+    add: 'Ajouter'
+    filter: 'Filtre'
+    filterLong: 'Filtre la liste…'
+    search: 'Chercher…'
+    author: 'Créé par'
+
+footer:
+    source: 'Code source a {https://gitlab.com/Avris/Zaimki=published} sous la {https://mit.avris.it=MIT} license.'
+    links: 'Contact, médias sociaux, soutien'
+
+notFound:
+    message: 'La page n'a pas été trouvée'
+    back: 'Retourner à la page d'accueil'
+
+authRequired:
+    message: 'Vous devez être connecté pour visualiser cette page'
+    go: 'Allez sur la page de connexion'
+
+confirm:
+    header: 'Êtes-vous sûrs?'
+    yes: 'Oui, je suis sûr'
+    no: 'Non, annuler'
+
+terms:
+    header: 'Conditions d''Utilisation'
+    lastUpdate: 'Dernière mise à jour'
+    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+
+admin:
+    header: 'Admin panel'
+    user:
+        user: 'User'
+        email: 'Email'
+        roles: 'Permissions'
+        profiles: 'Profiles'
+        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+
+table:
+    empty: 'Vide…'
+    count: 'Nombre'
+    sort: 'Faites glisser pour trier'
+    scrollUp: 'Défiler vers le haut'
+    more: 'Montre plus'
+
+api:
+    header: 'API publique'
+    example: 'Exemple'
+    query: 'Les paramètres des chaînes de requête'
+
+quotation:
+    start: '«'
+    end: '»'
+
+localise:
+    shorter: 'Ajoutez'
+    short: 'Ajouter une langue'
+    long: 'Voulez-vous ajouter une langue nouvelle? Lisez '
+    longLink: 'cet manuel!'
+
+images:
+    upload:
+        instruction: 'Cliquez ici ou mettez votre foto ici'
+        instructionShort: 'Télécharger'
+
+error:
+    generic: 'Quelque chose s'est rompu, essayez encore s''il vous plaît…'
