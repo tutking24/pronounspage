@@ -6,12 +6,11 @@
         </h2>
 
         <section>
-            <details v-for="question in Object.keys($t('faq.questions'))" class="border mb-3" :id="question" :ref="question.replace(/-/g, '_')" @click="setHash('', question)">
-                <summary class="bg-light p-3"><T>faq.questions.{{question}}.question</T></summary>
-                <div class="p-3 border-top">
-                    <T>faq.questions.{{question}}.answer</T>
-                </div>
-            </details>
+            <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
+                    :question="question"
+                    :id="question" :ref="question.replace(/-/g, '_')"
+                    @click="setHash('', question)"
+            />
         </section>
 
         <section>
@@ -28,15 +27,16 @@
         mixins: [ hash ],
         mounted() {
             this.handleHash('', hash => {
-                const $el = this.$refs[hash.replace(/-/g, '_')];
-                if (!$el) {
+                const $component = this.$refs[hash.replace(/-/g, '_')];
+                if (!$component) {
                     return;
                 }
-                $el[0].open = true;
-                $el[0].focus();
-                $el[0].scrollIntoView();
+                const $el = $component[0].$el;
+                $el.open = true;
+                $el.focus();
+                $el.scrollIntoView();
                 setTimeout(_ => {
-                    $el[0].scrollIntoView();
+                    $el.scrollIntoView();
                 }, 1000);
             }, false)
         },

@@ -97,13 +97,15 @@
             </div>
 
             <details class="form-group border rounded">
-                <summary class="px-3 py-2 small">
+                <summary class="px-3 py-2">
                     <T>profile.flagsCustom</T>
                 </summary>
                 <div class="border-top">
                     <ImageWidgetRich v-model="customFlags"/>
                 </div>
             </details>
+
+            <Answer question="flags" small/>
 
             <div class="form-group">
                 <h3 class="h4">
