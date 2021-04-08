@@ -447,7 +447,10 @@ crud:
     author: 'Added by'
 
 footer:
-    source: 'Source code is {https://gitlab.com/Avris/Zaimki=published} under the {https://mit.avris.it=MIT} license.'
+    license: >
+        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [b:mit.svg].<br/>
+        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.yi=CC BY-NC-SA 4.0}
+        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Contact, social media, support'
 
 notFound:
