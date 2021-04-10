@@ -80,8 +80,7 @@
             </details>
         </section>
 
-        <Chart name="users" :data="stats.users.chart"/>
-        <Chart name="users" :data="stats.users.chart" cumulative/>
+        <ChartSet name="users" :data="stats.users.chart" init="cumulative"/>
 
         <section v-for="(locale, k) in stats.locales" :key="k">
             <details class="border mb-3" open>
@@ -126,8 +125,7 @@
                     </div>
                 </div>
                 <div class="p-3 border-top">
-                    <Chart name="profiles" :data="locale.chart"/>
-                    <Chart name="profiles" :data="locale.chart" cumulative/>
+                    <ChartSet name="profiles" :data="locale.chart"/>
                 </div>
             </details>
         </section>
