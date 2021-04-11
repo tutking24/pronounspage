@@ -68,15 +68,6 @@
                             </li>
                         </ul>
                     </small>
-
-                    <div v-if="s.el.sourcesData.length" class="div-three-columns">
-                        <p><strong><T>sources.referenced</T>:</strong></p>
-                        <ul class="list-unstyled">
-                            <li v-for="source in s.el.sourcesData">
-                                <Source :source="source"/>
-                            </li>
-                        </ul>
-                    </div>
                 </td>
                 <td>
                     <ul class="list-singular">
@@ -131,6 +122,15 @@
                             <li v-for="w in nouns[s.el.base].neutrPl"><Spelling :text="w"/></li>
                         </ul>
                     </small>
+
+                    <div v-if="s.el.sourcesData.length" class="div-three-columns">
+                        <p><strong><T>sources.referenced</T>:</strong></p>
+                        <ul class="list-unstyled">
+                            <li v-for="source in s.el.sourcesData">
+                                <Source :source="source"/>
+                            </li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
                     <ul class="list-unstyled list-btn-concise">
@@ -381,5 +381,7 @@
 
     .div-three-columns {
         width: 300%;
+        position: relative;
+        left: -200%;
     }
 </style>
