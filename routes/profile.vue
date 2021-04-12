@@ -33,7 +33,7 @@
 
         <section v-if="profile.age ||profile.description.trim().length">
             <p v-for="line in profile.description.split('\n')" class="mb-1">
-                <Spelling :text="line"/>
+                <Spelling escape :text="line"/>
             </p>
             <p v-if="profile.age">
                 <Icon v="birthday-cake"/>

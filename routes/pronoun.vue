@@ -16,7 +16,7 @@
                         <template v-for="(nameOption, i) in nameOptions">
                             <nuxt-link :to="'/' + addSlash(nameOption)">
                                 <strong>
-                                    <Spelling :text="nameOption"/>
+                                    <Spelling :text="nameOption" escape/>
                                 </strong>
                             </nuxt-link>
                             <span v-if="i < nameOptions.length - 1"><Spelling :text="glue"/></span>
@@ -25,7 +25,7 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        (<Spelling :text="Array.isArray(selectedPronoun.description)
+                        (<Spelling escape :text="Array.isArray(selectedPronoun.description)
                             ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
                             : selectedPronoun.description"/>)
                     </em>
