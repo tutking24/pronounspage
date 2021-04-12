@@ -8,6 +8,7 @@ import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 import cookieSettings from "../../src/cookieSettings";
+import { Resolver } from "dns/promises";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -94,9 +95,22 @@ const issueAuthentication = async (db, user) => {
     });
 }
 
-const validateEmail = (email) => {
+const validateEmail = async (email) => {
+    email = String(email).toLowerCase();
+    if (email.endsWith('.oauth')) {
+        return;
+    }
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+    if (!re.test(email)) {
+        return false;
+    }
+    const dns = new Resolver();
+    try {
+        const addresses = await dns.resolveMx(email.split('@')[1]);
+        return addresses.length > 0;
+    } catch {
+        return false;
+    }
 }
 
 const reloadUser = async (req, res, next) => {
@@ -162,9 +176,13 @@ router.post('/user/init', async (req, res) => {
         code: isTest ? '999999' : makeId(6, '0123456789'),
     }
 
+    if (!await validateEmail(payload.email)) {
+        return res.json({ error: 'user.account.changeEmail.invalid' })
+    }
+
     const codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
 
-    if (!isTest && !payload.email.endsWith('.oauth')) {
+    if (!isTest) {
         mailer(
             payload.email,
             `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
@@ -220,7 +238,7 @@ router.post('/user/change-email', async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (!validateEmail(req.user.email)) {
+    if (!await validateEmail(req.user.email)) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
