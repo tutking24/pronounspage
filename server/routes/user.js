@@ -8,7 +8,6 @@ import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 import cookieSettings from "../../src/cookieSettings";
-import { Resolver } from "dns/promises";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -104,6 +103,7 @@ const validateEmail = async (email) => {
     if (!re.test(email)) {
         return false;
     }
+    const { Resolver } = require('dns').promises;
     const dns = new Resolver();
     try {
         const addresses = await dns.resolveMx(email.split('@')[1]);
