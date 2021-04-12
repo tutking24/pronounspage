@@ -446,8 +446,6 @@ export class Pronoun {
             }
         }
 
-        console.log(data);
-
         if (config.pronouns.plurals) {
             extraFields += 1;
             if (![0, 1].includes(parseInt(data[MORPHEMES.length]))) {

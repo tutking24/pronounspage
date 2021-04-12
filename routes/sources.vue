@@ -183,7 +183,6 @@
             edit(source) {
                 this.submitShown = true;
                 this.$nextTick(() => {
-                    console.log(this.$refs);
                     this.$refs.form.edit(source)
                 });
             }
