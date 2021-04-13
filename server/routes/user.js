@@ -42,6 +42,21 @@ const findAuthenticator = async (db, id, type) => {
     return authenticator
 }
 
+const findLatestEmailAuthenticator = async (db, email, type) => {
+    const authenticator = await db.get(SQL`SELECT * FROM authenticators
+        WHERE payload LIKE ${'%"email":"' + email + '"%'}
+        AND type = ${type}
+        AND (validUntil IS NULL OR validUntil > ${now()})
+        ORDER BY id DESC
+    `);
+
+    if (authenticator) {
+        authenticator.payload = JSON.parse(authenticator.payload);
+    }
+
+    return authenticator
+}
+
 const invalidateAuthenticator = async (db, id) => {
     await db.get(SQL`UPDATE authenticators
         SET validUntil = ${now()}
@@ -113,6 +128,17 @@ const validateEmail = async (email) => {
     }
 }
 
+const deduplicateEmail = async (db, email, cbSuccess, cbFail) => {
+    const count = (await db.get(SQL`SELECT COUNT(*) AS c FROM emails WHERE email = ${email} AND sentAt >= ${now() - 5 * 60}`)).c;
+    if (count > 0) {
+        console.error('Duplicate email requests for ' + email);
+        if (cbFail) { await cbFail(); }
+        return;
+    }
+    await cbSuccess();
+    await db.get(SQL`INSERT INTO emails (email, sentAt) VALUES (${email}, ${now()});`);
+}
+
 const reloadUser = async (req, res, next) => {
     if (!req.user) {
         next();
@@ -180,14 +206,27 @@ router.post('/user/init', async (req, res) => {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
-    const codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
-
-    if (!isTest) {
-        mailer(
+    let codeKey;
+    if (isTest) {
+        codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
+    } else {
+        await deduplicateEmail(
+            req.db,
             payload.email,
-            `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
-            translations.user.login.email.content.replace('%code%', payload.code),
-        )
+            async () => {
+                codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
+
+                mailer(
+                    payload.email,
+                    `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
+                    translations.user.login.email.content.replace('%code%', payload.code),
+                )
+            },
+            async () => {
+                const auth = await findLatestEmailAuthenticator(req.db, payload.email, 'email');
+                codeKey = auth ? auth.id : null;
+            },
+        );
     }
 
     return res.json({

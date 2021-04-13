@@ -135,7 +135,7 @@ export const camelCase = function (words) {
 }
 
 export const now = function () {
-    return Math.floor(Date.now() / 1000);
+    return parseInt(Date.now() / 1000);
 }
 
 export const isEmoji = char => {
