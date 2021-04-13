@@ -424,7 +424,8 @@ crud:
     filter: 'Filter'
     filterLong: 'Liste filtern...'
     search: 'Suchen…'
-    author: 'HInzugefügt von'
+    author: 'Hinzugefügt von'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     # TODO source: 'Der Quellcode ist {https://gitlab.com/Avris/Zaimki=veröffentlicht} unter der {https://mit.avris.it=MIT} Lizenz.'

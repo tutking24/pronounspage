@@ -1015,6 +1015,7 @@ crud:
     filterLong: 'Filtruj listę…'
     search: 'Szukaj…'
     author: 'Dodane przez'
+    saved: 'Zmiany zapisane!'
 
 footer:
     source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'

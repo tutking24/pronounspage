@@ -35,14 +35,14 @@
                 <div class="mx-2 flex-grow-1">
                     <Alert type="danger" :message="error"/>
 
-                    <div v-if="changeEmailAuthId" class="alert alert-success">
+                    <div v-if="message" class="alert alert-success">
                         <p class="mb-0 narrow-message">
-                            <Icon v="envelope-open-text"/>
-                            <T>user.login.emailSent</T>
+                            <Icon :v="messageIcon"/>
+                            <T>{{message}}</T>
                         </p>
                     </div>
 
-                    <form @submit.prevent="changeUsername">
+                    <form @submit.prevent="changeUsername" :disabled="saving">
                         <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" v-model="username"
@@ -53,7 +53,7 @@
                         </div>
                     </form>
 
-                    <form @submit.prevent="changeEmail">
+                    <form @submit.prevent="changeEmail" :disabled="saving">
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
                         <div v-if="!changeEmailAuthId" class="input-group mb-3">
                             <input type="email" class="form-control" v-model="email" required/>
@@ -125,6 +125,8 @@
                 username: this.$user().username,
                 email: this.$user().email,
 
+                message: '',
+                messageIcon: null,
                 error: '',
                 changeEmailAuthId: null,
                 code: '',
@@ -133,6 +135,8 @@
 
                 socialProviders,
                 socialConnections: undefined,
+
+                saving: false,
 
                 gravatar,
             }
@@ -153,9 +157,12 @@
             async changeUsername() {
                 this.error = '';
 
+                if (this.saving) { return; }
+                this.saving = true;
                 const response = await this.$axios.$post(`/user/change-username`, {
                     username: this.username,
                 });
+                this.saving = false;
 
                 if (response.error) {
                     this.error = response.error;
@@ -164,15 +171,21 @@
 
                 this.$store.commit('setToken', response.token);
                 this.$cookies.set('token', this.$store.state.token, cookieSettings);
+                this.message = 'crud.saved';
+                this.messageIcon = 'check-circle';
+                setTimeout(() => this.message = '', 3000);
             },
             async changeEmail() {
                 this.error = '';
 
+                if (this.saving) { return; }
+                this.saving = true;
                 const response = await this.$axios.$post(`/user/change-email`, {
                     email: this.email,
                     authId: this.changeEmailAuthId,
                     code: this.code,
                 });
+                this.saving = false;
 
                 if (response.error) {
                     this.error = response.error;
@@ -181,15 +194,21 @@
 
                 if (!this.changeEmailAuthId) {
                     this.changeEmailAuthId = response.authId;
+                    this.message = 'user.login.emailSent';
+                    this.messageIcon = 'envelope-open-text';
                     this.$nextTick(_ => {
                         this.$refs.code.focus();
                     });
                 } else {
                     this.changeEmailAuthId = null;
+                    this.message = '';
                     this.code = null;
 
                     this.$store.commit('setToken', response.token);
                     this.$cookies.set('token', this.$store.state.token, cookieSettings);
+                    this.message = 'crud.saved';
+                    this.messageIcon = 'check-circle';
+                    setTimeout(() => this.message = '', 3000);
                 }
             },
             logout() {

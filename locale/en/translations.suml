@@ -462,6 +462,7 @@ crud:
     filterLong: 'Filter the list…'
     search: 'Search…'
     author: 'Added by'
+    saved: 'Changes saved successfully!'
 
 footer:
     license: >

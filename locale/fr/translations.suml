@@ -413,6 +413,7 @@ crud:
     filterLong: 'Filtre la liste…'
     search: 'Chercher…'
     author: 'Créé par'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     # old version 'Code source a {https://gitlab.com/Avris/Zaimki=published} sous la {https://mit.avris.it=MIT} license.'

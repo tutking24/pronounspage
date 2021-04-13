@@ -1004,6 +1004,7 @@ crud:
     filterLong: 'Filtruj listę…'
     search: 'Szukaj…'
     author: 'Dodane przez'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     license: >

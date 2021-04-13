@@ -412,6 +412,7 @@ crud:
     filterLong: '篩選清單…'
     search: '搜索'
     author: '添加人'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     # TODO source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'

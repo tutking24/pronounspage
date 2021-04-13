@@ -434,6 +434,7 @@ crud:
     filterLong: 'Filtrar la lista…'
     search: 'Buscar…'
     author: 'Añadido por'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     # TODO source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'

@@ -427,6 +427,7 @@ crud:
     filterLong: 'Filter de lijst…'
     search: 'Zoek…'
     author: 'Toegevoegd door'
+    saved: 'Changes saved successfully!'  # TODO
 
 footer:
     # TODO source: 'De broncode wordt {https://gitlab.com/Avris/Zaimki=gepubliceerd} onder de {https://mit.avris.it=MIT}-licentie.'
