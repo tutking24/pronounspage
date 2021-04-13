@@ -3,7 +3,7 @@
         <Alert type="danger" :message="error"/>
 
         <div v-if="token === null">
-            <form @submit.prevent="login">
+            <form @submit.prevent="login" :disabled="saving">
                 <p>
                     <Icon v="info-circle"/>
                     <T>user.login.why</T>
@@ -40,7 +40,7 @@
                 </p>
             </div>
 
-            <form @submit.prevent="validate">
+            <form @submit.prevent="validate" :disabled="saving">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control text-center" v-model="code"
                            placeholder="000000" autofocus required minlength="0" maxlength="6"
@@ -72,6 +72,8 @@
                 error: '',
 
                 socialProviders,
+
+                saving: false,
             };
         },
         computed: {
@@ -92,11 +94,20 @@
         },
         methods: {
             async login() {
+                if (this.saving) {
+                    return;
+                }
+                this.saving = true;
                 await this.post(`/user/init`, {
                     usernameOrEmail: this.usernameOrEmail
                 });
+                this.saving = false;
             },
             async validate() {
+                if (this.saving) {
+                    return;
+                }
+                this.saving = true;
                 await this.post(`/user/validate`, {
                     code: this.code
                 }, {
@@ -104,6 +115,7 @@
                         authorization: 'Bearer ' + this.token,
                     },
                 });
+                this.saving = false;
             },
             async post(url, data, options = {}) {
                 this.error = '';
