@@ -259,7 +259,7 @@ router.post('/user/change-username', async (req, res) => {
     }
 
     if (req.body.username.length < 4 || req.body.username.length > 16 || !req.body.username.match(new RegExp(`^[${USERNAME_CHARS}]+$`))) {
-        return { error: 'user.account.changeUsername.invalid' }
+        return res.json({ error: 'user.account.changeUsername.invalid' });
     }
 
     const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(req.body.username)}`);

@@ -42,7 +42,7 @@
                         </p>
                     </div>
 
-                    <form @submit.prevent="changeUsername" :disabled="saving">
+                    <form @submit.prevent="changeUsername" :disabled="savingUsername">
                         <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" v-model="username"
@@ -53,7 +53,7 @@
                         </div>
                     </form>
 
-                    <form @submit.prevent="changeEmail" :disabled="saving">
+                    <form @submit.prevent="changeEmail" :disabled="savingEmail">
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
                         <div v-if="!changeEmailAuthId" class="input-group mb-3">
                             <input type="email" class="form-control" v-model="email" required/>
@@ -136,7 +136,8 @@
                 socialProviders,
                 socialConnections: undefined,
 
-                saving: false,
+                savingUsername: false,
+                savingEmail: false,
 
                 gravatar,
             }
@@ -157,12 +158,12 @@
             async changeUsername() {
                 this.error = '';
 
-                if (this.saving) { return; }
-                this.saving = true;
+                if (this.savingUsername) { return; }
+                this.savingUsername = true;
                 const response = await this.$axios.$post(`/user/change-username`, {
                     username: this.username,
                 });
-                this.saving = false;
+                this.savingUsername = false;
 
                 if (response.error) {
                     this.error = response.error;
@@ -178,14 +179,14 @@
             async changeEmail() {
                 this.error = '';
 
-                if (this.saving) { return; }
-                this.saving = true;
+                if (this.savingEmail) { return; }
+                this.savingEmail = true;
                 const response = await this.$axios.$post(`/user/change-email`, {
                     email: this.email,
                     authId: this.changeEmailAuthId,
                     code: this.code,
                 });
-                this.saving = false;
+                this.savingEmail = false;
 
                 if (response.error) {
                     this.error = response.error;
