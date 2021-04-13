@@ -852,6 +852,12 @@ english:
 contact:
     header: 'Kontakt'
     authors: '{/slowniki/neutratywy#autor=Autorza} strony'
+    quote: >
+        Tworzysz jakiś materiał o języku neutralnym? Piszesz lub tłumaczysz na polski postać niebinarną?
+        Cudownie! Prosimy, daj nam znać. Chętnie doradzimy i chętnie udostępnimy u siebie linka.
+    hate: >
+        Chcesz wysłać nam hejty? Daruj sobie, nie dyskutujemy z trollami.
+        Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
         description:
@@ -1071,7 +1077,7 @@ quotation:
 localise:
     shorter: 'Dodaj więcej'
     short: 'Dodawanie nowych wersji językowych'
-    long: 'Chcesz dodać nową wersję językową? Informacje znajdziesz w'
+    long: 'Chcesz dodać nową wersję językową? Super! Informacje znajdziesz w'
     longLink: 'tej instrukcji.'
 
 images:

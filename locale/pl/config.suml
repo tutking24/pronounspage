@@ -908,7 +908,7 @@ census:
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
             optional: true
     results:
-        spis-2021: 'Wnioski ze Spisu 2021'
+        spis-2021: 'Raport ze Spisu 2021'
 
 redirects:
     - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }
