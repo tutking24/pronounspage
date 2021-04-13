@@ -89,6 +89,9 @@ export default {
         link: [
             { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
         ],
+        script: [
+            {src: 'https://arc.io/widget.min.js#yHdNYRkC', async: true},
+        ],
     },
     css: [],
     plugins: [
