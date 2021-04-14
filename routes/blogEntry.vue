@@ -7,6 +7,14 @@
         </router-link>
 
         <div v-html="content"></div>
+
+        <Separator icon="heart"/>
+
+        <Support/>
+
+        <section>
+            <Share :title="title"/>
+        </section>
     </div>
 </template>
 
