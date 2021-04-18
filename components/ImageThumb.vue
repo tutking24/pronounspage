@@ -2,7 +2,7 @@
     <a :href="buildImageUrl(id, bigSize)" target="_blank" rel="noopener" class="d-inline-block"
        @click.prevent="$eventHub.$emit('lightbox', buildImageUrl(id, bigSize))"
     >
-        <img :src="buildImageUrl(id, smallSize)" class="border rounded-lg" :style="`height: ${size}; width: auto;`"/>
+        <img :src="buildImageUrl(id, smallSize)" class="border rounded-2" :style="`height: ${size}; width: auto;`"/>
     </a>
 </template>
 
@@ -16,10 +16,3 @@
         },
     }
 </script>
-
-<style lang="scss" scoped>
-    img {
-        height: 8rem;
-        width: 8rem;
-    }
-</style>

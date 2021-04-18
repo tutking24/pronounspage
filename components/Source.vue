@@ -60,7 +60,7 @@
             </li>
         </ul>
         <div v-if="source.images.length" class="source-images">
-            <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2"/>
+            <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2" size="8rem"/>
         </div>
         <ul v-if="source.fragments.length">
             <li v-for="fragment in source.fragments">
