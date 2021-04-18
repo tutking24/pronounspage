@@ -21,6 +21,7 @@ stop:
 deploy: install
 	yarn build
 	node server/migrate.js
+	echo "\nimportScripts('https://arc.io/arc-sw-core.js');" >> static/sw.js
 
 switch:
 	-rm data
