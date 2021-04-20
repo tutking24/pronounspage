@@ -582,6 +582,7 @@ contact:
         enabled: true
         route: 'kolektyw-rjn'
     blog:
+        manifest: 'Manifest Niebinarnej Polszczyzny'
         wystarczyło-zapytać: 'Wystarczyło zapytać…'
         krótka-notka-o-osobatywach: 'Krótka notka o osobatywach'
         czytanie-ze-zrozumieniem: 'Czytanie ze zrozumieniem'
@@ -924,6 +925,7 @@ redirects:
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }
     - { from: '^/blog/rada-języka-neutralnego$', to: '/kolektyw-rjn' }
+    - { from: '^/manifest$', to: '/blog/manifest' }
 
 api:
     examples:

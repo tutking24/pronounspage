@@ -499,6 +499,10 @@ faq:
                 - >
                     Kolektyw Rada Języka Neutralnego co roku organizuje {/spis=Niebinarny Spis Powszechny},
                     by zbadać trendy niebinarnego języka i zidentyfikować, które formy zyskują z czasem na popularności.
+                - >
+                    Aktualizacja: zdecydowałośmy się na wydanie rekomendacji form,
+                    które z różnych powodów zdają się być na najlepszej drodze ku normalizacji.
+                    Szczegóły tutaj: {/manifest=Manifest Niebinarnej Polszczyzny}
         to-sie-nie-uda:
             question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
             answer:
