@@ -23,11 +23,9 @@
 
         <Separator icon="link"/>
 
+
         <section>
-            <h2>
-                <Icon v="tags"/>
-                <T>home.pronouns</T>
-            </h2>
+            <Suggested/>
 
             <ul class="list-group mt-4">
                 <li v-for="[group, groupPronouns] in pronounLibrary.split()" class="list-group-item">
@@ -231,8 +229,10 @@
     import Compressor from "../src/compressor";
     import MORPHEMES from '../data/pronouns/morphemes';
     import {mapState} from "vuex";
+    import Suggested from "../data/pronouns/Suggested";
 
     export default {
+        components: { Suggested },
         data() {
             return {
                 examples,
