@@ -83,8 +83,8 @@ rodzaju neutralnego jako dobrej i względnie akceptowanej alternatywy do form bi
 [Neutratywy](/neutratywy) to słowa ukute na neutralne wersje słów nacechowanych płciowo,
 analogicznie do feminatywów, czyli wersji żeńskich, na przykład:
 
- - \[ten] fan, \[ta] fanka, \[to] [fanię](/slowniki/neutratywy#fanię)
- - \[ten] twórca, \[ta] twórczyni, \[to] [twórczę](/slowniki/neutratywy#twórczę) 
+ - \[ten] fan, \[ta] fanka, \[to] [fano](/slowniki/neutratywy#fano)
+ - \[ten] twórca, \[ta] twórczyni, \[to] [twórcze](/slowniki/neutratywy#twórcze) 
  - \[ten] pracownik, \[ta] pracownica, \[to] [pracownicze](/slowniki/neutratywy#pracownicze) 
  
 Postulujemy, by były umieszczane w słownikach i używane do opisywania osób niebinarnych, które sobie tego życzą.
@@ -154,7 +154,7 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
 ### 4. Osobatywy na określenie zawodów (itp.) nieznanych osób
 
 Choć konkretna osoba może chcieć być opisywana jako „dziennikarz”, „dziennikarka”,
-„[dziennikarcze](/slowniki/neutratywy#fanię)”, „[dziennikarzu](/slowniki/dukatywy)”, czy jeszcze inaczej,
+„[dziennikarcze](/slowniki/neutratywy#dziennikarcze)”, „[dziennikarzu](/slowniki/dukatywy)”, czy jeszcze inaczej,
 tak dla osób o nieznanej płci lub dla grup mieszanych lepiej jest użyć formy, która w ogóle na płeć nie wskazuje –
 jak określenie „osoby dziennikarskie”.
 
