@@ -133,24 +133,6 @@ strike, .text-strike {
     text-decoration: line-through;
 }
 
-form {
-    position: relative;
-    &::before {
-        content: "";
-        display: none;
-        opacity: 0;
-        transition: opacity .5s ease-in-out;
-        background-color: #000;
-        position: absolute;
-        left: -1rem;
-        top: -1rem;
-        width: calc(100% + 2rem);
-        height: calc(100% + 2rem);
-        z-index: 999;
-        filter: blur(.5rem);
-    }
-}
-form[disabled]::before {
-    display: block;
+form[disabled] {
     opacity: .5;
 }
