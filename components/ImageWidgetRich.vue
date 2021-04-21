@@ -1,6 +1,6 @@
 <template>
     <div class="form-group">
-        <draggable tag="ul" v-model="images" handle=".handle" ghostClass="ghost" @end="$emit('input', images)" class="list-unstyled">
+        <draggable tag="ul" v-model="images" handle=".handle" ghostClass="ghost" @end="$emit('input', listToDict(images))" class="list-unstyled">
             <li v-for="(image, i) in images" class="mb-4">
                 <div class="input-group mb-1">
                     <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">

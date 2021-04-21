@@ -4,6 +4,10 @@
             <Icon v="share"/>
             <T>share</T>:
         </p>
+        <button class="btn btn-primary" v-if="hasShareApi" @click="shareApi">
+            <Icon v="share"/>
+            <span class="d-none d-md-inline"><T>share</T></span>
+        </button>
         <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)" :aria-label="network">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>
@@ -58,6 +62,7 @@
         },
         data() {
             return {
+                hasShareApi: false,
                 preset: {
                     url: this.$base + this.$route.path,
                     title: this.title,
@@ -69,6 +74,11 @@
                 }
             };
         },
+        mounted() {
+            if (process.client) {
+                this.hasShareApi = navigator.share !== undefined;
+            }
+        },
         methods: {
             link(network) {
                 return NETWORKS[network](this.preset);
@@ -78,7 +88,14 @@
             },
             icon(network) {
                 return ICONS[network] || network;
-            }
-        }
+            },
+            shareApi() {
+                navigator.share({
+                    url: this.preset.url,
+                    title: this.preset.title,
+                    text: this.preset.extra.text,
+                });
+            },
+        },
     }
 </script>

@@ -80,8 +80,8 @@ router.post('/profile/save', async (req, res) => {
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });
 
-router.post('/profile/delete', async (req, res) => {
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
+router.post('/profile/delete/:locale', async (req, res) => {
+    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });

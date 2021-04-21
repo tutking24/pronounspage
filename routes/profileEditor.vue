@@ -96,7 +96,7 @@
                 </ButtonList>
             </div>
 
-            <details class="form-group border rounded">
+            <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
                 <summary class="px-3 py-2">
                     <T>profile.flagsCustom</T>
                 </summary>
