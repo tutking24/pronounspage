@@ -117,13 +117,13 @@
                     }),
                     new Noun({
                         id: 'Europejczyk',
-                        masc: 'Europejczyk', fem: 'Europejka', neutr: 'Europeju',
-                        mascPl: 'Europejczycy', femPl: 'Europejki', neutrPl: 'Europejy',
+                        masc: 'Europejczyk', fem: 'Europejka', neutr: 'Europejku',
+                        mascPl: 'Europejczycy', femPl: 'Europejki', neutrPl: 'Europejki',
                     }),
                     new Noun({
                         id: 'przyjaciel',
-                        masc: 'przyjaciel', fem: 'przyjaciółka', neutr: 'przyjaciełu',
-                        mascPl: 'przyjaciele', femPl: 'przyjaciółki', neutrPl: 'przyjacieły',
+                        masc: 'przyjaciel', fem: 'przyjaciółka', neutr: 'przyjaciołu',
+                        mascPl: 'przyjaciele', femPl: 'przyjaciółki', neutrPl: 'przyjacioły',
                     }),
                     new Noun({
                         id: 'twórca',
