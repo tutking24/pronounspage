@@ -30,7 +30,7 @@
                     <tbody>
                     <tr>
                         <td>
-                            <NounForm v-model="form.term" required maxlength="48"/>
+                            <NounForm v-model="form.term" required maxlength="128"/>
                         </td>
                         <td>
                             <NounForm v-model="form.original" maxlength="1024"/>
