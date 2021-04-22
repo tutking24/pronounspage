@@ -78,6 +78,13 @@ osobom niebinarnym szukającym sposobu na wyrażenie siebie,
 a także osobom tłumaczącym na polski np. angielskie [singular „they”](https://www.merriam-webster.com/words-at-play/singular-nonbinary-they),
 rodzaju neutralnego jako dobrej i względnie akceptowanej alternatywy do form binarnych.
 
+<section>
+    <a href="/ono" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Więcej informacji o rodzaju neutralnym
+    </a>
+</section>
+
 ### 3. Neutratywy jak feminatywy
 
 [Neutratywy](/neutratywy) to słowa ukute na neutralne wersje słów nacechowanych płciowo,
@@ -88,6 +95,13 @@ analogicznie do feminatywów, czyli wersji żeńskich, na przykład:
  - \[ten] pracownik, \[ta] pracownica, \[to] [pracownicze](/slowniki/neutratywy#pracownicze) 
  
 Postulujemy, by były umieszczane w słownikach i używane do opisywania osób niebinarnych, które sobie tego życzą.
+
+<section>
+    <a href="/slowniki/neutratywy" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Słownik Neutratywów Jezyka Polskiego
+    </a>
+</section>
 
 ### 4. Nazwa „rodzaj neutralny” zamiast „nijaki”
 
@@ -118,6 +132,13 @@ Nie zakładaj, że nieznajoma osoba, do której się zwracasz, jest mężczyzną
 Przycisk „zapomniałem hasła” na Twojej stronie możesz przemianować na „zapomniałxm hasła”.
 Twój transparent może mówić „nigdy nie będziesz szłx samx” zamiast form nacechowanych płciowo. 
 
+<section>
+    <a href="/onx" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Przykłady użycia form z iksem
+    </a>
+</section>
+
 ### 2. Mnogi rodzaj neutralny przy zwrotach do grupy osób, niezależnie od ich płci.
 
 Normatywna polszczyzna wymusza zwracanie uwagi na płeć osób członkowskich grupy do której / o której mówimy.
@@ -136,6 +157,13 @@ Opcją tą jest [liczba mnoga rodzaju neutralnego](/ona/ich): „ja zrobiłom”
 Wprawdzie nie jest to forma „poprawna systemowo” jak pojedynczy rodzaj nijaki,
 ale została stworzona w analogii do niego, jest spójna, logiczna, i łatwa do zrozumienia i stworzenia.
 
+<section>
+    <a href="/ona/ich" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Więcej informacji o mnogim rodzaju neutralnym
+    </a>
+</section>
+
 ### 3. Neutralne zaimki: nieokreślony, przeczący, pytający, względny, upowszechniający
 
 Męska dominacja językowa w polszczyźnie przejawia się między innymi tym, że
@@ -151,6 +179,13 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
  - <u>Każde</u> chciał<u>o</u> spróbować.
  - <u>Wszystkie</u> byłyśmy pod wrażeniem.
 
+<section>
+    <a href="/blog/zaimki-nie-tylko-osobowe" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Więcej informacji o neutralnych zaimkach
+    </a>
+</section>
+
 ### 4. Osobatywy na określenie zawodów (itp.) nieznanych osób
 
 Choć konkretna osoba może chcieć być opisywana jako „dziennikarz”, „dziennikarka”,
@@ -158,8 +193,28 @@ Choć konkretna osoba może chcieć być opisywana jako „dziennikarz”, „dz
 tak dla osób o nieznanej płci lub dla grup mieszanych lepiej jest użyć formy, która w ogóle na płeć nie wskazuje –
 jak określenie „osoby dziennikarskie”.
 
-Formy takie, które analogicznie do maskulatywów, feminatyów i neutratywów nazwałośmy „osobatywami”
-są normatywne i proste do stworzenia i zrozumienia.
+Formy takie, które analogicznie do maskulatywów, feminatyów i neutratywów nazwałośmy „[osobatywami](/slowniki/osobatywy)”.
+Są normatywne i proste do stworzenia i zrozumienia.
+
+<section>
+    <a href="/slowniki/osobatywy" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Więcej informacji o osobatywach
+    </a>
+</section>
+
+### 5. Unikanie form nacechowanych płciowo
+
+Na naszej stronie zbieramy również inne pomysły na [unikanie form nacechowanych płciowo](/unikanie),
+na przykład za pomocą zmiany podmiotu zdania, użycia strony biernej, form bezosobowych, mnogich, itp.
+Serdecznie zachęcamy do zapoznania się z nimi i używania ich w codziennej mowie. 
+
+<section>
+    <a href="/unikanie" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-book-reader"></span>
+        Zbiór sposobów na unikanie form nacechowanych płciowo
+    </a>
+</section>
 
 ## Podsumowując
 
