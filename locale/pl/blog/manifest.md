@@ -90,7 +90,7 @@ rodzaju neutralnego jako dobrej i względnie akceptowanej alternatywy do form bi
 [Neutratywy](/neutratywy) to słowa ukute na neutralne wersje słów nacechowanych płciowo,
 analogicznie do feminatywów, czyli wersji żeńskich, na przykład:
 
- - \[ten] fan, \[ta] fanka, \[to] [fano](/slowniki/neutratywy#fano)
+ - \[ten] fan, \[ta] fanka, \[to] [fanko](/slowniki/neutratywy#fanko)
  - \[ten] twórca, \[ta] twórczyni, \[to] [twórcze](/slowniki/neutratywy#twórcze) 
  - \[ten] pracownik, \[ta] pracownica, \[to] [pracownicze](/slowniki/neutratywy#pracownicze) 
  
