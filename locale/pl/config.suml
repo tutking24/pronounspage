@@ -47,7 +47,7 @@ pronouns:
         template: 'Otwórz dowolny z przykładów i podmień emoji w URLu na swoje.'
     null: false
     avoiding: 'unikanie'
-    others: 'Inne formy'
+    others: 'Pozostałe formy'
 
 pronunciation:
     enabled: true
