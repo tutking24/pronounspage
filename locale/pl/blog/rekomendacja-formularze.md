@@ -1,6 +1,6 @@
 # Rekomendacja Rady w sprawie pytania o płeć w formularzach
 
-<small>24.01.2020 | [@andrea](/@andrea)</small>
+<small>24.01.2020 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
 
 Formularze, czy to online czy papierowe, najczęściej są bardzo nieprzyjazne osobom niebinarnym.
 Narzucają nam wybór, w którym żadna opcja nie jest prawdą. Mężczyzna czy kobieta? Pan czy Pani?
