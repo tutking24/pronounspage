@@ -582,8 +582,8 @@ contact:
     contacts:
         -
             icon: 'envelope'
-            url: 'mailto:contact@pronouns.page'
-            headline: 'contact@pronouns.page'
+            url: 'mailto:kontakt@zaimki.pl'
+            headline: 'kontakt@zaimki.pl'
     team:
         enabled: true
         route: 'kolektyw-rjn'
