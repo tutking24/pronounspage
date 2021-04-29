@@ -52,7 +52,7 @@ Płeć prawną?
 
 Płeć metrykalną? (tę oznaczoną przy urodzeniu)
 
-Płeć „biologiczną”?
+Zestaw wielu cech fizycznych, które często wrzuca się pod parasol „płci biologicznej”?
 
  - chromosomy (jest duuużo więcej opcji niż kariotyp 46 XX i 46 XY)
  - gonady (jądra, jajniki, gonady o utkaniu mieszanym, jeden jajnik i jedno jądro, dysgenezja gonad, …)
