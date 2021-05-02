@@ -133,7 +133,7 @@
                 ],
                 dukajDeclension: new NounDeclension({
                     M: 'u', D: 'u', C: 'u', B: 'u', N: 'um', Msc: 'um', W: 'u',
-                    M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'y', N_pl: 'umy', Msc_pl: 'ych', W_pl: 'y',
+                    M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'ych', N_pl: 'ymi', Msc_pl: 'ych', W_pl: 'y',
                 }),
                 dukajExtendedDeclension: new NounDeclension({
                     M: 'tenu kosmicznu twórcu',
@@ -142,15 +142,15 @@
                     B: 'tenu kosmicznenu twórcu',
                     N: 'tum kosmicznum twórcum',
                     Msc: 'tum kosmicznum twórcum',
-                    W: 'tenu kosmicznu twórcu',
+                    W: 'ty kosmicznu twórcu',
 
                     M_pl: 'teny kosmiczny twórcy',
-                    D_pl: 'tenych kosmicznych twórcych',
-                    C_pl: 'tenym kosmicznym twórcym',
-                    B_pl: 'teny kosmiczneny twórcy',
-                    N_pl: 'tumy kosmicznumy twórcumy',
-                    Msc_pl: 'tumych kosmicznumych twórcych',
-                    W_pl: 'teny kosmiczny twórcy',
+                    D_pl: 'tych kosmicznych twórcych',
+                    C_pl: 'tym kosmicznym twórcym',
+                    B_pl: 'tych kosmicznych twórcych',
+                    N_pl: 'tymi kosmicznymi twórcymi',
+                    Msc_pl: 'tych kosmicznych twórcych',
+                    W_pl: 'wy kosmiczny twórcy',
                 }),
                 sources: undefined,
             }
