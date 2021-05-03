@@ -138,6 +138,6 @@ form[disabled] {
 }
 
 #arc-widget > iframe {
-    position: fixed;
-    bottom: 3px;
+    position: fixed !important;
+    bottom: 3px !important;
 }
