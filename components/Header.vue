@@ -7,6 +7,13 @@
                     <span class="higher"><T>title</T></span>
                 </nuxt-link>
             </h1>
+            <div class="flex-grow-1 btn-group d-flex nav-custom mb-2">
+                <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
+                    <Icon :v="link.icon" size="1.6"/>
+                    <br/>
+                    <span class="text-nowrap"><Spelling :text="link.text"/></span>
+                </nuxt-link>
+            </div>
             <div>
                 <div v-if="config.locale === 'zh'" class="btn-group m-2">
                     <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
@@ -75,15 +82,6 @@
                         <Spelling :text="link.textLong || link.text"/>
                     </nuxt-link>
                 </div>
-            </div>
-        </div>
-        <div class="d-none d-md-block">
-            <div class="btn-group d-flex nav-custom mb-2">
-                <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
-                    <Icon :v="link.icon" size="1.6"/>
-                    <br/>
-                    <span class="text-nowrap"><Spelling :text="link.text"/></span>
-                </nuxt-link>
             </div>
         </div>
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mt-3">
@@ -300,6 +298,19 @@
 
 <style lang="scss" scoped>
     @import "assets/variables";
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 2rem 2rem 0 2rem;
+        width: 100%;
+        z-index: 9999;
+        backdrop-filter: blur(12px);
+        @supports not (backdrop-filter: blur(12px)) {
+            background-color: $white;
+        }
+    }
 
     @include media-breakpoint-down('md', $grid-breakpoints) {
         h1 {

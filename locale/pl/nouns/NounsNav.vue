@@ -47,6 +47,6 @@
             isActiveRoute(route) {
                 return decodeURIComponent(this.$route.fullPath).replace(/\/$/, '') === this.buildRoute(route).replace(/\/$/, '');
             },
-        }
+        },
     }
 </script>

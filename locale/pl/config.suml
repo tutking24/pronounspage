@@ -84,7 +84,7 @@ nouns:
         - 'dukatywy'
         - 'osobatywy'
     inclusive:
-        enabled: false
+        enabled: true
         categories: ['queer/lgbtq+', 'transpłciowość', 'interpłciowość', 'niepełnosprawność', 'rasa i narodowość']
         route: 'inkluzywny'
     terms:
@@ -102,7 +102,7 @@ nouns:
         route: 'terminologia'
 
 names:
-    enabled: false
+    enabled: true
     route: 'imiona'
     legally: true
     count: true
@@ -115,15 +115,29 @@ faq:
 
 links:
     enabled: true
+    split: true
     route: 'linki'
     blogRoute: 'blog'
-    links:
-        -
-            icon: 'globe-europe'
-            url: 'https://pronoun.is/'
-            lang: ['en']
-            headline: 'Pronoun.is'
-            extra: '– anglojęzyczna inspiracja dla tej strony.'
+    academicRoute: 'nauka'
+    linksRoute: 'linki'
+    mediaRoute: 'media'
+
+    blog:
+        manifest: 'Manifest Niebinarnej Polszczyzny'
+        wystarczyło-zapytać: 'Wystarczyło zapytać…'
+        krótka-notka-o-osobatywach: 'Krótka notka o osobatywach'
+        czytanie-ze-zrozumieniem: 'Czytanie ze zrozumieniem'
+        spis-2021: 'Niebinarny Spis Powszechny 2021 – wnioski'
+        czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
+        inkluzywne-liczebniki: 'Inkluzywne liczebniki'
+        zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
+        zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
+        archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
+        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
+        podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
+        gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
+        czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
+    academic:
         -
             icon: 'comment-alt-edit'
             url: 'https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208'
@@ -132,6 +146,25 @@ links:
                 Nigdzie nie występuje zastrzeżenie, że nie tworzy się form 1. i 2. osoby rodzaju nijakiego w czasie przeszłym.
                 Tak więc z punktu widzenia gramatycznego formy <em>byłom, byłoś, robiłom, robiłoś, widziałom, widziałoś</em> itd.
                 są poprawne, zgodne z systemem językowym.
+        -
+            icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
+            headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
+            extra: '– ANGLICA. An International Journal of English Studies'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
+            headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
+        # TODO magisterka Michała
+        # TODO książka Iwony
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            lang: ['en']
+            headline: 'Pronoun.is'
+            extra: '– anglojęzyczna inspiracja dla tej strony.'
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/genderneutralizacja-polszczyzny'
@@ -150,19 +183,6 @@ links:
             headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
         -
             icon: 'comment-alt-edit'
-            url: '/blog/gwiezdne-wojny'
-            headline: 'Niebinarność w „Gwiezdnych Wojnach”'
-        -
-            icon: 'comment-alt-edit'
-            url: '/blog/czas-się-obnosić'
-            headline: 'Nadszedł czas się obnosić!'
-            extra: '– przemówienie Sybila z Wrocławskiego Marszu Równości'
-        -
-            icon: 'comment-alt-edit'
-            url: '/blog/rekomendacja-formularze'
-            headline: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
-        -
-            icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
             headline: 'Maniak marudzi #27: Niebinarne tłumaczenia'
             extra: '– artykuł pokazujący, że „nie da się przetłumaczyć they/them na polski” to tylko wymówka.'
@@ -171,12 +191,6 @@ links:
             url: 'https://opowiadania.org/wp-content/uploads/2020/09/opo16_gazeta_rd.pdf'
             headline: 'Ludzie z komputera, ludzie z internetu'
             extra: '– Michał Radomił Wiśniewski o „wojnie kulturowej” o zaimki, o naszym projekcie i o dukaizmach.'
-        -
-            icon: 'comment-alt-edit'
-            lang: ['en']
-            url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
-            headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
-            extra: '– ANGLICA. An International Journal of English Studies'
         -
             icon: 'comment-alt-edit'
             url: 'http://wasowska.net/2020/09/rowni-wobec-jezyka-o-jezyku-neutralnym-plciowo/'
@@ -190,11 +204,6 @@ links:
                 Jeśli chcesz rozbudzić w uczniach zainteresowanie językiem polskim, spróbuj odejść choć na jedną lekcję
                 od sztywnych reguł i z pomocą kategorii Literatura strony zaimki.pl
                 porozmawiać o ewolucji języka i neutratywach. Może uczniowie spróbują wymyślić własne?
-        -
-            icon: 'play-circle'
-            url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
-            headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
-            extra: ''
         -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=BX8ld20YeUc'
@@ -294,7 +303,6 @@ links:
             url: 'https://www.facebook.com/330540866965366/videos/977896432960282'
             headline: 'Osoby, łosie i dukaty – wstęp do neutralnej płciowo i niebinarnej polszczyzny'
             extra: '– wykład Sybila, <strong>Nowa Siła Kuratorska﻿</strong>'
-
     mediaMentions:
         -
             icon: 'newspaper'
@@ -473,7 +481,7 @@ links:
             extra: ' – rozdaje przypinki z zaimkami, również nienormatywnymi.'
 
 people:
-    enabled: false
+    enabled: true
     route: 'znane'
 
 english:
@@ -587,21 +595,6 @@ contact:
     team:
         enabled: true
         route: 'kolektyw-rjn'
-    blog:
-        manifest: 'Manifest Niebinarnej Polszczyzny'
-        wystarczyło-zapytać: 'Wystarczyło zapytać…'
-        krótka-notka-o-osobatywach: 'Krótka notka o osobatywach'
-        czytanie-ze-zrozumieniem: 'Czytanie ze zrozumieniem'
-        spis-2021: 'Niebinarny Spis Powszechny 2021 – wnioski'
-        czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
-        inkluzywne-liczebniki: 'Inkluzywne liczebniki'
-        zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
-        zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
-        archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
-        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
-        podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
-        gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
-        czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
 
 support:
     enabled: true
