@@ -136,3 +136,8 @@ strike, .text-strike {
 form[disabled] {
     opacity: .5;
 }
+
+#arc-widget > iframe {
+    position: fixed;
+    bottom: 3px;
+}
