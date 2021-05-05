@@ -8,7 +8,7 @@ cze	cza	czu	cze	czem	czu	cze	cza	czy	czom	cza	czami	czach	cza
 le	la	lu	le	lem	lu	le	la	li	lom	la	lami	lach	la
 że	ża	żu	że	żem	żu	że	ża	żów/ży	żom	ża	żami	żach	ża
 nie	nia	niu	nie	niem	niu	nie	nia	ń	niom	nia	niami	niach	nia
-cie	cia	ciu	cie	ciem	ciu	cie	cia	ć	ciom	cia	ciami	ciach	cia
+cie	cia	ciu	cie	ciem	ciu	cie	cia	ci	ciom	cia	ciami	ciach	cia
 ke	ka	ku	ke	kiem	ku	ke	ka	ek	kom	ka	kami	kach	ka
 je	ja	ju	je	jem	ju	je	ja	jów	jom	ja	jami	jach	ja
 ko	ka	ku	ko	kiem	ku	ko	ka	ek/ków	kom	ka	kami	kach	ka
@@ -16,7 +16,7 @@ wo	wa	wu	wo	wem	wie	wo	wa	wy	wom	wa	wami	wach	wa
 to	ta	tu	ta	tem	cie	to	ta	tów/t	tom	ta	tami	tach	ta
 io	ia	iu	io	iem	iu	io	ia	iów	iom	ia	iami	iach	ia
 jo	ja	ju	jo	jem	ju	jo	ja	jów	jom	ja	jami	jach	ja
-ro	ra	rzu	ro	rem	rzu	ro	rza	rzy/rzów	rzom	rza	rzami	rzach	rza
+ro	ra	rzu	ro	rem	rzu	ro	ra	ry	rom	ra	rami	rach	ra
 po	pa	pu	po	pem	pu	po	pa	pów	pom	pa	pami	pach	pa
 fo	fa	fu	fo	fem	fu	fo	fa	fów	fom	fa	fami	fach	fa
 czo	cza	czu	czo	czem	czu	czo	cza	czy	czom	cza	czami	czach	cza
@@ -26,7 +26,7 @@ lo	la	lu	lo	lem	lu	lo	la	li	lom	la	lami	lach	la
 ło	ła	łu	ło	łem	łu	ło	ła	ł	łom	ła	łami	łach	ła
 um	um	um	um	um	um	um	a	ów	om	a	ami	ach	a
 gum	gum	gum	gum	gum	gum	gum	ża	żów/ży	żom	ża	żami	żach	ża
-rum	rum	rum	rum	rum	rum	rum	rza	rzy/rzów	rzom	rza	rzami	rzach	rza
+rum	rum	rum	rum	rum	rum	rum	rza	rzów/rzy	rzom	rza	rzami	rzach	rza
 ium	ium	ium	ium	ium	ium	ium	ia	iów	iom	ia	iami	iach	ia
 tum	tum	tum	tum	tum	tum	tum	ta	tów/t	tom	ta	tami	tach	ta
 mum	mum	mum	mum	mum	mum	mum	ma	mów	mom	ma	mami	mach	ma
@@ -48,7 +48,7 @@ kuzynostwo	kuzynostwa	kuzynostwu	kuzynostwo	kuzynostwem	kuzynostwie	kuzynostwo	k
 							dziabkowie	dziabków	dziabkom	dziabków	dziabkami	dziabkach	dziabkowie
 narzeczeństwo	narzeczeństwa	narzeczeństwu	narzeczeństwo	narzeczeństwem	narzeczeństwie	narzeczeństwo	narzeczeństwo	narzeczeństwa	narzeczeństwu	narzeczeństwo	narzeczeństwem	narzeczeństwie	narzeczeństwo
 profesorstwo	profesorstwa	profesorstwu	profesorstwo	profesorstwem	profesorstwie	profesorstwo	profesorstwo	profesorstwa	profesorstwu	profesorstwo	profesorstwem	profesorstwie	profesorstwo
-szefowstwo	szefowstwa	szefowstwu	szefowstwo	szefowstwem	szefowstwie	szefowstwo	szefowstwo	szefowstwa	szefowstwu	szefowstwo	szefowstwem	szefowstwie	szefowstwo
+szefostwo	szefostwa	szefostwu	szefostwo	szefostwem	szefostwie	szefostwo	szefostwo	szefostwa	szefostwu	szefostwo	szefostwem	szefowstwie	szefowstwo
 szwagrostwo	szwagrostwa	szwagrostwu	szwagrostwo	szwagrostwem	szwagrostwie	szwagrostwo	szwagrostwo	szwagrostwa	szwagrostwu	szwagrostwo	szwagrostwem	szwagrostwie	szwagrostwo
 państwo	państwa	państwu	państwo	państwem	państwie	państwo	państwo	państwa	państwu	państwo	państwem	państwie	państwo
 pań	pania	paniu	pania	paniem	paniu	paniu	pania	paniów	paniom	pania	paniem	paniach	pania
@@ -57,10 +57,10 @@ krojcze	krojczego	krojczemu	krojcze	krojczym/krojczem	krojczym/krojczem	krojcze	
 nastawnicze	nastawniczego	nastawniczemu	nastawnicze	nastawniczym/nastawniczem	nastawniczym/nastawniczem	nastawnicze	nastawnicze	nastawniczych	nastawniczym	nastawnicze	nastawniczymi	nastawniczych	nastawnicze
 sze	sza	szu	sze	szem	szu	sza	sza	sz	szom	sza	szami	szach	sza
 szo	sza	szu	szo	szem	szu	sza	sza	sz	szom	sza	szami	szach	sza
-wie	wia	wiu	wie	wiem	wiu	wie	wia	wiów	wiom	wia	wiami	wiach	wia
-dzie	dzia	dziu	dzie	dziem	dziu	dzie	dzia	dziów	dziom	dzia	dziami	dziach	dzia
+wie	wia	wiu	wie	wiem	wiu	wie	wia	wi	wiom	wia	wiami	wiach	wia
+dzie	dzia	dziu	dzie	dziem	dziu	dzie	dzia	dzi	dziom	dzia	dziami	dziach	dzia
 gospodyń	gospodynia	gospodyniu	gospodynia	gospodyniem	gospodyniu	gospodyniu	gospodynia	gospodyniów	gospodyniom	gospodynia	gospodyniami	gospodyniach	gospodynia
-mie	mia	miu	mie	miem	miu	mie	mia	miów	miom	mia	miami	miach	mia
+mie	mia	miu	mie	miem	miu	mie	mia	mi	miom	mia	miami	miach	mia
 mo	ma	mu	mo	mem	mu	mo	ma	m	mom	ma	mami	mach	ma
 cechownicze	cechowniczego	cechowniczemu	cechownicze	cechowniczym/cechowniczem	cechowniczym/cechowniczem	cechownicze	cechownicze	cechowniczych	cechowniczym	cechownicze	cechowniczymi	cechowniczych	cechownicze
 śledcze	śledczego	śledczemu	śledcze	śledczym/śledczem	śledczym/śledczem	śledcze	śledcze	śledczych	śledczym	śledcze	śledczymi	śledczych	śledcze
@@ -69,7 +69,33 @@ nastawnicze	nastawniczego	nastawniczemu	nastawnicze	nastawniczym/nastawniczem	na
 do	da	du	do	dem	dzie	de	da	dów	dom	da	dami	dach	da
 sze	sza	szu	sze	szem	szu	sze	sze	szy/szów	szom	sze	szami	szach	sze
 budownicze	budowniczego	budowniczemu	budownicze	budowniczym/budowniczem	budowniczym/budowniczem	budownicze	budownicz	budowniczych	budowniczom	budownicze	budowniczymi	budowniczych
-sie	sia	siu	sie	siem	siu	sie	sia	ś/siów	siom	sie	siami	siach	sie
+sie	sia	siu	sie	siem	siu	sie	sia	si 	siom	sie	siami	siach	sie
 bo	ba	bu	bo	bem	bu	bo	ba	bów	bom	ba	bami	bach	ba
 two	twa	twu	two	twem	twie	two	two	twa	twu	two	twem	twie	two
-							rodzice	rodziców	rodzicom 	rodziców	rodzicami	rodzicach	rodzice
+rodzic	rodzica	rodzicowi	rodzica	rodzicem	rodzicu	rodzicu	rodzice	rodziców	rodzicom 	rodziców	rodzicami	rodzicach	rodzice
+androgyne	androgyne	androgyne	androgyne	androgyne	androgyne	androgyne	androgyna	androgyna	androgyna	androgyna	androgyna	androgyna	androgyna
+asoba	asoby	asobie	asobę	asobą	asobie	asobo	asoby	asób	asobom	asoby	asobami	asobach	asoby
+pie	pia	piu	pie	piem	piu	pie	pia	pi	piom	pia	piami	piach	pia
+bie	bia	biu	bie	biem	biu	bie	bia	bi	biom	bia	biami	biach	bia
+osoba	osoby	osobie	osobę	osobą	osobie	osobo	osoby	osób	osobom	osoby	osobami	osobach	osoby
+kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi	kraszi
+chorąże	chorążego	chorążemu	chorąże	chorążym/chorążem	chorążym/chorążem	chorąże	chorąże	chorążych	chorążym	chorąże	chorążymi	chorążych	chorąże
+dandy	dandy	dandy	dandy	dandy	dandy	dandy	dandies	dandies	dandies	dandies	dandies	dandies	dandies
+babek	babka	babku/babkowi	babka	babkiem	babku	babku	babkowie	babków	babkom	babków	babkami	babkach	babkowie
+dziabcia	dziabci	dziabci	dziabcię	dziabcią	dziabci	dziabcio	dziabcie	dziabci	dziabciom	dziabcie	dziabciami	dziabciach	dziabcie
+przodzic	przodzica	przodzicowi	przodzica	przodzicem	przodzicu	przodzicu	przodzice	przodziców	przodzicom	przodzice	przodzicami	przodzicach	przodzice
+fie	fia	fiu	fie	fiem	fiu	fie	fia	fi	fiom	fia	fiami	fiach	fia
+genium	genium	genium	genium	genium	genium	genium	genia	geniów	geniom	genia	geniami	geniach	genia
+Głuche	Głuchego	Głuchemu	Głuche	Głuchym/Głuchem	Głuchym/Głuchem	Głuche	Głuche	Głuchych	Głuchym	Głuche	Głuchymi	Głuchych	Głuche
+							paniowie	paniów	paniom	paniów	paniowie	paniach	paniowie
+							małolaty	małolat/małolatów	małolatom	małolat/małolatów	małolatami	małolatach	małolaty
+człowiek	człowieka	człowiekowi	człowieka	człowiekiem	człowieku	człowieku	ludzie	ludzi	ludziom	ludzi	ludźmi	ludziach	ludzie
+naga	naga	naga	naga	naga	naga	naga	nagi	nag	nagom	nagi	nagami	nagach	nagi
+zie	zia	ziu	zie	ziem	ziu	zie	zia	zi	ziom	zia	ziami	ziach	zie
+rodzic chrzestny	rodzica chrzestnego	rodzicowi chrzestnemu	rodzica chrzestnego	rodzicem chrzestnym	rodzicu chrzestnym	rodzicu chrzestny	rodzice chrzestne	rodziców chrzestnych	rodzicom chrzestnym	rodziców chrzestnych	rodzicami chrzestnymi	rodzicach chrzestnych	rodzice chrzestne
+							rodzice chrzestni	rodziców chrzestnych	rodzicom chrzestnym	rodziców chrzestnych	rodzicami chrzestnymi	rodzicach chrzestnych	rodzice chrzestni
+córek 	córka	córkowi	córka	córkiem	córku	córku	córkowie	córków	córkom	córków	córkami	córkach	córkowie
+synka	synki	synce	synkę	synką	synce	synko	synki	synek	synkom	synków	synkami	synkach	synki
+							dzieci	dzieci	dzieciom	dzieci	dziećmi	dzieciach	dzieci
+nana	nany	nanie	nanę	naną	nanie	nano	nany	nan	nanom	nany	nanami	nanach	nany
+zwrotnicze	zwrotniczego	zwrotniczemu	zwrotnicze	zwrotniczym/zwrotniczem	zwrotniczym/zwrotniczem	zwrotnicze	zwrotnicze 	zwrotniczych	zwrotniczym	zwrotnicze	zwrotniczymi	zwrotniczych	zwrotnicze
