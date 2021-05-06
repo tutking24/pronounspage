@@ -129,7 +129,7 @@ nouns:
     submit:
         action: 'Enviar'
         actionLong: 'Enviar uma palavra'
-        thanks: 'Obrigadx pela contribuição!'
+        thanks: 'Obrigade pela contribuição!'
         another: 'Enviar outra'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
 
@@ -160,20 +160,20 @@ faq:
                     A partir de um ponto de vista puramente biológico, distinguimos sexo cromossômico,
                     sexo genético, sexo hormonal, sexo fenotípico…
                     Eles não são necessariamente correspondentes um com o outro e nem sempre são binários.
-                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mais informações aqui)}.
+                
                     Quando partimos para o aspecto cultural, o “gênero” é visto como uma construção social.
                     Dependendo do lugar e do momento, ser “uma mulher” ou ser “um homem” pode significar ter
                     direitos, obrigações e regras a seguir radicalmente diferentes. Na Europa, não é comum que os homens a usem saltos altos e saias,
                     muitos povos originários da América da Norte reconhecem um terceiro gênero
-                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dois espíritos}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
+                    {https://pt.wikipedia.org/wiki/Dois-esp%C3%ADritos=dois espíritos}, travesti, etc. etc.
                 - >
                     “Não binárie” é um termo que descreve a identidade de pessoas que
                     não se encaixam na distinção binária de homem/mulher.
                     Inclui pessoas
-                    {https://pt.wikipedia.org/wiki/Ageneridadeo=agênero},
-                    {https://pt.wikipedia.org/wiki/G%C3%AAnero-fluidoo=gênero-fluido},
-                    {https://pt.wikipedia.org/wiki/Demigeneridade=demigênero},
-                    {https://pt.wikipedia.org/wiki/Bigeneridade=bigênero},
+                    {https://pt.wikipedia.org/wiki/Agênero=agênero},
+                    {https://pt.wikipedia.org/wiki/G%C3%AAnero-fluido=gênero-fluido},
+                    {https://pt.wikipedia.org/wiki/Demigênero=demigênero},
+                    {https://pt.wikipedia.org/wiki/Bigênero=bigênero},
                     e {https://pt.wikipedia.org/wiki/G%C3%AAnero_n%C3%A3o-bin%C3%A1rio=muito, muito mais}.
                 - >
                     Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Vai além.
