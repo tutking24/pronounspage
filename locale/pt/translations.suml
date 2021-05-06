@@ -466,7 +466,7 @@ admin:
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Perfis'
-        confirmRole: Você quer mesmo mudar o nome de usuárie de @%username% para "%role%"?'
+        confirmRole: 'Você quer mesmo mudar o nome de usuárie de @%username% para "%role%"?'
 
 table:
     empty: 'Vazio…'
