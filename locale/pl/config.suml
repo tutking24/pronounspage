@@ -234,6 +234,10 @@ links:
                 Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
                 bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
                 należy uznać tę pierwszą za wyższą.
+        -
+            icon: 'play-circle'
+            url: 'https://youtube.com/watch?v=V-uZqrT8ovw'
+            headline: 'Jak mówić, by nie wykluczać. – Mówiąc Inaczej'
     mediaGuests:
         -
             icon: 'newspaper'
