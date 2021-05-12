@@ -15,7 +15,7 @@
             </p>
             <ul>
                 <li v-for="[exampleFrom, exampleTo] in idea.examples">
-                    {{exampleFrom}} → <strong>{{exampleTo}}</strong>
+                    <LinkedText :text="exampleFrom"/> → <strong><LinkedText :text="exampleTo"/></strong>
                 </li>
             </ul>
         </section>

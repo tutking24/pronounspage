@@ -17,7 +17,11 @@ pronouns:
         examples: ['he&she', 'he&they', 'she&they']
     null:
         description: 'No pronouns / null pronouns / pronounless / nameself'
-        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
+        history: >
+            Some people prefer not using any pronouns, instead being referred by name, initial,
+            omitting pronouns with passive voice, or restructuring the sentence. See:
+            {/avoiding=Avoiding gendered forms} &
+            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal}.
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -38,7 +42,7 @@ pronouns:
         examples: ['💫', '💙']
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
     slashes: true
-    avoiding: false
+    avoiding: 'avoiding'
     others: 'Other pronouns'
 
 pronunciation:
