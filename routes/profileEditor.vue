@@ -272,7 +272,7 @@
             },
             validatePronoun(pronoun) {
                 pronoun = this.normalisePronoun(pronoun);
-                return pronoun === this.config.pronouns.any || buildPronoun(pronouns, pronoun)
+                return pronoun === this.config.pronouns.any || pronoun === this.config.pronouns.avoiding || buildPronoun(pronouns, pronoun)
                     ? null
                     : 'profile.pronounsNotFound'
             },

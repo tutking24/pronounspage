@@ -187,16 +187,18 @@
                 for (let pronoun in this.profile.pronouns) {
                     if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
 
-                    const link = decodeURIComponent(
+                    let link = decodeURIComponent(
                         pronoun
-                            .toLowerCase()
                             .trim()
                             .replace(new RegExp('^' + this.$base), '')
                             .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
                             .replace(new RegExp('^/'), '')
                     );
+                    if (!link.startsWith(':')) {
+                        link = link.toLowerCase();
+                    }
 
-                    if (link === this.config.pronouns.any) {
+                    if (link === this.config.pronouns.any || link === this.config.pronouns.avoiding) {
                         pronounOpinions.push({
                             link,
                             pronoun: link,
