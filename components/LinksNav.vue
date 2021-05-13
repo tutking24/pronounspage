@@ -24,7 +24,7 @@
             const links = [];
 
             if (this.config.links.links.length) {
-                links.push({name: 'links.links', route: this.config.links.linksRoute, icon: 'link'});
+                links.push({name: 'links.links', route: this.config.links.linksRoute, icon: 'bookmark'});
             }
             if (this.config.links.academic.length) {
                 links.push({name: 'links.academic', route: this.config.links.academicRoute, icon: 'vial'});
