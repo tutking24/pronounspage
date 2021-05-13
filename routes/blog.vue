@@ -1,5 +1,6 @@
 <template>
-    <div class="main">
+    <div>
+        <LinksNav/>
         <Blog/>
     </div>
 </template>
@@ -10,7 +11,7 @@
     export default {
         head() {
             return head({
-                title: this.$t('contact.team.blog'),
+                title: this.$t('links.blog'),
             });
         },
     };

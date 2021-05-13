@@ -138,7 +138,7 @@
                     });
                 }
 
-                if (this.config.faq.enabled) {
+                if (this.config.faq.enabled && !this.config.links.enabled) {
                     links.push({
                         link: '/' + this.config.faq.route,
                         icon: 'map-marker-question',
@@ -153,16 +153,14 @@
                         icon: 'bookmark',
                         text: this.$t('links.header'),
                         textLong: this.$t('links.headerLong'),
-                        extra: ['blog', 'blogEntry'],
-                    });
-                }
-
-                if (this.config.people.enabled) {
-                    links.push({
-                        link: '/' + this.config.people.route,
-                        icon: 'user-friends',
-                        text: this.$t('people.header'),
-                        textLong: this.$t('people.headerLong'),
+                        extra: [
+                            '/' + this.config.links.academicRoute,
+                            'blog',
+                            'blogEntry',
+                            '/' + this.config.links.mediaRoute,
+                            '/' + this.config.faq.route,
+                            '/' + this.config.people.route,
+                        ],
                     });
                 }
 

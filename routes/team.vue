@@ -26,7 +26,7 @@
         <router-link :to="'/' + config.links.blogRoute" v-if="Object.keys(config.contact.blog).length"
                      class="btn btn-outline-primary btn-lg">
             <Icon v="pen-nib"/>
-            <T>contact.team.blog</T>
+            <T>links.blog</T>
         </router-link>
 
         <section>

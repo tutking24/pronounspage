@@ -1,5 +1,7 @@
 <template>
     <div>
+        <LinksNav/>
+
         <h2>
             <Icon v="user-friends"/>
             <T>people.headerLonger</T>

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mt-4 mt-lg-0">
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2 w-100">
             <router-link v-for="{name, icon, route} in links" :key="name"
                          :to="buildRoute(route)"
