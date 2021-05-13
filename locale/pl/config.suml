@@ -151,13 +151,44 @@ links:
             lang: ['en']
             url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
             headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
-            extra: '– ANGLICA. An International Journal of English Studies'
+            extra: ' – Szymon Misiek; Uniwersytet Warszawski; ANGLICA. An International Journal of English Studies'
+            quote: >
+                In recent years, the English-speaking world observed growing awareness
+                of the gender non-binary/genderqueer community.
+                Among other things, this involved the issue of inclusive language,
+                e.g. the <em>singular they</em> pronoun has been declared the word of the year
+                by the American Dialect Society in 2015, and by Merriam-Webster in 2019.
+                There is also growing media representation of characters using <em>singular they</em> in popular culture.
+                This, however, poses a challenge to translators, as some languages – like Polish –
+                are much more heavily gendered and lack an obvious equivalent of <em>singular they</em>.
+                This article analyses Polish translations of three English-language television series
+                featuring non-binary characters and discusses good practices one can employ
+                when dealing with similar trans- lation challenges.
+        -
+            icon: 'comment-alt-edit'
+            headline: 'Neutrativa im Polnischen. Theorie – Norm – Usus'
+            extra: ' – Michał Dudas; Johannes Gutenberg Universität Mainz (Hausarbeit zur Erlangung des Akademischen Grades Master of Arts)'
+            lang: ['de']
+            quote: >
+                Äußerst positiv zu bewerten sind folgende Punkte.
+                (a) Die Seite bietet eine optimale Aus- wahl an Informationen und guten Übersichten,
+                wodurch sie auch für Laien sprachlich zugänglich ist.
+                (b) Die Autorys (sowie andere, die zum Projekt beitragen)
+                weisen m. E. ein erhöhtes Sprachbewusstsein auf (z. B. im Bereich der komplexen Morphonologie).
+                (c) Die Sprachexperimente basieren u. a auf den Leistungen der Übersetzer*innen
+                und die Modifikationen versuchen gleichzeitig, die poln. Flexion von der M–F-Binarität los- zulösen,
+                ohne das System zu sprengen.
+                (d) Formularfelder laden die User*innen zur Ko- operation ein.
+                (e) Schließlich verwenden die Autorys auf der Seite konsequent die nicht- binären Formen.
+        -
+            icon: 'book'
+            url: 'https://gufaculty360.georgetown.edu/s/contact/00336000014RaQuAAK/iwona-sadowska'
+            lang: ['en']
+            headline: 'Polish: A Comprehensive Grammar – Iwona Sadowska; Georgetown University (to be published in 2022)'
         -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
             headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
-        # TODO magisterka Michała
-        # TODO książka Iwony
     links:
         -
             icon: 'globe-europe'
