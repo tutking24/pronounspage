@@ -13,7 +13,7 @@ twórczynią prac wideo, fotografii i organizatorką akcji o charakterze społec
 
 Obecnie pracuję nad projektem artystycznym, dotyczącym widzialności kobiet,
 która ściśle wiąże się z uwarunkowaniami językowymi.
-Chciałabym zaproponować zmianę formy zwracania się do grup składających się z osób obojga płci.
+Chciałabym zaproponować zmianę formy zwracania się do grup składających się z osób wszystkich płci.
 
 Rozdzielanie zwrotów na formę męską i żeńską powoduje wydłużenie procesu komunikacji,
 co często jest utrudnieniem. Dlatego przyjęto, że w takich sytuacjach używany jest rodzaj męskoosobowy.
@@ -33,7 +33,7 @@ oraz na przykład stygmatyzacja ofiar gwałtu poprzez używanie wobec nich stron
 że język najpełniej odzwierciedla problemy kobiet współczesnego świata.
 
 Zdając sobie sprawę z wagi i znaczenia słów, proponuję odwrócenie istniejącej sytuacji i wprowadzenie
-rodzaju żeńskoosobowego jako normatywnego, w odniesieniu do grup składających się z osób obojga płci,
+rodzaju żeńskoosobowego jako normatywnego, w odniesieniu do grup składających się z osób wszystkich płci,
 zarówno w sytuacjach oficjalnych (w instytucjach, placówkach, organizacjach),
 jak i w swobodnej wymianie form grzecznościowych. 
 Przykładowo zwrot: „Drogie Studentki - zrobiłyśmy zmiany w regulaminie.”
