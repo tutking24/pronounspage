@@ -2,6 +2,10 @@
     <div>
         <LinksNav/>
         <Blog/>
+        <Support/>
+        <section>
+            <Share :title="$t('links.blog')"/>
+        </section>
     </div>
 </template>
 
