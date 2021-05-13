@@ -47,14 +47,14 @@
         </section>
 
         <section v-if="selectedPronoun.history">
-            <template v-for="part in selectedPronoun.history.replace('\@', '###').split('@')">
+            <template v-for="part in selectedPronoun.history.replace('\\@', '###').split('@')">
                 <div v-if="part === '__generator__'" class="alert alert-warning">
                     <Icon v="exclamation-triangle"/>
                     <T>pronouns.generated</T>
                 </div>
                 <div v-else class="alert alert-info">
                     <Icon v="info-circle"/>
-                    <LinkedText :text="part.replace('###', '\@')"/>
+                    <LinkedText :text="part.replace('###', '@')"/>
                 </div>
             </template>
         </section>
