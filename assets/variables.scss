@@ -7,6 +7,9 @@ $alert-border-level: -3;
 $link-decoration: none;
 $link-hover-decoration: underline;
 
+$header-height: 80px;
+$header-margin: $header-height + 36px;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";

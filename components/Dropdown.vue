@@ -5,7 +5,7 @@
         >
             <slot name="toggle">Dropdown</slot>
         </button>
-        <ul :class="['dropdown-menu', shown ? 'show' : '']" >
+        <ul :class="['dropdown-menu', end ? 'dropdown-menu-end' : '', shown ? 'show' : '']" >
             <slot name="menu">
                 <li class="dropdown-item">Option</li>
             </slot>
@@ -17,6 +17,7 @@
     export default {
         props: {
             btnClass: { 'default': 'btn-secondary' },
+            end: { type: Boolean },
         },
         data() {
             return {
@@ -42,3 +43,9 @@
         },
     }
 </script>
+
+<style lang="scss" scoped>
+    .dropdown-menu-end {
+        right: 0;
+    }
+</style>
