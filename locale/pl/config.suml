@@ -122,6 +122,7 @@ links:
     mediaRoute: 'media'
 
     blog:
+        rodzaj-żeńskoosobowy: 'Rodzaj żeńskoosobowy'
         manifest: 'Manifest Niebinarnej Polszczyzny'
         wystarczyło-zapytać: 'Wystarczyło zapytać…'
         krótka-notka-o-osobatywach: 'Krótka notka o osobatywach'
