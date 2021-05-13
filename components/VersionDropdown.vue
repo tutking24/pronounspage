@@ -34,9 +34,23 @@
 </template>
 
 <script>
+    import { mapState } from 'vuex'
+
     export default {
         props: {
             end: {type: Boolean},
+        },
+        methods: {
+            setSpelling(spelling) {
+                this.$store.commit('setSpelling', spelling);
+                this.$cookies.set('spelling', this.$store.state.spelling);
+            },
+        },
+        computed: {
+            ...mapState([
+                'user',
+                'spelling',
+            ]),
         },
     }
 </script>

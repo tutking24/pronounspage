@@ -85,7 +85,6 @@
         computed: {
             ...mapState([
                 'user',
-                'spelling',
             ]),
             links() {
                 const links = [];
@@ -224,10 +223,6 @@
                 return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
                     || (link.extra || []).includes(decodeURIComponent(this.$route.path));
-            },
-            setSpelling(spelling) {
-                this.$store.commit('setSpelling', spelling);
-                this.$cookies.set('spelling', this.$store.state.spelling);
             },
             documentClicked() {
                 if (this.hamburgerActive) {
