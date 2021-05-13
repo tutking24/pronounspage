@@ -48,7 +48,6 @@
         },
         computed: {
             ...mapState([
-                'user',
                 'spelling',
             ]),
         },
