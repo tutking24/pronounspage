@@ -1,60 +1,31 @@
 <template>
     <header v-if="config.header" class="mb-4">
-        <div class="mb-3 d-flex justify-content-between align-items-center flex-column flex-md-row">
-            <h1 class="text-nowrap">
-                <nuxt-link to="/">
+        <div class="d-none d-lg-flex justify-content-between align-items-center flex-row nav-custom btn-group mb-0">
+            <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`nav-item btn btn-sm ${isActiveRoute(link) ? 'active' : ''} ${link.header ? 'flex-grow-0' : ''}`">
+                <h1 v-if="link.header" class="text-nowrap">
                     <Icon v="tags"/>
                     <span class="higher"><T>title</T></span>
-                </nuxt-link>
-            </h1>
-            <div>
-                <div v-if="config.locale === 'zh'" class="btn-group m-2">
-                    <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
-                            :class="'btn btn-sm ' + (spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary')"
-                            :disabled="spelling === code"
-                            @click="setSpelling(code)"
-                    >
-                        {{display}}
-                    </button>
-                </div>
-                <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm" class="d-inline-block">
-                    <template v-slot:toggle>
-                        <Icon v="language"/>
-                        {{locales[config.locale].name}}
-                    </template>
-
-                    <template v-slot:menu>
-                        <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
-                            <a :href="options.url" class="dropdown-item">
-                                {{options.name}}
-                            </a>
-                        </li>
-                        <li class="dropdown-divider"></li>
-                        <li>
-                            <LocaleLink locale="en" link="/blog/creating-new-language-version" class="dropdown-item small">
-                                <Icon v="plus"/>
-                                <T>localise.shorter</T>
-                            </LocaleLink>
-                        </li>
-                    </template>
-                </Dropdown>
-                <!--
-                <div class="btn-group">
-                    <a v-for="(options, locale) in locales" :key="locale"
-                       :href="options.url"
-                       :class="'btn btn-sm ' + (locale === config.locale ? 'btn-secondary disabled' : 'btn-outline-secondary')"
-                       :disabled="locale === config.locale"
-                    >
-                        {{options.name}}
-                    </a>
-                    <LocaleLink locale="en" link="/blog/creating-new-language-version" class="btn btn-sm btn-outline-secondary">
-                        <Icon v="plus"/>
-                    </LocaleLink>
-                </div>
-                -->
+                </h1>
+                <template v-else>
+                    <Icon :v="link.icon" size="1.6"/>
+                    <br/>
+                    <span class="text-nowrap"><Spelling :text="link.text"/></span>
+                </template>
+            </nuxt-link>
+            <div class="nav-item flex-grow-0">
+                <VersionDropdown end/>
             </div>
         </div>
-        <div class="d-block d-md-none">
+        <div class="d-block d-lg-none">
+            <div class="text-center mb-3">
+                <nuxt-link to="/">
+                    <h1 class="text-nowrap">
+                        <Icon v="tags"/>
+                        <span class="higher"><T>title</T></span>
+                    </h1>
+                </nuxt-link>
+                <VersionDropdown/>
+            </div>
             <div class="btn-group-vertical d-flex nav-custom mb-2">
                 <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                     <Icon :v="link.icon"/>
@@ -77,15 +48,6 @@
                 </div>
             </div>
         </div>
-        <div class="d-none d-md-block">
-            <div class="btn-group d-flex nav-custom mb-2">
-                <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
-                    <Icon :v="link.icon" size="1.6"/>
-                    <br/>
-                    <span class="text-nowrap"><Spelling :text="link.text"/></span>
-                </nuxt-link>
-            </div>
-        </div>
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mt-3">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
@@ -94,7 +56,7 @@
             <a href="#" class="float-end" @click.prevent="dismissCensus">
                 <Icon v="times"/>
             </a>
-            <Icon v="user-chart" size="2" class="d-inline-block float-start mr-3 mt-2"/>
+            <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
             <T silent>census.banner</T>
         </div>
     </header>
@@ -129,6 +91,7 @@
                 const links = [];
 
                 links.push({
+                    header: true,
                     link: '/',
                     icon: 'home',
                     text: this.$t('home.header'),
@@ -175,7 +138,7 @@
                     });
                 }
 
-                if (this.config.faq.enabled) {
+                if (this.config.faq.enabled && !this.config.links.enabled) {
                     links.push({
                         link: '/' + this.config.faq.route,
                         icon: 'map-marker-question',
@@ -190,16 +153,14 @@
                         icon: 'bookmark',
                         text: this.$t('links.header'),
                         textLong: this.$t('links.headerLong'),
-                        extra: ['blog', 'blogEntry'],
-                    });
-                }
-
-                if (this.config.people.enabled) {
-                    links.push({
-                        link: '/' + this.config.people.route,
-                        icon: 'user-friends',
-                        text: this.$t('people.header'),
-                        textLong: this.$t('people.headerLong'),
+                        extra: [
+                            '/' + this.config.links.academicRoute,
+                            'blog',
+                            'blogEntry',
+                            '/' + this.config.links.mediaRoute,
+                            '/' + this.config.faq.route,
+                            '/' + this.config.people.route,
+                        ],
                     });
                 }
 
@@ -301,7 +262,12 @@
 <style lang="scss" scoped>
     @import "assets/variables";
 
-    @include media-breakpoint-down('md', $grid-breakpoints) {
+    header {
+        padding: 0;
+        width: 100%;
+    }
+
+    @include media-breakpoint-down('lg', $grid-breakpoints) {
         h1 {
             font-size: 2rem;
         }
@@ -318,6 +284,22 @@
                 }
 
                 text-align: left;
+            }
+        }
+
+        .hamburger-menu {
+            position: fixed;
+            top: $spacer;
+            left: $spacer;
+            z-index: 1030;
+            transition: all .5s ease-in-out;
+            .btn-hamburger {
+                &:not(:active):not(:hover):not(:focus):not(.active) {
+                    background-color: $white;
+                }
+                &.active {
+                    background-color: $secondary;
+                }
             }
         }
     }
@@ -337,47 +319,52 @@
         }
     }
 
-    @include media-breakpoint-up('md', $grid-breakpoints) {
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        header {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(12px);
+            @supports not (backdrop-filter: blur(12px)) {
+                background-color: $white;
+            }
+        }
+
         .nav-custom:not(.nav-custom-start) {
-            .btn {
+            .nav-item {
                 border-bottom: 1px solid $gray-500;
                 border-radius: 0;
 
-                &:hover, &:focus, &.active {
-                    border-bottom: 3px solid $primary;
-                    padding-bottom: calc(#{$btn-padding-y-sm} - 2px);
-                    color: $primary;
+                &.btn {
+                    &:hover, &:focus, &.active {
+                        border-bottom: 3px solid $primary;
+                        padding-bottom: calc(#{$btn-padding-y-sm} - 2px);
+                        color: $primary;
+                    }
+                }
+
+                height: $header-height;
+                padding-top: 1.2rem;
+                margin-top: 3px;
+
+                &:first-child, &:last-child {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                 }
             }
+        }
+
+        .hamburger-menu {
+            display: none;
         }
     }
 
     h1 {
-        a {
-            text-decoration: none;
-            .higher {
-                position: relative;
-                top: -0.1em;
-            }
-            &:hover .higher {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .hamburger-menu {
-        position: fixed;
-        top: $spacer;
-        left: $spacer;
-        z-index: 1030;
-        transition: all .5s ease-in-out;
-        .btn-hamburger {
-            &:not(:active):not(:hover):not(:focus):not(.active) {
-                background-color: $white;
-            }
-            &.active {
-                background-color: $secondary;
-            }
+        text-decoration: none;
+        .higher {
+            position: relative;
+            top: -0.1em;
         }
     }
 </style>

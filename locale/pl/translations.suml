@@ -785,11 +785,16 @@ faq:
 links:
     header: 'Materiały'
     headerLong: 'Dodatkowe materiały'
-    recommended: 'Polecamy'
+
+    blog: 'Blog'
+    academic: 'Prace naukowe'
+    links: 'Dodatkowe materiały'
 
     media: 'Zaimki.pl w mediach'
     mediaGuests: 'Zaproszone'
     mediaMentions: 'Wspomniane'
+
+    recommended: 'Polecamy'
 
     social: 'Social media'
 
@@ -871,7 +876,6 @@ contact:
                 są tworzone przez kolektyw „Rada Języka Neutralnego”.
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
-        blog: 'Blog'
         upcoming: 'Nadchodzące wersje językowe'
 
 support:

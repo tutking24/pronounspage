@@ -1,11 +1,11 @@
 <template>
-    <section v-if="Object.keys(config.contact.blog).length">
+    <section v-if="Object.keys(config.links.blog).length">
         <h2>
             <Icon v="pen-nib"/>
-            <T>contact.team.blog</T>
+            <T>links.blog</T>
         </h2>
         <ul>
-            <li v-for="(title, slug) in config.contact.blog" class="mb-2">
+            <li v-for="(title, slug) in config.links.blog" class="mb-2">
                 <nuxt-link :to="`/blog/${slug}`">
                     {{title}}
                 </nuxt-link>

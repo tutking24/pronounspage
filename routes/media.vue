@@ -2,13 +2,12 @@
     <div>
         <LinksNav/>
 
-        <Links/>
-        <Recommended/>
+        <Media/>
+
         <Socials/>
-        <LanguageVersions/>
         <Support/>
         <section>
-            <Share :title="$t('links.headerLong')"/>
+            <Share :title="$t('links.social')"/>
         </section>
     </div>
 </template>
@@ -19,7 +18,7 @@
     export default {
         head() {
             return head({
-                title: this.$t('links.headerLong'),
+                title: this.$t('links.media'),
             });
         },
     };

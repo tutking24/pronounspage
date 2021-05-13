@@ -1,5 +1,7 @@
 <template>
     <div>
+        <LinksNav v-if="config.links.enabled"/>
+
         <h2>
             <Icon v="map-marker-question"/>
             <T>faq.headerLong</T>

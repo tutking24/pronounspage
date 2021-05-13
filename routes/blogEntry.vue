@@ -3,7 +3,7 @@
     <div v-else class="blog-post">
         <router-link :to="'/' + config.links.blogRoute" v-if="Object.keys(config.contact.blog).length">
             <Icon v="pen-nib"/>
-            <T>contact.team.blog</T>
+            <T>links.blog</T>
         </router-link>
 
         <div v-html="content"></div>

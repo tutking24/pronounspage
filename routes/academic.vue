@@ -2,10 +2,8 @@
     <div>
         <LinksNav/>
 
-        <Links/>
-        <Recommended/>
-        <Socials/>
-        <LanguageVersions/>
+        <AcademicLinks/>
+
         <Support/>
         <section>
             <Share :title="$t('links.headerLong')"/>
@@ -19,7 +17,7 @@
     export default {
         head() {
             return head({
-                title: this.$t('links.headerLong'),
+                title: this.$t('links.academic'),
             });
         },
     };
