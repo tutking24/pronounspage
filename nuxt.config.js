@@ -190,7 +190,7 @@ export default {
                 if (config.links.academicRoute) {
                     routes.push({ path: '/' + config.links.academicRoute, component: resolve(__dirname, 'routes/academic.vue') });
                 }
-                if (Object.keys(config.links.blog).length) {
+                if (config.links.blog && Object.keys(config.links.blog).length) {
                     routes.push({ path: '/' + config.links.blogRoute, component: resolve(__dirname, 'routes/blog.vue'), name: 'blog' });
                     routes.push({ path: '/' + config.links.blogRoute + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
                 }
