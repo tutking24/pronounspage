@@ -285,6 +285,7 @@ links:
     headerLong: '額外鏈接'
     recommended: '建議'
 
+    blog: 'Blog'  # TODO
     media: 'Pronouns.page在傳媒'
 
     social: '社交媒體'

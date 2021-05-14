@@ -783,6 +783,7 @@ links:
     headerLong: 'Dodatkowe materiały'
     recommended: 'Polecamy'
 
+    blog: 'Blog'  # TODO
     media: 'Zaimki.pl w mediach'
 
     social: 'Social media'

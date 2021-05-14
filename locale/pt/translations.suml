@@ -160,7 +160,7 @@ faq:
                     A partir de um ponto de vista puramente biológico, distinguimos sexo cromossômico,
                     sexo genético, sexo hormonal, sexo fenotípico…
                     Eles não são necessariamente correspondentes um com o outro e nem sempre são binários.
-                
+
                     Quando partimos para o aspecto cultural, o “gênero” é visto como uma construção social.
                     Dependendo do lugar e do momento, ser “uma mulher” ou ser “um homem” pode significar ter
                     direitos, obrigações e regras a seguir radicalmente diferentes. Na Europa, não é comum que os homens a usem saltos altos e saias,
@@ -303,6 +303,7 @@ links:
     headerLong: 'Links externos'
     recommended: 'Recomendamos'
 
+    blog: 'Blog'  # TODO
     media: 'Pronouns.page nas mídias'
 
     social: 'Redes sociais'

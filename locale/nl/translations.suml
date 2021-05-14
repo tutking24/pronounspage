@@ -299,6 +299,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'Wij raden aan'
 
+    blog: 'Blog'  # TODO
     media: 'Pronouns.page in de media'
 
     social: 'Sociale media'

@@ -89,6 +89,7 @@ faq:
 
 links:
     enabled: true
+    split: false
     route: 'links'
     blogRoute: 'blog'
     links:
@@ -169,7 +170,7 @@ links:
             iconSet: 'b'
             url: 'https://pronouns.alejo.io/'
             headline: 'Display pronouns in Twitch Chat'
-
+    academic: []
     mediaGuests: []
     mediaMentions: []
 
@@ -180,6 +181,9 @@ links:
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
     recommended: []
+
+    blog:
+        creating-new-language-version: 'How to create a new language version of Pronouns.page'
 
 contact:
     enabled: true
@@ -192,8 +196,6 @@ contact:
     team:
         enabled: true
         route: 'team'
-    blog:
-        creating-new-language-version: 'How to create a new language version of Pronouns.page'
 
 support:
     enabled: true

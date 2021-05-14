@@ -180,6 +180,7 @@ links:
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
     recommended: []
+    blog: {}
 
 contact:
     enabled: true
@@ -192,8 +193,6 @@ contact:
     team:
         enabled: true
         route: 'team'
-    blog:
-        creating-new-language-version: 'How to create a new language version of Pronouns.page'
 
 support:
     enabled: true

@@ -374,7 +374,7 @@ links:
     header: 'Links'
     headerLong: 'Extra links'
     recommended: 'We recommend'
-
+    blog: 'Blog'
     media: 'Pronouns.page in the media'
 
     social: 'Social media'
@@ -389,15 +389,14 @@ contact:
     header: 'Contact'
     authors: 'Authors of the website'
     team:
-        name: 'The “Neutral Language Council” collective'  # TODO
+        name: 'The “Neutral Language Council” collective'
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
                 are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
+        members: 'Current members'
+        upcoming: 'Upcoming language versions'
 
 support:
     header: 'Support'

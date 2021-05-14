@@ -306,6 +306,7 @@ links:
     headerLong: 'Enlaces externos'
     recommended: 'Recomendamos'
 
+    blog: 'Blog'  # TODO
     media: 'Pronouns.page en los medios'
 
     social: 'Redes sociales'
@@ -327,7 +328,6 @@ contact:
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Current members'  # TODO
-        blog: 'Blog'  # TODO
         upcoming: 'Upcoming language versions'  # TODO
 
 support:

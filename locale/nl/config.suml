@@ -95,6 +95,7 @@ links:
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
     recommended: []
+    blog: {}
 
 contact:
     enabled: true
@@ -107,7 +108,6 @@ contact:
     team:
         enabled: true
         route: 'team'  # TODO
-    blog: {}
 
 support:
     enabled: true

@@ -295,6 +295,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'We recommend'
 
+    blog: 'Blog'  # TODO
     media: 'Pronouns.page in the media'
 
     social: 'Social media'
