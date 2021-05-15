@@ -37,8 +37,8 @@ home:
         button: 'Show the generator'
         header2: 'Generate a link'
         base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = „him” or „her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
+        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
+        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'What''s the deal with pronouns?'
 
 pronouns:
@@ -215,7 +215,7 @@ faq:
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
                     {https://gender.wikia.org/wiki/Demigirl=demigirls},
                     {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    i {https://gender.wikia.org/wiki/Non-binary=and many many others}.
+                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
                 - >
                     Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
                     Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
@@ -243,7 +243,7 @@ faq:
                     Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
                 - >
                     It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary peopls it means so much!
+                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
                     It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
                 - >
                     Remember also that many people might use a different name and a different set of pronouns depending on situation.
@@ -280,7 +280,7 @@ faq:
             question: 'Why should I put my pronouns in bio on social media?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use „{/he=he}” or „{/she=she}” matching your gender,
+                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
                     you might think that your pronouns are <em>obvious</em>.
                     And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
                     or if you have your picture as avatar.
@@ -295,7 +295,7 @@ faq:
                     Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
                     Alas, it also exposes and singles us out.
                     But if cis people do the same, it means the world for us.
-                    It makes us feel more confortable, safe and welcome
+                    It makes us feel more comfortable, safe and welcome
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
         change:
             question: 'Can I change my pronouns?'
@@ -361,7 +361,7 @@ faq:
                 - >
                     If you don't like a flag, just don't use it.
                     If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalisms).
+                    (it will be marked as user-generated to mitigate vandalism).
         custom-pronouns:
             question: 'My pronouns aren''t listed'
             answer:
@@ -429,7 +429,7 @@ user:
         changeUsername:
             header: 'Username'
             action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
+            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
             taken: 'This username is taken.'
         changeEmail:
             header: 'Email address'
@@ -454,7 +454,7 @@ profile:
     description: 'Description'
     names: 'Names'
     pronouns: 'Pronouns'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
+    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/her”) or a link (eg. “https://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
     pronounsNotFound: 'We can''t find a link to this pronoun!'
     words: 'Words'
     birthday: 'Age'
