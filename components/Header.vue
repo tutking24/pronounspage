@@ -137,7 +137,7 @@
                     });
                 }
 
-                if (this.config.faq.enabled && !this.config.links.enabled) {
+                if (this.config.faq.enabled && !this.config.links.split) {
                     links.push({
                         link: '/' + this.config.faq.route,
                         icon: 'map-marker-question',
@@ -157,7 +157,7 @@
                             'blog',
                             'blogEntry',
                             '/' + this.config.links.mediaRoute,
-                            '/' + this.config.faq.route,
+                            this.config.links.split ? '/' + this.config.faq.route : '',
                             '/' + this.config.people.route,
                         ],
                     });
