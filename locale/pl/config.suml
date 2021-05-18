@@ -84,7 +84,7 @@ nouns:
         - 'dukatywy'
         - 'osobatywy'
     inclusive:
-        enabled: false
+        enabled: true
         categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo']
         route: 'inkluzywny'
     terms:
@@ -949,6 +949,8 @@ redirects:
     - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }
     - { from: '^/dukatywy$', to: '/slowniki/dukatywy' }
     - { from: '^/osobatywy$', to: '/slowniki/osobatywy' }
+    - { from: '^/inkluzywny', to: '/slowniki/inkluzywny' }
+    - { from: '^/inkluzywnosc', to: '/slowniki/inkluzywny' }
     - { from: '^/terminologia', to: '/slowniki/terminologia' }
     - { from: '^/rzeczowniki$', to: '/slowniki' }
     - { from: '^/slownik$', to: '/slowniki' }
