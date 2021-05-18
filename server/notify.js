@@ -65,6 +65,8 @@ async function notify() {
             'Entries awaiting moderation: \n' + JSON.stringify(message, null, 4),
         );
     }
+
+    await db.close();
 }
 
 notify();

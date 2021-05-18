@@ -30,6 +30,9 @@ app.use(async function (req, res, next) {
     req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
     req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
     req.db = await dbConnection();
+    res.on('finish', async () => {
+        await req.db.close();
+    });
     next();
 });
 
@@ -50,6 +53,13 @@ app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
 
 app.use(require('./routes/images').default);
+
+app.use(async function (req, res, next) {
+//    await next();
+    console.log(res);
+    await req.db.close();
+    console.log('closed');
+});
 
 export default {
     path: '/api',
