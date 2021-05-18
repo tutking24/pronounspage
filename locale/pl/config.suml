@@ -85,7 +85,7 @@ nouns:
         - 'osobatywy'
     inclusive:
         enabled: false
-        categories: ['queer/lgbtq+', 'transpłciowość', 'interpłciowość', 'niepełnosprawność', 'rasa i narodowość']
+        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo']
         route: 'inkluzywny'
     terms:
         enabled: true
