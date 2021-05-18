@@ -701,6 +701,10 @@ export class InclusiveEntry {
             return true;
         }
 
+        if (filter.startsWith(':')) {
+            return this.categories.includes(filter.substring(1));
+        }
+
         for (let field of ['insteadOf', 'say']) {
             for (let value of this[field]) {
                 if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {

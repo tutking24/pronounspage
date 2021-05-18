@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label><strong><T>nouns.inclusive.categories</T>:</strong></label>
                 <a v-for="category in config.nouns.inclusive.categories"
-                   href="#" :class="['badge border mx-2 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
+                   href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
                    @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
                 >
                     {{ category }}
