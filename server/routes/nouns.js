@@ -26,7 +26,7 @@ const approve = async (db, id) => {
 const addVersions = async (req, nouns) => {
     const keys = new Set();
     nouns.filter(s => !!s && s.sources)
-        .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + k + `'`)));
+        .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + k.split('#')[0] + `'`)));
 
     const sources = await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s
@@ -41,10 +41,30 @@ const addVersions = async (req, nouns) => {
     sources.forEach(s => sourcesMap[s.key] = s)
 
     return nouns.map(n => {
-        n.sourcesData = (n.sources ? n.sources.split(',') : []).map(s => sourcesMap[s]);
+        n.sourcesData = (n.sources ? n.sources.split(',') : []).map(s => selectFragment(sourcesMap, s));
         return n;
     });
 };
+
+const selectFragment = (sourcesMap, keyAndFragment) => {
+    const [key, fragment] = keyAndFragment.split('#');
+    if (sourcesMap[key] === undefined) {
+        return undefined;
+    }
+    if (fragment === undefined) {
+        return sourcesMap[key];
+    }
+
+    const source = {...sourcesMap[key]};
+
+    const fragments = source.fragments
+        ? source.fragments.replace('\\@', '###').split('@').map(x => x.replace('###', '\\@'))
+        : [];
+
+    source.fragments = fragments[parseInt(fragment) - 1];
+
+    return source;
+}
 
 const router = Router();
 

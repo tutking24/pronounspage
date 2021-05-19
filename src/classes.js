@@ -114,7 +114,7 @@ export class Source {
         this.extra = extra;
         this.year = year;
         this.fragments = fragments
-            ? fragments.replace(/\|/g, '\n').replace('\\@', '###').split('@').map(x => x.replace('###', '\@'))
+            ? fragments.replace(/\|/g, '\n').replace('\\@', '###').split('@').map(x => x.replace('###', '\\@'))
             : [];
         this.comment = comment;
         this.link = link;
