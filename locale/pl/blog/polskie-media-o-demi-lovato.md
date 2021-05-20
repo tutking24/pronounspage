@@ -95,4 +95,12 @@ Formy wymienne i do tego nie zwykłe kopiuj-wklej, a sporo biogramu napisanego w
 > Zaledwie ponad miesiąc temu przyznało, że utożsamia się jako osoba panseksualna i stwierdziło,
 > że "czuje się zbyt queerowo" na umawianie się z mężczyznami.
 
-And last but not least, Queer.pl używające [rodzaju neutralnego](/ono) 🥰
+Queer.pl używające [rodzaju neutralnego](/ono) 🥰
+
+## [NOIZZ.pl](https://www.facebook.com/NOIZZPolska/posts/1733560516850847)
+
+> Piosenkarko Demi Lovato zrobiło coming out jako osoba niebinarna
+
+> "Mówienie o tym na głos zabrało mi wiele wysiłku i pracy nad sobą. Mam nadzieję, że dzięki mnie osoby, które wciąż boją się być tym, kim chcą, zmienią swoje nastawienie" - napisało na Instagramie Demi Lovato
+
+NOIZZ.pl również normalizuje [rodzaj neutralny](/ono) 🥰
