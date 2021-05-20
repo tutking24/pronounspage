@@ -54,13 +54,6 @@ app.use(require('./routes/census').default);
 
 app.use(require('./routes/images').default);
 
-app.use(async function (req, res, next) {
-//    await next();
-    console.log(res);
-    await req.db.close();
-    console.log('closed');
-});
-
 export default {
     path: '/api',
     handler: app,
