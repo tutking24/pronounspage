@@ -125,7 +125,12 @@
                 <p class="small text-muted mb-0">
                     <T>profile.birthdayInfo</T>
                 </p>
-                <input type="date" class="form-control form-control-sm" v-model="birthday"/>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control form-control-sm" v-model="birthday"/>
+                    <button class="btn btn-outline-danger btn-sm" type="button" v-if="birthday !== null" @click="birthday = null">
+                        <Icon v="times"/>
+                    </button>
+                </div>
             </div>
 
             <div class="form-group">
