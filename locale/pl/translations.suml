@@ -132,7 +132,8 @@ pronouns:
                 examples:
                     - ['zarządca', 'osoba zarządzająca']
                     - ['kandydaci i kandydatki', 'osoby kandydujące']
-                    - ['proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z rodzicem']
+                    - ['proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem']
+                    - ['mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili']
             -
                 header: 'Skrócone zaimki'
                 description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
