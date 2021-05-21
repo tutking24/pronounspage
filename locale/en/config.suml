@@ -59,6 +59,7 @@ sources:
     submit: true
     mergePronouns:
         they/them/themself: 'they'
+    extraTypes: ['avoiding', 'nounself']
 
 nouns:
     enabled: true

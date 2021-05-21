@@ -68,7 +68,7 @@ sources:
         ono/jenu: 'ono'
         vono/vego: 'ono'
         ono/eno: 'ono'
-    extraTypes: ['dukatywy', 'osobatywy']
+    extraTypes: ['dukatywy', 'osobatywy', 'unikanie']
 
 nouns:
     enabled: true

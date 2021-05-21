@@ -19,13 +19,28 @@
                 </li>
             </ul>
         </section>
+
+        <section v-if="sources && Object.keys(sources).length">
+            <Literature :sources="sources"/>
+        </section>
     </div>
 </template>
 
 <script>
+    import {SourceLibrary} from "../src/classes";
     import { head } from "../src/helpers";
 
     export default {
+        data() {
+            return {
+                sources: undefined,
+            }
+        },
+        async mounted() {
+            this.sources = {
+                '': new SourceLibrary(await this.$axios.$get(`/sources?pronoun=${this.config.pronouns.avoiding}`)).getForPronoun(this.config.pronouns.avoiding),
+            };
+        },
         head() {
             return head({
                 title: this.$t('pronouns.avoiding.header'),
