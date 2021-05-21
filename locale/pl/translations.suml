@@ -951,6 +951,7 @@ profile:
     links: 'Linki'
     column: 'Kolumna'
 
+    header: 'Wizytówki'
     list: 'Twoje wizytówki'
     init: 'Stwórz wizytówkę'
     show: 'Pokaż'

@@ -143,15 +143,4 @@ census:
 
 redirects: []
 
-api:
-    examples:
-        pronouns_all: ['/api/pronouns']
-        pronouns_one:
-            - '/api/pronouns/zij/haar'
-            - '/api/pronouns/zij/haar?examples[]=Ik%20denk%20dat%20%7Bnominative%7D%20erg%20mooi%20is%3F'
-
-        sources_all: ['/api/sources']
-        sources_one: ['/api/sources/01EX6GDCW730EB5N5HGRMGZ5EK']
-
-        nouns_all: ['/api/nouns']
-        nouns_search: ['/api/nouns/search/meisje']
+api: ~

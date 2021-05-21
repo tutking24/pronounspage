@@ -78,6 +78,7 @@ section {
 code {
     @include font-size($code-font-size);
     color: $code-color;
+    background-color: lighten($code-color, 45%);
     word-wrap: break-word;
 
     // Streamline the style when inside anchors to avoid broken underline and more
@@ -85,7 +86,7 @@ code {
         color: inherit;
     }
 
-    border: 1px solid $code-color;
+    border: 1px solid lighten($code-color, 30%);
     padding: .2em;
     border-radius: $border-radius-sm;
 }

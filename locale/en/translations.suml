@@ -466,6 +466,7 @@ profile:
     links: 'Links'
     column: 'Column'
 
+    header: 'Cards'
     list: 'Your cards'
     init: 'Create a card'
     show: 'Show'

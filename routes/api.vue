@@ -49,6 +49,7 @@
                         pronouns_one: ['GET', '/api/pronouns/{pronoun}', {
                             'examples[]': 'Overwrite the default example sentences with custom ones. For each of them use the following format: <code>{sentenceSingular}|{sentencePlural}|{isHonorific}</code>. If <code>sentencePlural</code> is missing, if defaults to being the same as <code>sentenceSingular</code>. <code>isHonorific</code> can be <code>0</code> (default) or <code>1</code>.',
                         }],
+                        pronouns_banner: ['GET', '/api/banner/{pronoun}.png'],
                     },
                 }, {
                     enabled: this.config.sources.enabled,
@@ -66,8 +67,31 @@
                         nouns_all: ['GET', '/api/nouns'],
                         nouns_search: ['GET', '/api/nouns/search/{term}'],
                     },
+                }, {
+                    enabled: this.config.nouns.inclusive.enabled,
+                    header: 'nouns.inclusive.header',
+                    icon: 'book-heart',
+                    endpoints: {
+                        inclusive_all: ['GET', '/api/inclusive'],
+                        inclusive_search: ['GET', '/api/inclusive/search/{term}'],
+                    },
+                }, {
+                    enabled: this.config.nouns.terms.enabled,
+                    header: 'nouns.terms.header',
+                    icon: 'flag',
+                    endpoints: {
+                        terms_all: ['GET', '/api/terms'],
+                        terms_search: ['GET', '/api/terms/search/{term}'],
+                    },
+                }, {
+                    enabled: this.config.profile.enabled,
+                    header: 'profile.header',
+                    icon: 'id-card',
+                    endpoints: {
+                        profile_get: ['GET', '/api/profile/get/{username}'],
+                    },
                 }],
-            };
+            }
         },
         head() {
             return head({

@@ -239,7 +239,9 @@ export default {
                 }
             }
 
-            routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
+            if (config.api !== null) {
+                routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
+            }
 
             routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/pronoun.vue') });
         },

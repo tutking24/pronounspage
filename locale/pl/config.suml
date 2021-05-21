@@ -999,9 +999,18 @@ api:
         pronouns_one:
             - '/api/pronouns/ono/jej'
             - '/api/pronouns/ono/jej?examples[]=Czy%20chcia%C5%82%7Bverb_end_inter%7Dby%C5%9B%20skorzysta%C4%87%20z%20naszej%20oferty%3F%7CCzy%20chci%7Bverb_middle_inter%7Dby%C5%9Bcie%20skorzysta%C4%87%20z%20naszej%20oferty%3F%7C0'
+        pronouns_banner: ['/api/banner/onu.png']
 
         sources_all: ['/api/sources']
-        sources_one: ['/api/sources/01ERQRCV0EHWZ4SX05BRFCEFBZ']
+        sources_one: ['/api/sources/01F1JDD446TNY56PQG7E6MFRRH']
 
         nouns_all: ['/api/nouns']
         nouns_search: ['/api/nouns/search/ateis']
+
+        inclusive_all: ['/api/inclusive']
+        inclusive_search: ['/api/inclusive/search/cygan']
+
+        terms_all: ['/api/terms']
+        terms_search: ['/api/terms/search/apłciow']
+
+        profile_get: ['/api/profile/get/andrea']
