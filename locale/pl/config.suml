@@ -343,6 +343,11 @@ links:
             url: 'https://www.facebook.com/330540866965366/videos/977896432960282'
             headline: 'Osoby, łosie i dukaty – wstęp do neutralnej płciowo i niebinarnej polszczyzny'
             extra: '– wykład Sybila, <strong>Nowa Siła Kuratorska﻿</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://fakty.tvn24.pl/fakty-po-poludniu,96/demi-lovato-mowi-ze-jest-osoba-niebinarna,1061387.html'
+            headline: 'Demi Lovato ogłasza, że jest osobą niebinarną'
+            extra: '– Sybil w <strong>TVN24</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
