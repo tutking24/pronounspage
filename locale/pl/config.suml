@@ -501,7 +501,11 @@ links:
                 Jedną z możliwości jest stosowanie znaku zastępującego, np. "pisałxm" lub "pisał_m".
                 Często używa się też rodzaju neutralnego ("pisałom", "ono pisało") lub form męskich i żeńskich na zmianę.
                 Więcej o zaimkach niebinarnych możesz przeczytać na zaimki.pl.
-
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=V-uZqrT8ovw'
+            headline: 'Jak mówić, by nie wykluczać.'
+            extra: ' – <strong>Mówiąc Inaczej</strong>'
     socials:
         -
             icon: 'twitter'
