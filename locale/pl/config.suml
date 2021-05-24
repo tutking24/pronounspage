@@ -283,6 +283,11 @@ links:
             icon: 'book'
             url: 'https://www.interakcja.org.pl/slownictwo/'
             headline: 'Fundacja Interakcja o słownictwie dotyczącym interpłciowości'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=UvRdZKk3RLM'
+            headline: 'Czy język polski jest seksistowski?'
+            extra: ' – Mateusz Adamczyk o asymetrii rodzajowo-płciowej, androcentryzmie językowym, inkluzywności, i o tym, czemu „osoba” jest bardziej włączająca niż „człowiek”.'
     mediaGuests:
         -
             icon: 'newspaper'
