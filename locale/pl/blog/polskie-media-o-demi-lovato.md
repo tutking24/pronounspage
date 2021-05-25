@@ -109,7 +109,8 @@ NOIZZ.pl również normalizuje [rodzaj neutralny](/ono) 🥰
 
 > Demi Lovato udostępnił(a) krótkie nagranie w środę rano. Wideo opatrzył(a) wpisem: "Codziennie budzimy się i otrzymujemy szansę, aby być tym, kim chcemy i kim życzymy sobie być. Większość życia dorastałam(-em) na waszych oczach. Widzieliście moje dobre i złe momenty oraz wszystko pomiędzy".
 
-Formy z nawiasami 👍
+Formy z nawiasami są oczywiście lepsze niż po prostu formy binarne,
+ale zwracamy uwagę, że są jednak trochę męskocentryczne – żeńskie końcówki są zawsze w nawiasie.
 
 ## [WTV](https://wtv.pl/coming-out-demi-lovato-jest-osoba-niebinarna-ws-210521)
 
