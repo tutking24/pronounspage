@@ -502,6 +502,15 @@ links:
             url: 'https://www.youtube.com/watch?v=V-uZqrT8ovw'
             headline: 'Jak mówić, by nie wykluczać.'
             extra: ' – <strong>Mówiąc Inaczej</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://vibez.pl/wydarzenia/dlaczego-demi-lovato-jest-piosenkarko-czyli-jak-mowic-o-osobach-niebinarnych-6641697426492384a'
+            headline: 'Dlaczego Demi Lovato jest piosenkarko? Czyli jak mówić o osobach niebinarnych'
+            extra: ' – <strong>Vibez</strong>'
+            quote: >
+                Im częściej będzie się to działo, tym łatwiej oswoimy się z „piekarko”, „lekarcze” i „hedoniszcze”.
+                Czy dla mnie te słowa wciąż brzmią inaczej i trochę dziwne? Tak. Ale cieszę się, że istnieje narzędzie,
+                które pozwala mi je poznawać i ich używać, dzięki czemu nie ranię osób, dla których są one ważne.
     socials:
         -
             icon: 'twitter'

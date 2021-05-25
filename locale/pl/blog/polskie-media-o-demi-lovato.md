@@ -104,3 +104,25 @@ Queer.pl używające [rodzaju neutralnego](/ono) 🥰
 > "Mówienie o tym na głos zabrało mi wiele wysiłku i pracy nad sobą. Mam nadzieję, że dzięki mnie osoby, które wciąż boją się być tym, kim chcą, zmienią swoje nastawienie" - napisało na Instagramie Demi Lovato
 
 NOIZZ.pl również normalizuje [rodzaj neutralny](/ono) 🥰
+
+## [Gazeta Wyborcza](https://wyborcza.pl/7,75410,27103879,demi-lovato-wyznaje-ze-jest-osoba-niebinarna-wciaz-sie-ucze.html)
+
+> Demi Lovato udostępnił(a) krótkie nagranie w środę rano. Wideo opatrzył(a) wpisem: "Codziennie budzimy się i otrzymujemy szansę, aby być tym, kim chcemy i kim życzymy sobie być. Większość życia dorastałam(-em) na waszych oczach. Widzieliście moje dobre i złe momenty oraz wszystko pomiędzy".
+
+Formy z nawiasami 👍
+
+## [WTV](https://wtv.pl/coming-out-demi-lovato-jest-osoba-niebinarna-ws-210521)
+
+> Demi Lovato wygląda na osobę szczęśliwą z powodu braku potrzeby ukrywania swojej tożsamości płciowej.
+
+> \- _Każdego dnia budzimy się, mamy kolejną szansę na to by być, kim chcemy i marzymy. Większość swojego życia spędziliśmy na waszyjch oczach… widzieliście nasza dobrą, złą stronę oraz wszystko co pomiędzy nimi_ - rozpoczyna swój wpis Demi Lovato.
+
+> Z szacunku do tożsamości płciowej, postanowiliśmy korzystać z zaimków "they/oni", jak życzą sobie Demi. Dziś, jak twierdzą, nie chcą już dłużej ukrywać tego, kim naprawdę są. W mediach społecznościowych przedstawiono nagrania oraz wpisy, w których można zobaczyć wytłumaczenie o podjęciu niełatwej decyzji.
+
+[Osobatywy](/slowniki/osobatywy) na przemian z [liczbą mnogą](/oni) 🥰
+
+## [Vibez](https://vibez.pl/wydarzenia/dlaczego-demi-lovato-jest-piosenkarko-czyli-jak-mowic-o-osobach-niebinarnych-6641697426492384a)
+
+> Czemu Demi Lovato jest piosenkarko i dlaczego nie powinno nas to dziwić? Jeśli nie wiecie, czym są neutratywy, to najwyższa pora to zmienić!
+
+Dziękujemy ❤️
