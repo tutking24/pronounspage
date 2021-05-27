@@ -349,6 +349,11 @@ links:
             url: 'https://fakty.tvn24.pl/fakty-po-poludniu,96/demi-lovato-mowi-ze-jest-osoba-niebinarna,1061387.html'
             headline: 'Demi Lovato ogłasza, że jest osobą niebinarną'
             extra: '– Sybil w <strong>TVN24</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/teczuj/videos/2996967110625524'
+            headline: 'Panel ekspercki: język neutralny | język osób niebinarnych'
+            extra: 'Archie i Andrea, <strong>Tęczuj</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
