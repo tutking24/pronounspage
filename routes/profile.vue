@@ -41,7 +41,7 @@
             </p>
         </section>
 
-        <section v-if="profile.flags.length || profile.customFlags.length">
+        <section v-if="profile.flags.length || Object.keys(profile.customFlags).length">
             <ul class="list-inline">
                 <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item pr-2">
                     <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
