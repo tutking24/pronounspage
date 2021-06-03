@@ -354,6 +354,11 @@ links:
             url: 'https://www.facebook.com/teczuj/videos/2996967110625524'
             headline: 'Panel ekspercki: język neutralny | język osób niebinarnych'
             extra: 'Archie i Andrea, <strong>Tęczuj</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/SCORP.IFMSA.Poland/posts/2952524161684978'
+            headline: 'Webinar „O co chodzi z tymi zaimkami?”'
+            extra: 'Sybil i Andrea, <strong>Międzynarodowe Stowarzyszenie Studentów Medycyny IFMSA-Poland</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
