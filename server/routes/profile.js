@@ -67,15 +67,34 @@ router.post('/profile/save', async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`);
-    await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
-        VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+    // TODO just make it a transaction...
+    const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`)).map(row => row.id);
+    if (ids.length) {
+        await req.db.get(SQL`UPDATE profiles
+            SET
+                names = ${JSON.stringify(req.body.names)},
+                pronouns = ${JSON.stringify(req.body.pronouns)},
+                description = ${req.body.description},
+                birthday = ${req.body.birthday || null},
+                links = ${JSON.stringify(req.body.links.filter(x => !!x))},
+                flags = ${JSON.stringify(req.body.flags)},
+                customFlags = ${JSON.stringify(req.body.customFlags)},
+                words = ${JSON.stringify(req.body.words)},
+                teamName = ${req.isGranted('users') ? req.body.teamName || null : ''},
+                footerName = ${req.isGranted('users') ? req.body.footerName || null : ''},
+                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
+            WHERE id = ${ids[0]}
+        `);
+    } else {
+        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
+            VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted('users') ? req.body.teamName || null : ''},
                 ${req.isGranted('users') ? req.body.footerName || null : ''},
                 ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
-    )`);
+        )`);
+    }
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 });
