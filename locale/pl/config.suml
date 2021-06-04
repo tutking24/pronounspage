@@ -284,6 +284,16 @@ links:
             url: 'https://www.youtube.com/watch?v=UvRdZKk3RLM'
             headline: 'Czy język polski jest seksistowski?'
             extra: ' – Mateusz Adamczyk o asymetrii rodzajowo-płciowej, androcentryzmie językowym, inkluzywności, i o tym, czemu „osoba” jest bardziej włączająca niż „człowiek”.'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=UvRdZKk3RLM'
+            headline: 'Feminatywy? Tak, ale...'
+            extra: ' – Mateusz Adamczyk; pod koniec jest też o potrzebie reprezentacji niebinarności w języku'
+            quote: >
+                Jak pokazują współczesne badania, formy generyczne silniej kojarzą nam się z mężczyznami niż z kobietami,
+                i dlatego nie ma tutaj tej symetrii, ani w języku, ani poza nim.
+                Dlatego właśnie tworzenie i używanie feminatywów jest ważne, społecznie potrzebne,
+                na co zresztą zwraca uwagę także Rada Języka Polskiego.
     mediaGuests:
         -
             icon: 'newspaper'
