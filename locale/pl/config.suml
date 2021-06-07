@@ -600,6 +600,11 @@ links:
             url: 'https://www.facebook.com/centrum.rownik/posts/158108032840650'
             headline: 'Centrum Równik'
             extra: ' – rozdaje przypinki z zaimkami, również nienormatywnymi.'
+        -
+            icon: 'cogs'
+            url: 'http://dobrerzeczy.online/femaleSwitcher/'
+            headline: 'Female switcher'
+            extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński'
 
 people:
     enabled: false
