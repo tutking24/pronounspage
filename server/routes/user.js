@@ -348,7 +348,11 @@ router.get('/user/social/:provider', async (req, res) => {
         return res.status(400).redirect('/' + config.user.route);
     }
 
-    const payload = socialLoginHandlers[req.params.provider](req.session.grant.response)
+    const payload = socialLoginHandlers[req.params.provider](req.session.grant.response);
+
+    if (payload.id === undefined) {
+        return res.status(400).redirect('/' + config.user.route);
+    }
 
     const auth = await req.db.get(SQL`
         SELECT * FROM authenticators
