@@ -190,6 +190,11 @@ links:
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=YOEB6Ixp048'
             headline: 'Nie-binarny język polski – seminarium naukowe (Queer UW)'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/gdynaukajestkobieta/videos/193680249317891'
+            headline: 'Tip-top. Krok w stronę feminatywów.'
+            extra: 'Sybil, <strong>Gdy Nauka jest Kobietą UAM</strong>'
     links:
         -
             icon: 'globe-europe'
@@ -369,6 +374,11 @@ links:
             url: 'https://www.facebook.com/SCORP.IFMSA.Poland/posts/2952524161684978'
             headline: 'Webinar „O co chodzi z tymi zaimkami?”'
             extra: 'Sybil i Andrea, <strong>Międzynarodowe Stowarzyszenie Studentów Medycyny IFMSA-Poland</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/gdynaukajestkobieta/videos/193680249317891'
+            headline: 'Tip-top. Krok w stronę feminatywów.'
+            extra: 'Sybil, <strong>Gdy Nauka jest Kobietą UAM</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
