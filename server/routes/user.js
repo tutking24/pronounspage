@@ -172,7 +172,7 @@ const reloadUser = async (req, res, next) => {
 
 const router = Router();
 
-router.use(reloadUser);
+router.use(handleErrorAsync(reloadUser));
 
 router.post('/user/init', handleErrorAsync(async (req, res) => {
     let user = undefined;

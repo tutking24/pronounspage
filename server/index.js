@@ -24,16 +24,21 @@ app.use(session({
 }));
 
 app.use(async function (req, res, next) {
-    req.config = global.config;
-    req.locales = buildLocaleList(global.config.locale);
-    req.rawUser = authenticate(req);
-    req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
-    req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
-    req.db = await dbConnection();
-    res.on('finish', async () => {
-        await req.db.close();
-    });
-    next();
+    try {
+        req.config = global.config;
+        req.locales = buildLocaleList(global.config.locale);
+        req.rawUser = authenticate(req);
+        req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
+        req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
+        req.db = await dbConnection();
+        res.on('finish', async () => {
+            await req.db.close();
+        });
+        next();
+    } catch (err) {
+        console.log('aaa', err);
+        next(err);
+    }
 });
 
 router.use(grant.express()(require('./social').config));
@@ -57,6 +62,7 @@ app.use(require('./routes/images').default);
 app.use(function (err, req, res, next) {
     console.error(err.stack);
     res.status(500).send('Unexpected server error');
+    req.db.close();
 });
 
 export default {
