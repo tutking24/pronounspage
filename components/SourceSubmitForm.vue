@@ -134,23 +134,26 @@
         methods: {
             async submit() {
                 this.submitting = true;
-                await this.$axios.$post(`/sources/submit`, this.form);
+                try {
+                    await this.$post(`/sources/submit`, this.form);
 
-                this.submitting = false;
-                this.afterSubmit = true;
-                this.form = {
-                    pronouns: [''],
-                    type: '',
-                    author: '',
-                    title: '',
-                    extra: '',
-                    year: '',
-                    fragments: [],
-                    comment: '',
-                    images: [],
-                    link: '',
-                    key: null,
-                    base: null,
+                    this.afterSubmit = true;
+                    this.form = {
+                        pronouns: [''],
+                        type: '',
+                        author: '',
+                        title: '',
+                        extra: '',
+                        year: '',
+                        fragments: [],
+                        comment: '',
+                        images: [],
+                        link: '',
+                        key: null,
+                        base: null,
+                    }
+                } finally {
+                    this.submitting = false;
                 }
             },
             edit(source) {

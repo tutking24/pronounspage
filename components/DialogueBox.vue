@@ -44,9 +44,17 @@
         mounted() {
             if (process.client) {
                 window.addEventListener('keydown', e => {
+                    if (!this.shown) {
+                        return;
+                    }
+
                     if (e.keyCode === 27) {
+                        e.stopPropagation();
+                        e.preventDefault();
                         this.cancel();
                     } else if (e.keyCode === 13) {
+                        e.stopPropagation();
+                        e.preventDefault();
                         this.confirm();
                     }
                 });

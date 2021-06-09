@@ -246,21 +246,24 @@
         methods: {
             async save() {
                 this.saving = true;
-                await this.$axios.$post(`/profile/save`, {
-                    names: listToDict(this.names),
-                    pronouns: listToDict(this.pronouns),
-                    description: this.description,
-                    birthday: this.birthday,
-                    links: [...this.links],
-                    flags: [...this.flags],
-                    customFlags: {...this.customFlags},
-                    words: this.words.map(x => listToDict(x)),
-                    teamName: this.teamName,
-                    footerName: this.footerName,
-                    footerAreas: this.footerAreas,
-                });
-                this.saving = false;
-                this.$router.push(`/@${this.$user().username}`)
+                try {
+                    await this.$post(`/profile/save`, {
+                        names: listToDict(this.names),
+                        pronouns: listToDict(this.pronouns),
+                        description: this.description,
+                        birthday: this.birthday,
+                        links: [...this.links],
+                        flags: [...this.flags],
+                        customFlags: {...this.customFlags},
+                        words: this.words.map(x => listToDict(x)),
+                        teamName: this.teamName,
+                        footerName: this.footerName,
+                        footerAreas: this.footerAreas,
+                    });
+                    this.$router.push(`/@${this.$user().username}`);
+                } finally {
+                    this.saving = false;
+                }
             },
             normalisePronoun(pronoun) {
                 return decodeURIComponent(

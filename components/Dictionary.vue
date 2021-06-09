@@ -238,7 +238,7 @@
                 this.$refs.form.edit(noun);
             },
             async approve(noun) {
-                await this.$axios.$post(`/nouns/approve/${noun.id}`);
+                await this.$post(`/nouns/approve/${noun.id}`);
                 if (noun.base) {
                     delete this.nouns[noun.base];
                 }
@@ -247,14 +247,14 @@
                 this.$forceUpdate();
             },
             async hide(noun) {
-                await this.$axios.$post(`/nouns/hide/${noun.id}`);
+                await this.$post(`/nouns/hide/${noun.id}`);
                 noun.approved = false;
                 this.$forceUpdate();
             },
             async remove(noun) {
                 await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
 
-                await this.$axios.$post(`/nouns/remove/${noun.id}`);
+                await this.$post(`/nouns/remove/${noun.id}`);
                 delete this.nouns[noun.id];
                 this.$forceUpdate();
             },

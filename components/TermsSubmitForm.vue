@@ -102,19 +102,22 @@
         methods: {
             async submit(event) {
                 this.submitting = true;
-                await this.$axios.$post(`/terms/submit`, this.form);
+                try {
+                    await this.$post(`/terms/submit`, this.form);
 
-                this.submitting = false;
-                this.afterSubmit = true;
-                this.form = {
-                    term: [''],
-                    original: [],
-                    definition: '',
-                    category: '',
-                    flags: [],
-                    images: [],
-                    base: null,
-                };
+                    this.afterSubmit = true;
+                    this.form = {
+                        term: [''],
+                        original: [],
+                        definition: '',
+                        category: '',
+                        flags: [],
+                        images: [],
+                        base: null,
+                    };
+                } finally {
+                    this.submitting = false;
+                }
             },
             edit(word) {
                 this.form = {

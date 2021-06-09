@@ -222,7 +222,7 @@
                 this.$refs.form.edit(entry);
             },
             async approve(entry) {
-                await this.$axios.$post(`/inclusive/approve/${entry.id}`);
+                await this.$post(`/inclusive/approve/${entry.id}`);
                 if (entry.base) {
                     delete this.entries[entry.base];
                 }
@@ -231,14 +231,14 @@
                 this.$forceUpdate();
             },
             async hide(entry) {
-                await this.$axios.$post(`/inclusive/hide/${entry.id}`);
+                await this.$post(`/inclusive/hide/${entry.id}`);
                 entry.approved = false;
                 this.$forceUpdate();
             },
             async remove(entry) {
                 await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
 
-                await this.$axios.$post(`/inclusive/remove/${entry.id}`);
+                await this.$post(`/inclusive/remove/${entry.id}`);
                 delete this.entries[entry.id];
                 this.$forceUpdate();
             },

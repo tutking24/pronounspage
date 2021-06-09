@@ -30,6 +30,17 @@
                     this.$refs.dialogue.show(true, message, color, resolve, reject);
                 });
             };
+            Vue.prototype.$post = (url, data, timeout = 30000) => {
+                return new Promise((resolve, reject) => {
+                    this.$axios.$post(url, data, {timeout})
+                        .then(data => resolve(data))
+                        .catch(async e => {
+                            console.error(e);
+                            await this.$alert(this.$t('error.generic'), 'danger');
+                            reject();
+                        });
+                });
+            }
         }
     }
 </script>

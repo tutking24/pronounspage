@@ -236,7 +236,7 @@
         watch: {
             async q() {
                 if (this.q === this.questions.length) {
-                    await this.$axios.$post(`/census/submit`, {
+                    await this.$post(`/census/submit`, {
                         answers: JSON.stringify(this.answers),
                         writins: JSON.stringify(this.writins),
                     });

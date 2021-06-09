@@ -107,20 +107,20 @@
         },
         methods: {
             async approve() {
-                await this.$axios.$post(`/sources/approve/${this.source.id}`);
+                await this.$post(`/sources/approve/${this.source.id}`);
                 this.source.approved = true;
                 this.source.base = null;
                 this.$forceUpdate();
             },
             async hide() {
-                await this.$axios.$post(`/sources/hide/${this.source.id}`);
+                await this.$post(`/sources/hide/${this.source.id}`);
                 this.source.approved = false;
                 this.$forceUpdate();
             },
             async remove() {
                 await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
 
-                await this.$axios.$post(`/sources/remove/${this.source.id}`);
+                await this.$post(`/sources/remove/${this.source.id}`);
                 this.deleted = true;
                 this.$forceUpdate();
             },

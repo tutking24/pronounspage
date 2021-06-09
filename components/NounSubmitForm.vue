@@ -145,22 +145,25 @@
         methods: {
             async submit(event) {
                 this.submitting = true;
-                await this.$axios.$post(`/nouns/submit`, this.form);
+                try {
+                    await this.$post(`/nouns/submit`, this.form);
 
-                this.submitting = false;
-                this.afterSubmit = true;
-                this.form = {
-                    masc: [''],
-                    fem: [''],
-                    neutr: [''],
-                    mascPl: this.config.nouns.pluralsRequired ? [''] : [],
-                    femPl: this.config.nouns.pluralsRequired ? [''] : [],
-                    neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
-                    sources: [],
-                    base: null,
-                };
-                this.templateVisible = false;
-                this.templateBase = '';
+                    this.afterSubmit = true;
+                    this.form = {
+                        masc: [''],
+                        fem: [''],
+                        neutr: [''],
+                        mascPl: this.config.nouns.pluralsRequired ? [''] : [],
+                        femPl: this.config.nouns.pluralsRequired ? [''] : [],
+                        neutrPl: this.config.nouns.pluralsRequired ? [''] : [],
+                        sources: [],
+                        base: null,
+                    };
+                    this.templateVisible = false;
+                    this.templateBase = '';
+                } finally {
+                    this.submitting = false;
+                }
             },
             edit(word) {
                 this.form = {

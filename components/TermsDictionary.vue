@@ -171,7 +171,7 @@
                 this.$refs.form.edit(entry);
             },
             async approve(entry) {
-                await this.$axios.$post(`/terms/approve/${entry.id}`);
+                await this.$post(`/terms/approve/${entry.id}`);
                 if (entry.base) {
                     delete this.entries[entry.base];
                 }
@@ -180,14 +180,14 @@
                 this.$forceUpdate();
             },
             async hide(entry) {
-                await this.$axios.$post(`/terms/hide/${entry.id}`);
+                await this.$post(`/terms/hide/${entry.id}`);
                 entry.approved = false;
                 this.$forceUpdate();
             },
             async remove(entry) {
                 await this.$confirm(this.$t('crud.removeConfirm'), 'danger');
 
-                await this.$axios.$post(`/terms/remove/${entry.id}`);
+                await this.$post(`/terms/remove/${entry.id}`);
                 delete this.entries[entry.id];
                 this.$forceUpdate();
             },

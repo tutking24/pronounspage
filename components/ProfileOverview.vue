@@ -40,9 +40,12 @@
                 await this.$confirm(this.$t('profile.deleteConfirm'), 'danger');
 
                 this.deleting = true;
-                const response = await this.$axios.$post(`/profile/delete/${locale}`);
-                this.deleting = false;
-                this.$emit('update', response);
+                try {
+                    const response = await this.$post(`/profile/delete/${locale}`);
+                    this.$emit('update', response);
+                } finally {
+                    this.deleting = false;
+                }
             },
         },
     }

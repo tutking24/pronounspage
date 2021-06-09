@@ -160,56 +160,62 @@
 
                 if (this.savingUsername) { return; }
                 this.savingUsername = true;
-                const response = await this.$axios.$post(`/user/change-username`, {
-                    username: this.username,
-                });
-                this.savingUsername = false;
-
-                if (response.error) {
-                    this.error = response.error;
-                    return;
-                }
-
-                this.$store.commit('setToken', response.token);
-                this.$cookies.set('token', this.$store.state.token, cookieSettings);
-                this.message = 'crud.saved';
-                this.messageIcon = 'check-circle';
-                setTimeout(() => this.message = '', 3000);
-            },
-            async changeEmail() {
-                this.error = '';
-
-                if (this.savingEmail) { return; }
-                this.savingEmail = true;
-                const response = await this.$axios.$post(`/user/change-email`, {
-                    email: this.email,
-                    authId: this.changeEmailAuthId,
-                    code: this.code,
-                });
-                this.savingEmail = false;
-
-                if (response.error) {
-                    this.error = response.error;
-                    return;
-                }
-
-                if (!this.changeEmailAuthId) {
-                    this.changeEmailAuthId = response.authId;
-                    this.message = 'user.login.emailSent';
-                    this.messageIcon = 'envelope-open-text';
-                    this.$nextTick(_ => {
-                        this.$refs.code.focus();
+                try {
+                    const response = await this.$post(`/user/change-username`, {
+                        username: this.username,
                     });
-                } else {
-                    this.changeEmailAuthId = null;
-                    this.message = '';
-                    this.code = null;
+
+                    if (response.error) {
+                        this.error = response.error;
+                        return;
+                    }
 
                     this.$store.commit('setToken', response.token);
                     this.$cookies.set('token', this.$store.state.token, cookieSettings);
                     this.message = 'crud.saved';
                     this.messageIcon = 'check-circle';
                     setTimeout(() => this.message = '', 3000);
+                } finally {
+                    this.savingUsername = false;
+                }
+            },
+            async changeEmail() {
+                this.error = '';
+
+                if (this.savingEmail) { return; }
+                this.savingEmail = true;
+                try {
+                    const response = await this.$post(`/user/change-email`, {
+                        email: this.email,
+                        authId: this.changeEmailAuthId,
+                        code: this.code,
+                    });
+
+                    if (response.error) {
+                        this.error = response.error;
+                        return;
+                    }
+
+                    if (!this.changeEmailAuthId) {
+                        this.changeEmailAuthId = response.authId;
+                        this.message = 'user.login.emailSent';
+                        this.messageIcon = 'envelope-open-text';
+                        this.$nextTick(_ => {
+                            this.$refs.code.focus();
+                        });
+                    } else {
+                        this.changeEmailAuthId = null;
+                        this.message = '';
+                        this.code = null;
+
+                        this.$store.commit('setToken', response.token);
+                        this.$cookies.set('token', this.$store.state.token, cookieSettings);
+                        this.message = 'crud.saved';
+                        this.messageIcon = 'check-circle';
+                        setTimeout(() => this.message = '', 3000);
+                    }
+                } finally {
+                    this.savingEmail = false;
                 }
             },
             logout() {
@@ -222,12 +228,11 @@
             async deleteAccount() {
                 await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
 
-                const response = await this.$axios.$post(`/user/delete`);
-
+                const response = await this.$post(`/user/delete`);
                 this.logout();
             },
             async setAvatar(source) {
-                const response = await this.$axios.$post(`/user/set-avatar`, {source});
+                const response = await this.$post(`/user/set-avatar`, {source});
 
                 this.$store.commit('setToken', response.token);
                 this.$cookies.set('token', this.$store.state.token, cookieSettings);

@@ -48,9 +48,12 @@
                 await this.$confirm(this.$t('user.socialConnection.disconnectConfirm', {email: this.$user().email}), 'danger');
 
                 this.disconnecting = true;
-                const response = await this.$axios.$post(`/user/social-connection/${this.provider}/disconnect`);
-                this.disconnecting = false;
-                this.$emit('disconnected', response);
+                try {
+                    const response = await this.$post(`/user/social-connection/${this.provider}/disconnect`);
+                    this.$emit('disconnected', response);
+                } finally {
+                    this.disconnecting = false;
+                }
             },
         },
     }

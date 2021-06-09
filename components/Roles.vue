@@ -53,7 +53,7 @@
 
                 await this.$confirm(this.$t('admin.user.confirmRole', {username: this.user.username, role: roles}));
 
-                const response = await this.$axios.$post(`/user/${this.user.id}/set-roles`, { roles:  roles});
+                const response = await this.$post(`/user/${this.user.id}/set-roles`, { roles:  roles});
 
                 this.user.roles = roles;
             }

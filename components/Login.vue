@@ -120,7 +120,7 @@
             async post(url, data, options = {}) {
                 this.error = '';
 
-                const response = await this.$axios.$post(url, data, options);
+                const response = await this.$post(url, data, options);
 
                 this.usernameOrEmail = '';
                 this.code = '';
