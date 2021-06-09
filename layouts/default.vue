@@ -10,7 +10,7 @@
         <div class="container">
             <Footer/>
         </div>
-        <Confirm ref="confirm"/>
+        <DialogueBox ref="dialogue"/>
         <Lightbox/>
     </div>
 </template>
@@ -20,9 +20,14 @@
 
     export default {
         mounted() {
+            Vue.prototype.$alert = (message, color='primary') => {
+                return new Promise((resolve, reject) => {
+                    this.$refs.dialogue.show(false, message, color, resolve, reject);
+                });
+            };
             Vue.prototype.$confirm = (message, color='primary') => {
                 return new Promise((resolve, reject) => {
-                    this.$refs.confirm.show(message, color, resolve, reject);
+                    this.$refs.dialogue.show(true, message, color, resolve, reject);
                 });
             };
         }

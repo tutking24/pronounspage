@@ -604,7 +604,7 @@ links:
             icon: 'cogs'
             url: 'http://dobrerzeczy.online/femaleSwitcher/'
             headline: 'Female switcher'
-            extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński'
+            extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński.'
 
 people:
     enabled: false

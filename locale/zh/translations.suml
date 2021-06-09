@@ -435,6 +435,7 @@ confirm:
     header: '你有準兒沒有？'
     yes: '是的，我有準兒!'
     no: '不是…'
+    ok: 'OK'
 
 terms:
     header: '服務條款'

@@ -450,6 +450,7 @@ confirm:
     header: 'Weet je zeker dat?'
     yes: 'Ja, dat weet ik zeker'
     no: 'Nee, annuleer'
+    ok: 'OK'
 
 terms:
     header: 'Gebruiksvoorwaarden'

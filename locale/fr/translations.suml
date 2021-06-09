@@ -437,6 +437,7 @@ confirm:
     header: 'Êtes-vous sûrs?'
     yes: 'Oui, je suis sûr'
     no: 'Non, annuler'
+    ok: 'OK'
 
 terms:
     header: 'Conditions d''Utilisation'

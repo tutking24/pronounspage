@@ -522,6 +522,7 @@ confirm:
     header: 'Are you sure?'
     yes: 'Yes, I''m sure'
     no: 'No, cancel'
+    ok: 'OK'
 
 terms:
     header: 'Terms of Service'

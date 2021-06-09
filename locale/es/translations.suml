@@ -456,6 +456,7 @@ confirm:
     header: '¿Confirmas esta decisión?'
     yes: 'Sí, lo estoy'
     no: 'No, cancelar'
+    ok: 'OK'
 
 terms:
     header: 'Térinos de Servicio'

@@ -12,6 +12,7 @@ confirm:
     header: 'Are you sure?'
     yes: 'Yes, I''m sure'
     no: 'No, cancel'
+    ok: 'OK'
 
 table:
     scrollUp: 'Scroll to the top'

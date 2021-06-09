@@ -454,6 +454,7 @@ confirm:
     header: 'Aplicar essa decisão?'
     yes: 'Sim'
     no: 'Não, cancelar'
+    ok: 'OK'
 
 terms:
     header: 'Termos de Serviço'

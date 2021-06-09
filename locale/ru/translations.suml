@@ -1026,6 +1026,7 @@ confirm:
     header: 'Czy jesteś pewnx?'
     yes: 'Tak, na pewno'
     no: 'Nie, anuluj'
+    ok: 'OK'
 
 terms:
     header: 'Regulamin'
