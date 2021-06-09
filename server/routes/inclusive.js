@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {isTroll} from "../../src/helpers";
+import {isTroll, handleErrorAsync} from "../../src/helpers";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM inclusive WHERE id=${id}`);
@@ -21,7 +21,7 @@ const approve = async (db, id) => {
 
 const router = Router();
 
-router.get('/inclusive', async (req, res) => {
+router.get('/inclusive', handleErrorAsync(async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
@@ -30,9 +30,9 @@ router.get('/inclusive', async (req, res) => {
         AND i.deleted = 0
         ORDER BY i.approved, i.insteadOf
     `));
-});
+}));
 
-router.get('/inclusive/search/:term', async (req, res) => {
+router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM inclusive i
@@ -43,9 +43,9 @@ router.get('/inclusive/search/:term', async (req, res) => {
         AND (i.insteadOf like ${term} OR i.say like ${term})
         ORDER BY i.approved, i.insteadOf
     `));
-});
+}));
 
-router.post('/inclusive/submit', async (req, res) => {
+router.post('/inclusive/submit', handleErrorAsync(async (req, res) => {
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
@@ -66,9 +66,9 @@ router.post('/inclusive/submit', async (req, res) => {
     }
 
     return res.json('ok');
-});
+}));
 
-router.post('/inclusive/hide/:id', async (req, res) => {
+router.post('/inclusive/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -80,9 +80,9 @@ router.post('/inclusive/hide/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
-router.post('/inclusive/approve/:id', async (req, res) => {
+router.post('/inclusive/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -90,9 +90,9 @@ router.post('/inclusive/approve/:id', async (req, res) => {
     await approve(req.db, req.params.id);
 
     return res.json('ok');
-});
+}));
 
-router.post('/inclusive/remove/:id', async (req, res) => {
+router.post('/inclusive/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('inclusive')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -104,6 +104,6 @@ router.post('/inclusive/remove/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
 export default router;

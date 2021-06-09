@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {buildDict, makeId, now} from "../../src/helpers";
+import {buildDict, makeId, now, handleErrorAsync} from "../../src/helpers";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import { loadSuml } from '../loader';
@@ -174,7 +174,7 @@ const router = Router();
 
 router.use(reloadUser);
 
-router.post('/user/init', async (req, res) => {
+router.post('/user/init', handleErrorAsync(async (req, res) => {
     let user = undefined;
     let usernameOrEmail = req.body.usernameOrEmail;
 
@@ -232,9 +232,9 @@ router.post('/user/init', async (req, res) => {
     return res.json({
         token: jwt.sign({...payload, code: null, codeKey}, '15m'),
     });
-});
+}));
 
-router.post('/user/validate', async (req, res) => {
+router.post('/user/validate', handleErrorAsync(async (req, res) => {
     if (!req.rawUser || !req.rawUser.codeKey) {
         return res.json({error: 'user.tokenExpired'});
     }
@@ -251,9 +251,9 @@ router.post('/user/validate', async (req, res) => {
     await invalidateAuthenticator(req.db, authenticator);
 
     return res.json({token: await issueAuthentication(req.db, req.rawUser)});
-});
+}));
 
-router.post('/user/change-username', async (req, res) => {
+router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -270,9 +270,9 @@ router.post('/user/change-username', async (req, res) => {
     await req.db.get(SQL`UPDATE users SET username = ${req.body.username} WHERE id = ${req.user.id}`);
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
-});
+}));
 
-router.post('/user/change-email', async (req, res) => {
+router.post('/user/change-email', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -319,9 +319,9 @@ router.post('/user/change-email', async (req, res) => {
     req.user.email = authenticator.payload.to;
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
-});
+}));
 
-router.post('/user/delete', async (req, res) => {
+router.post('/user/delete', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -331,9 +331,9 @@ router.post('/user/delete', async (req, res) => {
     await req.db.get(SQL`DELETE FROM users WHERE id = ${req.user.id}`)
 
     return res.json(true);
-});
+}));
 
-router.post('/user/:id/set-roles', async (req, res) => {
+router.post('/user/:id/set-roles', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('*')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -341,9 +341,9 @@ router.post('/user/:id/set-roles', async (req, res) => {
     await req.db.get(SQL`UPDATE users SET roles = ${req.body.roles} WHERE id = ${req.params.id}`);
 
     return res.json('ok');
-});
+}));
 
-router.get('/user/social/:provider', async (req, res) => {
+router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
         return res.status(400).redirect('/' + config.user.route);
     }
@@ -382,9 +382,9 @@ router.get('/user/social/:provider', async (req, res) => {
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
 
     return res.cookie('token', token).redirect('/' + config.user.route);
-});
+}));
 
-router.get('/user/social-connections', async (req, res) => {
+router.get('/user/social-connections', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -401,9 +401,9 @@ router.get('/user/social-connections', async (req, res) => {
             yield [auth.type, JSON.parse(auth.payload)];
         }
     }));
-});
+}));
 
-router.post('/user/social-connection/:provider/disconnect', async (req, res) => {
+router.post('/user/social-connection/:provider/disconnect', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -418,9 +418,9 @@ router.post('/user/social-connection/:provider/disconnect', async (req, res) => 
     await invalidateAuthenticator(req.db, auth.id)
 
     return res.json('ok');
-});
+}));
 
-router.post('/user/set-avatar', async (req, res) => {
+router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -432,6 +432,6 @@ router.post('/user/set-avatar', async (req, res) => {
     `)
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
-});
+}));
 
 export default router;

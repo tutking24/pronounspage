@@ -3,6 +3,7 @@ import SQL from 'sql-template-strings';
 import md5 from "js-md5";
 import {ulid} from "ulid";
 import avatar from "../avatar";
+import {handleErrorAsync} from "../../src/helpers";
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -58,11 +59,11 @@ const fetchProfiles = async (db, username, self) => {
 
 const router = Router();
 
-router.get('/profile/get/:username', async (req, res) => {
+router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     return res.json(await fetchProfiles(req.db, req.params.username, req.user && req.user.username === req.params.username))
-});
+}));
 
-router.post('/profile/save', async (req, res) => {
+router.post('/profile/save', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -97,12 +98,12 @@ router.post('/profile/save', async (req, res) => {
     }
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
-});
+}));
 
-router.post('/profile/delete/:locale', async (req, res) => {
+router.post('/profile/delete/:locale', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
-});
+}));
 
 export default router;

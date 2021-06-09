@@ -2,6 +2,7 @@ import { Router } from 'express';
 import {ulid} from "ulid";
 import multer from 'multer';
 import {loadImage, createCanvas} from 'canvas';
+import {handleErrorAsync} from "../../src/helpers";
 
 import awsConfig from '../aws';
 import S3 from 'aws-sdk/clients/s3';
@@ -43,7 +44,7 @@ const scaleDownTo = (image, size) => {
 
 const router = Router();
 
-router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any('images[]', 12), async (req, res) => {
+router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any('images[]', 12), handleErrorAsync(async (req, res) => {
     const s3 = new S3(awsConfig);
 
     const ids = [];
@@ -75,6 +76,6 @@ router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any
         ids.push(id);
     }
     return res.json(ids);
-});
+}));
 
 export default router;

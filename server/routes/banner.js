@@ -5,6 +5,7 @@ import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {loadTsv} from "../../src/tsv";
+import {handleErrorAsync} from "../../src/helpers";
 
 const translations = loadSuml('translations');
 
@@ -26,7 +27,7 @@ const drawCircle = (context, image, x, y, size) => {
 
 const router = Router();
 
-router.get('/banner/:pronounName*.png', async (req, res) => {
+router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
     const pronounName = req.params.pronounName + req.params[0];
     const width = 1200
     const height = 600
@@ -97,6 +98,6 @@ router.get('/banner/:pronounName*.png', async (req, res) => {
     context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24))
 
     return res.set('content-type', mime).send(canvas.toBuffer(mime));
-});
+}));
 
 export default router;

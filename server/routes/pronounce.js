@@ -3,6 +3,7 @@ import { loadTsv } from '../loader';
 import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {Example} from "../../src/classes";
 import sha1 from 'sha1';
+import {handleErrorAsync} from "../../src/helpers";
 
 import awsConfig from '../aws';
 import Polly from 'aws-sdk/clients/polly';
@@ -10,7 +11,7 @@ import S3 from 'aws-sdk/clients/s3';
 
 const router = Router();
 
-router.get('/pronounce/:voice/:pronoun*', async (req, res) => {
+router.get('/pronounce/:voice/:pronoun*', handleErrorAsync(async (req, res) => {
     const pronounString = req.params.pronoun + req.params[0];
     const pronoun = buildPronoun(
         parsePronouns(loadTsv('pronouns/pronouns')),
@@ -65,6 +66,6 @@ router.get('/pronounce/:voice/:pronoun*', async (req, res) => {
 
         return res.set('content-type', pollyResponse.ContentType).send(pollyResponse.AudioStream);
     }
-});
+}));
 
 export default router;

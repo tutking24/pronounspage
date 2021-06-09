@@ -2,13 +2,13 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
-import {buildDict, now, shuffle, sortByValue} from "../../src/helpers";
+import {buildDict, now, shuffle, sortByValue, handleErrorAsync} from "../../src/helpers";
 import locales from '../../src/locales';
 import {decodeTime} from "ulid";
 
 const router = Router();
 
-router.get('/admin/list', async (req, res) => {
+router.get('/admin/list', handleErrorAsync(async (req, res) => {
     const admins = await req.db.all(SQL`
         SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
         FROM users u
@@ -39,9 +39,9 @@ router.get('/admin/list', async (req, res) => {
     }
 
     return res.json(adminsGroupped);
-});
+}));
 
-router.get('/admin/list/footer', async (req, res) => {
+router.get('/admin/list/footer', handleErrorAsync(async (req, res) => {
     const fromDb = await req.db.all(SQL`
         SELECT u.username, p.footerName, p.footerAreas, p.locale
         FROM users u
@@ -54,9 +54,9 @@ router.get('/admin/list/footer', async (req, res) => {
     const fromConfig = req.config.contact.authors || [];
 
     return res.json(shuffle([...fromDb, ...fromConfig]));
-});
+}));
 
-router.get('/admin/users', async (req, res) => {
+router.get('/admin/users', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -96,7 +96,7 @@ router.get('/admin/users', async (req, res) => {
     }
 
     return res.json(groupedUsers);
-});
+}));
 
 const formatMonth = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
 
@@ -120,7 +120,7 @@ const buildChart = (rows) => {
     return chart;
 }
 
-router.get('/admin/stats', async (req, res) => {
+router.get('/admin/stats', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
@@ -177,6 +177,6 @@ router.get('/admin/stats', async (req, res) => {
     }
 
     return res.json({ users, locales });
-});
+}));
 
 export default router;

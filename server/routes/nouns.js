@@ -3,7 +3,7 @@ import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
-import {buildDict, isTroll} from "../../src/helpers";
+import {handleErrorAsync, isTroll} from "../../src/helpers";
 
 const translations = loadSuml('translations');
 
@@ -68,7 +68,7 @@ const selectFragment = (sourcesMap, keyAndFragment) => {
 
 const router = Router();
 
-router.get('/nouns', async (req, res) => {
+router.get('/nouns', handleErrorAsync(async (req, res) => {
     return res.json(await addVersions(req, await req.db.all(SQL`
         SELECT n.*, u.username AS author FROM nouns n
         LEFT JOIN users u ON n.author_id = u.id
@@ -77,9 +77,9 @@ router.get('/nouns', async (req, res) => {
         AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
         ORDER BY n.approved, n.masc
     `)));
-});
+}));
 
-router.get('/nouns/search/:term', async (req, res) => {
+router.get('/nouns/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await addVersions(req, await req.db.all(SQL`
         SELECT n.*, u.username AS author FROM nouns n
@@ -90,9 +90,9 @@ router.get('/nouns/search/:term', async (req, res) => {
         AND (n.masc like ${term} OR n.fem like ${term} OR n.neutr like ${term} OR n.mascPl like ${term} OR n.femPl like ${term} OR n.neutrPl like ${term})
         ORDER BY n.approved, n.masc
     `)));
-});
+}));
 
-router.post('/nouns/submit', async (req, res) => {
+router.post('/nouns/submit', handleErrorAsync(async (req, res) => {
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
@@ -114,9 +114,9 @@ router.post('/nouns/submit', async (req, res) => {
     }
 
     return res.json('ok');
-});
+}));
 
-router.post('/nouns/hide/:id', async (req, res) => {
+router.post('/nouns/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -128,9 +128,9 @@ router.post('/nouns/hide/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
-router.post('/nouns/approve/:id', async (req, res) => {
+router.post('/nouns/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -138,9 +138,9 @@ router.post('/nouns/approve/:id', async (req, res) => {
     await approve(req.db, req.params.id);
 
     return res.json('ok');
-});
+}));
 
-router.post('/nouns/remove/:id', async (req, res) => {
+router.post('/nouns/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -152,7 +152,7 @@ router.post('/nouns/remove/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
 const findBaseForm = (noun, query) => {
     for (let form of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
@@ -166,7 +166,7 @@ const findBaseForm = (noun, query) => {
     return null;
 }
 
-router.get('/nouns/:word.png', async (req, res) => {
+router.get('/nouns/:word.png', handleErrorAsync(async (req, res) => {
     const query = req.params.word.toLowerCase();
     const term = '%' + query + '%';
     const noun = (await req.db.all(SQL`
@@ -233,6 +233,6 @@ router.get('/nouns/:word.png', async (req, res) => {
     context.fillText(translations.title, padding + 48, height - padding - 4);
 
     return res.set('content-type', mime).send(canvas.toBuffer(mime));
-});
+}));
 
 export default router;

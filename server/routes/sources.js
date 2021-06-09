@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import SQL from "sql-template-strings";
 import {ulid} from "ulid";
+import {handleErrorAsync} from "../../src/helpers";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM sources WHERE id=${id}`);
@@ -46,7 +47,7 @@ const linkOtherVersions = async (req, sources) => {
 
 const router = Router();
 
-router.get('/sources', async (req, res) => {
+router.get('/sources', handleErrorAsync(async (req, res) => {
     let sql = SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
@@ -58,9 +59,9 @@ router.get('/sources', async (req, res) => {
         sql.append(SQL`AND s.pronouns LIKE ${'%' + req.query.pronoun + '%'}`)
     }
     return res.json(await linkOtherVersions(req, await req.db.all(sql)));
-});
+}));
 
-router.get('/sources/:id', async (req, res) => {
+router.get('/sources/:id', handleErrorAsync(async (req, res) => {
     return res.json(await linkOtherVersions(req, await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
@@ -69,9 +70,9 @@ router.get('/sources/:id', async (req, res) => {
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
         AND s.id = ${req.params.id}
     `)));
-});
+}));
 
-router.post('/sources/submit', async (req, res) => {
+router.post('/sources/submit', handleErrorAsync(async (req, res) => {
     const id = ulid();
     await req.db.get(SQL`
         INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, submitter_id, base_id)
@@ -89,9 +90,9 @@ router.post('/sources/submit', async (req, res) => {
     }
 
     return res.json('ok');
-});
+}));
 
-router.post('/sources/hide/:id', async (req, res) => {
+router.post('/sources/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -103,9 +104,9 @@ router.post('/sources/hide/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
-router.post('/sources/approve/:id', async (req, res) => {
+router.post('/sources/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -113,9 +114,9 @@ router.post('/sources/approve/:id', async (req, res) => {
     await approve(req.db, req.params.id);
 
     return res.json('ok');
-});
+}));
 
-router.post('/sources/remove/:id', async (req, res) => {
+router.post('/sources/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -127,6 +128,6 @@ router.post('/sources/remove/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
 export default router;

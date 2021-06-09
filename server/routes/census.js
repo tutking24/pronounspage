@@ -3,6 +3,7 @@ import SQL from 'sql-template-strings';
 import sha1 from 'sha1';
 import {ulid} from "ulid";
 import Papa from 'papaparse';
+import {handleErrorAsync} from "../../src/helpers";
 
 const getIp = req => {
     try {
@@ -42,11 +43,11 @@ const hasFinished = async req => {
 
 const router = Router();
 
-router.get('/census/finished', async (req, res) => {
+router.get('/census/finished', handleErrorAsync(async (req, res) => {
     return res.json(await hasFinished(req));
-});
+}));
 
-router.post('/census/submit', async (req, res) => {
+router.post('/census/submit', handleErrorAsync(async (req, res) => {
     const suspicious = await hasFinished(req);
 
     const id = ulid();
@@ -65,17 +66,17 @@ router.post('/census/submit', async (req, res) => {
     )`);
 
     return res.json(id);
-});
+}));
 
-router.get('/census/count', async (req, res) => {
+router.get('/census/count', handleErrorAsync(async (req, res) => {
     return res.json((await req.db.get(SQL`
         SELECT COUNT(*) as c FROM census
         WHERE locale = ${req.config.locale}
         AND edition = ${req.config.census.edition}
     `)).c);
-});
+}));
 
-router.get('/census/export', async (req, res) => {
+router.get('/census/export', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('census')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -110,6 +111,6 @@ router.get('/census/export', async (req, res) => {
     }
 
     return res.set('content-type', 'text/csv').send(Papa.unparse(report));
-});
+}));
 
 export default router;

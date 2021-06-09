@@ -200,3 +200,7 @@ export const isGranted = (user, locale, area) => {
 
     return false;
 }
+
+export const handleErrorAsync = func => (req, res, next) => {
+    func(req, res, next).catch((error) => next(error));
+};

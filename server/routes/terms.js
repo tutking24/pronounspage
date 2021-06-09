@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {isTroll} from "../../src/helpers";
+import {isTroll, handleErrorAsync} from "../../src/helpers";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM terms WHERE id=${id}`);
@@ -21,7 +21,7 @@ const approve = async (db, id) => {
 
 const router = Router();
 
-router.get('/terms', async (req, res) => {
+router.get('/terms', handleErrorAsync(async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM terms i
         LEFT JOIN users u ON i.author_id = u.id
@@ -30,9 +30,9 @@ router.get('/terms', async (req, res) => {
         AND i.deleted = 0
         ORDER BY i.term
     `));
-});
+}));
 
-router.get('/terms/search/:term', async (req, res) => {
+router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM terms i
@@ -43,9 +43,9 @@ router.get('/terms/search/:term', async (req, res) => {
         AND (i.term like ${term} OR i.original like ${term})
         ORDER BY i.term
     `));
-});
+}));
 
-router.post('/terms/submit', async (req, res) => {
+router.post('/terms/submit', handleErrorAsync(async (req, res) => {
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }
@@ -66,9 +66,9 @@ router.post('/terms/submit', async (req, res) => {
     }
 
     return res.json('ok');
-});
+}));
 
-router.post('/terms/hide/:id', async (req, res) => {
+router.post('/terms/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -80,9 +80,9 @@ router.post('/terms/hide/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
-router.post('/terms/approve/:id', async (req, res) => {
+router.post('/terms/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -90,9 +90,9 @@ router.post('/terms/approve/:id', async (req, res) => {
     await approve(req.db, req.params.id);
 
     return res.json('ok');
-});
+}));
 
-router.post('/terms/remove/:id', async (req, res) => {
+router.post('/terms/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('terms')) {
         res.status(401).json({error: 'Unauthorised'});
     }
@@ -104,6 +104,6 @@ router.post('/terms/remove/:id', async (req, res) => {
     `);
 
     return res.json('ok');
-});
+}));
 
 export default router;
