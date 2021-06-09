@@ -30,9 +30,9 @@
                     this.$refs.dialogue.show(true, message, color, resolve, reject);
                 });
             };
-            Vue.prototype.$post = (url, data, timeout = 30000) => {
+            Vue.prototype.$post = (url, data, options = {}, timeout = 30000) => {
                 return new Promise((resolve, reject) => {
-                    this.$axios.$post(url, data, {timeout})
+                    this.$axios.$post(url, data, {...options, timeout})
                         .then(data => resolve(data))
                         .catch(async e => {
                             console.error(e);
