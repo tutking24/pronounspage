@@ -2,6 +2,7 @@ import Vue from 'vue'
 import t from '../src/translator';
 import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
+import {DateTime} from "luxon";
 
 export default ({ app, store }) => {
     Vue.prototype.$eventHub = new Vue();
@@ -41,4 +42,9 @@ export default ({ app, store }) => {
         s.classList.add(`${name}-script`);
         document.body.appendChild(s);
     };
+
+    Vue.prototype.$datetime = (timestamp) => {
+        const dt = DateTime.fromSeconds(timestamp);
+        return dt.toFormat('y-MM-dd HH:mm')
+    }
 }

@@ -153,6 +153,7 @@ export default {
         LOCALES: locales,
         FLAGS: buildFlags(),
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
+        STATS_FILE: process.env.STATS_FILE,
     },
     serverMiddleware: ['~/server/index.js'],
     axios: {

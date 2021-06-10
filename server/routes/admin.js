@@ -2,9 +2,10 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
-import {buildDict, now, shuffle, sortByValue, handleErrorAsync} from "../../src/helpers";
+import {buildDict, now, shuffle, handleErrorAsync} from "../../src/helpers";
 import locales from '../../src/locales';
-import {decodeTime} from "ulid";
+import {calculateStats, statsFile} from '../../src/stats';
+import fs from 'fs';
 
 const router = Router();
 
@@ -98,85 +99,22 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     return res.json(groupedUsers);
 }));
 
-const formatMonth = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
-
-const buildChart = (rows) => {
-    const dates = rows.map(row => new Date(decodeTime(row.id)));
-
-    const chart = {};
-
-    let loop = dates[0];
-    const end = dates[dates.length - 1];
-    while(loop <= end){
-        chart[formatMonth(loop)] = 0;
-        loop = new Date(loop.setDate(loop.getDate() + 1));
-    }
-    chart[formatMonth(loop)] = 0;
-
-    for (let date of dates) {
-        chart[formatMonth(date)]++;
-    }
-
-    return chart;
-}
-
 router.get('/admin/stats', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const users = {
-        overall: (await req.db.get(SQL`SELECT count(*) AS c FROM users`)).c,
-        admins: (await req.db.get(SQL`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
-        chart: buildChart(await req.db.all(SQL`SELECT id FROM users ORDER BY id`)),
-    };
+    const stats = fs.existsSync(statsFile)
+        ? JSON.parse(fs.readFileSync(statsFile))
+        : await calculateStats(req.db, req.locales);
 
-    const locales = {};
-    for (let locale in req.locales) {
-        if (!req.locales.hasOwnProperty(locale)) { continue; }
-        if (!req.isGranted('panel', locale)) { continue; }
-        const profiles = await req.db.all(SQL`SELECT pronouns, flags FROM profiles WHERE locale=${locale}`);
-        const pronouns = {}
-        const flags = {}
-        for (let profile of profiles) {
-            const pr = JSON.parse(profile.pronouns);
-            for (let pronoun in pr) {
-                if (!pr.hasOwnProperty(pronoun)) { continue; }
-
-                if (pronoun.includes(',') || pr[pronoun] < 0) {
-                    continue;
-                }
-                const p = pronoun.replace(/^.*:\/\//, '').replace(/^\//, '').toLowerCase().replace(/^[a-z]+\.[^/]+\//, '');
-                if (pronouns[p] === undefined) {
-                    pronouns[p] = 0;
-                }
-                pronouns[p] += pr[pronoun] === 1 ? 1 : 0.5;
-            }
-
-            const fl = JSON.parse(profile.flags);
-            for (let flag of fl) {
-                if (flags[flag] === undefined) {
-                    flags[flag] = 0;
-                }
-                flags[flag] += 1;
-            }
+    for (let locale in stats.locales) {
+        if (stats.locales.hasOwnProperty(locale) && !req.isGranted('panel', locale)) {
+            delete stats.locales[locale];
         }
-
-        locales[locale] = {
-            name: req.locales[locale].name,
-            url: req.locales[locale].url,
-            profiles: profiles.length,
-            pronouns: sortByValue(pronouns, true),
-            flags: sortByValue(flags, true),
-            nouns: {
-                approved: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=1 AND deleted=0`)).c,
-                awaiting: (await req.db.get(SQL`SELECT count(*) AS c FROM nouns WHERE locale=${locale} AND approved=0 AND deleted=0`)).c,
-            },
-            chart: buildChart(await req.db.all(SQL`SELECT id FROM profiles WHERE locale=${locale} ORDER BY id`)),
-        };
     }
 
-    return res.json({ users, locales });
+    return res.json(stats);
 }));
 
 export default router;

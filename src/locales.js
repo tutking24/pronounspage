@@ -1,4 +1,4 @@
-export default [
+module.exports = [
     ['de', 'Deutsch',    'https://de.pronouns.page', false],
     ['es', 'Español',    'https://es.pronouns.page', true],
     ['en', 'English',    'https://en.pronouns.page', true],

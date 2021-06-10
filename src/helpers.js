@@ -164,16 +164,6 @@ export const zip = (list, reverse) => {
     });
 }
 
-export const sortByValue = (obj, reverse = false) => {
-    const sortedArray = [];
-    for (let i in obj) {
-        if (obj.hasOwnProperty(i)) {
-            sortedArray.push([parseInt(obj[i]), i]);
-        }
-    }
-    return zip(sortedArray.sort((a, b) => reverse ? b[0] - a[0] : a[0] - b[0]), true);
-}
-
 // https://stackoverflow.com/a/6274381/3297012
 export const shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {

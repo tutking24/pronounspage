@@ -6,6 +6,8 @@
             <T>admin.header</T>
         </h2>
 
+        <p>Stats counted: {{$datetime(stats.calculatedAt)}}</p>
+
         <section v-if="$isGranted('users')">
             <details class="border mb-3" @click="loadUsers">
                 <summary class="bg-light p-3">
