@@ -11,6 +11,8 @@ body[data-theme="dark"] {
   a:hover { color: lighten($primary, 30%); }
   .text-dark { color: $light !important; }
   .btn-outline-primary { color: $light; &:hover {color: $light;}}
+  .btn-outline-success { color: lighten($success, 20%); &:hover {color: $light;} }
+  .alert-info { background-color: darken($info, 35%); border-color: darken($info, 25%); color: $light; }
 
   /* BUTTONS */
 
@@ -183,8 +185,8 @@ body[data-theme="dark"] {
 
   .form-control::-webkit-input-placeholder,
   .form-control::-moz-placeholder,
-  .form-control::placeholder { color: #ccc; }
-  .form-control-plaintext { color: #ccc; }
+  .form-control::placeholder { color: $light; }
+  .form-control-plaintext { color: $light; }
   .form-control { color: #fff; background-color: #333; border: 1px solid #111; }
   .form-select { color: #fff; border-color: #111 !important; background: #333 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px; border: 1px solid #111; }
   .form-select:focus { border-color: #dc3545; box-shadow: 0 0 0 0.2rem #dc3545; background-color: rgba(255,0,0,0.1); }
@@ -207,7 +209,7 @@ body[data-theme="dark"] {
     }
   }
 
-  .icon {
+  .icon, .revesible {
     filter: invert(1);
   }
 

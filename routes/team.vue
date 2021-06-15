@@ -6,7 +6,7 @@
         </h2>
 
         <figure class="float-end border rounded">
-            <img src="/img/collective-logo.svg" alt=""/>
+            <img src="/img/collective-logo.svg" alt="" class="revesible"/>
             <figcaption>
                 <p><T>contact.team.logo</T></p>
                 <p class="text-center bigger mb-0">
