@@ -502,6 +502,10 @@ images:
 error:
     generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'
     Abrosexual: 'Abrosexual'

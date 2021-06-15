@@ -481,6 +481,10 @@ images:
 error:
     generic: '出了點問題，請重試...'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abrosexual: '嫩性戀'
     Abroromantic: '嫩浪漫傾向'

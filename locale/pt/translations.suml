@@ -500,6 +500,10 @@ images:
 error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'Abrorromânti{inflection_c}'
     Abrosexual: 'Abrossexual'

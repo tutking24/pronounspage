@@ -8,6 +8,8 @@
         <section>
             <T>home.about</T>
 
+            <ModeSwitch class="mt-3"/>
+
             <div v-if="!user && $t('profile.banner', {}, false)" class="alert alert-info">
                 <nuxt-link :to="'/' + config.user.route" class="float-end btn btn-primary m-2 me-0">
                     <Icon v="id-card"/>

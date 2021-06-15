@@ -513,6 +513,10 @@ images:
 error:
     generic: 'Something went wrong, please try again…'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'אַבראָראָמאַנטיש'
     Abrosexual: 'אַבראָסעקסועל'

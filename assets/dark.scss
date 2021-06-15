@@ -10,6 +10,7 @@ body[data-theme="dark"] {
   a { color: lighten($primary, 40%); }
   a:hover { color: lighten($primary, 30%); }
   .text-dark { color: $light !important; }
+  .btn-primary { color: $light; }
   .btn-outline-primary { color: $light; &:hover {color: $light;}}
   .btn-outline-success { color: lighten($success, 20%); &:hover {color: $light;} }
   .alert-info { background-color: darken($info, 35%); border-color: darken($info, 25%); color: $light; }

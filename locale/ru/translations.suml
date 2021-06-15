@@ -1072,6 +1072,10 @@ images:
 error:
     generic: 'Coś poszło nie tak, spróbuj ponownie…'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'

@@ -1101,6 +1101,10 @@ images:
 error:
     generic: 'Coś poszło nie tak, spróbuj ponownie…'
 
+mode:
+    dark: 'Tryb nocny'
+    light: 'Tryb dzienny'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'

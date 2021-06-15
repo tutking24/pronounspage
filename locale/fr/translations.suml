@@ -483,6 +483,10 @@ images:
 error:
     generic: 'Quelque chose s''est rompu, essayez encore s''il vous plaît…'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'

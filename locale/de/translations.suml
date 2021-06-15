@@ -492,6 +492,10 @@ images:
 error:
     generic: 'Something went wrong, please try again…'  # TODO
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abrosexual: 'Abrosexuell'
     Achillean: 'Achillean'

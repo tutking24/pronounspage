@@ -4,6 +4,7 @@
             <label>
                 <input class="form-check-input" type="checkbox" v-model="isDark">
                 <Icon :v="isDark ? 'moon' : 'sun'"/>
+                {{ $t('mode.' + (isDark ? 'dark' : 'light')) }}
             </label>
         </div>
     </div>

@@ -496,6 +496,10 @@ images:
 error:
     generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
+mode:
+    dark: 'Dark mode'  # TODO
+    light: 'Light mode'
+
 flags:
     Abroromantic: 'Abroromantisch'
     Abrosexual: 'Abroseksueel'
