@@ -42,6 +42,8 @@ $fa-font-path: "~@fortawesome/fontawesome-pro/webfonts";
 @import "~@fortawesome/fontawesome-pro/scss/light";
 @import "~@fortawesome/fontawesome-pro/scss/brands";
 
+@import "./dark";
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 92px;

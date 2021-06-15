@@ -1,5 +1,5 @@
 <template>
-    <img v-if="icon.endsWith('.svg')" :src="`/img/${icon}`" :style="`height: ${size}em; width: ${size}em; display: inline;`" alt=""/>
+    <img v-if="icon.endsWith('.svg')" :src="`/img/${icon}`" :style="`height: ${size}em; width: ${size}em; display: inline;`" alt="" class="icon"/>
     <span v-else :class="['fa' + iconSet, 'fa-' + icon, 'fa-fw']" :style="`font-size: ${size}em`"></span>
 </template>
 

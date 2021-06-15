@@ -17,8 +17,10 @@
 
 <script>
     import Vue from 'vue';
+    import dark from "../plugins/dark";
 
     export default {
+        mixins: [dark],
         mounted() {
             Vue.prototype.$alert = (message, color='primary') => {
                 return new Promise((resolve, reject) => {
@@ -41,6 +43,7 @@
                         });
                 });
             };
+            this.setMode(this.detectDark());
         }
     }
 </script>
