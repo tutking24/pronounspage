@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <section v-if="$isGranted('users')">
+        <section v-if="$isGranted('users') && profile.bannedReason">
             <div class="alert alert-warning">
                 <p class="h4">
                     <Icon v="ban"/>
