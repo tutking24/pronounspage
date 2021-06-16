@@ -235,4 +235,12 @@ body[data-theme="dark"] {
       }
     }
   }
+
+  @include media-breakpoint-up('lg', $grid-breakpoints) {
+    header {
+      @supports not (backdrop-filter: blur(12px)) {
+        background-color: $dark;
+      }
+    }
+  }
 }
