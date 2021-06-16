@@ -128,6 +128,7 @@ sources:
         extra: 'Additional info (translator, name of journal, …)'
         year: 'Release year (of the English version)'
         fragments: 'Fragments'
+        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
         comment: 'Comment'
         link: 'Link to the content'
         thanks: 'Thanks for contributing!'
