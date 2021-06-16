@@ -1105,6 +1105,14 @@ mode:
     dark: 'Tryb nocny'
     light: 'Tryb dzienny'
 
+ban:
+    reason: 'Powód blokady'
+    action: 'Zablokuj tę osobę'
+    confirm: 'Czy na pewno chcesz zbanować @%username%?'
+    header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
+    banned: 'Zbanowanx'
+    termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}:'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'

@@ -24,9 +24,9 @@ const calcAge = birthday => {
     return parseInt(Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25));
 }
 
-const fetchProfiles = async (db, username, self) => {
+const fetchProfiles = async (db, username, self, isAdmin) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource, users.bannedReason FROM profiles LEFT JOIN users on users.id == profiles.userId 
         WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(username)}
         AND profiles.active = 1
         ORDER BY profiles.locale
@@ -34,6 +34,9 @@ const fetchProfiles = async (db, username, self) => {
 
     const p = {}
     for (let profile of profiles) {
+        if (profile.bannedReason !== null && !isAdmin && !self) {
+            return {};
+        }
         p[profile.locale] = {
             id: profile.id,
             userId: profile.userId,
@@ -52,6 +55,7 @@ const fetchProfiles = async (db, username, self) => {
             teamName: profile.teamName,
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
+            bannedReason: profile.bannedReason,
         };
     }
     return p;
@@ -60,7 +64,7 @@ const fetchProfiles = async (db, username, self) => {
 const router = Router();
 
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
-    return res.json(await fetchProfiles(req.db, req.params.username, req.user && req.user.username === req.params.username))
+    return res.json(await fetchProfiles(req.db, req.params.username, req.user && req.user.username === req.params.username, req.isGranted('users')))
 }));
 
 router.post('/profile/save', handleErrorAsync(async (req, res) => {

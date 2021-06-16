@@ -117,4 +117,20 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
     return res.json(stats);
 }));
 
+const normalise = s => s.trim().toLowerCase();
+
+router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE users
+        SET bannedReason = ${req.body.reason || null} 
+        WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(req.params.username)}
+    `);
+
+    return res.json(true);
+}));
+
 export default router;

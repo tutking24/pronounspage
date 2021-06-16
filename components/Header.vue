@@ -1,5 +1,6 @@
 <template>
-    <header v-if="config.header" class="mb-4">
+    <div v-if="config.header" class="mb-4">
+        <header>
         <div class="d-none d-lg-flex justify-content-between align-items-center flex-row nav-custom btn-group mb-0">
             <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`nav-item btn btn-sm ${isActiveRoute(link) ? 'active' : ''} ${link.header ? 'flex-grow-0' : ''}`">
                 <h1 v-if="link.header" class="text-nowrap">
@@ -48,18 +49,39 @@
                 </div>
             </div>
         </div>
-        <div v-if="locales[config.locale].published === false" class="alert alert-warning mt-3">
+        </header>
+        <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
         </div>
-        <div v-show="showCensus" class="alert alert-info mt-3">
+        <div v-show="showCensus" class="alert alert-info mb-0">
             <a href="#" class="float-end" @click.prevent="dismissCensus">
                 <Icon v="times"/>
             </a>
             <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
             <T silent>census.banner</T>
         </div>
-    </header>
+        <div v-if="$user() && $user().bannedReason" class="alert alert-danger mb-0 container">
+            <p class="h4 mb-2">
+                <Icon v="ban"/>
+                <T>ban.header</T>
+            </p>
+            <p >
+                <T>ban.reason</T>:
+                {{$user().bannedReason}}
+            </p>
+            <p>
+                <T>ban.termsIntro</T>
+            </p>
+            <blockquote class="small">
+                It is forbidden to post on the Service any Content that might break the law or violate social norms,
+                including but not limited to:
+                propagation of totalitarian regimes, hate speech, racism, xenophobia, homophobia, transphobia, queerphobia,
+                misogyny, harassment, impersonation, child pornography, unlawful conduct, misinformation,
+                sharing of someone else's personal data, spam, advertisement, copyright or trademark violations.
+            </blockquote>
+        </div>
+    </div>
     <header v-else class="mb-4">
         <h1 class="text-nowrap">
             <nuxt-link to="/">

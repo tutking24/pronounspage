@@ -31,6 +31,16 @@
             </div>
         </div>
 
+        <section v-if="$isGranted('users') && profile.bannedReason">
+            <div class="alert alert-warning">
+                <p class="h4">
+                    <Icon v="ban"/>
+                    {{$t('ban.banned')}}
+                </p>
+                <p class="mb-0">{{profile.bannedReason}}</p>
+            </div>
+        </section>
+
         <section v-if="profile.age ||profile.description.trim().length">
             <p v-for="line in profile.description.split('\n')" class="mb-1">
                 <Spelling escape :text="line"/>
@@ -111,6 +121,16 @@
             <OpinionLegend/>
         </section>
 
+        <section v-if="$isGranted('users')">
+            <div class="alert alert-warning">
+                <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason')" :disabled="saving"></textarea>
+                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
+                    <Icon v="ban"/>
+                    {{$t('ban.action')}}
+                </button>
+            </div>
+        </section>
+
         <Separator icon="heart"/>
         <Support/>
         <section>
@@ -137,16 +157,17 @@
 </template>
 
 <script>
-    import { head } from "../src/helpers";
+    import {head, listToDict} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
 
     export default {
         data() {
              return {
-                profiles: {},
-                glue: ' ' + this.$t('pronouns.or') + ' ',
-                allFlags: process.env.FLAGS,
+                 profiles: {},
+                 glue: ' ' + this.$t('pronouns.or') + ' ',
+                 allFlags: process.env.FLAGS,
+                 saving: false,
             }
         },
         async asyncData({ app, route }) {
@@ -237,6 +258,20 @@
 
                 return mainPronoun;
             },
+        },
+        methods: {
+            async ban() {
+                await this.$confirm(this.$t('ban.confirm', {username: this.username}), 'danger');
+                this.saving = true;
+                try {
+                    await this.$post(`/admin/ban/${encodeURIComponent(this.username)}`, {
+                        reason: this.profile.bannedReason,
+                    });
+                    window.location.reload();
+                } finally {
+                    this.saving = false;
+                }
+            }
         },
         head() {
             return head({

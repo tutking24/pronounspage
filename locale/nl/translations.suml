@@ -500,6 +500,15 @@ mode:
     dark: 'Dark mode'  # TODO
     light: 'Light mode'
 
+# TODO
+ban:
+    reason: 'Ban reason'
+    action: 'Ban this person'
+    confirm: 'Are you sure you want to ban @%username%?'
+    header: 'You''re banned. Your profile will not be shown to anyone.'
+    banned: 'Banned'
+    termsIntro: 'According to our {/voorwaarden=Terms of Service}:'
+
 flags:
     Abroromantic: 'Abroromantisch'
     Abrosexual: 'Abroseksueel'

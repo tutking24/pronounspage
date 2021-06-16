@@ -157,6 +157,7 @@ const reloadUser = async (req, res, next) => {
         || req.user.email !== dbUser.email
         || req.user.roles !== dbUser.roles
         || req.user.avatarSource !== dbUser.avatarSource
+        || req.user.bannedReason !== dbUser.bannedReason
     ) {
         const newUser = {
             ...dbUser,
