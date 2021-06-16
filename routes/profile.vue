@@ -31,15 +31,17 @@
             </div>
         </div>
 
-        <section v-if="$isGranted('users') && profile.bannedReason">
-            <div class="alert alert-warning">
-                <p class="h4">
-                    <Icon v="ban"/>
-                    {{$t('ban.banned')}}
-                </p>
-                <p class="mb-0">{{profile.bannedReason}}</p>
-            </div>
-        </section>
+        <client-only>
+            <section v-if="$isGranted('users') && profile.bannedReason">
+                <div class="alert alert-warning">
+                    <p class="h4">
+                        <Icon v="ban"/>
+                        {{$t('ban.banned')}}
+                    </p>
+                    <p class="mb-0">{{profile.bannedReason}}</p>
+                </div>
+            </section>
+        </client-only>
 
         <section v-if="profile.age ||profile.description.trim().length">
             <p v-for="line in profile.description.split('\n')" class="mb-1">
@@ -121,15 +123,17 @@
             <OpinionLegend/>
         </section>
 
-        <section v-if="$isGranted('users')">
-            <div class="alert alert-warning">
-                <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason')" :disabled="saving"></textarea>
-                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
-                    <Icon v="ban"/>
-                    {{$t('ban.action')}}
-                </button>
-            </div>
-        </section>
+        <client-only>
+            <section v-if="$isGranted('users')">
+                <div class="alert alert-warning">
+                    <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason')" :disabled="saving"></textarea>
+                    <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
+                        <Icon v="ban"/>
+                        {{$t('ban.action')}}
+                    </button>
+                </div>
+            </section>
+        </client-only>
 
         <Separator icon="heart"/>
         <Support/>
@@ -160,8 +164,10 @@
     import {head, listToDict} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
+    import ClientOnly from 'vue-client-only'
 
     export default {
+        components: { ClientOnly },
         data() {
              return {
                  profiles: {},
