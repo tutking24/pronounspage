@@ -78,6 +78,13 @@ links:
             url: 'https://accedacris.ulpgc.es/handle/10553/73757'
             headline: 'El género no binario en la traducción al español: análisis del uso del lenguaje inclusivo no binario'
             extra: ' – Este trabajo aborda el uso de formas no binarias como resultado de traducciones del inglés al español.'
+        -
+            lang: ['en']
+            icon: 'presentation'
+            url: 'https://www.queerterpreter.com/lavlang27'
+            headline: 'Direct and Indirect Non-binary Language in English to Spanish Translation'
+            extra: ' – Ártemis López'
+    academic: []
     mediaGuests:
         -
             icon: 'play-circle'
