@@ -133,4 +133,38 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
     return res.json(true);
 }));
 
+router.get('/admin/suspicious', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    return res.json(await req.db.all(SQL`
+        SELECT users.id, users.username, profiles.locale FROM profiles
+        LEFT JOIN users ON profiles.userId = users.id
+        WHERE users.suspiciousChecked != 1
+          AND users.bannedReason IS NULL
+          AND (
+              lower(customFlags) LIKE '%super%'
+           OR lower(description) LIKE '%super%'
+           OR lower(customFlags) LIKE '%phobe%'
+           OR lower(description) LIKE '%phobe%'
+        )
+        ORDER BY users.id DESC
+    `));
+}));
+
+router.post('/admin/suspicious/checked/:id', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE users
+        SET suspiciousChecked = 1
+        WHERE id=${req.params.id}
+    `);
+
+    return res.json(true);
+}));
+
 export default router;

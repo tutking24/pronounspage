@@ -84,6 +84,36 @@
 
         <ChartSet name="users" :data="stats.users.chart" init="cumulative"/>
 
+        <section v-if="$isGranted('users') && suspiciousUsers.length > 0">
+            <h3>
+                <Icon v="siren-on"/>
+                Suspicious accounts
+            </h3>
+            <Table :data="suspiciousUsers" columns="2">
+                <template v-slot:row="s"><template v-if="s">
+                    <td>
+                        <LocaleLink :link="`/@${s.el.username}`" :locale="s.el.locale">
+                            {{s.el.username}}
+                            <span class="badge bg-light text-dark">{{s.el.locale}}</span>
+                        </LocaleLink>
+                    </td>
+                    <td>
+                        <a href="#" class="badge bg-light text-success border border-success float-end"
+                           @click.prevent="checkedSuspicious(s.el.id)"
+                        >
+                            <Icon v="thumbs-up"/>
+                            I checked the profile, it's OK.
+                        </a>
+                    </td>
+                </template></template>
+
+                <template v-slot:empty>
+                    <Icon v="search"/>
+                    <T>nouns.empty</T>
+                </template>
+            </Table>
+        </section>
+
         <section v-for="(locale, k) in stats.locales" :key="k">
             <details class="border mb-3" open>
                 <summary class="bg-light p-3">
@@ -150,13 +180,18 @@
         },
         async asyncData({ app, store }) {
             let stats = { users: {}};
-
             try {
                 stats = await app.$axios.$get(`/admin/stats`);
             } catch {}
 
+            let suspiciousUsers = [];
+            try {
+                suspiciousUsers = await app.$axios.$get(`/admin/suspicious`);
+            } catch {}
+
             return {
                 stats,
+                suspiciousUsers,
             };
         },
         methods: {
@@ -164,6 +199,11 @@
                 if (this.users === undefined) {
                     this.users = await this.$axios.$get(`/admin/users`);
                 }
+            },
+            async checkedSuspicious(id) {
+                await this.$confirm('Are you sure you want to mark this profile as not suspicious?', 'success');
+                await this.$post(`/admin/suspicious/checked/${id}`);
+                this.suspiciousUsers = this.suspiciousUsers.filter(u => u.id !== id);
             },
         },
         computed: {
