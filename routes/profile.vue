@@ -178,13 +178,18 @@
                  glue: ' ' + this.$t('pronouns.or') + ' ',
                  allFlags: process.env.FLAGS,
                  saving: false,
+                 terms: [],
             }
         },
         async asyncData({ app, route }) {
             return {
                 profiles: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
-                terms: await app.$axios.$get(`/terms`),
             };
+        },
+        async mounted() {
+            if (this.config.nouns.terms.enabled) {
+                this.terms = await this.$axios.$get(`/terms`);
+            }
         },
         computed: {
             username() {
