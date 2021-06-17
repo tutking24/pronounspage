@@ -2,7 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {config as socialLoginConfig} from "../social";
-import {buildDict, now, shuffle, handleErrorAsync} from "../../src/helpers";
+import {buildDict, now, shuffle, handleErrorAsync, buildLocaleList} from "../../src/helpers";
 import locales from '../../src/locales';
 import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
@@ -22,9 +22,9 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
         `);
 
         const adminsGroupped = buildDict(function* () {
-            yield [req.config.locale, []];
+            yield [global.config.locale, []];
             for (let [locale, , , published] of locales) {
-                if (locale !== req.config.locale && published) {
+                if (locale !== global.config.locale && published) {
                     yield [locale, []];
                 }
             }
@@ -52,12 +52,12 @@ router.get('/admin/list/footer', handleErrorAsync(async (req, res) => {
             SELECT u.username, p.footerName, p.footerAreas, p.locale
             FROM users u
             LEFT JOIN profiles p ON p.userId = u.id
-            WHERE p.locale = ${req.config.locale}
+            WHERE p.locale = ${global.config.locale}
               AND p.footerName IS NOT NULL AND p.footerName != ''
               AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
         `);
 
-        const fromConfig = req.config.contact.authors || [];
+        const fromConfig = global.config.contact.authors || [];
 
         return [...fromDb, ...fromConfig];
     })));
@@ -112,7 +112,7 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 
     const stats = fs.existsSync(statsFile)
         ? JSON.parse(fs.readFileSync(statsFile))
-        : await calculateStats(req.db, req.locales);
+        : await calculateStats(req.db, buildLocaleList(global.config.locale));
 
     for (let locale in stats.locales) {
         if (stats.locales.hasOwnProperty(locale) && !req.isGranted('panel', locale)) {

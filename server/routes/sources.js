@@ -25,7 +25,7 @@ const linkOtherVersions = async (req, sources) => {
     const otherVersions = await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
-        WHERE s.locale != ${req.config.locale}
+        WHERE s.locale != ${global.config.locale}
         AND s.deleted = 0
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
         AND s.key IN (`.append([...keys].join(',')).append(SQL`)
@@ -51,7 +51,7 @@ router.get('/sources', handleErrorAsync(async (req, res) => {
     let sql = SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
-        WHERE s.locale = ${req.config.locale}
+        WHERE s.locale = ${global.config.locale}
         AND s.deleted = 0
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
     `;
@@ -65,7 +65,7 @@ router.get('/sources/:id', handleErrorAsync(async (req, res) => {
     return res.json(await linkOtherVersions(req, await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
-        WHERE s.locale = ${req.config.locale}
+        WHERE s.locale = ${global.config.locale}
         AND s.deleted = 0
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
         AND s.id = ${req.params.id}
@@ -77,7 +77,7 @@ router.post('/sources/submit', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`
         INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, submitter_id, base_id)
         VALUES (
-            ${id}, ${req.config.locale}, ${req.body.pronouns.join(';')},
+            ${id}, ${global.config.locale}, ${req.body.pronouns.join(';')},
             ${req.body.type}, ${req.body.author}, ${req.body.title}, ${req.body.extra}, ${req.body.year},
             ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link},
             ${req.body.key || null}, ${req.body.images || null},

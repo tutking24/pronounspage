@@ -73,7 +73,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     // TODO just make it a transaction...
-    const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.config.locale}`)).map(row => row.id);
+    const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
     if (ids.length) {
         await req.db.get(SQL`UPDATE profiles
             SET
@@ -92,7 +92,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         `);
     } else {
         await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
-            VALUES (${ulid()}, ${req.user.id}, ${req.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted('users') ? req.body.teamName || null : ''},

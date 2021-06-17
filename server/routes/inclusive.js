@@ -25,7 +25,7 @@ router.get('/inclusive', handleErrorAsync(async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
-        WHERE i.locale = ${req.config.locale}
+        WHERE i.locale = ${global.config.locale}
         AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
         AND i.deleted = 0
         ORDER BY i.approved, i.insteadOf
@@ -37,7 +37,7 @@ router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
     return res.json(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
-        WHERE i.locale = ${req.config.locale}
+        WHERE i.locale = ${global.config.locale}
         AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
         AND i.deleted = 0
         AND (i.insteadOf like ${term} OR i.say like ${term})
@@ -56,7 +56,7 @@ router.post('/inclusive/submit', handleErrorAsync(async (req, res) => {
         VALUES (
             ${id},
             ${req.body.insteadOf.join('|')}, ${req.body.say.join('|')}, ${req.body.because},
-            0, ${req.body.base}, ${req.config.locale}, ${req.user ? req.user.id : null},
+            0, ${req.body.base}, ${global.config.locale}, ${req.user ? req.user.id : null},
             ${req.body.categories.join(',')}, ${JSON.stringify(req.body.links)}
         )
     `);

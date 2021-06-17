@@ -35,7 +35,7 @@ router.get('/pronounce/:voice/:pronoun*', handleErrorAsync(async (req, res) => {
         return res.status(404).json({error: 'Not found'});
     }
 
-    const voice = req.config.pronunciation.voices[req.params.voice];
+    const voice = global.config.pronunciation.voices[req.params.voice];
     if (!voice) {
         return res.status(404).json({error: 'Not found'});
     }
@@ -43,7 +43,7 @@ router.get('/pronounce/:voice/:pronoun*', handleErrorAsync(async (req, res) => {
     const s3 = new S3(awsConfig);
     const polly = new Polly(awsConfig);
 
-    const key = `pronunciation/${req.config.locale}-${req.params.voice}/${pronounString}/${sha1(text)}.mp3`;
+    const key = `pronunciation/${global.config.locale}-${req.params.voice}/${pronounString}/${sha1(text)}.mp3`;
 
     try {
         const s3getResponse = await s3.getObject({Key: key}).promise();

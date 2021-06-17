@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
-import {buildLocaleList, isGranted} from "../src/helpers";
+import {isGranted} from "../src/helpers";
 
 global.config = loadSuml('config');
 
@@ -25,8 +25,6 @@ app.use(session({
 
 app.use(async function (req, res, next) {
     try {
-        req.config = global.config;
-        req.locales = buildLocaleList(global.config.locale);
         req.rawUser = authenticate(req);
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
         req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
