@@ -23,16 +23,42 @@ app.use(session({
     saveUninitialized: false,
 }));
 
+class LazyDatabase {
+    constructor() {
+        this.db = null;
+    }
+
+    async get(...args) {
+        if (this.db === null) {
+            this.db = await dbConnection();
+        }
+        return this.db.get(...args)
+    }
+
+    async all(...args) {
+        if (this.db === null) {
+            this.db = await dbConnection();
+        }
+        return this.db.all(...args);
+    }
+
+    async close() {
+        if (this.db !== null) {
+            try {
+                await this.db.close();
+            } catch {}
+        }
+    }
+}
+
 app.use(async function (req, res, next) {
     try {
         req.rawUser = authenticate(req);
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
         req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
-        req.db = await dbConnection();
+        req.db = new LazyDatabase();
         res.on('finish', async () => {
-            try {
-                await req.db.close();
-            } catch {}
+            await req.db.close();
         });
         next();
     } catch (err) {

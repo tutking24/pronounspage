@@ -140,6 +140,11 @@ const deduplicateEmail = async (db, email, cbSuccess, cbFail) => {
 }
 
 const reloadUser = async (req, res, next) => {
+    if (!req.url.startsWith('/user/') && req.method === 'GET') {
+        next();
+        return;
+    }
+
     if (!req.user) {
         next();
         return;
