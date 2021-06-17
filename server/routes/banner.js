@@ -6,6 +6,7 @@ import avatar from '../avatar';
 import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {loadTsv} from "../../src/tsv";
 import {handleErrorAsync} from "../../src/helpers";
+import fs from 'fs';
 
 const translations = loadSuml('translations');
 
@@ -28,12 +29,26 @@ const drawCircle = (context, image, x, y, size) => {
 const router = Router();
 
 router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
-    const pronounName = req.params.pronounName + req.params[0];
     const width = 1200
     const height = 600
     const mime = 'image/png';
     const imageSize = 200;
     let leftRatio = 4;
+
+    const pronounName = req.params.pronounName + req.params[0];
+
+    const cacheDir = `${__dirname}/../../cache/banner`;
+    fs.mkdirSync(cacheDir, { recursive: true });
+    const cacheFilename = `${cacheDir}/${pronounName}.png`;
+    if (fs.existsSync(cacheFilename) && fs.statSync(cacheFilename).mtimeMs >= (new Date() - 24*60*60*1000)) {
+        return res.set('content-type', mime).send(fs.readFileSync(cacheFilename));
+    }
+
+    const saveToCacheAndReturn = (canvas) => {
+        const buffer = canvas.toBuffer(mime);
+        fs.writeFileSync(cacheFilename, buffer);
+        return res.set('content-type', mime).send(buffer);
+    }
 
     registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', { family: 'Quicksand', weight: 'regular'});
     registerFont('static/fonts/quicksand-v21-latin-ext_latin-700.ttf', { family: 'Quicksand', weight: 'bold'});
@@ -56,7 +71,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
         const user = await req.db.get(SQL`SELECT id, username, email, avatarSource FROM users WHERE username=${pronounName.substring(1)}`);
         if (!user) {
             await fallback();
-            return res.set('content-type', mime).send(canvas.toBuffer(mime));
+            return saveToCacheAndReturn(canvas);
         }
 
         const avatarImage = await loadImage(await avatar(req.db, user));
@@ -74,7 +89,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
         context.drawImage(logo, width / leftRatio + imageSize, height / 2 + logoSize - 4, logoSize, logoSize / 1.25)
         context.fillText(translations.title, width / leftRatio + imageSize + 36, height / 2 + 48);
 
-        return res.set('content-type', mime).send(canvas.toBuffer(mime));
+        return saveToCacheAndReturn(canvas);
     }
 
     const pronoun = buildPronoun(
@@ -86,7 +101,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
     if (!pronoun && pronounName !== req.config.pronouns.any) {
         await fallback();
-        return res.set('content-type', mime).send(canvas.toBuffer(mime));
+        return saveToCacheAndReturn(canvas);
     }
 
     context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25)
@@ -95,9 +110,9 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
     const pronounNameOptions = pronounName === req.config.pronouns.any ? [req.config.pronouns.any] : pronoun.nameOptions();
     context.font = `bold ${pronounNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
-    context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24))
+    context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24));
 
-    return res.set('content-type', mime).send(canvas.toBuffer(mime));
+    return saveToCacheAndReturn(canvas);
 }));
 
 export default router;
