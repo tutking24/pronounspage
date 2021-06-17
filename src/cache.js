@@ -6,12 +6,13 @@ export default async (dir, filename, maxAgeMinutes, generator) => {
     const cacheFilename = `${cacheDir}/${filename}`;
 
     if (fs.existsSync(cacheFilename) && fs.statSync(cacheFilename).mtimeMs >= (new Date() - maxAgeMinutes*60*1000)) {
-        return fs.readFileSync(cacheFilename);
+        const content = fs.readFileSync(cacheFilename);
+        return filename.endsWith('.js') ? JSON.parse(content) : content;
     }
 
     const result = await generator();
 
-    fs.writeFileSync(cacheFilename, result);
+    fs.writeFileSync(cacheFilename, filename.endsWith('.js') ? JSON.stringify(result) : result);
 
     return result;
 }

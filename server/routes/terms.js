@@ -2,6 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {isTroll, handleErrorAsync} from "../../src/helpers";
+import cache from "../../src/cache";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM terms WHERE id=${id}`);
@@ -22,14 +23,16 @@ const approve = async (db, id) => {
 const router = Router();
 
 router.get('/terms', handleErrorAsync(async (req, res) => {
-    return res.json(await req.db.all(SQL`
-        SELECT i.*, u.username AS author FROM terms i
-        LEFT JOIN users u ON i.author_id = u.id
-        WHERE i.locale = ${req.config.locale}
-        AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
-        AND i.deleted = 0
-        ORDER BY i.term
-    `));
+    return res.json(await cache('main', 'terms.js', 10, () => {
+        return req.db.all(SQL`
+            SELECT i.*, u.username AS author FROM terms i
+            LEFT JOIN users u ON i.author_id = u.id
+            WHERE i.locale = ${req.config.locale}
+            AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
+            AND i.deleted = 0
+            ORDER BY i.term
+        `);
+    }));
 }));
 
 router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {

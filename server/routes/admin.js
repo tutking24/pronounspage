@@ -6,55 +6,61 @@ import {buildDict, now, shuffle, handleErrorAsync} from "../../src/helpers";
 import locales from '../../src/locales';
 import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
+import cache from "../../src/cache";
 
 const router = Router();
 
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
-    const admins = await req.db.all(SQL`
-        SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
-        FROM users u
-        LEFT JOIN profiles p ON p.userId = u.id
-        WHERE p.teamName IS NOT NULL AND p.teamName != ''
-        ORDER BY RANDOM()
-    `);
+    return res.json(await cache('main', 'admins.js', 10, async () => {
+        const admins = await req.db.all(SQL`
+            SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
+            FROM users u
+                     LEFT JOIN profiles p ON p.userId = u.id
+            WHERE p.teamName IS NOT NULL
+              AND p.teamName != ''
+            ORDER BY RANDOM()
+        `);
 
-    const adminsGroupped = buildDict(function*() {
-        yield [req.config.locale, []];
-        for (let [locale, , , published] of locales) {
-            if (locale !== req.config.locale && published) {
-                yield [locale, []];
+        const adminsGroupped = buildDict(function* () {
+            yield [req.config.locale, []];
+            for (let [locale, , , published] of locales) {
+                if (locale !== req.config.locale && published) {
+                    yield [locale, []];
+                }
+            }
+            yield ['', []];
+        });
+        for (let admin of admins) {
+            admin.avatar = await avatar(req.db, admin);
+            delete admin.id;
+            delete admin.email;
+
+            if (adminsGroupped[admin.locale] !== undefined) {
+                adminsGroupped[admin.locale].push(admin);
+            } else {
+                adminsGroupped[''].push(admin);
             }
         }
-        yield ['', []];
-    });
-    for (let admin of admins) {
-        admin.avatar = await avatar(req.db, admin);
-        delete admin.id;
-        delete admin.email;
 
-        if (adminsGroupped[admin.locale] !== undefined) {
-            adminsGroupped[admin.locale].push(admin);
-        } else {
-            adminsGroupped[''].push(admin);
-        }
-    }
-
-    return res.json(adminsGroupped);
+        return adminsGroupped;
+    }));
 }));
 
 router.get('/admin/list/footer', handleErrorAsync(async (req, res) => {
-    const fromDb = await req.db.all(SQL`
-        SELECT u.username, p.footerName, p.footerAreas, p.locale
-        FROM users u
-        LEFT JOIN profiles p ON p.userId = u.id
-        WHERE p.locale = ${req.config.locale}
-          AND p.footerName IS NOT NULL AND p.footerName != ''
-          AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
-    `);
+    return res.json(shuffle(await cache('main', 'footer.js', 10, async () => {
+        const fromDb = await req.db.all(SQL`
+            SELECT u.username, p.footerName, p.footerAreas, p.locale
+            FROM users u
+            LEFT JOIN profiles p ON p.userId = u.id
+            WHERE p.locale = ${req.config.locale}
+              AND p.footerName IS NOT NULL AND p.footerName != ''
+              AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
+        `);
 
-    const fromConfig = req.config.contact.authors || [];
+        const fromConfig = req.config.contact.authors || [];
 
-    return res.json(shuffle([...fromDb, ...fromConfig]));
+        return [...fromDb, ...fromConfig];
+    })));
 }));
 
 router.get('/admin/users', handleErrorAsync(async (req, res) => {
