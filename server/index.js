@@ -32,11 +32,12 @@ app.use(async function (req, res, next) {
         req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
         req.db = await dbConnection();
         res.on('finish', async () => {
-            await req.db.close();
+            try {
+                await req.db.close();
+            } catch {}
         });
         next();
     } catch (err) {
-        console.log('aaa', err);
         next(err);
     }
 });

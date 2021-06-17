@@ -1,5 +1,10 @@
 <template>
     <div v-if="profile">
+        <ClientOnly>
+        <div slot="placeholder" class="my-5 text-center">
+            <Spinner size="5rem"/>
+        </div>
+
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="profile"/>
@@ -31,17 +36,15 @@
             </div>
         </div>
 
-        <client-only>
-            <section v-if="$isGranted('users') && profile.bannedReason">
-                <div class="alert alert-warning">
-                    <p class="h4">
-                        <Icon v="ban"/>
-                        {{$t('ban.banned')}}
-                    </p>
-                    <p class="mb-0">{{profile.bannedReason}}</p>
-                </div>
-            </section>
-        </client-only>
+        <section v-if="$isGranted('users') && profile.bannedReason">
+            <div class="alert alert-warning">
+                <p class="h4">
+                    <Icon v="ban"/>
+                    {{$t('ban.banned')}}
+                </p>
+                <p class="mb-0">{{profile.bannedReason}}</p>
+            </div>
+        </section>
 
         <section v-if="profile.age ||profile.description.trim().length">
             <p v-for="line in profile.description.split('\n')" class="mb-1">
@@ -140,6 +143,7 @@
         <section>
             <Share/>
         </section>
+        </ClientOnly>
     </div>
     <div v-else-if="Object.keys(profiles).length">
         <h2 class="text-nowrap mb-3">
