@@ -154,3 +154,6 @@ console.log(Object.keys(popularFirstUnisex).length);
 console.log(buildTable(popularFirstUnisex, false, 'balanceFirstPop'))
 console.log('Max balans', maxBalanceFirst, maxBalanceFirstPop)
 // console.log(popularFirstUnisex);
+
+console.log(allUnisex['ALEX'])
+console.log(allUnisex['ALEKS'])
