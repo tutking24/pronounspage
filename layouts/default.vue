@@ -55,5 +55,5 @@
 
 <style lang="scss">
     @import "assets/style";
-    @import "~avris-sorter/Sorter.min.css";
+    @import "~avris-sorter/dist/Sorter.min.css";
 </style>
