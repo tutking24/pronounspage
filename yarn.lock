@@ -2012,6 +2012,11 @@ avris-daemonise@^0.0.2:
     fs "^0.0.1-security"
     yargs "^12.0.1"
 
+avris-sorter@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/avris-sorter/-/avris-sorter-0.0.2.tgz#d4094fc22fb17867a58f51d139d4549c74d7a6fd"
+  integrity sha512-VFAb9ffcH036wbdCCIxJL8DYpmu8ZsKPvtu+biDuNsLT+3CJ84GUJ3fBlWiZGgm16vUCf6nzXHO4OQVK9ELumQ==
+
 aws-sdk@^2.799.0:
   version "2.854.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.854.0.tgz#531525cdfdfc774232d86619d2c2c2ae3e1a71a8"

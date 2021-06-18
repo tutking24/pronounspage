@@ -158,3 +158,10 @@ form[disabled] {
     position: fixed !important;
     bottom: 3px !important;
 }
+
+@include media-breakpoint-up('lg') {
+    .table-wide {
+        margin-left: calc(-50vw + 50% + 3rem);
+        margin-right: calc(-50vw + 50% + 3rem);
+    }
+}

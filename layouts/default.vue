@@ -18,6 +18,7 @@
 <script>
     import Vue from 'vue';
     import dark from "../plugins/dark";
+    import sorter from "avris-sorter";
 
     export default {
         mixins: [dark],
@@ -44,10 +45,15 @@
                 });
             };
             this.setMode(this.detectDark());
+
+            if (process.client) {
+                sorter();
+            }
         }
     }
 </script>
 
 <style lang="scss">
     @import "assets/style";
+    @import "~avris-sorter/Sorter.min.css";
 </style>
