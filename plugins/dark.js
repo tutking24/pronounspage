@@ -5,8 +5,8 @@ export default {
                 return false;
             }
 
-            if (localStorage.getItem('darkMode') !== null && localStorage.getItem('darkMode') === 'dark') {
-                return true;
+            if (localStorage.getItem('darkMode') !== null) {
+                return localStorage.getItem('darkMode') === 'dark';
             }
 
             const mediaMatch = window.matchMedia('(prefers-color-scheme: dark)');
@@ -22,7 +22,7 @@ export default {
                 localStorage.setItem('darkMode', 'dark');
             } else {
                 document.body.removeAttribute('data-theme');
-                localStorage.removeItem('darkMode');
+                localStorage.setItem('darkMode', 'light');
             }
         },
     }
