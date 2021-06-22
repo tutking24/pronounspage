@@ -604,6 +604,22 @@ links:
                 (…)
                 Wracaj do poradnika Zaimki.pl. Ucz się.
                 Stosuj zasady, które osoby LGBTQ+ uznają za przyjazne.
+        -
+            icon: 'newspaper'
+            url: 'https://www.polityka.pl/tygodnikpolityka/kultura/2122947,1,konfrontacja-jezyka-z-plcia.read'
+            headline: 'Konfrontacja języka z płcią'
+            extra: ' – Bartek Chaciński, <strong>Polityka</strong>'
+            quote: >
+                To ledwie drobny ślad szerokiej gamy problemów plastycznej i rozbudowanej polszczyzny
+                w konfrontacji z językiem neutralnym, kilka miesięcy temu wyszydzanym
+                na antenie TVP przez Michała Rachonia, który na zmianę krztusząc się ze śmiechu i strasząc nowomową,
+                odczytywał na antenie przykłady ze strony Zaimki.pl.
+                Jedynego tak obszernego słownika neutratywów, czyli – analogicznie do znanych nam
+                feminatywów i maskulatywów – wyrazów neutralnych płciowo.
+                Słownik ten prowadzi filologiczny kolektyw Rada Języka Neutralnego,
+                a korzystają z niego choćby tłumacze w poszukiwaniu wskazań i przykładów.
+                Bo te potrzebne są coraz częściej, tak samo jak przez lata terminologia związana z nowymi technologiami,
+                światem korporacji czy reklamy. Świat się zmienia, przynajmniej poza TVP.
     socials:
         -
             icon: 'twitter'
