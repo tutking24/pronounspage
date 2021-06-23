@@ -162,6 +162,6 @@ może to pomóc osobom respondenckim zapoznać się z tematem.
         <img src="/img/forms-pl/honorifics.png" alt="Zwrot grzecznościowy: Państwo, Pani, Panu, Pan, Pań, per „Ty”, Żaden z powyższych: [Pole wolnego tekstu]">
     </figure>
     <figure>
-        <img src="/img/forms-pl/pronouns.png" alt="Jak mamy się do Ciebie zwracać? (i) Więcej informacji znadziesz na stronie zaimki.pl; ono (np. zrobiłoś, poszłoś), on (np. zrobiłeś, poszedłeś), onu (np. zrobiłuś, poszłuś), ona (np. zrobiłaś, poszłaś), oni (np. zrobiliście, poszliście), Żadna z powyższych: [Pole wolnego tekstu]">
+        <img src="/img/forms-pl/pronouns.png" alt="Jak mamy się do Ciebie zwracać? (i) Więcej informacji znajdziesz na stronie zaimki.pl; ono (np. zrobiłoś, poszłoś), on (np. zrobiłeś, poszedłeś), onu (np. zrobiłuś, poszłuś), ona (np. zrobiłaś, poszłaś), oni (np. zrobiliście, poszliście), Żadna z powyższych: [Pole wolnego tekstu]">
     </figure>
 </div>
