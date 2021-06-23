@@ -154,6 +154,14 @@ router.get('/admin/suspicious', handleErrorAsync(async (req, res) => {
            OR lower(description) LIKE '%super%'
            OR lower(customFlags) LIKE '%phobe%'
            OR lower(description) LIKE '%phobe%'
+           OR lower(customFlags) LIKE '%phobic%'
+           OR lower(description) LIKE '%phobic%'
+           OR lower(customFlags) LIKE '%terf%'
+           OR lower(description) LIKE '%terf%'
+           OR lower(customFlags) LIKE '%radfem%'
+           OR lower(description) LIKE '%radfem%'
+           OR lower(customFlags) LIKE '%gender critical%'
+           OR lower(description) LIKE '%gender critical%'
         )
         ORDER BY users.id DESC
     `));
