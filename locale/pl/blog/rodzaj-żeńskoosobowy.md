@@ -1,6 +1,6 @@
 # Rodzaj żeńskoosobowy
 
-<small>12.05.2021 | [Julia Brodowska](mailto:kontaktjuliabrodowska@gmail.com)</small>
+<small>2021-05-12 | [Julia Brodowska](mailto:kontaktjuliabrodowska@gmail.com)</small>
 
 <div class="alert alert-info">
     <span class="fal fa-info-circle"></span>

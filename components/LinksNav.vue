@@ -29,7 +29,7 @@
             if (this.config.links.academic.length) {
                 links.push({name: 'links.academic', route: this.config.links.academicRoute, icon: 'vial'});
             }
-            if (Object.keys(this.config.links.blog).length) {
+            if (this.config.links.blog) {
                 links.push({name: 'links.blog', route: this.config.links.blogRoute, icon: 'pen-nib'});
             }
             if (this.config.links.mediaGuests.length || this.config.links.mediaMentions.length) {

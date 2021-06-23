@@ -83,6 +83,7 @@ app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
 
 app.use(require('./routes/images').default);
+app.use(require('./routes/blog').default);
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);

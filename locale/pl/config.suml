@@ -121,24 +121,7 @@ links:
     academicRoute: 'nauka'
     mediaRoute: 'media'
 
-    blog:
-        imiona-unisex-pesel: 'Imiona „unisex” w rejestrze PESEL'
-        polskie-media-o-demi-lovato: 'Polskie media o coming oucie Demi Lovato'
-        rodzaj-żeńskoosobowy: 'Rodzaj żeńskoosobowy'
-        manifest: 'Manifest Niebinarnej Polszczyzny'
-        wystarczyło-zapytać: 'Wystarczyło zapytać…'
-        krótka-notka-o-osobatywach: 'Krótka notka o osobatywach'
-        czytanie-ze-zrozumieniem: 'Czytanie ze zrozumieniem'
-        spis-2021: 'Niebinarny Spis Powszechny 2021 – wnioski'
-        czy-wolno-uzywac: 'Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć'
-        inkluzywne-liczebniki: 'Inkluzywne liczebniki'
-        zaimki-postpłciowe: 'Zaimki w rodzaju postpłciowym'
-        zaimki-nie-tylko-osobowe: 'Zaimki nie tylko osobowe'
-        archie-wyborcza: 'Przemówienie Arcziego na konferencji prasowej ws. transfobii w Gazecie Wyborczej'
-        rekomendacja-formularze: 'Rekomendacja Rady w sprawie pytania o płeć w formularzach'
-        podsumowanie-2020: 'Podsumowanie działalności w roku 2020'
-        gwiezdne-wojny: 'Niebinarność w „Gwiezdnych Wojnach”'
-        czas-się-obnosić: 'Nadszedł czas się obnosić! – przemówienie Sybila z Wrocławskiego Marszu Równości'
+    blog: true
     academic:
         -
             icon: 'comment-alt-edit'

@@ -1,6 +1,6 @@
 # Niebinarność w „Gwiezdnych Wojnach”
 
-<small>11.11.2020 | [@ausir](/@ausir)</small>
+<small>2020-11-11 | [@ausir](/@ausir)</small>
 
 ![](/img/gwiezdne-wojny.jpg)
 

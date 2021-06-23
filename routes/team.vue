@@ -23,7 +23,7 @@
             <T>contact.team.description</T>
         </section>
 
-        <router-link :to="'/' + config.links.blogRoute" v-if="Object.keys(config.links.blog).length"
+        <router-link :to="'/' + config.links.blogRoute" v-if="config.links.blog"
                      class="btn btn-outline-primary btn-lg">
             <Icon v="pen-nib"/>
             <T>links.blog</T>

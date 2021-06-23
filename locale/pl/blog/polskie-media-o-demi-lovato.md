@@ -1,6 +1,6 @@
 # Polskie media o coming oucie Demi Lovato
 
-<small>03.10.2020 | [@Sybil](/@Sybil), [@andrea](/@andrea)</small>
+<small>2021-05-03 | [@Sybil](/@Sybil), [@andrea](/@andrea)</small>
 
 ![](/img/Demi-Lovato.jpg)
 

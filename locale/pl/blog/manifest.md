@@ -1,6 +1,6 @@
 # Manifest Niebinarnej Polszczyzny
 
-<small>20.04.2021 | [@andrea](/@andrea)</small>
+<small>2021-04-20 | [@andrea](/@andrea)</small>
 
 Jako [Rada Języka Neutralnego](/kolektyw-rjn) zawsze stroniłośmy od
 [preskryptywizmu](https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo)).

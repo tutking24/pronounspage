@@ -1,6 +1,6 @@
 # Inkluzywne liczebniki
 
-<small>13.02.2021 | [@andrea](/@andrea)</small>
+<small>2021-02-13 | [@andrea](/@andrea)</small>
 
 Choć inne części mowy sprawiają problemy, gdy chce się ich użyć w sposób neutralny płciowo,
 to liczebniki oferują nam piękne formy opisujące grupy osób niezależnie od ich płci:

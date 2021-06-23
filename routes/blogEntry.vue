@@ -1,7 +1,7 @@
 <template>
     <NotFound v-if="!content"/>
     <div v-else class="blog-post">
-        <router-link :to="'/' + config.links.blogRoute" v-if="Object.keys(config.links.blog).length">
+        <router-link :to="'/' + config.links.blogRoute" v-if="config.links.blog">
             <Icon v="pen-nib"/>
             <T>links.blog</T>
         </router-link>

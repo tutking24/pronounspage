@@ -1,6 +1,6 @@
 # Zamiast pierdyliarda dyskusji czy wolno używać – zróbmy pierdyliard użyć
 
-<small>07.08.2021 | [@andrea](/@andrea)</small>
+<small>2020-08-07 | [@andrea](/@andrea)</small>
 
 Gdy wpiszecie w wyszukiwarkę słowo „psycholog”, zobaczycie – zgodnie z oczekiwaniami –
 jego definicję, reklamy poradni psychologicznych, wypowiedzi psychologów…

@@ -379,7 +379,7 @@ english:
             description:
                 - >
                     Many nonbinary people use more than one form interchangeably and are fine with being called either of them.
-    blog: {}
+    blog: false
 
 
 contact:

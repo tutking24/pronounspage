@@ -1,6 +1,6 @@
 # Czytanie ze zrozumieniem
 
-<small>13.02.2021 | [@andrea](/@andrea)</small>
+<small>2021-02-13 | [@andrea](/@andrea)</small>
 
 ![](/img/wpolityce.png)
 

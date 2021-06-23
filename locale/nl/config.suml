@@ -95,7 +95,7 @@ links:
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
     recommended: []
-    blog: {}
+    blog: false
 
 contact:
     enabled: true

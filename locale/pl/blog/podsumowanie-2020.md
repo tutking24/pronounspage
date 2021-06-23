@@ -1,6 +1,6 @@
 # Podsumowanie roku 2020
 
-<small>31.12.2020 | [@andrea](/@andrea)</small>
+<small>2020-12-31 | [@andrea](/@andrea)</small>
 
 Cóż to był za rok!
 

@@ -1,6 +1,6 @@
 # Krótka notka o osobatywach
 
-<small>27.03.2021 | [@Sybil](/@Sybil) | [mykofanes.blogspot.com](https://mykofanes.blogspot.com/2021/03/krotka-notka-o-osobatywach.html)</small>
+<small>2021-03-27 | [@Sybil](/@Sybil) | [mykofanes.blogspot.com](https://mykofanes.blogspot.com/2021/03/krotka-notka-o-osobatywach.html)</small>
 
 _Osoba_ jest bardziej uniwersalna niż _człowiek_, bo może dotyczyć osób kosmicznych, bóstw i australopitejek_ków. 
 

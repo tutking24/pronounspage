@@ -1,6 +1,6 @@
 # Zaimki w rodzaju postpłciowym
 
-<small>13.02.2021 | [@andrea](/@andrea)</small>
+<small>2021-02-13 | [@andrea](/@andrea)</small>
 
 Czasowniki w [rodzaju postpłciowym](/onu) są bardzo proste: wystarczy wziąć formę żeńską i zamienić „a” na „u”.
 _Chciałam → chciałum; poszłaś → poszłuś; zrobiła → zrobiłu_.

@@ -183,8 +183,7 @@ links:
             headline: '@PronounsPage'
     recommended: []
 
-    blog:
-        creating-new-language-version: 'How to create a new language version of Pronouns.page'
+    blog: false
 
 contact:
     enabled: true

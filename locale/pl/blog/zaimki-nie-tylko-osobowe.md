@@ -1,6 +1,6 @@
 # Zaimki nie tylko osobowe
 
-<small>13.02.2021 | [@andrea](/@andrea)</small>
+<small>2021-02-13 | [@andrea](/@andrea)</small>
 
 Język polski jest na tyle <strike>skomplikowany</strike> bogaty, że chcąc stworzyć stronę
 o formach nacechowanych płciowo musiałośmy skupić się na początku tylko na najważniejszych aspektach.

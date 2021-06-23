@@ -1,6 +1,6 @@
 # Imiona „unisex” w rejestrze PESEL
 
-<small>18.06.2021 | [@andrea](/@andrea)</small>
+<small>2021-06-18 | [@andrea](/@andrea)</small>
 
 Wszystkie imiona są unisex.
 W końcu słowa to tylko zlepki głosek, którym osoby używające języka nadają znaczenie – 

@@ -1,6 +1,6 @@
 # Nadszedł czas się obnosić!
 
-<small>03.10.2020 | [@Sybil](/@Sybil)</small>
+<small>2020-10-03 | [@Sybil](/@Sybil)</small>
 
 ![](/img/czas-sie-obnosic.jpg)
 

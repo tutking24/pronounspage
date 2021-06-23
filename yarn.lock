@@ -2003,6 +2003,11 @@ autoprefixer@^9.6.1:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
+avris-columnist@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/avris-columnist/-/avris-columnist-0.2.2.tgz#9da20f4fbd475d48bfd269258ab085d40f5933e6"
+  integrity sha512-SAqMZz0nwoBcytp7mMCifQQ3vaG6FB3Aanqpj8sl2ZIKPW53GkHBLnxsC7mN0KRpzaxVYqtbBpMlm4sW8JYfIg==
+
 avris-daemonise@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/avris-daemonise/-/avris-daemonise-0.0.2.tgz#acc8eab86fb396cf3953d5fb96217d5eafe64b37"

@@ -1,6 +1,6 @@
 # Wystarczyło zapytać…
 
-<small>29.03.2021 | [@Sybil](/@Sybil) | [Facebook](https://www.facebook.com/neutratywy/posts/252705383203921) | [Twitter](https://twitter.com/neutratywy/status/1376518731774500873)</small>
+<small>2021-03-29 | [@Sybil](/@Sybil) | [Facebook](https://www.facebook.com/neutratywy/posts/252705383203921) | [Twitter](https://twitter.com/neutratywy/status/1376518731774500873)</small>
 
 ![](/img/masha-gessen.jpg)
 

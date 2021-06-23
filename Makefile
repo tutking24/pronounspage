@@ -25,4 +25,5 @@ deploy: install
 
 switch:
 	-rm data
+	rm -rf cache
 	ln -s ./locale/${LANG} ./data

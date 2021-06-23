@@ -196,10 +196,10 @@ export default {
                 }
             }
 
-            if (config.links.blog && Object.keys(config.links.blog).length) {
+            if (config.links.blog) {
                 routes.push({ path: '/' + config.links.blogRoute, component: resolve(__dirname, 'routes/blog.vue'), name: 'blog' });
-                routes.push({ path: '/' + config.links.blogRoute + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
             }
+            routes.push({ path: '/' + config.links.blogRoute + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
 
             if (config.people.enabled) {
                 routes.push({ path: '/' + config.people.route, component: resolve(__dirname, 'routes/people.vue') });
