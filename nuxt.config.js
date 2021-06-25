@@ -155,7 +155,7 @@ export default {
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
         STATS_FILE: process.env.STATS_FILE,
     },
-    serverMiddleware: ['~/server/index.js'],
+    serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
         baseURL: process.env.BASE_URL + '/api',
     },
