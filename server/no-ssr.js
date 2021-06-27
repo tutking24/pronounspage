@@ -12,6 +12,6 @@ const isBrowser = (userAgent) => {
 }
 
 export default function(req, res, next) {
-    res.spa = isBrowser(req.headers['user-agent']);
+    res.spa = process.env.NODE_ENV === 'production' && isBrowser(req.headers['user-agent']);
     next()
 }
