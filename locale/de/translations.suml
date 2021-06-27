@@ -387,6 +387,7 @@ profile:
     flagsCustom: 'Upload custom flags'  # TODO
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'Links'
+    linksCake: 'We recommend linking to'  # TODO
     column: 'Spalte'
 
     list: 'Deine Karten'
@@ -430,7 +431,7 @@ crud:
 footer:
     # TODO source: 'Der Quellcode ist {https://gitlab.com/Avris/Zaimki=veröffentlicht} unter der {https://mit.avris.it=MIT} Lizenz.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [b:mit.svg].<br/>
+        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de=CC BY-NC-SA 4.0}
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Kontakt, Social Media, Support'

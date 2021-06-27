@@ -949,6 +949,7 @@ profile:
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
+    linksCake: 'Polecamy dodać link do'
     column: 'Kolumna'
 
     header: 'Wizytówki'
@@ -1038,7 +1039,7 @@ crud:
 footer:
     source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} jest udostępniony na licencji {https://mit.avris.it=MIT} [b:mit.svg].<br/>
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} jest udostępniony na licencji {https://mit.avris.it=MIT} [mit.svg].<br/>
         Treści są udostępnione na licencji {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl=CC BY-NC-SA 4.0}
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Kontakt, social media, wsparcie'

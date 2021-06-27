@@ -115,6 +115,15 @@
                 <ListInput v-model="links" v-slot="s">
                     <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" required/>
                 </ListInput>
+                <p class="small text-muted mb-0">
+                    <Icon v="ad"/>
+                    <T>profile.linksCake</T>
+                    <a v-for="provider in recommendedLinkProviders()" :href="provider.homepage" target="_blank" rel="noopener">
+                        <Icon :v="provider.icon" :set="provider.iconSet || 'l'"/>
+                        {{ provider.name }}
+                    </a>
+                    😉
+                </p>
             </div>
 
             <div class="form-group">
@@ -159,6 +168,7 @@
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
+    import link from '../plugins/link';
 
     const defaultWords = config.profile.defaultWords.map(c => buildList(function* () {
         for (let word of c) {
@@ -167,6 +177,7 @@
     }))
 
     export default {
+        mixins: [link],
         data() {
             return {
                 saving: false,
