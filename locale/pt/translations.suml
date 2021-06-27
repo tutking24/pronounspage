@@ -325,6 +325,7 @@ contact:
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
         logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'  # TODO
         members: 'Membres atuais'  # TODO
+        member: 'Member of the collective'  # TODO
         blog: 'Blog'  # TODO
         upcoming: 'Próximas versões'  # TODO
 

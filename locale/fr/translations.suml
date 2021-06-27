@@ -317,6 +317,7 @@ contact:
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
         members: 'Current members'
+        member: 'Member of the collective'  # TODO
         blog: 'Blog'
         upcoming: 'Upcoming language versions'
 

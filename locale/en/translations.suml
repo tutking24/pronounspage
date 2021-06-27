@@ -391,12 +391,13 @@ contact:
     authors: 'Authors of the website'
     team:
         name: 'The “Neutral Language Council” collective'
-        description:  # TODO
+        description:
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
         members: 'Current members'
+        member: 'Member of the collective'
         upcoming: 'Upcoming language versions'
 
 support:

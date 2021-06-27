@@ -307,6 +307,7 @@ contact:
                  由“中立語推行委員會”集體創建。
         logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'  # TODO
         members: '份子'  # TODO
+        member: 'Member of the collective'  # TODO
         blog: '博客'
         upcoming: '即將到來語言文本'  # TODO
 

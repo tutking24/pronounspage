@@ -328,6 +328,7 @@ contact:
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Current members'  # TODO
+        member: 'Member of the collective'  # TODO
         upcoming: 'Upcoming language versions'  # TODO
 
 support:

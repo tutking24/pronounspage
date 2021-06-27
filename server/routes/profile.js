@@ -26,7 +26,7 @@ const calcAge = birthday => {
 
 const fetchProfiles = async (db, username, self, isAdmin) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource, users.bannedReason FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource, users.bannedReason, users.roles FROM profiles LEFT JOIN users on users.id == profiles.userId 
         WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(username)}
         AND profiles.active = 1
         ORDER BY profiles.locale
@@ -56,6 +56,7 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
             bannedReason: profile.bannedReason,
+            team: !!profile.roles,
         };
     }
     return p;

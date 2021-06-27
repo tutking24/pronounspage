@@ -166,3 +166,7 @@ form[disabled] {
         margin-right: calc(-50vw + 50% + 3rem);
     }
 }
+
+.icon, .reversed {
+    filter: invert(1);
+}

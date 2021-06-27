@@ -46,7 +46,13 @@
             </div>
         </section>
 
-        <section v-if="profile.age ||profile.description.trim().length">
+        <section v-if="profile.age || profile.description.trim().length || profile.team">
+            <p v-if="profile.team" class="mb-2">
+                <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
+                    <Icon v="collective-logo.svg" class="reversed"/>
+                    <T>contact.team.member</T>
+                </nuxt-link>
+            </p>
             <p v-for="line in profile.description.split('\n')" class="mb-1">
                 <Spelling escape :text="line"/>
             </p>

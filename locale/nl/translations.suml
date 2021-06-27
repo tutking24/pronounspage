@@ -321,6 +321,7 @@ contact:
                 zijn bedacht door het "Raad van Neutrale Taal" collectief.
         logo: 'Het logo van het collectief is een combinatie van het transgender symbool en een spraakballon dat taal symboliseert.'
         members: 'Huidige leden'
+        member: 'Member of the collective'  # TODO
         blog: 'Blog'
         upcoming: 'Komende taalversies'
 
