@@ -10,26 +10,25 @@
                 <Avatar :user="profile"/>
                 @{{username}}
             </h2>
-            <div>
-                <div class="text-end">
+            <div class="flex-grow-1 text-lg-end">
+                <div>
                     <nuxt-link v-if="$user() && $user().username === username" to="/editor"
-                               class="btn btn-outline-primary btn-sm mb-2"
+                               class="btn btn-outline-primary btn-sm mb-2 mx-1"
                     >
                         <Icon v="edit"/>
                         <T>profile.edit</T>
                     </nuxt-link>
-                </div>
-                <div v-if="Object.keys(profiles).length > 1" class="locale-list">
-                    <a :href="`https://pronouns.page/@${username}`" v-if="$user() && $user().username === username"
-                       class="btn btn-outline-secondary btn-sm mb-1 me-1"
+                    <a :href="`https://pronouns.page/@${username}`" v-if="Object.keys(profiles).length > 1 && $user() && $user().username === username"
+                       class="btn btn-outline-secondary btn-sm mb-2 mx-1"
                     >
                         <Icon v="external-link"/>
                         pronouns.page/@{{username}}
                     </a>
-                    <br/>
+                </div>
+                <div v-if="Object.keys(profiles).length > 1">
                     <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
                                 :locale="locale" :link="`/@${username}`"
-                                :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-1 me-1']">
+                                :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-2 mx-1']">
                         {{options.name}}
                     </LocaleLink>
                 </div>
@@ -317,13 +316,6 @@
             color: $primary;
             border-inline-start: 3px solid $primary;
             padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
-        }
-    }
-
-    @include media-breakpoint-up('md', $grid-breakpoints) {
-        .locale-list {
-            max-width: 16rem;
-            text-align: right;
         }
     }
 </style>
