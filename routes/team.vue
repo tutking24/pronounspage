@@ -1,12 +1,12 @@
 <template>
     <div>
         <h2>
-            <Icon v="collective-logo.svg"/>
+            <Icon v="collective-logo.svg" class="invertible"/>
             <T>contact.team.name</T>
         </h2>
 
         <figure class="float-end border rounded">
-            <img src="/img/collective-logo.svg" alt="" class="reversible"/>
+            <img src="/img/collective-logo.svg" alt="" class="invertible"/>
             <figcaption>
                 <p><T>contact.team.logo</T></p>
                 <p class="text-center bigger mb-0">
@@ -14,7 +14,7 @@
                     +
                     <Icon v="comment"/>
                     =
-                    <Icon v="collective-logo.svg"/>
+                    <Icon v="collective-logo.svg" class="invertible"/>
                 </p>
             </figcaption>
         </figure>

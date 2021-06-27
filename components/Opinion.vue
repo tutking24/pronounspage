@@ -1,7 +1,7 @@
 <template>
     <span>
         <strong v-if="opinion === 1">
-            <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/heart.svg" :aria-label="$t('profile.opinion.yes')" class="icon"/>
+            <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/heart.svg" :aria-label="$t('profile.opinion.yes')" class="icon invertible"/>
             <nuxt-link v-if="link" :to="link"><Spelling escape :text="word"/></nuxt-link>
             <span v-else><Spelling escape :text="word"/></span>
         </strong>

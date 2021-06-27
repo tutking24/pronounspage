@@ -1,7 +1,7 @@
 <template>
     <ul class="list-unstyled">
         <li class="mb-2">
-            <Icon v="collective-logo.svg"/>
+            <Icon v="collective-logo.svg" class="invertible"/>
             <nuxt-link :to="`/${config.contact.team.route}`">
                 <T>contact.team.name</T>
             </nuxt-link>

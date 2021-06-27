@@ -48,7 +48,7 @@
         <section v-if="profile.age || profile.description.trim().length || profile.team">
             <p v-if="profile.team" class="mb-2">
                 <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
-                    <Icon v="collective-logo.svg" class="reversed"/>
+                    <Icon v="collective-logo.svg" class="inverted"/>
                     <T>contact.team.member</T>
                 </nuxt-link>
             </p>
