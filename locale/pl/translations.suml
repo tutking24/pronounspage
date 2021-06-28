@@ -920,7 +920,7 @@ user:
             action: 'Zmień'
             invalid: 'Nieprawidłowy adres email.'
             taken: 'Ten adres jest zajęty.'
-        admin: 'Adminię'
+        admin: 'Adminie'
     logout: 'Wyloguj'
     avatar:
         header: 'Avatar'
