@@ -134,6 +134,8 @@ pronouns:
                     - ['kandydaci i kandydatki', 'osoby kandydujące']
                     - ['proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem']
                     - ['mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili']
+                    - ['dziennikarze oko.press', 'redakcja oko.press']
+                    - ['fani Mariny', 'fandom Mariny']
             -
                 header: 'Skrócone zaimki'
                 description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
