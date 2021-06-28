@@ -72,7 +72,7 @@ rodzaj neutralny zdecydowanie dominuje wśród alternatywnych form językowych.
 
 A zatem zarówno pojawiający się i rosnący uzus, jak i opinie osób językoznawczych,
 w połączeniu z faktem, że jest to rodzaj gramatyczny już w języku istniejący
-(a łatwiej lekko przesunąć zakres znaczeniowy niż stworzyć i upowszechnić coś zupełnie nowego, jak np. [dukaizmy](/slowniki/dukaizmy))
+(a łatwiej lekko przesunąć zakres znaczeniowy niż stworzyć i upowszechnić coś zupełnie nowego, jak np. [dukaizmy](/onu))
 zdają się sugerować, że dobrą rekomendacją jest polecenie
 osobom niebinarnym szukającym sposobu na wyrażenie siebie,
 a także osobom tłumaczącym na polski np. angielskie [singular „they”](https://www.merriam-webster.com/words-at-play/singular-nonbinary-they),
@@ -177,7 +177,7 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
  - <u>Nikto</u> nie zrobił<u>o</u> zadania domowego.
  - <u>Kto</u> zrobił<u>o</u> ten bałagan?
  - <u>Każde</u> chciał<u>o</u> spróbować.
- - <u>Wszystkie</u> byłyśmy pod wrażeniem.
+ - <u>Wszystkie</u> byłośmy pod wrażeniem.
 
 <section>
     <a href="/blog/zaimki-nie-tylko-osobowe" target="_blank" class="btn btn-outline-primary d-block">
@@ -222,6 +222,6 @@ Serdecznie zachęcamy do zapoznania się z nimi i używania ich w codziennej mow
  - Jeśli wybierasz zaimki dla siebie lub postaci niebinarnej, którą tłumaczysz, to polecamy [rodzaj neutralny](/ono) i [neutratywy](/slowniki/neutratywy).
  - Zamiast „rodzaj nijaki” mówmy „rodzaj neutralny”.
  - Przy zwracaniu się do osoby o nieznanej płci preferujmy [formy z iksem](/onx) i [osobatywy](/slowniki/osobatywy).
- - Mówiąc o grupie osób, używajmy [mnogiego rodzaju nijakiego](/ona/ich).
+ - Mówiąc o grupie osób, używajmy [mnogiego rodzaju neutralnego](/ona/ich).
 
 — [Rada Języka Neutralnego](/kolektyw-rjn)
