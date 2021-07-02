@@ -33,10 +33,10 @@
                     <tbody>
                     <tr>
                         <td>
-                            <NounForm v-model="form.insteadOf"/>
+                            <NounForm v-model="form.insteadOf" maxlength="128"/>
                         </td>
                         <td>
-                            <NounForm v-model="form.say"/>
+                            <NounForm v-model="form.say" maxlength="128"/>
                         </td>
                         <td>
                             <textarea v-model="form.because" class="form-control form-control-sm" required rows="3"></textarea>

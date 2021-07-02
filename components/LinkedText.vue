@@ -6,6 +6,7 @@
         mixins: [ spelling ],
         props: {
             text: { required: true },
+            noicons: { type: Boolean },
         },
         render(h) {
             if (!this.text) {
@@ -74,7 +75,7 @@
                     linkBuffer += buffer;
                     buffer = '';
                     continue;
-                } else if (c === '[') {
+                } else if (c === '[' && !this.noicons) {
                     addChild();
                     if (isEscape) {
                         isEscape = false;
@@ -82,7 +83,7 @@
                         isIcon = true;
                         continue;
                     }
-                } else if (c === ']') {
+                } else if (c === ']' && !this.noicons) {
                     addChild();
                     if (isIcon) {
                         isIcon = false;

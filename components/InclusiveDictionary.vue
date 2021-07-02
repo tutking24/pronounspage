@@ -51,7 +51,7 @@
             <template v-slot:row="s"><template v-if="s">
                 <td>
                     <ul class="list-untyled">
-                        <li v-for="w in s.el.insteadOf" class="text-strike">{{w}}</li>
+                        <li v-for="w in s.el.insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
                     </ul>
 
                     <ul class="list-inline">
@@ -65,7 +65,7 @@
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].insteadOf" class="text-strike">{{w}}</li>
+                            <li v-for="w in entries[s.el.base].insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
                         </ul>
 
                         <ul class="list-inline">
@@ -79,18 +79,18 @@
                 </td>
                 <td>
                     <ul class="list-untyled">
-                        <li v-for="w in s.el.say">{{w}}</li>
+                        <li v-for="w in s.el.say"><LinkedText :text="w" noicons/></li>
                     </ul>
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].say">{{w}}</li>
+                            <li v-for="w in entries[s.el.base].say"><LinkedText :text="w" noicons/></li>
                         </ul>
                     </small>
                 </td>
                 <td>
-                    <p v-for="p in s.el.because.split('\n\n')"><LinkedText :text="p"/></p>
+                    <p v-for="p in s.el.because.split('\n\n')"><LinkedText :text="p" noicons/></p>
 
                     <ul class="list-unstyled small">
                         <li v-for="link in s.el.links">
@@ -103,7 +103,7 @@
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <p v-for="p in entries[s.el.base].because.split('\n\n')"><LinkedText :text="p"/></p>
+                        <p v-for="p in entries[s.el.base].because.split('\n\n')"><LinkedText :text="p" noicons/></p>
 
                         <ul class="list-unstyled small">
                             <li v-for="link in entries[s.el.base].links">
