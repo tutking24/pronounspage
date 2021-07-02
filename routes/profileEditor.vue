@@ -69,7 +69,7 @@
                     <Icon v="link"/>
                     <T>profile.pronouns</T>
                 </h3>
-                <p class="small text-muted mb-0">
+                <p class="small text-muted mb-2">
                     <T>profile.pronounsInfo</T>
                 </p>
                 <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
