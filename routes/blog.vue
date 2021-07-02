@@ -21,9 +21,13 @@
                                 {{post.date}}
                             </li>
                             <li v-for="author in post.authors" class="list-inline-item">
-                                <a :href="`https://pronouns.page/@${author}`" class="badge bg-light text-dark border">
-                                    @{{author}}
-                                </a>
+                                <nuxt-link v-if="author.startsWith('@')" :to="`/${author}`" class="badge bg-light text-dark border">
+                                    <Icon v="collective-logo.svg" class="invertible"/>
+                                    {{author}}
+                                </nuxt-link>
+                                <span v-else class="badge bg-light text-dark border">
+                                    {{author}}
+                                </span>
                             </li>
                         </ul>
                     </div>

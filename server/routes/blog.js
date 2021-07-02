@@ -30,7 +30,12 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
 
             try {
                 [, date, authorsRaw] = content[1].match(/^<small>(\d\d\d\d-\d\d-\d\d) \| ([^|]*).*<\/small>$/);
-                authors = authorsRaw.split(',').map(a => a.trim().match(/^\[@([^\]]+)]/)[1])
+                authors = authorsRaw.split(',').map(a => {
+                    a = a.trim();
+                    let m = a.match(/^\[([^\]]+)]/);
+                    if (m) { return m[1]; }
+                    return a;
+                });
             } catch {
                 return;
             }
