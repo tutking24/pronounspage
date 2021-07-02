@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import {handleErrorAsync, shuffle} from "../../src/helpers";
 import fs from 'fs';
-import cache from "../../src/cache";
+import { caches } from "../../src/cache";
 
 const router = Router();
 
 router.get('/blog', handleErrorAsync(async (req, res) => {
-    return res.json(await cache('main', 'blog.js', Infinity, async () => {
+    return res.json(await caches.blog.fetch(async () => {
         const dir = __dirname + '/../../data/blog';
         const posts = [];
         fs.readdirSync(dir).forEach(file => {

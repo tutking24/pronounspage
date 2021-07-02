@@ -4,6 +4,7 @@ import {ulid} from "ulid";
 import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
 import {handleErrorAsync, isTroll} from "../../src/helpers";
+import { caches } from "../../src/cache";
 
 const translations = loadSuml('translations');
 
@@ -21,6 +22,7 @@ const approve = async (db, id) => {
         SET approved = 1, base_id = NULL
         WHERE id = ${id}
     `);
+    await caches.nouns.invalidate();
 }
 
 const addVersions = async (req, nouns) => {
@@ -69,14 +71,16 @@ const selectFragment = (sourcesMap, keyAndFragment) => {
 const router = Router();
 
 router.get('/nouns', handleErrorAsync(async (req, res) => {
-    return res.json(await addVersions(req, await req.db.all(SQL`
-        SELECT n.*, u.username AS author FROM nouns n
-        LEFT JOIN users u ON n.author_id = u.id
-        WHERE n.locale = ${global.config.locale}
-        AND n.deleted = 0
-        AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
-        ORDER BY n.approved, n.masc
-    `)));
+    return res.json(await caches.nouns.fetch(async () => {
+        return await addVersions(req, await req.db.all(SQL`
+            SELECT n.*, u.username AS author FROM nouns n
+            LEFT JOIN users u ON n.author_id = u.id
+            WHERE n.locale = ${global.config.locale}
+            AND n.deleted = 0
+            AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
+            ORDER BY n.approved, n.masc
+        `))
+    }));
 }));
 
 router.get('/nouns/search/:term', handleErrorAsync(async (req, res) => {
@@ -127,6 +131,8 @@ router.post('/nouns/hide/:id', handleErrorAsync(async (req, res) => {
         WHERE id = ${req.params.id}
     `);
 
+    await caches.nouns.invalidate();
+
     return res.json('ok');
 }));
 
@@ -150,6 +156,8 @@ router.post('/nouns/remove/:id', handleErrorAsync(async (req, res) => {
         SET deleted=1
         WHERE id = ${req.params.id}
     `);
+
+    await caches.nouns.invalidate();
 
     return res.json('ok');
 }));

@@ -1,18 +1,36 @@
 import fs from 'fs';
 
-export default async (dir, filename, maxAgeMinutes, generator) => {
-    const cacheDir = `${__dirname}/../cache/${dir}`
-    fs.mkdirSync(cacheDir, { recursive: true });
-    const cacheFilename = `${cacheDir}/${filename}`;
-
-    if (fs.existsSync(cacheFilename) && fs.statSync(cacheFilename).mtimeMs >= (new Date() - maxAgeMinutes*60*1000)) {
-        const content = fs.readFileSync(cacheFilename);
-        return filename.endsWith('.js') ? JSON.parse(content) : content;
+export class CacheObject {
+    constructor(dir, filename, maxAgeMinutes) {
+        const cacheDir = `${__dirname}/../cache/${dir}`
+        fs.mkdirSync(cacheDir, { recursive: true });
+        this.path = `${cacheDir}/${filename}`;
+        this.maxAgeMinutes = maxAgeMinutes;
     }
 
-    const result = await generator();
+    async fetch(generator) {
+        if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (new Date() - this.maxAgeMinutes*60*1000)) {
+            const content = fs.readFileSync(this.path);
+            return this.path.endsWith('.js') ? JSON.parse(content) : content;
+        }
 
-    fs.writeFileSync(cacheFilename, filename.endsWith('.js') ? JSON.stringify(result) : result);
+        const result = await generator();
 
-    return result;
+        fs.writeFileSync(this.path, this.path.endsWith('.js') ? JSON.stringify(result) : result);
+
+        return result;
+    }
+
+    async invalidate() {
+        fs.unlinkSync(this.path);
+    }
+}
+
+export const caches = {
+    admins: new CacheObject('main', 'admins.js', 10),
+    adminsFooter: new CacheObject('main', 'footer.js', 10),
+    blog: new CacheObject('main', 'blog.js', Infinity),
+    nouns: new CacheObject('main', 'nouns.js', 10),
+    terms: new CacheObject('main', 'terms.js', 10),
+    inclusive: new CacheObject('main', 'inclusive.js', 10),
 }

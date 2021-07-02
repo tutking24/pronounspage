@@ -6,8 +6,7 @@ import avatar from '../avatar';
 import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {loadTsv} from "../../src/tsv";
 import {handleErrorAsync} from "../../src/helpers";
-import cache from "../../src/cache";
-import fs from "fs";
+import { CacheObject } from "../../src/cache";
 
 const translations = loadSuml('translations');
 
@@ -38,7 +37,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
     const pronounName = req.params.pronounName + req.params[0];
 
-    const result = await cache('banner', `${pronounName}.png`, 24 * 60, async () => {
+    const result = await new CacheObject('banner', `${pronounName}.png`, 24 * 60).fetch(async () => {
         registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', {family: 'Quicksand', weight: 'regular'});
         registerFont('static/fonts/quicksand-v21-latin-ext_latin-700.ttf', {family: 'Quicksand', weight: 'bold'});
 

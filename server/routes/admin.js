@@ -6,12 +6,12 @@ import {buildDict, now, shuffle, handleErrorAsync, buildLocaleList} from "../../
 import locales from '../../src/locales';
 import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
-import cache from "../../src/cache";
+import { caches }  from "../../src/cache";
 
 const router = Router();
 
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
-    return res.json(await cache('main', 'admins.js', 10, async () => {
+    return res.json(await caches.admins.fetch(async () => {
         const admins = await req.db.all(SQL`
             SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
             FROM users u
@@ -47,7 +47,7 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/admin/list/footer', handleErrorAsync(async (req, res) => {
-    return res.json(shuffle(await cache('main', 'footer.js', 10, async () => {
+    return res.json(shuffle(await caches.adminsFooter.fetch(async () => {
         const fromDb = await req.db.all(SQL`
             SELECT u.username, p.footerName, p.footerAreas, p.locale
             FROM users u
