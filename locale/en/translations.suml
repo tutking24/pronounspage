@@ -369,7 +369,8 @@ faq:
                 - >
                     There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}
+                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
+                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly do you mean.
 
 links:
     header: 'Links'
@@ -456,7 +457,12 @@ profile:
     description: 'Description'
     names: 'Names'
     pronouns: 'Pronouns'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/her”) or a link (eg. “https://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
+    pronounsInfo: >
+        You can enter a pronoun (eg. “they” or “she/her”)
+        or a link (eg. “https://en.pronouns.page/e”)
+        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
+        Keep in mind that <strong>all five forms</strong> are required in that case,
+        otherwise the app can only guess what exactly do you mean.
     pronounsNotFound: 'We can''t find a link to this pronoun!'
     words: 'Words'
     birthday: 'Age'
