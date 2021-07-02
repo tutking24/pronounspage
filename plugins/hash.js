@@ -5,8 +5,8 @@ export default {
                 return;
             }
 
-            const anchor = decodeURIComponent(window.location.hash.substr(1));
-            setTimeout(_ => {
+            const doHandle = () => {
+                const anchor = decodeURIComponent(window.location.hash.substr(1));
                 const $anchor = document.getElementById(anchor);
                 if (checkAnchor && $anchor) {
                     $anchor.scrollIntoView();
@@ -15,6 +15,13 @@ export default {
                 } else if (anchor.startsWith(namespace + '/')) {
                     callback(anchor.substring(namespace.length + 1));
                 }
+            }
+
+            setTimeout(_ => {
+                doHandle();
+                window.addEventListener('hashchange', function() {
+                    doHandle();
+                }, false);
             }, 500);
         },
         setHash(namespace, value) {

@@ -32,9 +32,9 @@
             <template v-slot:row="s"><template v-if="s">
                 <td class="cell-wide">
                     <p>
-                        <strong>{{s.el.term.map(x => x.trim()).join(', ')}}</strong>
-                        <span v-if="s.el.original.length">({{s.el.original.map(x => x.trim()).join('; ')}})</span>
-                        – {{s.el.definition}}
+                        <strong><LinkedTextMultiple :texts="s.el.term" noicons/></strong>
+                        <span v-if="s.el.original.length">(<LinkedTextMultiple :texts="s.el.original" glue="; " noicons/>)</span>
+                        – <LinkedText :text="s.el.definition" noicons/>
                         <template v-if="s.el.category">
                             <br/>
                             <span class="badge bg-primary text-white">
@@ -52,14 +52,14 @@
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
                         <p>
-                            <strong>{{s.el.term.join(', ')}}</strong>
-                            <span v-if="s.el.original.length">({{s.el.original.join('; ')}})</span>
-                            – {{s.el.definition}}
-                            <template v-if="s.el.category">
+                            <strong><LinkedTextMultiple :texts="entries[s.el.base].term" noicons/></strong>
+                            <span v-if="entries[s.el.base].original.length">(<LinkedTextMultiple :texts="entries[s.el.base].original" glue="; " noicons/>)</span>
+                            – <LinkedText :text="entries[s.el.base].definition" noicons/>
+                            <template v-if="entries[s.el.base].category">
                                 <br/>
                                 <span class="badge bg-primary text-white">
-                                {{s.el.category}}
-                            </span>
+                                    {{entries[s.el.base].category}}
+                                </span>
                             </template>
                         </p>
                     </div>
