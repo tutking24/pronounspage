@@ -4,6 +4,7 @@ import md5 from "js-md5";
 import {ulid} from "ulid";
 import avatar from "../avatar";
 import {handleErrorAsync} from "../../src/helpers";
+import { caches }  from "../../src/cache";
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -100,6 +101,11 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 ${req.isGranted('users') ? req.body.footerName || null : ''},
                 ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
         )`);
+    }
+
+    if (req.body.teamName) {
+        await caches.admins.invalidate();
+        await caches.adminsFooter.invalidate();
     }
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));

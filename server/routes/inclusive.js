@@ -2,6 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {isTroll, handleErrorAsync} from "../../src/helpers";
+import { caches } from "../../src/cache";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM inclusive WHERE id=${id}`);
@@ -17,19 +18,22 @@ const approve = async (db, id) => {
         SET approved = 1, base_id = NULL
         WHERE id = ${id}
     `);
+    await caches.inclusive.invalidate();
 }
 
 const router = Router();
 
 router.get('/inclusive', handleErrorAsync(async (req, res) => {
-    return res.json(await req.db.all(SQL`
-        SELECT i.*, u.username AS author FROM inclusive i
-        LEFT JOIN users u ON i.author_id = u.id
-        WHERE i.locale = ${global.config.locale}
-        AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
-        AND i.deleted = 0
-        ORDER BY i.approved, i.insteadOf
-    `));
+    return res.json(await caches.inclusive.fetch(async () => {
+        return await req.db.all(SQL`
+            SELECT i.*, u.username AS author FROM inclusive i
+            LEFT JOIN users u ON i.author_id = u.id
+            WHERE i.locale = ${global.config.locale}
+            AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
+            AND i.deleted = 0
+            ORDER BY i.approved, i.insteadOf
+        `);
+    }));
 }));
 
 router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
@@ -79,6 +83,8 @@ router.post('/inclusive/hide/:id', handleErrorAsync(async (req, res) => {
         WHERE id = ${req.params.id}
     `);
 
+    await caches.inclusive.invalidate();
+
     return res.json('ok');
 }));
 
@@ -102,6 +108,8 @@ router.post('/inclusive/remove/:id', handleErrorAsync(async (req, res) => {
         SET deleted=1
         WHERE id = ${req.params.id}
     `);
+
+    await caches.inclusive.invalidate();
 
     return res.json('ok');
 }));

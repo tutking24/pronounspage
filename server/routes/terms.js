@@ -2,7 +2,7 @@ import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {isTroll, handleErrorAsync} from "../../src/helpers";
-import cache from "../../src/cache";
+import { caches } from "../../src/cache";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM terms WHERE id=${id}`);
@@ -18,12 +18,13 @@ const approve = async (db, id) => {
         SET approved = 1, base_id = NULL
         WHERE id = ${id}
     `);
+    await caches.terms.invalidate();
 }
 
 const router = Router();
 
 router.get('/terms', handleErrorAsync(async (req, res) => {
-    return res.json(await cache('main', 'terms.js', 10, () => {
+    return res.json(await caches.terms.fetch(() => {
         return req.db.all(SQL`
             SELECT i.*, u.username AS author FROM terms i
             LEFT JOIN users u ON i.author_id = u.id
@@ -82,6 +83,8 @@ router.post('/terms/hide/:id', handleErrorAsync(async (req, res) => {
         WHERE id = ${req.params.id}
     `);
 
+    await caches.terms.invalidate();
+
     return res.json('ok');
 }));
 
@@ -105,6 +108,8 @@ router.post('/terms/remove/:id', handleErrorAsync(async (req, res) => {
         SET deleted=1
         WHERE id = ${req.params.id}
     `);
+
+    await caches.terms.invalidate();
 
     return res.json('ok');
 }));
