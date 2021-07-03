@@ -9,6 +9,10 @@ export class CacheObject {
     }
 
     async fetch(generator) {
+        if (process.env.NODE_ENV === 'development') {
+            return await generator();
+        }
+
         if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (new Date() - this.maxAgeMinutes*60*1000)) {
             const content = fs.readFileSync(this.path);
             return this.path.endsWith('.js') ? JSON.parse(content) : content;
