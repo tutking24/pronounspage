@@ -81,7 +81,7 @@
             </div>
 
             <template v-if="config.nouns.templates">
-                <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary w-100">
+                <a v-if="!templateVisible" href="#" @click.prevent="templateVisible = true" class="btn btn-outline-primary w-100 mb-3">
                     <Icon v="copy"/>
                     <T>nouns.template</T>
                 </a>

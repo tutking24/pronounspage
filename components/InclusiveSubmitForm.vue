@@ -12,38 +12,33 @@
             </p>
         </div>
         <form v-else @submit.prevent="submit">
-            <div class="table-responsive">
-                <table class="table table-borderless table-sm table-fixed-3">
-                    <thead>
-                    <tr>
-                        <th class="text-nowrap">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <Icon v="comment-times"/>
                             <T>nouns.inclusive.insteadOf</T>
-                        </th>
-                        <th class="text-nowrap">
+                        </strong></label>
+                        <NounForm v-model="form.insteadOf" maxlength="128"/>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <Icon v="comment-check"/>
                             <T>nouns.inclusive.say</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <Icon v="comment-dots"/>
-                            <T>nouns.inclusive.because</T>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <NounForm v-model="form.insteadOf" maxlength="128"/>
-                        </td>
-                        <td>
-                            <NounForm v-model="form.say" maxlength="128"/>
-                        </td>
-                        <td>
-                            <textarea v-model="form.because" class="form-control form-control-sm" required rows="3"></textarea>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        </strong></label>
+                        <NounForm v-model="form.say" maxlength="128"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="text-nowrap"><strong>
+                    <Icon v="comment-dots"/>
+                    <T>nouns.inclusive.because</T>
+                </strong></label>
+                <textarea v-model="form.because" class="form-control form-control-sm" required rows="6"></textarea>
             </div>
 
             <div class="form-group">
