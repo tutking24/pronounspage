@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {isTroll, handleErrorAsync} from "../../src/helpers";
+import {isTroll, handleErrorAsync, sortClearedLinkedText} from "../../src/helpers";
 import { caches } from "../../src/cache";
 
 const approve = async (db, id) => {
@@ -24,29 +24,27 @@ const approve = async (db, id) => {
 const router = Router();
 
 router.get('/terms', handleErrorAsync(async (req, res) => {
-    return res.json(await caches.terms.fetch(() => {
-        return req.db.all(SQL`
+    return res.json(await caches.terms.fetch(async () => {
+        return sortClearedLinkedText(await req.db.all(SQL`
             SELECT i.*, u.username AS author FROM terms i
             LEFT JOIN users u ON i.author_id = u.id
             WHERE i.locale = ${global.config.locale}
             AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
             AND i.deleted = 0
-            ORDER BY i.term
-        `);
+        `), 'term');
     }));
 }));
 
 router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
-    return res.json(await req.db.all(SQL`
+    return res.json(sortClearedLinkedText(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM terms i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${global.config.locale}
         AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
         AND i.deleted = 0
         AND (i.term like ${term} OR i.original like ${term})
-        ORDER BY i.term
-    `));
+    `)), 'term');
 }));
 
 router.post('/terms/submit', handleErrorAsync(async (req, res) => {

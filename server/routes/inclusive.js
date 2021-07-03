@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {isTroll, handleErrorAsync} from "../../src/helpers";
+import {isTroll, handleErrorAsync, sortClearedLinkedText} from "../../src/helpers";
 import { caches } from "../../src/cache";
 
 const approve = async (db, id) => {
@@ -25,20 +25,19 @@ const router = Router();
 
 router.get('/inclusive', handleErrorAsync(async (req, res) => {
     return res.json(await caches.inclusive.fetch(async () => {
-        return await req.db.all(SQL`
+        return sortClearedLinkedText(await req.db.all(SQL`
             SELECT i.*, u.username AS author FROM inclusive i
             LEFT JOIN users u ON i.author_id = u.id
             WHERE i.locale = ${global.config.locale}
             AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
             AND i.deleted = 0
-            ORDER BY i.approved, i.insteadOf
-        `);
+        `), 'insteadOf');
     }));
 }));
 
 router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
-    return res.json(await req.db.all(SQL`
+    return res.json(sortClearedLinkedText(await req.db.all(SQL`
         SELECT i.*, u.username AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${global.config.locale}
@@ -46,7 +45,7 @@ router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
         AND i.deleted = 0
         AND (i.insteadOf like ${term} OR i.say like ${term})
         ORDER BY i.approved, i.insteadOf
-    `));
+    `), 'insteadOf'));
 }));
 
 router.post('/inclusive/submit', handleErrorAsync(async (req, res) => {
