@@ -128,7 +128,7 @@
 
 <script>
     import { TermsEntry } from "~/src/classes";
-    import { buildDict, clearUrl } from "../src/helpers";
+    import { buildDict, clearUrl, clearLinkedText } from "../src/helpers";
     import hash from "../plugins/hash";
 
     export default {
@@ -217,7 +217,9 @@
                         if (!a.approved && b.approved) {
                             return -1;
                         }
-                        return a.term.toLowerCase().localeCompare(b.term.toLowerCase());
+                        return clearLinkedText(a.term.toLowerCase()).localeCompare(
+                            clearLinkedText(b.term.toLowerCase())
+                        );
                     });
                     for (let w of sorted) {
                         yield [w.id, new TermsEntry(w)];

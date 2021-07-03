@@ -194,3 +194,16 @@ export const isGranted = (user, locale, area) => {
 export const handleErrorAsync = func => (req, res, next) => {
     func(req, res, next).catch((error) => next(error));
 };
+
+export const clearLinkedText = (text) => {
+    return text
+        .replace(/{[^}=]+=([^}=]+)}/g, '$1')
+        .replace(/{([^}=]+)}/g, '$1')
+        .replace(/[„”"']/g, '')
+    ;
+}
+
+export const sortClearedLinkedText = (items, key) => {
+    items.sort((a, b) => clearLinkedText(a[key].toLowerCase()).localeCompare(clearLinkedText(b[key].toLowerCase())))
+    return items;
+}
