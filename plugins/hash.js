@@ -1,7 +1,7 @@
 export default {
     methods: {
         handleHash(namespace, callback, checkAnchor = true) {
-            if (!process.client || !window.location.hash) {
+            if (!process.client) {
                 return;
             }
 

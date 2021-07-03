@@ -30,6 +30,10 @@
                     return bufferNode;
                 }
 
+                if (linkBuffer === '') {
+                    linkBuffer = '#' + buffer;
+                }
+
                 if (linkBuffer.indexOf('https://') === 0
                     || linkBuffer.indexOf('http://') === 0
                     || linkBuffer.indexOf('mailto:') === 0
