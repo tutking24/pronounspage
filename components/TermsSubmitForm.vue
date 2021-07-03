@@ -12,52 +12,59 @@
             </p>
         </div>
         <form v-else @submit.prevent="submit">
-            <div class="table-responsive">
-                <table class="table table-borderless table-sm table-fixed-3">
-                    <thead>
-                    <tr>
-                        <th class="text-nowrap">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <T>nouns.terms.term</T>
-                        </th>
-                        <th class="text-nowrap">
+                        </strong></label>
+                        <NounForm v-model="form.term" required maxlength="128"/>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <T>nouns.terms.original</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <T>nouns.terms.definition</T>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <NounForm v-model="form.term" required maxlength="128"/>
-                        </td>
-                        <td>
-                            <NounForm v-model="form.original" maxlength="1024"/>
-                        </td>
-                        <td>
-                            <textarea v-model="form.definition" class="form-control form-control-sm" required rows="3"></textarea>
-                        </td>
-                    </tr>
-                    <tr v-if="$isGranted('terms')">
-                        <td :colspan="$isGranted('terms') ? 1 : 3">
-                            <T>nouns.terms.category</T>
-                            <select v-model="form.category" class="form-control form-control-sm">
-                                <option value=""></option>
-                                <option v-for="category in config.nouns.terms.categories" :value="category">{{category}}</option>
-                            </select>
-                        </td>
-                        <td v-if="$isGranted('terms')">
+                        </strong></label>
+                        <NounForm v-model="form.original" maxlength="1024"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="text-nowrap"><strong>
+                    <T>nouns.terms.definition</T>
+                </strong></label>
+                <textarea v-model="form.definition" class="form-control form-control-sm" required rows="6"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="text-nowrap"><strong>
+                    <T>nouns.terms.category</T>
+                </strong></label>
+                <select v-model="form.category" class="form-control form-control-sm">
+                    <option value=""></option>
+                    <option v-for="category in config.nouns.terms.categories" :value="category">{{category}}</option>
+                </select>
+            </div>
+
+            <div class="row" v-if="$isGranted('terms')">
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <T>profile.flags</T>
-                            <ListInput v-model="form.flags" v-slot="s"/>
-                        </td>
-                        <td v-if="$isGranted('terms')">
+                        </strong></label>
+                        <ListInput v-model="form.flags" v-slot="s"/>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-group">
+                        <label class="text-nowrap"><strong>
                             <T>nouns.terms.images</T>
-                            <ImageWidget v-model="form.images" multiple/>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        </strong></label>
+                        <ImageWidget v-model="form.images" multiple/>
+                    </div>
+                </div>
             </div>
 
             <div class="alert alert-info" v-if="form.base">
