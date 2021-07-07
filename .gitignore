@@ -2,6 +2,8 @@
 /locale/*/db.sqlite
 
 /db.sqlite
+/db.sqlite-shm
+/db.sqlite-wal
 
 /daemonise.json
 /daemonise.log
