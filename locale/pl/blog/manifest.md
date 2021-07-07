@@ -2,6 +2,13 @@
 
 <small>2021-04-20 | [@andrea](/@andrea)</small>
 
+<section>
+    <a href="/docs/Manifest Niebinarnej Polszczyzny.pdf" target="_blank" class="btn btn-outline-primary d-block">
+        <span class="fal fa-file-pdf"></span>
+        Wersja do ściągnięcia
+    </a>
+</section>
+
 Jako [Rada Języka Neutralnego](/kolektyw-rjn) zawsze stroniłośmy od
 [preskryptywizmu](https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo)).
 Teraz jednak zebrało się wystarczająco dużo powodów,
