@@ -12,6 +12,8 @@ const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 
+process.env.LOCALE = locale;
+
 const bodyParser = require('body-parser');
 
 const buildFlags = () => {
