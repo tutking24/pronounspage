@@ -179,6 +179,7 @@ sources:
         Series: 'Seriale'
         Song: 'Muzyka'
         Poetry: 'Poezja'
+        Game: 'Gra'
         Other: 'Inne'
     submit:
         header: 'Zgłoś przykład do dodania'

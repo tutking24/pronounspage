@@ -116,6 +116,7 @@ sources:
         Series: 'Series'
         Song: 'Music'
         Poetry: 'Poetry'
+        Game: 'Game'
         Other: 'Other'
     submit:
         header: 'Submit an example to be added'
