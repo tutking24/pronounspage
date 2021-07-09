@@ -75,6 +75,7 @@ sources:
         Series: '電視劇'
         Song: '音樂'
         Poetry: '詩歌'
+        Game: 'Game' # TODO
         Other: '其他'
     submit:
         header: '提交一個示例'

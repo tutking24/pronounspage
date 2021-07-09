@@ -78,6 +78,7 @@ sources:
         Series: 'Serie'
         Song: 'Muziek'
         Poetry: 'Poëzie'
+        Game: 'Game' # TODO
         Other: 'Andere'
     submit:
         header: 'Dien een voorbeeld in ter toevoeging aan de site'

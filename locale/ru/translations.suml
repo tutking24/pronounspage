@@ -176,6 +176,7 @@ sources:
         Series: 'Seriale'
         Song: 'Muzyka'
         Poetry: 'Poezja'
+        Game: 'Game' # TODO
         Other: 'Inne'
     submit:
         header: 'Zgłoś przykład do dodania'
