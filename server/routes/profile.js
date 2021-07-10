@@ -58,6 +58,7 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
             bannedReason: profile.bannedReason,
             team: !!profile.roles,
+            card: profile.card,
         };
     }
     return p;
@@ -89,7 +90,8 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 words = ${JSON.stringify(req.body.words)},
                 teamName = ${req.isGranted('users') ? req.body.teamName || null : ''},
                 footerName = ${req.isGranted('users') ? req.body.footerName || null : ''},
-                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
+                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''},
+                card = NULL
             WHERE id = ${ids[0]}
         `);
     } else {

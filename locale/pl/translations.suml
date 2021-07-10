@@ -977,6 +977,9 @@ profile:
         Potem możesz do niej podlinkować w swoim bio czy stopce maila.
         Wystarczy, że założysz konto {/konto=tutaj}.
     bannerButton: 'Stwórz wizytówkę'
+    card:
+        link: 'Obrazek'
+        generating: 'Trwa generowanie obrazka…'
 
 census:
     header: 'Spis'

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     region: process.env.AWS_REGION,
     credentials: {
         accessKeyId: process.env.AWS_KEY,

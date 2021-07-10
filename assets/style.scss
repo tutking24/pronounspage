@@ -61,15 +61,6 @@ body {
     max-width: min(90vw, 920px);
 }
 
-@include media-breakpoint-up('lg', $grid-breakpoints) {
-    body {
-        margin-top: $header-margin;
-    }
-    .sticky-top {
-        top: $header-height - 1px;
-    }
-}
-
 section {
     margin: 2*$spacer 0;
 }
