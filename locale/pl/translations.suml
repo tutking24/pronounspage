@@ -1112,6 +1112,7 @@ mode:
 
 ban:
     reason: 'Powód blokady'
+    visible: '(to będzie widoczne dla osoby zbanowanej)'
     action: 'Zablokuj tę osobę'
     confirm: 'Czy na pewno chcesz zbanować @%username%?'
     header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
