@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex flex-column vh-100">
+    <div class="d-flex flex-column vh-100 body">
         <div class="flex-grow-1">
             <Header/>
             <main class="container">
@@ -56,4 +56,13 @@
 <style lang="scss">
     @import "assets/style";
     @import "~avris-sorter/dist/Sorter.min.css";
+
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        .body {
+            margin-top: $header-margin;
+        }
+        .sticky-top {
+            top: $header-height - 1px;
+        }
+    }
 </style>
