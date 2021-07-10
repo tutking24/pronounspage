@@ -10,50 +10,44 @@
             </div>
         </div>
 
-        <section v-if="profile.age || profile.description.trim().length || profile.team">
-            <p v-if="profile.team" class="mb-2">
-                <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
-                    <Icon v="collective-logo.svg" class="inverted"/>
-                    <T>contact.team.member</T>
-                </nuxt-link>
-            </p>
-            <p v-for="line in profile.description.split('\n')" class="mb-1">
-                <Spelling escape :text="line"/>
-            </p>
-            <p v-if="profile.age">
-                <Icon v="birthday-cake"/>
-                {{ profile.age }}
-            </p>
+        <section class="row">
+            <div v-if="profile.age || profile.description.trim().length || profile.team" class="col-12 col-lg-6">
+                <p v-for="line in profile.description.split('\n')" class="mb-1">
+                    <Spelling escape :text="line"/>
+                </p>
+                <p v-if="profile.age">
+                    <Icon v="birthday-cake"/>
+                    {{ profile.age }}
+                </p>
+                <p v-if="profile.team" class="mb-2">
+                    <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
+                        <Icon v="collective-logo.svg" class="inverted"/>
+                        <T>contact.team.member</T>
+                    </nuxt-link>
+                </p>
+            </div>
+
+            <div v-if="profile.flags.length || Object.keys(profile.customFlags).length" class="col-12 col-lg-6">
+                <ul class="list-inline">
+                    <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
+                        <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
+                              :alt="allFlags[flag]"
+                              :img="`/flags/${flag}.png`"
+                              :terms="terms || []"/>
+                    </li>
+                    <li v-for="(desc, flag) in profile.customFlags" class="list-inline-item p-1">
+                        <Flag :name="desc"
+                              :alt="desc"
+                              :img="buildImageUrl(flag, 'flag')"
+                              :terms="terms|| []"
+                              custom/>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section v-if="profile.flags.length || Object.keys(profile.customFlags).length">
-            <ul class="list-inline">
-                <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item pr-2">
-                    <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
-                          :alt="allFlags[flag]"
-                          :img="`/flags/${flag}.png`"
-                          :terms="terms || []"/>
-                </li>
-                <li v-for="(desc, flag) in profile.customFlags" class="list-inline-item pr-2">
-                    <Flag :name="desc"
-                          :alt="desc"
-                          :img="buildImageUrl(flag, 'flag')"
-                          :terms="terms|| []"
-                          custom/>
-                </li>
-            </ul>
-        </section>
-
-        <section v-if="profile.links.length">
-            <ul class="list-inline">
-                <li v-for="link in profile.links" class="list-inline-item pr-2">
-                    <ProfileLink :link="link"/>
-                </li>
-            </ul>
-        </section>
-
-        <section class="d-flex">
-            <div class="w-50" v-if="Object.keys(profile.names).length">
+        <section class="row">
+            <div v-if="Object.keys(profile.names).length" class="col-6 col-lg-4">
                 <h3>
                     <Icon v="signature"/>
                     <T>profile.names</T>
@@ -63,7 +57,7 @@
                     <li v-for="(opinion, name) in profile.names"><Opinion :word="name" :opinion="opinion"/></li>
                 </ul>
             </div>
-            <div class="w-50" v-if="Object.keys(profile.pronouns).length">
+            <div v-if="Object.keys(profile.pronouns).length" class="col-6 col-lg-4">
                 <h3>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
@@ -75,6 +69,18 @@
                     </li>
                 </ul>
             </div>
+            <div v-if="profile.links.length" class="col-12 col-lg-4">
+                <h3>
+                    <Icon v="link"/>
+                    <T>profile.links</T>
+                </h3>
+
+                <ul class="list-unstyled">
+                    <li v-for="link in profile.links">
+                        <ProfileLink :link="link"/>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="clearfix">
@@ -83,8 +89,8 @@
                 <T>profile.words</T>
             </h3>
 
-            <div>
-                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="float-start w-50 w-md-25">
+            <div class="row">
+                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="col-6 col-lg-3">
                     <ul class="list-unstyled">
                         <li v-for="(opinion, word) in group"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>
