@@ -26,7 +26,9 @@ export class CacheObject {
     }
 
     async invalidate() {
-        fs.unlinkSync(this.path);
+        if (fs.existsSync(this.path)) {
+            fs.unlinkSync();
+        }
     }
 }
 
