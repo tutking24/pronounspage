@@ -100,14 +100,14 @@
                 <td>
                     <ul class="list-singular">
                         <li v-for="w in s.el.neutr">
-                            <Declension v-if="config.nouns.declension" :word="w"/>
+                            <Declension v-if="config.nouns.declension" :word="w" tooltip/>
                             <template v-else><Spelling :text="w"/></template>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.neutrPl">
-                            <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr"/>
+                            <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr" tooltip/>
                             <template v-else><Spelling :text="w"/></template>
                             <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
