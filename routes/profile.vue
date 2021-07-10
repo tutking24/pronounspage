@@ -19,9 +19,7 @@
                 </LocaleLink>
             </div>
             <div v-if="$user() && $user().username === profile.username">
-                <nuxt-link to="/editor"
-                           class="btn btn-primary btn-sm mb-2 mx-1"
-                >
+                <nuxt-link to="/editor" class="btn btn-primary btn-sm mb-2 mx-1">
                     <Icon v="edit"/>
                     <T>profile.edit</T>
                 </nuxt-link>
@@ -32,7 +30,7 @@
                     pronouns.page/@{{profile.username}}
                 </a>
             </div>
-            <div v-if="$user() && $user().username === profile.username">
+            <div v-if="($user() && $user().username === profile.username) || $isGranted('users')">
                 <small>
                     <Icon v="id-card"/>
                     <T>profile.card.link</T>:
