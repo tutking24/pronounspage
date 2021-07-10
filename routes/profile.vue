@@ -134,7 +134,7 @@
         <client-only>
             <section v-if="$isGranted('users')">
                 <div class="alert alert-warning">
-                    <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason')" :disabled="saving"></textarea>
+                    <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
                     <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
                         <Icon v="ban"/>
                         {{$t('ban.action')}}
