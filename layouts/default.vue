@@ -49,6 +49,10 @@
             if (process.client) {
                 sorter();
             }
+
+            if (process.env.NODE_ENV === 'production') {
+                this.$loadScript('arc', 'https://arc.io/widget.min.js#yHdNYRkC');
+            }
         }
     }
 </script>

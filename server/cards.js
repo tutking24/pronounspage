@@ -28,7 +28,10 @@ for (let [code, , url, ] of locales) {
         console.log(locale, username, cardId);
 
         for (let dark of [false, true]) {
-            const [ buffer ] = await new Pageres({ darkMode: dark })
+            const [ buffer ] = await new Pageres({
+                darkMode: dark,
+                delay: 3,
+            })
                 .src(urlBases[locale] + username, ['1024x300'])
                 .run();
 
