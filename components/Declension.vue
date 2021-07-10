@@ -1,11 +1,12 @@
 <template>
-    <span>
+    <span class="position-relative">
         <template v-if="declensionTemplate">
-            <a v-if="!open" href="#" @click.prevent="visible = !visible">{{ word }}</a>
-            <ul v-if="visible" :class="['list-unstyled', 'small', open ? '' : 'm-2 p-2 border']">
+            <a v-if="!open" href="#" @click.prevent="visible = !visible" :class="tooltip && visible ? 'fw-bold' : ''">{{ word }}</a>
+            <ul v-if="visible" :class="['list-unstyled', 'small', open ? '' : 'm-2 p-3 pe-5 border bg-light', tooltip ? 'tooltip' : '']">
                 <li v-for="(declined, c) in declensionTemplate.decline(word, plural)" class="text-nowrap">
                     <strong>{{c}} <small v-if="!condense">({{cases[c]}})</small></strong> {{ declined.join(' / ') }}
                 </li>
+                <li v-if="tooltip" class="close"><a href="#" @click.prevent="visible = false"><Icon v="times"/></a></li>
             </ul>
         </template>
         <template v-else>{{ word }}</template>
@@ -24,6 +25,7 @@
             template: { },
             open: { type: Boolean },
             condense: { type: Boolean },
+            tooltip: { type: Boolean },
         },
         data() {
             return {
@@ -68,3 +70,17 @@
         },
     };
 </script>
+
+<style lang="scss" scoped>
+    ul.tooltip {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        z-index: 999;
+        li.close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    }
+</style>
