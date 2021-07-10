@@ -3,7 +3,7 @@
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
                 <Icon v="tags"/>
-                <T>title</T>
+                <T>title</T><span v-if="profile">/@{{profile.username}}</span>
             </h1>
         </nuxt-link>
     </Profile>
