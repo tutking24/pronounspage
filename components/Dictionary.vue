@@ -225,7 +225,9 @@
             async setFilter(filter) {
                 this.filter = filter;
                 await this.loadNouns();
-                this.focus();
+                if (filter) {
+                    this.focus();
+                }
             },
             focus() {
                 this.$el.focus();

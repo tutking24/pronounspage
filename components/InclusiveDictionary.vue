@@ -209,7 +209,9 @@
             async setFilter(filter) {
                 this.filter = filter;
                 await this.loadEntries();
-                this.focus();
+                if (filter) {
+                    this.focus();
+                }
             },
             focus() {
                 this.$el.focus();
