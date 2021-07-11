@@ -11,7 +11,7 @@
         </div>
 
         <section class="row">
-            <div v-if="profile.age || profile.description.trim().length || profile.team" class="col-12 col-lg-6">
+            <div v-if="profile.age || profile.description.trim().length || profile.team" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <p v-for="line in profile.description.split('\n')" class="mb-1">
                     <Spelling escape :text="line"/>
                 </p>
@@ -27,7 +27,7 @@
                 </p>
             </div>
 
-            <div v-if="profile.flags.length || Object.keys(profile.customFlags).length" class="col-12 col-lg-6">
+            <div v-if="profile.flags.length || Object.keys(profile.customFlags).length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <ul class="list-inline">
                     <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
                         <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
@@ -174,6 +174,9 @@
                 }
 
                 return mainPronoun;
+            },
+            manyFlagsLayout() {
+                return this.profile.flags.length + Object.keys(this.profile.customFlags).length > 36;
             },
         },
     };
