@@ -11,7 +11,7 @@
         </div>
 
         <section class="row">
-            <div v-if="profile.age || profile.description.trim().length || profile.team" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
+            <div v-if="hasDescriptionColumn" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <p v-for="line in profile.description.split('\n')" class="mb-1">
                     <Spelling escape :text="line"/>
                 </p>
@@ -175,8 +175,14 @@
 
                 return mainPronoun;
             },
+            countFlags() {
+                return this.profile.flags.length + Object.keys(this.profile.customFlags).length;
+            },
             manyFlagsLayout() {
-                return this.profile.flags.length + Object.keys(this.profile.customFlags).length > 36;
+                return this.countFlags > 36 || this.countFlags === 0 || !this.hasDescriptionColumn;
+            },
+            hasDescriptionColumn() {
+                return this.profile.age || this.profile.description.trim().length || this.profile.team;
             },
         },
     };
