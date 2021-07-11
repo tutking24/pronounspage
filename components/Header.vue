@@ -83,7 +83,7 @@
         </div>
     </div>
     <header v-else class="mb-4">
-        <h1 class="text-nowrap">
+        <h1 class="text-nowrap p-4">
             <nuxt-link to="/">
                 <Icon v="tags"/>
                 <T>title</T>
