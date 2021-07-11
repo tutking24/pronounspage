@@ -109,7 +109,7 @@ module.exports.calculateStats = async (db, allLocales) => {
     }
 
     const cardsCount = (await db.get(`SELECT 1.0 * (SELECT count(*) FROM profiles WHERE card IS NOT NULL) / (SELECT count(*) FROM profiles) as c`)).c;
-    const cards = Math.round(cardsCount * 1000) / 1000;
+    const cards = Math.round(cardsCount * 10000) / 10000;
 
     return { calculatedAt: parseInt(new Date() / 1000), users, locales, cards };
 }
