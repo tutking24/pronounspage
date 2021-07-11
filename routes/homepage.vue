@@ -40,68 +40,6 @@
                     </div>
                     <SimplePronounList :pronouns="groupPronouns"/>
                 </li>
-                <li v-if="config.pronouns.multiple !== false" class="list-group-item">
-                    <p class="h5">
-                        <Spelling :text="config.pronouns.multiple.name"/>
-                    </p>
-                    <div class="small my-1" v-if="config.pronouns.multiple.description">
-                        <Icon v="info-circle"/>
-                        <em v-html="config.pronouns.multiple.description"></em>
-                    </div>
-                    <SimplePronounList :pronouns="config.pronouns.multiple.examples" class="mb-3"/>
-                    <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary w-100">
-                        <Icon v="sliders-h-square"/>
-                        <T>pronouns.alt.button</T>
-                    </a>
-                    <div v-else class="card">
-                        <div class="card-header">
-                            <Icon v="sliders-h-square"/>
-                            <T>pronouns.alt.header</T>:
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">
-                                <ul class="list-inline d-inline mb-0">
-                                    <li class="list-inline-item" v-for="(pronoun, pronounName) in pronouns">
-                                        <button :class="['btn', multiple.includes(pronounName) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
-                                                @click="toggleMultiple(pronounName)"
-                                        >
-                                            <Spelling :text="pronoun.name()"/>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card-footer" v-if="linkMultiple">
-                            <LinkInput :link="linkMultiple"/>
-                        </div>
-                    </div>
-                </li>
-                <li v-if="config.pronouns.null !== false" class="list-group-item">
-                    <p class="h5">
-                        <Spelling :text="config.pronouns.null.description"/>
-                    </p>
-                    <div class="small my-1" v-if="config.pronouns.null.history">
-                        <Icon v="info-circle"/>
-                        <LinkedText :text="config.pronouns.null.history"/>
-                    </div>
-                    <div class="small my-1">
-                        <LinkedText :text="config.pronouns.null.template"/>
-                    </div>
-                    <SimplePronounList :pronouns="config.pronouns.null.examples" class="mb-3"/>
-                </li>
-                <li v-if="config.pronouns.emoji !== false" class="list-group-item">
-                    <p class="h5">
-                        <Spelling :text="config.pronouns.emoji.description"/>
-                    </p>
-                    <div class="small my-1" v-if="config.pronouns.emoji.history">
-                        <Icon v="info-circle"/>
-                        <LinkedText :text="config.pronouns.emoji.history"/>
-                    </div>
-                    <div class="small my-1">
-                        <LinkedText :text="config.pronouns.emoji.template"/>
-                    </div>
-                    <SimplePronounList :pronouns="config.pronouns.emoji.examples" class="mb-3"/>
-                </li>
                 <li class="list-group-item">
                     <p class="h5">
                         <T>home.generator.header</T>
@@ -194,6 +132,68 @@
                             <LinkInput :link="link"/>
                         </div>
                     </div>
+                </li>
+                <li v-if="config.pronouns.multiple !== false" class="list-group-item">
+                    <p class="h5">
+                        <Spelling :text="config.pronouns.multiple.name"/>
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.multiple.description">
+                        <Icon v="info-circle"/>
+                        <em v-html="config.pronouns.multiple.description"></em>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.multiple.examples" class="mb-3"/>
+                    <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary w-100">
+                        <Icon v="sliders-h-square"/>
+                        <T>pronouns.alt.button</T>
+                    </a>
+                    <div v-else class="card">
+                        <div class="card-header">
+                            <Icon v="sliders-h-square"/>
+                            <T>pronouns.alt.header</T>:
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <ul class="list-inline d-inline mb-0">
+                                    <li class="list-inline-item" v-for="(pronoun, pronounName) in pronouns">
+                                        <button :class="['btn', multiple.includes(pronounName) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
+                                                @click="toggleMultiple(pronounName)"
+                                        >
+                                            <Spelling :text="pronoun.name()"/>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer" v-if="linkMultiple">
+                            <LinkInput :link="linkMultiple"/>
+                        </div>
+                    </div>
+                </li>
+                <li v-if="config.pronouns.null !== false" class="list-group-item">
+                    <p class="h5">
+                        <Spelling :text="config.pronouns.null.description"/>
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.null.history">
+                        <Icon v="info-circle"/>
+                        <LinkedText :text="config.pronouns.null.history"/>
+                    </div>
+                    <div class="small my-1">
+                        <LinkedText :text="config.pronouns.null.template"/>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.null.examples" class="mb-3"/>
+                </li>
+                <li v-if="config.pronouns.emoji !== false" class="list-group-item">
+                    <p class="h5">
+                        <Spelling :text="config.pronouns.emoji.description"/>
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.emoji.history">
+                        <Icon v="info-circle"/>
+                        <LinkedText :text="config.pronouns.emoji.history"/>
+                    </div>
+                    <div class="small my-1">
+                        <LinkedText :text="config.pronouns.emoji.template"/>
+                    </div>
+                    <SimplePronounList :pronouns="config.pronouns.emoji.examples" class="mb-3"/>
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
