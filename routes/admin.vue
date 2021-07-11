@@ -84,6 +84,12 @@
 
         <ChartSet name="users" :data="stats.users.chart" init="cumulative"/>
 
+        <section>
+            <Icon v="id-card"/>
+            Images generated:
+            {{ stats.cards * 100 }}%
+        </section>
+
         <section v-if="$isGranted('users') && suspiciousUsers.length > 0">
             <h3>
                 <Icon v="siren-on"/>

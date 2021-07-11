@@ -27,7 +27,7 @@ const modes = ['light', 'dark'];
                      LEFT JOIN users on profiles.userId = users.id
             WHERE profiles.card IS NULL
             ORDER BY RANDOM()
-            LIMIT 16
+            LIMIT 8
         `)).filter(({locale}) => !isHighLoadTime(locale));
 
         if (profiles.length === 0) {
