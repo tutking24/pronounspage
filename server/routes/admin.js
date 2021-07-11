@@ -150,8 +150,12 @@ router.get('/admin/suspicious', handleErrorAsync(async (req, res) => {
         WHERE users.suspiciousChecked != 1
           AND users.bannedReason IS NULL
           AND (
-              lower(customFlags) LIKE '%super%'
-           OR lower(description) LIKE '%super%'
+              lower(customFlags) LIKE '%superstr%'
+           OR lower(description) LIKE '%superstr%'
+           OR lower(customFlags) LIKE '%superhet%'
+           OR lower(description) LIKE '%superhet%'
+           OR lower(customFlags) LIKE '%super-%'
+           OR lower(description) LIKE '%super-%'
            OR lower(customFlags) LIKE '%phobe%'
            OR lower(description) LIKE '%phobe%'
            OR lower(customFlags) LIKE '%phobic%'
@@ -162,6 +166,10 @@ router.get('/admin/suspicious', handleErrorAsync(async (req, res) => {
            OR lower(description) LIKE '%radfem%'
            OR lower(customFlags) LIKE '%gender critical%'
            OR lower(description) LIKE '%gender critical%'
+           OR lower(customFlags) LIKE '%helicopter%'
+           OR lower(description) LIKE '%helicopter%'
+           OR lower(pronouns) LIKE '%helicopter%'
+           OR lower(pronouns) LIKE '%nor/mal%'
         )
         ORDER BY users.id DESC
     `));
