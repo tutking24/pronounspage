@@ -618,6 +618,15 @@ links:
                 a korzystają z niego choćby tłumacze w poszukiwaniu wskazań i przykładów.
                 Bo te potrzebne są coraz częściej, tak samo jak przez lata terminologia związana z nowymi technologiami,
                 światem korporacji czy reklamy. Świat się zmienia, przynajmniej poza TVP.
+        -
+            icon: 'newspaper'
+            url: 'https://krytykapolityczna.pl/kultura/czytaj-dalej/kinga-dunin-czyta/maia-kobabe-gender-queer-jezyk-zaimki/'
+            headline: 'Mów do mnie, jak ci wygodnie. Nie sprowadzajmy problemów osób niebinarnych do zaimków'
+            extra: ' – Kinga Dunin, <strong>Krytyka Polityczna</strong>'
+            quote: >
+                Polski tłumacz zastępuje je tzw. dukaizmami, także niestworzonym z myślą
+                o osobach niebinarnych pomysłem Jacka Dukaja pochodzącym z powieści Perfekcyjna niedoskonałość.
+                Czyli onu/jenu. To tylko jedna z możliwości \[link do zaimki.pl].
     socials:
         -
             icon: 'twitter'
