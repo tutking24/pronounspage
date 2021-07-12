@@ -158,7 +158,7 @@ Na szczęście autorka ma świetny pomysł, jak całej sprawie zaradzić:
 Gdyby tylko [cytowana strona o tym fakcie nie informowała](https://zaimki.pl/dowolne)!
 To samo zresztą dotyczy wspomnianej wcześniej propozycji
 [używania form żeńskich i męskich wymiennie](https://zaimki.pl/ona&on).
-Tak, jest wiele osób niebinarnych, które takie właśnie formy preferują –
+Tak, jest wiele osób niebinarnych, którym pasują dowolne zaimki –
 ale jest też wiele osób, (jak Maia, o czym autorka sama wspomina),
 którym bardzo zależy, by używać konkretnych form.
 Kinga Dunin zdaje się ich potrzeby bagatelizować –
