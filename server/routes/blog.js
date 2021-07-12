@@ -41,7 +41,10 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
             }
 
             try {
-                hero = content[2].match(/^!\[[^\]]*]\(([^)]+)\)$/)[1];
+                const images = content.map(x => x.match(/^!\[[^\]]*]\(([^)]+)\)$/)).filter(x => !!x);
+                if (images.length) {
+                    hero = images[0][1];
+                }
             } catch {
             }
 
