@@ -80,7 +80,7 @@ router.get('/nouns', handleErrorAsync(async (req, res) => {
             AND n.approved >= ${req.isGranted('nouns') ? 0 : 1}
             ORDER BY n.approved, n.masc
         `))
-    }));
+    }, !req.isGranted('nouns')));
 }));
 
 router.get('/nouns/search/:term', handleErrorAsync(async (req, res) => {

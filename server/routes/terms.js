@@ -32,7 +32,7 @@ router.get('/terms', handleErrorAsync(async (req, res) => {
             AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
             AND i.deleted = 0
         `), 'term');
-    }));
+    }, !req.isGranted('terms')));
 }));
 
 router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
