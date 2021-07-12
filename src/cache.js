@@ -8,8 +8,8 @@ export class CacheObject {
         this.maxAgeMinutes = maxAgeMinutes;
     }
 
-    async fetch(generator) {
-        if (process.env.NODE_ENV === 'development') {
+    async fetch(generator, enabled = true) {
+        if (process.env.NODE_ENV === 'development' || !enabled) {
             return await generator();
         }
 

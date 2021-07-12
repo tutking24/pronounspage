@@ -32,7 +32,7 @@ router.get('/inclusive', handleErrorAsync(async (req, res) => {
             AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
             AND i.deleted = 0
         `), 'insteadOf');
-    }));
+    }, !req.isGranted('inclusive')));
 }));
 
 router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
