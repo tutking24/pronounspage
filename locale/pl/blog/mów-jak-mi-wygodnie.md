@@ -188,5 +188,11 @@ Jeśli na pierwszy rzut oka neologiczne formy zdadzą Ci się zbyt skomplikowane
 to zamieciesz temat pod dywan i poklepiesz się po plecach za swoją zajebistość, że nie dbasz o zaimki. 
 
 A niektóre z nas dbają. Niektórym nie jest wszystko jedno.
-Dla Ciebie to kwestia wygody – nas język zmusza, byśmy w niemal każdym zdaniu kłamały o swojej płci.
+Dla Ciebie to kwestia wygody – a nas język zmusza, byśmy w niemal każdym zdaniu kłamały o swojej płci.
 Może dobrze byłoby spytać, co _my_ myślimy o _naszych_ problemach?
+
+Tytuł Twojego tekstu zachęca: „nie sprowadzajmy problemów osób niebinarnych do zaimków”.
+I to poniekąd prawda: nasze problemy ani się na zaimkach nie zaczynają, ani nie kończą.
+Ale wiesz, czego też nie róbmy? Nie bagatelizujmy cudzych problemów. Nie wartościujmy ich.
+Nie piszmy felietonów o grupie społecznej, której perspektywy nie zadałośmy sobie trudu poznać.
+Nic o nas bez nas.
