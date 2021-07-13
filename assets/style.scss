@@ -131,7 +131,8 @@ blockquote {
     margin-left: $spacer;
     border-left: 3px $primary solid;
     padding-left: $spacer;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-style: italic;
 }
 
 .form-group {
