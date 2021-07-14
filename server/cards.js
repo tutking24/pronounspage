@@ -21,18 +21,19 @@ const modes = ['light', 'dark'];
 (async () => {
     const db = await dbConnection();
     while (true) {
+        await sleep(5000);
+
         const profiles = (await db.all(`
             SELECT profiles.id, profiles.locale, users.username
             FROM profiles
                      LEFT JOIN users on profiles.userId = users.id
             WHERE profiles.card IS NULL
             ORDER BY RANDOM()
-            LIMIT 8
+            LIMIT 6
         `)).filter(({locale}) => !isHighLoadTime(locale));
 
         if (profiles.length === 0) {
             console.log('No profiles in the queue');
-            await sleep(5000);
             continue;
         }
 

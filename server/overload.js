@@ -1,5 +1,5 @@
 const overloadPeriods = {
-    en: [[16, 23]],
+    en: [[15, 24]],
 };
 
 module.exports = (locale, timestamp = new Date) => {
