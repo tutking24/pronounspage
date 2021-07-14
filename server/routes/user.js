@@ -65,16 +65,20 @@ const invalidateAuthenticator = async (db, id) => {
 }
 
 const defaultUsername = async (db, email) => {
-    const base = email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
-        .padEnd(4, '0')
-        .substring(0, 14)
-        .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_');
+    const base = normalise(
+        email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
+            .padEnd(4, '0')
+            .substring(0, 14)
+            .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_')
+    );
+
+    const conflicts = (await db.all(SQL`SELECT usernameNorm FROM users WHERE usernameNorm LIKE ${normalise(base) + '%'}`))
+        .map(({usernameNorm}) => usernameNorm);
 
     let c = 0;
     while (true) {
         let proposal = base + (c || '');
-        let dbUser = await db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(proposal)}`);
-        if (!dbUser) {
+        if (!conflicts.includes(proposal)) {
             return proposal;
         }
         c++;
