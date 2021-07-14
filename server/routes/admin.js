@@ -133,7 +133,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`
         UPDATE users
         SET bannedReason = ${req.body.reason || null} 
-        WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(req.params.username)}
+        WHERE usernameNorm = ${normalise(req.params.username)}
     `);
 
     return res.json(true);

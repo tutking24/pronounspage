@@ -73,7 +73,7 @@ const defaultUsername = async (db, email) => {
     let c = 0;
     while (true) {
         let proposal = base + (c || '');
-        let dbUser = await db.get(SQL`SELECT id FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(proposal)}`);
+        let dbUser = await db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(proposal)}`);
         if (!dbUser) {
             return proposal;
         }
@@ -91,8 +91,8 @@ const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
             roles: '',
             avatarSource: avatarSource,
         }
-        await db.get(SQL`INSERT INTO users(id, username, email, roles, avatarSource)
-            VALUES (${dbUser.id}, ${dbUser.username}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
+        await db.get(SQL`INSERT INTO users(id, username, usernameNorm, email, roles, avatarSource)
+            VALUES (${dbUser.id}, ${dbUser.username}, ${normalise(dbUser.username)}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
     }
 
     dbUser.avatar = await avatar(db, dbUser);
@@ -195,7 +195,7 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
     if (isEmail) {
         user = await req.db.get(SQL`SELECT * FROM users WHERE email = ${normalise(usernameOrEmail)}`);
     } else {
-        user = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(usernameOrEmail)}`);
+        user = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(usernameOrEmail)}`);
     }
 
     if (!user && !isEmail) {
@@ -268,12 +268,12 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
         return res.json({ error: 'user.account.changeUsername.invalid' });
     }
 
-    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE lower(trim(replace(replace(replace(replace(replace(replace(replace(replace(replace(username, 'Ą', 'ą'), 'Ć', 'ć'), 'Ę', 'ę'), 'Ł', 'ł'), 'Ń', 'ń'), 'Ó', 'ó'), 'Ś', 'ś'), 'Ż', 'ż'), 'Ź', 'ż'))) = ${normalise(req.body.username)}`);
+    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(req.body.username)}`);
     if (dbUser) {
         return res.json({ error: 'user.account.changeUsername.taken' })
     }
 
-    await req.db.get(SQL`UPDATE users SET username = ${req.body.username} WHERE id = ${req.user.id}`);
+    await req.db.get(SQL`UPDATE users SET username = ${req.body.username}, usernameNorm = ${normalise(req.body.username)} WHERE id = ${req.user.id}`);
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
 }));
