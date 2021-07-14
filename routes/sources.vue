@@ -160,7 +160,9 @@
         mounted() {
             this.handleHash('', filter => {
                 this.filter = filter;
-                this.$refs.filter.scrollIntoView();
+                if (filter) {
+                    this.$refs.filter.scrollIntoView();
+                }
             });
         },
         head() {
