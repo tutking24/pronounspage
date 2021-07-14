@@ -15,7 +15,6 @@ const isBrowser = (userAgent) => {
 
 export default function(req, res, next) {
     if (process.env.NODE_ENV === 'production' && !req.url.startsWith('/card/@')) {
-        console.log(req.url, isBrowser(req.headers['user-agent']), isHighLoadTime(process.env.LOCALE)); // TODO remove later
         res.spa = isBrowser(req.headers['user-agent']) || isHighLoadTime(process.env.LOCALE);
     }
     next();
