@@ -524,6 +524,8 @@ links:
                 Nie wie już czy się śmiać czy płakać.
                 Obawiam się, że to lewicowe szaleństwo nie ma końca lub gdzieś tam przy granicach absurdu
                 będzie musiała czyhać policja myśli, bo inaczej nie da się nad tym zapanować.
+            response: >
+                Nasza odpowiedź: {/blog/czytanie-ze-zrozumieniem=Czytanie ze zrozumieniem}
         -
             icon: 'newspaper'
             url: 'https://www.plotek.pl/plotek/7,154063,27103090,demi-lovato-oglasza-jestem-osoba-niebinarna.html'
@@ -632,6 +634,8 @@ links:
                 Polski tłumacz zastępuje je tzw. dukaizmami, także niestworzonym z myślą
                 o osobach niebinarnych pomysłem Jacka Dukaja pochodzącym z powieści Perfekcyjna niedoskonałość.
                 Czyli onu/jenu. To tylko jedna z możliwości \[link do zaimki.pl].
+            response: >
+                Nasza polemika: {/blog/mów-jak-mi-wygodnie=Mów do mnie, jak MI wygodnie}
     socials:
         -
             icon: 'twitter'
