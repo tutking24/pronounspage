@@ -9,6 +9,10 @@
         <p v-if="link.quote" class="small pl-4">
             <T>quotation.start</T><LinkedText :text="link.quote"/><T>quotation.end</T>
         </p>
+        <blockquote v-if="link.response">
+            <Icon v="comment-dots"/>
+            <LinkedText :text="link.response"/>
+        </blockquote>
     </li>
 </template>
 
