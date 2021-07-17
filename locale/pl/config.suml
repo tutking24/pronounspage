@@ -491,6 +491,8 @@ links:
                 (…)
                 Tego jest bardzo dużo, można sobie poczytać. Oczywiście zachęcam do odwiedzin na stronie internetowej zaimki.pl;
                 można tam poćwiczyć język polski w jego przyszłej, nowej odsłonie.
+            response: >
+                Nasza reakcja: {https://twitter.com/neutratywy/status/1370484817859596291=Tweet}
         -
             icon: 'newspaper'
             url: 'https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a'
