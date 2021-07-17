@@ -60,6 +60,8 @@ app.use(async function (req, res, next) {
         res.on('finish', async () => {
             await req.db.close();
         });
+        res.set('Access-Control-Allow-Origin', '*');
+        res.set('Access-Control-Allow-Headers', 'authorization,content-type');
         next();
     } catch (err) {
         next(err);
