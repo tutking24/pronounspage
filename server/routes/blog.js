@@ -41,6 +41,12 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
             }
 
             try {
+                const classHeroImages = content.map(x => x.match(/<img src="([^"]+)" class="hero/)).filter(x => !!x);
+                if (classHeroImages.length) {
+                    hero = classHeroImages[0][1];
+                    throw 'continue';
+                }
+
                 const images = content.map(x => x.match(/^!\[[^\]]*]\(([^)]+)\)$/)).filter(x => !!x);
                 if (images.length) {
                     hero = images[0][1];
