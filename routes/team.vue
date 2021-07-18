@@ -5,7 +5,7 @@
             <T>contact.team.name</T>
         </h2>
 
-        <figure class="float-end border rounded">
+        <figure class="float-end border rounded m-3">
             <img src="/img/collective-logo.svg" alt="" class="invertible"/>
             <figcaption>
                 <p><T>contact.team.logo</T></p>
@@ -23,11 +23,7 @@
             <T>contact.team.description</T>
         </section>
 
-        <router-link :to="'/' + config.links.blogRoute" v-if="config.links.blog"
-                     class="btn btn-outline-primary btn-lg">
-            <Icon v="pen-nib"/>
-            <T>links.blog</T>
-        </router-link>
+        <Mission/>
 
         <section>
             <h3>
