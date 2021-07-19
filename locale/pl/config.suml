@@ -197,6 +197,13 @@ links:
             url: 'https://przepisy.bn.org.pl/materialy-metodyczne/prezentacje'
             headline: 'Zastosowanie Deskryptorów Biblioteki Narodowej w katalogowaniu publikacji z zakresu językoznawstwa'
             extra: ' – Jan Kowalski; link do zaimki.pl w materiałach szkoleniowych Biblioteki Narodowej'
+        -
+            icon: 'book'
+            url: 'https://www.nowewyrazy.pl/haslo/dukaizm.html'
+            headline: 'Hasło „dukaizm”'
+            extra: ' – Obserwatorium Językowe Uniwersytetu Warszawskiego'
+            quote: >
+                środ. «forma gramatyczna służąca do opisu osób o nieokreślonej płci, inspirowana powieścią „Perfekcyjna niedoskonałość” Jacka Dukaja»
     links:
         -
             icon: 'globe-europe'
