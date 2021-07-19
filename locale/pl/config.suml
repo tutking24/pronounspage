@@ -658,6 +658,16 @@ links:
                 W końcu nie piszemy o tym wszystkim, bo chcemy dla nich źle. Wręcz przeciwnie.
             response: >
                 Nasza odpowiedź: {https://twitter.com/neutratywy/status/1416760234673115140=Thread}
+        -
+            icon: 'newspaper'
+            url: 'https://www.glamour.pl/artykul/emma-corrin-jest-osoba-niebinarna-gwiazda-the-crown-oglasza-ruszam-w-nowa-podroz-210707095140'
+            headline: 'Emma Corrin jest osobą niebinarną. Gwiazda „The Crown” ogłasza: „ruszam w podróż w dobrą stronę”'
+            extra: ' – <strong>Glamour.pl</strong>'
+            quote: >
+                W naszym kraju osoby niebinarne stosują wymiennie bez hierarchizowania i niezależnie od płci przypisanej im przy urodzeniu zaimki męskie i żeńskie
+                lub właśnie te neutralne płciowo (neytratywy).
+                Zatem możemy powiedzieć/napisać: Emma Corrin zmianiła swoje zaimki. Albo: Emma Corrin zmieniło zaimki.
+                Więcej na ten temat znajdziecie na świetnym koncie na Instagramie @neutratywy
     socials:
         -
             icon: 'twitter'
