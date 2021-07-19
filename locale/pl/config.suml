@@ -638,6 +638,19 @@ links:
                 Czyli onu/jenu. To tylko jedna z możliwości \[link do zaimki.pl].
             response: >
                 Nasza polemika: {/blog/mów-jak-mi-wygodnie=Mów do mnie, jak MI wygodnie}
+        -
+            icon: 'newspaper'
+            url: 'https://vibez.pl/wydarzenia/jak-pisac-o-osobach-niebinarnych-ja-juz-naprawde-nie-wiem-kto-ma-racje-czyli-dramy-z-zaimkami-6661197309622944a'
+            headline: 'Jak pisać o osobach niebinarnych? Ja już naprawdę nie wiem, kto ma rację, czyli dramy z zaimkami'
+            extra: ' – <strong>Vibez.pl</strong>'
+            quote: >
+                Wiecie, chciałabym np. kiedyś porozmawiać z osobą niebinarną, ale wciąż czuje,
+                że za mało wiem, że powiem coś złego czy głupiego, jakoś ją urażę,
+                a po takich komunikatach nie jestem pewna, czy kiedykolwiek się na to zdobędę.
+                Fajnie by było gdyby te osoby też otworzyły się na naszą niewiedzę i pozwoliły nam popełniać błędy.
+                W końcu nie piszemy o tym wszystkim, bo chcemy dla nich źle. Wręcz przeciwnie.
+            response: >
+                Nasza odpowiedź: {https://twitter.com/neutratywy/status/1416760234673115140=Thread}
     socials:
         -
             icon: 'twitter'
