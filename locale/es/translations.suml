@@ -77,7 +77,7 @@ sources:
         Series: 'Series'
         Song: 'Música'
         Poetry: 'Poesía'
-        Game: 'Game' # TODO
+        Game: 'Juegos' 
         Other: 'Otros'
     submit:
         header: 'Enviar un ejemplo para que sea añadido'
@@ -307,7 +307,7 @@ links:
     headerLong: 'Enlaces externos'
     recommended: 'Recomendamos'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog'  
     media: 'Pronouns.page en los medios'
 
     social: 'Redes sociales'
@@ -328,9 +328,9 @@ contact:
                 {https://pronouns.page=Pronouns.page} and related initiatives
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Current members'  # TODO
-        member: 'Member of the collective'  # TODO
-        upcoming: 'Upcoming language versions'  # TODO
+        members: 'Miembros actuales'  
+        member: 'Miembro de la cooperativa'  
+        upcoming: 'Próximas versiones en otras lenguas'  
 
 support:
     header: 'Apóyanos'
@@ -395,10 +395,10 @@ profile:
     birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
     flags: 'Banderas'
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustom: 'Sube una bandera personalizada'  
+    flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.' 
     links: 'Enlaces'
-    linksCake: 'We recommend linking to'  # TODO
+    linksCake: 'We recommend linking to' 
     column: 'Columna'
 
     list: 'Tus tarjetas'
@@ -422,11 +422,11 @@ profile:
     #    containing your names, pronouns, pride flags, liked words, etc.
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
+    #bannerButton: 'Crear una tarjeta'
     # TODO
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
+        link: 'Imagen de la tarjeta'
+        generating: 'Generando…'
 
 share: 'Compartir'
 
@@ -441,7 +441,7 @@ crud:
     filterLong: 'Filtrar la lista…'
     search: 'Buscar…'
     author: 'Añadido por'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: 'Los cambios se guardaron exitosamente!' 
 
 footer:
     # TODO source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
@@ -510,8 +510,8 @@ error:
     generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'Modo oscuro' 
+    light: 'Modo claro'
 
 # TODO
 ban:
