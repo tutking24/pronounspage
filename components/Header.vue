@@ -50,6 +50,18 @@
             </div>
         </div>
         </header>
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 6, 23, 20, 0, 0)" class="container">
+            <div class="alert alert-success mb-0 clearfix">
+                <Icon v="glass-cheers" size="4" class="float-start me-3"/>
+                <p class="h3">Pierwsze urodziny zaimków.pl i Słownika Neutratywów</p>
+                <p class="mb-0">
+                    Świętuj z nami na naszym
+                    <a href="https://www.facebook.com/events/338852937742883" target="_blank" rel="noopener">
+                        urodzinowym live streamie!
+                    </a>
+                </p>
+            </div>
+        </div>
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
