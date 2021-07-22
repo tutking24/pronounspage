@@ -59,6 +59,7 @@
                     <a href="https://www.facebook.com/events/338852937742883" target="_blank" rel="noopener">
                         urodzinowym live streamie!
                     </a>
+                    <small>(piątek, 23 lipca, o 19:00)</small>
                 </p>
             </div>
         </div>
