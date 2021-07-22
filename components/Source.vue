@@ -76,7 +76,7 @@
                 </button>
             </p>
             <ul v-if="versionsShown">
-                <li v-for="version in source.versions">
+                <li v-for="version in source.versions" v-if="locales[version.locale] !== undefined">
                     <h4 class="h6 mb-2">
                         <strong>
                             <a :href="`${locales[version.locale].url}/${version.pronouns[0]}`" target="_blank" rel="noopener">{{locales[version.locale].name}}</a>:
