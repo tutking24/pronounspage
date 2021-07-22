@@ -1,5 +1,5 @@
 <template>
-    <div class="my-2" v-if="!deleted">
+    <div class="my-2 clearfix" v-if="!deleted">
         <h3 class="h6">
             <Icon :v="source.icon()"/>
             <strong><Spelling v-if="source.author" :text="source.author.replace('^', '')"/><span v-if="source.author"> – </span><em><a v-if="source.link" :href="source.link" target="_blank" rel="noopener"><Spelling :text="addMarks(source.title)"></Spelling></a><Spelling v-else :text="addMarks(source.title)"></Spelling></em></strong><template v-if="source.extra"> (<Spelling :text="source.extra"/>)</template>, {{source.year}}<template v-if="source.comment">; <Spelling :text="source.comment"/></template>
@@ -75,7 +75,7 @@
                     <Icon :v="versionsShown ? 'caret-up' : 'caret-down'"/>
                 </button>
             </p>
-            <ul v-if="versionsShown">
+            <ul v-if="versionsShown" class="clearfix">
                 <li v-for="version in source.versions" v-if="locales[version.locale] !== undefined">
                     <h4 class="h6 mb-2">
                         <strong>
