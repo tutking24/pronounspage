@@ -38,11 +38,11 @@ home:
         header2: 'Generiere einen Link'
         base: 'Ausgehend von'
         alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er” or „sie”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+        pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich "|" (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|si​ˑʁ</code> = „sier”, ausgesprochen wie /si​ˑʁ/.'
+    whatisit: 'Was ist das Problem mit Pronomen?'
 
 pronouns:
-    examples: 'Beispiel Nutzung in Sätzen'
+    examples: 'Beispiel-Nutzung in Sätzen'
     plural: 'Plural'
     intro: 'Meine Pronomen sind'
     normative: 'Normativ'
@@ -55,9 +55,9 @@ pronouns:
         header: 'Beliebige Pronomen'
         short: 'beliebig'
         description: >
-            Auch wenn es für manche Menschen sehr wichtig ist bestimmte Pronomen zu nutzen wenn über sie geredet wird,
-            macht es anderen nichts aus - solange der Kontext klar ist über wen gesprochen wird.
-        options: 'check out the options [share]{/=here}.'
+            Auch wenn es für manche Menschen sehr wichtig ist bestimmte Pronomen zu nutzen, wenn über sie geredet wird,
+            macht es anderen nichts aus - solange der Kontext klar ist, über wen gesprochen wird.
+        options: 'Überprüfe die Optionen [share]{/=hier}.'
     others: 'Andere Formen'
     othersRaw: 'andere'
     or: 'oder'
@@ -77,13 +77,13 @@ sources:
         Series: 'Serien'
         Song: 'Musik'
         Poetry: 'Gedichte'
-        Game: 'Spiel'
+        Game: 'Spiele'
         Other: 'Sonstiges'
     submit:
-        header: 'Reiche ein Beispiel zum ergänzen ein'
+        header: 'Reiche ein Beispiel zum Ergänzen ein'
         action: 'übermitteln'
         pronouns: 'Welche Pronomen wurden genutzt?'
-        pronounsInfo: 'Gebe die einfachste Form des PRonomen ein, so wie es im Link ist. Z.B. “xier”, “er_sie”'
+        pronounsInfo: 'Gebe die einfachste Form des Pronomen ein, so wie es im Link ist. Z.B. “xier”, “er_sie”'
         type: 'Quellentyp'
         author: 'Autor'
         title: 'Titel'
@@ -95,11 +95,11 @@ sources:
         thanks: 'Danke für deinen Beitrag!'
         another: 'Ein weiteres Beispiel einreichen'
         moderation: 'Einreichungen müssen erst genehmigt werden, bevor sie veröffentlicht werden.'
-        key: 'Key'  # TODO
+        key: 'Schlüssel'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Images' # TODO
-    otherVersions: 'In other languages' # TODO
-    referenced: 'Examples of use' # TODO
+        images: 'Bilder'
+    otherVersions: 'In anderen Sprachen'
+    referenced: 'Beispiele zur Benutzung'
 
 nouns:
     header: 'Wörterbuch'
@@ -152,7 +152,7 @@ nouns:
 
 faq:
     header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    headerLong: 'Häufig gestellte Fragen'
     questions:
         nonbinary:
             question: 'Was ist nicht-binär?'
@@ -242,7 +242,7 @@ faq:
                 - >
                     Wenn du cis (= nicht trans) bist und du nutzt „{/sie=sie}” oder „{/er=er}” passen zu deinem Geschlecht,
                     denkst du vielleicht, dass deine Pronomen <em>eindeutig</em> sind.
-                    Und ja, vielleicht stimmt das auch - solange dein Name im Profil genannt wird (und traditionell weiblich oder weiblich ist)
+                    Und ja, vielleicht stimmt das auch - solange dein Name im Profil genannt wird (und traditionell männlich oder weiblich ist)
                     oder wenn du ein Profilbild hast.
                     Viele Leute haben das nicht – also ist es schwierig zu wissen, wie sie genannt werden wollen.
                 - >
@@ -250,7 +250,7 @@ faq:
                     aber es gibt Menschen, deren Pronomen das nicht sind.
                     Sie wollen korrekt angesprochen werden, egal ob sie als ihr Geschlecht "durchgehen" oder nicht,
                     ob sie eine Transition hatten oder nicht (oder ob sie überhaupt eine Transition wollen).
-                    Nicht-binäre Menschen sehen in der Regel nicht "nich-tbinär" aus, wir schulden niemandem Androgynität.
+                    Nicht-binäre Menschen sehen in der Regel nicht "nicht-binär" aus, wir schulden niemandem Androgynität.
                 - >
                     Das Teilen unserer Pronomen ist sehr wichtig für trans, nicht-binäre und genderqueere Menschen.
                     Leider werden wir dadurch auch bloßgestellt und ausgegrenzt.
@@ -283,7 +283,7 @@ faq:
                     Die Person sieht schließlich aus wie ein Mann, also wird es für mich einfacher sein!
                 - >
                     Nein! Es sind unsere Pronomen. Nicht unsere "bevorzugten Pronomen". Es sind unsere Namen, nicht unsere "bevorzugten Namen".
-                    IWenn du dich um deine trans- und nicht-binären Freunde und Lieben sorgst, dann nenne sie auf die richtige Weise.
+                    Wenn du dich um deine trans- und nicht-binären Freunde und Lieben sorgst, dann nenne sie auf die richtige Weise.
         gender-pronouns:
             question: 'Warum sollte ich nicht "Geschlechtspronomen" sagen?'
             answer:
@@ -298,7 +298,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'Wir empfehlen'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog'
     media: 'Pronouns.page in den Medien'
 
     social: 'Social Media'
@@ -324,7 +324,7 @@ contact:
         upcoming: 'Upcoming language versions'  # TODO
 
 support:
-    header: 'Support'
+    header: 'Unterstütze uns'
     description: >
         Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor:innen einfach ein Bier ausgeben willst,
         Kannst du den untenstehenden Link nutzen:
@@ -407,17 +407,15 @@ profile:
         meh: 'Okay'
         no: 'Nope'
 
-    #TODO
-    #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
-    # TODO
-    card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
+        banner: >
+            You can also use our website to create a card, {/@andrea=like this one},
+            containing your names, pronouns, pride flags, liked words, etc.
+            Then you can link to it in your bio or email footer.
+            Just create an account {/account=here}.
+        bannerButton: 'Create a card'
+        card:
+            link: 'Card picture'
+            generating: 'Generation in progress…'
 
 share: 'Teilen'
 
@@ -432,13 +430,12 @@ crud:
     filterLong: 'Liste filtern...'
     search: 'Suchen…'
     author: 'Hinzugefügt von'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: 'Änderungen erfolgreich gespeichert!'
 
 footer:
-    # TODO source: 'Der Quellcode ist {https://gitlab.com/Avris/Zaimki=veröffentlicht} unter der {https://mit.avris.it=MIT} Lizenz.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de=CC BY-NC-SA 4.0}
+        {https://gitlab.com/Avris/Zaimki=Der Quellcode} ist unter der {https://mit.avris.it=MIT} [mit.svg] Lizenz veröffentlicht.<br/>
+        Das Inhalt unter der {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Kontakt, Social Media, Support'
 
@@ -497,11 +494,11 @@ images:
         instruction: 'Click here or drag your pics here'  # TODO
 
 error:
-    generic: 'Something went wrong, please try again…'  # TODO
+    generic: 'Etwas ist schief gelaufen. Bitte versuche es erneut…'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'Dunkelmodus'
+    light: 'Lichtmodus'
 
 # TODO
 ban:
@@ -511,7 +508,7 @@ ban:
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'You''re banned. Your profile will not be shown to anyone.'
     banned: 'Banned'
-    termsIntro: 'According to our {/terms=Terms of Service}:'
+    termsIntro: 'According to our {/bedingungen=Terms of Service}:'
 
 flags:
     Abrosexual: 'Abrosexuell'

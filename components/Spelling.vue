@@ -15,7 +15,7 @@
             escape: { type: Boolean }
         },
         render(h) {
-            let text = this.text;
+            let text = this.text || '';
             text = text.replace('<script', '');
             if (this.escape) {
                 text = text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
