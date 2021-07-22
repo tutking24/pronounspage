@@ -63,7 +63,7 @@
             <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2" size="8rem"/>
         </div>
         <ul v-if="source.fragments.length">
-            <li v-for="fragment in source.fragments">
+            <li v-for="fragment in source.fragments" class="text-break">
                 <T>quotation.start</T><span v-html="addMarks(fragment.replace(/\n/g, '<br/>'))"></span><T>quotation.end</T>
             </li>
         </ul>
