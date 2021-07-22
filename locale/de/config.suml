@@ -11,9 +11,9 @@ pronouns:
     multiple:
         name: 'Interchangeable forms'
         description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
-        examples: ['er&sie', 'he&they', 'she&they']
+        examples: ['er&sie', 'er&die', 'sie&sier']
     null:
-        description: 'No pronouns / null pronouns / pronounless / nameself'
+        description: 'Keine Pronomen'
         history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
         morphemes:
             pronoun_subject: '#'
@@ -23,20 +23,10 @@ pronouns:
             reflexive: '#self'
         examples: [':Andrea', ':S']
         template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-    emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+    emoji: false
     slashes: true
     avoiding: false
-    others: 'Other pronouns'
+    others: 'Andere Pronomen'
 
 pronunciation:
     enabled: true
@@ -48,14 +38,13 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'quellen'
     submit: true
     mergePronouns:
-        they/them/themself: 'they'
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'worterbuch'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -81,91 +70,12 @@ faq:
     route: 'faq'
 
 links:
-    enabled: true
+    enabled: false
     route: 'links'
     blogRoute: 'blog'
-    links:
-        -
-            icon: 'globe-europe'
-            url: 'https://pronoun.is/'
-            headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
-        -
-            icon: 'chart-pie'
-            url: 'https://gendercensus.com/'
-            headline: 'Gender Census'
-            extra: '– annual survey about the language used by nonbinary people'
-        -
-            icon: 'comment-alt-edit'
-            url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
-            headline: 'Why EVERYONE should have pronouns in their bio'
-        -
-            icon: 'book-open'
-            url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
-            headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/style-grammar-guidelines/grammar/singular-they'
-            headline: 'Style and grammar guidelines regarding singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/blog/singular-they'
-            headline: 'Welcome, singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2015-word-of-the-year-is-singular-they'
-            headline: '2015 Word of the Year is singular “they”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2019-word-of-the-year-is-my-pronouns-word-of-the-decade-is-singular-they'
-            headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'play-circle'
-            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
-            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
-            extra: '– Tom Scott'
-        -
-            icon: 'book-open'
-            url: 'https://blogs.illinois.edu/view/25/677177'
-            headline: 'A Brief History of Singular “they”'
-            extra: '– Dennis Baron'
-        -
-            icon: 'wikipedia-w'
-            iconSet: 'b'
-            url: 'https://lgbta.wikia.org/wiki/Neopronouns'
-            headline: 'LGBTA Wiki on Neopronouns'
-        -
-            icon: 'book-open'
-            url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
-            headline: 'Academic papers on neopronouns'
-        -
-            icon: 'newspaper'
-            url: 'https://www.nytimes.com/2020/01/21/books/review/whats-your-pronoun-dennis-baron.html'
-            headline: 'English’s Pronoun Problem Is Centuries Old'
-            extra: '– The New York Times'
-        -
-            icon: 'user-edit'
-            url: 'http://faculty.las.illinois.edu/debaron/'
-            headline: 'Dennis Baron'
-            extra: '– author of “What''s your pronoun?”, has been researching gender-neutrality for some 40 years now'
-        -
-            icon: 'book-open'
-            url: 'https://ojs.lib.uwo.ca/index.php/wpl_clw/article/download/966/456'
-            headline: 'Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German'
-            extra: '– Levi C. R. Hord'
-        -
-            icon: 'twitch'
-            iconSet: 'b'
-            url: 'https://pronouns.alejo.io/'
-            headline: 'Display pronouns in Twitch Chat'
-
+    links: []
     mediaGuests: []
     mediaMentions: []
-
     socials:
         -
             icon: 'twitter'
@@ -177,7 +87,7 @@ links:
 
 contact:
     enabled: true
-    route: 'contact'
+    route: 'kontakt'
     contacts:
         -
             icon: 'envelope'
@@ -185,7 +95,7 @@ contact:
             headline: 'contact@pronouns.page'
     team:
         enabled: true
-        route: 'team'  # TODO
+        route: 'kollektiv'
 
 
 support:
@@ -204,28 +114,16 @@ support:
 user:
     enabled: true
     route: 'account'
-    termsRoute: 'terms'
+    termsRoute: 'bedingungen'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.']
+        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau']
+        - ['schön', 'süß', 'sexy',]
+        - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
         defaultPronoun: 'they'
 

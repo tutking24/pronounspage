@@ -1,7 +1,7 @@
 key	description	normative	pronoun_n	pronoun_d	pronoun_a	pronoun_g	article_n	article_g	article_d	article_a	demonstrative_n	possesive_object	noun	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
 er,er/sein	Maskulinum	TRUE	er	ihm	ihn	sein	der	dessen	dem	den	dieser			FALSE	FALSE	TRUE
 sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihr	die	deren	der	die	diese	e	in	FALSE	FALSE	TRUE
-es,es/sein	Neutrum	TRUE	es	ihm	es	sein	das	dessen	dem	das	dieses			FALSE	FALSE	TRUE
+es,es/sein	Neutrum	TRUE	es	ihm	es	sein	das	dessen	dem	das	dieses		y	FALSE	FALSE	TRUE
 A	Neopronomen "A"	FALSE	A	A	A	As	dA	dAs	dA	dA	diesA	A	A	FALSE	FALSE	TRUE
 dey	Neopronomen "dey"	FALSE	dey	denen/demm	demm	deren/der	dey	deyssen	deym	deyn	diesey	ey	ey	FALSE	FALSE	TRUE
 die	Neopronomen "die"	FALSE	die	denen	die	deren	die	deren	denen	die	diesie	ie	ie	FALSE	FALSE	TRUE
