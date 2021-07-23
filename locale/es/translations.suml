@@ -322,7 +322,7 @@ contact:
     header: 'Contacto'
     authors: 'Autores/as/xs del sitio web'
     team:
-        name: 'Cooperativa “Revolucionaria Academia Española”'
+        name: 'Cooperativa “Consejo de Lenguaje Neutro”'
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives
