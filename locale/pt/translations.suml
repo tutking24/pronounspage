@@ -420,11 +420,10 @@ profile:
     #    containing your names, pronouns, pride flags, liked words, etc.
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
-    # TODO
+    #bannerButton: 'Crie um cartão'
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
+        link: 'Imagem do cartão'
+        generating: 'Gerando a imagem…'
 
 share: 'Compartilhar'
 
@@ -531,6 +530,7 @@ flags:
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androssexual'
     Aporagender: 'Aporagênero'
+    Archaeopronouns: 'Arqueopronomes'
     Aroace: 'Aroace'
     Aromantic: 'Arromânti{inflection_c}'
     Aromantic_Allosexual: 'Arromânti{inflection_c} alossexual'
@@ -539,6 +539,7 @@ flags:
     Bear: 'Urso'
     Bicurious: 'Bi-curios{inflection}'
     Bigender: 'Bigênero'
+    Biromantic: 'Birromânti{inflection_c}'
     Bisexual: 'Bissexual'
     Butch: 'Butch'
     Ceteroromantic: 'Ceterorromânti{inflection_c}'
