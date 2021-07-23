@@ -435,7 +435,7 @@ crud:
     filterLong: 'Filter de lijst…'
     search: 'Zoek…'
     author: 'Toegevoegd door'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: 'Veranderingen succesvol opgeslagen!'
 
 footer:
     # TODO source: 'De broncode wordt {https://gitlab.com/Avris/Zaimki=gepubliceerd} onder de {https://mit.avris.it=MIT}-licentie.'
@@ -504,8 +504,8 @@ error:
     generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'Donkere modus'
+    light: 'Lichte modus'
 
 # TODO
 ban:
