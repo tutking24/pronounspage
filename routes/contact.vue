@@ -43,6 +43,8 @@
         </section>
 
         <Support/>
+
+        <Mission/>
     </div>
 </template>
 
