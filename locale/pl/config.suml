@@ -679,6 +679,37 @@ links:
                 z_w czym czują się dobrze. Jestem za takimi inicjatywami jak zaimki.pl,
                 świetnie pokazują, jak można zmieniać i kształtować współczesny język polski dla osób niebinarnych.
                 To żadna nowa moda, to szukanie sposobu na to, jak o tym mówić. Jest coraz więcej ludzi samoświadomych i potrzebują nowej polszczyzny.
+        -
+            icon: 'newspaper'
+            url: 'https://www.gosc.pl./doc/6987301.Jak-zneutralizowac-jezyk'
+            headline: 'Jak zneutralizować język'
+            extra: ' – Piotr Legutko, <strong>Gość Niedzielny</strong>'
+            quote: >
+                Rośnie „tęczowa” presja na językoznawców, nauczycieli i dziennikarzy.
+                Kochacie polszczyznę? To czas spojrzeć prawdzie w oczy. Język polski jest „binarny do bólu”,
+                a nasza gramatyka „silnie zgenderyzowana”. Polszczyzna stała się częścią „kultury przemocowej”
+                i coś z tym trzeba zrobić – apeluje Rada Języka Neutralnego. Jest to ciało (na razie) samozwańcze,
+                komunikujące się ze światem za pośrednictwem strony zaimki.pl. Stronę redagują „autorszcza”,
+                czyli osoby, których płeć nie jest przesądzona. Albowiem „zwracanie się do kogosia tak, jak sobie życzy,
+                to wręcz podstawa relacji społecznych” – czytamy na stronie.
+            response:
+                - >
+                    Nasza krótka odpowiedź na zajawkę (nie, nie będziemy takiemu medium płacić choćby złotówki za dostęp do całości):
+                - >
+                    My też kochamy polszczyznę! Właśnie dlatego poświęcamy tyle czasu na jej rozwój i uzupełnianie braków.
+                - >
+                    Wzięcie „kultury przemocowej” w cudzysłów w zestawieniu z cytatami z naszej strony i komentarzem „apeluje RJN”
+                    sugeruje, że to nasze słowa – kiedy my nic takiego nie powiedziałośmy.
+                - >
+                    Tak, same wymyśliłośmy własną nazwę, jak niemal każdy kolektyw, stowarzyszenie czy fundacja.
+                    To nie jest pocisk, jaki myślicie że jest.
+                - >
+                    Nie „autorszcza”, a „autorza”. Można sprawdzić, jakich form używamy:
+                    słownik, który krytykujecie jest {/slowniki/neutratywy#autor=na wyciągnięcie ręki}!
+                - >
+                    W skrócie: krótki akapit zajawkowy jest naszpikowany manipulacją, sugeruje jakobyśmy nienawidziły polszczyzny,
+                    wkłada słowa w nasze usta i demonstruje brak riserczu na temat, na który piszecie.
+                    Nie przekonuje to, by reszta tekstu (czy czasopisma) miała być warta choćby i grosza z prenumeraty.
     socials:
         -
             icon: 'twitter'

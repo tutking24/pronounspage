@@ -10,8 +10,19 @@
             <T>quotation.start</T><LinkedText :text="link.quote"/><T>quotation.end</T>
         </p>
         <blockquote v-if="link.response">
-            <Icon v="comment-dots"/>
-            <LinkedText :text="link.response"/>
+            <div v-if="Array.isArray(link.response)">
+                <Icon v="comment-dots"/>
+                <LinkedText :text="link.response[0]"/>
+                <ul class="small">
+                    <li v-for="(p, i) in link.response" v-if="i !== 0">
+                        <LinkedText :text="p"/>
+                    </li>
+                </ul>
+            </div>
+            <div v-else>
+                <Icon v="comment-dots"/>
+                <LinkedText :text="link.response"/>
+            </div>
         </blockquote>
     </li>
 </template>
