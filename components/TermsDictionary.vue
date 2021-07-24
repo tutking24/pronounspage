@@ -66,18 +66,16 @@
                 </td>
                 <td>
                     <ul class="list-unstyled list-btn-concise">
-                        <!--
-                        <li v-if="s.el.author" class="small">
-                            <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
-                                <Icon v="user"/>
-                                <span class="btn-label">
+                        <template v-if="$isGranted('terms')">
+                            <li v-if="s.el.author" class="small">
+                                <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
+                                    <Icon v="user"/>
+                                    <span class="btn-label">
                                     <T>crud.author</T>:
                                     @{{s.el.author}}
                                 </span>
-                            </nuxt-link>
-                        </li>
-                        -->
-                        <template v-if="$isGranted('terms')">
+                                </nuxt-link>
+                            </li>
                             <li v-if="!s.el.approved">
                                 <button class="btn btn-concise btn-success btn-sm m-1" @click="approve(s.el)">
                                     <Icon v="check"/>
