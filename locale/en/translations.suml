@@ -608,3 +608,19 @@ ban:
     header: 'You''re banned. Your profile will not be shown to anyone.'
     banned: 'Banned'
     termsIntro: 'According to our {/terms=Terms of Service}:'
+
+report:
+    header: 'Report abuse'
+    send: 'Send report'
+    cancel: 'Cancel'
+    reason:
+        hate: 'Hate speech (transphobia, enbyphobia, homophobia, queerphobia, misogyny, racism, xenophobia, etc.)'
+        spam: 'Spam'
+        misinformation: 'Misinformation'
+        harassment: 'Harassment'
+        impersonation: 'Impersonation'
+        illegal: 'Illegal content'
+        totalitarian: 'Propagation of totalitarian regimes'
+        copyright: 'Copyright or trademark violations'
+    extraInfo: 'More info, eg. what happened exactly? how do you know? where should admins look to confirm it?'
+    sent: 'Report saved. Thanks for caring!'
