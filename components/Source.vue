@@ -11,7 +11,6 @@
                     <T>nouns.pending</T>
                 </span>
             </li>
-            <!--
             <li v-if="source.submitter" class="list-inline-item">
                 <nuxt-link :to="`/@${source.submitter}`" class="badge bg-light text-dark border btn-sm m-1">
                     <Icon v="user"/>
@@ -21,7 +20,6 @@
                     </span>
                 </nuxt-link>
             </li>
-            -->
             <li v-if="!source.approved" class="list-inline-item">
                 <a href="#" class="badge bg-success btn-sm m-1" @click.prevent="approve()">
                     <Icon v="check"/>

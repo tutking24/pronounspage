@@ -686,11 +686,12 @@ export class NounDeclension {
 
 
 export class InclusiveEntry {
-    constructor({id, insteadOf, say, because, approved = true, base_id = null, categories = '', links = '[]'}) {
+    constructor({id, insteadOf, say, because, author, approved = true, base_id = null, categories = '', links = '[]'}) {
         this.id = id;
         this.insteadOf = insteadOf.split('|');
         this.say = say.split('|');
         this.because = because;
+        this.author = author;
         this.approved = !!approved;
         this.base = base_id;
         this.categories = categories ? categories.split(',') : [];
@@ -718,11 +719,12 @@ export class InclusiveEntry {
 }
 
 export class TermsEntry {
-    constructor({id, term, original, definition, category = null, flags = '[]', images = '', approved = true, base_id = null}) {
+    constructor({id, term, original, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null}) {
         this.id = id;
         this.term = term.split('|');
         this.original = original ? original.split('|') : [];
         this.definition = definition;
+        this.author = author;
         this.category = category;
         this.flags = JSON.parse(flags);
         this.images = images ? images.split(',') : [];
