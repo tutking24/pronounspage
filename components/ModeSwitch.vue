@@ -27,9 +27,16 @@
 
             this.isDark = this.detectDark();
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => this.isDark = e.matches);
+
+            this.$eventHub.$on('mode-changed', dark => {
+                if (dark !== this.isDark) {
+                    this.isDark = dark;
+                }
+            })
         },
         watch: {
             isDark(dark) {
+                this.$eventHub.$emit('mode-changed', dark);
                 this.setMode(dark);
             }
         }
