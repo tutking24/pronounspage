@@ -143,7 +143,7 @@
             }
         },
         async mounted() {
-            this.profiles = await this.$axios.$get(`/profile/get/${this.$user().username}`);
+            this.profiles = (await this.$axios.$get(`/profile/get/${this.$user().username}`)).profiles;
             this.socialConnections = await this.$axios.$get(`/user/social-connections`);
 
             if (process.client) {

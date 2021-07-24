@@ -50,7 +50,7 @@ pronouns:
         button: 'Gerar uma ligação à formas intercambiáveis'
         header: 'Formas intercambiáveis'
         raw: 'intercambiável'
-    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'  
+    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'
     any:
         header: 'Qualquer pronome'
         short: 'qualquer'
@@ -77,7 +77,7 @@ sources:
         Series: 'Séries'
         Song: 'Música'
         Poetry: 'Poesia'
-        Game: 'Jogos' 
+        Game: 'Jogos'
         Other: 'Outros'
     submit:
         header: 'Enviar um exemplo para que seja adicionado'
@@ -97,9 +97,9 @@ sources:
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Imagens' 
-    otherVersions: 'Em outros idiomas' 
-    referenced: 'Exemplos de uso' 
+        images: 'Imagens'
+    otherVersions: 'Em outros idiomas'
+    referenced: 'Exemplos de uso'
 
 nouns:
     header: 'Dicionário'
@@ -304,7 +304,7 @@ links:
     headerLong: 'Links externos'
     recommended: 'Recomendamos'
 
-    blog: 'Blog' 
+    blog: 'Blog'
     media: 'Pronouns.page nas mídias'
 
     social: 'Redes sociais'
@@ -320,15 +320,15 @@ contact:
     authors: 'Autores do site'
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
-        description: 
+        description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
-        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.' 
-        members: 'Membres atuais'  
+        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
+        members: 'Membres atuais'
         member: 'Member of the collective'  # TODO
-        blog: 'Blog'  
-        upcoming: 'Próximas versões'  
+        blog: 'Blog'
+        upcoming: 'Próximas versões'
 
 support:
     header: 'Apoie-nos'
@@ -353,7 +353,7 @@ user:
                 Se não solicitou este código, simplesmente ignore esta mensagem.
         why: >
             Registrar-se te permite dirigir os cartões ({/@andrea=como esta}).
-        passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}' 
+        passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -424,6 +424,7 @@ profile:
     card:
         link: 'Imagem do cartão'
         generating: 'Gerando a imagem…'
+    empty: 'This person hasn''t created any cards yet.' # TODO
 
 share: 'Compartilhar'
 

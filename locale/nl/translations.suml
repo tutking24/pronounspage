@@ -421,6 +421,7 @@ profile:
     card:
         link: 'Card picture'
         generating: 'Generation in progress…'
+    empty: 'This person hasn''t created any cards yet.' # TODO
 
 share: 'Deel'
 

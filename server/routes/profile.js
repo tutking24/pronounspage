@@ -27,21 +27,14 @@ const calcAge = birthday => {
 
 const fetchProfiles = async (db, username, self, isAdmin) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.*, users.id, users.username, users.email, users.avatarSource, users.bannedReason, users.roles FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        SELECT profiles.* FROM profiles LEFT JOIN users on users.id == profiles.userId 
         WHERE usernameNorm = ${normalise(username)}
         ORDER BY profiles.locale
     `);
 
     const p = {}
     for (let profile of profiles) {
-        if (profile.bannedReason !== null && !isAdmin && !self) {
-            return {};
-        }
         p[profile.locale] = {
-            id: profile.id,
-            userId: profile.userId,
-            username: profile.username,
-            emailHash: md5(profile.email),
             names: JSON.parse(profile.names),
             pronouns: JSON.parse(profile.pronouns),
             description: profile.description,
@@ -50,13 +43,10 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
             flags: JSON.parse(profile.flags),
             customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
-            avatar: await avatar(db, profile),
             birthday: self ? profile.birthday : undefined,
             teamName: profile.teamName,
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
-            bannedReason: profile.bannedReason,
-            team: !!profile.roles,
             card: profile.card,
         };
     }
@@ -66,7 +56,34 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
 const router = Router();
 
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
-    return res.json(await fetchProfiles(req.db, req.params.username, req.user && req.user.username === req.params.username, req.isGranted('users')))
+    const isSelf = req.user && req.user.username === req.params.username;
+    const isAdmin = req.isGranted('users');
+    const user = await req.db.get(SQL`
+        SELECT
+            users.id,
+            users.username,
+            users.email,
+            users.avatarSource,
+            users.bannedReason,
+            users.roles != '' AS team
+        FROM users
+        WHERE users.usernameNorm = ${normalise(req.params.username)}
+    `);
+
+    if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
+        return res.json({
+            profiles: {},
+        });
+    }
+
+    user.emailHash = md5(user.email);
+    delete user.email;
+    user.avatar = await avatar(req.db, user);
+
+    return res.json({
+        ...user,
+        profiles: await fetchProfiles(req.db, req.params.username, isSelf),
+    });
 }));
 
 router.post('/profile/save', handleErrorAsync(async (req, res) => {

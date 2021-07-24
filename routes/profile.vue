@@ -1,18 +1,18 @@
 <template>
     <div v-if="profile">
-        <section v-if="$isGranted('users') && profile.bannedReason">
+        <section v-if="$isGranted('users') && user.bannedReason">
             <div class="alert alert-warning">
                 <p class="h4">
                     <Icon v="ban"/>
                     {{$t('ban.banned')}}
                 </p>
-                <p class="mb-0">{{profile.bannedReason}}</p>
+                <p class="mb-0">{{user.bannedReason}}</p>
             </div>
         </section>
 
-        <Profile :profile="profile" :terms="terms">
-            <div v-if="Object.keys(profiles).length > 1">
-                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
+        <Profile :user="user" :profile="profile" :terms="terms">
+            <div v-if="Object.keys(user.profiles).length > 1">
+                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
                             :locale="locale" :link="`/@${profile.username}`"
                             :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-2 mx-1']">
                     {{options.name}}
@@ -23,7 +23,7 @@
                     <Icon v="edit"/>
                     <T>profile.edit</T>
                 </nuxt-link>
-                <a :href="`https://pronouns.page/@${profile.username}`" v-if="Object.keys(profiles).length > 1"
+                <a :href="`https://pronouns.page/@${profile.username}`" v-if="Object.keys(user.profiles).length > 1"
                    class="btn btn-outline-secondary btn-sm mb-2 mx-1"
                 >
                     <Icon v="external-link"/>
@@ -51,17 +51,7 @@
             </div>
         </Profile>
 
-        <client-only>
-            <section v-if="$isGranted('users')">
-                <div class="alert alert-warning">
-                    <textarea v-model="profile.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
-                    <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
-                        <Icon v="ban"/>
-                        {{$t('ban.action')}}
-                    </button>
-                </div>
-            </section>
-        </client-only>
+        <Ban :user="user"/>
 
         <Separator icon="heart"/>
         <Support/>
@@ -69,14 +59,14 @@
             <Share/>
         </section>
     </div>
-    <div v-else-if="Object.keys(profiles).length">
+    <div v-else-if="user.username">
         <h2 class="text-nowrap mb-3">
-            <Avatar :user="profiles[Object.keys(profiles)[0]]"/>
+            <Avatar :user="user"/>
             @{{username}}
         </h2>
 
-        <div class="list-group">
-            <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="profiles[locale] !== undefined"
+        <div v-if="Object.keys(user.profiles).length" class="list-group">
+            <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
                         :locale="locale" :link="`/@${username}`"
                         class="list-group-item list-group-item-action list-group-item-hoverable">
                 <div class="h3">
@@ -84,6 +74,14 @@
                 </div>
             </LocaleLink>
         </div>
+        <div v-else class="alert alert-info">
+            <p class="mb-0">
+                <Icon v="info-circle"/>
+                <T>profile.empty</T>
+            </p>
+        </div>
+
+        <Ban :user="user"/>
     </div>
     <NotFound v-else/>
 </template>
@@ -96,13 +94,12 @@
         components: { ClientOnly },
         data() {
              return {
-                 saving: false,
                  terms: [],
             }
         },
         async asyncData({ app, route }) {
             return {
-                profiles: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
+                user: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
             };
         },
         async mounted() {
@@ -112,9 +109,9 @@
         },
         computed: {
             profile() {
-                for (let locale in this.profiles) {
+                for (let locale in this.user.profiles) {
                     if (locale === this.config.locale) {
-                        return this.profiles[locale];
+                        return this.user.profiles[locale];
                     }
                 }
 
@@ -127,30 +124,16 @@
                     return base;
                 }
 
-                if (this.profile.username !== base && process.client) {
+                if (this.user.username !== base && process.client) {
                     history.pushState(
                         '',
                         document.title,
-                        '/@' + this.profile.username,
+                        '/@' + this.user.username,
                     );
                 }
 
-                return this.profile.username;
+                return this.user.username;
             },
-        },
-        methods: {
-            async ban() {
-                await this.$confirm(this.$t('ban.confirm', {username: this.username}), 'danger');
-                this.saving = true;
-                try {
-                    await this.$post(`/admin/ban/${encodeURIComponent(this.username)}`, {
-                        reason: this.profile.bannedReason,
-                    });
-                    window.location.reload();
-                } finally {
-                    this.saving = false;
-                }
-            }
         },
         head() {
             return head({
