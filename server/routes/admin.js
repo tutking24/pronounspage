@@ -139,50 +139,28 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
     return res.json(true);
 }));
 
-router.get('/admin/suspicious', handleErrorAsync(async (req, res) => {
+router.get('/admin/reports', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
     return res.json(await req.db.all(SQL`
-        SELECT users.id, users.username, profiles.locale FROM profiles
-        LEFT JOIN users ON profiles.userId = users.id
-        WHERE users.suspiciousChecked != 1
-          AND users.bannedReason IS NULL
-          AND (
-              lower(customFlags) LIKE '%superstr%'
-           OR lower(description) LIKE '%superstr%'
-           OR lower(customFlags) LIKE '%superhet%'
-           OR lower(description) LIKE '%superhet%'
-           OR lower(customFlags) LIKE '%super-%'
-           OR lower(description) LIKE '%super-%'
-           OR lower(customFlags) LIKE '%phobe%'
-           OR lower(description) LIKE '%phobe%'
-           OR lower(customFlags) LIKE '%phobic%'
-           OR lower(description) LIKE '%phobic%'
-           OR lower(customFlags) LIKE '%terf%'
-           OR lower(description) LIKE '%terf%'
-           OR lower(customFlags) LIKE '%radfem%'
-           OR lower(description) LIKE '%radfem%'
-           OR lower(customFlags) LIKE '%gender critical%'
-           OR lower(description) LIKE '%gender critical%'
-           OR lower(customFlags) LIKE '%helicopter%'
-           OR lower(description) LIKE '%helicopter%'
-           OR lower(pronouns) LIKE '%helicopter%'
-           OR lower(pronouns) LIKE '%nor/mal%'
-        )
-        ORDER BY users.id DESC
+        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
+        FROM reports
+        LEFT JOIN users sus ON reports.userId = sus.id
+        LEFT JOIN users reporter ON reports.reporterId = reporter.id
+        ORDER BY reports.isHandled ASC, reports.id ASC
     `));
 }));
 
-router.post('/admin/suspicious/checked/:id', handleErrorAsync(async (req, res) => {
+router.post('/admin/reports/handle/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`
-        UPDATE users
-        SET suspiciousChecked = 1
+        UPDATE reports
+        SET isHandled = 1
         WHERE id=${req.params.id}
     `);
 

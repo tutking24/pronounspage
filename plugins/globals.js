@@ -3,6 +3,7 @@ import t from '../src/translator';
 import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
 import {DateTime} from "luxon";
+import {decodeTime} from 'ulid';
 
 export default ({ app, store }) => {
     Vue.prototype.$eventHub = new Vue();
@@ -46,5 +47,9 @@ export default ({ app, store }) => {
     Vue.prototype.$datetime = (timestamp) => {
         const dt = DateTime.fromSeconds(timestamp);
         return dt.toFormat('y-MM-dd HH:mm')
+    }
+
+    Vue.prototype.$ulidTime = (ulid) => {
+        return decodeTime(ulid) / 1000;
     }
 }

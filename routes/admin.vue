@@ -90,33 +90,53 @@
             {{ stats.cards * 100 }}%
         </section>
 
-        <section v-if="$isGranted('users') && suspiciousUsers.length > 0">
+        <section v-if="$isGranted('users')">
             <h3>
                 <Icon v="siren-on"/>
-                Suspicious accounts
+                Abuse reports
             </h3>
-            <Table :data="suspiciousUsers" columns="2">
+            <Table :data="abuseReports" :columns="4">
+                <template v-slot:header>
+                    <th class="text-nowrap">
+                        Suspicious account
+                    </th>
+                    <th class="text-nowrap">
+                        Reported by
+                    </th>
+                    <th class="text-nowrap">
+                        Comment
+                    </th>
+                    <th class="text-nowrap">
+                        Action
+                    </th>
+                </template>
+
                 <template v-slot:row="s"><template v-if="s">
                     <td>
-                        <LocaleLink :link="`/@${s.el.username}`" :locale="s.el.locale">
-                            {{s.el.username}}
-                            <span class="badge bg-light text-dark">{{s.el.locale}}</span>
-                        </LocaleLink>
+                        <a :href="`https://pronouns.page/${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
                     </td>
                     <td>
-                        <a href="#" class="badge bg-light text-success border border-success float-end"
-                           @click.prevent="checkedSuspicious(s.el.id)"
+                        <span v-if="s.el.isAutomatic" class="badge bg-info">
+                            Keyword found
+                        </span>
+                        <a v-else :href="`https://pronouns.page/${s.el.reporterUsername}`" target="_blank" rel="noopener">@{{s.el.reporterUsername}}</a>
+                        <small>({{$datetime($ulidTime(s.el.id))}})</small>
+                    </td>
+                    <td class="small">
+                        {{ s.el.comment }}
+                    </td>
+                    <td>
+                        <span v-if="s.el.isHandled" class="badge bg-success">
+                            Case closed
+                        </span>
+                        <a v-else href="#" class="badge bg-light text-success border border-success"
+                           @click.prevent="handleReport(s.el.id)"
                         >
                             <Icon v="thumbs-up"/>
                             I checked the profile, it's OK.
                         </a>
                     </td>
                 </template></template>
-
-                <template v-slot:empty>
-                    <Icon v="search"/>
-                    <T>nouns.empty</T>
-                </template>
             </Table>
         </section>
 
@@ -190,14 +210,14 @@
                 stats = await app.$axios.$get(`/admin/stats`);
             } catch {}
 
-            let suspiciousUsers = [];
+            let abuseReports = [];
             try {
-                suspiciousUsers = await app.$axios.$get(`/admin/suspicious`);
+                abuseReports = await app.$axios.$get(`/admin/reports`);
             } catch {}
 
             return {
                 stats,
-                suspiciousUsers,
+                abuseReports,
             };
         },
         methods: {
@@ -206,10 +226,13 @@
                     this.users = await this.$axios.$get(`/admin/users`);
                 }
             },
-            async checkedSuspicious(id) {
-                await this.$confirm('Are you sure you want to mark this profile as not suspicious?', 'success');
-                await this.$post(`/admin/suspicious/checked/${id}`);
-                this.suspiciousUsers = this.suspiciousUsers.filter(u => u.id !== id);
+            async handleReport(id) {
+                await this.$confirm('Are you sure you want to mark this report as handled?', 'success');
+                await this.$post(`/admin/reports/handle/${id}`);
+                this.abuseReports = this.abuseReports.map(r => {
+                    if (r.id === id) { r.isHandled = true; }
+                    return r;
+                });
             },
         },
         computed: {

@@ -23,7 +23,7 @@
             </div>
         </section>
 
-        <Table :data="visibleNouns()" columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
+        <Table :data="visibleNouns()" :columns="3" :marked="(el) => !el.approved" fixed ref="dictionarytable">
             <template v-slot:header>
                 <th class="text-nowrap">
                     <Icon v="mars"/>

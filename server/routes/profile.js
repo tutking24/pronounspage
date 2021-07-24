@@ -53,6 +53,46 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
     return p;
 };
 
+function* isSuspicious(profile) {
+    const description = profile.description.toLowerCase();
+    const flags = JSON.stringify(profile.customFlags).toLowerCase();
+    const pronouns = JSON.stringify(profile.pronouns).toLowerCase();
+
+    if (description.includes('superstr') || description.includes('superhet') || description.includes('super-') ||
+        flags.includes('superstr') || flags.includes('superhet') || flags.includes('super-')
+    ) {
+        yield 'Superstraight';
+    }
+
+    if (description.includes('phobe') || description.includes('phobic') ||
+        flags.includes('phobe') || flags.includes('phobic')
+    ) {
+        yield '-phobic';
+    }
+
+    if (description.includes('terf') || description.includes('radfem') || description.includes('gender critical') ||
+        flags.includes('terf') || flags.includes('radfem') || flags.includes('gender critical')
+    ) {
+        yield 'TERF';
+    }
+
+    if (description.includes('helicopter') ||
+        flags.includes('helicopter') ||
+        pronouns.includes('helicopter')
+    ) {
+        yield 'Helicopter';
+    }
+
+    if (pronouns.includes('nor/mal')
+    ) {
+        yield 'nor/mal';
+    }
+}
+
+const hasAutomatedHandledReports = async (db, id) => {
+    return (await db.get(SQL`SELECT COUNT(*) AS c FROM reports WHERE userId = ${id} AND isAutomatic = 1 AND isHandled = 1`)).c > 0;
+}
+
 const router = Router();
 
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
@@ -121,6 +161,14 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         )`);
     }
 
+    const sus = [...isSuspicious(req.body)];
+    if (sus.length && !await hasAutomatedHandledReports(req.db, req.user.id)) {
+        await req.db.get(SQL`
+            INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled)
+            VALUES (${ulid()}, ${req.user.id}, null, 1, ${sus.join(', ')}, 0);
+        `);
+    }
+
     if (req.body.teamName) {
         await caches.admins.invalidate();
         await caches.adminsFooter.invalidate();
@@ -133,6 +181,23 @@ router.post('/profile/delete/:locale', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id} AND locale = ${req.params.locale}`);
 
     return res.json(await fetchProfiles(req.db, req.user.username, true));
+}));
+
+router.post('/profile/report/:username', handleErrorAsync(async (req, res) => {
+    const user = await req.db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
+    if (!user) {
+        return res.status(400).json({error: 'Missing user'});
+    }
+    if (!req.body.comment) {
+        return res.status(400).json({error: 'Missing comment'});
+    }
+
+    await req.db.get(SQL`
+        INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled)
+        VALUES (${ulid()}, ${user.id}, ${req.user.id}, 0, ${req.body.comment}, 0);
+    `);
+
+    return res.json('OK');
 }));
 
 export default router;

@@ -608,3 +608,9 @@ ban:
     header: 'You''re banned. Your profile will not be shown to anyone.'
     banned: 'Banned'
     termsIntro: 'According to our {/terms=Terms of Service}:'
+
+report:
+    action: 'Report abuse'
+    comment: 'Please explain briefly what''s wrong with this profile'
+    confirm: 'Are you sure you want to report @%username%?'
+    sent: 'Your report has been sent. Thanks for your help!'

@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-between align-items-center">
         {{ locales[locale].name }}
         <span v-if="profile">
-            <LocaleLink :locale="locale" :link="`/@${profile.username}`" class="badge bg-primary text-white text-white">
+            <LocaleLink :locale="locale" :link="`/@${username}`" class="badge bg-primary text-white text-white">
                 <Icon v="id-card"/>
                 <T>profile.show</T>
             </LocaleLink>
@@ -27,6 +27,7 @@
 <script>
     export default {
         props: {
+            username: { required: true },
             profile: { required: true },
             locale: { required: true },
         },

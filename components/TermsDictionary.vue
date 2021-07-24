@@ -23,7 +23,7 @@
             </div>
         </section>
 
-        <Table :data="visibleEntries()" columns="1" fixed :marked="(el) => !el.approved" ref="dictionarytable">
+        <Table :data="visibleEntries()" :columns="1" fixed :marked="(el) => !el.approved" ref="dictionarytable">
             <template v-slot:header>
                 <th class="cell-wide"></th>
                 <th></th>

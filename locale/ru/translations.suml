@@ -1094,6 +1094,13 @@ ban:
     banned: 'Banned'
     termsIntro: 'According to our {/terinos=Terms of Service}:'
 
+# TODO
+report:
+    action: 'Report abuse'
+    comment: 'Please explain briefly what''s wrong with this profile'
+    confirm: 'Are you sure you want to report @%username%?'
+    sent: 'Your report has been sent. Thanks for your help!'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'
