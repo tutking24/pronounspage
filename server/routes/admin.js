@@ -130,10 +130,21 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
+    const user = await req.db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
     await req.db.get(SQL`
         UPDATE users
         SET bannedReason = ${req.body.reason || null} 
-        WHERE usernameNorm = ${normalise(req.params.username)}
+        WHERE id = ${user.id}
+    `);
+
+    await req.db.get(SQL`
+        UPDATE reports
+        SET isHandled = 1 
+        WHERE userId = ${user.id}
     `);
 
     return res.json(true);

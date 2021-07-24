@@ -113,13 +113,13 @@
 
                 <template v-slot:row="s"><template v-if="s">
                     <td>
-                        <a :href="`https://pronouns.page/${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
+                        <a :href="`https://pronouns.page/@${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
                     </td>
                     <td>
                         <span v-if="s.el.isAutomatic" class="badge bg-info">
                             Keyword found
                         </span>
-                        <a v-else :href="`https://pronouns.page/${s.el.reporterUsername}`" target="_blank" rel="noopener">@{{s.el.reporterUsername}}</a>
+                        <a v-else :href="`https://pronouns.page/@${s.el.reporterUsername}`" target="_blank" rel="noopener">@{{s.el.reporterUsername}}</a>
                         <small>({{$datetime($ulidTime(s.el.id))}})</small>
                     </td>
                     <td class="small">
