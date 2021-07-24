@@ -50,7 +50,7 @@ pronouns:
         button: 'Gerar uma ligação à formas intercambiáveis'
         header: 'Formas intercambiáveis'
         raw: 'intercambiável'
-    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'  # TODO
+    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'  
     any:
         header: 'Qualquer pronome'
         short: 'qualquer'
@@ -77,7 +77,7 @@ sources:
         Series: 'Séries'
         Song: 'Música'
         Poetry: 'Poesia'
-        Game: 'Game' # TODO
+        Game: 'Jogos' 
         Other: 'Outros'
     submit:
         header: 'Enviar um exemplo para que seja adicionado'
@@ -97,9 +97,9 @@ sources:
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
         key: 'Key'  # TODO
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
-        images: 'Imagens' # TODO
-    otherVersions: 'Em outros idiomas' # TODO
-    referenced: 'Exemplos de uso' # TODO
+        images: 'Imagens' 
+    otherVersions: 'Em outros idiomas' 
+    referenced: 'Exemplos de uso' 
 
 nouns:
     header: 'Dicionário'
@@ -304,7 +304,7 @@ links:
     headerLong: 'Links externos'
     recommended: 'Recomendamos'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog' 
     media: 'Pronouns.page nas mídias'
 
     social: 'Redes sociais'
@@ -319,16 +319,16 @@ contact:
     header: 'Contato'
     authors: 'Autores do site'
     team:
-        name: 'O coletivo "Conselho da Língua Neutra"'  # TODO
-        description:  # TODO
+        name: 'O coletivo "Conselho da Língua Neutra"'
+        description: 
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
-        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'  # TODO
-        members: 'Membres atuais'  # TODO
+        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.' 
+        members: 'Membres atuais'  
         member: 'Member of the collective'  # TODO
-        blog: 'Blog'  # TODO
-        upcoming: 'Próximas versões'  # TODO
+        blog: 'Blog'  
+        upcoming: 'Próximas versões'  
 
 support:
     header: 'Apoie-nos'
@@ -353,7 +353,7 @@ user:
                 Se não solicitou este código, simplesmente ignore esta mensagem.
         why: >
             Registrar-se te permite dirigir os cartões ({/@andrea=como esta}).
-        passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}' # TODO
+        passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}' 
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -420,11 +420,10 @@ profile:
     #    containing your names, pronouns, pride flags, liked words, etc.
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
-    # TODO
+    #bannerButton: 'Crie um cartão'
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
+        link: 'Imagem do cartão'
+        generating: 'Gerando a imagem…'
 
 share: 'Compartilhar'
 
@@ -439,7 +438,7 @@ crud:
     filterLong: 'Filtrar a lista…'
     search: 'Buscar…'
     author: 'Adicionado por'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: 'Alterações salvas com sucesso!'
 
 footer:
     # TODO source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
@@ -508,8 +507,8 @@ error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'Modo escuro'
+    light: 'Modo claro'
 
 # TODO
 ban:
@@ -531,6 +530,7 @@ flags:
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androssexual'
     Aporagender: 'Aporagênero'
+    Archaeopronouns: 'Arqueopronomes'
     Aroace: 'Aroace'
     Aromantic: 'Arromânti{inflection_c}'
     Aromantic_Allosexual: 'Arromânti{inflection_c} alossexual'
@@ -539,6 +539,7 @@ flags:
     Bear: 'Urso'
     Bicurious: 'Bi-curios{inflection}'
     Bigender: 'Bigênero'
+    Biromantic: 'Birromânti{inflection_c}'
     Bisexual: 'Bissexual'
     Butch: 'Butch'
     Ceteroromantic: 'Ceterorromânti{inflection_c}'

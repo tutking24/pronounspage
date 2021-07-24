@@ -24,17 +24,7 @@ pronouns:
             reflexive: '#self'
         examples: [':Andrea', ':S']
         template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-    emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+    emoji: false
     slashes: true
     avoiding: false
     others: 'Other pronouns'
@@ -85,11 +75,11 @@ english:
     enabled: false
 
 faq:
-    enabled: true
+    enabled: false
     route: 'faq'
 
 links:
-    enabled: true
+    enabled: false
     route: 'links'
     blogRoute: 'blog'
     links:
