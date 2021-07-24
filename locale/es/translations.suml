@@ -77,7 +77,7 @@ sources:
         Series: 'Series'
         Song: 'Música'
         Poetry: 'Poesía'
-        Game: 'Juegos' 
+        Game: 'Juegos'
         Other: 'Otros'
     submit:
         header: 'Enviar un ejemplo para que sea añadido'
@@ -307,7 +307,7 @@ links:
     headerLong: 'Enlaces externos'
     recommended: 'Recomendamos'
 
-    blog: 'Blog'  
+    blog: 'Blog'
     media: 'Pronouns.page en los medios'
 
     social: 'Redes sociales'
@@ -328,9 +328,9 @@ contact:
                 {https://pronouns.page=Pronouns.page} and related initiatives
                 are created by the “Neutral Language Council” collective.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
-        members: 'Miembros actuales'  
-        member: 'Miembro de la cooperativa'  
-        upcoming: 'Próximas versiones en otras lenguas'  
+        members: 'Miembros actuales'
+        member: 'Miembro de la cooperativa'
+        upcoming: 'Próximas versiones en otras lenguas'
 
 support:
     header: 'Apóyanos'
@@ -395,10 +395,10 @@ profile:
     birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
     flags: 'Banderas'
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
-    flagsCustom: 'Sube una bandera personalizada'  
-    flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.' 
+    flagsCustom: 'Sube una bandera personalizada'
+    flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.'
     links: 'Enlaces'
-    linksCake: 'We recommend linking to' 
+    linksCake: 'We recommend linking to'
     column: 'Columna'
 
     list: 'Tus tarjetas'
@@ -426,6 +426,7 @@ profile:
     card:
         link: 'Imagen de la tarjeta'
         generating: 'Generando…'
+    empty: 'This person hasn''t created any cards yet.' # TODO
 
 share: 'Compartir'
 
@@ -440,7 +441,7 @@ crud:
     filterLong: 'Filtrar la lista…'
     search: 'Buscar…'
     author: 'Añadido por'
-    saved: 'Los cambios se guardaron exitosamente!' 
+    saved: 'Los cambios se guardaron exitosamente!'
 
 footer:
     # TODO source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
@@ -509,7 +510,7 @@ error:
     generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'
 
 mode:
-    dark: 'Modo oscuro' 
+    dark: 'Modo oscuro'
     light: 'Modo claro'
 
 # TODO

@@ -980,6 +980,7 @@ profile:
     card:
         link: 'Obrazek'
         generating: 'Trwa generowanie obrazka…'
+    empty: 'Ta osoba nie stworzyła jeszcze żadnych wizytówek.'
 
 census:
     header: 'Spis'

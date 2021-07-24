@@ -2,8 +2,8 @@
     <div>
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
-                <Avatar :user="profile"/>
-                @{{profile.username}}
+                <Avatar :user="user"/>
+                @{{user.username}}
             </h2>
             <div class="flex-grow-1 text-lg-end">
                 <slot></slot>
@@ -110,6 +110,7 @@
 
     export default {
         props: {
+            user: { required: true },
             profile: { required: true },
             terms: { 'default': null },
         },

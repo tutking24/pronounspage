@@ -188,9 +188,9 @@
                 return {};
             }
 
-            const profiles = await app.$axios.$get(`/profile/get/${encodeURIComponent(store.state.user.username)}`, { headers: {
+            const profiles = (await app.$axios.$get(`/profile/get/${encodeURIComponent(store.state.user.username)}`, { headers: {
                 authorization: 'Bearer ' + store.state.token,
-            } });
+            } })).profiles;
 
             for (let locale in profiles) {
                 if (!profiles.hasOwnProperty(locale)) {

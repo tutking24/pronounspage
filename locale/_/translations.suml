@@ -16,3 +16,6 @@ confirm:
 
 table:
     scrollUp: 'Scroll to the top'
+
+profile:
+    empty: 'This person hasn''t created any cards yet.'

@@ -98,12 +98,14 @@
         </div>
     </div>
     <header v-else class="mb-4">
-        <h1 class="text-nowrap p-4">
-            <nuxt-link to="/">
-                <Icon v="tags"/>
-                <T>title</T>
-            </nuxt-link>
-        </h1>
+        <div class="container">
+            <h1 class="text-nowrap p-4">
+                <nuxt-link to="/">
+                    <Icon v="tags"/>
+                    <T>title</T>
+                </nuxt-link>
+            </h1>
+        </div>
     </header>
 </template>
 
