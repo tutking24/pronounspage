@@ -2,7 +2,7 @@
 
 <small>2021-07-23 | [@andrea](/@andrea)</small>
 
-Rada Języka Neutralnego już od roku walczy z wszechobecnym androcentryzmem językowym oraz pomaga osobom niebinarnym
+[Rada Języka Neutralnego](/kolektyw-rjn) już od roku walczy z wszechobecnym androcentryzmem językowym oraz pomaga osobom niebinarnym
 wyrażać swą płeć w języku polskim. A teraz świętuje swoje pierwsze urodziny i czeka na Wasze pytania!
 
 ![](/img/urodzinowy-lajw.png)
