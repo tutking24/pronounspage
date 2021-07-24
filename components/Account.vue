@@ -83,7 +83,7 @@
             </template>
             <ul v-if="profiles !== undefined" class="list-group">
                 <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
-                    <ProfileOverview :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
+                    <ProfileOverview :username="username" :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
                 </li>
             </ul>
         </Loading>

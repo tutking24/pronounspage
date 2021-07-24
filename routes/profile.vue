@@ -18,16 +18,16 @@
                     {{options.name}}
                 </LocaleLink>
             </div>
-            <div v-if="$user() && $user().username === profile.username">
+            <div v-if="$user() && $user().username === user.username">
                 <nuxt-link to="/editor" class="btn btn-primary btn-sm mb-2 mx-1">
                     <Icon v="edit"/>
                     <T>profile.edit</T>
                 </nuxt-link>
-                <a :href="`https://pronouns.page/@${profile.username}`" v-if="Object.keys(user.profiles).length > 1"
+                <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
                    class="btn btn-outline-secondary btn-sm mb-2 mx-1"
                 >
                     <Icon v="external-link"/>
-                    pronouns.page/@{{profile.username}}
+                    pronouns.page/@{{user.username}}
                 </a>
             </div>
             <div v-if="($user() && $user().username === profile.username) || $isGranted('users')">

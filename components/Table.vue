@@ -3,7 +3,7 @@
         <table :class="['table table-striped table-hover', fixed ? 'table-fixed-' + columns : '']">
             <thead ref="thead">
             <tr>
-                <td :colspan="columns + 1">
+                <td :colspan="columns">
                     <nav v-if="pages > 1">
                         <ul class="pagination pagination-sm justify-content-center mb-0">
                             <li v-for="p in pagesRange" :class="['page-item', p.page === page ? 'active' : '', p.enabled ? '' : 'disabled']">

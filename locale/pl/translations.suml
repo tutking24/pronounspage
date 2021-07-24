@@ -1123,6 +1123,12 @@ ban:
     banned: 'Zbanowanx'
     termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}:'
 
+report:
+    action: 'Zgłoś profil'
+    comment: 'Opisz krótko, w czym problem'
+    confirm: 'Czy na pewno chcesz zgłosić profil @%username%?'
+    sent: 'Twoje zgłoszenie zostało wysłane. Dziękujemy za pomoc!'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'
