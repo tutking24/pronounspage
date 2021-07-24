@@ -13,7 +13,7 @@ const isGranted = (user, locale, area) => {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
-        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area)) {
+        if ((permissionLocale === '*' || permissionLocale === locale || locale === null) && (permissionArea === '*' || permissionArea === area)) {
             return true;
         }
     }
@@ -28,6 +28,7 @@ async function notify() {
         ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'sources' as type, locale, count(*) as c FROM sources WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'reports' as type, null as locale, count(*) as c FROM reports WHERE isHandled = 0`)),
     ];
     if (!awaitingModeration.length) {
         console.log('No entries awaiting moderation');
@@ -44,7 +45,7 @@ async function notify() {
                 if (awaitingModerationGrouped[admin.email] === undefined) {
                     awaitingModerationGrouped[admin.email] = {};
                 }
-                awaitingModerationGrouped[admin.email][m.locale + '-' + m.type] = m.c;
+                awaitingModerationGrouped[admin.email][(m.locale || '*') + '-' + m.type] = m.c;
             }
         }
         count += m.c;
