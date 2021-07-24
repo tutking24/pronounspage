@@ -418,15 +418,15 @@ profile:
 
     #TODO
     #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
+    #    Puedes también usar nuestro sitio web para crear una tarjeta {/@andrea=como esta},
+    #    que contenga tus nombres, pronombres, banderas de orgullo, palabras preferidas etc.
+    #    Después podrás poner un enlace a la tarjeta en tu biografía o  tu firma de correo electrónico.
+    #    Simplemente crea una cuenta {/account=aquí}.
     bannerButton: 'Crear una tarjeta'
     card:
         link: 'Imagen de la tarjeta'
         generating: 'Generando…'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+    empty: 'Esta persona todavía no ha creado ninguna tarjeta.'
 
 share: 'Compartir'
 
@@ -444,7 +444,7 @@ crud:
     saved: 'Los cambios se guardaron exitosamente!'
 
 footer:
-    # TODO source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
+    source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es=CC BY-NC-SA 4.0}
@@ -523,12 +523,11 @@ ban:
     banned: 'Banned'
     termsIntro: 'According to our {/terinos=Terms of Service}:'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Reportar abuso'
+    comment: 'Por favor explica brevamente que está mal con este perfil'
+    confirm: 'Estás segure que quieres reportar a @%username%?'
+    sent: 'Tu reporte ha sido enviado. Gracias por ayudarnos!'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'
