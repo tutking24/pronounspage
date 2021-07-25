@@ -441,6 +441,7 @@ crud:
     search: 'Buscar…'
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
+    loginRequired: '{/cuenta=Log in} to submit an entry' # TODO
 
 footer:
     license: >

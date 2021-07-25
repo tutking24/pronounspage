@@ -48,6 +48,10 @@ router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/terms/submit', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
         return res.json('ok');
     }

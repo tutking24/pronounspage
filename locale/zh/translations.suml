@@ -407,6 +407,7 @@ profile:
         link: 'Card picture'
         generating: 'Generation in progress…'
     empty: 'This person hasn''t created any cards yet.' # TODO
+    loginRequired: '{/account=Log in} to submit an entry' # TODO
 
 share: '這裡'
 

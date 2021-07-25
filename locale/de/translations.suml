@@ -432,6 +432,7 @@ crud:
     search: 'Suchen…'
     author: 'Hinzugefügt von'
     saved: 'Änderungen erfolgreich gespeichert!'
+    loginRequired: '{/account=Log in} to submit an entry' # TODO
 
 footer:
     license: >

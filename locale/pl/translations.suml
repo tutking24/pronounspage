@@ -1043,6 +1043,7 @@ crud:
     search: 'Szukaj…'
     author: 'Dodane przez'
     saved: 'Zmiany zapisane!'
+    loginRequired: '{/konto=Zaloguj się}, aby zgłosić wpis'
 
 footer:
     source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'

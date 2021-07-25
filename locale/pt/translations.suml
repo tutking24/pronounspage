@@ -440,6 +440,7 @@ crud:
     search: 'Buscar…'
     author: 'Adicionado por'
     saved: 'Alterações salvas com sucesso!'
+    loginRequired: '{/conta=Log in} to submit an entry' # TODO
 
 footer:
     # TODO source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'

@@ -455,6 +455,7 @@ crud:
     search: 'Search…'
     author: 'Added by'
     saved: 'Changes saved successfully!'  # TODO
+    loginRequired: '{/account=Log in} to submit an entry' # TODO
 
 footer:
     license: >
