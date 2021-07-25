@@ -416,12 +416,11 @@ profile:
         meh: 'Okey'
         no: 'No'
 
-    #TODO
-    #banner: >
-    #    Puedes también usar nuestro sitio web para crear una tarjeta {/@andrea=como esta},
-    #    que contenga tus nombres, pronombres, banderas de orgullo, palabras preferidas etc.
-    #    Después podrás poner un enlace a la tarjeta en tu biografía o  tu firma de correo electrónico.
-    #    Simplemente crea una cuenta {/account=aquí}.
+    banner: >
+        Puedes también usar nuestro sitio web para crear una tarjeta {/@andrea=como esta},
+        que contenga tus nombres, pronombres, banderas de orgullo, palabras preferidas etc.
+        Después podrás poner un enlace a la tarjeta en tu biografía o  tu firma de correo electrónico.
+        Simplemente crea una cuenta {/account=aquí}.
     bannerButton: 'Crear una tarjeta'
     card:
         link: 'Imagen de la tarjeta'
@@ -444,10 +443,9 @@ crud:
     saved: 'Los cambios se guardaron exitosamente!'
 
 footer:
-    source: 'El código fuente está {https://gitlab.com/Avris/Zaimki=publicado} bajo la licencia {https://mit.avris.it=MIT}.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es=CC BY-NC-SA 4.0}
+        {https://gitlab.com/Avris/Zaimki=El código fuente} está publicado bajo la licencia {https://mit.avris.it=MIT} [mit.svg].<br/>
+        El contenido está publicado bajo la licencia {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es=CC BY-NC-SA 4.0}
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Contacto, redes sociales, apoyo'
 
