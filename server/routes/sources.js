@@ -73,6 +73,10 @@ router.get('/sources/:id', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/sources/submit', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        res.status(401).json({error: 'Unauthorised'});
+    }
+
     const id = ulid();
     await req.db.get(SQL`
         INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, submitter_id, base_id)

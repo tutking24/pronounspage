@@ -4,7 +4,7 @@
             <Icon v="plus-circle"/>
             <T>sources.submit.header</T>
         </div>
-        <div class="card-body">
+        <div v-if="$user()" class="card-body">
             <div v-if="afterSubmit" class="alert alert-success text-center">
                 <p>
                     <T>sources.submit.thanks</T>
@@ -98,6 +98,9 @@
                 </button>
                 <p class="small text-muted mt-1"><T>sources.submit.moderation</T></p>
             </form>
+        </div>
+        <div v-else class="card-body py-5 text-center">
+            <T>crud.loginRequired</T>
         </div>
     </div>
 </template>

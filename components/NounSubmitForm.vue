@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section v-if="$user()">
         <div v-if="afterSubmit" class="alert alert-success text-center">
             <p>
                 <T>nouns.submit.thanks</T>
@@ -116,6 +116,11 @@
             </button>
             <p class="small text-muted mt-1"><T>nouns.submit.moderation</T></p>
         </form>
+    </section>
+    <section v-else class="text-center">
+        <div class="alert alert-info">
+            <T>crud.loginRequired</T>
+        </div>
     </section>
 </template>
 
