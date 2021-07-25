@@ -482,8 +482,8 @@ api:
     query: 'Abfrage-String-Parameter'
 
 quotation:
-    start: '“'
-    end: '”'
+    start: '„'
+    end: '“'
 
 localise:
     shorter: 'Mehr hinzufügen'
