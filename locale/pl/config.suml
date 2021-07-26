@@ -657,7 +657,7 @@ links:
                 Fajnie by było gdyby te osoby też otworzyły się na naszą niewiedzę i pozwoliły nam popełniać błędy.
                 W końcu nie piszemy o tym wszystkim, bo chcemy dla nich źle. Wręcz przeciwnie.
             response: >
-                Nasza odpowiedź: {https://twitter.com/neutratywy/status/1416760234673115140=Thread}
+                Nasza odpowiedź: {https://twitter.com/neutratywy/status/1416760234673115140=Wątek na Twitterze}
         -
             icon: 'newspaper'
             url: 'https://www.glamour.pl/artykul/emma-corrin-jest-osoba-niebinarna-gwiazda-the-crown-oglasza-ruszam-w-nowa-podroz-210707095140'
@@ -710,6 +710,8 @@ links:
                     W skrócie: krótki akapit zajawkowy jest naszpikowany manipulacją, sugeruje jakobyśmy nienawidziły polszczyzny,
                     wkłada słowa w nasze usta i demonstruje brak riserczu na temat, na który piszecie.
                     Nie przekonuje to, by reszta tekstu (czy czasopisma) miała być warta choćby i grosza z prenumeraty.
+                - >
+                    {https://twitter.com/neutratywy/status/1419197039016091650=Wątek na Twitterze}
     socials:
         -
             icon: 'twitter'
