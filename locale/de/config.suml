@@ -82,6 +82,10 @@ links:
             icon: 'newspaper'
             url: 'https://www.luebeck.de/de/presse/pressemeldungen/view/134698'
             headline: 'Lübeck führt einheitliche geschlechtergerechte Sprache ein'
+        -
+            icon: ''
+            url: 'https://www.annaheger.de/pronomen/'
+            headline: 'Pronomen ohne Geschlecht – Illi Anna Heger'
     academic: []
     mediaGuests: []
     mediaMentions: []
