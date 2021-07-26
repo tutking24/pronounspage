@@ -89,8 +89,8 @@ function* isSuspicious(profile) {
     }
 }
 
-const hasAutomatedHandledReports = async (db, id) => {
-    return (await db.get(SQL`SELECT COUNT(*) AS c FROM reports WHERE userId = ${id} AND isAutomatic = 1 AND isHandled = 1`)).c > 0;
+const hasAutomatedReports = async (db, id) => {
+    return (await db.get(SQL`SELECT COUNT(*) AS c FROM reports WHERE userId = ${id} AND isAutomatic = 1`)).c > 0;
 }
 
 const router = Router();
@@ -162,7 +162,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     const sus = [...isSuspicious(req.body)];
-    if (sus.length && !await hasAutomatedHandledReports(req.db, req.user.id)) {
+    if (sus.length && !await hasAutomatedReports(req.db, req.user.id)) {
         await req.db.get(SQL`
             INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled)
             VALUES (${ulid()}, ${req.user.id}, null, 1, ${sus.join(', ')}, 0);
