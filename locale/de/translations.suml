@@ -65,8 +65,8 @@ pronouns:
 
 sources:
     header: 'Quellen'
-    headerLong: 'Beispiele aus kulturellen Texten'
-    headerLonger: 'Geschlechtsneutrale Sprache in kulturellen Texten'
+    headerLong: 'Beispiele aus Kulturtexten'
+    headerLonger: 'Geschlechtsneutrale Sprache in Kulturtexten'
     subheader: 'Textkorpus der geschlechtsneutralen Sprache'
     toc: 'Inhaltsverzeichnis anzeigen'
     type:
@@ -331,7 +331,7 @@ support:
 
 user:
     header: 'Account'
-    headerLong: 'Dein account'
+    headerLong: 'Dein Account'
     tokenExpired: 'Der Token ist abgelaufen. Bitte aktualisiere die Website und versuche es erneut.'
     login:
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
