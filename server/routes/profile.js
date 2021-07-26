@@ -146,7 +146,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 words = ${JSON.stringify(req.body.words)},
                 teamName = ${req.isGranted('users') ? req.body.teamName || null : ''},
                 footerName = ${req.isGranted('users') ? req.body.footerName || null : ''},
-                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''},
+                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',') || null : ''},
                 card = NULL
             WHERE id = ${ids[0]}
         `);
@@ -157,7 +157,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted('users') ? req.body.teamName || null : ''},
                 ${req.isGranted('users') ? req.body.footerName || null : ''},
-                ${req.isGranted('users') ? req.body.footerAreas.join(',').toLowerCase() || null : ''}
+                ${req.isGranted('users') ? req.body.footerAreas.join(',') || null : ''}
         )`);
     }
 

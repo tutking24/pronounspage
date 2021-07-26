@@ -22,4 +22,4 @@ zet	Neopronomen „zet“	FALSE	zet	zerm	zern	zets	dezet				dieszet	zet	zet	FALS
 er_sie	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	_e	_in	FALSE	FALSE	FALSE
 er*sie	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	*e	*in	FALSE	FALSE	FALSE
 er:sie	Neopronomen „er:sie“	FALSE	er:sie	ihm:ihr	ihn:sie	sein:ihr	der:die	des:der	dem:der	den:die	diese:r	:e	:in	FALSE	FALSE	FALSE
-ersie	Neopronomen „ersie“	FALSE	ersie	ihmihr	ihnsie	seinihr	derdie	desder	demder	dendie	dieseer _e	_in	??	FALSE	FALSE	FALSE
+ersie	Neopronomen „ersie“	FALSE	ersie	ihmihr	ihnsie	seinihr	derdie	desder	demder	dendie	dieseer _e	_in		FALSE	FALSE	FALSE
