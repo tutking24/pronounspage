@@ -39,7 +39,11 @@
                 declensions: {
                     'Y-Formen': new NounDeclension({
                         N: 'das Authory', G: 'des Authorys', D: 'dem Authory', A: 'das Authory',
-                        N_pl: 'die Authorys', G_pl: 'der Authorys', D_pl: 'der Authorys', A_pl: 'die Authorys',
+                        N_pl: 'die Authorys', G_pl: 'der Authorys', D_pl: 'den Authorys', A_pl: 'die Authorys',
+                    }),
+                    'Inklusivum': new NounDeclension({
+                        N: 'de Authore', G: 'dern Authore', D: 'dern Authore', A: 'de Authore',
+                        N_pl: 'die Authorne', G_pl: 'der Authorne', D_pl: 'den Authorne', A_pl: 'die Authorne',
                     }),
                     'Doppelpunkt-Formen': new NounDeclension({
                         N: 'der:die Author:in', G: 'des:der Authors:in', D: 'dem:der Author:in', A: 'den:die Author:in',
