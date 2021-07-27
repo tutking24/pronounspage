@@ -25,7 +25,6 @@
 
         <Separator icon="link"/>
 
-
         <section>
             <Suggested/>
 
@@ -213,6 +212,10 @@
                 </li>
             </ul>
         </section>
+
+        <Separator icon="fist-raised"/>
+
+        <Mission/>
 
         <Separator icon="bookmark"/>
 
