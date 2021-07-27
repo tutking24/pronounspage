@@ -341,7 +341,7 @@ contact:
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
         logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
         members: 'Membres atuais'
-        member: 'Member of the collective'  # TODO
+        member: 'Membro do coletivo'
         blog: 'Blog'
         upcoming: 'Próximas versões'
 
@@ -408,10 +408,10 @@ profile:
     birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
     flags: 'Bandeiras'
     flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
-    links: 'Enlaces'
-    linksCake: 'We recommend linking to'  # TODO
+    flagsCustom: 'Enviar bandeira personalizada'
+    flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
+    links: 'Links'
+    linksCake: 'Recomendamos linkar com'
     column: 'Coluna'
 
     list: 'Os cartões'
@@ -439,7 +439,7 @@ profile:
     card:
         link: 'Imagem do cartão'
         generating: 'Gerando a imagem…'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+    empty: 'Essa pessoa ainda não especificou suas informações pessoais'
 
 share: 'Compartilhar'
 
@@ -455,10 +455,10 @@ crud:
     search: 'Buscar…'
     author: 'Adicionado por'
     saved: 'Alterações salvas com sucesso!'
-    loginRequired: '{/conta=Log in} to submit an entry' # TODO
+    loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
 
 footer:
-    # TODO source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
+    source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt=CC BY-NC-SA 4.0}
@@ -533,16 +533,15 @@ ban:
     visible: '(this will be visible to the user)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/termos=Terms of Service}:'
+    header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
+    banned: 'Banido'
+    termsIntro: 'De acordo com nossos {/termos=termos de uso}:'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Reportar abuso'
+    comment: 'por favor, explique brevemente o que há de errado com esse perfil'
+    confirm: 'Você tem certeza de que deseja reportar @%username%?'
+    sent: 'Sua reportação foi enviada. Agradecemos pela colaboração!'
 
 flags:
     Abroromantic: 'Abrorromânti{inflection_c}'
