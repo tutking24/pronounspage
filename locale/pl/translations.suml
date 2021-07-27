@@ -52,6 +52,20 @@ home:
         alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
         pronunciation: 'Możesz tu również podać wymowę używając pionowej kreski i IPA, np. <code>onø|ˈɔ̃nø</code> = „onø” z wymową /ˈɔ̃nø/.'
     whatisit: 'O co chodzi w tej stronie?'
+    mission:
+        header: 'Nasza misja'
+        summary: 'Walczymy o wolność, szacunek i inkluzywność w języku.'
+        freedom: >
+            <strong>Wolność</strong>
+            – by każde mogło używać <em>wobec siebie</em> takich zaimków i innych form,
+            jakie uważa, że najlepiej je opisują.
+        respect: >
+            <strong>Szacunek</strong>
+            – by formy używane <em>przez inne osoby</em> były respektowane.
+        inclusiveness: >
+            <strong>Inkluzywność</strong>
+            – by mówiąc o osobie nieznanej lub o grupie osób,
+            nie zakładać ich płci i {/slowniki/inkluzywny=nie wykluczać}.
 
 pronouns:
     examples: 'Przykłady użycia w zdaniu'

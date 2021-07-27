@@ -40,6 +40,21 @@ home:
         alt: 'Também é possível introduzir formas intercambiáveis separadas em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
         pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
     whatisit: 'Por que importam os pronomes?'
+    # TODO
+    mission:
+        header: 'Our mission'
+        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        freedom: >
+            <strong>Freedom</strong>
+            – so that everyone can use <em>for themselves</em>
+            whatever pronouns they feel describe them best.
+        respect: >
+            <strong>Respect</strong>
+            – so that <em>other people's</em> pronouns are respected.
+        inclusiveness: >
+            <strong>Inclusiveness</strong>
+            – so that when we're referring to a person we don't know or a group of people,
+            we don't assume their gender and don't exclude them for any reason.
 
 pronouns:
     examples: 'Exemplos de uso em frases'
