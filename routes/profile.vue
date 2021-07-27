@@ -13,7 +13,7 @@
         <Profile :user="user" :profile="profile" :terms="terms">
             <div v-if="Object.keys(user.profiles).length > 1">
                 <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
-                            :locale="locale" :link="`/@${profile.username}`"
+                            :locale="locale" :link="`/@${user.username}`"
                             :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-2 mx-1']">
                     {{options.name}}
                 </LocaleLink>
