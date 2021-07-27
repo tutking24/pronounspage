@@ -85,7 +85,7 @@ nouns:
         - 'osobatywy'
     inclusive:
         enabled: true
-        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo']
+        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
         route: 'inkluzywny'
     terms:
         enabled: true
@@ -99,6 +99,7 @@ nouns:
             - 'model relacji'
             - 'język'
             - 'pociąg'
+            - 'polityka'
         route: 'terminologia'
 
 names:
