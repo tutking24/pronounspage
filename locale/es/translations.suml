@@ -338,11 +338,11 @@ contact:
     authors: 'Autores/as/xs del sitio web'
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
-        description:  # TODO
+        description:  
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                son creados por la cooperativa “Consejo de Lenguaje Neutro”.
+        logo: 'El logo de la cooperativa es una combinación del símbolo transgénero y una burbuja de diálogo que simboliza la lengua.'
         members: 'Miembros actuales'
         member: 'Miembro de la cooperativa'
         upcoming: 'Próximas versiones en otras lenguas'
@@ -456,7 +456,7 @@ crud:
     search: 'Buscar…'
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
-    loginRequired: '{/cuenta=Log in} to submit an entry' # TODO
+    loginRequired: '{/cuenta=Log in} para enviar un ítem' 
 
 footer:
     license: >
@@ -480,9 +480,9 @@ confirm:
     ok: 'OK'
 
 terms:
-    header: 'Térinos de Servicio'
+    header: 'Términos de Servicio'
     lastUpdate: 'Actualizados por última vez'
-    consent: 'Al registrarte, aceptas los {/terinos=Térinos de Servicio}.'
+    consent: 'Al registrarte, aceptas los {/terinos=Términos de Servicio}.'
 
 admin:
     header: 'Panel de Admins'
@@ -527,15 +527,14 @@ mode:
     dark: 'Modo oscuro'
     light: 'Modo claro'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terinos=Terms of Service}:'
+    reason: 'Razón para banear'
+    visible: '(esto será visible para le usuario)'
+    action: 'Banear esta persona'
+    confirm: 'Estás segure que quieres banear a @%username%?'
+    header: 'Has sido baneado. Tu perfil no se mostrará a nadie.'
+    banned: 'Baneado'
+    termsIntro: 'According to our {/terminos=Términos de Servicio}:'
 
 report:
     action: 'Reportar abuso'
