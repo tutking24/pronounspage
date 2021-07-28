@@ -89,7 +89,7 @@ contact:
             headline: 'contact@pronouns.page'
     team:
         enabled: true
-        route: 'team'  # TODO
+        route: 'team'
 
 support:
     enabled: true
