@@ -39,21 +39,20 @@ home:
         alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er” or „sie”.'
         pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich "|" (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|si​ˑʁ</code> = „sier”, ausgesprochen wie /si​ˑʁ/.'
     whatisit: 'Was ist das Problem mit Pronomen?'
-    # TODO
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Unsere Mission'
+        summary: 'Wir kämpfen für Freiheit, Respekt und Inklusivität in Sprache.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Freiheit</strong>
+            – so das jeder <em>für sich selbst</em>
+            bestimmen kann, welche Pronomen ihn / ihr am besten passt.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Respekt</strong>
+            –  so das <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inklusivität</strong>
+            – so das, wenn wir über eine Person die wir nicht kennen, oder eine Gruppe von Leuten,
+            reden, nicht ihr Geschlecht annehmen und sie nicht aus irgendeinem Grund ausschließen.
 
 pronouns:
     examples: 'Beispiel-Nutzung in Sätzen'
@@ -429,7 +428,7 @@ profile:
     card:
         link: 'Bild Karte'
         generating: 'Generatierung läuft…'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+    empty: 'Diese Person hat noch keine Karte erstellt.'
 
 share: 'Teilen'
 
@@ -445,7 +444,7 @@ crud:
     search: 'Suchen…'
     author: 'Hinzugefügt von'
     saved: 'Änderungen erfolgreich gespeichert!'
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    loginRequired: '{/account=Log dich ein} um Eintrag einzureichen'
 
 footer:
     license: >
@@ -524,12 +523,11 @@ ban:
     banned: 'gesperrt'
     termsIntro: 'Gemäß unserer Geschäftsbedingungen {/Nutzungsbedingungen=Geschäftsbedingungen}:'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Missbrauch melden'
+    comment: 'Bitte beschreibe kurz, was falsch an diesem Profil ist'
+    confirm: 'Bist du sicher das du @%username% melden möchtest?'
+    sent: 'Deine Meldung wurde gesendet. Danke für deine Hilfe!'
 
 flags:
     Abroromantic: 'Abroromantisch'
