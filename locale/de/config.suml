@@ -5,24 +5,14 @@ header: true
 pronouns:
     enabled: true
     default: 'er'
-    any: 'any'
+    any: 'beliebige'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
-        description: 'Many nonbinary people use more than one form interchangeably and are fine with being called either of them.'
-        examples: ['er&sie', 'er&die', 'sie&sier']
-    null:
-        description: 'Keine Pronomen'
-        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
+        name: 'Austauschbare Pronomen'
+        description: 'Einige nichtbinäre Menschen nutzen mehr als eine Form von Pronomen und sind damit einverstanden, mit irgendwelchen dieser Pronomen angesprochen zu werden.'
+        examples: ['er&sie', 'er&dey', 'sie&xier']
+    null: false
     emoji: false
     slashes: true
     avoiding: false
@@ -138,7 +128,7 @@ profile:
         - ['schön', 'süß', 'sexy',]
         - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'er'
 
 census:
     enabled: false
