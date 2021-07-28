@@ -338,7 +338,7 @@ contact:
     authors: 'Autores/as/xs del sitio web'
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
-        description:  
+        description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
                 son creados por la cooperativa “Consejo de Lenguaje Neutro”.
@@ -456,7 +456,7 @@ crud:
     search: 'Buscar…'
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
-    loginRequired: '{/cuenta=Log in} para enviar un ítem' 
+    loginRequired: '{/cuenta=Log in} para enviar un ítem'
 
 footer:
     license: >
@@ -482,7 +482,7 @@ confirm:
 terms:
     header: 'Términos de Servicio'
     lastUpdate: 'Actualizados por última vez'
-    consent: 'Al registrarte, aceptas los {/terinos=Términos de Servicio}.'
+    consent: 'Al registrarte, aceptas los {/terminos=Términos de Servicio}.'
 
 admin:
     header: 'Panel de Admins'
