@@ -133,7 +133,7 @@ support:
 user:
     enabled: true
     route: 'cuenta'
-    termsRoute: 'terinos'
+    termsRoute: 'terminos'
 
 profile:
     enabled: true
