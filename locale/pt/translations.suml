@@ -40,7 +40,7 @@ home:
         alt: 'Também é possível introduzir formas intercambiáveis separadas em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
         pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
     whatisit: 'Por que importam os pronomes?'
-    
+
     mission:
         header: 'Nossa missão'
         summary: 'Estamos lutando pela liberdade, respeito e inclusão no idioma.'
@@ -429,13 +429,12 @@ profile:
         meh: 'OK'
         no: 'Não'
 
-    
-    #banner: >
-    #    Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
-    #    que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
-    #    Depois pode por no seu bio ou rodapé de e-mail.
-    #    Somente crie a sua conta {/account=aqui}.
-    #bannerButton: 'Crie um cartão'
+    banner: >
+        Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
+        que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
+        Depois pode por no seu bio ou rodapé de e-mail.
+        Somente crie a sua conta {/account=aqui}.
+    bannerButton: 'Crie um cartão'
     card:
         link: 'Imagem do cartão'
         generating: 'Gerando a imagem…'
@@ -526,7 +525,6 @@ error:
 mode:
     dark: 'Modo escuro'
     light: 'Modo claro'
-
 
 ban:
     reason: 'Razão de ban'
