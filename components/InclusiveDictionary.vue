@@ -21,7 +21,7 @@
                     <T>nouns.submit.action</T>
                 </button>
             </div>
-            <div class="btn-group mb-3 d-flex bg-white category-filter">
+            <div class="btn-group mb-3 d-none d-lg-flex bg-white category-filter">
                 <button v-for="category in config.nouns.inclusive.categories"
                    :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                    @click="filter = filter === ':' + category ? '' : ':' + category"
