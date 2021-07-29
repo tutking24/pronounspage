@@ -42,19 +42,20 @@ home:
     whatisit: '¿Por qué importan los pronombres?'
     # TODO
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Nuestra misión'
+        summary: 'Luchamos por la libertad, el respeto y la inclusividad en la lengua.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Libertad</strong>
+            – para que todes puedan usar <em>para sí mismes</em>
+            los pronombres que sientan que mejor les describen
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Respeto</strong>
+            – para que los pronombres de <em>otras personas</em> sean respetados
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inclusividad</strong>
+            – para que cuando nos refiramos a una persona que no conocemos o a un grupo de gente
+            no presupongamos su género y no les excluyamos por ninguna razón
+
 
 pronouns:
     examples: 'Ejemplos de uso en oraciones'
@@ -531,10 +532,10 @@ ban:
     reason: 'Razón para banear'
     visible: '(esto será visible para le usuario)'
     action: 'Banear esta persona'
-    confirm: 'Estás segure que quieres banear a @%username%?'
+    confirm: '¿Estás segure que quieres banear a @%username%?'
     header: 'Has sido baneado. Tu perfil no se mostrará a nadie.'
     banned: 'Baneado'
-    termsIntro: 'According to our {/terminos=Términos de Servicio}:'
+    termsIntro: 'De acuerdo con nuestros {/terminos=Términos de Servicio}:'
 
 report:
     action: 'Reportar abuso'
