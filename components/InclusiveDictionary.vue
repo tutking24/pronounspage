@@ -21,7 +21,7 @@
                     <T>nouns.submit.action</T>
                 </button>
             </div>
-            <div class="btn-group mb-3 d-none d-lg-flex bg-white category-filter">
+            <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
                 <button v-for="category in config.nouns.inclusive.categories"
                    :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                    @click="filter = filter === ':' + category ? '' : ':' + category"
@@ -62,7 +62,7 @@
                         </li>
                     </ul>
 
-                    <small v-if="s.el.base && entries[s.el.base]">
+                    <div v-if="s.el.base && entries[s.el.base]" class="small">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
                             <li v-for="w in entries[s.el.base].insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
@@ -75,7 +75,7 @@
                             </span>
                             </li>
                         </ul>
-                    </small>
+                    </div>
                 </td>
                 <td>
                     <ul class="list-untyled">
@@ -324,10 +324,12 @@
         }
     }
 
-    .text-filter {
-        * {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .text-filter {
+            * {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
         }
     }
     .category-filter {

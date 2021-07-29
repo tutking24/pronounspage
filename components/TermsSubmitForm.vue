@@ -39,13 +39,13 @@
             </div>
 
             <div class="form-group">
-                <label class="text-nowrap"><strong>
-                    <T>nouns.terms.category</T>
-                </strong></label>
-                <select v-model="form.category" class="form-control form-control-sm">
-                    <option value=""></option>
-                    <option v-for="category in config.nouns.terms.categories" :value="category">{{category}}</option>
-                </select>
+                <label><strong><T>nouns.terms.category</T>:</strong></label>
+                <a v-for="category in config.nouns.terms.categories"
+                   href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
+                   @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
+                >
+                    {{ category }}
+                </a>
             </div>
 
             <div class="row" v-if="$isGranted('terms')">
@@ -102,7 +102,7 @@
                     term: [''],
                     original: [],
                     definition: '',
-                    category: '',
+                    categories: [],
                     flags: [],
                     images: [],
                     base: null,
@@ -122,7 +122,7 @@
                         term: [''],
                         original: [],
                         definition: '',
-                        category: '',
+                        categories: [],
                         flags: [],
                         images: [],
                         base: null,
@@ -136,7 +136,7 @@
                     term: word.term,
                     original: word.original,
                     definition: word.definition,
-                    category: word.category,
+                    categories: word.categories,
                     flags: word.flags,
                     images: word.images,
                     base: word.id,
