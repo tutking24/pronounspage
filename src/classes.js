@@ -725,7 +725,7 @@ export class TermsEntry {
         this.original = original ? original.split('|') : [];
         this.definition = definition;
         this.author = author;
-        this.category = category;
+        this.categories = category ? category.split(',') : [];
         this.flags = JSON.parse(flags);
         this.images = images ? images.split(',') : [];
         this.approved = !!approved;
@@ -735,6 +735,10 @@ export class TermsEntry {
     matches(filter) {
         if (!filter) {
             return true;
+        }
+
+        if (filter.startsWith(':')) {
+            return this.categories.includes(filter.substring(1));
         }
 
         for (let field of ['term', 'original']) {

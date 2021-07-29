@@ -63,7 +63,7 @@ router.post('/terms/submit', handleErrorAsync(async (req, res) => {
             ${id},
             ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${req.body.definition},
             0, ${req.body.base}, ${global.config.locale}, ${req.user ? req.user.id : null},
-            ${req.body.category}, ${JSON.stringify(req.body.flags)}, ${req.body.images}
+            ${req.body.categories.join(',')}, ${JSON.stringify(req.body.flags)}, ${req.body.images}
         )
     `);
 
