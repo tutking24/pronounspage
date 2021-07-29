@@ -425,12 +425,12 @@ profile:
         meh: 'Oké'
         no: 'Nee'
 
-    #banner: >
-    #    Je kan ook onze website gebruiken om een kaart te genereren, {/@andrea=zoals deze},
-    #    Die je namen, voornaamwoorden etc. bevat.
-    #    Je kan hier naar verwijzen in je bio of in je email-footer.
-    #    Just create an account {/account=hier}.
-    #bannerButton: 'Maak een kaart'
+    banner: >
+        Je kan ook onze website gebruiken om een kaart te genereren, {/@andrea=zoals deze},
+        Die je namen, voornaamwoorden etc. bevat.
+        Je kan hier naar verwijzen in je bio of in je email-footer.
+        Just create an account {/account=hier}.
+    bannerButton: 'Maak een kaart'
 
     card:
         link: 'Kaartbeeld'
