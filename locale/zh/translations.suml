@@ -317,15 +317,15 @@ contact:
     authors: '網站的作者'
     team:
         name: '中立語推行委員會'
-        description:  # TODO
+        description: 
             - >
                 {https://pronouns.page=Pronouns.page} 及相關舉措
                  由“中立語推行委員會”集體創建。
-        logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'  # TODO
-        members: '份子'  # TODO
-        member: 'Member of the collective'  # TODO
+        logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'
+        members: '份子'
+        member: '集體中的成員'
         blog: '博客'
-        upcoming: '即將到來語言文本'  # TODO
+        upcoming: '即將到來語言文本'
 
 support:
     header: '支持'
@@ -389,10 +389,10 @@ profile:
     birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustom: '上傳自定義旗幟'
+    flagsCustomWarning: '此旗幟由一名用戶上傳。pronouns.page團隊不為此負責'
     links: '鏈接'
-    linksCake: 'We recommend linking to'  # TODO
+    linksCake: '我們建議鏈接至'
     column: '列'
 
     list: '你的卡'
@@ -416,11 +416,11 @@ profile:
     #    containing your names, pronouns, pride flags, liked words, etc.
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
+    #bannerButton: '創造名片'
     # TODO
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
+        link: '名片圖片'
+        generating: '生成中……'
     empty: 'This person hasn''t created any cards yet.' # TODO
     loginRequired: '{/account=Log in} to submit an entry' # TODO
 
@@ -506,8 +506,8 @@ error:
     generic: '出了點問題，請重試...'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: '黑暗模式'
+    light: '明亮模式'
 
 # TODO
 ban:
