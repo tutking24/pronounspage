@@ -49,7 +49,12 @@
             </div>
 
             <div class="row" v-if="$isGranted('terms')">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-4">
+                    <label for="key"><strong><T>sources.submit.key</T></strong></label>
+                    <input type="text" id="key" class="form-control" v-model="form.key" maxlength="255"/>
+                    <p class="small text-muted"><T>sources.submit.keyInfo</T></p>
+                </div>
+                <div class="col-12 col-lg-4">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <T>profile.flags</T>
@@ -57,7 +62,7 @@
                         <ListInput v-model="form.flags" v-slot="s"/>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-4">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <T>nouns.terms.images</T>
@@ -101,6 +106,7 @@
                 form: {
                     term: [''],
                     original: [],
+                    key: '',
                     definition: '',
                     categories: [],
                     flags: [],
@@ -121,6 +127,7 @@
                     this.form = {
                         term: [''],
                         original: [],
+                        key: '',
                         definition: '',
                         categories: [],
                         flags: [],
@@ -135,6 +142,7 @@
                 this.form = {
                     term: word.term,
                     original: word.original,
+                    key: word.key,
                     definition: word.definition,
                     categories: word.categories,
                     flags: word.flags,

@@ -56,9 +56,9 @@
 
                     <ul class="list-inline">
                         <li v-for="category in s.el.categories" class="list-inline-item">
-                            <button class="badge bg-primary text-white" @click="filter = ':' + category">
+                            <a :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
                                 {{category}}
-                            </button>
+                            </a>
                         </li>
                     </ul>
 
