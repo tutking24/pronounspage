@@ -15,8 +15,12 @@
             Aenean placerat placerat quam a egestas.
         </p>
         <div class="row">
-            <div v-for="(declension, name) in declensions" class="col-12 col-lg-4">
+            <div v-for="({declension, warning = null}, name) in declensions" class="col-12 col-lg-4">
                 <h4>{{ name }}</h4>
+                <div v-if="warning" class="alert alert-warning small">
+                    <Icon v="exclamation-triangle"/>
+                    {{ warning }}
+                </div>
                 <h5 class="h6">⋅ <T>nouns.singular</T></h5>
                 <Declension word="" :template="declension" open/>
                 <h5 class="h6">⁖ <T>nouns.plural</T></h5>
@@ -37,30 +41,43 @@
         data() {
             return {
                 declensions: {
-                    'Y-Formen': new NounDeclension({
-                        N: 'das Authory', G: 'des Authorys', D: 'dem Authory', A: 'das Authory',
-                        N_pl: 'die Authorys', G_pl: 'der Authorys', D_pl: 'den Authorys', A_pl: 'die Authorys',
-                    }),
-                    'Inklusivum': new NounDeclension({
-                        N: 'de Authore', G: 'dern Authore', D: 'dern Authore', A: 'de Authore',
-                        N_pl: 'die Authorne', G_pl: 'der Authorne', D_pl: 'den Authorne', A_pl: 'die Authorne',
-                    }),
-                    'Doppelpunkt-Formen': new NounDeclension({
-                        N: 'der:die Author:in', G: 'des:der Authors:in', D: 'dem:der Author:in', A: 'den:die Author:in',
-                        N_pl: 'die Author:innen', G_pl: 'der Author:innen', D_pl: 'den Author:innen', A_pl: 'die Author:innen',
-                    }),
-                    'Unterstrich-Formen': new NounDeclension({
-                        N: 'der_die Author_in', G: 'des_der Authors_in', D: 'dem_der Author_in', A: 'den_die Author_in',
-                        N_pl: 'die Author_innen', G_pl: 'der Author_innen', D_pl: 'den Author_innen', A_pl: 'die Author_innen',
-                    }),
-                    'Sternzeichen-Formen': new NounDeclension({
-                        N: 'der*die Author*in', G: 'des*der Authors*in', D: 'dem*der Author*in', A: 'den*die Author*in',
-                        N_pl: 'die Author*innen', G_pl: 'der Author*innen', D_pl: 'den Author*innen', A_pl: 'die Author*innen',
-                    }),
-                    'Großbuchstabe-Formen': new NounDeclension({
-                        N: '?? AuthorIn', G: '?? AuthorsIn', D: '?? AuthorIn', A: '?? AuthorIn',
-                        N_pl: 'die AuthorInnen', G_pl: 'der AuthorInnen', D_pl: 'den AuthorInnen', A_pl: 'die AuthorInnen',
-                    }),
+                    'Y-Formen': {
+                        declension: new NounDeclension({
+                            N: 'das Authory', G: 'des Authorys', D: 'dem Authory', A: 'das Authory',
+                            N_pl: 'die Authorys', G_pl: 'der Authorys', D_pl: 'den Authorys', A_pl: 'die Authorys',
+                        }),
+                    },
+                    'Inklusivum': {
+                        declension: new NounDeclension({
+                            N: 'de Authore', G: 'dern Authore', D: 'dern Authore', A: 'de Authore',
+                            N_pl: 'die Authorne', G_pl: 'der Authorne', D_pl: 'den Authorne', A_pl: 'die Authorne',
+                        }),
+                    },
+                    'Doppelpunkt-Formen': {
+                        declension: new NounDeclension({
+                            N: 'der:die Author:in', G: 'des:der Authors:in', D: 'dem:der Author:in', A: 'den:die Author:in',
+                            N_pl: 'die Author:innen', G_pl: 'der Author:innen', D_pl: 'den Author:innen', A_pl: 'die Author:innen',
+                        }),
+                    },
+                    'Unterstrich-Formen': {
+                        declension: new NounDeclension({
+                            N: 'der_die Author_in', G: 'des_der Authors_in', D: 'dem_der Author_in', A: 'den_die Author_in',
+                            N_pl: 'die Author_innen', G_pl: 'der Author_innen', D_pl: 'den Author_innen', A_pl: 'die Author_innen',
+                        }),
+                    },
+                    'Sternzeichen-Formen': {
+                        declension: new NounDeclension({
+                            N: 'der*die Author*in', G: 'des*der Authors*in', D: 'dem*der Author*in', A: 'den*die Author*in',
+                            N_pl: 'die Author*innen', G_pl: 'der Author*innen', D_pl: 'den Author*innen', A_pl: 'die Author*innen',
+                        }),
+                    },
+                    'Großbuchstabe-Formen': {
+                        declension: new NounDeclension({
+                            N: '?? AuthorIn', G: '?? AuthorsIn', D: '?? AuthorIn', A: '?? AuthorIn',
+                            N_pl: 'die AuthorInnen', G_pl: 'der AuthorInnen', D_pl: 'den AuthorInnen', A_pl: 'die AuthorInnen',
+                        }),
+                        warning: 'Das Binnen-I bezieht sich nur auf die männliche und die weibliche Form der Wörter und schließt damit (wie das generische Maskulinium) immer noch sehr viele Menschen aus der Sprache aus. Deshalb ist diese Variante genauso wenig zu empfehlen wie das generische Maskulinum oder Femininum.',
+                    },
                 },
             }
         },
