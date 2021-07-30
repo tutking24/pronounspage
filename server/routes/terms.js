@@ -25,7 +25,7 @@ const linkOtherVersions = async (req, terms) => {
     const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
 
     const otherVersions = await req.db.all(SQL`
-        SELECT t.*, u.username AS author FROM terms t
+        SELECT t.*, u.id AS author FROM terms t
         LEFT JOIN users u ON t.author_id = u.id
         WHERE t.locale != ${global.config.locale}
         AND t.deleted = 0
@@ -54,7 +54,7 @@ router.get('/terms', handleErrorAsync(async (req, res) => {
         return await linkOtherVersions(
             req,
             sortClearedLinkedText(await req.db.all(SQL`
-                SELECT i.*, u.username AS author FROM terms i
+                SELECT i.*, u.id AS author FROM terms i
                 LEFT JOIN users u ON i.author_id = u.id
                 WHERE i.locale = ${global.config.locale}
                 AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
@@ -70,7 +70,7 @@ router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
         await linkOtherVersions(
             req,
             sortClearedLinkedText(await req.db.all(SQL`
-                SELECT i.*, u.username AS author FROM terms i
+                SELECT i.*, u.id AS author FROM terms i
                 LEFT JOIN users u ON i.author_id = u.id
                 WHERE i.locale = ${global.config.locale}
                 AND i.approved >= ${req.isGranted('terms') ? 0 : 1}

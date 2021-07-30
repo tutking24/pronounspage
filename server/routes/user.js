@@ -72,7 +72,7 @@ const defaultUsername = async (db, email) => {
             .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_')
     );
 
-    const conflicts = (await db.all(SQL`SELECT usernameNorm FROM users WHERE usernameNorm LIKE ${normalise(base) + '%'}`))
+    const conflicts = (await db.all(SQL`SELECT usernameNorm FROM usernames WHERE usernameNorm LIKE ${normalise(base) + '%'}`))
         .map(({usernameNorm}) => usernameNorm);
 
     let c = 0;
@@ -90,13 +90,12 @@ const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
     if (!dbUser) {
         dbUser = {
             id: ulid(),
-            username: await defaultUsername(db, user.name || user.email),
             email: normalise(user.email),
             roles: '',
             avatarSource: avatarSource,
         }
-        await db.get(SQL`INSERT INTO users(id, username, usernameNorm, email, roles, avatarSource)
-            VALUES (${dbUser.id}, ${dbUser.username}, ${normalise(dbUser.username)}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
+        await db.get(SQL`INSERT INTO users(id, email, roles, avatarSource)
+            VALUES (${dbUser.id}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
     }
 
     dbUser.avatar = await avatar(db, dbUser);
@@ -162,8 +161,7 @@ const reloadUser = async (req, res, next) => {
         return;
     }
 
-    if (req.user.username !== dbUser.username
-        || req.user.email !== dbUser.email
+    if (req.user.email !== dbUser.email
         || req.user.roles !== dbUser.roles
         || req.user.avatarSource !== dbUser.avatarSource
         || req.user.bannedReason !== dbUser.bannedReason
@@ -199,7 +197,11 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
     if (isEmail) {
         user = await req.db.get(SQL`SELECT * FROM users WHERE email = ${normalise(usernameOrEmail)}`);
     } else {
-        user = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(usernameOrEmail)}`);
+        user = await req.db.get(SQL`
+            SELECT u.* FROM users u
+            LEFT JOIN usernames n ON u.id = n.userId
+            WHERE n.usernameNorm = ${normalise(usernameOrEmail)}
+        `);
     }
 
     if (!user && !isEmail) {
@@ -207,7 +209,7 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
     }
 
     const payload = {
-        username: isEmail ? (user ? user.username : null) : usernameOrEmail,
+        // TODO? username: isEmail ? (user ? user.username : null) : usernameOrEmail,
         email: isEmail ? normalise(usernameOrEmail) : user.email,
         code: isTest ? '999999' : makeId(6, '0123456789'),
     }
@@ -263,6 +265,7 @@ router.post('/user/validate', handleErrorAsync(async (req, res) => {
     return res.json({token: await issueAuthentication(req.db, req.rawUser)});
 }));
 
+// TODO
 router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});

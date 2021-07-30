@@ -31,7 +31,7 @@ const addVersions = async (req, nouns) => {
         .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + k.split('#')[0] + `'`)));
 
     const sources = await req.db.all(SQL`
-        SELECT s.*, u.username AS submitter FROM sources s
+        SELECT s.*, u.id AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale == ${global.config.locale}
         AND s.deleted = 0

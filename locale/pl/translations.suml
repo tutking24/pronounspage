@@ -950,6 +950,16 @@ user:
         refresh: 'Odśwież'
         disconnect: 'Rozłącz'
         disconnectConfirm: 'Czy na pewno chcesz usunąć to połączenie? (Zawsze możesz logować się przez maila %email%)'
+    usernames:
+        limit:
+            - >
+                W ramach jednego konta możesz założyć wiele wizytówek.
+                Na przykład: jedno dla bliższych znajomych, a drugie oficjalniejsze, do załączenia w stopce służbowego maila.
+                Możesz zająć maksymalnie trzy nazwy, które będą dla osób postronnych wyglądały jak zupełnie niezależne konta.
+            - >
+                Bez limitu natomiast możesz tworzyć powiązane ze sobą wizytówki z ukośnikiem.
+                Na przykład jeśli zajmiesz nazwę <code>@SolarSystem</code>, to możesz tworzyć dowolną liczbę wizytówek takich jak
+                <code>@SolarSystem/Jay</code>, <code>@SolarSystem/Viv</code>, <code>@SolarSystem/Robin</code>, itd.
 
 profile:
     description: 'Opis'

@@ -77,6 +77,10 @@
             </div>
         </div>
 
+        <div class="alert alert-info">
+            <T>user.usernames.limit</T>
+        </div>
+
         <Loading :value="profiles">
             <template v-slot:header>
                 <h3 class="h4"><T>profile.list</T>:</h3>

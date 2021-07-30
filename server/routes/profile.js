@@ -25,10 +25,10 @@ const calcAge = birthday => {
     return parseInt(Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25));
 }
 
-const fetchProfiles = async (db, username, self, isAdmin) => {
+const fetchProfiles = async (db, username, isSelf) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.* FROM profiles LEFT JOIN users on users.id == profiles.userId 
-        WHERE usernameNorm = ${normalise(username)}
+        SELECT profiles.* FROM profiles LEFT JOIN usernames on usernames.id == profiles.usernameId 
+        WHERE usernames.usernameNorm = ${normalise(username)}
         ORDER BY profiles.locale
     `);
 
@@ -43,7 +43,7 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
             flags: JSON.parse(profile.flags),
             customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
-            birthday: self ? profile.birthday : undefined,
+            birthday: isSelf ? profile.birthday : undefined,
             teamName: profile.teamName,
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
@@ -96,19 +96,20 @@ const hasAutomatedReports = async (db, id) => {
 const router = Router();
 
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
-    const isSelf = req.user && req.user.username === req.params.username;
-    const isAdmin = req.isGranted('users');
     const user = await req.db.get(SQL`
         SELECT
             users.id,
-            users.username,
             users.email,
             users.avatarSource,
             users.bannedReason,
             users.roles != '' AS team
         FROM users
-        WHERE users.usernameNorm = ${normalise(req.params.username)}
+        LEFT JOIN usernames n ON n.userId = users.id
+        WHERE n.usernameNorm = ${normalise(req.params.username)}
     `);
+
+    const isSelf = req.user && req.user.id === user.id;
+    const isAdmin = req.isGranted('users');
 
     if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
         return res.json({
@@ -132,7 +133,11 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     // TODO just make it a transaction...
-    const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
+    const ids = (await req.db.all(SQL`
+        SELECT * FROM profiles
+        WHERE userId = ${req.user.id}
+          AND locale = ${global.config.locale}
+    `)).map(row => row.id);
     if (ids.length) {
         await req.db.get(SQL`UPDATE profiles
             SET

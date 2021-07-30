@@ -23,7 +23,7 @@ const linkOtherVersions = async (req, sources) => {
     const keys = new Set(sources.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
 
     const otherVersions = await req.db.all(SQL`
-        SELECT s.*, u.username AS submitter FROM sources s
+        SELECT s.*, u.id AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale != ${global.config.locale}
         AND s.deleted = 0
@@ -49,7 +49,7 @@ const router = Router();
 
 router.get('/sources', handleErrorAsync(async (req, res) => {
     let sql = SQL`
-        SELECT s.*, u.username AS submitter FROM sources s
+        SELECT s.*, u.id AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale = ${global.config.locale}
         AND s.deleted = 0
@@ -63,7 +63,7 @@ router.get('/sources', handleErrorAsync(async (req, res) => {
 
 router.get('/sources/:id', handleErrorAsync(async (req, res) => {
     return res.json(await linkOtherVersions(req, await req.db.all(SQL`
-        SELECT s.*, u.username AS submitter FROM sources s
+        SELECT s.*, u.id AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale = ${global.config.locale}
         AND s.deleted = 0

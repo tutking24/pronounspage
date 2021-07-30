@@ -26,7 +26,7 @@ const router = Router();
 router.get('/inclusive', handleErrorAsync(async (req, res) => {
     return res.json(await caches.inclusive.fetch(async () => {
         return sortClearedLinkedText(await req.db.all(SQL`
-            SELECT i.*, u.username AS author FROM inclusive i
+            SELECT i.*, u.id AS author FROM inclusive i
             LEFT JOIN users u ON i.author_id = u.id
             WHERE i.locale = ${global.config.locale}
             AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}
@@ -38,7 +38,7 @@ router.get('/inclusive', handleErrorAsync(async (req, res) => {
 router.get('/inclusive/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
     return res.json(sortClearedLinkedText(await req.db.all(SQL`
-        SELECT i.*, u.username AS author FROM inclusive i
+        SELECT i.*, u.id AS author FROM inclusive i
         LEFT JOIN users u ON i.author_id = u.id
         WHERE i.locale = ${global.config.locale}
         AND i.approved >= ${req.isGranted('inclusive') ? 0 : 1}

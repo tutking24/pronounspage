@@ -13,9 +13,10 @@ const router = Router();
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
     return res.json(await caches.admins.fetch(async () => {
         const admins = await req.db.all(SQL`
-            SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
+            SELECT n.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
             FROM users u
-                     LEFT JOIN profiles p ON p.userId = u.id
+                LEFT JOIN usernames n ON u.id = n.userId
+                LEFT JOIN profiles p ON p.usernameId = n.id
             WHERE p.teamName IS NOT NULL
               AND p.teamName != ''
             ORDER BY RANDOM()
@@ -49,9 +50,10 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
 router.get('/admin/list/footer', handleErrorAsync(async (req, res) => {
     return res.json(shuffle(await caches.adminsFooter.fetch(async () => {
         const fromDb = await req.db.all(SQL`
-            SELECT u.username, p.footerName, p.footerAreas, p.locale
+            SELECT n.username, p.footerName, p.footerAreas, p.locale
             FROM users u
-            LEFT JOIN profiles p ON p.userId = u.id
+                LEFT JOIN usernames n ON u.id = n.userId
+                LEFT JOIN profiles p ON p.usernameId = n.id
             WHERE p.locale = ${global.config.locale}
               AND p.footerName IS NOT NULL AND p.footerName != ''
               AND p.footerAreas IS NOT NULL AND p.footerAreas != ''
@@ -71,9 +73,10 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     return res.json({});
 
     const users = await req.db.all(SQL`
-        SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
+        SELECT u.id, n.username, u.email, u.roles, u.avatarSource, p.locale
         FROM users u
-        LEFT JOIN profiles p ON p.userId = u.id
+            LEFT JOIN usernames n ON n.userId = u.id
+            LEFT JOIN profiles p ON p.usernameId = u.id
         ORDER BY u.id DESC
     `);
 
@@ -83,6 +86,7 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
         AND (validUntil IS NULL OR validUntil > ${now()})
     `));
 
+    // TODO
     const groupedUsers = {};
     for (let user of users) {
         if (groupedUsers[user.id] === undefined) {
@@ -156,10 +160,10 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
     }
 
     return res.json(await req.db.all(SQL`
-        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
+        SELECT reports.id, sus.username AS susUsername, reports.comment, reports.isAutomatic, reports.isHandled
         FROM reports
-        LEFT JOIN users sus ON reports.userId = sus.id
-        LEFT JOIN users reporter ON reports.reporterId = reporter.id
+        LEFT JOIN profiles susProfile ON reports.profileId = susProfile.id
+            LEFT JOIN usernames sus on susProfile.usernameId = sus.id
         ORDER BY reports.isHandled ASC, reports.id ASC
     `));
 }));
