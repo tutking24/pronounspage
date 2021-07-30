@@ -357,7 +357,7 @@ user:
 
                 Wenn du diesen Code nicht angefordert hast, ignoriere diese Meldung einfach.
         why: >
-            Mit der Registrierung kannst du deine Karten verwalten ({/@andrea=wie diese}).
+            Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@andrea=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
     code:
         action: 'Validieren'
@@ -391,7 +391,7 @@ profile:
     description: 'Beschreibung'
     names: 'Namen'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. “sier” or “sie/ihr”) oder einen Link (z.B. “https://de.pronouns.page/dey”) oder vier benutzerdefinierten Formen(z.B. “xier/xies/xiem/xien”).'
+    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. “sier” or “sie/ihr”) oder einen Link (z.B. “https://de.pronouns.page/dey”) oder vier benutzerdefinierten Formen (z.B. “xier/xies/xiem/xien”).'
     pronounsNotFound: 'Wir können keinen Link zu diesem Pronomen finden!'
     words: 'Wörter'
     birthday: 'Alter'
@@ -404,15 +404,15 @@ profile:
     linksCake: 'Wir empfehlen Verlinkung zu'
     column: 'Spalte'
 
-    list: 'Deine Karten'
-    init: 'Eine Karte erstellen'
+    list: 'Deine Visitenkarten'
+    init: 'Eine Visitenkarte erstellen'
     show: 'Anzeigen'
     edit: 'Bearbeiten'
     delete: 'Löschen'
-    deleteConfirm: 'Bist du sicher, dass du diese Karte löschen willst?'
+    deleteConfirm: 'Bist du sicher, dass du diese Visitenkarte löschen willst?'
     editor:
-        header: 'Karten-Editor'
-        save: 'Karte speichern'
+        header: 'Visitenkarte-Editor'
+        save: 'Visitenkarte speichern'
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
@@ -420,15 +420,15 @@ profile:
         no: 'Nope'
 
     banner: >
-        Du kannst auch unsere Webseite nutzen, um eine Karte zu erstellen {/@andrea=wie diese},
+        Du kannst auch unsere Webseite nutzen, um eine Visitenkarte zu erstellen {/@andrea=wie diese},
         die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter etc enthält.
         Diese kannst du dann in deine Biografie oder Email-Signatur verlinken.
         Erstelle einfach hier einen Account: {/account=hier}.
-    bannerButton: 'Erstelle eine Karte'
+    bannerButton: 'Erstelle eine Visitenkarte'
     card:
-        link: 'Bild Karte'
+        link: 'Bild Visitenkarte'
         generating: 'Generatierung läuft…'
-    empty: 'Diese Person hat noch keine Karte erstellt.'
+    empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
 
 share: 'Teilen'
 
