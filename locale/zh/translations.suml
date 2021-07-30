@@ -90,7 +90,7 @@ sources:
         Series: '電視劇'
         Song: '音樂'
         Poetry: '詩歌'
-        Game: 'Game' # TODO
+        Game: '遊戲'
         Other: '其他'
     submit:
         header: '提交一個示例'
@@ -301,7 +301,7 @@ links:
     headerLong: '額外鏈接'
     recommended: '建議'
 
-    blog: 'Blog'  # TODO
+    blog: '博客'
     media: 'Pronouns.page在傳媒'
 
     social: '社交媒體'
@@ -421,7 +421,7 @@ profile:
     card:
         link: '名片圖片'
         generating: '生成中……'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+    empty: '此用戶還沒有創造任何名片'
     loginRequired: '{/account=Log in} to submit an entry' # TODO
 
 share: '這裡'
@@ -437,10 +437,10 @@ crud:
     filterLong: '篩選清單…'
     search: '搜索'
     author: '添加人'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: '更改保存成功'
 
 footer:
-    # TODO source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
+    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh=CC BY-NC-SA 4.0}
@@ -509,22 +509,20 @@ mode:
     dark: '黑暗模式'
     light: '明亮模式'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terinos=Terms of Service}:'
+    reason: '封禁原因'
+    visible: '（用戶可以看見這個）'
+    action: '封禁用戶'
+    confirm: '您確定要封禁@%username%嗎'
+    header: '您被封禁了。你的資料不會對任何人顯示。'
+    banned: '被封禁'
+    termsIntro: '根據我們的{/terms=服務條款}：'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: '舉報濫用'
+    comment: '請簡述資料有什麼問題'
+    confirm: '您確定要舉報@%username%嗎？'
+    sent: '您的舉報已被傳送。感謝您的幫助！'
 
 flags:
     Abrosexual: '嫩性戀'
