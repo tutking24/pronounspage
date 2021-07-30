@@ -719,10 +719,11 @@ export class InclusiveEntry {
 }
 
 export class TermsEntry {
-    constructor({id, term, original, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null}) {
+    constructor({id, term, original, key = null, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null, locale, versions = []}) {
         this.id = id;
         this.term = term.split('|');
         this.original = original ? original.split('|') : [];
+        this.key = key || null;
         this.definition = definition;
         this.author = author;
         this.categories = category ? category.split(',') : [];
@@ -730,6 +731,8 @@ export class TermsEntry {
         this.images = images ? images.split(',') : [];
         this.approved = !!approved;
         this.base = base_id;
+        this.locale = locale;
+        this.versions = versions.map(v => new TermsEntry(v));
     }
 
     matches(filter) {

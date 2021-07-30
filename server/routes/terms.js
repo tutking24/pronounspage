@@ -21,30 +21,64 @@ const approve = async (db, id) => {
     await caches.terms.invalidate();
 }
 
+const linkOtherVersions = async (req, terms) => {
+    const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
+
+    const otherVersions = await req.db.all(SQL`
+        SELECT t.*, u.username AS author FROM terms t
+        LEFT JOIN users u ON t.author_id = u.id
+        WHERE t.locale != ${global.config.locale}
+        AND t.deleted = 0
+        AND t.approved >= ${req.isGranted('terms') ? 0 : 1}
+        AND t.key IN (`.append([...keys].join(',')).append(SQL`)
+    `));
+
+    const otherVersionsMap = {};
+    otherVersions.forEach(version => {
+        if (otherVersionsMap[version.key] === undefined) {
+            otherVersionsMap[version.key] = [];
+        }
+        otherVersionsMap[version.key].push(version);
+    });
+
+    return terms.map(t => {
+        t.versions = t.key ? otherVersionsMap[t.key] || [] : [];
+        return t;
+    });
+};
+
 const router = Router();
 
 router.get('/terms', handleErrorAsync(async (req, res) => {
     return res.json(await caches.terms.fetch(async () => {
-        return sortClearedLinkedText(await req.db.all(SQL`
-            SELECT i.*, u.username AS author FROM terms i
-            LEFT JOIN users u ON i.author_id = u.id
-            WHERE i.locale = ${global.config.locale}
-            AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
-            AND i.deleted = 0
-        `), 'term');
+        return await linkOtherVersions(
+            req,
+            sortClearedLinkedText(await req.db.all(SQL`
+                SELECT i.*, u.username AS author FROM terms i
+                LEFT JOIN users u ON i.author_id = u.id
+                WHERE i.locale = ${global.config.locale}
+                AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
+                AND i.deleted = 0
+            `), 'term'),
+        );
     }, !req.isGranted('terms')));
 }));
 
 router.get('/terms/search/:term', handleErrorAsync(async (req, res) => {
     const term = '%' + req.params.term + '%';
-    return res.json(sortClearedLinkedText(await req.db.all(SQL`
-        SELECT i.*, u.username AS author FROM terms i
-        LEFT JOIN users u ON i.author_id = u.id
-        WHERE i.locale = ${global.config.locale}
-        AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
-        AND i.deleted = 0
-        AND (i.term like ${term} OR i.original like ${term})
-    `)), 'term');
+    return res.json(
+        await linkOtherVersions(
+            req,
+            sortClearedLinkedText(await req.db.all(SQL`
+                SELECT i.*, u.username AS author FROM terms i
+                LEFT JOIN users u ON i.author_id = u.id
+                WHERE i.locale = ${global.config.locale}
+                AND i.approved >= ${req.isGranted('terms') ? 0 : 1}
+                AND i.deleted = 0
+                AND (i.term like ${term} OR i.original like ${term})
+            `), 'term'),
+        )
+    );
 }));
 
 router.post('/terms/submit', handleErrorAsync(async (req, res) => {
@@ -58,10 +92,10 @@ router.post('/terms/submit', handleErrorAsync(async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO terms (id, term, original, definition, approved, base_id, locale, author_id, category, flags, images)
+        INSERT INTO terms (id, term, original, key, definition, approved, base_id, locale, author_id, category, flags, images)
         VALUES (
             ${id},
-            ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${req.body.definition},
+            ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${req.body.key || null}, ${req.body.definition},
             0, ${req.body.base}, ${global.config.locale}, ${req.user ? req.user.id : null},
             ${req.body.categories.join(',')}, ${JSON.stringify(req.body.flags)}, ${req.body.images}
         )

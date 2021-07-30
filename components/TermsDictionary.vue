@@ -39,53 +39,12 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td class="cell-wide">
-                    <p>
-                        <strong><LinkedTextMultiple :texts="s.el.term" noicons/></strong>
-                        <span v-if="s.el.original.length">(<LinkedTextMultiple :texts="s.el.original" glue="; " noicons/>)</span>
-                        – <LinkedText :text="s.el.definition" noicons/>
-                        <template v-if="s.el.category">
-                            <br/>
-                            <span class="badge bg-primary text-white">
-                                {{s.el.category}}
-                            </span>
-                        </template>
-                    </p>
-
-                    <ul class="list-inline">
-                        <li v-for="category in s.el.categories" class="list-inline-item">
-                            <button class="badge bg-primary text-white" @click="filter = ':' + category">
-                                {{category}}
-                            </button>
-                        </li>
-                    </ul>
-
-                    <p v-if="s.el.flags.length || s.el.images.length" class="text-center">
-                        <img v-for="flag in s.el.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
-                        <img v-for="image in s.el.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
-                    </p>
+                    <Term :term="s.el" categoryLink flags versions/>
 
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
-                        <p>
-                            <strong><LinkedTextMultiple :texts="entries[s.el.base].term" noicons/></strong>
-                            <span v-if="entries[s.el.base].original.length">(<LinkedTextMultiple :texts="entries[s.el.base].original" glue="; " noicons/>)</span>
-                            – <LinkedText :text="entries[s.el.base].definition" noicons/>
-                            <template v-if="entries[s.el.base].category">
-                                <br/>
-                                <span class="badge bg-primary text-white">
-                                    {{entries[s.el.base].category}}
-                                </span>
-                            </template>
-                        </p>
-
-                        <ul class="list-inline">
-                            <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
-                            <span class="badge bg-primary text-white">
-                                {{category}}
-                            </span>
-                            </li>
-                        </ul>
+                        <Term :term="entries[s.el.base]" flags/>
                     </div>
                 </td>
                 <td>
