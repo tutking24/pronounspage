@@ -4,7 +4,7 @@ description: 'Usage examples of personal pronouns and gender neutral language.'
 home:
     link: 'הײמזײַטל'
     header: 'פּראָנאָמען'
-    headerLong: 'List of pronouns'
+    headerLong: 'ליסטע פֿון פּראָנאָמען'
     why: 'What''s the deal with pronouns?'
     about:
         - >
@@ -30,7 +30,7 @@ home:
             We introduce ourselves with a name, but not pronouns. Let's change that!
     pronouns: 'List of popular pronouns'
     generator:
-        header: 'Generator'
+        header: 'גענעראַטאָר'
         description: >
             You can also use this tool where you out the blanks in sentences
             and generate a link ready to share with others.
@@ -42,7 +42,7 @@ home:
     whatisit: 'What''s the deal with pronouns?'
     # TODO
     mission:
-        header: 'Our mission'
+        header: 'אונדזער מיסיע'
         summary: 'We fight for freedom, respect and inclusiveness in language.'
         freedom: >
             <strong>Freedom</strong>
@@ -58,12 +58,12 @@ home:
 
 pronouns:
     examples: 'Example usage in sentences'
-    plural: 'Plural'
+    plural: 'מערצאָל'
     intro: 'מײַנע פּראָנאָמען זענען'
-    normative: 'Normative'
+    normative: 'נאָרמאַטיװ'
     alt:
         button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
+        header: 'אױ֜סבײַטעװדיקע פֿאָרמען'
         raw: 'interchangeable'
     generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
     any:
@@ -92,7 +92,7 @@ sources:
         Series: 'Series'
         Song: 'Music'
         Poetry: 'Poetry'
-        Game: 'Game' # TODO
+        Game: 'Game'
         Other: 'Other'
     submit:
         header: 'Submit an example to be added'
@@ -167,10 +167,10 @@ nouns:
     pluralShort: 'pl.'
 
     nouns:
-        header: 'Neutral nouns'
+        header: 'נײטראַלע סובסטאַנטיװן'
 
     terms:
-        header: 'Terminologia'
+        header: 'טערמינאָלאָגיע'
         headerLong: 'Słownik terminologii queerowej'
         info:
             - >
@@ -538,8 +538,8 @@ error:
     generic: 'Something went wrong, please try again…'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'טונקלמאָדוס' 
+    light: 'ליכטמאָדוס'
 
 # TODO
 ban:
@@ -571,8 +571,8 @@ flags:
     Archaeopronouns: 'אַרכעאָפּראָנאָמען'
     Aroace: 'אַראָ-אַס'
     Aromantic: 'אַראָמאַנטיש'
-    Aromantic_Allosexual: 'אַראָמאַנטיש אַלאָסעקסועל'
-    Asexual: 'אָנחשקדיק (אַסעקסועל)'
+    Aromantic_Allosexual: 'אַלאָראָמאַנטיש אָנחשקדיק'
+    Asexual: 'אָנחשקדיק'
     Autigender: 'אױטימיניק'
     Bear: 'בער'
     Bicurious: 'בי-נײַגעריק'
@@ -582,7 +582,7 @@ flags:
     Butch: 'בוטש'
     Ceteroromantic: 'צעטעראָראָמאַנטיש'
     Ceterosexual: 'צעטעראָסעקסועל'
-    Cis_Ally: 'ציס אַליאַנט'
+    Cis_Ally: 'סטַאטיש־מיניק אַליאַנט'
     Demiboy: 'האַלבייִנגל'
     Demigender: 'האַלבמיניק'
     Demigirl: 'האַלבמיידל'
@@ -608,7 +608,7 @@ flags:
     Homoflexible: 'האָמאָ-בייגעװדיק'
     Homoromantic: 'האָמאָראָמאַנטיש'
     Intersex: 'אנדרוגינוס'
-    LGBTQ: 'לגבט"ק'
+    LGBTQ: 'לגבט׳׳ק'
     Leather_Pride: 'לעדערן שטאָלץ'
     Lesbian: 'לעזביאַנקע'
     Lesbiromantic: 'לעזביראָמאַנטיש'
@@ -621,9 +621,9 @@ flags:
     Omniromantic: 'אָמניראָמאַנטיש'
     Omnisexual: 'אָמניסעקסועל'
     Oriented_Aroace: 'אָריענטירט אַראָ-אַס'
-    Pangender: 'פּאַנמיניק'
-    Panromantic: 'פּאַנראָמאַנטיש'
-    Pansexual: 'פּאַנסעקסועל'
+    Pangender: 'אַלצמיניק'
+    Panromantic: 'אַלצראָמאַנטיש'
+    Pansexual: 'אַלצסעקסועל'
     Polyamorous: 'פּאָליאַמאָריש'
     Polyromantic: 'פּאָליראָמאַנטיש'
     Polysexual: 'פּאָליסעקסועל'
@@ -636,9 +636,9 @@ flags:
     Quoiromantic: 'קוויראָמאַנטיש'
     Sapphic: 'סאַפֿיש'
     Sexuality_Questioning: 'אָריענטירונג-פֿרעגנדיק'
-    Straight_Ally: 'העטעראָ אַליאַנט'
+    Straight_Ally: 'גלײַכער אַליאַנט'
     Toric: 'טאָריש'
-    Transfeminine: 'טראַנספֿעמינין'
+    Transfeminine: 'טראַנספֿרױיש'
     Transgender: 'טראַנסמיניק'
     Transmasculine: 'טראַנסמאַסקולין'
     Transneutral: 'טראַנסנײטראַל'
@@ -646,5 +646,5 @@ flags:
     Trixic: 'טריקסיש'
     Tumtum: 'טומטום‎'
     Two_Spirit: 'צװײ נשמות'
-    Xenogender: 'קסענאָמיניק'
+    Xenogender: 'פֿרעמדמיניק'
 
