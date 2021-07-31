@@ -98,13 +98,13 @@ const router = Router();
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     const user = await req.db.get(SQL`
         SELECT
-            users.id,
-            users.email,
-            users.avatarSource,
-            users.bannedReason,
-            users.roles != '' AS team
-        FROM users
-        LEFT JOIN usernames n ON n.userId = users.id
+            u.id,
+            u.email,
+            n.avatarSource,
+            u.bannedReason,
+            u.roles != '' AS team
+        FROM usernames n
+        LEFT JOIN users u ON n.userId = u.id
         WHERE n.usernameNorm = ${normalise(req.params.username)}
     `);
 

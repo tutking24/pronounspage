@@ -467,6 +467,17 @@ user:
         refresh: 'Refresh'
         disconnect: 'Disconnect'
         disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+    usernames:
+        limit:
+            - >
+                Within one account you can create multiple cards.
+                For example: one for the close friends, and the other more official, to be included in your work mail signature.
+                You can claim a <strong>maximum of three usernames</strong>, which will seem for the public as if they're completely independent accounts.
+            - >
+                There is no limit on creating cards that are related by using a slash.
+                For example, if you claim the username <code>@SolarSystem</code>,
+                you're able to create an unlimited number of cards like
+                <code>@SolarSystem/Jay</code>, <code>@SolarSystem/Viv</code>, <code>@SolarSystem/Robin</code>, etc.
 
 profile:
     description: 'Description'

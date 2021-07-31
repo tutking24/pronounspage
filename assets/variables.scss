@@ -10,6 +10,10 @@ $link-hover-decoration: underline;
 $header-height: 80px;
 $header-margin: $header-height + 36px;
 
+$border-radius:    .3rem !default;
+$border-radius-sm: .25rem !default;
+$border-radius-lg: .35rem !default;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";

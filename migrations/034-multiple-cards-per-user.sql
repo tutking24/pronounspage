@@ -5,6 +5,7 @@ CREATE TABLE usernames (
    userId TEXT NOT NULL,
    username TEXT NOT NULL,
    usernameNorm TEXT NOT NULL,
+   avatarSource TEXT,
 
    FOREIGN KEY(userId) REFERENCES users(id)
 );
@@ -12,8 +13,8 @@ CREATE TABLE usernames (
 CREATE UNIQUE INDEX "usernames_username" ON "usernames" ("username");
 CREATE UNIQUE INDEX "usernames_usernameNorm" ON "usernames" ("usernameNorm");
 
-INSERT INTO usernames (id, userId, username, usernameNorm)
-SELECT u.id, u.id, u.username, u.usernameNorm
+INSERT INTO usernames (id, userId, username, usernameNorm, avatarSource)
+SELECT u.id, u.id, u.username, u.usernameNorm, u.avatarSource
 FROM users u;
 
 PRAGMA foreign_keys=off;
@@ -47,10 +48,9 @@ CREATE TABLE users (
     id TEXT NOT NULL PRIMARY KEY,
     email TEXT NOT NULL UNIQUE,
     roles TEXT NOT NULL,
-    avatarSource TEXT,
     bannedReason TEXT NULL
 );
-INSERT INTO users SELECT id, email, roles, avatarSource, bannedReason FROM _users_old;
+INSERT INTO users SELECT id, email, roles, bannedReason FROM _users_old;
 DROP TABLE _users_old;
 
 ALTER TABLE reports RENAME TO _reports_old;

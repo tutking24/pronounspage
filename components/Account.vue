@@ -1,105 +1,119 @@
 <template>
     <section>
-        <div class="card mb-3">
-            <div class="card-body d-flex flex-column flex-md-row">
-                <div class="mx-2 text-center">
+        <ul class="list-group">
+            <li class="list-group-item profile-current">
+                <form @submit.prevent="changeEmail" :disabled="savingEmail" class="my-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <span class="me-3 text-nowrap">
+                        <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/envelope.svg" class="icon invertible"/>
+                        <T>user.account.changeEmail.header</T>
+                    </span>
+                    <div v-if="!changeEmailAuthId" class="input-group w-lg-50">
+                        <input type="email" class="form-control" v-model="email" required/>
+                        <button class="btn btn-outline-primary">
+                            <T>user.account.changeEmail.action</T>
+                        </button>
+                    </div>
+                    <div v-else class="input-group w-lg-50">
+                        <input type="text" class="form-control text-center" v-model="code"
+                               placeholder="000000" autofocus required minlength="0" maxlength="6"
+                               inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                               ref="code"
+                        />
+                        <button class="btn btn-outline-primary">
+                            <Icon v="key"/>
+                            <T>user.code.action</T>
+                        </button>
+                    </div>
+                </form>
+
+                <Alert type="danger" :message="error"/>
+
+                <div v-if="message" class="alert alert-success">
                     <p class="mb-0">
-                        <Avatar :user="$user()"/>
-                    </p>
-                    <div class="mb-2">
-                        <div v-if="$user().avatarSource === 'gravatar'" class="mt-3">
-                            <a href="https://gravatar.com" target="_blank" rel="noopener" class="small">
-                                <Icon v="external-link"/>
-                                <T>user.avatar.change</T>
-                                Gravatar
-                            </a>
-                        </div>
-                        <div v-else class="mt-3">
-                            Gravatar:
-                            <a href="#" @click.prevent="setAvatar('gravatar')">
-                                <Avatar :user="$user()" :src="gravatar($user())" dsize="2rem"/>
-                            </a>
-                        </div>
-                        <div v-if="$user().avatarSource">
-                            <a href="#" @click.prevent="setAvatar(null)" class="small">
-                                <Icon v="trash"/>
-                                <T>crud.remove</T>
-                            </a>
-                        </div>
-                        <ImageUploader small @uploaded="uploaded"/>
-                    </div>
-                    <p v-if="$isGranted('panel') || $isGranted('users')">
-                        <nuxt-link to="/admin" class="badge bg-primary text-white"><T>user.account.admin</T></nuxt-link>
+                        <Icon :v="messageIcon"/>
+                        <T>{{message}}</T>
                     </p>
                 </div>
-                <div class="mx-2 flex-grow-1">
-                    <Alert type="danger" :message="error"/>
-
-                    <div v-if="message" class="alert alert-success">
-                        <p class="mb-0 narrow-message">
-                            <Icon :v="messageIcon"/>
-                            <T>{{message}}</T>
-                        </p>
-                    </div>
-
-                    <form @submit.prevent="changeUsername" :disabled="savingUsername">
-                        <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" v-model="username"
-                                   required minlength="4" maxlength="16"/>
-                            <button class="btn btn-outline-primary">
-                                <T>user.account.changeUsername.action</T>
-                            </button>
-                        </div>
-                    </form>
-
-                    <form @submit.prevent="changeEmail" :disabled="savingEmail">
-                        <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
-                        <div v-if="!changeEmailAuthId" class="input-group mb-3">
-                            <input type="email" class="form-control" v-model="email" required/>
-                            <button class="btn btn-outline-primary">
-                                <T>user.account.changeEmail.action</T>
-                            </button>
-                        </div>
-                        <div v-else class="input-group mb-3">
-                            <input type="text" class="form-control text-center" v-model="code"
-                                   placeholder="000000" autofocus required minlength="0" maxlength="6"
-                                   inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
-                                   ref="code"
-                            />
-                            <button class="btn btn-outline-primary">
-                                <Icon v="key"/>
-                                <T>user.code.action</T>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="alert alert-info">
-            <T>user.usernames.limit</T>
-        </div>
-
-        <Loading :value="profiles">
-            <template v-slot:header>
-                <h3 class="h4"><T>profile.list</T>:</h3>
-            </template>
-            <ul v-if="profiles !== undefined" class="list-group">
-                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
-                    <ProfileOverview :username="username" :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
-                </li>
-            </ul>
-        </Loading>
-
-        <Loading :value="socialConnections">
-            <template v-slot:header>
-                <h3 class="h4"><T>user.socialConnection.list</T>:</h3>
-            </template>
-            <ul v-if="socialConnections !== undefined" class="list-group">
+            </li>
+            <li v-if="socialConnections === undefined" class="list-group-item text-center">
+                <Spinner size="5rem"/>
+            </li>
+            <template v-else>
                 <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', socialConnections[provider] !== undefined ? 'profile-current' : '']">
                     <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]"
                                       @disconnected="socialConnections[provider] = undefined" @setAvatar="setAvatar"/>
+                </li>
+            </template>
+        </ul>
+
+        <Loading :value="profiles">
+            <template v-slot:header>
+                <h3 class="h4"><T>profile.list</T></h3>
+                <small>
+                    <T>user.usernames.limit</T>
+                </small>
+                <ul class="nav nav-tabs">
+                    <li v-for="un in ['andrea', 'testing', 'Avris', 'Avris/test']" class="nav-item">
+                        <button :class="['nav-link', un === selectedUsername ? 'active' : '']" @click="selectedUsername = un">
+                            <Avatar :user="un === 'andrea' ? $user() : {}" dsize="1.8rem"/>
+                            {{ un }}
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link">
+                            <Icon v="plus-circle"/>
+                        </button>
+                    </li>
+                </ul>
+            </template>
+            <ul v-if="profiles !== undefined" class="list-group rounded-top-0">
+                <li class="list-group-item border-top-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card-body d-flex">
+                                <p class="mb-0 ms-1 me-3">
+                                    <Avatar :user="$user()"/>
+                                </p>
+                                <div class="mb-2">
+                                    <div v-if="$user().avatarSource === 'gravatar'" class="mt-2">
+                                        <a href="https://gravatar.com" target="_blank" rel="noopener" class="small">
+                                            <Icon v="external-link"/>
+                                            <T>user.avatar.change</T>
+                                            Gravatar
+                                        </a>
+                                    </div>
+                                    <div v-else class="mt-3">
+                                        Gravatar:
+                                        <a href="#" @click.prevent="setAvatar('gravatar')">
+                                            <Avatar :user="$user()" :src="gravatar($user())" dsize="2rem"/>
+                                        </a>
+                                    </div>
+                                    <div v-if="$user().avatarSource">
+                                        <a href="#" @click.prevent="setAvatar(null)" class="small">
+                                            <Icon v="trash"/>
+                                            <T>crud.remove</T>
+                                        </a>
+                                    </div>
+                                    <ImageUploader small @uploaded="uploaded"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <form @submit.prevent="changeUsername" :disabled="savingUsername" class="mt-lg-4">
+                                <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" v-model="username"
+                                           required minlength="4" maxlength="16"/>
+                                    <button class="btn btn-outline-primary">
+                                        <T>user.account.changeUsername.action</T>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
+                    <ProfileOverview :username="username" :profile="profiles[locale]" :locale="locale" @update="setProfiles"/>
                 </li>
             </ul>
         </Loading>
@@ -144,6 +158,8 @@
                 savingEmail: false,
 
                 gravatar,
+
+                selectedUsername: 'andrea',  // TODO
             }
         },
         async mounted() {
@@ -257,5 +273,10 @@
 
     .narrow-message {
         max-width: 56ch;
+    }
+
+    .rounded-top-0 {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
     }
 </style>

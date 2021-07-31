@@ -232,10 +232,10 @@
                 if (this.config.user.enabled) {
                     links.push({
                         link: '/' + this.config.user.route,
-                        icon: 'user',
-                        text: this.user ? '@' + this.user.username : this.$t('user.header'),
-                        textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
-                        extra: ['/editor', this.$user() ? '/@' + this.$user().username : null],
+                        icon: this.user ? 'user' : 'sign-in-alt',
+                        text: this.user ? this.$t('user.headerLong') : this.$t('user.login.action'),
+                        textLong: this.user ? this.$t('user.headerLong') : this.$t('user.login.action'),
+                        extra: ['/editor'],
                     });
                 }
 

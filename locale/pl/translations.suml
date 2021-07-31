@@ -910,7 +910,7 @@ user:
     headerLong: 'Twoje konto'
     tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
     login:
-        placeholder: 'Email (lub nazwa użytkownika, jeśli już posiadasz konto)'
+        placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
         action: 'Zaloguj'
         emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
         userNotFound: 'Użytkownik nie został znaleziony.'
@@ -928,10 +928,10 @@ user:
         invalid: 'Kod nieprawidłowy.'
     account:
         changeUsername:
-            header: 'Nazwa użytkownika'
+            header: 'Nazwa użytkownicza'
             action: 'Zmień'
-            invalid: 'Nazwa użytkownika musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
-            taken: 'Ta nazwa użytkownika jest zajęta.'
+            invalid: 'Nazwa użytkownicza musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
+            taken: 'Ta nazwa użytkownicza jest zajęta.'
         changeEmail:
             header: 'Adres email'
             action: 'Zmień'
@@ -955,7 +955,7 @@ user:
             - >
                 W ramach jednego konta możesz założyć wiele wizytówek.
                 Na przykład: jedno dla bliższych znajomych, a drugie oficjalniejsze, do załączenia w stopce służbowego maila.
-                Możesz zająć maksymalnie trzy nazwy, które będą dla osób postronnych wyglądały jak zupełnie niezależne konta.
+                Możesz zająć <strong>maksymalnie trzy nazwy</strong>, które będą dla osób postronnych wyglądały jak zupełnie niezależne konta.
             - >
                 Bez limitu natomiast możesz tworzyć powiązane ze sobą wizytówki z ukośnikiem.
                 Na przykład jeśli zajmiesz nazwę <code>@SolarSystem</code>, to możesz tworzyć dowolną liczbę wizytówek takich jak

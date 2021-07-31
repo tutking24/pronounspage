@@ -85,11 +85,12 @@ export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
 }
 
 export const fallbackAvatar = (user, size = 240) => {
-    return `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+    // TODO return `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+    return `/avatar.png`;
 }
 
 export const gravatar = (user, size = 240) => {
-    return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallbackAvatar(user, size))}&s=${size}`;
+    return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent()}&s=${size}`;
 }
 
 export const dictToList = dict => {

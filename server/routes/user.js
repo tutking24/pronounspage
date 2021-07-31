@@ -92,10 +92,9 @@ const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
             id: ulid(),
             email: normalise(user.email),
             roles: '',
-            avatarSource: avatarSource,
         }
-        await db.get(SQL`INSERT INTO users(id, email, roles, avatarSource)
-            VALUES (${dbUser.id}, ${dbUser.email}, ${dbUser.roles}, ${dbUser.avatarSource})`)
+        await db.get(SQL`INSERT INTO users(id, email, roles)
+            VALUES (${dbUser.id}, ${dbUser.email}, ${dbUser.roles})`)
     }
 
     dbUser.avatar = await avatar(db, dbUser);
@@ -163,13 +162,11 @@ const reloadUser = async (req, res, next) => {
 
     if (req.user.email !== dbUser.email
         || req.user.roles !== dbUser.roles
-        || req.user.avatarSource !== dbUser.avatarSource
         || req.user.bannedReason !== dbUser.bannedReason
     ) {
         const newUser = {
             ...dbUser,
             authenticated: true,
-            avatar: await avatar(req.db, dbUser),
         };
         const token = jwt.sign(newUser);
         res.cookie('token', token, cookieSettings);
@@ -439,10 +436,10 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
     }
 
     await req.db.get(SQL`
-        UPDATE users
+        UPDATE usernames
         SET avatarSource = ${req.body.source || null}
         WHERE id = ${req.user.id}
-    `)
+    `) // TODO
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
 }));

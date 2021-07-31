@@ -1,5 +1,5 @@
 <template>
-    <img :src="src || user.avatar || (user.avatarSource === 'gravatar' ? gravatar(user, size) : fallbackAvatar(user, size))" alt="" class="rounded-circle"
+    <img :src="src || user.avatar || (user.avatarSource === 'gravatar' ? gravatar(user, size) : fallbackAvatar(user, size))" alt="" class="rounded-circle border"
          :style="`width: 100%;max-width: ${dsize};max-height: ${dsize};`"/>
 </template>
 

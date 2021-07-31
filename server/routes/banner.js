@@ -57,7 +57,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
         if (pronounName.startsWith('@')) {
             const user = await req.db.get(SQL`
-                SELECT u.id, n.username, u.email, u. avatarSource
+                SELECT u.id, n.username, u.email, n.avatarSource
                 FROM users u
                     LEFT JOIN usernames n ON n.userId = u.id
                 WHERE n.usernameNorm=${normalise(pronounName.substring(1))}`);

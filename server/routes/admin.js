@@ -13,7 +13,7 @@ const router = Router();
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
     return res.json(await caches.admins.fetch(async () => {
         const admins = await req.db.all(SQL`
-            SELECT n.username, p.teamName, p.locale, u.id, u.email, u.avatarSource
+            SELECT n.username, p.teamName, p.locale, u.id, u.email, n.avatarSource
             FROM users u
                 LEFT JOIN usernames n ON u.id = n.userId
                 LEFT JOIN profiles p ON p.usernameId = n.id
@@ -73,7 +73,7 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     return res.json({});
 
     const users = await req.db.all(SQL`
-        SELECT u.id, n.username, u.email, u.roles, u.avatarSource, p.locale
+        SELECT u.id, n.username, u.email, u.roles, n.avatarSource, p.locale
         FROM users u
             LEFT JOIN usernames n ON n.userId = u.id
             LEFT JOIN profiles p ON p.usernameId = u.id
