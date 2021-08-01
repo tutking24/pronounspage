@@ -9,21 +9,21 @@ home:
     about:
         - >
             Tout le monde utilise des pronoms personnels. Ce sont les mots qui remplacent un nom d’une personne pour qu'on n'utilise pas son nom chaque fois qu’iel est mentionné·e.
-            La plupart des gens utilise {/il=<<il/lui>>} et {/elle=<<elle/elle>>}, donc on détermine automatiquement lequel utiliser en se basant sur l'apparence.
+            La plupart des gens utilise {/il=«il/lui»} et {/elle=«elle/elle»}, donc on détermine automatiquement lequel utiliser en se basant sur l'apparence.
             Mais ce n’est pas si simple...
         - >
-            Le genre est compliqué. Il y a des gens qui <<n’ont pas l’air>> de leur genre.
+            Le genre est compliqué. Il y a des gens qui «n’ont pas l’air» de leur genre.
             Certaines personnes préfèrent être genrées d’une façon différente que celle qu’on suppose.
-            Certaines personnes ne rentrent pas dans les cases “homme” et “femme” et préfèrent un language plus neutre.
+            Certaines personnes ne rentrent pas dans les cases «homme» et «femme» et préfèrent un language plus neutre.
         - >
             Vous pouvez utiliser cet outil pour partager un lien vers les pronoms que vous utilisez, avec des exemples,
             pour que vous puissiez montrer comment vous préférez être genré·e.
         - >
             Pourquoi est-ce que c’est important? Par simple décence humaine.
-            Vous n’appelleriez pas Ashley “Samantha” simplement parce que vous préférez ce prénom,
-            ou parce qu’elle a “l’air d’une Samantha selon vous”.
-            Ou même si le prénom “Samantha” est <em>bien</em> inscrit sur son certificat de naissance,
-            mais qu’elle le déteste et préfère utiliser  “Ashley.”
+            Vous n’appelleriez pas Louise «Annette» simplement parce que vous préférez ce prénom,
+            ou parce qu’elle a «l’air d’une Annette selon vous».
+            Ou même si le prénom «Annette» est <em>bien</em> inscrit sur son certificat de naissance,
+            mais qu’elle le déteste et préfère utiliser «Louise.»
             Et c’est la même chose avec les pronoms -
             si vous ne voulez pas pas être impoli·e envers quelqu’un, adressez-vous à ellui correctement.
             La seule différence est qu’on connaît généralement le nom des gens, mais pas leurs pronoms.
@@ -318,7 +318,7 @@ links:
     headerLong: 'Liens additionnels'
     recommended: 'Nous recommandons'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog'
     media: 'Pronouns.page sur les réseaux'
 
     social: 'Réseaux sociaux'
@@ -473,7 +473,7 @@ confirm:
     header: 'Êtes-vous sûr·e ?'
     yes: 'Oui, je suis sûr·e'
     no: 'Non, annuler'
-    ok: 'OK' # TODO
+    ok: 'OK'
 
 terms:
     header: 'Termes de Service'
@@ -502,8 +502,8 @@ api:
     query: 'Paramètres chaîne de requête'
 
 quotation:
-    start: '“'
-    end: '”'
+    start: '«'
+    end: '»'
 
 localise:
     shorter: 'Ajouter'
@@ -520,8 +520,8 @@ error:
     generic: 'Quelque chose s’est mal passé, réessayez s’il vous plaît…'
 
 mode:
-    dark: 'Dark mode'  # TODO
-    light: 'Light mode'
+    dark: 'Mode sombre'
+    light: 'Mode clair'
 
 # TODO
 ban:

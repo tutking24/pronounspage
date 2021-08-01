@@ -14,29 +14,9 @@ pronouns:
             Many nonbinary people use more than one form interchangeably
             and are fine with being called either of them.
             Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
-    null:
-        description: 'No pronouns / null pronouns / pronounless / nameself'
-        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-    emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+        examples: ['il&elle', 'il&iel', 'elle&iel']
+    null: false
+    emoji: false
     slashes: true
     avoiding: false
     others: 'Other pronouns'
@@ -58,7 +38,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'dictionnaire'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -127,8 +107,8 @@ support:
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'termos'
+    route: 'compte'
+    termsRoute: 'termes'
 
 profile:
     enabled: true
@@ -151,7 +131,7 @@ profile:
         - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
         - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'iel'
 
 census:
     enabled: false
