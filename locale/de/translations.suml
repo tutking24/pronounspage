@@ -426,7 +426,7 @@ profile:
         Erstelle einfach hier einen Account: {/account=hier}.
     bannerButton: 'Erstelle eine Visitenkarte'
     card:
-        link: 'Bild Visitenkarte'
+        link: 'Visitenkartenbild'
         generating: 'Generatierung läuft…'
     empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
 
