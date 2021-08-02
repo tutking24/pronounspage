@@ -205,7 +205,7 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
-   terms: 
+    terms:
         header: 'Terminology'
         headerLong: 'Dictionary of queer terminology'
         info:
