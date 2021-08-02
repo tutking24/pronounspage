@@ -166,6 +166,18 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
+   terms: 
+        header: 'Terminología'
+        headerLong: 'Diccionario de terminología queer'
+        info:
+            - >
+        term: 'Término'
+                Un diccionario de terminología relacionada con la comunidad LGBTQ+.
+        original: 'Etimología'
+        category: 'Categoría'
+        images: 'Imágenes adicionales, de fuera del catálogo de banderas'
+        definition: 'Definición'
+
 faq:
     header: 'Preguntas'
     headerLong: 'Preguntas frecuentes'
