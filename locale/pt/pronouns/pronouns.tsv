@@ -6,18 +6,18 @@ ilu,ilu/dilu	Neutro	FALSE	ilu	dilu	ê	ume	ilus	dilus	ês	umes	e	que	mi	FALSE	FAL
 ile,ile/dile	Neutro	FALSE	ile	dile	ê	ume	iles	diles	ês	umes	e	que	mi	FALSE	FALSE	TRUE
 elx,elx/delx	Pronome gráfico com x	FALSE	elx	delx	x	umx	elxs	delxs	xs	umxs	x	cx	mx	FALSE	FALSE	FALSE
 el*,el*/del*	Pronome gráfico com *	FALSE	el*	del*	*	um*	el*s	del*s	*s	um*s	*	c*	m*	FALSE	FALSE	FALSE
-el,el/del	Neutro	FALSE	el	del	ê	ume	els	dels	ês	umes	e	que	mi	FALSE	FALSE	TRUE	Deleção da vogal marcadora de gênero.
+el,el/del	Neutro	FALSE	el	del	 	ume	els	dels	 	umes	 	que	mi	FALSE	FALSE	TRUE	Deleção da vogal marcadora de gênero.
 el@,el@/del@	Pronome gráfico com @	FALSE	el@	del@	@	um@	el@s	del@s	@s	um@s	@	c@	m@	FALSE	FALSE	FALSE
 el_,el_/del_	Pronome gráfico com _	FALSE	el_	del_	_	um_	el_s	del_s	_s	um_s	_	c_	m_	FALSE	FALSE	FALSE
 ili,ili/dili	Neutro	FALSE	ili	dili	i	uni	ilis	dilis	is	unis	i	qui	mi	FALSE	FALSE	TRUE
 el',el'/del'	Pronome gráfico com '	FALSE	el'	del'	'	um'	el's	del's	_'s	um's	'	c'	m'	FALSE	FALSE	FALSE
 ily,ily/dily	Neutro	FALSE	ily	dily	ê	uny	ilys	delys	ys	unys	e	que	mi	FALSE	FALSE	TRUE
 éli,éli/déli	Neutro	FALSE	éli	déli		ume	élis	délis	is	umés	e	que	mi	FALSE	FALSE	TRUE
-ael,ael/dael	Pronome gráfico	FALSE	ael	dael	?	?	aels	daels	ae	?	e	que	mi	FALSE	FALSE	FALSE
-elae,elae/delae	Pronome gráfico	FALSE	elae	delae	?	?	elaes	delaes	ae	?	e	que	mi	FALSE	FALSE	FALSE
-eld,eld/deld	Pronome gráfico	FALSE	eld	deld	?	?	elds	delds	?	?	e	que	mi	FALSE	FALSE	FALSE
-elé,elé/delé	Neutro	FALSE	elé	delé	ê	umé	elés	delés	?	?	e	que	mi	FALSE	FALSE	TRUE
-ilo,ilo/dilo	Neutro	FALSE	ilo	dilo	i	?	ilos	dilos	is	?	i	que	mi	FALSE	FALSE	TRUE
+ael,ael/dael	Neutro	FALSE	ael	dael	ae	umae	aels	daels	aes	umaes	e	que	mi	FALSE	FALSE	TRUE
+elae,elae/delae	Neutro	FALSE	elae	delae	ae	umae	elaes	delaes	aes	umaes	e	que	mi	FALSE	FALSE	TRUE
+eld,eld/deld	Pronome gráfico	FALSE	eld	deld	d	und	elds	delds	ds	umds	e	que	mi	FALSE	FALSE	FALSE
+elé,elé/delé	Neutro	FALSE	elé	delé	ê	umé	elés	delés	ês	umes	e	que	mi	FALSE	FALSE	TRUE
+ilo,ilo/dilo	Neutro	FALSE	ilo	dilo	i	uni	ilos	dilos	is	unis	i	que	mi	FALSE	FALSE	TRUE
 êlu,êlu/dêlu	Neutro	FALSE	êlu	dêlu	ê	ume	êlus	dêlus	ês	umes	e	que	mi	FALSE	FALSE	TRUE
 yn,yn/dyn	Neutro	FALSE	yn	dyn	y	uni	yns	dyns	ys	unys	y	que	mi	FALSE	FALSE	TRUE
 ale,ale/dale	Neutro	FALSE	ale	dale	y	ume	ales	dales	ys	umes	y	quy	my	FALSE	FALSE	TRUE
