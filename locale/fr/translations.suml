@@ -40,21 +40,19 @@ home:
         alt: 'Vous pouvez aussi entrer des formes interchangeables dans chaque champ séparément, par exemple <code>lui&elle</code> = „lui” or „elle”'
         pronunciation: 'Vous pouvez aussi spécifier la prononciation après une barre verticale en utilisant l’alphabet phonétique, par ex. <code>ille|ij</code> = „ille” prononcé /ij/.'
     whatisit: 'C''est quoi, ces histoires de pronoms ?'
-    # TODO
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Notre mission'
+        summary: 'Nous luttons pour la liberté, le respect et l’inclusion dans notre langage.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Liberté</strong>
+            – pour que tout le monde puisse utiliser le pronom qui leur convient.
         respect: >
             <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            – pour que les pronoms <em>des autres</em> soient respectés.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inclusion</strong>
+            – pour que quand nous parlons d'une personne ou d'un groupe de personnes,
+            nous ne devinions pas et n'excluons pas leur genre(s).
 
 pronouns:
     examples: 'Exemple d’usage dans des phrases'
@@ -141,7 +139,7 @@ nouns:
     approved: 'entrées approuvées'
     pending: 'en attente de modération'
     edit: 'Changement proposé'
-    edited: 'Proposed change of'
+    edited: 'Changement proposé de'
     editing: 'Vous êtes en train d''éditer une entrée existante'
     empty: 'Aucun mot correspondant à vos critères n''a été trouvé'
 
@@ -406,10 +404,10 @@ profile:
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
     flags: 'Drapeaux'
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustom: 'Uploader un drapeau personnalisé'
+    flagsCustomWarning: 'Ce drapeau a été uploadé par un.e utilisateur.rice. L’équipe de pronouns.page n’en est pas tenue responsable.'
     links: 'Liens'
-    linksCake: 'We recommend linking to'  # TODO
+    linksCake: 'Nous vous recommandons ces liens'
     column: 'Colonne'
 
     list: 'Vos cartes'
@@ -426,17 +424,17 @@ profile:
         jokingly: 'Pour plaisanter'
         meh: 'Ok'
         no: 'Non'
-    # TODO
+
     banner: >
-        You can also use our website to create a card, {/@andrea=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
+        Vous pouvez utiliser ce site pour créer votre carte, {/@andrea=comme celle ci},
+        avec vos noms, pronoms, drapeaux, mots préférés, etc…
+        Vous pourrez ensuite copier le lien dans votre bio ou dans vos signatures de mail.
+        Créez votre compte {/account=ici}.
+    bannerButton: 'Créer une carte'
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
-    empty: 'This person hasn''t created any cards yet.'
+        link: 'Photo de la carte'
+        generating: 'En cours de création...'
+    empty: 'Cette personne n''a pas encore créé de carte'
 
 share: 'Partager'
 
@@ -451,8 +449,8 @@ crud:
     filterLong: 'Filtrer la liste…'
     search: 'Chercher…'
     author: 'Ajouté par'
-    saved: 'Changes saved successfully!'  # TODO
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    saved: 'Modifications enregistrées !'
+    loginRequired: '{/compte=Connectez-vous} pour proposer un mot'
 
 footer:
     license: >
@@ -523,22 +521,20 @@ mode:
     dark: 'Mode sombre'
     light: 'Mode clair'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/termos=Terms of Service}:'
+    reason: 'Raison du bannissement'
+    visible: '(visible par l’utilisateur)'
+    action: 'Bannir l’utilisateur'
+    confirm: 'Voulez-vous bannir @%username%?'
+    header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'
+    banned: 'Banni'
+    termsIntro: 'Selon nos {/termes=Termes de service}:'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Signaler'
+    comment: 'Résumer la raison du signalement de ce profil'
+    confirm: 'Voulez-vous signaler @%username%?'
+    sent: 'Votre signalement à bien été envoyé. Merci de votre aide !'
 
 flags:
     Abroromantic: 'Abroromantique'
