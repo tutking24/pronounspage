@@ -9,17 +9,17 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'Formes interchangeables'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
+            De nombreuses personnes transgenres utilisent plus d'une forme et sont confortables
+            à l'idée de se faire appeler par n'importe laquelle de leur forme.
+            Certain.e.s aiment quand on alterne leur pronoms.
         examples: ['il&elle', 'il&iel', 'elle&iel']
     null: false
     emoji: false
     slashes: true
     avoiding: false
-    others: 'Other pronouns'
+    others: 'Autres pronoms'
 
 pronunciation:
     enabled: true
