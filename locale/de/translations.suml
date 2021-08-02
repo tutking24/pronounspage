@@ -9,7 +9,7 @@ home:
     about:
         - >
             Wir alle benutzen Pronomen. Es sind die Wörter, die wir nutzen, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”},sodass wir automatisch davon ausgehen, welches Pronomen aufgrund des Aussehens zu verwenden ist.
+            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir automatisch davon ausgehen, welches Pronomen aufgrund des Aussehens zu verwenden ist.
             Aber in Wahrheit ist es nicht so einfach…
         - >
             Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
@@ -417,7 +417,7 @@ profile:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
         meh: 'Okay'
-        no: 'Nope'
+        no: 'Nein'
 
     banner: >
         Du kannst auch unsere Webseite nutzen, um eine Visitenkarte zu erstellen {/@andrea=wie diese},
@@ -519,7 +519,7 @@ ban:
     visible: '(dies wird der:m Nutzer:in sichtbar sein)'
     action: 'Diese Person sperren'
     confirm: 'Bist du sicher, die Person @%username% zu sperren?'
-    header: 'Du wurdest geperrt. Dein Profil kann nicht mehr angesehen werden.'
+    header: 'Du wurdest gesperrt. Dein Profil kann nicht mehr angesehen werden.'
     banned: 'gesperrt'
     termsIntro: 'Gemäß unserer Geschäftsbedingungen {/Nutzungsbedingungen=Geschäftsbedingungen}:'
 
