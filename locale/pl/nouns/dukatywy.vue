@@ -248,7 +248,7 @@
                 }),
                 sources: undefined,
                 templates,
-                generatorWord: 'ktoś',
+                generatorWord: 'fotograf',
             }
         },
         async mounted() {
