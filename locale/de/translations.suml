@@ -163,7 +163,7 @@ nouns:
     plural: 'Plural'
     pluralShort: 'Pl.'
 
-   terms: 
+    terms:
         header: 'Terminologie'
         headerLong: 'Wörterbuch von Queerer Terminologie'
         info:

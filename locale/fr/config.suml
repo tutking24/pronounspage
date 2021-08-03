@@ -47,7 +47,7 @@ nouns:
     templates: true
     inclusive:
         enabled: false
- terms:
+    terms:
         enabled: true
         categories:
             - 'orientation sexuelle'
@@ -59,7 +59,7 @@ nouns:
             - 'langage'
             - 'attirance'
             - 'politique'
-       route: 'terminologie'
+        route: 'terminologie'
 
 names:
     enabled: false
@@ -124,27 +124,11 @@ user:
 profile:
     enabled: true
     editorEnabled: true
-   defaultWords:
-       -
-           - '[sans titre]'
-           - 'Mx.'
-           - 'M.'
-           - 'Mme.'
-           - 'MM.'
-           - 'Mmes.
-           - 'Mlle.'
-           - 'Mlles.'
-           - 'Vve.'
-           - 'messieurs'
-           - 'monsieur'
-           - 'madame'
-           - 'mesdames'
-           - 'mademoiselle'
-           - 'mesdemoiselles'
-           - 'veuve'
-       - ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
-       - ['beauté', 'beau gosse', 'belle gosse']
-       - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'joyfriend', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
+    defaultWords:
+        - ['[sans titre]', 'Mx.', 'M.', 'Mme.', 'MM.', 'Mmes.', 'Mlle.', 'Mlles.', 'Vve.', 'messieurs', 'monsieur', 'madame', 'mesdames', 'mademoiselle', 'mesdemoiselles', 'veuve']
+        - ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
+        - ['beauté', 'beau gosse', 'belle gosse']
+        - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'joyfriend', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
     flags:
         defaultPronoun: 'iel'
 
