@@ -57,8 +57,6 @@ nouns:
             - 'Politik'
         route: 'terminologie'
 
-
-
 names:
     enabled: false
 
