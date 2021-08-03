@@ -48,7 +48,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'orientation sexuelle'
+            - 'orientation romantique'
+            - 'orientation tertiaire'
+            - 'genre'
+            - 'expression du genre'
+            - 'modèle de relation'
+            - 'langage'
+            - 'attirance'
+            - 'politique'
+        route: 'terminologie'
 
 names:
     enabled: false
