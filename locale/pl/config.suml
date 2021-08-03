@@ -85,7 +85,7 @@ nouns:
         - 'osobatywy'
     inclusive:
         enabled: true
-        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo']
+        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
         route: 'inkluzywny'
     terms:
         enabled: true
@@ -93,12 +93,12 @@ nouns:
             - 'orientacja seksualna'
             - 'orientacja romantyczna'
             - 'orientacja tertiarna'
-            - 'określenie orientacji romantycznej i seksualnej'
             - 'płeć'
             - 'ekspresja płciowa'
             - 'model relacji'
             - 'język'
             - 'pociąg'
+            - 'polityka'
         route: 'terminologia'
 
 names:
@@ -323,6 +323,10 @@ links:
                 wyobrażeń o mężczyznach, kobietach, osobach z niepełnosprawnościami czy innych grupach społecznych.
                 Dokument ten ma być zbiorem wskazówek, jak używać słów i ilustracji. Zawiera przykłady z języka polskiego
                 istotne z punktu widzenia Sekretariatu Generalnego Rady jako miejsca pracy.
+        -
+            icon: 'books'
+            url: 'https://www.transfuzja.org/publikacje'
+            headline: 'Publikacje fundacji Trans-Fuzja'
     mediaGuests:
         -
             icon: 'newspaper'
@@ -712,6 +716,12 @@ links:
                     Nie przekonuje to, by reszta tekstu (czy czasopisma) miała być warta choćby i grosza z prenumeraty.
                 - >
                     {https://twitter.com/neutratywy/status/1419197039016091650=Wątek na Twitterze}
+        -
+            icon: 'newspaper'
+            url: 'https://www.filmawka.pl/gender-queer-niebinarna-autobiografia-recenzja/'
+            headline: '“Gender queer” – niebinarna autobiografia \[RECENZJA]'
+            extra: ' – <strong>Filmawka.pl</strong>'
+
     socials:
         -
             icon: 'twitter'

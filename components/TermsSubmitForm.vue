@@ -39,17 +39,22 @@
             </div>
 
             <div class="form-group">
-                <label class="text-nowrap"><strong>
-                    <T>nouns.terms.category</T>
-                </strong></label>
-                <select v-model="form.category" class="form-control form-control-sm">
-                    <option value=""></option>
-                    <option v-for="category in config.nouns.terms.categories" :value="category">{{category}}</option>
-                </select>
+                <label><strong><T>nouns.terms.category</T>:</strong></label>
+                <a v-for="category in config.nouns.terms.categories"
+                   href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
+                   @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
+                >
+                    {{ category }}
+                </a>
             </div>
 
             <div class="row" v-if="$isGranted('terms')">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-4">
+                    <label for="key"><strong><T>sources.submit.key</T></strong></label>
+                    <input type="text" id="key" class="form-control" v-model="form.key" maxlength="255"/>
+                    <p class="small text-muted"><T>sources.submit.keyInfo</T></p>
+                </div>
+                <div class="col-12 col-lg-4">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <T>profile.flags</T>
@@ -57,7 +62,7 @@
                         <ListInput v-model="form.flags" v-slot="s"/>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-4">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <T>nouns.terms.images</T>
@@ -101,8 +106,9 @@
                 form: {
                     term: [''],
                     original: [],
+                    key: '',
                     definition: '',
-                    category: '',
+                    categories: [],
                     flags: [],
                     images: [],
                     base: null,
@@ -121,8 +127,9 @@
                     this.form = {
                         term: [''],
                         original: [],
+                        key: '',
                         definition: '',
-                        category: '',
+                        categories: [],
                         flags: [],
                         images: [],
                         base: null,
@@ -135,8 +142,9 @@
                 this.form = {
                     term: word.term,
                     original: word.original,
+                    key: word.key,
                     definition: word.definition,
-                    category: word.category,
+                    categories: word.categories,
                     flags: word.flags,
                     images: word.images,
                     base: word.id,

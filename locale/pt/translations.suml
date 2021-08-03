@@ -41,6 +41,21 @@ home:
         pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
     whatisit: 'Por que importam os pronomes?'
 
+    mission:
+        header: 'Nossa missão'
+        summary: 'Estamos lutando pela liberdade, respeito e inclusão no idioma.'
+        freedom: >
+            <strong>Liberdade</strong>
+            – para que cada pessoa possa usar <em>para si mesme</em>
+            qualquer pronome que elu acha que descreve elu o melhor.
+        respect: >
+            <strong>Respeito</strong>
+            – que pronomes de <em>outras pessoas</em> são respeitados.
+        inclusiveness: >
+            <strong>Inclusão</strong>
+            – que quando estamos nos referindo para a pessoa que não conhecemos ou para grupo de pessoas,
+            não estamos assumindo gênero delus e não estamos excluindo elus por qualquer razão.
+
 pronouns:
     examples: 'Exemplos de uso em frases'
     plural: 'Plural'
@@ -95,8 +110,8 @@ sources:
         thanks: 'Obrigade pela contribuição!'
         another: 'Enviar outro'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
-        key: 'Key'  # TODO
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
+        key: 'Chave'
+        keyInfo: 'Identificador para conectar fontes entre versões e conectar com dicionário'
         images: 'Imagens'
     otherVersions: 'Em outros idiomas'
     referenced: 'Exemplos de uso'
@@ -148,6 +163,18 @@ nouns:
     singularShort: 'sing.'
     plural: 'plural'
     pluralShort: 'pl.'
+
+    terms:
+        header: 'Terminologia'
+        headerLong: 'Dicionário de terminologia queer'
+        info:
+            - >
+                Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+        term: 'Termo'
+        original: 'Etimologia'
+        category: 'Categoria'
+        images: 'Imagens adicionais, de fora do catálogo de bandeiras'
+        definition: 'Definição'
 
 faq:
     header: 'Perguntas'
@@ -326,7 +353,7 @@ contact:
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
         logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
         members: 'Membres atuais'
-        member: 'Member of the collective'  # TODO
+        member: 'Membro do coletivo'
         blog: 'Blog'
         upcoming: 'Próximas versões'
 
@@ -393,10 +420,10 @@ profile:
     birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
     flags: 'Bandeiras'
     flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
-    links: 'Enlaces'
-    linksCake: 'We recommend linking to'  # TODO
+    flagsCustom: 'Enviar bandeira personalizada'
+    flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
+    links: 'Links'
+    linksCake: 'Recomendamos linkar com'
     column: 'Coluna'
 
     list: 'Os cartões'
@@ -414,17 +441,16 @@ profile:
         meh: 'OK'
         no: 'Não'
 
-    #TODO
-    #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
-    #bannerButton: 'Crie um cartão'
+    banner: >
+        Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
+        que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
+        Depois pode por no seu bio ou rodapé de e-mail.
+        Somente crie a sua conta {/account=aqui}.
+    bannerButton: 'Crie um cartão'
     card:
         link: 'Imagem do cartão'
         generating: 'Gerando a imagem…'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+    empty: 'Essa pessoa ainda não especificou suas informações pessoais'
 
 share: 'Compartilhar'
 
@@ -440,10 +466,10 @@ crud:
     search: 'Buscar…'
     author: 'Adicionado por'
     saved: 'Alterações salvas com sucesso!'
-    loginRequired: '{/conta=Log in} to submit an entry' # TODO
+    loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
 
 footer:
-    # TODO source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
+    source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt=CC BY-NC-SA 4.0}
@@ -512,22 +538,20 @@ mode:
     dark: 'Modo escuro'
     light: 'Modo claro'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/termos=Terms of Service}:'
+    reason: 'Razão de ban'
+    visible: '(isso vai ser visto para usuárie)'
+    action: 'Ban essa pessoa'
+    confirm: 'Você está certe que quer banir @%username%?'
+    header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
+    banned: 'Banido'
+    termsIntro: 'De acordo com nossos {/termos=termos de uso}:'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Reportar abuso'
+    comment: 'por favor, explique brevemente o que há de errado com esse perfil'
+    confirm: 'Você tem certeza de que deseja reportar @%username%?'
+    sent: 'Sua reportação foi enviada. Agradecemos pela colaboração!'
 
 flags:
     Abroromantic: 'Abrorromânti{inflection_c}'

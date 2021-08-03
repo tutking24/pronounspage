@@ -8,6 +8,13 @@
         </h2>
 
         <section>
+            <details class="border mb-3" open>
+                <summary class="d-none"/>
+                <div class="px-3">
+                    <Mission/>
+                </div>
+            </details>
+
             <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
                     :question="question"
                     :id="question" :ref="question.replace(/-/g, '_')"
