@@ -68,6 +68,11 @@
                 return templates[0];
             },
         },
+        watch: {
+            template() {
+                this.declensionTemplate = this.template || this.findTemplate();
+            },
+        }
     };
 </script>
 
