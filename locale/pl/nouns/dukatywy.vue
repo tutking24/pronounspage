@@ -186,6 +186,10 @@
         M: 'u', D: 'enu', C: 'ewu', B: 'enu', N: 'um', Msc: 'um', W: 'u',
         M_pl: 'y', D_pl: 'ych', C_pl: 'ym', B_pl: 'ych', N_pl: 'ymi', Msc_pl: 'ych', W_pl: 'y',
     });
+    const dukajIDeclension = new NounDeclension({
+        M: 'u', D: 'u', C: 'u', B: 'u', N: 'um', Msc: 'um', W: 'u',
+        M_pl: 'i', D_pl: 'ich', C_pl: 'im', B_pl: 'ich', N_pl: 'imi', Msc_pl: 'ich', W_pl: 'i',
+    });
 
     export default {
         components: { NounsNav },
@@ -244,7 +248,7 @@
                 }),
                 sources: undefined,
                 templates,
-                generatorWord: 'fotograf',
+                generatorWord: 'ktoś',
             }
         },
         async mounted() {
@@ -290,6 +294,10 @@
                 result.declension = this.generatorWord.endsWith('y') || this.generatorWord.endsWith('i')
                     ? dukajAdjectiveDeclension
                     : dukajDeclension;
+
+                if (this.template.neutrPl.endsWith('i')) {
+                    result.declension = dukajIDeclension;
+                }
 
                 return new Noun(result);
             }
