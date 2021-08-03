@@ -135,8 +135,8 @@ profile:
     editorEnabled: true
     defaultWords:
         - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.']
-        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau']
-        - ['schön', 'süß', 'sexy',]
+        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
+        - ['schön', 'süß', 'sexy', 'hübsch', 'attraktiv']
         - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
         defaultPronoun: 'er'
