@@ -110,56 +110,58 @@
                 <div class="form-group">
                     <input v-model="generatorWord" class="form-control" placeholder="Wpisz rzeczownik w rodzaju męskim liczby pojedynczej"/>
                 </div>
-                <table v-if="generatorResult" class="table table-fixed-3">
-                    <thead>
-                    <tr>
-                        <th class="text-nowrap">
-                            <Icon v="mars"/>
-                            <T>nouns.masculine</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <Icon v="venus"/>
-                            <T>nouns.feminine</T>
-                        </th>
-                        <th class="text-nowrap">
-                            <Icon v="neuter"/>
-                            <T>nouns.dukajNouns.label</T>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in generatorResult.masc">{{ w }}</li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in generatorResult.mascPl">{{ w }}</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in generatorResult.fem">{{ w }}</li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in generatorResult.femPl">{{ w }}</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul class="list-singular">
-                                <li v-for="w in generatorResult.neutr">
-                                    <Declension :word="w" :template="generatorResult.declension"/>
-                                </li>
-                            </ul>
-                            <ul class="list-plural">
-                                <li v-for="w in generatorResult.neutrPl">
-                                    <Declension :word="w" :template="generatorResult.declension" plural/>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div v-if="generatorResult" class="table-responsive">
+                    <table class="table table-fixed-3">
+                        <thead>
+                        <tr>
+                            <th class="text-nowrap">
+                                <Icon v="mars"/>
+                                <T>nouns.masculine</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <Icon v="venus"/>
+                                <T>nouns.feminine</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <Icon v="neuter"/>
+                                <T>nouns.dukajNouns.label</T>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <ul class="list-singular">
+                                    <li v-for="w in generatorResult.masc">{{ w }}</li>
+                                </ul>
+                                <ul class="list-plural">
+                                    <li v-for="w in generatorResult.mascPl">{{ w }}</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-singular">
+                                    <li v-for="w in generatorResult.fem">{{ w }}</li>
+                                </ul>
+                                <ul class="list-plural">
+                                    <li v-for="w in generatorResult.femPl">{{ w }}</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="list-singular">
+                                    <li v-for="w in generatorResult.neutr">
+                                        <Declension :word="w" :template="generatorResult.declension"/>
+                                    </li>
+                                </ul>
+                                <ul class="list-plural">
+                                    <li v-for="w in generatorResult.neutrPl">
+                                        <Declension :word="w" :template="generatorResult.declension" plural/>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div v-else class="alert alert-warning">
                     <p class="mb-0">Niestety, podane słowo nie pasuje do żadnego naszego szablonu</p>
                 </div>
