@@ -299,8 +299,8 @@ export class Pronoun {
 
     nameOptions() {
         const options = new Set();
-        const optionsN = this.morphemes[MORPHEMES[0]].split('&');
-        const optionsG = this.morphemes[MORPHEMES[1]].split('&');
+        const optionsN = (this.morphemes[MORPHEMES[0]] || '').split('&');
+        const optionsG = (this.morphemes[MORPHEMES[1]] || '').split('&');
         const optionsGAlt = MORPHEMES.length > 2 ? (this.morphemes[MORPHEMES[2]] || '').split('&') : [];
 
         for (let i in optionsN) {
@@ -311,7 +311,7 @@ export class Pronoun {
             }
             let nameOption = optionN + '/' + optionG;
             if (config.pronouns.threeForms) {
-                nameOption += '/' + this.morphemes[MORPHEMES[2]].split('&')[i];
+                nameOption += '/' + (this.morphemes[MORPHEMES[2]] || '').split('&')[i];
             } else if (this.thirdForm) {
                 nameOption += '/' + this.morphemes[this.thirdForm].split('&')[i];
             }
@@ -719,22 +719,29 @@ export class InclusiveEntry {
 }
 
 export class TermsEntry {
-    constructor({id, term, original, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null}) {
+    constructor({id, term, original, key = null, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null, locale, versions = []}) {
         this.id = id;
         this.term = term.split('|');
         this.original = original ? original.split('|') : [];
+        this.key = key || null;
         this.definition = definition;
         this.author = author;
-        this.category = category;
+        this.categories = category ? category.split(',') : [];
         this.flags = JSON.parse(flags);
         this.images = images ? images.split(',') : [];
         this.approved = !!approved;
         this.base = base_id;
+        this.locale = locale;
+        this.versions = versions.map(v => new TermsEntry(v));
     }
 
     matches(filter) {
         if (!filter) {
             return true;
+        }
+
+        if (filter.startsWith(':')) {
+            return this.categories.includes(filter.substring(1));
         }
 
         for (let field of ['term', 'original']) {

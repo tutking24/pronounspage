@@ -40,6 +40,22 @@ home:
         alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
         pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
     whatisit: '¿Por qué importan los pronombres?'
+    # TODO
+    mission:
+        header: 'Nuestra misión'
+        summary: 'Luchamos por la libertad, el respeto y la inclusividad en la lengua.'
+        freedom: >
+            <strong>Libertad</strong>
+            – para que todes puedan usar <em>para sí mismes</em>
+            los pronombres que sientan que mejor les describen
+        respect: >
+            <strong>Respeto</strong>
+            – para que los pronombres de <em>otras personas</em> sean respetados
+        inclusiveness: >
+            <strong>Inclusividad</strong>
+            – para que cuando nos refiramos a una persona que no conocemos o a un grupo de gente
+            no presupongamos su género y no les excluyamos por ninguna razón
+
 
 pronouns:
     examples: 'Ejemplos de uso en oraciones'
@@ -149,6 +165,18 @@ nouns:
     singularShort: 'sing.'
     plural: 'plural'
     pluralShort: 'pl.'
+
+    terms:
+        header: 'Terminología'
+        headerLong: 'Diccionario de terminología queer'
+        info:
+            - >
+                Un diccionario de terminología relacionada con la comunidad LGBTQ+.
+        term: 'Término'
+        original: 'Etimología'
+        category: 'Categoría'
+        images: 'Imágenes adicionales, de fuera del catálogo de banderas'
+        definition: 'Definición'
 
 faq:
     header: 'Preguntas'
@@ -323,11 +351,11 @@ contact:
     authors: 'Autores/as/xs del sitio web'
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
-        description:  # TODO
+        description:
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                son creados por la cooperativa “Consejo de Lenguaje Neutro”.
+        logo: 'El logo de la cooperativa es una combinación del símbolo transgénero y una burbuja de diálogo que simboliza la lengua.'
         members: 'Miembros actuales'
         member: 'Miembro de la cooperativa'
         upcoming: 'Próximas versiones en otras lenguas'
@@ -441,7 +469,7 @@ crud:
     search: 'Buscar…'
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
-    loginRequired: '{/cuenta=Log in} to submit an entry' # TODO
+    loginRequired: '{/cuenta=Log in} para enviar un ítem'
 
 footer:
     license: >
@@ -465,9 +493,9 @@ confirm:
     ok: 'OK'
 
 terms:
-    header: 'Térinos de Servicio'
+    header: 'Términos de Servicio'
     lastUpdate: 'Actualizados por última vez'
-    consent: 'Al registrarte, aceptas los {/terinos=Térinos de Servicio}.'
+    consent: 'Al registrarte, aceptas los {/terminos=Términos de Servicio}.'
 
 admin:
     header: 'Panel de Admins'
@@ -512,15 +540,14 @@ mode:
     dark: 'Modo oscuro'
     light: 'Modo claro'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terinos=Terms of Service}:'
+    reason: 'Razón para banear'
+    visible: '(esto será visible para le usuario)'
+    action: 'Banear esta persona'
+    confirm: '¿Estás segure que quieres banear a @%username%?'
+    header: 'Has sido baneado. Tu perfil no se mostrará a nadie.'
+    banned: 'Baneado'
+    termsIntro: 'De acuerdo con nuestros {/terminos=Términos de Servicio}:'
 
 report:
     action: 'Reportar abuso'

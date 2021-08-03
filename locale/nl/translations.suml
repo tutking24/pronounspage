@@ -40,6 +40,21 @@ home:
         alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
+    # TODO
+    mission:
+        header: 'Our mission'
+        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        freedom: >
+            <strong>Freedom</strong>
+            – so that everyone can use <em>for themselves</em>
+            whatever pronouns they feel describe them best.
+        respect: >
+            <strong>Respect</strong>
+            – so that <em>other people's</em> pronouns are respected.
+        inclusiveness: >
+            <strong>Inclusiveness</strong>
+            – so that when we're referring to a person we don't know or a group of people,
+            we don't assume their gender and don't exclude them for any reason.
 
 pronouns:
     examples: 'Gebruiksvoorbeelden in zinnen'
@@ -322,7 +337,7 @@ contact:
                 zijn bedacht door het "Raad van Neutrale Taal" collectief.
         logo: 'Het logo van het collectief is een combinatie van het transgender symbool en een spraakballon dat taal symboliseert.'
         members: 'Huidige leden'
-        member: 'Member of the collective'  # TODO
+        member: 'Lid van het collectief'
         blog: 'Blog'
         upcoming: 'Komende taalversies'
 
@@ -389,10 +404,10 @@ profile:
     birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'
     flags: 'Vlaggen'
     flagsInfo: 'Klik en sleep jouw pridevlaggen naar deze frame.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustom: 'Upload zelfgemaakte vlaggen'
+    flagsCustomWarning: 'Deze vlag werd geuploaded door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
     links: 'Links'
-    linksCake: 'We recommend linking to'  # TODO
+    linksCake: 'We raden aan te linken naar'
     column: 'Kolom'
 
     list: 'Jouw kaarten'
@@ -410,18 +425,17 @@ profile:
         meh: 'Oké'
         no: 'Nee'
 
-    #TODO
-    #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
-    #bannerButton: 'Create a card'
-    # TODO
+    banner: >
+        Je kan ook onze website gebruiken om een kaart te genereren, {/@andrea=zoals deze},
+        Die je namen, voornaamwoorden etc. bevat.
+        Je kan hier naar verwijzen in je bio of in je email-footer.
+        Just create an account {/account=hier}.
+    bannerButton: 'Maak een kaart'
+
     card:
-        link: 'Card picture'
-        generating: 'Generation in progress…'
-    empty: 'This person hasn''t created any cards yet.' # TODO
+        link: 'Kaartbeeld'
+        generating: 'Je kaartbeeld wordt gegenereerd …'
+    empty: 'Deze person heeft nog geen kaarten gegenereerd.'
 
 share: 'Deel'
 
@@ -521,10 +535,10 @@ ban:
 
 # TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Rapporteer misbruik'
+    comment: 'Leg kort uit wat ongepast is aan dit profiel'
+    confirm: 'Weet je zeker dat je @%username% wilt rapporteren?'
+    sent: 'Jouw rapportering was verzonden. Bedankt voor je hulp!'
 
 flags:
     Abroromantic: 'Abroromantisch'
