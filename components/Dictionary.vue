@@ -307,45 +307,6 @@
 <style lang="scss">
     @import "assets/variables";
 
-    .list-singular {
-        padding-inline-start: 0;
-        list-style: none;
-        li {
-            white-space: nowrap;
-            a:not([href='#']) {
-                display: none;
-            }
-            &:hover a:not([href='#']) {
-                display: inline;
-            }
-        }
-        >li:before {
-            content: "⋅";
-            display: inline-block;
-            width: $fa-fw-width;
-            text-align: center;
-        }
-    }
-    .list-plural {
-        padding-inline-start: 0;
-        list-style: none;
-        li {
-            white-space: nowrap;
-            a:not([href='#']) {
-                display: none;
-            }
-            &:hover a:not([href='#']) {
-                display: inline;
-            }
-        }
-        >li:before {
-            content: "⁖";
-            display: inline-block;
-            width: $fa-fw-width;
-            text-align: center;
-        }
-    }
-
     tr {
         .hover-show {
             opacity: 0;

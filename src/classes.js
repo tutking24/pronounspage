@@ -566,7 +566,7 @@ export class PronounLibrary {
 }
 
 export class Noun {
-    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, sources = null, sourcesData = [], approved = true, base_id = null, author = null}) {
+    constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, sources = null, sourcesData = [], approved = true, base_id = null, author = null, declension = null}) {
         this.id = id;
         this.masc = masc.split('|');
         this.fem = fem.split('|');
@@ -579,6 +579,7 @@ export class Noun {
         this.approved = !!approved;
         this.base = base_id;
         this.author = author;
+        this.declension = declension;
     }
 
     matches(filter) {
