@@ -8,7 +8,7 @@
         </section>
 
         <section class="sticky-top">
-            <div class="input-group mb-3 bg-white">
+            <div class="input-group bg-white text-filter">
                 <span class="input-group-text">
                     <Icon v="filter"/>
                 </span>
@@ -16,9 +16,17 @@
                 <button v-if="filter" class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                     <Icon v="times"/>
                 </button>
-                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView({block: 'center'})">
                     <Icon v="plus-circle"/>
                     <T>nouns.submit.action</T>
+                </button>
+            </div>
+            <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
+                <button v-for="category in config.nouns.terms.categories"
+                    :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
+                    @click="filter = filter === ':' + category ? '' : ':' + category"
+                >
+                    {{ category }}
                 </button>
             </div>
         </section>
@@ -31,37 +39,12 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td class="cell-wide">
-                    <p>
-                        <strong><LinkedTextMultiple :texts="s.el.term" noicons/></strong>
-                        <span v-if="s.el.original.length">(<LinkedTextMultiple :texts="s.el.original" glue="; " noicons/>)</span>
-                        – <LinkedText :text="s.el.definition" noicons/>
-                        <template v-if="s.el.category">
-                            <br/>
-                            <span class="badge bg-primary text-white">
-                                {{s.el.category}}
-                            </span>
-                        </template>
-                    </p>
-
-                    <p v-if="s.el.flags.length || s.el.images.length" class="text-center">
-                        <img v-for="flag in s.el.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
-                        <img v-for="image in s.el.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
-                    </p>
+                    <Term :term="s.el" categoryLink flags versions/>
 
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
-                        <p>
-                            <strong><LinkedTextMultiple :texts="entries[s.el.base].term" noicons/></strong>
-                            <span v-if="entries[s.el.base].original.length">(<LinkedTextMultiple :texts="entries[s.el.base].original" glue="; " noicons/>)</span>
-                            – <LinkedText :text="entries[s.el.base].definition" noicons/>
-                            <template v-if="entries[s.el.base].category">
-                                <br/>
-                                <span class="badge bg-primary text-white">
-                                    {{entries[s.el.base].category}}
-                                </span>
-                            </template>
-                        </p>
+                        <Term :term="entries[s.el.base]" flags/>
                     </div>
                 </td>
                 <td>
@@ -282,5 +265,21 @@
 
     .flag {
         height: 96px;
+    }
+
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .text-filter {
+            * {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+    .category-filter {
+        margin-top: -1px;
+        .btn {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     }
 </style>

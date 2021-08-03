@@ -40,21 +40,21 @@ home:
         alt: 'Também é possível introduzir formas intercambiáveis separadas em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
         pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
     whatisit: 'Por que importam os pronomes?'
-    # TODO
+
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Nossa missão'
+        summary: 'Estamos lutando pela liberdade, respeito e inclusão no idioma.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Liberdade</strong>
+            – para que cada pessoa possa usar <em>para si mesme</em>
+            qualquer pronome que elu acha que descreve elu o melhor.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Respeito</strong>
+            – que pronomes de <em>outras pessoas</em> são respeitados.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inclusão</strong>
+            – que quando estamos nos referindo para a pessoa que não conhecemos ou para grupo de pessoas,
+            não estamos assumindo gênero delus e não estamos excluindo elus por qualquer razão.
 
 pronouns:
     examples: 'Exemplos de uso em frases'
@@ -110,8 +110,8 @@ sources:
         thanks: 'Obrigade pela contribuição!'
         another: 'Enviar outro'
         moderation: 'Os envios devem ser aprovados antes de serem publicados.'
-        key: 'Key'  # TODO
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'  # TODO
+        key: 'Chave'
+        keyInfo: 'Identificador para conectar fontes entre versões e conectar com dicionário'
         images: 'Imagens'
     otherVersions: 'Em outros idiomas'
     referenced: 'Exemplos de uso'
@@ -163,6 +163,18 @@ nouns:
     singularShort: 'sing.'
     plural: 'plural'
     pluralShort: 'pl.'
+
+    terms:
+        header: 'Terminologia'
+        headerLong: 'Dicionário de terminologia queer'
+        info:
+            - >
+                Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+        term: 'Termo'
+        original: 'Etimologia'
+        category: 'Categoria'
+        images: 'Imagens adicionais, de fora do catálogo de bandeiras'
+        definition: 'Definição'
 
 faq:
     header: 'Perguntas'
@@ -429,13 +441,12 @@ profile:
         meh: 'OK'
         no: 'Não'
 
-    #TODO
-    #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
-    #bannerButton: 'Crie um cartão'
+    banner: >
+        Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
+        que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
+        Depois pode por no seu bio ou rodapé de e-mail.
+        Somente crie a sua conta {/account=aqui}.
+    bannerButton: 'Crie um cartão'
     card:
         link: 'Imagem do cartão'
         generating: 'Gerando a imagem…'
@@ -527,12 +538,11 @@ mode:
     dark: 'Modo escuro'
     light: 'Modo claro'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
+    reason: 'Razão de ban'
+    visible: '(isso vai ser visto para usuárie)'
+    action: 'Ban essa pessoa'
+    confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
     banned: 'Banido'
     termsIntro: 'De acordo com nossos {/termos=termos de uso}:'

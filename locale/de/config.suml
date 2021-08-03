@@ -44,7 +44,20 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'sexuelle Orientierung'
+            - 'romantische Orientierung'
+            - 'tertiäre Orientierung'
+            - 'Geschlecht'
+            - 'Geschlechtsausdruck'
+            - 'Beziehungsmodell'
+            - 'Sprache'
+            - 'Anziehung'
+            - 'Politik'
+        route: 'terminologie'
+
+
 
 names:
     enabled: false
