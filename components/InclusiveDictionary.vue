@@ -16,12 +16,12 @@
                 <button v-if="filter" class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                     <Icon v="times"/>
                 </button>
-                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView()">
+                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView({block: 'center'})">
                     <Icon v="plus-circle"/>
                     <T>nouns.submit.action</T>
                 </button>
             </div>
-            <div class="btn-group mb-3 d-flex bg-white category-filter">
+            <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
                 <button v-for="category in config.nouns.inclusive.categories"
                    :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                    @click="filter = filter === ':' + category ? '' : ':' + category"
@@ -56,13 +56,13 @@
 
                     <ul class="list-inline">
                         <li v-for="category in s.el.categories" class="list-inline-item">
-                            <span class="badge bg-primary text-white">
+                            <a :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
                                 {{category}}
-                            </span>
+                            </a>
                         </li>
                     </ul>
 
-                    <small v-if="s.el.base && entries[s.el.base]">
+                    <div v-if="s.el.base && entries[s.el.base]" class="small">
                         <p><strong><T>nouns.edited</T>:</strong></p>
                         <ul class="list-untyled">
                             <li v-for="w in entries[s.el.base].insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
@@ -75,7 +75,7 @@
                             </span>
                             </li>
                         </ul>
-                    </small>
+                    </div>
                 </td>
                 <td>
                     <ul class="list-untyled">
@@ -324,10 +324,12 @@
         }
     }
 
-    .text-filter {
-        * {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        .text-filter {
+            * {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
         }
     }
     .category-filter {

@@ -73,7 +73,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'sexual orientation'
+            - 'romantic orientation'
+            - 'tertiary orientation'
+            - 'gender'
+            - 'gender expression'
+            - 'relationship model'
+            - 'language'
+            - 'attraction'
+            - 'politics'
+        route: 'terms'
 
 names:
     enabled: false
