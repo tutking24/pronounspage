@@ -3,7 +3,7 @@
         <Separator icon="pen-nib"/>
         <h3>Deklinationsmuster</h3>
         <p>
-            The following are proposed declension patterns for various forms of gender-neutral nouns.
+            Die Folgenden sind vorschläge für ein Deklinationsmuster für verschiedene Formen von geschlechtsneutralen Substantiven.
         </p>
         <div class="row">
             <div v-for="({declension, warning = null}, name) in declensions" class="col-12 col-lg-4">
