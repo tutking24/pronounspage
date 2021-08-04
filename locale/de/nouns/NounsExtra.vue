@@ -1,18 +1,9 @@
 <template>
     <div>
         <Separator icon="pen-nib"/>
-        <h3>TODO // how to call this section?</h3>
+        <h3>Deklinationsmuster</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum mi et felis volutpat,
-            quis posuere nulla bibendum. Nunc hendrerit ipsum sit amet nulla blandit, non interdum lectus vehicula.
-            Phasellus vehicula convallis tellus, quis viverra metus tempor placerat. Phasellus volutpat porta dolor,
-            sed tincidunt tortor tincidunt sit amet. In dignissim sem viverra sapien posuere, pulvinar molestie
-            enim malesuada.
-        </p>
-        <p>
-            Fusce sit amet facilisis est, quis tincidunt tortor. Ut ullamcorper nulla nisi,
-            facilisis efficitur ex faucibus ac. Sed non magna justo. Vivamus pharetra leo sed cursus gravida.
-            Aenean placerat placerat quam a egestas.
+            Die Folgenden sind vorschläge für ein Deklinationsmuster für verschiedene Formen von geschlechtsneutralen Substantiven.
         </p>
         <div class="row">
             <div v-for="({declension, warning = null}, name) in declensions" class="col-12 col-lg-4">

@@ -124,7 +124,7 @@ nouns:
             Inklusive und geschlechtsneutrale Sprache heißt nicht nur die Pronomen einer Person zu respektieren.
             Auch die Beschreibung des Jobs, der Position, der Beziehung, etc.,
             kann in einer Weise genutzt werden, die nicht gleich auf das Geschlecht schließen lässt.
-            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jede:r Ehepartner:in ist eine “Ehefrau” oder ein “Ehemann”.
+            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jede*r Ehepartner*in ist eine “Ehefrau” oder ein “Ehemann”.
         - >
             Wenn du dich auf eine Person beziehst, deren Geschlecht du nicht kennst,
             auf eine Gruppe gemischten Geschlechts
@@ -234,8 +234,8 @@ faq:
                     Online ist es noch einfacher: Füge einfach deine Pronomen (oder einen Link zu Beispielen von unserer Website) zu deiner “Bio” hinzu.
                 - >
                     Denke auch daran, dass manche Menschen je nach Situation einen anderen Namen und andere Pronomen verwenden könnten.
-                    Sie hatten vielleicht vor manchen Freunden oder Arbeitskolleg:innen noch kein Coming Out, aber bei anderen Freund:innen fühlen sie sich wohl und leben ihre Wahrheit.
-                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: “Welche Pronomen soll ich vor deiner:m Chef:in benutzen?”, etc.
+                    Sie hatten vielleicht vor manchen Freunden oder Arbeitskolleg*innen noch kein Coming Out, aber bei anderen Freund*innen fühlen sie sich wohl und leben ihre Wahrheit.
+                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: “Welche Pronomen soll ich vor deiner*m Chef*in benutzen?”, etc.
                 - >
                     Manche Menschen geben mehrere Pronomen an, z.B. “{/er&sie=er/sie}” oder “{/sier&er=sier/er}”.
                     Das bedeutet, dass sie alle diese Formen mögen. Normalerweise ist die erste die bevorzugte.
@@ -253,7 +253,7 @@ faq:
                     Es ist nur ein Werkzeug, das wir zur Kommunikation verwenden.
                     Wenn wir uns als Gesellschaft verändern und sich die Welt um uns verändert,
                     passen wir die Sprache an, die wir verwenden, um diese besser beschreiben zu können.
-                    Wir sind die Nutzer:innen, also sind <em>wir die Autorität</em> wie wir es benutzen wollen.
+                    Wir sind die Nutzer*innen, also sind <em>wir die Autorität</em> wie wir es benutzen wollen.
                 - >
                     Wörterbücher brauchen ihre Zeit, um diese Änderungen zu berücksichtigen,
                     was die Änderung in keiner Weise unrechtmäßig macht.
@@ -338,7 +338,7 @@ english: ~
 
 contact:
     header: 'Kontakt'
-    authors: 'Autor:innen der Website'
+    authors: 'Autor*innen der Website'
     team:
         name: 'Das “Neutral Language Council” Kollektiv'
         description:
@@ -352,7 +352,7 @@ contact:
 support:
     header: 'Unterstütze uns'
     description: >
-        Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor:innen einfach ein Bier ausgeben willst,
+        Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor*innen einfach ein Bier ausgeben willst,
         kannst du den untenstehenden Link nutzen:
 
 user:
@@ -363,7 +363,7 @@ user:
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
         action: 'Einloggen'
         emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
-        userNotFound: 'Nutzer:in nicht gefunden.'
+        userNotFound: 'Nutzer*in nicht gefunden.'
         email:
             subject: 'Dein Logincode ist %code%'
             content: |
@@ -413,7 +413,7 @@ profile:
     flags: 'Flaggen'
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
-    flagsCustomWarning: 'Diese Flagge wurde von einer:m Nutzer:in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
+    flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
     links: 'Links'
     linksCake: 'Wir empfehlen Verlinkung zu'
     column: 'Spalte'
@@ -489,7 +489,7 @@ terms:
 admin:
     header: 'Verwaltungsbereich'
     user:
-        user: 'Nutzer:in'
+        user: 'Nutzer*in'
         email: 'E-Mail'
         roles: 'Rolle'
         profiles: 'Profile'
@@ -530,7 +530,7 @@ mode:
 
 ban:
     reason: 'Grund der Sperrung'
-    visible: '(dies wird der:m Nutzer:in sichtbar sein)'
+    visible: '(dies wird der*m Nutzer*in sichtbar sein)'
     action: 'Diese Person sperren'
     confirm: 'Bist du sicher, die Person @%username% zu sperren?'
     header: 'Du wurdest gesperrt. Dein Profil kann nicht mehr angesehen werden.'
@@ -562,6 +562,7 @@ flags:
     Bear: 'Bär'
     Bicurious: 'Bineugierig'
     Bigender: 'Bigeschlechtlich'
+    Biromantic: 'Biromantisch'
     Bisexual: 'Bisexuell'
     Butch: 'Butch'
     Ceteroromantic: 'Ceteroromantisch'
@@ -593,8 +594,9 @@ flags:
     Homoromantic: 'Homoromantisch'
     Intersex: 'Intergeschlechtlich'
     LGBTQ: 'LSBTQ'
-    Leather_Pride: 'Leather-Pride'
+    Leather_Pride: 'Leder Pride'
     Lesbian: 'Lesbisch'
+    Lesbiromantic: 'Lesbiromantisch'
     Maverique: 'Maverique'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisch'
