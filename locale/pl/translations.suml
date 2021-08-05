@@ -282,6 +282,24 @@ nouns:
         extended:
             header: 'Przykład odmiany'
 
+    xNouns:
+        header: 'Iksatywy'
+        label: 'iksatyw'
+        info:
+            - >
+                Formy graficzne, takie jak {/onx=onx}, {/on*/=on*} czy {/on_=on_} używają placeholderów / znaków zastępujących
+                w miejscu różnic między wersją męską a żeńską.
+                Są przydatne w piśmie, ale ciężkie lub niemożliwe do wymówienia (mogą też sprawiać problemy czytnikom ekranowym).
+                Intencja jest łatwa do zrozumienia. Często są też używane w zwrotach do grupy osób lub osoby o nieznanej płci.
+            - >
+                Znaków zastępujących można używać również dla rzeczowników.
+                Ze względu na popularność form z iksem, prezentujemy je tutaj na przykładzie iksatywów,
+                ale można wymienić „x” na inny placeholder.
+            - >
+                Liczbę mnogą proponujemy zaznaczać za pomocą podwójnego iksa, np. „partner” → „partnerxx”.
+        extended:
+            header: 'Przykład odmiany'
+
     neuterNouns:
         header: 'Neutratywy'
         label: 'neutratyw'
