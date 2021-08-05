@@ -68,8 +68,6 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    return res.json({});
-
     const users = await req.db.all(SQL`
         SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
         FROM users u
