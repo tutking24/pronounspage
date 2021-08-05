@@ -68,7 +68,7 @@ sources:
         ono/jenu: 'ono'
         vono/vego: 'ono'
         ono/eno: 'ono'
-    extraTypes: ['dukatywy', 'osobatywy', 'unikanie']
+    extraTypes: ['neutratywy', 'dukatywy', 'osobatywy', 'iksatywy', 'unikanie']
 
 nouns:
     enabled: true
@@ -83,6 +83,7 @@ nouns:
         - 'neutratywy'
         - 'dukatywy'
         - 'osobatywy'
+        - 'iksatywy'
     inclusive:
         enabled: true
         categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
