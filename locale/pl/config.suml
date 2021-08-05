@@ -721,7 +721,17 @@ links:
             url: 'https://www.filmawka.pl/gender-queer-niebinarna-autobiografia-recenzja/'
             headline: '“Gender queer” – niebinarna autobiografia \[RECENZJA]'
             extra: ' – <strong>Filmawka.pl</strong>'
-
+        -
+            icon: 'newspaper'
+            url: 'https://www.miastokobiet.pl/plec-inna-czym-jest-niebinarnosc/'
+            headline: 'Płeć: inna. Czym jest niebinarność?'
+            extra: ' – Milo Migacz, <strong>Miasto Kobiet</strong>'
+            quote: >
+                Tworzenie nowych, neutralnych płciowo określeń w języku polskim to ciężka praca.
+                Nie tylko dla ludzi z zewnątrz. My, osoby używające ich na co dzień,
+                także kiedyś potrzebowałyśmy się tego nauczyć i nieraz musimy stworzyć jakiś wyraz od nowa.
+                Pomagają nam w tym takie inicjatywy, jak Słownik Neutratywów Języka Polskiego na stronie zaimki.pl.
+                Polecam ją serdecznie każdemu, kto chce dowiedzieć się więcej.
     socials:
         -
             icon: 'twitter'
