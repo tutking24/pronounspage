@@ -38,21 +38,20 @@ home:
         base: '根據'
         alt: '您還可以在每個字段中分別輸入可互換形式 - <code> 他&她 </code> = „他” 或 „她”.'
     whatisit: '代詞是什麼意思？'
-    # TODO
+
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: '我們的任務：'
+        summary: '我們爭取語言的自由、尊重和包容性。'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>自由</strong>
+            – 讓所有人能夠使用他們覺得適合自己的代詞。
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>尊重</strong>
+            – 讓其他人的代詞受到尊重。
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>包容性</strong>
+            – 讓我們指稱我們不知道的人或群體時，
+            不會以任何理由假設其性別或排斥他們。
 
 pronouns:
     examples: '例句用法'
@@ -422,7 +421,7 @@ profile:
         link: '名片圖片'
         generating: '生成中……'
     empty: '此用戶還沒有創造任何名片'
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    loginRequired: '{/account=登入}以提交項目'
 
 share: '這裡'
 
