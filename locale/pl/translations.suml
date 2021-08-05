@@ -296,7 +296,9 @@ nouns:
                 Ze względu na popularność form z iksem, prezentujemy je tutaj na przykładzie iksatywów,
                 ale można wymienić „x” na inny placeholder.
             - >
-                Liczbę mnogą proponujemy zaznaczać za pomocą podwójnego iksa, np. „partner” → „partnerxx”.
+                Iksatywy pasują gramatycznie do {/onx=form z iksem}, np. „mojx pięknx partnerx przyszłx do domu”.
+                Są nieodmienne.
+                Liczbę mnogą proponujemy zaznaczać za pomocą podwójnego iksa, np. „partnerx” → „partnerxx”.
         extended:
             header: 'Przykład odmiany'
 
