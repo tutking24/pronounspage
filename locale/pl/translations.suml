@@ -285,6 +285,8 @@ nouns:
     xNouns:
         header: 'Iksatywy'
         label: 'iksatyw'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesioną literą „x”.'
         info:
             - >
                 Formy graficzne, takie jak {/onx=onx}, {/on*/=on*} czy {/on_=on_} używają placeholderów / znaków zastępujących
