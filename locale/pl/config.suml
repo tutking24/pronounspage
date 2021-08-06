@@ -733,6 +733,18 @@ links:
                 także kiedyś potrzebowałyśmy się tego nauczyć i nieraz musimy stworzyć jakiś wyraz od nowa.
                 Pomagają nam w tym takie inicjatywy, jak Słownik Neutratywów Języka Polskiego na stronie zaimki.pl.
                 Polecam ją serdecznie każdemu, kto chce dowiedzieć się więcej.
+        -
+            icon: 'newspaper'
+            url: 'https://krytykapolityczna.pl/kraj/emilia-wisniewska-mow-do-mnie-tak-jak-ci-niewygodnie/'
+            headline: 'Mów do mnie tak, jak ci niewygodnie. Jakoś to przeżyjesz. Nie-polemika z Kingą Dunin'
+            extra: ' – Emilia Wiśniewska, Prezeska Fundacji Trans-Fuzja, <strong>Krytyka Polityczna</strong>'
+            quote: >
+                Pomocny w poukładaniu sobie tego bardziej po swojemu był dla mnie tekst, który Andrea opublikowało
+                na stronie zaimki.pl, {/blog/mów-jak-mi-wygodnie=Mów do mnie, jak MI wygodnie}. Andrea zwraca uwagę na to, co i ja wiedziałam,
+                siadając do pisania – że doświadczenia niebinarności nie da się skondensować w samym pisaniu o zaimkach.
+                Odsyłam do tego tekstu, bo Andrea trafiło w punkt z wieloma kwestiami problematycznymi w tekście Dunin.
+            response: >
+                Nasza reakcja: {https://twitter.com/neutratywy/status/1423636780922949636=Wątek na Twitterze}
     socials:
         -
             icon: 'twitter'
