@@ -32,10 +32,10 @@
         <section>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <Socials/>
+                    <LanguageVersions/>
                 </div>
                 <div class="col-12 col-md-6">
-                    <LanguageVersions/>
+                    <Socials/>
                 </div>
             </div>
             <Support/>
