@@ -14,7 +14,7 @@ home:
             Udostępniamy tutaj linki do przykładów użycia
             (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
             zaimków i innych form płciowych – nie tylko normatywnych „{/on=on}” i „{/ona=ona}”,
-            lecz także form niebinarnych.
+            lecz także form niebinarnych, takich jak {/ono=rodzaj neutralny} czy {/onu=postpłciowy}.
         - >
             Dlaczego należy je respektować?
             Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
@@ -35,7 +35,7 @@ home:
         - >
             Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
             „moje {/slowniki/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
-            „proszę przyjść do szkoły z {rodzic}em”,
+            „proszę przyjść do szkoły z {/slowniki/neutratywy#rodzic=rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
             „{/oni=dzwonili} z gazowni”,
             „będę robić”, itp.
