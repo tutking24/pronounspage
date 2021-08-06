@@ -134,7 +134,6 @@
                     icon: 'home',
                     text: this.$t('home.header'),
                     textLong: this.$t('home.headerLong'),
-                    extra: ['all'],
                 });
 
                 if (this.config.pronouns.enabled) {
@@ -143,7 +142,7 @@
                         icon: 'tags',
                         text: this.$t('pronouns.header'),
                         textLong: this.$t('pronouns.headerLong'),
-                        extra: ['/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
+                        extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
                     });
                 }
 
