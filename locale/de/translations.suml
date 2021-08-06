@@ -55,6 +55,8 @@ home:
             reden, nicht ihr Geschlecht annehmen und sie nicht aus irgendeinem Grund ausschließen.
 
 pronouns:
+    header: 'Pronomen'
+    headerLong: 'Pronomen'
     examples: 'Beispiel-Nutzung in Sätzen'
     plural: 'Plural'
     intro: 'Meine Pronomen sind'

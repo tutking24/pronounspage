@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronombres'
     default: 'él'
     any: 'any'
     plurals: false

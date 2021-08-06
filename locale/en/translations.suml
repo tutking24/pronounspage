@@ -56,6 +56,8 @@ home:
             we don't assume their gender and don't exclude them for any reason.
 
 pronouns:
+    header: 'Pronouns'
+    headerLong: 'Pronouns'
     examples: 'Example usage in sentences'
     plural: 'Plural'
     intro: 'My pronouns are'

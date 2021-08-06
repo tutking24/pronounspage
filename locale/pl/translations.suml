@@ -68,6 +68,8 @@ home:
             nie zakładać ich płci i {/slowniki/inkluzywny=nie wykluczać}.
 
 pronouns:
+    header: 'Zaimki'
+    headerLong: 'Niebinarne zaimki i inne formy'
     examples: 'Przykłady użycia w zdaniu'
     plural: 'Liczba mnoga'
     intro: 'Moje zaimki to'
