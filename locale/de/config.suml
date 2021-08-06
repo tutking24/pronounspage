@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronomen'
     default: 'er'
     any: 'beliebige'
     plurals: true

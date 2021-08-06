@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronouns'
     default: '他'
     any: 'any'
     plurals: true

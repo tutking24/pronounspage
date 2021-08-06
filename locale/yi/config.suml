@@ -5,6 +5,7 @@ header: true
 
 pronouns:
     enabled: true
+    routes: 'pronouns'
     default: 'ער'
     any: 'any'
     plurals: true

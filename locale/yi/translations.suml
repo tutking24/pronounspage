@@ -57,6 +57,8 @@ home:
             we don't assume their gender and don't exclude them for any reason.
 
 pronouns:
+    header: 'פּראָנאָמען'
+    headerLong: 'פּראָנאָמען'
     examples: 'Example usage in sentences'
     plural: 'מערצאָל'
     intro: 'מײַנע פּראָנאָמען זענען'
@@ -538,7 +540,7 @@ error:
     generic: 'Something went wrong, please try again…'
 
 mode:
-    dark: 'טונקלמאָדוס' 
+    dark: 'טונקלמאָדוס'
     light: 'ליכטמאָדוס'
 
 # TODO

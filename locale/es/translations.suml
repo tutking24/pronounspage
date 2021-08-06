@@ -58,6 +58,8 @@ home:
 
 
 pronouns:
+    header: 'Pronombres'
+    headerLong: 'Pronombres'
     examples: 'Ejemplos de uso en oraciones'
     plural: 'Plural'
     intro: 'Mis pronombres son'

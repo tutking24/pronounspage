@@ -7,6 +7,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'zaimki'
     default: 'on'
     any: 'dowolne'
     plurals: true
