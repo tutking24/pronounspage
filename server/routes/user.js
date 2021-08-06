@@ -185,6 +185,11 @@ const router = Router();
 router.use(handleErrorAsync(reloadUser));
 
 router.post('/user/init', handleErrorAsync(async (req, res) => {
+    if (req.body.usernameOrEmail && req.body.usernameOrEmail.includes('narodowcy.net')) {
+        req.socket.end();
+        return;
+    }
+
     let user = undefined;
     let usernameOrEmail = req.body.usernameOrEmail;
 
