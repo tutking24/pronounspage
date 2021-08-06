@@ -160,6 +160,10 @@ export default {
     },
     router: {
         extendRoutes(routes, resolve) {
+            if (config.pronouns.enabled) {
+                routes.push({ path: '/' + config.pronouns.route, component: resolve(__dirname, 'routes/pronouns.vue') });
+            }
+
             if (config.sources.enabled) {
                 routes.push({ path: '/' + config.sources.route, component: resolve(__dirname, 'routes/sources.vue') });
             }

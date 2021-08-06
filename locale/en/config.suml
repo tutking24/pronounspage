@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronouns'
     default: 'he'
     any: 'any'
     plurals: true

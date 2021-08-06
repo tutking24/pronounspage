@@ -134,8 +134,17 @@
                     icon: 'home',
                     text: this.$t('home.header'),
                     textLong: this.$t('home.headerLong'),
-                    extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null ],
                 });
+
+                if (this.config.pronouns.enabled) {
+                    links.push({
+                        link: '/' + this.config.pronouns.route,
+                        icon: 'tags',
+                        text: this.$t('pronouns.header'),
+                        textLong: this.$t('pronouns.headerLong'),
+                        extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
+                    });
+                }
 
                 if (this.config.sources.enabled) {
                     links.push({
