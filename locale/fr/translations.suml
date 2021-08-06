@@ -55,6 +55,8 @@ home:
             nous ne devinions pas et n'excluons pas leur genre(s).
 
 pronouns:
+    header: 'Pronoms'
+    headerLong: 'Pronoms'
     examples: 'Exemple d’usage dans des phrases'
     plural: 'Pluriel'
     intro: 'Mes pronoms sont'
