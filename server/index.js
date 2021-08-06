@@ -13,7 +13,14 @@ global.config = loadSuml('config');
 const app = express()
 app.enable('trust proxy')
 
-app.use(express.json());
+app.use(express.json({
+    verify: (req, res, buf) => {
+        if (buf.includes(Buffer.from('narodowcy.net', 'utf-8'))) {
+            req.socket.end();
+            throw 'fuck off';
+        }
+    }
+}));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({
