@@ -12,12 +12,10 @@
                 <T>nouns.xNouns.info</T>
                 <p><Share :title="$t('nouns.xNouns.header')"/></p>
             </div>
-            <!--
             <figure>
-                <img src="/img/dukaizmy.png" :alt="$t('nouns.xNouns.flag.alt')"/>
-                <figcaption><T>nouns.xNouns.flag.caption</T></figcaption>
+                <img src="/img/iksatywy.png" :alt="$t('nouns.xNouns.flag.alt')"/>
+                <!--<figcaption><T>nouns.xNouns.flag.caption</T></figcaption>-->
             </figure>
-            -->
         </div>
 
         <details open class="border mb-3">
