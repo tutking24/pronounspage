@@ -746,6 +746,18 @@ links:
                 Odsyłam do tego tekstu, bo Andrea trafiło w punkt z wieloma kwestiami problematycznymi w tekście Dunin.
             response: >
                 Nasza reakcja: {https://twitter.com/neutratywy/status/1423636780922949636=Wątek na Twitterze}
+        -
+            icon: 'newspaper'
+            url: 'https://www.sport.pl/igrzyska-olimpijskie/7,154863,27422884,pierwsza-osoba-transplciowa-z-medalem-igrzysk-olimpijskich.html'
+            headline: 'Pierwsza osoba transpłciowa z medalem igrzysk olimpijskich. I to od razu złotym!'
+            extra: ' – <strong>Sport.pl</strong>'
+            quote: >
+                W kadrze Kanady znalazłx się Quinn (używa tylko imienia), traspłciowx piłkarx,
+                którx zostałx tym samym pierwszą osobą transpłciową i niebinarną,
+                która zdobyła medal igrzysk olimpijskich (w języku angielskim stosuje zaimki they/them,
+                które na polski w kontekście osób niebinarnych możemy tłumaczyć różnorako \[link do zaimki.pl]).
+                Quinn brałx udział w igrzyskach w Rio i ma w swojej kolekcji brąz, ale wtedy przystąpiłx
+                do rywalizacji jeszcze jako Rebecca Quinn. Coming outu dokonałx w 2020 roku.
     socials:
         -
             icon: 'twitter'
