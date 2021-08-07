@@ -3,6 +3,7 @@
          :data-theme="isDark ? 'dark' : 'light'"
          :data-sitekey="siteKey"
          data-callback="hCaptchaDone"
+         style="height: 73px"
     ></div>
 </template>
 
