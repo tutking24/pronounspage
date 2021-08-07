@@ -16,6 +16,13 @@ const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
 const normalise = s => s.trim().toLowerCase();
 
+const isSpam = (email) => {
+    return email === 'jav.i.e.rfr.anci.sc.ot.m.p@gmail.com'
+        || email.contains('dogazu')
+        || email.contains('narodowcy.net')
+        || email.length > 128;
+}
+
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
@@ -185,9 +192,13 @@ const router = Router();
 router.use(handleErrorAsync(reloadUser));
 
 router.post('/user/init', handleErrorAsync(async (req, res) => {
-    if (req.body.usernameOrEmail && req.body.usernameOrEmail.includes('narodowcy.net')) {
+    if (req.body.usernameOrEmail && isSpam(req.body.usernameOrEmail || '')) {
         req.socket.end();
         return;
+    }
+
+    if (!await validateCaptcha(req.body.captchaToken)) {
+        return res.json({error: 'user.login.captchaInvalid'});
     }
 
     let user = undefined;
@@ -288,7 +299,7 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/user/change-email', handleErrorAsync(async (req, res) => {
-    if (!req.user) {
+    if (!req.user || req.user.bannedReason || isSpam(req.body.email || '')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
