@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <form @submit.prevent="login" :disabled="saving">
+                    <form @submit.prevent="login" :disabled="saving" class="mb-4">
                         <input type="text" class="form-control mb-3" v-model="usernameOrEmail"
                                :placeholder="$t('user.login.placeholder')" autofocus required/>
                         <p class="small text-muted mb-1">
@@ -19,7 +19,11 @@
                             <T>captcha.reason</T>
                         </p>
                         <Captcha class="h-captcha" v-model="captchaToken"/>
-                        <button class="btn btn-primary mt-3" :disabled="!canInit">
+                        <button class="btn btn-primary mt-3 d-none d-md-block" :disabled="!canInit">
+                            <Icon v="sign-in"/>
+                            <T>user.login.action</T>
+                        </button>
+                        <button class="btn btn-primary mt-3 d-block d-md-none w-100" :disabled="!canInit">
                             <Icon v="sign-in"/>
                             <T>user.login.action</T>
                         </button>

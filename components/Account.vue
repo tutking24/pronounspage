@@ -57,10 +57,15 @@
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
                         <div v-if="!changeEmailAuthId" class="">
                             <input type="email" class="form-control mb-3" v-model="email" required/>
-                            <div class="d-flex">
+                            <div class="d-flex flex-column flex-md-row">
                                 <Captcha v-model="captchaToken"/>
-                                <div class="ms-3">
+                                <div class="d-none d-md-block ms-3">
                                     <button class="btn btn-outline-primary" :disabled="!canChangeEmail">
+                                        <T>user.account.changeEmail.action</T>
+                                    </button>
+                                </div>
+                                <div class="d-block d-md-none mt-3">
+                                    <button class="btn btn-outline-primary w-100" :disabled="!canChangeEmail">
                                         <T>user.account.changeEmail.action</T>
                                     </button>
                                 </div>
