@@ -17,7 +17,9 @@ const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 const normalise = s => s.trim().toLowerCase();
 
 const isSpam = (email) => {
-    return email.replace(/\./g, '') === 'javierfranciscotmp@gmailcom'
+    const noDots = email.replace(/\./g, '');
+    return noDots === 'javierfranciscotmp@gmailcom'
+        || noDots === 'leahmarykathryntmp@gmail.com'
         || email.contains('dogazu')
         || email.contains('narodowcy.net')
         || email.length > 128;
