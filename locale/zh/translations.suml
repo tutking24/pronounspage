@@ -506,6 +506,11 @@ images:
 error:
     generic: '出了點問題，請重試...'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: '黑暗模式'
     light: '明亮模式'

@@ -539,6 +539,11 @@ images:
 error:
     generic: 'Something went wrong, please try again…'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: 'טונקלמאָדוס'
     light: 'ליכטמאָדוס'

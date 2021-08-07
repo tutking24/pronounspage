@@ -536,6 +536,11 @@ images:
 error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: 'Modo escuro'
     light: 'Modo claro'

@@ -521,6 +521,11 @@ images:
 error:
     generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: 'Donkere modus'
     light: 'Lichte modus'
