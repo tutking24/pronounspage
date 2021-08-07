@@ -8,6 +8,7 @@ export default [
     'article_d',
     'article_a',
     'demonstrative_n',
-    'possesive_object',
-    'noun',
+    'demonstrative_g',
+    'demonstrative_d',
+    'demonstrative_a',
 ];
