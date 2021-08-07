@@ -199,10 +199,6 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
         return;
     }
 
-    if (!await validateCaptcha(req.body.captchaToken)) {
-        return res.json({error: 'user.login.captchaInvalid'});
-    }
-
     let user = undefined;
     let usernameOrEmail = req.body.usernameOrEmail;
 
