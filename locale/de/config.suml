@@ -81,13 +81,22 @@ links:
             url: 'https://geschlechtsneutral.net/'
             headline: 'Verein für geschlechtsneutrales Deutsch'
         -
-            icon: 'newspaper'
-            url: 'https://www.luebeck.de/de/presse/pressemeldungen/view/134698'
-            headline: 'Lübeck führt einheitliche geschlechtergerechte Sprache ein'
-        -
             icon: 'lightbulb-on'
             url: 'https://www.annaheger.de/pronomen/'
             headline: 'Pronomen ohne Geschlecht – Illi Anna Heger'
+        -
+            lang: ['en']
+            icon: 'atlas'
+            url: 'https://nonbinary.wiki/wiki/Gender_neutral_language_in_German'
+            headline: 'Nonbinary.wiki: Gender neutral language in German'
+        -
+            icon: 'atlas'
+            url: 'https://nibi.space/pronomen'
+            headline: 'Nichtbinär-Wiki: Pronomen'
+        -
+            icon: 'newspaper'
+            url: 'https://www.luebeck.de/de/presse/pressemeldungen/view/134698'
+            headline: 'Lübeck führt einheitliche geschlechtergerechte Sprache ein'
     academic: []
     mediaGuests: []
     mediaMentions: []
