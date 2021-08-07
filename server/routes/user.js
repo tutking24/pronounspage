@@ -8,6 +8,7 @@ import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 import cookieSettings from "../../src/cookieSettings";
+import {validateCaptcha} from "../captcha";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -197,6 +198,10 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
     if (req.body.usernameOrEmail && isSpam(req.body.usernameOrEmail || '')) {
         req.socket.end();
         return;
+    }
+
+    if (!await validateCaptcha(req.body.captchaToken)) {
+        return res.json({error: 'captcha.invalid'});
     }
 
     let user = undefined;

@@ -611,6 +611,10 @@ images:
 error:
     generic: 'Something went wrong, please try again…'
 
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: 'Dark mode'
     light: 'Light mode'

@@ -3,34 +3,45 @@
         <Alert type="danger" :message="error"/>
 
         <div v-if="token === null">
-            <form @submit.prevent="login" :disabled="saving">
-                <p>
+            <div class="alert alert-info mb-3">
+                <p class="mb-0">
                     <Icon v="info-circle"/>
                     <T>user.login.why</T>
                 </p>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" v-model="usernameOrEmail"
-                           :placeholder="$t('user.login.placeholder')" autofocus required/>
-                    <button class="btn btn-primary">
-                        <Icon v="sign-in"/>
-                        <T>user.login.action</T>
-                    </button>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <form @submit.prevent="login" :disabled="saving">
+                        <input type="text" class="form-control mb-3" v-model="usernameOrEmail"
+                               :placeholder="$t('user.login.placeholder')" autofocus required/>
+                        <p class="small text-muted mb-1">
+                            <Icon v="info-circle"/>
+                            <T>captcha.reason</T>
+                        </p>
+                        <Captcha class="h-captcha" v-model="captchaToken"/>
+                        <button class="btn btn-primary mt-3" :disabled="!canInit">
+                            <Icon v="sign-in"/>
+                            <T>user.login.action</T>
+                        </button>
+                    </form>
                 </div>
-                <div class="btn-group w-100 mb-3">
-                    <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
-                        <Icon :v="providerOptions.icon || provider" set="b"/>
-                        {{ providerOptions.name }}
-                    </a>
+                <div class="col-12 col-md-4">
+                    <div class="btn-group-vertical w-100 mb-3">
+                        <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                            <Icon :v="providerOptions.icon || provider" set="b"/>
+                            {{ providerOptions.name }}
+                        </a>
+                    </div>
+                    <p class="small text-muted">
+                        <Icon v="gavel"/>
+                        <T>terms.consent</T>
+                    </p>
+                    <p class="small text-muted">
+                        <Icon v="lock"/>
+                        <T>user.login.passwordless</T>
+                    </p>
                 </div>
-                <p class="small text-muted">
-                    <Icon v="gavel"/>
-                    <T>terms.consent</T>
-                </p>
-                <p class="small text-muted">
-                    <Icon v="lock"/>
-                    <T>user.login.passwordless</T>
-                </p>
-            </form>
+            </div>
         </div>
         <div v-else-if="payload && !payload.code">
             <div class="alert alert-success">
@@ -74,6 +85,8 @@
                 socialProviders,
 
                 saving: false,
+
+                captchaToken: null,
             };
         },
         computed: {
@@ -90,7 +103,10 @@
                     audience: this.$base,
                     issuer: this.$base,
                 });
-            }
+            },
+            canInit() {
+                return this.usernameOrEmail && this.captchaToken;
+            },
         },
         methods: {
             async login() {
@@ -98,24 +114,31 @@
                     return;
                 }
                 this.saving = true;
-                await this.post(`/user/init`, {
-                    usernameOrEmail: this.usernameOrEmail
-                });
-                this.saving = false;
+                try {
+                    await this.post(`/user/init`, {
+                        usernameOrEmail: this.usernameOrEmail,
+                        captchaToken: this.captchaToken,
+                    });
+                } finally {
+                    this.saving = false;
+                }
             },
             async validate() {
                 if (this.saving) {
                     return;
                 }
                 this.saving = true;
-                await this.post(`/user/validate`, {
-                    code: this.code
-                }, {
-                    headers: {
-                        authorization: 'Bearer ' + this.token,
-                    },
-                });
-                this.saving = false;
+                try {
+                    await this.post(`/user/validate`, {
+                        code: this.code
+                    }, {
+                        headers: {
+                            authorization: 'Bearer ' + this.token,
+                        },
+                    });
+                } finally {
+                    this.saving = false;
+                }
             },
             async post(url, data, options = {}) {
                 this.error = '';
