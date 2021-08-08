@@ -107,7 +107,7 @@ sources:
         extra: 'Ekstra info (oversetter, navn på journal, …)'
         year: 'Utgitt år (av den Norske versjonen)'
         fragments: 'Fragmenter'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'  # TODO
+        fragmentsInfo: 'Du kan markere de relevante pronomenene ved å bruke firkantede parenteser: “Så så \[\[de]] hvordan \[\[de]] gjorde alt det mot \[\ [dem selv]].”'
         comment: 'Kommentar'
         link: 'Link til innholdet'
         thanks: 'Takk for at du bidrar!'
@@ -530,15 +530,13 @@ images:
 error:
     generic: 'Noe gikk galt, vennligst prøv igjen...'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Vennligst bevis at du ikke er en robot for å minske spam og DDoS angrep.'
+    invalid: 'Ugyldig CAPTCHA, vennligst prøv igjen'
 
-# TODO
 mode:
-    dark: 'Dark mode'
-    light: 'Light mode'
+    dark: 'Mørkt tema'
+    light: 'Lyst tema'
 
 ban:
     reason: 'Grunn til forbud'
