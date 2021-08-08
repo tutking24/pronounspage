@@ -62,6 +62,7 @@ nouns:
             - 'politikk'
         route: 'terminologi'
 
+
 names:
     enabled: false
 
