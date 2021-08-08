@@ -423,7 +423,7 @@ profile:
     linksCake: 'Vi anbefaler å linke til'
     column: 'Kolonne'
 
-    header: 'Cards' # TODO
+    header: 'Kort'
     list: 'Dine kort'
     init: 'Lag et kort'
     show: 'Vis'
@@ -606,12 +606,12 @@ flags:
     Homoromantic: 'Homoromantisk'
     Intersex: 'Intersex'
     LGBTQ: 'LHBTQ'
-    Leather_Pride: 'Leather pride'
+    Leather_Pride: 'Lær pride'
     Lesbian: 'Lesbisk'
     Lesbiromantic: 'Lesbiromantisk'
     Maverique: 'Maverique'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebularomantic'
+    Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'
     Neutrois: 'Nøytral'
     Nonbinary: 'Ikke binær'
