@@ -198,7 +198,7 @@ faq:
                     Avhengig av sted og tid, å være “en kvinne” eller “en mann ” kan bety å ha veldig forskjellige
                     rettigheter, plikter, normer… I Europa, pleide menn å gå med høye hæler og strømpebukser
                     innfødte folk av Nord Amerika har kjent igjen et tredje kjønn for århundrer
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    {https://gender.wikia.org/wiki/Two-Spirit=(to åndelig)}, etc. etc.
                 - >
                     Intetkjønn eller Ikke-binær er et begrep som beskriver identiteten til
                     de som ikke passer inn i de binære mann/kvinne båsene.
@@ -207,7 +207,7 @@ faq:
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
                     {https://gender.wikia.org/wiki/Demigirl=demigirls},
                     {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    i {https://gender.wikia.org/wiki/Non-binary=and many many others}.
+                    i {https://gender.wikia.org/wiki/Non-binary=og mange mange andre}.
                 - >
                     Intetkjønn er ikke nødvendigvis noe “imellom” maskulinitet og feminitet. Mer som “bortenfor”.
                     Ikke binære folk må ikke være androgyne, må ikke bruke nøytrale pronomen, etc.
@@ -288,7 +288,7 @@ faq:
                     Akk, det avslører oss også og singler oss ut.
                     Men hvis cis personer gjør det samme, betyr det så mye for oss.
                     Det får oss til å føle oss mer komfortable, trygge og velkomne
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(flere grunner her).}
         change:
             question: 'Kan jeg bytte mine pronomen?'
             answer:
@@ -442,7 +442,7 @@ profile:
         Du kan også bruke nettsiden vår til å lage et kort, {/@andrea=sånn som denne},
         som inneholder navnene dine, pronomen, pride flagg, likte ord, etc.
          Så kan du linke den til din bil eller email bunntekst.
-        Bare lag en bruker her {/account=here}.
+        Bare lag en bruker {/account=her}.
     bannerButton: 'Lag et kort'
     card:
         link: 'Kort bilde'
@@ -467,7 +467,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
+        {https://gitlab.com/Avris/Zaimki=Source code} er lisensiert under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Innholdet er lisensiert under {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Kontakt, sosiale medier, hjelp'
