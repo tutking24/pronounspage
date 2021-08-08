@@ -1,5 +1,5 @@
 singular	plural	isHonorific
 Jeg synes {pronoun_subject} er veldig snill.		FALSE
-Jeg spurte {pronoun_object} om jeg kunne låne blyanten {possessive_determiner}.		FALSE
-{'pronoun_subject} fortalte meg at huset er {possessive_pronoun}.		FALSE
+Jeg spurte {pronoun_object} om jeg kunne låne blyanten {possessive}.		FALSE
+{'pronoun_subject} fortalte meg at huset er {possessive}.		FALSE
 {'pronoun_subject} sa {pronoun_subject} heller ville gjøre {reflexive}.		FALSE
