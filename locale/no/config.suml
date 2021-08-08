@@ -62,7 +62,7 @@ english:
 
 faq:
     enabled: true
-    route: 'oss'
+    route: 'faq'
 
 links:
     enabled: false
