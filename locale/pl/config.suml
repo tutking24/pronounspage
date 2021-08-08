@@ -91,6 +91,7 @@ nouns:
         route: 'inkluzywny'
     terms:
         enabled: true
+        published: true
         categories:
             - 'orientacja seksualna'
             - 'orientacja romantyczna'
