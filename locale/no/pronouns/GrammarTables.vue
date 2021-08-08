@@ -9,11 +9,10 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Subject</th>
-                    <th>Object</th>
-                    <th>Possessive determiner</th>
-                    <th>Possessive pronoun</th>
-                    <th>Reflexive</th>
+                    <th>Emne</th>
+                    <th>Gjenstand</th>
+                    <th>Possessiv</th>
+                    <th>Refleksiv</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -21,7 +20,6 @@
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_determiner" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_pronoun" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
                 </tr>
                 </tbody>
