@@ -29,12 +29,12 @@
         },
         computed: {
             link() {
-                if (!this.config.nouns.terms.enabled) {
+                if (!this.config.nouns.terms.enabled || !(this.config.nouns.terms.published || this.$isGranted('terms'))) {
                     return null;
                 }
 
                 for (let term of this.terms || []) {
-                    if (term.key.toLowerCase().includes(this.alt.toLowerCase())) {
+                    if (term.key && term.key.toLowerCase().includes(this.alt.toLowerCase())) {
                         return term.key;
                     }
                     if (term.term.toLowerCase().includes(this.name.toLowerCase())) {

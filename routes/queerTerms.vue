@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="config.nouns.terms.published || $isGranted('terms')">
         <NounsNav/>
 
         <h2>
@@ -14,6 +14,7 @@
 
         <TermsDictionary load ref="termsdictionary"/>
     </div>
+    <NotFound v-else/>
 </template>
 
 <script>
