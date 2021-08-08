@@ -20,10 +20,10 @@ home:
              Slik at du kan vise folk hvordan du liker å bli kalt.
         - >
             Hvorfor har det noe å si? På grunn av grunnleggende menneskelig anstendighet
-            Du ville vel ikke kalt Ashley “Samantha” bare fordi du liker det navnet bedre
-             eller fordi du synes “hun ser ut som en samantha”.
-            til og med hvis hun har navnet “Samantha” i fødselsattesten hennes
-             men hun hater det, og foretrekker å bruke “Ashley”.
+            Du ville vel ikke kalt Anne “Ingrid” bare fordi du liker det navnet bedre
+             eller fordi du synes “hun ser ut som en Ingrid”.
+            til og med hvis hun har navnet “Ingrid” i fødselsattesten hennes
+             men hun hater det, og foretrekker å bruke “Anne”.
              Og det er akkurat det samme med pronomen –
              hvis du ikke vil være frekk mot noen, kall de som de vil bli kalt..
              Den eneste forskjellen er at vi vanligvis vet navn, ikke pronomen.
@@ -105,7 +105,7 @@ sources:
         author: 'Forfatter'
         title: 'Tittel'
         extra: 'Ekstra info (oversetter, navn på journal, …)'
-        year: 'Utgitt år (av den Engelske versjonen)'
+        year: 'Utgitt år (av den Norske versjonen)'
         fragments: 'Fragmenter'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'  # TODO
         comment: 'Kommentar'
@@ -217,7 +217,7 @@ faq:
             answer:
                 - >
                     Fordi å kalle folk det de vil bli kalt er basisen av sosiale relasjoner.
-                    Du ville ikke kalt Ashley “Samantha”, du ville ikke droppet “mr”/“fru” når du snakker til veilederen din, etc.
+                    Du ville ikke kalt Anne “Ingrid”, du ville ikke droppet “mr”/“fru” når du snakker til veilederen din, etc.
                     Og det er folk som ikke vil bli kalt enten“{/han=han}” or “{/hun=hun}”.
                     Hvis du ikke aksepterer det, viser det bare <em>deg</em> i ett dårlig lys.
                 - >
@@ -640,6 +640,6 @@ flags:
     Transmasculine: 'Transmaskulin'
     Transneutral: 'Transnøytral'
     Trigender: 'Trikjønnet'
-    Trixic: 'Trixic'
+    Trixic: 'Trixisk'
     Two_Spirit: 'To åndelig'
     Xenogender: 'Xenokjønnet'
