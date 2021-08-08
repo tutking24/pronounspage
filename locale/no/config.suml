@@ -121,8 +121,8 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[uformell]', 'mx.', 'mr.', 'fru', 'sir', 'madam', 'sai', 'mir', 'shazam', 'zam', 'kamerat']
-        - ['person', 'mann', 'kvinne', 'dame', 'dude', 'gutt', 'jente', 'buddy', 'bro', 'søs']
+        - ['[uformell]', 'mx.', 'mr.', 'fru', 'sir', 'madam', 'kamerat']
+        - ['person', 'mann', 'kvinne', 'dame', 'dude', 'gutt', 'jente', 'bro', 'søs']
         - ['pen', 'kjekk', 'søt', 'sexy']
         - ['venn', 'partner', 'kjæreste', 'mann', 'kone', 'elskede']
     flags:
