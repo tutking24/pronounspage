@@ -49,7 +49,19 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'seksuell legning'
+            - 'romantisk legning'
+            - 'tertiær legning'
+            - 'kjønn'
+            - 'kjønns uttrykk'
+            - 'forholds modell'
+            - 'språk'
+            - 'attraksjon'
+            - 'politikk'
+        route: 'terminologi'
+
 
 names:
     enabled: false
