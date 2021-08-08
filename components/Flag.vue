@@ -34,6 +34,9 @@
                 }
 
                 for (let term of this.terms || []) {
+                    if (term.key.toLowerCase().includes(this.alt.toLowerCase())) {
+                        return term.key;
+                    }
                     if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
                         return this.name;
                     }

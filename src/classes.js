@@ -745,6 +745,10 @@ export class TermsEntry {
             return this.categories.includes(filter.substring(1));
         }
 
+        if (this.key && this.key.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
+            return true;
+        }
+
         for (let field of ['term', 'original']) {
             for (let value of this[field]) {
                 if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
