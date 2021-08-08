@@ -15,7 +15,7 @@ pronouns:
             Mange ikke binære personer bruker mer enn en form utskiftbart
             og synes det er greit å bli kalt enten eller.
             Noen liker når andre bytter mellom formene når de snakker om dem.
-        examples: ['han&hun', 'han&de', 'hun&de']
+        examples: ['han&hun', 'han&hen', 'hun&hen']
     null: false
     emoji: false
     slashes: true
