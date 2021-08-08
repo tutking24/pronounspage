@@ -182,7 +182,7 @@ nouns:
         definition: 'Definisjon'
 
 faq:
-    header: 'OSS'
+    header: 'Spørsmål'
     headerLong: 'Ofte stilte spørsmål'
     questions:
         nonbinary:
