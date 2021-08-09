@@ -526,10 +526,9 @@ images:
 error:
     generic: 'Etwas ist schief gelaufen. Bitte versuche es erneut…'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Bitte bestätige, dass du kein Bot bist, um uns zu helfen, Spam und DDoS-Angriffe zu vermeiden.'
+    invalid: 'Die CAPTCHA-Eingabe war leider ungültig, bitte versuch es erneut.'
 
 mode:
     dark: 'Dunkelmodus'
