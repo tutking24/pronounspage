@@ -4,7 +4,7 @@ module.exports = [
     ['en', 'English',        'https://en.pronouns.page', true],
     ['fr', 'Français',       'https://fr.pronouns.page', false],
     ['nl', 'Nederlands',     'https://nl.pronouns.page', true],
-    ['no', 'Norsk (Bokmål)', 'https://no.pronouns.page', false],
+    ['no', 'Norsk (Bokmål)', 'https://no.pronouns.page', true],
     ['pl', 'Polski',         'https://zaimki.pl',        true],
     ['pt', 'Português',      'https://pt.pronouns.page', true],
     ['ru', 'Русский',        'https://ru.pronouns.page', false],
