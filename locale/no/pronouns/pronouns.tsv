@@ -1,7 +1,8 @@
 key	description	normative	pronoun_subject	pronoun_object	possessive	reflexive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-han,han/hans	Normativt “han/hans”	TRUE	han	han	hans	han selv	FALSE	FALSE	TRUE
-hun,hun/henne	"Normativt “hun/henne"""	TRUE	hun	hun	hennes	hun selv	FALSE	FALSE	TRUE
+han,han/ham	Normativt “han/hans”	TRUE	han	ham	hans	han selv	FALSE	FALSE	TRUE
+hun,hun/henne	"Normativt “hun/henne"""	TRUE	hun	henne	hennes	hun selv	FALSE	FALSE	TRUE
 de,de/dem	"Entall “de"""	TRUE	de	dem	deres 	dem selv	TRUE	TRUE	TRUE	"Entall ""de"" er brukt av noen som ""låner det"" fra engelsk, som bruker en tall ""they""."
-den,den/det	"Personlig “den"""	TRUE	den	det	dets	den selv	FALSE	FALSE	TRUE	"Selv om ""den"" vanligvis er brukt for ting, ikke personer, så er det noen som liker å bli kalt det. Hvis noen vil at du skal kalle den ""den"" er det ikke offensivt - det er faktisk respektfullt. Men husk at ""den/det"" pronomen har et rulleblad av å bli brukt for transfobiske grunner, så bare bruk de med folk som vil det."
+den,den/dens	"Personlig “den"""	TRUE	den	den	dens	den selv	FALSE	FALSE	TRUE	"Selv om ""den"" vanligvis er brukt for ting, ikke personer, så er det noen som liker å bli kalt det. Hvis noen vil at du skal kalle den ""den"" er det ikke offensivt - det er faktisk respektfullt. Men husk at ""den/dens"" pronomen har et rulleblad av å bli brukt for transfobiske grunner, så bare bruk de med folk som vil det."
+det,det/dets	"Personlig det"""	TRUE	det	det	dets	det selv	FALSE	FALSE	TRUE	"Selv om ""det"" vanligvis er brukt for ting, ikke personer, så er det noen som liker å bli kalt det. Hvis noen vil at du skal kalle den ""det"" er det ikke offensivt - det er faktisk respektfullt. Men husk at ""det/dets"" pronomen har et rulleblad av å bli brukt for transfobiske grunner, så bare bruk de med folk som vil det."
 hen,hen/hens	"Neopronomen ""hen/hens"""	FALSE	hen	hen	hens	hen selv	FALSE	FALSE	TRUE
 hin,hin/hins	"Neopronomen ""hin/hins"""	FALSE	hin	hin	hins	hin selv	FALSE	FALSE	TRUE
