@@ -306,10 +306,6 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (!await validateCaptcha(req.body.captchaToken)) {
-        return res.json({error: 'captcha.invalid'});
-    }
-
     if (!await validateEmail(req.user.email)) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
@@ -320,6 +316,10 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
     }
 
     if (!req.body.authId) {
+        if (!await validateCaptcha(req.body.captchaToken)) {
+            return res.json({error: 'captcha.invalid'});
+        }
+
         const payload = {
             from: req.user.email,
             to: normalise(req.body.email),
