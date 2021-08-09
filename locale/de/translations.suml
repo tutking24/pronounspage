@@ -48,7 +48,7 @@ home:
             bestimmen kann, welche Pronomen ihn / ihr am besten passt.
         respect: >
             <strong>Respekt</strong>
-            –  so das <em>anderer Leute</em> Pronomen respektiert werden.
+            –  sodass <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
             <strong>Inklusivität</strong>
             – so das, wenn wir über eine Person die wir nicht kennen, oder eine Gruppe von Leuten,
@@ -371,7 +371,7 @@ user:
             content: |
                 Um deine E-Mail-Adresse zu bestätigen, verwende den folgenden Code: %code%.
 
-                Wenn du diesen Code nicht angefordert hast, ignoriere diese Meldung einfach.
+                Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.
         why: >
             Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@andrea=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
