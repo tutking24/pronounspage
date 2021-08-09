@@ -2,72 +2,76 @@
     <section>
         <Alert type="danger" :message="error"/>
 
-        <div v-if="token === null">
-            <div class="alert alert-info mb-3">
-                <p class="mb-0">
+        <div class="card">
+            <div class="card-body">
+                <div v-if="token === null">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <form @submit.prevent="login" :disabled="saving" class="mb-4 mb-md-0">
+                                <input type="text" class="form-control mb-3" v-model="usernameOrEmail"
+                                       :placeholder="$t('user.login.placeholder')" autofocus required/>
+                                <p class="small text-muted mb-1">
+                                    <Icon v="info-circle"/>
+                                    <T>captcha.reason</T>
+                                </p>
+                                <Captcha class="h-captcha" v-model="captchaToken"/>
+                                <button class="btn btn-primary mt-3 d-none d-md-block" :disabled="!canInit">
+                                    <Icon v="sign-in"/>
+                                    <T>user.login.action</T>
+                                </button>
+                                <button class="btn btn-primary mt-3 d-block d-md-none w-100" :disabled="!canInit">
+                                    <Icon v="sign-in"/>
+                                    <T>user.login.action</T>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="btn-group-vertical w-100 mb-3">
+                                <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                                    <Icon :v="providerOptions.icon || provider" set="b"/>
+                                    {{ providerOptions.name }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-else-if="payload && !payload.code">
+                    <div class="alert alert-success">
+                        <p class="mb-0">
+                            <Icon v="envelope-open-text"/>
+                            <T>user.login.emailSent</T>
+                        </p>
+                    </div>
+
+                    <form @submit.prevent="validate" :disabled="saving">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-center" v-model="code"
+                                   placeholder="000000" autofocus required minlength="0" maxlength="6"
+                                   inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                                   ref="code"
+                            />
+                            <button class="btn btn-primary">
+                                <Icon v="key"/>
+                                <T>user.code.action</T>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-footer small">
+                <p>
                     <Icon v="info-circle"/>
                     <T>user.login.why</T>
                 </p>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <form @submit.prevent="login" :disabled="saving" class="mb-4">
-                        <input type="text" class="form-control mb-3" v-model="usernameOrEmail"
-                               :placeholder="$t('user.login.placeholder')" autofocus required/>
-                        <p class="small text-muted mb-1">
-                            <Icon v="info-circle"/>
-                            <T>captcha.reason</T>
-                        </p>
-                        <Captcha class="h-captcha" v-model="captchaToken"/>
-                        <button class="btn btn-primary mt-3 d-none d-md-block" :disabled="!canInit">
-                            <Icon v="sign-in"/>
-                            <T>user.login.action</T>
-                        </button>
-                        <button class="btn btn-primary mt-3 d-block d-md-none w-100" :disabled="!canInit">
-                            <Icon v="sign-in"/>
-                            <T>user.login.action</T>
-                        </button>
-                    </form>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="btn-group-vertical w-100 mb-3">
-                        <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
-                            <Icon :v="providerOptions.icon || provider" set="b"/>
-                            {{ providerOptions.name }}
-                        </a>
-                    </div>
-                    <p class="small text-muted">
-                        <Icon v="gavel"/>
-                        <T>terms.consent</T>
-                    </p>
-                    <p class="small text-muted">
-                        <Icon v="lock"/>
-                        <T>user.login.passwordless</T>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div v-else-if="payload && !payload.code">
-            <div class="alert alert-success">
+                <p>
+                    <Icon v="gavel"/>
+                    <T>terms.consent</T>
+                </p>
                 <p class="mb-0">
-                    <Icon v="envelope-open-text"/>
-                    <T>user.login.emailSent</T>
+                    <Icon v="lock"/>
+                    <T>user.login.passwordless</T>
                 </p>
             </div>
-
-            <form @submit.prevent="validate" :disabled="saving">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control text-center" v-model="code"
-                           placeholder="000000" autofocus required minlength="0" maxlength="6"
-                           inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
-                           ref="code"
-                    />
-                    <button class="btn btn-primary">
-                        <Icon v="key"/>
-                        <T>user.code.action</T>
-                    </button>
-                </div>
-            </form>
         </div>
     </section>
 </template>
