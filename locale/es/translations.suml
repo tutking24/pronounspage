@@ -40,7 +40,7 @@ home:
         alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
         pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
     whatisit: '¿Por qué importan los pronombres?'
-    # TODO
+    
     mission:
         header: 'Nuestra misión'
         summary: 'Luchamos por la libertad, el respeto y la inclusividad en la lengua.'
@@ -538,10 +538,9 @@ images:
 error:
     generic: 'Algo salió mal. Por favor, vuelve a intentarlo…'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Por favor, demuestra que no eres un bot para mitigar spam y ataques DDoS.'
+    invalid: 'CAPTCHA no válida, por favor intenta de nuevo'
 
 mode:
     dark: 'Modo oscuro'
