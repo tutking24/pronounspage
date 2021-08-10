@@ -330,6 +330,15 @@ links:
             icon: 'books'
             url: 'https://www.transfuzja.org/publikacje'
             headline: 'Publikacje fundacji Trans-Fuzja'
+        -
+            icon: 'play-circle'
+            url: 'https://youtu.be/LPfoDrgpYQo?t=423'
+            headline: 'O opiniodawczo-doradczej roli Rady Języka Polskiego'
+            extra: ' – jej przewodnicząca, dr hab. Katarzyna Kłosińska'
+            quote: >
+                Rada Języka Polskiego jest instytucją opiniodawczo-doradczą
+                w zakresie używania języka polskiego, a więc właśnie opiniuje, doradza, konsultuje, wydaje ekspertyzy, opinie,
+                ale wydaje nakazów ani zakazów.
     mediaGuests:
         -
             icon: 'newspaper'
