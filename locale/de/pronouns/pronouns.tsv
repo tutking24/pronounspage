@@ -3,13 +3,13 @@ er,er/sein	Maskulinum	TRUE	er	ihm	ihn	sein	der	dessen	dem	den	dieser	dieses	dies
 sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihr	die	deren	der	die	diese	dieser	dieser	diese	FALSE	FALSE	TRUE
 es,es/sein	Neutrum	TRUE	es	ihm	es	sein	das	dessen	dem	das	dieses	dieses	diesem	dieses	FALSE	FALSE	TRUE
 dey,dey/denen	Neopronomen „dey“	FALSE	dey	denen	demm	deren									FALSE	FALSE	TRUE
-die/denen	Neopronomen „die“	FALSE	die	denen	die	deren									FALSE	FALSE	TRUE
+die,die/denen	Neopronomen „die“	FALSE	die	denen	die	deren									FALSE	FALSE	TRUE
 el,el/em	Neopronomen „el“	FALSE	el	em	en	ems									FALSE	FALSE	TRUE
 em,em/em	Neopronomen „em“	FALSE	em	em	em	ems									FALSE	FALSE	TRUE
 en,en/en	Neopronomen „en“	FALSE	en	en	en	sein, enes									FALSE	FALSE	TRUE
 ey,ey/emm	Neopronomen „ey/em“	FALSE	ey	emm	emm	eys									FALSE	FALSE	TRUE
-et/siem	Neopronomen „et“	FALSE	et	siem	sierer	sien									FALSE	FALSE	TRUE
-hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sir									FALSE	FALSE	TRUE
+et,et/siem	Neopronomen „et“	FALSE	et	siem	sierer	sien									FALSE	FALSE	TRUE
+hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sir									FALSE	FALSE	TRUE
 hen,hen/hen	Neopronomen „hen“	FALSE	hen	hen	hen	hens									FALSE	FALSE	TRUE
 iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses									FALSE	FALSE	TRUE
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds									FALSE	FALSE	TRUE
@@ -20,6 +20,6 @@ they,they/them	Äquivalent zu englischem „them“	FALSE	they	them	them	their		
 xier,xier/xiem	Neopronomen „xier“, Pronomen ohne Geschlecht	FALSE	xier	xiem	xien	xies	dier	dieren	diem	dien	dier	dieren	diem	dien	FALSE	FALSE	TRUE	Erschafft von {https://www.annaheger.de/pronomen/=Illi Anna Heger}.
 zet,zet/zerm	Neopronomen „zet“	FALSE	zet	zerm	zern	zets									FALSE	FALSE	TRUE
 er_sie,er_sie/ihm_ihr	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	dieses_dieser	diesem_dieser	diese_n	FALSE	FALSE	FALSE
-er*,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
+er*sie,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
 er:sie,er:sie/ihm:ihr	Neopronomen „er:sie“	FALSE	er:sie	ihm:ihr	ihn:sie	sein:ihr	der:die	des:der	dem:der	den:die	diese:r	dieses:dieser	diesem:dieser	diese:n	FALSE	FALSE	FALSE
 ersie,ersie/ihmihr	Neopronomen „ersie“	FALSE	ersie	ihmihr	ihnsie	seinihr	derdie	desder	demder	dendie	dieserdiese	diesesdieser	diesemdieser	diesediesen	FALSE	FALSE	FALSE
