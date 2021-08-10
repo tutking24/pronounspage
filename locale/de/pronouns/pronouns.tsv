@@ -17,7 +17,7 @@ per,per/per	Neopronomen „per“	FALSE	per	per	per	pers									FALSE	FALSE	TRU
 ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses									FALSE	FALSE	TRUE
 sier,sier/siem	Neopronomen „sier“	FALSE	sier	siem	sien	sien									FALSE	FALSE	TRUE
 they,they/them	Äquivalent zu englischem „them“	FALSE	they	them	them	their									FALSE	FALSE	TRUE
-xier,xier/xiem	Neopronomen „xier“, Pronomen ohne Geschlecht	FALSE	xier	xiem	xien	xies	dier	dieren	diem	dien	dier	dieren	diem	dien	FALSE	FALSE	TRUE	Erschafft von {https://www.annaheger.de/pronomen/=Illi Anna Heger}.
+xier,xier/xiem	Neopronomen „xier“, Pronomen ohne Geschlecht	FALSE	xier	xiem	xien	xies	dier	dieren	diem	dien	dier	dieren	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen/=Illi Anna Heger}.
 zet,zet/zerm	Neopronomen „zet“	FALSE	zet	zerm	zern	zets									FALSE	FALSE	TRUE
 er_sie,er_sie/ihm_ihr	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	dieses_dieser	diesem_dieser	diese_n	FALSE	FALSE	FALSE
 er*sie,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
