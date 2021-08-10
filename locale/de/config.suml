@@ -35,7 +35,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'worterbuch'
+    route: 'substantiven'  # worterbuch
     collapsable: false
     plurals: true
     pluralsRequired: false
