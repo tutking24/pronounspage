@@ -65,7 +65,7 @@
                         }),
                     },
                     'Inklusivum': {
-                        info: 'Formen vorgestell von dem {https://geschlechtsneutral.net/=Verein für geschlechtsneutrales Deutsch}.',
+                        info: 'Formen vorgestellt vom {https://geschlechtsneutral.net/=Verein für geschlechtsneutrales Deutsch}.',
                         declension: new NounDeclension({
                             N: 'de Autore', G: 'dern Autore', D: 'dern Autore', A: 'de Autore',
                             N_pl: 'die Autorne', G_pl: 'der Autorne', D_pl: 'den Autorne', A_pl: 'die Autorne',
@@ -95,7 +95,7 @@
                             N_pl: 'meine besten Freund_innen', G_pl: 'meiner besten Freund_innen', D_pl: 'meinen besten Freund_innen', A_pl: 'meine besten Freund_innen',
                         }),
                     },
-                    'Sternzeichen-Formen': {
+                    'Sternchen-Formen': {
                         declension: new NounDeclension({
                             N: 'der*die Autor*in', G: 'des*der Autors*in', D: 'dem*der Autor*in', A: 'den*die Autor*in',
                             N_pl: 'die Autor*innen', G_pl: 'der Autor*innen', D_pl: 'den Autor*innen', A_pl: 'die Autor*innen',
