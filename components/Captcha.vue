@@ -25,7 +25,6 @@
         },
         methods: {
             solved(token) {
-                alert(token);
                 this.$emit('input', token);
             },
         }
