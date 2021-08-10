@@ -117,8 +117,8 @@ sources:
     referenced: 'Beispiele zur Benutzung'
 
 nouns:
-    header: 'Wörterbuch'
-    headerLong: 'Wörterbuch der neutralen Nomen'
+    header: 'Substantive' # Wörterbuch
+    headerLong: 'Geschlechtsneutrale Substantive' # Wörterbuch der neutralen Nomen
     headerLonger: 'Wörterbuch für geschlechtsneutrale Sprache'
     description: 'Es sind nicht nur Pronomen! Schaut euch unser Wörterbuch für geschlechtsneutrale Nomen an.'
     intro:
