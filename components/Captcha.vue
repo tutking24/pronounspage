@@ -1,10 +1,5 @@
 <template>
-    <div class="h-captcha"
-         :data-theme="isDark ? 'dark' : 'light'"
-         :data-sitekey="siteKey"
-         data-callback="hCaptchaDone"
-         style="height: 73px"
-    ></div>
+    <div style="height: 73px"></div>
 </template>
 
 <script>
@@ -15,22 +10,24 @@
         props: {
             value: {},
         },
-        data() {
-            return {
-                siteKey: process.env.HCAPTCHA_SITEKEY,
-                isDark: false,
-            };
-        },
-        mounted() {
+        async mounted() {
             if (!process.client) {
                 return false;
             }
 
-            this.isDark = this.detectDark();
-            this.$loadScript('hcaptcha', 'https://js.hcaptcha.com/1/api.js');
-            window.hCaptchaDone = (token) => {
-                this.$emit('input', token);
-            }
+            await this.$loadScript('hcaptcha', 'https://js.hcaptcha.com/1/api.js');
+
+            window.hcaptcha.render(this.$el, {
+                sitekey: process.env.HCAPTCHA_SITEKEY,
+                theme: this.detectDark() ? 'dark' : 'light',
+                callback: this.solved,
+            });
         },
+        methods: {
+            solved(token) {
+                alert(token);
+                this.$emit('input', token);
+            },
+        }
     }
 </script>

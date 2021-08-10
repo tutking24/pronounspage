@@ -35,13 +35,23 @@ export default ({ app, store }) => {
 
     Vue.prototype.$loadScript = (name, src) => {
         if (!process.client || document.querySelectorAll(`script.${name}-script`).length > 0) {
-            return;
+            return new Promise((resolve, reject) => { resolve(); });
         }
+
+        let resolveFn; let rejectFn;
+        const promise = new Promise((resolve, reject) => {
+            resolveFn = resolve;
+            rejectFn = reject;
+        });
 
         const s = document.createElement('script');
         s.setAttribute('src', src);
         s.classList.add(`${name}-script`);
+        s.onload = resolveFn;
+        s.onerror = rejectFn;
         document.body.appendChild(s);
+
+        return promise;
     };
 
     Vue.prototype.$datetime = (timestamp) => {
