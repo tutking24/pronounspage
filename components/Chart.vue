@@ -9,8 +9,8 @@
             data: { required: true },
             cumulative: { type: Boolean },
         },
-        created() {
-            this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
+        async created() {
+            await this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
         },
         mounted() {
             if (process.client) {
