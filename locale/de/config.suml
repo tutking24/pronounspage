@@ -97,6 +97,11 @@ links:
             icon: 'newspaper'
             url: 'https://www.luebeck.de/de/presse/pressemeldungen/view/134698'
             headline: 'Lübeck führt einheitliche geschlechtergerechte Sprache ein'
+        -
+            icon: 'atlas'
+            url: 'https://geschicktgendern.de/schreibweisen/'
+            headline: 'Vor- und Nachteile Gängiger Schreibweisen'
+            extra: ' – GeschicktGendern.de'
     academic: []
     mediaGuests: []
     mediaMentions: []
