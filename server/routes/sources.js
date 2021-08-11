@@ -20,7 +20,7 @@ const approve = async (db, id) => {
 }
 
 const linkOtherVersions = async (req, sources) => {
-    const keys = new Set(sources.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
+    const keys = new Set(sources.filter(s => !!s && s.key).map(s => `'` + clearKey(s.key) + `'`));
 
     const otherVersions = await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s
