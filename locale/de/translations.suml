@@ -8,27 +8,27 @@ home:
     why: 'Warum sind Pronomen wichtig?'
     about:
         - >
-            Wir alle benutzen Pronomen. Es sind die Wörter, die wir nutzen, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir automatisch davon ausgehen, welches Pronomen aufgrund des Aussehens zu verwenden ist.
+            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
+            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir aufgrund des Aussehens automatisch davon ausgehen, welches Pronomen zu verwenden ist.
             Aber in Wahrheit ist es nicht so einfach…
         - >
             Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
-            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet.
-            Manche Menschen passen nicht in die Boxen von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
+            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet und
+            manche Menschen passen nicht in die Kategorien von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
         - >
             Mit diesem Tool kannst du deine Pronomen (mit Beispielsätzen) verlinken,
             sodass du Leuten zeigen kannst, wie du genannt werden willst.
         - >
             Warum ist das wichtig? Einfach wegen des menschlichen Anstands.
             Du würdest Lea nicht “Marie” nennen, nur weil dir der Name besser gefällt
-            oder weil “sie“ wie eine Marie für dich aussieht”.
+            oder weil “sie wie eine Marie für dich aussieht”.
             Oder auch wenn sie in der Geburtsurkunde “Marie” stehen <em>hat</em>,
             aber sie diesen Namen absolut hasst und lieber “Lea” benutzt.
             Es ist dasselbe mit Pronomen –
             Wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, sprich sie richtig an.
             Der einzige Unterschied ist, dass wir die Namen meistens kennen, die Pronomen hingegen nicht.
             Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Das müssen wir ändern!
-    pronouns: 'Liste verbreiteter Pronomen'
+    pronouns: 'Liste bekannter Pronomen'
     generator:
         header: 'Generator'
         description: >
@@ -44,15 +44,15 @@ home:
         summary: 'Wir kämpfen für Freiheit, Respekt und Inklusivität in Sprache.'
         freedom: >
             <strong>Freiheit</strong>
-            – so das jeder <em>für sich selbst</em>
-            bestimmen kann, welche Pronomen ihn / ihr am besten passt.
+            – dass jede Person <em>für sich selbst</em>
+            bestimmen kann, welche Pronomen am besten zu ihr passen.
         respect: >
             <strong>Respekt</strong>
-            –  sodass <em>anderer Leute</em> Pronomen respektiert werden.
+            –  dass <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
             <strong>Inklusivität</strong>
-            – so das, wenn wir über eine Person die wir nicht kennen, oder eine Gruppe von Leuten,
-            reden, nicht ihr Geschlecht annehmen und sie nicht aus irgendeinem Grund ausschließen.
+            – dass wir keine Annahmen treffen über die Geschlechter von Personen
+            die wir nicht kennen und sie dadurch Ausschließen.
 
 pronouns:
     header: 'Pronomen'
@@ -332,7 +332,7 @@ links:
 
     social: 'Social Media'
 
-    languageVersions: 'Versionen anderer Sprachen'
+    languageVersions: 'Versionen in anderen Sprachen'
 
 people: ~
 
@@ -436,10 +436,10 @@ profile:
         no: 'Nein'
 
     banner: >
-        Du kannst auch unsere Webseite nutzen, um eine Visitenkarte zu erstellen {/@andrea=wie diese},
-        die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter etc enthält.
-        Diese kannst du dann in deine Biografie oder Email-Signatur verlinken.
-        Erstelle einfach hier einen Account: {/account=hier}.
+        Du kannst unsere Webseite auch nutzen, um eine Visitenkarte {/@andrea=wie diese} zu erstellen,
+        die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter uvm. enthält.
+        Diese kannst du dann in deiner Biografie oder Email-Signatur verlinken.
+        Erstelle einfach {/account=hier} einen Account.
     bannerButton: 'Erstelle eine Visitenkarte'
     card:
         link: 'Visitenkartenbild'
