@@ -207,3 +207,8 @@ export const sortClearedLinkedText = (items, key) => {
     items.sort((a, b) => clearLinkedText(a[key].toLowerCase()).localeCompare(clearLinkedText(b[key].toLowerCase())))
     return items;
 }
+
+export const clearKey = (key) => {
+    if (!key) { return null; }
+    return key.replace(/'/g, '_');
+}
