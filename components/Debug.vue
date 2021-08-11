@@ -1,5 +1,5 @@
 <template>
-    <pre>{{JSON.stringify(v, null, 4)}}</pre>
+    <pre>{{v === undefined ? 'undefined' : JSON.stringify(v, null, 4)}}</pre>
 </template>
 
 <script>
