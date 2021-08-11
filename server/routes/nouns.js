@@ -3,7 +3,7 @@ import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
 import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
-import {handleErrorAsync, isTroll} from "../../src/helpers";
+import {clearKey, handleErrorAsync, isTroll} from "../../src/helpers";
 import { caches } from "../../src/cache";
 
 const translations = loadSuml('translations');
@@ -28,7 +28,7 @@ const approve = async (db, id) => {
 const addVersions = async (req, nouns) => {
     const keys = new Set();
     nouns.filter(s => !!s && s.sources)
-        .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + k.split('#')[0] + `'`)));
+        .forEach(s => s.sources.split(',').forEach(k => keys.add(`'` + clearKey(k.split('#')[0]) + `'`)));
 
     const sources = await req.db.all(SQL`
         SELECT s.*, u.username AS submitter FROM sources s

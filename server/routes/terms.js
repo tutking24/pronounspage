@@ -22,7 +22,7 @@ const approve = async (db, id) => {
 }
 
 const linkOtherVersions = async (req, terms) => {
-    const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
+    const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + clearKey(s.key) + `'`));
 
     const otherVersions = await req.db.all(SQL`
         SELECT t.*, u.username AS author FROM terms t
