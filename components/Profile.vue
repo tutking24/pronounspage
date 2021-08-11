@@ -19,7 +19,7 @@
                     <Icon v="birthday-cake"/>
                     {{ profile.age }}
                 </p>
-                <p v-if="profile.team" class="mb-2">
+                <p v-if="profile.teamName || profile.footerName" class="mb-2">
                     <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
                         <Icon v="collective-logo.svg" class="inverted"/>
                         <T>contact.team.member</T>
