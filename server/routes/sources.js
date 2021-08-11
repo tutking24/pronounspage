@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from "sql-template-strings";
 import {ulid} from "ulid";
-import {handleErrorAsync} from "../../src/helpers";
+import {clearKey, handleErrorAsync} from "../../src/helpers";
 
 const approve = async (db, id) => {
     const { base_id } = await db.get(SQL`SELECT base_id FROM sources WHERE id=${id}`);
@@ -84,7 +84,7 @@ router.post('/sources/submit', handleErrorAsync(async (req, res) => {
             ${id}, ${global.config.locale}, ${req.body.pronouns.join(';')},
             ${req.body.type}, ${req.body.author}, ${req.body.title}, ${req.body.extra}, ${req.body.year},
             ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link},
-            ${req.body.key || null}, ${req.body.images || null},
+            ${clearKey(req.body.key)}, ${req.body.images || null},
             ${req.user ? req.user.id : null}, ${req.body.base}
         )
     `);
