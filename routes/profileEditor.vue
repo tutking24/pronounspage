@@ -15,7 +15,7 @@
         </div>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
-            <div v-if="$isGranted('users')" class="border border-primary rounded p-4">
+            <div v-if="$isGranted()" class="border border-primary rounded p-4">
                 <h3 class="h4 mb-3">
                     <Icon v="user-cog"/>
                     Admin section

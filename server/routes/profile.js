@@ -144,9 +144,9 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 flags = ${JSON.stringify(req.body.flags)},
                 customFlags = ${JSON.stringify(req.body.customFlags)},
                 words = ${JSON.stringify(req.body.words)},
-                teamName = ${req.isGranted('users') ? req.body.teamName || null : ''},
-                footerName = ${req.isGranted('users') ? req.body.footerName || null : ''},
-                footerAreas = ${req.isGranted('users') ? req.body.footerAreas.join(',') || null : ''},
+                teamName = ${req.isGranted() ? req.body.teamName || null : ''},
+                footerName = ${req.isGranted() ? req.body.footerName || null : ''},
+                footerAreas = ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''},
                 card = NULL
             WHERE id = ${ids[0]}
         `);
@@ -155,9 +155,9 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
             VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
-                ${req.isGranted('users') ? req.body.teamName || null : ''},
-                ${req.isGranted('users') ? req.body.footerName || null : ''},
-                ${req.isGranted('users') ? req.body.footerAreas.join(',') || null : ''}
+                ${req.isGranted() ? req.body.teamName || null : ''},
+                ${req.isGranted() ? req.body.footerName || null : ''},
+                ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''}
         )`);
     }
 

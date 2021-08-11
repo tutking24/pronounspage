@@ -173,7 +173,7 @@ export const shuffle = a => {
     return a;
 }
 
-export const isGranted = (user, locale, area) => {
+export const isGranted = (user, locale, area = '') => {
     if (area === '*') {
         return user.roles.split('|').includes('*');
     }
@@ -183,7 +183,7 @@ export const isGranted = (user, locale, area) => {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
-        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area)) {
+        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area || area === '')) {
             return true;
         }
     }
