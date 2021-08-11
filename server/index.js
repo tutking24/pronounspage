@@ -62,7 +62,7 @@ app.use(async function (req, res, next) {
     try {
         req.rawUser = authenticate(req);
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
-        req.isGranted = (area, locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
+        req.isGranted = (area = '', locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
         req.db = new LazyDatabase();
         res.on('finish', async () => {
             await req.db.close();

@@ -38,6 +38,7 @@
                 allLocales,
                 allAreas: [
                     '*',
+                    'basic',
                     'panel',
                     'users',
                     'sources',
