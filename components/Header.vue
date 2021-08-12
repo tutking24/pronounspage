@@ -91,9 +91,7 @@
             <blockquote class="small">
                 It is forbidden to post on the Service any Content that might break the law or violate social norms,
                 including but not limited to:
-                propagation of totalitarian regimes, hate speech, racism, xenophobia, homophobia, transphobia, queerphobia,
-                misogyny, harassment, impersonation, child pornography, unlawful conduct, misinformation,
-                sharing of someone else's personal data, spam, advertisement, copyright or trademark violations.
+                <template v-for="(term, i) in forbidden"><span :class="[$user().bannedTerms.includes(term) ? 'fw-bold' : '']">{{term}}</span><template v-if="i !== forbidden.length - 1">, </template></template>.
             </blockquote>
         </div>
     </div>
@@ -112,6 +110,7 @@
 <script>
     import { mapState } from 'vuex'
     import {DateTime} from "luxon";
+    import forbidden from "../src/forbidden";
 
     export default {
         data() {
@@ -119,6 +118,7 @@
                 hamburgerActive: false,
                 hamburgerShown: false,
                 censusDismissed: false,
+                forbidden,
             };
         },
         computed: {

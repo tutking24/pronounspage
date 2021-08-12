@@ -537,6 +537,7 @@ mode:
 ban:
     reason: 'Grund der Sperrung'
     visible: '(dies wird der*m Nutzer*in sichtbar sein)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Diese Person sperren'
     confirm: 'Bist du sicher, die Person @%username% zu sperren?'
     header: 'Du wurdest gesperrt. Dein Profil kann nicht mehr angesehen werden.'

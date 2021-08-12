@@ -133,11 +133,24 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
         return res.status(400).json({error: 'No such user'});
     }
 
-    await req.db.get(SQL`
-        UPDATE users
-        SET bannedReason = ${req.body.reason || null} 
-        WHERE id = ${user.id}
-    `);
+    if (req.body.reason) {
+        if (!req.body.terms.length) {
+            return res.status(400).json({error: 'Terms are required'});
+        }
+        await req.db.get(SQL`
+            UPDATE users
+            SET bannedReason = ${req.body.reason},
+                bannedTerms = ${req.body.terms.join(',')},
+                bannedBy = ${req.user.id}
+            WHERE id = ${user.id}
+        `);
+    } else {
+        await req.db.get(SQL`
+            UPDATE users
+            SET bannedReason = null
+            WHERE id = ${user.id}
+        `);
+    }
 
     await req.db.get(SQL`
         UPDATE reports

@@ -542,6 +542,7 @@ mode:
 ban:
     reason: 'Raison du bannissement'
     visible: '(visible par l’utilisateur)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Bannir l’utilisateur'
     confirm: 'Voulez-vous bannir @%username%?'
     header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'

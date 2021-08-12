@@ -534,6 +534,7 @@ mode:
 ban:
     reason: 'Ban reason'
     visible: '(this will be visible to the user)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'You''re banned. Your profile will not be shown to anyone.'

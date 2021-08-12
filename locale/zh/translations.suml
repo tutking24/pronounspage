@@ -518,6 +518,7 @@ mode:
 ban:
     reason: '封禁原因'
     visible: '（用戶可以看見這個）'
+    terms: 'Terms rules broken (required)'  # TODO
     action: '封禁用戶'
     confirm: '您確定要封禁@%username%嗎'
     header: '您被封禁了。你的資料不會對任何人顯示。'

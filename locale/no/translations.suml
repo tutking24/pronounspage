@@ -23,8 +23,8 @@ home:
             Du ville vel ikke kalt Anne “Ingrid” bare fordi du liker det navnet bedre
              eller fordi du synes “hun ser ut som en Ingrid”?
             Selv dersom hun har navnet “Ingrid” i fødselsattesten hennes
-             men hun hater det, og foretrekker å bruke “Anne” – 
-             så ville du kalt henne Anne. Det er likedan med pronomen. 
+             men hun hater det, og foretrekker å bruke “Anne” –
+             så ville du kalt henne Anne. Det er likedan med pronomen.
              Hvis du ikke vil være frekk mot noen, kall de som de vil bli kalt..
              Den eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen
             Vi introduserer oss selv med ett navn, men ikke med pronomen. La oss endre det!
@@ -52,7 +52,7 @@ home:
             – slik at <em>andres</em> pronomen er respektert.
         inclusiveness: >
             <strong>Inklusivitet</strong>
-            – slik at når vi snakker om personer vi ikke kjenner, 
+            – slik at når vi snakker om personer vi ikke kjenner,
             antar vi ikke kjønnet deres, og ekskluderer dem ikke.
 
 pronouns:
@@ -201,7 +201,7 @@ faq:
                     {https://gender.wikia.org/wiki/Two-Spirit=(to åndelig)}, etc. etc.
                 - >
                     Intetkjønn eller ikke-binær er et begrep som beskriver identiteten til
-                    de som ikke passer inn i de binære mann/kvinne-båsene. 
+                    de som ikke passer inn i de binære mann/kvinne-båsene.
                     Det inkluderer folk som er
                     {https://gender.wikia.org/wiki/Agender=akjønnet},
                     {https://gender.wikia.org/wiki/Gender_Fluid=kjønnsflytende},
@@ -541,6 +541,7 @@ mode:
 ban:
     reason: 'Grunn til forbud'
     visible: '(dette vil kunne bli sett av brukeren)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Forby denne personen'
     confirm: 'Er du sikker på at du vil forby @%username%?'
     header: 'Du er forbydd. Profilen din vil ikke bli vist til noen.'
