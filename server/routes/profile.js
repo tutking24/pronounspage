@@ -87,6 +87,16 @@ function* isSuspicious(profile) {
     ) {
         yield 'nor/mal';
     }
+
+    if (description.includes('pedophile') ||
+        flags.includes('pedophile') ||
+        description.includes('lolicon') ||
+        flags.includes('lolicon') ||
+        description.includes('map') ||
+        flags.includes('map')
+    ) {
+        yield 'Pedophile';
+    }
 }
 
 const hasAutomatedReports = async (db, id) => {
