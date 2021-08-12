@@ -3,6 +3,8 @@
 </template>
 
 <script>
+    import {sleep} from "../src/helpers";
+
     export default {
         props: {
             label: { required: true },
@@ -10,17 +12,22 @@
             cumulative: { type: Boolean },
         },
         async created() {
-            await this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
         },
-        mounted() {
-            if (process.client) {
-                setTimeout(_ => {
-                    this.drawChart();
-                }, 1000);
-            }
+        async mounted() {
+            if (!process.client) { return; }
+
+            await this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
+            this.drawChart();
         },
         methods: {
-            drawChart() {
+            async drawChart() {
+                let tries = 0;
+                while (window.Chart === undefined) {
+                    await sleep(100);
+                    if (tries++ > 1000) {
+                        return;
+                    }
+                }
                 new Chart(this.$el.getContext('2d'), {
                     type: 'line',
                     data: {

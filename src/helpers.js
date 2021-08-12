@@ -212,3 +212,7 @@ export const clearKey = (key) => {
     if (!key) { return null; }
     return key.replace(/'/g, '_');
 }
+
+export const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
