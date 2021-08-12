@@ -40,7 +40,7 @@ home:
         alt: 'También puedes introducir formas intercambiables por separado en cada campo, p. ej. <code>el&ella</code> = „el” o „ella”.'
         pronunciation: 'También puedes especificar la pronunciación de una entrada usando el AFI, p. ej. <code>ellx|ˈe.ʝe</code> = „ellx”, se pronuncia /ˈe.ʝe/.'
     whatisit: '¿Por qué importan los pronombres?'
-    
+
     mission:
         header: 'Nuestra misión'
         summary: 'Luchamos por la libertad, el respeto y la inclusividad en la lengua.'
@@ -549,6 +549,7 @@ mode:
 ban:
     reason: 'Razón para banear'
     visible: '(esto será visible para le usuario)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Banear esta persona'
     confirm: '¿Estás segure que quieres banear a @%username%?'
     header: 'Has sido baneado. Tu perfil no se mostrará a nadie.'

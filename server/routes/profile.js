@@ -115,6 +115,7 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
             users.email,
             users.avatarSource,
             users.bannedReason,
+            users.bannedTerms,
             users.roles != '' AS team
         FROM users
         WHERE users.usernameNorm = ${normalise(req.params.username)}
@@ -129,6 +130,8 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     user.emailHash = md5(user.email);
     delete user.email;
     user.avatar = await avatar(req.db, user);
+
+    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
 
     return res.json({
         ...user,

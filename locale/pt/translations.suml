@@ -548,6 +548,7 @@ mode:
 ban:
     reason: 'Razão de ban'
     visible: '(isso vai ser visto para usuárie)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Ban essa pessoa'
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
