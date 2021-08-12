@@ -5,6 +5,7 @@
             <Icon v="info-circle"/>
             <LinkedText :text="pronoun.sourcesInfo"/>
         </div>
+        <SourcesChart :sources="sources" :label="pronoun ? pronoun.name() : ''"/>
         <ul class="list-unstyled">
             <li v-for="source in sources" :key="source.id" v-if="isVisible(source)" class="my-2 clearfix">
                 <Source :source="source" :manage="manage" @edit-source="edit"/>

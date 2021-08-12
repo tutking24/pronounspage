@@ -13,6 +13,8 @@
             <Share :title="$t('sources.headerLonger')"/>
         </section>
 
+        <SourcesChart :sources="sources" label="all pronouns"/>
+
         <Loading :value="sourceLibrary" size="5rem"><template v-if="sourceLibrary !== undefined">
 
         <section v-show="config.sources.submit">

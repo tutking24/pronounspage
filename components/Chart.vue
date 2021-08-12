@@ -5,7 +5,7 @@
 <script>
     export default {
         props: {
-            name: { required: true },
+            label: { required: true },
             data: { required: true },
             cumulative: { type: Boolean },
         },
@@ -26,12 +26,12 @@
                     data: {
                         labels: Object.keys(this.data),
                         datasets: [{
-                            label: this.cumulative ? `cumulative ${this.name}` : `new ${this.name} per day`,
+                            label: this.label,
                             data: this.cumulative ? this.accumulate(Object.values(this.data)) : Object.values(this.data),
                             fill: false,
                             borderColor: '#C71585',
                         }],
-                    }
+                    },
                 });
             },
             accumulate(values) {
