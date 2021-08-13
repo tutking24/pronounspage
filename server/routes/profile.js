@@ -92,8 +92,8 @@ function* isSuspicious(profile) {
         flags.includes('pedophile') ||
         description.includes('lolicon') ||
         flags.includes('lolicon') ||
-        description.includes('map') ||
-        flags.includes('map')
+        profile.description.match(/\bMAP\b/) ||
+        JSON.stringify(profile.customFlags).match(/\bMAP\b/)
     ) {
         yield 'Pedophile';
     }
