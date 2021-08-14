@@ -19,7 +19,8 @@
 </template>
 
 <script>
-    import { Day, currentYear } from '../src/calendar';
+    import { currentYear } from '../src/calendar/calendar';
+    import { Day } from '../src/calendar/helpers';
 
     export default {
         props: {
