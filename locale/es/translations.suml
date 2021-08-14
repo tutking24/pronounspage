@@ -379,6 +379,7 @@ user:
         userNotFound: 'Usuarie no encontrade.'
         email:
             subject: 'Tu código de inicio de sesión es %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 Para confirmar tu dirección de correo electrónico, introduce: %code%.
 

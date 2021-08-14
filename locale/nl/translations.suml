@@ -360,6 +360,7 @@ user:
         userNotFound: 'Gebruiker niet gevonden.'
         email:
             subject: 'Jouw logincode is %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 Gebruik de volgende code om jouw e-mailadres te bevestigen: %code%.
 

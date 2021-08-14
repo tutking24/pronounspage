@@ -344,6 +344,7 @@ user:
         userNotFound: '找不到用戶。'
         email:
             subject: '你的登錄代碼是：%code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 要確認你的電郵地址，請使用以下代碼: %code%.
 

@@ -371,6 +371,7 @@ user:
         userNotFound: 'Bruker ikke funnet.'
         email:
             subject: 'Din Logg inn kode er %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 For å konfirmere email adressen din, bruk følgende kode:%code%.
 

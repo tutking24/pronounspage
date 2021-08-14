@@ -378,6 +378,7 @@ user:
         userNotFound: 'User not found.'
         email:
             subject: 'Your login code is %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 To confirm your email address, use the following code: %code%.
 
