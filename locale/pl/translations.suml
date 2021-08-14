@@ -1318,4 +1318,8 @@ calendar:
         trans_parent_day: 'Dzień Rodzicielstwa Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
         nonbinary_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#niebinarność=Niebinarności Płciowej}'
         polyamory_day: 'Dzień {/slowniki/terminologia#poliamoria=Poliamorii}'
+
+        nameday_andrea: 'Imieniny: Andrea'
+
+        pridemarch_warsaw: 'Parada Równości w Warszawie \[test]'
     banner: 'Obchodzimy właśnie'

@@ -27,7 +27,8 @@
 </template>
 
 <script>
-    import { Day, iterateMonth, currentYear } from '../src/calendar';
+    import { Day, iterateMonth } from '../src/calendar/helpers';
+    import { currentYear } from '../src/calendar/calendar';
 
     export default {
         props: {
@@ -70,14 +71,14 @@
                     return 'day';
                 }
 
-                if (this.currentYear.eventsByDate[d.toString()].some(e => e.length() === 1)) {
-                    return 'day day-event day-event-single';
+                if (this.currentYear.eventsByDate[d.toString()].some(e => e.major)) {
+                    return 'day day-event day-event-major';
                 }
 
-                return 'day day-event day-event-multi';
+                return 'day day-event day-event-minor';
             },
             getDayFlag(d) {
-                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.length() === 1)) {
+                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.major)) {
                     return `/flags/${event.flag}.png`;
                 }
                 return null;
@@ -117,8 +118,8 @@
             position: relative;
             &.day-event {
                 cursor: pointer;
-                border: 1px solid $primary;
-                &.day-event-single {
+                border: 1px solid lighten($primary, 25%);
+                &.day-event-major {
                     background-color: $primary;
                     color: $white;
                     .day-number {

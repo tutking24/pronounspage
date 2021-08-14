@@ -995,7 +995,7 @@ profile:
         defaultPronoun: 'on_'
 
 calendar:
-    enabled: true
+    enabled: false
     route: 'kalendarz'
 
 census:
