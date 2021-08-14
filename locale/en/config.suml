@@ -259,6 +259,10 @@ profile:
     flags:
         defaultPronoun: 'they'
 
+calendar:
+    enabled: false
+    route: 'calendar'
+
 census:
     enabled: false
 
