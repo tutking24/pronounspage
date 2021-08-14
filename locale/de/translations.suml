@@ -8,27 +8,27 @@ home:
     why: 'Warum sind Pronomen wichtig?'
     about:
         - >
-            Wir alle benutzen Pronomen. Es sind die Wörter, die wir nutzen, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”},sodass wir automatisch davon ausgehen, welches Pronomen aufgrund des Aussehens zu verwenden ist.
+            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
+            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir aufgrund des Aussehens automatisch davon ausgehen, welches Pronomen zu verwenden ist.
             Aber in Wahrheit ist es nicht so einfach…
         - >
             Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
-            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet.
-            Manche Menschen passen nicht in die Boxen von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
+            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet und
+            manche Menschen passen nicht in die Kategorien von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
         - >
             Mit diesem Tool kannst du deine Pronomen (mit Beispielsätzen) verlinken,
             sodass du Leuten zeigen kannst, wie du genannt werden willst.
         - >
             Warum ist das wichtig? Einfach wegen des menschlichen Anstands.
             Du würdest Lea nicht “Marie” nennen, nur weil dir der Name besser gefällt
-            oder weil “sie“ wie eine Marie für dich aussieht”.
+            oder weil “sie wie eine Marie für dich aussieht”.
             Oder auch wenn sie in der Geburtsurkunde “Marie” stehen <em>hat</em>,
             aber sie diesen Namen absolut hasst und lieber “Lea” benutzt.
             Es ist dasselbe mit Pronomen –
             Wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, sprich sie richtig an.
             Der einzige Unterschied ist, dass wir die Namen meistens kennen, die Pronomen hingegen nicht.
             Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Das müssen wir ändern!
-    pronouns: 'Liste verbreiteter Pronomen'
+    pronouns: 'Liste bekannter Pronomen'
     generator:
         header: 'Generator'
         description: >
@@ -44,17 +44,19 @@ home:
         summary: 'Wir kämpfen für Freiheit, Respekt und Inklusivität in Sprache.'
         freedom: >
             <strong>Freiheit</strong>
-            – so das jeder <em>für sich selbst</em>
-            bestimmen kann, welche Pronomen ihn / ihr am besten passt.
+            – dass jede Person <em>für sich selbst</em>
+            bestimmen kann, welche Pronomen am besten zu ihr passen.
         respect: >
             <strong>Respekt</strong>
-            –  so das <em>anderer Leute</em> Pronomen respektiert werden.
+            –  dass <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
             <strong>Inklusivität</strong>
-            – so das, wenn wir über eine Person die wir nicht kennen, oder eine Gruppe von Leuten,
-            reden, nicht ihr Geschlecht annehmen und sie nicht aus irgendeinem Grund ausschließen.
+            – dass wir keine Annahmen treffen über die Geschlechter von Personen
+            die wir nicht kennen und sie dadurch Ausschließen.
 
 pronouns:
+    header: 'Pronomen'
+    headerLong: 'Pronomen'
     examples: 'Beispiel-Nutzung in Sätzen'
     plural: 'Plural'
     intro: 'Meine Pronomen sind'
@@ -115,8 +117,8 @@ sources:
     referenced: 'Beispiele zur Benutzung'
 
 nouns:
-    header: 'Wörterbuch'
-    headerLong: 'Wörterbuch der neutralen Nomen'
+    header: 'Substantive' # Wörterbuch
+    headerLong: 'Geschlechtsneutrale Substantive' # Wörterbuch der neutralen Nomen
     headerLonger: 'Wörterbuch für geschlechtsneutrale Sprache'
     description: 'Es sind nicht nur Pronomen! Schaut euch unser Wörterbuch für geschlechtsneutrale Nomen an.'
     intro:
@@ -124,7 +126,7 @@ nouns:
             Inklusive und geschlechtsneutrale Sprache heißt nicht nur die Pronomen einer Person zu respektieren.
             Auch die Beschreibung des Jobs, der Position, der Beziehung, etc.,
             kann in einer Weise genutzt werden, die nicht gleich auf das Geschlecht schließen lässt.
-            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jede:r Ehepartner:in ist eine “Ehefrau” oder ein “Ehemann”.
+            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jede*r Ehepartner*in ist eine “Ehefrau” oder ein “Ehemann”.
         - >
             Wenn du dich auf eine Person beziehst, deren Geschlecht du nicht kennst,
             auf eine Gruppe gemischten Geschlechts
@@ -163,6 +165,20 @@ nouns:
     plural: 'Plural'
     pluralShort: 'Pl.'
 
+    terms:
+        header: 'Terminologie'
+        headerLong: 'Wörterbuch von Queerer Terminologie'
+        info:
+            - >
+                Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
+                funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
+                Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
+        term: 'Begriff'
+        original: 'Etymologie'
+        category: 'Kategorie'
+        images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
+        definition: 'Definition'
+
 faq:
     header: 'FAQ'
     headerLong: 'Häufig gestellte Fragen'
@@ -180,7 +196,7 @@ faq:
                     Je nach Zeit und Ort kann "eine Frau" oder "ein Mann" zu sein bedeuten, radikal unterschiedliche Rechte,
                     Pflichten, Normen zu haben... In Europa trugen Männer früher hohe Absätze und Strümpfe,
                     während die Ureinwohner Nordamerikas seit Jahrhunderten ein drittes Geschlecht anerkennen
-                    {https://de.wikipedia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    {https://de.wikipedia.org/wiki/Two-Spirit=(two-spirit)}, etc.
                 - >
                     Nicht-binär ist ein Oberbegriff, der die Identität von Menschen beschreibt,
                     die nicht in die binäre Unterscheidung Mann/Frau passen.
@@ -188,7 +204,7 @@ faq:
                     {https://nibi.space/agender=agender},
                     {https://nibi.space/genderfluid=genderfluid},
                     {https://nibi.space/demigender=demigender},
-                    und {https://nibi.space/nichtbin%C3%A4r_und_genderqueer?redirect=1=vielen anderen}.
+                    und {https://nibi.space/nichtbin%C3%A4r_und_genderqueer?redirect=1=viele andere}.
                 - >
                     Nichtbinär ist nicht unbedingt etwas “zwischen” Weiblichkeit und Männlichkeit. Eher etwas darüber “hinaus”.
                     Nichtbinäre Menschen müssen nicht androgyn sein, müssen keine neutralen Pronomen verwenden, etc.
@@ -199,7 +215,7 @@ faq:
                 - >
                     Weil es die Grundlage sozialer Beziehungen ist, Menschen so anzusprechen, wie sie angesprochen werden wollen.
                     Du würdest Lea nicht “Marie” nennen, du würdest nicht “Herr”/“Frau” zu deinem Vorgesetzten sagen, etc.
-                    Und es gibt Menschen die weder “{/er=er}” or “{/sie=sie}”.
+                    Und es gibt Menschen die weder mit “{/er=er}” noch “{/sie=sie}” angesprochen werden wollen.
                     Wenn du das nicht akzeptieren kannst, dann zeigt <em>dich</em> das in einem schlechten Licht.
                 - >
                     “Komische Pronomen” sind nur eine Frage der Gewöhnung.
@@ -207,7 +223,7 @@ faq:
             question: 'Woher weiß ich, wie ich eine Person anreden soll?'
             answer:
                 - >
-                    Du kannst einfach fragen!Ja, es ist vielleicht ein bisschen unangenehm, aber je mehr wir es tun, desto weniger unangenehm wird es.
+                    Du kannst einfach fragen! Ja, es ist vielleicht ein bisschen unangenehm, aber je mehr wir es tun, desto weniger unangenehm wird es.
                     Wenn wir nach dem Namen fragen können, warum nicht auch nach den Pronomen?
                 - >
                     (Bitte formuliere es nur nicht als: “Bist du ein Mädchen oder ein Junge?”.
@@ -216,12 +232,12 @@ faq:
                     Stattdessen könntest du einfach fragen: “Was sind deine Pronomen?” oder “Wie soll ich dich ansprechen?”)
                 - >
                     Es ist auch wichtig, es zu normalisieren, sich einfach mit seinen Pronomen vorzustellen.
-                    “Hi, Ich bin Michael, {/er=er/sein}”. Es ist nicht schwer – aber für trans und nicht-binäre Menschen bedeutet es so viel!
+                    “Hi, Ich bin Michael, {/er=er/ihm}”. Es ist nicht schwer – aber für trans und nicht-binäre Menschen bedeutet es so viel!
                     Online ist es noch einfacher: Füge einfach deine Pronomen (oder einen Link zu Beispielen von unserer Website) zu deiner “Bio” hinzu.
                 - >
                     Denke auch daran, dass manche Menschen je nach Situation einen anderen Namen und andere Pronomen verwenden könnten.
-                    Sie hatten vielleicht vor manchen Freunden oder Arbeitskolleg:innen noch kein Coming Out, aber bei anderen Freund:innen fühlen sie sich wohl und leben ihre Wahrheit.
-                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: “Welche Pronomen soll ich vor deiner:m Chef:in benutzen?”, etc.
+                    Sie hatten vielleicht vor manchen Freunden oder Arbeitskolleg*innen noch kein Coming Out, aber bei anderen Freund*innen fühlen sie sich wohl und gehen damit offen um.
+                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: “Welche Pronomen soll ich vor deiner*m Chef*in benutzen?”, etc.
                 - >
                     Manche Menschen geben mehrere Pronomen an, z.B. “{/er&sie=er/sie}” oder “{/sier&er=sier/er}”.
                     Das bedeutet, dass sie alle diese Formen mögen. Normalerweise ist die erste die bevorzugte.
@@ -239,7 +255,7 @@ faq:
                     Es ist nur ein Werkzeug, das wir zur Kommunikation verwenden.
                     Wenn wir uns als Gesellschaft verändern und sich die Welt um uns verändert,
                     passen wir die Sprache an, die wir verwenden, um diese besser beschreiben zu können.
-                    Wir sind die Nutzer:innen, also sind <em>wir die Autorität</em> wie wir es benutzen wollen.
+                    Wir sind die Nutzer*innen, also sind <em>wir die Autorität</em> wie wir es benutzen wollen.
                 - >
                     Wörterbücher brauchen ihre Zeit, um diese Änderungen zu berücksichtigen,
                     was die Änderung in keiner Weise unrechtmäßig macht.
@@ -308,7 +324,7 @@ faq:
 
 links:
     header: 'Links'
-    headerLong: 'Extra links'
+    headerLong: 'Extra Links'
     recommended: 'Wir empfehlen'
 
     blog: 'Blog'
@@ -316,7 +332,7 @@ links:
 
     social: 'Social Media'
 
-    languageVersions: 'Versionen anderer Sprachen'
+    languageVersions: 'Versionen in anderen Sprachen'
 
 people: ~
 
@@ -324,7 +340,7 @@ english: ~
 
 contact:
     header: 'Kontakt'
-    authors: 'Autor:innen der Website'
+    authors: 'Autor*innen der Website'
     team:
         name: 'Das “Neutral Language Council” Kollektiv'
         description:
@@ -338,7 +354,7 @@ contact:
 support:
     header: 'Unterstütze uns'
     description: >
-        Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor:innen einfach ein Bier ausgeben willst,
+        Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor*innen einfach ein Bier ausgeben willst,
         kannst du den untenstehenden Link nutzen:
 
 user:
@@ -349,15 +365,15 @@ user:
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
         action: 'Einloggen'
         emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
-        userNotFound: 'Nutzer:in nicht gefunden.'
+        userNotFound: 'Nutzer*in nicht gefunden.'
         email:
             subject: 'Dein Logincode ist %code%'
             content: |
                 Um deine E-Mail-Adresse zu bestätigen, verwende den folgenden Code: %code%.
 
-                Wenn du diesen Code nicht angefordert hast, ignoriere diese Meldung einfach.
+                Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.
         why: >
-            Mit der Registrierung kannst du deine Karten verwalten ({/@andrea=wie diese}).
+            Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@andrea=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
     code:
         action: 'Validieren'
@@ -391,7 +407,7 @@ profile:
     description: 'Beschreibung'
     names: 'Namen'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. “sier” or “sie/ihr”) oder einen Link (z.B. “https://de.pronouns.page/dey”) oder vier benutzerdefinierten Formen(z.B. “xier/xies/xiem/xien”).'
+    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. “sier” or “sie/ihr”) oder einen Link (z.B. “https://de.pronouns.page/dey”) oder vier benutzerdefinierten Formen (z.B. “xier/xies/xiem/xien”).'
     pronounsNotFound: 'Wir können keinen Link zu diesem Pronomen finden!'
     words: 'Wörter'
     birthday: 'Alter'
@@ -399,36 +415,36 @@ profile:
     flags: 'Flaggen'
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
-    flagsCustomWarning: 'Diese Flagge wurde von einer:m Nutzer:in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
+    flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
     links: 'Links'
     linksCake: 'Wir empfehlen Verlinkung zu'
     column: 'Spalte'
 
-    list: 'Deine Karten'
-    init: 'Eine Karte erstellen'
+    list: 'Deine Visitenkarten'
+    init: 'Eine Visitenkarte erstellen'
     show: 'Anzeigen'
     edit: 'Bearbeiten'
     delete: 'Löschen'
-    deleteConfirm: 'Bist du sicher, dass du diese Karte löschen willst?'
+    deleteConfirm: 'Bist du sicher, dass du diese Visitenkarte löschen willst?'
     editor:
-        header: 'Karten-Editor'
-        save: 'Karte speichern'
+        header: 'Visitenkarte-Editor'
+        save: 'Visitenkarte speichern'
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
         meh: 'Okay'
-        no: 'Nope'
+        no: 'Nein'
 
     banner: >
-        Du kannst auch unsere Webseite nutzen, um eine Karte zu erstellen {/@andrea=wie diese},
-        die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter etc enthält.
-        Diese kannst du dann in deine Biografie oder Email-Signatur verlinken.
-        Erstelle einfach hier einen Account: {/account=hier}.
-    bannerButton: 'Erstelle eine Karte'
+        Du kannst unsere Webseite auch nutzen, um eine Visitenkarte {/@andrea=wie diese} zu erstellen,
+        die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter uvm. enthält.
+        Diese kannst du dann in deiner Biografie oder Email-Signatur verlinken.
+        Erstelle einfach {/account=hier} einen Account.
+    bannerButton: 'Erstelle eine Visitenkarte'
     card:
-        link: 'Bild Karte'
+        link: 'Visitenkartenbild'
         generating: 'Generatierung läuft…'
-    empty: 'Diese Person hat noch keine Karte erstellt.'
+    empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
 
 share: 'Teilen'
 
@@ -475,7 +491,7 @@ terms:
 admin:
     header: 'Verwaltungsbereich'
     user:
-        user: 'Nutzer:in'
+        user: 'Nutzer*in'
         email: 'E-Mail'
         roles: 'Rolle'
         profiles: 'Profile'
@@ -510,16 +526,21 @@ images:
 error:
     generic: 'Etwas ist schief gelaufen. Bitte versuche es erneut…'
 
+captcha:
+    reason: 'Bitte bestätige, dass du kein Bot bist, um uns zu helfen, Spam und DDoS-Angriffe zu vermeiden.'
+    invalid: 'Die CAPTCHA-Eingabe war leider ungültig, bitte versuch es erneut.'
+
 mode:
     dark: 'Dunkelmodus'
     light: 'Lichtmodus'
 
 ban:
     reason: 'Grund der Sperrung'
-    visible: '(dies wird der:m Nutzer:in sichtbar sein)'
+    visible: '(dies wird der*m Nutzer*in sichtbar sein)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Diese Person sperren'
     confirm: 'Bist du sicher, die Person @%username% zu sperren?'
-    header: 'Du wurdest geperrt. Dein Profil kann nicht mehr angesehen werden.'
+    header: 'Du wurdest gesperrt. Dein Profil kann nicht mehr angesehen werden.'
     banned: 'gesperrt'
     termsIntro: 'Gemäß unserer Geschäftsbedingungen {/Nutzungsbedingungen=Geschäftsbedingungen}:'
 
@@ -533,28 +554,29 @@ flags:
     Abroromantic: 'Abroromantisch'
     Abrosexual: 'Abrosexuell'
     Achillean: 'Achilleisch'
-    Agender: 'Agender'
+    Agender: 'Ageschlechtlich'
     Alloromantic_Asexual: 'Alloromantisch-asexuell'
     Anarcha-Queer: 'Anarcho-Queer'
     Androgyne: 'Androgyn'
     Androsexual: 'Androsexuell'
-    Aporagender: 'Aporagender'
+    Aporagender: 'Aporageschlechtlich'
     Archaeopronouns: 'Archaeopronomen'
     Aroace: 'Aro-Ace'
     Aromantic: 'Aromantisch'
     Aromantic_Allosexual: 'Aromantisch-allosexuell'
     Asexual: 'Asexuell'
-    Autigender: 'Autigender'
+    Autigender: 'Autigeschlechtlich'
     Bear: 'Bär'
     Bicurious: 'Bineugierig'
-    Bigender: 'Bigender'
+    Bigender: 'Bigeschlechtlich'
+    Biromantic: 'Biromantisch'
     Bisexual: 'Bisexuell'
     Butch: 'Butch'
     Ceteroromantic: 'Ceteroromantisch'
     Ceterosexual: 'Ceterosexuell'
     Cis_Ally: 'Cis-Ally'
     Demiboy: 'Demimann'
-    Demigender: 'Demigender'
+    Demigender: 'Demigeschlechtlich'
     Demigirl: 'Demifrau'
     Demiromantic: 'Demiromantisch'
     Demisexual: 'Demisexuell'
@@ -578,9 +600,10 @@ flags:
     Homoflexible: 'Homoflexibel'
     Homoromantic: 'Homoromantisch'
     Intersex: 'Intergeschlechtlich'
-    LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Leather-Pride'
+    LGBTQ: 'LSBTQ'
+    Leather_Pride: 'Leder Pride'
     Lesbian: 'Lesbisch'
+    Lesbiromantic: 'Lesbiromantisch'
     Maverique: 'Maverique'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisch'
@@ -590,7 +613,7 @@ flags:
     Omniromantic: 'Omniromantisch'
     Omnisexual: 'Omnisexuell'
     Oriented_Aroace: 'Aro-Ace orientiert'
-    Pangender: 'Pangender'
+    Pangender: 'Pangeschlechtlich'
     Panromantic: 'Panromantisch'
     Pansexual: 'Pansexuell'
     Polyamorous: 'Polyamorös'
@@ -608,11 +631,11 @@ flags:
     Straight_Ally: 'Hetero-Ally'
     Toric: 'Torisch'
     Transfeminine: 'Transfemenin'
-    Transgender: 'Transgender'
+    Transgender: 'Transgeschlechtlich'
     Transmasculine: 'Transmaskulin'
     Transneutral: 'Transneutral'
-    Trigender: 'Trigender'
+    Trigender: 'Dreigeschlechtig'
     Trixic: 'Trixisch'
     Two_Spirit: 'Two-Spirit'
-    Xenogender: 'Xenogender'
+    Xenogender: 'Xenogeschlechtlich'
 

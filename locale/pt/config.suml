@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronomes'
     default: 'ele'
     any: 'any'
     plurals: false
@@ -49,7 +50,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'orientação sexual'
+            - 'orientação romântica'
+            - 'orientação terciária'
+            - 'gênero'
+            - 'expressão de gênero'
+            - 'modelo de relação'
+            - 'linguagem'
+            - 'atração'
+            - 'política'
+        route: 'terminologia'
 
 names:
     enabled: false

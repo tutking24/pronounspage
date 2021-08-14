@@ -13,6 +13,10 @@
             <Share :title="$t('sources.headerLonger')"/>
         </section>
 
+        <SourcesChart :sources="sources" label="all pronouns"/>
+
+        <Loading :value="sourceLibrary" size="5rem"><template v-if="sourceLibrary !== undefined">
+
         <section v-show="config.sources.submit">
             <SourceSubmitForm v-show="submitShown" ref="form"/>
             <button v-show="!submitShown" class="btn btn-outline-success w-100" @click="submitShown = true">
@@ -129,6 +133,8 @@
                 </h2>
             </SourceList>
         </section>
+
+        </template></Loading>
     </div>
 </template>
 
@@ -150,36 +156,33 @@
                 filterType: '',
                 glue: ' ' + this.$t('pronouns.or') + ' ',
                 submitShown: false,
+                sources: undefined,
+                sourceLibrary: undefined,
             };
         },
-        async asyncData({app}) {
-            return {
-                sources: await app.$axios.$get(`/sources`),
-            }
-        },
-        mounted() {
+        async mounted() {
+            if (!process.client) { return; }
+
             this.handleHash('', filter => {
                 this.filter = filter;
                 if (filter) {
                     this.$refs.filter.scrollIntoView();
                 }
             });
+            this.sources = await this.$axios.$get(`/sources`);
+            this.sourceLibrary = new SourceLibrary(this.sources);
         },
         head() {
             return head({
                 title: this.$t('sources.headerLonger'),
             });
         },
-        computed: {
-            sourceLibrary() {
-                return new SourceLibrary(this.sources);
-            },
-        },
         methods: {
             toId(str) {
                 return str.replace(/\//g, '-').replace(/&/g, '_');
             },
             filterPronoun(pronoun) {
+                if (this.sourceLibrary === undefined) { return false; }
                 return this.sourceLibrary.getForPronoun(pronoun.canonicalName).length > 0;
             },
             edit(source) {

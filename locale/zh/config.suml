@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronouns'
     default: '他'
     any: 'any'
     plurals: true
@@ -70,7 +71,13 @@ links:
     enabled: false
     route: 'links'
     blogRoute: 'blog'
-    links: []
+    academic: []
+    links:
+        -
+            icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'https://www.genderinlanguage.com/spanish'
+            headline: 'Gender in Language Project'
     mediaGuests: []
     mediaMentions: []
     socials:

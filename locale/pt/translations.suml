@@ -57,6 +57,8 @@ home:
             não estamos assumindo gênero delus e não estamos excluindo elus por qualquer razão.
 
 pronouns:
+    header: 'Pronomes'
+    headerLong: 'Pronomes'
     examples: 'Exemplos de uso em frases'
     plural: 'Plural'
     intro: 'Meus pronomes são'
@@ -163,6 +165,18 @@ nouns:
     singularShort: 'sing.'
     plural: 'plural'
     pluralShort: 'pl.'
+
+    terms:
+        header: 'Terminologia'
+        headerLong: 'Dicionário de terminologia queer'
+        info:
+            - >
+                Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+        term: 'Termo'
+        original: 'Etimologia'
+        category: 'Categoria'
+        images: 'Imagens adicionais, de fora do catálogo de bandeiras'
+        definition: 'Definição'
 
 faq:
     header: 'Perguntas'
@@ -522,6 +536,11 @@ images:
 error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: 'Modo escuro'
     light: 'Modo claro'
@@ -529,6 +548,7 @@ mode:
 ban:
     reason: 'Razão de ban'
     visible: '(isso vai ser visto para usuárie)'
+    terms: 'Terms rules broken (required)'  # TODO
     action: 'Ban essa pessoa'
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'

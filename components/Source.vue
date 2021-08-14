@@ -1,4 +1,5 @@
 <template>
+    <LazyHydrate when-visible>
     <div class="my-2 clearfix" v-if="!deleted">
         <h3 class="h6">
             <Icon :v="source.icon()"/>
@@ -85,12 +86,15 @@
             </ul>
         </div>
     </div>
+    </LazyHydrate>
 </template>
 
 <script>
     import {pronounLibrary} from "../src/data";
+    import LazyHydrate from 'vue-lazy-hydration';
 
     export default {
+        components: { LazyHydrate },
         name: 'Source',
         props: {
             source: { required: true },

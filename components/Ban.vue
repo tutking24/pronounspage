@@ -23,6 +23,17 @@
             </a>
             <div v-else>
                 <textarea v-model="user.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
+                <div class="form-group">
+                    <p class="my-1"><label><strong><T>ban.terms</T>:</strong></label></p>
+                    <div style="columns: 3" class="small">
+                        <div class="form-check ps-0" v-for="term in forbidden">
+                            <label>
+                                <input type="checkbox" :value="term" v-model="user.bannedTerms"/>
+                                {{ term }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
                 <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
                     <Icon v="ban"/>
                     <T>ban.action</T>
@@ -34,6 +45,7 @@
 
 <script>
     import ClientOnly from 'vue-client-only'
+    import forbidden from "../src/forbidden";
 
     export default {
         components: { ClientOnly },
@@ -49,6 +61,8 @@
                 showBanForm: !!this.user.bannedReason,
 
                 saving: false,
+
+                forbidden,
             }
         },
         methods: {
@@ -58,6 +72,7 @@
                 try {
                     await this.$post(`/admin/ban/${encodeURIComponent(this.user.username)}`, {
                         reason: this.user.bannedReason,
+                        terms: this.user.bannedTerms,
                     });
                     window.location.reload();
                 } finally {

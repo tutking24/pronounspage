@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronouns'
     default: 'he'
     any: 'any'
     plurals: true
@@ -73,7 +74,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'sexual orientation'
+            - 'romantic orientation'
+            - 'tertiary orientation'
+            - 'gender'
+            - 'gender expression'
+            - 'relationship model'
+            - 'language'
+            - 'attraction'
+            - 'politics'
+        route: 'terms'
 
 names:
     enabled: false
@@ -181,8 +193,17 @@ links:
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
-    recommended: []
-
+    recommended:
+        -
+            icon: 'cogs'
+            url: 'https://omg.lol/'
+            headline: 'OMG.LOL'
+            extra: ' – domain name provider that uses Pronouns.Page API in user profiles'
+        -
+            icon: 'cogs'
+            url: 'https://oengus.io/'
+            headline: 'Oengus.io'
+            extra: ' – uses Pronouns.Page API in user profiles'
     blog: false
 
 contact:
@@ -237,6 +258,10 @@ profile:
         - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
         defaultPronoun: 'they'
+
+calendar:
+    enabled: false
+    route: 'calendar'
 
 census:
     enabled: false

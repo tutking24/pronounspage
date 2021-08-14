@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {isTroll, handleErrorAsync, sortClearedLinkedText} from "../../src/helpers";
+import {isTroll, handleErrorAsync, sortClearedLinkedText, clearKey} from "../../src/helpers";
 import { caches } from "../../src/cache";
 
 const approve = async (db, id) => {
@@ -22,7 +22,7 @@ const approve = async (db, id) => {
 }
 
 const linkOtherVersions = async (req, terms) => {
-    const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + s.key + `'`));
+    const keys = new Set(terms.filter(s => !!s && s.key).map(s => `'` + clearKey(s.key) + `'`));
 
     const otherVersions = await req.db.all(SQL`
         SELECT t.*, u.id AS author FROM terms t
@@ -95,7 +95,7 @@ router.post('/terms/submit', handleErrorAsync(async (req, res) => {
         INSERT INTO terms (id, term, original, key, definition, approved, base_id, locale, author_id, category, flags, images)
         VALUES (
             ${id},
-            ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${req.body.key || null}, ${req.body.definition},
+            ${req.body.term.join('|')}, ${req.body.original.join('|')}, ${clearKey(req.body.key)}, ${req.body.definition},
             0, ${req.body.base}, ${global.config.locale}, ${req.user ? req.user.id : null},
             ${req.body.categories.join(',')}, ${JSON.stringify(req.body.flags)}, ${req.body.images}
         )

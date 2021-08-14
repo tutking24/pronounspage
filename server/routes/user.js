@@ -8,6 +8,7 @@ import { loadSuml } from '../loader';
 import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 import cookieSettings from "../../src/cookieSettings";
+import {validateCaptcha} from "../captcha";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -15,6 +16,15 @@ const translations = loadSuml('translations');
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
 const normalise = s => s.trim().toLowerCase();
+
+const isSpam = (email) => {
+    const noDots = email.replace(/\./g, '');
+    return noDots === 'javierfranciscotmp@gmailcom'
+        || noDots === 'leahmarykathryntmp@gmail.com'
+        || email.includes('dogazu')
+        || email.includes('narodowcy.net')
+        || email.length > 128;
+}
 
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
@@ -180,6 +190,15 @@ const router = Router();
 router.use(handleErrorAsync(reloadUser));
 
 router.post('/user/init', handleErrorAsync(async (req, res) => {
+    if (req.body.usernameOrEmail && isSpam(req.body.usernameOrEmail || '')) {
+        req.socket.end();
+        return;
+    }
+
+    if (!await validateCaptcha(req.body.captchaToken)) {
+        return res.json({error: 'captcha.invalid'});
+    }
+
     let user = undefined;
     let usernameOrEmail = req.body.usernameOrEmail;
 
@@ -283,7 +302,7 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/user/change-email', handleErrorAsync(async (req, res) => {
-    if (!req.user) {
+    if (!req.user || req.user.bannedReason || isSpam(req.body.email || '')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
@@ -297,6 +316,10 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
     }
 
     if (!req.body.authId) {
+        if (!await validateCaptcha(req.body.captchaToken)) {
+            return res.json({error: 'captcha.invalid'});
+        }
+
         const payload = {
             from: req.user.email,
             to: normalise(req.body.email),

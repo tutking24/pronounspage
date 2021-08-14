@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'voornaamwoorden'
     default: 'hij'
     any: 'elk'
     plurals: true

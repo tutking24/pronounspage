@@ -26,6 +26,7 @@
                 {name: 'neuterNouns', icon: 'deer', route: 'neutratywy'},
                 {name: 'dukajNouns', icon: 'ghost', route: 'dukatywy'},
                 {name: 'personNouns', icon: 'user-friends', route: 'osobatywy'},
+                {name: 'xNouns', icon: 'comment-times', route: 'iksatywy'},
             ];
 
             if (this.config.nouns.inclusive.enabled) {

@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronomen'
     default: 'er'
     any: 'beliebige'
     plurals: true
@@ -34,7 +35,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'worterbuch'
+    route: 'substantiven'  # worterbuch
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -44,7 +45,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'sexuelle Orientierung'
+            - 'romantische Orientierung'
+            - 'tertiäre Orientierung'
+            - 'Geschlecht'
+            - 'Geschlechtsausdruck'
+            - 'Beziehungsmodell'
+            - 'Sprache'
+            - 'Anziehung'
+            - 'Politik'
+        route: 'terminologie'
 
 names:
     enabled: false
@@ -69,13 +81,27 @@ links:
             url: 'https://geschlechtsneutral.net/'
             headline: 'Verein für geschlechtsneutrales Deutsch'
         -
+            icon: 'lightbulb-on'
+            url: 'https://www.annaheger.de/pronomen/'
+            headline: 'Pronomen ohne Geschlecht – Illi Anna Heger'
+        -
+            lang: ['en']
+            icon: 'atlas'
+            url: 'https://nonbinary.wiki/wiki/Gender_neutral_language_in_German'
+            headline: 'Nonbinary.wiki: Gender neutral language in German'
+        -
+            icon: 'atlas'
+            url: 'https://nibi.space/pronomen'
+            headline: 'Nichtbinär-Wiki: Pronomen'
+        -
             icon: 'newspaper'
             url: 'https://www.luebeck.de/de/presse/pressemeldungen/view/134698'
             headline: 'Lübeck führt einheitliche geschlechtergerechte Sprache ein'
         -
-            icon: 'lightbulb-on'
-            url: 'https://www.annaheger.de/pronomen/'
-            headline: 'Pronomen ohne Geschlecht – Illi Anna Heger'
+            icon: 'atlas'
+            url: 'https://geschicktgendern.de/schreibweisen/'
+            headline: 'Vor- und Nachteile Gängiger Schreibweisen'
+            extra: ' – GeschicktGendern.de'
     academic: []
     mediaGuests: []
     mediaMentions: []
@@ -124,8 +150,8 @@ profile:
     editorEnabled: true
     defaultWords:
         - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.']
-        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau']
-        - ['schön', 'süß', 'sexy',]
+        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
+        - ['schön', 'süß', 'sexy', 'hübsch', 'attraktiv']
         - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
         defaultPronoun: 'er'

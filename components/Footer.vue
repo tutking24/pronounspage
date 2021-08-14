@@ -18,7 +18,7 @@
                     <Icon v="users"/>
                     <T>footer.links</T>:
                 </p>
-                <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row']">
+                <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row', 'justify-content-center', 'align-items-center']">
                     <span>
                         <SquareButton
                                 v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"

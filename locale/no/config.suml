@@ -1,0 +1,148 @@
+locale: 'no'
+
+header: true
+
+pronouns:
+    enabled: true
+    route: 'pronomen'
+    default: 'han'
+    any: 'alle'
+    plurals: true
+    honorifics: false
+    multiple:
+        name: 'Utskiftbare former'
+        description: >
+            Mange ikke binære personer bruker mer enn en form utskiftbart
+            og synes det er greit å bli kalt enten eller.
+            Noen liker når andre bytter mellom formene når de snakker om dem.
+        examples: ['han&hun', 'han&hen', 'hun&hen']
+    null: false
+    emoji: false
+    slashes: true
+    avoiding: false
+    others: 'Andre pronomen'
+
+pronunciation:
+    enabled: true
+    voices:
+        NO:
+            language: 'nb-NO'
+            voice: 'Liv'
+            engine: 'standard'
+
+sources:
+    enabled: true
+    route: 'kilder'
+    submit: true
+    mergePronouns: []
+    extraTypes: []
+
+nouns:
+    enabled: true
+    route: 'ordbok'
+    collapsable: false
+    plurals: true
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: true
+    inclusive:
+        enabled: false
+    terms:
+        enabled: true
+        categories:
+            - 'seksuell legning'
+            - 'romantisk legning'
+            - 'tertiær legning'
+            - 'kjønn'
+            - 'kjønns uttrykk'
+            - 'forholds modell'
+            - 'språk'
+            - 'attraksjon'
+            - 'politikk'
+        route: 'terminologi'
+
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+english:
+    enabled: false
+
+faq:
+    enabled: true
+    route: 'faq'
+
+links:
+    enabled: false
+    split: false
+    route: 'linker'
+    blogRoute: 'blogg'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            headline: 'Pronoun.is'
+            extra: '– inspirasjon for denne nettsiden.'
+    academic: []
+    mediaGuests: []
+    mediaMentions: []
+
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
+    recommended: []
+
+contact:
+    enabled: true
+    route: 'kontakt'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
+    team:
+        enabled: true
+        route: 'team'
+
+support:
+    enabled: true
+    links:
+        -
+            icon: 'coffee'
+            url: 'https://ko-fi.com/radajezykaneutralnego'
+            headline: 'Ko-Fi'
+        -
+            icon: 'paypal'
+            iconSet: 'b'
+            url: 'https://paypal.me/RJNeutralnego'
+            headline: 'PayPal'
+
+user:
+    enabled: true
+    route: 'bruker'
+    termsRoute: 'vilkar'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        - ['[uformell]', 'mx.', 'mr.', 'fru', 'sir', 'madam', 'kamerat']
+        - ['person', 'mann', 'kvinne', 'dame', 'dude', 'gutt', 'jente', 'bro', 'søs']
+        - ['pen', 'kjekk', 'søt', 'sexy']
+        - ['venn', 'partner', 'kjæreste', 'mann', 'kone', 'elskede']
+    flags:
+        defaultPronoun: 'hen'
+
+census:
+    enabled: false
+
+redirects: []
+
+api: ~

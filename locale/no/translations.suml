@@ -1,0 +1,644 @@
+title: 'no.pronouns.page'
+description: 'Brukseksempler på personlige pronomen og kjønnsnøytralt språk.'
+
+home:
+    link: 'Hjem'
+    header: 'Pronomen'
+    headerLong: 'Liste over pronomen'
+    why: 'Hva er pronomen og hva bruker vi dem til?'
+    about:
+        - >
+            Vi har alle pronomen. Dette er ordene vi bruker i stedet for å kalle noen ved navn hver gang vi nevner dem.
+            De fleste bruker {/han=“han/ham”} og {/hun=“hun/henne”}, så det er vanlig å anta hvilket vi skal bruke basert på noens utseende.
+            Men det er faktisk ikke så enkelt som dette...
+        - >
+            Kjønn er komplisert. Noen mennesker “ser ikke ut” som et kjønn.
+            Noen foretrekker å bli kalt på en annen måte enn det du kanskje forventer.
+            Noen mennesker passer ikke inn i boksene med “mann” eller “kvinne”, og foretrekker mer nøytralt språk.
+        - >
+            Dette verktøyet lar deg dele en link til pronomenene dine, med eksempler på konteksten de vil bli brukt i,
+             slik at du kan vise folk hvordan du liker å bli kalt.
+        - >
+            Hvorfor har det noe å si? På grunn av grunnleggende menneskelig anstendighet
+            Du ville vel ikke kalt Anne “Ingrid” bare fordi du liker det navnet bedre
+             eller fordi du synes “hun ser ut som en Ingrid”?
+            Selv dersom hun har navnet “Ingrid” i fødselsattesten hennes
+             men hun hater det, og foretrekker å bruke “Anne” –
+             så ville du kalt henne Anne. Det er likedan med pronomen.
+             Hvis du ikke vil være frekk mot noen, kall de som de vil bli kalt..
+             Den eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen
+            Vi introduserer oss selv med ett navn, men ikke med pronomen. La oss endre det!
+    pronouns: 'Liste med populære pronomen'
+    generator:
+        header: 'Generator'
+        description: >
+            Du kan også bruke dette verktøyet hvor du fyller inn tomrommet i en setning
+            og generer en link klar til å dele med andre.
+        button: 'Vis generator'
+        header2: 'Generer en link'
+        base: 'Basert på'
+        alt: 'Du kan også putte inn utskiftbare ord i hvert felt separat, feks. <code>han&hun</code> = „han” eller „hun”.'
+        pronunciation: 'Du kan også spesifisere hvordan man uttaler det etter en pipe character, ved bruk av IPA, feks. <code>faerself|fɛɹsɛlf</code> = „faerself” uttalt som /fɛɹsɛlf/.'
+    whatisit: 'Hva er greia med pronomen?'
+    mission:
+        header: 'Vårt formål:'
+        summary: 'Vi kjemper for frihet, respekt og inklusivitet i språk.'
+        freedom: >
+            <strong>Frihet</strong>
+            – slik at alle kan bruke <em>for dem selv</em>
+            hvilke som helst pronomen de føler beskriver dem best.
+        respect: >
+            <strong>Respekt</strong>
+            – slik at <em>andres</em> pronomen er respektert.
+        inclusiveness: >
+            <strong>Inklusivitet</strong>
+            – slik at når vi snakker om personer vi ikke kjenner,
+            antar vi ikke kjønnet deres, og ekskluderer dem ikke.
+
+pronouns:
+    header: 'Pronomen'
+    headerLong: 'Pronomen'
+    examples: 'Eksempler i setninger'
+    plural: 'Flertall'
+    intro: 'Mine pronomen er'
+    normative: 'Normativ'
+    alt:
+        button: 'Generer en link til utskiftbare former'
+        header: 'Utskiftbare former'
+        raw: 'Utskiftbare'
+    generated: 'Disse pronomenene har blitt laget ved bruk av en generator. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
+    any:
+        header: 'Alle pronomen'
+        short: 'alle'
+        description: >
+            Selv om det for mange folk er veldig viktig at andre bruker spesifikke pronomen til å omtale dem
+            så er det også andre som ikke bryr seg om hvilke pronomen du bruker for dem, eller bruker alle pronomen - så lenge det er klart hvem man snakker om.
+        options: 'sjekk ut valgene her [del]{/=her}.'
+    others: 'Andre former'
+    othersRaw: 'andre'
+    or: 'eller'
+    grammarTable: 'Tabell'
+    avoiding: false
+
+sources:
+    header: 'Kilder'
+    headerLong: 'Eksempler fra kulturelle tekster'
+    headerLonger: 'Kjønnsnøytralt språk i kulturelle tekster'
+    subheader: 'Tekst corpus av nøytralt språk'
+    toc: 'Vis innhold'
+    type:
+        All: 'Alle'
+        Book: 'Bøker'
+        Article: 'Artikler'
+        Movie: 'Filmer'
+        Series: 'Serier'
+        Song: 'Musikk'
+        Poetry: 'Dikt'
+        Poetry: 'Spill'
+        Other: 'Andre'
+    submit:
+        header: ' Bidra ved å sende inn et eksempel'
+        action: 'Legg til'
+        pronouns: 'Hvilke pronomen har blitt brukt?'
+        pronounsInfo: 'Putt inn den enkleste måten å si pronomenet på, feks. sånn det er i linken; “de”, “e/em/es”, “hun&han”'
+        type: 'Kilde type'
+        author: 'Forfatter'
+        title: 'Tittel'
+        extra: 'Ekstra info (oversetter, navn på journal, …)'
+        year: 'Utgitt år (av den Norske versjonen)'
+        fragments: 'Fragmenter'
+        fragmentsInfo: 'Du kan markere de relevante pronomenene ved å bruke firkantede parenteser: “Så så \[\[de]] hvordan \[\[de]] gjorde alt det mot \[\ [dem selv]].”'
+        comment: 'Kommentar'
+        link: 'Link til innholdet'
+        thanks: 'Takk for at du bidrar!'
+        another: 'Legg til en til'
+        moderation: 'Bidrag må bli vurdert og godtatt før de blir lagt ut.'
+        key: 'Nøkkel'
+        keyInfo: 'identifiserer for å linke kilder mellom språk versjoner og linker med ordboken'
+        images: 'Bilder'
+    otherVersions: 'På andre språk'
+    referenced: 'Eksempler på bruk i setninger'
+
+
+nouns:
+    header: 'Ordbok'
+    headerLong: 'Ordbok'
+    headerLonger: 'Ordbok med kjønnsnøytralt språk'
+    description: 'Det er ikke bare pronomen! Se ordboken vår av kjønnsnøytralt språk.'
+    intro:
+        - >
+            Inklusivt og kjønnsnøytralt språk betyr  ikke bare å respektere andres pronomen.
+            Det inkluderer innebærer også å beskrive jobben deres, posisjonen de er i, forhold, etc.
+            på en måte som ikke antar kjønnet deres.
+            Ikke alle brannmenn er menn. Ikke alle ektefeller er en “mann” eller en “kone”.
+        - >
+            Når du snakker til eller om noen og du ikke vet hvilket kjønn de er,
+            til en gruppe med folk av forskjellig kjønn,
+            og spesielt til ikke-binære personer som foretrekker “de”,
+            bruk de nøytrale formene.
+        - >
+            Under denne teksten presenterer vi en ordbok med noen av ordene du kan holde et øye med på.
+            Du kan bidra til den og legge til dine forslag.
+
+    approved: 'godtatte bidrag'
+    pending: 'venter på vurdering'
+    edit: 'Foreslå en endring'
+    edited: 'Foreslå endring av'
+    editing: 'Du redigerer et eksisterende forslag.'
+    empty: 'Ingen ord funnet som matcher dine kriterier.'
+
+    submit:
+        action: 'Legg til'
+        actionLong: 'Legg til et ord'
+        thanks: 'Takk for at du bidrar!'
+        another: 'Legg til en annen'
+        moderation: 'Bidrag må bli vurdert før de blir lagt ut.'
+
+    template: 'Bruk en mal'
+    root: 'Rot'
+
+    masculine: 'maskulin'
+    masculineShort: 'mask.'
+    feminine: 'feminin'
+    feminineShort: 'femi'
+    neuter: 'nøytral'
+    neuterShort: 'nøytr.'
+
+    singular: 'entall'
+    singularShort: 'ent.'
+    plural: 'flertall.'
+    pluralShort: 'fl.'
+
+    terms:
+        header: 'Terminologi'
+        headerLong: 'Ordbok av queer terminologi'
+        info:
+            - >
+                En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
+        term: 'Begrep'
+        original: 'Etymologi'
+        category: 'Kategori'
+        images: 'Ekstra bilder, fra utsiden av flagg katalogen'
+        definition: 'Definisjon'
+
+faq:
+    header: 'Spørsmål'
+    headerLong: 'Ofte stilte spørsmål'
+    questions:
+        nonbinary:
+            question: 'Hva er intetkjønn?'
+            answer:
+                - >
+                    Kjønn er mye mer komplisert enn bare mann/kvinne.
+                    Til og med fra ett biologiskt synspunkt, skiller vi mellom kromosomalt kjønn,
+                    ggenetisk kjønn, hormonalt kjønn, fenotypisk kjønn…
+                    De er ikke nødvendigvis kongruente med hverandre, de må ikke være binære.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mer info her)}.
+                    Og når vi kommer til det kulturelle aspektet, “kjønn” er et sosialt konstrukt.
+                    Avhengig av sted og tid, å være “en kvinne” eller “en mann ” kan bety å ha veldig forskjellige
+                    rettigheter, plikter, normer… I Europa, pleide menn å gå med høye hæler og strømpebukser
+                    innfødte folk av Nord Amerika har kjent igjen et tredje kjønn for århundrer
+                    {https://gender.wikia.org/wiki/Two-Spirit=(to åndelig)}, etc. etc.
+                - >
+                    Intetkjønn eller ikke-binær er et begrep som beskriver identiteten til
+                    de som ikke passer inn i de binære mann/kvinne-båsene.
+                    Det inkluderer folk som er
+                    {https://gender.wikia.org/wiki/Agender=akjønnet},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=kjønnsflytende},
+                    {https://gender.wikia.org/wiki/Demigirl=demijenter},
+                    {https://gender.wikia.org/wiki/Demiboy=demigutter},
+                    i {https://gender.wikia.org/wiki/Non-binary=og mange mange andre}.
+                - >
+                    Intetkjønn er ikke nødvendigvis noe “imellom” maskulinitet og feminitet, mer som “bortenfor”.
+                    Ikke-binære folk må ikke være androgyne, må ikke bruke nøytrale pronomen, etc.
+                    Det handler om å være fri fra kjønnsroller, ikke om å lage nye.
+        why-respect:
+            question: 'Hvorfor skal jeg respektere noen <em>rare</em> pronomen?'
+            answer:
+                - >
+                    Fordi å kalle folk det de vil bli kalt er basisen av sosiale relasjoner.
+                    Du ville ikke kalt Anne “Ingrid”, du ville ikke droppet “mr”/“fru” når du snakker til veilederen din, etc.
+                    Og det er folk som ikke vil bli kalt enten“{/han=han}” or “{/hun=hun}”.
+                    Hvis du ikke aksepterer det, viser det bare <em>deg</em> i ett dårlig lys.
+                - >
+                    “Rare pronomen” er bare noe å bli vant til.
+        how-to-know:
+            question: 'Hvordan vet jeg hva jeg skal kalle noen?'
+            answer:
+                - >
+                    Du kan bare spørre! Ja,det kan kanskje være litt kleint, men jo mer vi gjør det, jo mindre kleint blir det.
+                     Hvis vi kan spørre noen om navnet dems, hvorfor ikke pronomen?
+                - >
+                    (Men vennligst ikke si “Er du en gutt eller jente?”.
+                    Dette spørsmålet får det til å virke som det bare er to riktige svar,
+                    og det foreslår usunn nysgjerrighet om noens genitalier.
+                    Istedenfor, kan du bare spørre “hva er dine pronomen?” eller “hva skal jeg kalle deg?”)
+                - >
+                    Det er også viktig å normalisere å si dine pronomen når du introduserer deg selv til andre.
+                    “Hei, jeg er Michæl, {/han=han/hans}”. Det er ikke vanskelig – men for trans og ikke binære folk betyr det så mye!
+                    Det er til og med enda lettere gjort online: bare putt dine pronomen (eller en link til vår nettside) til din bio.
+                - >
+                    Husk også at mange folk kan bruke forskjellige navn eller pronomen avhengig av situasjonen.
+                    Kanskje de ikke er ute blant kolleger enda, men rundt venner føle seg trygge med å leve som sitt sanne jeg.
+                    Vær forsiktig. Du kan kanskje spørre dem “hvilke pronomen burde jeg bruke foran sjefen din?”, etc.
+                - >
+                    Noen folk gir flere pronomen, feks. “{/hun&han=han/hun}” or “{/de&han=de/han}”.
+                    De betyr at de liker alle de pronomenene. Vanligvis, er den første den de liker aller best.
+        who-uses-it:
+            question: 'Er det i det hele tatt noen som bruker det der?'
+            answer:
+                - >
+                    Ja! Millioner av ikke binære personer rundt om hele jorden.
+                    Alle pronomen som er listet her, har noen som bruker de i hverdagen.
+        authority:
+            question: 'Er de ikke binære pronomenene godtatt av en slags autoritet?'
+            answer:
+                - >
+                    Språk er ikke noe form for Gud gitt, eldgammel magi satt i stein.
+                    Det er bare et verktøy som vi bruker til å kommunisere.
+                    Når vi endres som en sosialitet, og når verden rundt oss endrer seg,
+                    justerer vi språket til å bruke det bedre og forstå det bedre.
+                    Vi er de som bruker språket, så <em>vi er autoriteten</em> på hvordan vi vil bruke det.
+                - >
+                    Ordbøker tar ofte tiden sin på å få inn de endringene,
+                    men det gjør ikke endringene noe mindre gyldige.
+                    Men etterhvert som vi bruker de nye begrepene, og bruker de ofte nok, kan de bli i inkludert i ørdbøker.
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
+                    aksepterer bruken av {/de=entall “de”} som et ikke binært pronomen.
+                - >
+                    Du kan også lese noen {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
+                     på neopronomem.
+        bio:
+            question: 'Hvorfor skal jeg putte pronomenene mine på sosiale medier?'
+            answer:
+                - >
+                    Hvis du er cis (= ikke trans) og du bruker „{/han=han}” eller „{/hun=hun}” som matcher kjønnet ditt,
+                    så tror du kanskje at pronomenene dine er <em>åpenbart</em>.
+                    Og ja, kanskje det er sant – så lenge navnet ditt er nevnt i profilen din (og er tradisjonelt maskulint eller feminint)
+                    eller hvis du har et bilde av deg som profilbilde ditt.
+                    Mange folk har ikke det – så det er vanskelig å gjette hva de vil bli kalt.
+                - >
+                    Men det er mer enn det: dine pronomen kan være “åpenbare”,
+                    men det er andre hvis pronomen ikke er det.
+                    De vil at folk skal kalle dem de de vil bli kalt, uansett om de “passerer” som kjønnet dems eller ikke,
+                    uansett om de vil ha en overgang (eller hvis de vil ha en overgang i det hele tatt).
+                    Ikke binære personer ser vanligvis ikke “ikke binære ut”, vi skylder ingen å være androgyne.
+                - >
+                    Å dele pronomenene våre er veldig viktig for trans, ikke binære og personer som ikke er i samsvar med kjønn.
+                    Akk, det avslører oss også og singler oss ut.
+                    Men hvis cis personer gjør det samme, betyr det så mye for oss.
+                    Det får oss til å føle oss mer komfortable, trygge og velkomne
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(flere grunner her).}
+        change:
+            question: 'Kan jeg bytte mine pronomen?'
+            answer:
+                - >
+                    Så klart! Ingen er overrasket når noen endrer meninger, stil, hobbyer…
+                     Så hvorfor ville det vært rart at de discovered a part of their identity,
+                     stoppet å like navnet sitt, fant en merkelapp som passet dem, etc.?
+        get-used-to:
+            question: 'Er det rart at jeg ikke klarer å bli vant til de nye pronomenene mine?'
+            answer:
+                - >
+                    Ikke i det minste! Etter mange år med a bruke pronomener som er kongruent med ens kjønn tildelt ved fødsel.
+                     Det er enkelt å glemme seg når man bytter til noen andre.
+                - >
+                    Pronomen ≠ Kjønn
+                    Kjønnet ditt kommer ikke til å endre seg bare fordi du ble forvirret når noen kalte deg “dem”.
+                    Ikke vær bekymret. Eksperiment. See hva som passer deg best.
+        preferred-pronouns:
+            question: 'Hvorfor skal jeg ikke si “foretrukne pronomen”?'
+            answer:
+                - >
+                    Fordi dette bare et begrep som foreslår at noens pronomener bare er et innfall.
+                    Hvis noen bare “foretrekker” å bli kalt hun, vil han ikke _egentlig_ bli trist, hvis jeg kaller han en han, ikke sant?
+                    De ser ut som en gutt, tross alt, så det er enklere for meg!
+                - >
+                    Nei! Det er våre pronomen. Ikke våre “foretrukne pronomen”. Det er navnene våre, ikke våre “foretrukne navn”.
+                    Hvis du bryr deg om dine trans og ikke binære venner og familie, kall dem som de vil bli kalt.
+        gender-pronouns:
+            question: 'Hvorfor burde jeg ikke si “kjønns pronomen”?'
+            answer:
+                - >
+                    Fordi kjønn ≠ pronomen. Pronomen er bare grammatikk.
+                    Ikke binære personer kan bruke binære pronomen, noen lesbiske bruker {/han=han/hans} av kulturelle grunner, etc.
+                - >
+                    Rettere sagt, bare si “pronomen”.
+
+links:
+    header: 'Linker'
+    headerLong: 'Ekstra linker'
+    recommended: 'Vi anbefaler'
+    blog: 'Blog'
+    media: 'Pronouns.page på sosiale medier'
+
+    social: 'Sosiale medier'
+
+    languageVersions: 'Andre språk versjoner'
+
+people: ~
+
+english: ~
+
+contact:
+    header: 'Kontakt'
+    authors: 'Forfatterne'
+    team:
+        name: 'Det “Neutral Language Council” kollektivet'
+        description:
+            - >
+                {https://pronouns.page=Pronouns.page} og andre relaterte initiativ
+                er laget av “Neutral Language Council” kollektivet.
+        logo: 'Logoen av kollektivet er trans symbolet med en snakkeboble som symboliserer språk.'
+        members: 'Nåværende medlemmer'
+        blog: 'Blogg'
+        upcoming: 'Kommende språk versjoner'
+
+support:
+    header: 'Hjelp'
+    description: >
+        Hvis du har lyst til å bidra til serveren, domener, klistremerker etc., eller bare kjøpe forfatterne en kaffe,
+        kan du bruke linkene nedenfor:
+
+user:
+    header: 'Bruker'
+    headerLong: 'Din bruker'
+    tokenExpired: 'Denne har gått ut på dato. Vennligst last inn nettsiden på nytt og prøv igjen.'
+    login:
+        placeholder: 'Email (eller brukernavn, hvis du allerede er registrert)'
+        action: 'Logg inn'
+        emailSent: 'Vi har sendt deg en email med en 6 sifret kode. Skriv den ned her. Koden er en engangskode og kan brukes i 15 minutter.'
+        userNotFound: 'Bruker ikke funnet.'
+        email:
+            subject: 'Din Logg inn kode er %code%'
+            content: |
+                For å konfirmere email adressen din, bruk følgende kode:%code%.
+
+                Hvis du ikke spurte om denne koden, ignorer denne meldingen.
+        why: >
+            Å registrere seg lar deg redigere kortene dine ({/@andrea=sånn som denne}).
+        passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
+    code:
+        action: 'Gyldig'
+        invalid: 'Ugyldig kode.'
+    account:
+        changeUsername:
+            header: 'Brukernavn'
+            action: 'Endre'
+            invalid: 'Brukernavn må være mellom 4 og 16 bokstaver, og kan bare inneholde nummer, bokstaver, punktum, bindestreker og understreker.'
+            taken: 'Dette brukernavnet er tatt.'
+        changeEmail:
+            header: 'Email adresse'
+            action: 'Endre'
+            invalid: 'Ugyldig email addresse.'
+            taken: 'Denne adressen er tatt.'
+        admin: 'Admin'
+    logout: 'Logg ut'
+    avatar:
+        header: 'Avatar'
+        change: 'Endre'
+    deleteAccount: 'Slett bruker'
+    deleteAccountConfirm: 'Er du sikker på at du vil slette brukeren din? Dette valget kan du ikke ta tilbake!'
+    socialConnection:
+        list: 'Sosiale medier tilkoblinger'
+        connect: 'Koble til'
+        refresh: 'Last inn på nytt'
+        disconnect: 'Koble fra'
+        disconnectConfirm: 'Er du sikker på at du vil kobla fra? (Du kan alltid logge inn via email %email%)'
+
+profile:
+    description: 'Beskrivelse'
+    names: 'Navn'
+    pronouns: 'Pronomen'
+    pronounsInfo: 'Du kan taste inn ett pronomen (feks. “de” eller “hun/henne” eller en link (feks. “http://no.pronouns.page/hun”).'
+    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'
+    words: 'Ord'
+    birthday: 'Alder'
+    birthdayInfo: 'Vi viser ikke bursdagen din, bare den kalkulerte alderen.'
+    flags: 'Flagg'
+    flagsInfo: 'Dra og dropp pride flaggene dine inn i denne rammen.'
+    flagsCustom: 'Last opp tilpasset flagg'
+    flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
+    links: 'Linker'
+    linksCake: 'Vi anbefaler å linke til'
+    column: 'Kolonne'
+
+    header: 'Kort'
+    list: 'Dine kort'
+    init: 'Lag et kort'
+    show: 'Vis'
+    edit: 'Rediger'
+    delete: 'Slett'
+    deleteConfirm: 'Er du sikker på at du vil slette dette kortet?'
+    editor:
+        header: 'Kort redigerer'
+        save: 'Lagre kort'
+    opinion:
+        yes: 'Ja'
+        jokingly: 'På tull'
+        meh: 'Okay'
+        no: 'Nei'
+    banner: >
+        Du kan også bruke nettsiden vår til å lage et kort, {/@andrea=sånn som denne},
+        som inneholder navnene dine, pronomen, pride flagg, likte ord, etc.
+         Så kan du linke den til din bio eller epost-signatur.
+        Bare lag en bruker {/account=her}.
+    bannerButton: 'Lag et kort'
+    card:
+        link: 'Kort bilde'
+        generating: 'Genererer, vennligst vent'
+    empty: 'Denne personen har ikke laget noen kort enda.'
+
+share: 'Del'
+
+crud:
+    approve: 'Vedta'
+    hide: 'Gjem'
+    remove: 'Ta vekk'
+    removeConfirm: 'Er du sikker på at du vil slette denne tingen?'
+    edit: 'Rediger'
+    add: 'Legg til'
+    filter: 'Filter'
+    filterLong: 'Filter listen…'
+    search: 'Søk…'
+    author: 'Lagt til av'
+    saved: 'Endringer er lagret!'
+    loginRequired: '{/account=Log in} for å'
+
+footer:
+    license: >
+        {https://gitlab.com/Avris/Zaimki=Source code} er lisensiert under {https://mit.avris.it=MIT} [mit.svg].<br/>
+        Innholdet er lisensiert under {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
+        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+    links: 'Kontakt, sosiale medier, hjelp'
+
+notFound:
+    message: 'Side var ikke funnet'
+    back: 'Gå tilbake til hjemmesiden'
+
+authRequired:
+    message: 'Du må logge inn for å se dette innholdet.'
+    go: 'Gå til logg inn formen'
+
+confirm:
+    header: 'Er du sikker?'
+    yes: 'Ja, jeg er sikker'
+    no: 'Nei, kanseller'
+    ok: 'OK'
+
+terms:
+    header: 'Vilkår og betingelser'
+    lastUpdate: 'Sist oppdatert'
+    consent: 'Ved å registrere deg sier du ja til våre vilkår og betingelser {/vilkår=vilkår og betingelser}.'
+
+admin:
+    header: 'Administrator'
+    user:
+        user: 'Bruker'
+        email: 'Email'
+        roles: 'Tillatelser'
+        profiles: 'Profiler'
+        confirmRole: 'Er du sikker på at du vil bytte @%username%''s rolle til "%role%"?'
+
+table:
+    empty: 'Tom…'
+    count: 'Tell'
+    sort: 'Dra for å sortere'
+    scrollUp: 'Skroll til toppen'
+    more: 'Vis mer'
+
+api:
+    header: 'Offentlig API'
+    example: 'Eksempel'
+    query: 'Query tråd parametere'
+
+quotation:
+    start: '“'
+    end: '”'
+
+localise:
+    shorter: 'Legg til mer'
+    short: 'Å legge til språk versjoner'
+    long: 'Lyst til å lage en ny språk versjon? Så bra! Sjekk denne ut!'
+    longLink: 'denne manualen!'
+
+images:
+    upload:
+        instruction: 'Klikk her eller dra bildene dine hit'
+        instructionShort: 'Last opp'
+
+error:
+    generic: 'Noe gikk galt, vennligst prøv igjen...'
+
+captcha:
+    reason: 'Vennligst bevis at du ikke er en robot for å minske spam og DDoS angrep.'
+    invalid: 'Ugyldig CAPTCHA, vennligst prøv igjen'
+
+mode:
+    dark: 'Mørkt tema'
+    light: 'Lyst tema'
+
+ban:
+    reason: 'Grunn til forbud'
+    visible: '(dette vil kunne bli sett av brukeren)'
+    terms: 'Terms rules broken (required)'  # TODO
+    action: 'Forby denne personen'
+    confirm: 'Er du sikker på at du vil forby @%username%?'
+    header: 'Du er forbydd. Profilen din vil ikke bli vist til noen.'
+    banned: 'Forbydd'
+    termsIntro: 'Ifølge våre {/termes=Terms of Service}:'
+
+report:
+    action: 'Rapporter problem'
+    comment: 'Vennligst forklar enkelt hva som er galt med denne profilen'
+    confirm: 'Er du sikker på at du vil rapportere @%username%?'
+    sent: 'Rapport sendt. Takk for hjelpen!'
+
+flags:
+    Abroromantic: 'Abroromantisk'
+    Abrosexual: 'Abroseksuell'
+    Achillean: 'Achillean'
+    Alloromantic_Asexual: 'Alloromantisk aseksuell'
+    Agender: 'Akjønnet'
+    Anarcha-Queer: 'Skeiv anarkisme'
+    Androgyne: 'Androgyn'
+    Androsexual: 'Androseksuell'
+    Aporagender: 'Aporakjønnet'
+    Archaeopronouns: 'Archaepronomen'
+    Aroace: 'Aroace'
+    Aromantic: 'Aromantisk'
+    Aromantic_Allosexual: 'Aromantisk alloseksuell'
+    Asexual: 'Aseksuell'
+    Autigender: 'Autikjønnet'
+    Bear: 'Bjørn'
+    Bicurious: 'Binysgjerrig'
+    Bigender: 'Bikjønnet'
+    Biromantic: 'Biromantisk'
+    Bisexual: 'Bifil'
+    Butch: 'Butch'
+    Ceteroromantic: 'Ceteroromantisk'
+    Ceterosexual: 'Ceteroseksuell'
+    Cis_Ally: 'Cis ally'
+    Demiboy: 'Demigutt'
+    Demigender: 'Demikjønn'
+    Demigirl: 'Demijente'
+    Demiromantic: 'Demiromantisk'
+    Demisexual: 'Demiseksuell'
+    Diamoric: 'Diamorisk'
+    Enbian: 'Enbian'
+    Fa*afafine: 'Fa''afafine'
+    Gay: 'Homofil'
+    Gender_Questioning: 'Spørrende om kjønn'
+    Genderfae: 'Kjønnsfae'
+    Genderfaun: 'Kjønnsfaun'
+    Genderfluid: 'Kjønnsflytende'
+    Genderflux: 'Kjønnsflux'
+    Genderqueer: 'Kjønns queer'
+    Greyasexual: 'Grå aseksuell'
+    Greyaromantic: 'Grå aromantisk'
+    Gynesexual: 'Gyneseksuell'
+    Heteroflexible: 'Heterofleksibel'
+    Heteroromantic: 'Heteroromantisk'
+    Heterosexual: 'Heteroseksuell'
+    Hijra: 'Hijra'
+    Homoflexible: 'Homofleksibel'
+    Homoromantic: 'Homoromantisk'
+    Intersex: 'Intersex'
+    LGBTQ: 'LHBTQ'
+    Leather_Pride: 'Lær pride'
+    Lesbian: 'Lesbisk'
+    Lesbiromantic: 'Lesbiromantisk'
+    Maverique: 'Maverique'
+    Muxe: 'Muxe'
+    Nebularomantic: 'Nebularomantisk'
+    Neopronouns: 'Neopronomen'
+    Neutrois: 'Nøytral'
+    Nonbinary: 'Ikke binær'
+    Omnisexual: 'Omniseksuell'
+    Omniromantic: 'Omniromantisk'
+    Oriented_Aroace: 'Orientert aroace'
+    Pangender: 'Pankjønnet'
+    Panromantic: 'Panromantisk'
+    Pansexual: 'Panseksuell'
+    Polyamorous: 'Polyamorøs'
+    Polyromantic: 'Pol romantisk'
+    Polysexual: 'Pol seksuell'
+    Pomoromantic: 'Pomoromantisk'
+    Pomosexual: 'Pomoseksuell'
+    Progress_Pride: 'Progresjon pride'
+    Queer: 'Queer'
+    Queerian: 'Queerian'
+    Queerplatonic: 'Queerplatonisk'
+    Quoiromantic: 'Quoiromantisk'
+    Sapphic: 'Safisk'
+    Sexuality_Questioning: 'Spørrende om seksualitet'
+    Straight_Ally: 'Streit ally'
+    Toric: 'Torisk'
+    Transfeminine: 'Transfeminin'
+    Transgender: 'Transkjønnet'
+    Transmasculine: 'Transmaskulin'
+    Transneutral: 'Transnøytral'
+    Trigender: 'Trikjønnet'
+    Trixic: 'Trixisk'
+    Two_Spirit: 'To åndelig'
+    Xenogender: 'Xenokjønnet'

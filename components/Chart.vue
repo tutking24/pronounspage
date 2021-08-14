@@ -3,35 +3,42 @@
 </template>
 
 <script>
+    import {sleep} from "../src/helpers";
+
     export default {
         props: {
-            name: { required: true },
+            label: { required: true },
             data: { required: true },
             cumulative: { type: Boolean },
         },
-        created() {
-            this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
+        async created() {
         },
-        mounted() {
-            if (process.client) {
-                setTimeout(_ => {
-                    this.drawChart();
-                }, 1000);
-            }
+        async mounted() {
+            if (!process.client) { return; }
+
+            await this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
+            this.drawChart();
         },
         methods: {
-            drawChart() {
+            async drawChart() {
+                let tries = 0;
+                while (window.Chart === undefined) {
+                    await sleep(100);
+                    if (tries++ > 1000) {
+                        return;
+                    }
+                }
                 new Chart(this.$el.getContext('2d'), {
                     type: 'line',
                     data: {
                         labels: Object.keys(this.data),
                         datasets: [{
-                            label: this.cumulative ? `cumulative ${this.name}` : `new ${this.name} per day`,
+                            label: this.label,
                             data: this.cumulative ? this.accumulate(Object.values(this.data)) : Object.values(this.data),
                             fill: false,
                             borderColor: '#C71585',
                         }],
-                    }
+                    },
                 });
             },
             accumulate(values) {

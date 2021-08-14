@@ -2,18 +2,25 @@
     <section>
         <ul class="list-group">
             <li class="list-group-item profile-current">
-                <form @submit.prevent="changeEmail" :disabled="savingEmail" class="my-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
-                    <span class="me-3 text-nowrap">
-                        <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/envelope.svg" class="icon invertible"/>
-                        <T>user.account.changeEmail.header</T>
-                    </span>
-                    <div v-if="!changeEmailAuthId" class="input-group w-lg-50">
-                        <input type="email" class="form-control" v-model="email" required/>
-                        <button class="btn btn-outline-primary">
-                            <T>user.account.changeEmail.action</T>
-                        </button>
+                <form @submit.prevent="changeEmail" :disabled="savingEmail">
+                    <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
+                    <div v-if="!changeEmailAuthId" class="">
+                        <input type="email" class="form-control mb-3" v-model="email" required/>
+                        <div class="d-flex flex-column flex-md-row">
+                            <Captcha v-model="captchaToken"/>
+                            <div class="d-none d-md-block ms-3">
+                                <button class="btn btn-outline-primary" :disabled="!canChangeEmail">
+                                    <T>user.account.changeEmail.action</T>
+                                </button>
+                            </div>
+                            <div class="d-block d-md-none mt-3">
+                                <button class="btn btn-outline-primary w-100" :disabled="!canChangeEmail">
+                                    <T>user.account.changeEmail.action</T>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div v-else class="input-group w-lg-50">
+                    <div v-else class="input-group mb-3">
                         <input type="text" class="form-control text-center" v-model="code"
                                placeholder="000000" autofocus required minlength="0" maxlength="6"
                                inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
@@ -159,6 +166,8 @@
 
                 gravatar,
 
+                captchaToken: null,
+
                 selectedUsername: 'andrea',  // TODO
             }
         },
@@ -209,6 +218,7 @@
                         email: this.email,
                         authId: this.changeEmailAuthId,
                         code: this.code,
+                        captchaToken: this.captchaToken,
                     });
 
                     if (response.error) {
@@ -260,6 +270,11 @@
             async uploaded(ids) {
                 await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-thumb.png`);
             },
+        },
+        computed: {
+            canChangeEmail() {
+                return this.email && this.captchaToken;
+            }
         },
     }
 </script>

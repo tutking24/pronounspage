@@ -153,6 +153,7 @@ export default {
         FLAGS: buildFlags(),
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
         STATS_FILE: process.env.STATS_FILE,
+        HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
@@ -160,6 +161,10 @@ export default {
     },
     router: {
         extendRoutes(routes, resolve) {
+            if (config.pronouns.enabled) {
+                routes.push({ path: '/' + config.pronouns.route, component: resolve(__dirname, 'routes/pronouns.vue') });
+            }
+
             if (config.sources.enabled) {
                 routes.push({ path: '/' + config.sources.route, component: resolve(__dirname, 'routes/sources.vue') });
             }
@@ -238,6 +243,10 @@ export default {
                 if (config.pronouns.avoiding) {
                     routes.push({ path: '/' + config.pronouns.avoiding, component: resolve(__dirname, 'routes/avoiding.vue') });
                 }
+            }
+
+            if (config.calendar && config.calendar.enabled) {
+                routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
             }
 
             if (config.api !== null) {

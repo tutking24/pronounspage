@@ -4,6 +4,7 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronombres'
     default: 'él'
     any: 'any'
     plurals: false
@@ -48,7 +49,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'orientación sexual'
+            - 'orientación romántica'
+            - 'orientacja terciaria'
+            - 'género'
+            - 'expresión de género'
+            - 'modelo de relación'
+            - 'lenguaje'
+            - 'atracción'
+            - 'política'
+        route: 'terminologia'
 
 names:
     enabled: false
@@ -89,6 +101,11 @@ links:
             url: 'https://drive.google.com/file/d/1m2D2URuaUpTgudSHA9tKg_2dRQ3RAZUM/view'
             headline: 'Innovaciones al género morfológico en el español de hablantes genderqueer'
             extra: ' – Benjamin Papadopoulos, B.A., Universidad de California, Berkeley'
+        -
+            icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'https://www.genderinlanguage.com/spanish'
+            headline: 'Gender in Language Project'
     academic: []
     mediaGuests:
         -

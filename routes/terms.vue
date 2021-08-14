@@ -47,9 +47,8 @@
 
         <p>
             It is forbidden to post on the Service any Content that might break the law or violate social norms,
-            including but not limited to: propagation of totalitarian regimes, hate speech, racism, xenophobia,
-            homophobia, transphobia, queerphobia, misogyny, harassment, impersonation, child pornography, unlawful conduct, misinformation,
-            sharing of someone else's personal data, spam, advertisement, copyright or trademark violations.
+            including but not limited to:
+            {{ forbidden.join(', ') }}.
         </p>
 
         <p>
@@ -100,3 +99,15 @@
         </p>
     </div>
 </template>
+
+<script>
+    import forbidden from "../src/forbidden";
+
+    export default {
+        data() {
+            return {
+                forbidden,
+            };
+        }
+    }
+</script>

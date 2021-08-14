@@ -14,7 +14,7 @@ home:
             Udostępniamy tutaj linki do przykładów użycia
             (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
             zaimków i innych form płciowych – nie tylko normatywnych „{/on=on}” i „{/ona=ona}”,
-            lecz także form niebinarnych.
+            lecz także form niebinarnych, takich jak {/ono=rodzaj neutralny} czy {/onu=postpłciowy}.
         - >
             Dlaczego należy je respektować?
             Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
@@ -35,7 +35,7 @@ home:
         - >
             Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
             „moje {/slowniki/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
-            „proszę przyjść do szkoły z {rodzic}em”,
+            „proszę przyjść do szkoły z {/slowniki/neutratywy#rodzic=rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
             „{/oni=dzwonili} z gazowni”,
             „będę robić”, itp.
@@ -68,6 +68,8 @@ home:
             nie zakładać ich płci i {/slowniki/inkluzywny=nie wykluczać}.
 
 pronouns:
+    header: 'Zaimki'
+    headerLong: 'Niebinarne zaimki i inne formy'
     examples: 'Przykłady użycia w zdaniu'
     plural: 'Liczba mnoga'
     intro: 'Moje zaimki to'
@@ -279,6 +281,28 @@ nouns:
             - >
                 Dukatywy pasują gramatycznie do {/onu=dukaizmów}, np. „moju pięknu partneru przyszłu do domu”.
                 Odmiana jest prosta, wg podanego niżej schematu.
+        extended:
+            header: 'Przykład odmiany'
+
+    xNouns:
+        header: 'Iksatywy'
+        label: 'iksatyw'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesioną literą „x”.'
+        info:
+            - >
+                Formy graficzne, takie jak {/onx=onx}, {/on*/=on*} czy {/on_=on_} używają placeholderów / znaków zastępujących
+                w miejscu różnic między wersją męską a żeńską.
+                Są przydatne w piśmie, ale ciężkie lub niemożliwe do wymówienia (mogą też sprawiać problemy czytnikom ekranowym).
+                Intencja jest łatwa do zrozumienia. Często są też używane w zwrotach do grupy osób lub osoby o nieznanej płci.
+            - >
+                Znaków zastępujących można używać również dla rzeczowników.
+                Ze względu na popularność form z iksem, prezentujemy je tutaj na przykładzie iksatywów,
+                ale można wymienić „x” na inny placeholder.
+            - >
+                Iksatywy pasują gramatycznie do {/onx=form z iksem}, np. „mojx pięknx partnerx przyszłx do domu”.
+                Są nieodmienne.
+                Liczbę mnogą proponujemy zaznaczać za pomocą podwójnego iksa, np. „partnerx” → „partnerxx”.
         extended:
             header: 'Przykład odmiany'
 
@@ -1135,6 +1159,10 @@ images:
 error:
     generic: 'Coś poszło nie tak, spróbuj ponownie…'
 
+captcha:
+    reason: 'Prosimy o udowodnienie, że nie jesteś botem, by chronić się przed spamem i DDoS-ami'
+    invalid: 'Nieprawidłowa CAPTCHA, spróbuj ponownie'
+
 mode:
     dark: 'Tryb nocny'
     light: 'Tryb dzienny'
@@ -1142,6 +1170,7 @@ mode:
 ban:
     reason: 'Powód blokady'
     visible: '(to będzie widoczne dla osoby zbanowanej)'
+    terms: 'Złamane punkty regulaminu (wymagane)'
     action: 'Zablokuj tę osobę'
     confirm: 'Czy na pewno chcesz zbanować @%username%?'
     header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
@@ -1242,3 +1271,65 @@ flags:
     Trixic: 'Triksyjs{adjective_n_k}'
     Two_Spirit: 'Dwie dusze'
     Xenogender: 'Ksenopłciow{adjective_n}'
+
+calendar:
+    header: 'Kalendarz'
+    headerLong: 'Queerowy Kalendarz'
+    months:
+        1: 'Styczeń'
+        2: 'Luty'
+        3: 'Marzec'
+        4: 'Kwiecień'
+        5: 'Maj'
+        6: 'Czerwiec'
+        7: 'Lipiec'
+        8: 'Sierpień'
+        9: 'Wrzesień'
+        10: 'Październik'
+        11: 'Listopad'
+        12: 'Grudzień'
+    dates:
+        1: '%day% stycznia'
+        2: '%day% lutego'
+        3: '%day% marca'
+        4: '%day% kwietnia'
+        5: '%day% maja'
+        6: '%day% czerwca'
+        7: '%day% lipca'
+        8: '%day% sierpnia'
+        9: '%day% września'
+        10: '%day% października'
+        11: '%day% listopada'
+        12: '%day% grudnia'
+    events:
+        pride_month: 'Miesiąc {/slowniki/terminologia#pride=Dumy}'
+        trans_month: 'Miesiąc Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
+        zaimki_birthday: 'Urodziny zaimki.pl'
+        agender_day: 'Dzień Osób {/slowniki/terminologia#apłciowość=Apłciowych}'
+        asexuality_day: 'Światowy Dzień {/slowniki/terminologia#aseksualność=Aseksualności}'
+        bisexuality_day: 'Dzień {/slowniki/terminologia#biseksualność=Biseksualności}'
+        drag_day: 'Dzień {/slowniki/terminologia#drag=Dragu}'
+        idahobit: 'Międzynarodowy Dzień Przeciw {/slowniki/terminologia#homofobia=Homofobii}, {/slowniki/terminologia#transfobia=Transfobii} i {/slowniki/terminologia#bifobia=Bifobii}'
+        intersex_day: 'Dzień Świadomości nt. {/slowniki/terminologia#homofobia=Interpłciowości}'
+        intersex_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#interpłciowość=Interpłciowych}'
+        lesbian_day: 'Dzień {/slowniki/terminologia#lesbijka=Lesbijek}'
+        lesbian_visibility_day: 'Dzień Widoczności {/slowniki/terminologia#lesbijka=Lesbijek}'
+        coming_out_day: 'Dzień {/slowniki/terminologia#coming%20out=Wychodzenia z Szafy}'
+        nonbinary_day: 'Dzień Osób {/slowniki/terminologia#niebinarność=Niebinarnych}'
+        pan_day: 'Dzień Świadomości nt. {/slowniki/terminologia#panseksualność=Panseksualności} i {/slowniki/terminologia#panromantyczność=Panromantyczności}'
+        trans_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
+        trans_visibility_day: 'Dzień Widoczności Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
+        zero_discrimination_day: 'Zero Discrimination Day'
+        arospec_week: 'Tydzień Świadomości nt. Spektrum {/slowniki/terminologia#aromantyczność=Aromantyczności}'
+        asexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#aseksualność=Aseksualności}'
+        bisexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#biseksualność=Biseksualności}'
+        pronouns_day: 'Dzień {https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio=Zaimków}'
+        trans_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
+        trans_parent_day: 'Dzień Rodzicielstwa Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
+        nonbinary_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#niebinarność=Niebinarności Płciowej}'
+        polyamory_day: 'Dzień {/slowniki/terminologia#poliamoria=Poliamorii}'
+
+        nameday_andrea: 'Imieniny: Andrea'
+
+        pridemarch_warsaw: 'Parada Równości w Warszawie \[test]'
+    banner: 'Obchodzimy właśnie'

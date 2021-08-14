@@ -4,42 +4,23 @@ header: true
 
 pronouns:
     enabled: true
+    route: 'pronoms'
     default: 'il'
     any: 'any'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'Formes interchangeables'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
-    null:
-        description: 'No pronouns / null pronouns / pronounless / nameself'
-        history: 'Some people prefer not using any pronouns, instead being referred by name, initial, or by omitting pronouns with passive voice, see: {https://lgbta.wikia.org/wiki/Nullpronominal=nullpronominal}.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-    emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+            De nombreuses personnes transgenres utilisent plus d'une forme et sont confortables
+            à l'idée de se faire appeler par n'importe laquelle de leur forme.
+            Certain.e.s aiment quand on alterne leur pronoms.
+        examples: ['il&elle', 'il&iel', 'elle&iel']
+    null: false
+    emoji: false
     slashes: true
     avoiding: false
-    others: 'Other pronouns'
+    others: 'Autres pronoms'
 
 pronunciation:
     enabled: true
@@ -58,7 +39,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'dictionnaire'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -68,7 +49,18 @@ nouns:
     inclusive:
         enabled: false
     terms:
-        enabled: false
+        enabled: true
+        categories:
+            - 'orientation sexuelle'
+            - 'orientation romantique'
+            - 'orientation tertiaire'
+            - 'genre'
+            - 'expression du genre'
+            - 'modèle de relation'
+            - 'langage'
+            - 'attirance'
+            - 'politique'
+        route: 'terminologie'
 
 names:
     enabled: false
@@ -127,31 +119,19 @@ support:
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'termos'
+    route: 'compte'
+    termsRoute: 'termes'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['[sans titre]', 'Mx.', 'M.', 'Mme.', 'MM.', 'Mmes.', 'Mlle.', 'Mlles.', 'Vve.', 'messieurs', 'monsieur', 'madame', 'mesdames', 'mademoiselle', 'mesdemoiselles', 'veuve']
+        - ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
+        - ['beauté', 'beau gosse', 'belle gosse']
+        - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'joyfriend', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'iel'
 
 census:
     enabled: false

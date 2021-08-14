@@ -5,7 +5,7 @@ ils	Pluriel, masculin	TRUE	ils	eux	les	leur	leur, leurs	le leur, la leur, les le
 elles	Pluriel, féminin	TRUE	elles	elles	les	leur	leur, leurs	le leur, la leur, les leurs	se	elles-mêmes	TRUE	TRUE	TRUE
 on	Normatif, indéfini	TRUE	on	soi			son, sa, ses	le sien, la sienne, les siens, les siennes	se	soi-même	FALSE	FALSE	TRUE
 al	Neopronom «al»	FALSE	al	al/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	al-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-ael/æl	Neopronom «ael»	FALSE	ael/æl	ael/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ael-même/ellui-même/soi-même	FALSE	FALSE	TRUE
+ael	Neopronom «ael»	FALSE	ael	ael/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ael-même/ellui-même/soi-même	FALSE	FALSE	TRUE
 el	Neopronom «el»	FALSE	el	el/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	el-même/ellui-même/soi-même	FALSE	FALSE	TRUE
 em	Neopronom «em»	FALSE	em	em/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	em-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Proche à «elle»
 iel	Neopronom «iel»	FALSE	iel	iel/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	iel-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Mélange de «il» et «elle»

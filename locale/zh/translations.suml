@@ -38,23 +38,24 @@ home:
         base: '根據'
         alt: '您還可以在每個字段中分別輸入可互換形式 - <code> 他&她 </code> = „他” 或 „她”.'
     whatisit: '代詞是什麼意思？'
-    # TODO
+
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: '我們的任務：'
+        summary: '我們爭取語言的自由、尊重和包容性。'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>自由</strong>
+            – 讓所有人能夠使用他們覺得適合自己的代詞。
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>尊重</strong>
+            – 讓其他人的代詞受到尊重。
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>包容性</strong>
+            – 讓我們指稱我們不知道的人或群體時，
+            不會以任何理由假設其性別或排斥他們。
 
 pronouns:
+    header: '代詞'
+    headerLong: '代詞'
     examples: '例句用法'
     plural: '複數'
     intro: '我的代詞是'
@@ -90,7 +91,7 @@ sources:
         Series: '電視劇'
         Song: '音樂'
         Poetry: '詩歌'
-        Game: 'Game' # TODO
+        Game: '遊戲'
         Other: '其他'
     submit:
         header: '提交一個示例'
@@ -301,7 +302,7 @@ links:
     headerLong: '額外鏈接'
     recommended: '建議'
 
-    blog: 'Blog'  # TODO
+    blog: '博客'
     media: 'Pronouns.page在傳媒'
 
     social: '社交媒體'
@@ -317,7 +318,7 @@ contact:
     authors: '網站的作者'
     team:
         name: '中立語推行委員會'
-        description: 
+        description:
             - >
                 {https://pronouns.page=Pronouns.page} 及相關舉措
                  由“中立語推行委員會”集體創建。
@@ -421,8 +422,8 @@ profile:
     card:
         link: '名片圖片'
         generating: '生成中……'
-    empty: 'This person hasn''t created any cards yet.' # TODO
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    empty: '此用戶還沒有創造任何名片'
+    loginRequired: '{/account=登入}以提交項目'
 
 share: '這裡'
 
@@ -437,10 +438,10 @@ crud:
     filterLong: '篩選清單…'
     search: '搜索'
     author: '添加人'
-    saved: 'Changes saved successfully!'  # TODO
+    saved: '更改保存成功'
 
 footer:
-    # TODO source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
+    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
         Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh=CC BY-NC-SA 4.0}
@@ -505,26 +506,30 @@ images:
 error:
     generic: '出了點問題，請重試...'
 
+# TODO
+captcha:
+    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
+    invalid: 'Invalid CAPTCHA, please try again'
+
 mode:
     dark: '黑暗模式'
     light: '明亮模式'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terinos=Terms of Service}:'
+    reason: '封禁原因'
+    visible: '（用戶可以看見這個）'
+    terms: 'Terms rules broken (required)'  # TODO
+    action: '封禁用戶'
+    confirm: '您確定要封禁@%username%嗎'
+    header: '您被封禁了。你的資料不會對任何人顯示。'
+    banned: '被封禁'
+    termsIntro: '根據我們的{/terms=服務條款}：'
 
-# TODO
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: '舉報濫用'
+    comment: '請簡述資料有什麼問題'
+    confirm: '您確定要舉報@%username%嗎？'
+    sent: '您的舉報已被傳送。感謝您的幫助！'
 
 flags:
     Abrosexual: '嫩性戀'

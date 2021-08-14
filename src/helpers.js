@@ -174,7 +174,7 @@ export const shuffle = a => {
     return a;
 }
 
-export const isGranted = (user, locale, area) => {
+export const isGranted = (user, locale, area = '') => {
     if (area === '*') {
         return user.roles.split('|').includes('*');
     }
@@ -184,7 +184,7 @@ export const isGranted = (user, locale, area) => {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
-        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area)) {
+        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area || area === '')) {
             return true;
         }
     }
@@ -207,4 +207,13 @@ export const clearLinkedText = (text) => {
 export const sortClearedLinkedText = (items, key) => {
     items.sort((a, b) => clearLinkedText(a[key].toLowerCase()).localeCompare(clearLinkedText(b[key].toLowerCase())))
     return items;
+}
+
+export const clearKey = (key) => {
+    if (!key) { return null; }
+    return key.replace(/'/g, '_');
+}
+
+export const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
 }

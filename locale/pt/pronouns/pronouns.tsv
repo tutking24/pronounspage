@@ -12,12 +12,12 @@ el_,el_/del_,_/el_/_	Pronome gráfico com _	FALSE	_	el_	_	del_	um_	el_s	del_s	_s
 ili,ili/dili,i/ili/i	Neutro	FALSE	i	ili	i	dili	uni	ilis	dilis	is	unis	qui	mi	FALSE	FALSE	TRUE
 el',el’/del','/el’/'	Pronome gráfico com '	FALSE	'	el'	'	del'	um'	el's	del's	_'s	um's	c'	m'	FALSE	FALSE	FALSE
 ily,ily/dily,ê/ily/e	Neutro	FALSE	ê	ily	e	dily	uny	ilys	delys	ys	unys	que	mi	FALSE	FALSE	TRUE
-éli,éli/déli,éli/e	Neutro	FALSE	?	éli	e	déli	ume	élis	délis	is	umés	que	mi	FALSE	FALSE	TRUE
-ael,ael/dael,?/ael/e	Neutro	FALSE	?	ael	e	dael	?	aels	daels	ae	?	que	mi	FALSE	FALSE	FALSE
-elae,elae/delae,?/elae/e	Neutro	FALSE	?	elae	e	delae	?	elaes	delaes	ae	?	que	mi	FALSE	FALSE	FALSE
-eld,eld/deld,?/eld/e	Pronome gráfico	FALSE	?	eld	e	deld	?	elds	delds	?	?	que	mi	FALSE	FALSE	FALSE
-elé,elé/delé,ê/elé/e	Neutro	FALSE	ê	elé	e	delé	umé	elés	delés	?	?	que	mi	FALSE	FALSE	TRUE
-ilo,ilo/dilo,i/ilo/i	Neutro	FALSE	i	ilo	i	dilo	?	ilos	dilos	is	?	que	mi	FALSE	FALSE	TRUE
+éli,éli/déli,ê/éli/e	Neutro	FALSE	ê	éli	e	déli	ume	élis	délis	is	umés	que	mi	FALSE	FALSE	TRUE
+ael,ael/dael,ae/ael/e	Neutro	FALSE	ae	ael	e	dael	umae	aels	daels	aes	umaes	que	mi	FALSE	FALSE	TRUE
+elae,elae/delae,ae/elae/e	Neutro	FALSE	ae	elae	e	delae	umae	elaes	delaes	aes	umaes	que	mi	FALSE	FALSE	TRUE
+eld,eld/deld,d/eld/e	Pronome gráfico	FALSE	d	eld	e	deld	und	elds	delds	ds	umds	que	mi	FALSE	FALSE	FALSE
+elé,elé/delé,ê/elé/e	Neutro	FALSE	ê	elé	e	delé	umé	elés	delés	ês	umes	que	mi	FALSE	FALSE	TRUE
+ilo,ilo/dilo,i/ilo/i	Neutro	FALSE	i	ilo	i	dilo	uni	ilos	dilos	is	unis	que	mi	FALSE	FALSE	TRUE
 êlu,êlu/dêlu,ê/êlu/e	Neutro	FALSE	ê	êlu	e	dêlu	ume	êlus	dêlus	ês	umes	que	mi	FALSE	FALSE	TRUE
 yn,yn/dyn,y/yn/y	Neutro	FALSE	y	yn	y	dyn	uni	yns	dyns	ys	unys	que	mi	FALSE	FALSE	TRUE
 ale,ale/dale,y/ale/y	Neutro	FALSE	y	ale	y	dale	ume	ales	dales	ys	umes	quy	my	FALSE	FALSE	TRUE

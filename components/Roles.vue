@@ -18,6 +18,12 @@
 </template>
 
 <script>
+    import locales from '../src/locales';
+    const allLocales = ['*'];
+    for (let [code,] of locales) {
+        allLocales.push(code);
+    }
+
     export default {
         props: {
             user: { required: true },
@@ -29,9 +35,10 @@
                     const [ locale, area ] = r.split('-');
                     return { locale, area };
                 }),
-                allLocales: ['*', ...Object.keys(this.locales)],
+                allLocales,
                 allAreas: [
                     '*',
+                    'basic',
                     'panel',
                     'users',
                     'sources',
