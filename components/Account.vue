@@ -2,45 +2,60 @@
     <section>
         <ul class="list-group">
             <li class="list-group-item profile-current">
-                <form @submit.prevent="changeEmail" :disabled="savingEmail">
-                    <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
-                    <div v-if="!changeEmailAuthId" class="">
-                        <input type="email" class="form-control mb-3" v-model="email" required/>
-                        <div class="d-flex flex-column flex-md-row">
-                            <Captcha v-model="captchaToken"/>
-                            <div class="d-none d-md-block ms-3">
-                                <button class="btn btn-outline-primary" :disabled="!canChangeEmail">
-                                    <T>user.account.changeEmail.action</T>
-                                </button>
-                            </div>
-                            <div class="d-block d-md-none mt-3">
-                                <button class="btn btn-outline-primary w-100" :disabled="!canChangeEmail">
-                                    <T>user.account.changeEmail.action</T>
-                                </button>
+                <div v-if="changeEmailShown === false" class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <span class="my-2">
+                        <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/envelope.svg" class="icon invertible"/>
+                        <T>user.account.changeEmail.header</T>
+                    </span>
+                    <span>
+                        {{ email }}
+                        <a href="#" class="badge bg-light text-dark border" @click.prevent="changeEmailShown = true">
+                            <Icon v="pencil"/>
+                            <T>user.account.changeEmail.action</T>
+                        </a>
+                    </span>
+                </div>
+                <template v-else>
+                    <form @submit.prevent="changeEmail" :disabled="savingEmail">
+                        <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
+                        <div v-if="!changeEmailAuthId" class="">
+                            <input type="email" class="form-control mb-3" v-model="email" required/>
+                            <div class="d-flex flex-column flex-md-row">
+                                <Captcha v-model="captchaToken"/>
+                                <div class="d-none d-md-block ms-3">
+                                    <button class="btn btn-outline-primary" :disabled="!canChangeEmail">
+                                        <T>user.account.changeEmail.action</T>
+                                    </button>
+                                </div>
+                                <div class="d-block d-md-none mt-3">
+                                    <button class="btn btn-outline-primary w-100" :disabled="!canChangeEmail">
+                                        <T>user.account.changeEmail.action</T>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div v-else class="input-group mb-3">
-                        <input type="text" class="form-control text-center" v-model="code"
-                               placeholder="000000" autofocus required minlength="0" maxlength="6"
-                               inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
-                               ref="code"
-                        />
-                        <button class="btn btn-outline-primary">
-                            <Icon v="key"/>
-                            <T>user.code.action</T>
-                        </button>
-                    </div>
-                </form>
+                        <div v-else class="input-group mb-3">
+                            <input type="text" class="form-control text-center" v-model="code"
+                                   placeholder="000000" autofocus required minlength="0" maxlength="6"
+                                   inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code"
+                                   ref="code"
+                            />
+                            <button class="btn btn-outline-primary">
+                                <Icon v="key"/>
+                                <T>user.code.action</T>
+                            </button>
+                        </div>
+                    </form>
 
-                <Alert type="danger" :message="error"/>
+                    <Alert type="danger" :message="error"/>
 
-                <div v-if="message" class="alert alert-success">
-                    <p class="mb-0">
-                        <Icon :v="messageIcon"/>
-                        <T>{{message}}</T>
-                    </p>
-                </div>
+                    <div v-if="message" class="alert alert-success">
+                        <p class="mb-0">
+                            <Icon :v="messageIcon"/>
+                            <T>{{message}}</T>
+                        </p>
+                    </div>
+                </template>
             </li>
             <li v-if="socialConnections === undefined" class="list-group-item text-center">
                 <Spinner size="5rem"/>
@@ -67,7 +82,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link">
+                        <button :class="['nav-link', selectedUsername === null ? 'active' : '']" style="height: 2.95rem" @click="selectedUsername = null">
                             <Icon v="plus-circle"/>
                         </button>
                     </li>
@@ -163,6 +178,7 @@
 
                 savingUsername: false,
                 savingEmail: false,
+                changeEmailShown: false,
 
                 gravatar,
 

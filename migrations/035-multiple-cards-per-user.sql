@@ -48,9 +48,11 @@ CREATE TABLE users (
     id TEXT NOT NULL PRIMARY KEY,
     email TEXT NOT NULL UNIQUE,
     roles TEXT NOT NULL,
-    bannedReason TEXT NULL
+    bannedReason TEXT NULL,
+    bannedTerms TEXT NULL,
+    bannedBy TEXT NULL
 );
-INSERT INTO users SELECT id, email, roles, bannedReason FROM _users_old;
+INSERT INTO users SELECT id, email, roles, bannedReason, bannedTerms, bannedBy FROM _users_old;
 DROP TABLE _users_old;
 
 ALTER TABLE reports RENAME TO _reports_old;
