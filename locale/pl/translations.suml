@@ -978,7 +978,7 @@ user:
         limit:
             - >
                 W ramach jednego konta możesz założyć wiele wizytówek.
-                Na przykład: jedno dla bliższych znajomych, a drugie oficjalniejsze, do załączenia w stopce służbowego maila.
+                Na przykład: jedną dla bliższych znajomych, a drugą oficjalniejszą, do załączenia w stopce służbowego maila.
                 Możesz zająć <strong>maksymalnie trzy nazwy</strong>, które będą dla osób postronnych wyglądały jak zupełnie niezależne konta.
             - >
                 Bez limitu natomiast możesz tworzyć powiązane ze sobą wizytówki z ukośnikiem.

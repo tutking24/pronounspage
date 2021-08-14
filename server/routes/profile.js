@@ -25,6 +25,24 @@ const calcAge = birthday => {
     return parseInt(Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25));
 }
 
+const prepareProfile = (profile, isSelf) => {
+    return {
+        names: JSON.parse(profile.names),
+        pronouns: JSON.parse(profile.pronouns),
+        description: profile.description,
+        age: calcAge(profile.birthday),
+        links: JSON.parse(profile.links),
+        flags: JSON.parse(profile.flags),
+        customFlags: JSON.parse(profile.customFlags),
+        words: JSON.parse(profile.words),
+        birthday: isSelf ? profile.birthday : undefined,
+        teamName: profile.teamName,
+        footerName: profile.footerName,
+        footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
+        card: profile.card,
+    };
+}
+
 const fetchProfiles = async (db, username, isSelf) => {
     const profiles = await db.all(SQL`
         SELECT profiles.* FROM profiles LEFT JOIN usernames on usernames.id == profiles.usernameId 
@@ -34,21 +52,7 @@ const fetchProfiles = async (db, username, isSelf) => {
 
     const p = {}
     for (let profile of profiles) {
-        p[profile.locale] = {
-            names: JSON.parse(profile.names),
-            pronouns: JSON.parse(profile.pronouns),
-            description: profile.description,
-            age: calcAge(profile.birthday),
-            links: JSON.parse(profile.links),
-            flags: JSON.parse(profile.flags),
-            customFlags: JSON.parse(profile.customFlags),
-            words: JSON.parse(profile.words),
-            birthday: isSelf ? profile.birthday : undefined,
-            teamName: profile.teamName,
-            footerName: profile.footerName,
-            footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
-            card: profile.card,
-        };
+        p[profile.locale] = prepareProfile(profile, isSelf);
     }
     return p;
 };
@@ -105,12 +109,60 @@ const hasAutomatedReports = async (db, id) => {
 
 const router = Router();
 
+router.get('/profile/get-all/:id', handleErrorAsync(async (req, res) => {
+    const isSelf = req.user && req.user.id === req.params.id;
+    const isAdmin = req.isGranted('users');
+    if (!isAdmin && !isSelf) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const user = await req.db.get(SQL`
+        SELECT u.id, u.email, u.bannedReason, u.bannedTerms, u.roles != '' AS team
+        FROM users u
+        WHERE u.id = ${req.params.id}
+    `);
+
+    if (!user) {
+        return res.status(404).json({error: 'Not Found'});
+    }
+
+    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
+
+    const usernames = await req.db.all(SQL`
+        SELECT n.id, n.username, n.avatarSource
+        FROM usernames n
+        WHERE n.userId = ${req.params.id}
+    `);
+
+    const profiles = await req.db.all(SQL`
+        SELECT p.*
+        FROM profiles p
+        WHERE p.usernameId IN (`.append(usernames.map(n => `'` + n.id + `'`).join(',')).append(SQL`)
+    `));
+
+    const u = {}
+    for (let username of usernames) {
+        u[username.id] = {
+            username: username.username,
+            avatarSource: username.avatarSource,
+            avatar: await avatar(req.db, {...username, id: user.id, emailHash: md5(user.email)}),
+            profiles: {},
+        }
+    }
+
+    for (let profile of profiles) {
+        u[profile.usernameId].profiles[profile.locale] = prepareProfile(profile, isSelf);
+    }
+
+    return res.json({
+        ...user,
+        usernames: u,
+    });
+}));
+
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     const user = await req.db.get(SQL`
         SELECT
-            u.id,
-            u.email,
-            n.avatarSource,
             u.bannedReason,
             u.bannedTerms,
             u.roles != '' AS team
@@ -127,10 +179,6 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
             profiles: {},
         });
     }
-
-    user.emailHash = md5(user.email);
-    delete user.email;
-    user.avatar = await avatar(req.db, user);
 
     user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
 

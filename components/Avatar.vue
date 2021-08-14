@@ -8,7 +8,7 @@
 
     export default {
         props: {
-            user: { required: true },
+            user: {},
             src: {},
             size: { 'default': 128 },
             dsize: { 'default': '6rem' },

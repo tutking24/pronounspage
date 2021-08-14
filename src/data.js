@@ -3,9 +3,9 @@ import { buildDict, buildList } from './helpers';
 import { parsePronouns } from './buildPronoun';
 
 export const socialProviders = {
-    twitter: { name: 'Twitter' },
-    facebook: { name: 'Facebook' },
-    google: { name: 'Google' },
+    twitter: { name: 'Twitter', avatars: true },
+    facebook: { name: 'Facebook', avatars: false },
+    google: { name: 'Google', avatars: true },
 }
 
 import pronounsRaw from '../data/pronouns/pronouns.tsv';
