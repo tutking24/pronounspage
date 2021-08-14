@@ -95,7 +95,7 @@ sources:
         Series: 'Serie'
         Song: 'Muziek'
         Poetry: 'Poëzie'
-        Game: 'Game' # TODO
+        Game: 'Spel'
         Other: 'Andere'
     submit:
         header: 'Dien een voorbeeld in ter toevoeging aan de site'
@@ -293,16 +293,16 @@ faq:
                     Pronouns ≠ gender.
                     Your gender won't drastically change just because you got confused once when someone called you “them”.
                     Don't worry. Experiment. See what fits you best.
-        preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
-            answer:
-                - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
-                - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+       preferred-pronouns:
+           question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
+           answer:
+               - >
+                   Omdat deze term suggereert dat iemand's voornaamwoorden slechts een bevlieging zijn.
+                   Als iemand slechts ''prefereert'' om ''zij'' genoemd te worden dan vindt hij het zeker niet erg als ik hem een ''hij'' noem, toch?
+                   Diegene lijkt toch op een jongen dus dat zal veel makkelijker zijn voor mij!
+               - >
+                   Nee! Dit zijn onze voornaamwoorden, niet onze ''geprefereerde voornaamwoorden''. Dit zijn onze namen, niet onze ''geprefereerde namen''.
+                   Als je om jouw trans en non-binaire vrienden en geliefden geeft, spreek ze dan correct aan.
         gender-pronouns:
             question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
             answer:
@@ -317,7 +317,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'Wij raden aan'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog'  
     media: 'Pronouns.page in de media'
 
     social: 'Sociale media'
@@ -457,10 +457,9 @@ crud:
     loginRequired: '{/account=Log in} to submit an entry' # TODO
 
 footer:
-    # TODO source: 'De broncode wordt {https://gitlab.com/Avris/Zaimki=gepubliceerd} onder de {https://mit.avris.it=MIT}-licentie.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl=CC BY-NC-SA 4.0}
+        {https://gitlab.com/Avris/Zaimki=Source De broncode wordt} onder de {https://mit.avris.it=MIT}-licentie [mit.svg].<br/>
+        De inhoud wordt onder de {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl=CC BY-NC-SA 4.0}-licentie
         [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
     links: 'Contact, sociale media, support'
 
@@ -535,7 +534,7 @@ mode:
 ban:
     reason: 'Ban reason'
     visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Terms rules broken (required)' 
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'You''re banned. Your profile will not be shown to anyone.'
