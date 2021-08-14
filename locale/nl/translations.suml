@@ -293,16 +293,16 @@ faq:
                     Pronouns ≠ gender.
                     Your gender won't drastically change just because you got confused once when someone called you “them”.
                     Don't worry. Experiment. See what fits you best.
-       preferred-pronouns:
-           question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
-           answer:
-               - >
-                   Omdat deze term suggereert dat iemand's voornaamwoorden slechts een bevlieging zijn.
-                   Als iemand slechts ''prefereert'' om ''zij'' genoemd te worden dan vindt hij het zeker niet erg als ik hem een ''hij'' noem, toch?
-                   Diegene lijkt toch op een jongen dus dat zal veel makkelijker zijn voor mij!
-               - >
-                   Nee! Dit zijn onze voornaamwoorden, niet onze ''geprefereerde voornaamwoorden''. Dit zijn onze namen, niet onze ''geprefereerde namen''.
-                   Als je om jouw trans en non-binaire vrienden en geliefden geeft, spreek ze dan correct aan.
+        preferred-pronouns:
+            question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
+            answer:
+                - >
+                    Omdat deze term suggereert dat iemand's voornaamwoorden slechts een bevlieging zijn.
+                    Als iemand slechts ''prefereert'' om ''zij'' genoemd te worden dan vindt hij het zeker niet erg als ik hem een ''hij'' noem, toch?
+                    Diegene lijkt toch op een jongen dus dat zal veel makkelijker zijn voor mij!
+                - >
+                    Nee! Dit zijn onze voornaamwoorden, niet onze ''geprefereerde voornaamwoorden''. Dit zijn onze namen, niet onze ''geprefereerde namen''.
+                    Als je om jouw trans en non-binaire vrienden en geliefden geeft, spreek ze dan correct aan.
         gender-pronouns:
             question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
             answer:
@@ -317,7 +317,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'Wij raden aan'
 
-    blog: 'Blog'  
+    blog: 'Blog'
     media: 'Pronouns.page in de media'
 
     social: 'Sociale media'
@@ -534,7 +534,7 @@ mode:
 ban:
     reason: 'Ban reason'
     visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)' 
+    terms: 'Terms rules broken (required)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'You''re banned. Your profile will not be shown to anyone.'
