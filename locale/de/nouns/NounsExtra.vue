@@ -67,12 +67,12 @@
                     'Inklusivum': {
                         info: 'Formen vorgestellt vom {https://geschlechtsneutral.net/=Verein für geschlechtsneutrales Deutsch}.',
                         declension: new NounDeclension({
-                            N: 'de Autore', G: 'dern Autore', D: 'dern Autore', A: 'de Autore',
-                            N_pl: 'die Autorne', G_pl: 'der Autorne', D_pl: 'den Autorne', A_pl: 'die Autorne',
+                            N: 'de Autore', G: 'dern Autores', D: 'dern Autore', A: 'de Autore',
+                            N_pl: 'die Autorerne', G_pl: 'der Autorerne', D_pl: 'den Autorernen', A_pl: 'die Autorerne',
                         }),
                         extendedDeclension: new NounDeclension({
                             N: 'mein beste Freundere', G: 'meinern besten Freunderes', D: 'meinern besten Freundere', A: 'mein beste Freundere',
-                            N_pl: 'meine besten Freunderne', G_pl: 'meiner besten Freunderne', D_pl: 'meinen besten Freunderne', A_pl: 'meine besten Freunderne',
+                            N_pl: 'meine besten Freunderne', G_pl: 'meiner besten Freunderne', D_pl: 'meinen besten Freundernen', A_pl: 'meine besten Freunderne',
                         }),
                     },
                     'Doppelpunkt-Formen': {
