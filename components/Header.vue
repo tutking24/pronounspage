@@ -207,6 +207,7 @@
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
                             '/' + this.config.people.route,
+                            this.config.calendar ? '/' + this.config.calendar.route : '',
                         ],
                     });
                 }

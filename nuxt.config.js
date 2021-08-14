@@ -245,6 +245,10 @@ export default {
                 }
             }
 
+            if (config.calendar && config.calendar.enabled) {
+                routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
+            }
+
             if (config.api !== null) {
                 routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
             }
