@@ -372,6 +372,7 @@ user:
         userNotFound: 'Cet utilisateur n’existe pas.'
         email:
             subject: 'Votre code de connexion est %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 Pour confirmer votre adresse mail, utilisez le code suivant: %code%.
 
