@@ -379,9 +379,8 @@ user:
         userNotFound: 'Usuarie no encontrade.'
         email:
             subject: 'Tu código de inicio de sesión es %code%'
-            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
-                Para confirmar tu dirección de correo electrónico, introduce: %code%.
+                Para confirmar tu dirección de correo electrónico, introduce este código en el sitio web: %code%.
 
                 Si no solicitaste este código, simplemente ignora este mensaje.
         why: >
@@ -550,7 +549,7 @@ mode:
 ban:
     reason: 'Razón para banear'
     visible: '(esto será visible para le usuario)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Reglas de Términos de Servicio rotas (obligatorio)'
     action: 'Banear esta persona'
     confirm: '¿Estás segure que quieres banear a @%username%?'
     header: 'Has sido baneado. Tu perfil no se mostrará a nadie.'
