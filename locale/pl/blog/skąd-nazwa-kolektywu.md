@@ -4,12 +4,13 @@
 
 ![Logo RJN](/img/logo-full.png)
 
-Nie jest tajemnicą ani zagadką, że nazwa naszego kolektywu nawiązuje do
+Nie jest tajemnicą ani zagadką, że nazwa [naszego kolektywu](/kolektyw-rjn) nawiązuje do
 [Rady Języka Polskiego przy Polskiej Akademii Nauk](https://pl.wikipedia.org/wiki/Rada_J%C4%99zyka_Polskiego).
 Warto jednak wyjaśnić, co nami przy tym wyborze kierowało.
 
 Bo to nie jest tak, że chcemy RJP wyśmiać; wręcz przeciwnie!
-Radę Języka Polskiego bardzo szanujemy,
+Choć możemy się spierać na temat konieczności ustawowego narzucania ciała tego typu,
+to jednak Radę Języka Polskiego i jej osoby członkowskie bardzo szanujemy –
 i to nie tylko ze względu na jej niewątpliwie ogromną wiedzę ekspercką z zakresu języka,
 ale nawet i przez to, jak często swoim autorytetem potwierdza nasze wysiłki w kształtowaniu polszczyzny.
 RJP wydała (już w 2003 roku!) pozytywną [opinię o formach „byłom”, „byłoś”](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208);
@@ -43,7 +44,7 @@ dowiemy się, że Rada Języka Polskiego pełni funkcje opiniodawczo-doradcze �
 Język nie jest kształtowany odgórnie.
 To, że twoja polonistka jak mantrę powtarzała ci
 „nie zaczyna się zdania od »a więc«”,
-czy „mówi się »tę książkę«, a nie »tą« książkę”,
+czy „mówi się »_tę_ książkę«, a nie »_tą_ książkę«”,
 oznacza wyłącznie, że odejmie ci za to punkty na klasówce czy maturze,
 a nie, że _nie masz prawa_ złożyć literek w taki, a nie inny sposób.
 Świadczy wyłącznie o silnie [preskryptywistycznym](https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo))
@@ -64,11 +65,13 @@ którymi mogłyby się posługiwać. Katalogujemy je, opisujemy, wyszukujemy prz
 budujemy słownik form potencjalnych,
 promujemy język niebinarny i neutralny płciowo w mediach oraz na naszych społecznościówkach,
 edukujemy społeczeństwo o niebinarności i żądamy szacunku do tożsamości i zaimków drugiego człowieka.
+Z jednej strony nie czujemy się [eksperciami](/slowniki/neutratywy#ekspercie) w kwestii języka neutralnego i niebinarnego,
+ale z drugiej – kto miałoby nimi być, jeśli nie my?
 
-Robimy to oddolnie.
+Robimy to wszystko oddolnie.
 
 I to działa!
-Spójrzmy chociażby na wykres liczby wpisów w [Korpusie Niebinarnej Polszczyzny](/korpus) według daty publikacji tekstu kultury.
+Spójrzmy chociażby na wykres liczby wpisów w [Korpusie Niebinarnej Polszczyzny](/korpus) według roku publikacji tekstu kultury.
 Nie są to wprawdzie pełne dane (nie damy rady znaleźć i spisać wszystkiego), ani zbyt duża próbka (obecnie 247 tekstów),
 ale dają pojęcie, jak bardzo urosła w społeczeństwie świadomość niebinarności oraz popularność języka niebinarnego.
 Pojedyncze wpisy pojawiają się już od 1795 roku, natomiast w ostatnich latach liczba tekstów drastycznie szybuje w górę,
@@ -82,5 +85,5 @@ Rada Języka Neutralnego natomiast stara się wykorzystywać internet, by cały 
 
 Oddolnie.
 
-I nasza nazwa ma zwracać uwagę właśnie na to: że oddolnie też się da;
+I nasza nazwa ma zwracać uwagę właśnie na to: że oddolnie też się da, a nawet powinno;
 że język należy do nas wszystkich; że każde z nas może być „Radą Języka”.
