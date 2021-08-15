@@ -376,9 +376,8 @@ user:
         userNotFound: 'Usuarie não encontrade.'
         email:
             subject: 'O código de início da sessão é %code%'
-            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
-                Para confirmar o seu endereço e-mail, digite: %code%.
+                Para confirmar seu endereço de email, entre com o seguinte código no site: %code%.
 
                 Se não solicitou este código, simplesmente ignore esta mensagem.
         why: >
@@ -537,10 +536,9 @@ images:
 error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Por favor, prove que você não é um robô tentando spamar ou atacar os serviços de navegação.'
+    invalid: 'O Captcha foi invalidado, por favor, tente novamente'
 
 mode:
     dark: 'Modo escuro'
@@ -549,7 +547,7 @@ mode:
 ban:
     reason: 'Razão de ban'
     visible: '(isso vai ser visto para usuárie)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Regras quebradas (obrigatório)'
     action: 'Ban essa pessoa'
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
