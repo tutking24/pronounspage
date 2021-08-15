@@ -5,7 +5,7 @@ home:
     link: 'Page d’accueil'
     header: 'Des pronoms personnels'
     headerLong: 'Liste de pronoms personnels'
-    why: 'Pourquoi est-ce que les pronoms sont importants?'
+    why: 'Pourquoi est-ce que les pronoms sont importants ?'
     about:
         - >
             Tout le monde utilise des pronoms personnels. Ce sont les mots qui remplacent un nom d’une personne pour qu'on n'utilise pas son nom chaque fois qu’iel est mentionné·e.
@@ -19,7 +19,7 @@ home:
             Vous pouvez utiliser cet outil pour partager un lien vers les pronoms que vous utilisez, avec des exemples,
             pour que vous puissiez montrer comment vous préférez être genré·e.
         - >
-            Pourquoi est-ce que c’est important? Par simple décence humaine.
+            Pourquoi est-ce que c’est important ? Par simple décence humaine.
             Vous n’appelleriez pas Louise «Annette» simplement parce que vous préférez ce prénom,
             ou parce qu’elle a «l’air d’une Annette selon vous».
             Ou même si le prénom «Annette» est <em>bien</em> inscrit sur son certificat de naissance,
@@ -222,7 +222,7 @@ faq:
                 - >
                     Les “pronoms bizarres” sont juste une question d’habitude.
         how-to-know:
-            question: 'Comment savoir comment genrer une personne?'
+            question: 'Comment savoir comment genrer une personne ?'
             answer:
                 - >
                     Vous pouvez simplement demander! Oui, ça risque d’être un peu gênant, mais plus on le fait, moins c’est gênant.
@@ -372,9 +372,8 @@ user:
         userNotFound: 'Cet utilisateur n’existe pas.'
         email:
             subject: 'Votre code de connexion est %code%'
-            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
-                Pour confirmer votre adresse mail, utilisez le code suivant: %code%.
+                Pour confirmer votre adresse mail, saisissez ce code sur le site : %code%.
 
                 Si vous n’avez pas demandé ce code, ignorez simplement ce message.
         why: >
@@ -457,7 +456,7 @@ crud:
     approve: 'Approuver'
     hide: 'Cacher'
     remove: 'Retiret'
-    removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item?'
+    removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item ?'
     edit: 'Éditer'
     add: 'Ajouter'
     filter: 'Filtrer'
@@ -543,9 +542,9 @@ mode:
 ban:
     reason: 'Raison du bannissement'
     visible: '(visible par l’utilisateur)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Règles enfreintes (requises)'
     action: 'Bannir l’utilisateur'
-    confirm: 'Voulez-vous bannir @%username%?'
+    confirm: 'Voulez-vous bannir @%username% ?'
     header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'
     banned: 'Banni'
     termsIntro: 'Selon nos {/termes=Termes de service}:'
@@ -553,7 +552,7 @@ ban:
 report:
     action: 'Signaler'
     comment: 'Résumer la raison du signalement de ce profil'
-    confirm: 'Voulez-vous signaler @%username%?'
+    confirm: 'Voulez-vous signaler @%username% ?'
     sent: 'Votre signalement à bien été envoyé. Merci de votre aide !'
 
 flags:
