@@ -60,8 +60,8 @@
                             N_pl: 'die Autorys', G_pl: 'der Autorys', D_pl: 'den Autorys', A_pl: 'die Autorys',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein bestes Freundy', G: 'meines besten Freundys', D: 'meinem besten Freundy', A: 'mein bestes Freundy',
-                            N_pl: 'meine besten Freundys', G_pl: 'meiner besten Freundys', D_pl: 'meinen besten Freundys', A_pl: 'meine besten Freundys',
+                            N: 'mein bestes Lehry', G: 'meines besten Lehrys', D: 'meinem besten Lehry', A: 'mein bestes Lehry',
+                            N_pl: 'meine besten Lehrys', G_pl: 'meiner besten Lehrys', D_pl: 'meinen besten Lehrys', A_pl: 'meine besten Lehrys',
                         }),
                     },
                     'Inklusivum': {
@@ -71,8 +71,8 @@
                             N_pl: 'die Autorerne', G_pl: 'der Autorerne', D_pl: 'den Autorernen', A_pl: 'die Autorerne',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein beste Freundere', G: 'meinern besten Freunderes', D: 'meinern besten Freundere', A: 'mein beste Freundere',
-                            N_pl: 'meine besten Freunderne', G_pl: 'meiner besten Freunderne', D_pl: 'meinen besten Freundernen', A_pl: 'meine besten Freunderne',
+                            N: 'mein beste Lehrere', G: 'meinern besten Lehreres', D: 'meinern besten Lehrere', A: 'mein beste Lehrere',
+                            N_pl: 'meine besten Lehrerne', G_pl: 'meiner besten Lehrerne', D_pl: 'meinen besten Lehrernen', A_pl: 'meine besten Lehrerne',
                         }),
                     },
                     'Doppelpunkt-Formen': {
@@ -81,8 +81,8 @@
                             N_pl: 'die Autor:innen', G_pl: 'der Autor:innen', D_pl: 'den Autor:innen', A_pl: 'die Autor:innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein:e beste:r Freund:in', G: 'meines:r besten Freund:in', D: 'meinem:r besten Freund:in', A: 'meine:n beste:n Freund:in',
-                            N_pl: 'meine besten Freund:innen', G_pl: 'meiner besten Freund:innen', D_pl: 'meinen besten Freund:innen', A_pl: 'meine besten Freund:innen',
+                            N: 'mein:e beste:r Lehrer:in', G: 'meines:r besten Lehrer:in', D: 'meinem:r besten Lehrer:in', A: 'meine:n beste:n Lehrer:in',
+                            N_pl: 'meine besten Lehrer:innen', G_pl: 'meiner besten Lehrer:innen', D_pl: 'meinen besten Lehrer:innen', A_pl: 'meine besten Lehrer:innen',
                         }),
                     },
                     'Unterstrich-Formen': {
@@ -91,8 +91,8 @@
                             N_pl: 'die Autor_innen', G_pl: 'der Autor_innen', D_pl: 'den Autor_innen', A_pl: 'die Autor_innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein_e beste_r Freund_in', G: 'meines_r besten Freund_in', D: 'meinem_r besten Freund_in', A: 'meine_n beste_n Freund_in',
-                            N_pl: 'meine besten Freund_innen', G_pl: 'meiner besten Freund_innen', D_pl: 'meinen besten Freund_innen', A_pl: 'meine besten Freund_innen',
+                            N: 'mein_e beste_r Lehrer_in', G: 'meines_r besten Lehrer_in', D: 'meinem_r besten Lehrer_in', A: 'meine_n beste_n Lehrer_in',
+                            N_pl: 'meine besten Lehrer_innen', G_pl: 'meiner besten Lehrer_innen', D_pl: 'meinen besten Lehrer_innen', A_pl: 'meine besten Lehrer_innen',
                         }),
                     },
                     'Sternchen-Formen': {
@@ -101,8 +101,8 @@
                             N_pl: 'die Autor*innen', G_pl: 'der Autor*innen', D_pl: 'den Autor*innen', A_pl: 'die Autor*innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein*e beste*r Freund*in', G: 'meines*r besten Freund*in', D: 'meinem*r besten Freund*in', A: 'meine*n beste*n Freund*in',
-                            N_pl: 'meine besten Freund*innen', G_pl: 'meiner besten Freund*innen', D_pl: 'meinen besten Freund*innen', A_pl: 'meine besten Freund*innen',
+                            N: 'mein*e beste*r Lehrer*in', G: 'meines*r besten Lehrer*in', D: 'meinem*r besten Lehrer*in', A: 'meine*n beste*n Lehrer*in',
+                            N_pl: 'meine besten Lehrer*innen', G_pl: 'meiner besten Lehrer*innen', D_pl: 'meinen besten Lehrer*innen', A_pl: 'meine besten Lehrer*innen',
                         }),
                     },
                     'Großbuchstabe-Formen': {
@@ -112,8 +112,8 @@
                             N_pl: 'die AutorInnen', G_pl: 'der AutorInnen', D_pl: 'den AutorInnen', A_pl: 'die AutorInnen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'meinE besteR FreundIn', G: 'meinesR besten FreundIn', D: 'meinemR besten FreundIn', A: 'meineN besteN FreundIn',
-                            N_pl: 'meine besten FreundInnen', G_pl: 'meiner besten FreundInnen', D_pl: 'meinen besten FreundInnen', A_pl: 'meine besten FreundInnen',
+                            N: 'meinE besteR LehrerIn', G: 'meinesR besten LehrerIn', D: 'meinemR besten LehrerIn', A: 'meineN besteN LehrerIn',
+                            N_pl: 'meine besten LehrerInnen', G_pl: 'meiner besten LehrerInnen', D_pl: 'meinen besten LehrerInnen', A_pl: 'meine besten LehrerInnen',
                         }),
                     },
                 },
