@@ -371,9 +371,8 @@ user:
         userNotFound: 'Bruker ikke funnet.'
         email:
             subject: 'Din Logg inn kode er %code%'
-            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
-                For å konfirmere email adressen din, bruk følgende kode:%code%.
+                For å bekrefte din email addresse, vennligst skriv den følgende koden på nettsiden: %code%.
 
                 Hvis du ikke spurte om denne koden, ignorer denne meldingen.
         why: >
@@ -542,7 +541,7 @@ mode:
 ban:
     reason: 'Grunn til forbud'
     visible: '(dette vil kunne bli sett av brukeren)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Vilkår regler brutt (nødvendig)'
     action: 'Forby denne personen'
     confirm: 'Er du sikker på at du vil forby @%username%?'
     header: 'Du er forbydd. Profilen din vil ikke bli vist til noen.'
