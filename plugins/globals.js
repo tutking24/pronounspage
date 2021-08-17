@@ -11,6 +11,7 @@ export default ({ app, store }) => {
     Vue.prototype.$base = process.env.BASE_URL;
 
     Vue.prototype.$t = t;
+    Vue.prototype.$te = key => t(key, {}, false) !== undefined;
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
         pronoun.format(
             t(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str

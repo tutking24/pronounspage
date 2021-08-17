@@ -31,13 +31,20 @@ export function* iterateMonth(year, month) {
     }
 }
 
+export const EventLevel = {
+    Month: 0,
+    Week: 1,
+    MinorDay: 2,
+    MajorDay: 3,
+}
+
 export class Event {
-    constructor(name, flag, month, generator, major) {
+    constructor(name, flag, month, generator, level) {
         this.name = name;
         this.flag = flag;
         this.month = month;
         this.generator = generator;
-        this.major = major;
+        this.level = level;
         this.daysMemoise = {}
     }
 
