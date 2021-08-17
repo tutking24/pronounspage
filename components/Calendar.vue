@@ -14,10 +14,11 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <li v-for="event in currentYear.eventsByDate[d.toString()]">
+                        <li v-for="event in currentYear.eventsByDate[d.toString()]" class="mb-2">
                             <Flag v-if="event.flag" name="" alt="" :img="`/flags/${event.flag}.png`"/>
                             <Icon v-else v="arrow-circle-right"/>
-                            <T>calendar.events.{{ event.name }}</T>
+                            <T v-if="$te(`calendar.events.${event.name}`)">calendar.events.{{event.name}}</T>
+                            <LinkedText v-else :text="event.name"/>
                         </li>
                     </ul>
                 </div>
@@ -27,7 +28,7 @@
 </template>
 
 <script>
-    import { Day, iterateMonth } from '../src/calendar/helpers';
+    import { Day, iterateMonth, EventLevel } from '../src/calendar/helpers';
     import { currentYear } from '../src/calendar/calendar';
 
     export default {
@@ -71,14 +72,17 @@
                     return 'day';
                 }
 
-                if (this.currentYear.eventsByDate[d.toString()].some(e => e.major)) {
-                    return 'day day-event day-event-major';
+                let maxLevel = 0;
+                for (let event of this.currentYear.eventsByDate[d.toString()]) {
+                    if (event.level > maxLevel) {
+                        maxLevel = event.level;
+                    }
                 }
 
-                return 'day day-event day-event-minor';
+                return `day day-event day-event-${maxLevel}`;
             },
             getDayFlag(d) {
-                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.major)) {
+                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.MajorDay && e.flag)) {
                     return `/flags/${event.flag}.png`;
                 }
                 return null;
@@ -118,8 +122,18 @@
             position: relative;
             &.day-event {
                 cursor: pointer;
-                border: 1px solid lighten($primary, 25%);
-                &.day-event-major {
+                &.day-event-0 {
+                    background-color: lighten($primary, 50%);
+                }
+                &.day-event-1 {
+                    background-color: lighten($primary, 40%);
+                }
+                &.day-event-2 {
+                    background-color: lighten($primary, 50%);
+                    border: 1px solid lighten($primary, 25%);
+                }
+                &.day-event-3 {
+                    border: 1px solid lighten($primary, 25%);
                     background-color: $primary;
                     color: $white;
                     .day-number {
