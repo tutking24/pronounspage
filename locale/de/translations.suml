@@ -8,16 +8,15 @@ home:
     why: 'Warum sind Pronomen wichtig?'
     about:
         - >
-            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir aufgrund des Aussehens automatisch davon ausgehen, welches Pronomen zu verwenden ist.
-            Aber in Wahrheit ist es nicht so einfach…
+            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen, ohne den Namen der Person zu verwenden.
+            Die meisten Menschen nutzen entweder {/sie=“sie”} oder {/er=“er”}, und wir schließen aus deren Aussehen und Namen, welches der beiden zu verwenden ist.
+            Aber in Wahrheit ist es nicht so einfach …
         - >
             Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
-            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet und
+            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet, und
             manche Menschen passen nicht in die Kategorien von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
         - >
-            Mit diesem Tool kannst du deine Pronomen (mit Beispielsätzen) verlinken,
-            sodass du Leuten zeigen kannst, wie du genannt werden willst.
+            Mit diesem Tool kannst du deine Pronomen verlinken und anderen mit Beispielsätzen vorstellen.
         - >
             Warum ist das wichtig? Einfach wegen des menschlichen Anstands.
             Du würdest Lea nicht “Marie” nennen, nur weil dir der Name besser gefällt
@@ -25,9 +24,9 @@ home:
             Oder auch wenn sie in der Geburtsurkunde “Marie” stehen <em>hat</em>,
             aber sie diesen Namen absolut hasst und lieber “Lea” benutzt.
             Es ist dasselbe mit Pronomen –
-            Wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, sprich sie richtig an.
+            wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, verwende die richtigen Pronomen.
             Der einzige Unterschied ist, dass wir die Namen meistens kennen, die Pronomen hingegen nicht.
-            Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Das müssen wir ändern!
+            Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Lasst uns das ändern!
     pronouns: 'Liste bekannter Pronomen'
     generator:
         header: 'Generator'
@@ -51,8 +50,8 @@ home:
             –  dass <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
             <strong>Inklusivität</strong>
-            – dass wir keine Annahmen treffen über die Geschlechter von Personen
-            die wir nicht kennen und sie dadurch Ausschließen.
+            – dass wir keine Annahmen treffen über die Geschlechter von Personen,
+            die wir nicht kennen, und sie dadurch ausschließen.
 
 pronouns:
     header: 'Pronomen'
