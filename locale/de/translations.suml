@@ -69,8 +69,7 @@ pronouns:
         header: 'Beliebige Pronomen'
         short: 'beliebig'
         description: >
-            Auch wenn es für manche Menschen sehr wichtig ist bestimmte Pronomen zu nutzen, wenn über sie geredet wird,
-            macht es anderen nichts aus - solange der Kontext klar ist, über wen gesprochen wird.
+            Auch wenn es für manche Menschen sehr wichtig ist, dass bestimmte Pronomen benutzt werden, wenn über sie geredet wird, ist es anderen egal, welche Pronomen für sie verwendet werden.
         options: 'Überprüfe die Optionen [share]{/=hier}.'
     others: 'Andere Formen'
     othersRaw: 'andere'
