@@ -11,9 +11,9 @@
                 <tr>
                     <th></th>
                     <th>Nominativ</th>
+                    <th>Genitiv</th>
                     <th>Dativ</th>
                     <th>Akkusativ</th>
-                    <th>Genitiv</th>
                 </tr>
                 </thead>
                 <tbody>
