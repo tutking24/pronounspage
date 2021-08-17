@@ -917,7 +917,11 @@ contact:
             - >
                 Inicjatywy zaimki.pl / {https://pronouns.page=pronouns.page}
                 oraz {https://facebook.com/neutratywy=Słownik Neutratywów Języka Polskiego}
-                są tworzone przez kolektyw „Rada Języka Neutralnego” ({/blog/skąd-nazwa-kolektywu=→ skąd nazwa?}).
+                są tworzone przez kolektyw „Rada Języka Neutralnego”
+            - >
+                → {/blog/skąd-nazwa-kolektywu=Skąd nazwa?}
+            - >
+                → Logo: {https://zaimki.pl/img/logo-full.png=PNG}, {https://zaimki.pl/img/logo-full.svg=SVG}
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'
