@@ -339,6 +339,11 @@ links:
                 Rada Języka Polskiego jest instytucją opiniodawczo-doradczą
                 w zakresie używania języka polskiego, a więc właśnie opiniuje, doradza, konsultuje, wydaje ekspertyzy, opinie,
                 ale wydaje nakazów ani zakazów.
+        -
+            icon: 'album'
+            url: 'https://tranzycja.pl/'
+            headline: 'Tranzycja.pl'
+            extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
     mediaGuests:
         -
             icon: 'newspaper'
