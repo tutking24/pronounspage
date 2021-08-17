@@ -113,7 +113,18 @@
         grid-column-gap: 2px;
         grid-row-gap: 2px;
         > .day {
-            aspect-ratio: 1;
+            /*aspect-ratio: 1;*/
+            &::before {
+                float: left;
+                padding-top: 100%;
+                content: '';
+            }
+            &::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+
             display: flex;
             align-items: center;
             justify-content: space-evenly;
