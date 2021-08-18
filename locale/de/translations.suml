@@ -61,7 +61,7 @@ pronouns:
     intro: 'Meine Pronomen sind'
     normative: 'Normativ'
     alt:
-        button: 'Generiere einen link zu austauschbaren Formen'
+        button: 'Generiere einen Link zu austauschbaren Formen'
         header: 'Austauschbare Formen'
         raw: 'austauschbar'
     generated: 'Diese Pronomen wurden mit Hilfe eines Generators erstellt. Das Team von pronouns.page ist nicht verantwortlich für diese.'
