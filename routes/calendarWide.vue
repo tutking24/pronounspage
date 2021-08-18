@@ -8,7 +8,7 @@
             <span class="h4 mt-2">
                 <nuxt-link to="/">
                     <Icon v="tags"/>
-                    <T>title</T>
+                    <T>title</T>/{{ config.calendar.route }}
                 </nuxt-link>
             </span>
         </h2>
@@ -16,7 +16,8 @@
         <section class="row pb-4">
             <div v-for="i in 12" class="col-12 col-lg-3 py-3">
                 <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
-                <Calendar :year="year" :month="i"/>
+                <CalendarMonthEvents v-if="labels" :year="year" :month="i" class="small my-3"/>
+                <Calendar v-else :year="year" :month="i"/>
             </div>
         </section>
     </div>
@@ -30,6 +31,7 @@
         data() {
             return {
                 year: new Date().getFullYear(),
+                labels: this.$route.query.labels === 'true',
             }
         },
         head() {

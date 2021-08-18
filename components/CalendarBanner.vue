@@ -5,12 +5,7 @@
             <T>calendar.banner</T>:
         </p>
         <ul class="list-unstyled my-3 ms-3">
-            <li v-for="event in events" class="mb-2">
-                <Flag v-if="event.flag" name="" alt="" :img="`/flags/${event.flag}.png`"/>
-                <Icon v-else v="arrow-circle-right"/>
-                <T v-if="$te(`calendar.events.${event.name}`)"></T>
-                <LinkedText v-else :text="event.name"/>
-            </li>
+            <CalendarEvent v-for="event in events" :event="event"/>
         </ul>
         <nuxt-link v-if="link" :to="`/${config.calendar.route}`" class="small">
             <Icon v="angle-right"/>

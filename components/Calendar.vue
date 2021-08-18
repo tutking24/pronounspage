@@ -15,12 +15,7 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <li v-for="event in currentYear.eventsByDate[d.toString()]" class="mb-2">
-                            <Flag v-if="event.flag" name="" alt="" :img="`/flags/${event.flag}.png`"/>
-                            <Icon v-else v="arrow-circle-right"/>
-                            <T v-if="$te(`calendar.events.${event.name}`)">calendar.events.{{event.name}}</T>
-                            <LinkedText v-else :text="event.name"/>
-                        </li>
+                        <CalendarEvent v-for="event in currentYear.eventsByDate[d.toString()]" :event="event"/>
                     </ul>
                 </div>
             </div>

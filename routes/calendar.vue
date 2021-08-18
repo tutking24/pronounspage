@@ -16,7 +16,20 @@
             </div>
         </section>
 
+        <section>
+            <T>calendar.image.header</T>
+            <a :href="`/${imageOverview}`" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                <Icon v="image"/>
+                <T>calendar.image.overview</T>
+            </a>
+            <a :href="`/${imageLabels}`" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+                <Icon v="image"/>
+                <T>calendar.image.labels</T>
+            </a>
+        </section>
+
         <Support/>
+
         <section>
             <Share :title="$t('calendar.header')"/>
         </section>
@@ -30,12 +43,14 @@
         data() {
             return {
                 year: new Date().getFullYear(),
+                imageOverview: `calendar/calendar-${process.env.LOCALE}-overview.png`,
+                imageLabels: `calendar/calendar-${process.env.LOCALE}-labels.png`,
             }
         },
         head() {
             return head({
                 title: this.$t('calendar.headerLong'),
-                banner: `calendar/calendar-${process.env.LOCALE}.png`,
+                banner: this.imageOverview,
             });
         },
     };
