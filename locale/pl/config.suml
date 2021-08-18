@@ -1010,7 +1010,7 @@ profile:
         defaultPronoun: 'on_'
 
 calendar:
-    enabled: false
+    enabled: true
     route: 'kalendarz'
 
 census:
