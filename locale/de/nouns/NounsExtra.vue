@@ -17,7 +17,7 @@
                     <LinkedText :text="warning"/>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div v-if="declension"  class="col-12 col-md-4">
                         <div class="mb-3">
                             <h5 class="h6">⋅ <T>nouns.singular</T></h5>
                             <Declension word="" :template="declension" open/>
@@ -27,7 +27,7 @@
                             <Declension word="" :template="declension" open plural/>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div v-if="extendedDeclension" class="col-12 col-md-8">
                         <div class="mb-3">
                         <h5 class="h6">⋅ <T>nouns.singular</T></h5>
                         <Declension word="" :template="extendedDeclension" open/>
@@ -106,15 +106,15 @@
                         }),
                     },
                     'Großbuchstabe-Formen': {
-                        warning: 'Das Binnen-I bezieht sich nur auf die männliche und die weibliche Form der Wörter und schließt damit (wie das generische Maskulinium) immer noch sehr viele Menschen aus der Sprache aus. Deshalb ist diese Variante genauso wenig zu empfehlen wie das generische Maskulinum oder Femininum.',
-                        declension: new NounDeclension({
-                            N: 'derDie AutorIn', G: 'desDer AutorIn', D: 'demDer AutorIn', A: 'denDie AutorIn',
-                            N_pl: 'die AutorInnen', G_pl: 'der AutorInnen', D_pl: 'den AutorInnen', A_pl: 'die AutorInnen',
-                        }),
-                        extendedDeclension: new NounDeclension({
-                            N: 'meinE besteR LehrerIn', G: 'meinesR besten LehrerIn', D: 'meinemR besten LehrerIn', A: 'meineN besteN LehrerIn',
-                            N_pl: 'meine besten LehrerInnen', G_pl: 'meiner besten LehrerInnen', D_pl: 'meinen besten LehrerInnen', A_pl: 'meine besten LehrerInnen',
-                        }),
+                        warning: 'Formen wie z.B. „AutorIn“ oder „LehrerInnen“. Das Binnen-I bezieht sich nur auf die männliche und die weibliche Form der Wörter und schließt damit (wie das generische Maskulinium) immer noch sehr viele Menschen aus der Sprache aus. Deshalb ist diese Variante genauso wenig zu empfehlen wie das generische Maskulinum oder Femininum.',
+                        // declension: new NounDeclension({
+                        //     N: 'derDie AutorIn', G: 'desDer AutorIn', D: 'demDer AutorIn', A: 'denDie AutorIn',
+                        //     N_pl: 'die AutorInnen', G_pl: 'der AutorInnen', D_pl: 'den AutorInnen', A_pl: 'die AutorInnen',
+                        // }),
+                        // extendedDeclension: new NounDeclension({
+                        //     N: 'meinE besteR LehrerIn', G: 'meinesR besten LehrerIn', D: 'meinemR besten LehrerIn', A: 'meineN besteN LehrerIn',
+                        //     N_pl: 'meine besten LehrerInnen', G_pl: 'meiner besten LehrerInnen', D_pl: 'meinen besten LehrerInnen', A_pl: 'meine besten LehrerInnen',
+                        // }),
                     },
                 },
             }
