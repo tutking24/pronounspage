@@ -2,7 +2,7 @@
     <div class="calendar">
         <div v-for="i in (startingDayOfWeek - 1)"></div>
         <div v-for="d in iterateMonth(year, month)"
-             :class="['rounded-circle', getDayClass(d), d.equals(today) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
+             :class="['rounded-circle', getDayClass(d), markToday && d.equals(today) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
              @click.stop="selectDay(d)"
              :data-flag="getDayFlag(d)"
              :style="getDayFlag(d) ? `background-image: url('${getDayFlag(d)}')` : ''"
@@ -36,6 +36,7 @@
         props: {
             year: { required: true },
             month: { required: true },
+            markToday: { type: Boolean },
         },
         data() {
             return {
