@@ -247,6 +247,7 @@ export default {
 
             if (config.calendar && config.calendar.enabled) {
                 routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
+                routes.push({ path: '/calendar-wide', component: resolve(__dirname, 'routes/calendarWide.vue') });
             }
 
             if (config.api !== null) {
