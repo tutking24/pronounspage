@@ -1,9 +1,16 @@
 <template>
     <NotFound v-if="!selectedPronoun"/>
     <div v-else>
-        <h2>
-            <Icon v="tag"/>
-            <T>pronouns.intro</T>:
+        <h2 class="d-flex justify-content-between">
+            <span>
+                <Icon v="tag"/>
+                <T>pronouns.intro</T>:
+            </span>
+            <div v-if="nameOptions.length > 1" class="btn-group" role="group">
+                <button :class="['btn btn-sm', counterSpeed === 0 ? 'btn-primary' : 'btn-outline-primary']" @click="counterPause"><Icon v="pause"/></button>
+                <button :class="['btn btn-sm', counterSpeed === 3000 ? 'btn-primary' : 'btn-outline-primary']" @click="counterSlow"><Icon v="play"/></button>
+                <button :class="['btn btn-sm', counterSpeed === 1000 ? 'btn-primary' : 'btn-outline-primary']" @click="counterFast"><Icon v="forward"/></button>
+            </div>
         </h2>
 
         <section>
@@ -136,6 +143,8 @@
                 pronounGroup: pronounLibrary.find(selectedPronoun),
 
                 counter: 0,
+                counterHandle: null,
+                counterSpeed: 1000,
             }
         },
         async asyncData({app}) {
@@ -145,7 +154,7 @@
         },
         mounted() {
             if (process.client) {
-                setInterval(_ => this.counter++, 1000);
+                this.counterSlow();
             }
         },
         head() {
@@ -157,6 +166,27 @@
         methods: {
             addSlash(link) {
                 return link + (['*', `'`].includes(link.substr(link.length - 1)) ? '/' : '');
+            },
+            counterClear() {
+                if (this.counterHandle) {
+                    clearInterval(this.counterHandle);
+                }
+            },
+            counterPause() {
+                this.counterSpeed = 0;
+                this.counterClear();
+            },
+            counterSlow() {
+                this.counterSpeed = 3000;
+                this.counterClear();
+                this.counter++;
+                this.counterHandle = setInterval(_ => this.counter++, this.counterSpeed);
+            },
+            counterFast() {
+                this.counterSpeed = 1000;
+                this.counterClear();
+                this.counter++;
+                this.counterHandle = setInterval(_ => this.counter++, this.counterSpeed);
             },
         },
         computed: {
