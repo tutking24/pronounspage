@@ -119,5 +119,9 @@ export class Calendar {
                 this.eventsByDate[k].push(event);
             }
         }
+        for (let date in this.eventsByDate) {
+            if (!this.eventsByDate.hasOwnProperty(date)) { continue; }
+            this.eventsByDate[date].sort((a, b) => b.level - a.level);
+        }
     }
 }
