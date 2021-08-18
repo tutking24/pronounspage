@@ -1332,3 +1332,7 @@ calendar:
         trans_prisoner: '{https://transprisoners.net/about/=Dzień Solidarności z Uwięzionymi Osobami Trans}'
         xenogender_day: 'Dzień widoczności {/slowniki/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
     banner: 'Obchodzimy właśnie'
+    image:
+        header: 'Ściągnij w formie obrazka'
+        overview: 'Przegląd'
+        labels: 'Etykietki'

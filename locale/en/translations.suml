@@ -701,3 +701,7 @@ calendar:
         trans_prisoner: '{https://transprisoners.net/about/=Trans Prisoner Day of Action and Solidarity}'
         xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender Visibility Day}'
     banner: 'We''re celebrating'
+    image:
+        header: 'Download an image'
+        overview: 'Overview'
+        labels: 'Labels'

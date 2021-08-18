@@ -59,6 +59,19 @@ export class Event {
     length() {
         return [...this.getDays(2021)].length;
     }
+
+    getRange(year) {
+        const days = this.getDays(year);
+        if (days.length === 1) {
+            return days[0].day;
+        }
+
+        return `${days[0].day} – ${days[days.length - 1].day}`;
+    }
+
+    isFirstDay(day) {
+        return this.getDays(day.year)[0].equals(day);
+    }
 }
 
 export function day (dayOfMonth) {
