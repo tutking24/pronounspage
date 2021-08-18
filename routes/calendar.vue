@@ -12,7 +12,7 @@
         <section class="row">
             <div v-for="i in 12" class="col-12 col-sm-6 col-lg-4 py-3">
                 <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
-                <Calendar :year="year" :month="i"/>
+                <Calendar :year="year" :month="i" markToday/>
             </div>
         </section>
 
