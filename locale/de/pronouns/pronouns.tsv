@@ -15,9 +15,9 @@ iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses									FALSE	FALSE	TR
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds									FALSE	FALSE	TRUE
 per,per/per	Neopronomen „per“	FALSE	per	per	per	pers									FALSE	FALSE	TRUE
 ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses									FALSE	FALSE	TRUE
-sier,sier/siem	Neopronomen „sier“ (Pronomen ohne Geschlecht 2.0)	FALSE	sier	siem	sien	sies									FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen20/=Illi Anna Heger}
+sier,sier/siem	Neopronomen „sier“ – Pronomen ohne Geschlecht 2.0	FALSE	sier	siem	sien	sies									FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen20/=Illi Anna Heger}
 they,they/them	Äquivalent zu englischem „them“	FALSE	they	them	them	their									FALSE	FALSE	TRUE
-xier,xier/xiem	Neopronomen „xier“ (Pronomen ohne Geschlecht 3.3)	FALSE	xier	xiem	xien	xies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen33/=Illi Anna Heger}.
+xier,xier/xiem	Neopronomen „xier“ – Pronomen ohne Geschlecht 3.3	FALSE	xier	xiem	xien	xies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen33/=Illi Anna Heger}.
 zet,zet/zerm	Neopronomen „zet“	FALSE	zet	zerm	zern	zets									FALSE	FALSE	TRUE
 er_sie,er_sie/ihm_ihr	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	dieses_dieser	diesem_dieser	diese_n	FALSE	FALSE	FALSE
 er*sie,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
