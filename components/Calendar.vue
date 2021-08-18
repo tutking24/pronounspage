@@ -9,8 +9,9 @@
         >
             <div class="day-number">{{ d.day }}</div>
             <div v-if="currentYear.eventsByDate[d.toString()] !== undefined && d.equals(selectedDay)" class="day-tooltip card text-dark shadow">
-                <div class="card-header">
-                    <strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong>
+                <div class="card-header d-flex justify-content-between">
+                    <p class="h5 mb-0"><strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong></p>
+                    <button class="btn btn-sm py-0" @clik="selectedDay = null"><Icon v="times"/></button>
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
@@ -180,8 +181,9 @@
                     position: fixed;
                     left: 0;
                     width: 100%;
+                    padding-bottom: 3rem;
                 }
-                z-index: 999;
+                z-index: 1040;
                 cursor: default;
             }
         }
