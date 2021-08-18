@@ -243,4 +243,10 @@ body[data-theme="dark"] {
       }
     }
   }
+
+  .alert-primary, .alert-success, .alert-warning, .alert-danger {
+    a {
+      color: $primary;
+    }
+  }
 }
