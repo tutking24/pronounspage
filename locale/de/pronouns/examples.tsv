@@ -1,5 +1,5 @@
 singular	plural	isHonorific
 {'pronoun_n} ist so süß.	{pronoun_n} sind so süß.	FALSE
-Ist das {pronoun_g} Hund?		FALSE
+Ist das {possessive} Hund?		FALSE
 Ich bin {pronoun_d} erst kürzlich begegnet.		FALSE
 Ich verstehe {pronoun_a} so gut.		FALSE
