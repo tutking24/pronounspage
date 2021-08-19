@@ -1,6 +1,8 @@
 <template>
     <div>
+        <!-- TODO temporary
         <LinksNav/>
+        -->
 
         <h2>
             <Icon v="calendar-star"/>

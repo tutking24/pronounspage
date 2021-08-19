@@ -207,8 +207,18 @@
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
                             '/' + this.config.people.route,
-                            this.config.calendar ? '/' + this.config.calendar.route : '',
+                            // TODO temporary this.config.calendar ? '/' + this.config.calendar.route : '',
                         ],
+                    });
+                }
+
+                // TODO temporary
+                if (this.config.calendar && this.config.calendar.enabled) {
+                    links.push({
+                        link: '/' + this.config.calendar.route,
+                        icon: 'calendar-star',
+                        text: this.$t('calendar.header'),
+                        textLong: this.$t('calendar.headerLong'),
                     });
                 }
 
