@@ -17,7 +17,7 @@ Paw can easily link to paw's pronouns by putting in all five grammatical forms
 ([paw/paw/paw's/paw's/pawself](https://en.pronouns.page/paw/paw/paw's/paw's/pawself)),
 by using a shorthand notation for nameself pronouns ([:paw](https://en.pronouns.page/:paw)),
 or by using a generator that's available in the [Pronouns](/pronouns) section.
-We talk about it in the instructions to the form –
+We talk about it in the instructions in the card editor –
 if only people would read them before rushing to get angry…
 
 But, oh well… It's not like it's a big deal for us personally. We'll roll our eyes and move on.
