@@ -15,7 +15,7 @@ pronouns:
         examples: ['er&sie', 'er&dey', 'sie&xier']
     null: false
     emoji: false
-    slashes: true
+    slashes: ['pronoun_n', 'possessive', 'pronoun_d', 'pronoun_a']
     avoiding: false
     others: 'Andere Pronomen'
 
