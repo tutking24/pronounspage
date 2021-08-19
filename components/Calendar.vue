@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <CalendarEvent v-for="event in currentYear.eventsByDate[d.toString()]" :event="event"/>
+                        <CalendarEvent v-for="event in currentYear.eventsByDate[d.toString()]" :event="event" :key="event.name"/>
                     </ul>
                 </div>
             </div>

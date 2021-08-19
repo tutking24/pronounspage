@@ -1,6 +1,6 @@
 <template>
     <ul class="list-unstyled mb-0">
-        <CalendarEvent v-for="event in events" :event="event" :range="year"/>
+        <CalendarEvent v-for="event in events" :event="event" :range="year" :key="event.name"/>
     </ul>
 </template>
 
