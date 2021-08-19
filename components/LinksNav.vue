@@ -38,9 +38,10 @@
             if (this.config.faq.enabled) {
                 links.push({name: 'faq.header', route: this.config.faq.route, icon: 'map-marker-question'});
             }
-            if (this.config.calendar && this.config.calendar.enabled) {
-                links.push({name: 'calendar.header', route: this.config.calendar.route, icon: 'calendar-star'});
-            }
+            // TODO temporarily moved to the main header
+            // if (this.config.calendar && this.config.calendar.enabled) {
+            //     links.push({name: 'calendar.header', route: this.config.calendar.route, icon: 'calendar-star'});
+            // }
             if (this.config.people.enabled) {
                 links.push({name: 'people.header', route: this.config.people.route, icon: 'user-friends'});
             }
