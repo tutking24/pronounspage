@@ -13,7 +13,7 @@ hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sirer	sir									FALSE	
 hen,hen/hen	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FALSE	FALSE	TRUE
 iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses	ikses									FALSE	FALSE	TRUE
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds	inds									FALSE	FALSE	TRUE
-nin,nin/nim	Neopronomen „nin“	FALSCH	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE
+nin,nin/nim	Neopronomen „nin“	FALSE	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE
 per,per/per	Neopronomen „per“	FALSE	per	per	per	pers	pers									FALSE	FALSE	TRUE
 ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses	ses									FALSE	FALSE	TRUE
 sier,sier/siem	Neopronomen „sier“	FALSE	sier	siem	sien	sies	sies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen21/=Illi Anna Heger}
