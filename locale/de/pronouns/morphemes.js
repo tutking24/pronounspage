@@ -3,6 +3,7 @@ export default [
     'pronoun_d',
     'pronoun_a',
     'pronoun_g',
+    'possessive',
     'article_n',
     'article_g',
     'article_d',

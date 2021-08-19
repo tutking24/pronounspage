@@ -340,7 +340,7 @@ links:
                 w zakresie używania języka polskiego, a więc właśnie opiniuje, doradza, konsultuje, wydaje ekspertyzy, opinie,
                 ale wydaje nakazów ani zakazów.
         -
-            icon: 'album'
+            icon: 'atlas'
             url: 'https://tranzycja.pl/'
             headline: 'Tranzycja.pl'
             extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
