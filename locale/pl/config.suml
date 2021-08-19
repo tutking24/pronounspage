@@ -811,6 +811,11 @@ links:
                 Jedną z możliwości jest stosowanie znaku zastępującego, np. "pisałxm" lub "pisał_m".
                 Często używa się też rodzaju neutralnego ("pisałom", "ono pisało")
                 lub form męskich i żeńskich na zmianę. Więcej o zaimkach niebinarnych możesz przeczytać na zaimki.pl.
+        -
+            icon: 'gamepad'
+            url: 'https://www.wydawnictworebel.pl/pages/bohaterowie-z-descent-legendy-mroku-1578.html'
+            headline: 'Bohaterowie z Descent: Legendy Mroku; Vaerix – smocza hybryda, wygnaniec'
+            extra: ' – <strong>Wydawnictwo Rebel</strong>'
     socials:
         -
             icon: 'twitter'
