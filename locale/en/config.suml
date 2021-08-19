@@ -204,7 +204,7 @@ links:
             url: 'https://oengus.io/'
             headline: 'Oengus.io'
             extra: ' – uses Pronouns.Page API in user profiles'
-    blog: false
+    blog: true
 
 contact:
     enabled: true
