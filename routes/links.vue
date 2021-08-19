@@ -2,7 +2,7 @@
     <div>
         <LinksNav/>
 
-        <section v-if="!config.links.split">
+        <section v-if="config.links.blog && !config.links.split">
             <h2 class="mb-3">
                 <Icon v="pen-nib"/>
                 <T>links.blog</T>
