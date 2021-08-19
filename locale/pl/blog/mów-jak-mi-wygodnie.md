@@ -10,6 +10,18 @@ zwłaszcza jeśli dzieje się to w klimacie szczerej (mam nadzieję) życzliwoś
 Ale jednak w felietonie niestety czegoś zabrakło – rzetelności, solidnego przeczytania materiałów,
 a przede wszystkim, jak się zdaje, porozmawiania na ten temat z osobami, o których się pisze.
 
+<div class="alert alert-info">
+    <p>
+        Felieton Kingi Dunin doczekał się również nie-polemiki Emilii Wiśniewskiej na łamach Krytyki Politycznej, serdecznie polecamy!
+    </p>
+    <p class="mb-0">
+        <span class="fal fa-link"></span>
+        <a href="https://krytykapolityczna.pl/kraj/emilia-wisniewska-mow-do-mnie-tak-jak-ci-niewygodnie/" target="_blank" rel="noopener">
+            Mów do mnie tak, jak ci niewygodnie. Jakoś to przeżyjesz. Nie-polemika z Kingą Dunin
+        </a>
+    </p>
+</div>
+
 Kinga (chyba będę pisać „na ty”, zgodnie z przesłaniem felietonu: „jakkolwiek, byle było łatwiej” 😉) zaczyna swój tekst następującymi akapitami:
 
 > Maia Kobabe urodziłu się w 1989 roku, jest Amerykanu, skończyłu studia artystyczne związane z tworzeniem komiksów
