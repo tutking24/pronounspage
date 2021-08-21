@@ -1,6 +1,10 @@
 <template>
     <div v-if="publishDates !== null && $isGranted('sources')" class="card">
-        <div class="card-body">
+        <a class="card-header cursor-pointer" href="#" @click.prevent="open = !open">
+            <Icon v="chart-line"/>
+            Chart
+        </a>
+        <div class="card-body" v-if="open">
             <p class="small">
                 <Icon v="chart-line"/>
                 This chart is only visible for the admins.
@@ -16,6 +20,11 @@
         props: {
             sources: { required: true },
             label: { required: true },
+        },
+        data() {
+            return {
+                open: false,
+            }
         },
         computed: {
             publishDates() {
