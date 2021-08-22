@@ -2,7 +2,7 @@
 
 <small>2021-08-22 | [@andrea](/@andrea)</small>
 
-![Sylvia Dziuba on Medium: Demanding Pronouns. No, I don’t want to give you mine, and I don’t want to know yours.](/img/demanding-pronouns.png)
+![Sylvia Dziuba on Medium: Demanding Pronouns. No, I don’t want to give you mine, and I don’t want to know yours.](/img-local/blog/demanding-pronouns.png)
 
 So I stumbled upon an article on Medium called [“Demanding Pronouns”](https://medium.com/the-venting-machine/demanding-pronouns-b819ab23f5df).
 And while I normally wouldn't even bother to dignify such blatantly enbyphobic bullshit with a reply,

@@ -77,7 +77,7 @@ ale dają pojęcie, jak bardzo urosła w społeczeństwie świadomość niebinar
 Pojedyncze wpisy pojawiają się już od 1795 roku, natomiast w ostatnich latach liczba tekstów drastycznie szybuje w górę,
 do niemal stu rocznie w 2021!
 
-![Wykres opisany powyżej](/img/pl-korpus-wykres.png)
+![Wykres opisany powyżej](/img-local/korpus-wykres.png)
 
 Osoby niebinarne mają potrzebę dostosować swój język do swojej tożsamości.
 A społeczeństwo zaskakująco szybko zdaje się tę potrzebę zaczynać dostrzegać i respektować.

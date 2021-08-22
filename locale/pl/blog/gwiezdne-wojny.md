@@ -2,7 +2,7 @@
 
 <small>2020-11-11 | [@ausir](/@ausir)</small>
 
-![](/img/gwiezdne-wojny.jpg)
+![](/img-local/blog/gwiezdne-wojny.jpg)
 
 W uniwersum „Gwiezdnych Wojen” pojawiły się już przynajmniej trzy postacie niebinarne.
 Niestety, fani znający tylko polskie tłumaczenia mogą nadal tego nie wiedzieć...

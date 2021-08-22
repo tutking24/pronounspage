@@ -13,7 +13,7 @@
                 <p><Share :title="$t('nouns.xNouns.header')"/></p>
             </div>
             <figure>
-                <img src="/img/iksatywy.png" :alt="$t('nouns.xNouns.flag.alt')"/>
+                <img src="/img-local/flags/iksatywy.png" :alt="$t('nouns.xNouns.flag.alt')"/>
                 <!--<figcaption><T>nouns.xNouns.flag.caption</T></figcaption>-->
             </figure>
         </div>
