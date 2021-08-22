@@ -467,4 +467,13 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
     return res.json({token: await issueAuthentication(req.db, req.user)});
 }));
 
+router.get('/user/init-universal/:token', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        return res.json('Already logged in');
+    }
+
+    res.cookie('token', req.params.token, cookieSettings);
+    return res.json('Token saved');
+}));
+
 export default router;

@@ -121,6 +121,14 @@
                 <T>user.deleteAccount</T>
             </a>
         </section>
+
+        <div>
+            <iframe v-for="domain in universalDomains"
+                    :src="`${domain}/api/user/init-universal/${$cookies.get('token')}`"
+                    style="width: 1px; height: 1px; opacity: .01"
+            >
+            </iframe>
+        </div>
     </section>
 </template>
 
@@ -152,6 +160,8 @@
                 gravatar,
 
                 captchaToken: null,
+
+                universalDomains: process.env.ALL_LOCALES_URLS.split(',').filter(x => x !== process.env.BASE_URL),
             }
         },
         async mounted() {
