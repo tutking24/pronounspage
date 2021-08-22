@@ -1,6 +1,6 @@
 import { loadSuml } from './server/loader';
 import fs from 'fs';
-import {buildDict, buildLocaleList} from "./src/helpers";
+import {buildDict, buildList, buildLocaleList} from "./src/helpers";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -13,6 +13,18 @@ const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 
 process.env.LOCALE = locale;
+
+const allVersionsUrls = buildList(function*() {
+    if (process.env.NODE_ENV === 'development') {
+        yield 'http://pronouns.test:3000';
+        yield 'http://localhost:3000';
+    } else {
+        for (let loc in locales) {
+            yield locales[loc].url;
+        }
+    }
+});
+process.env.ALL_LOCALES_URLS = allVersionsUrls.join(',');
 
 const bodyParser = require('body-parser');
 
@@ -154,6 +166,7 @@ export default {
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
         STATS_FILE: process.env.STATS_FILE,
         HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
+        ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
