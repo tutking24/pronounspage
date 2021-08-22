@@ -22,9 +22,9 @@ deploy: install
 	yarn build
 	node server/migrate.js
 	echo "\nimportScripts('https://arc.io/arc-sw-core.js');" >> static/sw.js
-	ln -sfn ./data ./static/img-local
+	ln -sfn ./data/img ./static/img-local
 
 switch:
 	rm -rf cache
 	ln -sfn ./locale/${LANG} ./data
-	ln -sfn ./locale/{$LANG} ./static/img-local
+	ln -sfn ./locale/{$LANG}/img ./static/img-local
