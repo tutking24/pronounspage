@@ -2,7 +2,7 @@
 
 <small>2021-05-03 | [@Sybil](/@Sybil), [@andrea](/@andrea)</small>
 
-![](/img/Demi-Lovato.jpg)
+![](/img-local/blog/Demi-Lovato.jpg)
 
 [Sybil sprawdza](https://twitter.com/mykofanes/status/1395121716255412227), jak polskie media opisują Demi Lovato:
 

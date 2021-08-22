@@ -13,7 +13,7 @@
                 <p><Share :title="$t('nouns.neuterNouns.header')"/></p>
             </div>
             <figure>
-                <img src="/img/łoś.jpg" :alt="$t('nouns.neuterNouns.flag.alt')"/>
+                <img src="/img-local/flags/łoś.jpg" :alt="$t('nouns.neuterNouns.flag.alt')"/>
                 <figcaption><T>nouns.neuterNouns.flag.caption</T></figcaption>
             </figure>
         </div>

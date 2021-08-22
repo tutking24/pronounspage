@@ -2,7 +2,7 @@
 
 <small>2020-10-03 | [@Archie](/@Archie)</small>
 
-![](/img/lobby-lgbt-wyborcza.jpg)
+![](/img-local/blog/lobby-lgbt-wyborcza.jpg)
 
 Każdego dnia walczymy o widoczność osób będących pod parasolem transpłciowości przez tworzenie bezpiecznej
 i komfortowej przestrzeni językowej, dokładamy wszelkich starań, by rodzaj neutralny nie był rodzajem infantylnym,

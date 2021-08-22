@@ -48,7 +48,7 @@ A rzekoma niekonsekwencja w dukatywowych końcówkach pomiędzy „pastoru” a 
 bierze się stąd, że… język polski jest fleksyjny.
 Jedno z tych słów występuje bowiem w komiksie w bierniku, a drugie w narzędniku:
 
-![Mianowano mnie na pogańsku pastoru! | Może będę jego bibliotekarum?](/img/queer_gender.png)
+![Mianowano mnie na pogańsku pastoru! | Może będę jego bibliotekarum?](/img-local/blog/queer_gender.png)
 
 Czy w rodzaju męskim narzekałobyśmy, że jakże to tak, „mianowano mnie na pastro**ra**”,
 ale już „może będę jego biblioteka**rzem**”?

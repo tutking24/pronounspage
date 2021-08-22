@@ -8,7 +8,7 @@ A co jeśli wpiszecie „psycholożka”? Też definicja, reklamy poradni, wypow
 
 Nie. Przede wszystkim zobaczycie masę dyskusji pt. „czy wolno mówić «psycholożka»?” 🤦
 
-![](/img/psycholożka.png)
+![](/img-local/blog/psycholożka.png)
 
 To ja szybko odpowiem: wolno.
 

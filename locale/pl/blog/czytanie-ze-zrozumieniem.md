@@ -2,7 +2,7 @@
 
 <small>2021-02-13 | [@andrea](/@andrea)</small>
 
-![](/img/wpolityce.png)
+![](/img-local/blog/wpolityce.png)
 
 Doceniamy każdą obecność tematu języka neutralnego płciowo w mediach,
 nawet jeśli są to media prawicowe tworzące paszkwile na nasz temat.
@@ -35,7 +35,7 @@ Oba są głównie przeznaczone dla innych grup osób, i wcale się ze sobą nie 
 Tak samo jak nie gryzą się samej pani dziennikarce maskulatywy z feminatywami.
 W swojej notce autorskiej użyła i jednych („autor”, „zastępca”) i drugich („współautorka”, „wiceszefowa”, „reporterka”).
 
-![](/img/łosiewicz-notka.png)
+![](/img-local/blog/łosiewicz-notka.png)
 
 Nikto się na lewicy nie „gubi w meandrach” rewolucji językowej.
 Nie sądzę też, by ktokolwiek uważało feminatywy za „największy problem lewicy”.
