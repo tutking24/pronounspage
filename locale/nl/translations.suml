@@ -40,21 +40,20 @@ home:
         alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
-    # TODO
-    mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+mission:
+        header: 'Onze missie'
+        summary: 'We strijden voor vrijheid, respect en inclusiviteit in taal.'  
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Vrijheid</strong>
+            – Zodat dat iedereen <em>zelf</em> kan beslissen welke voornaamwoorden het beste bij diegene passen.
+            
         respect: >
             <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            – Zodat de voornaamwoorden van <em>anderen</em> worden gerespecteerd.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inclusiviteit</strong>
+            – Zodat we geen aannames maken over iemand's gender wanneer we refereren naar een of meerdere 
+            personen die we niet kennen, en zodat we hun niet uitsluiten voor wat voor reden dan ook.
 
 pronouns:
     header: 'Voornaamwoorden'
@@ -284,11 +283,12 @@ faq:
                     So why would it be strange that they discovered a part of their identity,
                     stopped liking their name, discovered a label that fits them well, etc.?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: 'Is het raar dat ik niet aan mijn nieuwe voornaamwoorden gewend kan raken?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    Helemaal niet! Doordat je jarenlang andere voornaamwoorden hebt gebruikt die geassocieerd zijn met het gender 
+                    dat je toegewezen is bij de geboorte kan het moeilijk zijn om te wennen aan nieuwe voornaamwoorden.
+
                 - >
                     Pronouns ≠ gender.
                     Your gender won't drastically change just because you got confused once when someone called you “them”.
@@ -360,9 +360,8 @@ user:
         userNotFound: 'Gebruiker niet gevonden.'
         email:
             subject: 'Jouw logincode is %code%'
-            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
-                Gebruik de volgende code om jouw e-mailadres te bevestigen: %code%.
+                Voer de volgende code in om jouw e-mailadres te bevestigen: %code%.
 
                 Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
         why: >
