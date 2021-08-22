@@ -468,7 +468,7 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/user/init-universal/:token', handleErrorAsync(async (req, res) => {
-    if (!req.user) {
+    if (req.user) {
         return res.json('Already logged in');
     }
 
