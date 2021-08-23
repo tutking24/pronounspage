@@ -468,12 +468,19 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/user/init-universal/:token', handleErrorAsync(async (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
     if (req.user) {
         return res.json('Already logged in');
     }
 
     res.cookie('token', req.params.token, cookieSettings);
     return res.json('Token saved');
+}));
+
+router.get('/user/logout-universal', handleErrorAsync(async (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.clearCookie('token');
+    return res.json('Token removed');
 }));
 
 export default router;
