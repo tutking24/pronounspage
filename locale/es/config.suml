@@ -60,6 +60,7 @@ nouns:
             - 'lenguaje'
             - 'atracción'
             - 'política'
+            - 'prejuicio'
         route: 'terminologia'
 
 names:
