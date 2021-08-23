@@ -60,6 +60,7 @@ nouns:
             - 'langage'
             - 'attirance'
             - 'politique'
+            - 'préjugé'
         route: 'terminologie'
 
 names:
