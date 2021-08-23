@@ -18,6 +18,8 @@ const allVersionsUrls = buildList(function*() {
     if (process.env.NODE_ENV === 'development') {
         yield 'http://pronouns.test:3000';
         yield 'http://localhost:3000';
+    } else if (process.env.NODE_ENV === 'test') {
+        // nothing
     } else {
         yield 'https://pronouns.page';
         for (let loc in locales) {
