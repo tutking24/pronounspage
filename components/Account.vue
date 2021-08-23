@@ -1,5 +1,17 @@
 <template>
-    <section>
+    <section v-if="logoutInProgress">
+        <p class="text-center">
+            <Spinner size="5rem"/>
+        </p>
+        <div>
+            <iframe v-for="domain in universalDomains"
+                    :src="`${domain}/api/user/logout-universal`"
+                    style="width: 1px; height: 1px; opacity: .01"
+            >
+            </iframe>
+        </div>
+    </section>
+    <section v-else>
         <div class="card mb-3">
             <div class="card-body d-flex flex-column flex-md-row">
                 <div class="mx-2 text-center">
@@ -162,6 +174,8 @@
                 captchaToken: null,
 
                 universalDomains: process.env.ALL_LOCALES_URLS.split(',').filter(x => x !== process.env.BASE_URL),
+
+                logoutInProgress: false,
             }
         },
         async mounted() {
@@ -242,8 +256,13 @@
                 }
             },
             logout() {
+                this.logoutInProgress = true;
+                setTimeout(this.doLogout, 3000);
+            },
+            doLogout() {
                 this.$store.commit('setToken', null);
                 this.$cookies.removeAll();
+                this.logoutInProgress = false;
             },
             setProfiles(profiles) {
                 this.profiles = profiles;
