@@ -85,6 +85,8 @@ nouns:
             - 'language'
             - 'attraction'
             - 'politics'
+            - 'prejudice'
+
         route: 'terms'
 
 names:
