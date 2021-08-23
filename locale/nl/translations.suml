@@ -40,19 +40,19 @@ home:
         alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
-mission:
+    mission:
         header: 'Onze missie'
-        summary: 'We strijden voor vrijheid, respect en inclusiviteit in taal.'  
+        summary: 'We strijden voor vrijheid, respect en inclusiviteit in taal.'
         freedom: >
             <strong>Vrijheid</strong>
             – Zodat dat iedereen <em>zelf</em> kan beslissen welke voornaamwoorden het beste bij diegene passen.
-            
+
         respect: >
             <strong>Respect</strong>
             – Zodat de voornaamwoorden van <em>anderen</em> worden gerespecteerd.
         inclusiveness: >
             <strong>Inclusiviteit</strong>
-            – Zodat we geen aannames maken over iemand's gender wanneer we refereren naar een of meerdere 
+            – Zodat we geen aannames maken over iemand's gender wanneer we refereren naar een of meerdere
             personen die we niet kennen, en zodat we hun niet uitsluiten voor wat voor reden dan ook.
 
 pronouns:
@@ -286,7 +286,7 @@ faq:
             question: 'Is het raar dat ik niet aan mijn nieuwe voornaamwoorden gewend kan raken?'
             answer:
                 - >
-                    Helemaal niet! Doordat je jarenlang andere voornaamwoorden hebt gebruikt die geassocieerd zijn met het gender 
+                    Helemaal niet! Doordat je jarenlang andere voornaamwoorden hebt gebruikt die geassocieerd zijn met het gender
                     dat je toegewezen is bij de geboorte kan het moeilijk zijn om te wennen aan nieuwe voornaamwoorden.
 
                 - >
