@@ -47,7 +47,7 @@ And as for my other “favourite” part, it's this one:
 > Just stop demanding something that I don’t want to do, or otherwise face your wrath.
 > Fine, be angry with me, but just leave me be!
 
-Oh no! That image of the world indeed sounds horrible indeed! How are we supposed to survive any social interaction,
+Oh no! That image of the world sounds horrible indeed! How are we supposed to survive any social interaction,
 if we're being forced to remember tiny bits of information about the people we talk to?!
 
 Well, other than names, of course. Asking someone their name (and trying not to forget it) is just basic politeness.
@@ -65,4 +65,5 @@ Well, Sylvia is living in a world like that. One where people have the _audacity
 
 And when I see her _terrible struggle_, I can only say one thing:
 
-<iframe src="https://giphy.com/embed/J8FZIm9VoBU6Q" width="480" height="332" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-community-good-J8FZIm9VoBU6Q">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/J8FZIm9VoBU6Q" width="480" height="332" frameBorder="0" class="giphy-embed" allowFullScreen style="max-width: 100%"></iframe>
+<p><a href="https://giphy.com/gifs/reaction-community-good-J8FZIm9VoBU6Q">via GIPHY</a></p>
