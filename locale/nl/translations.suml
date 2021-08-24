@@ -290,9 +290,9 @@ faq:
                     dat je toegewezen is bij de geboorte kan het moeilijk zijn om te wennen aan nieuwe voornaamwoorden.
 
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    Voornaamwoorden ≠ gender
+                    Jouw gender zal niet radicaal veranderen puur omdat je een keertje in de war raakte omdat iemand jou ''hen'' noemde. 
+                    Maak je geen zorgen. Experiment. Kijk wat het beste bij jou past.
         preferred-pronouns:
             question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
             answer:
@@ -453,7 +453,7 @@ crud:
     search: 'Zoek…'
     author: 'Toegevoegd door'
     saved: 'Veranderingen succesvol opgeslagen!'
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    loginRequired: '{/account=Login} om een toevoeging in te dienen'
 
 footer:
     license: >
@@ -520,10 +520,9 @@ images:
 error:
     generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Demonstreer alsjeblieft dat je geen bot bent om spam en DDoS aanvallen te voorkomen.'
+    invalid: 'Ongeldige CAPTCHA, probeer het alsjeblieft nog een keer.'
 
 mode:
     dark: 'Donkere modus'
@@ -540,7 +539,6 @@ ban:
     banned: 'Banned'
     termsIntro: 'According to our {/voorwaarden=Terms of Service}:'
 
-# TODO
 report:
     action: 'Rapporteer misbruik'
     comment: 'Leg kort uit wat ongepast is aan dit profiel'
