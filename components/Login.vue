@@ -5,7 +5,15 @@
         <div class="card">
             <div class="card-body">
                 <div v-if="token === null">
-                    <div class="row">
+                    <div class="row flex-row-reverse">
+                        <div class="col-12 col-md-4">
+                            <div class="btn-group-vertical w-100 mb-3">
+                                <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                                    <Icon :v="providerOptions.icon || provider" set="b"/>
+                                    {{ providerOptions.name }}
+                                </a>
+                            </div>
+                        </div>
                         <div class="col-12 col-md-8">
                             <form @submit.prevent="login" :disabled="saving" class="mb-4 mb-md-0">
                                 <input type="text" class="form-control mb-3" v-model="usernameOrEmail"
@@ -24,14 +32,6 @@
                                     <T>user.login.action</T>
                                 </button>
                             </form>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="btn-group-vertical w-100 mb-3">
-                                <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
-                                    <Icon :v="providerOptions.icon || provider" set="b"/>
-                                    {{ providerOptions.name }}
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
