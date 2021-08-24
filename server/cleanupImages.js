@@ -114,7 +114,7 @@ async function cleanup() {
             }
         }
 
-        if (execute) {
+        if (execute && toRemove.length) {
             console.log('--- Removal request ---');
             await s3.deleteObjects({
                 Delete: {
