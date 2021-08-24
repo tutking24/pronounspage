@@ -8,7 +8,7 @@ import awsConfig from '../aws';
 import S3 from 'aws-sdk/clients/s3';
 
 const sizes = {
-    big: [1600, false],
+    big: [1200, false],
     flag: [256, false],
     thumb: [240, true],
 }
