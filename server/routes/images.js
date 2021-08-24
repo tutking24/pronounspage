@@ -47,6 +47,10 @@ const router = Router();
 router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any('images[]', 12), handleErrorAsync(async (req, res) => {
     const s3 = new S3(awsConfig);
 
+    const requestedSizes = req.query.sizes === undefined || req.query.sizes === 'all'
+        ? null
+        : req.query.sizes.split(',');
+
     const ids = [];
     for (let file of req.files) {
         const id = ulid();
@@ -54,6 +58,8 @@ router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any
 
         for (let s in sizes) {
             if (!sizes.hasOwnProperty(s)) { continue; }
+            if (requestedSizes !== null && !requestedSizes.includes(s)) { continue; }
+
             const [size, square] = sizes[s];
 
             let canvas = createCanvas(image.width, image.height);

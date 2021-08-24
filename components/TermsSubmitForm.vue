@@ -67,7 +67,7 @@
                         <label class="text-nowrap"><strong>
                             <T>nouns.terms.images</T>
                         </strong></label>
-                        <ImageWidget v-model="form.images" multiple/>
+                        <ImageWidget v-model="form.images" multiple sizes="big,thumb"/>
                     </div>
                 </div>
             </div>
