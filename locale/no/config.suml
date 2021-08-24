@@ -59,6 +59,8 @@ nouns:
             - 'språk'
             - 'attraksjon'
             - 'politikk'
+            - 'fordom'
+
         route: 'terminologi'
 
 
