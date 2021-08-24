@@ -11,49 +11,52 @@ async function cleanup() {
     console.log('--- Fetching ids expected to stay ---');
     const db = await dbConnection();
 
-    const avatars = (await db.all(`
+    const avatars = {}
+    for (let row of await db.all(`
         SELECT avatarSource
         FROM users
         WHERE avatarSource LIKE 'https://pronouns-page.s3-eu-west-1.amazonaws.com/images/%'`
-    )).map(row => row.avatarSource.match('https://pronouns-page.s3-eu-west-1.amazonaws.com/images/(.*)-thumb.png')[1]);
+    )) {
+        avatars[row.avatarSource.match('https://pronouns-page.s3-eu-west-1.amazonaws.com/images/(.*)-thumb.png')[1]] = true;
+    }
 
-    const flags = [];
+    const flags = {};
     for (let row of await db.all(`
         SELECT customFlags
         FROM profiles
         WHERE customFlags != '{}'
     `)) {
         for (let key of Object.keys(JSON.parse(row.customFlags))) {
-            flags.push(key);
+            flags[key] = true;
         }
     }
 
-    const sources = [];
+    const sources = {};
     for (let row of await db.all(`
         SELECT images
         FROM sources
         WHERE images is not null AND images != ''
     `)) {
         for (let key of row.images.split(',')) {
-            sources.push(key);
+            sources[key] = true;
         }
     }
 
-    const terms = [];
+    const terms = {};
     for (let row of await db.all(`
         SELECT images
         FROM terms
         WHERE images is not null AND images != ''
     `)) {
         for (let key of row.images.split(',')) {
-            terms.push(key);
+            terms[key] = true;
         }
     }
 
-    console.log('Avatars: ' + avatars.length);
-    console.log('Flags: ' + flags.length);
-    console.log('Sources: ' + sources.length);
-    console.log('Terms: ' + terms.length);
+    console.log('Avatars: ' + Object.keys(avatars).length);
+    console.log('Flags: ' + Object.keys(flags).length);
+    console.log('Sources: ' + Object.keys(sources).length);
+    console.log('Terms: ' + Object.keys(terms).length);
 
     await db.close();
 
@@ -77,7 +80,7 @@ async function cleanup() {
         const toRemove = [];
         const remove = async (object, reason) => {
             console.log(`REMOVING: ${object.Key} (${reason})`);
-            toRemove.append({Key: object.Key});
+            toRemove.push({Key: object.Key});
             removed += 1;
             removedSize += object.Size;
         }
@@ -93,19 +96,19 @@ async function cleanup() {
 
             const [, id, size] = object.Key.match('images/(.*)-(.*).png');
 
-            if (avatars.includes(id)) {
+            if (avatars[id]) {
                 if (size !== 'thumb') {
                     await remove(object, 'avatar');
                 }
-            } else if (flags.includes(id)) {
+            } else if (flags[id]) {
                 if (size !== 'flag') {
                     await remove(object, 'flag');
                 }
-            } else if (sources.includes(id)) {
+            } else if (sources[id]) {
                 if (size !== 'big' && size !== 'thumb') {
                     await remove(object, 'source');
                 }
-            } else if (terms.includes(id)) {
+            } else if (terms[id]) {
                 if (size !== 'big' && size !== 'thumb') {
                     await remove(object, 'term');
                 }
@@ -122,7 +125,7 @@ async function cleanup() {
                 }
             });
         }
-
+throw 'aaa';
         if (objects.Contents.length < chunkSize) {
             break;
         }
