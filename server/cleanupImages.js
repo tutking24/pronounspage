@@ -125,7 +125,7 @@ async function cleanup() {
                 }
             });
         }
-throw 'aaa';
+
         if (objects.Contents.length < chunkSize) {
             break;
         }
