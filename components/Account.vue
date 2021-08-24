@@ -38,7 +38,7 @@
                                 <T>crud.remove</T>
                             </a>
                         </div>
-                        <ImageUploader small @uploaded="uploaded"/>
+                        <ImageUploader small @uploaded="uploaded" sizes="thumb"/>
                     </div>
                     <p v-if="$isGranted('panel') || $isGranted('users')">
                         <nuxt-link to="/admin" class="badge bg-primary text-white"><T>user.account.admin</T></nuxt-link>

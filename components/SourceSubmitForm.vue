@@ -77,7 +77,7 @@
                 </div>
                 <div class="form-group">
                     <label><T>sources.submit.images</T></label>
-                    <ImageWidget v-model="form.images" multiple/>
+                    <ImageWidget v-model="form.images" multiple sizes="big,thumb"/>
                 </div>
                 <div class="form-group" v-if="$isGranted('sources')">
                     <label for="key"><T>sources.submit.key</T></label>

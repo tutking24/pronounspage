@@ -102,7 +102,7 @@
                     <T>profile.flagsCustom</T>
                 </summary>
                 <div class="border-top">
-                    <ImageWidgetRich v-model="customFlags"/>
+                    <ImageWidgetRich v-model="customFlags" sizes="flag"/>
                 </div>
             </details>
 

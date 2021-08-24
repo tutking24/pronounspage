@@ -29,7 +29,8 @@
             multiple: {type: Boolean},
             name: {'default': 'images'},
             form: {type: Boolean},
-            small: {type: Boolean}
+            small: {type: Boolean},
+            sizes: {'default': 'all'},
         },
         data() {
             return {
@@ -54,7 +55,7 @@
                 this.uploading = true;
                 this.errorMessage = '';
                 try {
-                    const ids = await this.$axios.$post('/images/upload', formData, {
+                    const ids = await this.$axios.$post('/images/upload?sizes=' + this.sizes, formData, {
                         headers: {
                             'Content-Type': 'multipart/form-data'
                         }

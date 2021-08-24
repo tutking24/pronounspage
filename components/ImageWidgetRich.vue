@@ -16,7 +16,7 @@
                 </div>
             </li>
             <li slot="footer">
-                <ImageUploader multiple :name="name" form @uploaded="addFiles"/>
+                <ImageUploader multiple :name="name" form @uploaded="addFiles" :sizes="sizes"/>
             </li>
         </draggable>
     </div>
@@ -34,6 +34,7 @@
             value: {type: Object},
             name: {'default': 'images'},
             maxLength: {'default': 24},
+            sizes: {'default': 'all'},
         },
         data() {
             return {
