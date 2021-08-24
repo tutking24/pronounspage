@@ -114,7 +114,7 @@
                     <T>profile.links</T>
                 </h3>
                 <ListInput v-model="links" v-slot="s">
-                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" required/>
+                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="s.update(s.val)" @change="s.update(s.val)" required/>
                 </ListInput>
                 <p class="small text-muted mb-0">
                     <Icon v="ad"/>
