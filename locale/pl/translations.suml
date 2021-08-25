@@ -175,6 +175,10 @@ pronouns:
                     - ['Katarzyna Nowak', 'K. Nowak']
                     - ['Szanowny Pan Białek', 'Sz. P. Białek']
                     - ['Towarzyszka Q', 'Tow. Q']
+            -
+                header: 'Liczebniki zbiorowe'
+                examples:
+                    - ['dziesięciu pracowników', 'dziesięcioro pracujących']
 
     others: 'Inne formy'
     othersRaw: 'inne'
