@@ -345,6 +345,10 @@ links:
             url: 'https://tranzycja.pl/'
             headline: 'Tranzycja.pl'
             extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
+        -
+            icon: 'book'
+            url: 'https://jakmowicolgbt.pl/wp-content/uploads/2021/03/Jak-pisac-i-mowic-o-osobach-LGBT-darmowy-poradnik.pdf'
+            headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
     mediaGuests:
         -
             icon: 'newspaper'
@@ -817,6 +821,22 @@ links:
             url: 'https://www.wydawnictworebel.pl/pages/bohaterowie-z-descent-legendy-mroku-1578.html'
             headline: 'Bohaterowie z Descent: Legendy Mroku; Vaerix – smocza hybryda, wygnaniec'
             extra: ' – <strong>Wydawnictwo Rebel</strong>'
+        -
+            icon: 'book'
+            url: 'https://jakmowicolgbt.pl/wp-content/uploads/2021/03/Jak-pisac-i-mowic-o-osobach-LGBT-darmowy-poradnik.pdf'
+            headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
+        -
+            icon: 'b:facebook'
+            url: 'https://www.facebook.com/6kolorowgierwideo/photos/a.101447011804889/257805982835657/'
+            headline: 'Post o dukaizmach w grze Fallout'
+            extra: '– 6 kolorów gier wideo'
+            quote: >
+                Warto w tym miejscu zacytować raport Słownika Neutratywów Języka Polskiego
+                {https://zaimki.pl/blog/spis-2021=Niebinarny Spis Powszechny 2021}
+                ujawnił, że rzeczywiście najczęściej używanymi w mowie formami są binarne:
+                66,4% dla rodzaju żeńskiego i 59,8% dla męskiego:
+                “53,6% osób używa wyłącznie form binarnych. Raptem 8,4% – wyłącznie form niebinarnych.
+                38,9% osób używa zamienne form męskich i żeńskich”.
     socials:
         -
             icon: 'twitter'
