@@ -171,7 +171,7 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
         FROM reports
         LEFT JOIN users sus ON reports.userId = sus.id
         LEFT JOIN users reporter ON reports.reporterId = reporter.id
-        ORDER BY reports.isHandled ASC, reports.id ASC
+        ORDER BY reports.isHandled ASC, reports.id DESC
     `));
 }));
 
