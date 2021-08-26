@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
-            <h2 class="text-nowrap">
+            <h2 class="text-nowrap mw-50">
                 <Avatar :user="user"/>
                 @{{user.username}}
             </h2>
@@ -194,5 +194,9 @@
         width: 100%;
         max-width: 5rem;
         max-height: 5rem;
+    }
+
+    .mw-50 {
+        min-width: 50%;
     }
 </style>
