@@ -917,15 +917,12 @@ contact:
         Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
-        description:
-            - >
-                Inicjatywy zaimki.pl / {https://pronouns.page=pronouns.page}
-                oraz {https://facebook.com/neutratywy=Słownik Neutratywów Języka Polskiego}
-                są tworzone przez kolektyw „Rada Języka Neutralnego”
-            - >
-                → {/blog/skąd-nazwa-kolektywu=Skąd nazwa?}
-            - >
-                → Logo: {https://zaimki.pl/img/logo-full.png=PNG}, {https://zaimki.pl/img/logo-full.svg=SVG}
+        description: >
+            Jesteśmy kolektywem queerowym zajmującym się
+            zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.
+            Wspieramy również działania na rzecz równości i sprawiedliwości społecznej.
+        extra:
+            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa?}'
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'

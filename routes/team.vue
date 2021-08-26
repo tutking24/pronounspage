@@ -16,11 +16,26 @@
                     =
                     <Icon v="collective-logo.svg" class="invertible"/>
                 </p>
+                <div class="btn-group w-100 mt-3">
+                    <a href="/img-local/logo/logo-full.png" class="btn btn-outline-primary btn-sm" download>
+                        <Icon v="cloud-download"/>
+                        PNG
+                    </a>
+                    <a href="/img-local/logo/logo-full.svg" class="btn btn-outline-primary btn-sm" download>
+                        <Icon v="cloud-download"/>
+                        SVG
+                    </a>
+                </div>
             </figcaption>
         </figure>
 
         <section>
-            <T>contact.team.description</T>
+            <p><T>contact.team.description</T></p>
+            <ul v-if="$te('contact.team.extra')">
+                <li v-for="item in $t('contact.team.extra')">
+                    <LinkedText :text="item"/>
+                </li>
+            </ul>
         </section>
 
         <Mission/>
