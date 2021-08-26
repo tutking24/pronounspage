@@ -942,6 +942,32 @@ contact:
                 - >
                     Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
                     musimy podzielić się naszym formalnym wykształceniem. Oto zatem (niepełna) lista:
+        join:
+            header: 'Dołącz do nas!'
+            encouragement: >
+                Zależy Ci na rozwoju języka niebinarnego i neutralnego płciowo?
+                Bliska jest Ci działalność naszego kolektywu i chcesz nam w niej pomóc? Super!
+                Dodatkowe ręce do pracy są bardzo mile widziane!
+            areasIntro: 'Obszary, w których możesz pomóc, to na przykład:'
+            areas:
+                - 'uzupełnianie i moderowanie słowników,'
+                - 'uzupełnianie i moderowanie korpusu,'
+                - 'tworzenie grafik i postów na social media,'
+                - 'odpowiadanie na wiadomości,'
+                - 'moderacja wizytówek,'
+                - 'tłumaczenie,'
+                - 'koordynacja tworzenia nowych wersji językowych,'
+                - 'teksty na bloga,'
+                - 'programowanie,'
+                - '…'
+            allies: 'Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne nie, dlatego zapraszamy do współpracy również binarne osoby sojusznicze.'
+            how: 'Jak dołączyć? Przyślij nam maila na {mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}, a w nim:'
+            application:
+                - 'przedstaw się,'
+                - 'podlinkuj do swojego profilu na portalu zaimki.pl,'
+                - 'podlinkuj do swoich mediów społecznościowych,'
+                - 'napisz, czy masz jakieś doświadczenie aktywistyczne,'
+                - 'napisz, czym chciałxbyś się zajmować w kolektywie.'
 
 support:
     header: 'Wsparcie'
