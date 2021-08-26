@@ -27,7 +27,7 @@ Yup, she calls it “torture” when someone… asks her a question. And not a d
 She's not being asked what her genitals are. She's not being asked her gender identity.
 Someone's literally just trying to establish the basis for the conversation by knowing how to talk to / about her.
 And the answer is literally two syllables!
-Yes, that question _might_ be tricky sometimes,
+Yes, that question _might_ be tricky _sometimes_,
 but she's not a closeted trans person who could feel anxious trying to decide if the situation is safe enough
 to give someone their real pronouns. No. She's just a brat. A snowflake.
 
