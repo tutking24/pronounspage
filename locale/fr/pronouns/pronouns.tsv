@@ -1,18 +1,16 @@
-key	description	normative	pronoun_subject	pronoun_stressed	pronoun_object_direct	pronoun_object_indirect	possessive_determiner	possessive_pronoun	reflexive	complement	plural	pluralHonorific	pronounceable	history
-il	Normatif, masculin	TRUE	il	lui	le	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	lui-même	FALSE	FALSE	TRUE
-elle	Normatif, féminin	TRUE	elle	elle	la	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	elle-même	FALSE	FALSE	TRUE
-ils	Pluriel, masculin	TRUE	ils	eux	les	leur	leur, leurs	le leur, la leur, les leurs	se	eux-mêmes	TRUE	TRUE	TRUE
-elles	Pluriel, féminin	TRUE	elles	elles	les	leur	leur, leurs	le leur, la leur, les leurs	se	elles-mêmes	TRUE	TRUE	TRUE
-on	Normatif, indéfini	TRUE	on	soi			son, sa, ses	le sien, la sienne, les siens, les siennes	se	soi-même	FALSE	FALSE	TRUE
-al	Neopronom «al»	FALSE	al	al/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	al-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-ael	Neopronom «ael»	FALSE	ael	ael/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ael-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-el	Neopronom «el»	FALSE	el	el/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	el-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-em	Neopronom «em»	FALSE	em	em/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	em-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Proche à «elle»
-iel	Neopronom «iel»	FALSE	iel	iel/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	iel-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Mélange de «il» et «elle»
-ielle	Neopronom «ielle»	FALSE	ielle	ielle/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ielle-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-ille	Neopronom «ille»	FALSE	ille	ille/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ille-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-im	Neopronom «im»	FALSE	im	im/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	im-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Proche à «il»
-ol	Neopronom «ol»	FALSE	ol	ol/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ol-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-ul	Neopronom «ul»	FALSE	ul	ul/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	ul-même/ellui-même/soi-même	FALSE	FALSE	TRUE
-yel	Neopronom «yel»	FALSE	yel	yel/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	yel-même/ellui-même/soi-même	FALSE	FALSE	TRUE	Une orthographe alternative de «iel»
-yelle	Neopronom «yelle»	FALSE	yelle	yelle/ellui/soi	lea/lo	lui	son, sa, ses	le sien, la sienne, les siens, les siennes	se	yelle-même/ellui-même/soi-même	FALSE	FALSE	TRUE
+key	description	normative	pronoun_subject	pronoun_object	pronoun_disjunctive	pronoun_possessive	conjugation_l	conjugation_x	conjugation_e	conjugation_n	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+il	Normatif, masculin	TRUE	il	le	lui	mon	l	x	é	n	FALSE	FALSE	TRUE
+elle	Normatif, féminin	TRUE	elle	la	elle	ma	le	se	e	ne	FALSE	FALSE	TRUE
+on	Normatif, indéfini	TRUE	on	en	soi	man	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+al	Neopronom «al»	FALSE	al	lea	al	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+ael	Neopronom «ael»	FALSE	ael	lea	ael	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+el	Neopronom «el»	FALSE	el	lea	el	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+em	Neopronom «em»	FALSE	em	lea	em	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE	Proche à «elle»
+iel	Neopronom «iel»	FALSE	iel	lea	ellui	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE	Mélange de «il» et «elle»
+ielle	Neopronom «ielle»	FALSE	ielle	lea	ielle	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+ille	Neopronom «ille»	FALSE	ille	lea	ille	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+im	Neopronom «im»	FALSE	im	lea	im	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE	Proche à «il»
+ol	Neopronom «ol»	FALSE	ol	lo	ol	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+ul	Neopronom «ul»	FALSE	ul	lu	ul	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
+yel	Neopronom «yel»	FALSE	yel	lea	yel	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE	Une orthographe alternative de «iel»
+yelle	Neopronom «yelle»	FALSE	yelle	lea	yelle	mo	l·le	x·se	é·e	n·e	FALSE	FALSE	TRUE
