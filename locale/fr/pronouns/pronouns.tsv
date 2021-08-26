@@ -1,6 +1,6 @@
 key	description	normative	pronoun_subject	pronoun_object	pronoun_disjunctive	pronoun_possessive	inflection_l	inflection_x	inflection_e	inflection_n	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
 il,il/le	Normatif, masculin	TRUE	il	le	lui	mon	l	x	é	n	FALSE	FALSE	TRUE
-elle,elle/la	Normatif, féminin	TRUE	elle	la	elle	ma	lle	se	e	ne	FALSE	FALSE	TRUE
+elle,elle/la	Normatif, féminin	TRUE	elle	la	elle	ma	lle	se	ée	ne	FALSE	FALSE	TRUE
 on,on/en	Normatif, indéfini	TRUE	on	en	soi	man	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
 al,al/lea	Neopronom «al»	FALSE	al	lea	al	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
 ael,ael/lea	Neopronom «ael»	FALSE	ael	lea	ael	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
