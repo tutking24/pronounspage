@@ -2,15 +2,15 @@ key	description	normative	pronoun_subject	pronoun_object	pronoun_disjunctive	pro
 il,il/le	Normatif, masculin	TRUE	il	le	lui	mon	l	x	é	n	FALSE	FALSE	TRUE
 elle,elle/la	Normatif, féminin	TRUE	elle	la	elle	ma	lle	se	ée	ne	FALSE	FALSE	TRUE
 on,on/en	Normatif, indéfini	TRUE	on	en	soi	man	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-al,al/lea	Neopronom «al»	FALSE	al	lea	al	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-ael,ael/lea	Neopronom «ael»	FALSE	ael	lea	ael	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-el,el/lea	Neopronom «el»	FALSE	el	lea	el	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-em,em/lea	Neopronom «em»	FALSE	em	lea	em	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Proche à «elle»
-iel,iel/lea	Neopronom «iel»	FALSE	iel	lea	ellui	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Mélange de «il» et «elle»
-ielle,ielle/lea	Neopronom «ielle»	FALSE	ielle	lea	ielle	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-ille,ille/lea	Neopronom «ille»	FALSE	ille	lea	ille	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-im,im/lea	Neopronom «im»	FALSE	im	lea	im	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Proche à «il»
-ol,ol/lo	Neopronom «ol»	FALSE	ol	lo	ol	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-ul,ul/lu	Neopronom «ul»	FALSE	ul	lu	ul	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
-yel,yel/lea	Neopronom «yel»	FALSE	yel	lea	yel	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Une orthographe alternative de «iel»
-yelle,yell/lea	Neopronom «yelle»	FALSE	yelle	lea	yelle	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+al,al/lea	Neopronom « al »	FALSE	al	lea	al	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+ael,ael/lea	Neopronom « ael »	FALSE	ael	lea	ael	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+el,el/lea	Neopronom « el »	FALSE	el	lea	el	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+em,em/lea	Neopronom « em »	FALSE	em	lea	em	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Proche à « elle »
+iel,iel/lea	Neopronom « iel »	FALSE	iel	lea	ellui	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Mélange de « il » et «elle»
+ielle,ielle/lea	Neopronom « ielle »	FALSE	ielle	lea	ielle	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+ille,ille/lea	Neopronom « ille »	FALSE	ille	lea	ille	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+im,im/lea	Neopronom « im »	FALSE	im	lea	im	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Proche à « il »
+ol,ol/lo	Neopronom « ol »	FALSE	ol	lo	ol	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+ul,ul/lu	Neopronom « ul »	FALSE	ul	lu	ul	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
+yel,yel/lea	Neopronom « yel »	FALSE	yel	lea	yel	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE	Une orthographe alternative de « iel »
+yelle,yell/lea	Neopronom « yelle »	FALSE	yelle	lea	yelle	mo	l·le|=llé	x·se	é·e	n·e|=né	FALSE	FALSE	TRUE
