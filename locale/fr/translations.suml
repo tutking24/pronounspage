@@ -572,7 +572,7 @@ flags:
     Asexual: 'Asexue{inflection_l}'
     Autigender: 'Autigenre'
     Bear: 'Bear'
-    Bicurious: 'Bicurieux·se'
+    Bicurious: 'Bicurieu{inflection_x}'
     Bigender: 'Bigenre'
     Biromantic: 'Biromantique'
     Bisexual: 'Bisexue{inflection_l}'
