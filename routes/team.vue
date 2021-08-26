@@ -49,6 +49,23 @@
             </ul>
         </section>
 
+        <section v-if="$te('contact.team.join')">
+            <h3>
+                <Icon v="user-plus"/>
+                <T>contact.team.join.header</T>
+            </h3>
+            <p><T>contact.team.join.encouragement</T></p>
+            <p><T>contact.team.join.areasIntro</T></p>
+            <ul>
+                <li v-for="item in $t('contact.team.join.areas')">{{item}}</li>
+            </ul>
+            <p><T>contact.team.join.allies</T></p>
+            <p><T>contact.team.join.how</T></p>
+            <ul>
+                <li v-for="item in $t('contact.team.join.application')">{{item}}</li>
+            </ul>
+        </section>
+
         <section>
             <h3>
                 <Icon v="user-friends"/>
