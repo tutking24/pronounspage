@@ -354,6 +354,7 @@ contact:
         members: 'Membres actuels'
         blog: 'Blog'
         upcoming: 'Versions en d’autres langues à venir'
+        member: 'Membre du collectif'
 
 support:
     header: 'Soutien'
