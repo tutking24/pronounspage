@@ -456,7 +456,7 @@ share: 'Partager'
 crud:
     approve: 'Approuver'
     hide: 'Cacher'
-    remove: 'Retiret'
+    remove: 'Retirer'
     removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item ?'
     edit: 'Éditer'
     add: 'Ajouter'
