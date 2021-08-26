@@ -50,6 +50,40 @@
                     <label for="footerAreas">Areas responsible for / contributing to:</label>
                     <ListInput v-model="footerAreas"/>
                 </div>
+
+                <template v-if="$te('contact.team.credentials')">
+                    <hr/>
+
+                    <p class="small text-muted mb-0">
+                        This will be displayed on the team page in the "Credentials" section.
+                        You might want to put here your full legal name here, but it's not required
+                        (you can leave this field empty).
+                    </p>
+
+                    <div class="form-group">
+                        <label for="credentials">Credentials:</label>
+                        <ListInput v-model="credentials"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credentials">Credentials level:</label>
+                        <select v-model="credentialsLevel" class="form-select">
+                            <option :value="null"></option>
+                            <option :value="1">Higher education, but irrelevant field</option>
+                            <option :value="2">Bachelor (not completed yet)</option>
+                            <option :value="3">Bachelor</option>
+                            <option :value="4">Master (not completed yet)</option>
+                            <option :value="5">Master</option>
+                            <option :value="6">PhD (not completed yet)</option>
+                            <option :value="7">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credentials">Name for credentials:</label>
+                        <input v-model="credentialsName" class="form-control" placeholder="(not required)"/>
+                    </div>
+                </template>
             </div>
 
             <section>
@@ -211,6 +245,9 @@
                         teamName: profile.teamName,
                         footerName: profile.footerName,
                         footerAreas: profile.footerAreas,
+                        credentials: profile.credentials,
+                        credentialsLevel: profile.credentialsLevel,
+                        credentialsName: profile.credentialsName,
                     };
                 }
             }
@@ -232,6 +269,9 @@
                     teamName: profile.teamName,
                     footerName: profile.footerName,
                     footerAreas: [],
+                    credentials: [],
+                    credentialsLevel: null,
+                    credentialsName: null,
                 };
             }
 
@@ -247,6 +287,9 @@
                 teamName: '',
                 footerName: '',
                 footerAreas: [],
+                credentials: [],
+                credentialsLevel: null,
+                credentialsName: null,
             };
         },
         mounted() {
@@ -271,6 +314,9 @@
                         teamName: this.teamName,
                         footerName: this.footerName,
                         footerAreas: this.footerAreas,
+                        credentials: this.credentials,
+                        credentialsLevel: this.credentialsLevel,
+                        credentialsName: this.credentialsName,
                     });
                     this.$router.push(`/@${this.$user().username}`);
                 } finally {

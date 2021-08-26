@@ -930,6 +930,18 @@ contact:
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'
         upcoming: 'Nadchodzące wersje językowe'
+        credentials:
+            header: 'Kwalifikacje'
+            description:
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu
+                    1) osobami używającymi języka polskiego, 2) osobami niebinarnymi i sojuszniczymi.
+                    Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    musimy podzielić się naszym formalnym wykształceniem. Oto zatem (niepełna) lista:
 
 support:
     header: 'Wsparcie'

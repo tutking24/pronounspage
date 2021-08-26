@@ -25,6 +25,30 @@
 
         <Mission/>
 
+        <section v-if="$te('contact.team.credentials')">
+            <h3>
+                <Icon v="graduation-cap"/>
+                <T>contact.team.credentials.header</T>
+            </h3>
+
+            <T>contact.team.credentials.description</T>
+
+            <ul>
+                <li v-for="credential in credentials">
+                    <strong>{{ credential.credentialsName || credential.teamName }}</strong>
+                    <a :href="`https://pronouns.page/@${credential.username}`" class="badge bg-light text-dark border">
+                        @{{credential.username}}
+                    </a>
+                    <ul>
+                        <li v-for="item in credential.credentials">
+                            <ProfileLink v-if="item.startsWith('https://') || item.startsWith('http://')" :link="item"/>
+                            <LinkedText v-else :text="item"/>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
         <section>
             <h3>
                 <Icon v="user-friends"/>
@@ -75,6 +99,26 @@
             return {
                 membersByLocale: await app.$axios.$get(`/admin/list`),
             }
+        },
+        computed: {
+            credentials() {
+                const r = [];
+                for (let locale in this.membersByLocale) {
+                    if (!this.membersByLocale.hasOwnProperty(locale)) { continue; }
+                    for (let member of this.membersByLocale[locale]) {
+                        if (member.locale === this.config.locale && member.credentials !== null) {
+                            r.push(member);
+                        }
+                    }
+                }
+
+                return r.sort((a, b) => {
+                    if (a.credentialsLevel > b.credentialsLevel) { return -1; }
+                    if (a.credentialsLevel < b.credentialsLevel) { return 1; }
+
+                    return Math.random() > 0.5 ? 1 : -1;
+                });
+            },
         },
     }
 </script>
