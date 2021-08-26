@@ -123,7 +123,7 @@ async function cleanup() {
                 Delete: {
                     Objects: toRemove,
                 }
-            });
+            }).promise();
         }
 
         if (objects.Contents.length < chunkSize) {
