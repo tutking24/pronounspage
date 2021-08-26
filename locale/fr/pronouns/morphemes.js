@@ -3,8 +3,8 @@ export default [
     'pronoun_object',
     'pronoun_disjunctive',
     'pronoun_possessive',
-    'conjugation_l',
-    'conjugation_x',
-    'conjugation_e',
-    'conjugation_n',
+    'inflection_l',
+    'inflection_x',
+    'inflection_e',
+    'inflection_n',
 ];
