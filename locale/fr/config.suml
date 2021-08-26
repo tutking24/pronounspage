@@ -25,9 +25,13 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
+        FR:
+            language: 'fr-FR'
+            voice: 'Lea'
+            engine: 'standard'
+        CA:
+            language: 'fr-CA'
+            voice: 'Gabrielle'
             engine: 'neural'
 
 sources:
