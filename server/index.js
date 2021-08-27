@@ -7,6 +7,7 @@ import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
 import {isGranted} from "../src/helpers";
+import cookieSettings from "../src/cookieSettings";
 
 global.config = loadSuml('config');
 
@@ -25,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({
     secret: process.env.SECRET,
-    cookie: {},
+    cookie: cookieSettings,
     resave: false,
     saveUninitialized: false,
 }));
