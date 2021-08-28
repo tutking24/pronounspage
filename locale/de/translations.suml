@@ -165,19 +165,19 @@ nouns:
 
     image: 'Bild'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Wörterbuch von Queerer Terminologie'
-        info:
-            - >
-                Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
-                funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
-                Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
-        term: 'Begriff'
-        original: 'Etymologie'
-        category: 'Kategorie'
-        images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
-        definition: 'Definition'
+terms:
+    header: 'Terminologie'
+    headerLong: 'Wörterbuch von Queerer Terminologie'
+    info:
+        - >
+            Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
+            funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
+            Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
+    term: 'Begriff'
+    original: 'Etymologie'
+    category: 'Kategorie'
+    images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
+    definition: 'Definition'
 
 faq:
     header: 'FAQ'
