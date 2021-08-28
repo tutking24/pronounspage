@@ -1,23 +1,23 @@
 key	description	normative	definite_article	pronoun	inflection	de_pronoun	indefinite_article	plural_pronoun	de_plural	plural_definite_article	plural_indefinite_article	inflection_c	possessive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
 ele,ele/dele,o/ele/o	Masculino	TRUE	o	ele	o	dele	um	eles	deles	os	uns	co	meu	FALSE	FALSE	TRUE
 ela,ela/dela,a/ela/a	Feminino	TRUE	a	ela	a	dela	uma	elas	delas	as	umas	ca	minha	FALSE	FALSE	TRUE
-elu,elu/delu,ê/elu/e	Neutro	FALSE	ê	elu	e|=ê	delu	ume	elus	delus	ês	umes	que	mi	FALSE	FALSE	TRUE	Desenvolvimento do sistema “ilu” para se aproximar mais de “ele/ela”.
-ilu,ilu/dilu,ê/ilu/e	Neutro	FALSE	ê	ilu	e|=ê	dilu	ume	ilus	dilus	ês	umes	que	mi	FALSE	FALSE	TRUE	Pronome neutro do latim que é “illud”.
-ile,ile/dile,ê/ile/e	Neutro	FALSE	ê	ile	e|=ê	dile	ume	iles	diles	ês	umes	que	mi	FALSE	FALSE	TRUE
+elu,elu/delu,ê/elu/e	Neutro	FALSE	ê	elu	e|=è	delu	ume	elus	delus	ês	umes	que	mi	FALSE	FALSE	TRUE	Desenvolvimento do sistema “ilu” para se aproximar mais de “ele/ela”.
+ilu,ilu/dilu,ê/ilu/e	Neutro	FALSE	ê	ilu	e|=è	dilu	ume	ilus	dilus	ês	umes	que	mi	FALSE	FALSE	TRUE	Pronome neutro do latim que é “illud”.
+ile,ile/dile,ê/ile/e	Neutro	FALSE	ê	ile	e|=è	dile	ume	iles	diles	ês	umes	que	mi	FALSE	FALSE	TRUE
 elx,elx/delx,x/elx/x	Pronome gráfico com x	FALSE	x	elx	x	delx	umx	elxs	delxs	xs	umxs	cx	mx	FALSE	FALSE	FALSE
 el*,el*/del*,*/el*/*	Pronome gráfico com *	FALSE	*	el*	*	del*	um*	el*s	del*s	*s	um*s	c*	m*	FALSE	FALSE	FALSE
-el,el/del,ê/el/e	Neutro	FALSE	ê	el	e|=ê	del	ume	els	dels	ês	umes	que	mi	FALSE	FALSE	TRUE	Deleção da vogal marcadora de gênero.
+el,el/del,ê/el/e	Neutro	FALSE	ê	el	e|=è	del	ume	els	dels	ês	umes	que	mi	FALSE	FALSE	TRUE	Deleção da vogal marcadora de gênero.
 el@,el@/del@,@/el@/@	Pronome gráfico com @	FALSE	@	el@	@	del@	um@	el@s	del@s	@s	um@s	c@	m@	FALSE	FALSE	FALSE
 el_,el_/del_,_/el_/_	Pronome gráfico com _	FALSE	_	el_	_	del_	um_	el_s	del_s	_s	um_s	c_	m_	FALSE	FALSE	FALSE
 ili,ili/dili,i/ili/i	Neutro	FALSE	i	ili	i	dili	uni	ilis	dilis	is	unis	qui	mi	FALSE	FALSE	TRUE
 el',el’/del','/el’/'	Pronome gráfico com '	FALSE	'	el'	'	del'	um'	el's	del's	_'s	um's	c'	m'	FALSE	FALSE	FALSE
-ily,ily/dily,ê/ily/e	Neutro	FALSE	ê	ily	e|=ê	dily	uny	ilys	delys	ys	unys	que	mi	FALSE	FALSE	TRUE
-éli,éli/déli,ê/éli/e	Neutro	FALSE	ê	éli	e|=ê	déli	ume	élis	délis	is	umés	que	mi	FALSE	FALSE	TRUE
-ael,ael/dael,ae/ael/e	Neutro	FALSE	ae	ael	e|=ê	dael	umae	aels	daels	aes	umaes	que	mi	FALSE	FALSE	TRUE
-elae,elae/delae,ae/elae/e	Neutro	FALSE	ae	elae	e|=ê	delae	umae	elaes	delaes	aes	umaes	que	mi	FALSE	FALSE	TRUE
-eld,eld/deld,d/eld/e	Pronome gráfico	FALSE	d	eld	e|=ê	deld	und	elds	delds	ds	umds	que	mi	FALSE	FALSE	FALSE
-elé,elé/delé,ê/elé/e	Neutro	FALSE	ê	elé	e|=ê	delé	umé	elés	delés	ês	umes	que	mi	FALSE	FALSE	TRUE
+ily,ily/dily,ê/ily/e	Neutro	FALSE	ê	ily	e|=è	dily	uny	ilys	delys	ys	unys	que	mi	FALSE	FALSE	TRUE
+éli,éli/déli,ê/éli/e	Neutro	FALSE	ê	éli	e|=è	déli	ume	élis	délis	is	umés	que	mi	FALSE	FALSE	TRUE
+ael,ael/dael,ae/ael/e	Neutro	FALSE	ae	ael	e|=è	dael	umae	aels	daels	aes	umaes	que	mi	FALSE	FALSE	TRUE
+elae,elae/delae,ae/elae/e	Neutro	FALSE	ae	elae	e|=è	delae	umae	elaes	delaes	aes	umaes	que	mi	FALSE	FALSE	TRUE
+eld,eld/deld,d/eld/e	Pronome gráfico	FALSE	d	eld	e|=è	deld	und	elds	delds	ds	umds	que	mi	FALSE	FALSE	FALSE
+elé,elé/delé,ê/elé/e	Neutro	FALSE	ê	elé	e|=è	delé	umé	elés	delés	ês	umes	que	mi	FALSE	FALSE	TRUE
 ilo,ilo/dilo,i/ilo/i	Neutro	FALSE	i	ilo	i	dilo	uni	ilos	dilos	is	unis	que	mi	FALSE	FALSE	TRUE
-êlu,êlu/dêlu,ê/êlu/e	Neutro	FALSE	ê	êlu	e|=ê	dêlu	ume	êlus	dêlus	ês	umes	que	mi	FALSE	FALSE	TRUE
+êlu,êlu/dêlu,ê/êlu/e	Neutro	FALSE	ê	êlu	e|=è	dêlu	ume	êlus	dêlus	ês	umes	que	mi	FALSE	FALSE	TRUE
 yn,yn/dyn,y/yn/y	Neutro	FALSE	y	yn	y	dyn	uni	yns	dyns	ys	unys	que	mi	FALSE	FALSE	TRUE
 ale,ale/dale,y/ale/y	Neutro	FALSE	y	ale	y	dale	ume	ales	dales	ys	umes	quy	my	FALSE	FALSE	TRUE
