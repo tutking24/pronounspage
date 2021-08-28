@@ -30,6 +30,7 @@
                     pronouns.page/@{{user.username}}
                 </a>
             </div>
+            <!--
             <div v-if="($user() && $user().username === profile.username) || $isGranted('users')">
                 <small>
                     <Icon v="id-card"/>
@@ -49,6 +50,7 @@
                 </template>
                 <small v-else><T>profile.card.generating</T></small>
             </div>
+            -->
         </Profile>
 
         <Ban :user="user"/>

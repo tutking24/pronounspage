@@ -47,7 +47,7 @@
         </section>
 
         <section class="row">
-            <div v-if="Object.keys(profile.names).length" class="col-6 col-lg-4">
+            <div v-if="Object.keys(profile.names).length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="signature"/>
                     <T>profile.names</T>
@@ -57,7 +57,7 @@
                     <li v-for="(opinion, name) in profile.names"><Opinion :word="name" :opinion="opinion"/></li>
                 </ul>
             </div>
-            <div v-if="Object.keys(profile.pronouns).length" class="col-6 col-lg-4">
+            <div v-if="Object.keys(profile.pronouns).length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
@@ -69,7 +69,7 @@
                     </li>
                 </ul>
             </div>
-            <div v-if="profile.links.length" class="col-12 col-lg-4">
+            <div v-if="profile.links.length" :class="['col-12', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="link"/>
                     <T>profile.links</T>
@@ -83,14 +83,14 @@
             </div>
         </section>
 
-        <section class="clearfix">
+        <section class="clearfix" v-if="Object.values(profile.words).map(w => Object.keys(w).length).reduce((a, b) => a + b, 0) > 0">
             <h3>
                 <Icon v="scroll-old"/>
                 <T>profile.words</T>
             </h3>
 
             <div class="row">
-                <div v-for="group in profile.words" v-if="Object.keys(profile.words).length" class="col-6 col-lg-3">
+                <div v-for="group in profile.words" v-if="Object.keys(group).length" class="col-6 col-lg-3">
                     <ul class="list-unstyled">
                         <li v-for="(opinion, word) in group"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>
@@ -185,6 +185,13 @@
             hasDescriptionColumn() {
                 return this.profile.age || this.profile.description.trim().length || this.profile.team;
             },
+            mainRowCount() {
+                let c = 0;
+                if (Object.keys(this.profile.names).length) { c++; }
+                if (Object.keys(this.profile.pronouns).length) { c++; }
+                if (this.profile.links.length) { c++; }
+                return c;
+            }
         },
     };
 </script>
