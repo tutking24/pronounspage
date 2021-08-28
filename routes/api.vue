@@ -68,16 +68,16 @@
                         nouns_search: ['GET', '/api/nouns/search/{term}'],
                     },
                 }, {
-                    enabled: this.config.nouns.inclusive.enabled,
-                    header: 'nouns.inclusive.header',
+                    enabled: this.config.inclusive.enabled,
+                    header: 'inclusive.header',
                     icon: 'book-heart',
                     endpoints: {
                         inclusive_all: ['GET', '/api/inclusive'],
                         inclusive_search: ['GET', '/api/inclusive/search/{term}'],
                     },
                 }, {
-                    enabled: this.config.nouns.terms.enabled,
-                    header: 'nouns.terms.header',
+                    enabled: this.config.terminology.enabled,
+                    header: 'terminology.header',
                     icon: 'flag',
                     endpoints: {
                         terms_all: ['GET', '/api/terms'],

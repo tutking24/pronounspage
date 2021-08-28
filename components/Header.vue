@@ -160,11 +160,11 @@
                     for (let subroute of this.config.nouns.subroutes || []) {
                         extras.push(`/${this.config.nouns.route}/${subroute}`);
                     }
-                    if (this.config.nouns.inclusive.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.inclusive.route}`);
+                    if (this.config.inclusive.enabled) {
+                        extras.push(`/${this.config.nouns.route}/${this.config.inclusive.route}`);
                     }
-                    if (this.config.nouns.terms.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.terms.route}`);
+                    if (this.config.terminology.enabled) {
+                        extras.push(`/${this.config.nouns.route}/${this.config.terminology.route}`);
                     }
 
                     links.push({

@@ -74,6 +74,7 @@ sources:
 nouns:
     enabled: true
     route: 'slowniki'
+    routeMain: 'neutratywy'
     collapsable: false
     plurals: true
     pluralsRequired: true
@@ -85,25 +86,27 @@ nouns:
         - 'dukatywy'
         - 'osobatywy'
         - 'iksatywy'
-    inclusive:
-        enabled: true
-        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
-        route: 'inkluzywny'
-    terms:
-        enabled: true
-        published: true
-        categories:
-            - 'orientacja seksualna'
-            - 'orientacja romantyczna'
-            - 'orientacja tertiarna'
-            - 'płeć'
-            - 'ekspresja płciowa'
-            - 'model relacji'
-            - 'język'
-            - 'pociąg'
-            - 'polityka'
-            - 'uprzedzenia'
-        route: 'terminologia'
+
+inclusive:
+    enabled: true
+    categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
+    route: 'inkluzywny'
+
+terminology:
+    enabled: true
+    published: true
+    categories:
+        - 'orientacja seksualna'
+        - 'orientacja romantyczna'
+        - 'orientacja tertiarna'
+        - 'płeć'
+        - 'ekspresja płciowa'
+        - 'model relacji'
+        - 'język'
+        - 'pociąg'
+        - 'polityka'
+        - 'uprzedzenia'
+    route: 'terminologia'
 
 names:
     enabled: false

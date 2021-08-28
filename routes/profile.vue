@@ -105,7 +105,7 @@
             };
         },
         async mounted() {
-            if (this.config.nouns.terms.enabled) {
+            if (this.config.terminology.enabled) {
                 this.terms = await this.$axios.$get(`/terms`);
             }
         },

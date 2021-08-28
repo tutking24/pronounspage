@@ -167,17 +167,19 @@ nouns:
     plural: 'pluriel'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Dictionnaire des terminologies queer'
-        info:
-            - >
-                Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
-        term: 'Terminologie'
-        original: 'Etymologie'
-        category: 'Catégorie'
-        images: 'Images supplémentaires'
-        definition: 'Définition'
+    image: 'Photo'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Dictionnaire des terminologies queer'
+    info:
+        - >
+            Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
+    term: 'Terminologie'
+    original: 'Etymologie'
+    category: 'Catégorie'
+    images: 'Images supplémentaires'
+    definition: 'Définition'
 
 faq:
     header: 'FAQ'

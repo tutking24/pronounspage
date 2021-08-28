@@ -47,22 +47,24 @@ nouns:
     declension: false
     submit: true
     templates: false
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'orientação sexual'
-            - 'orientação romântica'
-            - 'orientação terciária'
-            - 'gênero'
-            - 'expressão de gênero'
-            - 'modelo de relação'
-            - 'linguagem'
-            - 'atração'
-            - 'política'
-            - 'preconceito'
-        route: 'terminologia'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'orientação sexual'
+        - 'orientação romântica'
+        - 'orientação terciária'
+        - 'gênero'
+        - 'expressão de gênero'
+        - 'modelo de relação'
+        - 'linguagem'
+        - 'atração'
+        - 'política'
+        - 'preconceito'
+    route: 'terminologia'
 
 names:
     enabled: false

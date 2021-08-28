@@ -171,12 +171,6 @@ form[disabled] {
     list-style: none;
     li {
         white-space: nowrap;
-        a:not([href='#']) {
-            display: none;
-        }
-        &:hover a:not([href='#']) {
-            display: inline;
-        }
     }
     >li:before {
         content: "⋅";
@@ -190,12 +184,6 @@ form[disabled] {
     list-style: none;
     li {
         white-space: nowrap;
-        a:not([href='#']) {
-            display: none;
-        }
-        &:hover a:not([href='#']) {
-            display: inline;
-        }
     }
     >li:before {
         content: "⁖";

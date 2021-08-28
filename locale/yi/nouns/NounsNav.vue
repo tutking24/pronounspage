@@ -26,12 +26,12 @@
                 {name: 'nouns', icon: 'book', route: ''},
             ];
 
-            if (this.config.nouns.inclusive.enabled) {
-                links.push({name: 'inclusive', icon: 'book-heart', route: this.config.nouns.inclusive.route});
+            if (this.config.inclusive.enabled) {
+                links.push({name: 'inclusive', icon: 'book-heart', route: this.config.inclusive.route});
             }
 
-            if (this.config.nouns.terms.enabled) {
-                links.push({name: 'terms', icon: 'flag', route: this.config.nouns.terms.route});
+            if (this.config.terminology.enabled) {
+                links.push({name: 'terms', icon: 'flag', route: this.config.terminology.route});
             }
 
             return {

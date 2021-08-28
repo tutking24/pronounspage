@@ -169,17 +169,19 @@ nouns:
     plural: 'flertall.'
     pluralShort: 'fl.'
 
-    terms:
-        header: 'Terminologi'
-        headerLong: 'Ordbok av queer terminologi'
-        info:
-            - >
-                En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
-        term: 'Begrep'
-        original: 'Etymologi'
-        category: 'Kategori'
-        images: 'Ekstra bilder, fra utsiden av flagg katalogen'
-        definition: 'Definisjon'
+    image: 'Bilde'
+
+terminology:
+    header: 'Terminologi'
+    headerLong: 'Ordbok av queer terminologi'
+    info:
+        - >
+            En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
+    term: 'Begrep'
+    original: 'Etymologi'
+    category: 'Kategori'
+    images: 'Ekstra bilder, fra utsiden av flagg katalogen'
+    definition: 'Definisjon'
 
 faq:
     header: 'Spørsmål'
