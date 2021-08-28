@@ -188,14 +188,15 @@ export default {
             if (config.nouns.enabled) {
                 routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
                 for (let subroute of config.nouns.subroutes || []) {
-                    routes.push({ path: `/${config.nouns.route}/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
+                    routes.push({ path: `/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
                 }
-                if (config.inclusive.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
-                }
-                if (config.terminology.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
-                }
+            }
+
+            if (config.inclusive.enabled) {
+                routes.push({path: `/${config.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
+            }
+            if (config.terminology.enabled) {
+                routes.push({path: `/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
             }
 
             if (config.names.enabled) {
