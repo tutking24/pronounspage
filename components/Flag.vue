@@ -1,6 +1,6 @@
 <template>
     <span class="flag-wrapper">
-        <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}#${link.toLowerCase()}`" :title="alt">
+        <a v-if="link" :href="`/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
             <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup>
         </a>
@@ -29,7 +29,7 @@
         },
         computed: {
             link() {
-                if (!this.config.nouns.terms.enabled || !(this.config.nouns.terms.published || this.$isGranted('terms'))) {
+                if (!this.config.terminology.enabled || !(this.config.terminology.published || this.$isGranted('terms'))) {
                     return null;
                 }
 

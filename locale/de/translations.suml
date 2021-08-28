@@ -163,6 +163,8 @@ nouns:
     plural: 'Plural'
     pluralShort: 'Pl.'
 
+    image: 'Bild'
+
     terms:
         header: 'Terminologie'
         headerLong: 'Wörterbuch von Queerer Terminologie'

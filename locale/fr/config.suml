@@ -50,22 +50,24 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'orientation sexuelle'
-            - 'orientation romantique'
-            - 'orientation tertiaire'
-            - 'genre'
-            - 'expression du genre'
-            - 'modèle de relation'
-            - 'langage'
-            - 'attirance'
-            - 'politique'
-            - 'préjugé'
-        route: 'terminologie'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'orientation sexuelle'
+        - 'orientation romantique'
+        - 'orientation tertiaire'
+        - 'genre'
+        - 'expression du genre'
+        - 'modèle de relation'
+        - 'langage'
+        - 'attirance'
+        - 'politique'
+        - 'préjugé'
+    route: 'terminologie'
 
 names:
     enabled: false

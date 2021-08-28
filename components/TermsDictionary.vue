@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
-                <button v-for="category in config.nouns.terms.categories"
+                <button v-for="category in config.terminology.categories"
                     :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                     @click="filter = filter === ':' + category ? '' : ':' + category"
                 >
@@ -212,7 +212,7 @@
         },
         watch: {
             filter() {
-                this.setHash(this.config.nouns.terms.hashNamespace || '', this.filter);
+                this.setHash(this.config.terminology.hashNamespace || '', this.filter);
                 if (this.$refs.dictionarytable) {
                     this.$refs.dictionarytable.reset();
                     this.$refs.dictionarytable.focus();

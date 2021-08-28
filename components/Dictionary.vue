@@ -45,13 +45,11 @@
                     <ul class="list-singular">
                         <li v-for="w in s.el.masc">
                             {{ w }}
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.mascPl">
                             <Spelling :text="w"/>
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
 
@@ -73,13 +71,11 @@
                     <ul class="list-singular">
                         <li v-for="w in s.el.fem">
                             <Spelling :text="w"/>
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.femPl">
                             <Spelling :text="w"/>
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
 
@@ -102,14 +98,12 @@
                         <li v-for="w in s.el.neutr">
                             <Declension v-if="config.nouns.declension" :word="w" tooltip/>
                             <template v-else><Spelling :text="w"/></template>
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
                     <ul v-if="config.nouns.plurals" class="list-plural">
                         <li v-for="w in s.el.neutrPl">
                             <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr" tooltip/>
                             <template v-else><Spelling :text="w"/></template>
-                            <a :href="`/api/nouns/${w}.png`" target="_blank" rel="noopener"><Icon v="image"/></a>
                         </li>
                     </ul>
 
@@ -171,6 +165,16 @@
                                     <T v-else>nouns.edit</T>
                                 </span>
                             </button>
+                        </li>
+                        <li>
+                            <a :href="`/api/nouns/${s.el.id}.png`" target="_blank" rel="noopener"
+                               class="btn btn-concise btn-outline-primary btn-sm m-1"
+                            >
+                                <Icon v="image"/>
+                                <span class="btn-label">
+                                    <T>nouns.image</T>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </td>

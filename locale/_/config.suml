@@ -10,10 +10,12 @@ sources:
 
 nouns:
     enabled: false
-    inclusive:
-        enabled: false
-    terms:
-        enabled: false
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: false
 
 names:
     enabled: false

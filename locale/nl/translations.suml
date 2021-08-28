@@ -167,6 +167,8 @@ nouns:
     plural: 'meervoud'
     pluralShort: 'meerv.'
 
+    image: 'Beeld'
+
 faq:
     header: 'FAQ'
     headerLong: 'Veelgestelde vragen'
@@ -261,7 +263,7 @@ faq:
                     Als je cis bent (=niet trans) en je gebruikt „{/he=he}” or „{/she=she}”, dan zou je kunnen
                     denken dat jouw voornaamwoorden <em>vanzelfsprekend</em>. zijn.
                     And misschien is dat wel zo - zolang als jouw naam op jouw profiel staat (en traditioneel als mannelijk of vrouwelijk wordt gezien)
-                    en jouw avatar is ingesteld op jouw foto. 
+                    en jouw avatar is ingesteld op jouw foto.
                     Voor velen is dat niet zo en is het daarom moeilijk om te raden hoe ze willen worden aangesproken.
                 - >
                     Maar het is vooral vanwege het volgende: jouw voornaamwoorden kunnen dan wel ''vanzelfsprekend'' zijn,
@@ -272,7 +274,7 @@ faq:
                 - >
                     Het is erg belangrijk voor trans, non-binaire and gender non-conforme personen om onze voornaamwoorden te delen.
                     Tegelijkertijd maakt het ons ook kwetsbaar.
-                    Maar als cis personen dit ook doen, dan kan dat een wereld van verschil betekenen. 
+                    Maar als cis personen dit ook doen, dan kan dat een wereld van verschil betekenen.
                     Het maakt ons comfortabeler, veilig en maakt dat we ons welkom voelen.
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
         change:
@@ -291,7 +293,7 @@ faq:
 
                 - >
                     Voornaamwoorden ≠ gender
-                    Jouw gender zal niet radicaal veranderen puur omdat je een keertje in de war raakte omdat iemand jou ''hen'' noemde. 
+                    Jouw gender zal niet radicaal veranderen puur omdat je een keertje in de war raakte omdat iemand jou ''hen'' noemde.
                     Maak je geen zorgen. Experiment. Kijk wat het beste bij jou past.
         preferred-pronouns:
             question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'

@@ -207,17 +207,19 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminology'
-        headerLong: 'Dictionary of queer terminology'
-        info:
-            - >
-                A dictionary of terms related to the LGBTQ+ community.
-        term: 'Term'
-        original: 'Etymology'
-        category: 'Category'
-        images: 'Additional images, from outside the flag catalogue'
-        definition: 'Definition'
+    image: 'Picture'
+
+terminology:
+    header: 'Terminology'
+    headerLong: 'Dictionary of queer terminology'
+    info:
+        - >
+            A dictionary of terms related to the LGBTQ+ community.
+    term: 'Term'
+    original: 'Etymology'
+    category: 'Category'
+    images: 'Additional images, from outside the flag catalogue'
+    definition: 'Definition'
 
 faq:
     header: 'FAQ'

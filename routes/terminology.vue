@@ -4,12 +4,12 @@
 
         <h2>
             <Icon v="flag"/>
-            <T>nouns.terms.headerLong</T>
+            <T>terminology.headerLong</T>
         </h2>
 
         <section>
-            <T>nouns.terms.info</T>
-            <Share :title="$t('nouns.terms.headerLong')"/>
+            <T>terminology.info</T>
+            <Share :title="$t('terminology.headerLong')"/>
         </section>
 
         <TermsDictionary load ref="termsdictionary"/>
@@ -26,14 +26,14 @@
 
         mixins: [ hash ],
         mounted() {
-            this.handleHash(this.config.nouns.terms.hashNamespace || '', filter => {
+            this.handleHash(this.config.terminology.hashNamespace || '', filter => {
                 this.$refs.termsdictionary.setFilter(filter);
             });
         },
         head() {
             return head({
-                title: this.$t('nouns.terms.headerLong'),
-                description: this.$t('nouns.terms.info')[0],
+                title: this.$t('terminology.headerLong'),
+                description: this.$t('terminology.info')[0],
             });
         },
     }

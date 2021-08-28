@@ -371,38 +371,40 @@ nouns:
     plural: 'liczba mnoga'
     pluralShort: 'l. mn.'
 
-    inclusive:
-        header: 'Inkluzywność'
-        headerLong: 'Słownik inkluzywnego języka'
-        insteadOf: 'Zamiast'
-        say: 'Lepiej mów'
-        because: 'Ponieważ'
-        info:
-            - >
-                Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
-                Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
-                to nasz język też musi być włączający.
-            - >
-                Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
-                Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
-                jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
-        categories: 'Kategorie'
-        sources: 'Linki źródłowe'
+    image: 'Obrazek'
 
-    terms:
-        header: 'Terminologia'
-        headerLong: 'Słownik terminologii queerowej'
-        info:
-            - >
-                Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
-                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
-                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
-                i jakie proponujemy dla nich polskie tłumaczenia.
-        term: 'Określenie'
-        original: 'Pochodzenie, określenie angielskie'
-        category: 'Kategoria'
-        images: 'Dodatkowe obrazki, spoza katalogu flag'
-        definition: 'Definicja'
+inclusive:
+    header: 'Inkluzywność'
+    headerLong: 'Słownik inkluzywnego języka'
+    insteadOf: 'Zamiast'
+    say: 'Lepiej mów'
+    because: 'Ponieważ'
+    info:
+        - >
+            Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
+            Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
+            to nasz język też musi być włączający.
+        - >
+            Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
+            Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
+            jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
+    categories: 'Kategorie'
+    sources: 'Linki źródłowe'
+
+terminology:
+    header: 'Terminologia'
+    headerLong: 'Słownik terminologii queerowej'
+    info:
+        - >
+            Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+            funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+            Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+            i jakie proponujemy dla nich polskie tłumaczenia.
+    term: 'Określenie'
+    original: 'Pochodzenie, określenie angielskie'
+    category: 'Kategoria'
+    images: 'Dodatkowe obrazki, spoza katalogu flag'
+    definition: 'Definicja'
 
 names:
     header: 'Imiona'

@@ -153,6 +153,8 @@ nouns:
     plural: '複數'
     pluralShort: '複數'
 
+    image: 'Image' # TODO
+
 faq:
     header: 'FAQ'
     headerLong: 'Frequently asked questions'

@@ -171,20 +171,22 @@ nouns:
     nouns:
         header: 'נײטראַלע סובסטאַנטיװן'
 
-    terms:
-        header: 'טערמינאָלאָגיע'
-        headerLong: 'Słownik terminologii queerowej'
-        info:
-            - >
-                Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
-                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
-                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
-                i jakie proponujemy dla nich polskie tłumaczenia.
-        term: 'Określenie'
-        original: 'Pochodzenie, określenie angielskie'
-        category: 'Kategoria'
-        images: 'Dodatkowe obrazki, spoza katalogu flag'
-        definition: 'Definicja'
+    image: 'Image'
+
+terminology:
+    header: 'טערמינאָלאָגיע'
+    headerLong: 'Słownik terminologii queerowej'
+    info:
+        - >
+            Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+            funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+            Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+            i jakie proponujemy dla nich polskie tłumaczenia.
+    term: 'Określenie'
+    original: 'Pochodzenie, określenie angielskie'
+    category: 'Kategoria'
+    images: 'Dodatkowe obrazki, spoza katalogu flag'
+    definition: 'Definicja'
 
 faq:
     header: 'פֿראַגעס'

@@ -5,7 +5,7 @@
                          :to="buildRoute(route)"
                          :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
-                <T>nouns.{{name}}.header</T>
+                <T>{{name}}</T>
             </router-link>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2 w-100">
@@ -13,7 +13,7 @@
                          :to="buildRoute(route)"
                          :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
-                <T>nouns.{{name}}.header</T>
+                <T>{{name}}</T>
             </router-link>
         </div>
     </section>
@@ -23,18 +23,18 @@
     export default {
         data() {
             const links = [
-                {name: 'neuterNouns', icon: 'deer', route: 'neutratywy'},
-                {name: 'dukajNouns', icon: 'ghost', route: 'dukatywy'},
-                {name: 'personNouns', icon: 'user-friends', route: 'osobatywy'},
-                {name: 'xNouns', icon: 'comment-times', route: 'iksatywy'},
+                {name: 'nouns.neuterNouns.header', icon: 'deer', route: 'neutratywy'},
+                {name: 'nouns.dukajNouns.header', icon: 'ghost', route: 'dukatywy'},
+                {name: 'nouns.personNouns.header', icon: 'user-friends', route: 'osobatywy'},
+                {name: 'nouns.xNouns.header', icon: 'comment-times', route: 'iksatywy'},
             ];
 
-            if (this.config.nouns.inclusive.enabled) {
-                links.push({name: 'inclusive', icon: 'book-heart', route: this.config.nouns.inclusive.route});
+            if (this.config.inclusive.enabled) {
+                links.push({name: 'inclusive.header', icon: 'book-heart', route: this.config.inclusive.route});
             }
 
-            if (this.config.nouns.terms.enabled) {
-                links.push({name: 'terms', icon: 'flag', route: this.config.nouns.terms.route});
+            if (this.config.terminology.enabled) {
+                links.push({name: 'terminology.header', icon: 'flag', route: this.config.terminology.route});
             }
 
             return {
