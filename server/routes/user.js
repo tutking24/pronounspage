@@ -414,7 +414,7 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     }
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
 
-    return res.cookie('token', token).redirect('/' + config.user.route);
+    return res.cookie('token', token, cookieSettings).redirect('/' + config.user.route);
 }));
 
 router.get('/user/social-connections', handleErrorAsync(async (req, res) => {
