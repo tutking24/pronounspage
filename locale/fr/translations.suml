@@ -640,7 +640,7 @@ flags:
     Toric: 'Toric'
     Transfeminine: 'Transfémini{inflection_n}'
     Transgender: 'Transgenre'
-    Transmasculine: 'Transmasculi{inflection_c}'
+    Transmasculine: 'Transmasculi{inflection_n}'
     Transneutral: 'Transneutre'
     Trigender: 'Trigenre'
     Trixic: 'Trixic'
