@@ -89,7 +89,7 @@ terminology:
         - 'politics'
         - 'prejudice'
 
-    route: 'terms'
+    route: 'terminology'
 
 names:
     enabled: false
