@@ -165,7 +165,7 @@ nouns:
 
     image: 'Bild'
 
-terms:
+terminology:
     header: 'Terminologie'
     headerLong: 'Wörterbuch von Queerer Terminologie'
     info:
