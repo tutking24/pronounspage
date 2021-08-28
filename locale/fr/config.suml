@@ -7,7 +7,7 @@ pronouns:
     route: 'pronoms'
     default: 'il'
     any: 'any'
-    plurals: true
+    plurals: false
     honorifics: false
     multiple:
         name: 'Formes interchangeables'
