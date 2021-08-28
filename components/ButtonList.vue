@@ -14,7 +14,7 @@
             </li>
         </draggable>
         <div class="input-group py-1">
-            <input v-model="search" class="form-control form-control-sm" :placeholder="$t('crud.search')"/>
+            <input v-model="search" class="form-control" :placeholder="$t('crud.search')"/>
             <button v-if="search" type="button" class="btn btn-light btn-sm border text-danger" @click.prevent="search = ''">
                 <Icon v="times"/>
             </button>
