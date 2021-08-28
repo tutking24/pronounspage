@@ -40,7 +40,7 @@
         },
         methods: {
             buildRoute(route) {
-                return `/${this.config.nouns.route}/${route}`;
+                return `/${route}`;
             },
             isActiveRoute(route) {
                 return decodeURIComponent(this.$route.fullPath).replace(/\/$/, '') === this.buildRoute(route).replace(/\/$/, '');

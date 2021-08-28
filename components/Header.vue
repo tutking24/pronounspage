@@ -161,10 +161,10 @@
                         extras.push(`/${this.config.nouns.route}/${subroute}`);
                     }
                     if (this.config.inclusive.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.inclusive.route}`);
+                        extras.push(`/${this.config.inclusive.route}`);
                     }
                     if (this.config.terminology.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.terminology.route}`);
+                        extras.push(`/${this.config.terminology.route}`);
                     }
 
                     links.push({

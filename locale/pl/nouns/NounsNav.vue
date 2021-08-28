@@ -43,7 +43,7 @@
         },
         methods: {
             buildRoute(route) {
-                return `/${this.config.nouns.route}/${route}`;
+                return `/${route}`;
             },
             isActiveRoute(route) {
                 let current = decodeURIComponent(this.$route.fullPath).replace(/\/$/, '');
