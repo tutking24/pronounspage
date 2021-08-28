@@ -78,6 +78,8 @@ app.use(async function (req, res, next) {
 
 router.use(grant.express()(require('./social').config));
 
+app.use(require('./routes/home').default);
+
 app.use(require('./routes/banner').default);
 
 app.use(require('./routes/user').default);
