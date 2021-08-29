@@ -197,6 +197,9 @@ export default {
             }
             if (config.terminology.enabled) {
                 routes.push({path: `/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
+
+                // TODO remove later
+                routes.push({path: `/${config.nouns.route}/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
             }
 
             if (config.names.enabled) {
