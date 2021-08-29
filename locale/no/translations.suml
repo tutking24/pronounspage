@@ -355,6 +355,7 @@ contact:
         members: 'Nåværende medlemmer'
         blog: 'Blogg'
         upcoming: 'Kommende språk versjoner'
+        member: 'Member of the collective'  # TODO
 
 support:
     header: 'Hjelp'
