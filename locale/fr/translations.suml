@@ -21,9 +21,9 @@ home:
         - >
             Pourquoi est-ce que c’est important ? Par simple décence humaine.
             Vous n’appelleriez pas Louise « Annette » simplement parce que vous préférez ce prénom,
-            ou parce qu’elle a «l’air d’une Annette selon vous».
+            ou parce qu’elle a « l’air d’une Annette selon vous ».
             Ou même si le prénom « Annette » est <em>bien</em> inscrit sur son certificat de naissance,
-            mais qu’elle le déteste et préfère utiliser «Louise.»
+            mais qu’elle le déteste et préfère utiliser « Louise ».
             Et c’est la même chose avec les pronoms -
             si vous ne voulez pas pas être impoli·e envers quelqu’un, adressez-vous à ellui correctement.
             La seule différence est qu’on connaît généralement le nom des gens, mais pas leurs pronoms.
@@ -73,7 +73,7 @@ pronouns:
             Même si pour beaucoup de gens, c'est extrêmement important qu'on utilise des pronoms spécifiques pour parler d'eux,
             d'autres ne voient pas de problème à ce qu'on s'adresse à eux de n'importe quelle façon –
             du moment que c'est évident de qui on parle dans le contexte.
-        options: 'voir les options [share]{/=ici}.'
+        options: 'voir les options [share]{/pronoms=ici}.'
     others: 'Autres formes'
     othersRaw: 'autre'
     or: 'ou'
@@ -167,17 +167,19 @@ nouns:
     plural: 'pluriel'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Dictionnaire des terminologies queer'
-        info:
-            - >
-                Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
-        term: 'Terminologie'
-        original: 'Etymologie'
-        category: 'Catégorie'
-        images: 'Images supplémentaires'
-        definition: 'Définition'
+    image: 'Photo'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Dictionnaire des terminologies queer'
+    info:
+        - >
+            Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
+    term: 'Terminologie'
+    original: 'Etymologie'
+    category: 'Catégorie'
+    images: 'Images supplémentaires'
+    definition: 'Définition'
 
 faq:
     header: 'FAQ'
@@ -234,7 +236,7 @@ faq:
                     À la place, vous pouvez simplement demander « quels sont tes pronoms ? » ou « comment voudrais-tu que je te genre ? »)
                 - >
                     C’est aussi important de normaliser le fait de se présenter en donnant ses pronoms.
-                    « Salut, je suis Michael, mes pronoms sont {/il=il/lui}. » Ce n’est pas difficile – mais pour les personnes trans et non-binaires,
+                    « Salut, je suis Michel, mes pronoms sont {/il=il/lui}. » Ce n’est pas difficile – mais pour les personnes trans et non-binaires,
                     c’est tellement important !
                     C’est encore plus facile en ligne: mettez simplement vos pronoms (ou un lien vers des exemples de notre site) dans votre bio.
                 - >
@@ -354,6 +356,7 @@ contact:
         members: 'Membres actuels'
         blog: 'Blog'
         upcoming: 'Versions en d’autres langues à venir'
+        member: 'Membre du collectif'
 
 support:
     header: 'Soutien'
@@ -411,8 +414,11 @@ profile:
     description: 'Description'
     names: 'Noms'
     pronouns: 'Pronoms'
-    pronounsInfo: 'Vous pouvez entrer un pronom (ex. « ael » or « il/lui ») ou un lien (ex. « http://fr.pronouns.page/elle »).'
-    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom !'
+    pronounsInfo: >
+        Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
+        ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom !'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Mots'
     birthday: ' ge'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
@@ -455,7 +461,7 @@ share: 'Partager'
 crud:
     approve: 'Approuver'
     hide: 'Cacher'
-    remove: 'Retiret'
+    remove: 'Retirer'
     removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item ?'
     edit: 'Éditer'
     add: 'Ajouter'
@@ -557,34 +563,34 @@ report:
 
 flags:
     Abroromantic: 'Abroromantique'
-    Abrosexual: 'Abrosexuel·le'
+    Abrosexual: 'Abrosexue{inflection_l}'
     Achillean: 'Achilléen'
-    Alloromantic_Asexual: 'Alloromantique asexuel·le'
+    Alloromantic_Asexual: 'Alloromantique asexue{inflection_l}'
     Agender: 'Agenre'
     Anarcha-Queer: 'Anarcho-queer'
     Androgyne: 'Androgyne'
-    Androsexual: 'Androsexuel·le'
+    Androsexual: 'Androsexue{inflection_l}'
     Aporagender: 'Aporagenre'
     Archaeopronouns: 'Archéo-pronoms'
     Aroace: 'Aroace'
     Aromantic: 'Aromantique'
-    Aromantic_Allosexual: 'Aromantique allosexuel·le'
-    Asexual: 'Asexuel·le'
+    Aromantic_Allosexual: 'Aromantique allosexue{inflection_l}'
+    Asexual: 'Asexue{inflection_l}'
     Autigender: 'Autigenre'
     Bear: 'Bear'
-    Bicurious: 'Bicurieux·se'
+    Bicurious: 'Bicurieu{inflection_x}'
     Bigender: 'Bigenre'
     Biromantic: 'Biromantique'
-    Bisexual: 'Bisexuel·le'
+    Bisexual: 'Bisexue{inflection_l}'
     Butch: 'Butch'
     Ceteroromantic: 'Ceteroromantique'
-    Ceterosexual: 'Ceterosexuel·le'
-    Cis_Ally: 'Allié·e cis'
+    Ceterosexual: 'Ceterosexue{inflection_l}'
+    Cis_Ally: 'Alli{inflection_e} cis'
     Demiboy: 'Demiboy'
     Demigender: 'Demigenre'
     Demigirl: 'Demigirl'
     Demiromantic: 'Demiromantique'
-    Demisexual: 'Demisexuel·le'
+    Demisexual: 'Demisexue{inflection_l}'
     Diamoric: 'Diamorique'
     Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
@@ -595,12 +601,12 @@ flags:
     Genderfluid: 'Genderfluid'
     Genderflux: 'Genderflux'
     Genderqueer: 'Genderqueer'
-    Greyasexual: 'Grisexuel·le'
+    Greyasexual: 'Grisexue{inflection_l}'
     Greyaromantic: 'Grisromantique'
-    Gynesexual: 'Gynosexuel·le'
+    Gynesexual: 'Gynosexue{inflection_l}'
     Heteroflexible: 'Hétéroflexible'
     Heteroromantic: 'Hétéroromantique'
-    Heterosexual: 'Hétérosexuel'
+    Heterosexual: 'Hétérosexue{inflection_l}'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexible'
     Homoromantic: 'Homoromantique'
@@ -615,17 +621,17 @@ flags:
     Neopronouns: 'Néopronoms'
     Neutrois: 'Neutrois'
     Nonbinary: 'Non-binaire'
-    Omnisexual: 'Omnisexuel·le'
+    Omnisexual: 'Omnisexue{inflection_l}'
     Omniromantic: 'Omniromantique'
-    Oriented_Aroace: 'Aroace orienté·e'
+    Oriented_Aroace: 'Aroace orient{inflection_e}'
     Pangender: 'Pangenre'
     Panromantic: 'Panromantique'
-    Pansexual: 'Pansexuel·le'
-    Polyamorous: 'Polyamoureux·se'
+    Pansexual: 'Pansexue{inflection_l}'
+    Polyamorous: 'Polyamoureu{inflection_x}'
     Polyromantic: 'Panromantique'
-    Polysexual: 'Polysexuel·le'
+    Polysexual: 'Polysexue{inflection_l}'
     Pomoromantic: 'Pomoromantique'
-    Pomosexual: 'Pomosexuel·le'
+    Pomosexual: 'Pomosexue{inflection_l}'
     Progress_Pride: 'Progress Pride'
     Queer: 'Queer'
     Queerian: 'Queerian'
@@ -633,11 +639,11 @@ flags:
     Quoiromantic: 'Queeromantique'
     Sapphic: 'Saphique'
     Sexuality_Questioning: 'En questionnement de sexualité'
-    Straight_Ally: 'Allié hétéro'
+    Straight_Ally: 'Alli{inflection_e} hétéro'
     Toric: 'Toric'
-    Transfeminine: 'Transféminin·e'
+    Transfeminine: 'Transfémini{inflection_n}'
     Transgender: 'Transgenre'
-    Transmasculine: 'Transmasculin·e'
+    Transmasculine: 'Transmasculi{inflection_n}'
     Transneutral: 'Transneutre'
     Trigender: 'Trigenre'
     Trixic: 'Trixic'

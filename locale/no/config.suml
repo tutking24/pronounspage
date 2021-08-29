@@ -45,23 +45,25 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'seksuell legning'
-            - 'romantisk legning'
-            - 'tertiær legning'
-            - 'kjønn'
-            - 'kjønns uttrykk'
-            - 'forholds modell'
-            - 'språk'
-            - 'attraksjon'
-            - 'politikk'
-            - 'fordom'
 
-        route: 'terminologi'
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'seksuell legning'
+        - 'romantisk legning'
+        - 'tertiær legning'
+        - 'kjønn'
+        - 'kjønns uttrykk'
+        - 'forholds modell'
+        - 'språk'
+        - 'attraksjon'
+        - 'politikk'
+        - 'fordom'
+
+    route: 'terminologi'
 
 
 names:

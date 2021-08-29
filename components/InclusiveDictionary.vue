@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
-                <button v-for="category in config.nouns.inclusive.categories"
+                <button v-for="category in config.inclusive.categories"
                    :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                    @click="filter = filter === ':' + category ? '' : ':' + category"
                 >
@@ -35,15 +35,15 @@
             <template v-slot:header>
                 <th class="text-nowrap">
                     <Icon v="comment-times"/>
-                    <T>nouns.inclusive.insteadOf</T>
+                    <T>inclusive.insteadOf</T>
                 </th>
                 <th class="text-nowrap">
                     <Icon v="comment-check"/>
-                    <T>nouns.inclusive.say</T>
+                    <T>inclusive.say</T>
                 </th>
                 <th class="text-nowrap">
                     <Icon v="comment-dots"/>
-                    <T>nouns.inclusive.because</T>
+                    <T>inclusive.because</T>
                 </th>
                 <th></th>
             </template>
@@ -278,7 +278,7 @@
         },
         watch: {
             filter() {
-                this.setHash(this.config.nouns.inclusive.hashNamespace || '', this.filter);
+                this.setHash(this.config.inclusive.hashNamespace || '', this.filter);
                 if (this.$refs.dictionarytable) {
                     this.$refs.dictionarytable.reset();
                     this.$refs.dictionarytable.focus();

@@ -1,3 +1,7 @@
+const inAYear = new Date();
+inAYear.setFullYear(inAYear.getFullYear() + 1);
+
 export default {
-    maxAge: 365 * 24 * 60 * 60,
+    // secure: process.env.NODE_ENV === 'production',
+    expires: inAYear,
 }

@@ -1,6 +1,6 @@
 <template>
     <span class="flag-wrapper">
-        <a v-if="link" :href="`/${config.nouns.route}/${config.nouns.terms.route}#${link.toLowerCase()}`" :title="alt">
+        <a v-if="link" :href="`/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
             <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup>
         </a>
@@ -29,23 +29,37 @@
         },
         computed: {
             link() {
-                if (!this.config.nouns.terms.enabled || !(this.config.nouns.terms.published || this.$isGranted('terms'))) {
+                if (!this.config.terminology.enabled || !(this.config.terminology.published || this.$isGranted('terms'))) {
                     return null;
                 }
 
+                let fallback = null;
+
                 for (let term of this.terms || []) {
-                    if (term.key && term.key.toLowerCase().includes(this.alt.toLowerCase())) {
+                    // exact match
+                    if (term.key && term.key.toLowerCase() === this.alt.toLowerCase()) {
                         return term.key;
                     }
-                    if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
+                    if (term.term.toLowerCase() === this.name.toLowerCase()) {
                         return this.name;
                     }
-                    if (term.original.toLowerCase().includes(this.alt.toLowerCase())) {
+                    if (term.original.toLowerCase() === this.alt.toLowerCase()) {
                         return this.alt;
+                    }
+
+                    // fallback
+                    if (term.key && term.key.toLowerCase().includes(this.alt.toLowerCase())) {
+                        fallback = term.key;
+                    }
+                    if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
+                        fallback = this.name;
+                    }
+                    if (term.original.toLowerCase().includes(this.alt.toLowerCase())) {
+                        fallback = this.alt;
                     }
                 }
 
-                return null;
+                return fallback;
             },
         },
     }

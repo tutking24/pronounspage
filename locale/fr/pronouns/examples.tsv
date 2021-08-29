@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-Je pense qu'{pronoun_subject} est très gentil.		FALSE
-{'pronoun_subject} est {pronoun_possessive} voisi{conjugation_n}.		FALSE
+Je pense qu'{pronoun_subject} est très genti{inflection_l}.		FALSE
+{'pronoun_subject} est {pronoun_possessive} voisi{inflection_n}.		FALSE
 Je vais {pronoun_object} rencontrer bientôt.		FALSE
 Je me fie à {pronoun_disjunctive}.		FALSE
