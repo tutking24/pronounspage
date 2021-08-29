@@ -16,7 +16,7 @@ SET credentials = 'magister filologii angielskiej|student filologii hiszpańskie
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'ausir');
 
 UPDATE profiles
-SET credentials = 'magistra filologii słowiańskiej (z językiem czeskim) i filologii polskiej na UAM|{http://gazetylokalne.pl/sgl-local-press-2018-nominacje/=dziennikarka nominowana do SGL Local Press 2018 za reportaż „Film »Kler« i kler wrzesiński”}',
+SET credentials = 'magistra filologii słowiańskiej (z językiem czeskim) i filologii polskiej na UAM|dziennikarka {http://gazetylokalne.pl/sgl-local-press-2018-nominacje/=nominowana do SGL Local Press 2018} za reportaż „Film »Kler« i kler wrzesiński”',
     credentialsLevel = 5,
     credentialsName = 'Anna Tess Gołębiowska'
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'tess');
@@ -32,7 +32,7 @@ SET credentials = 'magister językoznawstwa|absolwent Gender Studies w PAN|dokto
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'szymon');
 
 UPDATE profiles
-SET credentials = 'inżynierze Informatyki|finaliszcze Olimpiady Literatury i Języka Polskiego',
+SET credentials = 'inżynierze informatyki|finaliszcze Olimpiady Literatury i Języka Polskiego',
     credentialsLevel = 1
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'andrea');
 
