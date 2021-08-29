@@ -19,7 +19,7 @@ const allVersionsUrls = buildList(function*() {
         yield 'http://pronouns.test:3000';
         yield 'http://localhost:3000';
     } else if (process.env.NODE_ENV === 'test') {
-        // nothing
+        yield 'https://test.pronouns.page';
     } else {
         yield 'https://pronouns.page';
         for (let loc in locales) {
