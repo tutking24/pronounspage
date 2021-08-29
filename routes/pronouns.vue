@@ -14,7 +14,7 @@
                     </div>
                     <SimplePronounList :pronouns="groupPronouns"/>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" id="generator">
                     <p class="h5">
                         <T>home.generator.header</T>
                     </p>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </li>
-                <li v-if="config.pronouns.multiple !== false" class="list-group-item">
+                <li v-if="config.pronouns.multiple !== false" class="list-group-item" id="multiple">
                     <p class="h5">
                         <Spelling :text="config.pronouns.multiple.name"/>
                     </p>
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </li>
-                <li v-if="config.pronouns.null !== false" class="list-group-item">
+                <li v-if="config.pronouns.null !== false" class="list-group-item" id="nameself">
                     <p class="h5">
                         <Spelling :text="config.pronouns.null.description"/>
                     </p>

@@ -401,8 +401,12 @@ profile:
     description: 'Omschrijving'
     names: 'Namen'
     pronouns: 'Voornaamwoorden'
-    pronounsInfo: 'Je kunt een voornaamwoord (bijv. “die” of “zij/haar”) of een link (bijv. “http://nl.pronouns.page/zem”) of vijf eigen vormen (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.'
-    pronounsNotFound: 'We kunnen geen link naar dit voornaamwoord vinden!'
+    pronounsInfo: >
+        Je kunt een <strong>voornaamwoord</strong> (bijv. “die” of “zij/haar”)
+        of een <strong>link</strong> (bijv. “http://nl.pronouns.page/zem”)
+        of <strong>vijf eigen vormen</strong> (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'We kunnen geen link naar dit voornaamwoord vinden!'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Woorden'
     birthday: 'Leeftijd'
     birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'

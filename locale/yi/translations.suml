@@ -420,8 +420,16 @@ profile:
     description: 'באַשרײַבונג'
     names: 'נעמען'
     pronouns: 'פּראָנאָמען'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: >
+        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
+        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
+        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
+        Keep in mind that <strong>all five forms</strong> are required in that case,
+        otherwise the app can only guess what exactly do you mean.
+        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
+        you can also use a colon shorthand (eg. “:star”).
+    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'װערטער'
     birthday: 'עלטער'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'

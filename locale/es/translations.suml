@@ -420,8 +420,11 @@ profile:
     description: 'Descripción'
     names: 'Nombres'
     pronouns: 'Pronombres'
-    pronounsInfo: 'Puedes introducir un pronombre (p. ej. “elle” o “ella”) o un enlace (“http://es.pronouns.page/ellx”).'
-    pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'
+    pronounsInfo: >
+        Puedes introducir un <strong>pronombre</strong> (p. ej. “elle” o “ella”)
+        o un <strong>enlace</strong> (“http://es.pronouns.page/ellx”).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: '¡No podemos encontrar un enlace a este pronombre!'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Palabras'
     birthday: 'Edad'
     birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
