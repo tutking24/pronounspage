@@ -165,7 +165,7 @@
                 }
             }
             &.day-today {
-                border: 3px solid $black;
+                border: 3px solid $black !important;
                 @extend .shadow;
             }
             .day-tooltip {
