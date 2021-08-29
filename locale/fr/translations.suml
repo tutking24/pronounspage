@@ -414,8 +414,11 @@ profile:
     description: 'Description'
     names: 'Noms'
     pronouns: 'Pronoms'
-    pronounsInfo: 'Vous pouvez entrer un pronom (ex. « ael » or « il/lui ») ou un lien (ex. « http://fr.pronouns.page/elle »).'
-    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom !'
+    pronounsInfo: >
+        Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
+        ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom !'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Mots'
     birthday: ' ge'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'

@@ -412,8 +412,12 @@ profile:
     description: 'Beskrivelse'
     names: 'Navn'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kan taste inn ett pronomen (feks. “de” eller “hun/henne” eller en link (feks. “http://no.pronouns.page/hun”).'
-    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'
+    pronounsInfo: >
+        Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
+        eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
+    # TODO add: or the <strong>custom five forms</strong> (eg. “ze/zem/zir/zirs/zirself”).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Ord'
     birthday: 'Alder'
     birthdayInfo: 'Vi viser ikke bursdagen din, bare den kalkulerte alderen.'

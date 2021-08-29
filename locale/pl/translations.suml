@@ -989,8 +989,10 @@ profile:
     description: 'Opis'
     names: 'Imiona'
     pronouns: 'Zaimki'
-    pronounsInfo: 'Możesz tu wpisać zaimek (np. „onu”, „on/jego”) lub wkleić linka do niego (np. „https://zaimki.pl/ona/ich”).'
-    pronounsNotFound: 'Nie możemy znaleźć tego zaimka!'
+    pronounsInfo: >
+        Możesz tu wpisać <strong>zaimek</strong> (np. „onu”, „on/jego”) lub wkleić <strong>linka</strong> do niego (np. „https://zaimki.pl/ona/ich”).
+        Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.'
+    pronounsNotFound: 'Niepoprawny format. Szczegóły w instrukcji powyżej'
     words: 'Słowa'
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
