@@ -13,6 +13,9 @@ const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 
 process.env.LOCALE = locale;
+if (process.env.ENV) {
+    process.env.NODE_ENV = process.env.ENV;
+}
 
 const allVersionsUrls = buildList(function*() {
     if (process.env.NODE_ENV === 'development') {
