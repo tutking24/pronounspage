@@ -42,22 +42,24 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'sexuelle Orientierung'
-            - 'romantische Orientierung'
-            - 'tertiäre Orientierung'
-            - 'Geschlecht'
-            - 'Geschlechtsausdruck'
-            - 'Beziehungsmodell'
-            - 'Sprache'
-            - 'Anziehung'
-            - 'Politik'
-            - 'Vorurteil'
-        route: 'terminologie'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'sexuelle Orientierung'
+        - 'romantische Orientierung'
+        - 'tertiäre Orientierung'
+        - 'Geschlecht'
+        - 'Geschlechtsausdruck'
+        - 'Beziehungsmodell'
+        - 'Sprache'
+        - 'Anziehung'
+        - 'Politik'
+        - 'Vorurteil'
+    route: 'terminologie'
 
 names:
     enabled: false

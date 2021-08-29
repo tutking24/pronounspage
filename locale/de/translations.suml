@@ -70,7 +70,7 @@ pronouns:
         short: 'beliebig'
         description: >
             Auch wenn es für manche Menschen sehr wichtig ist, dass bestimmte Pronomen benutzt werden, wenn über sie geredet wird, ist es anderen egal, welche Pronomen für sie verwendet werden.
-        options: 'Überprüfe die Optionen [share]{/=hier}.'
+        options: 'Überprüfe die Optionen [share]{/pronomen=hier}.'
     others: 'Andere Formen'
     othersRaw: 'andere'
     or: 'oder'
@@ -163,19 +163,21 @@ nouns:
     plural: 'Plural'
     pluralShort: 'Pl.'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Wörterbuch von Queerer Terminologie'
-        info:
-            - >
-                Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
-                funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
-                Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
-        term: 'Begriff'
-        original: 'Etymologie'
-        category: 'Kategorie'
-        images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
-        definition: 'Definition'
+    image: 'Bild'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Wörterbuch von Queerer Terminologie'
+    info:
+        - >
+            Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
+            funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
+            Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
+    term: 'Begriff'
+    original: 'Etymologie'
+    category: 'Kategorie'
+    images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
+    definition: 'Definition'
 
 faq:
     header: 'FAQ'
@@ -405,8 +407,11 @@ profile:
     description: 'Beschreibung'
     names: 'Namen'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. „sier“ or „sie/ihr“) oder einen Link (z.B. „https://de.pronouns.page/dey“) oder vier benutzerdefinierten Formen (z.B. „xier/xies/xiem/xien“).'
-    pronounsNotFound: 'Wir können keinen Link zu diesem Pronomen finden!'
+    pronounsInfo: >
+        Du kannst entweder ein <strong>Pronomen</strong> (z.B. „sier“ or „sie/ihr“) oder einen <strong>Link</strong> (z.B. „https://de.pronouns.page/dey“)
+        oder <strong>vier benutzerdefinierten Formen</strong> (z.B. „xier/xies/xiem/xien“).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'Wir können keinen Link zu diesem Pronomen finden!'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Wörter'
     birthday: 'Alter'
     birthdayInfo: 'Wir veröffentlichen nicht dein Geburtstag, sondern nur das errechnete Alter.'

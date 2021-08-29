@@ -90,35 +90,37 @@
                 <OpinionLegend/>
             </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="signature"/>
                     <T>profile.names</T>
                 </h3>
                 <OpinionListInput v-model="names"/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
                     <T>profile.pronouns</T>
                 </h3>
-                <p class="small mb-2">
-                    <T>profile.pronounsInfo</T>
-                </p>
+                <div class="alert alert-info">
+                    <p class="small mb-0">
+                        <Icon v="info-circle"/>
+                        <T>profile.pronounsInfo</T>
+                    </p>
+                </div>
                 <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
-                <Answer question="custom-pronouns" small/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="comment-edit"/>
                     <T>profile.description</T>
                 </h3>
                 <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="4"/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="flag"/>
                     <T>profile.flags</T>
@@ -129,20 +131,20 @@
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
                     <Flag :name="s.desc.split('|')[0]" :alt="s.desc.split('|')[1]" :img="`/flags/${s.v}.png`"/>
                 </ButtonList>
-            </div>
 
-            <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
-                <summary class="px-3 py-2">
-                    <T>profile.flagsCustom</T>
-                </summary>
-                <div class="border-top">
-                    <ImageWidgetRich v-model="customFlags" sizes="flag"/>
-                </div>
-            </details>
+                <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
+                    <summary class="px-3 py-2">
+                        <T>profile.flagsCustom</T>
+                    </summary>
+                    <div class="border-top">
+                        <ImageWidgetRich v-model="customFlags" sizes="flag"/>
+                    </div>
+                </details>
 
-            <Answer question="flags" small/>
+                <Answer question="flags" small/>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
                     <T>profile.links</T>
@@ -159,9 +161,9 @@
                     </a>
                     😉
                 </p>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="birthday-cake"/>
                     <T>profile.birthday</T>
@@ -175,9 +177,9 @@
                         <Icon v="times"/>
                     </button>
                 </div>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="scroll-old"/>
                     <T>profile.words</T>
@@ -188,12 +190,14 @@
                     </h4>
                     <OpinionListInput v-model="words[i]" group="words"/>
                 </template>
-            </div>
+            </section>
 
-            <button class="btn btn-primary w-100" type="submit">
-                <Icon v="save"/>
-                <T>profile.editor.save</T>
-            </button>
+            <section>
+                <button class="btn btn-primary w-100" type="submit">
+                    <Icon v="save"/>
+                    <T>profile.editor.save</T>
+                </button>
+            </section>
         </form>
     </div>
 </template>
@@ -400,5 +404,8 @@
     }
     .saving {
         opacity: .5;
+    }
+    section.form-group {
+        margin-bottom: 5rem;
     }
 </style>

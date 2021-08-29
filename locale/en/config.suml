@@ -71,23 +71,25 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'sexual orientation'
-            - 'romantic orientation'
-            - 'tertiary orientation'
-            - 'gender'
-            - 'gender expression'
-            - 'relationship model'
-            - 'language'
-            - 'attraction'
-            - 'politics'
-            - 'prejudice'
 
-        route: 'terms'
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'sexual orientation'
+        - 'romantic orientation'
+        - 'tertiary orientation'
+        - 'gender'
+        - 'gender expression'
+        - 'relationship model'
+        - 'language'
+        - 'attraction'
+        - 'politics'
+        - 'prejudice'
+
+    route: 'terminology'
 
 names:
     enabled: false

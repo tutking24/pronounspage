@@ -73,7 +73,7 @@ pronouns:
         description: >
             Selv om det for mange folk er veldig viktig at andre bruker spesifikke pronomen til å omtale dem
             så er det også andre som ikke bryr seg om hvilke pronomen du bruker for dem, eller bruker alle pronomen - så lenge det er klart hvem man snakker om.
-        options: 'sjekk ut valgene her [del]{/=her}.'
+        options: 'sjekk ut valgene her [share]{/pronomen=her}.'
     others: 'Andre former'
     othersRaw: 'andre'
     or: 'eller'
@@ -169,17 +169,19 @@ nouns:
     plural: 'flertall.'
     pluralShort: 'fl.'
 
-    terms:
-        header: 'Terminologi'
-        headerLong: 'Ordbok av queer terminologi'
-        info:
-            - >
-                En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
-        term: 'Begrep'
-        original: 'Etymologi'
-        category: 'Kategori'
-        images: 'Ekstra bilder, fra utsiden av flagg katalogen'
-        definition: 'Definisjon'
+    image: 'Bilde'
+
+terminology:
+    header: 'Terminologi'
+    headerLong: 'Ordbok av queer terminologi'
+    info:
+        - >
+            En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
+    term: 'Begrep'
+    original: 'Etymologi'
+    category: 'Kategori'
+    images: 'Ekstra bilder, fra utsiden av flagg katalogen'
+    definition: 'Definisjon'
 
 faq:
     header: 'Spørsmål'
@@ -353,6 +355,7 @@ contact:
         members: 'Nåværende medlemmer'
         blog: 'Blogg'
         upcoming: 'Kommende språk versjoner'
+        member: 'Member of the collective'  # TODO
 
 support:
     header: 'Hjelp'
@@ -410,8 +413,12 @@ profile:
     description: 'Beskrivelse'
     names: 'Navn'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kan taste inn ett pronomen (feks. “de” eller “hun/henne” eller en link (feks. “http://no.pronouns.page/hun”).'
-    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'
+    pronounsInfo: >
+        Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
+        eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
+    # TODO add: or the <strong>custom five forms</strong> (eg. “ze/zem/zir/zirs/zirself”).
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: 'Ord'
     birthday: 'Alder'
     birthdayInfo: 'Vi viser ikke bursdagen din, bare den kalkulerte alderen.'

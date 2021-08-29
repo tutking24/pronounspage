@@ -188,14 +188,18 @@ export default {
             if (config.nouns.enabled) {
                 routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
                 for (let subroute of config.nouns.subroutes || []) {
-                    routes.push({ path: `/${config.nouns.route}/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
+                    routes.push({ path: `/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
                 }
-                if (config.nouns.inclusive.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.nouns.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
-                }
-                if (config.nouns.terms.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.nouns.terms.route}`, component: resolve(__dirname, 'routes/queerTerms.vue')});
-                }
+            }
+
+            if (config.inclusive.enabled) {
+                routes.push({path: `/${config.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
+            }
+            if (config.terminology.enabled) {
+                routes.push({path: `/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
+
+                // TODO remove later
+                routes.push({path: `/${config.nouns.route}/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
             }
 
             if (config.names.enabled) {

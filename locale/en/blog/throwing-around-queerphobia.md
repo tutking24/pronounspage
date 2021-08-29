@@ -15,7 +15,7 @@ Another thing that we see quite often in people's cards is a description like th
 Sure, policing someone's neopronouns would be transphobic. And that's why we don't do that.
 Paw can easily link to paw's pronouns by putting in all five grammatical forms
 ([paw/paw/paw's/paw's/pawself](https://en.pronouns.page/paw/paw/paw's/paw's/pawself)),
-by using a shorthand notation for nameself pronouns ([:paw](https://en.pronouns.page/:paw)),
+by using a shorthand notation for the nameself pronouns ([:paw](https://en.pronouns.page/:paw)),
 or by using a generator that's available in the [Pronouns](/pronouns) section.
 We talk about it in the instructions in the card editor –
 if only people would read them before rushing to get angry…
@@ -32,4 +32,4 @@ There's _actual_ queerphobia destroying people's lives all around the world –
 but you use that word to describe a _minor inconvenience_ completely unrelated to your gender or orientation?
 
 Think about it… If you message a group of queer volunteers doing their best to create a free website for the community,
-and you call them “homophobes”, how do you expect allocishet people take queerphobia seriously?
+and you call them “homophobes”, how do you expect allocishet people to take queerphobia seriously?

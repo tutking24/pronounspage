@@ -7,7 +7,7 @@ class Jwt {
         this.publicKey = fs.readFileSync(publicKey);
     }
 
-    sign(payload, expiresIn = '30d') {
+    sign(payload, expiresIn = '365d') {
         return jwt.sign(payload, this.privateKey, {
             expiresIn,
             algorithm: 'RS256',

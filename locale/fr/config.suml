@@ -7,7 +7,7 @@ pronouns:
     route: 'pronoms'
     default: 'il'
     any: 'any'
-    plurals: true
+    plurals: false
     honorifics: false
     multiple:
         name: 'Formes interchangeables'
@@ -25,9 +25,13 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
+        FR:
+            language: 'fr-FR'
+            voice: 'Lea'
+            engine: 'standard'
+        CA:
+            language: 'fr-CA'
+            voice: 'Gabrielle'
             engine: 'neural'
 
 sources:
@@ -46,22 +50,24 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'orientation sexuelle'
-            - 'orientation romantique'
-            - 'orientation tertiaire'
-            - 'genre'
-            - 'expression du genre'
-            - 'modèle de relation'
-            - 'langage'
-            - 'attirance'
-            - 'politique'
-            - 'préjugé'
-        route: 'terminologie'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'orientation sexuelle'
+        - 'orientation romantique'
+        - 'orientation tertiaire'
+        - 'genre'
+        - 'expression du genre'
+        - 'modèle de relation'
+        - 'langage'
+        - 'attirance'
+        - 'politique'
+        - 'préjugé'
+    route: 'terminologie'
 
 names:
     enabled: false
@@ -130,7 +136,7 @@ profile:
         - ['[sans titre]', 'Mx.', 'M.', 'Mme.', 'MM.', 'Mmes.', 'Mlle.', 'Mlles.', 'Vve.', 'messieurs', 'monsieur', 'madame', 'mesdames', 'mademoiselle', 'mesdemoiselles', 'veuve']
         - ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
         - ['beauté', 'beau gosse', 'belle gosse']
-        - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'joyfriend', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
+        - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
     flags:
         defaultPronoun: 'iel'
 

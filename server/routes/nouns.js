@@ -166,45 +166,33 @@ router.post('/nouns/remove/:id', handleErrorAsync(async (req, res) => {
     return res.json('ok');
 }));
 
-const findBaseForm = (noun, query) => {
-    for (let form of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
-        for (let formPart of noun[form].split('|')) {
-            if (formPart.toLowerCase() === query.toLowerCase()) {
-                return formPart;
-            }
-        }
-    }
-
-    return null;
-}
-
-router.get('/nouns/:word.png', handleErrorAsync(async (req, res) => {
-    const query = req.params.word.toLowerCase();
-    const term = '%' + query + '%';
-    const noun = (await req.db.all(SQL`
+router.get('/nouns/:id.png', async (req, res) => {
+    const noun = (await req.db.get(SQL`
         SELECT * FROM nouns
         WHERE locale = ${global.config.locale}
+        AND id = ${req.params.id}
         AND approved >= ${req.isGranted('nouns') ? 0 : 1}
-        AND (masc like ${term} OR fem like ${term} OR neutr like ${term} OR mascPl like ${term} OR femPl like ${term} OR neutrPl like ${term})
-        ORDER BY masc
-    `)).filter(noun =>
-        noun.masc.toLowerCase().split('|').includes(query)
-        || noun.fem.toLowerCase().split('|').includes(query)
-        || noun.neutr.toLowerCase().split('|').includes(query)
-        || noun.mascPl.toLowerCase().split('|').includes(query)
-        || noun.femPl.toLowerCase().split('|').includes(query)
-        || noun.neutrPl.toLowerCase().split('|').includes(query)
-    )[0]
+        AND deleted = 0
+    `));
 
     if (!noun) {
         return res.status(404).json({error: 'Not found'});
     }
 
-    const base = findBaseForm(noun, query);
+    let maxItems = 0;
+    ['masc', 'fem', 'neutr'].forEach((form, column) => {
+        let items = 0;
+        for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']]) {
+            items += noun[form + key].split('|').filter(x => x.length).length;
+        }
+        if (items > maxItems) {
+            maxItems = items;
+        }
+    });
 
-    const width = 1200;
-    const height = 600;
     const padding = 48;
+    const width = 1200;
+    const height = padding * 2.5 + (maxItems + 1) * 48 + padding;
     const mime = 'image/png';
 
     registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', { family: 'Quicksand', weight: 'regular'});
@@ -218,33 +206,36 @@ router.get('/nouns/:word.png', handleErrorAsync(async (req, res) => {
     context.drawImage(bg, 0, 0, width, height);
 
     context.font = 'bold 64pt Quicksand';
-    context.fillText(base, width / 2 - context.measureText(base).width / 2, 120);
 
     for (let [column, key, icon] of [[0, 'masculine', '\uf222'], [1, 'feminine', '\uf221'], [2, 'neuter', '\uf22c']]) {
         context.font = 'regular 24pt FontAwesome';
-        context.fillText(icon, column * (width - 2 * padding) / 3 + padding, 192);
+        context.fillText(icon, column * (width - 2 * padding) / 3 + padding, padding * 1.5);
 
         context.font = 'bold 24pt Quicksand';
-        context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, 192);
+        context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, padding * 1.5);
     }
 
     context.font = 'regular 24pt Quicksand';
     ['masc', 'fem', 'neutr'].forEach((form, column) => {
         let i = 0;
         for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']])
-        noun[form + key].split('|').filter(x => x.length).forEach(part => {
-            context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, 244 + i * 48);
-            i++;
-        });
+            noun[form + key].split('|').filter(x => x.length).forEach(part => {
+                context.fillText(symbol + ' ' + part, column * (width - 2 * padding) / 3 + padding, padding * 2.5 + i * 48);
+                i++;
+            });
     })
 
     context.fillStyle = '#C71585';
-    context.font = 'regular 24pt FontAwesome';
-    context.fillText('\uf02c', padding, height - padding);
-    context.font = `regular 24pt Quicksand`;
-    context.fillText(translations.title, padding + 48, height - padding - 4);
+    context.font = 'regular 16pt FontAwesome';
+    context.fillText('\uf02c', padding, height - padding + 12);
+    context.font = `regular 16pt Quicksand`;
+    context.fillText(
+        translations.title + '/' + (global.config.nouns.routeMain || global.config.nouns.route),
+        padding + 36,
+        height - padding + 8
+    );
 
     return res.set('content-type', mime).send(canvas.toBuffer(mime));
-}));
+});
 
 export default router;

@@ -64,10 +64,12 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: false
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: false
 
 names:
     enabled: false

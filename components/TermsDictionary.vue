@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div class="btn-group mb-3 d-none d-md-flex bg-white category-filter">
-                <button v-for="category in config.nouns.terms.categories"
+                <button v-for="category in config.terminology.categories"
                     :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                     @click="filter = filter === ':' + category ? '' : ':' + category"
                 >
@@ -177,7 +177,15 @@
 
             // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
             visibleEntries() {
-                return Object.values(this.entries).filter(n => n.matches(this.filter));
+                const values = Object.values(this.entries).filter(n => n.matches(this.filter));
+                if (this.filter) {
+                    return values.sort((a, b) => {
+                        if (a.key && a.key.toLowerCase() === this.filter.toLowerCase()) { return -1; }
+                        if (b.key && b.key.toLowerCase() === this.filter.toLowerCase()) { return 1; }
+                        return a.term[0].localeCompare(b.term[0]);
+                    })
+                }
+                return values;
             },
             entriesCountApproved() {
                 return Object.values(this.entries).filter(n => n.approved).length;
@@ -212,7 +220,7 @@
         },
         watch: {
             filter() {
-                this.setHash(this.config.nouns.terms.hashNamespace || '', this.filter);
+                this.setHash(this.config.terminology.hashNamespace || '', this.filter);
                 if (this.$refs.dictionarytable) {
                     this.$refs.dictionarytable.reset();
                     this.$refs.dictionarytable.focus();
