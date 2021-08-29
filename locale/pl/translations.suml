@@ -85,7 +85,7 @@ pronouns:
         description: >
             Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
             innym nie przeszkadza zwracanie się w dowolny sposób – o ile wiadomo z kontekstu, że to o nich mowa.
-        options: 'przejrzyj listę możliwości [share]{/=tutaj}.'
+        options: 'przejrzyj listę możliwości [share]{/zaimki=tutaj}.'
     avoiding:
         header: 'Unikanie form nacechowanych płciowo'
         description: >
@@ -246,7 +246,7 @@ nouns:
         - >
             Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
             Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
-            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/=innych nienormatywnych form},
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/zaimki=innych nienormatywnych form},
             to które formy rzeczowników pasują do nich gramatycznie?
             Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
             Jak opisywać grupy mieszane?
@@ -499,7 +499,7 @@ faq:
             question: 'Czy ktoś tego w ogóle używa?'
             answer:
                 - >
-                    Tak! Niemal wszystkie formy, które {/=tu prezentujemy},
+                    Tak! Niemal wszystkie formy, które {/zaimki=tu prezentujemy},
                     zostały nam podesłane przez osoby rzeczywiście ich używające,
                     albo wzięte z tekstów literatury.
                     Ewentualnie {/ona/ich=uzupełniłośmy} je jedynie w miejscach, gdzie którejś części brakowało,
@@ -711,7 +711,7 @@ faq:
                     Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
                     choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
                     Coraz więcej osób używa w odniesieniu do siebie
-                    {/ono=rodzaju neutralnego} i {/=innych form}.
+                    {/ono=rodzaju neutralnego} i {/zaimki=innych form}.
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form neutralnych.
@@ -782,7 +782,7 @@ faq:
             question: 'Jak zwracać się do osoby, której płci nie znamy, lub do mieszanej grupy osób?'
             answer:
                 - >
-                    Wiele form, które {/=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
+                    Wiele form, które {/zaimki=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
                     „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp.
         zmiana:
             question: 'Czy mogę zmienić swoje zaimki?'
@@ -876,7 +876,7 @@ people:
             Przede wszystkim, nie idź na łatwiznę i nie opisuj jej zaimkami, które <em>wydaje ci się</em>,
             że <em>„powinna”</em> używać ze względu na „męskie” czy „żeńskie” ciało.
             Niektórzy używają zamiennie na przykład „they” i „she”, wtedy żeńskie zaimki w polszczyźnie są na miejscu.
-            W przciwnym wypadku zajrzyj na naszą [home] {/=stronę główną},
+            W przciwnym wypadku zajrzyj do sekcji [tags] {/zaimki=Zaimki},
             gdzie opisujemy neutralne możliwości. Zapoznaj się z nimi i na tej podstawie dokonaj wyboru.
             Możesz też spróbować spytać bezpośrednio osobę zainteresowaną o jej preferencje
             – posiłkując się naszymi [globe-americas] {/english=anglojęzycznymi materiałami}.
@@ -903,7 +903,7 @@ english:
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
-            We create it in Polish (see: [home] {/=Homepage}),
+            We create it in Polish (see: [tags] {/zaimki=Zaimki}),
             but if you don't speak it, yet still are interested in
             how this language tries to cope with the omnipresent binaries,
             we've prepared a short overview of those ideas in English.

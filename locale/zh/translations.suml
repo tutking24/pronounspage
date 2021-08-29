@@ -71,7 +71,7 @@ pronouns:
         description: >
             其實對很多人來說，別人用特定代詞來談論他們是非常重要的，
             但其他人不介意別人怎麼叫他們，只要內容清楚在談論誰。
-        options: '查看選項 [share]{/= 這裡}.'
+        options: '查看選項 [share] {/pronouns= 這裡}.'
     others: '其他形式'
     othersRaw: '其他'
     or: '或'

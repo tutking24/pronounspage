@@ -70,7 +70,7 @@ pronouns:
         short: 'beliebig'
         description: >
             Auch wenn es für manche Menschen sehr wichtig ist, dass bestimmte Pronomen benutzt werden, wenn über sie geredet wird, ist es anderen egal, welche Pronomen für sie verwendet werden.
-        options: 'Überprüfe die Optionen [share]{/=hier}.'
+        options: 'Überprüfe die Optionen [share]{/pronomen=hier}.'
     others: 'Andere Formen'
     othersRaw: 'andere'
     or: 'oder'
