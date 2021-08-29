@@ -177,7 +177,15 @@
 
             // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
             visibleEntries() {
-                return Object.values(this.entries).filter(n => n.matches(this.filter));
+                const values = Object.values(this.entries).filter(n => n.matches(this.filter));
+                if (this.filter) {
+                    return values.sort((a, b) => {
+                        if (a.key && a.key.toLowerCase() === this.filter.toLowerCase()) { return -1; }
+                        if (b.key && b.key.toLowerCase() === this.filter.toLowerCase()) { return 1; }
+                        return a.term[0].localeCompare(b.term[0]);
+                    })
+                }
+                return values;
             },
             entriesCountApproved() {
                 return Object.values(this.entries).filter(n => n.approved).length;
