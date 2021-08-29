@@ -73,7 +73,7 @@ pronouns:
             Même si pour beaucoup de gens, c'est extrêmement important qu'on utilise des pronoms spécifiques pour parler d'eux,
             d'autres ne voient pas de problème à ce qu'on s'adresse à eux de n'importe quelle façon –
             du moment que c'est évident de qui on parle dans le contexte.
-        options: 'voir les options [share]{/=ici}.'
+        options: 'voir les options [share]{/pronoms=ici}.'
     others: 'Autres formes'
     othersRaw: 'autre'
     or: 'ou'

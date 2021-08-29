@@ -74,7 +74,7 @@ pronouns:
         description: >
             Enquanto para muita gente é importante que se utilize pronomes específicos para falar dels,
             a outres não ês incomoda que sejam chamades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
-        options: 'Verifique as opções [compartilhar]{/= aqui}.'
+        options: 'Verifique as opções [share] {/pronomes= aqui}.'
     others: 'Outras formas'
     othersRaw: 'Outras'
     or: 'ou'

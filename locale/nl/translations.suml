@@ -74,7 +74,7 @@ pronouns:
             Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
             vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
             - zolang de context duidelijk is wat betreft degene over wie wordt gesproken.
-        options: 'bekijk de mogelijkheden [share]{/=hier}.'
+        options: 'bekijk de mogelijkheden [share]{/voornaamwoorden=hier}.'
     others: 'Andere vormen'
     othersRaw: 'andere'
     or: 'of'

@@ -75,7 +75,7 @@ pronouns:
         description: >
             Aunque para mucha gente sea muy importante que se utilicen pronombres específicos para hablar de elles,
             a otres no les molesta que les llamen de cualquier manera - mientras que en el contexto sea claro a quién se está hablando.
-        options: 'Checa las opciones [compartir]{/=aquí}.'
+        options: 'Checa las opciones [share]{/pronombres=aquí}.'
     others: 'Otras formas'
     othersRaw: 'Otras'
     or: 'o'

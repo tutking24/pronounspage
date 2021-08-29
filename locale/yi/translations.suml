@@ -74,7 +74,7 @@ pronouns:
         description: >
             Even though for many people it's incredibly important that people use specific pronouns to talk about them,
             others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/=here}.'
+        options: 'check out the options [share]{/pronouns=here}.'
     others: 'Other forms'
     othersRaw: 'other'
     or: 'or'

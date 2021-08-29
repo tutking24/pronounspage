@@ -73,7 +73,7 @@ pronouns:
         description: >
             Selv om det for mange folk er veldig viktig at andre bruker spesifikke pronomen til å omtale dem
             så er det også andre som ikke bryr seg om hvilke pronomen du bruker for dem, eller bruker alle pronomen - så lenge det er klart hvem man snakker om.
-        options: 'sjekk ut valgene her [del]{/=her}.'
+        options: 'sjekk ut valgene her [share]{/pronomen=her}.'
     others: 'Andre former'
     othersRaw: 'andre'
     or: 'eller'
