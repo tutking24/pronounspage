@@ -919,19 +919,57 @@ contact:
         Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
-        description:
-            - >
-                Inicjatywy zaimki.pl / {https://pronouns.page=pronouns.page}
-                oraz {https://facebook.com/neutratywy=Słownik Neutratywów Języka Polskiego}
-                są tworzone przez kolektyw „Rada Języka Neutralnego”
-            - >
-                → {/blog/skąd-nazwa-kolektywu=Skąd nazwa?}
-            - >
-                → Logo: {https://zaimki.pl/img/logo-full.png=PNG}, {https://zaimki.pl/img/logo-full.svg=SVG}
+        description: >
+            Jesteśmy kolektywem queerowym zajmującym się
+            zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.
+            Wspieramy również działania na rzecz równości i sprawiedliwości społecznej.
+        extra:
+            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa?}'
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'
         upcoming: 'Nadchodzące wersje językowe'
+        credentials:
+            header: 'Kwalifikacje'
+            description:
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu
+                    1) osobami używającymi języka polskiego, 2) osobami niebinarnymi i sojuszniczymi.
+                    Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Oto zatem lista osób członkowskich chcących się tymi informacjami podzielić:
+        join:
+            header: 'Dołącz do nas!'
+            encouragement: >
+                Zależy Ci na rozwoju języka niebinarnego i neutralnego płciowo?
+                Bliska jest Ci działalność naszego kolektywu i chcesz nam w niej pomóc? Super!
+                Dodatkowe ręce do pracy są bardzo mile widziane!
+            areasIntro: 'Obszary, w których możesz pomóc, to na przykład:'
+            areas:
+                - 'uzupełnianie i moderowanie słowników,'
+                - 'uzupełnianie i moderowanie korpusu,'
+                - 'tworzenie grafik i postów na social media,'
+                - 'odpowiadanie na wiadomości,'
+                - 'moderacja wizytówek,'
+                - 'tłumaczenie,'
+                - 'koordynacja tworzenia nowych wersji językowych,'
+                - 'teksty na bloga,'
+                - 'programowanie,'
+                - '…'
+            allies: >
+                Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne niekoniecznie,
+                dlatego zapraszamy do współpracy również binarne osoby sojusznicze.
+            how: 'Jak dołączyć? Przyślij nam maila na {mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}, a w nim:'
+            application:
+                - 'przedstaw się,'
+                - 'podlinkuj do swojego profilu na portalu zaimki.pl,'
+                - 'podlinkuj do swoich mediów społecznościowych,'
+                - 'napisz, czy masz jakieś doświadczenie aktywistyczne,'
+                - 'napisz, czym chcesz się zajmować w kolektywie.'
 
 support:
     header: 'Wsparcie'
