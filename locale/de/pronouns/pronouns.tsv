@@ -11,6 +11,7 @@ ey,ey/emm	Neopronomen „ey/em“	FALSE	ey	emm	emm	eys	eys									FALSE	FALSE	T
 et,et/siem	Neopronomen „et“	FALSE	et	siem	sien	sierer	sier									FALSE	FALSE	TRUE
 hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sirer	sir									FALSE	FALSE	TRUE
 hen,hen/hen	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FALSE	FALSE	TRUE
+hie,hie/hein	Neopronomen „hen“	FALSE	hie	hiem	hie	heiner	hein									FALSE	FALSE	TRUE
 iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses	ikses									FALSE	FALSE	TRUE
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds	inds									FALSE	FALSE	TRUE
 nin,nin/nim	Neopronomen „nin“	FALSE	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE
