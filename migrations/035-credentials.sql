@@ -11,7 +11,7 @@ SET credentials = 'magistra filologii angielskiej',
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'kafka');
 
 UPDATE profiles
-SET credentials = 'magister filologii angielskiej|student filologii hiszpańskiej',
+SET credentials = 'magister filologii angielskiej|student filologii hiszpańskiej|tłumacz',
     credentialsLevel = 5
 WHERE locale = 'pl' AND userId = (SELECT id FROM users WHERE usernameNorm = 'ausir');
 
