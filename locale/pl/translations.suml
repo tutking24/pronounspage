@@ -940,7 +940,8 @@ contact:
                     Wszystkie mamy prawo kształtować nasz język!
                 - >
                     Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
-                    musimy podzielić się naszym formalnym wykształceniem. Oto zatem (niepełna) lista:
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Oto zatem lista osób członkowskich chcących się tymi informacjami podzielić:
         join:
             header: 'Dołącz do nas!'
             encouragement: >
@@ -959,7 +960,9 @@ contact:
                 - 'teksty na bloga,'
                 - 'programowanie,'
                 - '…'
-            allies: 'Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne nie, dlatego zapraszamy do współpracy również binarne osoby sojusznicze.'
+            allies: >
+                Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne niekoniecznie,
+                dlatego zapraszamy do współpracy również binarne osoby sojusznicze.
             how: 'Jak dołączyć? Przyślij nam maila na {mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}, a w nim:'
             application:
                 - 'przedstaw się,'
