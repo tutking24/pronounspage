@@ -34,8 +34,8 @@ home:
             są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
         - >
             Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
-            „moje {/slowniki/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
-            „proszę przyjść do szkoły z {/slowniki/neutratywy#rodzic=rodzic}em”,
+            „moje {/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
+            „proszę przyjść do szkoły z {/neutratywy#rodzic=rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
             „{/oni=dzwonili} z gazowni”,
             „będę robić”, itp.
@@ -65,7 +65,7 @@ home:
         inclusiveness: >
             <strong>Inkluzywność</strong>
             – by mówiąc o osobie nieznanej lub o grupie osób,
-            nie zakładać ich płci i {/slowniki/inkluzywny=nie wykluczać}.
+            nie zakładać ich płci i {/inkluzywny=nie wykluczać}.
 
 pronouns:
     header: 'Zaimki'
@@ -225,8 +225,8 @@ sources:
     referenced: 'Przykłady użycia'
 
 nouns:
-    header: 'Słowniki'
-    headerLong: 'Słowniki neutralnego języka'
+    header: 'Rzeczowniki'
+    headerLong: 'Neutralne rzeczowniki'
     headerLonger: 'Słowniki neutralnego i niebinarnego języka'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
@@ -252,10 +252,11 @@ nouns:
             Jak opisywać grupy mieszane?
 
         - >
-            Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
-            {/slowniki/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
-            {/slowniki/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
-            i {/slowniki/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
+            Dla rozwiązania tych problemów proponujemy cztery opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
+            {/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
+            {/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
+            {/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć)
+            i {/iksatywy=<strong>iksatywami</strong>} (formy neutralne, używające znaków zastępujacych).
 
     personNouns:
         header: 'Osobatywy'
@@ -373,6 +374,10 @@ nouns:
 
     image: 'Obrazek'
 
+community:
+    header: 'Społeczność'
+    headerLong: 'Społeczność queerowa'
+
 inclusive:
     header: 'Inkluzywność'
     headerLong: 'Słownik inkluzywnego języka'
@@ -442,15 +447,15 @@ faq:
                     W zależności od miejsca i czasu bycie „kobietą” i „mężczyzną” może oznaczać radykalnie różne
                     prawa, obowiązki, zasady… W Europie mężczyźni nosili buty na obcasie i rajtuzy,
                     rdzenne mieszkanki i mieszkańcy Ameryki Północnej od wieków rozróżniają trzecią płeć
-                    {/slowniki/terminologia#Two Spirit=(two-spirit)}, itd. itd.
+                    {/terminologia#Two Spirit=(two-spirit)}, itd. itd.
                 - >
                     Niebinarność to zbiorczy termin („umbrella term”) opisujący doświaczenie osób,
                     które nie wpisują się w binarny podział kobieta/mężczyzna.
-                    Obejmuje na przykład osoby {/slowniki/terminologia#Apłciowość=agender},
-                    {/slowniki/terminologia#genderfluid=genderfluid},
-                    {/slowniki/terminologia#demidziewczę=demidziewczęta},
-                    {/slowniki/terminologia#demichłopię=demichłopców},
-                    i {/slowniki/terminologia#non-binary=wiele innych tożsamości}.
+                    Obejmuje na przykład osoby {/terminologia#Apłciowość=agender},
+                    {/terminologia#genderfluid=genderfluid},
+                    {/terminologia#demidziewczę=demidziewczęta},
+                    {/terminologia#demichłopię=demichłopców},
+                    i {/terminologia#non-binary=wiele innych tożsamości}.
                 - >
                     Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
                     Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
@@ -754,7 +759,7 @@ faq:
                     Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
                     wciąż jednak pomija osoby niebinarne.
                     Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
-                    (alternatywa dla {/slowniki/neutratywy=neutratywów})
+                    (alternatywa dla {/neutratywy=neutratywów})
                     są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
@@ -899,7 +904,7 @@ english:
             We need to come up with a system that also includes
             neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
             (also: nouns like “painter”, “politician”, “journalist” etc. are gendered as well,
-            but that's [book] {/slowniki=a story for another time}).
+            but that's [book] {/rzeczowniki=a story for another time}).
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
@@ -910,7 +915,7 @@ english:
 
 contact:
     header: 'Kontakt'
-    authors: '{/slowniki/neutratywy#autor=Autorza} strony'
+    authors: '{/neutratywy#autor=Autorza} strony'
     quote: >
         Tworzysz jakiś materiał o języku neutralnym? Piszesz lub tłumaczysz na polski postać niebinarną?
         Cudownie! Prosimy, daj nam znać. Chętnie doradzimy i chętnie udostępnimy u siebie linka.
@@ -999,7 +1004,7 @@ profile:
     flags: 'Flagi'
     flagsInfo: >
         Przeciągnij swoje pride'owe flagi do poniższej ramki.
-        Więcej informacji o etykietkach znajdziesz w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+        Więcej informacji o etykietkach znajdziesz w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
@@ -1304,32 +1309,32 @@ calendar:
         11: '%day% listopada'
         12: '%day% grudnia'
     events:
-        pride_month: 'Miesiąc {/slowniki/terminologia#pride=Dumy}'
-        trans_month: 'Miesiąc Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
+        pride_month: 'Miesiąc {/terminologia#pride=Dumy}'
+        trans_month: 'Miesiąc Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
         zaimki_birthday: 'Urodziny zaimki.pl'
-        agender_day: 'Dzień Osób {/slowniki/terminologia#apłciowość=Apłciowych}'
-        asexuality_day: 'Światowy Dzień {/slowniki/terminologia#aseksualność=Aseksualności}'
-        bisexuality_day: 'Dzień Widoczności Osób {/slowniki/terminologia#biseksualność=Biseksualnych}'
-        drag_day: 'Dzień {/slowniki/terminologia#drag=Dragu}'
-        idahobit: 'Międzynarodowy Dzień Przeciw {/slowniki/terminologia#homofobia=Homofobii}, {/slowniki/terminologia#transfobia=Transfobii} i {/slowniki/terminologia#bifobia=Bifobii}'
-        intersex_day: 'Dzień Świadomości nt. {/slowniki/terminologia#homofobia=Interpłciowości}'
-        intersex_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#interpłciowość=Interpłciowych}'
-        lesbian_day: 'Dzień {/slowniki/terminologia#lesbijka=Lesbijek}'
-        lesbian_visibility_day: 'Dzień Widoczności {/slowniki/terminologia#lesbijka=Lesbijek}'
-        coming_out_day: 'Dzień {/slowniki/terminologia#coming%20out=Wychodzenia z Szafy}'
-        nonbinary_day: 'Dzień Osób {/slowniki/terminologia#niebinarność=Niebinarnych}'
-        pan_day: 'Dzień Świadomości nt. {/slowniki/terminologia#panseksualność=Panseksualności} i {/slowniki/terminologia#panromantyczność=Panromantyczności}'
-        trans_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
-        trans_visibility_day: 'Dzień Widoczności Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
+        agender_day: 'Dzień Osób {/terminologia#apłciowość=Apłciowych}'
+        asexuality_day: 'Światowy Dzień {/terminologia#aseksualność=Aseksualności}'
+        bisexuality_day: 'Dzień Widoczności Osób {/terminologia#biseksualność=Biseksualnych}'
+        drag_day: 'Dzień {/terminologia#drag=Dragu}'
+        idahobit: 'Międzynarodowy Dzień Przeciw {/terminologia#homofobia=Homofobii}, {/terminologia#transfobia=Transfobii} i {/terminologia#bifobia=Bifobii}'
+        intersex_day: 'Dzień Świadomości nt. {/terminologia#homofobia=Interpłciowości}'
+        intersex_remembrance_day: 'Dzień Pamięci Osób {/terminologia#interpłciowość=Interpłciowych}'
+        lesbian_day: 'Dzień {/terminologia#lesbijka=Lesbijek}'
+        lesbian_visibility_day: 'Dzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        coming_out_day: 'Dzień {/terminologia#coming%20out=Wychodzenia z Szafy}'
+        nonbinary_day: 'Dzień Osób {/terminologia#niebinarność=Niebinarnych}'
+        pan_day: 'Dzień Świadomości nt. {/terminologia#panseksualność=Panseksualności} i {/terminologia#panromantyczność=Panromantyczności}'
+        trans_remembrance_day: 'Dzień Pamięci Osób {/terminologia#transpłciowość=Transpłciowych}'
+        trans_visibility_day: 'Dzień Widoczności Osób {/terminologia#transpłciowość=Transpłciowych}'
         zero_discrimination_day: 'Dzień „{https://bip.brpo.gov.pl/pl/content/miedzynarodowy-dzien-bez-dyskryminacji=Zero Dyskryminacji}”'
-        arospec_week: 'Tydzień Świadomości nt. Spektrum {/slowniki/terminologia#aromantyczność=Aromantyczności}'
-        asexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#aseksualność=Aseksualności}'
-        bisexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#biseksualność=Biseksualności}'
+        arospec_week: 'Tydzień Świadomości nt. Spektrum {/terminologia#aromantyczność=Aromantyczności}'
+        asexual_week: 'Tydzień Świadomości nt. {/terminologia#aseksualność=Aseksualności}'
+        bisexual_week: 'Tydzień Świadomości nt. {/terminologia#biseksualność=Biseksualności}'
         pronouns_day: 'Dzień {https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio=Zaimków}'
-        trans_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
-        trans_parent_day: 'Dzień Rodzicielstwa Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
-        nonbinary_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#niebinarność=Niebinarności Płciowej}'
-        polyamory_day: 'Dzień {/slowniki/terminologia#poliamoria=Poliamorii}'
+        trans_week: 'Tydzień Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
+        trans_parent_day: 'Dzień Rodzicielstwa Osób {/terminologia#transpłciowość=Transpłciowych}'
+        nonbinary_week: 'Tydzień Świadomości nt. {/terminologia#niebinarność=Niebinarności Płciowej}'
+        polyamory_day: 'Dzień {/terminologia#poliamoria=Poliamorii}'
         homophobia_sport: '{https://www.outsports.com/2020/2/20/21145344/international-day-against-homophobia-sports-twitter=Dzień Walki z Homofobią w Sporcie}'
         gay_uncles_day: '{https://en.wikipedia.org/wiki/Gay_Uncles_Day=Dzień Gejowskich Wujków}'
         lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=Dzień Osób LGBT+ w STEM}'
@@ -1338,7 +1343,7 @@ calendar:
         human_rights_day: '{https://pl.wikipedia.org/wiki/Dzie%C5%84_Praw_Cz%C5%82owieka=Dzień Praw Człowieka}'
         nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Dzień Rodzicielstwa Osób Niebinarnych}'
         trans_prisoner: '{https://transprisoners.net/about/=Dzień Solidarności z Uwięzionymi Osobami Trans}'
-        xenogender_day: 'Dzień Widoczności {/slowniki/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
+        xenogender_day: 'Dzień Widoczności {/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
     banner: 'Obchodzimy właśnie'
     image:
         header: 'Ściągnij w formie obrazka'

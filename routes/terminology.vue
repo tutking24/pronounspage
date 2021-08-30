@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NounsNav/>
+        <CommunityNav/>
 
         <h2>
             <Icon v="flag"/>

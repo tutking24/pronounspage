@@ -1,5 +1,7 @@
 <template>
     <div>
+        <LinksNav/>
+
         <h2>
             <Icon v="globe-americas"/>
             <T>english.headerLonger</T>

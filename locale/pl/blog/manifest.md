@@ -56,7 +56,7 @@ Zwracanie się do kogosia tak, jak sobie życzy, to wręcz podstawa relacji spo�
 Tak jak nie nazwiemy znajomej imieniem, którego nie nosi czy nie lubi,
 tak samo nie zwracajmy się do niej formami gramatycznymi, których nie znosi.
 
-Celowe [złopłcenie (misgendering)](https://zaimki.pl/slowniki/terminologia#z%C5%82op%C5%82cenie)
+Celowe [złopłcenie (misgendering)](https://zaimki.pl/terminologia#z%C5%82op%C5%82cenie)
 to przejaw nienawiści i transfobii.
 
 ### 2. Rodzaj neutralny na równi z męskim i żeńskim
@@ -97,14 +97,14 @@ rodzaju neutralnego jako dobrej i względnie akceptowanej alternatywy do form bi
 [Neutratywy](/neutratywy) to słowa ukute na neutralne wersje słów nacechowanych płciowo,
 analogicznie do feminatywów, czyli wersji żeńskich, na przykład:
 
- - \[ten] fan, \[ta] fanka, \[to] [fanko](/slowniki/neutratywy#fanko)
- - \[ten] twórca, \[ta] twórczyni, \[to] [twórcze](/slowniki/neutratywy#twórcze) 
- - \[ten] pracownik, \[ta] pracownica, \[to] [pracownicze](/slowniki/neutratywy#pracownicze) 
+ - \[ten] fan, \[ta] fanka, \[to] [fanko](/neutratywy#fanko)
+ - \[ten] twórca, \[ta] twórczyni, \[to] [twórcze](/neutratywy#twórcze) 
+ - \[ten] pracownik, \[ta] pracownica, \[to] [pracownicze](/neutratywy#pracownicze) 
  
 Postulujemy, by były umieszczane w słownikach i używane do opisywania osób niebinarnych, które sobie tego życzą.
 
 <section>
-    <a href="/slowniki/neutratywy" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/neutratywy" target="_blank" class="btn btn-outline-primary d-block">
         <span class="fal fa-book-reader"></span>
         Słownik Neutratywów Jezyka Polskiego
     </a>
@@ -196,15 +196,15 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
 ### 4. Osobatywy na określenie zawodów (itp.) nieznanych osób
 
 Choć konkretna osoba może chcieć być opisywana jako „dziennikarz”, „dziennikarka”,
-„[dziennikarcze](/slowniki/neutratywy#dziennikarcze)”, „[dziennikarzu](/slowniki/dukatywy)”, czy jeszcze inaczej,
+„[dziennikarcze](/neutratywy#dziennikarcze)”, „[dziennikarzu](/dukatywy)”, czy jeszcze inaczej,
 tak dla osób o nieznanej płci lub dla grup mieszanych lepiej jest użyć formy, która w ogóle na płeć nie wskazuje –
 jak określenie „osoby dziennikarskie”.
 
-Formy takie, które analogicznie do maskulatywów, feminatyów i neutratywów nazwałośmy „[osobatywami](/slowniki/osobatywy)”.
+Formy takie, które analogicznie do maskulatywów, feminatyów i neutratywów nazwałośmy „[osobatywami](/osobatywy)”.
 Są normatywne i proste do stworzenia i zrozumienia.
 
 <section>
-    <a href="/slowniki/osobatywy" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/osobatywy" target="_blank" class="btn btn-outline-primary d-block">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o osobatywach
     </a>
@@ -225,10 +225,10 @@ Serdecznie zachęcamy do zapoznania się z nimi i używania ich w codziennej mow
 
 ## Podsumowując
 
- - Szanujmy osoby niebinarne, ich płeć i zaimki. [Misgendering](/slowniki/terminologia#misgendering) to przemoc werbalna.
- - Jeśli wybierasz zaimki dla siebie lub postaci niebinarnej, którą tłumaczysz, to polecamy [rodzaj neutralny](/ono) i [neutratywy](/slowniki/neutratywy).
+ - Szanujmy osoby niebinarne, ich płeć i zaimki. [Misgendering](/terminologia#misgendering) to przemoc werbalna.
+ - Jeśli wybierasz zaimki dla siebie lub postaci niebinarnej, którą tłumaczysz, to polecamy [rodzaj neutralny](/ono) i [neutratywy](/neutratywy).
  - Zamiast „rodzaj nijaki” mówmy „rodzaj neutralny”.
- - Przy zwracaniu się do osoby o nieznanej płci preferujmy [formy z iksem](/onx) i [osobatywy](/slowniki/osobatywy).
+ - Przy zwracaniu się do osoby o nieznanej płci preferujmy [formy z iksem](/onx) i [osobatywy](/osobatywy).
  - Mówiąc o grupie osób, używajmy [mnogiego rodzaju neutralnego](/ona/ich).
 
 — [Rada Języka Neutralnego](/kolektyw-rjn)

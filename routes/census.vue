@@ -1,5 +1,7 @@
 <template>
     <div>
+        <CommunityNav/>
+
         <h2>
             <Icon v="user-chart"/>
             <T>census.headerLong</T>
