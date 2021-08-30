@@ -73,7 +73,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'slowniki'
+    route: 'rzeczowniki'
     routeMain: 'neutratywy'
     collapsable: false
     plurals: true
@@ -86,6 +86,9 @@ nouns:
         - 'dukatywy'
         - 'osobatywy'
         - 'iksatywy'
+
+community:
+    route: 'terminologia'
 
 inclusive:
     enabled: true
@@ -734,7 +737,7 @@ links:
                     To nie jest pocisk, jaki myślicie że jest.
                 - >
                     Nie „autorszcza”, a „autorza”. Można sprawdzić, jakich form używamy:
-                    słownik, który krytykujecie, jest {/slowniki/neutratywy#autor=na wyciągnięcie ręki}!
+                    słownik, który krytykujecie, jest {/neutratywy#autor=na wyciągnięcie ręki}!
                 - >
                     W skrócie: krótki akapit zajawkowy jest naszpikowany manipulacją, sugeruje jakobyśmy nienawidziły polszczyzny,
                     wkłada słowa w nasze usta i demonstruje brak riserczu na temat, na który piszecie.
@@ -1164,7 +1167,7 @@ census:
             writein: true
             instruction:
                 - >
-                    Więcej informacji <a href="/slowniki" target="_blank">w zakładce „Słowniki”</a>.
+                    Więcej informacji <a href="/rzeczowniki" target="_blank">w zakładce „Słowniki”</a>.
                 - >
                     Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
                     ale nie możesz tego bezpiecznie robić, to je zaznacz.
@@ -1242,7 +1245,7 @@ census:
                     Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
-                    Znaczenie etykietek możesz znaleźć w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
 
                 - >
                     Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
@@ -1335,11 +1338,11 @@ redirects:
     - { from: '^/slowniki/inkluzywny', to: '/inkluzywny' }
     - { from: '^/slowniki/inkluzywnosc', to: '/inkluzywny' }
     - { from: '^/slowniki/terminologia', to: '/terminologia' }
-    - { from: '^/rzeczowniki$', to: '/slowniki' }
-    - { from: '^/slownik$', to: '/slowniki' }
-    - { from: '^/s%C5%82ownik$', to: '/slowniki' }
-    - { from: '^/s%C5%82owniki$', to: '/slowniki' }
-    - { from: '^/słownik$', to: '/s%C5%82owniki' }
+    - { from: '^/slowniki', to: '/rzeczowniki' }
+    - { from: '^/slownik$', to: '/rzeczowniki' }
+    - { from: '^/s%C5%82ownik$', to: '/rzeczowniki' }
+    - { from: '^/s%C5%82owniki$', to: '/rzeczowniki' }
+    - { from: '^/słownik$', to: '/rzeczowniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }

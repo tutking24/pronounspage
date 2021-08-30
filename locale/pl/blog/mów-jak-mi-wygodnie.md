@@ -40,7 +40,7 @@ Niezmiernie nam miło, że pojawił się link do zaimki.pl!
 Niestety, jego obecność sprawia też, że trudniej autorce wybaczyć niewiedzę.
 Bo na wszystkie wyrażone przez nią wątpliwości tam właśnie dostarczamy odpowiedzi.
 
-Zaimek wskazujący w [systemie Dukaja](/slowniki/dukatywy) to „tenu”, nie „tu” –
+Zaimek wskazujący w [systemie Dukaja](/dukatywy) to „tenu”, nie „tu” –
 aczkolwiek choć w _Perfekcyjnej Niedoskonałości_ używana jest ta pierwsza forma,
 to w uzusie, owszem, występuje też ta druga.
 
@@ -79,7 +79,7 @@ A my jesteśmy niebinarne. Po prostu.
 
 Kinga pokazuje, że mimo akceptacji naszych płci, wciąż widzi nas… jako kobiety i mężczyzn.
 I to trochę przykre. A wystarczyło pogadać z osobami transpłciowymi i dowiedzieć się,
-że w tym kontekście idealnie pasowałoby określenie [płeć męska/żeńska nadana przy urodzeniu](https://zaimki.pl/slowniki/terminologia#agab).
+że w tym kontekście idealnie pasowałoby określenie [płeć męska/żeńska nadana przy urodzeniu](https://zaimki.pl/terminologia#agab).
 Bo owszem, istnieją różnice w doświadczeniu niebinarności w zależności od tego, jak daną osobę odbiera społeczeństwo,
 ale Kinga zdaje się tego nie wiedzieć, tylko _zakładać_ (w końcu pisze „_musi to_ wyglądać inaczej”, „_może_ być łatwiej”).
 Pokazuje też, że naszą niebinarność postrzega głównie jako przebieranki – ubiór, długość włosów, zachowanie…

@@ -38,7 +38,7 @@
                             </small>
                         </li>
                         <li>
-                            <nuxt-link to="/slowniki/neutratywy"><strong>Neutratywy</strong></nuxt-link>
+                            <nuxt-link to="/neutratywy"><strong>Neutratywy</strong></nuxt-link>
                             <br/>
                             <small>
                                 (to „dziennikarze”, „twórcze”, „niebinie”…)
@@ -68,7 +68,7 @@
                             </small>
                         </li>
                         <li>
-                            <nuxt-link to="/slowniki/osobatywy"><strong>Osobatywy</strong></nuxt-link>
+                            <nuxt-link to="/osobatywy"><strong>Osobatywy</strong></nuxt-link>
                             <br/>
                             <small>
                                 („osoby pracujące”, „osoby wolontariackie”…)

@@ -120,7 +120,7 @@ ale zwracamy uwagę, że są jednak trochę męskocentryczne – żeńskie końc
 
 > Z szacunku do tożsamości płciowej, postanowiliśmy korzystać z zaimków "they/oni", jak życzą sobie Demi. Dziś, jak twierdzą, nie chcą już dłużej ukrywać tego, kim naprawdę są. W mediach społecznościowych przedstawiono nagrania oraz wpisy, w których można zobaczyć wytłumaczenie o podjęciu niełatwej decyzji.
 
-[Osobatywy](/slowniki/osobatywy) na przemian z [liczbą mnogą](/oni) 🥰
+[Osobatywy](/osobatywy) na przemian z [liczbą mnogą](/oni) 🥰
 
 ## [Vibez](https://vibez.pl/wydarzenia/dlaczego-demi-lovato-jest-piosenkarko-czyli-jak-mowic-o-osobach-niebinarnych-6641697426492384a)
 

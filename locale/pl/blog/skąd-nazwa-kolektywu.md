@@ -65,7 +65,7 @@ którymi mogłyby się posługiwać. Katalogujemy je, opisujemy, wyszukujemy prz
 budujemy słownik form potencjalnych,
 promujemy język niebinarny i neutralny płciowo w mediach oraz na naszych społecznościówkach,
 edukujemy społeczeństwo o niebinarności i żądamy szacunku do tożsamości i zaimków drugiego człowieka.
-Z jednej strony nie czujemy się [eksperciami](/slowniki/neutratywy#ekspercie) w kwestii języka neutralnego i niebinarnego,
+Z jednej strony nie czujemy się [eksperciami](/neutratywy#ekspercie) w kwestii języka neutralnego i niebinarnego,
 ale z drugiej – kto miałoby nimi być, jeśli nie my?
 
 Robimy to wszystko oddolnie.

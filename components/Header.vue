@@ -146,33 +146,26 @@
                     });
                 }
 
-                if (this.config.sources.enabled) {
-                    links.push({
-                        link: '/' + this.config.sources.route,
-                        icon: 'books',
-                        text: this.$t('sources.header'),
-                        textLong: this.$t('sources.headerLong'),
-                    });
-                }
-
                 if (this.config.nouns.enabled) {
                     const extras = [];
                     for (let subroute of this.config.nouns.subroutes || []) {
-                        extras.push(`/${this.config.nouns.route}/${subroute}`);
+                        extras.push(`/${subroute}`);
                     }
-                    if (this.config.inclusive.enabled) {
-                        extras.push(`/${this.config.inclusive.route}`);
-                    }
-                    if (this.config.terminology.enabled) {
-                        extras.push(`/${this.config.terminology.route}`);
-                    }
-
                     links.push({
                         link: '/' + this.config.nouns.route,
                         icon: 'book',
                         text: this.$t('nouns.header'),
                         textLong: this.$t('nouns.headerLong'),
                         extra: extras,
+                    });
+                }
+
+                if (this.config.sources.enabled) {
+                    links.push({
+                        link: '/' + this.config.sources.route,
+                        icon: 'books',
+                        text: this.$t('sources.header'),
+                        textLong: this.$t('sources.headerLong'),
                     });
                 }
 
@@ -206,37 +199,29 @@
                             'blogEntry',
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
-                            '/' + this.config.people.route,
-                            // TODO temporary this.config.calendar ? '/' + this.config.calendar.route : '',
+                            this.config.english && this.config.english.enabled ? '/' + this.config.english.route : '',
                         ],
                     });
                 }
 
-                // TODO temporary
-                if (this.config.calendar && this.config.calendar.enabled) {
+                if ((this.config.terminology.enabled && this.config.terminology.published)
+                    || (this.config.calendar && this.config.calendar.enabled)
+                    || this.config.census.enabled
+                    || this.config.inclusive.enabled
+                    || (this.config.people && this.config.people.enabled)
+                ) {
                     links.push({
-                        link: '/' + this.config.calendar.route,
-                        icon: 'calendar-star',
-                        text: this.$t('calendar.header'),
-                        textLong: this.$t('calendar.headerLong'),
-                    });
-                }
-
-                if (this.config.english.enabled) {
-                    links.push({
-                        link: '/' + this.config.english.route,
-                        icon: 'globe-americas',
-                        text: this.$t('english.header'),
-                        textLong: this.$t('english.headerLong'),
-                    });
-                }
-
-                if (this.config.census.enabled) {
-                    links.push({
-                        link: '/' + this.config.census.route,
-                        icon: 'user-chart',
-                        text: this.$t('census.header'),
-                        textLong: this.$t('census.headerLong'),
+                        link: '/' + this.config.community.route,
+                        icon: 'users',
+                        text: this.$t('community.header'),
+                        textLong: this.$t('community.headerLong'),
+                        extra: [
+                            this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
+                            this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
+                            this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
+                            this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
+                            this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
+                        ],
                     });
                 }
 
