@@ -352,6 +352,10 @@ links:
             icon: 'book'
             url: 'https://jakmowicolgbt.pl'
             headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
+        -
+            icon: 'sticky-note'
+            url: 'http://www.todziala.org'
+            headline: 'Kamapnia: To działa!'
     mediaGuests:
         -
             icon: 'newspaper'
@@ -432,6 +436,11 @@ links:
             url: 'https://www.facebook.com/gdynaukajestkobieta/videos/193680249317891'
             headline: 'Tip-top. Krok w stronę feminatywów.'
             extra: 'Sybil, <strong>Gdy Nauka jest Kobietą UAM</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://spoti.fi/3DsrA0J'
+            headline: 'Język niebinarny dla początkujących'
+            extra: ' – Archie w podcaście <strong>Dobrze zrozumieć</strong> w ramach kampanii {http://www.todziala.org=<strong>To działa!</strong>}'
     mediaMentions:
         -
             icon: 'newspaper'
