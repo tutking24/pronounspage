@@ -47,6 +47,9 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
             teamName: profile.teamName,
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
+            credentials: profile.credentials ? profile.credentials.split('|') : [],
+            credentialsLevel: profile.credentialsLevel,
+            credentialsName: profile.credentialsName,
             card: profile.card,
         };
     }
@@ -160,6 +163,9 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 teamName = ${req.isGranted() ? req.body.teamName || null : ''},
                 footerName = ${req.isGranted() ? req.body.footerName || null : ''},
                 footerAreas = ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''},
+                credentials = ${req.isGranted() ? req.body.credentials.join('|') || null : null},
+                credentialsLevel = ${req.isGranted() ? req.body.credentialsLevel || null : null},
+                credentialsName = ${req.isGranted() ? req.body.credentialsName || null : null},
                 card = NULL
             WHERE id = ${ids[0]}
         `);

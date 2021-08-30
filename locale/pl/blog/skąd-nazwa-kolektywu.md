@@ -2,7 +2,7 @@
 
 <small>2021-08-15 | [@andrea](/@andrea)</small>
 
-![Logo RJN](/img/logo-full.png)
+![Logo RJN](/img-local/logo/logo-full.png)
 
 Nie jest tajemnicą ani zagadką, że nazwa [naszego kolektywu](/kolektyw-rjn) nawiązuje do
 [Rady Języka Polskiego przy Polskiej Akademii Nauk](https://pl.wikipedia.org/wiki/Rada_J%C4%99zyka_Polskiego).
