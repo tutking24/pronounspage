@@ -2,7 +2,7 @@
     <section>
         <h3>
             <Icon v="fist-raised"/>
-            <T>home.mission.header</T>:
+            <T>home.mission.header</T>
         </h3>
 
         <p class="h5">

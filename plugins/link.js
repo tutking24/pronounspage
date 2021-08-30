@@ -46,6 +46,10 @@ const LINK_PROVIDERS = {
         homepage: 'https://cake.avris.it',
         name: 'Attraction Layer Cake',
     },
+    orcid: {
+        regex: '^https?://(?:www.)?orcid.org/([^/]+)',
+        icon: 'https://orcid.org/assets/icons/favicon.ico',
+    },
 };
 
 export default {
