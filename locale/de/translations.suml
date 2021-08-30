@@ -342,10 +342,10 @@ contact:
     header: 'Kontakt'
     authors: 'Autor*innen der Website'
     team:
-        name: 'Das „Neutral Language Council“ Kollektiv'
+        name: 'Das „Rat für neutrale Sprache“ Kollektiv'
         description:
             - >
-                {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Neutral Language Council“ erstellt.
+                {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Rat für neutrale Sprache“ erstellt.
         logo: 'Das Logo des Kollektivs ist eine Kombination des Transgender Symbols und einer Sprechblase, die Sprache symbolisiert.'
         members: 'aktuelle Mitglieder'
         member: 'Mitglied des Kollektivs'
