@@ -2,11 +2,6 @@
 
 <small>2021-08-31 | Collective</small>
 
-<figure class="float-lg-end">
-    <img src="/img-local/blog/inclusivity.png" class="hero" alt="I want to exclude one of you. | Well then you aren't welcome | So much for inclusivity!">
-    <figcaption><small><a href="https://twitter.com/KatysCartoons/status/1432641089249452033" target="_blank" rel="noopener">By @KatysCartoons on Twitter</a></small></figcaption>
-</figure>
-
 We are a queer collective. All of us know perfectly well what it's like to have our identities
 questioned, ridiculed and invalidated. And we definitely don't want to make our queer siblings suffer the same.
 That's why we're inclusive. When we say ACAB, that also includes the _identity police_.
