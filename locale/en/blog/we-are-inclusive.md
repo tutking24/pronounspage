@@ -4,7 +4,17 @@
 
 We are a queer collective. All of us know perfectly well what it's like to have our identities
 questioned, ridiculed and invalidated. And we definitely don't want to make our queer siblings suffer the same.
-That's why we're inclusive. When we say ACAB, that also includes the _identity police_.
+That's why we're inclusive. When we say ACAB*, that also includes the _identity police_.
+
+<p class="small">
+    * If you have a problem with us saying ACAB,
+    please <a href="https://en.wikipedia.org/wiki/ACAB" target="_blank" rel="noopener">learn its history</a>,
+    it originated in the 1920s in the UK and doesn't have to have anything to do with your US-centric view of the world.
+    The US isn't the only country in the world,
+    connotations of words and phrases might differ vastly.
+    We're predominantly based in Poland where queers regularly suffer at the hands of the cops.
+    The police don't need any Black people around to be bastards towards the minorities.
+</p>
 
 Our team of volunteers creates (among many other things we do) a tool to create a card where you can present
 your pronouns, names, identities and more.
