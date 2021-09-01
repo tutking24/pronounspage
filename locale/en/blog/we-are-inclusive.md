@@ -10,10 +10,13 @@ That's why we're inclusive. When we say ACAB*, that also includes the _identity 
     * If you have a problem with us saying ACAB,
     please <a href="https://en.wikipedia.org/wiki/ACAB" target="_blank" rel="noopener">learn its history</a>,
     it originated in the 1920s in the UK and doesn't have to have anything to do with your US-centric view of the world.
-    The US isn't the only country in the world,
-    connotations of words and phrases might differ vastly.
+    It feels really sad to see it taken over by US-centric perspective and be gatekept from using it.
+    The US isn't the only country in the world, connotations of words and phrases might differ vastly.
     We're predominantly based in Poland where queers regularly suffer at the hands of the cops.
-    The police don't need any Black people around to be bastards towards the minorities.
+    The police here don't need any Black people around to be bastards towards the minorities.
+    Please be assured that we're wholeheartedly supporting the fight for racial equality everywhere in the world.
+    Our use of ACAB isn't meant to compare our experiences in any way or to diminish the struggle od BIPOC.
+    The only people it's supposed to target are the cops abusing their power for whatever reason.
 </p>
 
 Our team of volunteers creates (among many other things we do) a tool to create a card where you can present
