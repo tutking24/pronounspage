@@ -12,7 +12,8 @@ That's why we're inclusive. When we say ACAB*, that also includes the _identity 
     it originated in the 1920s in the UK and doesn't have to have anything to do with your US-centric view of the world.
     It feels really sad to see it taken over by US-centric perspective and be gatekept from using it.
     The US isn't the only country in the world, connotations of words and phrases might differ vastly.
-    We're predominantly based in Poland where queers regularly suffer at the hands of the cops.
+    We're predominantly based in Poland (although we do have members abroad too, including POC)
+    where queers regularly suffer at the hands of the cops.
     The police here don't need any Black people around to be bastards towards the minorities.
     Please be assured that we're wholeheartedly supporting the fight for racial equality everywhere in the world.
     Our use of ACAB isn't meant to compare our experiences in any way or to diminish the struggle od BIPOC.
@@ -47,6 +48,11 @@ out of which probably the most prominent example is the
 – used mostly by a-spec people, but not necessarily restricted just for them.
 It's perfectly possible to be, for example, biromantic and homosexual, or bisexual and homoromantic.
 
+Also keep in mind that “bi” in “bisexual” [stands for attraction to two or more genders](https://lgbta.wikia.org/wiki/Bisexual)
+– which don't necessarily have to be men and women.
+If you're outraged that _“bi lesbians aren't valid, because lesbians can't be attracted to men”_,
+you're either forgetting or intentionally ignoring the existence of other genders. Please don't be enbyphobic.
+
 We don't think it's our place to police people's identities.
 We don't necessarily all define the same labels in the same way,
 and we're not saying that you can't have a more strict definition of lesbian,
@@ -72,3 +78,9 @@ maybe their experience of gender, sexuality and romantic attraction is just too 
 Let's not turn queer people against each other.
 Let's not alienate other parts of our community just to feel better about ourselves.
 The more we fight internally, the more power our oppressors have against all of us.
+
+We're inclusive and accepting of our queer siblings.
+We're a queer collective, so being attacked by queerphobes is nothing new and doesn't surprise us at all
+– although it is sad, if those queerphobes come from within the community.
+But even if we have to endure an angry mob spamming our mentions and DMs with insults and wishes of death (!),
+it's a small price to pay for being able to voice our support and provide a safe space for people who need it.
