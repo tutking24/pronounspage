@@ -841,7 +841,7 @@ links:
             icon: 'b:facebook'
             url: 'https://www.facebook.com/6kolorowgierwideo/photos/a.101447011804889/257805982835657/'
             headline: 'Post o dukaizmach w grze Fallout'
-            extra: '– 6 kolorów gier wideo'
+            extra: '– <strong>6 kolorów gier wideo</strong>'
             quote: >
                 Warto w tym miejscu zacytować raport Słownika Neutratywów Języka Polskiego
                 {https://zaimki.pl/blog/spis-2021=Niebinarny Spis Powszechny 2021}
@@ -849,6 +849,16 @@ links:
                 66,4% dla rodzaju żeńskiego i 59,8% dla męskiego:
                 “53,6% osób używa wyłącznie form binarnych. Raptem 8,4% – wyłącznie form niebinarnych.
                 38,9% osób używa zamienne form męskich i żeńskich”.
+        -
+            icon: 'newspaper'
+            url: 'https://m.pch24.pl/wywiad-z-aktywiszczem-czyli-o-niebinarnych-zaimkach-i-jezykowych-wywrotowcach/'
+            headline: '„Wywiad z aktywiszczem”. Czyli o niebinarnych zaimkach i językowych wywrotowcach'
+            extra: '– <strong>PCh24.pl</strong>'
+            quote: >
+                Zdaniem czołowych aktywistów tego środowiska, zwyczajne stosowanie
+                rodzajów męskiego i żeńskiego wynika z nieuświadomionej przemocy względem osób niebinarnych.
+                Zwalczyć ją ma oswojenie społeczeństwa z wykwitem „aktywiszczy” i „partnerszczy”,
+                oraz zaszczepienie wrażliwości na „misgendering”, czyli używanie „niewłaściwych” zaimków.
     socials:
         -
             icon: 'twitter'
