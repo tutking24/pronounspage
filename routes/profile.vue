@@ -41,7 +41,7 @@
                     </button>
                 </small>
                 <small v-else-if="profile.card === ''">
-                    <Icon v="cogs"/>
+                    <Spinner/>
                     <T>profile.card.generating</T>
                 </small>
                 <template v-if="profile.card">
