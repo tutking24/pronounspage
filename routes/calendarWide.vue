@@ -8,7 +8,7 @@
             <span class="h4 mt-2">
                 <nuxt-link to="/">
                     <Icon v="tags"/>
-                    <T>title</T>/{{ config.calendar.route }}
+                    <T>domain</T>/{{ config.calendar.route }}
                 </nuxt-link>
             </span>
         </h2>
