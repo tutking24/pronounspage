@@ -1,10 +1,13 @@
 title: 'zaimki.pl'
-description: 'Udostępniamy tutaj linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.'
+description: 'Kompendium wiedzy o języku niebinarnym i neutralnym płciowo.'
 
 home:
     link: 'Strona główna'
     header: 'Zaimki'
     headerLong: 'Lista zaimków'
+    welcome: 'Witamy na stronie zaimki.pl!'
+    intro: >
+        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym i neutralnym płciowo.
     why: 'Skąd potrzeba niebinarnych zaimków?'
     about:
         - >
@@ -69,7 +72,7 @@ home:
 
 pronouns:
     header: 'Zaimki'
-    headerLong: 'Niebinarne zaimki i inne formy'
+    headerLong: 'Niebinarne zaimki<br/> i inne formy'
     examples: 'Przykłady użycia w zdaniu'
     plural: 'Liczba mnoga'
     intro: 'Moje zaimki to'
@@ -1064,11 +1067,6 @@ profile:
         jokingly: 'Żartobliwie'
         meh: 'Spoko'
         no: 'Nie'
-    banner: >
-        Naszej strony możesz też użyć do stworzenia wizytówki, {/@andrea=takiej jak ta},
-        zawierającej Twoje imiona, zaimki, flagi pride'owe, lubiane słowa, itp.
-        Potem możesz do niej podlinkować w swoim bio czy stopce maila.
-        Wystarczy, że założysz konto {/konto=tutaj}.
     bannerButton: 'Stwórz wizytówkę'
     card:
         link: 'Obrazek'

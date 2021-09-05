@@ -5,6 +5,9 @@ home:
     link: 'Homepage'
     header: 'Pronouns'
     headerLong: 'List of pronouns'
+    welcome: 'Welcome to pronouns.page!'
+    intro: >
+        We're creating a source of information about nonbinary and gender neutral language.
     why: 'What''s the deal with pronouns?'
     about:
         - >

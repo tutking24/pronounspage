@@ -141,7 +141,7 @@
                         link: '/' + this.config.pronouns.route,
                         icon: 'tags',
                         text: this.$t('pronouns.header'),
-                        textLong: this.$t('pronouns.headerLong'),
+                        textLong: this.$t('pronouns.headerLong').replace( /(<([^>]+)>)/ig, ''),
                         extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
                     });
                 }
