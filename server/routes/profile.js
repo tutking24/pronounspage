@@ -219,4 +219,32 @@ router.post('/profile/report/:username', handleErrorAsync(async (req, res) => {
     return res.json('OK');
 }));
 
+router.post('/profile/request-card', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        return res.status(400).json({error: 'Missing user'});
+    }
+
+    await req.db.get(SQL`
+        UPDATE profiles
+        SET card = ''
+        WHERE userId=${req.user.id} AND locale=${global.config.locale} AND card IS NULL 
+    `);
+
+    return res.json('OK');
+}));
+
+router.get('/profile/has-card', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        return res.status(400).json({error: 'Missing user'});
+    }
+
+    const card = await req.db.get(SQL`
+        SELECT card
+        FROM profiles
+        WHERE userId=${req.user.id} AND locale=${global.config.locale}
+    `);
+
+    return res.json(card ? card.card : null);
+}));
+
 export default router;

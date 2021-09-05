@@ -405,7 +405,19 @@ faq:
                 - >
                     You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
                     Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly do you mean.
-
+        business:
+            question: 'Are you a business?'
+            answer:
+                - >
+                    Nope. We're volunteers.
+                    We create the website with our own work.
+                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
+                    the rest comes out of our own pockets
+                    and {/contact#support=your donations} – for which we're very grateful! ❤️
+                - >
+                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
+                    you're doing us a favour. It's not like we were making any money on you.
+                    Exclusionists and queerphobes aren't welcome here.
 links:
     header: 'Links'
     headerLong: 'Extra links'
@@ -424,6 +436,10 @@ english: ~
 contact:
     header: 'Contact'
     authors: 'Authors of the website'
+    hate: >
+        Wanna send us queerphobic hate mail?
+        Just give it up, we're not discussing with trolls.
+        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
     team:
         name: 'The “Neutral Language Council” collective'
         description:
@@ -535,6 +551,7 @@ profile:
     bannerButton: 'Create a card'
     card:
         link: 'Card picture'
+        generate: 'Generate'
         generating: 'Generation in progress…'
     empty: 'This person hasn''t created any cards yet.'
 

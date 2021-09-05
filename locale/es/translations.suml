@@ -459,6 +459,7 @@ profile:
     bannerButton: 'Crear una tarjeta'
     card:
         link: 'Imagen de la tarjeta'
+        generate: 'Generate' # TODO
         generating: 'Generando…'
     empty: 'Esta persona todavía no ha creado ninguna tarjeta.'
 
