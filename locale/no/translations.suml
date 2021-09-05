@@ -453,6 +453,7 @@ profile:
     bannerButton: 'Lag et kort'
     card:
         link: 'Kort bilde'
+        generate: 'Generate' # TODO
         generating: 'Genererer, vennligst vent'
     empty: 'Denne personen har ikke laget noen kort enda.'
 

@@ -1067,6 +1067,7 @@ profile:
     bannerButton: 'Stwórz wizytówkę'
     card:
         link: 'Obrazek'
+        generate: 'Wygeneruj'
         generating: 'Trwa generowanie obrazka…'
     empty: 'Ta osoba nie stworzyła jeszcze żadnych wizytówek.'
 

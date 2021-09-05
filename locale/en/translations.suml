@@ -548,6 +548,7 @@ profile:
     bannerButton: 'Create a card'
     card:
         link: 'Card picture'
+        generate: 'Generate'
         generating: 'Generation in progress…'
     empty: 'This person hasn''t created any cards yet.'
 
