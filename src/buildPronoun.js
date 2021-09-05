@@ -76,7 +76,7 @@ export const buildPronoun = (pronouns, path) => {
         const slashMorphemes = process.env.CONFIG.pronouns.slashes === true
             ? MORPHEMES
             : process.env.CONFIG.pronouns.slashes;
-        if (p.length === slashMorphemes.length) {
+        if (slashMorphemes && p.length === slashMorphemes.length) {
             pronoun = new Pronoun(
                 `${p[0]}/${p[1]}`,
                 '',
