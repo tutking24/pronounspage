@@ -442,6 +442,7 @@ profile:
 
     card:
         link: 'Kaartbeeld'
+        generate: 'Generate' # TODO
         generating: 'Je kaartbeeld wordt gegenereerd …'
     empty: 'Deze person heeft nog geen kaarten gegenereerd.'
 

@@ -30,11 +30,19 @@
                     pronouns.page/@{{user.username}}
                 </a>
             </div>
-            <!--
             <div v-if="($user() && $user().username === profile.username) || $isGranted('users')">
                 <small>
                     <Icon v="id-card"/>
                     <T>profile.card.link</T>:
+                </small>
+                <small v-if="profile.card === null">
+                    <button class="btn btn-outline-success btn-sm" @click="generateCard">
+                        <T>profile.card.generate</T>
+                    </button>
+                </small>
+                <small v-else-if="profile.card === ''">
+                    <Icon v="cogs"/>
+                    <T>profile.card.generating</T>
                 </small>
                 <template v-if="profile.card">
                     <a :href="profile.card" target="_blank" rel="noopener"
@@ -48,9 +56,7 @@
                         <T>mode.dark</T>
                     </a>
                 </template>
-                <small v-else><T>profile.card.generating</T></small>
             </div>
-            -->
         </Profile>
 
         <Ban :user="user"/>
@@ -97,6 +103,7 @@
         data() {
              return {
                  terms: [],
+                 cardCheckHandle: null,
             }
         },
         async asyncData({ app, route }) {
@@ -136,6 +143,36 @@
 
                 return this.user.username;
             },
+        },
+        watch: {
+            profile() {
+                this.startCheckingForCard();
+            },
+        },
+        methods: {
+            async generateCard() {
+                await this.$axios.$post(`/profile/request-card`);
+                this.profile.card = '';
+                this.startCheckingForCard();
+            },
+            startCheckingForCard() {
+                if (this.cardCheckHandle || !this.profile || this.profile.card) {
+                    return;
+                }
+                this.cardCheckHandle = setInterval(this.checkForCard, 3000);
+            },
+            async checkForCard() {
+                try {
+                    const card = await this.$axios.$get(`/profile/has-card`);
+                    console.log(card);
+                    if (card) {
+                        this.profile.card = card;
+                        clearInterval(this.cardCheckHandle);
+                    }
+                } catch {
+                    clearInterval(this.cardCheckHandle);
+                }
+            }
         },
         head() {
             return head({

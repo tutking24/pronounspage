@@ -13,6 +13,10 @@ const urlBases = {}
 for (let [code, , url, ] of locales) {
     urlBases[code] = url + '/card/@'; // 'http://localhost:3000/card/@'
 }
+const domainLocaleMap = {};
+for (let [code, , url, ] of locales) {
+    domainLocaleMap[url.replace(/^https?:\/\//, '')] = code;
+}
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
@@ -21,13 +25,13 @@ const modes = ['light', 'dark'];
 (async () => {
     const db = await dbConnection();
     while (true) {
-        await sleep(5000);
+        await sleep(3000);
 
         const profiles = (await db.all(`
             SELECT profiles.id, profiles.locale, users.username
             FROM profiles
                      LEFT JOIN users on profiles.userId = users.id
-            WHERE profiles.card IS NULL
+            WHERE profiles.card = ''
             ORDER BY RANDOM()
             LIMIT 6
         `)).filter(({locale}) => !isHighLoadTime(locale));
@@ -47,6 +51,7 @@ const modes = ['light', 'dark'];
                 const pr = new Pageres({
                     darkMode: mode === 'dark',
                     delay: 3,
+                    scale: 2,
                 });
 
                 for (let {locale, username} of profiles) {
@@ -55,8 +60,9 @@ const modes = ['light', 'dark'];
                 }
 
                 for (let buffer of await pr.run()) {
-                    const username = buffer.filename.match(/!card!@(.*)-1024x300\.png/)[1];
-                    results[mode][username] = buffer;
+                    const [, domain, username] = buffer.filename.match(/(.*)!card!@(.*)-1024x300\.png/);
+                    const locale = domainLocaleMap[domain];
+                    results[mode][locale + '/' + username] = buffer;
                 }
             }
         } catch (e) {
@@ -69,7 +75,7 @@ const modes = ['light', 'dark'];
             const key = `card/${locale}/${username}-${cardId}.png`;
             for (let mode of modes) {
                 console.log(`Uploading @${username} (${locale}, ${mode}) – ${cardId}`);
-                const buffer = results[mode][username];
+                const buffer = results[mode][locale + '/' + username];
 
                 const s3putResponse = await s3.putObject({
                     Key: mode === 'dark' ? key.replace('.png', '-dark.png') : key,

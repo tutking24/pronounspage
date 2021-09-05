@@ -426,6 +426,7 @@ profile:
     # TODO
     card:
         link: '名片圖片'
+        generate: 'Generate' # TODO
         generating: '生成中……'
     empty: '此用戶還沒有創造任何名片'
     loginRequired: '{/account=登入}以提交項目'
