@@ -42,7 +42,7 @@
             <Authors/>
         </section>
 
-        <Support/>
+        <Support id="support"/>
 
         <Mission/>
     </div>
