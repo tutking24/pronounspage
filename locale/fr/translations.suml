@@ -453,6 +453,7 @@ profile:
     bannerButton: 'Créer une carte'
     card:
         link: 'Photo de la carte'
+        generate: 'Generate' # TODO
         generating: 'En cours de création...'
     empty: 'Cette personne n''a pas encore créé de carte'
 
