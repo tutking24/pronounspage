@@ -30,7 +30,7 @@
                     pronouns.page/@{{user.username}}
                 </a>
             </div>
-            <div v-if="($user() && $user().username === username) || $isGranted('users')">
+            <div v-if="($user() && $user().username === username) || ($isGranted('users') && profile.card)">
                 <small>
                     <Icon v="id-card"/>
                     <T>profile.card.link</T>:
