@@ -65,7 +65,7 @@
 
                 <ul class="list-unstyled">
                     <li v-for="{link, pronoun, opinion} in pronounOpinions">
-                        <Opinion :word="typeof pronoun === 'string' ? pronoun : (pronoun.name(glue) + (pronoun.smallForm ? '/' + pronoun.morphemes[pronoun.smallForm] : ''))" :opinion="opinion" :link="`/${link}`"/>
+                        <Opinion :word="typeof pronoun === 'string' ? pronoun : pronoun.name(glue)" :opinion="opinion" :link="`/${link}`"/>
                     </li>
                 </ul>
             </div>

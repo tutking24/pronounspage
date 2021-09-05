@@ -1,9 +1,10 @@
 masc	fem	neutr	mascPl	femPl	neutrPl
 -b	-bka	-bcze	-bi	-bki	-bcza
--fob	-fobka	-fobcza	-fobowie/-fobi	-fobki	-fobcza
+-fob	-fobka	-fobcze	-fobowie/-fobi	-fobki	-fobcza
 -wiec	-wczyni	-wcze	-wcy	-wczynie	-wcza
 -ec	-czyni	-cze	-cy	-czynie	-cza
 -niec	-ńczyni	-ńcze	-ńcy	-ńczynie	-ńcza
+-c	-cka	-cze/-cko	-ce	-cki	-cza/cka
 -ca	-czyni	-cze	-cy	-czynie	-cza
 -och	-ocha	-osze	-ochy	-ochy	-osza
 -ch	-szka	-sze	-chy	-szki	-sza
@@ -15,6 +16,7 @@ masc	fem	neutr	mascPl	femPl	neutrPl
 -f	-fka	-fcze	-fowie	-fki	-fcza
 -g	-żka	-że	-dzy/-gowie	-żki	-ża
 -log	-lożka	-loże	-lodzy/-logowie	-lożki	-loża
+-ski	-ska	-skie	-scy	-skie	-skie
 -j	-jka	-jcze	-jowie	-jki	-jcza
 -j	-jka	-jcze	-je	-jki	-jcza
 -czyk	-ka	-cze	-czycy	-ki	-cza
@@ -47,7 +49,7 @@ masc	fem	neutr	mascPl	femPl	neutrPl
 -ir	-irka	-irze	-irowie	-irki	-irza
 -ór	-orka	-orze	-ory	-orki	-orza
 -tra	-trka/-tra	-trze	-trzy	-trki/-try	-trza
--arz	-arka	-arcze/-arko	-arze	-arki	-arcza/-arki
+-arz	-arka	-arcze/-arko	-arze	-arki	-arcza/-arka
 -arz	-ara	-arcze/-aro	-arze	-ary	-arcza/-aro
 -mistrz	-mistrzyni	-mistrze/-mistrzyńcze	-mistrzowie	-mistrzynie	-mistrza/-mistrzyńcza
 -erz	-erka	-ercze	-erze	-erki	-ercza
@@ -58,11 +60,13 @@ masc	fem	neutr	mascPl	femPl	neutrPl
 -nt	-ntka	-ncie/-ntcze	-nci	-ntki	-ncia/-ntcza
 -t	-tka	-tcze/-cie/-tko	-ci	-tki	-tcza/-cia/-tka
 -sta	-stka	-szcze	-ści	-stki	-szcza
--ta	-tka	-to/-cie/-tcze/-tko	-ci	-tki	-to/-cie/-tcze/-tka
+-ta	-tka	-to/-cie/-tcze/-tko	-ci	-tki	-ta/-cia/-tcza/-tka
 -w	-wka	-wcze	-wi	-wki	-wcza
 -ły	-ła	-łe	-li	-łe	-łe
 -ny	-na	-ne	-ni	-ne	-ne
 -wy	-wa	-we	-wi	-we	-we
 -czy	-cza	-cze	-czy/-czowie	-cze	-cze
 -cy	-ca	-ce	-cy	-ce	-ce
+-ry	-ra	-re	-rzy	-re	-re
+-ty	-ta	-te	-ci	-te	-te
 -z	-zka	-żcze	-zowie	-zki	-żcza
