@@ -469,9 +469,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Der Quellcode} ist unter der {https://mit.avris.it=MIT} [mit.svg] Lizenz veröffentlicht.<br/>
-        Das Inhalt unter der {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL 1.0} Lizenz veröffentlicht.
     links: 'Kontakt, Social Media, Support'
 
 notFound:
