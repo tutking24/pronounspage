@@ -292,7 +292,7 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     }
 
     const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(req.body.username)}`);
-    if (dbUser) {
+    if (dbUser && dbUser.id !== req.user.id) {
         return res.json({ error: 'user.account.changeUsername.taken' })
     }
 
