@@ -75,7 +75,7 @@ const modes = ['light', 'dark'];
             const key = `card/${locale}/${username}-${cardId}.png`;
             for (let mode of modes) {
                 console.log(`Uploading @${username} (${locale}, ${mode}) – ${cardId}`);
-                const buffer = results[mode][locale + '/' + username.replace(/\.$/, '')];
+                const buffer = results[mode][locale + '/' + username.replace(/\.+$/, '')];
 
                 if (buffer === undefined) {
                     console.error('Cannot find the proper buffer!');
