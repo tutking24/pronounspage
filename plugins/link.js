@@ -83,7 +83,7 @@ export default {
                 cake: LINK_PROVIDERS.cake,
             };
         },
-        beautifyLink(link) {
+        beautifyLink(link, expand = false) {
             for (let name in LINK_PROVIDERS) {
                 if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
                 const provider = LINK_PROVIDERS[name];
@@ -91,7 +91,7 @@ export default {
                 if (m) {
                     return {
                         ...provider,
-                        text: m[1],
+                        text: expand ? clearUrl(link) : m[1],
                     };
                 }
             }

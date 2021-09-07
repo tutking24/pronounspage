@@ -49,7 +49,8 @@ export const clearUrl = url => {
         .replace('http://www.', '')
         .replace('https://www.', '')
         .replace('http://', '')
-        .replace('https://', '');
+        .replace('https://', '')
+        .replace('mailto:', '');
 
     const qPos = url.indexOf('?')
     if (qPos > -1) {

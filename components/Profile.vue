@@ -77,7 +77,7 @@
 
                 <ul class="list-unstyled">
                     <li v-for="link in profile.links">
-                        <ProfileLink :link="link"/>
+                        <ProfileLink :link="link" :expand="expandLinks"/>
                     </li>
                 </ul>
             </div>
@@ -113,6 +113,7 @@
             user: { required: true },
             profile: { required: true },
             terms: { 'default': null },
+            expandLinks: { type: Boolean },
         },
         data() {
             return {

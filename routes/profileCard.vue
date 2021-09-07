@@ -1,5 +1,5 @@
 <template>
-    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3">
+    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3" expandLinks>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
                 <Icon v="tags"/>

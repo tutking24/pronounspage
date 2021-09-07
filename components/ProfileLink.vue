@@ -14,13 +14,14 @@
         mixins: [link],
         props: {
             link: { required: true },
+            expand: { type: Boolean },
         },
         computed: {
             linkTrimmed() {
                 return this.link.trim();
             },
             niceLink() {
-                return this.beautifyLink(this.linkTrimmed);
+                return this.beautifyLink(this.linkTrimmed, this.expand);
             },
         }
     };
