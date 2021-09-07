@@ -1,5 +1,6 @@
+require('../src/dotenv')();
+
 const dbConnection = require('./db');
-require('dotenv').config({ path:__dirname + '/../.env' });
 const mailer = require('../src/mailer');
 
 // TODO duplication...

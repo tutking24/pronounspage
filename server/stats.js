@@ -1,5 +1,6 @@
+require('../src/dotenv')();
+
 const dbConnection = require('./db');
-require('dotenv').config({ path:__dirname + '/../.env' });
 const {calculateStats, statsFile} = require('../src/stats');
 const locales = require('../src/locales');
 const fs = require('fs');

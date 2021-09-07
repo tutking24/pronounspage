@@ -1,3 +1,5 @@
+require('./src/dotenv')();
+
 import { loadSuml } from './server/loader';
 import fs from 'fs';
 import {buildDict, buildList, buildLocaleList} from "./src/helpers";

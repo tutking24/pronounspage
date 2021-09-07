@@ -1,5 +1,6 @@
+require('../src/dotenv')();
+
 const dbConnection = require('./db');
-require('dotenv').config({ path:__dirname + '/../.env' });
 const awsConfig = require('./aws');
 const S3 = require('aws-sdk/clients/s3');
 
