@@ -1,4 +1,5 @@
-require('dotenv').config({ path:__dirname + '/../.env' });
+require('../src/dotenv')();
+
 const Pageres = require('pageres');
 const isHighLoadTime = require('./overload');
 const dbConnection = require('./db');
