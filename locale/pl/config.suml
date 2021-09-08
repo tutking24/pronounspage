@@ -862,6 +862,11 @@ links:
                 rodzajów męskiego i żeńskiego wynika z nieuświadomionej przemocy względem osób niebinarnych.
                 Zwalczyć ją ma oswojenie społeczeństwa z wykwitem „aktywiszczy” i „partnerszczy”,
                 oraz zaszczepienie wrażliwości na „misgendering”, czyli używanie „niewłaściwych” zaimków.
+        -
+            icon: 'b:facebook'
+            url: 'https://www.facebook.com/MexicoMagicoBlog/posts/238339054965464'
+            headline: 'No soy tu “compañera”, soy tu “compañere” \[…]'
+            extra: '– <strong>Mexico Magico Blog</strong>'
     socials:
         -
             icon: 'twitter'
@@ -1033,16 +1038,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true
