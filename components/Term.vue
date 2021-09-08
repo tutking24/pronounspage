@@ -1,13 +1,16 @@
 <template>
     <div>
-        <p>
-            <span v-if="term.key && $isGranted('terms')" class="badge bg-primary text-white">
-                <T>sources.submit.key</T>:
-                {{term.key}}
-            </span>
-            <strong><LinkedTextMultiple :texts="term.term" noicons/></strong>
-            <span v-if="term.original.length">(<LinkedTextMultiple :texts="term.original" glue="; " noicons/>)</span>
-            – <LinkedText :text="term.definition" noicons/>
+        <p v-for="(p, i) in term.definition.split('\n\n')">
+            <template v-if="i === 0">
+                <span v-if="term.key && $isGranted('terms')" class="badge bg-primary text-white">
+                    <T>sources.submit.key</T>:
+                    {{term.key}}
+                </span>
+                <strong><LinkedTextMultiple :texts="term.term" noicons/></strong>
+                <span v-if="term.original.length">(<LinkedTextMultiple :texts="term.original" glue="; " noicons/>)</span>
+                –
+            </template>
+            <LinkedText :text="p" noicons/>
         </p>
 
         <ul class="list-inline">

@@ -59,7 +59,7 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" v-model="username"
                                    required minlength="4" maxlength="16"/>
-                            <button class="btn btn-outline-primary">
+                            <button class="btn btn-outline-primary" :disabled="username === user.username">
                                 <T>user.account.changeUsername.action</T>
                             </button>
                         </div>
@@ -148,6 +148,7 @@
     import {socialProviders} from "../src/data";
     import {gravatar} from "../src/helpers";
     import cookieSettings from "../src/cookieSettings";
+    import {mapState} from "vuex";
 
     export default {
         data() {
@@ -284,6 +285,9 @@
             },
         },
         computed: {
+            ...mapState([
+                'user',
+            ]),
             canChangeEmail() {
                 return this.email && this.captchaToken;
             }

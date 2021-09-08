@@ -570,7 +570,7 @@ faq:
                     Dziś feminatywy są używane coraz częściej, i mało kogo jeszcze dziwią czy bulwersują.
                     Z neutratywami i niebinarnymi formami językowymi może być podobnie.
                 - >
-                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb jego użytkowników.
+                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb osób go używających.
                     Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
                     jest jedynie narzędziem do porozumiewania się.
                     Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
@@ -991,10 +991,10 @@ user:
     headerLong: 'Twoje konto'
     tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
     login:
-        placeholder: 'Email (lub nazwa użytkownika, jeśli już posiadasz konto)'
+        placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
         action: 'Zaloguj'
         emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
-        userNotFound: 'Użytkownik nie został znaleziony.'
+        userNotFound: 'Konto nie zostało znalezione.'
         email:
             subject: 'Twój kod logowania to %code%'
             content: |
@@ -1009,10 +1009,10 @@ user:
         invalid: 'Kod nieprawidłowy.'
     account:
         changeUsername:
-            header: 'Nazwa użytkownika'
+            header: 'Nazwa użytkownicza'
             action: 'Zmień'
-            invalid: 'Nazwa użytkownika musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
-            taken: 'Ta nazwa użytkownika jest zajęta.'
+            invalid: 'Nazwa użytkownicza musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
+            taken: 'Ta nazwa użytkownicza jest zajęta.'
         changeEmail:
             header: 'Adres email'
             action: 'Zmień'
@@ -1379,7 +1379,7 @@ calendar:
         nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Dzień Rodzicielstwa Osób Niebinarnych}'
         trans_prisoner: '{https://transprisoners.net/about/=Dzień Solidarności z Uwięzionymi Osobami Trans}'
         xenogender_day: 'Dzień Widoczności {/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
-    banner: 'Obchodzimy właśnie'
+    banner: 'Dziś w kalendarzu'
     image:
         header: 'Ściągnij w formie obrazka'
         overview: 'Przegląd'
