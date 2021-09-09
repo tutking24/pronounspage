@@ -124,7 +124,7 @@ const issueAuthentication = async (db, user) => {
 }
 
 const validateEmail = async (email) => {
-    email = String(email).toLowerCase();
+    email = normalise(String(email));
     if (email.endsWith('.oauth')) {
         return;
     }
@@ -306,7 +306,7 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (!await validateEmail(req.user.email)) {
+    if (!await validateEmail(normalise(req.user.email))) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
