@@ -10,6 +10,7 @@
             label: { required: true },
             data: { required: true },
             cumulative: { type: Boolean },
+            type: {'default': 'line'},
         },
         async created() {
         },
@@ -29,7 +30,7 @@
                     }
                 }
                 new Chart(this.$el.getContext('2d'), {
-                    type: 'line',
+                    type: this.type,
                     data: {
                         labels: Object.keys(this.data),
                         datasets: [{
