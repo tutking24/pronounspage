@@ -84,10 +84,12 @@
 
         <ChartSet name="users" :data="stats.users.chart" init="cumulative"/>
 
+        <Chart label="number of profiles by locale" :data="profilesByLocale" type="bar"/>
+
         <section>
             <Icon v="id-card"/>
             Images generated:
-            {{ stats.cards * 100 }}%
+            {{ (stats.cards * 100).toFixed(2) }}%
         </section>
 
         <section v-if="$isGranted('users')">
@@ -245,6 +247,13 @@
                         && (!this.adminsFilter || u.roles !== '')
                         && (!this.localeFilter || u.profiles.includes(this.config.locale))
                 );
+            },
+            profilesByLocale() {
+                const r = {};
+                for (let locale of Object.values(this.stats.locales).sort((a, b) => b.profiles - a.profiles)) {
+                    r[locale.name] = locale.profiles;
+                }
+                return r;
             },
         },
         head() {
