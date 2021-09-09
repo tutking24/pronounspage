@@ -306,7 +306,7 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (!await validateEmail(normalise(req.user.email))) {
+    if (!await validateEmail(normalise(req.body.email))) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
