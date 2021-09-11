@@ -412,7 +412,7 @@ profile:
         Du kannst entweder ein <strong>Pronomen</strong> (z.B. „sier“ or „sie/ihr“) oder einen <strong>Link</strong> (z.B. „https://de.pronouns.page/dey“)
         oder <strong>vier benutzerdefinierten Formen</strong> (z.B. „xier/xies/xiem/xien“).
         Du kannst auch den {/pronouns#generator=<strong>Generator</strong>} verwenden, um die Sätze mit benutzerdefinierten Formen auszufüllen.
-    pronounsNotFound: 'Nicht erkennbares Datenbankformat. Bitte beachte die oben genannte Anweisung.'
+    pronounsNotFound: 'Nicht erkennbares Format. Bitte beachte die oben genannte Anweisung.'
     words: 'Wörter'
     birthday: 'Alter'
     birthdayInfo: 'Wir veröffentlichen nicht dein Geburtstag, sondern nur das errechnete Alter.'
