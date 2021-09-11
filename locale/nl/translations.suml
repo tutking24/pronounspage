@@ -202,15 +202,15 @@ faq:
                     Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
                     It's about being free from gender roles, not about creating new ones.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Waarom zou ik zulke <em>rare</em> voornaamwoorden moeten respecteren?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Marie “Lien”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    Omdat mensen aanspreken in de manier waarop ze aangesprolen willen worden de basis van sociale relaties is.
+                    Je zou nooit Marie "Lien" noemen, je zou nooit meneer/mevrouw weglaten wanneer je jouw docent aanspreekt etc.
+                    En zo zijn er ook mensen die niet “{/zij=zij}” of “{/hij=hij}” willen worden genoemd. 
+                    Als je dit niet accepteert dan ben jij alleen degene die in een kwaad daglicht wordt gesteld. 
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
+                    "Rare voornaamwoorden" zijn niet raar, maar gewoon een kwestie van wennen.
         how-to-know:
             question: 'How do I know how to address someone?'
             answer:
@@ -277,7 +277,7 @@ faq:
                     Tegelijkertijd maakt het ons ook kwetsbaar.
                     Maar als cis personen dit ook doen, dan kan dat een wereld van verschil betekenen.
                     Het maakt ons comfortabeler, veilig en maakt dat we ons welkom voelen.
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(Meer redenen hier).}
         change:
             question: 'Kan ik mijn voornaamwoorden veranderen?'
             answer:
@@ -536,16 +536,15 @@ mode:
     dark: 'Donkere modus'
     light: 'Lichte modus'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
+    reason: 'Reden voor ban'
+    visible: '(Dit zal zichtbaar zijn voor de gebruiker)'
+    terms: 'Voorwaarden die zijn geschonden (verplicht)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/voorwaarden=Terms of Service}:'
+    header: 'Je bent geband. Jouw profiel zal onzichtbaar zijn .'
+    banned: 'Geband.'
+    termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}:'
 
 report:
     action: 'Rapporteer misbruik'
