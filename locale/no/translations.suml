@@ -356,7 +356,7 @@ contact:
         members: 'Nåværende medlemmer'
         blog: 'Blogg'
         upcoming: 'Kommende språk versjoner'
-        member: 'Member of the collective'  # TODO
+        member: 'Medlem av kollektivet'
 
 support:
     header: 'Hjelp'
@@ -417,9 +417,9 @@ profile:
     pronounsInfo: >
         Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
         eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
-    # TODO add: or the <strong>custom five forms</strong> (eg. “ze/zem/zir/zirs/zirself”).
-    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'  # TODO 'Unrecognised format. Please check out the instruction above.'
+        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self"). 
+        Du kan også bruke {/pronouns#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
+    pronounsNotFound: 'Kjenner ikke igjen formatet. Vennligst sjekk ut instruksjonene over.'
     words: 'Ord'
     birthday: 'Alder'
     birthdayInfo: 'Vi viser ikke bursdagen din, bare den kalkulerte alderen.'
@@ -454,7 +454,7 @@ profile:
     bannerButton: 'Lag et kort'
     card:
         link: 'Kort bilde'
-        generate: 'Generate' # TODO
+        generate: 'Generer'
         generating: 'Genererer, vennligst vent'
     empty: 'Denne personen har ikke laget noen kort enda.'
 
