@@ -36,7 +36,7 @@ home:
     generator:
         header: 'Generator'
         description: >
-            You can also use this tool where you out the blanks in sentences
+            You can also use this tool where you fill out the blanks in sentences
             and generate a link ready to share with others.
         button: 'Show the generator'
         header2: 'Generate a link'
