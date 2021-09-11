@@ -421,8 +421,8 @@ profile:
     pronounsInfo: >
         Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
         ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
-    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-    pronounsNotFound: '˜Não podemos encontrar um link com este pronome!'  # TODO 'Unrecognised format. Please check out the instruction above.'
+    Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+    pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
     words: 'Palavras'
     birthday: 'Idade'
     birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
@@ -457,7 +457,7 @@ profile:
     bannerButton: 'Crie um cartão'
     card:
         link: 'Imagem do cartão'
-        generate: 'Generate' # TODO
+        generate: 'Gerar'
         generating: 'Gerando a imagem…'
     empty: 'Essa pessoa ainda não especificou suas informações pessoais'
 
