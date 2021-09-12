@@ -5,25 +5,25 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T>: 2021-01-26</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T>: 2021-09-12</em></p>
 
         <p>
             These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by a team
+            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
             who can be contacted via email: <a href="mailto:contact@pronouns.page" target="_blank" rel="noopener">contact@pronouns.page</a>.
         </p>
 
         <p>
             By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in our Privacy Policy.
+            to us collecting and processing your data as described in our Privacy Policy below.
         </p>
 
         <h3>Users and accounts</h3>
 
         <p>
-            When you create an account with us, you are responsible for safeguarding the password
-            that you use to access the Service, whether your password is with our Service or a third-party service.
-            You agree not to disclose your password to any third party.
+            When you create an account with us, you are responsible for safeguarding the authentication method
+            that you use to access the Service (that is: password to your email account and/or social media platform).
+            You agree not to disclose it to any third party.
             You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
         </p>
 
@@ -61,30 +61,45 @@
 
         <p>
             We make every effort to store your data securely and to ensure that any non-public data we store
-            are not seized by or transfered to any third party, except those trusted parties described below.
+            are not seized by or transferred to any third party, except those trusted parties described below.
         </p>
 
         <p>
-            Other than the data that you explicitly post on the Service as Content,
-            no additional private data is being stored or processed.
+            Other than the data that you explicitly post on the Service as Content
+            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
+            no additional private data connected to your account is being stored or processed.
         </p>
 
         <p>You may edit or remove any Content you have posted on the Service.</p>
 
         <p>When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.</p>
 
-        <p>We only use a first-party cookie to keep you logged in.</p>
+        <p>We only use first-party cookies and local storage to keep you logged in and save your preferences.</p>
 
         <p>
             We use Matomo to track traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read more about the data it stores <a href="https://matomo.org/faq/general/faq_18254/" target="_blank" rel="noopener">here</a>
-            and about the cookies it uses <a href="https://matomo.org/faq/general/faq_146/" target="_blank" rel="noopener">here</a>.
+            You can read more about the data it stores
+            <a href="https://matomo.org/faq/general/faq_18254/" target="_blank" rel="noopener">here</a>
+            and about the cookies it uses
+            <a href="https://matomo.org/faq/general/faq_146/" target="_blank" rel="noopener">here</a>.
+        </p>
+
+        <p>
+            We use arc.io to cover the costs of website maintenance without introducing ads.
+            You can read more about them and their privacy policy
+            <a href="https://arc.io/faq" target="_blank" rel="noopener">here</a>.
+        </p>
+
+        <p>
+            We use hCaptcha to filter out bots and prevent DDoS attacks.
+            You can read their privacy policy
+            <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener">here</a>.
         </p>
 
         <p>Logs and backups are stored for no longer than 18 months.</p>
 
         <p>
-            Your personal data are protected by the GDPR, which means you can request
+            Your personal data are protected by the GDPR, which means you have the right
             to see, correct, update and remove the data we store about you.
         </p>
 

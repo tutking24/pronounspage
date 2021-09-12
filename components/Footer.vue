@@ -51,12 +51,6 @@
                             </nuxt-link>
                         </li>
                         <li class="list-inline-item">
-                            <nuxt-link :to="`/${config.user.termsRoute}`">
-                                <Icon v="gavel"/>
-                                <T>terms.header</T>
-                            </nuxt-link>
-                        </li>
-                        <li class="list-inline-item">
                             <nuxt-link v-if="config.api !== null" to="/api">
                                 <Icon v="laptop-code"/>
                                 <T>api.header</T>
@@ -65,6 +59,20 @@
                                 <Icon v="laptop-code"/>
                                 <T>api.header</T>
                             </LocaleLink>
+                        </li>
+                    </ul>
+                    <ul v-if="config.user.enabled" class="list-inline small">
+                        <li class="list-inline-item">
+                            <nuxt-link :to="`/${config.user.termsRoute}`">
+                                <Icon v="gavel"/>
+                                <T>terms.header</T>
+                            </nuxt-link>
+                        </li>
+                        <li class="list-inline-item">
+                            <nuxt-link :to="`/license`">
+                                <Icon v="gavel"/>
+                                OQL 1.0
+                            </nuxt-link>
                         </li>
                     </ul>
                 </div>

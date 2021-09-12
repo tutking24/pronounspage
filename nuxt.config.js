@@ -253,6 +253,7 @@ export default {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
                 routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
+            routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
 
             if (config.profile.enabled) {
