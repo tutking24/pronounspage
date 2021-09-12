@@ -418,8 +418,8 @@ profile:
     pronounsInfo: >
         Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
         ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
-    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom !'  # TODO 'Unrecognised format. Please check out the instruction above.'
+        Vous pouvez également utiliser {/pronouns#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
+    pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
     birthday: ' ge'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
@@ -454,7 +454,7 @@ profile:
     bannerButton: 'Créer une carte'
     card:
         link: 'Photo de la carte'
-        generate: 'Generate' # TODO
+        generate: 'Générer'
         generating: 'En cours de création...'
     empty: 'Cette personne n''a pas encore créé de carte'
 
