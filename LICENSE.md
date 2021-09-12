@@ -1,6 +1,6 @@
 # 🏳️‍🌈 Opinionated Queer License v1.0
 
-© Copyright {Licensor}
+© Copyright [Andrea Prusinowsku](https://avris.it), [Kolektyw „Rada Języka Neutralnego”](https://zaimki.pl/kolektyw-rjn)
 
 ## Permissions
 
