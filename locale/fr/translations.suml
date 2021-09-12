@@ -476,9 +476,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} est sous la licence {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Le contenu est sous la licence {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL 1.0}.
     links: 'Contact, réseaux sociaux, soutien'
 
 notFound:

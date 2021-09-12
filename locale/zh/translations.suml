@@ -448,11 +448,8 @@ crud:
     saved: '更改保存成功'
 
 footer:
-    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
     links: '通訊錄, 社交媒體, 支持'
 
 notFound:

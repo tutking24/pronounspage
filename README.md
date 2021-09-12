@@ -1,4 +1,4 @@
-# Zaimki
+# Zaimki.pl / Pronouns.page
 
 ## Build Setup
 
@@ -19,6 +19,5 @@ $ nuxt start
 ```
 
 ## Copyright
- 
- * **Author:** Andrea [(Avris.it)](https://avris.it)
- * **Licence:** [MIT](https://mit.avris.it)
+
+See [LICENSE](./LICENSE.md)
