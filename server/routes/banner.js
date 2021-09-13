@@ -98,7 +98,11 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
         const pronounNameOptions = pronounName === global.config.pronouns.any ? [global.config.pronouns.any] : pronoun.nameOptions();
         context.font = `bold ${pronounNameOptions.length <= 2 ? '70' : '36'}pt Quicksand`
-        context.fillText(pronounNameOptions.join('\n'), width / leftRatio + imageSize / 1.5, height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24));
+        context.fillText(
+            pronounNameOptions.map(o => o.replace(/ ?\[[^\]]+] ?/g, '').trim()).join('\n'),
+            width / leftRatio + imageSize / 1.5,
+            height / 2 + (pronounNameOptions.length <= 2 ? 72 : 24)
+        );
 
         return canvas.toBuffer(mime);
     });
