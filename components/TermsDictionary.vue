@@ -182,6 +182,8 @@
                     return values.sort((a, b) => {
                         if (a.key && a.key.toLowerCase() === this.filter.toLowerCase()) { return -1; }
                         if (b.key && b.key.toLowerCase() === this.filter.toLowerCase()) { return 1; }
+                        if (a.term[0].toLowerCase() === this.filter.toLowerCase()) { return -1; }
+                        if (b.term[0].toLowerCase() === this.filter.toLowerCase()) { return 1; }
                         return a.term[0].localeCompare(b.term[0]);
                     })
                 }
