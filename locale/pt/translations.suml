@@ -421,7 +421,7 @@ profile:
     pronounsInfo: >
         Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
         ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
-    Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+        Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
     pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
     words: 'Palavras'
     birthday: 'Idade'
@@ -697,7 +697,7 @@ calendar:
         lesbian_visibility_day: 'Dia da Visibilidade Lésbica'
         coming_out_day: 'Dia de Sair do Armário'
         nonbinary_day: 'Dia de Pessoas Não-Binárias'
-        pan_day: 'Dia da Consciência Pansexual e Panromântica
+        pan_day: 'Dia da Consciência Pansexual e Panromântica'
         trans_remembrance_day: 'Dia da Memória Transgênero'
         trans_visibility_day: 'Dia da Visibilidade Trans'
         zero_discrimination_day: 'Dia de Discriminação Zero'
