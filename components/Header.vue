@@ -133,7 +133,7 @@
                     link: '/',
                     icon: 'home',
                     text: this.$t('home.header'),
-                    textLong: this.$t('home.headerLong'),
+                    textLong: this.$t('home.link'),
                 });
 
                 if (this.config.pronouns.enabled) {
