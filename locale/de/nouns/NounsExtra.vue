@@ -75,6 +75,17 @@
                             N_pl: 'meine besten Lehrerne', G_pl: 'meiner besten Lehrerne', D_pl: 'meinen besten Lehrernen', A_pl: 'meine besten Lehrerne',
                         }),
                     },
+                    'U-Formen': {
+                        info: 'Formen vorgestellt vom {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Maximilian}.',
+                        declension: new NounDeclension({
+                            N: 'dej Autoru', G: '?? Autoru', D: '?? Autoru', A: '?? Autoru',
+                            N_pl: 'die Autoroj', G_pl: 'der Autoroj', D_pl: 'den Autorojn', A_pl: 'die Autoroj',
+                        }),
+                        extendedDeclension: new NounDeclension({
+                            N: 'mein bestes Lehreru', G: 'meinern besten Lehreru', D: 'meinern besten Lehreru', A: 'mein bestes Lehreru',
+                            N_pl: 'meine besten Lehreroj', G_pl: 'meiner besten Lehreroj', D_pl: 'meinen besten Lehrerojn', A_pl: 'meine besten Lehrerojn',
+                        }),
+                    },
                     'Doppelpunkt-Formen': {
                         declension: new NounDeclension({
                             N: 'der:die Autor:in', G: 'des:der Autors:in', D: 'dem:der Autor:in', A: 'den:die Autor:in',
