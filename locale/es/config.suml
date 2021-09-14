@@ -157,6 +157,10 @@ profile:
     flags:
         defaultPronoun: 'ell_'
 
+calendar:
+    enabled: true
+    route: 'calendario'
+
 census:
     enabled: false
 
