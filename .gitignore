@@ -4,6 +4,7 @@
 /db.sqlite
 /db.sqlite-shm
 /db.sqlite-wal
+/db.sqlite-*
 
 /daemonise.json
 /daemonise.log
@@ -14,7 +15,7 @@
 
 /cache
 /static/card
-/static/img-local/
+/static/img-local
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
