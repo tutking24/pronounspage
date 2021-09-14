@@ -10,7 +10,8 @@
             </router-link>
         </div>
         <div class="d-block d-md-none btn-group-vertical btn-block mb-2 w-100">
-            <router-link v-for="{name, icon, route} in links" :key="name"
+            <router-link v-for="{name, icon, route, condition} in links" :key="name"
+                         v-if="condition === undefined || condition === true"
                          :to="buildRoute(route)"
                          :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
                 <Icon :v="icon"/>
