@@ -666,7 +666,7 @@ calendar:
         7: 'Julho'
         8: 'Agosto'
         9: 'Setembro'
-        10: 'Otubro'
+        10: 'Outubro'
         11: 'Novembro'
         12: 'Dezembro'
     dates:
@@ -679,7 +679,7 @@ calendar:
         7: '%day% de julho'
         8: '%day% de agosto'
         9: '%day% de setembro'
-        10: '%day% de otubro'
+        10: '%day% de outubro'
         11: '%day% de novembro'
         12: '%day% de dezembro'
     events:
@@ -713,8 +713,8 @@ calendar:
         gay_uncles_day: 'Dia dos Tios Gays'
         lgbtq_stem: 'Dia de CTEM LGBTQ+'
         trans_depathologization: 'Dia de Ação pela Depatologização Trans'
-        lgbti_book_day: 'Día del Libro de Temática LGTBI'
-        human_rights_day: 'Día de los Derechos Humanos'
+        lgbti_book_day: 'Dia do Livro com Tema LGBTI'
+        human_rights_day: 'Dia dos Direitos Humanos'
         nonbinary_parents_day: 'Dia de Nans Não-Bináries'
         trans_prisoner: 'Dia de Ação e Solidariedade de Prisioneire Trans'
         xenogender_day: 'Dia da Visibilidade Xenogênera'
