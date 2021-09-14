@@ -210,19 +210,31 @@
                     || this.config.inclusive.enabled
                     || (this.config.people && this.config.people.enabled)
                 ) {
-                    links.push({
-                        link: '/' + this.config.community.route,
-                        icon: 'users',
-                        text: this.$t('community.header'),
-                        textLong: this.$t('community.headerLong'),
-                        extra: [
-                            this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
-                            this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
-                            this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
-                            this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
-                            this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
-                        ],
-                    });
+                    const extra = [
+                        this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
+                        this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
+                        this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
+                        this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
+                        this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
+                    ];
+
+                    if (this.config.community) {
+                        links.push({
+                            link: '/' + this.config.community.route,
+                            icon: 'users',
+                            text: this.$t('community.header'),
+                            textLong: this.$t('community.headerLong'),
+                            extra: extra,
+                        });
+                    } else if (this.config.calendar && this.config.calendar.enabled) {
+                        links.push({
+                            link: '/' + this.config.calendar.route,
+                            icon: 'calendar-star',
+                            text: this.$t('calendar.header'),
+                            textLong: this.$t('calendar.headerLong'),
+                            extra: extra,
+                        });
+                    }
                 }
 
                 if (this.config.contact.enabled) {
