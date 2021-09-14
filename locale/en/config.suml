@@ -255,7 +255,7 @@ profile:
         defaultPronoun: 'they'
 
 calendar:
-    enabled: false
+    enabled: true
     route: 'calendar'
 
 census:
