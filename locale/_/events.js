@@ -42,6 +42,7 @@ export default [
     new Event('domestic_violence', null, 5, day(25), EventLevel.MajorDay),
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.MajorDay),
     new Event('orlando_day', null, 6, day(12), EventLevel.MajorDay),
+    new Event('demigirl_day', 'Demigirl', 12, day(15), EventLevel.MajorDay),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
