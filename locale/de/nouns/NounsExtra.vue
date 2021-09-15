@@ -75,15 +75,21 @@
                             N_pl: 'meine besten Lehrerne', G_pl: 'meiner besten Lehrerne', D_pl: 'meinen besten Lehrernen', A_pl: 'meine besten Lehrerne',
                         }),
                     },
-                    'U-Formen': {
-                        info: 'Formen vorgestellt vom {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Maximilian}.',
+                    'Ojum': {
+                        info: `
+                            Formen vorgestellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}.
+                            Die Idee ist, die theoretisch unspezifischen Formen auf -t, -ent, -ant und -or im Singular nicht durchzugendern:
+                            Wird das Ojum bei -er statt des generischen Maskulinums der Standard, verändert sich mittelfristig voraussichtlich
+                            die Spracherwartung und ein inklusiver Artikel davor reicht, um diese Formen als genderneutral zu markieren
+                            und die gewohnten Kurzformen erhalten zu können. Trotzdem ist kurzfristig auch immer explizite Singular-Genderung mit -u freigestellt.
+                        `,
                         declension: new NounDeclension({
-                            N: 'dej Autoru', G: '?? Autoru', D: '?? Autoru', A: '?? Autoru',
+                            N: 'dej Autoru', G: 'dejs Autorus', D: 'dojm Autoru', A: 'dojn Autoru',
                             N_pl: 'die Autoroj', G_pl: 'der Autoroj', D_pl: 'den Autorojn', A_pl: 'die Autoroj',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein bestes Lehreru', G: 'meinern besten Lehreru', D: 'meinern besten Lehreru', A: 'mein bestes Lehreru',
-                            N_pl: 'meine besten Lehreroj', G_pl: 'meiner besten Lehreroj', D_pl: 'meinen besten Lehrerojn', A_pl: 'meine besten Lehrerojn',
+                            N: 'meinu bestu Lehru', G: 'meinus besten Lehrus', D: 'meinum besten Lehru', A: 'meinun bestu Lehru',
+                            N_pl: 'meine besten Lehroj', G_pl: 'meiner besten Lehroj', D_pl: 'meinen besten Lehrojn', A_pl: 'meine besten Lehrojn',
                         }),
                     },
                     'Doppelpunkt-Formen': {
