@@ -733,7 +733,8 @@ calendar:
         domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
         polysexual_day: 'Polysexual & Polyromantic Visibility Day'
         orlando_day: 'Pulse Night of Remembrance'
-
+        aids_memorial: 'International AIDS Candlelight Memorial'
+        health_week: 'LGBT Health Awareness Week'
     banner: 'We''re celebrating'
     image:
         header: 'Download an image'
