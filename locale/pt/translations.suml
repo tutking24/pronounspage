@@ -727,6 +727,8 @@ calendar:
         domestic_violence: 'Dia de Consciência da Violência Doméstica LGBTQ'
         polysexual_day: 'Dia da Visibilidade Polissexual/Polirromântica'
         orlando_day: 'Aniversário do massacre de Orlando'
+        aids_memorial: 'Vigília peles Môrtes de Aids/Sida'
+        health_week: 'Semana de Consciência da Saúde LGBT'
     banner: 'Hoje celebramos'
     image:
         header: 'Baixar uma imagem'
