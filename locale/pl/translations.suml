@@ -1390,6 +1390,9 @@ calendar:
         orlando_day: 'Noc Pamięci Masakry w Orlando'
         aids_memorial: 'Międzynarodowy Dzień Pamięci o Zmarłych na AIDS'
         health_week: 'Tydzień Świadomości nt. Zdrowia Osób LGBT'
+        lesbian_visibility_week: 'Tydzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
+
     banner: 'Dziś w kalendarzu'
     image:
         header: 'Ściągnij w formie obrazka'
