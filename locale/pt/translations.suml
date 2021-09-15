@@ -729,6 +729,9 @@ calendar:
         orlando_day: 'Aniversário do massacre de Orlando'
         aids_memorial: 'Vigília peles Môrtes de Aids/Sida'
         health_week: 'Semana de Consciência da Saúde LGBT'
+        lesbian_visibility_week: 'Semana da Visibilidade Lésbica'
+        demigender_day: 'Dia da Consciência Demigênero'
+        
     banner: 'Hoje celebramos'
     image:
         header: 'Baixar uma imagem'
