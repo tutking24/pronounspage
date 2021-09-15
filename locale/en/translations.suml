@@ -735,6 +735,9 @@ calendar:
         orlando_day: 'Pulse Night of Remembrance'
         aids_memorial: 'International AIDS Candlelight Memorial'
         health_week: 'LGBT Health Awareness Week'
+        lesbian_visibility_week: 'Lesbian Visibility Week'
+        demigender_day: 'Demigender Awareness Day'
+
     banner: 'We''re celebrating'
     image:
         header: 'Download an image'
