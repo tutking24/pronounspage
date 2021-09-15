@@ -3,6 +3,8 @@ import {Event, day, week, month, dayYear, EventLevel} from "../../src/calendar/h
 export default [
     // static date
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.MajorDay),
+    new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.MajorDay),
+    new Event('Rocznica Rozpoczęcia Akcji „Hiacynt”', null, 11, day(15), EventLevel.MajorDay),        
 
     // namedays
     // new Event('Imieniny: Andrea', null, 4, day(30), EventLevel.MinorDay),
