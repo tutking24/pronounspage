@@ -6,7 +6,7 @@
             Die Folgenden sind vorschläge für ein Deklinationsmuster für verschiedene Formen von geschlechtsneutralen Substantiven.
         </p>
         <ul class="list-group mt-4">
-            <li v-for="({declension, extendedDeclension, info = null, warning = null}, name) in declensions" class="list-group-item">
+            <li v-for="({declension, extendedDeclension, info = null, warning = null}, name) in declensions" class="list-group-item" :id="name">
                 <h4>{{ name }}</h4>
                 <div v-if="info" class="alert alert-info small">
                     <Icon v="info-circle"/>
@@ -77,14 +77,15 @@
                     },
                     'Ojum': {
                         info: `
-                            Formen vorgestellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}.
+                            Formen {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=vorgestellt von Frumble}.<br/><br/>
+                            Siehe auch: {/oj=Neopronomen „oj/ojm“}.<br/><br/>
                             Die Idee ist, die theoretisch unspezifischen Formen auf -t, -ent, -ant und -or im Singular nicht durchzugendern:
                             Wird das Ojum bei -er statt des generischen Maskulinums der Standard, verändert sich mittelfristig voraussichtlich
                             die Spracherwartung und ein inklusiver Artikel davor reicht, um diese Formen als genderneutral zu markieren
                             und die gewohnten Kurzformen erhalten zu können. Trotzdem ist kurzfristig auch immer explizite Singular-Genderung mit -u freigestellt.
                         `,
                         declension: new NounDeclension({
-                            N: 'dej Autoru', G: 'dejs Autorus', D: 'dojm Autoru', A: 'dojn Autoru',
+                            N: 'dej Autu', G: 'dejs Autus', D: 'dojm Autu', A: 'dojn Autu',
                             N_pl: 'die Autoroj', G_pl: 'der Autoroj', D_pl: 'den Autorojn', A_pl: 'die Autoroj',
                         }),
                         extendedDeclension: new NounDeclension({
