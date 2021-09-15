@@ -17,8 +17,6 @@ export default [
     new Event('Día de la Visibilidad Lésbica (Paraguay)', 'Lesbian', 9, day(16), EventLevel.MajorDay),
     new Event('Día del Activismo por la Diversidad Sexual (Argentina)', 'LGBTQ', 8, day(20), EventLevel.MajorDay),
     new Event('Día de las Rebeldías Lésbicas', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
-    new Event('Día de la Promoción de los Derechos de las Personas Trans (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),
-    new Event('Día de las Rebeldías Lésbicas', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
-    new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.MajorDay),
+    new Event('Día de la Promoción de los Derechos de las Personas Trans (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),    new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.MajorDay),
 
 ]; 
