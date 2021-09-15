@@ -33,6 +33,15 @@ export default [
     new Event('nonbinary_parents_day', 'Nonbinary', 4, day(18), EventLevel.MajorDay),
     new Event('trans_prisoner', 'Transgender', 1, day(22), EventLevel.MajorDay),
     new Event('xenogender_day', 'Xenogender', 5, day(15), EventLevel.MajorDay),
+    new Event('genderqueer_day', 'Genderqueer', 4, day(25), EventLevel.MajorDay),    
+    new Event('genderfluid_day', 'Genderfluid', 6, day(16), EventLevel.MajorDay),    
+    new Event('aids_day', null, 12, day(1), EventLevel.MajorDay),    
+    new Event('tolerance_day', null, 11, day(16), EventLevel.MajorDay),
+    new Event('social_justice_day', null, 2, day(20), EventLevel.MajorDay), 
+    new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.MajorDay), 
+    new Event('domestic_violence', null, 5, day(25), EventLevel.MajorDay), 
+    new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.MajorDay), 
+    new Event('orlando_day', null, 6, day(12), EventLevel.MajorDay), 
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
