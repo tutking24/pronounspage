@@ -724,6 +724,16 @@ calendar:
         nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Nonbinary Parents Day}'
         trans_prisoner: '{https://transprisoners.net/about/=Trans Prisoner Day of Action and Solidarity}'
         xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender Visibility Day}'
+        genderqueer_day: 'Genderqueer Visibility Day'
+        genderfluid_day: 'Genderfluid Visibility Day'
+        aids_day: 'World AIDS Day'
+        tolerance_day: 'International Day of Tolerance'
+        social_justice_day: 'World Day of Social Justice'
+        stonewall_day: 'Anniversary of Stonewall Riots'
+        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
+        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
+        orlando_day: 'Pulse Night of Remembrance'
+
     banner: 'We''re celebrating'
     image:
         header: 'Download an image'
