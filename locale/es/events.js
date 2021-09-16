@@ -1,9 +1,9 @@
-import {Event, day, week, month, dayYear, EventLevel} from "../../src/calendar/helpers";
+const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
-export default [
+module.exports = [
     // months
     new Event('Mes de la Historia LGBT (EE.UU.)', 'Progress Pride', 10, month, EventLevel.Month),
-    
+
     // static date
     new Event('Día de la Igualdad Matrimonial (EE.UU.)', null, 6, day(26), EventLevel.MajorDay),
     new Event('Día de la Igualdad Matrimonial (España)', null, 7, day(3), EventLevel.MajorDay),
@@ -19,4 +19,4 @@ export default [
     new Event('Día de las Rebeldías Lésbicas', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
     new Event('Día de la Promoción de los Derechos de las Personas Trans (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),    new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.MajorDay),
 
-]; 
+];
