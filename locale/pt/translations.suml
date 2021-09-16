@@ -629,7 +629,7 @@ flags:
     Oriented_Aroace: 'Aroace orientad{inflection}'
     Pangender: 'Pangênero'
     Panromantic: 'Panrromânti{inflection_c}'
-    Pansexual: 'Panssexual'
+    Pansexual: 'Pansexual'
     Polyamorous: 'Poliamoros{inflection}'
     Polyromantic: 'Polirromânti{inflection_c}'
     Polysexual: 'Polissexual'
@@ -731,6 +731,7 @@ calendar:
         health_week: 'Semana de Consciência da Saúde LGBT'
         lesbian_visibility_week: 'Semana da Visibilidade Lésbica'
         demigender_day: 'Dia da Consciência Demigênero'
+        pan_pride_day: 'Dia do Orgulho Pansexual'
         
     banner: 'Hoje celebramos'
     image:
