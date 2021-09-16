@@ -6,7 +6,7 @@ const { currentYear } = require('../src/calendar/calendar');
 const { Day } = require('../src/calendar/helpers');
 const locales = require('../src/locales');
 
-const loadSuml = name => new Suml().parse(fs.readFileSync(`./data/${name}.suml`).toString());
+const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const translations = loadSuml('translations');
 const config = loadSuml('config');
 
