@@ -17,4 +17,27 @@ module.exports = [
     new Event('Marriage Equality Day (Australia)', null, 12, day(9), EventLevel.MajorDay),
     new Event('Marriage Equality Day (New Zealand)', null, 8, day(19), EventLevel.MajorDay),
     new Event('Marriage Referendum Anniversary (Ireland)', null, 5, day(22), EventLevel.MajorDay),
+
+    new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.MajorDay),
+
+    new Event('Spirit Day', null, 10, function* (monthDays) {
+        let fridays = 0;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                fridays++;
+                if (fridays === 3) {
+                    yield d;
+                    return;
+                }
+            }
+        }
+    }, EventLevel.MajorDay),
 ];
