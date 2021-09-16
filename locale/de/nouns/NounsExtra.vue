@@ -56,8 +56,8 @@
                 declensions: {
                     'Y-Formen': {
                         declension: new NounDeclension({
-                            N: 'das Arbeitery', G: 'des Arbeiterys', D: 'dem Arbeitery', A: 'das Arbeitery',
-                            N_pl: 'die Arbeiterys', G_pl: 'der Arbeiterys', D_pl: 'den Arbeiterys', A_pl: 'die Arbeiterys',
+                            N: 'das Arbeity', G: 'des Arbeitys', D: 'dem Arbeity', A: 'das Arbeity',
+                            N_pl: 'die Arbeitys', G_pl: 'der Arbeitys', D_pl: 'den Arbeitys', A_pl: 'die Arbeitys',
                         }),
                         extendedDeclension: new NounDeclension({
                             N: 'mein bestes Lehry', G: 'meines besten Lehrys', D: 'meinem besten Lehry', A: 'mein bestes Lehry',
@@ -86,7 +86,7 @@
                         `,
                         declension: new NounDeclension({
                             N: 'dej Arbeitu', G: 'dejs Arbeitus', D: 'dojm Arbeitu', A: 'dojn Arbeitu',
-                            N_pl: 'die Arbeiteroj', G_pl: 'der Arbeiteroj', D_pl: 'den Arbeiterojn', A_pl: 'die Arbeiteroj',
+                            N_pl: 'die Arbeitoj', G_pl: 'der Arbeitoj', D_pl: 'den Arbeitojn', A_pl: 'die Arbeitoj',
                         }),
                         extendedDeclension: new NounDeclension({
                             N: 'meinu bestu Lehru', G: 'meinus besten Lehrus', D: 'meinum besten Lehru', A: 'meinun bestu Lehru',
