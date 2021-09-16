@@ -68,7 +68,7 @@
                         info: 'Formen vorgestellt vom {https://geschlechtsneutral.net/=Verein für geschlechtsneutrales Deutsch}.',
                         declension: new NounDeclension({
                             N: 'de Arbeitere', G: 'dern Arbeiteres', D: 'dern Arbeitere', A: 'de Arbeitere',
-                            N_pl: 'die Arbeitererne', G_pl: 'der Arbeitererne', D_pl: 'den Arbeiterernen', A_pl: 'die Arbeitererne',
+                            N_pl: 'die Arbeiterne', G_pl: 'der Arbeiterne', D_pl: 'den Arbeiternen', A_pl: 'die Arbeiterne',
                         }),
                         extendedDeclension: new NounDeclension({
                             N: 'mein beste Lehrere', G: 'meinern besten Lehreres', D: 'meinern besten Lehrere', A: 'mein beste Lehrere',
