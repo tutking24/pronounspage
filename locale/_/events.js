@@ -1,6 +1,6 @@
-import {Event, Day, day, week, month, EventLevel} from "../../src/calendar/helpers";
+const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/helpers");
 
-export default [
+module.exports = [
     // months
     new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month),

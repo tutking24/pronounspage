@@ -1,4 +1,4 @@
-export class Day {
+class Day {
     constructor(year, month, day, dayOfWeek) {
         this.year = year;
         this.month = month;
@@ -22,23 +22,25 @@ export class Day {
         return `${this.year}-${this.month.toString().padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
     }
 }
+module.exports.Day = Day;
 
-export function* iterateMonth(year, month) {
+function* iterateMonth(year, month) {
     for (let day = 1; day <= 31; day++) {
         let d = new Date(year, month - 1, day);
         if (d.getDate() !== day) { return; }
         yield new Day(year, month, day, d.getDay() || 7);
     }
 }
+module.exports.iterateMonth = iterateMonth;
 
-export const EventLevel = {
+module.exports.EventLevel = {
     Month: 0,
     Week: 1,
     MinorDay: 2,
     MajorDay: 3,
 }
 
-export class Event {
+module.exports.Event = class {
     constructor(name, flag, month, generator, level) {
         this.name = name;
         this.flag = flag;
@@ -74,7 +76,7 @@ export class Event {
     }
 }
 
-export function day (dayOfMonth) {
+module.exports.day = function (dayOfMonth) {
     function *internal (monthDays) {
         for (let d of monthDays) {
             if (d.day === dayOfMonth) {
@@ -86,13 +88,13 @@ export function day (dayOfMonth) {
     return internal;
 }
 
-export function *month (monthDays) {
+module.exports.month = function* (monthDays) {
     for (let d of monthDays) {
         yield d;
     }
 }
 
-export function week (generator) {
+module.exports.week = function (generator) {
     function *internal (monthDays) {
         let count = 0;
         for (let d of generator(monthDays)) {
@@ -107,7 +109,7 @@ export function week (generator) {
     return internal;
 }
 
-export function dayYear (day, year) {
+module.exports.dayYear = function (day, year) {
     function *internal (monthDays) {
         for (let d of monthDays) {
             if (d.day === day && d.year === year) {
@@ -119,7 +121,7 @@ export function dayYear (day, year) {
     return internal;
 }
 
-export class Calendar {
+module.exports.Calendar = class {
     constructor(year, events) {
         this.year = year;
         this.events = events;

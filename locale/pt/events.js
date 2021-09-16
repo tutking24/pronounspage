@@ -1,6 +1,6 @@
-import {Event, day, week, month, dayYear, EventLevel} from "../../src/calendar/helpers";
+const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
-export default [
+module.exports = [
 
     // static date
     new Event('Dia da Igualdade Matrimonial (Portugal)', null, 6, day(5), EventLevel.MajorDay),

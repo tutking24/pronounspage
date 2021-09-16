@@ -2,7 +2,6 @@ require('../src/dotenv')();
 
 const Pageres = require('pageres');
 const fs  = require('fs');
-const Suml = require('suml');
 
 const shoot = async (url, filename) => {
     const pr = new Pageres({
