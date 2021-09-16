@@ -17,6 +17,7 @@ module.exports = [
     new Event('Marriage Equality Day (Australia)', null, 12, day(9), EventLevel.MajorDay),
     new Event('Marriage Equality Day (New Zealand)', null, 8, day(19), EventLevel.MajorDay),
     new Event('Marriage Referendum Anniversary (Ireland)', null, 5, day(22), EventLevel.MajorDay),
+    new Event('National Freedom to Marry Day (US)', null, 2, day(12), EventLevel.MajorDay),
 
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
         let lastFriday = null;

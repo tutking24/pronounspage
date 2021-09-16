@@ -734,6 +734,7 @@ calendar:
         health_week: 'Semana de la Conciencia de la Salud LGBT'
         lesbian_visibility_week: 'Semana de la Visibilidad Lésbica'
         demigender_day: 'Día de la Conciencia Demigénero'
+        pan_pride_day: 'Día del Orgullo Pansexual'
 
     banner: 'Hoy celebramos'
     image:
