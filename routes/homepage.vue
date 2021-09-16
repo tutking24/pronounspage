@@ -39,6 +39,8 @@
             </h2>
 
             <T>home.about</T>
+
+            <CalendarBanner v-if="!$te('home.welcome')" link/>
         </section>
 
         <Separator icon="fist-raised"/>
