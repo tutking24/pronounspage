@@ -1392,6 +1392,7 @@ calendar:
         health_week: 'Tydzień Świadomości nt. Zdrowia Osób LGBT'
         lesbian_visibility_week: 'Tydzień Widoczności {/terminologia#lesbijka=Lesbijek}'
         demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
+        pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
 
     banner: 'Dziś w kalendarzu'
     image:
