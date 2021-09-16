@@ -3,7 +3,7 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calend
 module.exports = [
 
     // months
-    new Event('Mês da Visibilidade Trans (Brasil)', 'Trangender', 1, month, EventLevel.Month),
+    new Event('Mês da Visibilidade Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month),
 
     // static date
     new Event('Dia da Igualdade Matrimonial (Portugal)', null, 6, day(5), EventLevel.MajorDay),
