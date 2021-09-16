@@ -17,15 +17,34 @@
         </section>
 
         <section>
-            <T>calendar.image.header</T>
-            <a href="/img-local/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
-                <Icon v="image"/>
-                <T>calendar.image.overview</T>
-            </a>
-            <a href="/img-local/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
-                <Icon v="image"/>
-                <T>calendar.image.labels</T>
-            </a>
+            <div class="alert alert-info row">
+                <div class="col-12 col-lg-6">
+                    <p class="mb-0">
+                        Twitter Bot:
+                    </p>
+                    <p class="mb-0">
+                        <a href="https://twitter.com/CalendarQueer" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                            <Icon v="twitter" set="b"/>
+                            @CalendarQueer
+                        </a>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="mb-0">
+                        <T>calendar.image.header</T>:
+                    </p>
+                    <p class="mb-0">
+                        <a href="/img-local/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                            <Icon v="image"/>
+                            <T>calendar.image.overview</T>
+                        </a>
+                        <a href="/img-local/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                            <Icon v="image"/>
+                            <T>calendar.image.labels</T>
+                        </a>
+                    </p>
+                </div>
+            </div>
         </section>
 
         <Support/>
