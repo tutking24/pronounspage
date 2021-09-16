@@ -876,6 +876,11 @@ links:
         -
             icon: 'twitter'
             iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
             url: 'https://twitter.com/neutratywy'
             headline: '@neutratywy'
         -
