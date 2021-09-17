@@ -735,6 +735,7 @@ calendar:
         lesbian_visibility_week: 'Semana de la Visibilidad Lésbica'
         demigender_day: 'Día de la Conciencia Demigénero'
         pan_pride_day: 'Día del Orgullo Pansexual'
+        transmasculine_day: 'Día de la Lucha y Resistencia de Personas Transmasculinas'
 
     banner: 'Hoy celebramos'
     image:
