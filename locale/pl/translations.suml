@@ -1394,6 +1394,7 @@ calendar:
         demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
         pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
         transmasculine_day: 'Dzień Osób {/terminologia#transmęskość=Transmęskich}'
+        asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
 
     banner: 'Dziś w kalendarzu'
     image:
