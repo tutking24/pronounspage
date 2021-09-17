@@ -5,7 +5,7 @@ module.exports = [
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.MajorDay),
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.MajorDay),
     new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.MajorDay),
-    new Event('Polski Dzień Osób {/terminologia#niebinarność=Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.MajorDay),
+    new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.MajorDay),
 
     // namedays
     // new Event('Imieniny: Andrea', null, 4, day(30), EventLevel.MinorDay),
