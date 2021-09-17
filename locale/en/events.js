@@ -18,7 +18,11 @@ module.exports = [
     new Event('Marriage Equality Day (New Zealand)', null, 8, day(19), EventLevel.MajorDay),
     new Event('Marriage Referendum Anniversary (Ireland)', null, 5, day(22), EventLevel.MajorDay),
     new Event('National Freedom to Marry Day (US)', null, 2, day(12), EventLevel.MajorDay),
+    new Event('National Transgender HIV Testing Day (US)', 'Transgender', 4, day(18), EventLevel.MajorDay),
+    new Event('National HIV Testing Day (US)', null, 6, day(27), EventLevel.MajorDay),
+    new Event('National Black HIV Testing Day (US)', null, 2, day(7), EventLevel.MajorDay),
 
+    // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
@@ -41,4 +45,8 @@ module.exports = [
             }
         }
     }, EventLevel.MajorDay),
+
+    // one-off events
+    new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.MajorDay),
+
 ];
