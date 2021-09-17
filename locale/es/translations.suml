@@ -736,6 +736,7 @@ calendar:
         demigender_day: 'Día de la Conciencia Demigénero'
         pan_pride_day: 'Día del Orgullo Pansexual'
         transmasculine_day: 'Día de la Lucha y Resistencia de Personas Transmasculinas'
+        asexual_visibility_day: 'Día de la Visibilidad Asexual'
 
     banner: 'Hoy celebramos'
     image:
