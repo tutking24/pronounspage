@@ -738,6 +738,7 @@ calendar:
         transmasculine_day: 'Día de la Lucha y Resistencia de Personas Transmasculinas'
         asexual_visibility_day: 'Día de la Visibilidad Asexual'
         bi_health_month: 'Mes de la Conciencia de la Salud de Personas Bisexuales'
+        holocaust_remembrance_day: 'Día Internacional de Conmemoración en Memoria de las Víctimas del Holocausto'
 
     banner: 'Hoy celebramos'
     image:
