@@ -67,7 +67,7 @@
         head() {
             return head({
                 title: this.$t('calendar.headerLong'),
-                banner: this.imageOverview,
+                banner: `calendar/overview.png`,
             });
         },
     };
