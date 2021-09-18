@@ -4,6 +4,7 @@ module.exports = [
     // months
     new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month),
+    new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month),
 
     // project celebrations
     new Event('zaimki_birthday', null, 7, day(23), EventLevel.MajorDay),
