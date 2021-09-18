@@ -95,7 +95,7 @@ sources:
         Series: 'Serier'
         Song: 'Musikk'
         Poetry: 'Dikt'
-        Poetry: 'Spill'
+        Game: 'Spill'
         Other: 'Andre'
     submit:
         header: ' Bidra ved å sende inn et eksempel'
