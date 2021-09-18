@@ -737,6 +737,7 @@ calendar:
         bi_health_month: 'Mês de Consciência da Saúde das Pessoas Bissexuais'
         holocaust_remembrance_day: 'Dia Internacional da Lembrança do Holocausto'
         family_equality_day: 'Dia Mundial da Igualdade Familiar'
+        aro_month: 'Mês da Consciência do Espectro Arromântico'
         
     banner: 'Hoje celebramos'
     image:

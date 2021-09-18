@@ -743,6 +743,7 @@ calendar:
         bi_health_month: 'Bisexual Health Awareness Month'
         holocaust_remembrance_day: 'International Holocaust Remembrance Day'
         family_equality_day: 'International Family Equality Day'
+        aro_month: 'Aromantic Awareness Month'
 
     banner: 'We''re celebrating'
     image:
