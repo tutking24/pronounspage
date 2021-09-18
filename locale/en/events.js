@@ -21,6 +21,8 @@ module.exports = [
     new Event('National Transgender HIV Testing Day (US)', 'Transgender', 4, day(18), EventLevel.MajorDay),
     new Event('National HIV Testing Day (US)', null, 6, day(27), EventLevel.MajorDay),
     new Event('National Black HIV Testing Day (US)', null, 2, day(7), EventLevel.MajorDay),
+    new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.MajorDay),
+    new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', null, 2, day(1), EventLevel.MajorDay),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
