@@ -725,6 +725,7 @@ calendar:
         asexual_visibility_day: 'Asexueller Sichtbarkeitstag'
         bi_health_month: 'Monat zur Sichtbarkeit bisexueller Gesundheit'
         holocaust_remembrance_day: 'Holocaust-Gedenktag'
+        family_equality_day: 'Regenbogenfamilientag'
 
     banner: 'Heute feiern wir'
     image:
