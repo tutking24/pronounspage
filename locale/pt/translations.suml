@@ -736,6 +736,7 @@ calendar:
         asexual_visibility_day: 'Dia da Visibilidade Assexual'
         bi_health_month: 'Mês de Consciência da Saúde das Pessoas Bissexuais'
         holocaust_remembrance_day: 'Dia Internacional da Lembrança do Holocausto'
+        family_equality_day: 'Dia Mundial da Igualdade Familiar'
         
     banner: 'Hoje celebramos'
     image:
