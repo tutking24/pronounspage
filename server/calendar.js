@@ -10,7 +10,7 @@ const shoot = async (url, filename) => {
     });
     pr.src(process.env.BASE_URL + url, ['1500x300']);
     for (let buffer of await pr.run()) {
-        const dir = `${__dirname}/../static/img-local/calendar`;
+        const dir = `${__dirname}/../static/calendar`;
         fs.mkdirSync(dir, {recursive: true})
         const target = `${dir}/${filename}.png`;
         console.log(target);
