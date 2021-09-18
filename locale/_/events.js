@@ -183,4 +183,13 @@ module.exports = [
         yield new Day(lastDay.year, 5, 1);
         yield new Day(lastDay.year, 5, 2);
     }), EventLevel.Week),
+
+    new Event('family_equality_day', null, 5, function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 7) {
+                yield d;
+                return;
+            }
+        }
+    }, EventLevel.MajorDay),
 ];
