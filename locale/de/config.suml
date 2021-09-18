@@ -154,6 +154,10 @@ profile:
     flags:
         defaultPronoun: 'er'
 
+calendar:
+    enabled: true
+    route: 'kalender'
+
 census:
     enabled: false
 
