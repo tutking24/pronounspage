@@ -133,7 +133,7 @@
                     link: '/',
                     icon: 'home',
                     text: this.$t('home.header'),
-                    textLong: this.$t('home.headerLong'),
+                    textLong: this.$t('home.link'),
                 });
 
                 if (this.config.pronouns.enabled) {
@@ -141,8 +141,22 @@
                         link: '/' + this.config.pronouns.route,
                         icon: 'tags',
                         text: this.$t('pronouns.header'),
-                        textLong: this.$t('pronouns.headerLong'),
+                        textLong: this.$t('pronouns.headerLong').replace( /(<([^>]+)>)/ig, ''),
                         extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
+                    });
+                }
+
+                if (this.config.nouns.enabled) {
+                    const extras = [];
+                    for (let subroute of this.config.nouns.subroutes || []) {
+                        extras.push(`/${subroute}`);
+                    }
+                    links.push({
+                        link: '/' + this.config.nouns.route,
+                        icon: 'book',
+                        text: this.$t('nouns.header'),
+                        textLong: this.$t('nouns.headerLong'),
+                        extra: extras,
                     });
                 }
 
@@ -152,27 +166,6 @@
                         icon: 'books',
                         text: this.$t('sources.header'),
                         textLong: this.$t('sources.headerLong'),
-                    });
-                }
-
-                if (this.config.nouns.enabled) {
-                    const extras = [];
-                    for (let subroute of this.config.nouns.subroutes || []) {
-                        extras.push(`/${this.config.nouns.route}/${subroute}`);
-                    }
-                    if (this.config.nouns.inclusive.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.inclusive.route}`);
-                    }
-                    if (this.config.nouns.terms.enabled) {
-                        extras.push(`/${this.config.nouns.route}/${this.config.nouns.terms.route}`);
-                    }
-
-                    links.push({
-                        link: '/' + this.config.nouns.route,
-                        icon: 'book',
-                        text: this.$t('nouns.header'),
-                        textLong: this.$t('nouns.headerLong'),
-                        extra: extras,
                     });
                 }
 
@@ -206,28 +199,42 @@
                             'blogEntry',
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
-                            '/' + this.config.people.route,
-                            this.config.calendar ? '/' + this.config.calendar.route : '',
+                            this.config.english && this.config.english.enabled ? '/' + this.config.english.route : '',
                         ],
                     });
                 }
 
-                if (this.config.english.enabled) {
-                    links.push({
-                        link: '/' + this.config.english.route,
-                        icon: 'globe-americas',
-                        text: this.$t('english.header'),
-                        textLong: this.$t('english.headerLong'),
-                    });
-                }
+                if ((this.config.terminology.enabled && this.config.terminology.published)
+                    || (this.config.calendar && this.config.calendar.enabled)
+                    || this.config.census.enabled
+                    || this.config.inclusive.enabled
+                    || (this.config.people && this.config.people.enabled)
+                ) {
+                    const extra = [
+                        this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
+                        this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
+                        this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
+                        this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
+                        this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
+                    ];
 
-                if (this.config.census.enabled) {
-                    links.push({
-                        link: '/' + this.config.census.route,
-                        icon: 'user-chart',
-                        text: this.$t('census.header'),
-                        textLong: this.$t('census.headerLong'),
-                    });
+                    if (this.config.community) {
+                        links.push({
+                            link: '/' + this.config.community.route,
+                            icon: 'users',
+                            text: this.$t('community.header'),
+                            textLong: this.$t('community.headerLong'),
+                            extra: extra,
+                        });
+                    } else if (this.config.calendar && this.config.calendar.enabled) {
+                        links.push({
+                            link: '/' + this.config.calendar.route,
+                            icon: 'calendar-star',
+                            text: this.$t('calendar.header'),
+                            textLong: this.$t('calendar.headerLong'),
+                            extra: extra,
+                        });
+                    }
                 }
 
                 if (this.config.contact.enabled) {

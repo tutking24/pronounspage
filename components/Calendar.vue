@@ -2,23 +2,20 @@
     <div class="calendar">
         <div v-for="i in (startingDayOfWeek - 1)"></div>
         <div v-for="d in iterateMonth(year, month)"
-             :class="['rounded-circle', getDayClass(d), d.equals(today) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
+             :class="['rounded-circle', getDayClass(d), markToday && d.equals(today) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
              @click.stop="selectDay(d)"
              :data-flag="getDayFlag(d)"
              :style="getDayFlag(d) ? `background-image: url('${getDayFlag(d)}')` : ''"
         >
             <div class="day-number">{{ d.day }}</div>
             <div v-if="currentYear.eventsByDate[d.toString()] !== undefined && d.equals(selectedDay)" class="day-tooltip card text-dark shadow">
-                <div class="card-header">
-                    <strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong>
+                <div class="card-header d-flex justify-content-between">
+                    <p class="h5 mb-0"><strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong></p>
+                    <button class="btn btn-sm py-0" @clik="selectedDay = null"><Icon v="times"/></button>
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <li v-for="event in currentYear.eventsByDate[d.toString()]">
-                            <Flag v-if="event.flag" name="" alt="" :img="`/flags/${event.flag}.png`"/>
-                            <Icon v-else v="arrow-circle-right"/>
-                            <T>calendar.events.{{ event.name }}</T>
-                        </li>
+                        <CalendarEvent v-for="event in currentYear.eventsByDate[d.toString()]" :event="event" :key="event.name"/>
                     </ul>
                 </div>
             </div>
@@ -27,13 +24,14 @@
 </template>
 
 <script>
-    import { Day, iterateMonth } from '../src/calendar/helpers';
+    import { Day, iterateMonth, EventLevel } from '../src/calendar/helpers';
     import { currentYear } from '../src/calendar/calendar';
 
     export default {
         props: {
             year: { required: true },
             month: { required: true },
+            markToday: { type: Boolean },
         },
         data() {
             return {
@@ -71,14 +69,17 @@
                     return 'day';
                 }
 
-                if (this.currentYear.eventsByDate[d.toString()].some(e => e.major)) {
-                    return 'day day-event day-event-major';
+                let maxLevel = 0;
+                for (let event of this.currentYear.eventsByDate[d.toString()]) {
+                    if (event.level > maxLevel) {
+                        maxLevel = event.level;
+                    }
                 }
 
-                return 'day day-event day-event-minor';
+                return `day day-event day-event-${maxLevel}`;
             },
             getDayFlag(d) {
-                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.major)) {
+                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.MajorDay && e.flag)) {
                     return `/flags/${event.flag}.png`;
                 }
                 return null;
@@ -109,7 +110,18 @@
         grid-column-gap: 2px;
         grid-row-gap: 2px;
         > .day {
-            aspect-ratio: 1;
+            /*aspect-ratio: 1;*/
+            &::before {
+                float: left;
+                padding-top: 100%;
+                content: '';
+            }
+            &::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -118,8 +130,18 @@
             position: relative;
             &.day-event {
                 cursor: pointer;
-                border: 1px solid lighten($primary, 25%);
-                &.day-event-major {
+                &.day-event-0 {
+                    background-color: lighten($primary, 50%);
+                }
+                &.day-event-1 {
+                    background-color: lighten($primary, 40%);
+                }
+                &.day-event-2 {
+                    background-color: lighten($primary, 50%);
+                    border: 1px solid lighten($primary, 25%);
+                }
+                &.day-event-3 {
+                    border: 1px solid lighten($primary, 25%);
                     background-color: $primary;
                     color: $white;
                     .day-number {
@@ -143,7 +165,7 @@
                 }
             }
             &.day-today {
-                border: 3px solid $black;
+                border: 3px solid $black !important;
                 @extend .shadow;
             }
             .day-tooltip {
@@ -155,8 +177,9 @@
                     position: fixed;
                     left: 0;
                     width: 100%;
+                    padding-bottom: 3rem;
                 }
-                z-index: 999;
+                z-index: 1040;
                 cursor: default;
             }
         }

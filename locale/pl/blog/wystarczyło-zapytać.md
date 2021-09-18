@@ -2,7 +2,7 @@
 
 <small>2021-03-29 | [@Sybil](/@Sybil) | [Facebook](https://www.facebook.com/neutratywy/posts/252705383203921) | [Twitter](https://twitter.com/neutratywy/status/1376518731774500873)</small>
 
-![](/img/masha-gessen.jpg)
+![](/img-local/blog/masha-gessen.jpg)
 
 Artykuł: [Masha Gessen: Nie twierdzę, że Polacy odpowiadają za śmierć 3 mln Żydów](https://wyborcza.pl/alehistoria/7,121681,26929945,masha-gessen-nie-twierdze-ze-polacy-odpowiadaja-za-smierc.html)
 
@@ -47,7 +47,7 @@ Czytacie w ogóle to, co przytaczacie?
 W komentarzu pod [naszym postem na FB](https://www.facebook.com/neutratywy/posts/252705383203921)
 otrzymałośmy odpowiedź od członkini redacji Gazety Wyborczej:
 
-![](/img/masha-gessen.pręgierz.png)
+![](/img-local/blog/masha-gessen.pręgierz.png)
 
 > Sądzę, że dobrze byłoby wysłać to jako list do naszej redakcji oraz autora tekstu.
 > To pewnie będzie bardziej konstruktywne i da lepszy efekt niż tylko stawianie GW pod pręgierzem na Facebooku.

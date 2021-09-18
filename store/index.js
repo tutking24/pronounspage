@@ -18,10 +18,11 @@ export const mutations = {
         try {
             user = jwt.verify(token, process.env.PUBLIC_KEY, {
                 algorithm: 'RS256',
-                audience: process.env.BASE_URL,
-                issuer: process.env.BASE_URL,
+                audience: process.env.ALL_LOCALES_URLS.split(','),
+                issuer: process.env.ALL_LOCALES_URLS.split(','),
             });
-        } catch {
+        } catch (e) {
+            console.error(e);
             user = null;
         }
 

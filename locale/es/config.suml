@@ -46,21 +46,24 @@ nouns:
     declension: false
     submit: true
     templates: false
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'orientación sexual'
-            - 'orientación romántica'
-            - 'orientacja terciaria'
-            - 'género'
-            - 'expresión de género'
-            - 'modelo de relación'
-            - 'lenguaje'
-            - 'atracción'
-            - 'política'
-        route: 'terminologia'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'orientación sexual'
+        - 'orientación romántica'
+        - 'orientacja terciaria'
+        - 'género'
+        - 'expresión de género'
+        - 'modelo de relación'
+        - 'lenguaje'
+        - 'atracción'
+        - 'política'
+        - 'prejuicio'
+    route: 'terminologia'
 
 names:
     enabled: false
@@ -119,6 +122,11 @@ links:
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
     recommended: []
     blog: false
 
@@ -136,16 +144,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true
@@ -162,6 +161,10 @@ profile:
         - ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
     flags:
         defaultPronoun: 'ell_'
+
+calendar:
+    enabled: true
+    route: 'calendario'
 
 census:
     enabled: false

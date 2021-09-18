@@ -1,5 +1,17 @@
 <template>
-    <section>
+    <section v-if="logoutInProgress">
+        <p class="text-center">
+            <Spinner size="5rem"/>
+        </p>
+        <div>
+            <iframe v-for="domain in universalDomains"
+                    :src="`${domain}/api/user/logout-universal`"
+                    style="width: 1px; height: 1px; opacity: .01"
+            >
+            </iframe>
+        </div>
+    </section>
+    <section v-else>
         <ul class="list-group">
             <li class="list-group-item profile-current">
                 <div v-if="changeEmailShown === false" class="d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -112,6 +124,14 @@
                 <T>user.deleteAccount</T>
             </a>
         </section>
+
+        <div>
+            <iframe v-for="domain in universalDomains"
+                    :src="`${domain}/api/user/init-universal/${$cookies.get('token')}`"
+                    style="width: 1px; height: 1px; opacity: .01"
+            >
+            </iframe>
+        </div>
     </section>
 </template>
 
@@ -119,6 +139,7 @@
     import {socialProviders} from "../src/data";
     import {gravatar} from "../src/helpers";
     import cookieSettings from "../src/cookieSettings";
+    import {mapState} from "vuex";
 
     export default {
         data() {
@@ -144,6 +165,10 @@
                 gravatar,
 
                 captchaToken: null,
+
+                universalDomains: process.env.ALL_LOCALES_URLS.split(',').filter(x => x !== process.env.BASE_URL),
+
+                logoutInProgress: false,
 
                 selectedUsername: null,
             }
@@ -205,8 +230,13 @@
                 }
             },
             logout() {
+                this.logoutInProgress = true;
+                setTimeout(this.doLogout, 3000);
+            },
+            doLogout() {
                 this.$store.commit('setToken', null);
                 this.$cookies.removeAll();
+                this.logoutInProgress = false;
             },
             async deleteAccount() {
                 await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
@@ -216,6 +246,9 @@
             },
         },
         computed: {
+            ...mapState([
+                'user',
+            ]),
             canChangeEmail() {
                 return this.email && this.captchaToken;
             }

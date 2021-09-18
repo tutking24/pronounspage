@@ -15,7 +15,7 @@ pronouns:
         examples: ['er&sie', 'er&dey', 'sie&xier']
     null: false
     emoji: false
-    slashes: true
+    slashes: ['pronoun_n', 'possessive', 'pronoun_d', 'pronoun_a']
     avoiding: false
     others: 'Andere Pronomen'
 
@@ -35,28 +35,31 @@ sources:
 
 nouns:
     enabled: true
-    route: 'substantiven'  # worterbuch
+    route: 'substantive'  # worterbuch
     collapsable: false
     plurals: true
     pluralsRequired: false
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'sexuelle Orientierung'
-            - 'romantische Orientierung'
-            - 'tertiäre Orientierung'
-            - 'Geschlecht'
-            - 'Geschlechtsausdruck'
-            - 'Beziehungsmodell'
-            - 'Sprache'
-            - 'Anziehung'
-            - 'Politik'
-        route: 'terminologie'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'sexuelle Orientierung'
+        - 'romantische Orientierung'
+        - 'tertiäre Orientierung'
+        - 'Geschlecht'
+        - 'Geschlechtsausdruck'
+        - 'Beziehungsmodell'
+        - 'Sprache'
+        - 'Anziehung'
+        - 'Politik'
+        - 'Vorurteil'
+    route: 'terminologie'
 
 names:
     enabled: false
@@ -102,6 +105,10 @@ links:
             url: 'https://geschicktgendern.de/schreibweisen/'
             headline: 'Vor- und Nachteile Gängiger Schreibweisen'
             extra: ' – GeschicktGendern.de'
+        -
+            icon: 'file-alt'
+            url: 'https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik'
+            headline: 'Überlegungen zu einer genderneutralen deutschen Grammatik'
     academic: []
     mediaGuests: []
     mediaMentions: []
@@ -129,16 +136,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true

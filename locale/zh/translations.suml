@@ -1,4 +1,5 @@
-title: 'zh.pronouns.page'
+title: 'Pronouns.page'
+domain: 'zh.pronouns.page'
 description: '個人代詞和中性語言的用法例子'
 
 home:
@@ -71,7 +72,7 @@ pronouns:
         description: >
             其實對很多人來說，別人用特定代詞來談論他們是非常重要的，
             但其他人不介意別人怎麼叫他們，只要內容清楚在談論誰。
-        options: '查看選項 [share]{/= 這裡}.'
+        options: '查看選項 [share] {/pronouns= 這裡}.'
     others: '其他形式'
     othersRaw: '其他'
     or: '或'
@@ -152,6 +153,8 @@ nouns:
     singularShort: '單數'
     plural: '複數'
     pluralShort: '複數'
+
+    image: 'Image' # TODO
 
 faq:
     header: 'FAQ'
@@ -344,6 +347,7 @@ user:
         userNotFound: '找不到用戶。'
         email:
             subject: '你的登錄代碼是：%code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 要確認你的電郵地址，請使用以下代碼: %code%.
 
@@ -383,8 +387,10 @@ profile:
     description: '傳記'
     names: '名字'
     pronouns: '代詞'
-    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“ http://zh.pronouns.page/佢”'
-    pronounsNotFound: '我們找不到這個代詞的鏈接'
+    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“http://zh.pronouns.page/佢”）'
+    # TODO add <strong></strong> around the words "pronoun" and "link"
+    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+    pronounsNotFound: '我們找不到這個代詞的鏈接'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: '詞匯'
     birthday: '嵗'
     birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
@@ -421,6 +427,7 @@ profile:
     # TODO
     card:
         link: '名片圖片'
+        generate: 'Generate' # TODO
         generating: '生成中……'
     empty: '此用戶還沒有創造任何名片'
     loginRequired: '{/account=登入}以提交項目'
@@ -441,11 +448,8 @@ crud:
     saved: '更改保存成功'
 
 footer:
-    source: '源代碼{https://gitlab.com/Avris/Zaimki=以}{https://mit.avris.it=MIT}許可發布。'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
     links: '通訊錄, 社交媒體, 支持'
 
 notFound:

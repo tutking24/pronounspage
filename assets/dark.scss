@@ -104,7 +104,7 @@ body[data-theme="dark"] {
   .list-group-item-action:hover,
   .list-group-item-action:focus { color: #fff; background-color: #333; }
   .list-group-item-action:active { color: #212529; background-color: #e9ecef; }
-  .list-group-item { background-color: #111; border: 1px solid #333; }
+  .list-group-item { color: #eee; background-color: #111; border: 1px solid #333; }
   .list-group-item:not(:first-child) { border-top: none; }
   .list-group-item.disabled,
   .list-group-item:disabled { color: #fff; background-color: #000; }
@@ -241,6 +241,12 @@ body[data-theme="dark"] {
       @supports not (backdrop-filter: blur(12px)) {
         background-color: $dark;
       }
+    }
+  }
+
+  .alert-primary, .alert-success, .alert-warning, .alert-danger {
+    a {
+      color: $primary;
     }
   }
 }

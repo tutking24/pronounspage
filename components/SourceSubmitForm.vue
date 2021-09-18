@@ -56,13 +56,18 @@
                     <p class="small text-muted mb-0">
                         <T>sources.submit.pronounsInfo</T>
                     </p>
-                    <ListInput v-model="form.pronouns" v-slot="s">
-                        <input v-model="s.val" type="text" class="form-control" @keyup="s.update(s.val)" required maxlength="24"/>
-                        <small v-if="s.val && !pronounLibrary.isCanonical(s.val) && !(config.sources.extraTypes || []).includes(s.val)"
-                               class="input-group-text bg-danger text-white">
-                            <Icon v="exclamation-triangle"/>
-                            <span class="ml-1"><T>profile.pronounsNotFound</T></span>
-                        </small>
+                    <ListInput v-model="form.pronouns">
+                        <template v-slot="s">
+                            <input v-model="s.val" type="text" class="form-control" @keyup="s.update(s.val)" required maxlength="24"/>
+                        </template>
+                        <template v-slot:validation="s">
+                            <p v-if="s.val && !pronounLibrary.isCanonical(s.val) && !(config.sources.extraTypes || []).includes(s.val)"
+                               class="small text-danger"
+                            >
+                                <Icon v="exclamation-triangle"/>
+                                <span class="ml-1"><T>profile.pronounsNotFound</T></span>
+                            </p>
+                        </template>
                     </ListInput>
                 </div>
                 <div class="form-group">
@@ -77,7 +82,7 @@
                 </div>
                 <div class="form-group">
                     <label><T>sources.submit.images</T></label>
-                    <ImageWidget v-model="form.images" multiple/>
+                    <ImageWidget v-model="form.images" multiple sizes="big,thumb"/>
                 </div>
                 <div class="form-group" v-if="$isGranted('sources')">
                     <label for="key"><T>sources.submit.key</T></label>

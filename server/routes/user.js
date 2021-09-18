@@ -122,7 +122,7 @@ const issueAuthentication = async (db, user) => {
 }
 
 const validateEmail = async (email) => {
-    email = String(email).toLowerCase();
+    email = normalise(String(email));
     if (email.endsWith('.oauth')) {
         return;
     }
@@ -292,7 +292,7 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     }
 
     const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(req.body.username)}`);
-    if (dbUser) {
+    if (dbUser && dbUser.id !== req.user.id) {
         return res.json({ error: 'user.account.changeUsername.taken' })
     }
 
@@ -306,7 +306,7 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (!await validateEmail(req.user.email)) {
+    if (!await validateEmail(normalise(req.body.email))) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
@@ -414,7 +414,7 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     }
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
 
-    return res.cookie('token', token).redirect('/' + config.user.route);
+    return res.cookie('token', token, cookieSettings).redirect('/' + config.user.route);
 }));
 
 router.get('/user/social-connections', handleErrorAsync(async (req, res) => {
@@ -465,6 +465,22 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
     `) // TODO
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
+}));
+
+router.get('/user/init-universal/:token', handleErrorAsync(async (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    if (req.user) {
+        return res.json('Already logged in');
+    }
+
+    res.cookie('token', req.params.token, cookieSettings);
+    return res.json('Token saved');
+}));
+
+router.get('/user/logout-universal', handleErrorAsync(async (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.clearCookie('token');
+    return res.json('Token removed');
 }));
 
 export default router;

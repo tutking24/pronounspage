@@ -16,7 +16,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
-                            <T>nouns.terms.term</T>
+                            <T>terminology.term</T>
                         </strong></label>
                         <NounForm v-model="form.term" required maxlength="128"/>
                     </div>
@@ -24,7 +24,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
-                            <T>nouns.terms.original</T>
+                            <T>terminology.original</T>
                         </strong></label>
                         <NounForm v-model="form.original" maxlength="1024"/>
                     </div>
@@ -33,14 +33,14 @@
 
             <div class="form-group">
                 <label class="text-nowrap"><strong>
-                    <T>nouns.terms.definition</T>
+                    <T>terminology.definition</T>
                 </strong></label>
                 <textarea v-model="form.definition" class="form-control form-control-sm" required rows="6"></textarea>
             </div>
 
             <div class="form-group">
-                <label><strong><T>nouns.terms.category</T>:</strong></label>
-                <a v-for="category in config.nouns.terms.categories"
+                <label><strong><T>terminology.category</T>:</strong></label>
+                <a v-for="category in config.terminology.categories"
                    href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
                    @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
                 >
@@ -65,9 +65,9 @@
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
-                            <T>nouns.terms.images</T>
+                            <T>terminology.images</T>
                         </strong></label>
-                        <ImageWidget v-model="form.images" multiple/>
+                        <ImageWidget v-model="form.images" multiple sizes="big,thumb"/>
                     </div>
                 </div>
             </div>

@@ -18,36 +18,46 @@
                     {{options.name}}
                 </LocaleLink>
             </div>
-            <div v-if="$user() && $user().username === user.username">
-                <nuxt-link to="/editor" class="btn btn-primary btn-sm mb-2 mx-1">
-                    <Icon v="edit"/>
-                    <T>profile.edit</T>
-                </nuxt-link>
-                <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
-                   class="btn btn-outline-secondary btn-sm mb-2 mx-1"
-                >
-                    <Icon v="external-link"/>
-                    pronouns.page/@{{user.username}}
-                </a>
-            </div>
-            <div v-if="($user() && $user().username === profile.username) || $isGranted('users')">
-                <small>
-                    <Icon v="id-card"/>
-                    <T>profile.card.link</T>:
-                </small>
-                <template v-if="profile.card">
-                    <a :href="profile.card" target="_blank" rel="noopener"
-                       class="btn btn-outline-success btn-sm mb-2 mx-1">
-                        <Icon v="sun"/>
-                        <T>mode.light</T>
+            <div v-if="$user() && $user().username === user.username" class="alert alert-info">
+                <div class="mb-2">
+                    <nuxt-link to="/editor" class="btn btn-primary btn-sm mx-1">
+                        <Icon v="edit"/>
+                        <T>profile.edit</T>
+                    </nuxt-link>
+                    <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
+                       class="btn btn-outline-secondary btn-sm mx-1"
+                    >
+                        <Icon v="external-link"/>
+                        pronouns.page/@{{user.username}}
                     </a>
-                    <a :href="profile.card.replace('.png', '-dark.png')" target="_blank" rel="noopener"
-                       class="btn btn-outline-success btn-sm mb-2 mx-1">
-                        <Icon v="moon"/>
-                        <T>mode.dark</T>
-                    </a>
-                </template>
-                <small v-else><T>profile.card.generating</T></small>
+                </div>
+                <div>
+                    <small>
+                        <Icon v="id-card"/>
+                        <T>profile.card.link</T>:
+                    </small>
+                    <small v-if="profile.card === null">
+                        <button class="btn btn-outline-success btn-sm" @click="generateCard">
+                            <T>profile.card.generate</T>
+                        </button>
+                    </small>
+                    <small v-else-if="profile.card === ''">
+                        <Spinner/>
+                        <T>profile.card.generating</T>
+                    </small>
+                    <template v-if="profile.card">
+                        <a :href="profile.card" target="_blank" rel="noopener"
+                           class="btn btn-outline-success btn-sm mx-1">
+                            <Icon v="sun"/>
+                            <T>mode.light</T>
+                        </a>
+                        <a :href="profile.card.replace('.png', '-dark.png')" target="_blank" rel="noopener"
+                           class="btn btn-outline-success btn-sm mx-1">
+                            <Icon v="moon"/>
+                            <T>mode.dark</T>
+                        </a>
+                    </template>
+                </div>
             </div>
         </Profile>
 
@@ -95,6 +105,7 @@
         data() {
              return {
                  terms: [],
+                 cardCheckHandle: null,
             }
         },
         async asyncData({ app, route }) {
@@ -103,7 +114,7 @@
             };
         },
         async mounted() {
-            if (this.config.nouns.terms.enabled) {
+            if (this.config.terminology.enabled) {
                 this.terms = await this.$axios.$get(`/terms`);
             }
         },
@@ -134,6 +145,36 @@
 
                 return this.user.username;
             },
+        },
+        watch: {
+            profile() {
+                this.startCheckingForCard();
+            },
+        },
+        methods: {
+            async generateCard() {
+                await this.$axios.$post(`/profile/request-card`);
+                this.profile.card = '';
+                this.startCheckingForCard();
+            },
+            startCheckingForCard() {
+                if (this.cardCheckHandle || !this.profile || this.profile.card) {
+                    return;
+                }
+                this.cardCheckHandle = setInterval(this.checkForCard, 3000);
+            },
+            async checkForCard() {
+                try {
+                    const card = await this.$axios.$get(`/profile/has-card`);
+                    console.log(card);
+                    if (card) {
+                        this.profile.card = card;
+                        clearInterval(this.cardCheckHandle);
+                    }
+                } catch {
+                    clearInterval(this.cardCheckHandle);
+                }
+            }
         },
         head() {
             return head({

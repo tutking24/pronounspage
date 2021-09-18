@@ -1,15 +1,15 @@
 <template>
     <div>
-        <NounsNav/>
+        <CommunityNav/>
 
         <h2>
             <Icon v="book-heart"/>
-            <T>nouns.inclusive.headerLong</T>
+            <T>inclusive.headerLong</T>
         </h2>
 
         <section>
-            <T>nouns.inclusive.info</T>
-            <Share :title="$t('nouns.inclusive.headerLong')"/>
+            <T>inclusive.info</T>
+            <Share :title="$t('inclusive.headerLong')"/>
         </section>
 
         <InclusiveDictionary load ref="inclusivedictionary"/>
@@ -25,14 +25,14 @@
         components: { NounsNav },
         mixins: [ hash ],
         mounted() {
-            this.handleHash(this.config.nouns.inclusive.hashNamespace || '', filter => {
+            this.handleHash(this.config.inclusive.hashNamespace || '', filter => {
                 this.$refs.inclusivedictionary.setFilter(filter);
             });
         },
         head() {
             return head({
-                title: this.$t('nouns.inclusive.headerLong'),
-                description: this.$t('nouns.inclusive.info')[0],
+                title: this.$t('inclusive.headerLong'),
+                description: this.$t('inclusive.info')[0],
             });
         },
     }

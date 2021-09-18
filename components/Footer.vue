@@ -14,60 +14,74 @@
                 </p>
             </div>
             <div class="text-center d-flex flex-column justify-content-center">
-                <p class="small mb-0">
-                    <Icon v="users"/>
-                    <T>footer.links</T>:
-                </p>
-                <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row', 'justify-content-center', 'align-items-center']">
-                    <span>
-                        <SquareButton
-                                v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
-                                :link="link.url"
-                                :aria-label="link.icon"
-                        >
-                            <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                        </SquareButton>
-                    </span>
-                    <span>
-                        <SquareButton link="https://avris.it" aria-label="avris.it">
-                            <img src="~assets/avris.svg" alt="Avris"/>
-                        </SquareButton>
-                        <SquareButton v-for="s in config.support.links" :key="s.url" :link="s.url" :aria-label="s.headline">
-                            <Icon :v="s.icon" :set="s.iconSet || 'l'"/>
-                        </SquareButton>
-                        <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
-                            <Icon v="gitlab" set="b"/>
-                        </SquareButton>
-                    </span>
+                <div class="my-2">
+                    <p class="small mb-0">
+                        <Icon v="users"/>
+                        <T>footer.links</T>:
+                    </p>
+                    <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row', 'justify-content-center', 'align-items-center']">
+                        <span>
+                            <SquareButton
+                                    v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
+                                    :link="link.url"
+                                    :aria-label="link.icon"
+                            >
+                                <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                            </SquareButton>
+                        </span>
+                        <span>
+                            <SquareButton link="https://avris.it" aria-label="avris.it">
+                                <img src="~assets/avris.svg" alt="Avris"/>
+                            </SquareButton>
+                            <SquareButton v-for="s in config.support.links" :key="s.url" :link="s.url" :aria-label="s.headline">
+                                <Icon :v="s.icon" :set="s.iconSet || 'l'"/>
+                            </SquareButton>
+                            <SquareButton link="https://gitlab.com/Avris/Zaimki" aria-label="GitLab">
+                                <Icon v="gitlab" set="b"/>
+                            </SquareButton>
+                        </span>
+                    </div>
                 </div>
-                <ul v-if="config.user.enabled" class="list-inline small">
-                    <li class="list-inline-item">
-                        <nuxt-link :to="`/${config.user.termsRoute}`">
-                            <Icon v="gavel"/>
-                            <T>terms.header</T>
-                        </nuxt-link>
-                    </li>
-                    <li class="list-inline-item">
-                        <nuxt-link v-if="config.api !== null" to="/api">
-                            <Icon v="laptop-code"/>
-                            <T>api.header</T>
-                        </nuxt-link>
-                        <LocaleLink v-else locale="en" link="/api">
-                            <Icon v="laptop-code"/>
-                            <T>api.header</T>
-                        </LocaleLink>
-                    </li>
-                </ul>
-                <ul v-if="config.user.enabled" class="list-inline small">
-                    <li class="list-inline-item">
-                        <LocaleLink locale="en" link="/blog/creating-new-language-version">
-                            <Icon v="language"/>
-                            <T>localise.short</T>
-                        </LocaleLink>
-                    </li>
-                </ul>
-                <Share/>
-                <ModeSwitch class="mt-3"/>
+                <div class="my-2">
+                    <ul v-if="config.user.enabled" class="list-inline small">
+                        <li v-if="config.faq.enabled && config.links.split" class="list-inline-item">
+                            <nuxt-link :to="`/${config.faq.route}`">
+                                <Icon v="map-marker-question"/>
+                                <T>faq.header</T>
+                            </nuxt-link>
+                        </li>
+                        <li class="list-inline-item">
+                            <nuxt-link v-if="config.api !== null" to="/api">
+                                <Icon v="laptop-code"/>
+                                <T>api.header</T>
+                            </nuxt-link>
+                            <LocaleLink v-else locale="en" link="/api">
+                                <Icon v="laptop-code"/>
+                                <T>api.header</T>
+                            </LocaleLink>
+                        </li>
+                    </ul>
+                    <ul v-if="config.user.enabled" class="list-inline small">
+                        <li class="list-inline-item">
+                            <nuxt-link :to="`/${config.user.termsRoute}`">
+                                <Icon v="gavel"/>
+                                <T>terms.header</T>
+                            </nuxt-link>
+                        </li>
+                        <li class="list-inline-item">
+                            <nuxt-link :to="`/license`">
+                                <Icon v="gavel"/>
+                                OQL 1.0
+                            </nuxt-link>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-2">
+                    <Share/>
+                </div>
+                <div class="my-2">
+                    <ModeSwitch/>
+                </div>
             </div>
         </div>
     </footer>

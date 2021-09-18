@@ -1,25 +1,28 @@
-key	description	normative	pronoun_n	pronoun_d	pronoun_a	pronoun_g	article_n	article_g	article_d	article_a	demonstrative_n	demonstrative_g	demonstrative_d	demonstrative_a	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-er,er/sein	Maskulinum	TRUE	er	ihm	ihn	sein	der	dessen	dem	den	dieser	dieses	diesem	diesen	FALSE	FALSE	TRUE
-sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihr	die	deren	der	die	diese	dieser	dieser	diese	FALSE	FALSE	TRUE
-es,es/sein	Neutrum	TRUE	es	ihm	es	sein	das	dessen	dem	das	dieses	dieses	diesem	dieses	FALSE	FALSE	TRUE
-dey,dey/denen	Neopronomen „dey“	FALSE	dey	denen	demm	deren									FALSE	FALSE	TRUE
-die,die/denen	Neopronomen „die“	FALSE	die	denen	die	deren									FALSE	FALSE	TRUE
-el,el/em	Neopronomen „el“	FALSE	el	em	en	ems									FALSE	FALSE	TRUE
-em,em/em	Neopronomen „em“	FALSE	em	em	em	ems									FALSE	FALSE	TRUE
-en,en/en	Neopronomen „en“	FALSE	en	en	en	sein, enes									FALSE	FALSE	TRUE
-ey,ey/emm	Neopronomen „ey/em“	FALSE	ey	emm	emm	eys									FALSE	FALSE	TRUE
-et,et/siem	Neopronomen „et“	FALSE	et	siem	sierer	sien									FALSE	FALSE	TRUE
-hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sir									FALSE	FALSE	TRUE
-hen,hen/hen	Neopronomen „hen“	FALSE	hen	hen	hen	hens									FALSE	FALSE	TRUE
-iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses									FALSE	FALSE	TRUE
-ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds									FALSE	FALSE	TRUE
-per,per/per	Neopronomen „per“	FALSE	per	per	per	pers									FALSE	FALSE	TRUE
-ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses									FALSE	FALSE	TRUE
-sier,sier/siem	Neopronomen „sier“	FALSE	sier	siem	sien	sien									FALSE	FALSE	TRUE
-they,they/them	Äquivalent zu englischem „them“	FALSE	they	them	them	their									FALSE	FALSE	TRUE
-xier,xier/xiem	Neopronomen „xier“, Pronomen ohne Geschlecht	FALSE	xier	xiem	xien	xies	dier	dieren	diem	dien	dier	dieren	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen/=Illi Anna Heger}.
-zet,zet/zerm	Neopronomen „zet“	FALSE	zet	zerm	zern	zets									FALSE	FALSE	TRUE
-er_sie,er_sie/ihm_ihr	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	dieses_dieser	diesem_dieser	diese_n	FALSE	FALSE	FALSE
-er*sie,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
-er:sie,er:sie/ihm:ihr	Neopronomen „er:sie“	FALSE	er:sie	ihm:ihr	ihn:sie	sein:ihr	der:die	des:der	dem:der	den:die	diese:r	dieses:dieser	diesem:dieser	diese:n	FALSE	FALSE	FALSE
-ersie,ersie/ihmihr	Neopronomen „ersie“	FALSE	ersie	ihmihr	ihnsie	seinihr	derdie	desder	demder	dendie	dieserdiese	diesesdieser	diesemdieser	diesediesen	FALSE	FALSE	FALSE
+key	description	normative	pronoun_n	pronoun_d	pronoun_a	pronoun_g	possessive	article_n	article_g	article_d	article_a	demonstrative_n	demonstrative_g	demonstrative_d	demonstrative_a	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+er,er/sein	Maskulinum	TRUE	er	ihm	ihn	seiner	sein	der	des	dem	den	dieser	dieses	diesem	diesen	FALSE	FALSE	TRUE
+sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihrer	ihr	die	der	der	die	diese	dieser	dieser	diese	FALSE	FALSE	TRUE
+es,es/sein	Neutrum	TRUE	es	ihm	es	seiner	sein	das	des	dem	das	dieses	dieses	diesem	dieses	FALSE	FALSE	TRUE
+dey,dey/denen	Neopronomen „dey“	FALSE	dey	denen	dey	derer	deren									FALSE	FALSE	TRUE
+die,die/denen	Neopronomen „die“	FALSE	die	denen	die	deren	deren									FALSE	FALSE	TRUE
+el,el/em	Neopronomen „el“	FALSE	el	em	en	emser	ems									FALSE	FALSE	TRUE
+em,em/em	Neopronomen „em“	FALSE	em	em	em	ems	ems									FALSE	FALSE	TRUE
+en,en/en	Neopronomen „en“	FALSE	en	en	en	enes	enes									FALSE	FALSE	TRUE
+ey,ey/emm	Neopronomen „ey/em“	FALSE	ey	emm	emm	eys	eys									FALSE	FALSE	TRUE
+et,et/siem	Neopronomen „et“	FALSE	et	siem	sien	sierer	sier									FALSE	FALSE	TRUE
+hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sirer	sir									FALSE	FALSE	TRUE
+hen,hen/hen	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FALSE	FALSE	TRUE
+hie,hie/hein	Neopronomen „hen“	FALSE	hie	hiem	hie	heiner	hein									FALSE	FALSE	TRUE
+iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses	ikses									FALSE	FALSE	TRUE
+ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds	inds									FALSE	FALSE	TRUE
+nin,nin/nim	Neopronomen „nin“	FALSE	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE
+oj,oj/juj	Neopronomen „oj“	FALSE	oj	ojm	ojn	juj	juj									FALSE	FALSE	TRUE	Erstellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}. Siehe auch: {/substantive#Ojum=Ojum}.
+per,per/per	Neopronomen „per“	FALSE	per	per	per	pers	pers									FALSE	FALSE	TRUE
+ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses	ses									FALSE	FALSE	TRUE
+sier,sier/siem	Neopronomen „sier“	FALSE	sier	siem	sien	sies	sies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen21/=Illi Anna Heger}
+they,they/them	Äquivalent zu englischem „them“	FALSE	they	them	them	their	their									FALSE	FALSE	TRUE
+xier,xier/xiem	Neopronomen „xier“	FALSE	xier	xiem	xien	xieser	xies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen33/=Illi Anna Heger}.
+zet,zet/zerm	Neopronomen „zet“	FALSE	zet	zerm	zern	zets	zets									FALSE	FALSE	TRUE
+er_sie,er_sie/ihm_ihr	Neopronomen „er_sie“	FALSE	er_sie	ihm_ihr	ihn_sie	seiner_ihrer	sein_ihr	der_die	des_der	dem_der	den_die	diese_r	dieses_dieser	diesem_dieser	diese_n	FALSE	FALSE	FALSE
+er*sie,er*sie/ihm*ihr	Neopronomen „er*sie“	FALSE	er*sie	ihm*ihr	ihn*sie	seiner*ihrer	sein*ihr	der*die	des*der	dem*der	den*die	diese*r	dieses*dieser	diesem*dieser	diese*n	FALSE	FALSE	FALSE
+er:sie,er:sie/ihm:ihr	Neopronomen „er:sie“	FALSE	er:sie	ihm:ihr	ihn:sie	seiner:ihrer	sein:ihr	der:die	des:der	dem:der	den:die	diese:r	dieses:dieser	diesem:dieser	diese:n	FALSE	FALSE	FALSE
+ersie,ersie/ihmihr	Neopronomen „ersie“	FALSE	ersie	ihmihr	ihnsie	seinerihrer	seinihr	derdie	desder	demder	dendie	dieserdiese	diesesdieser	diesemdieser	diesediesen	FALSE	FALSE	FALSE

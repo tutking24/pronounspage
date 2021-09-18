@@ -46,6 +46,31 @@ const LINK_PROVIDERS = {
         homepage: 'https://cake.avris.it',
         name: 'Attraction Layer Cake',
     },
+    spectrum: {
+        regex: '^https://spectrum.avris.it/([A-Za-z0-9]{4})$',
+        icon: 'https://spectrum.avris.it/favicon.png',
+    },
+    orcid: {
+        regex: '^https?://(?:www.)?orcid.org/([^/]+)',
+        icon: 'https://orcid.org/assets/icons/favicon.ico',
+    },
+    kofi: {
+        regex: '^https?://(?:www.)?ko-fi.com/([^/]+)',
+        icon: 'https://ko-fi.com/favicon.png',
+    },
+    linktree: {
+        regex: '^https?://(?:www.)?linktr.ee/([^/]+)',
+        icon: 'https://linktr.ee/static/favicon.ico',
+    },
+    blogger: {
+        regex: '^https?://([^/]+).(?:blogger|blogspot).com',
+        icon: 'https://www.blogger.com/about/favicon/favicon.ico',
+    },
+    twitch: {
+        regex: '^https?://(?:www.)?twitch.tv/([^/]+)',
+        icon: 'twitch',
+        iconSet: 'b',
+    },
 };
 
 export default {
@@ -58,7 +83,7 @@ export default {
                 cake: LINK_PROVIDERS.cake,
             };
         },
-        beautifyLink(link) {
+        beautifyLink(link, expand = false) {
             for (let name in LINK_PROVIDERS) {
                 if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
                 const provider = LINK_PROVIDERS[name];
@@ -66,7 +91,7 @@ export default {
                 if (m) {
                     return {
                         ...provider,
-                        text: m[1],
+                        text: expand ? clearUrl(link) : m[1],
                     };
                 }
             }

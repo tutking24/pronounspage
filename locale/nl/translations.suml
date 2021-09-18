@@ -1,4 +1,5 @@
-title: 'nl.pronouns.page'
+title: 'Pronouns.page'
+domain: 'nl.pronouns.page'
 description: 'Gebruiksvoorbeelden van persoonlijke voornaamwoorden en genderneutrale taal.'
 
 home:
@@ -40,21 +41,20 @@ home:
         alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
-    # TODO
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Onze missie'
+        summary: 'We strijden voor vrijheid, respect en inclusiviteit in taal.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Vrijheid</strong>
+            – Zodat dat iedereen <em>zelf</em> kan beslissen welke voornaamwoorden het beste bij diegene passen.
+
         respect: >
             <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            – Zodat de voornaamwoorden van <em>anderen</em> worden gerespecteerd.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inclusiviteit</strong>
+            – Zodat we geen aannames maken over iemand's gender wanneer we refereren naar een of meerdere
+            personen die we niet kennen, en zodat we hun niet uitsluiten voor wat voor reden dan ook.
 
 pronouns:
     header: 'Voornaamwoorden'
@@ -75,7 +75,7 @@ pronouns:
             Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
             vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
             - zolang de context duidelijk is wat betreft degene over wie wordt gesproken.
-        options: 'bekijk de mogelijkheden [share]{/=hier}.'
+        options: 'bekijk de mogelijkheden [share]{/voornaamwoorden=hier}.'
     others: 'Andere vormen'
     othersRaw: 'andere'
     or: 'of'
@@ -95,7 +95,7 @@ sources:
         Series: 'Serie'
         Song: 'Muziek'
         Poetry: 'Poëzie'
-        Game: 'Game' # TODO
+        Game: 'Spel'
         Other: 'Andere'
     submit:
         header: 'Dien een voorbeeld in ter toevoeging aan de site'
@@ -168,6 +168,8 @@ nouns:
     plural: 'meervoud'
     pluralShort: 'meerv.'
 
+    image: 'Beeld'
+
 faq:
     header: 'FAQ'
     headerLong: 'Veelgestelde vragen'
@@ -200,15 +202,15 @@ faq:
                     Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
                     It's about being free from gender roles, not about creating new ones.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Waarom zou ik zulke <em>rare</em> voornaamwoorden moeten respecteren?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    Omdat mensen aanspreken in de manier waarop ze aangesprolen willen worden de basis van sociale relaties is.
+                    Je zou nooit Marie "Lien" noemen, je zou nooit meneer/mevrouw weglaten wanneer je jouw docent aanspreekt etc.
+                    En zo zijn er ook mensen die niet “{/zij=zij}” of “{/hij=hij}” willen worden genoemd. 
+                    Als je dit niet accepteert dan ben jij alleen degene die in een kwaad daglicht wordt gesteld. 
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
+                    "Rare voornaamwoorden" zijn niet raar, maar gewoon een kwestie van wennen.
         how-to-know:
             question: 'How do I know how to address someone?'
             answer:
@@ -256,53 +258,54 @@ faq:
                     You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
                     on neopronouns.
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'Waarom zou ik mijn voornaamwoorden in mijn bio op social media zetten?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use „{/he=he}” or „{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    Als je cis bent (=niet trans) en je gebruikt „{/he=he}” or „{/she=she}”, dan zou je kunnen
+                    denken dat jouw voornaamwoorden <em>vanzelfsprekend</em>. zijn.
+                    And misschien is dat wel zo - zolang als jouw naam op jouw profiel staat (en traditioneel als mannelijk of vrouwelijk wordt gezien)
+                    en jouw avatar is ingesteld op jouw foto.
+                    Voor velen is dat niet zo en is het daarom moeilijk om te raden hoe ze willen worden aangesproken.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    Maar het is vooral vanwege het volgende: jouw voornaamwoorden kunnen dan wel ''vanzelfsprekend'' zijn,
+                    maar er zijn mensen wiens voornaamwoorden dat niet zijn.
+                    Zij willen op een correcte manier worden aangesproken, of ze nou wel of niet passen als hun gender,
+                    of ze nou wel of niet in transitie zijn (als ze al überhaupt in transitie willen).
+                    Non-binaire personen zien er meestal niet non-binair uit, we zijn niemand androgynie verschuldigd.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more confortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    Het is erg belangrijk voor trans, non-binaire and gender non-conforme personen om onze voornaamwoorden te delen.
+                    Tegelijkertijd maakt het ons ook kwetsbaar.
+                    Maar als cis personen dit ook doen, dan kan dat een wereld van verschil betekenen.
+                    Het maakt ons comfortabeler, veilig en maakt dat we ons welkom voelen.
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(Meer redenen hier).}
         change:
-            question: 'Can I change my pronouns?'
+            question: 'Kan ik mijn voornaamwoorden veranderen?'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    Natuurlijk! Wanneer iemand hun mening, stijl of hobbies verandert is niemand verbaasd,
+                    dus waarom zou het dan vreemd zijn dat zij een nieuw deel van hun identiteit hebben ontdekt,
+                    hun naam niet meer leuk vinden, een label hebben ontdekt dat beter past etc.?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: 'Is het raar dat ik niet aan mijn nieuwe voornaamwoorden gewend kan raken?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    Helemaal niet! Doordat je jarenlang andere voornaamwoorden hebt gebruikt die geassocieerd zijn met het gender
+                    dat je toegewezen is bij de geboorte kan het moeilijk zijn om te wennen aan nieuwe voornaamwoorden.
+
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    Voornaamwoorden ≠ gender
+                    Jouw gender zal niet radicaal veranderen puur omdat je een keertje in de war raakte omdat iemand jou ''hen'' noemde.
+                    Maak je geen zorgen. Experiment. Kijk wat het beste bij jou past.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    Omdat deze term suggereert dat iemand's voornaamwoorden slechts een bevlieging zijn.
+                    Als iemand slechts ''prefereert'' om ''zij'' genoemd te worden dan vindt hij het zeker niet erg als ik hem een ''hij'' noem, toch?
+                    Diegene lijkt toch op een jongen dus dat zal veel makkelijker zijn voor mij!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+                    Nee! Dit zijn onze voornaamwoorden, niet onze ''geprefereerde voornaamwoorden''. Dit zijn onze namen, niet onze ''geprefereerde namen''.
+                    Als je om jouw trans en non-binaire vrienden en geliefden geeft, spreek ze dan correct aan.
         gender-pronouns:
             question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
             answer:
@@ -317,7 +320,7 @@ links:
     headerLong: 'Extra links'
     recommended: 'Wij raden aan'
 
-    blog: 'Blog'  # TODO
+    blog: 'Blog'
     media: 'Pronouns.page in de media'
 
     social: 'Sociale media'
@@ -361,7 +364,7 @@ user:
         email:
             subject: 'Jouw logincode is %code%'
             content: |
-                Gebruik de volgende code om jouw e-mailadres te bevestigen: %code%.
+                Voer de volgende code in om jouw e-mailadres te bevestigen: %code%.
 
                 Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
         why: >
@@ -399,8 +402,12 @@ profile:
     description: 'Omschrijving'
     names: 'Namen'
     pronouns: 'Voornaamwoorden'
-    pronounsInfo: 'Je kunt een voornaamwoord (bijv. “die” of “zij/haar”) of een link (bijv. “http://nl.pronouns.page/zem”) of vijf eigen vormen (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.'
-    pronounsNotFound: 'We kunnen geen link naar dit voornaamwoord vinden!'
+    pronounsInfo: >
+        Je kunt een <strong>voornaamwoord</strong> (bijv. “die” of “zij/haar”)
+        of een <strong>link</strong> (bijv. “http://nl.pronouns.page/zem”)
+        of <strong>vijf eigen vormen</strong> (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.
+        Je kunt ook de {/pronouns#generator=<strong>generator</strong>} gebruiken om jouw eigen aangepaste voornaamwoorden in een zin te gebruiken.
+    pronounsNotFound: 'Onherkende indeling. Check aub de instructies hierboven.'
     words: 'Woorden'
     birthday: 'Leeftijd'
     birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'
@@ -436,6 +443,7 @@ profile:
 
     card:
         link: 'Kaartbeeld'
+        generate: 'Genereer'
         generating: 'Je kaartbeeld wordt gegenereerd …'
     empty: 'Deze person heeft nog geen kaarten gegenereerd.'
 
@@ -453,14 +461,11 @@ crud:
     search: 'Zoek…'
     author: 'Toegevoegd door'
     saved: 'Veranderingen succesvol opgeslagen!'
-    loginRequired: '{/account=Log in} to submit an entry' # TODO
+    loginRequired: '{/account=Login} om een toevoeging in te dienen'
 
 footer:
-    # TODO source: 'De broncode wordt {https://gitlab.com/Avris/Zaimki=gepubliceerd} onder de {https://mit.avris.it=MIT}-licentie.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL 1.0} licentie.
     links: 'Contact, sociale media, support'
 
 notFound:
@@ -521,27 +526,24 @@ images:
 error:
     generic: 'Er is iets misgegaan, probeer het opnieuw…'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Demonstreer alsjeblieft dat je geen bot bent om spam en DDoS aanvallen te voorkomen.'
+    invalid: 'Ongeldige CAPTCHA, probeer het alsjeblieft nog een keer.'
 
 mode:
     dark: 'Donkere modus'
     light: 'Lichte modus'
 
-# TODO
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'  # TODO
+    reason: 'Reden voor ban'
+    visible: '(Dit zal zichtbaar zijn voor de gebruiker)'
+    terms: 'Voorwaarden die zijn geschonden (verplicht)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/voorwaarden=Terms of Service}:'
+    header: 'Je bent geband. Jouw profiel zal onzichtbaar zijn .'
+    banned: 'Geband.'
+    termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}:'
 
-# TODO
 report:
     action: 'Rapporteer misbruik'
     comment: 'Leg kort uit wat ongepast is aan dit profiel'

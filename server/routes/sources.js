@@ -19,28 +19,38 @@ const approve = async (db, id) => {
     `);
 }
 
-const linkOtherVersions = async (req, sources) => {
-    const keys = new Set(sources.filter(s => !!s && s.key).map(s => `'` + clearKey(s.key) + `'`));
+const keyGetMain = (key) => {
+    return key.split('/')[0];
+}
 
-    const otherVersions = await req.db.all(SQL`
+const linkOtherVersions = async (req, sources) => {
+    const keys = new Set(sources.filter(s => !!s && s.key).map(s => keyGetMain(clearKey(s.key))));
+
+    let sql = SQL`
         SELECT s.*, u.id AS submitter FROM sources s
         LEFT JOIN users u ON s.submitter_id = u.id
         WHERE s.locale != ${global.config.locale}
         AND s.deleted = 0
         AND s.approved >= ${req.isGranted('sources') ? 0 : 1}
-        AND s.key IN (`.append([...keys].join(',')).append(SQL`)
-    `));
+        AND (`;
+    for (let key of keys) {
+        sql = sql.append(SQL`s.key = ${key} OR s.key LIKE ${key + '/%'} OR `)
+    }
+    sql = sql.append(SQL`0=1)`);
+
+    const otherVersions = await req.db.all(sql);
 
     const otherVersionsMap = {};
     otherVersions.forEach(version => {
-        if (otherVersionsMap[version.key] === undefined) {
-            otherVersionsMap[version.key] = [];
+        const k = keyGetMain(version.key);
+        if (otherVersionsMap[k] === undefined) {
+            otherVersionsMap[k] = [];
         }
-        otherVersionsMap[version.key].push(version);
+        otherVersionsMap[k].push(version);
     });
 
     return sources.map(s => {
-        s.versions = s.key ? otherVersionsMap[s.key] || [] : [];
+        s.versions = s.key ? otherVersionsMap[keyGetMain(s.key)] || [] : [];
         return s;
     });
 };

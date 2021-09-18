@@ -49,10 +49,12 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: false
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: false
 
 names:
     enabled: false
@@ -118,16 +120,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true

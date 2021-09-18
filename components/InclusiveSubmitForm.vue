@@ -17,7 +17,7 @@
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <Icon v="comment-times"/>
-                            <T>nouns.inclusive.insteadOf</T>
+                            <T>inclusive.insteadOf</T>
                         </strong></label>
                         <NounForm v-model="form.insteadOf" maxlength="128"/>
                     </div>
@@ -26,7 +26,7 @@
                     <div class="form-group">
                         <label class="text-nowrap"><strong>
                             <Icon v="comment-check"/>
-                            <T>nouns.inclusive.say</T>
+                            <T>inclusive.say</T>
                         </strong></label>
                         <NounForm v-model="form.say" maxlength="128"/>
                     </div>
@@ -36,14 +36,14 @@
             <div class="form-group">
                 <label class="text-nowrap"><strong>
                     <Icon v="comment-dots"/>
-                    <T>nouns.inclusive.because</T>
+                    <T>inclusive.because</T>
                 </strong></label>
                 <textarea v-model="form.because" class="form-control form-control-sm" required rows="6"></textarea>
             </div>
 
             <div class="form-group">
-                <label><strong><T>nouns.inclusive.categories</T>:</strong></label>
-                <a v-for="category in config.nouns.inclusive.categories"
+                <label><strong><T>inclusive.categories</T>:</strong></label>
+                <a v-for="category in config.inclusive.categories"
                    href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
                    @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"
                 >
@@ -52,7 +52,7 @@
             </div>
 
             <div class="form-group">
-                <label><strong><T>nouns.inclusive.sources</T>:</strong></label>
+                <label><strong><T>inclusive.sources</T>:</strong></label>
                 <ListInput v-model="form.links" v-slot="s">
                     <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" required/>
                 </ListInput>

@@ -1,33 +1,34 @@
-title: 'fr.pronouns.page'
+title: 'Pronouns.page'
+domain: 'fr.pronouns.page'
 description: 'Exemples d’usage de pronoms personnels et de langage neutre.'
 
 home:
     link: 'Page d’accueil'
     header: 'Des pronoms personnels'
     headerLong: 'Liste de pronoms personnels'
-    why: 'Pourquoi est-ce que les pronoms sont importants?'
+    why: 'Pourquoi est-ce que les pronoms sont importants ?'
     about:
         - >
             Tout le monde utilise des pronoms personnels. Ce sont les mots qui remplacent un nom d’une personne pour qu'on n'utilise pas son nom chaque fois qu’iel est mentionné·e.
-            La plupart des gens utilise {/il=«il/lui»} et {/elle=«elle/elle»}, donc on détermine automatiquement lequel utiliser en se basant sur l'apparence.
+            La plupart des gens utilise {/il=« il/lui »} et {/elle=« elle/elle »}, donc on détermine automatiquement lequel utiliser en se basant sur l'apparence.
             Mais ce n’est pas si simple...
         - >
-            Le genre est compliqué. Il y a des gens qui «n’ont pas l’air» de leur genre.
+            Le genre est compliqué. Il y a des gens qui « n’ont pas l’air » de leur genre.
             Certaines personnes préfèrent être genrées d’une façon différente que celle qu’on suppose.
-            Certaines personnes ne rentrent pas dans les cases «homme» et «femme» et préfèrent un language plus neutre.
+            Certaines personnes ne rentrent pas dans les cases « homme » et « femme » et préfèrent un language plus neutre.
         - >
             Vous pouvez utiliser cet outil pour partager un lien vers les pronoms que vous utilisez, avec des exemples,
             pour que vous puissiez montrer comment vous préférez être genré·e.
         - >
-            Pourquoi est-ce que c’est important? Par simple décence humaine.
-            Vous n’appelleriez pas Louise «Annette» simplement parce que vous préférez ce prénom,
-            ou parce qu’elle a «l’air d’une Annette selon vous».
-            Ou même si le prénom «Annette» est <em>bien</em> inscrit sur son certificat de naissance,
-            mais qu’elle le déteste et préfère utiliser «Louise.»
+            Pourquoi est-ce que c’est important ? Par simple décence humaine.
+            Vous n’appelleriez pas Louise « Annette » simplement parce que vous préférez ce prénom,
+            ou parce qu’elle a « l’air d’une Annette selon vous ».
+            Ou même si le prénom « Annette » est <em>bien</em> inscrit sur son certificat de naissance,
+            mais qu’elle le déteste et préfère utiliser « Louise ».
             Et c’est la même chose avec les pronoms -
             si vous ne voulez pas pas être impoli·e envers quelqu’un, adressez-vous à ellui correctement.
             La seule différence est qu’on connaît généralement le nom des gens, mais pas leurs pronoms.
-            On se présente avec un nom, mais pas des pronoms. Changeons ça!
+            On se présente avec un nom, mais pas des pronoms. Changeons ça !
     pronouns: 'Liste de pronoms personnels populaires'
     generator:
         header: 'Générateur'
@@ -37,8 +38,8 @@ home:
         button: 'Voir le générateur'
         header2: 'Générer un lien'
         base: 'Basé sur'
-        alt: 'Vous pouvez aussi entrer des formes interchangeables dans chaque champ séparément, par exemple <code>lui&elle</code> = „lui” or „elle”'
-        pronunciation: 'Vous pouvez aussi spécifier la prononciation après une barre verticale en utilisant l’alphabet phonétique, par ex. <code>ille|ij</code> = „ille” prononcé /ij/.'
+        alt: 'Vous pouvez aussi entrer des formes interchangeables dans chaque champ séparément, par exemple <code>lui&elle</code> = « lui » or « elle »'
+        pronunciation: 'Vous pouvez aussi spécifier la prononciation après une barre verticale en utilisant l’alphabet phonétique, par ex. <code>ille|ij</code> = « ille » prononcé /ij/.'
     whatisit: 'C''est quoi, ces histoires de pronoms ?'
     mission:
         header: 'Notre mission'
@@ -73,7 +74,7 @@ pronouns:
             Même si pour beaucoup de gens, c'est extrêmement important qu'on utilise des pronoms spécifiques pour parler d'eux,
             d'autres ne voient pas de problème à ce qu'on s'adresse à eux de n'importe quelle façon –
             du moment que c'est évident de qui on parle dans le contexte.
-        options: 'voir les options [share]{/=ici}.'
+        options: 'voir les options [share]{/pronoms=ici}.'
     others: 'Autres formes'
     othersRaw: 'autre'
     or: 'ou'
@@ -99,7 +100,7 @@ sources:
         header: 'Soumettre un exemple à ajouter'
         action: 'Soumettre'
         pronouns: 'Quels pronoms ont-ils été utilisés ?'
-        pronounsInfo: 'Entrer la forme la plus simple des pronoms, comme dans le lien, c’est à dire “ael”, “il/ellui”, “il&elle”'
+        pronounsInfo: 'Entrer la forme la plus simple des pronoms, comme dans le lien, c’est à dire « ael », « il/ellui », « il&elle »'
         type: 'Type de source'
         author: 'Auteur'
         title: 'Titre'
@@ -108,7 +109,7 @@ sources:
         fragments: 'Extraits'
         comment: 'Commentaire'
         link: 'Lien vers le contenu'
-        thanks: 'Merci de votre contribution!'
+        thanks: 'Merci de votre contribution !'
         another: 'Soumettre un autre exemple'
         moderation: 'Les soumissions devront être approuvées avant d’être publiées.'
         key: 'Key'
@@ -128,7 +129,7 @@ nouns:
             L'inclusif et le neutre ne s'arrête pas à respecter les pronoms des gens.
             C'est aussi décrire leur métier, leur position, leurs relations, etc.
             d'une façon qui ne détermine pas leur genre.
-            Tous les policiers ne sont pas des "hommes de loi". Toutes les personnes mariées ne sont pas un "mari" ou une "femme".
+            Tous les policiers ne sont pas des « hommes de loi ». Toutes les personnes mariées ne sont pas un « mari » ou une « femme ».
         - >
             Quand vous vous adressez à quelqu'un dont vous ne connaissez pas le genre,
             ou à un groupe de personnes de genres différents,
@@ -167,17 +168,19 @@ nouns:
     plural: 'pluriel'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Dictionnaire des terminologies queer'
-        info:
-            - >
-                Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
-        term: 'Terminologie'
-        original: 'Etymologie'
-        category: 'Catégorie'
-        images: 'Images supplémentaires'
-        definition: 'Définition'
+    image: 'Photo'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Dictionnaire des terminologies queer'
+    info:
+        - >
+            Un dictionnaire des terminologies utilisées parmi la communauté LGBTQ+.
+    term: 'Terminologie'
+    original: 'Etymologie'
+    category: 'Catégorie'
+    images: 'Images supplémentaires'
+    definition: 'Définition'
 
 faq:
     header: 'FAQ'
@@ -192,8 +195,8 @@ faq:
                     le sexe génétique, le sexe hormonal, le sexe phénotypique…
                     Ils ne correspondent pas forcément les uns aux autres, ils ne sont pas obligatoirement binaires.
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(plus d'infos ici)}.
-                    Et quand on arrive à l'aspect culturel, le "genre" est une construction sociale.
-                    Selon l'époque et le lieu, être "une femme" ou "un homme" peut vouloir dire avoir des droits,
+                    Et quand on arrive à l'aspect culturel, le « genre » est une construction sociale.
+                    Selon l'époque et le lieu, être « une femme » ou « un homme » peut vouloir dire avoir des droits,
                     des devoirs, des normes radicalement différentes. En Europe, auparavant, les hommes portaient
                     des talons hauts et des collants, les peuples natifs d'Amérique du Nord reconnaissent
                     un troisième genre depuis des siècles {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
@@ -207,7 +210,7 @@ faq:
                     {http://aminoapps.com/p/6rxhyd=demiboys},
                      {https://lgbtplus.fandom.com/fr/wiki/Non-binarité=et beaucoup d’autres}.
                 - >
-                    La non-binarité n’est pas forcément “entre” masculin et féminin. Plutôt “au-delà”.
+                    La non-binarité n’est pas forcément « entre » masculin et féminin. Plutôt « au-delà ».
                     Les personnes non-binaires ne sont pas obligées d’être androgynes, ne sont pas obligées
                     d’utiliser des pronoms neutres, etc.
                     C’est se libérer des normes de genres, pas en créer de nouvelles.
@@ -216,33 +219,33 @@ faq:
             answer:
                 - >
                     Parce que s’adresser aux gens de la façon qu’ils souhaitent est la base de toute relation sociale.
-                    Vous n’appelleriez pas Louise «Annette», vous ne tutoiriez pas votre supérieur hiérarchique, etc.
-                    Et certaines personnes ne veulent pas être appelées “{/il=il}” ou “{/elle=elle}”.
+                    Vous n’appelleriez pas Louise « Annette », vous ne tutoiriez pas votre supérieur hiérarchique, etc.
+                    Et certaines personnes ne veulent pas être appelées « {/il=il} » ou « {/elle=elle} ».
                     Si vous ne respectez pas ça, c’est <em>vous</em> que cela montre sous un mauvais jour.
                 - >
-                    Les “pronoms bizarres” sont juste une question d’habitude.
+                    Les « pronoms bizarres » sont juste une question d’habitude.
         how-to-know:
-            question: 'Comment savoir comment genrer une personne?'
+            question: 'Comment savoir comment genrer une personne ?'
             answer:
                 - >
-                    Vous pouvez simplement demander! Oui, ça risque d’être un peu gênant, mais plus on le fait, moins c’est gênant.
+                    Vous pouvez simplement demander ! Oui, ça risque d’être un peu gênant, mais plus on le fait, moins c’est gênant.
                     Si on peut demander son nom à quelqu’un, pourquoi pas ses pronoms ?
                 - >
-                    (Évitez juste de le formuler comme “tu es un garçon ou une fille ?”
+                    (Évitez juste de le formuler comme « tu es un garçon ou une fille ? »
                     Cette question sous-entend qu’il n’y a que deux réponses correctes,
                     et ça suggère une curiosité malsaine à propos des organes génitaux de la personne.
-                    À la place, vous pouvez simplement demander “quels sont tes pronoms ?” ou “comment voudrais-tu que je te genre ?”)
+                    À la place, vous pouvez simplement demander « quels sont tes pronoms ? » ou « comment voudrais-tu que je te genre ? »)
                 - >
                     C’est aussi important de normaliser le fait de se présenter en donnant ses pronoms.
-                    “Salut, je suis Michael, mes pronoms sont {/il=il/lui}.” Ce n’est pas difficile – mais pour les personnes trans et non-binaires,
+                    « Salut, je suis Michel, mes pronoms sont {/il=il/lui}. » Ce n’est pas difficile – mais pour les personnes trans et non-binaires,
                     c’est tellement important !
                     C’est encore plus facile en ligne: mettez simplement vos pronoms (ou un lien vers des exemples de notre site) dans votre bio.
                 - >
                     Rappelez-vous aussi que certaines personnes peuvent utiliser un nom et des pronoms différents selon la situation.
                     Peut-être qu’iels ne sont pas out à leur famille ou leurs collègues, mais assez à l’aise avec leurs ami·es pour être elleux-mêmes.
-                    Soyez attentif·ve. Par exemple, vous pourriez leur demander “quels pronoms devrais-je utiliser devant ton patron ?”, etc.
+                    Soyez attentif·ve. Par exemple, vous pourriez leur demander « quels pronoms devrais-je utiliser devant ton patron ? », etc.
                 - >
-                    Certaines personnes donnent plusieurs pronoms, par exemple “{/il&elle=il/elle}” or “{/iel&il=iel/il}”.
+                    Certaines personnes donnent plusieurs pronoms, par exemple « {/il&elle=il/elle} » or « {/iel&il=iel/il} ».
                     Ça veut dire qu’ils utilisent tous ces pronoms. Souvent, le premier est celui qu’iels préfèrent.
         who-uses-it:
             question: 'Y-at-il vraiment des gens qui utilisent ça ?'
@@ -264,7 +267,7 @@ faq:
                     Mais cela ne les rend aucunement moins légitimes.
                     Au bout d’un moment, si elles sont assez utilisées, les nouvelles formes de langage finissent par être inclues dans le dictionnaire.
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, par exemple,
-                    accepte l’usage du {/they=“they” singulier} pour les personnes non-binaires.
+                    accepte l’usage du {/they=« they » singulier} pour les personnes non-binaires.
                 - >
                     Vous pouvez aussi lire des {https://scholar.google.com/scholar?hl=en&q=neopronouns=travaux académiques}
                     sur les néopronoms.
@@ -272,17 +275,17 @@ faq:
             question: 'Pourquoi devrais-je mettre mes pronoms dans ma bio sur les réseaux sociaux ?'
             answer:
                 - >
-                    Si vous êtes cis (c’est à dire si vous n’êtes pas trans) et que vous utilisez  „{/il=il}” or „{/elle=elle}”
+                    Si vous êtes cis (c’est à dire si vous n’êtes pas trans) et que vous utilisez  « {/il=il} » or « {/elle=elle} »
                     conformément à votre genre assigné, peut-être pensez vous que vos pronoms sont <em>évidents</em>.
                     Et oui, peut-être que c’est vrai – du moment que votre prénom est dans votre profile (et est traditionnellement masculin
                     ou féminin), ou bien que vous avez une photo de vous en photo de profil.
                     Pour beaucoup de gens, ce n’est pas le cas, donc c’est difficile de savoir comment iels veulent être genré·es.
                 - >
-                    Mais ça ne s’arrête pas là : vos pronoms sont peut-être “évidents”,
+                    Mais ça ne s’arrête pas là : vos pronoms sont peut-être « évidents »,
                     mais il y a des gens pour qui ce n’est pas le cas.
-                    Iels souhaitent être genré·es correctement, qu’iels “passent” en tant que leur genre ou non,
+                    Iels souhaitent être genré·es correctement, qu’iels « passent » en tant que leur genre ou non,
                     qu’ils aient transitionné ou non (ou même s’iels ne veulent pas transitionner du tout).
-                    Les personnes non-binaires n’ont souvent pas “l’air” non-binaire – nous ne devons à personne d’être androgyne.
+                    Les personnes non-binaires n’ont souvent pas « l’air » non-binaire – nous ne devons à personne d’être androgyne.
                 - >
                     Partager nos pronoms est très important pour nous, personnes trans, non-binaires et gender nonconforming.
                     Malheureusement, cela nous expose et nous fait sortir du lot.
@@ -304,26 +307,26 @@ faq:
                     c’est normal de s’oublier quand on passe à de nouveaux pronoms.
                 - >
                     Pronoms ≠ genre.
-                    Votre genre ne va pas complètement changer juste parce que vous êtes confus quand quelqu’un a utilisé “iel” pour vous.
+                    Votre genre ne va pas complètement changer juste parce que vous êtes confus quand quelqu’un a utilisé « iel » pour vous.
                     Ne vous inquiétez pas. Expérimentez. Découvrez ce qui vous convient le mieux.
         preferred-pronouns:
-            question: 'Pourquoi je ne devrais pas dire “pronoms préférés” ?'
+            question: 'Pourquoi je ne devrais pas dire « pronoms préférés » ?'
             answer:
                 - >
                     Parce que cette phrase sous-entend que les pronoms d’une personne sont juste un caprice.
-                    Si quelqu’un “préfère” juste qu’on qu’on le genre au féminin, il ne se sentira pas <em>si</em> mal si je dis “lui”, pas vrai ?
+                    Si quelqu’un « préfère » juste qu’on qu’on le genre au féminin, il ne se sentira pas <em>si</em> mal si je dis « lui », pas vrai ?
                     Il ressemble à un mec, après tout, alors ce sera plus facile pour moi !
                 - >
-                    Non ! C’est nos pronoms. Pas nos “pronoms préférés”. C’est nos noms, pas nos “noms préférés”.
+                    Non ! C’est nos pronoms. Pas nos « pronoms préférés ». C’est nos noms, pas nos « noms préférés ».
                     Si vous vous souciez de vos proches trans et non-binaires, genrez-les correctement.
         gender-pronouns:
-            question: 'Pourquoi je ne devrais pas dire “pronoms de genre” ?'
+            question: 'Pourquoi je ne devrais pas dire « pronoms de genre » ?'
             answer:
                 - >
                     Parce que genre ≠ pronoms. Les pronoms, c’est juste de la grammaire.
                     Les personnes non-binaires peuvent utiliser des pronoms binaires, certaines lesbiennes utilisent {/il=il/lui} pour des raisons culturelles, etc.
                 - >
-                    Dites simplement “pronoms”.
+                    Dites simplement « pronoms ».
 
 links:
     header: 'Liens'
@@ -345,15 +348,16 @@ contact:
     header: 'Contact'
     authors: 'Auteur·ices du site internet'
     team:
-        name: 'Le collectif du “Conseil du Langage Neutre”'
+        name: 'Le collectif du « Conseil du Langage Neutre »'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} et les initiatives liées
-                ont été créés par le collectif du “Conseil du Langage Neutre”.
+                ont été créés par le collectif du « Conseil du Langage Neutre ».
         logo: 'Le logo du collectif est une combinaison du symbole transgenre et une bulle de parole symbolisant le langage.'
         members: 'Membres actuels'
         blog: 'Blog'
         upcoming: 'Versions en d’autres langues à venir'
+        member: 'Membre du collectif'
 
 support:
     header: 'Soutien'
@@ -373,7 +377,7 @@ user:
         email:
             subject: 'Votre code de connexion est %code%'
             content: |
-                Pour confirmer votre adresse mail, utilisez le code suivant: %code%.
+                Pour confirmer votre adresse mail, saisissez ce code sur le site : %code%.
 
                 Si vous n’avez pas demandé ce code, ignorez simplement ce message.
         why: >
@@ -411,8 +415,11 @@ profile:
     description: 'Description'
     names: 'Noms'
     pronouns: 'Pronoms'
-    pronounsInfo: 'Vous pouvez entrer un pronom (ex. “ael” or “il/lui”) ou un lien (ex. “http://fr.pronouns.page/elle”).'
-    pronounsNotFound: 'Impossible de trouver un lien vers ce pronom!'
+    pronounsInfo: >
+        Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
+        ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
+        Vous pouvez également utiliser {/pronouns#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
+    pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
     birthday: ' ge'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
@@ -447,6 +454,7 @@ profile:
     bannerButton: 'Créer une carte'
     card:
         link: 'Photo de la carte'
+        generate: 'Générer'
         generating: 'En cours de création...'
     empty: 'Cette personne n''a pas encore créé de carte'
 
@@ -455,8 +463,8 @@ share: 'Partager'
 crud:
     approve: 'Approuver'
     hide: 'Cacher'
-    remove: 'Retiret'
-    removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item?'
+    remove: 'Retirer'
+    removeConfirm: 'Êtes-vous sûr·e de vouloir retirer cet item ?'
     edit: 'Éditer'
     add: 'Ajouter'
     filter: 'Filtrer'
@@ -468,9 +476,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} est sous la licence {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Le contenu est sous la licence {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL 1.0}.
     links: 'Contact, réseaux sociaux, soutien'
 
 notFound:
@@ -499,7 +505,7 @@ admin:
         email: 'Adresse mail'
         roles: 'Permissions'
         profiles: 'Profils'
-        confirmRole: 'Êtes-vous sûr·e de vouloir changer le rôle de @%username% en "%role%" ?'
+        confirmRole: 'Êtes-vous sûr·e de vouloir changer le rôle de @%username% en « %role% » ?'
 
 table:
     empty: 'Vide…'
@@ -514,8 +520,8 @@ api:
     query: 'Paramètres chaîne de requête'
 
 quotation:
-    start: '«'
-    end: '»'
+    start: '« '
+    end: ' »'
 
 localise:
     shorter: 'Ajouter'
@@ -542,9 +548,9 @@ mode:
 ban:
     reason: 'Raison du bannissement'
     visible: '(visible par l’utilisateur)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Règles enfreintes (requises)'
     action: 'Bannir l’utilisateur'
-    confirm: 'Voulez-vous bannir @%username%?'
+    confirm: 'Voulez-vous bannir @%username% ?'
     header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'
     banned: 'Banni'
     termsIntro: 'Selon nos {/termes=Termes de service}:'
@@ -552,39 +558,39 @@ ban:
 report:
     action: 'Signaler'
     comment: 'Résumer la raison du signalement de ce profil'
-    confirm: 'Voulez-vous signaler @%username%?'
+    confirm: 'Voulez-vous signaler @%username% ?'
     sent: 'Votre signalement à bien été envoyé. Merci de votre aide !'
 
 flags:
     Abroromantic: 'Abroromantique'
-    Abrosexual: 'Abrosexuel·le'
+    Abrosexual: 'Abrosexue{inflection_l}'
     Achillean: 'Achilléen'
-    Alloromantic_Asexual: 'Alloromantique asexuel·le'
+    Alloromantic_Asexual: 'Alloromantique asexue{inflection_l}'
     Agender: 'Agenre'
     Anarcha-Queer: 'Anarcho-queer'
     Androgyne: 'Androgyne'
-    Androsexual: 'Androsexuel·le'
+    Androsexual: 'Androsexue{inflection_l}'
     Aporagender: 'Aporagenre'
     Archaeopronouns: 'Archéo-pronoms'
     Aroace: 'Aroace'
     Aromantic: 'Aromantique'
-    Aromantic_Allosexual: 'Aromantique allosexuel·le'
-    Asexual: 'Asexuel·le'
+    Aromantic_Allosexual: 'Aromantique allosexue{inflection_l}'
+    Asexual: 'Asexue{inflection_l}'
     Autigender: 'Autigenre'
     Bear: 'Bear'
-    Bicurious: 'Bicurieux·se'
+    Bicurious: 'Bicurieu{inflection_x}'
     Bigender: 'Bigenre'
     Biromantic: 'Biromantique'
-    Bisexual: 'Bisexuel·le'
+    Bisexual: 'Bisexue{inflection_l}'
     Butch: 'Butch'
     Ceteroromantic: 'Ceteroromantique'
-    Ceterosexual: 'Ceterosexuel·le'
-    Cis_Ally: 'Allié·e cis'
+    Ceterosexual: 'Ceterosexue{inflection_l}'
+    Cis_Ally: 'Alli{inflection_e} cis'
     Demiboy: 'Demiboy'
     Demigender: 'Demigenre'
     Demigirl: 'Demigirl'
     Demiromantic: 'Demiromantique'
-    Demisexual: 'Demisexuel·le'
+    Demisexual: 'Demisexue{inflection_l}'
     Diamoric: 'Diamorique'
     Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
@@ -595,12 +601,12 @@ flags:
     Genderfluid: 'Genderfluid'
     Genderflux: 'Genderflux'
     Genderqueer: 'Genderqueer'
-    Greyasexual: 'Grisexuel·le'
+    Greyasexual: 'Grisexue{inflection_l}'
     Greyaromantic: 'Grisromantique'
-    Gynesexual: 'Gynosexuel·le'
+    Gynesexual: 'Gynosexue{inflection_l}'
     Heteroflexible: 'Hétéroflexible'
     Heteroromantic: 'Hétéroromantique'
-    Heterosexual: 'Hétérosexuel'
+    Heterosexual: 'Hétérosexue{inflection_l}'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexible'
     Homoromantic: 'Homoromantique'
@@ -615,17 +621,17 @@ flags:
     Neopronouns: 'Néopronoms'
     Neutrois: 'Neutrois'
     Nonbinary: 'Non-binaire'
-    Omnisexual: 'Omnisexuel·le'
+    Omnisexual: 'Omnisexue{inflection_l}'
     Omniromantic: 'Omniromantique'
-    Oriented_Aroace: 'Aroace orienté·e'
+    Oriented_Aroace: 'Aroace orient{inflection_e}'
     Pangender: 'Pangenre'
     Panromantic: 'Panromantique'
-    Pansexual: 'Pansexuel·le'
-    Polyamorous: 'Polyamoureux·se'
+    Pansexual: 'Pansexue{inflection_l}'
+    Polyamorous: 'Polyamoureu{inflection_x}'
     Polyromantic: 'Panromantique'
-    Polysexual: 'Polysexuel·le'
+    Polysexual: 'Polysexue{inflection_l}'
     Pomoromantic: 'Pomoromantique'
-    Pomosexual: 'Pomosexuel·le'
+    Pomosexual: 'Pomosexue{inflection_l}'
     Progress_Pride: 'Progress Pride'
     Queer: 'Queer'
     Queerian: 'Queerian'
@@ -633,11 +639,11 @@ flags:
     Quoiromantic: 'Queeromantique'
     Sapphic: 'Saphique'
     Sexuality_Questioning: 'En questionnement de sexualité'
-    Straight_Ally: 'Allié hétéro'
+    Straight_Ally: 'Alli{inflection_e} hétéro'
     Toric: 'Toric'
-    Transfeminine: 'Transféminin·e'
+    Transfeminine: 'Transfémini{inflection_n}'
     Transgender: 'Transgenre'
-    Transmasculine: 'Transmasculin·e'
+    Transmasculine: 'Transmasculi{inflection_n}'
     Transneutral: 'Transneutre'
     Trigender: 'Trigenre'
     Trixic: 'Trixic'

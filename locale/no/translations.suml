@@ -1,4 +1,5 @@
-title: 'no.pronouns.page'
+title: 'Pronouns.page'
+domain: 'no.pronouns.page'
 description: 'Brukseksempler på personlige pronomen og kjønnsnøytralt språk.'
 
 home:
@@ -73,7 +74,7 @@ pronouns:
         description: >
             Selv om det for mange folk er veldig viktig at andre bruker spesifikke pronomen til å omtale dem
             så er det også andre som ikke bryr seg om hvilke pronomen du bruker for dem, eller bruker alle pronomen - så lenge det er klart hvem man snakker om.
-        options: 'sjekk ut valgene her [del]{/=her}.'
+        options: 'sjekk ut valgene her [share]{/pronomen=her}.'
     others: 'Andre former'
     othersRaw: 'andre'
     or: 'eller'
@@ -94,7 +95,7 @@ sources:
         Series: 'Serier'
         Song: 'Musikk'
         Poetry: 'Dikt'
-        Poetry: 'Spill'
+        Game: 'Spill'
         Other: 'Andre'
     submit:
         header: ' Bidra ved å sende inn et eksempel'
@@ -169,17 +170,19 @@ nouns:
     plural: 'flertall.'
     pluralShort: 'fl.'
 
-    terms:
-        header: 'Terminologi'
-        headerLong: 'Ordbok av queer terminologi'
-        info:
-            - >
-                En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
-        term: 'Begrep'
-        original: 'Etymologi'
-        category: 'Kategori'
-        images: 'Ekstra bilder, fra utsiden av flagg katalogen'
-        definition: 'Definisjon'
+    image: 'Bilde'
+
+terminology:
+    header: 'Terminologi'
+    headerLong: 'Ordbok av queer terminologi'
+    info:
+        - >
+            En ordbok med begrep som relaterer til LHBTQ+ fellesskapet.
+    term: 'Begrep'
+    original: 'Etymologi'
+    category: 'Kategori'
+    images: 'Ekstra bilder, fra utsiden av flagg katalogen'
+    definition: 'Definisjon'
 
 faq:
     header: 'Spørsmål'
@@ -353,6 +356,7 @@ contact:
         members: 'Nåværende medlemmer'
         blog: 'Blogg'
         upcoming: 'Kommende språk versjoner'
+        member: 'Medlem av kollektivet'
 
 support:
     header: 'Hjelp'
@@ -372,7 +376,7 @@ user:
         email:
             subject: 'Din Logg inn kode er %code%'
             content: |
-                For å konfirmere email adressen din, bruk følgende kode:%code%.
+                For å bekrefte din email addresse, vennligst skriv den følgende koden på nettsiden: %code%.
 
                 Hvis du ikke spurte om denne koden, ignorer denne meldingen.
         why: >
@@ -410,8 +414,12 @@ profile:
     description: 'Beskrivelse'
     names: 'Navn'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kan taste inn ett pronomen (feks. “de” eller “hun/henne” eller en link (feks. “http://no.pronouns.page/hun”).'
-    pronounsNotFound: 'Vi kan ikke finne en link til dette pronomenet!'
+    pronounsInfo: >
+        Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
+        eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
+        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self"). 
+        Du kan også bruke {/pronouns#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
+    pronounsNotFound: 'Kjenner ikke igjen formatet. Vennligst sjekk ut instruksjonene over.'
     words: 'Ord'
     birthday: 'Alder'
     birthdayInfo: 'Vi viser ikke bursdagen din, bare den kalkulerte alderen.'
@@ -446,6 +454,7 @@ profile:
     bannerButton: 'Lag et kort'
     card:
         link: 'Kort bilde'
+        generate: 'Generer'
         generating: 'Genererer, vennligst vent'
     empty: 'Denne personen har ikke laget noen kort enda.'
 
@@ -467,9 +476,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} er lisensiert under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Innholdet er lisensiert under {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL 1.0} lisensen.
     links: 'Kontakt, sosiale medier, hjelp'
 
 notFound:
@@ -541,7 +548,7 @@ mode:
 ban:
     reason: 'Grunn til forbud'
     visible: '(dette vil kunne bli sett av brukeren)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Vilkår regler brutt (nødvendig)'
     action: 'Forby denne personen'
     confirm: 'Er du sikker på at du vil forby @%username%?'
     header: 'Du er forbydd. Profilen din vil ikke bli vist til noen.'

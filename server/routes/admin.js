@@ -13,7 +13,7 @@ const router = Router();
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
     return res.json(await caches.admins.fetch(async () => {
         const admins = await req.db.all(SQL`
-            SELECT n.username, p.teamName, p.locale, u.id, u.email, n.avatarSource
+            SELECT n.username, p.teamName, p.locale, u.id, u.email, n.avatarSource, p.credentials, p.credentialsLevel, p.credentialsName
             FROM users u
                 LEFT JOIN usernames n ON u.id = n.userId
                 LEFT JOIN profiles p ON p.usernameId = n.id
@@ -35,6 +35,9 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
             admin.avatar = await avatar(req.db, admin);
             delete admin.id;
             delete admin.email;
+            if (admin.credentials) {
+                admin.credentials = admin.credentials.split('|');
+            }
 
             if (adminsGroupped[admin.locale] !== undefined) {
                 adminsGroupped[admin.locale].push(admin);
@@ -175,7 +178,7 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
         FROM reports
         LEFT JOIN profiles susProfile ON reports.profileId = susProfile.id
             LEFT JOIN usernames sus on susProfile.usernameId = sus.id
-        ORDER BY reports.isHandled ASC, reports.id ASC
+        ORDER BY reports.isHandled ASC, reports.id DESC
     `));
 }));
 

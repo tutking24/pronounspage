@@ -10,6 +10,18 @@ zwłaszcza jeśli dzieje się to w klimacie szczerej (mam nadzieję) życzliwoś
 Ale jednak w felietonie niestety czegoś zabrakło – rzetelności, solidnego przeczytania materiałów,
 a przede wszystkim, jak się zdaje, porozmawiania na ten temat z osobami, o których się pisze.
 
+<div class="alert alert-info">
+    <p>
+        Felieton Kingi Dunin doczekał się również nie-polemiki Emilii Wiśniewskiej na łamach Krytyki Politycznej, serdecznie polecamy!
+    </p>
+    <p class="mb-0">
+        <span class="fal fa-link"></span>
+        <a href="https://krytykapolityczna.pl/kraj/emilia-wisniewska-mow-do-mnie-tak-jak-ci-niewygodnie/" target="_blank" rel="noopener">
+            Mów do mnie tak, jak ci niewygodnie. Jakoś to przeżyjesz. Nie-polemika z Kingą Dunin
+        </a>
+    </p>
+</div>
+
 Kinga (chyba będę pisać „na ty”, zgodnie z przesłaniem felietonu: „jakkolwiek, byle było łatwiej” 😉) zaczyna swój tekst następującymi akapitami:
 
 > Maia Kobabe urodziłu się w 1989 roku, jest Amerykanu, skończyłu studia artystyczne związane z tworzeniem komiksów
@@ -28,7 +40,7 @@ Niezmiernie nam miło, że pojawił się link do zaimki.pl!
 Niestety, jego obecność sprawia też, że trudniej autorce wybaczyć niewiedzę.
 Bo na wszystkie wyrażone przez nią wątpliwości tam właśnie dostarczamy odpowiedzi.
 
-Zaimek wskazujący w [systemie Dukaja](/slowniki/dukatywy) to „tenu”, nie „tu” –
+Zaimek wskazujący w [systemie Dukaja](/dukatywy) to „tenu”, nie „tu” –
 aczkolwiek choć w _Perfekcyjnej Niedoskonałości_ używana jest ta pierwsza forma,
 to w uzusie, owszem, występuje też ta druga.
 
@@ -36,7 +48,7 @@ A rzekoma niekonsekwencja w dukatywowych końcówkach pomiędzy „pastoru” a 
 bierze się stąd, że… język polski jest fleksyjny.
 Jedno z tych słów występuje bowiem w komiksie w bierniku, a drugie w narzędniku:
 
-![Mianowano mnie na pogańsku pastoru! | Może będę jego bibliotekarum?](/img/queer_gender.png)
+![Mianowano mnie na pogańsku pastoru! | Może będę jego bibliotekarum?](/img-local/blog/queer_gender.png)
 
 Czy w rodzaju męskim narzekałobyśmy, że jakże to tak, „mianowano mnie na pastro**ra**”,
 ale już „może będę jego biblioteka**rzem**”?
@@ -67,7 +79,7 @@ A my jesteśmy niebinarne. Po prostu.
 
 Kinga pokazuje, że mimo akceptacji naszych płci, wciąż widzi nas… jako kobiety i mężczyzn.
 I to trochę przykre. A wystarczyło pogadać z osobami transpłciowymi i dowiedzieć się,
-że w tym kontekście idealnie pasowałoby określenie [płeć męska/żeńska nadana przy urodzeniu](https://zaimki.pl/slowniki/terminologia#agab).
+że w tym kontekście idealnie pasowałoby określenie [płeć męska/żeńska nadana przy urodzeniu](https://zaimki.pl/terminologia#agab).
 Bo owszem, istnieją różnice w doświadczeniu niebinarności w zależności od tego, jak daną osobę odbiera społeczeństwo,
 ale Kinga zdaje się tego nie wiedzieć, tylko _zakładać_ (w końcu pisze „_musi to_ wyglądać inaczej”, „_może_ być łatwiej”).
 Pokazuje też, że naszą niebinarność postrzega głównie jako przebieranki – ubiór, długość włosów, zachowanie…

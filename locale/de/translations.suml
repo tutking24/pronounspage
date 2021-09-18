@@ -1,4 +1,5 @@
-title: 'de.pronouns.page'
+title: 'Pronouns.page'
+domain: 'de.pronouns.page'
 description: 'Beispiele für die Verwendung von Personalpronomen und geschlechtsneutraler Sprache.'
 
 home:
@@ -8,26 +9,25 @@ home:
     why: 'Warum sind Pronomen wichtig?'
     about:
         - >
-            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen ohne den Namen der Person zu verwenden.
-            Die meisten Menschen nutzen {/sie=“sie”} und {/er=“er”}, sodass wir aufgrund des Aussehens automatisch davon ausgehen, welches Pronomen zu verwenden ist.
-            Aber in Wahrheit ist es nicht so einfach…
+            Wir alle benutzen Pronomen. Wir benutzen sie, wenn wir eine Person erwähnen, ohne den Namen der Person zu verwenden.
+            Die meisten Menschen nutzen entweder {/sie=„sie“} oder {/er=„er“}, und wir schließen aus deren Aussehen und Namen, welches der beiden zu verwenden ist.
+            Aber in Wahrheit ist es nicht so einfach …
         - >
-            Das Konzept von Geschlecht ist kompliziert. Manche Menschen “sehen nicht aus” wie ihr Geschlecht.
-            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet und
-            manche Menschen passen nicht in die Kategorien von “männlich” oder “weiblich” und bevorzugen eine neutralere Sprache.
+            Das Konzept von Geschlecht ist kompliziert. Manche Menschen „sehen nicht aus“ wie ihr Geschlecht.
+            Manche bevorzugen es, mit einem anderen Pronomen angesprochen zu werden als zuerst vermutet, und
+            manche Menschen passen nicht in die Kategorien von „männlich“ oder „weiblich“ und bevorzugen eine neutralere Sprache.
         - >
-            Mit diesem Tool kannst du deine Pronomen (mit Beispielsätzen) verlinken,
-            sodass du Leuten zeigen kannst, wie du genannt werden willst.
+            Mit diesem Tool kannst du deine Pronomen verlinken und anderen mit Beispielsätzen vorstellen.
         - >
             Warum ist das wichtig? Einfach wegen des menschlichen Anstands.
-            Du würdest Lea nicht “Marie” nennen, nur weil dir der Name besser gefällt
-            oder weil “sie wie eine Marie für dich aussieht”.
-            Oder auch wenn sie in der Geburtsurkunde “Marie” stehen <em>hat</em>,
-            aber sie diesen Namen absolut hasst und lieber “Lea” benutzt.
+            Du würdest Lea nicht „Marie“ nennen, nur weil dir der Name besser gefällt
+            oder weil „sie wie eine Marie für dich aussieht“.
+            Oder auch wenn sie in der Geburtsurkunde „Marie“ stehen <em>hat</em>,
+            aber sie diesen Namen absolut hasst und lieber „Lea“ benutzt.
             Es ist dasselbe mit Pronomen –
-            Wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, sprich sie richtig an.
+            wenn du einer anderen Person gegenüber nicht unhöflich oder respektlos sein willst, verwende die richtigen Pronomen.
             Der einzige Unterschied ist, dass wir die Namen meistens kennen, die Pronomen hingegen nicht.
-            Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Das müssen wir ändern!
+            Wir stellen uns mit unserem Namen vor, aber nicht mit unseren Pronomen. Lasst uns das ändern!
     pronouns: 'Liste bekannter Pronomen'
     generator:
         header: 'Generator'
@@ -36,8 +36,8 @@ home:
         button: 'Zeige den Generator'
         header2: 'Generiere einen Link'
         base: 'Ausgehend von'
-        alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er” or „sie”.'
-        pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich "|" (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|si​ˑʁ</code> = „sier”, ausgesprochen wie /si​ˑʁ/.'
+        alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er“ or „sie“.'
+        pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich „|“ (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|si​ˑʁ</code> = „sier“, ausgesprochen wie /si​ˑʁ/.'
     whatisit: 'Was ist das Problem mit Pronomen?'
     mission:
         header: 'Unsere Mission'
@@ -51,8 +51,8 @@ home:
             –  dass <em>anderer Leute</em> Pronomen respektiert werden.
         inclusiveness: >
             <strong>Inklusivität</strong>
-            – dass wir keine Annahmen treffen über die Geschlechter von Personen
-            die wir nicht kennen und sie dadurch Ausschließen.
+            – dass wir keine Annahmen treffen über die Geschlechter von Personen,
+            die wir nicht kennen, und sie dadurch ausschließen.
 
 pronouns:
     header: 'Pronomen'
@@ -62,7 +62,7 @@ pronouns:
     intro: 'Meine Pronomen sind'
     normative: 'Normativ'
     alt:
-        button: 'Generiere einen link zu austauschbaren Formen'
+        button: 'Generiere einen Link zu austauschbaren Formen'
         header: 'Austauschbare Formen'
         raw: 'austauschbar'
     generated: 'Diese Pronomen wurden mit Hilfe eines Generators erstellt. Das Team von pronouns.page ist nicht verantwortlich für diese.'
@@ -70,9 +70,8 @@ pronouns:
         header: 'Beliebige Pronomen'
         short: 'beliebig'
         description: >
-            Auch wenn es für manche Menschen sehr wichtig ist bestimmte Pronomen zu nutzen, wenn über sie geredet wird,
-            macht es anderen nichts aus - solange der Kontext klar ist, über wen gesprochen wird.
-        options: 'Überprüfe die Optionen [share]{/=hier}.'
+            Auch wenn es für manche Menschen sehr wichtig ist, dass bestimmte Pronomen benutzt werden, wenn über sie geredet wird, ist es anderen egal, welche Pronomen für sie verwendet werden.
+        options: 'Überprüfe die Optionen [share]{/pronomen=hier}.'
     others: 'Andere Formen'
     othersRaw: 'andere'
     or: 'oder'
@@ -98,7 +97,7 @@ sources:
         header: 'Reiche ein Beispiel zum Ergänzen ein'
         action: 'übermitteln'
         pronouns: 'Welche Pronomen wurden genutzt?'
-        pronounsInfo: 'Gebe die einfachste Form des Pronomen ein, so wie es im Link ist. Z.B. “xier”, “er_sie”'
+        pronounsInfo: 'Gebe die einfachste Form des Pronomen ein, so wie es im Link ist. Z.B. „xier“, „er_sie“'
         type: 'Quellentyp'
         author: 'Autor'
         title: 'Titel'
@@ -124,16 +123,16 @@ nouns:
     intro:
         - >
             Inklusive und geschlechtsneutrale Sprache heißt nicht nur die Pronomen einer Person zu respektieren.
-            Auch die Beschreibung des Jobs, der Position, der Beziehung, etc.,
+            Auch die Beschreibung des Jobs, der Position, der Beziehung etc.
             kann in einer Weise genutzt werden, die nicht gleich auf das Geschlecht schließen lässt.
-            Nicht alle Feuerwehrleute sind “Feuerwehrmänner”. Nicht jede*r Ehepartner*in ist eine “Ehefrau” oder ein “Ehemann”.
+            Nicht alle Feuerwehrleute sind „Feuerwehrmänner“. Nicht jede*r Ehepartner*in ist eine „Ehefrau“ oder ein „Ehemann“.
         - >
             Wenn du dich auf eine Person beziehst, deren Geschlecht du nicht kennst,
             auf eine Gruppe gemischten Geschlechts
-            und vor allem wenn es eine Nicht-Binäre Person ist die dies bevorzugt,
+            und vor allem wenn es eine nicht-binäre Person ist, die dies bevorzugt,
             nutze die neutrale Form.
         - >
-            Nachfolgend findest du eine Art Wörterbuch für Wörter auf die du achten solltest.
+            Im Folgenden sind verschiedene Vorschläge für die Bildung und Deklination von geschlechtsneutralen Substantiven und Artikeln aufgeführt.
             Du kannst dazu beitragen und deine Vorschläge hinzufügen.
 
     approved: 'freigegebene Einträge'
@@ -165,19 +164,21 @@ nouns:
     plural: 'Plural'
     pluralShort: 'Pl.'
 
-    terms:
-        header: 'Terminologie'
-        headerLong: 'Wörterbuch von Queerer Terminologie'
-        info:
-            - >
-                Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
-                funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
-                Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
-        term: 'Begriff'
-        original: 'Etymologie'
-        category: 'Kategorie'
-        images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
-        definition: 'Definition'
+    image: 'Bild'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Wörterbuch von Queerer Terminologie'
+    info:
+        - >
+            Viele Begriffe und Ausdrucksweisen die mit der LSBTQ+ Community verbunden sind,
+            funktionieren im Deutschen so, wie sie aus dem Englischen geliehen worden sind.
+            Hier präsentieren wir die Bedeutung von Begriffen und schlagen Deutsche Übersetzungen für sie vor.
+    term: 'Begriff'
+    original: 'Etymologie'
+    category: 'Kategorie'
+    images: 'Zusätzliche Bilder, von außerhalb des Flaggenkataloges'
+    definition: 'Definition'
 
 faq:
     header: 'FAQ'
@@ -192,8 +193,8 @@ faq:
                     hormonellem Geschlecht, phänotypischem Geschlecht…
                     Sie sind nicht unbedingt kongruent zueinander, sie müssen nicht binär sein.
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mehr Infos hier)}.
-                    Und wenn wir den kulturellen Aspekt betrachten ist “Geschlecht” nur ein soziales Konstrukt.
-                    Je nach Zeit und Ort kann "eine Frau" oder "ein Mann" zu sein bedeuten, radikal unterschiedliche Rechte,
+                    Und wenn wir den kulturellen Aspekt betrachten ist „Geschlecht“ nur ein soziales Konstrukt.
+                    Je nach Zeit und Ort kann „eine Frau“ oder „ein Mann“ zu sein bedeuten, radikal unterschiedliche Rechte,
                     Pflichten, Normen zu haben... In Europa trugen Männer früher hohe Absätze und Strümpfe,
                     während die Ureinwohner Nordamerikas seit Jahrhunderten ein drittes Geschlecht anerkennen
                     {https://de.wikipedia.org/wiki/Two-Spirit=(two-spirit)}, etc.
@@ -206,7 +207,7 @@ faq:
                     {https://nibi.space/demigender=demigender},
                     und {https://nibi.space/nichtbin%C3%A4r_und_genderqueer?redirect=1=viele andere}.
                 - >
-                    Nichtbinär ist nicht unbedingt etwas “zwischen” Weiblichkeit und Männlichkeit. Eher etwas darüber “hinaus”.
+                    Nichtbinär ist nicht unbedingt etwas „zwischen“ Weiblichkeit und Männlichkeit. Eher etwas darüber „hinaus“.
                     Nichtbinäre Menschen müssen nicht androgyn sein, müssen keine neutralen Pronomen verwenden, etc.
                     Es geht darum, frei von Geschlechterrollen zu sein, nicht darum, neue zu schaffen.
         why-respect:
@@ -214,11 +215,11 @@ faq:
             answer:
                 - >
                     Weil es die Grundlage sozialer Beziehungen ist, Menschen so anzusprechen, wie sie angesprochen werden wollen.
-                    Du würdest Lea nicht “Marie” nennen, du würdest nicht “Herr”/“Frau” zu deinem Vorgesetzten sagen, etc.
-                    Und es gibt Menschen die weder mit “{/er=er}” noch “{/sie=sie}” angesprochen werden wollen.
+                    Du würdest Lea nicht „Marie“ nennen, du würdest nicht „Herr“/„Frau“ zu deinem Vorgesetzten sagen, etc.
+                    Und es gibt Menschen die weder mit „{/er=er}“ noch „{/sie=sie}“ angesprochen werden wollen.
                     Wenn du das nicht akzeptieren kannst, dann zeigt <em>dich</em> das in einem schlechten Licht.
                 - >
-                    “Komische Pronomen” sind nur eine Frage der Gewöhnung.
+                    „Komische Pronomen“ sind nur eine Frage der Gewöhnung.
         how-to-know:
             question: 'Woher weiß ich, wie ich eine Person anreden soll?'
             answer:
@@ -226,20 +227,20 @@ faq:
                     Du kannst einfach fragen! Ja, es ist vielleicht ein bisschen unangenehm, aber je mehr wir es tun, desto weniger unangenehm wird es.
                     Wenn wir nach dem Namen fragen können, warum nicht auch nach den Pronomen?
                 - >
-                    (Bitte formuliere es nur nicht als: “Bist du ein Mädchen oder ein Junge?”.
+                    (Bitte formuliere es nur nicht als: „Bist du ein Mädchen oder ein Junge?“.
                     Die Frage impliziert, dass es nur zwei richtige Antworten gibt
                     und suggeriert eine unangebrachte Neugier über die Genitalien der Person.
-                    Stattdessen könntest du einfach fragen: “Was sind deine Pronomen?” oder “Wie soll ich dich ansprechen?”)
+                    Stattdessen könntest du einfach fragen: „Was sind deine Pronomen?“ oder „Wie soll ich dich ansprechen?“)
                 - >
                     Es ist auch wichtig, es zu normalisieren, sich einfach mit seinen Pronomen vorzustellen.
-                    “Hi, Ich bin Michael, {/er=er/ihm}”. Es ist nicht schwer – aber für trans und nicht-binäre Menschen bedeutet es so viel!
-                    Online ist es noch einfacher: Füge einfach deine Pronomen (oder einen Link zu Beispielen von unserer Website) zu deiner “Bio” hinzu.
+                    „Hi, Ich bin Michael, {/er=er/ihm}“. Es ist nicht schwer – aber für trans und nicht-binäre Menschen bedeutet es so viel!
+                    Online ist es noch einfacher: Füge einfach deine Pronomen (oder einen Link zu Beispielen von unserer Website) zu deiner „Bio“ hinzu.
                 - >
                     Denke auch daran, dass manche Menschen je nach Situation einen anderen Namen und andere Pronomen verwenden könnten.
                     Sie hatten vielleicht vor manchen Freunden oder Arbeitskolleg*innen noch kein Coming Out, aber bei anderen Freund*innen fühlen sie sich wohl und gehen damit offen um.
-                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: “Welche Pronomen soll ich vor deiner*m Chef*in benutzen?”, etc.
+                    Sei rücksichtsvoll. Du kannst zum Beispiel fragen: „Welche Pronomen soll ich vor deiner*m Chef*in benutzen?“, etc.
                 - >
-                    Manche Menschen geben mehrere Pronomen an, z.B. “{/er&sie=er/sie}” oder “{/sier&er=sier/er}”.
+                    Manche Menschen geben mehrere Pronomen an, z.B. „{/er&sie=er/sie}“ oder „{/sier&er=sier/er}“.
                     Das bedeutet, dass sie alle diese Formen mögen. Normalerweise ist die erste die bevorzugte.
         who-uses-it:
             question: 'Benutzt das überhaupt irgendwer?'
@@ -261,7 +262,7 @@ faq:
                     was die Änderung in keiner Weise unrechtmäßig macht.
                     Aber schließlich werden die neuen Formen, wenn sie oft genug verwendet werden, in Wörterbücher aufgenommen.
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, zum Beispiel
-                    akzeptiert die Nutzung des {/they=Singular “they”} als nicht-binäres Pronomen im Englischen.
+                    akzeptiert die Nutzung des {/they=Singular „they“} als nicht-binäres Pronomen im Englischen.
                 - >
                     Du kannst auch {https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=nichtbin%C3%A4re+pronomen&btnG=akademische Arbeiten}
                     zum Thema nicht-binäre Pronomen lesen.
@@ -269,17 +270,17 @@ faq:
             question: 'Warum sollte ich meine Pronomen in meine Social-Media-Bio schreiben?'
             answer:
                 - >
-                    Wenn du cis (= nicht trans) bist und du nutzt „{/sie=sie}” oder „{/er=er}” passen zu deinem Geschlecht,
+                    Wenn du cis (= nicht trans) bist und du nutzt „{/sie=sie}“ oder „{/er=er}“ passen zu deinem Geschlecht,
                     denkst du vielleicht, dass deine Pronomen <em>eindeutig</em> sind.
                     Und ja, vielleicht stimmt das auch - solange dein Name im Profil genannt wird (und traditionell männlich oder weiblich ist)
                     oder wenn du ein Profilbild hast.
                     Viele Leute haben das nicht – also ist es schwierig zu wissen, wie sie genannt werden wollen.
                 - >
-                    Aber meistens geht es um mehr als das: deine Pronomen mögen "offensichtlich" sein,
+                    Aber meistens geht es um mehr als das: deine Pronomen mögen „offensichtlich“ sein,
                     aber es gibt Menschen, deren Pronomen das nicht sind.
-                    Sie wollen korrekt angesprochen werden, egal ob sie als ihr Geschlecht "durchgehen" oder nicht,
+                    Sie wollen korrekt angesprochen werden, egal ob sie als ihr Geschlecht „durchgehen“ oder nicht,
                     ob sie eine Transition hatten oder nicht (oder ob sie überhaupt eine Transition wollen).
-                    Nicht-binäre Menschen sehen in der Regel nicht "nicht-binär" aus, wir schulden niemandem Androgynität.
+                    Nicht-binäre Menschen sehen in der Regel nicht „nicht-binär“ aus, wir schulden niemandem Androgynität.
                 - >
                     Das Teilen unserer Pronomen ist sehr wichtig für trans, nicht-binäre und genderqueere Menschen.
                     Leider werden wir dadurch auch bloßgestellt und ausgegrenzt.
@@ -292,7 +293,7 @@ faq:
                 - >
                     Natürlich! Niemand ist überrascht, wenn jemand seine Ansichten, seinen Stil, seine Hobbys usw. ändert.
                     Warum sollte es also seltsam sein, dass die Person einen Teil ihrer Identität entdeckt hat,
-                    aufgehört hat, ihren Namen zu mögen, ein “Label” entdeckt hat, das gut zu ihr passt, etc.?
+                    aufgehört hat, ihren Namen zu mögen, ein „Label“ entdeckt hat, das gut zu ihr passt, etc.?
         get-used-to:
             question: 'Ist es komisch, dass ich mich nicht an meine <em>eigenen</em> neuen Pronomen gewöhnen kann?'
             answer:
@@ -301,26 +302,26 @@ faq:
                     ist es leicht sich selbst zu vergessen, wenn man zu einem anderen wechselt.
                 - >
                     Pronomen ≠ Geschlecht.
-                    Dein Geschlecht wird sich nicht plötzlich ändern, nur weil dich wer "sier" genannt hat.
+                    Dein Geschlecht wird sich nicht plötzlich ändern, nur weil dich wer „sier“ genannt hat.
                     Mach dir keine Sorgen. Experimentiere. Guck, was am besten zu dir passt.
         preferred-pronouns:
-            question: 'Warum sollte ich nicht "bevorzugte Pronomen" sagen?'
+            question: 'Warum sollte ich nicht „bevorzugte Pronomen“ sagen?'
             answer:
                 - >
                     Weil diese Formulierung suggeriert, dass die Pronomen nur eine Laune der Person sind.
-                    Wenn jemand es einfach "vorzieht", als “sie” bezeichnet zu werden, wird er sich nicht _wirklich_ schlecht fühlen, wenn ich ihn als "er" bezeichne, richtig?
+                    Wenn jemand es einfach „vorzieht“, als „sie“ bezeichnet zu werden, wird er sich nicht _wirklich_ schlecht fühlen, wenn ich ihn als „er“ bezeichne, richtig?
                     Die Person sieht schließlich aus wie ein Mann, also wird es für mich einfacher sein!
                 - >
-                    Nein! Es sind unsere Pronomen. Nicht unsere "bevorzugten Pronomen". Es sind unsere Namen, nicht unsere "bevorzugten Namen".
+                    Nein! Es sind unsere Pronomen. Nicht unsere „bevorzugten Pronomen“. Es sind unsere Namen, nicht unsere „bevorzugten Namen“.
                     Wenn du dich um deine trans- und nicht-binären Freunde und Lieben sorgst, dann nenne sie auf die richtige Weise.
         gender-pronouns:
-            question: 'Warum sollte ich nicht "Geschlechtspronomen" sagen?'
+            question: 'Warum sollte ich nicht „Geschlechtspronomen“ sagen?'
             answer:
                 - >
                     Pronomen ≠ Geschlecht. Pronomen sind nur Grammatik.
                     Nicht-binäre Menschen können binäre Pronomen verwenden, einige Lesben verwenden {/er=er/ihm} aus kulturellen Gründen, etc.
                 - >
-                    Sag einfach “Pronomen”.
+                    Sag einfach „Pronomen“.
 
 links:
     header: 'Links'
@@ -342,10 +343,10 @@ contact:
     header: 'Kontakt'
     authors: 'Autor*innen der Website'
     team:
-        name: 'Das “Neutral Language Council” Kollektiv'
+        name: 'Das „Rat für neutrale Sprache“ Kollektiv'
         description:
             - >
-                {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv “Neutral Language Council” erstellt.
+                {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Rat für neutrale Sprache“ erstellt.
         logo: 'Das Logo des Kollektivs ist eine Kombination des Transgender Symbols und einer Sprechblase, die Sprache symbolisiert.'
         members: 'aktuelle Mitglieder'
         member: 'Mitglied des Kollektivs'
@@ -369,7 +370,7 @@ user:
         email:
             subject: 'Dein Logincode ist %code%'
             content: |
-                Um deine E-Mail-Adresse zu bestätigen, verwende den folgenden Code: %code%.
+                Um deine E-Mail-Adresse zu bestätigen, gib den folgenden Code auf der Seite ein: %code%
 
                 Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.
         why: >
@@ -407,8 +408,11 @@ profile:
     description: 'Beschreibung'
     names: 'Namen'
     pronouns: 'Pronomen'
-    pronounsInfo: 'Du kannst entweder ein Pronomen (z.B. “sier” or “sie/ihr”) oder einen Link (z.B. “https://de.pronouns.page/dey”) oder vier benutzerdefinierten Formen (z.B. “xier/xies/xiem/xien”).'
-    pronounsNotFound: 'Wir können keinen Link zu diesem Pronomen finden!'
+    pronounsInfo: >
+        Du kannst entweder ein <strong>Pronomen</strong> (z.B. „sier“ or „sie/ihr“) oder einen <strong>Link</strong> (z.B. „https://de.pronouns.page/dey“)
+        oder <strong>vier benutzerdefinierten Formen</strong> (z.B. „xier/xies/xiem/xien“).
+        Du kannst auch den {/pronouns#generator=<strong>Generator</strong>} verwenden, um die Sätze mit benutzerdefinierten Formen auszufüllen.
+    pronounsNotFound: 'Nicht erkennbares Format. Bitte beachte die oben genannte Anweisung.'
     words: 'Wörter'
     birthday: 'Alter'
     birthdayInfo: 'Wir veröffentlichen nicht dein Geburtstag, sondern nur das errechnete Alter.'
@@ -443,6 +447,7 @@ profile:
     bannerButton: 'Erstelle eine Visitenkarte'
     card:
         link: 'Visitenkartenbild'
+        generate: 'Generatieren'
         generating: 'Generatierung läuft…'
     empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
 
@@ -464,9 +469,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Der Quellcode} ist unter der {https://mit.avris.it=MIT} [mit.svg] Lizenz veröffentlicht.<br/>
-        Das Inhalt unter der {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL 1.0} Lizenz veröffentlicht.
     links: 'Kontakt, Social Media, Support'
 
 notFound:
@@ -495,7 +498,7 @@ admin:
         email: 'E-Mail'
         roles: 'Rolle'
         profiles: 'Profile'
-        confirmRole: 'Bist du sicher, dass du @%username%s Rolle zu "%role%" ändern willst?'
+        confirmRole: 'Bist du sicher, dass du @%username%s Rolle zu „%role%“ ändern willst?'
 
 table:
     empty: 'Leer…'
@@ -537,7 +540,7 @@ mode:
 ban:
     reason: 'Grund der Sperrung'
     visible: '(dies wird der*m Nutzer*in sichtbar sein)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Gebrochene Regelpunkte (erforderlich)'
     action: 'Diese Person sperren'
     confirm: 'Bist du sicher, die Person @%username% zu sperren?'
     header: 'Du wurdest gesperrt. Dein Profil kann nicht mehr angesehen werden.'

@@ -13,7 +13,7 @@
                 <p><Share :title="$t('nouns.dukajNouns.header')"/></p>
             </div>
             <figure>
-                <img src="/img/dukaizmy.png" :alt="$t('nouns.dukajNouns.flag.alt')"/>
+                <img src="/img-local/flags/dukaizmy.png" :alt="$t('nouns.dukajNouns.flag.alt')"/>
                 <figcaption><T>nouns.dukajNouns.flag.caption</T></figcaption>
             </figure>
         </div>

@@ -1,13 +1,15 @@
 <template>
     <div>
+        <LinksNav/>
+
         <h2>
             <Icon v="globe-americas"/>
             <T>english.headerLonger</T>
         </h2>
 
-        <section>
+        <div>
             <T>english.intro</T>
-        </section>
+        </div>
 
         <Separator icon="list"/>
 

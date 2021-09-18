@@ -1,4 +1,5 @@
-title: 'pt.pronouns.page'
+title: 'Pronouns.page'
+domain: 'pt.pronouns.page'
 description: 'Exemplos de uso de pronomes pessoais e linguagem neutra.'
 
 home:
@@ -74,7 +75,7 @@ pronouns:
         description: >
             Enquanto para muita gente é importante que se utilize pronomes específicos para falar dels,
             a outres não ês incomoda que sejam chamades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
-        options: 'Verifique as opções [compartilhar]{/= aqui}.'
+        options: 'Verifique as opções [share] {/pronomes= aqui}.'
     others: 'Outras formas'
     othersRaw: 'Outras'
     or: 'ou'
@@ -166,17 +167,19 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminologia'
-        headerLong: 'Dicionário de terminologia queer'
-        info:
-            - >
-                Um dicionário de terminologia relacionada à comunidade LGBTQ+.
-        term: 'Termo'
-        original: 'Etimologia'
-        category: 'Categoria'
-        images: 'Imagens adicionais, de fora do catálogo de bandeiras'
-        definition: 'Definição'
+    image: 'Imagem'
+
+terminology:
+    header: 'Terminologia'
+    headerLong: 'Dicionário de terminologia queer'
+    info:
+        - >
+            Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+    term: 'Termo'
+    original: 'Etimologia'
+    category: 'Categoria'
+    images: 'Imagens adicionais, de fora do catálogo de bandeiras'
+    definition: 'Definição'
 
 faq:
     header: 'Perguntas'
@@ -355,7 +358,7 @@ contact:
                 são criadas pelo o coletivo “Conselho da Língua Neutra”.
         logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
         members: 'Membres atuais'
-        member: 'Membro do coletivo'
+        member: 'Membre do coletivo'
         blog: 'Blog'
         upcoming: 'Próximas versões'
 
@@ -377,7 +380,7 @@ user:
         email:
             subject: 'O código de início da sessão é %code%'
             content: |
-                Para confirmar o seu endereço e-mail, digite: %code%.
+                Para confirmar seu endereço de email, entre com o seguinte código no site: %code%.
 
                 Se não solicitou este código, simplesmente ignore esta mensagem.
         why: >
@@ -415,8 +418,11 @@ profile:
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
-    pronounsInfo: 'Pode introduzir um pronome (p. ex. “ele” ou “ela”) ou um link (“http://pt.pronouns.page/elx”).'
-    pronounsNotFound: '˜Não podemos encontrar um link com este pronome!'
+    pronounsInfo: >
+        Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
+        ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
+        Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+    pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
     words: 'Palavras'
     birthday: 'Idade'
     birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
@@ -451,6 +457,7 @@ profile:
     bannerButton: 'Crie um cartão'
     card:
         link: 'Imagem do cartão'
+        generate: 'Gerar'
         generating: 'Gerando a imagem…'
     empty: 'Essa pessoa ainda não especificou suas informações pessoais'
 
@@ -471,11 +478,8 @@ crud:
     loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
 
 footer:
-    source: 'O código fonte está {https://gitlab.com/Avris/Zaimki=publicado} baixo da licença {https://mit.avris.it=MIT}.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL 1.0}.
     links: 'Contato, redes sociais, apoio'
 
 notFound:
@@ -536,10 +540,9 @@ images:
 error:
     generic: 'Alguma coisa deu errado, tente novamente'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Por favor, prove que você não é um robô tentando spamar ou atacar os serviços de navegação.'
+    invalid: 'O Captcha foi invalidado, por favor, tente novamente'
 
 mode:
     dark: 'Modo escuro'
@@ -548,7 +551,7 @@ mode:
 ban:
     reason: 'Razão de ban'
     visible: '(isso vai ser visto para usuárie)'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: 'Regras quebradas (obrigatório)'
     action: 'Ban essa pessoa'
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
@@ -626,7 +629,7 @@ flags:
     Oriented_Aroace: 'Aroace orientad{inflection}'
     Pangender: 'Pangênero'
     Panromantic: 'Panrromânti{inflection_c}'
-    Pansexual: 'Panssexual'
+    Pansexual: 'Pansexual'
     Polyamorous: 'Poliamoros{inflection}'
     Polyromantic: 'Polirromânti{inflection_c}'
     Polysexual: 'Polissexual'
@@ -650,3 +653,90 @@ flags:
     Two_Spirit: 'Dois-espíritos'
     Xenogender: 'Xenogênero'
 
+calendar:
+    header: 'Calendário'
+    headerLong: 'Calendário queer'
+    months:
+        1: 'Janeiro'
+        2: 'Fevereiro'
+        3: 'Março'
+        4: 'Abril'
+        5: 'Maio'
+        6: 'Junho'
+        7: 'Julho'
+        8: 'Agosto'
+        9: 'Setembro'
+        10: 'Outubro'
+        11: 'Novembro'
+        12: 'Dezembro'
+    dates:
+        1: '%day% de janeiro'
+        2: '%day% de fevereiro'
+        3: '%day% de março'
+        4: '%day% de abril'
+        5: '%day% de maio'
+        6: '%day% de junho'
+        7: '%day% de julho'
+        8: '%day% de agosto'
+        9: '%day% de setembro'
+        10: '%day% de outubro'
+        11: '%day% de novembro'
+        12: '%day% de dezembro'
+    events:
+        pride_month: 'Mês do Orgulho'
+        trans_month: 'Mês da Consciência Trans'
+        zaimki_birthday: 'Aniversário do pronouns.page'
+        agender_day: 'Dia do Orgulho Agênero'
+        asexuality_day: 'Dia Internacional da Assexualidade'
+        bisexuality_day: 'Dia de Comemorar a Bissexualidade'
+        drag_day: 'Dia Drag'
+        idahobit: 'Dia Internacional Contra a Homomisia, Transmisia e Bimisia'
+        intersex_day: 'Dia da Consciência Intersexo'
+        intersex_remembrance_day: 'Dia da Memória Intersexo'
+        lesbian_day: 'Dia Lésbico'
+        lesbian_visibility_day: 'Dia Internacional da Visibilidade Lésbica'
+        coming_out_day: 'Dia de Sair do Armário'
+        nonbinary_day: 'Dia de Pessoas Não-Binárias'
+        pan_day: 'Dia da Consciência Pansexual e Panromântica'
+        trans_remembrance_day: 'Dia da Memória Transgênero'
+        trans_visibility_day: 'Dia Internacional da Visibilidade Trans'
+        zero_discrimination_day: 'Dia de Discriminação Zero'
+        arospec_week: 'Semana da Consciência do Espectro Arromântico'
+        asexual_week: 'Semana da Consciência Assexual'
+        bisexual_week: 'Semana da Consciência Bissexual'
+        pronouns_day: 'Dia dos Pronomes'
+        trans_week: 'Semana da Consciência Trans'
+        trans_parent_day: 'Dia de Nans Trans'
+        nonbinary_week: 'Semana da Consciência Não-Binária'
+        polyamory_day: 'Dia do Poliamor'
+        homophobia_sport: 'Dia Internacional Contra a Homomisia nos Esportes'
+        gay_uncles_day: 'Dia dos Tios Gays'
+        lgbtq_stem: 'Dia de CTEM LGBTQ+'
+        trans_depathologization: 'Dia de Ação pela Depatologização Trans'
+        lgbti_book_day: 'Dia do Livro com Tema LGBTI'
+        human_rights_day: 'Dia dos Direitos Humanos'
+        nonbinary_parents_day: 'Dia de Nans Não-Bináries'
+        trans_prisoner: 'Dia de Ação e Solidariedade de Prisioneire Trans'
+        xenogender_day: 'Dia da Visibilidade Xenogênera'
+        genderqueer_day: 'Dia da Visibilidade Gênero-queer'
+        genderfluid_day: 'Dia da Visibilidade de Gênero-fluído'
+        aids_day: 'Dia Mundial de Combate Contra a Aids/Sida'
+        tolerance_day: 'Dia Internacional de Tolerância'
+        social_justice_day: 'Dia Mundial da Justiça Social'
+        stonewall_day: 'Aniversário da Revolta de Stonewall'
+        domestic_violence: 'Dia de Consciência da Violência Doméstica LGBTQ'
+        polysexual_day: 'Dia da Visibilidade Polissexual/Polirromântica'
+        orlando_day: 'Aniversário do massacre de Orlando'
+        aids_memorial: 'Vigília peles Môrtes de Aids/Sida'
+        health_week: 'Semana de Consciência da Saúde LGBT'
+        lesbian_visibility_week: 'Semana da Visibilidade Lésbica'
+        demigender_day: 'Dia da Consciência Demigênero'
+        pan_pride_day: 'Dia do Orgulho Pansexual'
+        transmasculine_day: 'Dia de Luta e Resistência de Pessoas Transmasculinas'
+        asexual_visibility_day: 'Dia da Visibilidade Assexual'
+        
+    banner: 'Hoje celebramos'
+    image:
+        header: 'Baixar uma imagem'
+        overview: 'Visão geral'
+        labels: 'Etiquetas'

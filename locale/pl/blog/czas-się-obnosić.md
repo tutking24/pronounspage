@@ -2,7 +2,7 @@
 
 <small>2020-10-03 | [@Sybil](/@Sybil)</small>
 
-![](/img/czas-sie-obnosic.jpg)
+![](/img-local/blog/czas-sie-obnosic.jpg)
 
 Przemówienie Sybila z Wrocławskiego Marszu Równości:
 

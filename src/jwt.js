@@ -7,11 +7,11 @@ class Jwt {
         this.publicKey = fs.readFileSync(publicKey);
     }
 
-    sign(payload, expiresIn = '30d') {
+    sign(payload, expiresIn = '365d') {
         return jwt.sign(payload, this.privateKey, {
             expiresIn,
             algorithm: 'RS256',
-            audience: process.env.BASE_URL,
+            audience: process.env.ALL_LOCALES_URLS.split(','),
             issuer: process.env.BASE_URL,
         });
     }
@@ -20,8 +20,8 @@ class Jwt {
         try {
             return jwt.verify(token, this.publicKey, {
                 algorithm: 'RS256',
-                audience: process.env.BASE_URL,
-                issuer: process.env.BASE_URL,
+                audience: process.env.ALL_LOCALES_URLS.split(','),
+                issuer: process.env.ALL_LOCALES_URLS.split(','),
             });
         } catch (e) {
             console.error(e);

@@ -1,6 +1,8 @@
+require('./src/dotenv')();
+
 import { loadSuml } from './server/loader';
 import fs from 'fs';
-import {buildDict, buildLocaleList} from "./src/helpers";
+import {buildDict, buildList, buildLocaleList} from "./src/helpers";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -13,6 +15,24 @@ const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 
 process.env.LOCALE = locale;
+if (process.env.ENV) {
+    process.env.NODE_ENV = process.env.ENV;
+}
+
+const allVersionsUrls = buildList(function*() {
+    if (process.env.NODE_ENV === 'development') {
+        yield 'http://pronouns.test:3000';
+        yield 'http://localhost:3000';
+    } else if (process.env.NODE_ENV === 'test') {
+        yield 'https://test.pronouns.page';
+    } else {
+        yield 'https://pronouns.page';
+        for (let loc in locales) {
+            yield locales[loc].url;
+        }
+    }
+});
+process.env.ALL_LOCALES_URLS = allVersionsUrls.join(',');
 
 const bodyParser = require('body-parser');
 
@@ -154,6 +174,7 @@ export default {
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
         STATS_FILE: process.env.STATS_FILE,
         HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
+        ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
@@ -172,14 +193,18 @@ export default {
             if (config.nouns.enabled) {
                 routes.push({ path: '/' + config.nouns.route, component: resolve(__dirname, 'routes/nouns.vue') });
                 for (let subroute of config.nouns.subroutes || []) {
-                    routes.push({ path: `/${config.nouns.route}/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
+                    routes.push({ path: `/${subroute}`, component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
                 }
-                if (config.nouns.inclusive.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.nouns.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
-                }
-                if (config.nouns.terms.enabled) {
-                    routes.push({path: `/${config.nouns.route}/${config.nouns.terms.route}`, component: resolve(__dirname, 'routes/queerTerms.vue')});
-                }
+            }
+
+            if (config.inclusive.enabled) {
+                routes.push({path: `/${config.inclusive.route}`, component: resolve(__dirname, 'routes/inclusive.vue')});
+            }
+            if (config.terminology.enabled) {
+                routes.push({path: `/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
+
+                // TODO remove later
+                routes.push({path: `/${config.nouns.route}/${config.terminology.route}`, component: resolve(__dirname, 'routes/terminology.vue')});
             }
 
             if (config.names.enabled) {
@@ -228,6 +253,7 @@ export default {
                 routes.push({path: '/' + config.user.route, component: resolve(__dirname, 'routes/user.vue')});
                 routes.push({path: '/' + config.user.termsRoute, component: resolve(__dirname, 'routes/terms.vue')});
             }
+            routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
 
             if (config.profile.enabled) {
@@ -247,6 +273,7 @@ export default {
 
             if (config.calendar && config.calendar.enabled) {
                 routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
+                routes.push({ path: '/calendar-wide', component: resolve(__dirname, 'routes/calendarWide.vue') });
             }
 
             if (config.api !== null) {

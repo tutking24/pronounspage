@@ -1,5 +1,6 @@
+require('../src/dotenv')();
+
 const dbConnection = require('./db');
-require('dotenv').config({ path:__dirname + '/../.env' });
 const mailer = require('../src/mailer');
 
 // TODO duplication...
@@ -27,6 +28,7 @@ async function notify() {
     const awaitingModeration = [
         ...(await db.all(`SELECT 'nouns' as type, locale, count(*) as c FROM nouns WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'terms' as type, locale, count(*) as c FROM terms WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'sources' as type, locale, count(*) as c FROM sources WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'reports' as type, null as locale, count(*) as c FROM reports WHERE isHandled = 0`)),
     ];

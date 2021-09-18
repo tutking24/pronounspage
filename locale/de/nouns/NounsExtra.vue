@@ -6,7 +6,7 @@
             Die Folgenden sind vorschläge für ein Deklinationsmuster für verschiedene Formen von geschlechtsneutralen Substantiven.
         </p>
         <ul class="list-group mt-4">
-            <li v-for="({declension, extendedDeclension, info = null, warning = null}, name) in declensions" class="list-group-item">
+            <li v-for="({declension, extendedDeclension, info = null, warning = null}, name) in declensions" class="list-group-item" :id="name">
                 <h4>{{ name }}</h4>
                 <div v-if="info" class="alert alert-info small">
                     <Icon v="info-circle"/>
@@ -17,7 +17,7 @@
                     <LinkedText :text="warning"/>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-4">
+                    <div v-if="declension"  class="col-12 col-md-4">
                         <div class="mb-3">
                             <h5 class="h6">⋅ <T>nouns.singular</T></h5>
                             <Declension word="" :template="declension" open/>
@@ -27,7 +27,7 @@
                             <Declension word="" :template="declension" open plural/>
                         </div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div v-if="extendedDeclension" class="col-12 col-md-8">
                         <div class="mb-3">
                         <h5 class="h6">⋅ <T>nouns.singular</T></h5>
                         <Declension word="" :template="extendedDeclension" open/>
@@ -56,65 +56,83 @@
                 declensions: {
                     'Y-Formen': {
                         declension: new NounDeclension({
-                            N: 'das Autory', G: 'des Autorys', D: 'dem Autory', A: 'das Autory',
-                            N_pl: 'die Autorys', G_pl: 'der Autorys', D_pl: 'den Autorys', A_pl: 'die Autorys',
+                            N: 'das Arbeity', G: 'des Arbeitys', D: 'dem Arbeity', A: 'das Arbeity',
+                            N_pl: 'die Arbeitys', G_pl: 'der Arbeitys', D_pl: 'den Arbeitys', A_pl: 'die Arbeitys',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein bestes Freundy', G: 'meines besten Freundys', D: 'meinem besten Freundy', A: 'mein bestes Freundy',
-                            N_pl: 'meine besten Freundys', G_pl: 'meiner besten Freundys', D_pl: 'meinen besten Freundys', A_pl: 'meine besten Freundys',
+                            N: 'mein bestes Lehry', G: 'meines besten Lehrys', D: 'meinem besten Lehry', A: 'mein bestes Lehry',
+                            N_pl: 'meine besten Lehrys', G_pl: 'meiner besten Lehrys', D_pl: 'meinen besten Lehrys', A_pl: 'meine besten Lehrys',
                         }),
                     },
                     'Inklusivum': {
                         info: 'Formen vorgestellt vom {https://geschlechtsneutral.net/=Verein für geschlechtsneutrales Deutsch}.',
                         declension: new NounDeclension({
-                            N: 'de Autore', G: 'dern Autore', D: 'dern Autore', A: 'de Autore',
-                            N_pl: 'die Autorne', G_pl: 'der Autorne', D_pl: 'den Autorne', A_pl: 'die Autorne',
+                            N: 'de Arbeitere', G: 'dern Arbeiteres', D: 'dern Arbeitere', A: 'de Arbeitere',
+                            N_pl: 'die Arbeiterne', G_pl: 'der Arbeiterne', D_pl: 'den Arbeiternen', A_pl: 'die Arbeiterne',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein beste Freundere', G: 'meinern besten Freunderes', D: 'meinern besten Freundere', A: 'mein beste Freundere',
-                            N_pl: 'meine besten Freunderne', G_pl: 'meiner besten Freunderne', D_pl: 'meinen besten Freunderne', A_pl: 'meine besten Freunderne',
+                            N: 'mein beste Lehrere', G: 'meinern besten Lehreres', D: 'meinern besten Lehrere', A: 'mein beste Lehrere',
+                            N_pl: 'meine besten Lehrerne', G_pl: 'meiner besten Lehrerne', D_pl: 'meinen besten Lehrernen', A_pl: 'meine besten Lehrerne',
+                        }),
+                    },
+                    'Ojum': {
+                        info: `
+                            Formen vorgestellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}.<br/><br/>
+                            Siehe auch: {/oj=Neopronomen „oj/ojm“}.<br/><br/>
+                            Die Idee ist, die theoretisch unspezifischen Formen auf -t, -ent, -ant und -or im Singular nicht durchzugendern:
+                            Wird das Ojum bei -er statt des generischen Maskulinums der Standard, verändert sich mittelfristig voraussichtlich
+                            die Spracherwartung und ein inklusiver Artikel davor reicht, um diese Formen als genderneutral zu markieren
+                            und die gewohnten Kurzformen erhalten zu können. Trotzdem ist kurzfristig auch immer explizite Singular-Genderung mit -u freigestellt.
+                        `,
+                        declension: new NounDeclension({
+                            N: 'dej Arbeitu', G: 'dejs Arbeitus', D: 'dojm Arbeitu', A: 'dojn Arbeitu',
+                            N_pl: 'die Arbeitoj', G_pl: 'der Arbeitoj', D_pl: 'den Arbeitojn', A_pl: 'die Arbeitoj',
+                        }),
+                        extendedDeclension: new NounDeclension({
+                            N: 'meinu bestu Lehru', G: 'meinus besten Lehrus', D: 'meinum besten Lehru', A: 'meinun bestu Lehru',
+                            N_pl: 'meine besten Lehroj', G_pl: 'meiner besten Lehroj', D_pl: 'meinen besten Lehrojn', A_pl: 'meine besten Lehrojn',
                         }),
                     },
                     'Doppelpunkt-Formen': {
                         declension: new NounDeclension({
-                            N: 'der:die Autor:in', G: 'des:der Autors:in', D: 'dem:der Autor:in', A: 'den:die Autor:in',
-                            N_pl: 'die Autor:innen', G_pl: 'der Autor:innen', D_pl: 'den Autor:innen', A_pl: 'die Autor:innen',
+                            N: 'der:die Arbeiter:in', G: 'des:der Arbeiters:in', D: 'dem:der Arbeiter:in', A: 'den:die Arbeiter:in',
+                            N_pl: 'die Arbeiter:innen', G_pl: 'der Arbeiter:innen', D_pl: 'den Arbeiter:innen', A_pl: 'die Arbeiter:innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein:e beste:r Freund:in', G: 'meines:r besten Freund:in', D: 'meinem:r besten Freund:in', A: 'meine:n beste:n Freund:in',
-                            N_pl: 'meine besten Freund:innen', G_pl: 'meiner besten Freund:innen', D_pl: 'meinen besten Freund:innen', A_pl: 'meine besten Freund:innen',
+                            N: 'mein:e beste:r Lehrer:in', G: 'meines:r besten Lehrer:in', D: 'meinem:r besten Lehrer:in', A: 'meine:n beste:n Lehrer:in',
+                            N_pl: 'meine besten Lehrer:innen', G_pl: 'meiner besten Lehrer:innen', D_pl: 'meinen besten Lehrer:innen', A_pl: 'meine besten Lehrer:innen',
                         }),
                     },
                     'Unterstrich-Formen': {
                         declension: new NounDeclension({
-                            N: 'der_die Autor_in', G: 'des_der Autors_in', D: 'dem_der Autor_in', A: 'den_die Autor_in',
-                            N_pl: 'die Autor_innen', G_pl: 'der Autor_innen', D_pl: 'den Autor_innen', A_pl: 'die Autor_innen',
+                            N: 'der_die Arbeiter_in', G: 'des_der Arbeiters_in', D: 'dem_der Arbeiter_in', A: 'den_die Arbeiter_in',
+                            N_pl: 'die Arbeiter_innen', G_pl: 'der Arbeiter_innen', D_pl: 'den Arbeiter_innen', A_pl: 'die Arbeiter_innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein_e beste_r Freund_in', G: 'meines_r besten Freund_in', D: 'meinem_r besten Freund_in', A: 'meine_n beste_n Freund_in',
-                            N_pl: 'meine besten Freund_innen', G_pl: 'meiner besten Freund_innen', D_pl: 'meinen besten Freund_innen', A_pl: 'meine besten Freund_innen',
+                            N: 'mein_e beste_r Lehrer_in', G: 'meines_r besten Lehrer_in', D: 'meinem_r besten Lehrer_in', A: 'meine_n beste_n Lehrer_in',
+                            N_pl: 'meine besten Lehrer_innen', G_pl: 'meiner besten Lehrer_innen', D_pl: 'meinen besten Lehrer_innen', A_pl: 'meine besten Lehrer_innen',
                         }),
                     },
                     'Sternchen-Formen': {
                         declension: new NounDeclension({
-                            N: 'der*die Autor*in', G: 'des*der Autors*in', D: 'dem*der Autor*in', A: 'den*die Autor*in',
-                            N_pl: 'die Autor*innen', G_pl: 'der Autor*innen', D_pl: 'den Autor*innen', A_pl: 'die Autor*innen',
+                            N: 'der*die Arbeiter*in', G: 'des*der Arbeiters*in', D: 'dem*der Arbeiter*in', A: 'den*die Arbeiter*in',
+                            N_pl: 'die Arbeiter*innen', G_pl: 'der Arbeiter*innen', D_pl: 'den Arbeiter*innen', A_pl: 'die Arbeiter*innen',
                         }),
                         extendedDeclension: new NounDeclension({
-                            N: 'mein*e beste*r Freund*in', G: 'meines*r besten Freund*in', D: 'meinem*r besten Freund*in', A: 'meine*n beste*n Freund*in',
-                            N_pl: 'meine besten Freund*innen', G_pl: 'meiner besten Freund*innen', D_pl: 'meinen besten Freund*innen', A_pl: 'meine besten Freund*innen',
+                            N: 'mein*e beste*r Lehrer*in', G: 'meines*r besten Lehrer*in', D: 'meinem*r besten Lehrer*in', A: 'meine*n beste*n Lehrer*in',
+                            N_pl: 'meine besten Lehrer*innen', G_pl: 'meiner besten Lehrer*innen', D_pl: 'meinen besten Lehrer*innen', A_pl: 'meine besten Lehrer*innen',
                         }),
                     },
                     'Großbuchstabe-Formen': {
-                        warning: 'Das Binnen-I bezieht sich nur auf die männliche und die weibliche Form der Wörter und schließt damit (wie das generische Maskulinium) immer noch sehr viele Menschen aus der Sprache aus. Deshalb ist diese Variante genauso wenig zu empfehlen wie das generische Maskulinum oder Femininum.',
-                        declension: new NounDeclension({
-                            N: 'derDie AutorIn', G: 'desDer AutorIn', D: 'demDer AutorIn', A: 'denDie AutorIn',
-                            N_pl: 'die AutorInnen', G_pl: 'der AutorInnen', D_pl: 'den AutorInnen', A_pl: 'die AutorInnen',
-                        }),
-                        extendedDeclension: new NounDeclension({
-                            N: 'meinE besteR FreundIn', G: 'meinesR besten FreundIn', D: 'meinemR besten FreundIn', A: 'meineN besteN FreundIn',
-                            N_pl: 'meine besten FreundInnen', G_pl: 'meiner besten FreundInnen', D_pl: 'meinen besten FreundInnen', A_pl: 'meine besten FreundInnen',
-                        }),
+                        warning: 'Formen wie z.B. „ArbeiterIn“ oder „LehrerInnen“. Das Binnen-I bezieht sich nur auf die männliche und die weibliche Form der Wörter und schließt damit (wie das generische Maskulinium) immer noch sehr viele Menschen aus der Sprache aus. Deshalb ist diese Variante genauso wenig zu empfehlen wie das generische Maskulinum oder Femininum.',
+                        // declension: new NounDeclension({
+                        //     N: 'derDie ArbeiterIn', G: 'desDer ArbeiterIn', D: 'demDer ArbeiterIn', A: 'denDie ArbeiterIn',
+                        //     N_pl: 'die ArbeiterInnen', G_pl: 'der ArbeiterInnen', D_pl: 'den ArbeiterInnen', A_pl: 'die ArbeiterInnen',
+                        // }),
+                        // extendedDeclension: new NounDeclension({
+                        //     N: 'meinE besteR LehrerIn', G: 'meinesR besten LehrerIn', D: 'meinemR besten LehrerIn', A: 'meineN besteN LehrerIn',
+                        //     N_pl: 'meine besten LehrerInnen', G_pl: 'meiner besten LehrerInnen', D_pl: 'meinen besten LehrerInnen', A_pl: 'meine besten LehrerInnen',
+                        // }),
                     },
                 },
             }

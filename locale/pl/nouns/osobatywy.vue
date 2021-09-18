@@ -8,10 +8,10 @@
             <small><NormativeBadge/></small>
         </h2>
 
-        <section>
+        <div>
             <T>nouns.personNouns.info</T>
             <p><Share :title="$t('nouns.personNouns.header')"/></p>
-        </section>
+        </div>
 
         <details open class="border mb-3">
             <summary class="bg-light p-3">

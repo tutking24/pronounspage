@@ -1,4 +1,5 @@
-title: 'yi.pronouns.page'
+title: 'Pronouns.page'
+domain: 'yi.pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
 home:
@@ -74,7 +75,7 @@ pronouns:
         description: >
             Even though for many people it's incredibly important that people use specific pronouns to talk about them,
             others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/=here}.'
+        options: 'check out the options [share]{/pronouns=here}.'
     others: 'Other forms'
     othersRaw: 'other'
     or: 'or'
@@ -171,20 +172,22 @@ nouns:
     nouns:
         header: 'נײטראַלע סובסטאַנטיװן'
 
-    terms:
-        header: 'טערמינאָלאָגיע'
-        headerLong: 'Słownik terminologii queerowej'
-        info:
-            - >
-                Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
-                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
-                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
-                i jakie proponujemy dla nich polskie tłumaczenia.
-        term: 'Określenie'
-        original: 'Pochodzenie, określenie angielskie'
-        category: 'Kategoria'
-        images: 'Dodatkowe obrazki, spoza katalogu flag'
-        definition: 'Definicja'
+    image: 'Image'
+
+terminology:
+    header: 'טערמינאָלאָגיע'
+    headerLong: 'Słownik terminologii queerowej'
+    info:
+        - >
+            Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+            funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+            Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+            i jakie proponujemy dla nich polskie tłumaczenia.
+    term: 'Określenie'
+    original: 'Pochodzenie, określenie angielskie'
+    category: 'Kategoria'
+    images: 'Dodatkowe obrazki, spoza katalogu flag'
+    definition: 'Definicja'
 
 faq:
     header: 'פֿראַגעס'
@@ -378,6 +381,7 @@ user:
         userNotFound: 'User not found.'
         email:
             subject: 'Your login code is %code%'
+            # TODO change: To confirm your email address, enter the following code on the website: %code%.
             content: |
                 To confirm your email address, use the following code: %code%.
 
@@ -417,8 +421,16 @@ profile:
     description: 'באַשרײַבונג'
     names: 'נעמען'
     pronouns: 'פּראָנאָמען'
-    pronounsInfo: 'You can enter a pronoun (eg. “they” or “she/sher”) or a link (eg. “http://en.pronouns.page/e”) or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).'
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+    pronounsInfo: >
+        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
+        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
+        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
+        Keep in mind that <strong>all five forms</strong> are required in that case,
+        otherwise the app can only guess what exactly do you mean.
+        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
+        you can also use a colon shorthand (eg. “:star”).
+    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'װערטער'
     birthday: 'עלטער'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
@@ -455,6 +467,7 @@ profile:
     # TODO
     card:
         link: 'Card picture'
+        generate: 'Generate' # TODO
         generating: 'Generation in progress…'
     empty: 'This person hasn''t created any cards yet.' # TODO
 
@@ -476,9 +489,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.yi=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
     links: 'Contact, social media, support'
 
 notFound:

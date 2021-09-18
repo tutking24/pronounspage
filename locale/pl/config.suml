@@ -73,7 +73,8 @@ sources:
 
 nouns:
     enabled: true
-    route: 'slowniki'
+    route: 'rzeczowniki'
+    routeMain: 'neutratywy'
     collapsable: false
     plurals: true
     pluralsRequired: true
@@ -85,24 +86,30 @@ nouns:
         - 'dukatywy'
         - 'osobatywy'
         - 'iksatywy'
-    inclusive:
-        enabled: true
-        categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
-        route: 'inkluzywny'
-    terms:
-        enabled: true
-        published: true
-        categories:
-            - 'orientacja seksualna'
-            - 'orientacja romantyczna'
-            - 'orientacja tertiarna'
-            - 'płeć'
-            - 'ekspresja płciowa'
-            - 'model relacji'
-            - 'język'
-            - 'pociąg'
-            - 'polityka'
-        route: 'terminologia'
+
+community:
+    route: 'terminologia'
+
+inclusive:
+    enabled: true
+    categories: ['nieheteronormatywność', 'transpłciowość', 'interpłciowość', 'feminizm', 'niepełnosprawność', 'rasa i narodowość', 'ubóstwo', 'zdrowie psychiczne']
+    route: 'inkluzywny'
+
+terminology:
+    enabled: true
+    published: true
+    categories:
+        - 'orientacja seksualna'
+        - 'orientacja romantyczna'
+        - 'orientacja tertiarna'
+        - 'płeć'
+        - 'ekspresja płciowa'
+        - 'model relacji'
+        - 'język'
+        - 'pociąg'
+        - 'polityka'
+        - 'uprzedzenia'
+    route: 'terminologia'
 
 names:
     enabled: false
@@ -229,7 +236,7 @@ links:
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio'
-            headline: 'Czemu KAŻDY powinien mieć zaimki w bio'
+            headline: 'Czemu każda cis osoba sojusznicza powinna mieć zaimki w bio'
         -
             icon: 'comment-alt-edit'
             url: 'https://www.przemyslenia-maniaka.pl/2019/11/maniak-marudzi-27-niebinarne-tumaczenia.html'
@@ -339,6 +346,19 @@ links:
                 Rada Języka Polskiego jest instytucją opiniodawczo-doradczą
                 w zakresie używania języka polskiego, a więc właśnie opiniuje, doradza, konsultuje, wydaje ekspertyzy, opinie,
                 ale wydaje nakazów ani zakazów.
+        -
+            icon: 'atlas'
+            url: 'https://tranzycja.pl/'
+            headline: 'Tranzycja.pl'
+            extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
+        -
+            icon: 'book'
+            url: 'https://jakmowicolgbt.pl'
+            headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
+        -
+            icon: 'sticky-note'
+            url: 'http://www.todziala.org'
+            headline: 'Kamapnia: To działa!'
     mediaGuests:
         -
             icon: 'newspaper'
@@ -419,6 +439,11 @@ links:
             url: 'https://www.facebook.com/gdynaukajestkobieta/videos/193680249317891'
             headline: 'Tip-top. Krok w stronę feminatywów.'
             extra: 'Sybil, <strong>Gdy Nauka jest Kobietą UAM</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://spoti.fi/3DsrA0J'
+            headline: 'Język niebinarny dla początkujących'
+            extra: ' – Archie w podcaście <strong>Dobrze zrozumieć</strong> w ramach kampanii {http://www.todziala.org=<strong>To działa!</strong>}'
     mediaMentions:
         -
             icon: 'newspaper'
@@ -721,7 +746,7 @@ links:
                     To nie jest pocisk, jaki myślicie że jest.
                 - >
                     Nie „autorszcza”, a „autorza”. Można sprawdzić, jakich form używamy:
-                    słownik, który krytykujecie, jest {/slowniki/neutratywy#autor=na wyciągnięcie ręki}!
+                    słownik, który krytykujecie, jest {/neutratywy#autor=na wyciągnięcie ręki}!
                 - >
                     W skrócie: krótki akapit zajawkowy jest naszpikowany manipulacją, sugeruje jakobyśmy nienawidziły polszczyzny,
                     wkłada słowa w nasze usta i demonstruje brak riserczu na temat, na który piszecie.
@@ -796,12 +821,63 @@ links:
                 Co zresztą zwraca uwagę na problem, że osoby transpłciowe ciągle nie mają ugruntowanego miejsca
                 w języku polskim i przy wszystkich obszarach wykluczenia, wykluczane są także tu.
                 Tym większy szacunek dla Słownika Neutratywów Języka Polskiego, który walczy o zmianę tej sytuacji.
+        -
+            icon: 'newspaper'
+            url: 'https://www.plotek.pl/plotek/7,154063,27460686,zaskakujace-wyznanie-dziecka-eminema.html'
+            headline: 'Dziecko Eminema wyznało, że jest osobą niebinarną. Stevie pokazałx swoją przemianę'
+            extra: ' – <strong>Plotek</strong>'
+            quote: >
+                W języku polskim w kontekście osób niebinarnych nie mamy wypracowanego uzusu.
+                Jedną z możliwości jest stosowanie znaku zastępującego, np. "pisałxm" lub "pisał_m".
+                Często używa się też rodzaju neutralnego ("pisałom", "ono pisało")
+                lub form męskich i żeńskich na zmianę. Więcej o zaimkach niebinarnych możesz przeczytać na zaimki.pl.
+        -
+            icon: 'gamepad'
+            url: 'https://www.wydawnictworebel.pl/pages/bohaterowie-z-descent-legendy-mroku-1578.html'
+            headline: 'Bohaterowie z Descent: Legendy Mroku; Vaerix – smocza hybryda, wygnaniec'
+            extra: ' – <strong>Wydawnictwo Rebel</strong>'
+        -
+            icon: 'book'
+            url: 'https://jakmowicolgbt.pl'
+            headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
+        -
+            icon: 'b:facebook'
+            url: 'https://www.facebook.com/6kolorowgierwideo/photos/a.101447011804889/257805982835657/'
+            headline: 'Post o dukaizmach w grze Fallout'
+            extra: '– <strong>6 kolorów gier wideo</strong>'
+            quote: >
+                Warto w tym miejscu zacytować raport Słownika Neutratywów Języka Polskiego
+                {https://zaimki.pl/blog/spis-2021=Niebinarny Spis Powszechny 2021}
+                ujawnił, że rzeczywiście najczęściej używanymi w mowie formami są binarne:
+                66,4% dla rodzaju żeńskiego i 59,8% dla męskiego:
+                “53,6% osób używa wyłącznie form binarnych. Raptem 8,4% – wyłącznie form niebinarnych.
+                38,9% osób używa zamienne form męskich i żeńskich”.
+        -
+            icon: 'newspaper'
+            url: 'https://m.pch24.pl/wywiad-z-aktywiszczem-czyli-o-niebinarnych-zaimkach-i-jezykowych-wywrotowcach/'
+            headline: '„Wywiad z aktywiszczem”. Czyli o niebinarnych zaimkach i językowych wywrotowcach'
+            extra: '– <strong>PCh24.pl</strong>'
+            quote: >
+                Zdaniem czołowych aktywistów tego środowiska, zwyczajne stosowanie
+                rodzajów męskiego i żeńskiego wynika z nieuświadomionej przemocy względem osób niebinarnych.
+                Zwalczyć ją ma oswojenie społeczeństwa z wykwitem „aktywiszczy” i „partnerszczy”,
+                oraz zaszczepienie wrażliwości na „misgendering”, czyli używanie „niewłaściwych” zaimków.
+        -
+            icon: 'b:facebook'
+            url: 'https://www.facebook.com/MexicoMagicoBlog/posts/238339054965464'
+            headline: 'No soy tu “compañera”, soy tu “compañere” \[…]'
+            extra: '– <strong>Mexico Magico Blog</strong>'
     socials:
         -
             icon: 'twitter'
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
         -
             icon: 'twitter'
             iconSet: 'b'
@@ -967,16 +1043,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true
@@ -995,7 +1062,7 @@ profile:
         defaultPronoun: 'on_'
 
 calendar:
-    enabled: false
+    enabled: true
     route: 'kalendarz'
 
 census:
@@ -1120,7 +1187,7 @@ census:
             writein: true
             instruction:
                 - >
-                    Więcej informacji <a href="/slowniki" target="_blank">w zakładce „Słowniki”</a>.
+                    Więcej informacji <a href="/rzeczowniki" target="_blank">w zakładce „Słowniki”</a>.
                 - >
                     Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
                     ale nie możesz tego bezpiecznie robić, to je zaznacz.
@@ -1198,7 +1265,7 @@ census:
                     Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
-                    Znaczenie etykietek możesz znaleźć w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+                    Znaczenie etykietek możesz znaleźć w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
 
                 - >
                     Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
@@ -1284,18 +1351,18 @@ census:
         spis-2021: 'Raport ze Spisu 2021'
 
 redirects:
-    - { from: '^/neutratywy$', to: '/slowniki/neutratywy' }
-    - { from: '^/dukatywy$', to: '/slowniki/dukatywy' }
-    - { from: '^/osobatywy$', to: '/slowniki/osobatywy' }
-    - { from: '^/iksatywy$', to: '/slowniki/iksatywy' }
-    - { from: '^/inkluzywny', to: '/slowniki/inkluzywny' }
-    - { from: '^/inkluzywnosc', to: '/slowniki/inkluzywny' }
-    - { from: '^/terminologia', to: '/slowniki/terminologia' }
-    - { from: '^/rzeczowniki$', to: '/slowniki' }
-    - { from: '^/slownik$', to: '/slowniki' }
-    - { from: '^/s%C5%82ownik$', to: '/slowniki' }
-    - { from: '^/s%C5%82owniki$', to: '/slowniki' }
-    - { from: '^/słownik$', to: '/s%C5%82owniki' }
+    - { from: '^/slowniki/neutratywy$', to: '/neutratywy' }
+    - { from: '^/slowniki/dukatywy$', to: '/dukatywy' }
+    - { from: '^/slowniki/osobatywy$', to: '/osobatywy' }
+    - { from: '^/slowniki/iksatywy$', to: '/iksatywy' }
+    - { from: '^/slowniki/inkluzywny', to: '/inkluzywny' }
+    - { from: '^/slowniki/inkluzywnosc', to: '/inkluzywny' }
+    - { from: '^/slowniki/terminologia', to: '/terminologia' }
+    - { from: '^/slowniki', to: '/rzeczowniki' }
+    - { from: '^/slownik$', to: '/rzeczowniki' }
+    - { from: '^/s%C5%82ownik$', to: '/rzeczowniki' }
+    - { from: '^/s%C5%82owniki$', to: '/rzeczowniki' }
+    - { from: '^/słownik$', to: '/rzeczowniki' }
     - { from: '^/literatura$', to: '/korpus' }
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }

@@ -50,40 +50,77 @@
                     <label for="footerAreas">Areas responsible for / contributing to:</label>
                     <ListInput v-model="footerAreas"/>
                 </div>
+
+                <template v-if="$te('contact.team.credentials')">
+                    <hr/>
+
+                    <p class="small text-muted mb-0">
+                        This will be displayed on the team page in the "Credentials" section.
+                        You might want to put here your full legal name here, but it's not required
+                        (you can leave this field empty).
+                    </p>
+
+                    <div class="form-group">
+                        <label for="credentials">Credentials:</label>
+                        <ListInput v-model="credentials"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credentials">Credentials level:</label>
+                        <select v-model="credentialsLevel" class="form-select">
+                            <option :value="null"></option>
+                            <option :value="1">Higher education, but irrelevant field</option>
+                            <option :value="2">Bachelor (not completed yet)</option>
+                            <option :value="3">Bachelor</option>
+                            <option :value="4">Master (not completed yet)</option>
+                            <option :value="5">Master</option>
+                            <option :value="6">PhD (not completed yet)</option>
+                            <option :value="7">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="credentials">Name for credentials:</label>
+                        <input v-model="credentialsName" class="form-control" placeholder="(not required)"/>
+                    </div>
+                </template>
             </div>
 
             <section>
                 <OpinionLegend/>
             </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="signature"/>
                     <T>profile.names</T>
                 </h3>
                 <OpinionListInput v-model="names"/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
                     <T>profile.pronouns</T>
                 </h3>
-                <p class="small text-muted mb-2">
-                    <T>profile.pronounsInfo</T>
-                </p>
+                <div class="alert alert-info">
+                    <p class="small mb-0">
+                        <Icon v="info-circle"/>
+                        <T>profile.pronounsInfo</T>
+                    </p>
+                </div>
                 <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="comment-edit"/>
                     <T>profile.description</T>
                 </h3>
                 <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="4"/>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="flag"/>
                     <T>profile.flags</T>
@@ -94,26 +131,26 @@
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
                     <Flag :name="s.desc.split('|')[0]" :alt="s.desc.split('|')[1]" :img="`/flags/${s.v}.png`"/>
                 </ButtonList>
-            </div>
 
-            <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
-                <summary class="px-3 py-2">
-                    <T>profile.flagsCustom</T>
-                </summary>
-                <div class="border-top">
-                    <ImageWidgetRich v-model="customFlags"/>
-                </div>
-            </details>
+                <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
+                    <summary class="px-3 py-2">
+                        <T>profile.flagsCustom</T>
+                    </summary>
+                    <div class="border-top">
+                        <ImageWidgetRich v-model="customFlags" sizes="flag"/>
+                    </div>
+                </details>
 
-            <Answer question="flags" small/>
+                <Answer question="flags" small/>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
                     <T>profile.links</T>
                 </h3>
                 <ListInput v-model="links" v-slot="s">
-                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" required/>
+                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="s.update(s.val)" @change="s.update(s.val)" required/>
                 </ListInput>
                 <p class="small text-muted mb-0">
                     <Icon v="ad"/>
@@ -124,9 +161,9 @@
                     </a>
                     😉
                 </p>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="birthday-cake"/>
                     <T>profile.birthday</T>
@@ -140,9 +177,9 @@
                         <Icon v="times"/>
                     </button>
                 </div>
-            </div>
+            </section>
 
-            <div class="form-group">
+            <section class="form-group">
                 <h3 class="h4">
                     <Icon v="scroll-old"/>
                     <T>profile.words</T>
@@ -153,12 +190,14 @@
                     </h4>
                     <OpinionListInput v-model="words[i]" group="words"/>
                 </template>
-            </div>
+            </section>
 
-            <button class="btn btn-primary w-100" type="submit">
-                <Icon v="save"/>
-                <T>profile.editor.save</T>
-            </button>
+            <section>
+                <button class="btn btn-primary w-100" type="submit">
+                    <Icon v="save"/>
+                    <T>profile.editor.save</T>
+                </button>
+            </section>
         </form>
     </div>
 </template>
@@ -210,6 +249,9 @@
                         teamName: profile.teamName,
                         footerName: profile.footerName,
                         footerAreas: profile.footerAreas,
+                        credentials: profile.credentials,
+                        credentialsLevel: profile.credentialsLevel,
+                        credentialsName: profile.credentialsName,
                     };
                 }
             }
@@ -231,6 +273,9 @@
                     teamName: profile.teamName,
                     footerName: profile.footerName,
                     footerAreas: [],
+                    credentials: [],
+                    credentialsLevel: null,
+                    credentialsName: null,
                 };
             }
 
@@ -246,6 +291,9 @@
                 teamName: '',
                 footerName: '',
                 footerAreas: [],
+                credentials: [],
+                credentialsLevel: null,
+                credentialsName: null,
             };
         },
         mounted() {
@@ -270,6 +318,9 @@
                         teamName: this.teamName,
                         footerName: this.footerName,
                         footerAreas: this.footerAreas,
+                        credentials: this.credentials,
+                        credentialsLevel: this.credentialsLevel,
+                        credentialsName: this.credentialsName,
                     });
                     this.$router.push(`/@${this.$user().username}`);
                 } finally {
@@ -353,5 +404,8 @@
     }
     .saving {
         opacity: .5;
+    }
+    section.form-group {
+        margin-bottom: 5rem;
     }
 </style>

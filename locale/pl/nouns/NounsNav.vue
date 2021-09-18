@@ -1,57 +1,8 @@
 <template>
-    <section class="mt-4 mt-lg-0">
-        <div class="d-none d-md-inline-flex btn-group btn-block mb-2 w-100">
-            <router-link v-for="{name, icon, route} in links" :key="name"
-                         :to="buildRoute(route)"
-                         :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
-                <Icon :v="icon"/>
-                <T>nouns.{{name}}.header</T>
-            </router-link>
-        </div>
-        <div class="d-block d-md-none btn-group-vertical btn-block mb-2 w-100">
-            <router-link v-for="{name, icon, route} in links" :key="name"
-                         :to="buildRoute(route)"
-                         :class="['btn', isActiveRoute(route) ? 'btn-primary' : 'btn-outline-primary']">
-                <Icon :v="icon"/>
-                <T>nouns.{{name}}.header</T>
-            </router-link>
-        </div>
-    </section>
+    <Submenu :links="[
+        {name: 'nouns.neuterNouns.header', icon: 'deer', route: 'neutratywy'},
+        {name: 'nouns.dukajNouns.header', icon: 'ghost', route: 'dukatywy'},
+        {name: 'nouns.personNouns.header', icon: 'user-friends', route: 'osobatywy'},
+        {name: 'nouns.xNouns.header', icon: 'comment-times', route: 'iksatywy'},
+    ]"/>
 </template>
-
-<script>
-    export default {
-        data() {
-            const links = [
-                {name: 'neuterNouns', icon: 'deer', route: 'neutratywy'},
-                {name: 'dukajNouns', icon: 'ghost', route: 'dukatywy'},
-                {name: 'personNouns', icon: 'user-friends', route: 'osobatywy'},
-                {name: 'xNouns', icon: 'comment-times', route: 'iksatywy'},
-            ];
-
-            if (this.config.nouns.inclusive.enabled) {
-                links.push({name: 'inclusive', icon: 'book-heart', route: this.config.nouns.inclusive.route});
-            }
-
-            if (this.config.nouns.terms.enabled) {
-                links.push({name: 'terms', icon: 'flag', route: this.config.nouns.terms.route});
-            }
-
-            return {
-                links,
-            };
-        },
-        methods: {
-            buildRoute(route) {
-                return `/${this.config.nouns.route}/${route}`;
-            },
-            isActiveRoute(route) {
-                let current = decodeURIComponent(this.$route.fullPath).replace(/\/$/, '');
-                if (current.includes('#')) {
-                    current = current.substring(0, current.indexOf('#'));
-                }
-                return current === this.buildRoute(route).replace(/\/$/, '');
-            },
-        },
-    }
-</script>

@@ -1,9 +1,9 @@
 <template>
-    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3">
+    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3" expandLinks>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
                 <Icon v="tags"/>
-                <T>title</T><span v-if="profile">/@{{user.username}}</span>
+                <T>domain</T><span v-if="profile">/@{{user.username}}</span>
             </h1>
         </nuxt-link>
     </Profile>

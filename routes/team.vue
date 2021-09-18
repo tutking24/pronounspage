@@ -16,14 +16,70 @@
                     =
                     <Icon v="collective-logo.svg" class="invertible"/>
                 </p>
+                <div class="btn-group w-100 mt-3">
+                    <a href="/img-local/logo/logo-full.png" class="btn btn-outline-primary btn-sm" download>
+                        <Icon v="cloud-download"/>
+                        PNG
+                    </a>
+                    <a href="/img-local/logo/logo-full.svg" class="btn btn-outline-primary btn-sm" download>
+                        <Icon v="cloud-download"/>
+                        SVG
+                    </a>
+                </div>
             </figcaption>
         </figure>
 
         <section>
-            <T>contact.team.description</T>
+            <p><T>contact.team.description</T></p>
+            <ul v-if="$te('contact.team.extra')">
+                <li v-for="item in $t('contact.team.extra')">
+                    <LinkedText :text="item"/>
+                </li>
+            </ul>
         </section>
 
         <Mission/>
+
+        <section v-if="$te('contact.team.credentials')">
+            <h3>
+                <Icon v="graduation-cap"/>
+                <T>contact.team.credentials.header</T>
+            </h3>
+
+            <T>contact.team.credentials.description</T>
+
+            <ul>
+                <li v-for="credential in credentials">
+                    <strong>{{ credential.credentialsName || credential.teamName }}</strong>
+                    <a :href="`https://pronouns.page/@${credential.username}`" class="badge bg-light text-dark border">
+                        @{{credential.username}}
+                    </a>
+                    <ul>
+                        <li v-for="item in credential.credentials">
+                            <ProfileLink v-if="item.startsWith('https://') || item.startsWith('http://')" :link="item"/>
+                            <LinkedText v-else :text="item"/>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section v-if="$te('contact.team.join')">
+            <h3>
+                <Icon v="user-plus"/>
+                <T>contact.team.join.header</T>
+            </h3>
+            <p><T>contact.team.join.encouragement</T></p>
+            <p><T>contact.team.join.areasIntro</T></p>
+            <ul>
+                <li v-for="item in $t('contact.team.join.areas')">{{item}}</li>
+            </ul>
+            <p><T>contact.team.join.allies</T></p>
+            <p><T>contact.team.join.how</T></p>
+            <ul>
+                <li v-for="item in $t('contact.team.join.application')">{{item}}</li>
+            </ul>
+        </section>
 
         <section>
             <h3>
@@ -75,6 +131,26 @@
             return {
                 membersByLocale: await app.$axios.$get(`/admin/list`),
             }
+        },
+        computed: {
+            credentials() {
+                const r = [];
+                for (let locale in this.membersByLocale) {
+                    if (!this.membersByLocale.hasOwnProperty(locale)) { continue; }
+                    for (let member of this.membersByLocale[locale]) {
+                        if (member.locale === this.config.locale && member.credentials !== null) {
+                            r.push(member);
+                        }
+                    }
+                }
+
+                return r.sort((a, b) => {
+                    if (a.credentialsLevel > b.credentialsLevel) { return -1; }
+                    if (a.credentialsLevel < b.credentialsLevel) { return 1; }
+
+                    return Math.random() > 0.5 ? 1 : -1;
+                });
+            },
         },
     }
 </script>

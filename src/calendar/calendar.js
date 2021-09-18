@@ -1,8 +1,8 @@
-import { Day, Calendar } from './helpers';
-import internationalEvents from '../../locale/_/events';
-import localEvents from '../../locale/pl/events';
+const { Day, Calendar } = require('./helpers');
+const internationalEvents = require('../../locale/_/events');
+const localEvents = require('../../data/events');
 
-export const currentYear = new Calendar(
+module.exports.currentYear = new Calendar(
     Day.today().year,
     [...internationalEvents, ...localEvents],
 );

@@ -1,6 +1,6 @@
 <template>
     <section v-if="config.links.socials.length">
-        <h2 class="h3">
+        <h2 class="mb-3">
             <Icon v="hashtag"/>
             <T>links.social</T>
         </h2>

@@ -8,7 +8,7 @@ A co jeśli wpiszecie „psycholożka”? Też definicja, reklamy poradni, wypow
 
 Nie. Przede wszystkim zobaczycie masę dyskusji pt. „czy wolno mówić «psycholożka»?” 🤦
 
-![](/img/psycholożka.png)
+![](/img-local/blog/psycholożka.png)
 
 To ja szybko odpowiem: wolno.
 
@@ -28,7 +28,7 @@ Formy neutralne są dla nas ważne, potrzebne, i świetnie komunikują to, co ch
 
 Miałośmy ostatnio na kolektywowym czacie dyskusję, czy w wypowiedzi prasowej zupełnie niezwiązanej z neutratywami
 lepiej zwyczajnie użyć wobec siebie form neutralnych, jak to robimy w codziennym życiu,
-czy lepiej się [zezłopłcić (zmisgenderować)](/slowniki/terminologia#złopłcenie),
+czy lepiej się [zezłopłcić (zmisgenderować)](/terminologia#złopłcenie),
 by nie odwracać uwagi od sedna problemu i nie dawać pożywki trollom,
 które potencjalnie kłóciłyby się o -łosie i -łomy zamiast skupić się na
 [mizoginii Wojciecha Krysztofiaka](http://codziennikfeministyczny.pl/wykladowca-uniwersytetu-szczecinskiego-karmiacej-piersia-poslance-nie-byla-odpowiednio-pieszczona-zadamy-reakcji-od-wladz-uczelni/).

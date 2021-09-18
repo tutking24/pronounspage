@@ -12,8 +12,7 @@ pronouns:
     multiple:
         name: 'Utskiftbare former'
         description: >
-            Mange ikke binære personer bruker mer enn en form utskiftbart
-            og synes det er greit å bli kalt enten eller.
+            Mange ikke-binære personer bruker flere pronomen om hverandre.
             Noen liker når andre bytter mellom formene når de snakker om dem.
         examples: ['han&hun', 'han&hen', 'hun&hen']
     null: false
@@ -46,21 +45,25 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'seksuell legning'
-            - 'romantisk legning'
-            - 'tertiær legning'
-            - 'kjønn'
-            - 'kjønns uttrykk'
-            - 'forholds modell'
-            - 'språk'
-            - 'attraksjon'
-            - 'politikk'
-        route: 'terminologi'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'seksuell legning'
+        - 'romantisk legning'
+        - 'tertiær legning'
+        - 'kjønn'
+        - 'kjønns uttrykk'
+        - 'forholds modell'
+        - 'språk'
+        - 'attraksjon'
+        - 'politikk'
+        - 'fordom'
+
+    route: 'terminologi'
 
 
 names:
@@ -113,16 +116,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true

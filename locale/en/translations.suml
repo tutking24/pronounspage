@@ -1,10 +1,14 @@
-title: 'en.pronouns.page'
+title: 'Pronouns.page'
+domain: 'en.pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
 home:
     link: 'Homepage'
     header: 'Pronouns'
     headerLong: 'List of pronouns'
+    welcome: 'Welcome to pronouns.page!'
+    intro: >
+        We're creating a source of information about nonbinary and gender neutral language.
     why: 'What''s the deal with pronouns?'
     about:
         - >
@@ -32,7 +36,7 @@ home:
     generator:
         header: 'Generator'
         description: >
-            You can also use this tool where you out the blanks in sentences
+            You can also use this tool where you fill out the blanks in sentences
             and generate a link ready to share with others.
         button: 'Show the generator'
         header2: 'Generate a link'
@@ -73,7 +77,7 @@ pronouns:
         description: >
             Even though for many people it's incredibly important that people use specific pronouns to talk about them,
             others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/=here}.'
+        options: 'check out the options [share]{/pronouns=here}.'
     others: 'Other forms'
     othersRaw: 'other'
     or: 'or'
@@ -207,17 +211,19 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
-    terms:
-        header: 'Terminology'
-        headerLong: 'Dictionary of queer terminology'
-        info:
-            - >
-                A dictionary of terms related to the LGBTQ+ community.
-        term: 'Term'
-        original: 'Etymology'
-        category: 'Category'
-        images: 'Additional images, from outside the flag catalogue'
-        definition: 'Definition'
+    image: 'Picture'
+
+terminology:
+    header: 'Terminology'
+    headerLong: 'Dictionary of queer terminology'
+    info:
+        - >
+            A dictionary of terms related to the LGBTQ+ community.
+    term: 'Term'
+    original: 'Etymology'
+    category: 'Category'
+    images: 'Additional images, from outside the flag catalogue'
+    definition: 'Definition'
 
 faq:
     header: 'FAQ'
@@ -400,7 +406,19 @@ faq:
                 - >
                     You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
                     Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly do you mean.
-
+        business:
+            question: 'Are you a business?'
+            answer:
+                - >
+                    Nope. We're volunteers.
+                    We create the website with our own work.
+                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
+                    the rest comes out of our own pockets
+                    and {/contact#support=your donations} – for which we're very grateful! ❤️
+                - >
+                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
+                    you're doing us a favour. It's not like we were making any money on you.
+                    Exclusionists and queerphobes aren't welcome here.
 links:
     header: 'Links'
     headerLong: 'Extra links'
@@ -419,6 +437,10 @@ english: ~
 contact:
     header: 'Contact'
     authors: 'Authors of the website'
+    hate: >
+        Wanna send us queerphobic hate mail?
+        Just give it up, we're not discussing with trolls.
+        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
     team:
         name: 'The “Neutral Language Council” collective'
         description:
@@ -448,7 +470,7 @@ user:
         email:
             subject: 'Your login code is %code%'
             content: |
-                To confirm your email address, use the following code: %code%.
+                To confirm your email address, enter the following code on the website: %code%.
 
                 If you didn't order this code, simply ignore this message.
         why: >
@@ -498,12 +520,15 @@ profile:
     names: 'Names'
     pronouns: 'Pronouns'
     pronounsInfo: >
-        You can enter a pronoun (eg. “they” or “she/her”)
-        or a link (eg. “https://en.pronouns.page/e”)
+        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
+        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
         or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
         Keep in mind that <strong>all five forms</strong> are required in that case,
         otherwise the app can only guess what exactly do you mean.
-    pronounsNotFound: 'We can''t find a link to this pronoun!'
+        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
+        you can also use a colon shorthand (eg. “:star”).
+    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'Words'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
@@ -538,6 +563,7 @@ profile:
     bannerButton: 'Create a card'
     card:
         link: 'Card picture'
+        generate: 'Generate'
         generating: 'Generation in progress…'
     empty: 'This person hasn''t created any cards yet.'
 
@@ -559,9 +585,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} is licensed under {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Content is licensed under {https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
     links: 'Contact, social media, support'
 
 notFound:
@@ -688,7 +712,7 @@ calendar:
         intersex_remembrance_day: 'Intersex Day of Remembrance'
         lesbian_day: 'Lesbian Day'
         lesbian_visibility_day: 'Lesbian Visibility Day'
-        coming_out_day: 'National Coming Out Day'
+        coming_out_day: 'Coming Out Day'
         nonbinary_day: 'Nonbinary People''s Day'
         pan_day: 'Pansexual & Panromantic Awareness Day'
         trans_remembrance_day: 'Transgender Day of Remembrance'
@@ -702,4 +726,34 @@ calendar:
         trans_parent_day: 'Trans Parent Day'
         nonbinary_week: 'Nonbinary Awareness Week'
         polyamory_day: 'Polyamory Day'
+        homophobia_sport: '{https://www.outsports.com/2020/2/20/21145344/international-day-against-homophobia-sports-twitter=International Day Against Homophobia in Sports}'
+        gay_uncles_day: '{https://en.wikipedia.org/wiki/Gay_Uncles_Day=Gay Uncles Day}'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
+        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
+        nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Nonbinary Parents Day}'
+        trans_prisoner: '{https://transprisoners.net/about/=Trans Prisoner Day of Action and Solidarity}'
+        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender Visibility Day}'
+        genderqueer_day: 'Genderqueer Visibility Day'
+        genderfluid_day: 'Genderfluid Visibility Day'
+        aids_day: 'World AIDS Day'
+        tolerance_day: 'International Day of Tolerance'
+        social_justice_day: 'World Day of Social Justice'
+        stonewall_day: 'Anniversary of Stonewall Riots'
+        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
+        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
+        orlando_day: 'Pulse Night of Remembrance'
+        aids_memorial: 'International AIDS Candlelight Memorial'
+        health_week: 'LGBT Health Awareness Week'
+        lesbian_visibility_week: 'Lesbian Visibility Week'
+        demigender_day: 'Demigender Awareness Day'
+        pan_pride_day: 'Pansexual Pride Day'
+        transmasculine_day: 'Transmasculine People''s Day'
+        asexual_visibility_day: 'Asexual Visibility Day'
+
     banner: 'We''re celebrating'
+    image:
+        header: 'Download an image'
+        overview: 'Overview'
+        labels: 'Labels'

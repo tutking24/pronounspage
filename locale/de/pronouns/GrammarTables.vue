@@ -11,9 +11,9 @@
                 <tr>
                     <th></th>
                     <th>Nominativ</th>
+                    <th>Genitiv</th>
                     <th>Dativ</th>
                     <th>Akkusativ</th>
-                    <th>Genitiv</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,12 +25,13 @@
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
                 </tr>
                 <tr v-if="selectedPronoun.getMorpheme('article_n', counter)">
-                    <th>Artikel</th>
+                    <th>Relativpronomen</th>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="article_n" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="article_g" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="article_d" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="article_a" :counter="counter"/></td>
                 </tr>
+                <!--
                 <tr v-if="selectedPronoun.getMorpheme('demonstrative_n', counter)">
                     <th>Demonstrativpronomen</th>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="demonstrative_n" :counter="counter"/></td>
@@ -38,6 +39,7 @@
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="demonstrative_d" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="demonstrative_a" :counter="counter"/></td>
                 </tr>
+                -->
                 </tbody>
             </table>
         </div>

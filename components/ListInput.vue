@@ -1,16 +1,19 @@
 <template>
     <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" class="list-unstyled" :group="group">
         <li v-for="(v, i) in iVal" ref="items">
-            <div class="input-group input-group-sm mb-1">
-                <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
-                    <Icon v="bars"/>
-                </button>
-                <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)">
-                    <input v-model="iVal[i]" type="text" class="form-control" required/>
-                </slot>
-                <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
-                    <Icon v="times"/>
-                </button>
+            <div>
+                <div class="input-group input-group-sm mb-1">
+                    <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
+                        <Icon v="bars"/>
+                    </button>
+                    <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)">
+                        <input v-model="iVal[i]" type="text" class="form-control" required/>
+                    </slot>
+                    <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
+                        <Icon v="times"/>
+                    </button>
+                </div>
+                <slot name="validation" v-bind:val="iVal[i]"></slot>
             </div>
         </li>
 

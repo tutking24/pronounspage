@@ -5,7 +5,7 @@
 [Rada Języka Neutralnego](/kolektyw-rjn) już od roku walczy z wszechobecnym androcentryzmem językowym oraz pomaga osobom niebinarnym
 wyrażać swą płeć w języku polskim. A teraz świętuje swoje pierwsze urodziny i czeka na Wasze pytania!
 
-![](/img/urodzinowy-lajw.png)
+![](/img-local/blog/urodzinowy-lajw.png)
 
 W live streamie udział wzięły: [Tess](/@Tess), [Sybil](/@Sybil), [Archie](/@Archie), [Andrea](/@andrea), [Ausir](/@ausir),
 [Layla](/@Cake), [Rony](/@Rony), [Tymoteusz](/@tymk), [Lunis](/@Lunis), [Szymon](/@szymon) oraz Broda Szymona.

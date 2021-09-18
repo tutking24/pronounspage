@@ -71,21 +71,25 @@ nouns:
     declension: false
     submit: true
     templates: true
-    inclusive:
-        enabled: false
-    terms:
-        enabled: true
-        categories:
-            - 'sexual orientation'
-            - 'romantic orientation'
-            - 'tertiary orientation'
-            - 'gender'
-            - 'gender expression'
-            - 'relationship model'
-            - 'language'
-            - 'attraction'
-            - 'politics'
-        route: 'terms'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    categories:
+        - 'sexual orientation'
+        - 'romantic orientation'
+        - 'tertiary orientation'
+        - 'gender'
+        - 'gender expression'
+        - 'relationship model'
+        - 'language'
+        - 'attraction'
+        - 'politics'
+        - 'prejudice'
+
+    route: 'terminology'
 
 names:
     enabled: false
@@ -119,7 +123,7 @@ links:
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
-            headline: 'Why EVERYONE should have pronouns in their bio'
+            headline: 'Why all cis allies should have pronouns in their bio'
         -
             icon: 'book-open'
             url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
@@ -193,6 +197,11 @@ links:
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
     recommended:
         -
             icon: 'cogs'
@@ -204,7 +213,7 @@ links:
             url: 'https://oengus.io/'
             headline: 'Oengus.io'
             extra: ' – uses Pronouns.Page API in user profiles'
-    blog: false
+    blog: true
 
 contact:
     enabled: true
@@ -220,16 +229,7 @@ contact:
 
 support:
     enabled: true
-    links:
-        -
-            icon: 'coffee'
-            url: 'https://ko-fi.com/radajezykaneutralnego'
-            headline: 'Ko-Fi'
-        -
-            icon: 'paypal'
-            iconSet: 'b'
-            url: 'https://paypal.me/RJNeutralnego'
-            headline: 'PayPal'
+    links: []
 
 user:
     enabled: true
@@ -260,7 +260,7 @@ profile:
         defaultPronoun: 'they'
 
 calendar:
-    enabled: false
+    enabled: true
     route: 'calendar'
 
 census:

@@ -70,25 +70,25 @@ Dlatego jeśli jest możliwość uniknięcia tego pytania w ogóle, milej jest p
 
 <div class="forms-grid">
     <figure>
-        <img src="/img/forms-pl/basics-binary.png" alt="Płeć: Mężczyzna, Kobieta">
+        <img src="/img-local/forms/basics-binary.png" alt="Płeć: Mężczyzna, Kobieta">
         <figcaption>Nie wszystkie osoby, które będą wypełniały twój formularz to mężczyźni i kobiety.</figcaption>
     </figure>
     <figure>
-        <img src="/img/forms-pl/basics-trans.png" alt="Płeć: Mężczyzna, Kobieta, Trans">
+        <img src="/img-local/forms/basics-trans.png" alt="Płeć: Mężczyzna, Kobieta, Trans">
         <figcaption>
             „Trans” to nie określenie „trzeciej płci”.
             „Trans” oznacza wyłącznie niezgodność płci z metryką przypisaną przy urodzeniu – nie mówi nic o tym, jaka ta płeć naprawdę jest.
         </figcaption>
     </figure>
     <figure>
-        <img src="/img/forms-pl/basics-trans2.png" alt="Płeć: Mężczyzna, Kobieta, Trans mężczyzna, Trans kobieta">
+        <img src="/img-local/forms/basics-trans2.png" alt="Płeć: Mężczyzna, Kobieta, Trans mężczyzna, Trans kobieta">
         <figcaption>
             Trans kobiety są kobietami, trans mężczyźni są mężczyznami.
             Nie formułujmy pytań tak, jakby nie byli.
         </figcaption>
     </figure>
     <figure>
-        <img src="/img/forms-pl/basics-other.png" alt="Płeć: Mężczyzna, Kobieta, Inna">
+        <img src="/img-local/forms/basics-other.png" alt="Płeć: Mężczyzna, Kobieta, Inna">
         <figcaption>
             Wychodząc z binarności, nie popadajmy w trynarność.
             Osoby niebinarne to bardzo różnorodna grupa, nie wrzucajmy ich do jednego wora.
@@ -97,7 +97,7 @@ Dlatego jeśli jest możliwość uniknięcia tego pytania w ogóle, milej jest p
         </figcaption>
     </figure>
     <figure>
-            <img src="/img/forms-pl/basics-prefer-not.png" alt="Płeć: Mężczyzna, Kobieta, Wolę nie odpowiadać">
+            <img src="/img-local/forms/basics-prefer-not.png" alt="Płeć: Mężczyzna, Kobieta, Wolę nie odpowiadać">
             <figcaption>
                 Wiele osób niebinarnych, jeśli mogą się w danej sytuacji bezpiecznie wyoutować,
                 <em>chciałoby</em> odpowiedzieć na to pytanie. Chcemy być widoczne, brane pod uwagę,
@@ -106,7 +106,7 @@ Dlatego jeśli jest możliwość uniknięcia tego pytania w ogóle, milej jest p
             </figcaption>
         </figure>
     <figure>
-        <img src="/img/forms-pl/basics-good.png" alt="Płeć: Mężczyzna, Kobieta, Osoba niebinarna, Żadna z powyższych, [Pole wolnego tekstu]">
+        <img src="/img-local/forms/basics-good.png" alt="Płeć: Mężczyzna, Kobieta, Osoba niebinarna, Żadna z powyższych, [Pole wolnego tekstu]">
         <figcaption>
             Płeć jest skomplikowana. Ilu byśmy opcji spod parasola niebinarności nie wymieniły, nie obejmiemy ich wszystkich.
             Możesz wymienić kilka „najpopularniejszych” tożsamości
@@ -123,14 +123,14 @@ Dlatego jeśli jest możliwość uniknięcia tego pytania w ogóle, milej jest p
 
 <div class="forms-grid">
     <figure>
-        <img src="/img/forms-pl/better-multiple.png" alt="Płeć: Mężczyzna, Kobieta, Osoba niebinarna, Żadna z powyższych, [Pole wolnego tekstu]">
+        <img src="/img-local/forms/better-multiple.png" alt="Płeć: Mężczyzna, Kobieta, Osoba niebinarna, Żadna z powyższych, [Pole wolnego tekstu]">
         <figcaption>
             Niektóre osoby mogą chcieć zaznaczyć więcej niż jedną opcję.
             Jeśli nie skomplikuje ci to za bardzo analizy danych, rozważ umożliwienie im takiej opcji
         </figcaption>
     </figure>
     <figure>
-        <img src="/img/forms-pl/better-random.png" alt="Płeć: Kobieta, Osoba niebinarna, Mężczyzna, Żadna z powyższych, [Pole wolnego tekstu]">
+        <img src="/img-local/forms/better-random.png" alt="Płeć: Kobieta, Osoba niebinarna, Mężczyzna, Żadna z powyższych, [Pole wolnego tekstu]">
         <figcaption>
             Utarło się, że mężczyźni i rodzaj męski są zawsze wymieniane jako pierwsze,
             kobiety po nich, a wszystko, co nie pasuje do binarnego modelu można wcisnać gdzieś na koniec.
@@ -140,7 +140,7 @@ Dlatego jeśli jest możliwość uniknięcia tego pytania w ogóle, milej jest p
         </figcaption>
     </figure>
     <figure>
-        <img src="/img/forms-pl/better-reason.png" alt="Płeć: (i) Potrzebujemy znać Twoją tożsamość płciową, by móc zbadać zależność między płcią osób respondenckich a badanymi zmiennymi, Kobieta, Osoba niebinarna, Mężczyzna, [Pole wolnego tekstu]">
+        <img src="/img-local/forms/better-reason.png" alt="Płeć: (i) Potrzebujemy znać Twoją tożsamość płciową, by móc zbadać zależność między płcią osób respondenckich a badanymi zmiennymi, Kobieta, Osoba niebinarna, Mężczyzna, [Pole wolnego tekstu]">
         <figcaption>
             Sprecyzuj, co rozumiesz przez „płeć” i wyjaśnij, dlaczego chcesz ją znać.
         </figcaption>
@@ -159,9 +159,9 @@ może to pomóc osobom respondenckim zapoznać się z tematem.
 
 <div class="forms-grid">
     <figure>
-        <img src="/img/forms-pl/honorifics.png" alt="Zwrot grzecznościowy: Państwo, Pani, Panu, Pan, Pań, per „Ty”, Żaden z powyższych: [Pole wolnego tekstu]">
+        <img src="/img-local/forms/honorifics.png" alt="Zwrot grzecznościowy: Państwo, Pani, Panu, Pan, Pań, per „Ty”, Żaden z powyższych: [Pole wolnego tekstu]">
     </figure>
     <figure>
-        <img src="/img/forms-pl/pronouns.png" class="hero" alt="Jak mamy się do Ciebie zwracać? (i) Więcej informacji znajdziesz na stronie zaimki.pl; ono (np. zrobiłoś, poszłoś), on (np. zrobiłeś, poszedłeś), onu (np. zrobiłuś, poszłuś), ona (np. zrobiłaś, poszłaś), oni (np. zrobiliście, poszliście), Żadna z powyższych: [Pole wolnego tekstu]">
+        <img src="/img-local/forms/pronouns.png" class="hero" alt="Jak mamy się do Ciebie zwracać? (i) Więcej informacji znajdziesz na stronie zaimki.pl; ono (np. zrobiłoś, poszłoś), on (np. zrobiłeś, poszedłeś), onu (np. zrobiłuś, poszłuś), ona (np. zrobiłaś, poszłaś), oni (np. zrobiliście, poszliście), Żadna z powyższych: [Pole wolnego tekstu]">
     </figure>
 </div>

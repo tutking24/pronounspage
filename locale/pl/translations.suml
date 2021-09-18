@@ -1,10 +1,14 @@
 title: 'zaimki.pl'
-description: 'Udostępniamy tutaj linki do przykładów użycia zaimków i innych form płciowych – nie tylko normatywnych „on” i „ona”, lecz także form niebinarnych.'
+domain: 'zaimki.pl'
+description: 'Kompendium wiedzy o języku niebinarnym i neutralnym płciowo.'
 
 home:
     link: 'Strona główna'
     header: 'Zaimki'
     headerLong: 'Lista zaimków'
+    welcome: 'Witamy na stronie zaimki.pl!'
+    intro: >
+        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym i neutralnym płciowo.
     why: 'Skąd potrzeba niebinarnych zaimków?'
     about:
         - >
@@ -34,8 +38,8 @@ home:
             są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
         - >
             Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
-            „moje {/slowniki/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
-            „proszę przyjść do szkoły z {/slowniki/neutratywy#rodzic=rodzic}em”,
+            „moje {/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
+            „proszę przyjść do szkoły z {/neutratywy#rodzic=rodzic}em”,
             „w urzędzie powiedziano mi, że...”,
             „{/oni=dzwonili} z gazowni”,
             „będę robić”, itp.
@@ -65,11 +69,11 @@ home:
         inclusiveness: >
             <strong>Inkluzywność</strong>
             – by mówiąc o osobie nieznanej lub o grupie osób,
-            nie zakładać ich płci i {/slowniki/inkluzywny=nie wykluczać}.
+            nie zakładać ich płci i {/inkluzywny=nie wykluczać}.
 
 pronouns:
     header: 'Zaimki'
-    headerLong: 'Niebinarne zaimki i inne formy'
+    headerLong: 'Niebinarne zaimki<br/> i inne formy'
     examples: 'Przykłady użycia w zdaniu'
     plural: 'Liczba mnoga'
     intro: 'Moje zaimki to'
@@ -85,7 +89,7 @@ pronouns:
         description: >
             Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
             innym nie przeszkadza zwracanie się w dowolny sposób – o ile wiadomo z kontekstu, że to o nich mowa.
-        options: 'przejrzyj listę możliwości [share]{/=tutaj}.'
+        options: 'przejrzyj listę możliwości [share]{/zaimki=tutaj}.'
     avoiding:
         header: 'Unikanie form nacechowanych płciowo'
         description: >
@@ -175,6 +179,10 @@ pronouns:
                     - ['Katarzyna Nowak', 'K. Nowak']
                     - ['Szanowny Pan Białek', 'Sz. P. Białek']
                     - ['Towarzyszka Q', 'Tow. Q']
+            -
+                header: 'Liczebniki zbiorowe'
+                examples:
+                    - ['dziesięciu pracowników', 'dziesięcioro pracujących']
 
     others: 'Inne formy'
     othersRaw: 'inne'
@@ -221,8 +229,8 @@ sources:
     referenced: 'Przykłady użycia'
 
 nouns:
-    header: 'Słowniki'
-    headerLong: 'Słowniki neutralnego języka'
+    header: 'Rzeczowniki'
+    headerLong: 'Neutralne rzeczowniki'
     headerLonger: 'Słowniki neutralnego i niebinarnego języka'
     description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
     intro:
@@ -242,16 +250,17 @@ nouns:
         - >
             Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
             Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
-            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/=innych nienormatywnych form},
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/zaimki=innych nienormatywnych form},
             to które formy rzeczowników pasują do nich gramatycznie?
             Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
             Jak opisywać grupy mieszane?
 
         - >
-            Dla rozwiązania tych problemów proponujemy trzy opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
-            {/slowniki/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
-            {/slowniki/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
-            i {/slowniki/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć).
+            Dla rozwiązania tych problemów proponujemy cztery opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
+            {/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
+            {/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
+            {/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć)
+            i {/iksatywy=<strong>iksatywami</strong>} (formy neutralne, używające znaków zastępujacych).
 
     personNouns:
         header: 'Osobatywy'
@@ -260,7 +269,7 @@ nouns:
             - >
                 Są to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
                 Zupełnie nie wskazują na płeć, są więc idealne do opisu grup czy też pojedynczych osób, których płci nie znamy.
-                Są normatywne i łatwe do odmiany.
+                Są normatywne i łatwe do odmiany. Można je łączyć z formami {/ta=ta/tej}.
 
     dukajNouns:
         header: 'Dukatywy'
@@ -367,38 +376,44 @@ nouns:
     plural: 'liczba mnoga'
     pluralShort: 'l. mn.'
 
-    inclusive:
-        header: 'Inkluzywność'
-        headerLong: 'Słownik inkluzywnego języka'
-        insteadOf: 'Zamiast'
-        say: 'Lepiej mów'
-        because: 'Ponieważ'
-        info:
-            - >
-                Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
-                Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
-                to nasz język też musi być włączający.
-            - >
-                Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
-                Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
-                jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
-        categories: 'Kategorie'
-        sources: 'Linki źródłowe'
+    image: 'Obrazek'
 
-    terms:
-        header: 'Terminologia'
-        headerLong: 'Słownik terminologii queerowej'
-        info:
-            - >
-                Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
-                funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
-                Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
-                i jakie proponujemy dla nich polskie tłumaczenia.
-        term: 'Określenie'
-        original: 'Pochodzenie, określenie angielskie'
-        category: 'Kategoria'
-        images: 'Dodatkowe obrazki, spoza katalogu flag'
-        definition: 'Definicja'
+community:
+    header: 'Społeczność'
+    headerLong: 'Społeczność queerowa'
+
+inclusive:
+    header: 'Inkluzywność'
+    headerLong: 'Słownik inkluzywnego języka'
+    insteadOf: 'Zamiast'
+    say: 'Lepiej mów'
+    because: 'Ponieważ'
+    info:
+        - >
+            Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
+            Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
+            to nasz język też musi być włączający.
+        - >
+            Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
+            Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
+            jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
+    categories: 'Kategorie'
+    sources: 'Linki źródłowe'
+
+terminology:
+    header: 'Terminologia'
+    headerLong: 'Słownik terminologii queerowej'
+    info:
+        - >
+            Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+            funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+            Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+            i jakie proponujemy dla nich polskie tłumaczenia.
+    term: 'Określenie'
+    original: 'Pochodzenie, określenie angielskie'
+    category: 'Kategoria'
+    images: 'Dodatkowe obrazki, spoza katalogu flag'
+    definition: 'Definicja'
 
 names:
     header: 'Imiona'
@@ -436,15 +451,15 @@ faq:
                     W zależności od miejsca i czasu bycie „kobietą” i „mężczyzną” może oznaczać radykalnie różne
                     prawa, obowiązki, zasady… W Europie mężczyźni nosili buty na obcasie i rajtuzy,
                     rdzenne mieszkanki i mieszkańcy Ameryki Północnej od wieków rozróżniają trzecią płeć
-                    {/slowniki/terminologia#Two Spirit=(two-spirit)}, itd. itd.
+                    {/terminologia#Two Spirit=(two-spirit)}, itd. itd.
                 - >
                     Niebinarność to zbiorczy termin („umbrella term”) opisujący doświaczenie osób,
                     które nie wpisują się w binarny podział kobieta/mężczyzna.
-                    Obejmuje na przykład osoby {/slowniki/terminologia#Apłciowość=agender},
-                    {/slowniki/terminologia#genderfluid=genderfluid},
-                    {/slowniki/terminologia#demidziewczę=demidziewczęta},
-                    {/slowniki/terminologia#demichłopię=demichłopców},
-                    i {/slowniki/terminologia#non-binary=wiele innych tożsamości}.
+                    Obejmuje na przykład osoby {/terminologia#Apłciowość=agender},
+                    {/terminologia#genderfluid=genderfluid},
+                    {/terminologia#demidziewczę=demidziewczęta},
+                    {/terminologia#demichłopię=demichłopców},
+                    i {/terminologia#non-binary=wiele innych tożsamości}.
                 - >
                     Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
                     Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
@@ -493,7 +508,7 @@ faq:
             question: 'Czy ktoś tego w ogóle używa?'
             answer:
                 - >
-                    Tak! Niemal wszystkie formy, które {/=tu prezentujemy},
+                    Tak! Niemal wszystkie formy, które {/zaimki=tu prezentujemy},
                     zostały nam podesłane przez osoby rzeczywiście ich używające,
                     albo wzięte z tekstów literatury.
                     Ewentualnie {/ona/ich=uzupełniłośmy} je jedynie w miejscach, gdzie którejś części brakowało,
@@ -555,7 +570,7 @@ faq:
                     Dziś feminatywy są używane coraz częściej, i mało kogo jeszcze dziwią czy bulwersują.
                     Z neutratywami i niebinarnymi formami językowymi może być podobnie.
                 - >
-                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb jego użytkowników.
+                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb osób go używających.
                     Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
                     jest jedynie narzędziem do porozumiewania się.
                     Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
@@ -705,7 +720,7 @@ faq:
                     Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
                     choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
                     Coraz więcej osób używa w odniesieniu do siebie
-                    {/ono=rodzaju neutralnego} i {/=innych form}.
+                    {/ono=rodzaju neutralnego} i {/zaimki=innych form}.
                     Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
                     gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
                     Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form neutralnych.
@@ -748,7 +763,7 @@ faq:
                     Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
                     wciąż jednak pomija osoby niebinarne.
                     Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
-                    (alternatywa dla {/slowniki/neutratywy=neutratywów})
+                    (alternatywa dla {/neutratywy=neutratywów})
                     są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
                     Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
                     {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
@@ -776,7 +791,7 @@ faq:
             question: 'Jak zwracać się do osoby, której płci nie znamy, lub do mieszanej grupy osób?'
             answer:
                 - >
-                    Wiele form, które {/=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
+                    Wiele form, które {/zaimki=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
                     „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp.
         zmiana:
             question: 'Czy mogę zmienić swoje zaimki?'
@@ -870,7 +885,7 @@ people:
             Przede wszystkim, nie idź na łatwiznę i nie opisuj jej zaimkami, które <em>wydaje ci się</em>,
             że <em>„powinna”</em> używać ze względu na „męskie” czy „żeńskie” ciało.
             Niektórzy używają zamiennie na przykład „they” i „she”, wtedy żeńskie zaimki w polszczyźnie są na miejscu.
-            W przciwnym wypadku zajrzyj na naszą [home] {/=stronę główną},
+            W przciwnym wypadku zajrzyj do sekcji [tags] {/zaimki=Zaimki},
             gdzie opisujemy neutralne możliwości. Zapoznaj się z nimi i na tej podstawie dokonaj wyboru.
             Możesz też spróbować spytać bezpośrednio osobę zainteresowaną o jej preferencje
             – posiłkując się naszymi [globe-americas] {/english=anglojęzycznymi materiałami}.
@@ -893,18 +908,18 @@ english:
             We need to come up with a system that also includes
             neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
             (also: nouns like “painter”, “politician”, “journalist” etc. are gendered as well,
-            but that's [book] {/slowniki=a story for another time}).
+            but that's [book] {/rzeczowniki=a story for another time}).
         - >
             This website is an effort to put together in a structured and accessible way
             the existing ideas for less gendered pronouns and other forms.
-            We create it in Polish (see: [home] {/=Homepage}),
+            We create it in Polish (see: [tags] {/zaimki=Zaimki}),
             but if you don't speak it, yet still are interested in
             how this language tries to cope with the omnipresent binaries,
             we've prepared a short overview of those ideas in English.
 
 contact:
     header: 'Kontakt'
-    authors: '{/slowniki/neutratywy#autor=Autorza} strony'
+    authors: '{/neutratywy#autor=Autorza} strony'
     quote: >
         Tworzysz jakiś materiał o języku neutralnym? Piszesz lub tłumaczysz na polski postać niebinarną?
         Cudownie! Prosimy, daj nam znać. Chętnie doradzimy i chętnie udostępnimy u siebie linka.
@@ -913,15 +928,57 @@ contact:
         Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
-        description:
-            - >
-                Inicjatywy zaimki.pl / {https://pronouns.page=pronouns.page}
-                oraz {https://facebook.com/neutratywy=Słownik Neutratywów Języka Polskiego}
-                są tworzone przez kolektyw „Rada Języka Neutralnego”.
+        description: >
+            Jesteśmy kolektywem queerowym zajmującym się
+            zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.
+            Wspieramy również działania na rzecz równości i sprawiedliwości społecznej.
+        extra:
+            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa?}'
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'
         upcoming: 'Nadchodzące wersje językowe'
+        credentials:
+            header: 'Kwalifikacje'
+            description:
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu
+                    1) osobami używającymi języka polskiego, 2) osobami niebinarnymi i sojuszniczymi.
+                    Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Oto zatem lista osób członkowskich chcących się tymi informacjami podzielić:
+        join:
+            header: 'Dołącz do nas!'
+            encouragement: >
+                Zależy Ci na rozwoju języka niebinarnego i neutralnego płciowo?
+                Bliska jest Ci działalność naszego kolektywu i chcesz nam w niej pomóc? Super!
+                Dodatkowe ręce do pracy są bardzo mile widziane!
+            areasIntro: 'Obszary, w których możesz pomóc, to na przykład:'
+            areas:
+                - 'uzupełnianie i moderowanie słowników,'
+                - 'uzupełnianie i moderowanie korpusu,'
+                - 'tworzenie grafik i postów na social media,'
+                - 'odpowiadanie na wiadomości,'
+                - 'moderacja wizytówek,'
+                - 'tłumaczenie,'
+                - 'koordynacja tworzenia nowych wersji językowych,'
+                - 'teksty na bloga,'
+                - 'programowanie,'
+                - '…'
+            allies: >
+                Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne niekoniecznie,
+                dlatego zapraszamy do współpracy również binarne osoby sojusznicze.
+            how: 'Jak dołączyć? Przyślij nam maila na {mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}, a w nim:'
+            application:
+                - 'przedstaw się,'
+                - 'podlinkuj do swojego profilu na portalu zaimki.pl,'
+                - 'podlinkuj do swoich mediów społecznościowych,'
+                - 'napisz, czy masz jakieś doświadczenie aktywistyczne,'
+                - 'napisz, czym chcesz się zajmować w kolektywie.'
 
 support:
     header: 'Wsparcie'
@@ -937,11 +994,11 @@ user:
         placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
         action: 'Zaloguj'
         emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
-        userNotFound: 'Użytkownik nie został znaleziony.'
+        userNotFound: 'Konto nie zostało znalezione.'
         email:
             subject: 'Twój kod logowania to %code%'
             content: |
-                Aby potwierdzić swój adres email, użyj kodu: %code%.
+                Aby potwierdzić swój adres email, wpisz na stronie następujący kod: %code%.
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
         why: >
@@ -989,15 +1046,17 @@ profile:
     description: 'Opis'
     names: 'Imiona'
     pronouns: 'Zaimki'
-    pronounsInfo: 'Możesz tu wpisać zaimek (np. „onu”, „on/jego”) lub wkleić linka do niego (np. „https://zaimki.pl/ona/ich”).'
-    pronounsNotFound: 'Nie możemy znaleźć tego zaimka!'
+    pronounsInfo: >
+        Możesz tu wpisać <strong>zaimek</strong> (np. „onu”, „on/jego”) lub wkleić <strong>linka</strong> do niego (np. „https://zaimki.pl/ona/ich”).
+        Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.'
+    pronounsNotFound: 'Niepoprawny format. Szczegóły w instrukcji powyżej'
     words: 'Słowa'
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
     flags: 'Flagi'
     flagsInfo: >
-        Przeciągnij swoje pride''owe flagi do poniższej ramki.
-        Więcej informacji o etykietkach znajdziesz w naszym <a href="/slowniki/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+        Przeciągnij swoje pride'owe flagi do poniższej ramki.
+        Więcej informacji o etykietkach znajdziesz w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
@@ -1019,14 +1078,10 @@ profile:
         jokingly: 'Żartobliwie'
         meh: 'Spoko'
         no: 'Nie'
-    banner: >
-        Naszej strony możesz też użyć do stworzenia wizytówki, {/@andrea=takiej jak ta},
-        zawierającej Twoje imiona, zaimki, flagi pride'owe, lubiane słowa, itp.
-        Potem możesz do niej podlinkować w swoim bio czy stopce maila.
-        Wystarczy, że założysz konto {/konto=tutaj}.
     bannerButton: 'Stwórz wizytówkę'
     card:
         link: 'Obrazek'
+        generate: 'Wygeneruj'
         generating: 'Trwa generowanie obrazka…'
     empty: 'Ta osoba nie stworzyła jeszcze żadnych wizytówek.'
 
@@ -1094,11 +1149,8 @@ crud:
     loginRequired: '{/konto=Zaloguj się}, aby zgłosić wpis'
 
 footer:
-    source: 'Kod jest {https://gitlab.com/Avris/Zaimki=udostępniony} na licencji {https://mit.avris.it=MIT}.'
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} jest udostępniony na licencji {https://mit.avris.it=MIT} [mit.svg].<br/>
-        Treści są udostępnione na licencji {https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl=CC BY-NC-SA 4.0}
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL 1.0}.
     links: 'Kontakt, social media, wsparcie'
 
 notFound:
@@ -1302,34 +1354,60 @@ calendar:
         11: '%day% listopada'
         12: '%day% grudnia'
     events:
-        pride_month: 'Miesiąc {/slowniki/terminologia#pride=Dumy}'
-        trans_month: 'Miesiąc Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
+        pride_month: 'Miesiąc {/terminologia#pride=Dumy}'
+        trans_month: 'Miesiąc Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
         zaimki_birthday: 'Urodziny zaimki.pl'
-        agender_day: 'Dzień Osób {/slowniki/terminologia#apłciowość=Apłciowych}'
-        asexuality_day: 'Światowy Dzień {/slowniki/terminologia#aseksualność=Aseksualności}'
-        bisexuality_day: 'Dzień {/slowniki/terminologia#biseksualność=Biseksualności}'
-        drag_day: 'Dzień {/slowniki/terminologia#drag=Dragu}'
-        idahobit: 'Międzynarodowy Dzień Przeciw {/slowniki/terminologia#homofobia=Homofobii}, {/slowniki/terminologia#transfobia=Transfobii} i {/slowniki/terminologia#bifobia=Bifobii}'
-        intersex_day: 'Dzień Świadomości nt. {/slowniki/terminologia#homofobia=Interpłciowości}'
-        intersex_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#interpłciowość=Interpłciowych}'
-        lesbian_day: 'Dzień {/slowniki/terminologia#lesbijka=Lesbijek}'
-        lesbian_visibility_day: 'Dzień Widoczności {/slowniki/terminologia#lesbijka=Lesbijek}'
-        coming_out_day: 'Dzień {/slowniki/terminologia#coming%20out=Wychodzenia z Szafy}'
-        nonbinary_day: 'Dzień Osób {/slowniki/terminologia#niebinarność=Niebinarnych}'
-        pan_day: 'Dzień Świadomości nt. {/slowniki/terminologia#panseksualność=Panseksualności} i {/slowniki/terminologia#panromantyczność=Panromantyczności}'
-        trans_remembrance_day: 'Dzień Pamięci Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
-        trans_visibility_day: 'Dzień Widoczności Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
-        zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: 'Tydzień Świadomości nt. Spektrum {/slowniki/terminologia#aromantyczność=Aromantyczności}'
-        asexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#aseksualność=Aseksualności}'
-        bisexual_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#biseksualność=Biseksualności}'
+        agender_day: 'Dzień Osób {/terminologia#apłciowość=Apłciowych}'
+        asexuality_day: 'Światowy Dzień {/terminologia#aseksualność=Aseksualności}'
+        bisexuality_day: 'Dzień Widoczności Osób {/terminologia#biseksualność=Biseksualnych}'
+        drag_day: 'Dzień {/terminologia#drag=Dragu}'
+        idahobit: 'Międzynarodowy Dzień Przeciw {/terminologia#homofobia=Homofobii}, {/terminologia#transfobia=Transfobii} i {/terminologia#bifobia=Bifobii}'
+        intersex_day: 'Dzień Świadomości nt. {/terminologia#homofobia=Interpłciowości}'
+        intersex_remembrance_day: 'Dzień Pamięci Osób {/terminologia#interpłciowość=Interpłciowych}'
+        lesbian_day: 'Dzień {/terminologia#lesbijka=Lesbijek}'
+        lesbian_visibility_day: 'Dzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        coming_out_day: 'Dzień {/terminologia#coming%20out=Wychodzenia z Szafy}'
+        nonbinary_day: 'Międzynarodowy Dzień Osób {/terminologia#niebinarność=Niebinarnych}'
+        pan_day: 'Dzień Świadomości nt. {/terminologia#panseksualność=Panseksualności} i {/terminologia#panromantyczność=Panromantyczności}'
+        trans_remembrance_day: 'Dzień Pamięci Osób {/terminologia#transpłciowość=Transpłciowych}'
+        trans_visibility_day: 'Dzień Widoczności Osób {/terminologia#transpłciowość=Transpłciowych}'
+        zero_discrimination_day: 'Dzień „{https://bip.brpo.gov.pl/pl/content/miedzynarodowy-dzien-bez-dyskryminacji=Zero Dyskryminacji}”'
+        arospec_week: 'Tydzień Świadomości nt. Spektrum {/terminologia#aromantyczność=Aromantyczności}'
+        asexual_week: 'Tydzień Świadomości nt. {/terminologia#aseksualność=Aseksualności}'
+        bisexual_week: 'Tydzień Świadomości nt. {/terminologia#biseksualność=Biseksualności}'
         pronouns_day: 'Dzień {https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio=Zaimków}'
-        trans_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#transpłciowość=Transpłciowości}'
-        trans_parent_day: 'Dzień Rodzicielstwa Osób {/slowniki/terminologia#transpłciowość=Transpłciowych}'
-        nonbinary_week: 'Tydzień Świadomości nt. {/slowniki/terminologia#niebinarność=Niebinarności Płciowej}'
-        polyamory_day: 'Dzień {/slowniki/terminologia#poliamoria=Poliamorii}'
+        trans_week: 'Tydzień Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
+        trans_parent_day: 'Dzień Rodzicielstwa Osób {/terminologia#transpłciowość=Transpłciowych}'
+        nonbinary_week: 'Tydzień Świadomości nt. {/terminologia#niebinarność=Niebinarności Płciowej}'
+        polyamory_day: 'Dzień {/terminologia#poliamoria=Poliamorii}'
+        homophobia_sport: '{https://www.outsports.com/2020/2/20/21145344/international-day-against-homophobia-sports-twitter=Dzień Walki z Homofobią w Sporcie}'
+        gay_uncles_day: '{https://en.wikipedia.org/wiki/Gay_Uncles_Day=Dzień Gejowskich Wujków}'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=Dzień Osób LGBT+ w STEM}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=Dzień Działań Na Rzecz Depatologizacji Transpłciowości}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=Dzień Książki o Tematyce LGBTI}'
+        human_rights_day: '{https://pl.wikipedia.org/wiki/Dzie%C5%84_Praw_Cz%C5%82owieka=Dzień Praw Człowieka}'
+        nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Dzień Rodzicielstwa Osób Niebinarnych}'
+        trans_prisoner: '{https://transprisoners.net/about/=Dzień Solidarności z Uwięzionymi Osobami Trans}'
+        xenogender_day: 'Dzień Widoczności {/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
+        genderqueer_day: 'Dzień Widoczności Osób {/terminologia#nienormatywność=Nienormatywnych Płciowo}'
+        genderfluid_day: 'Dzień Widoczności Osób {/terminologia#płynnopłciowość=Płynnopłciowych}'
+        aids_day: 'Światowy Dzień Walki z AIDS'
+        tolerance_day: 'Międzynarodowy Dzień Tolerancji'
+        social_justice_day: 'Światowy Dzień Sprawiedliwości Społecznej'
+        stonewall_day: 'Rocznica Zamieszek w Stonewall'
+        domestic_violence: 'Dzień Świadomości Przemocy Domowej Wobec Osób LGBTQ'
+        polysexual_day: 'Dzień Świadomości nt. {/terminologia#poliseksualnosć=Poliseksualności} i {/terminologia#poliromantyczność=Poliromantyczności}'
+        orlando_day: 'Noc Pamięci Masakry w Orlando'
+        aids_memorial: 'Międzynarodowy Dzień Pamięci o Zmarłych na AIDS'
+        health_week: 'Tydzień Świadomości nt. Zdrowia Osób LGBT'
+        lesbian_visibility_week: 'Tydzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
+        pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
+        transmasculine_day: 'Dzień Osób {/terminologia#transmęskość=Transmęskich}'
+        asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
 
-        nameday_andrea: 'Imieniny: Andrea'
-
-        pridemarch_warsaw: 'Parada Równości w Warszawie \[test]'
-    banner: 'Obchodzimy właśnie'
+    banner: 'Dziś w kalendarzu'
+    image:
+        header: 'Ściągnij w formie obrazka'
+        overview: 'Przegląd'
+        labels: 'Etykietki'
