@@ -737,6 +737,7 @@ calendar:
         pan_pride_day: 'Día del Orgullo Pansexual'
         transmasculine_day: 'Día de la Lucha y Resistencia de Personas Transmasculinas'
         asexual_visibility_day: 'Día de la Visibilidad Asexual'
+        bi_health_month: 'Semana de la Conciencia de la Salud de Personas Bisexuales'
 
     banner: 'Hoy celebramos'
     image:
