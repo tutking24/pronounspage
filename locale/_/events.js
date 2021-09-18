@@ -47,6 +47,7 @@ module.exports = [
     new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.MajorDay),
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.MajorDay),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.MajorDay),
+    new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.MajorDay),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
