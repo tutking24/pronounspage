@@ -1397,6 +1397,7 @@ calendar:
         asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
         bi_health_month: 'Miesiąc Świadomości nt. Zdrowia Osób Biseksualnych'
         holocaust_remembrance_day: 'Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu'
+        family_equality_day: 'Międzynarodowy Dzień Równości Rodzin'
 
     banner: 'Dziś w kalendarzu'
     image:
