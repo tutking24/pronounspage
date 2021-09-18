@@ -726,6 +726,7 @@ calendar:
         bi_health_month: 'Monat zur Sichtbarkeit bisexueller Gesundheit'
         holocaust_remembrance_day: 'Holocaust-Gedenktag'
         family_equality_day: 'Regenbogenfamilientag'
+        aro_month: 'Aromantic Awareness Month'
 
     banner: 'Heute feiern wir'
     image:
