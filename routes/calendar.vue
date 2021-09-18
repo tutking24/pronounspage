@@ -34,11 +34,11 @@
                         <T>calendar.image.header</T>:
                     </p>
                     <p class="mb-0">
-                        <a href="/img-local/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                        <a href="/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
                             <Icon v="image"/>
                             <T>calendar.image.overview</T>
                         </a>
-                        <a href="/img-local/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                        <a href="/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
                             <Icon v="image"/>
                             <T>calendar.image.labels</T>
                         </a>
