@@ -1395,6 +1395,7 @@ calendar:
         pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
         transmasculine_day: 'Dzień Osób {/terminologia#transmęskość=Transmęskich}'
         asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
+        bi_health_month: 'Miesiąc Świadomości nt. Zdrowia Osób Biseksualnych'
 
     banner: 'Dziś w kalendarzu'
     image:
