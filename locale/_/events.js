@@ -194,4 +194,18 @@ module.exports = [
             }
         }
     }, EventLevel.MajorDay),
+
+    new Event('black_queer_week', 'Progress Pride', 2, week(function* (monthDays) {
+        const weeks = [];
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 1) {
+                weeks.push([]);
+            }
+            if (weeks.length === 0) {
+                continue;
+            }
+            weeks[weeks.length - 1].push(d);
+        }
+        yield* weeks[2];
+    }), EventLevel.Week),
 ];
