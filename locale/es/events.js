@@ -19,6 +19,6 @@ module.exports = [
     new Event('Día de las Rebeldías Lésbicas', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
     new Event('Día de la Promoción de los Derechos de las Personas Trans (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),   new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.MajorDay),
     new Event('Aniversario del {https://es.wikipedia.org/wiki/Baile_de_los_cuarenta_y_uno=Baile de los Cuarenta y Uno} (México)', null, 11, day(18), EventLevel.MajorDay),
-    new Event('Vela de la Comunidad Muxe', 'Muxe', 11, day(15), EventLevel.MajorDay),
+    new Event('Vela de la Comunidad Muxe (Oaxaca)', 'Muxe', 11, day(15), EventLevel.MajorDay),
 
 ];
