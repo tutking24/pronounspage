@@ -54,5 +54,6 @@ module.exports = [
 
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.MajorDay),
+    new Event('LGBTQIA+ Equal Pay Awareness Day', null, 6, dayYear(16, 2021), EventLevel.MajorDay),
 
 ];
