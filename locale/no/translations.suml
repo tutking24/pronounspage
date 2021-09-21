@@ -417,7 +417,7 @@ profile:
     pronounsInfo: >
         Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
         eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
-        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self"). 
+        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self").
         Du kan også bruke {/pronouns#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
     pronounsNotFound: 'Kjenner ikke igjen formatet. Vennligst sjekk ut instruksjonene over.'
     words: 'Ord'
@@ -476,7 +476,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL 1.0} lisensen.
+        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL} lisensen.
     links: 'Kontakt, sosiale medier, hjelp'
 
 notFound:

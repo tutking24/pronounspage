@@ -207,8 +207,8 @@ faq:
                 - >
                     Omdat mensen aanspreken in de manier waarop ze aangesprolen willen worden de basis van sociale relaties is.
                     Je zou nooit Marie "Lien" noemen, je zou nooit meneer/mevrouw weglaten wanneer je jouw docent aanspreekt etc.
-                    En zo zijn er ook mensen die niet “{/zij=zij}” of “{/hij=hij}” willen worden genoemd. 
-                    Als je dit niet accepteert dan ben jij alleen degene die in een kwaad daglicht wordt gesteld. 
+                    En zo zijn er ook mensen die niet “{/zij=zij}” of “{/hij=hij}” willen worden genoemd.
+                    Als je dit niet accepteert dan ben jij alleen degene die in een kwaad daglicht wordt gesteld.
                 - >
                     "Rare voornaamwoorden" zijn niet raar, maar gewoon een kwestie van wennen.
         how-to-know:
@@ -465,7 +465,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL 1.0} licentie.
+        {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL} licentie.
     links: 'Contact, sociale media, support'
 
 notFound:

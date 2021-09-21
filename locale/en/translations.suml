@@ -574,7 +574,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: 'Contact, social media, support'
 
 notFound:
