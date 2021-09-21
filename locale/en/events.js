@@ -24,6 +24,9 @@ module.exports = [
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.MajorDay),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', null, 2, day(1), EventLevel.MajorDay),
     new Event('Two Spirit Awareness Day', 'Two Spirit', 7, day(11), EventLevel.MajorDay),
+    new Event('National Gay Men''s HIV/AIDS Awareness Day (US)', null, 9, day(27), EventLevel.MajorDay),
+    new Event('National HIV/AIDS and Aging Awareness Day (US)', null, 9, day(18), EventLevel.MajorDay),
+    new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.MajorDay),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
