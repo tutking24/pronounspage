@@ -20,5 +20,14 @@ module.exports = [
     new Event('Día de la Promoción de los Derechos de las Personas Trans (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),   new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.MajorDay),
     new Event('Aniversario del {https://es.wikipedia.org/wiki/Baile_de_los_cuarenta_y_uno=Baile de los Cuarenta y Uno} (México)', null, 11, day(18), EventLevel.MajorDay),
     new Event('Vela de la Comunidad Muxe (Oaxaca)', 'Muxe', 11, day(15), EventLevel.MajorDay),
+        new Event('Día Nacional de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.MajorDay),
+    new Event('Día Nacional de la Prueba del VIH en Personas Transgénero (EE.UU.)', 'Transgender', 4, day(18), EventLevel.MajorDay),
+    new Event('Día Nacional de la Prueba del VIH (EE.UU.)', null, 6, day(27), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU)', null, 2, day(7), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre los Hombres Gais (EE.UU.)', null, 9, day(27), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA y el Envejecimiento (EE.UU.)', null, 9, day(18), EventLevel.MajorDay),
+    new Event('Día de la Conciencia de los Centros de la Comunidad LGBT (EE.UU.)', null, 10, day(19), EventLevel.MajorDay),
+
+
 
 ];
