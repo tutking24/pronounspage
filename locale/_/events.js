@@ -50,6 +50,7 @@ module.exports = [
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.MajorDay),
     new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.MajorDay),
     new Event('black_ribbon_day', null, 8, day(23), EventLevel.MajorDay),
+    new Event('mena_lesbian_day', null, 6, day(13), EventLevel.MajorDay),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
