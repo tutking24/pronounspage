@@ -23,7 +23,7 @@ module.exports = [
         new Event('Día Nacional de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.MajorDay),
     new Event('Día Nacional de la Prueba del VIH en Personas Transgénero (EE.UU.)', 'Transgender', 4, day(18), EventLevel.MajorDay),
     new Event('Día Nacional de la Prueba del VIH (EE.UU.)', null, 6, day(27), EventLevel.MajorDay),
-    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU)', null, 2, day(7), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU.)', null, 2, day(7), EventLevel.MajorDay),
     new Event('Día Nacional de Concientización sobre el VIH/SIDA entre los Hombres Gais (EE.UU.)', null, 9, day(27), EventLevel.MajorDay),
     new Event('Día Nacional de Concientización sobre el VIH/SIDA y el Envejecimiento (EE.UU.)', null, 9, day(18), EventLevel.MajorDay),
     new Event('Día de la Conciencia de los Centros de la Comunidad LGBT (EE.UU.)', null, 10, day(19), EventLevel.MajorDay),
