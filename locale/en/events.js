@@ -65,9 +65,53 @@ module.exports = [
     new Event('Spirit Day', null, 10, function* (monthDays) {
         let fridays = 0;
         for (let d of monthDays) {
+            if (d.dayOfWeek === 4) {
+                thursdays++;
+                if (thursdays === 3) {
+                    yield d;
+                    return;
+                }
+            }
+        }
+    }, EventLevel.MajorDay),
+
+        new Event('Purple Friday (UK)', null, 2, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.MajorDay),
+
+            new Event('Purple Friday (UK)', null, 2, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.MajorDay),
+
+        new Event('Rainbow Friday (Poland)', null, 10, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.MajorDay),
+];
+
+    new Event('Purple Friday (Netherlands)', null, 12, function* (monthDays) {
+        let fridays = 0;
+        for (let d of monthDays) {
             if (d.dayOfWeek === 5) {
                 fridays++;
-                if (fridays === 3) {
+                if (fridays === 2) {
                     yield d;
                     return;
                 }
