@@ -73,16 +73,6 @@ module.exports = [
         }
     }, EventLevel.MajorDay),
 
-        new Event('Purple Friday (UK)', null, 2, function* (monthDays) {
-        let lastFriday = null;
-        for (let d of monthDays) {
-            if (d.dayOfWeek === 5) {
-                lastFriday = d;
-            }
-        }
-        yield lastFriday;
-    }, EventLevel.MajorDay),
-
     new Event('Purple Friday (UK)', null, 2, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
