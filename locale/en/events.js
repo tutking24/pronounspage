@@ -5,6 +5,10 @@ module.exports = [
     new Event('LGBT History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('LGBT History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
     new Event('LGBT History Month (Ireland/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Trans Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month),
+    new Event('Lesbian Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month),
+
+
 
     // static date
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.MajorDay),
@@ -35,6 +39,16 @@ module.exports = [
     new Event('National Women and Girls HIV/AIDS Awareness Day (US)', null, 3, day(10), EventLevel.MajorDay),
     new Event('National Native HIV/AIDS Awareness Day (US)', null, 3, day(20), EventLevel.MajorDay),
     new Event('HIV Long-Term Survivors Awareness Day (US)', null, 6, day(5), EventLevel.MajorDay),
+    new Event('National Trans Visibility Day (Brazil)', 'Transgender', 1, day(29), EventLevel.MajorDay),
+    new Event('National Gay Pride Day (Brazil)', 'LGBTQ', 3, day(25), EventLevel.MajorDay),
+    new Event('National Lesbian Visibility Day (Brazil)', 'Lesbian', 8, day(29), EventLevel.MajorDay),
+    new Event('Lesbian Rebelliousness Day' (Latin America), 'Lesbian_', 10, day(13), EventLevel.MajorDay),
+    new Event('National Lesbian Visibility Day (Chile)', 'Lesbian', 7, day(9), EventLevel.MajorDay),
+    new Event('National Lesbian Visibility Day (Argentina)', 'Lesbian', 3, day(7), EventLevel.MajorDay),
+    new Event('National Lesbian Visibility Day (Paraguay)', 'Lesbian', 9, day(16), EventLevel.MajorDay),
+    new Event('Day of Activism for Sexual Diversity (Argentina)', 'LGBTQ', 8, day(20), EventLevel.MajorDay),
+    new Event('Trans Rights Day (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),   
+    new Event('Nonbinary People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.MajorDay),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
