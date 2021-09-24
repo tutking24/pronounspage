@@ -27,6 +27,10 @@ module.exports = [
     new Event('Día Nacional de Concientización sobre el VIH/SIDA entre los Hombres Gais (EE.UU.)', null, 9, day(27), EventLevel.MajorDay),
     new Event('Día Nacional de Concientización sobre el VIH/SIDA y el Envejecimiento (EE.UU.)', null, 9, day(18), EventLevel.MajorDay),
     new Event('Día de la Conciencia de los Centros de la Comunidad LGBT (EE.UU.)', null, 10, day(19), EventLevel.MajorDay),
+    new Event('Día Nacional Latinx de Concientización sobre el VIH (EE.UU.)', null, 10, day(15), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre los Jóvenes (EE.UU.)', null, 4, day(10), EventLevel.MajorDay),
+    new Event('Día Nacional de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas (EE.UU.)', null, 3, day(10), EventLevel.MajorDay),
+    new Event('Día de Concientización para los Sobrevivientes a Largo Plazo del VIH (EE.UU.)', null, 6, day(5), EventLevel.MajorDay),
 
 
 
