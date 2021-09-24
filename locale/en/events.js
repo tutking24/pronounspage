@@ -8,8 +8,6 @@ module.exports = [
     new Event('Trans Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month),
     new Event('Lesbian Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month),
 
-
-
     // static date
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.MajorDay),
     new Event('Pink Triangle Day (Canada)', null, 2, day(14), EventLevel.MajorDay),
@@ -47,7 +45,7 @@ module.exports = [
     new Event('National Lesbian Visibility Day (Argentina)', 'Lesbian', 3, day(7), EventLevel.MajorDay),
     new Event('National Lesbian Visibility Day (Paraguay)', 'Lesbian', 9, day(16), EventLevel.MajorDay),
     new Event('Day of Activism for Sexual Diversity (Argentina)', 'LGBTQ', 8, day(20), EventLevel.MajorDay),
-    new Event('Trans Rights Day (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),   
+    new Event('Trans Rights Day (Argentina)', 'Transgender', 3, day(18), EventLevel.MajorDay),
     new Event('Nonbinary People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.MajorDay),
     new Event('LGBT Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.MajorDay),
 
@@ -104,7 +102,6 @@ module.exports = [
         }
         yield lastFriday;
     }, EventLevel.MajorDay),
-];
 
     new Event('Purple Friday (Netherlands)', null, 12, function* (monthDays) {
         let fridays = 0;
@@ -122,5 +119,4 @@ module.exports = [
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.MajorDay),
     new Event('LGBTQIA+ Equal Pay Awareness Day', null, 6, dayYear(16, 2021), EventLevel.MajorDay),
-
 ];
