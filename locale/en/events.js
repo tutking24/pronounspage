@@ -28,7 +28,6 @@ module.exports = [
     new Event('National HIV/AIDS and Aging Awareness Day (US)', null, 9, day(18), EventLevel.MajorDay),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.MajorDay),
     new Event('{https://twitter.com/_EQUALGROUND_/status/1440232964286124050=Lesbian Visibility Day} (Sri Lanka)', 'Lesbian', 9, day(21), EventLevel.MajorDay),
-    new Event('Muxe Awareness Day (Vela de las Intrépidas)', 'Muxe', 11, day(15), EventLevel.MajorDay),
     new Event('National Latinx AIDS Awareness Day (US)', null, 10, day(15), EventLevel.MajorDay),
     new Event('Southern HIV/AIDS Awareness Day (US)', null, 8, day(20), EventLevel.MajorDay),
     new Event('National Asian and Pacific Islander HIV/AIDS Awareness Day (US)', null, 5, day(19), EventLevel.MajorDay),
