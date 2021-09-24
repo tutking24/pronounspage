@@ -42,7 +42,7 @@ module.exports = [
     new Event('National Trans Visibility Day (Brazil)', 'Transgender', 1, day(29), EventLevel.MajorDay),
     new Event('National Gay Pride Day (Brazil)', 'LGBTQ', 3, day(25), EventLevel.MajorDay),
     new Event('National Lesbian Visibility Day (Brazil)', 'Lesbian', 8, day(29), EventLevel.MajorDay),
-    new Event('Lesbian Rebelliousness Day (Latin America)'', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
+    new Event('Lesbian Rebelliousness Day (Latin America)', 'Lesbian_', 10, day(13), EventLevel.MajorDay),
     new Event('National Lesbian Visibility Day (Chile)', 'Lesbian', 7, day(9), EventLevel.MajorDay),
     new Event('National Lesbian Visibility Day (Argentina)', 'Lesbian', 3, day(7), EventLevel.MajorDay),
     new Event('National Lesbian Visibility Day (Paraguay)', 'Lesbian', 9, day(16), EventLevel.MajorDay),
