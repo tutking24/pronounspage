@@ -169,7 +169,7 @@
                     });
                 }
 
-                if (this.config.names.enabled) {
+                if (this.config.names && this.config.names.enabled && this.config.names.published) {
                     links.push({
                         link: '/' + this.config.names.route,
                         icon: 'signature',

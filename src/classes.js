@@ -761,17 +761,22 @@ export class TermsEntry {
 }
 
 export class Name {
-    constructor(name, origin, meaning, usage, legally, pros, cons, notablePeople, count, links) {
+    constructor({id, name, origin, meaning, usage, legally, pros, cons, notablePeople, links, namedays, namedaysComment, approved, base_id = null, author = null}) {
+        this.id = id;
         this.name = name;
         this.origin = origin;
         this.meaning = meaning;
         this.usage = usage;
         this.legally = legally;
-        this.pros = pros;
-        this.cons = cons;
-        this.notablePeople = notablePeople;
-        this.count = count; // TODO
-        this.links = links.filter(l => l.trim().length);
+        this.pros = pros ? pros.split('|') : [];
+        this.cons = cons ? cons.split('|') : [];
+        this.notablePeople = notablePeople ? notablePeople.split('|') : [];
+        this.links = links ? links.split('|') : [];
+        this.namedays = namedays ? namedays.split('|') : [];
+        this.namedaysComment = namedaysComment;
+        this.approved = !!approved;
+        this.base = base_id;
+        this.author = author;
     }
 
     matches(filter) {

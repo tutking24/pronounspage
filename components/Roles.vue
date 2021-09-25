@@ -46,6 +46,7 @@
                     'terms',
                     'inclusive',
                     'census',
+                    'names',
                 ],
             };
         },

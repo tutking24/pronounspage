@@ -112,12 +112,14 @@ terminology:
     route: 'terminologia'
 
 names:
-    enabled: false
+    enabled: true
+    published: false
     route: 'imiona'
     legally: true
     count: true
     countSex: { M: 'mars', K: 'venus' }
     countOrdinal: { 1: 'pierwsze imię', 2: 'drugie imię' }
+    namedays: true
 
 faq:
     enabled: true
@@ -936,6 +938,34 @@ links:
             url: 'http://dobrerzeczy.online/femaleSwitcher/'
             headline: 'Female switcher'
             extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński.'
+    names:
+        -
+            icon: 'pen-nib'
+            url: '/blog/imiona-unisex-pesel'
+            headline: 'Imiona „unisex” w rejestrze PESEL'
+            quote: >
+                W zależności od tego, na którą metrykę spojrzymy, najbardziej uniseksowymi imionami uznawanymi przez urzędy są:
+                 – Maria – głównie ze względu na tradycję nadawania tego imienia chłopcom na cześć Marii z Nazaretu,
+                 – Andrea - jeśli patrzymy tylko na pierwsze imiona,
+                 – Dominique – z imponującym balansem 0.494, choć niezbyt popularne.
+                Najważniejszy wniosek jednak jest taki, że już teraz urzędy uznają całą masę imion za zgodne z ustawą niezależnie od płci metrykalnej 😉
+        -
+            icon: 'info-circle'
+            url: 'https://docs.google.com/document/d/1xkX0LE1EiwGqRyVFsMImmY2XnsO7f8jFUjUbUC77r6Y/edit'
+            headline: 'Poradnik, jak urzędowo zmienić imię w Polsce'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/7,75410,26361697,prof-klosinska-dzban-to-slowo-nacechowane-pejoratywnie.html?disableRedirects=true'
+            headline: 'Prof. Katarzyna Kłosińska o neutralnych płciowo imionach'
+            quote: >
+                Od kilku lat coraz częściej dostajemy z urzędu stanu cywilnego prośby o opiniowanie imion neutralnych płciowo.
+                Najczęściej chodzi o nastolatki, których płeć biologiczna jest inna niż psychiczna,
+                są w trakcie procedury korekty płci lub nie identyfikują się ani jako kobieta, ani mężczyzna.
+                Chcą zmienić imię na takie, które nie będzie się kończyło ani na „a”, jak w polszczyźnie imiona kobiece,
+                ani na spółgłoskę, przypisaną imionom męskim.
+                Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
+                bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
+                należy uznać tę pierwszą za wyższą.
 
 people:
     enabled: false
