@@ -30,6 +30,7 @@ async function notify() {
         ...(await db.all(`SELECT 'inclusive' as type, locale, count(*) as c FROM inclusive WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'terms' as type, locale, count(*) as c FROM terms WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'sources' as type, locale, count(*) as c FROM sources WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
+        ...(await db.all(`SELECT 'names' as type, locale, count(*) as c FROM names WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'reports' as type, null as locale, count(*) as c FROM reports WHERE isHandled = 0`)),
     ];
     if (!awaitingModeration.length) {
