@@ -350,7 +350,7 @@ links:
             icon: 'atlas'
             url: 'https://tranzycja.pl/'
             headline: 'Tranzycja.pl'
-            extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
+            extra: ' – Repozytorium wiedzy o transpłciowości i tranzycji'
         -
             icon: 'book'
             url: 'https://jakmowicolgbt.pl'
@@ -358,7 +358,19 @@ links:
         -
             icon: 'sticky-note'
             url: 'http://www.todziala.org'
-            headline: 'Kamapnia: To działa!'
+            headline: 'Kampania: To działa!'
+        -
+            icon: 'book'
+            url: 'https://pl.m.wikisource.org/wiki/Brzydkie_kacz%C4%85tko_(Mirandola)'
+            headline: 'Brzydkie Kaczątko, Hans Christian Andersen'
+            extra: ' – przykład opowiadania pomagającego osłuchać się z użyciem rodzaju nijakiego/neutralnego w normatywnym kontekście'
+            quote: >
+                — O, dzięki Bogu, że jestem takie brzydkie! — zawołało kaczątko. — Pies mnie nawet tknąć nie chciał.
+                I zamknąwszy oczy, leżało cichutko, przytulone do trzciny, pośród huku wystrzałów, duszącego dymu
+                i świszczącego śrutu, który śmierć roznosił. Późno uciszyło się na krwawym stawie,
+                lecz wystraszone kaczątko jeszcze przez kilka godzin nie śmiało ruszyć się z miejsca.
+                Na koniec cisza je uspokoiła, podniosło głowę, otworzyło oczy, a nie widząc nikogo, zaczęło uciekać,
+                ile mu sił starczyło, dalej, dalej, dalej!
     mediaGuests:
         -
             icon: 'newspaper'
