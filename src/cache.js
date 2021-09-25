@@ -39,4 +39,5 @@ export const caches = {
     nouns: new CacheObject('main', 'nouns.js', 10),
     terms: new CacheObject('main', 'terms.js', 10),
     inclusive: new CacheObject('main', 'inclusive.js', 10),
+    names: new CacheObject('main', 'names.js', 10),
 }

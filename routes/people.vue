@@ -36,8 +36,6 @@
                 <!-- TODO <SourceList v-if="person.sources.length" :names="person.sources"/> -->
             </li>
         </ul>
-
-        <ScrollButton/>
     </div>
 </template>
 

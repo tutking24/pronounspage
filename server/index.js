@@ -95,6 +95,7 @@ app.use(require('./routes/inclusive').default);
 app.use(require('./routes/terms').default);
 app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
+app.use(require('./routes/names').default);
 
 app.use(require('./routes/images').default);
 app.use(require('./routes/blog').default);
