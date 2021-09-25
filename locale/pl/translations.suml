@@ -1346,6 +1346,7 @@ calendar:
         11: '%day% listopada'
         12: '%day% grudnia'
     events:
+        nameday: 'Imieniny: {/imiona#%param%=%param%}'
         pride_month: 'Miesiąc {/terminologia#pride=Dumy}'
         trans_month: 'Miesiąc Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
         zaimki_birthday: 'Urodziny zaimki.pl'

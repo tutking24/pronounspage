@@ -45,8 +45,6 @@
                         <ListInput v-model="form.namedays" v-slot="s">
                             <DayMonth v-model="s.val" @input="s.update(s.val)"/>
                         </ListInput>
-
-                        <Debug :v="form.namedays"/>
                     </div>
 
                     <div class="form-group">

@@ -79,7 +79,7 @@
                 return `day day-event day-event-${maxLevel}`;
             },
             getDayFlag(d) {
-                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.MajorDay && e.flag)) {
+                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.Day && e.flag)) {
                     return `/flags/${event.flag}.png`;
                 }
                 return null;
