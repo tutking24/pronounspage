@@ -17,4 +17,11 @@ module.exports = [
     new Event('Aniversário da Nova Lei de Identidade de Género (Portugal)', null, 4, day(14), EventLevel.Day),
     new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day),
 
+    // one-off events
+    new Event('{https://dezanove.pt/marcha-orgulho-lgbti-leiria-marcha-a-2-1523945=1ª Marcha do Orgulho LGBTI+ de Leiria} (Portugal)', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
+    new Event('{https://dezanove.pt/direitos-lgbti-viseu-marcha-a-10-de-1471763=Marcha pelos Direitos LGBTI+ de Viseu} (Portugal)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
+    new Event('{https://dezanove.pt/sao-joao-da-madeira-acolhe-marcha-do-1527929=1ª Marcha do Orgulho LGBTI+ em São João da Madeira} (Portugal)', 'LGBTQ', 9, dayYear(18, 2021), EventLevel.Day),
+    new Event('{https://dezanove.pt/sao-joao-da-madeira-acolhe-marcha-do-1527929=2ª edição da Marcha do Orgulho LGBTI+ de Santarém} (Portugal)', 'LGBTQ', 9, dayYear(4, 2021), EventLevel.Day),
+    new Event('{https://www.rea.pt/madeirapride=Madeira Pride} (Portugal)', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
+
 ];
