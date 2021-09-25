@@ -23,5 +23,6 @@ module.exports = [
     new Event('{https://dezanove.pt/sao-joao-da-madeira-acolhe-marcha-do-1527929=1ª Marcha do Orgulho LGBTI+ em São João da Madeira} (Portugal)', 'LGBTQ', 9, dayYear(18, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/sao-joao-da-madeira-acolhe-marcha-do-1527929=2ª edição da Marcha do Orgulho LGBTI+ de Santarém} (Portugal)', 'LGBTQ', 9, dayYear(4, 2021), EventLevel.Day),
     new Event('{https://www.rea.pt/madeirapride=Madeira Pride} (Portugal)', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
+    new Event('{https://dezanove.pt/braga-mostra-as-cores-do-arco-iris-a-17-1460027=Marcha pelos Direitos LGBTI de Braga} (Portugal)', 'LGBTQ', 7, dayYear(17, 2021), EventLevel.Day),
 
 ];
