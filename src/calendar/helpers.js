@@ -36,8 +36,8 @@ module.exports.iterateMonth = iterateMonth;
 module.exports.EventLevel = {
     Month: 0,
     Week: 1,
-    MinorDay: 2,
-    MajorDay: 3,
+    Nameday: 2,
+    Day: 3,
 }
 
 module.exports.Event = class {
