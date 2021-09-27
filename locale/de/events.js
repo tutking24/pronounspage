@@ -8,4 +8,7 @@ module.exports = [
     new Event('Jahrestag der Ehe für alle in Belgien', null, 6, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Luxemburg', null, 1, day(1), EventLevel.Day),
 
+    // one-off events
+    new Event('Ehe für alle in der Schweiz', 7, dayYear(1, 2022), EventLevel.Day),
+
 ];
