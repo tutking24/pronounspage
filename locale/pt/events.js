@@ -29,5 +29,7 @@ module.exports = [
     new Event('{https://dezanove.pt/marcha-do-orgulho-do-porto-avanca-a-3-1465870=Marcha do Orgulho LGBTI do Porto} (Portugal)', 'LGBTQ', 7, dayYear(3, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/o-primeiro-no-alentejo-beja-vai-1466394=Beja Pride} (Portugal)', 'LGBTQ', 7, dayYear(3, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/esta-vai-ser-a-primeira-marcha-do-1453592=2ª Marcha pelos Direitos LGBTI de Aveiro} (Portugal)', 'LGBTQ', 6, dayYear(12, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/805150373339790=2ª 21° Parada Da Diversidade LGBTI De Curitiba} (Brasil)', 'LGBTQ', 11, dayYear(14, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/357900524910000=2ª 25ª Parada do Orgulho LGBT de São Paulo} (Brasil)', 'LGBTQ', 6, dayYear(6, 2021), EventLevel.Day),
 
 ];
