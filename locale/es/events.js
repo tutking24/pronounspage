@@ -33,4 +33,7 @@ module.exports = [
     new Event('Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas (EE.UU.)', null, 3, day(10), EventLevel.Day),
     new Event('Día de Concientización para los Sobrevivientes a Largo Plazo del VIH (EE.UU.)', null, 6, day(5), EventLevel.Day),
 
+    // one-off events
+    new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 11, dayYear(6, 2021), EventLevel.Day),
+
 ];
