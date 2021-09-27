@@ -3,6 +3,7 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calend
 module.exports = [
     // months
     new Event('Mes de la Historia LGBT (EE.UU.)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Mes de la Diversidad (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
 
     // static date
     new Event('Día de la Igualdad Matrimonial (EE.UU.)', null, 6, day(26), EventLevel.Day),
