@@ -36,5 +36,6 @@ module.exports = [
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 11, dayYear(6, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/marchaporladiversidad.uy=Marcha por la Diversidad} (Uruguay)', 9, dayYear(24, 2021), EventLevel.Day),
 
 ];
