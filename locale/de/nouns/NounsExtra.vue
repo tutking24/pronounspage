@@ -93,6 +93,16 @@
                             N_pl: 'meine besten Lehroj', G_pl: 'meiner besten Lehroj', D_pl: 'meinen besten Lehrojn', A_pl: 'meine besten Lehrojn',
                         }),
                     },
+                    'Person-Formen': {
+                        declension: new NounDeclension({
+                            N: 'die Arbeitsperson', G: 'der Arbeitsperson', D: 'der Arbeitsperson', A: 'die Arbeitsperson',
+                            N_pl: 'die Arbeitspersonen', G_pl: 'der Arbeitspersonen', D_pl: 'den Arbeitspersonenn', A_pl: 'die Arbeitspersonen',
+                        }),
+                        extendedDeclension: new NounDeclension({
+                            N: 'meine beste Lehrperson', G: 'meiner besten Lehrperson', D: 'meiner besten Lehrperson', A: 'meine beste Lehrperson',
+                            N_pl: 'meine besten Lehrpersonen', G_pl: 'meiner besten Lehrpersonen', D_pl: 'meinen besten Lehrpersonenn', A_pl: 'meine besten Lehrpersonen',
+                        }),
+                    },
                     'Doppelpunkt-Formen': {
                         declension: new NounDeclension({
                             N: 'der:die Arbeiter:in', G: 'des:der Arbeiters:in', D: 'dem:der Arbeiter:in', A: 'den:die Arbeiter:in',
