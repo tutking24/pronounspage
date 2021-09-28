@@ -10,7 +10,7 @@ module.exports = [
 
     // one-off events
     new Event('Ehe für alle in der Schweiz', null, 7, dayYear(1, 2022), EventLevel.Day),
-    new Event('{https://www.csd-d.de/de/=CSD Düsseldorf}', null, 10, dayYear(16, 2021), EventLevel.Day),
-    new Event('{https://csd-bielefeld.de/=CSD Bielefeld}', null, 10, dayYear(2, 2021), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/133873485389727=CSD Erfurt}', null, 10, dayYear(9, 2021), EventLevel.Day),
+    new Event('{https://www.csd-d.de/de/=CSD Düsseldorf}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
+    new Event('{https://csd-bielefeld.de/=CSD Bielefeld}', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/133873485389727=CSD Erfurt}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
 ];

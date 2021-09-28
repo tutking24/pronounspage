@@ -35,6 +35,6 @@ module.exports = [
     new Event('Día de Concientización para los Sobrevivientes a Largo Plazo del VIH (EE.UU.)', null, 6, day(5), EventLevel.Day),
 
     // one-off events
-    new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', null, 11, dayYear(6, 2021), EventLevel.Day),
-    new Event('{https://www.facebook.com/marchaporladiversidad.uy=Marcha por la Diversidad} (Uruguay)', null, 9, dayYear(24, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/marchaporladiversidad.uy=Marcha por la Diversidad} (Uruguay)', 'LGBTQ', 9, dayYear(24, 2021), EventLevel.Day),
 ];
