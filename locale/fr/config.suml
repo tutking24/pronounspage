@@ -19,7 +19,6 @@ pronouns:
     null: false
     emoji: false
     slashes: true
-    avoiding: false
     others: 'Autres pronoms'
 
 pronunciation:

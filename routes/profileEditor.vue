@@ -342,9 +342,11 @@
             },
             validatePronoun(pronoun) {
                 pronoun = this.normalisePronoun(pronoun);
-                return pronoun === this.config.pronouns.any || pronoun === this.config.pronouns.avoiding || buildPronoun(pronouns, pronoun)
-                    ? null
-                    : 'profile.pronounsNotFound'
+                return pronoun === this.config.pronouns.any
+                    || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(pronoun))
+                    || buildPronoun(pronouns, pronoun)
+                        ? null
+                        : 'profile.pronounsNotFound'
             },
         },
         computed: {

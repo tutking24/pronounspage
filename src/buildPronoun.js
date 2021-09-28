@@ -67,7 +67,7 @@ export const buildPronoun = (pronouns, path) => {
         pronoun = buildPronounFromTemplate(path, process.env.CONFIG.pronouns.emoji);
     }
 
-    if (!pronoun && process.env.CONFIG.pronouns.null !== false && path.startsWith(':') && path.length < 12) {
+    if (!pronoun && process.env.CONFIG.pronouns.null && process.env.CONFIG.pronouns.null.morphemes && path.startsWith(':') && path.length < 12) {
         pronoun = buildPronounFromTemplate(path.substring(1), process.env.CONFIG.pronouns.null);
     }
 

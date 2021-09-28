@@ -7,8 +7,13 @@
         props: {
             text: { required: true },
             noicons: { type: Boolean },
+            escape: { type: Boolean },
         },
         render(h) {
+            let text = this.text;
+            if (this.escape) {
+                text = text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
+            }
             if (!this.text) {
                 return h('span');
             }

@@ -32,7 +32,7 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        (<Spelling escape :text="Array.isArray(selectedPronoun.description)
+                        (<LinkedText escape :text="Array.isArray(selectedPronoun.description)
                             ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
                             : selectedPronoun.description"/>)
                     </em>
@@ -98,6 +98,8 @@
             </ul>
         </section>
 
+        <Avoiding v-if="isNull"/>
+
         <section>
             <Share :title="`${$t('pronouns.intro')}: ${selectedPronoun.name(glue)}`"/>
         </section>
@@ -129,8 +131,9 @@
     export default {
         components: {LinkedText, GrammarTables },
         data() {
+            const key = decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, ''));
             const selectedPronoun = this.config.pronouns.enabled
-                ? buildPronoun(pronouns, decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, '')))
+                ? buildPronoun(pronouns, key)
                 : null;
 
             return {
@@ -145,6 +148,8 @@
                 counter: 0,
                 counterHandle: null,
                 counterSpeed: 1000,
+
+                isNull: key.startsWith(':'),
             }
         },
         async asyncData({app}) {

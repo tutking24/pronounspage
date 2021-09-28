@@ -46,8 +46,100 @@ pronouns:
             honorific: '#'
         examples: ['💫', '💙', '🐿']
         template: 'Otwórz dowolny z przykładów i podmień emoji w URLu na swoje.'
-    null: false
-    avoiding: 'unikanie'
+    null:
+        description: '{/unikanie=Unikanie form nacechowanych płciowo}'
+        history: >
+            Niektóre osoby niebinarne preferują używanie form unikających precyzowania płci
+            zamiast tych nacechowanych czy to binarnie czy niebinarnie.
+            Warto też używać ich mówiąc o osobach, których płci nie znamy.
+            Choć w silnie zgenderyzowanym języku polskim jest to względnie trudne do zrobienia
+            i może lekko zmieniać znaczenie zdania,
+            to jednak wcale nie jest niemożliwe.
+        routes: ['unikanie']
+        ideas:
+            -
+                header: 'Zmiana podmiotu zdania'
+                examples:
+                    - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
+                    - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
+                    - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+            -
+                header: 'Strona bierna'
+                examples:
+                    - [ 'zgubił telefon', 'telefon został zgubiony' ]
+                    - [ 'znalazłam telefon', 'telefon został znaleziony' ]
+            -
+                header: 'Forma bezosobowa'
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
+                    - [ 'znalazłam telefon', 'znaleziono telefon' ]
+                    - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+            -
+                header: 'Bezosobowe użycie 3. os. mnogiej'
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi' ]
+            -
+                header: 'Podmiot logiczny w celowniku'
+                examples:
+                    - [ 'przypomniałem sobie', 'przypomniało mi się' ]
+                    - [ 'zmarzłam', 'zrobiło mi się zimno' ]
+                    - [ 'zrobiłem', 'udało mi się zrobić' ]
+            -
+                header: 'Bezokolicznikowy czas przyszły'
+                examples:
+                    - [ 'będę robiła', 'będę robić' ]
+                    - [ 'będę jadł', 'będę jeść' ]
+            -
+                header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
+                examples:
+                    - [ 'gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę' ]
+            -
+                header: 'Imiesłowy'
+                examples:
+                    - [ 'usiadłem na kanapie', 'usiadłszy na kanapie' ]
+                    - [ 'wypiłam herbatę', 'wypiwszy herbatę' ]
+                    - [ 'posprzątałem mieszkanie', 'mieszkanie posprzątane' ]
+            -
+                header: 'Unikanie trybu przypuszczającego'
+                examples:
+                    - [ 'czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?' ]
+                    - [ 'może bym tak pojechała na wakacje?', 'może pojadę na wakacje?' ]
+            -
+                header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
+                examples:
+                    - [ 'zarządca', 'osoba zarządzająca' ]
+                    - [ 'kandydaci i kandydatki', 'osoby kandydujące' ]
+                    - [ 'proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem' ]
+                    - [ 'mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili' ]
+                    - [ 'dziennikarze oko.press', 'redakcja oko.press' ]
+                    - [ 'fani Mariny', 'fandom Mariny' ]
+            -
+                header: 'Skrócone zaimki'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'to dla niego', 'to dlań' ]
+                    - [ 'mieszkam u niej', 'mieszkam uń' ]
+            -
+                header: 'Skrócone zaimki + strona bierna'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'zrobiła', 'było przezeń zrobione' ]
+            -
+                header: 'Staropolska, rzeczownikowa odmiana przymiotników'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'jestem szczęśliwa!', 'jestem szczęśliw!' ]
+                    - [ 'czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?' ]
+            -
+                header: 'Skróty'
+                examples:
+                    - [ 'Katarzyna Nowak', 'K. Nowak' ]
+                    - [ 'Szanowny Pan Białek', 'Sz. P. Białek' ]
+                    - [ 'Towarzyszka Q', 'Tow. Q' ]
+            -
+                header: 'Liczebniki zbiorowe'
+                examples:
+                    - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
     others: 'Pozostałe formy'
 
 pronunciation:
