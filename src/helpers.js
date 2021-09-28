@@ -23,6 +23,7 @@ export const head = ({title, description, banner}) => {
     const meta = { meta: [] };
 
     if (title) {
+        title = clearLinkedText(title);
         title += ' • ' + process.env.TITLE;
         meta.title = title;
         meta.meta.push({ hid: 'og:title', property: 'og:title', content: title });
@@ -30,6 +31,7 @@ export const head = ({title, description, banner}) => {
     }
 
     if (description) {
+        description = clearLinkedText(description);
         meta.meta.push({ hid: 'description', name: 'description', content: description });
         meta.meta.push({ hid: 'og:description', property: 'og:description', content: description });
         meta.meta.push({ hid: 'twitter:description', property: 'twitter:description', content: description });

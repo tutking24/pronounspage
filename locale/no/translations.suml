@@ -79,7 +79,6 @@ pronouns:
     othersRaw: 'andre'
     or: 'eller'
     grammarTable: 'Tabell'
-    avoiding: false
 
 sources:
     header: 'Kilder'

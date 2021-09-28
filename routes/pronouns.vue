@@ -145,7 +145,7 @@
                 </li>
                 <li v-if="config.pronouns.null !== false" class="list-group-item" id="nameself">
                     <p class="h5">
-                        <Spelling :text="config.pronouns.null.description"/>
+                        <LinkedText :text="config.pronouns.null.description"/>
                     </p>
                     <div class="small my-1" v-if="config.pronouns.null.history">
                         <Icon v="info-circle"/>
@@ -175,14 +175,6 @@
                     </p>
                     <p>
                         <T>pronouns.any.description</T>
-                    </p>
-                </li>
-                <li v-if="config.pronouns.avoiding" class="list-group-item">
-                    <p class="h5">
-                        <nuxt-link :to="'/' + config.pronouns.avoiding"><T>pronouns.avoiding.header</T></nuxt-link>
-                    </p>
-                    <p>
-                        <T>pronouns.avoiding.description</T>
                     </p>
                 </li>
             </ul>

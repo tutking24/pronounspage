@@ -27,7 +27,6 @@ pronouns:
         template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
     emoji: false
     slashes: true
-    avoiding: false
     others: 'Other pronouns'
 
 pronunciation:

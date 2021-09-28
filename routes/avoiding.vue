@@ -1,49 +1,30 @@
 <template>
     <div>
         <h2>
-            <T>pronouns.avoiding.header</T>
+            {{ clearLinkedText(config.pronouns.null.description) }}
         </h2>
 
         <p>
-            <T>pronouns.avoiding.description</T>
+            <LinkedText :text="config.pronouns.null.history"/>
         </p>
 
-        <section v-for="idea in $t('pronouns.avoiding.ideas')">
-            <h3>{{idea.header}}</h3>
-            <p v-if="idea.description">
-                {{idea.description}}
-            </p>
-            <ul>
-                <li v-for="[exampleFrom, exampleTo] in idea.examples">
-                    <LinkedText :text="exampleFrom"/> → <strong><LinkedText :text="exampleTo"/></strong>
-                </li>
-            </ul>
-        </section>
-
-        <section v-if="sources && Object.keys(sources).length">
-            <Literature :sources="sources"/>
-        </section>
+        <Avoiding/>
     </div>
 </template>
 
 <script>
-    import {SourceLibrary} from "../src/classes";
-    import { head } from "../src/helpers";
+    import { head, clearLinkedText } from "../src/helpers";
 
     export default {
         data() {
             return {
-                sources: undefined,
-            }
-        },
-        async mounted() {
-            this.sources = {
-                '': new SourceLibrary(await this.$axios.$get(`/sources?pronoun=${this.config.pronouns.avoiding}`)).getForPronoun(this.config.pronouns.avoiding),
+                clearLinkedText
             };
         },
         head() {
             return head({
-                title: this.$t('pronouns.avoiding.header'),
+                title: this.config.pronouns.null.description,
+                description: this.config.pronouns.null.history,
             });
         },
     };
