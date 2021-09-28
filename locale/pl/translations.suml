@@ -307,7 +307,10 @@ nouns:
             - >
                 Znaków zastępujących można używać również dla rzeczowników.
                 Ze względu na popularność form z iksem, prezentujemy je tutaj na przykładzie iksatywów,
-                ale można wymienić „x” na inny placeholder.
+                ale można wymienić „x” na inny placeholder (jak podłoga „_” czy gwiazdka „*”).
+            - >
+                Daje to ciekawe możliwości stylizacji, np.
+                „z zapatyst☆ami”, „z komunist☭ami”, „z anarchistⒶami”, „z kapitalist💲ami”…
             - >
                 Iksatywy pasują gramatycznie do {/onx=form z iksem}, np. „mojx pięknx partnerx przyszłx do domu”.
                 Są nieodmienne.

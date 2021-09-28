@@ -22,7 +22,7 @@ module.exports = [
     new Event('Aniversario de la Sanción de la Ley de Identidad de Género en Argentina', 'Transgender', 5, day(9), EventLevel.Day),
     new Event('Aniversario del {https://es.wikipedia.org/wiki/Baile_de_los_cuarenta_y_uno=Baile de los Cuarenta y Uno} (México)', null, 11, day(18), EventLevel.Day),
     new Event('Día de la Comunidad Muxe (Vela de las Intrépidas)', 'Muxe', 11, day(15), EventLevel.Day),
-        new Event('Día de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.Day),
+    new Event('Día de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.Day),
     new Event('Día de la Prueba del VIH en Personas Transgénero (EE.UU.)', 'Transgender', 4, day(18), EventLevel.Day),
     new Event('Día de la Prueba del VIH (EE.UU.)', null, 6, day(27), EventLevel.Day),
     new Event('Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU.)', null, 2, day(7), EventLevel.Day),
