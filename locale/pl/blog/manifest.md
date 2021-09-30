@@ -3,7 +3,7 @@
 <small>2021-04-20 | [@andrea](/@andrea)</small>
 
 <section>
-    <a href="/docs/Manifest Niebinarnej Polszczyzny.pdf" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/docs-local/Manifest Niebinarnej Polszczyzny.pdf" target="_blank" class="btn btn-outline-primary d-block">
         <span class="fal fa-file-pdf"></span>
         Wersja do ściągnięcia
     </a>
