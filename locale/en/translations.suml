@@ -710,6 +710,8 @@ calendar:
         black_queer_week: 'Black Queer History Week'
         mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African Lesbian and Queer Women''s Pride Day}'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
+        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
+        suicide_prevention_day: 'World Suicide Prevention Day'
 
     banner: 'We''re celebrating'
     image:
