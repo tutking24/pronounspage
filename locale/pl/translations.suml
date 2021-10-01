@@ -1317,6 +1317,8 @@ calendar:
         hate_crime_awareness_week: 'Dzień Świadomości nt. Przestępstw z Nienawiści'
         deaf_awareness_week: 'Dzień Świadomości nt. Głuchych Osób LGBTQ'
         suicide_prevention_day: 'Światowy Dzień Zapobiegania Samobójstwom'
+        suicide_prevention_month: 'Miesiąc Zapobiegania Samobójstwom'
+        aids_awareness_month: 'Miesiąc Świadomości nt. AIDS'
 
     banner: 'Dziś w kalendarzu'
     image:
