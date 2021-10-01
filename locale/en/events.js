@@ -107,18 +107,6 @@ module.exports = [
         }
     }, EventLevel.Day),
 
-    new Event('Hate Crime Awareness Week (UK)', null, 10, function* (monthDays) {
-        let saturdays = 0;
-        for (let d of monthDays) {
-            if (d.dayOfWeek === 6) {
-                saturdays++;
-            }
-            if (saturdays === 2 || (saturdays === 3 && d.dayOfWeek === 6)) {
-                yield d;
-            }
-        }
-    }, EventLevel.Week),
-
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', null, 6, dayYear(16, 2021), EventLevel.Day),
