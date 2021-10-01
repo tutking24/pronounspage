@@ -736,9 +736,6 @@ calendar:
         suicide_prevention_month: 'Monat der Suizidprävention'
         aids_awareness_month: 'AIDS-Bewusstseins-Monat'
 
-
-
-
     banner: 'Heute feiern wir'
     image:
         header: 'Bild herunterladen'
