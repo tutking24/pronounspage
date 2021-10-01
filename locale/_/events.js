@@ -209,4 +209,18 @@ module.exports = [
         }
         yield* weeks[2];
     }), EventLevel.Week),
+
+
+    new Event('hate_crime_awareness_week', null, 10, function* (monthDays) {
+        let saturdays = 0;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 6) {
+                saturdays++;
+            }
+            if (saturdays === 2 || (saturdays === 3 && d.dayOfWeek === 6)) {
+                yield d;
+            }
+        }
+    }, EventLevel.Week),
+
 ];
