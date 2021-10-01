@@ -712,6 +712,8 @@ calendar:
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'World Suicide Prevention Day'
+        suicide_prevention_month: 'Suicide Prevention Month'
+        aids_awareness_month: 'AIDS Awareness Month'
 
     banner: 'We''re celebrating'
     image:
