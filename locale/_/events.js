@@ -224,4 +224,12 @@ module.exports = [
         }
     }, EventLevel.Week),
 
+    // one-off events
+    new Event('deaf_awareness_week', null, 4, function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day >= 11 && d.day <= 17 && d.year === 2021) {
+                yield d;
+            }
+        }
+    }, EventLevel.Week),
 ];
