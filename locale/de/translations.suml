@@ -733,6 +733,11 @@ calendar:
         hate_crime_awareness_week: 'Hassverbrechen Sensibilisierungswoche'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'Welttag der Suizidprävention'
+        suicide_prevention_month: 'Monat der Suizidprävention'
+        aids_awareness_month: 'AIDS-Bewusstseins-Monat'
+
+
+
 
     banner: 'Heute feiern wir'
     image:
