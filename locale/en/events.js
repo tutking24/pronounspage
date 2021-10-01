@@ -110,11 +110,5 @@ module.exports = [
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', null, 6, dayYear(16, 2021), EventLevel.Day),
-    new Event('Deaf LGBTQ Awareness Week', null, 4, function* (monthDays) {
-        for (let d of monthDays) {
-            if (d.day >= 11 && d.day <= 17 && d.year === 2021) {
-                yield d;
-            }
-        }
-    }, EventLevel.Week),
+
 ];
