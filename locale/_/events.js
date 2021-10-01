@@ -6,6 +6,8 @@ module.exports = [
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month),
+    new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
+    new Event('aids_awareness_month', null, 12, month, EventLevel.Month),
 
     // project celebrations
     new Event('zaimki_birthday', null, 7, day(23), EventLevel.Day),
