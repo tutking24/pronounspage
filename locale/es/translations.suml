@@ -747,6 +747,8 @@ calendar:
         hate_crime_awareness_week: 'Semana de Concientización sobre Crímenes de Odio'
         deaf_awareness_week: 'Semana de la Conciencia de los Sordos LGBTQ+'
         suicide_prevention_day: 'Día Mundial para la Prevención del Suicidio'
+        suicide_prevention_month: 'Mes de la Prevención del Suicidio'
+        aids_awareness_month: 'Mes da Concientización sobre el Sida'
 
     banner: 'Hoy celebramos'
     image:
