@@ -562,6 +562,11 @@ links:
             url: 'https://spoti.fi/3DsrA0J'
             headline: 'Język niebinarny dla początkujących'
             extra: ' – Archie w podcaście <strong>Dobrze zrozumieć</strong> w ramach kampanii {http://www.todziala.org=<strong>To działa!</strong>}'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/kulturarownosci/videos/6496303737054192/'
+            headline: 'Nauczyłoś się? Podstawy języka neutralnego'
+            extra: ' – wykład Sybila na Festiwalu Równych Praw 2021, <strong>Kultura Równości</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
