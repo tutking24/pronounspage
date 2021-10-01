@@ -1,6 +1,9 @@
 const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
 module.exports = [
+    // months
+    new Event('{/spis=Niebinary Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month),
+
     // static date
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.Day),
