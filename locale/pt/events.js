@@ -5,6 +5,7 @@ module.exports = [
     // months
     new Event('Mês da Visibilidade Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month),
     new Event('Mês da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month),
+    new Event('Mês da Visibilidade Assexual (Brasil)', 'Asexual', 10, month, EventLevel.Month),
 
     // static date
     new Event('Dia da Igualdade Matrimonial (Portugal)', null, 6, day(5), EventLevel.Day),
