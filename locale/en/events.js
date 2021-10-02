@@ -8,6 +8,7 @@ module.exports = [
     new Event('Trans Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month),
     new Event('Lesbian Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
+    new Event('Asexual Visibility Month (Brasil)', 'Asexual', 10, month, EventLevel.Month),
 
     // static date
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.Day),
