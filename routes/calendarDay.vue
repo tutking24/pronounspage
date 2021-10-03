@@ -1,5 +1,5 @@
 <template>
-    <div v-if="year.eventsByDate[day.toString()]">
+    <div v-if="year.eventsByDate[day.toString()] || basic" :class="basic ? 'py-5' : ''">
         <CommunityNav v-if="!basic"/>
 
         <h2 class="d-flex justify-content-between">
@@ -19,7 +19,7 @@
             <div class="d-flex justify-content-evenly flex-column-reverse flex-md-row align-items-center align-items-md-start">
                 <div class="calendar-month my-3">
                     <h3 class="text-center"><T>calendar.months.{{day.month}}</T></h3>
-                    <Calendar :year="year" :month="day.month" :mark="day"/>
+                    <Calendar :year="year" :month="day.month" :mark="basic ? null : day"/>
                 </div>
                 <div class="calendar-events my-3">
                     <h3><T :params="{day: day.day}">calendar.dates.{{day.month}}</T> {{day.year}}</h3>
@@ -68,7 +68,7 @@
         head() {
             return head({
                 title: this.$t('calendar.headerLong'),
-                banner: `calendar/overview.png`,
+                banner: `calendar/${this.day}.png`,
             });
         },
     };

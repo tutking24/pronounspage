@@ -32,7 +32,7 @@
         </section>
 
         <template v-if="!basic">
-            <CalendarExtra/>
+            <CalendarExtra :year="year"/>
 
             <Support/>
 
@@ -64,9 +64,12 @@
             }
         },
         head() {
+            if (!this.year) {
+                return {};
+            }
             return head({
                 title: this.$t('calendar.headerLong'),
-                banner: `calendar/overview.png`,
+                banner: `calendar/${this.year.year}-overview.png`,
             });
         },
     };
