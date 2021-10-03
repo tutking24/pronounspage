@@ -277,7 +277,6 @@ export default {
                 routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
                 routes.push({ path: '/' + config.calendar.route + '/:year(\\d\\d\\d\\d)', component: resolve(__dirname, 'routes/calendar.vue') });
                 routes.push({ path: '/' + config.calendar.route + '/:year(\\d\\d\\d\\d)-:month(\\d\\d)-:day(\\d\\d)', component: resolve(__dirname, 'routes/calendarDay.vue') });
-                routes.push({ path: '/calendar-wide', component: resolve(__dirname, 'routes/calendarWide.vue') });
             }
 
             if (config.api !== null) {
