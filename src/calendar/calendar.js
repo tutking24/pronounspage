@@ -1,4 +1,4 @@
-const { Day, Calendar, Event, EventLevel, day } = require('./helpers');
+const { Calendar, Event, EventLevel, day } = require('./helpers');
 const internationalEvents = require('../../locale/_/events');
 const localEvents = require('../../data/events');
 
@@ -13,7 +13,8 @@ for (let name in rawNamedays) {
     }
 }
 
-module.exports.currentYear = new Calendar(
-    Day.today().year,
+module.exports.calendar = new Calendar(
     [...internationalEvents, ...localEvents], // TODO , ...namedays
+    2021,
+    2021,
 );

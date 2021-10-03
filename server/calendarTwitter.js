@@ -2,7 +2,7 @@ require('../src/dotenv')();
 const Twitter = require('twitter');
 const Suml = require('suml');
 const fs = require('fs');
-const { currentYear } = require('../src/calendar/calendar');
+const { calendar } = require('../src/calendar/calendar');
 const { Day } = require('../src/calendar/helpers');
 const locales = require('../src/locales');
 
@@ -27,7 +27,7 @@ const getEventName = (name) => {
 
 (async () => {
     const day = Day.today();
-    const events = currentYear.eventsByDate[day.toString()];
+    const events = calendar.getCurrentYear().eventsByDate[day.toString()];
     console.log(events);
 
     if (events === undefined || events.length === 0) {
@@ -45,7 +45,7 @@ const getEventName = (name) => {
     for (let event of events) {
         tweet += ` - ${getEventName(event.name)}\n`;
     }
-    tweet += `\n${domain}/${config.calendar.route}`;
+    tweet += `\n${domain}/${config.calendar.route}/${day}`;
 
     console.log('------------');
     console.log(tweet);

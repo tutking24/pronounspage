@@ -1319,9 +1319,10 @@ calendar:
         suicide_prevention_day: 'Światowy Dzień Zapobiegania Samobójstwom'
         suicide_prevention_month: 'Miesiąc Zapobiegania Samobójstwom'
         aids_awareness_month: 'Miesiąc Świadomości nt. AIDS'
-
     banner: 'Dziś w kalendarzu'
     image:
         header: 'Ściągnij w formie obrazka'
         overview: 'Przegląd'
         labels: 'Etykietki'
+    link: 'Link'
+    full: 'Pełen kalendarz'

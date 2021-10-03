@@ -36,7 +36,8 @@
                 if (current.includes('#')) {
                     current = current.substring(0, current.indexOf('#'));
                 }
-                return current === this.buildRoute(route).replace(/\/$/, '');
+                const expected = this.buildRoute(route).replace(/\/$/, '');
+                return current === expected || current.startsWith(expected + '/');
             },
         },
     }

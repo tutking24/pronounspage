@@ -15,16 +15,17 @@
 </template>
 
 <script>
-    import { currentYear } from '../src/calendar/calendar';
+    import { calendar } from '../src/calendar/calendar';
     import { Day } from '../src/calendar/helpers';
 
     export default {
         props: {
+            day: { 'default': () => Day.today() },
             link: { type: Boolean },
         },
         data() {
             return {
-                events: currentYear.eventsByDate[Day.today().toString()],
+                events: calendar.getCurrentYear().eventsByDate[this.day.toString()],
             }
         }
     }

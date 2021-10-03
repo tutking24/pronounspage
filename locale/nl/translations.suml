@@ -219,7 +219,7 @@ faq:
                     Aangezien we al vragen hoe iemand heet, waarom dan ook niet wat hun voornaamwoorden zijn?
                 - >
                     (Formuleer het alsjeblieft alleen niet als "ben je een jongen of een meisje?"
-                    Die vraag impliceert dat er alleen twee correcte antwoorden zijn 
+                    Die vraag impliceert dat er alleen twee correcte antwoorden zijn
                     en het suggereert dat je een ongezonde nieuwsgierigheid hebt wat betreft de genitaliën van die persoon.
                     In plaats daarvan zou je gewoon kunnen vragen: "Wat zijn je voornaamwoorden?" of "hoe wil je aangesproken worden?")
                 - >
@@ -237,7 +237,7 @@ faq:
             question: 'Worden deze voornaamwoorden überhaupt door iemand gebruikt?'
             answer:
                 - >
-                    Ja! Door miljoenen non-binaire personen over de hele wereld. 
+                    Ja! Door miljoenen non-binaire personen over de hele wereld.
                     Voor elk van de voornaamwoorden dat hier beschreven staat is er iemand die ze ook daadwerkelijk gebruikt in het dagelijks leven.
         authority:
             question: 'Are those nonbinary pronouns approved by some kind of authority?'
@@ -252,7 +252,7 @@ faq:
                     Dictionaries take their time to start including those changes,
                     which doesn't make the change illegitimate in any way.
                     But eventually the new forms, if used often enough, get included in dictionaries.
-                    The American dictionary {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, 
+                    The American dictionary {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster},
                     for example, accepts the use of {/they=singular “they”} as a nonbinary pronoun.
                 - >
                     You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
@@ -637,4 +637,6 @@ flags:
     Trixic: 'Trixisch'
     Two_Spirit: 'Bispiritueel'
     Xenogender: 'Xenogender'
+    link: 'Link' # TODO
+    full: 'Full calendar' # TODO
 

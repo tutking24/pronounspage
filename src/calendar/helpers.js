@@ -1,9 +1,9 @@
 class Day {
     constructor(year, month, day, dayOfWeek) {
-        this.year = year;
-        this.month = month;
-        this.day = day;
-        this.dayOfWeek = dayOfWeek || new Date(year, month - 1, day).getDay() || 7;
+        this.year = parseInt(year);
+        this.month = parseInt(month);
+        this.day = parseInt(day);
+        this.dayOfWeek = dayOfWeek ? parseInt(dayOfWeek) : new Date(this.year, this.month - 1, this.day).getDay() || 7;
     }
 
     static fromDate(date) {
@@ -121,7 +121,7 @@ module.exports.dayYear = function (day, year) {
     return internal;
 }
 
-module.exports.Calendar = class {
+class Year {
     constructor(year, events) {
         this.year = year;
         this.events = events;
@@ -138,5 +138,36 @@ module.exports.Calendar = class {
             if (!this.eventsByDate.hasOwnProperty(date)) { continue; }
             this.eventsByDate[date].sort((a, b) => b.level - a.level);
         }
+    }
+
+    isCurrent() {
+        return this.year === Day.today().year;
+    }
+}
+module.exports.Year = Year;
+
+module.exports.Calendar = class {
+    constructor(events, minYear = 0, maxYear = 9999) {
+        this._events = events;
+        this._minYear = minYear;
+        this._maxYear = maxYear;
+        this._years = {};
+    }
+
+    getYear(year) {
+        year = parseInt(year);
+        if (year < this._minYear || year > this._maxYear) {
+            return null;
+        }
+
+        if (this._years[year] === undefined) {
+            this._years[year] = new Year(year, this._events);
+        }
+
+        return this._years[year];
+    }
+
+    getCurrentYear() {
+        return this.getYear(Day.today().year);
     }
 }
