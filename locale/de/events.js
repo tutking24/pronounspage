@@ -14,3 +14,5 @@ module.exports = [
     new Event('{https://csd-bielefeld.de/=CSD Bielefeld}', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/133873485389727=CSD Erfurt}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
 ];
+new Event('{https://queereprovinz.de/termine/=Queeres Leben statt nationalem Einheitsbrei}, Salzwedel', 'Progress Pride', 10, dayYear(3, 2021), EventLevel.Day),
+];
