@@ -33,17 +33,4 @@ module.exports = [
     new Event('{https://www.facebook.com/events/357900524910000=25ª Parada do Orgulho LGBT de São Paulo} (Brasil)', 'LGBTQ', 6, dayYear(6, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1175941416231293=15ª Parada do Orgulho LGBTI+ de Itaquaquecetuba} (Brasil)', 'LGBTQ', 8, dayYear(28, 2022), EventLevel.Day),
 
-    // dynamic dates
-    new Event('{https://www.facebook.com/assexuaistambemamam/posts/1445145682322334=Semana da Visibilidade e Orgulho Assexual}', 'Asexual', 10, week(function* (monthDays) {
-        let prevBuffer = [];
-        let buffer = [];
-        for (let d of monthDays) {
-            buffer.push(d);
-            if (d.dayOfWeek === 7) {
-                prevBuffer = buffer;
-                buffer = [];
-            }
-        }
-        yield* prevBuffer;
-    }), EventLevel.Week),
 ];
