@@ -1,10 +1,18 @@
 <template>
     <div v-if="year.eventsByDate[day.toString()]">
-        <CommunityNav/>
+        <CommunityNav v-if="!basic"/>
 
-        <h2>
-            <Icon v="calendar-star"/>
-            <T>calendar.headerLong</T> <small class="text-muted">({{day}})</small>
+        <h2 class="d-flex justify-content-between">
+            <span>
+                <Icon v="calendar-star"/>
+                <T>calendar.headerLong</T> <small class="text-muted">({{day}})</small>
+            </span>
+            <span v-if="basic" class="h4 mt-2">
+                <nuxt-link :to="`/${ config.calendar.route }`">
+                    <Icon v="tags"/>
+                    <T>domain</T>/{{ config.calendar.route }}
+                </nuxt-link>
+            </span>
         </h2>
 
         <section>
@@ -22,13 +30,15 @@
             </div>
         </section>
 
-        <CalendarExtra :day="day"/>
+        <template v-if="!basic">
+            <CalendarExtra :day="day"/>
 
-        <Support/>
+            <Support/>
 
-        <section>
-            <Share :title="$t('calendar.header')"/>
-        </section>
+            <section>
+                <Share :title="$t('calendar.header')"/>
+            </section>
+        </template>
     </div>
     <NotFound v-else/>
 </template>
@@ -39,6 +49,9 @@
     import { Day } from '../src/calendar/helpers';
 
     export default {
+        layout({route}) {
+            return route.query.layout === 'basic' ? 'basic' : 'default';
+        },
         data() {
             const day = new Day(
                 this.$route.params.year,
@@ -49,6 +62,7 @@
             return {
                 day,
                 year: calendar.getYear(day.year),
+                basic: this.$route.query.layout === 'basic',
             }
         },
         head() {

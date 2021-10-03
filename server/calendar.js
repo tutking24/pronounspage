@@ -43,7 +43,7 @@ const dumpNameDays = async () => {
 }
 
 (async () => {
-    await shoot('/calendar-wide', `overview`);
-    await shoot('/calendar-wide?labels=true', `labels`);
+    await shoot(`/${config.calendar.route}?layout=basic`, `overview`);
+    await shoot(`/${config.calendar.route}?layout=basic&labels=true`, `labels`);
     await dumpNameDays();
 })();
