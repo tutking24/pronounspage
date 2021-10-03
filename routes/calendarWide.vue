@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div v-if="year">
         <h2 class="d-flex justify-content-between">
             <span>
                 <Icon v="calendar-star"/>
-                <T>calendar.headerLong</T> ({{year}})
+                <T>calendar.headerLong</T> <small class="text-muted">({{year.year}})</small>
             </span>
             <span class="h4 mt-2">
                 <nuxt-link to="/">
@@ -21,16 +21,20 @@
             </div>
         </section>
     </div>
+    <NotFound v-else/>
 </template>
 
 <script>
     import { head } from "../src/helpers";
+    import {calendar} from "@/src/calendar/calendar";
 
     export default {
         layout: 'basic',
         data() {
             return {
-                year: new Date().getFullYear(),
+                year: this.$route.params.year
+                    ? calendar.getYear(this.$route.params.year)
+                    : calendar.getCurrentYear(),
                 labels: this.$route.query.labels === 'true',
             }
         },

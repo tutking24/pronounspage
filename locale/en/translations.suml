@@ -720,3 +720,5 @@ calendar:
         header: 'Download an image'
         overview: 'Overview'
         labels: 'Labels'
+    link: 'Link'
+    full: 'Full calendar'
