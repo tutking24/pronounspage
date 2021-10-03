@@ -1,3 +1,5 @@
+const md5 = require("js-md5");
+
 class Day {
     constructor(year, month, day, dayOfWeek) {
         this.year = parseInt(year);
@@ -169,5 +171,27 @@ module.exports.Calendar = class {
 
     getCurrentYear() {
         return this.getYear(Day.today().year);
+    }
+
+    *getAllYears() {
+        for (let y = this._minYear; y <= this._maxYear; y++) {
+            yield this.getYear(y);
+        }
+    }
+
+    buildSummary() {
+        const summary = {};
+        for (let year of this.getAllYears()) {
+            for (let month = 1; month <= 12; month++) {
+                for (let day of iterateMonth(year.year, month)) {
+                    const events = [];
+                    for (let event of year.eventsByDate[day.toString()] || []) {
+                        events.push(event.name);
+                    }
+                    summary[day.toString()] = md5(JSON.stringify(events));
+                }
+            }
+        }
+        return summary;
     }
 }

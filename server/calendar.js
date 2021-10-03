@@ -4,6 +4,8 @@ const Pageres = require('pageres');
 const fs  = require('fs');
 const dbConnection = require('./db');
 const Suml = require('suml');
+const { calendar } = require('../src/calendar/calendar');
+const md5 = require('js-md5');
 
 const loadSuml = name => new Suml().parse(fs.readFileSync(`./data/${name}.suml`).toString());
 const config = loadSuml('config');
@@ -43,7 +45,25 @@ const dumpNameDays = async () => {
 }
 
 (async () => {
-    await shoot(`/${config.calendar.route}?layout=basic`, `overview`);
-    await shoot(`/${config.calendar.route}?layout=basic&labels=true`, `labels`);
+    const prevPath = `${__dirname}/../cache/calendar.json`
+    const prev = fs.existsSync(prevPath) ? JSON.parse(fs.readFileSync(prevPath)) : {};
+
+    const current = calendar.buildSummary();
+    const changedYears = new Set();
+    for (let day in current) {
+        if (!current.hasOwnProperty(day)) { continue; }
+        if (current[day] !== prev[day]) {
+            await shoot(`/${config.calendar.route}/${day}?layout=basic`, `${day}`);
+            changedYears.add(day.substring(0, 4));
+        }
+    }
+
+    for (let year of changedYears) {
+        await shoot(`/${config.calendar.route}/${year}?layout=basic`, `${year}-overview`);
+        await shoot(`/${config.calendar.route}/${year}?layout=basic&labels=true`, `${year}labels`);
+    }
+
+    fs.writeFileSync(prevPath, JSON.stringify(current, null, 4));
+
     await dumpNameDays();
 })();

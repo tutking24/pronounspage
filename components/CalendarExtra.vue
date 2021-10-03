@@ -25,12 +25,18 @@
                 <p class="mb-0">
                     <T>calendar.image.header</T>:
                 </p>
-                <p class="mb-0">
-                    <a href="/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                <p class="mb-0" v-if="day">
+                    <a :href="`/calendar/${day}.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
                         <Icon v="image"/>
                         <T>calendar.image.overview</T>
                     </a>
-                    <a href="/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                </p>
+                <p class="mb-0" v-else>
+                    <a :href="`/calendar/${year.year}-overview.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                        <Icon v="image"/>
+                        <T>calendar.image.overview</T>
+                    </a>
+                    <a :href="`/calendar/${year.year}-labels.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
                         <Icon v="image"/>
                         <T>calendar.image.labels</T>
                     </a>
@@ -44,6 +50,7 @@
     export default {
         props: {
             day: {},
+            year: {},
         }
     }
 </script>
