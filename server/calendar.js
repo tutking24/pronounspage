@@ -7,7 +7,7 @@ const Suml = require('suml');
 const { calendar } = require('../src/calendar/calendar');
 const md5 = require('js-md5');
 
-const loadSuml = name => new Suml().parse(fs.readFileSync(`./data/${name}.suml`).toString());
+const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const config = loadSuml('config');
 
 const shoot = async (url, filename) => {
