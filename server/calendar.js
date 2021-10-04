@@ -12,6 +12,8 @@ const config = loadSuml('config');
 
 const dir = `${__dirname}/../static/calendar`;
 
+const force = process.argv[2] === '-f' || process.argv[2] === '--force'
+
 const shoot = async (url, filename) => {
     const pr = new Pageres({
         delay: 3,
@@ -54,11 +56,11 @@ const dumpNameDays = async () => {
     for (let day in current) {
         if (!current.hasOwnProperty(day)) { continue; }
         const year = day.substring(0, 4);
-        if (current[day] !== prev[day] || !fs.existsSync(`${dir}/${day}.png`)) {
+        if (current[day] !== prev[day] || !fs.existsSync(`${dir}/${day}.png`) || force) {
             await shoot(`/${config.calendar.route}/${day}?layout=basic`, `${day}`);
             changedYears.add(year);
         }
-        if (!fs.existsSync(`${dir}/${year}-overview.png`) || !fs.existsSync(`${dir}/${year}-labels.png`)) {
+        if (!fs.existsSync(`${dir}/${year}-overview.png`) || !fs.existsSync(`${dir}/${year}-labels.png`) || force) {
             changedYears.add(year);
         }
     }
