@@ -10,6 +10,8 @@ const md5 = require('js-md5');
 const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const config = loadSuml('config');
 
+const dir = `${__dirname}/../static/calendar`;
+
 const shoot = async (url, filename) => {
     const pr = new Pageres({
         delay: 3,
@@ -17,7 +19,6 @@ const shoot = async (url, filename) => {
     });
     pr.src(process.env.BASE_URL + url, ['1500x300']);
     for (let buffer of await pr.run()) {
-        const dir = `${__dirname}/../static/calendar`;
         fs.mkdirSync(dir, {recursive: true})
         const target = `${dir}/${filename}.png`;
         console.log(target);
@@ -52,15 +53,19 @@ const dumpNameDays = async () => {
     const changedYears = new Set();
     for (let day in current) {
         if (!current.hasOwnProperty(day)) { continue; }
-        if (current[day] !== prev[day]) {
+        const year = day.substring(0, 4);
+        if (current[day] !== prev[day] || !fs.existsSync(`${dir}/${day}.png`)) {
             await shoot(`/${config.calendar.route}/${day}?layout=basic`, `${day}`);
-            changedYears.add(day.substring(0, 4));
+            changedYears.add(year);
+        }
+        if (!fs.existsSync(`${dir}/${year}-overview.png`) || !fs.existsSync(`${dir}/${year}-labels.png`)) {
+            changedYears.add(year);
         }
     }
 
     for (let year of changedYears) {
         await shoot(`/${config.calendar.route}/${year}?layout=basic`, `${year}-overview`);
-        await shoot(`/${config.calendar.route}/${year}?layout=basic&labels=true`, `${year}labels`);
+        await shoot(`/${config.calendar.route}/${year}?layout=basic&labels=true`, `${year}-labels`);
     }
 
     fs.writeFileSync(prevPath, JSON.stringify(current, null, 4));
