@@ -15,7 +15,7 @@
             </span>
         </h2>
 
-        <CalendarBanner v-if="year.isCurrent()"/>
+        <CalendarBanner v-if="!basic && year.isCurrent()"/>
 
         <section v-if="basic" class="row pb-4">
             <div v-for="i in 12" class="col-12 col-lg-3 py-3">
