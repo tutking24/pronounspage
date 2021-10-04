@@ -19,7 +19,7 @@
             <div class="d-flex justify-content-evenly flex-column-reverse flex-md-row align-items-center align-items-md-start">
                 <div class="calendar-month my-3">
                     <h3 class="text-center"><T>calendar.months.{{day.month}}</T></h3>
-                    <Calendar :year="year" :month="day.month" :mark="basic ? null : day"/>
+                    <Calendar :year="year" :month="day.month" :mark="day"/>
                 </div>
                 <div class="calendar-events my-3">
                     <h3><T :params="{day: day.day}">calendar.dates.{{day.month}}</T> {{day.year}}</h3>
