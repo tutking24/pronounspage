@@ -16,6 +16,7 @@ module.exports = [
     new Event('Aniversário da morte de Marielle Franco', null, 3, day(14), EventLevel.Day),
     new Event('Aniversário da Nova Lei de Identidade de Género (Portugal)', null, 4, day(14), EventLevel.Day),
     new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day),
+    new Event('Dia Latinx da Conscientização sobre o VIH/HIV (EUA)', null, 10, day(15), EventLevel.Day),
 
     // one-off events
     new Event('{https://dezanove.pt/marcha-orgulho-lgbti-leiria-marcha-a-2-1523945=1ª Marcha do Orgulho LGBTI+ de Leiria} (Portugal)', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
