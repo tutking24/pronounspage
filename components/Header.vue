@@ -284,7 +284,8 @@
             isActiveRoute(link) {
                 return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
-                    || (link.extra || []).includes(decodeURIComponent(this.$route.path));
+                    || (link.extra || []).includes(decodeURIComponent(this.$route.path))
+                    || (link.extra || []).filter(x => x && decodeURIComponent(this.$route.path).startsWith(x + '/')).length;
             },
             documentClicked() {
                 if (this.hamburgerActive) {
