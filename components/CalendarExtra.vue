@@ -5,7 +5,7 @@
                 <p class="mb-0">
                     <T>calendar.full</T>:
                 </p>
-                <nuxt-link :to="`/${config.calendar.route}/${day.year}`" class="btn btn-outline-primary m-1">
+                <nuxt-link :to="`/${config.calendar.route}/${day.year}`" class="btn btn-primary m-1">
                     <Icon v="calendar-star"/>
                     {{ day.year }}
                 </nuxt-link>

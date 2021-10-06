@@ -5,7 +5,8 @@
         <h2 class="d-flex justify-content-between">
             <span>
                 <Icon v="calendar-star"/>
-                <T>calendar.headerLong</T> <small class="text-muted">({{day}})</small>
+                <nuxt-link :to="`/${config.calendar.route}`"><T>calendar.headerLong</T></nuxt-link>
+                <small class="text-muted">({{day}})</small>
             </span>
             <span v-if="basic" class="h4 mt-2">
                 <nuxt-link :to="`/${ config.calendar.route }`">
