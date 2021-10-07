@@ -9,7 +9,7 @@ module.exports = [
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.Day),
     new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.Day),
     new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day),
-    new Event('Dzień Widoczności Osób LGBT w Rosji', 'LGBTQ', 10, day(7), EventLevel.Day),
+    new Event('Dzień Widoczności Osób LGBTQ w Rosji', 'LGBTQ', 10, day(7), EventLevel.Day),
 
     // one-off events
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
