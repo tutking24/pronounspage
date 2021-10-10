@@ -417,7 +417,7 @@ profile:
         Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
         eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
         eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self").
-        Du kan også bruke {/pronouns#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
+        Du kan også bruke {/pronomen#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
     pronounsNotFound: 'Kjenner ikke igjen formatet. Vennligst sjekk ut instruksjonene over.'
     words: 'Ord'
     birthday: 'Alder'

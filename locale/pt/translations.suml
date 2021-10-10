@@ -421,7 +421,7 @@ profile:
     pronounsInfo: >
         Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
         ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
-        Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+        Também pode ser utilizado {/pronomes#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
     pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
     words: 'Palavras'
     birthday: 'Idade'

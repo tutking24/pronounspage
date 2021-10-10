@@ -418,7 +418,7 @@ profile:
     pronounsInfo: >
         Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
         ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
-        Vous pouvez également utiliser {/pronouns#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
+        Vous pouvez également utiliser {/pronoms#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
     pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
     birthday: ' ge'

@@ -424,7 +424,7 @@ profile:
     pronounsInfo: >
         Puedes introducir un <strong>pronombre</strong> (p. ej. “elle” o “ella”)
         o un <strong>enlace</strong> (“http://es.pronouns.page/ellx”).
-        Puedes también usar el {/pronouns#generator=<strong>generador</strong>} para rellenar las oraciones con formas personalizadas.
+        Puedes también usar el {/pronombres#generator=<strong>generador</strong>} para rellenar las oraciones con formas personalizadas.
     pronounsNotFound: 'Formato no reconocido. Por favor consulte las instrucciones de arriba.'
     words: 'Palabras'
     birthday: 'Edad'
