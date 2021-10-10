@@ -406,7 +406,7 @@ profile:
         Je kunt een <strong>voornaamwoord</strong> (bijv. “die” of “zij/haar”)
         of een <strong>link</strong> (bijv. “http://nl.pronouns.page/zem”)
         of <strong>vijf eigen vormen</strong> (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.
-        Je kunt ook de {/pronouns#generator=<strong>generator</strong>} gebruiken om jouw eigen aangepaste voornaamwoorden in een zin te gebruiken.
+        Je kunt ook de {/voornaamwoorden#generator=<strong>generator</strong>} gebruiken om jouw eigen aangepaste voornaamwoorden in een zin te gebruiken.
     pronounsNotFound: 'Onherkende indeling. Check aub de instructies hierboven.'
     words: 'Woorden'
     birthday: 'Leeftijd'
