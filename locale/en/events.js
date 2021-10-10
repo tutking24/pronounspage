@@ -50,7 +50,7 @@ module.exports = [
     new Event('Day of Activism for Sexual Diversity (Argentina)', 'LGBTQ', 8, day(20), EventLevel.Day),
     new Event('Trans Rights Day (Argentina)', 'Transgender', 3, day(18), EventLevel.Day),
     new Event('Nonbinary People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.Day),
-    new Event('LGBT Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day),
+    new Event('LGBTQ Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
