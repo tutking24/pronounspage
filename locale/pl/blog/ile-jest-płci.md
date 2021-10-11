@@ -31,16 +31,24 @@ Więc skupmy się raczej na płciach istniejących gdzie indziej niż na papierk
 Wbrew pozorom „płeć biologiczna” nie jest ani prosta, ani jednoznaczna.
 Składa się na nią wiele cech fizycznych, które choć przeważnie są ze sobą zgodne, to jednak wcale nie muszą:
 
-- chromosomy (jest duuużo więcej opcji niż kariotyp 46 XX i 46 XY)
-- gonady (jądra, jajniki, gonady o utkaniu mieszanym, jeden jajnik i jedno jądro, dysgenezja gonad, …)
-- wewnętrzne narządy (jajowody, nasieniowody, macica, …)
-- zewnętrzne genitalia
-- trzeciorzędowe cechy płciowe (biust, zarost na twarzy, wysokość głosu, jabłko Adama, …)
+- [chromosomy](/terminologia#płeć%20chromosomalna) (jest duuużo więcej opcji niż kariotyp 46 XX i 46 XY)
+- [gonady](/terminologia#płeć%20gonadalna) (jądra, jajniki, gonady o utkaniu mieszanym, jeden jajnik i jedno jądro, dysgenezja gonad, …)
+- [wewnętrzne narządy](/terminologia#płeć%20gonadoforyczna) (jajowody, nasieniowody, macica, …)
+- [zewnętrzne genitalia](/terminologia#płeć%20zewnętrznych%20narządów%20płciowych)
+- [trzeciorzędowe cechy płciowe](/terminologia#p%C5%82e%C4%87%20fenotypowa) (biust, zarost na twarzy, wysokość głosu, jabłko Adama, …)
 
 Możesz więc na przykład być mężczyzną z genotypem XX, którego rozwój płciowy został zdeterminowany przez gen SRY
 przeniesiony na chromosom X – i nawet o tym nie wiedzieć! Istnieją osoby [interpłciowe](/terminologia#interpłciowość),
 osoby, których genitalia nie są jednoznaczne,
 osoby, których trzeciorzędowe cechy płciowe „nie zgadzają się” z wewnętrznymi narządami, etc. etc.
+
+Często słyszymy, że „interpłciowość to aberracja, zaburzeni”, i że „fakt iż część osób wykracza poza normę, nie sprawia, że norma nie istnieje”.
+Ale interpłciowe ciała nie są „zaburzone”, są po prostu mniej typowe niż ciała osób diadycznych (=nie-interpłciowych).
+Jak pokazują badania
+([Raport organizacji Human Rights Watch (USA)](https://www.hrw.org/report/2017/07/25/i-want-be-nature-made-me/medically-unnecessary-surgeries-intersex-children-us),
+[Raport Suryi Monro et al. (UK)](http://eprints.hud.ac.uk/id/eprint/33535/))
+to sam fakt postrzegania interpłciowości jako zaburzenia i próby jej „leczenia” (przez niekonsensualne interwencje medyczne)
+oraz poczucie wstydu i wyobcowania, które w interpłciowych osobach wzbudza otoczenie, jest źródłem cierpienia, nie sama interpłciowość.
 
 „Są dwie płci, to _podstawowa_ biologia!” – no może i tak,
 ale tylko jeśli zakończysz swoją edukację biologiczną na absolutnych _podstawach_.
@@ -90,7 +98,8 @@ Zawiera ona na przykład:
 
 „Cis” jest po prostu skróconym zapisem słowa „cisgender” – oznaczającego po prostu
 „takiej samej płci, jaka komuś została przypisana przy urodzeniu”.
-Między „woman” i „female” oraz „man” i „male” różnica jest bardziej gramatyczna niż semantyczna.
+Między „woman” i „female” oraz „man” i „male” różnica bardziej niż w semantyce jest w stylistyce i gramatyce
+(jedno to rzeczownik, drugie przymiotnik, choć to się powoli zaciera).
 Krótko mówiąc – wszystkie powyższe „płci” to po prostu doprecyzowanie oraz alternatywne sposoby zapisu
 dostępnych tam już wcześniej, nie-customowych płci: „kobieta” i „mężczyzna”.
 
@@ -100,7 +109,7 @@ albo „Transgender” albo przestarzałego terminu „Transsexual”.
 Są też dostępne labelki skupiające się bardziej na tranzycji niż tożsamości
 „Female to Male”, „FTM”, „Male to Female”, „MTF”.
 
-Przykładowo, w przypadku hipotetycznego transpłciowego mężczyzny doliczyłom się, że ma wybór sprośród dziewiętnastu (!) bliskoznacznych etykietek
+Przykładowo, w przypadku hipotetycznego transpłciowego mężczyzny można doliczyć się, że ma wybór sprośród dziewiętnastu (!) bliskoznacznych etykietek
 (Female to Male, FTM, Trans, Trans\*, Trans Male, Trans\* Male, Trans Man, Trans\* Man, Trans Person, Trans\* Person, Transgender, Transgender Male, Transgender Man, Transgender Person, Transmasculine, Transsexual, Transsexual Male, Transsexual Man, Transsexual Person).
 Ale czy to znaczy, że wg Facebooka ta jedna osoba ma 19 płci? No właśnie.
 
