@@ -741,5 +741,5 @@ calendar:
         header: 'Bild herunterladen'
         overview: 'Überschau'
         labels: 'Etiketten'
-    link: 'Link' # TODO
-    full: 'Full calendar' # TODO
+    link: 'Link'
+    full: 'Ganzer Kalender' 
