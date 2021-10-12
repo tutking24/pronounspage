@@ -167,7 +167,7 @@ w której mogłyby się odnaleźć.
 
 Dla analogii…
 Czy sensowne byłoby pytanie, „ile jest _kategorii_ liczb”? 
-Owszem, możesz powiedzieć, że dwa: parzyste i nieparzyste –
+Owszem, możesz powiedzieć, że dwie: parzyste i nieparzyste –
 ale pokażesz tym braki w wiedzy matematycznej wykraczającej poza trzecią klasę podstawówki;
 istnieją przecież ułamki, liczby niewymierne, liczby zespolone, i wiele innych…
 
