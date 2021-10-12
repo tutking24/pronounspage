@@ -1,6 +1,6 @@
 # Ile jest płci?
 
-<small>2021-10-11 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
+<small>2021-10-12 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
 
 Ile jest płci?
 
@@ -78,7 +78,7 @@ być może, gdyby nie kolonializm, byłaby dziś na świecie w mniejszości.
 ## Facebook i jego 56 płci
 
 W 2014 roku Facebook, chcąc być bardziej inkluzywnym niż tylko binarny podział kobieta-mężczyzna,
-[pozwolił na wybór pola „płeć” z większej liczby opcji niż 56](https://theweek.com/articles/450873/facebook-offers-users-56-new-gender-options-heres-what-mean).
+[pozwolił na wybór pola „płeć” z większej liczby opcji](https://theweek.com/articles/450873/facebook-offers-users-56-new-gender-options-heres-what-mean).
 
 Nie trzeba wiedzieć wiele o płci i transpłciowości, by zauważyć,
 że [lista ta](https://slate.com/technology/2014/02/facebook-custom-gender-options-here-are-all-56-custom-options.html)
