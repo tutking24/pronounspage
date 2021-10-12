@@ -99,7 +99,9 @@ Zawiera ona na przykład:
 „Cis” jest po prostu skróconym zapisem słowa „cisgender” – oznaczającego po prostu
 „takiej samej płci, jaka komuś została przypisana przy urodzeniu”.
 Między „woman” i „female” oraz „man” i „male” różnica bardziej niż w semantyce jest w stylistyce i gramatyce
-(jedno to rzeczownik, drugie przymiotnik, choć to się powoli zaciera).
+(jedno to rzeczownik, drugie przymiotnik, choć to się powoli zaciera;
+„female” użyte jako rzeczownik może mieć pogardliwy wydźwięk,
+ze względu na popularność wśród [TERFów](/terminologia#terf) i [inceli](https://en.wikipedia.org/wiki/Incel)).
 Krótko mówiąc – wszystkie powyższe „płci” to po prostu doprecyzowanie oraz alternatywne sposoby zapisu
 dostępnych tam już wcześniej, nie-customowych płci: „kobieta” i „mężczyzna”.
 
