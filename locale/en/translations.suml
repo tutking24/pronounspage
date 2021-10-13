@@ -515,7 +515,7 @@ profile:
     card:
         link: 'Card picture'
         generate: 'Generate'
-        generating: 'Generation in progress…'
+        generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
 
 share: 'Share'
