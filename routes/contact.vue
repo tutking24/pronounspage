@@ -15,6 +15,11 @@
         </section>
 
         <section class="small">
+            <p v-if="$t('contact.technical', {}, false)">
+                <Icon v="cogs"/>
+                <T>contact.technical</T>
+            </p>
+
             <p>
                 <Icon v="language"/>
                 <T>localise.long</T>
