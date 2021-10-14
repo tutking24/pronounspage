@@ -237,6 +237,19 @@ links:
                 są poprawne, zgodne z systemem językowym.
         -
             icon: 'comment-alt-edit'
+            url: 'https://pts-seksuologia.pl/sites/strona/83/stanowisko-pts-ws-sytuacji-spolecznej-zdrowotnej-i-prawnej-osob-transplciowych'
+            headline: 'Stanowisko Polskiego Towarzystwa Seksuologicznego ws. sytuacji społecznej, zdrowotnej i prawnej osób transpłciowych'
+            quote: >
+                Na jakość życia osób transpłciowych silnie wpływa sposób, w jaki odnoszą się do nich inni.
+                Ich doświadczenia w relacjach społecznych wyraźnie pokazują, jak ważne jest poszanowanie potrzeby każdego człowieka,
+                by zwracano się do niego zgodnie z przeżywaną tożsamością, w tym tożsamością płciową.
+                Dotyczy to między innymi przyjętej przez daną osobę formy imienia, form rodzajowych wypowiadanych wobec niej zdań,
+                a także zwracania się do niej zwrotami typowymi wobec płci, w której psychologicznie funkcjonuje.
+                \[…]
+                Tożsamość płciowa – pojęcie to rozumiemy jako poczucie przynależności osoby do określonej płci,
+                przeżywanie i identyfikowanie siebie jako kobiety, mężczyzny albo osoby innej płci.
+        -
+            icon: 'comment-alt-edit'
             lang: ['en']
             url: 'https://anglica-journal.com/resources/html/article/details?id=207730'
             headline: 'Misgendered in Translation?: Genderqueerness in Polish Translations of English-language Television Series'
