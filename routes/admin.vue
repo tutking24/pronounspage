@@ -88,8 +88,8 @@
 
         <section>
             <Icon v="id-card"/>
-            Images generated:
-            {{ (stats.cards * 100).toFixed(2) }}%
+            Cards in queue for generation:
+            {{ stats.cardsQueue }}
         </section>
 
         <section v-if="$isGranted('users')">
