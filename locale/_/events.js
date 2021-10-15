@@ -48,7 +48,7 @@ module.exports = [
     new Event('orlando_day', null, 6, day(12), EventLevel.Day),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender']),
     new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual']),
-    new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man']),
+    new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual']),
     new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.Day),
     new Event('black_ribbon_day', null, 8, day(23), EventLevel.Day),
