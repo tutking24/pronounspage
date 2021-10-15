@@ -3,7 +3,7 @@ const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/h
 module.exports = [
     // months
     new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month),
-    new Event('trans_month', 'Transgender', 11, month, EventLevel.Month),
+    new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month),
     new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
@@ -13,7 +13,7 @@ module.exports = [
     new Event('zaimki_birthday', null, 7, day(23), EventLevel.Day),
 
     // static date
-    new Event('agender_day', 'Agender', 5, day(19), EventLevel.Day),
+    new Event('agender_day', 'Agender', 5, day(19), EventLevel.Day, ['agender']),
     new Event('asexuality_day', 'Asexual', 4, day(6), EventLevel.Day),
     new Event('bisexuality_day', 'Bisexual', 9, day(23), EventLevel.Day),
     new Event('drag_day', '-Drag', 7, day(16), EventLevel.Day),
@@ -23,7 +23,7 @@ module.exports = [
     new Event('lesbian_day', 'Lesbian', 10, day(8), EventLevel.Day),
     new Event('lesbian_visibility_day', 'Lesbian', 4, day(26), EventLevel.Day),
     new Event('coming_out_day', null, 10, day(11), EventLevel.Day),
-    new Event('nonbinary_day', 'Nonbinary', 7, day(14), EventLevel.Day),
+    new Event('nonbinary_day', 'Nonbinary', 7, day(14), EventLevel.Day, ['nonbinary']),
     new Event('pan_day', 'Pansexual', 5, day(24), EventLevel.Day),
     new Event('trans_remembrance_day', 'Transgender', 11, day(20), EventLevel.Day),
     new Event('trans_visibility_day', 'Transgender', 3, day(31), EventLevel.Day),
@@ -135,7 +135,7 @@ module.exports = [
             }
             buffer.push(d);
         }
-    }), EventLevel.Week),
+    }), EventLevel.Week, ['nonbinary']),
 
     new Event('gay_uncles_day', 'Gay_', 8, function* (monthDays) {
         let sundays = 0;
