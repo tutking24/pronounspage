@@ -751,6 +751,10 @@ calendar:
         aids_awareness_month: 'Mes da Concientización sobre el Sida'
 
     banner: 'Hoy celebramos'
+    celebrating_custom: 'se celebra'
+    celebrating_day: 'se celebra el'
+    celebrating_week: 'se celebra el'
+    celebrating_month: 'se celebra en'
     image:
         header: 'Descargar una imagen'
         overview: 'Vista general'
