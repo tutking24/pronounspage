@@ -13,6 +13,22 @@
             <LinkedText :text="p" noicons/>
         </p>
 
+        <ul class="list-inline">
+            <li v-for="category in term.categories" class="list-inline-item">
+                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
+                    {{category}}
+                </a>
+                <span v-else="" class="badge bg-primary text-white">
+                    {{category}}
+                </span>
+            </li>
+        </ul>
+
+        <p v-if="flags && (term.flags.length || term.images.length)" class="text-center">
+            <img v-for="flag in term.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
+            <img v-for="image in term.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
+        </p>
+
         <div v-if="config.calendar.enabled && events && events.length" class="alert">
             <p class="mb-2">
                 <Icon v="calendar-star"/>
@@ -41,22 +57,6 @@
                 </li>
             </ul>
         </div>
-
-        <ul class="list-inline">
-            <li v-for="category in term.categories" class="list-inline-item">
-                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
-                    {{category}}
-                </a>
-                <span v-else="" class="badge bg-primary text-white">
-                    {{category}}
-                </span>
-            </li>
-        </ul>
-
-        <p v-if="flags && (term.flags.length || term.images.length)" class="text-center">
-            <img v-for="flag in term.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
-            <img v-for="image in term.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
-        </p>
 
         <div v-if="versions && term.versions.length" class="my-3 mx-2">
             <p>
