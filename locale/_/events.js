@@ -3,7 +3,7 @@ const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/h
 module.exports = [
     // months
     new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month),
-    new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
+    new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender', 'trans man', 'trans woman', 'transneutral']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month), ['aromantic']),
     new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
