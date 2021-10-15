@@ -748,6 +748,10 @@ calendar:
         aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
 
     banner: 'Hoje celebramos'
+    celebrating_custom: 'celebra-se'
+    celebrating_day: 'celebra-se em'
+    celebrating_week: 'celebra-se em'
+    celebrating_month: 'celebra-se em'
     image:
         header: 'Baixar uma imagem'
         overview: 'Visão geral'
