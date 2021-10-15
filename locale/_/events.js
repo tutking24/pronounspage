@@ -4,7 +4,7 @@ module.exports = [
     // months
     new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender', 'trans man', 'trans woman', 'transneutral']),
-    new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month),
+    new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month), ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month), ['aromantic']),
     new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
     new Event('aids_awareness_month', null, 12, month, EventLevel.Month),
@@ -31,11 +31,11 @@ module.exports = [
     new Event('polyamory_day', 'Polyamorous', 11, day(23), EventLevel.Day), ['polyamory']),
     new Event('homophobia_sport', null, 2, day(19), EventLevel.Day), ['homophobia']),
     new Event('lgbtq_stem', null, 11, day(18), EventLevel.Day),
-    new Event('trans_depathologization', 'Transgender', 10, day(22), EventLevel.Day), ['transgender']),
+    new Event('trans_depathologization', 'Transgender', 10, day(22), EventLevel.Day), ['transgender', 'trans man', 'trans woman', 'transneutral']),
     new Event('lgbti_book_day', 'LGBTQ', 4, day(1), EventLevel.Day),
     new Event('human_rights_day', null, 12, day(10), EventLevel.Day),
     new Event('nonbinary_parents_day', 'Nonbinary', 4, day(18), EventLevel.Day), ['nonbinary']),
-    new Event('trans_prisoner', 'Transgender', 1, day(22), EventLevel.Day), ['transgender']),
+    new Event('trans_prisoner', 'Transgender', 1, day(22), EventLevel.Day), ['transgender', 'trans man', 'trans woman', 'transneutral']),
     new Event('xenogender_day', 'Xenogender', 5, day(15), EventLevel.Day), ['xenogender']),
     new Event('genderqueer_day', 'Genderqueer', 4, day(25), EventLevel.Day), ['genderqueer']),
     new Event('genderfluid_day', 'Genderfluid', 6, day(16), EventLevel.Day), ['genderfluid']),
@@ -116,7 +116,7 @@ module.exports = [
                 return;
             }
         }
-    }, true)), ['transgender']),
+    }, true)), ['transgender', 'trans man', 'trans woman', 'transneutral']),
 
     new Event('nonbinary_week', 'Nonbinary', 7, week(function* (monthDays) {
         let buffer = [];
