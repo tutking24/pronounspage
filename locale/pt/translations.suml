@@ -169,6 +169,10 @@ nouns:
 
     image: 'Imagem'
 
+community:
+    header: 'Comunidade'
+    headerLong: 'Comunidade queer'
+
 terminology:
     header: 'Terminologia'
     headerLong: 'Dicionário de terminologia queer'
