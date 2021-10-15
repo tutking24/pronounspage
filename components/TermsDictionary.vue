@@ -39,7 +39,7 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td class="cell-wide">
-                    <Term :term="s.el" categoryLink flags versions :events="year.eventsByTerm[s.el.key]"/>
+                    <Term :term="s.el" categoryLink flags versions :events="year.eventsByTerm[s.el.key]" @filter="setFilter"/>
 
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>

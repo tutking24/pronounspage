@@ -15,10 +15,10 @@
 
         <ul class="list-inline">
             <li v-for="category in term.categories" class="list-inline-item">
-                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
+                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="$emit('filter', ':' + category)">
                     {{category}}
                 </a>
-                <span v-else="" class="badge bg-primary text-white">
+                <span v-else class="badge bg-primary text-white">
                     {{category}}
                 </span>
             </li>
