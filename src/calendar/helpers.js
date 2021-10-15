@@ -23,6 +23,11 @@ class Day {
     toString() {
         return `${this.year}-${this.month.toString().padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
     }
+
+    // for comparisons
+    toInt() {
+        return parseInt(`${this.year}${this.month.toString().padStart(2, '0')}${this.day.toString().padStart(2, '0')}`);
+    }
 }
 module.exports.Day = Day;
 
@@ -152,6 +157,10 @@ class Year {
                 if (this.eventsByTerm[term] === undefined) { this.eventsByTerm[term] = []; }
                 this.eventsByTerm[term].push(event);
             }
+        }
+        for (let term in this.eventsByTerm) {
+            if (!this.eventsByTerm.hasOwnProperty(term)) { continue; }
+            this.eventsByTerm[term].sort((a, b) => a.getDays(this.year)[0].toInt() - b.getDays(this.year)[0].toInt())
         }
     }
 
