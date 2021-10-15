@@ -174,6 +174,10 @@ nouns:
 
     image: 'Picture'
 
+community:
+    header: 'Community'
+    headerLong: 'Queer community'
+
 terminology:
     header: 'Terminology'
     headerLong: 'Dictionary of queer terminology'

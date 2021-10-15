@@ -106,11 +106,15 @@ nouns:
     submit: true
     templates: true
 
+community:
+    route: 'terminology'
+
 inclusive:
     enabled: false
 
 terminology:
     enabled: true
+    published: true
     categories:
         - 'sexual orientation'
         - 'romantic orientation'
