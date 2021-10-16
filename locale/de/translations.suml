@@ -166,6 +166,10 @@ nouns:
 
     image: 'Bild'
 
+community: # TODO
+    header: 'Community'
+    headerLong: 'Queer community'
+
 terminology:
     header: 'Terminologie'
     headerLong: 'Wörterbuch von Queerer Terminologie'
@@ -737,6 +741,10 @@ calendar:
         aids_awareness_month: 'AIDS-Bewusstseins-Monat'
 
     banner: 'Heute feiern wir'
+    celebrating_custom: 'is celebrated' # TODO
+    celebrating_day: 'is celebrated on' # TODO
+    celebrating_week: 'is celebrated on' # TODO
+    celebrating_month: 'is celebrated in' # TODO
     image:
         header: 'Bild herunterladen'
         overview: 'Überschau'
