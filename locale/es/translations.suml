@@ -171,6 +171,10 @@ nouns:
 
     image: 'Imagen'
 
+community:
+    header: 'Comunidad'
+    headerLong: 'Comunidad queer'
+
 terminology:
     header: 'Terminología'
     headerLong: 'Diccionario de terminología queer'
@@ -685,6 +689,19 @@ calendar:
         10: '%day% de octubre'
         11: '%day% de noviembre'
         12: '%day% de diciembre'
+    months_abl:
+        1: 'enero'
+        2: 'febrero'
+        3: 'marzo'
+        4: 'abril'
+        5: 'mayo'
+        6: 'junio'
+        7: 'julio'
+        8: 'agosto'
+        9: 'septiembre'
+        10: 'octubre'
+        11: 'noviembre'
+        12: 'diciembre'
     events:
         pride_month: 'Mes del Orgullo'
         trans_month: 'Mes de la Conciencia Transgénero'
@@ -751,9 +768,13 @@ calendar:
         aids_awareness_month: 'Mes da Concientización sobre el Sida'
 
     banner: 'Hoy celebramos'
+    celebrating_custom: 'se celebra'
+    celebrating_day: 'se celebra el'
+    celebrating_week: 'se celebra el'
+    celebrating_month: 'se celebra en'
     image:
         header: 'Descargar una imagen'
         overview: 'Vista general'
         labels: 'Etiquetas'
-    link: 'Link' # TODO
-    full: 'Full calendar' # TODO
+    link: 'Enlace'
+    full: 'Calendario completo'

@@ -213,7 +213,7 @@ export const sortClearedLinkedText = (items, key) => {
 
 export const clearKey = (key) => {
     if (!key) { return null; }
-    return key.replace(/'/g, '_');
+    return key.replace(/'/g, '_').toLowerCase();
 }
 
 export const sleep = (milliseconds) => {

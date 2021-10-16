@@ -169,6 +169,10 @@ nouns:
 
     image: 'Imagem'
 
+community:
+    header: 'Comunidade'
+    headerLong: 'Comunidade queer'
+
 terminology:
     header: 'Terminologia'
     headerLong: 'Dicionário de terminologia queer'
@@ -682,6 +686,19 @@ calendar:
         10: '%day% de outubro'
         11: '%day% de novembro'
         12: '%day% de dezembro'
+    months_abl:
+        1: 'janeiro'
+        2: 'fevereiro'
+        3: 'março'
+        4: 'abril'
+        5: 'maio'
+        6: 'junho'
+        7: 'julho'
+        8: 'agosto'
+        9: 'setembro'
+        10: 'outubro'
+        11: 'novembro'
+        12: 'dezembro'
     events:
         pride_month: 'Mês do Orgulho'
         trans_month: 'Mês da Consciência Trans'
@@ -748,9 +765,13 @@ calendar:
         aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
 
     banner: 'Hoje celebramos'
+    celebrating_custom: 'celebra-se'
+    celebrating_day: 'celebra-se em'
+    celebrating_week: 'celebra-se em'
+    celebrating_month: 'celebra-se em'
     image:
         header: 'Baixar uma imagem'
         overview: 'Visão geral'
         labels: 'Etiquetas'
-    link: 'Link' # TODO
-    full: 'Full calendar' # TODO
+    link: 'Link'
+    full: 'calendário completo'

@@ -25,7 +25,9 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <CalendarEvent v-for="event in year.eventsByDate[d.toString()]" :event="event" :key="event.name"/>
+                        <li v-for="event in year.eventsByDate[d.toString()]" class="mb-2">
+                            <CalendarEvent :event="event" :key="event.name"/>
+                        </li>
                     </ul>
                 </div>
             </div>

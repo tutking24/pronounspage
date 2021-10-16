@@ -39,7 +39,7 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td class="cell-wide">
-                    <Term :term="s.el" categoryLink flags versions/>
+                    <Term :term="s.el" categoryLink flags versions :events="year.eventsByTerm[s.el.key]" @filter="setFilter"/>
 
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
@@ -111,6 +111,7 @@
     import { TermsEntry } from "~/src/classes";
     import { buildDict, clearUrl, clearLinkedText } from "../src/helpers";
     import hash from "../plugins/hash";
+    import { calendar } from '../src/calendar/calendar';
 
     export default {
         props: {
@@ -122,6 +123,7 @@
                 filter: '',
                 entriesRaw: undefined,
                 clearUrl,
+                year: calendar.getCurrentYear(),
             }
         },
         mounted() {

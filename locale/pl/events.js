@@ -2,14 +2,15 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calend
 
 module.exports = [
     // months
-    new Event('{/spis=Niebinary Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month),
+    new Event('{/spis=Niebinary Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
 
     // static date
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.Day),
-    new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.Day),
-    new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day),
+    new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.Day, ['homophobia']),
+    new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Widoczności LGBTQ w Rosji', 'LGBTQ', 10, day(7), EventLevel.Day),
+    new Event('Dzień Pamięci Milo Mazurkiewicz', null, 5, day(6), EventLevel.Day),
 
     // one-off events
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
@@ -30,7 +31,6 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1066052000600920=II Marsz Równości w Białymstoku}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
     new Event('{http://marszlublin.pl/=III Marsz Równości w Lublinie}', 'LGBTQ', 10, dayYear(23, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
-
 
     // dynamic date
     new Event('{https://pl.wikipedia.org/wiki/T%C4%99czowy_Pi%C4%85tek=Tęczowy Piątek}', null, 10, function* (monthDays) {
