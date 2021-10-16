@@ -402,6 +402,8 @@ english: ~
 contact:
     header: 'Contact'
     authors: 'Authors of the website'
+    faq: >
+        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
     technical: >
         Do you have a technical issue or question? Please include your username and as many details as possible
         (what does the error message say? are you on your phone or a desktop? which browser do you use?

@@ -908,6 +908,8 @@ english:
 contact:
     header: 'Kontakt'
     authors: '{/neutratywy#autor=Autorza} strony'
+    faq: >
+        Zanim napiszesz, zajrzyj do naszego {/pytania=FAQ} – być może odpowiedź na Twoje pytanie już się tam znajduje.
     quote: >
         Tworzysz jakiś materiał o języku neutralnym? Piszesz lub tłumaczysz na polski postać niebinarną?
         Cudownie! Prosimy, daj nam znać. Chętnie doradzimy i chętnie udostępnimy u siebie linka.

@@ -15,7 +15,12 @@
         </section>
 
         <section class="small">
-            <p v-if="$t('contact.technical', {}, false)">
+            <p v-if="$te('contact.faq')">
+                <Icon v="map-marker-question"/>
+                <T>contact.faq</T>
+            </p>
+
+            <p v-if="$te('contact.technical')">
                 <Icon v="cogs"/>
                 <T>contact.technical</T>
             </p>
@@ -28,12 +33,12 @@
                 </LocaleLink>
             </p>
 
-            <p v-if="$t('contact.quote', {}, false)">
+            <p v-if="$te('contact.quote')">
                 <Icon v="quote-right"/>
                 <T>contact.quote</T>
             </p>
 
-            <p v-if="$t('contact.hate', {}, false)">
+            <p v-if="$te('contact.hate')">
                 <Icon v="hand-middle-finger"/>
                 <T>contact.hate</T>
             </p>
