@@ -1,10 +1,14 @@
 # Język neutralny płciowo w praktyce: studium przypadku
 
-<small>2021-10-10 | [@andrea](/@andrea)</small>
+<small>2021-10-17 | [@andrea](/@andrea)</small>
 
 ![Screenshot strony głównej konkursu OurSong](/img-local/blog/oursong-400.png)
 
 Język neutralny płciowo to taki, w którym komunikaty nie wykluczają nikogo ze względu na płeć.
+Taki, w którym nie wychodzi się z założenia, że każda osoba słuchająca czy czytająca… jest mężczyzną.
+Taki, w którym unika się [androcentrycznych](https://pl.wikipedia.org/wiki/Androcentryzm) zwrotów jak
+„drogi studen**cie**” czy „zapomnia**łem** hasła”.
+
 Choć przedstawiamy na naszej stronie przegląd [pomysłów na unikanie języka nacechowanego płciowo](/unikanie)
 i pokazujemy jak używać [osobatywów](/osobatywy), [ikastywów](/iksatywy) czy [form ze znakiem zastępującym](/onx),
 to jednak teoria to jedno, a praktyka drugie.
@@ -20,8 +24,8 @@ w komunikatach, które samo tam parę lat temu umieściłom.
 
 Zanim jednak przejdę do treści właściwej, krótka historia.
 W 2017 roku niderlandzki przewoźnik kolejowy NS [dumnie ogłosił](https://www.volkskrant.nl/economie/dames-en-heren-wordt-bij-ns-voortaan-beste-reizigers~bf5345f9c),
-że zamiast binarnego „Dames en heren” („panie i panowie”) komunikaty na dworcach będą zaczynać się od inkluzywnego
-„Beste reizigers” („Drodzy podróżni”, „Drogie osoby podróżne”).
+że zamiast binarnego „dames en heren” („panie i panowie”) komunikaty na dworcach będą zaczynać się od inkluzywnego
+„beste reizigers” („drodzy podróżni”, „drogie osoby podróżne”).
 Co zaowocowało… falą [enbyfobicznego](/terminologia#enbyfobia) hejtu ze strony osób krzyczących o psuciu języka i zgniliźnie ideologii gender.
 A, jak słusznie zauważyły lokalne osoby aktywistyczne, z którymi rozmawiałom, wystarczyło…
 zrobić to po cichu, bez chełpienia się własną zajebistością i inkluzywnością – wtedy zapewne niemal nikto by tej drobnej zmiany nie zauważyło.
@@ -51,6 +55,8 @@ W innych miejscach osobatywy brzmią już sporo naturalniej:
 
 > Większość strony jest dostępna tylko dla **osób uczestniczących** w konkursie. Dołącz do nas już dziś!
 
+…
+
 > By wyeliminować oszustwa, prosimy, by **każdy nowy członek dołączył** do grupy konkursowej na FB w celu weryfikacji konta. Po zatwierdzeniu konta na OurSongu, **będziesz mógł** opuścić tę grupę.
 
 > By wyeliminować oszustwa, prosimy, by **każda nowa osoba dołączyła** do grupy konkursowej na FB w celu weryfikacji konta. Po zatwierdzeniu konta na OurSongu, **można** opuścić tę grupę.
@@ -58,7 +64,7 @@ W innych miejscach osobatywy brzmią już sporo naturalniej:
 W ostatnim zdaniu da się zupełnie uniknąć form nacechowanych płciowo dzięki bezosobowej formie „można będzie” albo po prostu „można”.
 
 W zdaniach, gdzie używane było słowo „administrator”, podmieniłom je na „admin”
-(które choć gramatycznie męskie, można wciąż można by uznać za inkluzywne, za skrót zarówno od „administrator”, jak i „administratorka” i „administratorze”)
+(które choć gramatycznie męskie, można wciąż można by uznać za inkluzywne, za skrót zarówno od „administrator”, jak i „administratorka” i „[administratorze](/neutratywy#administratorze)”)
 albo na zbiorowe: „administracja”.
 
 > **Administrator** musi aktywować Twoje konto, zanim **będziesz mógł** używać platformy.
