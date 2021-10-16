@@ -6,11 +6,17 @@
         </h2>
 
         <section>
+            <nuxt-link v-if="config.faq.enabled" :to="`/${config.faq.route}`"
+                class="btn btn-outline-primary border m-1"
+            >
+                <Icon v="map-marker-question"/>
+                <T>faq.header</T>
+            </nuxt-link>
             <a v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
-               :href="link.url" target="_blank" rel="noopener"
-               class="btn btn-outline-primary border m-1">
-                <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                {{link.headline}}
+                :href="link.url" target="_blank" rel="noopener"
+                class="btn btn-outline-primary border m-1">
+                    <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                    {{link.headline}}
             </a>
         </section>
 
