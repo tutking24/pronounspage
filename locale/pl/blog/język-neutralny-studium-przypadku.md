@@ -1,6 +1,6 @@
 # Język neutralny płciowo w praktyce: studium przypadku
 
-<small>2021-10-17 | [@andrea](/@andrea)</small>
+<small>2021-10-16 | [@andrea](/@andrea)</small>
 
 ![Screenshot strony głównej konkursu OurSong](/img-local/blog/oursong-400.png)
 
@@ -32,7 +32,7 @@ zrobić to po cichu, bez chełpienia się własną zajebistością i inkluzywno�
 Sojusznictwo na pokaz, choć z jednej strony oczywiście pomogło, to z drugiej niestety dało opresorom kolejną wymówkę, by atakować.
 
 Zainspirowane tą historią, uznałom, że spróbuję właśnie tak do sprawy podejść w przypadku OurSonga
-(mimo że raczej nie spodziewam się transfobii ani ze strony administracji, ani osób uczestniczących w konkursie).
+(choć bardziej w ramach eksperymentu – bo raczej nie spodziewam się transfobii ani ze strony administracji, ani osób uczestniczących w konkursie).
 Chciałom wprowadzić zmiany istotne, ale względnie łagodne, mało rzucające się w oczy; nie ogłaszać niczego,
 tylko obserwować, czy ktokolwiek je zauważy i czy będzie na tyle poruszone, by jakkolwiek zareagować na nie na forum.
 
@@ -148,9 +148,13 @@ Po wysłaniu nowej wersji na serwer odczekałom tydzień
 (pełną edycję, a zatem każda osoba aktywnie biorąca udział powinna w tym czasie zobaczyć większość aplikacji w nowej odsłonie).
 Nasłuchiwałom jakichkolwiek komentarzy na temat nowego brzmienia niektórych komunikatów na stronie.
 
-_// TODO napisać za ten tydzień 😉_
+Pojawiły się głosy zadowolone z odświeżonego designu.
+Nowe ficzery zostały zauważone, choć jeszcze nie użyte.
+Ale zmiany w języku? Przeszły zupełnie bez echa 😉
 
 ## Wnioski
 
-Mam nadzieję, że powyższe przykłady z żywego języka pokazały, że da się tak konstruować neutralne płciowo komunikaty tak,
-by nawet przesadnie nie zwrócić niczyjej uwagi na zmianę stylu i nie wykraczać poza ramy normatywności.
+Wiele form, które [Rada Języka Neutralnego](/kolektyw-rjn) proponuje na naszej stronie,
+spotyka się z ([niesłuszną](/pytania#autorytet)) krytyką, że za bardzo odstają od polszczyzny opisywanej w słownikach i gramatykach.
+Ale mam nadzieję, że powyższe przykłady z żywego języka pokazały, że da się tak konstruować neutralne płciowo komunikaty tak,
+by nawet przesadnie nie zwrócić niczyjej uwagi na zmianę stylu i nie wykraczać poza ramy normatywności 😉
