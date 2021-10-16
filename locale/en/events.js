@@ -52,6 +52,7 @@ module.exports = [
     new Event('Nonbinary People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
     new Event('LGBTQ Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/Matthew_Shepard=Matthew Shepard} Day of Remembrance', null, 10, day(12), EventLevel.Day),
+    new Event('Trans Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender']),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
