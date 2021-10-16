@@ -522,6 +522,36 @@ faq:
                     Jesteśmy też w kontakcie ze studentem slawistyki piszącym o tym pracę dyplomową
                     oraz lektorką polonistyki planującą wydać podręcznik obejmujący nowe formy.
                     Mamy nadzieję, że będziemy mogły tu ich prace opublikować, gdy zostaną ukończone.
+        przesada:
+            question: 'Czy to nie przesada?'
+            answer:
+                - >
+                    Każda grupa marginalizowana słyszy to pytanie na okrągło.
+                    Osoby homoseksualne <em>przesadzają</em>, domagając się równości małżeńskiej, jakby im umowa u notariusza nie wystarczyła!
+                    Osoby transpłciowe <em>przesadzają</em>, chcąc procedury uzgodnienia płci metrykalnej, która nie byłaby trudna, droga i traumatyzująca.
+                    Osoby mogące zajść w ciążę <em>przesadzają</em> chcąc praw reprodukcyjnych niebędących kompromisem między prawicą a skrajną prawicą.
+                    Osoby czarnoskóre <em>przesadzają</em> z tą walką z rasizmem, nie wystarczy im zniesienie niewolnictwa?
+                - >
+                    Oprawcy lubią zrzucać winę na ofiary. Zgrywać dobrotliwych stróżów praw człowieka
+                    pilnujących, by <em>nieodpowiednim</em> ludziom się ich za dużo nie dostało.
+                    Ale prawa człowieka nie powinny być negocjowalne ani warunkowe.
+                - >
+                    Nie przesadzamy. Żaden z naszych postulatów nie jest wygórowanym żądaniem.
+                    Chcemy, by państwo nie zmuszało nas do wybierania w dokumentach jednej z dwóch płci,
+                    jeśli żadna z nich nas dobrze nie opisuje.
+                    Chcemy, by państwo nie mówiło nam, jakie imię możemy sobie wybrać, a jakie nie,
+                    z tak głupiego powodu jak „niewskazywanie na płeć”.
+                    Chcemy, by osoby tworzące teksty zastanowiły się zanim znowu napiszą je tak,
+                    jakby każda osoba je odbierająca była mężczyzną.
+                    I chcemy też, by szanowano cudzą płeć i używane formy –
+                    jeśli ktosio prosi, by mówić np. „zrobiłoś” zamiast „zrobiłaś”,
+                    to czy naprawdę zmiana tej jednej literki miałaby innych aż tak boleć?
+                - >
+                    To są rzeczy, o które nawet nie powinnośmy „walczyć” –
+                    a po prostu oczekiwać, że będą wynikały ze zwykłego ludzkiego szacunku i życzliwości.
+                    To nie są też sprawy abstrakcyjne czy symboliczne, lecz kwestie mające
+                    {https://pts-seksuologia.pl/sites/strona/83/stanowisko-pts-ws-sytuacji-spolecznej-zdrowotnej-i-prawnej-osob-transplciowych=realny wpływ na zdrowie psychiczne i fizyczne osób transpłciowych i niebinarnych}.
+                    Czy to <em>przesada</em> prosić o szacunek?
         błahostki:
             question: 'Czemu zajmujecie się tak błahymi problemami?'
             answer:
@@ -536,6 +566,32 @@ faq:
                 - >
                     Nie zakładamy rąk i nie mówimy, że „dopóki choć jedno dziecko w Afryce chodzi głodne, nie bierzemy się za nic innego”.
                     Nie. Robimy, co możemy, w kwestiach, na których się znamy i na które mamy siłę.
+        komplikowanie:
+            question: 'Po co tak komplikować język? Czy polszczyzna już nie jest wystarczająco trudna?'
+            answer:
+                - >
+                    Odwróćmy pytanie: czy nie byłoby prościej, gdyby istniał tylko jeden rodzaj gramatyczny?
+                    Nie trzeba byłoby się kłócić o feminatywy, jeśli opisywałobyśmy nimi każdego człowieka bez względu na płeć.
+                    Tabelki {http://grzegorz.jagodzinski.prv.pl/gram/pl/odmiana1.html=deklinacji} i {http://grzegorz.jagodzinski.prv.pl/gram/pl/odmiana2.html=koniugacji}
+                    byłby zdecydowanie prostsze, gdyby zawierały wyłącznie na przykład rodzaj neutralny. 🙃
+                - >
+                    Owszem, język polski nie jest łatwy. Ale mimo to jest efektywnym narzędziem komunikacji –
+                    a jeśli naszym celem jest komunikatywność i inkluzywność,
+                    to musimy mu pozwolić rozwijać się w tym kierunku, nawet kosztem „skomplikowania”.
+                    Skoro język polski tak silnie podkreśla płeć i ciężko jest uniknąć jej zaznaczania,
+                    a jednocześnie istnieją osoby, które nie są dobrze opisywane przez żadną z dwóch „domyślnych opcji”,
+                    to język nie spełnia zbyt dobrze swojej podstawowej funkcji – komunikowania informacji.
+                - >
+                    Owszem, ze względu na to, że temat wciąż jest nowy i musi się jeszcze wyklarować,
+                    przedstawianych przez nas form niebinarnych jest sporo, i mogą one przytłaczać.
+                    Dlatego w naszym manifeście {/manifest=Manifeście} proponujemy
+                    (choć nie narzucamy, ani też nie deprecjonujemy pozostałych form!),
+                    by skupić się na normalizacji używania {/ono=rodzaju neutralnego} jako form dla osób niebinarnych.
+                    On bowiem jest już w polszczyźnie zakorzeniony,
+                    a już wieki temu {/korpus#Maksymilian%20Jakubowicz=gramatyki przedstawiały go} na równi z rodzajem męskim i żeńskim,
+                    również w formach pierwszo- i drugoosobowych („byłom”, „zrobiłoś”), bez żadnych zastrzeżeń.
+                    Te formy już od dawna w normatywnej polszczyźnie istnieją!
+                    Czy postulat, by nie wyśmiewać osób ich używających, to naprawdę „komplikowanie języka”?
         bio:
             question: 'Czemu warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych?'
             answer:
@@ -589,6 +645,27 @@ faq:
                     nie jest przejawem neutralnego języka, lecz wręcz przeciwnie: patriarchatu.
                     Wpływa negatywnie na reprezentację osób innych płci
                     oraz {https://journals.sagepub.com/doi/10.1177/0261927X12463008=zniekształca nasze postrzeganie świata}.
+        rewolucja:
+            question: 'Język musi zmieniać się powoli! Czemu chcecie robić w nim taką rewolucję?'
+            answer:
+                - >
+                    Czy „rewolucja” to naprawdę coś złego?
+                    Jeśli dążymy do dobrego celu i chcemy go osiągnąć na moralne sposoby,
+                    to w czym problem?
+                - >
+                    Żyjemy w erze informacyjnej.
+                    Nigdy wcześniej aż taki odsetek ludzkości nie był piśmienny.
+                    Nigdy nie tworzyłośmy tylu tekstów co teraz.
+                    Nigdy wcześniej nie komunikowałośmy się w tak zawrotnym tempie, co przez ostatnie dekady.
+                    To, że „język zmienia się powoli”, nie jest nienaruszalnym prawem wszechświata,
+                    a jedynie naszą obserwacją minionych tysiącleci.
+                    Przez ostatnie lata wszystko, od technologii po kulturę, zmienia się szybciej niż kiedykolwiek
+                    – czemu język miałby nie doświadczyć podobnego zjawiska?
+                - >
+                    Dziś możemy pomieszać sobie tekst (i to nie tylko potoczny) z malutkimi obrazkami twarzy i przedmiotów
+                    – i nikogo to nie dziwi 😉
+                    Ale czyż gazeta z poprzedniego wieku próbująca użyć na swoich łamach czegoś na kształt emoji
+                    nie narażałaby się na oskarżenia o „rewolucję językową” i „psucie polszczyzny”?
         klawiatura:
             question: 'Ale tych znaków nie ma na klawiaturze!'
             answer:
