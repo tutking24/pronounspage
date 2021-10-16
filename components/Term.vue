@@ -15,10 +15,10 @@
 
         <ul class="list-inline">
             <li v-for="category in term.categories" class="list-inline-item">
-                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
+                <a v-if="categoryLink" :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="$emit('filter', ':' + category)">
                     {{category}}
                 </a>
-                <span v-else="" class="badge bg-primary text-white">
+                <span v-else class="badge bg-primary text-white">
                     {{category}}
                 </span>
             </li>
@@ -28,6 +28,35 @@
             <img v-for="flag in term.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
             <img v-for="image in term.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
         </p>
+
+        <div v-if="config.calendar.enabled && events && events.length" class="alert">
+            <p class="mb-2">
+                <Icon v="calendar-star"/>
+                <nuxt-link :to="`/${config.calendar.route}`"><T>calendar.headerLong</T></nuxt-link>:
+            </p>
+            <ul class="list-unstyled">
+                <li v-for="event in events" class="mb-2 ms-3">
+                    <CalendarEvent :event="event"/>
+                    <span v-if="$te(`calendar.events.${event.name}___timeDescription`)">
+                        <T>calendar.celebrating_custom</T>
+                        <T>calendar.events.{{event.name}}___timeDescription</T>
+                    </span>
+                    <span v-else-if="event.level === EventLevel.Day">
+                        <T>calendar.celebrating_day</T>
+                        <T :params="{day: event.getRange()}">calendar.dates.{{ event.month }}</T>
+                    </span>
+                    <span v-else-if="event.level === EventLevel.Week">
+                        <T>calendar.celebrating_week</T>
+                        <T :params="{day: event.getRange()}">calendar.dates.{{ event.month }}</T>
+                    </span>
+                    <span v-else-if="event.level === EventLevel.Month">
+                        <T>calendar.celebrating_month</T>
+                        <T v-if="$te('calendar.months_abl')">calendar.months_abl.{{ event.month }}</T>
+                        <T v-else>calendar.months.{{ event.month }}</T>
+                    </span>
+                </li>
+            </ul>
+        </div>
 
         <div v-if="versions && term.versions.length" class="my-3 mx-2">
             <p>
@@ -52,16 +81,20 @@
 </template>
 
 <script>
+    import { EventLevel } from '../src/calendar/helpers';
+
     export default {
         props: {
             term: { required: true },
             categoryLink: { type: Boolean },
             flags: { type: Boolean },
             versions: { type: Boolean },
+            events: { default: undefined },
         },
         data() {
             return {
                 versionsShown: false,
+                EventLevel,
             }
         }
     }

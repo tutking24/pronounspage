@@ -23,6 +23,11 @@ class Day {
     toString() {
         return `${this.year}-${this.month.toString().padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
     }
+
+    // for comparisons
+    toInt() {
+        return parseInt(`${this.year}${this.month.toString().padStart(2, '0')}${this.day.toString().padStart(2, '0')}`);
+    }
 }
 module.exports.Day = Day;
 
@@ -43,12 +48,14 @@ module.exports.EventLevel = {
 }
 
 module.exports.Event = class {
-    constructor(name, flag, month, generator, level) {
+    constructor(name, flag, month, generator, level, terms = [], timeDescription = null) {
         this.name = name;
         this.flag = flag;
         this.month = month;
         this.generator = generator;
         this.level = level;
+        this.terms = terms;
+        this.timeDescription = timeDescription;
         this.daysMemoise = {}
     }
 
@@ -65,6 +72,9 @@ module.exports.Event = class {
     }
 
     getRange(year) {
+        if (year === undefined) {
+            year = Day.today().year;
+        }
         const days = this.getDays(year);
         if (days.length === 1) {
             return days[0].day;
@@ -139,6 +149,18 @@ class Year {
         for (let date in this.eventsByDate) {
             if (!this.eventsByDate.hasOwnProperty(date)) { continue; }
             this.eventsByDate[date].sort((a, b) => b.level - a.level);
+        }
+
+        this.eventsByTerm = {}
+        for (let event of events) {
+            for (let term of event.terms) {
+                if (this.eventsByTerm[term] === undefined) { this.eventsByTerm[term] = []; }
+                this.eventsByTerm[term].push(event);
+            }
+        }
+        for (let term in this.eventsByTerm) {
+            if (!this.eventsByTerm.hasOwnProperty(term)) { continue; }
+            this.eventsByTerm[term].sort((a, b) => a.getDays(this.year)[0].toInt() - b.getDays(this.year)[0].toInt())
         }
     }
 

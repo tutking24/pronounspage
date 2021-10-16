@@ -47,11 +47,15 @@ nouns:
     submit: true
     templates: false
 
+community:
+    route: 'terminologia'
+
 inclusive:
     enabled: false
 
 terminology:
     enabled: true
+    published: true
     categories:
         - 'orientação sexual'
         - 'orientação romântica'

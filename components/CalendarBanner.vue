@@ -5,7 +5,9 @@
             <T>calendar.banner</T>:
         </p>
         <ul class="list-unstyled my-3 ms-3">
-            <CalendarEvent v-for="event in events" :event="event" :key="event.name"/>
+            <li v-for="event in events" class="mb-2">
+                <CalendarEvent :event="event" :key="event.name"/>
+            </li>
         </ul>
         <nuxt-link v-if="link" :to="`/${config.calendar.route}`" class="small">
             <Icon v="angle-right"/>

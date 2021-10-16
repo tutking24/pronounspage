@@ -190,6 +190,10 @@ const reloadUser = async (req, res, next) => {
     next();
 }
 
+const resetCards = async (db, id) => {
+    await db.get(SQL`UPDATE profiles SET card = null, cardDark = null WHERE userId = ${id}`);
+}
+
 const router = Router();
 
 router.use(handleErrorAsync(reloadUser));
@@ -297,6 +301,8 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     }
 
     await req.db.get(SQL`UPDATE users SET username = ${req.body.username}, usernameNorm = ${normalise(req.body.username)} WHERE id = ${req.user.id}`);
+
+    await resetCards(req.db, req.user.id);
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
 }));
@@ -463,6 +469,8 @@ router.post('/user/set-avatar', handleErrorAsync(async (req, res) => {
         SET avatarSource = ${req.body.source || null}
         WHERE id = ${req.user.id}
     `)
+
+    await resetCards(req.db, req.user.id);
 
     return res.json({token: await issueAuthentication(req.db, req.user)});
 }));

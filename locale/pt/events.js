@@ -3,19 +3,19 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calend
 module.exports = [
 
     // months
-    new Event('Mês da Visibilidade Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month),
-    new Event('Mês da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month),
-    new Event('Mês da Visibilidade Assexual (Brasil)', 'Asexual', 10, month, EventLevel.Month),
+    new Event('Mês da Visibilidade Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
+    new Event('Mês da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
+    new Event('Mês da Visibilidade Assexual (Brasil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
 
     // static date
     new Event('Dia da Igualdade Matrimonial (Portugal)', null, 6, day(5), EventLevel.Day),
     new Event('Dia da Igualdade Matrimonial (Brasil)', null, 5, day(16), EventLevel.Day),
-    new Event('Dia Nacional da Visibilidade Trans (Brasil)', 'Transgender', 1, day(29), EventLevel.Day),
-    new Event('Dia Nacional do Orgulho Gay (Brasil)', 'LGBTQ', 3, day(25), EventLevel.Day),
-    new Event('Dia Nacional da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, day(29), EventLevel.Day),
+    new Event('Dia Nacional da Visibilidade Trans (Brasil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
+    new Event('Dia Nacional do Orgulho Gay (Brasil)', 'LGBTQ', 3, day(25), EventLevel.Day, ['gay']),
+    new Event('Dia Nacional da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, day(29), EventLevel.Day, ['lesbian']),
     new Event('Aniversário da morte de Marielle Franco', null, 3, day(14), EventLevel.Day),
     new Event('Aniversário da Nova Lei de Identidade de Género (Portugal)', null, 4, day(14), EventLevel.Day),
-    new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day),
+    new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day, ['lesbian']),
     new Event('Dia Latinx da Conscientização sobre Aids/Sida (EUA)', null, 10, day(15), EventLevel.Day),
 
     // one-off events
