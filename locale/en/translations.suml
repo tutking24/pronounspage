@@ -711,7 +711,7 @@ calendar:
         lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
         demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
         pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
-        transmasculine_day: '{/terminology#trans%20man=Transmasculine} People''s Day'
+        transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
         asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
         bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
         holocaust_remembrance_day: 'International Holocaust Remembrance Day'
