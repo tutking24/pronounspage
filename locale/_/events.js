@@ -2,7 +2,7 @@ const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/h
 
 module.exports = [
     // months
-    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month), ['lgbtq', 'pride parade']),
+    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month, ['lgbtq', 'pride parade']),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
@@ -27,7 +27,7 @@ module.exports = [
     new Event('pan_day', 'Pansexual', 5, day(24), EventLevel.Day, ['pansexual', 'panromantic']),
     new Event('trans_remembrance_day', 'Transgender', 11, day(20), EventLevel.Day, ['transgender']),
     new Event('trans_visibility_day', 'Transgender', 3, day(31), EventLevel.Day, ['transgender']),
-    new Event('zero_discrimination_day', null, 3, day(1), EventLevel.Day), ['homophobia', 'transphobia', 'biphobia']),
+    new Event('zero_discrimination_day', null, 3, day(1), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('polyamory_day', 'Polyamorous', 11, day(23), EventLevel.Day, ['polyamory', 'polyamorous']),
     new Event('homophobia_sport', null, 2, day(19), EventLevel.Day, ['homophobia']),
     new Event('lgbtq_stem', null, 11, day(18), EventLevel.Day),
@@ -99,7 +99,7 @@ module.exports = [
                 }
             }
         }
-    }, EventLevel.Day), ['neopronouns']),
+    }, EventLevel.Day, ['neopronouns']),
 
     new Event('trans_week', 'Transgender', 11, week(function* (monthDays) {
         for (let d of monthDays) {
@@ -224,7 +224,7 @@ module.exports = [
                 yield d;
             }
         }
-    }, EventLevel.Week), ['homophobia', 'transphobia', 'biphobia']),
+    }, EventLevel.Week, ['homophobia', 'transphobia', 'biphobia']),
 
     // one-off events
     new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
