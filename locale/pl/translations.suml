@@ -815,6 +815,31 @@ faq:
                     niektóre lesbijki ze względów kulturowych i historycznych używają form męskich, itp.
                 - >
                     Mów po prostu „zaimki”. To prościej i sensowniej.
+        osoby-cis:
+            question: 'Czy osoby cispłciowe też mogą używać innych zaimków niż „domyślne”?'
+            answer:
+                - >
+                    Jak najbardziej! Język jest dla nas, nie my dla języka.
+                    Jeśli jesteś osobą cis, ale czujesz, że lepiej wyrażasz siebie innymi zaimkami niż „domyślne”, to rób to.
+                    Wolność do ekspresji płciowej i własnej tożsamości jest dla wszystkich.
+                    Opresja {/terminologia#binaryzm=binaryzmu} i stereotypów płciowych dotyka też osób cis.
+                - >
+                    Osoby cispłciowe używające {/terminologia#nonkonformizm=nonkonformistycznych} zaimków
+                    są ważną częścią historii i kultury queerowej; wśród nich są chociażby
+                    {https://en.pronouns.page/terminology#he/him%20lesbian=lesbijki używające he/him}
+                    czy {/terminologia#drag%20queen=drag queens używające she/her}.
+                - >
+                    Tak jak podawanie swoich zaimków w bio czy stopkach mailowych normalizuje tę praktykę
+                    i sprawia, że osoby transpłciowe są dzięki temu bezpieczniejsze,
+                    tak samo korzystanie przez przez osoby cispłciowe ze swojego {https://en.wikipedia.org/wiki/Social_privilege=przywileju},
+                    by znormalizować używanie zaimków innych niż te powiązane z czyjąś płcią przypisaną przy urodzeniu,
+                    pomaga społecznościom marginalizowanym.
+                - >
+                    Misja naszego kolektywu to walka o wolność, szacunek i inkluzywność w języku.
+                    Ta wolność obejmuje wszystkie osoby: cis- i transpłciowe, binarne i niebinarne.
+                    Stanowczo sprzeciwiamy się {/terminologia#gatekeeping=gatekeepingowi}.
+                    Jest to zjawisko negatywne i tworzące podziały wewnątrz grup marginalizowanych,
+                    na czym zyskują wyłącznie opresorzy.
         a-moj-dziadek:
             question: 'Czy po to mój dziadek walczył na wojnie, by teraz ktoś mówił o sobie „ono”?'
             answer:
