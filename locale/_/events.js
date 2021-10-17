@@ -2,7 +2,7 @@ const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/h
 
 module.exports = [
     // months
-    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month, ['lgbtq', 'pride parade']),
+    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month, ['lgbtq', 'pride parade', 'gay']),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
@@ -30,9 +30,9 @@ module.exports = [
     new Event('zero_discrimination_day', null, 3, day(1), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('polyamory_day', 'Polyamorous', 11, day(23), EventLevel.Day, ['polyamory', 'polyamorous']),
     new Event('homophobia_sport', null, 2, day(19), EventLevel.Day, ['homophobia']),
-    new Event('lgbtq_stem', null, 11, day(18), EventLevel.Day),
+    new Event('lgbtq_stem', null, 11, day(18), EventLevel.Day, ['lgbtq']),
     new Event('trans_depathologization', 'Transgender', 10, day(22), EventLevel.Day, ['transgender']),
-    new Event('lgbti_book_day', 'LGBTQ', 4, day(1), EventLevel.Day),
+    new Event('lgbti_book_day', 'LGBTQ', 4, day(1), EventLevel.Day, ['lgbtq']),
     new Event('human_rights_day', null, 12, day(10), EventLevel.Day),
     new Event('nonbinary_parents_day', 'Nonbinary', 4, day(18), EventLevel.Day, ['nonbinary']),
     new Event('trans_prisoner', 'Transgender', 1, day(22), EventLevel.Day, ['transgender']),
@@ -41,18 +41,18 @@ module.exports = [
     new Event('genderfluid_day', 'Genderfluid', 6, day(16), EventLevel.Day, ['genderfluid']),
     new Event('aids_day', null, 12, day(1), EventLevel.Day),
     new Event('tolerance_day', null, 11, day(16), EventLevel.Day),
-    new Event('social_justice_day', null, 2, day(20), EventLevel.Day),
+    new Event('social_justice_day', null, 2, day(20), EventLevel.Day, ['progress pride']),
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
-    new Event('domestic_violence', null, 5, day(25), EventLevel.Day),
+    new Event('domestic_violence', null, 5, day(25), EventLevel.Day, ['lgbtq']),
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.Day, ['polysexual', 'polyromantic']),
-    new Event('orlando_day', null, 6, day(12), EventLevel.Day),
+    new Event('orlando_day', null, 6, day(12), EventLevel.Day, ['homophobia']),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender']),
     new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual']),
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual', 'asexual spectrum']),
     new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.Day),
     new Event('black_ribbon_day', null, 8, day(23), EventLevel.Day),
-    new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian']),
+    new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride']),
     new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
 
     // dynamic date
@@ -211,7 +211,7 @@ module.exports = [
             weeks[weeks.length - 1].push(d);
         }
         yield* weeks[2];
-    }), EventLevel.Week),
+    }), EventLevel.Week, ['progress pride']),
 
 
     new Event('hate_crime_awareness_week', null, 10, function* (monthDays) {
@@ -233,5 +233,5 @@ module.exports = [
                 yield d;
             }
         }
-    }, EventLevel.Week),
+    }, EventLevel.Week, ['progress pride']),
 ];
