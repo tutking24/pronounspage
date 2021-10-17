@@ -494,6 +494,8 @@ faq:
                     Nowomowa u Orwella polegała na zubożaniu języka tak, by ludzie nie mogli wyrazić swojego niezadowolenia z systemu.
                 - >
                     Nasz projekt próbuje wzbogacić język tak, by osoby niebinarne wreszcie mogły się w pełni wyrazić.
+                - >
+                    Próby porównywania ich pokazują zupełne niezrozumienie tekstu Orwella.
         autorytet:
             question: 'Czy potwierdza te wymysły czyjś autorytet?'
             answer:
@@ -581,7 +583,7 @@ faq:
                 - >
                     Owszem, ze względu na to, że temat wciąż jest nowy i musi się jeszcze wyklarować,
                     przedstawianych przez nas form niebinarnych jest sporo, i mogą one przytłaczać.
-                    Dlatego w naszym manifeście {/manifest=Manifeście} proponujemy
+                    Dlatego w naszym {/manifest=Manifeście} proponujemy
                     (choć nie narzucamy, ani też nie deprecjonujemy pozostałych form!),
                     by skupić się na normalizacji używania {/ono=rodzaju neutralnego} jako form dla osób niebinarnych.
                     On bowiem jest już w polszczyźnie zakorzeniony,
@@ -782,9 +784,9 @@ faq:
             question: 'Czy mogę zmienić swoje zaimki?'
             answer:
                 - >
-                    Jak najbardziej! Nikogo nie dziwi, gdy ktoś zmienia w ciągu życia poglądy, styl, zainteresowania…
-                    Czemu miało by być dziwne, że ktoś odkrył część swojej tożsamości, że przestało mu się podobać jego imię,
-                    że odkrył etykietkę, która świetnie opisuje to, jak od dawna się czuł, itp. itd.?
+                    Jak najbardziej! Nikogo nie dziwi, gdy ktosio zmienia w ciągu życia poglądy, styl, zainteresowania…
+                    Czemu miało by być dziwne, że ktosio odkryło część swojej tożsamości, że przestało mu się podobać jego imię,
+                    że odkryło etykietkę, która świetnie opisuje to, jak od dawna się czuło, itp. itd.?
         wlasne:
             question: 'Czy to dziwne, że nie mogę się przyzwyczaić do <em>swoich własnych</em> zaimków?'
             answer:
