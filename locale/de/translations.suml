@@ -739,7 +739,7 @@ calendar:
         suicide_prevention_day: 'Welttag der Suizidprävention'
         suicide_prevention_month: 'Monat der Suizidprävention'
         aids_awareness_month: 'AIDS-Bewusstseins-Monat'
-         genderfluid_week: 'Genderfluide Bewusstseinswoche'
+        genderfluid_week: 'Genderfluide Bewusstseinswoche'
 
     banner: 'Heute feiern wir'
     celebrating_custom: 'is celebrated' # TODO
