@@ -226,6 +226,14 @@ module.exports = [
         }
     }, EventLevel.Week, ['homophobia', 'transphobia', 'biphobia']),
 
+        new Event('genderfluid_week', 'Genderfluid', 10, week(function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day >= 17 && d.day <= 24) {
+                yield d;
+            }
+        }
+    }), EventLevel.Week, ['genderfluid']),
+
     // one-off events
     new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
         for (let d of monthDays) {
@@ -234,4 +242,5 @@ module.exports = [
             }
         }
     }, EventLevel.Week, ['progress pride']),
+    
 ];
