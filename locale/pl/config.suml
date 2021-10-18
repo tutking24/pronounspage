@@ -592,6 +592,18 @@ links:
             url: 'https://www.facebook.com/kulturarownosci/videos/6496303737054192/'
             headline: 'Nauczyłoś się? Podstawy języka neutralnego'
             extra: ' – wykład Sybila na Festiwalu Równych Praw 2021, <strong>Kultura Równości</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://www.newsweek.pl/polska/spoleczenstwo/zaimki-osobowe-uzywane-wobec-osob-transplciowych-cisplciowych-niebinarnych-neutratywy/fs5cdl5'
+            headline: 'Wkurzająca maniera czy początek rewolucji? O co chodzi z zaimkami neutralnymi płciowo'
+            extra: ' – <strong>Newsweek</strong>'
+            quote: >
+                NEWSWEEK: To początek rewolucji w języku?<br/>
+                KAFKA: Formy neutralne nie są nowe, a po prostu nie są bardzo powszechne w języku polskim.
+                I to mamy nadzieję zmienić. Co prawda wymaga to trochę pracy,
+                czasu i przede wszystkim chęci, ale nie jest tak straszne jakby mogło się wydawać.<br/>
+                ADNREA: Tak. „Rewolucja” nie musi być strasznym słowem.
+                Chcemy zmienić świat na choć odrobinę lepszy, przyjaźniejszy, inkluzywniejszy.
     mediaMentions:
         -
             icon: 'newspaper'
