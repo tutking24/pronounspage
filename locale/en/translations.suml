@@ -725,7 +725,7 @@ calendar:
         suicide_prevention_day: 'World Suicide Prevention Day'
         suicide_prevention_month: 'Suicide Prevention Month'
         aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: '{/terminology#genderfluid=Gendefluid} Awareness Week'
+        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
