@@ -50,7 +50,7 @@ module.exports = [
     new Event('Day of Activism for Sexual Diversity (Argentina)', 'LGBTQ', 8, day(20), EventLevel.Day),
     new Event('{/terminology#transgender=Trans} Rights Day (Argentina)', 'Transgender', 3, day(18), EventLevel.Day, ['transgender']),
     new Event('{/terminology#nonbinary=Nonbinary} People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
-    new Event('{/terminology#lgbtq=LGBTQ} Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day),
+    new Event('{/terminology#lgbtq=LGBTQ} Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day, ['lgbtq']),
     new Event('{https://en.wikipedia.org/wiki/Matthew_Shepard=Matthew Shepard} Day of Remembrance', null, 10, day(12), EventLevel.Day),
     new Event('{/terminology#transgender=Trans-}, {/terminology#travesti=Travesti} and {{/terminology#nonbinary=Non-Binary} Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'nonbinary', 'travesti']),
 
