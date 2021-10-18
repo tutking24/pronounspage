@@ -665,6 +665,40 @@ faq:
                     – i nikogo to nie dziwi 😉
                     Ale czyż gazeta z poprzedniego wieku próbująca użyć na swoich łamach czegoś na kształt emoji
                     nie narażałaby się na oskarżenia o „rewolucję językową” i „psucie polszczyzny”?
+        wiarygodność:
+            question: 'Skąd mogę wiedzieć, że zaimki.pl to wiarygodne źródło informacji?'
+            answer:
+                - >
+                    Kto mogłoby być lepszym źródłem informacji o queerowości niż same osoby queerowe? 😉
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu 1) osobami używającymi języka polskiego,
+                    2) osobami niebinarnymi i sojuszniczymi. Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Dlatego przedstawiamy je na podstronie {/kolektyw-rjn=Kolektyw „Rada Języka Neutralnego”}.
+                - >
+                    W sekcji [vial]{/nauka=Nauka} przedstawiamy prace akademickie i wypowiedzi osób ze środowisk naukowych
+                    na tematy związane z obszarem naszej działalności.
+                    W sekcji [tv]{/media=Media} cytujemy nasze wystąpienia oraz w wspomnienia w mediach ze wszystkich stron sceny politycznej,
+                    w tym również w mediach queerowych.
+                - >
+                    Oczywiście, jako społeczność nie jesteśmy monolitem i w wielu sprawach możemy się ze sobą nawzajem nie zgadzać.
+                    Wewnątrz społeczności istnieje różnorodność opinii, a my ją respektujemy – tutaj prezentując własne opinie, badania i wnioski,
+                    w oparciu o {https://pl.wikipedia.org/wiki/Queer_theory=teorię queerową} oraz historię ruchu LGBTQ+.
+                    Nasze podejście wywodzi się z {/terminologia#anarchaqueer=queerowego anarchizmu} i doświadczeń z działania w tego typu grupach.
+                - >
+                    Społeczność queerowa nie jest przecież ruchem posiadającym zarząd czy osoby liderskie.
+                    Działamy oddolnie, tak samo jak {https://lgbta.wikia.org/wiki/LGBTA_Wiki=LGBTA Wiki},
+                    niezliczone queerowe konta {https://www.tumblr.com/=tumblrowe},
+                    czy cała masa osób aktywistycznych działających w innych miejscach.
+                - >
+                    Robimy wszystko co w naszej mocy, by materiały, które tworzymy były profesjonalne i rzetelne.
+                    Jesteśmy otwarte na kontakt, krytykę i sugestie.
+                    Żadne z prezentowanych przez nas opinii nie są arbitralnymi decyzjami,
+                    lecz odzwierciedleniem względnego konsensusu wśród zaangażowanej aktywistycznie części społeczności queerowej.
         klawiatura:
             question: 'Ale tych znaków nie ma na klawiaturze!'
             answer:
