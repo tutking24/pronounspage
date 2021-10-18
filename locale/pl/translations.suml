@@ -1436,6 +1436,7 @@ calendar:
         suicide_prevention_day: 'Światowy Dzień Zapobiegania Samobójstwom'
         suicide_prevention_month: 'Miesiąc Zapobiegania Samobójstwom'
         aids_awareness_month: 'Miesiąc Świadomości nt. AIDS'
+        genderfluid_week: 'Tydzień Świadomości nt. {/terminologia#płynnopłciowość=Płynnopłciowości}'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
