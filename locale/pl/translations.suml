@@ -389,6 +389,11 @@ faq:
                     po prostu dopytujemy, jak wymówić czy zapisać to, które naprawdę noszą, no nie?
                 - >
                     „Dziwne formy” to tylko kwestia przyzwyczajenia.
+        zmyślone:
+            question: 'Te formy są zmyślone!'
+            answer:
+                - >
+                    Tak. Wszystkie słowa we wszystkich językach są zmyślone. Niektóre po prostu są starsze.
         skad-wiedziec-jak-sie-zwracac:
             question: 'Skąd mam wiedzieć, jak się do kogoś zwracać?'
             answer:
