@@ -900,6 +900,7 @@ links:
     academic: 'Nauka'
     links: 'Dodatkowe materiały'
 
+    mediaShort: 'Media'
     media: 'Zaimki.pl w mediach'
     mediaGuests: 'Zaproszone'
     mediaMentions: 'Wspomniane'
@@ -909,6 +910,32 @@ links:
     social: 'Social media'
 
     languageVersions: 'Inne wersje językowe'
+
+    zine:
+        header: 'Zin'
+        headerLong: 'Zin „TODO NAZWA”'
+        info:
+            - >
+                W najbliższych miesiącach chcemy stworzyć {https://pl.wikipedia.org/wiki/Zin_(czasopismo)=zina},
+                w którym osoby niebinarne mogłyby opowiedzieć światu o odkrywaniu swojej tożsamości płciowej.
+            - >
+                Forma wydania i dystrybucji będzie zależała od liczby i rodzaju zgłoszeń oraz od dostępnych środków.
+        submissions:
+            header: 'Nabór zgłoszeń'
+            rules:
+                Tematyka: 'odkrywanie tożsamości płciowej'
+                Język: 'polski'
+                Forma: 'dowolna (felieton, opowiadanie, wiersz, rysunek, …)'
+                Długość: 'max. 2000 słów'
+                Dołącz: 'Imię/nazwisko/pseudonim, zaimki, notka autorska w trzeciej osobie (max. 50 słów)'
+                Termin: 'do końca grudnia 2021'
+                Adres: '{mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}'
+            disclaimer: >
+                Zgłaszając swoją pracę, udzielasz nam bezpłatnej licencji do opublikowania jej
+                w formie darmowego PDF-a, ebooka i/lub druku.
+                Kolektyw zastrzega sobie prawo doboru prac do publikacji,
+                biorąc pod uwagę warsztat literacki, długość tekstu, liczbę zgłoszeń,
+                zgodność z wartościami kolektywu oraz z tematyką zina.
 
 people:
     header: 'Znane osoby'

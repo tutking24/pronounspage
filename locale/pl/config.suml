@@ -226,6 +226,9 @@ links:
     mediaRoute: 'media'
 
     blog: true
+    zine:
+        enabled: true
+        route: 'zin'
     academic:
         -
             icon: 'comment-alt-edit'
