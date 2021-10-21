@@ -986,7 +986,8 @@ contact:
             zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.
             Wspieramy również działania na rzecz równości i sprawiedliwości społecznej.
         extra:
-            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa?}'
+            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa kolektywu?}'
+            - 'Formy używane przez nas jako grupę: {/ona/ich=ona/ich/-łośmy}<br/>(np. „zrobiłośmy”, „ogłosiłoście”)'
         logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
         members: 'Obecny skład'
         member: 'Osoba członkowska kolektywu'
