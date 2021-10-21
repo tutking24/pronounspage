@@ -332,7 +332,9 @@ links:
     headerLong: 'Ekstra linker'
     recommended: 'Vi anbefaler'
     blog: 'Blog'
-    media: 'Pronouns.page på sosiale medier'
+
+    mediaShort: 'Medier'
+    media: 'Pronouns.page på medier'
 
     social: 'Sosiale medier'
 
