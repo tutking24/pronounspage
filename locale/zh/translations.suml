@@ -541,7 +541,7 @@ flags:
     Achillean: '阿喀琉人'
     Agender: '無性別'
     Alloromantic_Asexual: '浪漫傾向無性戀'
-    Ambiamorous: 'Ambiamorous' # TODO
+    Ambiamorous: '兩元之爱'
     Anarcha-Queer: '酷兒安那其'
     Androgyne: '雙性同體'
     Androsexual: '男性戀'
@@ -592,8 +592,8 @@ flags:
     Lesbian: '女同性戀'
     Lesbiromantic: '女同浪漫傾向'
     Maverique: '孤膽性別'
-    Monoamorous: 'Monoamorous' # TODO
-    Monogamous: 'Monogamous' # TODO
+    Monoamorous: '單元之爱'
+    Monogamous: '单偶制'
     Muxe: 'Muxe'
     Nebularomantic: '星雲浪漫傾向'
     Neopronouns: '新代詞'
