@@ -1285,6 +1285,7 @@ flags:
     Achillean: 'Achillejs{adjective_n_k}'
     Alloromantic_Asexual: 'Alloromantyczn{adjective_n} aseksualn{adjective_n}'
     Agender: 'Apłciow{adjective_n}'
+    Ambiamorous: 'Ambiamoryczn{adjective_n}'
     Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
     Androgyne: 'Androgynopłciow{adjective_n}'
     Androsexual: 'Androseksualn{adjective_n}'
@@ -1312,6 +1313,7 @@ flags:
     Diamoric: 'Diamoryczn{adjective_n}'
     Enbian: 'Enbiańs{adjective_n_k}'  # Niebiańsk{adjective_n}
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
     Gay: 'Gej'
     Gender_Questioning: 'Rozważając{adjective_n_c} swoją płeć'  # Zastanawiając{adjective_n_c} się nad swoją płcią
     Genderfae: 'Nimficzn{adjective_n}'
@@ -1334,6 +1336,8 @@ flags:
     Lesbian: 'Lesbijka'
     Lesbiromantic: 'Lesbiromantyczn{adjective_n}'
     Maverique: 'Niezależnopłciow{adjective_n}'
+    Monoamorous: 'Monoamoryczn{adjective_n}'
+    Monogamous: 'Monogamiczn{adjective_n}'
     Muxe: 'Muxe'
     Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
     Neopronouns: 'Neozaimki'
