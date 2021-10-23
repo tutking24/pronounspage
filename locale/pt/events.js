@@ -32,6 +32,12 @@ module.exports = [
     new Event('{https://dezanove.pt/esta-vai-ser-a-primeira-marcha-do-1453592=2ª Marcha pelos Direitos LGBTI de Aveiro} (Portugal)', 'LGBTQ', 6, dayYear(12, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/805150373339790=21° Parada Da Diversidade LGBTI De Curitiba} (Brasil)', 'LGBTQ', 11, dayYear(14, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/357900524910000=25ª Parada do Orgulho LGBT de São Paulo} (Brasil)', 'LGBTQ', 6, dayYear(6, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/493723998521564/=Parada do Orgulho LGBTQIA de Mauá} (Brasil)', 'LGBTQ', 11, dayYear(28, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/384845398874612/=14° Parada do Orgulho LGBTI+ de Florianópolis} (Brasil)', 'LGBTQ', 11, dayYear(7, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/558763492035269/=4ª Parada do Orgulho LGBT+ de Santos} (Brasil)', 'LGBTQ', 10, dayYear(3, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/451121922567801/=4ª Parada do Orgulho LGBT de Rio Claro/SP} (Brasil)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/578588566271716/=1° Parada do Orgulho LGBTQIA+ de SJC} (Brasil)', 'LGBTQ', 6, dayYear(6, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1175941416231293=15ª Parada do Orgulho LGBTI+ de Itaquaquecetuba} (Brasil)', 'LGBTQ', 8, dayYear(28, 2022), EventLevel.Day),
+
 
 ];
