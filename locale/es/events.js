@@ -41,6 +41,8 @@ module.exports = [
     new Event('{https://www.facebook.com/events/396902965304865/=15 Marcha del Orgullo Rosario} (Argentina)', 'LGBTQ', 10, dayYear(30, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/MarchaDelOrgulloChubut/=Marcha del Orgullo Chubut} (Argentina)', 'LGBTQ', 11, dayYear(27, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/marchalgbtiquilmes/=Marcha del Orgullo LGBTI de Quilmes} (Argentina)', 'LGBTQ', 10, dayYear(30, 2021), EventLevel.Day),
-    new Event('{https://www.facebook.com/boqueronorgullo//=Marcha del Orgullo de Boquerón} (Puerto Rico)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/boqueronorgullo/=Marcha del Orgullo Boquerón} (Puerto Rico)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/OrgulloPergamino/=Marcha del Orgullo Pergamino} (Argentina)', 'LGBTQ', 12, dayYear(5, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/UnitedPartyCordoba/=Marcha del Orgullo de Córdoba} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/2979887162329004/=Marcha del orgullo LGBTI+ de Guadalajara} (México)', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),
 ];
