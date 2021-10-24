@@ -28,7 +28,7 @@ module.exports = [
     new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV Testing Day} (US)', null, 2, day(7), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', null, 2, day(1), EventLevel.Day),
-    new Event('Two Spirit Awareness Day', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
+    new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men\'s HIV/AIDS Awareness Day} (US)', null, 9, day(27), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day} (US)', null, 9, day(18), EventLevel.Day),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.Day),
@@ -53,6 +53,8 @@ module.exports = [
     new Event('{/terminology#lgbtq=LGBTQ} Visibility Day (Russia)', 'LGBTQ', 10, day(7), EventLevel.Day, ['lgbtq']),
     new Event('{https://en.wikipedia.org/wiki/Matthew_Shepard=Matthew Shepard} Day of Remembrance', null, 10, day(12), EventLevel.Day),
     new Event('{/terminology#transgender=Trans-}, {/terminology#travesti=Travesti} and {{/terminology#nonbinary=Non-Binary} Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'nonbinary', 'travesti']),
+    new Event('Missing and Murdered Indigenous Women, Girls, and {/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
+    
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
