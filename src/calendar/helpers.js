@@ -1,9 +1,11 @@
+const md5 = require("js-md5");
+
 class Day {
     constructor(year, month, day, dayOfWeek) {
-        this.year = year;
-        this.month = month;
-        this.day = day;
-        this.dayOfWeek = dayOfWeek || new Date(year, month - 1, day).getDay() || 7;
+        this.year = parseInt(year);
+        this.month = parseInt(month);
+        this.day = parseInt(day);
+        this.dayOfWeek = dayOfWeek ? parseInt(dayOfWeek) : new Date(this.year, this.month - 1, this.day).getDay() || 7;
     }
 
     static fromDate(date) {
@@ -21,6 +23,11 @@ class Day {
     toString() {
         return `${this.year}-${this.month.toString().padStart(2, '0')}-${this.day.toString().padStart(2, '0')}`;
     }
+
+    // for comparisons
+    toInt() {
+        return parseInt(`${this.year}${this.month.toString().padStart(2, '0')}${this.day.toString().padStart(2, '0')}`);
+    }
 }
 module.exports.Day = Day;
 
@@ -36,17 +43,19 @@ module.exports.iterateMonth = iterateMonth;
 module.exports.EventLevel = {
     Month: 0,
     Week: 1,
-    MinorDay: 2,
-    MajorDay: 3,
+    Nameday: 2,
+    Day: 3,
 }
 
 module.exports.Event = class {
-    constructor(name, flag, month, generator, level) {
+    constructor(name, flag, month, generator, level, terms = [], timeDescription = null) {
         this.name = name;
         this.flag = flag;
         this.month = month;
         this.generator = generator;
         this.level = level;
+        this.terms = terms;
+        this.timeDescription = timeDescription;
         this.daysMemoise = {}
     }
 
@@ -63,6 +72,9 @@ module.exports.Event = class {
     }
 
     getRange(year) {
+        if (year === undefined) {
+            year = Day.today().year;
+        }
         const days = this.getDays(year);
         if (days.length === 1) {
             return days[0].day;
@@ -121,7 +133,7 @@ module.exports.dayYear = function (day, year) {
     return internal;
 }
 
-module.exports.Calendar = class {
+class Year {
     constructor(year, events) {
         this.year = year;
         this.events = events;
@@ -138,5 +150,70 @@ module.exports.Calendar = class {
             if (!this.eventsByDate.hasOwnProperty(date)) { continue; }
             this.eventsByDate[date].sort((a, b) => b.level - a.level);
         }
+
+        this.eventsByTerm = {}
+        for (let event of events) {
+            for (let term of event.terms) {
+                if (this.eventsByTerm[term] === undefined) { this.eventsByTerm[term] = []; }
+                this.eventsByTerm[term].push(event);
+            }
+        }
+        for (let term in this.eventsByTerm) {
+            if (!this.eventsByTerm.hasOwnProperty(term)) { continue; }
+            this.eventsByTerm[term].sort((a, b) => a.getDays(this.year)[0].toInt() - b.getDays(this.year)[0].toInt())
+        }
+    }
+
+    isCurrent() {
+        return this.year === Day.today().year;
+    }
+}
+module.exports.Year = Year;
+
+module.exports.Calendar = class {
+    constructor(events, minYear = 0, maxYear = 9999) {
+        this._events = events;
+        this._minYear = minYear;
+        this._maxYear = maxYear;
+        this._years = {};
+    }
+
+    getYear(year) {
+        year = parseInt(year);
+        if (year < this._minYear || year > this._maxYear) {
+            return null;
+        }
+
+        if (this._years[year] === undefined) {
+            this._years[year] = new Year(year, this._events);
+        }
+
+        return this._years[year];
+    }
+
+    getCurrentYear() {
+        return this.getYear(Day.today().year);
+    }
+
+    *getAllYears() {
+        for (let y = this._minYear; y <= this._maxYear; y++) {
+            yield this.getYear(y);
+        }
+    }
+
+    buildSummary() {
+        const summary = {};
+        for (let year of this.getAllYears()) {
+            for (let month = 1; month <= 12; month++) {
+                for (let day of iterateMonth(year.year, month)) {
+                    const events = [];
+                    for (let event of year.eventsByDate[day.toString()] || []) {
+                        events.push(event.name);
+                    }
+                    summary[day.toString()] = md5(JSON.stringify(events));
+                }
+            }
+        }
+        return summary;
     }
 }

@@ -1,43 +1,53 @@
 <template>
     <div class="calendar">
         <div v-for="i in (startingDayOfWeek - 1)"></div>
-        <div v-for="d in iterateMonth(year, month)"
-             :class="['rounded-circle', getDayClass(d), markToday && d.equals(today) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
-             @click.stop="selectDay(d)"
-             :data-flag="getDayFlag(d)"
-             :style="getDayFlag(d) ? `background-image: url('${getDayFlag(d)}')` : ''"
+        <component :is="tooltips || getDayClass(d) === 'day' ? 'div' : 'nuxt-link'"
+                   v-for="d in iterateMonth(year.year, month)" :key="d.toString()"
+                   :to="`/${config.calendar.route}/${d}`"
+                   :class="['rounded-circle', getDayClass(d), mark && d.equals(mark) ? 'day-today' : '', d.equals(selectedDay) ? 'day-selected' : '']"
+                   @click.stop="selectDay(d)"
+                   :data-flag="getDayFlag(d)"
+                   :style="getDayFlag(d) ? `background-image: url('${getDayFlag(d)}')` : ''"
         >
             <div class="day-number">{{ d.day }}</div>
-            <div v-if="currentYear.eventsByDate[d.toString()] !== undefined && d.equals(selectedDay)" class="day-tooltip card text-dark shadow">
+            <div v-if="tooltips && year.eventsByDate[d.toString()] !== undefined && d.equals(selectedDay)" class="day-tooltip card text-dark shadow">
                 <div class="card-header d-flex justify-content-between">
                     <p class="h5 mb-0"><strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong></p>
-                    <button class="btn btn-sm py-0" @clik="selectedDay = null"><Icon v="times"/></button>
+                    <span>
+                        <nuxt-link :to="`/${config.calendar.route}/${d}`">
+                            <Icon v="link"/>
+                            <T>calendar.link</T>
+                        </nuxt-link>
+                        <button class="btn btn-sm py-0" @clik="selectedDay = null">
+                            <Icon v="times"/>
+                        </button>
+                    </span>
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <CalendarEvent v-for="event in currentYear.eventsByDate[d.toString()]" :event="event" :key="event.name"/>
+                        <li v-for="event in year.eventsByDate[d.toString()]" class="mb-2">
+                            <CalendarEvent :event="event" :key="event.name"/>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </component>
     </div>
 </template>
 
 <script>
     import { Day, iterateMonth, EventLevel } from '../src/calendar/helpers';
-    import { currentYear } from '../src/calendar/calendar';
 
     export default {
         props: {
             year: { required: true },
             month: { required: true },
-            markToday: { type: Boolean },
+            mark: { },
+            tooltips: { type: Boolean },
         },
         data() {
             return {
                 iterateMonth,
-                currentYear,
-                today: Day.today(),
                 selectedDay: null,
             }
         },
@@ -60,17 +70,17 @@
         },
         computed: {
             startingDayOfWeek() {
-                return new Day(this.year, this.month, 1).dayOfWeek;
+                return new Day(this.year.year, this.month, 1).dayOfWeek;
             }
         },
         methods: {
             getDayClass(d) {
-                if (this.currentYear.eventsByDate[d.toString()] === undefined) {
+                if (this.year.eventsByDate[d.toString()] === undefined) {
                     return 'day';
                 }
 
                 let maxLevel = 0;
-                for (let event of this.currentYear.eventsByDate[d.toString()]) {
+                for (let event of this.year.eventsByDate[d.toString()]) {
                     if (event.level > maxLevel) {
                         maxLevel = event.level;
                     }
@@ -79,7 +89,7 @@
                 return `day day-event day-event-${maxLevel}`;
             },
             getDayFlag(d) {
-                for (let event of (this.currentYear.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.MajorDay && e.flag)) {
+                for (let event of (this.year.eventsByDate[d.toString()] || []).filter(e => e.level === EventLevel.Day && e.flag)) {
                     return `/flags/${event.flag}.png`;
                 }
                 return null;
@@ -90,6 +100,9 @@
                 }
             },
             selectDay(d) {
+                if (!this.tooltips) {
+                    return;
+                }
                 if (d.equals(this.selectedDay)) {
                     this.selectedDay = null;
                 } else {

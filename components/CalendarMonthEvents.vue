@@ -1,12 +1,13 @@
 <template>
     <ul class="list-unstyled mb-0">
-        <CalendarEvent v-for="event in events" :event="event" :range="year" :key="event.name"/>
+        <li v-for="event in events" class="mb-2">
+            <CalendarEvent :event="event" :range="year.year" :key="event.name"/>
+        </li>
     </ul>
 </template>
 
 <script>
     import { iterateMonth } from '../src/calendar/helpers';
-    import { currentYear } from '../src/calendar/calendar';
 
     export default {
         props: {
@@ -16,8 +17,8 @@
         computed: {
             events() {
                 let events = [];
-                for (let day of iterateMonth(this.year, this.month)) {
-                    for (let event of currentYear.eventsByDate[day.toString()] || []) {
+                for (let day of iterateMonth(this.year.year, this.month)) {
+                    for (let event of this.year.eventsByDate[day.toString()] || []) {
                         if (event.isFirstDay(day)) {
                             events.push(event);
                         }

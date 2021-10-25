@@ -12,7 +12,7 @@ home:
     why: 'What''s the deal with pronouns?'
     about:
         - >
-            We all have pronouns. They're those words that we use instead of calling someone by their name every time we mention them.
+            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
             Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
             But it's actually not that simple…
         - >
@@ -82,45 +82,6 @@ pronouns:
     othersRaw: 'other'
     or: 'or'
     grammarTable: 'Table'
-    avoiding:
-        header: 'Avoiding gendered forms'
-        description: >
-            Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence.
-            See: {https://twitter.com/lypomania/status/1290274971642544128=@lypomania's guide},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal}
-        ideas:
-            -
-                header: 'Use names or initials instead of pronouns'
-                examples:
-                    - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
-                    - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
-                    -
-                        - 'Her graduation starts soon'
-                        - '{/:J=J}''s graduation starts soon'
-            -
-                header: 'Passive voice'
-                examples:
-                    - ['He answered the phone', 'The phone was answered']
-                    -
-                        - 'Wen takes good care of her cat'
-                        - 'Wen''s cat is well cared for'
-            -
-                header: 'Rephrasing the sentence (circumlocution)'
-                examples:
-                    - ['Lior did it all by himself', 'Lior did it all without any help']
-                    - ['Gael talks in his sleep', 'Gael talks while sleeping']
-            -
-                header: 'Replacing a pronoun with a descriptive noun or phrase'
-                examples:
-                    - ['She landed the plane safely', 'The pilot landed the plane safely']
-                    - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
-                    - ['She argues that…', 'The person who started this discussion argues that…']
-            -
-                header: 'Dropping pronouns'
-                examples:
-                    - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
-                    - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
 
 sources:
     header: 'Sources'
@@ -213,6 +174,10 @@ nouns:
 
     image: 'Picture'
 
+community:
+    header: 'Community'
+    headerLong: 'Queer community'
+
 terminology:
     header: 'Terminology'
     headerLong: 'Dictionary of queer terminology'
@@ -266,6 +231,12 @@ faq:
                     If you don't accept that, it only shows <em>you</em> in bad light.
                 - >
                     “Strange pronouns” are just a matter of getting used to.
+        made-up:
+            question: 'Those pronouns are made up!'
+            answer:
+                - >
+                    Yes. Yes they are. And so is every single word in every language.
+                    Some words are just older than others.
         how-to-know:
             question: 'How do I know how to address someone?'
             answer:
@@ -437,6 +408,12 @@ english: ~
 contact:
     header: 'Contact'
     authors: 'Authors of the website'
+    faq: >
+        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
+    technical: >
+        Do you have a technical issue or question? Please include your username and as many details as possible
+        (what does the error message say? are you on your phone or a desktop? which browser do you use?
+        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
     hate: >
         Wanna send us queerphobic hate mail?
         Just give it up, we're not discussing with trolls.
@@ -445,8 +422,9 @@ contact:
         name: 'The “Neutral Language Council” collective'
         description:
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
+                We are a queer collective dedicated to assembling, researching, shaping and promoting
+                gender neutral and nonbinary language.
+                We also support actions towards equality and social justice.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
         members: 'Current members'
         member: 'Member of the collective'
@@ -470,7 +448,7 @@ user:
         email:
             subject: 'Your login code is %code%'
             content: |
-                To confirm your email address, enter the following code on the website: %code%.
+                To confirm your email address, enter the following single-use code on the website: %code%.
 
                 If you didn't order this code, simply ignore this message.
         why: >
@@ -564,7 +542,7 @@ profile:
     card:
         link: 'Card picture'
         generate: 'Generate'
-        generating: 'Generation in progress…'
+        generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
 
 share: 'Share'
@@ -585,7 +563,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: 'Contact, social media, support'
 
 notFound:
@@ -687,45 +665,46 @@ calendar:
         11: 'November'
         12: 'December'
     dates:
-        1: 'January, %day%'
-        2: 'February, %day%'
-        3: 'March, %day%'
-        4: 'April, %day%'
-        5: 'May, %day%'
-        6: 'June, %day%'
-        7: 'July, %day%'
-        8: 'August, %day%'
-        9: 'September, %day%'
-        10: 'October, %day%'
-        11: 'November, %day%'
-        12: 'December, %day%'
+        1: 'January %day%'
+        2: 'February %day%'
+        3: 'March %day%'
+        4: 'April %day%'
+        5: 'May %day%'
+        6: 'June %day%'
+        7: 'July %day%'
+        8: 'August %day%'
+        9: 'September %day%'
+        10: 'October %day%'
+        11: 'November %day%'
+        12: 'December %day%'
     events:
-        pride_month: 'Pride Month'
-        trans_month: 'Trans Awareness Month'
+        pride_month: '{/terminology#pride=Pride} Month'
+        trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: 'Agender Pride Day	'
-        asexuality_day: 'International Asexuality Day'
-        bisexuality_day: 'Celebrate Bisexuality Day'
-        drag_day: 'Drag Day'
-        idahobit: 'International Day Against Homophobia, Transphobia and Biphobia'
-        intersex_day: 'Intersex Awareness Day'
-        intersex_remembrance_day: 'Intersex Day of Remembrance'
-        lesbian_day: 'Lesbian Day'
-        lesbian_visibility_day: 'Lesbian Visibility Day'
-        coming_out_day: 'Coming Out Day'
-        nonbinary_day: 'Nonbinary People''s Day'
-        pan_day: 'Pansexual & Panromantic Awareness Day'
-        trans_remembrance_day: 'Transgender Day of Remembrance'
-        trans_visibility_day: 'Trans Day of Visibility'
+        agender_day: '{/terminology#agender=Agender} Pride Day	'
+        asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
+        bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
+        drag_day: '{/terminology#drag=Drag} Day'
+        idahobit: 'International Day Against {/terminology#homophobia=Homophobia}, {/terminology#transphobia=Transphobia} and {/terminology#biphobia=Biphobia}'
+        intersex_day: '{/terminology#intersex=Intersex} Awareness Day'
+        intersex_remembrance_day: '{/terminology#intersex=Intersex} Day of Remembrance'
+        lesbian_day: 'International {/terminology#lesbian=Lesbian} Day'
+        lesbian_visibility_day: 'International {/terminology#lesbian=Lesbian} Visibility Day'
+        coming_out_day: '{/terminology#coming%20out=Coming Out} Day'
+        nonbinary_day: 'International {/terminology#nonbinary=Nonbinary People''s} Day'
+        pan_day: '{/terminology#pansexual=Pansexual} & {/terminology#panromantic=Panromantic} Awareness Day'
+        trans_remembrance_day: '{/terminology#transgender=Transgender} Day of Remembrance'
+        trans_visibility_day: 'International {/terminology#transgender=Trans} Day of Visibility'
         zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: 'Aromantic Spectrum Awareness Week'
-        asexual_week: 'Asexual Awareness Week'
-        bisexual_week: 'Bisexual Awareness Week'
+        arospec_week: '{/terminology#aromantic%20spectrum=Aromantic Spectrum} Awareness Week'
+        asexual_week: '{/terminology#asexual=Asexual} Awareness Week'
+        bisexual_week: '{/terminology#bisexual=Bisexual} Awareness Week'
         pronouns_day: 'Pronouns Day'
-        trans_week: 'Trans Awareness Week'
-        trans_parent_day: 'Trans Parent Day'
-        nonbinary_week: 'Nonbinary Awareness Week'
-        polyamory_day: 'Polyamory Day'
+        trans_week: '{/terminology#transgender=Trans} Awareness Week'
+        trans_parent_day: '{/terminology#transgender=Trans} Parent Day'
+        nonbinary_week: '{/terminology#nonbinary=Nonbinary} Awareness Week'
+        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
+        polyamory_day: '{/terminology#polyamory=Polyamory} Day'
         homophobia_sport: '{https://www.outsports.com/2020/2/20/21145344/international-day-against-homophobia-sports-twitter=International Day Against Homophobia in Sports}'
         gay_uncles_day: '{https://en.wikipedia.org/wiki/Gay_Uncles_Day=Gay Uncles Day}'
         lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
@@ -735,25 +714,43 @@ calendar:
         nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Nonbinary Parents Day}'
         trans_prisoner: '{https://transprisoners.net/about/=Trans Prisoner Day of Action and Solidarity}'
         xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender Visibility Day}'
-        genderqueer_day: 'Genderqueer Visibility Day'
-        genderfluid_day: 'Genderfluid Visibility Day'
+        genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
+        genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
         aids_day: 'World AIDS Day'
         tolerance_day: 'International Day of Tolerance'
         social_justice_day: 'World Day of Social Justice'
         stonewall_day: 'Anniversary of Stonewall Riots'
         domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
+        polysexual_day: '{/terminology#polysexual=Polysexual} & {/terminology#polyromantic=Polyromantic} Visibility Day'
         orlando_day: 'Pulse Night of Remembrance'
         aids_memorial: 'International AIDS Candlelight Memorial'
         health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: 'Lesbian Visibility Week'
-        demigender_day: 'Demigender Awareness Day'
-        pan_pride_day: 'Pansexual Pride Day'
-        transmasculine_day: 'Transmasculine People''s Day'
-        asexual_visibility_day: 'Asexual Visibility Day'
-
+        lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
+        demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
+        pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
+        transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
+        asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
+        bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
+        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
+        family_equality_day: 'International Family Equality Day'
+        aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
+        black_ribbon_day: 'Black Ribbon Day'
+        black_queer_week: 'Black Queer History Week'
+        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African Lesbian and Queer Women''s Pride Day}'
+        hate_crime_awareness_week: 'Hate Crime Awareness Week'
+        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
+        suicide_prevention_day: 'World Suicide Prevention Day'
+        suicide_prevention_month: 'Suicide Prevention Month'
+        aids_awareness_month: 'AIDS Awareness Month'
+        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
     banner: 'We''re celebrating'
+    celebrating_custom: 'is celebrated'
+    celebrating_day: 'is celebrated on'
+    celebrating_week: 'is celebrated on'
+    celebrating_month: 'is celebrated in'
     image:
         header: 'Download an image'
         overview: 'Overview'
         labels: 'Labels'
+    link: 'Link'
+    full: 'Full calendar'

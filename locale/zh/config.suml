@@ -23,7 +23,6 @@ pronouns:
         examples: ['💫', '💙']
         template: '打開一個例句，用自己的表情符號代替位址裏面的表情符號。'
     slashes: false
-    avoiding: false
     others: 'Other pronouns'
 
 pronunciation:

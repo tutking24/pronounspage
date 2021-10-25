@@ -166,6 +166,10 @@ nouns:
 
     image: 'Bild'
 
+community: # TODO
+    header: 'Community'
+    headerLong: 'Queer community'
+
 terminology:
     header: 'Terminologie'
     headerLong: 'Wörterbuch von Queerer Terminologie'
@@ -411,7 +415,7 @@ profile:
     pronounsInfo: >
         Du kannst entweder ein <strong>Pronomen</strong> (z.B. „sier“ or „sie/ihr“) oder einen <strong>Link</strong> (z.B. „https://de.pronouns.page/dey“)
         oder <strong>vier benutzerdefinierten Formen</strong> (z.B. „xier/xies/xiem/xien“).
-        Du kannst auch den {/pronouns#generator=<strong>Generator</strong>} verwenden, um die Sätze mit benutzerdefinierten Formen auszufüllen.
+        Du kannst auch den {/pronomen#generator=<strong>Generator</strong>} verwenden, um die Sätze mit benutzerdefinierten Formen auszufüllen.
     pronounsNotFound: 'Nicht erkennbares Format. Bitte beachte die oben genannte Anweisung.'
     words: 'Wörter'
     birthday: 'Alter'
@@ -469,7 +473,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL 1.0} Lizenz veröffentlicht.
+        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
     links: 'Kontakt, Social Media, Support'
 
 notFound:
@@ -559,6 +563,7 @@ flags:
     Achillean: 'Achilleisch'
     Agender: 'Ageschlechtlich'
     Alloromantic_Asexual: 'Alloromantisch-asexuell'
+    Ambiamorous: 'Ambiamorös'
     Anarcha-Queer: 'Anarcho-Queer'
     Androgyne: 'Androgyn'
     Androsexual: 'Androsexuell'
@@ -586,6 +591,7 @@ flags:
     Diamoric: 'Diamorös'
     Enbian: 'Enbisch'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
     Gay: 'Schwul'
     Gender_Questioning: 'Hinterfragen des Geschlechts'
     Genderfae: 'Genderfae'
@@ -608,6 +614,8 @@ flags:
     Lesbian: 'Lesbisch'
     Lesbiromantic: 'Lesbiromantisch'
     Maverique: 'Maverique'
+    Monoamorous: 'Monoamorös'
+    Monogamous: 'Monogam'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisch'
     Neopronouns: 'Neopronomen'
@@ -642,3 +650,109 @@ flags:
     Two_Spirit: 'Two-Spirit'
     Xenogender: 'Xenogeschlechtlich'
 
+calendar:
+    header: 'Kalender'
+    headerLong: 'Queerer Kalender'
+    months:
+        1: 'Januar'
+        2: 'Februar'
+        3: 'März'
+        4: 'April'
+        5: 'Mai'
+        6: 'Juni'
+        7: 'Juli'
+        8: 'August'
+        9: 'September'
+        10: 'Oktober'
+        11: 'November'
+        12: 'Dezember'
+    dates:
+        1: '%day%. Januar'
+        2: '%day%. Februar'
+        3: '%day%. März'
+        4: '%day%. April'
+        5: '%day%. Mai'
+        6: '%day%. Juni'
+        7: '%day%. Juli'
+        8: '%day%. August'
+        9: '%day%. September'
+        10: '%day%. Oktober'
+        11: '%day%. November'
+        12: '%day%. Dezember'
+    events:
+        pride_month: 'Pride-Monat'
+        trans_month: 'Transgender-Bewusstseins-Monat'
+        zaimki_birthday: 'Geburtstag von pronouns.page'
+        agender_day: 'Ageschlechtlicher Pride Tag'
+        asexuality_day: 'Internationaler Tag der Asexualität'
+        bisexuality_day: 'Tag der Bisexualität'
+        drag_day: 'Internationaler Tag des Drag'
+        idahobit: 'Internationaler Tag gegen Homo-, Bi-, Inter- und Transphobie'
+        intersex_day: 'Intersexueller Bewusstseinstag'
+        intersex_remembrance_day: 'Intersexueller Gedenktag'
+        lesbian_day: 'Lesbentag'
+        lesbian_visibility_day: 'Tag der lesbischen Sichtbarkeit'
+        coming_out_day: 'Coming-out-Tag'
+        nonbinary_day: 'Internationaler Tag nichtbinärer Menschen'
+        pan_day: 'Tag des pansexuellen und panromantischen Bewusstseins'
+        trans_remembrance_day: 'Gedenktag für die Opfer von Transphobie'
+        trans_visibility_day: 'Internationaler Tag für Trans-Sichtbarkeit'
+        zero_discrimination_day: 'Tag ohne Diskriminierung'
+        arospec_week: 'Aromantische Bewustseinswoche'
+        asexual_week: 'Asexuelle Bewusstseinswoche'
+        bisexual_week: 'Bisexuelle Bewusstseinswoche'
+        pronouns_day: 'Tag der Pronomen'
+        trans_week: 'Transgender-Bewusstseins-Woche'
+        trans_parent_day: 'Tag der Trans-Eltern'
+        nonbinary_week: 'Woche des nicht-binären Bewusstseins'
+        polyamory_day: 'Polyamorie-Tag'
+        homophobia_sport: 'Internationaler Tag gegen Homophobie im Sport'
+        gay_uncles_day: 'Tag des schwulen Onkels'
+        lgbtq_stem: 'LGBTQ+ STEM Tag'
+        trans_depathologization: 'Aktionstag für Trans-Depathologisierung'
+        lgbti_book_day: 'LGBTI-Bücher-Tag'
+        human_rights_day: 'Tag der Menschenrechte'
+        nonbinary_parents_day: 'Tag der nicht-binären Eltern'
+        trans_prisoner: 'Internationaler Tag für Solidarität mit trans* Gefangenen'
+        xenogender_day: 'Xenogeschlechtlicher Sichtbarkeitstag'
+        genderqueer_day: 'Genderqueerer Sichtbarkeitstag'
+        genderfluid_day: 'Genderfluider Sichtbarkeitstag'
+        aids_day: 'Welt-AIDS-Tag'
+        tolerance_day: 'Internationaler Tag der Toleranz'
+        social_justice_day: 'Welttag der sozialen Gerechtigkeit'
+        stonewall_day: 'Christopher Street Day (Jahrestag des Stonewall-Aufstands)'
+        domestic_violence: 'Tag des Bewusstseins für häusliche Gewalt gegen LGBTQ'
+        polysexual_day: 'Tag des polysexuellen und polyromantischen Bewusstseins'
+        orlando_day: 'Jahrestag des Massakers im queeren Club "Pulse"'
+        aids_memorial: '{http://candlelightmemorial.de=AIDS Candlelight Memorial}'
+        health_week: 'Woche zur Sichtbarkeit queerer Gesundheit'
+        lesbian_visibility_week: 'Woche der lesbischen Sichtbarkeit'
+        demigender_day: 'Demigeschlechtlicher Bewusstseinstag'
+        pan_pride_day: 'Pansexueller Pride Tag'
+        transmasculine_day: 'Tag transmaskuliner Menschen'
+        asexual_visibility_day: 'Asexueller Sichtbarkeitstag'
+        bi_health_month: 'Monat zur Sichtbarkeit bisexueller Gesundheit'
+        holocaust_remembrance_day: 'Holocaust-Gedenktag'
+        family_equality_day: 'Regenbogenfamilientag'
+        aro_month: 'Monat des aromantischen Bewusstseins'
+        black_ribbon_day: 'Europäischer Tag des Gedenkens an die Opfer von Stalinismus und Nationalsozialismus'
+        black_queer_week: 'Black Queer History Week'
+        mena_lesbian_day: 'Naher Osten und Nordafrika Lesbischer und Queerer Frauen* Pride Tag'
+        hate_crime_awareness_week: 'Hassverbrechen Sensibilisierungswoche'
+        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
+        suicide_prevention_day: 'Welttag der Suizidprävention'
+        suicide_prevention_month: 'Monat der Suizidprävention'
+        aids_awareness_month: 'AIDS-Bewusstseins-Monat'
+        genderfluid_week: 'Genderfluide Bewusstseinswoche'
+
+    banner: 'Heute feiern wir'
+    celebrating_custom: 'is celebrated' # TODO
+    celebrating_day: 'is celebrated on' # TODO
+    celebrating_week: 'is celebrated on' # TODO
+    celebrating_month: 'is celebrated in' # TODO
+    image:
+        header: 'Bild herunterladen'
+        overview: 'Überschau'
+        labels: 'Etiketten'
+    link: 'Link'
+    full: 'Ganzer Kalender' 

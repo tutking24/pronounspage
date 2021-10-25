@@ -23,6 +23,7 @@ export const head = ({title, description, banner}) => {
     const meta = { meta: [] };
 
     if (title) {
+        title = clearLinkedText(title, false);
         title += ' • ' + process.env.TITLE;
         meta.title = title;
         meta.meta.push({ hid: 'og:title', property: 'og:title', content: title });
@@ -30,6 +31,7 @@ export const head = ({title, description, banner}) => {
     }
 
     if (description) {
+        description = clearLinkedText(description);
         meta.meta.push({ hid: 'description', name: 'description', content: description });
         meta.meta.push({ hid: 'og:description', property: 'og:description', content: description });
         meta.meta.push({ hid: 'twitter:description', property: 'twitter:description', content: description });
@@ -197,12 +199,16 @@ export const handleErrorAsync = func => (req, res, next) => {
     func(req, res, next).catch((error) => next(error));
 };
 
-export const clearLinkedText = (text) => {
-    return text
+export const clearLinkedText = (text, quotes = true) => {
+    text = text
         .replace(/{[^}=]+=([^}=]+)}/g, '$1')
-        .replace(/{([^}=]+)}/g, '$1')
-        .replace(/[„”"']/g, '')
-    ;
+        .replace(/{([^}=]+)}/g, '$1');
+
+    if (quotes) {
+        text = text.replace(/[„”"']/g, '');
+    }
+
+    return text;
 }
 
 export const sortClearedLinkedText = (items, key) => {
@@ -212,7 +218,7 @@ export const sortClearedLinkedText = (items, key) => {
 
 export const clearKey = (key) => {
     if (!key) { return null; }
-    return key.replace(/'/g, '_');
+    return key.replace(/'/g, '_').toLowerCase();
 }
 
 export const sleep = (milliseconds) => {

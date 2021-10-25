@@ -418,7 +418,7 @@ profile:
     pronounsInfo: >
         Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
         ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
-        Vous pouvez également utiliser {/pronouns#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
+        Vous pouvez également utiliser {/pronoms#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
     pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
     birthday: ' ge'
@@ -476,7 +476,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL}.
     links: 'Contact, réseaux sociaux, soutien'
 
 notFound:
@@ -567,6 +567,7 @@ flags:
     Achillean: 'Achilléen'
     Alloromantic_Asexual: 'Alloromantique asexue{inflection_l}'
     Agender: 'Agenre'
+    Ambiamorous: 'Ambiamoureu{inflection_x}'
     Anarcha-Queer: 'Anarcho-queer'
     Androgyne: 'Androgyne'
     Androsexual: 'Androsexue{inflection_l}'
@@ -594,6 +595,7 @@ flags:
     Diamoric: 'Diamorique'
     Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
     Gay: 'Gay'
     Gender_Questioning: 'En questionnement de genre'
     Genderfae: 'Genderfae'
@@ -615,6 +617,8 @@ flags:
     Leather_Pride: 'Pride cuir'
     Lesbian: 'Lesbienne'
     Lesbiromantic: 'Lesbiromantique'
+    Monoamorous: 'Monoamoureu{inflection_x}'
+    Monogamous: 'Monogame'
     Maverique: 'Maverique'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebuloromantique'

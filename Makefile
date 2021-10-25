@@ -23,8 +23,10 @@ deploy: install
 	node server/migrate.js
 	echo "\nimportScripts('https://arc.io/arc-sw-core.js');" >> static/sw.js
 	ln -sfn ../data/img ./static/img-local
+	ln -sfn ../data/docs ./static/docs-local
 
 switch:
 	rm -rf cache
 	ln -sfn ./locale/${LANG} ./data
-	ln -sfn ../locale/{$LANG}/img ./static/img-local
+	ln -sfn ../locale/${LANG}/img ./static/img-local
+	ln -sfn ../locale/${LANG}/docs ./static/docs-local

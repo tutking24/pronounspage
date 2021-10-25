@@ -16,7 +16,6 @@ pronouns:
     null: false
     emoji: false
     slashes: ['pronoun_n', 'possessive', 'pronoun_d', 'pronoun_a']
-    avoiding: false
     others: 'Andere Pronomen'
 
 pronunciation:
@@ -153,6 +152,10 @@ profile:
         - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
         defaultPronoun: 'er'
+
+calendar:
+    enabled: true
+    route: 'kalender'
 
 census:
     enabled: false

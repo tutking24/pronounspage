@@ -46,8 +46,100 @@ pronouns:
             honorific: '#'
         examples: ['💫', '💙', '🐿']
         template: 'Otwórz dowolny z przykładów i podmień emoji w URLu na swoje.'
-    null: false
-    avoiding: 'unikanie'
+    null:
+        description: '{/unikanie=Unikanie form nacechowanych płciowo}'
+        history: >
+            Niektóre osoby niebinarne preferują używanie form unikających precyzowania płci
+            zamiast tych nacechowanych czy to binarnie czy niebinarnie.
+            Warto też używać ich mówiąc o osobach, których płci nie znamy.
+            Choć w silnie zgenderyzowanym języku polskim jest to względnie trudne do zrobienia
+            i może lekko zmieniać znaczenie zdania,
+            to jednak wcale nie jest niemożliwe.
+        routes: ['unikanie']
+        ideas:
+            -
+                header: 'Zmiana podmiotu zdania'
+                examples:
+                    - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
+                    - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
+                    - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+            -
+                header: 'Strona bierna'
+                examples:
+                    - [ 'zgubił telefon', 'telefon został zgubiony' ]
+                    - [ 'znalazłam telefon', 'telefon został znaleziony' ]
+            -
+                header: 'Forma bezosobowa'
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
+                    - [ 'znalazłam telefon', 'znaleziono telefon' ]
+                    - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+            -
+                header: 'Bezosobowe użycie 3. os. mnogiej'
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi' ]
+            -
+                header: 'Podmiot logiczny w celowniku'
+                examples:
+                    - [ 'przypomniałem sobie', 'przypomniało mi się' ]
+                    - [ 'zmarzłam', 'zrobiło mi się zimno' ]
+                    - [ 'zrobiłem', 'udało mi się zrobić' ]
+            -
+                header: 'Bezokolicznikowy czas przyszły'
+                examples:
+                    - [ 'będę robiła', 'będę robić' ]
+                    - [ 'będę jadł', 'będę jeść' ]
+            -
+                header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
+                examples:
+                    - [ 'gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę' ]
+            -
+                header: 'Imiesłowy'
+                examples:
+                    - [ 'usiadłem na kanapie', 'usiadłszy na kanapie' ]
+                    - [ 'wypiłam herbatę', 'wypiwszy herbatę' ]
+                    - [ 'posprzątałem mieszkanie', 'mieszkanie posprzątane' ]
+            -
+                header: 'Unikanie trybu przypuszczającego'
+                examples:
+                    - [ 'czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?' ]
+                    - [ 'może bym tak pojechała na wakacje?', 'może pojadę na wakacje?' ]
+            -
+                header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
+                examples:
+                    - [ 'zarządca', 'osoba zarządzająca' ]
+                    - [ 'kandydaci i kandydatki', 'osoby kandydujące' ]
+                    - [ 'proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem' ]
+                    - [ 'mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili' ]
+                    - [ 'dziennikarze oko.press', 'redakcja oko.press' ]
+                    - [ 'fani Mariny', 'fandom Mariny' ]
+            -
+                header: 'Skrócone zaimki'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'to dla niego', 'to dlań' ]
+                    - [ 'mieszkam u niej', 'mieszkam uń' ]
+            -
+                header: 'Skrócone zaimki + strona bierna'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'zrobiła', 'było przezeń zrobione' ]
+            -
+                header: 'Staropolska, rzeczownikowa odmiana przymiotników'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'jestem szczęśliwa!', 'jestem szczęśliw!' ]
+                    - [ 'czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?' ]
+            -
+                header: 'Skróty'
+                examples:
+                    - [ 'Katarzyna Nowak', 'K. Nowak' ]
+                    - [ 'Szanowny Pan Białek', 'Sz. P. Białek' ]
+                    - [ 'Towarzyszka Q', 'Tow. Q' ]
+            -
+                header: 'Liczebniki zbiorowe'
+                examples:
+                    - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
     others: 'Pozostałe formy'
 
 pronunciation:
@@ -112,12 +204,14 @@ terminology:
     route: 'terminologia'
 
 names:
-    enabled: false
+    enabled: true
+    published: false
     route: 'imiona'
     legally: true
     count: true
     countSex: { M: 'mars', K: 'venus' }
     countOrdinal: { 1: 'pierwsze imię', 2: 'drugie imię' }
+    namedays: true
 
 faq:
     enabled: true
@@ -141,6 +235,19 @@ links:
                 Nigdzie nie występuje zastrzeżenie, że nie tworzy się form 1. i 2. osoby rodzaju nijakiego w czasie przeszłym.
                 Tak więc z punktu widzenia gramatycznego formy <em>byłom, byłoś, robiłom, robiłoś, widziałom, widziałoś</em> itd.
                 są poprawne, zgodne z systemem językowym.
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://pts-seksuologia.pl/sites/strona/83/stanowisko-pts-ws-sytuacji-spolecznej-zdrowotnej-i-prawnej-osob-transplciowych'
+            headline: 'Stanowisko Polskiego Towarzystwa Seksuologicznego ws. sytuacji społecznej, zdrowotnej i prawnej osób transpłciowych'
+            quote: >
+                Na jakość życia osób transpłciowych silnie wpływa sposób, w jaki odnoszą się do nich inni.
+                Ich doświadczenia w relacjach społecznych wyraźnie pokazują, jak ważne jest poszanowanie potrzeby każdego człowieka,
+                by zwracano się do niego zgodnie z przeżywaną tożsamością, w tym tożsamością płciową.
+                Dotyczy to między innymi przyjętej przez daną osobę formy imienia, form rodzajowych wypowiadanych wobec niej zdań,
+                a także zwracania się do niej zwrotami typowymi wobec płci, w której psychologicznie funkcjonuje.
+                \[…]
+                Tożsamość płciowa – pojęcie to rozumiemy jako poczucie przynależności osoby do określonej płci,
+                przeżywanie i identyfikowanie siebie jako kobiety, mężczyzny albo osoby innej płci.
         -
             icon: 'comment-alt-edit'
             lang: ['en']
@@ -214,6 +321,30 @@ links:
             extra: ' – Obserwatorium Językowe Uniwersytetu Warszawskiego'
             quote: >
                 środ. «forma gramatyczna służąca do opisu osób o nieokreślonej płci, inspirowana powieścią „Perfekcyjna niedoskonałość” Jacka Dukaja»
+        -
+            icon: 'comment-alt-edit'
+            url: '/docs-local/Praca Magisterska Magdalena Daniec.pdf'
+            headline: 'Czy w społeczeństwie dychotomicznym płciowo jest możliwość akceptacji niebinarności płciowej? Badania świadomości respondentów w kwestii projektowania pytań o płeć'
+            extra: ' – Magdalena Maria Daniec; Akademia Górniczo-Hutnicza w Krakowie (praca magisterska; stworzona przy udziale naszego kolektywu i opublikowana za zgodą autorki)'
+            quote: >
+                Przeprowadzone przeze mnie badania pokazały potencjalne początki przemian
+                społecznych. Badani, którzy bez pomocy, na przykład w formie przykładowej
+                kategoryzacji, w większości byli w stanie podzielić płeć w sposób niebinarny pokazują
+                odchodzenie od dychotomicznego pojmowania płci. Jest to strategia przekraczania
+                binarności, pozwalająca na wprowadzenie trzeciej kategorii płciowej lub w niektórych
+                przypadkach rozdrobnienie kategorii płciowych.
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://journals.umcs.pl/et/article/view/11729'
+            headline: 'Niebinarność płciowa w języku polskim. Badanie pilotażowe'
+            extra: ' – Szymon Misiek; Uniwersytet Warszawski; Ethnolinguistics. Problems of Language and Culture'
+            quote: >
+                Niniejszy artykuł ma na celu zarysowanie zjawiska niebinarności płciowej
+                i doświadczeń językowych osób niebinarnych posługujących się językiem polskim.
+                W części pierwszej mowa o pojęciu niebinarności płciowej,
+                w drugiej – omawiane są jego językowe aspekty,
+                w trzeciej – prezentowane wyniki przeprowadzonego prez autora badania ankietowego wśród polskojęzycznych osób niebinarnych;
+                w części czwartej następuje podsumowanie rozważań i wskazanie możliwych kierunków dalszych badań.
     links:
         -
             icon: 'globe-europe'
@@ -350,7 +481,7 @@ links:
             icon: 'atlas'
             url: 'https://tranzycja.pl/'
             headline: 'Tranzycja.pl'
-            extra: '– Repozytorium wiedzy o transpłciowości i tranzycji'
+            extra: ' – Repozytorium wiedzy o transpłciowości i tranzycji'
         -
             icon: 'book'
             url: 'https://jakmowicolgbt.pl'
@@ -358,7 +489,19 @@ links:
         -
             icon: 'sticky-note'
             url: 'http://www.todziala.org'
-            headline: 'Kamapnia: To działa!'
+            headline: 'Kampania: To działa!'
+        -
+            icon: 'book'
+            url: 'https://pl.m.wikisource.org/wiki/Brzydkie_kacz%C4%85tko_(Mirandola)'
+            headline: 'Brzydkie Kaczątko, Hans Christian Andersen'
+            extra: ' – przykład opowiadania pomagającego osłuchać się z użyciem rodzaju nijakiego/neutralnego w normatywnym kontekście'
+            quote: >
+                — O, dzięki Bogu, że jestem takie brzydkie! — zawołało kaczątko. — Pies mnie nawet tknąć nie chciał.
+                I zamknąwszy oczy, leżało cichutko, przytulone do trzciny, pośród huku wystrzałów, duszącego dymu
+                i świszczącego śrutu, który śmierć roznosił. Późno uciszyło się na krwawym stawie,
+                lecz wystraszone kaczątko jeszcze przez kilka godzin nie śmiało ruszyć się z miejsca.
+                Na koniec cisza je uspokoiła, podniosło głowę, otworzyło oczy, a nie widząc nikogo, zaczęło uciekać,
+                ile mu sił starczyło, dalej, dalej, dalej!
     mediaGuests:
         -
             icon: 'newspaper'
@@ -444,6 +587,38 @@ links:
             url: 'https://spoti.fi/3DsrA0J'
             headline: 'Język niebinarny dla początkujących'
             extra: ' – Archie w podcaście <strong>Dobrze zrozumieć</strong> w ramach kampanii {http://www.todziala.org=<strong>To działa!</strong>}'
+        -
+            icon: 'play-circle'
+            url: 'https://www.facebook.com/kulturarownosci/videos/6496303737054192/'
+            headline: 'Nauczyłoś się? Podstawy języka neutralnego'
+            extra: ' – wykład Sybila na Festiwalu Równych Praw 2021, <strong>Kultura Równości</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://www.newsweek.pl/polska/spoleczenstwo/zaimki-osobowe-uzywane-wobec-osob-transplciowych-cisplciowych-niebinarnych-neutratywy/fs5cdl5'
+            headline: 'Wkurzająca maniera czy początek rewolucji? O co chodzi z zaimkami neutralnymi płciowo'
+            extra: ' – <strong>Newsweek</strong>'
+            quote: >
+                NEWSWEEK: To początek rewolucji w języku?<br/>
+                KAFKA: Formy neutralne nie są nowe, a po prostu nie są bardzo powszechne w języku polskim.
+                I to mamy nadzieję zmienić. Co prawda wymaga to trochę pracy,
+                czasu i przede wszystkim chęci, ale nie jest tak straszne jakby mogło się wydawać.<br/>
+                ADNREA: Tak. „Rewolucja” nie musi być strasznym słowem.
+                Chcemy zmienić świat na choć odrobinę lepszy, przyjaźniejszy, inkluzywniejszy.
+        -
+            icon: 'newspaper'
+            url: 'https://queer.pl/artykul/206004/miedzynarodowy-dzien-zaimkow-rozmowa-z-rada-jezyka-neutralnego-prowadzaca-strone-zaimkipl'
+            headline: 'Międzynarodowy Dzień Zaimków: rozmowa z Radą Języka Neutralnego, prowadzącą stronę zaimki.pl'
+            extra: ' – <strong>Queer.pl</strong>'
+            quote: >
+                Queer.pl: Czy Waszym zdaniem jest szansa, aby język polski dostosował się w bliższej
+                lub dalszej przyszłości do języka niebinarnego?
+                Chociażby w języku angielskim kwestia ta jest o wiele łatwiejsza z uwagi na bezpłciowe formy czasowników.<br/>
+                \[…]<br/>
+                Archie: Zdaje się być to możliwe. Nie poświęcałobyśmy na ten projekt tyle czasu i energii,
+                gdybyśmy nie wierzyły w jego powodzenie. Grupa osób, które korzystają ze strony zaimki.pl
+                jest na tyle duża, że jesteśmy w stanie stwierdzić, jak wielkie jest zapotrzebowanie
+                na niebinarną polszczyznę i przestrzeń do wyrażania siebie. Tak jak już wcześniej wspomniałośmy,
+                język to żywy twór, zmienia się, a my pomagamy to ustrukturyzować.
     mediaMentions:
         -
             icon: 'newspaper'
@@ -924,6 +1099,34 @@ links:
             url: 'http://dobrerzeczy.online/femaleSwitcher/'
             headline: 'Female switcher'
             extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński.'
+    names:
+        -
+            icon: 'pen-nib'
+            url: '/blog/imiona-unisex-pesel'
+            headline: 'Imiona „unisex” w rejestrze PESEL'
+            quote: >
+                W zależności od tego, na którą metrykę spojrzymy, najbardziej uniseksowymi imionami uznawanymi przez urzędy są:
+                 – Maria – głównie ze względu na tradycję nadawania tego imienia chłopcom na cześć Marii z Nazaretu,
+                 – Andrea - jeśli patrzymy tylko na pierwsze imiona,
+                 – Dominique – z imponującym balansem 0.494, choć niezbyt popularne.
+                Najważniejszy wniosek jednak jest taki, że już teraz urzędy uznają całą masę imion za zgodne z ustawą niezależnie od płci metrykalnej 😉
+        -
+            icon: 'info-circle'
+            url: 'https://docs.google.com/document/d/1xkX0LE1EiwGqRyVFsMImmY2XnsO7f8jFUjUbUC77r6Y/edit'
+            headline: 'Poradnik, jak urzędowo zmienić imię w Polsce'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/7,75410,26361697,prof-klosinska-dzban-to-slowo-nacechowane-pejoratywnie.html?disableRedirects=true'
+            headline: 'Prof. Katarzyna Kłosińska o neutralnych płciowo imionach'
+            quote: >
+                Od kilku lat coraz częściej dostajemy z urzędu stanu cywilnego prośby o opiniowanie imion neutralnych płciowo.
+                Najczęściej chodzi o nastolatki, których płeć biologiczna jest inna niż psychiczna,
+                są w trakcie procedury korekty płci lub nie identyfikują się ani jako kobieta, ani mężczyzna.
+                Chcą zmienić imię na takie, które nie będzie się kończyło ani na „a”, jak w polszczyźnie imiona kobiece,
+                ani na spółgłoskę, przypisaną imionom męskim.
+                Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
+                bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
+                należy uznać tę pierwszą za wyższą.
 
 people:
     enabled: false

@@ -17,12 +17,14 @@ pronouns:
             Some like when others alternate between those forms when talking about them.
         examples: ['he&she', 'he&they', 'she&they']
     null:
-        description: 'No pronouns / null pronouns / pronounless / nameself'
+        description: >
+            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
+            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
         history: >
             Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence. See:
-            {/avoiding=Avoiding gendered forms} &
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal}.
+            omitting pronouns with passive voice, or restructuring the sentence.
+            See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
+            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -31,6 +33,39 @@ pronouns:
             reflexive: '#self'
         examples: [':Andrea', ':S']
         template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
+        routes: ['avoiding', 'no-pronouns', 'null', 'pronounless', 'nullpronominal', 'nameself']
+        ideas:
+            -
+                header: 'Use names or initials instead of pronouns'
+                examples:
+                    - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
+                    - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
+                    -
+                        - 'Her graduation starts soon'
+                        - '{/:J=J}''s graduation starts soon'
+            -
+                header: 'Passive voice'
+                examples:
+                    - ['He answered the phone', 'The phone was answered']
+                    -
+                        - 'Wen takes good care of her cat'
+                        - 'Wen''s cat is well cared for'
+            -
+                header: 'Rephrasing the sentence (circumlocution)'
+                examples:
+                    - ['Lior did it all by himself', 'Lior did it all without any help']
+                    - ['Gael talks in his sleep', 'Gael talks while sleeping']
+            -
+                header: 'Replacing a pronoun with a descriptive noun or phrase'
+                examples:
+                    - ['She landed the plane safely', 'The pilot landed the plane safely']
+                    - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
+                    - ['She argues that…', 'The person who started this discussion argues that…']
+            -
+                header: 'Dropping pronouns'
+                examples:
+                    - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
+                    - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
     emoji:
         description: 'Emojiself pronouns'
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
@@ -43,7 +78,6 @@ pronouns:
         examples: ['💫', '💙']
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
     slashes: true
-    avoiding: 'avoiding'
     others: 'Other pronouns'
 
 pronunciation:
@@ -72,11 +106,15 @@ nouns:
     submit: true
     templates: true
 
+community:
+    route: 'terminology'
+
 inclusive:
     enabled: false
 
 terminology:
     enabled: true
+    published: true
     categories:
         - 'sexual orientation'
         - 'romantic orientation'

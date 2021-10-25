@@ -449,7 +449,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: '通訊錄, 社交媒體, 支持'
 
 notFound:
@@ -541,6 +541,7 @@ flags:
     Achillean: '阿喀琉人'
     Agender: '無性別'
     Alloromantic_Asexual: '浪漫傾向無性戀'
+    Ambiamorous: '兩元之爱'
     Anarcha-Queer: '酷兒安那其'
     Androgyne: '雙性同體'
     Androsexual: '男性戀'
@@ -568,6 +569,7 @@ flags:
     Diamoric: '開愛'
     Enbian: '非二元愛'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'P'
     Gay: '同性戀'
     Gender_Questioning: '性別質疑'
     Genderfae: '仙性別'
@@ -590,6 +592,8 @@ flags:
     Lesbian: '女同性戀'
     Lesbiromantic: '女同浪漫傾向'
     Maverique: '孤膽性別'
+    Monoamorous: '單元之爱'
+    Monogamous: '单偶制'
     Muxe: 'Muxe'
     Nebularomantic: '星雲浪漫傾向'
     Neopronouns: '新代詞'

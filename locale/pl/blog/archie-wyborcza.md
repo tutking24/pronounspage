@@ -4,6 +4,8 @@
 
 ![](/img-local/blog/lobby-lgbt-wyborcza.jpg)
 
+Kontekst: [List otwarty w sprawie transfobii na łamach Wysokich Obcasów i Gazety Wyborczej](https://lobby.lgbt/aktualnosci/ogloszenia/list-otwarty-do-wysokich-obcasow-i-gazety-wyborczej/)
+
 Każdego dnia walczymy o widoczność osób będących pod parasolem transpłciowości przez tworzenie bezpiecznej
 i komfortowej przestrzeni językowej, dokładamy wszelkich starań, by rodzaj neutralny nie był rodzajem infantylnym,
 by zaimki inne niż ona i on przestały brzmieć dziwnie. Robimy to wszystko po to,

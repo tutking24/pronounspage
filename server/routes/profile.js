@@ -43,6 +43,7 @@ const prepareProfile = (profile, isSelf) => {
         credentialsLevel: profile.credentialsLevel,
         credentialsName: profile.credentialsName,
         card: profile.card,
+        cardDark: profile.cardDark,
     };
 }
 
@@ -277,11 +278,19 @@ router.post('/profile/request-card', handleErrorAsync(async (req, res) => {
         return res.status(400).json({error: 'Missing user'});
     }
 
-    await req.db.get(SQL`
-        UPDATE profiles
-        SET card = ''
-        WHERE userId=${req.user.id} AND locale=${global.config.locale} AND card IS NULL 
-    `);
+    if (req.query.dark === '1') {
+        await req.db.get(SQL`
+            UPDATE profiles
+            SET cardDark = ''
+            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND cardDark IS NULL 
+        `);
+    } else {
+        await req.db.get(SQL`
+            UPDATE profiles
+            SET card = ''
+            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND card IS NULL 
+        `);
+    }
 
     return res.json('OK');
 }));
@@ -292,12 +301,12 @@ router.get('/profile/has-card', handleErrorAsync(async (req, res) => {
     }
 
     const card = await req.db.get(SQL`
-        SELECT card
+        SELECT card, cardDark
         FROM profiles
         WHERE userId=${req.user.id} AND locale=${global.config.locale}
     `);
 
-    return res.json(card ? card.card : null);
+    return res.json(card);
 }));
 
 export default router;

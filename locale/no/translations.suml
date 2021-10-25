@@ -79,7 +79,6 @@ pronouns:
     othersRaw: 'andre'
     or: 'eller'
     grammarTable: 'Tabell'
-    avoiding: false
 
 sources:
     header: 'Kilder'
@@ -417,8 +416,8 @@ profile:
     pronounsInfo: >
         Du kan taste inn ett <strong>pronomen</strong> (feks. “de” eller “hun/henne”)
         eller en <strong>link</strong> (feks. “http://no.pronouns.page/hun”).
-        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self"). 
-        Du kan også bruke {/pronouns#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
+        eller <strong>tilpasset fire former </strong> (eg. "“hen/hen/hens/hen self").
+        Du kan også bruke {/pronomen#generator=<strong>generatoren</strong>} til å fylle ut setninger med tilpassede former.
     pronounsNotFound: 'Kjenner ikke igjen formatet. Vennligst sjekk ut instruksjonene over.'
     words: 'Ord'
     birthday: 'Alder'
@@ -476,7 +475,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL 1.0} lisensen.
+        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL} lisensen.
     links: 'Kontakt, sosiale medier, hjelp'
 
 notFound:
@@ -567,6 +566,7 @@ flags:
     Achillean: 'Achillean'
     Alloromantic_Asexual: 'Alloromantisk aseksuell'
     Agender: 'Akjønnet'
+    Ambiamorous: 'Ambiamorøs'
     Anarcha-Queer: 'Skeiv anarkisme'
     Androgyne: 'Androgyn'
     Androsexual: 'Androseksuell'
@@ -594,6 +594,7 @@ flags:
     Diamoric: 'Diamorisk'
     Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
     Gay: 'Homofil'
     Gender_Questioning: 'Spørrende om kjønn'
     Genderfae: 'Kjønnsfae'
@@ -616,6 +617,8 @@ flags:
     Lesbian: 'Lesbisk'
     Lesbiromantic: 'Lesbiromantisk'
     Maverique: 'Maverique'
+    Monoamorous: 'Monoamorøs'
+    Monogamous: 'Monogam'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'

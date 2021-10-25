@@ -171,6 +171,10 @@ nouns:
 
     image: 'Imagen'
 
+community:
+    header: 'Comunidad'
+    headerLong: 'Comunidad queer'
+
 terminology:
     header: 'Terminología'
     headerLong: 'Diccionario de terminología queer'
@@ -424,7 +428,7 @@ profile:
     pronounsInfo: >
         Puedes introducir un <strong>pronombre</strong> (p. ej. “elle” o “ella”)
         o un <strong>enlace</strong> (“http://es.pronouns.page/ellx”).
-        Puedes también usar el {/pronouns#generator=<strong>generador</strong>} para rellenar las oraciones con formas personalizadas.  
+        Puedes también usar el {/pronombres#generator=<strong>generador</strong>} para rellenar las oraciones con formas personalizadas.
     pronounsNotFound: 'Formato no reconocido. Por favor consulte las instrucciones de arriba.'
     words: 'Palabras'
     birthday: 'Edad'
@@ -482,7 +486,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=El código fuente} y el contenido estan publicado bajo la licencia {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=El código fuente} y el contenido estan publicado bajo la licencia {/license=OQL}.
     links: 'Contacto, redes sociales, apoyo'
 
 notFound:
@@ -573,6 +577,7 @@ flags:
     Achillean: 'Aquilean{inflection}'
     Alloromantic_Asexual: 'Alorrománti{inflection_c} asexual'
     Agender: 'Agénero'
+    Ambiamorous: 'Ambiamoros{inflection}'
     Anarcha-Queer: 'Anarco-queer'
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androsexual'
@@ -600,6 +605,7 @@ flags:
     Diamoric: 'Diamóri{inflection_c}'
     Enbian: 'Nobian{inflection}'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Afeminad{inflection}'
     Gay: 'Gay'
     Gender_Questioning: 'Cuestionándose el género'
     Genderfae: 'Hadagénero'
@@ -622,6 +628,8 @@ flags:
     Lesbian: 'Lesbiana'
     Lesbiromantic: 'Lesbirrománti{inflection_c}'
     Maverique: 'Maverique'
+    Monoamorous: 'Monoamoros{inflection}'
+    Monogamous: 'Monógam{inflection}'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebulosarrománti{inflection_c}'
     Neopronouns: 'Neopronombres'
@@ -685,6 +693,19 @@ calendar:
         10: '%day% de octubre'
         11: '%day% de noviembre'
         12: '%day% de diciembre'
+    months_abl:
+        1: 'enero'
+        2: 'febrero'
+        3: 'marzo'
+        4: 'abril'
+        5: 'mayo'
+        6: 'junio'
+        7: 'julio'
+        8: 'agosto'
+        9: 'septiembre'
+        10: 'octubre'
+        11: 'noviembre'
+        12: 'diciembre'
     events:
         pride_month: 'Mes del Orgullo'
         trans_month: 'Mes de la Conciencia Transgénero'
@@ -696,8 +717,8 @@ calendar:
         idahobit: 'Día Internacional contra la Homofobia, la Transfobia y la Bifobia'
         intersex_day: 'Día de la Visibilidad Intersexual'
         intersex_remembrance_day: 'Día de la Memoria Intersexual'
-        lesbian_day: 'Día de las Lesbianas'
-        lesbian_visibility_day: 'Día de la Visibilidad Lésbica'
+        lesbian_day: 'Día Internacional de las Lesbianas'
+        lesbian_visibility_day: 'Día Internacional de la Visibilidad Lésbica'
         coming_out_day: 'Día para Salir del Armario'
         nonbinary_day: 'Día de la Visibilidad No Binaria'
         pan_day: 'Día de la Conciencia Pansexual y Panrromántica'
@@ -711,11 +732,11 @@ calendar:
         trans_week: 'Semana de la Conciencia Transgénero'
         trans_parent_day: 'Día de les Xadres Trans'
         nonbinary_week: 'Semana de la Conciencia No Binaria'
-        polyamory_day: 'Dia del Poliamor'
+        polyamory_day: 'Día del Poliamor'
         homophobia_sport: 'Día Internacional contra la Homofobia en el Deporte'
         gay_uncles_day: 'Día de los Tíos Gays'
         lgbtq_stem: 'Día de las personas LGBTQ+ en CTIM'
-        trans_depathologization: 'Día por la Despatologización de la Transexualidad'
+        trans_depathologization: 'Día por la Despatologización de Transgénero'
         lgbti_book_day: 'Día del Libro de Temática LGTBI'
         human_rights_day: 'Día de los Derechos Humanos'
         nonbinary_parents_day: 'Día de les Xadres No Binaries'
@@ -737,9 +758,27 @@ calendar:
         pan_pride_day: 'Día del Orgullo Pansexual'
         transmasculine_day: 'Día de la Lucha y Resistencia de Personas Transmasculinas'
         asexual_visibility_day: 'Día de la Visibilidad Asexual'
-
+        bi_health_month: 'Mes de la Conciencia de la Salud de Personas Bisexuales'
+        holocaust_remembrance_day: 'Día Internacional de Conmemoración en Memoria de las Víctimas del Holocausto'
+        family_equality_day: 'Día Internacional de la Igualdad Familiar'
+        aro_month: 'Mes de la Conciencia del Espectro Arromántico'
+        black_ribbon_day: 'Día Europeo de Conmemoración de las Víctimas del Estalinismo y el Nazismo'
+        black_queer_week: 'Semana de la Historia de las Personas Queer Negras'
+        mena_lesbian_day: 'Día del Orgullo de las Lesbianas y Mujeres Queer del Medio Oriente y norte de África'
+        hate_crime_awareness_week: 'Semana de Concientización sobre Crímenes de Odio'
+        deaf_awareness_week: 'Semana de la Conciencia de los Sordos LGBTQ+'
+        suicide_prevention_day: 'Día Mundial para la Prevención del Suicidio'
+        suicide_prevention_month: 'Mes de la Prevención del Suicidio'
+        aids_awareness_month: 'Mes da Concientización sobre el Sida'
+        genderfluid_week: 'Semana de la Conciencia de Género Fluido'
     banner: 'Hoy celebramos'
+    celebrating_custom: 'se celebra'
+    celebrating_day: 'se celebra el'
+    celebrating_week: 'se celebra el'
+    celebrating_month: 'se celebra en'
     image:
         header: 'Descargar una imagen'
         overview: 'Vista general'
         labels: 'Etiquetas'
+    link: 'Enlace'
+    full: 'Calendario completo'

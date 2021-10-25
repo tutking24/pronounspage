@@ -36,7 +36,6 @@ pronouns:
         examples: ['💫', '💙']
         template: 'Open een van de voorbeelden en vervang de emoji in de URL met jouw eigen emoji.'
     slashes: true
-    avoiding: false
     others: 'Andere voornaamwoorden'
     threeForms: true
 

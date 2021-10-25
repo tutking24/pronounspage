@@ -165,3 +165,10 @@ może to pomóc osobom respondenckim zapoznać się z tematem.
         <img src="/img-local/forms/pronouns.png" class="hero" alt="Jak mamy się do Ciebie zwracać? (i) Więcej informacji znajdziesz na stronie zaimki.pl; ono (np. zrobiłoś, poszłoś), on (np. zrobiłeś, poszedłeś), onu (np. zrobiłuś, poszłuś), ona (np. zrobiłaś, poszłaś), oni (np. zrobiliście, poszliście), Żadna z powyższych: [Pole wolnego tekstu]">
     </figure>
 </div>
+
+<div class="alert alert-info">
+    <span class="fal fa-info-circle"></span>
+    Polecamy również
+    <a href="/docs-local/Praca Magisterska Magdalena Daniec.pdf" target="_blank" rel="noopener">pracę dyplomową Magdaleny Daniec</a>
+    na ten temat.
+</div>

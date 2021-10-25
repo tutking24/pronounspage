@@ -138,7 +138,9 @@
                         link = link.toLowerCase();
                     }
 
-                    if (link === this.config.pronouns.any || link === this.config.pronouns.avoiding) {
+                    if (link === this.config.pronouns.any
+                        || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(link))
+                    ) {
                         pronounOpinions.push({
                             link,
                             pronoun: link,

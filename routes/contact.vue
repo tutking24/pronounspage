@@ -6,15 +6,31 @@
         </h2>
 
         <section>
+            <nuxt-link v-if="config.faq.enabled" :to="`/${config.faq.route}`"
+                class="btn btn-outline-primary border m-1"
+            >
+                <Icon v="map-marker-question"/>
+                <T>faq.header</T>
+            </nuxt-link>
             <a v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
-               :href="link.url" target="_blank" rel="noopener"
-               class="btn btn-outline-primary border m-1">
-                <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                {{link.headline}}
+                :href="link.url" target="_blank" rel="noopener"
+                class="btn btn-outline-primary border m-1">
+                    <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                    {{link.headline}}
             </a>
         </section>
 
         <section class="small">
+            <p v-if="$te('contact.faq')">
+                <Icon v="map-marker-question"/>
+                <T>contact.faq</T>
+            </p>
+
+            <p v-if="$te('contact.technical')">
+                <Icon v="cogs"/>
+                <T>contact.technical</T>
+            </p>
+
             <p>
                 <Icon v="language"/>
                 <T>localise.long</T>
@@ -23,12 +39,12 @@
                 </LocaleLink>
             </p>
 
-            <p v-if="$t('contact.quote', {}, false)">
+            <p v-if="$te('contact.quote')">
                 <Icon v="quote-right"/>
                 <T>contact.quote</T>
             </p>
 
-            <p v-if="$t('contact.hate', {}, false)">
+            <p v-if="$te('contact.hate')">
                 <Icon v="hand-middle-finger"/>
                 <T>contact.hate</T>
             </p>

@@ -137,12 +137,18 @@
                 });
 
                 if (this.config.pronouns.enabled) {
+                    const extra = ['all', '/' + this.config.pronouns.any]
+                    if (this.config.pronouns.null && this.config.pronouns.null.routes) {
+                        for (let route of this.config.pronouns.null.routes) {
+                            extra.push('/' + route);
+                        }
+                    }
                     links.push({
                         link: '/' + this.config.pronouns.route,
                         icon: 'tags',
                         text: this.$t('pronouns.header'),
                         textLong: this.$t('pronouns.headerLong').replace( /(<([^>]+)>)/ig, ''),
-                        extra: ['all', '/' + this.config.pronouns.any, this.config.pronouns.avoiding ? '/' + this.config.pronouns.avoiding : null],
+                        extra: extra,
                     });
                 }
 
@@ -169,7 +175,7 @@
                     });
                 }
 
-                if (this.config.names.enabled) {
+                if (this.config.names && this.config.names.enabled && this.config.names.published) {
                     links.push({
                         link: '/' + this.config.names.route,
                         icon: 'signature',
@@ -278,7 +284,8 @@
             isActiveRoute(link) {
                 return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
-                    || (link.extra || []).includes(decodeURIComponent(this.$route.path));
+                    || (link.extra || []).includes(decodeURIComponent(this.$route.path))
+                    || (link.extra || []).filter(x => x && decodeURIComponent(this.$route.path).startsWith(x + '/')).length;
             },
             documentClicked() {
                 if (this.hamburgerActive) {

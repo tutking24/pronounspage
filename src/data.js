@@ -49,24 +49,6 @@ export const pronounGroups = buildList(function* () {
 
 export const pronounLibrary = new PronounLibrary(pronounGroups, pronouns);
 
-import namesRaw from '../data/names/names.tsv';
-export const names = buildDict(function* () {
-    for (let n of namesRaw) {
-        yield [n.name, new Name(
-            n.name,
-            n.origin,
-            n.meaning,
-            n.usage,
-            n.legally,
-            n.pros ? n.pros.split(',') : [],
-            n.cons ? n.cons.split(',') : [],
-            n.notablePeople ? n.notablePeople.split(',') : [],
-            n.count,
-            n.links ? n.links.split(' ') : [],
-        )];
-    }
-});
-
 import peopleRaw from '../data/people/people.tsv';
 export const people = buildList(function* () {
     for (let p of peopleRaw) {

@@ -95,7 +95,6 @@
 
     export default {
         components: { LazyHydrate },
-        name: 'Source',
         props: {
             source: { required: true },
             manage: { type: Boolean },

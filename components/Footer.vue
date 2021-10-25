@@ -71,7 +71,7 @@
                         <li class="list-inline-item">
                             <nuxt-link :to="`/license`">
                                 <Icon v="gavel"/>
-                                OQL 1.0
+                                OQL
                             </nuxt-link>
                         </li>
                     </ul>

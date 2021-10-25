@@ -169,6 +169,10 @@ nouns:
 
     image: 'Imagem'
 
+community:
+    header: 'Comunidade'
+    headerLong: 'Comunidade queer'
+
 terminology:
     header: 'Terminologia'
     headerLong: 'Dicionário de terminologia queer'
@@ -421,7 +425,7 @@ profile:
     pronounsInfo: >
         Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
         ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
-        Também pode ser utilizado {/pronouns#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+        Também pode ser utilizado {/pronomes#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
     pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
     words: 'Palavras'
     birthday: 'Idade'
@@ -479,7 +483,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL 1.0}.
+        {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
     links: 'Contato, redes sociais, apoio'
 
 notFound:
@@ -570,6 +574,7 @@ flags:
     Achillean: 'Aquilean{inflection}'
     Agender: 'Agênero'
     Alloromantic_Asexual: 'Alorromânti{inflection_c} assexual'
+    Ambiamorous: 'Ambiamoros{inflection}'
     Anarcha-Queer: 'Anarcaqueer'
     Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androssexual'
@@ -597,6 +602,7 @@ flags:
     Diamoric: 'Diamóri{inflection_c}'
     Enbian: 'Nãobian{inflection}'
     Fa*afafine: 'Fa''afafine'
+    Femme: 'Afeminad{inflection}'
     Gay: 'Gay'
     Gender_Questioning: 'Questionando o gênero'
     Genderfae: 'Fadagênero'
@@ -619,6 +625,8 @@ flags:
     Lesbian: 'Lésbica'
     Lesbiromantic: 'Lesbirromânti{inflection_c}'
     Maverique: 'Maverique'
+    Monoamorous: 'Monoamoros{inflection}'
+    Monogamous: 'Monogâmic{inflection_c}'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebulosarromânti{inflection_c}'
     Neopronouns: 'Neopronomes'
@@ -682,6 +690,19 @@ calendar:
         10: '%day% de outubro'
         11: '%day% de novembro'
         12: '%day% de dezembro'
+    months_abl:
+        1: 'janeiro'
+        2: 'fevereiro'
+        3: 'março'
+        4: 'abril'
+        5: 'maio'
+        6: 'junho'
+        7: 'julho'
+        8: 'agosto'
+        9: 'setembro'
+        10: 'outubro'
+        11: 'novembro'
+        12: 'dezembro'
     events:
         pride_month: 'Mês do Orgulho'
         trans_month: 'Mês da Consciência Trans'
@@ -693,7 +714,7 @@ calendar:
         idahobit: 'Dia Internacional Contra a Homomisia, Transmisia e Bimisia'
         intersex_day: 'Dia da Consciência Intersexo'
         intersex_remembrance_day: 'Dia da Memória Intersexo'
-        lesbian_day: 'Dia Lésbico'
+        lesbian_day: 'Dia Internacional das Lésbicas'
         lesbian_visibility_day: 'Dia Internacional da Visibilidade Lésbica'
         coming_out_day: 'Dia de Sair do Armário'
         nonbinary_day: 'Dia de Pessoas Não-Binárias'
@@ -702,7 +723,7 @@ calendar:
         trans_visibility_day: 'Dia Internacional da Visibilidade Trans'
         zero_discrimination_day: 'Dia de Discriminação Zero'
         arospec_week: 'Semana da Consciência do Espectro Arromântico'
-        asexual_week: 'Semana da Consciência Assexual'
+        asexual_week: 'Semana da Visibilidade e Orgulho Assexual'
         bisexual_week: 'Semana da Consciência Bissexual'
         pronouns_day: 'Dia dos Pronomes'
         trans_week: 'Semana da Consciência Trans'
@@ -734,9 +755,28 @@ calendar:
         pan_pride_day: 'Dia do Orgulho Pansexual'
         transmasculine_day: 'Dia de Luta e Resistência de Pessoas Transmasculinas'
         asexual_visibility_day: 'Dia da Visibilidade Assexual'
-        
+        bi_health_month: 'Mês de Consciência da Saúde das Pessoas Bissexuais'
+        holocaust_remembrance_day: 'Dia Internacional da Lembrança do Holocausto'
+        family_equality_day: 'Dia Mundial da Igualdade Familiar'
+        aro_month: 'Mês da Consciência do Espectro Arromântico'
+        black_ribbon_day: 'Dia Europeu da Memória das Vítimas do Estalinismo e do Nazismo'
+        black_queer_week: 'Semana da História das Pessoas Queer Negras'
+        mena_lesbian_day: 'Dia do Orgullo das Mulheres Lesbicas e Queer do Médio Oriente e Norte da África'
+        hate_crime_awareness_week: 'Semana da Conscientização sobre Crimes de Ódio'
+        deaf_awareness_week: 'Semana da consciência dos surdes LGBTQ+'
+        suicide_prevention_day: 'Dia Mundial de Prevenção do Suicídio'
+        suicide_prevention_month: '{https://pt.wikipedia.org/wiki/Setembro_Amarelo=Setembro Amarelo}'
+        aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
+        genderfluid_week: 'Semana da Consciência de Gênero-fluído'
+
     banner: 'Hoje celebramos'
+    celebrating_custom: 'celebra-se'
+    celebrating_day: 'celebra-se em'
+    celebrating_week: 'celebra-se em'
+    celebrating_month: 'celebra-se em'
     image:
         header: 'Baixar uma imagem'
         overview: 'Visão geral'
         labels: 'Etiquetas'
+    link: 'Link'
+    full: 'calendário completo'

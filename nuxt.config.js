@@ -266,14 +266,17 @@ export default {
 
             if (config.pronouns.enabled) {
                 routes.push({ path: '/' + config.pronouns.any, component: resolve(__dirname, 'routes/any.vue') });
-                if (config.pronouns.avoiding) {
-                    routes.push({ path: '/' + config.pronouns.avoiding, component: resolve(__dirname, 'routes/avoiding.vue') });
+                if (config.pronouns.null && config.pronouns.null.routes) {
+                    for (let route of config.pronouns.null.routes) {
+                        routes.push({ path: '/' + route, component: resolve(__dirname, 'routes/avoiding.vue') });
+                    }
                 }
             }
 
             if (config.calendar && config.calendar.enabled) {
                 routes.push({ path: '/' + config.calendar.route, component: resolve(__dirname, 'routes/calendar.vue') });
-                routes.push({ path: '/calendar-wide', component: resolve(__dirname, 'routes/calendarWide.vue') });
+                routes.push({ path: '/' + config.calendar.route + '/:year(\\d\\d\\d\\d)', component: resolve(__dirname, 'routes/calendar.vue') });
+                routes.push({ path: '/' + config.calendar.route + '/:year(\\d\\d\\d\\d)-:month(\\d\\d)-:day(\\d\\d)', component: resolve(__dirname, 'routes/calendarDay.vue') });
             }
 
             if (config.api !== null) {

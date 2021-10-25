@@ -1,73 +1,75 @@
 <template>
-    <div>
-        <CommunityNav/>
+    <div v-if="year">
+        <CommunityNav v-if="!basic"/>
 
-        <h2>
-            <Icon v="calendar-star"/>
-            <T>calendar.headerLong</T> ({{year}})
+        <h2 class="d-flex justify-content-between">
+            <span>
+                <Icon v="calendar-star"/>
+                <T>calendar.headerLong</T> <small class="text-muted">({{year.year}})</small>
+            </span>
+            <span v-if="basic" class="h4 mt-2">
+                <nuxt-link :to="`/${ config.calendar.route }`">
+                    <Icon v="tags"/>
+                    <T>domain</T>/{{ config.calendar.route }}
+                </nuxt-link>
+            </span>
         </h2>
 
-        <CalendarBanner/>
+        <CalendarBanner v-if="!basic && year.isCurrent()"/>
 
-        <section class="row">
+        <section v-if="basic" class="row pb-4">
+            <div v-for="i in 12" class="col-12 col-lg-3 py-3">
+                <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
+                <CalendarMonthEvents v-if="labels" :year="year" :month="i" class="small my-3"/>
+                <Calendar v-else :year="year" :month="i"/>
+            </div>
+        </section>
+        <section v-else class="row">
             <div v-for="i in 12" class="col-12 col-sm-6 col-lg-4 py-3">
                 <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
-                <Calendar :year="year" :month="i" markToday/>
+                <Calendar :year="year" :month="i" :mark="today" tooltips/>
             </div>
         </section>
 
-        <section>
-            <div class="alert alert-info row">
-                <div class="col-12 col-lg-6">
-                    <p class="mb-0">
-                        Twitter Bot:
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://twitter.com/CalendarQueer" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                            <Icon v="twitter" set="b"/>
-                            @CalendarQueer
-                        </a>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <p class="mb-0">
-                        <T>calendar.image.header</T>:
-                    </p>
-                    <p class="mb-0">
-                        <a href="/img-local/calendar/overview.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                            <Icon v="image"/>
-                            <T>calendar.image.overview</T>
-                        </a>
-                        <a href="/img-local/calendar/labels.png" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                            <Icon v="image"/>
-                            <T>calendar.image.labels</T>
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </section>
+        <template v-if="!basic">
+            <CalendarExtra :year="year"/>
 
-        <Support/>
+            <Support/>
 
-        <section>
-            <Share :title="$t('calendar.header')"/>
-        </section>
+            <section>
+                <Share :title="$t('calendar.header')"/>
+            </section>
+        </template>
     </div>
+    <NotFound v-else/>
 </template>
 
 <script>
     import { head } from "../src/helpers";
+    import { calendar } from '../src/calendar/calendar';
+    import { Day } from '../src/calendar/helpers';
 
     export default {
+        layout({route}) {
+            return route.query.layout === 'basic' ? 'basic' : 'default';
+        },
         data() {
             return {
-                year: new Date().getFullYear(),
+                year: this.$route.params.year
+                    ? calendar.getYear(this.$route.params.year)
+                    : calendar.getCurrentYear(),
+                today: Day.today(),
+                basic: this.$route.query.layout === 'basic',
+                labels: this.$route.query.labels === 'true',
             }
         },
         head() {
+            if (!this.year) {
+                return {};
+            }
             return head({
                 title: this.$t('calendar.headerLong'),
-                banner: this.imageOverview,
+                banner: `calendar/${this.year.year}-overview.png`,
             });
         },
     };
