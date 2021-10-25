@@ -55,7 +55,7 @@
                 <Icon v="users"/>
                 <T>contact.authors</T>
             </h3>
-            <Authors/>
+            <Authors bigteam/>
         </section>
 
         <Support id="support"/>

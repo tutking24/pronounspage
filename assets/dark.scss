@@ -2,6 +2,10 @@
 
 @import "variables";
 
+*:hover > .hover-invertible {
+  filter: invert(1);
+}
+
 body[data-theme="dark"] {
   background: initial !important;
   background-color: $dark !important;
