@@ -1052,7 +1052,7 @@ user:
         email:
             subject: 'Twój kod logowania to %code%'
             content: |
-                Aby potwierdzić swój adres email, wpisz na stronie następujący kod: %code%.
+                Aby potwierdzić swój adres email, wpisz na stronie następujący jednorazowy kod: %code%.
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
         why: >
