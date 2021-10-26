@@ -3,7 +3,7 @@
         <LinksNav/>
 
         <h2>
-            <Icon v="zine.svg"/>
+            <Icon v="zine.svg" :inverse="darkMode"/>
             <T>links.zine.headerLong</T>
         </h2>
 
@@ -45,8 +45,14 @@
 
 <script>
     import { head } from "../src/helpers";
+    import {mapState} from "vuex";
 
     export default {
+        computed: {
+            ...mapState([
+                'darkMode',
+            ]),
+        },
         head() {
             return head({
                 title: this.$t('links.zine.headerLong'),
