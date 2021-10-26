@@ -4,6 +4,7 @@ export const state = () => ({
     token: null,
     user: null,
     spelling: 'traditional',
+    darkMode: false,
 })
 
 export const mutations = {
@@ -38,4 +39,7 @@ export const mutations = {
     setSpelling(state, spelling) {
         state.spelling = spelling;
     },
+    setDarkMode(state, isDark) {
+        state.darkMode = isDark;
+    }
 }
