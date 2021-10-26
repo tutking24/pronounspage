@@ -449,7 +449,7 @@ user:
         email:
             subject: 'Your login code is %code%'
             content: |
-                To confirm your email address, enter the following code on the website: %code%.
+                To confirm your email address, enter the following single-use code on the website: %code%.
 
                 If you didn't order this code, simply ignore this message.
         why: >

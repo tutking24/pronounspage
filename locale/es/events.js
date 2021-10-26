@@ -34,8 +34,19 @@ module.exports = [
     new Event('Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas (EE.UU.)', null, 3, day(10), EventLevel.Day),
     new Event('Día de Concientización para los Sobrevivientes a Largo Plazo del VIH (EE.UU.)', null, 6, day(5), EventLevel.Day),
     new Event('Día de la Visibilidad Trans-, Travesti y No Binarie (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'travesti', 'nonbinary']),
+    new Event('Día de Concienciación de las Mujeres, Niñas y Personas Indígenas de Dos Espíritus Desaparecidas y Asesinadas', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
+    new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
+
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/marchaporladiversidad.uy=Marcha por la Diversidad} (Uruguay)', 'LGBTQ', 9, dayYear(24, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/396902965304865/=15 Marcha del Orgullo Rosario} (Argentina)', 'LGBTQ', 10, dayYear(30, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/MarchaDelOrgulloChubut/=Marcha del Orgullo Chubut} (Argentina)', 'LGBTQ', 11, dayYear(27, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/marchalgbtiquilmes/=Marcha del Orgullo LGBTI de Quilmes} (Argentina)', 'LGBTQ', 10, dayYear(30, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/boqueronorgullo/=Marcha del Orgullo Boquerón} (Puerto Rico)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/OrgulloPergamino/=Marcha del Orgullo Pergamino} (Argentina)', 'LGBTQ', 12, dayYear(5, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/UnitedPartyCordoba/=Marcha del Orgullo de Córdoba} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/Orgullo-Arrecifes-105703395107267/=Marcha del Orgullo Arrecifes} (Argentina)', 'LGBTQ', 11, dayYear(20, 2021), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/2979887162329004/=Marcha del Orgullo LGBTI+ de Guadalajara} (México)', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),
 ];

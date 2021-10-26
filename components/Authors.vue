@@ -1,8 +1,8 @@
 <template>
     <ul class="list-unstyled">
         <li class="mb-2">
-            <Icon v="collective-logo.svg" class="invertible"/>
-            <nuxt-link :to="`/${config.contact.team.route}`">
+            <nuxt-link :to="`/${config.contact.team.route}`" :class="bigteam ? 'btn btn-outline-primary border m-1' : ''">
+                <Icon v="collective-logo.svg" :class="['invertible', bigteam ? 'hover-invertible' : '']"/>
                 <T>contact.team.name</T>
             </nuxt-link>
         </li>
@@ -32,6 +32,9 @@
 
 <script>
     export default {
+        props: {
+            bigteam: {type: Boolean},
+        },
         data() {
             return {
                 authors: undefined,

@@ -23,7 +23,7 @@ export const head = ({title, description, banner}) => {
     const meta = { meta: [] };
 
     if (title) {
-        title = clearLinkedText(title);
+        title = clearLinkedText(title, false);
         title += ' • ' + process.env.TITLE;
         meta.title = title;
         meta.meta.push({ hid: 'og:title', property: 'og:title', content: title });
@@ -198,12 +198,16 @@ export const handleErrorAsync = func => (req, res, next) => {
     func(req, res, next).catch((error) => next(error));
 };
 
-export const clearLinkedText = (text) => {
-    return text
+export const clearLinkedText = (text, quotes = true) => {
+    text = text
         .replace(/{[^}=]+=([^}=]+)}/g, '$1')
-        .replace(/{([^}=]+)}/g, '$1')
-        .replace(/[„”"']/g, '')
-    ;
+        .replace(/{([^}=]+)}/g, '$1');
+
+    if (quotes) {
+        text = text.replace(/[„”"']/g, '');
+    }
+
+    return text;
 }
 
 export const sortClearedLinkedText = (items, key) => {
