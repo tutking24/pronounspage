@@ -21,6 +21,15 @@
                     </a>
                 </p>
             </div>
+            <div v-if="!day">
+                <p class="mb-0">
+                    iCalendar:
+                </p>
+                <a :href="`/api/calendar/queer-calendar-${year.year}.ics`" class="btn btn-outline-primary m-1">
+                    <Icon v="calendar-plus"/>
+                    ICS
+                </a>
+            </div>
             <div>
                 <p class="mb-0">
                     <T>calendar.image.header</T>:

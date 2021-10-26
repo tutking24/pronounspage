@@ -16,6 +16,10 @@ class Day {
         return Day.fromDate(new Date);
     }
 
+    toDate() {
+        return new Date(this.year, this.month - 1, this.day);
+    }
+
     equals(other) {
         return other && this.year === other.year && this.month === other.month && this.day === other.day;
     }
@@ -27,6 +31,18 @@ class Day {
     // for comparisons
     toInt() {
         return parseInt(`${this.year}${this.month.toString().padStart(2, '0')}${this.day.toString().padStart(2, '0')}`);
+    }
+
+    next() {
+        let d = this.toDate();
+        d.setDate(d.getDate() + 1);
+        return Day.fromDate(d);
+    }
+
+    prev() {
+        let d = this.toDate();
+        d.setDate(d.getDate() - 1);
+        return Day.fromDate(d);
     }
 }
 module.exports.Day = Day;
@@ -60,6 +76,7 @@ module.exports.Event = class {
     }
 
     getDays(year) {
+        year = parseInt(year);
         if (this.daysMemoise[year] === undefined) {
             this.daysMemoise[year] = [...this.generator(iterateMonth(year, this.month))];
         }
@@ -85,6 +102,28 @@ module.exports.Event = class {
 
     isFirstDay(day) {
         return this.getDays(day.year)[0].equals(day);
+    }
+
+    toIcs(year, translations, clearLinkedText) {
+        const days = this.getDays(year);
+        const first = days[0];
+        const last = days[days.length - 1].next();
+
+        let [name, param] = this.name.split('$');
+        if (translations.calendar.events[name] !== undefined) {
+            name = translations.calendar.events[name];
+        }
+        if (param) {
+            name = name.replace(/%param%/g, param);
+        }
+        name = clearLinkedText(name);
+
+        return {
+            title: name,
+            start: [first.year, first.month, first.day],
+            end: [last.year, last.month, last.day],
+            calName: translations.calendar.headerLong,
+        }
     }
 }
 

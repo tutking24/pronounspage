@@ -99,6 +99,7 @@ app.use(require('./routes/names').default);
 
 app.use(require('./routes/images').default);
 app.use(require('./routes/blog').default);
+app.use(require('./routes/calendar').default);
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);
