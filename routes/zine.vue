@@ -2,36 +2,38 @@
     <div>
         <LinksNav/>
 
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h2>
-                    <Icon v="zine.svg"/>
-                    <T>links.zine.headerLong</T>
-                </h2>
+        <h2>
+            <Icon v="zine.svg"/>
+            <T>links.zine.headerLong</T>
+        </h2>
 
-                <T>links.zine.info</T>
+        <T>links.zine.info</T>
 
-                <h3>
-                    <T>links.zine.submissions.header</T>
-                </h3>
+        <h3>
+            <Icon v="bullhorn"/>
+            <T>links.zine.submissions.header</T>
+        </h3>
 
-                <ul class="list-unstyled">
-                    <li v-for="(val, key) in $t('links.zine.submissions.rules')" class="mb-2">
-                        <strong><LinkedText :text="key"/>:</strong>
-                        <span><LinkedText :text="val"/></span>
-                    </li>
-                </ul>
+        <div class="alert alert-info">
+            <ul class="list-unstyled">
+                <li v-for="{icon, label, content} in $t('links.zine.submissions.rules')" class="mb-2">
+                    <h4>
+                        <Icon :v="icon"/>
+                        <LinkedText :text="label"/>:
+                    </h4>
+                    <ul v-if="Array.isArray(content)">
+                        <li v-for="el in content"><LinkedText :text="el"/></li>
+                    </ul>
+                    <p v-else>
+                        <LinkedText :text="content"/>
+                    </p>
+                </li>
+            </ul>
 
-                <p class="small">
-                    <Icon v="info-circle"/>
-                    <T>links.zine.submissions.disclaimer</T>
-                </p>
-            </div>
-            <div class="col-12 col-lg-6">
-                <figure class="float-end border rounded m-3">
-                    <img src="/img-local/niebinazin.png" alt=""/>
-                </figure>
-            </div>
+            <p class="small">
+                <Icon v="info-circle"/>
+                <T>links.zine.submissions.disclaimer</T>
+            </p>
         </div>
 
         <Support/>
@@ -52,15 +54,3 @@
         },
     };
 </script>
-
-<style lang="scss" scoped>
-    @import "assets/variables";
-
-    img {
-        max-width: 100%;
-    }
-
-    figure {
-        width: 100%;
-    }
-</style>
