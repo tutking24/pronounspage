@@ -26,7 +26,7 @@
                     <h3><T :params="{day: day.day}">calendar.dates.{{day.month}}</T> {{day.year}}</h3>
                     <ul class="list-unstyled mb-0">
                         <li v-for="event in year.eventsByDate[day.toString()]" class="mb-2">
-                            <CalendarEvent :event="event" :year="year.year" :key="event.name"/>
+                            <CalendarEvent :event="event" :year="year.year" :key="event.name" ics/>
                         </li>
                     </ul>
                 </div>
