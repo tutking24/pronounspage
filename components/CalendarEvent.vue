@@ -5,7 +5,7 @@
         <Icon v-else v="arrow-circle-right"/>
         <T v-if="$te(`calendar.events.${eventName}`)" :params="{param: eventParam}">calendar.events.{{eventName}}</T>
         <LinkedText v-else :text="eventName"/>
-        <a :href="`/api/queer-calendar-${config.locale}-${year}-${event.getUuid()}.ics`" class="small" :aria-label="$t('crud.download') + ' .ics'" :title="$t('crud.download') + ' .ics'">
+        <a v-if="ics" :href="`/api/queer-calendar-${config.locale}-${year}-${event.getUuid()}.ics`" class="small" :aria-label="$t('crud.download') + ' .ics'" :title="$t('crud.download') + ' .ics'">
             <Icon v="calendar-plus"/>
         </a>
     </span>
@@ -17,6 +17,7 @@
             event: { required: true },
             year: { 'default': () => (new Date).getFullYear() },
             range: { type: Boolean },
+            ics: { type: Boolean },
         },
         computed: {
             eventName() {

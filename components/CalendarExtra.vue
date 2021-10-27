@@ -74,6 +74,7 @@
             }
         },
         mounted() {
+            if (!this.$refs.clipboard) { return; }
             const clipboard = new ClipboardJS(this.$refs.clipboard);
             clipboard.on('success', (e) => {
                 this.clipboardFeedback = true;

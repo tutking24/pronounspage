@@ -36,7 +36,7 @@
             </p>
             <ul class="list-unstyled">
                 <li v-for="event in events" class="mb-2 ms-3">
-                    <CalendarEvent :event="event"/>
+                    <CalendarEvent :event="event" ics/>
                     <span v-if="$te(`calendar.events.${event.name}___timeDescription`)">
                         <T>calendar.celebrating_custom</T>
                         <T>calendar.events.{{event.name}}___timeDescription</T>
