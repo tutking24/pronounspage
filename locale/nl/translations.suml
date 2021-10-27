@@ -462,6 +462,8 @@ crud:
     author: 'Toegevoegd door'
     saved: 'Veranderingen succesvol opgeslagen!'
     loginRequired: '{/account=Login} om een toevoeging in te dienen'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

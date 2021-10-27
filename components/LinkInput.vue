@@ -1,7 +1,7 @@
 <template>
     <div class="input-group my-2">
         <input class="form-control" readonly :value="link.replace('https://', '').replace('http://', '')" id="link" ref="link">
-        <button class="btn btn-outline-secondary btn-clipboard" data-clipboard-target="#link" :data-clipboard-text="link" @click="focusLink">
+        <button class="btn btn-outline-secondary" ref="clipboard" data-clipboard-target="#link" :data-clipboard-text="link" @click="focusLink" :aria-label="$t('crud.copy')" :title="$t('crud.copy')">
             <Icon v="clipboard"/>
         </button>
         <a :href="link" target="_blank" rel="noopener" class="btn btn-outline-secondary">
@@ -18,7 +18,7 @@
             link: { required: true },
         },
         mounted () {
-            new ClipboardJS('.btn-clipboard');
+            new ClipboardJS(this.$refs.clipboard);
         },
         methods: {
             focusLink() {

@@ -472,6 +472,8 @@ crud:
     author: 'Lagt til av'
     saved: 'Endringer er lagret!'
     loginRequired: '{/account=Log in} for å'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

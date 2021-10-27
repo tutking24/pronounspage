@@ -549,6 +549,8 @@ crud:
     author: 'Added by'
     saved: 'Changes saved successfully!'
     loginRequired: '{/account=Log in} to submit an entry'
+    copy: 'Copy link'
+    download: 'Download'
 
 footer:
     license: >
