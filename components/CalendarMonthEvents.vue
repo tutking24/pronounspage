@@ -1,7 +1,7 @@
 <template>
     <ul class="list-unstyled mb-0">
         <li v-for="event in events" class="mb-2">
-            <CalendarEvent :event="event" :range="year.year" :key="event.name"/>
+            <CalendarEvent :event="event" :year="year.year" range :key="event.name"/>
         </li>
     </ul>
 </template>

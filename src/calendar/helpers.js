@@ -1,4 +1,5 @@
 const md5 = require("js-md5");
+const { v5: uuid5 } = require('uuid');
 
 class Day {
     constructor(year, month, day, dayOfWeek) {
@@ -104,7 +105,11 @@ module.exports.Event = class {
         return this.getDays(day.year)[0].equals(day);
     }
 
-    toIcs(year, translations, clearLinkedText) {
+    getUuid() {
+        return uuid5(`${process.env.BASE_URL}/calendar/event/${this.name}`, uuid5.URL);
+    }
+
+    toIcs(year, translations, clearLinkedText, sequence = 1) {
         const days = this.getDays(year);
         const first = days[0];
         const last = days[days.length - 1].next();
@@ -123,6 +128,7 @@ module.exports.Event = class {
             start: [first.year, first.month, first.day],
             end: [last.year, last.month, last.day],
             calName: translations.calendar.headerLong,
+            sequence,
         }
     }
 }
@@ -194,12 +200,19 @@ class Year {
         for (let event of events) {
             for (let term of event.terms) {
                 if (this.eventsByTerm[term] === undefined) { this.eventsByTerm[term] = []; }
-                this.eventsByTerm[term].push(event);
+                if (event.getDays(this.year).length) {
+                    this.eventsByTerm[term].push(event);
+                }
             }
         }
         for (let term in this.eventsByTerm) {
             if (!this.eventsByTerm.hasOwnProperty(term)) { continue; }
             this.eventsByTerm[term].sort((a, b) => a.getDays(this.year)[0].toInt() - b.getDays(this.year)[0].toInt())
+        }
+
+        this.eventsByUuid = {}
+        for (let event of events) {
+            this.eventsByUuid[event.getUuid()] = event;
         }
     }
 

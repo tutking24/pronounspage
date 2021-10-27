@@ -473,6 +473,8 @@ crud:
     author: 'Ajouté par'
     saved: 'Modifications enregistrées !'
     loginRequired: '{/compte=Connectez-vous} pour proposer un mot'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

@@ -470,6 +470,8 @@ crud:
     author: 'Hinzugefügt von'
     saved: 'Änderungen erfolgreich gespeichert!'
     loginRequired: '{/account=Log dich ein} um Eintrag einzureichen'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >
@@ -755,4 +757,4 @@ calendar:
         overview: 'Überschau'
         labels: 'Etiketten'
     link: 'Link'
-    full: 'Ganzer Kalender' 
+    full: 'Ganzer Kalender'

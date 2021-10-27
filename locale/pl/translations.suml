@@ -1191,6 +1191,8 @@ crud:
     author: 'Dodane przez'
     saved: 'Zmiany zapisane!'
     loginRequired: '{/konto=Zaloguj się}, aby zgłosić wpis'
+    copy: 'Skopiuj link'
+    download: 'Ściągnij'
 
 footer:
     license: >

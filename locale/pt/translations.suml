@@ -480,6 +480,8 @@ crud:
     author: 'Adicionado por'
     saved: 'Alterações salvas com sucesso!'
     loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

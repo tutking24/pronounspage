@@ -483,6 +483,8 @@ crud:
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
     loginRequired: '{/cuenta=Log in} para enviar un ítem'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

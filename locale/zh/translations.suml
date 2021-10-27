@@ -446,6 +446,8 @@ crud:
     search: '搜索'
     author: '添加人'
     saved: '更改保存成功'
+    copy: 'Copy link'  # TODO
+    download: 'Download'  # TODO
 
 footer:
     license: >

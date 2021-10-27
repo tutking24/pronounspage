@@ -25,9 +25,14 @@
                 <p class="mb-0">
                     iCalendar:
                 </p>
-                <a :href="`/api/calendar/queer-calendar-${year.year}.ics`" class="btn btn-outline-primary m-1">
+                <button :class="['btn', clipboardFeedback ? 'btn-success' : 'btn-outline-primary', 'm-1']" ref="clipboard" :data-clipboard-text="icsLink">
+                    <Icon :v="clipboardFeedback ? 'clipboard-check' : 'clipboard'"/>
+                    <T>crud.copy</T>
+                </button>
+                <a :href="icsLink" class="btn btn-outline-primary m-1">
                     <Icon v="calendar-plus"/>
-                    ICS
+                    <T>crud.download</T>
+                    .ics
                 </a>
             </div>
             <div>
@@ -56,10 +61,29 @@
 </template>
 
 <script>
+    import ClipboardJS from 'clipboard';
+
     export default {
         props: {
             day: {},
             year: {},
-        }
+        },
+        data() {
+            return {
+                clipboardFeedback: false,
+            }
+        },
+        mounted() {
+            const clipboard = new ClipboardJS(this.$refs.clipboard);
+            clipboard.on('success', (e) => {
+                this.clipboardFeedback = true;
+                setTimeout(() => this.clipboardFeedback = false, 3000);
+            });
+        },
+        computed: {
+            icsLink() {
+                return `${process.env.BASE_URL}/api/queer-calendar-${this.config.locale}${this.year.year === (new Date).getFullYear() ? '' : '-' + this.year.year}.ics`;
+            },
+        },
     }
 </script>
