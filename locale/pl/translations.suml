@@ -542,6 +542,18 @@ faq:
                     linkujemy między innymi do opinii RJP,
                     która potwierdza poprawność gramatyczną pierwszo- i drugoosobowych neutralnych czasowników („byłom”, „zrobiłoś”),
                     do seminariów naukowych i prac akademickich na temat niebinarności w języku, etc.
+        słowniki:
+            question: 'Ale tego nie ma w słowniku! Słownik mówi co innego!'
+            answer:
+                - >
+                    Słowniki opisują, jaki język jest (a raczej jaki był w momencie ich tworzenia),
+                    a nie narzucają, jaki <em>powinien</em> być.
+                - >
+                    Słowniki nie są nienaruszalnym sacrum ani ostatecznym wyznacznikiem tego,
+                    jakich słów wolno nam używać, jaki dokładnie mają zakres znaczeniowy,
+                    albo czy dane użycie jest krzywdzące lub wykluczające.
+                    Język się zmienia, i nic w tym złego ani nowego –
+                    a słowniki, wtórnie do języka, muszą być aktualizowane.
         przesada:
             question: 'Czy to nie przesada?'
             answer:
