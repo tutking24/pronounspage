@@ -554,6 +554,23 @@ faq:
                     albo czy dane użycie jest krzywdzące lub wykluczające.
                     Język się zmienia, i nic w tym złego ani nowego –
                     a słowniki, wtórnie do języka, muszą być aktualizowane.
+        cenzura:
+            question: 'Czemu chcecie cenzurować język?'
+            answer:
+                - >
+                    Niczego nie cenzurujemy, nie zabraniamy, ani nie nakazujemy.
+                    Nawet gdybyśmy chciały, nie mamy ku temu żadnej mocy sprawczej
+                    poza oddolnymi próbami przekonywania – czyli tak jak wszystkie inne.
+                    Oskarżenia o próby „cenzury” są zupełnie oderwane od rzeczywistości.
+                - >
+                    Co zatem robimy? Edukujemy społeczeństwo, pokazując, w jaki sposób język może krzywdzić i wykluczać.
+                    Jeśli wiesz na przykład, że {/inkluzywny#murzyn=słowo na „m”} jest obraźliwe dla osób czarnoskórych,
+                    że określanie orientacji seksualnych {/inkluzywny#homoseksualizm=rzeczownikami zakończonymi na „-izm”}
+                    przyczynia się do homofobii,
+                    albo że {/terminologia#misgendering=misgenderyzowanie} osób transpłciowych i niebinarnych
+                    wzmaga {/terminologia#dysforia=dysforię płciową} i powoduje cierpienie,
+                    a mimo to wciąż używasz takiego języka bez próby poprawy czy okazania empatii,
+                    świadczy to źle wyłącznie o tobie – a nie o tym, że jakaś grupka queerów z internetu cię „cenzuruje”.
         przesada:
             question: 'Czy to nie przesada?'
             answer:
