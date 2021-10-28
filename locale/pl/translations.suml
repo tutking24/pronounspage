@@ -173,10 +173,26 @@ nouns:
         label: 'osobatyw'
         info:
             - >
-                Są to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
+                Gdy ogólnouczelniany mail zaczyna się od słów „drodzy studenci”,
+                to użyty tam język włącza jedynie mężczyzn (i inne osoby używające form męskich).
+                Można by ulepszyć ten zwrot, pisząc „drogie studentki, drodzy studenci”,
+                ale wciąż wykluczamy tym osoby, które nie identyfikują się ani z formami męskimi, ani żeńskimi.
+                Bardzo prostym rozwiązaniem jest zastąpienie tych słów zwrotem „drogie osoby studiujące”
+                – jest to jak najbardziej poprawne gramatycznie i włącza wszystkie osoby.
+                Wszystkie jesteśmy osobami!
+            - >
+                Osobatywy to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
                 Zupełnie nie wskazują na płeć, są więc idealne do opisu grup czy też pojedynczych osób, których płci nie znamy.
-                Są normatywne i łatwe do odmiany. Można je łączyć z formami {/ta=ta/tej}.
-
+            - >
+                Już teraz używamy wielu osobatywów i nie widzimy w nich nic złego:
+                np. „zaproszenie z osobą towarzyszącą” albo „osoba niebinarna”.
+            - >
+                Osobatywy są normatywne i łatwe do tworzenia odmiany. Można je łączyć z formami {/ta=ta/tej}.
+            - >
+                Zwróćmy uwagę, że rodzaj gramatyczny to niekoniecznie to samo co nacechowanie płciowe.
+                Na przykład słowo „rodzic”, choć gramatycznie rodzaju męskiego, jest neutralne płciowo
+                (w odróżnieniu od nacechowanych płciowo „ojciec” i „matka”).
+                Na tej samej zasadzie słowo „osoba”, choć gramatycznie żeńskie, może opisywać każdego, bez względu na płeć.
     dukajNouns:
         header: 'Dukatywy'
         label: 'dukatyw'
