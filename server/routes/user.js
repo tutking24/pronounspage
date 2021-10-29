@@ -26,6 +26,8 @@ const isSpam = (email) => {
         || email.length > 128;
 }
 
+const replaceExtension = username => username.replace(/\.(txt|jpg|jpeg|png|pdf|gif|doc|docx|csv)$/i, '_$1');
+
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
@@ -76,10 +78,12 @@ const invalidateAuthenticator = async (db, id) => {
 
 const defaultUsername = async (db, email) => {
     const base = normalise(
-        email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
-            .padEnd(4, '0')
-            .substring(0, 14)
-            .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_')
+        replaceExtension(
+            email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
+                .padEnd(4, '0')
+                .substring(0, 14)
+                .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_')
+        )
     );
 
     const conflicts = (await db.all(SQL`SELECT usernameNorm FROM users WHERE usernameNorm LIKE ${normalise(base) + '%'}`))
@@ -294,6 +298,8 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
     if (req.body.username.length < 4 || req.body.username.length > 16 || !req.body.username.match(new RegExp(`^[${USERNAME_CHARS}]+$`))) {
         return res.json({ error: 'user.account.changeUsername.invalid' });
     }
+
+    req.body.username = replaceExtension(req.body.username);
 
     const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(req.body.username)}`);
     if (dbUser && dbUser.id !== req.user.id) {

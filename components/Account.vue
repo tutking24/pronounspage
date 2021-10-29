@@ -208,6 +208,7 @@
                     }
 
                     this.$store.commit('setToken', response.token);
+                    this.username = this.$user().username;
                     this.$cookies.set('token', this.$store.state.token, cookieSettings);
                     this.message = 'crud.saved';
                     this.messageIcon = 'check-circle';
