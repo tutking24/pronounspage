@@ -14,6 +14,13 @@
             <nuxt-link v-if="link" :to="link"><Spelling escape :text="word"/></nuxt-link>
             <span v-else><Spelling escape :text="word"/></span>
         </span>
+        <span v-else-if="opinion === 3">
+            <Tooltip :text="$t('profile.opinion.close')">
+                <Icon v="user-friends"/>
+            </Tooltip>
+            <nuxt-link v-if="link" :to="link"><Spelling escape :text="word"/></nuxt-link>
+            <span v-else><Spelling escape :text="word"/></span>
+        </span>
         <span v-else-if="opinion === 0">
             <Tooltip :text="$t('profile.opinion.meh')">
                 <Icon v="thumbs-up"/>

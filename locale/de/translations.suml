@@ -442,6 +442,7 @@ profile:
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
+        close: 'Only if we''re close'  # TODO
         meh: 'Okay'
         no: 'Nein'
 

@@ -445,6 +445,7 @@ profile:
     opinion:
         yes: 'Oui'
         jokingly: 'Pour plaisanter'
+        close: 'Only if we''re close'  # TODO
         meh: 'Ok'
         no: 'Non'
 

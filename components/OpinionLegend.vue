@@ -11,6 +11,11 @@
             <T>profile.opinion.jokingly</T>
         </li>
         <li class="list-inline-item">
+            <Icon v="user-friends"/>
+            =
+            <T>profile.opinion.close</T>
+        </li>
+        <li class="list-inline-item">
             <Icon v="thumbs-up"/>
             =
             <T>profile.opinion.meh</T>

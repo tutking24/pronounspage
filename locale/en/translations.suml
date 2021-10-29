@@ -521,6 +521,7 @@ profile:
     opinion:
         yes: 'Yes'
         jokingly: 'Jokingly'
+        close: 'Only if we''re close'
         meh: 'Okay'
         no: 'Nope'
     banner: >

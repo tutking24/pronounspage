@@ -456,6 +456,7 @@ profile:
     opinion:
         yes: 'יאָ'
         jokingly: 'אין אַ שפּאַס'
+        close: 'Only if we''re close'  # TODO
         meh: 'אָקײ'
         no: 'נײן'
 

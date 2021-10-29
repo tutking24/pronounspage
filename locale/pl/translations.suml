@@ -1245,6 +1245,7 @@ profile:
     opinion:
         yes: 'Tak'
         jokingly: 'Żartobliwie'
+        close: 'Tylko jeśli jesteśmy blisko'
         meh: 'Spoko'
         no: 'Nie'
     bannerButton: 'Stwórz wizytówkę'

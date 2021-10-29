@@ -415,6 +415,7 @@ profile:
     opinion:
         yes: '至愛'
         jokingly: '諧謔'
+        close: 'Only if we''re close'  # TODO
         meh: 'OK'
         no: '不好'
 

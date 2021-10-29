@@ -451,6 +451,7 @@ profile:
     opinion:
         yes: 'Sim'
         jokingly: 'é brincadeira'
+        close: 'Only if we''re close'  # TODO
         meh: 'OK'
         no: 'Não'
 
