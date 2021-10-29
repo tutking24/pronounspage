@@ -117,7 +117,7 @@ sources:
         pronouns: 'Które zaimki/formy są użyte?'
         pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. “onu”, “ono/jej”, “on&ona”'
         type: 'Rodzaj źródła kultury'
-        author: 'Autor'
+        author: 'Osoba autorska'
         title: 'Tytuł'
         extra: 'Dodatkowe dane (tłumaczenie, czasopismo, …)'
         year: 'Rok wydania (polskiej wersji)'
