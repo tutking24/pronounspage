@@ -3,27 +3,31 @@
         <template v-slot="s">
             <button type="button" :class="['btn', parseInt(s.val.value) === 1 ? 'btn-primary' : 'btn-outline-secondary']"
                     :aria-label="$t('profile.opinion.yes')"
-                    :title="$t('profile.opinion.yes')"
                     @click="s.update({key: s.val.key, value: 1})">
-                <Icon v="heart"/>
+                <Tooltip :text="$t('profile.opinion.yes')">
+                    <Icon v="heart"/>
+                </Tooltip>
             </button>
             <button type="button" :class="['btn', parseInt(s.val.value) === 2 ? 'btn-primary' : 'btn-outline-secondary']"
                     :aria-label="$t('profile.opinion.jokingly')"
-                    :title="$t('profile.opinion.jokingly')"
                     @click="s.update({key: s.val.key, value: 2})">
-                <Icon v="grin-tongue"/>
+                <Tooltip :text="$t('profile.opinion.jokingly')">
+                    <Icon v="grin-tongue"/>
+                </Tooltip>
             </button>
             <button type="button" :class="['btn', parseInt(s.val.value) === 0 ? 'btn-primary' : 'btn-outline-secondary']"
                     :aria-label="$t('profile.opinion.meh')"
-                    :title="$t('profile.opinion.meh')"
                     @click="s.update({key: s.val.key, value: 0})">
-                <Icon v="thumbs-up"/>
+                <Tooltip :text="$t('profile.opinion.meh')">
+                    <Icon v="thumbs-up"/>
+                </Tooltip>
             </button>
             <button type="button" :class="['btn', parseInt(s.val.value) === -1 ? 'btn-primary' : 'btn-outline-secondary']"
                     :aria-label="$t('profile.opinion.no')"
-                    :title="$t('profile.opinion.no')"
                     @click="s.update({key: s.val.key, value: -1})">
-                <Icon v="thumbs-down"/>
+                <Tooltip :text="$t('profile.opinion.no')">
+                    <Icon v="thumbs-down"/>
+                </Tooltip>
             </button>
             <input v-model="s.val.key" :class="['form-control', 'mw-input', invalid(s.val) ? 'border-danger' : '']" @keyup="s.update(s.val)" required/>
         </template>
