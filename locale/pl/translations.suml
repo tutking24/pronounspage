@@ -1009,8 +1009,10 @@ links:
                     content: >
                         Dowolny popularny format tekstu,
                         grafiki wektorowej lub
-                        grafiki rastrowej (bezstratna kompresja, np. PNG, rozdzielczość min. 1600x1600).
-                        Pion lub poziom. Plik max. 10 MB.
+                        grafiki rastrowej (bezstratna kompresja, np. PNG, 300 DPI).
+                        Pion (jeśli na pełną stronę) lub poziom (na pół).
+                        Format strony: najprawdopodobniej A4.
+                        Plik max. 10 MB.
                 -
                     icon: 'info-square'
                     label: 'Załącz info'
