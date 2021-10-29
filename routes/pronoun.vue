@@ -76,7 +76,7 @@
                     </p>
                     <div class="small my-1">
                         <Icon v="info-circle"/>
-                        <em><Spelling :text="pronounGroup.group.description"></Spelling></em>
+                        <em><LinkedText :text="pronounGroup.group.description"/></em>
                     </div>
                     <ul class="list-unstyled">
                         <li v-for="pronoun in pronounGroup.groupPronouns" :key="pronoun.canonicalName">
