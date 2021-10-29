@@ -1,28 +1,35 @@
 <template>
     <ListInput v-model="v" :prototype="{key: '', value: 0}" :group="group">
         <template v-slot="s">
-            <button type="button" :class="['btn', parseInt(s.val.value) === 1 ? 'btn-primary' : 'btn-outline-secondary']"
+            <button type="button" :class="['btn', parseInt(s.val.value) === 1 ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
                     :aria-label="$t('profile.opinion.yes')"
                     @click="s.update({key: s.val.key, value: 1})">
                 <Tooltip :text="$t('profile.opinion.yes')">
                     <Icon v="heart"/>
                 </Tooltip>
             </button>
-            <button type="button" :class="['btn', parseInt(s.val.value) === 2 ? 'btn-primary' : 'btn-outline-secondary']"
+            <button type="button" :class="['btn', parseInt(s.val.value) === 2 ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
                     :aria-label="$t('profile.opinion.jokingly')"
                     @click="s.update({key: s.val.key, value: 2})">
                 <Tooltip :text="$t('profile.opinion.jokingly')">
                     <Icon v="grin-tongue"/>
                 </Tooltip>
             </button>
-            <button type="button" :class="['btn', parseInt(s.val.value) === 0 ? 'btn-primary' : 'btn-outline-secondary']"
+            <button type="button" :class="['btn', parseInt(s.val.value) === 3 ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
+                    :aria-label="$t('profile.opinion.close')"
+                    @click="s.update({key: s.val.key, value: 3})">
+                <Tooltip :text="$t('profile.opinion.close')">
+                    <Icon v="user-friends"/>
+                </Tooltip>
+            </button>
+            <button type="button" :class="['btn', parseInt(s.val.value) === 0 ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
                     :aria-label="$t('profile.opinion.meh')"
                     @click="s.update({key: s.val.key, value: 0})">
                 <Tooltip :text="$t('profile.opinion.meh')">
                     <Icon v="thumbs-up"/>
                 </Tooltip>
             </button>
-            <button type="button" :class="['btn', parseInt(s.val.value) === -1 ? 'btn-primary' : 'btn-outline-secondary']"
+            <button type="button" :class="['btn', parseInt(s.val.value) === -1 ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
                     :aria-label="$t('profile.opinion.no')"
                     @click="s.update({key: s.val.key, value: -1})">
                 <Tooltip :text="$t('profile.opinion.no')">
@@ -56,3 +63,14 @@
         },
     }
 </script>
+
+<style lang="scss">
+    @import "assets/style";
+
+    @include media-breakpoint-down('sm', $grid-breakpoints) {
+        .btn-thin {
+            padding-left: map-get($spacers, 1) !important;
+            padding-right: map-get($spacers, 1) !important;
+        }
+    }
+</style>

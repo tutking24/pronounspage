@@ -455,6 +455,7 @@ profile:
     opinion:
         yes: 'Sí'
         jokingly: 'En broma'
+        close: 'Only if we''re close'  # TODO
         meh: 'Okey'
         no: 'No'
 

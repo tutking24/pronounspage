@@ -25,6 +25,7 @@
             left: -50%;
             font-weight: normal;
             font-size: .85rem;
+            white-space: nowrap;
         }
         &:hover {
             .tooltip-content {
