@@ -37,7 +37,6 @@
                         <T>profile.card.link</T>:
                     </small>
                     <small v-if="profile.card === null && profile.cardDark === null">
-                        (<T>profile.card.generate</T>)
                         <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
                             <Icon v="sun"/>
                             <T>mode.light</T>
@@ -51,16 +50,25 @@
                         <Spinner/>
                         <T>profile.card.generating</T>
                     </small>
-                    <a v-if="profile.card" :href="profile.card" target="_blank" rel="noopener"
-                       class="btn btn-outline-success btn-sm mx-1">
-                        <Icon v="sun"/>
-                        <T>mode.light</T>
-                    </a>
-                    <a v-if="profile.cardDark" :href="profile.cardDark" target="_blank" rel="noopener"
-                       class="btn btn-outline-success btn-sm mx-1">
-                        <Icon v="moon"/>
-                        <T>mode.dark</T>
-                    </a>
+                    <span v-else>
+                        <a v-if="profile.card" :href="profile.card" target="_blank" rel="noopener"
+                           class="btn btn-outline-success btn-sm mx-1">
+                            <Icon v="sun"/>
+                            <T>mode.light</T>
+                        </a>
+                        <a v-if="profile.cardDark" :href="profile.cardDark" target="_blank" rel="noopener"
+                           class="btn btn-outline-success btn-sm mx-1">
+                            <Icon v="moon"/>
+                            <T>mode.dark</T>
+                        </a>
+
+                        <button v-if="!profile.card" class="btn btn-outline-success btn-sm" @click="generateCard(false)">
+                            <Icon v="sun"/>
+                        </button>
+                        <button v-if="!profile.cardDark" class="btn btn-outline-success btn-sm" @click="generateCard(true)">
+                            <Icon v="moon"/>
+                        </button>
+                    </span>
                 </div>
             </div>
         </Profile>
@@ -170,7 +178,7 @@
             async checkForCard() {
                 try {
                     const card = await this.$axios.$get(`/profile/has-card`);
-                    if (card.card || card.cardDark) {
+                    if (card.card !== '' && card.cardDark !== '') {
                         this.profile.card = card.card;
                         this.profile.cardDark = card.cardDark;
                         clearInterval(this.cardCheckHandle);

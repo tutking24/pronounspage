@@ -26,7 +26,7 @@ const isSpam = (email) => {
         || email.length > 128;
 }
 
-const replaceExtension = username => username.replace(/\.(txt|jpg|jpeg|png|pdf|gif|doc|docx|csv)$/i, '_$1');
+const replaceExtension = username => username.replace(/\.(txt|jpg|jpeg|png|pdf|gif|doc|docx|csv|js|css)$/i, '_$1');
 
 const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
