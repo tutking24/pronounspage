@@ -945,6 +945,7 @@ links:
     academic: 'Nauka'
     links: 'Dodatkowe materiały'
 
+    mediaShort: 'Media'
     media: 'Zaimki.pl w mediach'
     mediaGuests: 'Zaproszone'
     mediaMentions: 'Wspomniane'
@@ -954,6 +955,75 @@ links:
     social: 'Social media'
 
     languageVersions: 'Inne wersje językowe'
+
+    zine:
+        header: 'Zin'
+        headerLong: 'Niebinarny zin'
+        info:
+            - >
+                Kiedyś pierwsza rada dla osób niebinarnych lub kwestionujących swoją płeć
+                brzmiała „ucz się angielskiego” – bo materiałów po polsku zwyczajnie nie było.
+                W ostatnich latach, przy naszym skromnym współudziale, powoli się to zmienia.
+            - >
+                Chcemy, by naszym następnym krokiem było wspólne stworzenie w nadchodzących miesiącach
+                {https://pl.wikipedia.org/wiki/Zin_(czasopismo)=zina},
+                w którym osoby niebinarne mogłyby opowiedzieć światu o odkrywaniu swojej tożsamości płciowej,
+                poznawaniu siebie, zmaganiach z enbyfobią, o swoich doświadczeniach w sferze płciowości, itp.
+            - >
+                Jako kolektyw zajmiemy się doborem zgłoszonych tekstów i rysunków,
+                korektą, składem, publikacją, promocją, oraz potencjalną dystrybucją.
+                Od społeczności natomiast potrzebujemy… zgłoszeń!
+                Jeśli chcesz opowiedzieć światu, jak to jest być osobą niebinarną,
+                zapraszamy do nadsyłania swojej twórczości!
+                Szczegóły poniżej.
+            - >
+                Zin jest projektem niekomercyjnym – nie jesteśmy w stanie zapłacić osobom autorskim
+                za ich twórczość, ale same też nic na niej nie zarobimy.
+                Wszystko w ramach oddolnego aktywizmu, w imię edukacji i ku pokrzepieniu serc 😉
+            - >
+                Zin zostanie opublikowany za darmo i będzie dostępny w formie elektronicznej,
+                a w zależności od liczby i rodzaju zgłoszeń oraz od dostępnych środków
+                być może również w formie papierowej.
+        submissions:
+            header: 'Nabór zgłoszeń'
+            rules:
+                -
+                    icon: 'map-marker-question'
+                    label: 'Tematyka'
+                    content: 'odkrywanie tożsamości płciowej, życie jako osoba niebinarna'
+                -
+                    icon: 'language'
+                    label: 'Język'
+                    content: 'polski'
+                -
+                    icon: 'pencil-paintbrush'
+                    label: 'Forma'
+                    content: 'dowolna (felieton, opowiadanie, wiersz, rysunek, komiks, …)'
+                -
+                    icon: 'ruler-triangle'
+                    label: 'Długość'
+                    content: 'tekst max. 5000 znaków / rysunek na max. dwie strony'
+                -
+                    icon: 'info-square'
+                    label: 'Załącz info'
+                    content:
+                        - 'imię/nazwisko/pseudonim'
+                        - 'zaimki (plus opcjonalnie: link do wizytówki na zaimki.pl)'
+                        - 'krótką notkę autorską w trzeciej osobie (max. 50 słów)'
+                -
+                    icon: 'calendar'
+                    label: 'Termin'
+                    content: 'do końca grudnia 2021'
+                -
+                    icon: 'mailbox'
+                    label: 'Adres'
+                    content: '{mailto:zin@zaimki.pl=zin@zaimki.pl}'
+            disclaimer: >
+                Zgłaszając swoją pracę, udzielasz nam bezpłatnej licencji do opublikowania jej
+                w formie darmowego PDF-a, ebooka i/lub druku.
+                Kolektyw zastrzega sobie prawo doboru prac do publikacji,
+                biorąc pod uwagę warsztat literacki, długość tekstu, liczbę zgłoszeń,
+                zgodność z wartościami kolektywu oraz z tematyką zina.
 
 people:
     header: 'Znane osoby'

@@ -9,6 +9,7 @@
             v: { required: true },
             set: { default: 'l' },
             size: { default: 1 },
+            inverse: { type: Boolean }
         },
         computed: {
             valueParts() {
@@ -22,7 +23,7 @@
             },
             iconSource() {
                 if (this.v.endsWith('.svg')) {
-                    return `/img/${this.v}`;
+                    return `/img/${this.inverse ? this.v.replace('.svg', '-inverse.svg') : this.v}`;
                 }
                 if (this.v.startsWith('https://')) {
                     return this.v;

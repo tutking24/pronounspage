@@ -38,6 +38,7 @@
             isDark(dark) {
                 this.$eventHub.$emit('mode-changed', dark);
                 this.setMode(dark);
+                this.$store.commit('setDarkMode', dark);
             }
         }
     }

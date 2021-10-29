@@ -230,6 +230,10 @@ export default {
             }
             routes.push({ path: '/' + config.links.blogRoute + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
 
+            if (config.links.zine && config.links.zine.enabled) {
+                routes.push({ path: '/' + config.links.zine.route, component: resolve(__dirname, 'routes/zine.vue') });
+            }
+
             if (config.people.enabled) {
                 routes.push({ path: '/' + config.people.route, component: resolve(__dirname, 'routes/people.vue') });
             }

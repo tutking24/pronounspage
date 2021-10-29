@@ -206,6 +206,7 @@
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
                             this.config.english && this.config.english.enabled ? '/' + this.config.english.route : '',
+                            this.config.links.zine && this.config.links.zine.enabled ? '/' + this.config.links.zine.route : '',
                         ],
                     });
                 }
