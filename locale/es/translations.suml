@@ -455,7 +455,7 @@ profile:
     opinion:
         yes: 'Sí'
         jokingly: 'En broma'
-        close: 'Only if we''re close'  # TODO
+        close: 'Solo si somos personas cercanas'
         meh: 'Okey'
         no: 'No'
 
@@ -486,8 +486,8 @@ crud:
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
     loginRequired: '{/cuenta=Log in} para enviar un ítem'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Copiar enlace'
+    download: 'Descargar'
 
 footer:
     license: >
