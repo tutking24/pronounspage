@@ -1,9 +1,14 @@
 <template>
     <div v-if="config.pronouns.null && config.pronouns.null.ideas && config.pronouns.null.ideas.length">
         <section v-for="idea in config.pronouns.null.ideas">
-            <h3>{{idea.header}}</h3>
+            <h3>
+                {{idea.header}}
+            </h3>
             <p v-if="idea.description">
                 {{idea.description}}
+            </p>
+            <p v-if="idea.normative">
+                <NormativeBadge/>
             </p>
             <ul>
                 <li v-for="[exampleFrom, exampleTo] in idea.examples">

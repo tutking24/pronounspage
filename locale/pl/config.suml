@@ -59,38 +59,45 @@ pronouns:
         ideas:
             -
                 header: 'Zmiana podmiotu zdania'
+                normative: true
                 examples:
                     - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
                     - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
                     - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
             -
                 header: 'Strona bierna'
+                normative: true
                 examples:
                     - [ 'zgubił telefon', 'telefon został zgubiony' ]
                     - [ 'znalazłam telefon', 'telefon został znaleziony' ]
             -
                 header: 'Forma bezosobowa'
+                normative: true
                 examples:
                     - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
                     - [ 'znalazłam telefon', 'znaleziono telefon' ]
                     - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
             -
                 header: 'Bezosobowe użycie 3. os. mnogiej'
+                normative: true
                 examples:
                     - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi' ]
             -
                 header: 'Podmiot logiczny w celowniku'
+                normative: true
                 examples:
                     - [ 'przypomniałem sobie', 'przypomniało mi się' ]
                     - [ 'zmarzłam', 'zrobiło mi się zimno' ]
                     - [ 'zrobiłem', 'udało mi się zrobić' ]
             -
                 header: 'Bezokolicznikowy czas przyszły'
+                normative: true
                 examples:
                     - [ 'będę robiła', 'będę robić' ]
                     - [ 'będę jadł', 'będę jeść' ]
             -
                 header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
+                normative: true
                 examples:
                     - [ 'gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę' ]
             -
@@ -101,11 +108,13 @@ pronouns:
                     - [ 'posprzątałem mieszkanie', 'mieszkanie posprzątane' ]
             -
                 header: 'Unikanie trybu przypuszczającego'
+                normative: true
                 examples:
                     - [ 'czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?' ]
                     - [ 'może bym tak pojechała na wakacje?', 'może pojadę na wakacje?' ]
             -
                 header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
+                normative: true
                 examples:
                     - [ 'zarządca', 'osoba zarządzająca' ]
                     - [ 'kandydaci i kandydatki', 'osoby kandydujące' ]
@@ -131,13 +140,20 @@ pronouns:
                     - [ 'jestem szczęśliwa!', 'jestem szczęśliw!' ]
                     - [ 'czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?' ]
             -
+                header: 'Wyrzutnia / elipsa'
+                normative: true
+                examples:
+                    - [ 'coś bym dziś porobiło', 'coś bym dziś' ]
+            -
                 header: 'Skróty'
+                normative: true
                 examples:
                     - [ 'Katarzyna Nowak', 'K. Nowak' ]
                     - [ 'Szanowny Pan Białek', 'Sz. P. Białek' ]
                     - [ 'Towarzyszka Q', 'Tow. Q' ]
             -
                 header: 'Liczebniki zbiorowe'
+                normative: true
                 examples:
                     - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
     others: 'Pozostałe formy'
