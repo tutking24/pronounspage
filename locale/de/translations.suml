@@ -166,9 +166,9 @@ nouns:
 
     image: 'Bild'
 
-community: # TODO
-    header: 'Community'
-    headerLong: 'Queer community'
+community: 
+    header: 'Gemeinschaft'
+    headerLong: 'Queere Gemeinschaft'
 
 terminology:
     header: 'Terminologie'
@@ -442,7 +442,7 @@ profile:
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
-        close: 'Only if we''re close'  # TODO
+        close: 'Nur wenn wir eng zusammen sind'
         meh: 'Okay'
         no: 'Nein'
 
@@ -473,8 +473,8 @@ crud:
     author: 'Hinzugefügt von'
     saved: 'Änderungen erfolgreich gespeichert!'
     loginRequired: '{/account=Log dich ein} um Eintrag einzureichen'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Link kopieren'
+    download: 'Herunterladen'
 
 footer:
     license: >

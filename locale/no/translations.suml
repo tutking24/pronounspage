@@ -445,7 +445,7 @@ profile:
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'
-        close: 'Only if we''re close'  # TODO
+        close: 'Bare hvis vi er nærme'
         meh: 'Okay'
         no: 'Nei'
     banner: >

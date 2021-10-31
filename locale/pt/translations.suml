@@ -450,8 +450,8 @@ profile:
         save: 'Salve o cartão'
     opinion:
         yes: 'Sim'
-        jokingly: 'é brincadeira'
-        close: 'Only if we''re close'  # TODO
+        jokingly: 'É brincadeira'
+        close: 'Só se somos pessoas próximas'
         meh: 'OK'
         no: 'Não'
 
@@ -482,8 +482,8 @@ crud:
     author: 'Adicionado por'
     saved: 'Alterações salvas com sucesso!'
     loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Copiar link'
+    download: 'Baixar'
 
 footer:
     license: >

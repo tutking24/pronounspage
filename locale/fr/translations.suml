@@ -445,7 +445,7 @@ profile:
     opinion:
         yes: 'Oui'
         jokingly: 'Pour plaisanter'
-        close: 'Only if we''re close'  # TODO
+        close: 'Seulement entre proches'
         meh: 'Ok'
         no: 'Non'
 
@@ -476,8 +476,8 @@ crud:
     author: 'Ajouté par'
     saved: 'Modifications enregistrées !'
     loginRequired: '{/compte=Connectez-vous} pour proposer un mot'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Copier le lien'
+    download: 'Télécharger'
 
 footer:
     license: >
