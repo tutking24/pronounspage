@@ -1017,7 +1017,7 @@ links:
                     icon: 'info-square'
                     label: 'Załącz info'
                     content:
-                        - 'imię/nazwisko/pseudonim'
+                        - 'imię i nazwisko lub pseudonim – jakkolwiek chcesz być podpisanx; nie potrzebujemy znać {/terminologia#nekronim=nekronimu}'
                         - 'zaimki (plus opcjonalnie: link do wizytówki na zaimki.pl)'
                         - 'krótką notkę autorską w trzeciej osobie (max. 50 słów)'
                 -
