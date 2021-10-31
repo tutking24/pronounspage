@@ -2,6 +2,8 @@
 
 <small>2021-10-12 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
 
+![Zdjęcie ilustracyjne: Formularz, pytanie o płeć](/img-local/blog/formularz.png)
+
 Ile jest płci?
 
 Transfobiczni hejterzy z uporem godnym lepszej sprawy powtarzają jak zacięta płyta, że płci są dwie,
