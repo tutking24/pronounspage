@@ -2,6 +2,8 @@
 
 <small>2021-06-18 | [@andrea](/@andrea)</small>
 
+![Zdjęcie ilustracyjne: Strona internetowa „Lista imion występujących w rejestrze PESEL”](/img-local/blog/pesel.png)
+
 Wszystkie imiona są unisex.
 W końcu słowa to tylko zlepki głosek, którym osoby używające języka nadają znaczenie – 
 na jakie się umówimy, takie znaczenie będą miały.
