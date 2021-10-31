@@ -1,10 +1,13 @@
 <template>
     <NotFound v-if="!content"/>
     <div v-else class="blog-post">
-        <router-link :to="'/' + config.links.blogRoute" v-if="config.links.blog">
-            <Icon v="pen-nib"/>
-            <T>links.blog</T>
-        </router-link>
+        <LinksNav v-if="config.links.split"/>
+        <p v-else>
+            <router-link :to="'/' + config.links.blogRoute" v-if="config.links.blog">
+                <Icon v="pen-nib"/>
+                <T>links.blog</T>
+            </router-link>
+        </p>
 
         <div v-html="content"></div>
 
