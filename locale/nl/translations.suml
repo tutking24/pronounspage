@@ -433,7 +433,7 @@ profile:
     opinion:
         yes: 'Ja'
         jokingly: 'Voor de grap'
-        close: 'Only if we''re close'  # TODO
+        close: 'Alleen als we hecht zijn'
         meh: 'Oké'
         no: 'Nee'
 
@@ -465,8 +465,8 @@ crud:
     author: 'Toegevoegd door'
     saved: 'Veranderingen succesvol opgeslagen!'
     loginRequired: '{/account=Login} om een toevoeging in te dienen'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Kopieer link'
+    download: 'Download'
 
 footer:
     license: >

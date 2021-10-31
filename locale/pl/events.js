@@ -2,7 +2,7 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calend
 
 module.exports = [
     // months
-    new Event('{/spis=Niebinary Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
+    new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
 
     // static date
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
