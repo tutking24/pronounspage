@@ -37,6 +37,7 @@ pronouns:
         ideas:
             -
                 header: 'Use names or initials instead of pronouns'
+                normative: true
                 examples:
                     - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
                     - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
@@ -45,6 +46,7 @@ pronouns:
                         - '{/:J=J}''s graduation starts soon'
             -
                 header: 'Passive voice'
+                normative: true
                 examples:
                     - ['He answered the phone', 'The phone was answered']
                     -
@@ -52,17 +54,20 @@ pronouns:
                         - 'Wen''s cat is well cared for'
             -
                 header: 'Rephrasing the sentence (circumlocution)'
+                normative: true
                 examples:
                     - ['Lior did it all by himself', 'Lior did it all without any help']
                     - ['Gael talks in his sleep', 'Gael talks while sleeping']
             -
                 header: 'Replacing a pronoun with a descriptive noun or phrase'
+                normative: true
                 examples:
                     - ['She landed the plane safely', 'The pilot landed the plane safely']
                     - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
                     - ['She argues that…', 'The person who started this discussion argues that…']
             -
                 header: 'Dropping pronouns'
+                normative: true
                 examples:
                     - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
                     - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']

@@ -146,6 +146,7 @@
                 <li v-if="config.pronouns.null !== false" class="list-group-item" id="nameself">
                     <p class="h5">
                         <LinkedText :text="config.pronouns.null.description"/>
+                        <NormativeBadge/>
                     </p>
                     <div class="small my-1" v-if="config.pronouns.null.history">
                         <Icon v="info-circle"/>
