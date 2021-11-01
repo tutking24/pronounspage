@@ -4,7 +4,39 @@
 
 {details=<span class="badge bg-dark">English version</span> Petition: let’s fix a bug in spellcheckers – Polish has a neutral grammatical gender!}
 
-TODO
+Polish has three grammatical genders (in singular): masculine, feminine and neuter.
+Unfortunately, spellcheckers and autocorrects are completely ignoring the existence of the latter
+when it comes to 1st and 2nd person of the past tense.
+
+Words like “zrobiłom” (I did), “przyszłom” (I came), “byłoś” (you were) or “widziałoś” (you saw)
+are absolutely correct grammatically, as confirmed by
+[the position of the Polish Language Council issued in 2003](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208)
+or [a public statement by a renowned linguist prof. Jerzy Bralczyk](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a).
+Conjugation templates that treat neuter equally to masculine and feminine have been included in grammar books as early as
+[1796](/korpus#Alexander%20Adamowicz) and [1823](/korpus#Maksymilian%20Jakubowicz).
+Those forms were used by prominent authors, like
+[Adam Mickiewicz](https://zaimki.pl/korpus#Liryki%20loza%C5%84skie) and [Stanisław Lem](/korpus#Lem%20Maska).
+In our minds there is no shred of doubt that such words should not be marked as incorrect by software.
+
+In the recent months and years more and more people are discovering that they’re [nonbinary](https://en.pronouns.page/terminology#nonbinary)
+and decide to use the neuter forms to express themselves.
+According to a study conducted on over twenty two hundred nonbinary participants
+([Niebinarny Spis Powszechny 2021](https://zaimki.pl/blog/spis-2021))
+every fourth person in our community is using them in speech and in writing!
+
+So although this bug in the spellchecking software used to be mostly an academic inconsistency
+and incongruence with the linguistic norm, nowadays there’s a growing number of people
+for which it becomes an obstacle in everyday communication –
+especially when it’s not about just marking an allegedly “incorrect” word with a red line,
+but even autocorrecting it to an arbitrarily chosen binary form.
+
+A real need for this bugfix has arisen. That’s why we’re calling the attention
+of organisations and people responsible for developing the spellchecking and autocorrecting software
+and asking them to implement the fix.
+
+For more information about neuter in Polish, examples of its usage in cultural texts,
+academic papers about nonbinary language in Polish, and other materials,
+please check out the website [zaimki.pl](https://zaimki.pl) and don’t hesitate to contact us at [kontakt@zaimki.pl](mailto:kontakt@zaimki.pl).
 
 {/details}
 
@@ -43,18 +75,26 @@ zapraszamy na [zaimki.pl](https://zaimki.pl) oraz do kontaktu mailowego na adres
 — [Rada Języka Neutralnego](/kolektyw-rjn)
 
 <section>
-    <a href="#" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="#" target="_blank" class="btn btn-primary btn-lg d-block">
         <span class="fal fa-signature"></span>
         Podpisz petycję na change.org
     </a>
 </section>
 
-## Instrukcje zgłaszania błędów w oprogramowaniu
+## Instrukcje zgłaszania błędów w oprogramowaniu:
+
+Choć formy rodzaju neutralnego są poprawne gramatycznie,
+to ze względu na bardzo rzadkie spotykanie się z nimi
+osoby decyzyjne mogą mieć wątpliwości co do ich poprawności.
+Dlatego wysyłając zgłoszenie błędu, warto je uzasadnić.
+W komentarzu lub wiadomości dobrze jest podać źródła,
+powołać się na osoby z autorytetem w dziedzinie językoznawstwa,
+artykuły, wywiady, teksty kultury etc. – lub załączyć link do powyższej petycji.
 
 {details={favicon=libreoffice.org/themes/libreofficenew/favicon.ico} LibreOffice, {favicon=sjp.pl/favicon.ico} SJP.pl}
 
 LibreOffice [używa](https://github.com/LibreOffice/dictionaries/blob/master/pl_PL/README_pl.txt)
-słownika tworzonego przez SJP.pl.
+[słownika ze strony SJP.pl](https://sjp.pl/slownik/ort/).
 
 Z osobami tworzącymi go można skontaktować się drogą mailową:
 [sjpslownik@gmail.com](mailto:sjpslownik@gmail.com)
@@ -63,30 +103,40 @@ Z osobami tworzącymi go można skontaktować się drogą mailową:
 
 {details={favicon=ssl.gstatic.com/docs/documents/images/kix-favicon7.ico} Google Docs}
 
-TODO
+Po kliknięciu na podkreślone na czerwono słowo wybierz ikonę okienka dialogowego z wykrzyknikiem. Potem wybierz „Podaj więcej informacji”.
+
+Pojawi się okienko „Komentarze dotyczące sugestii”. Zarówno przy „Mój pierwotny tekst…” jak i „Sugestia to…” zaznacz opcję „Poprawnie” –
+chodzi jedynie o poszerzenie bazy Google’a o neutralne płciowo słowa przy sugerowaniu poprawek w tekście oraz o to,
+by program nie zaznaczał słów z końcówkami dla rodzaju neutralnego w 1. i 2. os czasu przeszłego jako błędu!
+
+![Screenshoty procesu opisanego powyżej](/img-local/blog/spellcheck-google-docs.png)
 
 {/details}
 
 {details={favicon=ssl.gstatic.com/translate/favicon.ico} Google Translate}
 
-TODO
+W okienku z polskim tłumaczeniem obcego tekstu kliknij na przycisk „Zaproponuj zmianę” i wpisz wersję neutralną.
+
+Możesz również kliknąć na „Send feedback” w prawym dolnym rogu, by wpisać wiadomość do ekipy Google Translate.
+
+![Screenshoty procesu opisanego powyżej](/img-local/blog/spellcheck-google-translate.png)
 
 {/details}
 
 {details={favicon=c.s-microsoft.com/favicon.ico?v2} Microsoft Office, Microsoft Word}
 
-TODO
+W menu „Pomoc” kliknij na „Feedback”, a następnie „Coś mi się nie podoba”.
 
 {/details}
 
 {details={favicon=apple.com/favicon.ico} Apple, iPhone keyboard}
 
-TODO
+Wypełnij formularz na stronie [apple.com/feedback/iphone](https://www.apple.com/feedback/iphone/).
 
 {/details}
 
 {details={favicon=android.com/favicon.ico} Android keyboard}
 
-TODO
+TODO https://issuetracker.google.com/issues?q=componentid:192715%2B&pli=1
 
 {/details}
