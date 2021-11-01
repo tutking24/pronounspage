@@ -135,8 +135,8 @@ Wypełnij formularz na stronie [apple.com/feedback/iphone](https://www.apple.com
 
 {/details}
 
-{details={favicon=android.com/favicon.ico} Android keyboard}
+{details={favicon=android.com/favicon.ico} Android keyboard (GBoard)}
 
-TODO https://issuetracker.google.com/issues?q=componentid:192715%2B&pli=1
+Podążaj za [instrukcją ze strony Google](https://support.google.com/gboard/answer/9430776?hl=en&ref_topic=9023899).
 
 {/details}
