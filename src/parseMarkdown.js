@@ -4,7 +4,9 @@ export default async function parseMarkdown(markdown) {
             markdown
                 .replace(/<table>/g, '<div class="table-responsive"><table class="table table-striped small">')
                 .replace(/<\/table>/g, '</table></div>')
+                .replace(/{favicon=(.+?)}/g, '<img src="https://$1" alt="Favicon" style="width: 1em; height: 1em;"/>')
                 .replace(/<a href="http/g, '<a target="_blank" rel="noopener" href="http')
+                .replace(/<p>{details=(.+?)}<\/p>(.+?)<p>{\/details}<\/p>/gms, '<details class="border mb-3"><summary class="bg-light p-3">$1</summary><div class="border-top p-3">$2</div></details>')
             + '</div>'
         ;
         const titleMatch = content.match('<h1[^>]*>([^<]+)</h1>');
