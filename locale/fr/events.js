@@ -29,4 +29,7 @@ module.exports = [
         }
     }, EventLevel.Day),
 
+    // one-off events
+    new Event('Journée de le mariage pour tous (Suisse)', null, 7, dayYear(1, 2022), EventLevel.Day),
+
 ];
