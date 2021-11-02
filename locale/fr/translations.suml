@@ -754,7 +754,7 @@ calendar:
         suicide_prevention_month: 'Mois de la prévention du suicide'
         aids_awareness_month: 'Mois de sensibilité à l''épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
-    banner: 'Nous célébrons'
+    banner: 'Nous célébrons '
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
     celebrating_week: 'is celebrated on'
