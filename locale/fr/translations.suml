@@ -660,8 +660,8 @@ flags:
     Xenogender: 'Xénogenre'
 
 calendar:
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
+    header: 'Calendrier'
+    headerLong: 'Calendrier queer'
     months:
         1: 'Janvier'
         2: 'Février'
@@ -754,14 +754,14 @@ calendar:
         suicide_prevention_month: 'Mois de la prévention du suicide'
         aids_awareness_month: 'Mois de sensibilité à l'épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
-    banner: 'We''re celebrating'
+    banner: 'Nous célébrons'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
     celebrating_week: 'is celebrated on'
     celebrating_month: 'is celebrated in'
     image:
-        header: 'Download an image'
-        overview: 'Overview'
-        labels: 'Labels'
-    link: 'Link'
-    full: 'Full calendar'
+        header: 'Télécharger l'image'
+        overview: 'Vue générale'
+        labels: 'Étiquettes'
+    link: 'Liens'
+    full: 'Calendrier complet'
