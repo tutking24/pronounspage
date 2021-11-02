@@ -130,6 +130,10 @@ profile:
     flags:
         defaultPronoun: 'iel'
 
+calendar:
+    enabled: true
+    route: 'calendrier'
+
 census:
     enabled: false
 
