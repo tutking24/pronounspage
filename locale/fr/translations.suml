@@ -365,7 +365,7 @@ support:
     header: 'Soutien'
     description: >
         Si vous voulez donnez un coup de main pour le serveur, le domaine, les stickers, etc. ou simplement payer une bière à l'auteur,
-        vous pouvez utiliser les liens ci-dessous:
+        vous pouvez utiliser les liens ci-dessous :
 
 user:
     header: 'Compte'
@@ -558,7 +558,7 @@ ban:
     confirm: 'Voulez-vous bannir @%username% ?'
     header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'
     banned: 'Banni'
-    termsIntro: 'Selon nos {/termes=Termes de service}:'
+    termsIntro: 'Selon nos {/termes=Termes de service} :'
 
 report:
     action: 'Signaler'
