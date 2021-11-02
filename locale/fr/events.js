@@ -13,6 +13,7 @@ module.exports = [
     new Event('Journée de sensibilité à la bispiritualité (Canada/USA)', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Journée de sensibilisation aux femmes, aux filles et aux personnes bispirituelles autochtones disparues et assassinées (Canada/USA)', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
 
+    // dynamic date
     new Event('Journée d''esprit (Canada/USA)', null, 10, function* (monthDays) {
         let thursdays = 0;
         for (let d of monthDays) {
