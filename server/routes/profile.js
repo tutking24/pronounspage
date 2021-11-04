@@ -167,7 +167,8 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 credentials = ${req.isGranted() ? req.body.credentials.join('|') || null : null},
                 credentialsLevel = ${req.isGranted() ? req.body.credentialsLevel || null : null},
                 credentialsName = ${req.isGranted() ? req.body.credentialsName || null : null},
-                card = NULL
+                card = NULL,
+                cardDark = NULL
             WHERE id = ${ids[0]}
         `);
     } else {
