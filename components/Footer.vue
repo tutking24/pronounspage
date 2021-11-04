@@ -75,6 +75,7 @@
                             </nuxt-link>
                         </li>
                     </ul>
+                    <p class="small">Using a gradient from <a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">gradientmagic.com</a></p>
                 </div>
                 <div class="my-2">
                     <Share/>
