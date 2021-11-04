@@ -1,8 +1,10 @@
-# Petycja: naprawmy buga w programach sprawdzających pisownię – rodzaj neutralny jest poprawny!
+# Naprawmy buga w programach sprawdzających pisownię – rodzaj neutralny jest poprawny!
 
-<small>2021-11-07 | [Kolektyw „Rada Języka Neutralnego”](/kolektyw-rjn)</small>
+<small>2021-11-04 | [Kolektyw „Rada Języka Neutralnego”](/kolektyw-rjn)</small>
 
-{details=<span class="badge bg-dark">English version</span> Petition: let’s fix a bug in spellcheckers – Polish has a neutral grammatical gender!}
+![Google Docs zaznaczający rzekome „błędy” w zdniu „Czy sprawdziłoś już to, o co Cię prosiłom?”](/img-local/blog/autokorekta.png)
+
+{details=<span class="badge bg-dark">English version</span> Let’s fix a bug in spellcheckers – Polish has a neutral grammatical gender!}
 
 Polish has three grammatical genders (in singular): masculine, feminine and neuter.
 Unfortunately, spellcheckers and autocorrects are completely ignoring the existence of the latter
@@ -75,7 +77,7 @@ zapraszamy na [zaimki.pl](https://zaimki.pl) oraz do kontaktu mailowego na adres
 — [Rada Języka Neutralnego](/kolektyw-rjn)
 
 <section>
-    <a href="#" target="_blank" class="btn btn-primary btn-lg d-block">
+    <a href="https://chng.it/gFxppJDc" target="_blank" class="btn btn-primary btn-lg d-block">
         <span class="fal fa-signature"></span>
         Podpisz petycję na change.org
     </a>
@@ -131,7 +133,7 @@ W menu „Pomoc” kliknij na „Feedback”, a następnie „Coś mi się nie p
 
 {details={favicon=apple.com/favicon.ico} Apple, iPhone keyboard}
 
-Wypełnij formularz na stronie [apple.com/feedback/iphone](https://www.apple.com/feedback/iphone/).
+Wypełnij formularz na stronie [Apple](https://www.apple.com/feedback/iphone/).
 
 {/details}
 
