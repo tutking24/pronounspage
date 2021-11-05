@@ -8,7 +8,7 @@ Polish has three grammatical genders (in singular): masculine, feminine and neut
 Unfortunately, spellcheckers and autocorrects are completely ignoring the existence of the latter
 when it comes to 1st and 2nd person of the past tense.
 
-Words like “zrobiłom” (I did), “przyszłom” (I came), “byłoś” (you were) or “widziałoś” (you saw)
+Words like “zrobiłom” (I did), “przyszłom” (I came), “byłoś” (you were), “widziałoś” (you saw) or „chciałobym” (I would like)
 are absolutely correct grammatically, as confirmed by
 [the position of the Polish Language Council issued in 2003](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208)
 or [a public statement by a renowned linguist prof. Jerzy Bralczyk](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a).
@@ -46,7 +46,7 @@ Język polski ma w liczbie pojedynczej trzy normatywne rodzaje gramatyczne: męs
 Niestety, programy sprawdzające i autokorygujące pisownię zdają się ten fakt zupełnie ignorować,
 kiedy chodzi o formy czasowników w pierwszej i drugiej osobie czasu przeszłego.
 
-Słowa takie jak „zrobiłom”, „przyszłom”, „byłoś” czy „widziałoś” są jak najbardziej poprawne gramatycznie,
+Słowa takie jak „zrobiłom”, „przyszłom”, „byłoś”, „widziałoś” czy „chciałobym” są jak najbardziej poprawne gramatycznie,
 co potwierdza chociażby [opinia Rady Języka Polskiego z 2003 roku](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208)
 czy [publiczna wypowiedź prof. Jerzego Bralczyka](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a).
 Wzory koniugacji traktujące formy nijakie na równi z męskimi i żeńskimi znajdujemy już w gramatykach
