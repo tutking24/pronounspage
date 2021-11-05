@@ -50,7 +50,8 @@ Słowa takie jak „zrobiłom”, „przyszłom”, „byłoś”, „widziało�
 co potwierdza chociażby [opinia Rady Języka Polskiego z 2003 roku](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208)
 czy [publiczna wypowiedź prof. Jerzego Bralczyka](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a).
 Wzory koniugacji traktujące formy nijakie na równi z męskimi i żeńskimi znajdujemy już w gramatykach
-z [1796](/korpus#Alexander%20Adamowicz) i [1823](/korpus#Maksymilian%20Jakubowicz) roku.
+z [1796](/korpus#Alexander%20Adamowicz) i [1823](/korpus#Maksymilian%20Jakubowicz) roku,
+a dziś notuje je [Wikipedia](https://pl.wikipedia.org/wiki/Czas_przesz%C5%82y).
 Ich użycie pojawiało się u [Adama Mickiewicza](https://zaimki.pl/korpus#Liryki%20loza%C5%84skie)
 czy [Stanisława Lema](/korpus#Lem%20Maska).
 Naszym zdaniem nie ma najmniejszych wątpliwości, że słowa te nie powinny być oznaczane przez software jako błędne.
