@@ -2,8 +2,6 @@
 
 <small>2021-11-04 | [Kolektyw „Rada Języka Neutralnego”](/kolektyw-rjn)</small>
 
-![Google Docs zaznaczający rzekome „błędy” w zdniu „Czy sprawdziłoś już to, o co Cię prosiłom?”](/img-local/blog/autokorekta.png)
-
 {details=<span class="badge bg-dark">English version</span> Let’s fix a bug in spellcheckers – Polish has a neutral grammatical gender!}
 
 Polish has three grammatical genders (in singular): masculine, feminine and neuter.
@@ -41,6 +39,8 @@ academic papers about nonbinary language in Polish, and other materials,
 please check out the website [zaimki.pl](https://zaimki.pl) and don’t hesitate to contact us at [kontakt@zaimki.pl](mailto:kontakt@zaimki.pl).
 
 {/details}
+
+<p class="text-center"><img src="/img-local/blog/autokorekta.png" class="hero border" alt="Google Docs zaznaczający rzekome „błędy” w zdaniu „Czy sprawdziłoś już to, o co Cię prosiłom?”"/></p>
 
 Język polski ma w liczbie pojedynczej trzy normatywne rodzaje gramatyczne: męski, żeński i ~~nijaki~~ [neutralny](/pytania#nijaki).
 Niestety, programy sprawdzające i autokorygujące pisownię zdają się ten fakt zupełnie ignorować,
