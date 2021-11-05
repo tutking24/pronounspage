@@ -94,10 +94,13 @@ W komentarzu lub wiadomości dobrze jest podać źródła,
 powołać się na osoby z autorytetem w dziedzinie językoznawstwa,
 artykuły, wywiady, teksty kultury etc. – lub załączyć link do powyższej petycji.
 
-{details={favicon=libreoffice.org/themes/libreofficenew/favicon.ico} LibreOffice, {favicon=sjp.pl/favicon.ico} SJP.pl}
+{details={favicon=sjp.pl/favicon.ico} SJP.pl: {favicon=libreoffice.org/themes/libreofficenew/favicon.ico} LibreOffice, {favicon=mozilla.org/media/img/favicons/firefox/browser/apple-touch-icon.79c2abeb4e35.png} Firefox, {favicon=google.com/chrome/static/images/favicons/favicon-32x32.png} Chrome}
 
-LibreOffice [używa](https://github.com/LibreOffice/dictionaries/blob/master/pl_PL/README_pl.txt)
-[słownika ze strony SJP.pl](https://sjp.pl/slownik/ort/).
+Wiele programów open source, jak
+[LibreOffice](https://github.com/LibreOffice/dictionaries/blob/master/pl_PL/README_pl.txt),
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/polish-spellchecker-dictionary/)
+czy [Chrome](https://src.chromium.org/viewvc/chrome/trunk/deps/third_party/hunspell_dictionaries/README_pl_PL.txt)
+używa [słownika ze strony SJP.pl](https://sjp.pl/slownik/ort/).
 
 Z osobami tworzącymi go można skontaktować się drogą mailową:
 [sjpslownik@gmail.com](mailto:sjpslownik@gmail.com)
