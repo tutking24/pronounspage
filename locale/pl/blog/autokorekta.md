@@ -105,6 +105,8 @@ używa [słownika ze strony SJP.pl](https://sjp.pl/slownik/ort/).
 Z osobami tworzącymi go można skontaktować się drogą mailową:
 [sjpslownik@gmail.com](mailto:sjpslownik@gmail.com)
 
+Można również zostawiać komentarze przy pojedynczych brakujących słowach, np. [sjp.pl/zrobiłom](https://sjp.pl/zrobi%C5%82om) czy [sjp.pl/byłom](https://sjp.pl/by%C5%82om).
+
 {/details}
 
 {details={favicon=ssl.gstatic.com/docs/documents/images/kix-favicon7.ico} Google Docs}
