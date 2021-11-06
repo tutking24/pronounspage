@@ -50,21 +50,19 @@
             </div>
         </div>
         </header>
-        <!-- a banner for every occasion ;)
-        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 6, 23, 20, 0, 0)" class="container">
+        <!-- a banner for every occasion ;) -->
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 11, 14, 20, 0, 0) && $route.path === '/'" class="container">
             <div class="alert alert-success mb-0 clearfix">
-                <Icon v="glass-cheers" size="4" class="float-start me-3"/>
-                <p class="h3">Pierwsze urodziny zaimków.pl i Słownika Neutratywów</p>
+                <Icon v="spell-check" size="4" class="float-start me-3"/>
+                <p class="h3">Naprawmy buga w programach sprawdzających pisownię – rodzaj neutralny jest poprawny!</p>
                 <p class="mb-0">
-                    Świętuj z nami na naszym
-                    <a href="https://www.facebook.com/events/338852937742883" target="_blank" rel="noopener">
-                        urodzinowym live streamie!
-                    </a>
-                    <small>(piątek, 23 lipca, o 19:00)</small>
+                    <nuxt-link to="/blog/autokorekta">
+                        Podpisz naszą petycję! Zgłoś błąd osobom tworzącym oprogramowanie!
+                    </nuxt-link>
                 </p>
             </div>
         </div>
-        -->
+        <!-- -->
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
