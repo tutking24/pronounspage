@@ -52,14 +52,22 @@
         </header>
         <!-- a banner for every occasion ;) -->
         <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 11, 14, 20, 0, 0) && $route.path === '/'" class="container">
-            <div class="alert alert-success mb-0 clearfix">
-                <Icon v="spell-check" size="4" class="float-start me-3"/>
-                <p class="h3">Naprawmy buga w programach sprawdzających pisownię – rodzaj neutralny jest poprawny!</p>
-                <p class="mb-0">
-                    <nuxt-link to="/blog/autokorekta">
-                        Podpisz naszą petycję! Zgłoś błąd osobom tworzącym oprogramowanie!
-                    </nuxt-link>
-                </p>
+            <div class="alert alert-warning my-3 d-flex align-items-center">
+                <Icon v="spell-check" size="4" class="mx-4"/>
+                <div>
+                    <p class="h4 mb-3">
+                        Naprawmy buga w programach sprawdzających pisownię<br/>
+                        – rodzaj neutralny jest poprawny!
+                    </p>
+                    <p class="mb-0">
+                        <a href="https://chng.it/gFxppJDc" target="_blank" rel="noopener" class="btn btn-primary">
+                            Podpisz naszą petycję!
+                        </a>
+                        <nuxt-link to="/blog/autokorekta" class="btn btn-primary">
+                            Zgłoś błędy w oprogramowaniu!
+                        </nuxt-link>
+                    </p>
+                </div>
             </div>
         </div>
         <!-- -->
