@@ -107,6 +107,15 @@ Z osobami tworzącymi go można skontaktować się drogą mailową:
 
 Można również zostawiać komentarze przy pojedynczych brakujących słowach, np. [sjp.pl/zrobiłom](https://sjp.pl/zrobi%C5%82om) czy [sjp.pl/byłom](https://sjp.pl/by%C5%82om).
 
+---
+
+**Aktualizacja:** otrzymałośmy odpowiedź od redakcji sjp.pl.
+Formy łosiowe w swoim słowniku mieli do 2012 roku, ale „wywalili”: bo sprawiały „problemy”,
+bo użytkownicy myśleli że są błędne (więc zamiast edukować, słownik woli utrzymywać ich w błędzie),
+bo nie wszystkie słowa muszą być w słowniku…
+Nie planują ich przywrócić. Zmisgenderyzowali też osobę, z którą pisali.
+[(Watek z treścią konwersacji)](https://twitter.com/neutratywy/status/1458110112292298759)
+
 {/details}
 
 {details={favicon=ssl.gstatic.com/docs/documents/images/kix-favicon7.ico} Google Docs}
