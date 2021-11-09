@@ -256,6 +256,17 @@ links:
             url: 'https://oengus.io/'
             headline: 'Oengus.io'
             extra: ' – uses Pronouns.Page API in user profiles'
+        -
+            icon: 'cogs'
+            url: 'https://github.com/eramdam/BetterTweetDeck/releases/tag/4.5.2'
+            headline: 'BetterTweetDeck'
+            extra: ' – a TweetDeck extension that, among other things, displays user''s pronouns more prominently, with the help of our API'
+        -
+            icon: 'cogs'
+            url: 'https://github.com/katacarbix/pronouns.js'
+            headline: 'pronouns.js'
+            extra: ' – a JavaScript library for parsing pronouns'
+
     blog: true
 
 contact:
