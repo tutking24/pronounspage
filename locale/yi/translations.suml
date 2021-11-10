@@ -356,6 +356,7 @@ contact:
     authors: 'Authors of the website'
     team:
         name: 'The “Neutral Language Council” collective'  # TODO
+        nameShort: 'Collective'
         description:  # TODO
             - >
                 {https://pronouns.page=Pronouns.page} and related initiatives

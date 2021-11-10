@@ -421,6 +421,7 @@ contact:
         It takes us less time to mute you and put your message in the spam folder than it took you to write it.
     team:
         name: 'The “Neutral Language Council” collective'
+        nameShort: 'Collective'
         description:
             - >
                 We are a queer collective dedicated to assembling, researching, shaping and promoting

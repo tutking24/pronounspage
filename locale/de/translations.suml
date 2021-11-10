@@ -166,7 +166,7 @@ nouns:
 
     image: 'Bild'
 
-community: 
+community:
     header: 'Gemeinschaft'
     headerLong: 'Queere Gemeinschaft'
 
@@ -350,6 +350,7 @@ contact:
     authors: 'Autor*innen der Website'
     team:
         name: 'Das „Rat für neutrale Sprache“ Kollektiv'
+        nameShort: 'Kollektiv'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Rat für neutrale Sprache“ erstellt.

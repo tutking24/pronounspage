@@ -357,6 +357,7 @@ contact:
     authors: 'Autores do site'
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
+        nameShort: 'O coletivo'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas

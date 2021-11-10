@@ -1106,6 +1106,7 @@ contact:
         Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
+        nameShort: 'Kolektyw'
         description: >
             Jesteśmy kolektywem queerowym zajmującym się
             zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.

@@ -349,6 +349,7 @@ contact:
     authors: 'Forfatterne'
     team:
         name: 'Det “Neutral Language Council” kollektivet'
+        nameShort: 'Kollektivet'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} og andre relaterte initiativ

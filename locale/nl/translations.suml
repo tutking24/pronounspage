@@ -338,6 +338,7 @@ contact:
     authors: 'De auteurs van de website'
     team:
         name: 'Het "Raad van Neutrale Taal" collectief'
+        nameShort: 'Het collectief'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} en gerelateerde initiatieven

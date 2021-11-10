@@ -351,6 +351,7 @@ contact:
     authors: 'Auteur·ices du site internet'
     team:
         name: 'Le collectif du « Conseil du Langage Neutre »'
+        nameShort: 'Le collectif'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} et les initiatives liées
