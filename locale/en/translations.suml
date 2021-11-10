@@ -430,6 +430,35 @@ contact:
         members: 'Current members'
         member: 'Member of the collective'
         upcoming: 'Upcoming language versions'
+        join:
+            header: 'Join us!'
+            encouragement: >
+                Do you care about non-binary and gender-neutral language?
+                Do you want to help our collective in promoting it? Cool!
+                Extra help is very welcome!
+            areasIntro: 'Areas in which you might be able to help are for example:'
+            areas:
+                - 'expanding and moderating dictionaries and glossaries,'
+                - 'expanding and moderating the list of sources,'
+                - 'creating graphics and social media posts,'
+                - 'replying to direct messages,'
+                - 'moderating profiles,'
+                - 'creating a new language version,'
+                - 'translating,'
+                - 'coordinating the process of adding language versions,'
+                - 'writing blog posts,'
+                - 'programming,'
+                - '…'
+            allies: >
+                Some of those things require a perspective of a nonbinary person, others not necessarily.
+                That's why we also invite binary allies.
+            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+            application:
+                - 'introduce yourself,'
+                - 'link to your pronouns.page profile,'
+                - 'link to your social media,'
+                - 'say, if you have some experience in activist work,'
+                - 'say, what would you like to help with.'
 
 support:
     header: 'Support'
