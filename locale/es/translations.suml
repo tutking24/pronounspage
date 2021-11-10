@@ -362,6 +362,7 @@ contact:
     authors: 'Autores/as/xs del sitio web'
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
+        nameShort: 'Cooperativa'
         description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas

@@ -322,6 +322,7 @@ contact:
     authors: '網站的作者'
     team:
         name: '中立語推行委員會'
+        nameShort: 'Collective'  # TODO
         description:
             - >
                 {https://pronouns.page=Pronouns.page} 及相關舉措

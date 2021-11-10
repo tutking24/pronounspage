@@ -1,5 +1,7 @@
 <template>
     <div>
+        <CommunityNav/>
+
         <h2>
             <Icon v="collective-logo.svg" class="invertible"/>
             <T>contact.team.name</T>
