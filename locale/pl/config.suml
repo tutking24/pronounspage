@@ -1075,6 +1075,17 @@ links:
             url: 'https://www.facebook.com/MexicoMagicoBlog/posts/238339054965464'
             headline: 'No soy tu “compañera”, soy tu “compañere” \[…]'
             extra: '– <strong>Mexico Magico Blog</strong>'
+        -
+            lang: ['de']
+            icon: 'play-circle'
+            url: 'https://podcasts.apple.com/de/podcast/dr-anna-mr%C3%B3z-sprachwissenschaftlerin/id1485103251?i=1000540979499'
+            headline: 'Ein Gespräch mit Dr. Anna Mróz (Sprachwissenschaftlerin)'
+            extra: ' – <strong>Mit Polen auf Du und Du</strong> (od około 43 minuty)'
+            quote: >
+                Die „Neutrativen”, würde das so heißen. Vor einem Jahr ist eine Seite entstanden
+                „Słownik Neutratywów Języka Polskiego”, also ein Wörterbuch der Neutrativen der Polnischen Sprache,
+                und das ich auch mit einer Bewegung in der Gesellschaft von dieser Community verbunden,
+                und hat zum Ziel einfach mögliche Lösungsansätze zu den Formen anzubieten.
     socials:
         -
             icon: 'twitter'
