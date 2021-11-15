@@ -75,7 +75,10 @@
                             </nuxt-link>
                         </li>
                     </ul>
-                    <p class="small">Using a gradient from <a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">gradientmagic.com</a></p>
+                    <p class="small">
+                        Using <a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">gradientmagic.com</a>
+                        and <a href="https://twemoji.twitter.com/" target="_blank" rel="noopener">Twemoji</a>
+                    </p>
                 </div>
                 <div class="my-2">
                     <Share/>
