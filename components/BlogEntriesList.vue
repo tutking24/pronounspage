@@ -6,7 +6,7 @@
                     <img :src="post.hero" class="w-100"/>
                 </nuxt-link>
                 <nuxt-link :to="`/blog/${post.slug}`" class="card-body text-center h4 p-3 mb-0">
-                    <span>{{post.title}}</span>
+                    <Spelling :text="post.title"/>
                 </nuxt-link>
                 <div class="card-footer small">
                     <ul class="list-inline mb-0">
@@ -20,8 +20,8 @@
                                 {{author}}
                             </nuxt-link>
                             <span v-else class="badge bg-light text-dark border">
-                                    {{author}}
-                                </span>
+                                {{author}}
+                            </span>
                         </li>
                     </ul>
                 </div>

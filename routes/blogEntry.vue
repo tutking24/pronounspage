@@ -9,7 +9,7 @@
             </router-link>
         </p>
 
-        <div v-html="content"></div>
+        <Spelling :text="content"/>
 
         <Separator icon="heart"/>
 

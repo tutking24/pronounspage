@@ -88,5 +88,6 @@
                 </div>
             </div>
         </div>
+        <EasterEgg/>
     </footer>
 </template>

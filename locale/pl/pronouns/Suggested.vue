@@ -3,21 +3,19 @@
         <section>
             <h2>
                 <Icon v="tags"/>
-                Sugerowane formy niebinarne i neutralne
+                <Spelling text="Sugerowane formy niebinarne i neutralne"/>
             </h2>
 
             <p>
-                Choć nie narzucamy i nie wartościujemy żadnych spośród propozycji
-                niebinarnego i neutralnego płciowo języka,
-                to dostrzegamy też potrzebę zasugerowania, które formy zdają się
-                według naszych obserwacji i <nuxt-link to="/blog/spis-2021">badań</nuxt-link>
-                mieć największy potencjał, by stać się „domyślnymi”, normatywnymi formami gramatycznymi.
-                Szczegóły w naszym Manifeście:
+                <Spelling text="Choć nie narzucamy i nie wartościujemy żadnych spośród propozycji niebinarnego i neutralnego płciowo języka,
+                    to dostrzegamy też potrzebę zasugerowania, które formy zdają się według naszych obserwacji i"/>
+                <nuxt-link to="/blog/spis-2021">badań</nuxt-link>
+                <Spelling text="mieć największy potencjał, by stać się „domyślnymi”, normatywnymi formami gramatycznymi. Szczegóły w naszym Manifeście:"/>
             </p>
 
             <nuxt-link to="/blog/manifest" class="btn btn-primary d-block">
                 <Icon v="file-contract"/>
-                Manifest Niebinarnej Polszczyzny
+                <Spelling text="Manifest Niebinarnej Polszczyzny"/>
             </nuxt-link>
 
             <section class="d-flex flex-column flex-md-row">

@@ -2063,6 +2063,11 @@ avris-daemonise@^0.0.2:
     fs "^0.0.1-security"
     yargs "^12.0.1"
 
+avris-futurus@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/avris-futurus/-/avris-futurus-1.0.2.tgz#cb9929de17b4f0779d81d850d86216922a7c76f0"
+  integrity sha512-qWLpSJRXwgBYyBaJmUOd/OOKdanb5EmfhFD1cMqTcu9256RR//9rvlr7rFYoWoQMoyEDqZa7WFvKFgmUq9vaAw==
+
 avris-sorter@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/avris-sorter/-/avris-sorter-0.0.3.tgz#8683de663ec521ae1b4da1c576dc84c9a7dd9f38"
