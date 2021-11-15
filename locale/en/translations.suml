@@ -548,6 +548,7 @@ profile:
     editor:
         header: 'Card editor'
         save: 'Save your card'
+        defaults: 'Restore defaults'
     opinion:
         yes: 'Yes'
         jokingly: 'Jokingly'

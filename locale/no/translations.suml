@@ -443,6 +443,7 @@ profile:
     editor:
         header: 'Kort redigerer'
         save: 'Lagre kort'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'

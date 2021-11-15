@@ -8,7 +8,7 @@
                         {{$t('confirm.header')}}
                     </p>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" v-if="message">
                     <p class="py-5 text-center" v-html="message"></p>
                 </div>
                 <div v-if="choice" class="modal-footer">

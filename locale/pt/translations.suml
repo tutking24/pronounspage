@@ -449,6 +449,7 @@ profile:
     editor:
         header: 'Editor de cartões'
         save: 'Salve o cartão'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Sim'
         jokingly: 'É brincadeira'

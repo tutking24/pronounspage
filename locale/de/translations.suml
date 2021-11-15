@@ -440,6 +440,7 @@ profile:
     editor:
         header: 'Visitenkarte-Editor'
         save: 'Visitenkarte speichern'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'

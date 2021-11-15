@@ -1243,6 +1243,7 @@ profile:
     editor:
         header: 'Edytor wizytówki'
         save: 'Zapisz wizytówkę'
+        defaults: 'Przywróć domyślne'
     opinion:
         yes: 'Tak'
         jokingly: 'Żartobliwie'

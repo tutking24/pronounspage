@@ -443,6 +443,7 @@ profile:
     editor:
         header: 'Éditeur de carte'
         save: 'Sauvegarder votre carte'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Oui'
         jokingly: 'Pour plaisanter'
