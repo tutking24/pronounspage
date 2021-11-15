@@ -50,8 +50,8 @@
             </div>
         </div>
         </header>
-        <!-- a banner for every occasion ;) -->
-        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 11, 14, 20, 0, 0) && $route.path === '/'" class="container">
+        <!-- a banner for every occasion ;)
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 10, 14, 20, 0, 0) && $route.path === '/'" class="container">
             <div class="alert alert-warning my-3 d-flex align-items-center">
                 <Icon v="spell-check" size="4" class="mx-4"/>
                 <div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <!-- -->
+        -->
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
