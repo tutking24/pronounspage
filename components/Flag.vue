@@ -2,11 +2,11 @@
     <span class="flag-wrapper">
         <a v-if="link" :href="`/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
-            <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup>
+            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup></Twemoji>
         </a>
         <span v-else :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
-            <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup>
+            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup></Twemoji>
         </span>
         <span class="flag-preview bg-white rouded p-2 border">
             <img :src="img" :alt="name" class="rounded"/>

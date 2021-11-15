@@ -1,4 +1,5 @@
 <template>
+    <Twemoji>
     <span>
         <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
             <strong v-if="part.variable"><Spelling escape :text="pronoun.getMorpheme(part.str, counter)"/></strong>
@@ -16,6 +17,7 @@
             </a>
         </template>
     </span>
+    </Twemoji>
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+    <Twemoji>
     <span>
         <strong v-if="opinion === 1">
             <Tooltip :text="$t('profile.opinion.yes')">
@@ -36,6 +37,7 @@
             <span v-else><Spelling escape :text="word"/></span>
         </span>
     </span>
+    </Twemoji>
 </template>
 
 <script>
