@@ -180,10 +180,15 @@
             </section>
 
             <section class="form-group">
-                <h3 class="h4">
-                    <Icon v="scroll-old"/>
-                    <T>profile.words</T>
-                </h3>
+                <div class="h4 d-flex justify-content-between">
+                    <h3 class="h4">
+                        <Icon v="scroll-old"/>
+                        <T>profile.words</T>
+                    </h3>
+                    <button class="btn btn-outline-warning btn-sm" @click.prevent="resetWords">
+                        <T>profile.editor.defaults</T>
+                    </button>
+                </div>
                 <template v-for="i in [0, 1, 2, 3]">
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
@@ -269,7 +274,7 @@
                     links: Object.keys(profile.links).length ? profile.links : [],
                     flags: profile.flags.filter(f => !f.startsWith('-')),
                     customFlags: profile.customFlags,
-                    words: defaultWords,
+                    words: [...defaultWords],
                     teamName: profile.teamName,
                     footerName: profile.footerName,
                     footerAreas: [],
@@ -287,7 +292,7 @@
                 links: [],
                 flags: [],
                 customFlags: {},
-                words: defaultWords,
+                words: [...defaultWords],
                 teamName: '',
                 footerName: '',
                 footerAreas: [],
@@ -348,6 +353,11 @@
                         ? null
                         : 'profile.pronounsNotFound'
             },
+            async resetWords() {
+                await this.$confirm();
+
+                this.words = [...defaultWords];
+            }
         },
         computed: {
             mainPronoun() {

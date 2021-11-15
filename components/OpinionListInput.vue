@@ -55,7 +55,10 @@
             validation: {},
         },
         data() { return { v: this.value } },
-        watch: { v() { this.$emit('input', this.v); } },
+        watch: {
+            v() { this.$emit('input', this.v); },
+            value(v) { this.v = v; }
+        },
         methods: {
             invalid(val) {
                 return this.validation && val.key && this.validation(val.key)

@@ -431,6 +431,7 @@ profile:
     editor:
         header: 'Kaart editor'
         save: 'Sla jouw kaart op'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'Voor de grap'

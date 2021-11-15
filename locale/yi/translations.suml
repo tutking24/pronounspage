@@ -454,6 +454,7 @@ profile:
     editor:
         header: 'רעדאַקציע פון די װיזיט־⁠קאַרטל'
         save: 'Save your card'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'יאָ'
         jokingly: 'אין אַ שפּאַס'

@@ -413,6 +413,7 @@ profile:
     editor:
         header: '卡編輯'
         save: '保存卡'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: '至愛'
         jokingly: '諧謔'

@@ -453,6 +453,7 @@ profile:
     editor:
         header: 'Editor de tarjetas'
         save: 'Guarda tu tarjeta'
+        defaults: 'Restore defaults' # TODO
     opinion:
         yes: 'Sí'
         jokingly: 'En broma'
