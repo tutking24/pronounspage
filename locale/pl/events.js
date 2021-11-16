@@ -9,7 +9,6 @@ module.exports = [
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', null, 9, day(1), EventLevel.Day, ['homosexual', 'gay']),
     new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.Day, ['homophobia']),
     new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
-    new Event('Dzień Widoczności LGBTQ w Rosji', 'LGBTQ', 10, day(7), EventLevel.Day, ['lgbtq']),
     new Event('Dzień Pamięci Milo Mazurkiewicz', null, 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
 
     // one-off events
