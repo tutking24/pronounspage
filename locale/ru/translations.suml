@@ -169,7 +169,7 @@ terminology:
     definition: 'Определение'
 
 faq:
-    header: 'Часто задаваемые вопросы'
+    header: 'вопросы'
     headerLong: 'Часто задаваемые вопросы'
     questions:
         nonbinary:
