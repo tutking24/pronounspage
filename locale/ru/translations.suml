@@ -1,0 +1,1624 @@
+title: 'zaimki.pl'
+domain: 'zaimki.pl'
+description: 'Kompendium wiedzy o języku niebinarnym i neutralnym płciowo.'
+
+home:
+    link: 'Strona główna'
+    header: 'Zaimki'
+    headerLong: 'Lista zaimków'
+    welcome: 'Witamy na stronie zaimki.pl!'
+    intro: >
+        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym i neutralnym płciowo.
+    why: 'Skąd potrzeba niebinarnych zaimków?'
+    about:
+        - >
+            Polska gramatyka jest skomplikowana i silnie zgenderyzowana.
+            Nie oznacza to jednak, że niemożliwe jest używanie innych form niż „{/on=on}” i „{/ona=ona}”.
+        - >
+            Udostępniamy tutaj linki do przykładów użycia
+            (w prostych zdaniach oraz w tekstach kultury: literaturze, prasie, filmach, serialach, muzyce)
+            zaimków i innych form płciowych – nie tylko normatywnych „{/on=on}” i „{/ona=ona}”,
+            lecz także form niebinarnych, takich jak {/ono=rodzaj neutralny} czy {/onu=postpłciowy}.
+        - >
+            Dlaczego należy je respektować?
+            Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
+            Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+            A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
+            Czy to uszanujesz, świadczy wyłącznie o Tobie.
+        - >
+            Warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych
+            – nawet jeśli jesteś cis (= nie trans) i używasz
+            „{/on=on}” lub „{/ona=ona}”.
+            – ponieważ dzięki temu pokazujesz wsparcie dla społeczności trans
+            i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
+            {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        - >
+            Formy neutralne płciowo – jak np. „{/on/a=moi drodzy/drogie}”,
+            „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp. –
+            są też przydatne, gdy zwracasz się do grupy ludzi lub do osoby, której płci nie znasz.
+        - >
+            Już teraz w codziennej polszczyźnie używamy {/unikanie=wielu form neutralnych płciowo}:
+            „moje {/neutratywy#kochanie=kochanie} {/ono=zrobiło} mi niespodziankę”,
+            „proszę przyjść do szkoły z {/neutratywy#rodzic=rodzic}em”,
+            „w urzędzie powiedziano mi, że...”,
+            „{/oni=dzwonili} z gazowni”,
+            „będę robić”, itp.
+            Tutaj idziemy po prostu o krok dalej.
+    pronouns: 'Propozycje form'
+    generator:
+        header: 'Generator form'
+        description: >
+            Możesz także użyć poniższego narzędzia, w którym uzupełnisz luki w zdaniach
+            zgodnie z formami, których używasz, by wygenerować gotowy do udostępniania innym link.
+        button: 'Pokaż generator'
+        header2: 'Wygeneruj link'
+        base: 'Na podstawie'
+        alt: 'Możesz tu również wpisać formy wymienne w każdym polu z osobna, np. <code>jego&jej</code> = „jego” lub „jej”.'
+        pronunciation: 'Możesz tu również podać wymowę używając pionowej kreski i IPA, np. <code>onø|ˈɔ̃nø</code> = „onø” z wymową /ˈɔ̃nø/.'
+    whatisit: 'O co chodzi w tej stronie?'
+    mission:
+        header: 'Nasza misja'
+        summary: 'Walczymy o wolność, szacunek i inkluzywność w języku.'
+        freedom: >
+            <strong>Wolność</strong>
+            – by każde mogło używać <em>wobec siebie</em> takich zaimków i innych form,
+            jakie uważa, że najlepiej je opisują.
+        respect: >
+            <strong>Szacunek</strong>
+            – by formy używane <em>przez inne osoby</em> były respektowane.
+        inclusiveness: >
+            <strong>Inkluzywność</strong>
+            – by mówiąc o osobie nieznanej lub o grupie osób,
+            nie zakładać ich płci i {/inkluzywny=nie wykluczać}.
+
+pronouns:
+    header: 'Zaimki'
+    headerLong: 'Niebinarne zaimki<br/> i inne formy'
+    examples: 'Przykłady użycia w zdaniu'
+    plural: 'Liczba mnoga'
+    intro: 'Moje zaimki to'
+    normative: 'Normatywne'
+    alt:
+        button: 'Wygeneruj link do form wymiennych'
+        header: 'Formy wymienne'
+        raw: 'wymienne'
+    generated: 'Ta forma została stworzona za pomocą generatora. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
+    any:
+        header: 'Dowolne zaimki'
+        short: 'dowolne'
+        description: >
+            Choć dla wielu osób niezmiernie ważne jest, by używać wobec nich konkretnych zaimków,
+            innym nie przeszkadza zwracanie się w dowolny sposób – o ile wiadomo z kontekstu, że to o nich mowa.
+        options: 'przejrzyj listę możliwości [share]{/zaimki=tutaj}.'
+    others: 'Inne formy'
+    othersRaw: 'inne'
+    or: 'lub'
+    grammarTable: 'Odmiana'
+
+sources:
+    header: 'Teksty kultury'
+    headerLong: 'Przykłady z tekstów kultury'
+    headerLonger: 'Niebinarna polszczyzna w tekstach kultury'
+    subheader: 'Korpus językowy niebinarnej polszczyzny'
+    toc: 'Pokaż spis treści'
+    type:
+        All: 'Wszystkie'
+        Book: 'Książki'
+        Article: 'Prasa'
+        Movie: 'Filmy'
+        Series: 'Seriale'
+        Song: 'Muzyka'
+        Poetry: 'Poezja'
+        Game: 'Gra'
+        Other: 'Inne'
+    submit:
+        header: 'Zgłoś przykład do dodania'
+        action: 'Zgłoś'
+        pronouns: 'Które zaimki/formy są użyte?'
+        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. “onu”, “ono/jej”, “on&ona”'
+        type: 'Rodzaj źródła kultury'
+        author: 'Osoba autorska'
+        title: 'Tytuł'
+        extra: 'Dodatkowe dane (tłumaczenie, czasopismo, …)'
+        year: 'Rok wydania (polskiej wersji)'
+        fragments: 'Fragmenty'
+        fragmentsInfo: 'Możesz zaznaczyć istotne słowa w następujący sposób: „Wtedy \[\[malarzu]] \[\[zauważyłu]], że wcale nie chce \[\[nu]] się pić.”'
+        comment: 'Komentarz'
+        link: 'Link do treści'
+        thanks: 'Dziękujemy za zgłoszenie!'
+        another: 'Zgłoś kolejne źródło'
+        moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
+        key: 'Klucz'
+        keyInfo: 'Identyfikator do łączenia tekstów między wersjami językowymi i łączenia ze słownikiem'
+        images: 'Obrazki'
+    otherVersions: 'W innych językach'
+    referenced: 'Przykłady użycia'
+
+nouns:
+    header: 'Rzeczowniki'
+    headerLong: 'Neutralne rzeczowniki'
+    headerLonger: 'Słowniki neutralnego i niebinarnego języka'
+    description: 'Feminatywy feminatywami, ale prawdziwe wyzwanie to tworzenie neutratywów! Przedstawiamy tworzony przez społeczność słownik rzeczowników z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.'
+    intro:
+        - >
+            Rodzaj męski {https://pl.wikipedia.org/wiki/Męska_dominacja_językowa=jest wyraźnie uprzywilejowany}
+            w polskim słownictwie, słowotwórstwie, gramatyce oraz frazeologii.
+            W większości przypadków nazwy zawodów, relacji rodzinnych, itp. są domyślnie męskie,
+            co wpływa negatywnie na reprezentację osób innych płci
+            oraz {https://journals.sagepub.com/doi/10.1177/0261927X12463008=zniekształca nasze postrzeganie świata}.
+
+        - >
+            Wszystkie chyba wiemy, czym są {https://pl.wikipedia.org/wiki/Feminatywum=feminatywy}.
+            Mimo oporów niektórych środowisk, powoli przyjmują się one w codziennej polszczyźnie.
+            „Reżyserka”, „prawniczka”, „psycholożka” czy nawet „gościni” już coraz mniej nas dziwią.
+            I bardzo dobrze!
+
+        - >
+            Płeć człowieka wymyka się jednak prostemu podziałowi kobieta/mężczyzna.
+            Jakimi rzeczownikami mogą się opisywać {/pytania#niebinarnosc=osoby niebinarne}?
+            Jeśli używają {/ono=rodzaju neutralnego}, {/onu=postpłciowego} czy {/zaimki=innych nienormatywnych form},
+            to które formy rzeczowników pasują do nich gramatycznie?
+            Jak przetłumaczyć z angielskiego zawód osoby używającej zaimków <em>they/them</em>?
+            Jak opisywać grupy mieszane?
+
+        - >
+            Dla rozwiązania tych problemów proponujemy cztery opcje, które {/ona/ich=nazwałośmy} analogicznie do feminatywów:
+            {/neutratywy=<strong>neutratywami</strong>} (formy zgodne z rodzajem neutralnym),
+            {/dukatywy=<strong>dukatywami</strong>} (formy zgodne z dukaizmami)
+            {/osobatywy=<strong>osobatywami</strong>} (formy neutralne, niewskazujące na płeć)
+            i {/iksatywy=<strong>iksatywami</strong>} (formy neutralne, używające znaków zastępujacych).
+
+    personNouns:
+        header: 'Osobatywy'
+        label: 'osobatyw'
+        info:
+            - >
+                Gdy ogólnouczelniany mail zaczyna się od słów „drodzy studenci”,
+                to użyty tam język włącza jedynie mężczyzn (i inne osoby używające form męskich).
+                Można by ulepszyć ten zwrot, pisząc „drogie studentki, drodzy studenci”,
+                ale wciąż wykluczamy tym osoby, które nie identyfikują się ani z formami męskimi, ani żeńskimi.
+                Bardzo prostym rozwiązaniem jest zastąpienie tych słów zwrotem „drogie osoby studiujące”
+                – jest to jak najbardziej poprawne gramatycznie i włącza wszystkie osoby.
+                Wszystkie jesteśmy osobami!
+            - >
+                Osobatywy to konstrukcje typu: „osoba” + imiesłów, „osoba” + przymiotnik, itp.
+                Zupełnie nie wskazują na płeć, są więc idealne do opisu grup czy też pojedynczych osób, których płci nie znamy.
+            - >
+                Już teraz używamy wielu osobatywów i nie widzimy w nich nic złego:
+                np. „zaproszenie z osobą towarzyszącą” albo „osoba niebinarna”.
+            - >
+                Osobatywy są normatywne i łatwe do tworzenia i odmiany. Można je łączyć z formami {/ta=ta/tej}.
+            - >
+                Zwróćmy uwagę, że rodzaj gramatyczny to niekoniecznie to samo co nacechowanie płciowe.
+                Na przykład słowo „rodzic”, choć gramatycznie rodzaju męskiego, jest neutralne płciowo
+                (w odróżnieniu od nacechowanych płciowo „ojciec” i „matka”).
+                Na tej samej zasadzie słowo „osoba”, choć gramatycznie żeńskie, może opisywać każdego, bez względu na płeć.
+    dukajNouns:
+        header: 'Dukatywy'
+        label: 'dukatyw'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym duszkiem krzyczącym „-łu”.'
+            caption: 'Ze względu na końcówki „-łum”, „-łuś” i „-łu”, flaga dukazimów i dukatywów przedstawia duszka krzyczącego „łu!”.'
+        info:
+            - >
+                Analogicznie do {/onu=rodzaju postpłciowego (dukaizmów)} („zrobiłum”, „poszłuś”)
+                można też tworzyć postpłciowe rzeczowniki.
+            - >
+                Sam Dukaj w {https://pl.wikipedia.org/wiki/Perfekcyjna_niedoskonałość=„Perfekcyjnej niedoskonałości”}
+                nie tworzył rzeczownikowych odpowiedników rodzaju postpłciowego,
+                lecz używał słów męskich („ambasador”) i męsko brzmiących imion („Maximillian”, „Michał”, „Słowiński”),
+                które odmieniał postpłciowymi lub męskoosobowymi końcówkami.
+                Nie powstrzymuje nas to jednak przed wymyśleniem brakujących form, by system był spójny i kompletny.
+            - >
+                Dukatywy pasują gramatycznie do {/onu=dukaizmów}, np. „moju pięknu partneru przyszłu do domu”.
+                Odmiana jest prosta, wg podanego niżej schematu.
+        extended:
+            header: 'Przykład odmiany'
+
+    xNouns:
+        header: 'Iksatywy'
+        label: 'iksatyw'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesioną literą „x”.'
+        info:
+            - >
+                Formy graficzne, takie jak {/onx=onx}, {/on*/=on*} czy {/on_=on_} używają placeholderów / znaków zastępujących
+                w miejscu różnic między wersją męską a żeńską.
+                Są przydatne w piśmie, ale ciężkie lub niemożliwe do wymówienia (mogą też sprawiać problemy czytnikom ekranowym).
+                Intencja jest łatwa do zrozumienia. Często są też używane w zwrotach do grupy osób lub osoby o nieznanej płci.
+            - >
+                Znaków zastępujących można używać również dla rzeczowników.
+                Ze względu na popularność form z iksem, prezentujemy je tutaj na przykładzie iksatywów,
+                ale można wymienić „x” na inny placeholder (jak podłoga „_” czy gwiazdka „*”).
+            - >
+                Daje to ciekawe możliwości stylizacji, np.
+                „z zapatyst☆ami”, „z komunist☭ami”, „z anarchistⒶami”, „z kapitalist💲ami”…
+            - >
+                Iksatywy pasują gramatycznie do {/onx=form z iksem}, np. „mojx pięknx partnerx przyszłx do domu”.
+                Są nieodmienne.
+                Liczbę mnogą proponujemy zaznaczać za pomocą podwójnego iksa, np. „partnerx” → „partnerxx”.
+        extended:
+            header: 'Przykład odmiany'
+
+    neuterNouns:
+        header: 'Neutratywy'
+        label: 'neutratyw'
+        flag:
+            alt: 'Flaga osób niebinarnych z naniesionym łosiem trzymającym łom.'
+            caption: 'Ze względu na końcówki „-łom”, „-łoś” i „-ło”, flaga rodzaju neutralnego i neutratywów przedstawia łosia z łomem.'
+        info:
+            - >
+                Są to słowa ukute na neutralne wersje słów nacechowanych płciowo, analogicznie do feminatywów.
+                Używają obecnych w normatywnej polszczyźnie końcówek neutralnych,
+                takich jak „-rze”, „-cze”, „-o”, czy zapożyczonej z łaciny „-um”.
+            - >
+                Formy te pasują gramatycznie do {/ono=form neutralnych}, np. „moje piękne partnerze przyszło do domu”.
+            - >
+                Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
+                z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
+                Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
+        extended:
+            header: 'Przykład odmiany'
+        alt:
+            header: 'Alternatywne wzory odmiany'
+            info:
+                - >
+                    Choć zaimek {/ono=„ono”} jest neutralny, to poza mianownikiem przybiera formy identyczne z męskimi.
+                    Dlatego też wiele osób binarnych używa „ono” z alternatywną odmianą.
+                - >
+                    Słownik Neutratywów podaje odmianę pasującą do {/ono=„ono/jego”},
+                    lecz możliwa jest też odmiana zgodna z pozostałymi opcjami:
+
+    examples: 'Przykłady'
+    dictionary: 'Słownik Neutratywów'
+
+    approved: 'wpisów zatwierdzonych'
+    pending: 'oczekuje na moderację'
+    edit: 'Zaproponuj zmianę'
+    edited: 'Propozycja zmiany z'
+    editing: 'Edytujesz istniejący wpis'
+    empty: 'Nie znaleziono słów spełniających podane kryterium.'
+
+    submit:
+        action: 'Zgłoś'
+        actionLong: 'Zgłoś propozycję'
+        thanks: 'Dziękujemy za zgłoszenie!'
+        another: 'Zgłoś kolejne słowo'
+        moderation: 'Propozycje będą musiały zostać zatwierdzone przed opublikowaniem.'
+
+    template: 'Użyj szablonu'
+    root: 'Rdzeń rzeczownika'
+
+    masculine: 'maskulatyw'
+    masculineShort: 'mask.'
+    feminine: 'feminatyw'
+    feminineShort: 'fem.'
+    neuter: 'neutratyw'
+    neuterShort: 'neutr.'
+
+    singular: 'liczba pojedyncza'
+    singularShort: 'l. poj.'
+    plural: 'liczba mnoga'
+    pluralShort: 'l. mn.'
+
+    image: 'Obrazek'
+
+community:
+    header: 'Społeczność'
+    headerLong: 'Społeczność queerowa'
+
+inclusive:
+    header: 'Inkluzywność'
+    headerLong: 'Słownik inkluzywnego języka'
+    insteadOf: 'Zamiast'
+    say: 'Lepiej mów'
+    because: 'Ponieważ'
+    info:
+        - >
+            Język jest nośnikiem myśli, nośnikiem kultury, podstawą komunikacji. Wpływa na to, co robimy i jak myślimy.
+            Jeśli chcemy tworzyć społeczeństwo otwarte na różnorodność i akceptujące odmienność,
+            to nasz język też musi być włączający.
+        - >
+            Inkluzywny język to nie tylko rzeczowniki i nie tylko kwestie płciowości.
+            Poniżej przedstawiamy słownik, w którym zbieramy sugestie,
+            jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
+    categories: 'Kategorie'
+    sources: 'Linki źródłowe'
+
+terminology:
+    header: 'Terminologia'
+    headerLong: 'Słownik terminologii queerowej'
+    info:
+        - >
+            Większość zwrotów i wyrażeń związanych ze społecznością LGBTQ+
+            funkcjonuje w polszczyźnie jako anglojęzyczne wstawki.
+            Poniżej przedstawiamy słownik tłumaczący, co dane określenia oznaczają,
+            i jakie proponujemy dla nich polskie tłumaczenia.
+    term: 'Określenie'
+    original: 'Pochodzenie, określenie angielskie'
+    category: 'Kategoria'
+    images: 'Dodatkowe obrazki, spoza katalogu flag'
+    definition: 'Definicja'
+
+names:
+    header: 'Imiona'
+    headerLong: 'Neutralne imiona'
+    description: 'Przedstawiamy słownik neutralnych płciowo imion wraz z przydatnymi informacjami na ich temat.'
+    intro:
+        - >
+            Przedstawiamy słownik neutralnych płciowo imion wraz z przydatnymi informacjami na ich temat.
+    name: 'Imię'
+    origin: 'Pochodzenie'
+    meaning: 'Znaczenie'
+    usage: 'Użycie'
+    legally: 'USC może uznać za'
+    count: 'Osób w rejestrze PESEL'
+    namedays: 'Imieniny'
+    nameday: 'Imieniny'
+    namedaysComment: 'Skąd taka data imienin?'
+    links: 'Linki'
+    pros: 'Zalety'
+    cons: 'Wady'
+    notablePeople: 'Znane osoby'
+    empty: 'Nie znaleziono imion spełniających podane kryterium.'
+
+faq:
+    header: 'FAQ'
+    headerLong: 'Często zadawane pytania'
+    questions:
+        niebinarnosc:
+            question: 'Czym jest niebinarność?'
+            answer:
+                - >
+                    Płeć jest zdecydowanie bardziej skomplikowaną sprawą niż prosty podział kobieta/mężczyzna.
+                    Nawet pod względem czysto biologicznym wyróżniamy płeć chromosomalną, genetyczną, hormonalną, fenotypową…
+                    Nie zawsze jedna się z drugą zgadza, nie zawsze są one zero-jedynkowe
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(więcej info tutaj)}.
+                    Natomiast pod względem kulturowym „płeć” jest konceptem społecznym.
+                    W zależności od miejsca i czasu bycie „kobietą” i „mężczyzną” może oznaczać radykalnie różne
+                    prawa, obowiązki, zasady… W Europie mężczyźni nosili buty na obcasie i rajtuzy,
+                    rdzenne mieszkanki i mieszkańcy Ameryki Północnej od wieków rozróżniają trzecią płeć
+                    {/terminologia#Two Spirit=(two-spirit)}, itd. itd.
+                - >
+                    Niebinarność to zbiorczy termin („umbrella term”) opisujący doświaczenie osób,
+                    które nie wpisują się w binarny podział kobieta/mężczyzna.
+                    Obejmuje na przykład osoby {/terminologia#Apłciowość=agender},
+                    {/terminologia#genderfluid=genderfluid},
+                    {/terminologia#demidziewczę=demidziewczęta},
+                    {/terminologia#demichłopię=demichłopców},
+                    i {/terminologia#non-binary=wiele innych tożsamości}.
+                - >
+                    Niebinarność to niekoniecznie coś „pomiędzy” męskością a kobiecością. Raczej „poza”.
+                    Osoby niebinarne wcale nie muszą być androgyniczne, nie muszą używać neutralnych zaimków, itp.
+                    Chodzi o to, by być wolnymi od ról płciowych, a nie tworzyć nowe.
+        czemu-respektowac:
+            question: 'Czemu mam respektować jakieś <em>dziwne</em> formy?'
+            answer:
+                - >
+                    Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
+                    Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+                    A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
+                    Czy to uszanujesz, świadczy wyłącznie o Tobie.
+                - >
+                    Wiele niepolskich imion też brzmi dla polskiego ucha „dziwnie”
+                    – ale zamiast wymyślać ludziom „lepsze” imiona,
+                    po prostu dopytujemy, jak wymówić czy zapisać to, które naprawdę noszą, no nie?
+                - >
+                    „Dziwne formy” to tylko kwestia przyzwyczajenia.
+        zmyślone:
+            question: 'Te formy są wymyślone!'
+            answer:
+                - >
+                    Tak. Wszystkie słowa we wszystkich językach są wymyślone. Niektóre po prostu są starsze.
+        skad-wiedziec-jak-sie-zwracac:
+            question: 'Skąd mam wiedzieć, jak się do kogoś zwracać?'
+            answer:
+                - >
+                    Można po prostu spytać! Tak, to może być trochę niezręczne, ale przestanie być, gdy zaczniemy to częściej robić.
+                    Nie mamy przecież problemu pytać o imię albo o przejście na „ty”, więc czemu wzbraniamy się pytać o zaimki?
+                - >
+                    (Tylko, prosimy, nie pytaj „jesteś chłopakiem czy dziewczyną?”. Takie pytanie implikuje, że są tylko dwie poprawne opcje,
+                    i sugeruje niezdrową ciekawość genitaliami danej osoby. Wystarczy spytać po prostu „jak mam się do ciebie zwracać?”)
+                - >
+                    Warto też normalizować samodzielne podawanie zaimków poprzez przedstawianie się nie tylko imieniem, lecz również zaimkami.
+                    „Hej, jestem Michał, {/on=on/jego}”. To nic trudnego – a dla osób trans i niebinarnych znaczy bardzo wiele.
+                    Jeszcze łatwiej zrobić to online: po prostu wrzucić zaimki (lub link do przykładów z naszej strony) do bio.
+                - >
+                    Język polski, choć przeważnie bardzo problematyczny dla osób niebinarnych, tutaj paradoksalnie ułatwia nam sprawę.
+                    W przeciwieństwie do np. angielskiego, gdzie zgenderyzowanych zaimków używa się mówiąc <em>o kimś</em>,
+                    język polski wymaga określenia się przy mówieniu <em>o sobie</em> lub <em>do kogoś</em>.
+                    Jeśli więc ktoś mówi „zrobiłom”, wiesz i bez pytania, by mówić do niego „zrobiłoś”.
+                - >
+                    Pamiętaj też, że wiele osób może używać innych zaimków i innego imienia w zależności od sytuacji.
+                    Może na przykład nie być wyoutowana przed rodziną czy współpracownikami,
+                    ale wśród przyjaciół czuć się komfortowo używając nieortodoksyjnych form.
+                    Bądź uważnx, obserwuj, spytaj „jak się mam do ciebie zwracać przy szefie?”, itp.
+                - >
+                    Niektóre osoby podają wiele zestawów zaimków, na przykład „{/on&ona=on/ona}” czy „{/onu&on=onu/on}”.
+                    Oznacza to, że pasują im wszystkie te formy. Najczęściej są one podawane w kolejności od najbardziej lubianej.
+        kto-uzywa:
+            question: 'Czy ktoś tego w ogóle używa?'
+            answer:
+                - >
+                    Tak! Niemal wszystkie formy, które {/zaimki=tu prezentujemy},
+                    zostały nam podesłane przez osoby rzeczywiście ich używające,
+                    albo wzięte z tekstów literatury.
+                    Ewentualnie {/ona/ich=uzupełniłośmy} je jedynie w miejscach, gdzie którejś części brakowało,
+                    próbując zachować spójność całości – na przykład wymyślając formę grzecznościową „szanowne pań”
+                    dla {/ono=formy neutralnej} albo zaimek {/ony=„ony”} dla liczby mnogiej dukaizmów, którego u Dukaja brakowało.
+                - >
+                    Dwie formy liczby mnogiej {/ona/ich=stowrzyłośmy} same,
+                    próbując zaradzić brakowi takowych – i by móc jakoś pisać o sobie jako grupie,
+                    bez zdawania się na zgenderyzowane rodzaje: męsko- i niemęskoosobowy.
+        zaimki:
+            question: 'Przecież to nie są tylko zaimki, więc skąd nazwa zaimki.pl?'
+            answer:
+                - >
+                    To fakt... Choć w wielu innych językach zgenderyzowane formy osobowe to głównie zaimki,
+                    to w polszczyźnie na płeć wskazuje też wiele innych części mowy: czasowniki, przymiotniki, rzeczowniki...
+                    Teoretycznie powinnośmy więc mówić bardziej ogólnie, o „formach językowych wskazujących na płeć”, a nie „zaimkach”.
+                    Brzmi to jednak dość topornie, no nie?
+                - >
+                    Naszym zdaniem, ze względu na to, że
+                    zaimki tak czy siak narzucają użycie pasującej do nich odmiany pozostałych części mowy
+                    („{/on=on} zrobił”, „{/ona=ona} jest bystra”, „{/onu=onu} byłu pilotum”...),
+                    oraz to, że ludzie znający angielski są przyzwyczajeni do mówienia o „zaimkach”,
+                    to używanie ich jako skrótu myślowego jest uzasadnione. A i domena bardziej chwytliwa.
+        najlepsza-forma:
+            question: 'Ale dużo tego… Po co to całe mnożenie form? Która jest <em>najlepsza</em>?'
+            answer:
+                - >
+                    Celem projektu nie jest {https://pl.wikipedia.org/wiki/Preskryptywizm_(j%C4%99zykoznawstwo)=preskryptywizm}.
+                    Nie chcemy narzucać żadnej formy, ani twierdzić, że któraś jest lepsza od innych.
+                - >
+                    Preferujemy podejście {https://pl.wikipedia.org/wiki/Deskryptywizm_(j%C4%99zykoznawstwo)=deskryptywistyczne} –
+                    opisujemy jedynie istniejące już w żywej polszczyźnie (jakkolwiek niszowo) formy,
+                    próbujemy je ustrukturyzować, opisać, uzupełnić, zebrać w jedno miejsce przykłady użycia…
+                - >
+                    Oferujemy przegląd możliwości, ale każdx może samx wybrać, jakie formy najlepiej jex reprezentują.
+                - >
+                    Rozwój języka jest najczęściej procesem długotrwałym, nie zdarza się z dnia na dzień.
+                    Póki co, wszystkie propozycje form kotłują się w kotle codziennego użycia –
+                    zapewne kiedyś coś się z niego wyklaruje.
+                - >
+                    Ze względu na barwną fleksyjność języka polskiego
+                    i silny poziom zgeneryzowania gramatyki i słownictwa
+                    nie jest łatwo „narzucić” konkrente formy, nawet gdybyśmy chciały.
+                    Zanim wytworzą się uniwersalne, niebinarne rozwiązania - musimy sobie jakoś z tym poradzić.
+                - >
+                    Kolektyw Rada Języka Neutralnego co roku organizuje {/spis=Niebinarny Spis Powszechny},
+                    by zbadać trendy niebinarnego języka i zidentyfikować, które formy zyskują z czasem na popularności.
+                - >
+                    Aktualizacja: zdecydowałośmy się na wydanie rekomendacji form,
+                    które z różnych powodów zdają się być na najlepszej drodze ku normalizacji.
+                    Szczegóły tutaj: {/manifest=Manifest Niebinarnej Polszczyzny}
+        to-sie-nie-uda:
+            question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
+            answer:
+                - >
+                    No z takim podejściem to na pewno nie…
+                - >
+                    To samo mówiono kiedyś o „ministrze”, „posłance”, „pedagożce”, „reżyserce”, „gościni”, etc.
+                    Dziś feminatywy są używane coraz częściej, i mało kogo jeszcze dziwią czy bulwersują.
+                    Z neutratywami i niebinarnymi formami językowymi może być podobnie.
+                - >
+                    Język jest żywy. Ewoluuje i dostosuje się do zmieniających się potrzeb osób go używających.
+                    Język nie jest danym z niebios magicznym przykazaniem wyrytym w kamieniu –
+                    jest jedynie narzędziem do porozumiewania się.
+                    Może, powinien, i będzie się zmieniał – czy tego chcesz czy nie.
+        nowomowa:
+            question: 'Toż to nowomowa!'
+            answer:
+                - >
+                    Nie, nie każda zmiana w języku to „nowomowa”.
+                - >
+                    Nowomowa u Orwella polegała na zubożaniu języka tak, by ludzie nie mogli wyrazić swojego niezadowolenia z systemu.
+                - >
+                    Nasz projekt próbuje wzbogacić język tak, by osoby niebinarne wreszcie mogły się w pełni wyrazić.
+                - >
+                    Próby porównywania ich pokazują zupełne niezrozumienie tekstu Orwella.
+        autorytet:
+            question: 'Czy potwierdza te wymysły czyjś autorytet?'
+            answer:
+                - >
+                    I tak, i nie... Większość prezentowanych tutaj form
+                    nie należy do {https://pl.wikipedia.org/wiki/Norma_językowa=normy językowej},
+                    lecz do {https://pl.wikipedia.org/wiki/Uzus_językowy=uzusu językowego}
+                    – czyli rzeczywistego stanu funkcjonowania polszczyzny w danej wspólnocie językowej,
+                    niezależnie od tego, co językoznawczynie i językoznawcy zdążyli już (o ile w ogóle zamierzają)
+                    umieścić w gramatykach i słownikach.
+                    A i samą normę możemy podzielić na wzorcową i użytkowa –
+                    bo poprawność językowa nie jest zero-jedynkowa, ma różne odcienie.
+                - >
+                    Tak jak {https://pl.wikipedia.org/wiki/Neologizm=neologizmy} same w sobie nie są błędami językowymi,
+                    nawet jeśli jeszcze nie pojawiły się w słownikach,
+                    albo jak nie jest wymagana zgoda Rady Języka Polskiego,
+                    by używać emojis czy akronimów kultury internetowej,
+                    tak samo i nienormatywne zaimki nie są niczym z natury złym.
+                - >
+                    Rozumiemy jednak potrzebę znalezienia jakiejś oficjalnej legitymizacji
+                    dla używania „kontrowersyjnych” form językowych.
+                    Dlatego w sekcji [vial] {/nauka=Nauka}
+                    linkujemy między innymi do opinii RJP,
+                    która potwierdza poprawność gramatyczną pierwszo- i drugoosobowych neutralnych czasowników („byłom”, „zrobiłoś”),
+                    do seminariów naukowych i prac akademickich na temat niebinarności w języku, etc.
+        słowniki:
+            question: 'Ale tego nie ma w słowniku! Słownik mówi co innego!'
+            answer:
+                - >
+                    Słowniki opisują, jaki język jest (a raczej jaki był w momencie ich tworzenia),
+                    a nie narzucają, jaki <em>powinien</em> być.
+                - >
+                    Słowniki nie są nienaruszalnym sacrum ani ostatecznym wyznacznikiem tego,
+                    jakich słów wolno nam używać, jaki dokładnie mają zakres znaczeniowy,
+                    albo czy dane użycie jest krzywdzące lub wykluczające.
+                    Język się zmienia, i nic w tym złego ani nowego –
+                    a słowniki, wtórnie do języka, muszą być aktualizowane.
+        cenzura:
+            question: 'Czemu chcecie cenzurować język?'
+            answer:
+                - >
+                    Niczego nie cenzurujemy, nie zabraniamy, ani nie nakazujemy.
+                    Nawet gdybyśmy chciały, nie mamy ku temu żadnej mocy sprawczej
+                    poza oddolnymi próbami przekonywania – czyli tak jak wszystkie inne.
+                    Oskarżenia o próby „cenzury” są zupełnie oderwane od rzeczywistości.
+                - >
+                    Co zatem robimy? Edukujemy społeczeństwo, pokazując, w jaki sposób język może krzywdzić i wykluczać.
+                    Jeśli wiesz na przykład, że {/inkluzywny#murzyn=słowo na „m”} jest obraźliwe dla osób czarnoskórych,
+                    że określanie orientacji seksualnych {/inkluzywny#homoseksualizm=rzeczownikami zakończonymi na „-izm”}
+                    przyczynia się do homofobii,
+                    albo że {/terminologia#misgendering=misgenderyzowanie} osób transpłciowych i niebinarnych
+                    wzmaga {/terminologia#dysforia=dysforię płciową} i powoduje cierpienie,
+                    a mimo to wciąż używasz takiego języka bez próby poprawy czy okazania empatii,
+                    świadczy to źle wyłącznie o tobie – a nie o tym, że jakaś grupka queerów z internetu cię „cenzuruje”.
+        przesada:
+            question: 'Czy to nie przesada?'
+            answer:
+                - >
+                    Każda grupa marginalizowana słyszy to pytanie na okrągło.
+                    Osoby homoseksualne <em>przesadzają</em>, domagając się równości małżeńskiej, jakby im umowa u notariusza nie wystarczyła!
+                    Osoby transpłciowe <em>przesadzają</em>, chcąc procedury uzgodnienia płci metrykalnej, która nie byłaby trudna, droga i traumatyzująca.
+                    Osoby mogące zajść w ciążę <em>przesadzają</em> chcąc praw reprodukcyjnych niebędących kompromisem między prawicą a skrajną prawicą.
+                    Osoby czarnoskóre <em>przesadzają</em> z tą walką z rasizmem, nie wystarczy im zniesienie niewolnictwa?
+                - >
+                    Opresorzy lubią zrzucać winę na ofiary. Zgrywać dobrotliwych stróżów praw człowieka
+                    pilnujących, by <em>nieodpowiednim</em> ludziom się ich za dużo nie dostało.
+                    Ale prawa człowieka nie powinny być negocjowalne ani warunkowe.
+                - >
+                    Nie przesadzamy. Żaden z naszych postulatów nie jest wygórowanym żądaniem.
+                    Chcemy, by państwo nie zmuszało nas do wybierania w dokumentach jednej z dwóch płci,
+                    jeśli żadna z nich nas dobrze nie opisuje.
+                    Chcemy, by państwo nie mówiło nam, jakie imię możemy sobie wybrać, a jakie nie,
+                    z tak głupiego powodu jak „niewskazywanie na płeć”.
+                    Chcemy, by osoby tworzące teksty zastanowiły się zanim znowu napiszą je tak,
+                    jakby każda osoba je odbierająca była mężczyzną.
+                    I chcemy też, by szanowano cudzą płeć i używane formy –
+                    jeśli ktosio prosi, by mówić np. „zrobiłoś” zamiast „zrobiłaś”,
+                    to czy naprawdę zmiana tej jednej literki miałaby innych aż tak boleć?
+                - >
+                    To są rzeczy, o które nawet nie powinnośmy „walczyć” –
+                    a po prostu oczekiwać, że będą wynikały ze zwykłego ludzkiego szacunku i życzliwości.
+                    To nie są też sprawy abstrakcyjne czy symboliczne, lecz kwestie mające
+                    {https://pts-seksuologia.pl/sites/strona/83/stanowisko-pts-ws-sytuacji-spolecznej-zdrowotnej-i-prawnej-osob-transplciowych=realny wpływ na zdrowie psychiczne i fizyczne osób transpłciowych i niebinarnych}.
+                    Czy to <em>przesada</em> prosić o szacunek?
+        błahostki:
+            question: 'Czemu zajmujecie się tak błahymi problemami?'
+            answer:
+                - >
+                    Ten sam problem dla jednych może wydawać się błahy, ale dla innych być niezmiernie ważny.
+                    Spróbuj wyobrazić sobie, że niemal każde zdanie, które wypowiadasz, zmusza Cię do „kłamania” o swojej tożsamości.
+                    Że nie możesz nikomu opowiedzieć o swoim dniu bez doświadczania dysforii płciowej…
+                - >
+                    Są różne problemy, jedne są bardziej podstawowe, inne mniej, ale wszystkie możemy rozwiązywać jednocześnie.
+                    Bo to nie jest tak, że w momencie, w którym rozwiązujemy te bardziej poważne problemy, u kogoś nie znajdzie się siła by rozwiązać te mniejsze.
+                    Są osoby, które nie są w stanie rozwiązać tych dużych problemów, ale są w stanie rozwiązać te mniejsze.
+                - >
+                    Nie zakładamy rąk i nie mówimy, że „dopóki choć jedno dziecko w Afryce chodzi głodne, nie bierzemy się za nic innego”.
+                    Nie. Robimy, co możemy, w kwestiach, na których się znamy i na które mamy siłę.
+        komplikowanie:
+            question: 'Po co tak komplikować język? Czy polszczyzna już nie jest wystarczająco trudna?'
+            answer:
+                - >
+                    Odwróćmy pytanie: czy nie byłoby prościej, gdyby istniał tylko jeden rodzaj gramatyczny?
+                    Nie trzeba byłoby się kłócić o feminatywy, jeśli opisywałobyśmy nimi każdego człowieka bez względu na płeć.
+                    Tabelki {http://grzegorz.jagodzinski.prv.pl/gram/pl/odmiana1.html=deklinacji} i {http://grzegorz.jagodzinski.prv.pl/gram/pl/odmiana2.html=koniugacji}
+                    byłby zdecydowanie prostsze, gdyby zawierały wyłącznie na przykład rodzaj neutralny. 🙃
+                - >
+                    Owszem, język polski nie jest łatwy. Ale mimo to jest efektywnym narzędziem komunikacji –
+                    a jeśli naszym celem jest komunikatywność i inkluzywność,
+                    to musimy mu pozwolić rozwijać się w tym kierunku, nawet kosztem „skomplikowania”.
+                    Skoro język polski tak silnie podkreśla płeć i ciężko jest uniknąć jej zaznaczania,
+                    a jednocześnie istnieją osoby, które nie są dobrze opisywane przez żadną z dwóch „domyślnych opcji”,
+                    to język nie spełnia zbyt dobrze swojej podstawowej funkcji – komunikowania informacji.
+                - >
+                    Owszem, ze względu na to, że temat wciąż jest nowy i musi się jeszcze wyklarować,
+                    przedstawianych przez nas form niebinarnych jest sporo, i mogą one przytłaczać.
+                    Dlatego w naszym {/manifest=Manifeście} proponujemy
+                    (choć nie narzucamy, ani też nie deprecjonujemy pozostałych form!),
+                    by skupić się na normalizacji używania {/ono=rodzaju neutralnego} jako form dla osób niebinarnych.
+                    On bowiem jest już w polszczyźnie zakorzeniony,
+                    a już wieki temu {/korpus#Maksymilian%20Jakubowicz=gramatyki przedstawiały go} na równi z rodzajem męskim i żeńskim,
+                    również w formach pierwszo- i drugoosobowych („byłom”, „zrobiłoś”), bez żadnych zastrzeżeń.
+                    Te formy już od dawna w normatywnej polszczyźnie istnieją!
+                    Czy postulat, by nie wyśmiewać osób ich używających, to naprawdę „komplikowanie języka”?
+        bio:
+            question: 'Czemu warto wrzucić link do swoich zaimków na swoje profile na portalach społecznościowych?'
+            answer:
+                - >
+                    Jeśli jesteś cis (= nie trans) i używasz „{/on=on}” lub „{/ona=ona}”, możesz myśleć, że Twoje zaimki są <em>oczywiste</em>.
+                    I być może tak jest – o ile wymieniasz w profilu swoje (nacechowane płciowo) imię albo w awatarze masz swoje zdjęcie.
+                    Wielu jednak tego nie robi – i ciężko zgadnąć, jak się do nich zwrócić.
+                - >
+                    Przede wszystkim chodzi jednak o co innego: nie każdy używa zaimków, które są dla innych „oczywiste”.
+                    Osoby trans chcą, by zwracano się do nich poprawnie, niezależnie czy są „passing”,
+                    niezależnie czy przeszły już tranzycję (o ile w ogóle chcą ją przechodzić).
+                    Osoby niebinarne często nie wyglądają „niebinarnie”,
+                    a silnie zgenderyzowana polszczyzna nie oferuje domyślnego neutralnego zaimka.
+                - >
+                    I choć jest to dla nas niezmiernie ważne, by zwracano się do nas poprawnie,
+                    publikowanie swoich zaimków niesie też ze sobą spore ryzyko i mocno nas eksponuje.
+                - >
+                    Jeśli umieszczasz swoje zaimki w profilu, choć samx nie masz takiej potrzeby,
+                    to pokazujesz wsparcie dla społeczności trans
+                    i normalizujesz podawanie zaimków przez osoby, których zaimki nie są oczywiste
+                    {https://avris.it/blog/czemu-każdy-powinien-mieć-zaimki-w-bio=(więcej powodów tutaj).}
+        tłumaczenie:
+            question: 'Czemu to takie ważne, żeby tłumaczyć niebinarne zaimki? Nie można po prostu przerobić niebinarnej postaci na faceta albo babę?'
+            answer:
+                - >
+                    Zadaniem osoby tłumaczącej jest przełożyć dzieło na inny język – a nie zniekształcać je według swojego widzimisię.
+                    Nieważne, jakie masz poglądy, co myślisz o niebinarności, jak dużym wyzwaniem jest
+                    przetłumaczenie na polski np. angielskiego <em>they/them</em> czy hiszpańskiego <em>elle</em>, itp.
+                    – skoro osoby autorskie oryginału stworzyły daną postać jako niebinarną i chciały,
+                    by odbiorczynie i odbiorcy o tym wiedzieli,
+                    to osoby tłumaczące obdzierające tę postać z niebinarności
+                    zakłamują przekaz dzieła i nie wykonują dobrze swojej pracy.
+                - >
+                    Jeśli w jakiejś książce postać jest smoczycą, to w procesie tłumaczenia nie zmienisz jej gatunku
+                    tylko dlatego, że nie wierzysz w smoki, no nie?
+                    Czemu więc osoby tłumaczące ośmielają się zmieniać postaciom płeć?
+                - >
+                    To nie kwestia ideologii. To kwestia prawdy i wierności oryginałowi.
+        męskie:
+            question: 'Czy nie można po prostu używać męskich wersji jako neutralnych?'
+            answer:
+                - >
+                    Nie, bo wersje męskie wcale nie są neutralne. Są… cóż… męskie!
+                - >
+                    Polski jest językiem, który bardzo konkretnie rozróżnia formy gramatyczne nacechowane płciowo.
+                    Samo to, że rodzaj męski „rozpycha się” po języku jako domyślny wybór w przypadku jakichkolwiek wątpliwości
+                    (np. gdy nie znamy czyjejś płci, gdy nie mówimy o nikim konkretnym, lub gdy mówimy o mieszanej grupie osób),
+                    nie oznacza jeszcze, że jest jakkolwiek „neutralny”.
+                - >
+                    {https://pl.wikipedia.org/wiki/Męska_dominacja_językowa=Męska dominacja językowa}
+                    nie jest przejawem neutralnego języka, lecz wręcz przeciwnie: patriarchatu.
+                    Wpływa negatywnie na reprezentację osób innych płci
+                    oraz {https://journals.sagepub.com/doi/10.1177/0261927X12463008=zniekształca nasze postrzeganie świata}.
+        rewolucja:
+            question: 'Język musi zmieniać się powoli! Czemu chcecie robić w nim taką rewolucję?'
+            answer:
+                - >
+                    Czy „rewolucja” to naprawdę coś złego?
+                    Jeśli dążymy do dobrego celu i chcemy go osiągnąć na moralne sposoby,
+                    to w czym problem?
+                - >
+                    Żyjemy w erze informacyjnej.
+                    Nigdy wcześniej aż taki odsetek ludzkości nie był piśmienny.
+                    Nigdy nie tworzyłośmy tylu tekstów co teraz.
+                    Nigdy wcześniej nie komunikowałośmy się w tak zawrotnym tempie, co przez ostatnie dekady.
+                    To, że „język zmienia się powoli”, nie jest nienaruszalnym prawem wszechświata,
+                    a jedynie naszą obserwacją minionych tysiącleci.
+                    Przez ostatnie lata wszystko, od technologii po kulturę, zmienia się szybciej niż kiedykolwiek
+                    – czemu język miałby nie doświadczyć podobnego zjawiska?
+                - >
+                    Dziś możemy pomieszać sobie tekst (i to nie tylko potoczny) z malutkimi obrazkami twarzy i przedmiotów
+                    – i nikogo to nie dziwi 😉
+                    Ale czyż gazeta z poprzedniego wieku próbująca użyć na swoich łamach czegoś na kształt emoji
+                    nie narażałaby się na oskarżenia o „rewolucję językową” i „psucie polszczyzny”?
+        wiarygodność:
+            question: 'Skąd mogę wiedzieć, że zaimki.pl to wiarygodne źródło informacji?'
+            answer:
+                - >
+                    Kto mogłoby być lepszym źródłem informacji o queerowości niż same osoby queerowe? 😉
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu 1) osobami używającymi języka polskiego,
+                    2) osobami niebinarnymi i sojuszniczymi. Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Dlatego przedstawiamy je na podstronie {/kolektyw-rjn=Kolektyw „Rada Języka Neutralnego”}.
+                - >
+                    W sekcji [vial] {/nauka=Nauka} przedstawiamy prace akademickie i wypowiedzi osób ze środowisk naukowych
+                    na tematy związane z obszarem naszej działalności.
+                    W sekcji [tv] {/media=Media} cytujemy nasze wystąpienia oraz w wspomnienia w mediach ze wszystkich stron sceny politycznej,
+                    w tym również w mediach queerowych.
+                - >
+                    Oczywiście, jako społeczność nie jesteśmy monolitem i w wielu sprawach możemy się ze sobą nawzajem nie zgadzać.
+                    Wewnątrz społeczności istnieje różnorodność opinii, a my ją respektujemy – tutaj prezentując własne opinie, badania i wnioski,
+                    w oparciu o {https://pl.wikipedia.org/wiki/Queer_theory=teorię queerową} oraz historię ruchu LGBTQ+.
+                    Nasze podejście wywodzi się z {/terminologia#anarchaqueer=queerowego anarchizmu} i doświadczeń z działania w tego typu grupach.
+                - >
+                    Społeczność queerowa nie jest przecież ruchem posiadającym zarząd czy osoby liderskie.
+                    Działamy oddolnie, tak samo jak {https://lgbta.wikia.org/wiki/LGBTA_Wiki=LGBTA Wiki},
+                    niezliczone queerowe konta {https://www.tumblr.com/=tumblrowe},
+                    czy cała masa osób aktywistycznych działających w innych miejscach.
+                - >
+                    Robimy wszystko co w naszej mocy, by materiały, które tworzymy były profesjonalne i rzetelne.
+                    Jesteśmy otwarte na kontakt, krytykę i sugestie.
+                    Żadne z prezentowanych przez nas opinii nie są arbitralnymi decyzjami,
+                    lecz odzwierciedleniem względnego konsensusu wśród zaangażowanej aktywistycznie części społeczności queerowej.
+        klawiatura:
+            question: 'Ale tych znaków nie ma na klawiaturze!'
+            answer:
+                - >
+                    Znaki {/onæ=„æ”}, {/onø=„ø”} czy „ₐ” mogą być ciekawymi placeholderami dla form neutralnych,
+                    ale niestety nie są bezpośrednio dostępne z klawiatury.
+                    Dla okazjonalnego użycia wystarczy kopiuj-wklej (albo z naszej strony, albo np. z
+                    {https://unicode-table.com/=Unicode Character Table}).
+                    Co jednak, gdy używasz ich częściej?
+                - >
+                    Pod Windowsem możesz ściągnąć {https://www.microsoft.com/en-us/download/details.aspx?id=102134=MSKLC},
+                    którym stworzysz spersonalizowany układ klawiatury.
+                    Pod MacOS możesz przytrzymać dłużej klawisz „a” by móc wybrać opcję „æ” oraz klawisz „o” dla „ø”.
+                    Możesz też wejść w Ustawienia systemu → Klawiatura → Tekst i dodać zasady podmieniania znaków,
+                    lub skorzystać z apliacji {https://folivora.ai/=BetterTouchTool}.
+        nijaki:
+            question: 'Dlaczego mówicie „rodzaj neutralny” zamiast „rodzaj nijaki”?'
+            answer:
+                - >
+                    Bo to słowo jest zwyczajnie paskudne. Jest wykluczające. Odczłowieczające.
+                    {https://www.synonimy.pl/synonim/nijaki/=Kojarzy się} przeciętnością, bezbarwnością, bylejakością, nudą i mdłościami.
+                    Problem ten jest zauważany {https://journals.umcs.pl/et/article/view/6367/pdf=w pracach naukowych} \[str. 117-118]
+                    i {https://youtu.be/HOQazoVKf3c?t=1859=przez współpracowników Rady Języka Polskiego}.
+                - >
+                    Dlatego proponujemy alternatywę, pochodzącą od łacińskiej nazwy tego rodzaju gramatycznego:
+                    {https://en.wiktionary.org/wiki/neuter#Latin=neuter}.
+                    Czyż „rodzaj neutralny” nie brzmi zdecydownie piękniej?
+        neutratywy:
+            question: 'Czym są neutratywy? Dlaczego warto je tworzyć i ich uzywać?'
+            answer:
+                - >
+                    Są to słowa ukute na neutralne wersje słów nacechowanych płciowo, analogicznie do feminatywów, czyli wersji żeńskich.
+                    Nazwa została ukuta w analogii do feminatywów
+                    przez {https://twitter.com/VaultAusir=Pawła Dembowskiego}, współautora strony.
+                - >
+                    Dlaczego są potrzebne? Z tych samych powodów co feminatywy!
+                    O ile łatwiej było by, gdyby nazwy zawodów zatraciły swoje często męskie nacechowanie.
+                    Niestety tak się nie dzieje, przez co domyślnie możemy określać płeć osoby wykonującej ten zawód jako męską.
+                - >
+                    Jednak nie każda osoba chce używać zaimków i form męskich czy żeńskich,
+                    choćby dlatego, że płeć człowieka wymyka się tym dwóm kategoriom.
+                    Coraz więcej osób używa w odniesieniu do siebie
+                    {/ono=rodzaju neutralnego} i {/zaimki=innych form}.
+                    Formy te zaczynają być także potrzebne w tłumaczeniach z języków,
+                    gdzie używane są formy niebinarne takie jak choćby angielskie zaimki they/them.
+                    Z tego powodu proponujemy rozbudowę niebinarnej polszczyzny poprzez wspólne tworzenie form neutralnych.
+        neutratywy-a-neutralne:
+            question: 'Czym się różnią neutratywy od terminów neutralnych płciowo?'
+            answer:
+                - >
+                    Neutratyw to słowo najczęściej w rodzaju neutralnym analogiczne do feminatywu,
+                    powstałe, by określić osobę używającą rodzaju neutralnego.
+                    Natomiast termin neutralny płciowo w ogóle nie wskazuje na płeć.
+                - >
+                    Przykładowo: „{studencie}” to neutratyw,
+                    natomiast „osoba studencka/studiująca” to termin neutralny płciowo.
+        neutratywy-brzmia-dziwnie:
+            question: 'Ale nazwy feminatywów i neutratywów brzmią jak…'
+            answer:
+                - >
+                    „Pilotka” jak czapka? „Reżyserka” to pomieszczenie?
+                - >
+                    Ech, tak jakby słowa w rodzaju męskim miały tylko jedno znaczenie.
+                     „Adwokat” to alkohol,
+                    „akademik” to dom studencki,
+                    „bliźniak” – budynek,
+                    „energetyk” – napój,
+                    „grafik” – harmonogram,
+                    „informator” – ulotka dla turystów,
+                    „kosmetyk” – przedmiot,
+                    „miotacz” – ognia,
+                    „pilot” – do telewizora…
+                - >
+                    Tak, niektóre słowa mają więcej niż jedno znaczenie. To nic nowego ani złego.
+                    Od tego mamy kontekst, by wiedzieć, o które znaczenie chodzi.
+        normatywne-opcje:
+            question: 'Czy można mówić po polsku w sposób neutralny płciowo bez tworzenia neogramatyki?'
+            answer:
+                - >
+                    Do pewnego stopnia tak. Często jednak napotykamy konstrukcje,
+                    które zmuszają nas albo do wyboru opcji binarnej, albo do tworzenia nowych form.
+                - >
+                    Na przykład: owszem, można pisać „kandydaci/tki”, co jest inkluzywne dla kobiet,
+                    wciąż jednak pomija osoby niebinarne.
+                    Jednym z popularnieszych normatywnych pomysłów na neutralne rzeczowniki
+                    (alternatywa dla {/neutratywy=neutratywów})
+                    są konstrukcje „osoba” + imiesłów lub „osoba” + przymiotnik.
+                    Zamiast „kandydaci” lub „kandydatki” możemy mówić „osoby kandydujące”.
+                    {http://transfuzja.org/=Fundacja Trans-Fuzja} na przykład zamiast „prezesa” lub „prezeski” ma „osobę prezesującą”.
+                - >
+                    W kwestii zaimków, czasowników i przymiotników, można używać rodzaju neutralnego,
+                    który {https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208=zdaniem Rady Języka Polskiego}
+                    jest poprawny nawet w formach 1. i 2. osoby („byłom”, „zrobiłoś”).
+                    Trzeba jednak zauważyć, że (przynajmniej dopóki nie zostanie znormalizowane inne użycie)
+                    formy te brzmią dla wielu infantylnie.
+                    Używajmy ich więc tylko wobec osób, które wprost sobie tego życzą.
+                - >
+                    W wielu zdaniach da się uniknąć form binarnych,
+                    korzystając ze strony biernej („przypomniało mi się” zamiast „przypomniałem sobie” / „przypomniałam sobie”),
+                    imiesłowów („zrobiwszy”),
+                    bezokolicznikowego czasu przyszłego („będę robić” zamiast „będę robił” / „będę robiła”),
+                    czy też z czasu teraźniejszego lub przyszłego w funkcji czasu przeszłego („idę wczoraj do szkoły i jak się nie potknę!”).
+                    Niestety wymaga to niezłej dozy językowej gimnastyki…
+                - >
+                    Inne przykłady form neutralnych płciowo w codziennej, normatywnej polszczyźnie:
+                    „moje {kochanie} {/ono=zrobiło} mi niespodziankę”,
+                    „proszę przyjść do szkoły z {rodzic}em”,
+                    „w urzędzie powiedziano mi, że…”,
+                    „{/oni=dzwonili} z gazowni”…
+        grupy:
+            question: 'Jak zwracać się do osoby, której płci nie znamy, lub do mieszanej grupy osób?'
+            answer:
+                - >
+                    Wiele form, które {/zaimki=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
+                    „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp.
+        zmiana:
+            question: 'Czy mogę zmienić swoje zaimki?'
+            answer:
+                - >
+                    Jak najbardziej! Nikogo nie dziwi, gdy ktosio zmienia w ciągu życia poglądy, styl, zainteresowania…
+                    Czemu miało by być dziwne, że ktosio odkryło część swojej tożsamości, że przestało mu się podobać jego imię,
+                    że odkryło etykietkę, która świetnie opisuje to, jak od dawna się czuło, itp. itd.?
+        wlasne:
+            question: 'Czy to dziwne, że nie mogę się przyzwyczaić do <em>swoich własnych</em> zaimków?'
+            answer:
+                - >
+                    Ani trochę! Znamy wiele osób, które po latach używania form zgodnych z ich płcią nadaną przy urodzeniu,
+                    zapominają się, gdy używają nowych form. Siła przyzwyczajenia jest silna, zwłaszcza dla osób,
+                    które nie doświadczają mocnej {https://gender.wikia.org/wiki/Dysphoria=dysforii płciowej}.
+                - >
+                    Zaimki ≠ płeć.
+                    Płeć nie zmieni ci się nagle, jeśli czasem powiesz „zrobiłem”, gdy chciałuś powiedzieć „zrobiłum”.
+                    Nie przejmuj się. Eksperymentuj. Sprawdź, z czym czujesz się najlepiej.
+        preferowane-zaimki:
+            question: 'Czemu nie mówić „preferowane zaimki”?'
+            answer:
+                - >
+                    Bo to sugeruje, że czyjeś zaimki to tylko fanaberia.
+                    Jeśli ktoś tylko „preferuje” żeńskie zaimki, to nie obrazi się, jak będę mówić do niego formami męskimi, prawda?
+                    W końcu wygląda jak facet, a mi tak będzie łatwiej!
+                - >
+                    Nie. To są nasze zaimki. Nie żadne „preferowane zaimki”. To nasze imiona, nie „preferowane imiona”.
+                    Jeśli zależy ci na twoich transpłciowych i niebinarnych znajomych i krewnych, zwracaj się do nich poprawnie.
+        zaimki-plciowe:
+            question: 'Czemu nie mówić „zaimki płciowe”?'
+            answer:
+                - >
+                    Bo zaimki ≠ płeć. Zaimki to tylko gramatyka.
+                    Osoby niebinarne mogą używać (i w sporej części używają) form binarnych,
+                    niektóre lesbijki ze względów kulturowych i historycznych używają form męskich, itp.
+                - >
+                    Mów po prostu „zaimki”. To prościej i sensowniej.
+        osoby-cis:
+            question: 'Czy osoby cispłciowe też mogą używać innych zaimków niż „domyślne”?'
+            answer:
+                - >
+                    Jak najbardziej! Język jest dla nas, nie my dla języka.
+                    Jeśli jesteś osobą cis, ale czujesz, że lepiej wyrażasz siebie innymi zaimkami niż „domyślne”, to rób to.
+                    Wolność do ekspresji płciowej i własnej tożsamości jest dla wszystkich.
+                    Opresja {/terminologia#binaryzm=binaryzmu} i stereotypów płciowych dotyka też osób cis.
+                - >
+                    Osoby cispłciowe używające {/terminologia#nonkonformizm=nonkonformistycznych} zaimków
+                    są ważną częścią historii i kultury queerowej; wśród nich są chociażby
+                    {https://en.pronouns.page/terminology#he/him%20lesbian=lesbijki używające he/him}
+                    czy {/terminologia#drag%20queen=drag queens używające she/her}.
+                - >
+                    Tak jak podawanie swoich zaimków w bio czy stopkach mailowych normalizuje tę praktykę
+                    i sprawia, że osoby transpłciowe są dzięki temu bezpieczniejsze,
+                    tak samo korzystanie przez przez osoby cispłciowe ze swojego {https://en.wikipedia.org/wiki/Social_privilege=przywileju},
+                    by znormalizować używanie zaimków innych niż te powiązane z czyjąś płcią przypisaną przy urodzeniu,
+                    pomaga społecznościom marginalizowanym.
+                - >
+                    Misja naszego kolektywu to walka o wolność, szacunek i inkluzywność w języku.
+                    Ta wolność obejmuje wszystkie osoby: cis- i transpłciowe, binarne i niebinarne.
+                    Stanowczo sprzeciwiamy się {/terminologia#gatekeeping=gatekeepingowi}.
+                    Jest to zjawisko negatywne i tworzące podziały wewnątrz grup marginalizowanych,
+                    na czym zyskują wyłącznie opresorzy.
+        a-moj-dziadek:
+            question: 'Czy po to mój dziadek walczył na wojnie, by teraz ktoś mówił o sobie „ono”?'
+            answer:
+                - >
+                    Tak.
+                - >
+                    Walczył o wolność. A jeśli myślisz, że wolność ta wcale nie obejmuje wolności Polek i Polaków
+                    do kształtowania swojego języka ojczystego zgodnie ze swoimi potrzebami,
+                    to zastanów się, czy samx walczyłxbyś po tej samej stronie, co dziadek.
+
+
+links:
+    header: 'Materiały'
+    headerLong: 'Dodatkowe materiały'
+
+    blog: 'Blog'
+    academic: 'Nauka'
+    links: 'Dodatkowe materiały'
+
+    mediaShort: 'Media'
+    media: 'Zaimki.pl w mediach'
+    mediaGuests: 'Zaproszone'
+    mediaMentions: 'Wspomniane'
+
+    recommended: 'Polecamy'
+
+    social: 'Social media'
+
+    languageVersions: 'Inne wersje językowe'
+
+    zine:
+        header: 'Zin'
+        headerLong: 'Niebinarny zin'
+        info:
+            - >
+                Kiedyś pierwsza rada dla osób niebinarnych lub kwestionujących swoją płeć
+                brzmiała „ucz się angielskiego” – bo materiałów po polsku zwyczajnie nie było.
+                W ostatnich latach, przy naszym skromnym współudziale, powoli się to zmienia.
+            - >
+                Chcemy, by naszym następnym krokiem było wspólne stworzenie w nadchodzących miesiącach
+                {https://pl.wikipedia.org/wiki/Zin_(czasopismo)=zina},
+                w którym osoby niebinarne mogłyby opowiedzieć światu o odkrywaniu swojej tożsamości płciowej,
+                poznawaniu siebie, zmaganiach z enbyfobią, o swoich doświadczeniach w sferze płciowości, itp.
+            - >
+                Jako kolektyw zajmiemy się doborem zgłoszonych tekstów i rysunków,
+                korektą, składem, publikacją, promocją, oraz potencjalną dystrybucją.
+                Od społeczności natomiast potrzebujemy… zgłoszeń!
+                Jeśli chcesz opowiedzieć światu, jak to jest być osobą niebinarną,
+                zapraszamy do nadsyłania swojej twórczości!
+                Szczegóły poniżej.
+            - >
+                Zin jest projektem niekomercyjnym – nie jesteśmy w stanie zapłacić osobom autorskim
+                za ich twórczość, ale same też nic na niej nie zarobimy.
+                Wszystko w ramach oddolnego aktywizmu, w imię edukacji i ku pokrzepieniu serc 😉
+            - >
+                Zin zostanie opublikowany za darmo i będzie dostępny w formie elektronicznej,
+                a w zależności od liczby i rodzaju zgłoszeń oraz od dostępnych środków
+                być może również w formie papierowej.
+        submissions:
+            header: 'Nabór zgłoszeń'
+            rules:
+                -
+                    icon: 'map-marker-question'
+                    label: 'Tematyka'
+                    content: 'odkrywanie tożsamości płciowej, życie jako osoba niebinarna'
+                -
+                    icon: 'language'
+                    label: 'Język'
+                    content: 'polski'
+                -
+                    icon: 'pencil-paintbrush'
+                    label: 'Forma'
+                    content: 'dowolna (felieton, opowiadanie, wiersz, rysunek, komiks, …)'
+                -
+                    icon: 'ruler-triangle'
+                    label: 'Długość'
+                    content: 'tekst max. 5000 znaków / rysunek na max. dwie strony'
+                -
+                    icon: 'file-check'
+                    label: 'Format'
+                    content: >
+                        Dowolny popularny format tekstu,
+                        grafiki wektorowej lub
+                        grafiki rastrowej (bezstratna kompresja, np. PNG, 300 DPI).
+                        Pion (jeśli na pełną stronę) lub poziom (na pół).
+                        Format strony: najprawdopodobniej A4.
+                        Plik max. 10 MB.
+                -
+                    icon: 'info-square'
+                    label: 'Załącz info'
+                    content:
+                        - 'imię i nazwisko lub pseudonim – jakkolwiek chcesz być podpisanx; nie potrzebujemy znać {/terminologia#nekronim=nekronimu}'
+                        - 'zaimki (plus opcjonalnie: link do wizytówki na zaimki.pl)'
+                        - 'krótką notkę autorską w trzeciej osobie (max. 50 słów)'
+                -
+                    icon: 'calendar'
+                    label: 'Termin'
+                    content: 'do końca grudnia 2021'
+                -
+                    icon: 'mailbox'
+                    label: 'Adres'
+                    content: '{mailto:zin@zaimki.pl=zin@zaimki.pl}'
+            disclaimer: >
+                Zgłaszając swoją pracę, udzielasz nam bezpłatnej licencji do opublikowania jej
+                w formie darmowego PDF-a, ebooka i/lub druku.
+                Kolektyw zastrzega sobie prawo doboru prac do publikacji,
+                biorąc pod uwagę warsztat literacki, długość tekstu, liczbę zgłoszeń,
+                zgodność z wartościami kolektywu oraz z tematyką zina.
+
+people:
+    header: 'Znane osoby'
+    headerLong: 'Zaimki znanych osób'
+    headerLonger: 'Zaimki znanych osób – ściąga dla prasy'
+    description: 'Polska prasa często idzie na łatwiznę i opisuje osoby używające they/them jako po prostu „on” lub „ona”, wymazując tym samym ich niebinarną tożsamość. Stworzyłośmy zatem małą ściągawkę, kto używa jakich zaimków.'
+    intro:
+        - >
+            Wiele osób dziennikarskich, stojąc przed wyzwaniem stworzenia materiału o osobie z zagranicy,
+            która w innym języku używa form neutralnych (jak np. angielskie <em>they/them</em>),
+            poddaje się i idzie na łatwiznę – zwyczajnie używając normatywnych form męskich lub żeńskich.
+            Niestety, wymazuje to niebinarną część tożsamości tej osoby
+            i przyczynia się do utrwalania szkodliwego błędnego mniemania,
+            jakoby osoby niebinarne były tylko „kobietami-light” czy „mężczyznami-light”.
+        - >
+            Śpieszymy zatem z pomocą!
+            {/ona/ich=Przygotowałośmy} [globe-americas] {/english=anglojęzyczny przegląd polskich form neutralnych},
+            w którym tłumaczymy różne opcje osobom nieznającym polskiego.
+            {/ona/ich=Rozesłałośmy} go do paru znanych osób z pytaniem, czy mają preferencje,
+            jak chciałyby być opisywane przez polskie media i polskie fandomy.
+            Liczymy, że lista będzie się z czasem wydłużała.
+        - >
+            Póki co, {/ona/ich=zebrałośmy} tu raptem parę znanych osób niebinarnych.
+            Co więc robić, jeśli danej osoby tutaj nie ma?
+            Przede wszystkim, nie idź na łatwiznę i nie opisuj jej zaimkami, które <em>wydaje ci się</em>,
+            że <em>„powinna”</em> używać ze względu na „męskie” czy „żeńskie” ciało.
+            Niektórzy używają zamiennie na przykład „they” i „she”, wtedy żeńskie zaimki w polszczyźnie są na miejscu.
+            W przciwnym wypadku zajrzyj do sekcji [tags] {/zaimki=Zaimki},
+            gdzie opisujemy neutralne możliwości. Zapoznaj się z nimi i na tej podstawie dokonaj wyboru.
+            Możesz też spróbować spytać bezpośrednio osobę zainteresowaną o jej preferencje
+            – posiłkując się naszymi [globe-americas] {/english=anglojęzycznymi materiałami}.
+    languages:
+        pl: 'Polskie zaimki'
+        en: 'Angielskie zaimki'
+
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Polish nonbinary pronouns'
+    description: 'If you don''t speak Polish, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            Polish is a strongly gendered language:
+            even saying something as simple as “I did” requires specifying which gender you are.
+        - >
+            It's problematic for nonbinary people,
+            because we cannot simply switch one set of pronouns for another to express our identity.
+            We need to come up with a system that also includes
+            neutral forms for adjectives, conjugated forms of verbs and declined forms of pronouns.
+            (also: nouns like “painter”, “politician”, “journalist” etc. are gendered as well,
+            but that's [book] {/rzeczowniki=a story for another time}).
+        - >
+            This website is an effort to put together in a structured and accessible way
+            the existing ideas for less gendered pronouns and other forms.
+            We create it in Polish (see: [tags] {/zaimki=Zaimki}),
+            but if you don't speak it, yet still are interested in
+            how this language tries to cope with the omnipresent binaries,
+            we've prepared a short overview of those ideas in English.
+
+contact:
+    header: 'Kontakt'
+    authors: '{/neutratywy#autor=Autorza} strony'
+    faq: >
+        Zanim napiszesz, zajrzyj do naszego {/pytania=FAQ} – być może odpowiedź na Twoje pytanie już się tam znajduje.
+    quote: >
+        Tworzysz jakiś materiał o języku neutralnym? Piszesz lub tłumaczysz na polski postać niebinarną?
+        Cudownie! Prosimy, daj nam znać. Chętnie doradzimy i chętnie udostępnimy u siebie linka.
+    hate: >
+        Chcesz wysłać nam hejty? Daruj sobie, nie dyskutujemy z trollami.
+        Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
+    team:
+        name: 'Kolektyw „Rada Języka Neutralnego”'
+        nameShort: 'Kolektyw'
+        description: >
+            Jesteśmy kolektywem queerowym zajmującym się
+            zbieraniem, badaniem, kształtowaniem i promowaniem języka niebinarnego i języka neutralnego płciowo.
+            Wspieramy również działania na rzecz równości i sprawiedliwości społecznej.
+        extra:
+            - '{/blog/skąd-nazwa-kolektywu=Skąd nazwa kolektywu?}'
+            - 'Formy używane przez nas jako grupę: {/ona/ich=ona/ich/-łośmy}<br/>(np. „zrobiłośmy”, „ogłosiłoście”)'
+        logo: 'Logo kolektywu to połączenie symbolu transpłciowości z chmurką dialogową symbolizującą język.'
+        members: 'Obecny skład'
+        member: 'Osoba członkowska kolektywu'
+        upcoming: 'Nadchodzące wersje językowe'
+        credentials:
+            header: 'Kwalifikacje'
+            description:
+                - >
+                    Promujemy postrzeganie kształtowania języka jako procesu oddolnego,
+                    w którym uczestniczy każda używająca go osoba, dlatego „legitymizując” naszą działalność
+                    wolimy skupiać się raczej na fakcie bycia po prostu
+                    1) osobami używającymi języka polskiego, 2) osobami niebinarnymi i sojuszniczymi.
+                    Wszystkie mamy prawo kształtować nasz język!
+                - >
+                    Rozumiemy też jednak, że aby niektóre osoby brały nas na poważnie,
+                    chciałyby poznać nasze formalne wykształcenie i doświadczenie zawodowe.
+                    Oto zatem lista osób członkowskich chcących się tymi informacjami podzielić:
+        join:
+            header: 'Dołącz do nas!'
+            encouragement: >
+                Zależy Ci na rozwoju języka niebinarnego i neutralnego płciowo?
+                Bliska jest Ci działalność naszego kolektywu i chcesz nam w niej pomóc? Super!
+                Dodatkowe ręce do pracy są bardzo mile widziane!
+            areasIntro: 'Obszary, w których możesz pomóc, to na przykład:'
+            areas:
+                - 'uzupełnianie i moderowanie słowników,'
+                - 'uzupełnianie i moderowanie korpusu,'
+                - 'tworzenie grafik i postów na social media,'
+                - 'odpowiadanie na wiadomości,'
+                - 'moderacja wizytówek,'
+                - 'tłumaczenie,'
+                - 'koordynacja tworzenia nowych wersji językowych,'
+                - 'teksty na bloga,'
+                - 'programowanie,'
+                - '…'
+            allies: >
+                Niektóre z tych rzeczy wymagają perspektywy osoby niebinarnej, ale inne niekoniecznie,
+                dlatego zapraszamy do współpracy również binarne osoby sojusznicze.
+            how: 'Jak dołączyć? Przyślij nam maila na {mailto:kontakt@zaimki.pl=kontakt@zaimki.pl}, a w nim:'
+            application:
+                - 'przedstaw się,'
+                - 'podlinkuj do swojego profilu na portalu zaimki.pl,'
+                - 'podlinkuj do swoich mediów społecznościowych,'
+                - 'napisz, czy masz jakieś doświadczenie aktywistyczne,'
+                - 'napisz, czym chcesz się zajmować w kolektywie.'
+
+support:
+    header: 'Wsparcie'
+    description: >
+        Jeśli chcesz się zrzucić na serwer, domeny, wlepki itp., lub zwyczajnie postawić autorzom piwo,
+        możesz skorzystać z poniższych linków:
+
+user:
+    header: 'Konto'
+    headerLong: 'Twoje konto'
+    tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
+    login:
+        placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
+        action: 'Zaloguj'
+        emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
+        userNotFound: 'Konto nie zostało znalezione.'
+        email:
+            subject: 'Twój kod logowania to %code%'
+            content: |
+                Aby potwierdzić swój adres email, wpisz na stronie następujący jednorazowy kod: %code%.
+
+                Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+        why: >
+            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=takimi jak ta}).
+        passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
+    code:
+        action: 'Sprawdź'
+        invalid: 'Kod nieprawidłowy.'
+    account:
+        changeUsername:
+            header: 'Nazwa użytkownicza'
+            action: 'Zmień'
+            invalid: 'Nazwa użytkownicza musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
+            taken: 'Ta nazwa użytkownicza jest zajęta.'
+        changeEmail:
+            header: 'Adres email'
+            action: 'Zmień'
+            invalid: 'Nieprawidłowy adres email.'
+            taken: 'Ten adres jest zajęty.'
+        admin: 'Adminie'
+    logout: 'Wyloguj'
+    avatar:
+        header: 'Avatar'
+        change: 'Zmień'
+    deleteAccount: 'Usuń konto'
+    deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
+    socialConnection:
+        list: 'Połączenia z social mediami'
+        connect: 'Połącz'
+        refresh: 'Odśwież'
+        disconnect: 'Rozłącz'
+        disconnectConfirm: 'Czy na pewno chcesz usunąć to połączenie? (Zawsze możesz logować się przez maila %email%)'
+
+profile:
+    description: 'Opis'
+    names: 'Imiona'
+    pronouns: 'Zaimki'
+    pronounsInfo: >
+        Możesz tu wpisać <strong>zaimek</strong> (np. „onu”, „on/jego”) lub wkleić <strong>linka</strong> do niego (np. „https://zaimki.pl/ona/ich”).
+        Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.'
+    pronounsNotFound: 'Niepoprawny format. Szczegóły w instrukcji powyżej'
+    words: 'Słowa'
+    birthday: 'Wiek'
+    birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
+    flags: 'Flagi'
+    flagsInfo: >
+        Przeciągnij swoje pride'owe flagi do poniższej ramki.
+        Więcej informacji o etykietkach znajdziesz w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
+    flagsCustom: 'Dodaj inne flagi'
+    flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
+    links: 'Linki'
+    linksCake: 'Polecamy dodać link do'
+    column: 'Kolumna'
+
+    header: 'Wizytówki'
+    list: 'Twoje wizytówki'
+    init: 'Stwórz wizytówkę'
+    show: 'Pokaż'
+    edit: 'Edytuj'
+    delete: 'Usuń'
+    deleteConfirm: 'Czy na pewno chcesz usunąć tę wizytówkę?'
+    editor:
+        header: 'Edytor wizytówki'
+        save: 'Zapisz wizytówkę'
+        defaults: 'Przywróć domyślne'
+    opinion:
+        yes: 'Tak'
+        jokingly: 'Żartobliwie'
+        close: 'Tylko jeśli jesteśmy blisko'
+        meh: 'Spoko'
+        no: 'Nie'
+    bannerButton: 'Stwórz wizytówkę'
+    card:
+        link: 'Obrazek'
+        generate: 'Wygeneruj'
+        generating: 'Trwa generowanie obrazka…'
+    empty: 'Ta osoba nie stworzyła jeszcze żadnych wizytówek.'
+
+census:
+    header: 'Spis'
+    headerLong: 'Niebinarny Spis Powszechny'
+    banner: >
+        Trwa „Niebinarny Spis Powszechny”!
+        Jeśli jesteś osobą niebinarną i chcesz nam pomóc zbadać, jakiego języka używamy by się wyrażać,
+        {/spis=kliknij tutaj, by wypełnić formularz}.
+    description:
+        - >
+            Ciekawi Cię, jakiego języka używają polskie osoby niebinarne?
+            Które zaimki, rodzaje gramatyczne i inne formy są najpopularniejsze?
+            Jakimi etykietkami się opisujemy?
+            Jak te trendy zmieniają się w czasie?
+        - >
+            To super, bo nas też! Dlatego chcemy co roku przeprowadzać Niebinarny Spis Powszechny, w którym to zbadamy.
+            Serdecznie zapraszamy do udziału <strong>wszystkie osoby niebinarne posługujące się językiem polskim</strong>.
+        - >
+            Jeśli swoją płeć opisujesz jako „kobieta – zawsze i wyłącznie” albo „mężczyzna – zawsze i wyłącznie”,
+            to badanie nie jest skierowane do Ciebie (ale docenimy jeśli podzielisz się linkiem ze znajomymi!).
+            Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
+            „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
+        #- >
+        #    Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
+        #    W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
+        #    By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
+        - >
+            Następny Spis odbędzie się w <strong>lutym 2022</strong>.
+        - >
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>}.
+            Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
+    agree: >
+        Wyrażam zgodę na przetwarzanie moich odpowiedzi
+        oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
+        do przeciwdziałania wandalizmom i spamowi.
+        Dane te nie są w stanie zidentyfikować żadnej osoby,
+        zostaną użyte wyłącznie w celu zapewnienia unikalności odpowiedzi
+        i usunięte po zamknięciu spisu.
+    start: 'Rozpocznij ankietę'
+    finished: >
+        Dziękujemy za wzięcie udziału w spisie powszechnym!
+        Wyniki i wnioski ogłosimy wkrótce {/kontakt=w mediach społecznościowych}.
+    prev: 'Poprzednie pytanie'
+    next: 'Następne pytanie'
+    replies: 'odpowiedzi'
+    writein: 'Jeśli Twojej odpowiedzi nie ma powyżej, możesz ją wpisać tutaj.'
+    leave: 'Czy na pewno chcesz wyjść? Twoje dotychczasowe odpowiedzi nie zostaną zapisane!'
+
+share: 'Udostępnij'
+
+crud:
+    approve: 'Zatwierdź'
+    hide: 'Schowaj'
+    remove: 'Usuń'
+    removeConfirm: 'Czy na pewno usunąć ten wpis?'
+    edit: 'Edytuj'
+    add: 'Dodaj'
+    filter: 'Filtruj'
+    filterLong: 'Filtruj listę…'
+    search: 'Szukaj…'
+    author: 'Dodane przez'
+    saved: 'Zmiany zapisane!'
+    loginRequired: '{/konto=Zaloguj się}, aby zgłosić wpis'
+    copy: 'Skopiuj link'
+    download: 'Ściągnij'
+
+footer:
+    license: >
+        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL}.
+    links: 'Kontakt, social media, wsparcie'
+
+notFound:
+    message: 'Strony nie znaleziono'
+    back: 'Wróć na główną'
+
+authRequired:
+    message: 'Musisz się zalogować, by zobaczyć tę stronę'
+    go: 'Przejdź do logowania'
+
+confirm:
+    header: 'Czy jesteś pewnx?'
+    yes: 'Tak, na pewno'
+    no: 'Nie, anuluj'
+    ok: 'OK'
+
+terms:
+    header: 'Regulamin'
+    lastUpdate: 'Ostatnia aktualizacja'
+    consent: 'Zakładając konto, akceptujesz {/regulamin=Regulamin}.'
+
+admin:
+    header: 'Panel adminia'
+    user:
+        user: 'Użytkownicze'
+        email: 'Email'
+        roles: 'Uprawnienia'
+        profiles: 'Profile'
+        confirmRole: 'Czy na pewno chcesz zmienić rolę osoby @%username% na "%role%"?'
+
+table:
+    empty: 'Pusto…'
+    count: 'Liczba'
+    sort: 'Przeciągnij by posortować'
+    scrollUp: 'Przewiń na samą górę'
+    more: 'Pokaż więcej'
+
+api:
+    header: 'Publiczne API'
+    example: 'Przykład'
+    query: 'Query string parameters'
+
+quotation:
+    start: '„'
+    end: '”'
+
+localise:
+    shorter: 'Dodaj więcej'
+    short: 'Dodawanie nowych wersji językowych'
+    long: 'Chcesz dodać nową wersję językową? Super! Informacje znajdziesz w'
+    longLink: 'tej instrukcji.'
+
+images:
+    upload:
+        instruction: 'Kliknij tutaj lub upuść tu obrazek'
+        instructionShort: 'Wgraj'
+
+error:
+    generic: 'Coś poszło nie tak, spróbuj ponownie…'
+
+captcha:
+    reason: 'Prosimy o udowodnienie, że nie jesteś botem, by chronić się przed spamem i DDoS-ami'
+    invalid: 'Nieprawidłowa CAPTCHA, spróbuj ponownie'
+
+mode:
+    dark: 'Tryb nocny'
+    light: 'Tryb dzienny'
+
+ban:
+    reason: 'Powód blokady'
+    visible: '(to będzie widoczne dla osoby zbanowanej)'
+    terms: 'Złamane punkty regulaminu (wymagane)'
+    action: 'Zablokuj tę osobę'
+    confirm: 'Czy na pewno chcesz zbanować @%username%?'
+    header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
+    banned: 'Zbanowanx'
+    termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}:'
+
+report:
+    action: 'Zgłoś profil'
+    comment: 'Opisz krótko, w czym problem'
+    confirm: 'Czy na pewno chcesz zgłosić profil @%username%?'
+    sent: 'Twoje zgłoszenie zostało wysłane. Dziękujemy za pomoc!'
+
+flags:
+    Abroromantic: 'Abroromantyczn{adjective_n}'
+    Abrosexual: 'Abroseksualn{adjective_n}'
+    Achillean: 'Achillejs{adjective_n_k}'
+    Alloromantic_Asexual: 'Alloromantyczn{adjective_n} aseksualn{adjective_n}'
+    Agender: 'Apłciow{adjective_n}'
+    Ambiamorous: 'Ambiamoryczn{adjective_n}'
+    Anarcha-Queer: 'Anarchoqueerow{adjective_n}'
+    Androgyne: 'Androgynopłciow{adjective_n}'
+    Androsexual: 'Androseksualn{adjective_n}'
+    Aporagender: 'Aporapłciow{adjective_n}'
+    Archaeopronouns: 'Archeozaimki'
+    Aroace: 'Aro-as'
+    Aromantic: 'Aromantyczn{adjective_n}'
+    Aromantic_Allosexual: 'Aromantyczn{adjective_n} alloseksualn{adjective_n}'
+    Asexual: 'Aseksualn{adjective_n}'
+    Autigender: 'Autypłciow{adjective_n}'  # Autigenderow{adjective_n}
+    Bear: 'Misiek'
+    Bicurious: 'Bi-ciekaw{adjective_n}'
+    Bigender: 'Bipłciow{adjective_n}'  # Dwupłciow{adjective_n}
+    Biromantic: 'Biromantyczn{adjective_n}'
+    Bisexual: 'Biseksualn{adjective_n}'
+    Butch: 'Butch'
+    Ceteroromantic: 'Ceteroromantyczn{adjective_n}'
+    Ceterosexual: 'Ceteroseksualn{adjective_n}'
+    Cis_Ally: 'Cis osoba sojusznicza'
+    Demiboy: 'Demichłopię' # Demichłopak
+    Demigender: 'Demipłciow{adjective_n}'
+    Demigirl: 'Demidziewczę'  # demidziewczyna
+    Demiromantic: 'Demiromantyczn{adjective_n}'
+    Demisexual: 'Demiseksualn{adjective_n}'
+    Diamoric: 'Diamoryczn{adjective_n}'
+    Enbian: 'Enbiańs{adjective_n_k}'  # Niebiańsk{adjective_n}
+    Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
+    Gay: 'Gej'
+    Gender_Questioning: 'Rozważając{adjective_n_c} swoją płeć'  # Zastanawiając{adjective_n_c} się nad swoją płcią
+    Genderfae: 'Nimficzn{adjective_n}'
+    Genderfaun: 'Fauniczn{adjective_n}'
+    Genderfluid: 'Płynnopłciow{adjective_n}'
+    Genderflux: 'Zmiennopłciow{adjective_n}'
+    Genderqueer: 'Nienormatywn{adjective_n} płciowo'  # Płeć Queerowa
+    Greyasexual: 'Szaroaseksualn{adjective_n}'
+    Greyaromantic: 'Szaroaromantyczn{adjective_n}'
+    Gynesexual: 'Gyneseksualn{adjective_n}'
+    Heteroflexible: 'Heteroelastyczn{adjective_n}'
+    Heteroromantic: 'Heteroromantyczn{adjective_n}'
+    Heterosexual: 'Heteroseksualn{adjective_n}'
+    Hijra: 'Hidźra'
+    Homoflexible: 'Homoelastyczn{adjective_n}'
+    Homoromantic: 'Homoromantyczn{adjective_n}'
+    Intersex: 'Interpłciow{adjective_n}'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Skórzak'
+    Lesbian: 'Lesbijka'
+    Lesbiromantic: 'Lesbiromantyczn{adjective_n}'
+    Maverique: 'Niezależnopłciow{adjective_n}'
+    Monoamorous: 'Monoamoryczn{adjective_n}'
+    Monogamous: 'Monogamiczn{adjective_n}'
+    Muxe: 'Muxe'
+    Nebularomantic: 'Mgławicoromantyczn{adjective_n}'
+    Neopronouns: 'Neozaimki'
+    Neutrois: 'Neutralnopłciow{adjective_n}'
+    Nonbinary: 'Niebinarn{adjective_n}'
+    Omniromantic: 'Omniromantyczn{adjective_n}'
+    Omnisexual: 'Omniseksualn{adjective_n}'
+    Oriented_Aroace: 'Zorientowan{adjective_n} aro-as'
+    Pangender: 'Panpłciow{adjective_n}'  # Pangenderow{adjective_n} Wszechpłciow{adjective_n}
+    Panromantic: 'Panromantyczn{adjective_n}'
+    Pansexual: 'Panseksualn{adjective_n}'
+    Polyamorous: 'Poliamoryczn{adjective_n}'
+    Polyromantic: 'Poliromantyczn{adjective_n}'
+    Polysexual: 'Poliseksualn{adjective_n}'
+    Pomoromantic: 'Pomoromantyczn{adjective_n}'
+    Pomosexual: 'Pomoseksualn{adjective_n}'
+    Progress_Pride: 'Progresywn{adjective_n}'
+    Queer: 'Queer (kłir)'
+    Queerian: 'Queerejs{adjective_n_k}'
+    Queerplatonic: 'Queerplatoniczn{adjective_n}'
+    Quoiromantic: 'Quoiromantyczn{adjective_n}'  # Jakromantyczn{adjective_n}
+    Sapphic: 'Safic{adjective_n_k}'  # Safik, Sapphic
+    Sexuality_Questioning: 'Rozważając{adjective_n_c} swoją orientację'
+    Straight_Ally: 'Hetero osoba sojusznicza'
+    Toric: 'Toryczn{adjective_n}'
+    Transfeminine: 'Transkobiec{adjective_n_c}'
+    Transgender: 'Transpłciow{adjective_n}'
+    Transmasculine: 'Transmęs{adjective_n_k}'
+    Transneutral: 'Transneutraln{adjective_n}'
+    Trigender: 'Tripłciow{adjective_n}'  # Trójpłciow{adjective_n}
+    Trixic: 'Triksyjs{adjective_n_k}'
+    Two_Spirit: 'Dwie dusze'
+    Xenogender: 'Ksenopłciow{adjective_n}'
+
+calendar:
+    header: 'Kalendarz'
+    headerLong: 'Queerowy Kalendarz'
+    months:
+        1: 'Styczeń'
+        2: 'Luty'
+        3: 'Marzec'
+        4: 'Kwiecień'
+        5: 'Maj'
+        6: 'Czerwiec'
+        7: 'Lipiec'
+        8: 'Sierpień'
+        9: 'Wrzesień'
+        10: 'Październik'
+        11: 'Listopad'
+        12: 'Grudzień'
+    dates:
+        1: '%day% stycznia'
+        2: '%day% lutego'
+        3: '%day% marca'
+        4: '%day% kwietnia'
+        5: '%day% maja'
+        6: '%day% czerwca'
+        7: '%day% lipca'
+        8: '%day% sierpnia'
+        9: '%day% września'
+        10: '%day% października'
+        11: '%day% listopada'
+        12: '%day% grudnia'
+    months_abl:
+        1: 'w styczniu'
+        2: 'w lutym'
+        3: 'w marcu'
+        4: 'w kwietniu'
+        5: 'w maju'
+        6: 'w czerwcu'
+        7: 'w lipcu'
+        8: 'w sierpniu'
+        9: 'we wrześniu'
+        10: 'w październiku'
+        11: 'w listopadzie'
+        12: 'w grudniu'
+    events:
+        nameday: 'Imieniny: {/imiona#%param%=%param%}'
+        pride_month: 'Miesiąc {/terminologia#pride=Dumy}'
+        trans_month: 'Miesiąc Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
+        zaimki_birthday: 'Urodziny zaimki.pl'
+        agender_day: 'Dzień Osób {/terminologia#apłciowość=Apłciowych}'
+        asexuality_day: 'Światowy Dzień {/terminologia#aseksualność=Aseksualności}'
+        bisexuality_day: 'Dzień Widoczności Osób {/terminologia#biseksualność=Biseksualnych}'
+        drag_day: 'Dzień {/terminologia#drag=Dragu}'
+        idahobit: 'Międzynarodowy Dzień Przeciw {/terminologia#homofobia=Homofobii}, {/terminologia#transfobia=Transfobii} i {/terminologia#bifobia=Bifobii}'
+        intersex_day: 'Dzień Świadomości nt. {/terminologia#homofobia=Interpłciowości}'
+        intersex_remembrance_day: 'Dzień Pamięci Osób {/terminologia#interpłciowość=Interpłciowych}'
+        lesbian_day: 'Międzynarodowy Dzień {/terminologia#lesbijka=Lesbijek}'
+        lesbian_visibility_day: 'Dzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        coming_out_day: 'Dzień {/terminologia#coming%20out=Wychodzenia z Szafy}'
+        nonbinary_day: 'Międzynarodowy Dzień Osób {/terminologia#niebinarność=Niebinarnych}'
+        pan_day: 'Dzień Świadomości nt. {/terminologia#panseksualność=Panseksualności} i {/terminologia#panromantyczność=Panromantyczności}'
+        trans_remembrance_day: 'Dzień Pamięci Osób {/terminologia#transpłciowość=Transpłciowych}'
+        trans_visibility_day: 'Dzień Widoczności Osób {/terminologia#transpłciowość=Transpłciowych}'
+        zero_discrimination_day: 'Dzień „{https://bip.brpo.gov.pl/pl/content/miedzynarodowy-dzien-bez-dyskryminacji=Zero Dyskryminacji}”'
+        arospec_week: 'Tydzień Świadomości nt. Spektrum {/terminologia#aromantyczność=Aromantyczności}'
+        asexual_week: 'Tydzień Świadomości nt. {/terminologia#aseksualność=Aseksualności}'
+        bisexual_week: 'Tydzień Świadomości nt. {/terminologia#biseksualność=Biseksualności}'
+        pronouns_day: 'Dzień {https://avris.it/blog/czemu-ka%C5%BCdy-powinien-mie%C4%87-zaimki-w-bio=Zaimków}'
+        trans_week: 'Tydzień Świadomości nt. {/terminologia#transpłciowość=Transpłciowości}'
+        trans_parent_day: 'Dzień Rodzicielstwa Osób {/terminologia#transpłciowość=Transpłciowych}'
+        nonbinary_week: 'Tydzień Świadomości nt. {/terminologia#niebinarność=Niebinarności Płciowej}'
+        nonbinary_week___timeDescription: 'w tygodniu (pon-nd) zawierającym 14 lipca'
+        polyamory_day: 'Dzień {/terminologia#poliamoria=Poliamorii}'
+        homophobia_sport: '{https://www.outsports.com/2020/2/20/21145344/international-day-against-homophobia-sports-twitter=Dzień Walki z Homofobią w Sporcie}'
+        gay_uncles_day: '{https://en.wikipedia.org/wiki/Gay_Uncles_Day=Dzień Gejowskich Wujków}'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=Dzień Osób LGBT+ w STEM}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=Dzień Działań Na Rzecz Depatologizacji Transpłciowości}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=Dzień Książki o Tematyce LGBTI}'
+        human_rights_day: '{https://pl.wikipedia.org/wiki/Dzie%C5%84_Praw_Cz%C5%82owieka=Dzień Praw Człowieka}'
+        nonbinary_parents_day: '{https://www.familyequality.org/2021/04/16/celebrating-nonbinary-parents-day-with-founder-johnny-blazes/=Dzień Rodzicielstwa Osób Niebinarnych}'
+        trans_prisoner: '{https://transprisoners.net/about/=Dzień Solidarności z Uwięzionymi Osobami Trans}'
+        xenogender_day: 'Dzień Widoczności {/terminologia#ksenopłciowość=Osób Ksenopłciowych}'
+        genderqueer_day: 'Dzień Widoczności Osób {/terminologia#nienormatywność=Nienormatywnych Płciowo}'
+        genderfluid_day: 'Dzień Widoczności Osób {/terminologia#płynnopłciowość=Płynnopłciowych}'
+        aids_day: 'Światowy Dzień Walki z AIDS'
+        tolerance_day: 'Międzynarodowy Dzień Tolerancji'
+        social_justice_day: 'Światowy Dzień Sprawiedliwości Społecznej'
+        stonewall_day: 'Rocznica Zamieszek w Stonewall'
+        domestic_violence: 'Dzień Świadomości Przemocy Domowej Wobec Osób LGBTQ'
+        polysexual_day: 'Dzień Świadomości nt. {/terminologia#poliseksualnosć=Poliseksualności} i {/terminologia#poliromantyczność=Poliromantyczności}'
+        orlando_day: 'Noc Pamięci Masakry w Orlando'
+        aids_memorial: 'Międzynarodowy Dzień Pamięci o Zmarłych na AIDS'
+        health_week: 'Tydzień Świadomości nt. Zdrowia Osób LGBT'
+        lesbian_visibility_week: 'Tydzień Widoczności {/terminologia#lesbijka=Lesbijek}'
+        demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
+        pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
+        transmasculine_day: 'Dzień Osób {/terminologia#transmęskość=Transmęskich}'
+        asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
+        bi_health_month: 'Miesiąc Świadomości nt. Zdrowia Osób Biseksualnych'
+        holocaust_remembrance_day: 'Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu'
+        family_equality_day: 'Międzynarodowy Dzień Równości Rodzin'
+        aro_month: 'Miesiąc Świadomości nt. Aromantyczności'
+        black_ribbon_day: 'Europejski Dzień Pamięci Ofiar Stalinizmu i Nazizmu'
+        black_queer_week: 'Tydzień Historii Czarnych Osób Queer'
+        mena_lesbian_day: 'Dzień Dumy Lesbijek i Queerowych Kobiet z Bliskiego Wschodu i Afryki Północnej'
+        hate_crime_awareness_week: 'Tydzień Świadomości nt. Przestępstw z Nienawiści'
+        deaf_awareness_week: 'Tydzień Świadomości nt. Głuchych Osób LGBTQ'
+        suicide_prevention_day: 'Światowy Dzień Zapobiegania Samobójstwom'
+        suicide_prevention_month: 'Miesiąc Zapobiegania Samobójstwom'
+        aids_awareness_month: 'Miesiąc Świadomości nt. AIDS'
+        genderfluid_week: 'Tydzień Świadomości nt. {/terminologia#płynnopłciowość=Płynnopłciowości}'
+    banner: 'Dziś w kalendarzu'
+    celebrating_custom: 'obchodzimy'
+    celebrating_day: 'obchodzimy'
+    celebrating_week: 'obchodzimy'
+    celebrating_month: 'obchodzimy'
+    image:
+        header: 'Ściągnij w formie obrazka'
+        overview: 'Przegląd'
+        labels: 'Etykietki'
+    link: 'Link'
+    full: 'Pełen kalendarz'
