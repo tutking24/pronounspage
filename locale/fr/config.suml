@@ -53,6 +53,9 @@ nouns:
 inclusive:
     enabled: false
 
+community:
+    route: 'calendrier'    
+
 terminology:
     enabled: true
     categories:
