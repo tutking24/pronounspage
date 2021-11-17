@@ -128,6 +128,10 @@ by program nie zaznaczał słów z końcówkami dla rodzaju neutralnego w 1. i 2
 
 ![Screenshoty procesu opisanego powyżej](/img-local/blog/spellcheck-google-docs.png)
 
+---
+
+`Google Docs` → `Pomoc` → `Pomóż w ulepszaniu`
+
 {/details}
 
 {details={favicon=ssl.gstatic.com/translate/favicon.ico} Google Translate}
