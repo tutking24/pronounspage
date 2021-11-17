@@ -288,24 +288,33 @@ faq:
 
 links:
     enabled: true
+    split: true
     route: 'ссылки'
     blogRoute: 'блог'
+    academicRoute: 'nauka'
+    mediaRoute: 'media'
+
+    blog: false
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: '– сайт был вдохновлен этим.'
+    recommended: []
     mediaGuests: []
     mediaMentions: []
-
+    academic: []
     socials:
         -
             icon: 'twitter'
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
-    recommended: []
+
+    zine:
+        enabled: false
+        route: 'zin'
 
 contact:
     enabled: true

@@ -272,6 +272,7 @@ faq:
 links:
     header: 'Ссылки'
     headerLong: 'Добавочные ссылки'
+    links: 'Добавочные ссылки'
     recommended: 'Рекомендуем'
 
     mediaShort: 'СМИ'
