@@ -12,17 +12,122 @@ pronouns:
     multiple:
         name: 'Взаимозаменяемые формы'
         description: >
-            Многие не бинарные люди используют больше, чем одну форму местоимений по отношению к себе.
-            Many nonbinary people use more than one form interchangeably
+            Многие небинарные люди используют больше, чем одну форму местоимений по отношению к себе.
             Они чувствуют себя комфортно, когда к ним обращаются по любым из этих местоимений.
-            and are fine with being called either of them.
-            Некоторым персонам нравится, когда при разговоре с ними и о них люди чередуют использование их местоимений.
-            Some like when others alternate between those forms when talking about them.
+            Некоторым в свою очередь нравится, когда при разговоре с ними и о них люди чередуют использование местоимений.
         examples: ['он/она', 'он/они', 'она/они']
-    null: false
     emoji: false
     slashes: false
-    avoiding: false
+    null:
+        description: '{/unikanie=Unikanie form nacechowanych płciowo}'
+        history: >
+            Niektóre osoby niebinarne preferują używanie form unikających precyzowania płci
+            zamiast tych nacechowanych czy to binarnie czy niebinarnie.
+            Warto też używać ich mówiąc o osobach, których płci nie znamy.
+            Choć w silnie zgenderyzowanym języku polskim jest to względnie trudne do zrobienia
+            i może lekko zmieniać znaczenie zdania,
+            to jednak wcale nie jest niemożliwe.
+        routes: ['unikanie']
+        ideas:
+            -
+                header: 'Zmiana podmiotu zdania'
+                normative: true
+                examples:
+                    - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
+                    - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
+                    - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+            -
+                header: 'Strona bierna'
+                normative: true
+                examples:
+                    - [ 'zgubił telefon', 'telefon został zgubiony' ]
+                    - [ 'znalazłam telefon', 'telefon został znaleziony' ]
+            -
+                header: 'Forma bezosobowa'
+                normative: true
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
+                    - [ 'znalazłam telefon', 'znaleziono telefon' ]
+                    - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+            -
+                header: 'Bezosobowe użycie 3. os. mnogiej'
+                normative: true
+                examples:
+                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi' ]
+            -
+                header: 'Podmiot logiczny w celowniku'
+                normative: true
+                examples:
+                    - [ 'przypomniałem sobie', 'przypomniało mi się' ]
+                    - [ 'zmarzłam', 'zrobiło mi się zimno' ]
+                    - [ 'zrobiłem', 'udało mi się zrobić' ]
+            -
+                header: 'Bezokolicznikowy czas przyszły'
+                normative: true
+                examples:
+                    - [ 'będę robiła', 'będę robić' ]
+                    - [ 'będę jadł', 'będę jeść' ]
+            -
+                header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
+                normative: true
+                examples:
+                    - [ 'gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę' ]
+            -
+                header: 'Imiesłowy'
+                examples:
+                    - [ 'usiadłem na kanapie', 'usiadłszy na kanapie' ]
+                    - [ 'wypiłam herbatę', 'wypiwszy herbatę' ]
+                    - [ 'posprzątałem mieszkanie', 'mieszkanie posprzątane' ]
+            -
+                header: 'Unikanie trybu przypuszczającego'
+                normative: true
+                examples:
+                    - [ 'czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?' ]
+                    - [ 'może bym tak pojechała na wakacje?', 'może pojadę na wakacje?' ]
+            -
+                header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
+                normative: true
+                examples:
+                    - [ 'zarządca', 'osoba zarządzająca' ]
+                    - [ 'kandydaci i kandydatki', 'osoby kandydujące' ]
+                    - [ 'proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem' ]
+                    - [ 'mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili' ]
+                    - [ 'dziennikarze oko.press', 'redakcja oko.press' ]
+                    - [ 'fani Mariny', 'fandom Mariny' ]
+            -
+                header: 'Skrócone zaimki'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'to dla niego', 'to dlań' ]
+                    - [ 'mieszkam u niej', 'mieszkam uń' ]
+            -
+                header: 'Skrócone zaimki + strona bierna'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'zrobiła', 'było przezeń zrobione' ]
+            -
+                header: 'Staropolska, rzeczownikowa odmiana przymiotników'
+                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
+                examples:
+                    - [ 'jestem szczęśliwa!', 'jestem szczęśliw!' ]
+                    - [ 'czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?' ]
+            -
+                header: 'Wyrzutnia / elipsa'
+                normative: true
+                examples:
+                    - [ 'coś bym dziś porobiło', 'coś bym dziś' ]
+            -
+                header: 'Skróty'
+                normative: true
+                examples:
+                    - [ 'Katarzyna Nowak', 'K. Nowak' ]
+                    - [ 'Szanowny Pan Białek', 'Sz. P. Białek' ]
+                    - [ 'Towarzyszka Q', 'Tow. Q' ]
+            -
+                header: 'Liczebniki zbiorowe'
+                normative: true
+                examples:
+                    - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
     others: 'Другие местоимения'
 
 pronunciation:
@@ -51,7 +156,7 @@ nouns:
     templates: true
 
 community:
-    route: 'условия'
+    route: 'календарь'
 
 inclusive:
     enabled: false
@@ -79,10 +184,107 @@ people:
 
 english:
     enabled: false
+    route: 'english'
+    pronounGroups:
+        -
+            name: 'Normative forms'
+            description:
+                - >
+                    Because of the limitations of Polish grammar, or simply because they just prefer it that way,
+                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
+                    – either the same as their gender assigned at birth or the opposite.
+                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
+            table: {on: 'Masculine', ona: 'Feminine'}
+        -
+            name: 'Neutrative forms'
+            description:
+                - >
+                    Polish has three grammatical genders: masculine, feminine and neuter.
+                    Why don't enbies simply use neuter then?
+                - >
+                    The thing is, historically this grammatical gender has only been applied
+                    to inanimate objects, pets and kids (in a very limited way).
+                    To apply it for adults sounds dehumanizing for most cis listeners
+                    and using the neuter forms of verbs in the 1st and 2nd person
+                    is so rare that listeners (falsely) think that it's incorrect.
+                    Eg. one could say „dziecko zrobił<strong>o</strong>” (=“the kid has done”),
+                    but the kid themselves would use the forms corresponding to their assigned gender:
+                    „zrobił<strong>em</strong>”/„zrobił<strong>am</strong>” (=“I have done”),
+                    but not „zrobił<strong>om</strong>”.
+                - >
+                    In a way, a parallel could be drawn between the Polish neuter forms and the English “it” pronoun.
+                    To call someone an “it” is offensive
+                    – unless it itself wants us to use “it/its” {https://twitter.com/search?q=it%2Fits&f=user=(and many do)}.
+                    The main difference is that English has singular “they”,
+                    while Polish doesn't yet have any normative form that would fit better.
+                    That's why English “it” is niche,
+                    while Polish neuter is one of the most popular choices among nonbinary people
+                    (including ones who use "they" in English),
+                    in hopes of normalising the new usage.
+                - >
+                    There's one more issue with neuter, though: it is neutral in nominative (the “who?”),
+                    but in other cases (the “whose?”, “whom?”, etc.) if falls back to being identical to masculine forms.
+                    That's why some enbies mix multiple forms, for instance using neuter verbs, yet feminine pronouns, etc.
+            table: {ono: 'Neutrative', ono/jej: 'Neutrative with female declension'}
+        -
+            name: 'Neopronouns (dukaisms)'
+            description:
+                - >
+                    Those forms are neologisms, originally created for a science fiction novel
+                    {https://en.wikipedia.org/wiki/Perfect_Imperfection=Perfect Imperfection}
+                    by {https://en.wikipedia.org/wiki/Jacek_Dukaj=Jacek Dukaj} (hence they are also known as “dukaisms”).
+                    It's a brand new grammatical gender used by post-human beings (phoebe) that don't have a specified gender.
+                - >
+                    It's a consistent and relatively complete system, but for people who hear it for the first time,
+                    it might sound alien and “incorrect”.
+                    It's one of the most popular choices among nonbinary folks.
+            table: {onu: ''}
+        -
+            name: 'Plural forms'
+            description:
+                - >
+                    Using plural forms to describe a single person is basically a loan translation
+                    of the English {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=“singular they”},
+                    but it does have roots in Polish {https://pl.wikipedia.org/wiki/Per_wy=historical and regional honorifics} as well.
+                    Keep in mind, though, that Polish speakers aren't yet too used to the idea of referring to one person in plural forms,
+                    so it might lead to misunderstandings.
+                - >
+                    The bad news is that there's two grammatical genders in plural:
+                    „{/oni=oni}” for male and mixed-gender groups, and „{/one=one}” for female groups
+                    (to oversimplify a lot).
+                    Still, whichever forms is chosen by a person, the plurality itself already points to them being nonbinary.
+                - >
+                    Unlike the English “singular they”, which only requires changing the third person form,
+                    in Polish this requires plural forms to be used also in first and second person.
+                    In the case of first person, it might be perceived as something akin to the “royal we”.
+
+            table: {oni: 'Male & mixed plurals', one: 'Female plurals'}
+        -
+            name: 'Placeholder forms'
+            description:
+                - >
+                    Another approach is to take the part of the word that differs between the male and female form,
+                    and to either replace it with a placeholder, or use the placeholder to merge those parts together.
+                    For instance “dear readers” can be translated as „drodzy_gie czytelnicy_czki”,
+                    „drodzy/gie czytelnicy/czki”, „drog* czytelnic*”, etc.
+                - >
+                    The main usage of such forms is to address a group of people or an unspecified person
+                    (“dear reader”), however there are nonbinary people who use similar approach in the first person too.
+                    It's very easy to understand the intent behind using those forms,
+                    even to listeners unfamiliar with the concept of nonbinary.
+                    The main disadvantage is that in most cases they are only usable in writing,
+                    while being hard or impossible to pronounce.
+            table: {onæ: '', on/a: '', onx: '', on_: '', on*: '', onø: ''}
+        -
+            name: 'Interchangeable forms'
+            description:
+                - >
+                    Many nonbinary people use more than one form interchangeably and are fine with being called either of them.
+
 
 faq:
     enabled: true
-    route: 'вопросы'
+    route: 'часто-задаваемые-вопросы'
 
 links:
     enabled: true
@@ -130,16 +332,16 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[без почтительного обращения]', 'обращение на ты', 'обращение на вы', 'господин', 'госпожа', 'госпожне ', 'микс', 'мистер', 'мисс/миссис', 'сэр', 'мэм', 'мадам']
-        - ['человек', 'персона', 'мужчина', 'женщина', 'дева', 'леди', 'чувак', 'чувиха', 'мальчик', 'парень', 'юноша', 'девочка', 'девушка', 'приятель', 'приятельница', 'товарищ', 'товарка', 'король', 'королева', 'чел', 'бро', 'сис', 'сиб']
-        - ['милы_е', 'привлекательны_е', 'красив_ые', 'симпатичны_е', 'горячи_е', 'сексуальны_е', 'феминитивы', 'маскулятивы', 'нейтролятивы']
-        - ['друг', 'подруга', 'партнер', 'партнерка', 'парень', 'молодой человек', 'девушка', 'муж', 'жена', 'партнер_ка по поцелуям', 'дорог_ие', 'любимы_е']
+        - ['[без почтительного обращения]', 'обращение на ты', 'обращение на вы', 'господин', 'госпожа', 'госпожне', 'микс', 'мистер', 'мисс/миссис']
+        - ['человек', 'персона', 'мужчина', 'женщина', 'дева', 'леди', 'чувак', 'чувиха', 'мальчик', 'парень', 'юноша', 'девочка', 'девушка', 'приятель', 'приятельница', 'товарищ', 'товарка', 'чел', 'бро', 'сис', 'сиб']
+        - ['милы_е', 'привлекательны_е', 'красив_ые', 'симпатичны_е', 'горячи_е', 'сексуальны_е', 'феминитивы', 'маскулятивы', 'нейтралятивы']
+        - ['друг', 'подруга', 'партнер', 'партнерка', 'парень', 'молодой человек', 'девушка', 'муж', 'жена', 'дорог_ие', 'любимы_е']
     flags:
         defaultPronoun: 'он_'
 
 calendar:
     enabled: true
-    route: 'calendar'
+    route: 'календарь'
 
 census:
     enabled: false
