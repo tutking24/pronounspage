@@ -1,4 +1,4 @@
-key	description	normative	nominative	genitive	dative	accusative	instrumental	prepositional	instrimental_with_preposition	genitive_with_preposition	nonreflexive_verb_past	reflexive_verb_past	short_adjective 	adjective 	possessive	definitive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+key	description	normative	nominative	genitive	dative	accusative	instrumental	prepositional	instrumental_with_preposition	genitive_with_preposition	nonreflexive_verb_past	reflexive_verb_past	short_adjective	adjective	possessive	definitive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
 он,он/его	Мужской род	TRUE	он	его	ему	его	им	нём	ним	него	л	лся	в	ый	мой	сам	FALSE	FALSE	TRUE
 она,она/её	Женский род	TRUE	она	её	ей	её	ей / ею	ней	ней	неё	ла	лась	ва	ая	моя	сама	FALSE	FALSE	TRUE
 оно,оно/его	Нейтральный род	TRUE	оно	его	ему	его	им	нём	ним	него	ло	лось	во	ое	моё	само	FALSE	FALSE	TRUE
