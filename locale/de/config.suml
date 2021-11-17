@@ -42,6 +42,9 @@ nouns:
     submit: true
     templates: true
 
+community:
+    route: 'kalender'
+
 inclusive:
     enabled: false
 
