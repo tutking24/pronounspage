@@ -1002,7 +1002,7 @@ links:
                 -
                     icon: 'ruler-triangle'
                     label: 'Długość'
-                    content: 'tekst max. 5000 znaków / rysunek na max. dwie strony'
+                    content: 'tekst max. ok. 5000 znaków bez spacji (ok. 1000 słów) / rysunek na max. dwie strony'
                 -
                     icon: 'file-check'
                     label: 'Format'
@@ -1020,6 +1020,7 @@ links:
                         - 'imię i nazwisko lub pseudonim – jakkolwiek chcesz być podpisanx; nie potrzebujemy znać {/terminologia#nekronim=nekronimu}'
                         - 'zaimki (plus opcjonalnie: link do wizytówki na zaimki.pl)'
                         - 'krótką notkę autorską w trzeciej osobie (max. 50 słów)'
+                        - 'ostrzeżenia o zawartości („content warning” / „trigger warning”), np. o opisach przemocy, transfobii, zażywaniu alkoholu, etc.'
                 -
                     icon: 'calendar'
                     label: 'Termin'
