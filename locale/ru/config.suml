@@ -32,99 +32,39 @@ pronouns:
                 examples:
                     - [ 'услышала звонок телефона', 'телефон зазвонил' ]
                     - [ 'я испугался внезапного шума', 'какой-то внезапный шум напугал меня' ]
-                    - [ 'ты должен сходить в магазин', 'тебе надо сходит' ]
+                    - [ 'ты должен сходить в магазин', 'тебе надо сходить в магазин' ]
             -
-                header: 'Strona bierna'
+                header: 'Страдательный залог'
                 normative: true
                 examples:
-                    - [ 'zgubił telefon', 'telefon został zgubiony' ]
-                    - [ 'znalazłam telefon', 'telefon został znaleziony' ]
+                    - [ 'я потерял мой телефон', 'мой телефон потерялся' ]
+                    - [ 'я нашла свой телефон', 'мой телефон нашелся' ]
             -
-                header: 'Forma bezosobowa'
+                header: 'Неопределённо-личные сказуемые'
                 normative: true
                 examples:
-                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
-                    - [ 'znalazłam telefon', 'znaleziono telefon' ]
-                    - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+                    - [ 'женщина в офисе мне сказала', 'в офисе мне сказали' ]
             -
-                header: 'Bezosobowe użycie 3. os. mnogiej'
+                header: 'Логическое подлежащее в дательном падеже'
                 normative: true
                 examples:
-                    - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedzieli mi' ]
+                    - [ 'я вспомнила', 'мне вспомнилось' ]
+                    - [ 'я замерзла', 'мне стало холодно' ]
+                    - [ 'я сделал', 'мне удалось сделать' ]
             -
-                header: 'Podmiot logiczny w celowniku'
+                header: 'Нейтральные существительные'
                 normative: true
                 examples:
-                    - [ 'przypomniałem sobie', 'przypomniało mi się' ]
-                    - [ 'zmarzłam', 'zrobiło mi się zimno' ]
-                    - [ 'zrobiłem', 'udało mi się zrobić' ]
+                    - [ 'просим Вас прийти в школу с мамой или папой', 'просим Вас прийти в школу с опекуном' ]
+                    - [ 'мама и папа Ани очень милые', 'родители Ани очень милые' ]
+                    - [ 'журналисты СМИ', 'редакция СМИ' ]
+                    - [ 'фанаты Марины', 'фандом Марины' ]
             -
-                header: 'Bezokolicznikowy czas przyszły'
+                header: 'Сокращения'
                 normative: true
                 examples:
-                    - [ 'będę robiła', 'będę robić' ]
-                    - [ 'będę jadł', 'będę jeść' ]
-            -
-                header: 'Czas teraźniejszy i przyszły zamiast przeszłego'
-                normative: true
-                examples:
-                    - [ 'gdy robiłem wczoraj obiad, skaleczyłem się nożem', 'robię wczoraj obiad i jak się nie skaleczę' ]
-            -
-                header: 'Imiesłowy'
-                examples:
-                    - [ 'usiadłem na kanapie', 'usiadłszy na kanapie' ]
-                    - [ 'wypiłam herbatę', 'wypiwszy herbatę' ]
-                    - [ 'posprzątałem mieszkanie', 'mieszkanie posprzątane' ]
-            -
-                header: 'Unikanie trybu przypuszczającego'
-                normative: true
-                examples:
-                    - [ 'czy mógłbyś mi pomóc?', 'czy możesz mi pomóc?' ]
-                    - [ 'może bym tak pojechała na wakacje?', 'może pojadę na wakacje?' ]
-            -
-                header: 'Osobatywy i inne normatywne neutralne rzeczowniki'
-                normative: true
-                examples:
-                    - [ 'zarządca', 'osoba zarządzająca' ]
-                    - [ 'kandydaci i kandydatki', 'osoby kandydujące' ]
-                    - [ 'proszę przyjść do szkoły z mamą lub tatą', 'proszę przyjść do szkoły z opiekunem' ]
-                    - [ 'mama i tata Ani są bardzo mili', 'rodzice Ani są bardzo mili' ]
-                    - [ 'dziennikarze oko.press', 'redakcja oko.press' ]
-                    - [ 'fani Mariny', 'fandom Mariny' ]
-            -
-                header: 'Skrócone zaimki'
-                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
-                examples:
-                    - [ 'to dla niego', 'to dlań' ]
-                    - [ 'mieszkam u niej', 'mieszkam uń' ]
-            -
-                header: 'Skrócone zaimki + strona bierna'
-                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
-                examples:
-                    - [ 'zrobiła', 'było przezeń zrobione' ]
-            -
-                header: 'Staropolska, rzeczownikowa odmiana przymiotników'
-                description: 'Choć historycznie formy te są męskie, to współcześnie są na tyle rzadko używanie, że warto próbować je reinterpretować.'
-                examples:
-                    - [ 'jestem szczęśliwa!', 'jestem szczęśliw!' ]
-                    - [ 'czemu jesteś taki zmartwiony?', 'czemu jesteś tak zmartwion?' ]
-            -
-                header: 'Wyrzutnia / elipsa'
-                normative: true
-                examples:
-                    - [ 'coś bym dziś porobiło', 'coś bym dziś' ]
-            -
-                header: 'Skróty'
-                normative: true
-                examples:
-                    - [ 'Katarzyna Nowak', 'K. Nowak' ]
-                    - [ 'Szanowny Pan Białek', 'Sz. P. Białek' ]
-                    - [ 'Towarzyszka Q', 'Tow. Q' ]
-            -
-                header: 'Liczebniki zbiorowe'
-                normative: true
-                examples:
-                    - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
+                    - [ 'Екатерина Новосельских', 'Е. Новосельских' ]
+                    - [ 'Иван Иванович Иванов', 'И. И. Иванов' ]
     others: 'Другие местоимения'
 
 pronunciation:
