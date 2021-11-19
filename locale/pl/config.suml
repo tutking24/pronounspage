@@ -476,9 +476,9 @@ links:
             extra: 'w której występuje postać niebinarna używająca {/onu=dukazimów}.'
         -
             icon: 'microphone-stand'
-            url: 'https://www.facebook.com/6kolorowgierwideo/posts/103383711611219'
-            headline: 'Wywiad z Olą Lubińską, tłumaczką gry „Bugsnax”'
-            extra: '– 6 kolorów gier wideo'
+            url: 'https://6kolorowgier.pl/od-poczatku-wiedzialam-ze-nie-chce-przepuszczac-flooftyenu-przez-magiel-ciswashingu-wywiad-z-ola-lubinska-tlumaczka-pierwszej-gry-wideo-z-dukaizmami/'
+            headline: '„Od początku wiedziałam, że nie chcę przepuszczać Floofty’enu przez magiel ciswashingu” – wywiad z Olą Lubińską, tłumaczką pierwszej gry wideo z dukaizmami'
+            extra: '– <strong>6 kolorów gier wideo</strong>'
             quote: >
                 Od początku wiedziałam, że nie chcę przepuszczać Floofty’enu przez magiel ciswashingu.
                 To jednak łatwiej było stwierdzić w teorii, niż zastosować w praktyce,
@@ -692,6 +692,16 @@ links:
                 jest na tyle duża, że jesteśmy w stanie stwierdzić, jak wielkie jest zapotrzebowanie
                 na niebinarną polszczyznę i przestrzeń do wyrażania siebie. Tak jak już wcześniej wspomniałośmy,
                 język to żywy twór, zmienia się, a my pomagamy to ustrukturyzować.
+        -
+            icon: 'newspaper'
+            url: 'https://6kolorowgier.pl/o-jenu-dukaizmy-w-tlumaczeniu/'
+            headline: 'O jenu! Dukaizmy w tłumaczeniu!'
+            extra: '– <strong>6 kolorów gier wideo</strong>'
+            quote: >
+                A co dalej? W którą stronę ten cały proces pójdzie? Pozostaje nam obserwować i szanować to,
+                jeżeli prawdziwa osoba bardziej odnajduje się w dukatywach, iksatywach, neutratywach, osobatywach,
+                liczbie mnogiej czy w dowolnych innych formach. Możemy tylko próbować zebrać i ustrukturyzować
+                pojawiające się propozycje, aż w końcu z tej “pierwotnej zupy” powstanie nowy uzus.
     mediaMentions:
         -
             icon: 'newspaper'
