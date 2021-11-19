@@ -10,6 +10,8 @@
             </tr>
             </thead>
             <tbody>
+            <tr><td colspan="4" class="text-center">TABLE DISABLED UNTIL THE CONFIG IS CORRECT</td></tr>
+            <!--
             <tr v-for="(description, pronoun) in t">
                 <th>
                     <nuxt-link :to="'/' + pronouns[pronoun].canonicalName">
@@ -41,6 +43,7 @@
                     jest ładn<strong>{{pronouns[pronoun].morphemes.adjective_n}}</strong>
                 </td>
             </tr>
+            -->
             </tbody>
         </table>
     </div>
