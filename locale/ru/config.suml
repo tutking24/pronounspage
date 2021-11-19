@@ -4,7 +4,7 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'местоимения'
+    route: 'pronouns'
     default: 'он'
     any: 'любые'
     plurals: true
@@ -19,23 +19,20 @@ pronouns:
     emoji: false
     slashes: false
     null:
-        description: '{/unikanie=Unikanie form nacechowanych płciowo}'
+        description: '{/avoiding=Избегание гендерных форм}'
         history: >
-            Niektóre osoby niebinarne preferują używanie form unikających precyzowania płci
-            zamiast tych nacechowanych czy to binarnie czy niebinarnie.
-            Warto też używać ich mówiąc o osobach, których płci nie znamy.
-            Choć w silnie zgenderyzowanym języku polskim jest to względnie trudne do zrobienia
-            i może lekko zmieniać znaczenie zdania,
-            to jednak wcale nie jest niemożliwe.
-        routes: ['unikanie']
+            Некоторые небинарные персоны предпочитают использовать формы, в которых не указывается гендер, вместо форм с гендерными окончаниями.
+            Также предпочтительно использовать такие формы, говоря о персонах, чьи местоимения неизвестны.
+            Так как в русском языке род играет важную роль, полностью избавится от гендерных окончаний довольно сложно, но не невозможно.
+        routes: ['avoiding']
         ideas:
             -
-                header: 'Zmiana podmiotu zdania'
+                header: 'Изменение субъекта предложения'
                 normative: true
                 examples:
-                    - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
-                    - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
-                    - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+                    - [ 'услышала звонок телефона', 'телефон зазвонил' ]
+                    - [ 'я испугался внезапного шума', 'какой-то внезапный шум напугал меня' ]
+                    - [ 'ты должен сходить в магазин', 'тебе надо сходит' ]
             -
                 header: 'Strona bierna'
                 normative: true
@@ -140,14 +137,14 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'источник'
+    route: 'sources'
     submit: true
     mergePronouns: {}
     extraTypes: []
 
 nouns:
     enabled: true
-    route: 'словарь'
+    route: 'dictionary'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -156,7 +153,7 @@ nouns:
     templates: true
 
 community:
-    route: 'календарь'
+    route: 'calendar'
 
 inclusive:
     enabled: false
@@ -168,13 +165,13 @@ terminology:
         - 'сексуальная ориентация'
         - 'романтическая ориентация'
         - 'третичная ориентация'
-        - 'гендер'
+        - 'гендерная идентичность'
         - 'гендерная экспрессия'
         - 'модель отношений'
         - 'язык'
         - 'влечение'
         - 'политические взгляды'
-    route: 'условия'
+    route: 'terminology	'
 
 names:
     enabled: false
@@ -284,14 +281,14 @@ english:
 
 faq:
     enabled: true
-    route: 'часто-задаваемые-вопросы'
+    route: 'faq'
 
 links:
     enabled: true
     split: true
-    route: 'ссылки'
-    blogRoute: 'блог'
-    academicRoute: 'nauka'
+    route: 'links'
+    blogRoute: 'blog'
+    academicRoute: 'science'
     mediaRoute: 'media'
 
     blog: false
@@ -318,7 +315,7 @@ links:
 
 contact:
     enabled: true
-    route: 'связаться с нами'
+    route: 'contact'
     contacts:
         -
             icon: 'envelope'
@@ -326,7 +323,7 @@ contact:
             headline: 'contact@pronouns.page'
     team:
         enabled: true
-        route: 'команда'
+        route: 'team'
 
 support:
     enabled: true
@@ -334,23 +331,23 @@ support:
 
 user:
     enabled: true
-    route: 'аккаунт'
-    termsRoute: 'условия'
+    route: 'account'
+    termsRoute: 'terms'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[без почтительного обращения]', 'обращение на ты', 'обращение на вы', 'господин', 'госпожа', 'госпожне', 'микс', 'мистер', 'мисс/миссис']
-        - ['человек', 'персона', 'мужчина', 'женщина', 'дева', 'леди', 'чувак', 'чувиха', 'мальчик', 'парень', 'юноша', 'девочка', 'девушка', 'приятель', 'приятельница', 'товарищ', 'товарка', 'чел', 'бро', 'сис', 'сиб']
-        - ['милы_е', 'привлекательны_е', 'красив_ые', 'симпатичны_е', 'горячи_е', 'сексуальны_е', 'феминитивы', 'маскулятивы', 'нейтралятивы']
-        - ['друг', 'подруга', 'партнер', 'партнерка', 'парень', 'молодой человек', 'девушка', 'муж', 'жена', 'дорог_ие', 'любимы_е']
+        - ['[без почтительного обращения]', 'обращение на ты', 'обращение на Вы', 'господин', 'госпожа', 'госпожне', 'микс', 'мистер', 'мисс/миссис']
+        - ['человек', 'персона', 'мужчина', 'женщина', 'дева', 'леди', 'чувак/чувиха', 'мальчик', 'парень', 'юноша', 'девочка', 'девушка', 'приятель/приятельница', 'товарищ/товарка', 'чел', 'бро', 'сис', 'сиб']
+        - ['феминитивы', 'маскулятивы', 'нейтралитивы', 'милы_е', 'привлекательны_е', 'красив_ые', 'симпатичны_е', 'горячи_е', 'сексуальны_е', 'дорогие	']
+        - ['друг', 'подруга', 'партнер', 'партнерка', 'парень', 'молодой человек', 'девушка', 'муж', 'жена', 'возлюбленн_ые']
     flags:
         defaultPronoun: 'он_'
 
 calendar:
     enabled: true
-    route: 'календарь'
+    route: 'calendar'
 
 census:
     enabled: false
