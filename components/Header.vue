@@ -229,6 +229,7 @@
                         this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
                         this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
                         this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
+                        '/' + this.config.contact.team.route,
                     ];
 
                     if (this.config.community) {
@@ -255,7 +256,6 @@
                         link: '/' + this.config.contact.route,
                         icon: 'comment-alt-smile',
                         text: this.$t('contact.header'),
-                        extra: ['/' + this.config.contact.team.route],
                     });
                 }
 

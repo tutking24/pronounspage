@@ -153,7 +153,7 @@ nouns:
     templates: true
 
 community:
-    route: 'calendar'
+    route: 'terminology'
 
 inclusive:
     enabled: false
@@ -171,7 +171,7 @@ terminology:
         - 'язык'
         - 'влечение'
         - 'политические взгляды'
-    route: 'terminology	'
+    route: 'terminology'
 
 names:
     enabled: false
@@ -180,7 +180,7 @@ people:
     enabled: false
 
 english:
-    enabled: false
+    enabled: true
     route: 'english'
     pronounGroups:
         -
