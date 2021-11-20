@@ -33,11 +33,11 @@ export class CacheObject {
 }
 
 export const caches = {
-    admins: new CacheObject('main', 'admins.js', 10),
-    adminsFooter: new CacheObject('main', 'footer.js', 10),
+    admins: new CacheObject('main', 'admins.js', 24 * 60),
+    adminsFooter: new CacheObject('main', 'footer.js', 24 * 60),
     blog: new CacheObject('main', 'blog.js', Infinity),
-    nouns: new CacheObject('main', 'nouns.js', 10),
-    terms: new CacheObject('main', 'terms.js', 10),
-    inclusive: new CacheObject('main', 'inclusive.js', 10),
-    names: new CacheObject('main', 'names.js', 10),
+    nouns: new CacheObject('main', 'nouns.js', 24 * 60),
+    terms: new CacheObject('main', 'terms.js', 24 * 60),
+    inclusive: new CacheObject('main', 'inclusive.js', 24 * 60),
+    names: new CacheObject('main', 'names.js', 24 * 60),
 }
