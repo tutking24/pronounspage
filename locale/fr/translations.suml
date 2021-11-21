@@ -170,6 +170,10 @@ nouns:
 
     image: 'Photo'
 
+community:
+    header: 'Communauté'
+    headerLong: 'Communauté queer'
+
 terminology:
     header: 'Terminologie'
     headerLong: 'Dictionnaire des terminologies queer'
