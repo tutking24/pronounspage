@@ -2,7 +2,7 @@
     <section>
         <h2 class="h4">
             <Icon v="spell-check"/>
-            Odmiana:
+            Словоизменение:
         </h2>
 
         <div class="table-responsive">
