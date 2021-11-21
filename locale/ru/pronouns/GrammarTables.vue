@@ -9,22 +9,22 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Mianownik</th>
-                    <th>Dopełniacz</th>
-                    <th>Celownik</th>
-                    <th>Biernik</th>
-                    <th>Narzędnik</th>
-                    <th>Miejscownik</th>
+                    <th>именительный</th>
+                    <th>родительный</th>
+                    <th>дательный</th>
+                    <th>винительный</th>
+                    <th>творительный</th>
+                    <th>предложный</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_i" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_l" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="nominative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="genitive" :counter="counter"/></td> / <td><Morpheme :pronoun="selectedPronoun" morpheme="genitive_with_preposition" :counter="counter"/>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="dative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="accusative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="instrumental" :counter="counter"/></td> / <td><Morpheme :pronoun="selectedPronoun" morpheme="instrumental_with_preposition" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="prepositional" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
@@ -34,30 +34,22 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>1 os.</th>
-                    <th>2 os.</th>
-                    <th>3 os.</th>
-                    <th>Przymiotniki</th>
+                    <th>Nonreflexive verb past</th>
+                    <th>Reflexive verb past</th>
+                    <th>Short adjective</th>
+                    <th>Adjective</th>
+                    <th>Possessive</th>
+                    <th>Definitive</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>
-                        <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
-                                  prepend="–"
-                                  :append="selectedPronoun.isPlural(counter) ? 'śmy' : 'm'"
-                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕmɨ' : 'm'"
-                        />
-                    </td>
-                    <td>
-                        <Morpheme :pronoun="selectedPronoun" morpheme="verb_middle_inter" :counter="counter"
-                                  prepend="–"
-                                  :append="selectedPronoun.isPlural(counter) ? 'ście' : 'ś'"
-                                  :appendPr="selectedPronoun.isPlural(counter) ? 'ɕʨ̑ɛ' : 'ɕ'"
-                        />
-                    </td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="verb_end_about" :counter="counter" prepend="–"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="adjective_n" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="nonreflexive_verb_past" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive_verb_past" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="short_adjective" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="adjective" :counter="counter" prepend="–"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="definitive" :counter="counter"/></td>                    
                 </tr>
                 </tbody>
             </table>
