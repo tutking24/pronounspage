@@ -1,13 +1,13 @@
 singular	plural	isHonorific
 Я слышал, что {nominative} замечательно танцует	Я слышал, что {nominative} замечательно танцуют	FALSE
 Я {genitive} сегодня ещё не видела	Я {genitive} сегодня ещё не видела	FALSE
-Дай {dative} время.	Дай {dative} время	FALSE
+Дай {dative} время	Дай {dative} время	FALSE
 Не нужно {accusative} осуждать	Не нужно {accusative} осуждать	FALSE
 Я горжусь {instrumental}	Я горжусь {instrumental}	FALSE
 Расскажи мне о {prepositional}	Расскажи мне о {prepositional}	FALSE
 Тебе стоит познакомиться с {instrumental_with_preposition}	Тебе стоит познакомиться с {instrimental_with_preposition}	FALSE
 У {genitive_with_preposition} есть кот	У {genitive_with_preposition} есть кот	FALSE
-{nominative} очень талантли{short_adjective}	{nominative} очень талантли{short_adjective}	FALSE
-{nominative} замечательн{adjective}	{nominative} замечательн{adjective}	FALSE
-{possessive} знаком{adjective} умеет играть на гитаре	{possessive} знаком{adjective} умеют играть на гитаре	FALSE
-{nominative} сделает это {definitive}	{nominative} сделают это {definitive}	FALSE
+{'nominative} очень талантли{short_adjective}	{'nominative} очень талантли{short_adjective}	FALSE
+{'nominative} замечательн{adjective}	{'nominative} замечательн{adjective}	FALSE
+{'possessive} знаком{adjective} умеет играть на гитаре	{'possessive} знаком{adjective} умеют играть на гитаре	FALSE
+{'nominative} сделает это {definitive}	{'nominative} сделают это {definitive}	FALSE
