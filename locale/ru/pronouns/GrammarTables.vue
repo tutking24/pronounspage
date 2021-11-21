@@ -20,10 +20,10 @@
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="nominative" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="genitive" :counter="counter"/></td> / <td><Morpheme :pronoun="selectedPronoun" morpheme="genitive_with_preposition" :counter="counter"/>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="genitive" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="genitive_with_preposition" :counter="counter"/>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="dative" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="accusative" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="instrumental" :counter="counter"/></td> / <td><Morpheme :pronoun="selectedPronoun" morpheme="instrumental_with_preposition" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="instrumental" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="instrumental_with_preposition" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="prepositional" :counter="counter"/></td>
                 </tr>
                 </tbody>
