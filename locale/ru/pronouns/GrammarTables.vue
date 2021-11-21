@@ -34,12 +34,12 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Nonreflexive verb past</th>
-                    <th>Reflexive verb past</th>
-                    <th>Short adjective</th>
-                    <th>Adjective</th>
-                    <th>Possessive</th>
-                    <th>Definitive</th>
+                    <th>Окончание невозвратных глаголов в пр. в.</th>
+                    <th>Окончание возвратных глаголов в пр. в.</th>
+                    <th>Окончание кратких прилагательные</th>
+                    <th>Окончание прилагательные</th>
+                    <th>Притяжательное местоимение</th>
+                    <th>Определительное местоимение</th>
                 </tr>
                 </thead>
                 <tbody>
