@@ -53,7 +53,7 @@ module.exports = [
     new Event('{https://en.wikipedia.org/wiki/Matthew_Shepard=Matthew Shepard} Day of Remembrance', null, 10, day(12), EventLevel.Day),
     new Event('{/terminology#transgender=Trans-}, {/terminology#travesti=Travesti} and {{/terminology#nonbinary=Non-Binary} Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'nonbinary', 'travesti']),
     new Event('Missing and Murdered Indigenous Women, Girls, and {/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
-    
+    new Event('Gender Expansive Parents'' Day (US)', null, 12, day(6), EventLevel.Day,
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
