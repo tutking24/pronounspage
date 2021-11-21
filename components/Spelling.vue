@@ -1,12 +1,6 @@
 <script>
     import spelling from "../plugins/spelling";
-
-    const escapeChars = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;'
-    };
+    import { escapeHtml } from '../src/helpers';
 
     export default {
         mixins: [ spelling ],
@@ -18,7 +12,7 @@
             let text = this.text || '';
             text = text.replace('<script', '');
             if (this.escape) {
-                text = text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
+                text = escapeHtml(text);
             }
 
             return h('span', {domProps: { innerHTML: this.handleSpelling(text) }});

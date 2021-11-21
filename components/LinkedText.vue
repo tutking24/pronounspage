@@ -1,6 +1,7 @@
 <script>
     import Icon from './Icon';
     import spelling from "../plugins/spelling";
+    import { escapeHtml } from '../src/helpers';
 
     export default {
         mixins: [ spelling ],
@@ -12,7 +13,7 @@
         render(h) {
             let text = this.text;
             if (this.escape) {
-                text = text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
+                text = escapeHtml(text);
             }
             if (!this.text) {
                 return h('span');
