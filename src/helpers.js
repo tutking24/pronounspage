@@ -223,3 +223,12 @@ export const clearKey = (key) => {
 export const sleep = (milliseconds) => {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
+
+const escapeChars = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;'
+};
+
+export const escapeHtml = (text) => text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
