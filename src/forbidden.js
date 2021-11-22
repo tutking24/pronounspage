@@ -16,6 +16,7 @@ export default [
     'misinformation',
     'sharing of someone else\'s personal data',
     'spam',
+    'trolling',
     'advertisement',
     'copyright or trademark violations',
 ];
