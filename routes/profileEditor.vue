@@ -173,7 +173,7 @@
                 </p>
                 <div class="input-group mb-3">
                     <input type="date" class="form-control form-control-sm" v-model="birthday"/>
-                    <button class="btn btn-outline-danger btn-sm" type="button" v-if="birthday !== null" @click="birthday = null">
+                    <button type="button" class="btn btn-outline-danger btn-sm" v-if="birthday !== null" @click="birthday = null">
                         <Icon v="times"/>
                     </button>
                 </div>
@@ -185,7 +185,7 @@
                         <Icon v="scroll-old"/>
                         <T>profile.words</T>
                     </h3>
-                    <button class="btn btn-outline-warning btn-sm" @click.prevent="resetWords">
+                    <button type="button" class="btn btn-outline-warning btn-sm" @click.prevent="resetWords">
                         <T>profile.editor.defaults</T>
                     </button>
                 </div>
