@@ -13,9 +13,10 @@ const router = Router();
 router.get('/admin/list', handleErrorAsync(async (req, res) => {
     return res.json(await caches.admins.fetch(async () => {
         const admins = await req.db.all(SQL`
-            SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource, p.credentials, p.credentialsLevel, p.credentialsName
+            SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource, p.credentials, p.credentialsLevel, p.credentialsName, a.payload
             FROM users u
-                     LEFT JOIN profiles p ON p.userId = u.id
+                LEFT JOIN profiles p ON p.userId = u.id
+                LEFT JOIN authenticators a ON u.id = a.userId AND a.type = u.avatarSource AND (a.validUntil IS NULL OR a.validUntil > ${now()}) 
             WHERE p.teamName IS NOT NULL
               AND p.teamName != ''
             ORDER BY RANDOM()
@@ -34,6 +35,7 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
             admin.avatar = await avatar(req.db, admin);
             delete admin.id;
             delete admin.email;
+            delete admin.payload;
             if (admin.credentials) {
                 admin.credentials = admin.credentials.split('|');
             }
