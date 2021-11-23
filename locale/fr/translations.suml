@@ -447,7 +447,7 @@ profile:
     editor:
         header: 'Éditeur de carte'
         save: 'Sauvegarder votre carte'
-        defaults: 'Restore defaults' # TODO
+        defaults: 'Restaurer les valeurs par défaut'
     opinion:
         yes: 'Oui'
         jokingly: 'Pour plaisanter'
@@ -761,10 +761,10 @@ calendar:
         aids_awareness_month: 'Mois de sensibilité à l''épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
     banner: 'Nous célébrons '
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    celebrating_custom: 'is celebrated' # TODO
+    celebrating_day: 'is celebrated on' # TODO
+    celebrating_week: 'is celebrated on' # TODO
+    celebrating_month: 'is celebrated in' # TODO
     image:
         header: 'Télécharger l''image'
         overview: 'Vue générale'
