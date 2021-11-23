@@ -176,6 +176,9 @@ const reloadUser = async (req, res, next) => {
         return;
     }
 
+    console.log('reloadUser');
+    await req.db.get(SQL`UPDATE users SET lastActive = ${+new Date} WHERE id = ${req.user.id}`);
+
     if (req.user.username !== dbUser.username
         || req.user.email !== dbUser.email
         || req.user.roles !== dbUser.roles
