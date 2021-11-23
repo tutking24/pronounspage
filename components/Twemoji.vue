@@ -1,5 +1,12 @@
 <template>
     <span>
+        <slot ref="source"></slot>
+    </span>
+</template>
+
+<!--
+<template>
+    <span>
         <span ref="source" v-show="false">
             <slot ref="source"></slot>
         </span>
@@ -37,3 +44,4 @@ export default {
     height: 1em;
 }
 </style>
+-->
