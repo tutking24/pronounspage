@@ -117,7 +117,7 @@
                     <Icon v="comment-edit"/>
                     <T>profile.description</T>
                 </h3>
-                <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="4"/>
+                <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
             </section>
 
             <section class="form-group">
