@@ -1,5 +1,5 @@
 <template>
-    <div v-if="config.profile.editorEnabled">
+    <div v-if="config.profile.editorEnabled && $user() && $user().username !== user.username">
         <section v-if="$user()">
             <a v-if="!showReportForm" href="#" @click.prevent="showReportForm = true" class="small">
                 <Icon v="spider"/>
