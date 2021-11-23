@@ -1219,7 +1219,7 @@ profile:
     pronouns: 'Zaimki'
     pronounsInfo: >
         Możesz tu wpisać <strong>zaimek</strong> (np. „onu”, „on/jego”) lub wkleić <strong>linka</strong> do niego (np. „https://zaimki.pl/ona/ich”).
-        Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.'
+        Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.
     pronounsNotFound: 'Niepoprawny format. Szczegóły w instrukcji powyżej'
     words: 'Słowa'
     birthday: 'Wiek'

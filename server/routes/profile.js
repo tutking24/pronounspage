@@ -5,6 +5,7 @@ import {ulid} from "ulid";
 import avatar from "../avatar";
 import {handleErrorAsync} from "../../src/helpers";
 import { caches }  from "../../src/cache";
+import fs from 'fs';
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -57,49 +58,17 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
     return p;
 };
 
+const susRegexes = fs.readFileSync(__dirname + '/../../sus.txt').toString('utf-8').split('\n').filter(x => !!x);
+
 function* isSuspicious(profile) {
-    const description = profile.description.toLowerCase();
-    const flags = JSON.stringify(profile.customFlags).toLowerCase();
-    const pronouns = JSON.stringify(profile.pronouns).toLowerCase();
-
-    if (description.includes('superstr') || description.includes('superhet') || description.includes('super-') ||
-        flags.includes('superstr') || flags.includes('superhet') || flags.includes('super-')
-    ) {
-        yield 'Superstraight';
-    }
-
-    if (description.includes('phobe') || description.includes('phobic') ||
-        flags.includes('phobe') || flags.includes('phobic')
-    ) {
-        yield '-phobic';
-    }
-
-    if (description.includes('terf') || description.includes('radfem') || description.includes('gender critical') ||
-        flags.includes('terf') || flags.includes('radfem') || flags.includes('gender critical')
-    ) {
-        yield 'TERF';
-    }
-
-    if (description.includes('helicopter') ||
-        flags.includes('helicopter') ||
-        pronouns.includes('helicopter')
-    ) {
-        yield 'Helicopter';
-    }
-
-    if (pronouns.includes('nor/mal')
-    ) {
-        yield 'nor/mal';
-    }
-
-    if (description.includes('pedophile') ||
-        flags.includes('pedophile') ||
-        description.includes('lolicon') ||
-        flags.includes('lolicon') ||
-        profile.description.match(/\bMAP\b/) ||
-        JSON.stringify(profile.customFlags).match(/\bMAP\b/)
-    ) {
-        yield 'Pedophile';
+    for (let s of [profile.description, JSON.stringify(profile.customFlags), JSON.stringify(profile.pronouns), JSON.stringify(profile.words)]) {
+        s = s.toLowerCase().replace(/\s+/g, ' ');
+        for (let sus of susRegexes) {
+            let m = s.match(new RegExp(sus, 'ig'));
+            if (m) {
+                yield `${m[0]} (${sus})`;
+            }
+        }
     }
 }
 
