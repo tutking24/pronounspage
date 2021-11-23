@@ -10,4 +10,5 @@ singular	plural	isHonorific
 {'nominative} очень талантли{short_adjective}	{'nominative} очень талантли{short_adjective}	FALSE
 {'nominative} замечательн{adjective}	{'nominative} замечательн{adjective}	FALSE
 {'possessive} знаком{adjective} умеет играть на гитаре	{'possessive} знаком{adjective} умеют играть на гитаре	FALSE
+{'nominative} устрои{reflexive_verb_past} на работу	{'nominative} устрои{reflexive_verb_past} на работу	FALSE
 {'nominative} сделает это {definitive}	{'nominative} сделают это {definitive}	FALSE
