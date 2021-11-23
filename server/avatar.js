@@ -7,6 +7,9 @@ export default async (db, user) => {
     } else if (user.avatarSource === 'gravatar') {
         return gravatar(user);
     } else if (user.avatarSource) {
+        if (user.payload) {
+            return JSON.parse(user.payload).avatar;
+        }
         const auth = await db.get(SQL`
             SELECT payload FROM authenticators
             WHERE type = ${user.avatarSource}
