@@ -148,18 +148,6 @@ community:
         images: 'フラグのカタログの外から追加画像'
         definition: '意味'
 
-terminology:
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
-    info:
-        - >
-            A dictionary of terms related to the LGBTQ+ community.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
-
 faq:
     header: 'FAQ'
     headerLong: 'よくある質問'
@@ -498,7 +486,7 @@ confirm:
 terms:
     header: '利用規約'
     lastUpdate: '最近更新'
-    consent: '登録するもって、{/terms=利用規約}に同意する。'
+    consent: '登録するもって、{/利用規約=利用規約}に同意する。'
 
 admin:
     header: '管理パネル'
@@ -555,7 +543,7 @@ ban:
     confirm: '@%username%を禁止してもよろしいですか？'
     header: 'あなたを禁止しました。 誰もはあなたのプロファイルを見えません。'
     banned: '禁止しました'
-    termsIntro: '私達の{/terms=利用規約}に従って：'
+    termsIntro: '私達の{/利用規約=利用規約}に従って：'
 
 report:
     action: '虐待の報告'
@@ -690,7 +678,7 @@ calendar:
         pride_month: '{/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
+        agender_day: '{/terminology#agender=Agender} Pride Day'
         asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
         drag_day: '{/terminology#drag=Drag} Day'
