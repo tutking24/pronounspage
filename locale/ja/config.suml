@@ -4,7 +4,7 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns' # TODO
+    route: '三人称代名詞'
     default: '彼'
     any: 'いずれ'
     plurals: true
@@ -46,7 +46,7 @@ inclusive:
     enabled: false
 
 terminology:
-    enabled: true
+    enabled: false
     categories:
         - '性的指向'
         - 'ロマンティック・オリエンテーション'
