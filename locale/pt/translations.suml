@@ -449,7 +449,7 @@ profile:
     editor:
         header: 'Editor de cartões'
         save: 'Salve o cartão'
-        defaults: 'Restore defaults' # TODO
+        defaults: 'Restaurar valores padrão'
     opinion:
         yes: 'Sim'
         jokingly: 'É brincadeira'
