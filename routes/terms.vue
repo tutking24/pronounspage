@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T>: 2021-11-22</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T>: 2021-11-24</em></p>
 
         <p>
             These Terms of Service govern your access to and use of the Service provided on the website
@@ -30,6 +30,10 @@
         <p>
             We may terminate or suspend your account immediately, without prior notice or liability,
             for any reason whatsoever, including without limitation if you breach the Terms.
+        </p>
+
+        <p>
+            Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
         </p>
 
         <h3>Content</h3>
