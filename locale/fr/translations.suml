@@ -761,10 +761,10 @@ calendar:
         aids_awareness_month: 'Mois de sensibilité à l''épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
     banner: 'Nous célébrons '
-    celebrating_custom: 'is celebrated' # TODO
-    celebrating_day: 'is celebrated on' # TODO
-    celebrating_week: 'is celebrated on' # TODO
-    celebrating_month: 'is celebrated in' # TODO
+    celebrating_custom: 'est célébrée' # TODO
+    celebrating_day: 'est fêté le' # TODO
+    celebrating_week: 'est fêté le' # TODO
+    celebrating_month: 'est célébrée en' # TODO
     image:
         header: 'Télécharger l''image'
         overview: 'Vue générale'
