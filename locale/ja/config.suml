@@ -1,138 +1,63 @@
-locale: 'en'
+locale: 'ja'
 
 header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns'
-    default: 'he'
-    any: 'any'
+    route: 'pronouns' # TODO
+    default: '彼'
+    any: 'いずれ'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: '交換可能な三人称代名詞'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
-    null:
-        description: >
-            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
-            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
-        history: >
-            Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence.
-            See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-        routes: ['avoiding', 'no-pronouns', 'null', 'pronounless', 'nullpronominal', 'nameself']
-        ideas:
-            -
-                header: 'Use names or initials instead of pronouns'
-                normative: true
-                examples:
-                    - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
-                    - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
-                    -
-                        - 'Her graduation starts soon'
-                        - '{/:J=J}''s graduation starts soon'
-            -
-                header: 'Passive voice'
-                normative: true
-                examples:
-                    - ['He answered the phone', 'The phone was answered']
-                    -
-                        - 'Wen takes good care of her cat'
-                        - 'Wen''s cat is well cared for'
-            -
-                header: 'Rephrasing the sentence (circumlocution)'
-                normative: true
-                examples:
-                    - ['Lior did it all by himself', 'Lior did it all without any help']
-                    - ['Gael talks in his sleep', 'Gael talks while sleeping']
-            -
-                header: 'Replacing a pronoun with a descriptive noun or phrase'
-                normative: true
-                examples:
-                    - ['She landed the plane safely', 'The pilot landed the plane safely']
-                    - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
-                    - ['She argues that…', 'The person who started this discussion argues that…']
-            -
-                header: 'Dropping pronouns'
-                normative: true
-                examples:
-                    - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
-                    - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
-    emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
-        morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+            多くのXジェンダー人々は２以上の三人称代名詞を交換可能に使って、
+            どれもと呼ばれるが好きです。
+            他人が自分のついて話しているとき、三人称代名詞形式の間で交互になることが好きな一部もいます。
+        examples: ['彼&彼女', '彼&あの人', '彼女&あの人']
+    null: false
+    emoji: false
     slashes: true
-    others: 'Other pronouns'
+    avoiding: false
+    others: '他の三人称代名詞'
 
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+        JA:
+            language: 'ja-JP'
+            voice: 'Mizuki'
+            engine: 'standard'
 
 sources:
     enabled: true
-    route: 'sources'
+    route: '出所'
     submit: true
-    mergePronouns:
-        they/them/themself: 'they'
-    extraTypes: ['avoiding', 'nounself']
+    mergePronouns: {}
 
 nouns:
-    enabled: true
-    route: 'dictionary'
-    collapsable: false
-    plurals: true
-    pluralsRequired: false
-    declension: false
-    submit: true
-    templates: true
+    enabled: false
 
 community:
-    route: 'terminology'
+    route: 'カレンダー'
 
 inclusive:
     enabled: false
 
 terminology:
     enabled: true
-    published: true
     categories:
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
-        - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
-
-    route: 'terminology'
+        - '性的指向'
+        - 'ロマンティック・オリエンテーション'
+        - '非性的非恋愛的指向'
+        - 'ジェンダー'
+        - 'ジェンダー表現'
+        - '人間関係のタイプ'
+        - '言語'
+        - '魅力のタイプ'
+        - '政治'
+    route: '用語'
 
 names:
     enabled: false
@@ -149,88 +74,20 @@ faq:
 
 links:
     enabled: true
-    split: false
-    route: 'links'
-    blogRoute: 'blog'
+    route: 'リンク'
+    blogRoute: 'ブログ'
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
+            extra: 'からのインスピレーションを受けた。'
         -
             icon: 'chart-pie'
             url: 'https://gendercensus.com/'
-            headline: 'Gender Census'
-            extra: '– annual survey about the language used by nonbinary people'
-        -
-            icon: 'comment-alt-edit'
-            url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
-            headline: 'Why all cis allies should have pronouns in their bio'
-        -
-            icon: 'book-open'
-            url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
-            headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/style-grammar-guidelines/grammar/singular-they'
-            headline: 'Style and grammar guidelines regarding singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'book-open'
-            url: 'https://apastyle.apa.org/blog/singular-they'
-            headline: 'Welcome, singular “they”'
-            extra: '– American Psychological Association'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2015-word-of-the-year-is-singular-they'
-            headline: '2015 Word of the Year is singular “they”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'trophy'
-            url: 'https://www.americandialect.org/2019-word-of-the-year-is-my-pronouns-word-of-the-decade-is-singular-they'
-            headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
-            extra: '– American Dialect Society'
-        -
-            icon: 'play-circle'
-            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
-            headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
-            extra: '– Tom Scott'
-        -
-            icon: 'book-open'
-            url: 'https://blogs.illinois.edu/view/25/677177'
-            headline: 'A Brief History of Singular “they”'
-            extra: '– Dennis Baron'
-        -
-            icon: 'wikipedia-w'
-            iconSet: 'b'
-            url: 'https://lgbta.wikia.org/wiki/Neopronouns'
-            headline: 'LGBTA Wiki on Neopronouns'
-        -
-            icon: 'book-open'
-            url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
-            headline: 'Academic papers on neopronouns'
-        -
-            icon: 'newspaper'
-            url: 'https://www.nytimes.com/2020/01/21/books/review/whats-your-pronoun-dennis-baron.html'
-            headline: 'English’s Pronoun Problem Is Centuries Old'
-            extra: '– The New York Times'
-        -
-            icon: 'user-edit'
-            url: 'http://faculty.las.illinois.edu/debaron/'
-            headline: 'Dennis Baron'
-            extra: '– author of “What''s your pronoun?”, has been researching gender-neutrality for some 40 years now'
-        -
-            icon: 'book-open'
-            url: 'https://ojs.lib.uwo.ca/index.php/wpl_clw/article/download/966/456'
-            headline: 'Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German'
-            extra: '– Levi C. R. Hord'
-        -
-            icon: 'twitch'
-            iconSet: 'b'
-            url: 'https://pronouns.alejo.io/'
-            headline: 'Display pronouns in Twitch Chat'
-    academic: []
+            headline: 'ジェンダー調査（ジェンダーセンサス）'
+            extra: '– 中性的な言葉とXジェンダー用語についての年次調査。'
+
     mediaGuests: []
     mediaMentions: []
 
@@ -240,38 +97,15 @@ links:
             iconSet: 'b'
             url: 'https://twitter.com/PronounsPage'
             headline: '@PronounsPage'
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/CalendarQueer'
-            headline: '@CalendarQueer'
-    recommended:
-        -
-            icon: 'cogs'
-            url: 'https://omg.lol/'
-            headline: 'OMG.LOL'
-            extra: ' – domain name provider that uses Pronouns.Page API in user profiles'
-        -
-            icon: 'cogs'
-            url: 'https://oengus.io/'
-            headline: 'Oengus.io'
-            extra: ' – uses Pronouns.Page API in user profiles'
-        -
-            icon: 'cogs'
-            url: 'https://github.com/eramdam/BetterTweetDeck/releases/tag/4.5.2'
-            headline: 'BetterTweetDeck'
-            extra: ' – a TweetDeck extension that, among other things, displays user''s pronouns more prominently, with the help of our API'
-        -
-            icon: 'cogs'
-            url: 'https://github.com/katacarbix/pronouns.js'
-            headline: 'pronouns.js'
-            extra: ' – a JavaScript library for parsing pronouns'
+    recommended: []
 
-    blog: true
+zine:
+    enabled: false
+    route: 'zine'
 
 contact:
     enabled: true
-    route: 'contact'
+    route: '連絡先'
     contacts:
         -
             icon: 'envelope'
@@ -279,7 +113,9 @@ contact:
             headline: 'contact@pronouns.page'
     team:
         enabled: true
-        route: 'team'
+        route: 'チーム'
+    blog:
+        creating-new-language-version: 'どうやって新しい言語版のPronouns.Pageを作る'
 
 support:
     enabled: true
@@ -287,60 +123,27 @@ support:
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'terms'
+    route: 'アカウント'
+    termsRoute: '利用規約'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['[タメ口でお願いします]', 'さん', 'くん', 'ちゃん', 'ぼう', 'さま', '先輩/後輩', '卿', '夫人']
+        - ['人', '男/男の人', '女/女の人', '男の子', '女の子', '仲間', '友人', '友達', '同生', '兄/弟', '姉/妹']
+        - ['きれい', 'かっこいい', 'かわいい', '立派', 'イケメン', '美しい', 'セクシー', 'エロい']
+        - ['友達', '伴侶', '相手' '彼氏', '彼女', '恋人', '夫', 'つま', 'ダーリン','ハニー']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'あの人'
 
 calendar:
     enabled: true
-    route: 'calendar'
+    route: 'カレンダー'
 
 census:
     enabled: false
 
-redirects:
-    - { from: '^/blog/neutral-language-council$', to: '/team' }
+redirects: []
 
-api:
-    examples:
-        pronouns_all: ['/api/pronouns']
-        pronouns_one:
-            - '/api/pronouns/she/her'
-            - '/api/pronouns/she/her?examples[]=Did%20you%20ask%20%7Bpronoun_object%7D%20to%20join%20us%3F'
-        pronouns_banner: ['/api/banner/they.png']
-
-        sources_all: ['/api/sources']
-        sources_one: ['/api/sources/01ERQRCV0V4QVMNKCENF724A08']
-
-        nouns_all: ['/api/nouns']
-        nouns_search: ['/api/nouns/search/person']
-
-        inclusive_all: ['/api/inclusive']
-        inclusive_search: ['/api/inclusive/search/retard']
-
-        terms_all: ['/api/terms']
-        terms_search: ['/api/terms/search/agender']
-
-        profile_get: ['/api/profile/get/andrea']
+api: ~

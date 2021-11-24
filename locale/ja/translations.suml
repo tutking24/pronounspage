@@ -1,294 +1,245 @@
 title: 'Pronouns.page'
-domain: 'en.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+domain: 'ja.pronouns.page'
+description: '三人称代名詞とジェンダーニュートラル言葉の使用例。'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    link: 'ホーム'
+    header: '三人称代名詞'
+    headerLong: '三人称代名詞のリスト'
+    welcome: 'Pronouns.pageへようこそ！'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+        Xジェンダー言葉とジェンダーニュートラル言葉について情報源として作成されました。
+    why: '三人称代名詞とはなんですか？'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            皆さんは三人称代名詞があります。誰かについて話すのことによく名前の代わり言葉です。
+            ほとんどの人々が「{/彼=“彼”}」か「{/彼女=“彼女”}」かを使うので、外観に基づいて見積もるのは一般的です。
+            でも、本当にほど簡単ではありません...
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            ジェンダーは複雑ですよ。人々は必ずしも彼らのジェンダーに似ていません。
+            一部の人々はあなたが仮定するもの異なるに呼び方をしたい。
+            一部の人々のためは、ラベルの「男性」または「女性」を適しませんが、ジェンダーニュートラル言葉のほうに好きです。
+
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            このツールにはリンクのあなたの三人称代名詞をシェアすることができます。もっと、さらに、例文がありますので、
+            あなたがどのように呼ばれたいことが見せれます。
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            「どうして、これは大切ですか？」お互い人間の尊重。
+            あなたは「桜」という名前のほうが好きだからといって、「桜の名前は彼女に似合います」というだからといって、楓さんを「桜さん」と呼ばないでしょう。
+            楓さんと呼ばれるのが好きで、「桜さん」と呼ばれるのが嫌いですけど、出生証明書に「桜さん」と書かれていても、「桜さん」と呼ばないでしょうよ。
+            三人称代名詞も絶対に同じです。
+            失礼したくないとすれば、正しい三人称代名詞を使用するが必要があります。
+            多く、人々の名前は知っていますけど、人々の三人称代名詞を知らません。
+            自己紹介で私達の名前は言いますけど、三人称代名詞は言いません。始めますよ！
+    pronouns: 'ありきたりの三人称代名詞のリスト'
     generator:
-        header: 'Generator'
+        header: 'ジェネレータ'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            このツールは文で空白を書き込めって、他人にシェアできるリンクが作ります。
+        button: 'ジェネレータを見せる'
+        header2: 'リンクを生成する'
+        base: '基づく：'
+        alt: 'さらに、フィールドで別々交換可能版を書けます。例えば、<code>彼&彼女</code> は「彼」か「彼女」です。'
+    whatisit: '三人称代名詞とはなんですか？'
+
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: '私達の責任'
+        summary: '私達は言語で自由、尊重と包含的のために努めます。'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>自由</strong>
+            – 誰もが自分に似合っていると感じる三人称代名詞を使用できますようにします。
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>尊重</strong>
+            – 他人の三人称代名詞を尊重できますようにします。
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>包含的</strong>
+            – 知らない誰かまたは人々のグループにはついて話すときは、
+             除外しなかったり、ジェンダーを想定しなかったりないようにします。
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
-    plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    header: '三人称代名詞'
+    headerLong: '三人称代名詞'
+    examples: '文で使用法の例'
+    plural: '複数形'
+    intro: '私の三人称代名詞は：'
+    normative: '規範的'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: '交換可能版にはリンクを生成する。'
+        header: '交換可能版'
+        raw: '交換可能'
+    generated: 'ジェネレータではこの三人称代名詞を作りました。pronouns.pageのチームは責任がありません。'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: '三人称代名詞の何れ'
+        short: '何れ'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            多くの人々のためには、特定の三人称代名詞を使うのはとても大切たって、
+            文脈が明らかなら、一部の人のためには、三人称代名詞の好みがありません。
+        options: '[share]{/=こちら}に選択肢を見ます。'
+    others: '他の形'
+    othersRaw: '他'
+    or: 'か'
+    grammarTable: '表：'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
-    toc: 'Show table of contents'
+    header: '出所'
+    headerLong: '文化的な本文では例'
+    headerLonger: '文化的な本文ではジェンダーニュートラルな言葉'
+    subheader: 'ジェンダーニュートラルな言葉のコーパス'
+    toc: '目次を見る'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Game: 'Game'
-        Other: 'Other'
+        All: '全て'
+        Book: '本'
+        Article: '記事'
+        Movie: '映画'
+        Series: 'シリーズ'
+        Song: '音楽'
+        Poetry: '詩'
+        Game: 'ゲーム'
+        Other: '他'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        header: '追加する例を送信する'
+        action: '送信'
+        pronouns: 'どの三人称代名詞は使われましたか？'
+        pronounsInfo: '三人称代名詞の最も単純な形を入力してください。リンクのどのように書かれています、「Xの人」、「彼」、「彼&彼女」。'
+        type: '出所のタイプ'
+        author: '作者'
+        title: 'タイトル'
+        extra: '追加的な情報（翻訳者、雑誌の名前など）'
+        year: '発売年（英語版のみ）'
+        fragments: '断片'
+        comment: 'コメント'
+        link: '内容にリンク'
+        thanks: '手伝ったありがとうございます！'
+        another: 'もう一つ送信'
+        moderation: '承認の前に投稿は出版しません。'
+        key: 'キー'
+        keyInfo: '言語版間のリンクして、辞書とリンクするのために識別子'
+        images: '画像'
+    otherVersions: '他の言語で'
+    referenced: '使用法の例'
 
+    masculine: 'マスキュリン'
+    masculineShort: '男性的'
+    feminine: 'フェミニン'
+    feminineShort: '女性的'
+    neuter: 'ジェンダーニュートラル'
+    neuterShort: '中性的'
 
-nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
-    intro:
-        - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
-        - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
-        - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
+    singular: '単数形'
+    singularShort: '単'
+    plural: '複数形'
+    pluralShort: '複'
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
-
-    submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-
-    template: 'Use a template'
-    root: 'Root'
-
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
-    feminineShort: 'fem.'
-    neuter: 'neutral'
-    neuterShort: 'neutr.'
-
-    singular: 'singular'
-    singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
-
-    image: 'Picture'
+    image: '画像'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'コミュニティ'
+    headerLong: 'クィアコミュニティ'
 
-terminology:
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
-    info:
-        - >
-            A dictionary of terms related to the LGBTQ+ community.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
+    terminology:
+        header: '用語集'
+        headerLong: 'クィアな用語の辞書'
+        info:
+            - >
+                LGBTQコミュニティのついて用語の辞書。
+        term: '用語'
+        original: '語源'
+        category: 'カテゴリー'
+        images: 'フラグのカタログの外から追加画像'
+        definition: '意味'
 
 faq:
     header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    headerLong: 'よくある質問'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'Xジェンダーとは？'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    ジェンダーは男性や女性ほど単純ではありません。
+                    生物学的な観点からも、染色体の性、
+                    ホルモンの性、表現型の性を区別します...
+                    必ずしも同様で、２進である必要はではありません。
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(詳しきは)}.
+                    文化的側面を見れば、「ジェンダー」は社会によって生み出した。
+                    時間か所によって、「女である」か「男である」は違う
+                    権利や責任や規範を持つことがあります... ヨーロッパでは男の人はヒイヒールとストッキングを履いていました。
+                    前々から、ネイティブアメリカンは第３のジェンダーを認めていました。
+                    {https://www.seeking.com/ja/glossary/gender-identity/two-spirit=(トゥー・スピリット)} など
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    Xジェンダーは、用語はジェンダー２進に適合しない人々のアイデンティティを説明する、
+                    たくさんの意味を持っています。
+                    言葉には多くのタイプの人々が含まれています、例えば：
+                    {https://www.seeking.com/ja/glossary/gender-identity/agender=アジェンダー}、
+                    {https://ideasforgood.jp/glossary/gender-fluid/=ジェンダーフルイッド}、
+                    {https://ameblo.jp/happysmile202/entry-12515483795.html=デミガール}、
+                    {https://ameblo.jp/happysmile202/entry-12515483795.html=デミボイ}、
+                    {https://ja.wikipedia.org/wiki/Xジェンダー=その他もろもろ}。
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    必ずしも、Xジェンダーという用語の意味は男性性と女性性の「間」にありません。「以遠」のようなものです。
+                    Xジェンダーの人々は両性具有である必要はなく、中性の三人称代名詞を使用する必要もありません。
+                    Xジェンダーであるということは性役割から解放されることです、新しい性役割を作成することではありません。
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'なぜ<em>変な</em>三人称代名詞を使うは必要があるの？'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    他人のついてどうように話すが基本的な尊重の一部のです。
+                    楓さんは「桜さん」とは呼ばない、上司について話す時、敬語の使用をやめません。
+                    一部の人々は「{/彼=彼}」か「{/彼女=彼女}」を使用をしません。
+                    あなたは受け入れないば、自分だけの悪い面を強調します。
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
-        made-up:
-            question: 'Those pronouns are made up!'
-            answer:
-                - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    あなたは「変な三人称代名詞」に慣れる必要があります。
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: '誰かについて話す方法をどうやって知っていますか？'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    まあ、尋ねて！ちょっと違和感ですが、もっと尋ねるば、違和感が少なくなります。
+                    誰かの名前を尋ねることができるば、三人称代名詞を尋ねることができます。
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    （でも、「男性か女性ですか？」を尋ねなくてください。
+                    この質問を尋ねるは２つの正しい答えだけあるを仄めかさせます。
+                    あと、誰かの性器のために好奇心を仄めかさせます。
+                    または、「あなたはどの三人称代名詞を使う？」か「あなたはどう呼ばれたい？」を尋ねてください。）
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    自己紹介では三人称代名詞を述べるを正規化する必要があります。
+                    「はじめまして、佐藤です。俺の人称代名詞は{/彼=彼}です。」と言うは難しくないけど、トランスジェンダー人とXジェンダー人にとっては大きな意味があります。
+                    オンラインはもっと簡単：自己紹介で単に三人称代名詞を入力して（またはこのウェブサイトから例のリンクをコピーして）
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    また、状況に応じて、一部の人々は違い名前か違い三人称代名詞を使用します。
+                    自分は同僚にカミングアウトしていませんけど、友達とは気楽かもしれません。
+                    頓着してくだい。例えば、「あなたの上司の前ではどの三人称代名詞を使用するべきですか？」を尋ねるかもしれません。
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    一部の人々は複数の三人称代名詞を答えるかもしれません。例えば、「{/彼&彼女=彼と彼女}」か「{/あの人&彼=あの人と彼}」。
+                    それらの三人称代名詞のそれぞれが好き、そういう意味です。初めの三人称代名詞はよくほうが好きです。
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: 'その三人称代名詞を使う人がさえいますか？'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    世界でXジェンダーの人々は何万人がいますよ。
+                    ここのリストはすべての日常生活使う三人称代名詞があります。
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: '行政はこの中性な三人称代名詞を許可しましたか？'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    言語は一定じゃないよね。
+                    コミュニケーションに使用する道具だけ。
+                    人間は社会が発展するにつれて、あと世界が変化するにつれて、
+                    物事をよりよく説明するために言語を変更する。
+                    私達は言語利用者ので、どのように使用するについての権威です。
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    辞書はこの変更たちを和訳する遅いよが、
+                    ゆっくり変更は不適正にはなりません。
+                    でも十分に使用すれば、新しいフォームはやがて辞書に追加する。
+                    例えば、{https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=メリアム＝ウェブスター社}は
+                    Xジェンダー三人称代名詞として英語で{en.pronouns.page/they=「singular “they”」}（日本語では{/あの人=あの人}）の使用を受け入れいます。
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
-        bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+                    ネオ三人称代名詞についての{https://scholar.google.jp/scholar?hl=en&q=neopronouns=論文}を読む。
+        bio: # TODO
+            question: '自己紹介には私の三人称代名詞を入力するなんで？'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
+                    あなたはシスジェンダー（トランスジェンダーじゃない）ならば、あとあなたの三人称代名詞は自分のジェンダー一致すれば、
+                    自分は三人称代名詞は<em>明らか</em>であるを思うかもしれません。
                     And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
                     or if you have your picture as avatar.
                     Many people don't – so it's hard to guess how they want to be called.
@@ -304,7 +255,7 @@ faq:
                     But if cis people do the same, it means the world for us.
                     It makes us feel more comfortable, safe and welcome
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
-        change:
+        change: # TODO
             question: 'Can I change my pronouns?'
             answer:
                 - >
@@ -321,7 +272,7 @@ faq:
                     Pronouns ≠ gender.
                     Your gender won't drastically change just because you got confused once when someone called you “them”.
                     Don't worry. Experiment. See what fits you best.
-        preferred-pronouns:
+        preferred-pronouns: # TODO
             question: 'Why shouldn''t I say “preferred pronouns”?'
             answer:
                 - >
@@ -331,7 +282,7 @@ faq:
                 - >
                     No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
                     If you care about your trans and nonbinary friends and loved ones, then call them the right way.
-        gender-pronouns:
+        gender-pronouns: # TODO
             question: 'Why shouldn''t I say “gender pronouns”?'
             answer:
                 - >
@@ -339,103 +290,43 @@ faq:
                     Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
                 - >
                     Simply say “pronouns”.
-        flags:
-            question: 'Can you add this flag? Can you remove that flag?'
-            answer:
-                - >
-                    No.
-                - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
-                - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
-                - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
-                - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
-        custom-pronouns:
-            question: 'My pronouns aren''t listed'
-            answer:
-                - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
-                - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly do you mean.
-        business:
-            question: 'Are you a business?'
-            answer:
-                - >
-                    Nope. We're volunteers.
-                    We create the website with our own work.
-                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
-                    the rest comes out of our own pockets
-                    and {/contact#support=your donations} – for which we're very grateful! ❤️
-                - >
-                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
-                    you're doing us a favour. It's not like we were making any money on you.
-                    Exclusionists and queerphobes aren't welcome here.
+
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
-    blog: 'Blog'
-    mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
+    header: 'リンク'
+    headerLong: '余分なリンク'
+    recommended: 'おすすめ'
+    blog: 'ブログ'
+    mediaShort: 'メディア'
+    media: 'メディアでPronouns.page'
 
-    social: 'Social media'
+    social: 'ソーシャルメディア'
 
-    languageVersions: 'Other language versions'
+    languageVersions: '他の言語版'
 
 people: ~
 
 english: ~
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
-    faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
-    technical: >
-        Do you have a technical issue or question? Please include your username and as many details as possible
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-    hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+    header: '連絡先'
+    authors: 'ウェブサイトの作者'
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: '「中性的言語委員会」集団'
         description:
             - >
-                We are a queer collective dedicated to assembling, researching, shaping and promoting
-                gender neutral and nonbinary language.
-                We also support actions towards equality and social justice.
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
-        join:
-            header: 'Join us!'
+                {https://pronouns.page=Pronouns.page}と関連のイニシチブは
+                「中性的言語委員会」集団によって作成されました。
+        logo: '集団のロゴにはトランスジェンダーのシンボルと吹き出し（言葉をシンボライズする）の合わせです。'
+        members: '現在のメンバー'
+        member: '集団のメンバー'
+        blog: 'ブログ'
+        upcoming: 'もうすぐ言語版'
+
+        join: # TODO
+            header: '私達に加わる'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
+                Xジェンダー言葉とジェンダーニュートラル言葉のことを気にかけていますか？
+                私達の集団を宣伝するのを手伝いたいですか？いいね！
                 Extra help is very welcome!
             areasIntro: 'Areas in which you might be able to help are for example:'
             areas:
@@ -462,245 +353,327 @@ contact:
                 - 'say, what would you like to help with.'
 
 support:
-    header: 'Support'
+    header: 'サポート'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        サーバーやドメインやステッカーのためにお金を寄付したいば、また作者のためにお酒を買いたいば、
+        下のリンクをクリクしてください：
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    header: 'アカウント'
+    headerLong: 'あなたのアカウント'
+    tokenExpired: 'トーケンの有効期限が切れています。ウェブサイトを更新して、もう一度やり直してください。'
     login:
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        placeholder: 'Eメールアドレス（択一的に、もうサインアップしていれば、ユーザー名を入力してください。）'
+        action: 'ログイン'
+        emailSent: '６桁のコードはあなたのEメールアドレスに送りました、ここに入力してください。コードは一度だけ使えます。今から１５分まで有効です。'
+        userNotFound: '無効なユーザー名'
         email:
-            subject: 'Your login code is %code%'
+            subject: 'ログインコードは%code%です。'
             content: |
-                To confirm your email address, enter the following single-use code on the website: %code%.
+                ウェブサイトでこのコードを入力して、あなたのEメールアドレスを確認します。%code%
 
-                If you didn't order this code, simply ignore this message.
+                このコードは求めなかった場合は、このメッセージを無視してください。
         why: >
-            Registering lets you manage your cards ({/@andrea=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            サインアップしているば、カードを構成できます。({/@andrea=こんなに}).
+        passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: '確認'
+        invalid: '無効なコード'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'ユーザー名'
+            action: '変更'
+            invalid: 'ユーザー名は４文字から１６文字までの長さべき、数字とローマ字とピリオドとハイフンとアンダースコアを含まれます。'
+            taken: 'このユーザー名は入手不可能です。'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
-    logout: 'Log out'
+            header: 'Eメールアドレス'
+            action: '変更'
+            invalid: '無効なEメールアドレス'
+            taken: 'このEメールアドレスは入手不可能です。'
+        admin: 'アドミン'
+    logout: 'ログアウト'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        header: 'プロフィール写真'
+        change: '変更'
+    deleteAccount: 'アカウントを削除'
+    deleteAccountConfirm: 'アカウトを削除してもよろしいですか？これは元に戻すことができません！'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'ソーシャルメディアの接続'
+        connect: '接続'
+        refresh: '更新'
+        disconnect: '切断'
+        disconnectConfirm: 'この接続を削除してもよろしいですか？まだEメールアドレスでログインできます。（%email%）'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
-    pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    links: 'Links'
-    linksCake: 'We recommend linking to'
-    column: 'Column'
+    description: '記述'
+    names: '名前'
+    pronouns: '三人称代名詞'
+    pronounsInfo: '三人称代名詞（例えば「あの人」）かリンク（例えば「http://jp.pronouns.page/彼」）を入力してください。'
+    pronounsNotFound: '無効なフォーマット。上に手順を参照してください。'
+    words: '言葉'
+    birthday: '生年月日'
+    birthdayInfo: 'あなたの生年月日は公開されません。年齢しか公開されません。'
+    flags: '旗'
+    flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
+    links: 'リンク'
+    column: '欄'
 
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    list: 'あなたのカード'
+    init: 'カードを作る'
+    show: '見る'
+    edit: '編集'
+    delete: '削除'
+    deleteConfirm: 'このカードを削除してもよろしいですか？'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
-        defaults: 'Restore defaults'
+        header: 'カード編集'
+        save: 'カード保存'
+        defaults: '既定に復元'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: '好き'
+        jokingly: '冗談っぽく'
+        close: '親しければ'
+        meh: '良い'
+        no: '嫌い'
     banner: >
-        You can also use our website to create a card, {/@andrea=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
+        それと、私達のウェブサイトを使用するば、カードを作れます、{/@andrea=こんなに}、
+        カードには名前や三人称代名詞やプライドフラッグやいい言葉があります。
+        自己紹介かEメールフッターではそれにリンクできます。
+        ただ{/アカウント=ここ}にアカウントを作ります。
+    bannerButton: 'カード作成'
     card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
+        link: 'カードの映像'
+        generating: 'ジェネレート中…'
+    empty: 'この人はまだカードを作られませんでした。'
 
-share: 'Share'
+share: 'シェア'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
+    approve: '認める'
+    hide: '隠す'
+    remove: '削除'
+    removeConfirm: 'これを削除がよろしいですか？'
+    add: '追加'
+    filter: 'フィルター'
+    filterLong: 'リストをフィルタリング'
+    search: '検索...'
+    author: 'によって追加'
+    saved: '変更は正常に保存！'
+    loginRequired: '記入を送信するには、{/アカウント=ログイン}する必要があります。'
+    copy: 'リンクをコピー'
+    download: 'ダウンロード'
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media, support'
+        {https://gitlab.com/Avris/Zaimki=ソースコード}は{https://mit.avris.it=MIT}ライセンスの下でライセンスします。 [mit.svg].<br/>
+        内容は{https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}ライセンスの下でライセンスします。
+        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa].
+    links: '連絡先、ソーシャルメディア、サポート'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'このページはありません'
+    back: 'ホムペに戻る'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'このウェブサイトを見るには、ログインする必要があります。'
+    go: 'ログイン'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
-    ok: 'OK'
+    header: 'よろしいですか？'
+    yes: 'はい、たしか'
+    no: 'いいえ、キャンセル'
+    ok: 'OK' # TODO
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: '利用規約'
+    lastUpdate: '最近更新'
+    consent: '登録するもって、{/terms=利用規約}に同意する。'
 
 admin:
-    header: 'Admin panel'
+    header: '管理パネル'
     user:
-        user: 'User'
-        email: 'Email'
-        roles: 'Permissions'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        user: 'ユーザー'
+        email: 'Eメールアドレス'
+        roles: '権限'
+        profiles: 'プロファイル'
+        confirmRole: '@%username%の役割を「%role%」に切り替えてもよろしいですか？'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: '空所...'
+    count: 'カウント'
+    sort: 'ドラッグして再配置'
+    scrollUp: 'トップに戻る'
+    more: 'もっと見る'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: 'パブリックAPI'
+    example: '例'
+    query: 'クエリー文字列のパラメーター：'
 
 quotation:
-    start: '“'
-    end: '”'
+    start: '«'
+    end: '»'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: '別を追加'
+    short: '原語版を追加する'
+    long: '新しい言語版を作りたいですか？見て、'
+    longLink: 'この説明書！'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: 'ここに画像をクリクまたはドラッグします。'
+        instructionShort: 'アップロード'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: '何かはまかり間違いました、もう一度やり直してください。'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'スパムとDDoS攻撃を防ぐから、ボットじゃないを証明してください。'
+    invalid: '無効なCAPTCHA、もう一度やり直してください。'
 
 mode:
-    dark: 'Dark mode'
-    light: 'Light mode'
+    dark: 'ダークモード'
+    light: 'ライトモード'
 
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terms=Terms of Service}:'
+    reason: '禁止の理由'
+    terms: '利用規約では、どの規則が破られましたか？（必要）'
+    visible: '（そのユーザーはこれを見られる）'
+    action: 'この人を禁止'
+    confirm: '@%username%を禁止してもよろしいですか？'
+    header: 'あなたを禁止しました。 誰もはあなたのプロファイルを見えません。'
+    banned: '禁止しました'
+    termsIntro: '私達の{/terms=利用規約}に従って：'
 
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: '虐待の報告'
+    comment: '手短にこのプロファイルの何が悪いのか書いてください。'
+    confirm: '@%username%のプロファイルを報告するがよろしいですか？'
+    sent: '報告が送信されました。ご協力ありがとうございました！'
+
+flags:
+    Abroromantic: 'アブロロマンティック'
+    Abrosexual: 'アブロセクシャル'
+    Achillean: 'アキリアン'
+    Alloromantic_Asexual: 'アロロマンティックアセクシャル'
+    Agender: 'アイジェンダー'
+    Ambiamorous: 'アンビアモリ'
+    Anarcha-Queer: 'アナーキークィア'
+    Androgyne: '中性（アンドロジャイン）'
+    Androsexual: '男性的セクシャル'
+    Aporagender: 'アポーラジェンダー'
+    Archaeopronouns: '古い三人称代名詞'
+    Aroace: 'アロエース'
+    Aromantic: 'アロマンティック'
+    Aromantic_Allosexual: 'アロマンティックアロセクシャル'
+    Asexual: 'アセクシャル'
+    Autigender: '自閉ジェンダー'
+    Bear: '熊系'
+    Bicurious: 'バイキュリアス'
+    Bigender: 'バイジェンダー'
+    Biromantic: 'バイロマンティック'
+    Bisexual: 'バイセクシャル'
+    Butch: 'ブッチ'
+    Ceteroromantic: 'セテロロマンティック'
+    Ceterosexual: 'セテロセクシャル'
+    Cis_Ally: 'シスジェンダー味方'
+    Demiboy: 'デミボーイ'
+    Demigender: 'エミジェンダー'
+    Demigirl: 'デミガール'
+    Demiromantic: 'デミロマティック'
+    Demisexual: 'デミセクシャル'
+    Diamoric: 'ディアモリック'
+    Enbian: 'エンビアン'
+    Fa*afafine: 'ファファフィネ'
+    Femme: 'フェム'
+    Gay: 'ゲイ'
+    Gender_Questioning: 'ジェンダークエスチョニング'
+    Genderfae: 'ジェンダーファエ'
+    Genderfaun: 'ジェンダーファウヌス'
+    Genderfluid: 'ジェンダーフルイッド'
+    Genderflux: 'ジェンダーフルクス'
+    Genderqueer: 'ジェンダークィア'
+    Greyasexual: 'グレーセクシャル'
+    Greyaromantic: 'グレーロマンティック'
+    Gynesexual: '女性的セクシャル'
+    Heteroflexible: 'ヘテロフレキシブル'
+    Heteroromantic: 'ヘテロロマンティック'
+    Heterosexual: 'ヘテロセクシャル'
+    Hijra: 'ヒジュラ'
+    Homoflexible: 'ホモフレキシブル'
+    Homoromantic: 'ホモロマンティック'
+    Intersex: '間性的'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'レザーフェティシズム'
+    Lesbian: 'レズビアン'
+    Lesbiromantic: 'レズビロマンティック'
+    Maverique: 'マヴェリック'
+    Monoamorous: 'モノアモリ'
+    Monogamous: 'モノガミ'
+    Muxe: 'ムシェ'
+    Nebularomantic: 'ネビュラロマンティック'
+    Neopronouns: '新しい三人称代名詞'
+    Neutrois: '不定性別'
+    Nonbinary: 'Xジェンダー'
+    Omnisexual: 'オムニセクシャル'
+    Omniromantic: 'オムニロマンティック'
+    Oriented_Aroace: 'オリエンテッドアロエース'
+    Pangender: 'パンジェンダー'
+    Panromantic: 'パンロマンティック'
+    Pansexual: 'パンセクシャル'
+    Polyamorous: 'ポリアモリ'
+    Polyromantic: 'ポリロマンティック'
+    Polysexual: 'ポリセクシャル'
+    Pomoromantic: 'ポモロマンティック'
+    Pomosexual: 'ポモセクシャル'
+    Progress_Pride: 'プログレス・プライド'
+    Queer: 'クィア'
+    Queerian: 'クィアリアン'
+    Queerplatonic: 'クィアプラトニック'
+    Quoiromantic: 'クワロマンティック'
+    Sapphic: 'サッフォーな'
+    Sexuality_Questioning: 'クエスチョニングセクシャリティ'
+    Straight_Ally: 'ヘテロセクシャル味方'
+    Toric: 'トーリック'
+    Transfeminine: 'トランスフェミニン'
+    Transgender: 'トランスジェンダー'
+    Transmasculine: 'トランスマスキュリン'
+    Transneutral: 'トランスニュートラル'
+    Trigender: 'トライジェンダー'
+    Trixic: 'トリキシク'
+    Two_Spirit: 'トゥー・スピリット'
+    Xenogender: 'ゼノジェンダー'
 
 calendar:
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
+    header: 'カレンダー'
+    headerLong: 'クィアカレンダー'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
-        4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
-        9: 'September'
-        10: 'October'
-        11: 'November'
-        12: 'December'
+        1: '１月'
+        2: '２月'
+        3: '３月'
+        4: '４月'
+        5: '５月'
+        6: '６月'
+        7: '７月'
+        8: '８月'
+        9: '９月'
+        10: '１０月'
+        11: '１１月'
+        12: '１２月'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: '%day%日１月'
+        2: '%day%日２月'
+        3: '%day%日３月'
+        4: '%day%日４月'
+        5: '%day%日５月'
+        6: '%day%日６月'
+        7: '%day%日７月'
+        8: '%day%日８月'
+        9: '%day%日９月'
+        10: '%day%日１０月'
+        11: '%day%日１１月'
+        12: '%day%日１２月'
+    # TODO
     events:
         pride_month: '{/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
@@ -731,13 +704,13 @@ calendar:
         polyamory_day: '{/terminology#polyamory=Polyamory} Day'
         homophobia_sport: 'International Day Against {/terminology#homophobia=Homophobia} in Sports'
         gay_uncles_day: '{/terminology#gay=Gay} Uncles Day'
-        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
-        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
-        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
-        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
+        lgbtq_stem: 'LGBTQ+ STEM Day'
+        trans_depathologization: 'International Day of Action for Trans Depathologization'
+        lgbti_book_day: 'International LGBTI Book Day'
+        human_rights_day: 'Human Rights Day'
         nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents Day'
         trans_prisoner: '{/terminology#transgender=Transgender} Prisoner Day of Action and Solidarity'
-        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Visibility Day'
+        xenogender_day: 'Xenogender Visibility Day'
         genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
         genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
         aids_day: 'World AIDS Day'
@@ -760,21 +733,21 @@ calendar:
         aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
         black_ribbon_day: 'Black Ribbon Day'
         black_queer_week: 'Black {/terminology#queer=Queer} History Week'
-        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
+        mena_lesbian_day: 'Middle Eastern and North African {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'World Suicide Prevention Day'
         suicide_prevention_month: 'Suicide Prevention Month'
         aids_awareness_month: 'AIDS Awareness Month'
         genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
-    banner: 'We''re celebrating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    banner: 'We''re celebrating'# TODO
+    celebrating_custom: 'is celebrated'# TODO
+    celebrating_day: 'is celebrated on'# TODO
+    celebrating_week: 'is celebrated on'# TODO
+    celebrating_month: 'is celebrated in'# TODO
     image:
-        header: 'Download an image'
-        overview: 'Overview'
-        labels: 'Labels'
-    link: 'Link'
-    full: 'Full calendar'
+        header: 'Download an image'# TODO
+        overview: 'Overview'# TODO
+        labels: 'Labels'# TODO
+    link: 'Link'# TODO
+    full: 'Full calendar'# TODO
