@@ -120,7 +120,7 @@ people:
     enabled: false
 
 english:
-    enabled: true
+    enabled: false
     route: 'english'
     pronounGroups:
         -
