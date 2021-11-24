@@ -753,10 +753,10 @@ calendar:
         genderfluid_week: 'Genderfluide Bewusstseinswoche'
 
     banner: 'Heute feiern wir'
-    celebrating_custom: 'is celebrated' # TODO
-    celebrating_day: 'is celebrated on' # TODO
-    celebrating_week: 'is celebrated on' # TODO
-    celebrating_month: 'is celebrated in' # TODO
+    celebrating_custom: 'wird gefeiert'
+    celebrating_day: 'wird gefeiert am:'
+    celebrating_week: 'wird gefeiert am:'
+    celebrating_month: 'wird gefeiert im:'
     image:
         header: 'Bild herunterladen'
         overview: 'Überschau'
