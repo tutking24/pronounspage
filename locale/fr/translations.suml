@@ -720,7 +720,7 @@ calendar:
         trans_week: 'Semaine de sensibilisation trans'
         trans_parent_day: 'Journée des parents trans'
         nonbinary_week: 'Journée de sensibilité au non-binaire'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
+        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14' # TODO
         polyamory_day: 'Journée du polyamour'
         homophobia_sport: 'Journée internationale contre l''homophobie dans le sport'
         gay_uncles_day: 'Journée des oncles gay'
@@ -761,10 +761,10 @@ calendar:
         aids_awareness_month: 'Mois de sensibilité à l''épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
     banner: 'Nous célébrons '
-    celebrating_custom: 'est célébrée' # TODO
-    celebrating_day: 'est fêté le' # TODO
-    celebrating_week: 'est fêté le' # TODO
-    celebrating_month: 'est célébrée en' # TODO
+    celebrating_custom: 'est célébrée'
+    celebrating_day: 'est fêté le'
+    celebrating_week: 'est fêté le'
+    celebrating_month: 'est célébrée en'
     image:
         header: 'Télécharger l''image'
         overview: 'Vue générale'
