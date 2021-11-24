@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+思うに{base_pronoun}はめちゃくちゃ優しいですよ。		FALSE
+私は{base_pronoun}に{base_pronoun}のペンを借りてもいいかと尋ねました。		FALSE
+{base_pronoun}は家は{base_pronoun}のものと言いました。		FALSE
+後で{base_pronoun}に教えてください。		FALSE
