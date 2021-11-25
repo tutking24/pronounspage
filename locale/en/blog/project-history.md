@@ -48,7 +48,7 @@ and was absolutely astounded by the overwhelmingly positive response.
 The project almost immediately [attracted attention of queer media](https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc).
 More people were helping out with creating it – and [on November 22nd, 2020 we gathered](https://twitter.com/neutratywy/status/1332403345542221827)
 together online to discuss how would such a cooperation work. We came up with [the name of the collective](/blog/why-the-name)
-of the collective and agreed on a non-hierarchical, anarcha-queer structure.
+and agreed on a non-hierarchical, anarcha-queer structure.
 
 Thanks to their hard work new features and language forms were getting developed.
 Arguably the biggest one of them being the ability to create an account and an easily sharable card
