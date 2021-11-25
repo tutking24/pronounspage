@@ -46,7 +46,7 @@ inclusive:
     enabled: false
 
 terminology:
-    enabled: false
+    enabled: true
     categories:
         - '性的指向'
         - 'ロマンティック・オリエンテーション'
