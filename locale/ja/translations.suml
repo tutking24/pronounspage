@@ -96,6 +96,12 @@ sources:
         Poetry: '詩'
         Game: 'ゲーム'
         Other: '他'
+    approved: 'approved entries' # TODO
+    pending: 'awaiting moderation' # TODO
+    edit: 'Propose a change' # TODO
+    edited: 'Proposed change of' # TODO
+    editing: 'You''re editing an existing entry' # TODO
+    empty: 'No words found that match your criteria.' # TODO
     submit:
         header: '追加する例を送信する'
         action: '送信'
