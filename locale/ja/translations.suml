@@ -118,7 +118,7 @@ sources:
     otherVersions: '他の言語で'
     referenced: '使用法の例'
 
-nouns: # TODO
+nouns:
     header: 'Dictionary'
     headerLong: 'Dictionary of neutral nouns'
     headerLonger: 'Dictionary of gender neutral language'
@@ -138,12 +138,12 @@ nouns: # TODO
             Below we present a dictionary of the words to watch out for.
             You can contribute to it and add your suggestions.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: 'approved entries' # TODO
+    pending: 'awaiting moderation' # TODO
+    edit: 'Propose a change' # TODO
+    edited: 'Proposed change of' # TODO
+    editing: 'You''re editing an existing entry' # TODO
+    empty: 'No words found that match your criteria.' # TODO
 
 
     masculine: 'マスキュリン'
