@@ -96,12 +96,6 @@ sources:
         Poetry: '詩'
         Game: 'ゲーム'
         Other: '他'
-    approved: 'approved entries' # TODO
-    pending: 'awaiting moderation' # TODO
-    edit: 'Propose a change' # TODO
-    edited: 'Proposed change of' # TODO
-    editing: 'You''re editing an existing entry' # TODO
-    empty: 'No words found that match your criteria.' # TODO
     submit:
         header: '追加する例を送信する'
         action: '送信'
@@ -123,6 +117,34 @@ sources:
         images: '画像'
     otherVersions: '他の言語で'
     referenced: '使用法の例'
+
+nouns: # TODO
+    header: 'Dictionary'
+    headerLong: 'Dictionary of neutral nouns'
+    headerLonger: 'Dictionary of gender neutral language'
+    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    intro:
+        - >
+            Inclusive and gender neutral is not just respecting someone's pronouns.
+            It's also describing their job, position, relationship etc.
+            in a way that doesn't assume their gender.
+            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+        - >
+            When referring to someone whose gender you don't know,
+            to a group of people of mixed gender,
+            and especially to nonbinary people who explicitly prefer them,
+            use the neutral forms.
+        - >
+            Below we present a dictionary of the words to watch out for.
+            You can contribute to it and add your suggestions.
+
+    approved: 'approved entries'
+    pending: 'awaiting moderation'
+    edit: 'Propose a change'
+    edited: 'Proposed change of'
+    editing: 'You''re editing an existing entry'
+    empty: 'No words found that match your criteria.'
+
 
     masculine: 'マスキュリン'
     masculineShort: '男性的'
