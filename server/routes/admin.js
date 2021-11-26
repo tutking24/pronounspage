@@ -74,38 +74,14 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     }
 
     const users = await req.db.all(SQL`
-        SELECT u.id, u.username, u.email, u.roles, u.avatarSource, p.locale
+        SELECT u.id, u.username, u.email, u.roles, u.avatarSource, group_concat(p.locale) AS profiles
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
+        GROUP BY u.id
         ORDER BY u.id DESC
     `);
 
-    const authenticators = await req.db.all(SQL`
-        SELECT userId, type FROM authenticators
-        WHERE type IN (`.append(Object.keys(socialLoginConfig).map(k => `'${k}'`).join(',')).append(SQL`)
-        AND (validUntil IS NULL OR validUntil > ${now()})
-    `));
-
-    const groupedUsers = {};
-    for (let user of users) {
-        if (groupedUsers[user.id] === undefined) {
-            groupedUsers[user.id] = {
-                ...user,
-                locale: undefined,
-                profiles: user.locale ? [user.locale] : [],
-                avatar: await avatar(req.db, user),
-                socialConnections: [],
-            }
-        } else {
-            groupedUsers[user.id].profiles.push(user.locale);
-        }
-    }
-
-    for (let auth of authenticators) {
-        groupedUsers[auth.userId].socialConnections.push(auth.type);
-    }
-
-    return res.json(groupedUsers);
+    return res.json(users);
 }));
 
 router.get('/admin/stats', handleErrorAsync(async (req, res) => {
