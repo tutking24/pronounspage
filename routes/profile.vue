@@ -31,7 +31,7 @@
                         pronouns.page/@{{user.username}}
                     </a>
                 </div>
-                <div v-if="false">
+                <div>
                     <small>
                         <Icon v="id-card"/>
                         <T>profile.card.link</T>:
