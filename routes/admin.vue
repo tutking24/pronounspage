@@ -48,8 +48,7 @@
 
                             <template v-slot:row="s">
                                 <td>
-                                    <Avatar :user="s.el" dsize="2rem"/>
-                                    {{s.el.username}}
+                                    <a :href="'https://pronouns.page/@ + s.el.username'">@{{s.el.username}}</a>
                                 </td>
                                 <td>
                                     <p>
@@ -57,11 +56,13 @@
                                             {{s.el.email}}
                                         </a>
                                     </p>
+                                    <!--
                                     <ul v-if="s.el.socialConnections.length" class="list-inline">
                                         <li v-for="conn in s.el.socialConnections" class="list-inline-item">
                                             <Icon :v="socialProviders[conn].icon || conn" set="b"/>
                                         </li>
                                     </ul>
+                                    -->
                                 </td>
                                 <td>
                                     <Roles :user="s.el"/>
@@ -201,9 +202,12 @@
             return {
                 socialProviders,
                 userFilter: '',
+                userFilterDelayed: '',
+                userFilterDelayHandle: undefined,
                 localeFilter: true,
                 adminsFilter: false,
                 users: undefined,
+                visibleUsers: [],
             }
         },
         async asyncData({ app, store }) {
@@ -225,7 +229,10 @@
         methods: {
             async loadUsers() {
                 if (this.users === undefined) {
-                    this.users = await this.$axios.$get(`/admin/users`);
+                    this.users = (await this.$axios.$get(`/admin/users`)).map(u => {
+                        u.profiles = u.profiles ? u.profiles.split(',') : [];
+                        return u;
+                    });
                 }
             },
             async handleReport(id) {
@@ -236,24 +243,47 @@
                     return r;
                 });
             },
-        },
-        computed: {
-            visibleUsers() {
+            calcVisibleUsers() {
                 if (this.users === undefined) {
                     return [];
                 }
-                return Object.values(this.users).filter(u =>
-                    u.username.toLowerCase().includes(this.userFilter.toLowerCase())
-                        && (!this.adminsFilter || u.roles !== '')
-                        && (!this.localeFilter || u.profiles.includes(this.config.locale))
+                return this.users.filter(u =>
+                    u.username.toLowerCase().includes(this.userFilterDelayed.toLowerCase())
+                    && (!this.adminsFilter || u.roles !== '')
+                    && (!this.localeFilter || u.profiles.includes(this.config.locale))
                 );
             },
+        },
+        computed: {
             profilesByLocale() {
                 const r = {};
                 for (let locale of Object.values(this.stats.locales).sort((a, b) => b.profiles - a.profiles)) {
                     r[locale.name] = locale.profiles;
                 }
                 return r;
+            },
+        },
+        watch: {
+            userFilter() {
+                if (this.userFilterDelayHandle !== undefined) {
+                    clearInterval(this.userFilterDelayHandle);
+                }
+
+                this.userFilterDelayHandle = setTimeout(() => {
+                    this.userFilterDelayed = this.userFilter;
+                }, 500);
+            },
+            userFilterDelayed() {
+                this.visibleUsers = this.calcVisibleUsers();
+            },
+            localeFilter() {
+                this.visibleUsers = this.calcVisibleUsers();
+            },
+            adminsFilter() {
+                this.visibleUsers = this.calcVisibleUsers();
+            },
+            users() {
+                this.visibleUsers = this.calcVisibleUsers();
             },
         },
         head() {
