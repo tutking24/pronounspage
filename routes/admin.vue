@@ -9,13 +9,13 @@
         <p>Stats counted: {{$datetime(stats.calculatedAt)}}</p>
 
         <section v-if="$isGranted('users')">
-            <details class="border mb-3" open>
+            <details class="border mb-3" @click="usersShown = true">
                 <summary class="bg-light p-3">
                     <Icon v="users"/>
                     Users
                     ({{stats.users.overall}} overall, {{stats.users.admins}} admins)
                 </summary>
-                <div class="border-top">
+                <div class="border-top" v-if="usersShown">
                     <div class="input-group mt-4">
                         <input class="form-control" v-model="userFilter" :placeholder="$t('crud.filterLong')"/>
                         <button :class="['btn', adminsFilter ? 'btn-secondary' : 'btn-outline-secondary']"
@@ -209,7 +209,7 @@
                 userFilterDelayHandle: undefined,
                 localeFilter: true,
                 adminsFilter: false,
-                users: undefined,
+                usersShown: false,
             }
         },
         async asyncData({ app, store }) {
