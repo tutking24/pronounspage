@@ -1,0 +1,139 @@
+locale: 'gl'
+
+header: true
+
+pronouns:
+    enabled: true
+    route: 'pronomes'
+    default: 'ele'
+    any: 'any'
+    plurals: false
+    honorifics: false
+    multiple:
+        name: 'Formas intercambiáveis'
+        description: 'Muitas pessoas não binárias usam mais de uma forma intercambiavelmente e se sentem cómodas com qualquer das opções.'
+        examples: ['ele&ela', 'ele&elu', 'ela&elu']
+    null: false
+    emoji: false
+    slashes: false
+    others: 'Outros pronomes'
+    threeForms: true
+
+pronunciation:
+    enabled: true
+    voices: {}
+
+sources:
+    enabled: true
+    route: 'fontes'
+    submit: true
+    mergePronouns: {}
+
+nouns:
+    enabled: true
+    route: 'dicionario'
+    collapsable: false
+    plurals: false
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: false
+
+community:
+    route: 'terminologia'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    published: true
+    categories:
+        - 'orientação sexual'
+        - 'orientação romântica'
+        - 'orientação terciária'
+        - 'gênero'
+        - 'expressão de gênero'
+        - 'modelo de relação'
+        - 'linguagem'
+        - 'atração'
+        - 'política'
+        - 'preconceito'
+    route: 'terminologia'
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+english:
+    enabled: false
+
+faq:
+    enabled: true
+    route: 'perguntas'
+
+links:
+    enabled: false
+    route: 'ligações'
+    blogRoute: 'blog'
+    links: []
+    mediaGuests: []
+    mediaMentions: []
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
+    recommended: []
+    blog: false
+
+contact:
+    enabled: true
+    route: 'contato'
+    contacts:
+        -
+            icon: 'envelope'
+            url: 'mailto:contact@pronouns.page'
+            headline: 'contact@pronouns.page'
+    team:
+        enabled: true
+        route: 'team'
+
+support:
+    enabled: true
+    links: []
+
+user:
+    enabled: true
+    route: 'conta'
+    termsRoute: 'termos'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        - ['senhor', 'senhora', 'senhore', 'dom', 'dona', 'done', 'tu', 'você']
+        - ['persona', 'home', 'mulher', 'garoto', 'garota', 'garote', 'rapaz', 'rapariga', 'raparigue', 'cara']
+        - ['lind_', 'formos_', 'bonit_', 'bel_', 'sexy']
+        - ['parceir_', 'namorad_', 'marid_', 'espos_', 'outra metade']
+    flags:
+        defaultPronoun: 'el_'
+
+calendar:
+    enabled: true
+    route: 'calendario'
+
+census:
+    enabled: false
+
+redirects: []
+
+api: ~

@@ -1,0 +1,788 @@
+title: 'Pronouns.page'
+domain: 'gl.pronouns.page'
+description: 'Exemplos de uso de pronomes pessoais e linguagem neutra.'
+
+home:
+    link: 'Início'
+    header: 'Pronomes'
+    headerLong: 'Lista de pronomes'
+    why: 'Por que os pronomes importam?'
+    about:
+        - >
+            Todes temos pronomes. São as palavras que usamos no lugar do nome para referir-nos a alguém já mencionado.
+            A maioria das pessoas usa {/ele=«ele»} e {/ela=«ela»}. Assumimos automaticamente qual usar com base na aparência.
+            Mas a realidade não é tão simples…
+        - >
+            O gênero é complexo. Algumas pessoas não «aparentam» o seu gênero.
+            Há quem prefira ser chamade de maneira distinta à que se assumiria.
+            Há ainda quem não se encaixa nas etiquetas «masculino» ou «feminino» e prefere um termo neutro.
+        - >
+            Essa ferramenta permite que você encontre os seus pronomes, com exemplos de uso em enunciações
+            para que possa mostrar às pessoas como prefere ser chamade.
+        - >
+            Por que é importante? Por uma simples questão de decência humana.
+            Você não chamaria «Lúcia» de «Alícia» só porque gosta mais desse nome
+            ou porque «fulana tem mais cara de Lúcia para você».
+            Ou, inclusive, se ela <em>sim</em> se chama «Lúcia» na sua certidão de nascimento,
+            mas odeia esse nome e prefere usar «Alícia».
+            É exatamente o mesmo com os pronomes –
+            se não quer ser grosseiro com alguém, você se refere a el corretamente.
+            A única diferença é que geralmente conhecemos os nomes, mas não os pronomes.
+            Apresentamo-nos com o nosso nome, mas não com os nossos pronomes. Vamos lá mudar isso!
+    pronouns: 'Lista de pronomes populares'
+    generator:
+        header: 'Gerador'
+        description: >
+            Também é possível usar esta ferramenta para preencher os espaços em branco
+             e gerar uma ligação que pode ser compartilhada.
+        button: 'Mostrar o gerador'
+        header2: 'Gerar uma ligação'
+        base: 'Baseado em'
+        alt: 'Também é possível introduzir formas intercambiáveis separadas em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
+        pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
+    whatisit: 'Por que importam os pronomes?'
+
+    mission:
+        header: 'Nossa missão'
+        summary: 'Estamos lutando pela liberdade, respeito e inclusão no idioma.'
+        freedom: >
+            <strong>Liberdade</strong>
+            – para que cada pessoa possa usar <em>para si mesme</em>
+            qualquer pronome que elu acha que descreve elu o melhor.
+        respect: >
+            <strong>Respeito</strong>
+            – que pronomes de <em>outras pessoas</em> são respeitados.
+        inclusiveness: >
+            <strong>Inclusão</strong>
+            – que quando estamos nos referindo para a pessoa que não conhecemos ou para grupo de pessoas,
+            não estamos assumindo gênero delus e não estamos excluindo elus por qualquer razão.
+
+pronouns:
+    header: 'Pronomes'
+    headerLong: 'Pronomes'
+    examples: 'Exemplos de uso em frases'
+    plural: 'Plural'
+    intro: 'Meus pronomes são'
+    normative: 'Normativo'
+    alt:
+        button: 'Gerar uma ligação à formas intercambiáveis'
+        header: 'Formas intercambiáveis'
+        raw: 'intercambiável'
+    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'
+    any:
+        header: 'Qualquer pronome'
+        short: 'qualquer'
+        description: >
+            Enquanto para muita gente é importante que se utilize pronomes específicos para falar dels,
+            a outres não ês incomoda que sejam chamades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
+        options: 'Verifique as opções [share] {/pronomes= aqui}.'
+    others: 'Outras formas'
+    othersRaw: 'Outras'
+    or: 'ou'
+    grammarTable: 'Tabela'
+
+sources:
+    header: 'Fontes'
+    headerLong: 'Exemplos de contextos culturais'
+    headerLonger: 'Linguagem neutra em textos culturais'
+    subheader: 'Corpus de texto de gênero neutro'
+    toc: 'Mostrar tabela de conteúdos'
+    type:
+        All: 'Tudo'
+        Book: 'Livros'
+        Article: 'Artigos'
+        Movie: 'Filmes'
+        Series: 'Séries'
+        Song: 'Música'
+        Poetry: 'Poesia'
+        Game: 'Jogos'
+        Other: 'Outros'
+    submit:
+        header: 'Enviar um exemplo para que seja adicionado'
+        action: 'Enviar'
+        pronouns: 'Que pronomes são usados?'
+        pronounsInfo: 'Digite a forma mais simples do pronome, como se encontra em uma ligação, p. ex. “elu”, “ele”, “ele ou ela”'
+        type: 'Tipo de fonte'
+        author: 'Autor/a/e/x'
+        title: 'Título'
+        extra: 'Informação adicional (tradutor/a/e/x, nome da revista, …)'
+        year: 'Ano de publicação (da versão em português)'
+        fragments: 'Fragmentos'
+        comment: 'Comentário'
+        link: 'Link para o conteúdo'
+        thanks: 'Obrigade pela contribuição!'
+        another: 'Enviar outro'
+        moderation: 'Os envios devem ser aprovados antes de serem publicados.'
+        key: 'Chave'
+        keyInfo: 'Identificador para conectar fontes entre versões e conectar com dicionário'
+        images: 'Imagens'
+    otherVersions: 'Em outros idiomas'
+    referenced: 'Exemplos de uso'
+
+nouns:
+    header: 'Dicionário'
+    headerLong: 'Dicionário de substantivos neutros'
+    headerLonger: 'Dicionário de linguagem neutra'
+    description: 'Não são só os pronomes! Consulte nosso dicionário de linguagem neutra.'
+    intro:
+        - >
+            O uso de uma linguagem inclusiva e neutra respeitando o gênero não se resume aos pronomes.
+            Também é necessário se atentar a isso no uso de substantivos, adjetivos, artigos e numerais de uma maneira que não assuma o gênero.
+            Nem todes ês policias são “homens da lei”. Nem todos ês parceires são “marido/esposo” ou “esposa”.
+        - >
+            Quando se refere a alguém de quem se conhece o gênero,
+            a um grupo de pessoas com vários gêneros distintos,
+            e especialmente às pessoas não binárias que as preferem explicitamente,
+            são usadas as formas neutras.
+        - >
+            A seguir, apresentamos um dicionário com palavras a considerar.
+            Você pode contribuir e adicionar suas sugestões.
+
+    approved: 'entradas aprovadas'
+    pending: 'esperando moderação'
+    edit: 'Propor uma mudança'
+    edited: 'Mudança proposta'
+    editing: 'Está editando uma entrada existente'
+    empty: 'Não encontramos palavras que coincidam com a busca'
+
+    submit:
+        action: 'Enviar'
+        actionLong: 'Enviar uma palavra'
+        thanks: 'Obrigade pela contribuição!'
+        another: 'Enviar outra'
+        moderation: 'Os envios devem ser aprovados antes de serem publicados.'
+
+    template: 'Usar um modelo'
+    root: 'Radical'
+
+    masculine: 'masculino'
+    masculineShort: 'masc.'
+    feminine: 'feminino'
+    feminineShort: 'fem.'
+    neuter: 'neutro'
+    neuterShort: 'neutr.'
+
+    singular: 'singular'
+    singularShort: 'sing.'
+    plural: 'plural'
+    pluralShort: 'pl.'
+
+    image: 'Imagem'
+
+community:
+    header: 'Comunidade'
+    headerLong: 'Comunidade queer'
+
+terminology:
+    header: 'Terminologia'
+    headerLong: 'Dicionário de terminologia queer'
+    info:
+        - >
+            Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+    term: 'Termo'
+    original: 'Etimologia'
+    category: 'Categoria'
+    images: 'Imagens adicionais, de fora do catálogo de bandeiras'
+    definition: 'Definição'
+
+faq:
+    header: 'Perguntas'
+    headerLong: 'Perguntas frequentes'
+    questions:
+        nonbinary:
+            question: 'O que é <em>não binarie</em>?'
+            answer:
+                - >
+                    O gênero é muito mais complicado do que uma simples distinção entre masculino e feminino.
+                    A partir de um ponto de vista puramente biológico, distinguimos sexo cromossômico,
+                    sexo genético, sexo hormonal, sexo fenotípico…
+                    Eles não são necessariamente correspondentes um com o outro e nem sempre são binários.
+
+                    Quando partimos para o aspecto cultural, o “gênero” é visto como uma construção social.
+                    Dependendo do lugar e do momento, ser “uma mulher” ou ser “um homem” pode significar ter
+                    direitos, obrigações e regras a seguir radicalmente diferentes. Na Europa, não é comum que os homens a usem saltos altos e saias,
+                    muitos povos originários da América da Norte reconhecem um terceiro gênero
+                    {https://pt.wikipedia.org/wiki/Dois-esp%C3%ADritos=dois espíritos}, travesti, etc. etc.
+                - >
+                    “Não binárie” é um termo que descreve a identidade de pessoas que
+                    não se encaixam na distinção binária de homem/mulher.
+                    Inclui pessoas
+                    {https://pt.wikipedia.org/wiki/Agênero=agênero},
+                    {https://pt.wikipedia.org/wiki/G%C3%AAnero-fluido=gênero-fluido},
+                    {https://pt.wikipedia.org/wiki/Demigênero=demigênero},
+                    {https://pt.wikipedia.org/wiki/Bigênero=bigênero},
+                    e {https://pt.wikipedia.org/wiki/G%C3%AAnero_n%C3%A3o-bin%C3%A1rio=muito, muito mais}.
+                - >
+                    Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Vai além.
+                    As pessoas não binárias não têm que ser andróginas, usar linguagem neutra etc.
+                    Se trata de liberdade gênero, não de criar novos.
+        why-respect:
+            question: 'Por que devo respeitar os pronomes <em>raros</em> de outra pessoa?'
+            answer:
+                - >
+                    Porque dirigir-se às pessoas da maneira que elas preferem é a base das relações sociais.
+                    Você não chamaria “Lúcia” de “Alicia”.
+                    Há pessoas que não querem ser tratadas por “{/ele=ele}” ou “{/ela=ela}”.
+                    Se não pode aceitar isso, só fale <em>de você mesmo</em>.
+        solo-pronombres:
+            question: 'Então, é suficiente dizer adequar o gênero dos pronomes?'
+            answer:
+                - >
+                    Não! O gênero está presente não só nos pronomes, mas também em substantivos, adjetivos etc.
+                    Você não diz “ela” quando vai se referir a seu “amigo”, mas sim à sua “amiga”.
+                    Respeitar a identidade de gênero de uma pessoa implica a respeita não só nos pronomes, senão
+                    em toda a referência linguística a ela.
+                - >
+                    Assim, dizemos que <em>el</em> é nossê amigue, que pode ser profesore, estudante, etc., e gostamos muito del.
+        how-to-know:
+            question: 'Como saber como eu devo me referir a alguém?'
+            answer:
+                - >
+                    Pode perguntar! Sim, pode ser um pouco desconfortável, mas quanto mais fazemos isso, isso se torna menos desconfortável.
+                    Se podemos perguntar a alguém seu nome, por que não seus pronomes?
+                - >
+                    (Só que por favor não pergunte “você é menino ou menina?”.
+                    Essa pergunta implica em apenas duas respostas corretas,
+                    e sugere uma curiosidade pouco saudável pelos genitais de outras pessoas.
+                    Invés disso, pode perguntar “quais são os seus pronomes?” ou “como eu deveria me referir a você?”)
+                - >
+                    Também é importante normalizar contar seus pronomes quando se apresenta a alguém.
+                    “Olá, sou Miguel, {/el=el/del}”. Não é difícil – mas significa muito para as pessoas trans e não binárias!
+                    A inclusão mais fácil da linha: Só coloque os seus pronomes (o uma ligação aos exemplos do nosso site) em sua <em>bio</em>.
+                - >
+                    Também tenha na mente que muitas pessoas usam um nome e pronomes distintos em diferentes contextos.
+                    Pode ser que alguém no dia a dia se “esconda” no ambiente de trabalho, mas se sinta confortável vivendo sua verdade com amigues.
+                    Seja consciente. Você pode, por exemplo, perguntar “que pronomes eu deveria usar em frente de seu chefe?” etc.
+                - >
+                    Algumas pessoas oferecem vários pronomes, p. ex. “{/ele&ela=ele ou ela}” ou “{/ele&el=ele ou el}”.
+                    Isso significa que eles gostam de todas essas formas. Normalmente, a primeira opção é a que preferem.
+        who-uses-it:
+            question: 'E isso se usa mesmo?'
+            answer:
+                - >
+                    Sim! Milhões de pessoas não binárias no mundo fazem isso.
+                    Cada pronome listado aqui é usado por alguém no seu dia a dia.
+        authority:
+            question: 'Esses pronomes não binários estão aprovados por alguma autoridade?'
+            answer:
+                - >
+                    A língua não é um tipo de magia gravada em pedra e outorgada pelos deuses deusa.
+                    A língua é uma atividade essencialmente social, que evolui através do tempo, tal qual à sociedade.
+                    Nós, usuáries, que <em> somos a autoridade</em> que dita como se usa.
+                - >
+                    Os dicionários podem levar um tempo para registrar essas formas,
+                    mas isso não significa que o uso delas seja ilegal.
+                    Eventualmente essas formas, se usadas com muita frequência, poderão ser incluídas em dicionários..
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por exemplo,
+                    aceita o uso de {/they=“they” singular} como um pronome não binário em inglês.
+                - >
+                    Também é possível consultar {https://scholar.google.com/scholar?hl=en&q=pronomes+não+binários=trabalhos académicos}
+                    sobre os pronomes não binários.
+        bio:
+            question: 'Por que eu deveria colocar meus pronomes nas minhas redes sociais?'
+            answer:
+                - >
+                    Se você é cis (= não é trans) e usa„{/ele=ele}” ou „{/ela=ela}” de acordo com o seu gênero,
+                    pode pensar que seus pronomes são <em>óbvios</em>.
+                    E sim, talvez eles sejam – sempre e quando menciona seu nome em um perfil (e este seja tradicionalmente masculino ou feminino)
+                    ou se sua foto de perfil é uma foto sua.
+                    Muitas pessoas não cumprem com essas características – assim, nem sempre é fácil adivinhar com que pronome preferem ser chamades.
+                - >
+                    Mas se trata, sobretudo, de algo mais importante: talvez seus pronomes sejam “óbvios”,
+                    mas há pessoas cujos pronomes não são.
+                    E eles querem que os abordemos corretamente, independente de se “parecerem” ou não com determinado gênero,
+                    De estarem transicionando ou não (ou de quererem transacionar ou não).
+                    As pessoas não binárias nem sempre “se vêm não binárias”, não devemos a androginia a ninguém.
+                - >
+                    Compartilhar nossos pronomes é importante para as pessoas trans, não binárias e do gênero não-conformista.
+                    Contudo, nos expõe.
+                    Entretanto, se as pessoas cis fizessem o mesmo, facilitaria o mundo para nós.
+                    Essa simples atitude faria poderia fazer com que nos sentíssemos mais cômodes, segures, e bem-vindes
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mais razões (em inglês) aqui).}
+        change:
+            question: 'Posso trocar os meus pronomes?'
+            answer:
+                - >
+                    Claro! Ninguém se surpreende quando alguém muda seu ponto de vista, estilo, hobbies…
+                    Assim, por que seria estranho que esse alguém descobrisse uma parte de sua identidade,
+                    que deixou de gostar do seu nome, que descobriu uma etiqueta que encaixa bem com elu etc?
+        get-used-to:
+            question: 'É possível que eu não me acostume com <em>meus próprios</em> novos pronomes?'
+            answer:
+                - >
+                    Sim! Depois de muitos anos usando os pronomes que melhor se adaptam ao gênero assinado ao nascer,
+                    é comum às vezes ter dificuldade para se adaptar aos novos pronomes.
+                - >
+                    Pronomes ≠ gênero.
+                    Seu gênero não vai mudar de repente porque alguém te chamou de “elu”.
+                    Não se preocupe. Experimente. Veja o que encaixa melhor contigo.
+        preferred-pronouns:
+            question: 'Por que não se deve dizer “pronomes preferidos”?'
+            answer:
+                - >
+                    Porque dizer assim sugere que os pronomes são um capricho.
+                    Se alguém simplesmente “prefere” ser tratada por “ela”, não se sentiria mal se a chamasse de “ele”, não?
+                    Parece um garoto, assim é mais fácil para mim!
+                - >
+                    Não! São nossos pronomes. Não nossos “pronomes preferidos”. São nossos nomes, não nossos “nomes preferidos”.
+                    Se você se importa com sus amigues e sus querides trans e não bináries, chama-lhes da maneira correta.
+        gender-pronouns:
+            question: 'Por que não devo dizer “pronomes de gênero”?'
+            answer:
+                - >
+                    Porque gênero é diferente de pronomes. Os pronomes são só gramática.
+                    As pessoas não binárias podem usar pronomes binários, algumas mulheres lésbicas usam {/ele=ele} por razões culturais etc.
+                - >
+                    Diga simplemente “pronomes”.
+
+links:
+    header: 'Links'
+    headerLong: 'Links externos'
+    recommended: 'Recomendamos'
+
+    blog: 'Blog'
+    mediaShort: 'Mídias'
+    media: 'Pronouns.page nas mídias'
+
+    social: 'Redes sociais'
+
+    languageVersions: 'Versões em outros idiomas'
+
+people: ~
+
+english: ~
+
+contact:
+    header: 'Contato'
+    authors: 'Autores do site'
+    team:
+        name: 'O coletivo "Conselho da Língua Neutra"'
+        nameShort: 'O coletivo'
+        description:
+            - >
+                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                são criadas pelo o coletivo “Conselho da Língua Neutra”.
+        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
+        members: 'Membres atuais'
+        member: 'Membre do coletivo'
+        blog: 'Blog'
+        upcoming: 'Próximas versões'
+
+support:
+    header: 'Apoie-nos'
+    description: >
+        Se você quiser de doar para o servidor, os domínios, stickers etc., ou simplemente comprar uma cerveja para ês autores,
+        podem usar as ligações seguintes:
+
+user:
+    header: 'Conta'
+    headerLong: 'A conta'
+    tokenExpired: 'O token expirou. Por favor atualize a página e tente novamente.'
+    login:
+        placeholder: 'E-mail (ou nome de usuarie, se já está registrade)'
+        action: 'Iniciar sessão'
+        emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
+        userNotFound: 'Usuarie não encontrade.'
+        email:
+            subject: 'O código de início da sessão é %code%'
+            content: |
+                Para confirmar seu endereço de email, entre com o seguinte código no site: %code%.
+
+                Se não solicitou este código, simplesmente ignore esta mensagem.
+        why: >
+            Registrar-se te permite dirigir os cartões ({/@andrea=como esta}).
+        passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
+    code:
+        action: 'Validar'
+        invalid: 'Código inválido.'
+    account:
+        changeUsername:
+            header: 'Nome do usuárie'
+            action: 'Mude'
+            invalid: 'O nome de usuárie deve ter entre 4 e 16 caracteres e só pode conter números, letras, pontos, traços e sublinhados.'
+            taken: 'Este nome de usuárie já está em uso.'
+        changeEmail:
+            header: 'Endereço de e-mail'
+            action: 'Mude'
+            invalid: 'Endereço de e-mail inválido.'
+            taken: 'Este endereço já está em uso.'
+        admin: 'Admin'
+    logout: 'Fechar sessão'
+    avatar:
+        header: 'Avatar'
+        change: 'Mude'
+    deleteAccount: 'Eliminar conta'
+    deleteAccountConfirm: 'Confirma que quer eliminar a conta? Isso será irreversível!'
+    socialConnection:
+        list: 'Conexões de redes sociais'
+        connect: 'Conectar'
+        refresh: 'Atualizar'
+        disconnect: 'Desconectar'
+        disconnectConfirm: 'Confirma que quer excluir esta conexão? (Sempre pode iniciar sessão usando seu endereço %email%)'
+
+profile:
+    description: 'Descrição'
+    names: 'Nomes'
+    pronouns: 'Pronomes'
+    pronounsInfo: >
+        Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
+        ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
+        Também pode ser utilizado {/pronomes#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
+    pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
+    words: 'Palavras'
+    birthday: 'Idade'
+    birthdayInfo: 'Não publicamos a data do aniversário, somente a idade calculada.'
+    flags: 'Bandeiras'
+    flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
+    flagsCustom: 'Enviar bandeira personalizada'
+    flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
+    links: 'Links'
+    linksCake: 'Recomendamos linkar com'
+    column: 'Coluna'
+
+    list: 'Os cartões'
+    init: 'Criar um cartão'
+    show: 'Mostrar'
+    edit: 'Editar'
+    delete: 'Excluir'
+    deleteConfirm: 'Você quer mesmo eliminar este cartão?'
+    editor:
+        header: 'Editor de cartões'
+        save: 'Salve o cartão'
+        defaults: 'Restaurar valores padrão'
+    opinion:
+        yes: 'Sim'
+        jokingly: 'É brincadeira'
+        close: 'Só se somos pessoas próximas'
+        meh: 'OK'
+        no: 'Não'
+
+    banner: >
+        Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
+        que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
+        Depois pode por no seu bio ou rodapé de e-mail.
+        Somente crie a sua conta {/account=aqui}.
+    bannerButton: 'Crie um cartão'
+    card:
+        link: 'Imagem do cartão'
+        generate: 'Gerar'
+        generating: 'Gerando a imagem…'
+    empty: 'Essa pessoa ainda não especificou suas informações pessoais'
+
+share: 'Compartilhar'
+
+crud:
+    approve: 'Aprovar'
+    hide: 'Esconder'
+    remove: 'Excluir'
+    removeConfirm: 'Confirma que quer excluir esse item?'
+    edit: 'Editar'
+    add: 'Adicionar'
+    filter: 'Filtrar'
+    filterLong: 'Filtrar a lista…'
+    search: 'Buscar…'
+    author: 'Adicionado por'
+    saved: 'Alterações salvas com sucesso!'
+    loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
+    copy: 'Copiar link'
+    download: 'Baixar'
+
+footer:
+    license: >
+        {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
+    links: 'Contato, redes sociais, apoio'
+
+notFound:
+    message: 'Página não encontrada'
+    back: 'Voltar para a página de início'
+
+authRequired:
+    message: 'Você deve iniciar uma sessão para ver'
+    go: 'Ir para o início de sessão'
+
+confirm:
+    header: 'Aplicar essa decisão?'
+    yes: 'Sim'
+    no: 'Não, cancelar'
+    ok: 'OK'
+
+terms:
+    header: 'Termos de Serviço'
+    lastUpdate: 'Atualizados pela última vez em'
+    consent: 'Ao se registrar, você aceita os {/terinos=Termos de Serviço}.'
+
+admin:
+    header: 'Panel de Admins'
+    user:
+        user: 'Usuárie'
+        email: 'E-mail'
+        roles: 'Rol'
+        profiles: 'Perfis'
+        confirmRole: 'Você quer mesmo mudar o nome de usuárie de @%username% para "%role%"?'
+
+table:
+    empty: 'Vazio…'
+    count: 'Conta'
+    sort: 'Arraste para ordenar'
+    scrollUp: 'Arraste para cima'
+    more: 'Mostrar mais'
+
+api:
+    header: 'Public API'
+    example: 'Exemplo'
+    query: 'Query string parameters'
+
+quotation:
+    start: '“'
+    end: '”'
+
+localise:
+    shorter: 'Adicionar versões'
+    short: 'Adicionar versões em outras línguas'
+    long: 'Quer adicionar uma versão em outra língua? Consulte'
+    longLink: 'este manual!'
+
+images:
+    upload:
+        instruction: 'Clique aqui ou arraste sua foto para cá'
+        instructionShort: 'Carregar'
+
+error:
+    generic: 'Alguma coisa deu errado, tente novamente'
+
+captcha:
+    reason: 'Por favor, prove que você não é um robô tentando spamar ou atacar os serviços de navegação.'
+    invalid: 'O Captcha foi invalidado, por favor, tente novamente'
+
+mode:
+    dark: 'Modo escuro'
+    light: 'Modo claro'
+
+ban:
+    reason: 'Razão de ban'
+    visible: '(isso vai ser visto para usuárie)'
+    terms: 'Regras quebradas (obrigatório)'
+    action: 'Ban essa pessoa'
+    confirm: 'Você está certe que quer banir @%username%?'
+    header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
+    banned: 'Banido'
+    termsIntro: 'De acordo com nossos {/termos=termos de uso}:'
+
+report:
+    action: 'Reportar abuso'
+    comment: 'por favor, explique brevemente o que há de errado com esse perfil'
+    confirm: 'Você tem certeza de que deseja reportar @%username%?'
+    sent: 'Sua reportação foi enviada. Agradecemos pela colaboração!'
+
+flags:
+    Abroromantic: 'Abrorromânti{inflection_c}'
+    Abrosexual: 'Abrossexual'
+    Achillean: 'Aquilean{inflection}'
+    Agender: 'Agênero'
+    Alloromantic_Asexual: 'Alorromânti{inflection_c} assexual'
+    Ambiamorous: 'Ambiamoros{inflection}'
+    Anarcha-Queer: 'Anarcaqueer'
+    Androgyne: 'Andrógin{inflection}'
+    Androsexual: 'Androssexual'
+    Aporagender: 'Aporagênero'
+    Archaeopronouns: 'Arqueopronomes'
+    Aroace: 'Aroace'
+    Aromantic: 'Arromânti{inflection_c}'
+    Aromantic_Allosexual: 'Arromânti{inflection_c} alossexual'
+    Asexual: 'Assexual'
+    Autigender: 'Autigênero'
+    Bear: 'Urso'
+    Bicurious: 'Bi-curios{inflection}'
+    Bigender: 'Bigênero'
+    Biromantic: 'Birromânti{inflection_c}'
+    Bisexual: 'Bissexual'
+    Butch: 'Butch'
+    Ceteroromantic: 'Ceterorromânti{inflection_c}'
+    Ceterosexual: 'Ceterossexual'
+    Cis_Ally: 'Aliad{inflection} cis'
+    Demiboy: 'Demi-garoto'
+    Demigender: 'Demigênero'
+    Demigirl: 'Demi-garota'
+    Demiromantic: 'Demirromânti{inflection_c}'
+    Demisexual: 'Demissexual'
+    Diamoric: 'Diamóri{inflection_c}'
+    Enbian: 'Nãobian{inflection}'
+    Fa*afafine: 'Fa''afafine'
+    Femme: 'Afeminad{inflection}'
+    Gay: 'Gay'
+    Gender_Questioning: 'Questionando o gênero'
+    Genderfae: 'Fadagênero'
+    Genderfaun: 'Faunogênero'
+    Genderfluid: 'Gênero-fluido'
+    Genderflux: 'Fluxo-gênero'
+    Genderqueer: 'Gênero queer'
+    Greyasexual: 'Assexual cinza'
+    Greyaromantic: 'Arromânti{inflection_c} cinza'
+    Gynesexual: 'Ginossexual'
+    Heteroflexible: 'Heteroflexível'
+    Heteroromantic: 'Heterorromânti{inflection_c}'
+    Heterosexual: 'Heterossexual'
+    Hijra: 'Hijra'
+    Homoflexible: 'Homoflexível'
+    Homoromantic: 'Homorromânti{inflection_c}'
+    Intersex: 'Intersexo'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Orgulho couro'
+    Lesbian: 'Lésbica'
+    Lesbiromantic: 'Lesbirromânti{inflection_c}'
+    Maverique: 'Maverique'
+    Monoamorous: 'Monoamoros{inflection}'
+    Monogamous: 'Monogâmic{inflection_c}'
+    Muxe: 'Muxe'
+    Nebularomantic: 'Nebulosarromânti{inflection_c}'
+    Neopronouns: 'Neopronomes'
+    Neutrois: 'Neutrês'
+    Nonbinary: 'Não-binári{inflection}'
+    Omniromantic: 'Omnirromânti{inflection_c}'
+    Omnisexual: 'Omnissexual'
+    Oriented_Aroace: 'Aroace orientad{inflection}'
+    Pangender: 'Pangênero'
+    Panromantic: 'Panrromânti{inflection_c}'
+    Pansexual: 'Pansexual'
+    Polyamorous: 'Poliamoros{inflection}'
+    Polyromantic: 'Polirromânti{inflection_c}'
+    Polysexual: 'Polissexual'
+    Pomoromantic: 'Pomorromânti{inflection_c}'
+    Pomosexual: 'Pomossexual'
+    Progress_Pride: 'Orgulho progresivo'
+    Queer: 'Queer'
+    Queerian: 'Queerian{inflection}'
+    Queerplatonic: 'Queerplatôni{inflection_c}'
+    Quoiromantic: 'Quoiromânti{inflection_c}'
+    Sapphic: 'Sáfi{inflection_c}'
+    Sexuality_Questioning: 'Questionando a sexualidade'
+    Straight_Ally: 'Aliad{inflection} hetero'
+    Toric: 'Tóri{inflection_c}'
+    Transfeminine: 'Transfemenin{inflection}'
+    Transgender: 'Transgênero'
+    Transmasculine: 'Transmasculin{inflection}'
+    Transneutral: 'Transneutr{inflection}'
+    Trigender: 'Trigênero'
+    Trixic: 'Tríxi{inflection_c}'
+    Two_Spirit: 'Dois-espíritos'
+    Xenogender: 'Xenogênero'
+
+calendar:
+    header: 'Calendário'
+    headerLong: 'Calendário queer'
+    months:
+        1: 'Janeiro'
+        2: 'Fevereiro'
+        3: 'Março'
+        4: 'Abril'
+        5: 'Maio'
+        6: 'Junho'
+        7: 'Julho'
+        8: 'Agosto'
+        9: 'Setembro'
+        10: 'Outubro'
+        11: 'Novembro'
+        12: 'Dezembro'
+    dates:
+        1: '%day% de janeiro'
+        2: '%day% de fevereiro'
+        3: '%day% de março'
+        4: '%day% de abril'
+        5: '%day% de maio'
+        6: '%day% de junho'
+        7: '%day% de julho'
+        8: '%day% de agosto'
+        9: '%day% de setembro'
+        10: '%day% de outubro'
+        11: '%day% de novembro'
+        12: '%day% de dezembro'
+    months_abl:
+        1: 'janeiro'
+        2: 'fevereiro'
+        3: 'março'
+        4: 'abril'
+        5: 'maio'
+        6: 'junho'
+        7: 'julho'
+        8: 'agosto'
+        9: 'setembro'
+        10: 'outubro'
+        11: 'novembro'
+        12: 'dezembro'
+    events:
+        pride_month: 'Mês do Orgulho'
+        trans_month: 'Mês da Consciência Trans'
+        zaimki_birthday: 'Aniversário do pronouns.page'
+        agender_day: 'Dia do Orgulho Agênero'
+        asexuality_day: 'Dia Internacional da Assexualidade'
+        bisexuality_day: 'Dia de Comemorar a Bissexualidade'
+        drag_day: 'Dia Drag'
+        idahobit: 'Dia Internacional Contra a Homomisia, Transmisia e Bimisia'
+        intersex_day: 'Dia da Consciência Intersexo'
+        intersex_remembrance_day: 'Dia da Memória Intersexo'
+        lesbian_day: 'Dia Internacional das Lésbicas'
+        lesbian_visibility_day: 'Dia Internacional da Visibilidade Lésbica'
+        coming_out_day: 'Dia de Sair do Armário'
+        nonbinary_day: 'Dia de Pessoas Não-Binárias'
+        pan_day: 'Dia da Consciência Pansexual e Panromântica'
+        trans_remembrance_day: 'Dia da Memória Transgênero'
+        trans_visibility_day: 'Dia Internacional da Visibilidade Trans'
+        zero_discrimination_day: 'Dia de Discriminação Zero'
+        arospec_week: 'Semana da Consciência do Espectro Arromântico'
+        asexual_week: 'Semana da Visibilidade e Orgulho Assexual'
+        bisexual_week: 'Semana da Consciência Bissexual'
+        pronouns_day: 'Dia dos Pronomes'
+        trans_week: 'Semana da Consciência Trans'
+        trans_parent_day: 'Dia de Nans Trans'
+        nonbinary_week: 'Semana da Consciência Não-Binária'
+        polyamory_day: 'Dia do Poliamor'
+        homophobia_sport: 'Dia Internacional Contra a Homomisia nos Esportes'
+        gay_uncles_day: 'Dia dos Tios Gays'
+        lgbtq_stem: 'Dia de CTEM LGBTQ+'
+        trans_depathologization: 'Dia de Ação pela Depatologização Trans'
+        lgbti_book_day: 'Dia do Livro com Tema LGBTI'
+        human_rights_day: 'Dia dos Direitos Humanos'
+        nonbinary_parents_day: 'Dia de Nans Não-Bináries'
+        trans_prisoner: 'Dia de Ação e Solidariedade de Prisioneire Trans'
+        xenogender_day: 'Dia da Visibilidade Xenogênera'
+        genderqueer_day: 'Dia da Visibilidade Gênero-queer'
+        genderfluid_day: 'Dia da Visibilidade de Gênero-fluído'
+        aids_day: 'Dia Mundial de Combate Contra a Aids/Sida'
+        tolerance_day: 'Dia Internacional de Tolerância'
+        social_justice_day: 'Dia Mundial da Justiça Social'
+        stonewall_day: 'Aniversário da Revolta de Stonewall'
+        domestic_violence: 'Dia de Consciência da Violência Doméstica LGBTQ'
+        polysexual_day: 'Dia da Visibilidade Polissexual/Polirromântica'
+        orlando_day: 'Aniversário do massacre de Orlando'
+        aids_memorial: 'Vigília peles Môrtes de Aids/Sida'
+        health_week: 'Semana de Consciência da Saúde LGBT'
+        lesbian_visibility_week: 'Semana da Visibilidade Lésbica'
+        demigender_day: 'Dia da Consciência Demigênero'
+        pan_pride_day: 'Dia do Orgulho Pansexual'
+        transmasculine_day: 'Dia de Luta e Resistência de Pessoas Transmasculinas'
+        asexual_visibility_day: 'Dia da Visibilidade Assexual'
+        bi_health_month: 'Mês de Consciência da Saúde das Pessoas Bissexuais'
+        holocaust_remembrance_day: 'Dia Internacional da Lembrança do Holocausto'
+        family_equality_day: 'Dia Mundial da Igualdade Familiar'
+        aro_month: 'Mês da Consciência do Espectro Arromântico'
+        black_ribbon_day: 'Dia Europeu da Memória das Vítimas do Estalinismo e do Nazismo'
+        black_queer_week: 'Semana da História das Pessoas Queer Negras'
+        mena_lesbian_day: 'Dia do Orgullo das Mulheres Lesbicas e Queer do Médio Oriente e Norte da África'
+        hate_crime_awareness_week: 'Semana da Conscientização sobre Crimes de Ódio'
+        deaf_awareness_week: 'Semana da consciência dos surdes LGBTQ+'
+        suicide_prevention_day: 'Dia Mundial de Prevenção do Suicídio'
+        suicide_prevention_month: '{https://pt.wikipedia.org/wiki/Setembro_Amarelo=Setembro Amarelo}'
+        aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
+        genderfluid_week: 'Semana da Consciência de Gênero-fluído'
+
+    banner: 'Hoje celebramos'
+    celebrating_custom: 'celebra-se'
+    celebrating_day: 'celebra-se em'
+    celebrating_week: 'celebra-se em'
+    celebrating_month: 'celebra-se em'
+    image:
+        header: 'Baixar uma imagem'
+        overview: 'Visão geral'
+        labels: 'Etiquetas'
+    link: 'Link'
+    full: 'calendário completo'
