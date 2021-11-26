@@ -9,76 +9,79 @@
         <p>Stats counted: {{$datetime(stats.calculatedAt)}}</p>
 
         <section v-if="$isGranted('users')">
-            <details class="border mb-3" @click="loadUsers">
+            <details class="border mb-3" open>
                 <summary class="bg-light p-3">
                     <Icon v="users"/>
                     Users
-                    ({{stats.users.overall}} overall, {{stats.users.admins}} admins, {{visibleUsers.length}} visible)
+                    ({{stats.users.overall}} overall, {{stats.users.admins}} admins)
                 </summary>
                 <div class="border-top">
-                    <Loading :value="users" size="5rem">
-                        <div class="input-group mt-4">
-                            <input class="form-control" v-model="userFilter" :placeholder="$t('crud.filterLong')"/>
-                            <button :class="['btn', adminsFilter ? 'btn-secondary' : 'btn-outline-secondary']"
-                                    @click="adminsFilter = !adminsFilter"
-                            >
-                                Only admins
-                            </button>
-                            <button :class="['btn', localeFilter ? 'btn-secondary' : 'btn-outline-secondary']"
-                                    @click="localeFilter = !localeFilter"
-                            >
-                                Only this version
-                            </button>
-                        </div>
-                        <Table :data="visibleUsers" :columns="4">
-                            <template v-slot:header>
-                                <th class="text-nowrap">
-                                    <T>admin.user.user</T>
-                                </th>
-                                <th class="text-nowrap">
-                                    <T>admin.user.email</T>
-                                </th>
-                                <th class="text-nowrap">
-                                    <T>admin.user.roles</T>
-                                </th>
-                                <th class="text-nowrap">
-                                    <T>admin.user.profiles</T>
-                                </th>
-                            </template>
+                    <div class="input-group mt-4">
+                        <input class="form-control" v-model="userFilter" :placeholder="$t('crud.filterLong')"/>
+                        <button :class="['btn', adminsFilter ? 'btn-secondary' : 'btn-outline-secondary']"
+                                @click="adminsFilter = !adminsFilter"
+                        >
+                            Only admins
+                        </button>
+                        <button :class="['btn', localeFilter ? 'btn-secondary' : 'btn-outline-secondary']"
+                                @click="localeFilter = !localeFilter"
+                        >
+                            Only this version
+                        </button>
+                    </div>
+                    <ServerTable
+                        endpoint="/admin/users"
+                        :query="{filter: userFilterDelayed || undefined, localeFilter: localeFilter || undefined, adminsFilter: adminsFilter || undefined}"
+                        :columns="4"
+                        count
+                    >
+                        <template v-slot:header>
+                            <th class="text-nowrap">
+                                <T>admin.user.user</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <T>admin.user.email</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <T>admin.user.roles</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <T>admin.user.profiles</T>
+                            </th>
+                        </template>
 
-                            <template v-slot:row="s">
-                                <td>
-                                    <a :href="'https://pronouns.page/@ + s.el.username'">@{{s.el.username}}</a>
-                                </td>
-                                <td>
-                                    <p>
-                                        <a :href="`mailto:${s.el.email}`" target="_blank" rel="noopener">
-                                            {{s.el.email}}
-                                        </a>
-                                    </p>
-                                    <!--
-                                    <ul v-if="s.el.socialConnections.length" class="list-inline">
-                                        <li v-for="conn in s.el.socialConnections" class="list-inline-item">
-                                            <Icon :v="socialProviders[conn].icon || conn" set="b"/>
-                                        </li>
-                                    </ul>
-                                    -->
-                                </td>
-                                <td>
-                                    <Roles :user="s.el"/>
-                                </td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        <li v-for="locale in s.el.profiles" v-if="locales[locale]">
-                                            <LocaleLink :link="`/@${s.el.username}`" :locale="locale">
-                                                {{ locales[locale].name }}
-                                            </LocaleLink>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </template>
-                        </Table>
-                    </Loading>
+                        <template v-slot:row="s">
+                            <td>
+                                <a :href="'https://pronouns.page/@ + s.el.username'">@{{s.el.username}}</a>
+                            </td>
+                            <td>
+                                <p>
+                                    <a :href="`mailto:${s.el.email}`" target="_blank" rel="noopener">
+                                        {{s.el.email}}
+                                    </a>
+                                </p>
+                                <!--
+                                <ul v-if="s.el.socialConnections.length" class="list-inline">
+                                    <li v-for="conn in s.el.socialConnections" class="list-inline-item">
+                                        <Icon :v="socialProviders[conn].icon || conn" set="b"/>
+                                    </li>
+                                </ul>
+                                -->
+                            </td>
+                            <td>
+                                <Roles :user="s.el"/>
+                            </td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li v-for="locale in s.el.profiles" v-if="locales[locale]">
+                                        <LocaleLink :link="`/@${s.el.username}`" :locale="locale">
+                                            {{ locales[locale].name }}
+                                        </LocaleLink>
+                                    </li>
+                                </ul>
+                            </td>
+                        </template>
+                    </ServerTable>
                 </div>
             </details>
         </section>
@@ -194,7 +197,7 @@
 </template>
 
 <script>
-    import {head, isGranted} from "../src/helpers";
+    import {head} from "../src/helpers";
     import {socialProviders} from "../src/data";
 
     export default {
@@ -207,7 +210,6 @@
                 localeFilter: true,
                 adminsFilter: false,
                 users: undefined,
-                visibleUsers: [],
             }
         },
         async asyncData({ app, store }) {
@@ -227,14 +229,6 @@
             };
         },
         methods: {
-            async loadUsers() {
-                if (this.users === undefined) {
-                    this.users = (await this.$axios.$get(`/admin/users`)).map(u => {
-                        u.profiles = u.profiles ? u.profiles.split(',') : [];
-                        return u;
-                    });
-                }
-            },
             async handleReport(id) {
                 await this.$confirm('Are you sure you want to mark this report as handled?', 'success');
                 await this.$post(`/admin/reports/handle/${id}`);
@@ -242,16 +236,6 @@
                     if (r.id === id) { r.isHandled = true; }
                     return r;
                 });
-            },
-            calcVisibleUsers() {
-                if (this.users === undefined) {
-                    return [];
-                }
-                return this.users.filter(u =>
-                    u.username.toLowerCase().includes(this.userFilterDelayed.toLowerCase())
-                    && (!this.adminsFilter || u.roles !== '')
-                    && (!this.localeFilter || u.profiles.includes(this.config.locale))
-                );
             },
         },
         computed: {
@@ -272,18 +256,6 @@
                 this.userFilterDelayHandle = setTimeout(() => {
                     this.userFilterDelayed = this.userFilter;
                 }, 500);
-            },
-            userFilterDelayed() {
-                this.visibleUsers = this.calcVisibleUsers();
-            },
-            localeFilter() {
-                this.visibleUsers = this.calcVisibleUsers();
-            },
-            adminsFilter() {
-                this.visibleUsers = this.calcVisibleUsers();
-            },
-            users() {
-                this.visibleUsers = this.calcVisibleUsers();
             },
         },
         head() {

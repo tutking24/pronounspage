@@ -73,15 +73,48 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const users = await req.db.all(SQL`
+    const conditions = [];
+
+    let sql = SQL`
         SELECT u.id, u.username, u.email, u.roles, u.avatarSource, group_concat(p.locale) AS profiles
         FROM users u
         LEFT JOIN profiles p ON p.userId = u.id
+    `
+
+    if (req.query.filter) {
+        conditions.push(SQL`u.username LIKE ${'%' + req.query.filter + '%'}`);
+    }
+    if (req.query.localeFilter) {
+        conditions.push(SQL`p.locale=${global.config.locale}`);
+    }
+    if (req.query.adminsFilter) {
+        conditions.push(SQL`u.roles != ''`);
+    }
+
+    let conditionsSql = SQL``;
+    if (conditions.length) {
+        let i = 0;
+        for (let condition of conditions) {
+            conditionsSql = conditionsSql.append(i++ ? SQL` AND ` : SQL` WHERE `).append(condition);
+        }
+    }
+
+    sql = sql.append(conditionsSql).append(SQL`
         GROUP BY u.id
         ORDER BY u.id DESC
+        LIMIT ${parseInt(req.query.limit || 100)}
+        OFFSET ${parseInt(req.query.offset || 0)}
     `);
 
-    return res.json(users);
+    const countSql = SQL`SELECT COUNT(*) AS c FROM (SELECT u.id FROM users u LEFT JOIN profiles p ON p.userId = u.id`.append(conditionsSql).append(` GROUP BY u.id)`);
+
+    return res.json({
+        count: (await req.db.get(countSql)).c,
+        data: (await req.db.all(sql)).map(u => {
+            u.profiles = u.profiles ? u.profiles.split(',') : [];
+            return u;
+        }),
+    });
 }));
 
 router.get('/admin/stats', handleErrorAsync(async (req, res) => {
