@@ -66,6 +66,7 @@ pronouns:
                     - [ 'Екатерина Новосельских', 'Е. Новосельских' ]
                     - [ 'Иван Иванович Иванов', 'И. И. Иванов' ]
     others: 'Другие местоимения'
+    threeForms: true
 
 pronunciation:
     enabled: true
