@@ -52,7 +52,7 @@
 
                         <template v-slot:row="s">
                             <td>
-                                <a :href="'https://pronouns.page/@ + s.el.username'">@{{s.el.username}}</a>
+                                <a :href="'https://pronouns.page/@' + s.el.username">@{{s.el.username}}</a>
                             </td>
                             <td>
                                 <p>
