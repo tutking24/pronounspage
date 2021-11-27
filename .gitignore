@@ -6,6 +6,8 @@
 /db.sqlite-wal
 /db.sqlite-*
 
+/*.sqlite
+
 /daemonise.json
 /daemonise.log
 

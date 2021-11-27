@@ -17,7 +17,13 @@ pronouns:
             他人が自分のついて話しているとき、三人称代名詞形式の間で交互になることが好きな一部もいます。
         examples: ['彼&彼女', '彼&あの人', '彼女&あの人']
     null: false
-    emoji: false
+    emoji:
+        description: 'Emojiself pronouns' # TODO
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.' # TODO
+        morphemes:
+            base_pronoun: '#'
+        examples: ['💫', '💙']
+        template: 'Open one of the examples and simply replace the emoji in the URL with your own.' # TODO
     slashes: true
     avoiding: false
     others: '他の三人称代名詞'
