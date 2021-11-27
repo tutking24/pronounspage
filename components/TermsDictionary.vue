@@ -97,13 +97,11 @@
             </template>
         </Table>
 
-        <template v-if="config.nouns.submit">
-            <Separator icon="plus"/>
+        <Separator icon="plus"/>
 
-            <div class="px-3">
-                <TermsSubmitForm ref="form"/>
-            </div>
-        </template>
+        <div class="px-3">
+            <TermsSubmitForm ref="form"/>
+        </div>
     </Loading>
 </template>
 
