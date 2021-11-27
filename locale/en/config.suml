@@ -230,6 +230,10 @@ links:
             iconSet: 'b'
             url: 'https://pronouns.alejo.io/'
             headline: 'Display pronouns in Twitch Chat'
+        -
+            icon: 'play-circle'
+            url: 'https://youtu.be/0oYd4r6H9W0'
+            headline: 'Personal Pronouns: Understanding He, She, They, and Beyond | BrainPOP'
     academic: []
     mediaGuests: []
     mediaMentions: []
