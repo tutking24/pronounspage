@@ -388,7 +388,7 @@ user:
 
                 Si vous n’avez pas demandé ce code, ignorez simplement ce message.
         why: >
-            S’inscrire vous permet de gérer vos cartes ({/@andrea=comme celle-ci}).
+            S’inscrire vous permet de gérer vos cartes ({/@example=comme celle-ci}).
         passwordless: 'Ce site ne stocke aucun mot de passe. {https://avris.it/blog/passwords-are-passé=Plus d’infos.}'
     code:
         action: 'Valider'
@@ -456,7 +456,7 @@ profile:
         no: 'Non'
 
     banner: >
-        Vous pouvez utiliser ce site pour créer votre carte, {/@andrea=comme celle ci},
+        Vous pouvez utiliser ce site pour créer votre carte, {/@example=comme celle ci},
         avec vos noms, pronoms, drapeaux, mots préférés, etc…
         Vous pourrez ensuite copier le lien dans votre bio ou dans vos signatures de mail.
         Créez votre compte {/account=ici}.

@@ -381,7 +381,7 @@ user:
 
                 Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.
         why: >
-            Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@andrea=wie diese}).
+            Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@example=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
     code:
         action: 'Validieren'
@@ -449,7 +449,7 @@ profile:
         no: 'Nein'
 
     banner: >
-        Du kannst unsere Webseite auch nutzen, um eine Visitenkarte {/@andrea=wie diese} zu erstellen,
+        Du kannst unsere Webseite auch nutzen, um eine Visitenkarte {/@example=wie diese} zu erstellen,
         die deinen Namen, Pronomen, Pride Flaggen, verlinkte Wörter uvm. enthält.
         Diese kannst du dann in deiner Biografie oder Email-Signatur verlinken.
         Erstelle einfach {/account=hier} einen Account.

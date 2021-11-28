@@ -371,7 +371,7 @@ user:
 
                 Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
         why: >
-            Door te registreren kun je een kaart ({/@andrea=zoals deze}) maken.
+            Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
     code:
         action: 'Valideer'
@@ -440,7 +440,7 @@ profile:
         no: 'Nee'
 
     banner: >
-        Je kan ook onze website gebruiken om een kaart te genereren, {/@andrea=zoals deze},
+        Je kan ook onze website gebruiken om een kaart te genereren, {/@example=zoals deze},
         Die je namen, voornaamwoorden etc. bevat.
         Je kan hier naar verwijzen in je bio of in je email-footer.
         Just create an account {/account=hier}.

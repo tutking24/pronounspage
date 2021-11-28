@@ -390,7 +390,7 @@ user:
 
                 Se não solicitou este código, simplesmente ignore esta mensagem.
         why: >
-            Registrar-se te permite dirigir os cartões ({/@andrea=como esta}).
+            Registrar-se te permite dirigir os cartões ({/@example=como esta}).
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Validar'
@@ -458,7 +458,7 @@ profile:
         no: 'Não'
 
     banner: >
-        Você pode usar o nosso site para criar cartões, {/@andrea=como esse},
+        Você pode usar o nosso site para criar cartões, {/@example=como esse},
         que está incluindo seus nomes, prononomes, bandeiras, palavras de que se gosta, etc.
         Depois pode por no seu bio ou rodapé de e-mail.
         Somente crie a sua conta {/account=aqui}.
