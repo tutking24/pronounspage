@@ -1136,6 +1136,25 @@ links:
                 „Słownik Neutratywów Języka Polskiego”, also ein Wörterbuch der Neutrativen der Polnischen Sprache,
                 und das ich auch mit einer Bewegung in der Gesellschaft von dieser Community verbunden,
                 und hat zum Ziel einfach mögliche Lösungsansätze zu den Formen anzubieten.
+        -
+            icon: 'newspaper'
+            url: 'https://www.komputerswiat.pl/artykuly/redakcyjne/wywiad-z-piotrem-w-cholewa-tlumaczem-swiata-dysku-o-technologii-jezyku-i-ksiazkach/4llcgfj'
+            headline: 'Wywiad z Piotrem W. Cholewą, tłumaczem "Świata Dysku". O technologii, języku i książkach Pratchetta'
+            extra: ' – <strong>Komputer Świat</strong>'
+            quote: >
+                KŚ: Ale jeżeli dziś przyszedłby ktoś i powiedział, że powinniśmy zaktualizować wszystkie książki, by pojawiły się w nich chociażby feminatywy?<br/>
+                Może się narażę troszkę… Feminatywy są w porządku, ale brakuje mi w naszym języku czegoś, co mają w Anglii, czyli określeń neutralnych płciowo. Jako tłumaczowi jest mi ciężko, gdy np. w książce dziewczyna udaje chłopaka lub odwrotnie, to ta osoba cały czas mówi “normalnie”. Tam nie ma “byłem/byłam”, tylko wszystko jest takie samo. Zarówno jest to wygodne dla takiego story, jak i strasznie trudne przy tłumaczeniu. Więc ja osobiście wolałbym nie tyle więcej feminatywów, co określeń gender-neutral.<br/>
+                KŚ: Ostatnio coraz głośniej mówi się o “dukaizmach”<br/>
+                Tak, też o tym rozmawiałem, dowiedziałem się, że są także i “dukatywy”. Fajny pomysł to jest, ale dla nas wciąż one brzmią obco. Z drugiej strony nie takie rzeczy przechodziły, język się przyzwyczai. Myślę, że właśnie te dukaizmy i dukatywy to jest niezłe rozwiązanie.
+        -
+            icon: 'newspaper'
+            url: 'https://kultura.onet.pl/wywiady-i-artykuly/marieke-lucas-rijneveld-niepokoj-przychodzi-o-zmierzchu-wywiad/13xfp78'
+            headline: 'Marieke Lucas Rijneveld: śmierć brata ukryła się w moim ciele'
+            extra: ' – <strong>Onet Kultura</strong>'
+            quote: >
+                Język polski nie sprzyja mówieniu o osobach niebinarnych, ze względu na odmianę czasowników.
+                Dziękuję zespołowi tranzycja.pl, który doradził mi, jak w odpowiedni sposób przetłumaczyć tę rozmowę,
+                polecając mi "Manifest Niebinarnej Polszczyzny", który można znaleźć pod tym linkiem.
     socials:
         -
             icon: 'twitter'
