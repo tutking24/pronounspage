@@ -271,7 +271,7 @@ faq:
                     Mais cela ne les rend aucunement moins légitimes.
                     Au bout d’un moment, si elles sont assez utilisées, les nouvelles formes de langage finissent par être inclues dans le dictionnaire.
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, par exemple,
-                    accepte l’usage du {/they=« they » singulier} pour les personnes non-binaires.
+                    accepte l’usage du {/they=« they » singulier} pour les personnes non-binaires. L'ajout du pronom "iel" dans le dictionnaire {https://dictionnaire.lerobert.com/definition/iel=Le Robert} montre que son utilisation dans la vie de tous les jours permet de promouvoir le mouvement LGBTQIA+ et l'inclusion en général.
                 - >
                     Vous pouvez aussi lire des {https://scholar.google.com/scholar?hl=en&q=neopronouns=travaux académiques}
                     sur les néopronoms.
@@ -694,6 +694,19 @@ calendar:
         10: '%day% octobre'
         11: '%day% novembre'
         12: '%day% décembre'
+    months_abl:
+        1: 'janvier'
+        2: 'février'
+        3: 'mars'
+        4: 'avril'
+        5: 'mai'
+        6: 'juin'
+        7: 'juillet'
+        8: 'août'
+        9: 'septembre'
+        10: 'octobre'
+        11: 'novembre'
+        12: 'décembre'        
     events:
         pride_month: 'Mois de la fierté'
         trans_month: 'Mois de sensibilisation trans'
