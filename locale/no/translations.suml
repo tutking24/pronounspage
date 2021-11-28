@@ -382,7 +382,7 @@ user:
 
                 Hvis du ikke spurte om denne koden, ignorer denne meldingen.
         why: >
-            Å registrere seg lar deg redigere kortene dine ({/@andrea=sånn som denne}).
+            Å registrere seg lar deg redigere kortene dine ({/@example=sånn som denne}).
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Gyldig'
@@ -451,7 +451,7 @@ profile:
         meh: 'Okay'
         no: 'Nei'
     banner: >
-        Du kan også bruke nettsiden vår til å lage et kort, {/@andrea=sånn som denne},
+        Du kan også bruke nettsiden vår til å lage et kort, {/@example=sånn som denne},
         som inneholder navnene dine, pronomen, pride flagg, likte ord, etc.
          Så kan du linke den til din bio eller epost-signatur.
         Bare lag en bruker {/account=her}.

@@ -355,7 +355,7 @@ user:
 
                 如果你沒有要求這個代碼，請忽略消息。
         why: >
-            註冊可以讓你管理你的卡（{/@andrea=像這個}）。
+            註冊可以讓你管理你的卡（{/@example=像這個}）。
         passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
     code:
         action: '證實'
@@ -423,7 +423,7 @@ profile:
 
     #TODO
     #banner: >
-    #    You can also use our website to create a card, {/@andrea=like this one},
+    #    You can also use our website to create a card, {/@example=like this one},
     #    containing your names, pronouns, pride flags, liked words, etc.
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.

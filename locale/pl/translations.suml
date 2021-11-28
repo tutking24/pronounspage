@@ -1183,7 +1183,7 @@ user:
 
                 Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
         why: >
-            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@andrea=takimi jak ta}).
+            Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@example=takimi jak ta}).
         passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
     code:
         action: 'Sprawdź'

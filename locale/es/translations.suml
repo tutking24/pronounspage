@@ -394,7 +394,7 @@ user:
 
                 Si no solicitaste este código, simplemente ignora este mensaje.
         why: >
-            Registrarte te permite manejar tus tarjetas ({/@andrea=como esta}).
+            Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
         passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'
     code:
         action: 'Validar'
@@ -462,7 +462,7 @@ profile:
         no: 'No'
 
     banner: >
-        Puedes también usar nuestro sitio web para crear una tarjeta {/@andrea=como esta},
+        Puedes también usar nuestro sitio web para crear una tarjeta {/@example=como esta},
         que contenga tus nombres, pronombres, banderas de orgullo, palabras preferidas etc.
         Después podrás poner un enlace a la tarjeta en tu biografía o  tu firma de correo electrónico.
         Simplemente crea una cuenta {/account=aquí}.
