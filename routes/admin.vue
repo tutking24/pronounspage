@@ -96,6 +96,11 @@
             {{ stats.cardsQueue }}
         </section>
 
+        <section>
+            <Icon v="user-secret"/>
+            Impersonate <button class="btn btn-primary btn-sm" @click="impersonate('example@pronouns.page')">@example</button>
+        </section>
+
         <section v-if="$isGranted('users')">
             <h3>
                 <Icon v="siren-on"/>
@@ -236,6 +241,13 @@
                     if (r.id === id) { r.isHandled = true; }
                     return r;
                 });
+            },
+            async impersonate(email) {
+                const { token } = await this.$axios.$get(`/admin/impersonate/${encodeURIComponent(email)}`);
+                this.$cookies.set('impersonator', this.$cookies.get('token'));
+                this.$cookies.set('token', token);
+                this.$router.push('/' + this.config.user.route);
+                setTimeout(() => window.location.reload(), 500);
             },
         },
         computed: {

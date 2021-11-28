@@ -499,4 +499,12 @@ router.get('/user/logout-universal', handleErrorAsync(async (req, res) => {
     return res.json('Token removed');
 }));
 
+router.get('/admin/impersonate/:email', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users') || !['example@pronouns.page'].includes(req.params.email)) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    res.json({token: await issueAuthentication(req.db, {email: req.params.email})});
+}));
+
 export default router;

@@ -132,6 +132,11 @@
                 <Icon v="trash-alt"/>
                 <T>user.deleteAccount</T>
             </a>
+
+            <a v-if="impersonationActive" href="#" class="badge bg-light text-dark border border-primary" @click.prevent="stopImpersonation">
+                <Icon v="user-secret"/>
+                Stop impersonation
+            </a>
         </section>
 
         <div>
@@ -177,6 +182,8 @@
                 universalDomains: process.env.ALL_LOCALES_URLS.split(',').filter(x => x !== process.env.BASE_URL),
 
                 logoutInProgress: false,
+
+                impersonationActive: !!this.$cookies.get('impersonator')
             }
         },
         async mounted() {
@@ -283,6 +290,11 @@
             },
             async uploaded(ids) {
                 await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-thumb.png`);
+            },
+            async stopImpersonation() {
+                this.$cookies.set('token', this.$cookies.get('impersonator'));
+                this.$cookies.remove('impersonator');
+                window.location.reload();
             },
         },
         computed: {
