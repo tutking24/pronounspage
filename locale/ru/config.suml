@@ -226,7 +226,7 @@ faq:
 
 links:
     enabled: true
-    split: true
+    split: false
     route: 'links'
     blogRoute: 'blog'
     academicRoute: 'science'
