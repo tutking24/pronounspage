@@ -50,7 +50,7 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td>
-                    <ul class="list-untyled">
+                    <ul>
                         <li v-for="w in s.el.insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
                     </ul>
 
@@ -64,29 +64,57 @@
 
                     <div v-if="s.el.base && entries[s.el.base]" class="small">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
-                        </ul>
 
-                        <ul class="list-inline">
-                            <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
-                            <span class="badge bg-primary text-white">
-                                {{category}}
-                            </span>
-                            </li>
-                        </ul>
+                        <Diff switchable>
+                            <template v-slot:before>
+                                <ul>
+                                    <li v-for="w in entries[s.el.base].insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
+                                </ul>
+
+                                <ul class="list-inline">
+                                    <li v-for="category in entries[s.el.base].categories" class="list-inline-item">
+                                    <span class="badge bg-primary text-white">
+                                        {{category}}
+                                    </span>
+                                    </li>
+                                </ul>
+                            </template>
+                            <template v-slot:after>
+                                <ul>
+                                    <li v-for="w in s.el.insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
+                                </ul>
+
+                                <ul class="list-inline">
+                                    <li v-for="category in s.el.categories" class="list-inline-item">
+                                    <span class="badge bg-primary text-white">
+                                        {{category}}
+                                    </span>
+                                    </li>
+                                </ul>
+                            </template>
+                        </Diff>
                     </div>
                 </td>
                 <td>
-                    <ul class="list-untyled">
+                    <ul>
                         <li v-for="w in s.el.say"><LinkedText :text="w" noicons/></li>
                     </ul>
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-untyled">
-                            <li v-for="w in entries[s.el.base].say"><LinkedText :text="w" noicons/></li>
-                        </ul>
+
+                        <Diff switchable>
+                            <template v-slot:before>
+                                <ul>
+                                    <li v-for="w in entries[s.el.base].say"><LinkedText :text="w" noicons/></li>
+                                </ul>
+                            </template>
+                            <template v-slot:after>
+                                <ul>
+                                    <li v-for="w in s.el.say"><LinkedText :text="w" noicons/></li>
+                                </ul>
+                            </template>
+                        </Diff>
                     </small>
                 </td>
                 <td>
@@ -103,16 +131,33 @@
 
                     <small v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <p v-for="p in entries[s.el.base].because.split('\n\n')"><LinkedText :text="p" noicons/></p>
 
-                        <ul class="list-unstyled small">
-                            <li v-for="link in entries[s.el.base].links">
-                                <a :href="link" target="_blank" rel="noopener">
-                                    <Icon v="external-link"/>
-                                    {{clearUrl(link)}}
-                                </a>
-                            </li>
-                        </ul>
+                        <Diff switchable>
+                            <template v-slot:before>
+                                <p v-for="p in entries[s.el.base].because.split('\n\n')"><LinkedText :text="p" noicons/></p>
+
+                                <ul class="list-unstyled small">
+                                    <li v-for="link in entries[s.el.base].links">
+                                        <a :href="link" target="_blank" rel="noopener">
+                                            <Icon v="external-link"/>
+                                            {{clearUrl(link)}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </template>
+                            <template v-slot:after>
+                                <p v-for="p in s.el.because.split('\n\n')"><LinkedText :text="p" noicons/></p>
+
+                                <ul class="list-unstyled small">
+                                    <li v-for="link in s.el.links">
+                                        <a :href="link" target="_blank" rel="noopener">
+                                            <Icon v="external-link"/>
+                                            {{clearUrl(link)}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </template>
+                        </Diff>
                     </small>
                 </td>
                 <td>
