@@ -32,16 +32,21 @@
                         </div>
                         <div class="card-body">
                             <div class="card-title border-bottom pb-3">
-                                <ul class="list-inline d-inline mb-0">
-                                    <li class="list-inline-item pt-1 h5">
-                                        <T>home.generator.base</T>:
-                                    </li>
-                                    <li class="list-inline-item" v-for="(pronoun, pronounName) in pronouns">
-                                        <button :class="['btn', pronoun.name(glue) === selectedPronoun.name(glue) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
-                                                @click="selectedPronoun = pronouns[pronounName].clone()"
-                                        >
-                                            <Spelling :text="pronoun.name(glue)"/>
-                                        </button>
+                                <p><strong><T>home.generator.base</T>:</strong></p>
+                                <ul class="list-unstyled">
+                                    <li v-for="[group, groupPronouns] in pronounLibrary.split()" >
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <Spelling :text="group.name"/>
+                                            </li>
+                                            <li class="list-inline-item" v-for="(pronoun, pronounName) in groupPronouns">
+                                                <button :class="['btn', pronoun.name(glue) === selectedPronoun.name(glue) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
+                                                        @click="selectedPronoun = groupPronouns[pronounName].clone()"
+                                                >
+                                                    <Spelling :text="pronoun.name(glue)"/>
+                                                </button>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
