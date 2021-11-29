@@ -76,7 +76,10 @@
                     <small v-if="name.base && names[name.base]">
                         <hr/>
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <Name :name="names[name.base]"/>
+                        <Diff switchable>
+                            <template v-slot:before><Name :name="names[name.base]"/></template>
+                            <template v-slot:after><Name :name="name"/></template>
+                        </Diff>
                     </small>
                 </li>
                 </template>

@@ -44,7 +44,10 @@
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
 
-                        <Term :term="entries[s.el.base]" flags/>
+                        <Diff switchable>
+                            <template v-slot:before><Term :term="entries[s.el.base]" flags/></template>
+                            <template v-slot:after><Term :term="s.el" flags/></template>
+                        </Diff>
                     </div>
                 </td>
                 <td>

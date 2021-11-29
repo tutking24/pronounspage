@@ -42,79 +42,36 @@
 
             <template v-slot:row="s"><template v-if="s">
                 <td>
-                    <ul class="list-singular">
-                        <li v-for="w in s.el.masc">
-                            {{ w }}
-                        </li>
-                    </ul>
-                    <ul v-if="config.nouns.plurals" class="list-plural">
-                        <li v-for="w in s.el.mascPl">
-                            <Spelling :text="w"/>
-                        </li>
-                    </ul>
+                    <Noun :noun="s.el" gender="masc"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].masc">
-                                <Spelling :text="w"/>
-                            </li>
-                        </ul>
-                        <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].mascPl">
-                                <Spelling :text="w"/>
-                            </li>
-                        </ul>
+                        <Diff switchable>
+                            <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="masc"/></template>
+                            <template v-slot:after><Noun :noun="s.el" gender="masc"/></template>
+                        </Diff>
                     </small>
                 </td>
                 <td>
-                    <ul class="list-singular">
-                        <li v-for="w in s.el.fem">
-                            <Spelling :text="w"/>
-                        </li>
-                    </ul>
-                    <ul v-if="config.nouns.plurals" class="list-plural">
-                        <li v-for="w in s.el.femPl">
-                            <Spelling :text="w"/>
-                        </li>
-                    </ul>
+                    <Noun :noun="s.el" gender="fem"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].fem">
-                                <Spelling :text="w"/>
-                            </li>
-                        </ul>
-                        <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].femPl">
-                                <Spelling :text="w"/>
-                            </li>
-                        </ul>
+                        <Diff switchable>
+                            <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="fem"/></template>
+                            <template v-slot:after><Noun :noun="s.el" gender="fem"/></template>
+                        </Diff>
                     </small>
                 </td>
                 <td>
-                    <ul class="list-singular">
-                        <li v-for="w in s.el.neutr">
-                            <Declension v-if="config.nouns.declension" :word="w" tooltip/>
-                            <template v-else><Spelling :text="w"/></template>
-                        </li>
-                    </ul>
-                    <ul v-if="config.nouns.plurals" class="list-plural">
-                        <li v-for="w in s.el.neutrPl">
-                            <Declension v-if="config.nouns.declension" :word="w" plural :singularOptions="s.el.neutr" tooltip/>
-                            <template v-else><Spelling :text="w"/></template>
-                        </li>
-                    </ul>
+                    <Noun :noun="s.el" gender="neutr"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
                         <p><strong><T>nouns.edited</T>:</strong></p>
-                        <ul class="list-singular">
-                            <li v-for="w in nouns[s.el.base].neutr"><Spelling :text="w"/></li>
-                        </ul>
-                        <ul v-if="config.nouns.plurals" class="list-plural">
-                            <li v-for="w in nouns[s.el.base].neutrPl"><Spelling :text="w"/></li>
-                        </ul>
+                        <Diff switchable>
+                            <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="neutr"/></template>
+                            <template v-slot:after><Noun :noun="s.el" gender="neutr"/></template>
+                        </Diff>
                     </small>
 
                     <div v-if="s.el.sourcesData.length" class="div-three-columns">
