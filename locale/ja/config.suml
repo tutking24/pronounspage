@@ -43,10 +43,17 @@ sources:
     mergePronouns: {}
 
 nouns:
-    enabled: false
+    enabled: true
+    route: '辞書'
+    collapsable: false
+    plurals: true
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: true
 
 community:
-    route: 'カレンダー'
+    route: '用語'
 
 inclusive:
     enabled: false
