@@ -2,7 +2,7 @@ const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/h
 
 module.exports = [
     // months
-    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month, ['lgbtq', 'pride parade', 'gay']),
+    new Event('pride_month', 'Progress Pride', 6, month, EventLevel.Month, ['lgbtq', 'pride parade', 'gay', 'homosexual']),
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
@@ -20,8 +20,8 @@ module.exports = [
     new Event('idahobit', null, 5, day(17), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('intersex_day', 'Intersex', 10, day(26), EventLevel.Day, ['intersex']),
     new Event('intersex_remembrance_day', 'Intersex', 11, day(8), EventLevel.Day, ['intersex']),
-    new Event('lesbian_day', 'Lesbian', 10, day(8), EventLevel.Day, ['lesbian']),
-    new Event('lesbian_visibility_day', 'Lesbian', 4, day(26), EventLevel.Day, ['lesbian']),
+    new Event('lesbian_day', 'Lesbian', 10, day(8), EventLevel.Day, ['lesbian', 'homosexual']),
+    new Event('lesbian_visibility_day', 'Lesbian', 4, day(26), EventLevel.Day, ['lesbian', 'homosexual']),
     new Event('coming_out_day', null, 10, day(11), EventLevel.Day, ['coming out']),
     new Event('nonbinary_day', 'Nonbinary', 7, day(14), EventLevel.Day, ['nonbinary']),
     new Event('pan_day', 'Pansexual', 5, day(24), EventLevel.Day, ['pansexual', 'panromantic']),
@@ -52,7 +52,7 @@ module.exports = [
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual', 'asexual spectrum']),
     new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.Day),
     new Event('black_ribbon_day', null, 8, day(23), EventLevel.Day),
-    new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride']),
+    new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
     new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
 
     // dynamic date
@@ -148,7 +148,7 @@ module.exports = [
                 }
             }
         }
-    }, EventLevel.Day, ['gay']),
+    }, EventLevel.Day, ['gay', 'homosexual']),
 
     new Event('aids_memorial', null, 5, function* (monthDays) {
         let sundays = 0;
