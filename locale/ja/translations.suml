@@ -762,6 +762,7 @@ calendar:
         suicide_prevention_month: '世界自殺予防月間'
         aids_awareness_month: 'AIDS啓発月間'
         genderfluid_week: '{/用語#ジェンダーフルイッド=ジェンダーフルイッド} 啓発週間'
+        pan_week: 'Pan Week'
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: 'が祝われています'
     celebrating_day: 'に祝われています'
