@@ -175,6 +175,17 @@
                     </div>
                     <SimplePronounList :pronouns="config.pronouns.emoji.examples" class="mb-3"/>
                 </li>
+                <li v-if="config.pronouns.mirror" class="list-group-item" id="mirror">
+                    <p class="h5">
+                        <nuxt-link :to="`/${config.pronouns.mirror.route}`">
+                            <LinkedText :text="config.pronouns.mirror.name"/>
+                        </nuxt-link>
+                    </p>
+                    <div class="small my-1" v-if="config.pronouns.mirror.description">
+                        <Icon v="info-circle"/>
+                        <LinkedText :text="config.pronouns.mirror.description"/>
+                    </div>
+                </li>
                 <li class="list-group-item">
                     <p class="h5">
                         <nuxt-link :to="'/' + config.pronouns.any"><T>pronouns.any.header</T></nuxt-link>

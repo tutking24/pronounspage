@@ -82,6 +82,15 @@ pronouns:
             reflexive: '#self'
         examples: ['💫', '💙']
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+    mirror:
+        route: 'mirror'
+        name: 'Mirror pronouns / Mirrorpronominal'
+        description: >
+            A person who uses mirror pronouns wants to be referred to with the same pronouns as the person talking.
+        example:
+            - 'Person A uses mirror pronouns.'
+            - 'Person B uses {/she=she/her}, so when she talks about person A, she uses “she/her” to refer to her.'
+            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fea uses either ze/hir or fæ/fær to refer to fær.'
     slashes: true
     others: 'Other pronouns'
 
@@ -99,7 +108,7 @@ sources:
     submit: true
     mergePronouns:
         they/them/themself: 'they'
-    extraTypes: ['avoiding', 'nounself']
+    extraTypes: ['avoiding', 'nounself', 'mirror']
 
 nouns:
     enabled: true
