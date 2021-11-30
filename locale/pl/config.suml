@@ -156,6 +156,15 @@ pronouns:
                 normative: true
                 examples:
                     - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
+    mirror:
+        route: 'lustrzane'
+        name: 'Zaimki lustrzane'
+        description: >
+            Osoba używająca zaimków lustrzanych chce, by zwracano się do niej / mówiono o niej takimi formami, jakich samx się używa.
+        example:
+            - 'Osoba A używa zaimków lustrzanych.'
+            - 'Osoba B używa {/ona=rodzaju żeńskiego}, więc zwracając się do osoby A lub mówiąc o niej będzie używała form żeńskich.'
+            - 'Osoba C używa {/onu=dukaizmów} wymiennie z {/ono=rodzajem neutralnym}, więc zwracając się do osoby A lub mówiąc o num będzie używała form postpłciowych bądź neutralnych.'
     others: 'Pozostałe formy'
 
 pronunciation:

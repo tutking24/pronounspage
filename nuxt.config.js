@@ -275,6 +275,9 @@ export default {
                         routes.push({ path: '/' + encodeURIComponent(route), component: resolve(__dirname, 'routes/avoiding.vue') });
                     }
                 }
+                if (config.pronouns.mirror) {
+                    routes.push({ path: '/' + encodeURIComponent(config.pronouns.mirror.route), component: resolve(__dirname, 'routes/mirror.vue') });
+                }
             }
 
             if (config.calendar && config.calendar.enabled) {
