@@ -1597,7 +1597,7 @@ calendar:
         lesbian_visibility_week: 'Tydzień Widoczności {/terminologia#lesbijka=Lesbijek}'
         demigender_day: 'Dzień Świadomości nt. {/terminologia#demipłciowość=Demipłciowości}'
         pan_pride_day: 'Dzień Dumy Osób {/terminologia#panseksualność=Panseksualnych}'
-        pan_week: '{https://posi-pan.tumblr.com/panweek=Tydzień Panseksualności i Panromantyczności}'
+        pan_week: ''Tydzień {/terminologia#panseksualność=Panseksualności} i {/terminologia#panromantyczność=Panromantyczności}''
         transmasculine_day: 'Dzień Osób {/terminologia#transmęskość=Transmęskich}'
         asexual_visibility_day: 'Dzień Widoczności Osób {/terminologia#aseksualność=Aseksualnych}'
         bi_health_month: 'Miesiąc Świadomości nt. Zdrowia Osób Biseksualnych'
