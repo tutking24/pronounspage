@@ -728,6 +728,7 @@ calendar:
         suicide_prevention_month: 'Месяц профилактики самоубийств'
         aids_awareness_month: 'Месяц осведомленности об опасности СПИДа'
         genderfluid_week: 'Неделя осведомленности о гендерфлюидных'
+        pan_week: 'Неделя пансексуальности и панромантичности'
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
