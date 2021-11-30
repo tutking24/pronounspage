@@ -383,8 +383,10 @@ user:
     headerLong: 'Tu cuenta'
     tokenExpired: 'El token ha expirado. Por favor actualiza la página e inténtalo nuevamente.'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
-        action: 'Iniciar sesión'
+        action: 'Iniciar sesión'  # TODO 'Log in / register'
         emailSent: 'Te hemos enviado un correo electrónico con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
         userNotFound: 'Usuarie no encontrade.'
         email:

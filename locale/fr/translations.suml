@@ -377,8 +377,10 @@ user:
     headerLong: 'Votre compte'
     tokenExpired: 'Le token a expiré. Rafraîchissez la page et réessayez s’il vous plaît.'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Adresse mail(ou nom d’utilisateur si vous êtes déjà inscrit)'
-        action: 'Se connecter'
+        action: 'Se connecter'  # TODO 'Log in / register'
         emailSent: 'Nous vous avons envoyé un mail avec un code à 6 chiffres. Entrez-le ici. Ce code est à usage unique et reste utilisable pendant 15 minutes.'
         userNotFound: 'Cet utilisateur n’existe pas.'
         email:
@@ -706,7 +708,7 @@ calendar:
         9: 'septembre'
         10: 'octobre'
         11: 'novembre'
-        12: 'décembre'        
+        12: 'décembre'
     events:
         pride_month: 'Mois de la fierté'
         trans_month: 'Mois de sensibilisation trans'
