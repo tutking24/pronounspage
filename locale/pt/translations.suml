@@ -774,6 +774,7 @@ calendar:
         suicide_prevention_month: '{https://pt.wikipedia.org/wiki/Setembro_Amarelo=Setembro Amarelo}'
         aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
         genderfluid_week: 'Semana da Consciência de Gênero-fluído'
+        pan_week: 'Semana da Visibilidade Pan'
 
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
