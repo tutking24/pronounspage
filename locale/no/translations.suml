@@ -443,7 +443,7 @@ profile:
     editor:
         header: 'Kort redigerer'
         save: 'Lagre kort'
-        defaults: 'Restore defaults' # TODO
+        defaults: 'Restaurer originale'
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'
@@ -477,8 +477,8 @@ crud:
     author: 'Lagt til av'
     saved: 'Endringer er lagret!'
     loginRequired: '{/account=Log in} for å'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    copy: 'Kopier link'
+    download: 'Last ned'
 
 footer:
     license: >
