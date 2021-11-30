@@ -1172,8 +1172,9 @@ user:
     headerLong: 'Twoje konto'
     tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
     login:
+        help: 'Aby zalogować się lub założyć konto, użyj opcji logowania za pomocą mediów społecznościowych lub wpisz swój email w polu poniżej, a następnie potwierdź kod, który otrzymasz na swoją skrzynkę.'
         placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
-        action: 'Zaloguj'
+        action: 'Zaloguj / załóż konto'
         emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
         userNotFound: 'Konto nie zostało znalezione.'
         email:

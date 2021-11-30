@@ -338,8 +338,10 @@ user:
     headerLong: 'Ваш аккаунт'
     tokenExpired: 'Данный элемент устарел. Пожалуйста, перезагрузите страницу и попробуйте ещё раз.'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Адрес электронной почты (или имя пользовател_ьницы, если вы уже зарегистрированы)'
-        action: 'Войти'
+        action: 'Войти'  # TODO 'Log in / register'
         emailSent: 'Мы отправили на указанную вами почту письмо с шестизначным кодом. Пожалуйста, введите его сюда. Код одноразовый и работает в течение 15-ти минут.'
         userNotFound: 'Пользователь не найден.'
         email:

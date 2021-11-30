@@ -343,8 +343,10 @@ user:
     headerLong: '你的帳戶'
     tokenExpired: '令牌過期了。請刷新網站，然後再試一次。'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: '電子郵件（如果您已經註冊了，可以用你的戶名）'
-        action: '登錄'
+        action: '登錄'  # TODO 'Log in / register'
         emailSent: '我們已經通過電子郵件向您發送了6位數字的代碼。請在這裡輸入。代碼是可以用一次，有效期為15分鐘。'
         userNotFound: '找不到用戶。'
         email:

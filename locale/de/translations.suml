@@ -370,8 +370,10 @@ user:
     headerLong: 'Dein Account'
     tokenExpired: 'Der Code ist abgelaufen. Bitte aktualisiere die Website und versuche es erneut.'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
-        action: 'Einloggen'
+        action: 'Einloggen'  # TODO 'Log in / register'
         emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
         userNotFound: 'Nutzer*in nicht gefunden.'
         email:

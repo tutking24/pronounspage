@@ -5,6 +5,10 @@
         <div class="card">
             <div class="card-body">
                 <div v-if="token === null">
+                    <p v-if="$te('user.login.help')">
+                        <Icon v="info-circle"/>
+                        <T>user.login.help</T>
+                    </p>
                     <div class="row flex-row-reverse">
                         <div class="col-12 col-md-4">
                             <div class="btn-group-vertical w-100 mb-3">

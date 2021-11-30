@@ -386,8 +386,10 @@ user:
     headerLong: 'あなたのアカウント'
     tokenExpired: 'トークンは期限切れです。サイトを更新してもう一度お試しください。'
     login:
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'メールアドレス（既に登録済みの場合は任意、ユーザー名を入力してください。）'
-        action: 'ログイン'
+        action: 'ログイン'  # TODO 'Log in / register'
         emailSent: 'メールアドレスに6桁のコードが送信された後、ここに入力してください。コードは一度しか使用できません。有効期限は今から15分です。'
         userNotFound: '無効なユーザー名'
         email:
