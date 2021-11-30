@@ -23,7 +23,13 @@ export const config = {
         key: process.env.GOOGLE_KEY,
         secret: process.env.GOOGLE_SECRET,
         callback: '/api/user/social/google',
-    }
+    },
+    discord: {
+        key: process.env.DISCORD_KEY,
+        secret: process.env.DISCORD_SECRET,
+        callback: '/api/user/social/discord',
+        scope: ['identify', 'email'],
+    },
 }
 
 export const handlers = {
@@ -53,6 +59,16 @@ export const handlers = {
             email: r.profile.email_verified !== false ? r.profile.email : undefined,
             name: r.profile.email,
             avatar: r.profile.picture,
+            access_token: r.access_token,
+            access_secret: r.access_secret,
+        }
+    },
+    discord(r) {
+        return {
+            id: r.profile.id,
+            email: r.profile.email,
+            name: r.profile.username,
+            avatar: `https://cdn.discordapp.com/avatars/${r.profile.id}/${r.profile.avatar}`,
             access_token: r.access_token,
             access_secret: r.access_secret,
         }
