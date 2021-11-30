@@ -47,7 +47,7 @@ module.exports = [
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.Day, ['polysexual', 'polyromantic']),
     new Event('orlando_day', null, 6, day(12), EventLevel.Day, ['homophobia']),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender', 'demiboy', 'demigirl', 'deminonbinary', 'demineutrois', 'demifluid']),
-    new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual']),
+    new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual', 'panromantic']),
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual', 'asexual spectrum']),
     new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.Day),
@@ -226,13 +226,21 @@ module.exports = [
         }
     }, EventLevel.Week, ['homophobia', 'transphobia', 'biphobia']),
 
-        new Event('genderfluid_week', 'Genderfluid', 10, week(function* (monthDays) {
+    new Event('genderfluid_week', 'Genderfluid', 10, week(function* (monthDays) {
         for (let d of monthDays) {
             if (d.day >= 17 && d.day <= 24) {
                 yield d;
             }
         }
     }), EventLevel.Week, ['genderfluid']),
+
+    new Event('pan_week', 'Pansexual', 12, week(function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day >= 6) {
+                yield d;
+            }
+        }
+    }), EventLevel.Week, ['pansexual', 'panromantic']),
 
     // one-off events
     new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
@@ -242,5 +250,5 @@ module.exports = [
             }
         }
     }, EventLevel.Week, ['progress pride']),
-    
+
 ];

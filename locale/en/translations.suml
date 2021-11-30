@@ -755,6 +755,7 @@ calendar:
         lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
         demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
         pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
+        pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
         transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
         asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
         bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
