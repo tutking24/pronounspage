@@ -361,10 +361,9 @@ user:
     headerLong: 'Ваш аккаунт'
     tokenExpired: 'Данный элемент устарел. Пожалуйста, перезагрузите страницу и попробуйте ещё раз.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Чтобы войти или зарегистрировать аккаунт, вам нужно либо привязать его к социальным сетям, либо ввести адрес электронной почты в соответствующее поле, дождаться письма с кодом и подтвердить аккаунт.'
         placeholder: 'Адрес электронной почты (или имя пользовател_ьницы, если вы уже зарегистрированы)'
-        action: 'Войти'  # TODO 'Log in / register'
+        action: 'Войти / зарегистрироваться'
         emailSent: 'Мы отправили на указанную вами почту письмо с шестизначным кодом. Пожалуйста, введите его сюда. Код одноразовый и работает в течение 15-ти минут.'
         userNotFound: 'Пользователь не найден.'
         email:
@@ -754,7 +753,7 @@ calendar:
         aids_awareness_month: 'Месяц осведомленности об опасности СПИДа'
         genderfluid_week: 'Неделя осведомленности о гендерфлюидных'
         pan_week: 'Неделя пансексуальности и панромантичности'
-        parents_day: 'Gender Expansive Parents'' Day' # TODO
+        parents_day: 'День не-бинарного родителя'
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
