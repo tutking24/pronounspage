@@ -776,6 +776,7 @@ calendar:
         aids_awareness_month: 'Mois de sensibilité à l''épidémie de sida'
         genderfluid_week: 'Semaine de la visibilité genderfluid'
         pan_week: 'Semaine de la fierté pansexuelle et panromantique'
+        parents_day: 'Journée inclusive des parents'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
