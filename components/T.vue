@@ -2,10 +2,14 @@
     <component :is="Array.isArray(txt) ? 'div' : 'span'">
         <template v-if="Array.isArray(txt)">
             <p v-for="p in txt">
+                <Icon v-if="icon" :v="icon"/>
                 <LinkedText :text="p"/>
             </p>
         </template>
-        <LinkedText v-else :text="txt"/>
+        <template v-else>
+            <Icon v-if="icon" :v="icon"/>
+            <LinkedText :text="txt"/>
+        </template>
     </component>
 </template>
 
@@ -15,7 +19,8 @@
     export default {
         props: {
             params: {},
-            silent: {type: Boolean}
+            silent: {type: Boolean},
+            icon: {},
         },
         data() {
             return {

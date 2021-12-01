@@ -93,8 +93,7 @@
                                 </div>
                             </template>
                             <p class="small">
-                                <Icon v="info-circle"/>
-                                <T>home.generator.alt</T>
+                                <T icon="info-circle">home.generator.alt</T>
                             </p>
                             <!-- TODO #136
                             <p class="small" v-if="config.pronunciation.enabled">
