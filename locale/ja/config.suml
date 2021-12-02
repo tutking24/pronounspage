@@ -95,11 +95,6 @@ links:
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: 'に端を発する'
-        -
-            icon: 'chart-pie'
-            url: 'https://gendercensus.com/'
-            headline: 'ジェンダー調査（ジェンダーセンサス）'
-            extra: '– 中立語とXジェンダー用語に関する年次調査。'
 
     mediaGuests: []
     mediaMentions: []
