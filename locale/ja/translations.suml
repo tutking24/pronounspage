@@ -440,7 +440,10 @@ profile:
     birthdayInfo: 'なお、生年月日は公開されません。年齢のみが公開されます。'
     flags: '旗'
     flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
+    flagsCustom: 'Upload custom flags'  # TODO
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'リンク'
+    linksCake: 'We recommend linking to'  # TODO
     column: '欄'
 
     list: 'あなたのカード'

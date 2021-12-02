@@ -414,7 +414,10 @@ profile:
     birthdayInfo: 'Мы публикуем не Вашу дату рождения, а только подсчитанный нами возраст.'
     flags: 'Прайд-флаги'
     flagsInfo: 'Перетащите ваши прайд-флаги в эту рамку.'
+    flagsCustom: 'Upload custom flags'  # TODO
+    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'Ссылки'
+    linksCake: 'We recommend linking to'  # TODO
     column: 'Колонка'
 
     header: 'Карточки'
