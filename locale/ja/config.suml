@@ -12,18 +12,18 @@ pronouns:
     multiple:
         name: '交換可能な三人称代名詞'
         description: >
-            多くのXジェンダー人々は２以上の三人称代名詞を交換可能に使って、
-            どれもと呼ばれるが好きです。
-            他人が自分のついて話しているとき、三人称代名詞形式の間で交互になることが好きな一部もいます。
+            Xジェンダーの方たちは、2つ以上の三人称代名詞で呼ばれることを好んで、使い分けていることもあるが多いです。
+            他人が自分のことを話しているときに、三人称の代名詞を交互に使うのが好きな人もいますよ。
+            また、他人が自分のことを話しているときに、三人称代名詞の形を交互に使うのが好きな人もいます。
         examples: ['彼&彼女', '彼&あの人', '彼女&あの人']
     null: false
     emoji:
-        description: 'Emojiself pronouns' # TODO
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.' # TODO
+        description: '絵文字代名詞'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=絵文字自己}の三人称代名詞は、オンラインでの使用を目的としていて、発音ことを意図していません。'
         morphemes:
             base_pronoun: '#'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.' # TODO
+        template: 'こちらの例をクリックして、URLに絵文字を自分の絵文字に置き換えるだけです！'
     slashes: true
     avoiding: false
     others: '他の三人称代名詞'
@@ -63,10 +63,10 @@ terminology:
     categories:
         - '性的指向'
         - 'ロマンティック・オリエンテーション'
-        - '非性的非恋愛的指向'
+        - 'ノンセクシュアルやノンロマンティックタイプ'
         - 'ジェンダー'
         - 'ジェンダー表現'
-        - '人間関係のタイプ'
+        - 'リレーションシップタイプ'
         - '言語'
         - '魅力のタイプ'
         - '政治'
@@ -94,12 +94,12 @@ links:
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
-            extra: 'からのインスピレーションを受けた。'
+            extra: 'に端を発する'
         -
             icon: 'chart-pie'
             url: 'https://gendercensus.com/'
             headline: 'ジェンダー調査（ジェンダーセンサス）'
-            extra: '– 中性的な言葉とXジェンダー用語についての年次調査。'
+            extra: '– 中立語とXジェンダー用語に関する年次調査。'
 
     mediaGuests: []
     mediaMentions: []
@@ -127,8 +127,7 @@ contact:
     team:
         enabled: true
         route: 'チーム'
-    blog:
-        creating-new-language-version: 'どうやって新しい言語版のPronouns.Pageを作る'
+    blog: {}
 
 support:
     enabled: true
@@ -144,9 +143,9 @@ profile:
     editorEnabled: true
     defaultWords:
         - ['[タメ口でお願いします]', 'さん', 'くん', 'ちゃん', 'ぼう', 'さま', '先輩/後輩', '卿', '夫人']
-        - ['人', '男/男の人', '女/女の人', '男の子', '女の子', '仲間', '友人', '友達', '同生', '兄/弟', '姉/妹']
+        - ['人', '男/男の人', '女/女の人', '男の子', '女の子', '仲間', '友人', '友達', '同生', '兄/弟', '姉/妹', '兄弟姉妹']
         - ['きれい', 'かっこいい', 'かわいい', '立派', 'イケメン', '美しい', 'セクシー', 'エロい']
-        - ['友達', '伴侶', '相手' '彼氏', '彼女', '恋人', '夫', 'つま', 'ダーリン','ハニー']
+        - ['友達', '伴侶', '相手' '彼氏', '彼女', '恋人', '夫', '妻', 'ダーリン','ハニー']
     flags:
         defaultPronoun: 'あの人'
 
