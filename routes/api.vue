@@ -21,7 +21,7 @@
                         </a>
                     </p>
                     <p v-if="queryString" class="mb-0 small">
-                        <T>api.query</T>:
+                        <T>api.query</T><T>quotation.colon</T>
                     </p>
                     <ul v-if="queryString" class="small">
                         <li v-for="(description, param) in queryString">

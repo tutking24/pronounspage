@@ -42,7 +42,7 @@
                     <Term :term="s.el" categoryLink flags versions :events="year.eventsByTerm[s.el.key]" @filter="setFilter"/>
 
                     <div class="small" v-if="s.el.base && entries[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <p><strong><T>nouns.edited</T><T>quotation.colon</T></strong></p>
 
                         <Diff switchable>
                             <template v-slot:before><Term :term="entries[s.el.base]" flags/></template>
@@ -57,7 +57,7 @@
                                 <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
                                     <Icon v="user"/>
                                     <span class="btn-label">
-                                    <T>crud.author</T>:
+                                    <T>crud.author</T><T>quotation.colon</T>
                                     @{{s.el.author}}
                                 </span>
                                 </nuxt-link>

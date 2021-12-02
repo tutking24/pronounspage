@@ -39,7 +39,7 @@
             </div>
 
             <div class="form-group">
-                <label><strong><T>terminology.category</T>:</strong></label>
+                <label><strong><T>terminology.category</T><T>quotation.colon</T></strong></label>
                 <a v-for="category in config.terminology.categories"
                    href="#" :class="['badge border mx-1 text-decoration-none', form.categories.includes(category) ? 'bg-primary text-white' : 'bg-light text-primary']"
                    @click.prevent="form.categories = form.categories.includes(category) ? form.categories.filter(c => c !== category) : [...form.categories, category]"

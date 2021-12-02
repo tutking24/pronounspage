@@ -3,7 +3,7 @@
         <h2 class="h4">
             <nuxt-link :to="'/' + config.sources.route">
                 <Icon v="books"/>
-                <T>sources.headerLong</T>:
+                <T>sources.headerLong</T><T>quotation.colon</T>
             </nuxt-link>
         </h2>
 

@@ -537,6 +537,7 @@ api:
 quotation:
     start: '“'
     end: '”'
+    colon: ':'
 
 localise:
     shorter: 'Adicionar versões'
@@ -568,7 +569,7 @@ ban:
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
     banned: 'Banido'
-    termsIntro: 'De acordo com nossos {/termos=termos de uso}:'
+    termsIntro: 'De acordo com nossos {/termos=termos de uso}'
 
 report:
     action: 'Reportar abuso'

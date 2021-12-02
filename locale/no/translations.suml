@@ -530,6 +530,7 @@ api:
 quotation:
     start: '“'
     end: '”'
+    colon: ':'
 
 localise:
     shorter: 'Legg til mer'
@@ -561,7 +562,7 @@ ban:
     confirm: 'Er du sikker på at du vil forby @%username%?'
     header: 'Du er forbydd. Profilen din vil ikke bli vist til noen.'
     banned: 'Forbydd'
-    termsIntro: 'Ifølge våre {/termes=Terms of Service}:'
+    termsIntro: 'Ifølge våre {/termes=Terms of Service}'
 
 report:
     action: 'Rapporter problem'

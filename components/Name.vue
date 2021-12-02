@@ -9,32 +9,32 @@
             <ul class="list-unstyled w-md-50">
                 <li v-if="name.origin" class="mb-2">
                     <Icon v="map-marked-alt"/>
-                    <strong><T>names.origin</T>:</strong>
+                    <strong><T>names.origin</T><T>quotation.colon</T></strong>
                     {{ name.origin }}
                 </li>
                 <li v-if="name.meaning" class="mb-2">
                     <Icon v="comment-exclamation"/>
-                    <strong><T>names.meaning</T>:</strong>
+                    <strong><T>names.meaning</T><T>quotation.colon</T></strong>
                     <LinkedText :text="name.meaning"/>
                 </li>
                 <li v-if="name.usage" class="mb-2">
                     <Icon v="user-friends"/>
-                    <strong><T>names.usage</T>:</strong>
+                    <strong><T>names.usage</T><T>quotation.colon</T></strong>
                     {{ name.usage }}
                 </li>
                 <li v-if="config.names.legally && name.legally" class="mb-2">
                     <Icon v="file-contract"/>
-                    <strong><T>names.legally</T>:</strong>
+                    <strong><T>names.legally</T><T>quotation.colon</T></strong>
                     {{ name.legally }}
                 </li>
                 <li v-if="config.names.count" class="mb-2">
                     <Icon v="users"/>
-                    <strong><T>names.count</T>:</strong>
+                    <strong><T>names.count</T><T>quotation.colon</T></strong>
                     <NameCount :name="name.name"/>
                 </li>
                 <li v-if="config.names.namedays && name.namedays.length">
                     <Icon v="glass-cheers"/>
-                    <strong><T>names.namedays</T>:</strong>
+                    <strong><T>names.namedays</T><T>quotation.colon</T></strong>
                     {{ namedaysString(name) }}
                     <p class="small" v-if="name.namedaysComment">(<LinkedText :text="name.namedaysComment"/>)</p>
                 </li>

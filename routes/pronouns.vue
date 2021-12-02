@@ -32,7 +32,7 @@
                         </div>
                         <div class="card-body">
                             <div class="card-title border-bottom pb-3">
-                                <p><strong><T>home.generator.base</T>:</strong></p>
+                                <p><strong><T>home.generator.base</T><T>quotation.colon</T></strong></p>
                                 <ul class="list-unstyled">
                                     <li v-for="[group, groupPronouns] in pronounLibrary.split()" >
                                         <ul class="list-inline">
@@ -64,7 +64,7 @@
                             </div>
 
                             <p>
-                                <T>pronouns.examples</T>:
+                                <T>pronouns.examples</T><T>quotation.colon</T>
                             </p>
                             <template v-for="isHonorific in [false, true]" v-if="examples.filter(e => e.isHonorific === isHonorific).length">
                                 <ul>
@@ -127,7 +127,7 @@
                     <div v-else class="card">
                         <div class="card-header">
                             <Icon v="sliders-h-square"/>
-                            <T>pronouns.alt.header</T>:
+                            <T>pronouns.alt.header</T><T>quotation.colon</T>
                         </div>
                         <div class="card-body">
                             <div class="card-title">

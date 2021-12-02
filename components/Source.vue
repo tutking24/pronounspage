@@ -16,7 +16,7 @@
                 <nuxt-link :to="`/@${source.submitter}`" class="badge bg-light text-dark border btn-sm m-1">
                     <Icon v="user"/>
                     <span class="btn-label">
-                        <T>crud.author</T>:
+                        <T>crud.author</T><T>quotation.colon</T>
                         @{{source.submitter}}
                     </span>
                 </nuxt-link>
@@ -54,7 +54,7 @@
             </li>
             <li class="list-inline-item" v-if="source.key">
                 <span class="badge bg-primary text-white">
-                    <T>sources.submit.key</T>: {{source.key}}
+                    <T>sources.submit.key</T><T>quotation.colon</T> {{source.key}}
                 </span>
             </li>
         </ul>

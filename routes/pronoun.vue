@@ -4,7 +4,7 @@
         <h2 class="d-flex justify-content-between">
             <span>
                 <Icon v="tag"/>
-                <T>pronouns.intro</T>:
+                <T>pronouns.intro</T><T>quotation.colon</T>
             </span>
             <div v-if="nameOptions.length > 1" class="btn-group" role="group">
                 <button :class="['btn btn-sm', counterSpeed === 0 ? 'btn-primary' : 'btn-outline-primary']" @click="counterPause"><Icon v="pause"/></button>
@@ -45,7 +45,7 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                <T>pronouns.examples</T>:
+                <T>pronouns.examples</T><T>quotation.colon</T>
             </h2>
 
             <ul>

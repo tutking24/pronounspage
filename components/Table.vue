@@ -20,7 +20,7 @@
             </tr>
             <tr v-if="count">
                 <td :colspan="columns">
-                    <T>table.count</T>:
+                    <T>table.count</T><T>quotation.colon</T>
                     <strong>{{ data.length }}</strong>
                 </td>
             </tr>

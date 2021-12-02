@@ -537,6 +537,7 @@ api:
 quotation:
     start: '“'
     end: '”'
+    colon: ':'
 
 localise:
     shorter: 'Adicionar versões'
@@ -568,7 +569,7 @@ ban:
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Você está banido. Seu perfil não mais aparecerá em nosso site.'
     banned: 'Banido'
-    termsIntro: 'De acordo com nossos {/termos=termos de uso}:'
+    termsIntro: 'De acordo com nossos {/termos=termos de uso}'
 
 report:
     action: 'Reportar abuso'
@@ -777,7 +778,7 @@ calendar:
         aids_awareness_month: '{https://pt.wikipedia.org/wiki/Dezembro_Vermelho=Dezembro Vermelho}'
         genderfluid_week: 'Semana da Consciência de Gênero-fluído'
         pan_week: 'Semana da Visibilidade Pan'
-        parents_day: 'Dia de Nans Expansivo de Gênero'        
+        parents_day: 'Dia de Nans Expansivo de Gênero'
 
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'

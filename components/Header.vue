@@ -88,11 +88,11 @@
                 <T>ban.header</T>
             </p>
             <p >
-                <T>ban.reason</T>:
+                <T>ban.reason</T><T>quotation.colon</T>
                 {{$user().bannedReason}}
             </p>
             <p>
-                <T>ban.termsIntro</T>
+                <T>ban.termsIntro</T><T>quotation.colon</T>
             </p>
             <blockquote class="small">
                 It is forbidden to post on the Service any Content that might break the law or violate social norms,

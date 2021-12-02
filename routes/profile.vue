@@ -34,7 +34,7 @@
                 <div>
                     <small>
                         <Icon v="id-card"/>
-                        <T>profile.card.link</T>:
+                        <T>profile.card.link</T><T>quotation.colon</T>
                     </small>
                     <small v-if="profile.card === null && profile.cardDark === null">
                         <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">

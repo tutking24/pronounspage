@@ -23,7 +23,7 @@
                 </p>
                 <ul class="mb-2">
                     <li v-for="(pronouns, locale) in person.pronouns">
-                        <T>people.languages.{{locale}}</T>:
+                        <T>people.languages.{{locale}}</T><T>quotation.colon</T>
                         <ul class="list-inline d-inline">
                             <li v-for="pronoun in pronouns" class="list-inline-item">
                                 <LocaleLink :link="'/' + pronoun.link" :locale="locale">

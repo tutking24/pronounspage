@@ -4,7 +4,7 @@
         <div class="d-flex flex-column flex-md-row justify-content-around mt-4 mb-5">
             <div class="small text-center d-flex flex-column justify-content-center">
                 <p class="mb-2">
-                    <T>contact.authors</T>:
+                    <T>contact.authors</T><T>quotation.colon</T>
                 </p>
 
                 <Authors/>
@@ -17,7 +17,7 @@
                 <div class="my-2">
                     <p class="small mb-0">
                         <Icon v="users"/>
-                        <T>footer.links</T>:
+                        <T>footer.links</T><T>quotation.colon</T>
                     </p>
                     <div class="mb-3" :class="['d-flex', config.links.socials.length > 2 ? 'flex-column' : 'flex-row', 'justify-content-center', 'align-items-center']">
                         <span>

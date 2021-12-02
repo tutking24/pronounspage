@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T>: 2021-11-24</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-11-24</em></p>
 
         <p>
             These Terms of Service govern your access to and use of the Service provided on the website
