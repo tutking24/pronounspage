@@ -97,8 +97,8 @@ router.get('/nouns/search/:term', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/nouns/submit', handleErrorAsync(async (req, res) => {
-    if (!req.user) {
-        res.status(401).json({error: 'Unauthorised'});
+    if (!req.user || !await req.isUserAllowedToPost()) {
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     if (!(req.user && req.user.admin) && isTroll(JSON.stringify(req.body))) {
@@ -126,7 +126,7 @@ router.post('/nouns/submit', handleErrorAsync(async (req, res) => {
 
 router.post('/nouns/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`
@@ -142,7 +142,7 @@ router.post('/nouns/hide/:id', handleErrorAsync(async (req, res) => {
 
 router.post('/nouns/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await approve(req.db, req.params.id);
@@ -152,7 +152,7 @@ router.post('/nouns/approve/:id', handleErrorAsync(async (req, res) => {
 
 router.post('/nouns/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('nouns')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`

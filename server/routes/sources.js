@@ -83,8 +83,8 @@ router.get('/sources/:id', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/sources/submit', handleErrorAsync(async (req, res) => {
-    if (!req.user) {
-        res.status(401).json({error: 'Unauthorised'});
+    if (!req.user || !await req.isUserAllowedToPost()) {
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     const id = ulid();
@@ -108,7 +108,7 @@ router.post('/sources/submit', handleErrorAsync(async (req, res) => {
 
 router.post('/sources/hide/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`
@@ -122,7 +122,7 @@ router.post('/sources/hide/:id', handleErrorAsync(async (req, res) => {
 
 router.post('/sources/approve/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await approve(req.db, req.params.id);
@@ -132,7 +132,7 @@ router.post('/sources/approve/:id', handleErrorAsync(async (req, res) => {
 
 router.post('/sources/remove/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('sources')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     await req.db.get(SQL`

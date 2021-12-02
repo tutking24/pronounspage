@@ -78,7 +78,7 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
 
 router.get('/census/export', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('census')) {
-        res.status(401).json({error: 'Unauthorised'});
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     const report = [];
