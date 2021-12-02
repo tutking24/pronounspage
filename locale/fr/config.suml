@@ -6,7 +6,7 @@ pronouns:
     enabled: true
     route: 'pronoms'
     default: 'il'
-    any: 'any'
+    any: 'n-importe'
     plurals: false
     honorifics: false
     multiple:
@@ -54,7 +54,7 @@ inclusive:
     enabled: false
 
 community:
-    route: 'calendrier'    
+    route: 'calendrier'
 
 terminology:
     enabled: true

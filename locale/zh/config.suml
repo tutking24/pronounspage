@@ -6,7 +6,7 @@ pronouns:
     enabled: true
     route: 'pronouns'
     default: '他'
-    any: 'any'
+    any: '任何'
     plurals: true
     honorifics: false
     multiple:

@@ -6,7 +6,7 @@ pronouns:
     enabled: true
     route: 'pronomes'
     default: 'ele'
-    any: 'any'
+    any: 'qualquer'
     plurals: false
     honorifics: false
     multiple:
