@@ -67,6 +67,10 @@ app.use(async function (req, res, next) {
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
         req.isGranted = (area = '', locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
         req.db = new LazyDatabase();
+        req.isUserAllowedToPost = async () => {
+            const user = await req.db.get(SQL`SELECT bannedReason FROM users WHERE id = ${req.user.id}`);
+            return user && !user.bannedReason;
+        }
         res.on('finish', async () => {
             await req.db.close();
         });
