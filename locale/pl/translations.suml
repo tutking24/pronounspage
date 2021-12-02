@@ -1372,6 +1372,7 @@ api:
 quotation:
     start: '„'
     end: '”'
+    colon: ':'
 
 localise:
     shorter: 'Dodaj więcej'
@@ -1403,7 +1404,7 @@ ban:
     confirm: 'Czy na pewno chcesz zbanować @%username%?'
     header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
     banned: 'Zbanowanx'
-    termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}:'
+    termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}'
 
 report:
     action: 'Zgłoś profil'

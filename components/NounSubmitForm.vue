@@ -69,7 +69,7 @@
                 </table>
             </div>
             <div v-if="$isGranted('sources')" class="form-group">
-                <label><strong><T>sources.referenced</T>:</strong></label>
+                <label><strong><T>sources.referenced</T><T>quotation.colon</T></strong></label>
                 <ListInput v-model="form.sources"/>
             </div>
             <div class="alert alert-info" v-if="form.base">
@@ -91,7 +91,7 @@
                         <T>nouns.template</T>
                     </a>
                     <div class="card-body">
-                        <T>nouns.root</T>: <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
+                        <T>nouns.root</T><T>quotation.colon</T> <input class="form-control form-control-sm d-inline-block w-auto" v-model="templateBase" autofocus/>
 
                         <ul>
                             <li v-for="template in templates" class="my-2">

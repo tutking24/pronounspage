@@ -2,7 +2,7 @@
     <div>
         <p class="small mb-0">
             <Icon v="share"/>
-            <T>share</T>:
+            <T>share</T><T>quotation.colon</T>
         </p>
         <button class="btn btn-primary" v-if="hasShareApi" @click="shareApi">
             <Icon v="share"/>

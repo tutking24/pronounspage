@@ -2,7 +2,7 @@
     <section>
         <h2 class="h4">
             <Icon v="spell-check"/>
-            <T>pronouns.grammarTable</T>:
+            <T>pronouns.grammarTable</T><T>quotation.colon</T>
         </h2>
 
         <div class="table-responsive">

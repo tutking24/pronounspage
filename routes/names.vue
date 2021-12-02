@@ -37,7 +37,7 @@
                                     <nuxt-link :to="`/@${name.author}`" class="btn btn-outline-dark btn-sm">
                                         <Icon v="user"/>
                                         <span class="btn-label">
-                                    <T>crud.author</T>:
+                                    <T>crud.author</T><T>quotation.colon</T>
                                     @{{name.author}}
                                 </span>
                                     </nuxt-link>
@@ -75,7 +75,7 @@
 
                     <small v-if="name.base && names[name.base]">
                         <hr/>
-                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <p><strong><T>nouns.edited</T><T>quotation.colon</T></strong></p>
                         <Diff switchable>
                             <template v-slot:before><Name :name="names[name.base]"/></template>
                             <template v-slot:after><Name :name="name"/></template>

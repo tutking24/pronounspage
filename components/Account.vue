@@ -101,7 +101,7 @@
 
         <Loading :value="profiles">
             <template v-slot:header>
-                <h3 class="h4"><T>profile.list</T>:</h3>
+                <h3 class="h4"><T>profile.list</T><T>quotation.colon</T></h3>
             </template>
             <ul v-if="profiles !== undefined" class="list-group">
                 <li v-for="(options, locale) in locales" :key="locale" :class="['list-group-item', locale === config.locale ? 'profile-current' : '']">
@@ -112,7 +112,7 @@
 
         <Loading :value="socialConnections">
             <template v-slot:header>
-                <h3 class="h4"><T>user.socialConnection.list</T>:</h3>
+                <h3 class="h4"><T>user.socialConnection.list</T><T>quotation.colon</T></h3>
             </template>
             <ul v-if="socialConnections !== undefined" class="list-group">
                 <li v-for="(providerOptions, provider) in socialProviders" :key="provider" :class="['list-group-item', socialConnections[provider] !== undefined ? 'profile-current' : '']">

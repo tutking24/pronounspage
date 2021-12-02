@@ -24,7 +24,7 @@
             <div v-else>
                 <textarea v-model="user.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
                 <div class="form-group">
-                    <p class="my-1"><label><strong><T>ban.terms</T>:</strong></label></p>
+                    <p class="my-1"><label><strong><T>ban.terms</T><T>quotation.colon</T></strong></label></p>
                     <div style="columns: 3" class="small">
                         <div class="form-check ps-0" v-for="term in forbidden">
                             <label>

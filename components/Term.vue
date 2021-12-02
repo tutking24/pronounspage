@@ -3,7 +3,7 @@
         <p v-for="(p, i) in term.definition.split('\n\n')">
             <template v-if="i === 0">
                 <span v-if="term.key && $isGranted('terms')" class="badge bg-primary text-white">
-                    <T>sources.submit.key</T>:
+                    <T>sources.submit.key</T><T>quotation.colon</T>
                     {{term.key}}
                 </span>
                 <strong><LinkedTextMultiple :texts="term.term" noicons/></strong>

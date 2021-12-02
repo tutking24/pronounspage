@@ -535,6 +535,7 @@ api:
 quotation:
     start: '« '
     end: ' »'
+    colon: ' :'
 
 localise:
     shorter: 'Ajouter'
@@ -566,7 +567,7 @@ ban:
     confirm: 'Voulez-vous bannir @%username% ?'
     header: 'Vous êtes banni. Votre profil n’apparaîtra plus aux autres utilisateurs.'
     banned: 'Banni'
-    termsIntro: 'Selon nos {/termes=Termes de service} :'
+    termsIntro: 'Selon nos {/termes=Termes de service}'
 
 report:
     action: 'Signaler'

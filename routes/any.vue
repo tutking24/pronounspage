@@ -2,7 +2,7 @@
     <div>
         <h2>
             <Icon v="tag"/>
-            <T>pronouns.intro</T>:
+            <T>pronouns.intro</T><T>quotation.colon</T>
         </h2>
 
         <section>
@@ -22,7 +22,7 @@
         <section>
             <h2 class="h4">
                 <Icon v="file-signature"/>
-                <T>pronouns.examples</T>:
+                <T>pronouns.examples</T><T>quotation.colon</T>
             </h2>
 
             <ul>
@@ -40,7 +40,7 @@
         <section class="mb-0">
             <h2 class="h4">
                 <Icon v="info-circle"/>
-                <T>home.whatisit</T>:
+                <T>home.whatisit</T><T>quotation.colon</T>
             </h2>
             <T>home.about</T>
             <Homepage align="center"/>

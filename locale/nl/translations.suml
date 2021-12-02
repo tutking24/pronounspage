@@ -520,6 +520,7 @@ api:
 quotation:
     start: '“'
     end: '”'
+    colon: ':'
 
 localise:
     shorter: 'Voeg meer toe'
@@ -551,7 +552,7 @@ ban:
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'Je bent geband. Jouw profiel zal onzichtbaar zijn .'
     banned: 'Geband.'
-    termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}:'
+    termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}'
 
 report:
     action: 'Rapporteer misbruik'

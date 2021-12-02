@@ -38,7 +38,7 @@ home:
             このツールでは、空欄にテキストを書き込み、他の人と共有できるリンクを作成することができます。
         button: 'ジェネレータを見せる'
         header2: 'リンクを生成する'
-        base: '基づく：'
+        base: '基づく'
         alt: '加えてフィールドでは交換用の別バージョンを書くこともできます。例えば、<code>彼&彼女</code> は「彼」か「彼女」です。'
     whatisit: '三人称代名詞とはなんですか？'
 
@@ -61,7 +61,7 @@ pronouns:
     headerLong: '三人称代名詞'
     examples: '文での使い方の例'
     plural: '複数形'
-    intro: '私の三人称代名詞は：'
+    intro: '私の三人称代名詞は'
     normative: '規範的'
     alt:
         button: '交換可能バージョンへのリンクを生成する。'
@@ -532,11 +532,12 @@ table:
 api:
     header: 'パブリックAPI'
     example: '例'
-    query: 'クエリー文字列のパラメーター：'
+    query: 'クエリー文字列のパラメーター'
 
 quotation:
     start: '「'
     end: '」'
+    colon: '：'
 
 localise:
     shorter: 'もう一つの追加する'
@@ -568,7 +569,7 @@ ban:
     confirm: '@%username%を禁止してもよろしいですか？'
     header: 'あなたを禁止されました。 誰もはあなたのプロファイルを見えません。'
     banned: '禁止されました'
-    termsIntro: '私たちの{/利用規約=利用規約}に従って：'
+    termsIntro: '私たちの{/利用規約=利用規約}に従って'
 
 report:
     action: '不正使用の報告'

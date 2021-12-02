@@ -45,7 +45,7 @@
                     <Noun :noun="s.el" gender="masc"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <p><strong><T>nouns.edited</T><T>quotation.colon</T></strong></p>
                         <Diff switchable>
                             <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="masc"/></template>
                             <template v-slot:after><Noun :noun="s.el" gender="masc"/></template>
@@ -56,7 +56,7 @@
                     <Noun :noun="s.el" gender="fem"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <p><strong><T>nouns.edited</T><T>quotation.colon</T></strong></p>
                         <Diff switchable>
                             <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="fem"/></template>
                             <template v-slot:after><Noun :noun="s.el" gender="fem"/></template>
@@ -67,7 +67,7 @@
                     <Noun :noun="s.el" gender="neutr"/>
 
                     <small v-if="s.el.base && nouns[s.el.base]">
-                        <p><strong><T>nouns.edited</T>:</strong></p>
+                        <p><strong><T>nouns.edited</T><T>quotation.colon</T></strong></p>
                         <Diff switchable>
                             <template v-slot:before><Noun :noun="nouns[s.el.base]" gender="neutr"/></template>
                             <template v-slot:after><Noun :noun="s.el" gender="neutr"/></template>
@@ -75,7 +75,7 @@
                     </small>
 
                     <div v-if="s.el.sourcesData.length" class="div-three-columns">
-                        <p><strong><T>sources.referenced</T>:</strong></p>
+                        <p><strong><T>sources.referenced</T><T>quotation.colon</T></strong></p>
                         <ul class="list-unstyled">
                             <li v-for="source in s.el.sourcesData">
                                 <Source :source="source"/>
@@ -90,7 +90,7 @@
                                 <nuxt-link :to="`/@${s.el.author}`" class="btn btn-concise btn-outline-dark btn-sm m-1">
                                     <Icon v="user"/>
                                     <span class="btn-label">
-                                    <T>crud.author</T>:
+                                    <T>crud.author</T><T>quotation.colon</T>
                                     @{{s.el.author}}
                                 </span>
                                 </nuxt-link>

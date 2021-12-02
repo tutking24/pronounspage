@@ -2,7 +2,7 @@
     <section v-if="config.calendar && config.calendar.enabled && events !== undefined" class="alert alert-info">
         <p class="h3">
             <Icon v="calendar-star"/>
-            <T>calendar.banner</T>:
+            <T>calendar.banner</T><T>quotation.colon</T>
         </p>
         <ul class="list-unstyled my-3 ms-3">
             <li v-for="event in events" class="mb-2">
