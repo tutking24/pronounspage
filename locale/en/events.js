@@ -58,7 +58,7 @@ module.exports = [
     new Event('LGBTI Rights Day (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['lgbtq']),
     new Event('Day Against Hate Crime (Peru)', null, 5, day(31), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('National HIV Testing Day (Spain)', null, 10, day(20), EventLevel.Day, ['aids']),
-    new Event('National HIV Testing Day (México)', null, 11, day(23), EventLevel.Day, ['aids']),
+    new Event('National HIV Testing Day (Mexico)', null, 11, day(23), EventLevel.Day, ['aids']),
     new Event('National HIV Testing Day (Peru)', null, 6, day(10), EventLevel.Day, ['aids']),
 
     // dynamic date
