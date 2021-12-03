@@ -39,7 +39,7 @@ module.exports = [
     }), EventLevel.Week, ['aids']),
 
     // Nov 24 - Dec 1
-    new Event('Semaine de sensibilité à l''épidémie de sida (Canada)', null, 11, function* (monthDays) {
+    new Event('Semaine de sensibilité à l\'épidémie de sida (Canada)', null, 11, function* (monthDays) {
         let lastDay = null;
         for (let d of monthDays) {
             if (d.day >= 24) {
