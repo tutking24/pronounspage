@@ -645,7 +645,7 @@ flags:
     Transneutral: 'Транснейтральн{adjective}'
     Trigender: 'Тригендерн{adjective}'
     Trixic: 'Триксичн{adjective}'
-    Two_Spirit: 'Бердаши'
+    Two_Spirit: 'Две души'
     Xenogender: 'Ксеногендерн{adjective}'
 
 calendar:
@@ -757,7 +757,7 @@ calendar:
         aids_awareness_month: 'Месяц осведомленности об опасности СПИДа'
         genderfluid_week: 'Неделя осведомленности о гендерфлюидных'
         pan_week: 'Неделя пансексуальности и панромантичности'
-        parents_day: 'День не-бинарного родителя'
+        parents_day: 'День родителя без привязки к гендеру'
         hiv_testing_day: 'День тестирования на ВИЧ'
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
