@@ -23,7 +23,7 @@ module.exports = [
     new Event('Aniversario del {https://es.wikipedia.org/wiki/Baile_de_los_cuarenta_y_uno=Baile de los Cuarenta y Uno} (México)', null, 11, day(18), EventLevel.Day),
     new Event('Día de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.Day),
     new Event('Día de la Prueba del VIH en Personas Transgénero (EE.UU.)', 'Transgender', 4, day(18), EventLevel.Day),
-    new Event('Día Internacional de la Prueba del VIH', null, 6, day(27), EventLevel.Day),
+    new Event('Día Internacional de la Prueba del VIH (EE.UU./Argentina/El Salvador/Panamá)', null, 6, day(27), EventLevel.Day),
     new Event('Día  Nacional de la Prueba del VIH (España)', null, 10, day(20), EventLevel.Day),
     new Event('Día  Nacional de la Prueba del VIH (México)', null, 11, day(23), EventLevel.Day),
     new Event('Día  Nacional de la Prueba del VIH (Peru)', null, 6, day(10), EventLevel.Day),
