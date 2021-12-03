@@ -5,6 +5,7 @@ import {createCanvas, loadImage, registerFont} from "canvas";
 import {loadSuml} from "../loader";
 import {clearKey, handleErrorAsync, isTroll} from "../../src/helpers";
 import { caches } from "../../src/cache";
+import {registerLocaleFont} from "../localeFont";
 
 const translations = loadSuml('translations');
 
@@ -195,8 +196,7 @@ router.get('/nouns/:id.png', async (req, res) => {
     const height = padding * 2.5 + (maxItems + 1) * 48 + padding;
     const mime = 'image/png';
 
-    registerFont('static/fonts/quicksand-v21-latin-ext_latin-regular.ttf', { family: 'Quicksand', weight: 'regular'});
-    registerFont('static/fonts/quicksand-v21-latin-ext_latin-700.ttf', { family: 'Quicksand', weight: 'bold'});
+    const fontName = registerLocaleFont('fontHeadings', ['regular', 'bold']);
     registerFont('node_modules/@fortawesome/fontawesome-pro/webfonts/fa-light-300.ttf', { family: 'FontAwesome', weight: 'regular'});
 
     const canvas = createCanvas(width, height);
@@ -205,17 +205,17 @@ router.get('/nouns/:id.png', async (req, res) => {
     const bg = await loadImage('static/bg.png');
     context.drawImage(bg, 0, 0, width, height);
 
-    context.font = 'bold 64pt Quicksand';
+    context.font = `bold 64pt '${fontName}'`;
 
     for (let [column, key, icon] of [[0, 'masculine', '\uf222'], [1, 'feminine', '\uf221'], [2, 'neuter', '\uf22c']]) {
         context.font = 'regular 24pt FontAwesome';
         context.fillText(icon, column * (width - 2 * padding) / 3 + padding, padding * 1.5);
 
-        context.font = 'bold 24pt Quicksand';
+        context.font = `bold 24pt '${fontName}'`;
         context.fillText(translations.nouns[key], column * (width - 2 * padding) / 3 + padding + 36, padding * 1.5);
     }
 
-    context.font = 'regular 24pt Quicksand';
+    context.font = `regular 24pt '${fontName}'`;
     ['masc', 'fem', 'neutr'].forEach((form, column) => {
         let i = 0;
         for (let [key, symbol] of [['', '⋅'], ['Pl', '⁖']])
@@ -228,7 +228,7 @@ router.get('/nouns/:id.png', async (req, res) => {
     context.fillStyle = '#C71585';
     context.font = 'regular 16pt FontAwesome';
     context.fillText('\uf02c', padding, height - padding + 12);
-    context.font = `regular 16pt Quicksand`;
+    context.font = `regular 16pt '${fontName}'`;
     context.fillText(
         translations.title + '/' + (global.config.nouns.routeMain || global.config.nouns.route),
         padding + 36,
