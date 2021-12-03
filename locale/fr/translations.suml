@@ -384,11 +384,9 @@ user:
         emailSent: 'Nous vous avons envoyé un mail avec un code à 6 chiffres. Entrez-le ici. Ce code est à usage unique et reste utilisable pendant 15 minutes.'
         userNotFound: 'Cet utilisateur n’existe pas.'
         email:
-            subject: 'Votre code de connexion est %code%'
-            content: |
-                Pour confirmer votre adresse mail, saisissez ce code sur le site : %code%.
-
-                Si vous n’avez pas demandé ce code, ignorez simplement ce message.
+            subject: 'Votre code de connexion est {{code}}'
+            instruction: 'Pour confirmer votre adresse mail, saisissez ce code sur le site :'
+            extra: 'Si vous n’avez pas demandé ce code, ignorez simplement ce message.'
         why: >
             S’inscrire vous permet de gérer vos cartes ({/@example=comme celle-ci}).
         passwordless: 'Ce site ne stocke aucun mot de passe. {https://avris.it/blog/passwords-are-passé=Plus d’infos.}'

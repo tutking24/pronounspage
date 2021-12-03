@@ -481,11 +481,9 @@ user:
         emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
         userNotFound: 'User not found.'
         email:
-            subject: 'Your login code is %code%'
-            content: |
-                To confirm your email address, enter the following single-use code on the website: %code%.
-
-                If you didn't order this code, simply ignore this message.
+            subject: 'Your login code is {{code}}'
+            instruction: 'To confirm your email address, enter the following single-use code on the website:'
+            extra: 'If you didn''t order this code, simply ignore this message.'
         why: >
             Registering lets you manage your cards ({/@example=like this one}).
         passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'

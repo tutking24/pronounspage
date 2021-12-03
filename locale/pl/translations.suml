@@ -1178,11 +1178,9 @@ user:
         emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
         userNotFound: 'Konto nie zostało znalezione.'
         email:
-            subject: 'Twój kod logowania to %code%'
-            content: |
-                Aby potwierdzić swój adres email, wpisz na stronie następujący jednorazowy kod: %code%.
-
-                Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.
+            subject: 'Twój kod logowania to {{code}}'
+            instruction: 'Aby potwierdzić swój adres email, wpisz na stronie następujący jednorazowy kod:'
+            extra: 'Jeśli nie zamawiałxś tego kodu, po prostu zignoruj tę wiadomość.'
         why: >
             Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@example=takimi jak ta}).
         passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'

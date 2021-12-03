@@ -378,11 +378,9 @@ user:
         emailSent: 'Vi har sendt deg en email med en 6 sifret kode. Skriv den ned her. Koden er en engangskode og kan brukes i 15 minutter.'
         userNotFound: 'Bruker ikke funnet.'
         email:
-            subject: 'Din Logg inn kode er %code%'
-            content: |
-                For å bekrefte din email addresse, vennligst skriv den følgende koden på nettsiden: %code%.
-
-                Hvis du ikke spurte om denne koden, ignorer denne meldingen.
+            subject: 'Din Logg inn kode er {{code}}'
+            instruction: 'For å bekrefte din email addresse, vennligst skriv den følgende koden på nettsiden:'
+            extra: 'Hvis du ikke spurte om denne koden, ignorer denne meldingen.'
         why: >
             Å registrere seg lar deg redigere kortene dine ({/@example=sånn som denne}).
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
