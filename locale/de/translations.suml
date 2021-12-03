@@ -749,13 +749,14 @@ calendar:
         black_queer_week: 'Black Queer History Week'
         mena_lesbian_day: 'Naher Osten und Nordafrika Lesbischer und Queerer Frauen* Pride Tag'
         hate_crime_awareness_week: 'Hassverbrechen Sensibilisierungswoche'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
+        deaf_awareness_week: 'Deaf LGBTQ Awareness Week' # TODO
         suicide_prevention_day: 'Welttag der Suizidprävention'
         suicide_prevention_month: 'Monat der Suizidprävention'
         aids_awareness_month: 'AIDS-Bewusstseins-Monat'
         genderfluid_week: 'Genderfluide Bewusstseinswoche'
         pan_week: 'Pansexuelle und panromantische Bewusstseinswoche'
-        parents_day: 'Gender Expansive Parents'' Day'
+        parents_day: 'Gender Expansive Parents'' Day' # TODO
+        hiv_testing_day: 'HIV-Test-Tag'
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'

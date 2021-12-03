@@ -778,6 +778,7 @@ calendar:
         genderfluid_week: 'Semaine de la visibilité genderfluid'
         pan_week: 'Semaine de la fierté pansexuelle et panromantique'
         parents_day: 'Journée inclusive des parents'
+        hiv_testing_day: 'Journée internationale du dépistage du VIH'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'

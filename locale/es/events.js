@@ -23,7 +23,9 @@ module.exports = [
     new Event('Aniversario del {https://es.wikipedia.org/wiki/Baile_de_los_cuarenta_y_uno=Baile de los Cuarenta y Uno} (México)', null, 11, day(18), EventLevel.Day),
     new Event('Día de la Libertad para Casarse (EE.UU.)', null, 2, day(12), EventLevel.Day),
     new Event('Día de la Prueba del VIH en Personas Transgénero (EE.UU.)', 'Transgender', 4, day(18), EventLevel.Day),
-    new Event('Día de la Prueba del VIH (EE.UU.)', null, 6, day(27), EventLevel.Day),
+    new Event('Día  Nacional de la Prueba del VIH (España)', null, 10, day(20), EventLevel.Day),
+    new Event('Día  Nacional de la Prueba del VIH (México)', null, 11, day(23), EventLevel.Day),
+    new Event('Día  Nacional de la Prueba del VIH (Perú)', null, 6, day(10), EventLevel.Day),
     new Event('Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU.)', null, 2, day(7), EventLevel.Day),
     new Event('Día de Concientización sobre el VIH/SIDA entre los Hombres Gais (EE.UU.)', null, 9, day(27), EventLevel.Day),
     new Event('Día de Concientización sobre el VIH/SIDA y el Envejecimiento (EE.UU.)', null, 9, day(18), EventLevel.Day),
@@ -35,7 +37,10 @@ module.exports = [
     new Event('Día de la Visibilidad Trans-, Travesti y No Binarie (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'travesti', 'nonbinary']),
     new Event('Día de Concienciación de las Mujeres, Niñas y Personas Indígenas de Dos Espíritus Desaparecidas y Asesinadas', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
     new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
-
+    new Event('Día Nacional de lucha contra el VIH/SIDA (Uruguay)', null, 7, day(29), EventLevel.Day),
+    new Event('Día nacional por la NO violencia y homofobia contra la población LGBTI (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
+    new Event('Día por los Derechos de las Personas LGBTI (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['LGBTQ']),
+    new Event('Día Contra los Crímenes de Odio (Perú)', null, 5, day(31), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
