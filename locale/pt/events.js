@@ -19,6 +19,7 @@ module.exports = [
     new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day, ['lesbian']),
     new Event('Dia Latinx da Conscientização sobre Aids/Sida (EUA)', null, 10, day(15), EventLevel.Day),
     new Event('Dia do Orgulho de Ser Travesti e Transexual (Brasil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
+    new Event('Dia Nacional da Afirmação Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
 
 
     // one-off events
