@@ -779,7 +779,9 @@ calendar:
     celebrating_month: 'で祝われています'
     image:
         header: '画像をダウンロード'
-        overview: '概要'
-        labels: 'ラベル'
+    # TODO
+    view:
+        grid: 'Grid view'
+        list: 'Events list'
     link: 'リンク'
     full: 'カレンダー全体を見る'

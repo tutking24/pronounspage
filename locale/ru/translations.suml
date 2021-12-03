@@ -764,7 +764,9 @@ calendar:
     celebrating_month: 'празднуется'
     image:
         header: 'Скачать изображение'
-        overview: 'Краткое'
-        labels: 'Детальное'
+    # TODO
+    view:
+        grid: 'Grid view'
+        list: 'Events list'
     link: 'Ссылка'
     full: 'Полный календарь'

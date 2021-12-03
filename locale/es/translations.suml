@@ -789,7 +789,9 @@ calendar:
     celebrating_month: 'se celebra en'
     image:
         header: 'Descargar una imagen'
-        overview: 'Vista general'
-        labels: 'Etiquetas'
+    # TODO
+    view:
+        grid: 'Grid view'
+        list: 'Events list'
     link: 'Enlace'
     full: 'Calendario completo'

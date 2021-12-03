@@ -47,12 +47,12 @@
                 </p>
                 <p class="mb-0" v-else>
                     <a :href="`/calendar/${year.year}-overview.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                        <Icon v="image"/>
-                        <T>calendar.image.overview</T>
+                        <Icon v="table"/>
+                        <T>calendar.view.grid</T>
                     </a>
                     <a :href="`/calendar/${year.year}-labels.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                        <Icon v="image"/>
-                        <T>calendar.image.labels</T>
+                        <Icon v="list"/>
+                        <T>calendar.view.list</T>
                     </a>
                 </p>
             </div>
