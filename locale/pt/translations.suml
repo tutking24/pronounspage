@@ -386,11 +386,9 @@ user:
         emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
         userNotFound: 'Usuarie não encontrade.'
         email:
-            subject: 'O código de início da sessão é %code%'
-            content: |
-                Para confirmar seu endereço de email, entre com o seguinte código no site: %code%.
-
-                Se não solicitou este código, simplesmente ignore esta mensagem.
+            subject: 'O código de início da sessão é {{code}}'
+            instruction: 'Para confirmar seu endereço de email, entre com o seguinte código no site:'
+            extra: 'Se não solicitou este código, simplesmente ignore esta mensagem.'
         why: >
             Registrar-se te permite dirigir os cartões ({/@example=como esta}).
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'

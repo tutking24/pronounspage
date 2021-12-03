@@ -377,11 +377,9 @@ user:
         emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
         userNotFound: 'Nutzer*in nicht gefunden.'
         email:
-            subject: 'Dein Logincode ist %code%'
-            content: |
-                Um deine E-Mail-Adresse zu bestätigen, gib den folgenden Code auf der Seite ein: %code%
-
-                Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.
+            subject: 'Dein Logincode ist {{code}}'
+            instruction: 'Um deine E-Mail-Adresse zu bestätigen, gib den folgenden Code auf der Seite ein:'
+            extra: 'Wenn du diesen Code nicht angefordert hast, ignoriere einfach diese Meldung.'
         why: >
             Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@example=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'

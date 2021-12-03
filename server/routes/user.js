@@ -255,11 +255,7 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
             async () => {
                 codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
 
-                mailer(
-                    payload.email,
-                    `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
-                    translations.user.login.email.content.replace('%code%', payload.code),
-                )
+                mailer(payload.email, 'confirmCode', { code: payload.code });
             },
             async () => {
                 const auth = await findLatestEmailAuthenticator(req.db, payload.email, 'email');
@@ -342,11 +338,7 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
 
         const authId = await saveAuthenticator(req.db, 'changeEmail', req.user, payload, 15);
 
-        mailer(
-            payload.to,
-            `[${translations.title}] ${translations.user.login.email.subject.replace('%code%', payload.code)}`,
-            translations.user.login.email.content.replace('%code%', payload.code),
-        )
+        mailer(payload.to, 'confirmCode', { code: payload.code });
 
         return res.json({ authId });
     }

@@ -367,11 +367,9 @@ user:
         emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
         userNotFound: 'Gebruiker niet gevonden.'
         email:
-            subject: 'Jouw logincode is %code%'
-            content: |
-                Voer de volgende code in om jouw e-mailadres te bevestigen: %code%.
-
-                Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.
+            subject: 'Jouw logincode is {{code}}'
+            instruction: 'Voer de volgende code in om jouw e-mailadres te bevestigen:'
+            extra: 'Als je deze code niet hebt aangevraagd, kun je dit bericht gewoon negeren.'
         why: >
             Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'

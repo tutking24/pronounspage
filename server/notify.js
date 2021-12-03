@@ -60,14 +60,10 @@ async function notify() {
         if (!awaitingModerationGrouped.hasOwnProperty(email)) {
             continue;
         }
-        const message = awaitingModerationGrouped[email];
-        console.log('Sending email:', email, message);
+        const stats = awaitingModerationGrouped[email];
+        console.log('Sending email:', email, stats);
 
-        mailer(
-            email,
-            '[Pronouns.page] There are entries awaiting moderation',
-            'Entries awaiting moderation: \n' + JSON.stringify(message, null, 4),
-        );
+        mailer(email, 'notify', { stats });
     }
 
     await db.close();
