@@ -1622,7 +1622,8 @@ calendar:
     celebrating_month: 'obchodzimy'
     image:
         header: 'Ściągnij w formie obrazka'
-        overview: 'Przegląd'
-        labels: 'Etykietki'
+    view:
+        grid: 'Widok kalendarza'
+        list: 'Lista wydarzeń'
     link: 'Link'
     full: 'Pełen kalendarz'

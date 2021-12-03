@@ -784,7 +784,9 @@ calendar:
     celebrating_month: 'est célébrée en'
     image:
         header: 'Télécharger l''image'
-        overview: 'Vue générale'
-        labels: 'Étiquettes'
+    # TODO
+    view:
+        grid: 'Grid view'
+        list: 'Events list'
     link: 'Liens'
     full: 'Calendrier complet'

@@ -2,7 +2,7 @@
     <div v-if="year">
         <CommunityNav v-if="!basic"/>
 
-        <h2 class="d-flex justify-content-between">
+        <h2 class="d-flex justify-content-between flex-column flex-md-row">
             <span>
                 <Icon v="calendar-star"/>
                 <T>calendar.headerLong</T> <small class="text-muted">({{year.year}})</small>
@@ -12,6 +12,16 @@
                     <Icon v="tags"/>
                     <T>domain</T>/{{ config.calendar.route }}
                 </nuxt-link>
+            </span>
+            <span v-else class="btn-group">
+                <button :class="['btn', labels ? 'btn-outline-primary' : 'btn-primary']" @click="labels = false">
+                    <Icon v="table"/>
+                    <T>calendar.view.grid</T>
+                </button>
+                <button :class="['btn', labels ? 'btn-primary' : 'btn-outline-primary']" @click="labels = true">
+                    <Icon v="list"/>
+                    <T>calendar.view.list</T>
+                </button>
             </span>
         </h2>
 

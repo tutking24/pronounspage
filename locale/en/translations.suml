@@ -780,7 +780,8 @@ calendar:
     celebrating_month: 'is celebrated in'
     image:
         header: 'Download an image'
-        overview: 'Overview'
-        labels: 'Labels'
+    view:
+        grid: 'Grid view'
+        list: 'Events list'
     link: 'Link'
     full: 'Full calendar'
