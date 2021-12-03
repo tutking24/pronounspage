@@ -7,7 +7,7 @@ module.exports = [
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
     new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
-    new Event('aids_awareness_month', null, 12, month, EventLevel.Month, ['aids']),
+    new Event('aids_awareness_month', '_red-ribbon', 12, month, EventLevel.Month, ['aids']),
 
     // project celebrations
     new Event('zaimki_birthday', null, 7, day(23), EventLevel.Day),
@@ -39,7 +39,7 @@ module.exports = [
     new Event('xenogender_day', 'Xenogender', 5, day(15), EventLevel.Day, ['xenogender']),
     new Event('genderqueer_day', 'Genderqueer', 4, day(25), EventLevel.Day, ['genderqueer']),
     new Event('genderfluid_day', 'Genderfluid', 6, day(16), EventLevel.Day, ['genderfluid', 'demifluid']),
-    new Event('aids_day', null, 12, day(1), EventLevel.Day, ['aids']),
+    new Event('aids_day', '_red-ribbon', 12, day(1), EventLevel.Day, ['aids']),
     new Event('tolerance_day', null, 11, day(16), EventLevel.Day),
     new Event('social_justice_day', null, 2, day(20), EventLevel.Day, ['progress pride']),
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
@@ -50,12 +50,12 @@ module.exports = [
     new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual', 'panromantic']),
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual', 'asexual spectrum']),
-    new Event('holocaust_remembrance_day', null, 1, day(27), EventLevel.Day),
+    new Event('holocaust_remembrance_day', '_black-ribbon', 1, day(27), EventLevel.Day),
     new Event('black_ribbon_day', null, 8, day(23), EventLevel.Day),
     new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
     new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
     new Event('parents_day', null, 12, day(6), EventLevel.Day),
-    new Event('hiv_testing_day', null, 6, day(27), EventLevel.Day, ['aids']),
+    new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
@@ -152,7 +152,7 @@ module.exports = [
         }
     }, EventLevel.Day, ['gay', 'homosexual']),
 
-    new Event('aids_memorial', null, 5, function* (monthDays) {
+    new Event('aids_memorial', '_red-ribbon', 5, function* (monthDays) {
         let sundays = 0;
         for (let d of monthDays) {
             if (d.dayOfWeek === 7) {
@@ -192,7 +192,7 @@ module.exports = [
         yield new Day(lastDay.year, 5, 2);
     }), EventLevel.Week, ['lesbian']),
 
-    new Event('family_equality_day', null, 5, function* (monthDays) {
+    new Event('family_equality_day', '_hrc', 5, function* (monthDays) {
         for (let d of monthDays) {
             if (d.dayOfWeek === 7) {
                 yield d;
