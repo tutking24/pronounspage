@@ -68,7 +68,7 @@
 </script>
 
 <style lang="scss">
-    @import "assets/style";
+    @import "assets/variables";
 
     @include media-breakpoint-down('sm', $grid-breakpoints) {
         .btn-thin {

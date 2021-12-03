@@ -91,7 +91,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import "assets/style";
+@import "assets/variables";
 
 @for $i from 3 to 5 {
     @include media-breakpoint-up('lg', $grid-breakpoints) {

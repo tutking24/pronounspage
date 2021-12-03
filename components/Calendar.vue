@@ -115,7 +115,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "assets/style";
+    @import "assets/variables";
 
     .calendar {
         display: grid;
@@ -171,7 +171,7 @@
                 }
                 &:hover, &.day-selected {
                     background: lighten($primary, 25%) !important;
-                    @extend .shadow;
+                    box-shadow: $box-shadow;
                     .day-number {
                         color: $white;
                     }
@@ -179,7 +179,7 @@
             }
             &.day-today {
                 border: 3px solid $black !important;
-                @extend .shadow;
+                box-shadow: $box-shadow;
             }
             .day-tooltip {
                 position: absolute;
