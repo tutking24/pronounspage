@@ -17,19 +17,34 @@
 
         <CalendarBanner v-if="!basic && year.isCurrent()"/>
 
-        <section v-if="basic" class="row pb-4">
-            <div v-for="i in 12" class="col-12 col-lg-3 py-3">
-                <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
-                <CalendarMonthEvents v-if="labels" :year="year" :month="i" class="small my-3"/>
-                <Calendar v-else :year="year" :month="i"/>
-            </div>
-        </section>
-        <section v-else class="row">
-            <div v-for="i in 12" class="col-12 col-sm-6 col-lg-4 py-3">
-                <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
-                <Calendar :year="year" :month="i" :mark="today" tooltips/>
-            </div>
-        </section>
+        <template v-if="basic">
+            <section v-if="labels" class="columns-4 pb-4">
+                <div v-for="i in 12" class="py-3">
+                    <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
+                    <CalendarMonthEvents :year="year" :month="i" class="small my-3"/>
+                </div>
+            </section>
+            <section v-else class="row pb-4">
+                <div v-for="i in 12" class="col-12 col-lg-3 py-3">
+                    <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
+                    <Calendar :year="year" :month="i"/>
+                </div>
+            </section>
+        </template>
+        <template v-else>
+            <section v-if="labels" class="columns-3">
+                <div v-for="i in 12" class="py-3">
+                    <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
+                    <CalendarMonthEvents :year="year" :month="i" class="small my-3"/>
+                </div>
+            </section>
+            <section v-else class="row">
+                <div v-for="i in 12" class="col-12 col-sm-6 col-lg-4 py-3">
+                    <h3 class="text-center"><T>calendar.months.{{i}}</T></h3>
+                    <Calendar :year="year" :month="i" :mark="today" tooltips/>
+                </div>
+            </section>
+        </template>
 
         <template v-if="!basic">
             <CalendarExtra :year="year"/>
@@ -74,3 +89,18 @@
         },
     };
 </script>
+
+<style lang="scss" scoped>
+@import "assets/style";
+
+@for $i from 3 to 5 {
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        .columns-#{$i} {
+            column-count: $i;
+            > * {
+                break-inside: avoid-column;
+            }
+        }
+    }
+}
+</style>
