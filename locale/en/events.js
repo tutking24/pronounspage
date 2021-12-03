@@ -23,22 +23,22 @@ module.exports = [
     new Event('Marriage Equality Day (New Zealand)', null, 8, day(19), EventLevel.Day),
     new Event('Marriage Referendum Anniversary (Ireland)', null, 5, day(22), EventLevel.Day),
     new Event('Freedom to Marry Day (US)', null, 2, day(12), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day} (US)', 'Transgender', 4, day(18), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV Testing Day} (US/Canada)', null, 2, day(7), EventLevel.Day),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day} (US)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV Testing Day} (US/Canada)', null, 2, day(7), EventLevel.Day, ['aids']),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', null, 2, day(1), EventLevel.Day),
     new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men\'s HIV/AIDS Awareness Day} (US)', null, 9, day(27), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day} (US/Canada)', null, 9, day(18), EventLevel.Day),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men\'s HIV/AIDS Awareness Day} (US)', null, 9, day(27), EventLevel.Day, ['aids', 'gay']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day} (US/Canada)', null, 9, day(18), EventLevel.Day, ['aids']),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.Day),
     new Event('{https://twitter.com/_EQUALGROUND_/status/1440232964286124050=Lesbian Visibility Day} (Sri Lanka)', 'Lesbian', 9, day(21), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nlaad.html=Latinx AIDS Awareness Day} (US)', null, 10, day(15), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/shaad.html=Southern HIV/AIDS Awareness Day} (US)', null, 8, day(20), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/napihaad.html=Asian and Pacific Islander HIV/AIDS Awareness Day} (US)', null, 5, day(19), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day} (US)', null, 4, day(10), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day} (US)', null, 3, day(10), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nnhaad.html=Native HIV/AIDS Awareness Day} (US)', null, 3, day(20), EventLevel.Day),
-    new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day} (US)', null, 6, day(5), EventLevel.Day),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nlaad.html=Latinx AIDS Awareness Day} (US)', null, 10, day(15), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/shaad.html=Southern HIV/AIDS Awareness Day} (US)', null, 8, day(20), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/napihaad.html=Asian and Pacific Islander HIV/AIDS Awareness Day} (US)', null, 5, day(19), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day} (US)', null, 4, day(10), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day} (US)', null, 3, day(10), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nnhaad.html=Native HIV/AIDS Awareness Day} (US)', null, 3, day(20), EventLevel.Day, ['aids']),
+    new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day} (US)', null, 6, day(5), EventLevel.Day, ['aids']),
     new Event('{/terminology#transgender=Trans} Visibility Day (Brazil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
     new Event('National {/terminology#pride=Gay Pride} Day (Brazil)', 'LGBTQ', 3, day(25), EventLevel.Day),
     new Event('{/terminology#lesbian=Lesbian} Visibility Day (Brazil)', 'Lesbian', 8, day(29), EventLevel.Day, ['lesbian']),
@@ -53,6 +53,13 @@ module.exports = [
     new Event('{/terminology#transgender=Trans-}, {/terminology#travesti=Travesti} and {{/terminology#nonbinary=Non-Binary} Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'nonbinary', 'travesti']),
     new Event('Missing and Murdered Indigenous Women, Girls, and {/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
     new Event('{/terminology#travesti=Travesti} and {/terminology#transgender=Transgender} Pride Day (Brazil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
+    new Event('National AIDS Day (Uruguay)', null, 7, day(29), EventLevel.Day, ['aids']),
+    new Event('National Day Against Violence and Homophobia Towards LGBTI People (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
+    new Event('LGBTI Rights Day (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['lgbtq']),
+    new Event('Day Against Hate Crime (Peru)', null, 5, day(31), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
+    new Event('National HIV Testing Day (Spain)', null, 10, day(20), EventLevel.Day, ['aids']),
+    new Event('National HIV Testing Day (México)', null, 11, day(23), EventLevel.Day, ['aids']),
+    new Event('National HIV Testing Day (Peru)', null, 6, day(10), EventLevel.Day, ['aids']),
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
@@ -126,7 +133,7 @@ module.exports = [
             days.add(d)
         }
         yield* days;
-    }, EventLevel.Week),
+    }, EventLevel.Week, ['aids']),
 
     // Dec 1 - 7
     new Event('Indigenous AIDS Awareness Week (Canada)', null, 12, week(function* (monthDays) {
@@ -135,7 +142,7 @@ module.exports = [
                 yield d;
             }
         }
-    }), EventLevel.Week),
+    }), EventLevel.Week, ['aids']),
 
     // Nov 24 - Dec 1
     new Event('AIDS Awareness Week (Canada)', null, 11, function* (monthDays) {
@@ -147,7 +154,7 @@ module.exports = [
             lastDay = d;
         }
         yield new Day(lastDay.year, 12, 1);
-    }, EventLevel.Week),
+    }, EventLevel.Week, ['aids']),
 
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
