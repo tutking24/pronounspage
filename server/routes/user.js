@@ -439,7 +439,7 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
         if (!req.session.socialRedirect) {
             return '/' + config.user.route;
         }
-        const host = buildLocaleList(config.locale)[req.session.socialRedirect].url;
+        const host = buildLocaleList(config.locale, true)[req.session.socialRedirect].url;
         delete req.session.socialRedirect;
 
         return `${host}/api/user/social-redirect-callback/${encodeURIComponent(token)}`;
