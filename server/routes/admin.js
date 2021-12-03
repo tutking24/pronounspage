@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
-import {config as socialLoginConfig} from "../social";
 import {buildDict, now, shuffle, handleErrorAsync, buildLocaleList} from "../../src/helpers";
 import locales from '../../src/locales';
 import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
 import { caches }  from "../../src/cache";
+import mailer from "../../src/mailer";
 
 const router = Router();
 
@@ -142,7 +142,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const user = await req.db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
+    const user = await req.db.get(SQL`SELECT id, email FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
     if (!user) {
         return res.status(400).json({error: 'No such user'});
     }
@@ -158,6 +158,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
                 bannedBy = ${req.user.id}
             WHERE id = ${user.id}
         `);
+        mailer(user.email, 'ban', {reason: req.body.reason});
     } else {
         await req.db.get(SQL`
             UPDATE users

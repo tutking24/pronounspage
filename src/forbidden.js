@@ -1,4 +1,4 @@
-export default [
+module.exports = [
     'propagation of totalitarian regimes',
     'hate speech',
     'racism',
