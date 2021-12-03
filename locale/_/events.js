@@ -10,7 +10,7 @@ module.exports = [
     new Event('aids_awareness_month', '_red-ribbon', 12, month, EventLevel.Month, ['aids']),
 
     // project celebrations
-    new Event('zaimki_birthday', null, 7, day(23), EventLevel.Day),
+    new Event('zaimki_birthday', '_zaimki', 7, day(23), EventLevel.Day),
 
     // static date
     new Event('agender_day', 'Agender', 5, day(19), EventLevel.Day, ['agender']),
@@ -45,7 +45,7 @@ module.exports = [
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
     new Event('domestic_violence', null, 5, day(25), EventLevel.Day, ['lgbtq']),
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.Day, ['polysexual', 'polyromantic']),
-    new Event('orlando_day', null, 6, day(12), EventLevel.Day, ['homophobia']),
+    new Event('orlando_day', '_black-ribbon', 6, day(12), EventLevel.Day, ['homophobia']),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender', 'demiboy', 'demigirl', 'deminonbinary', 'demineutrois', 'demifluid']),
     new Event('pan_pride_day', 'Pansexual', 12, day(8), EventLevel.Day, ['pansexual', 'panromantic']),
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
