@@ -44,7 +44,7 @@ const buildFlags = () => {
             .replace(new RegExp('_', 'g'), '')
             .trim();
 
-        if (flag.startsWith('.')) {
+        if (flag.startsWith('.') || flag.startsWith('_')) {
             continue;
         }
 
