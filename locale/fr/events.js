@@ -29,6 +29,27 @@ module.exports = [
         }
     }, EventLevel.Day),
 
+    // Dec 1 - 7
+    new Event('Semaine autochtone de sensibilisation au sida (Canada)', null, 12, week(function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day <= 7) {
+                yield d;
+            }
+        }
+    }), EventLevel.Week),
+
+    // Nov 24 - Dec 1
+    new Event('Semaine de sensibilité à l''épidémie de sida (Canada)', null, 11, function* (monthDays) {
+        let lastDay = null;
+        for (let d of monthDays) {
+            if (d.day >= 24) {
+                yield d;
+            }
+            lastDay = d;
+        }
+        yield new Day(lastDay.year, 12, 1);
+    }, EventLevel.Week),
+
     // one-off events
     new Event('Journée de le mariage pour tous (Suisse)', null, 7, dayYear(1, 2022), EventLevel.Day),
 
