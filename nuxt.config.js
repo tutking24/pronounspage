@@ -165,6 +165,7 @@ export default {
     },
     env: {
         BASE_URL: process.env.BASE_URL,
+        HOME_URL: process.env.HOME_URL || 'https://pronouns.page',
         TITLE: title,
         PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
         CONFIG: config,

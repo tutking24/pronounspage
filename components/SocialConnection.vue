@@ -5,7 +5,7 @@
             {{ providerOptions.name }}
         </span>
         <span v-if="connection === undefined">
-            <a :href="`/api/connect/${provider}`" class="badge bg-light text-dark border">
+            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
                 <Icon v="link"/>
                 <T>user.socialConnection.connect</T>
             </a>
@@ -18,7 +18,7 @@
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>
-            <a :href="`/api/connect/${provider}`" class="badge bg-light text-dark border">
+            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
                 <Icon v="sync"/>
                 <T>user.socialConnection.refresh</T>
             </a>
@@ -41,6 +41,7 @@
         data() {
             return {
                 disconnecting: false,
+                homeUrl: process.env.HOME_URL,
             }
         },
         methods: {
