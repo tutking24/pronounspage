@@ -101,7 +101,7 @@ const applyTemplate = (template, context, params) => {
 
 module.exports = (to, template, params = {}) => {
     sendEmail(
-        to,
+        process.env.MAILER_OVERWRITE || to,
         applyTemplate(template, 'subject', params),
         applyTemplate(template, 'text', params),
         applyTemplate(template, 'html', params),
