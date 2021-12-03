@@ -12,7 +12,7 @@
                     <div class="row flex-row-reverse">
                         <div class="col-12 col-md-4">
                             <div class="btn-group-vertical w-100 mb-3">
-                                <a :href="`/api/connect/${provider}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                                <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
                                     <Icon :v="providerOptions.icon || provider" set="b"/>
                                     {{ providerOptions.name }}
                                 </a>
@@ -99,6 +99,8 @@
                 saving: false,
 
                 captchaToken: null,
+
+                homeUrl: process.env.HOME_URL,
             };
         },
         computed: {

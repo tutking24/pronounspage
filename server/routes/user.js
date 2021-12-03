@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {buildDict, makeId, now, handleErrorAsync} from "../../src/helpers";
+import {buildDict, makeId, now, handleErrorAsync, buildLocaleList} from "../../src/helpers";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import { loadSuml } from '../loader';
@@ -390,6 +390,13 @@ router.post('/user/:id/set-roles', handleErrorAsync(async (req, res) => {
     return res.json('ok');
 }));
 
+// happens on home
+router.get('/user/social-redirect/:provider/:locale', handleErrorAsync(async (req, res) => {
+    req.session.socialRedirect = req.params.locale;
+    return res.redirect(`/api/connect/${req.params.provider}`);
+}));
+
+// happens on home
 router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
         return res.status(400).redirect('/' + config.user.route);
@@ -428,7 +435,22 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     }
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
 
-    return res.cookie('token', token, cookieSettings).redirect('/' + config.user.route);
+    const buildRedirectUrl = () => {
+        if (!req.session.socialRedirect) {
+            return '/' + config.user.route;
+        }
+        const host = buildLocaleList(config.locale)[req.session.socialRedirect].url;
+        delete req.session.socialRedirect;
+
+        return `${host}/api/user/social-redirect-callback/${encodeURIComponent(token)}`;
+    }
+
+    return res.cookie('token', token, cookieSettings).redirect(buildRedirectUrl());
+}));
+
+// happens on locale
+router.get('/user/social-redirect-callback/:token', handleErrorAsync(async (req, res) => {
+    res.cookie('token', req.params.token, cookieSettings).redirect('/' + config.user.route);
 }));
 
 router.get('/user/social-connections', handleErrorAsync(async (req, res) => {
