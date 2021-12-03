@@ -24,7 +24,6 @@ module.exports = [
     new Event('Marriage Referendum Anniversary (Ireland)', null, 5, day(22), EventLevel.Day),
     new Event('Freedom to Marry Day (US)', null, 2, day(12), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day} (US)', 'Transgender', 4, day(18), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/testingday.html=HIV Testing Day} (US/Canada)', null, 6, day(27), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV Testing Day} (US/Canada)', null, 2, day(7), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', null, 2, day(1), EventLevel.Day),

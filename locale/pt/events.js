@@ -13,11 +13,13 @@ module.exports = [
     new Event('Dia Nacional da Visibilidade Trans (Brasil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
     new Event('Dia Nacional do Orgulho Gay (Brasil)', 'LGBTQ', 3, day(25), EventLevel.Day, ['gay']),
     new Event('Dia Nacional da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, day(29), EventLevel.Day, ['lesbian']),
+    new Event('Dia Nacional do Orgulho Lésbico (Brasil)', 'Lesbian', 8, day(19), EventLevel.Day, ['lesbian']),
     new Event('Aniversário da morte de Marielle Franco', null, 3, day(14), EventLevel.Day),
     new Event('Aniversário da Nova Lei de Identidade de Género (Portugal)', null, 4, day(14), EventLevel.Day),
     new Event('Dia das Rebeliões Lésbicas', 'Lesbian_', 10, day(13), EventLevel.Day, ['lesbian']),
     new Event('Dia Latinx da Conscientização sobre Aids/Sida (EUA)', null, 10, day(15), EventLevel.Day),
     new Event('Dia do Orgulho de Ser Travesti e Transexual (Brasil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
+    new Event('Dia Nacional da Afirmação Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
 
 
     // one-off events
