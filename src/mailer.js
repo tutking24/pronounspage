@@ -1,6 +1,7 @@
 const mailer = require('mailer');
 const fs = require('fs');
 const Suml = require('suml');
+const forbidden = require('./forbidden');
 
 const color = '#C71585';
 const logo = fs.readFileSync(__dirname + '/../node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg').toString('utf-8');
@@ -29,6 +30,8 @@ const sendEmail = (to, subject, body = undefined, html = undefined) => {
             }
         });
 };
+
+const terms = `It is forbidden to post on the Service any Content that might break the law or violate social norms, including but not limited to: ${forbidden.join(', ')}`
 
 const templates = {
     base: {
@@ -61,7 +64,16 @@ const templates = {
             <p style="border: 1px solid #aaa;border-radius: 8px;overflow: hidden;text-align: center;user-select: all;font-size: 24px; padding:8px;letter-spacing: 8px; font-weight: bold;">{{code}}</p>
             <p style="font-size: 12px; color: #777">[[user.login.email.extra]]</p>
         `,
-    }
+    },
+    ban: {
+        subject: '[[ban.header]]',
+        text: `[[ban.header]]\n\n[[ban.reason]][[quotation.colon]] %reason%\n\n[[quotation.start]]${terms}[[quotation.end]]`,
+        html: `
+            <p>[[ban.header]]</p>
+            <p>[[ban.reason]][[quotation.colon]] %reason%</p>
+            <p style="font-size: 12px; color: #777">[[quotation.start]]${terms}[[quotation.end]]</p>
+        `,
+    },
 }
 
 const applyTemplate = (template, context, params) => {
@@ -70,6 +82,8 @@ const applyTemplate = (template, context, params) => {
     if (templates.base[context] !== undefined) {
         template = templates.base[context].replace('{{content}}', template);
     }
+
+    template = template.replace(/%reason%/g, '{{reason}}'); // TODO
 
     template = template.replace(/\[\[([^\]]+)]]/g, m => {
         let x = translations;
