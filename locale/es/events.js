@@ -37,7 +37,8 @@ module.exports = [
     new Event('Día de la Visibilidad Trans-, Travesti y No Binarie (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'travesti', 'nonbinary']),
     new Event('Día de Concienciación de las Mujeres, Niñas y Personas Indígenas de Dos Espíritus Desaparecidas y Asesinadas', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
     new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
-    new Event('Día Nacional del VIH/SIDA (Uruguay)', null, 7, day(29), EventLevel.Day,
+    new Event('Día Nacional del VIH/SIDA (Uruguay)', null, 7, day(29), EventLevel.Day),
+    new Event('Día nacional por la NO violencia y homofobia contra la población LGBTI (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia']),
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
