@@ -758,6 +758,7 @@ calendar:
         genderfluid_week: 'Неделя осведомленности о гендерфлюидных'
         pan_week: 'Неделя пансексуальности и панромантичности'
         parents_day: 'День не-бинарного родителя'
+        hiv_testing_day: 'День тестирования на ВИЧ'
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
