@@ -394,6 +394,7 @@
             @supports not (backdrop-filter: blur(12px)) {
                 background-color: $white;
             }
+            box-shadow: $box-shadow;
         }
 
         .nav-custom:not(.nav-custom-start) {
