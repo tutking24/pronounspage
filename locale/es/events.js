@@ -39,6 +39,7 @@ module.exports = [
     new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Día Nacional del VIH/SIDA (Uruguay)', null, 7, day(29), EventLevel.Day),
     new Event('Día nacional por la NO violencia y homofobia contra la población LGBTI (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia']),
+    new Event('Día Nacional por los Derechos de las Personas LGBTI (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['LGBTQ']),
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
