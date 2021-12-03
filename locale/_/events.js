@@ -7,7 +7,7 @@ module.exports = [
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
     new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
-    new Event('aids_awareness_month', null, 12, month, EventLevel.Month),
+    new Event('aids_awareness_month', null, 12, month, EventLevel.Month, ['aids']),
 
     // project celebrations
     new Event('zaimki_birthday', null, 7, day(23), EventLevel.Day),
@@ -39,7 +39,7 @@ module.exports = [
     new Event('xenogender_day', 'Xenogender', 5, day(15), EventLevel.Day, ['xenogender']),
     new Event('genderqueer_day', 'Genderqueer', 4, day(25), EventLevel.Day, ['genderqueer']),
     new Event('genderfluid_day', 'Genderfluid', 6, day(16), EventLevel.Day, ['genderfluid', 'demifluid']),
-    new Event('aids_day', null, 12, day(1), EventLevel.Day),
+    new Event('aids_day', null, 12, day(1), EventLevel.Day, ['aids']),
     new Event('tolerance_day', null, 11, day(16), EventLevel.Day),
     new Event('social_justice_day', null, 2, day(20), EventLevel.Day, ['progress pride']),
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
@@ -55,7 +55,7 @@ module.exports = [
     new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
     new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
     new Event('parents_day', null, 12, day(6), EventLevel.Day),
-    new Event('hiv_testing_day', null, 6, day(27), EventLevel.Day),
+    new Event('hiv_testing_day', null, 6, day(27), EventLevel.Day, ['aids']),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
@@ -163,7 +163,7 @@ module.exports = [
                 }
             }
         }
-    }, EventLevel.Day),
+    }, EventLevel.Day, ['aids']),
 
     new Event('health_week', null, 3, week(function* (monthDays) {
         let prevBuffer = [];
