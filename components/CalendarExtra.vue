@@ -42,7 +42,7 @@
                 <p class="mb-0" v-if="day">
                     <a :href="`/calendar/${day}.png`" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
                         <Icon v="image"/>
-                        <T>calendar.image.overview</T>
+                        <T>calendar.image.header</T>
                     </a>
                 </p>
                 <p class="mb-0" v-else>
