@@ -1,4 +1,4 @@
-const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
+const {Event, day, week, month, dayYear, EventLevel, Day} = require("../../src/calendar/helpers");
 
 module.exports = [
     // months
@@ -110,6 +110,44 @@ module.exports = [
             }
         }
     }, EventLevel.Day),
+
+    // week (Sun-Sun) containing Dec 1st
+    new Event('Aboriginal and Torres Strait Islander HIV Awareness Week (Australia)', null, 12, function* (monthDays) {
+        const decFirst = [...monthDays][0];
+        const days = new Set([decFirst]);
+        let d = decFirst;
+        while (d.dayOfWeek !== 7) {
+            d = d.prev();
+            days.add(d)
+        }
+        d = decFirst;
+        while (days.size < 8) {
+            d = d.next();
+            days.add(d)
+        }
+        yield* days;
+    }, EventLevel.Week),
+
+    // Dec 1 - 7
+    new Event('Indigenous AIDS Awareness Week (Canada)', null, 12, week(function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day <= 7) {
+                yield d;
+            }
+        }
+    }), EventLevel.Week),
+
+    // Nov 24 - Dec 1
+    new Event('AIDS Awareness Week (Canada)', null, 11, function* (monthDays) {
+        let lastDay = null;
+        for (let d of monthDays) {
+            if (d.day >= 24) {
+                yield d;
+            }
+            lastDay = d;
+        }
+        yield new Day(lastDay.year, 12, 1);
+    }, EventLevel.Week),
 
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
