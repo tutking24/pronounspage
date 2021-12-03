@@ -773,6 +773,7 @@ calendar:
         genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
         pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
         parents_day: 'Gender Expansive Parents'' Day'
+        hiv_testing_day: 'International HIV Testing Day'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
