@@ -32,7 +32,7 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
 
     // dynamic date
-    new Event('{https://pl.wikipedia.org/wiki/T%C4%99czowy_Pi%C4%85tek=Tęczowy Piątek}', null, 10, function* (monthDays) {
+    new Event('{https://pl.wikipedia.org/wiki/T%C4%99czowy_Pi%C4%85tek=Tęczowy Piątek}', 'LGBTQ', 10, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
             if (d.dayOfWeek === 5) {
