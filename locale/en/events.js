@@ -22,7 +22,7 @@ module.exports = [
     new Event('Marriage Equality Day (Australia)', '_hrc', 12, day(9), EventLevel.Day),
     new Event('Marriage Equality Day (New Zealand)', '_hrc', 8, day(19), EventLevel.Day),
     new Event('Marriage Referendum Anniversary (Ireland)', '_hrc', 5, day(22), EventLevel.Day),
-    new Event('Freedom to Marry Day (US)', null, 2, day(12), EventLevel.Day),
+    new Event('Freedom to Marry Day (US)', '_hrc', 2, day(12), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day} (US)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV Testing Day} (US/Canada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
@@ -60,6 +60,10 @@ module.exports = [
     new Event('National HIV Testing Day (Spain)', '_red-ribbon', 10, day(20), EventLevel.Day, ['aids']),
     new Event('National HIV Testing Day (Mexico)', '_red-ribbon', 11, day(23), EventLevel.Day, ['aids']),
     new Event('National HIV Testing Day (Peru)', '_red-ribbon', 6, day(10), EventLevel.Day, ['aids']),
+    new Event('Suicide Prevention Day (Uruguay)', null, 7, day(17), EventLevel.Day),
+    new Event('Sucide Prevention Day (Puerto Rico)', null, 8, day(12), EventLevel.Day),
+
+
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
@@ -95,7 +99,7 @@ module.exports = [
         yield lastFriday;
     }, EventLevel.Day),
 
-    new Event('Rainbow Friday (Poland)', null, 10, function* (monthDays) {
+    new Event('Rainbow Friday (Poland)', 'LGBTQ', 10, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
             if (d.dayOfWeek === 5) {

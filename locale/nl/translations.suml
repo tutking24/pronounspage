@@ -350,7 +350,7 @@ contact:
         upcoming: 'Komende taalversies'
 
 support:
-    header: 'Support ons'
+    header: 'Ondersteun ons'
     description: >
         Als je wilt bijdragen aan de server, domeinen, stickers etc. of als je simpelweg een biertje voor de auteurs wil kopen,
         kun je de onderstaande links gebruiken:
@@ -363,7 +363,7 @@ user:
         # TODO
         # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
-        action: 'Inloggen'  # TODO 'Log in / register'
+        action: 'Inloggen / registreren'
         emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
         userNotFound: 'Gebruiker niet gevonden.'
         email:

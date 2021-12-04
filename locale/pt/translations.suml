@@ -785,9 +785,8 @@ calendar:
     celebrating_month: 'celebra-se em'
     image:
         header: 'Baixar uma imagem'
-    # TODO
     view:
-        grid: 'Grid view'
-        list: 'Events list'
+        grid: 'Vista de grade'
+        list: 'Lista de eventos'
     link: 'Link'
-    full: 'calendário completo'
+    full: 'Calendário completo'
