@@ -41,8 +41,8 @@ module.exports = [
     new Event('Día nacional por la NO violencia y homofobia contra la población LGBTI (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('Día por los Derechos de las Personas LGBTI (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['lgbtq']),
     new Event('Día Contra los Crímenes de Odio (Perú)', null, 5, day(31), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
-    new Event('Día Nacional para la Prevención del Suicidio (Uruguay)', null, 7, day(17), EventLevel.Day),
-    new Event('Día Nacional para la Prevención del Suicidio (Puerto Rico)', null, 8, day(12), EventLevel.Day),
+    new Event('Día Nacional para la Prevención del Suicidio (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
+    new Event('Día Nacional para la Prevención del Suicidio (Puerto Rico)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
 
     // one-off events
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
