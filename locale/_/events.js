@@ -51,10 +51,10 @@ module.exports = [
     new Event('transmasculine_day', 'Transmasculine', 2, day(20), EventLevel.Day, ['trans man', 'transmasculine']),
     new Event('asexual_visibility_day', 'Asexual', 5, day(8), EventLevel.Day, ['asexual', 'asexual spectrum']),
     new Event('holocaust_remembrance_day', '_black-ribbon', 1, day(27), EventLevel.Day),
-    new Event('black_ribbon_day', null, 8, day(23), EventLevel.Day),
+    new Event('black_ribbon_day', '_black-ribbon', 8, day(23), EventLevel.Day),
     new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
     new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
-    new Event('parents_day', null, 12, day(6), EventLevel.Day),
+    new Event('parents_day', '_hrc', 12, day(6), EventLevel.Day),
     new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
 
     // dynamic date
@@ -165,7 +165,7 @@ module.exports = [
         }
     }, EventLevel.Day, ['aids']),
 
-    new Event('health_week', null, 3, week(function* (monthDays) {
+    new Event('health_week', 'LGBTQ', 3, week(function* (monthDays) {
         let prevBuffer = [];
         let buffer = [];
         for (let d of monthDays) {
