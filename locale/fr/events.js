@@ -51,6 +51,6 @@ module.exports = [
     }, EventLevel.Week, ['aids']),
 
     // one-off events
-    new Event('Journée de le mariage pour tous (Suisse)', null, 7, dayYear(1, 2022), EventLevel.Day),
+    new Event('Journée de le mariage pour tous (Suisse)', '_hrc', 7, dayYear(1, 2022), EventLevel.Day),
 
 ];
