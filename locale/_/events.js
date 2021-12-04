@@ -6,7 +6,7 @@ module.exports = [
     new Event('trans_month', 'Transgender', 11, month, EventLevel.Month, ['transgender']),
     new Event('bi_health_month', 'Bisexual', 3, month, EventLevel.Month, ['bisexual']),
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
-    new Event('suicide_prevention_month', null, 9, month, EventLevel.Month),
+    new Event('suicide_prevention_month', '_red-ribbon', 9, month, EventLevel.Month),
     new Event('aids_awareness_month', '_red-ribbon', 12, month, EventLevel.Month, ['aids']),
 
     // project celebrations
@@ -53,7 +53,7 @@ module.exports = [
     new Event('holocaust_remembrance_day', '_black-ribbon', 1, day(27), EventLevel.Day),
     new Event('black_ribbon_day', '_black-ribbon', 8, day(23), EventLevel.Day),
     new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
-    new Event('suicide_prevention_day', null, 9, day(10), EventLevel.Day),
+    new Event('suicide_prevention_day', '_yellow-ribbon', 9, day(10), EventLevel.Day),
     new Event('parents_day', '_hrc', 12, day(6), EventLevel.Day),
     new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
 
