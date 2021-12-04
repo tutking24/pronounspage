@@ -60,6 +60,10 @@ module.exports = [
     new Event('National HIV Testing Day (Spain)', '_red-ribbon', 10, day(20), EventLevel.Day, ['aids']),
     new Event('National HIV Testing Day (Mexico)', '_red-ribbon', 11, day(23), EventLevel.Day, ['aids']),
     new Event('National HIV Testing Day (Peru)', '_red-ribbon', 6, day(10), EventLevel.Day, ['aids']),
+    new Event('Suicide Prevention Day (Uruguay)', null, 7, day(17), EventLevel.Day),
+    new Event('Sucide Prevention Day (Puerto Rico)', null, 8, day(12), EventLevel.Day),
+
+
 
     // dynamic date
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
