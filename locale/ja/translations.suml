@@ -342,7 +342,7 @@ contact:
             - >
                 私たちはジェンダーニュートラル言葉とXジェンダー言葉を集める、研究する、
                 売り込むグループです。
-                We also support actions towards equality and social justice.
+                また、私たちは同等と社会正義ための行動を支援します。
         logo: 'このグループのロゴは、トランスジェンダーのシンボルと（言葉を象徴する）吹き出しを組み合わせたものです。'
         members: '現在のメンバー'
         member: 'グループのメンバー'
@@ -389,8 +389,7 @@ user:
     headerLong: 'あなたのアカウント'
     tokenExpired: 'トークンは期限切れです。サイトを更新してもう一度お試しください。'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'ログインするまたはアカウントを作成するには、ソシャルメディアボタンを押すまたは下のフィールドにメールアドレスを入れて、受信トレイで受信したコードを確認します。'
         placeholder: 'メールアドレス（既に登録済みの場合は任意、ユーザー名を入力してください。）'
         action: 'ログイン/登録'
         emailSent: 'メールアドレスに6桁のコードが送信された後、ここに入力してください。コードは一度しか使用できません。有効期限は今から15分です。'
@@ -442,9 +441,9 @@ profile:
     flags: '旗'
     flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
     flagsCustom: 'カスタムフラグをアップロード'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustomWarning: 'このフラグはユーザーによってアップロードしました。Pronouns.pageのチームは責任がありません。'
     links: 'リンク'
-    linksCake: 'We recommend linking to'  # TODO
+    linksCake: 'にリンクすることをお勧めします。'  # In this sentence, the link to the “Attraction Layer Cake” site must come before the text, so it should read “Attraction Layer Cakeにリンクすることをお勧めします。”
     column: '欄'
 
     list: 'あなたのカード'
@@ -491,12 +490,18 @@ crud:
     copy: 'リンクをコピー'
     download: 'ダウンロード'
 
+# TODO sorry, it’s the old license. please translate this sentence again (i kept the old version below)
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=ソースコード}は{https://mit.avris.it=MIT}ライセンスの下でライセンスします。 [mit.svg]<br/>
-        内容は{https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}ライセンスの下でライセンスします。
-        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa]
+        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: '連絡先、ソーシャルメディア、サポート'
+
+
+#footer:
+#    license: >
+#        {https://gitlab.com/Avris/Zaimki=ソースコード}は{https://mit.avris.it=MIT}ライセンスの下でライセンスします。 [mit.svg]<br/>
+#        内容は{https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}ライセンスの下でライセンスします。
+#        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa]
 
 notFound:
     message: 'このページはありません'
@@ -771,7 +776,7 @@ calendar:
         genderfluid_week: '{/用語#ジェンダーフルイッド=ジェンダーフルイッド} 啓発週間'
         pan_week: 'パンセクシャル週間'
         parents_day: 'Gender Expansive Parents'' Day' # TODO
-        hiv_testing_day: 'International HIV Testing Day' # TODO
+        hiv_testing_day: '国際HIV検査デー'
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: 'が祝われています'
     celebrating_day: 'に祝われています'
@@ -779,9 +784,8 @@ calendar:
     celebrating_month: 'で祝われています'
     image:
         header: '画像をダウンロード'
-    # TODO
     view:
-        grid: 'Grid view'
-        list: 'Events list'
+        grid: 'グリッドビュー'
+        list: 'イベントのリスト'
     link: 'リンク'
     full: 'カレンダー全体を見る'
