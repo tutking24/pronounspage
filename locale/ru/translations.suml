@@ -467,7 +467,7 @@ profile:
     flagsCustom: 'Upload custom flags'  # TODO
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'Ссылки'
-    linksCake: 'We recommend linking to'  # TODO
+    linksRecommended: 'We recommend linking to'  # TODO
     column: 'Колонка'
 
     header: 'Карточки'

@@ -337,7 +337,6 @@ contact:
     team:
         name: '中立言語委員会グループ'
         nameShort: 'グループ'
-        # TODO
         description:
             - >
                 私たちはジェンダーニュートラル言葉とXジェンダー言葉を集める、研究する、
@@ -443,7 +442,8 @@ profile:
     flagsCustom: 'カスタムフラグをアップロード'
     flagsCustomWarning: 'このフラグはユーザーによってアップロードしました。Pronouns.pageのチームは責任がありません。'
     links: 'リンク'
-    linksCake: 'にリンクすることをお勧めします。'  # In this sentence, the link to the “Attraction Layer Cake” site must come before the text, so it should read “Attraction Layer Cakeにリンクすることをお勧めします。”
+    linksRecommended: ''
+    linksRecommendedAfter: 'にリンクすることをお勧めします。'
     column: '欄'
 
     list: 'あなたのカード'

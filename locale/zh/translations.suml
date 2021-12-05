@@ -401,7 +401,7 @@ profile:
     flagsCustom: '上傳自定義旗幟'
     flagsCustomWarning: '此旗幟由一名用戶上傳。pronouns.page團隊不為此負責'
     links: '鏈接'
-    linksCake: '我們建議鏈接至'
+    linksRecommended: '我們建議鏈接至'
     column: '列'
 
     list: '你的卡'

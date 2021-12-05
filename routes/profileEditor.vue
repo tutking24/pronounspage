@@ -154,11 +154,12 @@
                 </ListInput>
                 <p class="small text-muted mb-0">
                     <Icon v="ad"/>
-                    <T>profile.linksCake</T>
+                    <T>profile.linksRecommended</T>
                     <a v-for="provider in recommendedLinkProviders()" :href="provider.homepage" target="_blank" rel="noopener">
                         <Icon :v="provider.icon" :set="provider.iconSet || 'l'"/>
                         {{ provider.name }}
                     </a>
+                    <T silent>profile.linksRecommendedAfter</T>
                     😉
                 </p>
             </section>

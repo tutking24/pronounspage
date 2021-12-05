@@ -430,7 +430,7 @@ profile:
     flagsCustom: 'Last opp tilpasset flagg'
     flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
     links: 'Linker'
-    linksCake: 'Vi anbefaler å linke til'
+    linksRecommended: 'Vi anbefaler å linke til'
     column: 'Kolonne'
 
     header: 'Kort'
