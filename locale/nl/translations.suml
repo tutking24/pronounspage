@@ -419,7 +419,7 @@ profile:
     flagsCustom: 'Upload zelfgemaakte vlaggen'
     flagsCustomWarning: 'Deze vlag werd geuploaded door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
     links: 'Links'
-    linksCake: 'We raden aan te linken naar'
+    linksRecommended: 'We raden aan te linken naar'
     column: 'Kolom'
 
     list: 'Jouw kaarten'
@@ -650,7 +650,7 @@ flags:
     Two_Spirit: 'Bispiritueel'
     Xenogender: 'Xenogender'
 
-calendar: # TODO 
+calendar: # TODO
     header: 'Kalender'
     headerLong: 'Queer Kalender'
     months:

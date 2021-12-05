@@ -441,7 +441,7 @@ profile:
     flagsCustom: 'Sube una bandera personalizada'
     flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.'
     links: 'Enlaces'
-    linksCake: 'Recomendamos enlaces a'
+    linksRecommended: 'Recomendamos enlaces a'
     column: 'Columna'
 
     list: 'Tus tarjetas'

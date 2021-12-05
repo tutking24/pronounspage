@@ -435,7 +435,7 @@ profile:
     flagsCustom: 'Uploader un drapeau personnalisé'
     flagsCustomWarning: 'Ce drapeau a été uploadé par un.e utilisateur.rice. L’équipe de pronouns.page n’en est pas tenue responsable.'
     links: 'Liens'
-    linksCake: 'Nous vous recommandons ces liens'
+    linksRecommended: 'Nous vous recommandons ces liens'
     column: 'Colonne'
 
     list: 'Vos cartes'

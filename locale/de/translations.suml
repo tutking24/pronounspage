@@ -428,7 +428,7 @@ profile:
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
     flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
     links: 'Links'
-    linksCake: 'Wir empfehlen Verlinkung zu'
+    linksRecommended: 'Wir empfehlen Verlinkung zu'
     column: 'Spalte'
 
     list: 'Deine Visitenkarten'

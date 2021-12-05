@@ -1230,7 +1230,7 @@ profile:
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
-    linksCake: 'Polecamy dodać link do'
+    linksRecommended: 'Polecamy dodać link do'
     column: 'Kolumna'
 
     header: 'Wizytówki'

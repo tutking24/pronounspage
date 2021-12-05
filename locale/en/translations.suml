@@ -537,7 +537,7 @@ profile:
     flagsCustom: 'Upload custom flags'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
     links: 'Links'
-    linksCake: 'We recommend linking to'
+    linksRecommended: 'We recommend linking to'
     column: 'Column'
 
     header: 'Cards'

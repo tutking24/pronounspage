@@ -437,7 +437,7 @@ profile:
     flagsCustom: 'Enviar bandeira personalizada'
     flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
     links: 'Links'
-    linksCake: 'Recomendamos linkar com'
+    linksRecommended: 'Recomendamos linkar com'
     column: 'Coluna'
 
     list: 'Os cartões'
