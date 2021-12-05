@@ -45,7 +45,7 @@ const getEventName = (name) => {
     for (let event of events) {
         tweet += ` - ${getEventName(event.name)}\n`;
     }
-    tweet += `\n${domain}/${config.calendar.route}/${day}`;
+    tweet += `\n${domain}/${encodeURIComponent(config.calendar.route)}/${day}`;
 
     console.log('------------');
     console.log(tweet);
