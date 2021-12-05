@@ -490,18 +490,10 @@ crud:
     copy: 'リンクをコピー'
     download: 'ダウンロード'
 
-# TODO sorry, it’s the old license. please translate this sentence again (i kept the old version below)
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
+        {https://gitlab.com/Avris/Zaimki=ソースコード}と内容は{/license=OQL}の下でライセンスします。
     links: '連絡先、ソーシャルメディア、サポート'
-
-
-#footer:
-#    license: >
-#        {https://gitlab.com/Avris/Zaimki=ソースコード}は{https://mit.avris.it=MIT}ライセンスの下でライセンスします。 [mit.svg]<br/>
-#        内容は{https://creativecommons.org/licenses/by-nc-sa/4.0=CC BY-NC-SA 4.0}ライセンスの下でライセンスします。
-#        [b:creative-commons][b:creative-commons-by][b:creative-commons-nc-eu][b:creative-commons-sa]
 
 notFound:
     message: 'このページはありません'
@@ -775,7 +767,7 @@ calendar:
         aids_awareness_month: 'AIDS啓発月間'
         genderfluid_week: '{/用語#ジェンダーフルイッド=ジェンダーフルイッド} 啓発週間'
         pan_week: 'パンセクシャル週間'
-        parents_day: 'Gender Expansive Parents'' Day' # TODO
+        parents_day: 'ジェンダー•エクスパンシヴ•パレンツ•デー'
         hiv_testing_day: '国際HIV検査デー'
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: 'が祝われています'
