@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="list-group">
+        <div class="list-group mt-5">
             <a v-for="(options, locale) in locales" :key="locale" :href="options.url" class="list-group-item list-group-item-action list-group-item-hoverable">
                 <div class="h3">
                     {{ options.name }}
