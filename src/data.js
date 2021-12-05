@@ -7,6 +7,7 @@ export const socialProviders = {
     facebook: { name: 'Facebook' },
     google: { name: 'Google' },
     discord: { name: 'Discord' },
+    mastodon: { name: 'Mastodon', instanceRequired: true },
 }
 
 import pronounsRaw from '../data/pronouns/pronouns.tsv';

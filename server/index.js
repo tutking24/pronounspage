@@ -82,6 +82,7 @@ app.use(async function (req, res, next) {
     }
 });
 
+app.use(require('./routes/grantOverrides').default);
 router.use(grant.express()(require('./social').config));
 
 app.use(require('./routes/home').default);
