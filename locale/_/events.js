@@ -56,6 +56,7 @@ module.exports = [
     new Event('suicide_prevention_day', '_yellow-ribbon', 9, day(10), EventLevel.Day),
     new Event('parents_day', '_hrc', 12, day(6), EventLevel.Day),
     new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
+    new Event('freedressing_day', 'Genderqueer', 12, day(3), EventLevel.Day, ['genderqueer', 'gender non-conforming']),
 
     // dynamic date
     new Event('arospec_week', 'Aromantic', 2, week(function* (monthDays) {
