@@ -755,6 +755,7 @@ calendar:
         pan_week: 'Pansexuelle und panromantische Bewusstseinswoche'
         parents_day: 'Gender Expansive Parents'' Day' # TODO
         hiv_testing_day: 'HIV-Test-Tag'
+        freedressing_day: 'Freedressing Awareness Day' # TODO
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
