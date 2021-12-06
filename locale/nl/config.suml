@@ -131,6 +131,10 @@ profile:
     flags:
         defaultPronoun: 'hen'
 
+calendar:
+    enabled: true
+    route: 'kalender'
+
 census:
     enabled: false
 
