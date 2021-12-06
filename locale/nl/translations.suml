@@ -761,7 +761,7 @@ calendar: # TODO
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-    banner: 'We''re celebrating'
+    banner: 'Today in the calendar'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
     celebrating_week: 'is celebrated on'
