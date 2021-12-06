@@ -1615,6 +1615,7 @@ calendar:
         pan_week: 'Tydzień {/terminologia#panseksualność=Panseksualności} i {/terminologia#panromantyczność=Panromantyczności}'
         parents_day: 'Inkluzywny Płciowo Dzień Rodziców'
         hiv_testing_day: 'Międzynarodowy Dzień Testów na HIV'
+        freedressing_day: 'Dzień Swobodnego Ubioru'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
