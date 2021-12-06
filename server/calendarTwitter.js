@@ -21,7 +21,7 @@ for (let [code, name, url, ] of locales) {
 
 const getEventName = (name) => {
     name = translations.calendar.events[name] || name;
-    name = name.replace(/{.*?=(.*)}/g, '$1')
+    name = name.replace(/{.*?=(.*?)}/g, '$1')
     return name;
 }
 
