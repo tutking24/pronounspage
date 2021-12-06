@@ -769,6 +769,7 @@ calendar:
         pan_week: 'パンセクシャル週間'
         parents_day: 'ジェンダー•エクスパンシヴ•パレンツ•デー'
         hiv_testing_day: '国際HIV検査デー'
+        freedressing_day: 'Freedressing Awareness Day' # TODO
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: 'が祝われています'
     celebrating_day: 'に祝われています'
