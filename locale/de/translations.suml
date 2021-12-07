@@ -661,6 +661,7 @@ flags:
 calendar:
     header: 'Kalender'
     headerLong: 'Queerer Kalender'
+    date: '%date% %year%'
     months:
         1: 'Januar'
         2: 'Februar'

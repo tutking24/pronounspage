@@ -649,9 +649,10 @@ flags:
     Two_Spirit: 'Bispiritueel'
     Xenogender: 'Xenogender'
 
-calendar: 
+calendar:
     header: 'Kalender'
     headerLong: 'Queer Kalender'
+    date: '%date% %year%'
     months:
         1: 'Januari'
         2: 'Februari'
