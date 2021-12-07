@@ -701,6 +701,7 @@ flags:
 calendar:
     header: 'Календарь'
     headerLong: 'Квир-календарь'
+    date: '%date% %year%'
     months:
         1: 'Январь'
         2: 'Февраль'

@@ -677,6 +677,7 @@ report:
 calendar:
     header: 'Calendar'
     headerLong: 'Queer Calendar'
+    date: '%date% %year%'
     months:
         1: 'January'
         2: 'February'
