@@ -771,10 +771,14 @@ calendar:
         hiv_testing_day: '国際HIV検査デー'
         freedressing_day: 'フリードレッシング認知デー'
     banner: '現在、以下のお祝いをしています'
-    celebrating_custom: 'が祝われています'
-    celebrating_day: 'に祝われています'
-    celebrating_week: 'に祝われています'
-    celebrating_month: 'で祝われています'
+    celebrating_custom: ''
+    celebrating_day: ''
+    celebrating_week: ''
+    celebrating_month: ''
+    celebrating_customAfter: 'が祝われています'
+    celebrating_dayAfter: 'に祝われています'
+    celebrating_weekAfter: 'に祝われています'
+    celebrating_monthAfter: 'で祝われています'
     image:
         header: '画像をダウンロード'
     view:
