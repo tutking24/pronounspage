@@ -775,10 +775,10 @@ calendar:
     celebrating_day: ''
     celebrating_week: ''
     celebrating_month: ''
-    celebrating_customAfter: 'が祝われています'
-    celebrating_dayAfter: 'に祝われています'
-    celebrating_weekAfter: 'に祝われています'
-    celebrating_monthAfter: 'で祝われています'
+    celebrating_customAfter: 'が祝われています。'
+    celebrating_dayAfter: 'に祝われています。'
+    celebrating_weekAfter: 'に祝われています。'
+    celebrating_monthAfter: 'で祝われています。'
     image:
         header: '画像をダウンロード'
     view:
