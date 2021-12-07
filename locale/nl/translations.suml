@@ -360,8 +360,7 @@ user:
     headerLong: 'Jouw account'
     tokenExpired: 'Het token is verlopen. Ververs de pagina en probeer opnieuw.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Om in te loggen of te registreren kun je de social media buttons gebruiken, of jouw emailadres in het onderstaande veld invoeren, en vervolgens de code bevestigen die naar jouw mailbox wordt verstuurd.'
         placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
         action: 'Inloggen / registreren'
         emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
@@ -650,7 +649,7 @@ flags:
     Two_Spirit: 'Bispiritueel'
     Xenogender: 'Xenogender'
 
-calendar: # TODO
+calendar: 
     header: 'Kalender'
     headerLong: 'Queer Kalender'
     months:
@@ -692,7 +691,7 @@ calendar: # TODO
         10: 'oktober'
         11: 'november'
         12: 'december'
-    events:
+    events: # TODO
         pride_month: 'Pride-Maand'
         trans_month: 'International Trans Awareness Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
@@ -756,21 +755,21 @@ calendar: # TODO
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'Wereld Suïcide Preventie Dag'
         suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'AIDS Awareness Month'
+        aids_awareness_month: 'Maand van de Voorlichting van AIDS'
         genderfluid_week: 'Genderfluid Awareness Week'
         pan_week: 'Pan Week'
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-    banner: 'We''re celebrating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    banner: 'Vandaag op de kalender'
+    celebrating_custom: 'is celebrated' # TODO
+    celebrating_day: 'is celebrated on' # TODO
+    celebrating_week: 'is celebrated on' # TODO
+    celebrating_month: 'is celebrated in' # TODO
     image:
-        header: 'Download an image'
+        header: 'Download een afbeelding'
     view:
-        grid: 'Grid view'
-        list: 'Events list'
+        grid: 'Rasterweergave'
+        list: 'Evenementenlijst'
     link: 'Link'
-    full: 'Full calendar'
+    full: 'Volledige kalender'
