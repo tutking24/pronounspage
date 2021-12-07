@@ -23,7 +23,6 @@
                 links: [
                     {headline: 'Ko-Fi', url: 'https://ko-fi.com/radajezykaneutralnego', icon: 'coffee', },
                     {headline: 'PayPal', url: 'https://paypal.me/RJNeutralnego', icon: 'paypal', iconSet: 'b'},
-                    {headline: 'BTC', url: 'https://www.blockchain.com/btc/address/1GFVeVZfYtPqDMAoCwK8WT2C4HjwiGxXS1', icon: 'bitcoin', iconSet: 'b'},
                 ]
             }
         }
