@@ -54,7 +54,6 @@ module.exports = [
     new Event('black_ribbon_day', '_black-ribbon', 8, day(23), EventLevel.Day),
     new Event('mena_lesbian_day', 'Lesbian', 6, day(13), EventLevel.Day, ['lesbian', 'progress pride', 'homosexual']),
     new Event('suicide_prevention_day', '_yellow-ribbon', 9, day(10), EventLevel.Day),
-    new Event('parents_day', '_hrc', 12, day(6), EventLevel.Day),
     new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
     new Event('freedressing_day', 'Genderqueer', 12, day(3), EventLevel.Day, ['genderqueer', 'gender non-conforming']),
 
@@ -244,6 +243,16 @@ module.exports = [
             }
         }
     }), EventLevel.Week, ['pansexual', 'panromantic']),
+
+    // first Sunday of December
+    new Event('parents_day', '_hrc', 12, function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 7) {
+                yield d;
+                return;
+            }
+        }
+    }, EventLevel.Day),
 
     // one-off events
     new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
