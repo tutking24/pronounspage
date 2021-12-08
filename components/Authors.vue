@@ -5,6 +5,8 @@
                 <Icon v="collective-logo.svg" :class="['invertible', bigteam ? 'hover-invertible' : '']"/>
                 <T>contact.team.name</T>
             </nuxt-link>
+            <br/>
+            <small><T>contact.team.description</T></small>
         </li>
         <li v-if="authors === undefined">
             <Spinner/>

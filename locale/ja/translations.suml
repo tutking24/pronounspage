@@ -493,7 +493,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=ソースコード}と内容は{/license=OQL}の下でライセンスします。
-    links: '連絡先、ソーシャルメディア、サポート'
+    links: '連絡先、ソーシャルメディア'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'このページはありません'

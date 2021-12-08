@@ -363,6 +363,10 @@ contact:
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
         nameShort: 'Cooperativa'
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
@@ -494,7 +498,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=El código fuente} y el contenido estan publicado bajo la licencia {/license=OQL}.
-    links: 'Contacto, redes sociales, apoyo'
+    links: 'Contacto, redes sociales'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'Página no encontrada'

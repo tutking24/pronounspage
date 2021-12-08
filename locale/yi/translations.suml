@@ -359,8 +359,9 @@ contact:
         nameShort: 'Collective'
         description:  # TODO
             - >
-                {https://pronouns.page=Pronouns.page} and related initiatives
-                are created by the “Neutral Language Council” collective.
+                We are a queer collective dedicated to assembling, researching, shaping and promoting
+                gender neutral and nonbinary language.
+                We also support actions towards equality and social justice.
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Current members'  # TODO
         member: 'Member of the collective'  # TODO
@@ -494,7 +495,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media, support'
+    links: 'Contact, social media'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'Page was not found'

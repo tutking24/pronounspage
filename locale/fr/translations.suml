@@ -356,6 +356,10 @@ contact:
     team:
         name: 'Le collectif du « Conseil du Langage Neutre »'
         nameShort: 'Le collectif'
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} et les initiatives liées
@@ -487,7 +491,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL}.
-    links: 'Contact, réseaux sociaux, soutien'
+    links: 'Contact, réseaux sociaux'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'
