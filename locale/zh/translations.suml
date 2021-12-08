@@ -323,6 +323,10 @@ contact:
     team:
         name: '中立語推行委員會'
         nameShort: 'Collective'  # TODO
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} 及相關舉措
@@ -456,7 +460,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: '通訊錄, 社交媒體, 支持'
+    links: '通訊錄, 社交媒體'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: '找不到頁面'

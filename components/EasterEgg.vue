@@ -44,7 +44,7 @@ export default {
         async keypressed(e) {
             this.lastCharacters = [...this.lastCharacters.slice(-9), e.key];
             if (this.lastCharacters.join(',') === konami.join(',')) {
-                await this.$alert('Gratulacje! Udało Ći śę odblokować easter egga!<br/>Szczeguły w stopce strony!');
+                await this.$alert('Gratulacje! Udało Ći śę odblokować easter egga!<br/>Szczeguły w stopce strony, u samego dołu!');
                 this.setSpelling('futurysci');
             }
         },

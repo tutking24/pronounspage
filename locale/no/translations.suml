@@ -350,6 +350,10 @@ contact:
     team:
         name: 'Det “Neutral Language Council” kollektivet'
         nameShort: 'Kollektivet'
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} og andre relaterte initiativ
@@ -483,7 +487,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL} lisensen.
-    links: 'Kontakt, sosiale medier, hjelp'
+    links: 'Kontakt, sosiale medier'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'Side var ikke funnet'

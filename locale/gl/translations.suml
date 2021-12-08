@@ -358,6 +358,10 @@ contact:
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
         nameShort: 'O coletivo'
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
@@ -490,7 +494,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
-    links: 'Contato, redes sociais, apoio'
+    links: 'Contato, redes sociais'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'Página não encontrada'

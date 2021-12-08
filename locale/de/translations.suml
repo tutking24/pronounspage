@@ -351,6 +351,10 @@ contact:
     team:
         name: 'Das „Rat für neutrale Sprache“ Kollektiv'
         nameShort: 'Kollektiv'
+        # TODO
+        # We are a queer collective dedicated to assembling, researching, shaping and promoting
+        # gender neutral and nonbinary language.
+        # We also support actions towards equality and social justice.
         description:
             - >
                 {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Rat für neutrale Sprache“ erstellt.
@@ -481,7 +485,9 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
-    links: 'Kontakt, Social Media, Support'
+    links: 'Kontakt, Social Media'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
     message: 'Seite wurde nicht gefunden'

@@ -1,10 +1,10 @@
 <template>
     <div>
-        <p class="small mb-0">
+        <p class="small mb-0" v-if="!nolabel">
             <Icon v="share"/>
             <T>share</T><T>quotation.colon</T>
         </p>
-        <button class="btn btn-primary" v-if="hasShareApi" @click="shareApi">
+        <button :class="['btn btn-primary m-1', shareApiSeparate ? 'd-block' : '']" v-if="hasShareApi" @click="shareApi">
             <Icon v="share"/>
             <span class="d-none d-md-inline"><T>share</T></span>
         </button>
@@ -59,6 +59,8 @@
         props: {
             title: { default: 'Zaimki.pl' },
             networks: { default: _ => ['twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
+            nolabel: { type: Boolean },
+            shareApiSeparate: { type: Boolean },
         },
         data() {
             return {

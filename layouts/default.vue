@@ -7,9 +7,7 @@
                 <ScrollButton/>
             </main>
         </div>
-        <div class="container">
-            <Footer/>
-        </div>
+        <Footer/>
         <DialogueBox ref="dialogue"/>
         <Lightbox/>
     </div>

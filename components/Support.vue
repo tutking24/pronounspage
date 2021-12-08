@@ -6,7 +6,7 @@
         </h3>
         <p><T>support.description</T></p>
         <p>
-            <a v-for="link in [...links, ...config.support.links]" :key="link.url"
+            <a v-for="link in supportLinks()" :key="link.url"
                :href="link.url" target="_blank" rel="noopener"
                class="btn btn-outline-primary border m-1">
                 <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
@@ -17,14 +17,9 @@
 </template>
 
 <script>
+    import support from '../plugins/support';
+
     export default {
-        data() {
-            return {
-                links: [
-                    {headline: 'Ko-Fi', url: 'https://ko-fi.com/radajezykaneutralnego', icon: 'coffee', },
-                    {headline: 'PayPal', url: 'https://paypal.me/RJNeutralnego', icon: 'paypal', iconSet: 'b'},
-                ]
-            }
-        }
+        mixins: [support],
     }
 </script>
