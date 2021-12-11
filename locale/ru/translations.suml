@@ -464,10 +464,10 @@ profile:
     birthdayInfo: 'Мы публикуем не Вашу дату рождения, а только подсчитанный нами возраст.'
     flags: 'Прайд-флаги'
     flagsInfo: 'Перетащите ваши прайд-флаги в эту рамку.'
-    flagsCustom: 'Upload custom flags'  # TODO
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
+    flagsCustom: 'Загрузить пользовательский прайд-флаг'
+    flagsCustomWarning: 'Этот прайд-флаг был добавлен пользователь_ницей. Команда pronouns.page не несет ответственность за это.'
     links: 'Ссылки'
-    linksRecommended: 'We recommend linking to'  # TODO
+    linksRecommended: 'Рекомендуем перейти по этим ссылкам'
     column: 'Колонка'
 
     header: 'Карточки'
@@ -521,8 +521,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Исходный код} и содержимое лицензированы {/license=OQL}.
     links: 'Связаться с нами, социальные сети'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Легально'
+    technical: 'Технически'
 
 notFound:
     message: 'Страница не найдена'
@@ -542,119 +542,117 @@ terms:
     header: 'Условия предоставления услуг'
     lastUpdate: 'Обновлено'
     consent: 'Регистрируясь, вы принимаете {/terms=Условия предоставления услуг}.'
-    #    you can either leave the terms untranslated, or translate it and include the following disclaimer:
-    #    translationDisclaimer: >
-    #        The following text is just an auxiliary translation.
-    #        The only legally binding version of the Terms of Service is the English one, available
-    #        {https://en.pronouns.page/terms=here}.
+    translationDisclaimer: >
+        Представленный текст является лишь вспомогательным переводом
+        Единственная юридически обязательная версия Условий предоставления услуг доступна на английском языке
+        {https://en.pronouns.page/terms=здесь}.
     content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
-            who can be contacted via email:
+            Данные Условия предоставления услуг регулируют доступ к использованию сайта
+            <strong>pronouns.page / zaimki.pl</strong> под управлением коллектива "Совета нейтрального языка"
+            с кем можно связаться через электронную почту:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in our Privacy Policy below.
+            Используя предоставленные сервисы, вы даете свое согласие на соблюдение Условий предоставления услуг, а также на
+            сбор и обработку ваших данных, как это ниже описано в Положении о политике конфиденциальности.
         accounts:
-            header: 'Users and accounts'
+            header: 'Пользователь_ницы и аккаунты'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                Вы не можете создать аккаунт, если вам заблокировали доступ к нему по законам юрисдикции вашей страны.
+                Вы не можете создать аккаунт, если вам меньше 13-ти лет.
+                Если вам меньше 16-ти лет, предоставьте согласие родителей или опекунов.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                Когда вы создаете аккаунт на нашем сайте, вы берете на себя ответственность за сохранность  метода идентификации,
+                который вы используете для входа (это: пароль от аккаунта в электронной почте и/или социальных сетях).
+                Вы даете согласие на его неразглашение третьим лицам.
+                Немедленно свяжитесь с нами, если вы узнали о нарушении вашей безопасности или неидентифицированном использовании вашего  аккаунта третьими лицами.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                Мы можем приостановить действие вашего аккаунта без предварительного уведомления
+                без относительных причин и ограничений, если вы нарушите Условия.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                Неактивные а течении последних 30-ти дней аккаунты и аккаунты без карточек будут удалены, а имена пользователь_ниц освобождены.
         content:
-            header: 'Content'
+            header: 'Контент'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                Контент, который вы публикуете на сервисе является лично вашим.
+                Публикуя его, вы гарантируете нам всемирную безвозмездную лицензию
+                на использование, копирование, воспроизведение, обработку, адаптацию, изменение, публикацию, передачу, отображение и распространение такого контента любым способом.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                Мы не гарантируем правдивость и безопасность контента, который публикуют другие люди
+                и, в частности, ссылки  на другие сайты.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                Запрещено публиковать на сервисе любой контент, который нарушает закон или социальные нормы, включая, но не ограничиваясь перечисленным:
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
-                queerphobia: 'queerphobia'
-                exclusionism: 'queer exclusionism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
-                childPornography: 'child pornography'
-                unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
-                doxxing: 'sharing of someone else''s personal data'
-                spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
-                copyright: 'copyright or trademark violations'
+                totalitarian: 'пропаганда тоталитарных режимов'
+                hateSpeech: 'разжигание ненависти'
+                racism: 'расизм'
+                xenophobia: 'ксенофобия'
+                homophobia: 'гомофобия'
+                transphobia: 'трансфобия'
+                enbyphobia: 'энбифобия'
+                queerphobia: 'квирфобия'
+                exclusionism: 'исключение квиров'
+                misogyny: 'мизогиния'
+                harassment: 'домогательства'
+                impersonation: 'самозванство'
+                childPornography: 'детская порнография'
+                unlawfulConduct: 'противоправное поведение'
+                misinformation: 'неверная информация'
+                doxxing: 'распространение чужих данных'
+                spam: 'спам'
+                trolling: 'троллинг'
+                advertisement: 'реклама'
+                copyright: 'нарушение авторских прав или использование трейд марок'
             responsibility: >
-                You are responsible for any Content posted on the Service.
-                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-                If you break the law, we will pass your information to law enforcement agencies.
+                Вы ответственны за любой контент, который публикуете на сервисе.
+                Если вы нарушите эти Условия представления услуг, мы удалим ваш контент без предварительного уведомления, а также можем отозвать ваше право на пользование сервисом.
+                Если вы нарушите закон, мы передадим информацию о вас в правоохранительные органы.
         privacy:
-            header: 'Privacy Policy'
+            header: 'Политика конфиденциальности'
             effort: >
-                We make every effort to store your data securely and to ensure that any non-public data we store
-                are not seized by or transferred to any third party, except those trusted parties described below.
+                Мы прилагаем все усилия, чтобы надёжно хранить ваши данные и быть уверенными в том, что они
+                не будут переданы третьим лицам, кроме ниже перечисленных.
             data: >
-                Other than the data that you explicitly post on the Service as Content
-                or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-                no additional private data connected to your account is being stored or processed.
+                Данные, которые вы публикуете на сервисе в качестве контент
+                или косвенно с нами делитесь (например, OAuth токены доступа, если в используете социальные сети для регистрации и входа).
+                Никакие дополнительные личные данные, связанные с вашим аккаунтом, не хранятся и не используются.
             editRemoval: >
-                You may edit or remove any Content you have posted on the Service.
+                Вы можете редактировать или удалять любой опубликованный вами на сервисе контент.
             contact: >
-                When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+                Когда вы связываетесь с нами по электронной почте, мы сохраняем ваш адрес, чтобы позже ответить на возникшие вопросы.
             cookies: >
-                We only use first-party cookies and local storage to keep you logged in and save your preferences.
+                Мы используем только первостепенные файлы куки и местную базу данных, чтобы оставлять вас зарегистрированными и сохранять ваши предпочтения.
             matomo: >
-                We use Matomo to track traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-                You can read more about the data it stores
-                {https://matomo.org/faq/general/faq_18254/=here}
-                and about the cookies it uses
-                {https://matomo.org/faq/general/faq_146/=here}.
+                Мы используем Matomo, чтобы отслеживать загруженность сайта. Данные, которые оно задействует, никак не связаны с вашим именем пользователь_ницы, а ваш IP-дрес шифруется и остается анонимным.
+                Больше о данных, которые исользует Matomo
+                {https://matomo.org/faq/general/faq_18254/=здесь}
+                и про файлы куки
+                {https://matomo.org/faq/general/faq_146/=здесь}.
             arc: >
-                We use arc.io to cover the costs of website maintenance without introducing ads.
-                You can read more about them and their privacy policy
-                {https://arc.io/faq=here}.
+                Мы используем arc.io, чтобы покрывать стоимость поддержки сайта, не загружая его рекламой.
+                Больше об этом приложении и их политике конфиденциальности можно прочитать
+                {https://arc.io/faq=здесь}.
             hCaptcha: >
-                We use hCaptcha to filter out bots and prevent DDoS attacks.
-                You can read their privacy policy
-                {https://www.hcaptcha.com/privacy=here}.
+                Мы используем hCaptcha для обнаружения ботов и предотвращения DDoS атак.
+                Больше об их политике конфиденциальности можно прочитать
+                {https://www.hcaptcha.com/privacy=здесь}.
             logsBackups: >
-                Logs and backups are stored for no longer than 18 months.
+                Входы и синхронизированные данные хранятся не более 18-ти месяцев.
             gdpr: >
-                Your personal data are protected by the GDPR, which means you have the right
-                to see, correct, update and remove the data we store about you.
+                Ваши личные данные защищены GDPR, что позволяет вам
+                видеть, исправлять, обновлять и удалять информацию о себе.
         closing:
-            header: 'General'
+            header: 'Общее'
             jurisdiction: >
-                The applicable law is the law of the Kingdom of Netherlands.
+                Применяемый закон - закон Королевства Нидерландов.
             changes: >
-                We reserve the right to modify these Terms of Service at any time.
-                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+                Мы сохраняем за собой право редактировать Условия предоставления услуг в любое время.
+                Если изменения существенные, мы уведомим вас об этом за 30 календарных дней до того, как новые Условия вступят в силу.
 
 admin:
     header: 'Панель администратор_ки'
     user:
         user: 'Пользователь_ница'
-        createdAt: 'Registration date' # TODO
+        createdAt: 'Дата регистрации'
         email: 'Адрес электронной почты'
         roles: 'Разрешения'
         profiles: 'Профили'
@@ -928,9 +926,8 @@ calendar:
     celebrating_month: 'празднуется'
     image:
         header: 'Скачать изображение'
-    # TODO
     view:
-        grid: 'Grid view'
-        list: 'Events list'
+        grid: 'Сетка'
+        list: 'Список событий'
     link: 'Ссылка'
     full: 'Полный календарь'
