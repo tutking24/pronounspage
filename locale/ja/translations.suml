@@ -520,6 +520,7 @@ admin:
     header: '管理パネル'
     user:
         user: 'ユーザー'
+        createdAt: 'Registration date' # TODO
         email: 'メールアドレス'
         roles: '権限'
         profiles: 'プロファイル'

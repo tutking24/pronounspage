@@ -616,6 +616,7 @@ admin:
     header: 'Admin panel'
     user:
         user: 'User'
+        createdAt: 'Registration date'
         email: 'Email'
         roles: 'Permissions'
         profiles: 'Profiles'

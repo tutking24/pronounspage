@@ -521,6 +521,7 @@ admin:
     header: 'Panel de Admins'
     user:
         user: 'Usuárie'
+        createdAt: 'Registration date' # TODO
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Perfis'

@@ -518,6 +518,7 @@ admin:
     header: 'Panneau d’administration'
     user:
         user: 'Utilisateur'
+        createdAt: 'Date d''inscription'
         email: 'Adresse mail'
         roles: 'Permissions'
         profiles: 'Profils'

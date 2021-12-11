@@ -1352,6 +1352,7 @@ admin:
     header: 'Panel adminia'
     user:
         user: 'Użytkownicze'
+        createdAt: 'Data rejestracji'
         email: 'Email'
         roles: 'Uprawnienia'
         profiles: 'Profile'

@@ -525,6 +525,7 @@ admin:
     header: 'Panel de Admins'
     user:
         user: 'Usuarie'
+        createdAt: 'Fecha de registro'
         email: 'Correo electrónico'
         roles: 'Rol'
         profiles: 'Perfiles'

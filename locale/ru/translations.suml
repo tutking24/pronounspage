@@ -547,6 +547,7 @@ admin:
     header: 'Панель администратор_ки'
     user:
         user: 'Пользователь_ница'
+        createdAt: 'Registration date' # TODO
         email: 'Адрес электронной почты'
         roles: 'Разрешения'
         profiles: 'Профили'

@@ -32,12 +32,15 @@
                     <ServerTable
                         endpoint="/admin/users"
                         :query="{filter: userFilterDelayed || undefined, localeFilter: localeFilter || undefined, adminsFilter: adminsFilter || undefined}"
-                        :columns="4"
+                        :columns="5"
                         count
                     >
                         <template v-slot:header>
                             <th class="text-nowrap">
                                 <T>admin.user.user</T>
+                            </th>
+                            <th class="text-nowrap">
+                                <T>admin.user.createdAt</T>
                             </th>
                             <th class="text-nowrap">
                                 <T>admin.user.email</T>
@@ -53,6 +56,9 @@
                         <template v-slot:row="s">
                             <td>
                                 <a :href="'https://pronouns.page/@' + s.el.username">@{{s.el.username}}</a>
+                            </td>
+                            <td>
+                                {{$datetime($ulidTime(s.el.id))}}
                             </td>
                             <td>
                                 <p>
