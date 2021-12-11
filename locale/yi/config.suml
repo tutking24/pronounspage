@@ -165,6 +165,7 @@ links:
 
     mediaGuests: []
     mediaMentions: []
+    # TODO add https://ingeveb.org/blog/be-yourself-with-a-little-help
     socials:
         -
             icon: 'twitter'
