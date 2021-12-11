@@ -148,6 +148,9 @@
                             extra.push('/' + route);
                         }
                     }
+                    if (this.config.pronouns.mirror) {
+                        extra.push('/' + this.config.pronouns.mirror.route)
+                    }
                     links.push({
                         link: '/' + this.config.pronouns.route,
                         icon: 'tags',
