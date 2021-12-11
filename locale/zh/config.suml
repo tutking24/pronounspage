@@ -105,10 +105,6 @@ contact:
             group: true
             footerAreas: '譯員'
         -
-            footerName: 'Andrea'
-            username: 'andrea'
-            footerAreas: 'code'
-        -
             footerName: '曹志豪 (離退休)'
             username: 'zhihao'
             footerAreas: '離退休譯員'
