@@ -383,7 +383,7 @@ user:
     login:
         help:  'Pour vous connecter ou créer un compte vous pouvez soit utiliser les options de connexion de réseaux sociaux, soit utiliser votre adresse mail dans le formulaire ci-dessous, puis confirmer avec le code que vous recevrez dans votre boîte mail.'
         placeholder: 'Adresse mail(ou nom d’utilisateur si vous êtes déjà inscrit)'
-        action: 'Se connecter / S'inscrire'
+        action: 'Se connecter / S''inscrire'
         emailSent: 'Nous vous avons envoyé un mail avec un code à 6 chiffres. Entrez-le ici. Ce code est à usage unique et reste utilisable pendant 15 minutes.'
         userNotFound: 'Cet utilisateur n’existe pas.'
         email:
