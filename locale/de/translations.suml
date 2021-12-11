@@ -512,6 +512,7 @@ admin:
     header: 'Verwaltungsbereich'
     user:
         user: 'Nutzer*in'
+        createdAt: 'Registration date' # TODO
         email: 'E-Mail'
         roles: 'Rolle'
         profiles: 'Profile'

@@ -487,6 +487,7 @@ admin:
     header: '管理面板'
     user:
         user: '帳戶'
+        createdAt: 'Registration date' # TODO
         email: '電郵地址'
         roles: '角色'
         profiles: '個人資料'

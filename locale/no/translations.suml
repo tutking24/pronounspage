@@ -514,6 +514,7 @@ admin:
     header: 'Administrator'
     user:
         user: 'Bruker'
+        createdAt: 'Registration date' # TODO
         email: 'Email'
         roles: 'Tillatelser'
         profiles: 'Profiler'

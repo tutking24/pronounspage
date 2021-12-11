@@ -522,6 +522,7 @@ admin:
     header: 'Admin panel'
     user:
         user: 'User'
+        createdAt: 'Registration date' # TODO
         email: 'Email'
         roles: 'Permissions'
         profiles: 'Profiles'

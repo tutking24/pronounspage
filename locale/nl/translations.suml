@@ -503,6 +503,7 @@ admin:
     header: 'Administratie paneel'
     user:
         user: 'Gebruiker'
+        createdAt: 'Registration date' # TODO
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Gebruikersprofielen'
