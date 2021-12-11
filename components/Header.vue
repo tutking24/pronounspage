@@ -95,9 +95,8 @@
                 <T>ban.termsIntro</T><T>quotation.colon</T>
             </p>
             <blockquote class="small">
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
-                <template v-for="(term, i) in forbidden"><span :class="[$user().bannedTerms.includes(term) ? 'fw-bold' : '']">{{term}}</span><template v-if="i !== forbidden.length - 1">, </template></template>.
+                <T>terms.content.content.violations</T>
+                <template v-for="(violation, i) in forbidden"><T :class="[$user().bannedTerms.includes(violation) ? 'fw-bold' : '']">terms.content.content.violationsExamples.{{violation}}</T><template v-if="i !== forbidden.length - 1">, </template></template>.
             </blockquote>
         </div>
     </div>

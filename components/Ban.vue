@@ -26,10 +26,10 @@
                 <div class="form-group">
                     <p class="my-1"><label><strong><T>ban.terms</T><T>quotation.colon</T></strong></label></p>
                     <div style="columns: 3" class="small">
-                        <div class="form-check ps-0" v-for="term in forbidden">
+                        <div class="form-check ps-0" v-for="violation in forbidden">
                             <label>
-                                <input type="checkbox" :value="term" v-model="user.bannedTerms"/>
-                                {{ term }}
+                                <input type="checkbox" :value="violation" v-model="user.bannedTerms"/>
+                                <T>terms.content.content.violationsExamples.{{violation}}</T>
                             </label>
                         </div>
                     </div>

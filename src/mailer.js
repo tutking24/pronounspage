@@ -31,7 +31,7 @@ const sendEmail = (to, subject, body = undefined, html = undefined) => {
         });
 };
 
-const terms = `It is forbidden to post on the Service any Content that might break the law or violate social norms, including but not limited to: ${forbidden.join(', ')}`
+const terms = translations.terms.content.content.violations + ' ' + Object.values(translations.terms.content.content.violationsExamples).join(', ');
 
 const templates = {
     base: {

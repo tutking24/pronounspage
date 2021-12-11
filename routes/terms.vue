@@ -5,117 +5,49 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-11-24</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-12-11</em></p>
+
+        <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
+            <Icon v="exclamation-triangle"/>
+            <T>terms.translationDisclaimer</T>
+        </div>
 
         <p>
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
-            who can be contacted via email: <a href="mailto:contact@pronouns.page" target="_blank" rel="noopener">contact@pronouns.page</a>.
+            <T>terms.content.intro</T>
+            <a href="mailto:contact@pronouns.page" target="_blank" rel="noopener">contact@pronouns.page</a>.
         </p>
+        <p><T>terms.content.consent</T></p>
 
+        <h3><T>terms.content.accounts.header</T></h3>
+        <p><T>terms.content.accounts.age</T></p>
+        <p><T>terms.content.accounts.authentication</T></p>
+        <p><T>terms.content.accounts.termination</T></p>
+        <p><T>terms.content.accounts.inactivity</T></p>
+
+        <h3><T>terms.content.content.header</T></h3>
+        <p><T>terms.content.content.ownership</T></p>
+        <p><T>terms.content.content.liability</T></p>
         <p>
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in our Privacy Policy below.
+            <T>terms.content.content.violations</T>
+            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><template v-if="i !== forbidden.length - 1">, </template></template>.
         </p>
+        <p><T>terms.content.content.responsibility</T></p>
 
-        <h3>Users and accounts</h3>
+        <h3><T>terms.content.privacy.header</T></h3>
+        <p><T>terms.content.privacy.effort</T></p>
+        <p><T>terms.content.privacy.data</T></p>
+        <p><T>terms.content.privacy.editRemoval</T></p>
+        <p><T>terms.content.privacy.contact</T></p>
+        <p><T>terms.content.privacy.cookies</T></p>
+        <p><T>terms.content.privacy.matomo</T></p>
+        <p><T>terms.content.privacy.arc</T></p>
+        <p><T>terms.content.privacy.hCaptcha</T></p>
+        <p><T>terms.content.privacy.logsBackups</T></p>
+        <p><T>terms.content.privacy.gdpr</T></p>
 
-        <p>
-            When you create an account with us, you are responsible for safeguarding the authentication method
-            that you use to access the Service (that is: password to your email account and/or social media platform).
-            You agree not to disclose it to any third party.
-            You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
-        </p>
-
-        <p>
-            We may terminate or suspend your account immediately, without prior notice or liability,
-            for any reason whatsoever, including without limitation if you breach the Terms.
-        </p>
-
-        <p>
-            Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
-        </p>
-
-        <h3>Content</h3>
-
-        <p>
-            The Content you post on the Service is yours.
-            By posting it, you grant us a worldwide, royalty-free license
-            to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
-        </p>
-
-        <p>
-            We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-            and in particular of any links to any external websites.
-        </p>
-
-        <p>
-            It is forbidden to post on the Service any Content that might break the law or violate social norms,
-            including but not limited to:
-            {{ forbidden.join(', ') }}.
-        </p>
-
-        <p>
-            You are responsible for any Content posted on the Service.
-            If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-            If you break the law, we will pass your information to law enforcement agencies.
-        </p>
-
-        <h3>Privacy Policy</h3>
-
-        <p>
-            We make every effort to store your data securely and to ensure that any non-public data we store
-            are not seized by or transferred to any third party, except those trusted parties described below.
-        </p>
-
-        <p>
-            Other than the data that you explicitly post on the Service as Content
-            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-            no additional private data connected to your account is being stored or processed.
-        </p>
-
-        <p>You may edit or remove any Content you have posted on the Service.</p>
-
-        <p>When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.</p>
-
-        <p>We only use first-party cookies and local storage to keep you logged in and save your preferences.</p>
-
-        <p>
-            We use Matomo to track traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read more about the data it stores
-            <a href="https://matomo.org/faq/general/faq_18254/" target="_blank" rel="noopener">here</a>
-            and about the cookies it uses
-            <a href="https://matomo.org/faq/general/faq_146/" target="_blank" rel="noopener">here</a>.
-        </p>
-
-        <p>
-            We use arc.io to cover the costs of website maintenance without introducing ads.
-            You can read more about them and their privacy policy
-            <a href="https://arc.io/faq" target="_blank" rel="noopener">here</a>.
-        </p>
-
-        <p>
-            We use hCaptcha to filter out bots and prevent DDoS attacks.
-            You can read their privacy policy
-            <a href="https://www.hcaptcha.com/privacy" target="_blank" rel="noopener">here</a>.
-        </p>
-
-        <p>Logs and backups are stored for no longer than 18 months.</p>
-
-        <p>
-            Your personal data are protected by the GDPR, which means you have the right
-            to see, correct, update and remove the data we store about you.
-        </p>
-
-        <h3>General</h3>
-
-        <p>
-            The applicable law is the law of the Kingdom of Netherlands.</p>
-
-        <p>
-            We reserve the right to modify these Terms of Service at any time.
-            If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-        </p>
+        <h3><T>terms.content.closing.header</T></h3>
+        <p><T>terms.content.closing.jurisdiction</T></p>
+        <p><T>terms.content.closing.changes</T></p>
     </div>
 </template>
 
