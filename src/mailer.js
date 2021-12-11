@@ -37,7 +37,7 @@ const templates = {
     base: {
         subject: `[[title]] » {{content}}`,
         html: `
-            <div style="margin: 36px auto; width: 100%; max-width: 480px; border: 1px solid #aaa;border-radius: 8px;overflow: hidden;font-family: Helvetica, sans-serif;font-size: 16px;box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)">
+            <div style="margin: 36px auto; width: 100%; max-width: 480px; border: 1px solid #aaa;border-radius: 8px;overflow: hidden;font-family: Nunito, Quicksand, Helvetica, sans-serif;font-size: 16px;box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)">
                 <div style="padding: 16px; padding-top: 10px; background: #f8f8f8; border-bottom: 1px solid #aaa;font-size: 20px;color: ${color};">
                     <img src="${logoEncoded}" style="height: 24px;width: 24px; position: relative; top: 6px; margin-right: 6px;" alt="Logo"/>
                     [[title]]

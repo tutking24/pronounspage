@@ -117,6 +117,7 @@ export default {
         { src: '~/plugins/vue-matomo.js', ssr: false },
         { src: '~/plugins/globals.js' },
         { src: '~/plugins/auth.js' },
+        { src: '~/plugins/datepicker.js', ssr: false },
     ],
     components: true,
     buildModules: [],

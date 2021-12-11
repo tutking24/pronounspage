@@ -45,6 +45,9 @@ const buildChart = (rows) => {
         chart[formatMonth(loop)] = 0;
         loop = new Date(loop.setDate(loop.getDate() + 1));
     }
+    if (!loop) {
+        return {};
+    }
     chart[formatMonth(loop)] = 0;
 
     for (let date of dates) {
