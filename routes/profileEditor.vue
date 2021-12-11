@@ -168,15 +168,16 @@
                 <h3 class="h4">
                     <Icon v="birthday-cake"/>
                     <T>profile.birthday</T>
+                    <button type="button" class="btn btn-outline-danger btn-sm" v-if="birthday !== null" @click="birthday = null">
+                        <Icon v="times"/>
+                        <T>crud.remove</T>
+                    </button>
                 </h3>
-                <p class="small text-muted mb-0">
+                <p class="small text-muted">
                     <T>profile.birthdayInfo</T>
                 </p>
                 <div class="input-group mb-3">
-                    <input type="date" class="form-control form-control-sm" v-model="birthday"/>
-                    <button type="button" class="btn btn-outline-danger btn-sm" v-if="birthday !== null" @click="birthday = null">
-                        <Icon v="times"/>
-                    </button>
+                    <datepicker v-model="birthday" inline :disabled-dates="disabledDates" initial-view="year"/>
                 </div>
             </section>
 
@@ -214,6 +215,7 @@
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
     import link from '../plugins/link';
+    import {minBirthdate, maxBirthdate, formatDate} from '../src/birthdate';
 
     const defaultWords = config.profile.defaultWords.map(c => buildList(function* () {
         for (let word of c) {
@@ -226,6 +228,10 @@
         data() {
             return {
                 saving: false,
+                disabledDates: {
+                    to: minBirthdate,
+                    from: maxBirthdate,
+                },
             };
         },
         async asyncData({ app, store }) {
@@ -316,7 +322,7 @@
                         names: listToDict(this.names),
                         pronouns: listToDict(this.pronouns),
                         description: this.description,
-                        birthday: this.birthday,
+                        birthday: this.birthday ? formatDate(this.birthday) : null,
                         links: [...this.links],
                         flags: [...this.flags],
                         customFlags: {...this.customFlags},

@@ -6,6 +6,7 @@ import avatar from "../avatar";
 import {handleErrorAsync} from "../../src/helpers";
 import { caches }  from "../../src/cache";
 import fs from 'fs';
+import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -15,11 +16,7 @@ const calcAge = birthday => {
     }
 
     const now = new Date();
-    const birth = new Date(
-        parseInt(birthday.substring(0, 4)),
-        parseInt(birthday.substring(5, 7)) - 1,
-        parseInt(birthday.substring(8, 10))
-    );
+    const birth = parseDate(birthday);
 
     const diff = now.getTime() - birth.getTime();
 
@@ -112,6 +109,19 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     });
 }));
 
+const sanitiseBirthday = (bd) => {
+    if (!bd) { return null; }
+    const match = bd.match(/^(\d\d\d\d)-(\d\d)-(\d\d)$/);
+    if (!match) { return null; }
+
+    bd = new Date(parseInt(match[1]), parseInt(match[2]) - 1, parseInt(match[3]));
+    if (bd < minBirthdate || bd > maxBirthdate) {
+        return null;
+    }
+
+    return formatDate(bd);
+}
+
 router.post('/profile/save', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -125,7 +135,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 names = ${JSON.stringify(req.body.names)},
                 pronouns = ${JSON.stringify(req.body.pronouns)},
                 description = ${req.body.description},
-                birthday = ${req.body.birthday || null},
+                birthday = ${sanitiseBirthday(req.body.birthday || null)},
                 links = ${JSON.stringify(req.body.links.filter(x => !!x))},
                 flags = ${JSON.stringify(req.body.flags)},
                 customFlags = ${JSON.stringify(req.body.customFlags)},
@@ -143,7 +153,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     } else {
         await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
             VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
-                ${req.body.description}, ${req.body.birthday || null}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
+                ${req.body.description}, ${sanitiseBirthday(req.body.birthday || null)}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted() ? req.body.teamName || null : ''},
                 ${req.isGranted() ? req.body.footerName || null : ''},
