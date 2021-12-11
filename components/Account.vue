@@ -12,6 +12,26 @@
         </div>
     </section>
     <section v-else>
+        <div v-if="showTermsUpdate" class="alert alert-info container my-4 small">
+            <h4 class="mb-3">
+                <Icon v="info-circle"/>
+                <T>terms.update.header</T>
+            </h4>
+            <p>
+                <T>terms.update.intro</T>
+            </p>
+            <ul>
+                <li v-for="change in $t('terms.update.changes')">
+                    {{ change }}
+                </li>
+            </ul>
+            <p class="text-center">
+                <button class="btn btn-primary" @click.prevent="dismissTermsUpdate">
+                    <Icon v="shield-check"/>
+                    <T>confirm.ok</T>
+                </button>
+            </p>
+        </div>
         <div class="card mb-3">
             <div class="card-body d-flex flex-column flex-md-row">
                 <div class="mx-2 text-center">
@@ -183,7 +203,9 @@
 
                 logoutInProgress: false,
 
-                impersonationActive: !!this.$cookies.get('impersonator')
+                impersonationActive: !!this.$cookies.get('impersonator'),
+
+                showTermsUpdate: this.$ulidTime(this.$user().id) < new Date(2021, 11, 12) / 1000 && !this.$cookies.get('termsUpdateDismissed'),
             }
         },
         async mounted() {
@@ -295,6 +317,10 @@
                 this.$cookies.set('token', this.$cookies.get('impersonator'));
                 this.$cookies.remove('impersonator');
                 window.location.reload();
+            },
+            dismissTermsUpdate() {
+                this.$cookies.set('termsUpdateDismissed', true);
+                this.showTermsUpdate = false;
             },
         },
         computed: {

@@ -605,6 +605,29 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+    # TODO
+    update:
+        header: 'We''ve updated our Terms of Service.'
+        intro: >
+            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+        changes:
+            - >
+                In January we will start removing unused accounts to prevent username hoarding
+                (if there's both no card and no login for a month).
+            - >
+                We'd like to provide a safe space for all queer people regardless of age,
+                but we must also respect the law
+                and protect the privacy of people who can't legally consent to processing their data.
+                Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
+                you need to be at least 13 years old to create an account,
+                and in case of users aged 13-16 they need have parental consent for us to process their data.
+            - >
+                To improve accessibility, we have started translating our Terms of Service into all supported languages.
+                Those translations are just auxiliary, the only legally binding version remains English.
+            - >
+                Although queerphobia, transphobia, queer exclusionism and trolling
+                have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
+                we're now explicitly listing them as forbidden.
 
 admin:
     header: 'Administratie paneel'
