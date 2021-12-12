@@ -363,13 +363,11 @@ contact:
     team:
         name: 'Cooperativa “Consejo de Lenguaje Neutro”'
         nameShort: 'Cooperativa'
-        # TODO
-        # We are a queer collective dedicated to assembling, researching, shaping and promoting
-        # gender neutral and nonbinary language.
-        # We also support actions towards equality and social justice.
         description:
             - >
-                {https://pronouns.page=Pronouns.page} e iniciativas relacionadas
+                Somos un colectivo queer dedicado a reunir, investigar, formar y promover
+                el lenguaje neutro y no binario.
+                También apoyamos acciones por la igualdad y la justicia social.
                 son creados por la cooperativa “Consejo de Lenguaje Neutro”.
         logo: 'El logo de la cooperativa es una combinación del símbolo transgénero y una burbuja de diálogo que simboliza la lengua.'
         members: 'Miembros actuales'
@@ -627,29 +625,28 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    # TODO
     update:
         header: 'Hemos actualizado nuestros Términos de Servicio.'
         intro: >
             Hola! Queremos informarte que hemos actualizado nuestros Términos de Servicio. Una descripción general de los cambios:
         changes:
             - >
-                In January we will start removing unused accounts to prevent username hoarding
-                (if there's both no card and no login for a month).
+                En enero comenzaremos a remover cuentas para prevenir 
+                la acumulación de nombres de usuarie (cuando no tengan tarjeta ni inicios de sesión durante un mes).
             - >
-                We'd like to provide a safe space for all queer people regardless of age,
-                but we must also respect the law
-                and protect the privacy of people who can't legally consent to processing their data.
-                Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
-                you need to be at least 13 years old to create an account,
-                and in case of users aged 13-16 they need have parental consent for us to process their data.
+                Nos gustaría proveer un espacio seguro para todas las personas queer 
+                independientemente de su edad, pero también debemos respetar la ley 
+                y proteger la privacidad de personas que no pueden consentir legalmente al procesamiento de sus datos. 
+                Ahora nuestros términos de servicio mencionan explícitamente lo que siempre ha sido el caso de acuerdo con RGPD:
+                Debes tener por lo menos 13 años de edad para crear una cuenta
+                y les usuaries de entre 13 y 16 años deben  tener consentimiento parental para que procesemos sus datos.
             - >
-                To improve accessibility, we have started translating our Terms of Service into all supported languages.
-                Those translations are just auxiliary, the only legally binding version remains English.
+                Para mejorar la accesibilidad, comenzamos a traducir nuestros términos de servicio a todas las lenguas de la página. 
+                Esas traducciones son sólamente auxiliares, y la versión en inglés sigue siendo la única legalmente vinculante.
             - >
-                Although queerphobia, transphobia, queer exclusionism and trolling
-                have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
-                we're now explicitly listing them as forbidden.
+                Aunque la queerfobia, la transfobia, el exclusionismo queer y la presencia de trolls 
+                siempre han sido consideradas infracciones a los términos de servicio bajo el término genérico de 
+                "infringir normas sociales", ahora están enlistadas explícitamente como prohibidas.
 
 admin:
     header: 'Panel de Admins'
