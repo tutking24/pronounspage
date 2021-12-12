@@ -604,27 +604,27 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
     # TODO
     update:
-        header: 'We''ve updated our Terms of Service.'
+        header: 'We hebben onze gebruikersvoorwaarden geüpdate.'
         intro: >
-            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+            Hey! We willen je laten weten dat we onze gebruikersvoorwaarden hebben geüpdate. Hier is een overzicht van de veranderingen:
         changes:
             - >
-                In January we will start removing unused accounts to prevent username hoarding
-                (if there's both no card and no login for a month).
+                Vanaf januari zullen we ongebruikte accounts gaan verwijderen om het hamsteren van gebruikersnamen te voorkomen. 
+                Dit gebeurt in het geval dat er geen kaart aawezig is, en er tenminste één maand niet is ingelogd.
             - >
-                We'd like to provide a safe space for all queer people regardless of age,
-                but we must also respect the law
-                and protect the privacy of people who can't legally consent to processing their data.
-                Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
-                you need to be at least 13 years old to create an account,
-                and in case of users aged 13-16 they need have parental consent for us to process their data.
+                >Ook al willen we een veilige plek bieden voor alle queer personen ongeacht leeftijd, 
+                moeten we de wet respecteren en de privacy van mensen beschermen die juridisch
+                niet toestemming kunnen geven om hun data te verwerken. 
+                Daarom bevatten de gebruikersvoorwaarden nu wat altijd al zo is geweest volgens de AVG:
+                je moet minstens 13 jaar oud zijn om een account aan te maken, en in het geval van gebruikers tussen de 13 en de 16 
+                jaar moeten ze daarnaast ook ouderlijke toestemming hebben om hun data te kunnen verwerken.
             - >
-                To improve accessibility, we have started translating our Terms of Service into all supported languages.
-                Those translations are just auxiliary, the only legally binding version remains English.
+                Om de toegankelijkheid te vergroten zullen we onze gebruikersvoorwaarden vertalen in alle aangeboden talen.
+                Deze vertalingen zijn slechts ondersteunend, de enige juridische bindende versie hiervan is Engels. 
             - >
-                Although queerphobia, transphobia, queer exclusionism and trolling
-                have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
-                we're now explicitly listing them as forbidden.
+                Hoewel queerfobie, transfobie, queer uitsluiting en trollen
+                altijd al begrepen waren als overtredingen van de gebruikersvoorwaarden onder de algemene noemer van ''schending van sociale omgangsvormen'',
+                hebben we deze categorieën expliciet neergezet als niet toegestaan.
 
 admin:
     header: 'Administratie paneel'
