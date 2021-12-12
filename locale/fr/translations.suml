@@ -620,29 +620,28 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    # TODO
+
     update:
-        header: 'We''ve updated our Terms of Service.'
+        header: 'Nous avons mis à jour nos Conditions de Service'
         intro: >
-            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+            Bonjour ! Nous vous prévenons que nous avons modifié nos Conditions de Service. Voici un aperçu des changements :
         changes:
             - >
-                In January we will start removing unused accounts to prevent username hoarding
-                (if there's both no card and no login for a month).
+                En janvier, nous commençerons à supprimer les comptes inactifs pour éviter l'accumulation de pseudos
+                (s'il n'y a pas de carte ni de connexion pendant un mois.)
             - >
-                We'd like to provide a safe space for all queer people regardless of age,
-                but we must also respect the law
-                and protect the privacy of people who can't legally consent to processing their data.
-                Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
-                you need to be at least 13 years old to create an account,
-                and in case of users aged 13-16 they need have parental consent for us to process their data.
+                Nous aimerions offrir un espace sûr pour les individus queer de tout âge,
+                mais nous devons également rester dans les lignes de la GDPR (loi européenne sur la protection des données),
+                et ainsi protéger la vie privée des personnes ne pouvant pas légalement nous concéder le traitement de leur données personnelles.
+                Désormais, nos Conditions de Service exigent aux utilisateurs d'avoir plus de 13 ans pour pouvoir s'inscrire,
+                et dans le cas des utilisateurs âgés de 13 à 16 ans, de confirmer l'accord d'un tuteur légal, afin que nous puissions traiter leurs données.
             - >
-                To improve accessibility, we have started translating our Terms of Service into all supported languages.
-                Those translations are just auxiliary, the only legally binding version remains English.
+                Pour améliorer l'accessibilité, nous avons commencé à traduire nos conditions de Service dans toutes les langues prises en charge.
+                Ces traductions ne sont qu'auxiliaires, la seule version juridiquement valable reste l'anglaise.
             - >
-                Although queerphobia, transphobia, queer exclusionism and trolling
-                have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
-                we're now explicitly listing them as forbidden.
+                Bien que la queerphobie, la transphobie, l'exclusion des queers et le trolling
+                ont toujours été considérés comme une violation des Conditions de Service sous le terme de "violation des normes sociales",
+                nous les listerons désormais explicitement comme interdits.
 
 admin:
     header: 'Panneau d’administration'
