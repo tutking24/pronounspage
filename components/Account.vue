@@ -205,7 +205,7 @@
 
                 impersonationActive: !!this.$cookies.get('impersonator'),
 
-                showTermsUpdate: this.$ulidTime(this.$user().id) < new Date(2021, 11, 12) / 1000 && !this.$cookies.get('termsUpdateDismissed'),
+                showTermsUpdate: this.$ulidTime(this.$user().id) < new Date(2021, 11, 13) / 1000 && !this.$cookies.get('termsUpdateDismissed'),
             }
         },
         async mounted() {
