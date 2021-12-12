@@ -388,7 +388,9 @@ router.post('/user/:id/set-roles', handleErrorAsync(async (req, res) => {
 // happens on home
 router.get('/user/social-redirect/:provider/:locale', handleErrorAsync(async (req, res) => {
     req.session.socialRedirect = req.params.locale;
-    return res.redirect(`/api/connect/${req.params.provider}`);
+    return res.redirect(`/api/connect/${req.params.provider}?${new URLSearchParams({
+        instance: req.query.instance || undefined,
+    })}`);
 }));
 
 // happens on home

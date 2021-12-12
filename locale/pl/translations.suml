@@ -1184,6 +1184,7 @@ user:
         why: >
             Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@example=takimi jak ta}).
         passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
+        instancePlaceholder: 'Instancja'
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
