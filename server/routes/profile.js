@@ -58,7 +58,13 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
 const susRegexes = fs.readFileSync(__dirname + '/../../sus.txt').toString('utf-8').split('\n').filter(x => !!x);
 
 function* isSuspicious(profile) {
-    for (let s of [profile.description, JSON.stringify(profile.customFlags), JSON.stringify(profile.pronouns), JSON.stringify(profile.words)]) {
+    for (let s of [
+        profile.description,
+        JSON.stringify(profile.customFlags),
+        JSON.stringify(profile.pronouns),
+        JSON.stringify(profile.names),
+        JSON.stringify(profile.words),
+    ]) {
         s = s.toLowerCase().replace(/\s+/g, ' ');
         for (let sus of susRegexes) {
             let m = s.match(new RegExp(sus, 'ig'));
