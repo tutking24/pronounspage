@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-12-11</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-12-13</em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>
