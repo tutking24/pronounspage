@@ -351,13 +351,11 @@ contact:
     team:
         name: 'Das „Rat für neutrale Sprache“ Kollektiv'
         nameShort: 'Kollektiv'
-        # TODO
-        # We are a queer collective dedicated to assembling, researching, shaping and promoting
-        # gender neutral and nonbinary language.
-        # We also support actions towards equality and social justice.
         description:
             - >
-                {https://pronouns.page=Pronouns.page} und damit verbundene Initiativen sind vom Kollektiv „Rat für neutrale Sprache“ erstellt.
+                Wir sind ein queeres Kollektiv, das sich der Zusammenstellung, Erforschung, Gestaltung und Förderung
+                der geschlechtsneutrale und nicht-binäre Sprache widmet.
+                Wir unterstützen auch Aktionen für Gleichberechtigung und soziale Gerechtigkeit.
         logo: 'Das Logo des Kollektivs ist eine Kombination des Transgender Symbols und einer Sprechblase, die Sprache symbolisiert.'
         members: 'aktuelle Mitglieder'
         member: 'Mitglied des Kollektivs'
@@ -374,10 +372,9 @@ user:
     headerLong: 'Dein Account'
     tokenExpired: 'Der Code ist abgelaufen. Bitte aktualisiere die Website und versuche es erneut.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Um sich anzumelden oder ein Konto zu erstellen, kannst du entweder die Schaltflächen in den sozialen Medien verwenden oder deine E-Mail-Adresse in das unten stehende Feld eingeben und dann den Code bestätigen, den du in deiner Mailbox erhalten hast.'
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
-        action: 'Einloggen'  # TODO 'Log in / register'
+        action: 'Anmelden / Registrieren'
         emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
         userNotFound: 'Nutzer*in nicht gefunden.'
         email:
@@ -486,8 +483,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
     links: 'Kontakt, Social Media'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Rechtliches'
+    technical: 'Technisches'
 
 notFound:
     message: 'Seite wurde nicht gefunden'
@@ -639,7 +636,7 @@ admin:
     header: 'Verwaltungsbereich'
     user:
         user: 'Nutzer*in'
-        createdAt: 'Registration date' # TODO
+        createdAt: 'Datum der Anmeldung'
         email: 'E-Mail'
         roles: 'Rolle'
         profiles: 'Profile'
@@ -898,9 +895,8 @@ calendar:
     celebrating_month: 'wird gefeiert im:'
     image:
         header: 'Bild herunterladen'
-    # TODO
     view:
-        grid: 'Grid view'
-        list: 'Events list'
+        grid: 'Rasteransicht'
+        list: 'Ereignisliste'
     link: 'Link'
     full: 'Ganzer Kalender'
