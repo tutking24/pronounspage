@@ -383,10 +383,9 @@ user:
     headerLong: 'A conta'
     tokenExpired: 'O token expirou. Por favor atualize a página e tente novamente.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Iniciar sessão ou criar uma conta você pode usar os botões de redes sociais ou insirar seu endereço de e-mail no campo abaixo e confirme o código que você receberá em sua caixa de correio.'
         placeholder: 'E-mail (ou nome de usuarie, se já está registrade)'
-        action: 'Iniciar sessão'  # TODO 'Log in / register'
+        action: 'Iniciar sessão / registre-se'
         emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
         userNotFound: 'Usuarie não encontrade.'
         email:
@@ -495,8 +494,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
     links: 'Contato, redes sociais'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Assuntos legais'
+    technical: 'Parte técnica'
 
 notFound:
     message: 'Página não encontrada'
@@ -651,7 +650,7 @@ admin:
     header: 'Panel de Admins'
     user:
         user: 'Usuárie'
-        createdAt: 'Registration date' # TODO
+        createdAt: 'Data de registro'
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Perfis'
