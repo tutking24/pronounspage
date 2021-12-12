@@ -17,7 +17,7 @@
                 <VersionDropdown end/>
             </div>
         </div>
-        <div class="d-block d-lg-none">
+        <div class="d-block d-lg-none p-4">
             <div class="text-center mb-3">
                 <nuxt-link to="/">
                     <h1 class="text-nowrap">
