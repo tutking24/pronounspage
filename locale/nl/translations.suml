@@ -223,9 +223,9 @@ faq:
                     en het suggereert dat je een ongezonde nieuwsgierigheid hebt wat betreft de genitaliën van die persoon.
                     In plaats daarvan zou je gewoon kunnen vragen: "Wat zijn je voornaamwoorden?" of "hoe wil je aangesproken worden?")
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michiel, {/he=he/him}”. It's not hard – but for trans and nonbinary peopls it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                   Het is ook belangrijk om situaties waaarin je jezelf voorstelt met jouw voornaamwoorden te normaliseren.  
+                   ''Hoi, ik ben Michiel,{/he=he/him}”. Het is niet moeilijk – maar voor transgender en non-binaire personen is het heel belangrijk!
+                   Het is zelfs nog makkelijker online: plaats simpelweg jouw voornaamwoorden (of een link naar voorbeelden op onze website) in jouw bio.
                 - >
                     Remember also that many people might use a different name and a different set of pronouns depending on situation.
                     They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
@@ -339,14 +339,11 @@ contact:
     team:
         name: 'Het "Raad van Neutrale Taal" collectief'
         nameShort: 'Het collectief'
-        # TODO
-        # We are a queer collective dedicated to assembling, researching, shaping and promoting
-        # gender neutral and nonbinary language.
-        # We also support actions towards equality and social justice.
         description:
             - >
-                {https://pronouns.page=Pronouns.page} en gerelateerde initiatieven
-                zijn bedacht door het "Raad van Neutrale Taal" collectief.
+                We zijn een queer collectief die zich inzet om genderneutrale en non-binaire taal
+                te verzamelen, onderzoeken, vormgeven en te bevorderen.
+                We steunen ook acties die gelijkwaardigheid en sociale gerechtigheid bevorderen.
         logo: 'Het logo van het collectief is een combinatie van het transgender symbool en een spraakballon dat taal symboliseert.'
         members: 'Huidige leden'
         member: 'Lid van het collectief'
@@ -477,8 +474,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL} licentie.
     links: 'Contact, sociale media'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Juridisch'
+    technical: 'Technisch'
 
 notFound:
     message: 'Pagina niet gevonden'
@@ -633,7 +630,7 @@ admin:
     header: 'Administratie paneel'
     user:
         user: 'Gebruiker'
-        createdAt: 'Registration date' # TODO
+        createdAt: 'Datum van registratie'
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Gebruikersprofielen'
@@ -900,10 +897,10 @@ calendar:
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
     banner: 'Vandaag op de kalender'
-    celebrating_custom: 'is celebrated' # TODO
-    celebrating_day: 'is celebrated on' # TODO
-    celebrating_week: 'is celebrated on' # TODO
-    celebrating_month: 'is celebrated in' # TODO
+    celebrating_custom: 'wordt gevierd op:'
+    celebrating_day: 'wordt gevierd op:' 
+    celebrating_week: 'wordt gevierd tijdens:'
+    celebrating_month: 'wordt gevierd in:'
     image:
         header: 'Download een afbeelding'
     view:
