@@ -602,7 +602,7 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    # TODO
+    
     update:
         header: 'We hebben onze gebruikersvoorwaarden geüpdate.'
         intro: >
