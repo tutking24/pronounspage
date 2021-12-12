@@ -385,8 +385,7 @@ user:
     headerLong: 'Tu cuenta'
     tokenExpired: 'El token ha expirado. Por favor actualiza la página e inténtalo nuevamente.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Para iniciar sesión o crear una cuenta puedes usar los botones de medios sociales o ingresar tu dirección de correo electronico en el campo y luego confirmar el código que recibiste en tu buzón.'
         placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
         action: 'Iniciar sesión / registrarte'
         emailSent: 'Te hemos enviado un correo electrónico con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
@@ -489,7 +488,7 @@ crud:
     search: 'Buscar…'
     author: 'Añadido por'
     saved: 'Los cambios se guardaron exitosamente!'
-    loginRequired: '{/cuenta=Log in} para enviar un ítem'
+    loginRequired: '{/cuenta=Iniciar sesión} para enviar un ítem'
     copy: 'Copiar enlace'
     download: 'Descargar'
 
