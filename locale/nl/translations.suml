@@ -443,7 +443,7 @@ profile:
         Je kan ook onze website gebruiken om een kaart te genereren, {/@example=zoals deze},
         Die je namen, voornaamwoorden etc. bevat.
         Je kan hier naar verwijzen in je bio of in je email-footer.
-        Just create an account {/account=hier}.
+        Just create an account {/account=hier}. # TODO
     bannerButton: 'Maak een kaart'
 
     card:
