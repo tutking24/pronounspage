@@ -356,14 +356,11 @@ contact:
     team:
         name: 'Le collectif du « Conseil du Langage Neutre »'
         nameShort: 'Le collectif'
-        # TODO
-        # We are a queer collective dedicated to assembling, researching, shaping and promoting
-        # gender neutral and nonbinary language.
-        # We also support actions towards equality and social justice.
         description:
             - >
-                {https://pronouns.page=Pronouns.page} et les initiatives liées
-                ont été créés par le collectif du « Conseil du Langage Neutre ».
+                Nous sommes un collectif dédié au rassemblement, à la recherche, à la mise en forme et visé à promouvoir
+                le langage non-genré et non binaire.
+                Nous supportons également les actions pour l'égalité et la justice sociale.
         logo: 'Le logo du collectif est une combinaison du symbole transgenre et une bulle de parole symbolisant le langage.'
         members: 'Membres actuels'
         blog: 'Blog'
@@ -493,8 +490,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL}.
     links: 'Contact, réseaux sociaux'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Légal'
+    technical: 'Technique'
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'
@@ -871,7 +868,6 @@ calendar:
         trans_week: 'Semaine de sensibilisation trans'
         trans_parent_day: 'Journée des parents trans'
         nonbinary_week: 'Journée de sensibilité au non-binaire'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14' # TODO
         polyamory_day: 'Journée du polyamour'
         homophobia_sport: 'Journée internationale contre l''homophobie dans le sport'
         gay_uncles_day: 'Journée des oncles gay'
