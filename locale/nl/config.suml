@@ -69,6 +69,18 @@ inclusive:
 
 terminology:
     enabled: false
+    published: false    
+    categories:
+        - 'sexual orientation'
+        - 'romantic orientation'
+        - 'tertiary orientation'
+        - 'gender'
+        - 'gender expression'
+        - 'relationship model'
+        - 'language'
+        - 'attraction'
+        - 'politics'
+        - 'prejudice'    
 
 names:
     enabled: false
