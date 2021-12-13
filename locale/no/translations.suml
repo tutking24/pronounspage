@@ -171,6 +171,10 @@ nouns:
 
     image: 'Bilde'
 
+community: # TODO
+    header: 'Community'
+    headerLong: 'Queer community'
+
 terminology:
     header: 'Terminologi'
     headerLong: 'Ordbok av queer terminologi'
