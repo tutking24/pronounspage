@@ -623,9 +623,9 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
     # TODO
     update:
-        header: 'We''ve updated our Terms of Service.'
+        header: 'Vi har oppdatert våre vilkår og betingelser.'
         intro: >
-            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+            Hei! Vi har skrevet dette for å fortelle deg at vi har oppdatert våre vilkar og betingelser:
         changes:
             - >
                 In January we will start removing unused accounts to prevent username hoarding
