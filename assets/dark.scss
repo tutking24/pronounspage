@@ -261,4 +261,8 @@ body[data-theme="dark"] {
   .badge.bg-dark {
     color: $black;
   }
+
+  .vdp-datepicker__calendar {
+    background-color: $dark;
+  }
 }
