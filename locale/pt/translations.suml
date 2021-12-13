@@ -622,9 +622,9 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
     # TODO
     update:
-        header: 'We''ve updated our Terms of Service.'
+        header: 'Atualizámos nossos termos de serviço.'
         intro: >
-            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+            Oi! Lhe escrevemos para informar que atualizámos nossos termos de serviço.
         changes:
             - >
                 In January we will start removing unused accounts to prevent username hoarding
