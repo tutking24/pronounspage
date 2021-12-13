@@ -392,6 +392,7 @@ user:
         why: >
             Registrar-se te permite dirigir os cartões ({/@example=como esta}).
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Validar'
         invalid: 'Código inválido.'

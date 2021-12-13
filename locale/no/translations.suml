@@ -388,6 +388,7 @@ user:
         why: >
             Å registrere seg lar deg redigere kortene dine ({/@example=sånn som denne}).
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Gyldig'
         invalid: 'Ugyldig kode.'

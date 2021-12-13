@@ -384,6 +384,7 @@ user:
         why: >
             Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@example=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Validieren'
         invalid: 'Ungültiger Code.'

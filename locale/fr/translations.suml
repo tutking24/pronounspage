@@ -393,6 +393,7 @@ user:
         why: >
             S’inscrire vous permet de gérer vos cartes ({/@example=comme celle-ci}).
         passwordless: 'Ce site ne stocke aucun mot de passe. {https://avris.it/blog/passwords-are-passé=Plus d’infos.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Valider'
         invalid: 'Code invalide.'

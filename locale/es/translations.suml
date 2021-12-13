@@ -397,6 +397,7 @@ user:
         why: >
             Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
         passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -630,21 +631,21 @@ terms:
             Hola! Queremos informarte que hemos actualizado nuestros Términos de Servicio. Una descripción general de los cambios:
         changes:
             - >
-                En enero comenzaremos a remover cuentas para prevenir 
+                En enero comenzaremos a remover cuentas para prevenir
                 la acumulación de nombres de usuarie (cuando no tengan tarjeta ni inicios de sesión durante un mes).
             - >
-                Nos gustaría proveer un espacio seguro para todas las personas queer 
-                independientemente de su edad, pero también debemos respetar la ley 
-                y proteger la privacidad de personas que no pueden consentir legalmente al procesamiento de sus datos. 
+                Nos gustaría proveer un espacio seguro para todas las personas queer
+                independientemente de su edad, pero también debemos respetar la ley
+                y proteger la privacidad de personas que no pueden consentir legalmente al procesamiento de sus datos.
                 Ahora nuestros términos de servicio mencionan explícitamente lo que siempre ha sido el caso de acuerdo con RGPD:
                 Debes tener por lo menos 13 años de edad para crear una cuenta
                 y les usuaries de entre 13 y 16 años deben  tener consentimiento parental para que procesemos sus datos.
             - >
-                Para mejorar la accesibilidad, comenzamos a traducir nuestros términos de servicio a todas las lenguas de la página. 
+                Para mejorar la accesibilidad, comenzamos a traducir nuestros términos de servicio a todas las lenguas de la página.
                 Esas traducciones son sólamente auxiliares, y la versión en inglés sigue siendo la única legalmente vinculante.
             - >
-                Aunque la queerfobia, la transfobia, el exclusionismo queer y la presencia de trolls 
-                siempre han sido consideradas infracciones a los términos de servicio bajo el término genérico de 
+                Aunque la queerfobia, la transfobia, el exclusionismo queer y la presencia de trolls
+                siempre han sido consideradas infracciones a los términos de servicio bajo el término genérico de
                 "infringir normas sociales", ahora están enlistadas explícitamente como prohibidas.
 
 admin:

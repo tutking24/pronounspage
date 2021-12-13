@@ -400,6 +400,7 @@ user:
         why: >
             ご登録いただいた方は、カードの設定を行うことができます。({/@example=こんなに}).
         passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: '確認'
         invalid: '無効なコード'
