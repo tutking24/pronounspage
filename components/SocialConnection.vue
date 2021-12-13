@@ -5,7 +5,15 @@
             {{ providerOptions.name }}
         </span>
         <span v-if="connection === undefined">
-            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
+            <form :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" 
+                    v-if="providerOptions.instanceRequired" class="input-group input-group-sm">
+                <input type="text" name="instance" class="form-control"
+                        :placeholder="$t('user.login.instancePlaceholder')">
+                <button type="submit" class="btn btn-outline-secondary">
+                    <Icon v="link"/>
+                </button>
+            </form>
+            <a v-else :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
                 <Icon v="link"/>
                 <T>user.socialConnection.connect</T>
             </a>
@@ -18,7 +26,8 @@
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>
-            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
+            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` + (providerOptions.instanceRequired ? '?instance=' + connection.name.split('@')[1] : '')"
+                    class="badge bg-light text-dark border">
                 <Icon v="sync"/>
                 <T>user.socialConnection.refresh</T>
             </a>

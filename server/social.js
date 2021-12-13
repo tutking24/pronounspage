@@ -30,6 +30,8 @@ export const config = {
         callback: '/api/user/social/discord',
         scope: ['identify', 'email'],
     },
+    // non-grant, but things break if it's not there
+    mastodon: {},
 }
 
 export const handlers = {
@@ -72,5 +74,16 @@ export const handlers = {
             access_token: r.access_token,
             access_secret: r.access_secret,
         }
+    },
+    mastodon(r) {
+        const acct = `${r.profile.username}@${r.instance}`;
+        return {
+            id: acct,
+            // very possibly not really operated by the user
+            email: acct,
+            name: acct,
+            avatar: r.profile.avatar,
+            access_token: r.access_token,
+        };
     },
 };

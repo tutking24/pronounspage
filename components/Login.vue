@@ -12,9 +12,19 @@
                     <div class="row flex-row-reverse">
                         <div class="col-12 col-md-4">
                             <div class="btn-group-vertical w-100 mb-3">
-                                <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" v-for="(providerOptions, provider) in socialProviders" class="btn btn-outline-primary">
+                                <a :href="!providerOptions.instanceRequired ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : null"
+                                        :class="providerOptions.instanceRequired ? 'btn border-primary text-primary' : 'btn btn-outline-primary'"
+                                        v-for="(providerOptions, provider) in socialProviders">
                                     <Icon :v="providerOptions.icon || provider" set="b"/>
                                     {{ providerOptions.name }}
+                                    <form :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" 
+                                            v-if="providerOptions.instanceRequired" class="input-group">
+                                        <input type="text" name="instance" class="form-control"
+                                                :placeholder="$t('user.login.instancePlaceholder')">
+                                        <button type="submit" class="btn btn-outline-primary">
+                                            <Icon v="arrow-right"/>
+                                        </button>
+                                    </form>
                                 </a>
                             </div>
                         </div>
