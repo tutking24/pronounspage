@@ -223,7 +223,7 @@ faq:
                     en het suggereert dat je een ongezonde nieuwsgierigheid hebt wat betreft de genitaliën van die persoon.
                     In plaats daarvan zou je gewoon kunnen vragen: "Wat zijn je voornaamwoorden?" of "hoe wil je aangesproken worden?")
                 - >
-                   Het is ook belangrijk om situaties waaarin je jezelf voorstelt met jouw voornaamwoorden te normaliseren.  
+                   Het is ook belangrijk om situaties waaarin je jezelf voorstelt met jouw voornaamwoorden te normaliseren.
                    ''Hoi, ik ben Michiel,{/he=he/him}”. Het is niet moeilijk – maar voor transgender en non-binaire personen is het heel belangrijk!
                    Het is zelfs nog makkelijker online: plaats simpelweg jouw voornaamwoorden (of een link naar voorbeelden op onze website) in jouw bio.
                 - >
@@ -373,6 +373,7 @@ user:
         why: >
             Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'
@@ -602,25 +603,25 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    
+
     update:
         header: 'We hebben onze gebruikersvoorwaarden geüpdate.'
         intro: >
             Hey! We willen je laten weten dat we onze gebruikersvoorwaarden hebben geüpdate. Hier is een overzicht van de veranderingen:
         changes:
             - >
-                Vanaf januari zullen we ongebruikte accounts gaan verwijderen om het hamsteren van gebruikersnamen te voorkomen. 
+                Vanaf januari zullen we ongebruikte accounts gaan verwijderen om het hamsteren van gebruikersnamen te voorkomen.
                 Dit gebeurt in het geval dat er geen kaart aawezig is, en er tenminste één maand niet is ingelogd.
             - >
-                >Ook al willen we een veilige plek bieden voor alle queer personen ongeacht leeftijd, 
+                >Ook al willen we een veilige plek bieden voor alle queer personen ongeacht leeftijd,
                 moeten we de wet respecteren en de privacy van mensen beschermen die juridisch
-                niet toestemming kunnen geven om hun data te verwerken. 
+                niet toestemming kunnen geven om hun data te verwerken.
                 Daarom bevatten de gebruikersvoorwaarden nu wat altijd al zo is geweest volgens de AVG:
-                je moet minstens 13 jaar oud zijn om een account aan te maken, en in het geval van gebruikers tussen de 13 en de 16 
+                je moet minstens 13 jaar oud zijn om een account aan te maken, en in het geval van gebruikers tussen de 13 en de 16
                 jaar moeten ze daarnaast ook ouderlijke toestemming hebben om hun data te kunnen verwerken.
             - >
                 Om de toegankelijkheid te vergroten zullen we onze gebruikersvoorwaarden vertalen in alle aangeboden talen.
-                Deze vertalingen zijn slechts ondersteunend, de enige juridische bindende versie hiervan is Engels. 
+                Deze vertalingen zijn slechts ondersteunend, de enige juridische bindende versie hiervan is Engels.
             - >
                 Hoewel queerfobie, transfobie, queer uitsluiting en trollen
                 altijd al begrepen waren als overtredingen van de gebruikersvoorwaarden onder de algemene noemer van ''schending van sociale omgangsvormen'',
@@ -898,7 +899,7 @@ calendar:
         freedressing_day: 'Freedressing Awareness Day'
     banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
-    celebrating_day: 'wordt gevierd op:' 
+    celebrating_day: 'wordt gevierd op:'
     celebrating_week: 'wordt gevierd tijdens:'
     celebrating_month: 'wordt gevierd in:'
     image:

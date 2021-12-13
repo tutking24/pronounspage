@@ -361,6 +361,7 @@ user:
         why: >
             註冊可以讓你管理你的卡（{/@example=像這個}）。
         passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
+        instancePlaceholder: 'Instance' # TODO
     code:
         action: '證實'
         invalid: '不對代碼'
