@@ -79,6 +79,8 @@ export const handlers = {
         const acct = `${r.profile.username}@${r.instance}`;
         return {
             id: acct,
+            // very possibly not really operated by the user
+            email: acct,
             name: acct,
             avatar: r.profile.avatar,
             access_token: r.access_token,
