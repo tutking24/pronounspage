@@ -487,6 +487,7 @@ user:
         why: >
             Registering lets you manage your cards ({/@example=like this one}).
         passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+        instancePlaceholder: 'Instance'
     code:
         action: 'Validate'
         invalid: 'Invalid code.'
