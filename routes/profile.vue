@@ -81,7 +81,7 @@
             <Share/>
         </section>
     </div>
-    <div v-else-if="user.username">
+    <div v-else-if="user.username" class="my-5">
         <h2 class="text-nowrap mb-3">
             <Avatar :user="user"/>
             @{{username}}
@@ -102,6 +102,8 @@
                 <T>profile.empty</T>
             </p>
         </div>
+
+        <a v-for="link in verifiedLinks" :href="link" rel="me">&nbsp;</a>
 
         <Ban :user="user"/>
     </div>
@@ -156,6 +158,9 @@
                 }
 
                 return this.user.username;
+            },
+            verifiedLinks() {
+                return [...new Set(Object.values(this.user.profiles).map(p => Object.keys(p.verifiedLinks || {})).flat())];
             },
         },
         watch: {
