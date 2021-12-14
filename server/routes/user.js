@@ -9,6 +9,7 @@ import avatar from '../avatar';
 import { config as socialLoginConfig, handlers as socialLoginHandlers } from '../social';
 import cookieSettings from "../../src/cookieSettings";
 import {validateCaptcha} from "../captcha";
+import assert from "assert";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -387,6 +388,7 @@ router.post('/user/:id/set-roles', handleErrorAsync(async (req, res) => {
 
 // happens on home
 router.get('/user/social-redirect/:provider/:locale', handleErrorAsync(async (req, res) => {
+    assert(req.locales.hasOwnProperty(req.params.locale));
     req.session.socialRedirect = req.params.locale;
     return res.redirect(`/api/connect/${req.params.provider}?${new URLSearchParams({
         instance: req.query.instance || undefined,

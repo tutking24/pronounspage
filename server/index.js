@@ -6,10 +6,9 @@ import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
-import {handleErrorAsync, isGranted} from "../src/helpers";
+import {isGranted, buildLocaleList} from "../src/helpers";
 import cookieSettings from "../src/cookieSettings";
 import SQL from "sql-template-strings";
-import {createCanvas, loadImage, registerFont} from "canvas";
 
 global.config = loadSuml('config');
 
@@ -66,6 +65,7 @@ app.use(async function (req, res, next) {
         req.rawUser = authenticate(req);
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
         req.isGranted = (area = '', locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
+        req.locales = buildLocaleList();
         req.db = new LazyDatabase();
         req.isUserAllowedToPost = async () => {
             const user = await req.db.get(SQL`SELECT bannedReason FROM users WHERE id = ${req.user.id}`);

@@ -3,7 +3,10 @@ import fs from 'fs';
 export class CacheObject {
     constructor(dir, filename, maxAgeMinutes) {
         const cacheDir = `${__dirname}/../cache/${dir}`
-        fs.mkdirSync(cacheDir, { recursive: true });
+        if (filename.includes('..')) {
+            throw 'Insecure';
+        }
+        fs.mkdirSync(cacheDir + (filename.includes('/') ? '/' + filename.substring(0, filename.lastIndexOf('/')) : ''), { recursive: true });
         this.path = `${cacheDir}/${filename}`;
         this.maxAgeMinutes = maxAgeMinutes;
     }
@@ -14,7 +17,7 @@ export class CacheObject {
         }
 
         if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (new Date() - this.maxAgeMinutes*60*1000)) {
-            const content = fs.readFileSync(this.path);
+            const content = fs.readFileSync(this.path).toString('utf-8');
             return this.path.endsWith('.js') ? JSON.parse(content) : content;
         }
 
@@ -32,6 +35,10 @@ export class CacheObject {
     }
 }
 
+const buildCache = (dir, maxAgeMinutes) => {
+    return (filename) => new CacheObject(dir, filename, maxAgeMinutes);
+}
+
 export const caches = {
     admins: new CacheObject('main', 'admins.js', 24 * 60),
     adminsFooter: new CacheObject('main', 'footer.js', 24 * 60),
@@ -40,4 +47,5 @@ export const caches = {
     terms: new CacheObject('main', 'terms.js', 24 * 60),
     inclusive: new CacheObject('main', 'inclusive.js', 24 * 60),
     names: new CacheObject('main', 'names.js', 24 * 60),
+    pronounNames: buildCache('pronounNames', 24 * 60),
 }
