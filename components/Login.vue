@@ -17,7 +17,7 @@
                                         v-for="(providerOptions, provider) in socialProviders">
                                     <Icon :v="providerOptions.icon || provider" set="b"/>
                                     {{ providerOptions.name }}
-                                    <form :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" 
+                                    <form :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`"
                                             v-if="providerOptions.instanceRequired" class="input-group">
                                         <input type="text" name="instance" class="form-control"
                                                 :placeholder="$t('user.login.instancePlaceholder')">
@@ -92,7 +92,7 @@
 
 <script>
     import jwt from 'jsonwebtoken';
-    import {socialProviders} from "../src/data";
+    import {socialProviders} from "../src/socialProviders";
     import cookieSettings from "../src/cookieSettings";
 
     export default {

@@ -77,7 +77,7 @@
 
                 <ul class="list-unstyled">
                     <li v-for="link in profile.links">
-                        <ProfileLink :link="link" :expand="expandLinks"/>
+                        <ProfileLink :link="link" :expand="expandLinks" :verifiedLinks="profile.verifiedLinks || {}"/>
                     </li>
                 </ul>
             </div>

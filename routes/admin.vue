@@ -209,7 +209,7 @@
 
 <script>
     import {head} from "../src/helpers";
-    import {socialProviders} from "../src/data";
+    import {socialProviders} from "../src/socialProviders";
 
     export default {
         data() {

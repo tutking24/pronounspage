@@ -3,10 +3,11 @@ import SQL from 'sql-template-strings';
 import md5 from "js-md5";
 import {ulid} from "ulid";
 import avatar from "../avatar";
-import {handleErrorAsync} from "../../src/helpers";
+import {handleErrorAsync, now} from "../../src/helpers";
 import { caches }  from "../../src/cache";
 import fs from 'fs';
 import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
+import {socialProviders} from "../../src/socialProviders";
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -23,21 +24,53 @@ const calcAge = birthday => {
     return parseInt(Math.floor(diff / 1000 / 60 / 60 / 24 / 365.25));
 }
 
+const providersWithLinks = Object.keys(socialProviders)
+    .filter(p => socialProviders[p].linkRegex !== undefined);
+
+const verifyLinks = (links, authenticators) => {
+    const verifiedLinks = {};
+    for (let provider of providersWithLinks) {
+        for (let a of authenticators) {
+            if (a.type !== provider) { continue; }
+            const regex = new RegExp(socialProviders[a.type].linkRegex(JSON.parse(a.payload)));
+            for (let link of links) {
+                if (link.match(regex)) {
+                    verifiedLinks[link] = provider;
+                }
+            }
+        }
+    }
+    return verifiedLinks;
+}
+
 const fetchProfiles = async (db, username, self, isAdmin) => {
     const profiles = await db.all(SQL`
-        SELECT profiles.* FROM profiles LEFT JOIN users on users.id == profiles.userId 
+        SELECT profiles.*
+        FROM profiles
+            LEFT JOIN users on users.id == profiles.userId 
         WHERE usernameNorm = ${normalise(username)}
         ORDER BY profiles.locale
     `);
 
+    const linkAuthenticators = await db.all(SQL`
+        SELECT a.type, a.payload
+        FROM authenticators a
+            LEFT JOIN users u on u.id == a.userId
+        WHERE u.usernameNorm = ${normalise(username)}
+        AND a.type IN (`.append(providersWithLinks.map(k => `'${k}'`).join(',')).append(SQL`)
+        AND (a.validUntil IS NULL OR a.validUntil > ${now()})
+    `));
+
     const p = {}
     for (let profile of profiles) {
+        const links = JSON.parse(profile.links);
         p[profile.locale] = {
             names: JSON.parse(profile.names),
             pronouns: JSON.parse(profile.pronouns),
             description: profile.description,
             age: calcAge(profile.birthday),
-            links: JSON.parse(profile.links),
+            links: links,
+            verifiedLinks: verifyLinks(links, linkAuthenticators),
             flags: JSON.parse(profile.flags),
             customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
