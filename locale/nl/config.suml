@@ -70,7 +70,7 @@ inclusive:
 terminology:
     enabled: false
     published: false    
-    categories:
+    categories: # TODO
         - 'sexual orientation'
         - 'romantic orientation'
         - 'tertiary orientation'
@@ -80,7 +80,9 @@ terminology:
         - 'language'
         - 'attraction'
         - 'politics'
-        - 'prejudice'    
+        - 'prejudice' 
+
+    route: 'terminology'
 
 names:
     enabled: false
