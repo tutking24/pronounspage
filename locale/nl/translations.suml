@@ -373,7 +373,7 @@ user:
         why: >
             Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
-        instancePlaceholder: 'Instance' # TODO
+        instancePlaceholder: 'Instantie'
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'

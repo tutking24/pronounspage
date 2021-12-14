@@ -397,7 +397,7 @@ user:
         why: >
             Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
         passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'
-        instancePlaceholder: 'Instance' # TODO
+        instancePlaceholder: 'Instancia'
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
