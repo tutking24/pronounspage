@@ -5,14 +5,21 @@
             {{ providerOptions.name }}
         </span>
         <span v-if="connection === undefined">
-            <form :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" 
-                    v-if="providerOptions.instanceRequired" class="input-group input-group-sm">
-                <input type="text" name="instance" class="form-control"
-                        :placeholder="$t('user.login.instancePlaceholder')">
-                <button type="submit" class="btn btn-outline-secondary">
+            <template v-if="providerOptions.instanceRequired">
+                <form v-if="formShown"
+                      :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`"
+                      class="input-group input-group-sm">
+                    <input type="text" name="instance" class="form-control" autofocus required
+                           :placeholder="$t('user.login.instancePlaceholder')"/>
+                    <button type="submit" class="btn btn-outline-secondary">
+                        <Icon v="link"/>
+                    </button>
+                </form>
+                <button v-else class="badge bg-light text-dark border" @click="formShown = true">
                     <Icon v="link"/>
+                    <T>user.socialConnection.connect</T>
                 </button>
-            </form>
+            </template>
             <a v-else :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
                 <Icon v="link"/>
                 <T>user.socialConnection.connect</T>
@@ -51,6 +58,7 @@
             return {
                 disconnecting: false,
                 homeUrl: process.env.HOME_URL,
+                formShown: false,
             }
         },
         methods: {
