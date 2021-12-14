@@ -172,6 +172,9 @@
                     if (opinion === 2) {
                         opinion = 0.5;
                     }
+                    if (opinion === 3) {
+                        opinion = 0.5;
+                    }
                     if (opinion > mainOpinion) {
                         mainPronoun = pronoun;
                         mainOpinion = opinion;
