@@ -90,9 +90,13 @@
         <div v-if="Object.keys(user.profiles).length" class="list-group">
             <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
                         :locale="locale" :link="`/@${username}`"
-                        class="list-group-item list-group-item-action list-group-item-hoverable">
+                        class="list-group-item list-group-item-action list-group-item-hoverable d-flex flex-column flex-md-row justify-content-between">
                 <div class="h3">
                     {{options.name}}
+                </div>
+                <div class="d-flex align-items-center">
+                    <ForeignPronoun v-for="pronoun in selectMainPronouns(user.profiles[locale].pronouns)" :key="pronoun"
+                                    :pronoun="pronoun" :locale="locale"/>
                 </div>
             </LocaleLink>
         </div>
@@ -191,7 +195,29 @@
                 } catch {
                     clearInterval(this.cardCheckHandle);
                 }
-            }
+            },
+            selectMainPronouns(pronouns) {
+                const best = {
+                    1: [], // yes
+                    0: [], // meh
+                    3: [], // close
+                    2: [], // jokingly
+                }
+                for (let pronoun in pronouns) {
+                    if (!pronouns.hasOwnProperty(pronoun)) { continue; }
+                    const opinion = pronouns[pronoun];
+                    if (best[opinion] !== undefined) {
+                        best[opinion].push(pronoun);
+                    }
+                }
+                for (let opinion in best) {
+                    if (!best.hasOwnProperty(opinion)) { continue; }
+                    if (best[opinion].length) {
+                        return best[opinion];
+                    }
+                }
+                return [];
+            },
         },
         head() {
             return head({

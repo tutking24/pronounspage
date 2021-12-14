@@ -3,6 +3,10 @@ import { loadTsv } from '../loader';
 import {buildPronoun, parsePronouns} from "../../src/buildPronoun";
 import {buildList, handleErrorAsync} from "../../src/helpers";
 import {Example} from "../../src/classes";
+import {caches} from '../../src/cache';
+import md5 from "js-md5";
+import assert from 'assert';
+import fetch from "node-fetch";
 
 const buildExample = e => new Example(
     Example.parse(e.singular),
@@ -64,5 +68,19 @@ router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     }
     return res.json(pronoun.name());
 }));
+
+if (global.config.locale === '_') {
+    router.get('/remote-pronouns-name/:locale/:pronoun*', handleErrorAsync(async (req, res) => {
+        assert(req.locales.hasOwnProperty(req.params.locale));
+        const pronoun = req.params.pronoun + req.params[0];
+        const name = await caches.pronounNames(`${req.params.locale}/${md5(pronoun)}.txt`).fetch(async () => {
+            const res = await (await fetch(`${req.locales[req.params.locale].url}/api/pronouns-name/${encodeURIComponent(pronoun)}`)).json();
+            if (typeof(res) === 'object' && res.error) { return pronoun; }
+            return res;
+        });
+
+        return res.json(name);
+    }));
+}
 
 export default router;
