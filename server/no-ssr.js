@@ -1,6 +1,6 @@
 import isHighLoadTime from './overload';
 
-const USER_AGENT_BOTS = /bot|crawler|baiduspider|80legs|ia_archiver|voyager|curl|wget|yahoo! slurp|mediapartners-google|facebookexternalhit|twitterbot|whatsapp|php|python/;
+const USER_AGENT_BOTS = /bot|crawler|baiduspider|80legs|ia_archiver|voyager|curl|wget|yahoo! slurp|mediapartners-google|facebookexternalhit|twitterbot|whatsapp|php|python|mastodon/;
 const USER_AGENT_BROWSERS = /mozilla|msie|gecko|firefox|edge|opera|safari|netscape|konqueror|android/;
 
 const isBrowser = (userAgent) => {
@@ -10,7 +10,7 @@ const isBrowser = (userAgent) => {
     const isProbablyBot = !!userAgent.toLowerCase().match(USER_AGENT_BOTS);
     const isProbablyBrowser = !!userAgent.toLowerCase().match(USER_AGENT_BROWSERS);
 
-    return isProbablyBrowser || !isProbablyBot;
+    return isProbablyBrowser && !isProbablyBot;
 }
 
 export default function(req, res, next) {
