@@ -49,8 +49,17 @@ router.get('/pronouns/:pronoun*', handleErrorAsync(async (req, res) => {
     );
     if (pronoun) {
         pronoun.examples = addExamples(pronoun, requestExamples(req.query.examples))
+        pronoun.name = pronoun.name();
     }
     return res.json(pronoun);
+}));
+
+router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
+    const pronoun = buildPronoun(
+        parsePronouns(loadTsv('pronouns/pronouns')),
+        req.params.pronoun + req.params[0],
+    );
+    return res.json(pronoun.name());
 }));
 
 export default router;
