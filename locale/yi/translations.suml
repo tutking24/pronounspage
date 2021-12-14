@@ -456,6 +456,7 @@ profile:
         header: 'רעדאַקציע פון די װיזיט־⁠קאַרטל'
         save: 'Save your card'
         defaults: 'Restore defaults' # TODO
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'יאָ'
         jokingly: 'אין אַ שפּאַס'

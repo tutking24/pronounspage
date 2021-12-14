@@ -443,6 +443,7 @@ profile:
         header: 'Visitenkarte-Editor'
         save: 'Visitenkarte speichern'
         defaults: 'Standardwerte wiederherstellen'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'

@@ -451,6 +451,7 @@ profile:
         header: 'Editor de cartões'
         save: 'Salve o cartão'
         defaults: 'Restaurar valores padrão'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'Sim'
         jokingly: 'É brincadeira'
@@ -626,7 +627,7 @@ terms:
             Oi! Lhe escrevemos para informar que atualizámos nossos termos de serviço.
         changes:
             - >
-                Em janeiro vamos começar a vamos deletar em breve as contas não usadas para previr a acumulação dos nomes 
+                Em janeiro vamos começar a vamos deletar em breve as contas não usadas para previr a acumulação dos nomes
                 (quando não há nem carta nem entrada por um mês).
             - >
                 Gostávamos de oferecer um espaço seguro para toda a gente queer independentemente de sua idade
@@ -640,7 +641,7 @@ terms:
                 Todas estas traduções são auxiliares, a versão inglesa continua sendo a única juricamente vinculativa.
             - >
                 Apesar de queerfobia, transfobia, exclusionismo queer e trolling
-                sempre terem sido compreendidos como infrangimentos de Termos de Serviço como «infringir as regras sociais», 
+                sempre terem sido compreendidos como infrangimentos de Termos de Serviço como «infringir as regras sociais»,
                 daqui por diante enlistamos todas elas como proibidas.
 
 admin:

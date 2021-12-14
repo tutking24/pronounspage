@@ -1245,6 +1245,7 @@ profile:
         header: 'Edytor wizytówki'
         save: 'Zapisz wizytówkę'
         defaults: 'Przywróć domyślne'
+        propagate: 'Zapisz tę zmianę we wszystkich swoich wizytówkach, w każdym języku'
     opinion:
         yes: 'Tak'
         jokingly: 'Żartobliwie'
