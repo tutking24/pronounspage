@@ -451,7 +451,7 @@ profile:
         header: 'Editor de cartões'
         save: 'Salve o cartão'
         defaults: 'Restaurar valores padrão'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Salvar alterações em seus cartões em todas as línguas'
     opinion:
         yes: 'Sim'
         jokingly: 'É brincadeira'
