@@ -50,27 +50,22 @@
             </div>
         </div>
         </header>
-        <!-- a banner for every occasion ;)
-        <div v-if="config.locale === 'pl' && new Date() < new Date(2021, 10, 14, 20, 0, 0) && $route.path === '/'" class="container">
-            <div class="alert alert-warning my-3 d-flex align-items-center">
-                <Icon v="spell-check" size="4" class="mx-4"/>
-                <div>
-                    <p class="h4 mb-3">
-                        Naprawmy buga w programach sprawdzających pisownię<br/>
-                        – rodzaj neutralny jest poprawny!
-                    </p>
-                    <p class="mb-0">
-                        <a href="https://chng.it/gFxppJDc" target="_blank" rel="noopener" class="btn btn-primary">
-                            Podpisz naszą petycję!
-                        </a>
-                        <nuxt-link to="/blog/autokorekta" class="btn btn-primary">
-                            Zgłoś błędy w oprogramowaniu!
-                        </nuxt-link>
-                    </p>
-                </div>
+        <div v-if="config.locale === 'zh' && new Date() < new Date(2022, 0, 1, 0, 0, 0) && $route.path === '/'" class="container">
+            <div class="alert alert-info my-3">
+                <p class="h4">
+                    <Icon v="people-carry"/>
+                    Help needed!
+                </p>
+                <p class="mb-0">
+                    If you speak Mandarin
+                    (preferably traditional spelling, since simplified can be generated out of it, but not the other way around)
+                    and you'd like to help us with translating new features of zh.pronouns.page,
+                    please send us an email to <a href="mailto:contact@pronouns.page" target="_blank" rel="noopener">contact@pronouns.page</a>
+                    or DM us on Twitter <a href="https://twitter.com/PronounsPage" target="_blank" rel="noopener">@PronounsPage</a>
+                    😉
+                </p>
             </div>
         </div>
-        -->
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
