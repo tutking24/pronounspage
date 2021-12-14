@@ -59,6 +59,9 @@ router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
         parsePronouns(loadTsv('pronouns/pronouns')),
         req.params.pronoun + req.params[0],
     );
+    if (!pronoun) {
+        return res.status(404).json({error: 'Not found'});
+    }
     return res.json(pronoun.name());
 }));
 
