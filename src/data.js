@@ -2,14 +2,6 @@ import {Source, Example, NounTemplate, PronounGroup, PronounLibrary, Name, Perso
 import { buildDict, buildList } from './helpers';
 import { parsePronouns } from './buildPronoun';
 
-export const socialProviders = {
-    twitter: { name: 'Twitter' },
-    facebook: { name: 'Facebook' },
-    google: { name: 'Google' },
-    discord: { name: 'Discord' },
-    mastodon: { name: 'Mastodon', instanceRequired: true },
-}
-
 import pronounsRaw from '../data/pronouns/pronouns.tsv';
 export const pronouns = parsePronouns(pronounsRaw);
 

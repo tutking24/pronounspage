@@ -71,6 +71,10 @@ const LINK_PROVIDERS = {
         icon: 'twitch',
         iconSet: 'b',
     },
+    mastodon: {
+        icon: 'mastodon',
+        iconSet: 'b',
+    },
 };
 
 export default {
@@ -83,16 +87,24 @@ export default {
                 cake: LINK_PROVIDERS.cake,
             };
         },
-        beautifyLink(link, expand = false) {
+        beautifyLink(link, expand = false, verifiedBy = undefined) {
             for (let name in LINK_PROVIDERS) {
                 if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
                 const provider = LINK_PROVIDERS[name];
-                const m = link.match(provider.regex);
-                if (m) {
+                if (provider.regex) {
+                    const m = link.match(provider.regex);
+                    if (m) {
+                        return {
+                            ...provider,
+                            text: expand ? clearUrl(link) : m[1],
+                        };
+                    }
+                }
+                if (verifiedBy === name) {
                     return {
                         ...provider,
-                        text: expand ? clearUrl(link) : m[1],
-                    };
+                        text: clearUrl(link),
+                    }
                 }
             }
 

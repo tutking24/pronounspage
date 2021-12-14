@@ -170,7 +170,7 @@
 </template>
 
 <script>
-    import {socialProviders} from "../src/data";
+    import {socialProviders} from "../src/socialProviders";
     import {gravatar} from "../src/helpers";
     import cookieSettings from "../src/cookieSettings";
     import {mapState} from "vuex";
