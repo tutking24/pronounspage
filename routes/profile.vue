@@ -210,8 +210,7 @@
                         best[opinion].push(pronoun);
                     }
                 }
-                for (let opinion in best) {
-                    if (!best.hasOwnProperty(opinion)) { continue; }
+                for (let opinion of [1, 0, 3, 2]) {
                     if (best[opinion].length) {
                         return best[opinion];
                     }
