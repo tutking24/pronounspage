@@ -457,6 +457,7 @@ profile:
         header: 'カード編集'
         save: 'カード保存'
         defaults: '既定に復元'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: '好き'
         jokingly: '冗談っぽく'

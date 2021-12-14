@@ -435,6 +435,7 @@ profile:
         header: '卡編輯'
         save: '保存卡'
         defaults: 'Restore defaults' # TODO
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: '至愛'
         jokingly: '諧謔'

@@ -456,6 +456,7 @@ profile:
         header: 'Editor de tarjetas'
         save: 'Guarda tu tarjeta'
         defaults: 'Restaurar valores predeterminados'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'Sí'
         jokingly: 'En broma'

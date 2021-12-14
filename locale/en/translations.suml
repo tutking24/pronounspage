@@ -552,6 +552,7 @@ profile:
         header: 'Card editor'
         save: 'Save your card'
         defaults: 'Restore defaults'
+        propagate: 'Propagate this change to your cards in all languages'
     opinion:
         yes: 'Yes'
         jokingly: 'Jokingly'

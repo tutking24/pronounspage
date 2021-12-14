@@ -30,6 +30,7 @@
                 <div class="form-group">
                     <label for="teamName">Team page display name:</label>
                     <input class="form-control" name="teamName" maxlength="36" v-model="teamName"/>
+                    <PropagateCheckbox field="teamName" :before="beforeChanges.teamName" :after="teamName" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </div>
 
                 <hr/>
@@ -44,6 +45,7 @@
                 <div class="form-group">
                     <label for="footerName">Footer display name:</label>
                     <input class="form-control" name="footerName" maxlength="36" v-model="footerName"/>
+                    <PropagateCheckbox field="footerName" :before="beforeChanges.footerName" :after="footerName" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </div>
 
                 <div class="form-group">
@@ -96,6 +98,7 @@
                     <T>profile.names</T>
                 </h3>
                 <OpinionListInput v-model="names"/>
+                <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
             <section class="form-group">
@@ -131,6 +134,7 @@
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
                     <Flag :name="s.desc.split('|')[0]" :alt="s.desc.split('|')[1]" :img="`/flags/${s.v}.png`"/>
                 </ButtonList>
+                <PropagateCheckbox field="flags" :before="beforeChanges.flags" :after="flags" v-if="otherProfiles > 0" @change="propagateChanged"/>
 
                 <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
                     <summary class="px-3 py-2">
@@ -140,7 +144,7 @@
                         <ImageWidgetRich v-model="customFlags" sizes="flag"/>
                     </div>
                 </details>
-
+                <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 <Answer question="flags" small/>
             </section>
 
@@ -152,6 +156,7 @@
                 <ListInput v-model="links" v-slot="s">
                     <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="s.update(s.val)" @change="s.update(s.val)" required/>
                 </ListInput>
+                <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 <p class="small text-muted mb-0">
                     <Icon v="ad"/>
                     <T>profile.linksRecommended</T>
@@ -179,6 +184,7 @@
                 <div class="input-group mb-3">
                     <datepicker v-model="birthday" inline :disabled-dates="disabledDates" initial-view="year"/>
                 </div>
+                <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
             <section class="form-group">
@@ -223,6 +229,73 @@
         }
     }))
 
+    const buildProfile = (profiles, currentLocale) => {
+        for (let locale in profiles) {
+            if (!profiles.hasOwnProperty(locale)) {
+                continue;
+            }
+            if (locale === currentLocale) {
+                const profile = profiles[locale];
+                return {
+                    names: dictToList(profile.names),
+                    pronouns: dictToList(profile.pronouns),
+                    description: profile.description,
+                    birthday: profile.birthday,
+                    links: Object.keys(profile.links).length ? profile.links : [],
+                    flags: profile.flags,
+                    customFlags: profile.customFlags,
+                    words: profile.words.map(x => dictToList(x)),
+                    teamName: profile.teamName,
+                    footerName: profile.footerName,
+                    footerAreas: profile.footerAreas,
+                    credentials: profile.credentials,
+                    credentialsLevel: profile.credentialsLevel,
+                    credentialsName: profile.credentialsName,
+                };
+            }
+        }
+
+        for (let locale in profiles) {
+            if (!profiles.hasOwnProperty(locale)) {
+                continue;
+            }
+            const profile = profiles[locale];
+            return {
+                names: dictToList(profile.names),
+                pronouns: [],
+                description: '',
+                birthday: profile.birthday,
+                links: Object.keys(profile.links).length ? profile.links : [],
+                flags: profile.flags.filter(f => !f.startsWith('-')),
+                customFlags: profile.customFlags,
+                words: [...defaultWords],
+                teamName: profile.teamName,
+                footerName: profile.footerName,
+                footerAreas: [],
+                credentials: [],
+                credentialsLevel: null,
+                credentialsName: null,
+            };
+        }
+
+        return {
+            names: [],
+            pronouns: [],
+            description: '',
+            birthday: null,
+            links: [],
+            flags: [],
+            customFlags: {},
+            words: [...defaultWords],
+            teamName: '',
+            footerName: '',
+            footerAreas: [],
+            credentials: [],
+            credentialsLevel: null,
+            credentialsName: null,
+        };
+    };
+
     export default {
         mixins: [link],
         data() {
@@ -232,6 +305,7 @@
                     to: minBirthdate,
                     from: maxBirthdate,
                 },
+                propagate: [],
             };
         },
         async asyncData({ app, store }) {
@@ -243,69 +317,12 @@
                 authorization: 'Bearer ' + store.state.token,
             } })).profiles;
 
-            for (let locale in profiles) {
-                if (!profiles.hasOwnProperty(locale)) {
-                    continue;
-                }
-                if (locale === app.context.env.LOCALE) {
-                    const profile = profiles[locale];
-                    return {
-                        names: dictToList(profile.names),
-                        pronouns: dictToList(profile.pronouns),
-                        description: profile.description,
-                        birthday: profile.birthday,
-                        links: Object.keys(profile.links).length ? profile.links : [],
-                        flags: profile.flags,
-                        customFlags: profile.customFlags,
-                        words: profile.words.map(x => dictToList(x)),
-                        teamName: profile.teamName,
-                        footerName: profile.footerName,
-                        footerAreas: profile.footerAreas,
-                        credentials: profile.credentials,
-                        credentialsLevel: profile.credentialsLevel,
-                        credentialsName: profile.credentialsName,
-                    };
-                }
-            }
-
-            for (let locale in profiles) {
-                if (!profiles.hasOwnProperty(locale)) {
-                    continue;
-                }
-                const profile = profiles[locale];
-                return {
-                    names: dictToList(profile.names),
-                    pronouns: [],
-                    description: '',
-                    birthday: profile.birthday,
-                    links: Object.keys(profile.links).length ? profile.links : [],
-                    flags: profile.flags.filter(f => !f.startsWith('-')),
-                    customFlags: profile.customFlags,
-                    words: [...defaultWords],
-                    teamName: profile.teamName,
-                    footerName: profile.footerName,
-                    footerAreas: [],
-                    credentials: [],
-                    credentialsLevel: null,
-                    credentialsName: null,
-                };
-            }
+            const profile = buildProfile(profiles, app.context.env.LOCALE);
 
             return {
-                names: [],
-                pronouns: [],
-                description: '',
-                birthday: null,
-                links: [],
-                flags: [],
-                customFlags: {},
-                words: [...defaultWords],
-                teamName: '',
-                footerName: '',
-                footerAreas: [],
-                credentials: [],
-                credentialsLevel: null,
-                credentialsName: null,
+                ...profile,
+                beforeChanges: JSON.parse(JSON.stringify(profile)),
+                otherProfiles: Object.keys(profiles).filter(l => l !== app.context.env.LOCALE).length,
             };
         },
         mounted() {
@@ -327,12 +344,15 @@
                         flags: [...this.flags],
                         customFlags: {...this.customFlags},
                         words: this.words.map(x => listToDict(x)),
+
                         teamName: this.teamName,
                         footerName: this.footerName,
                         footerAreas: this.footerAreas,
                         credentials: this.credentials,
                         credentialsLevel: this.credentialsLevel,
                         credentialsName: this.credentialsName,
+
+                        propagate: this.propagate,
                     });
                     this.$router.push(`/@${this.$user().username}`);
                 } finally {
@@ -365,7 +385,13 @@
                 await this.$confirm();
 
                 this.words = [...defaultWords];
-            }
+            },
+            propagateChanged(field, checked) {
+                this.propagate = this.propagate.filter(f => f !== field);
+                if (checked) {
+                    this.propagate.push(field);
+                }
+            },
         },
         computed: {
             mainPronoun() {

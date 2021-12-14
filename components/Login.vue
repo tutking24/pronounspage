@@ -12,7 +12,7 @@
                     <div class="row flex-row-reverse">
                         <div class="col-12 col-md-4">
                             <div class="btn-group-vertical w-100 mb-3">
-                                <SocialLogin v-for="(providerOptions, provider) in socialProviders"
+                                <SocialLogin v-for="(providerOptions, provider) in socialProviders" :key="provider"
                                              :provider="provider" :options="providerOptions"/>
                             </div>
                         </div>

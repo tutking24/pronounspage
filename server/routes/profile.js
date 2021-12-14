@@ -200,6 +200,62 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         )`);
     }
 
+    if ((req.body.propagate || []).includes('teamName')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET teamName = ${req.isGranted() ? req.body.teamName || null : ''}
+            WHERE userId = ${req.user.id} AND teamName != '' AND teamName IS NOT NULL;
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('footerName')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET footerName = ${req.isGranted() ? req.body.footerName || null : ''}
+            WHERE userId = ${req.user.id} AND footerName != '' AND footerName IS NOT NULL;
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('names')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET names = ${JSON.stringify(req.body.names)}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('flags')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET flags = ${JSON.stringify(req.body.flags)}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('customFlags')) {
+        await req.db.get(SQL`UPDATE profiles
+            customFlags = ${JSON.stringify(req.body.customFlags)}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('links')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET links = ${JSON.stringify(req.body.links.filter(x => !!x))}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('links')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET links = ${JSON.stringify(req.body.links.filter(x => !!x))}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('birthday')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET birthday = ${sanitiseBirthday(req.body.birthday || null)}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
     const sus = [...isSuspicious(req.body)];
     if (sus.length && !await hasAutomatedReports(req.db, req.user.id)) {
         await req.db.get(SQL`

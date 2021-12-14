@@ -453,6 +453,7 @@ profile:
         header: 'Kort redigerer'
         save: 'Lagre kort'
         defaults: 'Restaurer originale'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'
