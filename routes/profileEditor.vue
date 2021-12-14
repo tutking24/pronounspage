@@ -322,7 +322,7 @@
                         names: listToDict(this.names),
                         pronouns: listToDict(this.pronouns),
                         description: this.description,
-                        birthday: this.birthday ? formatDate(this.birthday) : null,
+                        birthday: formatDate(this.birthday),
                         links: [...this.links],
                         flags: [...this.flags],
                         customFlags: {...this.customFlags},

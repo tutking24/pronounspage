@@ -6,6 +6,8 @@ module.exports = {
     minBirthdate,
     maxBirthdate,
     formatDate(bd) {
+        if (!bd) { return null; }
+        if (typeof(bd) === 'string') { return bd; }
         return `${bd.getFullYear()}-${('0' + (bd.getMonth() + 1)).slice(-2)}-${('0' + bd.getDate()).slice(-2)}`;
     },
     parseDate(bd) {
