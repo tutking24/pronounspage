@@ -191,7 +191,7 @@ faq:
     headerLong: 'Veelgestelde vragen'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'What is nonbinary?' # TODO
             answer:
                 - >
                     Gender is way more complicated than just a simple distinction male/female.
@@ -228,7 +228,7 @@ faq:
                 - >
                     "Rare voornaamwoorden" zijn niet raar, maar gewoon een kwestie van wennen.
         how-to-know:
-            question: 'Hoe kom ik erachter hoe ik iemand moet aanspreken?'
+            question: 'Hoe kom ik erachter hoe ik iemand moet aanspreken?' # TODO
             answer:
                 - >
                     Je kunt het gewoon vragen! Ja, misschien is het een beetje ongemakkelijk, maar hoe vaker je het doet, hoe minder ongemakkelijk het wordt.
@@ -256,7 +256,7 @@ faq:
                     Ja! Door miljoenen non-binaire personen over de hele wereld.
                     Voor elk van de voornaamwoorden dat hier beschreven staat is er iemand die ze ook daadwerkelijk gebruikt in het dagelijks leven.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: 'Are those nonbinary pronouns approved by some kind of authority?' # TODO
             answer:
                 - >
                     Language is not some kind of god-given, ancient magic set in stone.
