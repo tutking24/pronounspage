@@ -482,7 +482,7 @@ profile:
         header: 'Редактор карточек'
         save: 'Сохранить Вашу карточку'
         defaults: 'Вернуть слова по умолчанию'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Изменения в этой колонке будут распространяться на все языки'
     opinion:
         yes: 'Да'
         jokingly: 'В шутку'
