@@ -2,7 +2,7 @@ export const socialProviders = {
     mastodon: {
         name: 'Mastodon',
         instanceRequired: true,
-        linkRegex: (p) => `^https?://(?:www.)?${p.name.split('@')[1]}/(?:web/)?@${p.name.split('@')[0]}/?$`,
+        linkRegex: (p) => `^https?://(?:www.)?${p.name.split('@')[1]}/(?:(?:web/)?@|users/)?${p.name.split('@')[0]}/?$`,
     },
     twitter: {
         name: 'Twitter',
