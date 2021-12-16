@@ -9,7 +9,9 @@
             </router-link>
         </p>
 
-        <Spelling :text="content"/>
+        <Twemoji>
+            <Spelling :text="content"/>
+        </Twemoji>
 
         <Separator icon="heart"/>
 
