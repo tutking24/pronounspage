@@ -21,7 +21,7 @@
                         </nuxt-link>
                     </li>
                     <li v-for="link in links" :key="link.url" class="mb-2">
-                        <a :href="link.url">
+                        <a :href="link.url" target="_blank" rel="me">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                             {{link.headline}}
                         </a>
@@ -33,7 +33,7 @@
                 </p>
                 <ul class="list-unstyled mb-4">
                     <li v-for="link in supportLinks" :key="link.url" class="mb-2">
-                        <a :href="link.url">
+                        <a :href="link.url" target="_blank" rel="me">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                             {{link.headline}}
                         </a>
@@ -104,6 +104,10 @@
             <EasterEgg/>
         </div>
     </footer>
+    <div v-else>
+        <a :href="link.url" v-for="link in links" :key="link.url" target="_blank" rel="me">&nbsp;</a>
+        <a v-for="link in supportLinks" :key="link.url"  :href="link.url" target="_blank" rel="me">&nbsp;</a>
+    </div>
 </template>
 
 <script>
