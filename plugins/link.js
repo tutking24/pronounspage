@@ -75,6 +75,10 @@ const LINK_PROVIDERS = {
         icon: 'mastodon',
         iconSet: 'b',
     },
+    matrix: {
+        regex: '^https?://(?:www.)?matrix\\.to/#/([^/?]+)',
+        icon: 'https://raw.githubusercontent.com/vector-im/logos/master/matrix/matrix-favicon.png',
+    },
 };
 
 export default {

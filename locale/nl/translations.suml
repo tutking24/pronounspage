@@ -449,7 +449,7 @@ profile:
         header: 'Kaart editor'
         save: 'Sla jouw kaart op'
         defaults: 'Zet terug naar standaardwaarden'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Sla deze verandering op voor jouw kaarten in alle talen'
     opinion:
         yes: 'Ja'
         jokingly: 'Voor de grap'

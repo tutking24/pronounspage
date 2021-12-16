@@ -449,7 +449,7 @@ profile:
         header: 'Éditeur de carte'
         save: 'Sauvegarder votre carte'
         defaults: 'Restaurer les valeurs par défaut'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Sauvegarder ce changement sur vos cartes dans tous les langages'
     opinion:
         yes: 'Oui'
         jokingly: 'Pour plaisanter'
