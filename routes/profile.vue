@@ -212,7 +212,7 @@
                 }
                 for (let opinion of [1, 0, 3, 2]) {
                     if (best[opinion].length) {
-                        return best[opinion];
+                        return best[opinion].slice(0, 3);
                     }
                 }
                 return [];
