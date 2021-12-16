@@ -69,7 +69,7 @@ inclusive:
 
 terminology:
     enabled: false
-    published: false    
+    published: false
     categories: # TODO
         - 'sexual orientation'
         - 'romantic orientation'
@@ -80,7 +80,7 @@ terminology:
         - 'language'
         - 'attraction'
         - 'politics'
-        - 'prejudice' 
+        - 'prejudice'
 
     route: 'terminology'
 
@@ -104,30 +104,18 @@ links:
     links: []
     mediaGuests: []
     mediaMentions: []
-    socials:
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/PronounsPage'
-            headline: '@PronounsPage'
     recommended: []
     blog: false
 
 contact:
     enabled: true
     route: 'contact'
-    contacts:
-        -
-            icon: 'envelope'
-            url: 'mailto:contact@pronouns.page'
-            headline: 'contact@pronouns.page'
     team:
         enabled: true
         route: 'team'  # TODO
 
 support:
     enabled: true
-    links: []
 
 user:
     enabled: true

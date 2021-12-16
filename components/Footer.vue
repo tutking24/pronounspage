@@ -20,7 +20,7 @@
                             <T>faq.headerLong</T>
                         </nuxt-link>
                     </li>
-                    <li v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url" class="mb-2">
+                    <li v-for="link in links" :key="link.url" class="mb-2">
                         <a :href="link.url">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                             {{link.headline}}
@@ -32,7 +32,7 @@
                     <T>support.header</T><T>quotation.colon</T>
                 </p>
                 <ul class="list-unstyled mb-4">
-                    <li v-for="link in supportLinks()" :key="link.url" class="mb-2">
+                    <li v-for="link in supportLinks" :key="link.url" class="mb-2">
                         <a :href="link.url">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                             {{link.headline}}
@@ -107,9 +107,14 @@
 </template>
 
 <script>
-import support from '../plugins/support';
+import {getContactLinks, getSocialLinks, getSupportLinks} from '../src/contact';
 
 export default {
-    mixins: [support],
+    data() {
+        return {
+            links: [...getContactLinks(this.config), ...getSocialLinks(this.config)],
+            supportLinks: [...getSupportLinks(this.config)],
+        };
+    },
 }
 </script>

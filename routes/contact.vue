@@ -12,7 +12,7 @@
                 <Icon v="map-marker-question"/>
                 <T>faq.header</T>
             </nuxt-link>
-            <a v-for="link in [...config.contact.contacts, ...config.links.socials]" :key="link.url"
+            <a v-for="link in links" :key="link.url"
                 :href="link.url" target="_blank" rel="noopener"
                 class="btn btn-outline-primary border m-1">
                     <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
@@ -66,8 +66,14 @@
 
 <script>
     import { head } from "../src/helpers";
+    import {getContactLinks, getSocialLinks} from '../src/contact';
 
     export default {
+        data() {
+            return {
+                links: [...getContactLinks(this.config), ...getSocialLinks(this.config)],
+            };
+        },
         head() {
             return head({
                 title: this.$t('contact.header'),
