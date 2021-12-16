@@ -61,7 +61,7 @@ const publishers = {
         }
 
         try {
-            const tweetResponse = await client.post('statuses', { status: tweet, media_ids: mediaIds });
+            const tweetResponse = await client.post('statuses', { status: tweet, media_ids: mediaIds, visibility: 'unlisted' });
             console.log(tweetResponse);
         } catch (error) {
             console.error(error);
