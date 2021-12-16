@@ -34,6 +34,12 @@ export const socialLinks = {
             headline: 'fb.com/neutratywy',
         },
 
+        mastodon: {
+            icon: 'mastodon',
+            iconSet: 'b',
+            url: 'https://tech.lgbt/@PronounsPage',
+            headline: '@PronounsPage@tech.lgbt',
+        },
         twitter: {
             icon: 'twitter',
             iconSet: 'b',
@@ -43,6 +49,12 @@ export const socialLinks = {
     },
 
     calendar: {
+        mastodon: {
+            icon: 'mastodon',
+            iconSet: 'b',
+            url: 'https://tech.lgbt/@QueerCalendar',
+            headline: '@QueerCalendar@tech.lgbt',
+        },
         twitter: {
             icon: 'twitter',
             iconSet: 'b',

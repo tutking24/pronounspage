@@ -11,18 +11,18 @@
                 </nuxt-link>
             </div>
             <div>
-                <p class="mb-0">
-                    Twitter Bot:
+                <p class="h5">
+                    Bots:
                 </p>
                 <p class="mb-0">
-                    <a href="https://twitter.com/CalendarQueer" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
-                        <Icon v="twitter" set="b"/>
-                        @CalendarQueer
+                    <a v-for="bot in bots" :href="bot.url" target="_blank" rel="noopener" class="btn btn-outline-primary m-1">
+                        <Icon :v="bot.icon" :set="bot.iconSet || 'b'"/>
+                        {{bot.headline}}
                     </a>
                 </p>
             </div>
             <div v-if="!day">
-                <p class="mb-0">
+                <p class="h5">
                     iCalendar:
                 </p>
                 <button :class="['btn', clipboardFeedback ? 'btn-success' : 'btn-outline-primary', 'm-1']" ref="clipboard" :data-clipboard-text="icsLink">
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div>
-                <p class="mb-0">
+                <p class="h5">
                     <T>calendar.image.header</T><T>quotation.colon</T>
                 </p>
                 <p class="mb-0" v-if="day">
@@ -62,6 +62,7 @@
 
 <script>
     import ClipboardJS from 'clipboard';
+    import {socialLinks} from '../src/contact';
 
     export default {
         props: {
@@ -71,6 +72,10 @@
         data() {
             return {
                 clipboardFeedback: false,
+                bots: [
+                    socialLinks.calendar.mastodon,
+                    socialLinks.calendar.twitter,
+                ],
             }
         },
         mounted() {
