@@ -85,7 +85,7 @@ function* getLink(links, feature, locale) {
     for (let key in featureLinks) {
         if (!featureLinks.hasOwnProperty(key)) { continue; }
         let [, localesAllowed] = key.split('_');
-        if (localesAllowed === undefined || localesAllowed.split(',').includes(locale)) {
+        if (localesAllowed === undefined || locale === '_' || localesAllowed.split(',').includes(locale)) {
             yield featureLinks[key];
         }
     }
