@@ -61,7 +61,7 @@ router.get('/pronouns/:pronoun*', handleErrorAsync(async (req, res) => {
 router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     const pronoun = buildPronoun(
         parsePronouns(loadTsv('pronouns/pronouns')),
-        decodeURIComponent(req.params.pronoun + req.params[0]),
+        req.params.pronoun + req.params[0],
     );
     if (!pronoun) {
         return res.status(404).json({error: 'Not found'});
