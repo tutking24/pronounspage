@@ -61,7 +61,7 @@ router.get('/pronouns/:pronoun*', handleErrorAsync(async (req, res) => {
 router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     const pronoun = buildPronoun(
         parsePronouns(loadTsv('pronouns/pronouns')),
-        decodeURIComponent(req.params.pronoun + req.params[0]),
+        req.params.pronoun + req.params[0],
     );
     if (!pronoun) {
         return res.status(404).json({error: 'Not found'});
@@ -74,7 +74,7 @@ if (global.config.locale === '_') {
         assert(req.locales.hasOwnProperty(req.params.locale));
         const pronoun = req.params.pronoun + req.params[0];
         const name = await caches.pronounNames(`${req.params.locale}/${md5(pronoun)}.txt`).fetch(async () => {
-            const res = await (await fetch(`${req.locales[req.params.locale].url}/api/pronouns-name/${encodeURIComponent(pronoun)}`)).json();
+            const res = await (await fetch(`${req.locales[req.params.locale].url}/api/pronouns-name/${pronoun}`)).json();
             if (typeof(res) === 'object' && res.error) { return pronoun; }
             return res;
         });
