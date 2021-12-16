@@ -42,6 +42,8 @@ const buildPronounFromTemplate = (key, template) => {
 }
 
 export const buildPronoun = (pronouns, path) => {
+    const config = global.config || process.env.CONFIG;
+
     const pronounsWithAliases = addAliasesToPronouns(pronouns);
 
     const pronounStr = path.split(',');
@@ -59,23 +61,23 @@ export const buildPronoun = (pronouns, path) => {
         ? base
         : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null));
 
-    if (!process.env.CONFIG) {
+    if (!config) {
         return pronoun;
     }
 
-    if (!pronoun && process.env.CONFIG.pronouns.emoji !== false && isEmoji(path)) {
-        pronoun = buildPronounFromTemplate(path, process.env.CONFIG.pronouns.emoji);
+    if (!pronoun && config.pronouns.emoji !== false && isEmoji(path)) {
+        pronoun = buildPronounFromTemplate(path, config.pronouns.emoji);
     }
 
-    if (!pronoun && process.env.CONFIG.pronouns.null && process.env.CONFIG.pronouns.null.morphemes && path.startsWith(':') && path.length < 12) {
-        pronoun = buildPronounFromTemplate(path.substring(1), process.env.CONFIG.pronouns.null);
+    if (!pronoun && config.pronouns.null && config.pronouns.null.morphemes && path.startsWith(':') && path.length < 12) {
+        pronoun = buildPronounFromTemplate(path.substring(1), config.pronouns.null);
     }
 
     const p = path.split('/').filter(s => !!s);
-    if (!pronoun && process.env.CONFIG.pronouns.slashes !== false) {
-        const slashMorphemes = process.env.CONFIG.pronouns.slashes === true
+    if (!pronoun && config.pronouns.slashes !== false) {
+        const slashMorphemes = config.pronouns.slashes === true
             ? MORPHEMES
-            : process.env.CONFIG.pronouns.slashes;
+            : config.pronouns.slashes;
         if (slashMorphemes && p.length === slashMorphemes.length) {
             pronoun = new Pronoun(
                 `${p[0]}/${p[1]}`,
