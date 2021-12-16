@@ -81,35 +81,18 @@ links:
     links: []
     mediaGuests: []
     mediaMentions: []
-    socials:
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/PronounsPage'
-            headline: '@PronounsPage'
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/CalendarQueer'
-            headline: '@CalendarQueer'
     recommended: []
     blog: false
 
 contact:
     enabled: true
     route: 'contato'
-    contacts:
-        -
-            icon: 'envelope'
-            url: 'mailto:contact@pronouns.page'
-            headline: 'contact@pronouns.page'
     team:
         enabled: true
         route: 'team'
 
 support:
     enabled: true
-    links: []
 
 user:
     enabled: true

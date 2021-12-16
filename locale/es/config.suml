@@ -119,35 +119,18 @@ links:
             url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
             headline: 'El lenguaje inclusivo de lxs polacxs – Ausir y Dante en un podcast <strong>Proyecto Polonia</strong>'
     mediaMentions: []
-    socials:
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/PronounsPage'
-            headline: '@PronounsPage'
-        -
-            icon: 'twitter'
-            iconSet: 'b'
-            url: 'https://twitter.com/CalendarQueer'
-            headline: '@CalendarQueer'
     recommended: []
     blog: false
 
 contact:
     enabled: true
     route: 'contacto'
-    contacts:
-        -
-            icon: 'envelope'
-            url: 'mailto:contact@pronouns.page'
-            headline: 'contact@pronouns.page'
     team:
         enabled: true
         route: 'team'  # TODO
 
 support:
     enabled: true
-    links: []
 
 user:
     enabled: true
