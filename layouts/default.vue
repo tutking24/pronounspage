@@ -1,6 +1,6 @@
 <template>
-    <div class="d-flex flex-column vh-100 body">
-        <div class="flex-grow-1">
+    <div class="body">
+        <div class="flex-grow-1 vh">
             <Header/>
             <main class="container">
                 <Nuxt/>
@@ -66,5 +66,9 @@
         .sticky-top {
             top: $header-height - 1px;
         }
+    }
+
+    .vh {
+        min-height: calc(100vh - #{$header-height});
     }
 </style>
