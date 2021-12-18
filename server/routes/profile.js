@@ -263,8 +263,8 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const sus = [...isSuspicious(req.body)];
     if (sus.length && !await hasAutomatedReports(req.db, req.user.id)) {
         await req.db.get(SQL`
-            INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled)
-            VALUES (${ulid()}, ${req.user.id}, null, 1, ${sus.join(', ')}, 0);
+            INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled, snapshot)
+            VALUES (${ulid()}, ${req.user.id}, null, 1, ${sus.join(', ')}, 0, ${await profilesSnapshot(req.db, normalise(req.params.username))});
         `);
     }
 
