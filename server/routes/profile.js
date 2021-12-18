@@ -43,7 +43,7 @@ const verifyLinks = (links, authenticators) => {
     return verifiedLinks;
 }
 
-const fetchProfiles = async (db, username, self, isAdmin) => {
+const fetchProfiles = async (db, username, self) => {
     const profiles = await db.all(SQL`
         SELECT profiles.*
         FROM profiles
@@ -87,6 +87,10 @@ const fetchProfiles = async (db, username, self, isAdmin) => {
     }
     return p;
 };
+
+export const profilesSnapshot = async (db, username) => {
+    return JSON.stringify(await fetchProfiles(db, username, true), null, 4);
+}
 
 const susRegexes = fs.readFileSync(__dirname + '/../../sus.txt').toString('utf-8').split('\n').filter(x => !!x);
 
@@ -288,8 +292,8 @@ router.post('/profile/report/:username', handleErrorAsync(async (req, res) => {
     }
 
     await req.db.get(SQL`
-        INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled)
-        VALUES (${ulid()}, ${user.id}, ${req.user.id}, 0, ${req.body.comment}, 0);
+        INSERT INTO reports (id, userId, reporterId, isAutomatic, comment, isHandled, snapshot)
+        VALUES (${ulid()}, ${user.id}, ${req.user.id}, 0, ${req.body.comment}, 0, ${await profilesSnapshot(req.db, normalise(req.params.username))});
     `);
 
     return res.json('OK');

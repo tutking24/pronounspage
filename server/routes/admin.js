@@ -7,6 +7,7 @@ import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
 import { caches }  from "../../src/cache";
 import mailer from "../../src/mailer";
+import {profilesSnapshot} from "./profile";
 
 const router = Router();
 
@@ -155,7 +156,8 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
             UPDATE users
             SET bannedReason = ${req.body.reason},
                 bannedTerms = ${req.body.terms.join(',')},
-                bannedBy = ${req.user.id}
+                bannedBy = ${req.user.id},
+                banSnapshot = ${await profilesSnapshot(req.db, normalise(req.params.username))}
             WHERE id = ${user.id}
         `);
         mailer(user.email, 'ban', {reason: req.body.reason});

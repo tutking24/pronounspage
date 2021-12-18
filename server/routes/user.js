@@ -21,7 +21,7 @@ const normalise = s => s.trim().toLowerCase();
 const isSpam = (email) => {
     const noDots = email.replace(/\./g, '');
     return noDots === 'javierfranciscotmp@gmailcom'
-        || noDots === 'leahmarykathryntmp@gmail.com'
+        || noDots === 'leahmarykathryntmp@gmailcom'
         || email.includes('dogazu')
         || email.includes('narodowcy.net')
         || email.length > 128;
