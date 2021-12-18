@@ -1212,6 +1212,23 @@ user:
         refresh: 'Odśwież'
         disconnect: 'Rozłącz'
         disconnectConfirm: 'Czy na pewno chcesz usunąć to połączenie? (Zawsze możesz logować się przez maila %email%)'
+    mfa:
+        header: 'Uwierzytelnianie wieloskładnikowe (MFA)'
+        init: >
+            Zeskanuj poniższy kod QR (lub wklej kod tekstowy pod spodem) do swojej apki TOTP (np. {https://authy.com/=Authy}),
+            a następnie wpisz wstępny token, jaki zostanie wygenerowany.
+        recovery:
+            header: 'Kod odzyskiwania'
+            save: >
+                Zapisz poniższe kody odzyskiwania w bezpiecznym miejscu.
+                Będziesz mogłx ich użyć, aby obejść MFA na wypadek utraty urządzenia uwierzytelniającego.
+            saved: 'OK, zapisane!'
+            enter: 'Wpisz kod odzyskiwania'
+        cancel: 'Anuluj logowanie'
+        enabled: 'Włączone'
+        enable: 'Włącz MFA'
+        disable: 'Wyłącz MFA'
+        disableConfirm: 'Czy na pewno chcesz wyłączyć MFA?'
 
 profile:
     description: 'Opis'

@@ -11,6 +11,7 @@ import cookieSettings from "../src/cookieSettings";
 import SQL from "sql-template-strings";
 
 global.config = loadSuml('config');
+global.translations = loadSuml('translations');
 
 const app = express()
 app.enable('trust proxy')
@@ -92,6 +93,7 @@ app.use(require('./routes/banner').default);
 app.use(require('./routes/user').default);
 app.use(require('./routes/profile').default);
 app.use(require('./routes/admin').default);
+app.use(require('./routes/mfa').default);
 
 app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
