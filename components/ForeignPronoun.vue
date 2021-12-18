@@ -17,8 +17,13 @@ export default {
     },
     async mounted() {
         try {
-            this.pronounName = await this.$axios.$get(`/remote-pronouns-name/${this.locale}/${this.pronounWithoutDomain}`);
-        } catch {}
+            const pronounName = await this.$axios.$get(`/remote-pronouns-name/${this.locale}/${this.pronounWithoutDomain}`);
+            if (!pronounName.startsWith('<!doctype') && pronounName.length < 36) {
+                this.pronounName = pronounName;
+            }
+        } catch (e) {
+            console.error(e);
+        }
     },
     computed: {
         base() {
