@@ -139,6 +139,9 @@
                     <SocialConnection :provider="provider" :providerOptions="providerOptions" :connection="socialConnections[provider]"
                                       @disconnected="socialConnections[provider] = undefined" @setAvatar="setAvatar"/>
                 </li>
+                <li :class="['list-group-item', $user().mfa ? 'profile-current' : '']">
+                    <MfaConnection/>
+                </li>
             </ul>
         </Loading>
 
