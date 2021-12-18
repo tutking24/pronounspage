@@ -69,18 +69,16 @@ router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     return res.json(pronoun.name());
 }));
 
-if (global.config.locale === '_') {
-    router.get('/remote-pronouns-name/:locale/:pronoun*', handleErrorAsync(async (req, res) => {
-        assert(req.locales.hasOwnProperty(req.params.locale));
-        const pronoun = req.params.pronoun + req.params[0];
-        const name = await caches.pronounNames(`${req.params.locale}/${md5(pronoun)}.txt`).fetch(async () => {
-            const res = await (await fetch(`${req.locales[req.params.locale].url}/api/pronouns-name/${pronoun}`)).json();
-            if (typeof(res) === 'object' && res.error) { return pronoun; }
-            return res;
-        });
+router.get('/remote-pronouns-name/:locale/:pronoun*', handleErrorAsync(async (req, res) => {
+    assert(req.locales.hasOwnProperty(req.params.locale));
+    const pronoun = req.params.pronoun + req.params[0];
+    const name = await caches.pronounNames(`${req.params.locale}/${md5(pronoun)}.txt`).fetch(async () => {
+        const res = await (await fetch(`${req.locales[req.params.locale].url}/api/pronouns-name/${pronoun.split('/').map(p => encodeURIComponent(p))}`)).json();
+        if (typeof(res) === 'object' && res.error) { return pronoun; }
+        return res;
+    });
 
-        return res.json(name);
-    }));
-}
+    return res.json(name);
+}));
 
 export default router;
