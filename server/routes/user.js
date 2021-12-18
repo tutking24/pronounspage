@@ -10,13 +10,14 @@ import { config as socialLoginConfig, handlers as socialLoginHandlers } from '..
 import cookieSettings from "../../src/cookieSettings";
 import {validateCaptcha} from "../captcha";
 import assert from "assert";
+import {addMfaInfo} from './mfa';
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
 
 const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
-const normalise = s => s.trim().toLowerCase();
+export const normalise = s => s.trim().toLowerCase();
 
 const isSpam = (email) => {
     const noDots = email.replace(/\./g, '');
@@ -32,7 +33,7 @@ const replaceExtension = username => username
     .replace(/\.$/, '')
 ;
 
-const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
+export const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
         ${id},
@@ -44,7 +45,7 @@ const saveAuthenticator = async (db, type, user, payload, validForMinutes = null
     return id;
 }
 
-const findAuthenticator = async (db, id, type) => {
+export const findAuthenticatorById = async (db, id, type) => {
     const authenticator = await db.get(SQL`SELECT * FROM authenticators
         WHERE id = ${id}
         AND type = ${type}
@@ -56,6 +57,21 @@ const findAuthenticator = async (db, id, type) => {
     }
 
     return authenticator
+}
+
+export const findAuthenticatorsByUser = async (db, user, type) => {
+    const authenticators = await db.all(SQL`
+        SELECT * FROM authenticators
+        WHERE userId = ${user.id}
+        AND type = ${type}
+        AND (validUntil IS NULL OR validUntil > ${now()})
+    `);
+
+    return authenticators.map(a => {
+        a.payload = JSON.parse(a.payload);
+
+        return a;
+    });
 }
 
 const findLatestEmailAuthenticator = async (db, email, type) => {
@@ -73,7 +89,7 @@ const findLatestEmailAuthenticator = async (db, email, type) => {
     return authenticator
 }
 
-const invalidateAuthenticator = async (db, id) => {
+export const invalidateAuthenticator = async (db, id) => {
     await db.get(SQL`UPDATE authenticators
         SET validUntil = ${now()}
         WHERE id = ${id}
@@ -122,13 +138,31 @@ const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
     return dbUser;
 }
 
-const issueAuthentication = async (db, user) => {
-    const dbUser = await fetchOrCreateUser(db, user);
+export const issueAuthentication = async (db, user, fetch = true, guardMfa = false, extend = undefined) => {
+    if (fetch) {
+        user = await fetchOrCreateUser(db, user);
+    }
 
-    return jwt.sign({
-        ...dbUser,
-        authenticated: true,
-    });
+    if (user.mfa === undefined && user.id) {
+        user = await addMfaInfo(db, user, guardMfa);
+    }
+
+    if (!user.mfaRequired) {
+        user.authenticated = true;
+    }
+
+    user.avatar = await avatar(db, user);
+    delete user.suspiciousChecked;
+    delete user.bannedBy;
+
+    if (extend) {
+        user = {
+            ...user,
+            ...extend,
+        }
+    }
+
+    return jwt.sign(user);
 }
 
 const validateEmail = async (email) => {
@@ -172,13 +206,15 @@ const reloadUser = async (req, res, next) => {
         return;
     }
 
-    const dbUser = await req.db.get(SQL`SELECT * FROM users WHERE id = ${req.user.id}`);
+    let dbUser = await req.db.get(SQL`SELECT * FROM users WHERE id = ${req.user.id}`);
 
     if (!dbUser) {
         res.clearCookie('token');
         next();
         return;
     }
+
+    dbUser = await addMfaInfo(req.db, dbUser);
 
     await req.db.get(SQL`UPDATE users SET lastActive = ${+new Date} WHERE id = ${req.user.id}`);
 
@@ -187,15 +223,12 @@ const reloadUser = async (req, res, next) => {
         || req.user.roles !== dbUser.roles
         || req.user.avatarSource !== dbUser.avatarSource
         || req.user.bannedReason !== dbUser.bannedReason
+        || req.user.mfa !== dbUser.mfa
     ) {
-        const newUser = {
-            ...dbUser,
-            authenticated: true,
-            avatar: await avatar(req.db, dbUser),
-        };
-        const token = jwt.sign(newUser);
+        const token = await issueAuthentication(req.db, dbUser, false);
         res.cookie('token', token, cookieSettings);
-        req.user = {...req.user, ...newUser};
+        req.rawUser = jwt.validate(token);
+        req.user = req.rawUser;
     }
     next();
 }
@@ -278,7 +311,7 @@ router.post('/user/validate', handleErrorAsync(async (req, res) => {
         return res.json({error: 'user.tokenExpired'});
     }
 
-    const authenticator = await findAuthenticator(req.db, req.rawUser.codeKey, 'email');
+    const authenticator = await findAuthenticatorById(req.db, req.rawUser.codeKey, 'email');
     if (!authenticator) {
         return res.json({error: 'user.tokenExpired'});
     }
@@ -289,7 +322,7 @@ router.post('/user/validate', handleErrorAsync(async (req, res) => {
 
     await invalidateAuthenticator(req.db, authenticator);
 
-    return res.json({token: await issueAuthentication(req.db, req.rawUser)});
+    return res.json({token: await issueAuthentication(req.db, req.rawUser, true, true)});
 }));
 
 router.post('/user/change-username', handleErrorAsync(async (req, res) => {
@@ -347,7 +380,7 @@ router.post('/user/change-email', handleErrorAsync(async (req, res) => {
         return res.json({ authId });
     }
 
-    const authenticator = await findAuthenticator(req.db, req.body.authId, 'changeEmail');
+    const authenticator = await findAuthenticatorById(req.db, req.body.authId, 'changeEmail');
     if (!authenticator) {
         return res.json({error: 'user.tokenExpired'});
     }
@@ -424,10 +457,7 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
         name: payload.name,
     }, req.params.provider);
 
-    const token = jwt.sign({
-        ...dbUser,
-        authenticated: true,
-    });
+    const token = await issueAuthentication(req.db, dbUser, false, true);
 
     if (auth) {
         await invalidateAuthenticator(req.db, auth.id);

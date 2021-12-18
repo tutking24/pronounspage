@@ -2,7 +2,7 @@
     <section>
         <Alert type="danger" :message="error"/>
 
-        <div class="card">
+        <div class="card shadow">
             <div class="card-body">
                 <div v-if="token === null">
                     <p v-if="$te('user.login.help')">

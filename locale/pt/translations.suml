@@ -420,6 +420,24 @@ user:
         refresh: 'Atualizar'
         disconnect: 'Desconectar'
         disconnectConfirm: 'Confirma que quer excluir esta conexão? (Sempre pode iniciar sessão usando seu endereço %email%)'
+    # TODO
+    mfa:
+        header: 'Autenticação multifator'
+        init: >
+            Escaneie o QR Code a seguir (ou insira o código de texto abaixo) no seu aplicativo autenticador
+            (como {https://authy.com/=Authy}) e, em seguida, insira o token gerado aqui. 
+        recovery:
+            header: 'Código de recuperação'
+            save: >
+                Guarde os códigos de recuperação a seguir em um lugar seguro.
+                Você poderá utilizá-los no futuro para passar pela autenticação multifator caso perca seu dispositivo de autenticação.
+            saved: 'Ok, já guardei!'
+            enter: 'Insira o código de recuperação'
+        cancel: 'Cancelar login'
+        enabled: 'Ativado'
+        enable: 'Ativar a autenticação multifator'
+        disable: 'Desativar a autenticação multifator'
+        disableConfirm: 'Você tem certeza de que quer desativar a autenticação multifator?'
 
 profile:
     description: 'Descrição'
