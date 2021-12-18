@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 export const state = () => ({
     token: null,
     user: null,
+    preToken: null,
     spelling: 'traditional',
     darkMode: false,
 })
@@ -27,7 +28,12 @@ export const mutations = {
             user = null;
         }
 
+        if (user && user.mfaRequired) {
+            state.preToken = token;
+        }
+
         if (user && user.authenticated) {
+            state.preToken = null;
             state.token = token;
             state.user = user;
             return;
@@ -35,6 +41,9 @@ export const mutations = {
 
         state.token = null;
         state.user = null;
+    },
+    cancelMfa(state) {
+        state.preToken = null;
     },
     setSpelling(state, spelling) {
         state.spelling = spelling;
