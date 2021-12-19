@@ -66,6 +66,23 @@
                 </p>
             </div>
         </div>
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2022, 0, 1, 0, 0, 0) && $route.path === '/'" class="container">
+            <div class="alert alert-info my-3">
+                <p class="h3">
+                    <Icon v="zine.svg" :inverse="darkMode"/>
+                    <T>links.zine.headerLong</T>
+                </p>
+                <p>
+                    Do końca grudnia zbieramy zgłoszenia tekstów i grafik do niebinarnego zina!
+                </p>
+                <p class="mb-0">
+                    <nuxt-link to="/zin" class="btn btn-primary">
+                        <Icon v="info-circle"/>
+                        Więcej info
+                    </nuxt-link>
+                </p>
+            </div>
+        </div>
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
