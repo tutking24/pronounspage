@@ -420,7 +420,7 @@ user:
         refresh: 'Atualizar'
         disconnect: 'Desconectar'
         disconnectConfirm: 'Confirma que quer excluir esta conexão? (Sempre pode iniciar sessão usando seu endereço %email%)'
-    # TODO
+    
     mfa:
         header: 'Autenticação multifator'
         init: >
