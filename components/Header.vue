@@ -141,6 +141,7 @@
         computed: {
             ...mapState([
                 'user',
+                'darkMode',
             ]),
             links() {
                 const links = [];
