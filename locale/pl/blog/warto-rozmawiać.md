@@ -49,7 +49,7 @@ a nie tak, jakbyśmy były plebejuszkami przychodzącymi do króla z petycją o 
 
 Z dawnych twitterowych dyskusji zapadła mi w pamięć jedna z opinii – że ci geje to lepiej poszliby wolontariacko pomagać rolnikom w zbiorach,
 a nie się tylko domagają praw i paradują, to wtedy może by ich ludzie polubili i łaskawie pozwolili im na śluby. 
-Tja…  Jeśli Tobie nigdy nikto nie podrzuciło „dobrych rad”, jak tu by najlepiej się płaszczyć przed innymi
+Tja…  Jeśli tobie nigdy nikto nie podrzuciło „dobrych rad”, jak tu by najlepiej się płaszczyć przed innymi
 i wykonywać nieodpłatną pracę na rzecz biznesów, żebyś łaskawie dostałx prawa człowieka, to zazdroszczę.
 
 Tak, osoby aktywistyczne czasem odpowiedzą niemiło na homofobiczny komentarz.
@@ -99,7 +99,7 @@ ale można też zrobić zawczasu risercz oraz spytać bardziej neutralnie:
 Naszego tweeta o [rodzaju neutralnym](/ono) można skomentować zdjęciem profesora Bralczyka robiącego facepalma
 albo kąśliwą uwagą o Radzie Języka Polskiego,
 ale można też wrzucić w wyszukiwarkę „prof. bralczyk osoby niebinarne”
-albo „rada języka polskiego byłoś zrobiłoś” i przeczytać,
+albo „rada języka polskiego byłom zrobiłoś” i przeczytać,
 co te osoby eksperckie mają do powiedzenia w temacie
 (hint: [tutaj opinia prof. Bralczyka](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a),
 [a tutaj RJP](https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208);
@@ -108,4 +108,4 @@ W studiach telewizyjnych można nastawiać przeciwko sobie oprawców i ofiary, j
 a można też przestać dawać atencję księdzom Oko wyzywającym osoby homoseksualne od pedofilów,
 lecz wreszcie dopuścić do głosu osoby, które od wieków tego głosu były pozbawiane.
 
-Tylko połowa z tych opcji jest prawdziwym „otwarciem na dyskusję” 😉
+Tylko połowa z tych opcji jest prawdziwym „otwarciem na dyskusję”.
