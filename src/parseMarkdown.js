@@ -13,11 +13,17 @@ export default async function parseMarkdown(markdown) {
         const title = titleMatch ? titleMatch[1] : null;
         const imgMatch = content.match('<img src="([^"]+)"[^>]*>');
         const img = imgMatch ? imgMatch[1] : null;
+        let intro = [];
+        for (let introMatch of content.matchAll('<p[^>]*>([^<]+)</p>')) {
+            const p = introMatch[1].replace(/(<([^>]+)>)/ig, '').replace(/\s+/g, ' ');
+            intro = [...intro, ...p.split(' ')];
+        }
 
         return {
-            content,
             title,
             img,
+            intro: intro.length ? intro.slice(0, 24).join(' ') : null,
+            content,
         }
     } catch {
         return {

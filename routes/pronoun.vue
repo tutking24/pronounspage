@@ -139,6 +139,11 @@
         head() {
             return this.selectedPronoun ? head({
                 title: `${this.$t('pronouns.intro')}: ${this.selectedPronoun.name(this.glue)}`,
+                description: [
+                    this.$t('pronouns.examples', {}, false),
+                    this.$t('pronouns.grammarTable', {}, false),
+                    this.$t('sources.headerLong', {}, false),
+                ].filter(x => !!x).join(', '),
                 banner: `api/banner${this.$route.path.replace(/\/$/, '')}.png`,
             }) : {};
         },
