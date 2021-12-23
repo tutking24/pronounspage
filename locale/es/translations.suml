@@ -425,24 +425,24 @@ user:
         refresh: 'Actualizar'
         disconnect: 'Desconectar'
         disconnectConfirm: '¿Confirmas que quieres eliminar esta conexión? (Siempre puedes iniciar sesión usando el correo electrónico %email%)'
-    # TODO
+
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'Autenticación en dos pasos'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            Escanea este código QR (o introduce el texto de abajo) en tu aplicación de autenticación TOTP 
+            (p. ej. {https://authy.com/=Authy}) y luego introduce el primertoken que se genere.
         recovery:
-            header: 'Recovery code'
+            header: 'Código de recuperación'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Guarda los siguientes códigos de recuperación en un lugar seguro.
+                Podrás utilizarlos para pasar la autenticación en dos pasos (A2P) en caso de que pierdas tu dispositivo de autenticación.
+            saved: 'OK, ¡ya los guardé!'
+            enter: 'Introduce el código de recuperación'
+        cancel: 'Cancelar inicio de sesión'
+        enabled: 'Habilitado'
+        enable: 'Habilitar A2P'
+        disable: 'Deshabilitar A2P'
+        disableConfirm: '¿Estás segure de que quieres deshabilitar la A2P?'
 
 profile:
     description: 'Descripción'
