@@ -1,17 +1,17 @@
 const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
 module.exports = [
-    // months
+    // --- months ---
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
 
-    // static date
+    // --- static date ---
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
     new Event('Rocznica Dekryminalizacji Homoseksualności w Polsce (1932)', '_law', 9, day(1), EventLevel.Day, ['homosexual', 'gay']),
     new Event('Rocznica Rozpoczęcia Akcji „Hiacynt” (1985)', null, 11, day(15), EventLevel.Day, ['homophobia']),
     new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Pamięci Milo Mazurkiewicz', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
 
-    // one-off events
+    // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/488657855710176=10. Marsz Równości w Łodzi // #DajcieŻyć}', 'LGBTQ', 6, dayYear(26, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/410978689971744=Marsz Równości / Poznań Pride Week 2021}', 'LGBTQ', 7, dayYear(3, 2021), EventLevel.Day),
@@ -31,7 +31,9 @@ module.exports = [
     new Event('{http://marszlublin.pl/=III Marsz Równości w Lublinie}', 'LGBTQ', 10, dayYear(23, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
 
-    // dynamic date
+    // --- dynamic date ---
+
+    // last Friday of October
     new Event('{https://pl.wikipedia.org/wiki/T%C4%99czowy_Pi%C4%85tek=Tęczowy Piątek}', 'LGBTQ', 10, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {

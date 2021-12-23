@@ -1,14 +1,14 @@
 const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
 module.exports = [
-    // months
+    // --- months ---
     new Event('{https://queerhistory.de=Queer History Month} (Monat der queeren Geschichte)', 'Progress Pride', 5, month, EventLevel.Month),
     new Event('Jahrestag der Ehe für alle in Deutschland', '_hrc', 10, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Österreich', '_hrc', 1, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Belgien', '_hrc', 6, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Luxemburg', '_hrc', 1, day(1), EventLevel.Day),
 
-    // one-off events
+    // --- one-off events ---
     new Event('Ehe für alle in der Schweiz', '_hrc', 7, dayYear(1, 2022), EventLevel.Day),
     new Event('{https://www.csd-d.de/de/=CSD Düsseldorf}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
     new Event('{https://csd-bielefeld.de/=CSD Bielefeld}', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),

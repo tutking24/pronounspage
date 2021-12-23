@@ -1,13 +1,12 @@
 const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
 module.exports = [
-
-    // months
+    // --- months ---
     new Event('Mês da Visibilidade Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('Mês da Visibilidade Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Mês da Visibilidade Assexual (Brasil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
 
-    // static date
+    // --- static date ---
     new Event('Dia da Igualdade Matrimonial (Portugal)', '_hrc', 6, day(5), EventLevel.Day),
     new Event('Dia da Igualdade Matrimonial (Brasil)', '_hrc', 5, day(16), EventLevel.Day),
     new Event('Dia Nacional da Visibilidade Trans (Brasil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
@@ -22,7 +21,7 @@ module.exports = [
     new Event('Dia Nacional da Afirmação Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
     new Event('Dia da Inclusão Social (Brasil)', null, 12, day(10), EventLevel.Day),
 
-    // one-off events
+    // --- one-off events ---
     new Event('{https://dezanove.pt/marcha-orgulho-lgbti-leiria-marcha-a-2-1523945=1ª Marcha do Orgulho LGBTI+ de Leiria} (Portugal)', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/direitos-lgbti-viseu-marcha-a-10-de-1471763=Marcha pelos Direitos LGBTI+ de Viseu} (Portugal)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/sao-joao-da-madeira-acolhe-marcha-do-1527929=1ª Marcha do Orgulho LGBTI+ em São João da Madeira} (Portugal)', 'LGBTQ', 9, dayYear(18, 2021), EventLevel.Day),
@@ -42,6 +41,4 @@ module.exports = [
     new Event('{https://www.facebook.com/events/451121922567801/=4ª Parada do Orgulho LGBT de Rio Claro/SP} (Brasil)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/578588566271716/=1° Parada do Orgulho LGBTQIA+ de SJC} (Brasil)', 'LGBTQ', 6, dayYear(6, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1175941416231293=15ª Parada do Orgulho LGBTI+ de Itaquaquecetuba} (Brasil)', 'LGBTQ', 8, dayYear(28, 2022), EventLevel.Day),
-
-
 ];
