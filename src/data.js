@@ -37,6 +37,7 @@ export const pronounGroups = buildList(function* () {
             g.name,
             g.pronouns ? g.pronouns.split(',') : [],
             g.description,
+            g.key || null,
         );
     }
 });

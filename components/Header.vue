@@ -155,7 +155,7 @@
                 });
 
                 if (this.config.pronouns.enabled) {
-                    const extra = ['all', '/' + this.config.pronouns.any]
+                    const extra = ['all', '/' + this.config.pronouns.any, `/${this.config.pronouns.any}:`]
                     if (this.config.pronouns.null && this.config.pronouns.null.routes) {
                         for (let route of this.config.pronouns.null.routes) {
                             extra.push('/' + route);
@@ -307,7 +307,10 @@
                 return decodeURIComponent(this.$route.path) === link.link
                     || (link.extra || []).includes(this.$route.name)
                     || (link.extra || []).includes(decodeURIComponent(this.$route.path))
-                    || (link.extra || []).filter(x => x && decodeURIComponent(this.$route.path).startsWith(x + '/')).length;
+                    || (link.extra || []).filter(x => x && (
+                        decodeURIComponent(this.$route.path).startsWith(x + '/')
+                        || decodeURIComponent(this.$route.path).startsWith(x + ':'))
+                    ).length;
             },
             documentClicked() {
                 if (this.hamburgerActive) {

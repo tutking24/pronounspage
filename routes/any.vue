@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <NotFound v-if="pronounGroups === undefined"/>
+    <div v-else>
         <h2>
             <Icon v="tag"/>
             <T>pronouns.intro</T><T>quotation.colon</T>
@@ -8,7 +9,10 @@
         <section>
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
-                    <strong><T>pronouns.any.short</T></strong>
+                    <strong>
+                        <T>pronouns.any.short</T>
+                        <span v-if="groupKey">{{groupKey}}</span>
+                    </strong>
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2">
                     <em>
@@ -32,6 +36,8 @@
             </ul>
         </section>
 
+        <PronounGroup v-for="pronounGroup in pronounGroups" :key="pronounGroup.name" :pronounGroup="pronounGroup"/>
+
         <section>
             <Share :title="`${$t('pronouns.intro')}: ${$t('pronouns.any.short')}`"/>
         </section>
@@ -49,25 +55,46 @@
 </template>
 
 <script>
-    import { examples, pronouns } from "~/src/data";
+    import { examples, pronouns, pronounLibrary } from "~/src/data";
     import { head } from "../src/helpers";
 
     export default {
         data() {
+            const groupKey = this.$route.params.group;
+            let pronounGroups = [];
+            if (groupKey) {
+                pronounGroups = pronounLibrary.byKey()[groupKey];
+            }
+
             return {
-                examples: examples,
+                examples,
+                groupKey,
+                pronounGroups,
             }
         },
         head() {
             return head({
-                title: `${this.$t('pronouns.intro')}: ${this.$t('pronouns.any.short')}`,
+                title: `${this.$t('pronouns.intro')}: ${this.$t('pronouns.any.short')} ${this.groupKey || ''}`.trim(),
                 banner: `api/banner/${this.$t('pronouns.any.short')}.png`,
             });
         },
+        computed: {
+            pronounsChoice() {
+                if (!this.pronounGroups.length) {
+                    return pronouns;
+                }
+
+                let choice = {};
+                for (let pronounGroup of this.pronounGroups) {
+                    choice = {...choice, ...pronounGroup.groupPronouns}
+                }
+                return choice;
+            }
+        },
         methods: {
             randomPronoun() {
-                const keys = Object.keys(pronouns);
-                return pronouns[keys[keys.length * Math.random() << 0]];
+                const keys = Object.keys(this.pronounsChoice);
+                return this.pronounsChoice[keys[keys.length * Math.random() << 0]];
             },
         }
     }

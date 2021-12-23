@@ -139,12 +139,13 @@
                     }
 
                     if (link === this.config.pronouns.any
+                        || link.startsWith(this.config.pronouns.any + ':')
                         || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(link))
                         || (this.config.pronouns.mirror && this.config.pronouns.mirror.route === pronoun)
                     ) {
                         pronounOpinions.push({
                             link,
-                            pronoun: link,
+                            pronoun: link.replace(/:+/g, ' '),
                             opinion: this.profile.pronouns[pronoun],
                         });
                         continue;
