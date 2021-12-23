@@ -187,11 +187,19 @@
                 </li>
                 <li class="list-group-item">
                     <p class="h5">
-                        <nuxt-link :to="'/' + config.pronouns.any"><T>pronouns.any.header</T></nuxt-link>
+                        <nuxt-link :to="`/${config.pronouns.any}`"><T>pronouns.any.header</T></nuxt-link>
                     </p>
                     <p>
                         <T>pronouns.any.description</T>
                     </p>
+                    <ul v-if="Object.keys(pronounLibrary.byKey()).length" class="small">
+                        <li>
+                            <nuxt-link :to="`/${config.pronouns.any}`"><T>pronouns.any.short</T></nuxt-link>
+                        </li>
+                        <li v-for="(keyPronouns, key) in pronounLibrary.byKey()">
+                            <nuxt-link :to="`/${config.pronouns.any}:${key}`"><T>pronouns.any.short</T> {{key}}</nuxt-link>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>

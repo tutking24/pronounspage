@@ -271,7 +271,8 @@ export default {
             }
 
             if (config.pronouns.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.pronouns.any), component: resolve(__dirname, 'routes/any.vue') });
+                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}`, component: resolve(__dirname, 'routes/any.vue') });
+                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}::group`, component: resolve(__dirname, 'routes/any.vue') });
                 if (config.pronouns.null && config.pronouns.null.routes) {
                     for (let route of config.pronouns.null.routes) {
                         routes.push({ path: '/' + encodeURIComponent(route), component: resolve(__dirname, 'routes/avoiding.vue') });

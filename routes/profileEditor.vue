@@ -375,6 +375,7 @@
             validatePronoun(pronoun) {
                 pronoun = this.normalisePronoun(pronoun);
                 return pronoun === this.config.pronouns.any
+                    || pronoun.startsWith(this.config.pronouns.any + ':')
                     || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(pronoun))
                     || (this.config.pronouns.mirror && this.config.pronouns.mirror.route === pronoun)
                     || buildPronoun(pronouns, pronoun)

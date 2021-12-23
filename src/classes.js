@@ -501,10 +501,11 @@ export class Pronoun {
 }
 
 export class PronounGroup {
-    constructor(name, pronouns, description = null) {
+    constructor(name, pronouns, description = null, key = null) {
         this.name = name;
         this.pronouns = pronouns;
         this.description = description;
+        this.key = key;
     }
 }
 
@@ -545,6 +546,24 @@ export class PronounLibrary {
                 }
             }),
         ];
+    }
+
+    byKey() {
+        const ret = {};
+        for (let g of this.groups) {
+            if (g.key === null) { continue; }
+            if (ret[g.key] === undefined) { ret[g.key] = []; }
+
+            const p = {};
+            for (let t of g.pronouns) {
+                const pronoun = this.pronouns[t];
+                if (!pronoun) { continue; }
+                p[pronoun.canonicalName] = pronoun;
+            }
+
+            ret[g.key].push({ group: g, groupPronouns: p});
+        }
+        return ret;
     }
 
     find(pronoun) {
