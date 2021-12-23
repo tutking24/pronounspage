@@ -2,7 +2,7 @@
 
 <small>2021-11-25 | [@andrea](/@andrea)</small>
 
-![Logo of zaimki.pl](https://zaimki.pl/api/banner/zaimki.png)
+![Logo of zaimki.pl](/img-local/blog/zaimki.png)
 
 We get asked that question more often recently, so I've decided to put an answer in writing 😉
 How did pronouns.page start?
