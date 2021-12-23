@@ -32,6 +32,7 @@ export const head = ({title, description, banner}) => {
 
     if (description) {
         description = clearLinkedText(description);
+        description = description.split(' ').slice(0, 24).join(' ') + '…';
         meta.meta.push({ hid: 'description', name: 'description', content: description });
         meta.meta.push({ hid: 'og:description', property: 'og:description', content: description });
         meta.meta.push({ hid: 'twitter:description', property: 'twitter:description', content: description });
@@ -206,6 +207,8 @@ export const clearLinkedText = (text, quotes = true) => {
     if (quotes) {
         text = text.replace(/[„”"']/g, '');
     }
+
+    text = text.replace(/\s+/g, ' ');
 
     return text;
 }

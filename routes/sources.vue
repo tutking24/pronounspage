@@ -175,6 +175,7 @@
         head() {
             return head({
                 title: this.$t('sources.headerLonger'),
+                description: this.$t('sources.subheader'),
             });
         },
         methods: {

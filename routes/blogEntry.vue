@@ -34,6 +34,7 @@
         head() {
             return head({
                 title: this.title,
+                description: this.intro,
                 banner: this.img,
             });
         },

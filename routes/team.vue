@@ -127,6 +127,7 @@
         head() {
             return head({
                 title: this.$t('contact.team.name'),
+                description: this.$t('contact.team.description'),
             });
         },
         async asyncData({app}) {

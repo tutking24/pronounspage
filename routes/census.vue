@@ -267,6 +267,7 @@
         head() {
             return head({
                 title: this.$t('census.headerLong'),
+                description: this.$t('census.description')[0],
             });
         },
     };
