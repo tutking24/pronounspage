@@ -1,7 +1,7 @@
 const {Event, day, week, month, dayYear, EventLevel, Day} = require("../../src/calendar/helpers");
 
 module.exports = [
-    // months
+    // --- months ---
     new Event('LGBT History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('LGBT History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
     new Event('LGBT History Month (Ireland/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
@@ -11,7 +11,7 @@ module.exports = [
     new Event('{/terminology#asexual=Asexual} Visibility Month (Brazil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
     new Event('{/terminology#transgender=Transgender} History Month (US)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
-    // static date
+    // --- static date ---
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.Day),
     new Event('Pink Triangle Day (Canada)', null, 2, day(14), EventLevel.Day),
     new Event('Marriage Equality Day (US)', '_hrc', 6, day(26), EventLevel.Day),
@@ -63,9 +63,9 @@ module.exports = [
     new Event('Suicide Prevention Day (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
     new Event('Sucide Prevention Day (Puerto Rico)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
 
+    // --- dynamic date ---
 
-
-    // dynamic date
+    // last Friday of August
     new Event('Wear it Purple Day (Australia)', null, 8, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
@@ -76,6 +76,7 @@ module.exports = [
         yield lastFriday;
     }, EventLevel.Day),
 
+    // third Thursday of October
     new Event('Spirit Day', null, 10, function* (monthDays) {
         let thursdays = 0;
         for (let d of monthDays) {
@@ -89,6 +90,7 @@ module.exports = [
         }
     }, EventLevel.Day),
 
+    // last Friday of February
     new Event('Purple Friday (UK)', null, 2, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
@@ -99,6 +101,7 @@ module.exports = [
         yield lastFriday;
     }, EventLevel.Day),
 
+    // last Friday of October
     new Event('Rainbow Friday (Poland)', 'LGBTQ', 10, function* (monthDays) {
         let lastFriday = null;
         for (let d of monthDays) {
@@ -109,6 +112,7 @@ module.exports = [
         yield lastFriday;
     }, EventLevel.Day),
 
+    // second Friday of December
     new Event('Purple Friday (Netherlands)', null, 12, function* (monthDays) {
         let fridays = 0;
         for (let d of monthDays) {
@@ -163,5 +167,4 @@ module.exports = [
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
-
 ];

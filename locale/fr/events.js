@@ -1,10 +1,10 @@
 const {Event, day, week, month, dayYear, EventLevel, Day} = require("../../src/calendar/helpers");
 
 module.exports = [
-    // months
+    // --- months ---
     new Event('Mois de l\'histoire des LGBT (Canada/USA/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
 
-    // static date
+    // --- static date ---
     new Event('Journée du triangle rose (Canada)', '_hrc', 2, day(14), EventLevel.Day),
     new Event('Journée de le mariage pour tous (Canada)', '_hrc', 7, day(20), EventLevel.Day),
     new Event('Journée de le mariage pour tous (France)', '_hrc', 5, day(18), EventLevel.Day),
@@ -15,7 +15,9 @@ module.exports = [
     new Event('Journée de la sensibilisation du VIH/sida et au vieillissement (Canada/USA)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('Anniversaire de la décrimilisation de l\'homosexualité (Canada)', '_law', 6, day(27), EventLevel.Day),
 
-    // dynamic date
+    // --- dynamic date ---
+
+    // Third Thursday of October
     new Event('Journée d\'esprit (Canada/USA)', null, 10, function* (monthDays) {
         let thursdays = 0;
         for (let d of monthDays) {

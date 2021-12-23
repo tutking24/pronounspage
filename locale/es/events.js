@@ -1,11 +1,11 @@
 const {Event, day, week, month, dayYear, EventLevel} = require("../../src/calendar/helpers");
 
 module.exports = [
-    // months
+    // --- months ---
     new Event('Mes de la Historia LGBT (EE.UU.)', 'Progress Pride', 10, month, EventLevel.Month),
     new Event('Mes de la Diversidad (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
 
-    // static date
+    // --- static date ---
     new Event('Día de la Igualdad Matrimonial (EE.UU.)', '_hrc', 6, day(26), EventLevel.Day),
     new Event('Día de la Igualdad Matrimonial (España)', '_hrc', 7, day(3), EventLevel.Day),
     new Event('Aniversario de la sanción de la Ley de Matrimonio Igualitario (Argentina)', '_hrc', 7, day(15), EventLevel.Day),
@@ -44,7 +44,7 @@ module.exports = [
     new Event('Día Nacional para la Prevención del Suicidio (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
     new Event('Día Nacional para la Prevención del Suicidio (Puerto Rico)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
 
-    // one-off events
+    // --- one-off events ---
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/marchaporladiversidad.uy=Marcha por la Diversidad} (Uruguay)', 'LGBTQ', 9, dayYear(24, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/396902965304865/=15 Marcha del Orgullo Rosario} (Argentina)', 'LGBTQ', 10, dayYear(30, 2021), EventLevel.Day),
