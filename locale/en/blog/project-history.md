@@ -35,18 +35,18 @@ into different languages, mainly Polish. He was gathering examples from literatu
 Around the same time [@Sybil](/@Sybil) was coming up with a solution to a similar, yet separate problem
 – how to extend the person-describing nouns into a system that also includes the grammatical neuter.
 They wanted to describe their nonbinary partner in a way that doesn't impose a binary gender on them
-– but in Polish they had no other option than to expand the dictionaries in the name of love!
-They created [a funpage on Facebook](https://www.facebook.com/neutratywy) where they shared their proposals.
+– but in Polish they had no other option than to… expand the dictionaries in the name of love!
+They created [a fanpage on Facebook](https://www.facebook.com/neutratywy) where they shared their proposals.
 
 And the three of us have joined our forces to create one bigger project: [zaimki.pl](https://zaimki.pl)
 – a website that [started very humbly](https://web.archive.org/web/20200725174439/https://zaimki.pl/),
 basically as a Polish version of [pronoun.is](https://pronoun.is/), to be extended with
 [a text corpus](https://zaimki.pl/korpus) and [a dictionary of nouns](https://zaimki.pl/neutratywy).
 
-I [announced it on Twitter](https://twitter.com/AvrisIT/status/1286400337465802752) on June 23rd, 2020
+I [announced it on Twitter](https://twitter.com/AvrisIT/status/1286400337465802752) on June 23<sup>rd</sup>, 2020
 and was absolutely astounded by the overwhelmingly positive response.
 The project almost immediately [attracted attention of queer media](https://queer.pl/artykul/204685/zaimkipl-strona-jezyk-polski-niebinarnosc).
-More people were helping out with creating it – and [on November 22nd, 2020 we gathered](https://twitter.com/neutratywy/status/1332403345542221827)
+More people were helping out with creating it – and [on November 22<sup>nd</sup>, 2020 we gathered](https://twitter.com/neutratywy/status/1332403345542221827)
 together online to discuss how would such a cooperation work. We came up with [the name of the collective](/blog/why-the-name)
 and agreed on a non-hierarchical, anarcha-queer structure.
 
@@ -57,7 +57,7 @@ This feature was met with enthusiasm and prompted new feature requests: can we a
 
 So [@Ausir](/@Ausir), [@Szymon](/@Szymon) and [I](/@andrea) translated the website to English,
 researched the most popular neopronouns, looked up literature that uses it –
-and on December 5th, 2020 [we announced the start of an English version](https://twitter.com/PronounsPage/status/1335322304931393536).
+and on December 5<sup>th</sup>, 2020 [we announced the start of an English version](https://twitter.com/PronounsPage/status/1335322304931393536).
 It's the only one initially created by people who use the given language as their additional one (although later it was proof-read by native-speakers too).
 For all the others we were contacted by their native-speakers who offered help preparing the content,
 while we provided the technical tools and support.
