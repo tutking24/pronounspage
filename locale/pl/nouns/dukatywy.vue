@@ -307,6 +307,7 @@
         head() {
             return head({
                 title: this.$t('nouns.dukajNouns.header'),
+                banner: 'img-local/flags/dukaizmy.jpg',
                 description: this.$t('nouns.dukajNouns.info')[0],
             });
         },

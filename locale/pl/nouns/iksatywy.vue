@@ -292,6 +292,7 @@
         head() {
             return head({
                 title: this.$t('nouns.xNouns.header'),
+                banner: 'img-local/flags/iksatywy.png',
                 description: this.$t('nouns.xNouns.info')[0],
             });
         },

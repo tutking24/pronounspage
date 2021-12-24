@@ -207,6 +207,7 @@
         head() {
             return head({
                 title: this.$t('nouns.neuterNouns.header'),
+                banner: 'img-local/flags/łoś.jpg',
                 description: this.$t('nouns.neuterNouns.info')[0],
             });
         },
