@@ -17,8 +17,15 @@ export class CacheObject {
         }
 
         if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (new Date() - this.maxAgeMinutes*60*1000)) {
-            const content = fs.readFileSync(this.path).toString('utf-8');
-            return this.path.endsWith('.js') ? JSON.parse(content) : content;
+            let content = fs.readFileSync(this.path);
+            if (this.path.endsWith('.js') || this.path.endsWith('.txt')) {
+                content = content.toString('utf-8')
+            }
+            if (this.path.endsWith('.js')) {
+                content = JSON.parse(content);
+            }
+
+            return content;
         }
 
         const result = await generator();
