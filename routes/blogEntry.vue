@@ -14,7 +14,6 @@
         </Twemoji>
 
         <Separator icon="heart"/>
-
         <Support/>
 
         <section>

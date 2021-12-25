@@ -59,6 +59,7 @@
         <template v-if="!basic">
             <CalendarExtra :year="year"/>
 
+            <Separator icon="heart"/>
             <Support/>
 
             <section>

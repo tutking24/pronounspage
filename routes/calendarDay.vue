@@ -38,6 +38,7 @@
         <template v-if="!basic">
             <CalendarExtra :day="day"/>
 
+            <Separator icon="heart"/>
             <Support/>
 
             <section>

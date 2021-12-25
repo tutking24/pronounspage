@@ -4,6 +4,7 @@
 
         <AcademicLinks/>
 
+        <Separator icon="heart"/>
         <Support/>
         <section>
             <Share :title="$t('links.headerLong')"/>

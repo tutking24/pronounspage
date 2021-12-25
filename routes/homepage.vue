@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <Separator icon="people-carry"/>
+        <Separator icon="heart"/>
         <section>
             <Support/>
         </section>
