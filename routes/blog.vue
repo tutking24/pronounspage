@@ -6,6 +6,7 @@
             <T>links.blog</T>
         </h2>
         <BlogEntriesList :posts="posts"/>
+        <Separator icon="heart"/>
         <Support/>
         <section>
             <Share :title="$t('links.blog')"/>

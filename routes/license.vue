@@ -3,7 +3,6 @@
         <div v-html="content"></div>
 
         <Separator icon="heart"/>
-
         <Support/>
 
         <section>

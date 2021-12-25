@@ -208,8 +208,7 @@
 
         <Mission/>
 
-        <Separator icon="bookmark"/>
-
+        <Separator icon="heart"/>
         <Support/>
         <section>
             <Share/>

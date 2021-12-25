@@ -5,6 +5,7 @@
         <Media/>
 
         <Socials/>
+        <Separator icon="heart"/>
         <Support/>
         <section>
             <Share :title="$t('links.social')"/>
