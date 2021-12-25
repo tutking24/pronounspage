@@ -254,6 +254,7 @@ links:
     zine:
         enabled: true
         route: 'zin'
+        open: true
     academic:
         -
             icon: 'comment-alt-edit'
