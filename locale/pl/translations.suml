@@ -986,6 +986,7 @@ links:
                 być może również w formie papierowej.
         submissions:
             header: 'Nabór zgłoszeń'
+            closed: 'Obecnie nabór zgłoszeń jest <strong>zamknięty</strong>.'
             rules:
                 -
                     icon: 'map-marker-question'
