@@ -183,7 +183,10 @@ terminology:
     headerLong: 'Dictionary of queer terminology'
     info:
         - >
-            A dictionary of terms related to the LGBTQ+ community.
+            Many of the terms and phrases related to the LGBTQ+ community
+            are used as English inserts into <your language> texts.
+            We'd like to present a glossary of those terms, describe their meaning,
+            and propose their <your language> translations.
     term: 'Term'
     original: 'Etymology'
     category: 'Category'

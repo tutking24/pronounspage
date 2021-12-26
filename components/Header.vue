@@ -83,7 +83,7 @@
                 </p>
             </div>
         </div>
-        <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0">
+        <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0 mx-5 text-center">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
         </div>
