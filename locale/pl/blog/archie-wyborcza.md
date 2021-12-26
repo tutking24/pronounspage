@@ -2,7 +2,7 @@
 
 <small>2020-10-03 | [@Archie](/@Archie)</small>
 
-![](/img-local/blog/lobby-lgbt-wyborcza.jpg)
+![Zdjęcie z demo Lobby LGBTQ pod siedzibą Gazety Wyborczej; piąte z lewej Archie](/img-local/blog/lobby-lgbt-wyborcza.jpg)
 
 Kontekst: [List otwarty w sprawie transfobii na łamach Wysokich Obcasów i Gazety Wyborczej](https://lobby.lgbt/aktualnosci/ogloszenia/list-otwarty-do-wysokich-obcasow-i-gazety-wyborczej/)
 
