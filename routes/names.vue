@@ -1,5 +1,8 @@
 <template>
-    <div>
+    <NotFound v-if="!config.names || !config.names.enabled || (!config.names.published && !$isGranted('names'))"/>
+    <div v-else>
+        <CommunityNav/>
+
         <h2>
             <Icon v="signature"/>
             <T>names.headerLong</T>

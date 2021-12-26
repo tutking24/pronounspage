@@ -3,6 +3,7 @@
         {name: 'terminology.header', icon: 'flag', route: config.terminology.route, condition: config.terminology.enabled},
         {name: 'inclusive.header', icon: 'book-heart', route: config.inclusive.route, condition: config.inclusive.enabled},
         {name: 'calendar.header', route: config.calendar.route, icon: 'calendar-star', condition: config.calendar && config.calendar.enabled},
+        {name: 'names.header', route: config.names.route, icon: 'signature', condition: config.names && config.names.enabled && (config.names.published || $isGranted('names'))},
         {name: 'census.header', route: config.census.route, icon: 'user-chart', condition: config.census.enabled},
         {name: 'people.header', route: config.people.route, icon: 'user-friends', condition: config.people.enabled},
         {name: 'contact.team.nameShort', route: config.contact.team.route, icon: 'collective-logo.svg', iconInverse: darkMode},
