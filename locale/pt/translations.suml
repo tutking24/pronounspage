@@ -179,6 +179,12 @@ terminology:
     info:
         - >
             Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+
+        # TODO
+        #    Many of the terms and phrases related to the LGBTQ+ community
+        #    are used as English inserts into <your language> texts.
+        #    We'd like to present a glossary of those terms, describe their meaning,
+        #    and propose their <your language> translations.
     term: 'Termo'
     original: 'Etimologia'
     category: 'Categoria'
@@ -420,12 +426,12 @@ user:
         refresh: 'Atualizar'
         disconnect: 'Desconectar'
         disconnectConfirm: 'Confirma que quer excluir esta conexão? (Sempre pode iniciar sessão usando seu endereço %email%)'
-    
+
     mfa:
         header: 'Autenticação multifator'
         init: >
             Escaneie o QR Code a seguir (ou insira o código de texto abaixo) no seu aplicativo autenticador
-            (como {https://authy.com/=Authy}) e, em seguida, insira o token gerado aqui. 
+            (como {https://authy.com/=Authy}) e, em seguida, insira o token gerado aqui.
         recovery:
             header: 'Código de recuperação'
             save: >
