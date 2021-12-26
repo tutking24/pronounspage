@@ -424,24 +424,24 @@ user:
         refresh: 'Rafraîchir'
         disconnect: 'Déconnecter'
         disconnectConfirm: 'Êtes-vous sûr·e de vouloir retirer cette connexion ? (Vous pouvez toujours vous connecter en utilisant l’adresse mail %email%)'
-    # TODO
+
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'Authentification multi-facteur'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            Scannez ce QR code (ou entrez le code ci-dessous) dans votre application d'authentification multi-facteur (par exemple {https://authy.com/=Authy})
+            puis entrez le token généré par l'application.
         recovery:
-            header: 'Recovery code'
+            header: 'Codes de récupération'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Gardez les codes de récupération en lieu sûr.
+                Vous pourrez les utiliser pour passer outre l'authentification multi-facteur si jamais vous perdez l'accès à votre appareil.
+            saved: 'C''est bon ! Je les ai notés quelque part'
+            enter: 'Entrer le code de récupération'
+        cancel: 'Annuler la connexion'
+        enabled: 'Activé'
+        enable: 'Activer l''authentification multi-facteur'
+        disable: 'Désactiver l''authentification multi-facteur'
+        disableConfirm: 'Voulez-vous vraiment désactiver l''authentification multi-facteur ?'
 
 profile:
     description: 'Description'
