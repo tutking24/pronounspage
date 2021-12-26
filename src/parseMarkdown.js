@@ -14,7 +14,8 @@ export default async function parseMarkdown(markdown) {
         const imgMatch = content.match('<img src="([^"]+)"[^>]*>');
         const img = imgMatch ? imgMatch[1] : null;
         let intro = [];
-        for (let introMatch of content.matchAll('<p[^>]*>([^<]+)</p>')) {
+
+        for (let introMatch of content.matchAll(/<p[^>]*>(.+?)<\/p>/gms)) {
             const p = introMatch[1].replace(/(<([^>]+)>)/ig, '').replace(/\s+/g, ' ');
             intro = [...intro, ...p.split(' ')];
         }
