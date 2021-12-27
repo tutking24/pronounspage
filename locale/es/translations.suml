@@ -402,7 +402,7 @@ user:
             extra: 'Si no solicitaste este código, simplemente ignora este mensaje.'
         why: >
             Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
-        passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=More info.}'
+        passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=Más información.}'
         instancePlaceholder: 'Instancia'
     code:
         action: 'Validar'
