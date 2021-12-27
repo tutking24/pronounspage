@@ -16,5 +16,5 @@ for (let name in rawNamedays) {
 module.exports.calendar = new Calendar(
     [...internationalEvents, ...localEvents], // TODO , ...namedays
     2021,
-    2021,
+    2022,
 );
