@@ -1,6 +1,7 @@
 module.exports = [
     ['de', 'Deutsch',        'https://de.pronouns.page', true],
     ['es', 'Español',        'https://es.pronouns.page', true],
+    ['eo', 'Esperanto',      'https://eo.pronouns.page', false],
     ['en', 'English',        'https://en.pronouns.page', true],
     ['fr', 'Français',       'https://fr.pronouns.page', true],
     ['gl', 'Galego',         'https://gl.pronouns.page', false],
