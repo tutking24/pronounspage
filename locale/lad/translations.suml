@@ -9,7 +9,7 @@ home:
     why: 'Por ke los pronombres son emportantes?'
     about:
         - >
-            Todes tenemos pronombres. Son los biervos ke uzamos al lugar del nombre para azer referensia a alguno a kien ya mensionamos.
+            Todos, todas i todes tenemos pronombres. Son los biervos ke uzamos al lugar del nombre para azer referensia a alguno a kien ya mensionamos.
             La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos automatikamente kualo uzar kon base en sus apariensya.
             Ma en realidad no es tan simple…
         - >
@@ -18,12 +18,12 @@ home:
             Algunas personas no enkashan en las kashas “maskulino” o “feminino” i preferan una avla mas neutrala.
         - >
             Esta feramenta te permete atar a tus pronombres, kon enshemplos de uzo en frazas,
-            para ke puedas mostrarle a la djente cómo preferas ke te yamen.
+            para ke puedas mostrarle a la djente komo preferas ke te yamen.
         - >
             Por ke emporta? Por simple bondad umana.
             No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akeyo nombre
             o porke “tiene mas kara de Rashel para ti”.
-            O inkluzo si eya <em>sí</em> se yama “Rashel” en su nefus
+            O inkluzo si eya <em>si</em> se yama “Rashel” en el nefus
             ama detesta akeyo nombre i prefera uzar “Miriam”.
             Es egzaktamente lo mismo kon los pronombres –
             si no keres ser abdal kon algun, avla de akeya persona korektamente.
@@ -55,7 +55,7 @@ home:
         inclusiveness: >
             <strong>Inkluzividad</strong>
             – para ke kuando mensionamos a una persona ke no konosemos o a un grupo de djente
-            no presupongamos su djenero i no les excluyamos por ninguna razon
+            no presupongamos su djenero i no les ekskluyamos por ninguna razon
 
 
 pronouns:
@@ -115,16 +115,16 @@ sources:
         another: 'Embiar otruno'
         moderation: 'Los embios deven ser aseptados antes de ser publikados.'
         key: 'Yave'
-        keyInfo: 'Identifiador para atar fuentes entre versiones en varias linguas i atarlas kon el diksionario'
+        keyInfo: 'Identifiador para atar fuentes entre versiones en varias linguas i atarlas kon el diksionaryo'
         images: 'Imajes'
     otherVersions: 'En otrunas linguas'
     referenced: 'Enshemplos del uzo'
 
 nouns:
-    header: 'Diksyonario'
-    headerLong: 'Diksyonario de sustantivos neutros'
-    headerLonger: 'Diksyonario de lingua neutrala'
-    description: 'No son solo pronombres! Mira muestro diksionario de avla neutrala.'
+    header: 'Diksionaryo'
+    headerLong: 'Diksionaryo de sustantivos neutros'
+    headerLonger: 'Diksionaryo de lingua neutrala'
+    description: 'No son solo pronombres! Melda muestro diksionaryo de avla neutrala.'
     intro:
         - >
             Uzar avla inkluziva i neutrala del djenero no es solo uzar los pronombres korektos de otruna persona.
@@ -137,7 +137,7 @@ nouns:
             i espesialmente a personas no binarias ke eksplisitamente lo preferen,
             uza las formas neutralas.
         - >
-            Abasho prezentamos un diksionario kon biervos a konsiderar.
+            Abasho prezentamos un diksionaryo kon biervos a konsiderar.
             Puedes kontribuir en el i adisyonar tus sujesiones.
 
     approved: 'propozisiones aseptadas'
@@ -177,10 +177,10 @@ community:
 
 terminology:
     header: 'Terminolojia'
-    headerLong: 'Diksionario de terminolojia kuir'
+    headerLong: 'Diksionaryo de terminolojia kuir'
     info:
         - >
-            Un diksionario de terminolojia relasionada kon la komunita LGBTQ+.
+            Un diksionaryo de terminolojia relasionada kon la komunita LGBTQ+.
     term: 'Termino'
     original: 'Etimolojia'
     category: 'Kategoria'
@@ -197,13 +197,13 @@ faq:
                 - >
                     El djenero es muncho mas komplikado ke una simple distinksyon entre maskulino i feminino.
                     Inkluzo desde un punto de vista puramente biolojiko distinguimos sekso kromosomiko,
-                    sekso djenetiko, sexo ormonal, sexo fenotipiko…
+                    sekso djenetiko, sekso ormonal, sekso fenotipiko…
                     No son nesesariamente kongruentes uno kon el otruno, no tienen ke ser binarios.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aki)}.
                     I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
                     derechos, obligaciones, reglas a seguir, etc. radicalmente diferentes. En Europa los ombres solían uzar tacones altos i faldas,
-                    munchos pueblos originarios de Norteamérica tienen reconocido un tercer djenero por siglos, como
+                    munchos pueblos originarios de Norteamérica tienen reconocido un tercer djenero por siglos, komo
                     {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espíritus}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
                 - >
                     “No binarie” es un término ke deskrive la identidad de personas que
@@ -231,13 +231,13 @@ faq:
             answer:
                 - >
                     No! El djenero está presente no sólo en los pronombres, sino en sustantivos, ajektivos, etc.
-                    No te refieres como “eya” a tu “amigo”, sino a tu “amiga”.
+                    No te refieres komo “eya” a tu “amigo”, sino a tu “amiga”.
                     Respetar la identidad de djenero de una persona implica respetarla no sólo en sus pronombres, sino
                     en todo lo referente a la avla al referirnos a elle.
                 - >
                     Ansi, dizimos ke <em>elle</em> es muestre amigue, ke puede ser profesore, eleve, etc., i le keremos muncho.
         how-to-know:
-            question: 'Cómo sé cómo dirigirme a alguno?'
+            question: 'Komo sé komo dirigirme a alguno?'
             answer:
                 - >
                     Puedes demandar! Sí, puede ser un poko inkomodo, ama cuanto más lo hagamos, manko incómodo se abolta.
@@ -246,13 +246,13 @@ faq:
                     (Sólo ke por favor no demandes “eres niño o niña?”.
                     Esta demanda implica ke sólo hay dos repuestas correctas,
                     i sugiere una curiosidad poco saludable por los genitales de otrunas personas.
-                    En su lugar, puedes demandar “kualos son tus pronombres?” o “Cómo me deveria dirigir a tí?”)
+                    En su lugar, puedes demandar “kualos son tus pronombres?” o “Komo me deveria dirigir a tí?”)
                 - >
                     También es emportante normalizar el dezir tus pronombres kuando te presentas kon alguno.
                     “Hola, so Miguel, {/él=él/lo}”. No es zor – ma sinyifika muncho para las personas trans i no binarias!
                     Es inkluzo más kolay en línea: Sólo pon tus pronombres (o un atadijo a enshemplos de muestro sitio web) en tu <em>bio</em>.
                 - >
-                    También ten en mente ke munchas personas uzan un nombre i pronombres distintos en diferentes contextos.
+                    También ten en mente ke munchas personas uzan un nombre i pronombres distintos en diferentes kontekstos.
                     Puede ke ainda no aygan salido del clóset kon algunes compañeres de lavoro, ama se sientan cómodes biviendo sus vedra kon amigues.
                     Sé conciente. Puedes, por enshemplo, demandar “qué pronombres deveria uzar en frente de tu jefx?”, etc.
                 - >
@@ -270,15 +270,15 @@ faq:
                 - >
                     La lingua no es un tipo de fechizeria grabada en piedra i otorgada por los dioses.
                     Es una feramenta ke uzamos para comunicarnos.
-                    Kuando trokamos como sociedad, i troka el mundo a muestro alrededor,
+                    Kuando trokamos komo sociedad, i troka el mundo a muestro alrededor,
                     ajustamos la avla ke uzamos para pueder deskrivirlo mijor.
-                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la autoridad</em> ke dictamina cómo se uza.
+                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la autoridad</em> ke dictamina kómo se uza.
                 - >
-                    Los diksionarios se toman sus tiempo para rejistrar esas formas,
+                    Los diksionaryos se toman sus tiempo para rejistrar esas formas,
                     lo cual no hace el trokamiento ilegítimo de ninguna manera.
-                    Eventualmente esas formas, de ser uzadas kon muncha frekuencia, son incluídas en los diksionarios..
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por enshemplo,
-                    aksepta el uso del {/they=“they” singolar} como un pronombre no binario del inglés.
+                    Eventualmente esas formas, de ser uzadas kon muncha frekuencia, son incluídas en los diksionaryos.
+                    El diksionaryo amerikano {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por enshemplo,
+                    aksepta el uso del {/they=“they” singolar} komo un pronombre no binario del inglés.
                 - >
                     También puedes meldar  {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=trabajos académicos}
                     sobre los pronombres no binarios.
@@ -294,7 +294,7 @@ faq:
                 - >
                     Ama se trata, sobre todo, de algo más emportante: kisas tus pronombres sean “obvios”,
                     ama hay personas cuyos pronombres no lo son.
-                    Keren ke nos dirijamos a elles correctamente, independientemente de si “pasan” como sus djenero,
+                    Keren ke nos dirijamos a elles correctamente, independientemente de si “pasan” komo sus djenero,
                     aygan transicionado o no (o keran transicionar o no).
                     Las personas no binarias no siempre “se ven no binarias”, no le devemos androdjinia a dinguno.
                 - >
@@ -365,7 +365,7 @@ contact:
         nameShort: 'Kooperativa'
         description:
             - >
-                {https://pronouns.page=Pronouns.page} i inisiativas relacionadas
+                {https://pronouns.page=Pronouns.page} i inisiativas relasionadas
                 son kreados por la kooperativa “Konsilyo de Lingua Neutrala”.
             # TODO
             # We are a queer collective dedicated to assembling, researching, shaping and promoting
@@ -691,7 +691,7 @@ error:
     generic: 'Algo esta mal. Por favor, abolta a aprovarlo…'
 
 captcha:
-    reason: 'Por favor, demuestra ke no sos un bot para mitigar spam i atakos DDoS.'
+    reason: 'Por favor, demostra ke no sos un bot para mitigar spam i atakos DDoS.'
     invalid: 'CAPTCHA enfirma, por favor aprova de muevo'
 
 mode:
@@ -715,7 +715,7 @@ report:
     sent: 'Tu denusyo tiene sido embiado. Mersi por ayudarnos!'
 
 flags:
-    Abroromantic: 'abroromantik{inflection}'
+    Abroromantic: 'Abroromantik{inflection}'
     Abrosexual: 'Abroseksua{inflection_l}'
     Achillean: 'Akilean{inflection}'
     Alloromantic_Asexual: 'Aloromantik{inflection} aseksua{inflection_l}'
@@ -760,8 +760,8 @@ flags:
     Greyaromantic: 'Grizo-aromantik{inflection}'
     Gynesexual: 'Jineseksua{inflection_l}'
     Heteroflexible: 'Eterofleksible'
-    Heteroromantic: 'Eeteroromantik{inflection}'
-    Heterosexual: 'Eeteroseksua{inflection_l}'
+    Heteroromantic: 'Eteroromantik{inflection}'
+    Heterosexual: 'Eteroseksua{inflection_l}'
     Hijra: 'Hidjra'
     Homoflexible: 'Omofleksible'
     Homoromantic: 'Omoromantik{inflection}'
@@ -784,7 +784,7 @@ flags:
     Pangender: 'Pandjenero'
     Panromantic: 'Panromantik{inflection}'
     Pansexual: 'Panseksua{inflection_l}'
-    Polyamorous: 'Poliamoros{inflection}'
+    Polyamorous: 'Poliamoroz{inflection}'
     Polyromantic: 'Panromantik{inflection}'
     Polysexual: 'Poliseksua{inflection_l}'
     Pomoromantic: 'Pomoromantik{inflection}'
