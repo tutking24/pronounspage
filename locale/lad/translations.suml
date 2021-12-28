@@ -542,11 +542,11 @@ terms:
     header: 'Terminos de Servisio'
     lastUpdate: 'Aktualizados por ultima vez'
     consent: 'Al rejistrarte, akseptas los {/terminos=Terminos de Servisio}.'
-#    you can either leave the terms untranslated, or translate it and include the following disclaimer:
-#    translationDisclaimer: >
-#        The following text is just an auxiliary translation.
-#        The only legally binding version of the Terms of Service is the English one, available
-#        {https://en.pronouns.page/terms=here}.
+    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
     content:
         intro: >
             These Terms of Service govern your access to and use of the Service provided on the website
