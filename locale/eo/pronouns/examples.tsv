@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+Mi pensas, ke {pronoun_subject} estas tre afabla.		FALSE
+Mi demandis {pronoun_subject}n, ĉu mi povas prunti {pronoun_subject}an skribilon.		FALSE
+{'pronoun_subject} diris, ke la libroj estas {pronoun_subject}aj.		FALSE
+{'pronoun_subject} diris, ke {pronoun_subject} preferas mem fari tion.		FALSE

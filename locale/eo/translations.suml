@@ -1,49 +1,37 @@
 title: 'Pronouns.page'
 domain: 'eo.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+description: 'Uzaj ekzemploj de personaj pronomoj kaj genroneŭtrala lingvo.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
-    intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+    link: 'Hejmpaĝo'
+    header: 'Pronomoj'
+    headerLong: 'Listo de pronomoj'
+    why: 'Pri kio temas ĉiuj ĉi pronomoj?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            Ni ĉiuj havas pronomojn. Ili estas tiuj vortoj, kiujn ni uzas anstataŭ nomi iun laŭ ties nomo ĉiufoje, kiam ni mencias rin.
+            Plej multaj homoj uzas {/li=“li”} kaj {/ŝi=“ŝi”}, do oni ofte tuj konjektas ies genron laŭ ties aspekto. Sed fakte ne estas tiel simple...
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            Genro estas malsimpla. Iuj homoj «ne aspektas» kiel sia genro. Iuj preferas esti nomitaj alimaniere ol tiel, kiel vi eble supozus. Por iuj
+            homoj ne taŭgas epitetoj «vira» aŭ «ina», kaj preferas pli neŭtralan lingvon.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Ĉi tiu ilo ebligas disvastigi ligilon al viaj pronomoj, kun ekzemplaj frazoj, por ke vi montru al homoj tiel, kiel vi volas priparoliĝi.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            Kial tio gravas? Pro simpla homa deco. Vi ne nomu Aŝlejon «Samanto» nur ĉar vi pli ŝatas tiun nomon, aŭ ĉar «ŝi aspektas kiel Samanto al vi»,
+            aŭ eĉ se ŝi havas la nomon «Samanto» en sia naskiĝatestilo sed absolute malamas ĝin kaj preferas uzi «Aŝlejo»n. Kaj estas same,
+            teme pri pronomoj – se vi ne volas malĝentili kontraŭ iu, bonvolu alparoli rin ĝuste. La sola malsameco estas, ke oni kutime scias la nomojn, sed
+            ne la pronomojn. Oni prezentas sin per nomo, sed ne per pronomo. Ni ŝanĝu tion!
+    pronouns: 'Listo de popularaj pronomoj'
     generator:
-        header: 'Generator'
+        header: 'Generilo'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            Jen ankaŭ ilo, per kiu vi povas enskribi spacojn en frazoj, kaj generi ligilon disvastigeblan por aliuloj.
+        button: 'Montri la generilon'
+        header2: 'Generi ligilon'
+        base: 'Surbaze de'
+        alt: 'Ankaŭ vi povas enigi interŝanĝeblajn formojn en ĉiu kampo aparte, ekz. <code>li&ŝi</code> = «li» aŭ «ŝi».'
+        pronunciation: ~
+    whatisit: 'Pri kio temas ĉiuj ĉi pronomoj?'
     mission:
         header: 'Our mission'
         summary: 'We fight for freedom, respect and inclusiveness in language.'
@@ -60,74 +48,77 @@ home:
             we don't assume their gender and don't exclude them for any reason.
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
-    plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    header: 'Pronomoj'
+    headerLong: 'Pronomoj'
+    examples: 'Ekzempla uzado en frazoj'
+    plural: 'Pluralo'
+    intro: 'Miaj pronomoj estas'
+    normative: 'Norma'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: 'Generi ligilon al interŝanĝeblaj formoj'
+        header: 'Interŝanĝeblaj formoj'
+        raw: 'interŝanĝeblaj'
+    generated: 'Ĉi tiuj pronomoj estas kreitaj de generilo. La teamo de pronouns.page ne respondecas pri tiuj.'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: 'Ajnaj pronomoj'
+        short: 'ajnaj'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            Kvankam por multaj homoj estas tre grave, ke oni uzu specifajn pronomojn priparolante ilin, por aliaj homoj
+            tute egalas ajnaj pronomoj - se estas klare pri kiu oni parolas.
+        options: 'check out the options [share]{/=here}.'
+    others: 'Aliaj formoj'
+    othersRaw: 'aliaj'
+    or: 'aŭ'
+    grammarTable: 'Tabelo'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
-    toc: 'Show table of contents'
+    header: 'Fontoj'
+    headerLong: 'Ekzemploj el kulturaj tekstoj'
+    headerLonger: 'Genroneŭtrala lingvo en kulturaj tekstoj'
+    subheader: 'Tekstkorpo de genroneŭtrala lingvo'
+    toc: 'Montri enhavtabelon'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Game: 'Game'
-        Other: 'Other'
+        All: 'Ĉio'
+        Book: 'Libroj'
+        Article: 'Artikoloj'
+        Movie: 'Filmoj'
+        Series: 'Serioj'
+        Song: 'Muziko'
+        Poetry: 'Poezio'
+        Game: 'Ludo'
+        Other: 'Alia'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
+        header: 'Alsendi aldonindan ekzemplon'
+        action: 'Alsendi'
+        pronouns: 'Kiuj pronomoj estas uzitaj?'
+        pronounsInfo: 'Enigu la plej simplan formon de la pronomo, tiel kiel en la ligilo, np. «ri», «li&ŝi»'
+        type: 'Tipo de fonto'
+        author: 'Aŭtoro'
+        title: 'Titolo'
+        extra: 'Aldonaj informaĵoj (tradukinto, nomo de ĵurnalo, …)'
+        year: 'Eldonjaro (de la anglalingva versio)'
+        fragments: 'Fragmentoj'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        comment: 'Komento'
+        link: 'Ligilo al la enhavo'
+        thanks: 'Dankon pro kontribui!'
+        another: 'Alsendi pluan'
+        moderation: 'Alsendaĵoj estas aprobendaj antaŭ ol publikigo.'
+        key: 'Ŝlosilo'
+        keyInfo: 'Identigilo por ligi fontojn inter lingvoversiojn kaj ligado al la vortaro'
+        images: 'Bildoj'
+    otherVersions: 'En aliaj lingvoj'
+    referenced: 'Ekzemploj de uzo'
 
 
+# <Maybe not as necessary for Esperanto? Profession names are usually neutral by default>
+#    -> still, the masc/”neutral” -o vs. fem -ino is very androcentric… IMO we should put there a summary of https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto, promote less androcentric options, and show a few examples
+#    -> like, even the word for “woman”, “virino” is literally “a female man” (my random rant: https://twitter.com/AvrisIT/status/1431239864230498310)
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: 'Substantivoj'
+    headerLong: 'Vortaro de neŭtralaj substantivoj'
+    headerLonger: 'Vortaro de of genroneŭtrala lingvo'
+    description: 'Ne nur temas pri pronomoj! Rigardu nian vortaron de genroneŭtralaj substantivoj.'
     intro:
         - >
             Inclusive and gender neutral is not just respecting someone's pronouns.
@@ -157,22 +148,22 @@ nouns:
         another: 'Submit another one'
         moderation: 'Submissions will have to get approved before getting published.'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: 'Uzi ŝablonon'
+    root: 'Radiko'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
-    feminineShort: 'fem.'
-    neuter: 'neutral'
-    neuterShort: 'neutr.'
+    masculine: 'vira'
+    masculineShort: 'vira'
+    feminine: 'ina'
+    feminineShort: 'ina'
+    neuter: 'neŭtrala'
+    neuterShort: 'neŭt.'
 
-    singular: 'singular'
+    singular: 'singulara'
     singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
+    plural: 'plurala'
+    pluralShort: 'plur.'
 
-    image: 'Picture'
+    image: 'Bildo'
 
 community:
     header: 'Community'
@@ -194,63 +185,56 @@ terminology:
     definition: 'Definition'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: 'Oftaj demandoj'
+    headerLong: 'Oftaj demandoj'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'Kio estas neduumeco?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    Genro estas multe pli komplika ol simpla distingo vira/ina.
+                    Eĉ el tute biologia vidpunkto oni distingas ĥromosoman sekson,
+                    genetikan sekson, hormonan sekson, fenotipan sekson…
+                    Tiuj ne necese estas kongruaj kun unu la alia; ili ne devas esti duumecaj.
+                    Kaj kiam temas pri la kultura flanko, «genro» estas socia konstruaĵo.
+                    Depende de tempo kaj loko, esti «virino» aŭ «viro» eble havas tute malsamajn
+                    rajtojn, devojn, normojn… En Eŭropo, viroj iam portis kalkanumojn kaj ŝtrumpojn;
+                    la indiĝenoj de Nordameriko rekonis trian genron dum jarcentoj
+                    {https://eo.wikipedia.org/wiki/Duspiritulo=(duspirituloj)}, ktp. ktp.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    Neduumeco estas vasta termo, kiu priskribas la identecon de homoj,
+                    por kiuj ne kongruas la duumeca distingo de viro/virino.
+                    Tio ekzemple inkluzivas homojn, kiuj estas
+                    sengenraj,
+                    genrofluaj,
+                    duoninaj,
+                    duonviraj,
+                    kaj multaj, multaj aliaj.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    Neduumeco ne necese estas io «inter» vireco kaj ineco. Estas pli «pretere».
+                    Neduumuloj ne ĉiam devas esti androginecaj, uzi neŭtralajn pronomojn, ktp.
+                    Temas pri esti libera de genroroloj, ne pri krei novajn.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Kial mi respektu tiajn <em>strangajn</em> pronomojn?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    Ĉar adresi homojn tiel, kiel ili volas adresiĝi, estas la bazo de sociaj rilatoj.
+                    Vi ne nomus Aŝlejon «Samanto», vi ne forlasus «sinjoro»/«sinjorino» dum adresi la superulojn, ktp.
+                    Kaj estas homoj, kiuj ne volas nomiĝi aŭ «{/li=li}» aŭ «/ŝi=ŝi}».
+                    Se vi ne akceptas tion, tio nur <em>vin</em> montras fie.
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
-        made-up:
-            question: 'Those pronouns are made up!'
-            answer:
-                - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    «Strangaj pronomoj» simple estas afero kutimiĝenda.
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: 'Kiel mi sciu manieron de adresi iun?'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    Vi povas simple demandi! Jes, eble estas iom malgracie, sed ju pli oni tiel faras, des malpli malgracia
+                    fariĝas tio. Se oni povas simple peti ies nomon, kial ne ties pronomon?
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    (Sed bonvolu ne frazigu tion: «ĉu vi estas viro aŭ virino?».
+                    Tiu demando implicas, ke nur estas du ĝustaj respondoj,
+                    kaj sugestas nesanan scivolemon pri ies seksorganoj.
+                    Anstataŭe, vi povas simple demandi: «kiuj estas viaj pronomoj?» aŭ «kiel mi adresu vin?».)
                 - >
                     It's also important to normalise simply telling people your pronouns when you introduce yourself.
                     “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
@@ -339,7 +323,7 @@ faq:
             answer:
                 - >
                     Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    Neduumuloj povas uzi duumajn pronomojn, iuj lesboj uzas {/li=“li”} pro kulturaj kialoj, ktp.
                 - >
                     Simply say “pronouns”.
         flags:
@@ -395,16 +379,16 @@ faq:
                     Exclusionists and queerphobes aren't welcome here.
 
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
+    header: 'Ligiloj'
+    headerLong: 'Pliaj ligiloj'
+    recommended: 'Ni rekomendas'
     blog: 'Blog'
     mediaShort: 'Media'
     media: 'Pronouns.page in the media'
 
     social: 'Social media'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'Alilingvaj versioj'
 
 people: ~
 
@@ -420,7 +404,7 @@ english:
 
 contact:
     header: 'Contact'
-    authors: 'Authors of the website'
+    authors: 'Aŭtoroj de la retejo'
     faq: >
         Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
     technical: >
@@ -432,17 +416,17 @@ contact:
         Just give it up, we're not discussing with trolls.
         It takes us less time to mute you and put your message in the spam folder than it took you to write it.
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
-        description:
-            - >
-                We are a queer collective dedicated to assembling, researching, shaping and promoting
-                gender neutral and nonbinary language.
-                We also support actions towards equality and social justice.
+        name: 'La kolektivo “Konsilistaro pri Neŭtrala Lingvaĵo”'
+        nameShort: 'La kolektivo'
+        description: >
+            We are a queer collective dedicated to assembling, researching, shaping and promoting
+            gender neutral and nonbinary language.
+            We also support actions towards equality and social justice.
         extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
+        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
+        members: 'Nunaj membroj'
         member: 'Member of the collective'
+        blog: 'Blogo'
         upcoming: 'Upcoming language versions'
         join:
             header: 'Join us!'
@@ -481,15 +465,15 @@ support:
         you can use the links below:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
+    header: 'Konto'
+    headerLong: 'Via konto'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
     login:
         help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
+        action: 'Ensaluti'
         emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        userNotFound: 'Konto ne trovita.'
         email:
             subject: 'Your login code is {{code}}'
             instruction: 'To confirm your email address, enter the following single-use code on the website:'
@@ -500,25 +484,25 @@ user:
         instancePlaceholder: 'Instance'
     code:
         action: 'Validate'
-        invalid: 'Invalid code.'
+        invalid: 'Nevalida kodo.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'Uzantnomo'
+            action: 'Ŝanĝi'
+            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
+            taken: 'La uzantnomo jam estas uzata.'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
+            header: 'Retpoŝtadreso'
+            action: 'Ŝanĝi'
+            invalid: 'Nevalida retpoŝtadreso.'
+            taken: 'La retpoŝtadreso jam estas uzata.'
         admin: 'Admin'
-    logout: 'Log out'
+    logout: 'Elsaluti'
     avatar:
         header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        change: 'Ŝanĝi'
+    deleteAccount: 'Forigi la konton'
+    deleteAccountConfirm: 'Ĉu vi certas, ke vi volas forigi vian konton? Vi ne povos malfari ĉi tion!'
     socialConnection:
         list: 'Social media connections'
         connect: 'Connect'
@@ -544,9 +528,9 @@ user:
         disableConfirm: 'Are you sure you want to disable MFA?'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'Priskribo'
+    names: 'Nomoj'
+    pronouns: 'Pronomoj'
     pronounsInfo: >
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
         or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
@@ -556,61 +540,55 @@ profile:
         You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
         If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
         you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
+    pronounsNotFound: 'Ni ne povas trovi ligilon al la pronomo!'
+    words: 'Vortoj'
+    birthday: 'Aĝo'
+    birthdayInfo: 'Ni ne publikgas vian naskiĝtagon, nur la kalkulitan aĝon.'
+    flags: 'Flagoj'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    links: 'Links'
+    links: 'Ligiloj'
     linksRecommended: 'We recommend linking to'
-    column: 'Column'
+    column: 'Kolumno'
 
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    header: 'Kartoj'
+    list: 'Viaj kartoj'
+    init: 'Krei karton'
+    show: 'Montri'
+    edit: 'Redakti'
+    delete: 'Forigi'
+    deleteConfirm: 'Ĉu vi certas, ke vi volas forigi la karton?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
+        header: 'Kartoredaktilo'
+        save: 'Konigi vian karton'
         defaults: 'Restore defaults'
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
+        yes: 'Jes'
+        jokingly: 'Ŝerce'
         close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    banner: >
-        You can also use our website to create a card, {/@example=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
+        meh: 'Eble'
+        no: 'Ne'
     card:
         link: 'Card picture'
         generate: 'Generate'
         generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
 
-share: 'Share'
+share: 'Konigi'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
+    approve: 'Aprobi'
+    hide: 'Kaŝi'
+    remove: 'Forigi'
+    removeConfirm: 'Ĉu vi certas, ke vi volas forigi la eron?'
+    edit: 'Redakti'
+    add: 'Aldoni'
     filter: 'Filter'
     filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
+    search: 'Serĉi…'
+    author: 'Aldonita de'
     saved: 'Changes saved successfully!'
     loginRequired: '{/account=Log in} to submit an entry'
     copy: 'Copy link'
@@ -632,20 +610,20 @@ authRequired:
     go: 'Go to the login form'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
+    header: 'Ĉu vi certas?'
+    yes: 'Jes, mi certas'
+    no: 'Ne, mi volas reveni'
     ok: 'OK'
 
 terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
     consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
-#    you can either leave the terms untranslated, or translate it and include the following disclaimer:
-#    translationDisclaimer: >
-#        The following text is just an auxiliary translation.
-#        The only legally binding version of the Terms of Service is the English one, available
-#        {https://en.pronouns.page/terms=here}.
+    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
     content:
         intro: >
             These Terms of Service govern your access to and use of the Service provided on the website
@@ -767,8 +745,8 @@ table:
     more: 'Show more'
 
 api:
-    header: 'Public API'
-    example: 'Example'
+    header: 'Publika API'
+    example: 'Ekzemplo'
     query: 'Query string parameters'
 
 quotation:
@@ -785,10 +763,10 @@ localise:
 images:
     upload:
         instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instructionShort: 'Alŝutu'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'Io fuŝiĝis, bonvolu reprovi ...'
 
 captcha:
     reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
