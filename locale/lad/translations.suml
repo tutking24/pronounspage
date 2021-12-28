@@ -1,638 +1,547 @@
 title: 'Pronouns.page'
-domain: '<TODO>.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+domain: 'lad.pronouns.page'
+description: 'Enshemplos de uzo de pronombres personales i avla neutrala.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
-    intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+    link: 'Inisio'
+    header: 'Pronombres'
+    headerLong: 'Lista de pronombres'
+    why: 'Por ke los pronombres son emportantes?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            Todes tenemos pronombres. Son los biervos ke uzamos al lugar del nombre para azer referensia a alguno a kien ya mensionamos.
+            La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos automatikamente kualo uzar kon base en sus apariensya.
+            Ma en realidad no es tan simple…
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            El djenero es komplikado. Algunas personas no “se ven” komo sus djenero.
+            Algunes preferan ser yamades de manera diferente a lo ke une asumiria.
+            Algunas personas no enkashan en las kashas “maskulino” o “feminino” i preferan una avla mas neutrala.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Esta feramenta te permete atar a tus pronombres, kon enshemplos de uzo en frazas,
+            para ke puedas mostrarle a la djente cómo preferas ke te yamen.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            Por ke emporta? Por simple bondad umana.
+            No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akeyo nombre
+            o porke “tiene mas kara de Rashel para ti”.
+            O inkluzo si eya <em>sí</em> se yama “Rashel” en su nefus
+            ama detesta akeyo nombre i prefera uzar “Miriam”.
+            Es egzaktamente lo mismo kon los pronombres –
+            si no keres ser abdal kon algun, avla de akeya persona korektamente.
+            La sola diferensia es ke normalmente konosemos los nombres, ama no los pronombres.
+            Mos prezentamos kon muestro nombre, ama no kon muestros pronombres. Agamos un trokamiento!
+    pronouns: 'Lista de pronombres populares'
     generator:
-        header: 'Generator'
+        header: 'Jenerador'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            Tambien puedes uzar esta ferameta para enchir los espasios en blanko
+            i jenerar un atadijo ke puedes partajar.
+        button: 'Mostrar el jenerador'
+        header2: 'Jenerar un atadijo'
+        base: 'Kon baza en'
+        alt: 'Tambien puedes introduzir formas interkambiables por separado en kada kampo, por enshemplo <code>el&eya</code> = „el” o eya”.'
+        pronunciation: 'Tambien puedes espesifikar la pronunsiasion de una entrada uzando el AFI, por enshemplo <code>eyx|ˈe.ʝe</code> = „eyx”, se pronunsia /ˈe.ʝe/.'
+    whatisit: 'Por ke emportan los pronombres?'
+
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Muestra misyon'
+        summary: 'Peleamos por la libertad, el respekto i la inkluzividad en la lingua.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Libertad</strong>
+            – para ke todes puedan uzar <em>para si mismes</em>
+            los pronombres ke sientan ke mijor les deskriven
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Respekto</strong>
+            – para ke los pronombres de <em>otrunas personas</em> sean respektados
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inkluzividad</strong>
+            – para ke kuando mensionamos a una persona ke no konosemos o a un grupo de djente
+            no presupongamos su djenero i no les excluyamos por ninguna razon
+
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
+    header: 'Pronombres'
+    headerLong: 'Pronombres'
+    examples: 'Enshemplos de uzo en frazas'
     plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    intro: 'Mis pronombres son'
+    normative: 'Normativo'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: 'Jenerar un atadijo a las formas interkambiables'
+        header: 'Formas interkambiables'
+        raw: 'interkambiable'
+    generated: 'Estos pronombres tienen sido kreados kon un jenerador. La taifa de pronouns.page no es responsavla de eyos.'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: 'Kualkier pronombre'
+        short: 'kualkier'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            Aunke para muncha djente sea muy emportante ke se uzen pronombres espesifikos para avlar de elles,
+            a otrunes no les molesta ke les llamen de kualkier manera - mientres ke en el konteksto sea klaro a ken se esta avlando.
+        options: 'Mira las opsiones [share]{/pronombres=aki}.'
+    others: 'Otrunas formas'
+    othersRaw: 'Otrunas'
+    or: 'o'
+    grammarTable: 'Tabla'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
-    toc: 'Show table of contents'
+    header: 'Fuentes'
+    headerLong: 'Enshemplos de kontekstos kulturales'
+    headerLonger: 'Lingua neutrala en tekstos kulturales'
+    subheader: 'Korpus de teksto de djenero neutro'
+    toc: 'Mostrar tabla de kontenidos'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Game: 'Game'
-        Other: 'Other'
+        All: 'Todo'
+        Book: 'Livros'
+        Article: 'Artikolos'
+        Movie: 'Filmos'
+        Series: 'Serias'
+        Song: 'Muzika'
+        Poetry: 'Poezia'
+        Game: 'Djugos'
+        Other: 'Otrunos'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
-
+        header: 'Embiar un enshemplo para ke sea adisyonado'
+        action: 'Embiar'
+        pronouns: 'Ke pronombres tienen sido uzados?'
+        pronounsInfo: 'Introduze la forma más simple del pronombre, komo se topa en el atadijo, p. en. “eye”, “el/lo”, “el o eya”'
+        type: 'Tipo de fuente'
+        author: 'Autor/a/e/x'
+        title: 'Titolo'
+        extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
+        year: 'Año de publiksyon (de la version en djudezmo)'
+        fragments: 'Fragmentos'
+        comment: 'Komentario'
+        link: 'Atadijo al kontenido'
+        thanks: 'Mersi por kontribuir!'
+        another: 'Embiar otruno'
+        moderation: 'Los embios deven ser aseptados antes de ser publikados.'
+        key: 'Yave'
+        keyInfo: 'Identifiador para atar fuentes entre versiones en varias linguas i atarlas kon el diksionario'
+        images: 'Imajes'
+    otherVersions: 'En otrunas linguas'
+    referenced: 'Enshemplos del uzo'
 
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: 'Diksyonario'
+    headerLong: 'Diksyonario de sustantivos neutros'
+    headerLonger: 'Diksyonario de lingua neutrala'
+    description: 'No son solo pronombres! Mira muestro diksionario de avla neutrala.'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+            Uzar avla inkluziva i neutrala del djenero no es solo uzar los pronombres korektos de otruna persona.
+            Tambien es dekrivir su lavoro, pozision, relasion, ets.
+            de una manera ke no asuma su djenero.
+            No todes les polisiyas son “ombres de la ley”. No todos las pares son un “espozo” o una “espoza”.
         - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
+            Kuando te refieres a alguno el djenero de kien deskonoses,
+            a un grupo de personas kon varios djeneros distintos,
+            i espesialmente a personas no binarias ke eksplisitamente lo preferen,
+            uza las formas neutralas.
         - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
+            Abasho prezentamos un diksionario kon biervos a konsiderar.
+            Puedes kontribuir en el i adisyonar tus sujesiones.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: 'propozisiones aseptadas'
+    pending: 'asperando moderasion'
+    edit: 'Propozar un trokamiento'
+    edited: 'Trokamiento propozado'
+    editing: 'Estas editando una partida egzistente'
+    empty: 'No se toparon biervos ke koensidan kon la bushkeda'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: 'Embiar'
+        actionLong: 'Embiar un biervo'
+        thanks: 'Mersi por tu kontribusyon!'
+        another: 'Embiar otruno'
+        moderation: 'Los embios deven ser aseptados antes de ser publikados.'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: 'Uzar una plantiya'
+    root: 'Rais'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
+    masculine: 'maskulino'
+    masculineShort: 'mask.'
+    feminine: 'feminino'
     feminineShort: 'fem.'
     neuter: 'neutral'
     neuterShort: 'neutr.'
 
-    singular: 'singular'
+    singular: 'singolar'
     singularShort: 'sing.'
     plural: 'plural'
     pluralShort: 'pl.'
 
-    image: 'Picture'
+    image: 'Imaje'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'Komunita'
+    headerLong: 'Komunita kuir'
 
 terminology:
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
+    header: 'Terminolojia'
+    headerLong: 'Diksionario de terminolojia kuir'
     info:
         - >
-            Many of the terms and phrases related to the LGBTQ+ community
-            are used as English inserts into <your language> texts.
-            We'd like to present a glossary of those terms, describe their meaning,
-            and propose their <your language> translations.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
+            Un diksionario de terminolojia relasionada kon la komunita LGBTQ+.
+    term: 'Termino'
+    original: 'Etimolojia'
+    category: 'Kategoria'
+    images: 'Imajes adisionales, de fuera del katalog de bandieras'
+    definition: 'Definision'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: 'Demandas'
+    headerLong: 'Demandas frekuentes'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'Ke es ser <em>no binarie</em>?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    El djenero es muncho mas komplikado ke una simple distinksyon entre maskulino i feminino.
+                    Inkluzo desde un punto de vista puramente biolojiko distinguimos sekso kromosomiko,
+                    sekso djenetiko, sexo ormonal, sexo fenotipiko…
+                    No son nesesariamente kongruentes uno kon el otruno, no tienen ke ser binarios.
+                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aki)}.
+                    I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
+                    Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
+                    derechos, obligaciones, reglas a seguir, etc. radicalmente diferentes. En Europa los ombres solían uzar tacones altos i faldas,
+                    munchos pueblos originarios de Norteamérica tienen reconocido un tercer djenero por siglos, como
+                    {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espíritus}, {https://es.wikipedia.org/wiki/Muxe=muxe}, etc. etc.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    “No binarie” es un término ke deskrive la identidad de personas que
+                    no enkashan en la distinción binaria de hombre/mujer.
+                    Incluye personas
+                    {https://gsrdi.fandom.com/es/wiki/Ag%C3%A9nero=adjenero},
+                    {https://es.wikipedia.org/wiki/G%C3%A9nero_fluido=djenero fluído},
+                    {https://gender.wikia.org/wiki/Demigirl=demichicas (en inglés)},
+                    {https://gender.wikia.org/wiki/Demiboy=demichicos (en inglés)},
+                    i {https://es.wikipedia.org/wiki/G%C3%A9nero_no_binario=munches, munches más}.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    No binario no es necesariamente algo “intermedio” entre maskulino i feminino. Más bien está “más allá”.
+                    Las personas no binarias no tienen ke ser androdjinas, o uzar avla neutrala, etc.
+                    Se trata de liberarse de los roles de djenero, no de krear muevos.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Por ke deveria respetar los pronombres <em>raros</em> de otruna persona?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
-                - >
-                    “Strange pronouns” are just a matter of getting used to.
-        made-up:
-            question: 'Those pronouns are made up!'
+                    Porque dirigirse a las personas en la manera ke lo preferan es la base de las relaciones sosyales.
+                    No yamarias “Rashel” a Miriam, no le avlarias “de tú” a tu jefx o supervisore, etc.
+                    Y hay personas ke no keren ser yamadas “{/el=el}” o “{/eya=eya}”.
+                    Si no puedes akseptarlo, eso sólo avla mal <em>de tí</em>.
+        solo-pronombres:
+            question: 'Entonces basta kon dezirle “eya” a mi amigo?'
             answer:
                 - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    No! El djenero está presente no sólo en los pronombres, sino en sustantivos, ajektivos, etc.
+                    No te refieres como “eya” a tu “amigo”, sino a tu “amiga”.
+                    Respetar la identidad de djenero de una persona implica respetarla no sólo en sus pronombres, sino
+                    en todo lo referente a la avla al referirnos a elle.
+                - >
+                    Ansi, dizimos ke <em>elle</em> es muestre amigue, ke puede ser profesore, eleve, etc., i le keremos muncho.
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: 'Cómo sé cómo dirigirme a alguno?'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    Puedes demandar! Sí, puede ser un poko inkomodo, ama cuanto más lo hagamos, manko incómodo se abolta.
+                    Si podemos demandarle a alguno su nombre, por ke no sus pronombres?
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    (Sólo ke por favor no demandes “eres niño o niña?”.
+                    Esta demanda implica ke sólo hay dos repuestas correctas,
+                    i sugiere una curiosidad poco saludable por los genitales de otrunas personas.
+                    En su lugar, puedes demandar “kualos son tus pronombres?” o “Cómo me deveria dirigir a tí?”)
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    También es emportante normalizar el dezir tus pronombres kuando te presentas kon alguno.
+                    “Hola, so Miguel, {/él=él/lo}”. No es zor – ma sinyifika muncho para las personas trans i no binarias!
+                    Es inkluzo más kolay en línea: Sólo pon tus pronombres (o un atadijo a enshemplos de muestro sitio web) en tu <em>bio</em>.
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    También ten en mente ke munchas personas uzan un nombre i pronombres distintos en diferentes contextos.
+                    Puede ke ainda no aygan salido del clóset kon algunes compañeres de lavoro, ama se sientan cómodes biviendo sus vedra kon amigues.
+                    Sé conciente. Puedes, por enshemplo, demandar “qué pronombres deveria uzar en frente de tu jefx?”, etc.
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    Algunas personas ofrecen varios pronombres, p. ej. “{/el&eya=el o eya}” o “{/eye&el=eye o el}”.
+                    Eso sinyifika ke les plazen todas esas formas. Normalmente, la prima opsion es la ke preferan.
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: 'Y sí se uza?'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    Sí! Millones de personas no binarias en el mundo lo hacen.
+                    Cada pronombre enlistado aki es uzado por una persona en su día a día.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: 'Esos pronombres no binarios están aseptados por alguna autoridad?'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    La lingua no es un tipo de fechizeria grabada en piedra i otorgada por los dioses.
+                    Es una feramenta ke uzamos para comunicarnos.
+                    Kuando trokamos como sociedad, i troka el mundo a muestro alrededor,
+                    ajustamos la avla ke uzamos para pueder deskrivirlo mijor.
+                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la autoridad</em> ke dictamina cómo se uza.
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    Los diksionarios se toman sus tiempo para rejistrar esas formas,
+                    lo cual no hace el trokamiento ilegítimo de ninguna manera.
+                    Eventualmente esas formas, de ser uzadas kon muncha frekuencia, son incluídas en los diksionarios..
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por enshemplo,
+                    aksepta el uso del {/they=“they” singolar} como un pronombre no binario del inglés.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
+                    También puedes meldar  {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=trabajos académicos}
+                    sobre los pronombres no binarios.
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'Por ke deveria incluir mis pronombres en mis redes sosyales?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    Si sos cis (= no sos trans) i uzas „{/el=el}” o „{/eya=eya}” de akodro kon tu djenero,
+                    puedes pensar ke tus pronombres son <em>obvios</em>.
+                    Y sí, kisas lo sean – siempre i kuando menciones tu nombre en tu profil (y este sea tradicionalmente maskulino o feminino)
+                    o si tu foto de profil es una foto de tí.
+                    Munchas personas no komplen kon esas características – ansi ke no siempre es kolay adivinar kon ke pronombre preferan ser yamades.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    Ama se trata, sobre todo, de algo más emportante: kisas tus pronombres sean “obvios”,
+                    ama hay personas cuyos pronombres no lo son.
+                    Keren ke nos dirijamos a elles correctamente, independientemente de si “pasan” como sus djenero,
+                    aygan transicionado o no (o keran transicionar o no).
+                    Las personas no binarias no siempre “se ven no binarias”, no le devemos androdjinia a dinguno.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    Partajar muestros pronombres es emportante para las personas trans, no binarias, i de djenero no conforme.
+                    Nos expone.
+                    Ama si las personas cis hacen lo mismo, hacen el mundo mijor para mozotres.
+                    Nos hace sentir más cómodes, segures, i bienvenides
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(más razones (en inglés) aki).}
         change:
-            question: 'Can I change my pronouns?'
+            question: 'Puedo trokar mis pronombres?'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    Por supuesto! Dinguno se sorprende kuando alguno troka su punto de vista, estilo, hobbies…
+                    Ansi ke por ke sería extraño ke ese alguno deskuvriera una parte de su identidad,
+                    o ke le deshara de plazer su nombre, deskuvriera una etiqueta ke enkasha bien kon elle, etc.?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: 'Es estranyo ke no me acostumbre a <em>mis propios</em> muevos pronombres?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    Para nada! Dospues de munchos años de uzar los pronombres ke mijor se adaptan al djenero asignado al nacer
+                    es kolay olvidarse a une misme al trokarlos.
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    Pronombres ≠ djenero.
+                    Tu djenero no trokara de repente porque alguno te llamó “elle”.
+                    No te perkures. Experimenta. Ve ke enkasha mijor contigo.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: 'Por ke no deveria dezir “pronombres preferidos”?'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    Porque dezirlo ansi sugiere ke los pronombres son un capricho.
+                    Si alguno simplemente “prefera” ke le digan “eya”, no se sentirá mal _realmente_ si la llamo “él”, no?
+                    Parece chico, dospues de todo, ansi ke será más kolay para mí!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+                    No! Son muestros pronombres. No muestros “pronombres preferidos”. Son muestros nombres, no muestros “nombres preferidos”.
+                    Si tus amigues i seres kerides trans i no binaries son emportantes para ti, yamales de la manera correcta.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: 'Por ke no deveria dezir “pronombres de djenero”?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    Porque djenero ≠ pronombres. Los pronombres son sólo gramática.
+                    Las personas no binarias pueden uzar pronombres binarios, algunas lesbianas uzan {/él=él/lo} por razones culturales, etc.
                 - >
-                    Simply say “pronouns”.
-        flags:
-            question: 'Can you add this flag? Can you remove that flag?'
-            answer:
-                - >
-                    No.
-                - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
-                - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
-                - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
-                - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
-        custom-pronouns:
-            question: 'My pronouns aren''t listed'
-            answer:
-                - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
-                - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
-        business:
-            question: 'Are you a business?'
-            answer:
-                - >
-                    Nope. We're volunteers.
-                    We create the website with our own work.
-                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
-                    the rest comes out of our own pockets
-                    and {/contact#support=your donations} – for which we're very grateful! ❤️
-                - >
-                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
-                    you're doing us a favour. It's not like we were making any money on you.
-                    Exclusionists and queerphobes aren't welcome here.
+                    Simplemente di “pronombres”.
 
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
+    header: 'Atadijos'
+    headerLong: 'Atadijos eksternos'
+    recommended: 'Rekomendamos'
+
     blog: 'Blog'
-    mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
 
-    social: 'Social media'
+    mediaShort: 'Los medios'
+    media: 'Pronouns.page en los medios'
 
-    languageVersions: 'Other language versions'
+    social: 'Redes sosyales'
+
+    languageVersions: 'Versiones en otrunas linguas'
 
 people: ~
 
 english: ~
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
-    faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
-    technical: >
-        Do you have a technical issue or question? Please include your username and as many details as possible
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-    hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+    header: 'Kontakto'
+    authors: 'Autores/as/xs del sitio web'
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: 'Kooperativa “Konsilyo de Lingua Neutrala”'
+        nameShort: 'Kooperativa'
         description:
             - >
-                We are a queer collective dedicated to assembling, researching, shaping and promoting
-                gender neutral and nonbinary language.
-                We also support actions towards equality and social justice.
-        extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
-        join:
-            header: 'Join us!'
-            encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
-            areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
-            allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
-            application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+                {https://pronouns.page=Pronouns.page} i inisiativas relacionadas
+                son kreados por la kooperativa “Konsilyo de Lingua Neutrala”.
+            # TODO
+            # We are a queer collective dedicated to assembling, researching, shaping and promoting
+            # gender neutral and nonbinary language.
+            # We also support actions towards equality and social justice.
+        logo: 'El logo de la kooperativa es una kombinasion del simbolo transdjenero i una foshka de dialogo ke simboliza la lingua.'
+        members: 'Miembros aktuales'
+        member: 'Miembro de la kooperativa'
+        upcoming: 'Futuras versiones en otrunas linguas'
 
 support:
-    header: 'Support'
+    header: 'Arrimanos'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        Si keres donar para el servidor, los dominios, stikers ets., o simplemente merkarles una bira a les autorxs,
+        puedes uzar los siguientes atadijos:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    header: 'Kuento'
+    headerLong: 'Tu kuento'
+    tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        # TODO
+        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
+        action: 'Inisiar tenida / rejistrarte'
+        emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
+        userNotFound: 'Uzadore no topade.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'Tu kodiche de inisio de tenida es %code%'
+            content: |
+                Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio web: %code%.
+
+                Si no demandates este kodiche, simplemente inyora este mesaje.
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
-        instancePlaceholder: 'Instance'
+            Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
+        passwordless: 'Este sitio web no guadra las kontrasenyas. {https://avris.it/blog/passwords-are-passé=Mas informasion.}'
+        instancePlaceholder: 'Instansia'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'Balidar'
+        invalid: 'Kodiche enfirmo.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'Nombre de uzadore'
+            action: 'Trokar'
+            invalid: 'El nombre de uzadore deve tener entre 4 i 16 sinyos i solo puede kontener numeros, letras, puntos, giadores i giadores bashos.'
+            taken: 'Este nombre de uzadore ya esta en uzo.'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
+            header: 'Adreso de posta elektronika'
+            action: 'Trokar'
+            invalid: 'Adreso de posta enfirmo.'
+            taken: 'Este adreso ya esta en uzo.'
         admin: 'Admin'
-    logout: 'Log out'
+    logout: 'Serrar tenida'
     avatar:
         header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        change: 'Trokar'
+    deleteAccount: 'Kitar kuento'
+    deleteAccountConfirm: 'Konfirmas ke keres kitar tu kuento? Esto va ser irreversible!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'Koneksiones de redes sosyales'
+        connect: 'Konektar'
+        refresh: 'Aktualizar'
+        disconnect: 'Deskonektar'
+        disconnectConfirm: 'Konfirmas ke keres kitar esta koneksion? (Siempre puedes inisiar tenida uzando la posta elektronika %email%)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'Autentikasion en dos pasos'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentikasion TOTP
+            (p.e. {https://authy.com/=Authy}) y luego introduze el primo token jenerado.
         recovery:
-            header: 'Recovery code'
+            header: 'Kodiche de rekuperasion'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Guarda los siguientes kodiches de rekuperasion en un lugar seguro.
+                Podras uzarlos para pasar la autentikasion en dos pasos (A2P) en kavzo de que piedres tu dispozitivo de autentikasion.
+            saved: 'Okey, ya los guadre!'
+            enter: 'Introduze el kodiche de rekuperasion'
+        cancel: 'Anular inisio de tenida'
+        enabled: 'Aktivado'
+        enable: 'Aktivar A2P'
+        disable: 'Dezaktivar A2P'
+        disableConfirm: 'Estas segure de ke keres dezaktivar la A2P?'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'Deskripsion'
+    names: 'Nombres'
+    pronouns: 'Pronombres'
     pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    links: 'Links'
-    linksRecommended: 'We recommend linking to'
-    column: 'Column'
+        Puedes introduzir un <strong>pronombre</strong> (p. ej. “eye” o “eya”)
+        o un <strong>atadijo</strong> (“http://es.pronouns.page/eyx”).
+        Puedes tambien uzar el {/pronombres#generator=<strong>jenerador</strong>} para inchir las frazas kon formas personalizadas.
+    pronounsNotFound: 'Formato no rekonosido. Por favor melda las instruksiones de arriba.'
+    words: 'Biervos'
+    birthday: 'Edad'
+    birthdayInfo: 'No publikamos la data de tu aniversario, solo la edad kalkolada.'
+    flags: 'Bandieras'
+    flagsInfo: 'Arrastra tus bandieras de orgolyo a este marko.'
+    flagsCustom: 'Karga una bandiera personalizada'
+    flagsCustomWarning: 'Esta bandiera fue kargada por un uzadore. La taifa de pronouns.page no es responsable de eya.'
+    links: 'Atadijos'
+    linksCake: 'Rekomendamos atadijos a'
+    column: 'Kolona'
 
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    header: 'Kartas'
+    list: 'Tus kartas'
+    init: 'Krea una karta'
+    show: 'Mostrar'
+    edit: 'Editar'
+    delete: 'Kitar'
+    deleteConfirm: 'Konfirmas de ke keres kitar esta karta?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
-        defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
+        header: 'Editor de karta'
+        save: 'Guadra tu karta'
+        defaults: 'Restorar valores predeterminados'
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    banner: >
-        You can also use our website to create a card, {/@example=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
-    card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
+        yes: 'Si'
+        jokingly: 'En shaka'
+        close: 'Solo si somos personas serkanas'
+        meh: 'Okey'
+        no: 'No'
 
-share: 'Share'
+    banner: >
+        Puedes tambien uzar muestro sitio web para krear una karta {/@example=komo esta},
+        ke kontenga tus nombres, pronombres, bandieras de orgolyo, biervos preferidos etc.
+        Dospues podras poner un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
+        Simplemente krea un kuento {/account=aki}.
+    bannerButton: 'Krear una karta'
+    card:
+        link: 'Imaje de la karta'
+        generate: 'Jenerar'
+        generating: 'Jenerando…'
+    empty: 'Esta persona ainda no tiene kreado ninguna karta.'
+
+share: 'Partajar'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
+    approve: 'Aseptar'
+    hide: 'Eskonder'
+    remove: 'Kitar'
+    removeConfirm: 'Konfirmas ke keres kitar esta partida?'
+    edit: 'Editar'
+    add: 'Adisyonar'
+    filter: 'Filtrar'
+    filterLong: 'Filtrar la lista…'
+    search: 'Bushkar…'
+    author: 'Adisyonado por'
+    saved: 'Los trokamientos se guadraron kon sukseso!'
+    loginRequired: '{/kuento=Inisiar} tenida para embiar una propozision'
+    copy: 'Kopiar atadijo'
+    download: 'Abashar'
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media'
-    legal: 'Legal'
-    technical: 'Technical'
+        {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
+    links: 'Kontakto, redes sosyales, apoyo'
+    legal: 'Legal' # TODO
+    technical: 'Technical' # TODO
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'Oja no topada'
+    back: 'Aboltar a la oja de inisio'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'Deves inisiar tenida para ver este sitio'
+    go: 'Ir al sitio de inisio de tenida'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
+    header: 'Konfirmas esta dechizion?'
+    yes: 'Si, lo esto'
+    no: 'No, anular'
     ok: 'OK'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: 'Terminos de Servisio'
+    lastUpdate: 'Aktualizados por ultima vez'
+    consent: 'Al rejistrarte, akseptas los {/terminos=Terminos de Servisio}.'
 #    you can either leave the terms untranslated, or translate it and include the following disclaimer:
 #    translationDisclaimer: >
 #        The following text is just an auxiliary translation.
@@ -742,25 +651,24 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
 
 admin:
-    header: 'Admin panel'
+    header: 'Panel de Administradores'
     user:
-        user: 'User'
-        createdAt: 'Registration date'
-        email: 'Email'
-        roles: 'Permissions'
+        user: 'Uzadore'
+        email: 'Posta elektronika'
+        roles: 'Rol'
         profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        confirmRole: 'Konfirmas ke keres trokar el rol de @%username% a "%role%"?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: 'Vaziyo…'
+    count: 'Kuento'
+    sort: 'Arrastra para ordenar'
+    scrollUp: 'Subir hasta arriba'
+    more: 'Mostrar mas'
 
 api:
     header: 'Public API'
-    example: 'Example'
+    example: 'Enshemplo'
     query: 'Query string parameters'
 
 quotation:
@@ -769,152 +677,254 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: 'Adisyonar versiones'
+    short: 'Adisyonar versiones en otrunas linguas'
+    long: 'Keres adisyonar una version en otruna lingua? Melda'
+    longLink: 'este manual!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: 'Klikea aki o arrastra tus imajes aki'
+        instructionShort: 'Kargar'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'Algo esta mal. Por favor, abolta a aprovarlo…'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Por favor, demuestra ke no sos un bot para mitigar spam i atakos DDoS.'
+    invalid: 'CAPTCHA enfirma, por favor aprova de muevo'
 
 mode:
-    dark: 'Dark mode'
-    light: 'Light mode'
+    dark: 'Modo eskuro'
+    light: 'Modo klaro'
 
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/terms=Terms of Service}'
+    reason: 'Razon para banear'
+    visible: '(esto sera visivle para le uzadore)'
+    terms: 'Reglas de Terminos de Servisio rotas (nesesario)'
+    action: 'Banear esta persona'
+    confirm: 'Estás segure ke keres banear a @%username%?'
+    header: 'Has sido baneado. Tu profil no se mostrara a dinguno.'
+    banned: 'Baneado'
+    termsIntro: 'De akodro kon muestros {/terminos=Terminos de Servicio}:'
 
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: 'Denusyar abuzo'
+    comment: 'Por favor explika brevamente ke esta mal kon este profil'
+    confirm: 'Estas segure ke keres denusyar a @%username%?'
+    sent: 'Tu denusyo tiene sido embiado. Mersi por ayudarnos!'
+
+flags:
+    Abroromantic: 'abroromantik{inflection}'
+    Abrosexual: 'Abroseksua{inflection_l}'
+    Achillean: 'Akilean{inflection}'
+    Alloromantic_Asexual: 'Aloromantik{inflection} aseksua{inflection_l}'
+    Agender: 'Adjenero'
+    Ambiamorous: 'Ambiamoroz{inflection}'
+    Anarcha-Queer: 'Anarka-kuir'
+    Androgyne: 'Androdjine'
+    Androsexual: 'Androseksua{inflection_l}'
+    Aporagender: 'Aporadjenero'
+    Archaeopronouns: 'Arkeopronombres'
+    Aroace: 'Aro-as'
+    Aromantic: 'Aromantik{inflection}'
+    Aromantic_Allosexual: 'Aromantik{inflection} aloseksua{inflection_l}'
+    Asexual: 'Aseksua{inflection_l}'
+    Autigender: 'Autidjenero'
+    Bear: 'Lonso'
+    Bicurious: 'Bikuryoz{inflection}'
+    Bigender: 'Bidjenero'
+    Biromantic: 'Biromantik{inflection}'
+    Bisexual: 'Biseksua{inflection_l}'
+    Butch: 'Butch'
+    Ceteroromantic: 'Seteroromantik{inflection}'
+    Ceterosexual: 'Seteroseksua{inflection_l}'
+    Cis_Ally: 'Aliad{inflection} sis'
+    Demiboy: 'Demichiko'
+    Demigender: 'Demidjenero'
+    Demigirl: 'Demichika'
+    Demiromantic: 'Demiromantik{inflection}'
+    Demisexual: 'Demiseksua{inflection_l}'
+    Diamoric: 'Diamorik{inflection}'
+    Enbian: 'Nobian{inflection}'
+    Fa*afafine: 'Fa''afafine'
+    Femme: 'Feminin{inflection}'
+    Gay: 'Gey'
+    Gender_Questioning: 'Kestionandose el djenero'
+    Genderfae: 'Fadadjenero'
+    Genderfaun: 'Faunodjenero'
+    Genderfluid: 'Djenero-fluido'
+    Genderflux: 'Djenero-flujo'
+    Genderqueer: 'Djenero kuir'
+    Greyasexual: 'Grizo-aseksua{inflection_l}'
+    Greyaromantic: 'Grizo-aromantik{inflection}'
+    Gynesexual: 'Jineseksua{inflection_l}'
+    Heteroflexible: 'Eterofleksible'
+    Heteroromantic: 'Eeteroromantik{inflection}'
+    Heterosexual: 'Eeteroseksua{inflection_l}'
+    Hijra: 'Hidjra'
+    Homoflexible: 'Omofleksible'
+    Homoromantic: 'Omoromantik{inflection}'
+    Intersex: 'Interseksua{inflection_l}'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Orgolyo de kuero'
+    Lesbian: 'Lezbiana'
+    Lesbiromantic: 'Lezbiromantik{inflection}'
+    Maverique: 'Maverike'
+    Monoamorous: 'Monoamoroz{inflection}'
+    Monogamous: 'Monogama'
+    Muxe: 'Mushe'
+    Nebularomantic: 'Nebularomantik{inflection}'
+    Neopronouns: 'Neopronombres'
+    Neutrois: 'Neutres'
+    Nonbinary: 'No binari{inflection}'
+    Omnisexual: 'Omniseksua{inflection_l}'
+    Omniromantic: 'Omniromantik{inflection}'
+    Oriented_Aroace: 'Aro-as orientad{inflection}'
+    Pangender: 'Pandjenero'
+    Panromantic: 'Panromantik{inflection}'
+    Pansexual: 'Panseksua{inflection_l}'
+    Polyamorous: 'Poliamoros{inflection}'
+    Polyromantic: 'Panromantik{inflection}'
+    Polysexual: 'Poliseksua{inflection_l}'
+    Pomoromantic: 'Pomoromantik{inflection}'
+    Pomosexual: 'Pomoseksua{inflection_l}'
+    Progress_Pride: 'Orgolyo progresivo'
+    Queer: 'Kuir'
+    Queerian: 'Kuirian{inflection}'
+    Queerplatonic: 'Kuirplatonik{inflection}'
+    Quoiromantic: 'Keromantik{inflection}'
+    Sapphic: 'Safik{inflection}'
+    Sexuality_Questioning: 'Kestionandose la seksualidad'
+    Straight_Ally: 'Aliad{inflection} etero'
+    Toric: 'Torik{inflection}'
+    Transfeminine: 'Transfeminin{inflection}'
+    Transgender: 'Transdjenero'
+    Transmasculine: 'Transmaskulin{inflection}'
+    Transneutral: 'Transneutra{inflection_l}'
+    Trigender: 'Tridjenero'
+    Trixic: 'Trizik{inflection}'
+    Two_Spirit: 'Dos espiritos'
+    Xenogender: 'Ksenodjenero'
 
 calendar:
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
-    date: '%date% %year%'
+    header: 'Kalendario'
+    headerLong: 'Kalendario kuir'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
-        4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
-        9: 'September'
-        10: 'October'
-        11: 'November'
-        12: 'December'
+        1: 'Djenayo'
+        2: 'Febrayo'
+        3: 'Marso'
+        4: 'Avril'
+        5: 'Mayo'
+        6: 'Djunio'
+        7: 'Djulio'
+        8: 'Agosto'
+        9: 'Septembre'
+        10: 'Oktobre'
+        11: 'Novembre'
+        12: 'Desembre'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: '%day% de djenayo'
+        2: '%day% de febrayo'
+        3: '%day% de marso'
+        4: '%day% de avril'
+        5: '%day% de mayo'
+        6: '%day% de djunio'
+        7: '%day% de djulio'
+        8: '%day% de agosto'
+        9: '%day% de septembre'
+        10: '%day% de oktobre'
+        11: '%day% de novembre'
+        12: '%day% de desembre'
+    months_abl:
+        1: 'djenayo'
+        2: 'febrayo'
+        3: 'marso'
+        4: 'avril'
+        5: 'mayo'
+        6: 'djunio'
+        7: 'djulio'
+        8: 'agosto'
+        9: 'septembre'
+        10: 'oktobre'
+        11: 'novembre'
+        12: 'desembre'
     events:
-        pride_month: '{/terminology#pride=Pride} Month'
-        trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
-        asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
-        bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
-        drag_day: '{/terminology#drag=Drag} Day'
-        idahobit: 'International Day Against {/terminology#homophobia=Homophobia}, {/terminology#transphobia=Transphobia} and {/terminology#biphobia=Biphobia}'
-        intersex_day: '{/terminology#intersex=Intersex} Awareness Day'
-        intersex_remembrance_day: '{/terminology#intersex=Intersex} Day of Remembrance'
-        lesbian_day: 'International {/terminology#lesbian=Lesbian} Day'
-        lesbian_visibility_day: 'International {/terminology#lesbian=Lesbian} Visibility Day'
-        coming_out_day: '{/terminology#coming%20out=Coming Out} Day'
-        nonbinary_day: 'International {/terminology#nonbinary=Nonbinary People''s} Day'
-        pan_day: '{/terminology#pansexual=Pansexual} & {/terminology#panromantic=Panromantic} Awareness Day'
-        trans_remembrance_day: '{/terminology#transgender=Transgender} Day of Remembrance'
-        trans_visibility_day: 'International {/terminology#transgender=Trans} Day of Visibility'
-        zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: '{/terminology#aromantic%20spectrum=Aromantic Spectrum} Awareness Week'
-        asexual_week: '{/terminology#asexual=Asexual} Awareness Week'
-        bisexual_week: '{/terminology#bisexual=Bisexual} Awareness Week'
-        pronouns_day: 'Pronouns Day'
-        trans_week: '{/terminology#transgender=Trans} Awareness Week'
-        trans_parent_day: '{/terminology#transgender=Trans} Parent Day'
-        nonbinary_week: '{/terminology#nonbinary=Nonbinary} Awareness Week'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: '{/terminology#polyamory=Polyamory} Day'
-        homophobia_sport: 'International Day Against {/terminology#homophobia=Homophobia} in Sports'
-        gay_uncles_day: '{/terminology#gay=Gay} Uncles Day'
-        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
-        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
-        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
-        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
-        nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents Day'
-        trans_prisoner: '{/terminology#transgender=Transgender} Prisoner Day of Action and Solidarity'
-        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Visibility Day'
-        genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
-        genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
-        aids_day: 'World AIDS Day'
-        tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'World Day of Social Justice'
-        stonewall_day: 'Anniversary of Stonewall Riots'
-        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: '{/terminology#polysexual=Polysexual} & {/terminology#polyromantic=Polyromantic} Visibility Day'
-        orlando_day: 'Pulse Night of Remembrance'
-        aids_memorial: 'International AIDS Candlelight Memorial'
-        health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
-        demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
-        pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
-        transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
-        asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
-        bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
-        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
-        family_equality_day: 'International Family Equality Day'
-        aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
-        black_ribbon_day: 'Black Ribbon Day'
-        black_queer_week: 'Black {/terminology#queer=Queer} History Week'
-        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
-        hate_crime_awareness_week: 'Hate Crime Awareness Week'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'World Suicide Prevention Day'
-        suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
-        pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
-        parents_day: 'Gender Expansive Parents'' Day'
-        hiv_testing_day: 'International HIV Testing Day'
-        freedressing_day: 'Freedressing Awareness Day'
-    banner: 'We''re celebrating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+        pride_month: 'Mez del Orgolyo'
+        trans_month: 'Mez de la Conciencia Transgénero'
+        zaimki_birthday: 'Aniversario de Pronouns.page'
+        agender_day: 'Dia del Ogrolyo Agénero'
+        asexuality_day: 'Dia de la Vizibilidad Aseksuala'
+        bisexuality_day: 'Dia de la Vizibilidad Biseksuala'
+        drag_day: 'Dia del Drag'
+        idahobit: 'Dia Internacional contra la Homofobia, la Transfobia i la Bifobia'
+        intersex_day: 'Dia de la Vizibilidad Interseksuala'
+        intersex_remembrance_day: 'Dia de la Memoria Interseksuala'
+        lesbian_day: 'Dia Internacional de las Lezbianas'
+        lesbian_visibility_day: 'Dia Internacional de la Vizibilidad Lézbica'
+        coming_out_day: 'Dia para Salir del Almario'
+        nonbinary_day: 'Dia de la Vizibilidad No Binaria'
+        pan_day: 'Dia de la Conciencia Panseksuala i Panrromántica'
+        trans_remembrance_day: 'Dia de la Memoria Trans'
+        trans_visibility_day: 'Dia de la Vizibilidad Trans'
+        zero_discrimination_day: 'Dia de la Cero Discriminación'
+        arospec_week: 'Semana de la Conciencia del Espectro Arromántico'
+        asexual_week: 'Semana de la Vizibilidad Aseksual'
+        bisexual_week: 'Semana de la Conciencia Biseksual'
+        pronouns_day: 'Dia de los Pronombres'
+        trans_week: 'Semana de la Conciencia Transgénero'
+        trans_parent_day: 'Dia de les Xadres Trans'
+        nonbinary_week: 'Semana de la Conciencia No Binaria'
+        polyamory_day: 'Dia del Poliamor'
+        homophobia_sport: 'Dia Internacional contra la Homofobia en el Deporte'
+        gay_uncles_day: 'Dia de los Tiyos Geys'
+        lgbtq_stem: 'Dia de las personas LGBTQ+ en CTIM'
+        trans_depathologization: 'Dia por la Despatologización de Transgénero'
+        lgbti_book_day: 'Dia del Livro de Temática LGTBI'
+        human_rights_day: 'Dia de los Derechos Humanos'
+        nonbinary_parents_day: 'Dia de les Xadres No Binaries'
+        trans_prisoner: 'Dia de Solidaridad kon Prisoneres Trans'
+        xenogender_day: 'Dia de la Vizibilidad Xenogénero'
+        genderqueer_day: 'Dia de la Vizibilidad de Género Queer'
+        genderfluid_day: 'Dia de la Vizibilidad de Género Fluido'
+        aids_day: 'Dia Mundial de la Pelea contra el Sida'
+        tolerance_day: 'Dia Internacional para la Tolerancia'
+        social_justice_day: 'Dia Mundial de la Justedad Social'
+        stonewall_day: 'Aniversario de los Disturbios de Stonewall'
+        domestic_violence: 'Semana de la Conciencia de Violencia Doméstica LGBTQ'
+        polysexual_day: 'Dia de la Vizibilidad Polisexual i Polirromántica'
+        orlando_day: 'Aniversario de la masacre de Orlando'
+        aids_memorial: 'Dia Internacional de Conmemoración contra el Sida'
+        health_week: 'Semana de la Conciencia de la Salud LGBT'
+        lesbian_visibility_week: 'Semana de la Vizibilidad Lézbica'
+        demigender_day: 'Dia de la Conciencia Demigénero'
+        pan_pride_day: 'Dia del Orgolyo Panseksual'
+        transmasculine_day: 'Dia de la Pelea i Resistencia de Personas Transmasculinas'
+        asexual_visibility_day: 'Dia de la Vizibilidad Aseksual'
+        bi_health_month: 'Mez de la Conciencia de la Salud de Personas Bisexuales'
+        holocaust_remembrance_day: 'Dia Internacional de Conmemoración en Memoria de las Víctimas del Holocausto'
+        family_equality_day: 'Dia Internacional de la Igualdad Familiar'
+        aro_month: 'Mez de la Conciencia del Espectro Arromántico'
+        black_ribbon_day: 'Dia Europeo de Conmemoración de las Víctimas del Estalinismo i el Nazismo'
+        black_queer_week: 'Semana de la Historia de las Personas Queer Pretas'
+        mena_lesbian_day: 'Dia del Orgolyo de las Lezbianas i Mujeres Queer del Medio Oriente i norte de África'
+        hate_crime_awareness_week: 'Semana de Concientización sobre Crímenes de Odio'
+        deaf_awareness_week: 'Semana de la Conciencia de los Sodros LGBTQ+'
+        suicide_prevention_day: 'Dia Mundial para la Prevención del Suicidio'
+        suicide_prevention_month: 'Mez de la Prevención del Suicidio'
+        aids_awareness_month: 'Mez da Concientización sobre el Sida'
+        genderfluid_week: 'Semana de la Conciencia de Género Fluido'
+        pan_week: 'Semana de la Vizibilidad Pan'
+        parents_day: 'Dia de les Xadres Expansivo de Género'
+    banner: 'Oy selebramos'
+    celebrating_custom: 'se selebra'
+    celebrating_day: 'se selebra el'
+    celebrating_week: 'se selebra el'
+    celebrating_month: 'se selebra en'
     image:
-        header: 'Download an image'
+        header: 'Abashar una imaje'
     view:
-        grid: 'Grid view'
-        list: 'Events list'
-    link: 'Link'
-    full: 'Full calendar'
+        grid: 'Vista djeneral'
+        list: 'Lista de afitos'
+    link: 'Atadijo'
+    full: 'Kalendario kompleto'

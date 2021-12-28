@@ -106,8 +106,7 @@ sources:
     enabled: true
     route: 'sources'
     submit: true
-    mergePronouns:
-        they/them/themself: 'they'
+    mergePronouns: {}
     extraTypes: ['avoiding', 'nounself']
 
 nouns:
@@ -170,8 +169,8 @@ links:
     academic: []
     mediaGuests: []
     mediaMentions: []
-
     recommended: []
+    blog: false
 
 contact:
     enabled: true
