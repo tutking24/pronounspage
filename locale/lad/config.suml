@@ -11,7 +11,7 @@ pronouns:
     honorifics: false
     multiple:
         name: 'Formas interkambiables'
-        description: 'Munchas personas no binarias uzan mas de una forma interkambiablemente i se sienten bien con kualkiera de las opsiones.'
+        description: 'Munchas personas no binarias uzan mas de una forma interkambiablemente i se sienten bien kon kualkiera de las opsiones.'
         examples: ['el&eya', 'el&eye', 'eya&eye']
     null: false
     emoji: false
