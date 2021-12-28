@@ -422,11 +422,10 @@ contact:
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
-        description:
-            - >
-                We are a queer collective dedicated to assembling, researching, shaping and promoting
-                gender neutral and nonbinary language.
-                We also support actions towards equality and social justice.
+        description: >
+            We are a queer collective dedicated to assembling, researching, shaping and promoting
+            gender neutral and nonbinary language.
+            We also support actions towards equality and social justice.
         extra:
             - '{/blog/project-history=Short history of the project}'
             - '{/blog/why-the-name=Why the name?}'

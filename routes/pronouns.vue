@@ -96,7 +96,7 @@
                                 <T icon="info-circle">home.generator.alt</T>
                             </p>
                             <!-- TODO #136
-                            <p class="small" v-if="config.pronunciation.enabled">
+                            <p class="small" v-if="config.pronunciation.enabled && $te('home.generator.pronunciation')">
                                 <Icon v="info-circle"/>
                                 <T>home.generator.pronunciation</T>
                             </p>

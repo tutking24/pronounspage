@@ -4,10 +4,10 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns'
-    default: 'he'
-    any: 'any'
-    plurals: true
+    route: 'pronomoj'
+    default: 'li'
+    any: 'ajnaj'
+    plurals: false
     honorifics: false
     multiple:
         name: 'Interchangeable forms'
@@ -15,7 +15,7 @@ pronouns:
             Many nonbinary people use more than one form interchangeably
             and are fine with being called either of them.
             Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
+        examples: ['li&ŝi', 'li&ĝi', 'ĝi&ri']
     null:
         description: >
             {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
@@ -27,10 +27,6 @@ pronouns:
             {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
         morphemes:
             pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
         examples: [':Andrea', ':S']
         template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
         routes: ['avoiding']
@@ -76,10 +72,6 @@ pronouns:
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
         morphemes:
             pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
         examples: ['💫', '💙']
         template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
     mirror:
@@ -95,32 +87,28 @@ pronouns:
     others: 'Other pronouns'
 
 pronunciation:
-    enabled: true
-    voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+    enabled: false
+    voices: {}
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'fontoj'
     submit: true
     mergePronouns: {}
     extraTypes: ['avoiding', 'nounself']
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'substantivoj'
     collapsable: false
-    plurals: true
+    plurals: false
     pluralsRequired: false
     declension: false
     submit: true
     templates: true
 
 community:
-    route: 'terminology'
+    route: 'terminologio'
 
 inclusive:
     enabled: false
@@ -140,7 +128,7 @@ terminology:
         - 'politics'
         - 'prejudice'
 
-    route: 'terminology'
+    route: 'terminologio'
 
 names:
     enabled: false
@@ -170,14 +158,19 @@ faq:
 links:
     enabled: true
     split: false
-    route: 'links'
-    blogRoute: 'blog'
+    route: 'ligiloj'
+    blogRoute: 'blogo'
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: '– inspiration for this website.'
+        -
+            icon: 'globe-europe'
+            lang: ['en']
+            url: 'https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto'
+            headline: 'Gender reform in Esperanto'
     academic: []
     mediaGuests: []
     mediaMentions: []
@@ -186,18 +179,18 @@ links:
 
 contact:
     enabled: true
-    route: 'contact'
+    route: 'kontakto'
     team:
         enabled: true
-        route: 'team'
+        route: 'kolektivo'
 
 support:
     enabled: true
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'terms'
+    route: 'konto'
+    termsRoute: 'reguloj'
 
 profile:
     enabled: true
@@ -208,11 +201,11 @@ profile:
         - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
         - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'ri'
 
 calendar:
     enabled: true
-    route: 'calendar'
+    route: 'kalendaro'
 
 census:
     enabled: false

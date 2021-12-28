@@ -434,11 +434,10 @@ contact:
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
-        description:
-            - >
-                We are a queer collective dedicated to assembling, researching, shaping and promoting
-                gender neutral and nonbinary language.
-                We also support actions towards equality and social justice.
+        description: >
+            We are a queer collective dedicated to assembling, researching, shaping and promoting
+            gender neutral and nonbinary language.
+            We also support actions towards equality and social justice.
         extra: []
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
         members: 'Current members'
@@ -586,12 +585,6 @@ profile:
         close: 'Only if we''re close'
         meh: 'Okay'
         no: 'Nope'
-    banner: >
-        You can also use our website to create a card, {/@example=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
     card:
         link: 'Card picture'
         generate: 'Generate'
@@ -641,11 +634,11 @@ terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
     consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
-#    you can either leave the terms untranslated, or translate it and include the following disclaimer:
-#    translationDisclaimer: >
-#        The following text is just an auxiliary translation.
-#        The only legally binding version of the Terms of Service is the English one, available
-#        {https://en.pronouns.page/terms=here}.
+    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
     content:
         intro: >
             These Terms of Service govern your access to and use of the Service provided on the website
