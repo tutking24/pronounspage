@@ -31,7 +31,7 @@ const sendEmail = (to, subject, body = undefined, html = undefined) => {
         });
 };
 
-const terms = translations.terms ? (translations.terms.content.content.violations + ' ' + Object.values(translations.terms.content.content.violationsExamples).join(', ')) : '';
+const terms = translations.terms && translations.terms.content ? (translations.terms.content.content.violations + ' ' + Object.values(translations.terms.content.content.violationsExamples).join(', ')) : '';
 
 const templates = {
     base: {
