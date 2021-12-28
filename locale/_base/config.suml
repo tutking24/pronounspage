@@ -148,8 +148,20 @@ names:
 people:
     enabled: false
 
+# optional, but would be nice to have
 english:
-    enabled: false
+    enabled: true
+    route: 'english'
+    pronounGroups:
+        -
+            name: 'Normative forms'
+            description:
+                - >
+                    Because of the limitations of <language> grammar, or simply because they just prefer it that way,
+                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
+                    – either the same as their gender assigned at birth or the opposite.
+                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
+            table: {on: 'Masculine', ona: 'Feminine'}
 
 faq:
     enabled: true

@@ -408,7 +408,15 @@ links:
 
 people: ~
 
-english: ~
+# optional, but would be nice to have
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of <language> nonbinary pronouns'
+    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            A summary in English…
 
 contact:
     header: 'Contact'
