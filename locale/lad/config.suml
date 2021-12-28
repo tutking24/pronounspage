@@ -29,7 +29,7 @@ sources:
 
 nouns:
     enabled: true
-    route: 'diksionario'
+    route: 'diksionaryo'
     collapsable: false
     plurals: false
     pluralsRequired: false
