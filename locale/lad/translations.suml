@@ -387,8 +387,7 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Para inisiar tenida o krear una konta puedes usar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
         action: 'Inisiar tenida / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
@@ -479,7 +478,7 @@ profile:
         header: 'Editor de karta'
         save: 'Guadra tu karta'
         defaults: 'Restorar valores predeterminados'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Guadra este trokamiento en tus kartas en todas las linguas'
     opinion:
         yes: 'Si'
         jokingly: 'En shaka'
@@ -521,8 +520,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
     links: 'Kontakto, redes sosyales, apoyo'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Kozas legales'
+    technical: 'Kozas teknikas'
 
 notFound:
     message: 'Oja no topada'
