@@ -158,7 +158,7 @@ faq:
 
 links:
     enabled: true
-    split: false
+    split: true
     route: 'links'
     blogRoute: 'blog'
     links:
@@ -267,6 +267,8 @@ links:
             url: 'https://github.com/katacarbix/pronouns.js'
             headline: 'pronouns.js'
             extra: ' – a JavaScript library for parsing pronouns'
+    zine:
+        enabled: false
 
     blog: true
 
