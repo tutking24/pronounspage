@@ -115,7 +115,8 @@ profile:
         defaultPronoun: 'ey_'
 
 calendar:
-    enabled: false
+    enabled: true
+    route: 'kalendario'
 
 census:
     enabled: false

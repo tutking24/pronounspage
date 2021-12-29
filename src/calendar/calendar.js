@@ -1,6 +1,6 @@
 const { Calendar, Event, EventLevel, day } = require('./helpers');
-const internationalEvents = require('../../locale/_/events');
-const localEvents = require('../../data/events');
+const internationalEvents = require('../../locale/_/calendar/events');
+const localEvents = require('../../data/calendar/events');
 
 const rawNamedays = require('../../data/names/namedays.json');
 

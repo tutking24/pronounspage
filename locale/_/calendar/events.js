@@ -1,4 +1,4 @@
-const {Event, Day, day, week, month, EventLevel} = require("../../src/calendar/helpers");
+const {Event, Day, day, week, month, EventLevel} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---

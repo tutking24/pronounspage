@@ -810,6 +810,7 @@ flags:
 calendar:
     header: 'Kalendario'
     headerLong: 'Kalendario kuir'
+    date: '%date% %year%'
     months:
         1: 'Djenayo'
         2: 'Febrayo'
@@ -916,6 +917,8 @@ calendar:
         genderfluid_week: 'Semana de la Conciencia de Género Fluido'
         pan_week: 'Semana de la Vizibilidad Pan'
         parents_day: 'Dia de les Xadres Expansivo de Género'
+        hiv_testing_day: 'Día Internacional de la Prueba del VIH'  # TODO
+        freedressing_day: 'Día de la Libertad de Vestimenta'  # TODO
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
