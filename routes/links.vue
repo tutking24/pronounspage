@@ -11,6 +11,13 @@
         </section>
         <Links/>
         <Recommended/>
+        <section>
+            <h2 class="mb-3">
+                <Icon v="home-heart"/>
+                <T>footer.sibling</T>
+            </h2>
+            <Siblings/>
+        </section>
         <Socials/>
         <LanguageVersions/>
         <Support/>

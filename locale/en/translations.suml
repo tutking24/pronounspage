@@ -612,6 +612,7 @@ footer:
     links: 'Contact & social media'
     legal: 'Legal'
     technical: 'Technical'
+    sibling: 'Sibling projects'
 
 notFound:
     message: 'Page was not found'

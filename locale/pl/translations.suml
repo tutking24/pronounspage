@@ -1348,6 +1348,7 @@ footer:
     links: 'Kontakt, social media'
     legal: 'Prawne'
     technical: 'Techniczne'
+    sibling: 'Projekty-rodzeństwo'
 
 notFound:
     message: 'Strony nie znaleziono'

@@ -499,6 +499,7 @@ footer:
     links: '通訊錄, 社交媒體'
     legal: 'Legal' # TODO
     technical: 'Technical' # TODO
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: '找不到頁面'

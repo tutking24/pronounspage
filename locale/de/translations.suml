@@ -505,6 +505,7 @@ footer:
     links: 'Kontakt, Social Media'
     legal: 'Rechtliches'
     technical: 'Technisches'
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'Seite wurde nicht gefunden'

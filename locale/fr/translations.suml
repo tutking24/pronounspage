@@ -517,6 +517,7 @@ footer:
     links: 'Contact, réseaux sociaux'
     legal: 'Légal'
     technical: 'Technique'
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'

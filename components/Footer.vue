@@ -39,6 +39,19 @@
                         </a>
                     </li>
                 </ul>
+
+                <div class="my-2">
+                    <ModeSwitch/>
+                </div>
+
+                <!--
+                <p class="h6 mb-2">
+                    <T>share</T><T>quotation.colon</T>
+                </p>
+                <div class="my-2">
+                    <Share nolabel/>
+                </div>
+                -->
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 small">
@@ -90,18 +103,14 @@
                         </a>
                     </li>
                 </ul>
+
                 <p class="h6 mb-2">
-                    <T>share</T><T>quotation.colon</T>
+                    <T>footer.sibling</T><T>quotation.colon</T>
                 </p>
-                <div class="my-2">
-                    <Share nolabel shareApiSeparate/>
-                </div>
-                <div class="my-2">
-                    <ModeSwitch/>
-                </div>
+                <Siblings/>
             </div>
         </div>
-            <EasterEgg/>
+        <EasterEgg/>
         </div>
     </footer>
     <div v-else>

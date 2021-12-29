@@ -425,7 +425,7 @@ user:
         header: 'Multifactorauthenticatie'
         init: >
             Scan de QR code (of voer de code hieronder in) in een app die een tijdelijke eenmalige wachtwoord kan genereren (bijv. {https://authy.com/=Authy})
-            en voer de eerste gegenereerde token in op de website. 
+            en voer de eerste gegenereerde token in op de website.
         recovery:
             header: 'Herstelcode'
             save: >
@@ -515,6 +515,7 @@ footer:
     links: 'Contact, sociale media'
     legal: 'Juridisch'
     technical: 'Technisch'
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'Pagina niet gevonden'
