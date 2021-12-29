@@ -318,6 +318,7 @@ faq:
 links:
     header: 'リンク'
     headerLong: '余分なリンク'
+    links: '余分なリンク'
     recommended: 'おすすめ'
     blog: 'ブログ'
     mediaShort: 'メディア'
@@ -329,7 +330,28 @@ links:
 
 people: ~
 
-english: ~
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Japanese pronouns'
+    description: >
+        If you don't speak Japanese, yet still are interested in how pronouns work in this language,
+        we've prepared a short overview in English.
+    intro:
+        - >
+            Japanese is not written using a Latin script, but instead by sets of
+            かな \[kana] and  漢字 \[kanʑi/kanji] (Chinese characters)
+            and their pronoun system is very different to that in English.
+        - >
+            Japanese pronouns are rarely used within natural speech, for the sole reason that
+            the subject (I, you, they, etc.) is very often omitted.
+            Referring back to the subject within speech in Japanese makes it sound clunky and repetitive,
+            and for that reason they aren't often utilised when using the language;
+            it would be like if you were to constantly say
+            “<strong>They</strong> are my friend, <strong>they</strong> live close to me, <strong>their</strong> name is...”,
+            it just sounds unnatural to listen to.
+            However, there are some cases in which third-person pronouns are used, such as referring
+            to a person or thing that is absent from the situation, or for changing the subject of the conversation.
 
 contact:
     header: '連絡先'
