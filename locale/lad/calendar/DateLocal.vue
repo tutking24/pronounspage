@@ -17,8 +17,7 @@ export default {
     computed: {
         heDate() {
             const HeDateClass = typeof(HeDate) === 'function' ? HeDate : window.HeDate;
-            console.log(HeDateClass);
-            // return 'TODO';
+
             return new HeDateClass(+this.day.toDate());
         },
     },
