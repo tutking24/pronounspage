@@ -79,7 +79,60 @@ people:
     enabled: false
 
 english:
-    enabled: false
+    enabled: true
+    route: 'english'
+    pronounGroups:
+        -
+            name: 'Positional forms'
+            description:
+                - >
+                    In Japanese there is no singular “they”, however, there are many alternatives in the field
+                    of “that person” or “this person” many of which are commonly used in speech, even for cis people.
+                    The most common forms of “that person” are split into three sections:
+                    far, near to listener, and near to speaker, represented by あ/そ/こ \[a/so/ko] respectively.
+                    So, while the gendered pronouns He {/彼=彼} \[kaɾe/kare] and She {/彼女=彼女} \[kanodʑo/kanojo]
+                    do not require any changes dependant on position of the subject,
+                    all the animate and inanimate pronouns require that distinction to be made.
+                - >
+                    For example, a common gender-neutral third-person pronoun
+                    {/あの人=あの人} \[anoçito/anohito] literally meaning “That person over there”,
+                    the kana あ is replaced within context to show the positional relationship between
+                    the speaker, listener, and subject.
+            table:
+                - {pronoun: '{/あの人=あの人}', romanised: 'anohito', ipa: 'anoçito', meaning: 'That person over there'}
+                - {pronoun: 'その人', romanised: 'sonohito', ipa: 'sonoçito', meaning: 'That person/The person'}
+                - {pronoun: 'この人', romanised: 'konohito', ipa: 'konoçito', meaning: 'This person'}
+        -
+            name: 'Familiarity and Japanese pronouns'
+            description:
+                - >
+                    Another common thing with Japanese pronouns is that they're separated by familiarity,
+                    for example, the pronoun {/あの方=あの方} \[anokata] has the same meaning
+                    as {/あの人=あの人}, but is much more formal, and may sound weird within informal contexts.
+                    On the other hand {/あやつ=あやつ} \[ajatsɯ̥/ayatsu] has a similar meaning to “That guy”
+                    or even in some cases “That thing”, and therefore the pronoun used should be considered based
+                    on the context of politeness or social status (such as talking to your boss).
+        -
+            name: 'Possession and plurality'
+            description:
+                - >
+                    Plural and possessive pronouns in Japanese are very simple to do, with a few naunces to look out for, however.
+                    Possessive pronouns are the easiest ones to make, simply add the particle の \[no] onto the end of the pronoun,
+                    followed by the thing that is possessed.
+                    For example, “That person's (over there) shirt” would be あの人<strong>の</strong>シャーツ.
+                - >
+                    Plurality is slightly different however, as the particle used is determined once again by familiarity and politeness.
+                    There are two main ones used (though there are a few others), those being ら \[ɾa/ra] and 達 \[tatɕi・i̥/tachi]
+                    (often written in kana たち).
+                    Like the possessive particle, this is attached at the end of the pronoun (if plural and possessive, before the の).
+                    The difference in usage is that ら is a solely informal particle, whilst 達 is used within and outside of formal contexts.
+                    This does mean that there are masculine, feminine, and gender-neutral plural third-person pronouns,
+                    and groups of people can be perceived as gendered.
+            table:
+                - {pronoun: '{/彼ら=彼ら}', formal: false, romanised: 'karera', ipa: 'kaɾeɾa', meaning: 'Those guys'}
+                - {pronoun: '彼女たち', formal: true, romanised: 'kanojotachi', ipa: 'kanodʑotatɕi', meaning: 'Those women'}
+                - {pronoun: 'あの人ら', formal: false, romanised: 'anohitora', ipa: 'anoçitoɾa', meaning: 'Those people over there'}
+                - {pronoun: 'この方たち', formal: true, romanised: 'konokatatachi', ipa: 'konokatatatɕi', meaning: 'These individuals'}
 
 faq:
     enabled: true
@@ -87,7 +140,9 @@ faq:
 
 links:
     enabled: true
+    split: true
     route: 'リンク'
+    blog: false
     blogRoute: 'ブログ'
     links:
         -
@@ -95,10 +150,12 @@ links:
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: 'に端を発する'
-
+    academic: []
     mediaGuests: []
     mediaMentions: []
     recommended: []
+    zine:
+        enabled: false
 
 zine:
     enabled: false
