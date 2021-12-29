@@ -24,7 +24,7 @@
                 </div>
                 <div class="calendar-events my-3">
                     <h3>
-                        {{$t('calendar.date', {year: day.year, date: $t('calendar.dates.' + day.month, {day: day.day})})}}
+                        <DateWords :day="day"/>
                     </h3>
                     <ul class="list-unstyled mb-0">
                         <li v-for="event in year.eventsByDate[day.toString()]" class="mb-2">

@@ -12,7 +12,7 @@
             <div class="day-number">{{ d.day }}</div>
             <div v-if="tooltips && year.eventsByDate[d.toString()] !== undefined && d.equals(selectedDay)" class="day-tooltip card text-dark shadow">
                 <div class="card-header d-flex justify-content-between">
-                    <p class="h5 mb-0"><strong><T :params="{day: d.day}">calendar.dates.{{d.month}}</T></strong></p>
+                    <p class="h5 mb-0"><DateWords :day="d"/></p>
                     <span>
                         <nuxt-link :to="`/${config.calendar.route}/${d}`">
                             <Icon v="link"/>
@@ -185,7 +185,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 100%;
-                width: 300px;
+                width: 360px;
                 @include media-breakpoint-down('md', $grid-breakpoints) {
                     position: fixed;
                     left: 0;
