@@ -11,6 +11,8 @@
         </section>
         <Links/>
         <Recommended/>
+        <Socials/>
+        <LanguageVersions/>
         <section>
             <h2 class="mb-3">
                 <Icon v="home-heart"/>
@@ -18,8 +20,6 @@
             </h2>
             <Siblings/>
         </section>
-        <Socials/>
-        <LanguageVersions/>
         <Support/>
         <section>
             <Share :title="$t('links.headerLong')"/>
