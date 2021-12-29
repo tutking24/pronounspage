@@ -393,6 +393,7 @@ faq:
 links:
     header: 'Links'
     headerLong: 'Extra links'
+    links: 'Extra links'
     recommended: 'We recommend'
     blog: 'Blog'
     mediaShort: 'Media'
