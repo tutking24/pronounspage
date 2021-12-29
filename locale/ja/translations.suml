@@ -516,6 +516,7 @@ footer:
     links: '連絡先、ソーシャルメディア'
     legal: 'Legal' # TODO
     technical: 'Technical' # TODO
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'このページはありません'

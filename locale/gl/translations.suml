@@ -523,6 +523,7 @@ footer:
     links: 'Contato, redes sociais'
     legal: 'Legal' # TODO
     technical: 'Technical' # TODO
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'Página não encontrada'

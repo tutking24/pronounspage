@@ -520,6 +520,7 @@ footer:
     links: 'Kontakt, sosiale medier'
     legal: 'Legal' # TODO
     technical: 'Technical' # TODO
+    sibling: 'Sibling projects' # TODO
 
 notFound:
     message: 'Side var ikke funnet'
