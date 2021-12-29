@@ -29,7 +29,7 @@ home:
             si no keres ser abdal kon algun, avla de akeya persona korektamente.
             La sola diferensia es ke normalmente konosemos los nombres, ama no los pronombres.
             Mos prezentamos kon muestro nombre, ama no kon muestros pronombres. Agamos un trokamiento!
-    pronouns: 'Lista de pronombres populares'
+    pronouns: 'Lista de pronombres'
     generator:
         header: 'Jenerador'
         description: >
