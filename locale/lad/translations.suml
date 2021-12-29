@@ -387,13 +387,13 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        help: 'Para inisiar tenida o krear una konta puedes usar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
+        help: 'Para konektarte o krear un kuento puedes usar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
-        action: 'Inisiar tenida / rejistrarte'
+        action: 'Konektarte / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
         userNotFound: 'Uzadore no topade.'
         email:
-            subject: 'Tu kodiche de inisio de tenida es %code%'
+            subject: 'Tu kodiche de koneksion kon tu kuento es %code%'
             content: |
                 Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio web: %code%.
 
@@ -417,7 +417,7 @@ user:
             invalid: 'Adreso de posta enfirmo.'
             taken: 'Este adreso ya esta en uzo.'
         admin: 'Admin'
-    logout: 'Serrar tenida'
+    logout: 'Salir'
     avatar:
         header: 'Avatar'
         change: 'Trokar'
@@ -428,7 +428,7 @@ user:
         connect: 'Konektar'
         refresh: 'Aktualizar'
         disconnect: 'Deskonektar'
-        disconnectConfirm: 'Konfirmas ke keres kitar esta koneksion? (Siempre puedes inisiar tenida uzando la posta elektronika %email%)'
+        disconnectConfirm: 'Konfirmas ke keres kitar esta koneksion? (Siempre puedes konektarte uzando la posta elektronika %email%)'
     mfa:
         header: 'Autentikasion en dos pasos'
         init: >
@@ -441,7 +441,7 @@ user:
                 Podras uzarlos para pasar la autentikasion en dos pasos (A2P) en kavzo de que piedres tu dispozitivo de autentikasion.
             saved: 'Okey, ya los guadre!'
             enter: 'Introduze el kodiche de rekuperasion'
-        cancel: 'Anular inisio de tenida'
+        cancel: 'Anular proseso de konektarte'
         enabled: 'Aktivado'
         enable: 'Aktivar A2P'
         disable: 'Dezaktivar A2P'
@@ -512,7 +512,7 @@ crud:
     search: 'Bushkar…'
     author: 'Adisyonado por'
     saved: 'Los trokamientos se guadraron kon sukseso!'
-    loginRequired: '{/kuento=Inisiar} tenida para embiar una propozision'
+    loginRequired: '{/kuento=Konektarte} para embiar una propozision'
     copy: 'Kopiar atadijo'
     download: 'Abashar'
 
@@ -529,8 +529,8 @@ notFound:
     back: 'Aboltar a la oja de inisio'
 
 authRequired:
-    message: 'Deves inisiar tenida para ver este sitio'
-    go: 'Ir al sitio de inisio de tenida'
+    message: 'Deves konektarte kon tu kuento para ver este sitio'
+    go: 'Ir al formulario de koneksion'
 
 confirm:
     header: 'Konfirmas esta dechizion?'
