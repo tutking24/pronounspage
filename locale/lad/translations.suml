@@ -24,12 +24,12 @@ home:
             No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akeyo nombre
             o porke “tiene mas kara de Rashel para ti”.
             O inkluzo si eya <em>si</em> se yama “Rashel” en el nefus
-            ama detesta akeyo nombre i prefera uzar “Miriam”.
+            ama aborese akeyo nombre i prefera uzar “Miriam”.
             Es egzaktamente lo mismo kon los pronombres –
             si no keres ser abdal kon algun, avla de akeya persona korektamente.
             La sola diferensia es ke normalmente konosemos los nombres, ama no los pronombres.
             Mos prezentamos kon muestro nombre, ama no kon muestros pronombres. Agamos un trokamiento!
-    pronouns: 'Lista de pronombres populares'
+    pronouns: 'Lista de pronombres'
     generator:
         header: 'Jenerador'
         description: >
@@ -265,14 +265,14 @@ faq:
                     Sí! Millones de personas no binarias en el mundo lo hacen.
                     Cada pronombre enlistado aki es uzado por una persona en su día a día.
         authority:
-            question: 'Esos pronombres no binarios están aseptados por alguna autoridad?'
+            question: 'Esos pronombres no binarios están aseptados por alguna otoridad?'
             answer:
                 - >
                     La lingua no es un tipo de fechizeria grabada en piedra i otorgada por los dioses.
                     Es una feramenta ke uzamos para comunicarnos.
                     Kuando trokamos komo sociedad, i troka el mundo a muestro alrededor,
                     ajustamos la avla ke uzamos para pueder deskrivirlo mijor.
-                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la autoridad</em> ke dictamina kómo se uza.
+                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la otoridad</em> ke dictamina kómo se uza.
                 - >
                     Los diksionaryos se toman sus tiempo para rejistrar esas formas,
                     lo cual no hace el trokamiento ilegítimo de ninguna manera.
@@ -387,8 +387,7 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Para inisiar tenida o krear una konta puedes usar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
         action: 'Inisiar tenida / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
@@ -479,7 +478,7 @@ profile:
         header: 'Editor de karta'
         save: 'Guadra tu karta'
         defaults: 'Restorar valores predeterminados'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Guadra este trokamiento en tus kartas en todas las linguas'
     opinion:
         yes: 'Si'
         jokingly: 'En shaka'
@@ -490,7 +489,7 @@ profile:
     banner: >
         Puedes tambien uzar muestro sitio web para krear una karta {/@example=komo esta},
         ke kontenga tus nombres, pronombres, bandieras de orgolyo, biervos preferidos etc.
-        Dospues podras poner un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
+        Dospues podras meter un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
         Simplemente krea un kuento {/account=aki}.
     bannerButton: 'Krear una karta'
     card:
@@ -521,8 +520,8 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
     links: 'Kontakto, redes sosyales, apoyo'
-    legal: 'Legal' # TODO
-    technical: 'Technical' # TODO
+    legal: 'Kozas legales'
+    technical: 'Kozas teknikas'
 
 notFound:
     message: 'Oja no topada'
