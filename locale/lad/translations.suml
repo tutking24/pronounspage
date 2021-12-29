@@ -489,7 +489,7 @@ profile:
     banner: >
         Puedes tambien uzar muestro sitio web para krear una karta {/@example=komo esta},
         ke kontenga tus nombres, pronombres, bandieras de orgolyo, biervos preferidos etc.
-        Dospues podras poner un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
+        Dospues podras meter un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
         Simplemente krea un kuento {/account=aki}.
     bannerButton: 'Krear una karta'
     card:
