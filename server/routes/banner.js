@@ -87,7 +87,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
 
         const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
 
-        if (!pronoun && pronounName !== global.config.pronouns.any) {
+        if (pronounName === 'zaimki' || (!pronoun && pronounName !== global.config.pronouns.any)) {
             await fallback();
             return canvas.toBuffer(mime);
         }
