@@ -522,7 +522,7 @@ footer:
     links: 'Kontakto, redes sosyales, apoyo'
     legal: 'Kozas legales'
     technical: 'Kozas teknikas'
-    sibling: 'Sibling projects' # TODO
+    sibling: 'Prodjektos ermanos'
 
 notFound:
     message: 'Oja no topada'
