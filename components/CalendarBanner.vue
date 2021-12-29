@@ -1,9 +1,14 @@
 <template>
     <section v-if="config.calendar && config.calendar.enabled && events !== undefined" class="alert alert-info">
-        <p class="h3">
-            <Icon v="calendar-star"/>
-            <T>calendar.banner</T><T>quotation.colon</T>
-        </p>
+        <div class="d-flex flex-column-reverse flex-md-row justify-content-between">
+            <p class="h3">
+                <Icon v="calendar-star"/>
+                <T>calendar.banner</T><T>quotation.colon</T>
+            </p>
+            <p class="small">
+                <DateWords :day="day" inline/>
+            </p>
+        </div>
         <ul class="list-unstyled my-3 ms-3">
             <li v-for="event in events" class="mb-2">
                 <CalendarEvent :event="event" :key="event.name"/>
