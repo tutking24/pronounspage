@@ -1,6 +1,6 @@
 # Our year 2021 in review
 
-<small>2021-12-28 | [@andrea](/@andrea)</small>
+<small>2021-12-29 | [@andrea](/@andrea)</small>
 
 What a busy year it was!
 
@@ -27,7 +27,7 @@ and got whooping 2211 responses!
 We used the results, along with opinions of experts, to prepare our [Manifest](https://zaimki.pl/blog/manifest)
 with which we're taking a more active role in shaping the language
 by trying to help Polish enbies pick their pronouns despite their language not having any normative, “default” neutral option.
-We've also collected submissions to a zine about discovering one's gender identity and living as a nonbinary person.
+We've also collected submissions to [a zine](https://zaimki.pl/zin) about discovering one's gender identity and living as a nonbinary person.
 Our efforts to popularise nonbinary forms seem to be working – the number of books, tv shows, games etc.
 that use them and that we managed to find grew from mere 20 in 2019, to 78 in 2020, to 133 in 2021!
 Our team was [invited to various media outlets](https://zaimki.pl/media) 14 times,
