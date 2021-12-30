@@ -514,6 +514,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL} licentie.
     links: 'Contact, sociale media'
     legal: 'Juridisch'
+    financial: 'Financial transparency' # TODO
     technical: 'Technisch'
     sibling: 'Sibling projects' # TODO
 

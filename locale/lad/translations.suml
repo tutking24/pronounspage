@@ -518,6 +518,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
     links: 'Kontakto, redes sosyales, apoyo'
     legal: 'Kozas legales'
+    financial: 'Financial transparency' # TODO
     technical: 'Kozas teknikas'
     sibling: 'Prodjektos ermanos'
 

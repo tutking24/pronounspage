@@ -614,6 +614,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: 'Contact, social media'
     legal: 'Legal'
+    financial: 'Financial transparency'
     technical: 'Technical'
     sibling: 'Sibling projects'
 

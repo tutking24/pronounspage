@@ -519,6 +519,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL} lisensen.
     links: 'Kontakt, sosiale medier'
     legal: 'Legal' # TODO
+    financial: 'Financial transparency' # TODO
     technical: 'Technical' # TODO
     sibling: 'Sibling projects' # TODO
 
