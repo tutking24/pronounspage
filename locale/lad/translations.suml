@@ -18,7 +18,7 @@ home:
             Algunas personas no enkashan en las kashas “maskulino” o “feminino” i preferan una avla mas neutrala.
         - >
             Esta feramenta te permete atar a tus pronombres, kon enshemplos de uzo en frazas,
-            para ke puedas mostrarle a la djente komo preferas ke te yamen.
+            para ke puedas amostrarle a la djente komo preferas ke te yamen.
         - >
             Por ke emporta? Por simple bondad umana.
             No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akeyo nombre
@@ -35,7 +35,7 @@ home:
         description: >
             Tambien puedes uzar esta ferameta para enchir los espasios en blanko
             i jenerar un atadijo ke puedes partajar.
-        button: 'Mostrar el jenerador'
+        button: 'Amostrar el jenerador'
         header2: 'Jenerar un atadijo'
         base: 'Kon baza en'
         alt: 'Tambien puedes introduzir formas interkambiables por separado en kada kampo, por enshemplo <code>el&eya</code> = „el” o eya”.'
@@ -87,7 +87,7 @@ sources:
     headerLong: 'Enshemplos de kontekstos kulturales'
     headerLonger: 'Lingua neutrala en tekstos kulturales'
     subheader: 'Korpus de teksto de djenero neutro'
-    toc: 'Mostrar tabla de kontenidos'
+    toc: 'Amostrar tabla de kontenidos'
     type:
         All: 'Todo'
         Book: 'Livros'
@@ -467,7 +467,7 @@ profile:
     header: 'Kartas'
     list: 'Tus kartas'
     init: 'Krea una karta'
-    show: 'Mostrar'
+    show: 'Amostrar'
     edit: 'Editar'
     delete: 'Kitar'
     deleteConfirm: 'Konfirmas de ke keres kitar esta karta?'
@@ -661,7 +661,7 @@ table:
     count: 'Kuento'
     sort: 'Arrastra para ordenar'
     scrollUp: 'Subir hasta arriba'
-    more: 'Mostrar mas'
+    more: 'Amostrar mas'
 
 api:
     header: 'Public API'
@@ -701,7 +701,7 @@ ban:
     terms: 'Reglas de Terminos de Servisio rotas (nesesario)'
     action: 'Banear esta persona'
     confirm: 'Estas segure ke keres banear a @%username%?'
-    header: 'Has sido baneado. Tu profil no se mostrara a dinguno.'
+    header: 'Has sido baneado. Tu profil no se amostrara a dinguno.'
     banned: 'Baneado'
     termsIntro: 'De akodro kon muestros {/terminos=Terminos de Servicio}:'
 
