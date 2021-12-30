@@ -518,6 +518,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
     links: 'Contato, redes sociais'
     legal: 'Assuntos legais'
+    financial: 'Financial transparency' # TODO
     technical: 'Parte técnica'
     sibling: 'Sibling projects' # TODO
 

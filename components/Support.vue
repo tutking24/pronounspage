@@ -13,6 +13,9 @@
                 {{link.headline}}
             </a>
         </p>
+        <p class="small">
+            <Financial/>
+        </p>
     </section>
 </template>
 
