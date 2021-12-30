@@ -75,9 +75,9 @@ pronouns:
         short: 'kualkier'
         description: >
             Aunke para muncha djente sea muy emportante ke se uzen pronombres espesifikos para avlar de eyes,
-            a otrunes no les molesta ke les llamen de kualkier manera - mientres ke en el konteksto sea klaro a ken se esta avlando.
+            a otres no les molesta ke les llamen de kualkier manera - mientres ke en el konteksto sea klaro a ken se esta avlando.
         options: 'Mira las opsiones [share]{/pronombres=aki}.'
-    others: 'Otrunas formas'
+    others: 'Otras formas'
     othersRaw: 'Otrunas'
     or: 'o'
     grammarTable: 'Tabla'
@@ -97,7 +97,7 @@ sources:
         Song: 'Muzika'
         Poetry: 'Poezia'
         Game: 'Djugos'
-        Other: 'Otrunos'
+        Other: 'Otros'
     submit:
         header: 'Embiar un enshemplo para ke sea adisyonado'
         action: 'Embiar'
@@ -198,7 +198,7 @@ faq:
                     El djenero es muncho mas komplikado ke una simple distinksyon entre maskulino i feminino.
                     Inkluzo desde un punto de vista puramente biolojiko distinguimos sekso kromosomiko,
                     sekso djenetiko, sekso ormonal, sekso fenotipiko…
-                    No son nesesariamente kongruentes uno kon el otruno, no tienen ke ser binarios.
+                    No son nesesariamente kongruentes uno kon otruno, no tienen ke ser binarios.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aki)}.
                     I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
@@ -245,7 +245,7 @@ faq:
                 - >
                     (Solo ke por favor no demandes “eres ninyo o ninya?”.
                     Esta demanda implica ke solo ay dos repuestas korektas,
-                    i sugjera una kuryozidad poco saludable por los djenitales de otrunas personas.
+                    i sugjera una kuryozidad poco saludable por los djenitales de otras personas.
                     En su lugar, puedes demandar “kualos son tus pronombres?” o “Komo me deveria referir a ti?”)
                 - >
                     Tambien es emportante normalizar el dezir tus pronombres kuando te presentas kon alguno.
@@ -351,7 +351,7 @@ links:
 
     social: 'Redes sosyales'
 
-    languageVersions: 'Versiones en otrunas linguas'
+    languageVersions: 'Versiones en otras linguas'
 
 people: ~
 
@@ -371,7 +371,7 @@ contact:
         logo: 'El logo de la kooperativa es una kombinasion del simbolo transdjenero i una foshka de dialogo ke simboliza la lingua.'
         members: 'Miembros aktuales'
         member: 'Miembro de la kooperativa'
-        upcoming: 'Futuras versiones en otrunas linguas'
+        upcoming: 'Futuras versiones en otras linguas'
 
 support:
     header: 'Arrimanos'
