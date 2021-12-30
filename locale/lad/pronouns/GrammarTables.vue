@@ -9,25 +9,36 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Subject</th>
-                    <th>Object</th>
-                    <th>Possessive determiner</th>
-                    <th>Possessive pronoun</th>
-                    <th>Reflexive</th>
+                    <th></th>
+                    <th>Pronombre</th>
+                    <th>Pr. de objekto direkto</th>
+                    <th>Artikolo determinado</th>
+                    <th>Artikolo indeterminado</th>
+                    <th>Fleksyon</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_determiner" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_pronoun" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
+                    <th>Singolar</th>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="direct_object_pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="definite_article" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="indefinite_article" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="inflection" :counter="counter" prepend="-"/></td>
+                </tr>
+                <tr>
+                    <th>Plural</th>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_direct_object_pronoun" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_definite_article" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="plural_indefinite_article" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="inflection" :counter="counter" prepend="-" append="s"/></td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </section>
+
 </template>
 
 <script>
