@@ -102,7 +102,7 @@ sources:
         header: 'Embiar un enshemplo para ke sea adisyonado'
         action: 'Embiar'
         pronouns: 'Ke pronombres tienen sido uzados?'
-        pronounsInfo: 'Introduze la forma más simple del pronombre, komo se topa en el atadijo, p. en. “eye”, “el/lo”, “el o eya”'
+        pronounsInfo: 'Introduze la forma mas simple del pronombre, komo se topa en el atadijo, p. en. “eye”, “el/lo”, “el o eya”'
         type: 'Tipo de fuente'
         author: 'Autor/a/e/x'
         title: 'Titolo'
@@ -199,7 +199,7 @@ faq:
                     Inkluzo desde un punto de vista puramente biolojiko distinguimos sekso kromosomiko,
                     sekso djenetiko, sekso ormonal, sekso fenotipiko…
                     No son nesesariamente kongruentes uno kon otruno, no tienen ke ser binarios.
-                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(más información aki)}.
+                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mas información aki)}.
                     I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
                     derechos, obligaciones, reglas a seguir, ets. radikalmente diferentes. En Europa en el pasado los ombres vestian takos altos i fustas,
@@ -215,7 +215,7 @@ faq:
                     {https://gender.wikia.org/wiki/Demiboy=demichicos},
                     i {https://es.wikipedia.org/wiki/G%C3%A9nero_no_binario=munches, munches mas}.
                 - >
-                    No binario no es nesesariamente algo “intermedio” entre maskulino i feminino. Mas bien esta “más aya”.
+                    No binario no es nesesariamente algo “intermedio” entre maskulino i feminino. Mas bien esta “mas aya”.
                     Las personas no binarias no tienen ke ser androdjinas, o uzar avla neutrala, ets.
                     Kale ke liberarse de los roles de djenero, no de krear muevos.
         why-respect:
@@ -301,7 +301,7 @@ faq:
                     Partajar muestros pronombres es emportante para las personas trans, no binarias, i de djenero no konforme.
                     Nos ekspone.
                     Ama si las personas sis azen lo mismo, azen el mundo mijor para mozos.
-                    Mos aze sentir más komodes, segures, i bienvenides
+                    Mos aze sentir mas komodes, segures, i bienvenides
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mas razones (en ingles) aki).}
         change:
             question: 'Puedo trokar mis pronombres?'
@@ -326,7 +326,7 @@ faq:
                 - >
                     Porke dezirlo ansi sugjera ke los pronombres son un kapricho.
                     Si alguno simplemente “prefera” ke le digan “eya”, no se sentira mal _realmente_ si la yamo “el”, no?
-                    Parese chico, dospues de todo, ansi ke sera más kolay para mí!
+                    Parese chico, dospues de todo, ansi ke sera mas kolay para mí!
                 - >
                     No! Son muestros pronombres. No muestros “pronombres preferidos”. Son muestros nombres, no muestros “nombres preferidos”.
                     Si tus amiges i seres kerides trans i no binaries son emportantes para ti, yamales de la manera korekta.
@@ -700,7 +700,7 @@ ban:
     visible: '(esto sera visivle para le uzadore)'
     terms: 'Reglas de Terminos de Servisio rotas (nesesario)'
     action: 'Banear esta persona'
-    confirm: 'Estás segure ke keres banear a @%username%?'
+    confirm: 'Estas segure ke keres banear a @%username%?'
     header: 'Has sido baneado. Tu profil no se mostrara a dinguno.'
     banned: 'Baneado'
     termsIntro: 'De akodro kon muestros {/terminos=Terminos de Servicio}:'
