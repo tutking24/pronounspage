@@ -38,7 +38,7 @@ nouns:
     templates: false
 
 community:
-    route: 'terminolojia'
+    route: 'kalendario'
 
 inclusive:
     enabled: false
@@ -69,7 +69,8 @@ english:
     enabled: false
 
 faq:
-    enabled: false
+    enabled: true
+    route: 'demandas'
 
 links:
     enabled: true
