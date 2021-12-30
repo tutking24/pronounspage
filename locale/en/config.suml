@@ -243,6 +243,11 @@ links:
             icon: 'play-circle'
             url: 'https://youtu.be/0oYd4r6H9W0'
             headline: 'Personal Pronouns: Understanding He, She, They, and Beyond | BrainPOP'
+        -
+            icon: 'book-open'
+            url: 'https://www.merriam-webster.com/words-at-play/words-were-watching-nibling'
+            headline: 'Merriam Webster – Words We''re Watching: “Nibling”'
+
     academic: []
     mediaGuests: []
     mediaMentions: []
