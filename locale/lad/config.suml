@@ -31,7 +31,7 @@ nouns:
     enabled: true
     route: 'diksionaryo'
     collapsable: false
-    plurals: false
+    plurals: true
     pluralsRequired: false
     declension: false
     submit: true
