@@ -44,14 +44,32 @@
             };
             this.setMode(this.detectDark());
 
-            if (process.client) {
-                sorter();
-            }
+            if (!process.client) { return; }
+
+            sorter();
 
             if (process.env.NODE_ENV === 'production') {
+                this.monkeyPatchBlockTrackers(['google-analytics.com', 'tkr.arc.io', 'tracker.arc.io', 'browser.sentry-cdn.com']);
                 this.$loadScript('arc', 'https://arc.io/widget.min.js#yHdNYRkC');
             }
-        }
+        },
+        methods: {
+            monkeyPatchBlockTrackers(trackers) {
+                const isTracker = (url) => trackers.filter(t => url.includes(t)).length > 0;
+
+                const origFetch = window.fetch;
+                window.fetch = async (...args) => {
+                    if (isTracker(args[0])) { return; }
+                    return await origFetch(...args);
+                };
+
+                const origInsertBefore = window.Node.prototype.insertBefore;
+                window.Node.prototype.insertBefore = function (...args) {
+                    if (args[0] && args[0].tagName === 'SCRIPT' && isTracker(args[0].src)) { return; }
+                    origInsertBefore.call(this, ...args);
+                };
+            },
+        },
     }
 </script>
 
