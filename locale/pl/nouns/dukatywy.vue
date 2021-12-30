@@ -205,12 +205,6 @@
                         declension: dukajDeclension,
                     }),
                     new Noun({
-                        id: 'Europejczyk',
-                        masc: 'Europejczyk', fem: 'Europejka', neutr: 'Europejku',
-                        mascPl: 'Europejczycy', femPl: 'Europejki', neutrPl: 'Europejki',
-                        declension: dukajDeclension,
-                    }),
-                    new Noun({
                         id: 'przyjaciel',
                         masc: 'przyjaciel', fem: 'przyjaciółka', neutr: 'przyjaciołu',
                         mascPl: 'przyjaciele', femPl: 'przyjaciółki', neutrPl: 'przyjacioły',
@@ -227,6 +221,12 @@
                         masc: 'radny', fem: 'radna', neutr: 'radnu',
                         mascPl: 'radni', femPl: 'radne', neutrPl: 'radny',
                         declension: dukajAdjectiveDeclension,
+                           }),
+                    new Noun({
+                        id: 'jegomość',
+                        masc: 'jegomość', fem: 'jejmość', neutr: 'jenumość',
+                        mascPl: 'ichmości', femPl: 'ichmości', neutrPl: 'ichmości',
+                        declension: dukajDeclension,
                     }),
                 ],
                 dukajDeclension,
