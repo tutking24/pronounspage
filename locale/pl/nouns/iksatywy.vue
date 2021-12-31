@@ -192,7 +192,7 @@
                 xNouns: [
                     new Noun({
                         id: 'astronauta',
-                        masc: 'astronauta', fem: 'astronautka', neutr: 'astronautx',
+                        masc: 'astronauta', fem: 'astronautka', neutr: 'astronautxa',
                         mascPl: 'astronauci', femPl: 'astronautki', neutrPl: 'astronautxx',
                         declension: xDeclension,
                     }),
