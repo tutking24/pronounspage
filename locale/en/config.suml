@@ -272,6 +272,12 @@ links:
             url: 'https://github.com/katacarbix/pronouns.js'
             headline: 'pronouns.js'
             extra: ' – a JavaScript library for parsing pronouns'
+        -
+            icon: 'cogs'
+            url: 'https://pronoundb.org/'
+            headline: 'PronounDB'
+            extra: ' – browser extensions that display people''s pronouns on various platforms'
+
     zine:
         enabled: false
 
