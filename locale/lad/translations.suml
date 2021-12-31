@@ -272,13 +272,13 @@ faq:
                     Es una feramenta ke uzamos para komunikarnos.
                     Kuando trokamos komo sosiedad, i troka el mundo a muestro al dorredor,
                     adjustamos la avla ke uzamos para pueder deskrivirlo mijor.
-                    Mozotres somos los uzadores, ansi ke <em>mozotres somos la otoridad</em> ke dize komo se uza.
+                    Mozotres semos los uzadores, ansi ke <em>mozotres semos la otoridad</em> ke dize komo se uza.
                 - >
                     Los diksionaryos se toman sus tiempo para rejistrar esas formas,
                     lo kual no aze el trokamiento ilejitimo de ninguna manera.
                     Eventualmente esas formas, de ser uzadas kon muncha frekuensia, son inkluidas en los diksionaryos.
                     El diksionaryo amerikano {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por enshemplo,
-                    aksepta el uzo del {/they=“they” singolar} komo un pronombre no binario del ingles.
+                    aksepta el uzo del {/they=“they” singolar} komo un pronombre no binario del inglez.
                 - >
                     Tambien puedes meldar  {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=lavoros akademikos}
                     sovre los pronombres no binarios.
@@ -302,7 +302,7 @@ faq:
                     Nos ekspone.
                     Ama si las personas sis azen lo mismo, azen el mundo mijor para mozos.
                     Mos aze sentir mas komodes, segures, i bienvenides
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mas razones (en ingles) aki).}
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mas razones (en inglez) aki).}
         change:
             question: 'Puedo trokar mis pronombres?'
             answer:
@@ -365,7 +365,7 @@ contact:
         nameShort: 'Kooperativa'
         description:
             - >
-                Somos un kolektivo kuir dedikado a reunir, investigar, formar i promover
+                Semos un kolektivo kuir dedikado a reunir, investigar, formar i promover
                 la avla neutrala i no binaria.
                 Tambien apoyamos aksiones por la egualdad y la justedad sosyal.
         logo: 'El logo de la kooperativa es una kombinasion del simbolo transdjenero i una foshka de dialogo ke simboliza la lingua.'
@@ -479,7 +479,7 @@ profile:
     opinion:
         yes: 'Si'
         jokingly: 'En shaka'
-        close: 'Solo si somos personas serkanas'
+        close: 'Solo si semos personas serkanas'
         meh: 'Okey'
         no: 'No'
 
