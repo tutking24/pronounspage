@@ -33,7 +33,7 @@ home:
     generator:
         header: 'Jenerador'
         description: >
-            Tambien puedes uzar esta ferameta para enchir los espasios en blanko
+            Tambien puedes uzar esta feramenta para enchir los espasios en blanko
             i jenerar un atadijo ke puedes partajar.
         button: 'Amostrar el jenerador'
         header2: 'Jenerar un atadijo'
