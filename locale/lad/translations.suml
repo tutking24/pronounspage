@@ -286,7 +286,7 @@ faq:
             question: 'Por ke deveria incluir mis pronombres en mis redes sosyales?'
             answer:
                 - >
-                    Si sos sis (= no sos trans) i uzas „{/el=el}” o „{/eya=eya}” de akodro kon tu djenero,
+                    Si sos sisdjenero (= no sos trans) i uzas „{/el=el}” o „{/eya=eya}” de akodro kon tu djenero,
                     puedes pensar ke tus pronombres son <em>obvios</em>.
                     Y si, kisas lo sean – siempre i kuando menciones tu nombre en tu profil (y este sea tradisionalmente maskulino o feminino)
                     o si tu foto de profil es una foto de ti.
@@ -737,7 +737,7 @@ flags:
     Butch: 'Butch'
     Ceteroromantic: 'Seteroromantik{inflection}'
     Ceterosexual: 'Seteroseksua{inflection_l}'
-    Cis_Ally: 'Aliad{inflection} sis'
+    Cis_Ally: 'Aliad{inflection} sisdjenero'
     Demiboy: 'Demichiko'
     Demigender: 'Demidjenero'
     Demigirl: 'Demichika'
