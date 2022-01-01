@@ -110,8 +110,8 @@ profile:
     defaultWords:
         - ['sinyor', 'sinyora', 'sinyore', 'musyu', 'madam',  'hanum', 'efendi', 'demuazel', 'bey', 'chilibi', 'bula']
         - ['persona', 'ombre', 'mujer', 'chik_', 'muchach_',  'ij_', 'donzel_', 'benadam']
-        - ['lind_', 'luzi_', 'ermoz_', 'yakishikli_', 'sangrud_']
-        - ['amig_', 'espoz_', 'marid_', 'amigit_', 'haver']
+        - ['lind_', 'luzi_', 'ermoz_', 'yakishikli_', 'sangrud_', 'kerid_']
+        - ['amig_', 'espoz_', 'marid_', 'amigit_', 'haver', 'djanum']
     flags:
         defaultPronoun: 'ey_'
 
