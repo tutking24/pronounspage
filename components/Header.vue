@@ -87,12 +87,14 @@
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
         </div>
-        <div v-show="showCensus" class="alert alert-info mb-0">
-            <a href="#" class="float-end" @click.prevent="dismissCensus">
-                <Icon v="times"/>
-            </a>
-            <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
-            <T silent>census.banner</T>
+        <div v-show="showCensus" class="container">
+            <div class="alert alert-info mb-0">
+                <a href="#" class="float-end" @click.prevent="dismissCensus">
+                    <Icon v="times"/>
+                </a>
+                <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
+                <T silent>census.banner</T>
+            </div>
         </div>
         <div v-if="$user() && $user().bannedReason" class="alert alert-danger mb-0 container">
             <p class="h4 mb-2">
