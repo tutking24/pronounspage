@@ -1392,7 +1392,7 @@ census:
                 - >
                     Wiemy, że to pytanie dotyka bardzo wrażliwej strefy.
                     Zadajemy je, by móc porównać, ile osób niebinarnych używa zaimków
-                    zgodnych z tymi, jakich społeczeństwo oczekuje na podstawie ich AGAB,
+                    zgodnych z tymi, jakich społeczeństwo oczekuje na podstawie ich przypisanej przy urodzeniu płci,
                     ile przeciwnych, a ile form niebinarnych.
                     To pytanie nie jest obowiązkowe.
             options:
@@ -1402,7 +1402,7 @@ census:
                 - ['nie chcę odpowiadać']
         -
             type: 'radio'
-            question: 'W dokumentach masz płeć… (nieobowiązkowe)'
+            question: 'W dokumentach masz obecnie płeć… (nieobowiązkowe)'
             instruction:
                 - >
                     Wiemy, że to pytanie dotyka bardzo wrażliwej strefy.
@@ -1437,7 +1437,7 @@ census:
                 - ['kolejnym językiem']
         -
             type: 'checkbox'
-            question: 'Jakimi formami mówisz / chcesz mówić o sobie / chcesz by mówiono o Tobie?'
+            question: 'Jakimi formami chcesz mówić o sobie / chcesz by mówiono o Tobie?'
             randomise: true
             writein: true
             instruction:
@@ -1461,21 +1461,7 @@ census:
                 - ['unikanie form nacechowanych płciowo', '„dopadło mnie zmęczenie”']
         -
             type: 'checkbox'
-            question: >
-                Jeśli chcesz używać wobec siebie rodzaju neutralnego
-                albo nienormatywnych (neologicznych) form językowych w codziennym życiu,
-                ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?
-            randomise: false
-            writein: true
-            options:
-                - ['nie chcę, pasują mi normatywne, binarne formy']
-                - ['nic, używam takich form']
-                - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
-                - ['strach przed transfobią/enbyfobią', 'użycie niestandardowych form ujawniałoby moją tożsamość, a nie zawsze to jest bezpieczne']
-                - ['ciężko mi się przyzwyczaić']
-        -
-            type: 'checkbox'
-            question: 'Jak chcesz, by pisano o Tobie?'
+            question: 'Jak piszesz o sobie / chcesz, by pisano o Tobie?'
             randomise: true
             writein: true
             instruction:
@@ -1549,6 +1535,20 @@ census:
                 - ['państwo (l. mn.)', '„czy chcieliby państwo…”']
                 - ['pań']
                 - ['panu']
+        -
+            type: 'checkbox'
+            question: >
+                Jeśli chcesz używać wobec siebie rodzaju neutralnego
+                albo nienormatywnych (neologicznych) form językowych w codziennym życiu,
+                ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?
+            randomise: false
+            writein: true
+            options:
+                - ['nie chcę, pasują mi normatywne, binarne formy']
+                - ['nic, używam takich form']
+                - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
+                - ['strach przed transfobią/enbyfobią', 'użycie niestandardowych form ujawniałoby moją tożsamość, a nie zawsze jest to bezpieczne']
+                - ['ciężko mi się przyzwyczaić']
         -
             type: 'checkbox'
             question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
