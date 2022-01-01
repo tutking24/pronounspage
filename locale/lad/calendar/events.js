@@ -34,3 +34,4 @@ module.exports = [
     new Event('Dia kontra los Krimenes de Garez (Peru)', null, 5, day(31), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('Dia Nasional para el Empedimyento del Suisidyo (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
     new Event('Dia Nasional para el Empedimyento del Suisidyo (Puerto Riko)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
+];
