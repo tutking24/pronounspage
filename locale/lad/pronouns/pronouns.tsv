@@ -1,8 +1,8 @@
 key	description	normative	pronoun	direct_object_pronoun	definite_article	indefinite_article	plural_pronoun	plural_definite_article	plural_indefinite_article	plural_direct_object_pronoun	inflection	inflection_l	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
 el,el/lo	Maskulino	TRUE	el	lo	el	un	eyos	los	unos	los	o	l	FALSE	FALSE	TRUE
 eya,eya/la	Feminino	TRUE	eya	la	la	una	eyas	las	unas	las	a	la	FALSE	FALSE	TRUE
-eye,eye/le	Neopronombre neutral "eye"	FALSE	eye	le	le	une	eyes	les	unes	les	e	le	FALSE	FALSE	TRUE
-eyi,eyi/li	Neopronombre neutral "eyi"	FALSE	eyi	li	li	uni	eyis	lis	unis	lis	i	li	FALSE	FALSE	TRUE
-eyx,eyx/lx	Pronombre neutral kon "x"	FALSE	eyx	lx	lx	unx	eyxs	lxs	unxs	lxs	x	lx	FALSE	FALSE	TRUE
-ey@,ey@/l@	Pronombre neutral kon arova	FALSE	ey@	l@	l@	un@	ey@s	l@s	un@s	l@s	@	l@	FALSE	FALSE	TRUE
-ey_,ey_/l_	Pronombre neutral kon giador basho	FALSE	ey_	l_	l_	un_	ey_s	l_s	un_s	l_s	_	l_	FALSE	FALSE	TRUE
+eye,eye/le	Neopronombre neutral "eye"	FALSE	eye	le	le	une	eyes	les	unes	les	e	le	FALSE	FALSE	TRUE	Pronombre inspirado por popular neopronombre neutral kastiyano {https://es.pronouns.page/elle=”elle/elle”}.
+eyi,eyi/li	Neopronombre neutral "eyi"	FALSE	eyi	li	li	uni	eyis	lis	unis	lis	i	li	FALSE	FALSE	TRUE	Pronombre inspirado por un neopronombre kastiyano {https://es.pronouns.page/elli=”elli/elli”}, una forma no tan komun komo {https://es.pronouns.page/elle=”elle/elle”}.
+eyx,eyx/lx	Pronombre neutral kon "x"	FALSE	eyx	lx	lx	unx	eyxs	lxs	unxs	lxs	x	lx	FALSE	FALSE	TRUE	Pronombre inspirado por forma neutral de kastiyano {https://es.pronouns.page/ellx=”ellx/ellx”}, ama puede ser difisil de uzar kon ladino eskrito en letras ebreas.
+ey@,ey@/l@	Pronombre neutral kon arova	FALSE	ey@	l@	l@	un@	ey@s	l@s	un@s	l@s	@	l@	FALSE	FALSE	TRUE	Pronombre inspirado por forma neutral de kastiyano {https://es.pronouns.page/ell@=”ell@/ell@”}, ama puede ser difisil de uzar kon ladino eskrito 
+ey_,ey_/l_	Pronombre neutral kon giador basho	FALSE	ey_	l_	l_	un_	ey_s	l_s	un_s	l_s	_	l_	FALSE	FALSE	TRUE	Pronombre inspirado por forma neutral de kastiyano {https://es.pronouns.page/ell_=”ell_/ell_”}.
