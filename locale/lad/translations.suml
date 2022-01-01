@@ -107,7 +107,7 @@ sources:
         author: 'Autor/a/e/x'
         title: 'Titolo'
         extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
-        year: 'Año de publiksyon (de la version en djudezmo)'
+        year: 'Anyo de publiksyon (de la version en djudezmo)'
         fragments: 'Fragmentos'
         comment: 'Komentario'
         link: 'Atadijo al kontenido'
