@@ -19,14 +19,6 @@
                 </div>
             </section>
 
-            <section>
-                <T :params='{
-                    questions: questions.length,
-                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                }'>census.description</T>
-            </section>
-
             <section v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
                 <ul class="mb-0">
                     <li v-for="(text, link) in config.census.results">
@@ -36,7 +28,11 @@
             </section>
 
             <section>
-                <Share :title="$t('census.headerLong')"/>
+                <T :params='{
+                    questions: questions.length,
+                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                }'>census.description</T>
             </section>
 
             <section v-if="open">
@@ -59,6 +55,10 @@
                         </button>
                     </div>
                 </template>
+            </section>
+
+            <section>
+                <Share :title="$t('census.headerLong')"/>
             </section>
         </template>
 
