@@ -75,8 +75,8 @@
                 </p>
             </div>
             <form @submit.prevent="q++" ref="questionform">
-                <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check mb-2" v-for="[option, help] in question.options">
+                <div v-if="question.type === 'radio'" :class="['form-group', question.optionsSorted.length > 10 ? 'multi-column' : '']">
+                    <div class="form-check mb-2" v-for="[option, help] in question.optionsSorted">
                         <label class="form-check-label small">
                             <input type="radio" class="form-check-input" v-model="answers[q]" :name="'question' + q" :value="option" required/>
                             {{option}}
@@ -84,8 +84,8 @@
                         </label>
                     </div>
                 </div>
-                <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check mb-2" v-for="[option, help] in question.options">
+                <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.optionsSorted.length > 10 ? 'multi-column' : '']">
+                    <div class="form-check mb-2" v-for="[option, help] in question.optionsSorted">
                         <label class="form-check-label small">
                             <input type="checkbox" class="form-check-input" v-model="answers[q]" :value="option"/>
                             {{option}}
@@ -147,9 +147,13 @@
     export default {
         data() {
             const questions = this.config.census.questions.map(q => {
-                if (q.randomise) {
-                    q.options = [...shuffle(q.options), ...(q.optionsLast || [])];
-                }
+                q.optionsSorted = q.randomise
+                     ? [
+                        ...(q.optionsFirst || []),
+                        ...shuffle(q.options),
+                        ...(q.optionsLast || []),
+                    ]
+                    : q.options;
                 return q;
             });
             return {
