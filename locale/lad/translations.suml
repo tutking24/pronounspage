@@ -196,13 +196,13 @@ faq:
             answer:
                 - >
                     El djenero es muncho mas komplikado ke una simple distinksyon entre maskulino i feminino.
-                    Inkluzo desde un punto de vista puramente biolojiko distinguimos sekso kromosomiko,
+                    Inkluzo desde un punto de vista puramente biolojiko distingimos sekso kromosomiko,
                     sekso djenetiko, sekso ormonal, sekso fenotipiko…
                     No son nesesariamente kongruentes uno kon otruno, no tienen ke ser binarios.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mas información aki)}.
                     I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
-                    derechos, obligaciones, reglas a seguir, ets. radikalmente diferentes. En Europa en el pasado los ombres vestian takos altos i fustas,
+                    derechos, obligaciones, reglas a segir, ets. radikalmente diferentes. En Europa en el pasado los ombres vestian takos altos i fustas,
                     munchos puevlos originarios de Norteamerika tienen rekonosido un treser djenero por syekolos, komo
                     {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espiritus}, {https://es.wikipedia.org/wiki/Muxe=mushe}, ets. ets.
                 - >
@@ -377,7 +377,7 @@ support:
     header: 'Arrimanos'
     description: >
         Si keres donar para el servidor, los dominios, stikers ets., o simplemente merkarles una bira a les autorxs,
-        puedes uzar los siguientes atadijos:
+        puedes uzar los sigientes atadijos:
 
 user:
     header: 'Kuento'
@@ -434,7 +434,7 @@ user:
         recovery:
             header: 'Kodiche de rekuperasion'
             save: >
-                Guarda los siguientes kodiches de rekuperasion en un lugar seguro.
+                Guarda los sigientes kodiches de rekuperasion en un lugar seguro.
                 Podras uzarlos para pasar la autentikasion en dos pasos (A2P) en kavzo de ke piedres tu dispozitivo de autentikasion.
             saved: 'Okey, ya los guadre!'
             enter: 'Introduze el kodiche de rekuperasion'
