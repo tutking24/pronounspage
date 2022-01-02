@@ -107,7 +107,7 @@ sources:
         author: 'Autor/a/e/x'
         title: 'Titolo'
         extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
-        year: 'Anyo de publiksyon (de la version en djudezmo)'
+        year: 'Anyo de publiksyon (de la version en Djudezmo)'
         fragments: 'Fragmentos'
         comment: 'Komentario'
         link: 'Atadijo al kontenido'
@@ -263,7 +263,7 @@ faq:
             answer:
                 - >
                     Si! Miyones de personas no binarias en el mundo lo azen.
-                    Algunos de pronombres propozados aki ainda no se uza en ladino (i son inspirados por formas de kastiyano i otras linguas), pero puede ser inspirasyon para personas ke keren ekspresar sus identidad en su lingua.
+                    Algunos de pronombres propozados aki ainda no se uza en Ladino (i son inspirados por formas de kastiyano i otras linguas), pero puede ser inspirasyon para personas ke keren ekspresar sus identidad en su lingua.
         authority:
             question: 'Esos pronombres no binarios estan aseptados por alguna otoridad?'
             answer:
