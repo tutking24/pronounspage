@@ -154,7 +154,7 @@ export const buildLocaleList = (current, includeUnpublished = false) => {
     return buildDict(function* () {
         for (let [code, name, url, published] of locales) {
             if (published || current === code || includeUnpublished) {
-                yield [code, {name, url, published}];
+                yield [code, {name, url, published, code}];
             }
         }
     })

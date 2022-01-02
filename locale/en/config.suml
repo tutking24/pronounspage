@@ -352,3 +352,6 @@ api:
         terms_search: ['/api/terms/search/agender']
 
         profile_get: ['/api/profile/get/andrea']
+
+        calendar_today: ['/api/calendar/today']
+        calendar_day: ['/api/calendar/2022-11-23']
