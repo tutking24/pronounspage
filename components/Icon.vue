@@ -22,14 +22,14 @@
                 return this.valueParts.length > 1 ? this.valueParts[0] : this.set;
             },
             iconSource() {
+                if (this.v.startsWith('https://')) {
+                    return this.v;
+                }
                 if (this.v.endsWith('.svg')) {
                     return `/img/${this.inverse ? this.v.replace('.svg', '-inverse.svg') : this.v}`;
                 }
                 if (this.v.endsWith('.png')) {
                     return `/img/${this.inverse ? this.v.replace('.png', '-inverse.png') : this.v}`;
-                }
-                if (this.v.startsWith('https://')) {
-                    return this.v;
                 }
                 return null;
             },
