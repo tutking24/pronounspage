@@ -90,6 +90,14 @@
                     endpoints: {
                         profile_get: ['GET', '/api/profile/get/{username}'],
                     },
+                }, {
+                    enabled: this.config.calendar.enabled,
+                    header: 'calendar.header',
+                    icon: 'calendar-star',
+                    endpoints: {
+                        calendar_today: ['GET', '/api/calendar/today'],
+                        calendar_day: ['GET', '/api/calendar/{day}'],
+                    },
                 }],
             }
         },
