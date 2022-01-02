@@ -15,20 +15,20 @@ home:
         - >
             El djenero es komplikado. Algunas personas no “se ven” komo sus djenero.
             Algunes preferan ser yamades de manera diferente a lo ke une asumiria.
-            Algunas personas no enkashan en las kashas “maskulino” o “feminino” i preferan una avla mas neutrala.
+            Algunas personas no se pueden meter en las “kashas” de maskulino o feminino “maskulino” o “feminino” i preferan una avla mas neutrala.
         - >
             Este sitio te permete atar a tus pronombres, kon enshemplos de uzo en frazas,
             para ke puedas amostrarle a la djente komo preferas ke te yamen.
         - >
             Por ke emporta? Por simple bondad umana.
-            No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akeyo nombre
+            No yamarias “Rashel” a Miriam solo porke a ti te plaze mas akel nombre
             o porke “tiene mas kara de Rashel para ti”.
             O inkluzo si eya <em>si</em> se yama “Rashel” en el nufus
-            ama aborese akeyo nombre i prefera uzar “Miriam”.
+            ama aborese akel nombre i prefera uzar “Miriam”.
             Es egzaktamente lo mismo kon los pronombres –
-            si no keres ser abdal kon algun, avla de akeya persona korektamente.
+            si no keres ser kaba kon alguno, avla de akeya persona korektamente.
             La sola diferensia es ke normalmente konosemos los nombres, ama no los pronombres.
-            Mos prezentamos kon muestro nombre, ama no kon muestros pronombres. Agamos un trokamiento!
+            Mos prezentamos kon muestro nombre, ama no kon muestros pronombres. Kale ke agamos un trokamiento!
     pronouns: 'Lista de pronombres'
     generator:
         header: 'Jenerador'
@@ -51,7 +51,7 @@ home:
             los pronombres ke sientan ke mijor les deskriven
         respect: >
             <strong>Respekto</strong>
-            – para ke los pronombres de <em>otrunas personas</em> sean respektados
+            – para ke los pronombres de <em>otras personas</em> sean respektados
         inclusiveness: >
             <strong>Inkluzividad</strong>
             – para ke kuando mensionamos a una persona ke no konosemos o a un grupo de djente
@@ -78,7 +78,7 @@ pronouns:
             a otres no les molesta ke les llamen de kualkier manera - mientres ke en el konteksto sea klaro a ken se esta avlando.
         options: 'Mira las opsiones [share]{/pronombres=aki}.'
     others: 'Otras formas'
-    othersRaw: 'Otrunas'
+    othersRaw: 'Otras'
     or: 'o'
     grammarTable: 'Tabla'
 
@@ -107,7 +107,7 @@ sources:
         author: 'Autor/a/e/x'
         title: 'Titolo'
         extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
-        year: 'Anyo de publiksyon (de la version en djudezmo)'
+        year: 'Anyo de publiksyon (de la version en Djudezmo)'
         fragments: 'Fragmentos'
         comment: 'Komentario'
         link: 'Atadijo al kontenido'
@@ -207,7 +207,7 @@ faq:
                     {https://es.wikipedia.org/wiki/Dos_esp%C3%ADritus=dos espiritus}, {https://es.wikipedia.org/wiki/Muxe=mushe}, ets. ets.
                 - >
                     “No binarie” es un termo ke deskrive la identidad de personas ke
-                    no enkashan en la distinsyon binaria de ombre/mujer.
+                    no se meten en la distinsyon binaria de ombre/mujer.
                     Inkluye personas
                     {https://gsrdi.fandom.com/es/wiki/Ag%C3%A9nero=adjenero},
                     {https://es.wikipedia.org/wiki/G%C3%A9nero_fluido=djenero fluido},
@@ -263,7 +263,7 @@ faq:
             answer:
                 - >
                     Si! Miyones de personas no binarias en el mundo lo azen.
-                    Algunos de pronombres propozados aki ainda no se uza en ladino (i son inspirados por formas de kastiyano i otras linguas), pero puede ser inspirasyon para personas ke keren ekspresar sus identidad en su lingua.
+                    Algunos de pronombres propozados aki ainda no se uza en Ladino (i son inspirados por formas de kastiyano i otras linguas), pero puede ser inspirasyon para personas ke keren ekspresar sus identidad en su lingua.
         authority:
             question: 'Esos pronombres no binarios estan aseptados por alguna otoridad?'
             answer:
@@ -309,7 +309,7 @@ faq:
                 - >
                     Naturalmente! Dinguno se sorprende kuando alguno troka su punto de vista, estilo, enteresos…
                     Ansi ke por ke seria ajeno ke ese alguno deskuvriera una parte de su identidad,
-                    o ke le deshara de plazer su nombre, deskuvriera una etiketa ke enkasha bien kon eye, ets.?
+                    o ke le deshara de plazer su nombre, deskuvriera una etiketa ke es buena para eye, ets.?
         get-used-to:
             question: 'Es estranyo ke no me akostumbre a <em>mis</em> muevos pronombres?'
             answer:
@@ -319,7 +319,7 @@ faq:
                 - >
                     Pronombres ≠ djenero.
                     Tu djenero no trokara ensupito porke alguno te yamo “eye”.
-                    No te perkures. Eksperimenta. Ve ke enkasha mijor kon ti.
+                    No te perkures. Eksperimenta. Ve ke suena mijor kon ti.
         preferred-pronouns:
             question: 'Por ke no deveria dezir “pronombres preferidos”?'
             answer:
@@ -677,7 +677,7 @@ quotation:
 localise:
     shorter: 'Adisyonar versiones'
     short: 'Adisyonar versiones en otras linguas'
-    long: 'Keres adisyonar una version en otruna lingua? Melda'
+    long: 'Keres adisyonar una version en otra lingua? Melda'
     longLink: 'este manual!'
 
 images:
