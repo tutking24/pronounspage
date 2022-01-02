@@ -1,10 +1,22 @@
 <template>
     <div>
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
-            <h2 class="text-nowrap mw-50">
-                <Avatar :user="user"/>
-                @{{user.username}}
-            </h2>
+            <div class="mw-50">
+                <div class="text-nowrap d-flex align-items-center">
+                    <Avatar :user="user" class="me-3"/>
+                    <div>
+                        <h2>
+                            @{{user.username}}
+                        </h2>
+                        <p v-if="profile.teamName || profile.footerName" class="mb-2">
+                            <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
+                                <Icon v="collective-logo.svg" class="inverted"/>
+                                <T>contact.team.member</T>
+                            </nuxt-link>
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="flex-grow-1 text-lg-end">
                 <slot></slot>
             </div>
@@ -18,12 +30,6 @@
                 <p v-if="profile.age">
                     <Icon v="birthday-cake"/>
                     {{ profile.age }}
-                </p>
-                <p v-if="profile.teamName || profile.footerName" class="mb-2">
-                    <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
-                        <Icon v="collective-logo.svg" class="inverted"/>
-                        <T>contact.team.member</T>
-                    </nuxt-link>
                 </p>
             </div>
 
