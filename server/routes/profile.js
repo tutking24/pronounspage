@@ -32,7 +32,7 @@ const verifyLinks = (links, authenticators) => {
     for (let provider of providersWithLinks) {
         for (let a of authenticators) {
             if (a.type !== provider) { continue; }
-            const regex = new RegExp(socialProviders[a.type].linkRegex(JSON.parse(a.payload)));
+            const regex = new RegExp(socialProviders[a.type].linkRegex(JSON.parse(a.payload)), 'i');
             for (let link of links) {
                 if (link.match(regex)) {
                     verifiedLinks[link] = provider;
