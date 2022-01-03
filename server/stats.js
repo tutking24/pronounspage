@@ -4,24 +4,7 @@ const dbConnection = require('./db');
 const {calculateStats, statsFile} = require('../src/stats');
 const locales = require('../src/locales');
 const fs = require('fs');
-
-// TODO duplication
-const buildDict = (fn, ...args) => {
-    const dict = {};
-    for (let [key, value] of fn(...args)) {
-        dict[key] = value;
-    }
-    return dict;
-}
-const buildLocaleList = () => {
-    return buildDict(function* () {
-        for (let [code, name, url, published] of locales) {
-            if (published) {
-                yield [code, {name, url, published}];
-            }
-        }
-    })
-}
+const buildLocaleList = require('../src/buildLocaleList');
 
 async function calculate() {
     const db = await dbConnection();

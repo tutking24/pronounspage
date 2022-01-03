@@ -6,7 +6,8 @@ import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
-import {isGranted, buildLocaleList} from "../src/helpers";
+import {isGranted} from "../src/helpers";
+import buildLocaleList from "../src/buildLocaleList";
 import cookieSettings from "../src/cookieSettings";
 import SQL from "sql-template-strings";
 

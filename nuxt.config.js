@@ -2,7 +2,8 @@ require('./src/dotenv')();
 
 import { loadSuml } from './server/loader';
 import fs from 'fs';
-import {buildDict, buildList, buildLocaleList} from "./src/helpers";
+import {buildDict, buildList} from "./src/helpers";
+import buildLocaleList from "./src/buildLocaleList";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
