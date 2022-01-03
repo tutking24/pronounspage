@@ -11,13 +11,20 @@
             data: { required: true },
             cumulative: { type: Boolean },
             type: {'default': 'line'},
+            options: {'default': () => { return {
+                responsive: true,
+                interaction: {
+                    intersect: false,
+                    mode: 'index',
+                },
+            }; }},
         },
         async created() {
         },
         async mounted() {
             if (!process.client) { return; }
 
-            await this.$loadScript('charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js');
+            await this.$loadScript('charts', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js');
             this.drawChart();
         },
         methods: {
@@ -35,11 +42,14 @@
                         labels: Object.keys(this.data),
                         datasets: [{
                             label: this.label,
-                            data: this.cumulative ? this.accumulate(Object.values(this.data)) : Object.values(this.data),
+                            data: this.cumulative
+                                ? this.accumulate(Object.values(this.data))
+                                : Object.values(this.data),
                             fill: false,
                             borderColor: '#C71585',
                         }],
                     },
+                    options: this.options,
                 });
             },
             accumulate(values) {

@@ -94,7 +94,14 @@
 
         <ChartSet name="users" :data="stats.users.chart" init="cumulative"/>
 
-        <Chart label="number of profiles by locale" :data="profilesByLocale" type="bar"/>
+        <Chart label="number of profiles by locale" :data="profilesByLocale" type="bar" :options="{
+            indexAxis: 'y',
+            responsive: true,
+            interaction: {
+                intersect: false,
+                mode: 'y',
+            },
+        }"/>
 
         <section>
             <Icon v="id-card"/>
