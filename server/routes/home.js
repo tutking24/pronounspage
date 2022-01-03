@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import {buildLocaleList, handleErrorAsync} from "../../src/helpers";
+import {handleErrorAsync} from "../../src/helpers";
+import buildLocaleList from "../../src/buildLocaleList";
 
 const router = Router();
 

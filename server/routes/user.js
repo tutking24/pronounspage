@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {buildDict, makeId, now, handleErrorAsync, buildLocaleList} from "../../src/helpers";
+import {buildDict, makeId, now, handleErrorAsync} from "../../src/helpers";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import { loadSuml } from '../loader';
@@ -11,6 +11,7 @@ import cookieSettings from "../../src/cookieSettings";
 import {validateCaptcha} from "../captcha";
 import assert from "assert";
 import {addMfaInfo} from './mfa';
+import buildLocaleList from "../../src/buildLocaleList";
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');

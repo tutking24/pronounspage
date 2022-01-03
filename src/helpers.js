@@ -1,7 +1,6 @@
 import md5 from 'js-md5';
-import { Base64 } from 'js-base64';
+import {Base64} from 'js-base64';
 import _ from 'lodash';
-import locales from './locales';
 
 export const buildDict = (fn, ...args) => {
     const dict = {};
@@ -148,16 +147,6 @@ export const isEmoji = char => {
 
 export const isTroll = (body) => {
     return ['cipeusz', 'feminazi', 'bruksela', 'zboczeń'].some(t => body.indexOf(t) > -1);
-}
-
-export const buildLocaleList = (current, includeUnpublished = false) => {
-    return buildDict(function* () {
-        for (let [code, name, url, published] of locales) {
-            if (published || current === code || includeUnpublished) {
-                yield [code, {name, url, published, code}];
-            }
-        }
-    })
 }
 
 export const zip = (list, reverse) => {

@@ -1,13 +1,14 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import avatar from '../avatar';
-import {buildDict, now, shuffle, handleErrorAsync, buildLocaleList} from "../../src/helpers";
+import {buildDict, now, shuffle, handleErrorAsync} from "../../src/helpers";
 import locales from '../../src/locales';
 import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
 import { caches }  from "../../src/cache";
 import mailer from "../../src/mailer";
 import {profilesSnapshot} from "./profile";
+import buildLocaleList from "../../src/buildLocaleList";
 
 const router = Router();
 
