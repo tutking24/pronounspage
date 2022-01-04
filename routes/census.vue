@@ -19,14 +19,6 @@
                 </div>
             </section>
 
-            <section>
-                <T :params='{
-                    questions: questions.length,
-                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                }'>census.description</T>
-            </section>
-
             <section v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
                 <ul class="mb-0">
                     <li v-for="(text, link) in config.census.results">
@@ -36,7 +28,11 @@
             </section>
 
             <section>
-                <Share :title="$t('census.headerLong')"/>
+                <T :params='{
+                    questions: questions.length,
+                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                }'>census.description</T>
             </section>
 
             <section v-if="open">
@@ -60,6 +56,10 @@
                     </div>
                 </template>
             </section>
+
+            <section>
+                <Share :title="$t('census.headerLong')"/>
+            </section>
         </template>
 
         <template v-else-if="q < questions.length">
@@ -75,8 +75,8 @@
                 </p>
             </div>
             <form @submit.prevent="q++" ref="questionform">
-                <div v-if="question.type === 'radio'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check mb-2" v-for="[option, help] in question.options">
+                <div v-if="question.type === 'radio'" :class="['form-group', question.optionsSorted.length > 10 ? 'multi-column' : '']">
+                    <div class="form-check mb-2" v-for="[option, help] in question.optionsSorted">
                         <label class="form-check-label small">
                             <input type="radio" class="form-check-input" v-model="answers[q]" :name="'question' + q" :value="option" required/>
                             {{option}}
@@ -84,8 +84,8 @@
                         </label>
                     </div>
                 </div>
-                <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.options.length > 10 ? 'multi-column' : '']">
-                    <div class="form-check mb-2" v-for="[option, help] in question.options">
+                <div v-else-if="question.type === 'checkbox'" :class="['form-group', question.optionsSorted.length > 10 ? 'multi-column' : '']">
+                    <div class="form-check mb-2" v-for="[option, help] in question.optionsSorted">
                         <label class="form-check-label small">
                             <input type="checkbox" class="form-check-input" v-model="answers[q]" :value="option"/>
                             {{option}}
@@ -147,9 +147,13 @@
     export default {
         data() {
             const questions = this.config.census.questions.map(q => {
-                if (q.randomise) {
-                    q.options = [...shuffle(q.options), ...(q.optionsLast || [])];
-                }
+                q.optionsSorted = q.randomise
+                     ? [
+                        ...(q.optionsFirst || []),
+                        ...shuffle(q.options),
+                        ...(q.optionsLast || []),
+                    ]
+                    : q.options;
                 return q;
             });
             return {
