@@ -7,12 +7,14 @@
 }
 
 body[data-theme="dark"] {
+  $primary-dark: #ff95bb;
+
   background: initial !important;
   background-color: $dark !important;
   color: $light;
 
-  a { color: lighten($primary, 40%); }
-  a:hover { color: lighten($primary, 30%); }
+  a { color: $primary-dark; }
+  a:hover { color: lighten($primary-dark, 10%); }
   .text-dark { color: $light !important; }
   .btn-primary { color: $light; }
   .btn-outline-primary { color: $light; &:hover {color: $light;}}
@@ -235,7 +237,37 @@ body[data-theme="dark"] {
     .nav-item {
       color: $light;
       &.active, &:hover {
-        color: lighten($primary, 10%) !important;
+        color: $primary-dark !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-down('lg', $grid-breakpoints) {
+    .nav-custom {
+      .btn {
+        &:hover, &:focus, &.active {
+          border-inline-start: 3px solid $primary-dark !important;
+        }
+      }
+    }
+  }
+
+  .nav-custom-start {
+    .btn {
+      &:hover, &:focus, &.active {
+        border-inline-start: 3px solid $primary-dark !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-up('lg', $grid-breakpoints) {
+    .nav-custom:not(.nav-custom-start) {
+      .nav-item {
+        &.btn {
+          &:hover, &:focus, &.active {
+            border-bottom: 3px solid $primary-dark !important;
+          }
+        }
       }
     }
   }
@@ -250,7 +282,7 @@ body[data-theme="dark"] {
 
   .alert-primary, .alert-success, .alert-warning, .alert-danger {
     a {
-      color: $primary;
+      color: $primary-dark;
     }
   }
 
