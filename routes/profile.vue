@@ -81,7 +81,7 @@
             <Share/>
         </section>
     </div>
-    <div v-else-if="user.username" class="my-md-5 pt-md-2">
+    <div v-else-if="user.username" class="my-sm-5 pt-sm-2">
         <h2 class="text-nowrap mb-3">
             <Avatar :user="user"/>
             @{{username}}
