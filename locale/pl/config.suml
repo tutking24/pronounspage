@@ -1373,22 +1373,51 @@ calendar:
 census:
     enabled: true
     route: 'spis'
-    edition: '2021'
-    start: '2021-02-01T00:00:00+01:00'
-    end: '2021-02-28T23:59:59+02:00'
+    edition: '2022'
+    start: '2022-01-01T00:00:00+01:00'  # TODO that's just for testing, change to February before going live
+    end: '2022-01-28T23:59:59+02:00'
     questions:
         -
             type: 'radio'
             question: 'Jesteś…'
             options:
-                - ['osobą niebinarną']
-                - ['osobą cispłciową']
-                - ['binarną osobą transpłciową']
+                - ['osobą cispłciową', 'Twoja płeć jest zgodna z płcią przypisaną Ci przy urodzeniu']
+                - ['binarną osobą transpłciową', 'Twoja płeć jest inna niż przypisana Ci przy urodzeniu, ale wciąż binarna: żeńska lub męska']
+                - ['osobą niebinarną', 'Twoja płeć jest inna niż „kobieta – zawsze i wyłącznie” albo „mężczyzna – zawsze i wyłącznie”']
                 - ['nie wiem']
+        -
+            type: 'radio'
+            question: 'Przy urodzeniu przypisano Ci płeć… (nieobowiązkowe)'
+            instruction:
+                - >
+                    Wiemy, że to pytanie dotyka bardzo wrażliwej strefy.
+                    Zadajemy je, by móc porównać, ile osób niebinarnych używa zaimków
+                    zgodnych z tymi, jakich społeczeństwo oczekuje na podstawie ich przypisanej przy urodzeniu płci,
+                    ile przeciwnych, a ile form niebinarnych.
+                    To pytanie nie jest obowiązkowe.
+            options:
+                - ['żeńską']
+                - ['męską']
+                - ['inną (w jurysdykcjach, gdzie to możliwe)']
+                - ['nie chcę odpowiadać']
+        -
+            type: 'radio'
+            question: 'W dokumentach masz obecnie płeć… (nieobowiązkowe)'
+            instruction:
+                - >
+                    Wiemy, że to pytanie dotyka bardzo wrażliwej strefy.
+                    Zadajemy je, by móc zbadać, jaka część polskojęzycznych osób niebinarnych
+                    podejmuje się prawnej zmiany znacznika płci mimo braku opcji wykraczających poza binarność.
+                    To pytanie nie jest obowiązkowe.
+            options:
+                - ['żeńską']
+                - ['męską']
+                - ['inną (w jurysdykcjach, gdzie to możliwe)']
+                - ['nie chcę odpowiadać']
         -
             type: 'number'
             min: 1900
-            max: 2010
+            max: 2009  # min. 13 lat, GDPR
             question: 'Twój rok urodzenia'
         -
             type: 'radio'
@@ -1408,14 +1437,14 @@ census:
                 - ['kolejnym językiem']
         -
             type: 'checkbox'
-            question: 'Jakimi formami mówisz o sobie?'
+            question: 'Jakimi formami chcesz mówić o sobie / chcesz by mówiono o Tobie?'
             randomise: true
             writein: true
             instruction:
                 - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
                 - >
-                    Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
+                    Interesują nas <strong>preferencje</strong>, więc nawet jeśli chcesz używać danych form,
                     ale nie możesz tego bezpiecznie robić, to je zaznacz.
                 - >
                     Przy formach liczby mnogiej nie chodzi nam o grupę Ty + inne osoby,
@@ -1432,18 +1461,7 @@ census:
                 - ['unikanie form nacechowanych płciowo', '„dopadło mnie zmęczenie”']
         -
             type: 'checkbox'
-            question: 'Jeśli chcesz używać wobec siebie nienormatywnych (neologicznych) form językowych w codziennym życiu, ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?'
-            randomise: false
-            writein: true
-            options:
-                - ['pasują mi normatywne, binarne formy']
-                - ['nic, używam form neologicznych']
-                - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
-                - ['strach przed transfobią/enbyfobią']
-                - ['ciężko mi się przyzwyczaić']
-        -
-            type: 'checkbox'
-            question: 'Jak chcesz, by mówiono/pisano o Tobie?'
+            question: 'Jak piszesz o sobie / chcesz, by pisano o Tobie?'
             randomise: true
             writein: true
             instruction:
@@ -1492,7 +1510,7 @@ census:
             writein: true
             instruction:
                 - >
-                    Więcej informacji <a href="/rzeczowniki" target="_blank">w zakładce „Słowniki”</a>.
+                    Więcej informacji <a href="/rzeczowniki" target="_blank">w zakładce „Rzeczowniki”</a>.
                 - >
                     Interesują nas preferencje, więc nawet jeśli chcesz używać danych form,
                     ale nie możesz tego bezpiecznie robić, to je zaznacz.
@@ -1501,6 +1519,7 @@ census:
                 - ['feminatywy', 'nauczycielka, partnerka, pracowniczka']
                 - ['neutratywy', 'nauczyciełło, partnerze, pracownicze']
                 - ['dukatywy', 'nauczycielu, partneru, pracowniku']
+                - ['iksatywy', 'nauczycielx, partnerx, pracownikx']
                 - ['osobatywy', 'osoba nauczająca, osoba partnerska, osoba pracująca']
         -
             type: 'checkbox'
@@ -1512,10 +1531,49 @@ census:
                 - ['„per wy”', '„skądeście przyszli”']
                 - ['pan']
                 - ['pani']
-                - ['państwo (l. poj.)', '„czy chce państwo…”']
-                - ['państwo (l. mn.)', '„czy chcą państwo…”']
+                - ['państwo (l. poj.)', '„czy chciałoby państwo…”']
+                - ['państwo (l. mn.)', '„czy chcieliby państwo…”']
                 - ['pań']
                 - ['panu']
+        -
+            type: 'checkbox'
+            question: >
+                Jeśli chcesz używać wobec siebie rodzaju neutralnego
+                albo nienormatywnych (neologicznych) form językowych w codziennym życiu,
+                ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?
+            randomise: false
+            writein: true
+            options:
+                - ['nie chcę, pasują mi normatywne, binarne formy']
+                - ['nic, używam takich form']
+                - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
+                - ['strach przed transfobią/enbyfobią', 'użycie niestandardowych form ujawniałoby moją tożsamość, a nie zawsze jest to bezpieczne']
+                - ['ciężko mi się przyzwyczaić']
+        -
+            type: 'checkbox'
+            question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
+            instruction:
+                - >
+                    Więcej informacji <a href="/blog/jak-zwracać-się-do-grup" target="_blank">na naszym blogu</a>.
+            randomise: true
+            writein: true
+            options:
+                - ['rodzaj męskoosobowy', '„zrobiliśmy”, „poszliście”, „oni byli”']
+                - ['rodzaj niemęskoosobowy / żeńskoosobowy', '„zrobiłyśmy”, „poszłyście”, „one były”']
+                - ['rodzaj neutralny w liczbie mnogiej', '„zrobiłośmy”, „poszłoście”, „ona były”']
+                - ['rodzaj postpłciowy w liczbie mnogiej', '„zrobiłuśmy”, „poszłuście”, „ony były”']
+                - ['neozaimek „onie”', '„zrobileśmy”, „poszleście”, „onie byle”']
+        -
+            type: 'checkbox'
+            question: 'Co wpłynęło/wpływa na Twój wybór zaimków i używanych form językowych?'
+            randomise: true
+            writein: true
+            options:
+                - ['Manifest Niebinarnej Polszczyzny']
+                - ['popularność danej formy', 'np. na podstawie wyników zeszłorocznego Spisu; wśród znajomych']
+                - ['opinie osób eksperckich', 'np. opinia RJP o poprawności form „byłom”, „zrobiłoś”; prof. Bralczyk zachęcający do używania neutrum, itp.']
+                - ['presja otoczenia']
+                - ['bliższe identyfikowanie się z daną binarną płcią']
         -
             type: 'checkbox'
             question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
@@ -1524,6 +1582,10 @@ census:
             instruction:
                 - >
                     Więcej informacji <a href="https://en.pronouns.page" target="_blank">na naszej anglojęzycznej stronie</a>.
+                - >
+                    („they/them” wcale nie jest powtórzone – chodzi o różnicę między formami zwrotnymi „themself” i „themselves”.)
+            optionsFirst:
+                - ['nie znam / nie używam angielskiego']
             options:
                 - ['he/him']
                 - ['she/her']
@@ -1554,7 +1616,6 @@ census:
                 - ['ze/zir']
                 - ['zhe/zher']
             optionsLast:
-                - ['nie znam / nie używam angielskiego']
                 - ['nie mam preferencji po angielsku']
                 - ['bez użycia zaimków (nounself, emojiself, …)']
         -
@@ -1620,7 +1681,7 @@ census:
                 - ['kobieta']
                 - ['męsk_']
                 - ['mężczyzna']
-                # - ['osoba'] ?
+                - ['osoba']
 
                 - ['nonbinary']
                 - ['enby']
