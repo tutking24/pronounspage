@@ -4,22 +4,22 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns'
-    default: 'he'
-    any: 'any'
+    route: 'rakhenwyn'
+    default: 'ev'
+    any: 'pynag'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'Furvow keschanjyadow'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
+            Lies den didhewek a wra devnydh a voy es unn furv yn keschanj
+            ha pes da yns ow pos gelwys gans pyneylpynag.
+            Da yw gans nebes anedha pan a tus aral a'n eyl furv dh'y benn hag i ow kewsel yn aga hever.
+        examples: ['ev&hi', 'ev&hun', 'hi&hun']
     null:
         description: >
-            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
-            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
+            {/avoiding=Goheles furvow gans genedh} / {/no-pronouns=rakhenwyn vyth} / {/null=rakhenwyn mann} /
+            {/pronounless=dirakhanow} / {/nullpronominal=mannrakhanwel} / {/nameself=hanow-honan}
         history: >
             Some people prefer not using any pronouns, instead being referred by name, initial,
             omitting pronouns with passive voice, or restructuring the sentence.
