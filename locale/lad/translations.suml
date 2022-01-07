@@ -184,7 +184,7 @@ terminology:
     term: 'Termino'
     original: 'Etimolojia'
     category: 'Kategoria'
-    images: 'Imajes adisionales, de fuera del katalog de bandieras'
+    images: 'Imajes adisionalas, de fuera del katalog de bandieras'
     definition: 'Definision'
 
 faq:
@@ -222,7 +222,7 @@ faq:
             question: 'Por ke deveria respektar los pronombres <em>raros</em> de otruna persona?'
             answer:
                 - >
-                    Porke referirse a las personas en la manera ke lo preferan es la base de las relasiones sosyales.
+                    Porke referirse a las personas en la manera ke lo preferan es la base de las relasiones sosyalas.
                     No yamarias “Rashel” a Miriam, no le avlarias “de tu” a tu patronx, ets.
                     I hay personas ke no keren ser yamadas “{/el=el}” o “{/eya=eya}”.
                     Si no puedes akseptarlo, eso solo avla mal <em>de ti</em>.
@@ -283,7 +283,7 @@ faq:
                     Tambien puedes meldar  {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=lavoros akademikos}
                     sovre los pronombres no binarios.
         bio:
-            question: 'Por ke deveria incluir mis pronombres en mis redes sosyales?'
+            question: 'Por ke deveria incluir mis pronombres en mis redes sosyalas?'
             answer:
                 - >
                     Si sos sisdjenero (= no sos trans) i uzas „{/el=el}” o „{/eya=eya}” de akodro kon tu djenero,
@@ -335,7 +335,7 @@ faq:
             answer:
                 - >
                     Porke djenero ≠ pronombres. Los pronombres son solo gramer.
-                    Las personas no binarias pueden uzar pronombres binarios, algunas lezbianas uzan {/el=el/lo} por razones kulturales, ets.
+                    Las personas no binarias pueden uzar pronombres binarios, algunas lezbianas uzan {/el=el/lo} por razones kulturalas, ets.
                 - >
                     Simplemente di “pronombres”.
 
@@ -349,7 +349,7 @@ links:
     mediaShort: 'Los medios'
     media: 'Pronouns.page en los medios'
 
-    social: 'Redes sosyales'
+    social: 'Redes sosyalas'
 
     languageVersions: 'Versiones en otras linguas'
 
@@ -384,7 +384,7 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
+        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyalas o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
         action: 'Konektarte / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
@@ -421,7 +421,7 @@ user:
     deleteAccount: 'Kitar kuento'
     deleteAccountConfirm: 'Konfirmas ke keres kitar tu kuento? Esto va ser irreversible!'
     socialConnection:
-        list: 'Koneksiones de redes sosyales'
+        list: 'Koneksiones de redes sosyalas'
         connect: 'Konektar'
         refresh: 'Aktualizar'
         disconnect: 'Deskonektar'
@@ -516,8 +516,8 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
-    links: 'Kontakto, redes sosyales, apoyo'
-    legal: 'Kozas legales'
+    links: 'Kontakto, redes sosyalas, apoyo'
+    legal: 'Kozas legalas'
     financial: 'Transparensia pekunaria'
     technical: 'Kozas teknikas'
     sibling: 'Prodjektos ermanos'
