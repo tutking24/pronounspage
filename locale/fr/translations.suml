@@ -516,9 +516,9 @@ footer:
         {https://gitlab.com/Avris/Zaimki=Kod źródłowy} et le contenu sont sous licence {/license=OQL}.
     links: 'Contact, réseaux sociaux'
     legal: 'Légal'
-    financial: 'Financial transparency' # TODO
+    financial: 'Transparence financière'
     technical: 'Technique'
-    sibling: 'Sibling projects' # TODO
+    sibling: 'Projets similaires'
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'
