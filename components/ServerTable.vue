@@ -141,7 +141,8 @@
                 this.page = 0;
                 await this.loadData();
             },
-            async query() {
+            async query(after, before, t) {
+                if (JSON.stringify(after) === JSON.stringify(before)) { return; }
                 this.page = 0;
                 await this.loadData();
             },
