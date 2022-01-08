@@ -18,7 +18,7 @@ export const buildList = (fn, ...args) => {
     return list;
 }
 
-export const head = ({title, description, banner}) => {
+export const head = ({title, description, banner, noindex = false}) => {
     const meta = { meta: [] };
 
     if (title) {
@@ -41,6 +41,10 @@ export const head = ({title, description, banner}) => {
         banner = process.env.BASE_URL + '/' + banner.replace(/^\//, '');
         meta.meta.push({ hid: 'og:image', property: 'og:image', content: banner });
         meta.meta.push({ hid: 'twitter:image', property: 'twitter:image', content: banner });
+    }
+
+    if (noindex) {
+        meta.meta.push({ hid: 'robots', name: 'robots', content: 'noindex'});
     }
 
     return meta;

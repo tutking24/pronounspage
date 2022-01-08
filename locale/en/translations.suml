@@ -377,6 +377,33 @@ faq:
                 - >
                     You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
                     Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
+        unlisted-cards:
+            question: 'Can someone search for my card?'
+            answer:
+                - >
+                    We don't publish any list of active usernames that one could search through or open them one-by-one.
+                    People should only know your username, if you share a link with them (or if they randomly guess it).
+                - >
+                    Through {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex}
+                    and {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt}
+                    we ask search engines to stay away from the cards.
+                    Keep in mind, though, that not all of them respect such directives,
+                    and that we've only added them recently, so the webpages already crawled by them earlier
+                    (eg. when their crawlers stumbled upon a publicly posted link to your pronouns.page card)
+                    might stay in their cache for some time.
+                - >
+                    You decide what's in your card – remember that depending on what you put there (like links to your social media),
+                    it might be easy for people who stumble upon your card to identify you.
+        verified-links:
+            question: 'How do I get the links in my card verified?'
+            answer:
+                - >
+                    In your {/account=account settings} you can connect and disconnect multiple third-party accounts,
+                    which lets you use them as a login provider.
+                    If on top of that you decide to publish the link to your third-party profile in your card,
+                    then that link will be marked with a shield icon ([shield-check]).
+                    It will also include a <code>rel="me"</code> tag, so that services like Mastodon can verify it the other way round too.
+                    This feature only works with Mastodon and Twitter so far.
         business:
             question: 'Are you a business?'
             answer:

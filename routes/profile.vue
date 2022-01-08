@@ -223,6 +223,7 @@
                 title: `@${this.username}`,
                 description: this.profile ? this.profile.description : null,
                 banner: `api/banner/@${this.username}.png`,
+                noindex: true,
             });
         },
     }
