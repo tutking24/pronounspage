@@ -17,7 +17,11 @@ Wiadomo, najlepiej byłoby zapytać osób, jak chcą, by mówiono o nich po pols
 na przykład podsyłając im [nasze materiały anglojęzyczne](/english),
 ale to nie zawsze jest możliwe.
 
-Oto nasze propozycje tłumaczeń: (a pod koniec wersja TL;DR 😉)
+Poniżej przedstawiamy nasze propozycje tłumaczeń.
+Oczywiście nie jest to żaden pełen, zamknięty, narzucony system, a wyłącznie propozycje –
+zachęcamy do eksperymentowania z językiem, by jak najlepiej oddać treść w zależności od kontekstu.
+
+Pod koniec poradnika jest też wersja TL;DR 😉
 
 ## Unikanie form nacechowanych płciowo
 
@@ -116,13 +120,13 @@ Warto zauważyć też, że ze względu na grzecznościowy charakter liczby mnogi
 
 [Rodzaj niemęskoosobowy](/one):
 
-> Znane piosenkarki wyoutowały się jako niebinarne.  
+> Znane piosenkarka wyoutowały się jako niebinarne.  
 > – Dlaczego to zrobiłyście?  
 > – Chciałyśmy żyć ze sobą w zgodzie – one odpowiadają, a na ich twarzy pojawia się uśmiech.
 
 [Rodzaj męskoosobowy](/oni):
 
-> Znani piosenkarze wyoutowali się jako niebinarni.  
+> Znani piosenkarz wyoutowali się jako niebinarni.  
 > – Dlaczego to zrobiliście?  
 > – Chcieliśmy żyć ze sobą w zgodzie – oni odpowiadają, a na ich twarzy pojawia się uśmiech.
 
@@ -144,8 +148,8 @@ Rodzaj neutralny.
 
 ## Osoba niebinarna używająca _[one/one's](https://en.pronouns.page/one)_
 
-Osobatywy. W przypadku bezpośredniej komunikacji można użyć form „Dlaczego osoba to zrobiła?” itd.,
-bo to rzeczywiście mniej więcej to znaczy.
+Osobatywy. W przypadku bezpośredniej komunikacji można użyć form _per_ „osoba” np.: „Dlaczego osoba to zrobiła?” itd.,
+analogicznie do _per_ „pan(i)”, bo to rzeczywiście mniej więcej to znaczy.
 
 ## Osoba używająca neozaimków, np. [xe/xem](https://en.pronouns.page/xe), [ze/hir](https://en.pronouns.page/ze)
 
@@ -219,8 +223,10 @@ Oto kilka naszych propozycji:
 
 ## [Pronounless, nounself](https://en.pronouns.page/avoiding)
 
-Jeżeli osoba nie używa żadnych zaimków lub używa zamiast nich konkretnego rzeczownika, użyj go z formą bezosobową –
-np. dla [Syb/Syb/Sybs/Sybs/Sybself](https://en.pronouns.page/:Syb):
+Jeżeli osoba nie używa żadnych zaimków lub używa zamiast nich konkretnego rzeczownika, to użyj go,
+wraz którąś formą niebinarną –
+na przykład [Syb/Sybs/Sybself](https://en.pronouns.page/:Syb) można by połączyć z formami z podkreślnikiem,
+wyglądałyby wtedy następująco:
 
 > Znan_ piosenkar_ wyoutował_ się jako niebinarn_.  
 > – Dlaczego to zrobił_ś?  
