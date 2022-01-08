@@ -10,7 +10,7 @@ home:
     about:
         - >
             Todos, todas i todes tenemos pronombres. Son los biervos ke uzamos en lugar del nombre para azer referensia a alguno a kien ya mensionamos.
-            La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos automatikamente kualo uzar kon base en sus apariensya.
+            La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos otomatikamente kualo uzar kon base en sus apariensya.
             Ma en realidad no es tan simple…
         - >
             El djenero es komplikado. Algunas personas no “se ven” komo sus djenero.
@@ -184,7 +184,7 @@ terminology:
     term: 'Termino'
     original: 'Etimolojia'
     category: 'Kategoria'
-    images: 'Imajes adisionales, de fuera del katalog de bandieras'
+    images: 'Imajes adisionalas, de fuera del katalog de bandieras'
     definition: 'Definision'
 
 faq:
@@ -222,7 +222,7 @@ faq:
             question: 'Por ke deveria respektar los pronombres <em>raros</em> de otruna persona?'
             answer:
                 - >
-                    Porke referirse a las personas en la manera ke lo preferan es la base de las relasiones sosyales.
+                    Porke referirse a las personas en la manera ke lo preferan es la base de las relasiones sosyalas.
                     No yamarias “Rashel” a Miriam, no le avlarias “de tu” a tu patronx, ets.
                     I hay personas ke no keren ser yamadas “{/el=el}” o “{/eya=eya}”.
                     Si no puedes akseptarlo, eso solo avla mal <em>de ti</em>.
@@ -283,7 +283,7 @@ faq:
                     Tambien puedes meldar  {https://scholar.google.com/scholar?hl=en&q=pronombres+no+binarios=lavoros akademikos}
                     sovre los pronombres no binarios.
         bio:
-            question: 'Por ke deveria incluir mis pronombres en mis redes sosyales?'
+            question: 'Por ke deveria incluir mis pronombres en mis redes sosyalas?'
             answer:
                 - >
                     Si sos sisdjenero (= no sos trans) i uzas „{/el=el}” o „{/eya=eya}” de akodro kon tu djenero,
@@ -335,7 +335,7 @@ faq:
             answer:
                 - >
                     Porke djenero ≠ pronombres. Los pronombres son solo gramer.
-                    Las personas no binarias pueden uzar pronombres binarios, algunas lezbianas uzan {/el=el/lo} por razones kulturales, ets.
+                    Las personas no binarias pueden uzar pronombres binarios, algunas lezbianas uzan {/el=el/lo} por razones kulturalas, ets.
                 - >
                     Simplemente di “pronombres”.
 
@@ -349,7 +349,7 @@ links:
     mediaShort: 'Los medios'
     media: 'Pronouns.page en los medios'
 
-    social: 'Redes sosyales'
+    social: 'Redes sosyalas'
 
     languageVersions: 'Versiones en otras linguas'
 
@@ -384,7 +384,7 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyales o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
+        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyalas o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
         action: 'Konektarte / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
@@ -421,7 +421,7 @@ user:
     deleteAccount: 'Kitar kuento'
     deleteAccountConfirm: 'Konfirmas ke keres kitar tu kuento? Esto va ser irreversible!'
     socialConnection:
-        list: 'Koneksiones de redes sosyales'
+        list: 'Koneksiones de redes sosyalas'
         connect: 'Konektar'
         refresh: 'Aktualizar'
         disconnect: 'Deskonektar'
@@ -516,8 +516,8 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
-    links: 'Kontakto, redes sosyales, apoyo'
-    legal: 'Kozas legales'
+    links: 'Kontakto, redes sosyalas, apoyo'
+    legal: 'Kozas legalas'
     financial: 'Transparensia pekunaria'
     technical: 'Kozas teknikas'
     sibling: 'Prodjektos ermanos'
@@ -719,7 +719,7 @@ flags:
     Alloromantic_Asexual: 'Aloromantik{inflection} aseksua{inflection_l}'
     Agender: 'Adjenero'
     Ambiamorous: 'Ambiamoroz{inflection}'
-    Anarcha-Queer: 'Anarka-kuir'
+    Anarcha-Queer: 'Anarshist kuir'
     Androgyne: 'Androdjine'
     Androsexual: 'Androseksua{inflection_l}'
     Aporagender: 'Aporadjenero'
@@ -850,9 +850,9 @@ calendar:
         12: 'desembre'
     events:
         pride_month: 'Mez del Orgolyo'
-        trans_month: 'Mez de la Konsensya Transdjenero'
+        trans_month: 'Mez de la Konsensya {/terminolojia#transgender=Transdjenero}'
         zaimki_birthday: 'Aniversario de Pronouns.page'
-        agender_day: 'Dia del Ogrolyo Adjenero'
+        agender_day: 'Dia del Ogrolyo {/terminolojia#agender=Adjenero}'
         asexuality_day: 'Dia de la Vizibilidad Aseksuala'
         bisexuality_day: 'Dia de la Vizibilidad Biseksuala'
         drag_day: 'Dia del Drag'
@@ -860,29 +860,29 @@ calendar:
         intersex_day: 'Dia de la Vizibilidad Interseksuala'
         intersex_remembrance_day: 'Dia de la Memoria Interseksuala'
         lesbian_day: 'Dia Internasional de las Lezbianas'
-        lesbian_visibility_day: 'Dia Internasional de la Vizibilidad Lezbiana'
+        lesbian_visibility_day: 'Dia Internasional de la Vizibilidad {/terminolojia#lesbian=Lezbiana}'
         coming_out_day: 'Dia para Salir del Almario'
         nonbinary_day: 'Dia de la Vizibilidad No Binaria'
         pan_day: 'Dia de la Konsensya Panseksuala i Panromantika'
-        trans_remembrance_day: 'Dia de la Memoria Trans'
-        trans_visibility_day: 'Dia de la Vizibilidad Trans'
+        trans_remembrance_day: 'Dia de la Memoria {/terminolojia#transgender=Trans}'
+        trans_visibility_day: 'Dia de la Vizibilidad {/terminolojia#transgender=Trans}'
         zero_discrimination_day: 'Dia de la Zero Diskriminasyon'
-        arospec_week: 'Semana de la Konsensya del Espektro Aromantiko'
+        arospec_week: 'Semana de la Konsensya del Espektro {/terminolojia#aromantic=Aromantiko}'
         asexual_week: 'Semana de la Vizibilidad Aseksuala'
         bisexual_week: 'Semana de la Konsensya Biseksuala'
         pronouns_day: 'Dia de los Pronombres'
-        trans_week: 'Semana de la Konsensya Transdjenero'
-        trans_parent_day: 'Dia de los Djenitores Trans'
+        trans_week: 'Semana de la Konsensya {/terminolojia#transgender=Transdjenero}'
+        trans_parent_day: 'Dia de los Djenitores {/terminolojia#transgender=Trans}'
         nonbinary_week: 'Semana de la Konsensya No Binaria'
         polyamory_day: 'Dia del Poliamor'
-        homophobia_sport: 'Dia Internasional kontra la Omofobia en el Espor'
+        homophobia_sport: 'Dia Internasional kontra la {/terminolojia#homophobia=Omofobia} en el Espor'
         gay_uncles_day: 'Dia de los Tiyos Geys'
         lgbtq_stem: 'Dia de las Personas LGBTQ+ en Sensia'
-        trans_depathologization: 'Dia por la Despatolojizasyon de Transdjenero'
+        trans_depathologization: 'Dia por la Despatolojizasyon de {/terminolojia#transgender=Transdjenero}'
         lgbti_book_day: 'Dia del Livro de Tema LGTBI'
         human_rights_day: 'Dia de los Diritos Umanos'
         nonbinary_parents_day: 'Dia de los Djenitores No Binaries'
-        trans_prisoner: 'Dia de Solidaridad kon Personas Trans Enkarseladas'
+        trans_prisoner: 'Dia de Solidaridad kon Personas {/terminolojia#transgender=Trans} Enkarseladas'
         xenogender_day: 'Dia de la Vizibilidad Ksenodjenero'
         genderqueer_day: 'Dia de la Vizibilidad de Djenero Kuir'
         genderfluid_day: 'Dia de la Vizibilidad de Djenero Fluido'
@@ -895,15 +895,15 @@ calendar:
         polysexual_day: 'Dia de la Vizibilidad Poliseksuala i Poliromantika'
         aids_memorial: 'Dia Internasional de Komemorasyon kontra AIDS'
         health_week: 'Semana de la Konsensya de la Salud LGBT'
-        lesbian_visibility_week: 'Semana de la Vizibilidad Lezbiana'
+        lesbian_visibility_week: 'Semana de la Vizibilidad {/terminolojia#lesbian=Lezbiana}'
         demigender_day: 'Dia de la Konsensya Demidjenero'
         pan_pride_day: 'Dia del Orgolyo Panseksual'
         transmasculine_day: 'Dia de la Pelea i Rezistensya de Personas Transmaskulinas'
         asexual_visibility_day: 'Dia de la Vizibilidad Aseksuala'
-        bi_health_month: 'Mez de la Konsensya de la Salud de Personas Biseksualas'
+        bi_health_month: 'Mez de la Konsensya de la Salud de Personas {/terminolojia#bisexual=Biseksualas}'
         holocaust_remembrance_day: 'Dia Internasional de Komemorasyon en Memoria de las Viktimas del Olokosto'
         family_equality_day: 'Dia Internasional de la Egualdad en la Familia'
-        aro_month: 'Mez de la Konsensya del Espektro Aromantiko'
+        aro_month: 'Mez de la Konsensya del Espektro {/terminolojia#aromantic=Aromantiko}'
         black_ribbon_day: 'Dia Europeo de Komemorasion de las Viktimas del Stalinismo i el Nazismo'
         black_queer_week: 'Semana de la Estoria de las Personas Kuir Pretas'
         mena_lesbian_day: 'Dia del Orgolyo de las Lezbianas i Mujeres Kuir del Medio Oriente i Norte de Afrika'

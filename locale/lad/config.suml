@@ -38,7 +38,7 @@ nouns:
     templates: false
 
 community:
-    route: 'kalendario'
+    route: 'terminolojia'
 
 inclusive:
     enabled: false
