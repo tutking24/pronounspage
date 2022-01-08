@@ -297,4 +297,16 @@ body[data-theme="dark"] {
   .vdp-datepicker__calendar {
     background-color: $dark;
   }
+
+  .day-event-0 {
+    color: $black;
+  }
+
+  .profile-current {
+    border-inline-start: 3px solid $primary-dark !important;
+  }
+
+  .list-group-flare > :first-child {
+    border-top: 3px solid $primary-dark !important;
+  }
 }
