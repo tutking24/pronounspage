@@ -4,10 +4,11 @@
             <Icon v="share"/>
             <T>share</T><T>quotation.colon</T>
         </p>
-        <button :class="['btn btn-primary m-1', shareApiSeparate ? 'd-block' : '']" v-if="hasShareApi" @click="shareApi">
+        <button class="btn btn-primary m-1" v-if="hasShareApi" @click="shareApi">
             <Icon v="share"/>
             <span class="d-none d-md-inline"><T>share</T></span>
         </button>
+        <br v-if="hasShareApi && shareApiSeparate"/>
         <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)" :aria-label="network">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>

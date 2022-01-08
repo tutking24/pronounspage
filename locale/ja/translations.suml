@@ -515,6 +515,15 @@ profile:
         link: 'カードの映像'
         generating: '生成中…'
     empty: 'この人はまだカードを作っていません。'
+    # TODO
+    personal:
+        header: 'Personal'
+        description: 'Only you can see this section'
+    language:
+        header: 'Language'
+        description: '@%username%''s card is also available in the following languages'
+        # if your language has declension and it's hard to fit the username in that sentence,
+        # just make is 'This card is…'
 
 share: '共有'
 

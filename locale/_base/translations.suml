@@ -590,6 +590,14 @@ profile:
         generate: 'Generate'
         generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
+    personal:
+        header: 'Personal'
+        description: 'Only you can see this section'
+    language:
+        header: 'Language'
+        description: '@%username%''s card is also available in the following languages'
+        # if your language has declension and it's hard to fit the username in that sentence,
+        # just make is 'This card is…'
 
 share: 'Share'
 

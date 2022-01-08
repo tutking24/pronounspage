@@ -1,5 +1,5 @@
 <template>
-    <div v-if="profile">
+    <div v-if="profile" class="position-relative">
         <section v-if="$isGranted('users') && user.bannedReason">
             <div class="alert alert-warning">
                 <p class="h4">
@@ -10,32 +10,32 @@
             </div>
         </section>
 
-        <Profile :user="user" :profile="profile" :terms="terms">
-            <div v-if="Object.keys(user.profiles).length > 1">
-                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
-                            :locale="locale" :link="`/@${user.username}`"
-                            :class="['btn', locale === config.locale ? 'btn-primary disabled' : 'btn-outline-primary', 'btn-sm', 'mb-2 mx-1']">
-                    {{options.name}}
-                </LocaleLink>
-            </div>
-            <div v-if="$user() && $user().username === user.username" class="alert alert-info">
-                <div class="mb-2">
-                    <nuxt-link to="/editor" class="btn btn-primary btn-sm mx-1">
-                        <Icon v="edit"/>
-                        <T>profile.edit</T>
-                    </nuxt-link>
-                    <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
-                       class="btn btn-outline-secondary btn-sm mx-1"
-                    >
-                        <Icon v="external-link"/>
-                        pronouns.page/@{{user.username}}
-                    </a>
+        <Profile :user="user" :profile="profile" :terms="terms"/>
+
+        <aside class="row">
+            <div v-if="$user() && $user().username === user.username" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
+                <div class="list-group-item pt-3">
+                    <h5>
+                        <Icon v="user"/>
+                        <T>profile.personal.header</T>
+                    </h5>
+                    <small><T>profile.personal.description</T></small>
                 </div>
-                <div>
-                    <small>
+                <nuxt-link to="/editor" class="list-group-item list-group-item-action list-group-item-hoverable">
+                    <Icon v="edit"/>
+                    <T>profile.edit</T>
+                </nuxt-link>
+                <a v-if="!cardMenuVisible && !(profile.card === '' || profile.cardDark === '')" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="cardMenuVisible = true">
+                    <p class="small mb-0">
+                        <Icon v="id-card"/>
+                        <T>profile.card.link</T>
+                    </p>
+                </a>
+                <div v-else class="list-group-item">
+                    <p class="small">
                         <Icon v="id-card"/>
                         <T>profile.card.link</T><T>quotation.colon</T>
-                    </small>
+                    </p>
                     <small v-if="profile.card === null && profile.cardDark === null">
                         <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
                             <Icon v="sun"/>
@@ -71,15 +71,47 @@
                     </span>
                 </div>
             </div>
-        </Profile>
+
+            <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
+                <div class="list-group-item pt-3">
+                    <h5>
+                        <Icon v="language"/>
+                        <T>profile.language.header</T>
+                    </h5>
+                    <small><T :params="{username: user.username}">profile.language.description</T><T>quotation.colon</T></small>
+                </div>
+                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-show="user.profiles[locale] !== undefined"
+                            :locale="locale" :link="`/@${user.username}`"
+                            :class="['list-group-item list-group-item-action list-group-item-hoverable small', locale === config.locale ? 'list-group-item-active' : '']">
+                    {{options.name}}
+                </LocaleLink>
+                <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
+                   class="list-group-item list-group-item-action list-group-item-hoverable small"
+                >
+                    <span class="badge bg-primary text-white">
+                        <Icon v="link"/>
+                        pronouns.page/@{{user.username}}
+                    </span>
+                </a>
+            </div>
+
+            <div class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
+                <div class="list-group-item pt-3">
+                    <h5>
+                        <Icon v="share"/>
+                        <T>share</T>
+                    </h5>
+                </div>
+                <div class="list-group-item small p-2 text-center">
+                    <Share nolabel shareApiSeparate/>
+                </div>
+            </div>
+        </aside>
 
         <Ban :user="user"/>
 
         <Separator icon="heart"/>
         <Support/>
-        <section>
-            <Share/>
-        </section>
     </div>
     <div v-else-if="user.username" class="my-md-5 pt-md-2">
         <h2 class="text-nowrap mb-3">
@@ -124,6 +156,7 @@
              return {
                  terms: [],
                  cardCheckHandle: null,
+                 cardMenuVisible: false,
             }
         },
         async asyncData({ app, route }) {
@@ -238,5 +271,24 @@
             border-inline-start: 3px solid $primary;
             padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
         }
+    }
+    .list-group-item-active {
+        color: $primary;
+        border-inline-start: 3px solid $primary;
+        padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
+    }
+
+    $aside-margin: 2 * $spacer;
+    @include media-breakpoint-up('xxl') {
+        aside {
+            position: absolute;
+            top: 0;
+            left: calc(100% + #{$aside-margin});
+            width: min(300px, calc((100vw - #{$container-width}) / 2 - #{$aside-margin}));
+        }
+    }
+
+    .list-group-flare > :first-child {
+        border-top: 3px solid $primary;
     }
 </style>
