@@ -180,13 +180,10 @@ terminology:
     headerLong: 'Diccionario de terminología queer'
     info:
         - >
-            Un diccionario de terminología relacionada con la comunidad LGBTQ+.
-
-        # TODO
-        #    Many of the terms and phrases related to the LGBTQ+ community
-        #    are used as English inserts into <your language> texts.
-        #    We'd like to present a glossary of those terms, describe their meaning,
-        #    and propose their <your language> translations.
+            Muchos de términos y frasas relacionadas con la comunidad LGBTQ+
+            se usa en español prestadas de inglés.
+            Aquí presentamos un glosario de estos términos, describimos su significado
+            y proponemos su traducción a español.
     term: 'Término'
     original: 'Etimología'
     category: 'Categoría'
@@ -498,15 +495,13 @@ profile:
         generate: 'Generar'
         generating: 'Generando…'
     empty: 'Esta persona todavía no ha creado ninguna tarjeta.'
-    # TODO
+
     personal:
         header: 'Personal'
-        description: 'Only you can see this section'
+        description: 'Solo tu puedes ver esta sección'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'Idioma'
+        description: 'La tarjeta de @%username% también está disponible en los siguientes idiomas'
 
 share: 'Compartir'
 
