@@ -151,7 +151,7 @@ Rodzaj neutralny.
 Osobatywy. W przypadku bezpośredniej komunikacji można użyć form _per_ „osoba” np.: „Dlaczego osoba to zrobiła?” itd.,
 analogicznie do _per_ „pan(i)”, bo to rzeczywiście mniej więcej to znaczy.
 
-## Osoba używająca neozaimków, np. [xe/xem](https://en.pronouns.page/xe), [ze/hir](https://en.pronouns.page/ze)
+## Osoba używająca neozaimków, np. _[xe/xem](https://en.pronouns.page/xe)_, _[ze/hir](https://en.pronouns.page/ze)_
 
 W stosunku do osób decydujących się na używanie zaimków neologicznych w języku angielskim
 również można użyć sposobów, jakie wymieniłośmy dla _they/them_,
