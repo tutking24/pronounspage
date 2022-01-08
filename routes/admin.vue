@@ -135,7 +135,7 @@
                     </th>
                 </template>
 
-                <template v-slot:row="s"><template v-if="s">
+                <template v-slot:row="s"><template v-if="s && s.el.susUsername">
                     <td>
                         <a :href="`https://pronouns.page/@${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
                     </td>
@@ -146,9 +146,7 @@
                         <a v-else :href="`https://pronouns.page/@${s.el.reporterUsername}`" target="_blank" rel="noopener">@{{s.el.reporterUsername}}</a>
                         <small>({{$datetime($ulidTime(s.el.id))}})</small>
                     </td>
-                    <td class="small">
-                        {{ s.el.comment }}
-                    </td>
+                    <td class="small" v-html="s.el.isAutomatic ? formatComment(s.el.comment) : s.el.comment"></td>
                     <td>
                         <span v-if="s.el.isHandled" class="badge bg-success">
                             Case closed
@@ -261,6 +259,12 @@
                 this.$cookies.set('token', token);
                 this.$router.push('/' + this.config.user.route);
                 setTimeout(() => window.location.reload(), 500);
+            },
+            formatComment(comment) {
+                return comment
+                    .split(', ')
+                    .map(x => x.replace(/^(.*) \((.*)\)$/, '<dfn title="$2">$1</dfn>'))
+                    .join(', ');
             },
         },
         computed: {
