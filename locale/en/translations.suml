@@ -614,6 +614,12 @@ profile:
         generate: 'Generate'
         generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
+    personal:
+        header: 'Personal'
+        description: 'Only you can see this section'
+    language:
+        header: 'Language'
+        description: '@%username%''s card is also available in the following languages'
 
 share: 'Share'
 

@@ -475,6 +475,15 @@ profile:
         generating: '生成中……'
     empty: '此用戶還沒有創造任何名片'
     loginRequired: '{/account=登入}以提交項目'
+    # TODO
+    personal:
+        header: 'Personal'
+        description: 'Only you can see this section'
+    language:
+        header: 'Language'
+        description: '@%username%''s card is also available in the following languages'
+        # if your language has declension and it's hard to fit the username in that sentence,
+        # just make is 'This card is…'
 
 share: '這裡'
 

@@ -480,6 +480,15 @@ profile:
         generate: 'Generatieren'
         generating: 'Generatierung läuft…'
     empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
+    # TODO
+    personal:
+        header: 'Personal'
+        description: 'Only you can see this section'
+    language:
+        header: 'Language'
+        description: '@%username%''s card is also available in the following languages'
+        # if your language has declension and it's hard to fit the username in that sentence,
+        # just make is 'This card is…'
 
 share: 'Teilen'
 
