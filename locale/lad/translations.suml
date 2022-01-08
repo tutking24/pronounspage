@@ -494,15 +494,13 @@ profile:
         generate: 'Jenerar'
         generating: 'Jenerando…'
     empty: 'Esta persona ainda no tiene kreado ninguna karta.'
-    # TODO
+
     personal:
         header: 'Personal'
-        description: 'Only you can see this section'
+        description: 'Solo tu puedes ver esta seksyon'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'Lingua'
+        description: 'La karta de @%username% es tambien disponivle en las sigientes linguas'
 
 share: 'Partajar'
 
