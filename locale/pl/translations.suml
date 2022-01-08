@@ -1300,7 +1300,7 @@ census:
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
         - >
             Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
-            W pytaniach wielokrotnego wyboru można zaznaczyć wiele odpowiedzi, jak również dopisać własne.
+            W pytaniach wielokrotnego wyboru <strong>można zaznaczyć wiele odpowiedzi</strong>, jak również <strong>dopisać własne</strong>.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
         #- >
         #    Następny Spis odbędzie się w <strong>lutym 2023</strong>.
