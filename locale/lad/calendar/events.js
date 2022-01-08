@@ -10,7 +10,7 @@ module.exports = [
     new Event('Dia de la Vizibilidad {/terminolojia#lesbian=Lezbiana} (Arjentina)', 'Lesbian', 3, day(7), EventLevel.Day, ['lesbian']),
     new Event('Dia de la Vizibilidad {/terminolojia#lesbian=Lezbiana} (Paraguay)', 'Lesbian', 9, day(16), EventLevel.Day, ['lesbian']),
     new Event('Dia del Aktivizmo por la Diversidad Seksuala (Arjentina)', 'LGBTQ', 8, day(20), EventLevel.Day),
-    new Event('Dia de las Rebelyas {/terminolojia#lesbian=Lezbianas}', 'Lesbian_', 10, day(13), EventLevel.Day, ['lesbian']),
+    new Event('Dia de las Rebelyas {/terminolojia#lesbian=Lezbianas}', 'Lesbian', 10, day(13), EventLevel.Day, ['lesbian']),
     new Event('Dia de la Promosion de los Diritos de las Personas Trans (Arjentina)', 'Transgender', 3, day(18), EventLevel.Day, ['transgender']),
     new Event('Dia de la Libertad para Kazarse (Estatos Unitos)', '_hrc', 2, day(12), EventLevel.Day),
     new Event('Dia de la Prueba del HIV en Personas Transdjenero (Estatos Unitos)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
