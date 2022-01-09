@@ -498,7 +498,7 @@ profile:
 
     personal:
         header: 'Personal'
-        description: 'Solo tu puedes ver esta sección'
+        description: 'Solo tú puedes ver esta sección'
     language:
         header: 'Idioma'
         description: 'La tarjeta de @%username% también está disponible en los siguientes idiomas'
