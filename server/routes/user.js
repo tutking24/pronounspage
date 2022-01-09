@@ -403,8 +403,7 @@ router.post('/user/delete', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    await req.db.get(SQL`DELETE FROM profiles WHERE userId = ${req.user.id}`)
-    await req.db.get(SQL`DELETE FROM authenticators WHERE userId = ${req.user.id}`)
+    await req.db.get('PRAGMA foreign_keys = ON')
     await req.db.get(SQL`DELETE FROM users WHERE id = ${req.user.id}`)
 
     return res.json(true);
