@@ -451,24 +451,24 @@ user:
         refresh: '更新'
         disconnect: '切断'
         disconnectConfirm: 'この接続を削除してもよろしいですか？まだメールアドレスでログインできます。（%email%）'
-    # TODO
+
     mfa:
-        header: 'Multi-factor authentication'
+        header: '多要素認証'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            このQRコードをワンタイムパスワード認証アプリ（例：{https://authy.com/=Authy}）でスキャン
+            （または下記のテキストコードを入力）してください。を入力し、生成された初回トークンを入力します。
         recovery:
-            header: 'Recovery code'
+            header: 'リカバリーコード'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                以下のリカバリーコードを安全な場所に保存してください。
+                 万が一、認証デバイスを紛失した場合、多要素認証をバイパスするために使用できるようになります。
+            saved: 'よし、保存したよ!'
+            enter: 'リカバリーコードを入力してください'
+        cancel: 'リカバリーコードを入力してください'
+        enabled: '有効'
+        enable: '多要素認証を有効にする'
+        disable: '多要素認証を無効にする'
+        disableConfirm: '多要素認証を無効にしてもよろしいですか？'
 
 profile:
     description: '記述'
@@ -515,7 +515,7 @@ profile:
         link: 'カードの映像'
         generating: '生成中…'
     empty: 'この人はまだカードを作っていません。'
-    # TODO
+
     personal:
         header: '個人的'
         description: 'あなただけはこの部分を見ることができます'
