@@ -170,7 +170,7 @@ nouns:
 
     image: 'Beeld'
 
-community: # TODO
+community:
     header: 'Community'
     headerLong: 'Queer community'
 
@@ -490,15 +490,13 @@ profile:
         generate: 'Genereer'
         generating: 'Je kaartbeeld wordt gegenereerd …'
     empty: 'Deze person heeft nog geen kaarten gegenereerd.'
-    # TODO
+
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'Persoonlijk'
+        description: 'Deze sectie is slechts voor jou zichtbaar'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'Taal'
+        description: '@%username%''s kaart is ook in de volgende talen beschikbaar:'
 
 share: 'Deel'
 
@@ -523,9 +521,9 @@ footer:
         {https://gitlab.com/Avris/Zaimki=De broncode} en inhoud vallen onder de {/license=OQL} licentie.
     links: 'Contact, sociale media'
     legal: 'Juridisch'
-    financial: 'Financial transparency' # TODO
+    financial: 'Financiële transparantie'
     technical: 'Technisch'
-    sibling: 'Sibling projects' # TODO
+    sibling: 'Zusterprojecten'
 
 notFound:
     message: 'Pagina niet gevonden'
