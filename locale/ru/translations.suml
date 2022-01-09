@@ -164,13 +164,10 @@ terminology:
     headerLong: 'Словарь квир-терминологии'
     info:
         - >
-            Словарь терминов, относящихся к ЛГБТК+
-
-        # TODO
-        #    Many of the terms and phrases related to the LGBTQ+ community
-        #    are used as English inserts into <your language> texts.
-        #    We'd like to present a glossary of those terms, describe their meaning,
-        #    and propose their <your language> translations.
+            Многие термины и фразы, связанные с ЛГБТК+
+            используются без перевода с английского языка в русскоязычных текстах.
+            Мы бы хотели представить словарь этих терминов, их значения,
+            и предложить их адаптацию на русский язык.
     term: 'Термин'
     original: 'Происхождение'
     category: 'Категория'
@@ -557,9 +554,9 @@ footer:
         {https://gitlab.com/Avris/Zaimki=Исходный код} и содержимое лицензированы {/license=OQL}.
     links: 'Связаться с нами, социальные сети'
     legal: 'Легально'
-    financial: 'Financial transparency' # TODO
+    financial: 'Финансовая прозрачность'
     technical: 'Технически'
-    sibling: 'Sibling projects' # TODO
+    sibling: 'Сестринские проекты'
 
 notFound:
     message: 'Страница не найдена'
