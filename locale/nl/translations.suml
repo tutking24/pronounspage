@@ -171,8 +171,8 @@ nouns:
     image: 'Beeld'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'Gemeenschap'
+    headerLong: 'Queer gemeenschap'
 
 terminology: # TODO
     header: 'Terminology'
