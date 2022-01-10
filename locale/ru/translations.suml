@@ -521,15 +521,13 @@ profile:
         generate: 'Сгенерировать'
         generating: 'Карточка создаётся'
     empty: 'Ни одной карточки пока не создано.'
-    # TODO
+
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'Личное'
+        description: 'Только ты можешь видеть эту секцию'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'Языки'
+        description: 'Также карточка доступна на других языках'
 
 share: 'Поделиться'
 
