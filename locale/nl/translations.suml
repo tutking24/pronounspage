@@ -496,7 +496,7 @@ profile:
         description: 'Deze sectie is slechts voor jou zichtbaar'
     language:
         header: 'Taal'
-        description: '@%username%''s kaart is ook in de volgende talen beschikbaar:'
+        description: '@%username%''s kaart is ook in de volgende talen beschikbaar'
 
 share: 'Deel'
 

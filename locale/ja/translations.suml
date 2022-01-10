@@ -423,7 +423,7 @@ user:
         why: >
             ご登録いただいた方は、カードの設定を行うことができます。({/@example=こんなに}).
         passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
-        instancePlaceholder: 'Instance' # TODO
+        instancePlaceholder: 'サーバー'
     code:
         action: '確認'
         invalid: '無効なコード'
@@ -498,7 +498,7 @@ profile:
         header: 'カード編集'
         save: 'カード保存'
         defaults: '既定に復元'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'この変更をすべての言語版でカードに伝搬させます'
     opinion:
         yes: '好き'
         jokingly: '冗談っぽく'
@@ -544,10 +544,10 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=ソースコード}と内容は{/license=OQL}の下でライセンスします。
     links: '連絡先、ソーシャルメディア'
-    legal: 'Legal' # TODO
-    financial: 'Financial transparency' # TODO
-    technical: 'Technical' # TODO
-    sibling: 'Sibling projects' # TODO
+    legal: '法的'
+    financial: '財務説明'
+    technical: '技術的'
+    sibling: 'シブリングプロジェクト'
 
 notFound:
     message: 'このページはありません'
@@ -698,7 +698,7 @@ admin:
     header: '管理パネル'
     user:
         user: 'ユーザー'
-        createdAt: 'Registration date' # TODO
+        createdAt: '登録日'
         email: 'メールアドレス'
         roles: '権限'
         profiles: 'プロファイル'
@@ -764,7 +764,7 @@ flags:
     Abrosexual: 'アブロセクシャル'
     Achillean: 'アキリアン'
     Alloromantic_Asexual: 'アロロマンティックアセクシャル'
-    Agender: 'アイジェンダー'
+    Agender: 'アジェンダー'
     Ambiamorous: 'アンビアモリ'
     Anarcha-Queer: 'アナーキークィア'
     Androgyne: '中性（アンドロジャイン）'
