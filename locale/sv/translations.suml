@@ -1,168 +1,168 @@
 title: 'Pronouns.page'
 domain: 'sv.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+description: 'Användning av personliga pronomen och genusneutralt språk.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    link: 'Hemsida'
+    header: 'Pronomen'
+    headerLong: 'Lista över pronomen'
+    welcome: 'Välkommen till pronouns.page!'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+        Vi skapar en informationskälla om ickebinärt och genusneutralt språk.
+    why: 'Vad innebär pronomen?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            Vi har alla pronomen. Pronomen är de ord som vi använder istället för att säga någons namn.
+            De flesta använder {/he=“han/honom”} eller {/she=“hon/henne”}, så vi antar ofta automatiskt vad vi ska kalla någon baserat på deras utseende.
+            Men det är faktiskt inte så enkelt…
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            Könsidentiteter är komplicerade. Vissa människor “ser inte ut som” deras könsidentitet.
+            Vissa föredrar att bli kallade något annat än vad man först skulle anta.
+            Vissa personer passar inte in i det binära “man” eller “kvinna” och föredrar ett mer neutralt språk.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Detta verktyg låter dig dela en länk till dina pronomen, med exempelmeningar,
+            så att du kan visa andra vad du föredrar att bli kallad.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            Varför spelar det någon roll? På grund av enkel mänsklig anständighet.
+            Du skulle inte kalla Ashley för ”Samantha” bara för att du gillar det namnet mer.
+            Eller för att ”hon ser ut som en Samantha, tycker jag”.
+            Eller inte ens om hon <em>har</em> namnet ”Samantha” på sitt födelsebevis,
+            men hon verkligen hatar det och föredrar att man kallar henne ”Ashley”.
+            Och det är samma sak med pronomen –
+            om du inte vill vara oartig mot någon, gör du bäst i att benämna dem korrekt.
+            Den enda skillnaden är att vi oftast vet namn, men inte pronomen.
+            Vi presenterar oss själva med vårt namn, men inte med våra pronomen. Låt oss ändra på det!
+    pronouns: 'Lista över populära pronomen'
     generator:
         header: 'Generator'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            Du kan också använda verktyget där du fyller i tomrum i meningar
+            och genererar en länk redo att dela med andra.
+        button: 'Visa generatorn'
+        header2: 'Generera en länk'
+        base: 'Baserat på'
+        alt: 'Du kan också ange utbytbara former i varje fält separat, t.ex. <code>honom&henne</code> = „honom” eller „henne”.'
+        pronunciation: 'Du kan även specificera uttal efter ett lodstreck "|", med IPA, t.ex. <code>faerself|fɛɹsɛlf</code> = „faerself” uttalas som /fɛɹsɛlf/.'
+    whatisit: 'Vad innebär pronomen?'
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Vårt uppdrag'
+        summary: 'Vi kämpar för frihet, respekt och inklusivitet i språket.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Frihet</strong>
+            – så att alla för <em>sig själva</em> kan använda
+             de pronomen som de känner beskriver dem bäst.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Respekt</strong>
+            – så att <em>andras</em> pronomen respekteras.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Inklusivitet</strong>
+            – så att när vi hänvisar till en person vi inte känner eller till en grupp personer
+             så antar vi inte deras könsidentitet och utesluter dem inte av någon anledning.
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
+    header: 'Pronomen'
+    headerLong: 'Pronomen'
+    examples: 'Exempel på användningar i meningar'
     plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    intro: 'Mina pronomen är'
+    normative: 'Normativ'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: 'Generera en länk till utbytbara former'
+        header: 'Utbytbara former'
+        raw: 'utbytbara'
+    generated: 'Dessa pronomen har skapats med en generator. Pronouns.page teamet är inte ansvarig för detta.'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: 'Vilka pronomen som helst'
+        short: 'vilka som helst'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            Även om det för många är otroligt viktigt att man använder specifika pronomen för att prata om dem
+            så har andra inget emot att bli tilltalade på vilket sätt som helst - så länge som det är tydligt vem man pratar om.
+        options: 'visa alternativ [share]{/=here}.'
+    others: 'Andra former'
+    othersRaw: 'andra'
+    or: 'eller'
+    grammarTable: 'Tabell'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
-    toc: 'Show table of contents'
+    header: 'Källor'
+    headerLong: 'Exempel från kulturtexter'
+    headerLonger: 'Genusneutralt språk i kulturtexter'
+    subheader: 'Textkorpus av genusneutralt språk'
+    toc: 'Visa innehållsförteckning'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Game: 'Game'
-        Other: 'Other'
+        All: 'Allt'
+        Book: 'Bok'
+        Article: 'Artikel'
+        Movie: 'Film'
+        Series: 'TV-Serier'
+        Song: 'Sång'
+        Poetry: 'Poesi'
+        Game: 'Spel'
+        Other: 'Annat'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
+        header: 'Skicka ett nytt exempel att lägga till'
+        action: 'Skicka'
+        pronouns: 'Vilka pronomen har använts?'
+        pronounsInfo: 'Ange den enklaste formen av pronomet, som det är i länken, t.ex. “de”, “hen/hens/henom”, “han&hon”'
+        type: 'Källtyp'
+        author: 'Författare'
+        title: 'Titel'
+        extra: 'Mer information (översättare, namn på tidsskrift, …)'
+        year: 'Utgivningsår (av den Engelska versionen)'
+        fragments: 'fragment'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        comment: 'Kommentar'
+        link: 'Länken till innehållet'
+        thanks: 'Tack för att du bidrar!'
+        another: 'Skicka in en till'
+        moderation: 'Bidragen måste godkännas innan de publiceras.'
+        key: 'Nyckel'
+        keyInfo: 'Identifierare för att länka källor mellan språkversioner och länka till ordbok'
+        images: 'Bilder'
+    otherVersions: 'På andra språk'
+    referenced: 'Exempel på användning'
 
 
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: 'Ordbok'
+    headerLong: 'Ordbok på neutrala substantiv'
+    headerLonger: 'Ordbok på genusneutralt språk'
+    description: 'Det är inte bara pronomen! Kolla in vår ordbok på neutrala substantiv.'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+            Inkluderande och genusneutralt språk är inte bara att respektera någons pronomen
+            Det beskriver också deras jobb, position, relation osv.
+            på ett sätt som inte förutsätter deras könsidentitet.
+            Alla brandmän är inte män. Inte alla gifta är ”man” och ”fru”.
         - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
+            När du hänvisar till någon vars könsidentitet du inte känner till,
+            till en grupp av människor med blandade könstillhörigheter,
+            och särskilt till ickebinära människor som explicit föredrar dem,
+            bör du använda de neutrala formerna.
         - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
+            Nedan presenteras en ordbok över ord att hålla utkik efter.
+            Du kan bidra och lägga till egna förslag.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: 'godkända inlägg'
+    pending: 'väntar på godkännande'
+    edit: 'Föreslå en förändring'
+    edited: 'Föreslog förändring av'
+    editing: 'Du redigerar ett existerande inlägg'
+    empty: 'Inga ord hittades som matchar dina kriterier.'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: 'Skicka in'
+        actionLong: 'Skicka in ett ord'
+        thanks: 'Tack för att du bidrar!'
+        another: 'Skicka in en till'
+        moderation: 'Bidragen måste godkännas innan de publiceras.'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: 'Använd en mall'
+    root: 'Rot'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
+    masculine: 'maskulin'
+    masculineShort: 'mask.'
+    feminine: 'femenin'
     feminineShort: 'fem.'
     neuter: 'neutral'
     neuterShort: 'neutr.'
@@ -172,7 +172,7 @@ nouns:
     plural: 'plural'
     pluralShort: 'pl.'
 
-    image: 'Picture'
+    image: 'Bild'
 
 community:
     header: 'Community'
@@ -195,45 +195,45 @@ terminology:
 
 faq:
     header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    headerLong: 'Frågor och svar'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'Vad är icke-binär?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
+                    Könsidentitet/genus/gender är mycket mer komplicerat än man/kvinna.
+                    Även från en rent biologisk synpunkt kan vi urskilja kromosomalt kön,
+                     genetiskt kön, hormonellt kön, fenotypiskt kön...
+                     De överensstämmer inte nödvändigtvis med varandra, och de måste inte vara binära.
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
+                     Och när vi kommer till den kulturella aspekten så är "könsidentitet" en social konstruktion.
+                     Beroende på tid och plats så kan att vara "en kvinna" eller "en man" ha haft radikalt olika innebörder.
+                     Rättigheter, skyldigheter, normer… I Europa brukade män ha på sig klackskor och tights,
+                     nativamerikaner i Nordamerika har under århundraden erkänt ett tredje kön,
                     {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
+                    Ickebinär är ett paraplybegrepp som beskriver en identitet hos människor
+                    Som inte passar in i det binära, man/kvinna.
+                    Det inkluderar till exempel människor som är
                     {https://gender.wikia.org/wiki/Agender=agender},
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    {https://gender.wikia.org/wiki/Demigirl=demitjejer},
+                    {https://gender.wikia.org/wiki/Demiboy=demikillar},
+                    i {https://gender.wikia.org/wiki/Non-binary=och många många fler}.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    Ickebinär behöver inte betyda något som är ”emellan” maskulinitet och femininitet. Det är mer som något ”bortom” det.
+                    Ickebinära människor måste inte vara androgyna, måste inte ha genusneutrala pronomen, osv.
+                    Det handlar om att vara fri från könsroller, inte att skapa nya.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Varför borde jag respektera en <em>främlings</em> pronomen?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    Att tilltala/referera till människor på det sätt som de vill bli tilltalade är grundläggande för sociala relationer.
+                    Du skulle inte normalt kalla Ashley för "Samantha", du skulle inte vägra använda "sir"/"madam" när du pratar med din chef, osv.
+                    Och det finns människor som inte vill bli kallade varken “{/han=han}” eller “{/hon=hon}”.
+                    Om du inte accepterar det, så är det <em>du</em> som upplevs som respektlös.
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
+                    "Märkliga pronomen" blir helt naturliga när vi väl har vant oss vid dem.
         made-up:
             question: 'Those pronouns are made up!'
             answer:
@@ -241,91 +241,91 @@ faq:
                     Yes. Yes they are. And so is every single word in every language.
                     Some words are just older than others.
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: 'Hur vet jag hur jag ska referera till någon?'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    Du kan fråga! Ja, det kanske är lite obekvämt, men ju mer vi gör det, desto mer normalt blir det.
+                     Om vi kan fråga om någons namn borde vi också kunna fråga om någon pronomen.
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    (Men snälla, fråga inte "är du tjej eller kille?”.
+                    Denna fråga indikerar att det bara finns två korrekta svar,
+                    och kan tolkas som en osund nyfikenhet om den tillfrågades könsorgan.
+                    Istället kan du helt enkelt fråga "vad är dina pronomen?" eller "hur vill du att jag refererar till dig?")
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    Det är även viktigt att normalisera att själv berätta för andra om dina pronomen när du presenterar dig.
+                    “Hej, jag heter Mikael, {/han=han}”. Det är inte svårt - men i mötet med transpersoner och ickebinära personer betyder det så mycket!
+                    På nätet är det ännu enklare: skriv bara dina pronomen (eller en länk till exempel från vår hemsida) i din profil eller e-post signatur.
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    Kom även ihåg att många människor kanske använder olika namn och olika uppsättningar med pronomen beroende på situation.
+                    De kanske inte är ute inför sina kollegor ännu, men inför vissa vänner är de bekväma med att leva som sitt sanna jag.
+                    Ha detta i åtanke. Du skulle kunna fråga "vilka pronomen bör jag använda framför din chef/kollega?", osv.
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    Vissa kommer att svara med flera pronomen, t.ex. “{/han&hon=han/hon}” eller “{/hen&han=hen/han}”.
+                    Det innebär att de gillar alla de alternativen. Oftast är den första det pronomen som de föredrar mest.
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: 'Använder någon verkligen dessa pronomen?'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    Ja! Miljoner ickebinära jorden runt.
+                    Alla pronomen listade här har någon som verkligen använder dem i sitt vardagsliv.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: 'Är dessa ickebinära pronomen godkända av någon auktoritet?'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    Språk är inte någon uråldrig magi som är skriven i sten.
+                    Det är bara ett verktyg som vi använder för att kommunicera.
+                    När vi förändras som samhälle, och världen omkring oss förändras,
+                    så justerar vi språket vi använder för att bättre kunna beskriva nutiden.
+                    Vi är språkets användare. <em>Vi, tillsammans, är auktoriteten</em> på hur vi vill använda språket.
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    Ordböcker tar lite tid på sig innan de börjar inkludera förändringar,
+                    det gör inte förändringen illegitim i sig.
+                    Så småningom hamnar de nya formerna av språket i ordböckerna, om de används tillräckligt ofta.
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, till exempel,
+                    accepterar på engelska användningen av {/they=singular “they”} som ett ickebinärt pronomen.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
+                    Du kan även läsa {https://scholar.google.com/scholar?hl=en&q=neopronouns=akademiska artiklar}
+                    om neopronomen.
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'Varför ska jag ha mina pronomen i min profil på sociala medier?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    Om du är cis (= inte trans) och använder „{/han=han}” eller „{/hon=hon}” som matchar din könsidentitet,
+                    Så kanske du tänker att dina pronomen är <em>självklara</em>.
+                    Och ja, det kanske är sant – så länge som ditt namn är nämnt i bion (och är traditionellt manligt eller kvinnligt)
+                    eller om du har en bild på dig som profilbild.
+                    Många människor har inte det – så det är svårt att gissa vad de vill bli kallade.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    Men det handlar också om något mer än det: dina pronomen kanske är ”självklara”,
+                    men det är inte allas.
+                    De vill bli adresserade korrekt, oavsett om de "passerar" som sin könsidentitet eller inte,
+                    oavsett om de har transitionerat eller ej (eller om de vill transitionera alls).
+                    Ickebinära personer ser oftast “inte ickebinära ut”, vi är inte skyldiga till andra att vara helt androgyna.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    Att dela våra pronomen är väldigt viktigt för transpersoner, ickebinära och könsavvikande personer.
+                    Tyvärr gör det även att vi sticker ut.
+                    Men om andra som är cis också gör detsamma, är det väldigt uppskattat av oss.
+                    Det gör att vi känner oss mer bekväma, trygga och välkomna
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(fler anledningar här).}
         change:
-            question: 'Can I change my pronouns?'
+            question: 'Kan jag ändra mina pronomen?'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    Självklart! Ingen blir förvånad när någon förändrar sin åsikt, stil, fritidsintressen...
+                    Så varför vore det märkligt att någon upptäcker en del av sin identitet,
+                    slutar att tycka om sitt namn, upptäcker ett begrepp som passar dem väl, osv?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: 'Är det konstigt att jag har svårt att vänja mig vid <em>mina egna</em> nya pronomen?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    Inte alls! Efter många års användning av det pronomen som använts sedan födelsen
+                    är det lätt att glömma bort sig när man byter till något nytt.
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    Pronomen ≠ könsidentitet.
+                    Din identitet kommer inte att drastiskt förändras bara för att du blev förvirrad en gång när någon kallade dig "hen".
+                    Oroa dig inte. Experimentera. Hitta vad som passar dig bäst.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: 'Varför borde jag inte säga “föredragna pronomen”?'
             answer:
                 - >
                     Because this phrase suggests that someone's pronouns are just a whim.
@@ -343,19 +343,19 @@ faq:
                 - >
                     Simply say “pronouns”.
         flags:
-            question: 'Can you add this flag? Can you remove that flag?'
+            question: 'kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
             answer:
                 - >
-                    No.
+                    Nej.
                 - >
                     Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
                     It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
                     We don't want to be identity police. And we don't want to spend all our time on managing flags either.
                     It's a project about language and pronouns, after all, not about flags. They're just a bonus.
                 - >
-                    We did our best to select a list of flags that are the most popular
+                    Vi gjorde vårt bästa för att välja listan av flagor som är mest populära
                     and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
+                    Vi planerar inte att göra listan större eller mindre.
                 - >
                     We are aware that a few flags might not be liked by some
                     (eg. because of a history of TERFs trying to take over a term and make it transphobic,
@@ -371,40 +371,26 @@ faq:
                 - >
                     If you don't like a flag, just don't use it.
                     If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
+                    (it will be marked as user-generated to mitigate vandalisms).
         custom-pronouns:
             question: 'My pronouns aren''t listed'
             answer:
                 - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
+                    Det finns en generator på hemma-sidan, du kan skapa en länk till vilket set  av pronomen som helst.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
-        business:
-            question: 'Are you a business?'
-            answer:
-                - >
-                    Nope. We're volunteers.
-                    We create the website with our own work.
-                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
-                    the rest comes out of our own pockets
-                    and {/contact#support=your donations} – for which we're very grateful! ❤️
-                - >
-                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
-                    you're doing us a favour. It's not like we were making any money on you.
-                    Exclusionists and queerphobes aren't welcome here.
+                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}
 
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
-    blog: 'Blog'
+    header: 'Länkar'
+    headerLong: 'Extra länkar'
+    recommended: 'Vi rekommenderar'
+    blog: 'Blogg'
     mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
+    media: 'Pronouns.page i median'
 
     social: 'Social media'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'Andra språk översättningar'
 
 people: ~
 
@@ -419,111 +405,73 @@ english:
             A summary in English…
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
-    faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
-    technical: >
-        Do you have a technical issue or question? Please include your username and as many details as possible
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-    hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+    header: 'Kontakt'
+    authors: 'Författare till webbplatsen'
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: '“Neutral Language Council” kollektivet'
+        nameShort: 'Kollektivet'
         description: >
             We are a queer collective dedicated to assembling, researching, shaping and promoting
             gender neutral and nonbinary language.
             We also support actions towards equality and social justice.
         extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
-        join:
-            header: 'Join us!'
-            encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
-            areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
-            allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
-            application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+        logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
+        members: 'Nuvarande medlemmar'
+        member: 'Medlem av kollektivet'
+        blog: 'Blogg'
+        upcoming: 'Kommande språkversioner'
 
 support:
-    header: 'Support'
+    header: 'Stödja'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        Om du vill chippa in för servern, domäner, klistermärken etc., eller helt enkelt köpa författarna en öl,
+        så kan du använda länkarna nedan:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    header: 'Konto'
+    headerLong: 'Ditt konto'
+    tokenExpired: 'Poletten har gått ut. Uppdatera webbsidan och försök igen.'
     login:
         help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        placeholder: 'E-postadress (eller användarnamn, om du redan är registrerad)'
+        action: 'Logga in'
+        emailSent: 'Vi har skickat dig ett e-postmeddelande med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
+        userNotFound: 'Användaren hittades inte.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'Din inloggningskod är %code%'
+            instruction: 'För att bekräfta din e-postadress, använd följande kod: %code%.'
+            extra: 'Om du inte frågat efter den här koden, ignorera helt enkelt det här meddelandet.'
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            Registering låter dig hantera dina kort ({/@andrea=som det här}).
+        passwordless: 'Webbplatsen lagrar inga lösenord. {https://avris.it/blog/passwords-are-passé=Mer information.}'
         instancePlaceholder: 'Instance'
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'Bekräfta'
+        invalid: 'Ogiltig kod.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'Användarnamn'
+            action: 'Ändra'
+            invalid: 'Användarnamn måste vara mellan 4 och 16 karaktär lång och kan bara innehålla siffror, bokstäver, punkter, bindestreck och understreck.'
+            taken: 'Det här användarnamnet är taget.'
         changeEmail:
-            header: 'Email address'
-            action: 'Change'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
+            header: 'E-postadress'
+            action: 'Ändra'
+            invalid: 'Ogiltig e-postadress.'
+            taken: 'Den här e-postadressen är tagen.'
         admin: 'Admin'
-    logout: 'Log out'
+    logout: 'Logga ut'
     avatar:
         header: 'Avatar'
-        change: 'Change'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        change: 'Ändra'
+    deleteAccount: 'Radera konto'
+    deleteAccountConfirm: 'Är du säker på att du vill ta bort ditt konto? Detta kommer att vara permanent!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'Anslutningar till sociala medier'
+        connect: 'Anslut'
+        refresh: 'Uppdatera'
+        disconnect: 'Koppla från'
+        disconnectConfirm: 'Är du säker på att du vill ta bort den här anslutning? (Du kan alltid logga in med e-postadress %email%)'
     mfa:
         header: 'Multi-factor authentication'
         init: >
@@ -543,9 +491,9 @@ user:
         disableConfirm: 'Are you sure you want to disable MFA?'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'Beskrivning'
+    names: 'Namn'
+    pronouns: 'Pronomen'
     pronounsInfo: >
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
         or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
@@ -555,36 +503,37 @@ profile:
         You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
         If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
         you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    links: 'Links'
-    linksRecommended: 'We recommend linking to'
-    column: 'Column'
+    # pronounsInfo: 'Du kan skriv ett pronomen (ex. “de” eller “hon/henne”) eller länken (t.ex. “http://en.pronouns.page/e”) eller alla formerna (t.ex. “hen/henom/hens”).'
+    pronounsNotFound: 'Vi kan inte hitta någonting om dessa pronomen!'
+    words: 'Orden'
+    birthday: 'Födelsedag'
+    birthdayInfo: 'Vi publicerar inte din födelsedag, bara den kalkulerade åldern.'
+    flags: 'Flaggor'
+    flagsInfo: 'Dra och släpp dina pride flaggor här.'
+    flagsCustom: 'Ladda upp anpassad flagga'
+    flagsCustomWarning: 'Denna flagga har laddats upp av en användare. Pronouns.page är inte ansvarig.'
+    links: 'Länkar'
+    column: 'Kolumn'
 
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    header: 'Kort'
+    list: 'Dina kort'
+    init: 'Skapa ett kort'
+    show: 'Visa'
+    edit: 'Redigera'
+    delete: 'Radera'
+    deleteConfirm: 'Är du säker på att du vill radera det här kortet?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
+        header: 'Kortredigerare'
+        save: 'Spara ditt kort'
         defaults: 'Restore defaults'
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
+        yes: 'Ja'
+        jokingly: 'Skämtsamt'
         close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
+        meh: 'Okej'
+        no: 'Nej'
+    bannerButton: 'Create a card'
     card:
         link: 'Card picture'
         generate: 'Generate'
@@ -599,23 +548,23 @@ profile:
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
 
-share: 'Share'
+share: 'Dela'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
+    approve: 'Godkänn'
+    hide: 'Göm'
+    remove: 'Ta bort'
+    removeConfirm: 'Är du säker på att du vill ta bort det här objektet?'
+    edit: 'Redigera'
+    add: 'Lägg till'
+    filter: 'Filtrera'
+    filterLong: 'Filtrera listan…'
+    search: 'Sök…'
+    author: 'Tillagd av'
+    saved: 'Ändringarna har sparats!'
+    loginRequired: '{/account=Log in} to submit an entry'  # TODO
+    copy: 'Kopiera länk'
+    download: 'Ladda ner'
 
 footer:
     license: >
@@ -627,23 +576,23 @@ footer:
     sibling: 'Sibling projects'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'Sidan hittades inte'
+    back: 'Gå tillbaka till startsidan'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'Du måste logga in för att se denna sida'
+    go: 'Gå till inloggningsformuläret'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
+    header: 'Är du säker?'
+    yes: 'Ja, jag är säker'
+    no: 'Nej, avbryt'
     ok: 'OK'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: 'Användarvillkor'
+    lastUpdate: 'Senast uppdaterad'
+    consent: 'Genom att registrera dig accepterar du {/terms=Användarvillkoren}.'
     #you can either leave the terms untranslated, or translate it and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -753,26 +702,26 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
 
 admin:
-    header: 'Admin panel'
+    header: 'Adminpanel'
     user:
-        user: 'User'
+        user: 'Användare'
         createdAt: 'Registration date'
-        email: 'Email'
-        roles: 'Permissions'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        email: 'E-post'
+        roles: 'Behörigheter'
+        profiles: 'Profiler'
+        confirmRole: 'Är du säker på att du vill byta @%username%''s roll till "%role%"?'
 
 table:
-    empty: 'Empty…'
+    empty: 'Tom…'
     count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    sort: 'Dra för att sortera'
+    scrollUp: 'Scrolla till toppen'
+    more: 'Visa mer'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: 'Offentligt API'
+    example: 'Exempel'
+    query: 'Frågesträngsparametrar'
 
 quotation:
     start: '“'
@@ -780,28 +729,28 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: 'Lägg till mer'
+    short: 'Lägga till språkversioner'
+    long: 'Vill du skapa en ny språkversion? Grymt bra! Vänligen kolla in'
+    longLink: 'den här manualen!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: 'Klicka här eller dra din bilder här'
+        instructionShort: 'Ladda upp'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'Något gick fel, försök igen senare'
 
-captcha:
+captcha: # TODO
     reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
     invalid: 'Invalid CAPTCHA, please try again'
 
 mode:
-    dark: 'Dark mode'
-    light: 'Light mode'
+    dark: 'Mörkt läge'
+    light: 'Ljust läge'
 
-ban:
+ban: # TODO
     reason: 'Ban reason'
     visible: '(this will be visible to the user)'
     terms: 'Terms rules broken (required)'
@@ -809,108 +758,108 @@ ban:
     confirm: 'Are you sure you want to ban @%username%?'
     header: 'You''re banned. Your profile will not be shown to anyone.'
     banned: 'Banned'
-    termsIntro: 'According to our {/terms=Terms of Service}'
+    termsIntro: 'According to our {/termes=Terms of Service}:'
 
-report:
+report: # TODO
     action: 'Report abuse'
     comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
+    confirm: 'Är du säker på att du vill rapportera @%username%?'
     sent: 'Your report has been sent. Thanks for your help!'
 
 flags:
-    Abroromantic: 'Abrorrománti{inflection_c}'
-    Abrosexual: 'Abrosexual'
-    Achillean: 'Aquilean{inflection}'
-    Alloromantic_Asexual: 'Alorrománti{inflection_c} asexual'
-    Agender: 'Agénero'
-    Ambiamorous: 'Ambiamoros{inflection}'
-    Anarcha-Queer: 'Anarco-queer'
-    Androgyne: 'Andrógin{inflection}'
-    Androsexual: 'Androsexual'
-    Aporagender: 'Aporagénero'
-    Archaeopronouns: 'Arqueopronombres'
-    Aroace: 'Arro-as'
-    Aromantic: 'Arrománti{inflection_c}'
-    Aromantic_Allosexual: 'Arrománti{inflection_c} alosexual'
-    Asexual: 'Asexual'
-    Autigender: 'Autisgénero'
-    Bear: 'Oso'
-    Bicurious: 'Bicurios{inflection}'
-    Bigender: 'Bigénero'
-    Biromantic: 'Birrománti{inflection_c}'
-    Bisexual: 'Bisexual'
+    Abroromantic: 'Abroromantisk{inflection_c}'
+    Abrosexual: 'Abrosexuell'
+    Achillean: 'Achillean{inflection}'
+    Alloromantic_Asexual: 'Alloromantisk{inflection_c} asexuell'
+    Agender: 'Agender'
+    Ambiamorous: 'Ambiamoros{inflection}' # TODO
+    Anarcha-Queer: 'Anarcha-Queer'
+    Androgyne: 'Androgyn{inflection}'
+    Androsexual: 'Androsexuell'
+    Aporagender: 'Aporagender'
+    Archaeopronouns: 'Archaeopronomen'
+    Aroace: 'Aroace'
+    Aromantic: 'Aromantisk{inflection_c}'
+    Aromantic_Allosexual: 'Aromantisk{inflection_c} allosexuell'
+    Asexual: 'Asexuell'
+    Autigender: 'Autigender'
+    Bear: 'Björn'
+    Bicurious: 'Bikuriös{inflection}'
+    Bigender: 'Bigender'
+    Biromantic: 'Biromantisk{inflection_c}'
+    Bisexual: 'Bisexuell'
     Butch: 'Butch'
-    Ceteroromantic: 'Ceterorrománti{inflection_c}'
-    Ceterosexual: 'Ceterosexual'
-    Cis_Ally: 'Aliad{inflection} cis'
-    Demiboy: 'Demichico'
-    Demigender: 'Demigénero'
-    Demigirl: 'Demichica'
-    Demiromantic: 'Demirrománti{inflection_c}'
-    Demisexual: 'Demisexual'
-    Diamoric: 'Diamóri{inflection_c}'
-    Enbian: 'Nobian{inflection}'
+    Ceteroromantic: 'Ceteroromantisk{inflection_c}'
+    Ceterosexual: 'Ceterosexuell'
+    Cis_Ally: 'Cis{inflection} ally'
+    Demiboy: 'Demipojke'
+    Demigender: 'Demigender'
+    Demigirl: 'Demitjej'
+    Demiromantic: 'Demiromantisk{inflection_c}'
+    Demisexual: 'Demisexuell'
+    Diamoric: 'Diamorös{inflection_c}'
+    Enbian: 'Enbian{inflection}'
     Fa*afafine: 'Fa''afafine'
-    Femme: 'Afeminad{inflection}'
+    Femme: 'Afeminad{inflection}' # TODO
     Gay: 'Gay'
-    Gender_Questioning: 'Cuestionándose el género'
-    Genderfae: 'Hadagénero'
-    Genderfaun: 'Faunogénero'
-    Genderfluid: 'Género fluido'
-    Genderflux: 'Flujogénero'
-    Genderqueer: 'Género queer'
-    Greyasexual: 'Grisexual'
-    Greyaromantic: 'Grisrrománti{inflection_c}'
-    Gynesexual: 'Ginosexual'
-    Heteroflexible: 'Heteroflexible'
-    Heteroromantic: 'Heterorrománti{inflection_c}'
-    Heterosexual: 'Heterosexual'
+    Gender_Questioning: 'Gender frågande'
+    Genderfae: 'Genderfae'
+    Genderfaun: 'Genderfaun'
+    Genderfluid: 'Genderfluid'
+    Genderflux: 'Genderflux'
+    Genderqueer: 'Genderqueer'
+    Greyasexual: 'Grå asexuell'
+    Greyaromantic: 'Grå aromantisk{inflection_c}'
+    Gynesexual: 'Gynosexuell'
+    Heteroflexible: 'Heteroflexibel'
+    Heteroromantic: 'Heteroromantisk{inflection_c}'
+    Heterosexual: 'Heterosexuell'
     Hijra: 'Hijra'
-    Homoflexible: 'Homoflexible'
-    Homoromantic: 'Homorrománti{inflection_c}'
-    Intersex: 'Intersexual'
-    LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Orgullo de cuero'
-    Lesbian: 'Lesbiana'
-    Lesbiromantic: 'Lesbirrománti{inflection_c}'
+    Homoflexible: 'Homoflexibel'
+    Homoromantic: 'Homoromantisk{inflection_c}'
+    Intersex: 'Intersex'
+    LGBTQ: 'HBTQ'
+    Leather_Pride: 'Läder pride'
+    Lesbian: 'Lesbian'
+    Lesbiromantic: 'Lesbiromantisk{inflection_c}'
     Maverique: 'Maverique'
-    Monoamorous: 'Monoamoros{inflection}'
-    Monogamous: 'Monógam{inflection}'
+    Monoamorous: 'Monoamoros{inflection}' # TODO
+    Monogamous: 'Monógam{inflection}' # TODO
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebulosarrománti{inflection_c}'
-    Neopronouns: 'Neopronombres'
-    Neutrois: 'Neutrés'
-    Nonbinary: 'No binari{inflection}'
-    Omnisexual: 'Omnisexual'
-    Omniromantic: 'Omnirrománti{inflection_c}'
-    Oriented_Aroace: 'Arro-as orientad{inflection}'
-    Pangender: 'Pangénero'
-    Panromantic: 'Panrrománti{inflection_c}'
-    Pansexual: 'Pansexual'
-    Polyamorous: 'Poliamoros{inflection}'
-    Polyromantic: 'Polirrománti{inflection_c}'
-    Polysexual: 'Polisexual'
-    Pomoromantic: 'Pomorrománti{inflection_c}'
-    Pomosexual: 'Pomosexual'
-    Progress_Pride: 'Orgullo progresivo'
+    Nebularomantic: 'Nebularomantisk{inflection_c}'
+    Neopronouns: 'Neopronomen'
+    Neutrois: 'Neutrois{inflection}'
+    Nonbinary: 'Icke-binär{inflection}'
+    Omnisexual: 'Omnisexuell'
+    Omniromantic: 'Omniromantisk{inflection_c}'
+    Oriented_Aroace: 'Aro-ace orienterad{inflection}'
+    Pangender: 'Pangender'
+    Panromantic: 'Panromantisk{inflection_c}'
+    Pansexual: 'Pansexuell'
+    Polyamorous: 'Polyamorös{inflection}'
+    Polyromantic: 'Polyromantisk{inflection_c}'
+    Polysexual: 'Polysexuell'
+    Pomoromantic: 'Pomoromantisk{inflection_c}'
+    Pomosexual: 'Pomosexuell'
+    Progress_Pride: 'Progress pride'
     Queer: 'Queer (cuir)'
     Queerian: 'Queerian{inflection}'
-    Queerplatonic: 'Queerplatóni{inflection_c}'
-    Quoiromantic: 'Querrománti{inflection_c}'
-    Sapphic: 'Sáfi{inflection_c}'
-    Sexuality_Questioning: 'Cuestionándose la sexualidad'
-    Straight_Ally: 'Aliad{inflection} hetero'
-    Toric: 'Tóri{inflection_c}'
+    Queerplatonic: 'Queerplatonisk{inflection_c}'
+    Quoiromantic: 'Quoiromantisk{inflection_c}'
+    Sapphic: 'Sapphic{inflection_c}'
+    Sexuality_Questioning: 'Sexualitet frågande'
+    Straight_Ally: 'Straight{inflection} ally'
+    Toric: 'Toric{inflection_c}'
     Transfeminine: 'Transfemenin{inflection}'
-    Transgender: 'Transgénero'
-    Transmasculine: 'Transmasculin{inflection}'
-    Transneutral: 'Transneutr{inflection}'
-    Trigender: 'Trigénero'
-    Trixic: 'Tríci{inflection_c}'
-    Two_Spirit: 'Dos espíritus'
-    Xenogender: 'Xenogénero'
+    Transgender: 'Transgender'
+    Transmasculine: 'Transmaskulin{inflection}'
+    Transneutral: 'Transneutral{inflection}'
+    Trigender: 'Trigender'
+    Trixic: 'Trixic{inflection_c}'
+    Two_Spirit: 'Two-spirit'
+    Xenogender: 'Xenogender'
 
-calendar:
+calendar: # TODO
     header: 'Calendar'
     headerLong: 'Queer Calendar'
     date: '%date% %year%'
@@ -944,7 +893,7 @@ calendar:
         pride_month: '{/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
+        agender_day: '{/terminology#agender=Agender} Pride Day '
         asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
         drag_day: '{/terminology#drag=Drag} Day'
@@ -970,13 +919,13 @@ calendar:
         polyamory_day: '{/terminology#polyamory=Polyamory} Day'
         homophobia_sport: 'International Day Against {/terminology#homophobia=Homophobia} in Sports'
         gay_uncles_day: '{/terminology#gay=Gay} Uncles Day'
-        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
-        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
-        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
-        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
+        lgbtq_stem: 'LGBTQ+ STEM Day'
+        trans_depathologization: 'International Day of Action for Trans Depathologization'
+        lgbti_book_day: 'International LGBTI Book Day'
+        human_rights_day: 'Human Rights Day'
         nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents Day'
         trans_prisoner: '{/terminology#transgender=Transgender} Prisoner Day of Action and Solidarity'
-        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Visibility Day'
+        xenogender_day: 'Xenogender Visibility Day'
         genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
         genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
         aids_day: 'World AIDS Day'
@@ -999,14 +948,14 @@ calendar:
         aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
         black_ribbon_day: 'Black Ribbon Day'
         black_queer_week: 'Black {/terminology#queer=Queer} History Week'
-        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
+        mena_lesbian_day: 'Middle Eastern and North African {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'World Suicide Prevention Day'
         suicide_prevention_month: 'Suicide Prevention Month'
         aids_awareness_month: 'AIDS Awareness Month'
         genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
-        pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
+        pan_week: 'Pan Week'
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'

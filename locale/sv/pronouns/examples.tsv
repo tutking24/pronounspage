@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+Jag tycker att {pronoun_nominative} är väldigt snäll.		FALSE
+Jag frågade {pronoun_object} om jag fick låna {possessive} penna.		FALSE
+{'pronoun_nominative} sa att huset är {possessive}.		FALSE
+{'pronoun_nominative} sa att {pronoun_nominative} hellre ville göra det själv.		FALSE
