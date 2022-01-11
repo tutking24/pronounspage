@@ -6,7 +6,7 @@ pronouns:
     enabled: true
     route: 'pronomen'
     default: 'han'
-    any: 'any'
+    any: 'alla'
     plurals: true
     honorifics: false
     multiple:
