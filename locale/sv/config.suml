@@ -24,10 +24,10 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+        SE:
+            language: 'sv-SE'
+            voice: 'Astrid'
+            engine: 'standard'
 
 sources:
     enabled: true

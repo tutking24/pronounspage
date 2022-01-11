@@ -6,7 +6,7 @@ home:
     link: 'Hemsida'
     header: 'Pronomen'
     headerLong: 'Lista över pronomen'
-    welcome: 'Välkommen till pronouns.page!'
+    # welcome: 'Välkommen till pronouns.page!'
     intro: >
         Vi skapar en informationskälla om ickebinärt och genusneutralt språk.
     why: 'Vad innebär pronomen?'
