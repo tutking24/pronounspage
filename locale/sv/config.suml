@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'pronomen'
-    default: 'han'
+    default: 'hen'
     any: 'alla'
     plurals: true
     honorifics: false
@@ -147,7 +147,7 @@ profile:
         - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
         - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'hen'
 
 calendar:
     enabled: true
