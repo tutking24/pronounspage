@@ -13,7 +13,7 @@ home:
     about:
         - >
             Vi har alla pronomen. Pronomen är de ord som vi använder istället för att säga någons namn.
-            De flesta använder {/he=“han/honom”} eller {/she=“hon/henne”}, så vi antar ofta automatiskt vad vi ska kalla någon baserat på deras utseende.
+            De flesta använder {/han=“han/honom”} eller {/hon=“hon/henne”}, så vi antar ofta automatiskt vad vi ska kalla någon baserat på deras utseende.
             Men det är faktiskt inte så enkelt…
         - >
             Könsidentiteter är komplicerade. Vissa människor “ser inte ut som” deras könsidentitet.
@@ -24,10 +24,10 @@ home:
             så att du kan visa andra vad du föredrar att bli kallad.
         - >
             Varför spelar det någon roll? På grund av enkel mänsklig anständighet.
-            Du skulle inte kalla Ashley för ”Samantha” bara för att du gillar det namnet mer.
-            Eller för att ”hon ser ut som en Samantha, tycker jag”.
-            Eller inte ens om hon <em>har</em> namnet ”Samantha” på sitt födelsebevis,
-            men hon verkligen hatar det och föredrar att man kallar henne ”Ashley”.
+            Du skulle inte kalla Lena för ”Kerstin” bara för att du gillar det namnet mer.
+            Eller för att ”hon ser ut som en Kerstin, tycker jag”.
+            Eller inte ens om hon <em>har</em> namnet ”Kerstin” på sitt födelsebevis,
+            men hon verkligen hatar det och föredrar att man kallar henne ”Lena”.
             Och det är samma sak med pronomen –
             om du inte vill vara oartig mot någon, gör du bäst i att benämna dem korrekt.
             Den enda skillnaden är att vi oftast vet namn, men inte pronomen.
@@ -108,7 +108,7 @@ sources:
         author: 'Författare'
         title: 'Titel'
         extra: 'Mer information (översättare, namn på tidsskrift, …)'
-        year: 'Utgivningsår (av den Engelska versionen)'
+        year: 'Utgivningsår (av den Svenska versionen)'
         fragments: 'fragment'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
         comment: 'Kommentar'
@@ -174,11 +174,11 @@ nouns:
 
     image: 'Bild'
 
-community:
+community:  # TODO
     header: 'Community'
     headerLong: 'Queer community'
 
-terminology:
+terminology:  # TODO
     header: 'Terminology'
     headerLong: 'Dictionary of queer terminology'
     info:
@@ -213,13 +213,13 @@ faq:
                     {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
                 - >
                     Ickebinär är ett paraplybegrepp som beskriver en identitet hos människor
-                    Som inte passar in i det binära, man/kvinna.
+                    som inte passar in i det binära, man/kvinna.
                     Det inkluderar till exempel människor som är
                     {https://gender.wikia.org/wiki/Agender=agender},
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
                     {https://gender.wikia.org/wiki/Demigirl=demitjejer},
                     {https://gender.wikia.org/wiki/Demiboy=demikillar},
-                    i {https://gender.wikia.org/wiki/Non-binary=och många många fler}.
+                    och {https://gender.wikia.org/wiki/Non-binary=många många fler}.
                 - >
                     Ickebinär behöver inte betyda något som är ”emellan” maskulinitet och femininitet. Det är mer som något ”bortom” det.
                     Ickebinära människor måste inte vara androgyna, måste inte ha genusneutrala pronomen, osv.
@@ -229,17 +229,17 @@ faq:
             answer:
                 - >
                     Att tilltala/referera till människor på det sätt som de vill bli tilltalade är grundläggande för sociala relationer.
-                    Du skulle inte normalt kalla Ashley för "Samantha", du skulle inte vägra använda "sir"/"madam" när du pratar med din chef, osv.
+                    Du skulle inte normalt kalla Lena för "Kerstin", du skulle inte vägra använda "sir"/"madam" när du pratar med din chef, osv.
                     Och det finns människor som inte vill bli kallade varken “{/han=han}” eller “{/hon=hon}”.
                     Om du inte accepterar det, så är det <em>du</em> som upplevs som respektlös.
                 - >
                     "Märkliga pronomen" blir helt naturliga när vi väl har vant oss vid dem.
         made-up:
-            question: 'Those pronouns are made up!'
+            question: 'Detta pronomen är ju påhittat!'
             answer:
                 - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    Ja. Ja det är de. Precis som varje ord i varje språk.
+                    Vissa ord är bara äldre än andra ord.
         how-to-know:
             question: 'Hur vet jag hur jag ska referera till någon?'
             answer:
@@ -324,7 +324,7 @@ faq:
                     Pronomen ≠ könsidentitet.
                     Din identitet kommer inte att drastiskt förändras bara för att du blev förvirrad en gång när någon kallade dig "hen".
                     Oroa dig inte. Experimentera. Hitta vad som passar dig bäst.
-        preferred-pronouns:
+        preferred-pronouns:  # TODO
             question: 'Varför borde jag inte säga “föredragna pronomen”?'
             answer:
                 - >
@@ -334,7 +334,7 @@ faq:
                 - >
                     No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
                     If you care about your trans and nonbinary friends and loved ones, then call them the right way.
-        gender-pronouns:
+        gender-pronouns:  # TODO
             question: 'Why shouldn''t I say “gender pronouns”?'
             answer:
                 - >
@@ -342,7 +342,7 @@ faq:
                     Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
                 - >
                     Simply say “pronouns”.
-        flags:
+        flags:  # TODO
             question: 'kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
             answer:
                 - >
@@ -372,7 +372,7 @@ faq:
                     If you don't like a flag, just don't use it.
                     If your flag is missing, just upload it
                     (it will be marked as user-generated to mitigate vandalisms).
-        custom-pronouns:
+        custom-pronouns:  # TODO
             question: 'My pronouns aren''t listed'
             answer:
                 - >
@@ -395,7 +395,7 @@ links:
 people: ~
 
 # optional, but would be nice to have
-english:
+english:  # TODO
     header: 'English'
     headerLong: 'An overview in English'
     headerLonger: 'An overview of <language> nonbinary pronouns'
@@ -410,7 +410,7 @@ contact:
     team:
         name: '“Neutral Language Council” kollektivet'
         nameShort: 'Kollektivet'
-        description: >
+        description: >  # TODO
             We are a queer collective dedicated to assembling, researching, shaping and promoting
             gender neutral and nonbinary language.
             We also support actions towards equality and social justice.
@@ -444,7 +444,7 @@ user:
         why: >
             Registering låter dig hantera dina kort ({/@andrea=som det här}).
         passwordless: 'Webbplatsen lagrar inga lösenord. {https://avris.it/blog/passwords-are-passé=Mer information.}'
-        instancePlaceholder: 'Instance'
+        instancePlaceholder: 'Instance'  # TODO
     code:
         action: 'Bekräfta'
         invalid: 'Ogiltig kod.'
@@ -472,7 +472,7 @@ user:
         refresh: 'Uppdatera'
         disconnect: 'Koppla från'
         disconnectConfirm: 'Är du säker på att du vill ta bort den här anslutning? (Du kan alltid logga in med e-postadress %email%)'
-    mfa:
+    mfa:  # TODO
         header: 'Multi-factor authentication'
         init: >
             Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
@@ -494,7 +494,7 @@ profile:
     description: 'Beskrivning'
     names: 'Namn'
     pronouns: 'Pronomen'
-    pronounsInfo: >
+    pronounsInfo: >  # TODO
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
         or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
         or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
@@ -525,24 +525,24 @@ profile:
     editor:
         header: 'Kortredigerare'
         save: 'Spara ditt kort'
-        defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
+        defaults: 'Restore defaults'  # TODO
+        propagate: 'Propagate this change to your cards in all languages'  # TODO
     opinion:
         yes: 'Ja'
         jokingly: 'Skämtsamt'
-        close: 'Only if we''re close'
+        close: 'Only if we''re close'  # TODO
         meh: 'Okej'
         no: 'Nej'
-    bannerButton: 'Create a card'
-    card:
+    bannerButton: 'Create a card'  # TODO
+    card:  # TODO
         link: 'Card picture'
         generate: 'Generate'
         generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
-    personal:
+    empty: 'This person hasn''t created any cards yet.'  # TODO
+    personal:  # TODO
         header: 'Personal'
         description: 'Only you can see this section'
-    language:
+    language:  # TODO
         header: 'Language'
         description: '@%username%''s card is also available in the following languages'
         # if your language has declension and it's hard to fit the username in that sentence,
@@ -566,7 +566,7 @@ crud:
     copy: 'Kopiera länk'
     download: 'Ladda ner'
 
-footer:
+Footer:  # TODO
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: 'Contact, social media'
@@ -598,7 +598,7 @@ terms:
     #    The following text is just an auxiliary translation.
     #    The only legally binding version of the Terms of Service is the English one, available
     #    {https://en.pronouns.page/terms=here}.
-    content:
+    content:  # TODO
         intro: >
             These Terms of Service govern your access to and use of the Service provided on the website
             <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
@@ -705,7 +705,7 @@ admin:
     header: 'Adminpanel'
     user:
         user: 'Användare'
-        createdAt: 'Registration date'
+        createdAt: 'Registration date'  # TODO
         email: 'E-post'
         roles: 'Behörigheter'
         profiles: 'Profiler'
@@ -767,37 +767,37 @@ report: # TODO
     sent: 'Your report has been sent. Thanks for your help!'
 
 flags:
-    Abroromantic: 'Abroromantisk{inflection_c}'
+    Abroromantic: 'Abroromantisk'
     Abrosexual: 'Abrosexuell'
-    Achillean: 'Achillean{inflection}'
-    Alloromantic_Asexual: 'Alloromantisk{inflection_c} asexuell'
+    Achillean: 'Achillean'
+    Alloromantic_Asexual: 'Alloromantisk asexuell'
     Agender: 'Agender'
-    Ambiamorous: 'Ambiamoros{inflection}' # TODO
+    Ambiamorous: 'Ambiamorös'
     Anarcha-Queer: 'Anarcha-Queer'
-    Androgyne: 'Androgyn{inflection}'
+    Androgyne: 'Androgyn'
     Androsexual: 'Androsexuell'
     Aporagender: 'Aporagender'
     Archaeopronouns: 'Archaeopronomen'
     Aroace: 'Aroace'
-    Aromantic: 'Aromantisk{inflection_c}'
-    Aromantic_Allosexual: 'Aromantisk{inflection_c} allosexuell'
+    Aromantic: 'Aromantisk'
+    Aromantic_Allosexual: 'Aromantisk allosexuell'
     Asexual: 'Asexuell'
     Autigender: 'Autigender'
     Bear: 'Björn'
-    Bicurious: 'Bikuriös{inflection}'
+    Bicurious: 'Bikuriös'
     Bigender: 'Bigender'
-    Biromantic: 'Biromantisk{inflection_c}'
+    Biromantic: 'Biromantisk'
     Bisexual: 'Bisexuell'
     Butch: 'Butch'
-    Ceteroromantic: 'Ceteroromantisk{inflection_c}'
+    Ceteroromantic: 'Ceteroromantisk'
     Ceterosexual: 'Ceterosexuell'
-    Cis_Ally: 'Cis{inflection} ally'
+    Cis_Ally: 'Cis ally'
     Demiboy: 'Demipojke'
     Demigender: 'Demigender'
     Demigirl: 'Demitjej'
-    Demiromantic: 'Demiromantisk{inflection_c}'
+    Demiromantic: 'Demiromantisk'
     Demisexual: 'Demisexuell'
-    Diamoric: 'Diamorös{inflection_c}'
+    Diamoric: 'Diamorös'
     Enbian: 'Enbian{inflection}'
     Fa*afafine: 'Fa''afafine'
     Femme: 'Afeminad{inflection}' # TODO
@@ -809,53 +809,53 @@ flags:
     Genderflux: 'Genderflux'
     Genderqueer: 'Genderqueer'
     Greyasexual: 'Grå asexuell'
-    Greyaromantic: 'Grå aromantisk{inflection_c}'
+    Greyaromantic: 'Grå aromantisk'
     Gynesexual: 'Gynosexuell'
     Heteroflexible: 'Heteroflexibel'
-    Heteroromantic: 'Heteroromantisk{inflection_c}'
+    Heteroromantic: 'Heteroromantisk'
     Heterosexual: 'Heterosexuell'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexibel'
-    Homoromantic: 'Homoromantisk{inflection_c}'
+    Homoromantic: 'Homoromantisk'
     Intersex: 'Intersex'
     LGBTQ: 'HBTQ'
     Leather_Pride: 'Läder pride'
     Lesbian: 'Lesbian'
     Lesbiromantic: 'Lesbiromantisk{inflection_c}'
     Maverique: 'Maverique'
-    Monoamorous: 'Monoamoros{inflection}' # TODO
+    Monoamorous: 'Monoamorös'
     Monogamous: 'Monógam{inflection}' # TODO
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebularomantisk{inflection_c}'
+    Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'
-    Neutrois: 'Neutrois{inflection}'
-    Nonbinary: 'Icke-binär{inflection}'
+    Neutrois: 'Neutrois'
+    Nonbinary: 'Icke-binär'
     Omnisexual: 'Omnisexuell'
-    Omniromantic: 'Omniromantisk{inflection_c}'
-    Oriented_Aroace: 'Aro-ace orienterad{inflection}'
+    Omniromantic: 'Omniromantisk'
+    Oriented_Aroace: 'Aro-ace orienterado' # TODO
     Pangender: 'Pangender'
-    Panromantic: 'Panromantisk{inflection_c}'
+    Panromantic: 'Panromantisk'
     Pansexual: 'Pansexuell'
-    Polyamorous: 'Polyamorös{inflection}'
-    Polyromantic: 'Polyromantisk{inflection_c}'
+    Polyamorous: 'Polyamorös'
+    Polyromantic: 'Polyromantisk'
     Polysexual: 'Polysexuell'
-    Pomoromantic: 'Pomoromantisk{inflection_c}'
+    Pomoromantic: 'Pomoromantisk'
     Pomosexual: 'Pomosexuell'
     Progress_Pride: 'Progress pride'
-    Queer: 'Queer (cuir)'
-    Queerian: 'Queerian{inflection}'
-    Queerplatonic: 'Queerplatonisk{inflection_c}'
-    Quoiromantic: 'Quoiromantisk{inflection_c}'
+    Queer: 'Queer'
+    Queerian: 'Queerian'
+    Queerplatonic: 'Queerplatonisk'
+    Quoiromantic: 'Quoiromantisk'
     Sapphic: 'Sapphic{inflection_c}'
     Sexuality_Questioning: 'Sexualitet frågande'
-    Straight_Ally: 'Straight{inflection} ally'
-    Toric: 'Toric{inflection_c}'
-    Transfeminine: 'Transfemenin{inflection}'
+    Straight_Ally: 'Straight ally'
+    Toric: 'Toric'
+    Transfeminine: 'Transfemenin'
     Transgender: 'Transgender'
-    Transmasculine: 'Transmaskulin{inflection}'
-    Transneutral: 'Transneutral{inflection}'
+    Transmasculine: 'Transmaskulin'
+    Transneutral: 'Transneutral'
     Trigender: 'Trigender'
-    Trixic: 'Trixic{inflection_c}'
+    Trixic: 'Trixic'
     Two_Spirit: 'Two-spirit'
     Xenogender: 'Xenogender'
 
