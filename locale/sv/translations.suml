@@ -566,7 +566,7 @@ crud:
     copy: 'Kopiera länk'
     download: 'Ladda ner'
 
-Footer:  # TODO
+footer:  # TODO
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
     links: 'Contact, social media'
