@@ -1,5 +1,5 @@
 <template>
-    <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" class="list-unstyled" :group="group">
+    <draggable tag="ul" v-model="iVal" handle=".handle" ghostClass="ghost" @end="$emit('input', iVal)" @add="$emit('input', iVal)" class="list-unstyled" :group="group">
         <li v-for="(v, i) in iVal" ref="items">
             <div>
                 <div class="input-group input-group-sm mb-1">
