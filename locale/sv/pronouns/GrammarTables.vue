@@ -9,9 +9,9 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Subject</th>
-                    <th>Object</th>
-                    <th>Possessive</th>
+                    <th>Subjekt</th>
+                    <th>Objekt</th>
+                    <th>Possessiv</th>
                 </tr>
                 </thead>
                 <tbody>
