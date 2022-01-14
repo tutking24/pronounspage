@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'pronomen'
-    default: 'hen'
+    default: 'han'
     any: 'alla'
     plurals: true
     honorifics: false
