@@ -342,8 +342,8 @@ faq:
                     Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
                 - >
                     Simply say “pronouns”.
-        flags:  # TODO
-            question: 'kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
+        flags:
+            question: 'Kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
             answer:
                 - >
                     Nej.
@@ -410,10 +410,10 @@ contact:
     team:
         name: '“Neutral Language Council” kollektivet'
         nameShort: 'Kollektivet'
-        description: >  # TODO
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
+        description: >
+            Vi är en queer kollektivet dedikerad till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
+            könsneutral och nonbinary språk.
+            Vi också stödjer handlingar mot jämlikhet och sociala rättvisa.
         extra: []
         logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
@@ -432,7 +432,7 @@ user:
     headerLong: 'Ditt konto'
     tokenExpired: 'Poletten har gått ut. Uppdatera webbsidan och försök igen.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'Att logga in eller skapa en konto kan du använda din sociala medier eller skriva in ditt e-postadres ner och då bekräfta koden du ska ha fick i ditt e-post inkorgen.'
         placeholder: 'E-postadress (eller användarnamn, om du redan är registrerad)'
         action: 'Logga in'
         emailSent: 'Vi har skickat dig ett e-postmeddelande med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
@@ -472,38 +472,35 @@ user:
         refresh: 'Uppdatera'
         disconnect: 'Koppla från'
         disconnectConfirm: 'Är du säker på att du vill ta bort den här anslutning? (Du kan alltid logga in med e-postadress %email%)'
-    mfa:  # TODO
-        header: 'Multi-factor authentication'
+    mfa:
+        header: 'Många Faktor Autentisering (MFA)'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            Skanna denna QR-kod (eller skriv in den textkod ner) i din TOTP autentiserings app (eg. {https://authy.com/=Authy})
+            och då använda den första token det genererats.
         recovery:
-            header: 'Recovery code'
+            header: 'Återställningskoder'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Spara denna koder i en säker plats.
+                Du ska få använder dem att gå förbi MFA om du glömma din autentiseringsenhet.
+            saved: 'Okej, jag har sparade dem!'
+            enter: 'Skriva in återställningskod'
+        cancel: 'Avbryta login'
+        enabled: 'Aktiverad'
+        enable: 'Aktivera MFA'
+        disable: 'Inaktivera MFA'
+        disableConfirm: 'Är du säker att du vill inaktivera MFA?'
 
 profile:
     description: 'Beskrivning'
     names: 'Namn'
     pronouns: 'Pronomen'
     pronounsInfo: >  # TODO
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
+        Du kan skriv ett <strong>pronomen</strong> (ex. “de” eller “hon/henne”)
+        eller <strong>länken</strong> (t.ex. “http://en.pronouns.page/e”)
+        eller alla formerna (t.ex. “hen/henom/hens”).
+        Keep in mind that <strong>all three forms</strong> are required in that case,
         otherwise the app can only guess what exactly do you mean.
         You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    # pronounsInfo: 'Du kan skriv ett pronomen (ex. “de” eller “hon/henne”) eller länken (t.ex. “http://en.pronouns.page/e”) eller alla formerna (t.ex. “hen/henom/hens”).'
     pronounsNotFound: 'Vi kan inte hitta någonting om dessa pronomen!'
     words: 'Orden'
     birthday: 'Födelsedag'
@@ -525,28 +522,26 @@ profile:
     editor:
         header: 'Kortredigerare'
         save: 'Spara ditt kort'
-        defaults: 'Restore defaults'  # TODO
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        defaults: 'Återställ default version'
+        propagate: 'Kopiera detta kort till ditt andra kort på alla språk'
     opinion:
         yes: 'Ja'
         jokingly: 'Skämtsamt'
-        close: 'Only if we''re close'  # TODO
+        close: 'Bara om vi är vänner'
         meh: 'Okej'
         no: 'Nej'
-    bannerButton: 'Create a card'  # TODO
-    card:  # TODO
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'  # TODO
-    personal:  # TODO
-        header: 'Personal'
-        description: 'Only you can see this section'
-    language:  # TODO
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+    bannerButton: 'Skapa ett kort'
+    card:
+        link: 'Kortbild'
+        generate: 'Generera'
+        generating: 'Generation beatbetning… Detta kan ta en lite stund.'
+    empty: 'Detta person har inte skapat inga kort.'
+    personal:
+        header: 'Din själv'
+        description: 'Bara du ser det här'
+    language:
+        header: 'Språk'
+        description: '@%username%'skort är också tillgänglig på denna språk:'
 
 share: 'Dela'
 
@@ -562,18 +557,18 @@ crud:
     search: 'Sök…'
     author: 'Tillagd av'
     saved: 'Ändringarna har sparats!'
-    loginRequired: '{/account=Log in} to submit an entry'  # TODO
+    loginRequired: '{/account=Logga in} För att skicka in ett nytt inlägg'
     copy: 'Kopiera länk'
     download: 'Ladda ner'
 
-footer:  # TODO
+footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media'
-    legal: 'Legal'
-    financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+        {https://gitlab.com/Avris/Zaimki=Källa} och innehåll är licensierad under {/license=OQL}.
+    links: 'Kontakt, sociala medier'
+    legal: 'Lagar'
+    financial: 'Finansiell insyn'
+    technical: 'Teknisk'
+    sibling: 'Syster projekt'
 
 notFound:
     message: 'Sidan hittades inte'
@@ -587,7 +582,7 @@ confirm:
     header: 'Är du säker?'
     yes: 'Ja, jag är säker'
     no: 'Nej, avbryt'
-    ok: 'OK'
+    ok: 'Okej'
 
 terms:
     header: 'Användarvillkor'
@@ -709,7 +704,7 @@ admin:
         email: 'E-post'
         roles: 'Behörigheter'
         profiles: 'Profiler'
-        confirmRole: 'Är du säker på att du vill byta @%username%''s roll till "%role%"?'
+        confirmRole: 'Är du säker på att du vill byta @%username%''sroll till "%role%"?'
 
 table:
     empty: 'Tom…'
@@ -724,7 +719,7 @@ api:
     query: 'Frågesträngsparametrar'
 
 quotation:
-    start: '“'
+    start: '”'
     end: '”'
     colon: ':'
 
@@ -742,9 +737,9 @@ images:
 error:
     generic: 'Något gick fel, försök igen senare'
 
-captcha: # TODO
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+captcha:
+    reason: 'Snälla bevisa att du är en person och inte en robot för att förebygga spam och DDoS.'
+    invalid: 'Ogiltlig CAPTCHA, snälla försök igen'
 
 mode:
     dark: 'Mörkt läge'
@@ -760,11 +755,11 @@ ban: # TODO
     banned: 'Banned'
     termsIntro: 'According to our {/termes=Terms of Service}:'
 
-report: # TODO
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
+report:
+    action: 'Rapportera ovett'
+    comment: 'Vad är felet med profilen'
     confirm: 'Är du säker på att du vill rapportera @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    sent: 'Det har fick skickat till oss. Tack för hjälpen!'
 
 flags:
     Abroromantic: 'Abroromantisk'
@@ -800,7 +795,7 @@ flags:
     Diamoric: 'Diamorös'
     Enbian: 'Enbian{inflection}'
     Fa*afafine: 'Fa''afafine'
-    Femme: 'Afeminad{inflection}' # TODO
+    Femme: 'Femme' # TODO
     Gay: 'Gay'
     Gender_Questioning: 'Gender frågande'
     Genderfae: 'Genderfae'
@@ -824,7 +819,7 @@ flags:
     Lesbiromantic: 'Lesbiromantisk{inflection_c}'
     Maverique: 'Maverique'
     Monoamorous: 'Monoamorös'
-    Monogamous: 'Monógam{inflection}' # TODO
+    Monogamous: 'Monogamous' # TODO
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'
@@ -832,7 +827,7 @@ flags:
     Nonbinary: 'Icke-binär'
     Omnisexual: 'Omnisexuell'
     Omniromantic: 'Omniromantisk'
-    Oriented_Aroace: 'Aro-ace orienterado' # TODO
+    Oriented_Aroace: 'Oriented aro-ace' # TODO
     Pangender: 'Pangender'
     Panromantic: 'Panromantisk'
     Pansexual: 'Pansexuell'
@@ -965,9 +960,9 @@ calendar: # TODO
     celebrating_week: 'is celebrated on'
     celebrating_month: 'is celebrated in'
     image:
-        header: 'Download an image'
+        header: 'Ladda ned en bild'
     view:
-        grid: 'Grid view'
-        list: 'Events list'
-    link: 'Link'
+        grid: 'Gridvy'
+        list: 'Evenemang lista'
+    link: 'Länk'
     full: 'Full calendar'
