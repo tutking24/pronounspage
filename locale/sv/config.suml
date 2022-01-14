@@ -124,7 +124,7 @@ support:
 user:
     enabled: true
     route: 'konto'
-    termsRoute: 'terms'
+    termsRoute: 'anvandarvillkor'
 
 profile:
     enabled: true
