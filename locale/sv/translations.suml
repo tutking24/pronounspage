@@ -541,7 +541,7 @@ profile:
         description: 'Bara du ser det här'
     language:
         header: 'Språk'
-        description: '@%username%'skort är också tillgänglig på denna språk:'
+        description: '@%username%''skort är också tillgänglig på denna språk:'
 
 share: 'Dela'
 
