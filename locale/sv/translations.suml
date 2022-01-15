@@ -760,6 +760,8 @@ report:
     comment: 'Vad är felet med profilen'
     confirm: 'Är du säker på att du vill rapportera @%username%?'
     sent: 'Det har fick skickat till oss. Tack för hjälpen!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
 
 flags:
     Abroromantic: 'Abroromantisk'

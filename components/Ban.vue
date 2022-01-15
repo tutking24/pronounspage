@@ -7,6 +7,14 @@
             </a>
             <div v-else-if="!reported">
                 <textarea v-model="reportComment" class="form-control" rows="3" :placeholder="$t('report.comment')" :disabled="saving" required></textarea>
+                <div class="alert alert-info small mt-3">
+                    <p><T>report.terms</T><T>quotation.colon</T></p>
+                    <blockquote>
+                        <T>terms.content.content.violations</T>
+                        <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><template v-if="i !== forbidden.length - 1">, </template></template>.
+                    </blockquote>
+                    <p class="mb-0"><T>report.hoarding</T></p>
+                </div>
                 <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving || !reportComment" @click="report">
                     <Icon v="spider"/>
                     <T>report.action</T>

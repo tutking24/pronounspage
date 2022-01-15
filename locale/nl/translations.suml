@@ -738,6 +738,8 @@ report:
     comment: 'Leg kort uit wat ongepast is aan dit profiel'
     confirm: 'Weet je zeker dat je @%username% wilt rapporteren?'
     sent: 'Jouw rapportering was verzonden. Bedankt voor je hulp!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
 
 flags:
     Abroromantic: 'Abroromantisch'

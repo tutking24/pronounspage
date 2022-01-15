@@ -559,6 +559,14 @@ user:
         enable: 'Enable MFA'
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
+    removeInactive:
+        email:
+            subject: 'Your pronouns.page account is inactive and will soon be removed'
+            content: >
+                Hi! We're periodically cleaning up our database
+                in order to free up the unused usernames.
+                Heads up: it looks like you haven't created any cards and haven't logged in for a while.
+                You can keep your account by creating a card, otherwise it will get removed in a week.
 
 profile:
     description: 'Description'
@@ -855,6 +863,8 @@ report:
     comment: 'Please explain briefly what''s wrong with this profile'
     confirm: 'Are you sure you want to report @%username%?'
     sent: 'Your report has been sent. Thanks for your help!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
 
 calendar:
     header: 'Calendar'

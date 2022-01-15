@@ -718,6 +718,8 @@ report:
     comment: 'Por favor explika brevamente ke esta mal kon este profil'
     confirm: 'Estas segure ke keres denusyar a @%username%?'
     sent: 'Tu denusyo tiene sido embiado. Mersi por ayudarnos!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
 
 flags:
     Abroromantic: 'Abroromantik{inflection}'

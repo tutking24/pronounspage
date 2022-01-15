@@ -816,6 +816,8 @@ report:
     comment: 'Please explain briefly what''s wrong with this profile'
     confirm: 'Are you sure you want to report @%username%?'
     sent: 'Your report has been sent. Thanks for your help!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'

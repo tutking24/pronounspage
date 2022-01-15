@@ -766,6 +766,8 @@ report:
     comment: 'Пожалуйста, кратко объясните, что не так с этим профилем'
     confirm: 'Вы уверены, что хотите пожаловаться на @%username%?'
     sent: 'Ваша жалоба была отправлена. Спасибо за Вашу помощь!'
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
 
 flags:
     Abroromantic: 'Аброромантичн{adjective}'

@@ -258,7 +258,7 @@
                 const { token } = await this.$axios.$get(`/admin/impersonate/${encodeURIComponent(email)}`);
                 this.$cookies.set('impersonator', this.$cookies.get('token'));
                 this.$cookies.set('token', token);
-                this.$router.push('/' + this.config.user.route);
+                await this.$router.push('/' + this.config.user.route);
                 setTimeout(() => window.location.reload(), 500);
             },
             formatComment(comment) {
