@@ -550,8 +550,14 @@ router.get('/user/logout-universal', handleErrorAsync(async (req, res) => {
     return res.json('Token removed');
 }));
 
+const canImpersonate = (req) => {
+    return req.isGranted('*') || (
+        req.isGranted('users') && ['example@pronouns.page'].includes(req.params.email)
+    );
+}
+
 router.get('/admin/impersonate/:email', handleErrorAsync(async (req, res) => {
-    if (!req.isGranted('users') || !['example@pronouns.page'].includes(req.params.email)) {
+    if (!canImpersonate(req)) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
