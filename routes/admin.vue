@@ -56,7 +56,7 @@
                         <template v-slot:row="s">
                             <td>
                                 <a :href="'https://pronouns.page/@' + s.el.username">@{{s.el.username}}</a>
-                                <a href="#" class="badge bg-primary text-white" @click.prevent="impersonate(s.el.email)"><Icon v="user-secret"/></a>
+                                <a v-if="$isGranted('*')" href="#" class="badge bg-primary text-white" @click.prevent="impersonate(s.el.email)"><Icon v="user-secret"/></a>
                             </td>
                             <td>
                                 {{$datetime($ulidTime(s.el.id))}}
