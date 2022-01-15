@@ -3,7 +3,7 @@
         <p class="text-center">
             <Spinner size="5rem"/>
         </p>
-        <div>
+        <div v-if="!impersonationActive">
             <iframe v-for="domain in universalDomains"
                     :src="`${domain}/api/user/logout-universal`"
                     style="width: 1px; height: 1px; opacity: .01"
