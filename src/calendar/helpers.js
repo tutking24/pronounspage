@@ -78,6 +78,12 @@ module.exports.Event = class {
 
     getDays(year) {
         year = parseInt(year);
+
+        if (this.daysMemoise === undefined) {
+            // shouldn't happen, but somehow does, but only on prod?
+            this.daysMemoise = {};
+        }
+
         if (this.daysMemoise[year] === undefined) {
             this.daysMemoise[year] = [...this.generator(iterateMonth(year, this.month))];
         }
@@ -111,6 +117,9 @@ module.exports.Event = class {
 
     toIcs(year, translations, clearLinkedText, sequence = 1) {
         const days = this.getDays(year);
+        if (!days.length) {
+            return null;
+        }
         const first = days[0];
         const last = days[days.length - 1].next();
 
