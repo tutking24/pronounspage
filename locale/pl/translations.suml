@@ -1573,6 +1573,8 @@ report:
     comment: 'Opisz krótko, w czym problem'
     confirm: 'Czy na pewno chcesz zgłosić profil @%username%?'
     sent: 'Twoje zgłoszenie zostało wysłane. Dziękujemy za pomoc!'
+    terms: 'Pamiętaj, czego zabrania nasz {/regulamin=Regulamin}'
+    hoarding: 'Prosimy, nie zgłaszaj profilów za “zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
 
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
