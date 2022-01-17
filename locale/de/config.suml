@@ -50,6 +50,7 @@ inclusive:
 
 terminology:
     enabled: true
+    published: true
     categories:
         - 'sexuelle Orientierung'
         - 'romantische Orientierung'

@@ -58,6 +58,7 @@ community:
 
 terminology:
     enabled: true
+    published: true
     categories:
         - 'orientation sexuelle'
         - 'orientation romantique'
