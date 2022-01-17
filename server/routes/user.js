@@ -155,6 +155,7 @@ export const issueAuthentication = async (db, user, fetch = true, guardMfa = fal
     user.avatar = await avatar(db, user);
     delete user.suspiciousChecked;
     delete user.bannedBy;
+    delete user.banSnapshot;
 
     if (extend) {
         user = {
