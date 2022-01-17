@@ -236,15 +236,15 @@
 
                 if ((this.config.terminology.enabled && this.config.terminology.published)
                     || (this.config.calendar && this.config.calendar.enabled)
-                    || this.config.census.enabled
-                    || this.config.inclusive.enabled
+                    || (this.config.census && this.config.census.enabled)
+                    || (this.config.inclusive && this.config.inclusive.enabled)
                     || (this.config.people && this.config.people.enabled)
                 ) {
                     const extra = [
-                        this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
-                        this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
+                        this.config.terminology && this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
+                        this.config.calendar && this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
                         this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
-                        this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
+                        this.config.inclusive && this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
                         this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
                         '/' + this.config.contact.team.route,
                     ];
