@@ -234,7 +234,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
 
     if ((req.body.propagate || []).includes('customFlags')) {
         await req.db.get(SQL`UPDATE profiles
-            customFlags = ${JSON.stringify(req.body.customFlags)}
+            SET customFlags = ${JSON.stringify(req.body.customFlags)}
             WHERE userId = ${req.user.id};
         `);
     }
