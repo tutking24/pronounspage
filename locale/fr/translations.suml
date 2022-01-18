@@ -718,8 +718,9 @@ captcha:
     invalid: 'Captcha invalide, veuillez réessayer'
 
 mode:
-    dark: 'Mode sombre'
     light: 'Mode clair'
+    automatic: 'Automatique'
+    dark: 'Mode sombre'
 
 ban:
     reason: 'Raison du bannissement'

@@ -701,8 +701,9 @@ captcha:
     invalid: 'CAPTCHA enfirma, por favor aprova de muevo'
 
 mode:
-    dark: 'Modo eskuro'
     light: 'Modo klaro'
+    automatic: 'Automatic'
+    dark: 'Modo eskuro'
 
 ban:
     reason: 'Razon para banear'

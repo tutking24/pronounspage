@@ -1,12 +1,12 @@
 <template>
-    <div class="py-2 px-3">
-        <div class="form-check form-switch text-dark">
-            <label>
-                <input class="form-check-input" type="checkbox" v-model="isDark">
-                <Icon :v="isDark ? 'moon' : 'sun'"/>
-                {{ $t('mode.' + (isDark ? 'dark' : 'light')) }}
-            </label>
-        </div>
+    <div class="btn-group" role="group">
+        <button v-for="(buttonIcon, buttonMode) in modes" type="button"
+                :class="['btn', 'btn-sm', mode === buttonMode ? 'btn-primary' : 'btn-outline-primary']"
+                @click="mode = buttonMode"
+        >
+            <Icon :v="buttonIcon"/>
+            <T>mode.{{ buttonMode }}</T>
+        </button>
     </div>
 </template>
 
@@ -17,7 +17,13 @@
         mixins: [dark],
         data() {
             return {
+                mode: 'automatic',
                 isDark: false,
+                modes: {
+                    light: 'sun',
+                    automatic: 'eclipse',
+                    dark: 'moon',
+                }
             }
         },
         mounted() {
@@ -25,20 +31,26 @@
                 return false;
             }
 
+            this.mode = this.getMode();
             this.isDark = this.detectDark();
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => this.isDark = e.matches);
 
-            this.$eventHub.$on('mode-changed', dark => {
-                if (dark !== this.isDark) {
-                    this.isDark = dark;
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => this.isDark = this.detectDark());
+
+            this.$eventHub.$on('mode-changed', mode => {
+                if (mode !== this.mode) {
+                    this.mode = mode;
                 }
             })
         },
         watch: {
-            isDark(dark) {
-                this.$eventHub.$emit('mode-changed', dark);
-                this.setMode(dark);
-                this.$store.commit('setDarkMode', dark);
+            mode() {
+                this.$eventHub.$emit('mode-changed', this.mode);
+                this.setMode(this.mode);
+                this.isDark = this.detectDark();
+            },
+            isDark() {
+                this.setIsDark(this.isDark);
+                this.$store.commit('setDarkMode', this.isDark);
             }
         }
     }

@@ -740,8 +740,9 @@ captcha:
     invalid: 'CAPTCHAが無効です。もう一度お試しください。'
 
 mode:
-    dark: 'ダークモード'
     light: 'ライトモード'
+    automatic: 'Automatic'  # TODO
+    dark: 'ダークモード'
 
 ban:
     reason: '禁止の理由'

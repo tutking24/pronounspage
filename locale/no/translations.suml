@@ -727,8 +727,9 @@ captcha:
     invalid: 'Ugyldig CAPTCHA, vennligst prøv igjen'
 
 mode:
-    dark: 'Mørkt tema'
     light: 'Lyst tema'
+    automatic: 'Automatisk'
+    dark: 'Mørkt tema'
 
 ban:
     reason: 'Grunn til forbud'

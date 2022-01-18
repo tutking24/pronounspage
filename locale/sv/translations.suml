@@ -742,8 +742,9 @@ captcha:
     invalid: 'Ogiltlig CAPTCHA, snälla försök igen'
 
 mode:
-    dark: 'Mörkt läge'
     light: 'Ljust läge'
+    automatic: 'Automatiskt'
+    dark: 'Mörkt läge'
 
 ban: # TODO
     reason: 'Ban reason'

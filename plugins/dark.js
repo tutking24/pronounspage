@@ -1,28 +1,35 @@
 export default {
     methods: {
-        detectDark() {
-            if (!process.client) {
-                return false;
-            }
+        getMode() {
+            if (!process.client) { return 'automatic'; }
 
-            if (localStorage.getItem('darkMode') !== null) {
-                return localStorage.getItem('darkMode') === 'dark';
-            }
-
-            const mediaMatch = window.matchMedia('(prefers-color-scheme: dark)');
-            return mediaMatch.matches;
+            return localStorage.getItem('mode') || 'automatic';
         },
-        setMode(dark) {
-            if (!process.client) {
-                return;
+        detectDark() {
+            if (!process.client) { return false; }
+
+            switch (this.getMode()) {
+                case 'light':
+                    return false;
+                case 'dark':
+                    return true;
+                case 'automatic':
+                default:
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches;
             }
+        },
+        setMode(mode) {
+            if (!process.client) { return; }
+
+            localStorage.setItem('mode', mode);
+        },
+        setIsDark(dark) {
+            if (!process.client) { return; }
 
             if (dark) {
                 document.body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('darkMode', 'dark');
             } else {
                 document.body.removeAttribute('data-theme');
-                localStorage.setItem('darkMode', 'light');
             }
         },
     }

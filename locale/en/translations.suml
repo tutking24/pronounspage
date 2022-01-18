@@ -851,8 +851,9 @@ captcha:
     invalid: 'Invalid CAPTCHA, please try again'
 
 mode:
-    dark: 'Dark mode'
     light: 'Light mode'
+    automatic: 'Automatic'
+    dark: 'Dark mode'
 
 ban:
     reason: 'Ban reason'
