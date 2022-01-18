@@ -40,7 +40,7 @@
                     </li>
                 </ul>
 
-                <div class="my-2">
+                <div class="mt-2 mb-4 text-center">
                     <ModeSwitch/>
                 </div>
 

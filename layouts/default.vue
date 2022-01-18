@@ -42,7 +42,7 @@
                         });
                 });
             };
-            this.setMode(this.detectDark());
+            this.setIsDark(this.detectDark());
 
             if (!process.client) { return; }
 

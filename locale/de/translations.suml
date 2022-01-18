@@ -707,8 +707,9 @@ captcha:
     invalid: 'Die CAPTCHA-Eingabe war leider ungültig, bitte versuch es erneut.'
 
 mode:
-    dark: 'Dunkelmodus'
     light: 'Lichtmodus'
+    automatic: 'Automatisch'
+    dark: 'Dunkelmodus'
 
 ban:
     reason: 'Grund der Sperrung'

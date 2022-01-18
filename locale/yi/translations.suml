@@ -704,8 +704,9 @@ captcha:
     invalid: 'Invalid CAPTCHA, please try again'
 
 mode:
-    dark: 'טונקלמאָדוס'
     light: 'ליכטמאָדוס'
+    automatic: 'Automatic'  # TODO
+    dark: 'טונקלמאָדוס'
 
 # TODO
 ban:

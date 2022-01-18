@@ -721,8 +721,9 @@ captcha:
     invalid: 'Ongeldige CAPTCHA, probeer het alsjeblieft nog een keer.'
 
 mode:
-    dark: 'Donkere modus'
     light: 'Lichte modus'
+    automatic: 'Automatische'
+    dark: 'Donkere modus'
 
 ban:
     reason: 'Reden voor ban'

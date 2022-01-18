@@ -10,7 +10,7 @@
     export default {
         mixins: [dark],
         mounted() {
-            this.setMode(this.detectDark());
+            this.setIsDark(this.detectDark());
         }
     }
 </script>

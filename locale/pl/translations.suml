@@ -1555,8 +1555,9 @@ captcha:
     invalid: 'Nieprawidłowa CAPTCHA, spróbuj ponownie'
 
 mode:
-    dark: 'Tryb nocny'
     light: 'Tryb dzienny'
+    automatic: 'Auto'
+    dark: 'Tryb nocny'
 
 ban:
     reason: 'Powód blokady'
