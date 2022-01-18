@@ -367,6 +367,7 @@ contact:
         member: 'Member of the collective'  # TODO
         blog: 'Blog'  # TODO
         upcoming: 'Upcoming language versions'  # TODO
+        # TODO join: …
 
 support:
     header: 'Support'

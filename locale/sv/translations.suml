@@ -418,8 +418,8 @@ contact:
         logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
         member: 'Medlem av kollektivet'
-        blog: 'Blogg'
         upcoming: 'Kommande språkversioner'
+        # TODO join: …
 
 support:
     header: 'Stödja'

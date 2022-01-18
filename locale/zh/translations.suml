@@ -350,8 +350,8 @@ contact:
         logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'
         members: '份子'
         member: '集體中的成員'
-        blog: '博客'
         upcoming: '即將到來語言文本'
+        # TODO join: …
 
 support:
     header: '支持'

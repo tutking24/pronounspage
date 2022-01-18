@@ -426,7 +426,6 @@ contact:
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Nunaj membroj'
         member: 'Member of the collective'
-        blog: 'Blogo'
         upcoming: 'Upcoming language versions'
         join:
             header: 'Join us!'

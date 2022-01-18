@@ -490,6 +490,11 @@ contact:
                 - 'link to your social media,'
                 - 'say, if you have some experience in activist work,'
                 - 'say, what would you like to help with.'
+            warning: >
+                At the moment we seem to have enough people helping with English and with moderation,
+                so keep in mind we might not have much work to give you, if that's what you want to help with.
+                But we could still need you in other areas (technical work, design, graphics, etc.)
+                and other languages (including ones that are already supported, but need eg. translations of new features).
 
 support:
     header: 'Support'
@@ -567,6 +572,7 @@ user:
                 in order to free up the unused usernames.
                 Heads up: it looks like you haven't created any cards and haven't logged in for a while.
                 You can keep your account by creating a card, otherwise it will get removed in a week.
+            cta: 'Create a card'
 
 profile:
     description: 'Description'

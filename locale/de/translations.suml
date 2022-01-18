@@ -360,6 +360,7 @@ contact:
         members: 'aktuelle Mitglieder'
         member: 'Mitglied des Kollektivs'
         upcoming: 'Bevorstehende Sprachversionen'
+        # TODO join: …
 
 support:
     header: 'Unterstütze uns'

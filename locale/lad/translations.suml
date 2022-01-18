@@ -372,6 +372,7 @@ contact:
         members: 'Miembros aktuales de la taifa'
         member: 'Miembro de la kooperativa'
         upcoming: 'Futuras versiones en otras linguas'
+        # TODO join: …
 
 support:
     header: 'Arrimanos'

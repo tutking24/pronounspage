@@ -377,6 +377,7 @@ contact:
         member: 'Membre do coletivo'
         blog: 'Blog'
         upcoming: 'Próximas versões'
+        # TODO join: …
 
 support:
     header: 'Apoie-nos'
