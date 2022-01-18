@@ -366,9 +366,9 @@ contact:
                 Nous supportons également les actions pour l'égalité et la justice sociale.
         logo: 'Le logo du collectif est une combinaison du symbole transgenre et une bulle de parole symbolisant le langage.'
         members: 'Membres actuels'
-        blog: 'Blog'
-        upcoming: 'Versions en d’autres langues à venir'
         member: 'Membre du collectif'
+        upcoming: 'Versions en d’autres langues à venir'
+        # TODO join: …
 
 support:
     header: 'Soutien'

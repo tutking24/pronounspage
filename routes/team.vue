@@ -77,6 +77,12 @@
                 <li v-for="item in $t('contact.team.join.areas')">{{item}}</li>
             </ul>
             <p><T>contact.team.join.allies</T></p>
+            <div v-if="$te('contact.team.join.warning')" class="alert alert-warning">
+                <p class="mb-0">
+                    <Icon v="exclamation-triangle"/>
+                    <T>contact.team.join.warning</T>
+                </p>
+            </div>
             <p><T>contact.team.join.how</T></p>
             <ul>
                 <li v-for="item in $t('contact.team.join.application')">{{item}}</li>

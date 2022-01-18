@@ -370,9 +370,9 @@ contact:
                 er laget av “Neutral Language Council” kollektivet.
         logo: 'Logoen av kollektivet er trans symbolet med en snakkeboble som symboliserer språk.'
         members: 'Nåværende medlemmer'
-        blog: 'Blogg'
-        upcoming: 'Kommende språk versjoner'
         member: 'Medlem av kollektivet'
+        upcoming: 'Kommende språk versjoner'
+        # TODO join: …
 
 support:
     header: 'Hjelp'

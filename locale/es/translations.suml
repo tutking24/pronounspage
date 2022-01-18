@@ -375,6 +375,7 @@ contact:
         members: 'Miembros actuales'
         member: 'Miembro de la cooperativa'
         upcoming: 'Próximas versiones en otras lenguas'
+        # TODO join: …
 
 support:
     header: 'Apóyanos'

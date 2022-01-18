@@ -368,6 +368,7 @@ contact:
         member: 'Lid van het collectief'
         blog: 'Blog'
         upcoming: 'Komende taalversies'
+        # TODO join: …
 
 support:
     header: 'Ondersteun ons'
