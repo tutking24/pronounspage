@@ -726,8 +726,8 @@ report:
     comment: 'Bitte beschreibe kurz, was falsch an diesem Profil ist'
     confirm: 'Bist du sicher das du @%username% melden möchtest?'
     sent: 'Deine Meldung wurde gesendet. Danke für deine Hilfe!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: 'Vergiss nicht, was unsere Nutzungsbedingungen verbieten'
+    hoarding: 'Wir bitten dich, Konten aufgrund "Besetzung eines Benutzer*in-Namens" nicht zu melden. Wir löschen Konten ohne Visitenkarten automatisch nach einem Zeitraum der Inaktivität. Deine Meldung wird diesen Prozess nicht beschleunigen.'
 
 flags:
     Abroromantic: 'Abroromantisch'
