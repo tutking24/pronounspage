@@ -1724,13 +1724,13 @@ census:
 blog:
     shortcuts:
         manifest: 'manifest'
+        grupy: 'jak-zwracać-się-do-grup'
+        formularze: 'rekomendacja-formularze'
         ktosio: 'zaimki-nie-tylko-osobowe'
         tłumaczenie: 'ściągawka-tłumaczenie'
         autokorekta: 'autokorekta'
-        grupy: 'jak-zwracać-się-do-grup'
         liczebniki: 'inkluzywne-liczebniki'
         zaimki-postpłciowe: 'zaimki-postpłciowe'
-        formularze: 'rekomendacja-formularze'
 
 redirects:
     - { from: '^/slowniki/neutratywy$', to: '/neutratywy' }

@@ -60,6 +60,13 @@
             </div>
         </section>
 
+        <template v-if="posts.length">
+            <Separator icon="pen-nib" class="mb-5"/>
+            <section>
+                <BlogEntriesList :posts="posts"/>
+            </section>
+        </template>
+
         <Separator icon="heart"/>
         <section>
             <Support/>
@@ -100,7 +107,13 @@
                 })
             }
 
-            return { mainLinks };
-        }
+            return {
+                mainLinks,
+                posts: [],
+            };
+        },
+        async mounted() {
+            this.posts = await this.$axios.$get(`/blog?shortcuts`);
+        },
     }
 </script>
