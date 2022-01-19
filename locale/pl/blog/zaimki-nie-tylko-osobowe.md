@@ -2,6 +2,8 @@
 
 <small>2021-02-13 | [@andrea](/@andrea)</small>
 
+![napis „ktosio” na tle rozmytej flagi osób niebinarnych](/img-local/blog/ktosio.png)
+
 Język polski jest na tyle <strike>skomplikowany</strike> bogaty, że chcąc stworzyć stronę
 o formach nacechowanych płciowo musiałośmy skupić się na początku tylko na najważniejszych aspektach.
 

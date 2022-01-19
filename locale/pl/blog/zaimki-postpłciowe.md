@@ -2,6 +2,8 @@
 
 <small>2021-02-13 | [@andrea](/@andrea)</small>
 
+![napis „tenu, tamtenu, oewnu” na tle rozmytej flagi osób niebinarnych](/img-local/blog/tenu.png)
+
 Czasowniki w [rodzaju postpłciowym](/onu) są bardzo proste: wystarczy wziąć formę żeńską i zamienić „a” na „u”.
 _Chciałam → chciałum; poszłaś → poszłuś; zrobiła → zrobiłu_.
 Rzeczowniki i przymiotniki to także nic trudnego, wystarczy wymienić końcówkę na „-u”.
