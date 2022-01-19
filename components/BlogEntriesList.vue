@@ -55,7 +55,7 @@
         methods: {
             generateLink(slug) {
                 return this.shortcuts[slug] !== undefined
-                    ? `/${slug}`
+                    ? `/${this.shortcuts[slug]}`
                     : `/blog/${slug}`;
             }
         }
