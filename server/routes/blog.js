@@ -6,7 +6,7 @@ import { caches } from "../../src/cache";
 const router = Router();
 
 router.get('/blog', handleErrorAsync(async (req, res) => {
-    return res.json(await caches.blog.fetch(async () => {
+    const posts = await caches.blog.fetch(async () => {
         const dir = __dirname + '/../../data/blog';
         const posts = [];
         fs.readdirSync(dir).forEach(file => {
@@ -57,12 +57,25 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
             posts.push({slug, title, date, authors, hero});
         });
 
-        return posts.sort((a, b) => {
+        posts.sort((a, b) => {
             if (a.date < b.date) { return 1; }
             if (a.date > b.date) { return -1; }
             return 0;
         });
-    }));
+
+        return posts;
+    })
+
+    if (req.query.shortcuts !== undefined && global.config.blog && global.config.blog.shortcuts) {
+        const postsShortcuts = [];
+        for (let slug of Object.values(global.config.blog.shortcuts)) {
+            postsShortcuts.push(posts.filter(p => p.slug === slug)[0])
+        }
+
+        return res.json(postsShortcuts);
+    }
+
+    return res.json(posts);
 }));
 
 export default router;

@@ -231,10 +231,12 @@ export default {
             if (config.links.blog) {
                 routes.push({ path: '/' + encodeURIComponent(config.links.blogRoute), component: resolve(__dirname, 'routes/blog.vue'), name: 'blog' });
                 routes.push({ path: '/' + encodeURIComponent(config.links.blogRoute) + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
-                for (let shortcut in config.blog.shortcuts) {
-                    if (!config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
-                    const slug = config.blog.shortcuts[shortcut];
-                    routes.push({ path: '/' + encodeURIComponent(shortcut), component: resolve(__dirname, 'routes/blogEntry.vue'), meta: {slug}, name: 'blogEntryShortcut:' + shortcut });
+                if (config.blog && config.blog.shortcuts) {
+                    for (let shortcut in config.blog.shortcuts) {
+                        if (!config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
+                        const slug = config.blog.shortcuts[shortcut];
+                        routes.push({ path: '/' + encodeURIComponent(shortcut), component: resolve(__dirname, 'routes/blogEntry.vue'), meta: {slug}, name: 'blogEntryShortcut:' + shortcut });
+                    }
                 }
             }
 

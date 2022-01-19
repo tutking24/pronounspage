@@ -7,7 +7,7 @@
                 <Icon v="pen-nib"/>
                 <T>links.blog</T>
             </h2>
-            <BlogEntriesList :posts="posts"/>
+            <BlogEntriesList :posts="posts" details/>
         </section>
         <Links/>
         <Recommended/>

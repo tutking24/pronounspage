@@ -8,7 +8,7 @@
                 <nuxt-link :to="generateLink(post.slug)" class="card-body text-center h4 p-3 mb-0">
                     <Spelling :text="post.title"/>
                 </nuxt-link>
-                <div class="card-footer small">
+                <div v-if="details" class="card-footer small">
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item small">
                             <Icon v="calendar"/>
@@ -36,6 +36,7 @@
     export default {
         props: {
             posts: { required: true },
+            details: { type: Boolean },
         },
         data() {
             const shortcuts = {};
@@ -58,7 +59,7 @@
                     ? `/${this.shortcuts[slug]}`
                     : `/blog/${slug}`;
             }
-        }
+        },
     };
 </script>
 
