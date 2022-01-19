@@ -1559,7 +1559,7 @@ census:
             question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
             instruction:
                 - >
-                    Więcej informacji <a href="/blog/jak-zwracać-się-do-grup" target="_blank">na naszym blogu</a>.
+                    Więcej informacji <a href="/grupy" target="_blank">na naszym blogu</a>.
             randomise: true
             writein: true
             options:
@@ -1721,6 +1721,17 @@ census:
     results:
         spis-2021: 'Raport ze Spisu 2021'
 
+blog:
+    shortcuts:
+        manifest: 'manifest'
+        ktosio: 'zaimki-nie-tylko-osobowe'
+        tłumaczenie: 'ściągawka-tłumaczenie'
+        autokorekta: 'autokorekta'
+        grupy: 'jak-zwracać-się-do-grup'
+        liczebniki: 'inkluzywne-liczebniki'
+        zaimki-postpłciowe: 'zaimki-postpłciowe'
+        formularze: 'rekomendacja-formularze'
+
 redirects:
     - { from: '^/slowniki/neutratywy$', to: '/neutratywy' }
     - { from: '^/slowniki/dukatywy$', to: '/dukatywy' }
@@ -1738,7 +1749,6 @@ redirects:
     - { from: '^/cenzus', to: '/spis' }
     - { from: '^/blog/rada-j%C4%99zyka-neutralnego$', to: '/kolektyw-rjn' }
     - { from: '^/blog/rada-języka-neutralnego$', to: '/kolektyw-rjn' }
-    - { from: '^/manifest$', to: '/blog/manifest' }
     - { from: '^/faq', to: '/pytania' }
 
 api:

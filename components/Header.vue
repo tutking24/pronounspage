@@ -226,6 +226,7 @@
                             '/' + this.config.links.academicRoute,
                             'blog',
                             'blogEntry',
+                            'blogEntryShortcut',
                             '/' + this.config.links.mediaRoute,
                             this.config.links.split ? '/' + this.config.faq.route : '',
                             this.config.english && this.config.english.enabled ? '/' + this.config.english.route : '',
@@ -307,7 +308,7 @@
         methods: {
             isActiveRoute(link) {
                 return decodeURIComponent(this.$route.path) === link.link
-                    || (link.extra || []).includes(this.$route.name)
+                    || (link.extra && this.$route.name && link.extra.includes(this.$route.name.split(':')[0]))
                     || (link.extra || []).includes(decodeURIComponent(this.$route.path))
                     || (link.extra || []).filter(x => x && (
                         decodeURIComponent(this.$route.path).startsWith(x + '/')

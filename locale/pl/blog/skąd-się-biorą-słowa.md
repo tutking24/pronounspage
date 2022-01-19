@@ -72,4 +72,4 @@ Oznacza zatem osobę niebinarną, która zajmuje się aktywizmem. Proste!
 Literki zebrane w ciąg, znaczenie przekazane, przekaz zrozumiany – i to nawet przez osoby,
 które pierwszy raz się z tym ciągiem znaków spotykają. Więc czemu niby „aktywiszcze” miałoby nie być słowem?
 
-Tworzenie nowych słów to nic złego! Stąd się przecież słowa biorą, że [ktosio](/blog/zaimki-nie-tylko-osobowe) je tworzy 😉
+Tworzenie nowych słów to nic złego! Stąd się przecież słowa biorą, że [ktosio](/ktosio) je tworzy 😉

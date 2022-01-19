@@ -177,7 +177,7 @@ Męska dominacja językowa w polszczyźnie przejawia się między innymi tym, ż
 nawet jeśli nie mówimy o żadnej konkretnej osobie – to i tak zakładamy, że jest to mężczyzna.
 Zaimki jak „ktoś” czy „nikt” narzucają całemu zdaniu rodzaj męski.
 
-Proponujemy zatem, by [tego typu zaimki](/blog/zaimki-nie-tylko-osobowe)
+Proponujemy zatem, by [tego typu zaimki](/ktosio)
 miały alternatywną formę – w rodzaju neutralnym. Na przykład:
 
  - Czy <u>ktosio</u> wrzucił<u>o</u> już posta o spisie powszechnym?
@@ -187,7 +187,7 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
  - <u>Wszystkie</u> byłośmy pod wrażeniem.
 
 <section>
-    <a href="/blog/zaimki-nie-tylko-osobowe" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/ktosio" target="_blank" class="btn btn-outline-primary d-block">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o neutralnych zaimkach
     </a>

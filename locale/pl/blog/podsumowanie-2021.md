@@ -26,7 +26,7 @@ Tymczasem w wersji polskiej wciąż potrzeba wiele pracy u podstaw,
 by język inkluzywny kształtować i promować.
 W lutym przeprowadziłośmy [pierwszy polskojęzyczny Niebinarny Spis Powszechny](/blog/spis-2021)
 i zebrałośmy aż 2211 odpowiedzi!
-Dzięki wynikom Spisu, jak również wypowiedziom ekspertów, mogłośmy stworzyć również nasz [Manifest](/blog/manifest),
+Dzięki wynikom Spisu, jak również wypowiedziom ekspertów, mogłośmy stworzyć również nasz [Manifest](/manifest),
 w którym przyjmujemy ciut bardziej aktywną rolę w kształtowaniu języka,
 sugerując (ale nie narzucając!) polecane formy niebinarne i neutralne.
 Zebrałośmy zgłoszenia do [zina](/zin) na temat odkrywania swojej płci oraz życia jako osoba niebinarna.
