@@ -13,7 +13,7 @@
                 <Spelling text="mieć największy potencjał, by stać się „domyślnymi”, normatywnymi formami gramatycznymi. Szczegóły w naszym Manifeście:"/>
             </p>
 
-            <nuxt-link to="/blog/manifest" class="btn btn-primary d-block">
+            <nuxt-link to="/manifest" class="btn btn-primary d-block">
                 <Icon v="file-contract"/>
                 <Spelling text="Manifest Niebinarnej Polszczyzny"/>
             </nuxt-link>
@@ -73,7 +73,7 @@
                             </small>
                         </li>
                         <li>
-                            <nuxt-link to="/blog/zaimki-nie-tylko-osobowe"><strong>Inne neutralne zaimki</strong></nuxt-link>
+                            <nuxt-link to="/ktosio"><strong>Inne neutralne zaimki</strong></nuxt-link>
                             <br/>
                             <small>
                                 („ktosio”, „nikto”…)

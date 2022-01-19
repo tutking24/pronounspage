@@ -28,7 +28,7 @@
 
     export default {
         async asyncData({route}) {
-            return parseMarkdown((await import(`../data/blog/${route.params.slug}.md`)).default);
+            return parseMarkdown((await import(`../data/blog/${route.params.slug || route.meta[0].slug}.md`)).default);
         },
         head() {
             return head({

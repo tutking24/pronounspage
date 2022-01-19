@@ -491,7 +491,7 @@ faq:
                 - >
                     Aktualizacja: zdecydowałośmy się na wydanie rekomendacji form,
                     które z różnych powodów zdają się być na najlepszej drodze ku normalizacji.
-                    Szczegóły tutaj: {/blog/manifest=Manifest Niebinarnej Polszczyzny}
+                    Szczegóły tutaj: {/manifest=Manifest Niebinarnej Polszczyzny}
         to-sie-nie-uda:
             question: 'Ale to się nie przyjmie! Ale to zamach na tradycję!'
             answer:
@@ -633,7 +633,7 @@ faq:
                 - >
                     Owszem, ze względu na to, że temat wciąż jest nowy i musi się jeszcze wyklarować,
                     przedstawianych przez nas form niebinarnych jest sporo, i mogą one przytłaczać.
-                    Dlatego w naszym {/blog/manifest=Manifeście} proponujemy
+                    Dlatego w naszym {/manifest=Manifeście} proponujemy
                     (choć nie narzucamy, ani też nie deprecjonujemy pozostałych form!),
                     by skupić się na normalizacji używania {/ono=rodzaju neutralnego} jako form dla osób niebinarnych.
                     On bowiem jest już w polszczyźnie zakorzeniony,

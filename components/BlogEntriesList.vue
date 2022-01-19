@@ -2,10 +2,10 @@
     <div class="columnist-wall row">
         <div v-for="post in posts" class="columnist-column col-12 col-sm-6 col-md-4 mb-3">
             <div class="card shadow">
-                <nuxt-link v-if="post.hero" :to="`/blog/${post.slug}`" class="">
+                <nuxt-link v-if="post.hero" :to="generateLink(post.slug)" class="">
                     <img :src="post.hero" class="w-100"/>
                 </nuxt-link>
-                <nuxt-link :to="`/blog/${post.slug}`" class="card-body text-center h4 p-3 mb-0">
+                <nuxt-link :to="generateLink(post.slug)" class="card-body text-center h4 p-3 mb-0">
                     <Spelling :text="post.title"/>
                 </nuxt-link>
                 <div class="card-footer small">
@@ -37,12 +37,28 @@
         props: {
             posts: { required: true },
         },
+        data() {
+            const shortcuts = {};
+            for (let shortcut in this.config.blog.shortcuts) {
+                if (!this.config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
+                shortcuts[this.config.blog.shortcuts[shortcut]] = shortcut;
+            }
+
+            return { shortcuts };
+        },
         mounted() {
             if (!process.client) { return; }
 
             const columnist = new Columnist(this.$el);
             columnist.start();
         },
+        methods: {
+            generateLink(slug) {
+                return this.shortcuts[slug] !== undefined
+                    ? `/${slug}`
+                    : `/blog/${slug}`;
+            }
+        }
     };
 </script>
 
