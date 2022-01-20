@@ -737,7 +737,7 @@ report:
     comment: 'Résumer la raison du signalement de ce profil'
     confirm: 'Voulez-vous signaler @%username% ?'
     sent: 'Votre signalement à bien été envoyé. Merci de votre aide !'
-    terms: 'Rappel sur ce qui est interdit par nos {/terms=Conditions de Service}'
+    terms: 'Rappel sur ce qui est interdit par nos {/termes=Conditions de Service}'
     hoarding: 'Merci de ne pas signaler un profil s''il n''est pas actif. Notre système supprime les comptes inactifs après un certain délai, pour éviter la surcharge de noms d''utilisateurs. Votre signalement n''accélère pas ce processus.'
 
 flags:
