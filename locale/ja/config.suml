@@ -12,18 +12,18 @@ pronouns:
     multiple:
         name: '交換可能な三人称代名詞'
         description: >
-            Xジェンダーの方たちは、2つ以上の三人称代名詞で呼ばれることを好んで、使い分けていることもあるが多いです。
+            Xジェンダーの人たちは、2つ以上の三人称代名詞で呼ばれることを好んで、使い分けていることも多いです。
             他人が自分のことを話しているときに、三人称の代名詞を交互に使うのが好きな人もいますよ。
             また、他人が自分のことを話しているときに、三人称代名詞の形を交互に使うのが好きな人もいます。
         examples: ['彼&彼女', '彼&あの人', '彼女&あの人']
     null: false
     emoji:
         description: '絵文字代名詞'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=絵文字自己}の三人称代名詞は、オンラインでの使用を目的としていて、発音ことを意図していません。'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=絵文字自己}の三人称代名詞は、オンラインでの使用を目的としていて、発音することを意図していません。'
         morphemes:
             base_pronoun: '#'
         examples: ['💫', '💙']
-        template: 'こちらの例をクリックして、URLに絵文字を自分の絵文字に置き換えるだけです！'
+        template: 'こちらの例をクリックして、URLの絵文字を自分の絵文字に置き換えるだけです！'
     slashes: true
     avoiding: false
     others: '他の三人称代名詞'
@@ -38,7 +38,7 @@ pronunciation:
 
 sources:
     enabled: true
-    route: '出所'
+    route: '例文'
     submit: true
     mergePronouns: {}
 
