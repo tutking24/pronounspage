@@ -759,8 +759,8 @@ report:
     comment: 'このプロフィールのどこが悪いのかを簡潔に書いてください。'
     confirm: '@%username%のプロファイルを報告してもよろしいですか？'
     sent: '報告が送信されました。ご協力ありがとうございました！'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: '{/利用規約=利用規約}をお忘れにならないようにお願いします。'
+    hoarding: '「ユーザー名窃盗」の報告はご遠慮ください。一定期間操作が行われないと、カードレスのアカウントは削除されます。申し訳ございませんが、報告書を提出しても、手続きが迅速に進むわけではありません。'
 
 flags:
     Abroromantic: 'アブロロマンティック'
