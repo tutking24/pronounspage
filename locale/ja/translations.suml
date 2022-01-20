@@ -741,7 +741,7 @@ captcha:
 
 mode:
     light: 'ライトモード'
-    automatic: 'Automatic'  # TODO
+    automatic: '自動モード'
     dark: 'ダークモード'
 
 ban:
