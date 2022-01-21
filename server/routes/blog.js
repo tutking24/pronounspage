@@ -66,10 +66,12 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
         return posts;
     })
 
-    if (req.query.shortcuts !== undefined && global.config.blog && global.config.blog.shortcuts) {
+    if (req.query.shortcuts !== undefined) {
         const postsShortcuts = [];
-        for (let slug of Object.values(global.config.blog.shortcuts)) {
-            postsShortcuts.push(posts.filter(p => p.slug === slug)[0])
+        if (global.config.blog && global.config.blog.shortcuts) {
+            for (let slug of Object.values(global.config.blog.shortcuts)) {
+                postsShortcuts.push(posts.filter(p => p.slug === slug)[0])
+            }
         }
 
         return res.json(postsShortcuts);

@@ -113,7 +113,9 @@
             };
         },
         async mounted() {
-            this.posts = await this.$axios.$get(`/blog?shortcuts`);
+            if (this.config.blog && this.config.blog.shortcuts) {
+                this.posts = await this.$axios.$get(`/blog?shortcuts`);
+            }
         },
     }
 </script>
