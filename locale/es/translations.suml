@@ -772,7 +772,7 @@ report:
     comment: 'Por favor explica brevamente que está mal con este perfil'
     confirm: 'Estás segure que quieres reportar a @%username%?'
     sent: 'Tu reporte ha sido enviado. Gracias por ayudarnos!'
-    terms: 'Ten en cuenta lo que está prohibido en nuestros {/terminos=Terms of Service}'
+    terms: 'Ten en cuenta lo que está prohibido en nuestros {/terminos=Términos de Servicio}'
     hoarding: 'Por favor no reporte por "acumulación de nombres de usuario”. Nosotros borramos todas las cuentas que no tienen tarjetas después de un periodo de tiempo.'
 
 flags:
