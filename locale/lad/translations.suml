@@ -713,15 +713,15 @@ ban:
     confirm: 'Estas segure ke keres banear a @%username%?'
     header: 'Has sido baneado. Tu profil no se amostrara a dinguno.'
     banned: 'Baneado'
-    termsIntro: 'De akodro kon muestros {/terminos=Terminos de Servicio}:'
+    termsIntro: 'De akodro kon muestros {/terminos=Terminos de Servisio}:'
 
 report:
     action: 'Denusyar abuzo'
     comment: 'Por favor explika brevamente ke esta mal kon este profil'
     confirm: 'Estas segure ke keres denusyar a @%username%?'
     sent: 'Tu denusyo tiene sido embiado. Mersi por ayudarnos!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: 'Akodra lo ke esta proibido en muestros {/terminos=Terminos de Servisio}'
+    hoarding: 'Por favor no denusye por "akumulasion de nombres de uzador”. Mozotros kitamos todos los kuentos ke no tienen kartas dempues de un periodo de tyempo.'
 
 flags:
     Abroromantic: 'Abroromantik{inflection}'
