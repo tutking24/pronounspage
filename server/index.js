@@ -39,17 +39,22 @@ class LazyDatabase {
         this.db = null;
     }
 
-    async get(...args) {
+    async init() {
         if (this.db === null) {
             this.db = await dbConnection();
+            await this.db.get('PRAGMA journal_mode = WAL;');
+            await this.db.get('PRAGMA busy_timeout = 5000;');
+            await this.db.get('PRAGMA foreign_keys = ON;')
         }
+    }
+
+    async get(...args) {
+        await this.init();
         return this.db.get(...args)
     }
 
     async all(...args) {
-        if (this.db === null) {
-            this.db = await dbConnection();
-        }
+        await this.init();
         return this.db.all(...args);
     }
 
