@@ -375,7 +375,35 @@ contact:
         members: 'Miembros actuales'
         member: 'Miembro de la cooperativa'
         upcoming: 'Próximas versiones en otras lenguas'
-        # TODO join: …
+        join:
+            header: ‘Únete a nosotros!'
+            encouragement: >
+                Te importa nuestro lenguaje no-binario de género neutro??
+                Quieres ayudarnos a promoverlo? Guay!
+                Ayuda extra se aprecia mucho!
+            areasIntro: 'Áreas en las que podrías ayudarnos:'
+            areas:
+                - 'expandir y moderar términos en el diccionario,'
+                - 'expandir y moderar la lista de recursos,'
+                - 'crear gráficos y sube cosas a nuestras redes sociales,'
+                - 'contestar a mensajes directos,'
+                - 'moderar perfiles,'
+                - 'crear traducciones a nuevos idiomas,'
+                - 'traducir,'
+                - 'coordinar el proceso de escribir versiones en nuevas lenguas,'
+                - 'escribir publicaciones de blogs,'
+                - 'programar,'
+                - '…'
+            allies: >
+               Algunas de esas cosas requieren la perspectiva de alguien no-binario, pero no todas.
+               Por eso invitamos a aliados binarios.
+            how: 'Como unirse? Mándanos un email a {mailto:contact@pronouns.page=contact@pronouns.page}, en cual tu:'
+            application:
+                - 'te presentas,'
+                - 'pones el link a tu perfil de pronounspage,'
+                - 'pon el link a tus redes sociales,'
+                - 'di si alguna vez antes ya habías trabajado de activista,'
+                - 'di en que querrías ayudar.'
 
 support:
     header: 'Apóyanos'
@@ -744,8 +772,8 @@ report:
     comment: 'Por favor explica brevamente que está mal con este perfil'
     confirm: 'Estás segure que quieres reportar a @%username%?'
     sent: 'Tu reporte ha sido enviado. Gracias por ayudarnos!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: 'Ten en cuenta lo que está prohibido en nuestros {/terminos=Terms of Service}'
+    hoarding: 'Por favor no reporte por "acumulación de nombres de usuario”. Nosotros borramos todas las cuentas que no tienen tarjetas después de un periodo de tiempo.'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'
