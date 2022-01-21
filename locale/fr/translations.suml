@@ -383,19 +383,19 @@ contact:
                 - 'modérer les profiles,'
                 - 'créer des nouvelles versions de langues,'
                 - 'traduire,'
-                - 'coordonner le processus d'ajout de langages,'
+                - 'coordonner le processus d''ajout de langages,'
                 - 'écrire des posts sur le blog,'
                 - 'programmer,'
                 - '…'
             allies: >
-                Certaines de ces choses requièrent la perspective d'une personne non binaire, mais d'autres, non. 
+                Certaines de ces choses requièrent la perspective d'une personne non binaire, mais d'autres, non.
                 C'est pourquoi nous invitons également nos alliés binaires.
             how: 'Comment nous rejoindre ? Envoyez nous un mail à {mailto:contact@pronouns.page=contact@pronouns.page}, dans lequel vous :'
             application:
                 - 'vous présenterez,'
                 - 'indiquerez le lien de votre profil http://pronouns.page,'
                 - 'indiquerez des liens vers vos réseaux sociaux,'
-                - 'indiquerez, si vous en avez, des expériences dans l'activisme social,'
+                - 'indiquerez, si vous en avez, des expériences dans l''activisme social,'
                 - 'indiquerez sur quel sujet vous voulez nous aider.'
 
 support:

@@ -376,7 +376,7 @@ contact:
         member: 'Miembro de la cooperativa'
         upcoming: 'Próximas versiones en otras lenguas'
         join:
-            header: ‘Únete a nosotros!'
+            header: 'Únete a nosotros!'
             encouragement: >
                 Te importa nuestro lenguaje no-binario de género neutro??
                 Quieres ayudarnos a promoverlo? Guay!
@@ -395,8 +395,8 @@ contact:
                 - 'programar,'
                 - '…'
             allies: >
-               Algunas de esas cosas requieren la perspectiva de alguien no-binario, pero no todas.
-               Por eso invitamos a aliados binarios.
+                Algunas de esas cosas requieren la perspectiva de alguien no-binario, pero no todas.
+                Por eso invitamos a aliados binarios.
             how: 'Como unirse? Mándanos un email a {mailto:contact@pronouns.page=contact@pronouns.page}, en cual tu:'
             application:
                 - 'te presentas,'
