@@ -40,9 +40,11 @@
         },
         data() {
             const shortcuts = {};
-            for (let shortcut in this.config.blog.shortcuts) {
-                if (!this.config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
-                shortcuts[this.config.blog.shortcuts[shortcut]] = shortcut;
+            if (this.config.blog && this.config.blog.shortcuts) {
+                for (let shortcut in this.config.blog.shortcuts) {
+                    if (!this.config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
+                    shortcuts[this.config.blog.shortcuts[shortcut]] = shortcut;
+                }
             }
 
             return { shortcuts };
