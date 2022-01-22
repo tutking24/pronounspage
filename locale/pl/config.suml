@@ -728,6 +728,12 @@ links:
                 że to \[bardzo istotne], jakiego języka użyjemy, patrząc na ten ładunek emocjonalny czy te konstrukty,
                 jakie tworzą się w głowach osób odbierających.
                 Język może realnie zagrażać lub też ratować życie, po prostu.
+        -
+            lang: ['lad']
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=m_6n2-ef1rw'
+            headline: 'Paweł Dembowski – Lenguaje inklusivo– tambyen en Ladino // Wrocław, Polonia'
+            extra: ' – Ladino 21'
     mediaMentions:
         -
             icon: 'newspaper'

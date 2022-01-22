@@ -10,6 +10,8 @@
             <BlogEntriesList :posts="posts" details/>
         </section>
         <Links/>
+        <AcademicLinks v-if="!config.links.split && config.links.academic.length > 0"/>
+        <Media v-if="!config.links.split && (config.links.mediaGuests.length > 0 || config.links.mediaMentions.length > 0)"/>
         <Recommended/>
         <Socials/>
         <LanguageVersions/>
