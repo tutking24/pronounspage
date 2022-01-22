@@ -1732,9 +1732,11 @@ blog:
         manifest: 'manifest'
         grupy: 'jak-zwracać-się-do-grup'
         formularze: 'rekomendacja-formularze'
+        rodzaj-neutralny: 'rodzaj-neutralny'
         ktosio: 'zaimki-nie-tylko-osobowe'
-        tłumaczenie: 'ściągawka-tłumaczenie'
         autokorekta: 'autokorekta'
+        tłumaczenie: 'ściągawka-tłumaczenie'
+        neologizmy: 'skąd-się-biorą-słowa'
         liczebniki: 'inkluzywne-liczebniki'
         zaimki-postpłciowe: 'zaimki-postpłciowe'
 

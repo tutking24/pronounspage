@@ -117,11 +117,11 @@ Postulujemy, by były umieszczane w słownikach i używane do opisywania osób n
 Słowo „nijaki”, w odniesieniu do ludzi, jest zwyczajnie paskudne. Jest wykluczające. Odczłowieczające.
 [Kojarzy się](https://www.synonimy.pl/synonim/nijaki/) przeciętnością, bezbarwnością, bylejakością, nudą i mdłościami.
 Problem ten jest zauważany [w pracach naukowych](https://journals.umcs.pl/et/article/view/6367/pdf) \[str. 117-118]
-i [przez współpracowników Rady Języka Polskiego](https://youtu.be/HOQazoVKf3c?t=1859).
+i [przez współpracowników Rady Języka Polskiego](https://youtu.be/HOQazoVKf3c?t=1793).
 
 Dlatego proponujemy alternatywę, pochodzącą od łacińskiej nazwy tego rodzaju gramatycznego:
 [neuter](https://en.wiktionary.org/wiki/neuter#Latin).
-Czyż „rodzaj neutralny” nie brzmi zdecydownie piękniej?
+Czyż „rodzaj neutralny” nie brzmi zdecydowanie piękniej?
 
 ## B. Język neutralny płciowo
 
