@@ -47,12 +47,14 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
         const bg = await loadImage('static/bg.png');
         context.drawImage(bg, 0, 0, width, height);
 
+        const logo = await loadImage('static/logo/logo.svg');
+        const logoPrimary = await loadImage('static/logo/logo-primary.svg');
+
         const fallback = async _ => {
-            const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
             leftRatio = 5;
-            context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25);
+            context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize, imageSize);
             context.font = `regular ${translations.title.length < 10 ? 120 : translations.title.length < 14 ? 80 : 72}pt '${fontName}'`;
-            context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : translations.title.length < 14 ? 24 : 24));
+            context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : translations.title.length < 14 ? 32 : 24));
         }
 
         if (pronounName.startsWith('@')) {
@@ -69,12 +71,10 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
             context.font = `regular 48pt '${fontName}'`
             context.fillText('@' + user.username, width / leftRatio + imageSize, height / 2)
 
-            const logo = await loadImage('static/favicon.svg');
-
             context.font = `regular 24pt '${fontName}'`
             context.fillStyle = '#C71585';
             const logoSize = 24 * 1.25;
-            context.drawImage(logo, width / leftRatio + imageSize, height / 2 + logoSize - 4, logoSize, logoSize / 1.25)
+            context.drawImage(logoPrimary, width / leftRatio + imageSize, height / 2 + logoSize - 8, logoSize, logoSize)
             context.fillText(translations.title, width / leftRatio + imageSize + 36, height / 2 + 48);
 
             return canvas.toBuffer(mime);
@@ -85,14 +85,12 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
             pronounName,
         );
 
-        const logo = await loadImage('node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg');
-
-        if (pronounName === 'zaimki' || (!pronoun && pronounName !== global.config.pronouns.any)) {
+        if (pronounName === 'zaimki' || (!pronoun && pronounName !== global.config.pronouns.any && (!global.config.pronouns || pronounName !== global.config.pronouns.mirror))) {
             await fallback();
             return canvas.toBuffer(mime);
         }
 
-        context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 1.25 / 2, imageSize, imageSize / 1.25)
+        context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize, imageSize)
         context.font = `regular 48pt '${fontName}'`;
         context.fillText(translations.pronouns.intro + ':', width / leftRatio + imageSize / 1.5, height / 2 - 36)
 

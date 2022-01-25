@@ -10,7 +10,7 @@
             </span>
             <span v-if="basic" class="h4 mt-2">
                 <nuxt-link :to="`/${ config.calendar.route }`">
-                    <Icon v="tags"/>
+                    <Logo/>
                     <T>domain</T>/{{ config.calendar.route }}
                 </nuxt-link>
             </span>

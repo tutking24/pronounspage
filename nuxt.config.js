@@ -14,6 +14,7 @@ const title = translations.title;
 const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
+const logo = fs.readFileSync(__dirname + '/static/logo/logo.svg').toString('utf-8').replace('/></svg>', 'fill="currentColor"/></svg>');
 
 process.env.LOCALE = locale;
 if (process.env.ENV) {
@@ -110,7 +111,7 @@ export default {
             { hid: 'twitter:image', property: 'twitter:image', content: banner },
         ],
         link: [
-            { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
+            { rel: 'icon', type: 'image/svg', href: '/logo/logo-primary.svg' }
         ],
     },
     css: [],
@@ -178,6 +179,7 @@ export default {
         STATS_FILE: process.env.STATS_FILE,
         HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
         ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
+        LOGO: logo,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
