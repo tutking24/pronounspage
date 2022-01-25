@@ -2,9 +2,9 @@
     <div v-if="config.header" class="mb-4">
         <header>
         <div class="d-none d-lg-flex justify-content-between align-items-center flex-row nav-custom btn-group mb-0">
-            <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`nav-item btn btn-sm ${isActiveRoute(link) ? 'active' : ''} ${link.header ? 'flex-grow-0' : ''}`">
+            <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`nav-item btn btn-sm ${link.header ? 'nav-header' : ''} ${isActiveRoute(link) ? 'active' : ''} ${link.header ? 'flex-grow-0' : ''}`">
                 <h1 v-if="link.header" class="text-nowrap">
-                    <Icon v="tags"/>
+                    <Logo flag/>
                     <span class="higher"><T>title</T></span>
                 </h1>
                 <template v-else>
@@ -21,8 +21,7 @@
             <div class="text-center mb-3">
                 <nuxt-link to="/">
                     <h1 class="text-nowrap">
-                        <Icon v="tags"/>
-                        <span class="higher"><T>title</T></span>
+                        <Logo flag class="me-2"/><span class="higher"><T>title</T></span>
                     </h1>
                 </nuxt-link>
                 <VersionDropdown/>
@@ -116,10 +115,9 @@
     </div>
     <header v-else class="mb-4">
         <div class="container">
-            <h1 class="text-nowrap p-4">
+            <h1 class="text-nowrap p-4 mb-0">
                 <nuxt-link to="/">
-                    <Icon v="tags"/>
-                    <T>title</T>
+                    <Logo flag class="me-2"/><span class="higher"><T>title</T></span>
                 </nuxt-link>
             </h1>
         </div>
@@ -433,6 +431,9 @@
 
                 height: $header-height;
                 padding-top: 1.2rem;
+                &.nav-header {
+                    padding-top: 0.6rem;
+                }
                 margin-top: 3px;
 
                 &:first-child, &:last-child {
@@ -449,6 +450,7 @@
 
     h1 {
         text-decoration: none;
+        margin-bottom: .5em;
         .higher {
             position: relative;
             top: -0.1em;
