@@ -97,6 +97,7 @@
             documentClicked() {
                 if (this.selectedDay) {
                     this.selectedDay = null;
+                    this.$eventHub.$emit('calendar-select', this.selectedDay);
                 }
             },
             selectDay(d) {

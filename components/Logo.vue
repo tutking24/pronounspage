@@ -1,6 +1,6 @@
 <template>
     <span v-if="flag"
-          :class="['logo-wrapper rounded-circle d-inline-flex justify-content-center align-items-center', forceShowFlag || forceShowFlagDyn ? 'logo-flag' : '']"
+          :class="['logo-wrapper rounded-circle d-inline-flex justify-content-center align-items-center', forceShowFlag || forceShowFlagDyn ? 'logo-flag-forced' : '', flagName ? 'logo-has-flag' : '']"
           :style="flagName ? `--flag: url('/flags/${flagName}.png')` : ''">
         <span class="logo" v-html="svg"/>
     </span>
@@ -35,7 +35,9 @@ export default {
     },
     methods: {
         selectFlag() {
-            return new ImmutableArray(...calendar.getCurrentYear().eventsByDate[(this.d || this.day).toString()])
+            const events = calendar.getCurrentYear().eventsByDate[(this.d || this.day).toString()];
+            if (!events) { return null; }
+            return new ImmutableArray(...events)
                 .filter(e => e.flag && !e.flag.startsWith('_'))
                 .sorted((a, b) => b.level - a.level)
                 .groupBy(e => e.level)
@@ -82,7 +84,7 @@ export default {
         }
     }
 
-    .logo-wrapper.logo-flag, h1:hover .logo-wrapper {
+    .logo-wrapper.logo-flag-forced.logo-has-flag, h1:hover .logo-wrapper.logo-has-flag {
         svg path {
             stroke: white;
             stroke-width: 10;
