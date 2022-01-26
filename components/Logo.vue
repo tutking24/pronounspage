@@ -93,4 +93,12 @@ export default {
             opacity: 1;
         }
     }
+
+    body[data-theme="dark"] {
+        .logo-wrapper.logo-flag-forced.logo-has-flag, h1:hover .logo-wrapper.logo-has-flag {
+            svg path {
+                stroke: black;
+            }
+        }
+    }
 </style>
