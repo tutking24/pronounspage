@@ -54,7 +54,7 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
             leftRatio = 5;
             context.drawImage(logo, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize, imageSize);
             context.font = `regular ${translations.title.length < 10 ? 120 : translations.title.length < 14 ? 80 : 72}pt '${fontName}'`;
-            context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : translations.title.length < 14 ? 32 : 24));
+            context.fillText(translations.title, width / leftRatio + imageSize / 1.5, height / 2 + (translations.title.length < 10 ? 48 : translations.title.length < 14 ? 36 : 24));
         }
 
         if (pronounName.startsWith('@')) {
