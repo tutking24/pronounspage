@@ -328,6 +328,13 @@ calendar:
 census:
     enabled: false
 
+blog:
+    shortcuts:
+        name: 'why-the-name'
+        history: 'project-history'
+        logo: 'new-logo'
+        new-version: 'creating-new-language-version'
+
 redirects:
     - { from: '^/blog/neutral-language-council$', to: '/team' }
 

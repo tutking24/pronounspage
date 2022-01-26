@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <LocaleLink locale="en" link="/blog/creating-new-language-version" class="small">
+                <LocaleLink locale="en" link="/new-version" class="small">
                     <Icon v="plus"/>
                     <T>localise.shorter</T>
                 </LocaleLink>
