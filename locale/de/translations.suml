@@ -360,7 +360,40 @@ contact:
         members: 'aktuelle Mitglieder'
         member: 'Mitglied des Kollektivs'
         upcoming: 'Bevorstehende Sprachversionen'
-        # TODO join: …
+        join:
+            headerr: 'Mach mit!'
+            encouragement: >
+                Interessierst du dich für nicht-binäre und geschlechtsneutrale Sprache?
+                Willst du unserem Kollektiv helfen, diese zu fördern? Super!
+                Zusätzliche Hilfe ist sehr willkommen!
+            areasIntro: 'Bereiche, in denen du helfen könntest, sind zum Beispiel:'
+            areas:
+                - 'Erweiterung und Moderation von Wörterbüchern und Glossaren,'
+                - 'Erweiterung und Moderation des Quellenverzeichnisses,'
+                - 'Erstellung von Grafiken und Beiträgen für soziale Medien,'
+                - 'Beantworten von Direktnachrichten,'
+                - 'Profile moderieren,'
+                - 'Erstellen einer neuen Sprachversion,'
+                - 'Übersetzen,'
+                - 'Koordinieren des Prozesses der Hinzufügung von Sprachversionen,'
+                - 'Schreiben von Blog-Beiträgen,'
+                - 'Programmieren,'
+                - '...'
+            allies: >
+                Einige dieser Dinge erfordern die Perspektive einer nicht-binären Person, andere nicht unbedingt.
+                Deshalb laden wir auch binäre Allies ein.
+            how: 'Wie kann man beitreten? Sende uns eine E-Mail an {​​​​​​​​mailto:contact@pronouns.page=contact@pronouns.page}​​​​​​​​, in der du:'
+            application:
+                - 'dich vorstellst,'
+                - 'Link zu deinem pronouns.page-Profil,'
+                - 'Link zu deinen sozialen Medien,'
+                - 'sagst, ob du Erfahrung in der Aktivistenarbeit hast,'
+                - 'sagst, bei was du gerne helfen würdest.
+            warning: >
+                Im Moment scheinen wir genug Leute zu haben, die mit Englisch und mit der Moderation helfen,
+                also bedenke, dass wir vielleicht nicht viel Arbeit für dich haben, wenn du dabei helfen willst.
+                Aber wir könnten dich in anderen Bereichen (technische Arbeit, Design, Grafik usw.) noch brauchen
+                und in anderen Sprachen (einschließlich solcher, die bereits unterstützt werden, aber z. B. Übersetzungen neuer Funktionen benötigen).
 
 support:
     header: 'Unterstütze uns'
