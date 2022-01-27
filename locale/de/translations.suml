@@ -37,7 +37,7 @@ home:
         header2: 'Generiere einen Link'
         base: 'Ausgehend von'
         alt: 'Du kannst auch austauschbare Formen in jedes Feld eintragen, z.B. <code>er&sie</code> = „er“ or „sie“.'
-        pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich „|“ (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|si​ˑʁ</code> = „sier“, ausgesprochen wie /si​ˑʁ/.'
+        pronunciation: 'Du kannst auch die Aussprache spezifizieren, die indem du nach einem senkrechten Strich „|“ (mit der Tastenkombination [Alt Gr] und [<>] ) hinzufügst. Benutze dafür die Lautschrift IPA (Internationales Phonetisches Alphabet). Ein Beispiel wäre: <code>sier|siˑʁ</code> = „sier“, ausgesprochen wie /siˑʁ/.'
     whatisit: 'Was ist das Problem mit Pronomen?'
     mission:
         header: 'Unsere Mission'
@@ -382,7 +382,7 @@ contact:
             allies: >
                 Einige dieser Dinge erfordern die Perspektive einer nicht-binären Person, andere nicht unbedingt.
                 Deshalb laden wir auch binäre Allies ein.
-            how: 'Wie kann man beitreten? Sende uns eine E-Mail an {​​​​​​​​mailto:contact@pronouns.page=contact@pronouns.page}​​​​​​​​, in der du:'
+            how: 'Wie kann man beitreten? Sende uns eine E-Mail an {mailto:contact@pronouns.page=contact@pronouns.page}, in der du:'
             application:
                 - 'dich vorstellst,'
                 - 'Link zu deinem pronouns.page-Profil,'
