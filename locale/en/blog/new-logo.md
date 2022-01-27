@@ -17,7 +17,7 @@ It was designed by [詩央 / Shio](/@shio_o). In a simple yet distinctive shape 
 1. `(   /   )`, pronoun indicator, as in “Alex (they/them)” – to symbolise **pronouns**, 
 2. ԀP – double P – stands for **P**ronouns.**P**age
 3. [中](https://en.wiktionary.org/wiki/%E4%B8%AD) – a Han character meaning center/middle
-   (pronounced “zhōng” in Mandarin, “chuu” or “naka” in Japanese) –
+   (pronounced “zhōng” in Mandarin, “chuu” or “naka” in Japanese, “jung” in Korean) –
    symbolising **neutrality** (as in: gender neutral language),
 4. 🔗 – a link symbol – representing **human connection**.
 
