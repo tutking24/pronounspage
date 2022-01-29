@@ -131,7 +131,7 @@
                             M: 'cze', D: 'cza', C: 'czu', B: 'cze', N: 'czem', Msc: 'czu', W: 'cze',
                         }),
                         new NounDeclension({
-                            M: 'cze', D: 'czej', C: 'czej', B: 'cze', N: 'czą', Msc: 'czej', W: 'cze',
+                            M: 'cze', D: 'czy', C: 'czy', B: 'czę', N: 'czą', Msc: 'czy', W: 'czo',
                         }),
                         new NounDeclension({
                             M: 'cze', D: 'cza', C: 'czu', B: 'cze', N: 'czem', Msc: 'czu', W: 'cze',
@@ -145,7 +145,7 @@
                             M: 'nie', D: 'nia', C: 'niu', B: 'nie', N: 'niem', Msc: 'niu', W: 'nie',
                         }),
                         new NounDeclension({
-                            M: 'nie', D: 'niej', C: 'niej', B: 'nie', N: 'nią', Msc: 'niej', W: 'nie',
+                            M: 'nie', D: 'ni', C: 'ni', B: 'nię', N: 'nią', Msc: 'ni', W: 'niu',
                         }),
                         new NounDeclension({
                             M: 'nie', D: 'nia', C: 'niu', B: 'nie', N: 'niem', Msc: 'niu', W: 'nie',
@@ -159,7 +159,7 @@
                             M: 'czę', D: 'częcia', C: 'częciu', B: 'czę', N: 'częciem', Msc: 'częciu', W: 'czę',
                         }),
                         new NounDeclension({
-                            M: 'czę', D: 'częciej', C: 'częciej', B: 'czę', N: 'częcią', Msc: 'częciej', W: 'czę',
+                            M: 'czę', D: 'częty', C: 'częcie', B: 'czętę', N: 'czętą', Msc: 'częcie', W: 'częto',
                         }),
                         new NounDeclension({
                             M: 'czę', D: 'częcia', C: 'częciu', B: 'czę', N: 'częciem', Msc: 'częciu', W: 'czę',
@@ -187,7 +187,7 @@
                             M: 'ro', D: 'ra', C: 'rzu', B: 'ro', N: 'rem', Msc: 'rzu', W: 'ro',
                         }),
                         new NounDeclension({
-                            M: 'ro', D: 'rej', C: 'rej', B: 'ro', N: 'rą', Msc: 'rej', W: 'ro',
+                            M: 'ro', D: 'ry', C: 'rze', B: 'rę', N: 'rą', Msc: 'rze', W: 'ro',
                         }),
                         new NounDeclension({
                             M: 'ro', D: 'ra', C: 'rzu', B: 'ro', N: 'rem', Msc: 'rzu', W: 'ro',
