@@ -3,6 +3,10 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/cal
 module.exports = [
     // --- months ---
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
+    new Event('Miesiąc Historii LGBTQ+ (UK/Węgry/Niderlandy)', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (UA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Irlandia/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
     // --- static date ---
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
@@ -11,6 +15,15 @@ module.exports = [
     new Event('{https://www.facebook.com/429249150318/posts/10164869405325319=Polski Dzień Osób Niebinarnych}', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Pamięci Milo Mazurkiewicz', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Dzień Dziabka}', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
+    new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
+    new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Dzień Testów na HIV u Osób Transpłciowych} (USA)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Dzień Testów na HIV u Osób Czarnych} (USA/Kanada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Dzień Świadomości HIV/AIDS u Gejów} (USA)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=Dzień Świadomości Starzenia się z HIV/AIDS} (USA/Kanada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),    
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Dzień Świadomości HIV/AIDS wśród Młodzieży} (USA)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),    
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
+    new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
@@ -45,5 +58,41 @@ module.exports = [
             }
         }
         yield lastFriday;
+    }, EventLevel.Day),
+
+    // last Friday of August
+    new Event('Fioletowy Piątek (Australia)', null, 8, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.Day),    
+
+    // last Friday of February
+    new Event('Fioletowy Piątek (UK)', null, 2, function* (monthDays) {
+        let lastFriday = null;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                lastFriday = d;
+            }
+        }
+        yield lastFriday;
+    }, EventLevel.Day),
+
+    // second Friday of December
+    new Event('Fioletowy Piątek (Niderlandy)', null, 12, function* (monthDays) {
+        let fridays = 0;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 5) {
+                fridays++;
+                if (fridays === 2) {
+                    yield d;
+                    return;
+                }
+            }
+        }
     }, EventLevel.Day),
 ];
