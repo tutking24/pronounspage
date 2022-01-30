@@ -21,7 +21,7 @@ It was designed by [詩央 / Shio](/@shio_o). In a simple yet distinctive shape 
    symbolising **neutrality** (as in: gender neutral language),
 4. 🔗 – a link symbol – representing **human connection**.
 
-Thanks to [Daniel/Kris](/@CtrlAltGr) we can also present the new logo and the idea behind it using a cool video: 
+Thanks to [Daniel / Kris](/@CtrlAltGr) we can also present the new logo and the idea behind it using a cool video: 
 
 // (TODO) not the actual video, I just put it here to test embedding from peertube,
 replace the placeholder with the proper video once it's finished ;) 
