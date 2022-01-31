@@ -23,10 +23,7 @@ It was designed by [詩央 / Shio](/@shio_o). In a simple yet distinctive shape 
 
 Thanks to [Daniel / Kris](/@CtrlAltGr) we can also present the new logo and the idea behind it using a cool video: 
 
-// (TODO) not the actual video, I just put it here to test embedding from peertube,
-replace the placeholder with the proper video once it's finished ;) 
-
-{embed=//videos.trom.tf/videos/embed/90252742-5e91-4e2f-9de8-2907a21cdd81=67. Moderating the Fediverse}
+{embed=//player.vimeo.com/video/672093735?h=2f5f7fe10c=Pronouns.page – logo reveal}
 
 The new logo comes with an extra little feature:
 [Andrea](/@andrea) made sure that hovering your mouse over the logo in the header will reveal
