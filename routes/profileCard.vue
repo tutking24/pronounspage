@@ -2,7 +2,7 @@
     <Profile v-if="profile" :user="user" :profile="profile" class="pb-3 mt-5" expandLinks>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
-                <Icon v="tags"/>
+                <Logo/>
                 <T>domain</T><span v-if="profile">/@{{user.username}}</span>
             </h1>
         </nuxt-link>

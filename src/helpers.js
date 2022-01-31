@@ -229,3 +229,32 @@ const escapeChars = {
 };
 
 export const escapeHtml = (text) => text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
+
+export class ImmutableArray extends Array {
+    sorted(a, b) {
+        return new ImmutableArray(...[...this].sort(a, b));
+    }
+
+    randomElement() {
+        return this[Math.floor(Math.random() * this.length)];
+    }
+
+    groupBy(m) {
+        const keys = {}
+        const grouped = new ImmutableArray();
+        for (let el of this) {
+            const key = m(el);
+            if (!keys.hasOwnProperty(key)) {
+                keys[key] = grouped.length;
+                grouped.push([key, new ImmutableArray()]);
+            }
+            grouped[keys[key]][1].push(el);
+        }
+
+        return grouped;
+    }
+
+    indexOrFallback(index, fallback) {
+        return this.length > index ? this[index] : fallback;
+    }
+}

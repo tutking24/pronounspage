@@ -1,5 +1,5 @@
 <template>
-    <div v-if="year">
+    <div v-if="year" :class="basic ? 'py-5' : ''">
         <CommunityNav v-if="!basic"/>
 
         <h2 class="d-flex justify-content-between flex-column flex-md-row">
@@ -9,7 +9,7 @@
             </span>
             <span v-if="basic" class="h4 mt-2">
                 <nuxt-link :to="`/${ config.calendar.route }`">
-                    <Icon v="tags"/>
+                    <Logo/>
                     <T>domain</T>/{{ config.calendar.route }}
                 </nuxt-link>
             </span>

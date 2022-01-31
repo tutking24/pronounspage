@@ -46,7 +46,7 @@ i robi to wymuszając w takich przypadkach jeden z dwóch rodzajów gramatycznyc
 Dla wielu z nas jest to przykre, pogłębiające dysforię płciową,
 i wręcz zmusza nas do kłamania w niemal każdym zdaniu na temat naszej własnej płci.
 
-Dlatego jako społeczność pracujemy nas tworzeniem i popularyzowaniem [pomysłów](/)
+Dlatego jako społeczność pracujemy nas tworzeniem i popularyzowaniem [pomysłów](/zaimki)
 na uczynienie języka bardziej inkluzywnym, a mniej binarnym
 i mniej poddanym [męskiej dominacji językowej](https://pl.wikipedia.org/wiki/M%C4%99ska_dominacja_j%C4%99zykowa). 
 
