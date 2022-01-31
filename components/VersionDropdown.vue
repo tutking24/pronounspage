@@ -23,7 +23,7 @@
                 </li>
                 <li class="dropdown-divider"></li>
                 <li>
-                    <LocaleLink locale="en" link="/blog/creating-new-language-version" class="dropdown-item small">
+                    <LocaleLink locale="en" link="/new-version" class="dropdown-item small">
                         <Icon v="plus"/>
                         <T>localise.shorter</T>
                     </LocaleLink>
