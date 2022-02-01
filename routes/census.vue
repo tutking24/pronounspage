@@ -188,7 +188,7 @@
         },
         mounted() {
             if (process.client && !this.$user()) {
-                this.finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
+                this.finished = parseInt(window.localStorage.getItem('census-finished') || 0) === parseInt(this.config.census.edition);
             }
         },
         methods: {
@@ -247,7 +247,7 @@
                         writins: JSON.stringify(this.writins),
                     });
                     this.finished = true;
-                    window.localStorage.setItem('census-finished', '1');
+                    window.localStorage.setItem('census-finished', this.config.census.edition + '');
                 }
                 this.$nextTick(() => {
                     if (this.$refs.questionform) {
