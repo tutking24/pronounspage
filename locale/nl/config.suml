@@ -64,25 +64,28 @@ nouns:
     submit: true
     templates: true
 
+community:
+    route: 'kalender'
+
 inclusive:
     enabled: false
 
 terminology:
-    enabled: false
-    published: false
-    categories: # TODO
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
+    enabled: true
+    published: true
+    categories:
+        - 'seksuele geaardheid'
+        - 'romantische geaardheid'
+        - 'tertiaire geaardheid'
         - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
+        - 'gender expressie'
+        - 'relatiemodel'
+        - 'taal'
+        - 'aantrekking'
+        - 'politiek'
+        - 'vooroordeel'
 
-    route: 'terminology'
+    route: 'terminologie'
 
 names:
     enabled: false
