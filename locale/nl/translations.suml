@@ -176,12 +176,12 @@ community:
 
 terminology:
     header: 'Terminologie'
-        headerLong: 'Het woordenboek van queer terminologie'
+    headerLong: 'Het woordenboek van queer terminologie'
     info:
         - >
-            Veel van de begrippen en uitdrukkingen gerelateerd aan de LHBTQ+ gemeenschap 
-            worden direct vanuit het Engels gebruikt in Nederlandse teksten. 
-            Hierbij presenteren we een woordenlijst van deze begrippen, 
+            Veel van de begrippen en uitdrukkingen gerelateerd aan de LHBTQ+ gemeenschap
+            worden direct vanuit het Engels gebruikt in Nederlandse teksten.
+            Hierbij presenteren we een woordenlijst van deze begrippen,
             leggen we de betekenis van deze woorden uit, en stellen we Nederlandse vertalingen voor.
     term: 'Begrip'
     original: 'Etymologie'
@@ -740,7 +740,7 @@ report:
     comment: 'Leg kort uit wat ongepast is aan dit profiel'
     confirm: 'Weet je zeker dat je @%username% wilt rapporteren?'
     sent: 'Jouw rapportering was verzonden. Bedankt voor je hulp!'
-    terms: 'Houd hetgene wat verboden is volgens onze {/terms=Gebruiksvoorwaarden} in jouw achterhoofd' 
+    terms: 'Houd hetgene wat verboden is volgens onze {/terms=Gebruiksvoorwaarden} in jouw achterhoofd'
     hoarding: ' Rapporteer alsjeblieft geen gebruikers die gebruikersnamen hamsteren. We verwijderen automatisch accounts zonder kaarten na een periode van inactiviteit. Jouw melding zal dit proces niet verspoedigen.'
 
 flags:
