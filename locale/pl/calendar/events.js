@@ -18,7 +18,7 @@ module.exports = [
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
     new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
     new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Dzień Testów na HIV u Osób Transpłciowych} (USA)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Dzień Testów na HIV u Osób Czarnych} (USA/Kanada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Dzień Świadomości HIV/AIDS u Osób Czarnych} (USA/Kanada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Dzień Świadomości HIV/AIDS u Gejów} (USA)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=Dzień Świadomości Starzenia się z HIV/AIDS} (USA/Kanada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),    
     new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Dzień Świadomości HIV/AIDS wśród Młodzieży} (USA)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),    
