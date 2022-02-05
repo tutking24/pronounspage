@@ -346,7 +346,7 @@ links:
 
     social: 'Sociale media'
 
-    languageVersions: 'Andere taalversies'
+    languageVersions: 'Versies in andere talen'
 
 people: ~
 
@@ -837,7 +837,7 @@ flags:
 
 calendar:
     header: 'Kalender'
-    headerLong: 'Queer Kalender'
+    headerLong: 'Queer kalender'
     date: '%date% %year%'
     months:
         1: 'Januari'
