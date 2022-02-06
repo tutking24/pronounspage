@@ -1287,9 +1287,9 @@ census:
     header: 'Spis'
     headerLong: 'Niebinarny Spis Powszechny'
     banner: >
-        Trwa „Niebinarny Spis Powszechny”!
+        Trwa Niebinarny Spis Powszechny!
         Jeśli jesteś osobą niebinarną i chcesz nam pomóc zbadać, jakiego języka używamy by się wyrażać,
-        {/spis=kliknij tutaj, by wypełnić formularz}.
+        {/spis=kliknij tutaj, by wypełnić naszą ankietę}.
     description:
         - >
             Ciekawi Cię, jakiego języka używają polskie osoby niebinarne?
