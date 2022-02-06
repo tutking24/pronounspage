@@ -132,7 +132,6 @@ profile:
     defaultWords:
         -
             - '[ingen titel]'
-            - 'mx.'
             - 'herr'
             - 'fru'
             - 'kamrat'
