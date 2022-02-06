@@ -130,11 +130,6 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[ingen titel]'
-            - 'herr'
-            - 'fru'
-            - 'kamrat'
         - ['person', 'man', 'kvinna', 'dam', 'snubbe', 'kille', 'tjej', 'kompis', 'bror', 'syster', 'syskon']
         - ['snygg', 'stilig', 'söt', 'het', 'sexig']
         - ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
