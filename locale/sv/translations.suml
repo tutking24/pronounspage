@@ -16,8 +16,8 @@ home:
             De flesta använder {/han=“han/honom”} eller {/hon=“hon/henne”}, så vi antar ofta automatiskt vad vi ska kalla någon baserat på deras utseende.
             Men det är faktiskt inte så enkelt…
         - >
-            Könsidentiteter är komplicerade. Vissa människor “ser inte ut som” deras könsidentitet.
-            Vissa föredrar att bli kallade något annat än vad man först skulle anta.
+            Könsidentiteter är komplicerat. Vissa människor “ser inte ut som” deras könsidentitet.
+            Vissa föredrar att bli kallade för något annat än vad man först skulle anta.
             Vissa personer passar inte in i det binära “man” eller “kvinna” och föredrar ett mer neutralt språk.
         - >
             Detta verktyg låter dig dela en länk till dina pronomen, med exempelmeningar,
@@ -125,9 +125,9 @@ sources:
 
 nouns:
     header: 'Ordbok'
-    headerLong: 'Ordbok på neutrala substantiv'
-    headerLonger: 'Ordbok på genusneutralt språk'
-    description: 'Det är inte bara pronomen! Kolla in vår ordbok på neutrala substantiv.'
+    headerLong: 'Ordbok med neutrala substantiv'
+    headerLonger: 'Ordbok för genusneutralt språk'
+    description: 'Det är inte bara pronomen! Kolla in vår ordbok för neutrala substantiv.'
     intro:
         - >
             Inkluderande och genusneutralt språk är inte bara att respektera någons pronomen
@@ -162,7 +162,7 @@ nouns:
 
     masculine: 'maskulin'
     masculineShort: 'mask.'
-    feminine: 'femenin'
+    feminine: 'feminin'
     feminineShort: 'fem.'
     neuter: 'neutral'
     neuterShort: 'neutr.'
@@ -178,19 +178,19 @@ community:  # TODO
     header: 'Community'
     headerLong: 'Queer community'
 
-terminology:  # TODO
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
+terminology:
+    header: 'Terminologi'
+    headerLong: 'Ordbok för queer terminologi'
     info:
         - >
-            Many of the terms and phrases related to the LGBTQ+ community
-            are used as English inserts into <your language> texts.
-            We'd like to present a glossary of those terms, describe their meaning,
-            and propose their <your language> translations.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
+            Många begrepp och fraser som relaterar till HBTQ+ community
+            används som engelska låneord i svenska texter.
+            Vi vill presentera en ordbok för sådana begrepp, beskriva deras definition,
+            och ge förslag på hur de kan översättas till svenska.
+    term: 'Begrepp'
+    original: 'Etymologi'
+    category: 'Kategori'
+    images: 'Tillagda bilder, från utanför flaggkatalogen'
     definition: 'Definition'
 
 faq:
@@ -210,7 +210,7 @@ faq:
                      Beroende på tid och plats så kan att vara "en kvinna" eller "en man" ha haft radikalt olika innebörder.
                      Rättigheter, skyldigheter, normer… I Europa brukade män ha på sig klackskor och tights,
                      nativamerikaner i Nordamerika har under århundraden erkänt ett tredje kön,
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, detsamma gäller för samer, indier m.fl.
                 - >
                     Ickebinär är ett paraplybegrepp som beskriver en identitet hos människor
                     som inte passar in i det binära, man/kvinna.
@@ -378,7 +378,7 @@ faq:
                 - >
                     Det finns en generator på hemma-sidan, du kan skapa en länk till vilket set  av pronomen som helst.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}
+                    You can also just list the three forms using slashes, eg. {/hen/henom/hens=hen/henom/hens}
 
 links:
     header: 'Länkar'
@@ -418,8 +418,37 @@ contact:
         logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
         member: 'Medlem av kollektivet'
+        blog: 'Blogg'
         upcoming: 'Kommande språkversioner'
-        # TODO join: …
+        join:  # TODO
+            header: 'Join us!'
+            encouragement: >
+                Do you care about non-binary and gender-neutral language?
+                Do you want to help our collective in promoting it? Cool!
+                Extra help is very welcome!
+            areasIntro: 'Areas in which you might be able to help are for example:'
+            areas:
+                - 'expanding and moderating dictionaries and glossaries,'
+                - 'expanding and moderating the list of sources,'
+                - 'creating graphics and social media posts,'
+                - 'replying to direct messages,'
+                - 'moderating profiles,'
+                - 'creating a new language version,'
+                - 'translating,'
+                - 'coordinating the process of adding language versions,'
+                - 'writing blog posts,'
+                - 'programming,'
+                - '…'
+            allies: >
+                Some of those things require a perspective of a nonbinary person, others not necessarily.
+                That's why we also invite binary allies.
+            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+            application:
+                - 'introduce yourself,'
+                - 'link to your pronouns.page profile,'
+                - 'link to your social media,'
+                - 'say, if you have some experience in activist work,'
+                - 'say, what would you like to help with.'
 
 support:
     header: 'Stödja'
@@ -444,7 +473,7 @@ user:
         why: >
             Registering låter dig hantera dina kort ({/@andrea=som det här}).
         passwordless: 'Webbplatsen lagrar inga lösenord. {https://avris.it/blog/passwords-are-passé=Mer information.}'
-        instancePlaceholder: 'Instance'  # TODO
+        instancePlaceholder: 'Instans'
     code:
         action: 'Bekräfta'
         invalid: 'Ogiltig kod.'
@@ -700,7 +729,7 @@ admin:
     header: 'Adminpanel'
     user:
         user: 'Användare'
-        createdAt: 'Registration date'  # TODO
+        createdAt: 'Registreringsdatum'
         email: 'E-post'
         roles: 'Behörigheter'
         profiles: 'Profiler'
@@ -742,9 +771,9 @@ captcha:
     invalid: 'Ogiltlig CAPTCHA, snälla försök igen'
 
 mode:
-    light: 'Ljust läge'
-    automatic: 'Automatiskt'
     dark: 'Mörkt läge'
+    automatic: 'Automatiskt'
+    light: 'Ljust läge'
 
 ban: # TODO
     reason: 'Ban reason'
@@ -761,8 +790,8 @@ report:
     comment: 'Vad är felet med profilen'
     confirm: 'Är du säker på att du vill rapportera @%username%?'
     sent: 'Det har fick skickat till oss. Tack för hjälpen!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'  # TODO
+    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'  # TODO
 
 flags:
     Abroromantic: 'Abroromantisk'
@@ -798,7 +827,7 @@ flags:
     Diamoric: 'Diamorös'
     Enbian: 'Enbian{inflection}'
     Fa*afafine: 'Fa''afafine'
-    Femme: 'Femme' # TODO
+    Femme: 'Femme'
     Gay: 'Gay'
     Gender_Questioning: 'Gender frågande'
     Genderfae: 'Genderfae'
@@ -822,7 +851,7 @@ flags:
     Lesbiromantic: 'Lesbiromantisk{inflection_c}'
     Maverique: 'Maverique'
     Monoamorous: 'Monoamorös'
-    Monogamous: 'Monogamous' # TODO
+    Monogamous: 'Monogam'
     Muxe: 'Muxe'
     Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'
@@ -830,7 +859,7 @@ flags:
     Nonbinary: 'Icke-binär'
     Omnisexual: 'Omnisexuell'
     Omniromantic: 'Omniromantisk'
-    Oriented_Aroace: 'Oriented aro-ace' # TODO
+    Oriented_Aroace: 'Orienterad aroace'
     Pangender: 'Pangender'
     Panromantic: 'Panromantisk'
     Pansexual: 'Pansexuell'
@@ -844,7 +873,7 @@ flags:
     Queerian: 'Queerian'
     Queerplatonic: 'Queerplatonisk'
     Quoiromantic: 'Quoiromantisk'
-    Sapphic: 'Sapphic{inflection_c}'
+    Sapphic: 'Safisk'
     Sexuality_Questioning: 'Sexualitet frågande'
     Straight_Ally: 'Straight ally'
     Toric: 'Toric'
@@ -857,6 +886,7 @@ flags:
     Two_Spirit: 'Two-spirit'
     Xenogender: 'Xenogender'
 
+# optional, but would be nice to have
 calendar: # TODO
     header: 'Calendar'
     headerLong: 'Queer Calendar'
@@ -895,7 +925,7 @@ calendar: # TODO
         asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
         drag_day: '{/terminology#drag=Drag} Day'
-        idahobit: 'International Day Against {/terminology#homophobia=Homophobia}, {/terminology#transphobia=Transphobia} and {/terminology#biphobia=Biphobia}'
+        idahobit: 'Den internationella dagen emot homofobi, transfobin och bifobi'
         intersex_day: '{/terminology#intersex=Intersex} Awareness Day'
         intersex_remembrance_day: '{/terminology#intersex=Intersex} Day of Remembrance'
         lesbian_day: 'International {/terminology#lesbian=Lesbian} Day'
@@ -920,13 +950,13 @@ calendar: # TODO
         lgbtq_stem: 'LGBTQ+ STEM Day'
         trans_depathologization: 'International Day of Action for Trans Depathologization'
         lgbti_book_day: 'International LGBTI Book Day'
-        human_rights_day: 'Human Rights Day'
+        human_rights_day: 'Internationella dagen för mänskliga rättigheter'
         nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents Day'
         trans_prisoner: '{/terminology#transgender=Transgender} Prisoner Day of Action and Solidarity'
         xenogender_day: 'Xenogender Visibility Day'
         genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
         genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
-        aids_day: 'World AIDS Day'
+        aids_day: 'Världsaidsdagen'
         tolerance_day: 'International Day of Tolerance'
         social_justice_day: 'World Day of Social Justice'
         stonewall_day: 'Anniversary of Stonewall Riots'
@@ -941,10 +971,10 @@ calendar: # TODO
         transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
         asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
         bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
-        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
+        holocaust_remembrance_day: 'Förintelsens minnesdag'
         family_equality_day: 'International Family Equality Day'
         aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
-        black_ribbon_day: 'Black Ribbon Day'
+        black_ribbon_day: 'Europeisk minnesdag för stalinismens och nazismens offer'
         black_queer_week: 'Black {/terminology#queer=Queer} History Week'
         mena_lesbian_day: 'Middle Eastern and North African {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
