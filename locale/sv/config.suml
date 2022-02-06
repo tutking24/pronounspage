@@ -10,11 +10,11 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'Omväxlande formulär'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
+            Många ickebinära människor använder mer än en omväxlande formulär
+            och är okej med att bli tilltalade med vilken som helst.
+            gillar när andra växlar mellan de formulären när man pratar om dem.
         examples: ['han&hon', 'han&hen', 'hon&hen']
     null: false
     emoji: false
@@ -56,16 +56,16 @@ terminology:
     enabled: true
     published: true
     categories:
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
-        - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
+        - 'sexuella läggningar'
+        - 'romantiska läggningar'
+        - 'tertiära läggningar'
+        - 'kön'
+        - 'könsuttryck'
+        - 'relations modell'
+        - 'språk'
+        - 'attraktion'
+        - 'politik'
+        - 'fördomar'
 
     route: 'terminologi'
 
@@ -130,22 +130,9 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['person', 'man', 'kvinna', 'dam', 'snubbe', 'kille', 'tjej', 'kompis', 'bror', 'syster', 'syskon']
+        - ['snygg', 'stilig', 'söt', 'het', 'sexig']
+        - ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
     flags:
         defaultPronoun: 'hen'
 
