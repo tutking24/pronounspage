@@ -110,7 +110,7 @@ sources:
         extra: 'Mer information (översättare, namn på tidsskrift, …)'
         year: 'Utgivningsår (av den Svenska versionen)'
         fragments: 'fragment'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
+        fragmentsInfo: 'Du kan markera de relevanta pronomen genom att använda den kvadratformade kategorin: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
         comment: 'Kommentar'
         link: 'Länken till innehållet'
         thanks: 'Tack för att du bidrar!'
@@ -138,7 +138,7 @@ nouns:
             När du hänvisar till någon vars könsidentitet du inte känner till,
             till en grupp av människor med blandade könstillhörigheter,
             och särskilt till ickebinära människor som explicit föredrar dem,
-            bör du använda de neutrala formerna.
+            bör du använda de neutrala formulären.
         - >
             Nedan presenteras en ordbok över ord att hålla utkik efter.
             Du kan bidra och lägga till egna förslag.
@@ -174,9 +174,9 @@ nouns:
 
     image: 'Bild'
 
-community:  # TODO
-    header: 'Community'
-    headerLong: 'Queer community'
+community:
+    header: 'Gemenskap'
+    headerLong: 'Queer gemenskap'
 
 terminology:
     header: 'Terminologi'
@@ -245,7 +245,7 @@ faq:
             answer:
                 - >
                     Du kan fråga! Ja, det kanske är lite obekvämt, men ju mer vi gör det, desto mer normalt blir det.
-                     Om vi kan fråga om någons namn borde vi också kunna fråga om någon pronomen.
+                     Om vi kan fråga om någons namn borde vi också kunna fråga om någons pronomen.
                 - >
                     (Men snälla, fråga inte "är du tjej eller kille?”.
                     Denna fråga indikerar att det bara finns två korrekta svar,
@@ -324,61 +324,61 @@ faq:
                     Pronomen ≠ könsidentitet.
                     Din identitet kommer inte att drastiskt förändras bara för att du blev förvirrad en gång när någon kallade dig "hen".
                     Oroa dig inte. Experimentera. Hitta vad som passar dig bäst.
-        preferred-pronouns:  # TODO
+        preferred-pronouns:
             question: 'Varför borde jag inte säga “föredragna pronomen”?'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    För denna fras påstår att någons pronomen är bara påhitt.
+                    Ifall någon bara “föredrar” att bli kallad för henne, så kommer väl han inte känna sig så dåligt, ifall jag kallar honom för han, eller hur?
+                    De ser ju ut som en kille, trots allt, så det kommer att vara mycket enklare för mig!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
-        gender-pronouns:  # TODO
-            question: 'Why shouldn''t I say “gender pronouns”?'
+                    Nej! Det är våra pronomen, Inte våra “föredragna pronomen”. Det är vårt namn, inte våra “föredragna namn”.
+                    Ifall du bryr dig om dina trans och ickebinära vänner och de som står dig nära så tilltala dem på rätt sätt.
+        gender-pronouns:
+            question: 'Varför borde jag inte säga “kön pronomen”?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    För att kön ≠ pronomen. Pronomen är bara grammatik.
+                    Ickebinära kan använda binära pronomen, vissa lesbianer använder {/han=han/honom} för kulturella anledningar, osv.
                 - >
-                    Simply say “pronouns”.
+                    Säg helt enkelt “pronomen”.
         flags:
             question: 'Kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
             answer:
                 - >
                     Nej.
                 - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
+                    Att underhålla en hel lista av flaggor och läggningar är en ökande tidskonsumerande arbete för vårt team.
+                    Det är dessutom en utmaning att filtrera ut trolls och vandalism från legitima, hjälpsama individer.
+                    Vi vill inte vara en identitets polis, men vi vill inte spendera all vår tid på att underhålla flagor heller.
+                    They're just a bonus. Detta är ett projekt om språk och pronomen, trots allt, och inte om flaggor. Det är bara en bonus.
                 - >
                     Vi gjorde vårt bästa för att välja listan av flagor som är mest populära
                     and, to our best knowledge, generally accepted.
                     Vi planerar inte att göra listan större eller mindre.
                 - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
+                    Vi är medvetna att några flaggor kanske inte är populära bland några.
+                    (ex. en historik av TERFs som har försökt att ta över termen och göra den transfobisk,
+                    för att den har många förvirrande definitioner,
+                    Eller till och med på grund av att den har aspekter av liv från en mytisk karaktär.)
+                    Vi är queer och trans vi själva, vi bryr oss om våra trans syskon.
+                    Tyvärr så är det verkligen svårt att göra sådana beslut.
+                    när vi får ett meddelande från trans personer som frågar om att få en flagga som de uppriktigt identifierar sig med,
+                    och också från andra trans personer som ber om att få den borttagen för att det skadar trans personer.
+                    Det är inte som att det finns historia för varje läggning är uppenbar eller att det finns en auktoritär källa att kolla upp det på.
+                    Och även ifall queerphobes försöker att göra vissa termer sårande för andra,
+                    så tror vi på denna gemenskapens styrka att ta tillbaka de hatfulla termerna.
                 - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalisms).
-        custom-pronouns:  # TODO
-            question: 'My pronouns aren''t listed'
+                    Ifall du inte gillar en flagga, bara använd den inte.
+                    Ifall din flagga saknas, bara ladda upp den.
+                    (den kommer att bli märkt som användargenererad för att lindra vandalism).
+        custom-pronouns:
+            question: 'Mina pronomen finns inte på listan'
             answer:
                 - >
                     Det finns en generator på hemma-sidan, du kan skapa en länk till vilket set  av pronomen som helst.
                 - >
-                    You can also just list the three forms using slashes, eg. {/hen/henom/hens=hen/henom/hens}
+                    Du kan dessutom skapa en lista av de tre formlerna genom att använda snedstreck, ex. {/hen/henom/hens=hen/henom/hens}
 
 links:
     header: 'Länkar'
@@ -388,7 +388,7 @@ links:
     mediaShort: 'Media'
     media: 'Pronouns.page i median'
 
-    social: 'Social media'
+    social: 'Sociala media'
 
     languageVersions: 'Andra språk översättningar'
 
@@ -396,13 +396,13 @@ people: ~
 
 # optional, but would be nice to have
 english:  # TODO
-    header: 'English'
-    headerLong: 'An overview in English'
-    headerLonger: 'An overview of <language> nonbinary pronouns'
-    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    header: 'Engelska'
+    headerLong: 'En översikt på Engelska'
+    headerLonger: 'En översikt av <language> språkets ickebinära pronomen'
+    description: 'Ifall du inte talar <language>, men är fortfarande intresserad av hur detta språk försöker att klara av den allestädes närvarande cisnormen så har vi förberett en kort översikt av de idèerna på Engelska'
     intro:
         - >
-            A summary in English…
+            En sammanfattning på Engelska..
 
 contact:
     header: 'Kontakt'
@@ -420,35 +420,35 @@ contact:
         member: 'Medlem av kollektivet'
         blog: 'Blogg'
         upcoming: 'Kommande språkversioner'
-        join:  # TODO
-            header: 'Join us!'
+        join:
+            header: 'Gå med oss!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                Bryr du dig om det ickebinära och könsneutrala språket?
+                Vill du hjälpa vårt kollektiv att bidra till det? Coolt!
+                Extra hjälp är alltid välkommen!
+            areasIntro: 'Områden som du skulle kunna hjälpa oss inom är till exempel:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
+                - 'expandera och moderera ordböcker och ordlistor,'
+                - 'expandera och moderera en lista av källor,'
+                - 'skapa grafik och sociala media inlägg,'
+                - 'svara på direkt meddelanden,'
+                - 'moderera profiler ,'
+                - 'skapa en ny språk version,'
+                - 'översätta,'
                 - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
+                - 'skriva blogger,'
+                - 'programmering,'
                 - '…'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                Vissa av dessa områden kräver ett perspektiv från en ickebinär person, andra är inte nödvändigt.
+                Det är därför vi även behöver binära allierade.
+            how: 'Hur går jag med? Skicka till oss och maila till {mailto:contact@pronouns.page=contact@pronouns.page}, som du sedan: '
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+                - 'introducerar dig själv,'
+                - 'länkar ditt pronouns.page profil,'
+                - 'länkar ditt sociala media,'
+                - 'berättar ifall du har någon erfarenheter av att jobba som aktivist,'
+                - 'berättar om vad du skulle vilja hjälpa till med.'
 
 support:
     header: 'Stödja'
@@ -461,10 +461,10 @@ user:
     headerLong: 'Ditt konto'
     tokenExpired: 'Poletten har gått ut. Uppdatera webbsidan och försök igen.'
     login:
-        help: 'Att logga in eller skapa en konto kan du använda din sociala medier eller skriva in ditt e-postadres ner och då bekräfta koden du ska ha fick i ditt e-post inkorgen.'
+        help: 'För att logga in eller skapa ett konto kan du använda dina sociala medier eller skriva in din e-postadress och bekräfta koden du ska ha fått i din e-post inkorg.'
         placeholder: 'E-postadress (eller användarnamn, om du redan är registrerad)'
         action: 'Logga in'
-        emailSent: 'Vi har skickat dig ett e-postmeddelande med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
+        emailSent: 'Vi har skickat ett e-postmeddelande till dig med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
         userNotFound: 'Användaren hittades inte.'
         email:
             subject: 'Din inloggningskod är %code%'
@@ -523,13 +523,13 @@ profile:
     description: 'Beskrivning'
     names: 'Namn'
     pronouns: 'Pronomen'
-    pronounsInfo: >  # TODO
-        Du kan skriv ett <strong>pronomen</strong> (ex. “de” eller “hon/henne”)
+    pronounsInfo: >
+        Du kan skriva ett <strong>pronomen</strong> (ex. “de” eller “hon/henne”)
         eller <strong>länken</strong> (t.ex. “http://en.pronouns.page/e”)
         eller alla formerna (t.ex. “hen/henom/hens”).
-        Keep in mind that <strong>all three forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+        Kom ihåg att <strong>alla tre formerna</strong> är nödvändiga i sådana fall,
+        annars kommer appen bara att gissa vad det är du menar.
+        Du kan även använda {/pronouns#generator=<strong>the generator</strong>} för att fylla ut meningar med anpassade formulär.
     pronounsNotFound: 'Vi kan inte hitta någonting om dessa pronomen!'
     words: 'Orden'
     birthday: 'Födelsedag'
@@ -563,14 +563,14 @@ profile:
     card:
         link: 'Kortbild'
         generate: 'Generera'
-        generating: 'Generation beatbetning… Detta kan ta en lite stund.'
-    empty: 'Detta person har inte skapat inga kort.'
+        generating: 'Generation bearbetning… Detta kan ta en liten stund.'
+    empty: 'Denna person har inte skapat något kort.'
     personal:
         header: 'Din själv'
         description: 'Bara du ser det här'
     language:
         header: 'Språk'
-        description: '@%username%''skort är också tillgänglig på denna språk:'
+        description: '@%username%''s kort är också tillgänglig på dessa språk:'
 
 share: 'Dela'
 
@@ -617,113 +617,112 @@ terms:
     header: 'Användarvillkor'
     lastUpdate: 'Senast uppdaterad'
     consent: 'Genom att registrera dig accepterar du {/terms=Användarvillkoren}.'
-    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
-    #translationDisclaimer: >
-    #    The following text is just an auxiliary translation.
-    #    The only legally binding version of the Terms of Service is the English one, available
-    #    {https://en.pronouns.page/terms=here}.
-    content:  # TODO
+    translationDisclaimer: >
+        Den följande text är en hjälpöversättning.
+        Den enda juridiska bindande version av användarvillkoren är den Engelska versionen, tillgänglig
+        {https://en.pronouns.page/terms=här}.
+    content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
-            who can be contacted via email:
+            Dessa användarvillkor ger dig tillgång till och användningen till tjänsten på webbsidan.
+            <strong>pronouns.page / zaimki.pl</strong> sköts av det “Neutrala Språkets Råd” kollektivet
+            som kan kontaktas via mail:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in our Privacy Policy below.
+            När du använder våra tjänster så godkänner du att ska följa dessa användarvillkor och att du tillåter
+            oss att samla och bearbeta din data som beskriven i vår Integritetspolicy.
         accounts:
-            header: 'Users and accounts'
+            header: 'Användare och konton'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                Du får inte skapa ett konto om du är avstängd från det enligt lagarna i din jurisdiktion.
+                Du får inte heller skapa ett konto om du är under 13 år.
+                Om du är under 16 år behöver du tillåtelsen av din vårdnadshavare för att skapa ett konto.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                När du skapar ett konto hos oss så är det ditt ansvar att skydda autentiseringsmetoden
+                som du använder för att få tillgång till tjänsten (Dvs: lösenordet till ditt mailkonto och/eller sociala medier plattformar).
+                Du godkänner att inte avslöja det till någon annan.
+                Du måste notifiera oss omedelbart om du blir medveten om något inbrott eller obehörig användning på ditt konto.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                We may terminate or suspend your account immediately, without prior notice or liability, Vi får avsluta eller stänga av ditt konto omedelbart utan en förvarning
+                för vilken anledning som helst, inkluderande utan begränsning ifall du bryter villkoren.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                Konton utan några kort eller ingen aktivitet på de senaste 30 dagarna kommer att bli borttagna och deras användarnamn kommer att bli tillgängliga.
         content:
             header: 'Content'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                Inläggen du lägger upp på tjänsten är dina.
+                När du lägger upp det, ger du oss tillgång världen över ett royalty-free licens
+                till att använda, kopiera, reproducera, processa, anpassa, modifiera, publisera, överföra, visa och distribuera ditt innehåll på vilket sätt som helst.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                Vi varken stödjer eller garanterar ärlighet eller säkerhet av inlägg som är upplagt av andra användare av tjänsten,
+                och särskilda länkar till andra externa webbsidor.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                Det är förbjudet att lägga upp på tjänsten något som möjligtvis bryter mot lagen eller kränker de sociala normerna,
+                som följande inkluderande men inte begränsade till:
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
-                queerphobia: 'queerphobia'
-                exclusionism: 'queer exclusionism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
-                childPornography: 'child pornography'
-                unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
-                doxxing: 'sharing of someone else''s personal data'
+                totalitarian: 'spridning av totalitära regimer'
+                hateSpeech: 'hattal'
+                racism: 'rasism'
+                xenophobia: 'xenofobi'
+                homophobia: 'homofobi'
+                transphobia: 'transfobi'
+                enbyphobia: 'enbyfobi'
+                queerphobia: 'queerfobi'
+                exclusionism: 'queer exkludering'
+                misogyny: 'kvinnohat'
+                harassment: 'trakasseri'
+                impersonation: 'personifiering'
+                childPornography: 'barnpornografi'
+                unlawfulConduct: 'olagligt beteende'
+                misinformation: 'felaktig information'
+                doxxing: 'delat någon annans personliga data'
                 spam: 'spam'
                 trolling: 'trolling'
-                advertisement: 'advertisement'
-                copyright: 'copyright or trademark violations'
+                advertisement: 'annonsering'
+                copyright: 'copyright eller varumärkesintrång'
             responsibility: >
-                You are responsible for any Content posted on the Service.
-                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-                If you break the law, we will pass your information to law enforcement agencies.
+                Du är ansvarig för alla inlägg du laddar upp på denna tjänst.
+                Om du bryter dessa användarvillkor så kommer vi med förvarning att ta bort ditt innehåll och vi kanske upphäver din rätt till att använda tjänsten.
+                Om du bryter mot lagen så kommer vi att skicka vidare din information till brottsbekämpande organisationer.
         privacy:
             header: 'Privacy Policy'
             effort: >
                 We make every effort to store your data securely and to ensure that any non-public data we store
                 are not seized by or transferred to any third party, except those trusted parties described below.
             data: >
-                Other than the data that you explicitly post on the Service as Content
-                or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-                no additional private data connected to your account is being stored or processed.
+                Förutom den data som du har lagt upp på tjänsten som inlägg
+                eller delar med oss (ex, OAuth tillgång polletter, ifall du använder sociala inloggningsalternativ),
+                så blir ingen ytterligare personlig data kopplat till ditt konto sparat eller bearbetad.
             editRemoval: >
-                You may edit or remove any Content you have posted on the Service.
+                Du får redigera eller ta bort vilket innehåll som helst som du har laddat upp på tjänsten.
             contact: >
-                When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+                När du kontaktar oss via mail så sparar vi din mailadress för att kunna svara och fråga dig uppföljande frågor.
             cookies: >
-                We only use first-party cookies and local storage to keep you logged in and save your preferences.
+                Vi använder bara första-parti cookies och lokalt utrymme för att hålla dig inloggad och spara dina preferenser.
             matomo: >
-                We use Matomo to track traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-                You can read more about the data it stores
+                Vi använder Matomo för att spåra trafik på webbsidan. Sådan data har ingen koppling till ditt användarnamn och din IP är anonym.
+                Du kan läsa mer om datan den sparar här
                 {https://matomo.org/faq/general/faq_18254/=here}
-                and about the cookies it uses
+                och om cookies den använder här
                 {https://matomo.org/faq/general/faq_146/=here}.
             arc: >
-                We use arc.io to cover the costs of website maintenance without introducing ads.
-                You can read more about them and their privacy policy
+                Vi använder arc.io för att täcka kostnaderna för att underhålla webbplatsen utan reklam.
+                Du kan läsa mer om det och dess integritetspolicy här
                 {https://arc.io/faq=here}.
             hCaptcha: >
-                We use hCaptcha to filter out bots and prevent DDoS attacks.
-                You can read their privacy policy
+                Vi använder hCaptcha för att filtrera ut bots och för att hindra DDoS attacker.
+                Du kan läsa om deras integritetspolicy här
                 {https://www.hcaptcha.com/privacy=here}.
             logsBackups: >
-                Logs and backups are stored for no longer than 18 months.
+                Loggar och säkerhetskopior sparas inte längre än 18 månader.
             gdpr: >
-                Your personal data are protected by the GDPR, which means you have the right
-                to see, correct, update and remove the data we store about you.
+                Din personliga data är skyddad av GDPR, vilket betyder att du har rätten
+                till att se, rätta, uppdatera och ta bort data vi sparar om dig.
         closing:
             header: 'General'
             jurisdiction: >
-                The applicable law is the law of the Kingdom of Netherlands.
+                Den tillämpliga lagen är lagen av Kungadömet av Nederländerna.
             changes: >
-                We reserve the right to modify these Terms of Service at any time.
-                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+                Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst
+                Ifall en förändring är materiell kommer vi att förse åtminstone en förvarning på 30 dagar innan användarvillkoren träder i kraft
 
 admin:
     header: 'Adminpanel'
@@ -745,7 +744,7 @@ table:
 api:
     header: 'Offentligt API'
     example: 'Exempel'
-    query: 'Frågesträngsparametrar'
+    query: 'Frågesträng Parametrar'
 
 quotation:
     start: '”'
@@ -775,23 +774,23 @@ mode:
     automatic: 'Automatiskt'
     light: 'Ljust läge'
 
-ban: # TODO
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
-    termsIntro: 'According to our {/termes=Terms of Service}:'
+ban:
+    reason: 'Anledning till bannlysning'
+    visible: '(detta kommer att synas för användaren)'
+    terms: 'Termer av regler brutna (obligatorisk)'
+    action: 'Bannlys denna person'
+    confirm: 'Är du säker på att du vill bannlysa @%username%?'
+    header: 'Du är bannlyst. Din profil kommer inte att visas för någon.'
+    banned: 'Bannlyst'
+    termsIntro: 'Enligt vår {/anvandarvillkor=Användarvillkor}:'
 
 report:
     action: 'Rapportera ovett'
-    comment: 'Vad är felet med profilen'
+    comment: 'Vad är felet med profilen?'
     confirm: 'Är du säker på att du vill rapportera @%username%?'
     sent: 'Det har fick skickat till oss. Tack för hjälpen!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'  # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'  # TODO
+    terms: 'Var snäll och håll reda på vad som är förbjudet enligt vår {/anvandarvillkor=Användarvillkor}'
+    hoarding: 'Var snäll och inte anmäl en användare för “användar hamstring”. Vi tar bort konton utan kort efter en tid av inaktivitet automatiskt. Din anmälan kommer inte att göra det snabbare.'
 
 flags:
     Abroromantic: 'Abroromantisk'
@@ -825,7 +824,7 @@ flags:
     Demiromantic: 'Demiromantisk'
     Demisexual: 'Demisexuell'
     Diamoric: 'Diamorös'
-    Enbian: 'Enbian{inflection}'
+    Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
     Femme: 'Femme'
     Gay: 'Gay'
@@ -848,7 +847,7 @@ flags:
     LGBTQ: 'HBTQ'
     Leather_Pride: 'Läder pride'
     Lesbian: 'Lesbian'
-    Lesbiromantic: 'Lesbiromantisk{inflection_c}'
+    Lesbiromantic: 'Lesbiromantisk'
     Maverique: 'Maverique'
     Monoamorous: 'Monoamorös'
     Monogamous: 'Monogam'
@@ -888,39 +887,39 @@ flags:
 
 # optional, but would be nice to have
 calendar: # TODO
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
+    header: 'Kalender'
+    headerLong: 'Queer Kalender'
     date: '%date% %year%'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
+        1: 'Januari'
+        2: 'Februari'
+        3: 'Mars'
         4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
+        5: 'Maj'
+        6: 'Juni'
+        7: 'Juli'
+        8: 'Augusti'
         9: 'September'
-        10: 'October'
+        10: 'Oktober'
         11: 'November'
         12: 'December'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
+        1: 'Januari %day%'
+        2: 'Februari %day%'
+        3: 'Mars %day%'
         4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
+        5: 'Maj %day%'
+        6: 'Juni %day%'
+        7: 'Juli %day%'
+        8: 'Augusti %day%'
         9: 'September %day%'
-        10: 'October %day%'
+        10: 'Oktober %day%'
         11: 'November %day%'
         12: 'December %day%'
     events:
         pride_month: '{/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
+        zaimki_birthday: 'Pronouns.page födelsedag'
         agender_day: '{/terminology#agender=Agender} Pride Day '
         asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
@@ -987,11 +986,11 @@ calendar: # TODO
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-    banner: 'We''re celebrating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    banner: 'Vi firar'
+    celebrating_custom: 'firas'
+    celebrating_day: 'firas på'
+    celebrating_week: 'firas på'
+    celebrating_month: 'firas på'
     image:
         header: 'Ladda ned en bild'
     view:
