@@ -403,45 +403,39 @@ contact:
         members: 'Действующие участни_цы'
         member: 'Состоит в коллективе'
         upcoming: 'Предстоящие языковые версии'
-        join:
-            header: 'Join us!'
-            encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
-            areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
-            allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
-            application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
-            warning: >
-                At the moment we seem to have enough people helping with English and with moderation,
-                so keep in mind we might not have much work to give you, if that's what you want to help with.
-                But we could still need you in other areas (technical work, design, graphics, etc.)
-                and other languages (including ones that are already supported, but need eg. translations of new features).
+        join:   
+        header: 'Join us!'
+    encouragement: >
+        Заботишься о небинарных людях и гендерно-нейтральном языке7
+        Хочешь помочь коллективу в нашем деле? Замечательно!
+        Лишняя помощь очень приветствуется!
+    areasIntro: 'К примеру, области, где может быть полезна ваша помощь:'
+    areas:
+        - 'создание и модерирование глоссариев и словарёв;'
+        - 'создание и модерирование списка источников;'
+        - 'создание постов в медиа и социальных сетях;'
+        - 'ответы на сообщения в директе;'
+        - 'модераторская работа;'
+        - 'создание новых языковых версий;'
+        - 'перевод;'
+        - 'координировать процесс добавления новых языковых версий;'
+        - 'написание постов в блог;'
+        - 'программирование;'
+        - 'и другие разные области.'
+    allies: >
+        Некоторые из этих областей требуют особого подхода и небинарного опыта, в отличие от остальных,
+        поэтому мы также приглашаем бинарных союзни_ц.
+    how: 'Как к нам присоединиться? {mailto:contact@pronouns.page=Напишите нам на почту, contact@pronouns.page}. В письме следует:
+        - 'представиться, рассказать о себе;'
+        - 'оставить ссылку на профиль на нашем сайте;'
+        - 'оставить ссылку на ваши социальные сети;'
+        - 'рассказать об уже имеющемся опыте активистской работы;'
+        - 'и рассказать, где конкретно вы желаете помочь нам.'
 
 support:
     header: 'Поддержка'
     description: >
-        Если хотите скинуться на сервер, домены, стикеры и т. д. или просто купить нам пива,
+        Если хотите скинуться на сервер, домены, стикеры и т. д., или просто купить нам пива,
         перейдите по одной из ссылок:
 
 user:
@@ -708,7 +702,7 @@ terms:
         closing:
             header: 'Общее'
             jurisdiction: >
-                Применяемый закон - закон Королевства Нидерландов.
+                Применяемый закон — закон Королевства Нидерландов.
             changes: >
                 Мы сохраняем за собой право редактировать Условия предоставления услуг в любое время.
                 Если изменения существенные, мы уведомим вас об этом за 30 календарных дней до того, как новые Условия вступят в силу.
