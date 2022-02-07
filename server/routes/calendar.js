@@ -48,6 +48,20 @@ const getEventName = (name) => {
     return name;
 }
 
+const buildMessage = (events, locale, day, link) => {
+    if (events.length === 0) {
+        return null;
+    }
+
+    let message = `[${locale.name}] ${day.toString()}\n\n${translations.calendar.banner}:\n`;
+    for (let event of events) {
+        message += ` - ${event}\n`;
+    }
+    message += `\n${link}`;
+
+    return message;
+}
+
 const eventsSummary = (day, locale) => {
     const eventsRaw = calendar.getCurrentYear().eventsByDate[day.toString()];
 
@@ -57,14 +71,20 @@ const eventsSummary = (day, locale) => {
     let message = null;
     let events = [];
     if (eventsRaw !== undefined && eventsRaw.length > 0) {
-        message = `[${locale.name}] ${day.toString()}\n\n${translations.calendar.banner}:\n`;
         for (let event of eventsRaw) {
-            const name = getEventName(event.name);
-            message += ` - ${name}\n`;
-            events.push(name);
+            events.push(getEventName(event.name));
             delete event.daysMemoise;
         }
-        message += `\n${link}`;
+    }
+    let eventsForMessage = [...events];
+    while (true) {
+        message = buildMessage(eventsForMessage, locale, day, link);
+
+        if (message === null || message.length <= 280) {
+            break;
+        } else {
+            eventsForMessage = eventsForMessage.slice(0, eventsForMessage.length - 1);
+        }
     }
 
     return {
