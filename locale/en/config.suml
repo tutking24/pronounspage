@@ -277,6 +277,10 @@ links:
             url: 'https://pronoundb.org/'
             headline: 'PronounDB'
             extra: ' – browser extensions that display people''s pronouns on various platforms'
+        -
+            icon: 'sticky-note'
+            url: 'https://leapsports.org/files/4225-Non-Binary%20Inclusion%20in%20sport%20Booklet.pdf'
+            headline: 'Non-binary inclusion in sport'
 
     zine:
         enabled: false
