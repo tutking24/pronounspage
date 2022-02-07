@@ -23,6 +23,13 @@
                 </li>
                 <li class="dropdown-divider"></li>
                 <li>
+                    <a href="https://pronouns.page" class="dropdown-item small">
+                        <Logo class="mb-1"/>
+                        pronouns.page
+                    </a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <li>
                     <LocaleLink locale="en" link="/new-version" class="dropdown-item small">
                         <Icon v="plus"/>
                         <T>localise.shorter</T>
