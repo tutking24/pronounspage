@@ -5,7 +5,7 @@ module.exports = [
     new Event('Mois de l\'histoire des LGBT (Canada/USA/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
 
     // --- static date ---
-    new Event('Journée du triangle rose (Canada)', '_hrc', 2, day(14), EventLevel.Day),
+    new Event('Journée du triangle rose (Canada)', null, 2, day(14), EventLevel.Day),
     new Event('Journée de le mariage pour tous (Canada)', '_hrc', 7, day(20), EventLevel.Day),
     new Event('Journée de le mariage pour tous (France)', '_hrc', 5, day(18), EventLevel.Day),
     new Event('Journée de le mariage pour tous (Belgique)', '_hrc', 6, day(1), EventLevel.Day),
