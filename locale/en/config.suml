@@ -90,7 +90,7 @@ pronouns:
         example:
             - 'Person A uses mirror pronouns.'
             - 'Person B uses {/she=she/her}, so when she talks about person A, she uses “she/her” to refer to her.'
-            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fea uses either ze/hir or fæ/fær to refer to fær.'
+            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fæ uses either ze/hir or fæ/fær to refer to fær.'
     slashes: true
     others: 'Other pronouns'
 
