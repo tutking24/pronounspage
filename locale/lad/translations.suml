@@ -96,6 +96,7 @@ sources:
         Series: 'Serias'
         Song: 'Muzika'
         Poetry: 'Poezia'
+        Comics: 'Komiks'        
         Game: 'Djugos'
         Other: 'Otros'
     submit:
