@@ -10,12 +10,12 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Omväxlande formulär'
+        name: 'Omväxlande former'
         description: >
-            Många ickebinära människor använder mer än en omväxlande formulär
-            och är okej med att bli tilltalade med vilken som helst.
-            gillar när andra växlar mellan de formulären när man pratar om dem.
-        examples: ['han&hon', 'han&hen', 'hon&hen']
+            Många icke-binära personer använd mer än en form omväxlande
+            och är ok med att bli kallad vilken som helst ut av dem.
+            Vissa gillar när andra växlar mellan dessa former när de pratar om dem.
+        examples: ['hon&han', 'han&hen', 'hon&hen']
     null: false
     emoji: false
     slashes: true
