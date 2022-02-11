@@ -313,4 +313,9 @@
             font-size: $small-font-size;
         }
     }
+    @include media-breakpoint-up('md') {
+        figure {
+            min-width: 20rem;
+        }
+    }
 </style>
