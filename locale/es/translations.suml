@@ -980,6 +980,7 @@ calendar:
         parents_day: 'Día de les Xadres Expansivo de Género'
         hiv_testing_day: 'Día Internacional de la Prueba del VIH'
         freedressing_day: 'Día de la Libertad de Vestimenta'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
