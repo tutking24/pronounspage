@@ -57,6 +57,7 @@ module.exports = [
     new Event('suicide_prevention_day', '_yellow-ribbon', 9, day(10), EventLevel.Day),
     new Event('hiv_testing_day', '_red-ribbon', 6, day(27), EventLevel.Day, ['aids']),
     new Event('freedressing_day', 'Genderqueer', 12, day(3), EventLevel.Day, ['genderqueer', 'gender non-conforming']),
+    new Event('sexual_health_day', null, 2, day(12), EventLevel.Day),
 
     // --- dynamic date ---
 
