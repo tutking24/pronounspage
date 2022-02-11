@@ -1786,6 +1786,7 @@ calendar:
         hiv_testing_day: 'Międzynarodowy Dzień Testów na HIV'
         freedressing_day: 'Dzień Swobodnego Ubioru'
         sexual_health_day: 'Dzień Świadomości nt. Zdrowia Seksualnego i Reprodukcyjnego'
+        world_sexual_health_day: 'Światowy Dzień Zdrowia Seksualnego'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
