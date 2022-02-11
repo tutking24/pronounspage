@@ -950,6 +950,7 @@ calendar:
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
         sexual_health_day: 'Dag van de seksuele- en voortplantingsgezondheid'
+        world_sexual_health_day: 'Internationale dag van de seksuele gezondheid'
     banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
     celebrating_day: 'wordt gevierd op:'
