@@ -94,6 +94,7 @@ sources:
         Series: 'シリーズ'
         Song: '音楽'
         Poetry: '詩'
+        Comics: '漫画'        
         Game: 'ゲーム'
         Other: 'その他'
     submit:
