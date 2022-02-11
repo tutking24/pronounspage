@@ -982,6 +982,7 @@ calendar:
         hiv_testing_day: 'Día Internacional de la Prueba del VIH'
         freedressing_day: 'Día de la Libertad de Vestimenta'
         sexual_health_day: 'Día de la Concientización sobre la Salud Sexual y Reproductiva'
+        world_sexual_health_day: 'Día Mundial de la Salud Sexual'
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
