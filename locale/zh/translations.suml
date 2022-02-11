@@ -921,6 +921,7 @@ calendar: # TODO
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
