@@ -252,11 +252,19 @@ nouns:
                 Używają obecnych w normatywnej polszczyźnie końcówek neutralnych,
                 takich jak „-rze”, „-cze”, „-o”, czy zapożyczonej z łaciny „-um”.
             - >
-                Formy te pasują gramatycznie do {/ono=form neutralnych}, np. „moje piękne partnerze przyszło do domu”.
+                Formy te pasują gramatycznie do {/ono=form rodzaju neutralnego}, np. „moje piękne partnerze przyszło do domu”.
             - >
                 Poniżej przedstawiamy tworzony przez społeczność słownik rzeczowników
                 z wyszczególnieniem ich formy męskiej, żeńskiej i neutralnej.
                 Podane wzory odmiany są normatywne, na podstawie słów z tymi samymi końcówkami.
+            - >
+                Jest to <em>słownik form potencjalnych</em>.
+                Niektóre są używane względnie często w społeczności osób niebinarnych
+                (przy paru podajemy nawet przykłady użycia w tekstach kultury),
+                podczas gdy inne – rzadko, o ile wcale.
+                Poniższy słownik nie jest źródłem preskryptywnym ani nawet deskryptywnym –
+                prosimy traktować go raczej jako zbiór propozycji (źródło <em>prospektywne</em>).
+                {/blog/etymologia-odmiana-neutratywów=Tworzymy je poprzez analogię do normatywnych słów w rodzaju nijakim.}
         extended:
             header: 'Przykład odmiany'
         alt:
