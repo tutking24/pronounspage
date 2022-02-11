@@ -94,6 +94,7 @@ sources:
         Series: 'シリーズ'
         Song: '音楽'
         Poetry: '詩'
+        Comics: '漫画'        
         Game: 'ゲーム'
         Other: 'その他'
     submit:
@@ -955,6 +956,8 @@ calendar:
         parents_day: 'ジェンダー•エクスパンシヴ•パレンツ•デー'
         hiv_testing_day: '国際HIV検査デー'
         freedressing_day: 'フリードレッシング認知デー'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        world_sexual_health_day: 'World Sexual Health Day' # TODO
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''

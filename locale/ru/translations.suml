@@ -85,6 +85,7 @@ sources:
         Series: 'Сериалы'
         Song: 'Музыка'
         Poetry: 'Поэзия'
+        Comics: 'Комиксы'        
         Game: 'Видеоигры'
         Other: 'Другие'
     submit:
@@ -1004,6 +1005,8 @@ calendar:
         parents_day: 'День родителя без привязки к гендеру'
         hiv_testing_day: 'День тестирования на ВИЧ'
         freedressing_day: 'День свободного гардероба'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        world_sexual_health_day: 'World Sexual Health Day' # TODO
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
