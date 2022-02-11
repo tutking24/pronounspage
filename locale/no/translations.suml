@@ -94,6 +94,7 @@ sources:
         Series: 'Serier'
         Song: 'Musikk'
         Poetry: 'Dikt'
+        Comics: 'Tegneserien'        
         Game: 'Spill'
         Other: 'Andre'
     submit:
