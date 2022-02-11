@@ -973,6 +973,7 @@ calendar:
         parents_day: 'Journée inclusive des parents'
         hiv_testing_day: 'Journée internationale du dépistage du VIH'
         freedressing_day: 'Journée de sensibilité à l''accoutrement libre'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
