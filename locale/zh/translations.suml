@@ -92,6 +92,7 @@ sources:
         Series: '電視劇'
         Song: '音樂'
         Poetry: '詩歌'
+        Comics: '漫畫'        
         Game: '遊戲'
         Other: '其他'
     submit:
