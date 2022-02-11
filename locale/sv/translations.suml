@@ -351,10 +351,10 @@ faq:
                     Att underhålla en hel lista av flaggor och läggningar är en ökande tidskonsumerande arbete för vårt team.
                     Det är dessutom en utmaning att filtrera ut trolls och vandalism från legitima, hjälpsama individer.
                     Vi vill inte vara en identitets polis, men vi vill inte spendera all vår tid på att underhålla flagor heller.
-                    They're just a bonus. Detta är ett projekt om språk och pronomen, trots allt, och inte om flaggor. Det är bara en bonus.
+                    Detta är ett projekt om språk och pronomen, trots allt, och inte om flaggor. De är bara en bonus.
                 - >
-                    Vi gjorde vårt bästa för att välja listan av flagor som är mest populära
-                    and, to our best knowledge, generally accepted.
+                    Vi har gjort vårt bästa för att välja en lista av flagor som är mest känd bland människor
+                    och såsom vi uppfattar det, är allmänt accepterat.
                     Vi planerar inte att göra listan större eller mindre.
                 - >
                     Vi är medvetna att några flaggor kanske inte är populära bland några.
@@ -369,8 +369,8 @@ faq:
                     Och även ifall queerphobes försöker att göra vissa termer sårande för andra,
                     så tror vi på denna gemenskapens styrka att ta tillbaka de hatfulla termerna.
                 - >
-                    Ifall du inte gillar en flagga, bara använd den inte.
-                    Ifall din flagga saknas, bara ladda upp den.
+                    Ifall du inte gillar en flagga, använd den inte.
+                    Ifall din flagga saknas, ladda upp den bara.
                     (den kommer att bli märkt som användargenererad för att lindra vandalism).
         custom-pronouns:
             question: 'Mina pronomen finns inte på listan'
@@ -395,25 +395,25 @@ links:
 people: ~
 
 # optional, but would be nice to have
-english:  # TODO
-    header: 'Engelska'
-    headerLong: 'En översikt på Engelska'
-    headerLonger: 'En översikt av <language> språkets ickebinära pronomen'
-    description: 'Ifall du inte talar <language>, men är fortfarande intresserad av hur detta språk försöker att klara av den allestädes närvarande cisnormen så har vi förberett en kort översikt av de idèerna på Engelska'
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Swedish nonbinary pronouns'
+    description: 'If you don''t speak Swedish, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
     intro:
         - >
-            En sammanfattning på Engelska..
+            A summary in English…
 
 contact:
     header: 'Kontakt'
     authors: 'Författare till webbplatsen'
     team:
-        name: '“Neutral Language Council” kollektivet'
+        name: '“Neutral Språkets Råd” kollektivet'
         nameShort: 'Kollektivet'
         description: >
             Vi är en queer kollektivet dedikerad till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
-            könsneutral och nonbinary språk.
-            Vi också stödjer handlingar mot jämlikhet och sociala rättvisa.
+            könsneutral och ickebinärt språk.
+            Vi stödjer också handlingar mot jämlikhet och social rättvisa.
         extra: []
         logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
@@ -435,7 +435,7 @@ contact:
                 - 'moderera profiler ,'
                 - 'skapa en ny språk version,'
                 - 'översätta,'
-                - 'coordinating the process of adding language versions,'
+                - 'koordinera processen av att lägga till andra språkversioner,'
                 - 'skriva blogger,'
                 - 'programmering,'
                 - '…'
@@ -444,11 +444,11 @@ contact:
                 Det är därför vi även behöver binära allierade.
             how: 'Hur går jag med? Skicka till oss och maila till {mailto:contact@pronouns.page=contact@pronouns.page}, som du sedan: '
             application:
-                - 'introducerar dig själv,'
-                - 'länkar ditt pronouns.page profil,'
-                - 'länkar ditt sociala media,'
-                - 'berättar ifall du har någon erfarenheter av att jobba som aktivist,'
-                - 'berättar om vad du skulle vilja hjälpa till med.'
+                - 'introducera dig själv,'
+                - 'länka ditt pronouns.page profil,'
+                - 'länka ditt sociala media,'
+                - 'berätta ifall du har någon erfarenheter av att jobba som aktivist,'
+                - 'berätta om vad du skulle vilja hjälpa till med.'
 
 support:
     header: 'Stödja'
@@ -482,7 +482,7 @@ user:
             header: 'Användarnamn'
             action: 'Ändra'
             invalid: 'Användarnamn måste vara mellan 4 och 16 karaktär lång och kan bara innehålla siffror, bokstäver, punkter, bindestreck och understreck.'
-            taken: 'Det här användarnamnet är taget.'
+            taken: 'Det här användarnamnet är redan taget.'
         changeEmail:
             header: 'E-postadress'
             action: 'Ändra'
@@ -509,11 +509,11 @@ user:
         recovery:
             header: 'Återställningskoder'
             save: >
-                Spara denna koder i en säker plats.
-                Du ska få använder dem att gå förbi MFA om du glömma din autentiseringsenhet.
+                Spara dessa koder på en säker plats.
+                Du ska använda dem för att gå förbi MFA om du har glömt din autentiseringsenhet.
             saved: 'Okej, jag har sparade dem!'
             enter: 'Skriva in återställningskod'
-        cancel: 'Avbryta login'
+        cancel: 'Avbryt login'
         enabled: 'Aktiverad'
         enable: 'Aktivera MFA'
         disable: 'Inaktivera MFA'
@@ -551,12 +551,12 @@ profile:
     editor:
         header: 'Kortredigerare'
         save: 'Spara ditt kort'
-        defaults: 'Återställ default version'
+        defaults: 'Återställ till standard versionen'
         propagate: 'Kopiera detta kort till ditt andra kort på alla språk'
     opinion:
         yes: 'Ja'
         jokingly: 'Skämtsamt'
-        close: 'Bara om vi är vänner'
+        close: 'Bara om vi är nära'
         meh: 'Okej'
         no: 'Nej'
     bannerButton: 'Skapa ett kort'
@@ -618,7 +618,7 @@ terms:
     lastUpdate: 'Senast uppdaterad'
     consent: 'Genom att registrera dig accepterar du {/terms=Användarvillkoren}.'
     translationDisclaimer: >
-        Den följande text är en hjälpöversättning.
+        Den följande text är en hjälp översättning.
         Den enda juridiska bindande version av användarvillkoren är den Engelska versionen, tillgänglig
         {https://en.pronouns.page/terms=här}.
     content:
@@ -627,7 +627,7 @@ terms:
             <strong>pronouns.page / zaimki.pl</strong> sköts av det “Neutrala Språkets Råd” kollektivet
             som kan kontaktas via mail:
         consent: >
-            När du använder våra tjänster så godkänner du att ska följa dessa användarvillkor och att du tillåter
+            När du använder våra tjänster så godkänner du att du ska följa dessa användarvillkor och att du tillåter
             oss att samla och bearbeta din data som beskriven i vår Integritetspolicy.
         accounts:
             header: 'Användare och konton'
@@ -641,12 +641,12 @@ terms:
                 Du godkänner att inte avslöja det till någon annan.
                 Du måste notifiera oss omedelbart om du blir medveten om något inbrott eller obehörig användning på ditt konto.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability, Vi får avsluta eller stänga av ditt konto omedelbart utan en förvarning
+                Vi får avsluta eller stänga av ditt konto omedelbart utan en förvarning
                 för vilken anledning som helst, inkluderande utan begränsning ifall du bryter villkoren.
             inactivity: >
-                Konton utan några kort eller ingen aktivitet på de senaste 30 dagarna kommer att bli borttagna och deras användarnamn kommer att bli tillgängliga.
+                Konton utan några kort eller som har varit inaktiva på de senaste 30 dagarna kommer att bli borttagna och deras användarnamn kommer att bli tillgängliga.
         content:
-            header: 'Content'
+            header: 'Inlägg'
             ownership: >
                 Inläggen du lägger upp på tjänsten är dina.
                 När du lägger upp det, ger du oss tillgång världen över ett royalty-free licens
@@ -675,7 +675,7 @@ terms:
                 misinformation: 'felaktig information'
                 doxxing: 'delat någon annans personliga data'
                 spam: 'spam'
-                trolling: 'trolling'
+                trolling: 'trollning'
                 advertisement: 'annonsering'
                 copyright: 'copyright eller varumärkesintrång'
             responsibility: >
@@ -683,10 +683,10 @@ terms:
                 Om du bryter dessa användarvillkor så kommer vi med förvarning att ta bort ditt innehåll och vi kanske upphäver din rätt till att använda tjänsten.
                 Om du bryter mot lagen så kommer vi att skicka vidare din information till brottsbekämpande organisationer.
         privacy:
-            header: 'Privacy Policy'
+            header: 'Integritetspolicy'
             effort: >
-                We make every effort to store your data securely and to ensure that any non-public data we store
-                are not seized by or transferred to any third party, except those trusted parties described below.
+                Vi ser till att vi sparar din data säkert och försäkrar att all personlig data
+                blir inte beslagtagen eller skickat till en utomstående, förutom de betrodda partierna beskrivna här
             data: >
                 Förutom den data som du har lagt upp på tjänsten som inlägg
                 eller delar med oss (ex, OAuth tillgång polletter, ifall du använder sociala inloggningsalternativ),
@@ -699,29 +699,29 @@ terms:
                 Vi använder bara första-parti cookies och lokalt utrymme för att hålla dig inloggad och spara dina preferenser.
             matomo: >
                 Vi använder Matomo för att spåra trafik på webbsidan. Sådan data har ingen koppling till ditt användarnamn och din IP är anonym.
-                Du kan läsa mer om datan den sparar här
-                {https://matomo.org/faq/general/faq_18254/=here}
-                och om cookies den använder här
-                {https://matomo.org/faq/general/faq_146/=here}.
+                Du kan läsa mer om datan den sparar
+                {https://matomo.org/faq/general/faq_18254/=här}
+                och om cookies den använder
+                {https://matomo.org/faq/general/faq_146/=här}.
             arc: >
                 Vi använder arc.io för att täcka kostnaderna för att underhålla webbplatsen utan reklam.
                 Du kan läsa mer om det och dess integritetspolicy här
                 {https://arc.io/faq=here}.
             hCaptcha: >
                 Vi använder hCaptcha för att filtrera ut bots och för att hindra DDoS attacker.
-                Du kan läsa om deras integritetspolicy här
-                {https://www.hcaptcha.com/privacy=here}.
+                Du kan läsa om deras integritetspolicy
+                {https://www.hcaptcha.com/privacy=här}.
             logsBackups: >
                 Loggar och säkerhetskopior sparas inte längre än 18 månader.
             gdpr: >
                 Din personliga data är skyddad av GDPR, vilket betyder att du har rätten
                 till att se, rätta, uppdatera och ta bort data vi sparar om dig.
         closing:
-            header: 'General'
+            header: 'Övrigt'
             jurisdiction: >
-                Den tillämpliga lagen är lagen av Kungadömet av Nederländerna.
+                Den tillämpade lagen är lagen av Kungadömet av Nederländerna.
             changes: >
-                Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst
+                Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst.
                 Ifall en förändring är materiell kommer vi att förse åtminstone en förvarning på 30 dagar innan användarvillkoren träder i kraft
 
 admin:
@@ -924,7 +924,7 @@ calendar: # TODO
         asexuality_day: 'International {/terminologi#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminologi#bisexual=Bisexuality} Day'
         drag_day: '{/terminologi#drag=Drag} Day'
-        idahobit: 'Den internationella dagen emot homofobi, transfobin och bifobi'
+        idahobit: 'Internationella dagen emot homofobi, transfobin och bifobi'
         intersex_day: '{/terminologi#intersex=Intersex} Awareness Day'
         intersex_remembrance_day: '{/terminologi#intersex=Intersex} Day of Remembrance'
         lesbian_day: 'International {/terminologi#lesbian=Lesbian} Day'
@@ -940,7 +940,7 @@ calendar: # TODO
         bisexual_week: '{/terminologi#bisexual=Bisexual} Awareness Week'
         pronouns_day: 'Pronouns Day'
         trans_week: '{/terminologi#transgender=Trans} Awareness Week'
-        trans_parent_day: '{/terminologi#transgender=Trans} Parent Day'
+        trans_parent_day: 'Transföräldrars dag'
         nonbinary_week: '{/terminologi#nonbinary=Nonbinary} Awareness Week'
         nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
         polyamory_day: '{/terminologi#polyamory=Polyamory} Day'
@@ -957,7 +957,7 @@ calendar: # TODO
         genderfluid_day: '{/terminologi#genderfluid=Genderfluid} Visibility Day'
         aids_day: 'Världsaidsdagen'
         tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'World Day of Social Justice'
+        social_justice_day: 'Världsdagen för social rättvisa'
         stonewall_day: 'Anniversary of Stonewall Riots'
         domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
         polysexual_day: '{/terminologi#polysexual=Polysexual} & {/terminologi#polyromantic=Polyromantic} Visibility Day'
@@ -978,8 +978,8 @@ calendar: # TODO
         mena_lesbian_day: 'Middle Eastern and North African {/terminologi#lesbian=Lesbian} and {/terminologi#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'World Suicide Prevention Day'
-        suicide_prevention_month: 'Suicide Prevention Month'
+        suicide_prevention_day: 'Internationella dagen för suicidprevention'
+        suicide_prevention_month: 'Månad för suicidprevention'
         aids_awareness_month: 'AIDS Awareness Month'
         genderfluid_week: '{/terminologi#genderfluid=Genderfluid} Awareness Week'
         pan_week: 'Pan Week'
@@ -990,11 +990,11 @@ calendar: # TODO
     celebrating_custom: 'firas'
     celebrating_day: 'firas på'
     celebrating_week: 'firas på'
-    celebrating_month: 'firas på'
+    celebrating_month: 'firas i'
     image:
         header: 'Ladda ned en bild'
     view:
         grid: 'Gridvy'
         list: 'Evenemang lista'
     link: 'Länk'
-    full: 'Full calendar'
+    full: 'Fullständig kalender'
