@@ -39,8 +39,8 @@ mamy wybór między wieloma możliwościami.
 Tworząc [Słownik Neutratywów](/neutratywy) staramy się zatem zachować konsekwencję
 i sugerować te same końcówki neutratywów dla rzeczowników o tych samych końcówkach w rodzaju żeńskim i męskim
 albo o tym samym pochodzeniu (np. -um dla wyrazów zapożyczonych z łaciny).
-Możesz przejrzeć nasze schematy końcówek, klikając na formularz zgłaszania propozycji,
-a następnie na przycisk „Użyj szablonu”
+Możesz przejrzeć nasze schematy końcówek, otwierając formularz zgłaszania propozycji,
+a następnie klikając na przycisk „Użyj szablonu”
 (albo i bezpośrednio [w kodzie źródłowym](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/pl/nouns/nounTemplates.tsv)).
 
 Słowotwórstwo oparte o istniejące sufiksy sprawia też, że odmiana neutratywów powinna być względnie intuicyjna.
