@@ -928,6 +928,7 @@ calendar:
         parents_day: 'Dia de los Djenitores Ekspansivo de Djenero'
         hiv_testing_day: 'Dia Internasional de la Proba del HIV'
         freedressing_day: 'Dia de la Libertad de Vestimenta'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
