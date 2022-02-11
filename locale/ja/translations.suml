@@ -957,6 +957,7 @@ calendar:
         hiv_testing_day: '国際HIV検査デー'
         freedressing_day: 'フリードレッシング認知デー'
         sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        world_sexual_health_day: 'World Sexual Health Day' # TODO
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''
