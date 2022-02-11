@@ -109,6 +109,7 @@ sources:
         Series: 'Seriale'
         Song: 'Muzyka'
         Poetry: 'Poezja'
+        Comics: 'Komiksy'        
         Game: 'Gra'
         Other: 'Inne'
     submit:
