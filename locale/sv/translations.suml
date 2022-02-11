@@ -97,6 +97,7 @@ sources:
         Series: 'TV-Serier'
         Song: 'Sång'
         Poetry: 'Poesi'
+        Comics: 'Tecknad serie'        
         Game: 'Spel'
         Other: 'Annat'
     submit:
