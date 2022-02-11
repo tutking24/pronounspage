@@ -950,6 +950,7 @@ calendar:
         parents_day: 'Dia de Nans Expansivo de Gênero'
         hiv_testing_day: 'Dia Internacional do Teste de HIV/VIH'
         freedressing_day: 'Dia da Liberdade de Vestimenta'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
     celebrating_day: 'celebra-se em'
