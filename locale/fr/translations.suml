@@ -94,6 +94,7 @@ sources:
         Series: 'Séries'
         Song: 'Chansons'
         Poetry: 'Poésie'
+        Comics: 'Bédé'        
         Game: 'Jeux'
         Other: 'Autre'
     submit:
@@ -973,6 +974,8 @@ calendar:
         parents_day: 'Journée inclusive des parents'
         hiv_testing_day: 'Journée internationale du dépistage du VIH'
         freedressing_day: 'Journée de sensibilité à l''accoutrement libre'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        world_sexual_health_day: 'Journée mondiale de la santé sexuelle'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'

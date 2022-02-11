@@ -985,6 +985,8 @@ calendar:
         parents_day___timeDescription: 'on the first Sunday of December'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
+        world_sexual_health_day: 'World Sexual Health Day'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
