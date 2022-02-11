@@ -97,7 +97,8 @@ sources:
         Series: 'Series'
         Song: 'Music'
         Poetry: 'Poetry'
-        Game: 'Game'
+        Comics: 'Comics'        
+        Game: 'Games'
         Other: 'Other'
     submit:
         header: 'Submit an example to be added'
