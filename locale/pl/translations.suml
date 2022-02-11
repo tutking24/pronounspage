@@ -110,7 +110,7 @@ sources:
         Song: 'Muzyka'
         Poetry: 'Poezja'
         Comics: 'Komiksy'        
-        Game: 'Gra'
+        Game: 'Gry'
         Other: 'Inne'
     submit:
         header: 'Zgłoś przykład do dodania'
