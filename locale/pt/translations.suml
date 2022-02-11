@@ -95,6 +95,7 @@ sources:
         Series: 'Séries'
         Song: 'Música'
         Poetry: 'Poesia'
+        Comics: 'Quadrinhos'        
         Game: 'Jogos'
         Other: 'Outros'
     submit:
