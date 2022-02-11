@@ -136,6 +136,7 @@ export class Source {
             Series: 'tv',
             Song: 'music',
             Poetry: 'scroll',
+            Comics: 'file-image',
             Game: 'gamepad-alt',
             Other: 'comment-alt-lines',
         }

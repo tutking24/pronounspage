@@ -21,7 +21,7 @@
                     <label for="type" class="required"><T>sources.submit.type</T></label>
                     <select id="type" class="form-control" v-model="form.type" required>
                         <option value=""></option>
-                        <option v-for="t in ['Book', 'Article', 'Movie', 'Series', 'Song', 'Poetry', 'Game', 'Other']" :value="t">{{$t('sources.type.' + t)}}</option>
+                        <option v-for="t in Object.keys(sourceTypes)" v-if="t !== ''" :value="t">{{$t('sources.type.' + t)}}</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -112,6 +112,7 @@
 
 <script>
     import {pronounLibrary} from "../src/data";
+    import {Source} from "@/src/classes";
 
     export default {
         data() {
@@ -130,6 +131,8 @@
                     key: null,
                     base: null,
                 },
+
+                sourceTypes: Source.TYPES,
 
                 submitting: false,
                 afterSubmit: false,
