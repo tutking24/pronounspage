@@ -77,7 +77,7 @@ pronouns:
         description: >
             Även om det för många är otroligt viktigt att man använder specifika pronomen för att prata om dem
             så har andra inget emot att bli tilltalade på vilket sätt som helst - så länge som det är tydligt vem man pratar om.
-        options: 'visa alternativ [share]{/=here}.'
+        options: 'visa alternativ [share]{/=här}.'
     others: 'Andra former'
     othersRaw: 'andra'
     or: 'eller'
@@ -130,7 +130,7 @@ nouns:
     description: 'Det är inte bara pronomen! Kolla in vår ordbok för neutrala substantiv.'
     intro:
         - >
-            Inkluderande och genusneutralt språk är inte bara att respektera någons pronomen
+            Inkluderande och genusneutralt språk är inte bara att respektera någons pronomen.
             Det beskriver också deras jobb, position, relation osv.
             på ett sätt som inte förutsätter deras könsidentitet.
             Alla brandmän är inte män. Inte alla gifta är ”man” och ”fru”.
@@ -138,7 +138,7 @@ nouns:
             När du hänvisar till någon vars könsidentitet du inte känner till,
             till en grupp av människor med blandade könstillhörigheter,
             och särskilt till ickebinära människor som explicit föredrar dem,
-            bör du använda de neutrala formulären.
+            bör du använda de neutrala formerna.
         - >
             Nedan presenteras en ordbok över ord att hålla utkik efter.
             Du kan bidra och lägga till egna förslag.
@@ -205,7 +205,7 @@ faq:
                     Även från en rent biologisk synpunkt kan vi urskilja kromosomalt kön,
                      genetiskt kön, hormonellt kön, fenotypiskt kön...
                      De överensstämmer inte nödvändigtvis med varandra, och de måste inte vara binära.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mer info här)}.
                      Och när vi kommer till den kulturella aspekten så är "könsidentitet" en social konstruktion.
                      Beroende på tid och plats så kan att vara "en kvinna" eller "en man" ha haft radikalt olika innebörder.
                      Rättigheter, skyldigheter, normer… I Europa brukade män ha på sig klackskor och tights,
@@ -376,9 +376,9 @@ faq:
             question: 'Mina pronomen finns inte på listan'
             answer:
                 - >
-                    Det finns en generator på hemma-sidan, du kan skapa en länk till vilket set  av pronomen som helst.
+                    Det finns en generator på hemsidan, du kan skapa en länk till vilket set  av pronomen som helst.
                 - >
-                    Du kan dessutom skapa en lista av de tre formlerna genom att använda snedstreck, ex. {/hen/henom/hens=hen/henom/hens}
+                    Du kan dessutom skapa en lista av de tre formerna genom att använda snedstreck, ex. {/hen/henom/hens=hen/henom/hens}.
 
 links:
     header: 'Länkar'
@@ -411,7 +411,7 @@ contact:
         name: '“Neutral Språkets Råd” kollektivet'
         nameShort: 'Kollektivet'
         description: >
-            Vi är en queer kollektivet dedikerad till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
+            Vi är ett queer-kollektiv dedikerade till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
             könsneutral och ickebinärt språk.
             Vi stödjer också handlingar mot jämlikhet och social rättvisa.
         extra: []
@@ -529,7 +529,7 @@ profile:
         eller alla formerna (t.ex. “hen/henom/hens”).
         Kom ihåg att <strong>alla tre formerna</strong> är nödvändiga i sådana fall,
         annars kommer appen bara att gissa vad det är du menar.
-        Du kan även använda {/pronouns#generator=<strong>the generator</strong>} för att fylla ut meningar med anpassade formulär.
+        Du kan även använda {/pronouns#generator=<strong>the generator</strong>} för att fylla ut meningar med anpassade former.
     pronounsNotFound: 'Vi kan inte hitta någonting om dessa pronomen!'
     words: 'Orden'
     birthday: 'Födelsedag'
@@ -566,7 +566,7 @@ profile:
         generating: 'Generation bearbetning… Detta kan ta en liten stund.'
     empty: 'Denna person har inte skapat något kort.'
     personal:
-        header: 'Din själv'
+        header: 'Dig själv'
         description: 'Bara du ser det här'
     language:
         header: 'Språk'
@@ -594,7 +594,7 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Källa} och innehåll är licensierad under {/license=OQL}.
     links: 'Kontakt, sociala medier'
-    legal: 'Lagar'
+    legal: 'Rättslig'
     financial: 'Finansiell insyn'
     technical: 'Teknisk'
     sibling: 'Syster projekt'
@@ -705,8 +705,8 @@ terms:
                 {https://matomo.org/faq/general/faq_146/=här}.
             arc: >
                 Vi använder arc.io för att täcka kostnaderna för att underhålla webbplatsen utan reklam.
-                Du kan läsa mer om det och dess integritetspolicy här
-                {https://arc.io/faq=here}.
+                Du kan läsa mer om det och dess integritetspolicy
+                {https://arc.io/faq=här}.
             hCaptcha: >
                 Vi använder hCaptcha för att filtrera ut bots och för att hindra DDoS attacker.
                 Du kan läsa om deras integritetspolicy
@@ -722,7 +722,7 @@ terms:
                 Den tillämpade lagen är lagen av Kungadömet av Nederländerna.
             changes: >
                 Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst.
-                Ifall en förändring är materiell kommer vi att förse åtminstone en förvarning på 30 dagar innan användarvillkoren träder i kraft
+                Ifall en förändring är materiell kommer vi att förse åtminstone en förvarning på 30 dagar innan användarvillkoren träder i kraft.
 
 admin:
     header: 'Adminpanel'
