@@ -1004,6 +1004,7 @@ calendar:
         parents_day: 'День родителя без привязки к гендеру'
         hiv_testing_day: 'День тестирования на ВИЧ'
         freedressing_day: 'День свободного гардероба'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
