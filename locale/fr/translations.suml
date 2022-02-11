@@ -94,6 +94,7 @@ sources:
         Series: 'Séries'
         Song: 'Chansons'
         Poetry: 'Poésie'
+        Comics: 'Bédé'        
         Game: 'Jeux'
         Other: 'Autre'
     submit:
