@@ -95,6 +95,7 @@ sources:
         Series: 'Serie'
         Song: 'Muziek'
         Poetry: 'Poëzie'
+        Comics: 'Strips'        
         Game: 'Spel'
         Other: 'Andere'
     submit:
@@ -948,7 +949,7 @@ calendar:
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        sexual_health_day: 'Dag van de seksuele- en voortplantingsgezondheid'
     banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
     celebrating_day: 'wordt gevierd op:'
