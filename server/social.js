@@ -1,4 +1,4 @@
-export const config = {
+module.exports.config = {
     defaults: {
         origin: process.env.BASE_URL,
         transport: 'session',
@@ -34,7 +34,7 @@ export const config = {
     mastodon: {},
 }
 
-export const handlers = {
+module.exports.handlers = {
     twitter(r) {
         return {
             id: r.profile.id_str,

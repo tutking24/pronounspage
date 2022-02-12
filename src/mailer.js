@@ -74,6 +74,18 @@ const templates = {
             <p style="font-size: 12px; color: #777">[[quotation.start]]${terms}[[quotation.end]]</p>
         `,
     },
+    inactivityWarning: {
+        subject: '[[user.removeInactive.email.subject]]',
+        text: '[[user.removeInactive.email.content]]',
+        html: `
+            <p>[[user.removeInactive.email.content]]</p>
+            <p style="text-align: center; padding-top: 16px; padding-bottom: 16px;">
+                <a href="https://en.pronouns.page/account" target="_blank" rel="noopener" style="background-color: #C71585; color: #fff; padding: 8px 16px; border: none; border-radius: 6px;text-decoration: none">
+                    [[user.removeInactive.email.cta]]
+                </a>
+            </p>
+        `,
+    },
 }
 
 const applyTemplate = (template, context, params) => {

@@ -12,6 +12,7 @@ import {validateCaptcha} from "../captcha";
 import assert from "assert";
 import {addMfaInfo} from './mfa';
 import buildLocaleList from "../../src/buildLocaleList";
+import {lookupBanArchive} from '../ban';
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -35,6 +36,9 @@ const replaceExtension = username => username
 ;
 
 export const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
+    if (await lookupBanArchive(db, type, payload)) {
+        throw 'banned';
+    }
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
         ${id},

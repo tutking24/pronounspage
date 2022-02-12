@@ -273,6 +273,8 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         await caches.adminsFooter.invalidate();
     }
 
+    await req.db.get(SQL`UPDATE users SET inactiveWarning = null WHERE id = ${req.user.id}`);
+
     return res.json(await fetchProfiles(req.db, req.user.username, true));
 }));
 

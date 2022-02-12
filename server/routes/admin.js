@@ -9,6 +9,7 @@ import { caches }  from "../../src/cache";
 import mailer from "../../src/mailer";
 import {profilesSnapshot} from "./profile";
 import buildLocaleList from "../../src/buildLocaleList";
+import {archiveBan, liftBan} from "../ban";
 
 const router = Router();
 
@@ -161,6 +162,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
                 banSnapshot = ${await profilesSnapshot(req.db, normalise(req.params.username))}
             WHERE id = ${user.id}
         `);
+        await archiveBan(req.db, user);
         mailer(user.email, 'ban', {reason: req.body.reason});
     } else {
         await req.db.get(SQL`
@@ -168,6 +170,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
             SET bannedReason = null
             WHERE id = ${user.id}
         `);
+        await liftBan(req.db, user);
     }
 
     await req.db.get(SQL`
