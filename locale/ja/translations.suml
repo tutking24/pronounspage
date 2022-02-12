@@ -956,8 +956,8 @@ calendar:
         parents_day: 'ジェンダー•エクスパンシヴ•パレンツ•デー'
         hiv_testing_day: '国際HIV検査デー'
         freedressing_day: 'フリードレッシング認知デー'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
-        world_sexual_health_day: 'World Sexual Health Day' # TODO
+        sexual_health_day: '性と生殖の健康啓発デー'
+        world_sexual_health_day: '世界セクシュアルヘルスデー'
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''
