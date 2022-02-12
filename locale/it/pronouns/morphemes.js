@@ -1,7 +1,13 @@
 export default [
-    'pronoun_subject',
-    'pronoun_object',
-    'possessive_determiner',
-    'possessive_pronoun',
-    'reflexive',
+    'pronoun_n',
+    'pronoun_d',
+    'pronoun_a',
+    'possessive',
+    'article',
+    'article_indefinite',
+    'noun',
+    'noun_i',
+    'adjective',
+    'past_participle',
+    'h',
 ];
