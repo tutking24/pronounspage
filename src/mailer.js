@@ -4,8 +4,8 @@ const Suml = require('suml');
 const forbidden = require('./forbidden');
 
 const color = '#C71585';
-const logo = fs.readFileSync(__dirname + '/../node_modules/@fortawesome/fontawesome-pro/svgs/light/tags.svg').toString('utf-8');
-const logoEncoded = 'data:image/svg+xml,' + encodeURIComponent(logo.replace('<path ', `<path fill="${color}" `));
+const logo = fs.readFileSync(__dirname + '/../static/logo/logo-primary.svg').toString('utf-8');
+const logoEncoded = 'data:image/svg+xml,' + encodeURIComponent(logo);
 
 const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const translations = loadSuml('translations');
