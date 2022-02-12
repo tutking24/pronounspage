@@ -74,30 +74,11 @@ async function removeWarned(db) {
     }
 }
 
-async function archiveBans(db) {
-    console.log('--- Archiving banned accounts ---');
-
-    const users = (await db.all(`
-        SELECT u.id, u.username, u.email
-        FROM users u
-        WHERE u.bannedReason IS NOT NULL
-    `));
-
-    console.log(users.length);
-
-    for (let user of users) {
-        console.log('archiveBan', user);
-        if (!execute) { continue; }
-        await archiveBan(db, user);
-    }
-}
-
 async function cleanup() {
     const db = await dbConnection();
 
     await db.get('PRAGMA foreign_keys = ON')
 
-    await archiveBans(db); // TODO one-time only
     await warnInactive(db);
     await removeWarned(db);
 }
