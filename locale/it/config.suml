@@ -98,8 +98,8 @@ pronunciation:
     enabled: true
     voices:
         GB:
-            language: 'en-GB'
-            voice: 'Emma'
+            language: 'it-IT'
+            voice: 'Bianca'
             engine: 'neural'
 
 sources:

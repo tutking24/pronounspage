@@ -1,5 +1,9 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+{'article} volontar{noun_i} è molto vantaggios{adjective}.	{'article} volontar{noun_i} sono molto vantaggios{adjective}.	FALSE
+Sono stanc{h}{adjective}, ma molto felice.	Siamo stanc{h}{adjective}, ma molto felice.	FALSE
+{'pronoun_n} è arrivat{past_participle}.	{'pronoun_n} sono arrivat{past_participle}	FALSE
+Sei stat{past_participle} a casa?	Siete stat{past_participle} a casa?	FALSE
+Ho visto {article_indefinite} ragazz{noun} bell{adjective}.		FALSE
+{'pronoun_n} canta a {possessive} amic{h}{noun}.	{'pronoun_n} cantano a {possessive} amic{h}{noun}.	FALSE
+{'pronoun_d} parlai per un'ora intera.		FALSE
+{'pronoun_a} vedo.		FALSE
