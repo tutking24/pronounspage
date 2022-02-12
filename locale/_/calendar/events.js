@@ -283,4 +283,12 @@ module.exports = [
         }
     }, EventLevel.Week, ['progress pride']),
 
+    new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.day >= 4 && d.day <= 10 && d.year === 2022) {
+                yield d;
+            }
+        }
+    }, EventLevel.Week, ['progress pride']),
+
 ];
