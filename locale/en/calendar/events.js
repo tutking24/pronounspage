@@ -13,7 +13,7 @@ module.exports = [
 
     // --- static date ---
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.Day),
-    new Event('Pink Triangle Day (Canada)', null, 2, day(14), EventLevel.Day),
+    new Event('{/terminology#pink%20triangle=Pink Triangle} Day (Canada)', null, 2, day(14), EventLevel.Day, ['pink triangle']),
     new Event('Marriage Equality Day (US)', '_hrc', 6, day(26), EventLevel.Day),
     new Event('Marriage Equality Day (England and Wales)', '_hrc', 3, day(13), EventLevel.Day),
     new Event('Marriage Equality Day (Scotland)', '_hrc', 12, day(16), EventLevel.Day),
