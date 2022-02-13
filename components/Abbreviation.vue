@@ -1,6 +1,6 @@
 <template>
     <span>
-        <abbr v-if="abbr" :title="meaning">{{abbr}}</abbr><template v-if="abbr">&nbsp;</template><slot v-bind:abbr="abbr" v-bind:meaning="meaning" v-bind:word="word"></slot>
+        <template v-for="(meaning, abbr) in abbrs"><abbr v-if="meaning" :title="meaning">{{abbr}}</abbr><span v-else>{{abbr}}</span>&nbsp;</template><slot v-bind:abbrs="abbrs" v-bind:word="word"></slot>
     </span>
 </template>
 
@@ -12,21 +12,16 @@ export default {
         v: {required: true},
     },
     data() {
-        for (let abbr in abbreviations) {
-            if (!abbreviations.hasOwnProperty(abbr)) { continue; }
-            if (this.v.startsWith(abbr + ' ')) {
-                return {
-                    abbr,
-                    meaning: abbreviations[abbr],
-                    word: this.v.substring(abbr.length + 1),
-                };
-            }
+        const abbrs = {};
+        let word = this.v.trim();
+        let m = null;
+        while ((m = word.match(/^(\w+\.?) /)) !== null) {
+            const abbr = m[1];
+            abbrs[abbr] = abbreviations[abbr] || null;
+            word = word.substring(abbr.length + 1).trim();
         }
-        return {
-            abbr: null,
-            meaning: null,
-            word: this.v,
-        }
+
+        return { abbrs, word };
     },
 }
 </script>
