@@ -51,7 +51,7 @@
             sorter();
 
             if (process.env.NODE_ENV === 'production') {
-                //this.monkeyPatchBlockTrackers(['google-analytics.com', 'tkr.arc.io', 'browser.sentry-cdn.com',]);
+                this.monkeyPatchBlockTrackers(['google-analytics.com', 'tkr.arc.io', 'browser.sentry-cdn.com',]);
                 this.$loadScript('arc', 'https://arc.io/widget.min.js#yHdNYRkC');
             }
 
