@@ -115,6 +115,11 @@
                 </template>
             </button>
             <p class="small text-muted mt-1"><T>nouns.submit.moderation</T></p>
+            <ul v-if="Object.keys(abbreviations).length > 0" class="small text-muted">
+                <li v-for="(meaning, abbr) in abbreviations">
+                    {{abbr}} – {{meaning}}
+                </li>
+            </ul>
         </form>
     </section>
     <section v-else class="text-center">
@@ -125,7 +130,7 @@
 </template>
 
 <script>
-    import { nounTemplates } from '../src/data';
+    import { nounTemplates, abbreviations } from '../src/data';
 
     export default {
         data() {
@@ -145,6 +150,7 @@
                 templates: nounTemplates,
                 templateBase: '',
                 templateVisible: false,
+                abbreviations,
             }
         },
         methods: {

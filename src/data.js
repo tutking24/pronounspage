@@ -62,3 +62,10 @@ export const nounDeclensionTemplates = buildList(function* () {
         yield new NounDeclension(d);
     }
 });
+
+import abbreviationsRaw from '../data/nouns/abbr.tsv';
+export const abbreviations = buildDict(function* () {
+    for (let a of abbreviationsRaw) {
+        yield [a.abbreviation, a.meaning];
+    }
+});
