@@ -17,6 +17,7 @@
     import Vue from 'vue';
     import dark from "../plugins/dark";
     import sorter from "avris-sorter";
+    import {sleep} from "../src/helpers";
 
     export default {
         mixins: [dark],
@@ -27,6 +28,7 @@
                 });
             };
             Vue.prototype.$confirm = (message = '', color='primary') => {
+                console.log(this, this.$refs);
                 return new Promise((resolve, reject) => {
                     this.$refs.dialogue.show(true, message, color, resolve, reject);
                 });
@@ -52,6 +54,8 @@
                 //this.monkeyPatchBlockTrackers(['google-analytics.com', 'tkr.arc.io', 'browser.sentry-cdn.com',]);
                 this.$loadScript('arc', 'https://arc.io/widget.min.js#yHdNYRkC');
             }
+
+            this.confirmAge();
         },
         methods: {
             monkeyPatchBlockTrackers(trackers) {
@@ -69,6 +73,18 @@
                     origInsertBefore.call(this, ...args);
                 };
             },
+            async confirmAge() {
+                if (!this.$te('footer.ageLimit') || localStorage.getItem('ageConfirmed')) {
+                    return;
+                }
+
+                while (this.$refs.dialogue === undefined) {
+                    await sleep(100);
+                }
+                await this.$alert(this.$t('footer.ageLimit'));
+
+                localStorage.setItem('ageConfirmed', '1');
+            }
         },
     }
 </script>

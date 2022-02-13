@@ -180,6 +180,7 @@ export default {
         HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
         ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
         LOGO: logo,
+        MIN_AGE: config.ageLimit || 13,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {

@@ -58,6 +58,10 @@
                 <p class="h6 mb-2">
                     <T>footer.legal</T><T>quotation.colon</T>
                 </p>
+                <p v-if="$te('footer.ageLimit')">
+                    <Icon v="exclamation-triangle"/>
+                    <T>footer.ageLimit</T>
+                </p>
                 <ul class="list-unstyled mb-4">
                     <li class="mb-2">
                         <nuxt-link :to="`/${config.user.termsRoute}`">

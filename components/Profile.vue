@@ -27,7 +27,7 @@
                 <p v-for="line in profile.description.split('\n')" class="mb-1">
                     <Twemoji><Spelling escape :text="line"/></Twemoji>
                 </p>
-                <p v-if="profile.age">
+                <p v-if="profile.age && profile.age >= minAge">
                     <Icon v="birthday-cake"/>
                     {{ profile.age }}
                 </p>
@@ -125,6 +125,7 @@
             return {
                 allFlags: process.env.FLAGS,
                 glue: ' ' + this.$t('pronouns.or') + ' ',
+                minAge: parseInt(process.env.MIN_AGE),
             }
         },
         computed: {
@@ -197,7 +198,9 @@
                 return this.countFlags > 36 || this.countFlags === 0 || !this.hasDescriptionColumn;
             },
             hasDescriptionColumn() {
-                return this.profile.age || this.profile.description.trim().length || this.profile.team;
+                return (this.profile.age && this.profile.age > this.minAge)
+                    || this.profile.description.trim().length
+                    || this.profile.team;
             },
             mainRowCount() {
                 let c = 0;
