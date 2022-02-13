@@ -24,7 +24,7 @@
                                     <Icon v="info-circle"/>
                                     <T>captcha.reason</T>
                                 </p>
-                                <Captcha class="h-captcha" v-model="captchaToken"/>
+                                <Captcha v-model="captchaToken"/>
                                 <button class="btn btn-primary mt-3 d-none d-md-block" :disabled="!canInit">
                                     <Icon v="sign-in"/>
                                     <T>user.login.action</T>
