@@ -294,3 +294,5 @@ census:
 redirects: []
 
 api: ~
+
+ageLimit: 18

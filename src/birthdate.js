@@ -1,6 +1,6 @@
 const today = new Date();
 const minBirthdate = new Date(1900, 0, 1);
-const maxBirthdate = new Date(today.getFullYear()-13, today.getMonth(), today.getDate())
+const maxBirthdate = new Date(today.getFullYear() - parseInt(process.env.MIN_AGE), today.getMonth(), today.getDate())
 
 module.exports = {
     minBirthdate,
