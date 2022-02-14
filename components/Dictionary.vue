@@ -245,7 +245,7 @@
                         if (!a.approved && b.approved) {
                             return -1;
                         }
-                        return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase());
+                        return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase(), this.config.locale);
                     });
                     for (let w of sorted) {
                         yield [w.id, new Noun(w)];
