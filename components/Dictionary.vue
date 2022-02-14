@@ -237,6 +237,8 @@
                     return {};
                 }
 
+                const locale = this.config.locale;
+
                 return buildDict(function* (that) {
                     const sorted = that.nounsRaw.sort((a, b) => {
                         if (a.approved && !b.approved) {
@@ -245,7 +247,7 @@
                         if (!a.approved && b.approved) {
                             return -1;
                         }
-                        return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase(), this.config.locale);
+                        return a.masc.toLowerCase().localeCompare(b.masc.toLowerCase(), locale);
                     });
                     for (let w of sorted) {
                         yield [w.id, new Noun(w)];
