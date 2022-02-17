@@ -264,6 +264,7 @@ export default {
 
             if (config.census.enabled) {
                 routes.push({ path: '/' + encodeURIComponent(config.census.route), component: resolve(__dirname, 'routes/census.vue') });
+                routes.push({ path: '/' + encodeURIComponent(config.census.route) + '/admin', component: resolve(__dirname, 'routes/censusModeration.vue') });
             }
 
             if (config.user.enabled) {

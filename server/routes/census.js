@@ -69,11 +69,39 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/census/count', handleErrorAsync(async (req, res) => {
-    return res.json((await req.db.get(SQL`
-        SELECT COUNT(*) as c FROM census
-        WHERE locale = ${global.config.locale}
-        AND edition = ${global.config.census.edition}
-    `)).c);
+    if (!req.isGranted('census')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    // duplication reason: https://github.com/felixfbecker/node-sql-template-strings/issues/71
+
+    return res.json({
+        all: (await req.db.get(SQL`
+            SELECT COUNT(*) as c FROM census
+            WHERE locale = ${global.config.locale}
+              AND edition = ${global.config.census.edition}
+        `)).c,
+        nonbinary: (await req.db.get(SQL`
+            SELECT COUNT(*) as c FROM census
+            WHERE locale = ${global.config.locale}
+              AND edition = ${global.config.census.edition}
+              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+        `)).c,
+        usable: (await req.db.get(SQL`
+            SELECT COUNT(*) as c FROM census
+            WHERE locale = ${global.config.locale}
+              AND edition = ${global.config.census.edition}
+              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+              AND troll = 0
+        `)).c,
+        awaiting: (await req.db.get(SQL`
+            SELECT COUNT(*) as c FROM census
+            WHERE locale = ${global.config.locale}
+              AND edition = ${global.config.census.edition}
+              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+              AND troll IS NULL
+        `)).c,
+    });
 }));
 
 router.get('/census/export', handleErrorAsync(async (req, res) => {
@@ -82,11 +110,12 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
     }
 
     const report = [];
-    for (let {answers, writins} of await req.db.all(SQL`
+    for (let {answers, writins, troll} of await req.db.all(SQL`
         SELECT answers, writins FROM census
         WHERE locale = ${global.config.locale}
-        AND edition = ${global.config.census.edition}
-        AND suspicious = 0
+          AND edition = ${global.config.census.edition}
+          AND suspicious = 0
+          AND troll = 0
     `)) {
         answers = JSON.parse(answers);
         writins = JSON.parse(writins);
@@ -111,6 +140,38 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
     }
 
     return res.set('content-type', 'text/csv').send(Papa.unparse(report));
+}));
+
+router.get('/census/moderation/queue', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('census')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const queue = await req.db.all(SQL`
+        SELECT id, answers, writins FROM census
+        WHERE locale = ${global.config.locale}
+          AND edition = ${global.config.census.edition}
+          AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+          AND troll IS NULL
+        ORDER BY RANDOM()
+    `);
+
+    return res.json({
+        count: queue.length,
+        next: queue.length ? queue[0] : null,
+    });
+}));
+
+router.post('/census/moderation/decide', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('census')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const queue = await req.db.get(SQL`
+        UPDATE census SET troll = ${parseInt(req.body.decision)} WHERE id = ${req.body.id} 
+    `);
+
+    return res.json('ok');
 }));
 
 export default router;
