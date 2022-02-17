@@ -20,8 +20,8 @@
             <ol>
                 <li v-for="(question, i) in config.census.questions">
                     <p>{{question.question}}</p>
-                    <p><strong>{{queue.next.answers[i.toString()]}}</strong></p>
-                    <p v-if="queue.next.writins[i.toString()]"><strong><em>{{queue.next.writins[i.toString()]}}</em></strong></p>
+                    <p v-if="queue.next.answers[i.toString()]" :class="question.type === 'textarea' ? 'bg-primary text-white p-2 rounded' : ''"><strong>{{queue.next.answers[i.toString()]}}</strong></p>
+                    <p v-if="queue.next.writins[i.toString()]" class="bg-primary text-white p-2 rounded"><strong><em>{{queue.next.writins[i.toString()]}}</em></strong></p>
                 </li>
             </ol>
 

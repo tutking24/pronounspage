@@ -69,9 +69,14 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/census/count', handleErrorAsync(async (req, res) => {
-    // if (!req.isGranted('census')) {
-    //     return res.status(401).json({error: 'Unauthorised'});
-    // }
+    if (!req.isGranted('census')) {
+        return res.json({
+            all: 0,
+            nonbinary: 0,
+            usable: 0,
+            awaiting: 0,
+        });
+    }
 
     // duplication reason: https://github.com/felixfbecker/node-sql-template-strings/issues/71
 
