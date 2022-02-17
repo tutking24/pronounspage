@@ -1,7 +1,7 @@
 <template>
     <span class="position-relative">
         <template v-if="declensionTemplate">
-            <a v-if="!open" href="#" @click.prevent="visible = !visible" :class="tooltip && visible ? 'fw-bold' : ''">{{ word }}</a>
+            <a v-if="!open" href="#" @click.prevent="visible = !visible" :class="tooltip && visible ? 'fw-bold' : ''"><Spelling :text="word"/></a>
             <ul v-if="visible" :class="['list-unstyled', 'small', open ? '' : 'm-2 p-3 pe-5 border bg-light', tooltip ? 'tooltip' : '']">
                 <li v-for="(declined, c) in declensionTemplate.decline(word, plural)" class="text-nowrap">
                     <strong>{{c}} <small v-if="!condense">({{cases[c]}})</small></strong> {{ declined.join(' / ') }}
@@ -9,7 +9,7 @@
                 <li v-if="tooltip" class="close"><a href="#" @click.prevent="visible = false"><Icon v="times"/></a></li>
             </ul>
         </template>
-        <template v-else>{{ word }}</template>
+        <Spelling v-else :text="word"/>
     </span>
 </template>
 
