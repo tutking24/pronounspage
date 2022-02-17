@@ -14,7 +14,7 @@
                         <T>pronouns.alt.header</T>
                         <small>({{ option.replace(/&/g, glue) }})</small>
                     </span>
-                    <span v-else-if="option">
+                    <span v-else-if="option && getPronoun(pronouns, option)">
                         {{ getPronoun(pronouns, option).description }}
                         <small>({{ getPronoun(pronouns, option).name(glue) }})</small>
                     </span>
