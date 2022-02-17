@@ -1454,7 +1454,9 @@ census:
             writein: true
             instruction:
                 - >
-                    Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
+                    Chodzi nam o <strong>mowę</strong>. Następne pytanie jest o pismo.
+                - >
+                    Więcej informacji <a href="/zaimki" target="_blank">w zakładce „Zaimki”</a>.
                 - >
                     Interesują nas <strong>preferencje</strong>, więc nawet jeśli chcesz używać danych form,
                     ale nie możesz tego bezpiecznie robić, to je zaznacz.
