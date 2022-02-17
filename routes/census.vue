@@ -10,12 +10,16 @@
         <template v-if="q === null">
             <section v-if="$isGranted('census')">
                 <div class="alert alert-info">
-                    {{countResponses}}
-                    <T>census.replies</T>
-
                     <a href="/api/census/export" class="btn btn-outline-secondary btn-sm float-end">
                         <Icon v="download"/>
                     </a>
+
+                    <p>{{countResponses.all}} <T>census.replies</T></p>
+                    <ul>
+                        <li>{{countResponses.nonbinary}} <T>census.repliesNonbinary</T></li>
+                        <li>{{countResponses.usable}} <T>census.repliesUsable</T></li>
+                        <li><nuxt-link :to="`/${config.census.route}/admin`">{{countResponses.awaiting}} <T>census.repliesAwaiting</T></nuxt-link></li>
+                    </ul>
                 </div>
             </section>
 
