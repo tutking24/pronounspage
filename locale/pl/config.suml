@@ -1387,6 +1387,7 @@ census:
     edition: '2022'
     start: '2022-02-01T00:00:00+01:00'
     end: '2022-02-28T23:59:59+02:00'
+    relevant: ['osobą niebinarną', 'nie wiem']
     questions:
         -
             type: 'radio'

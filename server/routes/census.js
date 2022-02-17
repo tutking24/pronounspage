@@ -41,6 +41,24 @@ const hasFinished = async req => {
     return !!byFingerprint;
 }
 
+const isRelevant = (answers) => {
+    return global.config.census.relevant.includes(answers['0']);
+}
+
+const isTroll = (answers, writins) => {
+    if (Object.values(writins).filter(x => !!x).length) {
+        return null; // unknown, send to moderation
+    }
+
+    for (let i in global.config.census.questions) {
+        if (global.config.census.questions[i].type === 'textarea' && answers[i.toString()]) {
+            return null; // unknown, send to moderation
+        }
+    }
+
+    return false; // no free-text provided
+}
+
 const router = Router();
 
 router.get('/census/finished', handleErrorAsync(async (req, res) => {
@@ -48,10 +66,11 @@ router.get('/census/finished', handleErrorAsync(async (req, res) => {
 }));
 
 router.post('/census/submit', handleErrorAsync(async (req, res) => {
-    const suspicious = await hasFinished(req);
+    const answers = JSON.parse(req.body.answers);
+    const writins = JSON.parse(req.body.writins);
 
     const id = ulid();
-    await req.db.get(SQL`INSERT INTO census (id, locale, edition, userId, fingerprint, answers, writins, ip, userAgent, acceptLanguage, suspicious) VALUES (
+    await req.db.get(SQL`INSERT INTO census (id, locale, edition, userId, fingerprint, answers, writins, suspicious, relevant, troll) VALUES (
         ${id},
         ${global.config.locale},
         ${global.config.census.edition},
@@ -59,10 +78,9 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
         ${buildFingerprint(req)},
         ${req.body.answers},
         ${req.body.writins},
-        null,
-        null,
-        null,
-        ${suspicious}
+        ${await hasFinished(req)},
+        ${isRelevant(answers) ? 1 : 0},
+        ${isTroll(answers, writins) ? 1 : 0}
     )`);
 
     return res.json(id);
@@ -90,20 +108,20 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
             SELECT COUNT(*) as c FROM census
             WHERE locale = ${global.config.locale}
               AND edition = ${global.config.census.edition}
-              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+              AND relevant = 1
         `)).c,
         usable: (await req.db.get(SQL`
             SELECT COUNT(*) as c FROM census
             WHERE locale = ${global.config.locale}
               AND edition = ${global.config.census.edition}
-              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+              AND relevant = 1
               AND troll = 0
         `)).c,
         awaiting: (await req.db.get(SQL`
             SELECT COUNT(*) as c FROM census
             WHERE locale = ${global.config.locale}
               AND edition = ${global.config.census.edition}
-              AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+              AND relevant = 1
               AND troll IS NULL
         `)).c,
     });
@@ -156,7 +174,7 @@ router.get('/census/moderation/queue', handleErrorAsync(async (req, res) => {
         SELECT id, answers, writins FROM census
         WHERE locale = ${global.config.locale}
           AND edition = ${global.config.census.edition}
-          AND (answers LIKE '{"0":"osobą niebinarną"%' OR answers LIKE '{"0":"nie wiem"%') -- TODO polish-specific
+          AND relevant = 1
           AND troll IS NULL
         ORDER BY RANDOM()
     `);
