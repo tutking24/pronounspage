@@ -96,7 +96,7 @@ sources:
         Series: 'Series'
         Song: 'Música'
         Poetry: 'Poesía'
-        Comics: 'Cómics'        
+        Comics: 'Cómics'
         Game: 'Juegos'
         Other: 'Otros'
     submit:
@@ -578,10 +578,10 @@ terms:
     header: 'Términos de Servicio'
     lastUpdate: 'Actualizados por última vez'
     consent: 'Al registrarte, aceptas los {/terminos=Términos de Servicio}.'
-        translationDisclaimer: >
-           El siguiente texto es sólo una traducción auxiliar.
-           La única versión legalmente vinculante de estos Términos de Servicio es la versión en el idioma Inglés, disponible
-           {https://en.pronouns.page/terms=aquí}.
+    translationDisclaimer: >
+        El siguiente texto es sólo una traducción auxiliar.
+        La única versión legalmente vinculante de estos Términos de Servicio es la versión en el idioma Inglés, disponible
+        {https://en.pronouns.page/terms=aquí}.
     content:
         intro: >
             Estos Términos de Servicio rigen tu acceso y uso del Servicio provisto en el sitio web
@@ -657,7 +657,7 @@ terms:
             contact: >
                 Cuando nos contactes por correo electrónico, guardamos tu correo para responderte y formularte preguntas de seguimiento.
             cookies: >
-                Nosotrxs sólo utilizamos cookies propias y almacenamiento local para mantener tu sesión activa y guardar tus preferencias. 
+                Nosotrxs sólo utilizamos cookies propias y almacenamiento local para mantener tu sesión activa y guardar tus preferencias.
             matomo: >
                 Nosotrxs utilizamos Matomo para realizar seguimiento del tráfico en nuestro sitio. Tal información no está relacionada con tu nombre de usuario, y tu dirección IP permanece anónima.
                 Puedes leer acerca de los datos que almacena
