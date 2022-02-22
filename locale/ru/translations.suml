@@ -523,12 +523,12 @@ user:
     account:
         changeUsername:
             header: 'Имя пользовател_ьницы'
-            action: 'Изменить'
+            action: 'Изменить'  # TODO more explicitly "Change username"
             invalid: 'Имя пользовател_ьницы должно состоять из 4-16 знаков и содержать в себе только цифры, буквы алфавита, точки, дефисы и нижнее подчёркивание.'
             taken: 'Это имя уже занято'
         changeEmail:
             header: 'Адрес электронной почты'
-            action: 'Изменить'
+            action: 'Изменить'  # TODO more explicitly "Change email"
             invalid: 'Неверный адрес электронной почты.'
             taken: 'Адрес электронной почты занят.'
         admin: 'Админ'

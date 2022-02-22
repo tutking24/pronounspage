@@ -94,7 +94,7 @@ sources:
         Series: 'シリーズ'
         Song: '音楽'
         Poetry: '詩'
-        Comics: '漫画'        
+        Comics: '漫画'
         Game: 'ゲーム'
         Other: 'その他'
     submit:
@@ -431,12 +431,12 @@ user:
     account:
         changeUsername:
             header: 'ユーザー名'
-            action: '変更'
+            action: '変更'  # TODO more explicitly "Change username"
             invalid: 'ユーザー名は、4～16文字で、数字、ローマ字、ピリオド、ハイフン、アンダースコアを含むものとします。'
             taken: 'このユーザー名は使用不可能です。'
         changeEmail:
             header: 'メールアドレス'
-            action: '変更'
+            action: '変更'  # TODO more explicitly "Change email"
             invalid: '無効なメールアドレス'
             taken: 'このメールアドレスは利用できません。'
         admin: '管理者'

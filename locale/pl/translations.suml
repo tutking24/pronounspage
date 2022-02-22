@@ -1201,12 +1201,12 @@ user:
     account:
         changeUsername:
             header: 'Nazwa użytkownicza'
-            action: 'Zmień'
+            action: 'Zmień nazwę'
             invalid: 'Nazwa użytkownicza musi mieć od 4 do 16 znaków i zawierać wyłącznie cyfry, litery, kropkę, myślnik i podłogę.'
             taken: 'Ta nazwa użytkownicza jest zajęta.'
         changeEmail:
             header: 'Adres email'
-            action: 'Zmień'
+            action: 'Zmień email'
             invalid: 'Nieprawidłowy adres email.'
             taken: 'Ten adres jest zajęty.'
         admin: 'Adminie'

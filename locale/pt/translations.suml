@@ -95,7 +95,7 @@ sources:
         Series: 'Séries'
         Song: 'Música'
         Poetry: 'Poesia'
-        Comics: 'Quadrinhos'        
+        Comics: 'Quadrinhos'
         Game: 'Jogos'
         Other: 'Outros'
     submit:
@@ -406,12 +406,12 @@ user:
     account:
         changeUsername:
             header: 'Nome do usuárie'
-            action: 'Mude'
+            action: 'Mude'  # TODO more explicitly "Change username"
             invalid: 'O nome de usuárie deve ter entre 4 e 16 caracteres e só pode conter números, letras, pontos, traços e sublinhados.'
             taken: 'Este nome de usuárie já está em uso.'
         changeEmail:
             header: 'Endereço de e-mail'
-            action: 'Mude'
+            action: 'Mude'  # TODO more explicitly "Change email"
             invalid: 'Endereço de e-mail inválido.'
             taken: 'Este endereço já está em uso.'
         admin: 'Admin'

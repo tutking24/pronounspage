@@ -96,7 +96,7 @@ sources:
         Series: 'Serias'
         Song: 'Muzika'
         Poetry: 'Poezia'
-        Comics: 'Komiks'        
+        Comics: 'Komiks'
         Game: 'Djugos'
         Other: 'Otros'
     submit:
@@ -407,12 +407,12 @@ user:
     account:
         changeUsername:
             header: 'Nombre de uzadore'
-            action: 'Trokar'
+            action: 'Trokar'  # TODO more explicitly "Change username"
             invalid: 'El nombre de uzadore deve tener entre 4 i 16 sinyos i solo puede kontener numeros, letras, puntos, giadores i giadores bashos.'
             taken: 'Este nombre de uzadore ya esta en uzo.'
         changeEmail:
             header: 'Adreso de posta elektronika'
-            action: 'Trokar'
+            action: 'Trokar'  # TODO more explicitly "Change email"
             invalid: 'Adreso de posta enfirmo.'
             taken: 'Este adreso ya esta en uzo.'
         admin: 'Admin'
