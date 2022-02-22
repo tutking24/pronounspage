@@ -91,7 +91,7 @@ sources:
         Series: 'Serien'
         Song: 'Musik'
         Poetry: 'Gedichte'
-        Comics: 'Comics'        
+        Comics: 'Comics'
         Game: 'Spiele'
         Other: 'Sonstiges'
     submit:
@@ -426,12 +426,12 @@ user:
     account:
         changeUsername:
             header: 'Username'
-            action: 'Ändern'
+            action: 'Username Ändern'
             invalid: 'Der Username muss zwischen 4 und 16 Zeichen lang sein und darf nur Zahlen, Buchstaben, Punkte, Bindestriche und Unterstriche enthalten.'
             taken: 'Dieser Username ist vergeben.'
         changeEmail:
             header: 'E-Mail Adresse'
-            action: 'Ändern'
+            action: 'E-Mail Ändern'
             invalid: 'Ungültige E-Mail Adresse.'
             taken: 'Diese Adresse ist vergeben.'
         admin: 'Admin'

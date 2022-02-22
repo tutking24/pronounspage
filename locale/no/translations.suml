@@ -94,7 +94,7 @@ sources:
         Series: 'Serier'
         Song: 'Musikk'
         Poetry: 'Dikt'
-        Comics: 'Tegneserien'        
+        Comics: 'Tegneserien'
         Game: 'Spill'
         Other: 'Andre'
     submit:
@@ -406,12 +406,12 @@ user:
     account:
         changeUsername:
             header: 'Brukernavn'
-            action: 'Endre'
+            action: 'Endre'  # TODO more explicitly "Change username"
             invalid: 'Brukernavn må være mellom 4 og 16 bokstaver, og kan bare inneholde nummer, bokstaver, punktum, bindestreker og understreker.'
             taken: 'Dette brukernavnet er tatt.'
         changeEmail:
             header: 'Email adresse'
-            action: 'Endre'
+            action: 'Endre'  # TODO more explicitly "Change email"
             invalid: 'Ugyldig email addresse.'
             taken: 'Denne adressen er tatt.'
         admin: 'Admin'

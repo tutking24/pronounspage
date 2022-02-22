@@ -97,7 +97,7 @@ sources:
         Series: 'TV-Serier'
         Song: 'Sång'
         Poetry: 'Poesi'
-        Comics: 'Tecknad serie'        
+        Comics: 'Tecknad serie'
         Game: 'Spel'
         Other: 'Annat'
     submit:
@@ -481,12 +481,12 @@ user:
     account:
         changeUsername:
             header: 'Användarnamn'
-            action: 'Ändra'
+            action: 'Ändra'  # TODO more explicitly "Change username"
             invalid: 'Användarnamn måste vara mellan 4 och 16 karaktär lång och kan bara innehålla siffror, bokstäver, punkter, bindestreck och understreck.'
             taken: 'Det här användarnamnet är redan taget.'
         changeEmail:
             header: 'E-postadress'
-            action: 'Ändra'
+            action: 'Ändra'  # TODO more explicitly "Change email"
             invalid: 'Ogiltig e-postadress.'
             taken: 'Den här e-postadressen är tagen.'
         admin: 'Admin'

@@ -487,12 +487,12 @@ user:
     account:
         changeUsername:
             header: 'Uzantnomo'
-            action: 'Ŝanĝi'
+            action: 'Ŝanĝi'  # TODO more explicitly "Change username"
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
             taken: 'La uzantnomo jam estas uzata.'
         changeEmail:
             header: 'Retpoŝtadreso'
-            action: 'Ŝanĝi'
+            action: 'Ŝanĝi'  # TODO more explicitly "Change email"
             invalid: 'Nevalida retpoŝtadreso.'
             taken: 'La retpoŝtadreso jam estas uzata.'
         admin: 'Admin'

@@ -94,7 +94,7 @@ sources:
         Series: 'Séries'
         Song: 'Chansons'
         Poetry: 'Poésie'
-        Comics: 'Bédé'        
+        Comics: 'Bédé'
         Game: 'Jeux'
         Other: 'Autre'
     submit:
@@ -429,12 +429,12 @@ user:
     account:
         changeUsername:
             header: 'Nom d’utilisateur'
-            action: 'Changer'
+            action: 'Changer'  # TODO more explicitly "Change username"
             invalid: 'Le nom d’utilisateur doit faire entre 4 et 16 caractères and peut seulement contenir des noms, des lettres, des points, des traits d’union et des tirets du bas.'
             taken: 'Ce nom d’utilisateur est déjà utilisé.'
         changeEmail:
             header: 'Adresse mail'
-            action: 'Changer'
+            action: 'Changer'  # TODO more explicitly "Change email"
             invalid: 'Adresse mail invalide.'
             taken: 'Cette adresse est déjà utilisée.'
         admin: 'Administrateur'

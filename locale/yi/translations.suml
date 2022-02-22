@@ -400,12 +400,12 @@ user:
     account:
         changeUsername:
             header: 'Username'
-            action: 'Change'
+            action: 'Change username'
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscore.'
             taken: 'This username is taken.'
         changeEmail:
             header: 'Email address'
-            action: 'Change'
+            action: 'Change email'
             invalid: 'Invalid email address.'
             taken: 'This address is taken.'
         admin: 'Admin'

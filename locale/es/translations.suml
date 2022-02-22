@@ -436,12 +436,12 @@ user:
     account:
         changeUsername:
             header: 'Nombre de usuarie'
-            action: 'Cambiar'
+            action: 'Cambiar'  # TODO more explicitly "Change username"
             invalid: 'El nombre de usuarie debe tener entre 4 y 16 caracteres y sólo puede contener números, letras, puntos, guiones y guionbajos.'
             taken: 'Este nombre de usuarie ya está en uso.'
         changeEmail:
             header: 'Dirección de correo electrónico'
-            action: 'Cambiar'
+            action: 'Cambiar'  # TODO more explicitly "Change email"
             invalid: 'Dirección de correo inválida.'
             taken: 'Esta dirección ya está en uso.'
         admin: 'Admin'

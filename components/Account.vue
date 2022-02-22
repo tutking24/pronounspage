@@ -76,14 +76,21 @@
 
                     <form @submit.prevent="changeUsername" :disabled="savingUsername">
                         <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" v-model="username"
-                                   required minlength="4" maxlength="16"/>
+                        <input type="text" class="form-control" v-model="username"
+                           required minlength="4" maxlength="16"/>
+                        <div class="d-none d-md-block mt-3">
                             <button class="btn btn-outline-primary" :disabled="username === user.username">
                                 <T>user.account.changeUsername.action</T>
                             </button>
                         </div>
+                        <div class="d-block d-md-none mt-3">
+                            <button class="btn btn-outline-primary w-100" :disabled="username === user.username">
+                                <T>user.account.changeUsername.action</T>
+                            </button>
+                        </div>
                     </form>
+
+                    <hr/>
 
                     <form @submit.prevent="changeEmail" :disabled="savingEmail">
                         <h3 class="h6"><T>user.account.changeEmail.header</T></h3>
