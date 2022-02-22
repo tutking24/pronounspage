@@ -1,6 +1,6 @@
 # Sip, somos inclusivxs
 
-<small>2021-08-31 | Colectivo</small>
+<small>2021-08-31 | Colectivo | Traducido por [@AkerAdardun](/@AkerAdardun)</small>
 
 Somos un colectivo queer. Todxs nosotrxs sabemos perfectamente bien cómo se siente que se cuestionen, ridiculicen,
 e invaliden nuestras identidades. Y definitivamente no queremos hacer a nuestrxs hermanxs queer pasar por lo mismo.
