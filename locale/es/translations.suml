@@ -342,6 +342,81 @@ faq:
                     Las personas no binarias pueden usar pronombres binarios, algunas lesbianas usan {/él=él/lo} por razones culturales, etc.
                 - >
                     Simplemente di “pronombres”.
+        flags:
+            question: '¿Podrían añadir esta bandera? ¿Podrían remover aquella bandera?'
+            answer:
+                - >
+                    No.
+                - >
+                    Gestionar la lista de banderas y etiquetas es una tarea que toma demasiado tiempo para nuestro equipo. 
+                    De igual manera, es desafiante en términos de filtrar trolls y vándalxs, de identidades válidas y en buena fe. 
+                    Nosotrxs no queremos ser la policía de la identidad. Tampoco queremos pasar todo nuestro tiempo gestionando las banderas.
+                    Es un proyecto acerca de lenguaje y pronombres, después de todo, no de banderas. Son sólo un bonus.
+                - >
+                    Hicimos nuestro mejor esfuerzo para seleccionar una lista de banderas que sean populares y, a nuestro mejor conocimiento, generalmente aceptadas. 
+                    No planeamos aumentar o reducir esta lista.
+                - >
+                    Estamos conscientes de que algunas banderas pueden no ser del agrado de algunxs
+                    (por ejemplo: debido a TERFs (feministas radicales trans-excluyentes) haciendo el intento de reclamar un término y hacerlo transfóbico,
+                    debido a múltiples definiciones que causan confusión,
+                    o incluso debido a aspectos de la vida de un personaje mítico).
+                    Nosotrxs somos queer y trans, nos importan nuestrxs hermanxs trans.
+                    Desafortunadamente, es realmente difícil tomar tales decisiones 
+                    cuando recibimos mensajes de personas trans pidiéndonos que añadamos una bandera con la que se identifican de forma honesta,
+                    e igual de otras personas trans pidiéndonos que la removamos debido a que de alguna manera, lastima a las personas trans.
+                    La historia de cada etiqueta no es tan clara, no hay una autoridad académica para investigar al respecto.
+                    E incluso si lxs queerfóbicxs intentan convertir algunos términos en insultos,
+                    creemos en la fuerza de la comunidad para reclamarlos.
+                - >
+                    Si no te gusta una bandera, sólo no la uses.
+                    Si no encuentras tu bandera, súbela
+                    (será marcada como adición de lx usuarix para ahorrarnos vandalismos).
+        custom-pronouns:
+            question: 'Mis pronombres no están en la lista'
+            answer:
+                - >
+                    Hay un generador en el inicio, puedes usarlo para crear un enlace al conjunto de pronombres que te plazca.
+                - >
+        unlisted-cards:
+            question: '¿Quién puede encontrar mi tarjeta?'
+            answer:
+                - >
+                    No publicamos una lista de nombres de usuarix activos a través de la cual alguien pudiera buscar o filtrar nombres.
+                    Tu nombre de usuarix sólo será conocido a través del enlace que utilices para compartir tu tarjeta (o si lo adivinan por casualidad).
+                - >
+                    A través de {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex}
+                    y {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt}
+                    solicitamos a los motores de búsqueda que se mantengan alejados de nuestras tarjetas.
+                    Toma en cuenta, sin embargo, que no todos los motores se adhieren a estas directivas,
+                    y que esta adición es reciente, así que las páginas que ya los hayan registrado
+                    (p. ej. si su sistema se encontró un enlace público a tu tarjeta de pronouns.page)
+                    probablemente los conserven en su caché por mucho tiempo.
+                - >
+                    Tú decides qué hay en tu tarjeta – recuerda que dependiendo de qué incluyas en ella (como enlaces a redes sociales),
+                    podrá ser más fácil o más difícil para otras personas identificarte.
+        verified-links:
+            question: '¿Cómo hago que los enlaces en mi tarjeta estén verificados?'
+            answer:
+                - >
+                    En la sección de {/account=account settings} puedes conectar y desconectar múltiples cuentas de otros sitios,
+                    lo cual te permite usarlas como proveedoras de inicio de sesión.
+                    Si, además, decides publicar el enlace a tu cuenta de otro sitio en tu tarjeta,
+                    entonces ese enlace será marcado con el ícono de escudo ([shield-check]).
+                    Y también incluirá una etiqueta <code>rel="me"</code>, para que servicios como Mastodon también puedan verificarlo.
+                    Hasta ahora, esta característica sólo funciona con Twitter y Mastodon.
+        business:
+            question: '¿Son un negocio?'
+            answer:
+                - >
+                    Nop. Somos voluntarixs.
+                    Creamos el sitio web con nuestro propio trabajo.
+                    Los costos de mantenimiento son parcialmente cubiertos por el {https://arc.io/faq=plugin de arc.io},
+                    y el resto sale de nuestros bolsillos y
+                    de {/contact#support=tus donaciones} – ¡las cuales agradecemos mucho! ❤️
+                - >
+                    Eso significa que si nos estás “boicoteando” por {https://en.pronouns.page/blog/we-are-inclusive=nuestra inclusividad},
+                    nos estás haciendo un favor. De todos modos no ganamos dinero a través de tí.
+                    Lxs exclusionistas y lxs queerfóbicxs no son bienvenidxs aquí.
 
 links:
     header: 'Enlaces'
@@ -595,7 +670,7 @@ terms:
             age: >
                 No puedes crear una cuenta, en caso de ser una persona vetada para hacer uso de los servicios de conformidad bajo las leyes de tu jurisdicción aplicable.
                 No puedes crear una cuenta, en caso de ser menor de 13 años de edad.
-                Si eres menor de 16 años de edad, requerirás consentimiento de tu padre, madre o tutor legal para tu uso legal del Servicio.
+                Si eres menor de 16 años de edad, requerirás consentimiento de tu {/diccionario#xadre=xadre} o tutor legal para tu uso legal del Servicio.
             authentication: >
                 Al crear una cuenta con nosotrxs, eres responsable de salvaguardar el método de autenticación
                 que utilizas para acceder al Servicio (tal cómo: contraseña de tu correo electrónico y/o red social).
