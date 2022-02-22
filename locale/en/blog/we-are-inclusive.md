@@ -9,14 +9,14 @@ That's why we're inclusive.
 Our team of volunteers creates (among many other things we do) a tool to create a card where you can present
 your pronouns, names, identities and more.
 We're not policing what people put there, as long as it's all in good faith and not harmful.
-So we are banning for example people who use [the „Super Straight” flag](https://lgbta.wikia.org/wiki/Super_Straight),
+So we are banning for example people who use [the „Super Straight” flag](https://web.archive.org/web/20210513171753/https://lgbta.wikia.org/wiki/Super_Straight),
 which is an obvious transphobic [dog whistle](https://www.urbandictionary.com/define.php?term=dog%20whistle),
 or who use the flag of the Third Reich, or who use the n-slur in their profiles…
 
 But we'd never dare to ban a person just because they put both the bi flag and the lesbian flag in their profile.
 Queerness isn't a set of neatly defined boxes that everybody has to nicely fall into.
 Our definitions might differ slightly, our definitions can change in time (as does everything in language).
-Even a brief look at [the LGBTA Wikia](https://lgbta.wikia.org/wiki/Lesbian) confirms
+Even a brief look at [the LGBTA Wikia](https://web.archive.org/web/20220129172642/https://lgbta.fandom.com/wiki/Lesbian) confirms
 how ambivalent and rich in history the term “lesbian” is:  
 
 > Lesbian is a term that defines queer attraction to women.
@@ -34,7 +34,7 @@ out of which probably the most prominent example is the
 – used mostly by a-spec people, but not necessarily restricted just for them.
 It's perfectly possible to be, for example, biromantic and homosexual, or bisexual and homoromantic.
 
-Also keep in mind that “bi” in “bisexual” [stands for attraction to two or more genders](https://lgbta.wikia.org/wiki/Bisexual)
+Also keep in mind that “bi” in “bisexual” [stands for attraction to two or more genders](https://web.archive.org/web/20220127032859/https://lgbta.fandom.com/wiki/Bisexual)
 – which don't necessarily have to be men and women.
 If you're outraged that _“bi lesbians aren't valid, because lesbians can't be attracted to men”_,
 you're either forgetting or intentionally ignoring the existence of other genders. Please don't be enbyphobic.
