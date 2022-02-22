@@ -120,7 +120,7 @@ links:
             headline: 'El lenguaje inclusivo de lxs polacxs – Ausir y Dante en un podcast <strong>Proyecto Polonia</strong>'
     mediaMentions: []
     recommended: []
-    blog: false
+    blog: true
 
 contact:
     enabled: true
