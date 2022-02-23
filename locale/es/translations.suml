@@ -375,7 +375,7 @@ faq:
             question: 'Mis pronombres no están en la lista'
             answer:
                 - >
-                    Hay un generador en el inicio, puedes usarlo para crear un enlace al conjunto de pronombres que te plazca.
+                    Hay un generador en {/pronombres#generator=la página de pronombres}, puedes usarlo para crear un enlace al conjunto de pronombres que te plazca.
                 - >
         unlisted-cards:
             question: '¿Quién puede encontrar mi tarjeta?'
@@ -398,7 +398,7 @@ faq:
             question: '¿Cómo hago que los enlaces en mi tarjeta estén verificados?'
             answer:
                 - >
-                    En la sección de {/account=account settings} puedes conectar y desconectar múltiples cuentas de otros sitios,
+                    En la sección de {/cuenta=ajustes de cuenta} puedes conectar y desconectar múltiples cuentas de otros sitios,
                     lo cual te permite usarlas como proveedoras de inicio de sesión.
                     Si, además, decides publicar el enlace a tu cuenta de otro sitio en tu tarjeta,
                     entonces ese enlace será marcado con el ícono de escudo ([shield-check]).
@@ -412,9 +412,9 @@ faq:
                     Creamos el sitio web con nuestro propio trabajo.
                     Los costos de mantenimiento son parcialmente cubiertos por el {https://arc.io/faq=plugin de arc.io},
                     y el resto sale de nuestros bolsillos y
-                    de {/contact#support=tus donaciones} – ¡las cuales agradecemos mucho! ❤️
+                    de {/contacto#support=tus donaciones} – ¡las cuales agradecemos mucho! ❤️
                 - >
-                    Eso significa que si nos estás “boicoteando” por {/blog/somos-inclusivxs},
+                    Eso significa que si nos estás “boicoteando” por {/blog/somos-inclusivxs=nuestra inclusividad},
                     nos estás haciendo un favor. De todos modos no ganamos dinero a través de tí.
                     Lxs exclusionistas y lxs queerfóbicxs no son bienvenidxs aquí.
 
