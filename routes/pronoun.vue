@@ -34,7 +34,7 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        (<Twemoji><LinkedText escape :text="Array.isArray(selectedPronoun.description)
+                        (<Twemoji><LinkedText escape noicons :text="Array.isArray(selectedPronoun.description)
                             ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
                             : selectedPronoun.description"/></Twemoji>)
                     </em>
@@ -56,14 +56,14 @@
         </section>
 
         <section v-if="selectedPronoun.history">
-            <template v-for="part in selectedPronoun.history.replace('\\@', '###').split('@')">
+            <template v-for="part in selectedPronoun.history.replace(/\\@/g, '###').split('@')">
                 <div v-if="part === '__generator__'" class="alert alert-warning">
                     <Icon v="exclamation-triangle"/>
                     <T>pronouns.generated</T>
                 </div>
                 <div v-else class="alert alert-info">
                     <Icon v="info-circle"/>
-                    <LinkedText :text="part.replace('###', '@')"/>
+                    <LinkedText :text="part.replace(/###/g, '@')" noicons/>
                 </div>
             </template>
         </section>

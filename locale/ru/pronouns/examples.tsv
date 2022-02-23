@@ -4,12 +4,12 @@ singular	plural	isHonorific
 Дай {dative} время.	Дай {dative} время.	FALSE
 Не нужно {accusative} осуждать.	Не нужно {accusative} осуждать.	FALSE
 Я горжусь {instrumental}.	Я горжусь {instrumental}.	FALSE
-Расскажи мне о {prepositional}.	Расскажи мне о {prepositional}.	FALSE
+Расскажи мне о {prepositional}!	Расскажи мне о {prepositional}!	FALSE
 Тебе стоит познакомиться с {instrumental_with_preposition}.	Тебе стоит познакомиться с {instrumental_with_preposition}.	FALSE
 У {genitive_with_preposition} есть кот.	У {genitive_with_preposition} есть кот.	FALSE
 {'nominative} очень талантли{short_adjective}.	{'nominative} очень талантли{short_adjective}.	FALSE
 {'nominative} замечательн{adjective}.	{'nominative} замечательн{adjective}.	FALSE
 {'possessive} знаком{adjective} умеет играть на гитаре.	{'possessive} знаком{adjective} умеют играть на гитаре.	FALSE
-{'nominative} устрои{reflexive_verb_past} на работу.	{'nominative} устрои{reflexive_verb_past} на работу.	FALSE
-{'nominative} уже уш{nonreflexive_verb_past}.	{'nominative} уже уш{nonreflexive_verb_past}.
+{'nominative} собра{reflexive_verb_past} на работу.	{'nominative} собра{reflexive_verb_past} на работу.	FALSE
+{'nominative} сказа{nonreflexive_verb_past}, что пойдёт с нами!	{'nominative} сказа{nonreflexive_verb_past}, что пойдут с нами!	ЛОЖЬ
 {'nominative} сделает это {definitive}.	{'nominative} сделают это {definitive}.	FALSE
