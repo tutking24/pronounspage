@@ -61,7 +61,7 @@ const selectFragment = (sourcesMap, keyAndFragment) => {
     const source = {...sourcesMap[key]};
 
     const fragments = source.fragments
-        ? source.fragments.replace('\\@', '###').split('@').map(x => x.replace('###', '\\@'))
+        ? source.fragments.replace(/\\@/g, '###').split('@').map(x => x.replace(/###/g, '@'))
         : [];
 
     source.fragments = fragments[parseInt(fragment) - 1];
