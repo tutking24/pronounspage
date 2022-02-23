@@ -406,12 +406,12 @@ user:
     account:
         changeUsername:
             header: 'Nome do usuárie'
-            action: 'Mude'  # TODO more explicitly "Change username"
+            action: 'Mude o nome'
             invalid: 'O nome de usuárie deve ter entre 4 e 16 caracteres e só pode conter números, letras, pontos, traços e sublinhados.'
             taken: 'Este nome de usuárie já está em uso.'
         changeEmail:
             header: 'Endereço de e-mail'
-            action: 'Mude'  # TODO more explicitly "Change email"
+            action: 'Mude o endreço'
             invalid: 'Endereço de e-mail inválido.'
             taken: 'Este endereço já está em uso.'
         admin: 'Admin'
@@ -743,8 +743,8 @@ report:
     comment: 'por favor, explique brevemente o que há de errado com esse perfil'
     confirm: 'Você tem certeza de que deseja reportar @%username%?'
     sent: 'Sua reportação foi enviada. Agradecemos pela colaboração!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    terms: 'Lembre-se das restrições dos nossos {/termos=Termos de servico}'
+    hoarding: 'Por favor, não reporte contas por "acumulação" de nomes de usuário. Contas sem cartão são removidas automaticamente após um período de inatividade. Reportar uma conta não fará com que ela seja removida antes desse período.'
 
 flags:
     Abroromantic: 'Abrorromânti{inflection_c}'
