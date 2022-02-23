@@ -34,7 +34,7 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        (<Twemoji><LinkedText escape :text="Array.isArray(selectedPronoun.description)
+                        (<Twemoji><LinkedText escape noicons :text="Array.isArray(selectedPronoun.description)
                             ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
                             : selectedPronoun.description"/></Twemoji>)
                     </em>
@@ -63,7 +63,7 @@
                 </div>
                 <div v-else class="alert alert-info">
                     <Icon v="info-circle"/>
-                    <LinkedText :text="part.replace(/###/g, '@')"/>
+                    <LinkedText :text="part.replace(/###/g, '@')" noicons/>
                 </div>
             </template>
         </section>
