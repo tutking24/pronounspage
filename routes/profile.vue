@@ -25,6 +25,7 @@
                     <Icon v="edit"/>
                     <T>profile.edit</T>
                 </nuxt-link>
+                <template v-if="cardsEnabled">
                 <a v-if="!cardMenuVisible && !(profile.card === '' || profile.cardDark === '')" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="cardMenuVisible = true">
                     <p class="small mb-0">
                         <Icon v="id-card"/>
@@ -70,6 +71,7 @@
                         </button>
                     </span>
                 </div>
+                </template>
             </div>
 
             <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
@@ -157,6 +159,8 @@
                  terms: [],
                  cardCheckHandle: null,
                  cardMenuVisible: false,
+
+                 cardsEnabled: false,
             }
         },
         async asyncData({ app, route }) {
