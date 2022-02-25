@@ -6,7 +6,7 @@ const upsertBanArchive = async (db, type, value) => {
 }
 
 const removeBanArchive = async (db, type, value) => {
-    await db.get(SQL`DELETE FROM bans WHERE type = ${type} AND value = ${value});`);
+    await db.get(SQL`DELETE FROM bans WHERE type = ${type} AND value = ${value};`);
 }
 
 const normaliseEmail = (email) => {
