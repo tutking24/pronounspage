@@ -35,15 +35,23 @@ async function warnInactive(db) {
     for (let user of users) {
         console.log('warn', user);
         if (!execute) { continue; }
-        if (user.email.endsWith('.oauth')) {
-            await db.get(`UPDATE users SET inactiveWarning = ${now - week - 1000} WHERE id = '${user.id}'`);
-            continue;
+
+        try {
+            let userRefreshed = await db.get(`SELECT u.id, u.username, u.email, u.bannedReason FROM users u WHERE u.id = '${user.id}'`);
+            if (userRefreshed.inactiveWarning !== null) { continue; }
+
+            if (userRefreshed.email.endsWith('.oauth')) {
+                await db.get(`UPDATE users SET inactiveWarning = ${now - week - 1000} WHERE id = '${userRefreshed.id}'`);
+                continue;
+            }
+            await db.get(`UPDATE users SET inactiveWarning = ${now} WHERE id = '${userRefreshed.id}'`);
+            if (userRefreshed.bannedReason !== null) {
+                continue;
+            }
+            mailer(userRefreshed.email, 'inactivityWarning')
+        } catch (e) {
+            console.error(e);
         }
-        await db.get(`UPDATE users SET inactiveWarning = ${now} WHERE id = '${user.id}'`);
-        if (user.bannedReason !== null) {
-            continue;
-        }
-        mailer(user.email, 'inactivityWarning')
         await sleep(3000);
     }
 }
