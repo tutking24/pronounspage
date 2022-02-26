@@ -5,113 +5,60 @@ header: true
 pronouns:
     enabled: true
     route: 'pronouns'
-    default: 'he'
+    default: '그대'
     any: 'any'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: '교환 가능한 형태'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
+            많은 논바이너리 사람들은 하나 이상의 형식을 서로 바꿔서 사용합니다.
+            둘 중 하나라고 불러도 괜찮습니다.
+            어떤 사람들은 다른 사람들이 그들에 대해 이야기할 때 이러한 형태를 번갈아 가며 사용하는 것을 좋아합니다.
+        examples: ['그와 그녀', '그와 그들', '그녀와 그들']
     null:
-        description: >
-            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
-            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
-        history: >
-            Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence.
-            See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
+        description: '대명사 없음 / 무효 대명사 / 자기 이름'
+        history: '어떤 사람들은 대명사를 사용하지 않고 대신 이름, 이니셜 또는 수동태로 대명사를 생략하는 것을 선호합니다({https://lgbta.wikia.org/wiki/Nullpronominal=널 의례적인}.'
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-        routes: ['avoiding']
-        ideas:
-            -
-                header: 'Use names or initials instead of pronouns'
-                normative: true
-                examples:
-                    - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
-                    - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
-                    -
-                        - 'Her graduation starts soon'
-                        - '{/:J=J}''s graduation starts soon'
-            -
-                header: 'Passive voice'
-                normative: true
-                examples:
-                    - ['He answered the phone', 'The phone was answered']
-                    -
-                        - 'Wen takes good care of her cat'
-                        - 'Wen''s cat is well cared for'
-            -
-                header: 'Rephrasing the sentence (circumlocution)'
-                normative: true
-                examples:
-                    - ['Lior did it all by himself', 'Lior did it all without any help']
-                    - ['Gael talks in his sleep', 'Gael talks while sleeping']
-            -
-                header: 'Replacing a pronoun with a descriptive noun or phrase'
-                normative: true
-                examples:
-                    - ['She landed the plane safely', 'The pilot landed the plane safely']
-                    - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
-                    - ['She argues that…', 'The person who started this discussion argues that…']
-            -
-                header: 'Dropping pronouns'
-                normative: true
-                examples:
-                    - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
-                    - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
+            possessive_determiner: '#것'
+            possessive_pronoun: '#꺼'
+            reflexive: '#자기'
+        examples: [':안드레아', ':S']
+        template: '예제 중 하나를 열고 URL의 이름/이니셜을 자신의 것으로 바꾸세요.'
     emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        description: '이모티콘 자체 대명사'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=이모티콘 자체 대명사}는 온라인 커뮤니케이션을 위한 것이며 발음해서는 안 됩니다.'
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
+            possessive_determiner: '#것'
+            possessive_pronoun: '#꺼'
+            reflexive: '#자기'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
-    mirror:
-        route: 'mirror'
-        name: 'Mirror pronouns / Mirrorpronominal'
-        description: >
-            A person who uses mirror pronouns wants to be referred to with the same pronouns as the person talking.
-        example:
-            - 'Person A uses mirror pronouns.'
-            - 'Person B uses {/she=she/her}, so when she talks about person A, she uses “she/her” to refer to her.'
-            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fea uses either ze/hir or fæ/fær to refer to fær.'
+        template: '예제 중 하나를 열고 URL의 이모티콘을 자신의 이모티콘으로 바꾸면 됩니다.'
     slashes: true
-    others: 'Other pronouns'
+    avoiding: false
+    others: '기타 대명사'
 
 pronunciation:
     enabled: true
     voices:
         GB:
-            language: 'en-GB'
-            voice: 'Emma'
+            language: 'ko-KO'
+            voice: 'Seoyeon'
             engine: 'neural'
 
 sources:
     enabled: true
-    route: 'sources'
+    route: '출처'
     submit: true
     mergePronouns: {}
-    extraTypes: ['avoiding', 'nounself']
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: '사전'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -170,15 +117,15 @@ faq:
 links:
     enabled: true
     split: false
-    route: 'links'
-    blogRoute: 'blog'
+    route: '링크'
+    blogRoute: '블로그'
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
-    academic: []
+            extra: '– 웹사이트의 영감.'
+
     mediaGuests: []
     mediaMentions: []
     recommended: []
@@ -186,29 +133,29 @@ links:
 
 contact:
     enabled: true
-    route: 'contact'
+    route: '연락'
     team:
         enabled: true
-        route: 'team'
+        route: '팀'
 
 support:
     enabled: true
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'terms'
+    route: '어카운트'
+    termsRoute: '자귀'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[no honorific]', 'mx.', 'mr.', 'ms.', 'sir', 'madam', 'sai', 'mir', 'shazam', 'zam', 'comrade']
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['[존경 없음]', 'mx.', '군', '양', '선생님', '씨', '부인님', '사이', '미르', '샤잠', '잠', '동료']
+        - ['사람', '남자', '여자', '아가씨', '녀석', '소년', '소녀', '친구', '단짝', '형', '언니', '형제', '동생']
+        - ['예쁘다', '멋있다', '귀렵다', '열렬하다', '섹시하다']
+        - ['친구', '파트너', '남자 친구', '여자 친구', '조이프렌드', '남편', '아내', '키스메이트', '자기', '사랑', '우우']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: '그들'
 
 calendar:
     enabled: true

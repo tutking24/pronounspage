@@ -585,6 +585,7 @@ profile:
         close: 'Only if we''re close'
         meh: 'Okay'
         no: 'Nope'
+    bannerButton: 'Create a card'
     card:
         link: 'Card picture'
         generate: 'Generate'
