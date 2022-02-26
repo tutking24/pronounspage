@@ -481,7 +481,7 @@ user:
     headerLong: '나의 계정'
     tokenExpired: '토큰이 만료되었습니다. 웹사이트를 리프레시하고 다시 시도하세요.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: '로그인하거나 계정을 만들려면 소셜 미디어 버튼을 사용하거나 아래 필드에 이메일을 입력한 다음 우편함으로 받을 코드를 확인하세요.'
         placeholder: '이메일(또는 이미 등록된 사용자 이름)'
         action: '로그인' # TODO: 'Log in / register'
         emailSent: '6자리 코드가 포함된 이메일을 보내드렸습니다. 여기에 입력하세요. 코드는 일회용이며 15분 동안 유효합니다.'
@@ -493,7 +493,7 @@ user:
         why: >
             등록하면 카드를 ({/@example=이렇게}) 관리할 수 있습니다.
         passwordless: '웹사이트는 비밀번호를 저장하지 않습니다. {https://avris.it/blog/passwords-are-passé=추가 정보.}'
-        instancePlaceholder: 'Instance'
+        instancePlaceholder: '사례'
     code:
         action: '확인'
         invalid: '유효하지 않은 코드'
@@ -522,22 +522,22 @@ user:
         disconnect: '연결 해제'
         disconnectConfirm: '이 연결을 제거하고 십나요? (항상 이메일 %email%을 사용하여 로그인할 수 있습니다.)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: '다단계 인증'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            TOTP 인증 앱(예: {https://authy.com/=Authy})에서 이 QR 코드를 스캔하거나 아래에 텍스트 코드를 입력하세요.
+            그런 다음 생성되는 초기 토큰을 입력합니다.
         recovery:
-            header: 'Recovery code'
+            header: '복구 코드'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                다음 복구 코드를 안전한 장소에 저장하세요.
+                인증 장치를 분실한 경우 이를 사용하여 MFA를 우회할 수 있습니다.
+            saved: 'OK, 내가 구했어!'
+            enter: '복구 코드 입력'
+        cancel: '로그인 취소'
+        enabled: '활성화됨'
+        enable: 'MFA 활성화'
+        disable: 'MFA 비활성화'
+        disableConfirm: 'MFA를 비활성화하시겠습니까?'
 
 profile:
     description: '설명'
@@ -575,7 +575,7 @@ profile:
         header: '카드 편집기'
         save: '카드 저장'
         defaults: '기본값으로 복원'
-        propagate: 'Propagate this change to your cards in all languages'
+        propagate: '이 변경 사항을 모든 언어로 카드에 전파하세요.'
     opinion:
         yes: '네'
         jokingly: '농담으로'
@@ -589,11 +589,11 @@ profile:
         generating: '생성 진행 중... 몇 분 정도 걸릴 수 있습니다.'
     empty: '이 사람은 아직 카드를 만들지 않았습니다.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: '개인적'
+        description: '이 섹션은 나만 볼 수 있습니다.'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
+        header: '언어'
+        description: '@%username%'님의 카드는 다음 언어로도 제공됩니다.'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
 
@@ -617,12 +617,12 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
-    links: 'Contact, social media'
-    legal: 'Legal'
-    financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+        {https://gitlab.com/Avris/Zaimki=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
+    links: '연락처, 소셜 미디어'
+    legal: '합법'
+    financial: '재무 투명성'
+    technical: '전문'
+    sibling: '형제 프로젝트'
 
 notFound:
     message: '페이지를 찾을 수 없습니다'
@@ -649,48 +649,47 @@ terms:
     #    {https://en.pronouns.page/terms=here}.
     content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
-            who can be contacted via email:
+            이 서비스 약관은 웹 사이트에서 제공되는 서비스에 대한 액세스 및 사용에 적용됩니다.
+            <strong>pronouns.page / zaimki.pl</strong> "중립 언어 위원회" 집단에서 운영
+             이메일로 연락하기:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in our Privacy Policy below.
+            서비스를 사용함으로써 귀하는 본 서비스 약관에 동의하고 동의합니다.
+            아래 개인정보 보호정책에 설명된 대로 귀하의 데이터를 수집하고 처리합니다.
         accounts:
-            header: 'Users and accounts'
+            header: '사용자 및 계정'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                관할 법률에 따라 계정이 금지된 경우 계정을 만들 수 없습니다.
+                13세 미만인 경우 계정을 만들 수 없습니다.
+                만 16세 미만인 경우 친권자의 동의가 필요합니다.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                귀하가 당사에 계정을 생성할 때 인증 방법을 보호할 책임이 있습니다 (즉: 귀하의 이메일 계정 및/또는 소셜 미디어 플랫폼의 비밀번호).
+                 귀하는 이를 제3자에게 공개하지 않을 것에 동의합니다.
+                 보안 위반 또는 계정의 무단 사용을 알게 된 경우 즉시 당사에 알려야 합니다.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                당사는 사전 통지나 책임 없이 귀하의 계정을 즉시 종료하거나 정지할 수 있습니다.
+                귀하가 약관을 위반하는 경우를 포함하되 이에 국한되지 않는 이유를 불문합니다.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                카드가 없고 지난 30일 동안 활동이 없는 계정이 제거되고 사용자 이름이 해제됩니다.
         content:
-            header: 'Content'
+            header: '콘텐츠'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                귀하가 서비스에 게시하는 콘텐츠는 귀하의 것입니다.
+                이를 게시하면 전 세계적으로 로열티 프리 라이선스를 부여하게 됩니다.
+                어떤 방식으로든 그러한 콘텐츠를 사용, 복사, 재생산, 처리, 각색, 수정, 게시, 전송, 표시 및 배포합니다.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                우리는 서비스의 다른 사용자가 게시한 콘텐츠의 진실성 또는 안전성을 보증하거나 보증하지 않습니다.
+                특히 외부 웹사이트에 대한 모든 링크.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                법을 위반하거나 사회 규범을 위반할 수 있는 콘텐츠를 서비스에 게시하는 것은 금지되어 있습니다.
+                다음을 포함하지만 이에 국한되지 않습니다.
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
+                totalitarian: '전체주의 정권의 전파'
+                hateSpeech: '연설 증오'
+                racism: '민족적 우월감'
+                xenophobia: '외국 혐오증'
+                homophobia: '동성애 혐오증'
+                transphobia: '트랜스포비아'
+                enbyphobia: '비공포증'
                 queerphobia: 'queerphobia'
                 exclusionism: 'queer exclusionism'
                 misogyny: 'misogyny'

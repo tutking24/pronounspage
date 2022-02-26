@@ -67,7 +67,7 @@ nouns:
     templates: true
 
 community:
-    route: 'terminology'
+    route: '술어'
 
 inclusive:
     enabled: false
@@ -76,18 +76,18 @@ terminology:
     enabled: true
     published: true
     categories:
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
-        - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
+        - '성적 지향'
+        - '로맨틱 오리엔테이션'
+        - '3차 오리엔테이션'
+        - '성별'
+        - '성별 표현'
+        - '관계 모델'
+        - '언어'
+        - '매력'
+        - '정치'
+        - '편견'
 
-    route: 'terminology'
+    route: '술어'
 
 names:
     enabled: false
@@ -101,14 +101,14 @@ english:
     route: 'english'
     pronounGroups:
         -
-            name: 'Normative forms'
+            name: '규범적 형태'
             description:
                 - >
-                    Because of the limitations of <language> grammar, or simply because they just prefer it that way,
-                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
-                    – either the same as their gender assigned at birth or the opposite.
-                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
-            table: {on: 'Masculine', ona: 'Feminine'}
+                    <언어> 문법의 한계 때문에, 또는 단순히 그렇게 선호하기 때문에,
+                    많은 논바이너리 사람들은 단순히 "그" 또는 "그녀"를 사용하기로 결정합니다.
+                    – 출생 시 지정된 성별과 같거나 그 반대입니다.
+                    그렇다고 해서 그것들이 덜 논바이너리가 되는 것은 아닙니다! 대명사 ≠ 성별.
+            table: {on: '남성 명사', ona: '여성 명사'}
 
 faq:
     enabled: true
