@@ -431,12 +431,12 @@ user:
     account:
         changeUsername:
             header: 'ユーザー名'
-            action: '変更'  # TODO more explicitly "Change username"
+            action: 'ユーザー名を変更'
             invalid: 'ユーザー名は、4～16文字で、数字、ローマ字、ピリオド、ハイフン、アンダースコアを含むものとします。'
             taken: 'このユーザー名は使用不可能です。'
         changeEmail:
             header: 'メールアドレス'
-            action: '変更'  # TODO more explicitly "Change email"
+            action: 'メールアドレスを変更'
             invalid: '無効なメールアドレス'
             taken: 'このメールアドレスは利用できません。'
         admin: '管理者'

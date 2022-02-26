@@ -179,13 +179,11 @@ terminology:
     headerLong: 'Dicionário de terminologia queer'
     info:
         - >
-            Um dicionário de terminologia relacionada à comunidade LGBTQ+.
+            Muitos dos termos e frases relacionadas à comunidade LGBTQ+
+            são anglicismos.
+            Gostaríamos de apresentar um glossário destes termos, descrevendo seus significados
+            e propondo suas traduções em português.
 
-        # TODO
-        #    Many of the terms and phrases related to the LGBTQ+ community
-        #    are used as English inserts into <your language> texts.
-        #    We'd like to present a glossary of those terms, describe their meaning,
-        #    and propose their <your language> translations.
     term: 'Termo'
     original: 'Etimologia'
     category: 'Categoria'
@@ -406,12 +404,12 @@ user:
     account:
         changeUsername:
             header: 'Nome do usuárie'
-            action: 'Mude o nome'
+            action: 'Mude o nome de usuárie'
             invalid: 'O nome de usuárie deve ter entre 4 e 16 caracteres e só pode conter números, letras, pontos, traços e sublinhados.'
             taken: 'Este nome de usuárie já está em uso.'
         changeEmail:
             header: 'Endereço de e-mail'
-            action: 'Mude o endreço'
+            action: 'Mude o endreço de e-mail'
             invalid: 'Endereço de e-mail inválido.'
             taken: 'Este endereço já está em uso.'
         admin: 'Admin'
