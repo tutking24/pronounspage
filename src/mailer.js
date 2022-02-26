@@ -86,6 +86,11 @@ const templates = {
             </p>
         `,
     },
+    cardsWarning: {
+        subject: 'Cards queue is getting long',
+        text: 'There\'s {{count}} cards in the queue!',
+        html: '<p>There\'s {{count}} cards in the queue!</p>',
+    }
 }
 
 const applyTemplate = (template, context, params) => {
