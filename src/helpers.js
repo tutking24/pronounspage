@@ -22,6 +22,7 @@ export const head = ({title, description, banner, noindex = false}) => {
     const meta = { meta: [] };
 
     if (title) {
+        title = title.replace(/&#39;/g, '\'');
         title = clearLinkedText(title, false);
         title += ' • ' + process.env.TITLE;
         meta.title = title;
