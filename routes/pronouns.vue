@@ -81,7 +81,7 @@
                                         </span>
                                     </li>
                                 </ul>
-                                <div class="my-3">
+                                <div class="my-3" v-if="config.pronouns.plurals">
                                     <div class="custom-control custom-switch" v-if="isHonorific">
                                         <input type="checkbox" class="custom-control-input" id="pluralHonorific" v-model="selectedPronoun.pluralHonorific[0]">
                                         <label class="custom-control-label" for="pluralHonorific"><T>pronouns.plural</T> <Icon v="level-up"/></label>
