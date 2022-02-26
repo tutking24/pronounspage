@@ -160,7 +160,7 @@
                  cardCheckHandle: null,
                  cardMenuVisible: false,
 
-                 cardsEnabled: false,
+                 cardsEnabled: true,
             }
         },
         async asyncData({ app, route }) {
