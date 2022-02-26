@@ -37,7 +37,7 @@ async function warnInactive(db) {
         if (!execute) { continue; }
 
         try {
-            let userRefreshed = await db.get(`SELECT u.id, u.username, u.email, u.bannedReason FROM users u WHERE u.id = '${user.id}'`);
+            let userRefreshed = await db.get(`SELECT u.id, u.username, u.email, u.bannedReason, u.inactiveWarning FROM users u WHERE u.id = '${user.id}'`);
             if (userRefreshed.inactiveWarning !== null) { continue; }
 
             if (userRefreshed.email.endsWith('.oauth')) {
