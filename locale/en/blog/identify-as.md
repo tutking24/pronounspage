@@ -11,11 +11,10 @@ But if we were told that “he _identifies as_ Portuguese”, we might start hav
 Does he live there but doesn't have a citizenship? Does he have distant relatives from Portugal but himself hasn't even been there yet?
 What's his deal?
 
-When we hear “she is Black”, we just treat it as a simple piece of information.
-But if we were told “she _identifies as_ Black”?
-So, like, what, is she white but she made a DNA test and discovered 1% of African ancestry
-and now decided to appropriate Black culture or something?
-If not, then why would you phrase it like that, instead of just stating a fact that “she's black”?
+When we hear “she is a redhead”, we just treat it as a simple piece of information.
+But if we were told “she _identifies as_ a redhead”?
+So, like… her hair isn't _really_ red? Did she dye it and the speaker doesn't count it as _actually_ having a given hair colour?
+Why would you phrase it like that, instead of just stating a fact that “she has red hair”?
 
 But somehow when it comes to queer identities “identify as” has become a very popular way of putting them into words.
 Instead of simply “they're nonbinary” we often hear “they _identify as_ nonbinary”.
