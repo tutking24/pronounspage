@@ -472,7 +472,7 @@ user:
         disableConfirm: '多要素認証を無効にしてもよろしいですか？'
 
 profile:
-    description: '説明'
+    description: '自己紹介'
     names: '名前'
     pronouns: '三人称代名詞'
     pronounsInfo: '三人称代名詞（例えば「あの人」）かリンク（例えば「https://ja.pronouns.page/彼」）を入力してください。'
