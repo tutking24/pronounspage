@@ -72,6 +72,7 @@ const templates = {
             <p>[[ban.header]]</p>
             <p>[[ban.reason]][[quotation.colon]] %reason%</p>
             <p style="font-size: 12px; color: #777">[[quotation.start]]${terms}[[quotation.end]]</p>
+            <p style="color: #999; font-size: 10px;">@{{username}}</p>
         `,
     },
     inactivityWarning: {
@@ -84,6 +85,7 @@ const templates = {
                     [[user.removeInactive.email.cta]]
                 </a>
             </p>
+            <p style="color: #999; font-size: 10px;">@{{username}}</p>
         `,
     },
     cardsWarning: {

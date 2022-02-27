@@ -48,7 +48,7 @@ async function warnInactive(db) {
             if (userRefreshed.bannedReason !== null) {
                 continue;
             }
-            mailer(userRefreshed.email, 'inactivityWarning')
+            mailer(userRefreshed.email, 'inactivityWarning', {username: userRefreshed.username});
         } catch (e) {
             console.error(e);
         }

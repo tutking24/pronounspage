@@ -163,7 +163,7 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
             WHERE id = ${user.id}
         `);
         await archiveBan(req.db, user);
-        mailer(user.email, 'ban', {reason: req.body.reason});
+        mailer(user.email, 'ban', {reason: req.body.reason, username: normalise(req.params.username)});
     } else {
         await req.db.get(SQL`
             UPDATE users
