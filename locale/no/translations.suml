@@ -117,6 +117,7 @@ sources:
         key: 'Nøkkel'
         keyInfo: 'identifiserer for å linke kilder mellom språk versjoner og linker med ordboken'
         images: 'Bilder'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'På andre språk'
     referenced: 'Eksempler på bruk i setninger'
 

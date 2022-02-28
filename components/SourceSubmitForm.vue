@@ -52,6 +52,14 @@
                     </ListInput>
                 </div>
                 <div class="form-group">
+                    <div class="form-check form-switch my-2">
+                        <label>
+                            <input class="form-check-input" type="checkbox" v-model="form.spoiler">
+                            <T>sources.submit.spoiler</T>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="pronouns" class="required"><T>sources.submit.pronouns</T></label>
                     <p class="small text-muted mb-0">
                         <T>sources.submit.pronounsInfo</T>
@@ -128,6 +136,7 @@
                     comment: '',
                     images: [],
                     link: '',
+                    spoiler: false,
                     key: null,
                     base: null,
                 },
@@ -158,6 +167,7 @@
                         comment: '',
                         images: [],
                         link: '',
+                        spoiler: false,
                         key: null,
                         base: null,
                     }
@@ -177,6 +187,7 @@
                     comment: source.comment,
                     images: source.images,
                     link: source.link,
+                    spoiler: source.spoiler,
                     key: source.key,
                     base: source.id,
                 }

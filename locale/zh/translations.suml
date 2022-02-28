@@ -92,7 +92,7 @@ sources:
         Series: '電視劇'
         Song: '音樂'
         Poetry: '詩歌'
-        Comics: '漫畫'        
+        Comics: '漫畫'
         Game: '遊戲'
         Other: '其他'
     submit:
@@ -114,6 +114,7 @@ sources:
         key: '键'
         keyInfo: '用于在语言版本之间链接源并与字典链接的标识符'
         images: '意象'
+        spoiler: 'Spoiler' # TODO
     otherVersions: '在其他語言'
     referenced: '榜樣'
 

@@ -118,6 +118,7 @@ sources:
         key: 'Yave'
         keyInfo: 'Identifiador para atar fuentes entre versiones en varias linguas i atarlas kon el diksionaryo'
         images: 'Imajes'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'En otras linguas'
     referenced: 'Enshemplos del uzo'
 

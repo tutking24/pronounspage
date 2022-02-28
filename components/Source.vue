@@ -58,14 +58,22 @@
                 </span>
             </li>
         </ul>
-        <div v-if="source.images.length" class="source-images">
-            <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2" size="8rem"/>
+        <div v-if="source.spoiler && !showSpoiler" class="py-3">
+            <button type="button" class="btn btn-outline-primary" @click="showSpoiler = true">
+                <Icon v="eye-slash"/>
+                <T>sources.submit.spoiler</T>
+            </button>
         </div>
-        <ul v-if="source.fragments.length">
-            <li v-for="fragment in source.fragments" class="text-break">
-                <T>quotation.start</T><Spelling :text="addMarks(fragment.replace(/\n/g, '<br/>'))"></Spelling><T>quotation.end</T>
-            </li>
-        </ul>
+        <div v-else>
+            <div v-if="source.images.length" class="source-images">
+                <ImageThumb v-for="image in source.images" :key="image" :id="image" class="m-2" size="8rem"/>
+            </div>
+            <ul v-if="source.fragments.length">
+                <li v-for="fragment in source.fragments" class="text-break">
+                    <T>quotation.start</T><Spelling :text="addMarks(fragment.replace(/\n/g, '<br/>'))"></Spelling><T>quotation.end</T>
+                </li>
+            </ul>
+        </div>
         <div v-if="source.versions.length" class="my-3">
             <p>
                 <button :class="['btn', versionsShown ? 'btn-primary' : 'btn-outline-primary', 'btn-sm']" @click="versionsShown = !versionsShown">
@@ -104,6 +112,7 @@
                 pronounLibrary,
                 deleted: false,
                 versionsShown: false,
+                showSpoiler: false,
             }
         },
         methods: {

@@ -118,6 +118,7 @@ sources:
         key: '키'
         keyInfo: '언어 버전 간 소스 연결 및 사전 연결 식별자'
         images: '이미지'
+        spoiler: 'Spoiler' # TODO
     otherVersions: '다른 언어'
     referenced: '사용 예'
 

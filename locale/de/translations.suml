@@ -113,6 +113,7 @@ sources:
         key: 'Schlüssel'
         keyInfo: 'Kennzeichen, um Quellen zwischen Sprachversionen und dem Wörterbuch zu verbinden'
         images: 'Bilder'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'In anderen Sprachen'
     referenced: 'Beispiele zur Benutzung'
 
