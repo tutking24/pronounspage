@@ -1473,6 +1473,24 @@ census:
                 - ['liczba mnoga, rodzaj neutralny', '„byłośmy zmęczone”']
                 - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
                 - ['unikanie form nacechowanych płciowo', '„dopadło mnie zmęczenie”']
+            aggregates:
+                binarne:
+                    operation: 'OR'
+                    values: ['rodzaj męski', 'rodzaj żeński']
+                binarne_zamiennie:
+                    operation: 'AND'
+                    values: ['rodzaj męski', 'rodzaj żeński']
+                wyłącznie_binarne:
+                    operation: 'OR'
+                    values: ['rodzaj męski', 'rodzaj żeński']
+                    exclusive: true
+                wyłącznie_niebinarne:
+                    operation: 'OR'
+                    values: ['rodzaj neutralny', 'liczba mnoga, rodzaj męskoosobowy', 'liczba mnoga, rodzaj niemęskoosobowy', 'liczba mnoga, rodzaj neutralny', 'liczba mnoga, rodzaj postpłciowy', 'unikanie form nacechowanych płciowo']
+                    exclusive: true
+                mnogie:
+                    operation: 'OR'
+                    values: ['liczba mnoga, rodzaj męskoosobowy', 'liczba mnoga, rodzaj niemęskoosobowy', 'liczba mnoga, rodzaj neutralny', 'liczba mnoga, rodzaj postpłciowy']
         -
             type: 'checkbox'
             question: 'Jak piszesz o sobie / chcesz, by pisano o Tobie?'
@@ -1517,6 +1535,29 @@ census:
                         'n'/je'
                     - >
                         „'n' jest fajn'”, „lubię je' zwierzątko”
+            aggregates:
+                binarne:
+                    operation: 'OR'
+                    values: ['on/jego', 'ona/jej']
+                binarne_zamiennie:
+                    operation: 'AND'
+                    values: ['on/jego', 'ona/jej']
+                wyłącznie_binarne:
+                    operation: 'OR'
+                    values: ['on/jego', 'ona/jej']
+                    exclusive: true
+                neutralne:
+                    operation: 'OR'
+                    values: ['ono/jego', 'ono/jej', 'ono/jejgo', 'ono/jeno', 'ono/jenu', 'vono/vego', 'ono/eno']
+                postpłciowe:
+                    operation: 'OR'
+                    values: ['onu/jenu', 'onu/jejo', 'ne/nego']
+                mnogie:
+                    operation: 'OR'
+                    values: ['oni/ich', 'one/ich', 'oni/e/ich', 'ona/ich', 'ony/ich', 'onie/ich']
+                graficzne:
+                    operation: 'OR'
+                    values: ['onæ/jæ', 'on/a/jego/jej', 'onx/jex', 'on_/je_', 'on*/je*', 'onø/jenø']
         -
             type: 'checkbox'
             question: 'Jakich form rzeczownikowych używasz wobec siebie?'
@@ -1549,6 +1590,11 @@ census:
                 - ['państwo (l. mn.)', '„czy chcieliby państwo…”']
                 - ['pań']
                 - ['panu']
+            aggregates:
+                wyłącznie_ty:
+                    operation: 'OR'
+                    values: ['„per ty”']
+                    exclusive: true
         -
             type: 'checkbox'
             question: >
@@ -1632,6 +1678,10 @@ census:
             optionsLast:
                 - ['nie mam preferencji po angielsku']
                 - ['bez użycia zaimków (nounself, emojiself, …)']
+            aggregates:
+                neozaimki:
+                    operation: 'OR'
+                    values: ['ae/aer', 'co/cos', 'e/em/eir', 'e/em/es', 'ey/em', 'fae/faer', 'hu/hum', 'ne/nem', 'ne/nir', 'per/per', 's/he/hir', 'thon/thons', 've/ver', 'vi/vir', 'xe/xem', 'ze/hir', 'ze/zir', 'zhe/zher']
         -
             type: 'checkbox'
             question: 'Jakimi słowami opisujesz swoją płeć?'
