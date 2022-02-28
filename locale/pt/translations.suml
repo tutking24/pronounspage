@@ -372,7 +372,35 @@ contact:
         members: 'Membres atuais'
         member: 'Membre do coletivo'
         upcoming: 'Próximas versões'
-        # TODO join: …
+        join:
+            header: 'Junte-se a nós!'
+            encouragement: >
+                Você se preocupa com a linguagem neutra e não-binária?
+                Você quer ajudar o nosso coletivo a promovê-la? Legal!
+                Toda ajuda é bem-vinda!
+            areasIntro: ‘Algumas áreas em que você poderá ajudar:'
+            areas:
+                - 'expansão e moderação de dicionários e glossários;'
+                - 'expansão e moderação da lista de referências;'
+                - 'criação gráfica e de posts em mídias sociais;'
+                - 'redação de respostas às mensagens recebidas;'
+                - 'moderação de perfis;'
+                - 'criação de uma nova versão do site em outra língua;'
+                - 'tradução;'
+                - 'coordenação do processo de criação de novas versões;'
+                - 'redação de posts para o blog;'
+                - 'programação;'
+                - '…'
+            allies: >
+                Alguns destes itens requerem o ponto de vista de uma pessoa não-binária, outros não necessariamente.
+                Por isso, também aceitamos aliados binários.
+            how: 'Como participar? Envie um email para {mailto:contact@pronouns.page=contact@pronouns.page}, incluindo:'
+            application:
+                - 'uma breve apresentação sua;'
+                - 'um link para o seu perfil pronouns.page;'
+                - 'links para suas redes sociais;'
+                - 'se você tem alguma experiência em ativismo;'
+                - 'as áreas em que você gostaria de contribuir.'
 
 support:
     header: 'Apoie-nos'
