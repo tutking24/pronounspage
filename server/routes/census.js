@@ -121,7 +121,6 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
             SELECT COUNT(*) as c FROM census
             WHERE locale = ${global.config.locale}
               AND edition = ${global.config.census.edition}
-              AND relevant = 1
               AND troll IS NULL
         `)).c,
     });
