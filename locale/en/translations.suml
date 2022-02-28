@@ -573,6 +573,7 @@ user:
                 in order to free up the unused usernames.
                 Heads up: it looks like you haven't created any cards and haven't logged in for a while.
                 You can keep your account by creating a card, otherwise it will get removed in a week.
+                If you don't want to keep your account, you don't need to do anything.
             cta: 'Create a card'
 
 profile:
