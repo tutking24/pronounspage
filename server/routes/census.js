@@ -175,10 +175,10 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
                     answer[`${i}_aggr_${aggr}`] = calculateAggregate(question.aggregates[aggr], answerForAggregate) ? 1 : '';
                 }
             } else {
-                answer[`${i}_`] = answers[i.toString()] || '';
+                answer[`${i}_`] = (answers[i.toString()] || '').replace(/\n/g, ' | ');
             }
             if (question.writein) {
-                answer[`${i}__writein`] = writins[i.toString()] || '';
+                answer[`${i}__writein`] = (writins[i.toString()] || '').replace(/\n/g, ' | ');
             }
             i++;
         }
