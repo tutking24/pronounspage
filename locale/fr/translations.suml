@@ -116,6 +116,7 @@ sources:
         key: 'Key'
         keyInfo: 'Identifiant pour relier les sources entre les versions linguistiques et établir des liens avec le dictionnaire'
         images: 'Images'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'Dans d’autres langues'
     referenced: 'Exemples d’usage'
 

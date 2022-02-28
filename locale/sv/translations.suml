@@ -120,6 +120,7 @@ sources:
         key: 'Nyckel'
         keyInfo: 'Identifierare för att länka källor mellan språkversioner och länka till ordbok'
         images: 'Bilder'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'På andra språk'
     referenced: 'Exempel på användning'
 

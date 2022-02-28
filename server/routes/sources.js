@@ -89,12 +89,12 @@ router.post('/sources/submit', handleErrorAsync(async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, submitter_id, base_id)
+        INSERT INTO sources (id, locale, pronouns, type, author, title, extra, year, fragments, comment, link, key, images, spoiler, submitter_id, base_id)
         VALUES (
             ${id}, ${global.config.locale}, ${req.body.pronouns.join(';')},
             ${req.body.type}, ${req.body.author}, ${req.body.title}, ${req.body.extra}, ${req.body.year},
             ${req.body.fragments.join('@').replace(/\n/g, '|')}, ${req.body.comment}, ${req.body.link},
-            ${clearKey(req.body.key)}, ${req.body.images || null},
+            ${clearKey(req.body.key)}, ${req.body.images || null}, ${req.body.spoiler ? 1 : 0},
             ${req.user ? req.user.id : null}, ${req.body.base}
         )
     `);

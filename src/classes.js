@@ -101,7 +101,7 @@ function clone(mainObject) {
 export class Source {
     constructor ({
              id, pronouns, type, author, title, extra, year, fragments = '',
-             comment = null, link = null,
+             comment = null, link = null, spoiler = false,
              submitter = null, approved, base_id = null,
              key = null, versions = [], locale = config.locale,
              images = null,
@@ -118,6 +118,7 @@ export class Source {
             : [];
         this.comment = comment;
         this.link = link;
+        this.spoiler = !!spoiler;
         this.submitter = submitter;
         this.approved = approved;
         this.base_id = base_id;

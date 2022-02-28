@@ -120,9 +120,9 @@ sources:
         key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
         images: 'Images'
+        spoiler: 'Spoiler'
     otherVersions: 'In other languages'
     referenced: 'Examples of use'
-
 
 nouns:
     header: 'Dictionary'

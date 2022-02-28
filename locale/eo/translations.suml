@@ -107,6 +107,7 @@ sources:
         key: 'Ŝlosilo'
         keyInfo: 'Identigilo por ligi fontojn inter lingvoversiojn kaj ligado al la vortaro'
         images: 'Bildoj'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'En aliaj lingvoj'
     referenced: 'Ekzemploj de uzo'
 

@@ -117,6 +117,7 @@ sources:
         key: 'Chave'
         keyInfo: 'Identificador para conectar fontes entre versões e conectar com dicionário'
         images: 'Imagens'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'Em outros idiomas'
     referenced: 'Exemplos de uso'
 

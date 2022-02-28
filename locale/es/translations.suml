@@ -118,6 +118,7 @@ sources:
         key: 'Clave'
         keyInfo: 'Identificador para vincular fuentes entre versiones en varios idiomas y vincularlas con el diccionario'
         images: 'Imágenes'
+        spoiler: 'Spoiler' # TODO
     otherVersions: 'En otros idiomas'
     referenced: 'Ejemplos del uso'
 
@@ -348,12 +349,12 @@ faq:
                 - >
                     No.
                 - >
-                    Gestionar la lista de banderas y etiquetas es una tarea que toma demasiado tiempo para nuestro equipo. 
-                    De igual manera, es desafiante en términos de filtrar trolls y vándalxs, de identidades válidas y en buena fe. 
+                    Gestionar la lista de banderas y etiquetas es una tarea que toma demasiado tiempo para nuestro equipo.
+                    De igual manera, es desafiante en términos de filtrar trolls y vándalxs, de identidades válidas y en buena fe.
                     Nosotrxs no queremos ser la policía de la identidad. Tampoco queremos pasar todo nuestro tiempo gestionando las banderas.
                     Es un proyecto acerca de lenguaje y pronombres, después de todo, no de banderas. Son sólo un bonus.
                 - >
-                    Hicimos nuestro mejor esfuerzo para seleccionar una lista de banderas que sean populares y, a nuestro mejor conocimiento, generalmente aceptadas. 
+                    Hicimos nuestro mejor esfuerzo para seleccionar una lista de banderas que sean populares y, a nuestro mejor conocimiento, generalmente aceptadas.
                     No planeamos aumentar o reducir esta lista.
                 - >
                     Estamos conscientes de que algunas banderas pueden no ser del agrado de algunxs
@@ -361,7 +362,7 @@ faq:
                     debido a múltiples definiciones que causan confusión,
                     o incluso debido a aspectos de la vida de un personaje mítico).
                     Nosotrxs somos queer y trans, nos importan nuestrxs hermanxs trans.
-                    Desafortunadamente, es realmente difícil tomar tales decisiones 
+                    Desafortunadamente, es realmente difícil tomar tales decisiones
                     cuando recibimos mensajes de personas trans pidiéndonos que añadamos una bandera con la que se identifican de forma honesta,
                     e igual de otras personas trans pidiéndonos que la removamos debido a que de alguna manera, lastima a las personas trans.
                     La historia de cada etiqueta no es tan clara, no hay una autoridad académica para investigar al respecto.
