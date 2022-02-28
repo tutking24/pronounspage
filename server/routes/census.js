@@ -4,6 +4,7 @@ import sha1 from 'sha1';
 import {ulid} from "ulid";
 import Papa from 'papaparse';
 import {handleErrorAsync} from "../../src/helpers";
+import {intersection, difference} from "../../src/sets";
 
 const getIp = req => {
     try {
@@ -126,6 +127,21 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
     });
 }));
 
+const calculateAggregate = (config, answer) => {
+    const expected = new Set(config.values);
+    if (config.exclusive && difference(answer, expected).size > 0) {
+        return false;
+    }
+    switch (config.operation) {
+        case 'OR':
+            return intersection(expected, answer).size > 0;
+        case 'AND':
+            return intersection(expected, answer).size === expected.size;
+        default:
+            throw new Exception(`Operation "${config.operation} not supported"`);
+    }
+}
+
 router.get('/census/export', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('census')) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -146,8 +162,17 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
         let i = 0;
         for (let question of config.census.questions) {
             if (question.type === 'checkbox') {
+                const answerForAggregate = new Set();
                 for (let [option, comment] of question.options) {
-                    answer[`${i}_${option}`] = (answers[i.toString()] || []).includes(option) ? 1 : '';
+                    const checked = (answers[i.toString()] || []).includes(option);
+                    answer[`${i}_${option}`] = checked ? 1 : '';
+                    if (checked) {
+                        answerForAggregate.add(option);
+                    }
+                }
+                for (let aggr in question.aggregates || {}) {
+                    if (!question.aggregates.hasOwnProperty(aggr)) { continue; }
+                    answer[`${i}_aggr_${aggr}`] = calculateAggregate(question.aggregates[aggr], answerForAggregate) ? 1 : '';
                 }
             } else {
                 answer[`${i}_`] = answers[i.toString()] || '';
