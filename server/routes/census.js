@@ -174,7 +174,6 @@ router.get('/census/moderation/queue', handleErrorAsync(async (req, res) => {
         SELECT id, answers, writins FROM census
         WHERE locale = ${global.config.locale}
           AND edition = ${global.config.census.edition}
-          AND relevant = 1
           AND troll IS NULL
         ORDER BY RANDOM()
     `);
