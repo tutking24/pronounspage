@@ -118,7 +118,7 @@ sources:
         key: 'Clave'
         keyInfo: 'Identificador para vincular fuentes entre versiones en varios idiomas y vincularlas con el diccionario'
         images: 'Imágenes'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler'
     otherVersions: 'En otros idiomas'
     referenced: 'Ejemplos del uso'
 
@@ -512,12 +512,12 @@ user:
     account:
         changeUsername:
             header: 'Nombre de usuarie'
-            action: 'Cambiar'  # TODO more explicitly "Change username"
+            action: 'Cambiar nombre de usuarie'
             invalid: 'El nombre de usuarie debe tener entre 4 y 16 caracteres y sólo puede contener números, letras, puntos, guiones y guionbajos.'
             taken: 'Este nombre de usuarie ya está en uso.'
         changeEmail:
             header: 'Dirección de correo electrónico'
-            action: 'Cambiar'  # TODO more explicitly "Change email"
+            action: 'Cambiar dirección de correo'
             invalid: 'Dirección de correo inválida.'
             taken: 'Esta dirección ya está en uso.'
         admin: 'Admin'
