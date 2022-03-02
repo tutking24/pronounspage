@@ -116,7 +116,7 @@ sources:
         key: 'キー'
         keyInfo: '言語間、及び辞書とリンクするのための識別子'
         images: '画像'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'ネタバレ'
     otherVersions: '他の言語で'
     referenced: '使用例'
 
