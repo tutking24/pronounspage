@@ -11,7 +11,7 @@
                 <T>{{group.header}}</T>
             </h3>
             <ul>
-                <li v-for="([method, path, queryString], endpoint) in group.endpoints" class="my-3">
+                <li v-for="([method, path, queryString, notes], endpoint) in group.endpoints" class="my-3">
                     <p>
                         <span class="badge bg-primary text-white">{{method}}</span>
                         <code>{{path}}</code>
@@ -20,6 +20,11 @@
                             <T>api.example</T>
                         </a>
                     </p>
+                    <ul v-if="notes" class="small">
+                        <li v-for="note in notes">
+                            <span v-html="note"></span>
+                        </li>
+                    </ul>
                     <p v-if="queryString" class="mb-0 small">
                         <T>api.query</T><T>quotation.colon</T>
                     </p>
@@ -88,7 +93,7 @@
                     header: 'profile.header',
                     icon: 'id-card',
                     endpoints: {
-                        profile_get: ['GET', '/api/profile/get/{username}'],
+                        profile_get: ['GET', '/api/profile/get/{username}', undefined, ['Note that the <code>birthday</code> field will only be available when querying your own account; otherwise only the calucaled <code>age</code> might be available (if the person has filled out their birthday)']],
                     },
                 }, {
                     enabled: this.config.calendar.enabled,
