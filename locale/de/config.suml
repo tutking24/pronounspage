@@ -138,8 +138,8 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.']
-        - ['Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
+        - ['Weibliche Formen', 'Männliche Formen', 'Y-Formen', 'Inklusivum', 'Ojum', 'Person-Formen', 'Doppelpunkt-Formen', 'Unterstrich-Formen', 'Sternchen-Formen', 'Großbuchstabe-Formen']
+        - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.', 'Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
         - ['schön', 'süß', 'sexy', 'hübsch', 'attraktiv']
         - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
