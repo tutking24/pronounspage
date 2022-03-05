@@ -36,6 +36,8 @@
                     return bufferNode;
                 }
 
+                linkBuffer = linkBuffer.replace(/≡/g, '='); // meh workaround, i know…
+
                 if (linkBuffer === '') {
                     linkBuffer = '#' + buffer;
                 }
