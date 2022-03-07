@@ -91,6 +91,11 @@ links:
             url: 'https://www.annaheger.de/pronomen/'
             headline: 'Pronomen ohne Geschlecht – Illi Anna Heger'
         -
+            icon: 'atlas'
+            url: 'https://geschlechtsneutralesdeutsch.com'
+            headline: 'Das NoNa-System'
+            extra: ' – geschlechtsneutrale deutsche Grammatik'
+        -
             lang: ['en']
             icon: 'atlas'
             url: 'https://nonbinary.wiki/wiki/Gender_neutral_language_in_German'
@@ -112,6 +117,14 @@ links:
             icon: 'file-alt'
             url: 'https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik'
             headline: 'Überlegungen zu einer genderneutralen deutschen Grammatik'
+        -
+            icon: 'users'
+            url: 'https://dgti.org/'
+            headline: 'Deutsche Gesellschaft für Transidentät und Intersexualität e. V.'
+        -
+            icon: 'id-card'
+            url: 'https://dgti.org/2021/09/05/der-ergaenzungsausweis-der-dgti-e-v/'
+            headline: 'Der Ergänzungsausweis der dgti e.V.'
     academic: []
     mediaGuests: []
     mediaMentions: []
