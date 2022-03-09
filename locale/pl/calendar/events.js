@@ -22,7 +22,7 @@ module.exports = [
     new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Dzień Świadomości HIV/AIDS u Gejów} (USA)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=Dzień Świadomości Starzenia się z HIV/AIDS} (USA/Kanada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),    
     new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Dzień Świadomości HIV/AIDS wśród Młodzieży} (USA)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
+    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA/Kanada)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=Dzień Świadomości Długotrwałego Życia z HIV} (US)', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
 
