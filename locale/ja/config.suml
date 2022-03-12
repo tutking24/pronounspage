@@ -97,9 +97,10 @@ english:
             description:
                 - >
                     In Japanese there is no singular “they”, however, there are many alternatives in the field
-                    of “that person” or “this person” many of which are commonly used in speech, even for cis people.
+                    of “that person” or “this person” many of which are commonly used in place of gendered pronouns,
+                    even for those who don't regularly use gender-neutral pronouns.
                     The most common forms of “that person” are split into three sections:
-                    far, near to listener, and near to speaker, represented by あ/そ/こ \[a/so/ko] respectively.
+                    far, near to listener, near to speaker, and the question marker, represented by あ/そ/こ/ど \[a/so/ko/do] respectively.
                     So, while the gendered pronouns He {/彼=彼} \[kaɾe/kare] and She {/彼女=彼女} \[kanodʑo/kanojo]
                     do not require any changes dependant on position of the subject,
                     all the gender-neutral animate pronouns and inanimate pronouns require that distinction to be made.
@@ -112,6 +113,7 @@ english:
                 - {pronoun: '{/あの人=あの人}', romanised: 'anohito', ipa: 'anoçito', meaning: 'That person over there'}
                 - {pronoun: 'その人', romanised: 'sonohito', ipa: 'sonoçito', meaning: 'That person/The person'}
                 - {pronoun: 'この人', romanised: 'konohito', ipa: 'konoçito', meaning: 'This person'}
+                - {pronoun: 'どの人', romanised: 'donohito', ipa: 'donoçito', meaning: 'Which person?'}
         -
             name: 'Familiarity and Japanese pronouns'
             description:
