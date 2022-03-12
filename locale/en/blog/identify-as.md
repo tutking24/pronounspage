@@ -2,6 +2,8 @@
 
 <small>2022-02-26 | [@andrea](/@andrea)</small>
 
+![@JuliaRidsBikes on Twitter: “How come cis people have a gender and I have a gender identity?”; @we_are_biscuit on Twitter: “Same reason they "are" straight but I "identify as" bi. They looooove to undermine us.”](/img-local/blog/cis-gender-identity.png)
+
 One of my pet peeves when it comes to discussing queer identities is the phrase “identify as…”.
 Because although it's technically correct and most of the time used with the very best of intentions,
 it more often than not seems to be giving people wrong impressions about what identity is.
