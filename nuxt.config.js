@@ -275,6 +275,7 @@ export default {
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
 
             if (config.profile.enabled) {
+                routes.push({path: '/u/*', component: resolve(__dirname, 'routes/profile.vue')});
                 routes.push({path: '/@*', component: resolve(__dirname, 'routes/profile.vue')});
                 routes.push({path: '/card/@*', component: resolve(__dirname, 'routes/profileCard.vue')});
                 if (config.profile.editorEnabled) {

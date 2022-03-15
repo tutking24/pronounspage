@@ -95,6 +95,14 @@
                         pronouns.page/@{{user.username}}
                     </span>
                 </a>
+                <a :href="`https://pronouns.page/u/${user.username}`" v-if="Object.keys(user.profiles).length > 1"
+                   class="list-group-item list-group-item-action list-group-item-hoverable small"
+                >
+                    <span class="badge bg-light text-dark border">
+                        <Icon v="link"/>
+                        pronouns.page/u/{{user.username}}
+                    </span>
+                </a>
             </div>
 
             <div class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
