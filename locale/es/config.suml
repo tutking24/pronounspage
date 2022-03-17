@@ -15,6 +15,15 @@ pronouns:
         examples: ['él&ella', 'él&elle', 'ella&elle']
     null: false
     emoji: false
+    mirror:
+        route: 'esejo'
+        name: 'Pronombres Espejo'
+        description: >
+            Una persona que use pronombres espejo quiere que se le trate con los pronombres de la persona que está hablando.
+        example:
+            - 'La Persona A usa pronouns.'
+            - 'La persona B usa {/ella=ella/la}, así que cuando ella habla sobre la persona A, ella usara “ella/la” para hablar de ella.'
+            - 'La persona C usa {/elli=elli/li} junto con {/ellæ=ellæ/læ} indistintamente, así que cuando elli habla sobre la persona A, ellæ usará elli/li o ellæ/læ para hablar de ellæ.'
     slashes: false
     others: 'Otros pronombres'
 
