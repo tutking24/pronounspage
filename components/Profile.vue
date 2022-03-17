@@ -145,10 +145,11 @@
                         link = link.toLowerCase();
                     }
 
-                    if (link === this.config.pronouns.any
-                        || link.startsWith(this.config.pronouns.any + ':')
-                        || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(link))
-                        || (this.config.pronouns.mirror && this.config.pronouns.mirror.route === pronoun)
+                    const linkNorm = link.toLowerCase();
+                    if (linkNorm === this.config.pronouns.any
+                        || linkNorm.startsWith(this.config.pronouns.any + ':')
+                        || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(linkNorm))
+                        || (this.config.pronouns.mirror && this.config.pronouns.mirror.route === linkNorm)
                     ) {
                         pronounOpinions.push({
                             link,
