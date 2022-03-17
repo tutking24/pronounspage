@@ -16,7 +16,7 @@ pronouns:
     null: false
     emoji: false
     mirror:
-        route: 'esejo'
+        route: 'espejo'
         name: 'Pronombres Espejo'
         description: >
             Una persona que use pronombres espejo quiere que se le trate con los pronombres de la persona que está hablando.
