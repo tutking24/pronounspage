@@ -13,7 +13,46 @@ pronouns:
         name: 'Formas intercambiables'
         description: 'Muchas personas no binarias usan más de una forma intercambiablemente y se sienten cómodas con cualquiera de las opciones.'
         examples: ['él&ella', 'él&elle', 'ella&elle']
-    null: false
+    null:
+        description: >
+            {/evitar=Evitar formas de genero}
+        history: >
+            Algunas personas prefieren no usar pronombres, sino ser referidas por su nombre, inicial,
+            omitir oraciones en activa o reestructurando la frase.
+        routes: ['evitar']
+        ideas:
+            -
+                header: 'Usar nombres o iniciales en lugar de pronombres'
+                normative: true
+                examples:
+                    - ['Ayer hable con el', 'Ayer hable con Sky']
+                    - ['Ella es muy inteligente', 'Soph es muy inteligente']
+                    - ['Ella se graduara pronto', 'J se graduara pronto']
+            -
+                header: 'Voz pasiva'
+                normative: true
+                examples:
+                    - ['El contestó al teléfono.', 'El teléfono fue contestado.']
+                    - ['Paula cuida bien de su gato', 'El gato de Paula es bien cuidado']
+            -
+                header: 'Reestructurar la frase (paráfrasis)'
+                normative: true
+                examples:
+                    - ['Lior lo hizo él solo.', 'Lior lo hizo sin ayuda']
+                    - ['Gael habló sobre ell_ mism_ en su sueño', 'Gael habló sobre su persona en su sueño']
+            -
+                header: 'Reemplazar los pronombres con un adjetivo descriptivo o una frase'
+                normative: true
+                examples:
+                    - ['Ella aterrizó el avión', 'La persona pilotando aterrizó el avión']
+                    - ['Esta es Lea, ella es artista', 'Esta es Lea, esta persona es artista']
+                    - ['Ella debate sobre…', 'La persona que empezó la conversación debate sobre…']
+            -
+                header: 'Omitir pronombres'
+                normative: true
+                examples:
+                    - ['¿Le has comprado un regalo a ella?', '¿Le has comprado un regalo?']
+                    - ['Si, le compré un regalo a ella', 'Si, lo le compré un regalo']
     emoji: false
     mirror:
         route: 'espejo'
