@@ -281,6 +281,11 @@ links:
             icon: 'sticky-note'
             url: 'https://leapsports.org/files/4225-Non-Binary%20Inclusion%20in%20sport%20Booklet.pdf'
             headline: 'Non-binary inclusion in sport'
+        -
+            icon: 'cogs'
+            url: 'https://stats.fm/user/me'
+            headline: 'Stats.fm'
+            extra: ' – a tool for Spotify stats that uses our API for the pronouns field'
 
     zine:
         enabled: false
