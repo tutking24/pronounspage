@@ -406,13 +406,10 @@
     @include media-breakpoint-up('lg', $grid-breakpoints) {
         header {
             position: fixed;
-            z-index: 9999;
+            z-index: 99;
             top: 0;
             left: 0;
-            backdrop-filter: blur(12px);
-            @supports not (backdrop-filter: blur(12px)) {
-                background-color: $white;
-            }
+            background-color: $white;
             box-shadow: $box-shadow;
         }
 

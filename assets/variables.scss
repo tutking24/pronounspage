@@ -16,6 +16,11 @@ $header-margin: $header-height + 36px;
 $container-width: 920px;
 $container-wide-width: 1300px;
 
+$modal-backdrop-opacity: .1;
+
+$glassBlur: 12px;
+$glassBlur-sm: $glassBlur / 2;
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
