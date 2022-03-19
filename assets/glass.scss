@@ -1,0 +1,38 @@
+@supports (backdrop-filter: blur($glassBlur)) {
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        header {
+            backdrop-filter: blur($glassBlur);
+            background-color: transparent !important;
+        }
+    }
+
+    .modal {
+        backdrop-filter: blur($glassBlur);
+        background-color: rgba($black, .2) !important;
+    }
+
+    //.modal-content {
+    //    backdrop-filter: blur($glassBlur) brightness(200%);
+    //    background-color: transparent !important;
+    //}
+    //}
+
+    // disabled until we can use Vue3 teleport
+    //.dropdown-menu {
+    //    backdrop-filter: blur($glassBlur);
+    //    background-color: transparent !important;
+    //}
+
+    details {
+        backdrop-filter: blur($glassBlur-sm);
+        background-color: transparent !important;
+    }
+
+    .btn-group {
+        backdrop-filter: blur($glassBlur-sm);
+    }
+}
+
+//.input-group, .btn-group, .btn-group-vertical {
+//    @extend .shadow;
+//}

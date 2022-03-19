@@ -1,5 +1,5 @@
 <template>
-    <div :class="['modal', shown ? 'd-block' : '']" @click="hideClick">
+    <div :class="['modal', shown ? 'd-block' : '', shownFull ? 'modal-shown' : '']" @click="hideClick">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content shadow">
                 <div class="modal-header" v-if="choice">
@@ -34,6 +34,7 @@
         data() {
             return {
                 shown: false,
+                shownFull: false,
                 choice: false,
                 message: undefined,
                 resolve: undefined,
@@ -68,29 +69,32 @@
                 this.reject = reject;
                 this.color = color;
                 this.shown = true;
+                requestAnimationFrame(() => this.shownFull = true);
             },
             confirm() {
                 const resolve = this.resolve;
-                this.shown = false;
-                this.choice = false;
-                this.message = undefined;
-                this.resolve = undefined;
-                this.reject = undefined;
-                this.color = null;
+                this.hide();
                 if (resolve) {
                     resolve();
                 }
             },
             cancel(event) {
                 const reject = this.reject;
-                this.shown = false;
-                this.message = undefined;
-                this.resolve = undefined;
-                this.reject = undefined;
-                this.color = null;
+                this.hide();
                 if (reject) {
                     reject();
                 }
+            },
+            hide() {
+                this.shownFull = false;
+                setTimeout(() => {
+                    this.shown = false;
+                    this.choice = false;
+                    this.message = undefined;
+                    this.resolve = undefined;
+                    this.reject = undefined;
+                    this.color = null;
+                }, 500);
             },
             hideClick(event) {
                 if (event.target === this.$el) {
@@ -106,5 +110,10 @@
 
     .modal {
         background-color: rgba($black, 0.5);
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        &.modal-shown {
+            opacity: 1;
+        }
     }
 </style>
