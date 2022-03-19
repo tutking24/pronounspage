@@ -496,7 +496,7 @@ user:
         help: 'Para iniciar sesión o crear una cuenta puedes usar los botones de medios sociales o ingresar tu dirección de correo electronico en el campo de abajo y luego confirmar el código que vas a recibir en tu buzón.'
         placeholder: 'Correo electrónico (o nombre de usuarie, si ya estás registrade)'
         action: 'Iniciar sesión / registrarte'
-        emailSent: 'Te hemos enviado un correo electrónico con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
+        emailSent: 'Te hemos enviado un correo electrónico <strong>%email%</strong> con un código de 6 dígitos. Introdúcelo aquí. El código es de un solo uso y es válido por 15 minutos.'
         userNotFound: 'Usuarie no encontrade.'
         email:
             subject: 'Tu código de inicio de sesión es {{code}}'

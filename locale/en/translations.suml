@@ -511,7 +511,7 @@ user:
         help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Email (or username, if you''re already registered)'
         action: 'Log in / register'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
+        emailSent: 'We''ve sent you <strong>%email%</strong> an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
         userNotFound: 'User not found.'
         email:
             subject: 'Your login code is {{code}}'

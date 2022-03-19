@@ -417,7 +417,7 @@ user:
         help: 'Iniciar sessão ou criar uma conta você pode usar os botões de redes sociais ou insirar seu endereço de e-mail no campo abaixo e confirme o código que você receberá em sua caixa de correio.'
         placeholder: 'E-mail (ou nome de usuarie, se já está registrade)'
         action: 'Iniciar sessão / registre-se'
-        emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
+        emailSent: 'Te enviamos um email <strong>%email%</strong> com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
         userNotFound: 'Usuarie não encontrade.'
         email:
             subject: 'O código de início da sessão é {{code}}'

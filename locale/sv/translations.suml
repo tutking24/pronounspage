@@ -466,7 +466,7 @@ user:
         help: 'För att logga in eller skapa ett konto kan du använda dina sociala medier eller skriva in din e-postadress och bekräfta koden du ska ha fått i din e-post inkorg.'
         placeholder: 'E-postadress (eller användarnamn, om du redan är registrerad)'
         action: 'Logga in'
-        emailSent: 'Vi har skickat ett e-postmeddelande till dig med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
+        emailSent: 'Vi har skickat ett e-postmeddelande <strong>%email%</strong> till dig med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
         userNotFound: 'Användaren hittades inte.'
         email:
             subject: 'Din inloggningskod är %code%'

@@ -70,7 +70,7 @@
                     <div v-if="message" class="alert alert-success">
                         <p class="mb-0 narrow-message">
                             <Icon :v="messageIcon"/>
-                            <T>{{message}}</T>
+                            <T :params="messageParams">{{message}}</T>
                         </p>
                     </div>
 
@@ -192,6 +192,7 @@
                 email: this.$user().email,
 
                 message: '',
+                messageParams: {},
                 messageIcon: null,
                 error: '',
                 changeEmailAuthId: null,
@@ -254,6 +255,7 @@
                     this.username = this.$user().username;
                     this.$cookies.set('token', this.$store.state.token, cookieSettings);
                     this.message = 'crud.saved';
+                    this.messageParams = {};
                     this.messageIcon = 'check-circle';
                     setTimeout(() => this.message = '', 3000);
                 } finally {
@@ -281,6 +283,7 @@
                     if (!this.changeEmailAuthId) {
                         this.changeEmailAuthId = response.authId;
                         this.message = 'user.login.emailSent';
+                        this.messageParams = {'email': this.addBrackets(this.email)};
                         this.messageIcon = 'envelope-open-text';
                         this.$nextTick(_ => {
                             this.$refs.code.focus();
@@ -288,11 +291,13 @@
                     } else {
                         this.changeEmailAuthId = null;
                         this.message = '';
+                        this.messageParams = {};
                         this.code = null;
 
                         this.$store.commit('setToken', response.token);
                         this.$cookies.set('token', this.$store.state.token, cookieSettings);
                         this.message = 'crud.saved';
+                        this.messageParams = {};
                         this.messageIcon = 'check-circle';
                         setTimeout(() => this.message = '', 3000);
                     }
@@ -335,6 +340,9 @@
             dismissTermsUpdate() {
                 this.$cookies.set('termsUpdateDismissed', true);
                 this.showTermsUpdate = false;
+            },
+            addBrackets(str) {
+                return str ? `(${str})` : '';
             },
         },
         computed: {
