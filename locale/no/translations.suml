@@ -391,7 +391,7 @@ user:
         # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Email (eller brukernavn, hvis du allerede er registrert)'
         action: 'Logg inn'  # TODO 'Log in / register'
-        emailSent: 'Vi har sendt deg en email med en 6 sifret kode. Skriv den ned her. Koden er en engangskode og kan brukes i 15 minutter.'
+        emailSent: 'Vi har sendt deg en email <strong>%email%</strong> med en 6 sifret kode. Skriv den ned her. Koden er en engangskode og kan brukes i 15 minutter.'
         userNotFound: 'Bruker ikke funnet.'
         email:
             subject: 'Din Logg inn kode er {{code}}'

@@ -1186,7 +1186,7 @@ user:
         help: 'Aby zalogować się lub założyć konto, użyj opcji logowania za pomocą mediów społecznościowych lub wpisz swój email w polu poniżej, a następnie potwierdź kod, który otrzymasz na swoją skrzynkę.'
         placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'
         action: 'Zaloguj / załóż konto'
-        emailSent: 'Na Twój adres wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
+        emailSent: 'Na Twój adres <strong>%email%</strong> wysłałośmy email z sześciocyfrowym kodem. Wpisz go poniżej. Kod jest jednorazowy i ważny przez 15 minut.'
         userNotFound: 'Konto nie zostało znalezione.'
         email:
             subject: 'Twój kod logowania to {{code}}'

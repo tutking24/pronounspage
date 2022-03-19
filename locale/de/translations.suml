@@ -411,7 +411,7 @@ user:
         help: 'Um sich anzumelden oder ein Konto zu erstellen, kannst du entweder die Schaltflächen in den sozialen Medien verwenden oder deine E-Mail-Adresse in das unten stehende Feld eingeben und dann den Code bestätigen, den du in deiner Mailbox erhalten hast.'
         placeholder: 'E-Mail (oder Username, falls du schon registriert bist)'
         action: 'Anmelden / Registrieren'
-        emailSent: 'Wir haben dir eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
+        emailSent: 'Wir haben dir <strong>%email%</strong> eine E-Mail mit einem 6-stelligen Code geschickt. Gib ihn hier ein. Der Code ist einmalig verwendbar und bleibt 15 Minuten lang gültig.'
         userNotFound: 'Nutzer*in nicht gefunden.'
         email:
             subject: 'Dein Logincode ist {{code}}'

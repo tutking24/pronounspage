@@ -259,3 +259,16 @@ export class ImmutableArray extends Array {
         return this.length > index ? this[index] : fallback;
     }
 }
+
+export const obfuscateEmail = (email) => {
+    const [ username, hostname ] = email.toLowerCase().split('@');
+    const tld = hostname.split('.').slice(-1).pop();
+
+    if (tld === 'oauth') {
+        return null;
+    }
+
+    const usernamePublic = username.substring(0, username.length <= 5 ? 1 : 3);
+
+    return `${usernamePublic}*****@*****.${tld}`;
+}

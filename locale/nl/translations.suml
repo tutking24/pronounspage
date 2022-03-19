@@ -386,7 +386,7 @@ user:
         help: 'Om in te loggen of te registreren kun je de social media buttons gebruiken, of jouw emailadres in het onderstaande veld invoeren, en vervolgens de code bevestigen die naar jouw mailbox wordt verstuurd.'
         placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
         action: 'Inloggen / registreren'
-        emailSent: 'We hebben een email verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
+        emailSent: 'We hebben een email verstuurd <strong>%email%</strong> met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
         userNotFound: 'Gebruiker niet gevonden.'
         email:
             subject: 'Jouw logincode is {{code}}'

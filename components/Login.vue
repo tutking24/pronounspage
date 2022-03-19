@@ -41,7 +41,7 @@
                     <div class="alert alert-success">
                         <p class="mb-0">
                             <Icon v="envelope-open-text"/>
-                            <T>user.login.emailSent</T>
+                            <T :params="{email: addBrackets(getEmail(payload))}">user.login.emailSent</T>
                         </p>
                     </div>
 
@@ -170,6 +170,12 @@
                         this.$refs.code.focus();
                     }
                 })
+            },
+            getEmail(payload) {
+                return payload.email || payload.emailObfuscated || '';
+            },
+            addBrackets(str) {
+                return str ? `(${str})` : '';
             },
         },
     }

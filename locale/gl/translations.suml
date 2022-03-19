@@ -395,7 +395,7 @@ user:
         # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'E-mail (ou nome de usuarie, se já está registrade)'
         action: 'Iniciar sessão'  # TODO 'Log in / register'
-        emailSent: 'Te enviamos um email com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
+        emailSent: 'Te enviamos um email <strong>%email%</strong> com um código de 6 dígitos. Digite aqui. O código é pode ser usado apenas uma vez e é válido por 15 minutos.'
         userNotFound: 'Usuarie não encontrade.'
         email:
             subject: 'O código de início da sessão é {{code}}'

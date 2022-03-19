@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import {buildDict, makeId, now, handleErrorAsync} from "../../src/helpers";
+import {buildDict, makeId, now, handleErrorAsync, obfuscateEmail} from "../../src/helpers";
 import jwt from "../../src/jwt";
 import mailer from "../../src/mailer";
 import { loadSuml } from '../loader';
@@ -125,7 +125,10 @@ const defaultUsername = async (db, email) => {
 }
 
 const fetchOrCreateUser = async (db, user, avatarSource = 'gravatar') => {
-    let dbUser = await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`);
+    let dbUser = user.email
+        ? await db.get(SQL`SELECT * FROM users WHERE email = ${normalise(user.email)}`)
+        : await db.get(SQL`SELECT * FROM users WHERE usernameNorm = ${normalise(user.username)}`)
+
     if (!dbUser) {
         dbUser = {
             id: ulid(),
@@ -308,7 +311,16 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
     }
 
     return res.json({
-        token: jwt.sign({...payload, code: null, codeKey}, '15m'),
+        token: jwt.sign(
+            {
+                ...payload,
+                email: isEmail ? payload.email : null,
+                emailObfuscated: obfuscateEmail(payload.email),
+                code: null,
+                codeKey,
+            },
+            '15m',
+        ),
     });
 }));
 
