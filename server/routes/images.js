@@ -3,6 +3,7 @@ import {ulid} from "ulid";
 import multer from 'multer';
 import {loadImage, createCanvas} from 'canvas';
 import {handleErrorAsync} from "../../src/helpers";
+import sharp from 'sharp';
 
 import awsConfig from '../aws';
 import S3 from 'aws-sdk/clients/s3';
@@ -54,7 +55,7 @@ router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any
     const ids = [];
     for (let file of req.files) {
         const id = ulid();
-        const image = await loadImage(file.buffer);
+        const image = await loadImage(await sharp(file.buffer).png().toBuffer());
 
         for (let s in sizes) {
             if (!sizes.hasOwnProperty(s)) { continue; }
