@@ -317,7 +317,7 @@ export class Pronoun {
             let nameOption = optionN + '/' + optionG;
             if (config.pronouns.threeForms) {
                 let thirdForms = (this.morphemes[MORPHEMES[2]] || '').split('&');
-                if (config.locale === 'ru') {
+                if (config.locale === 'ru' || config.locale === 'ua') {
                     thirdForms = thirdForms.map(x => `[-${x}]`);
                 }
                 nameOption += '/' + thirdForms[i];
