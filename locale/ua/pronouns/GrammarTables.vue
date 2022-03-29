@@ -2,19 +2,19 @@
     <section>
         <h2 class="h4">
             <Icon v="spell-check"/>
-            Грамматика:
+            Граматика:
         </h2>
 
         <div class="table-responsive">
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>именительный</th>
-                    <th>родительный</th>
-                    <th>дательный</th>
-                    <th>винительный</th>
-                    <th>творительный</th>
-                    <th>предложный</th>
+                    <th>називний</th>
+                    <th>родовий</th>
+                    <th>давальний</th>
+                    <th>знахідний</th>
+                    <th>орудний</th>
+                    <th>місцевий</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,19 +34,17 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Окончание невозвратных глаголов в пр. в.</th>
-                    <th>Окончание возвратных глаголов в пр. в.</th>
-                    <th>Окончание кратких прилагательных</th>
-                    <th>Окончание прилагательных</th>
-                    <th>Притяжательное местоимение</th>
-                    <th>Определительное местоимение</th>
+                    <th>Закінчення незворотніх дієслів</th>
+                    <th>Закінчення зворотніх дієслів</th>
+                    <th>Закінчення прикметників</th>
+                    <th>Присвійний займенник</th>
+                    <th>Означальний займенник</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="nonreflexive_verb_past" :counter="counter" prepend="–"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive_verb_past" :counter="counter" prepend="–"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="short_adjective" :counter="counter" prepend="–"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="adjective" :counter="counter" prepend="–"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="definitive" :counter="counter"/></td>                    
