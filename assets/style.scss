@@ -144,6 +144,9 @@ blockquote {
     padding-left: $spacer;
     font-size: 1em;
     font-style: italic;
+    em, i {
+        font-style: normal;
+    }
 }
 
 .form-group {
