@@ -18,7 +18,7 @@ async function cleanup() {
         FROM users
         WHERE avatarSource LIKE 'https://pronouns-page.s3-eu-west-1.amazonaws.com/images/%'`
     )) {
-        avatars[row.avatarSource.match('https://pronouns-page.s3-eu-west-1.amazonaws.com/images/(.*)-thumb.png')[1]] = true;
+        avatars[row.avatarSource.match('https://pronouns-page.s3.eu-west-1.amazonaws.com/images/(.*)-thumb.png')[1]] = true;
     }
 
     const flags = {};
