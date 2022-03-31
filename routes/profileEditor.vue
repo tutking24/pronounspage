@@ -103,7 +103,7 @@
 
             <section class="form-group">
                 <h3 class="h4">
-                    <Icon v="link"/>
+                    <Icon v="tags"/>
                     <T>profile.pronouns</T>
                 </h3>
                 <div class="alert alert-info">
