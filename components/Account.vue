@@ -97,8 +97,8 @@
                         <div v-if="!changeEmailAuthId" class="">
                             <input type="email" class="form-control mb-3" v-model="email" required/>
                             <div class="d-flex flex-column flex-md-row">
-                                <Captcha v-model="captchaToken"/>
-                                <div class="d-none d-md-block ms-3">
+                                <Captcha v-if="showCaptcha" v-model="captchaToken"/>
+                                <div :class="['d-none', 'd-md-block', showCaptcha ? 'ms-3' : '']">
                                     <button class="btn btn-outline-primary" :disabled="!canChangeEmail">
                                         <T>user.account.changeEmail.action</T>
                                     </button>
@@ -208,6 +208,7 @@
 
                 gravatar,
 
+                showCaptcha: false,
                 captchaToken: null,
 
                 universalDomains: process.env.ALL_LOCALES_URLS.split(',').filter(x => x !== process.env.BASE_URL),
@@ -353,6 +354,13 @@
                 return this.email && this.captchaToken;
             }
         },
+        watch: {
+            email(v) {
+                if (v !== this.$user().email) {
+                    this.showCaptcha = true;
+                }
+            }
+        }
     }
 </script>
 
