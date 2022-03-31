@@ -4,10 +4,9 @@ singular	plural	isHonorific
 Дай {dative} час.	Дай {dative} час.	FALSE
 Не треба {accusative} засуджувати.	Не треба {accusative} засуджувати.	FALSE
 Я пишаюся {instrumental}.	Я пишаюся {instrumental}.	FALSE
-Розповіси мені о {prepositional}!	Розповіси мені о {prepositional}!	FALSE
+Розповіси мені про {prepositional}!	Розповіси мені про {prepositional}!	FALSE
 Тобі варто познайомитися з {instrumental_with_preposition}.	Тобі варто познайомитися з {instrumental_with_preposition}.	FALSE
 У {genitive_with_preposition} є кіт.	У {genitive_with_preposition} є кіт.	FALSE
-{'nominative} дуже талановит{short_adjective}.	{'nominative} дуже талановит{short_adjective}.	FALSE
 {'nominative} чудов{adjective}.	{'nominative} чудов{adjective}.	FALSE
 {'possessive} знайом{adjective} вміє грати на гітарі.	{'possessive} знайом{adjective} вміють грати на гітарі.	FALSE
 {'nominative} зібра{reflexive_verb_past} на роботу.	{'nominative} зібра{reflexive_verb_past} на роботу.	FALSE
