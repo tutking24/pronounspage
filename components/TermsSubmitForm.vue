@@ -67,7 +67,7 @@
                         <label class="text-nowrap"><strong>
                             <T>terminology.images</T>
                         </strong></label>
-                        <ImageWidget v-model="form.images" multiple sizes="big,thumb"/>
+                        <ImageWidget v-model="form.images" multiple sizes="flag"/>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,8 @@ import S3 from 'aws-sdk/clients/s3';
 const sizes = {
     big: [1200, false],
     flag: [256, false],
-    thumb: [240, true],
+    thumb: [128, true],
+    avatar: [96, true],
 }
 
 const resizeImage = (image, width, height, sx = null, sy = null) => {

@@ -98,7 +98,7 @@ async function cleanup() {
             const [, id, size] = object.Key.match('images/(.*)-(.*).png');
 
             if (avatars[id]) {
-                if (size !== 'thumb') {
+                if (size !== 'thumb' && size !== 'avatar') {
                     await remove(object, 'avatar');
                 }
             } else if (flags[id]) {
@@ -110,7 +110,7 @@ async function cleanup() {
                     await remove(object, 'source');
                 }
             } else if (terms[id]) {
-                if (size !== 'big' && size !== 'thumb') {
+                if (size !== 'flag') {
                     await remove(object, 'term');
                 }
             } else {

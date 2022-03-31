@@ -58,7 +58,7 @@
                                 <T>crud.remove</T>
                             </a>
                         </div>
-                        <ImageUploader small @uploaded="uploaded" sizes="thumb"/>
+                        <ImageUploader small @uploaded="uploaded" sizes="avatar"/>
                     </div>
                     <p v-if="$isGranted('panel') || $isGranted('users')">
                         <nuxt-link to="/admin" class="badge bg-primary text-white"><T>user.account.admin</T></nuxt-link>
@@ -331,7 +331,7 @@
                 this.$cookies.set('token', this.$store.state.token, cookieSettings);
             },
             async uploaded(ids) {
-                await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-thumb.png`);
+                await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-avatar.png`);
             },
             async stopImpersonation() {
                 this.$cookies.set('token', this.$cookies.get('impersonator'));
