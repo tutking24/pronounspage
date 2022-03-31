@@ -1,4 +1,9 @@
 @supports (backdrop-filter: blur($glassBlur)) {
+    .hamburger-menu .bg {
+        backdrop-filter: blur($glassBlur);
+        background-color: transparent !important;
+    }
+
     @include media-breakpoint-up('lg', $grid-breakpoints) {
         header {
             backdrop-filter: blur($glassBlur);
