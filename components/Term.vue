@@ -25,8 +25,8 @@
         </ul>
 
         <p v-if="flags && (term.flags.length || term.images.length)" class="text-center">
-            <img v-for="flag in term.flags" :src="`/flags/${flag}.png`" class="flag m-1"/>
-            <img v-for="image in term.images" :src="buildImageUrl(image, 'big')" class="flag m-1"/>
+            <img v-for="flag in term.flags" :src="`/flags/${flag}.png`" class="flag m-1" loading="lazy"/>
+            <img v-for="image in term.images" :src="buildImageUrl(image, 'big')" class="flag m-1" loading="lazy"/>
         </p>
 
         <div v-if="config.calendar.enabled && events && events.length" class="alert">
