@@ -73,8 +73,8 @@ pronouns:
                 examples:
                     - [ 'Гліб Сірко', 'Г. Сірко' ]
                     - [ 'Іван Іванович Іванов', 'І. І. Іванов' ]
-            others: 'Інші займенники'
-            threeForms: true
+        others: 'Інші займенники'
+        threeForms: true
 
 pronunciation:
     enabled: false
