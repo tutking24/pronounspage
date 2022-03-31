@@ -214,7 +214,22 @@ links:
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: '– натхнення для сайту.'
-    recommended: []
+    recommended:
+        -
+            icon: 'users'
+            url: 'https://kyivpride.org'
+            headline: 'kyivpride.org'
+            extra: '– громадська організація в боротьбі за повне дотримання прав ЛГБТ+ в Україні'
+        -
+            icon: 'users'
+            url: 'https://www.transcoalition.net'
+            headline: 'transcoalition.net'
+            extra: '– організація трансґендерних, небінарних, квір-персон'
+        -
+            icon: 'atlas'
+            url: 'https://genderindetail.org.ua'
+            headline: 'genderindetail.org.ua'
+            extra: '– ресурс ґендерного знання'
     mediaGuests: []
     mediaMentions: []
     academic: []
