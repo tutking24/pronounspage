@@ -39,7 +39,7 @@
             >
                 <Icon v="bars"/>
             </button>
-            <div :class="['bg-white border p-3', hamburgerActive ? '' : 'd-none']">
+            <div :class="['bg border p-3 shadow', hamburgerActive ? '' : 'd-none']">
                 <div class="btn-group-vertical d-flex nav-custom nav-custom-start mb-2">
                     <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`btn btn-sm ${isActiveRoute(link) ? 'active' : ''}`">
                         <Icon :v="link.icon"/>
@@ -377,6 +377,9 @@
             left: $spacer;
             z-index: 1030;
             transition: all .5s ease-in-out;
+            .bg {
+                background-color: rgba($white, .9)
+            }
             .btn-hamburger {
                 &:not(:active):not(:hover):not(:focus):not(.active) {
                     background-color: $white;
@@ -409,7 +412,7 @@
             z-index: 99;
             top: 0;
             left: 0;
-            background-color: $white;
+            background-color: rgba($white, .9);
             box-shadow: $box-shadow;
         }
 
