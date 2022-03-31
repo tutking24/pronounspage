@@ -9,7 +9,6 @@ export default [
     'instrumental_with_preposition',
     'genitive_with_preposition',
     'reflexive_verb_past',
-    'short_adjective',
     'adjective',
     'possessive',
     'definitive',
