@@ -54,10 +54,32 @@ async function cleanup() {
         }
     }
 
+    const cards = {};
+    for (let row of await db.all(`
+        SELECT card
+        FROM profiles
+        WHERE card is not null AND card != ''
+    `)) {
+        cards[row.card.match('https://pronouns-page.s3.eu-west-1.amazonaws.com/card/[^/]+/.+-([^-]+)\.png')[1]] = true;
+    }
+    for (let row of await db.all(`
+        SELECT cardDark
+        FROM profiles
+        WHERE cardDark is not null AND cardDark != ''
+    `)) {
+        const m = row.cardDark.match('https://pronouns-page.s3.eu-west-1.amazonaws.com/card/[^/]+/.+-([^-]+)-dark\.png');
+        if (!m) {
+            console.error(row.cardDark);
+            continue;
+        }
+        cards[m[1]] = true;
+    }
+
     console.log('Avatars: ' + Object.keys(avatars).length);
     console.log('Flags: ' + Object.keys(flags).length);
     console.log('Sources: ' + Object.keys(sources).length);
     console.log('Terms: ' + Object.keys(terms).length);
+    console.log('Cards: ' + Object.keys(cards).length);
 
     await db.close();
 
@@ -115,6 +137,53 @@ async function cleanup() {
                 }
             } else {
                 await remove(object, 'not used');
+            }
+        }
+
+        if (execute && toRemove.length) {
+            console.log('--- Removal request ---');
+            await s3.deleteObjects({
+                Delete: {
+                    Objects: toRemove,
+                }
+            }).promise();
+        }
+
+        if (objects.Contents.length < chunkSize) {
+            break;
+        }
+    }
+
+    console.log('--- Cards ---');
+    marker = undefined;
+    while (true) {
+        console.log('Making a request');
+        const objects = await s3.listObjects({
+            Prefix: `card/`,
+            MaxKeys: chunkSize,
+            Marker: marker,
+        }).promise();
+
+        const toRemove = [];
+
+        for (let object of objects.Contents) {
+            overall++;
+            marker = object.Key;
+
+            if (object.LastModified > new Date() - 60*60*1000) {
+                fresh++;
+                continue;
+            }
+
+            const id = object.Key.endsWith('-dark.png')
+                ? object.Key.match('card/[^/]+/.+-([^-]+)-dark\.png')[1]
+                : object.Key.match('card/[^/]+/.+-([^-]+)\.png')[1];
+
+            if (!cards[id]) {
+                console.log(`REMOVING: ${object.Key}`);
+                toRemove.push({Key: object.Key});
+                removed += 1;
+                removedSize += object.Size;
             }
         }
 
