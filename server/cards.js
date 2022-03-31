@@ -44,7 +44,7 @@ const shoot = async (db, mode) => {
         const pr = new Pageres({
             darkMode: mode === 'dark',
             delay: 3,
-            scale: 2,
+            scale: 1.5,
         });
 
         for (let {locale, username} of profiles) {
