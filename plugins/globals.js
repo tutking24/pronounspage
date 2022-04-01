@@ -32,7 +32,7 @@ export default ({ app, store }) => {
 
     store.commit('setSpelling', app.$cookies.get('spelling') || 'traditional');
 
-    Vue.prototype.buildImageUrl = (imageId, size) => `${process.env.BUCKET}/images/${imageId}-${size}.png`
+    Vue.prototype.buildImageUrl = (imageId, size) => `${process.env.CLOUDFRONT}/images/${imageId}-${size}.png`
 
     Vue.prototype.$loadScript = (name, src) => {
         if (!process.client || document.querySelectorAll(`script.${name}-script`).length > 0) {
