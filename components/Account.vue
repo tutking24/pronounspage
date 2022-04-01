@@ -331,7 +331,7 @@
                 this.$cookies.set('token', this.$store.state.token, cookieSettings);
             },
             async uploaded(ids) {
-                await this.setAvatar(`${process.env.BUCKET}/images/${ids[0]}-avatar.png`);
+                await this.setAvatar(`${process.env.CLOUDFRONT}/images/${ids[0]}-avatar.png`);
             },
             async stopImpersonation() {
                 this.$cookies.set('token', this.$cookies.get('impersonator'));

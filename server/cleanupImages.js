@@ -16,9 +16,9 @@ async function cleanup() {
     for (let row of await db.all(`
         SELECT avatarSource
         FROM users
-        WHERE avatarSource LIKE 'https://pronouns-page.s3-eu-west-1.amazonaws.com/images/%'`
+        WHERE avatarSource LIKE 'https://%/images/%'`
     )) {
-        avatars[row.avatarSource.match('https://pronouns-page.s3.eu-west-1.amazonaws.com/images/(.*)-thumb.png')[1]] = true;
+        avatars[row.avatarSource.match('https://[^/]+/images/(.*)-(?:thumb|avatar).png')[1]] = true;
     }
 
     const flags = {};
