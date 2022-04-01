@@ -1187,6 +1187,11 @@ links:
                 Język polski nie sprzyja mówieniu o osobach niebinarnych, ze względu na odmianę czasowników.
                 Dziękuję zespołowi tranzycja.pl, który doradził mi, jak w odpowiedni sposób przetłumaczyć tę rozmowę,
                 polecając mi "Manifest Niebinarnej Polszczyzny", który można znaleźć pod tym linkiem.
+        -
+            icon: 'newspaper'
+            url: 'https://aszdziennik.pl/138154,dramat-transfoba-osoby-transplciowe-wciaz-istnieja-nawet-po-miedzynarodow'
+            headline: 'Dramat transfoba. Osoby transpłciowe wciąż istnieją, nawet po międzynarodowym dniu ich widoczności'
+            extra: ' – <strong>ASZdziennik</strong>'
     recommended:
         -
             icon: 'instagram'
