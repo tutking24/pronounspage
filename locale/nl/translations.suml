@@ -117,7 +117,7 @@ sources:
         key: 'Sleutel'
         keyInfo: 'Identifier om bronnen te linken tussen verschillende vertalingen van de website en om met het woordenboek te linken'
         images: 'Afbeeldingen'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler'
     otherVersions: 'In andere talen'
     referenced: 'Gebruiksvoorbeelden'
 
