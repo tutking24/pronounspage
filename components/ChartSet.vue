@@ -10,8 +10,8 @@
             </div>
         </div>
         <div class="card-body" v-if="mode">
-            <Chart :data="data" :label="`cumulative ${name}`" v-show="mode === 'daily'"/>
-            <Chart :data="data" :label="`new ${name} per day`" cumulative v-show="mode === 'cumulative'"/>
+            <Chart :data="data" :label="`new ${name} per day`" v-show="mode === 'daily'"/>
+            <Chart :data="data" :label="`cumulative ${name}`" cumulative v-show="mode === 'cumulative'"/>
         </div>
     </div>
 </template>
