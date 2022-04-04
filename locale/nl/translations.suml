@@ -196,19 +196,19 @@ faq:
     headerLong: 'Veelgestelde vragen'
     questions:
         nonbinary:
-            question: 'What is nonbinary?' # TODO
+            question: 'Wat is non-binair?' # TODO
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings.
-                    Native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    Gender is veel ingewikkelder dan een simpel onderscheid tussen mannelijk en vrouwelijk.
+                    Zelfs vanuit een puur biologisch standpunt is er een verschil tussen chromosomale sekse, 
+                    genetische sekse, hormonale sekse, fenotypische sekse...
+                    deze zijn niet perse allemaal congruent, ze hoeven niet perse binair te zijn
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(meer info hier)}.
+                    Es als we dan naar het culturele aspect kijken, is ''gender'' een sociaal construct. 
+                    De begrippen ''vrouw'' en ''man'' kunnen compleet verschillende rechten, plichten en normen omvatten, 
+                    afhankelijk van het tijdperk en de geografische locatie. Het was ooit gebruikelijk in Europa dat mannen hoge hakken en kousen droegen. 
+                    De oorspronkelijke bewoners van Noord-Amerika hebben al eeuwen een derde gender erkend
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, enz.
                 - >
                     Nonbinary is an umbrella term describing the identity of people
                     who don't fit the binary man/woman distinction.
@@ -402,12 +402,12 @@ user:
     account:
         changeUsername:
             header: 'Gebruikersnaam'
-            action: 'Verander'  # TODO more explicitly "Change username"
+            action: 'Gebruikersnaam wijzigen'
             invalid: 'Jouw gebruikersnaam moet tussen 4 en 16 karakters lang zijn en kan alleen nummers, letters, puntjes, streepjes en onderstreepjes bevatten.'
             taken: 'Deze gebruikersnaam is al in gebruik.'
         changeEmail:
             header: 'E-mailadres'
-            action: 'Verander'  # TODO more explicitly "Change email"
+            action: 'E-mail wijzigen'
             invalid: 'Ongeldig e-mailadres.'
             taken: 'Dit adres is al in gebruik.'
         admin: 'Admin'
