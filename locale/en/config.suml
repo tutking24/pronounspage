@@ -247,6 +247,18 @@ links:
             icon: 'book-open'
             url: 'https://www.merriam-webster.com/words-at-play/words-were-watching-nibling'
             headline: 'Merriam Webster – Words We''re Watching: “Nibling”'
+        -
+            icon: 'sticky-note'
+            url: 'https://www.consilium.europa.eu/media/54276/2021_058_accessibility-inclusive-communication-in-the-gsc_en_acces.pdf'
+            headline: 'Inclusive communication in the General Secretariat of the Council of the European Union'
+            quote: >
+                Communication is a powerful tool. It is a vehicle for moulding our attitudes, perceptions and behaviour, and
+                reflects the world in which we aspire to live and work.
+                Words and pictures therefore matter, because communication can become discriminatory if we fail to consider
+                the assumptions which influence the language and visuals we use.
+                Language is always changing: words evolve and how we use them should evolve in tandem. Using gender-neutral
+                and bias-free language is a way of moving away from outdated perceptions about men, women, persons with
+                disabilities and other groups of people in society.
 
     academic: []
     mediaGuests: []
