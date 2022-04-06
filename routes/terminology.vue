@@ -12,6 +12,8 @@
             <Share :title="$t('terminology.headerLong')"/>
         </section>
 
+        <ModerationRules type="rulesTerminology" emphasise/>
+
         <TermsDictionary load ref="termsdictionary"/>
     </div>
 </template>

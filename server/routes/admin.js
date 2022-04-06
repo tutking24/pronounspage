@@ -10,6 +10,7 @@ import mailer from "../../src/mailer";
 import {profilesSnapshot} from "./profile";
 import buildLocaleList from "../../src/buildLocaleList";
 import {archiveBan, liftBan} from "../ban";
+import marked from 'marked';
 
 const router = Router();
 
@@ -196,6 +197,21 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
     `));
 }));
 
+router.get('/admin/reports/:id', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    return res.json(await req.db.all(SQL`
+        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
+        FROM reports
+        LEFT JOIN users sus ON reports.userId = sus.id
+        LEFT JOIN users reporter ON reports.reporterId = reporter.id
+        WHERE reports.userId = ${req.params.id}
+        ORDER BY reports.isHandled ASC, reports.id DESC
+    `));
+}));
+
 router.post('/admin/reports/handle/:id', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -208,6 +224,25 @@ router.post('/admin/reports/handle/:id', handleErrorAsync(async (req, res) => {
     `);
 
     return res.json(true);
+}));
+
+router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const dir = __dirname + '/../../moderation';
+    const susRegexes = fs.readFileSync(dir + '/sus.txt').toString('utf-8').split('\n').filter(x => !!x);
+    const rulesUsers = marked(fs.readFileSync(dir + '/rules-users.md').toString('utf-8'));
+    const rulesTerminology = marked(fs.readFileSync(dir + '/rules-terminology.md').toString('utf-8'));
+    const rulesSources = marked(fs.readFileSync(dir + '/rules-sources.md').toString('utf-8'));
+
+    return res.json({
+        susRegexes,
+        rulesUsers,
+        rulesTerminology,
+        rulesSources,
+    })
 }));
 
 export default router;
