@@ -376,18 +376,18 @@ contact:
                 Vind je het promoten van non-binaire en gender neutrale taal belangrijk?
                 Wil je ons collectief hierbij helpen? Cool!
                 Extra hulp is altijd welkom!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+            areasIntro: Gebieden waarop je ons kunt helpen zijn bijvoorbeeld:
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
+                - 'het uitbreiden en modereren van de woordenboeken en de woordenlijsten,'
+                - 'Het uitbreiden en modereren van de bronnenlijst,'
+                -' het maken van illustraties en social media posts,'
+                - 'het beantwoorden van berichten, '
+                - 'het modereren van gebruikersprofielen,'
+                - 'het maken van een nieuwe versie in een andere taal,' 
+                - 'vertaling,'
+                - 'coordinatie van het proces van het toevoegen van nieuwe talen,'
+                -'blog posts schrijven,'
+                -'programmeren,'                      
                 - '…'
             allies: >
                 Some of those things require a perspective of a nonbinary person, others not necessarily.
@@ -399,12 +399,6 @@ contact:
                 - 'link to your social media,'
                 - 'say, if you have some experience in activist work,'
                 - 'say, what would you like to help with.'
-            warning: >
-                At the moment we seem to have enough people helping with English and with moderation,
-                so keep in mind we might not have much work to give you, if that's what you want to help with.
-                But we could still need you in other areas (technical work, design, graphics, etc.)
-                and other languages (including ones that are already supported, but need eg. translations of new features).
-        
 
 support:
     header: 'Ondersteun ons'
