@@ -92,7 +92,7 @@ export const profilesSnapshot = async (db, username) => {
     return JSON.stringify(await fetchProfiles(db, username, true), null, 4);
 }
 
-const susRegexes = fs.readFileSync(__dirname + '/../../sus.txt').toString('utf-8').split('\n').filter(x => !!x);
+const susRegexes = fs.readFileSync(__dirname + '/../../moderation/sus.txt').toString('utf-8').split('\n').filter(x => !!x);
 
 function* isSuspicious(profile) {
     for (let s of [

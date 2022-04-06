@@ -274,6 +274,7 @@ export default {
             }
             routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
+            routes.push({ path: '/admin/moderation', component: resolve(__dirname, 'routes/adminModeration.vue') });
 
             if (config.profile.enabled) {
                 routes.push({path: '/u/*', component: resolve(__dirname, 'routes/profile.vue')});

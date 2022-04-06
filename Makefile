@@ -6,7 +6,7 @@ KEYS_DIR=./keys
 install:
 	-cp -n .env.dist .env
 	if [ ! -d "${KEYS_DIR}" ]; then mkdir -p ${KEYS_DIR}; openssl genrsa  -out ${KEYS_DIR}/private.pem 2048; openssl rsa -in ${KEYS_DIR}/private.pem -outform PEM -pubout -out ${KEYS_DIR}/public.pem; fi
-	touch sus.txt
+	touch moderation/sus.txt moderation/rules-users.md moderation/rules-terminology.md moderation/rules-sources.md
 	yarn
 	node server/migrate.js
 

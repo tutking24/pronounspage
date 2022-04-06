@@ -47,6 +47,8 @@
                     <T>ban.action</T>
                 </button>
             </div>
+            <ModerationRules type="rulesUsers" emphasise class="mt-4"/>
+            <AbuseReports v-if="abuseReports.length" :abuseReports="abuseReports" allowResolving/>
         </section>
     </div>
 </template>
@@ -71,7 +73,13 @@
                 saving: false,
 
                 forbidden,
+
+                abuseReports: [],
             }
+        },
+        async mounted() {
+            if (!this.$isGranted('users')) { return; }
+            this.abuseReports = await this.$axios.$get(`/admin/reports/${this.user.id}`);
         },
         methods: {
             async ban() {

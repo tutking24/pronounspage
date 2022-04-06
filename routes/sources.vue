@@ -79,6 +79,8 @@
             </div>
         </section>
 
+        <ModerationRules type="rulesSources" emphasise/>
+
         <section class="sticky-top bg-white">
             <div class="input-group mb-1 bg-white">
                 <span class="input-group-text">

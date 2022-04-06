@@ -10,7 +10,9 @@
             </div>
         </section>
 
-        <Profile :user="user" :profile="profile" :terms="terms"/>
+        <MarkSus>
+            <Profile :user="user" :profile="profile" :terms="terms"/>
+        </MarkSus>
 
         <aside class="row">
             <div v-if="$user() && $user().username === user.username" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
