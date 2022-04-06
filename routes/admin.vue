@@ -125,7 +125,7 @@
             </h3>
             <ModerationRules type="rulesUsers" emphasise/>
             <ModerationRules type="susRegexes" label="Keywords for automated triggers"/>
-            <AbuseReports :abuseReports="abuseReports"/>
+            <AbuseReports :abuseReports="abuseReports" allowResolving/>
         </section>
 
         <section v-for="(locale, k) in stats.locales" :key="k">
