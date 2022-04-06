@@ -189,11 +189,13 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
     }
 
     return res.json(await req.db.all(SQL`
-        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
+        SELECT reports.id, group_concat(p.locale) as profiles, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
         FROM reports
         LEFT JOIN users sus ON reports.userId = sus.id
         LEFT JOIN users reporter ON reports.reporterId = reporter.id
-        ORDER BY reports.isHandled ASC, reports.id DESC
+        LEFT JOIN profiles p on sus.id = p.userId
+        GROUP BY reports.id
+        ORDER BY min(reports.isHandled) ASC, reports.id DESC
     `));
 }));
 

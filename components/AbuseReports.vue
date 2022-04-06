@@ -18,11 +18,16 @@
         <template v-slot:row="s"><template v-if="s && s.el.susUsername">
             <td>
                 <a :href="`https://pronouns.page/@${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
+                <ul v-if="s.el.profiles" class="small list-inline">
+                    <li v-for="locale in s.el.profiles.split(',')" class="list-inline-item mt-2">
+                        <LocaleLink :locale="locale" :link="`/@${s.el.susUsername}`">{{ locales[locale].name }}</LocaleLink>
+                    </li>
+                </ul>
             </td>
             <td>
-                        <span v-if="s.el.isAutomatic" class="badge bg-info">
-                            Keyword found
-                        </span>
+                <span v-if="s.el.isAutomatic" class="badge bg-info">
+                    Keyword found
+                </span>
                 <a v-else :href="`https://pronouns.page/@${s.el.reporterUsername}`" target="_blank" rel="noopener">@{{s.el.reporterUsername}}</a>
                 <small>({{$datetime($ulidTime(s.el.id))}})</small>
             </td>
