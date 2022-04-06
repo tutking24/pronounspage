@@ -210,18 +210,18 @@ faq:
                     De oorspronkelijke bewoners van Noord-Amerika hebben al eeuwen een derde gender erkend
                     {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, enz.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
+                    Non-binair is een overkoepelende term die de identiteit 
+                    omschrijft van mensen die geen binaire man of vrouw zijn. 
+                    Het omvat bijvoorbeeld mensen die
                     {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    i {https://gender.wikia.org/wiki/Non-binary=and many many others}.
+                    {https://gender.wikia.org/wiki/Gender_Fluid=genderfluide},
+                    {https://gender.wikia.org/wiki/Demigirl=demivrouw},
+                    {https://gender.wikia.org/wiki/Demiboy=demiman},
+                    en {https://gender.wikia.org/wiki/Non-binary=en nog veel meer} zijn.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    Non-binair is niet perse iets ''tussen'' mannelijkheid en vrouwelijkheid. Het gaat er meer aan voorbij. 
+                    Non-binaire personen hoeven niet androgyn te zijn, neutrale voornaamwoorden te gebruiken, enz. 
+                    Het gaat om het vrij zijn van genderrollen, niet het creëren van nieuwe.
         why-respect:
             question: 'Waarom zou ik zulke <em>rare</em> voornaamwoorden moeten respecteren?'
             answer:
@@ -370,7 +370,41 @@ contact:
         member: 'Lid van het collectief'
         blog: 'Blog'
         upcoming: 'Komende taalversies'
-        # TODO join: …
+        join: # TODO
+            header: 'Sluit je bij ons aan!'
+            encouragement: >
+                Vind je het promoten van non-binaire en gender neutrale taal belangrijk?
+                Wil je ons collectief hierbij helpen? Cool!
+                Extra hulp is altijd welkom!
+            areasIntro: 'Areas in which you might be able to help are for example:'
+            areas:
+                - 'expanding and moderating dictionaries and glossaries,'
+                - 'expanding and moderating the list of sources,'
+                - 'creating graphics and social media posts,'
+                - 'replying to direct messages,'
+                - 'moderating profiles,'
+                - 'creating a new language version,'
+                - 'translating,'
+                - 'coordinating the process of adding language versions,'
+                - 'writing blog posts,'
+                - 'programming,'
+                - '…'
+            allies: >
+                Some of those things require a perspective of a nonbinary person, others not necessarily.
+                That's why we also invite binary allies.
+            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+            application:
+                - 'introduce yourself,'
+                - 'link to your pronouns.page profile,'
+                - 'link to your social media,'
+                - 'say, if you have some experience in activist work,'
+                - 'say, what would you like to help with.'
+            warning: >
+                At the moment we seem to have enough people helping with English and with moderation,
+                so keep in mind we might not have much work to give you, if that's what you want to help with.
+                But we could still need you in other areas (technical work, design, graphics, etc.)
+                and other languages (including ones that are already supported, but need eg. translations of new features).
+        
 
 support:
     header: 'Ondersteun ons'
