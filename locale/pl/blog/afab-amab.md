@@ -85,7 +85,7 @@ Ale liczy się efekt, nie chęci. Warto skonsultować z zainteresowanymi (w razi
 Każde ma prawo do błędów i niedopatrzeń, więc wystarczy przeprosić i wyciągnąć wnioski na przyszłość.
 
 Chcesz zorganizować event dla osób, które są marginalizowane ze względu na płeć?
-Może po prostu napisać… „dla marginalizowanych płci”? „dla osób które nie są cismężczyznami”?
+Może po prostu napisać… „dla marginalizowanych płci”? „dla osób które nie są cis mężczyznami”?
 „All But Cis Dudes” (ABCD)?
 
 Czasem opisanie kogoś jako „AFAB” czy „AMAB” jest sensowne. Czasem. Ale poza paroma specyficznymi kontekstami
