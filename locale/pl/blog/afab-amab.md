@@ -63,7 +63,8 @@ Używanie go w ten sposób świadczy o zupełnym braku zrozumienia, o co chodzi 
 i ogólnie pojętej walce z patriarchatem.
 
 Grupa Stonewall ogłosiła organizację eventu, na który zaprasza osoby perfromerskie – ale tylko te AFAB.
-Po oburzeniu społeczności post zniknął (póki co bez komentarza ani przeprosin), więc nie mogę do niego podlinkować.
+Po oburzeniu społeczności post zniknął (~~póki co bez komentarza ani przeprosin~~;
+[tutaj komunikat i przeprosiny](https://www.facebook.com/grupastonewall/posts/2572230729587224)), więc nie mogę do niego podlinkować.
 Wykluczenie osób AMAB i interpłciowych miało mieć na celu wsparcie osób doświadczających mizoginii.
 Co samo w sobie brzmi jak spoko pomysł – grupy marginalizowane zasługują na bycie choćby na moment w centrum uwagi,
 tak aby choć trochę przeciwdziałać wiekom systemowego wykluczenia.
