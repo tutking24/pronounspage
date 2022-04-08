@@ -290,6 +290,11 @@ body[data-theme="dark"] {
     color: $white;
   }
 
+  .alert-light {
+    background-color: $gray-800;
+    color: $white;
+  }
+
   .badge.bg-dark {
     color: $black;
   }
