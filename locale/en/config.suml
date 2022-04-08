@@ -259,6 +259,10 @@ links:
                 Language is always changing: words evolve and how we use them should evolve in tandem. Using gender-neutral
                 and bias-free language is a way of moving away from outdated perceptions about men, women, persons with
                 disabilities and other groups of people in society.
+        -
+            icon: 'book-open'
+            url: 'https://www.psychiatry.org/psychiatrists/cultural-competency/education/transgender-and-gender-nonconforming-patients/definitions-and-pronoun-usage'
+            headline: 'American Psychiatric Association – Definitions of Gender, Sex, and Sexual Orientation and Pronoun Usage'
 
     academic: []
     mediaGuests: []
