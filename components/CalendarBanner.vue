@@ -1,5 +1,5 @@
 <template>
-    <section v-if="config.calendar && config.calendar.enabled && events !== undefined" class="alert alert-info">
+    <section v-if="config.calendar && config.calendar.enabled && events !== undefined" class="alert alert-light border">
         <div class="d-flex flex-column-reverse flex-md-row justify-content-between">
             <p class="h3">
                 <Icon v="calendar-star"/>
