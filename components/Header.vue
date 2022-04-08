@@ -65,20 +65,20 @@
                 </p>
             </div>
         </div>
-        <div v-if="config.locale === 'pl' && new Date() < new Date(2022, 0, 1, 0, 0, 0) && $route.path === '/'" class="container">
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2022, 3, 12, 19, 0, 0) && $route.path === '/'" class="container">
             <div class="alert alert-info my-3">
-                <p class="h3">
-                    <Icon v="zine.svg" :inverse="darkMode"/>
-                    <T>links.zine.headerLong</T>
-                </p>
                 <p>
-                    Do końca grudnia zbieramy zgłoszenia tekstów i grafik do niebinarnego zina!
+                    <Icon v="calendar"/>
+                    We <strong>wtorek, 12 kwietnia, o 18:00</strong>
+                    Sybil i Andrea będą gościć w Katedrze Performatyki Uniwersytetu Jagiellońskiego
+                    w rozmowie „W stronę niebinarności. Nowe relacje w języku”.
+                    Zapraszamy do oglądania lajwa!
                 </p>
-                <p class="mb-0">
-                    <nuxt-link to="/zin" class="btn btn-primary">
-                        <Icon v="info-circle"/>
-                        Więcej info
-                    </nuxt-link>
+                <p class="mb-0 text-center">
+                    <a href="https://www.facebook.com/events/711884409825918" target="_blank" rel="noopener" class="btn btn-primary">
+                        <Icon v="play"/>
+                        Live/event
+                    </a>
                 </p>
             </div>
         </div>
