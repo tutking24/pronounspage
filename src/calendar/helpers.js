@@ -175,6 +175,20 @@ module.exports.week = function (generator) {
     return internal;
 }
 
+module.exports.weekStarting = function (start) {
+    function *internal (monthDays) {
+        let count = 0;
+        for (let d of monthDays) {
+            if (d.day >= start && count < 7) {
+                yield d;
+                count++;
+            }
+        }
+    }
+
+    return internal;
+}
+
 module.exports.dayYear = function (day, year) {
     function *internal (monthDays) {
         for (let d of monthDays) {
