@@ -61,12 +61,12 @@ router.get('/pronouns/:pronoun*', handleErrorAsync(async (req, res) => {
 router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     const pronoun = buildPronoun(
         parsePronouns(loadTsv('pronouns/pronouns')),
-        req.params.pronoun + req.params[0],
+        (req.params.pronoun + req.params[0]).toLowerCase(),
     );
     if (!pronoun) {
         return res.status(404).json({error: 'Not found'});
     }
-    return res.json(pronoun.name().toLowerCase());
+    return res.json(pronoun.name());
 }));
 
 router.get('/remote-pronouns-name/:locale/:pronoun*', handleErrorAsync(async (req, res) => {

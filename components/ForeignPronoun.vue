@@ -19,7 +19,7 @@ export default {
         try {
             const pronounName = await this.$axios.$get(`/remote-pronouns-name/${this.locale}/${this.pronounWithoutDomain}`);
             if (!pronounName.startsWith('<!doctype') && pronounName.length < 36) {
-                this.pronounName = pronounName;
+                this.pronounName = pronounName.toLowerCase();
             }
         } catch (e) {
             console.error(e);
