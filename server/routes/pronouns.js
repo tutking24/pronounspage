@@ -66,7 +66,7 @@ router.get('/pronouns-name/:pronoun*', handleErrorAsync(async (req, res) => {
     if (!pronoun) {
         return res.status(404).json({error: 'Not found'});
     }
-    return res.json(pronoun.name());
+    return res.json(pronoun.name().toLowerCase());
 }));
 
 router.get('/remote-pronouns-name/:locale/:pronoun*', handleErrorAsync(async (req, res) => {
