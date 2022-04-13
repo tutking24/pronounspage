@@ -97,7 +97,7 @@ english:
     enabled: false
 
 faq:
-    enabled: false
+    enabled: true
     route: 'faq'
 
 links:
@@ -115,7 +115,7 @@ contact:
     route: 'contact'
     team:
         enabled: true
-        route: 'team'  # TODO
+        route: 'team'
 
 support:
     enabled: true
