@@ -1692,6 +1692,9 @@ census:
                 - ['nie mam preferencji po angielsku']
                 - ['bez użycia zaimków (nounself, emojiself, …)']
             aggregates:
+                they:
+                    operation: 'OR'
+                    values: ['they/them/themselves', 'they/them/themself']
                 neozaimki:
                     operation: 'OR'
                     values: ['ae/aer', 'co/cos', 'e/em/eir', 'e/em/es', 'ey/em', 'fae/faer', 'hu/hum', 'ne/nem', 'ne/nir', 'per/per', 's/he/hir', 'thon/thons', 've/ver', 'vi/vir', 'xe/xem', 'ze/hir', 'ze/zir', 'zhe/zher']
