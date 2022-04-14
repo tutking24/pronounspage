@@ -1494,6 +1494,9 @@ census:
                     operation: 'OR'
                     values: ['rodzaj męski', 'rodzaj żeński']
                     exclusive: true
+                niebinarne:
+                    operation: 'OR'
+                    values: ['rodzaj neutralny', 'liczba mnoga, rodzaj męskoosobowy', 'liczba mnoga, rodzaj niemęskoosobowy', 'liczba mnoga, rodzaj neutralny', 'liczba mnoga, rodzaj postpłciowy', 'unikanie form nacechowanych płciowo']
                 wyłącznie_niebinarne:
                     operation: 'OR'
                     values: ['rodzaj neutralny', 'liczba mnoga, rodzaj męskoosobowy', 'liczba mnoga, rodzaj niemęskoosobowy', 'liczba mnoga, rodzaj neutralny', 'liczba mnoga, rodzaj postpłciowy', 'unikanie form nacechowanych płciowo']
