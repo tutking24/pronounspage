@@ -1789,6 +1789,13 @@ census:
                 - ['trans']
                 - ['transneutral']
                 - ['trigender']
+            aggregates:
+                trans_:
+                    operation: 'OR'
+                    values: ['transfeminine', 'transmasculine', 'transgender', 'trans', 'transneutral', 'transkobiec_', 'trans kobieta', 'transmęsk_', 'trans mężczyzna', 'transgenderow_', 'transpłciow_', 'transneutraln_']
+                binarne:
+                    operation: 'OR'
+                    values: ['trans kobieta', 'kobieta', 'trans mężczyzna', 'mężczyzna', 'kobieta', 'mężczyzna', 'kobiec_', 'męsk_', 'transfeminine', 'transmasculine']
         -
             type: 'textarea'
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
