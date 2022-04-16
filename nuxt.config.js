@@ -2,6 +2,7 @@ require('./src/dotenv')();
 
 import { loadSuml } from './server/loader';
 import fs from 'fs';
+import path from 'path';
 import {buildDict, buildList} from "./src/helpers";
 import buildLocaleList from "./src/buildLocaleList";
 
@@ -80,6 +81,25 @@ const postCssPlugins = [
 
 if (config.dir === 'rtl') {
     postCssPlugins.push(require('rtlcss'));
+}
+
+const getAllFiles = function(dirPath, arrayOfFiles) {
+    arrayOfFiles = arrayOfFiles || [];
+
+    fs.readdirSync(dirPath).forEach(function(file) {
+        if (fs.statSync(dirPath + '/' + file).isDirectory()) {
+            arrayOfFiles = getAllFiles(dirPath + '/' + file, arrayOfFiles)
+        } else {
+            arrayOfFiles.push(path.join(dirPath, '/', file))
+        }
+    })
+
+    return arrayOfFiles
+}
+const jsons = {};
+for (let file of getAllFiles(__dirname + '/data/docs')) {
+    if (!file.endsWith('.json')) { continue; }
+    jsons[path.relative(__dirname + '/data/docs', file)] = JSON.parse(fs.readFileSync(file));
 }
 
 export default {
@@ -182,6 +202,7 @@ export default {
         ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
         LOGO: logo,
         MIN_AGE: config.ageLimit || 13,
+        JSONS: JSON.stringify(jsons),
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {

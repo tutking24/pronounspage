@@ -206,3 +206,22 @@ form[disabled] {
         text-align: center;
     }
 }
+
+.graph {
+    width: 100%;
+    height: 400px;
+    @include media-breakpoint-up('md', $grid-breakpoints) {
+        height: 600px;
+    }
+}
+
+@include media-breakpoint-up('md', $grid-breakpoints) {
+    .wide-escape {
+        margin-left: -#{$wide-escape-size};
+        margin-right: -#{$wide-escape-size};
+    }
+}
+
+.emoji {
+    height: 1em;
+}
