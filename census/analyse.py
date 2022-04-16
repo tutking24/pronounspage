@@ -173,7 +173,7 @@ if __name__ == '__main__':
     graphs = {
         'age': 'Wiek osób respondenckich',
         'pronounGroups': 'Rodzaj gramatyczny używany w mowie',
-        'pronouns': 'Zaimki używane w mowie i piśmie',
+        'pronouns': 'Zaimki używane w piśmie',
         'pronounsAggr': 'Zaimki używane w mowie i piśmie (zgrupowane)',
         'nouns': 'Rzeczowniki',
         'honorifics': 'Formy grzecznościowe',
