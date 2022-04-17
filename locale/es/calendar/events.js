@@ -6,7 +6,7 @@ module.exports = [
     new Event('Mes de la Diversidad (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
     new Event('Mes de la Visibilidad Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('Mes de la Visibilidad Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
-    new Event('Mes de la Visibilidad Asexual (Brasil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),    
+    new Event('Mes de la Visibilidad Asexual (Brasil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
 
     // --- static date ---
     new Event('Día de la Igualdad Matrimonial (EE.UU.)', '_hrc', 6, day(26), EventLevel.Day),
@@ -49,10 +49,10 @@ module.exports = [
     new Event('Día Nacional de la Visibilidad Trans (Brasil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
     new Event('Día Nacional del Orgullo Gay (Brasil)', 'LGBTQ', 3, day(25), EventLevel.Day, ['gay']),
     new Event('Día Nacional de la Visibilidad Lésbica (Brasil)', 'Lesbian', 8, day(29), EventLevel.Day, ['lesbian']),
-    new Event('Día Nacional del Orgullo Lésbico (Brasil)', 'Lesbian', 8, day(19), EventLevel.Day, ['lesbian']),,
+    new Event('Día Nacional del Orgullo Lésbico (Brasil)', 'Lesbian', 8, day(19), EventLevel.Day, ['lesbian']),
     new Event('Día del Orgullo de Ser Travesti y Transexual (Brasil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
     new Event('Día Nacional de Afirmación Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
-    new Event('Día de la Inclusión Social (Brasil)', null, 12, day(10), EventLevel.Day),    
+    new Event('Día de la Inclusión Social (Brasil)', null, 12, day(10), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
