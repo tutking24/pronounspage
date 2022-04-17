@@ -25,7 +25,7 @@
 
             <section v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
                 <ul class="list-unstyled mb-0">
-                    <li v-for="(text, link) in config.census.results" class="m-2">
+                    <li v-for="(text, link) in config.census.results" class="h5 m-3">
                         <router-link :to="`/blog/${link}`">
                             <Icon v="file-chart-line"/>
                             {{text}}
