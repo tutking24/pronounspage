@@ -217,11 +217,10 @@
 
                 impersonationActive: !!this.$cookies.get('impersonator'),
 
-                showTermsUpdate:
-                    this.$ulidTime(this.$user().id) < new Date(2021, 11, 13) / 1000
-                    && !this.$cookies.get('termsUpdateDismissed')
-                    && (!this.$user().lastActive || this.$user().lastActive < +new Date(2021, 11, 18, 0, 0, 0))
-                ,
+                showTermsUpdate: false,
+                    // this.$ulidTime(this.$user().id) < new Date(2021, 11, 13) / 1000
+                    // && !this.$cookies.get('termsUpdateDismissed')
+                    // && (!this.$user().lastActive || this.$user().lastActive < +new Date(2021, 11, 18, 0, 0, 0))
             }
         },
         async mounted() {
