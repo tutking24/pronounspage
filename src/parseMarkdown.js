@@ -46,7 +46,7 @@ const generateToC = (content) => (_) => {
         while (level > curentLevel) { tags.push('<ul>'); curentLevel++; needsClosing = false; }
         if (needsClosing) { tags.push('</li>'); }
         tags.push('<li>');
-        tags.push(`<a href=#${id} onclick="document.scrollTo">`);
+        tags.push(`<a href="#${id}">`);
         tags.push(title);
         tags.push(`</a>`);
         needsClosing = true;
@@ -73,7 +73,7 @@ export default async function parseMarkdown(markdown) {
                 .replace(/<p>{details=(.+?)}<\/p>(.+?)<p>{\/details}<\/p>/gms, '<details class="border mb-3"><summary class="bg-light p-3">$1</summary><div class="border-top p-3 bg-white">$2</div></details>')
                 .replace(/<img (.*?)>/g, '<img $1 class="border">')
                 .replace(/{embed=\/\/(.+?)=(.+?)}/g, '<div style="position: relative;height: 0;padding-bottom: 56.25%;"><iframe src="https://$1" title="$2" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute;top: 0; left: 0;width: 100%;height: 100%;border:0;"></iframe></div>')
-                .replace(/{graph=([^}]+)}/g, '<iframe class="graph" src="$1.html" loading="lazy"></iframe>') //  onload="x = this;setTimeout(function() {x.parentNode.parentNode.parentNode.open = false; console.log(x.parentNode.parentNode.parentNode)}, 2000)"
+                .replace(/{graph=([^}]+)}/g, '<iframe class="graph" src="$1.html" loading="lazy"></iframe>')
                 .replace(/<p>{census_groups}<\/p>(.+?)<p>{\/census_groups}<\/p>/gms, mainPlusDetails(census_groups, false))
                 .replace(/<p>{census_comparisons}<\/p>(.+?)<p>{\/census_comparisons}<\/p>/gms, mainPlusDetails(census_comparisons, true))
                 .replace(/{json=([^=}]+)=([^=}]+)}/g, fetchJson)

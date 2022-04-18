@@ -1,0 +1,11 @@
+@import "./variables";
+
+@media print {
+    header, footer {
+        display: none;
+    }
+    body {
+        background: none;
+        background-color: $white;
+    }
+}
