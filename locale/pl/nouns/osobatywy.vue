@@ -105,7 +105,7 @@
                     }),
                     new Noun({
                         id: 'prezes',
-                        masc: 'prezes', fem: 'prezeska', neutr: 'osoba prezesujące',
+                        masc: 'prezes', fem: 'prezeska', neutr: 'osoba prezesująca',
                         mascPl: 'prezesi', femPl: 'prezeski', neutrPl: 'osoby prezesujące',
                     }),
                 ],
