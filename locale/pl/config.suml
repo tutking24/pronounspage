@@ -1801,6 +1801,7 @@ census:
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
             optional: true
     results:
+        spis-2022: 'Raport ze Spisu 2022'
         spis-2021: 'Raport ze Spisu 2021'
 
 blog:
