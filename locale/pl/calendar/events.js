@@ -47,6 +47,18 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),    
     new Event('{https://www.facebook.com/events/778731303070898=VII Trójmiejski Marsz Równości}', 'LGBTQ', 5, dayYear(28, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/620469522712842=3. Marsz Równości w Koszalinie}', 'LGBTQ', 4, dayYear(2, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/MarszRownosciGniezno=II Marsz Równości w Gnieźnie}', 'LGBTQ', 5, dayYear(7, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1010798579854725/=11. Marsz Równości w Łodzi}', 'LGBTQ', 5, dayYear(14, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/queerowymaj/=Krakowski Marsz Równości}', 'LGBTQ', 5, dayYear(21, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/634419277601853=I Marsz Równości w Sanoku}', 'LGBTQ', 6, dayYear(4, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/4701525936612004=V Marsz Równości w Zielonej Górze}', 'LGBTQ', 6, dayYear(4, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/670481497600736=Parada Równości 2022} (Warszawa)', 'LGBTQ', 6, dayYear(25, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1014397512828851/=Marsz Równości w Poznaniu}', 'LGBTQ', 7, dayYear(2, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/queerce=Marsz Równości w Kielcach}', 'LGBTQ', 7, dayYear(9, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1593099004379743=IV Marsz Równości w Opolu}', 'LGBTQ', 7, dayYear(16, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/698107478207024=3. Marsz Równości na Woodstocku} (Czaplinek)', 'LGBTQ', 8, dayYear(6, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 8, dayYear(20, 2022), EventLevel.Day),
 
     // --- dynamic date ---
 
