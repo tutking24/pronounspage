@@ -390,15 +390,15 @@ contact:
                 -'programmeren,'                      
                 - '…'
             allies: > # TODO
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                Sommige van deze taken hebben het perspectief van een non binair persoon nodig, andere taken niet perse. 
+                Dat is waarom we ook binaire bondgenoten uitnodigen om mee te doen.
+            how: 'Hoe kun je meedoen? Stuur een mailtje naar {mailto:contact@pronouns.page=contact@pronouns.page} waarin je:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+                - 'jezelf voorstelt,'
+                - 'naar je pronouns.page profiel linkt,'
+                - 'naar je social media linkt,'
+                - 'vertelt of je ervaring hebt in activistenwerk,'
+                - 'vertelt waarmee je zou willen helpen.'
 
 support:
     header: 'Ondersteun ons'
