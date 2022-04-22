@@ -1,13 +1,14 @@
 <template>
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <span class="my-2">
-            <Icon :v="providerOptions.icon || provider" set="b"/>
+            <Icon :v="providerOptions.icon || provider" set="b"
+                  :class="[providerOptions.icon && providerOptions.icon.endsWith('.png') ? 'mx-1 invertible' : '']"/>
             {{ providerOptions.name }}
         </span>
         <span v-if="connection === undefined">
             <template v-if="providerOptions.instanceRequired">
                 <form v-if="formShown"
-                      :action="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`"
+                      :action="providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`"
                       class="input-group input-group-sm">
                     <input type="text" name="instance" class="form-control" autofocus required
                            :placeholder="$t('user.login.instancePlaceholder')"/>
@@ -20,20 +21,20 @@
                     <T>user.socialConnection.connect</T>
                 </button>
             </template>
-            <a v-else :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}`" class="badge bg-light text-dark border">
+            <a v-else :href="providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`" class="badge bg-light text-dark border">
                 <Icon v="link"/>
                 <T>user.socialConnection.connect</T>
             </a>
         </span>
         <span v-else class="text-center">
-            <span class="mr-3">
-                <a href="#" @click.prevent="$emit('setAvatar', provider)">
+            <span class="me-2">
+                <a v-if="providerOptions.avatars && connection.avatar" href="#" @click.prevent="$emit('setAvatar', provider)">
                     <Avatar :src="connection.avatar" :user="$user()" dsize="2rem"/>
                 </a>
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>
-            <a :href="`${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` + (providerOptions.instanceRequired ? '?instance=' + connection.name.split('@')[1] : '')"
+            <a :href="(providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`) + (providerOptions.instanceRequired ? '?instance=' + connection.name.split('@')[1] : '')"
                     class="badge bg-light text-dark border">
                 <Icon v="sync"/>
                 <T>user.socialConnection.refresh</T>

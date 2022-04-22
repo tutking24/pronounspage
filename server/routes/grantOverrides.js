@@ -6,17 +6,25 @@ import SQL from 'sql-template-strings';
 import fetch from 'node-fetch';
 import assert from 'assert';
 import { handleErrorAsync } from "../../src/helpers";
+import queryString from 'query-string';
 
 const normalizeDomainName = (domain) => {
-    const url = new URL('https://' + domain);
+    const url = new URL('https://' + domain.replace(/^https?:\/\//, ''));
     assert(url.port === '');
     return url.hostname;
 }
 
+const baseUrl = process.env.HOME_URL || 'https://pronouns.page';
+
 const config = {
     mastodon: {
         scopes: ['read:accounts'],
-        redirect_uri: `${process.env.HOME_URL || 'https://pronouns.page'}/api/user/social/mastodon`,
+        redirect_uri: `${baseUrl}/api/user/social/mastodon`,
+    },
+    indieauth: {
+        server_uri: 'https://indieauth.com/auth',
+        client_id: baseUrl,
+        redirect_uri: `${baseUrl}/api/user/social/indieauth`,
     },
 };
 
@@ -52,6 +60,7 @@ const mastodonGetOAuthKeys = async (db, instance) => {
     `);
     return keys;
 };
+
 router.get('/connect/mastodon', handleErrorAsync(async (req, res) => {
     assert(req.query.instance);
     const instance = normalizeDomainName(req.query.instance);
@@ -64,6 +73,7 @@ router.get('/connect/mastodon', handleErrorAsync(async (req, res) => {
         response_type: 'code',
     }));
 }));
+
 router.get('/user/social/mastodon', handleErrorAsync(async (req, res, next) => {
     if (!req.session.grant || !req.session.grant.instance || !req.query.code) {
         next();
@@ -99,7 +109,47 @@ router.get('/user/social/mastodon', handleErrorAsync(async (req, res, next) => {
     response.instance = instance;
     req.session.grant.response = response;
     next();
-    return;
+}));
+
+router.get('/connect/indieauth', handleErrorAsync(async (req, res) => {
+    assert(req.query.instance);
+    const instance = normalizeDomainName(req.query.instance);
+    req.session.grant = { instance };
+    res.redirect(`${config.indieauth.server_uri}?` + new URLSearchParams({
+        me: `https://${instance}`,
+        client_id: config.indieauth.client_id,
+        redirect_uri: config.indieauth.redirect_uri,
+    }));
+}));
+
+router.get('/user/social/indieauth', handleErrorAsync(async (req, res, next) => {
+    if (!req.session.grant || !req.session.grant.instance || !req.query.code) { next(); return; }
+
+    const response = await fetch(config.indieauth.server_uri, {
+        method: 'POST',
+        body: new URLSearchParams({
+            code: req.query.code,
+            client_id: config.indieauth.client_id,
+            redirect_uri: config.indieauth.redirect_uri,
+        }).toString(),
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': 'pronouns.page',
+        },
+    }).then(res => res.text());
+
+    const profile = queryString.parse(response);
+
+    if (!profile || !profile.me) { next(); return; }
+
+    profile.domain = normalizeDomainName(profile.me);
+
+    req.session.grant.response = {
+        profile,
+        instance: req.session.grant.instance,
+        access_token: true,
+    };
+    next();
 }));
 
 export default router;
