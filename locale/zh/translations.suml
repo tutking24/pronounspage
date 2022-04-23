@@ -380,6 +380,13 @@ user:
             註冊可以讓你管理你的卡（{/@example=像這個}）。
         passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
         instancePlaceholder: 'Instance' # TODO
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '證實'
         invalid: '不對代碼'

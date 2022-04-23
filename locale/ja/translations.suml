@@ -426,6 +426,13 @@ user:
             ご登録いただいた方は、カードの設定を行うことができます。({/@example=カードの例}).
         passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
         instancePlaceholder: 'サーバー'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '確認'
         invalid: '無効なコード'

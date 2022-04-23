@@ -402,6 +402,13 @@ user:
             Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
         passwordless: 'Este sitio gueb no guadra las kontrasenyas. {https://avris.it/blog/passwords-are-passé=Mas informasion.}'
         instancePlaceholder: 'Instansia'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Balidar'
         invalid: 'Kodiche enfirmo.'
