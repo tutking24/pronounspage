@@ -23,14 +23,15 @@ export const socialProviders = {
         redirectViaHome: true,
         avatars: true,
     },
-    facebook: {
-        name: 'Facebook',
-        redirectViaHome: true,
-        avatars: false,
-    },
     google: {
         name: 'Google',
         redirectViaHome: true,
         avatars: true,
+    },
+    facebook: {
+        name: 'Facebook',
+        redirectViaHome: true,
+        avatars: false,
+        deprecated: 'https://en.pronouns.page/blog/facebook-login-deprecated',
     },
 }

@@ -424,6 +424,13 @@ user:
             Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
         instancePlaceholder: 'Instantie'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'

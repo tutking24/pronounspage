@@ -476,6 +476,13 @@ user:
             Registering låter dig hantera dina kort ({/@andrea=som det här}).
         passwordless: 'Webbplatsen lagrar inga lösenord. {https://avris.it/blog/passwords-are-passé=Mer information.}'
         instancePlaceholder: 'Instans'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Bekräfta'
         invalid: 'Ogiltig kod.'

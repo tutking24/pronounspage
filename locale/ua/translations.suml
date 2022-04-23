@@ -541,6 +541,13 @@ user:
             Реєстрація дозволяє вам управляти своїми акаунтами/картками ({/@exemple=як, наприклад, цією}).
         passwordless: 'Сайт не зберігає паролі. {https://avris.it/blog/passwords-are-passé=Більше інформації}'
         instancePlaceholder: 'інстанція'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Підтвердити'
         invalid: 'Невірний код.'
