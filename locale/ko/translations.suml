@@ -495,6 +495,13 @@ user:
             등록하면 카드를 ({/@example=이렇게}) 관리할 수 있습니다.
         passwordless: '웹사이트는 비밀번호를 저장하지 않습니다. {https://avris.it/blog/passwords-are-passé=추가 정보.}'
         instancePlaceholder: '사례'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '확인'
         invalid: '유효하지 않은 코드'

@@ -1196,6 +1196,12 @@ user:
             Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@example=takimi jak ta}).
         passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
         instancePlaceholder: 'Instancja'
+        domainPlaceholder: 'Domena'
+        deprecated: 'Odradzane'
+        depreciationNotice: >
+            Ten dostawca uwierzytelniania nie jest godny zaufania.
+            <a href="%link%" target="_blank" rel="noopener">Więcej szczegółów pod tym linkiem</a>.
+            Mocno polecamy włączenie innej metody uwierzytelniania.
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'

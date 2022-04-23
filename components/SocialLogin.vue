@@ -3,7 +3,7 @@
         <Icon :v="options.icon || provider" set="b"/>
         {{ options.name }}
 
-        <form :action="options.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`"
+        <form :action="link"
               v-if="options.instanceRequired" class="input-group my-2">
             <input type="text" name="instance" class="form-control" autofocus required ref="instance"
                    :placeholder="$t('user.login.instancePlaceholder')">
@@ -19,8 +19,16 @@
               :class="[options.icon && options.icon.endsWith('.png') ? 'mx-1 invertible' : '']"/>
         {{ options.name }}
     </button>
-    <a v-else :href="options.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`"
-       class="btn btn-outline-primary">
+    <a v-else-if="options.deprecated" :href="link"
+       class="btn btn-outline-secondary btn-sm"
+       @click.prevent="depreciationNotice(options.deprecated)"
+    >
+        <Icon :v="options.icon || provider" set="b"/>
+        {{ options.name }}
+    </a>
+    <a v-else :href="link"
+       class="btn btn-outline-primary"
+    >
         <Icon :v="options.icon || provider" set="b"/>
         {{ options.name }}
     </a>
@@ -38,11 +46,20 @@ export default {
             formShown: false,
         };
     },
+    computed: {
+        link() {
+            return this.options.redirectViaHome ? `${this.homeUrl}/api/user/social-redirect/${this.provider}/${this.config.locale}` : `/api/connect/${this.provider}`
+        }
+    },
     methods: {
         showForm() {
             this.formShown = true;
             this.$nextTick(() => this.$refs.instance.focus());
-        }
+        },
+        async depreciationNotice(link) {
+            await this.$confirm(this.$t('user.login.depreciationNotice', {link}), 'warning');
+            window.location.href = this.link;
+        },
     }
 };
 </script>

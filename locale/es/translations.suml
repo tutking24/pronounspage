@@ -506,6 +506,13 @@ user:
             Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
         passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=Más información.}'
         instancePlaceholder: 'Instancia'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Validar'
         invalid: 'Código inválido.'

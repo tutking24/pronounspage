@@ -424,6 +424,13 @@ user:
             S’inscrire vous permet de gérer vos cartes ({/@example=comme celle-ci}).
         passwordless: 'Ce site ne stocke aucun mot de passe. {https://avris.it/blog/passwords-are-passé=Plus d’infos.}'
         instancePlaceholder: 'Instance'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Valider'
         invalid: 'Code invalide.'

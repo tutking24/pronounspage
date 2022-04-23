@@ -401,6 +401,13 @@ user:
             Å registrere seg lar deg redigere kortene dine ({/@example=sånn som denne}).
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Forekomst'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Gyldig'
         invalid: 'Ugyldig kode.'
