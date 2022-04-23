@@ -6,7 +6,7 @@
         <form :action="link"
               v-if="options.instanceRequired" class="input-group my-2">
             <input type="text" name="instance" class="form-control" autofocus required ref="instance"
-                   :placeholder="$t('user.login.instancePlaceholder')">
+                   :placeholder="$t(options.domain ? 'user.login.domainPlaceholder' : 'user.login.instancePlaceholder')"/>
             <button type="submit" class="btn btn-outline-primary">
                 <Icon v="arrow-right"/>
             </button>
