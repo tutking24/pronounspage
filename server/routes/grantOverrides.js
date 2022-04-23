@@ -14,7 +14,7 @@ const normalizeDomainName = (domain) => {
     return url.hostname;
 }
 
-const baseUrl = process.env.HOME_URL || 'https://pronouns.page';
+const baseUrl = process.env.BASE_URL || process.env.HOME_URL || 'https://pronouns.page';
 
 const config = {
     mastodon: {
