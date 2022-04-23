@@ -7,6 +7,7 @@ export const socialProviders = {
     },
     indieauth: {
         name: 'IndieAuth',
+        linkRegex: (p) => `^https://(?:www.)?${p.name}/?$`,
         instanceRequired: true,
         domain: true,
         icon: 'indieauth.png',
