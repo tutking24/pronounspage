@@ -15,7 +15,7 @@
                       :action="providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`"
                       class="input-group input-group-sm">
                     <input type="text" name="instance" class="form-control" autofocus required
-                           :placeholder="$t('user.login.instancePlaceholder')"/>
+                           :placeholder="$t(providerOptions.domain ? 'user.login.domainPlaceholder' : 'user.login.instancePlaceholder')"/>
                     <button type="submit" class="btn btn-outline-secondary">
                         <Icon v="link"/>
                     </button>

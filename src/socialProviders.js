@@ -8,6 +8,7 @@ export const socialProviders = {
     indieauth: {
         name: 'IndieAuth',
         instanceRequired: true,
+        domain: true,
         icon: 'indieauth.png',
         iconMargin: true,
         avatars: false,
