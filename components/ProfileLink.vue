@@ -5,7 +5,7 @@
             {{niceLink.text}}
         </a>
         <small v-if="verifiedBy">
-            <Icon v="shield-check"/>
+            <Icon v="shield-check" set="s" class="small text-primary"/>
         </small>
     </span>
 </template>

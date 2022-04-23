@@ -3,7 +3,7 @@
     <span>
         <strong v-if="opinion === 1">
             <Tooltip :text="$t('profile.opinion.yes')">
-                <img src="../node_modules/@fortawesome/fontawesome-pro/svgs/solid/heart.svg" class="icon invertible"/>
+                <Icon v="heart" set="s"/>
             </Tooltip>
             <nuxt-link v-if="link" :to="link"><Spelling escape :text="word"/></nuxt-link>
             <span v-else><Spelling escape :text="word"/></span>
