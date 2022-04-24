@@ -496,6 +496,14 @@ profile:
     flagsCustomWarning: 'Deze vlag werd geuploaded door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
     links: 'Links'
     linksRecommended: 'We raden aan te linken naar'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Kolom'
 
     list: 'Jouw kaarten'
