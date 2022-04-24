@@ -1266,6 +1266,13 @@ profile:
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     links: 'Linki'
     linksRecommended: 'Polecamy dodać link do'
+    verifiedLinks:
+        header: 'Potwierdzone linki'
+        info: >
+            Linki umieszczone publicznie w profilu otrzymują znaczek tarczy,
+            jeśli zostały zweryfikowane za pomocą logowania przez danego dostawcę uwierzytelniania,
+            albo (ficzer w budowie) poprzez umieszczenie tagu <code>rel="me"</code> wskazującego z powrotem na wizytówkę.
+            Nasze linki również umieszczają <code>rel="me"</code>, aby zewnętrzne strony mogły potwierdzić wizytówkę również w odwrotną stronę.
     column: 'Kolumna'
 
     header: 'Wizytówki'

@@ -570,6 +570,14 @@ profile:
     flagsCustomWarning: '이 플래그는 사용자가 업로드했습니다. pronouns.page 팀은 이에 대한 책임을 지지 않습니다.'
     links: '링크'
     linksRecommended: '여기 연결하는 것이 좋습니다.'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '열'
 
     header: '카드'

@@ -1,12 +1,10 @@
 <template>
     <span>
         <Icon :v="niceLink.icon" :set="niceLink.iconSet || 'l'"/>
-        <a :href="linkTrimmed" target="_blank" :rel="verifiedBy ? 'me' : 'noopener'">
-            {{niceLink.text}}
-        </a>
-        <small v-if="verifiedBy">
+        <a :href="linkTrimmed" target="_blank" :rel="verifiedBy ? 'me' : 'noopener'">{{niceLink.text}}</a>
+        <button class="btn btn-sm p-0" v-if="verifiedBy" @click="verificationInfo">
             <Icon v="shield-check" set="s" class="small text-primary"/>
-        </small>
+        </button>
     </span>
 </template>
 
@@ -29,8 +27,17 @@
             },
             verifiedBy() {
                 return this.verifiedLinks[this.link];
-            }
-        }
+            },
+        },
+        methods: {
+            async verificationInfo() {
+                await this.$alert({
+                    icon: 'shield-check',
+                    header: this.$t('profile.verifiedLinks.header'),
+                    message: this.$t('profile.verifiedLinks.info')
+                });
+            },
+        },
     };
 </script>
 

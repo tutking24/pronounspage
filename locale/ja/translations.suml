@@ -495,6 +495,14 @@ profile:
     links: 'リンク'
     linksRecommended: ''
     linksRecommendedAfter: 'にリンクすることをお勧めします。'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '欄'
 
     list: 'あなたのカード'

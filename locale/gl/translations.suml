@@ -476,6 +476,14 @@ profile:
     flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
     links: 'Links'
     linksRecommended: 'Recomendamos linkar com'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Coluna'
 
     list: 'Os cartões'
