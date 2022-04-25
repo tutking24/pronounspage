@@ -68,6 +68,7 @@ module.exports = [
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Day}', '_mspec_lesbians', 5, day(26), EventLevel.Day),
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Week}', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week),
     new Event('UpStairs Lounge Arson Attack Remembrance Day', '_black-ribbon', 6, day(24), EventLevel.Day),
+    new Event('World AIDS Vaccine Day', '_red-ribbon', 5, day(18), EventLevel.Day),
 
     // --- dynamic date ---
 
