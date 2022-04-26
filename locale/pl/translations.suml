@@ -22,7 +22,7 @@ home:
         - >
             Dlaczego należy je respektować?
             Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
-            Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+            Nie powiesz do Ani „Franku”, nie powiesz „na ty” do osoby, z którą jesteś „na pan”, itp.
             A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
             Czy to uszanujesz, świadczy wyłącznie o Tobie.
         - >
@@ -116,7 +116,7 @@ sources:
         header: 'Zgłoś przykład do dodania'
         action: 'Zgłoś'
         pronouns: 'Które zaimki/formy są użyte?'
-        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. “onu”, “ono/jej”, “on&ona”'
+        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. „onu”, „ono/jej”, „on&ona”'
         type: 'Rodzaj źródła kultury'
         author: 'Osoba autorska'
         title: 'Tytuł'
@@ -406,7 +406,7 @@ faq:
             answer:
                 - >
                     Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
-                    Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+                    Nie powiesz do Ani „Franku”, nie powiesz „na ty” do osoby, z którą jesteś „na pan”, itp.
                     A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
                     Czy to uszanujesz, świadczy wyłącznie o Tobie.
                 - >
@@ -1089,7 +1089,7 @@ english:
     intro:
         - >
             Polish is a strongly gendered language:
-            even saying something as simple as “I did” requires specifying which gender you are.
+            even saying something as simple as “I did” or “I'm hungry” requires specifying which gender you are.
         - >
             It's problematic for nonbinary people,
             because we cannot simply switch one set of pronouns for another to express our identity.
@@ -1606,7 +1606,7 @@ report:
     confirm: 'Czy na pewno chcesz zgłosić profil @%username%?'
     sent: 'Twoje zgłoszenie zostało wysłane. Dziękujemy za pomoc!'
     terms: 'Pamiętaj, czego zabrania nasz {/regulamin=Regulamin}'
-    hoarding: 'Prosimy, nie zgłaszaj profilów za “zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
+    hoarding: 'Prosimy, nie zgłaszaj profilów za „zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
 
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
