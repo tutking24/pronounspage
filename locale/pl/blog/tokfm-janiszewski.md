@@ -1,4 +1,4 @@
-# Nasz radykalny projekt polityczny 😉
+# Nasz radykalny projekt polityczny
 
 <small>2022-04-26 | [@andrea](/@andrea)</small>
 
