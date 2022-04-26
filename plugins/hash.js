@@ -1,12 +1,15 @@
 export default {
     methods: {
+        getHash() {
+            if (!process.client) { return null; }
+
+            return decodeURIComponent(window.location.hash.substr(1).replace(/=$/, ''));
+        },
         handleHash(namespace, callback, checkAnchor = true) {
-            if (!process.client) {
-                return;
-            }
+            if (!process.client) { return; }
 
             const doHandle = () => {
-                const anchor = decodeURIComponent(window.location.hash.substr(1));
+                const anchor = this.getHash();
                 const $anchor = document.getElementById(anchor);
                 if (checkAnchor && $anchor) {
                     $anchor.scrollIntoView();
@@ -25,15 +28,17 @@ export default {
             }, 500);
         },
         setHash(namespace, value) {
-            if (!process.client) {
-                return;
-            }
+            if (!process.client) { return; }
+            const current = this.getHash();
+            const fullValue = namespace ? namespace + '/' + value : value
+
+            if (fullValue === current) { return; }
 
             history.pushState(
                 '',
                 document.title,
                 window.location.pathname + window.location.search
-                    + (value ? '#' + (namespace ? namespace + '/' + value : value) : '')
+                    + (value ? '#' + fullValue : '')
             );
         },
     }
