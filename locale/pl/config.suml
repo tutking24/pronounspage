@@ -870,7 +870,7 @@ links:
                 Obawiam się, że to lewicowe szaleństwo nie ma końca lub gdzieś tam przy granicach absurdu
                 będzie musiała czyhać policja myśli, bo inaczej nie da się nad tym zapanować.
             response: >
-                Nasza odpowiedź: {/blog/czytanie-ze-zrozumieniem=Czytanie ze zrozumieniem}
+                Nasza odpowiedź: {/blog/czytanie-ze-zrozumieniem=„Czytanie ze zrozumieniem”}
         -
             icon: 'newspaper'
             url: 'https://www.plotek.pl/plotek/7,154063,27103090,demi-lovato-oglasza-jestem-osoba-niebinarna.html'
@@ -980,7 +980,7 @@ links:
                 o osobach niebinarnych pomysłem Jacka Dukaja pochodzącym z powieści Perfekcyjna niedoskonałość.
                 Czyli onu/jenu. To tylko jedna z możliwości \[link do zaimki.pl].
             response: >
-                Nasza polemika: {/blog/mów-jak-mi-wygodnie=Mów do mnie, jak MI wygodnie}
+                Nasza polemika: {/blog/mów-jak-mi-wygodnie=„Mów do mnie, jak MI wygodnie”}
         -
             icon: 'newspaper'
             url: 'https://vibez.pl/wydarzenia/jak-pisac-o-osobach-niebinarnych-ja-juz-naprawde-nie-wiem-kto-ma-racje-czyli-dramy-z-zaimkami-6661197309622944a'
@@ -1218,6 +1218,8 @@ links:
                 (…) one wchodzą ze sobą w interakcje i są naturalnie wypłukiwane te, które nie pełnią dobrze funkcji,
                 które są im przeznaczone, a te które uważane są za natualne, pasujące, gładko leżą na języku,
                 mówiąc metaforycznie, one zwyciężają.
+            response: >
+                Nasza polemika: {/blog/tokfm-janiszewski=„Nasz radykalny projekt polityczny”}
 
     recommended:
         -
