@@ -89,9 +89,10 @@ ale jak najbardziej zgadzamy się, że płeć istnieje. Także gratulujemy [pobi
 
 Nie rozumiemy, w jaki sposób istnienie płci miałoby logicznie pociągać za sobą konieczność odzwierciedlenia jej w każdym aspekcie języka.
 Istnieje cała mnogość języków, w których płeć gra bardzo ograniczoną rolę. Chociażby ten wspomniany wcześniej angielski:
-tam gramatyka nie zmusza do wyboru, czy jesteś _głodny_ czy _głodna_, czy _zrobiłaś_ kanapkę czy _zrobiłeś_,
+choć oczywiście nie jest do końca neutralny płciowo, to przynajmniej jego gramatyka nie zmusza do wyboru,
+czy jesteś _głodny_ czy _głodna_, czy _zrobiłaś_ kanapkę czy _zrobiłeś_,
 czy jesteś _lekarzem_ czy _lekarką_. I ma się bez tego świetnie.
-Można posługiwać się językiem, który nie jest upłciowiony bez negowania istnienia płci.
+Można posługiwać się językiem, który nie jest aż tak upłciowiony, bez negowania istnienia płci.
 
 Żebyśmy my chociaż postulowały usunięcie płci z języka! Skądże!
 Najbliższe, co można by tak znadinterpretować, to zachęcanie do używania języka neutralnego płciowo.
