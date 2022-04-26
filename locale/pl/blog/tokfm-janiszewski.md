@@ -24,8 +24,8 @@ i dopasowywać to, co słyszymy i widzimy, do naszych preferencji m.in. w kwesti
 Co innego natomiast redaktor Janiszewski. Słychać, że całą audycję próbował oprzeć na antagonizmie wobec naszego projektu.
 No cóż, bywa. Nie każde musi nas lubić 🤷 Warto chyba jednak, żebyśmy na parę kwestii krótko odpowiedziały.
 
-Trochę siara, że nie rozumie, jak są tworzone dukaizmy (mówił np. „eksperymentowałbum” zamiast „eksperymentowałubym”),
-że spytał Dukaja, czy można nazywać jego formy „rodzajem postpłciowym” (ta nazwa jest autorstwa Dukaja, nie naszym wymysłem),
+Trochę siara, że skoro robi program na ten temat, nie potrafi poprawnie stworzyć dukaizmów (mówił np. „eksperymentowałbum” zamiast „eksperymentowałubym”),
+albo że spytał Dukaja, czy można nazywać jego formy „rodzajem postpłciowym” (ta nazwa jest autorstwa Dukaja, nie naszym wymysłem),
 albo że wszystkie cytaty z „Perfekcyjnej Niedoskonałości”, które przytoczył podczas audycji, pochodziły z [naszego Korpusu](/korpus#perfekcyjna%20niedoskona%C5%82o%C5%9B%C4%87),
 zdradzając, że raczej nie zajrzał do oryginału.
 Ale skupmy się jednak na poważniejszych kwestiach.
@@ -126,7 +126,7 @@ Męskość jest zawsze w centrum, męskość nikogo nie dziwi. Kobiecość (a co
 jest traktowana jako odstępstwo od normy, jako coś niewartego nazwania słowami.
 
 Dlatego właśnie zachęcamy kobiety, by opisywały się z użyciem feminatywów zamiast językowego poddawania się patriarchatowi.
-Co nijak nie kłóci się z tym, że chiałobyśmy, by polska gramatyka była mniej zafiksowana na punkcie płci.
+Co nijak nie kłóci się z tym, że chciałobyśmy, by polska gramatyka była mniej zafiksowana na punkcie płci.
 
 > Równocześnie jednak fascynuje mnie ta strona i ta inicjatywa. Jej radykalizm ma w sobie coś uwodzicielskiego,
 > nawet jeśli prześlepia całą mnogość kontrargumentów.
