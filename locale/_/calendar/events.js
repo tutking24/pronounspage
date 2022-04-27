@@ -199,15 +199,29 @@ module.exports = [
     }), EventLevel.Week),
 
     new Event('lesbian_visibility_week', 'Lesbian', 4, week(function* (monthDays) {
-        let lastDay = null;
+        let buffer = [];
+        const ret = [];
         for (let d of monthDays) {
             if (d.day >= 26) {
-                yield d;
+                for (let dd of buffer) {
+                    ret.push(dd);
+                }
+                buffer = [];
+                ret.push(d);
+                continue;
             }
-            lastDay = d;
+
+            if (d.dayOfWeek === 1) {
+                buffer = [];
+            }
+            buffer.push(d);
         }
-        yield new Day(lastDay.year, 5, 1);
-        yield new Day(lastDay.year, 5, 2);
+
+        let i = 1;
+        while (ret.length < 7) {
+            ret.push(new Day(ret[0].year, 5, i++))
+        }
+        yield* ret;
     }), EventLevel.Week, ['lesbian']),
 
     // first Sunday of May
