@@ -63,6 +63,8 @@ module.exports = [
     new Event('{https://www.facebook.com/events/698107478207024=3. Marsz Równości na Woodstocku} (Czaplinek)', 'LGBTQ', 8, dayYear(6, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 8, dayYear(20, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/413636720098790/=I Marsz Równości w Miliczu}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1462034324230653/=1. Transgraniczny Marsz Równości Gryfino-Mescherin}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    
 
     // --- dynamic date ---
 
