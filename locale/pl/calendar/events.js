@@ -5,7 +5,9 @@ module.exports = [
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
     new Event('Miesiąc Historii LGBTQ+ (UK/Węgry/Niderlandy)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (UA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('Miesiąc Historii LGBTQ+ (Irlandia/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),        
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
     // --- static date ---
