@@ -2,7 +2,9 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/cal
 
 module.exports = [
     // --- months ---
-    new Event('Mes de la Historia LGBT (EE.UU.)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBT (EE.UU./Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBT (Reino Unido)', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBT (Cuba/Alemania)', 'Progress Pride', 5, month, EventLevel.Month),
     new Event('Mes de la Diversidad (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
     new Event('Mes de la Visibilidad Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('Mes de la Visibilidad Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
