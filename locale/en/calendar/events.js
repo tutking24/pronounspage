@@ -4,7 +4,9 @@ module.exports = [
     // --- months ---
     new Event('LGBT History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('LGBT History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('LGBT History Month (Ireland/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('LGBT History Month (Italy)', 'Progress Pride', 4, month, EventLevel.Month),
+    new Event('LGBT History Month (Cuba/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('LGBT History Month (Finland)', 'Progress Pride', 5, month, EventLevel.Month),    
     new Event('{/terminology#transgender=Trans} Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('{/terminology#lesbian=Lesbian} Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
