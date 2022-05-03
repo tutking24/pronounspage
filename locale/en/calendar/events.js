@@ -73,6 +73,7 @@ module.exports = [
     new Event('World AIDS Vaccine Day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
     new Event('Queer Youth Day', 'LGBTQ', 6, day(30), EventLevel.Day),
     new Event('Omnisexual Visibility Day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
+    new Event('Admiral Duncan Pub Bombing Remembrance Day', '_black-ribbon', 4, day(30), EventLevel.Day),
 
     // --- dynamic date ---
 
