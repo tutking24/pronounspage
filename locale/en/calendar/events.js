@@ -179,4 +179,8 @@ module.exports = [
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),    
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
+
+    // --- one-off events ---
+    new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
+
 ];
