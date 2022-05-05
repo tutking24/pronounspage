@@ -5,7 +5,9 @@ module.exports = [
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
     new Event('Miesiąc Historii LGBTQ+ (UK/Węgry/Niderlandy)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (UA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('Miesiąc Historii LGBTQ+ (Irlandia/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),        
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
     // --- static date ---
@@ -62,6 +64,9 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1593099004379743=IV Marsz Równości w Opolu}', 'LGBTQ', 7, dayYear(16, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/698107478207024=3. Marsz Równości na Woodstocku} (Czaplinek)', 'LGBTQ', 8, dayYear(6, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 8, dayYear(20, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/413636720098790/=I Marsz Równości w Miliczu}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1462034324230653/=1. Transgraniczny Marsz Równości Gryfino-Mescherin}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    
 
     // --- dynamic date ---
 
