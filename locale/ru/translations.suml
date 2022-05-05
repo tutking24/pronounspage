@@ -594,6 +594,10 @@ profile:
             if they are verified by logging in using the given authentication provider,
             or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
+    linksWarning: >
+        Доносим до вашего сведения, что сейчас может быть небезопасно публиковать очень много своих соцсетей в одном месте,
+        особенно если это соцсети, которые могут легко предоставить ваши переписки и личные данные федеральным службам
+        (напр.: ВКонтакте, Mail.ru, Одноклассники). Будьте бдительны и по возможности позаботьтесь о своей безопасности!
     column: 'Колонка'
 
     header: 'Карточки'
