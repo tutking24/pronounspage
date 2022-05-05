@@ -2,9 +2,11 @@ const {Event, day, week, month, dayYear, weekStarting, EventLevel, Day} = requir
 
 module.exports = [
     // --- months ---
-    new Event('LGBT History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
-    new Event('LGBT History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('LGBT History Month (Ireland/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (Italy)', 'Progress Pride', 4, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (Cuba/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Queer History Month (Finland)', 'Progress Pride', 11, month, EventLevel.Month),    
     new Event('{/terminology#transgender=Trans} Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('{/terminology#lesbian=Lesbian} Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
@@ -71,6 +73,7 @@ module.exports = [
     new Event('World AIDS Vaccine Day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
     new Event('Queer Youth Day', 'LGBTQ', 6, day(30), EventLevel.Day),
     new Event('Omnisexual Visibility Day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
+    new Event('Admiral Duncan Pub Bombing Remembrance Day', '_black-ribbon', 4, day(30), EventLevel.Day),
 
     // --- dynamic date ---
 
@@ -177,4 +180,8 @@ module.exports = [
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),    
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
+
+    // --- one-off events ---
+    new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
+
 ];
