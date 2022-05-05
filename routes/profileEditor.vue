@@ -167,6 +167,10 @@
                     <T silent>profile.linksRecommendedAfter</T>
                     😉
                 </p>
+                <p v-if="$te('profile.linksWarning')" class="small text-muted mt-2 mb-0">
+                    <Icon v="exclamation-triangle"/>
+                    <T>profile.linksWarning</T>
+                </p>
             </section>
 
             <section class="form-group">
