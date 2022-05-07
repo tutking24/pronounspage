@@ -448,6 +448,7 @@ profile:
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
     flagsCustomWarning: '此旗幟由一名用戶上傳。pronouns.page團隊不為此負責'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
     # TODO

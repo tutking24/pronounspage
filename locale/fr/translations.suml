@@ -493,6 +493,7 @@ profile:
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
     flagsCustom: 'Uploader un drapeau personnalisé'
     flagsCustomWarning: 'Ce drapeau a été uploadé par un.e utilisateur.rice. L’équipe de pronouns.page n’en est pas tenue responsable.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Liens'
     linksRecommended: 'Nous vous recommandons ces liens'
     # TODO

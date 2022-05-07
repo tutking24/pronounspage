@@ -571,6 +571,7 @@ profile:
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Links'
     linksRecommended: 'We recommend linking to'
     # TODO

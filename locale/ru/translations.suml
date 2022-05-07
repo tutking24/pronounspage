@@ -574,6 +574,7 @@ profile:
     flagsInfo: 'Перетащите ваши прайд-флаги в эту рамку.'
     flagsCustom: 'Загрузить пользовательский прайд-флаг'
     flagsCustomWarning: 'Этот прайд-флаг был добавлен пользователикс. Команда pronouns.page не несет ответственность за это.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Ссылки'
     linksRecommended: 'Рекомендуем перейти по этим ссылкам'
     # TODO

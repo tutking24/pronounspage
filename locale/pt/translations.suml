@@ -496,6 +496,7 @@ profile:
     flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
     flagsCustom: 'Enviar bandeira personalizada'
     flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Links'
     linksRecommended: 'Recomendamos linkar com'
     # TODO

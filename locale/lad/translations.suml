@@ -470,6 +470,7 @@ profile:
     flagsInfo: 'Arrastra tus bandieras de orgolyo a este marko.'
     flagsCustom: 'Karga una bandiera personalizada'
     flagsCustomWarning: 'Esta bandiera fue kargada por un uzadore. La taifa de pronouns.page no es responsable de eya.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Atadijos'
     linksCake: 'Rekomendamos atadijos a'
     column: 'Kolona'

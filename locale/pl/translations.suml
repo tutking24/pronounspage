@@ -1264,6 +1264,7 @@ profile:
         Więcej informacji o etykietkach znajdziesz w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
+    flagsAsterisk: 'To nie jest queerowa tożsamość, ale uwględniamy ją tutaj przez wzgląd na osoby, które są queerowe na inne sposoby (np. hetero osoby trans).'
     links: 'Linki'
     linksRecommended: 'Polecamy dodać link do'
     verifiedLinks:

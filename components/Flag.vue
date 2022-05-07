@@ -2,15 +2,19 @@
     <span class="flag-wrapper">
         <a v-if="link" :href="`/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
-            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup></Twemoji>
+            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
         </a>
         <span v-else :title="alt">
             <img :src="img" :alt="name" class="flag-mini rounded"/>
-            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup></Twemoji>
+            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
         </span>
         <span class="flag-preview bg-white rouded p-2 border">
             <img :src="img" :alt="name" class="rounded"/>
-            <span v-if="custom" class="alert alert-warning small d-inline-block mt-2 mb-0 p-2">
+            <span v-if="asterisk" class="alert alert-warning small d-block mt-2 mb-0 p-2">
+                *
+                <T>profile.flagsAsterisk</T>
+            </span>
+            <span v-if="custom" class="alert alert-warning small d-block mt-2 mb-0 p-2">
                 <Icon v="user"/>
                 <T>profile.flagsCustomWarning</T>
             </span>
@@ -26,6 +30,7 @@
             img: { required: true },
             terms: { },
             custom: { type: Boolean },
+            asterisk: { type: Boolean },
         },
         computed: {
             link() {
@@ -84,9 +89,15 @@
             }
         }
 
+        text-align: left;
+        font-weight: normal;
+
         &:hover {
             .flag-preview {
                 display: block;
+                span {
+                    white-space: normal;
+                }
             }
         }
     }

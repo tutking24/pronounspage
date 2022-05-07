@@ -568,6 +568,7 @@ profile:
     flagsInfo: '이 프레임에 프라이드 플래그를 끌어다 놓세요.'
     flagsCustom: '맞춤 플래그 업로드'
     flagsCustomWarning: '이 플래그는 사용자가 업로드했습니다. pronouns.page 팀은 이에 대한 책임을 지지 않습니다.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: '링크'
     linksRecommended: '여기 연결하는 것이 좋습니다.'
     # TODO

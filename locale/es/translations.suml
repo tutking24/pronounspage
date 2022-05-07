@@ -575,6 +575,7 @@ profile:
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
     flagsCustom: 'Sube una bandera personalizada'
     flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Enlaces'
     linksRecommended: 'Recomendamos enlaces a'
     # TODO
