@@ -1829,3 +1829,7 @@ calendar:
         list: 'Lista wydarzeń'
     link: 'Link'
     full: 'Pełen kalendarz'
+
+ukraine:
+    header: 'Solidaryzujemy się z Ukrainą.'
+    link: '{https://how-you-can-support-ukraine.super.site/jak-moesz-wesprze-ukrain-1=Tutaj znajdziesz informację, jak wesprzeć.}'

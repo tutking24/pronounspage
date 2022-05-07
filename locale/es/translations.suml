@@ -1084,3 +1084,7 @@ calendar:
         list: 'Lista de eventos'
     link: 'Enlace'
     full: 'Calendario completo'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://supportukrainenow.org/translate-and-share-this/formas-reales-de-ayudar-a-ucrania-como-extranjero=Here''s how you can support it.}'
