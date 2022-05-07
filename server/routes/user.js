@@ -250,7 +250,7 @@ const router = Router();
 
 router.use(handleErrorAsync(reloadUser));
 
-router.get('/user/current', handleErrorAsync(async (req, res) => {
+export const loadCurrentUser = async (req, res) => {
     if (!req.user) {
         res.clearCookie('token');
         return res.json(null);
@@ -269,7 +269,9 @@ router.get('/user/current', handleErrorAsync(async (req, res) => {
     req.user = req.rawUser;
 
     return res.json({...req.user, token});
-}));
+};
+
+router.get('/user/current', handleErrorAsync(loadCurrentUser));
 
 router.post('/user/init', handleErrorAsync(async (req, res) => {
     if (req.body.usernameOrEmail && isSpam(req.body.usernameOrEmail || '')) {

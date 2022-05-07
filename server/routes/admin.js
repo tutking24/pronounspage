@@ -11,6 +11,7 @@ import {profilesSnapshot} from "./profile";
 import buildLocaleList from "../../src/buildLocaleList";
 import {archiveBan, liftBan} from "../ban";
 import marked from 'marked';
+import {loadCurrentUser} from "./user";
 
 const router = Router();
 
@@ -245,6 +246,20 @@ router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
         rulesTerminology,
         rulesSources,
     })
+}));
+
+router.post('/admin/set-notification-frequency', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted()) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    if (![0, 1, 7].includes(req.body.frequency)) {
+        return res.status(400).json({error: 'Bad request'});
+    }
+
+    await req.db.get(SQL`UPDATE users SET adminNotifications = ${req.body.frequency} WHERE id = ${req.user.id}`);
+
+    return await loadCurrentUser(req, res);
 }));
 
 export default router;

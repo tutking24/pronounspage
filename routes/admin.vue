@@ -10,6 +10,16 @@
 
         <p><nuxt-link to="/admin/moderation" class="btn btn-outline-primary">Moderation rules</nuxt-link></p>
 
+        <p>
+            Email notifications when there's items to moderate:
+        </p>
+        <p>
+            <span v-for="(label, value) in {0: 'Never', 1: 'Daily', 7: 'Weekly'}" class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" :id="`notifiactionFrequency_${value}`" :value="value" v-model="adminNotifications">
+                <label class="form-check-label" :for="`notifiactionFrequency_${value}`">{{label}}</label>
+            </span>
+        </p>
+
         <section v-if="$isGranted('users')">
             <details class="border mb-3" @click="usersShown = true">
                 <summary class="bg-light p-3">
@@ -192,6 +202,7 @@
                 localeFilter: true,
                 adminsFilter: false,
                 usersShown: false,
+                adminNotifications: this.$user().adminNotifications ?? 7,
             }
         },
         async asyncData({ app, store }) {
@@ -240,6 +251,10 @@
                 this.userFilterDelayHandle = setTimeout(() => {
                     this.userFilterDelayed = this.userFilter;
                 }, 500);
+            },
+            async adminNotifications() {
+                const res = await this.$axios.$post(`/admin/set-notification-frequency`, {frequency: parseInt(this.adminNotifications)});
+                this.$store.commit('setToken', res.token);
             },
         },
         head() {
