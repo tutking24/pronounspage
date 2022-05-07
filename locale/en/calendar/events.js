@@ -6,7 +6,7 @@ module.exports = [
     new Event('LGBTQ+ History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
     new Event('LGBTQ+ History Month (Italy)', 'Progress Pride', 4, month, EventLevel.Month),
     new Event('LGBTQ+ History Month (Cuba/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
-    new Event('Queer History Month (Finland)', 'Progress Pride', 11, month, EventLevel.Month),    
+    new Event('Queer History Month (Finland)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('{/terminology#transgender=Trans} Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('{/terminology#lesbian=Lesbian} Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
@@ -74,6 +74,7 @@ module.exports = [
     new Event('Queer Youth Day', 'LGBTQ', 6, day(30), EventLevel.Day),
     new Event('Omnisexual Visibility Day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
     new Event('Admiral Duncan Pub Bombing Remembrance Day', '_black-ribbon', 4, day(30), EventLevel.Day),
+    new Event('{https://unlabeledidentity.carrd.co/=Unlabelled Visibility Day}', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled']),
 
     // --- dynamic date ---
 
@@ -178,7 +179,7 @@ module.exports = [
 
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
-    new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),    
+    new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
 
     // --- one-off events ---
