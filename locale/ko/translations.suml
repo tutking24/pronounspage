@@ -1035,3 +1035,7 @@ calendar:
         labels: '라벨'
     link: '링크'
     full: '전체 캘린더'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'

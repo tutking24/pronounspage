@@ -2,6 +2,8 @@
     <div>
         <template v-if="$te('home.welcome')">
             <section>
+                <UkraineBanner class="mb-4"/>
+
                 <h2>
                     <T>home.welcome</T>
                 </h2>

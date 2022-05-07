@@ -990,3 +990,7 @@ calendar:
         list: 'イベントのリスト'
     link: 'リンク'
     full: 'カレンダー全体を見る'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'

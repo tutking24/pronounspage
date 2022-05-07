@@ -985,3 +985,7 @@ calendar:
         list: 'Ereignisliste'
     link: 'Link'
     full: 'Ganzer Kalender'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/de-wie-sie-der-ukraine-helfen-knnen-1/=Here''s how you can support it.}'

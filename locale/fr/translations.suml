@@ -1004,3 +1004,7 @@ calendar:
         list: 'Liste des événements'
     link: 'Liens'
     full: 'Calendrier complet'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/france=Here''s how you can support it.}'
