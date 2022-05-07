@@ -992,5 +992,5 @@ calendar:
     full: 'カレンダー全体を見る'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
+    header: '私たちはウクライナを支援します。'
+    link: '{https://how-you-can-support-ukraine.super.site/=支援をする方法はこちら}'
