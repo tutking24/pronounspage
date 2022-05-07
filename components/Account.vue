@@ -226,6 +226,10 @@
         async mounted() {
             this.profiles = (await this.$axios.$get(`/profile/get/${this.$user().username}`)).profiles;
             this.socialConnections = await this.$axios.$get(`/user/social-connections`);
+            const user = await this.$axios.$get(`/user/current`);
+            if (user) {
+                this.$store.commit('setToken', user.token);
+            }
 
             if (process.client) {
                 const redirectTo = window.sessionStorage.getItem('after-login');
