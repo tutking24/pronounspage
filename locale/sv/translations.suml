@@ -547,6 +547,7 @@ profile:
     flagsInfo: 'Dra och släpp dina pride flaggor här.'
     flagsCustom: 'Ladda upp anpassad flagga'
     flagsCustomWarning: 'Denna flagga har laddats upp av en användare. Pronouns.page är inte ansvarig.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Länkar'
     column: 'Kolumn'
 

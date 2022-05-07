@@ -471,6 +471,7 @@ profile:
     flagsInfo: 'Dra og dropp pride flaggene dine inn i denne rammen.'
     flagsCustom: 'Last opp tilpasset flagg'
     flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Linker'
     linksRecommended: 'Vi anbefaler å linke til'
     # TODO

@@ -607,6 +607,7 @@ profile:
     flagsInfo: 'Перетягніть ваші прайд-прапори в цю рамку.'
     flagsCustom: 'Завантажити користувацький прайд-прапор'
     flagsCustomWarning: 'Цей прайд-прапор був доданий користувач_кою. Команда pronouns.page не несе відповідальності за це.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Посилання'
     linksRecommended: 'Рекомендуємо перейти за цими посиланням'
     # TODO
