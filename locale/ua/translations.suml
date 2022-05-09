@@ -1120,5 +1120,5 @@ calendar:
     full: 'Повний календар'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
+    header: 'Ми підтримуємо Україну.'
+    link: '{https://dou.ua/lenta/articles/stand-with-ukraine/=Ось як Ви можете допомогти!}'
