@@ -389,7 +389,7 @@ contact:
                 - 'blog posts schrijven,'
                 - 'programmeren,'
                 - '…'
-            allies: > # TODO
+            allies: >
                 Sommige van deze taken hebben het perspectief van een non binair persoon nodig, andere taken niet perse.
                 Dat is waarom we ook binaire bondgenoten uitnodigen om mee te doen.
             how: 'Hoe kun je meedoen? Stuur een mailtje naar {mailto:contact@pronouns.page=contact@pronouns.page} waarin je:'
@@ -425,12 +425,12 @@ user:
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
         instancePlaceholder: 'Instantie'
         # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: 'Domein'
+        deprecated: 'Verouderd'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Dit is een onbetrouwbaar authenticatiesysteem.
+            <a href="%link%" target="_blank" rel="noopener">Klik op deze link voor meer informatie.</a>.
+            We raden je sterk aan om een andere login methode te kiezen.
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'
@@ -494,7 +494,7 @@ profile:
     flagsInfo: 'Klik en sleep jouw pridevlaggen naar deze frame.'
     flagsCustom: 'Upload zelfgemaakte vlaggen'
     flagsCustomWarning: 'Deze vlag werd geuploaded door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'Dit is geen queer identiteit, maar we hebben het toegevoegd voor gebruikers die queer zijn op andere vlakken van hun identiteit (bijv. een heteroseksuele transgender individu).'
     links: 'Links'
     linksRecommended: 'We raden aan te linken naar'
     # TODO
