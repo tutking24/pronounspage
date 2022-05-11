@@ -492,7 +492,7 @@ profile:
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
     flagsCustom: 'Uploader un drapeau personnalisé'
     flagsCustomWarning: 'Ce drapeau a été uploadé par un.e utilisateur.rice. L’équipe de pronouns.page n’en est pas tenue responsable.'
-    flagsAsterisk: 'Ce n'est pas une identité queer, mais nous l'incluons pour les individus queer "autre" (par exemple, les trans hétérosexuels).'
+    flagsAsterisk: 'Ce n''est pas une identité queer, mais nous l''incluons pour les individus queer "autre" (par exemple, les trans hétérosexuels).'
     links: 'Liens'
     linksRecommended: 'Nous vous recommandons ces liens'
     verifiedLinks:
@@ -1005,5 +1005,5 @@ calendar:
     full: 'Calendrier complet'
 
 ukraine:
-    header: 'Nous soutenons l'Ukraine.'
+    header: 'Nous soutenons l''Ukraine.'
     link: '{https://how-you-can-support-ukraine.super.site/=Voici comment aider.}'
