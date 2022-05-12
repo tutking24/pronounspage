@@ -427,13 +427,12 @@ user:
             Registrar-se te permite dirigir os cartões ({/@example=como esta}).
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instância'
-        # TODO
         domainPlaceholder: 'Domain'
         deprecated: 'Deprecated'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Este não é um provedor de autenticação confiável.
+            <a href="%link%" target="_blank" rel="noopener">Clique neste link para mais detalhes</a>.
+            Nós recomendamos fortemente que você também tenha um método secundário para fazer login.
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -496,17 +495,16 @@ profile:
     flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
     flagsCustom: 'Enviar bandeira personalizada'
     flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'Esta não é uma identidade queer, mas nós também a incluímos para pessoas que são queer de outras formas (por exemplo, pessoas trans que são heterossexuais).'
     links: 'Links'
     linksRecommended: 'Recomendamos linkar com'
-    # TODO
     verifiedLinks:
-        header: 'Verified links'
+        header: 'Links Verificados'
         info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
+            Os links colocados publicamente em um perfil serão sinalizados com o ícone de escudo,
+             se forem verificados fazendo login usando o provedor de autenticação fornecido,
+            ou (under construction) por uma tag <code>rel="me"</code>  apontando para o cartão.
+            Nossos links também incluem uma tag <code>rel="me"</code> para que websites externos também possam verificar seu cartão.
     column: 'Coluna'
 
     list: 'Os cartões'
@@ -1010,5 +1008,5 @@ calendar:
     full: 'Calendário completo'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org/translate-and-share-this/portuguese=Here''s how you can support it.}'
+    header: 'Nós estamos com a Ucrânia.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Aqui você pode saber como ajudar o povo ucraniano também.}'
