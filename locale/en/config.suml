@@ -124,7 +124,9 @@ community:
     route: 'terminology'
 
 inclusive:
-    enabled: false
+    enabled: true
+    categories: ['non-heteronormativity', 'transgender', 'intersex', 'feminism', 'disability', 'race and nationality', 'poverty', 'mental health']
+    route: 'inclusive'
 
 terminology:
     enabled: true
