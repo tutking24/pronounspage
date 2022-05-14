@@ -74,7 +74,7 @@ pronouns:
         description: >
             Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
             vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
-            - zolang de context duidelijk maakt wie hiermee wordt gerefereerd. 
+            - zolang de context duidelijk maakt wie hiermee wordt gerefereerd.
         options: 'bekijk de mogelijkheden [share]{/voornaamwoorden=hier}.'
     others: 'Andere vormen'
     othersRaw: 'andere'
@@ -142,7 +142,7 @@ nouns:
             Je kunt ook aan ons woordenboek bijdragen en jouw suggesties toevoegen.
 
     approved: 'Goedgekeurde inzendingen'
-    pending: ‘In afwachting van goedkeuring'
+    pending: 'In afwachting van goedkeuring'
     edit: 'Stel een verandering voor'
     edited: 'Voorgestelde verandering van'
     editing: 'Je bent een bestaande entry aan het bewerken.'
@@ -388,7 +388,7 @@ contact:
                 - ' het overzien van het proces van het toevoegen van nieuwe talen,'
                 - 'het schrijven van blog posts,'
                 - 'programmeren,'
-                - ‘en nog veel meer!’
+                - 'en nog veel meer!'
             allies: >
                 Sommige van deze taken hebben het perspectief van een non-binair persoon nodig, andere taken niet perse.
                 Dat is waarom we ook binaire bondgenoten uitnodigen om mee te doen.
@@ -498,8 +498,8 @@ profile:
     linksRecommended: 'We raden aan te linken naar'
     verifiedLinks:
         header: 'geverifieerde social media links'
-        info: > De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code> tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag, zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.        
-          
+        info: > De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code> tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag, zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.
+
     column: 'Kolom'
 
     list: 'Jouw kaarten'
@@ -538,7 +538,7 @@ profile:
         description: 'Deze sectie is slechts voor jou zichtbaar'
     language:
         header: 'Taal'
-        description: De kaart van '@%username%''s is ook in de volgende talen beschikbaar:'
+        description: 'De kaart van @%username% is ook in de volgende talen beschikbaar:'
 
 share: 'Deel'
 
@@ -923,13 +923,13 @@ calendar:
         pride_month: 'Pride maand'
         trans_month: 'Internationale transgender maand'
         zaimki_birthday: 'Verjaardag van pronouns.page'
-        agender_day: ‘Agender pride dag’	'
+        agender_day: 'Agender pride dag'
         asexuality_day: 'Internationale dag van de aseksualiteit'
         bisexuality_day: 'Dag van de biseksualiteit'
         drag_day: 'Dag van de drag'
         idahobit: 'Internationale dag tegen homofobie, bifobie en transfobie'
         intersex_day: 'Dag van aandacht voor intersekse personen'
-        intersex_remembrance_day: ‘Internationale intersekse gedenkdag’
+        intersex_remembrance_day: 'Internationale intersekse gedenkdag'
         lesbian_day: 'International dag van lesbische personen'
         lesbian_visibility_day: 'Lesbische zichtbaarheidsdag'
         coming_out_day: 'Dag van de coming out'
@@ -994,7 +994,7 @@ calendar:
         queer_youth_day: 'Dag van de queer jongeren'
         ominsexual_day: 'Dag van de aandacht voor omniseksuele personen'
         unlabeled_day: 'Dag van de aandacht voor ongelabelde personen'
-banner: 'Vandaag op de kalender'
+    banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
     celebrating_day: 'wordt gevierd op:'
     celebrating_week: 'wordt gevierd tijdens:'
