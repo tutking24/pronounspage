@@ -1,6 +1,6 @@
 title: 'Pronouns.page'
 domain: 'sv.pronouns.page'
-description: 'Användning av personliga pronomen och genusneutralt språk.'
+description: 'Användning av personliga pronomen och könsneutralt språk.'
 
 home:
     link: 'Hemsida'
@@ -86,8 +86,8 @@ pronouns:
 sources:
     header: 'Källor'
     headerLong: 'Exempel från kulturtexter'
-    headerLonger: 'Genusneutralt språk i kulturtexter'
-    subheader: 'Textkorpus av genusneutralt språk'
+    headerLonger: 'Könsneutralt språk i kulturtexter'
+    subheader: 'Textkorpus av könsneutralt språk'
     toc: 'Visa innehållsförteckning'
     type:
         All: 'Allt'
@@ -224,7 +224,7 @@ faq:
                     och {https://gender.wikia.org/wiki/Non-binary=många många fler}.
                 - >
                     Ickebinär behöver inte betyda något som är ”emellan” maskulinitet och femininitet. Det är mer som något ”utanför” det.
-                    Ickebinära människor måste inte vara androgyna, måste inte ha genusneutrala pronomen, osv.
+                    Ickebinära människor måste inte vara androgyna, måste inte ha könsneutrala pronomen, osv.
                     Det handlar om att vara fri från könsroller, inte att skapa nya.
         why-respect:
             question: 'Varför borde jag respektera en <em>främlings</em> pronomen?'
