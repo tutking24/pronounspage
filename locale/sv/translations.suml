@@ -479,7 +479,7 @@ user:
         domainPlaceholder: 'Domän'
         deprecated: 'Ur bruk'
         depreciationNotice: >
-            Detta är inte en pålitlig auteniseringsleverantör.
+            Detta är inte en pålitlig autentiseringsleverantör.
             <a href="%link%" target="_blank" rel="noopener">Klicka på denna länk för fler detaljer</a>.
             Vi rekommenderar starkt att du har en annan inloggningsmetod tillgänglig.
     code:
