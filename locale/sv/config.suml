@@ -61,7 +61,7 @@ terminology:
         - 'tertiära läggningar'
         - 'kön'
         - 'könsuttryck'
-        - 'relations modell'
+        - 'relationsmodell'
         - 'språk'
         - 'attraktion'
         - 'politik'
@@ -104,7 +104,7 @@ links:
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
-            extra: '– inspirasjon for denne nettsiden.'
+            extra: '– inspiration for denna webbsida.'
     academic: []
     mediaGuests: []
     mediaMentions: []
