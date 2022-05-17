@@ -1,6 +1,6 @@
 title: 'Pronouns.page'
 domain: 'sv.pronouns.page'
-description: 'Användning av personliga pronomen och genusneutralt språk.'
+description: 'Användning av personliga pronomen och könsneutralt språk.'
 
 home:
     link: 'Hemsida'
@@ -8,7 +8,7 @@ home:
     headerLong: 'Lista över pronomen'
     # welcome: 'Välkommen till pronouns.page!'
     intro: >
-        Vi skapar en informationskälla om ickebinärt och genusneutralt språk.
+        Vi skapar en informationskälla om ickebinärt och könsneutralt språk.
     why: 'Vad innebär pronomen?'
     about:
         - >
@@ -86,8 +86,8 @@ pronouns:
 sources:
     header: 'Källor'
     headerLong: 'Exempel från kulturtexter'
-    headerLonger: 'Genusneutralt språk i kulturtexter'
-    subheader: 'Textkorpus av genusneutralt språk'
+    headerLonger: 'Könsneutralt språk i kulturtexter'
+    subheader: 'Textkorpus av könsneutralt språk'
     toc: 'Visa innehållsförteckning'
     type:
         All: 'Allt'
@@ -109,7 +109,7 @@ sources:
         author: 'Författare'
         title: 'Titel'
         extra: 'Mer information (översättare, namn på tidsskrift, …)'
-        year: 'Utgivningsår (av den Svenska versionen)'
+        year: 'Utgivningsår (av den svenska versionen)'
         fragments: 'fragment'
         fragmentsInfo: 'Du kan markera de relevanta pronomen genom att använda den kvadratformade kategorin: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
         comment: 'Kommentar'
@@ -120,7 +120,7 @@ sources:
         key: 'Nyckel'
         keyInfo: 'Identifierare för att länka källor mellan språkversioner och länka till ordbok'
         images: 'Bilder'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler' # Swedish just takes the word spoiler directly
     otherVersions: 'På andra språk'
     referenced: 'Exempel på användning'
 
@@ -128,18 +128,18 @@ sources:
 nouns:
     header: 'Ordbok'
     headerLong: 'Ordbok med neutrala substantiv'
-    headerLonger: 'Ordbok för genusneutralt språk'
+    headerLonger: 'Ordbok för könsneutralt språk'
     description: 'Det är inte bara pronomen! Kolla in vår ordbok för neutrala substantiv.'
     intro:
         - >
-            Inkluderande och genusneutralt språk är inte bara att respektera någons pronomen.
+            Inklusivt och könsneutralt språk är inte bara att respektera någons pronomen.
             Det beskriver också deras jobb, position, relation osv.
             på ett sätt som inte förutsätter deras könsidentitet.
             Alla brandmän är inte män. Inte alla gifta är ”man” och ”fru”.
         - >
             När du hänvisar till någon vars könsidentitet du inte känner till,
             till en grupp av människor med blandade könstillhörigheter,
-            och särskilt till ickebinära människor som explicit föredrar dem,
+            och särskilt till ickebinära människor som uttryckligt föredrar dem,
             bör du använda de neutrala formerna.
         - >
             Nedan presenteras en ordbok över ord att hålla utkik efter.
@@ -185,7 +185,7 @@ terminology:
     headerLong: 'Ordbok för queer terminologi'
     info:
         - >
-            Många begrepp och fraser som relaterar till HBTQ+ community
+            Många begrepp och fraser som relaterar till HBTQ+-gemenskapen
             används som engelska låneord i svenska texter.
             Vi vill presentera en ordbok för sådana begrepp, beskriva deras definition,
             och ge förslag på hur de kan översättas till svenska.
@@ -203,19 +203,19 @@ faq:
             question: 'Vad är icke-binär?'
             answer:
                 - >
-                    Könsidentitet/genus/gender är mycket mer komplicerat än man/kvinna.
+                    Kön är mycket mer komplicerat än man/kvinna.
                     Även från en rent biologisk synpunkt kan vi urskilja kromosomalt kön,
                      genetiskt kön, hormonellt kön, fenotypiskt kön...
                      De överensstämmer inte nödvändigtvis med varandra, och de måste inte vara binära.
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mer info här)}.
                      Och när vi kommer till den kulturella aspekten så är "könsidentitet" en social konstruktion.
-                     Beroende på tid och plats så kan att vara "en kvinna" eller "en man" ha haft radikalt olika innebörder.
-                     Rättigheter, skyldigheter, normer… I Europa brukade män ha på sig klackskor och tights,
-                     nativamerikaner i Nordamerika har under århundraden erkänt ett tredje kön,
+                     Beroende på tid och plats så kan att vara "en kvinna" eller "en man" ha radikalt olika innebörder
+                     för ens rättigheter, skyldigheter, normer… I Europa brukade män ha på sig klackskor och tights,
+                     ursprungsfolket i Nordamerika har under århundraden erkänt ett tredje kön,
                     {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, detsamma gäller för samer, indier m.fl.
                 - >
                     Ickebinär är ett paraplybegrepp som beskriver en identitet hos människor
-                    som inte passar in i det binära, man/kvinna.
+                    som inte passar in i den binära man- och kvinnosärskiljningen.
                     Det inkluderar till exempel människor som är
                     {https://gender.wikia.org/wiki/Agender=agender},
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
@@ -223,8 +223,8 @@ faq:
                     {https://gender.wikia.org/wiki/Demiboy=demikillar},
                     och {https://gender.wikia.org/wiki/Non-binary=många många fler}.
                 - >
-                    Ickebinär behöver inte betyda något som är ”emellan” maskulinitet och femininitet. Det är mer som något ”bortom” det.
-                    Ickebinära människor måste inte vara androgyna, måste inte ha genusneutrala pronomen, osv.
+                    Ickebinär behöver inte betyda något som är ”emellan” maskulinitet och femininitet. Det är mer som något ”utanför” det.
+                    Ickebinära människor måste inte vara androgyna, måste inte ha könsneutrala pronomen, osv.
                     Det handlar om att vara fri från könsroller, inte att skapa nya.
         why-respect:
             question: 'Varför borde jag respektera en <em>främlings</em> pronomen?'
@@ -256,7 +256,7 @@ faq:
                 - >
                     Det är även viktigt att normalisera att själv berätta för andra om dina pronomen när du presenterar dig.
                     “Hej, jag heter Mikael, {/han=han}”. Det är inte svårt - men i mötet med transpersoner och ickebinära personer betyder det så mycket!
-                    På nätet är det ännu enklare: skriv bara dina pronomen (eller en länk till exempel från vår hemsida) i din profil eller e-post signatur.
+                    På nätet är det ännu enklare: skriv bara dina pronomen (eller en länk till exempel från vår hemsida) i din profil eller e-postsignatur.
                 - >
                     Kom även ihåg att många människor kanske använder olika namn och olika uppsättningar med pronomen beroende på situation.
                     De kanske inte är ute inför sina kollegor ännu, men inför vissa vänner är de bekväma med att leva som sitt sanna jag.
@@ -281,7 +281,7 @@ faq:
                     Vi är språkets användare. <em>Vi, tillsammans, är auktoriteten</em> på hur vi vill använda språket.
                 - >
                     Ordböcker tar lite tid på sig innan de börjar inkludera förändringar,
-                    det gör inte förändringen illegitim i sig.
+                    vilket inte gör förändringen illegitim i sig.
                     Så småningom hamnar de nya formerna av språket i ordböckerna, om de används tillräckligt ofta.
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, till exempel,
                     accepterar på engelska användningen av {/they=singular “they”} som ett ickebinärt pronomen.
@@ -337,11 +337,11 @@ faq:
                     Nej! Det är våra pronomen, Inte våra “föredragna pronomen”. Det är vårt namn, inte våra “föredragna namn”.
                     Ifall du bryr dig om dina trans och ickebinära vänner och de som står dig nära så tilltala dem på rätt sätt.
         gender-pronouns:
-            question: 'Varför borde jag inte säga “kön pronomen”?'
+            question: 'Varför borde jag inte säga “könspronomen”?'
             answer:
                 - >
                     För att kön ≠ pronomen. Pronomen är bara grammatik.
-                    Ickebinära kan använda binära pronomen, vissa lesbianer använder {/han=han/honom} för kulturella anledningar, osv.
+                    Ickebinära folk kan använda binära pronomen, vissa lesbianer använder {/han=han/honom} för kulturella anledningar, osv.
                 - >
                     Säg helt enkelt “pronomen”.
         flags:
@@ -352,7 +352,7 @@ faq:
                 - >
                     Att underhålla en hel lista av flaggor och läggningar är en ökande tidskonsumerande arbete för vårt team.
                     Det är dessutom en utmaning att filtrera ut trolls och vandalism från legitima, hjälpsama individer.
-                    Vi vill inte vara en identitets polis, men vi vill inte spendera all vår tid på att underhålla flagor heller.
+                    Vi vill inte vara identitetspoliser, men vi vill inte spendera all vår tid på att underhålla flagor heller.
                     Detta är ett projekt om språk och pronomen, trots allt, och inte om flaggor. De är bara en bonus.
                 - >
                     Vi har gjort vårt bästa för att välja en lista av flagor som är mest känd bland människor
@@ -364,7 +364,7 @@ faq:
                     för att den har många förvirrande definitioner,
                     Eller till och med på grund av att den har aspekter av liv från en mytisk karaktär.)
                     Vi är queer och trans vi själva, vi bryr oss om våra trans syskon.
-                    Tyvärr så är det verkligen svårt att göra sådana beslut.
+                    Tyvärr så är det verkligen svårt att göra sådana beslut
                     när vi får ett meddelande från trans personer som frågar om att få en flagga som de uppriktigt identifierar sig med,
                     och också från andra trans personer som ber om att få den borttagen för att det skadar trans personer.
                     Det är inte som att det finns historia för varje läggning är uppenbar eller att det finns en auktoritär källa att kolla upp det på.
@@ -378,7 +378,7 @@ faq:
             question: 'Mina pronomen finns inte på listan'
             answer:
                 - >
-                    Det finns en generator på hemsidan, du kan skapa en länk till vilket set  av pronomen som helst.
+                    Det finns en generator på hemsidan, du kan skapa en länk till vilket set av pronomen som helst.
                 - >
                     Du kan dessutom skapa en lista av de tre formerna genom att använda snedstreck, ex. {/hen/henom/hens=hen/henom/hens}.
 
@@ -392,7 +392,7 @@ links:
 
     social: 'Sociala media'
 
-    languageVersions: 'Andra språk översättningar'
+    languageVersions: 'Andra språköversättningar'
 
 people: ~
 
@@ -410,14 +410,14 @@ contact:
     header: 'Kontakt'
     authors: 'Författare till webbplatsen'
     team:
-        name: '“Neutral Språkets Råd” kollektivet'
+        name: '“Neutrala Språkets Råd”-kollektivet'
         nameShort: 'Kollektivet'
         description: >
             Vi är ett queer-kollektiv dedikerade till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
             könsneutral och ickebinärt språk.
             Vi stödjer också handlingar mot jämlikhet och social rättvisa.
         extra: []
-        logo: 'Kollektivets logotyp är en kombination av transgender symbolen och en pratbubbla som symboliserar språk.'
+        logo: 'Kollektivets logotyp är en kombination av transgendersymbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
         member: 'Medlem av kollektivet'
         blog: 'Blogg'
@@ -447,7 +447,7 @@ contact:
             how: 'Hur går jag med? Skicka till oss och maila till {mailto:contact@pronouns.page=contact@pronouns.page}, som du sedan: '
             application:
                 - 'introducera dig själv,'
-                - 'länka ditt pronouns.page profil,'
+                - 'länka ditt pronouns.page-profil,'
                 - 'länka ditt sociala media,'
                 - 'berätta ifall du har någon erfarenheter av att jobba som aktivist,'
                 - 'berätta om vad du skulle vilja hjälpa till med.'
@@ -466,35 +466,34 @@ user:
         help: 'För att logga in eller skapa ett konto kan du använda dina sociala medier eller skriva in din e-postadress och bekräfta koden du ska ha fått i din e-post inkorg.'
         placeholder: 'E-postadress (eller användarnamn, om du redan är registrerad)'
         action: 'Logga in'
-        emailSent: 'Vi har skickat ett e-postmeddelande <strong>%email%</strong> till dig med en 6-siffrig kod. Ange den här. Koden är för engångsbruk och är giltig i 15 minuter.'
+        emailSent: 'Vi har skickat ett e-postmeddelande <strong>%email%</strong> till dig med en 6-siffrig kod. Ange den här. Koden kan endast användas en gång och är giltig i 15 minuter.'
         userNotFound: 'Användaren hittades inte.'
         email:
-            subject: 'Din inloggningskod är %code%'
-            instruction: 'För att bekräfta din e-postadress, använd följande kod: %code%.'
+            subject: 'Din inloggningskod är {{code}}'
+            instruction: 'För att bekräfta din e-postadress, använd följande kod:'
             extra: 'Om du inte frågat efter den här koden, ignorera helt enkelt det här meddelandet.'
         why: >
             Registering låter dig hantera dina kort ({/@andrea=som det här}).
         passwordless: 'Webbplatsen lagrar inga lösenord. {https://avris.it/blog/passwords-are-passé=Mer information.}'
         instancePlaceholder: 'Instans'
-        # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: 'Domän'
+        deprecated: 'Ur bruk'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Detta är inte en pålitlig autentiseringsleverantör.
+            <a href="%link%" target="_blank" rel="noopener">Klicka på denna länk för fler detaljer</a>.
+            Vi rekommenderar starkt att du har en annan inloggningsmetod tillgänglig.
     code:
         action: 'Bekräfta'
         invalid: 'Ogiltig kod.'
     account:
         changeUsername:
             header: 'Användarnamn'
-            action: 'Ändra'  # TODO more explicitly "Change username"
+            action: 'Ändra användarnamn'
             invalid: 'Användarnamn måste vara mellan 4 och 16 karaktär lång och kan bara innehålla siffror, bokstäver, punkter, bindestreck och understreck.'
             taken: 'Det här användarnamnet är redan taget.'
         changeEmail:
             header: 'E-postadress'
-            action: 'Ändra'  # TODO more explicitly "Change email"
+            action: 'Ändra e-postadress'
             invalid: 'Ogiltig e-postadress.'
             taken: 'Den här e-postadressen är tagen.'
         admin: 'Admin'
@@ -511,15 +510,15 @@ user:
         disconnect: 'Koppla från'
         disconnectConfirm: 'Är du säker på att du vill ta bort den här anslutning? (Du kan alltid logga in med e-postadress %email%)'
     mfa:
-        header: 'Många Faktor Autentisering (MFA)'
+        header: 'Flerfaktorsautentisering (MFA)'
         init: >
-            Skanna denna QR-kod (eller skriv in den textkod ner) i din TOTP autentiserings app (eg. {https://authy.com/=Authy})
+            Skanna denna QR-kod (eller skriv in den textkod ner) i din TOTP-autentiseringsapp (eg. {https://authy.com/=Authy})
             och då använda den första token det genererats.
         recovery:
             header: 'Återställningskoder'
             save: >
                 Spara dessa koder på en säker plats.
-                Du ska använda dem för att gå förbi MFA om du har glömt din autentiseringsenhet.
+                Du ska använda dem för att gå förbi MFA om du förlorar din autentiseringsenhet.
             saved: 'Okej, jag har sparade dem!'
             enter: 'Skriva in återställningskod'
         cancel: 'Avbryt login'
@@ -547,7 +546,7 @@ profile:
     flagsInfo: 'Dra och släpp dina pride flaggor här.'
     flagsCustom: 'Ladda upp anpassad flagga'
     flagsCustomWarning: 'Denna flagga har laddats upp av en användare. Pronouns.page är inte ansvarig.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'Detta är inte en queeridentitet, fast vi inkluderar den för folk som är queer på andra sätt (t.ex. heterosexuella transa personer).'
     links: 'Länkar'
     column: 'Kolumn'
 
@@ -754,7 +753,7 @@ table:
 api:
     header: 'Offentligt API'
     example: 'Exempel'
-    query: 'Frågesträng Parametrar'
+    query: 'Frågesträngsparametrar'
 
 quotation:
     start: '”'
@@ -798,9 +797,9 @@ report:
     action: 'Rapportera ovett'
     comment: 'Vad är felet med profilen?'
     confirm: 'Är du säker på att du vill rapportera @%username%?'
-    sent: 'Det har fick skickat till oss. Tack för hjälpen!'
-    terms: 'Var snäll och håll reda på vad som är förbjudet enligt vår {/anvandarvillkor=Användarvillkor}'
-    hoarding: 'Var snäll och inte anmäl en användare för “användar hamstring”. Vi tar bort konton utan kort efter en tid av inaktivitet automatiskt. Din anmälan kommer inte att göra det snabbare.'
+    sent: 'Din rapport har skickats till oss. Tack för hjälpen!'
+    terms: 'Var snäll och håll reda på vad som är förbjudet enligt våra {/anvandarvillkor=Användarvillkor}'
+    hoarding: 'Var snäll och inte anmäl en användare för “användarnamnssamlande”. Vi tar bort konton utan kort efter en tid av inaktivitet automatiskt. Din anmälan kommer inte att göra det snabbare.'
 
 flags:
     Abroromantic: 'Abroromantisk'
@@ -898,7 +897,7 @@ flags:
 # optional, but would be nice to have
 calendar: # TODO
     header: 'Kalender'
-    headerLong: 'Queer Kalender'
+    headerLong: 'Queerkalender'
     date: '%date% %year%'
     months:
         1: 'Januari'
@@ -1007,10 +1006,10 @@ calendar: # TODO
         header: 'Ladda ned en bild'
     view:
         grid: 'Gridvy'
-        list: 'Evenemang lista'
+        list: 'Evenemanglista'
     link: 'Länk'
     full: 'Fullständig kalender'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
+    header: 'Vi står med Ukraina.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Så här kan du hjälpa dem.}'
