@@ -1080,6 +1080,10 @@ calendar:
         freedressing_day: 'День свободного гардероба'
         sexual_health_day: 'День осведомлённости о сексуальном и репродуктивном здоровье'
         world_sexual_health_day: 'Всемирный день сексуального здоровья'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO          
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
