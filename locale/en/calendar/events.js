@@ -70,11 +70,7 @@ module.exports = [
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Day}', '_mspec_lesbians', 5, day(26), EventLevel.Day),
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Week}', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week),
     new Event('UpStairs Lounge Arson Attack Remembrance Day', '_black-ribbon', 6, day(24), EventLevel.Day),
-    new Event('World AIDS Vaccine Day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
-    new Event('Queer Youth Day', 'LGBTQ', 6, day(30), EventLevel.Day),
-    new Event('Omnisexual Visibility Day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
     new Event('Admiral Duncan Pub Bombing Remembrance Day', '_black-ribbon', 4, day(30), EventLevel.Day),
-    new Event('{https://unlabeledidentity.carrd.co/=Unlabelled Visibility Day}', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled']),
 
     // --- dynamic date ---
 
