@@ -974,6 +974,10 @@ calendar:
         freedressing_day: 'Bewusstseinstag für genderunabhängiges Kleiden'
         sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
         world_sexual_health_day: 'Welttag Sexuelle Gesundheit'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO          
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
