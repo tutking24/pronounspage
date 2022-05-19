@@ -27,6 +27,7 @@ module.exports = [
     new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA/Kanada)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=Dzień Świadomości Długotrwałego Życia z HIV} (USA)', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
+    new Event('Dzień Widoczności Dzieci i Młodzieży Trans', null, 5, day(14), EventLevel.Day, ['transgender']),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
