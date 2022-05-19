@@ -2,9 +2,9 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/cal
 
 module.exports = [
     // --- months ---
-    new Event('Mes de la Historia LGBT (EE.UU./Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('Mes de la Historia LGBT (Reino Unido)', 'Progress Pride', 2, month, EventLevel.Month),
-    new Event('Mes de la Historia LGBT (Cuba/Alemania)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBTQ+ (EE.UU./Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBTQ+ (Reino Unido)', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('Mes de la Historia LGBTQ+ (Cuba/Alemania)', 'Progress Pride', 5, month, EventLevel.Month),
     new Event('Mes de la Diversidad (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
     new Event('Mes de la Visibilidad Trans (Brasil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('Mes de la Visibilidad Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
@@ -34,7 +34,7 @@ module.exports = [
     new Event('Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra (EE.UU.)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
     new Event('Día de Concientización sobre el VIH/SIDA entre los Hombres Gais (EE.UU.)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
     new Event('Día de Concientización sobre el VIH/SIDA y el Envejecimiento (EE.UU.)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
-    new Event('Día de la Conciencia de los Centros de la Comunidad LGBT (EE.UU.)', null, 10, day(19), EventLevel.Day),
+    new Event('Día de la Conciencia de los Centros de la Comunidad LGBTQ+ (EE.UU.)', null, 10, day(19), EventLevel.Day),
     new Event('Día Latinx para la Concientización del SIDA (EE.UU.)', '_red-ribbon', 10, day(15), EventLevel.Day, ['aids']),
     new Event('Día de Concientización sobre el VIH/SIDA entre los Jóvenes (EE.UU.)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),
     new Event('Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas (EE.UU.)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
