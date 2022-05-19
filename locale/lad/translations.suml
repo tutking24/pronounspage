@@ -943,7 +943,15 @@ calendar:
         aids_vaccine_day: 'Dia Mundial de la Ashlama kontra AIDS'
         queer_youth_day: 'Dia de la Mansevez Kuir'
         ominsexual_day: 'Dia de la Vizibilidad Omniseksuala'
-        unlabeled_day: 'Dia de la Vizibilidad de Personas sin Etiketa'       
+        unlabeled_day: 'Dia de la Vizibilidad de Personas sin Etiketa' 
+        trans_youth_day: 'Día de la Visibilidad de las Niñeces y Adolescencias Trans' # TODO
+        hiv_long_term_survivors_day: 'Día de Concientización para los Sobrevivientes a Largo Plazo del VIH'  # TODO
+        women_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas' # TODO
+        youth_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Jóvenes' # TODO
+        gay_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Hombres Gais' # TODO
+        black_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra'  # TODO
+        hiv_aging_awareness_day: 'Día de Concientización sobre el VIH/SIDA y el Envejecimiento'  # TODO
+        trans_hiv_testing_day: 'Día de la Prueba del VIH en Personas Transgénero' # TODO                  
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
