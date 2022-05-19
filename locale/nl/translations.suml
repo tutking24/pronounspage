@@ -998,7 +998,7 @@ calendar:
         hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
         women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
         youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
-        gay_hiv_awareness_day: 'Gay Men\'s HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
         hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
         trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO         
