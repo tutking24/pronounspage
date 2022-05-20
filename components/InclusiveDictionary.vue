@@ -54,6 +54,10 @@
                         <li v-for="w in s.el.insteadOf" class="text-strike"><LinkedText :text="w" noicons/></li>
                     </ul>
 
+                    <div v-if="s.el.clarification" class="alert alert-warning px-2 py-1 small">
+                        <LinkedText :text="s.el.clarification"/>
+                    </div>
+
                     <ul class="list-inline">
                         <li v-for="category in s.el.categories" class="list-inline-item">
                             <a :href="`#:${category}`" class="badge bg-primary text-white" @click.prevent="filter = ':' + category">
