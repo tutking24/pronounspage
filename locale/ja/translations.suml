@@ -975,6 +975,18 @@ calendar:
         freedressing_day: 'フリードレッシング認知デー'
         sexual_health_day: '性と生殖の健康啓発デー'
         world_sexual_health_day: '世界セクシュアルヘルスデー'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                  
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''

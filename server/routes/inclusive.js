@@ -59,12 +59,12 @@ router.post('/inclusive/submit', handleErrorAsync(async (req, res) => {
 
     const id = ulid();
     await req.db.get(SQL`
-        INSERT INTO inclusive (id, insteadOf, say, because, approved, base_id, locale, author_id, categories, links)
+        INSERT INTO inclusive (id, insteadOf, say, because, approved, base_id, locale, author_id, categories, links, clarification)
         VALUES (
             ${id},
             ${req.body.insteadOf.join('|')}, ${req.body.say.join('|')}, ${req.body.because},
             0, ${req.body.base}, ${global.config.locale}, ${req.user ? req.user.id : null},
-            ${req.body.categories.join(',')}, ${JSON.stringify(req.body.links)}
+            ${req.body.categories.join(',')}, ${JSON.stringify(req.body.links)}, ${req.body.clarification || null}
         )
     `);
 

@@ -506,13 +506,12 @@ user:
             Registrarte te permite manejar tus tarjetas ({/@example=como esta}).
         passwordless: 'Este sitio web no guarda las contraseñas. {https://avris.it/blog/passwords-are-passé=Más información.}'
         instancePlaceholder: 'Instancia'
-        # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: 'Dominio'
+        deprecated: 'Desacreditado'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Este no es un proveedor de autenticación confiable.
+            <a href="%link%" target="_blank" rel="noopener">Revisa este enlace para más detalles</a>.
+            Recomendamos ampliamente que te asegures de tener un método distinto de inicio de sesión disponible.
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -575,19 +574,17 @@ profile:
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
     flagsCustom: 'Sube una bandera personalizada'
     flagsCustomWarning: 'Esta bandera fue subida por un usuario. El equipo de pronouns.page no es responsable de ella.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'Esta no es una identidad cuir, pero la incluimos para personas ke son cuir de otras maneras (p. ej. personas trans heterosexuales).'
     links: 'Enlaces'
     linksRecommended: 'Recomendamos enlaces a'
-    # TODO
     verifiedLinks:
-        header: 'Verified links'
+        header: 'Enlaces verificados'
         info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
+            Los enlaces que une pone públicamente en su perfil estarán marcados con el ícono de escudo,
+            si se verifican iniciando sesión con el proveedor de autenticación disponible,
+            o (en construcción) por una etiqueta <code>rel="yo"</code> que apunte de vuelta a la tarjeta.
+            Nuestros enlaces también incluyen una etiqueta <code>rel="yo"</code>, para que sitios web externos puedan a su vez verificar tu tarjeta por su lado.
     column: 'Columna'
-
     list: 'Tus tarjetas'
     init: 'Crea una tarjeta'
     show: 'Mostrar'
@@ -1073,6 +1070,18 @@ calendar:
         freedressing_day: 'Día de la Libertad de Vestimenta'
         sexual_health_day: 'Día de la Concientización sobre la Salud Sexual y Reproductiva'
         world_sexual_health_day: 'Día Mundial de la Salud Sexual'
+        aids_vaccine_day: 'Día Mundial de la Vacuna contra el Sida'
+        queer_youth_day: 'Día de la Juventud Queer'
+        ominsexual_day: 'Día de la Visibilidad Omnisexual'
+        unlabeled_day: 'Día de la Visibilidad de Personas sin Etiqueta'
+        trans_youth_day: 'Día de la Visibilidad de las Niñeces y Adolescencias Trans'
+        hiv_long_term_survivors_day: 'Día de Concientización para los Sobrevivientes a Largo Plazo del VIH' 
+        women_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas'
+        youth_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Jóvenes'
+        gay_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Hombres Gais'
+        black_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra' 
+        hiv_aging_awareness_day: 'Día de Concientización sobre el VIH/SIDA y el Envejecimiento' 
+        trans_hiv_testing_day: 'Día de la Prueba del VIH en Personas Transgénero'    
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'

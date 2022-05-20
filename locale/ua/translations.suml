@@ -1106,6 +1106,18 @@ calendar:
         freedressing_day: 'День вільного гардеробу'
         sexual_health_day: 'День обізнаності про сексуальне и репродуктивне здоровʼя'
         world_sexual_health_day: 'Всесвітній день сексуального здоровʼя'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO    
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                      
     banner: 'Ми святкуємо'
     celebrating_custom: 'святкується'
     celebrating_day: 'святкується'
