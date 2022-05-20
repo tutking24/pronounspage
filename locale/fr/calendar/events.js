@@ -9,12 +9,9 @@ module.exports = [
     new Event('Journée de le mariage pour tous (Canada)', '_hrc', 7, day(20), EventLevel.Day),
     new Event('Journée de le mariage pour tous (France)', '_hrc', 5, day(18), EventLevel.Day),
     new Event('Journée de le mariage pour tous (Belgique)', '_hrc', 6, day(1), EventLevel.Day),
-    new Event('Journée de sensibilisation au VIH/sida des communautés noires (Canada/USA)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
     new Event('Journée de sensibilité à la bispiritualité', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Journée de sensibilisation aux femmes, aux filles et aux personnes bispirituelles autochtones disparues et assassinées (Canada/USA)', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
-    new Event('Journée de la sensibilisation du VIH/sida et au vieillissement (Canada/USA)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('Anniversaire de la décrimilisation de l\'homosexualité (Canada)', '_law', 6, day(27), EventLevel.Day),
-    new Event('Journée de sensibilisation au VIH/SIDA pour les femmes et les filles (Canada/USA)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),    
 
     // --- dynamic date ---
 
