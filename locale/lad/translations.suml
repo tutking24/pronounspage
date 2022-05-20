@@ -472,13 +472,13 @@ profile:
     flagsAsterisk: 'Esta no es una identidad kuir, pero la inkluimos para personas ke son kuir de otras maneras (por enshemplo personas trans eteroseksualas).'
     links: 'Atadijos'
     linksRecommended: 'Rekomendamos atadijos a'
-        verifiedLinks:
-        header: 'Atadijos verifikados'
-        info: >
-            Los atadijos que une poza publikamente en su profil estaran markados kon la ikona de eskudo,
-            si se verifikan konektandose kon el mantenedor de autentikasyon desponible,
-            o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
-            Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios gueb externos puedan tambyen verifikar tu karta por su lado.
+    verifiedLinks:
+    header: 'Atadijos verifikados'
+    info: >
+        Los atadijos que une poza publikamente en su profil estaran markados kon la ikona de eskudo,
+        si se verifikan konektandose kon el mantenedor de autentikasyon desponible,
+        o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
+        Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios gueb externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
 
     header: 'Kartas'
@@ -949,7 +949,7 @@ calendar:
         aids_vaccine_day: 'Dia Mundial de la Ashlama kontra AIDS'
         queer_youth_day: 'Dia de la Mansevez Kuir'
         ominsexual_day: 'Dia de la Vizibilidad Omniseksuala'
-        unlabeled_day: 'Dia de la Vizibilidad de Personas sin Etiketa' 
+        unlabeled_day: 'Dia de la Vizibilidad de Personas sin Etiketa'
         trans_youth_day: 'Dia de la Vizibilidad de las Kriaturas i los Mansevos Trans'
         hiv_long_term_survivors_day: 'Dia de Konsensya para los Sobrebivyentes a Lungo Termino del HIV'
         women_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Mujeres i Ninyas'
