@@ -334,6 +334,8 @@ inclusive:
             jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
     categories: 'Kategorie'
     sources: 'Linki źródłowe'
+    clarification: 'Załącz wyjaśnienie'
+    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego słowa.'
 
 terminology:
     header: 'Terminologia'
@@ -1818,6 +1820,18 @@ calendar:
         freedressing_day: 'Dzień Swobodnego Ubioru'
         sexual_health_day: 'Dzień Świadomości nt. Zdrowia Seksualnego i Reprodukcyjnego'
         world_sexual_health_day: 'Światowy Dzień Zdrowia Seksualnego'
+        aids_vaccine_day: 'Światowy Dzień Szczepionki na AIDS'
+        queer_youth_day: 'Dzień Queerowej Młodzieży'
+        ominsexual_day: 'Dzień Widoczności Osób Omniseksualnych'
+        unlabeled_day: 'Dzień Widoczności Osób Bez Etykiety'
+        trans_youth_day: 'Dzień Widoczności Dzieci i Młodzieży Trans'
+        hiv_long_term_survivors_day: 'Dzień Świadomości nt. Długotrwałego Życia z HIV'
+        women_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Kobiet i Dziewczyn'
+        youth_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS wśród Młodzieży'
+        gay_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Gejów'
+        black_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Osób Czarnych'
+        hiv_aging_awareness_day: 'Dzień Świadomości nt. Starzenia się z HIV/AIDS'
+        trans_hiv_testing_day: 'Dzień Testów na HIV u Osób Transpłciowych'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
