@@ -195,6 +195,8 @@ inclusive:
             Below we work as a community to create a list of phrases that should be avoided, why, and what they could be replaced with.
     categories: 'Categories'
     sources: 'Sources'
+    clarification: 'Include a clarification'
+    clarificationDefault: 'We mean, of course, to avoid it in the pejorative meaning, not to stop using it entirely.'
 
 terminology:
     header: 'Terminology'
@@ -1024,13 +1026,13 @@ calendar:
         ominsexual_day: 'Omnisexual Visibility Day'
         unlabeled_day: '{https://unlabeledidentity.carrd.co/=Unlabelled Visibility Day}'
         trans_youth_day: 'Trans Children and Youth Visibility Day'
-        hiv_long_term_survivors_day: '{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day}' 
+        hiv_long_term_survivors_day: '{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day}'
         women_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day}'
         youth_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day}'
         gay_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men''s HIV/AIDS Awareness Day}'
-        black_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV/AIDS Awareness Day}' 
-        hiv_aging_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day}' 
-        trans_hiv_testing_day: '{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day}'           
+        black_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV/AIDS Awareness Day}'
+        hiv_aging_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day}'
+        trans_hiv_testing_day: '{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day}'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
