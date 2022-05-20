@@ -335,7 +335,7 @@ inclusive:
     categories: 'Kategorie'
     sources: 'Linki źródłowe'
     clarification: 'Załącz wyjaśnienie'
-    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego słowa.'
+    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego określenia.'
 
 terminology:
     header: 'Terminologia'
