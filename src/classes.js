@@ -715,7 +715,7 @@ export class NounDeclension {
 
 
 export class InclusiveEntry {
-    constructor({id, insteadOf, say, because, author, approved = true, base_id = null, categories = '', links = '[]'}) {
+    constructor({id, insteadOf, say, because, author, approved = true, base_id = null, categories = '', links = '[]', clarification = null}) {
         this.id = id;
         this.insteadOf = insteadOf.split('|');
         this.say = say.split('|');
@@ -725,6 +725,7 @@ export class InclusiveEntry {
         this.base = base_id;
         this.categories = categories ? categories.split(',') : [];
         this.links = JSON.parse(links);
+        this.clarification = clarification || null;
     }
 
     matches(filter) {

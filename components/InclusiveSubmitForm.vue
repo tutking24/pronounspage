@@ -20,6 +20,14 @@
                             <T>inclusive.insteadOf</T>
                         </strong></label>
                         <NounForm v-model="form.insteadOf" maxlength="128"/>
+
+                        <div class="mt-2">
+                            <label>
+                                <input class="form-check-input" type="checkbox" v-model="clarification">
+                                <T>inclusive.clarification</T>
+                            </label>
+                            <input class="form-control" v-model="form.clarification" v-show="clarification"/>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -95,10 +103,12 @@
                     because: '',
                     categories: [],
                     links: [],
+                    clarification: null,
                     base: null,
                 },
                 submitting: false,
                 afterSubmit: false,
+                clarification: false,
             }
         },
         methods: {
@@ -113,8 +123,10 @@
                         because: '',
                         categories: [],
                         links: [],
+                        clarification: null,
                         base: null,
                     };
+                    this.clarification = false;
                 } finally {
                     this.submitting = false;
                 }
@@ -126,10 +138,21 @@
                     because: word.because,
                     categories: word.categories,
                     links: word.links,
+                    clarification: word.clarification,
                     base: word.id,
                 }
+                this.clarification = !!word.clarification;
                 this.afterSubmit = false;
                 this.$el.scrollIntoView();
+            }
+        },
+        watch: {
+            clarification(v) {
+                if (v) {
+                    this.form.clarification = this.$t('inclusive.clarificationDefault');
+                } else {
+                    this.form.clarification = null;
+                }
             }
         },
     };
