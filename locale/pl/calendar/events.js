@@ -19,15 +19,7 @@ module.exports = [
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Dzień Dziabka}', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
     new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Dzień Testów na HIV u Osób Transpłciowych} (USA)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Dzień Świadomości HIV/AIDS u Osób Czarnych} (USA/Kanada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Dzień Świadomości HIV/AIDS u Gejów} (USA)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=Dzień Świadomości Starzenia się z HIV/AIDS} (USA/Kanada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Dzień Świadomości HIV/AIDS wśród Młodzieży} (USA)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA/Kanada)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
-    new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=Dzień Świadomości Długotrwałego Życia z HIV} (USA)', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
-    new Event('Dzień Widoczności Dzieci i Młodzieży Trans', 'Transgender', 5, day(14), EventLevel.Day, ['transgender']),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
