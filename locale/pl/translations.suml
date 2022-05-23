@@ -8,7 +8,7 @@ home:
     headerLong: 'Lista zaimków'
     welcome: 'Witamy na stronie zaimki.pl!'
     intro: >
-        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym i neutralnym płciowo.
+        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym, neutralnym płciowo i inkluzywnym.
     why: 'Skąd potrzeba niebinarnych zaimków?'
     about:
         - >
@@ -335,7 +335,7 @@ inclusive:
     categories: 'Kategorie'
     sources: 'Linki źródłowe'
     clarification: 'Załącz wyjaśnienie'
-    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego słowa.'
+    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego określenia.'
 
 terminology:
     header: 'Terminologia'
