@@ -149,7 +149,9 @@
         watch: {
             clarification(v) {
                 if (v) {
-                    this.form.clarification = this.$t('inclusive.clarificationDefault');
+                    if (!this.form.clarification) {
+                        this.form.clarification = this.$t('inclusive.clarificationDefault');
+                    }
                 } else {
                     this.form.clarification = null;
                 }
