@@ -66,6 +66,23 @@ module.exports = [
     new Event('Anniversary of the {https://en.wikipedia.org/wiki/Dance_of_the_Forty-One=Dance of the Forty-One} (Mexico)', null, 11, day(18), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} Day of Remembrance (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('{https://tdor.translivesmatter.info/reports/2019/05/06/milo-mazurkiewicz_warsaw-masovia-poland_9a028d4a=Milo Mazurkiewicz} Day of Remembrance (Poland)', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
+    new Event('Marriage Equality Day (Germany)', '_hrc', 10, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Austria)', '_hrc', 1, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Belgium)', '_hrc', 6, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Luxembourg)', '_hrc', 1, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Switzerland)', '_hrc', 7, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Spain)', '_hrc', 7, day(3), EventLevel.Day),
+    new Event('Marriage Equality Day (Argentina)', '_hrc', 7, day(15), EventLevel.Day),
+    new Event('Marriage Equality Day (Uruguay)', '_hrc', 8, day(5), EventLevel.Day),
+    new Event('Marriage Equality Day (Colombia)', '_hrc', 4, day(28), EventLevel.Day),
+    new Event('Marriage Equality Day (Ecuador)', '_hrc', 7, day(8), EventLevel.Day),
+    new Event('Marriage Equality Day (Costa Rica)', '_hrc', 5, day(26), EventLevel.Day),
+    new Event('Marriage Equality Day (Portugal)', '_hrc', 6, day(5), EventLevel.Day),
+    new Event('Marriage Equality Day (Brasil)', '_hrc', 5, day(16), EventLevel.Day),
+    new Event('Marriage Equality Day (Netherlands)', '_hrc', 4, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (France)', '_hrc', 5, day(18), EventLevel.Day),
+    new Event('Marriage Equality Day (Sweden)', '_hrc', 5, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Finland)', '_hrc', 3, day(1), EventLevel.Day),
 
     // --- dynamic date ---
 
