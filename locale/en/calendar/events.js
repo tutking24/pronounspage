@@ -58,7 +58,6 @@ module.exports = [
     new Event('Suicide Prevention Day (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
     new Event('Suicide Prevention Day (Puerto Rico)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Nonbinary Grandparents\' Day} (Poland)', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
-    new Event('Anniversary of the death of Marielle Franco (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('{https://standbyme.uk/nbad/=Bystander Awareness Day} (UK)', null, 3, day(13), EventLevel.Day),
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Day}', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian']),
     new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Week}', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian']),
