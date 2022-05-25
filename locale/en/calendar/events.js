@@ -78,7 +78,7 @@ module.exports = [
     new Event('Marriage Equality Day (Ecuador)', '_hrc', 7, day(8), EventLevel.Day),
     new Event('Marriage Equality Day (Costa Rica)', '_hrc', 5, day(26), EventLevel.Day),
     new Event('Marriage Equality Day (Portugal)', '_hrc', 6, day(5), EventLevel.Day),
-    new Event('Marriage Equality Day (Brasil)', '_hrc', 5, day(16), EventLevel.Day),
+    new Event('Marriage Equality Day (Brazil)', '_hrc', 5, day(16), EventLevel.Day),
     new Event('Marriage Equality Day (Netherlands)', '_hrc', 4, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (France)', '_hrc', 5, day(18), EventLevel.Day),
     new Event('Marriage Equality Day (Sweden)', '_hrc', 5, day(1), EventLevel.Day),
