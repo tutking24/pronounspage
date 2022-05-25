@@ -314,6 +314,10 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
+    if (await lookupBanArchive(req.db, 'email', payload)) {
+        throw 'banned';
+    }
+
     let codeKey;
     if (isTest) {
         codeKey = await saveAuthenticator(req.db, 'email', user, payload, 15);
