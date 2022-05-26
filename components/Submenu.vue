@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-4 mt-lg-0">
+    <section class="mt-4 mt-lg-0 d-print-none">
         <div class="d-none d-md-inline-flex btn-group btn-block mb-2 w-100">
             <router-link v-for="{name, icon, iconInverse, route, routesExtra, condition} in links" :key="name"
                          v-if="condition === undefined || condition === true"

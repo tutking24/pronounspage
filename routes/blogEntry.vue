@@ -14,12 +14,13 @@
             <Spelling :text="content"/>
         </Twemoji>
 
-        <Separator icon="heart"/>
-        <Support/>
-
-        <section>
-            <Share :title="title"/>
-        </section>
+        <div class="d-print-none">
+            <Separator icon="heart"/>
+            <Support/>
+            <section>
+                <Share :title="title"/>
+            </section>
+        </div>
     </div>
 </template>
 
@@ -50,6 +51,9 @@
     @import "assets/variables";
 
     .blog-post {
+        hyphens: auto;
+        text-align: justify;
+
         img {
             max-width: 100%;
         }
