@@ -83,5 +83,11 @@
                 }
             }
         }
+
+        hr {
+            border: none;
+            border-top: 3px solid $primary;
+            opacity: 1;
+        }
     }
 </style>
