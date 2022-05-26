@@ -1,6 +1,6 @@
 # Mason Deaver – Wszystkiego, co najlepsze
 
-<small>2022-05-25 | [@andrea](/@andrea)</small>
+<small>2022-07-27 | [@andrea](/@andrea)</small>
 
 ![Okładka recenzowanej książki](/img-local/blog/deaver-najlepsze.png)
 
@@ -64,7 +64,7 @@ Może i przeczytałom tak na porządnie jakąś jedną trzecią tej książki, a
 Ale i tak ją uwielbiam. I tak kupię papierowe wydanie, gdy tylko zostanie opublikowana, i postawię dumnie na półce.
 Bo choć nie jest to książka dla trzydziestoletnieno mnie –
 to moje licealne ja zapewne przeczytałoby ją wielokrotnie od deski do deski.
-To jest ten relatable content, którego dekadę z hakiem tak bardzo bym potrzebowało temu.
+To jest ten relatable content, którego dekadę z hakiem temu tak bardzo bym potrzebowało.
 
 ---
 
@@ -72,7 +72,7 @@ Szczerze mówiąc, to zamierzałom tu się skupić na kwestiach językowych – 
 Nawet nie mam dobrego pomysłu na płynne przejście do tematu zaimków. Więc przejdźmy niepłynnie.
 
 Otóż projekt okładki i układu książki podesłało mi Wydawnictwo Poznańskie,
-prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej mecenatem.
+prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej mecenatem merytorycznym.
 Do książki dołączona jest przedmowa tłumacza, Artura Łukszy, która jest tak cudowna, że pozwolę ją sobie zacytować w całości:
 
 > Język kształtuje naszą rzeczywistość, pozwala nam nazwać rzeczy i zjawiska, które widzimy,
@@ -105,7 +105,7 @@ Do książki dołączona jest przedmowa tłumacza, Artura Łukszy, która jest t
 > (choć może nie zdają sobie z tego sprawy), a także całej redakcji We need YA za wsparcie, nie tylko w kwestiach językowych.
 
 Tłumaczenie angielskiego [„singular they”](https://en.pronouns.page/they) na język polski jest zadaniem niełatwym.
-Osoby tłumaczące często idą (a raczej: szły? 🤞) na łatwiznę i zwyczajnie wymazują niebinarność danej postaci.
+Niestety, osoby tłumaczące często idą (a raczej: szły? 🤞) na łatwiznę i zwyczajnie wymazują niebinarność danej postaci.
 Tu jest ona tak integralną częścią opowieści, że choćby Artur chciał, to by się nie dało.
 
 Widać jednak, że niczego wymazywać nie chciał. Ba! Pozwolił niebinarności Ben błyszczeć!
