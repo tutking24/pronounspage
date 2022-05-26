@@ -15,7 +15,7 @@ rozpoczaczyna terapię, znajduje przyjaciela, zaczyna mieć nadzieję na lepszą
 
 Przechodziłom przez to. Nie krok w krok, oczywiście. Starzy mnie z domu nie wyrzucili,
 ale zadbali, bym niecierpliwie odliczało dni do momentu, gdy będę mogło od nich uciec.
-W jeno wieku nie wiedziałom nawet co to niebiarność, ale miałom za to inne coming outy do przejścia.
+W jeno wieku nie wiedziałom nawet co to niebinarność, ale miałom za to inne coming outy do przejścia.
 Takie tam.
 
 I wiecie co? Mam dość. Cholernie się cieszę, że mam to wszystko juz za sobą.
@@ -49,7 +49,7 @@ Ale czy mój gaydar dostał jakiekolwiek potwierdzenie swoich przypuszczeń w cz
 Nie – lata później przypadkiem natknęłom się na kolegę z klasy na mieście w środku nocy, gdy oboje byłośmy na randce z facetami;
 przypadkiem wylądowałom na jednych zajęciach na studiach z byłą dziewczyną koleżanki z liceum. Rychło w czas…
 A teraz? Teraz znajomu z kolektywu używa w szkole [dukaizmów](/onu)!
-Teraz [Niebinarny Spis Powszechny](/spis) potwierdza, że licea są pełne wyoutowanych queerów!
+Teraz [Niebinarny Spis Powszechny](/spis) potwierdza, że licea robią się coraz pełniejsze wyoutowanych queerów!
 
 Ta książka to wyznacznik tego, jak bardzo nasz świat się zmienił raptem przez dekadę.
 Jasne, od groma jeszcze mamy w tym świecie do naprawienia.
@@ -71,8 +71,8 @@ To jest ten relatable content, którego dekadę z hakiem temu tak bardzo bym pot
 Szczerze mówiąc, to zamierzałom tu się skupić na kwestiach językowych – a wyszło, jak wyszło.
 Nawet nie mam dobrego pomysłu na płynne przejście do tematu zaimków. Więc przejdźmy niepłynnie.
 
-Otóż projekt okładki i układu książki podesłało mi Wydawnictwo Poznańskie,
-prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej mecenatem merytorycznym.
+Otóż projekt okładki i układu książki podesłało nam Wydawnictwo Poznańskie,
+prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej [mecenatem merytorycznym](/blog/mecenat).
 Do książki dołączona jest przedmowa tłumacza, Artura Łukszy, która jest tak cudowna, że pozwolę ją sobie zacytować w całości:
 
 > Język kształtuje naszą rzeczywistość, pozwala nam nazwać rzeczy i zjawiska, które widzimy,
@@ -120,7 +120,7 @@ Rzuciło mi się w oczy, że nawet angielskie unikanie form nacechowanych płcio
 
 Ciężko mi ująć w słowa, jak bardzo cieszy mnie to tłumaczenie.
 Zmagamy się na co dzień z transfobisiami, które swoje uprzedzenia chowają pod płaszczykiem „troski o język” –
-bo przypierdolić odmieńcom to zawsze fajnie, czy to odstają od normy, bo pedały się za rękę trzymają,
+bo przywalić odmieńcom to zawsze fajnie, czy to odstają od normy, bo pedały się za rękę trzymają,
 czy to odstają od normy, bo ich język nie pokrywa się z tym, czego ich w podstawówce na polskim uczyli trzydzieści lat temu
 – to ten sam hejt. Odstawanie od normy to grzech, kropka.
 W tym klimacie zobaczyć, jak osoba profesjonalnie pracująca z językiem odważnie decyduje się wziąć na warsztat „pełen zestaw”,
