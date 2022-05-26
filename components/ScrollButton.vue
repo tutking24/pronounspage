@@ -1,5 +1,5 @@
 <template>
-    <div class="scroll-btn" @click.prevent="scroll" :style="`opacity: ${shown ? 1 : 0}`">
+    <div class="scroll-btn d-print-none" @click.prevent="scroll" :style="`opacity: ${shown ? 1 : 0}`">
         <SquareButton link="#" :colour="colour" :aria-label="$t('table.scrollUp')">
             <Icon v="arrow-alt-up"/>
         </SquareButton>
