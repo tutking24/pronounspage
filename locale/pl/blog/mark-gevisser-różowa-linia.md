@@ -62,6 +62,8 @@ o tyle słowo „kothi” już sprawia większe problemy. Użycie rodzaju męski
 cementowałoby zachodnie, spłycające sprowadzanie ich do „gay men” – mimo że osoby bohaterskie reportażu
 używają form żeńskich i mówią, że czują się kobietami.
 Sam autor książki, homoseksualny mężczyzna, też mówi o sobie _kothi_, a używa rodzaju męskiego.
+Zdaniem mojeno partnerza, nepalskim odpowiednikiem _kothi_ byłyby _meti_ – dosłownie będące trzecią płcią, poza binarnym podziałem.
+Więc może nawet rodzaj neutralny by pasował?
 Naszą sugestią było pomieszanie męskich rzeczowników z żeńskimi zaimkami – podkreślając tym samym pewną podwójną,
 niedookreśloną naturę ich tożsamości; jednocześnie ułatwiając osobom czytającym rozróżnienie ich od hidźr
 bez popadania w zbyt prosty dualizm hidźry-żeński / kothi-męski.

@@ -956,7 +956,7 @@ links:
     blog: 'Blog'
     academic: 'Nauka'
     links: 'Dodatkowe materiały'
-    endorsements: 'Mecenaty i współpraca'
+    endorsements: '{/blog/mecenat=Mecenaty} i współpraca'
     review: 'Nasza recenzja'
 
     mediaShort: 'Media'
