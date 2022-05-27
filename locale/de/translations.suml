@@ -113,7 +113,7 @@ sources:
         key: 'Schlüssel'
         keyInfo: 'Kennzeichen, um Quellen zwischen Sprachversionen und dem Wörterbuch zu verbinden'
         images: 'Bilder'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler'
     otherVersions: 'In anderen Sprachen'
     referenced: 'Beispiele zur Benutzung'
 
@@ -421,13 +421,12 @@ user:
             Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@example=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
         instancePlaceholder: 'Instanz'
-        # TODO
         domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        deprecated: 'Abgeraten'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Dieser Authentifizierungsanbieter ist nicht zuverlässig.
+            <a href="%link%" target="_blank" rel="noopener">Mehr Infos findest du unter folgendem Link</a>.
+            Wir empfehlen dringend eine andere Authentifizierungsmethode zu aktivieren.
     code:
         action: 'Validieren'
         invalid: 'Ungültiger Code.'
@@ -976,7 +975,7 @@ calendar:
         world_sexual_health_day: 'Welttag Sexuelle Gesundheit'
         aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
         queer_youth_day: 'Queer Youth Day' # TODO
-        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        ominsexual_day: 'Omnisexueller Sichtbarkeitstag'
         unlabeled_day: 'Unlabeled Visibility Day' # TODO
         trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
         hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
