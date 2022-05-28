@@ -71,7 +71,7 @@ To jest ten relatable content, którego dekadę z hakiem temu tak bardzo bym pot
 Szczerze mówiąc, to zamierzałom tu się skupić na kwestiach językowych – a wyszło, jak wyszło.
 Nawet nie mam dobrego pomysłu na płynne przejście do tematu zaimków. Więc przejdźmy niepłynnie.
 
-Otóż projekt okładki i układu książki podesłało nam Wydawnictwo Poznańskie,
+Otóż projekt okładki i układu książki podesłało nam wydawnictwo We Need YA,
 prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej [mecenatem merytorycznym](/blog/mecenat).
 Do książki dołączona jest przedmowa tłumacza, Artura Łukszy, która jest tak cudowna, że pozwolę ją sobie zacytować w całości:
 
