@@ -20,6 +20,9 @@ module.exports = [
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
     new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
+    new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian']),
+    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian']),    
+    new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
@@ -59,9 +62,6 @@ module.exports = [
     new Event('Marsz Równości {https://www.facebook.com/events/1462034324230653/=Słubice-Frankfurt-Pride}', 'LGBTQ', 9, dayYear(4, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/wolnoscrownosctolerancja/=II Wodzisławski Marsz Równości}', 'LGBTQ', 8, dayYear(27, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/Bielski-Marsz-R%C3%B3wno%C5%9Bci-108906844819983/=II Bielski Marsz Równości}', 'LGBTQ', 7, dayYear(3, 2022), EventLevel.Day),
-    new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian']),
-    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian']),    
-    new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
 
     // --- dynamic date ---
 
