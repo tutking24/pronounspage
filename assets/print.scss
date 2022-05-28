@@ -1,0 +1,19 @@
+@import "./variables";
+
+@media print {
+    header, footer {
+        display: none;
+    }
+    body {
+        background: none;
+        background-color: $white;
+    }
+    hr {
+        display: block;
+        border: 2px solid $border-color;
+    }
+
+    @page {
+        margin: 1cm;
+    }
+}

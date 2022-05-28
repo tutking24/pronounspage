@@ -541,6 +541,13 @@ user:
             Реєстрація дозволяє вам управляти своїми акаунтами/картками ({/@exemple=як, наприклад, цією}).
         passwordless: 'Сайт не зберігає паролі. {https://avris.it/blog/passwords-are-passé=Більше інформації}'
         instancePlaceholder: 'інстанція'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Підтвердити'
         invalid: 'Невірний код.'
@@ -600,8 +607,17 @@ profile:
     flagsInfo: 'Перетягніть ваші прайд-прапори в цю рамку.'
     flagsCustom: 'Завантажити користувацький прайд-прапор'
     flagsCustomWarning: 'Цей прайд-прапор був доданий користувач_кою. Команда pronouns.page не несе відповідальності за це.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Посилання'
     linksRecommended: 'Рекомендуємо перейти за цими посиланням'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Колонка'
 
     header: 'Картки'
@@ -1090,6 +1106,18 @@ calendar:
         freedressing_day: 'День вільного гардеробу'
         sexual_health_day: 'День обізнаності про сексуальне и репродуктивне здоровʼя'
         world_sexual_health_day: 'Всесвітній день сексуального здоровʼя'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO    
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                      
     banner: 'Ми святкуємо'
     celebrating_custom: 'святкується'
     celebrating_day: 'святкується'
@@ -1102,3 +1130,7 @@ calendar:
         list: 'Список подій'
     link: 'Посилання'
     full: 'Повний календар'
+
+ukraine:
+    header: 'Ми підтримуємо Україну.'
+    link: '{https://dou.ua/lenta/articles/stand-with-ukraine/=Ось як Ви можете допомогти!}'

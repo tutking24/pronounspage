@@ -426,6 +426,13 @@ user:
             ご登録いただいた方は、カードの設定を行うことができます。({/@example=カードの例}).
         passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
         instancePlaceholder: 'サーバー'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '確認'
         invalid: '無効なコード'
@@ -485,9 +492,18 @@ profile:
     flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
     flagsCustom: 'カスタムフラグをアップロード'
     flagsCustomWarning: 'このフラグはユーザーによってアップロードされました。Pronouns.pageのチームは関わっていません。'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'リンク'
     linksRecommended: ''
     linksRecommendedAfter: 'にリンクすることをお勧めします。'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '欄'
 
     list: 'あなたのカード'
@@ -959,6 +975,18 @@ calendar:
         freedressing_day: 'フリードレッシング認知デー'
         sexual_health_day: '性と生殖の健康啓発デー'
         world_sexual_health_day: '世界セクシュアルヘルスデー'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                  
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''
@@ -975,3 +1003,7 @@ calendar:
         list: 'イベントのリスト'
     link: 'リンク'
     full: 'カレンダー全体を見る'
+
+ukraine:
+    header: '私たちはウクライナを支援します。'
+    link: '{https://how-you-can-support-ukraine.super.site/=支援をする方法はこちら}'

@@ -424,6 +424,12 @@ user:
             S’inscrire vous permet de gérer vos cartes ({/@example=comme celle-ci}).
         passwordless: 'Ce site ne stocke aucun mot de passe. {https://avris.it/blog/passwords-are-passé=Plus d’infos.}'
         instancePlaceholder: 'Instance'
+        domainPlaceholder: 'Domaine'
+        deprecated: 'Obsolète'
+        depreciationNotice: >
+            Cette source d'authentification n'est pas fiable.
+            <a href="%link%" target="_blank" rel="noopener">Plus d'info</a>.
+            Nous vous suggérons fortement de vérifier si vous avez une seconde méthode d'authentification.
     code:
         action: 'Valider'
         invalid: 'Code invalide.'
@@ -486,8 +492,16 @@ profile:
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
     flagsCustom: 'Uploader un drapeau personnalisé'
     flagsCustomWarning: 'Ce drapeau a été uploadé par un.e utilisateur.rice. L’équipe de pronouns.page n’en est pas tenue responsable.'
+    flagsAsterisk: 'Ce n''est pas une identité queer, mais nous l''incluons pour les individus queer "autre" (par exemple, les trans hétérosexuels).'
     links: 'Liens'
     linksRecommended: 'Nous vous recommandons ces liens'
+    verifiedLinks:
+        header: 'Liens vérifiés'
+        info: >
+            Les liens affichés sur les profils des utilisateurs.ices seront précédés d'une icône de bouclier,
+            s'ils ont utilisés la vérification en passant par l'authentification tierce,
+            ou (en construction) par le biais d'un tag <code>rel="me"</code> qui redirige sur la carte.
+            Nos liens contiennent également un tag <code>rel="me"</code> pour que les sites tierces puissent vérifier votre carte également.
     column: 'Colonne'
 
     list: 'Vos cartes'
@@ -977,6 +991,18 @@ calendar:
         freedressing_day: 'Journée de sensibilité à l''accoutrement libre'
         sexual_health_day: 'Journée de sensibilisation à la santé sexuelle et reproductive'
         world_sexual_health_day: 'Journée mondiale de la santé sexuelle'
+        aids_vaccine_day: 'Journée mondiale du vaccin contre le SIDA'
+        queer_youth_day: 'Journée des jeunes queer'
+        ominsexual_day: 'Journée de la visibilité des omnisexuels'
+        unlabeled_day: 'Journée de la visibilité aux queer non-genrés' 
+        trans_youth_day: 'Journée de visibilité aux enfants et à la jeunesse trans'
+        hiv_long_term_survivors_day: 'Journée de sensibilisation aux survivants de long terme au SIDA'
+        women_hiv_awareness_day: 'Journée de sensibilisation au VIH/SIDA pour les femmes et les filles'
+        youth_hiv_awareness_day: 'Journée de sensibilisation au SIDA/VIH pour la jeunesse'
+        gay_hiv_awareness_day: 'Journée de sensibilisation aux hommes gays atteints du SIDA/VIH'
+        black_hiv_awareness_day: 'Journée de sensibilisation au VIH/sida des communautés noires'
+        hiv_aging_awareness_day: 'Journée de la sensibilisation du VIH/sida et au vieillissement'
+        trans_hiv_testing_day: 'Journée de dépistage au VIH des transgenres'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
@@ -989,3 +1015,7 @@ calendar:
         list: 'Liste des événements'
     link: 'Liens'
     full: 'Calendrier complet'
+
+ukraine:
+    header: 'Nous soutenons l''Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Voici comment aider.}'

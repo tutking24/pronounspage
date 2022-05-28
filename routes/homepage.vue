@@ -1,5 +1,6 @@
 <template>
     <div>
+        <UkraineBanner class="mb-4"/>
         <template v-if="$te('home.welcome')">
             <section>
                 <h2>

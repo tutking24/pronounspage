@@ -119,6 +119,7 @@
             </div>
         </div>
         <EasterEgg/>
+        <UkraineBanner class="my-3"/>
         </div>
     </footer>
     <div v-else>

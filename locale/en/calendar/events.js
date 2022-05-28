@@ -2,9 +2,11 @@ const {Event, day, week, month, dayYear, weekStarting, EventLevel, Day} = requir
 
 module.exports = [
     // --- months ---
-    new Event('LGBT History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
-    new Event('LGBT History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('LGBT History Month (Ireland/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (UK/Hungary/Netherlands)', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (US/Canada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (Italy)', 'Progress Pride', 4, month, EventLevel.Month),
+    new Event('LGBTQ+ History Month (Cuba/Germany)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Queer History Month (Finland)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('{/terminology#transgender=Trans} Visibility Month (Brazil)', 'Transgender', 1, month, EventLevel.Month, ['transgender']),
     new Event('{/terminology#lesbian=Lesbian} Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
@@ -23,22 +25,15 @@ module.exports = [
     new Event('Marriage Equality Day (New Zealand)', '_hrc', 8, day(19), EventLevel.Day),
     new Event('Marriage Referendum Anniversary (Ireland)', '_hrc', 5, day(22), EventLevel.Day),
     new Event('Freedom to Marry Day (US)', '_hrc', 2, day(12), EventLevel.Day),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day} (US)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV/AIDS Awareness Day} (US/Canada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', '_law', 2, day(1), EventLevel.Day),
     new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men\'s HIV/AIDS Awareness Day} (US)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day} (US/Canada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.Day),
     new Event('{https://twitter.com/_EQUALGROUND_/status/1440232964286124050=Lesbian Visibility Day} (Sri Lanka)', 'Lesbian', 9, day(21), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nlaad.html=Latinx AIDS Awareness Day} (US)', '_red-ribbon', 10, day(15), EventLevel.Day, ['aids']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/shaad.html=Southern HIV/AIDS Awareness Day} (US)', '_red-ribbon', 8, day(20), EventLevel.Day, ['aids']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/napihaad.html=Asian and Pacific Islander HIV/AIDS Awareness Day} (US)', '_red-ribbon', 5, day(19), EventLevel.Day, ['aids']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day} (US)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day} (US/Canada)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nnhaad.html=Native HIV/AIDS Awareness Day} (US)', '_red-ribbon', 3, day(20), EventLevel.Day, ['aids']),
-    new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day} (US)', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
     new Event('{/terminology#transgender=Trans} Visibility Day (Brazil)', 'Transgender', 1, day(29), EventLevel.Day, ['transgender']),
     new Event('National {/terminology#pride=Gay Pride} Day (Brazil)', 'LGBTQ', 3, day(25), EventLevel.Day),
     new Event('{/terminology#lesbian=Lesbian} Visibility Day (Brazil)', 'Lesbian', 8, day(29), EventLevel.Day, ['lesbian']),
@@ -63,10 +58,31 @@ module.exports = [
     new Event('Suicide Prevention Day (Uruguay)', '_yellow-ribbon', 7, day(17), EventLevel.Day),
     new Event('Suicide Prevention Day (Puerto Rico)', '_yellow-ribbon', 8, day(12), EventLevel.Day),
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Nonbinary Grandparents\' Day} (Poland)', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
-    new Event('Anniversary of the death of Marielle Franco (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('{https://standbyme.uk/nbad/=Bystander Awareness Day} (UK)', null, 3, day(13), EventLevel.Day),
-    new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Day}', '_mspec_lesbians', 5, day(26), EventLevel.Day),
-    new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Week}', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week),
+    new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Day}', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('{https://twitter.com/MspecLesbianss=Mspec Lesbian Visbility & Awareness Week}', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('UpStairs Lounge Arson Attack Remembrance Day', '_black-ribbon', 6, day(24), EventLevel.Day),
+    new Event('Admiral Duncan Pub Bombing Remembrance Day', '_black-ribbon', 4, day(30), EventLevel.Day),
+    new Event('Anniversary of the {https://en.wikipedia.org/wiki/Dance_of_the_Forty-One=Dance of the Forty-One} (Mexico)', null, 11, day(18), EventLevel.Day),
+    new Event('{https://en.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} Day of Remembrance (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
+    new Event('{https://tdor.translivesmatter.info/reports/2019/05/06/milo-mazurkiewicz_warsaw-masovia-poland_9a028d4a=Milo Mazurkiewicz} Day of Remembrance (Poland)', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
+    new Event('Marriage Equality Day (Germany)', '_hrc', 10, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Austria)', '_hrc', 1, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Belgium)', '_hrc', 6, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Luxembourg)', '_hrc', 1, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Switzerland)', '_hrc', 7, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Spain)', '_hrc', 7, day(3), EventLevel.Day),
+    new Event('Marriage Equality Day (Argentina)', '_hrc', 7, day(15), EventLevel.Day),
+    new Event('Marriage Equality Day (Uruguay)', '_hrc', 8, day(5), EventLevel.Day),
+    new Event('Marriage Equality Day (Colombia)', '_hrc', 4, day(28), EventLevel.Day),
+    new Event('Marriage Equality Day (Ecuador)', '_hrc', 7, day(8), EventLevel.Day),
+    new Event('Marriage Equality Day (Costa Rica)', '_hrc', 5, day(26), EventLevel.Day),
+    new Event('Marriage Equality Day (Portugal)', '_hrc', 6, day(5), EventLevel.Day),
+    new Event('Marriage Equality Day (Brazil)', '_hrc', 5, day(16), EventLevel.Day),
+    new Event('Marriage Equality Day (Netherlands)', '_hrc', 4, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (France)', '_hrc', 5, day(18), EventLevel.Day),
+    new Event('Marriage Equality Day (Sweden)', '_hrc', 5, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Finland)', '_hrc', 3, day(1), EventLevel.Day),
 
     // --- dynamic date ---
 
@@ -171,5 +187,10 @@ module.exports = [
 
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
+    new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
+
+    // --- one-off events ---
+    new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
+
 ];

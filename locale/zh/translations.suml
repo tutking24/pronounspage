@@ -380,6 +380,13 @@ user:
             註冊可以讓你管理你的卡（{/@example=像這個}）。
         passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
         instancePlaceholder: 'Instance' # TODO
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '證實'
         invalid: '不對代碼'
@@ -441,8 +448,17 @@ profile:
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
     flagsCustomWarning: '此旗幟由一名用戶上傳。pronouns.page團隊不為此負責'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '列'
 
     list: '你的卡'
@@ -925,6 +941,18 @@ calendar: # TODO
         freedressing_day: 'Freedressing Awareness Day'
         sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
         world_sexual_health_day: 'World Sexual Health Day'
+        aids_vaccine_day: 'World AIDS Vaccine Day'
+        queer_youth_day: 'Queer Youth Day'
+        ominsexual_day: 'Omnisexual Visibility Day'
+        unlabeled_day: 'Unlabeled Visibility Day' 
+        trans_youth_day: 'Trans Children and Youth Visibility Day'
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day'
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day'
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day'
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day'
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
+        trans_hiv_testing_day: 'Transgender HIV Testing Day'        
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
@@ -937,3 +965,7 @@ calendar: # TODO
         list: 'Events list'
     link: 'Link'
     full: 'Full calendar'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'

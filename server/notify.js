@@ -22,6 +22,18 @@ const isGranted = (user, locale, area) => {
     return false;
 }
 
+const shouldNotify = (frequency) => {
+    if (frequency === 0) {
+        return false;
+    }
+
+    if (frequency === 7) {
+        return (new Date()).getDay() === 6; // Saturdays
+    }
+
+    return true;
+}
+
 async function notify() {
     const db = await dbConnection();
 
@@ -38,13 +50,13 @@ async function notify() {
         return;
     }
 
-    const admins = await db.all(`SELECT email, roles FROM users WHERE roles != ''`);
+    const admins = await db.all(`SELECT email, roles, adminNotifications FROM users WHERE roles != ''`);
 
     const awaitingModerationGrouped = {}
     let count = 0;
     for (let m of awaitingModeration) {
         for (let admin of admins) {
-            if (isGranted(admin, m.locale, m.type)) {
+            if (isGranted(admin, m.locale, m.type) && shouldNotify(admin.adminNotifications)) {
                 if (awaitingModerationGrouped[admin.email] === undefined) {
                     awaitingModerationGrouped[admin.email] = {};
                 }
