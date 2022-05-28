@@ -44,7 +44,7 @@ module.exports = [
     new Event('tolerance_day', null, 11, day(16), EventLevel.Day),
     new Event('social_justice_day', null, 2, day(20), EventLevel.Day, ['progress pride']),
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
-    new Event('domestic_violence', null, 5, day(25), EventLevel.Day, ['lgbtq']),
+    new Event('domestic_violence', null, 5, day(28), EventLevel.Day, ['lgbtq']),
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.Day, ['polysexual', 'polyromantic']),
     new Event('orlando_day', '_black-ribbon', 6, day(12), EventLevel.Day, ['homophobia']),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender', 'demiboy', 'demigirl', 'deminonbinary', 'demineutrois', 'demifluid']),
