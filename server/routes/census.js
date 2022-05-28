@@ -154,6 +154,7 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
           AND edition = ${global.config.census.edition}
           AND suspicious = 0
           AND troll = 0
+          AND relevant = 1
     `)) {
         answers = JSON.parse(answers);
         writins = JSON.parse(writins);

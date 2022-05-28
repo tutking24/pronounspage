@@ -132,7 +132,12 @@
                     <T>profile.flagsInfo</T>
                 </p>
                 <ButtonList v-model="flags" :options="allFlags" v-slot="s">
-                    <Flag :name="s.desc.split('|')[0]" :alt="s.desc.split('|')[1]" :img="`/flags/${s.v}.png`"/>
+                    <Flag
+                        :name="s.desc.split('|')[0]"
+                        :alt="s.desc.split('|')[1]"
+                        :img="`/flags/${s.v}.png`"
+                        :asterisk="flagsAsterisk.includes(s.v)"
+                    />
                 </ButtonList>
                 <PropagateCheckbox field="flags" :before="beforeChanges.flags" :after="flags" v-if="otherProfiles > 0" @change="propagateChanged"/>
 
@@ -166,6 +171,10 @@
                     </a>
                     <T silent>profile.linksRecommendedAfter</T>
                     😉
+                </p>
+                <p v-if="$te('profile.linksWarning')" class="small text-muted mt-2 mb-0">
+                    <Icon v="exclamation-triangle"/>
+                    <T>profile.linksWarning</T>
                 </p>
             </section>
 
@@ -306,6 +315,7 @@
                     from: maxBirthdate,
                 },
                 propagate: [],
+                flagsAsterisk: process.env.FLAGS_ASTERISK,
             };
         },
         async asyncData({ app, store }) {

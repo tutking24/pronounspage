@@ -10,23 +10,23 @@ home:
     about:
         - >
             We gebruiken allemaal persoonlijke voornaamwoorden. Met deze woorden verwijzen we naar iemand zonder hun naam te noemen.
-            Meestal nemen we onderbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van die persoon hun uiterlijk.
+            Meestal nemen we onbewust aan of we naar iemand als {/hij=“hij/hem”} of {/zij=“zij/haar”} moeten verwijzen, op basis van het uiterlijk van die persoon
             Maar eigenlijk is het niet zo eenvoudig…
         - >
-            Gender is iets complex. Sommige mensen zien er niet uit zoals de meeste anderen met hun gender.
-            Bepaalde mensen worden liever anders aangesproken dan wat je zou verwachten.
+            Gender is iets complex. Sommige mensen zien er niet uit zoals andere personen met hetzelfde gender.
+            Bepaalde mensen worden liever anders aangesproken dan op de manier die je zou verwachten.
             Anderen passen in noch de “mannelijke” of “vrouwelijke” hokjes en verkiezen een meer genderneutraal taalgebruik.
         - >
-            Met deze tool kan je een link naar jouw persoonlijke voornaamwoorden delen.
-            Daarin vind je ook voorbeeldzinnen waarmee je anderen kan tonen hoe je het liefst aangesproken wordt.
+            Met deze tool kan je een link naar een pagina met jouw voornaamwoorden delen.
+            Daarin vind je ook voorbeeldzinnen waarmee je anderen kan tonen hoe je het liefst aangesproken wilt worden.
         - >
             Waarom is dit nu belangrijk? Omwille van fatsoen.
-            Je spreekt Marie toch niet aan als “Lien” omdat jij die naam mooier vindt
-            of omdat ze er meer zoals een “Lien” uitziet volgens jou?
+            Je spreekt Marie toch niet aan als Lien omdat jij die naam mooier vindt
+            of omdat ze er volgens jou meer zoals een Lien uitziet?
             En zelfs al werd ze zo genoemd door haar ouders,
-            spreek haar aan als Marie als ze dit beter vindt dan haar oorspronkelijke naam.
-            En dit is hetzelfde als met voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
-            spreek die persoon aan zoals die dat wilt.
+            spreek haar aan als Marie als ze dit beter vindt klinken dan haar oorspronkelijke naam.
+            Dit is hetzelfde geval bij voornaamwoorden, als je niet onbeschoft wilt zijn tegenover iemand,
+            spreek die persoon dan aan op de manier waarop ze willen worden aangesproken.
             Het enige verschil is dat we vaak eerder elkaars namen dan elkaars voornaamwoorden kennen,
             omdat we onszelf op die manier voorstellen. Laten we dit samen veranderen!
     pronouns: 'Lijst van populaire voornaamwoorden'
@@ -34,12 +34,12 @@ home:
         header: 'Generator'
         description: >
             Je kunt ook deze tool gebruiken waarmee je de lege plekken
-            in de zinnen kunt invullen en een kunt link genereren die je met anderen kan delen.
+            in de zinnen kunt invullen en een link kunt genereren die je met anderen kan delen.
         button: 'Laat de generator zien'
         header2: 'Genereer een link'
         base: 'Gebaseerd op'
-        alt: 'Je kan ook afwisselbare vormen in elk veld apart invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
+        alt: 'Je kan ook uitwisselbare vormen in elk veld invoeren, bijv. <code>zij&hij</code> = „zij” of „hij”.'
+        pronunciation: ' You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = „faerself” pronounced as /fɛɹsɛlf/.'
     whatisit: 'Hoe zit dat nu met die voornaamwoorden?'
     mission:
         header: 'Onze missie'
@@ -53,7 +53,7 @@ home:
             – Zodat de voornaamwoorden van <em>anderen</em> worden gerespecteerd.
         inclusiveness: >
             <strong>Inclusiviteit</strong>
-            – Zodat we geen aannames maken over iemand's gender wanneer we refereren naar een of meerdere
+            – Zodat we geen aannames maken over de gender van iemand wanneer we refereren naar een of meerdere
             personen die we niet kennen, en zodat we hun niet uitsluiten voor wat voor reden dan ook.
 
 pronouns:
@@ -74,7 +74,7 @@ pronouns:
         description: >
             Ook al is het voor veel mensen erg belangrijk dat men specifieke voornaamwoorden gebruikt om over hun te praten,
             vinden anderen het geen probleem om op wat voor manier dan ook aangesproken te worden
-            - zolang de context duidelijk is wat betreft degene over wie wordt gesproken.
+            - zolang de context duidelijk maakt wie hiermee wordt gerefereerd.
         options: 'bekijk de mogelijkheden [share]{/voornaamwoorden=hier}.'
     others: 'Andere vormen'
     othersRaw: 'andere'
@@ -83,8 +83,8 @@ pronouns:
 
 sources:
     header: 'Bronnen'
-    headerLong: 'Voorbeelden vormen culturele teksten'
-    headerLonger: 'Genderneutrale taal in culturele teksten'
+    headerLong: 'Voorbeelden in media'
+    headerLonger: 'Genderneutrale taal in  media'
     subheader: 'Tekstcorpus van genderneutrale taal'
     toc: 'Laat inhoudsopgave zien'
     type:
@@ -99,7 +99,7 @@ sources:
         Game: 'Spel'
         Other: 'Andere'
     submit:
-        header: 'Dien een voorbeeld in ter toevoeging aan de site'
+        header: 'Dien een voorbeeld in ter toevoeging aan de website'
         action: 'Verstuur'
         pronouns: 'Welke voornaamwoorden zijn gebruikt in het voorbeeld?'
         pronounsInfo: 'Voer de simpelste versie van het voornaamwoord in, op de manier waarop het in de link staat, bijv. "hij", “hen/hun/hun”, “zij&hen”'
@@ -125,7 +125,7 @@ nouns:
     header: 'Woordenboek'
     headerLong: 'Woordenboek van naamwoorden'
     headerLonger: 'Woordenboek voor genderneutrale taal'
-    description: 'Er zijn niet alleen voornaamwoorden! Bekijk ons woordenboek van genderneutrale naamwoorden.'
+    description: 'We hebben niet alleen maar voornaamwoorden! Bekijk ons woordenboek van genderneutrale naamwoorden.'
     intro:
         - >
             Inclusief en genderneutraal taalgebruik is niet alleen het respecteren van iemands voornaamwoorden.
@@ -139,14 +139,14 @@ nouns:
             gebruik dan de neutrale vormen.
         - >
             Hieronder presenteren we een woordenboek met de woorden die goed zijn om te weten.
-            Je kunt hieraan bijdragen en jouw suggesties toevoegen.
+            Je kunt ook aan ons woordenboek bijdragen en jouw suggesties toevoegen.
 
-    approved: 'goedgekeurde inzendingen'
-    pending: 'in afwachting van goedkeuring'
+    approved: 'Goedgekeurde inzendingen'
+    pending: 'In afwachting van goedkeuring'
     edit: 'Stel een verandering voor'
     edited: 'Voorgestelde verandering van'
     editing: 'Je bent een bestaande entry aan het bewerken.'
-    empty: 'Er zijn geen woorden gevonden die jouw criteria matchen.'
+    empty: 'Er zijn geen woorden gevonden die overeenkomen met jouw criteria.'
 
     submit:
         action: 'Verstuur'
@@ -163,7 +163,7 @@ nouns:
     feminine: 'vrouwelijk'
     feminineShort: 'vrouw.'
     neuter: 'neutraal'
-    neuterShort: 'neutr.'
+    neuterShort: 'neut.'
 
     singular: 'enkelvoud'
     singularShort: 'enkelv.'
@@ -188,7 +188,7 @@ terminology:
     term: 'Begrip'
     original: 'Etymologie'
     category: 'Categorie'
-    images: 'Aanvullende afbeeldingen van buiten de vlaggencatalogus om'
+    images: 'Aanvullende afbeeldingen van buiten de vlaggen collectie om'
     definition: 'Definitie'
 
 faq:
@@ -199,19 +199,19 @@ faq:
             question: 'Wat is non-binair?'
             answer:
                 - >
-                    Gender is veel ingewikkelder dan een simpel onderscheid tussen mannelijk en vrouwelijk.
-                    Zelfs vanuit een puur biologisch standpunt is er een verschil tussen chromosomale sekse, 
+                    Gender is veel ingewikkelder dan een simpel onderscheid tussen man en vrouw.
+                    Zelfs vanuit een puur biologisch standpunt is er een verschil tussen chromosomale sekse,
                     genetische sekse, hormonale sekse, fenotypische sekse...
-                    deze zijn niet perse allemaal congruent, ze hoeven niet perse binair te zijn
+                    deze zijn niet perse allemaal congruent, ze hoeven dus niet perse binair te zijn
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(meer info hier)}.
-                    Es als we dan naar het culturele aspect kijken, is ''gender'' een sociaal construct. 
-                    De begrippen ''vrouw'' en ''man'' kunnen compleet verschillende rechten, plichten en normen omvatten, 
-                    afhankelijk van het tijdperk en de geografische locatie. Het was ooit gebruikelijk in Europa dat mannen hoge hakken en kousen droegen. 
-                    De oorspronkelijke bewoners van Noord-Amerika hebben al eeuwen een derde gender erkend
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, enz.
+                    Es als we dan naar het culturele aspect kijken, is gender een sociaal construct.
+                    De begrippen vrouw en man kunnen compleet verschillende rechten, plichten en normen omvatten,
+                    afhankelijk van het tijdperk en de geografische locatie. Het was ooit gebruikelijk in Europa dat mannen hoge hakken en kousen droegen.
+                    De oorspronkelijke bewoners van Noord-Amerika erkennen daarnaast al eeuwen een derde gender
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}.
                 - >
-                    Non-binair is een overkoepelende term die de identiteit 
-                    omschrijft van mensen die geen binaire man of vrouw zijn. 
+                    Non-binair is een overkoepelende term die de identiteit
+                    omschrijft van mensen die geen binaire man of vrouw zijn.
                     Het omvat bijvoorbeeld mensen die
                     {https://gender.wikia.org/wiki/Agender=agender},
                     {https://gender.wikia.org/wiki/Gender_Fluid=genderfluide},
@@ -219,15 +219,15 @@ faq:
                     {https://gender.wikia.org/wiki/Demiboy=demiman},
                     en {https://gender.wikia.org/wiki/Non-binary=en nog veel meer} zijn.
                 - >
-                    Non-binair is niet perse iets ''tussen'' mannelijkheid en vrouwelijkheid. Het gaat er meer aan voorbij. 
-                    Non-binaire personen hoeven niet androgyn te zijn, neutrale voornaamwoorden te gebruiken, enz. 
+                    Non-binair is niet perse iets tussen mannelijkheid en vrouwelijkheid. Het gaat er meer aan voorbij.
+                    Non-binaire personen hoeven niet androgyn te zijn, neutrale voornaamwoorden te gebruiken, enz.
                     Het gaat om het vrij zijn van genderrollen, niet het creëren van nieuwe.
         why-respect:
             question: 'Waarom zou ik zulke <em>rare</em> voornaamwoorden moeten respecteren?'
             answer:
                 - >
-                    Omdat mensen aanspreken in de manier waarop ze aangesprolen willen worden de basis van sociale relaties is.
-                    Je zou nooit Marie "Lien" noemen, je zou nooit meneer/mevrouw weglaten wanneer je jouw docent aanspreekt etc.
+                    Omdat mensen aanspreken in de manier waarop ze aangesproken willen worden de basis van sociale relaties is.
+                    Je zou nooit Marie aanspreken als Lien, je zou nooit meneer/mevrouw weglaten wanneer je jouw docent aanspreekt enz.
                     En zo zijn er ook mensen die niet “{/zij=zij}” of “{/hij=hij}” willen worden genoemd.
                     Als je dit niet accepteert dan ben jij alleen degene die in een kwaad daglicht wordt gesteld.
                 - >
@@ -236,23 +236,23 @@ faq:
             question: 'Hoe kom ik erachter hoe ik iemand moet aanspreken?'
             answer:
                 - >
-                    Je kunt het gewoon vragen! Ja, misschien is het een beetje ongemakkelijk, maar hoe vaker je het doet, hoe minder ongemakkelijk het wordt.
-                    Aangezien we al vragen hoe iemand heet, waarom dan ook niet wat hun voornaamwoorden zijn?
+                    Je kunt het gewoon vragen! Het is misschien een beetje ongemakkelijk, maar hoe vaker je het doet, hoe minder ongemakkelijk het wordt.
+                    Aangezien we al vragen hoe iemand heet, waarom vragen we dan ook niet wat hun voornaamwoorden zijn?
                 - >
                     (Formuleer het alsjeblieft alleen niet als "ben je een jongen of een meisje?"
                     Die vraag impliceert dat er alleen twee correcte antwoorden zijn
                     en het suggereert dat je een ongezonde nieuwsgierigheid hebt wat betreft de genitaliën van die persoon.
                     In plaats daarvan zou je gewoon kunnen vragen: "Wat zijn je voornaamwoorden?" of "hoe wil je aangesproken worden?")
                 - >
-                    Het is ook belangrijk om situaties waaarin je jezelf voorstelt met jouw voornaamwoorden te normaliseren.
+                    Het is ook belangrijk om situaties waarin je jezelf voorstelt met jouw voornaamwoorden te normaliseren.
                     “Hoi, ik ben Michiel,{/he=he/him}”. Het is niet moeilijk – maar voor transgender en non-binaire personen is het heel belangrijk!
-                    Het is zelfs nog makkelijker online: plaats simpelweg jouw voornaamwoorden (of een link naar voorbeelden op onze website) in jouw bio.
+                    Het is zelfs nog makkelijker om dit online te doen: plaats simpelweg jouw voornaamwoorden (of een link naar voorbeelden op onze website) in jouw bio op social media.
                 - >
-                    Onthoud dat veel mensen, afhankelijk van de situatie, soms een andere naam en voornaamwoorden gebruiken.
-                    Misschien zijn ze niet uit de kast tegenover familieleden of collega's, maar kunnen ze wel open zijn over hun identiteit rondom vrienden. 
+                    Onthoud dat veel mensen, afhankelijk van de specifieke situatie, soms een andere naam en voornaamwoorden gebruiken.
+                    Misschien zijn ze niet uit de kast tegenover familieleden of collega's, maar kunnen ze wel open zijn over hun identiteit rondom vrienden.
                     Wees je hiervan bewust. Je kunt bijvoorbeeld het volgende vragen: ''welke voornaamwoorden moet ik in het bijzijn van jouw baas gebruiken?'' enz.
                 - >
-                    Sommige mensen gebruiken meerdere voornaamwoorden bijv. “{/zij&hij=zij/hij}” of “{/hen&hij=hen/hij}”. 
+                    Sommige mensen gebruiken meerdere voornaamwoorden bijv. “{/zij&hij=zij/hij}” of “{/hen&hij=hen/hij}”.
                     Dat betekent dat ze al deze vormen prettig vinden. Meestal is de eerste gegeven vorm de voorkeursvorm.
         who-uses-it:
             question: 'Worden deze voornaamwoorden überhaupt door iemand gebruikt?'
@@ -264,20 +264,20 @@ faq:
             question: 'Zijn non-binaire voornaamwoorden goedgekeurd door een soort autoriteit?'
             answer:
                 - >
-                    Taal is geen door god gegeven, in steen gebeitelde, eeuwenoude magie. 
+                    Taal is geen door god gegeven, in steen gebeitelde, eeuwenoude magie.
                     Het is een hulpmiddel dat we gebruiken om te communiceren.
                     Wanneer de samenleving en de wereld veranderen,
                     kunnen we de taal ook veranderen om onze nieuwe situatie beter te beschrijven.
                     We zijn de gebruikers van taal, dus <em>zijn wij de autoriteit</em> omtrent het gebruik van taal.
                 - >
-                    Het duurt vaak even voordat woordenboeken  veranderingen in taal doorvoeren, 
-                    wat in de tussentijd natuurlijk niet betekent dat die veranderingen verkeerd zijn. 
+                    Het duurt vaak even voordat woordenboeken  veranderingen in taal doorvoeren,
+                    wat in de tussentijd natuurlijk niet betekent dat die veranderingen verkeerd zijn.
                     Op een gegeven moment, als bepaalde vormen vaak genoeg gebruikt worden, komen ze in woordenboeken terecht.
-                    De {https://www.vandale.nl/genderneutraal-persoonlijk-voornaamwoord=Van Dale} bijvoorbeeld, 
+                    De {https://www.vandale.nl/genderneutraal-persoonlijk-voornaamwoord=Van Dale} bijvoorbeeld,
                     accepteert het gebruik van non-binaire voornaamwoorden.
                 - >
-                    Je kunt ook {https://scholar.google.com/scholar?hl=en&q=neopronouns=academische papers} 
-                    lezen over neovoornaamwoorden.
+                    Je kunt ook {https://scholar.google.com/scholar?hl=en&q=neopronouns=academische papers}
+                    lezen over neo-voornaamwoorden.
         bio:
             question: 'Waarom zou ik mijn voornaamwoorden in mijn bio op social media zetten?'
             answer:
@@ -292,7 +292,7 @@ faq:
                     maar er zijn mensen wiens voornaamwoorden dat niet zijn.
                     Zij willen op een correcte manier worden aangesproken, of ze nou wel of niet passen als hun gender,
                     of ze nou wel of niet in transitie zijn (als ze al überhaupt in transitie willen).
-                    Non-binaire personen zien er meestal niet non-binair uit, we zijn niemand androgynie verschuldigd.
+                    Non-binaire personen zien er meestal niet non-binair uit, en we zijn niemand androgynie verschuldigd.
                 - >
                     Het is erg belangrijk voor trans, non-binaire and gender non-conforme personen om onze voornaamwoorden te delen.
                     Tegelijkertijd maakt het ons ook kwetsbaar.
@@ -304,8 +304,8 @@ faq:
             answer:
                 - >
                     Natuurlijk! Wanneer iemand hun mening, stijl of hobbies verandert is niemand verbaasd,
-                    dus waarom zou het dan vreemd zijn dat zij een nieuw deel van hun identiteit hebben ontdekt,
-                    hun naam niet meer leuk vinden, een label hebben ontdekt dat beter past etc.?
+                    dus waarom zou het dan vreemd zijn dat iemand een nieuw deel van hun identiteit heeft ontdekt,
+                    hun naam niet meer leuk vindt, of een label heeft ontdekt dat beter past?
         get-used-to:
             question: 'Is het raar dat ik niet aan mijn nieuwe voornaamwoorden gewend kan raken?'
             answer:
@@ -316,7 +316,7 @@ faq:
                 - >
                     Voornaamwoorden ≠ gender
                     Jouw gender zal niet radicaal veranderen puur omdat je een keertje in de war raakte omdat iemand jou ''hen'' noemde.
-                    Maak je geen zorgen. Experiment. Kijk wat het beste bij jou past.
+                    Maak je geen zorgen. Experimenteer. Kijk wat het beste bij jou past.
         preferred-pronouns:
             question: 'Waarom moet ik niet ''geprefereerde voornaamwoorden'' zeggen?'
             answer:
@@ -328,13 +328,13 @@ faq:
                     Nee! Dit zijn onze voornaamwoorden, niet onze ''geprefereerde voornaamwoorden''. Dit zijn onze namen, niet onze ''geprefereerde namen''.
                     Als je om jouw trans en non-binaire vrienden en geliefden geeft, spreek ze dan correct aan.
         gender-pronouns:
-            question: 'Waarom zou ik niet "gender voornaamwoorden" moeten zeggen?'
+            question: 'Waarom moet ik niet "gender voornaamwoorden" zeggen?'
             answer:
                 - >
-                    Omdat gender (is not) voornaamwoorden. Voornaamwoorden zijn gewoon grammatica.
+                    Omdat gender niet gelijk is aan voornaamwoorden. Voornaamwoorden zijn gewoon grammatica.
                     Non-binaire personen kunnen binaire voornaamwoorden gebruiken, sommige lesbische vrouwen gebruiken (he/him) voor culturele redenen etc.
                 - >
-                    Zeg gewoon "voornaamwoorden".
+                    Zeg gewoon ‘’voornaamwoorden".
 
 links:
     header: 'Links'
@@ -358,7 +358,7 @@ contact:
     header: 'Contact'
     authors: 'De auteurs van de website'
     team:
-        name: 'Het "Raad van Neutrale Taal" collectief'
+        name: 'Het Neutrale Taal collectief'
         nameShort: 'Het collectief'
         description:
             - >
@@ -369,41 +369,41 @@ contact:
         members: 'Huidige leden'
         member: 'Lid van het collectief'
         blog: 'Blog'
-        upcoming: 'Komende taalversies'
-        join: 
+        upcoming: 'Komende vertalingen'
+        join:
             header: 'Sluit je bij ons aan!'
             encouragement: >
-                Vind je het promoten van non-binaire en gender neutrale taal belangrijk?
+                Vind je het promoten van non-binaire en genderneutrale taal belangrijk?
                 Wil je ons collectief hierbij helpen? Cool!
                 Extra hulp is altijd welkom!
-            areasIntro: Gebieden waarop je ons kunt helpen zijn bijvoorbeeld:
+            areasIntro: 'Gebieden waarop je ons kunt helpen zijn bijvoorbeeld:'
             areas:
                 - 'het uitbreiden en modereren van de woordenboeken en de woordenlijsten,'
                 - 'Het uitbreiden en modereren van de bronnenlijst,'
-                -' het maken van illustraties en social media posts,'
+                - 'het maken van illustraties en social media posts,'
                 - 'het beantwoorden van berichten, '
                 - 'het modereren van gebruikersprofielen,'
-                - 'het maken van een nieuwe versie in een andere taal,' 
-                - 'vertaling,'
-                - 'coordinatie van het proces van het toevoegen van nieuwe talen,'
-                -'blog posts schrijven,'
-                -'programmeren,'                      
-                - '…'
-            allies: > # TODO
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                - 'het maken van een nieuwe versie in een andere taal,'
+                - 'het vertalen van de Nederlandse versie van de website of een andere taal,'
+                - ' het overzien van het proces van het toevoegen van nieuwe talen,'
+                - 'het schrijven van blog posts,'
+                - 'programmeren,'
+                - 'en nog veel meer!'
+            allies: >
+                Sommige van deze taken hebben het perspectief van een non-binair persoon nodig, andere taken niet perse.
+                Dat is waarom we ook binaire bondgenoten uitnodigen om mee te doen.
+            how: 'Hoe kun je meedoen? Stuur een mailtje naar {mailto:contact@pronouns.page=contact@pronouns.page} waarin je:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+                - 'jezelf voorstelt,'
+                - 'naar je pronouns.page profiel linkt,'
+                - 'een link stuur naar jouw social media,'
+                - 'vertelt of je ervaring hebt met activisme,'
+                - 'vertelt waarmee je zou willen helpen.'
 
 support:
     header: 'Ondersteun ons'
     description: >
-        Als je wilt bijdragen aan de server, domeinen, stickers etc. of als je simpelweg een biertje voor de auteurs wil kopen,
+        Als je wilt bijdragen aan de server, domeinen, stickers, andere materialen, of als je simpelweg een biertje voor de auteurs wil kopen,
         kun je de onderstaande links gebruiken:
 
 user:
@@ -411,10 +411,10 @@ user:
     headerLong: 'Jouw account'
     tokenExpired: 'Het token is verlopen. Ververs de pagina en probeer opnieuw.'
     login:
-        help: 'Om in te loggen of te registreren kun je de social media buttons gebruiken, of jouw emailadres in het onderstaande veld invoeren, en vervolgens de code bevestigen die naar jouw mailbox wordt verstuurd.'
-        placeholder: 'Email (of gebruikersnaam, als je al bent geregistreerd)'
+        help: 'Om in te loggen of te registreren kun je de social media buttons gebruiken, of jouw e-mailadres in het onderstaande veld invoeren, en vervolgens de code bevestigen die naar jouw mailbox wordt verstuurd.'
+        placeholder: 'E-mail (of gebruikersnaam, als je al bent geregistreerd)'
         action: 'Inloggen / registreren'
-        emailSent: 'We hebben een email verstuurd <strong>%email%</strong> met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
+        emailSent: 'We hebben een <strong>e-mail</strong> verstuurd met een code bestaande uit 6 getallen. Voer deze code hier in. De code is voor eenmalig gebruik en vervalt na 15 minuten.'
         userNotFound: 'Gebruiker niet gevonden.'
         email:
             subject: 'Jouw logincode is {{code}}'
@@ -424,6 +424,12 @@ user:
             Door te registreren kun je een kaart ({/@example=zoals deze}) maken.
         passwordless: 'De website slaat geen wachtwoorden op. {https://avris.it/blog/passwords-are-passé=Meer info.}'
         instancePlaceholder: 'Instantie'
+        domainPlaceholder: 'Domein'
+        deprecated: 'Verouderd'
+        depreciationNotice: >
+            Dit is een onbetrouwbaar authenticatiesysteem.
+            <a href="%link%" target="_blank" rel="noopener">Klik op deze link voor meer informatie.</a>.
+            We raden je sterk aan om een andere login methode te kiezen.
     code:
         action: 'Valideer'
         invalid: 'Ongeldige code.'
@@ -450,12 +456,12 @@ user:
         connect: 'Koppel'
         refresh: 'Vernieuw'
         disconnect: 'Ontkoppel'
-        disconnectConfirm: 'Weet je zeker dat je deze koppeling wil verwijderen? (Je kunt altijd inloggen met de email %email%)'
+        disconnectConfirm: 'Weet je zeker dat je deze koppeling wil verwijderen? (Je kunt altijd inloggen met e-mail %email%)'
 
     mfa:
         header: 'Multifactorauthenticatie'
         init: >
-            Scan de QR code (of voer de code hieronder in) in een app die een tijdelijke eenmalige wachtwoord kan genereren (bijv. {https://authy.com/=Authy})
+            Scan de QR code (of voer de code hieronder in) met een app die een tijdelijke eenmalige wachtwoord kan genereren (bijv. {https://authy.com/=Authy})
             en voer de eerste gegenereerde token in op de website.
         recovery:
             header: 'Herstelcode'
@@ -479,16 +485,21 @@ profile:
         of een <strong>link</strong> (bijv. “http://nl.pronouns.page/zem”)
         of <strong>vijf eigen vormen</strong> (bijv. “hen/hen/hun/hunne/hunzelf”) invoeren.
         Je kunt ook de {/voornaamwoorden#generator=<strong>generator</strong>} gebruiken om jouw eigen aangepaste voornaamwoorden in een zin te gebruiken.
-    pronounsNotFound: 'Onherkende indeling. Check aub de instructies hierboven.'
+    pronounsNotFound: 'Onherkende indeling. Check alsjeblieft de instructies hierboven.'
     words: 'Woorden'
     birthday: 'Leeftijd'
-    birthdayInfo: 'We laten jouw verjaardagsdatum niet zien, alleen de berekende leeftijd.'
+    birthdayInfo: 'We laten jouw verjaardag niet zien, alleen de berekende leeftijd.'
     flags: 'Vlaggen'
-    flagsInfo: 'Klik en sleep jouw pridevlaggen naar deze frame.'
+    flagsInfo: 'Klik en sleep jouw pride vlaggen naar deze frame.'
     flagsCustom: 'Upload zelfgemaakte vlaggen'
-    flagsCustomWarning: 'Deze vlag werd geuploaded door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
+    flagsCustomWarning: 'Deze vlag werd geüpload door een gebruiker. Het team van pronouns.page is hier niet verantwoordelijk voor.'
+    flagsAsterisk: 'Dit is geen queer identiteit, maar we hebben het toegevoegd voor gebruikers die queer zijn op andere vlakken van hun identiteit (bijv. een heteroseksueel transgender individu).'
     links: 'Links'
     linksRecommended: 'We raden aan te linken naar'
+    verifiedLinks:
+        header: 'geverifieerde social media links'
+        info: > De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code> tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag, zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.
+
     column: 'Kolom'
 
     list: 'Jouw kaarten'
@@ -512,22 +523,22 @@ profile:
     banner: >
         Je kan ook onze website gebruiken om een kaart te genereren, {/@example=zoals deze},
         Die je namen, voornaamwoorden etc. bevat.
-        Je kan hier naar verwijzen in je bio of in je email-footer.
+        Je kan hier naar verwijzen in jouw social media bio of in jouw e-mail handtekening.
         Maak simpelweg {/account=hier} een account aan.
     bannerButton: 'Maak een kaart'
 
     card:
-        link: 'Kaartbeeld'
+        link: 'Kaart'
         generate: 'Genereer'
-        generating: 'Je kaartbeeld wordt gegenereerd …'
-    empty: 'Deze person heeft nog geen kaarten gegenereerd.'
+        generating: 'Jouw kaart wordt gegenereerd …'
+    empty: 'Deze persoon heeft nog geen kaarten gegenereerd.'
 
     personal:
         header: 'Persoonlijk'
         description: 'Deze sectie is slechts voor jou zichtbaar'
     language:
         header: 'Taal'
-        description: '@%username%''s kaart is ook in de volgende talen beschikbaar'
+        description: 'De kaart van @%username% is ook in de volgende talen beschikbaar:'
 
 share: 'Deel'
 
@@ -683,33 +694,33 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
 
     update:
-        header: 'We hebben onze gebruikersvoorwaarden geüpdate.'
+        header: 'We hebben onze gebruiksvoorwaarden geüpdate.'
         intro: >
-            Hey! We willen je laten weten dat we onze gebruikersvoorwaarden hebben geüpdate. Hier is een overzicht van de veranderingen:
+            Hey! We willen je laten weten dat we onze gebruiksvoorwaarden hebben geüpdate. Hier is een overzicht van de veranderingen:
         changes:
             - >
                 Vanaf januari zullen we ongebruikte accounts gaan verwijderen om het hamsteren van gebruikersnamen te voorkomen.
-                Dit gebeurt in het geval dat er geen kaart aawezig is, en er tenminste één maand niet is ingelogd.
+                Dit gebeurt in het geval dat er geen kaart aanwezig is, en er tenminste één maand niet is ingelogd.
             - >
                 >Ook al willen we een veilige plek bieden voor alle queer personen ongeacht leeftijd,
                 moeten we de wet respecteren en de privacy van mensen beschermen die juridisch
                 niet toestemming kunnen geven om hun data te verwerken.
-                Daarom bevatten de gebruikersvoorwaarden nu wat altijd al zo is geweest volgens de AVG:
+                Daarom bevatten de gebruiksvoorwaarden nu wat altijd al zo is geweest volgens de AVG:
                 je moet minstens 13 jaar oud zijn om een account aan te maken, en in het geval van gebruikers tussen de 13 en de 16
                 jaar moeten ze daarnaast ook ouderlijke toestemming hebben om hun data te kunnen verwerken.
             - >
-                Om de toegankelijkheid te vergroten zullen we onze gebruikersvoorwaarden vertalen in alle aangeboden talen.
+                Om de toegankelijkheid te vergroten zullen we onze gebruiksvoorwaarden vertalen in alle aangeboden talen.
                 Deze vertalingen zijn slechts ondersteunend, de enige juridische bindende versie hiervan is Engels.
             - >
                 Hoewel queerfobie, transfobie, queer uitsluiting en trollen
-                altijd al begrepen waren als overtredingen van de gebruikersvoorwaarden onder de algemene noemer van ''schending van sociale omgangsvormen'',
+                altijd al begrepen waren als overtredingen van de gebruiksvoorwaarden onder de algemene noemer van ''schending van sociale omgangsvormen'',
                 hebben we deze categorieën expliciet neergezet als niet toegestaan.
 
 admin:
     header: 'Administratie paneel'
     user:
         user: 'Gebruiker'
-        createdAt: 'Datum van registratie'
+        createdAt: 'Registratiedatum'
         email: 'E-mail'
         roles: 'Rol'
         profiles: 'Gebruikersprofielen'
@@ -734,8 +745,8 @@ quotation:
 
 localise:
     shorter: 'Voeg meer toe'
-    short: 'Nieuwe taalversie toevoegen'
-    long: 'Wil je een nieuwe taalversie maken? Bekijk'
+    short: 'Nieuwe vertaling toevoegen'
+    long: 'Wil je een nieuwe vertaling maken? Bekijk'
     longLink: 'deze handleiding!'
 
 images:
@@ -744,7 +755,7 @@ images:
         instructionShort: 'Upload'
 
 error:
-    generic: 'Er is iets misgegaan, probeer het opnieuw…'
+    generic: 'Er is iets misgegaan, probeer het opnieuw.'
 
 captcha:
     reason: 'Demonstreer alsjeblieft dat je geen bot bent om spam en DDoS aanvallen te voorkomen.'
@@ -752,17 +763,17 @@ captcha:
 
 mode:
     light: 'Lichte modus'
-    automatic: 'Automatische'
+    automatic: 'Automatisch'
     dark: 'Donkere modus'
 
 ban:
     reason: 'Reden voor ban'
     visible: '(Dit zal zichtbaar zijn voor de gebruiker)'
     terms: 'Voorwaarden die zijn geschonden (verplicht)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    header: 'Je bent geband. Jouw profiel zal onzichtbaar zijn .'
-    banned: 'Geband.'
+    action: 'Verban deze persoon.'
+    confirm: 'Weet je zeker dat je @%username%? wilt verbannnen?'
+    header: 'Je bent verbannen. Jouw profiel zal onzichtbaar zijn .'
+    banned: 'Verbannen.'
     termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}'
 
 report:
@@ -770,7 +781,7 @@ report:
     comment: 'Leg kort uit wat ongepast is aan dit profiel'
     confirm: 'Weet je zeker dat je @%username% wilt rapporteren?'
     sent: 'Jouw rapportering was verzonden. Bedankt voor je hulp!'
-    terms: 'Houd hetgene wat verboden is volgens onze {/terms=Gebruiksvoorwaarden} in jouw achterhoofd'
+    terms: 'Houd datgene wat verboden is volgens onze {/terms=Gebruiksvoorwaarden} in jouw achterhoofd.'
     hoarding: ' Rapporteer alsjeblieft geen gebruikers die gebruikersnamen hamsteren. We verwijderen automatisch accounts zonder kaarten na een periode van inactiviteit. Jouw melding zal dit proces niet verspoedigen.'
 
 flags:
@@ -908,78 +919,89 @@ calendar:
         10: 'oktober'
         11: 'november'
         12: 'december'
-    events: # TODO
-        pride_month: 'Pride-Maand'
-        trans_month: 'International Trans Awareness Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: 'Agender Pride Day	'
-        asexuality_day: 'International Asexuality Day'
-        bisexuality_day: 'Dag van de Biseksualiteit'
-        drag_day: 'Drag Day'
-        idahobit: 'Internationale Dag tegen Homofobie, Bifobie en Transfobie'
-        intersex_day: 'Intersex Awareness Day'
-        intersex_remembrance_day: 'Internationale Intersekse Gedenkdag'
-        lesbian_day: 'International Lesbian Day'
-        lesbian_visibility_day: 'Lesbische Zichtbaarheidsdag'
-        coming_out_day: 'Coming-Outdag'
-        nonbinary_day: 'International Nonbinary People''s Day'
-        pan_day: 'Pansexual & Panromantic Awareness Day'
-        trans_remembrance_day: 'Internationale Transgender Gedenkdag'
-        trans_visibility_day: 'Internationale Dag van Transgendervisibiliteit'
+    events:
+        pride_month: 'Pride maand'
+        trans_month: 'Internationale transgender maand'
+        zaimki_birthday: 'Verjaardag van pronouns.page'
+        agender_day: 'Agender pride dag'
+        asexuality_day: 'Internationale dag van de aseksualiteit'
+        bisexuality_day: 'Dag van de biseksualiteit'
+        drag_day: 'Dag van de drag'
+        idahobit: 'Internationale dag tegen homofobie, bifobie en transfobie'
+        intersex_day: 'Dag van aandacht voor intersekse personen'
+        intersex_remembrance_day: 'Internationale intersekse gedenkdag'
+        lesbian_day: 'International dag van lesbische personen'
+        lesbian_visibility_day: 'Lesbische zichtbaarheidsdag'
+        coming_out_day: 'Dag van de coming out'
+        nonbinary_day: 'Internationale dag van non-binaire personen'
+        pan_day: 'Dag van aandacht voor panseksuele en panromantische personen'
+        trans_remembrance_day: 'Internationale transgender gedenkdag'
+        trans_visibility_day: 'Internationale dag van transgender zichtbaarheid'
         zero_discrimination_day: 'Antidiscriminatiedag'
         arospec_week: 'Week van de zichtbaarheid van het aromantisch spectrum'
-        asexual_week: 'Asexual Awareness Week'
-        bisexual_week: 'Bisexual Awareness Week'
-        pronouns_day: 'Pronouns Day'
-        trans_week: 'Trans Awareness Week'
-        trans_parent_day: 'Trans Parent Day'
-        nonbinary_week: 'Nonbinary Awareness Week'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: 'Polyamory Day'
-        homophobia_sport: 'Internationale dag tegen homofobie in sport'
-        gay_uncles_day: 'Gay Uncles Day'
-        lgbtq_stem: 'LGBTQ+ STEM Day'
-        trans_depathologization: 'International Day of Action for Trans Depathologization'
-        lgbti_book_day: 'International LGBTI Book Day'
-        human_rights_day: 'Dag van de Mensenrechten'
-        nonbinary_parents_day: 'Nonbinary Parents Day'
-        trans_prisoner: 'Transgender Prisoner Day of Action and Solidarity'
-        xenogender_day: 'Xenogender Visibility Day'
-        genderqueer_day: 'Genderqueer Visibility Day'
-        genderfluid_day: 'Genderfluid Visibility Day'
+        asexual_week: 'Week van aandacht voor aseksuele personen'
+        bisexual_week: 'Week van aandacht voor biseksuele personen'
+        pronouns_day: 'Dag van de voornaamwoorden'
+        trans_week: 'Week van aandacht voor transgender personen'
+        trans_parent_day: 'Week van de transgender ouders'
+        nonbinary_week: 'Week van aandacht voor non-binaire personen'
+        nonbinary_week___timeDescription: 'In de week (ma-zo) rondom 13 juli.'
+        polyamory_day: 'Dag van de polyamorie. '
+        homophobia_sport: 'Internationale dag tegen homofobie in de sport'
+        gay_uncles_day: 'Homoseksuele oom dag'
+        lgbtq_stem: 'LHBTQ+ STEM dag'
+        trans_depathologization: 'Internationale dag van actie voor transgender depathologisatie'
+        lgbti_book_day: 'Internationale LHBTI boeken dag'
+        human_rights_day: 'Dag van de mensenrechten'
+        nonbinary_parents_day: 'Dag van de non-binaire ouders'
+        trans_prisoner: 'Dag van actie en solidariteit voor transgender gevangenen'
+        xenogender_day: 'Dag van aandacht voor xenogender personen'
+        genderqueer_day: 'Dag van aandacht voor genderqueer personen'
+        genderfluid_day: 'Dag van aandacht voor genderfluide personen'
         aids_day: 'Wereldaidsdag'
-        tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'Werelddag voor Sociale Rechtvaardigheid'
-        stonewall_day: 'Anniversary of Stonewall Riots'
-        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
-        orlando_day: 'Pulse Night of Remembrance'
-        aids_memorial: 'International AIDS Candlelight Memorial'
-        health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: 'Lesbian Visibility Week'
-        demigender_day: 'Demigender Awareness Day'
-        pan_pride_day: 'Pansexual Pride Day'
-        transmasculine_day: 'Dag van transmasculiene personen'
-        asexual_visibility_day: 'Asexual Visibility Day'
-        bi_health_month: 'Bisexual Health Awareness Month'
-        holocaust_remembrance_day: 'Den Internasjonale Holocaustdagen'
-        family_equality_day: 'International Family Equality Day'
+        tolerance_day: 'Internationale dag van tolerantie'
+        social_justice_day: 'Werelddag voor sociale rechtvaardigheid'
+        stonewall_day: 'Jubileum van de Stonewall rellen'
+        domestic_violence: 'Dag van aandacht voor LHBTQ slachtoffers van huiselijk geweld'
+        polysexual_day: 'Dag van aandacht voor polyseksuele & polyromantische personen'
+        orlando_day: 'Herdenkingsnacht voor Pulse'
+        aids_memorial: 'Internationale AIDS kaarslichtherdenking'
+        health_week: 'Week van aandacht voor LHBT gezondheid'
+        lesbian_visibility_week: 'Week van aandacht voor lesbische personen'
+        demigender_day: 'Week van aandacht voor demigender personen'
+        pan_pride_day: 'Dag van de panseksuele pride'
+        transmasculine_day: 'Dag van de transmasculiene strijd en weerstand'
+        asexual_visibility_day: 'Dag van aandacht voor aseksuele personen'
+        bi_health_month: 'Maand voor aandacht voor biseksuele gezondheid'
+        holocaust_remembrance_day: 'Dag van de Holocaust herdenking'
+        family_equality_day: 'Internationale dag van de gelijkheid van families'
         aro_month: 'Maand van de aromantische zichtbaarheid'
-        black_ribbon_day: 'Europese Herdenkingsdag voor de Slachtoffers van het Stalinisme en het Nazisme'
+        black_ribbon_day: 'Europese herdenkingsdag voor de Slachtoffers van het Stalinisme en het Nazisme'
         black_queer_week: 'Week van de zwarte queer geschiedenis'
-        mena_lesbian_day: 'Middle Eastern and North African Lesbian and Queer Women''s Pride Day'
-        hate_crime_awareness_week: 'Hate Crime Awareness Week'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'Wereld Suïcide Preventie Dag'
-        suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'Maand van de Voorlichting van AIDS'
-        genderfluid_week: 'Genderfluid Awareness Week'
-        pan_week: 'Pan Week'
-        parents_day: 'Gender Expansive Parents'' Day'
-        hiv_testing_day: 'International HIV Testing Day'
-        freedressing_day: 'Freedressing Awareness Day'
+        mena_lesbian_day: 'Midden-Oosterse en Noord-Afrikaanse lesbische en queer vrouwen pride dag'
+        hate_crime_awareness_week: 'Week van de aandacht voor haatmisdrijven'
+        deaf_awareness_week: 'Week van de aandacht voor dove lHBTQ personen'
+        suicide_prevention_day: 'Wereld suïcide preventie dag'
+        suicide_prevention_month: 'Suïcide preventie maand'
+        aids_awareness_month: 'Maand van de AIDS voorlichting'
+        genderfluid_week: 'Week van de aandacht voor genderfluïde personen'
+        pan_week: 'Pan week'
+        parents_day: 'Dag van de gender inclusieve ouders'
+        hiv_testing_day: 'Internationale dag van HIV testen'
+        freedressing_day: 'Dag van de vrijheid om '
         sexual_health_day: 'Dag van de seksuele- en voortplantingsgezondheid'
-        world_sexual_health_day: 'Internationale dag van de seksuele gezondheid'
+        aids_vaccine_day: 'Wereld dag van de AIDS vaccines'
+        queer_youth_day: 'Dag van de queer jongeren'
+        ominsexual_day: 'Dag van de aandacht voor omniseksuele personen'
+        unlabeled_day: 'Dag van de aandacht voor ongelabelde personen'
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO         
     banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
     celebrating_day: 'wordt gevierd op:'
@@ -992,3 +1014,7 @@ calendar:
         list: 'Evenementenlijst'
     link: 'Link'
     full: 'Volledige kalender'
+
+ukraine:
+    header: 'Wij staan met Oekraïne.'
+    link: '{https://supportukrainenow.org/translate-and-share-this/praktische-manieren-waarop-jij-als-buitenlander-oekrane-kan-helpen=Hier is hoe je kunt helpen.}'

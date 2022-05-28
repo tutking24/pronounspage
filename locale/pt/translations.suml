@@ -427,6 +427,12 @@ user:
             Registrar-se te permite dirigir os cartões ({/@example=como esta}).
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instância'
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            Este não é um provedor de autenticação confiável.
+            <a href="%link%" target="_blank" rel="noopener">Clique neste link para mais detalhes</a>.
+            Nós recomendamos fortemente que você também tenha um método secundário para fazer login.
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
@@ -489,8 +495,16 @@ profile:
     flagsInfo: 'Arrasta as bandeiras de orgulho para este ponto.'
     flagsCustom: 'Enviar bandeira personalizada'
     flagsCustomWarning: 'Esta bandeira foi enviada por ume usuárie. O time da pronouns.page não é responsável por este conteúdo.'
+    flagsAsterisk: 'Esta não é uma identidade queer, mas nós também a incluímos para pessoas que são queer de outras formas (por exemplo, pessoas trans que são heterossexuais).'
     links: 'Links'
     linksRecommended: 'Recomendamos linkar com'
+    verifiedLinks:
+        header: 'Links Verificados'
+        info: >
+            Os links colocados publicamente em um perfil serão sinalizados com o ícone de escudo,
+             se forem verificados fazendo login usando o provedor de autenticação fornecido,
+            ou (under construction) por uma tag <code>rel="me"</code>  apontando para o cartão.
+            Nossos links também incluem uma tag <code>rel="me"</code> para que websites externos também possam verificar seu cartão.
     column: 'Coluna'
 
     list: 'Os cartões'
@@ -980,6 +994,18 @@ calendar:
         freedressing_day: 'Dia da Liberdade de Vestimenta'
         sexual_health_day: 'Dia da Conscientização sobre Saúde Sexual e Reprodutiva'
         world_sexual_health_day: 'Dia Mundial de Saúde Sexual'
+        aids_vaccine_day: 'Dia Mundial da Vacina Contra a Aids/Sida'
+        queer_youth_day: 'Dia da Juventude Queer'
+        ominsexual_day: 'Dia da Visibilidade Omnissexual'
+        unlabeled_day: 'Dia da Visibilidade de Pessoas sem Etiqueta'  
+        trans_youth_day: 'Dia da Visibilidade de Crianças e Adolescentes Trans'
+        hiv_long_term_survivors_day: 'Dia de Conscientização para Sobreviventes de Longo Prazo do HIV/VIH'
+        women_hiv_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) entre as Mulheres e Meninas'
+        youth_hiv_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) entre os Jovens'
+        gay_hiv_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) entre os Homems Gays'
+        black_hiv_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) entre as Pessoas Negras'
+        hiv_aging_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) e Envelhecimento'
+        trans_hiv_testing_day: 'Dia do teste de HIV/VIH para as Pessoas Trans'
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
     celebrating_day: 'celebra-se em'
@@ -992,3 +1018,7 @@ calendar:
         list: 'Lista de eventos'
     link: 'Link'
     full: 'Calendário completo'
+
+ukraine:
+    header: 'Nós estamos com a Ucrânia.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Aqui você pode saber como ajudar o povo ucraniano também.}'

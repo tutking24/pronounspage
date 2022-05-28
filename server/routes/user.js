@@ -250,6 +250,29 @@ const router = Router();
 
 router.use(handleErrorAsync(reloadUser));
 
+export const loadCurrentUser = async (req, res) => {
+    if (!req.user) {
+        res.clearCookie('token');
+        return res.json(null);
+    }
+
+    let dbUser = await req.db.get(SQL`SELECT * FROM users WHERE id = ${req.user.id}`);
+
+    if (!dbUser) {
+        res.clearCookie('token');
+        return res.json(null);
+    }
+
+    const token = await issueAuthentication(req.db, dbUser, false);
+    res.cookie('token', token, cookieSettings);
+    req.rawUser = jwt.validate(token);
+    req.user = req.rawUser;
+
+    return res.json({...req.user, token});
+};
+
+router.get('/user/current', handleErrorAsync(loadCurrentUser));
+
 router.post('/user/init', handleErrorAsync(async (req, res) => {
     if (req.body.usernameOrEmail && isSpam(req.body.usernameOrEmail || '')) {
         req.socket.end();
@@ -289,6 +312,10 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
 
     if (!await validateEmail(payload.email)) {
         return res.json({ error: 'user.account.changeEmail.invalid' })
+    }
+
+    if (await lookupBanArchive(req.db, 'email', payload)) {
+        throw 'banned';
     }
 
     let codeKey;

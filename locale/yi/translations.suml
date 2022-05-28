@@ -395,6 +395,13 @@ user:
             Registering lets you manage your cards ({/@example=like this one}).
         passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instance' # TODO
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Validate'
         invalid: 'Invalid code.'
@@ -464,6 +471,14 @@ profile:
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'  # TODO
     links: 'פֿאַרבינדונגען'
     linksRecommended: 'We recommend linking to'  # TODO
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Column'
 
     list: 'דײַנע‎ װיזיט־⁠קאַרטלעך'
@@ -818,4 +833,8 @@ flags:
     Tumtum: 'טומטום‎'
     Two_Spirit: 'צװײ נשמות'
     Xenogender: 'פֿרעמדמיניק'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
 

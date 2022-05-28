@@ -495,6 +495,13 @@ user:
             등록하면 카드를 ({/@example=이렇게}) 관리할 수 있습니다.
         passwordless: '웹사이트는 비밀번호를 저장하지 않습니다. {https://avris.it/blog/passwords-are-passé=추가 정보.}'
         instancePlaceholder: '사례'
+        # TODO
+        domainPlaceholder: 'Domain'
+        deprecated: 'Deprecated'
+        depreciationNotice: >
+            This is not a reliable authentication provider.
+            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
+            We highly recommend making sure that you have a different login method available.
     code:
         action: '확인'
         invalid: '유효하지 않은 코드'
@@ -561,8 +568,17 @@ profile:
     flagsInfo: '이 프레임에 프라이드 플래그를 끌어다 놓세요.'
     flagsCustom: '맞춤 플래그 업로드'
     flagsCustomWarning: '이 플래그는 사용자가 업로드했습니다. pronouns.page 팀은 이에 대한 책임을 지지 않습니다.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: '링크'
     linksRecommended: '여기 연결하는 것이 좋습니다.'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '열'
 
     header: '카드'
@@ -1020,3 +1036,7 @@ calendar:
         labels: '라벨'
     link: '링크'
     full: '전체 캘린더'
+
+ukraine:
+    header: 'We stand with Ukraine.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'

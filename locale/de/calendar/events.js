@@ -2,7 +2,7 @@ const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/cal
 
 module.exports = [
     // --- months ---
-    new Event('{https://queerhistory.de=Queer History Month} (Monat der queeren Geschichte)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('{https://queerhistory.de=Queer History Month} (Monat der queeren Geschichte) in Deutschland und Kuba', 'Progress Pride', 5, month, EventLevel.Month),
     new Event('Jahrestag der Ehe für alle in Deutschland', '_hrc', 10, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Österreich', '_hrc', 1, day(1), EventLevel.Day),
     new Event('Jahrestag der Ehe für alle in Belgien', '_hrc', 6, day(1), EventLevel.Day),

@@ -263,6 +263,10 @@ links:
             icon: 'book-open'
             url: 'https://www.psychiatry.org/psychiatrists/cultural-competency/education/transgender-and-gender-nonconforming-patients/definitions-and-pronoun-usage'
             headline: 'American Psychiatric Association – Definitions of Gender, Sex, and Sexual Orientation and Pronoun Usage'
+        -
+            icon: 'chart-pie'
+            url: 'https://www150.statcan.gc.ca/n1/daily-quotidien/220427/dq220427b-eng.htm'
+            headline: 'Canada is the first country to provide census data on transgender and non-binary people'
 
     academic: []
     mediaGuests: []

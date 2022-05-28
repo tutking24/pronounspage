@@ -44,7 +44,7 @@ module.exports = [
     new Event('tolerance_day', null, 11, day(16), EventLevel.Day),
     new Event('social_justice_day', null, 2, day(20), EventLevel.Day, ['progress pride']),
     new Event('stonewall_day', 'Progress Pride', 6, day(28), EventLevel.Day, ['pride parade']),
-    new Event('domestic_violence', null, 5, day(25), EventLevel.Day, ['lgbtq']),
+    new Event('domestic_violence', null, 5, day(28), EventLevel.Day, ['lgbtq']),
     new Event('polysexual_day', 'Polysexual', 7, day(26), EventLevel.Day, ['polysexual', 'polyromantic']),
     new Event('orlando_day', '_black-ribbon', 6, day(12), EventLevel.Day, ['homophobia']),
     new Event('demigender_day', 'Demigender', 12, day(15), EventLevel.Day, ['demigender', 'demiboy', 'demigirl', 'deminonbinary', 'demineutrois', 'demifluid']),
@@ -59,6 +59,18 @@ module.exports = [
     new Event('freedressing_day', 'Genderqueer', 12, day(3), EventLevel.Day, ['genderqueer', 'gender non-conforming']),
     new Event('sexual_health_day', null, 2, day(12), EventLevel.Day),
     new Event('world_sexual_health_day', null, 9, day(4), EventLevel.Day),
+    new Event('aids_vaccine_day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
+    new Event('ominsexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
+    new Event('queer_youth_day', 'LGBTQ', 6, day(30), EventLevel.Day),
+    new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),    
+    new Event('hiv_long_term_survivors_day', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
+    new Event('women_hiv_awareness_day', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
+    new Event('youth_hiv_awareness_day', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),
+    new Event('gay_hiv_awareness_day', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids']),
+    new Event('black_hiv_awareness_day', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
+    new Event('hiv_aging_awareness_day', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
+    new Event('trans_hiv_testing_day', '_red-ribbon', 4, day(18), EventLevel.Day, ['aids']),
+    new Event('trans_youth_day', 'Transgender', 5, day(14), EventLevel.Day, ['transgender']),
 
     // --- dynamic date ---
 
@@ -199,15 +211,29 @@ module.exports = [
     }), EventLevel.Week),
 
     new Event('lesbian_visibility_week', 'Lesbian', 4, week(function* (monthDays) {
-        let lastDay = null;
+        let buffer = [];
+        const ret = [];
         for (let d of monthDays) {
             if (d.day >= 26) {
-                yield d;
+                for (let dd of buffer) {
+                    ret.push(dd);
+                }
+                buffer = [];
+                ret.push(d);
+                continue;
             }
-            lastDay = d;
+
+            if (d.dayOfWeek === 1) {
+                buffer = [];
+            }
+            buffer.push(d);
         }
-        yield new Day(lastDay.year, 5, 1);
-        yield new Day(lastDay.year, 5, 2);
+
+        let i = 1;
+        while (ret.length < 7) {
+            ret.push(new Day(ret[0].year, 5, i++))
+        }
+        yield* ret;
     }), EventLevel.Week, ['lesbian']),
 
     // first Sunday of May

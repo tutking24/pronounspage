@@ -1,9 +1,9 @@
 <template>
     <span>
-        <span ref="original" v-show="!$isGranted('users')">
+        <span ref="original" v-show="!$isGranted('users') || !hasSus">
             <slot ref="original"></slot>
         </span>
-        <span ref="marked" v-show="$isGranted('users')"></span>
+        <span ref="marked" v-show="$isGranted('users') && hasSus"></span>
     </span>
 </template>
 
@@ -12,6 +12,7 @@ export default {
     data() {
         return {
             moderation: null,
+            hasSus: false,
         }
     },
     async mounted() {
@@ -36,7 +37,10 @@ export default {
 
             let html = this.$refs.original.innerHTML;
             for (let sus of this.moderation.susRegexes) {
-                html = html.replace(new RegExp(sus, 'gi'), m => `<mark>${m}</mark>`);
+                html = html.replace(new RegExp(sus, 'gi'), m => {
+                    this.hasSus = true;
+                    return `<mark>${m}</mark>`;
+                });
             }
             this.$refs.marked.innerHTML = html;
         },

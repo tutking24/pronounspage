@@ -8,7 +8,7 @@ home:
     headerLong: 'Lista zaimków'
     welcome: 'Witamy na stronie zaimki.pl!'
     intro: >
-        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym i neutralnym płciowo.
+        Tworzymy tu wszechstronne kompendium wiedzy o języku niebinarnym, neutralnym płciowo i inkluzywnym.
     why: 'Skąd potrzeba niebinarnych zaimków?'
     about:
         - >
@@ -22,7 +22,7 @@ home:
         - >
             Dlaczego należy je respektować?
             Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
-            Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+            Nie powiesz do Ani „Franku”, nie powiesz „na ty” do osoby, z którą jesteś „na pan”, itp.
             A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
             Czy to uszanujesz, świadczy wyłącznie o Tobie.
         - >
@@ -116,7 +116,7 @@ sources:
         header: 'Zgłoś przykład do dodania'
         action: 'Zgłoś'
         pronouns: 'Które zaimki/formy są użyte?'
-        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. “onu”, “ono/jej”, “on&ona”'
+        pronounsInfo: 'Wpisz prostą formę, tak jak w adresie zaimka, np. „onu”, „ono/jej”, „on&ona”'
         type: 'Rodzaj źródła kultury'
         author: 'Osoba autorska'
         title: 'Tytuł'
@@ -334,6 +334,8 @@ inclusive:
             jakich konstrukcji lepiej unikać i dlatego, oraz czym je zastępować.
     categories: 'Kategorie'
     sources: 'Linki źródłowe'
+    clarification: 'Załącz wyjaśnienie'
+    clarificationDefault: 'Chodzi oczywiście o użycie w tym pejoratywnym znaczeniu. Nie mówimy, żeby zupełnie nie używać tego określenia.'
 
 terminology:
     header: 'Terminologia'
@@ -406,7 +408,7 @@ faq:
             answer:
                 - >
                     Bo zwracanie się do kogoś tak, jak sobie życzy, jest podstawą relacji społecznych.
-                    Nie powiesz do Ani “Franku”, nie powiesz “na ty” do osoby, z którą jesteś “na pan”, itp.
+                    Nie powiesz do Ani „Franku”, nie powiesz „na ty” do osoby, z którą jesteś „na pan”, itp.
                     A są osoby, które nie chcą, by im mówić „{/on=on}” ani „{/ona=ona}”.
                     Czy to uszanujesz, świadczy wyłącznie o Tobie.
                 - >
@@ -1089,7 +1091,7 @@ english:
     intro:
         - >
             Polish is a strongly gendered language:
-            even saying something as simple as “I did” requires specifying which gender you are.
+            even saying something as simple as “I did” or “I'm hungry” requires specifying which gender you are.
         - >
             It's problematic for nonbinary people,
             because we cannot simply switch one set of pronouns for another to express our identity.
@@ -1196,6 +1198,12 @@ user:
             Założenie konta pozwala na zarządzanie swoimi wizytówkami ({/@example=takimi jak ta}).
         passwordless: 'Strona nie zapisuje żadnych haseł. {https://avris.it/blog/passwords-are-passé=Więcej info.}'
         instancePlaceholder: 'Instancja'
+        domainPlaceholder: 'Domena'
+        deprecated: 'Odradzane'
+        depreciationNotice: >
+            Ten dostawca uwierzytelniania nie jest godny zaufania.
+            <a href="%link%" target="_blank" rel="noopener">Więcej szczegółów pod tym linkiem</a>.
+            Mocno polecamy włączenie innej metody uwierzytelniania.
     code:
         action: 'Sprawdź'
         invalid: 'Kod nieprawidłowy.'
@@ -1258,8 +1266,16 @@ profile:
         Więcej informacji o etykietkach znajdziesz w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
+    flagsAsterisk: 'To nie jest queerowa tożsamość, ale uwględniamy ją tutaj przez wzgląd na osoby, które są queerowe na inne sposoby (np. hetero osoby trans).'
     links: 'Linki'
     linksRecommended: 'Polecamy dodać link do'
+    verifiedLinks:
+        header: 'Potwierdzone linki'
+        info: >
+            Linki umieszczone publicznie w profilu otrzymują znaczek tarczy,
+            jeśli zostały zweryfikowane za pomocą logowania przez danego dostawcę uwierzytelniania,
+            albo (ficzer w budowie) poprzez umieszczenie tagu <code>rel="me"</code> wskazującego z powrotem na wizytówkę.
+            Nasze linki również umieszczają <code>rel="me"</code>, aby zewnętrzne strony mogły potwierdzić wizytówkę również w odwrotną stronę.
     column: 'Kolumna'
 
     header: 'Wizytówki'
@@ -1593,7 +1609,7 @@ report:
     confirm: 'Czy na pewno chcesz zgłosić profil @%username%?'
     sent: 'Twoje zgłoszenie zostało wysłane. Dziękujemy za pomoc!'
     terms: 'Pamiętaj, czego zabrania nasz {/regulamin=Regulamin}'
-    hoarding: 'Prosimy, nie zgłaszaj profilów za “zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
+    hoarding: 'Prosimy, nie zgłaszaj profilów za „zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
 
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
@@ -1804,6 +1820,18 @@ calendar:
         freedressing_day: 'Dzień Swobodnego Ubioru'
         sexual_health_day: 'Dzień Świadomości nt. Zdrowia Seksualnego i Reprodukcyjnego'
         world_sexual_health_day: 'Światowy Dzień Zdrowia Seksualnego'
+        aids_vaccine_day: 'Światowy Dzień Szczepionki na AIDS'
+        queer_youth_day: 'Dzień Queerowej Młodzieży'
+        ominsexual_day: 'Dzień Widoczności Osób Omniseksualnych'
+        unlabeled_day: 'Dzień Widoczności Osób Bez Etykiety'
+        trans_youth_day: 'Dzień Widoczności Dzieci i Młodzieży Trans'
+        hiv_long_term_survivors_day: 'Dzień Świadomości nt. Długotrwałego Życia z HIV'
+        women_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Kobiet i Dziewczyn'
+        youth_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS wśród Młodzieży'
+        gay_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Gejów'
+        black_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Osób Czarnych'
+        hiv_aging_awareness_day: 'Dzień Świadomości nt. Starzenia się z HIV/AIDS'
+        trans_hiv_testing_day: 'Dzień Testów na HIV u Osób Transpłciowych'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
@@ -1816,3 +1844,7 @@ calendar:
         list: 'Lista wydarzeń'
     link: 'Link'
     full: 'Pełen kalendarz'
+
+ukraine:
+    header: 'Solidaryzujemy się z Ukrainą.'
+    link: '{https://how-you-can-support-ukraine.super.site/jak-moesz-wesprze-ukrain-1=Tutaj znajdziesz informacje, jak ją wesprzeć.}'

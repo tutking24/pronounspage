@@ -9,16 +9,18 @@
             </router-link>
         </p>
 
-        <Twemoji>
+        <Spelling v-if="disableTwemoji" :text="content"/>
+        <Twemoji v-else>
             <Spelling :text="content"/>
         </Twemoji>
 
-        <Separator icon="heart"/>
-        <Support/>
-
-        <section>
-            <Share :title="title"/>
-        </section>
+        <div class="d-print-none">
+            <Separator icon="heart"/>
+            <Support/>
+            <section>
+                <Share :title="title"/>
+            </section>
+        </div>
     </div>
 </template>
 
@@ -27,6 +29,11 @@
     import parseMarkdown from '../src/parseMarkdown';
 
     export default {
+        data() {
+            return {
+                selGroup: 'general',
+            }
+        },
         async asyncData({route}) {
             return parseMarkdown((await import(`../data/blog/${route.params.slug || route.meta[0].slug}.md`)).default);
         },
@@ -44,6 +51,9 @@
     @import "assets/variables";
 
     .blog-post {
+        hyphens: auto;
+        text-align: justify;
+
         img {
             max-width: 100%;
         }

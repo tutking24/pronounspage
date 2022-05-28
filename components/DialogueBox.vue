@@ -2,7 +2,13 @@
     <div :class="['modal', shown ? 'd-block' : '', shownFull ? 'modal-shown' : '']" @click="hideClick">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content shadow">
-                <div class="modal-header" v-if="choice">
+                <div class="modal-header" v-if="header">
+                    <p class="h5 modal-title">
+                        <Icon v-if="icon" :v="icon"/>
+                        {{header}}
+                    </p>
+                </div>
+                <div class="modal-header" v-else-if="choice">
                     <p class="h5 modal-title">
                         <Icon v="map-marker-question"/>
                         {{$t('confirm.header')}}
@@ -36,6 +42,8 @@
                 shown: false,
                 shownFull: false,
                 choice: false,
+                icon: undefined,
+                header: undefined,
                 message: undefined,
                 resolve: undefined,
                 reject: undefined,
@@ -64,7 +72,14 @@
         methods: {
             show(choice, message, color, resolve, reject) {
                 this.choice = choice;
-                this.message = message;
+                if (typeof(message) === 'string') {
+                    this.header = undefined;
+                    this.message = message;
+                } else {
+                    this.icon = message.icon;
+                    this.header = message.header;
+                    this.message = message.message;
+                }
                 this.resolve = resolve;
                 this.reject = reject;
                 this.color = color;
@@ -90,6 +105,8 @@
                 setTimeout(() => {
                     this.shown = false;
                     this.choice = false;
+                    this.icon = undefined;
+                    this.header = undefined;
                     this.message = undefined;
                     this.resolve = undefined;
                     this.reject = undefined;

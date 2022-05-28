@@ -39,7 +39,9 @@
                         <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
                               :alt="allFlags[flag]"
                               :img="`/flags/${flag}.png`"
-                              :terms="terms || []"/>
+                              :terms="terms || []"
+                              :asterisk="flagsAsterisk.includes(flag)"
+                        />
                     </li>
                     <li v-for="(desc, flag) in profile.customFlags" class="list-inline-item p-1">
                         <Flag :name="desc"
@@ -126,7 +128,8 @@
                 allFlags: process.env.FLAGS,
                 glue: ' ' + this.$t('pronouns.or') + ' ',
                 minAge: parseInt(process.env.MIN_AGE),
-            }
+                flagsAsterisk: process.env.FLAGS_ASTERISK,
+            };
         },
         computed: {
             pronounOpinions() {

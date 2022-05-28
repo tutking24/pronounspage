@@ -1,11 +1,13 @@
-const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/calendar/helpers");
+const {Event, day, week, month, dayYear, EventLevel, weekStarting} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
     new Event('Miesiąc Historii LGBTQ+ (UK/Węgry/Niderlandy)', 'Progress Pride', 2, month, EventLevel.Month),
-    new Event('Miesiąc Historii LGBTQ+ (UA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('Miesiąc Historii LGBTQ+ (Irlandia/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
+    new Event('Miesiąc Historii LGBTQ+ (USA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
     // --- static date ---
@@ -16,15 +18,11 @@ module.exports = [
     new Event('Dzień Pamięci Milo Mazurkiewicz', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Dzień Dziabka}', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
-    new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Dzień Testów na HIV u Osób Transpłciowych} (USA)', 'Transgender', 4, day(18), EventLevel.Day, ['aids', 'transgender']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Dzień Świadomości HIV/AIDS u Osób Czarnych} (USA/Kanada)', '_red-ribbon', 2, day(7), EventLevel.Day, ['aids']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Dzień Świadomości HIV/AIDS u Gejów} (USA)', '_red-ribbon', 9, day(27), EventLevel.Day, ['aids', 'gay']),
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nhaad.html=Dzień Świadomości Starzenia się z HIV/AIDS} (USA/Kanada)', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Dzień Świadomości HIV/AIDS wśród Młodzieży} (USA)', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),    
-    new Event('{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Dzień Świadomości HIV/AIDS u Kobiet i Dziewczyn} (USA/Kanada)', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
+    new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
-    new Event('{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=Dzień Świadomości Długotrwałego Życia z HIV} (US)', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
+    new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
@@ -45,8 +43,25 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1066052000600920=II Marsz Równości w Białymstoku}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
     new Event('{http://marszlublin.pl/=III Marsz Równości w Lublinie}', 'LGBTQ', 10, dayYear(23, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),    
+    new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/778731303070898=VII Trójmiejski Marsz Równości}', 'LGBTQ', 5, dayYear(28, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/620469522712842=3. Marsz Równości w Koszalinie}', 'LGBTQ', 4, dayYear(2, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/MarszRownosciGniezno=II Marsz Równości w Gnieźnie}', 'LGBTQ', 5, dayYear(7, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1010798579854725/=11. Marsz Równości w Łodzi}', 'LGBTQ', 5, dayYear(14, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/queerowymaj/=Krakowski Marsz Równości}', 'LGBTQ', 5, dayYear(21, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/634419277601853=I Marsz Równości w Sanoku}', 'LGBTQ', 6, dayYear(4, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/4701525936612004=V Marsz Równości w Zielonej Górze}', 'LGBTQ', 6, dayYear(4, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/670481497600736=Parada Równości 2022} (Warszawa)', 'LGBTQ', 6, dayYear(25, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1014397512828851/=Marsz Równości w Poznaniu}', 'LGBTQ', 7, dayYear(2, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/queerce=Marsz Równości w Kielcach}', 'LGBTQ', 7, dayYear(9, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1593099004379743=IV Marsz Równości w Opolu}', 'LGBTQ', 7, dayYear(16, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/698107478207024=3. Marsz Równości na Woodstocku} (Czaplinek)', 'LGBTQ', 8, dayYear(6, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 8, dayYear(20, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/413636720098790/=I Marsz Równości w Miliczu}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1462034324230653/=1. Transgraniczny Marsz Równości Gryfino-Mescherin}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
+    new Event('Marsz Równości {https://www.facebook.com/events/1462034324230653/=Słubice-Frankfurt-Pride}', 'LGBTQ', 9, dayYear(4, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/wolnoscrownosctolerancja/=II Wodzisławski Marsz Równości}', 'LGBTQ', 8, dayYear(27, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/Bielski-Marsz-R%C3%B3wno%C5%9Bci-108906844819983/=II Bielski Marsz Równości}', 'LGBTQ', 7, dayYear(3, 2022), EventLevel.Day),
 
     // --- dynamic date ---
 
@@ -70,7 +85,7 @@ module.exports = [
             }
         }
         yield lastFriday;
-    }, EventLevel.Day),    
+    }, EventLevel.Day),
 
     // last Friday of February
     new Event('Fioletowy Piątek (UK)', null, 2, function* (monthDays) {

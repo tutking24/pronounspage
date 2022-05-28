@@ -32,6 +32,7 @@ module.exports.config = {
     },
     // non-grant, but things break if it's not there
     mastodon: {},
+    indieauth: {},
 }
 
 module.exports.handlers = {
@@ -84,6 +85,15 @@ module.exports.handlers = {
             name: acct,
             avatar: r.profile.avatar,
             access_token: r.access_token,
+            instance: r.instance,
         };
+    },
+    indieauth(r) {
+        return {
+            id: r.profile.me,
+            email: 'indieauth@' + r.profile.domain,
+            name: r.profile.domain,
+            instance: r.instance,
+        }
     },
 };

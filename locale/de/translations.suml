@@ -113,7 +113,7 @@ sources:
         key: 'Schlüssel'
         keyInfo: 'Kennzeichen, um Quellen zwischen Sprachversionen und dem Wörterbuch zu verbinden'
         images: 'Bilder'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler'
     otherVersions: 'In anderen Sprachen'
     referenced: 'Beispiele zur Benutzung'
 
@@ -421,6 +421,12 @@ user:
             Mit der Registrierung kannst du deine Visitenkarten verwalten ({/@example=wie diese}).
         passwordless: 'Die Website speichert keine Passwörter. {https://avris.it/blog/passwords-are-passé=Weitere Infos.}'
         instancePlaceholder: 'Instanz'
+        domainPlaceholder: 'Domain'
+        deprecated: 'Abgeraten'
+        depreciationNotice: >
+            Dieser Authentifizierungsanbieter ist nicht zuverlässig.
+            <a href="%link%" target="_blank" rel="noopener">Mehr Infos findest du unter folgendem Link</a>.
+            Wir empfehlen dringend eine andere Authentifizierungsmethode zu aktivieren.
     code:
         action: 'Validieren'
         invalid: 'Ungültiger Code.'
@@ -483,8 +489,17 @@ profile:
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
     flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
+    # TODO
+    verifiedLinks:
+        header: 'Verified links'
+        info: >
+            The links that one puts publicly in one's profile will be marked with the shield icon,
+            if they are verified by logging in using the given authentication provider,
+            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
+            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Spalte'
 
     list: 'Deine Visitenkarten'
@@ -958,6 +973,18 @@ calendar:
         freedressing_day: 'Bewusstseinstag für genderunabhängiges Kleiden'
         sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
         world_sexual_health_day: 'Welttag Sexuelle Gesundheit'
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexueller Sichtbarkeitstag'
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                      
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
@@ -970,3 +997,7 @@ calendar:
         list: 'Ereignisliste'
     link: 'Link'
     full: 'Ganzer Kalender'
+
+ukraine:
+    header: 'Wir stehen der Ukraine bei.'
+    link: '{https://how-you-can-support-ukraine.super.site/de-wie-sie-der-ukraine-helfen-knnen-1/=Wie du beisteuern kannst.}'
