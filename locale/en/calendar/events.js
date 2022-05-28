@@ -67,10 +67,9 @@ module.exports = [
     new Event('{https://en.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} Day of Remembrance (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('{https://tdor.translivesmatter.info/reports/2019/05/06/milo-mazurkiewicz_warsaw-masovia-poland_9a028d4a=Milo Mazurkiewicz} Day of Remembrance (Poland)', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
     new Event('Marriage Equality Day (Germany)', '_hrc', 10, day(1), EventLevel.Day),
-    new Event('Marriage Equality Day (Austria)', '_hrc', 1, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Austria/Luxembourg/Norway)', '_hrc', 1, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Belgium)', '_hrc', 6, day(1), EventLevel.Day),
-    new Event('Marriage Equality Day (Luxembourg)', '_hrc', 1, day(1), EventLevel.Day),
-    new Event('Marriage Equality Day (Switzerland)', '_hrc', 7, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Faroe Islands/Switzerland)', '_hrc', 7, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Spain)', '_hrc', 7, day(3), EventLevel.Day),
     new Event('Marriage Equality Day (Argentina)', '_hrc', 7, day(15), EventLevel.Day),
     new Event('Marriage Equality Day (Uruguay)', '_hrc', 8, day(5), EventLevel.Day),
@@ -83,6 +82,13 @@ module.exports = [
     new Event('Marriage Equality Day (France)', '_hrc', 5, day(18), EventLevel.Day),
     new Event('Marriage Equality Day (Sweden)', '_hrc', 5, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Finland)', '_hrc', 3, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (South Africa)', '_hrc', 11, day(30), EventLevel.Day),
+    new Event('Marriage Equality Day (Iceland)', '_hrc', 6, day(27), EventLevel.Day),
+    new Event('Marriage Equality Day (Denmark)', '_hrc', 6, day(15), EventLevel.Day),
+    new Event('Marriage Equality Day (Greenland)', '_hrc', 4, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Malta)', '_hrc', 9, day(1), EventLevel.Day),
+    new Event('Marriage Equality Day (Taiwan)', '_hrc', 5, day(24), EventLevel.Day),
+    new Event('Marriage Equality Day (Chile)', '_hrc', 3, day(10), EventLevel.Day),
 
     // --- dynamic date ---
 
