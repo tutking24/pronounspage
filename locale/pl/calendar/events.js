@@ -20,8 +20,8 @@ module.exports = [
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
     new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
-    new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian']),
-    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian']),    
+    new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),    
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
 
     // --- one-off events ---
