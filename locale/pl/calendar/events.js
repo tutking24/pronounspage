@@ -1,13 +1,13 @@
-const {Event, day, week, month, dayYear, EventLevel} = require("../../../src/calendar/helpers");
+const {Event, day, week, month, dayYear, EventLevel, weekStarting} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---
     new Event('{/spis=Niebinarny Spis Powszechny}', 'Nonbinary', 2, month, EventLevel.Month, ['nonbinary']),
     new Event('Miesiąc Historii LGBTQ+ (UK/Węgry/Niderlandy)', 'Progress Pride', 2, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (USA/Kanada/Australia)', 'Progress Pride', 10, month, EventLevel.Month),
-    new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),    
-    new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),    
-    new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),        
+    new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
+    new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
 
     // --- static date ---
@@ -18,10 +18,10 @@ module.exports = [
     new Event('Dzień Pamięci Milo Mazurkiewicz', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
     new Event('{https://www.instagram.com/p/CY_mGaGo9sm/=Dzień Dziabka}', 'Nonbinary', 1, day(23), EventLevel.Day, ['nonbinary']),
     new Event('Dzień Harveya Milka (USA)', null, 5, day(22), EventLevel.Day),
-    new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),    
+    new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('Dzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
-    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),    
+    new Event('Tydzień Widoczności Lesbijek na Spektrum Multiseksualności', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
 
     // --- one-off events ---
@@ -43,7 +43,7 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1066052000600920=II Marsz Równości w Białymstoku}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
     new Event('{http://marszlublin.pl/=III Marsz Równości w Lublinie}', 'LGBTQ', 10, dayYear(23, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),    
+    new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/778731303070898=VII Trójmiejski Marsz Równości}', 'LGBTQ', 5, dayYear(28, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/620469522712842=3. Marsz Równości w Koszalinie}', 'LGBTQ', 4, dayYear(2, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/MarszRownosciGniezno=II Marsz Równości w Gnieźnie}', 'LGBTQ', 5, dayYear(7, 2022), EventLevel.Day),
@@ -85,7 +85,7 @@ module.exports = [
             }
         }
         yield lastFriday;
-    }, EventLevel.Day),    
+    }, EventLevel.Day),
 
     // last Friday of February
     new Event('Fioletowy Piątek (UK)', null, 2, function* (monthDays) {
