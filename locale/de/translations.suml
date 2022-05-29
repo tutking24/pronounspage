@@ -489,7 +489,7 @@ profile:
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
     flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk:'Dies ist keine queere Identität, aber wir nehmen es für Menschen auf, die auf andere Weise queer sind (z. B. heterosexuelle trans Personen).'
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
     # TODO
@@ -971,20 +971,20 @@ calendar:
         parents_day: 'Gender-Expansiver Elterntag'
         hiv_testing_day: 'HIV-Test-Tag'
         freedressing_day: 'Bewusstseinstag für genderunabhängiges Kleiden'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        sexual_health_day: 'Tag zur Sensibilisierung für sexuelle und reproduktive Gesundheit'
         world_sexual_health_day: 'Welttag Sexuelle Gesundheit'
-        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
-        queer_youth_day: 'Queer Youth Day' # TODO
+        aids_vaccine_day: 'Welt-AIDS-Impfstofftag'
+        queer_youth_day: ‘Tag der queeren Jugend’
         ominsexual_day: 'Omnisexueller Sichtbarkeitstag'
-        unlabeled_day: 'Unlabeled Visibility Day' # TODO
-        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
-        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
-        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
-        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
-        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
-        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
-        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                      
+        unlabeled_day: ‘Tag der Sichtbarkeit für Personen ohne Label'
+        trans_youth_day: 'Tag der Sichtbarkeit von trans Kindern und Jugendlichen'
+        hiv_long_term_survivors_day: 'Tag des Bewusstseins für HIV-Langzeitüberlebende'
+        women_hiv_awareness_day: 'Tag des Bewusstseins für HIV bei Frauen und Mädchen'
+        youth_hiv_awareness_day: 'Tag des Bewusstseins für HIV/AIDS bei Kindern und Jugendlichen'
+        gay_hiv_awareness_day: 'Tag des Bewusstseins für HIV bei schwulen Männern’
+        black_hiv_awareness_day: Tag des Bewusstseins für HIV bei Schwarzen Menschen’
+        hiv_aging_awareness_day: 'Tag des Bewusstseins für HIV/AIDS und Alterung'
+        trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'        
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
