@@ -202,7 +202,7 @@ faq:
                     sekso djenetiko, sekso ormonal, sekso fenotipiko…
                     No son nesesariamente kongruentes uno kon otruno, no tienen ke ser binarios.
                     {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mas información aki)}.
-                    I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyal.
+                    I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyala.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
                     derechos, obligaciones, reglas a segir, ets. radikalmente diferentes. En Europa en el pasado los ombres vestian takos altos i fustas,
                     munchos puevlos originarios de Norteamerika tienen rekonosido un treser djenero por syekolos, komo
@@ -369,7 +369,7 @@ contact:
             - >
                 Semos un kolektivo kuir dedikado a reunir, investigar, formar i promover
                 la avla neutrala i no binaria.
-                Tambien arrimamos aksiones por la egualdad i la justedad sosyal.
+                Tambien arrimamos aksiones por la egualdad i la justedad sosyala.
         logo: 'El logo de la kooperativa es una kombinasion del simbolo transdjenero i una foshka de dialogo ke simboliza la lingua.'
         members: 'Miembros aktuales de la taifa'
         member: 'Miembro de la kooperativa'
@@ -915,7 +915,7 @@ calendar:
         genderfluid_day: 'Dia de la Vizibilidad de {/terminolojia#genderfluid=Djenero Fluido}'
         aids_day: 'Dia Mundial de la Pelea kontra AIDS'
         tolerance_day: 'Dia Internasional para la Toleransya'
-        social_justice_day: 'Dia Mundial de la Justedad Sosyal'
+        social_justice_day: 'Dia Mundial de la Justedad Sosyala'
         stonewall_day: 'Aniversario del Fesad de Stonewall'
         domestic_violence: 'Semana de la Konsensya de Violensya Domestika LGBTQ'
         orlando_day: 'Aniversario del Masakro de Orlando'
@@ -958,6 +958,8 @@ calendar:
         black_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Personas Pretas'
         hiv_aging_awareness_day: 'Dia de Konsensya sovre HIV/AIDS i el Envejesimyento'
         trans_hiv_testing_day: 'Dia de la Prueva del HIV en Personas Transdjeneras'
+        mspec_lesbian_day: 'Dia de la Vizibilidad de las Lezbianas del Espektro Multiseksual'                    
+        mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'        
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
