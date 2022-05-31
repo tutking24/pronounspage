@@ -492,7 +492,7 @@ profile:
     flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
     flagsCustom: 'カスタムフラグをアップロード'
     flagsCustomWarning: 'このフラグはユーザーによってアップロードされました。Pronouns.pageのチームは関わっていません。'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'これはクィアアイデンティティーではありませんが、他の面でクィアな人たちが使うために用意されています（例: 異性愛者のトランスジェンダー）。'
     links: 'リンク'
     linksRecommended: ''
     linksRecommendedAfter: 'にリンクすることをお勧めします。'
