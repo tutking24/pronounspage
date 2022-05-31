@@ -1832,6 +1832,8 @@ calendar:
         black_hiv_awareness_day: 'Dzień Świadomości nt. HIV/AIDS u Osób Czarnych'
         hiv_aging_awareness_day: 'Dzień Świadomości nt. Starzenia się z HIV/AIDS'
         trans_hiv_testing_day: 'Dzień Testów na HIV u Osób Transpłciowych'
+        mspec_lesbian_day: 'Dzień Widoczności Lesbijek na Spektrum Multiseksualności'                    
+        mspec_lesbian_week: 'Tydzień Widoczności Lesbijek na Spektrum Multiseksualności'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'
