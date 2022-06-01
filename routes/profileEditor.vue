@@ -159,7 +159,7 @@
                     <T>profile.links</T>
                 </h3>
                 <ListInput v-model="links" v-slot="s">
-                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="s.update(s.val)" @change="s.update(s.val)" required/>
+                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
                 </ListInput>
                 <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 <p class="small text-muted mb-0">
