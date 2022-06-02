@@ -83,7 +83,7 @@ pronouns:
     grammarTable: 'Tabla'
 
 sources:
-    header: 'Fuentes'
+    header: 'Fuentas'
     headerLong: 'Enshemplos de kontekstos kulturales'
     headerLonger: 'Lingua neutrala en tekstos kulturales'
     subheader: 'Korpus de teksto de djenero neutro'
@@ -104,7 +104,7 @@ sources:
         action: 'Embiar'
         pronouns: 'Ke pronombres tienen sido uzados?'
         pronounsInfo: 'Introduze la forma mas simple del pronombre, komo se topa en el atadijo, p. en. “eye”, “el/lo”, “el o eya”'
-        type: 'Tipo de fuente'
+        type: 'Tipo de fuenta'
         author: 'Autor/a/e/x'
         title: 'Titolo'
         extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
@@ -116,7 +116,7 @@ sources:
         another: 'Embiar otruno'
         moderation: 'Los embios deven ser aseptados antes de ser publikados.'
         key: 'Yave'
-        keyInfo: 'Identifiador para atar fuentes entre versiones en varias linguas i atarlas kon el diksionaryo'
+        keyInfo: 'Identifiador para atar fuentas entre versiones en varias linguas i atarlas kon el diksionaryo'
         images: 'Imajes'
         spoiler: 'Spoiler'
     otherVersions: 'En otras linguas'
