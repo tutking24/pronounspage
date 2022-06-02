@@ -448,19 +448,6 @@ links:
                 W niniejszym artykule omawiam przykłady takich form zaczerpnięte z polskich tekstów literackich.
                 Przyglądam się nie tylko ich morfologii, ale też kontekstowi użycia (tj. jakie postacie się nimi
                 posługują i czy w tekście pojawia się dyskusja metajęzykowa).
-        -
-            icon: 'comment-alt-edit'
-            url: 'https://run.pan.pl/index.php?option=com_content&view=category&layout=blog&id=59&Itemid=286&lang=pl-pl'
-            headline: 'Stanowisko Rady Upowszechniania Nauki Polskiej Akademii Nauk w sprawie sposobu komunikacji naukowej dotyczącej tożsamości płciowej'
-            quote: >
-                \[…] komunikacja wiedzy naukowej dotycząca kwestii wrażliwych społecznie powinna uwzględniać
-                dobrostan osób dyskryminowanych, […] powoływanie się przez osoby popularyzujące naukę na wiedzę biologiczną,
-                bez uwzględniania, co w niej jest wynikiem badań empirycznych, których wyniki włączane są
-                w zbiór aktualnie obowiązującej wiedzy, a co jej interpretacją, jest według nas niedopuszczalne.
-                Popularyzacja nauki powinna wystrzegać się uproszczeń, które są fałszywe i prowadzą do wzmacniania
-                istniejących stereotypów i uprzedzeń. Za Amerykańskim Narodowym Stowarzyszeniem Komunikacji (NCA, 1999)
-                powtarzamy, że „etyczny sposób komunikacji zwiększa ludzką wartość i godność poprzez wspieranie
-                prawdomówności, uczciwości, odpowiedzialności, integralności osobistej oraz szacunku dla siebie i innych”.
     links:
         -
             icon: 'globe-europe'
@@ -618,6 +605,19 @@ links:
                 lecz wystraszone kaczątko jeszcze przez kilka godzin nie śmiało ruszyć się z miejsca.
                 Na koniec cisza je uspokoiła, podniosło głowę, otworzyło oczy, a nie widząc nikogo, zaczęło uciekać,
                 ile mu sił starczyło, dalej, dalej, dalej!
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://run.pan.pl/index.php?option=com_content&view=category&layout=blog&id=59&Itemid=286&lang=pl-pl'
+            headline: 'Stanowisko Rady Upowszechniania Nauki Polskiej Akademii Nauk w sprawie sposobu komunikacji naukowej dotyczącej tożsamości płciowej'
+            quote: >
+                \[…] komunikacja wiedzy naukowej dotycząca kwestii wrażliwych społecznie powinna uwzględniać
+                dobrostan osób dyskryminowanych, […] powoływanie się przez osoby popularyzujące naukę na wiedzę biologiczną,
+                bez uwzględniania, co w niej jest wynikiem badań empirycznych, których wyniki włączane są
+                w zbiór aktualnie obowiązującej wiedzy, a co jej interpretacją, jest według nas niedopuszczalne.
+                Popularyzacja nauki powinna wystrzegać się uproszczeń, które są fałszywe i prowadzą do wzmacniania
+                istniejących stereotypów i uprzedzeń. Za Amerykańskim Narodowym Stowarzyszeniem Komunikacji (NCA, 1999)
+                powtarzamy, że „etyczny sposób komunikacji zwiększa ludzką wartość i godność poprzez wspieranie
+                prawdomówności, uczciwości, odpowiedzialności, integralności osobistej oraz szacunku dla siebie i innych”.
     mediaGuests:
         -
             icon: 'newspaper'
