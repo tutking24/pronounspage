@@ -1007,7 +1007,12 @@ calendar:
         hiv_aging_awareness_day: 'Dia de Conscientização sobre HIV/AIDS (VIH/SIDA) e Envelhecimento'
         trans_hiv_testing_day: 'Dia do teste de HIV/VIH para as Pessoas Trans'
         mspec_lesbian_day: 'Dia da Visibilidade das Lésbicas do Espectro Multissexual'                    
-        mspec_lesbian_week: 'Semana da Visibilidade das Lésbicas do Espectro Multissexual'        
+        mspec_lesbian_week: 'Semana da Visibilidade das Lésbicas do Espectro Multissexual'  
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO                    
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
     celebrating_day: 'celebra-se em'
