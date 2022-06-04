@@ -89,7 +89,10 @@ module.exports = [
     new Event('Marriage Equality Day (Malta)', '_hrc', 9, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Taiwan)', '_hrc', 5, day(24), EventLevel.Day),
     new Event('Marriage Equality Day (Chile)', '_hrc', 3, day(10), EventLevel.Day),
-    new Event('{https://www.nswp.org/event/international-sex-workers-day-0=International Sex Workers\' Day}', null, 6, day(2), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-sex-workers-day-0=International Sex Workers\' Day}', '_sex-work', 6, day(2), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/sex-worker-pride=Sex Worker Pride}', '_sex-work', 9, day(14), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-day-end-violence-against-sex-workers-6=International Day to End Violence Against Sex Workersy}', '_sex-work', 12, day(17), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-sex-workers-rights-day=International Sex Workers\' Rights Day}', '_sex-work', 3, day(3), EventLevel.Day),
 
     // --- dynamic date ---
 
