@@ -984,7 +984,15 @@ calendar:
         gay_hiv_awareness_day: 'Tag des Bewusstseins für HIV bei schwulen Männern’
         black_hiv_awareness_day: Tag des Bewusstseins für HIV bei Schwarzen Menschen’
         hiv_aging_awareness_day: 'Tag des Bewusstseins für HIV/AIDS und Alterung'
-        trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'        
+        trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'   
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO                                                       
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'

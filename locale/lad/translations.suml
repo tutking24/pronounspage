@@ -959,7 +959,13 @@ calendar:
         hiv_aging_awareness_day: 'Dia de Konsensya sovre HIV/AIDS i el Envejesimyento'
         trans_hiv_testing_day: 'Dia de la Prueva del HIV en Personas Transdjeneras'
         mspec_lesbian_day: 'Dia de la Vizibilidad de las Lezbianas del Espektro Multiseksual'                    
-        mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'        
+        mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'  
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO                            
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'

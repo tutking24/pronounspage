@@ -1084,6 +1084,12 @@ calendar:
         trans_hiv_testing_day: 'Día de la Prueba del VIH en Personas Transgénero'   
         mspec_lesbian_day: 'Día de la Visibilidad de las Lesbianas del Espectro Multisexual'                    
         mspec_lesbian_week: 'Semana de la Visibilidad de las Lesbianas del Espectro Multisexual'         
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO 
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO                            
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
