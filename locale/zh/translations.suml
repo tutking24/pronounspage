@@ -953,13 +953,13 @@ calendar: # TODO
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
         hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
         trans_hiv_testing_day: 'Transgender HIV Testing Day' 
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO                    
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day'
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week'
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day'
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week'
+        spring_testing_week: 'Spring European HIV Testing Week'
+        autumn_testing_week: 'Autumn European HIV Testing Week'
+        sex_worker_day: 'International Sex Worker Day'                  
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
