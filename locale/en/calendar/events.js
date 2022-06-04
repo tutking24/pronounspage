@@ -89,6 +89,7 @@ module.exports = [
     new Event('Marriage Equality Day (Malta)', '_hrc', 9, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Taiwan)', '_hrc', 5, day(24), EventLevel.Day),
     new Event('Marriage Equality Day (Chile)', '_hrc', 3, day(10), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-sex-workers-day-0=International Sex Workers\' Day}', null, 6, day(2), EventLevel.Day),
 
     // --- dynamic date ---
 
@@ -197,7 +198,7 @@ module.exports = [
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
     new Event('LGBTQIA+ Equal Pay Awareness Day', '_hrc', 6, dayYear(15, 2022), EventLevel.Day),
     new Event('Spring European HIV Testing Week', '_red-ribbon', 5, weekStarting(16, 2022), EventLevel.Week, ['aids']),
-    new Event('Autumn European HIV Testing Week', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),    
+    new Event('Autumn European HIV Testing Week', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),
 
     // --- one-off events ---
     new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
