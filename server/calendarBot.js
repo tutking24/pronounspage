@@ -80,9 +80,14 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
         console.log('------------');
         console.log(locales[locale].name);
 
-        const { day, message, image } = await (await fetch(locales[locale].url + '/api/calendar/today')).json();
-        console.log('<<<', message, '>>>');
-        if (!message) { continue; }
+        try {
+            const { day, message, image } = await (await fetch(locales[locale].url + '/api/calendar/today')).json();
+            console.log('<<<', message, '>>>');
+            if (!message) { continue; }
+        } catch (e) {
+            console.error(e);
+            continue;
+        }
 
         fs.writeFileSync(imageTmpPath, Buffer.from(await (await fetch(image)).arrayBuffer()), {encoding: 'binary'});
         let imageStream = null;
