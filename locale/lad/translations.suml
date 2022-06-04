@@ -387,7 +387,7 @@ user:
     headerLong: 'Tu kuento'
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
-        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyalas o eskrivir tu adreso de posta elektronika en el kampo abasho i entonses konfirmar el kodiche ke vas resibir en tu posta.'
+        help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyalas o eskrivir tu adreso de posta elektronika en el kampo abasho i estonses konfirmar el kodiche ke vas resibir en tu posta.'
         placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
         action: 'Konektarte / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika <strong>%email%</strong> kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
