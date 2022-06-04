@@ -1088,7 +1088,8 @@ calendar:
         mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
         spring_testing_week: 'Spring European HIV Testing Week' # TODO
         autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO                    
+        sex_worker_day: 'International Sex Worker Day' # TODO 
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO                            
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
