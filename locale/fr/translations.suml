@@ -1003,6 +1003,13 @@ calendar:
         black_hiv_awareness_day: 'Journée de sensibilisation au VIH/sida des communautés noires'
         hiv_aging_awareness_day: 'Journée de la sensibilisation du VIH/sida et au vieillissement'
         trans_hiv_testing_day: 'Journée de dépistage au VIH des transgenres'
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO                    
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
