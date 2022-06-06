@@ -66,6 +66,7 @@ module.exports = [
     new Event('Anniversary of the {https://en.wikipedia.org/wiki/Dance_of_the_Forty-One=Dance of the Forty-One} (Mexico)', null, 11, day(18), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} Day of Remembrance (Brazil)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('{https://tdor.translivesmatter.info/reports/2019/05/06/milo-mazurkiewicz_warsaw-masovia-poland_9a028d4a=Milo Mazurkiewicz} Day of Remembrance (Poland)', '_black-ribbon', 5, day(6), EventLevel.Day, ['transgender', 'nonbinary']),
+    new Event('Anniversary of Operation Hyacinth (Poland)', null, 11, day(15), EventLevel.Day, ['homophobia']),
     new Event('Marriage Equality Day (Germany)', '_hrc', 10, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Austria/Luxembourg/Norway)', '_hrc', 1, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Belgium)', '_hrc', 6, day(1), EventLevel.Day),
@@ -91,8 +92,8 @@ module.exports = [
     new Event('Marriage Equality Day (Chile)', '_hrc', 3, day(10), EventLevel.Day),
     new Event('{https://www.nswp.org/event/international-sex-workers-day-0=International Sex Workers\' Day}', '_sex-work', 6, day(2), EventLevel.Day),
     new Event('{https://www.nswp.org/event/sex-worker-pride=Sex Worker Pride}', '_sex-work', 9, day(14), EventLevel.Day),
-    new Event('{https://www.nswp.org/event/international-day-end-violence-against-sex-workers-6=International Day to End Violence Against Sex Workersy}', '_sex-work', 12, day(17), EventLevel.Day),
-    new Event('{https://www.nswp.org/event/international-sex-workers-rights-day=International Sex Workers\' Rights Day}', '_sex-work', 3, day(3), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-day-end-violence-against-sex-workers-6=International Day to End Violence Against Sex Workers}', '_sex-work', 12, day(17), EventLevel.Day),
+    new Event('{https://www.nswp.org/event/international-sex-workers-rights-day=International Sex Workers\' Rights Day}', '_sex-work', 3, day(3), EventLevel.Day),    
 
     // --- dynamic date ---
 
