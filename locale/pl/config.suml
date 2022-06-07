@@ -257,7 +257,7 @@ links:
         open: false
         releases:
             -
-                title: 'Poczytałosie (2022)'
+                title: 'Poczytałosie'
                 cover: 'poczytałosie-2022.png'
                 banner: 'poczytałosie-2022-banner.png'
                 description: >
@@ -267,9 +267,10 @@ links:
                     – od opowiadań i wierszy, przez prozę poetycją, eseje i rysunki, do opowieści-diagramu.
                     Zaparszamy do lektury!
                 downloads:
-                    - {filename: 'Poczytałosie 2022.pdf', label: 'Pobierz PDF'}
-                    - {filename: 'Poczytałosie 2022.mobi', label: 'Pobierz MOBI'}
-                    - {filename: 'Poczytałosie 2022.epub', label: 'Pobierz ePUB'}
+                    - {filename: 'Poczytałosie 2022 pages.pdf', label: 'Pobierz PDF (wąski ekran)', icon: 'mobile'}
+                    - {filename: 'Poczytałosie 2022 spread.pdf', label: 'Pobierz PDF (szeroki ekran)', icon: 'laptop'}
+                    - {filename: 'Poczytałosie 2022.mobi', label: 'Pobierz MOBI', icon: 'tablet-alt'}
+                    - {filename: 'Poczytałosie 2022.epub', label: 'Pobierz ePUB', icon: 'tablet-alt'}
     academic:
         -
             icon: 'comment-alt-edit'
