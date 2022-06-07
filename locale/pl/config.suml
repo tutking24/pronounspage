@@ -63,7 +63,12 @@ pronouns:
                 examples:
                     - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
                     - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
+            -
+                header: 'Użycie czasowników niewłaściwych'
+                normative: true
+                examples:
                     - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+                    - [ 'widziałem fajerwerki', 'widać było fajerwerki' ]
             -
                 header: 'Strona bierna'
                 normative: true
@@ -77,6 +82,7 @@ pronouns:
                     - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
                     - [ 'znalazłam telefon', 'znaleziono telefon' ]
                     - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+                    - [ 'slyszałam dziwne odgłosy', 'było słychać dziwne odgłosy' ]
             -
                 header: 'Bezosobowe użycie 3. os. mnogiej'
                 normative: true
@@ -89,6 +95,7 @@ pronouns:
                     - [ 'przypomniałem sobie', 'przypomniało mi się' ]
                     - [ 'zmarzłam', 'zrobiło mi się zimno' ]
                     - [ 'zrobiłem', 'udało mi się zrobić' ]
+                    - [ 'nigdy nie myślałam o tym w ten sposób', 'nigdy nie zdarzało mi się myśleć o tym w ten sposób' ]
             -
                 header: 'Bezokolicznikowy czas przyszły'
                 normative: true
@@ -156,6 +163,11 @@ pronouns:
                 normative: true
                 examples:
                     - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
+            -
+                header: 'Ujęcie innymi słowami'
+                normative: true
+                examples:
+                    - [ 'psa się cieszy że wróciłom', 'psa się cieszy, że jestem z powrotem w domu' ]
     mirror:
         route: 'lustrzane'
         name: 'Zaimki lustrzane'
