@@ -17,7 +17,7 @@
                         <ul class="list-inline mt-3">
                             <li v-for="download in release.downloads" class="list-inline-item">
                                 <a :href="`/api/download/${download.filename}`" class="btn btn-primary m-1">
-                                    <Icon v="file-download"/>
+                                    <Icon :v="download.icon || 'file-download'"/>
                                     {{download.label}}
                                     <small v-if="stats[download.filename] !== undefined">({{stats[download.filename]}})</small>
                                 </a>
@@ -29,12 +29,12 @@
             <Separator icon="bullhorn"/>
         </section>
 
-        <T>links.zine.info</T>
-
         <h3 class="mb-3">
             <Icon v="bullhorn"/>
             <T>links.zine.submissions.header</T>
         </h3>
+
+        <T>links.zine.info</T>
 
         <ZineSubmissions v-if="config.links.zine.open" class="alert alert-info"/>
         <div v-else>
