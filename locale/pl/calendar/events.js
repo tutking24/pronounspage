@@ -26,7 +26,7 @@ module.exports = [
     new Event('Międzynarodowy Dzień Osób Pracujących Seksualnie', '_sex-work', 6, day(2), EventLevel.Day),
     new Event('Dzień Dumy Osób Pracujących Seksualnie', '_sex-work', 9, day(14), EventLevel.Day),
     new Event('Międzynarodowy Dzień Przeciwko Przemocy Wobec Osób Pracujących Seksualnie', '_sex-work', 12, day(17), EventLevel.Day),
-    new Event('Międzynarodowy Dzień Praw Osób Pracujących Seksualnie', '_sex-work', 3, day(3), EventLevel.Day),     
+    new Event('Międzynarodowy Dzień Praw Osób Pracujących Seksualnie', '_sex-work', 3, day(3), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
@@ -69,7 +69,7 @@ module.exports = [
     new Event('Dzień Świadomości nt. Równych Płac dla Osób LGBTQIA+', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
     new Event('Dzień Świadomości nt. Równych Płac dla Osób LGBTQIA+', '_hrc', 6, dayYear(15, 2022), EventLevel.Day),
     new Event('Wiosenny Europejski Tydzień Testowania w Kierunku HIV', '_red-ribbon', 5, weekStarting(16, 2022), EventLevel.Week, ['aids']),
-    new Event('Jesienny Europejski Tydzień Testowania w kierunku HIV', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids'])    
+    new Event('Jesienny Europejski Tydzień Testowania w kierunku HIV', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),
 
     // --- dynamic date ---
 
