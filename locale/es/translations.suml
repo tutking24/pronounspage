@@ -1090,6 +1090,11 @@ calendar:
         autumn_testing_week: 'Semana Europea de la Prueba de VIH en Otoño'
         sex_worker_day: 'Día Internacional de lxs Trabajadorxs Sexuales'
         equal_pay_day: 'Día de Concientización sobre Igualdad Salarial para las Personas LGBTQIA+'
+        sex_worker_pride: 'Sex Worker Pride' # TODO
+        sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
+        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
+        ominsexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
+        ominsexual_awareness_day: 'Omnisexual Awareness Day' # TODO           
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
