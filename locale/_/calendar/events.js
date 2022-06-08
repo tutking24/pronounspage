@@ -71,6 +71,13 @@ module.exports = [
     new Event('hiv_aging_awareness_day', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('trans_hiv_testing_day', '_red-ribbon', 4, day(18), EventLevel.Day, ['aids']),
     new Event('trans_youth_day', 'Transgender', 5, day(14), EventLevel.Day, ['transgender']),
+    new Event('mspec_lesbian_day', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['transgender']),
+    new Event('sex_worker_day', '_sex-work', 6, day(2), EventLevel.Day, ['transgender']),
+    new Event('sex_worker_pride', '_sex-work', 9, day(14), EventLevel.Day, ['transgender']),
+    new Event('sex_worker_rights_day', '_sex-work', 3, day(3), EventLevel.Day, ['transgender']),
+    new Event('sex_worker_violence_day', '_sex-work', 12, day(17), EventLevel.Day, ['transgender']),
+    new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['transgender']),
+    new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['transgender']),
 
     // --- dynamic date ---
 
@@ -318,3 +325,8 @@ module.exports = [
     }, EventLevel.Week, ['progress pride']),
 
 ];
+
+    new Event('equal_pay_day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
+    new Event('equal_pay_day', '_hrc', 6, dayYear(15, 2022), EventLevel.Day),
+    new Event('spring_testing_week', '_red-ribbon', 5, weekStarting(16, 2022), EventLevel.Week, ['aids']),
+    new Event('autumn_testing_week', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),
