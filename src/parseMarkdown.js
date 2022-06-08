@@ -68,10 +68,10 @@ export default async function parseMarkdown(markdown) {
             markdown
                 .replace(/<table>/g, '<div class="table-responsive"><table class="table table-striped small">')
                 .replace(/<\/table>/g, '</table></div>')
-                .replace(/{favicon=(.+?)}/g, '<img src="https://$1" alt="Favicon" style="width: 1em; height: 1em;"/>')
                 .replace(/<a href="http/g, '<a target="_blank" rel="noopener" href="http')
                 .replace(/<p>{details=(.+?)}<\/p>(.+?)<p>{\/details}<\/p>/gms, '<details class="border mb-3"><summary class="bg-light p-3">$1</summary><div class="border-top p-3 bg-white">$2</div></details>')
                 .replace(/<img (.*?)>/g, '<div class="text-center"><img $1 class="border"></div>')
+                .replace(/{favicon=(.+?)}/g, '<img src="https://$1" alt="Favicon" style="width: 1em; height: 1em;"/>')
                 .replace(/{embed=\/\/(.+?)=(.+?)}/g, '<div style="position: relative;height: 0;padding-bottom: 56.25%;"><iframe src="https://$1" title="$2" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute;top: 0; left: 0;width: 100%;height: 100%;border:0;"></iframe></div>')
                 .replace(/{graph=([^}]+)}/g, '<iframe class="graph" src="$1.html" loading="lazy"></iframe>')
                 .replace(/<p>{census_groups}<\/p>(.+?)<p>{\/census_groups}<\/p>/gms, mainPlusDetails(census_groups, false))
