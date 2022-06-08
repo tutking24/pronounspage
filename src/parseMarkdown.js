@@ -1,4 +1,4 @@
-// import twemoji from 'twemoji';
+import twemoji from 'twemoji';
 
 const census_groups = {
     'location_poland': 'Osoby mieszkające w Polsce',
@@ -77,7 +77,7 @@ export default async function parseMarkdown(markdown) {
                 .replace(/<p>{census_groups}<\/p>(.+?)<p>{\/census_groups}<\/p>/gms, mainPlusDetails(census_groups, false))
                 .replace(/<p>{census_comparisons}<\/p>(.+?)<p>{\/census_comparisons}<\/p>/gms, mainPlusDetails(census_comparisons, true))
                 .replace(/{json=([^=}]+)=([^=}]+)}/g, fetchJson)
-                .replace(/<p>{twemoji}<\/p>(.+?)<p>{\/twemoji}<\/p>/gms, (_, c) => c) // twemoji.parse(c)
+                .replace(/<p>{twemoji}<\/p>(.+?)<p>{\/twemoji}<\/p>/gms, (_, c) => twemoji.parse(c))
             + '</div>'
         ;
         content = content.replace(/{table_of_contents}/g, generateToC(content));
