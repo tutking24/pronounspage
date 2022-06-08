@@ -993,7 +993,7 @@ calendar:
         world_sexual_health_day: 'Journée mondiale de la santé sexuelle'
         aids_vaccine_day: 'Journée mondiale du vaccin contre le SIDA'
         queer_youth_day: 'Journée des jeunes queer'
-        ominsexual_day: 'Journée de la visibilité des omnisexuels'
+        omnisexual_day: 'Journée de la visibilité des omnisexuels'
         unlabeled_day: 'Journée de la visibilité aux queer non-genrés' 
         trans_youth_day: 'Journée de visibilité aux enfants et à la jeunesse trans'
         hiv_long_term_survivors_day: 'Journée de sensibilisation aux survivants de long terme au SIDA'
@@ -1014,8 +1014,8 @@ calendar:
         sex_worker_pride: 'Sex Worker Pride' # TODO  
         sex_worker_rights_day: 'International Sex Workers'' Rights Day'  # TODO  
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO  
-        ominsexual_omniromantic_day: 'Journée de la fierté et visibilité omnisexuelle et omniromantique'
-        ominsexual_awareness_day: 'Journée de la sensibilité à la omnisexualité'
+        omnisexual_omniromantic_day: 'Journée de la fierté et visibilité omnisexuelle et omniromantique'
+        omnisexual_awareness_day: 'Journée de la sensibilité à la omnisexualité'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
