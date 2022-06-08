@@ -903,7 +903,7 @@ calendar:
         nonbinary_week: 'Semana de la Konsensya No Binaria'
         polyamory_day: 'Dia del {/terminolojia#polyamory=Poliamor}'
         homophobia_sport: 'Dia Internasional kontra la {/terminolojia#homophobia=Omofobia} en el Espor'
-        gay_uncles_day: 'Dia de los Tiyos {/terminolojia#gay=Geys}'
+        gay_uncles_day: 'Dia de los Tiyos {/terminolojia#gay=Alegres}'
         lgbtq_stem: 'Dia de las Personas {/terminolojia#lgbtq=LGBTK+} en Sensia'
         trans_depathologization: 'Dia por la Despatolojizasyon de {/terminolojia#transgender=Transdjenero}'
         lgbti_book_day: 'Dia del Livro de Tema {/terminolojia#lgbtq=LGBTK+}'
@@ -954,22 +954,22 @@ calendar:
         hiv_long_term_survivors_day: 'Dia de Konsensya para los Sobrebivyentes a Lungo Termino del HIV'
         women_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Mujeres i Ninyas'
         youth_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre los Mansevos'
-        gay_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre los Ombres Geys'
+        gay_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre los Ombres Alegres'
         black_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Personas Pretas'
         hiv_aging_awareness_day: 'Dia de Konsensya sovre HIV/AIDS i el Envejesimyento'
         trans_hiv_testing_day: 'Dia de la Prueva del HIV en Personas Transdjeneras'
         mspec_lesbian_day: 'Dia de la Vizibilidad de las Lezbianas del Espektro Multiseksual'                    
         mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'  
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        mspec_gay_day: 'Dia de la Vizibilidad de los Alegres del Espektro Multiseksual'
+        mspec_gay_week: 'Semana de la Vizibilidad de los Alegres del Espektro Multiseksual'
+        spring_testing_week: 'Semana Europea de la Prueva de HIV en Primavera'
+        autumn_testing_week: 'Semana Europea de la Prueva de HIV en Otonyo'
         sex_worker_day: 'International Sex Worker Day' # TODO
         equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
         sex_worker_pride: 'Sex Worker Pride' # TODO
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
-        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
+        omnisexual_omniromantic_day: 'Dia de la Vizibilidad Omniseksuala i Omniromantika'
         omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
