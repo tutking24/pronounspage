@@ -1,6 +1,6 @@
 # Mark Gevisser – Różowa linia
 
-<small>2022-06-15 | [@andrea](/@andrea)</small>
+<small>2022-06-08 | [@andrea](/@andrea)</small>
 
 ![Okładka recenzowanej książki](/img-local/blog/gevisser-różowa-linia.png)
 
