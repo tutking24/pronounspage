@@ -69,7 +69,7 @@ niedookreśloną naturę ich tożsamości; jednocześnie ułatwiając osobom czy
 bez popadania w zbyt prosty dualizm hidźry-żeński / kothi-męski.
 
 Pytań i uwag było oczywiście sporo więcej.
-Czy kontest uzasadnia [użycie „trans” jako przyrostka zamiast przymiotnika](/inkluzywny#transkobieta)?
+Czy dany kontekst uzasadnia [użycie „trans” jako przyrostka zamiast przymiotnika](/inkluzywny#transkobieta)?
 Kiedy użyć rodzaju neutralnego, a kiedy neologicznych rodzajów gramatycznych?
 Nie wiem jeszcze, które z naszych uwag, i w jaki sposób, zostały zastosowane, ani jak ostateczna wersja będzie wyglądała.
 Ale podobno nasz wkład bardzo pomógł, co niezmiernie nas cieszy.
@@ -88,3 +88,8 @@ _Różowa linia_ Gevissera to książka leżąca na przecięciu tożsamości i j
 czyli w tym samym metaforycznym miejscu, co <span class="text-nowrap">zaimki.pl</span> 😉.
 To również chyba najobszerniejszy geograficznie opis obecnych zmagań społeczności queerowej – nieocenione źródło wiedzy i doświadczenia.
 To reportaż niewątpliwie warty przeczytania, warty zrozumienia, i warty polecenia.
+
+<a href="https://wydawnictwopoznanskie.pl/produkt/rozowa-linia/" target="_blank" rel="noopener" class="btn btn-outline-primary d-block my-5">
+    <span class="fal fa-shopping-basket"></span>
+    Zamów na stronie Wydawnictwa Poznańskiego
+</a>
