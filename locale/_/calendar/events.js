@@ -71,13 +71,14 @@ module.exports = [
     new Event('hiv_aging_awareness_day', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('trans_hiv_testing_day', '_red-ribbon', 4, day(18), EventLevel.Day, ['aids']),
     new Event('trans_youth_day', 'Transgender', 5, day(14), EventLevel.Day, ['transgender']),
-    new Event('mspec_lesbian_day', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['transgender']),
-    new Event('sex_worker_day', '_sex-work', 6, day(2), EventLevel.Day, ['transgender']),
-    new Event('sex_worker_pride', '_sex-work', 9, day(14), EventLevel.Day, ['transgender']),
-    new Event('sex_worker_rights_day', '_sex-work', 3, day(3), EventLevel.Day, ['transgender']),
-    new Event('sex_worker_violence_day', '_sex-work', 12, day(17), EventLevel.Day, ['transgender']),
-    new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['transgender']),
-    new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['transgender']),
+    new Event('mspec_lesbian_day', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('mspec_lesbian_week', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('sex_worker_day', '_sex-work', 6, day(2), EventLevel.Day),
+    new Event('sex_worker_pride', '_sex-work', 9, day(14), EventLevel.Day),
+    new Event('sex_worker_rights_day', '_sex-work', 3, day(3), EventLevel.Day),
+    new Event('sex_worker_violence_day', '_sex-work', 12, day(17), EventLevel.Day),
+    new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['omnisexual', 'omniromantic']),
+    new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['omnisexual']),
 
     // --- dynamic date ---
 
