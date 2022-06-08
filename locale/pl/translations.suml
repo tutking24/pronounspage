@@ -956,6 +956,8 @@ links:
     blog: 'Blog'
     academic: 'Nauka'
     links: 'Dodatkowe materiały'
+    endorsements: '{/blog/mecenat=Mecenaty} i współpraca'
+    review: 'Nasza recenzja'
 
     mediaShort: 'Media'
     media: 'Zaimki.pl w mediach'

@@ -9,6 +9,7 @@
             </h2>
             <BlogEntriesList :posts="posts" details/>
         </section>
+        <Endorsements/>
         <Links/>
         <AcademicLinks v-if="!config.links.split && config.links.academic.length > 0"/>
         <Media v-if="!config.links.split && (config.links.mediaGuests.length > 0 || config.links.mediaMentions.length > 0)"/>
