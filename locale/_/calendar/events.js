@@ -60,7 +60,7 @@ module.exports = [
     new Event('sexual_health_day', null, 2, day(12), EventLevel.Day),
     new Event('world_sexual_health_day', null, 9, day(4), EventLevel.Day),
     new Event('aids_vaccine_day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
-    new Event('ominsexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
+    new Event('omnisexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
     new Event('queer_youth_day', 'LGBTQ', 6, day(30), EventLevel.Day),
     new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),    
     new Event('hiv_long_term_survivors_day', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
