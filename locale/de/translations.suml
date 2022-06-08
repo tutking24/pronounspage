@@ -992,7 +992,12 @@ calendar:
         spring_testing_week: 'Spring European HIV Testing Week' # TODO
         autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
         sex_worker_day: 'International Sex Worker Day' # TODO
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO                                                       
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO 
+        sex_worker_pride: 'Sex Worker Pride' # TODO
+        sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
+        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
+        ominsexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
+        ominsexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
