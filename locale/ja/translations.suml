@@ -977,7 +977,7 @@ calendar:
         world_sexual_health_day: '世界セクシュアルヘルスデー'
         aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
         queer_youth_day: 'Queer Youth Day' # TODO
-        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        omnisexual_day: 'Omnisexual Visibility Day' # TODO
         unlabeled_day: 'Unlabeled Visibility Day' # TODO
         trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
         hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
@@ -998,8 +998,8 @@ calendar:
         sex_worker_pride: 'Sex Worker Pride' # TODO
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
-        ominsexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
-        ominsexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
+        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
+        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''
