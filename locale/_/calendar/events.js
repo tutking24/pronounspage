@@ -62,7 +62,7 @@ module.exports = [
     new Event('aids_vaccine_day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
     new Event('omnisexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
     new Event('queer_youth_day', 'LGBTQ', 6, day(30), EventLevel.Day),
-    new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),    
+    new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),
     new Event('hiv_long_term_survivors_day', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
     new Event('women_hiv_awareness_day', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('youth_hiv_awareness_day', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),
@@ -325,9 +325,8 @@ module.exports = [
         }
     }, EventLevel.Week, ['progress pride']),
 
-];
-
     new Event('equal_pay_day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
     new Event('equal_pay_day', '_hrc', 6, dayYear(15, 2022), EventLevel.Day),
     new Event('spring_testing_week', '_red-ribbon', 5, weekStarting(16, 2022), EventLevel.Week, ['aids']),
     new Event('autumn_testing_week', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),
+];
