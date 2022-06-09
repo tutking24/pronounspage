@@ -1008,17 +1008,17 @@ calendar:
         trans_hiv_testing_day: 'Dia do teste de HIV/VIH para as Pessoas Trans'
         mspec_lesbian_day: 'Dia da Visibilidade das Lésbicas do Espectro Multissexual'                    
         mspec_lesbian_week: 'Semana da Visibilidade das Lésbicas do Espectro Multissexual'  
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        mspec_gay_day: 'Dia da Visibilidade dos Gays do Espectro Multissexual'
+        mspec_gay_week: 'Semana da Visibilidade dos Gays do Espectro Multissexual'
+        spring_testing_week: 'Semana Europeia do Teste de HIV/VIH na Primavera'
+        autumn_testing_week: 'Semana Europeia do Teste de HIV/VIH no Outono'
         sex_worker_day: 'International Sex Worker Day' # TODO
         equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
         sex_worker_pride: 'Sex Worker Pride' # TODO
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
-        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
-        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                      
+        omnisexual_omniromantic_day: 'Dia do Orgulho Omnissexual e Omniromântico'
+        omnisexual_awareness_day: 'Dia da Consciência Omnissexual'
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
     celebrating_day: 'celebra-se em'
