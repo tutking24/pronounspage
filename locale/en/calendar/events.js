@@ -88,6 +88,7 @@ module.exports = [
     new Event('Marriage Equality Day (Malta)', '_hrc', 9, day(1), EventLevel.Day),
     new Event('Marriage Equality Day (Taiwan)', '_hrc', 5, day(24), EventLevel.Day),
     new Event('Marriage Equality Day (Chile)', '_hrc', 3, day(10), EventLevel.Day),
+    new Event('{https://www.hiv.gov/blog/caribbean-american-hivaids-awareness-day-hiv-in-the-caribbean-region=Caribbean-American HIV/AIDS Awareness Day} (US)', '_red-ribbon', 6, day(8), EventLevel.Day, ['aids']),
 
     // --- dynamic date ---
 
