@@ -1006,7 +1006,7 @@ calendar:
         queer_youth_day: '{/terminology#queer=Queer} Youth Day'
         omnisexual_day: '{/terminology#omnisexual=Omnisexual} Visibility Day'
         unlabeled_day: '{https://unlabeledidentity.carrd.co/=Unlabelled Visibility Day}'
-        trans_youth_day: 'Trans Children and Youth Visibility Day'
+        trans_youth_day: '{https://elmarplatense.com/2021/05/14/se-conmemoro-el-primer-dia-de-la-visibilidad-de-las-nineces-y-adolescencias-trans-en-general-pueyrredon/=Trans Children and Youth Visibility Day}'
         hiv_long_term_survivors_day: '{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day}' 
         women_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day}'
         youth_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day}'
