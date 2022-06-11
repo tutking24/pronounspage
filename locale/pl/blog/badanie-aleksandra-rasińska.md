@@ -43,7 +43,7 @@ Pytania:
 1.	Jakich zaimków używasz na co dzień?
 2.	Jak określisz poziom swojej wiedzy o różnych możliwych formach językowych, które są neutralne płciowo?
 3.	Jakie są Twoje doświadczenia z odkrywaniem swojej tożsamości płciowej?
-4.	W jakim wieku (około) zdał_ś sobie sprawę z tego, że jesteś osobą niebinarną?
+4.	W jakim wieku (około) zdał\_ś sobie sprawę z tego, że jesteś osobą niebinarną?
 5.	W jakim wieku (około) pojawiły się u Ciebie pierwsze myśli dotyczące Twojej płci?
 6.	Jak widzisz siebie?
 7.	Jak myślisz, w jaki sposób postrzegają cię ludzie?
@@ -55,6 +55,6 @@ Pytania:
 13.	Z czym dla ciebie wiąże się bycie osobą niebinarną?
 14.	Jak Twoja tożsamość płciowa przekłada się na inne aspekty Twojego życia, takie jak zdrowie, życie towarzyskie, aktywność społeczną?
 15.	Jak obecna sytuacja polityczno-prawna wpływa na Twoje codzienne funkcjonowanie?
-16.	Gdyby istniała taka możliwość prawna, to czy zarejestrował_byś się jako osoba niebinarna i zmienił_ swój dowód tożsamości?
+16.	Gdyby istniała taka możliwość prawna, to czy zarejestrował\_byś się jako osoba niebinarna i zmienił\_ swój dowód tożsamości?
 17.	Jak myślisz, jaki stosunek mają osoby z Twojego środowiska do niebinarności?
 18.	Jaki jest według Ciebie poziom wiedzy o niebinarności w Polsce?
