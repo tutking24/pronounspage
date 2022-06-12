@@ -279,10 +279,21 @@ links:
                     – od opowiadań i wierszy, przez prozę poetycją, eseje i rysunki, do opowieści-diagramu.
                     Zaparszamy do lektury!
                 downloads:
-                    - {filename: 'Poczytałosie 2022 pages.pdf', label: 'Pobierz PDF (wąski ekran)', icon: 'mobile'}
-                    - {filename: 'Poczytałosie 2022 spread.pdf', label: 'Pobierz PDF (szeroki ekran)', icon: 'laptop'}
-                    - {filename: 'Poczytałosie 2022.mobi', label: 'Pobierz MOBI', icon: 'tablet-alt'}
-                    - {filename: 'Poczytałosie 2022.epub', label: 'Pobierz ePUB', icon: 'tablet-alt'}
+                    pdf-wide:
+                        filename: 'Poczytałosie 2022 spread.pdf'
+                        icon: 'laptop'
+                    pdf-narrow:
+                        filename: 'Poczytałosie 2022 pages.pdf'
+                        icon: 'mobile'
+                    pdf-print:
+                        filename: 'Poczytałosie 2022 booklet.pdf'
+                        icon: 'print'
+                    epub:
+                        filename: 'Poczytałosie 2022.epub'
+                        icon: 'tablet-alt'
+                    mobi:
+                        filename: 'Poczytałosie 2022.mobi'
+                        icon: 'tablet-alt'
     academic:
         -
             icon: 'comment-alt-edit'

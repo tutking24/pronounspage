@@ -9,20 +9,29 @@
 
         <section v-if="config.links.zine.releases.length">
             <ul class="list-unstyled">
-                <li v-for="release in config.links.zine.releases" class="d-flex flex-column flex-lg-row">
-                    <img :src="`/img-local/zine/${release.cover}`" class="cover border shadow"/>
-                    <div class="py-3 py-lg-0 px-lg-3">
+                <li v-for="release in config.links.zine.releases" class="row">
+                    <div class="col-12 col-lg-3">
+                        <img :src="`/img-local/zine/${release.cover}`" class="cover border shadow"/>
+                    </div>
+                    <div class="col-12 col-lg-9 py-3 py-lg-0 px-lg-3">
                         <h3>{{release.title}}</h3>
                         <LinkedText :text="release.description"/>
-                        <ul class="list-inline mt-3">
-                            <li v-for="download in release.downloads" class="list-inline-item">
-                                <a :href="`/api/download/${download.filename}`" class="btn btn-primary m-1">
-                                    <Icon :v="download.icon || 'file-download'"/>
-                                    {{download.label}}
-                                    <small v-if="stats[download.filename] !== undefined">({{stats[download.filename]}})</small>
+                        <ul class="list-inline my-3">
+                            <li v-for="({filename, icon}, format) in release.downloads" class="list-inline-item download-btn">
+                                <a :href="`/api/download/${filename}`" class="btn btn-primary m-1"
+                                   @mouseenter="selectedFormat = format"
+                                   @mouseleave="selectedFormat = null"
+                                >
+                                    <Icon :v="icon || 'file-download'"/>
+                                    <T>links.zine.format.{{format}}.name</T>
+                                    <small v-if="stats[filename] !== undefined">({{stats[filename]}})</small>
                                 </a>
                             </li>
                         </ul>
+                        <div v-if="selectedFormat" class="alert alert-info small">
+                            <Icon v="info-circle"/>
+                            <T>links.zine.format.{{selectedFormat}}.description</T>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -75,6 +84,11 @@
                 stats,
             };
         },
+        data() {
+            return {
+                selectedFormat: null,
+            }
+        },
         computed: {
             ...mapState([
                 'darkMode',
@@ -96,8 +110,15 @@
 
 .cover {
     width: 100%;
-    @include media-breakpoint-up('lg') {
-        max-width: 16rem;
+    height: auto;
+}
+@include media-breakpoint-down('lg') {
+    .download-btn {
+        display: block;
+        margin-right: 0;
+        .btn {
+            display: block;
+        }
     }
 }
 </style>
