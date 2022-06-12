@@ -1,4 +1,4 @@
-const {Event, Day, day, week, month, EventLevel} = require("../../../src/calendar/helpers");
+const {Event, Day, day, week, month, EventLevel, weekStarting, dayYear} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---
@@ -60,9 +60,9 @@ module.exports = [
     new Event('sexual_health_day', null, 2, day(12), EventLevel.Day),
     new Event('world_sexual_health_day', null, 9, day(4), EventLevel.Day),
     new Event('aids_vaccine_day', '_red-ribbon', 5, day(18), EventLevel.Day, ['aids']),
-    new Event('ominsexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
+    new Event('omnisexual_day', 'Omnisexual', 7, day(6), EventLevel.Day, ['omnisexual']),
     new Event('queer_youth_day', 'LGBTQ', 6, day(30), EventLevel.Day),
-    new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),    
+    new Event('unlabeled_day', '_Unlabelled', 1, day(19), EventLevel.Day, ['unlabeled', 'unlabeled gender']),
     new Event('hiv_long_term_survivors_day', '_red-ribbon', 6, day(5), EventLevel.Day, ['aids']),
     new Event('women_hiv_awareness_day', '_red-ribbon', 3, day(10), EventLevel.Day, ['aids']),
     new Event('youth_hiv_awareness_day', '_red-ribbon', 4, day(10), EventLevel.Day, ['aids']),
@@ -71,6 +71,14 @@ module.exports = [
     new Event('hiv_aging_awareness_day', '_red-ribbon', 9, day(18), EventLevel.Day, ['aids']),
     new Event('trans_hiv_testing_day', '_red-ribbon', 4, day(18), EventLevel.Day, ['aids']),
     new Event('trans_youth_day', 'Transgender', 5, day(14), EventLevel.Day, ['transgender']),
+    new Event('mspec_lesbian_day', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('mspec_lesbian_week', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
+    new Event('sex_worker_day', '_sex-work', 6, day(2), EventLevel.Day),
+    new Event('sex_worker_pride', '_sex-work', 9, day(14), EventLevel.Day),
+    new Event('sex_worker_rights_day', '_sex-work', 3, day(3), EventLevel.Day),
+    new Event('sex_worker_violence_day', '_sex-work', 12, day(17), EventLevel.Day),
+    new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['omnisexual', 'omniromantic']),
+    new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['omnisexual']),
 
     // --- dynamic date ---
 
@@ -317,4 +325,8 @@ module.exports = [
         }
     }, EventLevel.Week, ['progress pride']),
 
+    new Event('equal_pay_day', '_hrc', 6, dayYear(16, 2021), EventLevel.Day),
+    new Event('equal_pay_day', '_hrc', 6, dayYear(15, 2022), EventLevel.Day),
+    new Event('spring_testing_week', '_red-ribbon', 5, weekStarting(16, 2022), EventLevel.Week, ['aids']),
+    new Event('autumn_testing_week', '_red-ribbon', 11, weekStarting(21, 2022), EventLevel.Week, ['aids']),
 ];

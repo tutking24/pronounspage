@@ -80,25 +80,29 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
         console.log('------------');
         console.log(locales[locale].name);
 
-        const { day, message, image } = await (await fetch(locales[locale].url + '/api/calendar/today')).json();
-        console.log('<<<', message, '>>>');
-        if (!message) { continue; }
-
-        fs.writeFileSync(imageTmpPath, Buffer.from(await (await fetch(image)).arrayBuffer()), {encoding: 'binary'});
-        let imageStream = null;
         try {
-            imageStream = fs.createReadStream(imageTmpPath);
-        } catch {}
+            const { day, message, image } = await (await fetch(locales[locale].url + '/api/calendar/today')).json();
+            console.log('<<<', message, '>>>');
+            if (!message) { continue; }
 
-        for (let publisher of process.argv[3].split(',')) {
-            console.log('Publishing: ' + publisher);
-            const postId = await publishers[publisher](
-                message,
-                imageStream,
-                lastPostId[publisher]
-            );
-            console.log(postId);
-            lastPostId[publisher] = postId;
+            fs.writeFileSync(imageTmpPath, Buffer.from(await (await fetch(image)).arrayBuffer()), {encoding: 'binary'});
+            let imageStream = null;
+            try {
+                imageStream = fs.createReadStream(imageTmpPath);
+            } catch {}
+
+            for (let publisher of process.argv[3].split(',')) {
+                console.log('Publishing: ' + publisher);
+                const postId = await publishers[publisher](
+                    message,
+                    imageStream,
+                    lastPostId[publisher]
+                );
+                console.log(postId);
+                lastPostId[publisher] = postId;
+            }
+        } catch (e) {
+            console.error(e);
         }
     }
 })();

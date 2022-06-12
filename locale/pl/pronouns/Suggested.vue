@@ -9,7 +9,7 @@
             <p>
                 <Spelling text="Choć nie narzucamy i nie wartościujemy żadnych spośród propozycji niebinarnego i neutralnego płciowo języka,
                     to dostrzegamy też potrzebę zasugerowania, które formy zdają się według naszych obserwacji i"/>
-                <nuxt-link to="/blog/spis-2021">badań</nuxt-link>
+                <nuxt-link to="/blog/spis-2022">badań</nuxt-link>
                 <Spelling text="mieć największy potencjał, by stać się „domyślnymi”, normatywnymi formami gramatycznymi. Szczegóły w naszym Manifeście:"/>
             </p>
 
@@ -32,7 +32,7 @@
                                 (ono/jego, „zrobiłom”, „poszłoś”…)
                                 <br/>
                                 Są <a href="https://rjp.pan.pl/index.php?option=com_content&view=article&id=317:byom-byo&catid=44&Itemid=208" target="_blank" rel="noopener">poprawne gramatycznie</a>
-                                i <nuxt-link to="/blog/spis-2021">popularne w społeczności</nuxt-link>.
+                                i <nuxt-link to="/blog/spis-2022">popularne w społeczności</nuxt-link>.
                             </small>
                         </li>
                         <li>

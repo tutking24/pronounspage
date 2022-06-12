@@ -48,8 +48,6 @@ module.exports = [
     new Event('Día del Orgullo de Ser Travesti y Transexual (Brasil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
     new Event('Día Nacional de Afirmación Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
     new Event('Día de la Inclusión Social (Brasil)', null, 12, day(10), EventLevel.Day),
-    new Event('Día de la Visibilidad de las Lesbianas del Espectro Multisexual', '_mspec_lesbians', 5, day(26), EventLevel.Day, ['mspec lesbian', 'bi lesbian', 'bi gay']),
-    new Event('Semana de la Visibilidad de las Lesbianas del Espectro Multisexual', '_mspec_lesbians', 5, weekStarting(22), EventLevel.Week, ['mspec lesbian', 'bi lesbian', 'bi gay']),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),
