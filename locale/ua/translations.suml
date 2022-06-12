@@ -1108,7 +1108,7 @@ calendar:
         world_sexual_health_day: 'Всесвітній день сексуального здоровʼя'
         aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
         queer_youth_day: 'Queer Youth Day' # TODO
-        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        omnisexual_day: 'Omnisexual Visibility Day' # TODO
         unlabeled_day: 'Unlabeled Visibility Day' # TODO    
         trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
         hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
@@ -1117,7 +1117,20 @@ calendar:
         gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
         hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
-        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO                      
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO  
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        spring_testing_week: 'Spring European HIV Testing Week' # TODO
+        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
+        sex_worker_day: 'International Sex Worker Day' # TODO                    
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
+        sex_worker_pride: 'Sex Worker Pride' # TODO
+        sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
+        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
+        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
+        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
     banner: 'Ми святкуємо'
     celebrating_custom: 'святкується'
     celebrating_day: 'святкується'

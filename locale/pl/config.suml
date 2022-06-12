@@ -63,7 +63,12 @@ pronouns:
                 examples:
                     - [ 'usłyszałam dzwonek telefonu', 'zadzwonił telefon' ]
                     - [ 'przestraszyłem się nagłego hałasu', 'jakiś nagły hałas mnie przestraszył' ]
+            -
+                header: 'Użycie czasowników niewłaściwych'
+                normative: true
+                examples:
                     - [ 'powinieneś skoczyć do sklepu', 'trzeba by skoczyć do sklepu' ]
+                    - [ 'widziałem fajerwerki', 'widać było fajerwerki' ]
             -
                 header: 'Strona bierna'
                 normative: true
@@ -77,6 +82,7 @@ pronouns:
                     - [ 'pani w urzędzie powiedziała mi', 'w urzędzie powiedziano mi' ]
                     - [ 'znalazłam telefon', 'znaleziono telefon' ]
                     - [ 'jak jesteś zalogowany, to możesz edytować wpisy', 'jak się jest zalogowanym, można edytować wpisy' ]
+                    - [ 'slyszałam dziwne odgłosy', 'było słychać dziwne odgłosy' ]
             -
                 header: 'Bezosobowe użycie 3. os. mnogiej'
                 normative: true
@@ -89,6 +95,7 @@ pronouns:
                     - [ 'przypomniałem sobie', 'przypomniało mi się' ]
                     - [ 'zmarzłam', 'zrobiło mi się zimno' ]
                     - [ 'zrobiłem', 'udało mi się zrobić' ]
+                    - [ 'nigdy nie myślałam o tym w ten sposób', 'nigdy nie zdarzało mi się myśleć o tym w ten sposób' ]
             -
                 header: 'Bezokolicznikowy czas przyszły'
                 normative: true
@@ -156,6 +163,11 @@ pronouns:
                 normative: true
                 examples:
                     - [ 'dziesięciu pracowników', 'dziesięcioro pracujących' ]
+            -
+                header: 'Ujęcie innymi słowami'
+                normative: true
+                examples:
+                    - [ 'psa się cieszy że wróciłom', 'psa się cieszy, że jestem z powrotem w domu' ]
     mirror:
         route: 'lustrzane'
         name: 'Zaimki lustrzane'
@@ -297,7 +309,7 @@ links:
             icon: 'comment-alt-edit'
             url: 'http://cejsh.icm.edu.pl/cejsh/element/bwmeta1.element.doi-10_2478_v10167-011-0010-y'
             headline: 'Wpływ Androcentrycznych i Inkluzywnych Płciowo Konstrukcji Językowych Na Skojarzenia z Płcią'
-            extra: 'Katarzyna Bojarska; Instytut Psychologi, Uniwersytet Gdański'
+            extra: ' – Katarzyna Bojarska; Instytut Psychologi, Uniwersytet Gdański'
             quote: >
                 Analizowano płeć 491 postaci narysowanych pod wpływem instrukcji androcentrycznej i inkluzywnej.
                 Męskie formy leksykalne były odbierane jako sugerujące płeć męską,
@@ -354,7 +366,7 @@ links:
             icon: 'play-circle'
             url: 'https://www.facebook.com/gdynaukajestkobieta/videos/193680249317891'
             headline: 'Tip-top. Krok w stronę feminatywów.'
-            extra: 'Sybil (Gdy Nauka jest Kobietą UAM)'
+            extra: ' – Sybil (Gdy Nauka jest Kobietą UAM)'
         -
             icon: 'newspaper'
             url: 'https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a'
@@ -408,7 +420,7 @@ links:
             icon: 'comment-alt-edit'
             url: 'https://ispan.waw.pl/ireteslaw/handle/20.500.12528/1616'
             headline: 'Nijakość w języku i neutralność w literaturze jako sygnał odmienności kulturowej?'
-            extra: 'Eliza Pieciul-Karmińska; Uniwersytet im. Adama Mickiewicza w Poznaniu'
+            extra: ' – Eliza Pieciul-Karmińska; Uniwersytet im. Adama Mickiewicza w Poznaniu'
             quote: >
                 Tłumaczka musiała więc arbitralnie wyznaczać płeć
                 (np. baśniowych zwierząt, takich jak: mysz, pies, kot czy ropucha),
@@ -430,7 +442,7 @@ links:
             icon: 'comment-alt-edit'
             url: 'https://ispan.waw.pl/ireteslaw/handle/20.500.12528/1612'
             headline: 'Kategorie gramatyczne a językowy obraz świata'
-            extra: 'Anna Pajdzińska; UMCS'
+            extra: ' – Anna Pajdzińska; UMCS'
             quote: >
                 Uczona nie wyklucza jednak roli stosunków społecznych w kształtowaniu się kategorii męskoosobowości,
                 uznając, że kategoria ta „może być traktowana jako świadectwo uprzywilejowanej pozycji mężczyzn
@@ -448,7 +460,22 @@ links:
             icon: 'play-circle'
             url: 'https://www.facebook.com/KatedraPerformatykiUniwersytetJagiellonski/videos/398502548530853'
             headline: 'Moja biologia to nie Twoja mitologia. (Nie)wiedza a miejsce (dla) innych'
-            extra: 'Katedra Performatyki, Uniwersytet Jagielloński (o języku niebinarnym od około 1:00:00)'
+            extra: ' – Katedra Performatyki, Uniwersytet Jagielloński (o języku niebinarnym od około 1:00:00)'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://repozytorium.ur.edu.pl/handle/item/7956'
+            headline: 'Niestandardowe formy rodzajowe w wybranych polskich tekstach literackich'
+            extra: ' – Szymon Misiek; artykuł w monografii “New Vistas in Language Studies: Young Scholars'' Perspectives”'
+            quote: >
+                Język jest niezwykle istotną kwestią dla całej społeczności osób transpłciowych – to właśnie w tej sferze
+                tożsamość płciowa może zostać wyrażona i uznana (bądź nie) przez innych. W szczególnej sytuacji znajdują
+                się osoby niebinarne, które jako osoby niebędące (w pełni i wyłącznie) kobietami ani mężczyznami, mogą
+                nie chcieć stosować tradycyjnych męskich lub żeńskich form rodzajowych (co może stanowić wyzwanie
+                w przypadku języków tak silnie upłciowionych jak polski). Jak pokazują ostatnie badania, polskojęzyczne
+                osoby niebinarne wykazują się dużą innowacyjnością, sięgając po niestandardowe, w tym neologiczne, formy.
+                W niniejszym artykule omawiam przykłady takich form zaczerpnięte z polskich tekstów literackich.
+                Przyglądam się nie tylko ich morfologii, ale też kontekstowi użycia (tj. jakie postacie się nimi
+                posługują i czy w tekście pojawia się dyskusja metajęzykowa).
     links:
         -
             icon: 'globe-europe'
@@ -606,6 +633,19 @@ links:
                 lecz wystraszone kaczątko jeszcze przez kilka godzin nie śmiało ruszyć się z miejsca.
                 Na koniec cisza je uspokoiła, podniosło głowę, otworzyło oczy, a nie widząc nikogo, zaczęło uciekać,
                 ile mu sił starczyło, dalej, dalej, dalej!
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://run.pan.pl/index.php?option=com_content&view=category&layout=blog&id=59&Itemid=286&lang=pl-pl'
+            headline: 'Stanowisko Rady Upowszechniania Nauki Polskiej Akademii Nauk w sprawie sposobu komunikacji naukowej dotyczącej tożsamości płciowej'
+            quote: >
+                \[…] komunikacja wiedzy naukowej dotycząca kwestii wrażliwych społecznie powinna uwzględniać
+                dobrostan osób dyskryminowanych, […] powoływanie się przez osoby popularyzujące naukę na wiedzę biologiczną,
+                bez uwzględniania, co w niej jest wynikiem badań empirycznych, których wyniki włączane są
+                w zbiór aktualnie obowiązującej wiedzy, a co jej interpretacją, jest według nas niedopuszczalne.
+                Popularyzacja nauki powinna wystrzegać się uproszczeń, które są fałszywe i prowadzą do wzmacniania
+                istniejących stereotypów i uprzedzeń. Za Amerykańskim Narodowym Stowarzyszeniem Komunikacji (NCA, 1999)
+                powtarzamy, że „etyczny sposób komunikacji zwiększa ludzką wartość i godność poprzez wspieranie
+                prawdomówności, uczciwości, odpowiedzialności, integralności osobistej oraz szacunku dla siebie i innych”.
     mediaGuests:
         -
             icon: 'newspaper'
@@ -1296,6 +1336,62 @@ links:
                 Choć polska tradycja nie zna takich imion, to opiniujemy je pozytywnie,
                 bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
                 należy uznać tę pierwszą za wyższą.
+    endorsements:
+        #deaver-all-the-best:
+        #    author: 'Mason Deaver'
+        #    title: 'Wszystkiego, co najlepsze'
+        #    publisher: 'We need YA'
+        #    link: 'https://wydawnictwopoznanskie.pl/'
+        #    description:
+        #        - >
+        #            Historia niebinarneno Ben wyrzuconeno z domu po coming oucie,
+        #            zmagająceno się ze swoim zdrowiem psychicznym i odkrywająceno siłę przyjaźni i miłości.
+        #        - >
+        #            Tłumacz Artur Łuksza zdecydował się na przełożenie
+        #            {https://en.pronouns.page/they=„singular they”} jako formy {/ono/jeno=„ono/jeno”},
+        #            a w przedmowie dziękuje ekipie zaimków.pl za pomocne materiały.
+        #            {/kolektyw-rjn=Rada Języka Neutralnego} objęła książkę mecenatem merytorycznym.
+        #    review: 'mason-deaver-wszystkiego-co-najlepsze'
+        gevisser-pink-line:
+            author: 'Mark Gevisser'
+            title: 'Różowa linia'
+            publisher: 'Wydawnictwo Poznańskie'
+            link: 'https://wydawnictwopoznanskie.pl/produkt/rozowa-linia/'
+            description:
+                - >
+                    W tym reportażu ze swoich podróży Mark Gevisser relacjonuje niezmiernie ciekawe historie życiowe
+                    osób queerowych z różnych zakątków świata, pokazując burzliwe i niezmiennie przesuwające się
+                    różowe linie – linie frontu walki o prawa człowieka.
+                - >
+                    {/@andrea=Andrea}, na prośbę tłumacza Adriana Stachowskiego, dokonało redakcji merytorycznej
+                    części książki dotyczącej tożsamości płciowej, zwłaszcza w zakresie terminologii i użycia zaimków.
+                    {/kolektyw-rjn=Rada Języka Neutralnego} objęła książkę mecenatem merytorycznym.
+            review: 'mark-gevisser-różowa-linia'
+        bugsnax:
+            author: ~
+            title: 'Bugsnax'
+            publisher: 'Young Horses'
+            link: 'https://bugsnax.com/'
+            description:
+                - >
+                    Indie przygodówka, której akcja dzieje się na wyspie zamieszkanej przez żyjątka,
+                    które są również… pysznymi przekąskami. Zadaniem osoby grającej jest rozwiązanie zagadki
+                    tajemniczego zniknięcia badaczki bugsnaxów.
+                    Gra pełna jest queerowych wątków i postaci – wśród nich jest też niebinarnu Floofty.
+                - >
+                    Tłumaczka Ola Lubińska konsultowała z nami {/korpus#bugsnax=użycie} {/onu=dukaizmów}.
+                    W napisach końcowych gry znalazły się podziękowania dla ekipy zaimków.pl.
+        #empatyczny:
+        #    author: ~
+        #    title: 'Słownik Empatyczny Języka Polskiego'
+        #    publisher: ~
+        #    link: 'https://www.facebook.com/slownikempatyczny/'
+        #    description:
+        #        - >
+        #            Fanpage na Facebooku poświęcony empatii w warstwie językowej – jak mówić,
+        #            by nie wykluczać i nie krzywdzić. „Bądźmy bardziej empatyczni wobec siebie, a będzie nam lepiej.”
+        #        - >
+        #            Jesteśmy w stałej współpracy z ekipą Słownika Empatycznego.
 
 people:
     enabled: false
