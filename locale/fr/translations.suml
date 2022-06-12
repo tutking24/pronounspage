@@ -1007,13 +1007,13 @@ calendar:
         mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
         mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
         mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO  
-        sex_worker_pride: 'Sex Worker Pride' # TODO  
-        sex_worker_rights_day: 'International Sex Workers'' Rights Day'  # TODO  
-        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO  
+        spring_testing_week: 'Semaine Européenne printanière des tests anti-VIH'
+        autumn_testing_week: 'Semaine Européenne automnale des tests anti-VIH'
+        sex_worker_day: 'Journée internationale des travailleurs du sexe'
+        equal_pay_day: 'Journée de sensibilisation à la paie équitable des LGBTQIA+'
+        sex_worker_pride: 'Fierté des travailleurs du sexe'
+        sex_worker_rights_day: 'Journée internationale des droits des travailleurs du sexe'
+        sex_worker_violence_day: 'Journée internationale pour stopper les violences à l'encontre des Travailleurs du sexe'
         omnisexual_omniromantic_day: 'Journée de la fierté et visibilité omnisexuelle et omniromantique'
         omnisexual_awareness_day: 'Journée de la sensibilité à la omnisexualité'
     banner: 'Nous célébrons '
