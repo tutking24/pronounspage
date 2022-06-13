@@ -25,6 +25,7 @@ module.exports = [
     new Event('Dia da Visibilidade Lésbica (Argentina)', 'Lesbian', 3, day(7), EventLevel.Day, ['lesbian']),
     new Event('Dia da Visibilidade Lésbica (Paraguay)', 'Lesbian', 9, day(16), EventLevel.Day, ['lesbian']),
     new Event('Dia do Ativismo pela Diversidade Sexual (Argentina)', 'LGBTQ', 8, day(20), EventLevel.Day),
+    new Event('Dia da Visibilidade Lésbica Galega (Galiza)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
 
     // --- one-off events ---
     new Event('{https://dezanove.pt/marcha-orgulho-lgbti-leiria-marcha-a-2-1523945=1ª Marcha do Orgulho LGBTI+ de Leiria} (Portugal)', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
