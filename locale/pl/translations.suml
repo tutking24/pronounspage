@@ -1809,7 +1809,7 @@ calendar:
         aro_month: 'Miesiąc Świadomości nt. {/terminologia#aromantyczność=Aromantyczności}'
         black_ribbon_day: 'Europejski Dzień Pamięci Ofiar Stalinizmu i Nazizmu'
         black_queer_week: 'Tydzień Historii Czarnych Osób {/terminologia#queer=Queer}'
-        mena_lesbian_day: 'Dzień Dumy {/terminologia#lesbijka=Lesbijek} i {/terminologia#queer=Queerowych} Kobiet z Bliskiego Wschodu i Afryki Północnej'
+        mena_lesbian_day: 'Dzień Dumy {/terminologia#lesbijka=Lesbijek} i {/terminologia#queer=Queerowych} Kobiet {https://humena.org/publications/topic/265=z Azji Zachodniej i Afryki Północnej}'
         hate_crime_awareness_week: 'Tydzień Świadomości nt. Przestępstw z Nienawiści'
         deaf_awareness_week: 'Tydzień Świadomości nt. Głuchych Osób LGBTQ'
         suicide_prevention_day: 'Światowy Dzień Zapobiegania Samobójstwom'
