@@ -91,6 +91,7 @@ module.exports = [
     new Event('{https://www.hiv.gov/blog/caribbean-american-hivaids-awareness-day-hiv-in-the-caribbean-region=Caribbean-American HIV/AIDS Awareness Day} (US)', '_red-ribbon', 6, day(8), EventLevel.Day, ['aids']),
     new Event('{https://www.hivisnotacrime-etaf.org/=HIV Is Not a Crime Awareness Day}', '_red-ribbon', 2, day(28), EventLevel.Day, ['aids']),
     new Event('{/terminology#lesbian=Lesbian} {https://www.bng.gal/articulo/novas/dia-visibilidade-lesbica-galega/20210608103130030074.html=Visibility Day} (Galicia)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
+    new Event('{https://napwha.org.au/about-us/national-network-of-women/=National Day of Women living with HIV} (Australia)', '_red-ribbon', 3, day(9), EventLevel.Day, ['aids']),
 
     // --- dynamic date ---
 
