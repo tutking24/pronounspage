@@ -987,7 +987,7 @@ calendar:
         black_ribbon_day: 'Black Ribbon Day'
         black_queer_week: 'Black {/terminology#queer=Queer} History Week'
         black_queer_week___timeDescription: 'in the third week of February'
-        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
+        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         hate_crime_awareness_week___timeDescription: 'from the second to the third Saturday of October (inclusive both Saturdays)'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
