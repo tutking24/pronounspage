@@ -195,6 +195,20 @@ module.exports = [
         yield new Day(lastDay.year, 12, 1);
     }, EventLevel.Week, ['aids']),
 
+    // second Thursday of September
+    new Event('{https://en.wikipedia.org/wiki/R_U_OK%3F=R U OK? Day (Australia)}', '_yellow-ribbon', 9, function* (monthDays) {
+        let thursdays = 0;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 4) {
+                thursdays++;
+                if (thursdays === 2) {
+                    yield d;
+                    return;
+                }
+            }
+        }
+    }, EventLevel.Day),
+
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
