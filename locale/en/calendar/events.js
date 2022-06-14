@@ -93,6 +93,7 @@ module.exports = [
     new Event('{/terminology#lesbian=Lesbian} {https://www.bng.gal/articulo/novas/dia-visibilidade-lesbica-galega/20210608103130030074.html=Visibility Day} (Galicia)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
     new Event('{https://napwha.org.au/about-us/national-network-of-women/=National Day of Women living with HIV} (Australia)', '_red-ribbon', 3, day(9), EventLevel.Day, ['aids']),
     new Event('Alan Turing Day', '_black-ribbon', 6, day(23), EventLevel.Day),
+    new Event('{https://twitter.com/hrc/status/1296122309036650497=Trans} Flag Day', 'Transgender', 8, day(19), EventLevel.Day, ['transgender']),
 
     // --- dynamic date ---
 
@@ -212,6 +213,7 @@ module.exports = [
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
+    new Event('{https://en.wikipedia.org/wiki/National_Gender_and_Sexual_Minorities%27_Day_(Nepal)=National Gender and Sexual Minorities\' Day} (Nepal)', null, 12, dayYear(21, 2022), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
