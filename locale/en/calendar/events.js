@@ -213,7 +213,7 @@ module.exports = [
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
-    new Event('{https://en.wikipedia.org/wiki/National_Gender_and_Sexual_Minorities%27_Day_(Nepal)=National Gender and Sexual Minorities\' Day} (Nepal)', null, 12, dayYear(21, 2022), EventLevel.Day),
+    new Event('{https://en.wikipedia.org/wiki/National_Gender_and_Sexual_Minorities%27_Day_(Nepal)=National Gender and Sexual Minorities\' Day} (Nepal)', 'LGBTQ', 12, dayYear(21, 2022), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
