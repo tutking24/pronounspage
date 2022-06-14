@@ -166,7 +166,8 @@ links:
     mediaGuests: []
     mediaMentions: []
     recommended:
-        -   icon: 'cogs'
+        -
+            icon: 'cogs'
             url: 'https://isgc.app/'
             headline: 'GC Checker'
             extra: ' – TwitterアカウントのタイムラインからGC系の話題及びアカウントに関連していそうなものを抽出して表示するツール。'
