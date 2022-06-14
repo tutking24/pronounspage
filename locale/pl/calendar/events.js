@@ -21,6 +21,9 @@ module.exports = [
     new Event('Dzień Różowego Trójkąta (Kanada)', null, 2, day(14), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
+    new Event('Dzień Alana Turinga', '_black-ribbon', 6, day(23), EventLevel.Day),
+    new Event('Dzień Flagi Trans', 'Transgender', 8, day(19), EventLevel.Day, ['transgender']),
+    new Event('{https://www.hivisnotacrime-etaf.org/=Dzień Na Rzecz Dekryminalizacji HIV}', '_red-ribbon', 2, day(28), EventLevel.Day, ['aids']),        
     
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
