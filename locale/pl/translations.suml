@@ -1064,7 +1064,7 @@ links:
                 name: 'PDF (wersja do druku)'
                 description: >
                     Kolejność stron jest przetasowana tak, by można było wydrukować zina na domowej drukarce i złożyć go na pół jak książkę.
-                    Należy w tym celu włączyć druk dwustronny, dwie strony na arkusz, short-side binding.
+                    Należy w tym celu włączyć druk dwustronny, dwie strony na arkusz, short-edge binding.
             epub:
                 name: 'ePUB'
                 description: >
