@@ -28,6 +28,10 @@
                                 </a>
                             </li>
                         </ul>
+                        <p v-if="downloadsCount(release)">
+                            <Icon v="download"/>
+                            {{ downloadsCount(release) }}
+                        </p>
                         <div v-if="selectedFormat" class="alert alert-info small">
                             <Icon v="info-circle"/>
                             <T>links.zine.format.{{selectedFormat}}.description</T>
@@ -93,6 +97,15 @@
             ...mapState([
                 'darkMode',
             ]),
+        },
+        methods: {
+            downloadsCount(release) {
+                let count = 0;
+                for (let {filename} of Object.values(release.downloads)) {
+                    count += this.stats[filename] ?? 0;
+                }
+                return count;
+            },
         },
         head() {
             return head({
