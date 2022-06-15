@@ -4,6 +4,9 @@ import multer from 'multer';
 import {loadImage, createCanvas} from 'canvas';
 import {handleErrorAsync} from "../../src/helpers";
 import sharp from 'sharp';
+import fs from 'fs';
+import SQL from 'sql-template-strings';
+import path from 'path';
 
 import awsConfig from '../aws';
 import S3 from 'aws-sdk/clients/s3';
@@ -84,6 +87,34 @@ router.post('/images/upload', multer({limits: {fileSize: 10 * 1024 * 1024}}).any
         ids.push(id);
     }
     return res.json(ids);
+}));
+
+router.get('/download/:filename*', handleErrorAsync(async (req, res) => {
+    const filename = req.params.filename + req.params[0];
+
+    const filepath = `${__dirname}/../../locale/${global.config.locale}/files/${filename}`;
+
+    if (!fs.existsSync(filepath)) {
+        return res.status(404).json({error: 'Not found'});
+    }
+
+    await req.db.get(SQL`INSERT INTO downloads (id, locale, filename) VALUES (${ulid()}, ${global.config.locale}, ${filename});`);
+
+    return res.download(path.resolve(filepath));
+}));
+
+router.get('/downloads', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const stats = {};
+
+    for (let {filename, c} of await req.db.all(SQL`SELECT filename, count(*) as c FROM downloads WHERE locale = ${global.config.locale} GROUP BY filename;`)) {
+        stats[filename] = c;
+    }
+
+    return res.json(stats);
 }));
 
 export default router;

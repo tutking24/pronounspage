@@ -267,6 +267,33 @@ links:
         enabled: true
         route: 'zin'
         open: false
+        releases:
+            -
+                title: 'Poczytałosie'
+                cover: 'poczytałosie-2022.png'
+                banner: 'poczytałosie-2022-banner.png'
+                description: >
+                    Z dumą prezentujemy stworzony przez polskojęzyczną społeczność osób niebinarnych
+                    zin na temat odkrywania swojej płci oraz życia jako osoba niebinarna.
+                    Szeroki zakres tematyczny oraz dowolność formy zaowocowały dużą różnorodnością zgłoszeń
+                    – od opowiadań i wierszy, przez prozę poetycją, eseje i rysunki, do opowieści-diagramu.
+                    Zaparszamy do lektury!
+                downloads:
+                    pdf-wide:
+                        filename: 'Poczytałosie 2022 spread.pdf'
+                        icon: 'laptop'
+                    pdf-narrow:
+                        filename: 'Poczytałosie 2022 pages.pdf'
+                        icon: 'mobile'
+                    pdf-print:
+                        filename: 'Poczytałosie 2022 booklet.pdf'
+                        icon: 'print'
+                    epub:
+                        filename: 'Poczytałosie 2022.epub'
+                        icon: 'tablet-alt'
+                    mobi:
+                        filename: 'Poczytałosie 2022.mobi'
+                        icon: 'tablet-alt'
     academic:
         -
             icon: 'comment-alt-edit'

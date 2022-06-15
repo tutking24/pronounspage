@@ -31,3 +31,6 @@ switch:
 	ln -sfn ./locale/${LANG} ./data
 	ln -sfn ../locale/${LANG}/img ./static/img-local
 	ln -sfn ../locale/${LANG}/docs ./static/docs-local
+
+migrate:
+	node server/migrate.js
