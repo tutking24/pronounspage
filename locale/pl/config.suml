@@ -291,9 +291,9 @@ links:
                     epub:
                         filename: 'Poczytałosie 2022.epub'
                         icon: 'tablet-alt'
-                    mobi:
-                        filename: 'Poczytałosie 2022.mobi'
-                        icon: 'tablet-alt'
+                    #mobi:
+                    #    filename: 'Poczytałosie 2022.mobi'
+                    #    icon: 'tablet-alt'
     academic:
         -
             icon: 'comment-alt-edit'
