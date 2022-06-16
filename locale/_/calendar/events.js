@@ -80,6 +80,7 @@ module.exports = [
     new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['omnisexual', 'omniromantic']),
     new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['omnisexual']),
     new Event('mspec_gay_day', '_mspec_lesbians', 7, day(7), EventLevel.Day, ['mspec gay', 'bi gay']),
+    new Event('mspec_lesbian_week', '_mspec_lesbians', 7, weekStarting(4), EventLevel.Week, ['mspec gay', 'bi gay']),
 
     // --- dynamic date ---
 
