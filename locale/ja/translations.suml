@@ -999,7 +999,10 @@ calendar:
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
         omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
-        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO                                                               
+        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO 
+        hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
+        trans_flag_day: 'Trans Flag Day' # TODO
+        alan_turing_day: 'Alan Turing Day' # TODO                                                  
     banner: '現在、以下のお祝いをしています'
     celebrating_custom: ''
     celebrating_day: ''
