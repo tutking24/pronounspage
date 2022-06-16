@@ -113,7 +113,7 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['sinyor', 'sinyora', 'sinyore', 'musyu', 'madam', 'hanum', 'efendi', 'demuazel', 'bey', 'chilibi', 'bula', 'gospoya']
+        - ['sinyor', 'sinyora', 'sinyore', 'musyu', 'madam', 'hanum', 'efendi', 'demuazel', 'bey', 'chilibi', 'bula', 'gospodin', 'gospoya']
         - ['persona', 'ombre', 'mujer', 'chik_', 'muchach_',  'ij_', 'donzel_', 'benadam']
         - ['lind_', 'luzi_', 'ermoz_', 'yakishikli_', 'sangrud_', 'kerid_', 'seksi']
         - ['amig_', 'amigit_', 'espoz_', 'marid_', 'amigit_', 'hatan', 'haver', 'djanum', 'habibi']
