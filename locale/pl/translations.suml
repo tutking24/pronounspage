@@ -1039,7 +1039,7 @@ links:
                 -
                     icon: 'calendar'
                     label: 'Termin'
-                    content: 'do końca grudnia 2021'
+                    content: 'Zgłoszenia otwarte bezterminowo. Jeśli/gdy prac zbierze się wystarczająco na kolejny numer, wtedy zdecydujemy o jego wydaniu.'
                 -
                     icon: 'mailbox'
                     label: 'Adres'
