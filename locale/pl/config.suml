@@ -266,7 +266,7 @@ links:
     zine:
         enabled: true
         route: 'zin'
-        open: false
+        open: true
         releases:
             -
                 title: 'Poczytałosie'
