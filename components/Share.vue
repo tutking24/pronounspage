@@ -20,6 +20,7 @@
     // can't use from yarn, because window.onload conflicts with SSR
 
     const NETWORKS = {
+        mastodon: function (d) { return `https://toot.kytta.dev/?text=${d.title}%0A%0A${d.url}`; },
         facebook: function (d) { return "https://www.facebook.com/sharer/sharer.php?u=" + d.url; },
         linkedin: function (d) { return "https://www.linkedin.com/shareArticle?mini=true&url=" + d.url + "&title=" + d.title; },
         messenger: function (d) { return "https://www.facebook.com/dialog/send?app_id=3619024578167617&link=" + d.url + "&redirect_uri=" + d.url; },
@@ -35,6 +36,7 @@
     };
 
     const COLOURS = {
+        mastodon: '#3188d4',
         facebook: '#1877F2',
         linkedin: '#2867B2',
         messenger: '#0099FF',
@@ -59,7 +61,7 @@
     export default {
         props: {
             title: { default: 'Zaimki.pl' },
-            networks: { default: _ => ['twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
+            networks: { default: _ => ['mastodon', 'twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
             nolabel: { type: Boolean },
             shareApiSeparate: { type: Boolean },
         },
