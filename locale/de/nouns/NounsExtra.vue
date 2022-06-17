@@ -93,6 +93,17 @@
                             N_pl: 'meine besten Lehroj', G_pl: 'meiner besten Lehroj', D_pl: 'meinen besten Lehrojn', A_pl: 'meine besten Lehrojn',
                         }),
                     },
+                    'NoNa-System': {
+                        info: 'Formen vorgestellt von {https://geschlechtsneutralesdeutsch.com/=Geschlechtsneutrales Deutsch}.',
+                        declension: new NounDeclension({
+                            N: 'dai Arbeiter*in', G: 'dais Arbeiter*in', D: 'dam Arbeiter*in', A: 'dai Arbeiter*in',
+                            N_pl: 'die Arbeiter*innen', G_pl: 'der Arbeiter*innen', D_pl: 'den Arbeiter*innen', A_pl: 'die Arbeiter*innen',
+                        }),
+                        extendedDeclension: new NounDeclension({
+                            N: 'meint beste Lehrer*in', G: 'meinter besten Lehrer*in', D: 'meintem besten Lehrer*in', A: 'meint beste Lehrer*in',
+                            N_pl: 'meine besten Lehrer*innen', G_pl: 'meiner besten Lehrer*innen', D_pl: 'meinen besten Lehrer*innen', A_pl: 'meine besten Lehrer*innen',
+                        }),
+                    },
                     'Person-Formen': {
                         declension: new NounDeclension({
                             N: 'die Arbeitsperson', G: 'der Arbeitsperson', D: 'der Arbeitsperson', A: 'die Arbeitsperson',
