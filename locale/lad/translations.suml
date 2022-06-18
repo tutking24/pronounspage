@@ -405,7 +405,7 @@ user:
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
         depreciationNotice: >
-            Este no es un mantenedor de autentikasyon sadik.
+            Este no es un mantenedor de autentifikasyon sadik.
             <a href="%link%" target="_blank" rel="noopener">Ve este atadijo para mas detalyos</a>.
             Rekomendamos fuertemente ke te asegures de tener un metodo diferente de koneksyon desponible.
     code:
@@ -436,15 +436,15 @@ user:
         disconnect: 'Deskonektar'
         disconnectConfirm: 'Konfirmas ke keres kitar esta koneksion? (Siempre puedes konektarte uzando la posta elektronika %email%)'
     mfa:
-        header: 'Autentikasion en dos pasos'
+        header: 'Autentifikasion en dos pasos'
         init: >
-            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentikasion TOTP
+            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentifikasion TOTP
             (p.e. {https://authy.com/=Authy}) i luego introduze el primo token jenerado.
         recovery:
             header: 'Kodiche de rekuperasion'
             save: >
                 Guarda los sigientes kodiches de rekuperasion en un lugar seguro.
-                Podras uzarlos para pasar la autentikasion en dos pasos (A2P) en kavzo de ke piedres tu dispozitivo de autentikasion.
+                Podras uzarlos para pasar la autentifikasion en dos pasos (A2P) en kavzo de ke piedres tu dispozitivo de autentifikasion.
             saved: 'Okey, ya los guadre!'
             enter: 'Introduze el kodiche de rekuperasion'
         cancel: 'Anular proseso de konektarte'
@@ -476,7 +476,7 @@ profile:
         header: 'Atadijos verifikados'
         info: >
             Los atadijos que une poza publikamente en su profil estaran markados kon la ikona de eskudo,
-            si se verifikan konektandose kon el mantenedor de autentikasyon desponible,
+            si se verifikan konektandose kon el mantenedor de autentifikasyon desponible,
             o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
             Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios gueb externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
