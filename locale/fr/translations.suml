@@ -978,7 +978,7 @@ calendar:
         aro_month: 'Mois de sensibilité au spectre aromantique'
         black_ribbon_day: 'Journée européenne de commémoration des victimes du stalinisme et du nazisme'
         black_queer_week: 'Semaine historique des queer noirs'
-        mena_lesbian_day: '{https://www.ankhfrance.org/sarahhegazy=Journée de la fierté des femmes lesbiennes et queer d’Asie de l'Ouest et d'Afrique du Nord}'
+        mena_lesbian_day: '{https://www.ankhfrance.org/sarahhegazy=Journée de la fierté des femmes lesbiennes et queer d’Asie de l’Ouest et d’Afrique du Nord}'
         hate_crime_awareness_week: 'Semaine de sensibilité aux crimes haineux'
         deaf_awareness_week: 'Semaine de sensibilité dédiée à la communauté LGBTQ sourde'
         suicide_prevention_day: 'Journée mondiale de la prévention du suicide'
@@ -994,7 +994,7 @@ calendar:
         aids_vaccine_day: 'Journée mondiale du vaccin contre le SIDA'
         queer_youth_day: 'Journée des jeunes queer'
         omnisexual_day: 'Journée de la visibilité des omnisexuels'
-        unlabeled_day: 'Journée de la visibilité aux queer non-genrés' 
+        unlabeled_day: 'Journée de la visibilité aux queer non-genrés'
         trans_youth_day: 'Journée de visibilité aux enfants et à la jeunesse trans'
         hiv_long_term_survivors_day: 'Journée de sensibilisation aux survivants de long terme au SIDA'
         women_hiv_awareness_day: 'Journée de sensibilisation au VIH/SIDA pour les femmes et les filles'
@@ -1003,22 +1003,22 @@ calendar:
         black_hiv_awareness_day: 'Journée de sensibilisation au VIH/sida des communautés noires'
         hiv_aging_awareness_day: 'Journée de la sensibilisation du VIH/sida et au vieillissement'
         trans_hiv_testing_day: 'Journée de dépistage au VIH des transgenres'
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
         mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
         spring_testing_week: 'Semaine Européenne printanière des tests anti-VIH'
         autumn_testing_week: 'Semaine Européenne automnale des tests anti-VIH'
         sex_worker_day: 'Journée internationale des travailleurs du sexe'
         equal_pay_day: 'Journée de sensibilisation à la paie équitable des LGBTQIA+'
         sex_worker_pride: 'Fierté des travailleurs du sexe'
         sex_worker_rights_day: 'Journée internationale des droits des travailleurs du sexe'
-        sex_worker_violence_day: 'Journée internationale pour stopper les violences à l'encontre des Travailleurs du sexe'
+        sex_worker_violence_day: 'Journée internationale pour stopper les violences à l’encontre des Travailleurs du sexe'
         omnisexual_omniromantic_day: 'Journée de la fierté et visibilité omnisexuelle et omniromantique'
         omnisexual_awareness_day: 'Journée de la sensibilité à la omnisexualité'
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Alan Turing Day' # TODO                                                  
+        alan_turing_day: 'Alan Turing Day' # TODO
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
