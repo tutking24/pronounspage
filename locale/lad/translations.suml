@@ -400,7 +400,7 @@ user:
                 Si no demandates este kodiche, simplemente inyora este mesaje.
         why: >
             Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
-        passwordless: 'Este sitio gueb no guadra las kontrasenyas. {https://avris.it/blog/passwords-are-passé=Mas informasion.}'
+        passwordless: 'Este sitio gueb no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas informasion.}'
         instancePlaceholder: 'Instansia'
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
