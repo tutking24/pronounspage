@@ -800,12 +800,17 @@ links:
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=m_6n2-ef1rw'
             headline: 'Paweł Dembowski – Lenguaje inklusivo– tambyen en Ladino // Wrocław, Polonia'
-            extra: ' – Ladino 21'
+            extra: ' – <strong>Ladino 21</strong>'
         -
             icon: 'play-circle'
             url: 'https://www.facebook.com/KatedraPerformatykiUniwersytetJagiellonski/videos/493693892433164'
             headline: 'W stronę niebinarności. Nowe relacje w języku'
-            extra: ' – Katedra Performatyki, Uniwersytet Jagielloński'
+            extra: ' – <strong>Katedra Performatyki, Uniwersytet Jagielloński</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=aU4uPwt0QOU'
+            headline: 'Jak mówić neutralnie płciowo?'
+            extra: ' – Archie w <strong>Stonewall TV</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
