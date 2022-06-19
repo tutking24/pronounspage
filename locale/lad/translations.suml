@@ -438,7 +438,7 @@ user:
     mfa:
         header: 'Autentifikasion en dos pasos'
         init: >
-            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentifikasion TOTP
+            Eskanea este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentifikasion TOTP
             (p.e. {https://authy.com/=Authy}) i luego introduze el primo token jenerado.
         recovery:
             header: 'Kodiche de rekuperasion'
