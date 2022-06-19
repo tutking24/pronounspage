@@ -107,7 +107,7 @@ sources:
         type: 'Tipo de fuenta'
         author: 'Autor/a/e/x'
         title: 'Titolo'
-        extra: 'Informasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
+        extra: 'Enformasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
         year: 'Anyo de publiksyon (de la version en Djudezmo)'
         fragments: 'Fragmentos'
         comment: 'Komentario'
@@ -201,7 +201,7 @@ faq:
                     Inkluzo desde un punto de vista puramente biolojiko distingimos sekso kromosomiko,
                     sekso djenetiko, sekso ormonal, sekso fenotipiko…
                     No son nesesariamente kongruentes uno kon otruno, no tienen ke ser binarios.
-                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mas información aki)}.
+                    {https://codigopublico.com/rompiendo-codigos/el-genero-no-es-binario/=(mas enformasion aki)}.
                     I kuando ayegamos al aspekto kultural, el “djenero” es una konstruksion sosyala.
                     Dependiendo del lugar i el momento “una mujer” o “un ombre” puede sinyifikar tener
                     derechos, obligaciones, reglas a segir, ets. radikalmente diferentes. En Europa en el pasado los ombres vestian takos altos i fustas,
@@ -274,7 +274,7 @@ faq:
                     Es una feramenta ke uzamos para komunikarnos.
                     Kuando trokamos komo sosiedad, i troka el mundo a muestro al dorredor,
                     adjustamos la avla ke uzamos para pueder deskrivirlo mijor.
-                    Mozotres semos los uzadores, ansi ke <em>mozotres semos la otoridad</em> ke dize komo se uza.
+                    Mozotres semos les utilizadores, ansi ke <em>mozotres semos la otoridad</em> ke dize komo se uza.
                 - >
                     Los diksionaryos se toman sus tiempo para rejistrar esas formas,
                     lo kual no aze el trokamiento ilejitimo de ninguna manera.
@@ -388,10 +388,10 @@ user:
     tokenExpired: 'El token tiene deskaido. Por favor aktualiza la oja i aprovalo de muevo.'
     login:
         help: 'Para konektarte o krear un kuento puedes uzar los botones de redes sosyalas o eskrivir tu adreso de posta elektronika en el kampo abasho i estonses konfirmar el kodiche ke vas resibir en tu posta.'
-        placeholder: 'Posta elektronika (o nombre de uzadore, si ya estas rejistrade)'
+        placeholder: 'Posta elektronika (o nombre de utilizadore, si ya estas rejistrade)'
         action: 'Konektarte / rejistrarte'
         emailSent: 'Te tenemos embiado una posta elektronika <strong>%email%</strong> kon un kodiche de 6 dijitos. Introduzelo aki. El kodiche es de un solo uzo i es balido por 15 minutos.'
-        userNotFound: 'Uzadore no topade.'
+        userNotFound: 'Utilizadore no topade.'
         email:
             subject: 'Tu kodiche de koneksion kon tu kuento es %code%'
             content: |
@@ -400,12 +400,12 @@ user:
                 Si no demandates este kodiche, simplemente inyora este mesaje.
         why: >
             Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
-        passwordless: 'Este sitio gueb no guadra las kontrasenyas. {https://avris.it/blog/passwords-are-passé=Mas informasion.}'
+        passwordless: 'Este sitio gueb no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas enformasion.}'
         instancePlaceholder: 'Instansia'
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
         depreciationNotice: >
-            Este no es un mantenedor de autentikasyon sadik.
+            Este no es un mantenedor de autentifikasyon sadik.
             <a href="%link%" target="_blank" rel="noopener">Ve este atadijo para mas detalyos</a>.
             Rekomendamos fuertemente ke te asegures de tener un metodo diferente de koneksyon desponible.
     code:
@@ -413,10 +413,10 @@ user:
         invalid: 'Kodiche enfirmo.'
     account:
         changeUsername:
-            header: 'Nombre de uzadore'
-            action: 'Trokar nombre de uzadore'
-            invalid: 'El nombre de uzadore deve tener entre 4 i 16 sinyos i solo puede kontener numeros, letras, puntos, giadores i giadores bashos.'
-            taken: 'Este nombre de uzadore ya esta en uzo.'
+            header: 'Nombre de utilizadore'
+            action: 'Trokar nombre de utilizadore'
+            invalid: 'El nombre de utilizadore deve tener entre 4 i 16 sinyos i solo puede kontener numeros, letras, puntos, giadores i giadores bashos.'
+            taken: 'Este nombre de utilizadore ya esta en uzo.'
         changeEmail:
             header: 'Adreso de posta elektronika'
             action: 'Trokar adreso de posta'
@@ -436,15 +436,15 @@ user:
         disconnect: 'Deskonektar'
         disconnectConfirm: 'Konfirmas ke keres kitar esta koneksion? (Siempre puedes konektarte uzando la posta elektronika %email%)'
     mfa:
-        header: 'Autentikasion en dos pasos'
+        header: 'Autentifikasion en dos pasos'
         init: >
-            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentikasion TOTP
+            Eskana este kodiche QR (o introduze el teksto de abasho) en tu aplikasion de autentifikasion TOTP
             (p.e. {https://authy.com/=Authy}) i luego introduze el primo token jenerado.
         recovery:
             header: 'Kodiche de rekuperasion'
             save: >
                 Guarda los sigientes kodiches de rekuperasion en un lugar seguro.
-                Podras uzarlos para pasar la autentikasion en dos pasos (A2P) en kavzo de ke piedres tu dispozitivo de autentikasion.
+                Podras uzarlos para pasar la autentifikasion en dos pasos (A2P) en kavzo de ke piedres tu dispozitivo de autentifikasion.
             saved: 'Okey, ya los guadre!'
             enter: 'Introduze el kodiche de rekuperasion'
         cancel: 'Anular proseso de konektarte'
@@ -468,7 +468,7 @@ profile:
     flags: 'Bandieras'
     flagsInfo: 'Arrastra tus bandieras de orgolyo a este marko.'
     flagsCustom: 'Karga una bandiera personalizada'
-    flagsCustomWarning: 'Esta bandiera fue kargada por un uzadore. La taifa de pronouns.page no es responsable de eya.'
+    flagsCustomWarning: 'Esta bandiera fue kargada por un utilizadore. La taifa de pronouns.page no es responsable de eya.'
     flagsAsterisk: 'Esta no es una identidad kuir, pero la inkluimos para personas ke son kuir de otras maneras (por enshemplo personas trans eteroseksualas).'
     links: 'Atadijos'
     linksRecommended: 'Rekomendamos atadijos a'
@@ -476,7 +476,7 @@ profile:
         header: 'Atadijos verifikados'
         info: >
             Los atadijos que une poza publikamente en su profil estaran markados kon la ikona de eskudo,
-            si se verifikan konektandose kon el mantenedor de autentikasyon desponible,
+            si se verifikan konektandose kon el mantenedor de autentifikasyon desponible,
             o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
             Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios gueb externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
@@ -675,7 +675,7 @@ terms:
 admin:
     header: 'Panel de Administradores'
     user:
-        user: 'Uzadore'
+        user: 'Utilizadore'
         email: 'Posta elektronika'
         roles: 'Rol'
         profiles: 'Profiles'
@@ -723,7 +723,7 @@ mode:
 
 ban:
     reason: 'Razon para banear'
-    visible: '(esto sera visivle para le uzadore)'
+    visible: '(esto sera visivle para le utilizadore)'
     terms: 'Reglas de Terminos de Servisio rotas (nesesario)'
     action: 'Banear esta persona'
     confirm: 'Estas segure ke keres banear a @%username%?'
@@ -737,7 +737,7 @@ report:
     confirm: 'Estas segure ke keres denusyar a @%username%?'
     sent: 'Tu denusyo tiene sido embiado. Mersi por ayudarnos!'
     terms: 'Akodra lo ke esta proibido en muestros {/terminos=Terminos de Servisio}'
-    hoarding: 'Por favor no denusye por "akumulasion de nombres de uzador”. Mozotros kitamos todos los kuentos ke no tienen kartas dempues de un periodo de tyempo.'
+    hoarding: 'Por favor no denusye por "akumulasion de nombres de utilizadore”. Mozotros kitamos todos los kuentos ke no tienen kartas dempues de un periodo de tyempo.'
 
 flags:
     Abroromantic: 'Abroromantik{inflection}'
