@@ -492,14 +492,13 @@ profile:
     flagsAsterisk: 'Dies ist keine queere Identität, aber wir nehmen es für Menschen auf, die auf andere Weise queer sind (z. B. heterosexuelle trans Personen).'
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
-    # TODO
-    verifiedLinks:
-        header: 'Verified links'
+verifiedLinks:
+        header: 'Verifizierte Links'
         info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
+            Die Links, die man öffentlich in sein Profil stellt werden mit dem Schild-Icon gekennzeichnet,
+        wenn sie durch Anmeldung mit dem angegebenen Authentifizierungsanbieter verifiziert werden,
+        oder (im Aufbau) durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
+        Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
     column: 'Spalte'
 
     list: 'Deine Visitenkarten'
@@ -985,19 +984,19 @@ calendar:
         black_hiv_awareness_day: 'Tag des Bewusstseins für HIV bei Schwarzen Menschen'
         hiv_aging_awareness_day: 'Tag des Bewusstseins für HIV/AIDS und Alterung'
         trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
-        sex_worker_pride: 'Sex Worker Pride' # TODO
-        sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
-        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
-        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
-        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO
+        mspec_lesbian_day: 'Multispektrum Lesbischer Sichtbarkeits- und Bewusstseinstag'
+        mspec_lesbian_week: 'Multispektrum Lesbische Sichtbarkeits- und Bewusstseinswoche'        
+        mspec_gay_day: 'Multispektrum-Gay Sichtbarkeits- und Bewusstseinstag'
+        mspec_gay_week: 'Multispektrum-Gay Sichtbarkeits- und Bewusstseinswoche'
+        spring_testing_week: 'Europäische HIV-Testungswoche - Frühling'
+        autumn_testing_week: 'Europäische HIV-Testungswoche - Herbst'
+        sex_worker_day: 'Internationaler Hurentag'
+        equal_pay_day: 'LGBTQIA+ Tag für gleiche Bezahlung'
+        sex_worker_pride: 'Sexarbeiter*innen Pride'
+        sex_worker_rights_day: 'Internationaler Tag der Rechte der Sexarbeiter*innen'
+        sex_worker_violence_day: 'Internationaler Tag zur Beendigung von Gewalt an Sexarbeiter*innen'
+        omnisexual_omniromantic_day: 'Omnisexueller and Omniromantischer Pride und Bewusstseinstag' 
+        omnisexual_awareness_day: 'Omnisexueller Sichtbarkeitstag' 
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
         alan_turing_day: 'Alan Turing Day' # TODO                                                  
