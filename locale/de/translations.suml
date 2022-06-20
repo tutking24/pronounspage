@@ -986,8 +986,8 @@ calendar:
         trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'
         mspec_lesbian_day: 'Multispektrum Lesbischer Sichtbarkeits- und Bewusstseinstag'
         mspec_lesbian_week: 'Multispektrum Lesbische Sichtbarkeits- und Bewusstseinswoche'        
-        mspec_gay_day: 'Multispektrum-Gay Sichtbarkeits- und Bewusstseinstag'
-        mspec_gay_week: 'Multispektrum-Gay Sichtbarkeits- und Bewusstseinswoche'
+        mspec_gay_day: 'Multispektrum Schwuler Sichtbarkeits- und Bewusstseinstag'
+        mspec_gay_week: 'Multispektrum Schwule Sichtbarkeits- und Bewusstseinswoche' 
         spring_testing_week: 'Europäische HIV-Testungswoche - Frühling'
         autumn_testing_week: 'Europäische HIV-Testungswoche - Herbst'
         sex_worker_day: 'Internationaler Hurentag'
@@ -997,9 +997,10 @@ calendar:
         sex_worker_violence_day: 'Internationaler Tag zur Beendigung von Gewalt an Sexarbeiter*innen'
         omnisexual_omniromantic_day: 'Omnisexueller and Omniromantischer Pride und Bewusstseinstag' 
         omnisexual_awareness_day: 'Omnisexueller Sichtbarkeitstag' 
-        hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
-        trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Alan Turing Day' # TODO                                                  
+        hiv_is_not_a_crime: 'HIV ist kein Verbrechen Tag'   
+        trans_flag_day: 'Trans Flaggen Tag'
+        alan_turing_day: 'Alan Turing Tag'
+        nonbinary_kids_day: 'Tag nicht-binärer Kinder' 
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
