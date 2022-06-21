@@ -363,7 +363,7 @@ contact:
         member: 'Mitglied des Kollektivs'
         upcoming: 'Bevorstehende Sprachversionen'
         join:
-            headerr: 'Mach mit!'
+            header: 'Mach mit!'
             encouragement: >
                 Interessierst du dich für nicht-binäre und geschlechtsneutrale Sprache?
                 Willst du unserem Kollektiv helfen, diese zu fördern? Super!
