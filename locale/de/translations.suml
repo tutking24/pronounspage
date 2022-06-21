@@ -492,13 +492,13 @@ profile:
     flagsAsterisk: 'Dies ist keine queere Identität, aber wir nehmen es für Menschen auf, die auf andere Weise queer sind (z. B. heterosexuelle trans Personen).'
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
-verifiedLinks:
+    verifiedLinks:
         header: 'Verifizierte Links'
         info: >
             Die Links, die man öffentlich in sein Profil stellt werden mit dem Schild-Icon gekennzeichnet,
-        wenn sie durch Anmeldung mit dem angegebenen Authentifizierungsanbieter verifiziert werden,
-        oder (im Aufbau) durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
-        Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
+            wenn sie durch Anmeldung mit dem angegebenen Authentifizierungsanbieter verifiziert werden,
+            oder (im Aufbau) durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
+            Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
     column: 'Spalte'
 
     list: 'Deine Visitenkarten'
@@ -985,9 +985,9 @@ calendar:
         hiv_aging_awareness_day: 'Tag des Bewusstseins für HIV/AIDS und Alterung'
         trans_hiv_testing_day: 'Tag der HIV-Tests für Transgender'
         mspec_lesbian_day: 'Multispektrum Lesbischer Sichtbarkeits- und Bewusstseinstag'
-        mspec_lesbian_week: 'Multispektrum Lesbische Sichtbarkeits- und Bewusstseinswoche'        
+        mspec_lesbian_week: 'Multispektrum Lesbische Sichtbarkeits- und Bewusstseinswoche'
         mspec_gay_day: 'Multispektrum Schwuler Sichtbarkeits- und Bewusstseinstag'
-        mspec_gay_week: 'Multispektrum Schwule Sichtbarkeits- und Bewusstseinswoche' 
+        mspec_gay_week: 'Multispektrum Schwule Sichtbarkeits- und Bewusstseinswoche'
         spring_testing_week: 'Europäische HIV-Testungswoche - Frühling'
         autumn_testing_week: 'Europäische HIV-Testungswoche - Herbst'
         sex_worker_day: 'Internationaler Hurentag'
@@ -995,12 +995,12 @@ calendar:
         sex_worker_pride: 'Sexarbeiter*innen Pride'
         sex_worker_rights_day: 'Internationaler Tag der Rechte der Sexarbeiter*innen'
         sex_worker_violence_day: 'Internationaler Tag zur Beendigung von Gewalt an Sexarbeiter*innen'
-        omnisexual_omniromantic_day: 'Omnisexueller and Omniromantischer Pride und Bewusstseinstag' 
-        omnisexual_awareness_day: 'Omnisexueller Sichtbarkeitstag' 
-        hiv_is_not_a_crime: 'HIV ist kein Verbrechen Tag'   
+        omnisexual_omniromantic_day: 'Omnisexueller and Omniromantischer Pride und Bewusstseinstag'
+        omnisexual_awareness_day: 'Omnisexueller Sichtbarkeitstag'
+        hiv_is_not_a_crime: 'HIV ist kein Verbrechen Tag'
         trans_flag_day: 'Trans Flaggen Tag'
         alan_turing_day: 'Alan Turing Tag'
-        nonbinary_kids_day: 'Tag nicht-binärer Kinder' 
+        nonbinary_kids_day: 'Tag nicht-binärer Kinder'
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
