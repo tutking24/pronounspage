@@ -4,95 +4,94 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns'
-    default: 'he'
-    any: 'any'
-    plurals: true
+    route: 'ona'
+    default: 'ona'
+    any: 'ale'
+    plurals: false
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'ona mute'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
-        examples: ['he&she', 'he&they', 'she&they']
+            tonsi mute li kepeken e ona mute.
+            ona li pona e nimi pi ni tu.
+            ona mute li pona e nimi pi tu ante.
+        examples: ['ona mije anu ona meli', 'ona mije anu ona tonsi', 'ona tonsi anu ona meli']
     null:
         description: >
-            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
-            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
+            {/avoiding=apeja e ona} / {/no-pronouns=ona ala} / {/null=ona ala} /
+            {/pronounless=ona ala} / {/nullpronominal=jan pi nimi ona ala} / {/nameself=ona nimi}
         history: >
-            Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence.
-            See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
+            jan mute li pona e ona ala, la nimi nimi e lon sitelen.
+            O lipu: {https://twitter.com/lypomania/status/1290274971642544128=lupi Lipomani},
+            {https://lgbta.wikia.org/wiki/Nullpronominal=ona ala lon pu Esipiti}
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
-        examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-        routes: ['avoiding']
+            pronoun_subject: 'jan #'
+            pronoun_object: 'jan #'
+            possessive_determiner: '#'
+            possessive_pronoun: '#'
+            reflexive: 'jan #'
+        examples: [':Sonja', ':N', ':Sa']
+        template: 'o open e ijo, la o ante nimi sina e nimi ijo.'
+        routes: ['apeja_e_ona']
         ideas:
             -
-                header: 'Use names or initials instead of pronouns'
+                header: 'o kepeken ala e ona, la o kepeken e nimi.'
                 normative: true
                 examples:
-                    - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
-                    - ['She is really beautiful', '{/:Soph=Soph} is really beautiful']
+                    - ['mi toki lon pini e ona mije.', 'mi toki lon pini e jan {/:Kai=Kai}.']
+                    - ['ona meli li suwi a.', 'jan {/:Sape=Sape} li suwi a.']
                     -
-                        - 'Her graduation starts soon'
-                        - '{/:J=J}''s graduation starts soon'
+                        - 'kama open e tenpo pini sona pi ona meli.'
+                        - 'kama open e tenpo pini sona pi jan {/:Se=Se}.'
             -
-                header: 'Passive voice'
+                header: 'toki awen'
                 normative: true
                 examples:
-                    - ['He answered the phone', 'The phone was answered']
+                    - ['ona mije li kepeken e ilo.', 'ilo e kepeken.']
                     -
-                        - 'Wen takes good care of her cat'
-                        - 'Wen''s cat is well cared for'
+                        - 'jan Wen li olin e soweli ona.'
+                        - 'soweli Wen li olin.'
             -
-                header: 'Rephrasing the sentence (circumlocution)'
+                header: 'sitelen ante.'
                 normative: true
                 examples:
                     - ['Lior did it all by himself', 'Lior did it all without any help']
                     - ['Gael talks in his sleep', 'Gael talks while sleeping']
             -
-                header: 'Replacing a pronoun with a descriptive noun or phrase'
+                header: 'o ona li ijo'
                 normative: true
                 examples:
-                    - ['She landed the plane safely', 'The pilot landed the plane safely']
-                    - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
-                    - ['She argues that…', 'The person who started this discussion argues that…']
+                    - ['ona meli li pini e ilo waso.', 'jan sona waso li pini e ilo waso.']
+                    - ['ni li jan Le. ona li olin e pali sitelen.', 'ni li jan Le, la li olin e pali sitelen.']
+                    - ['ona meli li toki e…', 'jan open li toki e…']
             -
-                header: 'Dropping pronouns'
+                header: 'o ala e ona'
                 normative: true
                 examples:
                     - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
-                    - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
+                    - ['lon. mi esun e ijo pona pi ona meli, la mi kama pana ona meli e ni.', 'lon. mi esun e ijo pona, la mi kama pana e ni.']
     emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        description: 'ona nimi sitelen linluwi.'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=ona nimi sitelen linluwi} li toki linluwi, la toki ala pi linluwi ala.'
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
+            pronoun_subject: 'ona #'
+            pronoun_object: 'ona #'
+            possessive_determiner: '#'
+            possessive_pronoun: '#'
+            reflexive: 'jan #'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
+        template: 'o open e ijo, la o ante sitelen sina e sitelen ijo.'
     mirror:
-        route: 'mirror'
-        name: 'Mirror pronouns / Mirrorpronominal'
+        route: 'jasima'
+        name: 'ona jasima'
         description: >
-            A person who uses mirror pronouns wants to be referred to with the same pronouns as the person talking.
+            jan pi ona jasima li wile nimi e ona pi sama jan toki.
         example:
-            - 'Person A uses mirror pronouns.'
-            - 'Person B uses {/she=she/her}, so when she talks about person A, she uses “she/her” to refer to her.'
-            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fea uses either ze/hir or fæ/fær to refer to fær.'
+            - 'jan nanpa wan li kepeken e ona jasima.'
+            - 'jan nanpa tu li kepeken e {/she=ona meli}, la ona meli li toki e jan nanpa wan, la ona meli li nimi meli e ona meli.'
+            - 'jan nanpa tu wan li kepeken e {/he=ona mije} e {/fae=ona Fa}, la ona mije li toki e jan nanpa wan, la ona Fa li nimi Fa e ona mije e ona Fa.'
     slashes: true
-    others: 'Other pronouns'
+    others: 'ona ante'
 
 pronunciation:
     enabled: true
@@ -104,13 +103,13 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'lipu'
     submit: true
     mergePronouns: {}
-    extraTypes: ['avoiding', 'nounself']
+    extraTypes: ['apeja e ona', 'nimi ijo']
 
 nouns:
-    enabled: true
+    enabled: false
     route: 'dictionary'
     collapsable: false
     plurals: true
@@ -120,7 +119,7 @@ nouns:
     templates: true
 
 community:
-    route: 'terminology'
+    route: 'nimi_ale'
 
 inclusive:
     enabled: false
@@ -129,18 +128,18 @@ terminology:
     enabled: true
     published: true
     categories:
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
-        - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
+        - 'kule unpa'
+        - 'kule olin'
+        - 'kule nanpa tu wan'
+        - 'kule'
+        - 'lukin kule'
+        - 'jan li olin seme e jan'
+        - 'toki'
+        - 'suwi'
+        - 'alasa'
+        - 'ike (nimi apeja)'
 
-    route: 'terminology'
+    route: 'nimi_ale'
 
 names:
     enabled: false
@@ -150,8 +149,8 @@ people:
 
 # optional, but would be nice to have
 english:
-    enabled: true
-    route: 'english'
+    enabled: false
+    route: 'inli'
     pronounGroups:
         -
             name: 'Normative forms'
@@ -165,19 +164,19 @@ english:
 
 faq:
     enabled: true
-    route: 'faq'
+    route: 'seme_mute'
 
 links:
     enabled: true
     split: false
-    route: 'links'
-    blogRoute: 'blog'
+    route: 'tawa'
+    blogRoute: 'lipu_lili'
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
-            headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
+            headline: 'Ponen.Isa'
+            extra: '– ni li pana sona e sitelen ni'
     academic: []
     mediaGuests: []
     mediaMentions: []
@@ -186,33 +185,33 @@ links:
 
 contact:
     enabled: true
-    route: 'contact'
+    route: 'toki'
     team:
         enabled: true
-        route: 'team'
+        route: 'kulupu_ni'
 
 support:
     enabled: true
 
 user:
     enabled: true
-    route: 'account'
-    termsRoute: 'terms'
+    route: 'jan_mi'
+    termsRoute: 'lawa'
 
 profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[no honorific]', 'mx.', 'mr.', 'ms.', 'sir', 'madam', 'sai', 'mir', 'shazam', 'zam', 'comrade']
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['jan [nimi]', 'tonsi [nimi]', 'meli [nimi]', 'mije [nimi]']
+        - ['jan', 'mije', 'meli', 'tonsi', 'jan pona', 'mije lili', 'meli lili', 'tonsi lili', 'jan lili', 'pata', 'pata meli', 'pata mije', 'pata tonsi']
+        - ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
+        - ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'ona'
 
 calendar:
     enabled: true
-    route: 'calendar'
+    route: 'mun_mute'
 
 census:
     enabled: false
