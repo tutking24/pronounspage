@@ -17,7 +17,7 @@
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
                     <template v-if="nameOptions.length === 1">
-                        <Twemoji><strong>{{ selectedPronoun.name(glue) }}</strong><small v-if="selectedPronoun.smallForm">/{{selectedPronoun.morphemes[selectedPronoun.smallForm]}}</small></Twemoji>
+                        <Twemoji><strong><Spelling :text="selectedPronoun.name(glue)"/></strong><small v-if="selectedPronoun.smallForm">/<Spelling :text="selectedPronoun.morphemes[selectedPronoun.smallForm]"/></small></Twemoji>
                     </template>
                     <template v-else>
                         <template v-for="(nameOption, i) in nameOptions">

@@ -1,5 +1,4 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+mi sona, la {pronoun_subject} li pona mute.		FALSE
+mi lanpan e ilo {pronoun_adjective}.		FALSE
+{pronoun_subject} li toki e: mi {reflexive}.		FALSE
