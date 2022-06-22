@@ -1,8 +1,8 @@
 <template>
     <div class="pt-1">
-        <div v-if="config.locale === 'zh'" class="btn-group m-2">
-            <button v-for="(display, code) in {traditional: '繁體', simplified: '简体'}"
-                    :class="'btn btn-sm ' + (spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary')"
+        <div v-if="spellings.hasOwnProperty(config.locale)" class="btn-group m-2">
+            <button v-for="(display, code) in spellings[config.locale]"
+                    :class="['btn btn-sm', spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary', code === 'sitelen' ? 'sitelen' : '']"
                     :disabled="spelling === code"
                     @click="setSpelling(code)"
             >
@@ -46,6 +46,14 @@
     export default {
         props: {
             end: {type: Boolean},
+        },
+        data() {
+            return {
+                spellings: {
+                    zh: {traditional: '繁體', simplified: '简体'},
+                    tok: {latin: 'Latin', sitelen: 'sitelen pona'},
+                }
+            };
         },
         methods: {
             setSpelling(spelling) {

@@ -1,2 +1,7 @@
 $fontHeadings: 'Quicksand';
 $fontText: 'Nunito';
+$fontExtra: 'sitelen-pona-pona';
+
+.sitelen {
+    font-family: $fontExtra, $fontText;
+}

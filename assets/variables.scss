@@ -1,5 +1,6 @@
 @import "../data/variables";
-$fonts: $fontHeadings $fontText;
+$fontExtra: null !default;
+$fonts: $fontHeadings $fontText $fontExtra;
 
 $font-family-sans-serif: $fontText, "Noto Emoji", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $headings-font-family: $fontHeadings, "Noto Emoji", $fontText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
