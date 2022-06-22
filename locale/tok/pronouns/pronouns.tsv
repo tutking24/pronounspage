@@ -1,22 +1,22 @@
 key	description	normative	pronoun_subject	pronoun_adjective	reflexive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-mije	ona pi mije	TRUE	ona mije	mije	jan mije	FALSE	FALSE	TRUE
-meli	ona pi meli	TRUE	ona meli	meli	jan meli	FALSE	FALSE	TRUE
-tonsi	ona pi tonsi	TRUE	ona tonsi	tonsi	jan tonsi	FALSE	FALSE	TRUE	kulupu pi toki pona li sona e wile namako. lon tenpo, nimi e “nimi pu namako”.
-kese	ona pi kese	TRUE	ona kese	kese	jan kese	FALSE	FALSE	TRUE	toki Iwisi li pana e kese lon tenpo pini ku.
-nimi ala	ona pi nimi ala	TRUE	ona	jan	jan	FALSE	FALSE	TRUE	jan Sonja li wile o nimi e ona wan.			lipu li jo e ona pi ona pi ona e ona pi jan Sonja.
-wan,wan lili	jan pi wan lili	FALSE	jan wan	jan	jan ni	FALSE	FALSE	TRUE
-Ai	ona pi Ai	FALSE	ona Ai	Ai	jan pi Ai	FALSE	FALSE	TRUE	jan Tawi Linsai li samu e lipu lon 1920, la ni li kepeken e kule wan tu pi jan ante.
-Ko	ona pi Ko	FALSE	ona Ko	Ko	jan pi Ko	FALSE	FALSE	TRUE	jan Mawi Owan li samu lon 1970 e nimi Into Elopa, “*ko.”
-Mika,Tonji/Tenli/Monse	ona pi jan Mika Piwa	FALSE	ona Tonji	Tenli	jan pi Monse	FALSE	FALSE	TRUE	samu e nimi Inli pi Mika Piwa (em).
-Tonji	ona pi Tonji	FALSE	ona Tonji	Tonji	jan pi Tonji	FALSE	FALSE	TRUE	samu e nimi Inli pi Same Oke (em).
-Nsi	ona pi Nsi	FALSE	ona Nsi	Nsi	jan pi Nsi	FALSE	FALSE	TRUE	o samu, lanpan “To” e tonsi.
-Fa	ona pi Fa	FALSE	ona Fa	Fa	jan pi Fa	FALSE	FALSE	TRUE	jan Satawas li asmu lon 2014.
+mije,ona mije	ona pi mije	TRUE	ona mije	mije	jan mije	FALSE	FALSE	TRUE
+meli,ona meli	ona pi meli	TRUE	ona meli	meli	jan meli	FALSE	FALSE	TRUE
+tonsi,ona tonsi	ona pi tonsi	TRUE	ona tonsi	tonsi	jan tonsi	FALSE	FALSE	TRUE	kulupu pi toki pona li sona e wile namako. lon tenpo, nimi e “nimi pu namako”.
+kese,ona kese	ona pi kese	TRUE	ona kese	kese	jan kese	FALSE	FALSE	TRUE	toki Iwisi li pana e kese lon tenpo pini ku.
+ala,ona ala,nimi ala	ona pi nimi ala	TRUE	ona	jan	jan	FALSE	FALSE	TRUE	jan Sonja li wile o nimi e ona wan.			lipu li jo e ona pi ona e ona pi jan Sonja.
+wan,wan lili,jan wan	jan pi wan lili	FALSE	jan wan	jan	jan ni	FALSE	FALSE	TRUE
+Ai,ona Ai	ona pi Ai	FALSE	ona Ai	Ai	jan pi Ai	FALSE	FALSE	TRUE	jan Tawi Linsai li samu e lipu lon 1920, la ni li kepeken e kule wan tu pi jan ante.
+Ko,ona Ko	ona pi Ko	FALSE	ona Ko	Ko	jan pi Ko	FALSE	FALSE	TRUE	jan Mawi Owan li samu lon 1970 e nimi Into Elopa, “*ko.”
+Mika,Tonji/Tenli/Monse,ona Mika	ona pi jan Mika Piwa	FALSE	ona Tonji	Tenli	jan pi Monse	FALSE	FALSE	TRUE	samu e nimi Inli pi Mika Piwa (em).
+Tonji,ona Tonji	ona pi Tonji	FALSE	ona Tonji	Tonji	jan pi Tonji	FALSE	FALSE	TRUE	samu e nimi Inli pi Same Oke (em).
+Nsi,ona Nsi	ona pi Nsi	FALSE	ona Nsi	Nsi	jan pi Nsi	FALSE	FALSE	TRUE	o samu, lanpan “To” e tonsi.
+Fa,ona Fa	ona pi Fa	FALSE	ona Fa	Fa	jan pi Fa	FALSE	FALSE	TRUE	jan Satawas li asmu lon 2014.
 jan	ona pi jan	FALSE	jan	jan	jan	FALSE	FALSE	TRUE	jan Sasa Nupow li samu lon 1982 e nimi Inli pi (human), la nimi toki pona li jan.
-Ni	ona pi Ni	FALSE	ona Ni	Ni	jan pi Ni	FALSE	FALSE	TRUE
-soweli	ona pi soweli	FALSE	ona soweli	soweli jan	jan soweli	FALSE	FALSE	TRUE	samu e soweli.
-Jani	ona pi Jani	FALSE	ona Jani	Jani	jan Jani	FALSE	FALSE	TRUE	samu e nimi Inli pi Sawe Kosa Konwe. ona li open e ona tonsi. o samu, namako ni e jan.
-Wi	ona pi Wi	FALSE	ona Wi	Wi	jan Wi	FALSE	FALSE	TRUE
-Si	ona pi Si	FALSE	ona Si	Si	jan Si	FALSE	FALSE	TRUE	samu e nimi Tosi (sie).
-akesi	ona pi akesi	FALSE	ona akesi	akesi jan	jan akesi	FALSE	FALSE	TRUE	samu e akesi.
-waso	ona pi waso	FALSE	ona waso	waso jan	jan waso	FALSE	FALSE	TRUE	samu e waso.
-pipi	ona pi pipi	FALSE	ona pipi	pipi jan	jan pipi	FALSE	FALSE	TRUE	samu e pipi.
+Ni,ona Ni	ona pi Ni	FALSE	ona Ni	Ni	jan pi Ni	FALSE	FALSE	TRUE
+soweli,ona soweli	ona pi soweli	FALSE	ona soweli	soweli jan	jan soweli	FALSE	FALSE	TRUE	samu e soweli.
+Jani,ona Jani	ona pi Jani	FALSE	ona Jani	Jani	jan Jani	FALSE	FALSE	TRUE	samu e nimi Inli pi Sawe Kosa Konwe. ona li open e ona tonsi. o samu, namako ni e jan.
+Wi,ona Wi	ona pi Wi	FALSE	ona Wi	Wi	jan Wi	FALSE	FALSE	TRUE
+Si,ona Si	ona pi Si	FALSE	ona Si	Si	jan Si	FALSE	FALSE	TRUE	samu e nimi Tosi (sie).
+akesi,ona akesi	ona pi akesi	FALSE	ona akesi	akesi jan	jan akesi	FALSE	FALSE	TRUE	samu e akesi.
+waso,ona waso	ona pi waso	FALSE	ona waso	waso jan	jan waso	FALSE	FALSE	TRUE	samu e waso.
+pipi,ona pipi	ona pi pipi	FALSE	ona pipi	pipi jan	jan pipi	FALSE	FALSE	TRUE	samu e pipi.

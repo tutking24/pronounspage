@@ -103,7 +103,7 @@ sources:
         pronouns: 'ona seme?'
         pronounsInfo: 'sina toki e ona pi pona (“ona tonsi”, “ona kese”, “ona mije en ona meli”)'
         type: 'sitelen'
-        author: 'jan sona'
+        author: 'jan li lipu'
         title: 'nimi'
         extra: 'namako'
         year: 'mun ale mute seme e open?'
@@ -373,9 +373,9 @@ faq:
 links:
     header: 'tawa'
     headerLong: 'tawa mute'
+    links: 'tawa mute'
     recommended: 'o'
     blog: 'lipu lili'
-    links: 'tawa mute'
     mediaShort: 'lipu'
     media: 'Ponen.Pase li lon e lipu'
 
@@ -579,7 +579,7 @@ profile:
         close: 'sina pona'
         meh: 'pona'
         no: 'ike'
-    bannerButton: 'o palie sitelen suli'
+    bannerButton: 'o pali e sitelen suli'
     card:
         link: 'sitelen'
         generate: 'o pali'

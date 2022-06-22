@@ -149,7 +149,7 @@ people:
 # optional, but would be nice to have
 english:
     enabled: true
-    route: 'inli'
+    route: 'english'
     pronounGroups:
         -
             name: 'Removing Ambiguity'
