@@ -167,7 +167,7 @@ faq:
 
 links:
     enabled: true
-    split: false
+    split: true
     route: 'tawa'
     blogRoute: 'lipu_lili'
     links:
@@ -181,6 +181,8 @@ links:
     mediaMentions: []
     recommended: []
     blog: false
+    zine:
+        enabled: false
 
 contact:
     enabled: true

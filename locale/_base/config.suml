@@ -183,6 +183,8 @@ links:
     mediaMentions: []
     recommended: []
     blog: false
+    zine:
+        enabled: false
 
 contact:
     enabled: true
