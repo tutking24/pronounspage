@@ -118,3 +118,11 @@
     }
 }
 
+@if list.index($fonts, 'sitelen-pona-pona') {
+    @font-face {
+        font-family: 'sitelen-pona-pona';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/fonts/sitelen-pona-pona.otf') format("opentype")
+    }
+}

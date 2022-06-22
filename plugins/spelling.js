@@ -18,6 +18,10 @@ export default {
                 return futurus.futuriseText(str);
             }
 
+            if (this.config.locale === 'tok' && this.spelling === 'sitelen') {
+                return '<span class="sitelen">' + str + '</span>';
+            }
+
             return str;
         }
     },
