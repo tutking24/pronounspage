@@ -2,8 +2,8 @@
     <div class="pt-1">
         <div v-if="spellings.hasOwnProperty(config.locale)" class="btn-group m-2">
             <button v-for="(display, code) in spellings[config.locale]"
-                    :class="['btn btn-sm', spelling === code ? 'btn-secondary disabled' : 'btn-outline-secondary', code === 'sitelen' ? 'sitelen' : '']"
-                    :disabled="spelling === code"
+                    :class="['btn btn-sm', getSpelling() === code ? 'btn-secondary disabled' : 'btn-outline-secondary', code === 'sitelen' ? 'sitelen' : '']"
+                    :disabled="getSpelling() === code"
                     @click="setSpelling(code)"
             >
                 {{display}}
@@ -51,11 +51,18 @@
             return {
                 spellings: {
                     zh: {traditional: '繁體', simplified: '简体'},
-                    tok: {latin: 'Latin', sitelen: 'sitelen pona'},
+                    tok: {latin: 'Lasin', sitelen: 'sitelen pona'},
                 }
             };
         },
         methods: {
+            getSpelling() {
+                return this.spelling || (
+                    this.spellings.hasOwnProperty(this.config.locale)
+                        ? Object.keys(this.spellings[this.config.locale])[0]
+                        : null
+                );
+            },
             setSpelling(spelling) {
                 this.$store.commit('setSpelling', spelling);
                 this.$cookies.set('spelling', this.$store.state.spelling);

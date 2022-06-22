@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'ona'
-    default: 'ona'
+    default: 'mije'
     any: 'ale'
     plurals: false
     honorifics: false
@@ -207,7 +207,7 @@ profile:
         - ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
         - ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
     flags:
-        defaultPronoun: 'ona'
+        defaultPronoun: 'mije'
 
 calendar:
     enabled: true

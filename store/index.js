@@ -4,7 +4,7 @@ export const state = () => ({
     token: null,
     user: null,
     preToken: null,
-    spelling: 'traditional',
+    spelling: null,
     darkMode: false,
 })
 

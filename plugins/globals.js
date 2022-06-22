@@ -30,7 +30,7 @@ export default ({ app, store }) => {
         }
     });
 
-    store.commit('setSpelling', app.$cookies.get('spelling') || 'traditional');
+    store.commit('setSpelling', app.$cookies.get('spelling'));
 
     Vue.prototype.buildImageUrl = (imageId, size) => `${process.env.CLOUDFRONT}/images/${imageId}-${size}.png`
 
