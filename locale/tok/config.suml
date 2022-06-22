@@ -18,15 +18,14 @@ pronouns:
         examples: ['ona mije anu ona meli', 'ona mije anu ona tonsi', 'ona tonsi anu ona meli']
     null:
         description: >
-            {/avoiding=apeja e ona} / {/no-pronouns=ona ala} / {/null=ona ala} /
-            {/pronounless=ona ala} / {/nullpronominal=jan pi nimi ona ala} / {/nameself=ona nimi}
+            {/apeja_e_ona=apeja e ona} / {/ona_ala=ona ala} / {/jan_pi_nimi_ona_ala=jan pi nimi ona ala} / {/ona_nimi=ona nimi}
         history: >
             jan mute li pona e ona ala, la nimi nimi e lon sitelen.
             O lipu: {https://twitter.com/lypomania/status/1290274971642544128=lupi Lipomani},
             {https://lgbta.wikia.org/wiki/Nullpronominal=ona ala lon pu Esipiti}
         morphemes:
-            pronoun_subject: 'jan #'
-            pronoun_object: 'jan #'
+            pronoun_subject: 'ona #'
+            pronoun_object: 'ona #'
             possessive_determiner: '#'
             possessive_pronoun: '#'
             reflexive: 'jan #'
@@ -68,7 +67,7 @@ pronouns:
                 header: 'o ala e ona'
                 normative: true
                 examples:
-                    - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
+                    - ['sina esun e ijo pona pi ona meli?', 'sina esun e ijo pona?']
                     - ['lon. mi esun e ijo pona pi ona meli, la mi kama pana ona meli e ni.', 'lon. mi esun e ijo pona, la mi kama pana e ni.']
     emoji:
         description: 'ona nimi sitelen linluwi.'
@@ -88,8 +87,8 @@ pronouns:
             jan pi ona jasima li wile nimi e ona pi sama jan toki.
         example:
             - 'jan nanpa wan li kepeken e ona jasima.'
-            - 'jan nanpa tu li kepeken e {/she=ona meli}, la ona meli li toki e jan nanpa wan, la ona meli li nimi meli e ona meli.'
-            - 'jan nanpa tu wan li kepeken e {/he=ona mije} e {/fae=ona Fa}, la ona mije li toki e jan nanpa wan, la ona Fa li nimi Fa e ona mije e ona Fa.'
+            - 'jan nanpa tu li kepeken e {/meli=ona meli}, la ona meli li toki e jan nanpa wan, la ona meli li nimi meli e ona meli.'
+            - 'jan nanpa tu wan li kepeken e {/mije=ona mije} e {/Fa=ona Fa}, la ona mije li toki e jan nanpa wan, la ona Fa li nimi Fa e ona mije e ona Fa.'
     slashes: true
     others: 'ona ante'
 
@@ -149,18 +148,18 @@ people:
 
 # optional, but would be nice to have
 english:
-    enabled: false
+    enabled: true
     route: 'inli'
     pronounGroups:
         -
-            name: 'Normative forms'
+            name: 'Removing Ambiguity'
             description:
                 - >
-                    Because of the limitations of <language> grammar, or simply because they just prefer it that way,
-                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
-                    – either the same as their gender assigned at birth or the opposite.
-                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
-            table: {on: 'Masculine', ona: 'Feminine'}
+                    toki pona has a single third-person pronoun, ona, that just means “it” or “they.”
+                    Often this can become vague. Most people solve this by adding the gender adjectives whenever there is a need,
+                    however, just like in English, there are people who have pronouns different from their gender,
+                    and some people don't like the neutral “ona” at all.
+            table: {mije: 'Masculine', meli: 'Feminine'}
 
 faq:
     enabled: true
@@ -175,7 +174,7 @@ links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
-            headline: 'Ponen.Isa'
+            headline: 'Pronoun.is'
             extra: '– ni li pana sona e sitelen ni'
     academic: []
     mediaGuests: []

@@ -6,14 +6,14 @@ home:
     link: 'sitelen tomo'
     header: 'ona'
     headerLong: 'ona ale'
-    welcome: 'kama pona! ni li Ponen.Pase'
+    welcome: 'kama pona! ni li Pronouns.Page'
     intro: >
         mi pali e tomo sona ona pi toki tonsi.
     why: 'seme ona?'
     about:
         - >
             ona li nimi lili e jan.
-            jan mute li {/he=“ona mije”} anu {/she=“ona meli”}, la mi sona nasa nimi e lukin jan.
+            jan mute li {/mije=“ona mije”} anu {/meli=“ona meli”}, la mi sona nasa nimi e lukin jan.
             ijo li pona ala...
         - >
             kule li ike. jan mute li “lukin ala e kule ona.”
@@ -23,14 +23,14 @@ home:
             sina toki e tawa ona sina.
             tawa ona sina li jo sitelen mute, la jan mute li sona e nimi toki sina.
         - >
-            seme? sina weli li jan pona.
-            sina weli nimi Samanta e Asi, la sina nimi ala pi Samanta e Asi.
+            seme? sina wile li jan pona.
+            sina wile nimi Samanta e Asi, la sina nimi ala pi Samanta e Asi.
             ona meli <em>li</em> nimi Samanta e sitelen pali.
             ona meli li ike e nimi Samanta, la ona meli li pona e nimi Asi.
             ni li nasin lon tenpo sama e ona!
-            sina weli li jan ike, la sina nimi pona e ona.
+            sina wile li jan ike, la sina nimi pona e ona.
             ante taso li mi sona ala e ona.
-            mi toki e nimi, la mi toki ala e ona. mi weli ante e ni!
+            mi toki e nimi, la mi toki ala e ona. mi wile ante e ni!
     pronouns: 'supa ona'
     generator:
         header: 'ilo pali'
@@ -44,8 +44,8 @@ home:
         pronunciation: ''
     whatisit: 'seme ona?'
     mission:
-        header: 'mi weli'
-        summary: 'mi utala, la mi weli li toki sewi pona pi apeja ala.'
+        header: 'mi wile'
+        summary: 'mi utala, la mi wile li toki sewi pona pi apeja ala.'
         freedom: >
             <strong>sewi</strong>
             – jan ale li kepeken e ona pona.
@@ -73,9 +73,9 @@ pronouns:
         header: 'ona ale'
         short: 'ale'
         description: >
-            jan mute li weli mute e ona ni,
-            la ante li weli e ona ale.
-        options: 'lukin e kepeken mute [tawa]{/pronouns=here}.'
+            jan mute li wile mute e ona ni,
+            la ante li wile e ona ale.
+        options: 'lukin e kepeken mute [tawa]{/ona=here}.'
     others: 'sitelen ante'
     othersRaw: 'ante'
     or: 'anu'
@@ -225,7 +225,7 @@ faq:
                 - >
                     sina nimi pona, la sina jan pona.
                     sina nimi ala pi Samanta e Asi.
-                    jan li weli nimi e ala “{/he=ona mije}” or “{/she=ona meli}”.
+                    jan li wile nimi e ala “{/mije=ona mije}” or “{/meli=ona meli}”.
                     sina sona ala e ni, la sina ike.
                 - >
                     “ona nasa” li kepeken mute, ni pi nasa ala.
@@ -244,16 +244,16 @@ faq:
                 - >
                     o toki ala e “sina mije anu meli?”.
                     seme ni li toki lon ni.
-                    seme ni li weli e insa unpa.
+                    seme ni li wile e insa unpa.
                     o toki e “sina ona seme?” anu “sina nimi e ona seme?”
                 - >
                     sina toki e nimi sina, la sina o toki e ona sina.
-                    “toki! mi jan Mika. ona mi li {/he=ona mije}”. ni li ike ala, la jan tonsi li weli mute.
+                    “toki! mi jan Mika. ona mi li {/mije=ona mije}”. ni li ike ala, la jan tonsi li wile mute.
                 - >
                     lon, la jan mute nimi e sama ala.
                     o sona. o toki e “ona sina lon mama?”, mute, mute.
                 - >
-                    jan mute nimi e ona mute (“{/he&she=ona mijo anu meli}” anu “{/they&he=ona tonsi anu mijo}”).
+                    jan mute nimi e ona mute (“{/mije&meli=ona mije anu meli}” anu “{/tonsi&mije=ona tonsi anu mije}”).
                     ona li pona e ale.
         who-uses-it:
             question: 'jan seme li kepeken e ni?'
@@ -394,7 +394,7 @@ english:
         - >
             Nouns in toki pona default to being neuter form. This can be changed with the official words <em>mije</em> and <em>meli</em> (man and woman),
             and often, the official but less recognized word <em>tonsi</em>, which changes it to non-binary. You would want to specify if there are more than two things that you are talking about.
-            Not everybody likes to use the word tonsi. Some people like to use the unofficial word <em>kuse</em> to mean queer, and some people use the word <em>kule</em> (color) to mean queer.
+            Not everybody likes to use the word tonsi. Some people like to use the unofficial word <em>kese</em> to mean queer, and some people use the word <em>kule</em> (color) to mean queer.
             toki pona is a highly subjective language, which means getting everybody to agree on what words exist and their meanings is hard.
             Even tonsi originally meant LGBTQ+ (from the Mandarin 同志), but its meaning has been changed into non-binary, or even in some dialects, trans.
             This classification system of having three recognized genders and no others presents a challenge for talking about specific genders, but often, we can translate the
@@ -405,9 +405,9 @@ contact:
     header: 'o toki!'
     authors: 'jan pali ni'
     faq: >
-        lon pini sina toki, la o lukin e {/faq=seme mute}.
+        lon pini sina toki, la o lukin e {/seme_mute=seme mute}.
     technical: >
-        sina jo seme e seme? toki sina li o jo e nimi e ike mute.
+        sina jo seme e seme? toki sina li o jo e nimi e suli mute.
         (toki ike li toki e seme? ilo sina li seme?
         toki li o jo e ike. toki li jo seme e sitelen? mute, mute)
     hate: >
@@ -532,7 +532,7 @@ profile:
     names: 'nimi'
     pronouns: 'ona'
     pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
+        You can enter a <strong>pronoun</strong> (eg. “they” or “she/mijer”)
         or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
         or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
         Keep in mind that <strong>all five forms</strong> are required in that case,
@@ -603,9 +603,9 @@ crud:
     filter: 'apeja'
     filterLong: 'apeja e supa'
     search: 'alasa…'
-    author: 'jan %username% li pali e ni'
+    author: 'jan lipu li '
     saved: 'a pona!'
-    loginRequired: '{/account=o insa}, la sina tawa e ni'
+    loginRequired: '{/jan_mi=o insa}, la sina tawa e ni'
     copy: 'jasima tawa'
     download: 'jasima ilo mi'
 
@@ -633,9 +633,9 @@ confirm:
     ok: 'pona'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: 'lawa'
+    lastUpdate: 'pali lon seme:'
+    consent: 'sina kepeken e ilo Ponen.Pase, la sina lawa e {/lawa=lawa mi}.'
     #you can either leave the terms untranslated, or translate it and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -802,20 +802,20 @@ ban:
     confirm: 'apeja e jan @%username% anu seme?'
     header: 'sina apeja. kulupu li lukin ala e sitelen sina.'
     banned: 'apeja'
-    termsIntro: 'sona {/terms=lawa mi}'
+    termsIntro: 'sona {/lawa=lawa mi}'
 
 report:
     action: 'alasa moli'
     comment: 'o toki e ike sitelen ni'
     confirm: 'alasa moli e jan @%username% anu seme?'
     sent: 'alasa moli sina pi lon tawa. mi olin e sina!'
-    terms: 'o sona e {/terms=lawa mi}'
+    terms: 'o sona e {/lawa=lawa mi}'
     hoarding: 'alasa moli o ala e jan Usewan Oawin.'
 
 flags:
     Abroromantic: 'olin telo'
     Abrosexual: 'unpa telo'
-    Achillean: 'kuse mije'
+    Achillean: 'kese mije'
     Alloromantic_Asexual: 'olin pi unpa ala'
     Agender: 'kule ala'
     Ambiamorous: 'olin nanpa nasa'
@@ -829,7 +829,7 @@ flags:
     Aromantic_Allosexual: 'unpa pi olin ala'
     Asexual: 'unpa ala'
     Autigender: 'kule Osis'
-    Bear: 'soweli suli'
+    Bear: 'sowile suli'
     Bicurious: 'wile tu'
     Bigender: 'kule tu'
     Biromantic: 'olin tu'
@@ -844,16 +844,16 @@ flags:
     Demiromantic: 'olin pi jan pona'
     Demisexual: 'unpa pi jan pona'
     Diamoric: 'olin pi tonsi '
-    Enbian: 'kuse tonsi'
+    Enbian: 'kese tonsi'
     Fa*afafine: 'Pa Apapin'
     Femme: 'Peme'
-    Gay: 'kuse / unpa sama'
+    Gay: 'kese / unpa sama'
     Gender_Questioning: 'kule seme'
     Genderfae: 'kule pi mije ala'
     Genderfaun: 'kule pi meli ala'
     Genderfluid: 'kule telo'
     Genderflux: 'kule telo pi telo ala'
-    Genderqueer: 'kule kuse'
+    Genderqueer: 'kule kese'
     Greyasexual: 'unpa pi kipisi ala'
     Greyaromantic: 'olin pi kipisi ala'
     Gynesexual: 'unpa meli'
@@ -866,7 +866,7 @@ flags:
     Intersex: 'meso'
     LGBTQ: 'kulupu kule'
     Leather_Pride: 'supa Lete'
-    Lesbian: 'kuse meli'
+    Lesbian: 'kese meli'
     Lesbiromantic: 'olin sama meli'
     Maverique: 'kule suli Mawewi'
     Monoamorous: 'olin nanpa wan'
@@ -889,12 +889,12 @@ flags:
     Pomosexual: 'unpa namako'
     Progress_Pride: 'pona lon tawa'
     Queer: 'kule'
-    Queerian: 'kuse kule'
+    Queerian: 'kese kule'
     Queerplatonic: 'olin pi jan pona nasa'
     Quoiromantic: 'seme olin seme'
-    Sapphic: 'kuse meli (Sapo)'
+    Sapphic: 'kese meli (Sapo)'
     Sexuality_Questioning: 'unpa seme'
-    Straight_Ally: 'jan pi kuse ala pi kulupu'
+    Straight_Ally: 'jan pi kese ala pi kulupu'
     Toric: 'tonsi li tawa mije e olin'
     Transfeminine: 'meli ante'
     Transgender: 'kule ante'
@@ -946,8 +946,8 @@ calendar:
         idahobit: 'suno Itahopin'
         intersex_day: 'suno jan meso'
         intersex_remembrance_day: 'suno sona jan meso'
-        lesbian_day: 'suno kuse meli'
-        lesbian_visibility_day: 'suno sona kuse meli'
+        lesbian_day: 'suno kese meli'
+        lesbian_visibility_day: 'suno sona kese meli'
         coming_out_day: 'suno tawa'
         nonbinary_day: 'suno tonsi'
         pan_day: 'suno sona unpa ale'
@@ -963,27 +963,27 @@ calendar:
         nonbinary_week: 'likujo sona tonsi'
         nonbinary_week___timeDescription: 'insa e likujo mun nanpa tu tu tu wan pi suno 14'
         polyamory_day: 'suno olin nanpa mute'
-        homophobia_sport: 'suno alasa pi kuse'
-        gay_uncles_day: 'suno mama sama kuse'
-        lgbtq_stem: 'suno pi kuse insa sona ilo'
+        homophobia_sport: 'suno alasa pi kese'
+        gay_uncles_day: 'suno mama sama kese'
+        lgbtq_stem: 'suno pi kese insa sona ilo'
         trans_depathologization: 'suno Tepatolokisasion'
-        lgbti_book_day: 'suno pi lipu kuse'
+        lgbti_book_day: 'suno pi lipu kese'
         human_rights_day: 'suno pi lawa jan'
         nonbinary_parents_day: 'suno mama tonsi'
         trans_prisoner: 'suno jan ike pi tonsi'
         xenogender_day: 'suno sona kule sin'
-        genderqueer_day: 'suno kule kuse'
+        genderqueer_day: 'suno kule kese'
         genderfluid_day: 'suno sona kule telo'
         aids_day: 'suno Aije'
         tolerance_day: 'suno sona'
         social_justice_day: 'suno kulupu lawa'
         stonewall_day: 'suno Tonua'
-        domestic_violence: 'suno kuse moli'
+        domestic_violence: 'suno awen e alasa olin ala'
         polysexual_day: 'suno sona olin mute'
         orlando_day: 'suno Pue'
         aids_memorial: 'suno Aije seli'
-        health_week: 'suno sona kuse pi moli ala'
-        lesbian_visibility_week: 'likujo sona kuse meli'
+        health_week: 'suno sona kese pi moli ala'
+        lesbian_visibility_week: 'likujo sona kese meli'
         demigender_day: 'suno kule kipisi'
         pan_pride_day: 'suno unpa ale'
         transmasculine_day: 'suno jan mije ante'
@@ -993,10 +993,10 @@ calendar:
         family_equality_day: 'suno mama sama'
         aro_month: 'mun sona olin ala'
         black_ribbon_day: 'suno Pae Wipon'
-        black_queer_week: 'likujo jan pimeja kuse'
-        mena_lesbian_day: 'suno kuse meli Mena'
+        black_queer_week: 'likujo jan pimeja kese'
+        mena_lesbian_day: 'suno kese meli Mena'
         hate_crime_awareness_week: 'likujo sona pi lawa ala ike'
-        deaf_awareness_week: 'likujo sona jan kuse pi kute ala'
+        deaf_awareness_week: 'likujo sona jan kese pi kute ala'
         suicide_prevention_day: 'suno ala e moli mi'
         suicide_prevention_month: 'mun ala e moli mi'
         aids_awareness_month: 'mun sona Aije'
@@ -1008,25 +1008,25 @@ calendar:
         sexual_health_day: 'suno sona unpa moli ala'
         world_sexual_health_day: 'suno ma sona unpa moli ala'
         aids_vaccine_day: 'suno misikeke Aije'
-        queer_youth_day: 'suno jan lili kuse'
+        queer_youth_day: 'suno jan lili kese'
         omnisexual_day: 'suno unpa ale telo'
         unlabeled_day: 'suno sona jan kule seme'
         trans_youth_day: 'suno jan lili kule sama ala'
         hiv_long_term_survivors_day: 'suno jan Aisejaijewe pi moli ala lon tenpo'
         women_hiv_awareness_day: 'suno sona meli Aisejaijewe'
         youth_hiv_awareness_day: 'suno sona jan lili Aisejaijewe'
-        gay_hiv_awareness_day: 'suno sona mije kuse Aisejaijewe'
+        gay_hiv_awareness_day: 'suno sona mije kese Aisejaijewe'
         black_hiv_awareness_day: 'suno sona jan pimeja Aisejaijewe'
         hiv_aging_awareness_day: 'suno sona majuna Aisejaijewe'
         trans_hiv_testing_day: 'sona sona pi Aisejaijewe sona pi kule sama ante'
-        mspec_lesbian_day: 'suno sona meli kuse telo'
-        mspec_lesbian_week: 'likujo sona meli kuse telo'
-        mspec_gay_day: 'suno sona mije kuse telo'
-        mspec_gay_week: 'likujo sona mije kuse telo'
+        mspec_lesbian_day: 'suno sona meli kese telo'
+        mspec_lesbian_week: 'likujo sona meli kese telo'
+        mspec_gay_day: 'suno sona mije kese telo'
+        mspec_gay_week: 'likujo sona mije kese telo'
         spring_testing_week: 'likujo Pin Elopa pi sona Aisejaijewe'
         autumn_testing_week: 'likujo Otun Elopa pi sona Aisejaijewe'
         sex_worker_day: 'suno jan pali unpa'
-        equal_pay_day: 'suno sona pi mani sama pi kuse'
+        equal_pay_day: 'suno sona pi mani sama pi kese'
         sex_worker_pride: 'pona jan pali unpa'
         sex_worker_rights_day: 'suno jan pali unpa pi lawa'
         sex_worker_violence_day: 'suno jan pali unpa pi awen'
@@ -1040,7 +1040,7 @@ calendar:
     celebrating_custom: 'lon'
     celebrating_day: 'lon'
     celebrating_week: 'lon insa'
-    celebrating_month: 'lon'
+    celebrating_month: 'lon insa'
     image:
         header: 'jasima ilo mi e sitelen'
     view:
@@ -1052,4 +1052,3 @@ calendar:
 ukraine:
     header: 'mi lon poka e Ukawina.'
     link: '{https://how-you-can-support-ukraine.super.site/=o awen e Ukawina}'
-
