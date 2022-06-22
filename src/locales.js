@@ -18,4 +18,5 @@ module.exports = [
     ['ko', '한국어',                'https://ko.pronouns.page', false],
     ['yi', 'ייִדיש',               'https://yi.pronouns.page', false],
     ['zh', '中文',                'https://zh.pronouns.page', true],
+    ['tok', 'toki pona',          'https://tok.pronouns.page', false],
 ];
