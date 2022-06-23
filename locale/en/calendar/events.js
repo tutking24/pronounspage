@@ -217,7 +217,7 @@ module.exports = [
             }
             lastDay = d;
         }
-        yield new Day(lastDay.year, 12, 1);
+        yield new Day(lastDay.year, 10, 1);
     }, EventLevel.Week),
 
     // Paush 6 (Bikram Sambat)
