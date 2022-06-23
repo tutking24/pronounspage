@@ -209,7 +209,7 @@ module.exports = [
     }, EventLevel.Day),
 
     // Sep 24 - Oct 1
-    new Event('Iranian Queer Voice Celebration Week', null, 9, function* (monthDays) {
+    new Event('{https://www.facebook.com/voicecelebration/=Iranian Queer Voice Celebration Week}', 'Progress Pride', 9, function* (monthDays) {
         let lastDay = null;
         for (let d of monthDays) {
             if (d.day >= 24) {
