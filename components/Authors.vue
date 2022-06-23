@@ -15,10 +15,10 @@
             <li v-for="author in authors" class="mb-2">
                 <Icon :v="author.group ? 'users' : 'user'"/>
                 <a v-if="author.link" :href="author.link" target="_blank" rel="noopener">
-                    <Spelling :text="author.footerName"/>
+                    <Spelling :text="convertName(author.footerName)"/>
                 </a>
                 <span v-else>
-                    <Spelling :text="author.footerName"/>
+                    <Spelling :text="convertName(author.footerName)"/>
                 </span>
                 <nuxt-link v-if="author.username" :to="`/@${author.username}`" class="badge bg-light text-dark border">
                     @{{author.username}}
@@ -33,7 +33,10 @@
 </template>
 
 <script>
+    import spelling from "../plugins/spelling";
+
     export default {
+        mixins: [ spelling ],
         props: {
             bigteam: {type: Boolean},
         },

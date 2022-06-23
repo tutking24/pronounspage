@@ -532,6 +532,7 @@ user:
 profile:
     description: 'lipu suli'
     names: 'nimi'
+    namesInfo: 'You can specify sitelan pona spelling of your name by following the pattern: <code>jan Sewe (soweli e wan esun)</code>' # TODO
     pronouns: 'ona'
     pronounsInfo: >
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/mijer”)

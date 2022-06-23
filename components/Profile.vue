@@ -62,7 +62,7 @@
                 </h3>
 
                 <ul class="list-unstyled">
-                    <li v-for="(opinion, name) in profile.names"><Opinion :word="name" :opinion="opinion"/></li>
+                    <li v-for="(opinion, name) in profile.names"><Opinion :word="convertName(name)" :opinion="opinion"/></li>
                 </ul>
             </div>
             <div v-if="Object.keys(profile.pronouns).length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
@@ -115,8 +115,10 @@
 <script>
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
+    import spelling from "../plugins/spelling";
 
     export default {
+        mixins: [ spelling ],
         props: {
             user: { required: true },
             profile: { required: true },
