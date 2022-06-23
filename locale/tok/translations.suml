@@ -95,6 +95,7 @@ sources:
         Series: 'sitelen pi kipisi mute'
         Song: 'musi'
         Poetry: 'lipu musi'
+        Comics: 'comics'  # TODO
         Game: 'leko'
         Other: 'ante'
     submit:
@@ -103,12 +104,12 @@ sources:
         pronouns: 'ona seme?'
         pronounsInfo: 'sina toki e ona pi pona (“ona tonsi”, “ona kese”, “ona mije en ona meli”)'
         type: 'sitelen'
-        author: 'jan li lipu'
+        author: 'tan'
         title: 'nimi'
         extra: 'namako'
         year: 'mun ale mute seme e open?'
         fragments: 'kipisi'
-        fragmentsInfo: 'sina kule e sitelen leko: “ni li jan Kai. ni li \[\[ona tonsi]]. \[\[ona tonsi]] li telo e akesi.”'
+        fragmentsInfo: 'sina kule e sitelen leko: “ni li jan Kai. ni li \[\[tonsi]]. \[\[ona]] li pona telo e akesi.”'
         comment: 'toki ike'
         link: 'tawa toki'
         thanks: 'ale li o pona! mi olin e sina!'
@@ -404,7 +405,7 @@ english:
 
 contact:
     header: 'o toki!'
-    authors: 'jan pali ni'
+    authors: 'tan'
     faq: >
         lon pini sina toki, la o lukin e {/seme_mute=seme mute}.
     technical: >
@@ -590,7 +591,7 @@ profile:
         description: 'sina lukin e ni. kulupu lukin ala e ni.'
     language:
         header: 'toki'
-        description: 'sitelen suli @%username% li sama e toki lon anpa:'
+        description: 'sitelen suli @%username% li sama e toki lon anpa'
 
 share: 'tawa'
 
@@ -604,7 +605,7 @@ crud:
     filter: 'apeja'
     filterLong: 'apeja e supa'
     search: 'alasa…'
-    author: 'jan lipu li '
+    author: 'tan'
     saved: 'a pona!'
     loginRequired: '{/jan_mi=o insa}, la sina tawa e ni'
     copy: 'jasima tawa'
@@ -635,7 +636,7 @@ confirm:
 
 terms:
     header: 'lawa'
-    lastUpdate: 'pali lon seme:'
+    lastUpdate: 'pali lon seme'
     consent: 'sina kepeken e ilo Ponen.Pase, la sina lawa e {/lawa=lawa mi}.'
     #you can either leave the terms untranslated, or translate it and include the following disclaimer:
     #translationDisclaimer: >
