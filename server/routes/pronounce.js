@@ -31,7 +31,7 @@ router.get('/pronounce/:voice/:pronoun*', handleErrorAsync(async (req, res) => {
 
     const text = example.pronounce(pronoun);
 
-    if (!text || text.length > 256) {
+    if (!text || text.replace(/<[^>]+>/g, '').length > 256) {
         return res.status(404).json({error: 'Not found'});
     }
 
