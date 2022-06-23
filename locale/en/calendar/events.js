@@ -208,6 +208,18 @@ module.exports = [
         }
     }, EventLevel.Day),
 
+    // Sep 24 - Oct 1
+    new Event('Iranian Queer Voice Celebration Week', null, 9, function* (monthDays) {
+        let lastDay = null;
+        for (let d of monthDays) {
+            if (d.day >= 24) {
+                yield d;
+            }
+            lastDay = d;
+        }
+        yield new Day(lastDay.year, 12, 1);
+    }, EventLevel.Week),
+
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
