@@ -804,6 +804,7 @@ flags:
     Bear: 'Beer'
     Bicurious: 'Bicurieus'
     Bigender: 'Bigender'
+    Biromantic: 'Biromantisch'
     Bisexual: 'Biseksueel'
     Butch: 'Butch'
     Ceteroromantic: 'Ceteroromantisch'
@@ -1000,15 +1001,15 @@ calendar:
         youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
         gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
-        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO      
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
         mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
         spring_testing_week: 'Spring European HIV Testing Week' # TODO
         autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO 
+        sex_worker_day: 'International Sex Worker Day' # TODO
         equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
         sex_worker_pride: 'Sex Worker Pride' # TODO
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
@@ -1017,7 +1018,7 @@ calendar:
         omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Alan Turing Day' # TODO                                                  
+        alan_turing_day: 'Alan Turing Day' # TODO
     banner: 'Vandaag op de kalender'
     celebrating_custom: 'wordt gevierd op:'
     celebrating_day: 'wordt gevierd op:'
