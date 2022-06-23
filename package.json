@@ -38,6 +38,7 @@
     "markdown-loader": "^6.0.0",
     "mastodon": "^1.2.2",
     "multer": "^1.4.2",
+    "nepali-calendar-js": "^1.0.4",
     "node-fetch": "^2.6.1",
     "nuxt": "^2.15.2",
     "pageres": "^6.2.3",

@@ -1,5 +1,6 @@
 const md5 = require("js-md5");
 const { v5: uuid5 } = require('uuid');
+const nepali = require('nepali-calendar-js');
 
 class Day {
     constructor(year, month, day, dayOfWeek) {
@@ -65,7 +66,7 @@ module.exports.EventLevel = {
 }
 
 module.exports.Event = class {
-    constructor(name, flag, month, generator, level, terms = [], timeDescription = null) {
+    constructor(name, flag, month, generator, level, terms = [], timeDescription = null, localCalendar = null) {
         this.name = name;
         this.flag = flag;
         this.month = month;
@@ -73,6 +74,7 @@ module.exports.Event = class {
         this.level = level;
         this.terms = terms;
         this.timeDescription = timeDescription;
+        this.localCalendar = localCalendar;
         this.daysMemoise = {}
     }
 
@@ -138,6 +140,44 @@ module.exports.Event = class {
             end: [last.year, last.month, last.day],
             calName: translations.calendar.headerLong,
             sequence,
+        }
+    }
+}
+
+class NepaliDay extends Day {
+    constructor(gYear, gMonth, gDay, gDayOfWeek, nYear, nMonth, nDay) {
+        super(gYear, gMonth, gDay, gDayOfWeek);
+        this.nYear = nYear;
+        this.nMonth = nMonth;
+        this.nDay = nDay;
+    }
+}
+
+module.exports.NepaliEvent = class extends module.exports.Event {
+    getDays(year) {
+        year = parseInt(year);
+
+        if (this.daysMemoise === undefined) {
+            // shouldn't happen, but somehow does, but only on prod?
+            this.daysMemoise = {};
+        }
+
+        if (this.daysMemoise[year] === undefined) {
+            this.daysMemoise[year] = [...this.generator(this._iterateNepaliMonth(year, this.month))];
+        }
+
+        return this.daysMemoise[year];
+    }
+
+    *_iterateNepaliMonth(gYear, nMonth) {
+        for (let possibleYearOffset of [56, 57]) {
+            const daysInMonth = nepali.nepaliMonthLength(gYear + possibleYearOffset, nMonth);
+            for (let nDay = 1; nDay <= daysInMonth; nDay++) {
+                const {gy, gm, gd} = nepali.toGregorian(gYear + possibleYearOffset, nMonth, nDay);
+                if (gy === gYear) {
+                    yield new NepaliDay(gy, gm, gd, null, gYear + possibleYearOffset, nMonth, nDay);
+                }
+            }
         }
     }
 }

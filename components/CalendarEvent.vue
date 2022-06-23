@@ -8,6 +8,7 @@
         <a v-if="ics" :href="`/api/queer-calendar-${config.locale}-${year}-${event.getUuid()}.ics`" class="small" :aria-label="$t('crud.download') + ' .ics'" :title="$t('crud.download') + ' .ics'">
             <Icon v="calendar-plus"/>
         </a>
+        <small v-if="event.localCalendar">({{event.localCalendar}})</small>
     </span>
 </template>
 
