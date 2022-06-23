@@ -23,6 +23,22 @@ export default {
             }
 
             return str;
-        }
+        },
+        convertName(name) {
+            if (this.config.locale === 'tok') {
+                const m = name.match(/^jan (.+?) \(((?:[mnptkswlj]?[iueoa][mn]? ?)+)\)$/i);
+                if (!m) {
+                    return name;
+                }
+
+                if (this.spelling === 'sitelen') {
+                    return 'jan ' + m[2];
+                }
+
+                return 'jan ' + m[1];
+            }
+
+            return name;
+        },
     },
 }

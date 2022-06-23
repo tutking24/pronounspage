@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                     <label for="teamName">Team page display name:</label>
-                    <input class="form-control" name="teamName" maxlength="36" v-model="teamName"/>
+                    <input class="form-control" name="teamName" maxlength="64" v-model="teamName"/>
                     <PropagateCheckbox field="teamName" :before="beforeChanges.teamName" :after="teamName" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </div>
 
@@ -44,7 +44,7 @@
 
                 <div class="form-group">
                     <label for="footerName">Footer display name:</label>
-                    <input class="form-control" name="footerName" maxlength="36" v-model="footerName"/>
+                    <input class="form-control" name="footerName" maxlength="64" v-model="footerName"/>
                     <PropagateCheckbox field="footerName" :before="beforeChanges.footerName" :after="footerName" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </div>
 
@@ -97,6 +97,9 @@
                     <Icon v="signature"/>
                     <T>profile.names</T>
                 </h3>
+                <p v-if="$te('profile.namesInfo')" class="small text-muted">
+                    <T>profile.namesInfo</T>
+                </p>
                 <OpinionListInput v-model="names"/>
                 <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>

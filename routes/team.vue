@@ -52,7 +52,7 @@
 
             <ul>
                 <li v-for="credential in credentials">
-                    <strong>{{ credential.credentialsName || credential.teamName }}</strong>
+                    <strong>{{ convertName(credential.credentialsName || credential.teamName) }}</strong>
                     <a :href="`https://pronouns.page/@${credential.username}`" class="badge bg-light text-dark border">
                         @{{credential.username}}
                     </a>
@@ -113,7 +113,7 @@
                             <Avatar :user="member" dsize="4rem"/>
                         </a>
                         <span class="ms-2">
-                            {{ member.teamName }}
+                            {{ convertName(member.teamName) }}
                             <br/>
                             <a :href="`https://pronouns.page/@${member.username}`" class="badge bg-light text-dark border">
                                 @{{member.username}}
@@ -128,8 +128,10 @@
 
 <script>
     import { head } from "../src/helpers";
+    import spelling from "../plugins/spelling";
 
     export default {
+        mixins: [ spelling ],
         head() {
             return head({
                 title: this.$t('contact.team.name'),
