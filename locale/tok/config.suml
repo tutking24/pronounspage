@@ -94,11 +94,12 @@ pronouns:
 
 pronunciation:
     enabled: true
+    ipa: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+        PL:
+            language: 'es-US'
+            voice: 'Lupe'
+            engine: 'standard'
 
 sources:
     enabled: true

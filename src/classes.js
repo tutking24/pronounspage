@@ -63,7 +63,14 @@ export class Example {
                     ? pronunciation.substring(1)
                     : `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
                 )
-                : morpheme;
+                : ( config.pronunciation.ipa && morpheme
+                    ? morpheme.split('').map(
+                        c => [' ', ',', '.', ':', ';', '–', '-'].includes(c)
+                            ? c
+                            : `<phoneme alphabet="ipa" ph="${c}">${c}</phoneme>`
+                        ).join('')
+                    : morpheme
+                );
         }
 
         const ssml = '<speak>' + this[plural ? 'pluralParts' : 'singularParts'].map(part => {
