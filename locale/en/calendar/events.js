@@ -1,4 +1,4 @@
-const {Event, day, week, month, dayYear, weekStarting, EventLevel, Day} = require("../../../src/calendar/helpers");
+const {Event, NepaliEvent, day, week, month, dayYear, weekStarting, EventLevel, Day} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---
@@ -220,10 +220,18 @@ module.exports = [
         yield new Day(lastDay.year, 12, 1);
     }, EventLevel.Week),
 
+    // Paush 6 (Bikram Sambat)
+    new NepaliEvent('{https://en.wikipedia.org/wiki/National_Gender_and_Sexual_Minorities%27_Day_(Nepal)=National Gender and Sexual Minorities\' Day} (Nepal)', 'LGBTQ', 9, function* (monthDays) {
+        for (let d of monthDays) {
+            if (d.nDay === 6) {
+                yield d;
+            }
+        }
+    }, EventLevel.Day, [], null, 'Paush 6 / पौष ६'),
+
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
-    new Event('{https://en.wikipedia.org/wiki/National_Gender_and_Sexual_Minorities%27_Day_(Nepal)=National Gender and Sexual Minorities\' Day} (Nepal)', 'LGBTQ', 12, dayYear(21, 2022), EventLevel.Day),
 
     // --- one-off events ---
     new Event('{https://www.darknessintolight.ie/=Darkness into Light} (Ireland)', '_yellow-ribbon', 5, dayYear(7, 2022), EventLevel.Day),
