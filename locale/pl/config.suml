@@ -811,6 +811,11 @@ links:
             url: 'https://www.youtube.com/watch?v=aU4uPwt0QOU'
             headline: 'Jak mówić neutralnie płciowo?'
             extra: ' – Archie w <strong>Stonewall TV</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.instagram.com/tv/CfJ_qxUo2Ne/'
+            headline: 'Webinar o inkluzywności języka z okazji Pride Month'
+            extra: ' – Szymon i Andrea wraz z Babą od Polskiego u <strong>European Youth Parliament</strong>'
     mediaMentions:
         -
             icon: 'newspaper'
