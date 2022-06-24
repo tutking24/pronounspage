@@ -1358,21 +1358,21 @@ links:
                 bo w zderzeniu dwóch wartości: dobrostanu człowieka wynikającego z jego problemów z tożsamością i tradycji językowej,
                 należy uznać tę pierwszą za wyższą.
     endorsements:
-        #deaver-all-the-best:
-        #    author: 'Mason Deaver'
-        #    title: 'Wszystkiego, co najlepsze'
-        #    publisher: 'We need YA'
-        #    link: 'https://wydawnictwopoznanskie.pl/'
-        #    description:
-        #        - >
-        #            Historia niebinarneno Ben wyrzuconeno z domu po coming oucie,
-        #            zmagająceno się ze swoim zdrowiem psychicznym i odkrywająceno siłę przyjaźni i miłości.
-        #        - >
-        #            Tłumacz Artur Łuksza zdecydował się na przełożenie
-        #            {https://en.pronouns.page/they=„singular they”} jako formy {/ono/jeno=„ono/jeno”},
-        #            a w przedmowie dziękuje ekipie zaimków.pl za pomocne materiały.
-        #            {/kolektyw-rjn=Rada Języka Neutralnego} objęła książkę mecenatem merytorycznym.
-        #    review: 'mason-deaver-wszystkiego-co-najlepsze'
+        deaver-all-the-best:
+            author: 'Mason Deaver'
+            title: 'Wszystkiego, co najlepsze'
+            publisher: 'We need YA'
+            link: 'https://wydawnictwopoznanskie.pl/'
+            description:
+                - >
+                    Historia niebinarneno Ben wyrzuconeno z domu po coming oucie,
+                    zmagająceno się ze swoim zdrowiem psychicznym i odkrywająceno siłę przyjaźni i miłości.
+                - >
+                    Tłumacz Artur Łuksza zdecydował się na przełożenie
+                    {https://en.pronouns.page/they=„singular they”} jako formy {/ono/jeno=„ono/jeno”},
+                    a w przedmowie dziękuje ekipie zaimków.pl za pomocne materiały.
+                    {/kolektyw-rjn=Rada Języka Neutralnego} objęła książkę mecenatem merytorycznym.
+            # review: 'mason-deaver-wszystkiego-co-najlepsze'
         gevisser-pink-line:
             author: 'Mark Gevisser'
             title: 'Różowa linia'
@@ -1402,17 +1402,17 @@ links:
                 - >
                     Tłumaczka Ola Lubińska konsultowała z nami {/korpus#bugsnax=użycie} {/onu=dukaizmów}.
                     W napisach końcowych gry znalazły się podziękowania dla ekipy zaimków.pl.
-        #empatyczny:
-        #    author: ~
-        #    title: 'Słownik Empatyczny Języka Polskiego'
-        #    publisher: ~
-        #    link: 'https://www.facebook.com/slownikempatyczny/'
-        #    description:
-        #        - >
-        #            Fanpage na Facebooku poświęcony empatii w warstwie językowej – jak mówić,
-        #            by nie wykluczać i nie krzywdzić. „Bądźmy bardziej empatyczni wobec siebie, a będzie nam lepiej.”
-        #        - >
-        #            Jesteśmy w stałej współpracy z ekipą Słownika Empatycznego.
+        empatyczny:
+            author: ~
+            title: 'Słownik Empatyczny Języka Polskiego'
+            publisher: ~
+            link: 'https://www.facebook.com/slownikempatyczny/'
+            description:
+                - >
+                    Fanpage na Facebooku poświęcony empatii w warstwie językowej – jak mówić,
+                    by nie wykluczać i nie krzywdzić. „Bądźmy bardziej empatyczni wobec siebie, a będzie nam lepiej.”
+                - >
+                    Jesteśmy w stałej współpracy z ekipą Słownika Empatycznego.
 
 people:
     enabled: false
