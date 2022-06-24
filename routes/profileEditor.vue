@@ -109,7 +109,7 @@
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
                 </h3>
-                <div class="alert alert-info">
+                <div class="alert alert-info" v-if="$t('profile.pronounsInfo')">
                     <p class="small mb-0">
                         <Icon v="info-circle"/>
                         <T>profile.pronounsInfo</T>
