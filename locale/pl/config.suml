@@ -1337,6 +1337,10 @@ links:
             icon: 'newspaper'
             url: 'https://babaodpolskiego.pl/'
             headline: 'Baba od polskiego'
+        -
+            icon: 'books'
+            url: 'https://grupawydawniczaalpaka.pl/'
+            headline: 'Grupa Wydawnicza Alpaka'
     names:
         -
             icon: 'pen-nib'
