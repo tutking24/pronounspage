@@ -1329,6 +1329,10 @@ links:
             url: 'http://dobrerzeczy.online/femaleSwitcher/'
             headline: 'Female switcher'
             extra: ' – apka, która zamieni formy fleksyjne wyświetlanych tekstów z rodzaju męskiego na żeński.'
+        -
+            icon: 'newspaper'
+            url: 'https://babaodpolskiego.pl/'
+            headline: 'Baba od polskiego'
     names:
         -
             icon: 'pen-nib'
