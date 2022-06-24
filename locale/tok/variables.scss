@@ -4,4 +4,12 @@ $fontExtra: 'sitelen-pona-pona';
 
 .sitelen {
     font-family: $fontExtra, $fontText;
+    .cartouche {
+        padding: .1em;
+        margin-inline-start: .15em;
+        margin-inline-end: .15em;
+        border: .075em solid #000;
+        border-radius: .2em;
+        font-size: 0.9em;
+    }
 }
