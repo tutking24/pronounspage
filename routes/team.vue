@@ -52,7 +52,7 @@
 
             <ul>
                 <li v-for="credential in credentials">
-                    <strong>{{ convertName(credential.credentialsName || credential.teamName) }}</strong>
+                    <Spelling :text="convertName(credential.credentialsName || credential.teamName)"/>
                     <a :href="`https://pronouns.page/@${credential.username}`" class="badge bg-light text-dark border">
                         @{{credential.username}}
                     </a>
@@ -113,7 +113,7 @@
                             <Avatar :user="member" dsize="4rem"/>
                         </a>
                         <span class="ms-2">
-                            {{ convertName(member.teamName) }}
+                            <Spelling :text="convertName(member.teamName)"/>
                             <br/>
                             <a :href="`https://pronouns.page/@${member.username}`" class="badge bg-light text-dark border">
                                 @{{member.username}}

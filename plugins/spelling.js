@@ -1,6 +1,7 @@
 import {mapState} from "vuex";
 import zhConverter from "zh_cn_zh_tw";
 import futurus from 'avris-futurus';
+import {escapeHtml} from "../src/helpers";
 
 export default {
     computed: {
@@ -28,17 +29,17 @@ export default {
             if (this.config.locale === 'tok') {
                 const m = name.match(/^jan (.+?) \(((?:[mnptkswlj]?[iueoa][mn]? ?)+)\)$/i);
                 if (!m) {
-                    return name;
+                    return escapeHtml(name);
                 }
 
                 if (this.spelling === 'sitelen') {
-                    return 'jan ' + m[2];
+                    return `jan <span class="cartouche">${escapeHtml(m[2])}</span>`;
                 }
 
-                return 'jan ' + m[1];
+                return `jan ${escapeHtml(m[1])}`;
             }
 
-            return name;
+            return escapeHtml(name);
         },
     },
 }
