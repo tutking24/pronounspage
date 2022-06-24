@@ -1,4 +1,4 @@
-title: 'Pronouns.Page'
+title: 'Pronouns.page'
 domain: 'tok.pronouns.page'
 description: 'ijo li kepeken e ona e toki tonsi'
 
@@ -6,7 +6,7 @@ home:
     link: 'sitelen tomo'
     header: 'ona'
     headerLong: 'ona ale'
-    welcome: 'kama pona! ni li Pronouns.Page'
+    welcome: 'kama pona! ni li Pronouns.page'
     intro: >
         mi pali e tomo sona ona pi toki tonsi.
     why: 'seme ona?'
@@ -68,7 +68,7 @@ pronouns:
         button: 'pali e tawa pi sitelen ante'
         header: 'sitelen ante'
         raw: 'ante'
-    generated: 'ilo pali li pali e ona ni, la kulupu Ponen.Pase li pali ala e ona ni.'
+    generated: 'ilo pali li pali e ona ni, la kulupu Pronouns.page li pali ala e ona ni.'
     any:
         header: 'ona ale'
         short: 'ale'
@@ -378,7 +378,7 @@ links:
     recommended: 'o'
     blog: 'lipu lili'
     mediaShort: 'lipu'
-    media: 'Ponen.Pase li lon e lipu'
+    media: 'Pronouns.page li lon e lipu'
 
     social: 'lipu kulupu'
 
@@ -448,10 +448,10 @@ contact:
                 - 'ante'
             allies: >
                 mi tawa e jan tonsi e jan tu.
-            how: 'mi wile jo e kulupu! o tawa toki e {mailto:contact@pronouns.page=contact@pronouns.page}. toki li o je:'
+            how: 'mi wile jo e kulupu! o tawa toki e {mailto:contact@Pronouns.page=contact@Pronouns.page}. toki li o je:'
             application:
                 - 'toki e nimi sina.'
-                - 'tawa e sitelen sina Ponen.Pase.'
+                - 'tawa e sitelen sina Pronouns.page.'
                 - 'tawa e lipu kulupu sina.'
                 - 'toki e sona sina anu seme?'
                 - 'toki e sina wile pali.'
@@ -542,7 +542,7 @@ profile:
     flags: 'sitelen'
     flagsInfo: 'o tawa e sitelen sina lon ni.'
     flagsCustom: 'tawa e pali sitelen'
-    flagsCustomWarning: 'sitelen ni li pali jan. sitelen ni li pali pi kulupu Ponen.Pase ala.'
+    flagsCustomWarning: 'sitelen ni li pali jan. sitelen ni li pali pi kulupu Pronouns.page ala.'
     flagsAsterisk: 'ni li kule ala, la mi jo e ni.'
     links: 'tawa mute'
     linksRecommended: 'o tawa:'
@@ -630,7 +630,7 @@ confirm:
 terms:
     header: 'lawa'
     lastUpdate: 'pali lon seme'
-    consent: 'sina kepeken e ilo Ponen.Pase, la sina lawa e {/lawa=lawa mi}.'
+    consent: 'sina kepeken e ilo Pronouns.page, la sina lawa e {/lawa=lawa mi}.'
     #you can either leave the terms untranslated, or translate it and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -639,7 +639,7 @@ terms:
     content:
         intro: >
             These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
+            <strong>Pronouns.page / zaimki.pl</strong> operated by the “Neutral Language Council” collective
             who can be contacted via email:
         consent: >
             By using the Services you agree to be bound by these Terms of Service and you consent
@@ -933,7 +933,7 @@ calendar:
     events:
         pride_month: 'mun pona'
         trans_month: 'mun kule sama ala'
-        zaimki_birthday: 'suno Ponen.Pase'
+        zaimki_birthday: 'suno Pronouns.page'
         agender_day: 'suno kule ala'
         asexuality_day: 'suno unpa ala'
         bisexuality_day: 'suno unpa tu'

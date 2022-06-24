@@ -15,7 +15,7 @@ pronouns:
             tonsi mute li kepeken e ona mute.
             ona li pona e nimi pi ni tu.
             ona mute li pona e nimi pi tu ante.
-        examples: ['ona mije anu ona meli', 'ona mije anu ona tonsi', 'ona tonsi anu ona meli']
+        examples: ['mije&meli', 'mije&tonsi', 'tonsi&meli']
     null:
         description: >
             {/apeja_e_ona=apeja e ona} / {/ona_ala=ona ala} / {/jan_pi_nimi_ona_ala=jan pi nimi ona ala} / {/ona_nimi=ona nimi}
@@ -25,9 +25,7 @@ pronouns:
             {https://lgbta.wikia.org/wiki/Nullpronominal=ona ala lon pu Esipiti}
         morphemes:
             pronoun_subject: 'ona #'
-            pronoun_object: 'ona #'
-            possessive_determiner: '#'
-            possessive_pronoun: '#'
+            pronoun_adjective: '#'
             reflexive: 'jan #'
         examples: [':Sonja', ':N', ':Sa']
         template: 'o open e ijo, la o ante nimi sina e nimi ijo.'
@@ -74,9 +72,7 @@ pronouns:
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=ona nimi sitelen linluwi} li toki linluwi, la toki ala pi linluwi ala.'
         morphemes:
             pronoun_subject: 'ona #'
-            pronoun_object: 'ona #'
-            possessive_determiner: '#'
-            possessive_pronoun: '#'
+            pronoun_adjective: '#'
             reflexive: 'jan #'
         examples: ['💫', '💙']
         template: 'o open e ijo, la o ante sitelen sina e sitelen ijo.'

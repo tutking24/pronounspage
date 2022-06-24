@@ -26,7 +26,7 @@
                     :class="['btn btn-sm', filter === ':' + category ? 'btn-primary' : 'btn-outline-primary']"
                     @click="filter = filter === ':' + category ? '' : ':' + category"
                 >
-                    <small>{{ category }}</small>
+                    <small><Spelling :text="category"/></small>
                 </button>
             </div>
         </section>

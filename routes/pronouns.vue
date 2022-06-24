@@ -117,7 +117,7 @@
                     </p>
                     <div class="small my-1" v-if="config.pronouns.multiple.description">
                         <Icon v="info-circle"/>
-                        <em v-html="config.pronouns.multiple.description"></em>
+                        <em><Spelling :text="config.pronouns.multiple.description"/></em>
                     </div>
                     <SimplePronounList :pronouns="config.pronouns.multiple.examples" class="mb-3"/>
                     <a v-if="!customiseMultiple" href="#" @click.prevent="customiseMultiple = true" class="btn btn-outline-primary w-100">
