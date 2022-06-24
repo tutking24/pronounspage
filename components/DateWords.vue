@@ -1,6 +1,6 @@
 <template>
     <span>
-        {{$t('calendar.date', {year: day.year, date: $t('calendar.dates.' + day.month, {day: day.day})})}}
+        <Spelling :text="$t('calendar.date', {year: day.year, date: $t('calendar.dates.' + day.month, {day: day.day})})"/>
         <DateLocal :day="day" :inline="inline"/>
     </span>
 </template>
