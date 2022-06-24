@@ -21,9 +21,10 @@ router.get('/admin/list', handleErrorAsync(async (req, res) => {
             SELECT u.username, p.teamName, p.locale, u.id, u.email, u.avatarSource, p.credentials, p.credentialsLevel, p.credentialsName, a.payload
             FROM users u
                 LEFT JOIN profiles p ON p.userId = u.id
-                LEFT JOIN authenticators a ON u.id = a.userId AND a.type = u.avatarSource AND (a.validUntil IS NULL OR a.validUntil > ${now()}) 
+                LEFT JOIN authenticators a ON u.id = a.userId AND a.type = u.avatarSource 
             WHERE p.teamName IS NOT NULL
               AND p.teamName != ''
+              AND (a.validUntil IS NULL OR a.validUntil > ${now()})
             ORDER BY RANDOM()
         `);
 
