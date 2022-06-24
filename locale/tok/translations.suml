@@ -93,9 +93,9 @@ sources:
         Article: 'lipu lili'
         Movie: 'sitelen'
         Series: 'sitelen pi kipisi mute'
-        Song: 'musi'
+        Song: 'musi kalama'
         Poetry: 'lipu musi'
-        Comics: 'comics'  # TODO
+        Comics: 'lipu sitelen'
         Game: 'leko'
         Other: 'ante'
     submit:
@@ -118,7 +118,7 @@ sources:
         key: 'ilo'
         keyInfo: 'ilo, la tawa e toki sama pi toki ante'
         images: 'sitelen mute'
-        spoiler: 'sitelen ike' # TODO
+        spoiler: 'sitelen ike'
     otherVersions: 'toki ante'
     referenced: 'kepeken ijo'
 
@@ -532,17 +532,9 @@ user:
 profile:
     description: 'lipu suli'
     names: 'nimi'
-    namesInfo: 'You can specify sitelan pona spelling of your name by following the pattern: <code>jan Sewe (soweli e wan esun)</code>' # TODO
+    namesInfo: 'sina ken sitelen e nimi sitelen pona, la <code>jan Sonja (soweli o nanpa jan ale)</code>.'
     pronouns: 'ona'
-    pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/mijer”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
+    pronounsInfo: ~
     pronounsNotFound: 'a ike. o lipu e lipu lon sewi'
     words: 'nimi sitelen'
     birthday: 'nanpa suno'
@@ -551,7 +543,7 @@ profile:
     flagsInfo: 'o tawa e sitelen sina lon ni.'
     flagsCustom: 'tawa e pali sitelen'
     flagsCustomWarning: 'sitelen ni li pali jan. sitelen ni li pali pi kulupu Ponen.Pase ala.'
-    flagsAsterisk: 'ni li kule ala, la mi jo e ni.' # TODO
+    flagsAsterisk: 'ni li kule ala, la mi jo e ni.'
     links: 'tawa mute'
     linksRecommended: 'o tawa:'
     verifiedLinks:
