@@ -469,7 +469,7 @@ user:
         help: 'o insa anu pali e jan mi, la o kepeken e leko anpa anu e toki Imai sina lon anpa.'
         placeholder: 'nimi Imai anu nimi sina, la nimi sina li lon pini.'
         action: 'pali e jan mi / o jan mi'
-        emailSent: 'mi tawa e toki Imai lon sina (%email%), la toki Imai li jo e toki tu tu tu. toki lon ni.'
+        emailSent: 'mi tawa e toki Imai lon sina <strong>%email%</strong>, la toki Imai li jo e toki tu tu tu. toki lon ni.'
         userNotFound: 'alasa ala e jan'
         email:
             subject: 'toki tu tu tu sina li {{code}}'
