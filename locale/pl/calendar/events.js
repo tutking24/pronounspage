@@ -53,14 +53,17 @@ module.exports = [
     new Event('{https://www.facebook.com/events/670481497600736=Parada Równości 2022} (Warszawa)', 'LGBTQ', 6, dayYear(25, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1014397512828851/=Marsz Równości w Poznaniu}', 'LGBTQ', 7, dayYear(2, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/queerce=Marsz Równości w Kielcach}', 'LGBTQ', 7, dayYear(9, 2022), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/1593099004379743=IV Marsz Równości w Opolu}', 'LGBTQ', 7, dayYear(16, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1593099004379743=IV Marsz Równości w Opolu}', 'LGBTQ', 9, dayYear(10, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/698107478207024=3. Marsz Równości na Woodstocku} (Czaplinek)', 'LGBTQ', 8, dayYear(6, 2022), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 8, dayYear(20, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/521102249311233=Szczeciński Marsz Równości}', 'LGBTQ', 7, dayYear(30, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/413636720098790/=I Marsz Równości w Miliczu}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1462034324230653/=1. Transgraniczny Marsz Równości Gryfino-Mescherin}', 'LGBTQ', 5, dayYear(22, 2022), EventLevel.Day),
     new Event('Marsz Równości {https://www.facebook.com/frankfurt.slubice.PRIDE/=Słubice-Frankfurt-Pride}', 'LGBTQ', 9, dayYear(4, 2022), EventLevel.Day),
-    new Event('{https://www.facebook.com/wolnoscrownosctolerancja/=II Wodzisławski Marsz Równości}', 'LGBTQ', 8, dayYear(27, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/Bielski-Marsz-R%C3%B3wno%C5%9Bci-108906844819983/=II Bielski Marsz Równości}', 'LGBTQ', 7, dayYear(3, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/590427705709339/=II Marsz Równości w Pile}', 'LGBTQ', 8, dayYear(27, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/429088502078211/=IV Marsz Równości w Toruniu}', 'LGBTQ', 9, dayYear(17, 2022), EventLevel.Day), 
+    new Event('{https://www.facebook.com/marszrownosciwkatowicach/=6. Marsz Równości w Katowicach}', 'LGBTQ', 9, dayYear(3, 2022), EventLevel.Day),    
+    new Event('{https://www.facebook.com/events/815945746043394/=Marsz Równości w Pruszkowie}', 'LGBTQ', 7, dayYear(10, 2022), EventLevel.Day),    
 
     // --- dynamic date ---
 
