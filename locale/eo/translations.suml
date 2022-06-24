@@ -237,11 +237,11 @@ faq:
                     kaj sugestas nesanan scivolemon pri ies seksorganoj.
                     Anstataŭe, vi povas simple demandi: «kiuj estas viaj pronomoj?» aŭ «kiel mi adresu vin?».)
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    Ĝi ankaŭ gravas normaligi simple diri al homoj viaj pronomoj
+                    “Saluton, Mi estas Michæl, {/li=li/lin}”. Ĝi ne malfacilas – sed por transgenruloj kaj nebinaruloj, ĝi signifas tiom.
+                    Ĝi eĉ estas farata pli facile rete: simple meti viajn promomojn (aŭ ligilo al ekzemploj de nia retejo) al via bio.
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
+                    Memoru ke multaj homoj eble uzas malsaman nomon kaj a malsamajn pronomoj dependante sur la situacio.
                     They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
                     Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
                 - >
@@ -427,6 +427,7 @@ contact:
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'  # TODO
         members: 'Nunaj membroj'
         member: 'Member of the collective'
+        blog: 'Blogo'
         upcoming: 'Upcoming language versions'
         join:
             header: 'Join us!'
@@ -949,7 +950,7 @@ calendar:
         pride_month: '{/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
+        agender_day: '{/terminology#agender=Agender} Pride Day'
         asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
         bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
         drag_day: '{/terminology#drag=Drag} Day'
@@ -1015,6 +1016,20 @@ calendar:
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day' # TODO
+        world_sexual_health_day: 'World Sexual Health Day' # TODO
+        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
+        queer_youth_day: 'Queer Youth Day' # TODO
+        ominsexual_day: 'Omnisexual Visibility Day' # TODO
+        unlabeled_day: 'Unlabeled Visibility Day' # TODO
+        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO
+        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
