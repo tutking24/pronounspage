@@ -1,6 +1,8 @@
 <template>
-    <div v-else class="blog-post">
-        <div v-html="content"></div>
+    <div class="blog-post">
+        <Twemoji>
+            <div v-html="content"></div>
+        </Twemoji>
 
         <Separator icon="heart"/>
         <Support/>

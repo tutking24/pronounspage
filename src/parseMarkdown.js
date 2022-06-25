@@ -78,6 +78,7 @@ export default async function parseMarkdown(markdown) {
                 .replace(/<p>{census_comparisons}<\/p>(.+?)<p>{\/census_comparisons}<\/p>/gms, mainPlusDetails(census_comparisons, true))
                 .replace(/{json=([^=}]+)=([^=}]+)}/g, fetchJson)
                 .replace(/<p>{twemoji}<\/p>(.+?)<p>{\/twemoji}<\/p>/gms, (_, c) => twemoji.parse(c))
+                .replace(/<h1 id="🏳️🌈-/g, '<h1 id="') // license header
             + '</div>'
         ;
         content = content.replace(/{table_of_contents}/g, generateToC(content));
