@@ -92,6 +92,7 @@ module.exports = [
     new Event('{/terminology#lesbian=Lesbian} {https://www.bng.gal/articulo/novas/dia-visibilidade-lesbica-galega/20210608103130030074.html=Visibility Day} (Galicia)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
     new Event('{https://napwha.org.au/about-us/national-network-of-women/=National Day of Women living with HIV} (Australia)', '_red-ribbon', 3, day(9), EventLevel.Day, ['aids']),
     new Event('{https://en.wikipedia.org/wiki/David_Kato=Kuchu Remembrance Day} (Uganda)', '_black-ribbon', 1, day(26), EventLevel.Day),
+    new Event('Oslo LGBTQ Club Shooting', '_black-ribbon', 6, day(25), EventLevel.Day),
 
     // --- dynamic date ---
 
