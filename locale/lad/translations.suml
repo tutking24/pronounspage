@@ -950,7 +950,7 @@ calendar:
         queer_youth_day: 'Dia de la Mansevez Kuir'
         omnisexual_day: 'Dia de la Vizibilidad Omniseksuala'
         unlabeled_day: 'Dia de la Vizibilidad de Personas sin Etiketa'
-        trans_youth_day: 'Dia de la Vizibilidad de las Kriaturas i los Mansevos Trans'
+        trans_youth_day: 'Dia de la Vizibilidad de las Kriaturas i les Manseves Trans'
         hiv_long_term_survivors_day: 'Dia de Konsensya para los Sobrebivyentes a Lungo Termino del HIV'
         women_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Mujeres i Ninyas'
         youth_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre los Mansevos'
@@ -971,10 +971,10 @@ calendar:
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
         omnisexual_omniromantic_day: 'Dia de la Vizibilidad Omniseksuala i Omniromantika'
         omnisexual_awareness_day: 'Dia de la Konsensya Omniseksuala'
-        hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
-        trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Dia de Alan Turing' # TODO  
-        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO                                        
+        hiv_is_not_a_crime: 'El HIV No Es Un Krimen'
+        trans_flag_day: 'Dia de la Bandiera Trans'
+        alan_turing_day: 'Dia de Alan Turing'  
+        nonbinary_kids_day: 'Dia de las Kriaturas i les Manseves No Binaries'
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
