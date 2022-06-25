@@ -84,6 +84,7 @@ module.exports = [
     new Event('hiv_is_not_a_crime', '_red-ribbon', 2, day(28), EventLevel.Day, ['aids']),
     new Event('trans_flag_day', 'Transgender', 8, day(19), EventLevel.Day, ['transgender']),
     new Event('alan_turing_day', '_black-ribbon', 6, day(23), EventLevel.Day),
+    new Event('nonbinary_kids_day', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
 
     // --- dynamic date ---
 
