@@ -1,6 +1,51 @@
-# 🏳️‍🌈 Opinionated Queer License v1.0
+# 🏳️‍🌈 Opinionated Queer License v1.1
 
 © Copyright [Andrea Vos](https://avris.it), [Kolektyw „Rada Języka Neutralnego”](https://zaimki.pl/kolektyw-rjn)
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr class="text-center">
+            <th>You can</th>
+            <th>You cannot</th>
+            <th>You must</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <ul>
+                    <li>Use privately</li>
+                    <li>Use commercially</li>
+                    <li>Modify</li>
+                    <li>Adapt</li>
+                    <li>Distribute</li>
+                    <li>Sublicense</li>
+                    <li>Use a patent</li>
+                    <li>Add a warranty</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Hold the Licensor liable</li>
+                    <li>Be a big corporation</li>
+                    <li>Be law enforcement or military</li>
+                    <li>Use for bigoted purposes</li>
+                    <li>Use for violent purposes</li>
+                    <li>Just blatantly resell it<br/><small>(even if laundered through machine learning)</small></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Give credit</li>
+                    <li>Indicate changes made</li>
+                    <li>Include license or a link</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 
 ## Permissions
 
@@ -12,7 +57,8 @@ subject to the following conditions:
 ## Obligations
 
 The User must give appropriate credit to the Licensor,
-provide a copy of this license or a (clickable, if the medium allows) link to [oql.avris.it](https://oql.avris.it),
+provide a copy of this license or a (clickable, if the medium allows) link to
+[oql.avris.it/license/v1.1](https://oql.avris.it/license/v1.1),
 and indicate whether and what kind of changes were made.
 The User may do so in any reasonable manner,
 but not in any way that suggests the Licensor endorses the User or their use.
@@ -35,9 +81,10 @@ may use the Work for any reason.
 No private business run for profit with more than a thousand employees
 may use the Work for any reason.
 
-Unless the User has made substantial changes in the Work,
+Unless the User has made substantial changes to the Work,
 or uses it only as a part of a new work (eg. as a library, as a part of an anthology, etc.),
 they are prohibited from selling the Work.
+That prohibition includes processing the Work with machine learning models.
 
 ## Sanctions
 
