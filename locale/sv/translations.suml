@@ -1025,6 +1025,7 @@ calendar: # TODO
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day'
         trans_flag_day: 'Trans Flag Day'
         alan_turing_day: 'Alan Turing Day'
+        nonbinary_kids_day: 'Nonbinary Kids'' Day'
     banner: 'Vi firar'
     celebrating_custom: 'firas'
     celebrating_day: 'firas på'
