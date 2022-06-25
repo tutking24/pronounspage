@@ -973,7 +973,8 @@ calendar:
         omnisexual_awareness_day: 'Dia de la Konsensya Omniseksuala'
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Alan Turing Day' # TODO                                                  
+        alan_turing_day: 'Dia de Alan Turing' # TODO  
+        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO                                        
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
