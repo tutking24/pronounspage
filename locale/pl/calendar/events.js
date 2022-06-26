@@ -64,7 +64,7 @@ module.exports = [
     new Event('{https://www.facebook.com/events/429088502078211/=IV Marsz Równości w Toruniu}', 'LGBTQ', 9, dayYear(17, 2022), EventLevel.Day), 
     new Event('{https://www.facebook.com/marszrownosciwkatowicach/=6. Marsz Równości w Katowicach}', 'LGBTQ', 9, dayYear(3, 2022), EventLevel.Day),    
     new Event('{https://www.facebook.com/events/815945746043394/=Marsz Równości w Pruszkowie}', 'LGBTQ', 7, dayYear(10, 2022), EventLevel.Day),    
-    new Event('{https://www.reuters.com/world/europe/two-dead-several-wounded-norway-nightclub-shooting-police-say-2022-06-25/=Atak na London Pub w Oslo}', '_black-ribbon', 6, day(25), EventLevel.Day),
+    new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Zamach_w_Oslo_(2022)=Zamachu w Oslo}', '_black-ribbon', 6, day(25), EventLevel.Day),
 
     // --- dynamic date ---
 
