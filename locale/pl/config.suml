@@ -1297,6 +1297,11 @@ links:
                 mówiąc metaforycznie, one zwyciężają.
             response: >
                 Nasza polemika: {/blog/tokfm-janiszewski=„Nasz radykalny projekt polityczny”}
+        -
+            icon: 'sticky-note'
+            url: 'http://qaseees.org/resources/queer-languages-of-eastern-europe-speak-inclusively/'
+            headline: 'Queer Languages of Eastern Europe: Speak Inclusively'
+            extra: ' – <strong>Q*ASEEES</strong>'
 
     recommended:
         -
