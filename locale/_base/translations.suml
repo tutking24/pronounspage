@@ -1060,6 +1060,8 @@ calendar:
         trans_flag_day: 'Trans Flag Day'
         alan_turing_day: 'Alan Turing Day'
         nonbinary_kids_day: 'Nonbinary Kids'' Day'
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week'
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' 
     banner: 'We''re celebrating/commemorating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'

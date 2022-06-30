@@ -85,7 +85,8 @@ module.exports = [
     new Event('trans_flag_day', 'Transgender', 8, day(19), EventLevel.Day, ['transgender']),
     new Event('alan_turing_day', '_black-ribbon', 6, day(23), EventLevel.Day),
     new Event('nonbinary_kids_day', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
-
+    new Event('masc_lesbian_day', 'Lesbian', 8, day(4), EventLevel.Day, ['lesbian']),
+    new Event('masc_lesbian_week', 'Lesbian', 8, weekStarting(1), EventLevel.Week, ['lesbian']),
     // --- dynamic date ---
 
     // full week starting on a Sunday following Valentine's Day
