@@ -1098,7 +1098,9 @@ calendar:
         hiv_is_not_a_crime: 'El VIH no Es un Crimen'
         trans_flag_day: 'Dia de la Bandera Trans'
         alan_turing_day: 'Día de Alan Turing'
-        nonbinary_kids_day: 'Día de les Niñes y Adolescentes No Binaries'                                          
+        nonbinary_kids_day: 'Día de les Niñes y Adolescentes No Binaries' 
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
