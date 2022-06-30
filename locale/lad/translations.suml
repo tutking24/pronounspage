@@ -83,7 +83,7 @@ pronouns:
     grammarTable: 'Tabla'
 
 sources:
-    header: 'Fuentas'
+    header: 'Manaderos'
     headerLong: 'Enshemplos de kontekstos kulturales'
     headerLonger: 'Lingua neutrala en tekstos kulturales'
     subheader: 'Korpus de teksto de djenero neutro'
@@ -104,7 +104,7 @@ sources:
         action: 'Embiar'
         pronouns: 'Ke pronombres tienen sido uzados?'
         pronounsInfo: 'Introduze la forma mas simple del pronombre, komo se topa en el atadijo, p. en. “eye”, “el/lo”, “el o eya”'
-        type: 'Tipo de fuenta'
+        type: 'Tipo de manadero'
         author: 'Autor/a/e/x'
         title: 'Titolo'
         extra: 'Enformasion adisionala (traslador/a/e/x, nombre del jurnal, …)'
@@ -116,7 +116,7 @@ sources:
         another: 'Embiar otruno'
         moderation: 'Los embios deven ser aseptados antes de ser publikados.'
         key: 'Yave'
-        keyInfo: 'Identifiador para atar fuentas entre versiones en varias linguas i atarlas kon el diksionaryo'
+        keyInfo: 'Identifiador para atar manaderos entre versiones en varias linguas i atarlas kon el diksionaryo'
         images: 'Imajes'
         spoiler: 'Spoiler'
     otherVersions: 'En otras linguas'
@@ -405,7 +405,7 @@ user:
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
         depreciationNotice: >
-            Este no es un mantenedor de autentifikasyon sadik.
+            Este no es un mantenedor de autentifikasyon kreivle.
             <a href="%link%" target="_blank" rel="noopener">Ve este atadijo para mas detalyos</a>.
             Rekomendamos fuertemente ke te asegures de tener un metodo diferente de koneksyon desponible.
     code:
@@ -975,6 +975,8 @@ calendar:
         trans_flag_day: 'Dia de la Bandiera Trans'
         alan_turing_day: 'Dia de Alan Turing'  
         nonbinary_kids_day: 'Dia de las Kriaturas i les Manseves No Binaries'
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'

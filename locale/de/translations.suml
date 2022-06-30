@@ -1001,6 +1001,8 @@ calendar:
         trans_flag_day: 'Trans Flaggen Tag'
         alan_turing_day: 'Alan Turing Tag'
         nonbinary_kids_day: 'Tag nicht-binärer Kinder'
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Heute feiern wir'
     celebrating_custom: 'wird gefeiert'
     celebrating_day: 'wird gefeiert am:'
