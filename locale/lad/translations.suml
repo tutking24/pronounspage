@@ -975,6 +975,8 @@ calendar:
         trans_flag_day: 'Dia de la Bandiera Trans'
         alan_turing_day: 'Dia de Alan Turing'  
         nonbinary_kids_day: 'Dia de las Kriaturas i les Manseves No Binaries'
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Oy selebramos'
     celebrating_custom: 'se selebra'
     celebrating_day: 'se selebra el'
