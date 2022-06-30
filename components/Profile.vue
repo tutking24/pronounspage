@@ -139,13 +139,18 @@
                 for (let pronoun in this.profile.pronouns) {
                     if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
 
-                    let link = decodeURIComponent(
-                        pronoun
-                            .trim()
-                            .replace(new RegExp('^' + this.$base), '')
-                            .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
-                            .replace(new RegExp('^/'), '')
-                    );
+                    let link = pronoun
+                        .trim()
+                        .replace(new RegExp('^' + this.$base), '')
+                        .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
+                        .replace(new RegExp('^/'), '');
+
+                    try {
+                        let link = decodeURIComponent(link);
+                    } catch {
+                        continue;
+                    }
+
                     if (!link.startsWith(':')) {
                         link = link.toLowerCase();
                     }

@@ -42,6 +42,10 @@ const buildPronounFromTemplate = (key, template) => {
 }
 
 export const buildPronoun = (pronouns, path) => {
+    if (!path) {
+        return null;
+    }
+
     const config = global.config || process.env.CONFIG;
 
     const pronounsWithAliases = addAliasesToPronouns(pronouns);

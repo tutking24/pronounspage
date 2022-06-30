@@ -373,20 +373,27 @@
                 }
             },
             normalisePronoun(pronoun) {
-                return decodeURIComponent(
-                    pronoun
-                        .toLowerCase()
-                        .trim()
-                        .replace(new RegExp('^' + this.$base), '')
-                        .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
-                        .replace(new RegExp('^/'), '')
-                );
+                try {
+                    return decodeURIComponent(
+                        pronoun
+                            .toLowerCase()
+                            .trim()
+                            .replace(new RegExp('^' + this.$base), '')
+                            .replace(new RegExp('^' + this.$base.replace(/^https?:\/\//, '')), '')
+                            .replace(new RegExp('^/'), '')
+                    );
+                } catch {
+                    return null;
+                }
             },
             normaliseAndBuildPronoun(pronoun) {
                 return buildPronoun(pronouns, this.normalisePronoun(pronoun));
             },
             validatePronoun(pronoun) {
                 pronoun = this.normalisePronoun(pronoun);
+                if (!pronoun) {
+                    return 'profile.pronounsNotFound';
+                }
                 return pronoun === this.config.pronouns.any
                     || pronoun.startsWith(this.config.pronouns.any + ':')
                     || (this.config.pronouns.null && this.config.pronouns.null.routes && this.config.pronouns.null.routes.includes(pronoun))
