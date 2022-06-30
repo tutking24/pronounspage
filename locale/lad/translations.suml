@@ -405,7 +405,7 @@ user:
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
         depreciationNotice: >
-            Este no es un mantenedor de autentifikasyon sadik.
+            Este no es un mantenedor de autentifikasyon kreivle.
             <a href="%link%" target="_blank" rel="noopener">Ve este atadijo para mas detalyos</a>.
             Rekomendamos fuertemente ke te asegures de tener un metodo diferente de koneksyon desponible.
     code:
