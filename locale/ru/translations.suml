@@ -1108,7 +1108,9 @@ calendar:
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
         alan_turing_day: 'Alan Turing Day' # TODO 
-        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO                                        
+        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
