@@ -920,7 +920,7 @@ calendar:
         11: 'November %day%'
         12: 'December %day%'
     events:
-        pride_month: '{/terminology#pride=Pride} Month'
+        pride_month: '{/terminology#queer=Queer} {/terminology#pride=Pride} Month'
         trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
         agender_day: '{/terminology#agender=Agender} Pride Day	'
