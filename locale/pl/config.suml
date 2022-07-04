@@ -816,6 +816,17 @@ links:
             url: 'https://www.instagram.com/tv/CfJ_qxUo2Ne/'
             headline: 'Webinar o inkluzywności języka z okazji Pride Month'
             extra: ' – Szymon i Andrea wraz z Babą od Polskiego u <strong>European Youth Parliament</strong>'
+        -
+            icon: 'play-circle'
+            url: 'https://www.jezykowekontrowersje.pl/podcast/'
+            headline: 'Niebinarność, inkluzywność i język. Rozmowa z Szymonem Miśkiem, cz. 1.'
+            extra: ' – Szymon w podkaście <strong>Językowe kontrowersje</strong>'
+            quote: >
+                W pierwszej części rozmowy skupiamy się na tym, czym w ogóle jest niebinarność i jak jest wyrażana w języku.
+                Zastanawiamy się nad samą sytuacją języka i osób niebinarnych w Polsce. Zadajemy praktyczne pytania,
+                np. jak zwracać się do osób niebinarnych i kiedy poza tym przydaje się język neutralny.
+                Okazuje się, że pomaga on też zwalczać generyczny rodzaj męski. Zapoznajemy się z mnogością neutralnych form
+                i sposobów ekspresji oraz zastanawiamy się, dlaczego mogą być dla niektórych niewygodne, a dla innych naprawdę istotne.
     mediaMentions:
         -
             icon: 'newspaper'
