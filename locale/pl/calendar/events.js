@@ -9,6 +9,7 @@ module.exports = [
     new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
+    new Event('Miesiąc Gniewu', 'Progress Pride', 7, month, EventLevel.Month),    
 
     // --- static date ---
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
