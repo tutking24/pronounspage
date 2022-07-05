@@ -984,7 +984,7 @@ calendar:
         family_equality_day: 'International Family Equality Day'
         family_equality_day___timeDescription: 'on the first Sunday of May'
         aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
-        black_ribbon_day: 'Black Ribbon Day'
+        black_ribbon_day: '{https://en.wikipedia.org/wiki/Black_Ribbon_Day=Black Ribbon Day}'
         black_queer_week: 'Black {/terminology#queer=Queer} History Week'
         black_queer_week___timeDescription: 'in the third week of February'
         mena_lesbian_day: '{https://www.ankhfrance.org/sarahhegazy=West Asian and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
