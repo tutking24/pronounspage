@@ -37,9 +37,10 @@ const mastodonGetOAuthKeys = async (db, instance) => {
         WHERE instance = ${instance}
         AND provider = 'mastodon'
     `);
-    if (existingKeys) {
-        return existingKeys;
-    }
+    // TODO figure out why it doesn't work
+    // if (existingKeys) {
+    //     return existingKeys;
+    // }
     const keys = await fetch(`https://${instance}/api/v1/apps`, {
         method: 'POST',
         body: new URLSearchParams({
@@ -54,10 +55,13 @@ const mastodonGetOAuthKeys = async (db, instance) => {
         },
     }).then(res => res.json());
     assert(keys.client_id && keys.client_secret && !keys.error);
-    db.get(SQL`
-        INSERT INTO oauth_keys (instance, provider, client_id, client_secret)
-        VALUES (${instance}, 'mastodon', ${keys.client_id}, ${keys.client_secret})
-    `);
+    // TODO figure out why it doesn't work
+    if (existingKeys) {
+        db.get(SQL`
+            INSERT INTO oauth_keys (instance, provider, client_id, client_secret)
+            VALUES (${instance}, 'mastodon', ${keys.client_id}, ${keys.client_secret})
+        `);
+    }
     return keys;
 };
 
