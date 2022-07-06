@@ -9,6 +9,7 @@ module.exports = [
     new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
+    new Event('Miesiąc Gniewu', 'Progress Pride', 7, month, EventLevel.Month),    
 
     // --- static date ---
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
@@ -65,6 +66,7 @@ module.exports = [
     new Event('{https://www.facebook.com/marszrownosciwkatowicach/=6. Marsz Równości w Katowicach}', 'LGBTQ', 9, dayYear(3, 2022), EventLevel.Day),    
     new Event('{https://www.facebook.com/events/815945746043394/=Marsz Równości w Pruszkowie}', 'LGBTQ', 7, dayYear(10, 2022), EventLevel.Day),    
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Zamach_w_Oslo_(2022)=Zamachu w Oslo}', '_black-ribbon', 6, day(25), EventLevel.Day),
+    new Event('{https://www.facebook.com/marsz.rownosci.rzeszow/=Marsz Równości w Rzeszowie}', 'LGBTQ', 9, dayYear(10, 2022), EventLevel.Day),
 
     // --- dynamic date ---
 
