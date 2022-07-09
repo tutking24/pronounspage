@@ -1579,9 +1579,9 @@ calendar:
 census:
     enabled: true
     route: 'spis'
-    edition: '2022'
-    start: '2022-02-01T00:00:00+01:00'
-    end: '2022-02-28T23:59:59+02:00'
+    edition: '2023'
+    start: '2023-02-01T00:00:00+01:00'
+    end: '2023-02-28T23:59:59+02:00'
     relevant: ['osobą niebinarną', 'nie wiem']
     questions:
         -
@@ -1649,7 +1649,7 @@ census:
             writein: true
             instruction:
                 - >
-                    Chodzi nam o <strong>mowę</strong>. Następne pytanie jest o pismo.
+                    Chodzi nam o <strong>mowę</strong>. Następne pytanie będzie o pismo.
                 - >
                     Więcej informacji <a href="/zaimki" target="_blank">w zakładce „Zaimki”</a>.
                 - >
@@ -1807,6 +1807,7 @@ census:
                 - ['strach przed stygmatyzacją z powodu „niepoprawnego” języka']
                 - ['strach przed transfobią/enbyfobią', 'użycie niestandardowych form ujawniałoby moją tożsamość, a nie zawsze jest to bezpieczne']
                 - ['ciężko mi się przyzwyczaić']
+                - ['nie jestem wyoutowanx']
         -
             type: 'checkbox'
             question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
@@ -1832,6 +1833,28 @@ census:
                 - ['opinie osób eksperckich', 'np. opinia RJP o poprawności form „byłom”, „zrobiłoś”; prof. Bralczyk zachęcający do używania neutrum, itp.']
                 - ['presja otoczenia']
                 - ['bliższe identyfikowanie się z daną binarną płcią']
+        -
+            type: 'radio'
+            question: 'Co wpłynęło na Twój wybór imienia?'
+            randomise: true
+            writein: true
+            options:
+                - ['nic, używam imienia nadanego mi przez rodziców']
+                - ['jest neutralną/unisex formą imienia nadanego mi przez rodziców', 'np. Aleksander → Aleks']
+                - ['jest formą przeciwnej płci binarnej imienia nadanego mi przez rodziców', 'np. Wiktoria → Wiktor']
+                - ['wybrałom neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców']
+                - ['wybrałom nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców']
+                - ['wybrałom na imię rzeczownik, który tradycyjnie nie był używany jako imię']
+        -
+            type: 'radio'
+            question: >
+                Czy przeszkadza Ci określanie form takich jak „zrobiłom”, „powiedziałoś” nazwą „rodzaj nijaki”?
+            randomise: true
+            writein: true
+            options:
+                - ['razi mnie, wolę „rodzaj neutralny”']
+                - ['nie przeszkadza mi']
+                - ['nie mam zdania']
         -
             type: 'checkbox'
             question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
