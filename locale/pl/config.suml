@@ -1796,9 +1796,8 @@ census:
         -
             type: 'checkbox'
             question: >
-                Jeśli chcesz używać wobec siebie rodzaju neutralnego
-                albo nienormatywnych (neologicznych) form językowych w codziennym życiu,
-                ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?
+                Jeśli chcesz używać wobec siebie rodzaju neutralnego, liczby mnogiej czy neologicznych form językowych
+                w codziennym życiu, ale (w niektórych sytuacjach) nie możesz, co stoi Ci na przeszkodzie?
             randomise: false
             writein: true
             options:
