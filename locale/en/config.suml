@@ -311,6 +311,11 @@ links:
             url: 'https://isgc.app/'
             headline: 'GC Checker'
             extra: ' – a tool created by our team member {/@shio_o=@shio_o} that scans a twitter user''s recent public timeline and shows tweets that seem to be related to the “Gender Critical” movement.'
+        -
+            icon: 'browser'
+            url: 'https://transsocial.me/'
+            headline: 'TransSocial'
+            extra: ' – a social media platform that integrates links to PronounsPage cards'
 
     zine:
         enabled: false
