@@ -41,7 +41,7 @@ pracownika Wydziału Polonistyki Uniwersytetu Warszawskiego oraz członka Zespo�
 > które mnie się już coraz mniej podoba, a właściwie wcale nie podoba, kiedy myślę sobie o komunikacji inkluzywnej,
 > czyli „rodzaj nijaki” – **moim zdaniem to jest paskudna nazwa, to jest nazwa wykluczająca sama w sobie**,
 > dlatego, że gdybyśmy spojrzeli do słowników i do korpusu,
-> to wyrazem bliskoznacznym do wyrazu „nijaki” (nie mówię tutaj o rodzaju nijakimi, ale w ogóle nijakim) jest „bezpłciowy” […]
+> to wyrazem bliskoznacznym do wyrazu „nijaki” (nie mówię tutaj o rodzaju nijakim, ale w ogóle nijakim) jest „bezpłciowy” […]
 > Albo „obupłciowy” – mający cechy obu płci. Czyli znowu binarność, nie ma niczego _pomiędzy_ tymi dwiema płciami,
 > są tylko _cechy_ obu płci.
 > Więc jeżeli mówimy o rodzaju nijakim, to może byśmy zaczęli, może dzisiaj nam się uda,
