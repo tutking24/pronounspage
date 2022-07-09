@@ -192,7 +192,7 @@ sources:
     route: 'korpus'
     submit: true
     mergePronouns:
-        ono/jej: 'ono'
+        # ono/jej: 'ono'
         ono/jejgo: 'ono'
         # ono/jeno: 'ono'
         ono/jenu: 'ono'
