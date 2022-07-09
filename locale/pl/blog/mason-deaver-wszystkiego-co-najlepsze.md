@@ -1,6 +1,6 @@
 # Mason Deaver – Wszystkiego, co najlepsze
 
-<small>2022-07-27 | [@andrea](/@andrea)</small>
+<small>2022-07-11 | [@andrea](/@andrea)</small>
 
 ![Okładka recenzowanej książki](/img-local/blog/deaver-najlepsze.png)
 
@@ -21,7 +21,7 @@ Takie tam.
 I wiecie co? Mam dość. Cholernie się cieszę, że mam to wszystko juz za sobą.
 Wychodziłom z niejednej szafy. Byłom odrzucane. Uczyłom się samodzielności.
 Znajdowałom przyjaźń, miłość, społeczność.
-Wybrana rodzina nieraz ratowała moje zdrowie psychiczne zdruzgotane przez tę rodzoną.
+Wybrana rodzina nie raz ratowała moje zdrowie psychiczne zdruzgotane przez tę rodzoną.
 
 Aż wstyd się przyznać, że z początku czytałom tę książkę lekko znudzone.
 W Star Treku to walczą z tajemniczym wirusem przenoszonym przez światło
@@ -71,7 +71,7 @@ To jest ten relatable content, którego dekadę z hakiem temu tak bardzo bym pot
 Szczerze mówiąc, to zamierzałom tu się skupić na kwestiach językowych – a wyszło, jak wyszło.
 Nawet nie mam dobrego pomysłu na płynne przejście do tematu zaimków. Więc przejdźmy niepłynnie.
 
-Otóż projekt okładki i układu książki podesłało nam wydawnictwo We Need YA,
+Otóż projekt okładki i treść książki podesłało nam wydawnictwo We Need YA,
 prosząc [kolektyw Rada Języka Neutralnego](/kolektyw-rjn) o objęcie jej [mecenatem merytorycznym](/blog/mecenat).
 Do książki dołączona jest przedmowa tłumacza, Artura Łukszy, która jest tak cudowna, że pozwolę ją sobie zacytować w całości:
 
