@@ -115,9 +115,9 @@ sources:
         another: 'Legg til en til'
         moderation: 'Bidrag må bli vurdert og godtatt før de blir lagt ut.'
         key: 'Nøkkel'
-        keyInfo: 'identifiserer for å linke kilder mellom språk versjoner og linker med ordboken'
+        keyInfo: 'identifiserer for å linke kilder mellom språkversjoner og linker med ordboken'
         images: 'Bilder'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Sladd'
     otherVersions: 'På andre språk'
     referenced: 'Eksempler på bruk i setninger'
 
@@ -130,7 +130,7 @@ nouns:
     intro:
         - >
             Inklusivt og kjønnsnøytralt språk betyr  ikke bare å respektere andres pronomen.
-            Det inkluderer innebærer også å beskrive jobben deres, posisjonen de er i, forhold, etc.
+            Det inkluderer innebærer også å beskrive jobben deres, posisjonen de er i, forhold, osv.
             på en måte som ikke antar kjønnet deres.
             Ikke alle brannmenn er menn. Ikke alle ektefeller er en “mann” eller en “kone”.
         - >
@@ -212,7 +212,7 @@ faq:
                     Avhengig av sted og tid, å være “en kvinne” eller “en mann ” kan bety å ha veldig forskjellige
                     rettigheter, plikter, normer… I Europa, pleide menn å gå med høye hæler og strømpebukser
                     innfødte folk av Nord Amerika har kjent igjen et tredje kjønn for århundrer
-                    {https://gender.wikia.org/wiki/Two-Spirit=(to åndelig)}, etc. etc.
+                    {https://gender.wikia.org/wiki/Two-Spirit=(to åndelig)}, osv. osv.
                 - >
                     Intetkjønn eller ikke-binær er et begrep som beskriver identiteten til
                     de som ikke passer inn i de binære mann/kvinne-båsene.
@@ -224,14 +224,14 @@ faq:
                     i {https://gender.wikia.org/wiki/Non-binary=og mange mange andre}.
                 - >
                     Intetkjønn er ikke nødvendigvis noe “imellom” maskulinitet og feminitet, mer som “bortenfor”.
-                    Ikke-binære folk må ikke være androgyne, må ikke bruke nøytrale pronomen, etc.
+                    Ikke-binære folk må ikke være androgyne, må ikke bruke nøytrale pronomen, osv.
                     Det handler om å være fri fra kjønnsroller, ikke om å lage nye.
         why-respect:
             question: 'Hvorfor skal jeg respektere noen <em>rare</em> pronomen?'
             answer:
                 - >
                     Fordi å kalle folk det de vil bli kalt er basisen av sosiale relasjoner.
-                    Du ville ikke kalt Anne “Ingrid”, du ville ikke droppet “mr”/“fru” når du snakker til veilederen din, etc.
+                    Du ville ikke kalt Anne “Ingrid”, du ville ikke droppet “mr”/“fru” når du snakker til veilederen din, osv.
                     Og det er folk som ikke vil bli kalt enten“{/han=han}” or “{/hun=hun}”.
                     Hvis du ikke aksepterer det, viser det bare <em>deg</em> i ett dårlig lys.
                 - >
@@ -253,8 +253,8 @@ faq:
                     Det er til og med enda lettere gjort online: bare putt dine pronomen (eller en link til vår nettside) til din bio.
                 - >
                     Husk også at mange folk kan bruke forskjellige navn eller pronomen avhengig av situasjonen.
-                    Kanskje de ikke er ute blant kolleger enda, men rundt venner føle seg trygge med å leve som sitt sanne jeg.
-                    Vær forsiktig. Du kan kanskje spørre dem “hvilke pronomen burde jeg bruke foran sjefen din?”, etc.
+                    Kanskje de ikke er ute blant kolleger ennå, men rundt venner føle seg trygge med å leve som sitt sanne jeg.
+                    Vær forsiktig. Du kan kanskje spørre dem “hvilke pronomen burde jeg bruke foran sjefen din?”, osv.
                 - >
                     Noen folk gir flere pronomen, feks. “{/hun&han=han/hun}” or “{/de&han=de/han}”.
                     De betyr at de liker alle de pronomenene. Vanligvis, er den første den de liker aller best.
@@ -309,7 +309,7 @@ faq:
                 - >
                     Så klart! Ingen er overrasket når noen endrer meninger, stil, hobbyer…
                      Så hvorfor ville det vært rart at de discovered a part of their identity,
-                     stoppet å like navnet sitt, fant en merkelapp som passet dem, etc.?
+                     stoppet å like navnet sitt, fant en merkelapp som passet dem, osv.?
         get-used-to:
             question: 'Er det rart at jeg ikke klarer å bli vant til de nye pronomenene mine?'
             answer:
@@ -335,7 +335,7 @@ faq:
             answer:
                 - >
                     Fordi kjønn ≠ pronomen. Pronomen er bare grammatikk.
-                    Ikke binære personer kan bruke binære pronomen, noen lesbiske bruker {/han=han/hans} av kulturelle grunner, etc.
+                    Ikke binære personer kan bruke binære pronomen, noen lesbiske bruker {/han=han/hans} av kulturelle grunner, osv.
                 - >
                     Rettere sagt, bare si “pronomen”.
 
@@ -350,7 +350,7 @@ links:
 
     social: 'Sosiale medier'
 
-    languageVersions: 'Andre språk versjoner'
+    languageVersions: 'Andre språkversjoner'
 
 people: ~
 
@@ -360,7 +360,7 @@ contact:
     header: 'Kontakt'
     authors: 'Forfatterne'
     team:
-        name: 'Det “Neutral Language Council” kollektivet'
+        name: '“Neutral Language Council”-kollektivet'
         nameShort: 'Kollektivet'
         # TODO
         # We are a queer collective dedicated to assembling, researching, shaping and promoting
@@ -369,17 +369,17 @@ contact:
         description:
             - >
                 {https://pronouns.page=Pronouns.page} og andre relaterte initiativ
-                er laget av “Neutral Language Council” kollektivet.
+                er laget av “Neutral Language Council”-kollektivet.
         logo: 'Logoen av kollektivet er trans symbolet med en snakkeboble som symboliserer språk.'
         members: 'Nåværende medlemmer'
         member: 'Medlem av kollektivet'
-        upcoming: 'Kommende språk versjoner'
+        upcoming: 'Kommende språkversjoner'
         # TODO join: …
 
 support:
     header: 'Hjelp'
     description: >
-        Hvis du har lyst til å bidra til serveren, domener, klistremerker etc., eller bare kjøpe forfatterne en kaffe,
+        Hvis du har lyst til å bidra til serveren, domener, klistremerker osv., eller bare kjøpe forfatterne en kaffe,
         kan du bruke linkene nedenfor:
 
 user:
@@ -387,10 +387,9 @@ user:
     headerLong: 'Din bruker'
     tokenExpired: 'Denne har gått ut på dato. Vennligst last inn nettsiden på nytt og prøv igjen.'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
+        help: 'For å logge inn eller lage en bruker kan du enten bruke sosial media-knappene eller skrive din e-post i feltet nedenfor og deretter bekrefte koden som du vil få i innboksen din.'
         placeholder: 'Email (eller brukernavn, hvis du allerede er registrert)'
-        action: 'Logg inn'  # TODO 'Log in / register'
+        action: 'Logg inn / registrer'
         emailSent: 'Vi har sendt deg en email <strong>%email%</strong> med en 6 sifret kode. Skriv den ned her. Koden er en engangskode og kan brukes i 15 minutter.'
         userNotFound: 'Bruker ikke funnet.'
         email:
@@ -401,8 +400,8 @@ user:
             Å registrere seg lar deg redigere kortene dine ({/@example=sånn som denne}).
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Forekomst'
+        domainPlaceholder: 'Domene'
         # TODO
-        domainPlaceholder: 'Domain'
         deprecated: 'Deprecated'
         depreciationNotice: >
             This is not a reliable authentication provider.
@@ -414,13 +413,13 @@ user:
     account:
         changeUsername:
             header: 'Brukernavn'
-            action: 'Endre'  # TODO more explicitly "Change username"
+            action: 'Endre brukernavn'
             invalid: 'Brukernavn må være mellom 4 og 16 bokstaver, og kan bare inneholde nummer, bokstaver, punktum, bindestreker og understreker.'
             taken: 'Dette brukernavnet er tatt.'
         changeEmail:
-            header: 'Email adresse'
-            action: 'Endre'  # TODO more explicitly "Change email"
-            invalid: 'Ugyldig email addresse.'
+            header: 'E-postadresse'
+            action: 'Endre e-post'
+            invalid: 'Ugyldig e-postaddresse.'
             taken: 'Denne adressen er tatt.'
         admin: 'Admin'
     logout: 'Logg ut'
@@ -428,31 +427,30 @@ user:
         header: 'Avatar'
         change: 'Endre'
     deleteAccount: 'Slett bruker'
-    deleteAccountConfirm: 'Er du sikker på at du vil slette brukeren din? Dette valget kan du ikke ta tilbake!'
+    deleteAccountConfirm: 'Er du sikker på at du vil slette brukeren din? Dette kan du ikke angre på!'
     socialConnection:
         list: 'Sosiale medier tilkoblinger'
         connect: 'Koble til'
         refresh: 'Last inn på nytt'
         disconnect: 'Koble fra'
-        disconnectConfirm: 'Er du sikker på at du vil kobla fra? (Du kan alltid logge inn via email %email%)'
-    # TODO
+        disconnectConfirm: 'Er du sikker på at du vil koble fra? (Du kan alltid logge inn via email %email%)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'Flerfaktor-autentisering (MFA)'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            Skann denne QR-koden (eller skriv av tekstkoden nedenfor) i din TOTP-autentisererapp (f.eks. {https://authy.com/=Authy})
+            og fyll deretter inn den første sjetongen ("token") som blir generert.
         recovery:
-            header: 'Recovery code'
+            header: 'Gjenopprettelseskode'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Lagre de følgende gjenopprettelseskodene et trygt sted.
+                Du kommer til å måtte bruke dem for å komme deg forbi MFA i tilfelle du mister autentiseringsenheten din.
+            saved: 'Greit, jeg har lagret dem!'
+            enter: 'Fyll inn gjenopprettelseskode'
+        cancel: 'Avbryt innlogging'
+        enabled: 'Aktivert'
+        enable: 'Aktiver MFA'
+        disable: 'Deaktiver MFA'
+        disableConfirm: 'Er du sikker på at du vil deaktivere MFA?'
 
 profile:
     description: 'Beskrivelse'
@@ -472,8 +470,8 @@ profile:
     flagsCustom: 'Last opp tilpasset flagg'
     flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
-    links: 'Linker'
-    linksRecommended: 'Vi anbefaler å linke til'
+    links: 'Lenker'
+    linksRecommended: 'Vi anbefaler å lenke til'
     # TODO
     verifiedLinks:
         header: 'Verified links'
@@ -495,7 +493,7 @@ profile:
         header: 'Kort redigerer'
         save: 'Lagre kort'
         defaults: 'Restaurer originale'
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        propagate: 'Viderefør denne endringen til kortene din på alle språk'
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'
@@ -504,7 +502,7 @@ profile:
         no: 'Nei'
     banner: >
         Du kan også bruke nettsiden vår til å lage et kort, {/@example=sånn som denne},
-        som inneholder navnene dine, pronomen, pride flagg, likte ord, etc.
+        som inneholder navnene dine, pronomen, pride flagg, likte ord, osv.
          Så kan du linke den til din bio eller epost-signatur.
         Bare lag en bruker {/account=her}.
     bannerButton: 'Lag et kort'
@@ -512,14 +510,13 @@ profile:
         link: 'Kort bilde'
         generate: 'Generer'
         generating: 'Genererer, vennligst vent'
-    empty: 'Denne personen har ikke laget noen kort enda.'
-    # TODO
+    empty: 'Denne personen har ikke laget noen kort ennå.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'Personlig'
+        description: 'Det er bare du som kan se denne delen'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
+        header: 'Språk'
+        description: '@%username%s kort er også tilgjengelig i følgende språk'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
 
@@ -675,11 +672,11 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    # TODO
     update:
         header: 'Vi har oppdatert våre vilkår og betingelser.'
         intro: >
             Hei! Vi har skrevet dette for å fortelle deg at vi har oppdatert våre vilkar og betingelser:
+    # TODO
         changes:
             - >
                 In January we will start removing unused accounts to prevent username hoarding
@@ -703,11 +700,11 @@ admin:
     header: 'Administrator'
     user:
         user: 'Bruker'
-        createdAt: 'Registration date' # TODO
+        createdAt: 'Registreringsdato'
         email: 'Email'
         roles: 'Tillatelser'
         profiles: 'Profiler'
-        confirmRole: 'Er du sikker på at du vil bytte @%username%''s rolle til "%role%"?'
+        confirmRole: 'Er du sikker på at du vil bytte @%username%s rolle til "%role%"?'
 
 table:
     empty: 'Tom…'
@@ -728,8 +725,8 @@ quotation:
 
 localise:
     shorter: 'Legg til mer'
-    short: 'Å legge til språk versjoner'
-    long: 'Lyst til å lage en ny språk versjon? Så bra! Sjekk denne ut!'
+    short: 'Å legge til språkversjoner'
+    long: 'Lyst til å lage en ny språkversjon? Så bra! Sjekk denne ut!'
     longLink: 'denne manualen!'
 
 images:
@@ -808,7 +805,7 @@ flags:
     Genderfaun: 'Kjønnsfaun'
     Genderfluid: 'Kjønnsflytende'
     Genderflux: 'Kjønnsflux'
-    Genderqueer: 'Kjønns queer'
+    Genderqueer: 'Kjønnsskeiv'
     Greyasexual: 'Grå aseksuell'
     Greyaromantic: 'Grå aromantisk'
     Gynesexual: 'Gyneseksuell'
@@ -820,7 +817,7 @@ flags:
     Homoromantic: 'Homoromantisk'
     Intersex: 'Intersex'
     LGBTQ: 'LHBTQ'
-    Leather_Pride: 'Lær pride'
+    Leather_Pride: 'Lær-pride'
     Lesbian: 'Lesbisk'
     Lesbiromantic: 'Lesbiromantisk'
     Maverique: 'Maverique'
@@ -830,7 +827,7 @@ flags:
     Nebularomantic: 'Nebularomantisk'
     Neopronouns: 'Neopronomen'
     Neutrois: 'Nøytral'
-    Nonbinary: 'Ikke binær'
+    Nonbinary: 'Ikke-binær'
     Omnisexual: 'Omniseksuell'
     Omniromantic: 'Omniromantisk'
     Oriented_Aroace: 'Orientert aroace'
@@ -838,11 +835,11 @@ flags:
     Panromantic: 'Panromantisk'
     Pansexual: 'Panseksuell'
     Polyamorous: 'Polyamorøs'
-    Polyromantic: 'Pol romantisk'
-    Polysexual: 'Pol seksuell'
+    Polyromantic: 'Polyromantisk'
+    Polysexual: 'Polyseksuell'
     Pomoromantic: 'Pomoromantisk'
     Pomosexual: 'Pomoseksuell'
-    Progress_Pride: 'Progresjon pride'
+    Progress_Pride: 'Progresjon-pride'
     Queer: 'Queer'
     Queerian: 'Queerian'
     Queerplatonic: 'Queerplatonisk'
@@ -857,39 +854,40 @@ flags:
     Transneutral: 'Transnøytral'
     Trigender: 'Trikjønnet'
     Trixic: 'Trixisk'
-    Two_Spirit: 'To åndelig'
+    Two_Spirit: 'To-åndelig'
     Xenogender: 'Xenokjønnet'
 
-calendar: # TODO
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
+calendar:
+    header: 'Kalender'
+    headerLong: 'Skeivkalender'
     date: '%date% %year%'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
+        1: 'Januar'
+        2: 'Februar'
+        3: 'Mars'
         4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
+        5: 'Mai'
+        6: 'Juni'
+        7: 'Juli'
         8: 'August'
         9: 'September'
-        10: 'October'
+        10: 'Oktober'
         11: 'November'
-        12: 'December'
+        12: 'Desember'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
+        1: 'Januar %day%'
+        2: 'Februar %day%'
+        3: 'Mars %day%'
         4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
+        5: 'Mai %day%'
+        6: 'Juni %day%'
+        7: 'Juli %day%'
         8: 'August %day%'
         9: 'September %day%'
-        10: 'October %day%'
+        10: 'Oktober %day%'
         11: 'November %day%'
-        12: 'December %day%'
+        12: 'Desember %day%'
+    # TODO
     events:
         pride_month: 'Pride Month'
         trans_month: 'International Trans Awareness Month'
@@ -992,19 +990,19 @@ calendar: # TODO
         nonbinary_kids_day: 'Nonbinary Kids'' Day'
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week'
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' 
-    banner: 'We''re celebrating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    banner: 'Vi feirer'
+    celebrating_custom: 'er feiret'
+    celebrating_day: 'er feiret'
+    celebrating_week: 'er feiret i'
+    celebrating_month: 'er feiret i'
     image:
-        header: 'Download an image'
+        header: 'Last ned et bilde'
     view:
-        grid: 'Grid view'
-        list: 'Events list'
-    link: 'Link'
-    full: 'Full calendar'
+        grid: 'Rutenettsvisning'
+        list: 'Liste over begivenheter'
+    link: 'Lenke'
+    full: 'Full kalender'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
+    header: 'Vi står sammen med det ukrainske folk.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Her er hvordan du kan bidra.}'
