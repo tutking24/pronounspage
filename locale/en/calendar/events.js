@@ -28,7 +28,7 @@ module.exports = [
     new Event('Freedom to Marry Day (US)', '_hrc', 2, day(12), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', '_law', 2, day(1), EventLevel.Day),
-    new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
+    new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day (US)', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.Day),
     new Event('{https://twitter.com/_EQUALGROUND_/status/1440232964286124050=Lesbian Visibility Day} (Sri Lanka)', 'Lesbian', 9, day(21), EventLevel.Day),
     new Event('{https://www.cdc.gov/hiv/library/awareness/nlaad.html=Latinx AIDS Awareness Day} (US)', '_red-ribbon', 10, day(15), EventLevel.Day, ['aids']),
@@ -94,6 +94,7 @@ module.exports = [
     new Event('{https://napwha.org.au/about-us/national-network-of-women/=National Day of Women living with HIV} (Australia)', '_red-ribbon', 3, day(9), EventLevel.Day, ['aids']),
     new Event('{https://en.wikipedia.org/wiki/David_Kato=Kuchu Remembrance Day} (Uganda)', '_black-ribbon', 1, day(26), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/2022_Oslo_shooting=Oslo Pride Shooting} Remembrance Day', '_black-ribbon', 6, day(25), EventLevel.Day),
+    new Event('Two-Spirit and Indigenous LGBTQQIA+ Awareness to Celebration Day (Canada)', 'Two Spirit', 3, day(21), EventLevel.Day, ['two spirit']),
 
     // --- dynamic date ---
 
