@@ -819,14 +819,23 @@ links:
         -
             icon: 'play-circle'
             url: 'https://www.jezykowekontrowersje.pl/podcast/'
-            headline: 'Niebinarność, inkluzywność i język. Rozmowa z Szymonem Miśkiem, cz. 1.'
+            headline: 'Niebinarność, inkluzywność i język. Rozmowa z Szymonem Miśkiem.'
             extra: ' – Szymon w podkaście <strong>Językowe kontrowersje</strong>'
-            quote: >
-                W pierwszej części rozmowy skupiamy się na tym, czym w ogóle jest niebinarność i jak jest wyrażana w języku.
-                Zastanawiamy się nad samą sytuacją języka i osób niebinarnych w Polsce. Zadajemy praktyczne pytania,
-                np. jak zwracać się do osób niebinarnych i kiedy poza tym przydaje się język neutralny.
-                Okazuje się, że pomaga on też zwalczać generyczny rodzaj męski. Zapoznajemy się z mnogością neutralnych form
-                i sposobów ekspresji oraz zastanawiamy się, dlaczego mogą być dla niektórych niewygodne, a dla innych naprawdę istotne.
+            quote:
+                - >
+                    W pierwszej części rozmowy skupiamy się na tym, czym w ogóle jest niebinarność i jak jest wyrażana w języku.
+                    Zastanawiamy się nad samą sytuacją języka i osób niebinarnych w Polsce. Zadajemy praktyczne pytania,
+                    np. jak zwracać się do osób niebinarnych i kiedy poza tym przydaje się język neutralny.
+                    Okazuje się, że pomaga on też zwalczać generyczny rodzaj męski. Zapoznajemy się z mnogością neutralnych form
+                    i sposobów ekspresji oraz zastanawiamy się, dlaczego mogą być dla niektórych niewygodne, a dla innych naprawdę istotne.
+                - >
+                    W drugiej części przyglądamy się historii zaimków, które mogą być używane przez osoby niebinarne,
+                    a także powiązania zmiany językowej ze społeczeństwem. Poruszamy również kwestię innej zmiany językowej
+                    dotyczącej gramatycznego rodzaju i tworzenia odpowiednich do niego form,
+                    a mianowicie odzyskiwanie i popularyzację feminatywów. Odpowiadamy na obawy, że zostaną wymazane
+                    przez formy neutralne płciowo, oraz w jakich kontekstach są używane jedne lub drugie formy.
+                    Rozmawiamy też o innych aspektach zmiany językowej, reakcji na nią oraz czy język zmienia rzeczywistość,
+                    czy może jednak odwrotnie.
     mediaMentions:
         -
             icon: 'newspaper'
