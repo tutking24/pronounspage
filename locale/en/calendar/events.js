@@ -47,7 +47,7 @@ module.exports = [
     new Event('{/terminology#nonbinary=Nonbinary} People\'s Day (Poland)', 'Nonbinary', 3, day(9), EventLevel.Day, ['nonbinary']),
     new Event('{https://en.wikipedia.org/wiki/Matthew_Shepard=Matthew Shepard} Day of Remembrance', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('{/terminology#transgender=Trans-}, {/terminology#travesti=Travesti} and {{/terminology#nonbinary=Non-Binary} Visibility Day (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'nonbinary', 'travesti']),
-    new Event('Missing and Murdered Indigenous Women, Girls, and {/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
+    new Event('Missing and Murdered Indigenous Women, Girls, and {/terminology#two%20spirit=Two Spirit} Awareness Day', 'Two Spirit_', 5, day(5), EventLevel.Day, ['two spirit']),
     new Event('{/terminology#travesti=Travesti} and {/terminology#transgender=Transgender} Pride Day (Brazil)', 'Transgender', 5, day(15), EventLevel.Day, ['transgender', 'travesti']),
     new Event('National AIDS Day (Uruguay)', '_red-ribbon', 7, day(29), EventLevel.Day, ['aids']),
     new Event('National Day Against Violence and Homophobia Towards LGBTI People (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
