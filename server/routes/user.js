@@ -25,6 +25,7 @@ const isSpam = (email) => {
     const noDots = email.replace(/\./g, '');
     return noDots === 'javierfranciscotmp@gmailcom'
         || noDots === 'leahmarykathryntmp@gmailcom'
+        || noDots === 'janeesevictorjh@gmail.com'
         || email.includes('dogazu')
         || email.includes('narodowcy.net')
         || email.length > 128;
