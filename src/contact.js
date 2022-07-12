@@ -4,6 +4,7 @@ export const contact = {
             icon: 'envelope',
             url: 'mailto:kontakt@zaimki.pl',
             headline: 'kontakt@zaimki.pl',
+            lang: ['pl'],
         },
         email: {
             icon: 'envelope',
@@ -20,18 +21,21 @@ export const socialLinks = {
             iconSet: 'b',
             url: 'https://twitter.com/neutratywy',
             headline: '@neutratywy',
+            lang: ['pl'],
         },
         instagram_pl: {
             icon: 'instagram',
             iconSet: 'b',
             url: 'https://instagram.com/neutratywy',
             headline: '@neutratywy',
+            lang: ['pl'],
         },
         facebook_pl: {
             icon: 'facebook',
             iconSet: 'b',
             url: 'https://facebook.com/neutratywy',
             headline: 'fb.com/neutratywy',
+            lang: ['pl'],
         },
 
         mastodon: {
@@ -85,7 +89,7 @@ function* getLink(links, feature, locale) {
     for (let key in featureLinks) {
         if (!featureLinks.hasOwnProperty(key)) { continue; }
         let [, localesAllowed] = key.split('_');
-        if (localesAllowed === undefined || locale === '_' || localesAllowed.split(',').includes(locale)) {
+        if (localesAllowed === undefined || locale === '_' || localesAllowed.split('-').includes(locale)) {
             yield featureLinks[key];
         }
     }

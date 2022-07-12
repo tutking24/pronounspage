@@ -23,6 +23,7 @@
                     <li v-for="link in links" :key="link.url" class="mb-2">
                         <a :href="link.url" target="_blank" rel="me">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                            <span v-for="lang in link.lang || []" class="badge bg-light text-dark border">{{lang}}</span>
                             {{link.headline}}
                         </a>
                     </li>
@@ -35,6 +36,7 @@
                     <li v-for="link in supportLinks" :key="link.url" class="mb-2">
                         <a :href="link.url" target="_blank" rel="me">
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                            <span v-for="lang in link.lang || []" class="badge bg-light text-dark border">{{lang}}</span>
                             {{link.headline}}
                         </a>
                     </li>
