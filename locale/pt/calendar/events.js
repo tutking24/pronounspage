@@ -26,8 +26,8 @@ module.exports = [
     new Event('Dia da Visibilidade Lésbica (Paraguay)', 'Lesbian', 9, day(16), EventLevel.Day, ['lesbian']),
     new Event('Dia do Ativismo pela Diversidade Sexual (Argentina)', 'LGBTQ', 8, day(20), EventLevel.Day),
     new Event('{https://www.bng.gal/articulo/novas/dia-visibilidade-lesbica-galega/20210608103130030074.html=Dia da Visibilidade Lésbica Galega} (Galiza)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
-    new Event('Dia de Consciência de Pessoas Dois-Espíritos (EUA)', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),    
-    new Event('Dia de Consciência de Pessoas Dois-Espíritos (Canada)', 'Two Spirit', 3, day(21), EventLevel.Day, ['two spirit']),    
+    new Event('Dia de Consciência de Pessoas Dois-Espíritos (EUA)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),    
+    new Event('Dia de Consciência de Pessoas Dois-Espíritos (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),    
     // --- one-off events ---
     new Event('{https://dezanove.pt/marcha-orgulho-lgbti-leiria-marcha-a-2-1523945=1ª Marcha do Orgulho LGBTI+ de Leiria} (Portugal)', 'LGBTQ', 10, dayYear(2, 2021), EventLevel.Day),
     new Event('{https://dezanove.pt/direitos-lgbti-viseu-marcha-a-10-de-1471763=Marcha pelos Direitos LGBTI+ de Viseu} (Portugal)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
@@ -47,6 +47,6 @@ module.exports = [
     new Event('{https://www.facebook.com/events/558763492035269/=4ª Parada do Orgulho LGBT+ de Santos} (Brasil)', 'LGBTQ', 10, dayYear(3, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/451121922567801/=4ª Parada do Orgulho LGBT de Rio Claro/SP} (Brasil)', 'LGBTQ', 10, dayYear(10, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/578588566271716/=1° Parada do Orgulho LGBTQIA+ de SJC} (Brasil)', 'LGBTQ', 6, dayYear(6, 2022), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/1175941416231293=15ª Parada do Orgulho LGBTI+ de Itaquaquecetuba} (Brasil)', 'LGBTQ', 8, dayYear(28, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1175941416231293=15ª Parada do Orgulho LGBTI+ de Itaquaquecetuba} (Brasil)', 'LGBTQ', 8, dayYear(28, 2022), EventLevel.Day),    
 
 ];
