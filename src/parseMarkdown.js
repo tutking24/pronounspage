@@ -55,7 +55,7 @@ const generateToC = (content) => (_) => {
     if (needsClosing) { tags.push('</li>'); }
 
     return `
-        <div class="alert alert-info">
+        <div class="alert alert-light border">
             <h2 class="h4"><span class="fal fa-list"></span> Spis treści</h2>
             <ul class="mb-0">${tags.join('')}</ul>
         </div>
@@ -70,7 +70,15 @@ export default async function parseMarkdown(markdown) {
                 .replace(/<\/table>/g, '</table></div>')
                 .replace(/<a href="http/g, '<a target="_blank" rel="noopener" href="http')
                 .replace(/<p>{details=(.+?)}<\/p>(.+?)<p>{\/details}<\/p>/gms, '<details class="border mb-3"><summary class="bg-light p-3">$1</summary><div class="border-top p-3 bg-white">$2</div></details>')
-                .replace(/<img (.*?)>/g, '<div class="text-center"><img $1 class="border"></div>')
+                .replace(/<img (.*?)>/g, (_, attrs) => {
+                    let classNames = 'border';
+                    const m = attrs.match(/alt="\{(.*)\}/);
+                    if (m) {
+                        classNames = m[1];
+                        attrs = attrs.replace(/alt="{(.*)}/, 'alt="');
+                    }
+                    return `<div class="text-center"><img ${attrs} class="${classNames}"></div>`;
+                })
                 .replace(/{favicon=(.+?)}/g, '<img src="https://$1" alt="Favicon" style="width: 1em; height: 1em;"/>')
                 .replace(/{embed=\/\/(.+?)=(.+?)}/g, '<div style="position: relative;height: 0;padding-bottom: 56.25%;"><iframe src="https://$1" title="$2" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute;top: 0; left: 0;width: 100%;height: 100%;border:0;"></iframe></div>')
                 .replace(/{graph=([^}]+)}/g, '<iframe class="graph" src="$1.html" loading="lazy"></iframe>')
