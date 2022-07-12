@@ -6,8 +6,8 @@
             <LinkedText :text="link.headline"/>
         </a>
         <LinkedText :text="link.extra || ''"/>
-        <p v-if="link.quote" class="small pl-4">
-            <T>quotation.start</T><LinkedText :text="link.quote"/><T>quotation.end</T>
+        <p v-for="quote in link.quote ? (Array.isArray(link.quote) ? link.quote : [link.quote]) : []" class="small pl-4">
+            <T>quotation.start</T><LinkedText :text="quote"/><T>quotation.end</T>
         </p>
         <blockquote v-if="link.response">
             <div v-if="Array.isArray(link.response)">
