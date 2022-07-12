@@ -78,7 +78,6 @@ module.exports = [
     new Event('sex_worker_rights_day', '_sex-work', 3, day(3), EventLevel.Day),
     new Event('sex_worker_violence_day', '_sex-work', 12, day(17), EventLevel.Day),
     new Event('omnisexual_omniromantic_day', 'Omnisexual', 6, day(6), EventLevel.Day, ['omnisexual', 'omniromantic']),
-    new Event('omnisexual_awareness_day', 'Omnisexual', 3, day(21), EventLevel.Day, ['omnisexual']),
     new Event('mspec_gay_day', '_mspec_lesbians', 7, day(7), EventLevel.Day, ['mspec gay', 'bi gay']),
     new Event('mspec_gay_week', '_mspec_lesbians', 7, weekStarting(4), EventLevel.Week, ['mspec gay', 'bi gay']),
     new Event('hiv_is_not_a_crime', '_red-ribbon', 2, day(28), EventLevel.Day, ['aids']),
@@ -87,6 +86,7 @@ module.exports = [
     new Event('nonbinary_kids_day', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
     new Event('masc_lesbian_day', 'Lesbian', 8, day(4), EventLevel.Day, ['lesbian']),
     new Event('masc_lesbian_week', 'Lesbian', 8, weekStarting(1), EventLevel.Week, ['lesbian']),
+        
     // --- dynamic date ---
 
     // full week starting on a Sunday following Valentine's Day
