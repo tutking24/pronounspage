@@ -10,7 +10,7 @@ module.exports = [
     new Event('Journée de le mariage pour tous (France)', '_hrc', 5, day(18), EventLevel.Day),
     new Event('Journée de le mariage pour tous (Belgique)', '_hrc', 6, day(1), EventLevel.Day),
     new Event('Journée de sensibilité à la bispiritualité', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
-    new Event('Journée de sensibilisation aux femmes, aux filles et aux personnes bispirituelles autochtones disparues et assassinées (Canada/USA)', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
+    new Event('Journée de sensibilisation aux femmes, aux filles et aux personnes bispirituelles autochtones disparues et assassinées (Canada/USA)', 'Two Spirit_', 5, day(5), EventLevel.Day, ['two spirit']),
     new Event('Anniversaire de la décrimilisation de l\'homosexualité (Canada)', '_law', 6, day(27), EventLevel.Day),
     new Event('Journée de sensibilité à la bispiritualité (USA)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Journée de célébration bispirituelle (Canada)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),
