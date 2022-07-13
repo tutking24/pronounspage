@@ -33,8 +33,8 @@ module.exports = [
     new Event('Día de la Conciencia de los Centros de la Comunidad LGBTQ+ (EE.UU.)', null, 10, day(19), EventLevel.Day),
     new Event('Día Latinx para la Concientización del SIDA (EE.UU.)', '_red-ribbon', 10, day(15), EventLevel.Day, ['aids']),
     new Event('Día de la Visibilidad Trans-, Travesti y No Binarie (Paraguay)', 'Transgender', 10, day(15), EventLevel.Day, ['transgender', 'travesti', 'nonbinary']),
-    new Event('Día de Concienciación de las Mujeres, Niñas y Personas Indígenas de Dos Espíritus Desaparecidas y Asesinadas', 'Two Spirit', 5, day(5), EventLevel.Day, ['two spirit']),
-    new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit', 7, day(11), EventLevel.Day, ['two spirit']),
+    new Event('Día de Concienciación de las Mujeres, Niñas y Personas Indígenas de Dos Espíritus Desaparecidas y Asesinadas', 'Two Spirit_', 5, day(5), EventLevel.Day, ['two spirit']),
+    new Event('Día de la Conciencia de Personas de Dos Espíritus', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Día Nacional de lucha contra el VIH/SIDA (Uruguay)', '_red-ribbon', 7, day(29), EventLevel.Day, ['aids']),
     new Event('Día Nacional por la NO Violencia y Homofobia contra la Población LGBTI (Colombia)', null, 8, day(23), EventLevel.Day, ['homophobia', 'transphobia', 'biphobia']),
     new Event('Día por los Derechos de las Personas LGBTI (Paraguay)', 'LGBTQ', 9, day(30), EventLevel.Day, ['lgbtq']),
@@ -49,6 +49,7 @@ module.exports = [
     new Event('Día Nacional de Afirmación Gay (Brasil)', 'LGBTQ', 2, day(28), EventLevel.Day, ['lgbtq', 'gay', 'homosexual']),
     new Event('Día de la Inclusión Social (Brasil)', null, 12, day(10), EventLevel.Day),
     new Event('{https://www.bng.gal/articulo/novas/dia-visibilidade-lesbica-galega/20210608103130030074.html=Día de la Visibilidad Lésbica} (Galiza)', 'Lesbian', 6, day(8), EventLevel.Day, ['lesbian']),
+    new Event('Día de la Conciencia y Celebración de Personas de Dos Espíritus y Queer Indígenas (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
 
     // --- one-off events ---
     new Event('{https://www.facebook.com/marchadelorgulloar/=Marcha del Orgullo Buenos Aires} (Argentina)', 'LGBTQ', 11, dayYear(6, 2021), EventLevel.Day),

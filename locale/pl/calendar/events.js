@@ -8,7 +8,7 @@ module.exports = [
     new Event('Miesiąc Historii LGBTQ+ (Kuba/Niemcy)', 'Progress Pride', 5, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
-    new Event('Miesiąc Historii Osób {/terminology#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
+    new Event('Miesiąc Historii Osób {/terminologia#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
     new Event('Miesiąc Gniewu', 'Progress Pride', 7, month, EventLevel.Month),    
 
     // --- static date ---
@@ -23,6 +23,9 @@ module.exports = [
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('Dzień Niebinarnych Dzieci i Młodzieży', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
+    new Event('Dzień Świadomości nt. Osób o {/terminologia#two%20spirit=Dwóch Duszach} (USA)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),    
+    new Event('Dzień Świadomości nt. Osób o {/terminologia#two%20spirit=Dwóch Duszach} (Kanada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
+    new Event('Dzień Świadomości nt. Zaginionych i Zamordowanych Rdzennych Kobiet, Dziewczyn i Osób o {/terminologia#two%20spirit=Dwóch Duszach} (USA/Kanada)', 'Two Spirit_', 5, day(5), EventLevel.Day, ['two spirit']),
     
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
