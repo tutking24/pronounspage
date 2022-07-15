@@ -137,12 +137,23 @@ export default {
     css: [],
     plugins: [
         { src: '~/plugins/vue-matomo.js', ssr: false },
-        { src: '~/plugins/globals.js' },
+        { src: '~/plugins/routerInject.ts' },
+        { src: '~/plugins/globals.ts' },
         { src: '~/plugins/auth.js' },
         { src: '~/plugins/datepicker.js', ssr: false },
     ],
     components: true,
-    buildModules: [],
+    buildModules: [
+        '@nuxt/typescript-build',
+        [
+            '@nuxtjs/router',
+            {
+                path: 'router',
+                fileName: 'index.ts',
+                keepDefaultRouter: true,
+            },
+        ]
+    ],
     modules: [
         '@nuxtjs/pwa',
         '@nuxtjs/axios',
@@ -211,126 +222,7 @@ export default {
     },
     router: {
         extendRoutes(routes, resolve) {
-            if (config.pronouns.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.pronouns.route), component: resolve(__dirname, 'routes/pronouns.vue') });
-            }
 
-            if (config.sources.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.sources.route), component: resolve(__dirname, 'routes/sources.vue') });
-            }
-
-            if (config.nouns.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.nouns.route), component: resolve(__dirname, 'routes/nouns.vue') });
-                for (let subroute of config.nouns.subroutes || []) {
-                    routes.push({ path: '/' + encodeURIComponent(subroute), component: resolve(__dirname, `data/nouns/${subroute}.vue`) });
-                }
-            }
-
-            if (config.inclusive.enabled) {
-                routes.push({path: '/' + encodeURIComponent(config.inclusive.route), component: resolve(__dirname, 'routes/inclusive.vue')});
-            }
-            if (config.terminology.enabled) {
-                routes.push({path: '/' + encodeURIComponent(config.terminology.route), component: resolve(__dirname, 'routes/terminology.vue')});
-
-                // TODO remove later
-                routes.push({path: '/' + encodeURIComponent(config.nouns.route) + '/' + encodeURIComponent(config.terminology.route), component: resolve(__dirname, 'routes/terminology.vue')});
-            }
-
-            if (config.names.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.names.route), component: resolve(__dirname, 'routes/names.vue') });
-            }
-
-            if (config.faq.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.faq.route), component: resolve(__dirname, 'routes/faq.vue') });
-            }
-
-            if (config.links.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.links.route), component: resolve(__dirname, 'routes/links.vue') });
-                if (config.links.academicRoute) {
-                    routes.push({ path: '/' + encodeURIComponent(config.links.academicRoute), component: resolve(__dirname, 'routes/academic.vue') });
-                }
-                if (config.links.mediaRoute) {
-                    routes.push({ path: '/' + encodeURIComponent(config.links.mediaRoute), component: resolve(__dirname, 'routes/media.vue') });
-                }
-            }
-
-            if (config.links.blog) {
-                routes.push({ path: '/' + encodeURIComponent(config.links.blogRoute), component: resolve(__dirname, 'routes/blog.vue'), name: 'blog' });
-                routes.push({ path: '/' + encodeURIComponent(config.links.blogRoute) + '/:slug', component: resolve(__dirname, 'routes/blogEntry.vue'), name: 'blogEntry' });
-                if (config.blog && config.blog.shortcuts) {
-                    for (let shortcut in config.blog.shortcuts) {
-                        if (!config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
-                        const slug = config.blog.shortcuts[shortcut];
-                        routes.push({ path: '/' + encodeURIComponent(shortcut), component: resolve(__dirname, 'routes/blogEntry.vue'), meta: {slug}, name: 'blogEntryShortcut:' + shortcut });
-                    }
-                }
-            }
-
-            if (config.links.zine && config.links.zine.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.links.zine.route), component: resolve(__dirname, 'routes/zine.vue') });
-            }
-
-            if (config.people.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.people.route), component: resolve(__dirname, 'routes/people.vue') });
-            }
-
-            if (config.english.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.english.route), component: resolve(__dirname, 'routes/english.vue') });
-            }
-
-            if (config.contact.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.contact.route), component: resolve(__dirname, 'routes/contact.vue') });
-            }
-            if (config.contact.team.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.contact.team.route), component: resolve(__dirname, 'routes/team.vue') });
-            }
-
-            if (config.census.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.census.route), component: resolve(__dirname, 'routes/census.vue') });
-                routes.push({ path: '/' + encodeURIComponent(config.census.route) + '/admin', component: resolve(__dirname, 'routes/censusModeration.vue') });
-            }
-
-            if (config.user.enabled) {
-                routes.push({path: '/' + encodeURIComponent(config.user.route), component: resolve(__dirname, 'routes/user.vue')});
-                routes.push({path: '/' + encodeURIComponent(config.user.termsRoute), component: resolve(__dirname, 'routes/terms.vue')});
-            }
-            routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
-            routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
-            routes.push({ path: '/admin/moderation', component: resolve(__dirname, 'routes/adminModeration.vue') });
-
-            if (config.profile.enabled) {
-                routes.push({path: '/u/*', component: resolve(__dirname, 'routes/profile.vue')});
-                routes.push({path: '/@*', component: resolve(__dirname, 'routes/profile.vue')});
-                routes.push({path: '/card/@*', component: resolve(__dirname, 'routes/profileCard.vue')});
-                if (config.profile.editorEnabled) {
-                    routes.push({path: '/editor', component: resolve(__dirname, 'routes/profileEditor.vue')});
-                }
-            }
-
-            if (config.pronouns.enabled) {
-                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}`, component: resolve(__dirname, 'routes/any.vue') });
-                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}::group`, component: resolve(__dirname, 'routes/any.vue') });
-                if (config.pronouns.null && config.pronouns.null.routes) {
-                    for (let route of config.pronouns.null.routes) {
-                        routes.push({ path: '/' + encodeURIComponent(route), component: resolve(__dirname, 'routes/avoiding.vue') });
-                    }
-                }
-                if (config.pronouns.mirror) {
-                    routes.push({ path: '/' + encodeURIComponent(config.pronouns.mirror.route), component: resolve(__dirname, 'routes/mirror.vue') });
-                }
-            }
-
-            if (config.calendar && config.calendar.enabled) {
-                routes.push({ path: '/' + encodeURIComponent(config.calendar.route), component: resolve(__dirname, 'routes/calendar.vue') });
-                routes.push({ path: '/' + encodeURIComponent(config.calendar.route) + '/:year(\\d\\d\\d\\d)', component: resolve(__dirname, 'routes/calendar.vue') });
-                routes.push({ path: '/' + encodeURIComponent(config.calendar.route) + '/:year(\\d\\d\\d\\d)-:month(\\d\\d)-:day(\\d\\d)', component: resolve(__dirname, 'routes/calendarDay.vue') });
-            }
-
-            if (config.api !== null) {
-                routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
-            }
-
-            routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/pronoun.vue') });
         },
     },
 }

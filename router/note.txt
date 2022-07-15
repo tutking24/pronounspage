@@ -1,0 +1,11 @@
+If you want to work with the router, you need to configure a languages.json file first
+
+Just add a bunch of domains that you can access the dev server on and it should work fine.
+
+For example, if you want "domain1.local" to point to the "en" locale, and "domain2.local" to point to the "ja" locale,
+put the following in languages.json
+
+    {
+        "domain1.local": "en",
+        "domain2.local": "ja"
+    }

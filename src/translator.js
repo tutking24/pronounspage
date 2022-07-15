@@ -1,6 +1,5 @@
-import translations from '../data/translations.suml';
-
 export default (key, params = {}, warn = true) => {
+    const translations = global.$zRouterData().translations;
     let value = translations;
     for (let part of key.split('.')) {
         value = value[part];

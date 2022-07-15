@@ -1,21 +1,29 @@
 import Vue from 'vue'
 import t from '../src/translator';
-import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
 import {DateTime} from "luxon";
 import {decodeTime} from 'ulid';
+import type { Plugin } from "@nuxt/types";
 
-export default ({ app, store }) => {
+export const plugin: Plugin = function ({ app, store, nuxtState }) {
+    const routerData = app.$zRouterData();
+    //console.log("Router data: %O", routerData);
+    //console.log("Also, %O", app.store);
+
     Vue.prototype.$eventHub = new Vue();
+
 
     Vue.prototype.$base = process.env.BASE_URL;
 
+
     Vue.prototype.$t = t;
-    Vue.prototype.$te = key => t(key, {}, false) !== undefined;
-    Vue.prototype.$translateForPronoun = (str, pronoun) =>
+    Vue.prototype.$te = (key: string) => t(key, {}, false) !== undefined;
+    Vue.prototype.$translateForPronoun = (str: string, pronoun) =>
         pronoun.format(
             t(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str
         );
+
+    const config = global.$zRouterData().config;
 
     Vue.prototype.config = config;
 
@@ -64,3 +72,4 @@ export default ({ app, store }) => {
         return decodeTime(ulid) / 1000;
     }
 }
+export default plugin;

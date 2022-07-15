@@ -2,6 +2,7 @@ import {Source, Example, NounTemplate, PronounGroup, PronounLibrary, Name, Perso
 import { buildDict, buildList } from './helpers';
 import { parsePronouns } from './buildPronoun';
 
+// TODO(96): Make this provided by router
 import pronounsRaw from '../data/pronouns/pronouns.tsv';
 export const pronouns = parsePronouns(pronounsRaw);
 
