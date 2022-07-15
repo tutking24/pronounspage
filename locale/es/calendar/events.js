@@ -10,7 +10,7 @@ module.exports = [
     new Event('Mes de la Visibilidad Lésbica (Brasil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Mes de la Visibilidad Asexual (Brasil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
     new Event('Mes de la Ira', 'Progress Pride', 7, month, EventLevel.Month),    
-
+    new Event('Mes de la Historia {/terminologia#transgender=Trans} (US)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
     // --- static date ---
     new Event('Día de la Igualdad Matrimonial (EE.UU.)', '_hrc', 6, day(26), EventLevel.Day),
     new Event('Día de la Igualdad Matrimonial (España)', '_hrc', 7, day(3), EventLevel.Day),
