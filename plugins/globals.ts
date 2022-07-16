@@ -6,7 +6,7 @@ import {decodeTime} from 'ulid';
 import type { Plugin } from "@nuxt/types";
 
 export const plugin: Plugin = function ({ app, store, nuxtState }) {
-    const routerData = app.$zRouterData();
+    const routerData = $zRouterData();
     //console.log("Router data: %O", routerData);
     //console.log("Also, %O", app.store);
 
@@ -44,7 +44,7 @@ export const plugin: Plugin = function ({ app, store, nuxtState }) {
 
     Vue.prototype.$loadScript = (name, src) => {
         if (!process.client || document.querySelectorAll(`script.${name}-script`).length > 0) {
-            return new Promise((resolve, reject) => { resolve(); });
+            return new Promise<void>((resolve, reject) => { resolve(); });
         }
 
         let resolveFn; let rejectFn;
