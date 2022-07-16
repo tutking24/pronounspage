@@ -1,7 +1,7 @@
 import { Pronoun } from "./classes";
 import Compressor from "./compressor";
 import {buildDict, isEmoji} from "./helpers";
-import MORPHEMES from '../data/pronouns/morphemes';
+import { MORPHEMES } from "./localeData";
 
 export const addAliasesToPronouns = (pronouns) => {
     const pronounsWithAliases = {}
