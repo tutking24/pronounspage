@@ -1,8 +1,9 @@
 import Vue from 'vue';
-import config from '../data/config.suml';
 import {isGranted} from "../src/helpers";
 
 export default ({app, store}) => {
+    const config = $zRouterData();
+
     const token = app.$cookies.get('token');
     if (token) {
         store.commit('setToken', token);
