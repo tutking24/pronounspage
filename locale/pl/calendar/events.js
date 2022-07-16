@@ -9,7 +9,7 @@ module.exports = [
     new Event('Miesiąc Historii LGBTQ+ (Włochy)', 'Progress Pride', 4, month, EventLevel.Month),
     new Event('Miesiąc Historii LGBTQ+ (Finlandia)', 'Progress Pride', 11, month, EventLevel.Month),
     new Event('Miesiąc Historii Osób {/terminologia#transgender=Transpłciowych} (USA)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
-    new Event('Miesiąc Gniewu', 'Progress Pride', 7, month, EventLevel.Month),    
+    new Event('Miesiąc Gniewu', 'Progress Pride', 7, month, EventLevel.Month),
 
     // --- static date ---
     new Event('Tęczowa Noc', null, 8, day(7), EventLevel.Day),
@@ -23,10 +23,10 @@ module.exports = [
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Matthew_Shepard=Matthew Sheparda}', '_black-ribbon', 10, day(12), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Marielle_Franco=Marielle Franco} (Brazylia)', '_black-ribbon', 3, day(14), EventLevel.Day),
     new Event('Dzień Niebinarnych Dzieci i Młodzieży', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
-    new Event('Dzień Świadomości nt. Osób o {/terminologia#two%20spirit=Dwóch Duszach} (USA)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),    
+    new Event('Dzień Świadomości nt. Osób o {/terminologia#two%20spirit=Dwóch Duszach} (USA)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('Dzień Świadomości nt. Osób o {/terminologia#two%20spirit=Dwóch Duszach} (Kanada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
     new Event('Dzień Świadomości nt. Zaginionych i Zamordowanych Rdzennych Kobiet, Dziewczyn i Osób o {/terminologia#two%20spirit=Dwóch Duszach} (USA/Kanada)', 'Two Spirit_', 5, day(5), EventLevel.Day, ['two spirit']),
-    
+
     // --- one-off events ---
     new Event('{https://www.facebook.com/events/494846264855467=Parada Równości 2021 (Warszawa)}', 'LGBTQ', 6, dayYear(19, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/488657855710176=10. Marsz Równości w Łodzi // #DajcieŻyć}', 'LGBTQ', 6, dayYear(26, 2021), EventLevel.Day),
@@ -46,6 +46,7 @@ module.exports = [
     new Event('{https://www.facebook.com/events/1066052000600920=II Marsz Równości w Białymstoku}', 'LGBTQ', 10, dayYear(9, 2021), EventLevel.Day),
     new Event('{http://marszlublin.pl/=III Marsz Równości w Lublinie}', 'LGBTQ', 10, dayYear(23, 2021), EventLevel.Day),
     new Event('{https://www.facebook.com/events/1549709465370766=I Wodzisławski Marsz Równości}', 'LGBTQ', 10, dayYear(16, 2021), EventLevel.Day),
+
     new Event('{https://www.facebook.com/events/272344485002292=14. Wrocławski Marsz Równości}', 'LGBTQ', 6, dayYear(11, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/778731303070898=VII Trójmiejski Marsz Równości}', 'LGBTQ', 5, dayYear(28, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/620469522712842=3. Marsz Równości w Koszalinie}', 'LGBTQ', 4, dayYear(2, 2022), EventLevel.Day),
@@ -65,11 +66,12 @@ module.exports = [
     new Event('Marsz Równości {https://www.facebook.com/frankfurt.slubice.PRIDE/=Słubice-Frankfurt-Pride}', 'LGBTQ', 9, dayYear(4, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/Bielski-Marsz-R%C3%B3wno%C5%9Bci-108906844819983/=II Bielski Marsz Równości}', 'LGBTQ', 7, dayYear(3, 2022), EventLevel.Day),
     new Event('{https://www.facebook.com/events/590427705709339/=II Marsz Równości w Pile}', 'LGBTQ', 8, dayYear(27, 2022), EventLevel.Day),
-    new Event('{https://www.facebook.com/events/429088502078211/=IV Marsz Równości w Toruniu}', 'LGBTQ', 9, dayYear(17, 2022), EventLevel.Day), 
-    new Event('{https://www.facebook.com/marszrownosciwkatowicach/=6. Marsz Równości w Katowicach}', 'LGBTQ', 9, dayYear(3, 2022), EventLevel.Day),    
-    new Event('{https://www.facebook.com/events/815945746043394/=Marsz Równości w Pruszkowie}', 'LGBTQ', 7, dayYear(10, 2022), EventLevel.Day),    
+    new Event('{https://www.facebook.com/events/429088502078211/=IV Marsz Równości w Toruniu}', 'LGBTQ', 9, dayYear(17, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/marszrownosciwkatowicach/=6. Marsz Równości w Katowicach}', 'LGBTQ', 9, dayYear(3, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/815945746043394/=Marsz Równości w Pruszkowie}', 'LGBTQ', 7, dayYear(10, 2022), EventLevel.Day),
     new Event('Dzień Pamięci {https://pl.wikipedia.org/wiki/Zamach_w_Oslo_(2022)=Zamachu w Oslo}', '_black-ribbon', 6, day(25), EventLevel.Day),
     new Event('{https://www.facebook.com/marsz.rownosci.rzeszow/=Marsz Równości w Rzeszowie}', 'LGBTQ', 9, dayYear(10, 2022), EventLevel.Day),
+    new Event('{https://www.facebook.com/events/1062699238014633=IV Marsz Równości w Częstochowie}', 'LGBTQ', 7, dayYear(16, 2022), EventLevel.Day),
 
     // --- dynamic date ---
 
