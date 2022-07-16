@@ -8,7 +8,7 @@ export const plugin: Plugin = function ({app, ssrContext, beforeNuxtRender, nuxt
      * This file computes all necessary router data to pass to the router plugin on the backend and frontend
      */
 
-    let routerData: RouterData = global.$zRouterData();
+    let routerData: RouterData = $zRouterData();
     if (process.server) {
         beforeNuxtRender(({ nuxtState }) => {
             nuxtState[key] = routerData;

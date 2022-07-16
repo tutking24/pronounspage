@@ -5,14 +5,14 @@ export interface RouterData {
     locale: string;
     config: any;
     translations: any;
+
+    data: {
+        morphemes: any;
+    }
 }
 
 export const key = "$zaimki_routerData" as const;
 
 declare global {
-    namespace NodeJS {
-        interface Global {
-            $zRouterData(): RouterData;
-        }
-    }
+    function $zRouterData(): RouterData;
 }
