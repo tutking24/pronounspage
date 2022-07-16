@@ -96,11 +96,8 @@ const getAllFiles = function(dirPath, arrayOfFiles) {
 
     return arrayOfFiles
 }
-const jsons = {};
-for (let file of getAllFiles(__dirname + '/data/docs')) {
-    if (!file.endsWith('.json')) { continue; }
-    jsons[path.relative(__dirname + '/data/docs', file)] = JSON.parse(fs.readFileSync(file));
-}
+
+// TODO(96): Get JSONS again, but in a not locale-specific manner
 
 export default {
     target: 'server',
@@ -154,6 +151,12 @@ export default {
             },
         ]
     ],
+    loaders: {
+        ts: {
+            configFile: path.resolve(__dirname, 'tsconfig.json'),
+            ignoreNotFoundWarnings: true
+        }
+    },
     modules: [
         '@nuxtjs/pwa',
         '@nuxtjs/axios',
@@ -172,11 +175,31 @@ export default {
             lang: locale,
         }
     },
+    env: {
+        BASE_URL: process.env.BASE_URL,
+        HOME_URL: process.env.HOME_URL || 'https://pronouns.page',
+        TITLE: title,
+        PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
+        CONFIG: config,
+        LOCALE: config.locale,
+        LOCALES: locales,
+        FLAGS: buildFlags(),
+        FLAGS_ASTERISK: ['Heteroromantic', 'Heterosexual', 'Monoamorous', 'Monogamous'],
+        BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
+        CLOUDFRONT: `https://${process.env.AWS_CLOUDFRONT_ID}.cloudfront.net`,
+        STATS_FILE: process.env.STATS_FILE,
+        HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
+        ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
+        LOGO: logo,
+        MIN_AGE: config.ageLimit || 13,
+    },
+    serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     build: {
         postcss: {
             plugins: postCssPlugins,
         },
-        extend (config, ctx) {
+        extend(config, ctx) {
+            // console.log("Webpack rules: %O", config.module.rules);
             config.module.rules.push({
                 test: /\.csv|\.tsv$/,
                 loader: 'csv-loader',
@@ -197,26 +220,6 @@ export default {
             })
         },
     },
-    env: {
-        BASE_URL: process.env.BASE_URL,
-        HOME_URL: process.env.HOME_URL || 'https://pronouns.page',
-        TITLE: title,
-        PUBLIC_KEY: fs.readFileSync(__dirname + '/keys/public.pem').toString(),
-        CONFIG: config,
-        LOCALE: config.locale,
-        LOCALES: locales,
-        FLAGS: buildFlags(),
-        FLAGS_ASTERISK: ['Heteroromantic', 'Heterosexual', 'Monoamorous', 'Monogamous'],
-        BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
-        CLOUDFRONT: `https://${process.env.AWS_CLOUDFRONT_ID}.cloudfront.net`,
-        STATS_FILE: process.env.STATS_FILE,
-        HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
-        ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,
-        LOGO: logo,
-        MIN_AGE: config.ageLimit || 13,
-        JSONS: JSON.stringify(jsons),
-    },
-    serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {
         baseURL: process.env.BASE_URL + '/api',
     },
