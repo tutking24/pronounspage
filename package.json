@@ -68,6 +68,7 @@
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/router": "^1.7.0",
+    "@types/js-md5": "^0.4.3",
     "@types/luxon": "^2.3.2",
     "avris-daemonise": "^0.0.2",
     "bootstrap": "^5.1.0",
