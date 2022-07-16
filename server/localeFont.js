@@ -1,11 +1,16 @@
 import {registerFont} from "canvas";
 import fs from 'fs';
 
-const vars = {};
+const vars = {
+    'fontHeadings': 'Quicksand',
+    'fontText': 'Nunito'
+};
 
-for (let [, name, value] of fs.readFileSync(__dirname + '/../data/variables.scss').toString('utf-8').matchAll(/^\$([^:]+): '([^']+)';$/gm)) {
+// TODO(96): Fix this
+// const zConfig = $zRouterData();
+/*for (let [, name, value] of fs.readFileSync(`${__dirname}/../locale/${zConfig.locale}/variables.scss`).toString('utf-8').matchAll(/^\$([^:]+): '([^']+)';$/gm)) {
     vars[name] = value;
-}
+}*/
 
 const fontSources = {
     'Quicksand': 'quicksand-v21-latin-ext_latin-{weight}.ttf',

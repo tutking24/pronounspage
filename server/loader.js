@@ -2,9 +2,10 @@ const fs = require('fs');
 import Suml from 'suml';
 import Papa from 'papaparse';
 
-export const loadSuml = name => new Suml().parse(fs.readFileSync(`./data/${name}.suml`).toString());
+// TODO(96): Fix this
+export const loadSuml = name => new Suml().parse(fs.readFileSync(`./locale/en/${name}.suml`).toString());
 
-export const loadTsv = name => Papa.parse(fs.readFileSync(`./data/${name}.tsv`).toString(), {
+export const loadTsv = name => Papa.parse(fs.readFileSync(`./locale/en/${name}.tsv`).toString(), {
     dynamicTyping: true,
     header: true,
     skipEmptyLines: true,

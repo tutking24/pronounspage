@@ -1,4 +1,7 @@
-@import "../data/variables";
+// TODO(96): Use locale-specific variables.scss
+$fontHeadings: 'Quicksand' !default;
+$fontText: 'Nunito' !default;
+
 $fontExtra: null !default;
 $fonts: $fontHeadings $fontText $fontExtra;
 

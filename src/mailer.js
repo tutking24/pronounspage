@@ -7,7 +7,8 @@ const color = '#C71585';
 const logo = fs.readFileSync(__dirname + '/../static/logo/logo-primary.svg').toString('utf-8');
 const logoEncoded = 'data:image/svg+xml,' + encodeURIComponent(logo);
 
-const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
+// TODO(96): Fix this
+const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../locale/en/${name}.suml`).toString());
 const translations = loadSuml('translations');
 
 const sendEmail = (to, subject, body = undefined, html = undefined) => {

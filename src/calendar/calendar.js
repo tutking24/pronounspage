@@ -1,8 +1,10 @@
 const { Calendar, Event, EventLevel, day } = require('./helpers');
 const internationalEvents = require('../../locale/_/calendar/events');
-const localEvents = require('../../data/calendar/events');
+// const locale = $zRouterData().locale;
+// TODO(96): fix this
+const localEvents = require(`../../locale/en/calendar/events`);
 
-const rawNamedays = require('../../data/names/namedays.json');
+const rawNamedays = require(`../../locale/en/names/namedays.json`);
 
 const namedays = [];
 for (let name in rawNamedays) {
