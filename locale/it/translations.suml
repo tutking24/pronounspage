@@ -656,6 +656,8 @@ confirm:
     yes: 'Yes, I''m sure'
     no: 'No, cancel'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Terms of Service'

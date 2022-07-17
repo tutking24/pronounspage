@@ -8,4 +8,8 @@ router.get('/versions', handleErrorAsync(async (req, res) => {
     return res.json(buildLocaleList(global.config.locale));
 }));
 
+router.get('/locales', handleErrorAsync(async (req, res) => {
+    return res.json(buildLocaleList(global.config.locale));
+}));
+
 export default router;

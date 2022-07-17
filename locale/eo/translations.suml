@@ -642,6 +642,8 @@ confirm:
     yes: 'Jes, mi certas'
     no: 'Ne, mi volas reveni'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Terms of Service'

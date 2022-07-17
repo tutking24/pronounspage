@@ -580,6 +580,8 @@ confirm:
     yes: 'はい、大丈夫'
     no: 'いや、キャンセル'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: '利用規約'
@@ -985,25 +987,25 @@ calendar:
         youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
         gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO 
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO
         trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO                    
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO        
+        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
+        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
         mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO    
+        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
         spring_testing_week: 'Spring European HIV Testing Week' # TODO
         autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO    
+        sex_worker_day: 'International Sex Worker Day' # TODO
         equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
         sex_worker_pride: 'Sex Worker Pride' # TODO
         sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
         omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
-        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO 
+        omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO
         hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
         trans_flag_day: 'Trans Flag Day' # TODO
-        alan_turing_day: 'Alan Turing Day' # TODO  
-        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO 
+        alan_turing_day: 'Alan Turing Day' # TODO
+        nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: '現在、以下のお祝いをしています'

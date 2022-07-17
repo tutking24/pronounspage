@@ -4,6 +4,7 @@
             <Header/>
             <main class="container">
                 <Nuxt/>
+                <!--<TranslationMode/>-->
                 <ScrollButton/>
             </main>
         </div>
@@ -24,13 +25,17 @@
         mounted() {
             Vue.prototype.$alert = (message, color='primary') => {
                 return new Promise((resolve, reject) => {
-                    this.$refs.dialogue.show(false, message, color, resolve, reject);
+                    this.$refs.dialogue.show(false, message, color, undefined, undefined, resolve, reject);
                 });
             };
             Vue.prototype.$confirm = (message = '', color='primary') => {
-                console.log(this, this.$refs);
                 return new Promise((resolve, reject) => {
-                    this.$refs.dialogue.show(true, message, color, resolve, reject);
+                    this.$refs.dialogue.show(true, message, color, undefined, undefined, resolve, reject);
+                });
+            };
+            Vue.prototype.$editor = (value, message = '', color='primary') => {
+                return new Promise((resolve, reject) => {
+                    this.$refs.dialogue.show(false, message, color, value, 'lg', resolve, reject);
                 });
             };
             Vue.prototype.$post = (url, data, options = {}, timeout = 30000) => {

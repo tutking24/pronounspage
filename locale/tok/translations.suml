@@ -626,6 +626,8 @@ confirm:
     yes: 'lon'
     no: 'ala'
     ok: 'pona'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'lawa'

@@ -1428,6 +1428,8 @@ confirm:
     yes: 'Tak, na pewno'
     no: 'Nie, anuluj'
     ok: 'OK'
+    save: 'Zapisz'
+    dismiss: 'Anuluj'
 
 terms:
     header: 'Regulamin'

@@ -1,5 +1,5 @@
 <template>
-    <a :href="link" target="_blank" rel="noopener" class="btn-square m-1" :style="colour ? ('background-color: ' + colour) : 'colour'">
+    <a :href="link" target="_blank" rel="noopener" :class="['btn-square', 'm-1', 'bg-' + colour, 'text-' + textColour]" :style="colour.startsWith('#') ? ('background-color: ' + colour) : ''">
         <slot></slot>
     </a>
 </template>
@@ -8,34 +8,31 @@
     export default {
         props: {
             link: { required: true },
-            colour: { },
+            colour: { 'default': 'primary' },
+            textColour: { 'default': 'white' },
         },
     }
 </script>
 
 <style lang="scss" scoped>
     @import "assets/variables";
-    $size: 2.2rem;
 
     .btn-square {
         display: inline-block;
-        height: $size;
-        min-width: $size;
+        height: $square-button-size;
+        min-width: $square-button-size;
         text-align: center;
 
-        background-color: $primary;
         border-radius: $border-radius;
         border: none;
-        color: white;
         line-height: 1.5;
-        font-size: $size * 0.6;
+        font-size: $square-button-size * 0.6;
         transition: opacity 300ms ease;
 
         &:hover {
             border: none;
             cursor: pointer;
             opacity: .7;
-            color: white;
             text-decoration: none;
         }
 

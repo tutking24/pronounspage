@@ -1,4 +1,6 @@
 import jwt from 'jsonwebtoken';
+import t from '../src/translator';
+import {buildDict} from "../src/helpers";
 
 export const state = () => ({
     token: null,
@@ -6,6 +8,8 @@ export const state = () => ({
     preToken: null,
     spelling: null,
     darkMode: false,
+    translationMode: false,
+    translationChanges: {},
 })
 
 export const mutations = {
@@ -50,5 +54,32 @@ export const mutations = {
     },
     setDarkMode(state, isDark) {
         state.darkMode = isDark;
-    }
+    },
+    translationInit(state) {
+        state.translationMode = true;
+        state.translationChanges = {};
+    },
+    translationCommit(state) {
+        alert('not implemented!')
+    },
+    translationAbort(state) {
+        state.translationMode = false;
+        state.translationChanges = {};
+    },
+    translate(state, {key, newValue}) {
+        if (newValue !== t(key)) {
+            const translationChanges = {...state.translationChanges};
+            translationChanges[key] = newValue;
+            state.translationChanges = translationChanges;
+        } else {
+            state.translationChanges = buildDict(function* (that) {
+                for (let k in that) {
+                    if (!that.hasOwnProperty(k)) { continue; }
+                    if (k !== key) {
+                        yield [k, that[k]];
+                    }
+                }
+            }, state.translationChanges);
+        }
+    },
 }

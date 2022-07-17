@@ -621,6 +621,8 @@ confirm:
     yes: 'Ja, jag är säker'
     no: 'Nej, avbryt'
     ok: 'Okej'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Användarvillkor'
@@ -998,7 +1000,7 @@ calendar: # TODO
         sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
         world_sexual_health_day: 'World Sexual Health Day'
         aids_vaccine_day: 'World AIDS Vaccine Day'
-        queer_youth_day: 'Queer Youth Day' 
+        queer_youth_day: 'Queer Youth Day'
         omnisexual_day: 'Omnisexual Visibility Day'
         unlabeled_day: 'Unlabeled Visibility Day'
         trans_youth_day: 'Trans Children and Youth Visibility Day'
@@ -1008,7 +1010,7 @@ calendar: # TODO
         gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day'
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
         hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
-        trans_hiv_testing_day: 'Transgender HIV Testing Day'     
+        trans_hiv_testing_day: 'Transgender HIV Testing Day'
         mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day'
         mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week'
         mspec_gay_day: 'Mspec Gay Visbility & Awareness Day'
@@ -1027,7 +1029,7 @@ calendar: # TODO
         alan_turing_day: 'Alan Turing Day'
         nonbinary_kids_day: 'Nonbinary Kids'' Day'
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week'
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' 
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
     banner: 'Vi firar'
     celebrating_custom: 'firas'
     celebrating_day: 'firas på'
