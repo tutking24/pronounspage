@@ -652,6 +652,8 @@ confirm:
     yes: '예, 확신합니다'
     no: '아니요, 취소해요'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: '서비스 약관'

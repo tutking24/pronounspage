@@ -581,6 +581,8 @@ confirm:
     yes: 'Oui, je suis sûr·e'
     no: 'Non, annuler'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Conditions d''utilisation'
@@ -1016,7 +1018,7 @@ calendar:
         sex_worker_violence_day: 'Journée internationale pour stopper les violences à l’encontre des Travailleurs du sexe'
         omnisexual_omniromantic_day: 'Journée de la fierté et visibilité omnisexuelle et omniromantique'
         omnisexual_awareness_day: 'Journée de la sensibilité à la omnisexualité'
-        hiv_is_not_a_crime: 'Jour du "VIH n''est pas un crime"' 
+        hiv_is_not_a_crime: 'Jour du "VIH n''est pas un crime"'
         trans_flag_day: 'Jour du drapeau trans'
         alan_turing_day: 'Journée Alan Turing'
         nonbinary_kids_day: 'Journée des enfants non-binaires'

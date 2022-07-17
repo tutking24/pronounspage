@@ -560,6 +560,8 @@ confirm:
     yes: 'Ja, jeg er sikker'
     no: 'Nei, kanseller'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Vilkår og betingelser'

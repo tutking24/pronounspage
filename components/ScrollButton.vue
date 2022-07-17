@@ -9,7 +9,7 @@
 <script>
     export default {
         props: {
-            colour: { 'default': null },
+            colour: { 'default': 'primary' },
         },
         data() {
             return {

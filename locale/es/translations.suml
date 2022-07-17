@@ -662,6 +662,8 @@ confirm:
     yes: 'Sí, lo estoy'
     no: 'No, cancelar'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Términos de Servicio'
@@ -1075,17 +1077,17 @@ calendar:
         omnisexual_day: 'Día de la Visibilidad Omnisexual'
         unlabeled_day: 'Día de la Visibilidad de Personas sin Etiqueta'
         trans_youth_day: '{https://elmarplatense.com/2021/05/14/se-conmemoro-el-primer-dia-de-la-visibilidad-de-las-nineces-y-adolescencias-trans-en-general-pueyrredon/=Día de la Visibilidad de las Niñeces y Adolescencias Trans}'
-        hiv_long_term_survivors_day: 'Día de Concientización para los Sobrevivientes a Largo Plazo del VIH' 
+        hiv_long_term_survivors_day: 'Día de Concientización para los Sobrevivientes a Largo Plazo del VIH'
         women_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Mujeres y Niñas'
         youth_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Jóvenes'
         gay_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre los Hombres Gais'
-        black_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra' 
-        hiv_aging_awareness_day: 'Día de Concientización sobre el VIH/SIDA y el Envejecimiento' 
-        trans_hiv_testing_day: 'Día de la Prueba del VIH en Personas Transgénero'   
-        mspec_lesbian_day: 'Día de la Visibilidad de las Lesbianas del Espectro Multisexual'                    
-        mspec_lesbian_week: 'Semana de la Visibilidad de las Lesbianas del Espectro Multisexual'         
+        black_hiv_awareness_day: 'Día de Concientización sobre el VIH/SIDA entre las Personas de Raza Negra'
+        hiv_aging_awareness_day: 'Día de Concientización sobre el VIH/SIDA y el Envejecimiento'
+        trans_hiv_testing_day: 'Día de la Prueba del VIH en Personas Transgénero'
+        mspec_lesbian_day: 'Día de la Visibilidad de las Lesbianas del Espectro Multisexual'
+        mspec_lesbian_week: 'Semana de la Visibilidad de las Lesbianas del Espectro Multisexual'
         mspec_gay_day: 'Día de la Visibilidad de los Gays del Espectro Multisexual'
-        mspec_gay_week: 'Semana de la Visibilidad de los Gays del Espectro Multisexual' 
+        mspec_gay_week: 'Semana de la Visibilidad de los Gays del Espectro Multisexual'
         spring_testing_week: 'Semana Europea de la Prueba de VIH en Primavera'
         autumn_testing_week: 'Semana Europea de la Prueba de VIH en Otoño'
         sex_worker_day: 'Día Internacional de lxs Trabajadorxs Sexuales'
@@ -1098,7 +1100,7 @@ calendar:
         hiv_is_not_a_crime: 'El VIH no Es un Crimen'
         trans_flag_day: 'Dia de la Bandera Trans'
         alan_turing_day: 'Día de Alan Turing'
-        nonbinary_kids_day: 'Día de les Niñes y Adolescentes No Binaries' 
+        nonbinary_kids_day: 'Día de les Niñes y Adolescentes No Binaries'
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Hoy celebramos'

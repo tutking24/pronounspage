@@ -559,6 +559,8 @@ confirm:
     yes: 'Si, lo esto'
     no: 'No, anular'
     ok: 'OK'
+    save: 'Save' # TODO
+    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Terminos de Servisio'
@@ -958,8 +960,8 @@ calendar:
         black_hiv_awareness_day: 'Dia de Konsensya sovre HIV/AIDS entre las Personas Pretas'
         hiv_aging_awareness_day: 'Dia de Konsensya sovre HIV/AIDS i el Envejesimyento'
         trans_hiv_testing_day: 'Dia de la Prueva del HIV en Personas Transdjeneras'
-        mspec_lesbian_day: 'Dia de la Vizibilidad de las Lezbianas del Espektro Multiseksual'                    
-        mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'  
+        mspec_lesbian_day: 'Dia de la Vizibilidad de las Lezbianas del Espektro Multiseksual'
+        mspec_lesbian_week: 'Semana de la Vizibilidad de las Lezbianas del Espektro Multiseksual'
         mspec_gay_day: 'Dia de la Vizibilidad de los Alegres del Espektro Multiseksual'
         mspec_gay_week: 'Semana de la Vizibilidad de los Alegres del Espektro Multiseksual'
         spring_testing_week: 'Semana Europea de la Prueva de HIV en Primavera'
@@ -973,7 +975,7 @@ calendar:
         omnisexual_awareness_day: 'Dia de la Konsensya Omniseksuala'
         hiv_is_not_a_crime: 'El HIV No Es Un Krimen'
         trans_flag_day: 'Dia de la Bandiera Trans'
-        alan_turing_day: 'Dia de Alan Turing'  
+        alan_turing_day: 'Dia de Alan Turing'
         nonbinary_kids_day: 'Dia de las Kriaturas i les Manseves No Binaries'
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
