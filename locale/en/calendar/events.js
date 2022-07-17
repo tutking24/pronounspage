@@ -26,7 +26,7 @@ module.exports = [
     new Event('Marriage Equality Day (New Zealand)', '_hrc', 8, day(19), EventLevel.Day),
     new Event('Marriage Referendum Anniversary (Ireland)', '_hrc', 5, day(22), EventLevel.Day),
     new Event('Freedom to Marry Day (US)', '_hrc', 2, day(12), EventLevel.Day),
-    new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', null, 7, day(27), EventLevel.Day),
+    new Event('Anniversary of the Decriminalisation of Homosexuality in England and Wales (1967)', '_law', 7, day(27), EventLevel.Day),
     new Event('Anniversary of the Decriminalisation of Homosexuality in Scotland (1981)', '_law', 2, day(1), EventLevel.Day),
     new Event('{/terminology#two%20spirit=Two Spirit} Awareness Day (US)', 'Two Spirit_', 7, day(11), EventLevel.Day, ['two spirit']),
     new Event('LGBT Center Awareness Day (US)', null, 10, day(19), EventLevel.Day),
