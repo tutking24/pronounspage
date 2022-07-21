@@ -4,7 +4,7 @@
 
 ![Sylvia Dziuba on Medium: Demanding Pronouns. No, I don’t want to give you mine, and I don’t want to know yours.](/img-local/blog/demanding-pronouns.png)
 
-So I stumbled upon an article on Medium called [“Demanding Pronouns”](https://medium.com/the-venting-machine/demanding-pronouns-b819ab23f5df).
+So I stumbled upon an article on Medium titled [“Demanding Pronouns”](https://medium.com/the-venting-machine/demanding-pronouns-b819ab23f5df).
 And while I normally wouldn't even bother to dignify such blatantly enbyphobic bullshit with a reply,
 this one is just so over the top asinine that I just have to pick my “favourite” parts and share them with a comment, even a brief one.
 
