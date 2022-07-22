@@ -672,12 +672,9 @@ terms:
                 When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
             cookies: >
                 We only use first-party cookies and local storage to keep you logged in and save your preferences.
-            matomo: >
-                We use Matomo to track traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-                You can read more about the data it stores
-                {https://matomo.org/faq/general/faq_18254/=here}
-                and about the cookies it uses
-                {https://matomo.org/faq/general/faq_146/=here}.
+            plausible: >
+                We use Plausible to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
+                You can read their privacy policy {https://plausible.io/privacy=here}.
             arc: >
                 We use arc.io to cover the costs of website maintenance without introducing ads.
                 You can read more about them and their privacy policy

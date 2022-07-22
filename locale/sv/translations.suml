@@ -708,12 +708,9 @@ terms:
                 När du kontaktar oss via mail så sparar vi din mailadress för att kunna svara och fråga dig uppföljande frågor.
             cookies: >
                 Vi använder bara första-parti cookies och lokalt utrymme för att hålla dig inloggad och spara dina preferenser.
-            matomo: >
-                Vi använder Matomo för att spåra trafik på webbsidan. Sådan data har ingen koppling till ditt användarnamn och din IP är anonym.
-                Du kan läsa mer om datan den sparar
-                {https://matomo.org/faq/general/faq_18254/=här}
-                och om cookies den använder
-                {https://matomo.org/faq/general/faq_146/=här}.
+            plausible: >
+                Vi använder Plausible för att spåra trafik på webbsidan. Sådan data har ingen koppling till ditt användarnamn och din IP är anonym.
+                Du kan läsa mer om datan den sparar {https://plausible.io/privacy=här}.
             arc: >
                 Vi använder arc.io för att täcka kostnaderna för att underhålla webbplatsen utan reklam.
                 Du kan läsa mer om det och dess integritetspolicy

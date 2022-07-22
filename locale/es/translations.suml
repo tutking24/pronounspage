@@ -749,12 +749,9 @@ terms:
                 Cuando nos contactes por correo electrónico, guardamos tu correo para responderte y formularte preguntas de seguimiento.
             cookies: >
                 Nosotrxs sólo utilizamos cookies propias y almacenamiento local para mantener tu sesión activa y guardar tus preferencias.
-            matomo: >
-                Nosotrxs utilizamos Matomo para realizar seguimiento del tráfico en nuestro sitio. Tal información no está relacionada con tu nombre de usuario, y tu dirección IP permanece anónima.
-                Puedes leer acerca de los datos que almacena
-                {https://matomo.org/faq/general/faq_18254/=aquí}
-                y las cookies que utiliza en
-                {https://matomo.org/faq/general/faq_146/=aquí}.
+            plausible: >
+                Nosotrxs utilizamos Plausible para realizar seguimiento del tráfico en nuestro sitio. Tal información no está relacionada con tu nombre de usuario, y tu dirección IP permanece anónima.
+                Puedes leer acerca de los datos que almacena {https://plausible.io/privacy=aquí}.
             arc: >
                 Nosotrxs utilizamos arc.io para cubrir los costos del mantenimiento del sitio sin introducir anuncios publicitarios.
                 Puedes leer más al respecto y de su política de privacidad en

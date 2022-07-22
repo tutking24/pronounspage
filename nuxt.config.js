@@ -136,7 +136,7 @@ export default {
     },
     css: [],
     plugins: [
-        { src: '~/plugins/vue-matomo.js', ssr: false },
+        // { src: '~/plugins/vue-matomo.js', ssr: false },
         { src: '~/plugins/globals.js' },
         { src: '~/plugins/auth.js' },
         { src: '~/plugins/datepicker.js', ssr: false },
@@ -150,6 +150,7 @@ export default {
             rules: config.redirects,
         }],
         'cookie-universal-nuxt',
+        'vue-plausible'
     ],
     pwa: {
         manifest: {
@@ -159,6 +160,15 @@ export default {
             background_color: '#ffffff',
             theme_color: colour,
             lang: locale,
+        }
+    },
+    plausible: {
+        domain: process.env.PLAUSIBLE_DOMAIN || translations.domain,
+    },
+    publicRuntimeConfig: {
+        plausible: {
+            domain: process.env.PLAUSIBLE_DOMAIN || translations.domain,
+            apiHost: process.env.PLAUSIBLE_API_HOST
         }
     },
     build: {

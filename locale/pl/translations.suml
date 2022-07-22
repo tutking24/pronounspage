@@ -1520,13 +1520,11 @@ terms:
                 Jeśli skontaktujesz się z nami drogą mailową, będziemy przechowywać Twój adres email w celu dalszej komunikacji.
             cookies: >
                 Własnych ciasteczek oraz local storage używamy tylko do utrzymania sesji logowania oraz zapisania Twoich preferencji.
-            matomo: >
-                Używamy Matomo do analizowania ruchu sieciowego na stronie.
+            plausible: >
+                Używamy Plausible do analizowania ruchu sieciowego na stronie.
                 Te dane nie są powiązane z Twoją nazwą użytkownicza, a Twój adres IP jest anonimizowany.
-                Możesz przeczytać więcej o danych przechowywanych przez Matomo
-                {https://matomo.org/faq/general/faq_18254/=tutuaj},
-                a o używanych ciasteczkach
-                {https://matomo.org/faq/general/faq_146/=tutaj}.
+                Możesz przeczytać ich politykę prywatności
+                {https://plausible.io/privacy=tutuaj}.
             arc: >
                 Używamy arc.io, by pokryć koszty utrzymania strony bez wprowadzania reklam.
                 Ich politykę prywatności możesz przeczytać
