@@ -25,7 +25,7 @@
                 </nuxt-link>
                 <br v-if="author.footerAreas"/>
                 <small v-if="author.footerAreas">
-                    {{author.footerAreas.replace(/,/g, ', ')}}
+                    <Spelling :text="author.footerAreas.replace(/,/g, ', ')"/>
                 </small>
             </li>
         </template>
