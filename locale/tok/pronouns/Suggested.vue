@@ -5,7 +5,7 @@
             <T>home.pronouns</T>
         </h2>
         <p>
-            <T>pronouns.intro</T>
+            <T>pronouns.introDisclaimer</T>
         </p>
     </section>
 </template>
