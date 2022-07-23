@@ -126,3 +126,12 @@
         src: url('/fonts/sitelen-pona-pona.otf') format("opentype")
     }
 }
+
+@if list.index($fonts, 'linjapimejapona') {
+    @font-face {
+        font-family: 'linjapimejapona';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/fonts/linjapimejapona.ttf') format("truetype")
+    }
+}
