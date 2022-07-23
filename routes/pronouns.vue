@@ -236,7 +236,7 @@
                 selectedMorpheme: '',
 
                 customiseMultiple: false,
-                multiple: this.config.pronouns.multiple.examples[0].split('&'),
+                multiple: this.config.pronouns.multiple ? this.config.pronouns.multiple.examples[0].split('&') : [],
 
                 customise: false,
 
