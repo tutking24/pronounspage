@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2021-12-13</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-07-23</em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>
@@ -39,7 +39,7 @@
         <p><T>terms.content.privacy.editRemoval</T></p>
         <p><T>terms.content.privacy.contact</T></p>
         <p><T>terms.content.privacy.cookies</T></p>
-        <p><T>terms.content.privacy.matomo</T></p>
+        <p><T>terms.content.privacy.plausible</T></p>
         <p><T>terms.content.privacy.arc</T></p>
         <p><T>terms.content.privacy.hCaptcha</T></p>
         <p><T>terms.content.privacy.logsBackups</T></p>
