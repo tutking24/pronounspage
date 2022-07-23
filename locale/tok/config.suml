@@ -184,6 +184,11 @@ links:
 contact:
     enabled: true
     route: 'toki'
+    authors:
+        -
+            footerName: 'jan Sewe (soweli e wan esun)'
+            username: 'GiggyMantis'
+            footerAreas: 'toki ante'
     team:
         enabled: true
         route: 'kulupu_ni'
