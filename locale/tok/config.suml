@@ -4,89 +4,16 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'ona'
-    default: 'ala'
-    any: 'ale'
+    route: 'supa_ona'
+    default: 'ona'
+    any: false
     plurals: false
     honorifics: false
-    multiple:
-        name: 'ona mute'
-        description: >
-            tonsi mute li kepeken e ona mute.
-            ona li pona e nimi pi ni tu.
-            ona mute li pona e nimi pi tu ante.
-        examples: ['mije&meli', 'mije&tonsi', 'tonsi&meli']
-    null:
-        description: >
-            {/apeja_e_ona=apeja e ona} / {/ona_ala=ona ala} / {/jan_pi_nimi_ona_ala=jan pi nimi ona ala} / {/ona_nimi=ona nimi}
-        history: >
-            jan mute li pona e ona ala, la nimi nimi e lon sitelen.
-            O lipu: {https://twitter.com/lypomania/status/1290274971642544128=lupi Lipomani},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=ona ala lon pu Esipiti}
-        morphemes:
-            pronoun_subject: 'ona #'
-            pronoun_adjective: '#'
-            reflexive: 'jan #'
-        examples: [':Sonja', ':N', ':Sa']
-        template: 'o open e ijo, la o ante nimi sina e nimi ijo.'
-        routes: ['apeja_e_ona']
-        ideas:
-            -
-                header: 'o kepeken ala e ona, la o kepeken e nimi.'
-                normative: true
-                examples:
-                    - ['mi toki lon pini e ona mije.', 'mi toki lon pini e jan {/:Kai=Kai}.']
-                    - ['ona meli li suwi a.', 'jan {/:Sape=Sape} li suwi a.']
-                    -
-                        - 'kama open e tenpo pini sona pi ona meli.'
-                        - 'kama open e tenpo pini sona pi jan {/:Se=Se}.'
-            -
-                header: 'toki awen'
-                normative: true
-                examples:
-                    - ['ona mije li kepeken e ilo.', 'ilo e kepeken.']
-                    -
-                        - 'jan Wen li olin e soweli ona.'
-                        - 'soweli Wen li olin.'
-            -
-                header: 'sitelen ante.'
-                normative: true
-                examples:
-                    - ['Lior did it all by himself', 'Lior did it all without any help']
-                    - ['Gael talks in his sleep', 'Gael talks while sleeping']
-            -
-                header: 'o ona li ijo'
-                normative: true
-                examples:
-                    - ['ona meli li pini e ilo waso.', 'jan sona waso li pini e ilo waso.']
-                    - ['ni li jan Le. ona li olin e pali sitelen.', 'ni li jan Le, la li olin e pali sitelen.']
-                    - ['ona meli li toki e…', 'jan open li toki e…']
-            -
-                header: 'o ala e ona'
-                normative: true
-                examples:
-                    - ['sina esun e ijo pona pi ona meli?', 'sina esun e ijo pona?']
-                    - ['lon. mi esun e ijo pona pi ona meli, la mi kama pana ona meli e ni.', 'lon. mi esun e ijo pona, la mi kama pana e ni.']
-    emoji:
-        description: 'ona nimi sitelen linluwi.'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=ona nimi sitelen linluwi} li toki linluwi, la toki ala pi linluwi ala.'
-        morphemes:
-            pronoun_subject: 'ona #'
-            pronoun_adjective: '#'
-            reflexive: 'jan #'
-        examples: ['💫', '💙']
-        template: 'o open e ijo, la o ante sitelen sina e sitelen ijo.'
-    mirror:
-        route: 'jasima'
-        name: 'ona jasima'
-        description: >
-            jan pi ona jasima li wile nimi e ona pi sama jan toki.
-        example:
-            - 'jan nanpa wan li kepeken e ona jasima.'
-            - 'jan nanpa tu li kepeken e {/meli=ona meli}, la ona meli li toki e jan nanpa wan, la ona meli li nimi meli e ona meli.'
-            - 'jan nanpa tu wan li kepeken e {/mije=ona mije} e {/Fa=ona Fa}, la ona mije li toki e jan nanpa wan, la ona Fa li nimi Fa e ona mije e ona Fa.'
-    slashes: true
-    others: 'ona ante'
+    multiple: false
+    null: false
+    emoji: false
+    mirror: false
+    slashes: false
 
 pronunciation:
     enabled: true
@@ -210,7 +137,7 @@ profile:
         - ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
         - ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
     flags:
-        defaultPronoun: 'ala'
+        defaultPronoun: 'ona'
 
 calendar:
     enabled: true
