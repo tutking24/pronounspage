@@ -464,6 +464,7 @@ support:
     description: >
         If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
         you can use the links below:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Konto'

@@ -476,6 +476,7 @@ support:
     description: >
         서버, 도메인, 스티커 등을 추가하는걸 구입하려는 경우,
         아래 링크를 사용할 수 있습니다.
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: '계정'

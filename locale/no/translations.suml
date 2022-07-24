@@ -381,6 +381,7 @@ support:
     description: >
         Hvis du har lyst til å bidra til serveren, domener, klistremerker osv., eller bare kjøpe forfatterne en kaffe,
         kan du bruke linkene nedenfor:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Bruker'

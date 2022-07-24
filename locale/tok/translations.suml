@@ -464,6 +464,7 @@ support:
     header: 'a esun'
     description: >
         mi olin e sina a! sina wile esun e telo mi e sitelen mi, e mute mute, la o kepeken e tawa anpa.
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'jan mi'

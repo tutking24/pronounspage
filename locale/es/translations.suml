@@ -487,6 +487,7 @@ support:
     description: >
         Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
         puedes usar los siguientes enlaces:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Cuenta'
