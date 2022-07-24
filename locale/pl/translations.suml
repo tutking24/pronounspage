@@ -94,6 +94,8 @@ pronouns:
     othersRaw: 'inne'
     or: 'lub'
     grammarTable: 'Odmiana'
+    sentence:
+        'Oprócz domyślnych linków możesz też podlinkować do swoich zaimków tak, aby URL czytało się niemal jak zdanie, na przykład:'
 
 sources:
     header: 'Teksty kultury'

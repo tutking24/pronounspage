@@ -318,15 +318,17 @@ export default {
             }
 
             if (config.pronouns.enabled) {
-                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}`, component: resolve(__dirname, 'routes/any.vue') });
-                routes.push({ path: `/${encodeURIComponent(config.pronouns.any)}::group`, component: resolve(__dirname, 'routes/any.vue') });
-                if (config.pronouns.null && config.pronouns.null.routes) {
-                    for (let route of config.pronouns.null.routes) {
-                        routes.push({ path: '/' + encodeURIComponent(route), component: resolve(__dirname, 'routes/avoiding.vue') });
+                for (let prefix of [...(config.pronouns.sentence ? config.pronouns.sentence.prefixes : []), '']) {
+                    routes.push({ path: `${prefix}/${encodeURIComponent(config.pronouns.any)}`, component: resolve(__dirname, 'routes/any.vue') });
+                    routes.push({ path: `${prefix}/${encodeURIComponent(config.pronouns.any)}::group`, component: resolve(__dirname, 'routes/any.vue') });
+                    if (config.pronouns.null && config.pronouns.null.routes) {
+                        for (let route of config.pronouns.null.routes) {
+                            routes.push({ path: `${prefix}/${encodeURIComponent(route)}`, component: resolve(__dirname, 'routes/avoiding.vue') });
+                        }
                     }
-                }
-                if (config.pronouns.mirror) {
-                    routes.push({ path: '/' + encodeURIComponent(config.pronouns.mirror.route), component: resolve(__dirname, 'routes/mirror.vue') });
+                    if (config.pronouns.mirror) {
+                        routes.push({ path: `${prefix}/${encodeURIComponent(config.pronouns.mirror.route)}`, component: resolve(__dirname, 'routes/mirror.vue') });
+                    }
                 }
             }
 
@@ -340,7 +342,7 @@ export default {
                 routes.push({ path: '/api', component: resolve(__dirname, 'routes/api.vue') });
             }
 
-            routes.push({ name: 'all', path: '*', component: resolve(__dirname, 'routes/pronoun.vue') });
+            routes.push({ name: 'all', path: `*`, component: resolve(__dirname, 'routes/pronoun.vue') });
         },
     },
 }

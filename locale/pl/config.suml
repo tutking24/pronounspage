@@ -178,6 +178,13 @@ pronouns:
             - 'Osoba B używa {/ona=rodzaju żeńskiego}, więc zwracając się do osoby A lub mówiąc o niej będzie używała form żeńskich.'
             - 'Osoba C używa {/onu=dukaizmów} wymiennie z {/ono=rodzajem neutralnym}, więc zwracając się do osoby A lub mówiąc o num będzie używała form postpłciowych bądź neutralnych.'
     others: 'Pozostałe formy'
+    sentence:
+        subdomains: ['moje', 'nasze']
+        prefixes: ['/to']
+        examples:
+            - 'moje.zaimki.pl/to/ono/jego'
+            - 'moje.zaimki.pl/to/onu&ona'
+            - 'nasze.zaimki.pl/to/oni/ich&one/ich'
 
 pronunciation:
     enabled: true
