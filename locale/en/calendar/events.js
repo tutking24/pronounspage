@@ -94,7 +94,7 @@ module.exports = [
     new Event('{https://napwha.org.au/about-us/national-network-of-women/=National Day of Women living with HIV} (Australia)', '_red-ribbon', 3, day(9), EventLevel.Day, ['aids']),
     new Event('{https://en.wikipedia.org/wiki/David_Kato=Kuchu Remembrance Day} (Uganda)', '_black-ribbon', 1, day(26), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/2022_Oslo_shooting=Oslo Pride Shooting} Remembrance Day', '_black-ribbon', 6, day(25), EventLevel.Day),
-    new Event('Two-Spirit and Indigenous LGBTQQIA+ Awareness to Celebration Day (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
+    new Event('{/terminology#two%20spirit=Two-Spirit} and Indigenous LGBTQQIA+ Awareness to Celebration Day (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
 
     // --- dynamic date ---
 
