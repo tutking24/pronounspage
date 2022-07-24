@@ -48,6 +48,13 @@ export const buildPronoun = (pronouns, path) => {
 
     const config = global.config || process.env.CONFIG;
 
+    for (let prefix of config.pronouns.sentence ? config.pronouns.sentence.prefixes : []) {
+        if (('/' + path).startsWith(prefix + '/')) {
+            path = path.substring(prefix.length);
+            break;
+        }
+    }
+
     const pronounsWithAliases = addAliasesToPronouns(pronouns);
 
     const pronounStr = path.split(',');

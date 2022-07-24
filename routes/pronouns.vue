@@ -3,6 +3,16 @@
         <section>
             <Suggested/>
 
+            <div v-if="config.pronouns.sentence" class="alert alert-info small">
+                <Icon v="lightbulb-on"/>
+                <T>pronouns.sentence</T>
+                <ul class="mb-0">
+                    <li v-for="example in config.pronouns.sentence.examples">
+                        <a :href="`https://${example}`" target="_blank" rel="noopener">{{ example }}</a>
+                    </li>
+                </ul>
+            </div>
+
             <ul class="list-group mt-4">
                 <li v-for="[group, groupPronouns] in pronounLibrary.split()" class="list-group-item">
                     <p class="h5">
