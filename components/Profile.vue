@@ -146,7 +146,7 @@
                         .replace(new RegExp('^/'), '');
 
                     try {
-                        let link = decodeURIComponent(link);
+                        link = decodeURIComponent(link);
                     } catch {
                         continue;
                     }
