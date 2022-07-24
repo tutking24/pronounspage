@@ -155,14 +155,18 @@
                 });
 
                 if (this.config.pronouns.enabled) {
-                    const extra = ['all', '/' + this.config.pronouns.any, `/${this.config.pronouns.any}:`]
-                    if (this.config.pronouns.null && this.config.pronouns.null.routes) {
-                        for (let route of this.config.pronouns.null.routes) {
-                            extra.push('/' + route);
+                    const extra = ['all'];
+                    for (let prefix of [...(this.config.pronouns.sentence ? this.config.pronouns.sentence.prefixes : []), '']) {
+                        extra.push(`${prefix}/${this.config.pronouns.any}`);
+                        extra.push(`${prefix}/${this.config.pronouns.any}:`);
+                        if (this.config.pronouns.null && this.config.pronouns.null.routes) {
+                            for (let route of this.config.pronouns.null.routes) {
+                                extra.push(`${prefix}/${route}`);
+                            }
                         }
-                    }
-                    if (this.config.pronouns.mirror) {
-                        extra.push('/' + this.config.pronouns.mirror.route)
+                        if (this.config.pronouns.mirror) {
+                            extra.push(`${prefix}/${this.config.pronouns.mirror.route}`);
+                        }
                     }
                     links.push({
                         link: '/' + this.config.pronouns.route,
