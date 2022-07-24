@@ -1,3 +1,5 @@
+import t from './translator';
+
 export const contact = {
     all: {
         email_pl: {
@@ -70,6 +72,12 @@ export const socialLinks = {
 
 const supportLinks = {
     all: {
+        bank: {
+            icon: 'money-check-alt',
+            url: 'https://bunq.me/PronounsPage',
+            headline: t('support.bankAccount'),
+            // tooltip: t('support.bankAccountOwner'),
+        },
         kofi: {
             icon: 'coffee',
             url: 'https://ko-fi.com/radajezykaneutralnego',

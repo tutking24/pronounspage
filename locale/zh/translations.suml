@@ -359,6 +359,7 @@ support:
     header: '支持'
     description: >
         如果你想為這個網站捐款，或者買啤酒給作者，你可以用下面的鏈接:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: '帳戶'

@@ -381,6 +381,7 @@ support:
     description: >
         Si keres donar para el servidor, los dominios, stikers ets., o simplemente merkarles una bira a les autorxs,
         puedes uzar los sigientes atadijos:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Kuento'

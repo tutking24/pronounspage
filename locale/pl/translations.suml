@@ -1203,6 +1203,7 @@ support:
     description: >
         Jeśli chcesz się zrzucić na serwer, domeny, wlepki itp., lub zwyczajnie postawić autorzom piwo,
         możesz skorzystać z poniższych linków:
+    bankAccount: 'Przelew bankowy'
 
 user:
     header: 'Konto'

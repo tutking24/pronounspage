@@ -407,6 +407,7 @@ support:
     header: 'サポート'
     description: >
         サーバー費用・ドメイン費用・ステッカー費用、作者のビール代などの寄付をご希望の方は、以下のリンクをクリックしてくださいね：
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'アカウント'

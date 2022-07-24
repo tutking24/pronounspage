@@ -405,6 +405,7 @@ support:
     description: >
         Si vous voulez donnez un coup de main pour le serveur, le domaine, les stickers, etc. ou simplement payer une bière à l'auteur,
         vous pouvez utiliser les liens ci-dessous :
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Compte'

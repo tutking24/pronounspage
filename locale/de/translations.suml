@@ -402,6 +402,7 @@ support:
     description: >
         Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor*innen einfach ein Bier ausgeben willst,
         kannst du den untenstehenden Link nutzen:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Account'

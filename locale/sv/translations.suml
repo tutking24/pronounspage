@@ -457,6 +457,7 @@ support:
     description: >
         Om du vill chippa in för servern, domäner, klistermärken etc., eller helt enkelt köpa författarna en öl,
         så kan du använda länkarna nedan:
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Konto'
