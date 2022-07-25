@@ -65,6 +65,13 @@ pronouns:
             - 'La persona C usa {/elli=elli/li} junto con {/ellæ=ellæ/læ} indistintamente, así que cuando elli habla sobre la persona A, ellæ usará elli/li o ellæ/læ para hablar de ellæ.'
     slashes: false
     others: 'Otros pronombres'
+    sentence:
+        subdomains: ['mis', 'nuestros']
+        prefixes: ['/son']
+        examples:
+            - 'mis.pronombr.es/son/elle/le'
+            - 'mis.pronombr.es/son/xelle&ella'
+            - 'nuestros.pronombr.es/son/elli/li'
 
 pronunciation:
     enabled: true

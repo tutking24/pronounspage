@@ -81,6 +81,9 @@ pronouns:
     othersRaw: 'Otras'
     or: 'o'
     grammarTable: 'Tabla'
+    # TODO
+    sentence: >
+        You can modify the default links so that the URL reads like a sentence; for example:
 
 sources:
     header: 'Fuentes'
