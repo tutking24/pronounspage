@@ -93,6 +93,13 @@ pronouns:
             - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fæ uses either ze/hir or fæ/fær to refer to fær.'
     slashes: true
     others: 'Other pronouns'
+    sentence:
+        subdomains: ['my', 'our']
+        prefixes: ['/are']
+        examples:
+            - 'my.pronouns.page/are/they/them'
+            - 'my.pronouns.page/are/xe&she'
+            - 'our.pronouns.page/are/they/them'
 
 pronunciation:
     enabled: true

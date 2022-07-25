@@ -82,6 +82,8 @@ pronouns:
     othersRaw: 'other'
     or: 'or'
     grammarTable: 'Table'
+    sentence: >
+        You can modify the default links so that the URL reads like a sentence; for example:
 
 sources:
     header: 'Sources'
@@ -190,6 +192,35 @@ terminology:
     category: 'Category'
     images: 'Additional images, from outside the flag catalogue'
     definition: 'Definition'
+    categories:
+        sexual_orientation:
+            name: 'Sexual orientation'
+            description: 'To whom (if anyone) is a person attracted sexually'
+        romantic_orientation:
+            name: 'Romantic orientation'
+            description: 'To whom (if anyone) is a person attracted romantically'
+        #tertiary_orientation:
+        attraction:
+            name: 'Attraction'
+            description: 'To whom (if anyone) is a person attracted in other ways'
+        gender:
+            name: 'Gender'
+            description: 'Who a person is'
+        gender_expression:
+            name: 'Gender expression'
+            description: 'The way in which one''s gender is shown to others'
+        relationship_model:
+            name: 'Relationship model'
+            description: 'How do a person''s relationships look like'
+        language:
+            name: 'Language'
+            description: 'Other language related to queerness'
+        politics:
+            name: 'Politics'
+            description: 'Terms related to the fight for queer liberation'
+        prejudice:
+            name: 'Prejudice'
+            description: 'Terms related to hate and discrimination towards queer people'
 
 faq:
     header: 'FAQ'
