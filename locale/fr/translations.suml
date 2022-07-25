@@ -1,5 +1,5 @@
-title: 'Pronouns.page'
-domain: 'fr.pronouns.page'
+title: 'pronoms.fr'
+domain: 'pronoms.fr'
 description: 'Exemples d’usage de pronoms personnels et de langage neutre.'
 
 home:
@@ -487,7 +487,7 @@ profile:
     pronouns: 'Pronoms'
     pronounsInfo: >
         Vous pouvez entrer un <strong>pronom</strong> (ex. « ael » or « il/lui »)
-        ou un <strong>lien</strong> (ex. « http://fr.pronouns.page/elle »).
+        ou un <strong>lien</strong> (ex. « https://pronoms.fr/elle »).
         Vous pouvez également utiliser {/pronoms#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
     pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
