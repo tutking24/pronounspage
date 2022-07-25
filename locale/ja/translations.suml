@@ -407,7 +407,7 @@ support:
     header: 'サポート'
     description: >
         サーバー費用・ドメイン費用・ステッカー費用、作者のビール代などの寄付をご希望の方は、以下のリンクをクリックしてくださいね：
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: '銀行振込'
 
 user:
     header: 'アカウント'
@@ -427,13 +427,12 @@ user:
             ご登録いただいた方は、カードの設定を行うことができます。({/@example=カードの例}).
         passwordless: 'このウェブサイトはパスワードを保存しません。 {https://avris.it/blog/passwords-are-passé=詳細はこちら。}'
         instancePlaceholder: 'サーバー'
-        # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: 'ドメイン'
+        deprecated: '非推奨'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            この認証の方法は頼もしくないです。
+            <a href="%link%" target="_blank" rel="noopener">クリクして情報を表示します</a>.
+            他の方法でログインすることをおすすめします。
     code:
         action: '確認'
         invalid: '無効なコード'
@@ -581,8 +580,8 @@ confirm:
     yes: 'はい、大丈夫'
     no: 'いや、キャンセル'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: '保存'
+    dismiss: '閉じる'
 
 terms:
     header: '利用規約'
