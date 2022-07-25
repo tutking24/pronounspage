@@ -3,7 +3,7 @@ module.exports = [
     ['es', 'Español',             'https://pronombr.es',      true],
     ['eo', 'Esperanto',           'https://eo.pronouns.page', false],
     ['en', 'English',             'https://en.pronouns.page', true],
-    ['fr', 'Français',            'https://fr.pronouns.page', true],
+    ['fr', 'Français',            'https://pronoms.fr',       true],
     ['gl', 'Galego',              'https://gl.pronouns.page', false],
     ['it', 'Italiano',            'https://it.pronouns.page', false],
     ['lad', 'Ladino (Djudezmo)',  'https://lad.pronouns.page', true],
