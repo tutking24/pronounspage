@@ -24,7 +24,7 @@ pronouns:
         subdomains: ['mes', 'nos']
         prefixes: ['/sont']
         examples:
-            - 'mes.pronoms.fr/sont/iel/ela'
+            - 'mes.pronoms.fr/sont/iel/lea'
             - 'mes.pronoms.fr/sont/on&elle'
             - 'nos.pronoms.fr/sont/yelle/lea'
 
