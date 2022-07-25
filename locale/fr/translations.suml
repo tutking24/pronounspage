@@ -79,6 +79,10 @@ pronouns:
     othersRaw: 'autre'
     or: 'ou'
     grammarTable: 'Tableau'
+    sentence: >
+        Vous pouvez modifier le lien par défaut pour que l'URL se lise comme une phrase, par exemple:
+    domainThanks: >
+        Un grand merci à {https://social.eutychia.org/@k=@k@social.eutychia.org} pour le domaine !
 
 sources:
     header: 'Sources'

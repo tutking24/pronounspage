@@ -3,7 +3,7 @@
         <section>
             <Suggested/>
 
-            <div v-if="config.pronouns.sentence" class="alert alert-info small">
+            <div v-if="config.pronouns.sentence" class="alert alert-info small mt-3">
                 <Icon v="lightbulb-on"/>
                 <T>pronouns.sentence</T>
                 <ul class="mb-0">
@@ -11,6 +11,7 @@
                         <a :href="`https://${example}`" target="_blank" rel="noopener">{{ example }}</a>
                     </li>
                 </ul>
+                <T v-if="$t('pronouns.domainThanks')">pronouns.domainThanks</T>
             </div>
 
             <ul class="list-group mt-4">
