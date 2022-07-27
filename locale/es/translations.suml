@@ -81,9 +81,8 @@ pronouns:
     othersRaw: 'Otras'
     or: 'o'
     grammarTable: 'Tabla'
-    # TODO
     sentence: >
-        You can modify the default links so that the URL reads like a sentence; for example:
+        Puedes modificar los links predeterminados para que la URL se lea como esta frase; por ejemplo:
 
 sources:
     header: 'Fuentes'
@@ -490,7 +489,7 @@ support:
     description: >
         Si quieres donar para el servidor, los dominios, stickers etc., o simplemente comprarle una cerveza a les autorxs,
         puedes usar los siguientes enlaces:
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: 'Transferencia Bancaria'
 
 user:
     header: 'Cuenta'
@@ -666,8 +665,8 @@ confirm:
     yes: 'Sí, lo estoy'
     no: 'No, cancelar'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: 'Guardar'
+    dismiss: 'Descartar'
 
 terms:
     header: 'Términos de Servicio'
@@ -1102,8 +1101,8 @@ calendar:
         trans_flag_day: 'Dia de la Bandera Trans'
         alan_turing_day: 'Día de Alan Turing'
         nonbinary_kids_day: 'Día de les Niñes y Adolescentes No Binaries'
-        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
+        masc_lesbian_week: 'Semana de Visibilidad y Concienca Lésbica Masculina'
+        masc_lesbian_day: 'Dia de Visibilidad y Concienca Lésbica Masculina'
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
