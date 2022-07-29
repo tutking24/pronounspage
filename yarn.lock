@@ -2049,10 +2049,10 @@ autoprefixer@^9.6.1:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-avris-columnist@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/avris-columnist/-/avris-columnist-0.3.0.tgz#0ed9520d098c2501a205b716c4c8bf6a184f3f42"
-  integrity sha512-WwWsBugNVDUHAKvJ8xm4yA2ETu0/bkHBUTMwL7U762aGa9SaZF6r8nmpnF3uqg5NLOEbYJSnFZh6CTvgp+NtHA==
+avris-columnist@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/avris-columnist/-/avris-columnist-0.3.1.tgz#03e635c7c6da07e8282059d94ec22b9b1d46c6de"
+  integrity sha512-kjYISoDmWlzV90uWOKDPxWqjwJsBySgakeGNKcIEIpha5CqJEFa7Y9SIcdMBRPkUZrfDxPjWjsjpG7gKg0O6Qg==
 
 avris-daemonise@^0.0.2:
   version "0.0.2"
