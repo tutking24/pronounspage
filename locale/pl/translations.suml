@@ -1145,6 +1145,10 @@ contact:
     hate: >
         Chcesz wysłać nam hejty? Daruj sobie, nie dyskutujemy z trollami.
         Wrzucenie wiadomości do spamu zajmie nam mniej czasu niż tobie naskrobanie jej.
+    language: >
+        Jesteśmy międzynarodowym zespołem – osoby, które stworzyły daną wersję językową,
+        niekoniecznie będą tymi samymi osobami, które zobaczą Twoją wiadomość.
+        W miarę możliwości prosimy o kontakt w języku polskim lub angielskim.
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
         nameShort: 'Kolektyw'

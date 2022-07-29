@@ -33,6 +33,11 @@
 
             <p>
                 <Icon v="language"/>
+                <T>contact.language</T>
+            </p>
+
+            <p>
+                <Icon v="language"/>
                 <T>localise.long</T>
                 <LocaleLink locale="en" link="/new-version">
                     <T>localise.longLink</T>
