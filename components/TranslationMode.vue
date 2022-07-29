@@ -1,17 +1,22 @@
 <template>
-    <div v-if="$isGranted()" class="scroll-btn d-print-none d-flex align-items-center">
+    <div v-if="$isGranted('translations')" class="scroll-btn d-print-none d-flex align-items-center">
         <template v-if="translationMode">
-            <div class="bg-info rounded m-1 px-3 py-1 d-flex justify-content-center align-items-center">
+            <button class="btn btn-info btn-sm m-1 px-3 py-1 d-flex justify-content-center align-items-center" @click="showChanges">
                 <small>Changes: {{ changesCount }}</small>
-            </div>
+            </button>
             <div v-if="changesCount" @click.prevent="commitChanges">
                 <SquareButton link="#" colour="success" aria-label="Commit changes">
                     <Icon v="check-circle"/>
                 </SquareButton>
             </div>
-            <div @click.prevent="revertChanges">
+            <div v-if="changesCount" @click.prevent="revertChanges">
                 <SquareButton link="#" colour="danger" aria-label="Revert changes">
                     <Icon v="times-circle"/>
+                </SquareButton>
+            </div>
+            <div @click.prevent="pause">
+                <SquareButton link="#" colour="info" aria-label="Pause translation mode">
+                    <Icon v="pause-circle"/>
                 </SquareButton>
             </div>
         </template>
@@ -25,6 +30,7 @@
 
 <script>
     import {mapState} from "vuex";
+    import Suml from 'suml';
 
     export default {
         data() {
@@ -37,13 +43,34 @@
             },
             async commitChanges() {
                 await this.$confirm(`Do you want to commit ${this.changesCount} changes?`, 'success');
+                const response = await this.$post(`/translations/propose`, {
+                    changes: this.translationChanges,
+                });
                 this.$store.commit('translationCommit');
+                this.$cookies.remove('translations');
+
+                setTimeout(
+                    () => this.$alert({header: 'Your translation proposals were saved', message: 'Thank you for contributing!'}, 'success'),
+                    500,
+                )
             },
             async revertChanges() {
                 if (this.changesCount) {
                     await this.$confirm(`Do you want to revert ${this.changesCount} changes?`, 'danger');
                 }
                 this.$store.commit('translationAbort');
+                this.$cookies.remove('translations');
+            },
+            async showChanges() {
+                await this.$alert({
+                    header: 'Changes overview',
+                    message: '<pre>' + new Suml().dump(this.translationChanges) + '</pre>',
+                    margin: false,
+                    size: 'lg',
+                }, 'info');
+            },
+            async pause() {
+                this.$store.commit('translationPause');
             },
         },
         computed: {

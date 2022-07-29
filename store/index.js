@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import t from '../src/translator';
+import translator from '../src/translator';
 import {buildDict} from "../src/helpers";
 
 export const state = () => ({
@@ -57,17 +57,20 @@ export const mutations = {
     },
     translationInit(state) {
         state.translationMode = true;
-        state.translationChanges = {};
     },
     translationCommit(state) {
-        alert('not implemented!')
+        state.translationMode = false;
+        state.translationChanges = {};
     },
     translationAbort(state) {
         state.translationMode = false;
         state.translationChanges = {};
     },
+    translationPause(state) {
+        state.translationMode = false;
+    },
     translate(state, {key, newValue}) {
-        if (newValue !== t(key)) {
+        if (newValue !== translator.get(key)) {
             const translationChanges = {...state.translationChanges};
             translationChanges[key] = newValue;
             state.translationChanges = translationChanges;
@@ -80,6 +83,15 @@ export const mutations = {
                     }
                 }
             }, state.translationChanges);
+        }
+    },
+    restoreTranslations(state, translations) {
+        if (translations) {
+            state.translationMode = true;
+            state.translationChanges = translations;
+        } else {
+            state.translationMode = false;
+            state.translationChanges = {};
         }
     },
 }
