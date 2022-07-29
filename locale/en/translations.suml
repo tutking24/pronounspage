@@ -436,6 +436,15 @@ faq:
                     then that link will be marked with a shield icon ([shield-check]).
                     It will also include a <code>rel="me"</code> tag, so that services like Mastodon can verify it the other way round too.
                     This feature only works with Mastodon and Twitter so far.
+        mutiple-cards:
+            question: 'Can I have multiple cards under one account?'
+            answer:
+                - >
+                    That must me the most requested feature so far! 😅
+                    We're definitely onboard with the idea, it would help for example systems
+                    or people who want to have a separate cards for more public use and for close friends.
+                    Unfortunately, this feature requires <em>tons</em> of changes in the code as well as testing.
+                    We'll try to prioritise it, but being swamped with other work, we can't really promise any specific date.
         business:
             question: 'Are you a business?'
             answer:
