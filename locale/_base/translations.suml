@@ -432,6 +432,10 @@ contact:
         Wanna send us queerphobic hate mail?
         Just give it up, we're not discussing with trolls.
         It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+    language: >
+        We're an international team – people who created a specific language version
+        might not be the same people who will read your message.
+        So, if possible, we'd appreciate, if you contacted us in English.
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'

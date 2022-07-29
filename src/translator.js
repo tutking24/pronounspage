@@ -14,13 +14,16 @@ class Translator {
         );
     }
 
-    get(key, warn = true, base = false) {
+    get(key, warn = true, base = false, useFallback = true) {
         let value = base ? this.baseTranslations : this.translations;
         for (let part of key.split('.')) {
             value = value[part];
             if (value === undefined) {
                 if (warn) {
                     console.error('Cannot find translation: ' + key);
+                }
+                if (!base && useFallback) {
+                    return this.get(key, warn, true);
                 }
                 return undefined;
             }
@@ -29,7 +32,7 @@ class Translator {
     }
 
     has(key) {
-        return this.get(key, false) !== undefined;
+        return this.get(key, false, false, false) !== undefined;
     }
 
     applyParams (value, params = {}) {
