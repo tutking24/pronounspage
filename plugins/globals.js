@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import t from '../src/translator';
+import translator from '../src/translator';
 import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
 import {DateTime} from "luxon";
@@ -10,11 +10,11 @@ export default ({ app, store }) => {
 
     Vue.prototype.$base = process.env.BASE_URL;
 
-    Vue.prototype.$t = t;
-    Vue.prototype.$te = key => t(key, {}, false) !== undefined;
+    Vue.prototype.$t = (key, params = {}, warn = true) => translator.translate(key, params, warn);
+    Vue.prototype.$te = (key) => translator.has(key);
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
         pronoun.format(
-            t(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str
+            translator.translate(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str
         );
 
     Vue.prototype.config = config;
@@ -31,6 +31,7 @@ export default ({ app, store }) => {
     });
 
     store.commit('setSpelling', app.$cookies.get('spelling'));
+    store.commit('restoreTranslations', app.$cookies.get('translations'))
 
     Vue.prototype.buildImageUrl = (imageId, size) => `${process.env.CLOUDFRONT}/images/${imageId}-${size}.png`
 

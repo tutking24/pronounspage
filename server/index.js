@@ -93,14 +93,11 @@ app.use(require('./routes/grantOverrides').default);
 router.use(grant.express()(require('./social').config));
 
 app.use(require('./routes/home').default);
-
 app.use(require('./routes/banner').default);
-
 app.use(require('./routes/user').default);
 app.use(require('./routes/profile').default);
 app.use(require('./routes/admin').default);
 app.use(require('./routes/mfa').default);
-
 app.use(require('./routes/pronouns').default);
 app.use(require('./routes/sources').default);
 app.use(require('./routes/nouns').default);
@@ -109,10 +106,10 @@ app.use(require('./routes/terms').default);
 app.use(require('./routes/pronounce').default);
 app.use(require('./routes/census').default);
 app.use(require('./routes/names').default);
-
 app.use(require('./routes/images').default);
 app.use(require('./routes/blog').default);
 app.use(require('./routes/calendar').default);
+app.use(require('./routes/translations').default);
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);

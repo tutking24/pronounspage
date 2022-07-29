@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import t from '../src/translator';
+    import translator from '../src/translator';
     import {mapState} from "vuex";
 
     export default {
@@ -23,12 +23,12 @@
                 'translationChanges',
             ]),
             modified() {
-                return this.translationChanges.hasOwnProperty(this.key);
+                return this.translationMode && this.translationChanges.hasOwnProperty(this.key);
             },
             txt() {
                 return this.modified
-                    ? t(this.translationChanges[this.key], this.params || {}, !this.silent, false)
-                    : t(this.key, this.params || {}, !this.silent);
+                    ? translator.applyParams(this.translationChanges[this.key], this.params || {})
+                    : translator.translate(this.key, this.params || {}, !this.silent);
             }
         },
         methods: {
@@ -38,14 +38,30 @@
                 e.preventDefault();
                 e.stopPropagation();
 
+                const base = translator.get(this.key, false, true);
+
                 const newValue = await this.$editor(
-                    this.modified ? this.translationChanges[this.key] : t(this.key),
-                    { icon: 'language', header: this.key },
+                    this.modified
+                        ? this.translationChanges[this.key]
+                        : translator.get(this.key),
+                    {
+                        icon: 'language',
+                        header: this.key,
+                        message: base
+                            ? ('<div class="small alert alert-info">'
+                                + (Array.isArray(base)
+                                    ? `<ul>${base.map(el => '<li>' + el + '</el>')}</ul>`
+                                    : base)
+                                + '</div>')
+                            : undefined,
+                        margin: false,
+                    },
                     'info'
                 );
 
                 if (newValue !== undefined) {
                     this.$store.commit('translate', {key: this.key, newValue});
+                    this.$cookies.set('translations', this.$store.state.translationChanges);
                 }
             },
         },

@@ -1,8 +1,21 @@
 import translations from '../data/translations.suml';
+import baseTranslations from '../locale/_base/translations.suml';
 
-export default (key, params = {}, warn = true, translate = true) => {
-    let value = translations;
-    if (translate) {
+class Translator {
+    constructor(translations, baseTranslations) {
+        this.translations = translations;
+        this.baseTranslations = baseTranslations;
+    }
+
+    translate(key, params = {}, warn = true) {
+        return this.applyParams(
+            this.get(key, warn),
+            params,
+        );
+    }
+
+    get(key, warn = true, base = false) {
+        let value = base ? this.baseTranslations : this.translations;
         for (let part of key.split('.')) {
             value = value[part];
             if (value === undefined) {
@@ -12,17 +25,23 @@ export default (key, params = {}, warn = true, translate = true) => {
                 return undefined;
             }
         }
-    } else {
-        value = key;
+        return value;
     }
 
-    for (let k in params) {
-        if (params.hasOwnProperty(k)) {
-            value = Array.isArray(value)
-                ? value.map(v => v.replace(new RegExp('%' + k + '%', 'g'), params[k]))
-                : value.replace(new RegExp('%' + k + '%', 'g'), params[k]);
+    has(key) {
+        return this.get(key, false) !== undefined;
+    }
+
+    applyParams (value, params = {}) {
+        for (let k in params) {
+            if (params.hasOwnProperty(k)) {
+                value = Array.isArray(value)
+                    ? value.map(v => v.replace(new RegExp('%' + k + '%', 'g'), params[k]))
+                    : value.replace(new RegExp('%' + k + '%', 'g'), params[k]);
+            }
         }
+        return value;
     }
-
-    return value;
 }
+
+export default new Translator(translations, baseTranslations);

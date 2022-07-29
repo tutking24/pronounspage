@@ -1,4 +1,4 @@
-import t from './translator';
+import translator from './translator';
 
 export const contact = {
     all: {
@@ -75,8 +75,8 @@ const supportLinks = {
         bank: {
             icon: 'money-check-alt',
             url: 'https://bunq.me/PronounsPage',
-            headline: t('support.bankAccount'),
-            // tooltip: t('support.bankAccountOwner'),
+            headline: translator.translate('support.bankAccount'),
+            // tooltip: translator.translate('support.bankAccountOwner'),
         },
         kofi: {
             icon: 'coffee',

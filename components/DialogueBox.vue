@@ -9,11 +9,11 @@
                     </p>
                 </div>
                 <div class="modal-body" v-if="message">
-                    <p class="py-5 text-center" v-html="message"></p>
+                    <p :class="[margin ? 'py-5 text-center' : '']" v-html="message"></p>
                 </div>
                 <div class="modal-body" v-if="value !== undefined">
                     <ListInput v-if="Array.isArray(value)" v-model="value" v-slot="s">
-                        <textarea v-model="s.val" class="form-control" rows="5"></textarea>
+                        <textarea v-model="s.val" class="form-control" rows="5" @keyup="s.update(s.val)" @update="s.update(s.val)"></textarea>
                     </ListInput>
                     <textarea v-else v-model="value" class="form-control" rows="5"></textarea>
                 </div>
@@ -53,6 +53,7 @@
                 icon: undefined,
                 header: undefined,
                 message: undefined,
+                margin: true,
                 color: null,
                 value: undefined,
                 size: undefined,
@@ -88,7 +89,8 @@
                 this.icon = message.icon || (choice ? 'map-marker-question' : null);
                 this.header = message.header;
                 this.message = message.message || (choice ? this.$t('confirm.header') : null);
-                this.size = size;
+                this.margin = message.margin ?? true;
+                this.size = message.size ?? size;
                 this.color = color;
                 this.value = value;
                 this.shown = true;
@@ -118,6 +120,7 @@
                     this.icon = undefined;
                     this.header = undefined;
                     this.message = undefined;
+                    this.margin = true;
                     this.color = null;
                     this.value = undefined;
                     this.size = undefined;
