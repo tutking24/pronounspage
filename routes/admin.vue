@@ -156,60 +156,64 @@
             </div>
         </section>
 
-        <section v-if="$isGranted('translations') && translationProposals.length">
-             <h3>
-                <Icon v="language"/>
-                Translation proposals ({{translationProposals.length}})
-            </h3>
+        <template v-if="$isGranted('translations')">
+            <Loading :value="translationProposals"/>
+                <section v-if="translationProposals && translationProposals.length">
+                     <h3>
+                        <Icon v="language"/>
+                        Translation proposals ({{translationProposals.length}})
+                    </h3>
 
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>key</th>
-                        <th>base</th>
-                        <th>translation</th>
-                        <th>author</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr v-for="tp in translationProposals">
-                        <td>{{tp.tKey}}</td>
-                        <td>{{translator.get(tp.tKey, false, true)}}</td>
-                        <td v-if="Array.isArray(tp.tValue)">
-                            <ul>
-                                <li v-for="el in tp.tValue">{{el}}</li>
-                            </ul>
-                        </td>
-                        <td v-else>
-                            {{tp.tValue}}
-                        </td>
-                        <td>
-                            <nuxt-link :to="`/@${tp.author}`">@{{tp.author}}</nuxt-link>
-                            <br/>
-                            <button class="btn btn-sm btn-danger" @click="rejectTranslationProposal(tp.id)">Reject</button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>key</th>
+                                <th>base</th>
+                                <th>translation</th>
+                                <th>author</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="tp in translationProposals">
+                                <td>{{tp.tKey}}</td>
+                                <td>{{translator.get(tp.tKey, false, true)}}</td>
+                                <td v-if="Array.isArray(tp.tValue)">
+                                    <ul>
+                                        <li v-for="el in tp.tValue">{{el}}</li>
+                                    </ul>
+                                </td>
+                                <td v-else>
+                                    {{tp.tValue}}
+                                </td>
+                                <td>
+                                    <nuxt-link :to="`/@${tp.author}`">@{{tp.author}}</nuxt-link>
+                                    <br/>
+                                    <button class="btn btn-sm btn-danger" @click="rejectTranslationProposal(tp.id)">Reject</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-            <details class="border mb-3">
-                <summary class="bg-light p-3">
-                    <span class="badge bg-success">Approve</span>
-                </summary>
-                <div class="p-2">
-                    <p>
-                        We still need to manually move the translations to the relevant SUML file,
-                        but at least it should be easy to copy paste bits from here:
-                    </p>
-                    <hr/>
-                    <pre>{{translationsProposalsSuml}}</pre>
-                    <hr/>
-                    <button class="btn btn-success" @click="markTranslationProposalsDone">Copied, mark as done</button>
-                </div>
-            </details>
-        </section>
+                    <details class="border mb-3">
+                        <summary class="bg-light p-3">
+                            <span class="badge bg-success">Approve</span>
+                        </summary>
+                        <div class="p-2">
+                            <p>
+                                We still need to manually move the translations to the relevant SUML file,
+                                but at least it should be easy to copy paste bits from here:
+                            </p>
+                            <hr/>
+                            <pre>{{translationsProposalsSuml}}</pre>
+                            <hr/>
+                            <button class="btn btn-success" @click="markTranslationProposalsDone">Copied, mark as done</button>
+                        </div>
+                    </details>
+                </section>
+            </Loading>
+        </template>
 
         <section v-if="$isGranted('users')">
             <h3>
@@ -219,7 +223,9 @@
             </h3>
             <ModerationRules type="rulesUsers" emphasise/>
             <ModerationRules type="susRegexes" label="Keywords for automated triggers"/>
-            <AbuseReports :abuseReports="abuseReports" allowResolving/>
+            <Loading :value="abuseReports">
+                <AbuseReports :abuseReports="abuseReports" allowResolving/>
+            </Loading>
         </section>
 
         <section v-for="(locale, k) in stats.locales" :key="k">
@@ -291,6 +297,8 @@ import {deepSet, head} from "../src/helpers";
                 adminNotifications: this.$user().adminNotifications ?? 7,
                 translator,
                 missingTranslations: translator.listMissingTranslations(),
+                abuseReports: undefined,
+                translationProposals: undefined,
             }
         },
         async asyncData({ app, store }) {
@@ -299,21 +307,18 @@ import {deepSet, head} from "../src/helpers";
                 stats = await app.$axios.$get(`/admin/stats`);
             } catch {}
 
-            let abuseReports = [];
-            try {
-                abuseReports = await app.$axios.$get(`/admin/reports`);
-            } catch {}
-
-            let translationProposals = [];
-            try {
-                translationProposals = await app.$axios.$get(`/translations/proposals`);
-            } catch {}
-
             return {
                 stats,
-                abuseReports,
-                translationProposals
             };
+        },
+        async mounted() {
+            this.$axios.$get(`/admin/reports`)
+                .then(r => this.abuseReports = r)
+                .catch();
+
+            this.$axios.$get(`/translations/proposals`)
+                .then(r => this.translationProposals = r)
+                .catch();
         },
         methods: {
             async impersonate(email) {
@@ -343,11 +348,11 @@ import {deepSet, head} from "../src/helpers";
                 return r;
             },
             abuseReportsActiveCount() {
-                return this.abuseReports.filter(r => !r.isHandled).length;
+                return this.abuseReports ? this.abuseReports.filter(r => !r.isHandled).length : '–';
             },
             translationsProposalsSuml() {
                 const data = {};
-                for (let tp of this.translationProposals) {
+                for (let tp of this.translationProposals || []) {
                     deepSet(data, tp.tKey, tp.tValue);
                 }
                 return new Suml().dump(data);
