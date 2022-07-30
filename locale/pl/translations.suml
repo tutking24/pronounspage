@@ -1148,7 +1148,7 @@ contact:
     language: >
         Jesteśmy międzynarodowym zespołem – osoby, które stworzyły daną wersję językową,
         niekoniecznie będą tymi samymi osobami, które zobaczą Twoją wiadomość.
-        W miarę możliwości prosimy o kontakt w języku polskim lub angielskim.
+        W miarę możliwości prosimy o kontakt w języku <strong>polskim lub angielskim.</strong>
     team:
         name: 'Kolektyw „Rada Języka Neutralnego”'
         nameShort: 'Kolektyw'

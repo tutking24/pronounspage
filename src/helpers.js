@@ -272,3 +272,15 @@ export const obfuscateEmail = (email) => {
 
     return `${usernamePublic}*****@*****.${tld}`;
 }
+
+// https://newbedev.com/dynamic-deep-setting-for-a-javascript-object
+export const deepSet = (obj, path, value) => {
+    let a = path.split('.')
+    let o = obj;
+    while (a.length - 1) {
+        let n = a.shift()
+        if (!(n in o)) o[n] = {}
+        o = o[n]
+    }
+    o[a[0]] = value
+}

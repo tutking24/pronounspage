@@ -1,10 +1,12 @@
 import translations from '../data/translations.suml';
 import baseTranslations from '../locale/_base/translations.suml';
+import expectedTranslations from '../locale/expectedTranslations';
 
 class Translator {
-    constructor(translations, baseTranslations) {
+    constructor(translations, baseTranslations, expectedTranslations) {
         this.translations = translations;
         this.baseTranslations = baseTranslations;
+        this.expectedTranslations = expectedTranslations;
     }
 
     translate(key, params = {}, warn = true) {
@@ -45,6 +47,10 @@ class Translator {
         }
         return value;
     }
+
+    listMissingTranslations() {
+        return this.expectedTranslations.filter(k => !this.has(k));
+    }
 }
 
-export default new Translator(translations, baseTranslations);
+export default new Translator(translations, baseTranslations, expectedTranslations);

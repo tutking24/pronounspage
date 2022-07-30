@@ -119,7 +119,6 @@ sources:
         key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
         images: 'Images'
-        spoiler: 'Spoiler' # TODO
     otherVersions: 'In other languages'
     referenced: 'Examples of use'
 
@@ -479,7 +478,6 @@ support:
     description: >
         If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
         you can use the links below:
-    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Account'

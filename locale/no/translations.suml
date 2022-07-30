@@ -381,7 +381,6 @@ support:
     description: >
         Hvis du har lyst til å bidra til serveren, domener, klistremerker osv., eller bare kjøpe forfatterne en kaffe,
         kan du bruke linkene nedenfor:
-    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Bruker'
@@ -402,12 +401,6 @@ user:
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Forekomst'
         domainPlaceholder: 'Domene'
-        # TODO
-        deprecated: 'Deprecated'
-        depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
     code:
         action: 'Gyldig'
         invalid: 'Ugyldig kode.'
@@ -470,7 +463,6 @@ profile:
     flagsInfo: 'Dra og dropp pride flaggene dine inn i denne rammen.'
     flagsCustom: 'Last opp tilpasset flagg'
     flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Lenker'
     linksRecommended: 'Vi anbefaler å lenke til'
     # TODO
@@ -561,8 +553,6 @@ confirm:
     yes: 'Ja, jeg er sikker'
     no: 'Nei, kanseller'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Vilkår og betingelser'

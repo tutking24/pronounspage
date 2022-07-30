@@ -4,7 +4,7 @@
             <Header/>
             <main class="container">
                 <Nuxt/>
-                <!--<TranslationMode/>-->
+                <TranslationMode/>
                 <ScrollButton/>
             </main>
         </div>
