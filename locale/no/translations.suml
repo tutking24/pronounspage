@@ -328,6 +328,31 @@ faq:
                     Ikke binære personer kan bruke binære pronomen, noen lesbiske bruker {/han=han/hans} av kulturelle grunner, osv.
                 - >
                     Rettere sagt, bare si “pronomen”.
+        flags:
+            question: 'Kan du legge til dette flagget? Kan du ta bort det flagget?'
+            answer:
+                - 'Nei.'
+                - >
+                    Å vedlikeholde listen av flagg og identiteter er noe som tar mer og mer tid for teamet vårt. Det er
+                    også vanskelig når det kommer til å filtrere ut de som vandaliserer og de som ikke gjør det. Vi vil
+                    ikke være identitets politiet. Og vi vil ikke bruke masse tid på å vedlikeholde flagg heller. Det er
+                    et prosjekt om språk og pronomen, tross alt, ikke om flagg. De er bare en bonus.
+                - >
+                    Vi gjorde vårt beste med å lage en liste med de mest populære flaggene som, i vår beste kunnskap er
+                    generelt akseptert. Vi har ingen planer om å forlenge eller krympe den listen.
+                - >
+                    Vi vet at noen flagg ikke er likt av noen (f.eks på grunn av et rulleblad av TERFs som prøver å ta
+                    over et ord for å så bruke det på en transfobisk måte, på grunn av mange forvirrende definisjoner,
+                    eller til og med på grunn av aspekter av en karakter sitt liv). Vi er et skeivt kollektiv, vi bryr
+                    oss om våre skeive søskenbarn. Likevel, er det veldig vanskelig å ta avgjørelser når vi får meldinger
+                    fra både transpersoner som spør oss om å legge til ett flagg de genuint identifiserer seg med, men
+                    også fra andre transpersoner som sier vi skal ta det vekk fordi det på en eller annen måte er
+                    negativt for andre transpersoner. Det er ikke som om historien for alle identiteter er helt klar
+                    eller som om man alltid kan søke det opp og få et sikkert svar. Selv om folk som er imot oss prøver å
+                    fylle ord med hat, tror vi på lhbt+ samfunnets evne til å ta tilbake hatefulle ord.
+                - >
+                    Hvis du ikke liker et flagg, ikke bruk det. Hvis flagget ditt mangler, bare last det opp. (det blir
+                    merket som bruker-generert for å minske vandalisme).
 
 links:
     header: 'Linker'
@@ -374,6 +399,7 @@ support:
     description: >
         Hvis du har lyst til å bidra til serveren, domener, klistremerker osv., eller bare kjøpe forfatterne en kaffe,
         kan du bruke linkene nedenfor:
+    bankAccount: 'Bankoverføring'
 
 user:
     header: 'Bruker'
@@ -394,6 +420,12 @@ user:
         passwordless: 'Denne nettsiden lagrer ingen passord. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Forekomst'
         domainPlaceholder: 'Domene'
+        deprecated: 'Avviklet '
+        depreciationNotice: >
+            available.	Dette er ikke en pålitelig autentiserings måte.
+            <a href="%link%" target="_blank" rel="noopener">Sjekk ut denne linken for flere detaljer</a>.
+            Vi vil sterkt anbefale at du har en annen form
+            for å logge inn tilgjengelig.
     code:
         action: 'Gyldig'
         invalid: 'Ugyldig kode.'
@@ -482,7 +514,7 @@ profile:
         header: 'Kort redigerer'
         save: 'Lagre kort'
         defaults: 'Restaurer originale'
-        propagate: 'Viderefør denne endringen til kortene din på alle språk'
+        propagate: 'Viderefør denne endringen til kortene dine på alle språk'
     opinion:
         yes: 'Ja'
         jokingly: 'På tull'
