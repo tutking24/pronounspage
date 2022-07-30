@@ -368,6 +368,9 @@ contact:
         member: 'Medlem av kollektivet'
         upcoming: 'Kommende språkversjoner'
         # TODO join: …
+    language: >
+        Vi er et internasjonalt team – de som har lagd en spesifikk språk versjon er ikke nødvendigvis den samme som får
+        meldingen din. Så, hvis mulig, ville vi satt pris på om du kontaktet oss på <strong>Engelsk eller Polsk</strong>.
 
 support:
     header: 'Hjelp'
@@ -456,6 +459,9 @@ profile:
     flagsInfo: 'Dra og dropp pride flaggene dine inn i denne rammen.'
     flagsCustom: 'Last opp tilpasset flagg'
     flagsCustomWarning: 'Dette flagget har blitt lastet opp av en bruker. Teamet som har laget pronouns.page er ikke ansvarlig for det.'
+    flagsAsterisk: >
+        Dette er ikke en skeiv identitet, men vi inkluderer den for de som er skeive på andre måter. (f.eks de som er
+        trans og hetero).
     links: 'Lenker'
     linksRecommended: 'Vi anbefaler å lenke til'
     # TODO
@@ -546,6 +552,7 @@ confirm:
     yes: 'Ja, jeg er sikker'
     no: 'Nei, kanseller'
     ok: 'OK'
+    save: 'Lagre'
 
 terms:
     header: 'Vilkår og betingelser'
