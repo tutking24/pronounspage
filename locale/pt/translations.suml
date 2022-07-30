@@ -408,7 +408,6 @@ support:
     description: >
         Se você quiser de doar para o servidor, os domínios, stickers etc., ou simplemente comprar uma cerveja para ês autores,
         podem usar as ligações seguintes:
-    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Conta'
@@ -585,8 +584,6 @@ confirm:
     yes: 'Sim'
     no: 'Não, cancelar'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Termos de Serviço'

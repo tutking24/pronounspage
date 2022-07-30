@@ -405,7 +405,6 @@ support:
     description: >
         Als je wilt bijdragen aan de server, domeinen, stickers, andere materialen, of als je simpelweg een biertje voor de auteurs wil kopen,
         kun je de onderstaande links gebruiken:
-    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Account'
@@ -581,8 +580,6 @@ confirm:
     yes: 'Ja, dat weet ik zeker'
     no: 'Nee, annuleer'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Gebruiksvoorwaarden'

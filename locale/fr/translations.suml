@@ -409,7 +409,6 @@ support:
     description: >
         Si vous voulez donnez un coup de main pour le serveur, le domaine, les stickers, etc. ou simplement payer une bière à l'auteur,
         vous pouvez utiliser les liens ci-dessous :
-    bankAccount: 'Bank transfer'  # TODO
 
 user:
     header: 'Compte'
@@ -586,8 +585,6 @@ confirm:
     yes: 'Oui, je suis sûr·e'
     no: 'Non, annuler'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
 
 terms:
     header: 'Conditions d''utilisation'
@@ -1007,10 +1004,6 @@ calendar:
         black_hiv_awareness_day: 'Journée de sensibilisation au VIH/sida des communautés noires'
         hiv_aging_awareness_day: 'Journée de la sensibilisation du VIH/sida et au vieillissement'
         trans_hiv_testing_day: 'Journée de dépistage au VIH des transgenres'
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
         spring_testing_week: 'Semaine Européenne printanière des tests anti-VIH'
         autumn_testing_week: 'Semaine Européenne automnale des tests anti-VIH'
         sex_worker_day: 'Journée internationale des travailleurs du sexe'
@@ -1024,8 +1017,6 @@ calendar:
         trans_flag_day: 'Jour du drapeau trans'
         alan_turing_day: 'Journée Alan Turing'
         nonbinary_kids_day: 'Journée des enfants non-binaires'
-        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'

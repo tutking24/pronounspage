@@ -127,6 +127,90 @@
             Impersonate <button class="btn btn-primary btn-sm" @click="impersonate('example@pronouns.page')">@example</button>
         </section>
 
+        <section v-if="$isGranted('translations') && missingTranslations.length">
+            <h3>
+                <Icon v="language"/>
+                Missing translations ({{missingTranslations.length}})
+            </h3>
+            <p>
+                In order to start translating, enable translation mode with the button in bottom right corner.
+                Then you can propose translations both her as well as in context anywhere on the site.
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>key</th>
+                        <th>base</th>
+                        <th>translation</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="mt in missingTranslations">
+                        <td>{{mt}}</td>
+                        <td>{{translator.get(mt, false, true)}}</td>
+                        <td><T>{{mt}}</T></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section v-if="$isGranted('translations') && translationProposals.length">
+             <h3>
+                <Icon v="language"/>
+                Translation proposals ({{translationProposals.length}})
+            </h3>
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>key</th>
+                        <th>base</th>
+                        <th>translation</th>
+                        <th>author</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="tp in translationProposals">
+                        <td>{{tp.tKey}}</td>
+                        <td>{{translator.get(tp.tKey, false, true)}}</td>
+                        <td v-if="Array.isArray(tp.tValue)">
+                            <ul>
+                                <li v-for="el in tp.tValue">{{el}}</li>
+                            </ul>
+                        </td>
+                        <td v-else>
+                            {{tp.tValue}}
+                        </td>
+                        <td>
+                            <nuxt-link :to="`/@${tp.author}`">@{{tp.author}}</nuxt-link>
+                            <br/>
+                            <button class="btn btn-sm btn-danger" @click="rejectTranslationProposal(tp.id)">Reject</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <details class="border mb-3">
+                <summary class="bg-light p-3">
+                    <span class="badge bg-success">Approve</span>
+                </summary>
+                <div class="p-2">
+                    <p>
+                        We still need to manually move the translations to the relevant SUML file,
+                        but at least it should be easy to copy paste bits from here:
+                    </p>
+                    <hr/>
+                    <pre>{{translationsProposalsSuml}}</pre>
+                    <hr/>
+                    <button class="btn btn-success" @click="markTranslationProposalsDone">Copied, mark as done</button>
+                </div>
+            </details>
+        </section>
+
         <section v-if="$isGranted('users')">
             <h3>
                 <Icon v="siren-on"/>
@@ -189,8 +273,10 @@
 </template>
 
 <script>
-    import {head} from "../src/helpers";
+import {deepSet, head} from "../src/helpers";
     import {socialProviders} from "../src/socialProviders";
+    import translator from '../src/translator';
+    import Suml from 'suml';
 
     export default {
         data() {
@@ -203,6 +289,8 @@
                 adminsFilter: false,
                 usersShown: false,
                 adminNotifications: this.$user().adminNotifications ?? 7,
+                translator,
+                missingTranslations: translator.listMissingTranslations(),
             }
         },
         async asyncData({ app, store }) {
@@ -216,9 +304,15 @@
                 abuseReports = await app.$axios.$get(`/admin/reports`);
             } catch {}
 
+            let translationProposals = [];
+            try {
+                translationProposals = await app.$axios.$get(`/translations/proposals`);
+            } catch {}
+
             return {
                 stats,
                 abuseReports,
+                translationProposals
             };
         },
         methods: {
@@ -228,6 +322,16 @@
                 this.$cookies.set('token', token);
                 await this.$router.push('/' + this.config.user.route);
                 setTimeout(() => window.location.reload(), 500);
+            },
+            async rejectTranslationProposal(id) {
+                await this.$confirm('Do you want to reject this translation proposal?', 'danger');
+                await this.$post(`/translations/reject-proposal`, {id})
+                this.translationProposals = this.translationProposals.filter(tp => tp.id !== id);
+            },
+            async markTranslationProposalsDone() {
+                await this.$confirm('Did you put the translations in the SUML file and want to mark them as done?', 'success');
+                await this.$post(`/translations/proposals-done`)
+                this.translationProposals = [];
             },
         },
         computed: {
@@ -240,6 +344,13 @@
             },
             abuseReportsActiveCount() {
                 return this.abuseReports.filter(r => !r.isHandled).length;
+            },
+            translationsProposalsSuml() {
+                const data = {};
+                for (let tp of this.translationProposals) {
+                    deepSet(data, tp.tKey, tp.tValue);
+                }
+                return new Suml().dump(data);
             },
         },
         watch: {

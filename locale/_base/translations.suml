@@ -120,7 +120,7 @@ sources:
         key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
         images: 'Images'
-        spoiler: 'Spoiler' # TODO
+        spoiler: 'Spoiler'
     otherVersions: 'In other languages'
     referenced: 'Examples of use'
 
@@ -435,7 +435,7 @@ contact:
     language: >
         We're an international team – people who created a specific language version
         might not be the same people who will read your message.
-        So, if possible, we'd appreciate, if you contacted us in English.
+        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
@@ -575,7 +575,7 @@ profile:
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: 'Links'
     linksRecommended: 'We recommend linking to'
     verifiedLinks:

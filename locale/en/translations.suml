@@ -491,7 +491,7 @@ contact:
     language: >
         We're an international team – people who created a specific language version
         might not be the same people who will read your message.
-        So, if possible, we'd appreciate, if you contacted us in English.
+        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
