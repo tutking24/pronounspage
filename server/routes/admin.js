@@ -12,6 +12,7 @@ import buildLocaleList from "../../src/buildLocaleList";
 import {archiveBan, liftBan} from "../ban";
 import marked from 'marked';
 import {loadCurrentUser} from "./user";
+import {encodeTime} from "ulid";
 
 const router = Router();
 
@@ -190,12 +191,15 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
+    const cutoff = encodeTime(Date.now() - 3*31*24*60*60*1000, 10) + '0'.repeat(16);
+
     return res.json(await req.db.all(SQL`
         SELECT reports.id, group_concat(p.locale) as profiles, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
         FROM reports
-        LEFT JOIN users sus ON reports.userId = sus.id
-        LEFT JOIN users reporter ON reports.reporterId = reporter.id
-        LEFT JOIN profiles p on sus.id = p.userId
+            LEFT JOIN users sus ON reports.userId = sus.id
+            LEFT JOIN users reporter ON reports.reporterId = reporter.id
+            LEFT JOIN profiles p on sus.id = p.userId
+        WHERE reports.id > ${cutoff}
         GROUP BY reports.id
         ORDER BY min(reports.isHandled) ASC, reports.id DESC
     `));
