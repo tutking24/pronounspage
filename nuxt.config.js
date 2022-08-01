@@ -214,6 +214,7 @@ export default {
         LOGO: logo,
         MIN_AGE: config.ageLimit || 13,
         JSONS: JSON.stringify(jsons),
+        PLAUSIBLE_API_HOST: process.env.PLAUSIBLE_API_HOST,
     },
     serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
     axios: {

@@ -1,5 +1,6 @@
 const {decodeTime} = require('ulid');
 const mailer = require('./mailer');
+const Plausible = require('plausible-api');
 
 // TODO all the duplication...
 const buildDict = (fn, ...args) => {
@@ -60,11 +61,29 @@ const buildChart = (rows) => {
 
 module.exports.statsFile = process.env.STATS_FILE.replace('%projectdir%', __dirname + '/..')
 
+const plausibleClient = new Plausible(process.env.PLAUSIBLE_API_KEY, process.env.PLAUSIBLE_API_HOST + '/api/v1/stats');
+
+const checkPlausible = async (url) => {
+    let plausible = undefined;
+
+    try {
+        const domain = url.replace(new RegExp('^https?://'), '')
+        plausible = await plausibleClient.aggregate(domain, '30d', ['visitors', 'pageviews', 'visit_duration'])
+        plausible.realTimeVisitors = await plausibleClient.getRealtimeVisitors(domain);
+    } catch {}
+
+    return plausible;
+}
+
 module.exports.calculateStats = async (db, allLocales) => {
     const users = {
         overall: (await db.get(`SELECT count(*) AS c FROM users`)).c,
         admins: (await db.get(`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
         chart: buildChart(await db.all(`SELECT id FROM users ORDER BY id`)),
+    };
+
+    const home = {
+        plausible: await checkPlausible('https://pronouns.page')
     };
 
     const locales = {};
@@ -109,6 +128,7 @@ module.exports.calculateStats = async (db, allLocales) => {
                 awaiting: (await db.get(`SELECT count(*) AS c FROM nouns WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
             },
             chart: buildChart(await db.all(`SELECT id FROM profiles WHERE locale='${locale}' ORDER BY id`)),
+            plausible: await checkPlausible(allLocales[locale].url),
         };
     }
 
@@ -118,5 +138,5 @@ module.exports.calculateStats = async (db, allLocales) => {
         mailer('andrea@avris.it', 'cardsWarning', {count: cardsQueue});
     }
 
-    return { calculatedAt: parseInt(new Date() / 1000), users, locales, cardsQueue };
+    return { calculatedAt: parseInt(new Date() / 1000), users, home, locales, cardsQueue };
 }

@@ -1422,6 +1422,17 @@ footer:
     financial: 'Przejrzystość finansowa'
     technical: 'Techniczne'
     sibling: 'Projekty-rodzeństwo'
+    stats:
+        header: 'Statystyki'
+        overall: 'wszystkie wersje językowe'
+        current: 'tylko ta wersja'
+        keys:
+            users: 'Zarejestrowane konta'
+            cards: 'Wizytówki'
+            visitors: 'Unikalnych odwiedzających'
+            pageviews: 'Wyświetleń strony'
+            realTimeVisitors: 'Obecnie online'
+            visitDuration: 'Średnia długość odwiedzin'
 
 notFound:
     message: 'Strony nie znaleziono'
