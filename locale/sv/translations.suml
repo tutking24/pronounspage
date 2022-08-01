@@ -602,12 +602,12 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Källa} och innehåll är licensierad under {/license=OQL}.
-    links: 'Kontakt, sociala medier'
+        {https://gitlab.com/Avris/Zaimki=Källkod} och innehåll är licensierad under {/license=OQL}.
+    links: 'Kontakt och sociala medier'
     legal: 'Rättslig'
     financial: 'Finansiell insyn'
     technical: 'Teknisk'
-    sibling: 'Syster projekt'
+    sibling: 'Syskonprojekt'
 
 notFound:
     message: 'Sidan hittades inte'
