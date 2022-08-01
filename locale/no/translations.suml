@@ -565,8 +565,8 @@ footer:
     links: 'Kontakt, sosiale medier'
     legal: 'Legal' # TODO
     financial: 'Financial transparency' # TODO
-    technical: 'Technical' # TODO
-    sibling: 'Sibling projects' # TODO
+    technical: 'Teknisk'
+    sibling: 'Søster prosjekter'
 
 notFound:
     message: 'Side var ikke funnet'
