@@ -142,6 +142,46 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
     return res.json(stats);
 }));
 
+router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
+    const statsAll = fs.existsSync(statsFile)
+        ? JSON.parse(fs.readFileSync(statsFile))
+        : await calculateStats(req.db, buildLocaleList(global.config.locale));
+
+    const stats = {
+        calculatedAt: statsAll.calculatedAt,
+        overall: {
+            users: statsAll.users.overall,
+            cards: 0,
+            pageViews: statsAll.home.plausible.pageviews,
+            visitors: statsAll.home.plausible.visitors,
+            online: statsAll.home.plausible.realTimeVisitors,
+        },
+        current: {},
+    }
+
+    for (let [locale, localeStats] of Object.entries(statsAll.locales)) {
+        stats.overall.cards += localeStats.profiles;
+        if (locale === global.config.locale) {
+            stats.current = {
+                cards: localeStats.profiles,
+            }
+        }
+        if (localeStats.plausible) {
+            stats.overall.pageViews += localeStats.plausible.pageviews;
+            stats.overall.visitors += localeStats.plausible.visitors;
+            stats.overall.online += localeStats.plausible.realTimeVisitors;
+            if (locale === global.config.locale) {
+                stats.current.pageViews = localeStats.plausible.pageviews;
+                stats.current.visitors = localeStats.plausible.visitors;
+                stats.current.online = localeStats.plausible.realTimeVisitors;
+                stats.current.visitDuration = localeStats.plausible.visit_duration;
+            }
+        }
+    }
+
+    return res.json(stats);
+}));
+
 const normalise = s => s.trim().toLowerCase();
 
 router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {

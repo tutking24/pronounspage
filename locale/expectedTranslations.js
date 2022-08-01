@@ -16,4 +16,13 @@ export default [
     'profile.verifiedLinks.header',
     'profile.verifiedLinks.info',
     'sources.submit.spoiler',
+    'stats.header',
+    'stats.overall',
+    'stats.current',
+    'stats.keys.users',
+    'stats.keys.cards',
+    'stats.keys.visitors',
+    'stats.keys.pageviews',
+    'stats.keys.realTimeVisitors',
+    'stats.keys.visitDuration',
 ];

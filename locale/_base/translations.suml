@@ -646,6 +646,17 @@ footer:
     financial: 'Financial transparency'
     technical: 'Technical'
     sibling: 'Sibling projects'
+    stats:
+        header: 'Stats'
+        overall: 'all language versions'
+        current: 'only this version'
+        keys:
+            users: 'Registered users'
+            cards: 'Cards'
+            visitors: 'Unique visitors'
+            pageviews: 'Page views'
+            realTimeVisitors: 'Currently online'
+            visitDuration: 'Avg visit duration'
 
 notFound:
     message: 'Page was not found'
