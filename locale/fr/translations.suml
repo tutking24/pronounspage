@@ -1017,6 +1017,8 @@ calendar:
         trans_flag_day: 'Jour du drapeau trans'
         alan_turing_day: 'Journée Alan Turing'
         nonbinary_kids_day: 'Journée des enfants non-binaires'
+        masc_lesbian_week: '{https://twitter.com/MascLesWeek=Masculine Lesbian Visibility and Awareness Week}'
+        masc_lesbian_day: '{https://twitter.com/MascLesWeek=Masculine Lesbian Visibility and Awareness Day}'
     banner: 'Nous célébrons '
     celebrating_custom: 'est célébrée'
     celebrating_day: 'est fêté le'
