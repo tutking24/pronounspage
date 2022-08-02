@@ -17,7 +17,8 @@ Język inkluzywny to takie formułowanie wypowiedzi, by nie wykluczać i nie szk
 zwrotów rasistowskich i ksenofobicznych („~~murzyn~~” ⟶ „osoba czarnoskóra”; „~~ciapaty~~” ⟶ „Indyjczyk”; „~~wycyganić~~” ⟶ „oszukać”),
 klasistowskich („~~ale wiocha”~~ ⟶ „ale wstyd”; „~~żulstwo~~” ⟶ „bezdomość”, „kryzys bezdomności”),
 seksistowskich („~~męska decyzja~~” ⟶ „odważna decyzja”; „~~pizda~~” ⟶ „tchórz”),
-czy stygmatyzujących („~~dokonać aborcji~~” [konotacje: „dokonać zbrodni” itp.] ⟶ „mieć aborcję”, „usunąć ciążę”).
+czy stygmatyzujących („~~dokonać aborcji~~” [konotacje: „dokonać zbrodni” itp.] ⟶ „mieć aborcję”, „przerwać ciążę”;
+„~~hermafrodytyzm~~”, „~~zaburzenia rozwoju płci~~” ⟶ „interpłciowość”, „zróżnicowany rozwój płciowy”).
 Językiem inkluzywnym jest też na przykład mówienie „ochrona zdrowia” zamiast „~~służba zdrowia~~” – ma to na celu przeciwdziałanie
 negatywnym konotacjom, którymi często usprawiedliwia się traktowanie osób pracujących w zawodach medycznych jak „służących”
 marnie wynagradzanych za swoją ciężką pracę. Więcej przykładów zbieramy pod adresem [zaimki.pl/inkluzywny](https://zaimki.pl/inkluzywny).
