@@ -13,7 +13,7 @@ mogą być niejasne – dlatego na prośbę doktora Jacka Bujko spisałom parę 
 natomiast teraz przejdźmy do konkretnych wskazówek.
 
 Absolutną podstawą jest zwracanie się poprawnymi formami i poprawnym imieniem.
-Nie tylko pokazuje to szacunek do czyjejś tożsamości, ale też łagodzi niekongruencję płciową.
+Nie tylko pokazuje to szacunek do czyjejś tożsamości, ale też łagodzi niezgodność płciową.
 Skoro „po pierwsze nie szkodzić”, to nie wywołujmy u pacjentek, pacjentów i [pacjentczy](https://zaimki.pl/neutratywy#pacjent) dysforii –
 nawet jeśli wymaga to odrobinę wysiłku czy używania języka, który może nam brzmieć „dziwnie” czy „nienaturalnie”.
 Wiadomo, że oficjalne dokumenty muszą zawierać dane z dowodu – ale znaczna większość komunikacji nie jest ograniczona przez takie wymogi prawne,
@@ -27,7 +27,9 @@ Warto więc doczytać, jakiego słownictwa woli używać społeczność, której
 „testosteron”, „estrogen” i „progesteron” zamiast „~~męskie/żeńskie hormony~~”; „orientacja” zamiast „~~skłonności~~” czy „~~tendencje~~”; itp.),
 być na bieżąco ze [zmianami dotyczącymi transpłciowości w ICD-11](https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd),
 czy przeczytać [stanowisko Polskiego Towarzystwa Seksuologicznego ws. sytuacji społecznej, zdrowotnej i prawnej osób transpłciowych](https://pts-seksuologia.pl/sites/strona/83/stanowisko-pts-ws-sytuacji-spolecznej-zdrowotnej-i-prawnej-osob-transplciowych).
-Bardzo przydatnym źródłem wiedzy o tranzycji medycznej, społecznej i prawnej jest strona [tranzycja.pl](https://tranzycja.pl),
+Bardzo przydatnym źródłem wiedzy o tranzycji medycznej, społecznej i prawnej jest strona [tranzycja.pl](https://tranzycja.pl)
+oraz [publikacje fundacji Trans-Fuzja](https://transfuzja.org/publikacje) (zwłaszcza „Transprzyjazny Gabinet” oraz „Zdrowie osób transpłciowych i niebinarnych”),
+o interpłciowości edukuje [Fundacja InterAkcja](https://interakcja.org.pl),
 a w kwestiach języka inkluzywnego polecam oczywiście współtworzone przeze mnie [zaimki.pl](https://zaimki.pl).
 
 Pamiętajmy też, że brak dyskryminacji osób niecishetero nie jest wyłącznie dobrą wolą osoby lekarskiej,
@@ -55,6 +57,13 @@ Potrzebna jest tu, oczywiście, zmiana systemowa, nie namawiam do łamania obowi
 ale warto mieć tę obserwację na uwadze w codziennych kontaktach z osobami pacjenckimi
 i zastanawiać się, czy przypadkiem nie siedzą w Was tego typu ukryte uprzedzenia,
 czy nieświadomie nie utwierdzacie w Waszej praktyce lekarskiej takich dyskryminujących asymetrii.
+
+Osoby interpłciowe często są poddawane w bardzo młodym wieku niekonsensualnym i medycznie zbędnym operacjom
+narzucającym im ciało „lepiej pasujące do normy”. Jednak jak pokazują badania i jak tłumaczą osoby aktywistyczne 
+<sup>[[1]](https://www.youtube.com/watch?v=CKEGaSJi3bk), [[2]](http://eprints.hud.ac.uk/id/eprint/33535/),
+[[3]](https://www.hrw.org/report/2017/07/25/i-want-be-nature-made-me/medically-unnecessary-surgeries-intersex-children-us)</sup>,
+takie zabiegi, zamiast pomagać, częściej powodują poczucie wstydu i wyobcowania.
+Osoby interpłciowe potrzebują raczej edukacji i wsparcia psychologicznego, by zrozumieć, że ich ciała wcale nie są „popsute”.
 
 Pamiętajcie też, by nie zakładać, że każda osoba odwiedzająca Wasz gabinet jest cis i hetero.
 Chodzi na przykład o takie rzeczy, jak pytanie mężczyzny „czy ma Pan dziewczynę?” – mimo że może przecież mieć chłopaka,
