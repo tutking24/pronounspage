@@ -37,6 +37,7 @@
         </section>
 
         <section>
+            <Loading :value="namesRaw">
             <ul class="list-group small">
                 <template v-if="visibleNames().length">
                 <li v-for="name in visibleNames()" :class="['list-group-item', name.approved ? '' : 'marked']">
@@ -100,6 +101,7 @@
                     </li>
                 </template>
             </ul>
+            </Loading>
         </section>
 
         <Separator icon="plus"/>
@@ -119,15 +121,12 @@
         mixins: [ hash ],
         data() {
             return {
+                namesRaw: undefined,
                 filter: '',
             }
         },
-        async asyncData({app}) {
-            return {
-                namesRaw: await app.$axios.$get(`/names`),
-            }
-        },
-        mounted() {
+        async mounted() {
+            this.namesRaw = await this.$axios.$get(`/names`);
             this.handleHash('', filter => {
                 this.filter = filter;
                 if (filter) {
