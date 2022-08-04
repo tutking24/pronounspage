@@ -117,7 +117,7 @@ module.exports.Event = class {
         return uuid5(`${process.env.BASE_URL}/calendar/event/${this.name}`, uuid5.URL);
     }
 
-    toIcs(year, translations, clearLinkedText, sequence = 1) {
+    toIcs(year, translations, fallbackTranslations, clearLinkedText, sequence = 1) {
         const days = this.getDays(year);
         if (!days.length) {
             return null;
@@ -128,6 +128,8 @@ module.exports.Event = class {
         let [name, param] = this.name.split('$');
         if (translations.calendar.events[name] !== undefined) {
             name = translations.calendar.events[name];
+        } else if (fallbackTranslations.calendar.events[name] !== undefined) {
+            name = fallbackTranslations.calendar.events[name];
         }
         if (param) {
             name = name.replace(/%param%/g, param);
