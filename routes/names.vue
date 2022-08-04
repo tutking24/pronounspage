@@ -13,6 +13,13 @@
             <NamesLinks/>
         </section>
 
+        <section v-if="$isGranted('names')" class="px-3">
+            <div class="alert alert-info">
+                <strong>{{ namesCountApproved() }}</strong> <T>nouns.approved</T>,
+                <strong>{{ namesCountPending() }}</strong> <T>nouns.pending</T>.
+            </div>
+        </section>
+
         <section class="sticky-top">
             <div class="input-group mb-3 bg-white">
                 <span class="input-group-text">
@@ -181,6 +188,14 @@
                 await this.$post(`/names/remove/${name.id}`);
                 delete this.names[name.id];
                 this.$forceUpdate();
+            },
+
+            // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
+            namesCountApproved() {
+                return Object.values(this.names).filter(n => n.approved).length;
+            },
+            namesCountPending() {
+                return Object.values(this.names).filter(n => !n.approved).length;
             },
         },
         watch: {
