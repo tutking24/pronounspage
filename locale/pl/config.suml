@@ -249,7 +249,7 @@ terminology:
 
 names:
     enabled: true
-    published: false
+    published: true
     route: 'imiona'
     legally: true
     count: true

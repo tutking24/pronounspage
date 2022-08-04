@@ -200,15 +200,6 @@
                     });
                 }
 
-                if (this.config.names && this.config.names.enabled && this.config.names.published) {
-                    links.push({
-                        link: '/' + this.config.names.route,
-                        icon: 'signature',
-                        text: this.$t('names.header'),
-                        textLong: this.$t('names.headerLong'),
-                    });
-                }
-
                 if (this.config.faq.enabled && !this.config.links.split) {
                     links.push({
                         link: '/' + this.config.faq.route,
@@ -248,6 +239,7 @@
                         this.config.calendar && this.config.calendar.enabled ? '/' + this.config.calendar.route : '',
                         this.config.census && this.config.census.enabled ? '/' + this.config.census.route : '',
                         this.config.inclusive && this.config.inclusive.enabled ? '/' + this.config.inclusive.route : '',
+                        this.config.names && this.config.names.enabled && this.config.names.published ? '/' + this.config.names.route : '',
                         this.config.people && this.config.people.enabled ? '/' + this.config.people.route : '',
                         '/' + this.config.contact.team.route,
                     ];
