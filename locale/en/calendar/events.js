@@ -95,6 +95,7 @@ module.exports = [
     new Event('{https://en.wikipedia.org/wiki/David_Kato=Kuchu Remembrance Day} (Uganda)', '_black-ribbon', 1, day(26), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/2022_Oslo_shooting=Oslo Pride Shooting} Remembrance Day', '_black-ribbon', 6, day(25), EventLevel.Day),
     new Event('{/terminology#two%20spirit=Two-Spirit} and Indigenous LGBTQQIA+ Awareness to Celebration Day (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
+    new Event('Bisexual Creators Day', 'Bisexual', 4, day(15), EventLevel.Day, ['bisexual']),    
 
     // --- dynamic date ---
 
