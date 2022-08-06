@@ -9,27 +9,28 @@ home:
     why: 'Por que os pronomes importam?'
     about:
         - >
-            Todes temos pronomes. São as palavras que usamos no lugar do nome para referir-nos a alguém já mencionado.
-            A maioria das pessoas usa {/ele=«ele»} e {/ela=«ela»}. Assumimos automaticamente qual usar com base na aparência.
+            As pessoas geralmente usam um tratamento gramatical em seus idiomas, incluindo, entre outros elementos, os pronomes. Os pronomes são palavras que usamos no lugar de um nome para referir-nos a alguém já mencionade, ou a alguém desconhecide. Há vários grupos de pronomes, assim como outras classes que podem demarcar gênero (gramatical), como artigos e desinências.
+            A maioria das pessoas usa os pronomes {/ele=«ele»} e {/ela=«ela»} e demais elementos associados a essas palavras. A sociedade cissexista ensina desde sempre como tratar as pessoas com base numa aparência ou presunção de gênero.
             Mas a realidade não é tão simples…
         - >
-            O gênero é complexo. Algumas pessoas não «aparentam» o seu gênero.
-            Há quem prefira ser chamade de maneira distinta à que se assumiria.
-            Há ainda quem não se encaixa nas etiquetas «masculino» ou «feminino» e prefere um termo neutro.
+            O gênero é complexo. Há pessoas que não «correspondem» às expectativas sociais de gênero.
+            Há quem prefira ser tratade de uma maneira distinta ao que tais expectativas ditam.
+            Há ainda quem não se encaixe nas etiquetas «masculino» ou «feminino» e prefira termos alternativos.
         - >
-            Essa ferramenta permite que você encontre os seus pronomes, com exemplos de uso em enunciações
-            para que possa mostrar às pessoas como prefere ser chamade.
+            Essa ferramenta permite que você encontre possíveis conjuntos de linguagem (artigos, pronomes, finais) e outros elementos, com exemplos de uso em enunciações
+            para que possa mostrar às pessoas como prefere ser tratade.
         - >
-            Por que é importante? Por uma simples questão de decência humana.
+            Por que é importante? Por uma simples questão de decência com ê outre, de respeito com a individualidade da pessoa.
             Você não chamaria «Lúcia» de «Alícia» só porque gosta mais desse nome
             ou porque «fulana tem mais cara de Lúcia para você».
             Ou, inclusive, se ela <em>sim</em> se chama «Lúcia» na sua certidão de nascimento,
             mas odeia esse nome e prefere usar «Alícia».
-            É exatamente o mesmo com os pronomes –
-            se não quer ser grosseiro com alguém, você se refere a el corretamente.
-            A única diferença é que geralmente conhecemos os nomes, mas não os pronomes.
-            Apresentamo-nos com o nosso nome, mas não com os nossos pronomes. Vamos lá mudar isso!
-    pronouns: 'Lista de pronomes populares'
+            É exatamente o mesmo com tratamento gramatical –
+            se não quer ser desrespeitose e intolerante com alguém, você se refere a elu corretamente.
+            A única diferença é que geralmente conhecemos os nomes, mas não o tratamento pessoal.
+            Ainda é comum nos apresentarmos com o nosso nome, mas não com o nosso tratamento gramatical. Vamos lá mudar isso!
+            Como gênero na língua portuguesa é mais que pronomes, estaremos utilizando aqui o termo conjunto de linguagem, seguindo o modelo de descrição de artigo (definido)/pronome (pessoal)/final de palavra.
+    pronouns: 'Lista de conjuntos populares'
     generator:
         header: 'Gerador'
         description: >
@@ -44,18 +45,17 @@ home:
 
     mission:
         header: 'Nossa missão'
-        summary: 'Estamos lutando pela liberdade, respeito e inclusão no idioma.'
+        summary: 'Estamos lutando por liberdade, respeito e inclusão no idioma.'
         freedom: >
             <strong>Liberdade</strong>
-            – para que cada pessoa possa usar <em>para si mesme</em>
-            qualquer pronome que elu acha que descreve elu o melhor.
+            – para que cada ume possa usar <em>para si mesme</em>
+            qualquer tratamento que achar que lhe descreve melhor.
         respect: >
             <strong>Respeito</strong>
-            – que pronomes de <em>outras pessoas</em> são respeitados.
+            – para que o tratamento gramatical de <em>outras pessoas</em> sejam usados e respeitados.
         inclusiveness: >
             <strong>Inclusão</strong>
-            – que quando estamos nos referindo para a pessoa que não conhecemos ou para grupo de pessoas,
-            não estamos assumindo gênero delus e não estamos excluindo elus por qualquer razão.
+            – para que não se presuma a identidade de gênero ou o tratamento pessoal quando estamos nos referindo a uma pessoa que não conhecemos ou para um grupo de pessoas.
 
 pronouns:
     header: 'Pronomes'
@@ -73,8 +73,8 @@ pronouns:
         header: 'Qualquer pronome'
         short: 'qualquer'
         description: >
-            Enquanto para muita gente é importante que se utilize pronomes específicos para falar dels,
-            a outres não ês incomoda que sejam chamades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
+            Enquanto para muites é importante que se utilize tratamentos específicos para falar com elus e delus,
+            a outres não es incomoda que sejam tratades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
         options: 'Verifique as opções [share] {/pronomes= aqui}.'
     others: 'Outras formas'
     othersRaw: 'Outras'
@@ -129,8 +129,8 @@ nouns:
     intro:
         - >
             O uso de uma linguagem inclusiva e neutra respeitando o gênero não se resume aos pronomes.
-            Também é necessário se atentar a isso no uso de substantivos, adjetivos, artigos e numerais de uma maneira que não assuma o gênero.
-            Nem todes ês policias são “homens da lei”. Nem todos ês parceires são “marido/esposo” ou “esposa”.
+            Também é necessário se atentar a isso no uso de artigos, preposições, substantivos, adjetivos, e numerais de uma maneira que não pressuma uma identidade de gênero ou conjunto pessoal.
+            Nem todes es policias são “homens da lei”. Nem todos es parceires são “marido/esposo” ou “esposa”.
         - >
             Quando se refere a alguém de quem se conhece o gênero,
             a um grupo de pessoas com vários gêneros distintos,
@@ -196,7 +196,7 @@ faq:
     headerLong: 'Perguntas frequentes'
     questions:
         nonbinary:
-            question: 'O que é <em>não binarie</em>?'
+            question: 'O que é <em>não-binárie</em>?'
             answer:
                 - >
                     O gênero é muito mais complicado do que uma simples distinção entre masculino e feminino.
