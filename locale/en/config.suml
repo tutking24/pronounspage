@@ -274,7 +274,12 @@ links:
             icon: 'chart-pie'
             url: 'https://www150.statcan.gc.ca/n1/daily-quotidien/220427/dq220427b-eng.htm'
             headline: 'Canada is the first country to provide census data on transgender and non-binary people'
-
+        -
+            icon: 'map-marked-alt'
+            url: 'https://www.pbs.org/independentlens/content/two-spirits_map-html/'
+            headline: 'A map of gender-diverse cultures'
+            quote: >
+                On nearly every continent, and for all of recorded history, thriving cultures have recognized, revered, and integrated more than two genders.
     academic: []
     mediaGuests: []
     mediaMentions: []
