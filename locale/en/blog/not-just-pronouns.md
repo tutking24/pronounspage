@@ -60,4 +60,3 @@ When someone comes out as trans I feel so deeply happy for them.
 What I should call them now or how I can expect them to change their looks is a secondary thing.
 It's not about me updating my vocabulary (although it's a bare minimum of support and respect that I can give them),
 but about them discovering something important about themselves.
-§

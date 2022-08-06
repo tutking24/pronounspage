@@ -2015,9 +2015,6 @@ census:
                     Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
                     czy się z nią identyfikujesz, czy nie.
                 - >
-                    Znaczenie etykietek możesz znaleźć w naszym <a href="/terminologia" target="_blank">Słowniku Terminologii Queerowej</a>.
-
-                - >
                     Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „niebinarn_”
                     czytaj jako „niebinarna”, „niebinarne”, itp. w zależności, którą opcję wolisz.
                 - >
@@ -2100,6 +2097,63 @@ census:
                 binarne:
                     operation: 'OR'
                     values: ['trans kobieta', 'kobieta', 'trans mężczyzna', 'mężczyzna', 'kobieta', 'mężczyzna', 'kobiec_', 'męsk_', 'transfeminine', 'transmasculine']
+        -
+            type: 'checkbox'
+            question: 'Jakimi słowami opisujesz swoją orientację seksualną?'
+            randomise: true
+            writein: true
+            instruction:
+                - >
+                    Chcemy zbadać, jakich słów osoby niebinarne używają, by opisać swoją orientację seksualną,
+                    ponieważ może to czasem sprawiać problemy,
+                    jako że wiele etykietek odnosi się pośrednio do binarnych określeń płci
+                    (np. „czy powinnom nazywać się gejem, skoro przecież nie jestem mężczyzną?”).
+                - >
+                    Zamiast próbować szukać konkretnych etykietek, prosimy przeczytać wszystkie po kolei i przy każdej zaznaczyć,
+                    czy się z nią identyfikujesz, czy nie.
+                - >
+                    Używamy form z podkreślnikami, by uniknąć odmiany przymiotników. Przykładowo słowo „aseksualn_”
+                    czytaj jako „aseksualna”, „aseksualne”, itp. w zależności, którą opcję wolisz.
+            options:
+                - ['homoseksualn_']
+                - ['heteroseksualn_']
+                - ['ceteroseksualn_']
+
+                - ['biseksualn_']
+                - ['panseksualn_']
+                - ['multiseksualn_']
+                - ['omniseksualn_']
+
+                - ['gej']
+                - ['lesbijka']
+                - ['gay']
+                - ['safick_']
+                - ['safonka']
+                - ['achilleńsk_']
+
+                - ['queer']
+                - ['queerejsk_']
+                - ['enbiańsk_']
+
+                - ['androseksualn_']
+                - ['gyneseksualn_']
+                - ['finseksualn_']
+                - ['minseksualn_']
+                - ['ninseksualn_']
+                - ['marsjańsk_']
+                - ['merkurejsk_']
+                - ['neptuniczn_']
+                - ['saturnijsk_']
+                - ['wenuzyjsk_']
+                - ['toryjsk_']
+                - ['triksijsk_']
+
+                - ['aseksualn_']
+                - ['demiseksualn_']
+                - ['szaroseksualn_']
+
+                - ['pomoseksualn_']
+                - ['bez etykiety']
         -
             type: 'textarea'
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
