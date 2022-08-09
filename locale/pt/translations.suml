@@ -9,15 +9,19 @@ home:
     why: 'Por que os pronomes importam?'
     about:
         - >
-            As pessoas geralmente usam um tratamento gramatical em seus idiomas, incluindo, entre outros elementos, os pronomes. Os pronomes são palavras que usamos no lugar de um nome para referir-nos a alguém já mencionade, ou a alguém desconhecide. Há vários grupos de pronomes, assim como outras classes que podem demarcar gênero (gramatical), como artigos e desinências.
-            A maioria das pessoas usa os pronomes {/ele=«ele»} e {/ela=«ela»} e demais elementos associados a essas palavras. A sociedade cissexista ensina desde sempre como tratar as pessoas com base numa aparência ou presunção de gênero.
+            As pessoas geralmente usam um tratamento gramatical em seus idiomas, incluindo, entre outros elementos, os pronomes.
+            Os pronomes são palavras que usamos no lugar de um nome para referir-nos a alguém já mencionade, ou a alguém desconhecide.
+            Há vários grupos de pronomes, assim como outras classes que podem demarcar gênero (gramatical), como artigos e desinências.
+            A maioria das pessoas usa os pronomes {/ele=«ele»} e {/ela=«ela»} e demais elementos associados a essas palavras.
+            A sociedade cissexista ensina desde sempre como tratar as pessoas com base numa aparência ou presunção de gênero.
             Mas a realidade não é tão simples…
         - >
             O gênero é complexo. Há pessoas que não «correspondem» às expectativas sociais de gênero.
             Há quem prefira ser tratade de uma maneira distinta ao que tais expectativas ditam.
             Há ainda quem não se encaixe nas etiquetas «masculino» ou «feminino» e prefira termos alternativos.
         - >
-            Essa ferramenta permite que você encontre possíveis conjuntos de linguagem (artigos, pronomes, finais) e outros elementos, com exemplos de uso em enunciações
+            Essa ferramenta permite que você encontre possíveis conjuntos de linguagem (artigos, pronomes, finais)
+            e outros elementos, com exemplos de uso em enunciações
             para que possa mostrar às pessoas como prefere ser tratade.
         - >
             Por que é importante? Por uma simples questão de decência com ê outre, de respeito com a individualidade da pessoa.
@@ -29,7 +33,9 @@ home:
             se não quer ser desrespeitose e intolerante com alguém, você se refere a elu corretamente.
             A única diferença é que geralmente conhecemos os nomes, mas não o tratamento pessoal.
             Ainda é comum nos apresentarmos com o nosso nome, mas não com o nosso tratamento gramatical. Vamos lá mudar isso!
-            Como gênero na língua portuguesa é mais que pronomes, estaremos utilizando aqui o termo conjunto de linguagem, seguindo o modelo de descrição de artigo (definido)/pronome (pessoal)/final de palavra.
+        - >
+            Como gênero na língua portuguesa é mais que pronomes, estaremos utilizando aqui o termo conjunto de linguagem,
+            seguindo o modelo de descrição de artigo (definido)/pronome (pessoal)/final de palavra.
     pronouns: 'Lista de conjuntos populares'
     generator:
         header: 'Gerador'
@@ -41,7 +47,7 @@ home:
         base: 'Baseado em'
         alt: 'Também é possível introduzir formas intercambiáveis separadas em cada campo, p. ex. <code> ele & ela</code> = “ele” ou "ela”.'
         pronunciation: 'Também é possível especificar a pronúncia usando o AFI, p. ex. <code>elx|ˈe.l</code> = “elx”, se pronuncia /ˈe.l/.'
-    whatisit: 'Por que importam os pronomes?'
+    whatisit: 'Por que os conjuntos de linguagem importam?'
 
     mission:
         header: 'Nossa missão'
@@ -52,29 +58,29 @@ home:
             qualquer tratamento que achar que lhe descreve melhor.
         respect: >
             <strong>Respeito</strong>
-            – para que o tratamento gramatical de <em>outras pessoas</em> sejam usados e respeitados.
+            – para que os conjuntos de linguagem de <em>outras pessoas</em> sejam usados e respeitados.
         inclusiveness: >
             <strong>Inclusão</strong>
-            – para que não se presuma a identidade de gênero ou o tratamento pessoal quando estamos nos referindo a uma pessoa que não conhecemos ou para um grupo de pessoas.
+            – para que não se presuma a identidade de gênero ou o conjunto de linguagem quando estamos nos referindo a uma pessoa desconhecida ou um grupo de pessoas.
 
 pronouns:
     header: 'Pronomes'
     headerLong: 'Pronomes'
     examples: 'Exemplos de uso em frases'
     plural: 'Plural'
-    intro: 'Meus pronomes são'
+    intro: 'Meu conjunto é'
     normative: 'Normativo'
     alt:
         button: 'Gerar uma ligação à formas intercambiáveis'
         header: 'Formas intercambiáveis'
         raw: 'intercambiável'
-    generated: 'Estes pronomes foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'
+    generated: 'Estes conjuntos foram criados com o gerador. A equipe do pronouns.page não é responsável por eles.'
     any:
         header: 'Qualquer pronome'
         short: 'qualquer'
         description: >
-            Enquanto para muites é importante que se utilize tratamentos específicos para falar com elus e delus,
-            a outres não es incomoda que sejam tratades de qualquer maneira - conquanto que no contexto esteja claro com quem se está falando.
+            Enquanto para muites é importante que se utilize conjuntos específicos para falar com elus e delus,
+            a outres não es incomoda que sejam tratades de qualquer maneira - conquanto que no contexto seja evidente com/de quem se está falando.
         options: 'Verifique as opções [share] {/pronomes= aqui}.'
     others: 'Outras formas'
     othersRaw: 'Outras'
@@ -129,7 +135,8 @@ nouns:
     intro:
         - >
             O uso de uma linguagem inclusiva e neutra respeitando o gênero não se resume aos pronomes.
-            Também é necessário se atentar a isso no uso de artigos, preposições, substantivos, adjetivos, e numerais de uma maneira que não pressuma uma identidade de gênero ou conjunto pessoal.
+            Também é necessário se atentar a isso no uso de artigos, preposições, substantivos, adjetivos,
+            e numerais de uma maneira que não pressuma uma identidade de gênero ou conjunto pessoal.
             Nem todes es policias são “homens da lei”. Nem todos es parceires são “marido/esposo” ou “esposa”.
         - >
             Quando se refere a alguém de quem se conhece o gênero,
@@ -200,17 +207,17 @@ faq:
             answer:
                 - >
                     O gênero é muito mais complicado do que uma simples distinção entre masculino e feminino.
-                    A partir de um ponto de vista puramente biológico, distinguimos sexo cromossômico,
-                    sexo genético, sexo hormonal, sexo fenotípico…
-                    Eles não são necessariamente correspondentes um com o outro e nem sempre são binários.
+                    A partir de uma perspectiva puramente biológica, distinguimos o sexo entre aspectos genéticos, cromossômicos,
+                    hormonais, reprodutivos, e fenotípicos.
+                    Eles não necessariamente correspondem às expectativas sociais (não são binários).
 
-                    Quando partimos para o aspecto cultural, o “gênero” é visto como uma construção social.
+                    Quando partimos para o aspecto cultural, o “gênero” é entendido como uma construção social.
                     Dependendo do lugar e do momento, ser “uma mulher” ou ser “um homem” pode significar ter
                     direitos, obrigações e regras a seguir radicalmente diferentes. Na Europa, não é comum que os homens a usem saltos altos e saias,
                     muitos povos originários da América da Norte reconhecem um terceiro gênero
                     {https://pt.wikipedia.org/wiki/Dois-esp%C3%ADritos=dois espíritos}, travesti, etc. etc.
                 - >
-                    “Não binárie” é um termo que descreve a identidade de pessoas que
+                    “Não-binárie” é um termo que descreve um grupo de identidades de pessoas que
                     não se encaixam na distinção binária de homem/mulher.
                     Inclui pessoas
                     {https://pt.wikipedia.org/wiki/Agênero=agênero},
@@ -219,127 +226,133 @@ faq:
                     {https://pt.wikipedia.org/wiki/Bigênero=bigênero},
                     e {https://pt.wikipedia.org/wiki/G%C3%AAnero_n%C3%A3o-bin%C3%A1rio=muito, muito mais}.
                 - >
-                    Não binário não é necessariamente algo "intermédio" entre masculino e feminino. Vai além.
-                    As pessoas não binárias não têm que ser andróginas, usar linguagem neutra etc.
-                    Se trata de liberdade gênero, não de criar novos.
+                    Não-binárie não é necessariamente algo "intermediário" entre masculino e feminino. Vai além.
+                    As pessoas não-binárias não têm que ser andróginas, usar neolinguagens, e etc.
+                    Se trata de emancipação e liberdade de gênero, independentemente de rótulos.
         why-respect:
-            question: 'Por que devo respeitar os pronomes <em>raros</em> de outra pessoa?'
+            question: 'Por que devo respeitar os conjuntos de linguagem de outra pessoa?'
             answer:
                 - >
                     Porque dirigir-se às pessoas da maneira que elas preferem é a base das relações sociais.
                     Você não chamaria “Lúcia” de “Alicia”.
                     Há pessoas que não querem ser tratadas por “{/ele=ele}” ou “{/ela=ela}”.
-                    Se não pode aceitar isso, só fale <em>de você mesmo</em>.
+                    Se não pode aceitar isso, não interaja com a pessoa e não se refira a ela, só fale <em>de você mesme</em>.
         solo-pronombres:
             question: 'Então, é suficiente dizer adequar o gênero dos pronomes?'
             answer:
                 - >
                     Não! O gênero está presente não só nos pronomes, mas também em substantivos, adjetivos etc.
                     Você não diz “ela” quando vai se referir a seu “amigo”, mas sim à sua “amiga”.
-                    Respeitar a identidade de gênero de uma pessoa implica a respeita não só nos pronomes, senão
-                    em toda a referência linguística a ela.
+                    Respeitar o conjunto de linguagem de uma pessoa inclui respeitar não só nos pronomes, assim como todas as demais referências
+                    linguísticas que fazem parte do conjunto.
                 - >
-                    Assim, dizemos que <em>el</em> é nossê amigue, que pode ser profesore, estudante, etc., e gostamos muito del.
+                    Assim como nesse exemplo de conjunto, dizemos que <em>el</em> é nosse amigue, que pode ser profesore, estudante, etc., e gostamos muito del.
         how-to-know:
             question: 'Como saber como eu devo me referir a alguém?'
             answer:
                 - >
                     Pode perguntar! Sim, pode ser um pouco desconfortável, mas quanto mais fazemos isso, isso se torna menos desconfortável.
-                    Se podemos perguntar a alguém seu nome, por que não seus pronomes?
+                    Também pode pesquisar por alguma outra fonte, como pessoas próximas dessu alguém ou em suas redes sociais.
+                    Se podemos perguntar a alguém seu nome, por que não seu conjunto?
                 - >
                     (Só que por favor não pergunte “você é menino ou menina?”.
                     Essa pergunta implica em apenas duas respostas corretas,
                     e sugere uma curiosidade pouco saudável pelos genitais de outras pessoas.
-                    Invés disso, pode perguntar “quais são os seus pronomes?” ou “como eu deveria me referir a você?”)
+                    Ao invés disso, pode perguntar “quais são os seus pronomes?” ou “como eu deveria me referir a você?”)
                 - >
-                    Também é importante normalizar contar seus pronomes quando se apresenta a alguém.
-                    “Olá, sou Miguel, {/el=el/del}”. Não é difícil – mas significa muito para as pessoas trans e não binárias!
-                    A inclusão mais fácil da linha: Só coloque os seus pronomes (o uma ligação aos exemplos do nosso site) em sua <em>bio</em>.
+                    Também é importante normalizar declarar algum tratamento quando se apresenta a alguém.
+                    “Olá, sou Miguel, uso {/el=ê/el/e}”. Não é difícil, e significa muito para as pessoas trans e não-binárias!
+                    A inclusão mais fácil da linha: Descreva seus conjuntos ou anexe um link para os exemplos do nosso site em sua <em>bio</em>.
                 - >
-                    Também tenha na mente que muitas pessoas usam um nome e pronomes distintos em diferentes contextos.
+                    Também tenha na mente que muitas pessoas usam um nome e conjuntos distintos em diferentes contextos.
                     Pode ser que alguém no dia a dia se “esconda” no ambiente de trabalho, mas se sinta confortável vivendo sua verdade com amigues.
-                    Seja consciente. Você pode, por exemplo, perguntar “que pronomes eu deveria usar em frente de seu chefe?” etc.
+                    Seja consciente. Você pode, por exemplo, perguntar “como devo me referir a você em frente de seu chefe?” etc.
                 - >
-                    Algumas pessoas oferecem vários pronomes, p. ex. “{/ele&ela=ele ou ela}” ou “{/ele&el=ele ou el}”.
-                    Isso significa que eles gostam de todas essas formas. Normalmente, a primeira opção é a que preferem.
+                    Algumas pessoas podem oferecer mais de um conjunto, como nos exemplos de “{/ele&ela=ele ou ela}” ou “{/ele&elu&el=ele, elu ou el}”.
+                    Isso significa que aceitam todas essas formas de tratamento. É comum que a primeira opção seja a que mais preferem.
         who-uses-it:
             question: 'E isso se usa mesmo?'
             answer:
                 - >
-                    Sim! Milhões de pessoas não binárias no mundo fazem isso.
-                    Cada pronome listado aqui é usado por alguém no seu dia a dia.
+                    Sim! Inúmeras de pessoas não-binárias no mundo fazem isso.
+                    Cada conjunto listado aqui pode ser usado por alguém no seu dia a dia.
         authority:
-            question: 'Esses pronomes não binários estão aprovados por alguma autoridade?'
+            question: 'Esses conjuntos fora das normas estão aprovados por alguma autoridade?'
             answer:
                 - >
-                    A língua não é um tipo de magia gravada em pedra e outorgada pelos deuses deusa.
-                    A língua é uma atividade essencialmente social, que evolui através do tempo, tal qual à sociedade.
-                    Nós, usuáries, que <em> somos a autoridade</em> que dita como se usa.
+                    A língua não é um tipo de lei gravada em pedra e outorgada por uma força divina.
+                    A língua é uma atividade essencialmente social, que evolui através do tempo e espaço, tal qual à sociedade.
+                    Nós, usuáries, que <em>somos a autoridade</em> que dita como se usa.
                 - >
                     Os dicionários podem levar um tempo para registrar essas formas,
                     mas isso não significa que o uso delas seja ilegal.
-                    Eventualmente essas formas, se usadas com muita frequência, poderão ser incluídas em dicionários..
+                    É questão de tempo até que essas formas, se usadas com muita frequência, possam ser incluídas em dicionários..
                     {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, por exemplo,
-                    aceita o uso de {/they=“they” singular} como um pronome não binário em inglês.
+                    aceita o uso de {/they=“they” singular} como um pronome alternativo em inglês.
                 - >
                     Também é possível consultar {https://scholar.google.com/scholar?hl=en&q=pronomes+não+binários=trabalhos académicos}
-                    sobre os pronomes não binários.
+                    sobre os pronomes alternativos.
         bio:
-            question: 'Por que eu deveria colocar meus pronomes nas minhas redes sociais?'
+            question: 'Por que eu deveria colocar meus conjuntos nas minhas redes sociais?'
             answer:
                 - >
-                    Se você é cis (= não é trans) e usa„{/ele=ele}” ou „{/ela=ela}” de acordo com o seu gênero,
-                    pode pensar que seus pronomes são <em>óbvios</em>.
-                    E sim, talvez eles sejam – sempre e quando menciona seu nome em um perfil (e este seja tradicionalmente masculino ou feminino)
+                    Se você é cis (= não é trans) e usa os conjuntos esperados de acordo com o seu gênero,
+                    pode pensar que seu tratamento é <em>óbvio</em>.
+                    E sim, talvez até seja – sempre e quando menciona seu nome em um perfil (e este seja tradicionalmente masculino ou feminino)
                     ou se sua foto de perfil é uma foto sua.
-                    Muitas pessoas não cumprem com essas características – assim, nem sempre é fácil adivinhar com que pronome preferem ser chamades.
+                    Muitas pessoas não cumprem com essas características – assim, nem sempre é fácil adivinhar com que conjunto preferem ser tratades.
                 - >
-                    Mas se trata, sobretudo, de algo mais importante: talvez seus pronomes sejam “óbvios”,
-                    mas há pessoas cujos pronomes não são.
-                    E eles querem que os abordemos corretamente, independente de se “parecerem” ou não com determinado gênero,
+                    Mas se trata, sobretudo, de algo mais importante: talvez sejam “óbvio” como te tratar,
+                    mas há pessoas cujo tratamento não o é.
+                    E elas querem que as abordemos corretamente, independentemente de corresponderem ou não com as expectativas de gênero,
                     De estarem transicionando ou não (ou de quererem transacionar ou não).
-                    As pessoas não binárias nem sempre “se vêm não binárias”, não devemos a androginia a ninguém.
+                    As pessoas não-binárias nem sempre são inconformes de gênero, não devemos a androginia a ninguém.
                 - >
-                    Compartilhar nossos pronomes é importante para as pessoas trans, não binárias e do gênero não-conformista.
+                    Compartilhar nossos conjuntos é importante para as pessoas trans, não-binárias e de gênero não-conformante.
                     Contudo, nos expõe.
                     Entretanto, se as pessoas cis fizessem o mesmo, facilitaria o mundo para nós.
-                    Essa simples atitude faria poderia fazer com que nos sentíssemos mais cômodes, segures, e bem-vindes
+                    Essa simples atitude poderia fazer com que nos sentíssemos mais cômodes, segures, e bem-vindes
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mais razões (em inglês) aqui).}
         change:
-            question: 'Posso trocar os meus pronomes?'
+            question: 'Posso trocar os meus conjuntos?'
             answer:
                 - >
-                    Claro! Ninguém se surpreende quando alguém muda seu ponto de vista, estilo, hobbies…
-                    Assim, por que seria estranho que esse alguém descobrisse uma parte de sua identidade,
+                    Claro! Ninguém se surpreende quando alguém muda de opiniões, estilo, hobbies…
+                    Assim, por que seria estranho que essu alguém descobrisse uma parte de sua identidade,
                     que deixou de gostar do seu nome, que descobriu uma etiqueta que encaixa bem com elu etc?
         get-used-to:
-            question: 'É possível que eu não me acostume com <em>meus próprios</em> novos pronomes?'
+            question: 'É possível que eu não me acostume com <em>meus próprios</em> novos conjuntos?'
             answer:
                 - >
-                    Sim! Depois de muitos anos usando os pronomes que melhor se adaptam ao gênero assinado ao nascer,
-                    é comum às vezes ter dificuldade para se adaptar aos novos pronomes.
+                    Sim! Depois de muitos anos usando o conjunto associado ao gênero designado ao nascer,
+                    é comum às vezes ter dificuldade para se adaptar aos novos conjuntos.
                 - >
-                    Pronomes ≠ gênero.
+                    Conjuntos de linguagem ≠ Identidade de gênero.
                     Seu gênero não vai mudar de repente porque alguém te chamou de “elu”.
                     Não se preocupe. Experimente. Veja o que encaixa melhor contigo.
         preferred-pronouns:
-            question: 'Por que não se deve dizer “pronomes preferidos”?'
+            question: 'Por que não se deve dizer “conjuntos preferidos”?'
             answer:
                 - >
-                    Porque dizer assim sugere que os pronomes são um capricho.
-                    Se alguém simplesmente “prefere” ser tratada por “ela”, não se sentiria mal se a chamasse de “ele”, não?
+                    Porque dizer assim sugere que os conjuntos são um capricho ou opcionais.
+                    Se alguém simplesmente “prefere” ser tratade por “ela”, não se sentiria mal se lhe chamassem de “ele", não?
                     Parece um garoto, assim é mais fácil para mim!
                 - >
-                    Não! São nossos pronomes. Não nossos “pronomes preferidos”. São nossos nomes, não nossos “nomes preferidos”.
-                    Se você se importa com sus amigues e sus querides trans e não bináries, chama-lhes da maneira correta.
+                    Não! São nossos tratamento pessoais. Não nossas “preferências”. São nossos nomes, não nossos “nomes preferidos”.
+                    Se você se importa com sues amigues e sues querides trans e não-bináries, trate-lhes da maneira correta.
         gender-pronouns:
-            question: 'Por que não devo dizer “pronomes de gênero”?'
+            question: 'Por que não devo associar qualidades de gênero com conjuntos?'
             answer:
                 - >
-                    Porque gênero é diferente de pronomes. Os pronomes são só gramática.
-                    As pessoas não binárias podem usar pronomes binários, algumas mulheres lésbicas usam {/ele=ele} por razões culturais etc.
+                    Porque essas qualidades descrevem melhor gênero, sendo diferentes de conjuntos.
+                    Os conjuntos de linguagem são só gramática. Pessoas podem até usá-los por associações com signos masculinos e femininos,
+                    podem até usá-los para serem neutros, mas isso não é regra.
+                    Há pessoas não-binárias que podem usar só os conjuntos normativos, há pessoas cis de gênero não-conformante
+                    que usam outro(s) conjunto(s) além do(s) associado(s) ao gênero, e outras situações.
                 - >
-                    Diga simplemente “pronomes”.
+                    Compreende-se que há ainda situações sociais em que pode ser mais fácil ou vantajoso dizer
+                    "me trate no masculino" ou "uso pronome feminino", mas seria melhor se evitássemos reforçar gênero na gramática.
+                    Recomenda-se fortamente que apenas descreva seus conjuntos como são.
 
 links:
     header: 'Links'
@@ -360,14 +373,14 @@ english: ~
 
 contact:
     header: 'Contato'
-    authors: 'Autores do site'
+    authors: 'Autories do site'
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
         nameShort: 'O coletivo'
         description:
             - >
                 Nós somos um grupo queer dedicado a juntar, pesquisar, moldar e promover
-                gênero neutro e linguagem não binária.
+                gênero neutro e linguagem não-binária.
                 Nós também apoiamos ações visando igualdade e justiça social.
         logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
         members: 'Membres atuais'
@@ -438,7 +451,7 @@ user:
         invalid: 'Código inválido.'
     account:
         changeUsername:
-            header: 'Nome do usuárie'
+            header: 'Nome de usuárie'
             action: 'Mude o nome de usuárie'
             invalid: 'O nome de usuárie deve ter entre 4 e 16 caracteres e só pode conter números, letras, pontos, traços e sublinhados.'
             taken: 'Este nome de usuárie já está em uso.'
@@ -484,7 +497,7 @@ profile:
     names: 'Nomes'
     pronouns: 'Pronomes'
     pronounsInfo: >
-        Pode introduzir um <strong>pronome</strong> (p. ex. “ele” ou “ela”)
+        Pode introduzir um <strong>conjunto</strong> (p. ex. “ele” ou “ê/elu/e”)
         ou um <strong>link</strong> (“http://pt.pronouns.page/elx”).
         Também pode ser utilizado {/pronomes#generator=<strong>o gerador</strong>} para preencher as frases com formatos personalizados.
     pronounsNotFound: 'Formato não reconhecido. Por favor verifique as instruções acima.'
