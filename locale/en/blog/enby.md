@@ -1,6 +1,6 @@
 # Does the word “enby” imply young age?
 
-<small>2022-08-06 | [@andrea](/@andrea)</small>
+<small>2022-08-09 | [@andrea](/@andrea)</small>
 
 ![Screenshot of the poll results mentioned in the post](/img-local/blog/enby-age-poll.png)
 
