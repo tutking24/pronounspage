@@ -89,7 +89,7 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     `
 
     if (req.query.filter) {
-        conditions.push(SQL`u.username LIKE ${'%' + req.query.filter + '%'}`);
+        conditions.push(SQL`(lower(u.username) LIKE ${'%' + req.query.filter.toLowerCase() + '%'} OR lower(u.email) LIKE ${'%' + req.query.filter.toLowerCase() + '%'})`);
     }
     if (req.query.localeFilter) {
         conditions.push(SQL`p.locale=${global.config.locale}`);
