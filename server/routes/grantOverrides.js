@@ -31,13 +31,13 @@ const config = {
 const router = Router();
 
 const mastodonGetOAuthKeys = async (db, instance) => {
-    const existingKeys = await db.get(SQL`
-        SELECT client_id, client_secret
-        FROM oauth_keys
-        WHERE instance = ${instance}
-        AND provider = 'mastodon'
-    `);
     // TODO figure out why it doesn't work
+    // const existingKeys = await db.get(SQL`
+    //     SELECT client_id, client_secret
+    //     FROM oauth_keys
+    //     WHERE instance = ${instance}
+    //     AND provider = 'mastodon'
+    // `);
     // if (existingKeys) {
     //     return existingKeys;
     // }
@@ -56,12 +56,10 @@ const mastodonGetOAuthKeys = async (db, instance) => {
     }).then(res => res.json());
     assert(keys.client_id && keys.client_secret && !keys.error);
     // TODO figure out why it doesn't work
-    if (existingKeys) {
-        db.get(SQL`
-            INSERT INTO oauth_keys (instance, provider, client_id, client_secret)
-            VALUES (${instance}, 'mastodon', ${keys.client_id}, ${keys.client_secret})
-        `);
-    }
+    // db.get(SQL`
+    //     INSERT INTO oauth_keys (instance, provider, client_id, client_secret)
+    //     VALUES (${instance}, 'mastodon', ${keys.client_id}, ${keys.client_secret})
+    // `);
     return keys;
 };
 
