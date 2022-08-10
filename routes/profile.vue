@@ -39,38 +39,34 @@
                         <Icon v="id-card"/>
                         <T>profile.card.link</T><T>quotation.colon</T>
                     </p>
-                    <small v-if="profile.card === null && profile.cardDark === null">
-                        <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
-                            <Icon v="sun"/>
-                            <T>mode.light</T>
-                        </button>
-                        <button class="btn btn-outline-success btn-sm" @click="generateCard(true)">
-                            <Icon v="moon"/>
-                            <T>mode.dark</T>
-                        </button>
-                    </small>
-                    <small v-else-if="profile.card === '' || profile.cardDark === ''">
+                    <small v-if="profile.card === '' || profile.cardDark === ''">
                         <Spinner/>
                         <T>profile.card.generating</T>
                     </small>
                     <span v-else>
                         <a v-if="profile.card" :href="profile.card" target="_blank" rel="noopener"
-                           class="btn btn-outline-success btn-sm mx-1">
+                           class="btn btn-success btn-sm mx-1">
                             <Icon v="sun"/>
                             <T>mode.light</T>
                         </a>
                         <a v-if="profile.cardDark" :href="profile.cardDark" target="_blank" rel="noopener"
-                           class="btn btn-outline-success btn-sm mx-1">
+                           class="btn btn-success btn-sm mx-1">
                             <Icon v="moon"/>
                             <T>mode.dark</T>
                         </a>
 
-                        <button v-if="!profile.card" class="btn btn-outline-success btn-sm" @click="generateCard(false)">
-                            <Icon v="sun"/>
-                        </button>
-                        <button v-if="!profile.cardDark" class="btn btn-outline-success btn-sm" @click="generateCard(true)">
-                            <Icon v="moon"/>
-                        </button>
+                        <hr v-if="profile.card || profile.cardDark"/>
+                        <small>
+                            <T>profile.card.generate</T><T>quotation.colon</T><br/>
+                            <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
+                                <Icon v="sun"/>
+                                <T>mode.light</T>
+                            </button>
+                            <button class="btn btn-outline-success btn-sm" @click="generateCard(true)">
+                                <Icon v="moon"/>
+                                <T>mode.dark</T>
+                            </button>
+                        </small>
                     </span>
                 </div>
                 </template>
