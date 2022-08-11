@@ -48,7 +48,7 @@
                 </a>
             </div>
 
-            <div class="row" v-if="$isGranted('terms')">
+            <div class="row">
                 <div class="col-12 col-lg-4">
                     <label for="key"><strong><T>sources.submit.key</T></strong></label>
                     <input type="text" id="key" class="form-control" v-model="form.key" maxlength="255"/>
