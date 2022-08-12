@@ -24,7 +24,7 @@ pronouns:
             Some people prefer not using any pronouns, instead being referred by name, initial,
             omitting pronouns with passive voice, or restructuring the sentence.
             See: {https://web.archive.org/web/20211214214513/https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
-            {https://web.archive.org/web/20211019221842/https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
+            {https://www.lgbtqia.wiki/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -73,7 +73,7 @@ pronouns:
                     - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
     emoji:
         description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        history: '{https://www.lgbtqia.wiki/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -274,7 +274,12 @@ links:
             icon: 'chart-pie'
             url: 'https://www150.statcan.gc.ca/n1/daily-quotidien/220427/dq220427b-eng.htm'
             headline: 'Canada is the first country to provide census data on transgender and non-binary people'
-
+        -
+            icon: 'map-marked-alt'
+            url: 'https://www.pbs.org/independentlens/content/two-spirits_map-html/'
+            headline: 'A map of gender-diverse cultures'
+            quote: >
+                On nearly every continent, and for all of recorded history, thriving cultures have recognized, revered, and integrated more than two genders.
     academic: []
     mediaGuests: []
     mediaMentions: []
@@ -361,9 +366,9 @@ profile:
             - 'shazam'
             - 'zam'
             - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
+        - ['person', 'man', 'woman', 'lady', 'dude', 'enby', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
         - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
         defaultPronoun: 'they'
 

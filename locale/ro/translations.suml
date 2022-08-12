@@ -1,0 +1,1174 @@
+title: 'Pronouns.page'
+domain: 'ro.pronouns.page'
+description: 'Exemple de utilizare a pronumelor personale și a limbajului neutru.'
+
+home:
+    link: 'start' # anything else may work aswell
+    header: 'Pronume'
+    headerLong: 'Listă de pronume'
+    welcome: 'Bine ai venit la pronouns.page!'
+    intro: >
+        Noi creăm o sursă de informații despre limbajul neutru și non-binar.
+    why: 'Care-i treaba cu pronumele?'
+    about:
+        - >
+            Cu toții avem pronume. Sunt acele cuvinte pe care le folosim când vorbim despre cineva fără a îi menționa numele de fiecare dată.
+            Cei mai mulți oameni folosesc {/el=“el/lui”} și {/ea=“ea/ei”}, deci presupunem automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care dorim să vorbim.
+            Însă, nu e așa de simplu…
+        - >
+            Genul e complicat. Nu toți „arată” ca genul cu care se identifică.
+            Unele persoane preferă să li se spună în alte feluri decât ai presupune.
+            Alții pur și simplu nu intră în categoria de „masculin” sau „feminin” și preferă un limbaj mai neutru. # wouldnt „bărbat” sau „femeie” work better? (idk it just sounds better imo)
+        - >
+            Acest website te ajută să distribui un link către pronumele tale cu exemple contextuale,
+            pentru a le putea prezenta oamenilor cum vrei să te adreseze.
+        - >
+            „De ce contează?” Din simplă decență umană.
+            Nu i-ai zice Anei „Ștefania” doar pentru că ție îți place mai mult acel nume
+            sau pentru că „are față de Ștefania”.
+            Sau chiar dacă <em>ar avea</em> numele „Ștefania” pe certificatul ei de naștere,
+            dar ea îl urăște nespus și îi place mai mult „Ana”.
+            E aceeași poveste și cu pronumele –
+            dacă nu dorești să fii nepoliticos, adresează-te lor cum se cuvine.
+            Singura diferență e că de obicei le cunoaștem numele, dar nu și pronumele.
+            Ne introducem altora folosindu-ne doar numele, nu și pronumele. A venit vremea să schimbăm acest lucru!
+    pronouns: 'Lista pronumelor populare'
+    generator:
+        header: 'Generator'
+        description: >
+            Poți folosi instrumentul acesta pentru a umple golurile din propoziții
+            și pentru a genera un link gata de partajat cu alții. # or „distribuit”
+        button: 'Arată generatorul'
+        header2: 'Generează un link'
+        base: 'Bazat pe'
+        alt: 'De asemenea poți introduce formele substituibile în câmpuri diferite ex.: <code>el&ea</code> = „el” sau „ea”.'
+        pronunciation: 'Poți specifica și pronunția dupa un caracter-conductor, folosind IPA, ex.: <code>faer|fɛɹ</code> = „faer” pronunțat ca /fɛɹ/.'
+    whatisit: 'Care-i treaba cu pronumele?'
+    mission:
+        header: 'Misiunea noastră'
+        summary: 'Noi luptăm pentru libertate, respect și incluziune în limbaj.'
+        freedom: >
+            <strong>Libertate</strong>
+            – pentru ca oricine să poată folosi <em>pentru ei înșiși</em>
+            orice pronume simt că îi descriu cel mai bine.
+        respect: >
+            <strong>Respect</strong>
+            – pentru ca pronumele <em>altor persoane</em> să fie respectate.
+        inclusiveness: >
+            <strong>Incluziune</strong>
+            – pentru ca atunci când ne referim la o persoană pe care nu o cunoaștem sau la un grup de oameni,
+            să nu le asumăm genul și să nu-i excludem cu niciun motiv.
+
+pronouns:
+    header: 'Pronume'
+    headerLong: 'Pronume'
+    examples: 'Exemple de utilizare a pronumelor în propoziții'
+    plural: 'Plural'
+    intro: 'Pronumele mele sunt'
+    normative: 'Normativ'
+    alt:
+        button: 'Generează un link către forme substituibile'
+        header: 'Forme subsituibile'
+        raw: 'substituibile'
+    generated: 'Aceste pronume au fost create cu ajutorul unui generator. Echipa pronouns.page nu își asumă responsabilitatea.'
+    any:
+        header: 'Orice pronume'
+        short: 'oricare'
+        description: >
+            Chiar dacă pentru multe persoane e incredibil de important ca oamenii să folosească pronumele potrivite pentru ei,
+            pe alții nu îi deranjează să fie adresați în orice fel – atâta timp cât îți poți da seama din context despre cine se vorbește.
+        options: 'vezi alte opțiuni [share]{/pronumele=aici}.'
+    others: 'Alte forme'
+    othersRaw: 'altele'
+    or: 'sau'
+    grammarTable: 'Tabel'
+
+sources:
+    header: 'Surse'
+    headerLong: 'Exemple din texte culturale'
+    headerLonger: 'Limbajul neutru în textele culturale'
+    subheader: 'Corpus de texte al limbajului neutru'
+    toc: 'Cuprins'
+    type:
+        All: 'Toate'
+        Book: 'Cărți'
+        Article: 'Articole'
+        Movie: 'Filme'
+        Series: 'Seriale'
+        Song: 'Muzică'
+        Poetry: 'Poezii'
+        Comics: 'Comics' # TODO
+        Game: 'Jocuri'
+        Other: 'Altele'
+    submit:
+        header: 'Trimite un exemplu pentru a fi adăugat'
+        action: 'Trimite'
+        pronouns: 'Ce pronume au fost folosite?'
+        pronounsInfo: 'Inserează cea mai simplă formă a pronumelui, la fel cum e scris în sursă, ex. „ei”, „elx/lux”, „el&ea”'
+        type: 'Tip sursă'
+        author: 'Autor'
+        title: 'Titlu'
+        extra: 'Mai multe informații (traducător, numele ziarului, …)'
+        year: 'Data publicației (a versiunii în limba română)'
+        fragments: 'Fragmente'
+        fragmentsInfo: 'Poți marca pronumele relevante folosind paranteze pătrate: „Apoi \[\[ei]] au văzut cum \[\[ele]] au făcut totul \[\[lui]]”'
+        comment: 'Comentariu'
+        link: 'Link către conținut'
+        thanks: 'Îți mulțumim pentru contribuție!'
+        another: 'Trimite încă o sugestie.'
+        moderation: 'Sugestiile vor trebui să fie aprobate înainte să fie publicate.'
+        key: 'Cheie'
+        keyInfo: 'Identificator pentru a insera link-uri din alte surse din variante în alte limbi, cu exemplu din dicționar'
+        images: 'Imagini'
+        spoiler: 'Spoiler' # TODO
+    otherVersions: 'În alte limbi'
+    referenced: 'Exemple de utilizări'
+
+nouns:
+    header: 'Dicționar'
+    headerLong: 'Dicționarul substantivelor neutre'
+    headerLonger: 'Dicționarul limbajului neutru'
+    description: 'Nu sunt doar pronumele! Vezi dicționarul nostru cu substantive neutre.'
+    intro: # need better examples + check 3rd paragraph
+        - >
+            Incluziunea și limbajul neutru nu sunt doar respectarea pronumelor cuiva.
+            Sunt și descrierea serviciului, poziției, relației sale etc.
+            într-un mod în care nu asumă genul lor.
+            Nu toți profesorii sunt „profesori/profesoare”. Nu fiecare soț este un „soț” sau o „soție”.
+        - >
+            Când te referi la o persoană al cărei gen nu îl știi,
+            unui grup de persoane de genuri mixte,
+            și mai ales persoanelor non-binare care preferă neutralitatea,
+            folosește formele neutre.
+        - >
+            Mai jos este prezentat un dicționar cu cuvintele la care să ai grijă.
+            Poți contribuii la el și să-ți adaugi sugestiile.
+
+    approved: 'intrări aprobate'
+    pending: 'în curs de moderare'
+    edit: 'Propune o schimbare'
+    edited: 'A propus o schimbare la'
+    editing: 'Modifici o intrare deja existentă'
+    empty: 'Niciun cuvânt nu a fost găsit potrivit criteriilor date'
+
+    submit:
+        action: 'Trimite'
+        actionLong: 'Trimite un cuvânt'
+        thanks: 'Mulțumim pentru contribuție!'
+        another: 'Trimite încă unul'
+        moderation: 'Contribuțiile trebuie să fie aprobate înainte de a fi publicate.'
+
+    template: 'Folosește un șablon'
+    root: 'Rădăcină' # or „Radical”
+
+    masculine: 'masculin'
+    masculineShort: 'masc.'
+    feminine: 'feminin'
+    feminineShort: 'fem.'
+    neuter: 'neutru'
+    neuterShort: 'n.' # isnt romanians short „neutru” form still „neutru”?
+
+    singular: 'singular'
+    singularShort: 'sg.'
+    plural: 'plural'
+    pluralShort: 'pl.'
+
+    image: 'Poză'
+
+community:
+    header: 'Comunitate'
+    headerLong: 'Comunitatea queer'
+
+terminology:
+    header: 'Terminologie'
+    headerLong: 'Dicționarul despre terminologia queer'
+    info:
+        - >
+            Majoritatea termenilor și frazelor legate de comunitatea LGBTQ+
+            sunt folosite ca inserții englezești în textele românești.
+            Am dori să prezentăm un glosar al acestor termeni, să descriem sensul lor,
+            și să propunem traducerile românești ale lor.
+    term: 'Termen'
+    original: 'Etimologie'
+    category: 'Categorie'
+    images: 'Imagini suplimentare, din afara catalogului de steaguri' # „drapele” could also work imo
+    definition: 'Definiție'
+    categories:
+        sexual_orientation:
+            name: 'Orientare sexuală'
+            description: 'De cine este atrasă o persoană în mod sexual'
+        romantic_orientation:
+            name: 'Orientare romantică'
+            description: 'De cine este atrasă o persoană în mod romantic'
+        #tertiary_orientation:
+        attraction:
+            name: 'Attracție'
+            description: 'De cine este atrasă o persoană în alte feluri'
+        gender:
+            name: 'Gen'
+            description: 'Cine este o persoană'
+        gender_expression:
+            name: 'Expresia genului'
+            description: 'Felul în care genul cuiva este arătat celorlalți'
+        relationship_model:
+            name: 'Modelul relației'
+            description: 'Cum arată o relație a unei persoane'
+        language:
+            name: 'Limbaj'
+            description: 'Alt limbaj legat de LGBTQIA+'
+        politics:
+            name: 'Politică'
+            description: 'Termeni legați de lupa pentru eliberarea persoanelor queer'
+        prejudice:
+            name: 'Prejudiciu'
+            description: 'Termeni legați de ura și discriminarea persoanelor queer'
+
+
+faq:
+    header: 'Întrebări' # going off by other translations, we can just use „întrebări”
+    headerLong: 'Întrebări adresate frecvent'
+    questions:
+        nonbinary:
+            question: 'Ce este termenul „non-binar”?'
+            answer:
+                - >
+                    Genul este mult mai complicat decât o simplă diferență între bărbat și femeie.
+                    Chiar și dintr-un punct de vedere biologic, putem diferenția sexul cromozomial,
+                    sexul genetic, sexul hormonal, sexul fenotipic…
+                    Ele nu sunt necesar egale între ele și nu trebuie să fie binare.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mai multe informații (în limba engleză) aici)}.
+                    Și când ajungem la aspectul cultural, „genul” este o construcție socială.
+                    În funcție de timp și locație, a fi „o femeie” sau „un bărbat” poate însemna a avea diferite
+                    drepturi, sarcini, norme… În europa, bărbații purtau tocuri și ciorapi,
+                    și persoanele native din America de Nord au recunoscut al treilea gen pentru secole
+                    {https://gender.wikia.org/wiki/Two-Spirit=(două-spirite)} etc. etc.
+                - >
+                    Termenul non-binar este un termen-umbrelă ce descrie identitatea oamenilor
+                    care nu intru în diferențierea binară bărbat/femeie.
+                    El include persoanele ce sunt
+                    {https://gender.wikia.org/wiki/Agender=agen},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
+                    {https://gender.wikia.org/wiki/Demigirl=demi-fete},
+                    {https://gender.wikia.org/wiki/Demiboy=demi-băieți},
+                    și {https://gender.wikia.org/wiki/Non-binary=multe multe altele}.
+                - >
+                    Termenul non-binar nu este chiar ceva „între” masculinitate și feminitate. Mai de grabă „după”.
+                    Persoanele non-binare nu trebuie să fie androgine, nu trebuie să folosească pronume neutre etc.
+                    Este vorba despre a fi liber de genuri, nu despre a crea altele.
+        why-respect:
+            question: 'De ce ar trebui să respect unele pronume <em>ciudate</em>?' # or „stranii”
+            answer:
+                - >
+                    Pentru că adresarea persoanelor în felul în care vor să fie adresate este baza relațiilor sociale.
+                    Nu ai striga-o pe Ana „Ștefania”, nu ai lăsa „domnule”/„doamnă” când te-ai adresa la șeful tău etc.
+                    Și sunt unele persoane ce nu vor să fie referite nici ca „{/el=el}” și nici ca „{/ea=ea}”.
+                    Dacă nu accepți asta, te pune pe <em>tine</em> într-un statut rău.
+                - >
+                    „Pronumele ciudate” sunt doar o chestiune cu care trebuie să te obișnuiești.
+        made-up:
+            question: 'Pronumele astea sunt făcute!' # „acestea” could also be used. replace „făcute” with „false”?
+            answer:
+                - >
+                    Da. Chiar sunt. La fel ca fiecare cuvânt din fiecare limbă.
+                    Unele cuvinte sunt doar mai vechi ca altele.
+        how-to-know:
+            question: 'Cum aflu cum să mă adresez cuiva?' # rephrasing? maybe replacing „aflu” with „știu” to keep it closer to its english version
+            answer:
+                - >
+                    Poți întreba! Da, poate fi un pic jenant, dar cu cât o facem mai mult, cu atât devine mai puțin jenant.
+                    Dacă putem întreba pe cineva de numele său, de ce nu și pronumele?
+                - >
+                    (Doar, te rugăm, nu pune întrebarea ca și „ești băiat sau fată?”.
+                    Întrebarea asta impune că sunt doar două răspunsuri corecte,
+                    și sugerează curiozitate nesănătoasă despre genitalele cuiva.
+                    În schimb, ai putea întreba „care sunt pronumele tale?” sau „cum ar trebui să mă refer la tine?”)
+                - >
+                    Este important și să normalizăm spunerea pronumelor când ne introducem cuiva.
+                    „Bună, sunt Mihai, {/el=el/lui}”. Nu-i așa de greu - dar pentru persoanele trans și non-binare înseamnă foarte mult!
+                    E și mai ușor online: doar pune pronumele tale (sau un link la exemple de pe website-ul nostru) în biografia ta.
+                - >
+                    Ține minte că multe persoane pot folosi un nume diferit și un set de pronume diferite în funcție de situație.
+                    Poate nu sunt încă „ieșiți” la prieteni sau la colegii de muncă, dar poate sunt mai comfortabili în jurul prietenilor trăind adevărul lor.
+                    Gândește-te bine. Poate ar trebui să îi întrebi „ce pronume ar trebui să folosesc în fața șefului tău?” etc.
+                - >
+                    Unele persoane dau mai multe pronume, ex: „{/el&ea=el/ea}” sau „{/ei&el=ei/el}”.
+                    Asta înseamnă că le plac toate formele acestea. De obicei, primul este cel preferat.
+        who-uses-it:
+            question: 'Măcar folosește cineva asta?'
+            answer:
+                - >
+                    Da! Milioane de persoane non-binare peste tot în lume.
+                    Fiecare pronume listat aici are pe cineva care chiar îl folosește în viața de zi cu zi.
+        authority:
+            question: 'Sunt aceste pronume non-binare aprobate de vreo autoritate?' # rephrasing?
+            answer:
+                - >
+                    Limbajul nu este vreo magie antică, dată de Dumnezeu, pusă în piatră.
+                    E doar un lucru pe care îl folosim pentru a comunica.
+                    Când îl schimbăm ca o societate, și când lumea din jurul nostru se schimbă,
+                    noi ajustăm limba pe care o folosim pentru a putea descrie mai bine.
+                    Noi suntem utilizatorii ei, deci <em>noi suntem autoritatea</em>
+                - >
+                    Dicționarele nu se grăbesc să adauge aceste schimbări,
+                    dar asta nu înseamnă că schimbările respective sunt false în vreun fel.
+                    Dar eventual formele noi, dacă folosite destul de des, vor fi incluse în dicționare.
+                    De exemplu, {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster},
+                    acceptă folosința lui {/they=„they” la singular} ca un pronume non-binar în limba engleză
+                - >
+                    Poți citi câteva {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
+                    despre neo-pronume.
+        bio:
+            question: 'De ce aș pune pronumele mele în biografia mea pe rețelele de socializare?'
+            answer:
+                - >
+                    Dacă ești cis (= nu trans) și folosești „{/el=el}” sau „{/ea=ea}” potrivit genului tău,
+                    ai crede că pronumele tale sunt <em>evidente</em>.
+                    Și da, poate e adevărat - cât timp numele tău e menționat în profil (și e tradițional masculin sau feminin)
+                    sau dacă ai o poză cu tine ca avatar.
+                    Majoritatea oamenilor nu au - deci e greu să ghicești cum doresc să fie chemați.
+                - >
+                    Dar de obicei e mai mult de-atât: pronumele tale pot fi „evidente”,
+                    dar există oameni ale căror pronume nu sunt.
+                    Ei vor să fie adresați corect, chiar și dacă nu „trec” drept genul lor,
+                    chiar și dacă nu sunt tranziționați (sau chiar dacă nu vor să se tranziționeze în general).
+                    Persoanele non-binare de obicei „nu arată non-binar”, nu cerem nimănui androginie.
+                - >
+                    Distribuirea pronumelor noastre e foarte importantă pentru persoanele trans, non-binare sau non-conformate de gen.
+                    Din păcate, asta ne evidențiază.
+                    Dar dacă și persoanele cis fac la fel, înseamnă foarte mult pentru noi.
+                    Ne face să ne simțim mai comfortabili, siguri și bine veniți
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mai multe motive (în limba engleză) aici).}
+        change:
+            question: 'Îmi pot schimba pronumele?'
+            answer:
+                - >
+                    Normal! Nimeni nu trebuie să fie surpins când cineva își schimbă viziunile, stilul, hobby-urile…
+                    Deci de ce ar fi ciudat că cineva a descoperit o parte a identității sale,
+                    a început să nu-i mai placă numele său, a descoperit o etichetă care se potrivește bine etc.?
+        get-used-to:
+            question: 'E ciudat că nu mă pot obișnui cu <em>noile mele</em> pronume?'
+            answer:
+                - >
+                    Chiar deloc! După atâția ani în care ai folosit pronumele egale cu cele de la genul atribuit la naștere
+                    e greu să te adaptezi la cele noi.
+                - >
+                    Pronumele ≠ genul.
+                    Genul tău nu se va schimba drastic doar din cauza că ai devenit confuz când cineva te-a strigat „ei”.
+                    Nu-ți face griji. Experimentează. Vezi ce ți se potrivește cel mai bine.
+        preferred-pronouns:
+            question: 'De ce n-aș putea spune „pronume preferate”?'
+            answer:
+                - >
+                    Pentru că fraza asta sugerează că pronumele cuiva sunt doar o fiță
+                    Dacă cineva doar „preferă” să fie strigată „ea”, el nu s-ar simți _foarte_ rău dacă îl strigăm „el”, nu?
+                    Arată a bărbat până la urmă, deci va fi mai ușor pentru mine!
+                - >
+                    Nu! Sunt pronumele noastre. Nu „pronumele noastre preferate”. Sunt numele nostru, nu „numele nostru preferat”.
+                    Dacă îți pasă de prietenii tăi trans, non-binari și de cei dragi, adresează-te corect.
+        gender-pronouns:
+            question: 'De ce n-aș putea spune „pronumele genului”?'
+            answer:
+                - >
+                    Pentru că genul ≠ pronumele. Pronumele sunt doar gramatică.
+                    Persoanele non-binare pot folosi pronume binare, unele lesbiane folosesc {/el=el/lui} din motive culturale etc.
+                - >
+                    Doar spune „pronume”.
+        flags:
+            question: 'Poți adăuga steagul ăsta? Poți scoate steagul ăla?'
+            answer:
+                - >
+                    Nu.
+                - >
+                    Menținerea unei liste de steaguri și etichete e o sarcină consumătoare de timp pentru echipa noastră.
+                    E și provocător în termenii de filtrare ale troll-ilor și ale vandalizatorilor de identitățile valide, cu suflet bun.
+                    Nu vrem să fim poliția identității. Și nu vrem nici să pierdem tot timpul având grijă de steaguri.
+                    E un proiect despre limbaj și pronume până la urmă, nu despre steaguri. Ele sunt doar un bonus.
+                - >
+                    Am făcut cât am putut să creăm o listă cu steagurile cele mai populare
+                    și, din câte știm, cele mai acceptate.
+                    Nu plănuim să extindem sau să micșorăm lista aceea.
+                - >
+                    Suntem conștienți că anumite steaguri poate nu sunt plăcute de unii
+                    (ex: din cauza unei istorii ale TERF-ilor încercând să preia un termen și să-l facă transfobic,
+                    din cauza multiplelor definiți confuzătoare
+                    sau chiar din cauza aspectelor de viață ale caracterelor mitice).
+                    Suntem și noi înșiși queer și trans, ne pasă de frații noștrii trans.
+                    Din păcate, e foarte greu să faci asemenea decizi
+                    când primim mesaje de la persoane trans care doresc să adauge un steag cu care se identifică
+                    și de la alte persoane trans care cer să îl scoată deoarece cumva daunează persoanelor trans.
+                    Nu e de parcă istoria fiecărei etichete e clară sau de parcă există vreo sursă autoritivă pentru a căuta.
+                    Și chiar și dacă queerfobicii încearcă să facă unii termeni jignitori,
+                    noi credem în puterea comunității să revendicăm acești termeni.
+                - >
+                    Dacă nu-ți place un steag, nu-l folosi.
+                    Dacă steagul tău nu există, încarcă-l
+                    (va fi marcat ca „generat de utilizator” pentru a mitiga vandalismul).
+        custom-pronouns:
+            question: 'Pronumele mele nu sunt listate'
+            answer:
+                - >
+                    Avem un generator pe pagina de pornire, îl poți folosi pentru a crea un link către orice pronume care îți place.
+                - >
+                    Poți și să listezi cele cinci forme folosind slash-uri, ex: {/el/pe el/lui/a lui/insusi=el/pe el/lui/a lui/insusi}.
+                    Ține minte că <strong>toate cele cinci forme</strong> trebuie să se afle în acest caz, altfel aplicația poate doar să ghicească ce vrei să spui.
+        unlisted-cards:
+            question: 'E posibil ca cineva să-mi caute cardul?'
+            answer:
+                - >
+                    Nu publicăm nicio listă de nume de utilizator prin care cineva ar putea căuta sau deschide unu câte unu.
+                    Oamenii ar trebui să-ți știe numele de utilizator doar dacă le dai un link către cardul tău (sau dacă au ghicit).
+                - >
+                    Prin {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex}
+                    și {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt}
+                    cerem motoarelor de căutare să ignore cardurile.
+                    Ține minte că nu toate respectă aceste directive,
+                    și că le-am adăugat abia recent, deci paginile care au găsit deja carduri
+                    (ex: când căutătoarele lor dau de un link către cardul tău Pronouns.Page postat de către tine public)
+                    s-ar putea să le mai țină în cache pentru un anumit timp.
+                - >
+                    Tu decizi ce-i în cardul tău – ține minte că lucrurile pe care le pui acolo (ex: linkuri către rețelele tale sociale),
+                    ar putea ajuta pe cineva să te identifice.
+        verified-links:
+            question: 'Cum verific linkurile din cardul meu?'
+            answer:
+                - >
+                    În {/cont=setările contului tău} potți conecta și deconecta mai multe conturi third-party,
+                    ceea ce te lasă să le folosești pentru a te loga.
+                    Dacă decizi să publici și un link către profilul tău third-party în cardul tău,
+                    atunci linkul va fi marcat cu un scut ([shield-check]).
+                    El va include și un tag <code>rel="me"</code> pentru ca servicii ca Mastodon să poată verifica și invers.
+                    Funcția asta funcționează doar cu Mastodon și Twitter până acum.
+        mutiple-cards:
+            question: 'Pot avea mai multe carduri sub un singur cont?'
+            answer:
+                - >
+                    Asta trebuie să fie cea mai cerută funcție de până acuma! 😅
+                    Suntem de acord cu ideea asta, ar ajuta la sisteme de exemplu
+                    sau pe persoanele ce doresc să aiba carduri separate pentru uz public și pentru prieteni apropiați.
+                    Din păcate, funcția asta necesită <em>o groază</em> de schimbări în cod, la fel și testare.
+                    Vom încerca s-o prioritizăm, dar neavând timp destul, nu putem promite nicio dată specifică.
+        business:
+            question: 'Sunteți un business?'
+            answer:
+                - >
+                    Nup. Suntem voluntari.
+                    Noi creăm website-ul cu munca noastră.
+                    Costurile întreținerii sunt acoperite pe o parte de {https://arc.io/faq=plugin-ul arc.io}
+                    și restul vine de la noi din portofele
+                    și din {/contact#support=donațiile voastre} - de care suntem foarte recunoscători! ❤️
+                - >
+                    Asta înseamnă și că dacă ești „boycotting” pe noi din cauza {/blog/we-are-inclusive=incluziunii noastre},
+                    ne faci o favoare. Nu-i de parcă facem bani de la tine.
+                    Excluzioniștii și queerfobii nu sunt bine veniți aici.
+links:
+    header: 'Linkuri'
+    headerLong: 'Linkuri extra'
+    links: 'Linkuri extra'
+    recommended: 'Noi recomandăm și'
+    blog: 'Blog'
+    mediaShort: 'Media'
+    media: 'Pronouns.page în media'
+
+    social: 'Rețele de socializare'
+
+    languageVersions: 'Versiuni în alte limbi'
+
+people: ~
+
+# optional, but would be nice to have
+english: # TODO
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Romanian non-binary pronouns'
+    description: 'If you don''t speak Romanian, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            Although Romanian doesn't gramatically have a neutral pronoun to describe a person,
+            that doesn't stop us from using any other pronoun as neutral.
+            The most popular one of them all is the plural masculine „el/lui”,
+            though some may use the plural feminine „ea/ei” or any other pronoun.
+            That doesn't make them any less non-binary! As we all know, pronouns ≠ gender.
+
+contact:
+    header: 'Contactează-ne'
+    authors: 'Autorii site-ului'
+    faq: >
+        Înainte de a ne scrie, vezi {/faq=întrebările adresate frecvent} - poate răspunsul întrebării tale e deja acolo.
+    technical: >
+        Ai vreo problemă tehnică sau vreo întrebare? Te rog includeți numele tău de utilizator și cât mai multe detalii posibile.
+        (ce zice eroarea? ești pe telefon sau pe calculator? ce browser folosești?
+        ce pași putem urmări pentru a reproduce problema? poți atașa o captură sau o înregistrare a ecranului? etc.)
+    hate: >
+        Vrei să ne trimiți emailuri queerfobice?
+        Lasă-te baltă, nu discutăm cu trolli.
+        Ne ia mai puțin timp să te dăm pe mut și să-ți punem mesajul în folderul de spam decât ți-a luat ție să-l scrii.
+    language: >
+        Suntem o echipă internațională – persoanele ce au creat o versiune lingvistică specifică
+        pot să nu fie aceleași persoane ce îți vor citi mesajul.
+        Deci, dacă e posibil, apreciem dacă ne-ai contacta în <strong>Engleză sau în Poloneză</strong>.
+    team:
+        name: 'Colectivul „Consiliul Limbajului Neutru”' # „The “Neutral Language Council” collective”
+        nameShort: 'Colectiv'
+        description: >
+            Noi suntem un colectiv queer dedicat să asambleze, să cerceteze, să formeze și să promoveze
+            limbajul neutru și non-binar.
+            Noi suportăm și acțiuni către egalitate și justiția socială.
+        extra: []
+        logo: 'Sigla colectivului este o combinație între simbolul transgender și o bulă de dialog ce simbolizează limbajul.'
+        members: 'Membrii actuali'
+        member: 'Membrii colectivului'
+        upcoming: 'Versiunile lingvistice viitoare'
+        join:
+            header: 'Alătură-te!'
+            encouragement: >
+                Îți pasă de limbajul neutru și non-binar?
+                Vrei să ajuți colectivul nostru care îl promovează? Grozav!
+                Orice ajutor în plus e bine venit!
+            areasIntro: 'Zonele în care ne-ai putea ajuta sunt:' # „Areas in which you might be able to help are for example:”
+            areas:
+                - 'extinderea și moderarea dicționarelor și ale glosarelor,'
+                - 'extinderea și moderarea listei de surse,'
+                - 'crearea graficilor și ale postărilor de pe rețelele de socializare,'
+                - 'răspunderea la mesajele directe,'
+                - 'moderarea profilelor,'
+                - 'crearea unei alte versiuni în altă limbă,'
+                - 'traducerea,'
+                - 'coordonarea procesului de a creea versiuni lingvistice,'
+                - 'scrierea postărilor pe blog,'
+                - 'programarea,'
+                - '…'
+            allies: >
+                Unele chestii necesită perspectiva unei persoane non-binare, altele nu chiar.
+                De aceea invităm și aliații binari.
+            how: 'Cum ne alături? Trimite-ne un email la {mailto:contact@pronouns.page=contact@pronouns.page}, în care să:'
+            application:
+                - 'te introduci,'
+                - 'dai un link către profilul tău de pronouns.page,'
+                - 'pui un link către rețeaua ta de socializare,'
+                - 'zici daca ai vreo experiență în muncă activistă,'
+                - 'spui cu ce ai vrea să ne ajuți.'
+            warning: >
+                Momentan avem destule persoane ce ne ajută cu Engleza și cu moderarea,
+                deci ține minte că se poate să nu avem ce muncă să-ți dăm, dacă cu asta voiai să ne ajuți.
+                Dar ne poți ajuta în alte locuri (muncă tehnică, design, grafici etc.)
+                și alte limbi (inclusiv cele care sunt deja suportate, dar le trebuie de ex: traduceri pentru noi funcții).
+
+support:
+    header: 'Suport'
+    description: >
+        Dacă vrei să donezi pentru server, domeniu, stickere etc., sau pur și simplu să cumperi autorilor o bere,
+        poți folosi linkurile de mai jos:
+    bankAccount: 'Transfer bancar'
+    # bankAccountOwner: 'Contul este numele unui întreținător al proiectului, Andrea Vos'
+
+user:
+    header: 'Cont'
+    headerLong: 'Contul tău'
+    tokenExpired: 'Încercare expirată. Te rugăm să reîmprospătezi pagina și să încerci din nou.' # thinking „reîmprospătezi” would be better than „dai refresh”
+    login:
+        help: 'Pentru a te loga sau pentru a creea un cont, poți folosi ori butoanele de rețele de socializare, ori să-ți introduci emailul în câmpul de mai jos, iar apoi să confirmi folosind codul pe care l-ai primit pe email.'
+        placeholder: 'Email (sau numele de utilizator, dacă te-ai înregistrat deja)'
+        action: 'Loghează-te'
+        emailSent: 'Ți-am trimis un mail cu un cod format din 6 cifre. Introdu-l aici. Codul poate folosit o singură dată și rămâne valid timp de 15 minute de la trimiterea mail-ului.'
+        userNotFound: 'Utilizatorul nu a fost găsit.'
+        email:
+            subject: 'Codul tău de logare este %code%'
+            instruction: 'Pentru a-ți confirma adresa de e-mail, folosește acest cod:'
+            extra: 'Dacă nu ai aprobat trimiterea acestui cod, pur și simplu ignoră acest mail.'
+        why: >
+            Crearea unui cont te ajută să-ți administrezi cardurile ({/@andrea=ca acesta}).
+        passwordless: 'Acest website nu stochează parole. {https://avris.it/blog/passwords-are-passé=Mai multe informații.}'
+        instancePlaceholder: 'Instanță' # TODO
+        domainPlaceholder: 'Domeniu'
+        deprecated: 'Nefolosit'
+        depreciationNotice: >
+            Acesta nu-i un furnizor de autentificare sigur.
+            <a href="%link%" target="_blank" rel="noopener">Verifică acest link pentru mai multe detalii</a>.
+            Îți recomandăm să fi sigur că ai și o altă metodă de a te loga.
+    code:
+        action: 'Validează'
+        invalid: 'Codul nu este valid.'
+    account:
+        changeUsername:
+            header: 'Nume de utilizator'
+            action: 'Schimbă numele de utilizator'
+            invalid: 'Numele de utilizator trebuie să conțină între 4 și 16 caractere și poate avea doar numere, litere, puncte, cratimi și sublini.' # replaced „linii de jos” with „sublini” since i think thats how theyre called
+            taken: 'Acest nume de utilizator este deja folosit.'
+        changeEmail:
+            header: 'Adresă de email'
+            action: 'Schimbă emailul'
+            invalid: 'Adresă de email nu este validă.'
+            taken: 'Această adresă de email este deja folosită.'
+        admin: 'Admin'
+    logout: 'Ieși din cont'
+    avatar:
+        header: 'Avatar'
+        change: 'Schimbă'
+    deleteAccount: 'Șterge-ți contul'
+    deleteAccountConfirm: 'Ești sigur că dorești să îți ștergi contul definitiv? Această acțiune este ireversibilă!'
+    socialConnection:
+        list: 'Conexiuni cu rețele de socializare'
+        connect: 'Conectează-te'
+        refresh: 'Reîmprospătează' # or „refresh”
+        disconnect: 'Deconectează-te'
+        disconnectConfirm: 'Ești sigur că dorești să ștergi această conexiune? (Poți intra în cont cu ajutorul email-ului tău %email%)'
+    mfa:
+        header: 'Autentificare în mai mulți factori'
+        init: >
+            Scanează codul acesta QR (sau introdu codul de mai jos) în aplicatia ta TOTP de autentificare (ex: {https://authy.com/=Authy})
+            și apoi introdu token-ul care este generat.
+        recovery:
+            header: 'Codurile de recuperare'
+            save: >
+                Salveaza următoarele coduri de recuperare într-un loc sigur.
+                Vei putea să le folosești pentru a sări peste AMMF în cazul în care ai pierdut dispozitivul cu care te autentificai.
+            saved: 'OK, le-am salvat!'
+            enter: 'Introdu codul de recuperare'
+        cancel: 'Anulează'
+        enabled: 'Activat'
+        enable: 'Activează AMMF'
+        disable: 'Dezactivează AMMF'
+        disableConfirm: 'Ești sigur că dorești să dezactivezi AMMF?'
+
+profile:
+    description: 'Descriere'
+    names: 'Nume'
+    pronouns: 'Pronume'
+    pronounsInfo: >
+        Poți introduce un <strong>pronume</strong> (ex: „ei/lor” sau “ea/ei”)
+        sau un <strong>link</strong> (ex: „https://ro.pronouns.page/ne”)
+        sau cele cinci forme (ex: „el/pe el/lui/a lui/însuși”).
+        Ține minte că <strong>toate cele cinci forme</strong> sunt necesare în cazul acesta,
+        altfel, aplicația poate doar să ghicească ce vrei să spui.
+        Poți folosi {/pronume#generator=<strong>generatorul</strong>} pentru a umple propoziții cu forme personalizate.
+        Dacă pronumele tale urmăresc {/pronume#nameself=<strong>modelul nameself</strong>},
+        poți și să folosești două puncte (ex: “:star”).
+    pronounsNotFound: 'Nu putem găsi acest pronume!'
+    words: 'Cuvinte'
+    birthday: 'Vârstă'
+    birthdayInfo: 'Nu îți publicăm data nașterii, doar vârsta.'
+    flags: 'Steaguri'
+    flagsInfo: 'Trage din steagurile de mai jos și introdu-le aici.'
+    flagsCustom: 'Încarcă steaguri personalizate'
+    flagsCustomWarning: 'Acest steag a fost încărcat de către un utilizator. Echipa pronouns.page nu este responsabilă pentru el.'
+    flagsAsterisk: 'Aceasta nu este o identitate queer, dar o includem pentru persoanele ce sunt queer în alte feluri (ex: persoanele trans straight).'
+    links: 'Linkuri'
+    linksRecommended: 'Recomandăm să adaugi linkuri la'
+    verifiedLinks:
+        header: 'Linkuri verificate'
+        info: >
+            Linkurile pe care le pune cineva public în profilul său vor fi marcate cu un scut
+            dacă sunt verificate prin logarea în furnizorul de autentificare dat,
+            sau (în construcție) de un tag <code>rel="me"</code> ducând înapoi la card.
+            Linkurile noastre includ și un tag <code>rel="me"</code> pentru ca site-urile externe să-ți poată verifica și cardul tău.
+    column: 'Coloană'
+
+    header: 'Carduri'
+    list: 'Cardurile tale'
+    init: 'Crează un card'
+    show: 'Arată'
+    edit: 'Editează'
+    delete: 'Șterge'
+    deleteConfirm: 'Ești sigur că vrei să ștergi acest card?'
+    editor:
+        header: 'Editor de card'
+        save: 'Salvează-ți cardul'
+        defaults: 'Restaurează la setările implicite'
+        propagate: 'Împrăștie această schimbare a cardului în fiecare limbă'
+    opinion:
+        yes: 'Da'
+        jokingly: 'În glumă'
+        close: 'Doar dacă suntem apropiați'
+        meh: 'Okay'
+        no: 'Nu'
+    banner: >
+        Poți folosi site-ul nostru și pentru a crea un card {/@example=ca acesta},
+        conținând numele tale, pronumele tale, steagurile tale, cuvintele tale plăcute etc.
+        Apoi poți pune un link spre el în biografie sau în footer-ul e-mailului.
+        Doar crează un cont {/cont=aici}.
+    bannerButton: 'Crează un card'
+    card:
+        link: 'Poza cardului'
+        generate: 'Generează'
+        generating: 'Generare în progres… Poate dura câteva minute.'
+    empty: 'Persoana aceasta nu are încă niciun card.'
+    personal:
+        header: 'Personal'
+        description: 'Doar tu poți vedea această secțiune'
+    language:
+        header: 'Limbă'
+        description: 'Cardul lui @%username% e valabil și în următoarele limbi'
+
+share: 'Distribuie'
+
+crud:
+    approve: 'Aprobă'
+    hide: 'Ascunde'
+    remove: 'Șterge'
+    removeConfirm: 'Ești sigur că dorești să stergi acest lucru?'
+    edit: 'Editează'
+    add: 'Adaugă'
+    filter: 'Filtrează'
+    filterLong: 'Filtrează lista…'
+    search: 'Caută…'
+    author: 'Adăugat de'
+    saved: 'Schimbările s-au salvat cu succes!'
+    loginRequired: '{/cont=Loghează-te} pentru a trimite o intrare'
+    copy: 'Copiază linkul'
+    download: 'Descarcă'
+
+footer:
+    license: >
+        {https://gitlab.com/Avris/Zaimki=Codul sursă} și conținutul sunt sub licența {/license=OQL}.
+    links: 'Date de contact, rețele de socializare, suportă cauza'
+    legal: 'Legal'
+    financial: 'Transparența financiară'
+    technical: 'Tehnic'
+    sibling: 'Proiecte asemănătoare' # „sibling projects”
+
+notFound:
+    message: 'Pagina nu a fost găsită'
+    back: 'Întoarce-te la pagina principală'
+
+authRequired:
+    message: 'Trebuie să te loghezi pentru a vedea acest site'
+    go: 'Către pagina de conectare'
+
+confirm:
+    header: 'Ești sigur?'
+    yes: 'Da, sunt sigur'
+    no: 'Nu, anulează'
+    ok: 'OK'
+    save: 'Salvează'
+    dismiss: 'Inchide'
+
+terms:
+    header: 'Termeni și condiții'
+    lastUpdate: 'Actualizat ultima oară la data de'
+    consent: 'Conectându-te, accepți {/terms=Termeni și condiții}.'
+    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
+    translationDisclaimer: >
+        Textul următor este doar o traducere auxiliară.
+        Singura versiune legală ale Termenilor este cel în limba engleză, aflat
+        {https://en.pronouns.page/terms=aici}.
+    content:
+        intro: >
+            Acești termeni conduc accesul și utilizarea ta al acestui serviciu, furnizate de către website-ul
+            <strong>pronouns.page / zaimki.pl</strong> operat de colectivul „Consiliul Limbajului Neutru”
+            care poate fi contactat prin email:
+        consent: >
+            Prin folosirea serviciilor, ești de acord cu acești termeni și accepți
+            colectarea și procesarea datelor așa cum este descris în politica de confidențialitate de mai jos.
+        accounts:
+            header: 'Utilizatorii și conturile'
+            age: >
+                Nu poți crea un cont dacă ți se interzice accesul din cauza legilor jurisdicției.
+                Nu poți crea un cont dacă ai sub 13 ani.
+                Dacă ai sub 16 ani, ai nevoie de consimțământul unei persoane cu responsabilitatea de părinte/tutore. # „părinte sau tutore”? or how was the second thing?? i havent seen a romanian ToS in a long time
+            authentication: >
+                Când creezi un cont cu noi, tu ești responsabil să ai grijă de metoda de autentificare
+                pe care o folosești pentru a accesa acest serviciu (parola de la contul tău de email și/sau platforma de socializare).
+                Ești de acord să nu o dezvălui la niciun third party # „third party” or smth else?
+                Trebuie să ne spui imediat când vezi vreo spărtură în securitate sau utilizare neautorizată a contului tău.
+            termination: >
+                Noi putem să îți oprim sau suspendăm contul tău imediat, fără niciun alt anunț,
+                cu orice motiv, incluzând fără limită dacă încalci termenii.
+            inactivity: >
+                Conturile fără niciun card și fără activitate în ultimele 30 zile vor fi șterse și numele lor de utilizator eliberate.
+        content:
+            header: 'Conținut'
+            ownership: >
+                Conținutul pe care îl postezi pe acest serviciu este al tău.
+                Postândul, ești de acord ca noi să avem voie să folosim,
+                copiem, reproducem, procesăm, adaptăm, modificăm, publicăm, transmitem, arătăm și să distribuim oriunde, fără licență, în orice fel.
+            liability: >
+                Nu susținem și nu garantăm adevăr sau siguranța conținutului postat de alți utilizatori ai acestui serviciu,
+                și mai ales orice link la website-uri externe.
+            violations: >
+                Nu ai voie să postezi pe acest serviciu niciun conținut ce ar putea încălca legea sau normele sociale,
+                Incluzând, dar nu limitat la:
+            violationsExamples:
+                totalitarian: 'răspândirea regimelor totalitare'
+                hateSpeech: 'hate speech' # „discurs de ură”? or „vorbe de ură”?
+                racism: 'rasism'
+                xenophobia: 'xenofobie'
+                homophobia: 'homofobie'
+                transphobia: 'transfobie'
+                enbyphobia: 'enbyfobie'
+                queerphobia: 'queerfobie'
+                exclusionism: 'exclusionism queer'
+                misogyny: 'misoginism'
+                harassment: 'hărțuire'
+                impersonation: 'impersonare'
+                childPornography: 'pornografie cu minori'
+                unlawfulConduct: 'conduită ilegală'
+                misinformation: 'dezinformare'
+                doxxing: 'distribuirea datelor personale ale cuiva'
+                spam: 'spam'
+                trolling: 'trolling'
+                advertisement: 'reclame'
+                copyright: 'violări ale drepturilor de autor copyright sau a unei mărci'
+            responsibility: >
+                Tu ești responsabil pentru orice conținut postat pe serviciu.
+                Dacă încalci termenii aceștia, vom șterge conținutul fără niciun anunț și poate vom revoca licența ta de a folosi serviciul acesta.
+                Dacă încalci legile, vom trimite informațiile tale agențiilor de aplicăre a legilor. # rephrasing needed.
+        privacy:
+            header: 'Politica de confidențialitate'
+            effort: >
+                Depunem fiecare efort pentru a stoca datele tale securizat și ca nimic non-public să nu fie
+                folosit de sau transferat la orice third party, cu exceptia unor trusted parties descrise mai jos. # „third party” & „trusted parties” in romanian please - my brain cant process them rn
+            data: >
+                Cu excepția datelor pe care le postezi tu pe serviciul acesta ca și conținut,
+                și datele pe care le împărtășești cu noi (ex: tokene de access OAuth, dacă folosești logarea prin rețelele de socializare),
+                nicio altă dată privată conectată la contul tău nu va fi stocată sau procesată.
+            editRemoval: >
+                Poți edita și șterge orice conținut ai postat pe acest serviciu.
+            contact: >
+                Când ne contactezi prin email, stocăm adresa ta de email pentru a putea să îți răspundem la orice întrebări suplimentare.
+            cookies: >
+                Folosim doar first-party cookies și stocarea locală pentru a te ține logat și pentru a-ți salva setările.
+            plausible: >
+                Folosim Plausible pentru a analiza traficul de pe site. Datele acestea nu au nicio legătură cu numele tău de utilizator, iar IP-ul tău e anonimizat.
+                Le poți citi politica de confidențialitate {https://plausible.io/privacy=aici}.
+            arc: >
+                Folosim arc.io pentru a acoperi costurile menținerii site-ului fără a introduce reclame.
+                Poți citi mai multe despre acest lucru și politica lor de confidențialitate
+                {https://arc.io/faq=aici}.
+            hCaptcha: >
+                Folosim hCaptcha pentru a filtra roboții și pentru a preveni atacurile DDoS.
+                Poți citi politica lor de confidențialitate
+                {https://www.hcaptcha.com/privacy=aici}.
+            logsBackups: >
+                Înregistrările și back-up-urile sunt stocate pentru maximum 18 luni.
+            gdpr: >
+                Datele tale personale sunt protejate de GDPR, ceea ce înseamnă ca ai dreptul de
+                a vedea, corecta, actualiza și sterge datele pe care le stocăm despre tine.
+        closing:
+            header: 'General'
+            jurisdiction: >
+                Legile aplicate sunt legile Regatului Olandez
+            changes: >
+                Reservăm dreptul de a modifica termenii aceștia oricând.
+                Dacă o schimbare este fizică, te vom anunța cu 30 zile înainte de a pune schimbarea în aplicare.
+
+admin:
+    header: 'Panoul de administrator'
+    user:
+        user: 'Utilizator'
+        createdAt: 'Data înregistrării'
+        email: 'E-mail'
+        roles: 'Permisiuni'
+        profiles: 'Profiluri'
+        confirmRole: 'Ești sigur că dorești să schimbi rolul lui @%username% în "%role%"?'
+
+table:
+    empty: 'Gol…'
+    count: 'Numerotare'
+    sort: 'Trage pentru a sorta'
+    scrollUp: 'Du-te sus'
+    more: 'Arată mai multe'
+
+api:
+    header: 'API public'
+    example: 'Exemplu'
+    query: 'Parametrii' # „Query string parameters”
+
+quotation:
+    start: '„'
+    end: '”'
+    colon: ':'
+
+localise:
+    shorter: 'Adaugă mai multe'
+    short: 'Adaugă versiuni lingvistice'
+    long: 'Dorești să creezi o versiune într-o altă limbă? Grozav! Te rog verifică'
+    longLink: 'acest manual!'
+
+images:
+    upload:
+        instruction: 'Apasă sau trage poza ta aici'
+        instructionShort: 'Încarcă'
+
+error:
+    generic: 'Ceva a eșuat, te rugăm să încerci din nou…'
+
+captcha:
+    reason: 'Te rog dovedește că nu ești un robot pentru a mitiga spamul și atacurile DDoS.'
+    invalid: 'CAPTCHA nu este valid, te rog reîncearcă'
+
+mode:
+    light: 'Modul luminos'
+    automatic: 'Automatic'
+    dark: 'Modul întunecat'
+
+ban:
+    reason: 'Motivul suspendării'
+    visible: '(acesta va fi vizibil utilizatorului)'
+    terms: 'Regulile încălcate (necesar)'
+    action: 'Suspendă această persoană'
+    confirm: 'Ești sigur că dorești să suspendezi @%username%?'
+    header: 'Ești suspendat. Profilul tău nu va fi arătat nimănui.'
+    banned: 'Suspendat'
+    termsIntro: 'Conform {/terms=Termenilor} noștri'
+
+report:
+    action: 'Raportează abuz'
+    comment: 'Te rog explică puțin ce ți se pare greșit cu acest profil'
+    confirm: 'Ești sigur că vrei să raportezi pe @%username%?'
+    sent: 'Raportul tău a fost trimis. Mulțumim pentru ajutorul tău!'
+    terms: 'Ține minte ce e interzis conform {/terms=Termenilor} noștri'
+    hoarding: 'Te rugăm, nu raporta pentru „furarea numelui de utilizator”. Ștergem automat conturile fără carduri după o perioadă de inactivitate. Raportul tău nu o va face mai rapid.'
+
+flags:
+    Abroromantic: 'Abroromanti{inflection_c}'
+    Abrosexual: 'Abrosexual{inflection}'
+    Achillean: 'Ahilian'
+    Alloromantic_Asexual: 'Aloromantic{inflection_c} asexual{inflection}'
+    Agender: 'Agen'
+    Ambiamorous: 'Ambiamorous'
+    Anarcha-Queer: 'Anarco-queer'
+    Androgyne: 'Androgin{inflection}'
+    Androsexual: 'Androsexual{inflection}'
+    Aporagender: 'Aporagen'
+    Archaeopronouns: 'Arheopronume'
+    Aroace: 'Aroace'
+    Aromantic: 'Aromantic'
+    Aromantic_Allosexual: 'Aromanti{inflection_c} alosexual{inflection}'
+    Asexual: 'Asexual{inflection}'
+    Autigender: 'Autigen'
+    Bear: 'Urs'
+    Bicurious: 'Bi-curi{inflection_os}'
+    Bigender: 'Bigen'
+    Biromantic: 'Biromanti{inflection_c}'
+    Bisexual: 'Bisexual{inflection}'
+    Butch: 'Butch'
+    Ceteroromantic: 'Ceteroromanti{inflection_c}'
+    Ceterosexual: 'Ceterosexual{inflection}'
+    Cis_Ally: 'Aliat{inflection} cis'
+    Demiboy: 'Demi-băiat'
+    Demigender: 'Demi-gen'
+    Demigirl: 'Demi-fată'
+    Demiromantic: 'Demi-romanti{inflection_c}'
+    Demisexual: 'Demi-sexual{inflection}'
+    Diamoric: 'Diamori{inflection_c}'
+    Enbian: 'Nobian{inflection}'
+    Fa*afafine: 'Fa''afafine'
+    Femme: 'Femme'
+    Gay: 'Gay'
+    Gender_Questioning: 'Întrebându-și identitatea de gen'
+    Genderfae: 'Genderfae'
+    Genderfaun: 'Genderfaun'
+    Genderfluid: 'Genderfluid'
+    Genderflux: 'Genderflux'
+    Genderqueer: 'Genderqueer'
+    Greyasexual: 'Grisexual{inflection}'
+    Greyaromantic: 'Griromanti{inflection_c}'
+    Gynesexual: 'Gygnesexual{inflection}'
+    Heteroflexible: 'Heteroflexibil{inflection}'
+    Heteroromantic: 'Heteroromanti{inflection_c}'
+    Heterosexual: 'Heterosexual{inflection}'
+    Hijra: 'Hijra'
+    Homoflexible: 'Homoflexibil{inflection}'
+    Homoromantic: 'Homoromanti{inflection_c}'
+    Intersex: 'Intersex'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Pride-ul Pieii'
+    Lesbian: 'Lesbiană'
+    Lesbiromantic: 'Lesbiromanti{inflection_c}'
+    Maverique: 'Maverique'
+    Monoamorous: 'Monoamorous'
+    Monogamous: 'Monogamous'
+    Muxe: 'Muxe'
+    Nebularomantic: 'Nebularomanti{inflection_c}'
+    Neopronouns: 'Neopronume'
+    Neutrois: 'Neutru'
+    Nonbinary: 'Non-binar{inflection}'
+    Omnisexual: 'Omnisexual{inflection}'
+    Omniromantic: 'Omniromanti{inflection_c}'
+    Oriented_Aroace: 'Aroace orientat{inflection}'
+    Pangender: 'Pangen'
+    Panromantic: 'Panromanti{inflection_c}'
+    Pansexual: 'Pansexual{inflection}'
+    Polyamorous: 'Poliamor{inflection_os}'
+    Polyromantic: 'Panromanti{inflection_c}'
+    Polysexual: 'Polisexual{inflection}'
+    Pomoromantic: 'Pomoromanti{inflection_c}'
+    Pomosexual: 'Pomosexual{inflection}'
+    Progress_Pride: 'Progress Pride'
+    Queer: 'Queer (cwir)'
+    Queerian: 'Queerian{inflection}'
+    Queerplatonic: 'Queerplatoni{inflection_c}'
+    Quoiromantic: 'Queerromanti{inflection_c}'
+    Sapphic: 'Safi{inflection_c}'
+    Sexuality_Questioning: 'Întrebându-și orientatea sexuală'
+    Straight_Ally: 'Aliat{inflection} hetero'
+    Toric: 'Tori{inflection_c}'
+    Transfeminine: 'Transfeminin{inflection}'
+    Transgender: 'Transgen'
+    Transmasculine: 'Transmasculin{inflection}'
+    Transneutral: 'Transneutru'
+    Trigender: 'Trigen'
+    Trixic: 'Trixi{inflection_c}'
+    Two_Spirit: 'Bispiritual{inflection}'
+    Xenogender: 'Xenogen'
+
+calendar:
+    header: 'Calendar'
+    headerLong: 'Calendarul queer'
+    date: '%date% %year%'
+    months:
+        1: 'Ianuarie'
+        2: 'Februarie'
+        3: 'Martie'
+        4: 'Aprilie'
+        5: 'Mai'
+        6: 'Iunie'
+        7: 'Iulie'
+        8: 'August'
+        9: 'Septembrie'
+        10: 'Octombrie'
+        11: 'Noiembrie'
+        12: 'Decemberie'
+    dates:
+        1: '%day% Ianuarie'
+        2: '%day% Februarie'
+        3: '%day% Martie'
+        4: '%day% Aprilie'
+        5: '%day% Mai'
+        6: '%day% Iunie'
+        7: '%day% Iulie'
+        8: '%day% August'
+        9: '%day% Septembrie'
+        10: '%day% Octombrie'
+        11: '%day% Noiembrie'
+        12: '%day% Decembrie'
+    events:
+        pride_month: 'Luna {/terminology#pride=Pride-ului}'
+        trans_month: 'Luna Internațională a {/terminology#transgender=Conștientizării persoanelor Transgender}'
+        zaimki_birthday: 'Ziua de naștere a Pronouns.page'
+        agender_day: 'Ziua {/terminology#agender=Agender} Pride'
+        asexuality_day: 'Ziua Internațională a {/terminology#asexual=Asexualității}'
+        bisexuality_day: 'Celebrează ziua {/terminology#bisexual=Bisexualității}'
+        drag_day: 'Ziua {/terminology#drag=Drag}'
+        idahobit: 'Ziua Internațională Contra {/terminology#homophobia=Homofobiei}, {/terminology#transphobia=Transfobiei} și {/terminology#biphobia=Bifobiei}'
+        intersex_day: 'Ziua Conștientizării persoanelor {/terminology#intersex=Intersex}'
+        intersex_remembrance_day: 'Ziua de Reamintire a persoanelor {/terminology#intersex=Intersex}'
+        lesbian_day: 'Ziua Internațională a {/terminology#lesbian=Lesbianelor}'
+        lesbian_visibility_day: 'Ziua Internațională a Vizibilității {/terminology#lesbian=Lesbiene}'
+        coming_out_day: 'Ziua {/terminology#coming%20out=Ieșirii}'
+        nonbinary_day: 'Ziua Internațională a  {/terminology#nonbinary=Persoanelor non-binare}'
+        pan_day: 'Ziua Conștientizării {/terminology#pansexual=Pansexualității} & {/terminology#panromantic=Panromantismului}'
+        trans_remembrance_day: 'Ziua de Reamintire a persoanelor {/terminology#transgender=Transgender}'
+        trans_visibility_day: 'Ziua Internațională a Vizibilității persoanelor {/terminology#transgender=Trans}'
+        zero_discrimination_day: 'Ziua Zero Discriminări'
+        arospec_week: 'Săptămâna Conștientizării {/terminology#aromantic%20spectrum=Spectrumului Aromantic}'
+        arospec_week___timeDescription: 'în toată săptămâna începând Duminica după Valentine''s Day'
+        asexual_week: 'Săptămâna Conștientizării {/terminology#asexual=Asexualității}'
+        asexual_week___timeDescription: 'în ultima săptămână completă din Octombrie (începând Duminica)'
+        bisexual_week: 'Săptămâna Conștientizării {/terminology#bisexual=Bisexualității}'
+        pronouns_day: 'Ziua Pronumelor'
+        pronouns_day___timeDescription: 'în a treia Miercuri din Octombrie'
+        trans_week: 'Săptămâna Conștientizării persoanelor {/terminology#transgender=Trans}'
+        trans_parent_day: 'Ziua Părinților {/terminology#transgender=Trans}'
+        trans_parent_day___timeDescription: 'în prima Duminică din Noiembrie'
+        nonbinary_week: 'Săptămâna Conștientizării {/terminology#nonbinary=non-binary}'
+        nonbinary_week___timeDescription: 'în săptămâna (Luni-Duminică) din jurul lui 14 Iulie'
+        polyamory_day: 'Ziua {/terminology#polyamory=Polyamory}'
+        homophobia_sport: 'Ziua Internațională contra {/terminology#homophobia=Homofobiei} în Sporturi'
+        gay_uncles_day: 'Ziua Unchiului {/terminology#gay=Gay}'
+        gay_uncles_day___timeDescription: 'în a doua Duminică din August'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=Ziua LGBTQ+ STEM}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=Ziua Internațională a Acțiunii pentru Depatologizarea persoanelor Trans}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=Ziua Internatională a Cărților LGBTI}'
+        human_rights_day: '{https://ro.wikipedia.org/wiki/Ziua_Drepturilor_Omului=Ziua drepturilor omului}'
+        nonbinary_parents_day: 'Ziua Părinților {/terminology#nonbinary=non-binari}'
+        trans_prisoner: 'Ziua Prizonierilor {/terminology#transgender=Transgender} pentru Acțiune și Solidaritate'
+        xenogender_day: 'Ziua Vizibilității persoanelor {https://nonbinary.wiki/wiki/Xenogender=Xenogender}'
+        genderqueer_day: 'Ziua vizibilității persoanelor {/terminology#genderqueer=Genderqueer}'
+        genderfluid_day: 'Ziua vizibilității persoanelor {/terminology#genderfluid=Genderfluid}'
+        aids_day: 'Ziua Lumii a lui SIDA'
+        tolerance_day: 'Ziua Internațională a Toleranței'
+        social_justice_day: 'Ziua Lumii pentru Justiție Socială'
+        stonewall_day: 'Aniversarea Revoltelor Stonwall'
+        domestic_violence: 'Ziua Conștientizării Violenței Domestice LGBTQ'
+        polysexual_day: 'Ziua Vizibilității a {/terminology#polysexual=Polysexualității} & a {/terminology#polyromantic=Polyromantismului}'
+        orlando_day: 'Pulse Night of Remembrance' # TODO
+        aids_memorial: 'Ziua Internațională Memorială a Luminii Lumânorilor SIDA'
+        aids_memorial___timeDescription: 'în a treia Duminică din Mai'
+        health_week: 'Săptămâna Conștientizării Sănătății LGBT'
+        health_week___timeDescription: 'de Luni până Vineri în ultima săptămână din Martie'
+        lesbian_visibility_week: 'Ziua Vizibilității {/terminology#lesbian=Lesbienelor}'
+        demigender_day: 'Ziua Conștientizării persoanelor {/terminology#demigender=Demigender}'
+        pan_pride_day: 'Ziua {/terminology#pansexual=Pansexual} Pride'
+        transmasculine_day: 'Ziua Persoanelor {/terminology#transmasculine=Transmasculine}'
+        asexual_visibility_day: 'Ziua Vizibilității persoanelor {/terminology#asexual=Asexuale}'
+        bi_health_month: 'Luna Conștientizării Sănătății persoanelor {/terminology#bisexual=Bisexuale}'
+        holocaust_remembrance_day: 'Ziua Internațională a Reamintirii Holocaustului'
+        family_equality_day: 'Ziua Internațională a Egalității în Familie'
+        family_equality_day___timeDescription: 'în prima Duminică din Mai'
+        aro_month: 'Luna Conștientizării {/terminology#aromantic=Aromantismului}'
+        black_ribbon_day: 'Ziua Panglicii Negre'
+        black_queer_week: 'Săptămâna Istoriei {/terminology#queer=Queer} Negre'
+        black_queer_week___timeDescription: 'în a treia săptămână din Februarie'
+        mena_lesbian_day: 'Ziua Pride a {/terminology#lesbian=Lesbianelor} {https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Nord și Est Africane} și Femeilor {/terminology#queer=Queer}'
+        hate_crime_awareness_week: 'Săptămâna Conștientizării Crimei de Ură'
+        hate_crime_awareness_week___timeDescription: 'de la a doua Sâmbătă până la a treia din Octombrie (inclusiv amândouă Sâmbete)'
+        deaf_awareness_week: 'Săptămâna Conștientizării Surzilor LGBTQ'
+        suicide_prevention_day: 'Ziua Lumii a Prevenirii Sinuciderii'
+        suicide_prevention_month: 'Luna Prevenirii Sinuciderii'
+        aids_awareness_month: 'Luna Conștientizării SIDA'
+        genderfluid_week: 'Săptămâna Conștientizării persoanelor {/terminology#genderfluid=Genderfluid}'
+        pan_week: '{https://posi-pan.tumblr.com/panweek=Săptămâna Pan}'
+        parents_day: 'Ziua Părinților cu Expansivă de Gen'
+        parents_day___timeDescription: 'în prima Duminică din Decembrie'
+        hiv_testing_day: 'Ziua Internațională a Testării HIV'
+        freedressing_day: 'Ziua Conștientizării Freedressing' # translation of „Freedressing”
+        sexual_health_day: 'Ziua Conștientizării Sănătății Sexuale și Reproductive' # TODO
+        world_sexual_health_day: 'Ziua Mondială a Sănătății Sexuale' # TODO
+        aids_vaccine_day: 'Ziua Mondială al Vaccinului împotriva SIDA' # TODO
+        queer_youth_day: 'Ziua Tinerilor Queer' # TODO
+        ominsexual_day: 'Ziua Vizibilității Omnisexualității' # TODO
+        unlabeled_day: 'Ziua Vizibilității Neetichetaților' # TODO
+        trans_youth_day: 'Ziua Vizibilității Copiilor și Tinerilor Trans' # TODO
+        hiv_long_term_survivors_day: 'Ziua Conștientizării Supraviețuitorilor HIV pe termen lung' # TODO
+        women_hiv_awareness_day: 'Ziua Conștientizării Femeilor și Fetelor cu HIV/SIDA' # TODO
+        youth_hiv_awareness_day: 'Ziua Conștientizării Minorilor cu HIV/SIDA' # TODO
+        gay_hiv_awareness_day: 'Ziua Conștientizării Bărbaților Gay cu HIV/SIDA' # TODO
+        black_hiv_awareness_day: 'Ziua Conștientizării Persoanelor de Culoare cu HIV/SIDA' # TODO
+        hiv_aging_awareness_day: 'Ziua Conștientizării HIV/SIDA și a Îmbătrinirii' # TODO
+        trans_hiv_testing_day: 'Ziua Testărilor HIV pentru Transgenderi' # TODO
+        mspec_lesbian_day: '{https://twitter.com/MspecLesbianss=Ziua Vizibilității și Conștientizării Lesbianelor Mspec}'
+        mspec_lesbian_week: '{https://twitter.com/MspecLesbianss=Săptămâna Vizibilității și Conștientizării Lesbianelor Mspec}'
+        mspec_gay_day: 'Ziua Vizibilității și Conștientizării Gayilor Mspec'
+        mspec_gay_week: 'Săptămâna Vizibilității și Conștientizării Gayilor Mspec'
+        spring_testing_week: 'Săptămâna Europeană de Testare HIV de Primăvară'
+        autumn_testing_week: 'Săptămâna Europeană de Testare HIV de Toamnă'
+        sex_worker_day: '{https://www.nswp.org/event/international-sex-workers-day-0=Ziua Internațională a Muncitorilor Sexuali}'
+        equal_pay_day: 'Ziua Conștientizării Plăților Egale LGBTQIA+'
+        sex_worker_pride: '{https://www.nswp.org/event/sex-worker-pride=Pride-ul Muncitorilor Sexuali}'
+        sex_worker_rights_day: '{https://www.nswp.org/event/international-sex-workers-rights-day=Ziua Drepturilor Muncitorilor Sexuali}'
+        sex_worker_violence_day: '{https://www.nswp.org/event/international-day-end-violence-against-sex-workers-6=Ziua Internațională pentru Oprirea Violenței Adresate Muncitorilor Sexuali}'
+        omnisexual_omniromantic_day: 'Ziua Pride și a Vizibilității {/terminology#omnisexual=Omnisexualilor} și a {/terminology#omniromantic=Omniromanticilor}'
+        omnisexual_awareness_day: 'Ziua Conștientizării {/terminology#omnisexual=Omnisexualilor}'
+        hiv_is_not_a_crime: '{https://www.hivisnotacrime-etaf.org/=Ziua Conștientizării că HIV-ul Nu este o Crimă}'
+        trans_flag_day: '{https://twitter.com/hrc/status/1296122309036650497=Ziua Steagului Trans}'
+        alan_turing_day: 'Ziua Alan Turing' #???
+        nonbinary_kids_day: 'Ziua Copiilor {/terminology#nonbinary=non-binary}'
+        masc_lesbian_week: '{https://twitter.com/MascLesWeek=Săptămâna Vizibilității și a Conștientizării Lesbianelor Masculine}'
+        masc_lesbian_day: '{https://twitter.com/MascLesWeek=Ziua Vizibilității și a Conștientizării Lesbianelor Masculine}'
+    banner: 'Celebrăm'
+    celebrating_custom: 'e celebrat'
+    celebrating_day: 'e celebrat pe'
+    celebrating_week: 'e celebrat în'
+    celebrating_month: 'e celebrat în'
+    image:
+        header: 'Descarcă o imagine'
+    view:
+        grid: 'Vizualizează ca grid'
+        list: 'Vezi lista cu evenimente'
+    link: 'Link'
+    full: 'Calendar complet'
+
+ukraine:
+    header: 'Ținem cu Ucraina.'
+    link: '{https://how-you-can-support-ukraine.super.site/=Iată cum o poți ajuta.}'

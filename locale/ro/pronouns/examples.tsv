@@ -1,0 +1,5 @@
+singular	plural	isHonorific
+Cred că {pronoun_subject} este de treabă.	Cred că {pronoun_subject} sunt de treabă.	FALSE
+Am întrebat {pronoun_object} dacă îi pot împrumuta creionul {possessive_determiner}.		FALSE
+{'pronoun_subject} mi-a spus că această casă e {possessive_pronoun}.		FALSE
+{'pronoun_subject} {reflexive} și-a dorit să devină erou.		FALSE

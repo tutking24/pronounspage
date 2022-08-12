@@ -1,0 +1,308 @@
+locale: 'ro'
+
+header: true
+
+pronouns:
+    enabled: true
+    route: 'pronume'
+    default: 'ei'
+    any: 'oricare'
+    plurals: true
+    honorifics: false
+    multiple:
+        name: 'Formele substituibile'
+        description: >
+            Multe persoane nonbinare folosesc mai mult de o formă în mod substituibil
+            și sunt ok fiind strigați cu oricare dintre ele.
+            Unora le place când alții alternează între forme când vorbesc despre ei.
+        examples: ['el&ea', 'el&ei', 'ea&ei']
+    null:
+        description: >
+            {/avoiding=Evitarea pronumelor cu gen} / {/no-pronouns=fără pronume} / {/null=pronume nul} / {/nullpronominal=nul-pronominal} / {/nameself=nameself}
+        history: >
+            Unele persoane preferă să nu folosească niciun pronume, fiind referiți după nume, inițială,
+            evitând pronume cu voce pasivă sau restructurând propoziția.
+            Vezi: {https://twitter.com/lypomania/status/1290274971642544128=ghidul lui lypomania (în limba engleză)},
+            {https://lgbta.wikia.org/wiki/Nullpronominal=Nul-pronominal pe LGBTA Wiki (în limba engleză)}
+        morphemes:
+            pronoun_subject: '#'
+            pronoun_object: 'pe #'
+            possessive_determiner: 'lui #' # except neos
+            possessive_pronoun: 'a lui #' # except neos
+            reflexive: '' # so we dont repeat ourselves
+        examples: [':Andrea', ':S']
+        template: 'Deschide unul dintre exemple și înlocuiește numele/inițiala din URL cu a ta.'
+        routes: ['avoiding']
+        ideas:
+            -
+                header: 'Folosește nume sau inițiale în loc de pronume'
+                normative: true
+                examples:
+                    - ['Am vorbit cu el ieri', 'Am vorbit cu {/:Felix=Felix} ieri']
+                    - ['Ea este foarte frumoasă', '{/:Vex=Vex} este foarte frumoasă']
+                    -
+                        - 'Absolvirea sa începe în curând'
+                        - 'Absolvirea lui {/:J=J} începe în curând'
+            -
+                header: 'Voce pasivă'
+                normative: true
+                examples:
+                    - ['A răspuns la telefon', 'Telefonul a fost răspuns']
+                    -
+                        - 'Wen are grijă de pisica sa'
+                        - 'Pisica lui Wen a fost îngrijită'
+            -
+                header: 'Reformulează propoziția (circumlocuțiune)'
+                normative: true
+                examples:
+                    - ['Lior a făcut-o însuși', 'Lior a făcut-o fără ajutor']
+                    - ['Gael vorbește în somnul său', 'Gael vorbește în somn']
+            -
+                header: 'Înlocuiește un pronume cu un substantiv descriptiv sau o frază'
+                normative: true
+                examples:
+                    - ['Ea a aterizat avionul cu siguranță', 'Pilotul a aterizat avionul cu siguranță']
+                    - ['Aceasta este Lea. Ei îi place pictura', 'Aceasta este Lea. Prietenei mele îi place pictura']
+                    - ['Ea comentează că…', 'Persoana care a început această discuție comentează că…']
+            -
+                header: 'Lasă pronumele'
+                normative: true
+                examples:
+                    - ['I-ai cumpărat lui Tex cadoul său?', 'I-ai cumpărat lui Tex un cadou?']
+                    - ['Da, i-am cumpărat pentru ea. I-l voi da ei mâine.', 'Da, i-am cumpărat. I-l voi da mâine.']
+    emoji:
+        description: 'Pronume Emoji'
+        history: 'Pronumele {https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emoji} sunt destinate pentru comunicarea online și nu ar trebui pronunțate'
+        morphemes:
+            pronoun_subject: '#'
+            pronoun_object: 'pe #'
+            possessive_determiner: 'lui #'
+            possessive_pronoun: 'al lui #'
+            reflexive: '#self'
+        examples: ['💫', '💙']
+        template: 'Deschide unul dintre exemple și înlocuiește emojiul din URL cu al tău.'
+    mirror:
+        route: 'mirror'
+        name: 'Pronume-oglindă / Oglindă-pronominal'
+        description: >
+            O persoană ce folosește pronume-oglindă dorește să fie adresată cu aceleași pronume pe care le folosește persoana ce vorbește.
+        example:
+            - 'Persoana A folosește pronume-oglindă.'
+            - 'Persoana B folosește {/ea=ea/ei}, deci când ea vorbește despre persoana A, ea folosește „ea/ei” să se refere la ea.'
+            - 'Persoana C folosește {/ze=ze/hir} substituibil cu {/fae=fæ/fær}, deci când ze vorbește despre persoana A, fea folosește ori ze/hir or fæ/fær să se refere la fær.'
+    slashes: true
+    others: 'Alte pronume'
+
+pronunciation:
+    enabled: true
+    voices:
+        GB:
+            language: 'en-GB'
+            voice: 'Emma'
+            engine: 'neural'
+
+sources:
+    enabled: true
+    route: 'surse'
+    submit: true
+    mergePronouns: {}
+    extraTypes: ['evitând', 'substantiv-self', 'oglindă']
+
+nouns:
+    enabled: true
+    route: 'dictionar'
+    collapsable: false
+    plurals: true
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: true
+
+community:
+    route: 'terminologie'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    published: true
+    categories:
+        - 'orientarea sexuală'
+        - 'orientarea romantică'
+        - 'orientarea terțiară'
+        - 'genul'
+        - 'expresia genului'
+        - 'modelul relației'
+        - 'limbajul'
+        - 'atracția'
+        - 'politica'
+        - 'prejudiciul'
+
+    route: 'terminologie'
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+# optional, but would be nice to have
+english:
+    enabled: true
+    route: 'english'
+    #pronounGroups:
+    #    -
+    #        name: 'Normative forms'
+    #        description:
+    #            - >
+    #                Because of the limitations of Romanian’s grammar, or simply ‘cause they prefer it that way,
+    #                many nonbinary people go for either “he” ({/el=„el”}) or “ei” ({/ei=„ei”})
+    #                (and rarely their female equivalents ({/ea=„ea”} and {/ele=„ele”}) because there are no
+    #                real neutral pronouns (equivalent of the singular “they”).
+    #                That doesn't make them any less nonbinary! Pronouns ≠ gender.
+    #        table: {el: 'Masculine', ei: 'Masculine', ea: 'Feminine', ele: 'Feminine'}
+
+faq:
+    enabled: true
+    route: 'intrebari'
+
+links:
+    enabled: true
+    split: true
+    route: 'linkuri'
+    blogRoute: 'blog'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            headline: 'Pronoun.is'
+            extra: '– inspirația acestui website'
+        -
+            icon: 'chart-pie'
+            url: 'https://gendercensus.com/'
+            headline: 'Gender Census'
+            extra: '– sondaj anual despre limbajul folosit de persoanele nonbinare'
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
+            headline: 'De ce toți aliații cis ar trebui să aibă pronume în biografie'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
+            headline: 'Pronumele neutre: Sunt aici, obișnuiește-te (în lb. engleză)'
+            extra: '– Tom Scott'
+        -
+            icon: 'wikipedia-w'
+            iconSet: 'b'
+            url: 'https://lgbta.wikia.org/wiki/Neopronouns'
+            headline: 'Wiki-ul LGBTA despre neopronume (în lb. engleză)'
+        #-
+        #    icon: 'book-open'
+        #    url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
+        #    headline: 'Academic papers on neopronouns'
+        -
+            icon: 'twitch'
+            iconSet: 'b'
+            url: 'https://pronouns.alejo.io/'
+            headline: 'Arată-ți pronumele în Chat-ul Twitch'
+        -
+            icon: 'sticky-note'
+            url: 'https://www.consilium.europa.eu/media/54276/2021_058_accessibility-inclusive-communication-in-the-gsc_en_acces.pdf'
+            headline: 'Comunicația inclusivă în Secretariatul General al Consiliului Uniunii Europene'
+            quote: >
+                Comunicația este o unealtă puternică. Este o metodă pentru formarea atitudinilor, percepțiilor și comportamentelor noastre, și
+                reflectă lumea în care dorim să trăim și să lucrăm.
+                Prin urmare, cuvintele și imaginile contează deoarece comunicația poate deveni discriminatoare dacă eșuăm să considerăm
+                presupunerile ce influențează limbajul și vizualele pe care le folosim.
+                Limbajul se schimbă întotdeauna: cuvintele evoluează, iar folosirea lor ar trebui evoluată în același timp. Folosind limbajul neutru
+                și fără prejudecată este un mod pentru a pleca de la percepțiile vechi despre bărbați, femei
+                și grupuri minoritare din societate
+
+    academic: []
+    mediaGuests: []
+    mediaMentions: []
+    recommended:
+        -
+            icon: 'cogs'
+            url: 'https://omg.lol/'
+            headline: 'OMG.LOL'
+            extra: ' – furnizor de nume de domeniu ce folosește API-ul Pronouns.Page în profilele utilizatorilor'
+        -
+            icon: 'cogs'
+            url: 'https://oengus.io/'
+            headline: 'Oengus.io'
+            extra: ' – folosește API-ul Pronouns.Page în profilele utilizatorilor'
+        -
+            icon: 'cogs'
+            url: 'https://github.com/eramdam/BetterTweetDeck/releases/tag/4.5.2'
+            headline: 'BetterTweetDeck'
+            extra: ' – o extensie TweetDeck care, pe lângă alte lucruri, arată pronumele utilizatorului mai proeminent, cu ajutoul API-ului nostru'
+        -
+            icon: 'cogs'
+            url: 'https://github.com/katacarbix/pronouns.js'
+            headline: 'pronouns.js'
+            extra: ' – o bibliotecă JavaScript pentru analizarea pronumelor'
+        -
+            icon: 'cogs'
+            url: 'https://pronoundb.org/'
+            headline: 'PronounDB'
+            extra: ' – extensii pentru browser ce arată pronumele persoanelor pe diferite platforme'
+        -
+            icon: 'sticky-note'
+            url: 'https://leapsports.org/files/4225-Non-Binary%20Inclusion%20in%20sport%20Booklet.pdf'
+            headline: 'Incluziunea Nonbinară în sport'
+        -
+            icon: 'cogs'
+            url: 'https://stats.fm/user/me'
+            headline: 'Stats.fm'
+            extra: ' – o unealtă pentru statistici Spotify ce folosește API-ul nostru pentru pronume'
+        -
+            icon: 'cogs'
+            url: 'https://isgc.app/'
+            headline: 'GC Checker'
+            extra: ' – o unealtă creată de către membrul nostru {/@shio_o=@shio_o} ce scanează timeline-ul recent al unui utilizator Twitter și arată tweet-uri ce par legate de mișcarea „Gender Critical”.'
+        -
+            icon: 'browser'
+            url: 'https://transsocial.me/'
+            headline: 'TransSocial'
+            extra: ' – o platformă de social-media ce integrează linkuri la carduri Pronouns.Page'
+    zine:
+        enabled: false
+
+contact:
+    enabled: true
+    route: 'contact'
+    team:
+        enabled: true
+        route: 'echipa'
+
+support:
+    enabled: true
+
+user:
+    enabled: true
+    route: 'cont'
+    termsRoute: 'termeni'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        - ['[fără onorific]', 'd-x', 'd-le', 'd-na', 'domnul', 'doamnă', 'mirul', 'mireasa', 'tovarășe']
+        - ['persoană', 'bărbat', 'femeie', 'doamnă', 'om', 'băiat', 'fată', 'prietenaș', 'amic', 'frate', 'soră', 'rudă']
+        - ['frumoasă', 'frumos', 'drăguț', 'hot', 'sexy', 'arătos', 'perfectă', 'perfect']
+        - ['prieten', 'partener', 'iubit', 'iubită', 'soț', 'soție', 'gagică', 'gagic', 'drag']
+    flags:
+        defaultPronoun: 'el'
+
+calendar:
+    enabled: true
+    route: 'calendar'
+
+census:
+    enabled: false
+
+redirects: []
+
+api: ~

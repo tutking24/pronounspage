@@ -1,4 +1,4 @@
-const mailer = require('mailer');
+const nodemailer = require('nodemailer');
 const fs = require('fs');
 const Suml = require('suml');
 const forbidden = require('./forbidden');
@@ -10,25 +10,15 @@ const logoEncoded = 'data:image/svg+xml,' + encodeURIComponent(logo);
 const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const translations = loadSuml('translations');
 
-const sendEmail = (to, subject, body = undefined, html = undefined) => {
-    mailer.send({
-            host: process.env.MAILER_HOST,
-            port: parseInt(process.env.MAILER_PORT),
-            ssl: parseInt(process.env.MAILER_PORT) === 465,
-            authentication: 'login',
-            username: process.env.MAILER_USER,
-            password: process.env.MAILER_PASS,
-            from: process.env.MAILER_FROM,
-            to,
-            subject,
-            body,
-            html,
-        },
-        function(err){
-            if (err) {
-                console.error(err);
-            }
-        });
+const transporter = nodemailer.createTransport(process.env.MAILER_TRANSPORT, {from: process.env.MAILER_FROM});
+
+const sendEmail = (to, subject, text = undefined, html = undefined) => {
+    transporter.sendMail({
+        to,
+        subject,
+        text,
+        html,
+    }, function(err) { if (err) { console.error(err); } })
 };
 
 const terms = translations.terms && translations.terms.content ? (translations.terms.content.content.violations + ' ' + Object.values(translations.terms.content.content.violationsExamples).join(', ')) : '';
