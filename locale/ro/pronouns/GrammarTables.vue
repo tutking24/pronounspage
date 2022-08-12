@@ -9,11 +9,11 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Subject</th>
-                    <th>Object</th>
-                    <th>Possessive determiner</th>
-                    <th>Possessive pronoun</th>
-                    <th>Reflexive</th>
+                    <th>Nominativ</th>
+                    <th>Acuzativ</th>
+                    <th>Dativ</th>
+                    <th>Genitiv</th>
+                    <th>Pronumele reflexiv</th>
                 </tr>
                 </thead>
                 <tbody>

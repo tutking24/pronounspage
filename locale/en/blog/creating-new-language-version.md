@@ -23,9 +23,9 @@ I'll prepare all the necessary files in a dedicated Teams channel – you can ju
 
 Alternatively:
 Click [here](https://gitlab.com/Avris/Zaimki/-/archive/main/Zaimki-main.zip) to download a zip file with the code.
-Don't mind everything else, just create a copy of the `/locale/en` directory,
+Don't mind everything else, just create a copy of the `/locale/_base` directory,
 calling the copy according to the new language code.
-Instead of `en` (English) you can use a different language as a base,
+Instead of `_base` (a version of English modified for this purpose) you can use a different language as a base,
 if you think it's gonna be easier – 
 eg. for translating into Slavic languages it might be better to start with `pl` (Polish).
 
