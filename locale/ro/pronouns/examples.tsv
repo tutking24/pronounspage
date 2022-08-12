@@ -1,5 +1,5 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+Cred că {pronoun_subject} este de treabă.	Cred că {pronoun_subject} sunt de treabă.	FALSE
+Am întrebat {pronoun_object} dacă îi pot împrumuta creionul {possessive_determiner}.		FALSE
+{'pronoun_subject} mi-a spus că această casă e {possessive_pronoun}.		FALSE
+{'pronoun_subject} {reflexive} și-a dorit să devină erou.		FALSE
