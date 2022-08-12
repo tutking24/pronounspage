@@ -1363,14 +1363,15 @@ census:
             Natomiast jeśli opisujesz swoją płeć jako „gdzieś pomiędzy”, „ani mężczyzna, ani kobieta”, „zależy kiedy”,
             „więcej niż jedna”, „poza binarnym podziałem”, „nie wiem”, itp., to bardzo prosimy o wzięcie udziału.
         - >
+            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>}.
+            Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
+    descriptionOpen:
+        - >
             Ankieta składa się z <strong>%questions% pytań</strong> i jest otwarta <strong>od %start% do %end%</strong>.
             W pytaniach wielokrotnego wyboru <strong>można zaznaczyć wiele odpowiedzi</strong>, jak również <strong>dopisać własne</strong>.
             By uniknąć tendencyjności, <strong>kolejność propozycji jest losowa</strong>.
-        #- >
-        #    Następny Spis odbędzie się w <strong>lutym 2023</strong>.
-        - >
-            Inspiracją do przeprowadzenia spisu był anglojęzyczny {https://gendercensus.com/=<strong>gender census</strong>}.
-            Jeśli posługujesz się językiem angielskim, zapraszamy do wypełnienia również i tej ankiety.
+    descriptionClosed: >
+        Następny Spis odbędzie się w <strong>lutym</strong>.
     agree: >
         Wyrażam zgodę na przetwarzanie moich odpowiedzi
         oraz na użycie zanonimizowanej wersji mojego adresu IP oraz fingerprintu przeglądarki
@@ -1381,7 +1382,22 @@ census:
     start: 'Rozpocznij ankietę'
     finished: >
         Dziękujemy za wzięcie udziału w spisie powszechnym!
-        Wyniki i wnioski ogłosimy wkrótce {/kontakt=w mediach społecznościowych}.
+        Wyniki i wnioski ogłosimy wkrótce {/kontakt=w naszych mediach społecznościowych}.
+    share: >
+        Zależy nam, by zebrać odpowiedzi od możliwie największej grupy osób niebinarnych.
+        Możesz pomóc nam do nich dotrzeć, podając dalej info o Spisie.
+    shareButton: >
+        Wypełnienie Niebinarnego Spisu Powszechnego zajęło mi tylko kilka minut,
+        a każda odpowiedź pomaga lepiej zbadać, jakim językiem posługuje się społeczność osób niebinarnych.
+        Jesteś osobą niebinarną? Też weź udział w Spisie!
+    subscribe:
+        encouragement: >
+            Chcesz otrzymywać przypominajki o przyszłych edycjach Spisu?
+            Możesz podać poniżej swój adres email – wyślemy jedną wiadomość rocznie, zero spamu,
+            i oczywiście bez powiązania adresu z Twoimi odpowiedziami.
+        action: 'Zapisz się'
+        unsubscribe: 'Wypisz się'
+        success: 'Zapisałośmy Twój adres, przypomnimy o następnej edycji!'
     prev: 'Poprzednie pytanie'
     next: 'Następne pytanie'
     replies: 'odpowiedzi, w tym:'
@@ -1894,6 +1910,10 @@ calendar:
         nonbinary_kids_day: 'Dzień Niebinarnych Dzieci i Młodzieży'
         masc_lesbian_week: 'Tydzień Widoczności Męskich Lesbijek'
         masc_lesbian_day: 'Dzień Widoczności Męskich Lesbijek'
+        bi_creators_day: 'Dzień Biseksualnych Osób Twórczych'
+        trans_history_month: 'Miesiąc Historii Osób Transpłciowych'
+        transition_week: 'Tydzień Tranzycji'
+        wrath_month: 'Miesiąc Gniewu'                      
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'
     celebrating_day: 'obchodzimy'

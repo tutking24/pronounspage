@@ -13,6 +13,13 @@
             <NamesLinks/>
         </section>
 
+        <section v-if="$isGranted('names')" class="px-3">
+            <div class="alert alert-info">
+                <strong>{{ namesCountApproved() }}</strong> <T>nouns.approved</T>,
+                <strong>{{ namesCountPending() }}</strong> <T>nouns.pending</T>.
+            </div>
+        </section>
+
         <section class="sticky-top">
             <div class="input-group mb-3 bg-white">
                 <span class="input-group-text">
@@ -30,6 +37,7 @@
         </section>
 
         <section>
+            <Loading :value="namesRaw">
             <ul class="list-group small">
                 <template v-if="visibleNames().length">
                 <li v-for="name in visibleNames()" :class="['list-group-item', name.approved ? '' : 'marked']">
@@ -93,6 +101,7 @@
                     </li>
                 </template>
             </ul>
+            </Loading>
         </section>
 
         <Separator icon="plus"/>
@@ -112,15 +121,12 @@
         mixins: [ hash ],
         data() {
             return {
+                namesRaw: undefined,
                 filter: '',
             }
         },
-        async asyncData({app}) {
-            return {
-                namesRaw: await app.$axios.$get(`/names`),
-            }
-        },
-        mounted() {
+        async mounted() {
+            this.namesRaw = await this.$axios.$get(`/names`);
             this.handleHash('', filter => {
                 this.filter = filter;
                 if (filter) {
@@ -181,6 +187,14 @@
                 await this.$post(`/names/remove/${name.id}`);
                 delete this.names[name.id];
                 this.$forceUpdate();
+            },
+
+            // those must be methods, not computed, because when modified, they don't get updated in the view for some reason
+            namesCountApproved() {
+                return Object.values(this.names).filter(n => n.approved).length;
+            },
+            namesCountPending() {
+                return Object.values(this.names).filter(n => !n.approved).length;
             },
         },
         watch: {

@@ -175,7 +175,7 @@ export const issueAuthentication = async (db, user, fetch = true, guardMfa = fal
     return jwt.sign(user);
 }
 
-const validateEmail = async (email) => {
+export const validateEmail = async (email) => {
     email = normalise(String(email));
     if (email.endsWith('.oauth')) {
         return;

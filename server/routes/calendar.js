@@ -8,6 +8,7 @@ import { Day } from '../../src/calendar/helpers';
 // TODO caching? // import { caches } from "../../src/cache";
 
 const translations = loadSuml('translations');
+const fallbackTranslations = loadSuml('../_base/translations');
 
 const renderEvents = (yearEvents, res) => {
     const events = [];
@@ -16,7 +17,7 @@ const renderEvents = (yearEvents, res) => {
         if (!yearEvents.hasOwnProperty(year)) { continue; }
         for (let event of yearEvents[year]) {
             if (!event) { continue; }
-            const ics = event.toIcs(year, translations, clearLinkedText, i);
+            const ics = event.toIcs(year, translations, fallbackTranslations, clearLinkedText, i);
             if (ics !== null) {
                 events.push(ics);
             }
@@ -43,7 +44,7 @@ const renderEvents = (yearEvents, res) => {
 }
 
 const getEventName = (name) => {
-    name = translations.calendar.events[name] || name;
+    name = translations.calendar.events[name] || fallbackTranslations.calendar.events[name] || name;
     name = name.replace(/{.*?=(.*?)}/g, '$1')
     return name;
 }

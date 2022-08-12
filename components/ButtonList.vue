@@ -28,7 +28,7 @@
         </div>
 
         <draggable tag="ul" v-model="remainingOptions" ghostClass="ghost" @end="$emit('input', iVal)" class="list-inline" :group="ulid">
-            <li v-for="val in remainingOptions"  :key="val" v-if="(all && !search) || (search && options[val].toLowerCase().includes(search))" class="list-inline-item py-1">
+            <li v-for="val in remainingOptions"  :key="val" v-if="(all && !search) || (search && options[val].toLowerCase().includes(search.toLowerCase()))" class="list-inline-item py-1">
                 <a href="#" class="badge bg-light text-dark p-2" @click.prevent="$emit('input', [...iVal, val])">
                     <slot v-bind:v="val" v-bind:desc="options[val]">
                         {{ val }}

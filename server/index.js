@@ -110,6 +110,7 @@ app.use(require('./routes/images').default);
 app.use(require('./routes/blog').default);
 app.use(require('./routes/calendar').default);
 app.use(require('./routes/translations').default);
+app.use(require('./routes/subscription').default);
 
 app.use(function (err, req, res, next) {
     console.error(err.stack);

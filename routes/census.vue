@@ -23,28 +23,36 @@
                 </div>
             </section>
 
-            <section v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
-                <ul class="list-unstyled mb-0">
-                    <li v-for="(text, link) in config.census.results" class="h5 m-3">
-                        <router-link :to="`/blog/${link}`">
-                            <Icon v="file-chart-line"/>
-                            {{text}}
-                        </router-link>
-                    </li>
-                </ul>
+            <section class="row">
+                <div class="col-12 col-lg-6">
+                    <T>census.description</T>
+                    <T v-if="open" :params='{
+                        questions: questions.length,
+                        start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                        end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
+                    }'>census.descriptionOpen</T>
+                    <T v-else>census.descriptionClosed</T>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div v-if="Object.keys(config.census.results).length > 0" class="alert alert-info">
+                        <ul class="list-unstyled mb-0">
+                            <li v-for="(text, link) in config.census.results" class="h5 m-3">
+                                <router-link :to="`/blog/${link}`">
+                                    <Icon v="file-chart-line"/>
+                                    {{text}}
+                                </router-link>
+                            </li>
+                        </ul>
+                    </div>
+                    <CensusShare :text="$t('census.headerLong')"/>
+                    <CensusSubscribe/>
+                </div>
             </section>
 
-            <section>
-                <T :params='{
-                    questions: questions.length,
-                    start: start.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                    end: end.setLocale(config.locale).toLocaleString(DateTime.DATE_SHORT),
-                }'>census.description</T>
-            </section>
 
             <section v-if="open">
                 <div v-if="finished" class="alert alert-success">
-                    <Icon v="badge-check"/>
+                    <Icon v="badge-check" size="2" class="float-start me-2 mt-2"/>
                     <T>census.finished</T>
                 </div>
                 <template v-else>
@@ -62,10 +70,6 @@
                         </button>
                     </div>
                 </template>
-            </section>
-
-            <section>
-                <Share :title="$t('census.headerLong')"/>
             </section>
         </template>
 
@@ -139,10 +143,20 @@
                     {{q}}/{{questions.length}}
                 </div>
             </div>
-            <div class="alert alert-success">
-                <Icon v="badge-check"/>
-                <T>census.finished</T>
-            </div>
+            <section>
+                <div class="alert alert-success">
+                    <Icon v="badge-check" size="2" class="float-start me-2 mt-2"/>
+                    <T>census.finished</T>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-12 col-lg-6">
+                    <CensusShare :text="$t('census.shareButton')"/>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <CensusSubscribe/>
+                </div>
+            </section>
         </template>
     </div>
 </template>
