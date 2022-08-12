@@ -1138,6 +1138,10 @@ calendar:
         nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
+        trans_history_month: 'Transgender History Month' # TODO
+        transition_week: 'Transition Week' # TODO
+        bi_creators_day: 'Bisexual Creators Day' # TODO
+        wrath_month: 'Queer Wrath Month' # TODO                      
     banner: 'Ми святкуємо'
     celebrating_custom: 'святкується'
     celebrating_day: 'святкується'
