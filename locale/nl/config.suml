@@ -65,7 +65,7 @@ nouns:
     templates: true
 
 community:
-    route: 'kalender'
+    route: 'terminologie'
 
 inclusive:
     enabled: false
