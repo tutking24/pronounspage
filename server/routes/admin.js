@@ -124,14 +124,22 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     });
 }));
 
+const fetchStats = async () => {
+    if (fs.existsSync(statsFile)) {
+        return JSON.parse(fs.readFileSync(statsFile));
+    }
+
+    const stats = await calculateStats(req.db, buildLocaleList(global.config.locale));
+    fs.writeFileSync(statsFile, JSON.stringify(stats));
+    return stats;
+}
+
 router.get('/admin/stats', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const stats = fs.existsSync(statsFile)
-        ? JSON.parse(fs.readFileSync(statsFile))
-        : await calculateStats(req.db, buildLocaleList(global.config.locale));
+    const stats = await fetchStats();
 
     for (let locale in stats.locales) {
         if (stats.locales.hasOwnProperty(locale) && !req.isGranted('panel', locale)) {
@@ -143,9 +151,7 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
-    const statsAll = fs.existsSync(statsFile)
-        ? JSON.parse(fs.readFileSync(statsFile))
-        : await calculateStats(req.db, buildLocaleList(global.config.locale));
+    const statsAll = await fetchStats();
 
     const stats = {
         calculatedAt: statsAll.calculatedAt,
@@ -176,6 +182,10 @@ router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
                 stats.current.online = localeStats.plausible.realTimeVisitors;
                 stats.current.visitDuration = localeStats.plausible.visit_duration;
             }
+        }
+        if (localeStats.upptime) {
+            stats.current.uptime = localeStats.upptime.uptime;
+            stats.current.responseTime = localeStats.upptime.responseTime;
         }
     }
 

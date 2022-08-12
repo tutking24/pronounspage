@@ -40,14 +40,28 @@
                 <strong>{{ formatNumber(activeStats.users) }}</strong>
             </li>
             <li v-if="activeStats.visitDuration" class="mb-2">
-                <Icon v="stopwatch"/>
+                <Icon v="clock"/>
                 <T>footer.stats.keys.visitDuration</T><T>quotation.colon</T>
                 <strong>{{ formatDuration(activeStats.visitDuration) }}</strong>
+            </li>
+            <li v-if="activeStats.uptime" class="mb-2">
+                <Icon v="monitor-heart-rate"/>
+                <T>footer.stats.keys.uptime</T><T>quotation.colon</T>
+                <strong>{{ activeStats.uptime }}</strong>
+            </li>
+            <li v-if="activeStats.responseTime" class="mb-2">
+                <Icon v="stopwatch"/>
+                <T>footer.stats.keys.responseTime</T><T>quotation.colon</T>
+                <strong>{{ activeStats.responseTime }}</strong>
             </li>
             <li class="mb-2 small">
                 <a :href="`${plausibleHost}/${$t('domain')}?period=30d`" target="_blank" rel="noopener">
                     <Icon v="external-link"/>
                     Plausible
+                </a>
+                <a :href="`${upptimeHost}`" target="_blank" rel="noopener">
+                    <Icon v="external-link"/>
+                    Upptime
                 </a>
             </li>
         </ul>
@@ -60,6 +74,7 @@ export default {
         return {
             stats: undefined,
             plausibleHost: process.env.PLAUSIBLE_API_HOST,
+            upptimeHost: process.env.UPPTIME_LINK,
             overall: true,
         };
     },

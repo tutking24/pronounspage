@@ -734,6 +734,8 @@ footer:
             pageviews: 'Page views'
             realTimeVisitors: 'Currently online'
             visitDuration: 'Avg visit duration'
+            uptime: 'Uptime'
+            responseTime: 'Avg response time'
 
 notFound:
     message: 'Page was not found'
@@ -1185,7 +1187,7 @@ calendar:
         trans_history_month: 'Transgender History Month'
         transition_week: 'Transition Week'
         bi_creators_day: 'Bisexual Creators Day'
-        wrath_month: 'Queer Wrath Month'                      
+        wrath_month: 'Queer Wrath Month'
     banner: 'We''re celebrating/commemorating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'

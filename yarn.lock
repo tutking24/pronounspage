@@ -7473,10 +7473,9 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-plausible-api@^1.0.1:
+"plausible-api@https://github.com/avo7/plausible-api.git#main":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/plausible-api/-/plausible-api-1.0.1.tgz#5b85461c2fe65b40aec2f87427d8a71e4edabcfc"
-  integrity sha512-c/jhjv759+Wf18aXQ24cxamPjxgpF20n+WidHeJ77rZJMDkyyY6MVXDK/8hYuM021fFino1fKOzUJ/Rokv9ZzA==
+  resolved "https://github.com/avo7/plausible-api.git#0bb79ad1d26754a71b3ec1351255dbf5a32e6e2a"
   dependencies:
     node-fetch "2.6.1"
 
