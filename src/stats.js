@@ -115,7 +115,7 @@ module.exports.calculateStats = async (db, allLocales) => {
     const cardsQueue = (await db.get(`SELECT count(*) as c FROM profiles WHERE card = '' OR cardDark = ''`)).c;
 
     if (cardsQueue > 64) {
-        mailer('andrea@avris.it', 'cardsWarning', {count: cardsQueue});
+        mailer('contact@pronouns.page', 'cardsWarning', {count: cardsQueue});
     }
 
     return { calculatedAt: parseInt(new Date() / 1000), users, locales, cardsQueue };
