@@ -8,6 +8,8 @@ module.exports = [
     new Event('aro_month', 'Aromantic', 2, month, EventLevel.Month, ['aromantic', 'aromantic spectrum']),
     new Event('suicide_prevention_month', '_yellow-ribbon', 9, month, EventLevel.Month),
     new Event('aids_awareness_month', '_red-ribbon', 12, month, EventLevel.Month, ['aids']),
+    new Event('trans_history_month', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
+    new Event('wrath_month', 'LGBTQ', 7, month, EventLevel.Month),
 
     // --- project celebrations ---
     new Event('zaimki_birthday', '_zaimki', 7, day(23), EventLevel.Day),
@@ -86,7 +88,8 @@ module.exports = [
     new Event('nonbinary_kids_day', 'Nonbinary', 10, day(1), EventLevel.Day, ['nonbinary']),
     new Event('masc_lesbian_day', 'Lesbian', 8, day(4), EventLevel.Day, ['lesbian']),
     new Event('masc_lesbian_week', 'Lesbian', 8, weekStarting(1), EventLevel.Week, ['lesbian']),
-        
+    new Event('bi_creators_day', 'Bisexual', 4, day(15), EventLevel.Day, ['bisexual']),
+
     // --- dynamic date ---
 
     // full week starting on a Sunday following Valentine's Day
