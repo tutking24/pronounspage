@@ -11,8 +11,6 @@ module.exports = [
     new Event('{/terminology#lesbian=Lesbian} Visibility Month (Brazil)', 'Lesbian', 8, month, EventLevel.Month, ['lesbian']),
     new Event('Diversity Month (Uruguay)', 'LGBTQ', 9, month, EventLevel.Month),
     new Event('{/terminology#asexual=Asexual} Visibility Month (Brazil)', 'Asexual', 10, month, EventLevel.Month, ['asexual', 'asexual spectrum']),
-    new Event('{/terminology#transgender=Transgender} History Month (US)', 'Transgender', 8, month, EventLevel.Month, ['transgender']),
-    new Event('Queer Wrath Month', 'Progress Pride', 7, month, EventLevel.Month),    
 
     // --- static date ---
     new Event('Harvey Milk Day', null, 5, day(22), EventLevel.Day),
@@ -95,7 +93,6 @@ module.exports = [
     new Event('{https://en.wikipedia.org/wiki/David_Kato=Kuchu Remembrance Day} (Uganda)', '_black-ribbon', 1, day(26), EventLevel.Day),
     new Event('{https://en.wikipedia.org/wiki/2022_Oslo_shooting=Oslo Pride Shooting} Remembrance Day', '_black-ribbon', 6, day(25), EventLevel.Day),
     new Event('{/terminology#two%20spirit=Two-Spirit} and Indigenous LGBTQQIA+ Awareness to Celebration Day (Canada)', 'Two Spirit_', 3, day(21), EventLevel.Day, ['two spirit']),
-    new Event('Bisexual Creators Day', 'Bisexual', 4, day(15), EventLevel.Day, ['bisexual']),    
 
     // --- dynamic date ---
 
