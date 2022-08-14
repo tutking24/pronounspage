@@ -66,7 +66,7 @@
             </ul>
         </section>
 
-        <section v-if="$te('contact.team.join')">
+        <section v-if="false && $te('contact.team.join')">
             <h3>
                 <Icon v="user-plus"/>
                 <T>contact.team.join.header</T>
