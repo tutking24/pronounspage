@@ -3,10 +3,9 @@ import { buildDict, buildList } from './helpers';
 import { parsePronouns } from './buildPronoun';
 
 // TODO(96): Make this provided by router
-import pronounsRaw from '../data/pronouns/pronouns.tsv';
+import { pronounsRaw, examplesRaw, nounTemplatesRaw, pronounGroupsRaw, peopleRaw, nounDeclensionTemplatesRaw, abbreviationsRaw } from './localeData';
 export const pronouns = parsePronouns(pronounsRaw);
 
-import examplesRaw from '../data/pronouns/examples.tsv';
 export const examples = buildList(function* () {
     for (let e of examplesRaw) {
         yield new Example(
@@ -17,7 +16,6 @@ export const examples = buildList(function* () {
     }
 });
 
-import nounTemplatesRaw from '../data/nouns/nounTemplates.tsv';
 export const nounTemplates = buildList(function* () {
     for (let t of nounTemplatesRaw) {
         yield new NounTemplate(
@@ -31,7 +29,6 @@ export const nounTemplates = buildList(function* () {
     }
 });
 
-import pronounGroupsRaw from '../data/pronouns/pronounGroups.tsv';
 export const pronounGroups = buildList(function* () {
     for (let g of pronounGroupsRaw) {
         yield new PronounGroup(
@@ -45,7 +42,6 @@ export const pronounGroups = buildList(function* () {
 
 export const pronounLibrary = new PronounLibrary(pronounGroups, pronouns);
 
-import peopleRaw from '../data/people/people.tsv';
 export const people = buildList(function* () {
     for (let p of peopleRaw) {
         yield new Person(
@@ -57,14 +53,12 @@ export const people = buildList(function* () {
     }
 });
 
-import nounDeclensionTemplatesRaw from '../data/nouns/nounDeclension.tsv';
 export const nounDeclensionTemplates = buildList(function* () {
     for (let d of nounDeclensionTemplatesRaw) {
         yield new NounDeclension(d);
     }
 });
 
-import abbreviationsRaw from '../data/nouns/abbr.tsv';
 export const abbreviations = buildDict(function* () {
     for (let a of abbreviationsRaw) {
         yield [a.abbreviation, a.meaning];

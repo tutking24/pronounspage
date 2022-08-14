@@ -31,6 +31,7 @@ function convertRoutes(routes: NuxtRouteConfig[]): NuxtRouteConfig[] {
 }
 
 const undefault = <D>(v: { default: D }) => v.default;
+const nodef = () => ({default: undefined});
 
 function createAsyncComponent(path: string): AsyncComponent {
     return async (resolve, reject) => {
@@ -75,7 +76,14 @@ export async function createRouter(ssrContext: Context, createDefaultRouter: any
             translations,
             routes: generateRoutes(config),
             data: {
-                morphemes: await import(`~/locale/${localeId}/pronouns/morphemes.tsv`).catch(() => ({ default: undefined })).then(undefault)
+                morphemes: await import(`~/locale/${localeId}/pronouns/morphemes.tsv`).catch(nodef).then(undefault),
+                pronounsRaw: await import(`~/locale/${localeId}/pronouns/pronouns.tsv`).catch(nodef).then(undefault),
+                examplesRaw: await import(`~/locale/${localeId}/pronouns/examples.tsv`).catch(nodef).then(undefault),
+                nounTemplatesRaw: await import(`~/locale/${localeId}/pronouns/nounTemplates.tsv`).catch(nodef).then(undefault),
+                pronounGroupsRaw: await import(`~/locale/${localeId}/pronouns/pronounGroups.tsv`).catch(nodef).then(undefault),
+                peopleRaw: await import(`~/locale/${localeId}/people/people.tsv`).catch(nodef).then(undefault),
+                nounDeclensionTemplatesRaw: await import(`~/locale/${localeId}/nouns/nounDeclension.tsv`).catch(nodef).then(undefault),
+                abbreviationsRaw: await import(`~/locale/${localeId}/nouns/abbr.tsv`).catch(nodef).then(undefault)
             }
         };
     } else {

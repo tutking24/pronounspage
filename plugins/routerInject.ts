@@ -15,7 +15,7 @@ export const plugin: Plugin = function ({app, ssrContext, beforeNuxtRender, nuxt
         })
     } else {
     }
-    console.log("Injecting pRouterData");
+    console.log("Injecting zRouterData");
     inject('zRouterData', () => routerData);
 }
 
