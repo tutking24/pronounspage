@@ -974,9 +974,9 @@ calendar: # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
         trans_history_month: 'Transgender History Month'
         transition_week: 'Transition Week'
-        bi_creators_day: 'Bisexual Creators Day' 
-        wrath_month: 'Queer Wrath Month' 
-        lesbian_aunts_day: 'Lesbian Aunts Day'                  
+        bi_creators_day: 'Bisexual Creators Day'
+        wrath_month: 'Queer Wrath Month'
+        lesbian_aunts_day: 'Lesbian Aunts Day'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
@@ -992,4 +992,4 @@ calendar: # TODO
 
 ukraine:
     header: 'We stand with Ukraine.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Here''s how you can support it.}'
+    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/tw=Here''s how you can support it.}'

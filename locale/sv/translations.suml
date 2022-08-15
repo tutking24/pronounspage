@@ -1030,9 +1030,9 @@ calendar: # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
         trans_history_month: 'Transgender History Month'
         transition_week: 'Transition Week'
-        bi_creators_day: 'Bisexual Creators Day' 
+        bi_creators_day: 'Bisexual Creators Day'
         wrath_month: 'Queer Wrath Month'
-        lesbian_aunts_day: 'Lesbian Aunt Day'         
+        lesbian_aunts_day: 'Lesbian Aunt Day'
     banner: 'Vi firar'
     celebrating_custom: 'firas'
     celebrating_day: 'firas på'
@@ -1048,4 +1048,4 @@ calendar: # TODO
 
 ukraine:
     header: 'Vi står med Ukraina.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Så här kan du hjälpa dem.}'
+    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/sweden=Så här kan du hjälpa dem.}'

@@ -1010,9 +1010,9 @@ calendar:
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
         trans_history_month: 'Transgender History Month'
         transition_week: 'Transition Week'
-        bi_creators_day: 'Bisexual Creators Day' 
-        wrath_month: 'Queer Wrath Month' 
-        lesbian_aunts_day: 'Lesbian Aunts Day'        
+        bi_creators_day: 'Bisexual Creators Day'
+        wrath_month: 'Queer Wrath Month'
+        lesbian_aunts_day: 'Lesbian Aunts Day'
     banner: 'Vi feirer'
     celebrating_custom: 'er feiret'
     celebrating_day: 'er feiret'
@@ -1028,4 +1028,4 @@ calendar:
 
 ukraine:
     header: 'Vi står sammen med det ukrainske folk.'
-    link: '{https://how-you-can-support-ukraine.super.site/=Her er hvordan du kan bidra.}'
+    link: '{https://supportukrainenow.org/=Her er hvordan du kan bidra.}'
