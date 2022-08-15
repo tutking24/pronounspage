@@ -29,7 +29,7 @@
                 <button v-if="filter" class="btn btn-outline-danger" @click="filter = ''; $refs.filter.focus()">
                     <Icon v="times"/>
                 </button>
-                <button class="btn btn-outline-success" @click="$refs.form.$el.scrollIntoView({block: 'center'})">
+                <button class="btn btn-success" @click="$refs.form.$el.scrollIntoView({block: 'center'})">
                     <Icon v="plus-circle"/>
                     <T>nouns.submit.action</T>
                 </button>
