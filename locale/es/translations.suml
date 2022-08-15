@@ -1107,6 +1107,7 @@ calendar:
         transition_week: 'Transition Week' # TODO
         bi_creators_day: 'Bisexual Creators Day' # TODO
         wrath_month: 'Mes de la Ira'
+        lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
