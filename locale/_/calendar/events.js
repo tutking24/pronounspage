@@ -183,6 +183,20 @@ module.exports = [
         }
     }), EventLevel.Week, ['nonbinary']),
 
+    // on the second Sunday in July
+    new Event('lesbian_aunts_day', 'Lesbian', 7, function* (monthDays) {
+        let sundays = 0;
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 7) {
+                sundays++;
+                if (sundays === 2) {
+                    yield d;
+                    return;
+                }
+            }
+        }
+    }, EventLevel.Day, ['lesbian']),
+
     // on the second Sunday in August
     new Event('gay_uncles_day', 'Gay_', 8, function* (monthDays) {
         let sundays = 0;
