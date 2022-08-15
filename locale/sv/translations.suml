@@ -1032,7 +1032,7 @@ calendar: # TODO
         transition_week: 'Transition Week'
         bi_creators_day: 'Bisexual Creators Day' 
         wrath_month: 'Queer Wrath Month'
-        lesbian_aunts_day: 'Lesbian Aunts Day'         
+        lesbian_aunts_day: 'Lesbian Aunt Day'         
     banner: 'Vi firar'
     celebrating_custom: 'firas'
     celebrating_day: 'firas på'
