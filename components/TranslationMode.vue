@@ -1,27 +1,27 @@
 <template>
-    <div v-if="$isGranted('translations')" class="scroll-btn d-print-none d-flex align-items-center">
+    <div v-if="translationModeVisible && $user()" class="scroll-btn d-print-none d-flex align-items-center">
         <template v-if="translationMode">
             <button class="btn btn-info btn-sm m-1 px-3 py-1 d-flex justify-content-center align-items-center" @click="showChanges">
-                <small>Changes: {{ changesCount }}</small>
+                <small><T>translationMode.changes</T><T>quotation.colon</T> {{ changesCount }}</small>
             </button>
             <div v-if="changesCount" @click.prevent="commitChanges">
-                <SquareButton link="#" colour="success" aria-label="Commit changes">
+                <SquareButton link="#" colour="success" :title="$t('translationMode.commit')">
                     <Icon v="check-circle"/>
                 </SquareButton>
             </div>
             <div v-if="changesCount" @click.prevent="revertChanges">
-                <SquareButton link="#" colour="danger" aria-label="Revert changes">
+                <SquareButton link="#" colour="danger" :title="$t('translationMode.revert')">
                     <Icon v="times-circle"/>
                 </SquareButton>
             </div>
             <div @click.prevent="pause">
-                <SquareButton link="#" colour="info" aria-label="Pause translation mode">
+                <SquareButton link="#" colour="info" :title="$t('translationMode.header')">
                     <Icon v="pause-circle"/>
                 </SquareButton>
             </div>
         </template>
         <div v-else @click.prevent="startTranslating">
-            <SquareButton link="#" colour="info" aria-label="Translation Mode">
+            <SquareButton link="#" colour="info" :title="$t('translationMode.header')">
                 <Icon v="language"/>
             </SquareButton>
         </div>
@@ -75,6 +75,7 @@
         },
         computed: {
             ...mapState([
+                'translationModeVisible',
                 'translationMode',
                 'translationChanges',
             ]),
@@ -90,8 +91,8 @@
 
     .scroll-btn {
         position: fixed;
-        bottom: $spacer;
-        right: 2 * $spacer + $square-button-size;
+        bottom: 2 * $spacer + $square-button-size;
+        right: $spacer;
         z-index: 1030;
     }
 </style>

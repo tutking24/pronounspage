@@ -157,7 +157,7 @@
         </section>
 
         <template v-if="$isGranted('translations')">
-            <Loading :value="translationProposals"/>
+            <Loading :value="translationProposals">
                 <section v-if="translationProposals && translationProposals.length">
                      <h3>
                         <Icon v="language"/>
@@ -171,7 +171,7 @@
                                 <th>key</th>
                                 <th>base</th>
                                 <th>translation</th>
-                                <th>author</th>
+                                <th>author & status</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -189,7 +189,12 @@
                                 <td>
                                     <nuxt-link :to="`/@${tp.author}`">@{{tp.author}}</nuxt-link>
                                     <br/>
-                                    <button class="btn btn-sm btn-danger" @click="rejectTranslationProposal(tp.id)">Reject</button>
+                                    <template v-if="tp.status === 0">
+                                        <span class="badge bg-warning text-white">Awaiting approval</span>
+                                        <button class="btn btn-sm btn-outline-success" @click="acceptTranslationProposal(tp.id)">Accept</button>
+                                        <button class="btn btn-sm btn-outline-danger" @click="rejectTranslationProposal(tp.id)">Reject</button>
+                                    </template>
+                                    <span v-else class="badge bg-success text-white">Approved</span>
                                 </td>
                             </tr>
                             </tbody>
@@ -198,7 +203,7 @@
 
                     <details class="border mb-3">
                         <summary class="bg-light p-3">
-                            <span class="badge bg-success">Approve</span>
+                            <span class="badge bg-success">Merge</span>
                         </summary>
                         <div class="p-2">
                             <p>
@@ -328,6 +333,15 @@ import {deepSet, head} from "../src/helpers";
                 await this.$router.push('/' + this.config.user.route);
                 setTimeout(() => window.location.reload(), 500);
             },
+            async acceptTranslationProposal(id) {
+                await this.$confirm('Do you want to accept this translation proposal?', 'success');
+                await this.$post(`/translations/accept-proposal`, {id})
+                this.translationProposals = this.translationProposals.map(tp => {
+                    if (tp.id === id) { tp.status = 1; }
+                    return tp;
+                });
+                this.$forceUpdate();
+            },
             async rejectTranslationProposal(id) {
                 await this.$confirm('Do you want to reject this translation proposal?', 'danger');
                 await this.$post(`/translations/reject-proposal`, {id})
@@ -336,7 +350,7 @@ import {deepSet, head} from "../src/helpers";
             async markTranslationProposalsDone() {
                 await this.$confirm('Did you put the translations in the SUML file and want to mark them as done?', 'success');
                 await this.$post(`/translations/proposals-done`)
-                this.translationProposals = [];
+                this.translationProposals = this.translationProposals.filter(tp => tp.status === 1);
             },
         },
         computed: {
@@ -353,7 +367,9 @@ import {deepSet, head} from "../src/helpers";
             translationsProposalsSuml() {
                 const data = {};
                 for (let tp of this.translationProposals || []) {
-                    deepSet(data, tp.tKey, tp.tValue);
+                    if (tp.status === 1) {
+                        deepSet(data, tp.tKey, tp.tValue);
+                    }
                 }
                 return new Suml().dump(data);
             },

@@ -840,6 +840,21 @@ report:
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
 
+translationMode:
+    header: 'Translation Mode'
+    action: 'Propose translations'
+    welcome: >
+        Is there a translation missing or an existing one needs a correction?
+        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
+        In this mode clicking on a bordered piece of text will open a dialogue box,
+        in which you can modify the translation and compare it to the English text.
+        Remember to click on the button “Commit changes” once you're done.
+    logIn: 'You need to be logged in to propose translations'
+    changes: 'Changes'
+    commit: 'Commit changes'
+    revert: 'Revert changes'
+    pause: 'Pause Translation Mode'
+
 flags:
     Abroromantic: 'Abroromantic'
     Abrosexual: 'Abrosexual'

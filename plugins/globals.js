@@ -32,6 +32,9 @@ export default ({ app, store }) => {
 
     store.commit('setSpelling', app.$cookies.get('spelling'));
     store.commit('restoreTranslations', app.$cookies.get('translations'))
+    if (app.$cookies.get('translationModeVisible')) {
+        store.commit('showTranslationMode');
+    }
 
     Vue.prototype.buildImageUrl = (imageId, size) => `${process.env.CLOUDFRONT}/images/${imageId}-${size}.png`
 

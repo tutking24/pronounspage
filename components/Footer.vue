@@ -40,6 +40,12 @@
                             {{link.headline}}
                         </a>
                     </li>
+                    <li>
+                        <a href="#" @click.prevent="translationMode">
+                            <Icon v="language"/>
+                            <T>translationMode.action</T>
+                        </a>
+                    </li>
                 </ul>
 
                 <div class="mt-2 mb-4 text-center">
@@ -140,5 +146,16 @@ export default {
             supportLinks: [...getSupportLinks(this.config)],
         };
     },
+    methods: {
+        async translationMode() {
+            if (!this.$user()) {
+                await this.$alert(this.$t('translationMode.logIn'));
+                return;
+            }
+            await this.$alert(this.$t('translationMode.welcome'));
+            this.$store.commit('showTranslationMode');
+            this.$cookies.set('translationModeVisible', true);
+        },
+    }
 }
 </script>

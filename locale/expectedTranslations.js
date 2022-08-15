@@ -16,4 +16,12 @@ export default [
     'profile.verifiedLinks.header',
     'profile.verifiedLinks.info',
     'sources.submit.spoiler',
+    'translationMode.header',
+    'translationMode.action',
+    'translationMode.welcome',
+    'translationMode.logIn',
+    'translationMode.changes',
+    'translationMode.commit',
+    'translationMode.revert',
+    'translationMode.pause',
 ];

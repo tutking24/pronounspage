@@ -1,5 +1,5 @@
 <template>
-    <component :is="Array.isArray(txt) ? 'div' : 'span'" :class="[translationMode && $isGranted() ? 't-translation-mode' : '', modified ? 't-modified' : '']" @click="clicked"><template v-if="Array.isArray(txt)"><p v-for="p in txt"><Icon v-if="icon" :v="icon"/><LinkedText :text="p"/></p></template><template v-else><Icon v-if="icon" :v="icon"/><LinkedText :text="txt"/></template></component>
+    <component :is="Array.isArray(txt) ? 'div' : 'span'" :class="[translationMode ? 't-translation-mode' : '', modified ? 't-modified' : '']" @click="clicked"><template v-if="Array.isArray(txt)"><p v-for="p in txt"><Icon v-if="icon" :v="icon"/><LinkedText :text="p"/></p></template><template v-else><Icon v-if="icon" :v="icon"/><LinkedText :text="txt"/></template></component>
 </template>
 
 <script>
