@@ -332,6 +332,24 @@ module.exports = [
         }
     }, EventLevel.Day),
 
+    // last full week (Monday - Friday) in January
+    new Event('transition_week', 'Transgender', 1, function* (monthDays) {
+        let lastFullWeek = [];
+        let currentWeek = [];
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 1) {
+                lastFullWeek = currentWeek;
+                currentWeek = [];
+            }
+            if (d.dayOfWeek >= 1 && d.dayOfWeek <= 5) {
+                currentWeek.push(d);
+            }
+        }
+        yield* currentWeek.length === 5
+            ? currentWeek
+            : lastFullWeek;
+    }, EventLevel.Week),    
+
     // --- one-off events ---
     new Event('deaf_awareness_week', 'Progress Pride', 4, function* (monthDays) {
         for (let d of monthDays) {
