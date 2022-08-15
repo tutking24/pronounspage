@@ -1204,6 +1204,34 @@ contact:
                 - 'podlinkuj do swoich mediów społecznościowych,'
                 - 'napisz, czy masz jakieś doświadczenie aktywistyczne,'
                 - 'napisz, czym chcesz się zajmować w kolektywie.'
+    contribute:
+        header: 'Wkład w projekt'
+        intro: >
+            Zaimki.pl to projekt open-source tworzony przez osoby wolontariackie.
+            Też możesz być jego częścią! Poniżej przedstawiamy niektóre sposoby na pomoc przy tworzeniu Zaimków.
+            Osoby aktywnie współtworzące stronę zaprosimy do kolektywu.
+        entries:
+            header: 'Dodaj wpisy'
+            description: >
+                WIele części strony (jak słownik neutratywów, terminologii, inkluzywny…) pozwala na dodawanie i edytowanie wpisów.
+                Jeśli sądzisz, że czegoś w nich brakuje lub nie jest poprawne, możesz zgłosić swoją propozycję.
+        translations:
+            header: 'Dodaj lub popraw tłumaczenia'
+            description: >
+                Brakuje jakiegoś tekstu tłumaczenia albo są w nim błędy?
+                Kliknij „Zaproponuj tłumaczenie” w stopce i podążaj za instrukcjami.
+        version:
+            header: 'Stwórz nową wersję językową'
+            description: >
+                Instrukcje tworzenia nowej wersji językowej strony dostępne są {https://en.pronouns.page/new-version=tutaj}.
+                Zanim zaczniesz pracę, {/contact=skontaktuj się z nami}, by skoordynować z innymi osobami.
+        technical:
+            header: 'Zgłoś pull requesta'
+            description: >
+                Technicznymi zadaniami zarządzamy poprzez {https://gitlab.com/Avris/Zaimki/-/boards=ten kanban board}.
+                Wybierz nieprzypisanego do nikogo taska z kolumny „To Do”, przypisz go do siebie i zacznij pracę.
+                Nie bój się zadawać pytań.
+            footer: 'Zadania techniczne'
 
 support:
     header: 'Wsparcie'

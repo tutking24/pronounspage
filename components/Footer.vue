@@ -30,6 +30,30 @@
                 </ul>
 
                 <p class="h6 mb-2">
+                    <T>contact.contribute.header</T><T>quotation.colon</T>
+                </p>
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2">
+                        <a href="#" @click.prevent="translationMode">
+                            <Icon v="language"/>
+                            <T>translationMode.action</T>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://en.pronouns.page/new-version">
+                            <Icon v="globe-africa"/>
+                            <T>localise.short</T>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://gitlab.com/Avris/Zaimki/-/boards">
+                            <Icon v="code-merge"/>
+                            <T>contact.contribute.technical.footer</T>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="h6 mb-2">
                     <T>support.header</T><T>quotation.colon</T>
                 </p>
                 <ul class="list-unstyled mb-4">
@@ -38,12 +62,6 @@
                             <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
                             <span v-for="lang in link.lang || []" class="badge bg-light text-dark border">{{lang}}</span>
                             {{link.headline}}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" @click.prevent="translationMode">
-                            <Icon v="language"/>
-                            <T>translationMode.action</T>
                         </a>
                     </li>
                 </ul>
