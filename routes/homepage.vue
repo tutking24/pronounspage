@@ -71,6 +71,7 @@
         <Separator icon="heart"/>
         <section>
             <Support/>
+            <Contribute/>
         </section>
     </div>
 </template>

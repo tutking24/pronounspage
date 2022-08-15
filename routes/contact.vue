@@ -65,6 +65,8 @@
 
         <Support id="support"/>
 
+        <Contribute id="contribute"/>
+
         <Mission/>
     </div>
 </template>

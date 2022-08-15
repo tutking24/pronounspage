@@ -66,6 +66,10 @@
             </ul>
         </section>
 
+        <section>
+            <Contribute id="contribute"/>
+        </section>
+
         <section v-if="false && $te('contact.team.join')">
             <h3>
                 <Icon v="user-plus"/>

@@ -540,6 +540,34 @@ contact:
                 so keep in mind we might not have much work to give you, if that's what you want to help with.
                 But we could still need you in other areas (technical work, design, graphics, etc.)
                 and other languages (including ones that are already supported, but need eg. translations of new features).
+    contribute:
+        header: 'Contribute'
+        intro: >
+            Pronouns.page is an open-source project created by volunteers.
+            You can add your contribution too! Here's some areas where we'd appreciate your help.
+            Active contributors will be invited to join our team.
+        entries:
+            header: 'Add entries'
+            description: >
+                Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
+                If you think something's missing or incorrect, don't hesitate to submit your entry.
+        translations:
+            header: 'Add or correct translations'
+            description: >
+                A translation string is missing or incorrect?
+                Click on “Propose translations” in the footer and follow instructions.
+        version:
+            header: 'Create a new language version'
+            description: >
+                Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
+                Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
+        technical:
+            header: 'Submit a pull request'
+            description: >
+                Technical tasks are managed on {https://gitlab.com/Avris/Zaimki/-/boards=this kanban board}.
+                Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
+                Don't hesitate to ask questions.
+            footer: 'Technical tasks'
 
 support:
     header: 'Support'
