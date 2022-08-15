@@ -231,6 +231,24 @@ module.exports = [
         }
     }, EventLevel.Day, [], null, 'Paush 6 / पौष ६'),
 
+    // last full week (Monday - Friday) in January
+    new Event('{https://nationaltransitionweek.wordpress.com/=Transition Week}', 'Transgender', 1, function* (monthDays) {
+        let lastFullWeek = [];
+        let currentWeek = [];
+        for (let d of monthDays) {
+            if (d.dayOfWeek === 1) {
+                lastFullWeek = currentWeek;
+                currentWeek = [];
+            }
+            if (d.dayOfWeek >= 1 && d.dayOfWeek <= 5) {
+                currentWeek.push(d);
+            }
+        }
+        yield* currentWeek.length === 5
+            ? currentWeek
+            : lastFullWeek;
+    }, EventLevel.Week),
+
     // one-off events
     new Event('Day of Silence', null, 4, dayYear(23, 2021), EventLevel.Day),
     new Event('Day of Silence', null, 4, dayYear(22, 2022), EventLevel.Day),
