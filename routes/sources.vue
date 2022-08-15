@@ -19,7 +19,7 @@
 
         <section v-show="config.sources.submit">
             <SourceSubmitForm v-show="submitShown" ref="form"/>
-            <button v-show="!submitShown" class="btn btn-outline-success w-100" @click="submitShown = true">
+            <button v-show="!submitShown" class="btn btn-success w-100" @click="submitShown = true">
                 <Icon v="plus-circle"/>
                 <T>sources.submit.header</T>
             </button>
