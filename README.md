@@ -1,5 +1,26 @@
 # Zaimki.pl / Pronouns.page
 
+## Installation
+
+```
+git clone git@gitlab.com:Avris/Zaimki.git
+```
+
+We're using FontAwesome Pro, so to set up a local copy without having a FA license,
+open `package.json` and replace
+
+```
+"@fortawesome/fontawesome-pro": "git+ssh://git@gitlab.com:Avris/FontAwesomePro.git",
+```
+
+with
+
+```
+"@fortawesome/fontawesome-pro": "git+ssh://git@gitlab.com:Avris/FakeFontAwesomePro.git",
+```
+
+Do not commit that change!
+
 ## Build Setup
 
 ```bash
