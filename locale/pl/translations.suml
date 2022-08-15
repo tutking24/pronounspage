@@ -1659,6 +1659,21 @@ report:
     terms: 'Pamiętaj, czego zabrania nasz {/regulamin=Regulamin}'
     hoarding: 'Prosimy, nie zgłaszaj profilów za „zajmowanie nazwy użytkownicza”. Automatycznie usuwamy konta bez wizytówek po okresie nieaktywności. Twoje zgłoszenie nie przyśpieszy tego procesu.'
 
+translationMode:
+    header: 'Tryb Tłumaczenia'
+    action: 'Zaproponuj tłumaczenie'
+    welcome: >
+        Czy na stronie brakuje jakiegoś tłumaczenia? Istniejący tekst wymaga poprawek?
+        Możesz kliknąć na niebieski przycisk w prawym dolnym rogu, by włączać i wyłączać Tryb Tłumaczenia.
+        W tym trybie kliknięcie na dowolny tekst w ramce otwiera okno dialogowe,
+        w którym możesz zedytować tłumaczenie i porównać je do tekstu angielskiego.
+        Pamiętaj kliknąć „Zapisz zmiany”, gdy skończysz.
+    logIn: 'Musisz się zalogować, żeby proponować tłumaczenia'
+    changes: 'Zmiany'
+    commit: 'Zatwierdź zmiany'
+    revert: 'Wycofaj zmiany'
+    pause: 'Wyłącz Tryb Tłumaczenia'
+
 flags:
     Abroromantic: 'Abroromantyczn{adjective_n}'
     Abrosexual: 'Abroseksualn{adjective_n}'
@@ -1902,7 +1917,7 @@ calendar:
         bi_creators_day: 'Dzień Biseksualnych Osób Twórczych'
         trans_history_month: 'Miesiąc Historii Osób Transpłciowych'
         transition_week: 'Tydzień Tranzycji'
-        wrath_month: 'Miesiąc Gniewu'       
+        wrath_month: 'Miesiąc Gniewu'
         lesbian_aunts_day: 'Dzień Lesbijskich Cioć'
     banner: 'Dziś w kalendarzu'
     celebrating_custom: 'obchodzimy'

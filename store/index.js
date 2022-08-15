@@ -8,6 +8,7 @@ export const state = () => ({
     preToken: null,
     spelling: null,
     darkMode: false,
+    translationModeVisible: false,
     translationMode: false,
     translationChanges: {},
 })
@@ -54,6 +55,9 @@ export const mutations = {
     },
     setDarkMode(state, isDark) {
         state.darkMode = isDark;
+    },
+    showTranslationMode(state) {
+        state.translationModeVisible = true;
     },
     translationInit(state) {
         state.translationMode = true;
