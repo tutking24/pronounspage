@@ -294,7 +294,7 @@ import {deepSet, head} from "../src/helpers";
                 localeFilter: true,
                 adminsFilter: false,
                 usersShown: false,
-                adminNotifications: this.$user().adminNotifications ?? 7,
+                adminNotifications: this.$user() ? (this.$user().adminNotifications ?? 7) : 7,
                 translator,
                 missingTranslations: translator.listMissingTranslations(),
                 abuseReports: undefined,

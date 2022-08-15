@@ -325,7 +325,12 @@
                 await this.$confirm(this.$t('user.deleteAccountConfirm'), 'danger');
 
                 const response = await this.$post(`/user/delete`);
-                this.logout();
+
+                if (this.impersonationActive) {
+                    this.stopImpersonation();
+                } else {
+                    this.logout();
+                }
             },
             async setAvatar(source) {
                 const response = await this.$post(`/user/set-avatar`, {source});
