@@ -685,6 +685,8 @@ footer:
             pageviews: 'Page views'
             realTimeVisitors: 'Currently online'
             visitDuration: 'Avg visit duration'
+            uptime: 'Uptime'
+            responseTime: 'Avg response time'
 
 notFound:
     message: 'Page was not found'

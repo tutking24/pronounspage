@@ -1477,6 +1477,8 @@ footer:
             pageviews: 'Wyświetleń strony'
             realTimeVisitors: 'Obecnie online'
             visitDuration: 'Średnia długość odwiedzin'
+            uptime: 'Uptime'
+            responseTime: 'Średni czas odpowiedzi serwera'
 
 notFound:
     message: 'Strony nie znaleziono'
