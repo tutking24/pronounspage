@@ -181,6 +181,25 @@ community:
     header: 'Community'
     headerLong: 'Queer community'
 
+inclusive:
+    header: 'Inclusivity'
+    headerLong: 'Dictionary of inclusive language'
+    insteadOf: 'Instead of'
+    say: 'Better say'
+    because: 'Because'
+    info:
+        - >
+            Language is a carrier of thought, culture and a basis of communication. It influences are thoughts and actions.
+            If we want to build a society that's open to diversity and accepting of otherness,
+            our language needs to be inclusive as well
+        - >
+            Although we focus mostly on gender and sexuality issues on this website, inclusive language is much more than just that.
+            Below we work as a community to create a list of phrases that should be avoided, why, and what they could be replaced with.
+    categories: 'Categories'
+    sources: 'Sources'
+    clarification: 'Include a clarification'
+    clarificationDefault: 'We mean, of course, to avoid it in the pejorative meaning, not to stop using it entirely.'
+
 terminology:
     header: 'Terminology'
     headerLong: 'Dictionary of queer terminology'
