@@ -8,6 +8,7 @@ export interface RouterData {
 
     data: {
         morphemes: any;
+        grammarTables: any;
         pronounsRaw: any;
         examplesRaw: any;
         nounTemplatesRaw: any;

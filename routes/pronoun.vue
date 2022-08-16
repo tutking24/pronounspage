@@ -98,7 +98,7 @@
     import { examples, pronouns, getSources, pronounLibrary } from "~/src/data";
     import {buildPronoun} from "../src/buildPronoun";
     import {head} from "../src/helpers";
-    import GrammarTables from "../data/pronouns/GrammarTables";
+    import {GrammarTables} from "../src/localeData";
     import LinkedText from "../components/LinkedText";
     import {SourceLibrary} from "../src/classes";
 

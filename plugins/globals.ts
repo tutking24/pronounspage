@@ -26,6 +26,7 @@ export const plugin: Plugin = function ({ app, store, nuxtState }) {
     const config = global.$zRouterData().config;
 
     Vue.prototype.config = config;
+    Vue.prototype.zRouterData = global.$zRouterData();
 
     Vue.prototype.locales = buildDict(function* () {
         if (config.locale !== '_') {
