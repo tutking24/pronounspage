@@ -44,4 +44,6 @@ export default [
     'stats.keys.pageviews',
     'stats.keys.realTimeVisitors',
     'stats.keys.visitDuration',
+    'stats.keys.update',
+    'stats.keys.responseTime',
 ];
