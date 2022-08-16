@@ -128,16 +128,16 @@ terminology:
     enabled: true
     published: true
     categories:
-        - 'orientarea sexuală'
-        - 'orientarea romantică'
-        - 'orientarea terțiară'
-        - 'genul'
+        - 'orientare sexuală'
+        - 'orientare romantică'
+        - 'orientare terțiară'
+        - 'gen'
         - 'expresia genului'
         - 'modelul relației'
-        - 'limbajul'
-        - 'atracția'
-        - 'politica'
-        - 'prejudiciul'
+        - 'limbaj'
+        - 'atracție'
+        - 'politică'
+        - 'prejudiciu'
 
     route: 'terminologie'
 
@@ -269,6 +269,7 @@ links:
             extra: ' – o platformă de social-media ce integrează linkuri la carduri Pronouns.Page'
     zine:
         enabled: false
+    blog: false
 
 contact:
     enabled: true
