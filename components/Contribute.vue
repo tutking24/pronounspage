@@ -9,7 +9,7 @@
         </p>
         <div class="row small">
             <div v-for="(icon, area) in areas" class="col-12 col-lg-3">
-                <h3 class="h4">
+                <h3 class="h4 mt-3">
                     <Icon :v="icon"/>
                     <T>contact.contribute.{{area}}.header</T>
                 </h3>
