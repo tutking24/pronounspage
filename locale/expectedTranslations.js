@@ -35,4 +35,13 @@ export default [
     'contribute.technical.header',
     'contribute.technical.description',
     'contribute.technical.footer',
+    'stats.header',
+    'stats.overall',
+    'stats.current',
+    'stats.keys.users',
+    'stats.keys.cards',
+    'stats.keys.visitors',
+    'stats.keys.pageviews',
+    'stats.keys.realTimeVisitors',
+    'stats.keys.visitDuration',
 ];

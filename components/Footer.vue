@@ -142,6 +142,8 @@
                     <T>footer.sibling</T><T>quotation.colon</T>
                 </p>
                 <Siblings/>
+
+                <Stats/>
             </div>
         </div>
         <EasterEgg/>
