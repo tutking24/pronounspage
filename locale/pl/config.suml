@@ -693,6 +693,11 @@ links:
             url: 'https://jakmowicolgbt.pl'
             headline: 'Poradnik „Jak pisać i mówić o osobach LGBT+”'
         -
+            icon: 'book'
+            url: 'https://kph.org.pl/wp-content/uploads/2016/04/Zdrowie-LGBT-_-Przewodnik-dla-kadry-medycznej.pdf'
+            headline: 'Zdrowie LGBT – Przewodnik dla kadry medycznej'
+            extra: '(KPH)'
+        -
             icon: 'sticky-note'
             url: 'http://www.todziala.org'
             headline: 'Kampania: To działa!'
