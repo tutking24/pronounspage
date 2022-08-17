@@ -210,6 +210,10 @@ links:
             headline: '2019 Word of the Year is “(My) Pronouns,” Word of the Decade is Singular “They”'
             extra: '– American Dialect Society'
         -
+            icon: 'sticky-note'
+            url: 'https://pronouns.org/'
+            headline: 'Pronouns.org'
+        -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
             headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
