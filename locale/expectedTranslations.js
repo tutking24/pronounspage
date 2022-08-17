@@ -44,6 +44,6 @@ export default [
     'footer.stats.keys.pageviews',
     'footer.stats.keys.realTimeVisitors',
     'footer.stats.keys.visitDuration',
-    'footer.stats.keys.update',
+    'footer.stats.keys.uptime',
     'footer.stats.keys.responseTime',
 ];
