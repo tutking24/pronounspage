@@ -101,7 +101,7 @@ module.exports.calculateStats = async (db, allLocales) => {
 
     const home = {
         plausible: await checkPlausible('https://pronouns.page'),
-        upptime: await checkUpptime('https://pronouns.page'),
+        //upptime: await checkUpptime('https://pronouns.page'),
     };
 
     const locales = {};
@@ -147,7 +147,7 @@ module.exports.calculateStats = async (db, allLocales) => {
             },
             chart: buildChart(await db.all(`SELECT id FROM profiles WHERE locale='${locale}' ORDER BY id`)),
             plausible: await checkPlausible(allLocales[locale].url),
-            upptime: await checkUpptime(allLocales[locale].url),
+            //upptime: await checkUpptime(allLocales[locale].url),
         };
     }
 
