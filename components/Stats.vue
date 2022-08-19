@@ -59,10 +59,12 @@
                     <Icon v="external-link"/>
                     Plausible
                 </a>
+                <!--
                 <a :href="`${upptimeHost}`" target="_blank" rel="noopener">
                     <Icon v="external-link"/>
                     Upptime
                 </a>
+                -->
             </li>
         </ul>
     </div>
