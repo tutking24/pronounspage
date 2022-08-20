@@ -1,6 +1,6 @@
 <template>
     <div class="columnist-wall row">
-        <div v-for="post in posts" class="columnist-column col-12 col-sm-6 col-md-4 mb-3">
+        <div v-for="post in postsFull" class="columnist-column col-12 col-sm-6 col-md-4 mb-3">
             <div class="card shadow">
                 <nuxt-link v-if="post.hero" :to="generateLink(post.slug)" class="">
                     <img :src="post.hero" class="w-100"/>
@@ -47,15 +47,35 @@
                 }
             }
 
-            return { shortcuts };
+            return {
+                shortcuts,
+                postsFull: [],
+            };
         },
-        mounted() {
+        async mounted() {
+            this.postsFull = await this.loadFullPosts(this.posts);
+
+            console.log(this.postsFull);
+
             if (!process.client) { return; }
 
             const columnist = new Columnist(this.$el);
             columnist.start();
         },
         methods: {
+            async loadFullPosts(posts) {
+                if (!posts.length) {
+                    return [];
+                }
+                if (typeof(posts[0]) === 'object') {
+                    return posts;
+                }
+                return await this.$axios.$get(`/blog`, {
+                    params: {
+                        slugs: posts,
+                    },
+                })
+            },
             generateLink(slug) {
                 return this.shortcuts[slug] !== undefined
                     ? `/${this.shortcuts[slug]}`

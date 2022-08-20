@@ -66,18 +66,26 @@ router.get('/blog', handleErrorAsync(async (req, res) => {
         return posts;
     })
 
-    if (req.query.shortcuts !== undefined) {
-        const postsShortcuts = [];
-        if (global.config.blog && global.config.blog.shortcuts) {
-            for (let slug of Object.values(global.config.blog.shortcuts)) {
-                postsShortcuts.push(posts.filter(p => p.slug === slug)[0])
+    return res.json(posts.filter(post => {
+        if (req.query.shortcuts !== undefined) {
+            if (!global.config.blog || !global.config.blog.shortcuts) {
+                return false;
+            }
+
+            if (!Object.values(global.config.blog.shortcuts).includes(post.slug)) {
+                return false;
             }
         }
 
-        return res.json(postsShortcuts);
-    }
+        if (req.query.slugs !== undefined) {
+            const slugs = Array.isArray(req.query.slugs) ? req.query.slugs : [req.query.slugs];
+            if (!slugs.includes(post.slug)) {
+                return false;
+            }
+        }
 
-    return res.json(posts);
+        return true;
+    }));
 }));
 
 export default router;
