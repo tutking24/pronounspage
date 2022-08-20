@@ -2,6 +2,8 @@
 
 <small>2022-02-22 | [@andrea](/@andrea)</small>
 
+![napis „-ę” na tle rozmytej flagi osób niebinarnych](/img-local/blog/ę.png)
+
 Użycie końcówki -ę do [tworzenia neutratywów](/tworzenie-neutratywów) zdaje się być rozsądnym pomysłem
 – w końcu ma ją wiele rzeczowników w rodzaju nijakim/[neutralnym](/rodzaj-neutralny), np. „dziecię”, „kurczę”.
 Z początku wiele naszych propozycji w [Słowniku Neutratywów](/neutratywy) właśnie na -ę się kończyło.
