@@ -13,6 +13,10 @@
             <p><Share :title="$t('nouns.personNouns.header')"/></p>
         </div>
 
+        <section>
+            <BlogEntriesList :posts="['krótka-notka-o-osobatywach', 'osobatywy-nie-takie-straszne']"/>
+        </section>
+
         <details open class="border mb-3">
             <summary class="bg-light p-3">
                 <h4 class="h5 d-inline"><T>nouns.examples</T></h4>

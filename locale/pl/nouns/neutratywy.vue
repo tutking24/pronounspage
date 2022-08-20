@@ -18,6 +18,10 @@
             </figure>
         </div>
 
+        <section>
+            <BlogEntriesList :posts="['etymologia-odmiana-neutratywów', 'neutratywy-zdrobnienia']"/>
+        </section>
+
         <details class="border mb-3">
             <summary class="bg-light p-3">
                 <h4 class="h5 d-inline"><T>nouns.neuterNouns.extended.header</T></h4>
