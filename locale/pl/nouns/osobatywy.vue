@@ -14,7 +14,7 @@
         </div>
 
         <section>
-            <BlogEntriesList :posts="['krótka-notka-o-osobatywach', 'osobatywy-nie-takie-straszne']"/>
+            <BlogEntriesList :posts="['krótka-notka-o-osobatywach', 'osobatywy-nie-takie-straszne', 'osoby-polskie']"/>
         </section>
 
         <details open class="border mb-3">
