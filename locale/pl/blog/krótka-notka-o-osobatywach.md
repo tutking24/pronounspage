@@ -2,6 +2,8 @@
 
 <small>2021-03-27 | [@Sybil](/@Sybil) | [mykofanes.blogspot.com](https://mykofanes.blogspot.com/2021/03/krotka-notka-o-osobatywach.html)</small>
 
+![Rysunek czterech humanoidalnych postaci: psiej, boskiej, elfiej i ludzkiej; wygenerowany przez AI Dall-e](/img-local/blog/dall-e-fantasy-humanoids.png)
+
 _Osoba_ jest bardziej uniwersalna niż _człowiek_, bo może dotyczyć osób kosmicznych, bóstw i australopitejek_ków. 
 
 W kwestii samych homo sapiens _osoba_ jest w języku polskim najbardziej neutralną płciowo alternatywą -

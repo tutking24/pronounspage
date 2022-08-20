@@ -2,6 +2,8 @@
 
 <small>2022-03-29 | [@tymk](/@tymk)</small>
 
+![Obraz akwarelowy, przerażona osoba stoi w polu, za nią czai się strach na wróble; wygenerowany przez AI Dall-e](/img-local/blog/dall-e-scarecrow.png)
+
 Konstrukcje takie jak „osoba partnerska” czy „osoba towarzysząca”
 są łatwym i normatywnym sposobem na neutralne płciowo opisanie człowieka lub grupy.
 Analogicznie do feminatywów nazwałośmy je [osobatywami](/osobatywy).
