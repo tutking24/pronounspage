@@ -108,6 +108,7 @@ sources:
         extra: '追加的な情報（翻訳者、雑誌の名前など）'
         year: '（英語版の）発売年'
         fragments: '断片'
+        fragmentsInfo: '大括弧を使って大事な代名詞を強調する：「見て！\[\[あの人]]の猫はかわいいよね？」'
         comment: 'コメント'
         link: '内容へのリンク'
         thanks: '手伝っていただきありがとうございます！'
@@ -160,6 +161,10 @@ nouns:
     pluralShort: '複数'
 
     image: '画像'
+
+    submit:
+        moderation: '出版前、提出を確認をするのが要ります。'
+    template: 'テンプレートを使う'
 
 community:
     header: 'コミュニティ'
@@ -402,6 +407,19 @@ contact:
                 - 'ソーシャルメディアへのリンク、'
                 - '他の活動の経験があればそれを添えて、'
                 - '何を手伝いたいか教えてください。'
+    contribute:
+        header: '手伝う'
+        translations:
+            header: '翻訳を追加または正す'
+        version:
+            header: '新しい言語版を追加'
+        entries:
+            header: '記入を追加'
+
+translationMode:
+    action: '翻訳を申し入れる'
+    changes: '変更個数'
+    header: '翻訳モード'
 
 support:
     header: 'サポート'
@@ -566,6 +584,16 @@ footer:
     financial: '財務報告'
     technical: '技術的情報'
     sibling: '関連プロジェクト'
+    stats:
+        keys:
+            cards: 'カード個数'
+            pageviews: 'ページの訪問個数'
+            visitors: 'ユニークな訪問者の人数'
+            realTimeVisitors: 'オンライン中人数'
+            users: '登録ユーザー人数'
+        header: '統計'
+        overall: '全部言語版'
+        current: 'この言語だけ'
 
 notFound:
     message: 'このページは存在しません'
