@@ -517,6 +517,23 @@ contact:
                 - 'залишити посилання на ваші соціальні мережі;'
                 - 'розказати про наявний досвід активізму;'
                 - 'і розказати, де конкретно Ви бажаєте допомогти нам.'
+    contribute:
+        technical:
+            footer: 'Технічні завдання'
+        header: 'Допомогти'
+        intro: >
+            Pronouns.page — проект із відкритим кодом, створений волонтерами. Ви також можете додати свій внесок! Ось
+            деякі розділи, де ми будемо вдячні за вашу допомогу. Активних учасників буде запрошено приєднатися до нашої
+            команди.
+        entries:
+            header: 'Додайте записи'
+        translations:
+            header: 'Додайте або виправте переклади'
+            description: >
+                Рядок перекладу відсутній або неправильний? Натисніть «Запропонувати переклад» у нижньому колонтитулі та
+                дотримуйтесь інструкцій.
+        version:
+            header: 'Створіть нову мовну версію'
 
 support:
     header: 'Підтримка'
@@ -685,6 +702,16 @@ footer:
     financial: 'Фінансова прозорість'
     technical: 'Технічно'
     sibling: 'Сестринські проекти'
+    stats:
+        header: 'Статистика'
+        overall: 'всі мовні версії'
+        current: 'тільки ця версія'
+        keys:
+            cards: 'Картки'
+            visitors: 'Унікальні відвідувачі'
+            pageviews: 'Перегляди сторінок'
+            realTimeVisitors: 'Зараз онлайн'
+            users: 'Зареєстровані користувачі'
 
 notFound:
     message: 'Сторінка не знайдена'
@@ -898,6 +925,9 @@ report:
     sent: 'Вашу скаргу було надіслано. Дякуємо за вашу допомогу!'
     terms: 'Зверніть увагу на список заборонених дій відповідно до Умов надання послуг.'
     hoarding: 'Будь ласка, не скаржтеся на неактивні акаунти. Порожні акаунти автоматично видаляються після певного періоду неактивності. Скарги на прискорення процесу не впливають.'
+
+translationMode:
+    action: 'Запропонувати переклад'
 
 flags:
     Abroromantic: 'Аброромантичн{adjective}'
@@ -1138,11 +1168,11 @@ calendar:
         nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
-        trans_history_month: 'Transgender History Month' # TODO
+        trans_history_month: 'Місяць трансгендерної історії'
         transition_week: 'Transition Week' # TODO
         bi_creators_day: 'Bisexual Creators Day' # TODO
-        wrath_month: 'Queer Wrath Month' # TODO   
-        lesbian_aunts_day: 'Lesbian Aunts Day' # TODO                           
+        wrath_month: 'Queer Wrath Month' # TODO
+        lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
     banner: 'Ми святкуємо'
     celebrating_custom: 'святкується'
     celebrating_day: 'святкується'

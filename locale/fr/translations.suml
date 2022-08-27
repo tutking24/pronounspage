@@ -540,7 +540,7 @@ profile:
 
     personal:
         header: 'Personnel'
-        description: 'Vous êtes le seul à voir cette section'
+        description: 'Seulement vous voyez cette section'
     language:
         header: 'Langage'
         description: 'La carte de @%username% est aussi disponible dans ces langages'
