@@ -59,12 +59,10 @@
                     <Icon v="external-link"/>
                     Plausible
                 </a>
-                <!--
-                <a :href="`${upptimeHost}`" target="_blank" rel="noopener">
+                <a :href="`${heartbeatHost}`" target="_blank" rel="noopener">
                     <Icon v="external-link"/>
-                    Upptime
+                    heartbeat
                 </a>
-                -->
             </li>
         </ul>
     </div>
@@ -76,7 +74,7 @@ export default {
         return {
             stats: undefined,
             plausibleHost: process.env.PLAUSIBLE_API_HOST,
-            upptimeHost: process.env.UPPTIME_LINK,
+            heartbeatHost: process.env.HEARTBEAT_LINK,
             overall: true,
         };
     },
