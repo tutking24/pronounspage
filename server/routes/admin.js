@@ -183,9 +183,9 @@ router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
                 stats.current.visitDuration = localeStats.plausible.visit_duration;
             }
         }
-        if (localeStats.upptime) {
-            stats.current.uptime = localeStats.upptime.uptime;
-            stats.current.responseTime = localeStats.upptime.responseTime;
+        if (localeStats.heartbeat && locale === global.config.locale) {
+            stats.current.uptime = localeStats.heartbeat.uptime;
+            stats.current.responseTime = localeStats.heartbeat.avgResponseTime;
         }
     }
 

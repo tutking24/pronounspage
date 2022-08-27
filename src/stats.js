@@ -76,22 +76,6 @@ const checkPlausible = async (url) => {
     return plausible;
 }
 
-const upptimeApiBase = `https://raw.githubusercontent.com/${process.env.UPPTIME_REPO}/master/api`;
-
-const checkUpptime = async (url) => {
-    let upptime = undefined;
-
-    try {
-        const domain = url.replace(new RegExp('^https?://'), '').replace(/\./g, '-');
-        upptime = {
-            uptime: (await (await fetch(`${upptimeApiBase}/${domain}/uptime-month.json`)).json()).message,
-            responseTime: (await (await fetch(`${upptimeApiBase}/${domain}/response-time-month.json`)).json()).message,
-        };
-    } catch {}
-
-    return upptime;
-}
-
 module.exports.calculateStats = async (db, allLocales) => {
     const users = {
         overall: (await db.get(`SELECT count(*) AS c FROM users`)).c,
@@ -99,9 +83,19 @@ module.exports.calculateStats = async (db, allLocales) => {
         chart: buildChart(await db.all(`SELECT id FROM users ORDER BY id`)),
     };
 
+    let heartbeat = {};
+    try {
+         for (let pageStats of Object.values((await (await fetch(`${process.env.HEARTBEAT_LINK}/30d.json`)).json()).pages)) {
+             heartbeat[pageStats.url] = {
+                 uptime: pageStats.uptime,
+                 avgResponseTime: pageStats.avgResponseTime,
+             };
+         }
+    } catch {}
+
     const home = {
         plausible: await checkPlausible('https://pronouns.page'),
-        //upptime: await checkUpptime('https://pronouns.page'),
+        heartbeat: heartbeat['https://pronouns.page'],
     };
 
     const locales = {};
@@ -147,7 +141,7 @@ module.exports.calculateStats = async (db, allLocales) => {
             },
             chart: buildChart(await db.all(`SELECT id FROM profiles WHERE locale='${locale}' ORDER BY id`)),
             plausible: await checkPlausible(allLocales[locale].url),
-            //upptime: await checkUpptime(allLocales[locale].url),
+            heartbeat: heartbeat[allLocales[locale].url],
         };
     }
 
