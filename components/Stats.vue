@@ -47,12 +47,12 @@
             <li v-if="activeStats.uptime" class="mb-2">
                 <Icon v="monitor-heart-rate"/>
                 <T>footer.stats.keys.uptime</T><T>quotation.colon</T>
-                <strong>{{ activeStats.uptime }}</strong>
+                <strong>{{ activeStats.uptime }}%</strong>
             </li>
             <li v-if="activeStats.responseTime" class="mb-2">
                 <Icon v="stopwatch"/>
                 <T>footer.stats.keys.responseTime</T><T>quotation.colon</T>
-                <strong>{{ activeStats.responseTime }}</strong>
+                <strong>{{ activeStats.responseTime }} ms</strong>
             </li>
             <li class="mb-2 small">
                 <a :href="`${plausibleHost}/${$t('domain')}?period=30d`" target="_blank" rel="noopener">
