@@ -3,12 +3,12 @@
         <p class="h6 mb-2">
             <T>footer.stats.header</T><T>quotation.colon</T>
         </p>
-        <p v-if="overall" class="small mb-2" :key="overall">
+        <p v-if="overall" class="small mb-2" :key="'a' + overall">
             <strong><T>footer.stats.overall</T></strong>
             |
             <a href="#" @click.prevent="overall = false"><T>footer.stats.current</T></a>
         </p>
-        <p v-else class="small mb-2" :key="overall">
+        <p v-else class="small mb-2" :key="'b' + overall">
             <a href="#" @click.prevent="overall = true"><T>footer.stats.overall</T></a>
             |
             <strong><T>footer.stats.current</T></strong>
@@ -80,6 +80,7 @@ export default {
     },
     async mounted() {
         this.stats = await this.$axios.$get('/admin/stats-public')
+        console.log(this.stats);
     },
     methods: {
         formatNumber(number) {
