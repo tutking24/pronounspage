@@ -92,6 +92,13 @@ pronouns:
             - 'Persoana C folosește {/ze=ze/hir} substituibil cu {/fae=fæ/fær}, deci când ze vorbește despre persoana A, fea folosește ori ze/hir or fæ/fær să se refere la fær.'
     slashes: true
     others: 'Alte pronume'
+    #sentence:
+    #    subdomains: ['my', 'our']
+    #    prefixes: ['/are']
+    #    examples:
+    #        - 'my.pronouns.page/are/they/them'
+    #        - 'my.pronouns.page/are/xe&she'
+    #        - 'our.pronouns.page/are/they/them'
 
 pronunciation:
     enabled: true
