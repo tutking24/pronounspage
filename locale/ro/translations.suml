@@ -447,19 +447,7 @@ faq:
                     sau pe persoanele ce doresc să aiba carduri separate pentru uz public și pentru prieteni apropiați.
                     Din păcate, funcția asta necesită <em>o groază</em> de schimbări în cod, la fel și testare.
                     Vom încerca s-o prioritizăm, dar neavând timp destul, nu putem promite nicio dată specifică.
-        business:
-            question: 'Sunteți un business?'
-            answer:
-                - >
-                    Nup. Suntem voluntari.
-                    Noi creăm website-ul cu munca noastră.
-                    Costurile întreținerii sunt acoperite pe o parte de {https://arc.io/faq=plugin-ul arc.io}
-                    și restul vine de la noi din portofele
-                    și din {/contact#suport=donațiile voastre} - de care suntem foarte recunoscători! ❤️
-                - >
-                    Asta înseamnă și că dacă ești „boycotting” pe noi din cauza {/blog/we-are-inclusive=incluziunii noastre},
-                    ne faci o favoare. Nu-i de parcă facem bani de la tine.
-                    Excluzioniștii și queerfobii nu sunt bine veniți aici.
+
 links:
     header: 'Linkuri'
     headerLong: 'Linkuri extra'

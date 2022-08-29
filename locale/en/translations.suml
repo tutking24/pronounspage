@@ -465,19 +465,7 @@ faq:
                     or people who want to have a separate cards for more public use and for close friends.
                     Unfortunately, this feature requires <em>tons</em> of changes in the code as well as testing.
                     We'll try to prioritise it, but being swamped with other work, we can't really promise any specific date.
-        business:
-            question: 'Are you a business?'
-            answer:
-                - >
-                    Nope. We're volunteers.
-                    We create the website with our own work.
-                    The maintenance costs are covered in part by the {https://arc.io/faq=arc.io plugin},
-                    the rest comes out of our own pockets
-                    and {/contact#support=your donations} – for which we're very grateful! ❤️
-                - >
-                    That also means that if you're “boycotting” us because of {/blog/we-are-inclusive=our inclusivity},
-                    you're doing us a favour. It's not like we were making any money on you.
-                    Exclusionists and queerphobes aren't welcome here.
+
 links:
     header: 'References'
     headerLong: 'Extra references'

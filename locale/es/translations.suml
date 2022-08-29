@@ -407,19 +407,6 @@ faq:
                     entonces ese enlace será marcado con el ícono de escudo ([shield-check]).
                     Y también incluirá una etiqueta <code>rel="me"</code>, para que servicios como Mastodon también puedan verificarlo.
                     Hasta ahora, esta característica sólo funciona con Twitter y Mastodon.
-        business:
-            question: '¿Son un negocio?'
-            answer:
-                - >
-                    Nop. Somos voluntarixs.
-                    Creamos el sitio web con nuestro propio trabajo.
-                    Los costos de mantenimiento son parcialmente cubiertos por el {https://arc.io/faq=plugin de arc.io},
-                    y el resto sale de nuestros bolsillos y
-                    de {/contacto#support=tus donaciones} – ¡las cuales agradecemos mucho! ❤️
-                - >
-                    Eso significa que si nos estás “boicoteando” por {/blog/somos-inclusivxs=nuestra inclusividad},
-                    nos estás haciendo un favor. De todos modos no ganamos dinero a través de tí.
-                    Lxs exclusionistas y lxs queerfóbicxs no son bienvenidxs aquí.
 
 links:
     header: 'Enlaces'
