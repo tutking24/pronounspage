@@ -80,7 +80,6 @@ export default {
     },
     async mounted() {
         this.stats = await this.$axios.$get('/admin/stats-public')
-        console.log(this.stats);
     },
     methods: {
         formatNumber(number) {

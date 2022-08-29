@@ -55,8 +55,6 @@
         async mounted() {
             this.postsFull = await this.loadFullPosts(this.posts);
 
-            console.log(this.postsFull);
-
             if (!process.client) { return; }
 
             const columnist = new Columnist(this.$el);
