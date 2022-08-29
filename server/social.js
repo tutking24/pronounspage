@@ -71,6 +71,7 @@ module.exports.handlers = {
             id: r.profile.id,
             email: r.profile.email,
             name: r.profile.username,
+            username: r.profile.username + '#' + r.profile.discriminator,
             avatar: `https://cdn.discordapp.com/avatars/${r.profile.id}/${r.profile.avatar}`,
             access_token: r.access_token,
             access_secret: r.access_secret,
