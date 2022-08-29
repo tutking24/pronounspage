@@ -13,7 +13,7 @@ home:
     about:
         - >
             Cu toții avem pronume. Sunt acele cuvinte pe care le folosim când vorbim despre cineva fără a îi menționa numele de fiecare dată.
-            Cei mai mulți oameni folosesc {/el=„el/pe el”} și {/ea=„ea/pe ea”}, deci presupunem automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care dorim să vorbim.
+            Cei mai mulți oameni folosesc {/el=„el/pe el”} și {/ea=„ea/pe ea”}, deci presupunem automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care se vorbește.
             Însă, nu e așa de simplu…
         - >
             Genul e complicat. Nu toți „arată” ca genul cu care se identifică.
@@ -21,7 +21,7 @@ home:
             Alții pur și simplu nu intră în categoria de „masculin” sau „feminin” și preferă un limbaj mai neutru.
         - >
             Acest website te ajută să distribui un link către pronumele tale cu exemple contextuale,
-            pentru a le putea prezenta oamenilor cum vrei să te adreseze.
+            pentru a le putea prezenta oamenilor cum dorești să te adreseze.
         - >
             „De ce contează?” Din simplă decență umană.
             Nu i-ai zice Anei „Ștefania” doar pentru că ție îți place mai mult acel nume
@@ -29,7 +29,7 @@ home:
             Sau chiar dacă <em>ar avea</em> numele „Ștefania” pe certificatul ei de naștere,
             dar ea îl urăște nespus și îi place mai mult „Ana”.
             E aceeași poveste și cu pronumele –
-            dacă nu dorești să fii nepoliticos, adresează-te lor cum se cuvine.
+            dacă nu dorești să fii nepoliticos, adresează-te cum se cuvine.
             Singura diferență e că de obicei le cunoaștem numele, dar nu și pronumele.
             Ne introducem altora folosindu-ne doar numele, nu și pronumele. A venit vremea să schimbăm acest lucru!
     pronouns: 'Lista pronumelor populare'
@@ -53,11 +53,11 @@ home:
             orice pronume simt că îi descriu cel mai bine.
         respect: >
             <strong>Respect</strong>
-            – pentru ca pronumele <em>altor persoane</em> să fie respectate.
+            – pentru ca pronumele <em>altora</em> să fie respectate.
         inclusiveness: >
             <strong>Incluziune</strong>
             – pentru ca atunci când ne referim la o persoană pe care nu o cunoaștem sau la un grup de oameni,
-            să nu le asumăm genul și să nu-i excludem cu niciun motiv.
+            să nu le asumăm genul și să nu-i excludem sub niciun motiv.
 
 pronouns:
     header: 'Pronume'
@@ -236,7 +236,7 @@ faq:
                     Chiar și dintr-un punct de vedere biologic, putem diferenția sexul cromozomial,
                     sexul genetic, sexul hormonal, sexul fenotipic…
                     Ele nu sunt necesar egale între ele și nu trebuie să fie binare.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mai multe informații (în limba engleză) aici)}.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mai multe informații (în limba Engleză) aici)}.
                     Și când ajungem la aspectul cultural, „genul” este o construcție socială.
                     În funcție de timp și locație, a fi „o femeie” sau „un bărbat” poate însemna a avea diferite
                     drepturi, sarcini, norme… În europa, bărbații purtau tocuri și ciorapi,
@@ -260,7 +260,7 @@ faq:
             answer:
                 - >
                     Pentru că adresarea persoanelor în felul în care vor să fie adresate este baza relațiilor sociale.
-                    Nu ai striga-o pe Ana „Ștefania”, nu ai lăsa „domnule”/„doamnă” când te-ai adresa la șeful tău etc.
+                    Nu ai striga-o pe Ana „Ștefania”, nu ai lăsa „domnule”/„doamnă” când te-ai adresa șefului tău etc.
                     Și sunt unele persoane ce nu vor să fie referite nici ca „{/el=el}” și nici ca „{/ea=ea}”.
                     Dacă nu accepți asta, te pune pe <em>tine</em> într-un statut rău.
                 - >
@@ -269,7 +269,7 @@ faq:
             question: 'Pronumele astea sunt făcute!' # „acestea” could also be used. replace „făcute” with „false”?
             answer:
                 - >
-                    Da. Chiar sunt. La fel ca fiecare cuvânt din fiecare limbă.
+                    Da. Chiar sunt. La fel ca orice alt cuvânt din fiecare limbă.
                     Unele cuvinte sunt doar mai vechi ca altele.
         how-to-know:
             question: 'Cum aflu cum să mă adresez cuiva?' # rephrasing? maybe replacing „aflu” with „știu” to keep it closer to its english version
@@ -278,7 +278,7 @@ faq:
                     Poți întreba! Da, poate fi un pic jenant, dar cu cât o facem mai mult, cu atât devine mai puțin jenant.
                     Dacă putem întreba pe cineva de numele său, de ce nu și pronumele?
                 - >
-                    (Doar, te rugăm, nu pune întrebarea ca și „ești băiat sau fată?”.
+                    (Doar, te rugăm, nu pune întrebarea ca „ești băiat sau fată?”.
                     Întrebarea asta impune că sunt doar două răspunsuri corecte,
                     și sugerează curiozitate nesănătoasă despre genitalele cuiva.
                     În schimb, ai putea întreba „care sunt pronumele tale?” sau „cum ar trebui să mă refer la tine?”)
@@ -288,7 +288,7 @@ faq:
                     E și mai ușor online: doar pune pronumele tale (sau un link la exemple de pe website-ul nostru) în biografia ta.
                 - >
                     Ține minte că multe persoane pot folosi un nume diferit și un set de pronume diferite în funcție de situație.
-                    Poate nu sunt încă „ieșiți” la prieteni sau la colegii de muncă, dar poate sunt mai comfortabili în jurul prietenilor trăind adevărul lor.
+                    Poate nu sunt încă {/terminologie#coming out=„ieșiți”} la prieteni sau la colegii de muncă, dar poate sunt mai comfortabili în jurul prietenilor trăind adevărul lor.
                     Gândește-te bine. Poate ar trebui să îi întrebi „ce pronume ar trebui să folosesc în fața șefului tău?” etc.
                 - >
                     Unele persoane dau mai multe pronume, ex: „{/el&ea=el/ea}” sau „{/ei&el=ei/el}”.
@@ -306,17 +306,17 @@ faq:
                     Limbajul nu este vreo magie antică, dată de Dumnezeu, pusă în piatră.
                     E doar un lucru pe care îl folosim pentru a comunica.
                     Când îl schimbăm ca o societate, și când lumea din jurul nostru se schimbă,
-                    noi ajustăm limba pe care o folosim pentru a putea descrie mai bine.
+                    ajustăm limba pe care o folosim pentru a putea descrie mai bine.
                     Noi suntem utilizatorii ei, deci <em>noi suntem autoritatea</em>
                 - >
                     Dicționarele nu se grăbesc să adauge aceste schimbări,
                     dar asta nu înseamnă că schimbările respective sunt false în vreun fel.
                     Dar eventual formele noi, dacă folosite destul de des, vor fi incluse în dicționare.
                     De exemplu, {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster},
-                    acceptă folosința lui {/they=„they” la singular} ca un pronume non-binar în limba engleză
+                    acceptă folosința lui {https://en.pronouns.page/they=„they” la singular} ca un pronume non-binar în limba Engleză
                 - >
                     Poți citi câteva {https://scholar.google.com/scholar?hl=en&q=neopronouns=lucrări academice}
-                    despre neo-pronume în limba engleză.
+                    despre neo-pronume în limba Engleză.
         bio:
             question: 'De ce mi-aș pune pronumele în biografie pe rețelele de socializare?'
             answer:
@@ -337,7 +337,7 @@ faq:
                     Din păcate, asta ne evidențiază.
                     Dar dacă și persoanele cis fac la fel, înseamnă foarte mult pentru noi.
                     Ne face să ne simțim mai comfortabili, siguri și bine veniți
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mai multe motive (în limba engleză) aici).}
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mai multe motive (în limba Engleză) aici).}
         change:
             question: 'Îmi pot schimba pronumele?'
             answer:
@@ -359,8 +359,8 @@ faq:
             question: 'De ce n-aș putea spune „pronume preferate”?'
             answer:
                 - >
-                    Pentru că fraza asta sugerează că pronumele cuiva sunt doar o fiță
-                    Dacă cineva doar „preferă” să fie strigată „ea”, el nu s-ar simți _foarte_ rău dacă îl strigăm „el”, nu?
+                    Pentru că fraza asta sugerează că pronumele cuiva sunt doar o fiță.
+                    Dacă cineva doar „preferă” să fie strigată „ea”, nu s-ar simți _foarte_ rău dacă o strigăm „el”, nu?
                     Arată a bărbat până la urmă, deci va fi mai ușor pentru mine!
                 - >
                     Nu! Sunt pronumele noastre. Nu „pronumele noastre preferate”. Sunt numele nostru, nu „numele nostru preferat”.
@@ -395,7 +395,7 @@ faq:
                     Suntem și noi înșiși queer și trans, ne pasă de frații noștrii trans.
                     Din păcate, e foarte greu să faci asemenea decizi
                     când primim mesaje de la persoane trans care doresc să adauge un steag cu care se identifică
-                    și de la alte persoane trans care cer să îl scoată deoarece cumva daunează persoanelor trans.
+                    și de la alte persoane trans care cer să îl scoată deoarece cumva daunează.
                     Nu e de parcă istoria fiecărei etichete e clară sau de parcă există vreo sursă autoritivă pentru a căuta.
                     Și chiar și dacă queerfobicii încearcă să facă unii termeni jignitori,
                     noi credem în puterea comunității să revendicăm acești termeni.
@@ -489,7 +489,7 @@ contact:
     hate: >
         Vrei să ne trimiți emailuri queerfobice?
         Lasă-te baltă, nu discutăm cu trolli.
-        Ne ia mai puțin timp să te dăm pe mut și să-ți punem mesajul în folderul de spam decât ți-a luat ție să-l scrii.
+        Ne ia mai puțin timp să te dăm pe mut și să-ți mutăm mesajul în folderul de spam decât ți-a luat ție să-l scrii.
     language: >
         Suntem o echipă internațională – persoanele ce au creat o versiune lingvistică specifică
         pot să nu fie aceleași persoane care îți vor citi mesajul.
@@ -504,7 +504,7 @@ contact:
         extra: []
         logo: 'Sigla colectivului este o combinație între simbolul transgender și o bulă de dialog ce simbolizează limbajul.'
         members: 'Membrii actuali'
-        member: 'Membrii colectivului'
+        member: 'Membru al colectivului'
         upcoming: 'Versiunile lingvistice viitoare'
         join:
             header: 'Alătură-te!'
@@ -543,7 +543,7 @@ contact:
     contribute:
         header: 'Contribuie'
         intro: >
-            Pronouns.page este un proiect cu sursă-deschisă (open-source) creat de voluntari.
+            Pronouns.page este un proiect cu sursă-deschisă (open-source) creat de către voluntari.
             Îți poți adăuga și tu contribuția! Aici sunt câteva locuri unde ți-am aprecia ajutorul.
             Contribuitorii activi vor fi invitați in echipă.
         entries:
@@ -559,7 +559,7 @@ contact:
         version:
             header: 'Crează o nouă versiune lingvistică'
             description: >
-                Instrucțiunile pentru crearea unei noi versiuni lingvistice se află {https://en.pronouns.page/new-version=aici} (în engleză).
+                Instrucțiunile pentru crearea unei noi versiuni lingvistice se află {https://en.pronouns.page/new-version=aici} (în lb. Engleză).
                 Înainte de a te apuca, te rog {/contact=contactează-ne} pentru a coordona cu ceilalți care lucrează la aceeași traducere.
         technical:
             header: 'Trimite un pull request'
@@ -572,7 +572,7 @@ contact:
 support:
     header: 'Suport'
     description: >
-        Dacă vrei să donezi pentru server, domeniu, stickere etc., sau pur și simplu să cumperi autorilor o bere,
+        Dacă vrei să donezi pentru server, domeniu, stickere etc. sau pur și simplu să le cumperi autorilor o bere,
         poți folosi linkurile de mai jos:
     bankAccount: 'Transfer bancar'
     # bankAccountOwner: 'Contul este numele unui întreținător al proiectului, Andrea Vos'
@@ -616,7 +616,7 @@ user:
             invalid: 'Adresa de email nu este validă.'
             taken: 'Această adresă de email este deja folosită.'
         admin: 'Admin'
-    logout: 'Ieși din cont'
+    logout: 'Deconectează-te'
     avatar:
         header: 'Avatar'
         change: 'Schimbă'
@@ -634,7 +634,7 @@ user:
             Scanează codul acesta QR (sau introdu codul de mai jos) în aplicatia ta TOTP de autentificare (ex: {https://authy.com/=Authy})
             și apoi introdu token-ul care este generat.
         recovery:
-            header: 'Codurile de recuperare'
+            header: 'Cod de recuperare'
             save: >
                 Salveaza următoarele coduri de recuperare într-un loc sigur.
                 Vei putea să le folosești pentru a sări peste AMMF în cazul în care ai pierdut dispozitivul cu care te autentificai.
@@ -661,8 +661,8 @@ profile:
     names: 'Nume'
     pronouns: 'Pronume'
     pronounsInfo: >
-        Poți introduce un <strong>pronume</strong> (ex: „ei/lui” sau „ea/ei”)
-        sau un <strong>link</strong> (ex: „https://ro.pronouns.page/ne”)
+        Poți introduce un <strong>pronume</strong> (ex: „ei/lui” sau „ea/ei”),
+        un <strong>link</strong> (ex: „https://ro.pronouns.page/ne”)
         sau cele cinci forme (ex: „el/pe el/lui/a lui/însuși”).
         Ține minte că <strong>toate cele cinci forme</strong> sunt necesare în cazul acesta,
         altfel, aplicația poate doar să ghicească ce vrei să spui.
@@ -748,7 +748,7 @@ footer:
         {https://gitlab.com/Avris/Zaimki=Codul sursă} și conținutul sunt sub licența {/license=OQL}.
     links: 'Date de contact, rețele de socializare, suportă cauza'
     legal: 'Legal'
-    financial: 'Transparența financiară'
+    financial: 'Transparență financiară'
     technical: 'Tehnic'
     sibling: 'Proiecte asemănătoare' # „sibling projects”
     stats:
@@ -788,7 +788,7 @@ terms:
     #you can either leave the terms untranslated, or translate it and include the following disclaimer:
     translationDisclaimer: >
         Textul următor este doar o traducere auxiliară.
-        Singura versiune legală ale Termenilor este cel în limba engleză, aflat
+        Singura versiune legală ale Termenilor este cel în limba Engleză, aflat
         {https://en.pronouns.page/terms=aici}.
     content:
         intro: >

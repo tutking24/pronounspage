@@ -22,8 +22,8 @@ pronouns:
         history: >
             Unele persoane preferă să nu folosească niciun pronume, fiind referiți după nume, inițială,
             evitând pronume cu voce pasivă sau restructurând propoziția.
-            Vezi: {https://twitter.com/lypomania/status/1290274971642544128=ghidul lui lypomania (în limba engleză)},
-            {https://lgbta.wikia.org/wiki/Nullpronominal=Nul-pronominal pe LGBTA Wiki (în limba engleză)}
+            Vezi: {https://twitter.com/lypomania/status/1290274971642544128=ghidul lui lypomania (în lb. Engleză)},
+            {https://lgbta.wikia.org/wiki/Nullpronominal=Nul-pronominal pe LGBTA Wiki (în lb. Engleză)}
         morphemes:
             pronoun_subject: '#'
             pronoun_object: 'pe #'
@@ -193,17 +193,17 @@ links:
         -
             icon: 'comment-alt-edit'
             url: 'https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio'
-            headline: 'De ce toți aliații cis ar trebui să aibă pronume în biografie'
+            headline: 'De ce toți aliații cis ar trebui să aibă pronume în biografie (în lb. Engleză)'
         -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
-            headline: 'Pronumele neutre: Sunt aici, obișnuiește-te (în lb. engleză)'
+            headline: 'Pronumele neutre: Sunt aici, obișnuiește-te (în lb. Engleză)'
             extra: '– Tom Scott'
         -
             icon: 'wikipedia-w'
             iconSet: 'b'
             url: 'https://lgbta.wikia.org/wiki/Neopronouns'
-            headline: 'Wiki-ul LGBTA despre neopronume (în lb. engleză)'
+            headline: 'Wiki-ul LGBTA despre neopronume (în lb. Engleză)'
         #-
         #    icon: 'book-open'
         #    url: 'https://scholar.google.com/scholar?hl=en&q=neopronouns'
@@ -222,8 +222,8 @@ links:
                 reflectă lumea în care dorim să trăim și să lucrăm.
                 Prin urmare, cuvintele și imaginile contează deoarece comunicația poate deveni discriminatoare dacă eșuăm să considerăm
                 presupunerile ce influențează limbajul și vizualele pe care le folosim.
-                Limbajul se schimbă întotdeauna: cuvintele evoluează, iar folosirea lor ar trebui evoluată în același timp. Folosind limbajul neutru
-                și fără prejudecată este un mod pentru a pleca de la percepțiile vechi despre bărbați, femei
+                Limbajul se schimbă întotdeauna: cuvintele evoluează, iar folosirea lor ar trebui evoluată simultan. Folosind limbajul neutru
+                și fără prejudecată este un mod de a pleca de la percepțiile vechi despre bărbați, femei
                 și grupuri minoritare din societate
 
     academic: []
@@ -244,7 +244,7 @@ links:
             icon: 'cogs'
             url: 'https://github.com/eramdam/BetterTweetDeck/releases/tag/4.5.2'
             headline: 'BetterTweetDeck'
-            extra: ' – o extensie TweetDeck care, pe lângă alte lucruri, arată pronumele utilizatorului mai proeminent, cu ajutoul API-ului nostru'
+            extra: ' – o extensie TweetDeck care, pe lângă alte lucruri, arată pronumele utilizatorului mai proeminent, cu ajutorul API-ului nostru'
         -
             icon: 'cogs'
             url: 'https://github.com/katacarbix/pronouns.js'
