@@ -527,8 +527,8 @@ profile:
     bannerButton: 'Erstelle eine Visitenkarte'
     card:
         link: 'Visitenkartenbild'
-        generate: 'Generatieren'
-        generating: 'Generatierung läuft…'
+        generate: 'Generieren'
+        generating: 'Generierung läuft… Das könnte ein paar Minuten dauern.'
     empty: 'Diese Person hat noch keine Visitenkarte erstellt.'
 
     personal:
