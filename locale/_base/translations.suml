@@ -396,7 +396,9 @@ links:
 
 people: ~
 
-# optional, but would be nice to have
+# this section is a short English-language explanation of how gendered and gender-neutral forms work in your language
+# see for example: https://zaimki.pl/english
+# it's optional, but would be nice to have
 english:
     header: 'English'
     headerLong: 'An overview in English'
