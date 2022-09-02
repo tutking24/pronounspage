@@ -100,6 +100,8 @@
             </template>
         </Table>
 
+        <AdPlaceholder phkey="main-1" class="my-3"/>
+
         <Separator icon="plus"/>
 
         <div class="px-3">

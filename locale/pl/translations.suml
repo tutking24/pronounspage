@@ -1511,7 +1511,7 @@ terms:
             z którym możesz skontaktować się drogą mailową:
         consent: >
             Używając Usług wyrażasz zgodę na warunki Regulaminu
-            oraz na to, byśmy zbierały i przetwarzały Twoje dane zgodnie z dostępną poniżej Polityką Prywatności.
+            oraz na to, byśmy zbierały i przetwarzały Twoje dane zgodnie z naszą {/prywatnosc=Polityką Prywatności}.
         accounts:
             header: 'Osoby użytkujące oraz konta'
             age: >
@@ -1553,6 +1553,7 @@ terms:
                 enbyphobia: 'enbyfobia'
                 queerphobia: 'queerfobia'
                 exclusionism: 'queerowy ekskluzjonizm'
+                sexism: 'seksizm'
                 misogyny: 'mizoginia'
                 harassment: 'nekanie'
                 impersonation: 'podszywanie się pod inne osoby'
@@ -1569,40 +1570,6 @@ terms:
                 Jeśli złamiesz ten Regulamin, usuniemy Twoje Treści bez uprzedniego powiadomienia,
                 możemy też wycofać Twoją licencję na dostęp do Usług.
                 Jeśli złamiesz prawo, przekażemy Twoje dane organom ścigania.
-        privacy:
-            header: 'Polityka Prywatności'
-            effort: >
-                Dokładamy wszelkich starań, by przechowywać Twoje dane w sposób bezpieczny,
-                oraz by wszystkie dane, których wprost nie opublikujesz, nie zostały przejęte przez osoby trzecie,
-                z wyjątkiem zaufanych stron trzecich opisanych poniżej.
-            data: >
-                Oprócz danych, które wprost opublikujesz w Usługach jako Treści,
-                albo przekażesz nam pośrednio (np. tokeny dostępowe OAuth w przypadku logowania się przez media społecznościowe),
-                żadne dodatkowe prywatne dane dane powiązane z Twoim kontem nie są przechowywane ani przetwarzane.
-            editRemoval: >
-                Możesz edytować i usunąć każdą Treść, którą umieszczasz w Usługach.
-            contact: >
-                Jeśli skontaktujesz się z nami drogą mailową, będziemy przechowywać Twój adres email w celu dalszej komunikacji.
-            cookies: >
-                Własnych ciasteczek oraz local storage używamy tylko do utrzymania sesji logowania oraz zapisania Twoich preferencji.
-            plausible: >
-                Używamy Plausible do analizowania ruchu sieciowego na stronie.
-                Te dane nie są powiązane z Twoją nazwą użytkownicza, a Twój adres IP jest anonimizowany.
-                Możesz przeczytać ich politykę prywatności
-                {https://plausible.io/privacy=tutaj}.
-            arc: >
-                Używamy arc.io, by pokryć koszty utrzymania strony bez wprowadzania reklam.
-                Ich politykę prywatności możesz przeczytać
-                {https://arc.io/faq=tutaj}.
-            hCaptcha: >
-                Używamy hCaptcha do odfiltrowywania botów oraz zapobiegania atakom DDoS.
-                Ich politykę prywatności możesz przeczytać
-                {https://www.hcaptcha.com/privacy=tutaj}.
-            logsBackups: >
-                Logi serwera oraz kopie bezpieczeństwa są przechowywane nie dłużej niż przez 18 miesięcy.
-            gdpr: >
-                Twoje dane osobowe są chronione przez RODO, co oznacza, że masz prawo
-                do wglądu, poprawy, aktualizacji i usunięcia Twoich danych, które przechowujemy.
         closing:
             header: 'Postanowienia końcowe'
             jurisdiction: >
@@ -1610,28 +1577,47 @@ terms:
             changes: >
                 Zastrzegamy sobie prawo do zmiany niniejszego Regulaminu w dowolnym momencie.
                 Jeśli zmiany będą istotne, poinformujemy o nich na przynajmniej 30 dni przed ich wejściem w życie.
-    update:
-        header: 'Zaktualizowałośmy nasz Regulamin.'
-        intro: >
-            Chcemy dać znać, że zaktualizowałośmy nasz Regulamin. Oto przegląd zmian:
-        changes:
-            - >
-                W styczniu zaczniemy usuwać nieużywane konta, aby zwolnić nazwy użytkownicza do puli wolnych nazw
-                (dotyczy to kont bez stworzonej wizytówki ani aktywności w ciągu miesiąca).
-            - >
-                Chcemy tworzyć serwis otwarty na osoby queerowe niezależnie od wieku,
-                ale musimy też przestrzegać prawa i chronić prywatność osób, które nie mogą wyrazić wiążącej zgody na przetwarzanie ich danych.
-                Teraz nasz Regulamin wprost wspomina o zasadach od zawsze obowiązujących w ramach RODO:
-                musisz mieć co najmniej 13 lat, by założyć konto,
-                a w przypadku osób w wieku 13-16 lat zgodę na przetwarzanie danych wyrażają w ich imieniu osoby posiadające władzę rodzicielską.
-            - >
-                Aby poprawić dostępność, zaczęłośmy tłumaczenie Regulaminu na wszystkie wspierane języki.
-                Tłumaczenia te są wyłącznie pomocnicze, jedyną prawnie wiążącą wersją pozostaje wersja angielska.
-            - >
-                Choć queerfobia, transfobia, ekskluzjonizm queerowy oraz trolling
-                od zawsze były rozumiane jako łamiące Regulamin jako przykłady „łamania norm społecznych”,
-                to teraz wprost je listujemy jako zabronione.
 
+privacy:
+    header: 'Polityka Prywatności'
+    content:
+        intro: >
+            Poniższa Polityka Prywatności opisuje w jaki sposób Usługi dostępne poprzez stronę
+            <strong>pronouns.page / zaimki.pl</strong> zarządzają Twoimi danymi osobistymi.
+            Usługa administrowana jest przez kolektyw „Rada Języka Neutralnego”,
+            z którym możesz skontaktować się drogą mailową:
+        effort: >
+            Dokładamy wszelkich starań, by przechowywać Twoje dane w sposób bezpieczny,
+            oraz by wszystkie dane, których wprost nie opublikujesz, nie zostały przejęte przez osoby trzecie,
+            z wyjątkiem zaufanych stron trzecich opisanych poniżej.
+        data: >
+            Oprócz danych, które wprost opublikujesz w Usługach jako Treści,
+            albo przekażesz nam pośrednio (np. tokeny dostępowe OAuth w przypadku logowania się przez media społecznościowe),
+            żadne dodatkowe prywatne dane dane powiązane z Twoim kontem nie są przechowywane ani przetwarzane przez Usługę.
+        editRemoval: >
+            Możesz edytować i usunąć każdą Treść, którą umieszczasz w Usługach.
+        contact: >
+            Jeśli skontaktujesz się z nami drogą mailową, będziemy przechowywać Twój adres email w celu dalszej komunikacji.
+        cookies: >
+            Własnych ciasteczek oraz local storage używamy tylko do utrzymania sesji logowania oraz zapisania Twoich preferencji.
+        plausible: >
+            Używamy Plausible do analizowania ruchu sieciowego na stronie.
+            Te dane nie są powiązane z Twoją nazwą użytkownicza, a Twój adres IP jest anonimizowany.
+            Możesz przeczytać ich politykę prywatności
+            {https://plausible.io/privacy=tutaj}.
+        arc: >
+            Używamy arc.io, by pokryć koszty utrzymania strony bez wprowadzania reklam.
+            Ich politykę prywatności możesz przeczytać
+            {https://arc.io/faq=tutaj}.
+        hCaptcha: >
+            Używamy hCaptcha do odfiltrowywania botów oraz zapobiegania atakom DDoS.
+            Ich politykę prywatności możesz przeczytać
+            {https://www.hcaptcha.com/privacy=tutaj}.
+        logsBackups: >
+            Logi serwera oraz kopie bezpieczeństwa są przechowywane nie dłużej niż przez 18 miesięcy.
+        gdpr: >
+            Twoje dane osobowe są chronione przez RODO, co oznacza, że masz prawo
+            do wglądu, poprawy, aktualizacji i usunięcia Twoich danych, które przechowujemy.
 admin:
     header: 'Panel adminia'
     user:

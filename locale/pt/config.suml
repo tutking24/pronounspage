@@ -106,6 +106,7 @@ user:
     enabled: true
     route: 'conta'
     termsRoute: 'termos'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

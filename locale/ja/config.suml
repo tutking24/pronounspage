@@ -193,6 +193,7 @@ user:
     enabled: true
     route: 'アカウント'
     termsRoute: '利用規約'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

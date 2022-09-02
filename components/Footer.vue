@@ -53,6 +53,9 @@
                     </li>
                 </ul>
 
+                <AdPlaceholder phkey="footer"/>
+
+                <!--
                 <p class="h6 mb-2">
                     <T>support.header</T><T>quotation.colon</T>
                 </p>
@@ -65,6 +68,7 @@
                         </a>
                     </li>
                 </ul>
+                -->
 
                 <div class="mt-2 mb-4 text-center">
                     <ModeSwitch/>
@@ -93,6 +97,12 @@
                         <nuxt-link :to="`/${config.user.termsRoute}`">
                             <Icon v="gavel"/>
                             <T>terms.header</T>
+                        </nuxt-link>
+                    </li>
+                    <li class="mb-2">
+                        <nuxt-link :to="`/${config.user.privacyRoute}`">
+                            <Icon v="user-secret"/>
+                            <T>privacy.header</T>
                         </nuxt-link>
                     </li>
                     <li class="mb-2">
@@ -152,7 +162,7 @@
     </footer>
     <div v-else>
         <a v-for="link in links" :key="link.url" :href="link.url" target="_blank" rel="me">&nbsp;</a>
-        <a v-for="link in supportLinks" :key="link.url"  :href="link.url" target="_blank" rel="me">&nbsp;</a>
+        <!--<a v-for="link in supportLinks" :key="link.url"  :href="link.url" target="_blank" rel="me">&nbsp;</a>-->
     </div>
 </template>
 

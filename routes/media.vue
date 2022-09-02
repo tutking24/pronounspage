@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
 
         <Media/>
@@ -10,7 +10,7 @@
         <section>
             <Share :title="$t('links.social')"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

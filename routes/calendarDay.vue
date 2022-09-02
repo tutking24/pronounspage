@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <div v-if="year.eventsByDate[day.toString()] || basic" :class="basic ? 'py-5' : ''">
         <CommunityNav v-if="!basic"/>
 
@@ -15,6 +16,8 @@
                 </nuxt-link>
             </span>
         </h2>
+
+        <AdPlaceholder v-if="!basic" phkey="main-0" class="my-3"/>
 
         <section>
             <div class="d-flex justify-content-evenly flex-column-reverse flex-md-row align-items-center align-items-md-start">
@@ -36,6 +39,7 @@
         </section>
 
         <template v-if="!basic">
+            <AdPlaceholder phkey="main-1" class="my-3"/>
             <CalendarExtra :day="day"/>
 
             <Separator icon="heart"/>
@@ -47,6 +51,7 @@
         </template>
     </div>
     <NotFound v-else/>
+    </Page>
 </template>
 
 <script>

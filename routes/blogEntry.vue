@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="!content"/>
     <div v-else class="blog-post">
         <LinksNav v-if="config.links.split"/>
@@ -9,10 +10,14 @@
             </router-link>
         </p>
 
+        <AdPlaceholder phkey="main-0" class="mb-3"/>
+
         <Spelling v-if="disableTwemoji" :text="content"/>
         <Twemoji v-else>
             <Spelling :text="content"/>
         </Twemoji>
+
+        <AdPlaceholder phkey="main-1" class="my-3"/>
 
         <div class="d-print-none">
             <Separator icon="heart"/>
@@ -22,6 +27,7 @@
             </section>
         </div>
     </div>
+    </Page>
 </template>
 
 <script>

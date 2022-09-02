@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             <Icon v="books"/>
             <T>sources.headerLonger</T>
@@ -12,6 +12,8 @@
         <section>
             <Share :title="$t('sources.headerLonger')"/>
         </section>
+
+        <AdPlaceholder phkey="main-0" class="my-3"/>
 
         <SourcesChart :sources="sources" label="all pronouns"/>
 
@@ -137,7 +139,9 @@
         </section>
 
         </template></Loading>
-    </div>
+
+        <AdPlaceholder phkey="main-1" class="my-3"/>
+    </Page>
 </template>
 
 <script>

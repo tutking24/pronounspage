@@ -1677,6 +1677,7 @@ user:
     enabled: true
     route: 'konto'
     termsRoute: 'regulamin'
+    privacyRoute: 'prywatnosc'
 
 profile:
     enabled: true

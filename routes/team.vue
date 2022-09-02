@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <CommunityNav/>
 
         <h2>
@@ -93,6 +93,8 @@
             </ul>
         </section>
 
+        <AdPlaceholder phkey="main-0" class="my-3"/>
+
         <section>
             <h3>
                 <Icon v="user-friends"/>
@@ -127,7 +129,9 @@
                 </ul>
             </template>
         </section>
-    </div>
+
+        <AdPlaceholder phkey="main-1" class="my-3"/>
+    </Page>
 </template>
 
 <script>

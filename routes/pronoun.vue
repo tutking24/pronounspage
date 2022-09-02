@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="!selectedPronoun"/>
     <div v-else>
         <h2 class="d-flex justify-content-between">
@@ -68,7 +69,11 @@
             </template>
         </section>
 
+        <AdPlaceholder phkey="main-0" class="my-3"/>
+
         <GrammarTables :selectedPronoun="selectedPronoun" :counter="counter"/>
+
+        <AdPlaceholder phkey="main-1" class="my-3"/>
 
         <PronounGroup :pronounGroup="pronounGroup"/>
 
@@ -82,6 +87,8 @@
             <Literature :pronoun="selectedPronoun" :sources="groupedSources"/>
         </section>
 
+        <AdPlaceholder phkey="main-2" class="my-3"/>
+
         <Separator icon="info"/>
         <section class="mb-0">
             <h2 class="h4">
@@ -92,6 +99,7 @@
             <Homepage align="center"/>
         </section>
     </div>
+    </Page>
 </template>
 
 <script>

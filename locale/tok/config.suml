@@ -127,6 +127,7 @@ user:
     enabled: true
     route: 'jan_mi'
     termsRoute: 'lawa'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

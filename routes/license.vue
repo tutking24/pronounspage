@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <div class="blog-post">
         <Twemoji>
             <div v-html="content"></div>
@@ -11,6 +12,7 @@
             <Share :title="title"/>
         </section>
     </div>
+    </Page>
 </template>
 
 <script>

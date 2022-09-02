@@ -1,17 +1,18 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
         <h2>
             <Icon v="pen-nib"/>
             <T>links.blog</T>
         </h2>
+        <AdPlaceholder phkey="main-0" class="my-3"/>
         <BlogEntriesList :posts="posts" details/>
         <Separator icon="heart"/>
         <Support/>
         <section>
             <Share :title="$t('links.blog')"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

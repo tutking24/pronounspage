@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <div class="list-group mt-md-5 py-md-5">
             <a v-for="(options, locale) in locales" :key="locale" :href="options.url" class="list-group-item list-group-item-action list-group-item-hoverable">
                 <div class="h3">
@@ -7,7 +7,7 @@
                 </div>
             </a>
         </div>
-    </div>
+    </Page>
 </template>
 
 <style lang="scss" scoped>

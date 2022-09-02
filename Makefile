@@ -23,7 +23,6 @@ stop:
 deploy: install
 	yarn build
 	node server/migrate.js
-	echo "\nimportScripts('https://arc.io/arc-sw-core.js');" >> static/sw.js
 	ln -sfn ../data/img ./static/img-local
 	ln -sfn ../data/docs ./static/docs-local
 
