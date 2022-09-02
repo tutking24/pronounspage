@@ -1,5 +1,4 @@
 <template>
-    <Page>
     <Profile v-if="profile" :user="user" :profile="profile" class="pb-3 mt-5" expandLinks>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
@@ -9,7 +8,6 @@
         </nuxt-link>
     </Profile>
     <NotFound v-else/>
-    </Page>
 </template>
 
 <script>
