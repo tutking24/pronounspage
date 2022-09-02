@@ -146,6 +146,7 @@ user:
     enabled: true
     route: 'account'
     termsRoute: 'bedingungen'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

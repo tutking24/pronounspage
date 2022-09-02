@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="pronounGroups === undefined"/>
     <div v-else>
         <h2>
@@ -38,6 +39,8 @@
 
         <PronounGroup v-for="pronounGroup in pronounGroups" :key="pronounGroup.name" :pronounGroup="pronounGroup"/>
 
+        <AdPlaceholder phkey="main-0" class="my-3"/>
+
         <section>
             <Share :title="`${$t('pronouns.intro')}: ${$t('pronouns.any.short')}`"/>
         </section>
@@ -50,8 +53,11 @@
             </h2>
             <T>home.about</T>
             <Homepage align="center"/>
+
+            <AdPlaceholder phkey="main-1" class="my-3"/>
         </section>
     </div>
+    </Page>
 </template>
 
 <script>

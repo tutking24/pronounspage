@@ -8,6 +8,7 @@ module.exports = [
     'enbyphobia',
     'queerphobia',
     'exclusionism',
+    'sexism',
     'misogyny',
     'harassment',
     'impersonation',

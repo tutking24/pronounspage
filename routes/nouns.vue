@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <NounsNav/>
 
         <h2>
@@ -12,6 +12,8 @@
 
             <Share :title="$t('nouns.headerLong')"/>
         </section>
+
+        <AdPlaceholder phkey="main-0" class="my-3"/>
 
         <NounsExtra>
             <details v-if="config.nouns.collapsable" class="border mb-3" ref="dictionarywrapper">
@@ -27,7 +29,7 @@
             </details>
             <Dictionary v-else load ref="dictionary"/>
         </NounsExtra>
-    </div>
+    </Page>
 </template>
 
 <script>

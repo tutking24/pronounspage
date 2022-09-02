@@ -666,11 +666,11 @@ terms:
     content:
         intro: >
             Estos Términos de Servicio rigen tu acceso y uso del Servicio provisto en el sitio web
-            <strong>pronouns.page / zaimki.pl</strong> operado por la cooperativa “Consejo de Lenguaje Neutro”
+            <strong>pronouns.page / pronombr.es</strong> operado por la cooperativa “Consejo de Lenguaje Neutro”
             quienes pueden ser contactadxs mediante correo electrónico:
         consent: >
             Al usar los Servicios, aceptas estar sujetx a estos Términos de Servicio y otorgas consentimiento
-            de la recolección y procesamiento de tus datos de acuerdo a nuestra Política de Privacidad descrita posteriormente.
+            de la recolección y procesamiento de tus datos de acuerdo a nuestra {/privacidad=Política de Privacidad} descrita posteriormente.
         accounts:
             header: 'Usuarios y cuentas'
             age: >
@@ -709,6 +709,7 @@ terms:
                 enbyphobia: 'enbyfobia'
                 queerphobia: 'queerfobia'
                 exclusionism: 'exclusionismo queer'
+                sexism: 'sexismo'
                 misogyny: 'misoginia'
                 harassment: 'acoso'
                 impersonation: 'suplantación de identidad'
@@ -724,36 +725,6 @@ terms:
                 Eres responsable de cualquier Contenido publicado en el Servicio.
                 Si violas estos Términos de Servicio, nosotrxs removeremos tu Contenido sin previo aviso y podremos revocar tu licencia para tu uso del Servicio.
                 Si rompes la ley, nosotrxs mandaremos tu información a las autoridades policiales.
-        privacy:
-            header: 'Política de Privacidad'
-            effort: >
-                Nos esforzamos para mantener tu información de manera segura y asegurar que ningún tipo de información privada que guardamos
-                sea incautada o transferida a terceros, con la excepción de aquellas aplicaciones de confianza descritas posteriormente.
-            data: >
-                Más que los datos que explícitamente publicas en el Servicio como Contenido
-                o implícitamente compartes con nosotrxs (por ejemplo: tokens de acceso OAuth, en caso de utilizar inicio de sesión mediante una red social),
-                ningún tipo de dato personal conectado a tu cuenta es almacenado o procesado.
-            editRemoval: >
-                Tú podrás editar o eliminar cualquier Contenido que hayas publicado en el Servicio.
-            contact: >
-                Cuando nos contactes por correo electrónico, guardamos tu correo para responderte y formularte preguntas de seguimiento.
-            cookies: >
-                Nosotrxs sólo utilizamos cookies propias y almacenamiento local para mantener tu sesión activa y guardar tus preferencias.
-            plausible: >
-                Nosotrxs utilizamos Plausible para realizar seguimiento del tráfico en nuestro sitio. Tal información no está relacionada con tu nombre de usuario, y tu dirección IP permanece anónima.
-                Puedes leer acerca de los datos que almacena {https://plausible.io/privacy=aquí}.
-            arc: >
-                Nosotrxs utilizamos arc.io para cubrir los costos del mantenimiento del sitio sin introducir anuncios publicitarios.
-                Puedes leer más al respecto y de su política de privacidad en
-                {https://arc.io/faq=aquí}.
-            hCaptcha: >
-                Nosotrxs utilizamos hCaptcha para filtrar bots y prevenir ataques DDoS.
-                Puedes leer su política de privacidad
-                {https://www.hcaptcha.com/privacy=aquí}.
-            logsBackups: >
-                Los registros y respaldos de información son almacenados por no más de 18 meses.
-            gdpr: >
-                Tus datos personales están protegidos por el RGPD (Reglamento General de Protección de Datos), por lo tanto, tienes el derecho de ver, corregir, actualizar y eliminar la información que almacenamos de tí.
         closing:
             header: 'General'
             jurisdiction: >
@@ -761,28 +732,39 @@ terms:
             changes: >
                 Nos reservamos el derecho de modificar estos Términos de Servicio en cualquier momento.
                 En el caso de ser un cambio material, notificaremos al menos 30 días previos antes de que éste entre en vigor.
-    update:
-        header: 'Hemos actualizado nuestros Términos de Servicio.'
-        intro: >
-            Hola! Queremos informarte que hemos actualizado nuestros Términos de Servicio. Una descripción general de los cambios:
-        changes:
-            - >
-                En enero comenzaremos a remover cuentas para prevenir
-                la acumulación de nombres de usuarie (cuando no tengan tarjeta ni inicios de sesión durante un mes).
-            - >
-                Nos gustaría proveer un espacio seguro para todas las personas queer
-                independientemente de su edad, pero también debemos respetar la ley
-                y proteger la privacidad de personas que no pueden consentir legalmente al procesamiento de sus datos.
-                Ahora nuestros términos de servicio mencionan explícitamente lo que siempre ha sido el caso de acuerdo con RGPD:
-                Debes tener por lo menos 13 años de edad para crear una cuenta
-                y les usuaries de entre 13 y 16 años deben  tener consentimiento parental para que procesemos sus datos.
-            - >
-                Para mejorar la accesibilidad, comenzamos a traducir nuestros términos de servicio a todas las lenguas de la página.
-                Esas traducciones son sólamente auxiliares, y la versión en inglés sigue siendo la única legalmente vinculante.
-            - >
-                Aunque la queerfobia, la transfobia, el exclusionismo queer y la presencia de trolls
-                siempre han sido consideradas infracciones a los términos de servicio bajo el término genérico de
-                "infringir normas sociales", ahora están enlistadas explícitamente como prohibidas.
+
+privacy:
+    header: 'Política de Privacidad'
+    content:
+        # TODO intro
+        effort: >
+            Nos esforzamos para mantener tu información de manera segura y asegurar que ningún tipo de información privada que guardamos
+            sea incautada o transferida a terceros, con la excepción de aquellas aplicaciones de confianza descritas posteriormente.
+        data: >
+            Más que los datos que explícitamente publicas en el Servicio como Contenido
+            o implícitamente compartes con nosotrxs (por ejemplo: tokens de acceso OAuth, en caso de utilizar inicio de sesión mediante una red social),
+            ningún tipo de dato personal conectado a tu cuenta es almacenado o procesado.
+        editRemoval: >
+            Tú podrás editar o eliminar cualquier Contenido que hayas publicado en el Servicio.
+        contact: >
+            Cuando nos contactes por correo electrónico, guardamos tu correo para responderte y formularte preguntas de seguimiento.
+        cookies: >
+            Nosotrxs sólo utilizamos cookies propias y almacenamiento local para mantener tu sesión activa y guardar tus preferencias.
+        plausible: >
+            Nosotrxs utilizamos Plausible para realizar seguimiento del tráfico en nuestro sitio. Tal información no está relacionada con tu nombre de usuario, y tu dirección IP permanece anónima.
+            Puedes leer acerca de los datos que almacena {https://plausible.io/privacy=aquí}.
+        arc: >
+            Nosotrxs utilizamos arc.io para cubrir los costos del mantenimiento del sitio sin introducir anuncios publicitarios.
+            Puedes leer más al respecto y de su política de privacidad en
+            {https://arc.io/faq=aquí}.
+        hCaptcha: >
+            Nosotrxs utilizamos hCaptcha para filtrar bots y prevenir ataques DDoS.
+            Puedes leer su política de privacidad
+            {https://www.hcaptcha.com/privacy=aquí}.
+        logsBackups: >
+            Los registros y respaldos de información son almacenados por no más de 18 meses.
+        gdpr: >
+            Tus datos personales están protegidos por el RGPD (Reglamento General de Protección de Datos), por lo tanto, tienes el derecho de ver, corregir, actualizar y eliminar la información que almacenamos de tí.
 
 admin:
     header: 'Panel de Admins'

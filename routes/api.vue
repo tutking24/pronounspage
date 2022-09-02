@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             <Icon v="laptop-code"/>
             <T>api.header</T>
@@ -36,7 +36,7 @@
                 </li>
             </ul>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

@@ -124,6 +124,7 @@ user:
     enabled: true
     route: 'account'
     termsRoute: 'voorwaarden'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

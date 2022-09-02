@@ -108,6 +108,7 @@ user:
     enabled: true
     route: 'kuento'
     termsRoute: 'terminos'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

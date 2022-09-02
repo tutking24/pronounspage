@@ -1,4 +1,6 @@
 <template>
+    <AdPlaceholder phkey="support" class="my-3"/>
+    <!--
     <section>
         <h3>
             <Icon v="people-carry"/>
@@ -19,6 +21,7 @@
             <Financial/>
         </p>
     </section>
+    -->
 </template>
 
 <script>

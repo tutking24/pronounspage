@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             <Icon v="user"/>
             <T>user.headerLong</T>
@@ -8,7 +8,7 @@
         <Account v-if="$user()"/>
         <MfaValidation v-else-if="preToken"/>
         <Login v-else/>
-    </div>
+    </Page>
 </template>
 
 <script>

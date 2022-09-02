@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="!config.names || !config.names.enabled || (!config.names.published && !$isGranted('names'))"/>
     <div v-else>
         <CommunityNav/>
@@ -110,6 +111,7 @@
             <NameSubmitForm ref="form" style="scroll-padding-top: 2rem;"/>
         </section>
     </div>
+    </Page>
 </template>
 
 <script>

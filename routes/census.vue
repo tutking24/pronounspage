@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <CommunityNav/>
 
         <h2>
@@ -158,7 +158,7 @@
                 </div>
             </section>
         </template>
-    </div>
+    </Page>
 </template>
 
 <script>

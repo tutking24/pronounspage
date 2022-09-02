@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
 
         <h2>
@@ -22,7 +22,7 @@
             </p>
             <EnglishTable v-if="pronounGroup.table" :t="pronounGroup.table"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             <Icon v="comment-alt-smile"/>
             <T>contact.header</T>
@@ -68,7 +68,7 @@
         <Contribute id="contribute"/>
 
         <Mission/>
-    </div>
+    </Page>
 </template>
 
 <script>

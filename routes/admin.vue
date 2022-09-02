@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="!$isGranted('panel') && !$isGranted('users')"/>
     <div v-else>
         <h2>
@@ -281,6 +282,7 @@
             </details>
         </section>
     </div>
+    </Page>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             {{ clearLinkedText(config.pronouns.null.description) }}
         </h2>
@@ -8,8 +8,12 @@
             <LinkedText :text="config.pronouns.null.history"/>
         </p>
 
+        <AdPlaceholder phkey="main-0" class="my-3"/>
+
         <Avoiding/>
-    </div>
+
+        <AdPlaceholder phkey="main-1" class="my-3"/>
+    </Page>
 </template>
 
 <script>
