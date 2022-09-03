@@ -24,7 +24,7 @@ co zaowocowało zmianami w serwisie (już po oddaniu artykułu do druku – Auto
 Np. zdawszy sobie sprawę, że opisywana przez Autorki mnogość proponowanych form może przytłaczać,
 bardziej wyeksponowałyśmy standardowe formy rodzaju neutralnego jako te, które proponujemy samym osobom niebinarnym,
 jak i osobom tłumaczącym i piszącym teksty. Miały na to wpływ również wyniki naszych badań
-(nota bene, jak wskazują wyniki tegorocznego Niebinarnego Spisu Powszechnego, popularność rodzaju neutralnego
+(nota bene, jak wskazują [wyniki tegorocznego Niebinarnego Spisu Powszechnego](/blog/spis-2022), popularność rodzaju neutralnego
 – a także ogólna liczba osób stosujących formy inne niż męskie i żeńskie – rośnie).
 
 Przedmiotem rozważań Autorek nie jest język osób niebinarnych jako taki (tzn. nie odnoszą się do żadnych
@@ -88,7 +88,7 @@ ponieważ sprzyja transfobicznym narracjom o „wymazywaniu kobiet przez trans a
 (a w tym wypadku, również wymazywaniu mężczyzn), o której głośno było w mediach przez ostatnie lata,
 a także przedstawia nasze postulaty jako śmieszne i w złym znaczeniu radykalne. 
 Wystarczająca ilość prześmiewczych komentarzy dotyczy tego, co faktycznie postulujemy. 
-dajemy sobie oczywiście sprawę (a przynajmniej zakładamy), że Autorki nie miały intencji 
+Zdajemy sobie oczywiście sprawę (a przynajmniej zakładamy), że Autorki nie miały intencji 
 przypisywać nam tego rodzaju pomysłów, niemniej takie przedstawianie – zwłaszcza przez uznane badaczki – 
 treści publikowanych przez, jak to same określiły, „najpełniejsze i akceptowane przez społeczność niebinarną” 
 źródło nt. języka, z pewnością nie służy osobom niebinarnym.
@@ -110,18 +110,74 @@ tórego efektem jest zmiana oznaczenia płci w dokumentach na „przeciwne”
 (nawet jeśli nie odpowiada ono ich faktycznej tożsamości, to może być jej bliższe i ułatwiać funkcjonowanie). 
 Znów jednak, w pierwszej edycji badania, o której piszą Autorki, nie pytałyśmy o żadną z tych kwestii.
 
+Autorki w ciekawy sposób piszą o formach z podkreślnikiem (w rodzaju „studentki_ci”):
+„W społeczności LGBTQ+ znak "_" nazywa się często podłogą i stosuje się go zamiast znaku "/",
+w myśl zasady podłoga łączy, ukośnik dzieli" (Walkiewicz 2022: 96, przyp. 13).
+Warto dodać, że po raz pierwszy taka forma zapisu (oraz opis stojącej za nią równościowej idei)
+pojawia się w artykule Agnieszki Weseli ([2010: 6-7](http://cejsh.icm.edu.pl/cejsh/element/bwmeta1.element.desklight-5bff43db-6744-4af0-b276-c166b71d090a/c/4_Weseli.pdf)) zamieszczonym w czasopiśmie „InterAlia”.
+
+Wreszcie, chciałbym odnieść się do fragmentów artykułu oraz wywiadu, 
+które nie dotyczą bezpośrednio naszych treści, ale odnoszą się do kwestii (nie)intecjonalnego misgenderingu 
+(tzn. zwracania się do kogoś w nieodpowiednich formach rodzajowych) w niepokojący dla nas sposób.
+W pierwszej części czytamy: „Zróżnicowanie \[podejść i rozwiązań dotyczących języka], 
+wiąże się też z przyjmowaną coraz częściej regułą: „jeśli nie wiesz, jak się do kogoś zwracać lub o nim mówić – zapytaj”,
+zgodnie z którą, w ramach poszanowania tożsamości każdego człowieka, powinno się pozostawić jednostce decyzję o używaniu tych,
+a nie innych form identyfikacji. Podejście to, zrozumiałe z punktu widzenia etyczno-społecznego,
+rodzi jednak poważne problemy związane z istotą tego, czym jest język jako narzędzie komunikacji.
+Z punktu widzenia systemu, a nie jednostkowych sytuacji komunikacyjnych ważne jest bowiem istnienie trwałych,
+jasno określonych form i konstrukcji, których możemy użyć także, w sytuacji, gdy nie możemy lub
+**nie chcemy uzyskać odpowiedniej informacji od zainteresowanej osoby**.” (Walkiewicz 2022: 91)
+
+Szczególne wątpliwości budzi ustawienie obok siebie sytuacji, gdy „nie wiemy”, jak się do kogoś prawidłowo zwracać,
+a po prostu „nie chcemy” (!) takiej informacji uzyskać. Takie stawianie sprawy jest szczególnie problematyczne, 
+gdy mowa o osobach trans. Istnieje **zasadnicza** różnica pomiędzy komunikatem „nie wiem, jak do Ciebie mówić/trudno
+mi się przyzwyczaić do tego, jak mam mówić, bo przez X lat używałem innych form”, a komunikatem 
+„nie chcę się dowiedzieć, jak mam do Ciebie/o Tobie mówić” albo „nie obchodzi mnie to”. 
+W wywiadzie z Autorkami czytamy: „Zgłaszają się do nas coraz częściej (…) osoby niebinarne lub będące w trakcie tranzycji,
+i **oczywiście honorujemy ich prośby dotyczące sposobu komunikacji**”. No właśnie.
+
+Dalej w wywiadzie jest: „Język to system, który pozwala nam nazywać ludzi także wtedy, 
+gdy nie prowadzimy z nimi bezpośredniego dialogu. W wypadku niebinarności to obecnie trudne:
+brak jednej, spójnej formy honoryfikatywnej typu pan/pani, brak też zgodności co do tego,
+których form zaimków czy czasowników używać.”
+
+Nie do końca rozumiem, do czego odnosi się ta wypowiedź. Nie ma nic złego w tym, że mówię o kimś
+(np. mojej osobie studenckiej) „pan Kowalski”, bo nie miałem możliwości zapytać, czy to na pewno okej.
+Istotne jest, co zrobię, gdy zostanę poprawiony, że jednak (na przykład) „państwo Kowalskie”.
+Podobnie w komunikacji mejlowej.
+
+Trzeba tu też zaznaczyć, że choć faktycznie, jako kolektyw (a także ja osobiście, jako badacz),
+sądzimy, że standardowa forma rodzaju neutralnego ma szansę stać się swoistym odpowiednikiem angielskiego _they_,
+to niemożliwym jest by powstał jeden uniwersalny sposób zwracania się do każdej osoby niebinarnej
+(Autorki zdają się sugerować, że coś takiego mogłoby nastąpić).
+Z tej prostej przyczyny, że niebinarność nie jest zjawiskiem jednorodnym. Już sama jego nazwa wskazuje,
+że określa raczej kim się nie jest, niż kim się jest. Wśród osób niebinarnych są takie,
+które częściowo utożsamiają się z męskością lub kobiecością, takie, które utożsamiają się z jednym i drugim (lub pomiędzy)
+albo z żadnym, takie, które widzą się gdzieś zupełnie poza tym podziałem i takie, których tożsamość jest płynna.
+Choć oczywiście memy o „52 płciach” to żarty, to wbrew spotykanemu czasem terminowi „trzecia płeć”,
+wszystkim osób niebinarnych nie da się zamknąć w jednej przegródce.
+
+Być może faktycznie za kilkanaście lat, na wzór angielskiej triady „he – she – they” wytworzy się w polskim analogiczna
+triada „Aleksander Kowalski, student, powiedział – Aleksandra Kowalska, studentka, powiedziała – Aleksandre Kowalskie,
+osoba studencka/studencie, powiedziało”, ale konieczność zapytania kogoś o właściwie formy na wieść, że jest osobą niebinarną,
+pozostanie. Stąd też, promowana przez nas, praktyka umieszczania np. w stopce mejla informacji o używanych przez siebie formach.
+Ja każde zajęcia z nową grupą osób studenckich zaczynałem od podania nazwiska i powiedzenia „my pronouns are _he_ and _him_”.
+Nie sądzę, żeby było to przesadnie obciążające poznawczo dla kogokolwiek. Zapewne przeciętnej osobie
+mówienie do kogoś w rodzaju neutralnym może przyjść z trudem. Ale tutaj wracamy do zasadniczego rozróżnienia na
+„postaram się, ale mogę się mylić, nie do końca wiem, jak to robić” (które spotka się raczej ze zrozumieniem osoby słyszącej takie słowa)
+i „to jest dziwne/trudne/niepoprawne i **nie zamierzam nawet próbować** tak mówić”.
+
 Na marginesie jeszcze dodam, że nieco zaskakuje w bibliografii artykułu zupełny brak prac nt. języka osób transpłciowych,
 czy konkretnie niebinarnych (polskojęzycznych jest wciąż niewiele, ale anglojęzycznych już trochę), np.:
 
-- Corwin, Anna I. 2009. [“Language and gender variance: Constructing gender beyond the male/female binary.”](http://mail.ejhs.org/Volume12/Gender.htm) )Electronic Journal of Human Sexuality_. 12. Article 3.
+- Corwin, Anna I. 2009. [“Language and gender variance: Constructing gender beyond the male/female binary.”](http://mail.ejhs.org/Volume12/Gender.htm) _Electronic Journal of Human Sexuality_. 12. Article 3.
 - Derecka, Magdalena. 2019. [“Manifestations of Transphobia in Computer-mediated Communication. A Case Study of Language Discrimination in English and Polish Internet-mediated Discourse.”](https://www.ejournals.eu/pliki/art/15100/pl) _Studies in Polish Linguistics._ 14.3: 101–123. DOI: 10.4467/23005920SPL.19.016.11081
-- Hord, Levi C. R. 2016. [“Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German.”](https://ir.lib.uwo.ca/cgi/viewcontent.cgi?\referer=&httpsredir=1&article= 1027&context=wpl_clw) _Proceedings of Western Interdisciplinary Student Symposium on Language Research_. 3. Article 4.
+- Hord, Levi C. R. 2016. [“Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German.”](https://ir.lib.uwo.ca/cgi/viewcontent.cgi?referer=&httpsredir=1&article= 1027&context=wpl_clw) _Proceedings of Western Interdisciplinary Student Symposium on Language Research_. 3. Article 4.
 - Misiek, Szymon. 2020. [“Misgendered in Translation?: Genderqueerness in Polish Translations of English-Language Television Series.”](https://anglica-journal.com/resources/html/article/details?id=207730) _Anglica. An International Journal of English Studies._ 29.2: 165-185. DOI: 10.7311/0860-5734.29.2.09
 - Misiek, Szymon. 2021. [“Niebinarność płciowa w języku polskim. Badanie pilotażowe.”](https://journals.umcs.pl/et/article/view/11729/pdf) _Etnolingwistyka_. Problemy języka i kultury. 33: 287-303. DOI: 10.17951/et.2021.33.287
 - Rzeczkowski, Marcin. 2012. “Poza rodzajami męskim i żeńskim – trzecie płcie a język polski.” \[w:] Mariusz Kraska, Anna Gumowska, and Joanna Wróbel (red.) _Między nieobecnością a nadmiarem. O niedopowiedzeniu i nienasyceniu we współczesnej kulturze._ Gdańsk: Wydawnictwo Uniwersytetu Gdańskiego. 203-212.
 - Urbańczyk, Anna, Ewa Okroy i Elżbieta Okroy. 2014. “Badanie potrzeb osób transpłciowych/transgenderowych/trzeciopłciowych związanych z językiem używanym podczas warsztatów i innych sytuacji edukacyjnych.” \[w:] Anna M. Kłonkowska and Katarzyna Bojarska (red.) _Psychospołeczne, prawne i medyczne aspekty transpłciowości_. Gdańsk: Wydawnictwo Uniwersytetu Gdańskiego. 105-126.
 - Zimman, Lal. 2017. [„Transgender language reform: some challenges and strategies for promoting trans-affirming, gender-inclusive language.”](http://lalzimman.org/PDFs/Zimman2017TransgenderLanguageReform.pdf) _Journal of Language and Discrimination_. 1.1: 84-105. DOI: 10.1558/jld.33139
-- Zimman, Lal. 2019. „Trans people's linguistic self-determination and the dialogic nature of identity.” \[w:] _(Re)presenting Trans: Lingustic, Legal, and Everyday Perspectives._ Evan Hazenberg, Miriam Meyerhoff. Wellington: Victoria University Press. 226-248
 - Zimman, Lal. 2020. [„Transgender Language, Transgender Moment: Toward a Trans Linguistics.”](http://lalzimman.org/PDFs/Zimman2020TransLanguageTransMoment.pdf) \[w:] Kira Hall i Rusty Barrett (red.) _The Oxford Handbook of Language and Sexuality_. DOI: 10.1093/oxfordhb/9780190212926.013.4
 
 Mam nadzieję, że ta krytyka nie będzie odebrana jako odstręczający radykalizm i zamykanie się na dialog z naszej strony.
