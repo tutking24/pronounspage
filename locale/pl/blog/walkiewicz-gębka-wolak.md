@@ -5,7 +5,7 @@
 Jako kolektyw „Rada Języka Neutralnego” bardzo się cieszymy, że temat języka niebinarnego coraz częściej podejmowany
 jest w dyskusji akademickiej (listę polskich publikacji można znaleźć w zakładce [Nauka](/nauka)). Mnie osobiście jako językoznawcę
 cieszy to szczególnie, ponieważ sam od kilku lat badam język osób niebinarnych. W naszych mediach społecznościowych
-opublikowałyśmy niedawno link do wywiadu z Autorkami dwuczęściowego artykułu
+opublikowałyśmy niedawno link do [wywiadu](https://portal.umk.pl/pl/article/u-progu-jezykowej-rewolucji) z Autorkami dwuczęściowego artykułu
 [„Wykładniki niebinarności płciowej w polszczyźnie”](http://www.uwm.edu.pl/polonistyka/pracejezykoznawcze/pol/pliki/Prace_Jezykoznawcze_24_1_2022.pdf)
 (Walkiewicz 2022 i Gębka-Wolak 2022), który ukazał się na łamach czasopisma „Prace Językoznawcze”.
 
@@ -114,7 +114,7 @@ Autorki w ciekawy sposób piszą o formach z podkreślnikiem (w rodzaju „stude
 „W społeczności LGBTQ+ znak "_" nazywa się często podłogą i stosuje się go zamiast znaku "/",
 w myśl zasady podłoga łączy, ukośnik dzieli" (Walkiewicz 2022: 96, przyp. 13).
 Warto dodać, że po raz pierwszy taka forma zapisu (oraz opis stojącej za nią równościowej idei)
-pojawia się w artykule Agnieszki Weseli ([2010: 6-7](http://cejsh.icm.edu.pl/cejsh/element/bwmeta1.element.desklight-5bff43db-6744-4af0-b276-c166b71d090a/c/4_Weseli.pdf)) zamieszczonym w czasopiśmie „InterAlia”.
+pojawia się w artykule Agnieszki Weseli ([2010: 6-7](https://interalia.queerstudies.pl/issues/5_2010/04_ufa_to_tao.htm)) zamieszczonym w czasopiśmie „InterAlia”.
 
 Wreszcie, chciałbym odnieść się do fragmentów artykułu oraz wywiadu, 
 które nie dotyczą bezpośrednio naszych treści, ale odnoszą się do kwestii (nie)intecjonalnego misgenderingu 
@@ -172,7 +172,7 @@ czy konkretnie niebinarnych (polskojęzycznych jest wciąż niewiele, ale angloj
 
 - Corwin, Anna I. 2009. [“Language and gender variance: Constructing gender beyond the male/female binary.”](http://mail.ejhs.org/Volume12/Gender.htm) _Electronic Journal of Human Sexuality_. 12. Article 3.
 - Derecka, Magdalena. 2019. [“Manifestations of Transphobia in Computer-mediated Communication. A Case Study of Language Discrimination in English and Polish Internet-mediated Discourse.”](https://www.ejournals.eu/pliki/art/15100/pl) _Studies in Polish Linguistics._ 14.3: 101–123. DOI: 10.4467/23005920SPL.19.016.11081
-- Hord, Levi C. R. 2016. [“Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German.”](https://ir.lib.uwo.ca/cgi/viewcontent.cgi?referer=&httpsredir=1&article= 1027&context=wpl_clw) _Proceedings of Western Interdisciplinary Student Symposium on Language Research_. 3. Article 4.
+- Hord, Levi C. R. 2016. [“Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German.”](https://ir.lib.uwo.ca/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1027&context=wpl_clw) _Proceedings of Western Interdisciplinary Student Symposium on Language Research_. 3. Article 4.
 - Misiek, Szymon. 2020. [“Misgendered in Translation?: Genderqueerness in Polish Translations of English-Language Television Series.”](https://anglica-journal.com/resources/html/article/details?id=207730) _Anglica. An International Journal of English Studies._ 29.2: 165-185. DOI: 10.7311/0860-5734.29.2.09
 - Misiek, Szymon. 2021. [“Niebinarność płciowa w języku polskim. Badanie pilotażowe.”](https://journals.umcs.pl/et/article/view/11729/pdf) _Etnolingwistyka_. Problemy języka i kultury. 33: 287-303. DOI: 10.17951/et.2021.33.287
 - Rzeczkowski, Marcin. 2012. “Poza rodzajami męskim i żeńskim – trzecie płcie a język polski.” \[w:] Mariusz Kraska, Anna Gumowska, and Joanna Wróbel (red.) _Między nieobecnością a nadmiarem. O niedopowiedzeniu i nienasyceniu we współczesnej kulturze._ Gdańsk: Wydawnictwo Uniwersytetu Gdańskiego. 203-212.
