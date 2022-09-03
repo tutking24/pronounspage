@@ -51,6 +51,12 @@
                             <T>contact.contribute.technical.footer</T>
                         </a>
                     </li>
+                    <li v-if="config.ads && config.ads.enabled && $isGranted('*')" class="mb-2">
+                        <a href="#" @click.prevent="$store.commit('toggleAdPlaceholdersVisible')">
+                            <Icon v="ad"/>
+                            Toggle ad placeholder visibility
+                        </a>
+                    </li>
                 </ul>
 
                 <AdPlaceholder phkey="footer"/>

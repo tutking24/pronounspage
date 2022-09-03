@@ -11,6 +11,7 @@ export const state = () => ({
     translationModeVisible: false,
     translationMode: false,
     translationChanges: {},
+    adPlaceholdersVisible: false,
 })
 
 export const mutations = {
@@ -98,4 +99,7 @@ export const mutations = {
             state.translationChanges = {};
         }
     },
+    toggleAdPlaceholdersVisible(state) {
+        state.adPlaceholdersVisible = !state.adPlaceholdersVisible;
+    }
 }

@@ -1,13 +1,14 @@
 <template>
     <div v-if="config.ads && config.ads.enabled"
          :id="`ezoic-pub-ad-placeholder-${phid}`"
-         :class="[dev ? 'ad-placeholder' : '']"
-         v-html="dev ? `${phkey} / ${phid}` : ''">
+         :class="[adPlaceholdersVisible ? 'ad-placeholder' : '']"
+         v-html="adPlaceholdersVisible ? `${phkey} / ${phid}` : ''">
     </div>
 </template>
 
 <script>
 import adPlaceholders from "../src/adPlaceholders";
+import {mapState} from "vuex";
 
 export default {
     props: {
@@ -15,10 +16,14 @@ export default {
     },
     data() {
         return {
-            dev: process.env.NODE_ENV === 'development',
             phid: adPlaceholders[this.phkey],
         }
-    }
+    },
+    computed: {
+        ...mapState([
+            'adPlaceholdersVisible',
+        ]),
+    },
 }
 </script>
 
