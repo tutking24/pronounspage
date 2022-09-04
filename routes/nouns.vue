@@ -13,7 +13,7 @@
             <Share :title="$t('nouns.headerLong')"/>
         </section>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <NounsExtra>
             <details v-if="config.nouns.collapsable" class="border mb-3" ref="dictionarywrapper">

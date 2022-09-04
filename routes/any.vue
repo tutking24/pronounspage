@@ -39,7 +39,7 @@
 
         <PronounGroup v-for="pronounGroup in pronounGroups" :key="pronounGroup.name" :pronounGroup="pronounGroup"/>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <section>
             <Share :title="`${$t('pronouns.intro')}: ${$t('pronouns.any.short')}`"/>
@@ -54,7 +54,7 @@
             <T>home.about</T>
             <Homepage align="center"/>
 
-            <AdPlaceholder phkey="main-1" class="my-3"/>
+            <AdPlaceholder phkey="main-1"/>
         </section>
     </div>
     </Page>

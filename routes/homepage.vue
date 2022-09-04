@@ -24,11 +24,11 @@
                     </div>
                 </div>
 
-                <AdPlaceholder phkey="main-0" class="my-3"/>
+                <AdPlaceholder phkey="main-0"/>
 
                 <CalendarBanner link/>
 
-                <AdPlaceholder phkey="main-1" class="my-3"/>
+                <AdPlaceholder phkey="main-1"/>
             </section>
 
             <section>
@@ -45,7 +45,7 @@
 
             <T>home.about</T>
 
-            <AdPlaceholder phkey="main-2" class="my-3"/>
+            <AdPlaceholder phkey="main-2"/>
 
             <CalendarBanner v-if="!$te('home.welcome')" link/>
         </section>
@@ -57,7 +57,7 @@
         <Separator icon="bookmark"/>
 
         <section>
-            <AdPlaceholder phkey="main-3" class="my-3"/>
+            <AdPlaceholder phkey="main-3"/>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <LanguageVersions/>

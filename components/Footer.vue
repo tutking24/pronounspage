@@ -59,8 +59,6 @@
                     </li>
                 </ul>
 
-                <AdPlaceholder phkey="footer"/>
-
                 <!--
                 <p class="h6 mb-2">
                     <T>support.header</T><T>quotation.colon</T>
@@ -162,6 +160,7 @@
                 <Stats/>
             </div>
         </div>
+        <AdPlaceholder phkey="footer"/>
         <EasterEgg/>
         <UkraineBanner class="my-3"/>
         </div>

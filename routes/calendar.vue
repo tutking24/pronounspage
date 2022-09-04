@@ -28,7 +28,7 @@
 
         <CalendarBanner v-if="!basic && year.isCurrent()"/>
 
-        <AdPlaceholder v-if="!basic" phkey="main-0" class="my-3"/>
+        <AdPlaceholder v-if="!basic" phkey="main-0"/>
 
         <template v-if="basic">
             <section v-if="labels" class="columns-4 pb-4">
@@ -60,7 +60,7 @@
         </template>
 
         <template v-if="!basic">
-            <AdPlaceholder phkey="main-1" class="my-3"/>
+            <AdPlaceholder phkey="main-1"/>
             <CalendarExtra :year="year"/>
 
             <Separator icon="heart"/>

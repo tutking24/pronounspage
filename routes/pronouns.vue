@@ -14,7 +14,7 @@
                 <T v-if="$te('pronouns.domainThanks')">pronouns.domainThanks</T>
             </div>
 
-            <AdPlaceholder phkey="main-0" class="my-3"/>
+            <AdPlaceholder phkey="main-0"/>
 
             <ul class="list-group mt-4">
                 <li v-for="[group, groupPronouns] in pronounLibrary.split()" class="list-group-item">
@@ -217,7 +217,7 @@
             </ul>
         </section>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <Separator icon="fist-raised"/>
 

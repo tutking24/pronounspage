@@ -10,14 +10,14 @@
             </router-link>
         </p>
 
-        <AdPlaceholder phkey="main-0" class="mb-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <Spelling v-if="disableTwemoji" :text="content"/>
         <Twemoji v-else>
             <Spelling :text="content"/>
         </Twemoji>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <div class="d-print-none">
             <Separator icon="heart"/>

@@ -214,7 +214,7 @@
             </template>
         </Table>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <Separator icon="plus"/>
 

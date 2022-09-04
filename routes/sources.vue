@@ -13,7 +13,7 @@
             <Share :title="$t('sources.headerLonger')"/>
         </section>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <SourcesChart :sources="sources" label="all pronouns"/>
 
@@ -140,7 +140,7 @@
 
         </template></Loading>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
     </Page>
 </template>
 

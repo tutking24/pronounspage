@@ -143,7 +143,7 @@
             </template>
         </Table>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <template v-if="config.nouns.submit">
             <Separator icon="plus"/>
