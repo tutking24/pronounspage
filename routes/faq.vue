@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav v-if="config.links.enabled"/>
 
         <h2 class="mb-4">
@@ -26,6 +26,8 @@
             </div>
         </details>
 
+        <AdPlaceholder phkey="main-0"/>
+
         <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
                 :question="question"
                 :id="question" :ref="question.replace(/-/g, '_')"
@@ -35,10 +37,12 @@
                      || $t(`faq.questions.${question}.answer`).join('|').toLowerCase().includes(filter.toLowerCase())"
         />
 
+        <AdPlaceholder phkey="main-1"/>
+
         <section>
             <Share :title="$t('faq.headerLong')"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

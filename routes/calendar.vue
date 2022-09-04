@@ -1,4 +1,5 @@
 <template>
+    <component :is="basic ? 'div' : 'Page'">
     <div v-if="year" :class="basic ? 'py-5' : ''">
         <CommunityNav v-if="!basic"/>
 
@@ -26,6 +27,8 @@
         </h2>
 
         <CalendarBanner v-if="!basic && year.isCurrent()"/>
+
+        <AdPlaceholder v-if="!basic" phkey="main-0"/>
 
         <template v-if="basic">
             <section v-if="labels" class="columns-4 pb-4">
@@ -57,6 +60,7 @@
         </template>
 
         <template v-if="!basic">
+            <AdPlaceholder phkey="main-1"/>
             <CalendarExtra :year="year"/>
 
             <Separator icon="heart"/>
@@ -68,6 +72,7 @@
         </template>
     </div>
     <NotFound v-else/>
+    </component>
 </template>
 
 <script>

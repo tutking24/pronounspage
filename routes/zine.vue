@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
 
         <h2>
@@ -70,7 +70,7 @@
         <section>
             <Share :title="$t('links.zine.header')"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="scroll-btn d-print-none" @click.prevent="scroll" :style="`opacity: ${shown ? 1 : 0}`">
+    <div :class="['scroll-btn', 'd-print-none', config.ads && config.ads.enabled ? 'higher' : '']" @click.prevent="scroll" :style="`opacity: ${shown ? 1 : 0}`">
         <SquareButton link="#" :colour="colour" :aria-label="$t('table.scrollUp')">
             <Icon v="arrow-alt-up"/>
         </SquareButton>
@@ -49,5 +49,16 @@
         right: $spacer;
         transition: all .5s ease-in-out;
         z-index: 1030;
+    }
+
+    @include media-breakpoint-down('lg', $grid-breakpoints) {
+        .higher {
+            bottom: 3*$spacer;
+        }
+    }
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        .higher {
+            z-index: 100001;
+        }
     }
 </style>

@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <div v-if="$isGranted('census')">
         <CommunityNav/>
 
@@ -33,6 +34,7 @@
         </div>
     </div>
     <NotFound v-else/>
+    </Page>
 </template>
 
 <script>

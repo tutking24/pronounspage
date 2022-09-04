@@ -292,6 +292,7 @@ user:
     enabled: true
     route: 'cont'
     termsRoute: 'termeni'
+    privacyRoute: 'confidentialitate'
 
 profile:
     enabled: true

@@ -46,4 +46,5 @@ export default [
     'footer.stats.keys.visitDuration',
     'footer.stats.keys.uptime',
     'footer.stats.keys.responseTime',
+    'privacy.header',
 ];

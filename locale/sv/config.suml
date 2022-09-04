@@ -125,6 +125,7 @@ user:
     enabled: true
     route: 'konto'
     termsRoute: 'anvandarvillkor'
+    privacyRoute: 'integritetspolicy'
 
 profile:
     enabled: true

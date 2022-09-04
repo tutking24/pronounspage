@@ -305,6 +305,7 @@ export default {
             if (config.user.enabled) {
                 routes.push({path: '/' + encodeURIComponent(config.user.route), component: resolve(__dirname, 'routes/user.vue')});
                 routes.push({path: '/' + encodeURIComponent(config.user.termsRoute), component: resolve(__dirname, 'routes/terms.vue')});
+                routes.push({path: '/' + encodeURIComponent(config.user.privacyRoute), component: resolve(__dirname, 'routes/privacy.vue')});
             }
             routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });

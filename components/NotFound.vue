@@ -11,5 +11,7 @@
                 <T>notFound.back</T>
             </nuxt-link>
         </p>
+
+        <AdPlaceholder phkey="main-0"/>
     </div>
 </template>

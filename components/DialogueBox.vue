@@ -136,16 +136,3 @@
         },
     };
 </script>
-
-<style lang="scss" scoped>
-    @import "assets/variables";
-
-    .modal {
-        background-color: rgba($black, 0.5);
-        opacity: 0;
-        transition: opacity .3s ease-in-out;
-        &.modal-shown {
-            opacity: 1;
-        }
-    }
-</style>

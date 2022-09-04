@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             <Icon v="gavel"/>
             <T>terms.header</T>
@@ -33,22 +33,10 @@
         </p>
         <p><T>terms.content.content.responsibility</T></p>
 
-        <h3><T>terms.content.privacy.header</T></h3>
-        <p><T>terms.content.privacy.effort</T></p>
-        <p><T>terms.content.privacy.data</T></p>
-        <p><T>terms.content.privacy.editRemoval</T></p>
-        <p><T>terms.content.privacy.contact</T></p>
-        <p><T>terms.content.privacy.cookies</T></p>
-        <p><T>terms.content.privacy.plausible</T></p>
-        <p><T>terms.content.privacy.arc</T></p>
-        <p><T>terms.content.privacy.hCaptcha</T></p>
-        <p><T>terms.content.privacy.logsBackups</T></p>
-        <p><T>terms.content.privacy.gdpr</T></p>
-
         <h3><T>terms.content.closing.header</T></h3>
         <p><T>terms.content.closing.jurisdiction</T></p>
         <p><T>terms.content.closing.changes</T></p>
-    </div>
+    </Page>
 </template>
 
 <script>

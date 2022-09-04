@@ -1,5 +1,5 @@
 <template>
-    <div v-if="profile" class="position-relative">
+    <Page v-if="profile">
         <section v-if="$isGranted('users') && user.bannedReason">
             <div class="alert alert-warning">
                 <p class="h4">
@@ -14,144 +14,164 @@
             <Profile :user="user" :profile="profile" :terms="terms"/>
         </MarkSus>
 
-        <aside class="row">
-            <div v-if="$user() && $user().username === user.username" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
-                <div class="list-group-item pt-3">
-                    <h5>
-                        <Icon v="user"/>
-                        <T>profile.personal.header</T>
-                    </h5>
-                    <small><T>profile.personal.description</T></small>
-                </div>
-                <nuxt-link to="/editor" class="list-group-item list-group-item-action list-group-item-hoverable">
-                    <Icon v="edit"/>
-                    <T>profile.edit</T>
-                </nuxt-link>
-                <template v-if="cardsEnabled">
-                <a v-if="!cardMenuVisible && !(profile.card === '' || profile.cardDark === '')" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="cardMenuVisible = true">
-                    <p class="small mb-0">
-                        <Icon v="id-card"/>
-                        <T>profile.card.link</T>
-                    </p>
-                </a>
-                <div v-else class="list-group-item">
-                    <p class="small">
-                        <Icon v="id-card"/>
-                        <T>profile.card.link</T><T>quotation.colon</T>
-                    </p>
-                    <small v-if="profile.card === '' || profile.cardDark === ''">
-                        <Spinner/>
-                        <T>profile.card.generating</T>
-                    </small>
-                    <span v-else>
-                        <a v-if="profile.card" :href="profile.card" target="_blank" rel="noopener"
-                           class="btn btn-success btn-sm mx-1">
-                            <Icon v="sun"/>
-                            <T>mode.light</T>
-                        </a>
-                        <a v-if="profile.cardDark" :href="profile.cardDark" target="_blank" rel="noopener"
-                           class="btn btn-success btn-sm mx-1">
-                            <Icon v="moon"/>
-                            <T>mode.dark</T>
-                        </a>
+        <AdPlaceholder phkey="main-0"/>
 
-                        <hr v-if="profile.card || profile.cardDark"/>
-                        <small>
-                            <T>profile.card.generate</T><T>quotation.colon</T><br/>
-                            <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
+        <template v-slot:aside-right>
+            <div class="row">
+                <div class="my-2 col-12 col-lg-4 col-xxl-12">
+                    <AdPlaceholder phkey="aside-right-top" class="mb-3"/>
+
+                    <div v-if="$user() && $user().username === user.username" class="list-group list-group-flare">
+                        <div class="list-group-item pt-3">
+                            <h5>
+                                <Icon v="user"/>
+                                <T>profile.personal.header</T>
+                            </h5>
+                            <small><T>profile.personal.description</T></small>
+                        </div>
+                        <nuxt-link to="/editor" class="list-group-item list-group-item-action list-group-item-hoverable">
+                            <Icon v="edit"/>
+                            <T>profile.edit</T>
+                        </nuxt-link>
+                        <template v-if="cardsEnabled">
+                            <a v-if="!cardMenuVisible && !(profile.card === '' || profile.cardDark === '')" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="cardMenuVisible = true">
+                                <p class="small mb-0">
+                                    <Icon v="id-card"/>
+                                    <T>profile.card.link</T>
+                                </p>
+                            </a>
+                            <div v-else class="list-group-item">
+                                <p class="small">
+                                    <Icon v="id-card"/>
+                                    <T>profile.card.link</T><T>quotation.colon</T>
+                                </p>
+                                <small v-if="profile.card === '' || profile.cardDark === ''">
+                                    <Spinner/>
+                                    <T>profile.card.generating</T>
+                                </small>
+                                <span v-else>
+                            <a v-if="profile.card" :href="profile.card" target="_blank" rel="noopener"
+                               class="btn btn-success btn-sm mx-1">
                                 <Icon v="sun"/>
                                 <T>mode.light</T>
-                            </button>
-                            <button class="btn btn-outline-success btn-sm" @click="generateCard(true)">
+                            </a>
+                            <a v-if="profile.cardDark" :href="profile.cardDark" target="_blank" rel="noopener"
+                               class="btn btn-success btn-sm mx-1">
                                 <Icon v="moon"/>
                                 <T>mode.dark</T>
-                            </button>
-                        </small>
-                    </span>
-                </div>
-                </template>
-            </div>
+                            </a>
 
-            <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
-                <div class="list-group-item pt-3">
-                    <h5>
-                        <Icon v="language"/>
-                        <T>profile.language.header</T>
-                    </h5>
-                    <small><T :params="{username: user.username}">profile.language.description</T><T>quotation.colon</T></small>
+                            <hr v-if="profile.card || profile.cardDark"/>
+                            <small>
+                                <T>profile.card.generate</T><T>quotation.colon</T><br/>
+                                <button class="btn btn-outline-success btn-sm" @click="generateCard(false)">
+                                    <Icon v="sun"/>
+                                    <T>mode.light</T>
+                                </button>
+                                <button class="btn btn-outline-success btn-sm" @click="generateCard(true)">
+                                    <Icon v="moon"/>
+                                    <T>mode.dark</T>
+                                </button>
+                            </small>
+                        </span>
+                            </div>
+                        </template>
+                    </div>
                 </div>
-                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-show="user.profiles[locale] !== undefined"
-                            :locale="locale" :link="`/@${user.username}`"
-                            :class="['list-group-item list-group-item-action list-group-item-hoverable small', locale === config.locale ? 'list-group-item-active' : '']">
-                    {{options.name}}
+
+                <div class="my-2 col-12 col-lg-4 col-xxl-12">
+                    <AdPlaceholder phkey="aside-right-middle" class="mb-3"/>
+                    <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare">
+                        <div class="list-group-item pt-3">
+                            <h5>
+                                <Icon v="language"/>
+                                <T>profile.language.header</T>
+                            </h5>
+                            <small><T :params="{username: user.username}">profile.language.description</T><T>quotation.colon</T></small>
+                        </div>
+                        <LocaleLink v-for="(options, locale) in locales" :key="locale" v-show="user.profiles[locale] !== undefined"
+                                    :locale="locale" :link="`/@${user.username}`"
+                                    :class="['list-group-item list-group-item-action list-group-item-hoverable small', locale === config.locale ? 'list-group-item-active' : '']">
+                            {{options.name}}
+                        </LocaleLink>
+                        <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
+                           class="list-group-item list-group-item-action list-group-item-hoverable small"
+                        >
+                            <span class="badge bg-primary text-white">
+                                <Icon v="link"/>
+                                pronouns.page/@{{user.username}}
+                            </span>
+                        </a>
+                        <a :href="`https://pronouns.page/u/${user.username}`" v-if="Object.keys(user.profiles).length > 1"
+                           class="list-group-item list-group-item-action list-group-item-hoverable small"
+                        >
+                            <span class="badge bg-light text-dark border">
+                                <Icon v="link"/>
+                                pronouns.page/u/{{user.username}}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="my-2 col-12 col-lg-4 col-xxl-12">
+                    <div class="list-group list-group-flare">
+                        <div class="list-group-item pt-3">
+                            <h5>
+                                <Icon v="share"/>
+                                <T>share</T>
+                            </h5>
+                        </div>
+                        <div class="list-group-item small p-2 text-center">
+                            <Share nolabel shareApiSeparate/>
+                        </div>
+                    </div>
+                    <AdPlaceholder phkey="aside-right-bottom" class="mt-3"/>
+                </div>
+            </div>
+        </template>
+
+        <template v-slot:below>
+            <Ban :user="user"/>
+
+            <Separator icon="heart"/>
+            <Support/>
+        </template>
+    </Page>
+    <Page v-else-if="user.username">
+        <div class="my-md-5 pt-md-2">
+            <h2 class="text-nowrap mb-3">
+                <Avatar :user="user"/>
+                @{{username}}
+            </h2>
+
+            <div v-if="Object.keys(user.profiles).length" class="list-group">
+                <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
+                            :locale="locale" :link="`/@${username}`"
+                            class="list-group-item list-group-item-action list-group-item-hoverable d-flex flex-column flex-md-row justify-content-between">
+                    <div class="h3">
+                        {{options.name}}
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <ForeignPronoun v-for="pronoun in selectMainPronouns(user.profiles[locale].pronouns)" :key="pronoun"
+                                        :pronoun="pronoun" :locale="locale"/>
+                    </div>
                 </LocaleLink>
-                <a :href="`https://pronouns.page/@${user.username}`" v-if="Object.keys(user.profiles).length > 1"
-                   class="list-group-item list-group-item-action list-group-item-hoverable small"
-                >
-                    <span class="badge bg-primary text-white">
-                        <Icon v="link"/>
-                        pronouns.page/@{{user.username}}
-                    </span>
-                </a>
-                <a :href="`https://pronouns.page/u/${user.username}`" v-if="Object.keys(user.profiles).length > 1"
-                   class="list-group-item list-group-item-action list-group-item-hoverable small"
-                >
-                    <span class="badge bg-light text-dark border">
-                        <Icon v="link"/>
-                        pronouns.page/u/{{user.username}}
-                    </span>
-                </a>
+            </div>
+            <div v-else class="alert alert-info">
+                <p class="mb-0">
+                    <Icon v="info-circle"/>
+                    <T>profile.empty</T>
+                </p>
             </div>
 
-            <div class="list-group list-group-flare my-2 col-12 col-lg-4 col-xxl-12">
-                <div class="list-group-item pt-3">
-                    <h5>
-                        <Icon v="share"/>
-                        <T>share</T>
-                    </h5>
-                </div>
-                <div class="list-group-item small p-2 text-center">
-                    <Share nolabel shareApiSeparate/>
-                </div>
-            </div>
-        </aside>
+            <a v-for="link in verifiedLinks" :href="link" rel="me">&nbsp;</a>
 
-        <Ban :user="user"/>
-
-        <Separator icon="heart"/>
-        <Support/>
-    </div>
-    <div v-else-if="user.username" class="my-md-5 pt-md-2">
-        <h2 class="text-nowrap mb-3">
-            <Avatar :user="user"/>
-            @{{username}}
-        </h2>
-
-        <div v-if="Object.keys(user.profiles).length" class="list-group">
-            <LocaleLink v-for="(options, locale) in locales" :key="locale" v-if="user.profiles[locale] !== undefined"
-                        :locale="locale" :link="`/@${username}`"
-                        class="list-group-item list-group-item-action list-group-item-hoverable d-flex flex-column flex-md-row justify-content-between">
-                <div class="h3">
-                    {{options.name}}
-                </div>
-                <div class="d-flex align-items-center">
-                    <ForeignPronoun v-for="pronoun in selectMainPronouns(user.profiles[locale].pronouns)" :key="pronoun"
-                                    :pronoun="pronoun" :locale="locale"/>
-                </div>
-            </LocaleLink>
+            <Ban :user="user"/>
         </div>
-        <div v-else class="alert alert-info">
-            <p class="mb-0">
-                <Icon v="info-circle"/>
-                <T>profile.empty</T>
-            </p>
-        </div>
-
-        <a v-for="link in verifiedLinks" :href="link" rel="me">&nbsp;</a>
-
-        <Ban :user="user"/>
-    </div>
-    <NotFound v-else/>
+    </Page>
+    <Page v-else>
+        <NotFound/>
+    </Page>
 </template>
 
 <script>

@@ -109,6 +109,7 @@ user:
     enabled: true
     route: 'bruker'
     termsRoute: 'vilkar'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

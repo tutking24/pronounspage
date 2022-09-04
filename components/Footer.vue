@@ -51,8 +51,15 @@
                             <T>contact.contribute.technical.footer</T>
                         </a>
                     </li>
+                    <li v-if="config.ads && config.ads.enabled && $isGranted('*')" class="mb-2">
+                        <a href="#" @click.prevent="$store.commit('toggleAdPlaceholdersVisible')">
+                            <Icon v="ad"/>
+                            Toggle ad placeholder visibility
+                        </a>
+                    </li>
                 </ul>
 
+                <!--
                 <p class="h6 mb-2">
                     <T>support.header</T><T>quotation.colon</T>
                 </p>
@@ -65,6 +72,7 @@
                         </a>
                     </li>
                 </ul>
+                -->
 
                 <div class="mt-2 mb-4 text-center">
                     <ModeSwitch/>
@@ -93,6 +101,12 @@
                         <nuxt-link :to="`/${config.user.termsRoute}`">
                             <Icon v="gavel"/>
                             <T>terms.header</T>
+                        </nuxt-link>
+                    </li>
+                    <li class="mb-2">
+                        <nuxt-link :to="`/${config.user.privacyRoute}`">
+                            <Icon v="user-secret"/>
+                            <T>privacy.header</T>
                         </nuxt-link>
                     </li>
                     <li class="mb-2">
@@ -146,13 +160,14 @@
                 <Stats/>
             </div>
         </div>
+        <AdPlaceholder phkey="footer"/>
         <EasterEgg/>
         <UkraineBanner class="my-3"/>
         </div>
     </footer>
     <div v-else>
         <a v-for="link in links" :key="link.url" :href="link.url" target="_blank" rel="me">&nbsp;</a>
-        <a v-for="link in supportLinks" :key="link.url"  :href="link.url" target="_blank" rel="me">&nbsp;</a>
+        <!--<a v-for="link in supportLinks" :key="link.url"  :href="link.url" target="_blank" rel="me">&nbsp;</a>-->
     </div>
 </template>
 

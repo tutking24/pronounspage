@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <UkraineBanner class="mb-4"/>
         <template v-if="$te('home.welcome')">
             <section>
@@ -24,7 +24,11 @@
                     </div>
                 </div>
 
+                <AdPlaceholder phkey="main-0"/>
+
                 <CalendarBanner link/>
+
+                <AdPlaceholder phkey="main-1"/>
             </section>
 
             <section>
@@ -41,6 +45,8 @@
 
             <T>home.about</T>
 
+            <AdPlaceholder phkey="main-2"/>
+
             <CalendarBanner v-if="!$te('home.welcome')" link/>
         </section>
 
@@ -51,6 +57,7 @@
         <Separator icon="bookmark"/>
 
         <section>
+            <AdPlaceholder phkey="main-3"/>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <LanguageVersions/>
@@ -73,7 +80,7 @@
             <Support/>
             <Contribute/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

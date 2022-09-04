@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <CommunityNav/>
 
         <h2>
@@ -12,8 +12,10 @@
             <Share :title="$t('inclusive.headerLong')"/>
         </section>
 
+        <AdPlaceholder phkey="main-0"/>
+
         <InclusiveDictionary load ref="inclusivedictionary"/>
-    </div>
+    </Page>
 </template>
 
 <script>

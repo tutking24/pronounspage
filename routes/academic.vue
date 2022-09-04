@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
 
         <AcademicLinks/>
@@ -9,7 +9,7 @@
         <section>
             <Share :title="$t('links.headerLong')"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

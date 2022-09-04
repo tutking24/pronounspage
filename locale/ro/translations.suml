@@ -793,11 +793,11 @@ terms:
     content:
         intro: >
             Acești termeni conduc accesul și utilizarea ta al acestui serviciu, furnizate de către website-ul
-            <strong>pronouns.page / zaimki.pl</strong> operat de colectivul „Consiliul Limbajului Neutru”
+            <strong>pronouns.page</strong> operat de colectivul „Consiliul Limbajului Neutru”
             care poate fi contactat prin email:
         consent: >
             Prin folosirea serviciilor, ești de acord cu acești termeni și accepți
-            colectarea și procesarea datelor așa cum este descris în politica de confidențialitate de mai jos.
+            colectarea și procesarea datelor așa cum este descris în {/confidentialitate=politica de confidențialitate} de mai jos.
         accounts:
             header: 'Utilizatorii și conturile'
             age: >
@@ -836,6 +836,7 @@ terms:
                 enbyphobia: 'enbyfobie'
                 queerphobia: 'queerfobie'
                 exclusionism: 'exclusionism queer'
+                sexism: 'sexismul'
                 misogyny: 'misoginism'
                 harassment: 'hărțuire'
                 impersonation: 'impersonare'
@@ -851,37 +852,6 @@ terms:
                 Tu ești responsabil pentru orice conținut postat pe serviciu.
                 Dacă încalci termenii aceștia, vom șterge conținutul fără niciun anunț și poate vom revoca licența ta de a folosi serviciul acesta.
                 Dacă încalci legile, vom trimite informațiile tale agențiilor de aplicăre a legilor. # rephrasing needed.
-        privacy:
-            header: 'Politica de confidențialitate'
-            effort: >
-                Depunem fiecare efort pentru a stoca datele tale securizat și ca nimic non-public să nu fie
-                folosit de sau transferat la orice third party, cu exceptia unor trusted parties descrise mai jos. # „third party” & „trusted parties” in romanian please - my brain cant process them rn
-            data: >
-                Cu excepția datelor pe care le postezi tu pe serviciul acesta ca și conținut,
-                și datele pe care le împărtășești cu noi (ex: tokene de access OAuth, dacă folosești logarea prin rețelele de socializare),
-                nicio altă dată privată conectată la contul tău nu va fi stocată sau procesată.
-            editRemoval: >
-                Poți edita și șterge orice conținut ai postat pe acest serviciu.
-            contact: >
-                Când ne contactezi prin email, stocăm adresa ta de email pentru a putea să îți răspundem la orice întrebări suplimentare.
-            cookies: >
-                Folosim doar first-party cookies și stocarea locală pentru a te ține logat și pentru a-ți salva setările.
-            plausible: >
-                Folosim Plausible pentru a analiza traficul de pe site. Datele acestea nu au nicio legătură cu numele tău de utilizator, iar IP-ul tău e anonimizat.
-                Le poți citi politica de confidențialitate {https://plausible.io/privacy=aici}.
-            arc: >
-                Folosim arc.io pentru a acoperi costurile menținerii site-ului fără a introduce reclame.
-                Poți citi mai multe despre acest lucru și politica lor de confidențialitate
-                {https://arc.io/faq=aici}.
-            hCaptcha: >
-                Folosim hCaptcha pentru a filtra roboții și pentru a preveni atacurile DDoS.
-                Poți citi politica lor de confidențialitate
-                {https://www.hcaptcha.com/privacy=aici}.
-            logsBackups: >
-                Înregistrările și back-up-urile sunt stocate pentru maximum 18 luni.
-            gdpr: >
-                Datele tale personale sunt protejate de GDPR, ceea ce înseamnă ca ai dreptul de
-                a vedea, corecta, actualiza și sterge datele pe care le stocăm despre tine.
         closing:
             header: 'General'
             jurisdiction: >
@@ -889,28 +859,40 @@ terms:
             changes: >
                 Reservăm dreptul de a modifica termenii aceștia oricând.
                 Dacă o schimbare este fizică, te vom anunța cu 30 zile înainte de a pune schimbarea în aplicare.
-    #update:
-    #    header: 'We''ve updated our Terms of Service.'
-    #    intro: >
-    #        Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
-    #    changes:
-    #        - >
-    #            In January we will start removing unused accounts to prevent username hoarding
-    #            (if there's both no card and no login for a month).
-    #        - >
-    #            We'd like to provide a safe space for all queer people regardless of age,
-    #            but we must also respect the law
-    #            and protect the privacy of people who can't legally consent to processing their data.
-    #            Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
-    #            you need to be at least 13 years old to create an account,
-    #            and in case of users aged 13-16 they need have parental consent for us to process their data.
-    #        - >
-    #            To improve accessibility, we have started translating our Terms of Service into all supported languages.
-    #            Those translations are just auxiliary, the only legally binding version remains English.
-    #        - >
-    #            Although queerphobia, transphobia, queer exclusionism and trolling
-    #            have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
-    #            we're now explicitly listing them as forbidden.
+
+privacy:
+    header: 'Politica de confidențialitate'
+    content:
+        # TODO intro
+        effort: >
+            Depunem fiecare efort pentru a stoca datele tale securizat și ca nimic non-public să nu fie
+            folosit de sau transferat la orice third party, cu exceptia unor trusted parties descrise mai jos. # „third party” & „trusted parties” in romanian please - my brain cant process them rn
+        data: >
+            Cu excepția datelor pe care le postezi tu pe serviciul acesta ca și conținut,
+            și datele pe care le împărtășești cu noi (ex: tokene de access OAuth, dacă folosești logarea prin rețelele de socializare),
+            nicio altă dată privată conectată la contul tău nu va fi stocată sau procesată.
+        editRemoval: >
+            Poți edita și șterge orice conținut ai postat pe acest serviciu.
+        contact: >
+            Când ne contactezi prin email, stocăm adresa ta de email pentru a putea să îți răspundem la orice întrebări suplimentare.
+        cookies: >
+            Folosim doar first-party cookies și stocarea locală pentru a te ține logat și pentru a-ți salva setările.
+        plausible: >
+            Folosim Plausible pentru a analiza traficul de pe site. Datele acestea nu au nicio legătură cu numele tău de utilizator, iar IP-ul tău e anonimizat.
+            Le poți citi politica de confidențialitate {https://plausible.io/privacy=aici}.
+        arc: >
+            Folosim arc.io pentru a acoperi costurile menținerii site-ului fără a introduce reclame.
+            Poți citi mai multe despre acest lucru și politica lor de confidențialitate
+            {https://arc.io/faq=aici}.
+        hCaptcha: >
+            Folosim hCaptcha pentru a filtra roboții și pentru a preveni atacurile DDoS.
+            Poți citi politica lor de confidențialitate
+            {https://www.hcaptcha.com/privacy=aici}.
+        logsBackups: >
+            Înregistrările și back-up-urile sunt stocate pentru maximum 18 luni.
+        gdpr: >
+            Datele tale personale sunt protejate de GDPR, ceea ce înseamnă ca ai dreptul de
+            a vedea, corecta, actualiza și sterge datele pe care le stocăm despre tine.
 
 admin:
     header: 'Panoul de administrator'
