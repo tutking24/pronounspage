@@ -1,5 +1,5 @@
 <template>
-    <div v-if="translationModeVisible && $user()" class="scroll-btn d-print-none d-flex align-items-center">
+    <div v-if="translationModeVisible && $user()" :class="['scroll-btn', 'd-print-none', 'd-flex', 'align-items-center', config.ads && config.ads.enabled ? 'higher' : '']">
         <template v-if="translationMode">
             <button class="btn btn-info btn-sm m-1 px-3 py-1 d-flex justify-content-center align-items-center" @click="showChanges">
                 <small><T>translationMode.changes</T><T>quotation.colon</T> {{ changesCount }}</small>
@@ -94,5 +94,16 @@
         bottom: 2 * $spacer + $square-button-size;
         right: $spacer;
         z-index: 1030;
+    }
+
+    @include media-breakpoint-down('lg', $grid-breakpoints) {
+        .higher {
+            bottom: 4 * $spacer + $square-button-size;
+        }
+    }
+    @include media-breakpoint-up('lg', $grid-breakpoints) {
+        .higher {
+            z-index: 100001;
+        }
     }
 </style>

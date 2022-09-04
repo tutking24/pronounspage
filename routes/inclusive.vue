@@ -12,7 +12,7 @@
             <Share :title="$t('inclusive.headerLong')"/>
         </section>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <InclusiveDictionary load ref="inclusivedictionary"/>
     </Page>

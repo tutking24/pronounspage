@@ -93,7 +93,7 @@
             </ul>
         </section>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <section>
             <h3>
@@ -130,7 +130,7 @@
             </template>
         </section>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
     </Page>
 </template>
 

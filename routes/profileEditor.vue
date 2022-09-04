@@ -105,7 +105,7 @@
                 <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
-            <AdPlaceholder phkey="main-0" class="my-3"/>
+            <AdPlaceholder phkey="main-0"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -121,7 +121,7 @@
                 <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
             </section>
 
-            <AdPlaceholder phkey="main-1" class="my-3"/>
+            <AdPlaceholder phkey="main-1"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -131,7 +131,7 @@
                 <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
             </section>
 
-            <AdPlaceholder phkey="main-2" class="my-3"/>
+            <AdPlaceholder phkey="main-2"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -163,7 +163,7 @@
                 <Answer question="flags" small/>
             </section>
 
-            <AdPlaceholder phkey="main-3" class="my-3"/>
+            <AdPlaceholder phkey="main-3"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -190,7 +190,7 @@
                 </p>
             </section>
 
-            <AdPlaceholder phkey="main-4" class="my-3"/>
+            <AdPlaceholder phkey="main-4"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -210,7 +210,7 @@
                 <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
-            <AdPlaceholder phkey="main-5" class="my-3"/>
+            <AdPlaceholder phkey="main-5"/>
 
             <section class="form-group">
                 <div class="h4 d-flex justify-content-between">
@@ -237,7 +237,7 @@
                 </button>
             </section>
 
-            <AdPlaceholder phkey="main-6" class="my-3"/>
+            <AdPlaceholder phkey="main-6"/>
         </form>
     </div>
     </Page>

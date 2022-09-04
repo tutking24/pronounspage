@@ -14,7 +14,7 @@
             </li>
         </ul>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
     </Page>
 </template>
 

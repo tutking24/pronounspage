@@ -1,5 +1,5 @@
 <template>
-    <AdPlaceholder phkey="support" class="my-3"/>
+    <AdPlaceholder phkey="support"/>
     <!--
     <section>
         <h3>

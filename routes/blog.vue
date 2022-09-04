@@ -5,7 +5,7 @@
             <Icon v="pen-nib"/>
             <T>links.blog</T>
         </h2>
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
         <BlogEntriesList :posts="posts" details/>
         <Separator icon="heart"/>
         <Support/>

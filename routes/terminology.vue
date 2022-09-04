@@ -14,7 +14,7 @@
 
         <ModerationRules type="rulesTerminology" emphasise/>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <TermsDictionary load ref="termsdictionary"/>
     </Page>

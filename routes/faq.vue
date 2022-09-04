@@ -26,7 +26,7 @@
             </div>
         </details>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
                 :question="question"
@@ -37,7 +37,7 @@
                      || $t(`faq.questions.${question}.answer`).join('|').toLowerCase().includes(filter.toLowerCase())"
         />
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <section>
             <Share :title="$t('faq.headerLong')"/>

@@ -69,11 +69,11 @@
             </template>
         </section>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <GrammarTables :selectedPronoun="selectedPronoun" :counter="counter"/>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <PronounGroup :pronounGroup="pronounGroup"/>
 
@@ -87,7 +87,7 @@
             <Literature :pronoun="selectedPronoun" :sources="groupedSources"/>
         </section>
 
-        <AdPlaceholder phkey="main-2" class="my-3"/>
+        <AdPlaceholder phkey="main-2"/>
 
         <Separator icon="info"/>
         <section class="mb-0">

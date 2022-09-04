@@ -126,7 +126,7 @@
             </div>
         </div>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <Loading :value="profiles">
             <template v-slot:header>
@@ -139,7 +139,7 @@
             </ul>
         </Loading>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
 
         <Loading :value="socialConnections">
             <template v-slot:header>
@@ -173,7 +173,7 @@
             </a>
         </section>
 
-        <AdPlaceholder phkey="main-2" class="my-3"/>
+        <AdPlaceholder phkey="main-2"/>
 
         <div>
             <iframe v-for="domain in universalDomains"

@@ -8,11 +8,11 @@
             <LinkedText :text="config.pronouns.null.history"/>
         </p>
 
-        <AdPlaceholder phkey="main-0" class="my-3"/>
+        <AdPlaceholder phkey="main-0"/>
 
         <Avoiding/>
 
-        <AdPlaceholder phkey="main-1" class="my-3"/>
+        <AdPlaceholder phkey="main-1"/>
     </Page>
 </template>
 
