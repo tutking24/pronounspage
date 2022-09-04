@@ -145,6 +145,7 @@ user:
     enabled: true
     route: '어카운트'
     termsRoute: '자귀'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

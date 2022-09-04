@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <LinksNav/>
 
         <h2>
@@ -36,7 +36,7 @@
                 <!-- TODO <SourceList v-if="person.sources.length" :names="person.sources"/> -->
             </li>
         </ul>
-    </div>
+    </Page>
 </template>
 
 <script>

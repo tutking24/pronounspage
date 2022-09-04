@@ -191,6 +191,7 @@ user:
     enabled: true
     route: 'konto'
     termsRoute: 'reguloj'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

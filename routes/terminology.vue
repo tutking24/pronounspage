@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <CommunityNav/>
 
         <h2>
@@ -14,8 +14,10 @@
 
         <ModerationRules type="rulesTerminology" emphasise/>
 
+        <AdPlaceholder phkey="main-0"/>
+
         <TermsDictionary load ref="termsdictionary"/>
-    </div>
+    </Page>
 </template>
 
 <script>

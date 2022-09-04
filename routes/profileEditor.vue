@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <MustLogin v-if="!$user()"/>
     <div v-else>
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
@@ -104,6 +105,8 @@
                 <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
+            <AdPlaceholder phkey="main-0"/>
+
             <section class="form-group">
                 <h3 class="h4">
                     <Icon v="tags"/>
@@ -118,6 +121,8 @@
                 <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
             </section>
 
+            <AdPlaceholder phkey="main-1"/>
+
             <section class="form-group">
                 <h3 class="h4">
                     <Icon v="comment-edit"/>
@@ -125,6 +130,8 @@
                 </h3>
                 <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
             </section>
+
+            <AdPlaceholder phkey="main-2"/>
 
             <section class="form-group">
                 <h3 class="h4">
@@ -156,6 +163,8 @@
                 <Answer question="flags" small/>
             </section>
 
+            <AdPlaceholder phkey="main-3"/>
+
             <section class="form-group">
                 <h3 class="h4">
                     <Icon v="link"/>
@@ -181,6 +190,8 @@
                 </p>
             </section>
 
+            <AdPlaceholder phkey="main-4"/>
+
             <section class="form-group">
                 <h3 class="h4">
                     <Icon v="birthday-cake"/>
@@ -198,6 +209,8 @@
                 </div>
                 <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
+
+            <AdPlaceholder phkey="main-5"/>
 
             <section class="form-group">
                 <div class="h4 d-flex justify-content-between">
@@ -223,8 +236,11 @@
                     <T>profile.editor.save</T>
                 </button>
             </section>
+
+            <AdPlaceholder phkey="main-6"/>
         </form>
     </div>
+    </Page>
 </template>
 
 <script>

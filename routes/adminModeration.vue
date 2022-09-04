@@ -1,4 +1,5 @@
 <template>
+    <Page>
     <NotFound v-if="!$isGranted('users')"/>
     <div v-else>
         <h2>
@@ -11,4 +12,5 @@
         <ModerationRules type="rulesSources" label="Sources" open/>
         <ModerationRules type="susRegexes" label="Keywords for automated triggers"/>
     </div>
+    </Page>
 </template>

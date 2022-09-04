@@ -25,8 +25,8 @@
             return {
                 areas: {
                     entries: 'database',
-                    translations: 'language',
                     version: 'globe-africa',
+                    translations: 'language',
                     technical: 'code-merge',
                 },
             }

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <h2>
             {{ clearLinkedText(config.pronouns.mirror.name) }}
         </h2>
@@ -13,7 +13,9 @@
                 <LinkedText :text="example"/>
             </li>
         </ul>
-    </div>
+
+        <AdPlaceholder phkey="main-0"/>
+    </Page>
 </template>
 
 <script>

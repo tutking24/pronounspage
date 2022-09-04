@@ -191,6 +191,7 @@ user:
     enabled: true
     route: 'cuenta'
     termsRoute: 'terminos'
+    privacyRoute: 'privacidad'
 
 profile:
     enabled: true

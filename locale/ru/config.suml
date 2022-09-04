@@ -272,6 +272,7 @@ user:
     enabled: true
     route: 'account'
     termsRoute: 'terms'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true

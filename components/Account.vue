@@ -126,6 +126,8 @@
             </div>
         </div>
 
+        <AdPlaceholder phkey="main-0"/>
+
         <Loading :value="profiles">
             <template v-slot:header>
                 <h3 class="h4"><T>profile.list</T><T>quotation.colon</T></h3>
@@ -136,6 +138,8 @@
                 </li>
             </ul>
         </Loading>
+
+        <AdPlaceholder phkey="main-1"/>
 
         <Loading :value="socialConnections">
             <template v-slot:header>
@@ -168,6 +172,8 @@
                 Stop impersonation
             </a>
         </section>
+
+        <AdPlaceholder phkey="main-2"/>
 
         <div>
             <iframe v-for="domain in universalDomains"

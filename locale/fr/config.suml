@@ -116,6 +116,7 @@ user:
     enabled: true
     route: 'compte'
     termsRoute: 'termes'
+    privacyRoute: 'privacy'  # TODO
 
 profile:
     enabled: true
