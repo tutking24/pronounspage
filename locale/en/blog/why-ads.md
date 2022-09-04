@@ -65,7 +65,7 @@ It's not ideal, but I'm still trying to make it as fair to the users as possible
    our banner is short and simple (with links to [Privacy Policy](/privacy) for more details)
    and gives a simple choice with both “Accept” and “Reject” buttons styled identically –
    we appreciate you supporting the project by allowing them, but we totally respect your choice to keep more privacy;
- - we don't try to detect ad blockers and shame you for using them;
+ - we don't try to detect ad blockers or shame you for using them;
  - our profile of activity is quite different on the English version compared to the others;
    while English isn't very gendered, aside from pronouns and a few nouns,
    and there's already quite some awareness about _singular they_ or even neopronouns,
