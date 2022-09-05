@@ -1,7 +1,7 @@
 <template>
     <div v-if="visible">
         <div :class="['modal', blur ? 'modal-shown d-block' : '']"></div>
-        <div class="cookie-consent bg-white border-top border-primary small">
+        <div class="cc-modal bg-white border-top border-primary small">
             <div class="container py-3">
                 <p class="d-flex justify-content-between">
                     <span class="h5">
@@ -103,7 +103,7 @@ export default {
 <style lang="scss">
 @import "assets/variables";
 
-.cookie-consent {
+.cc-modal {
     position: fixed;
     bottom: 0;
     left: 0;
