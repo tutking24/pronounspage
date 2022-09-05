@@ -103,10 +103,10 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+        RO:
+            language: 'ro-RO'
+            voice: 'Carmen'
+            engine: 'standard'
 
 sources:
     enabled: true
