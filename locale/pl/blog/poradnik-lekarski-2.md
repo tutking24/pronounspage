@@ -1,6 +1,6 @@
 # Język inkluzywny i niebinarny – poradnik dla społeczności lekarskiej (cz. 2)
 
-<small>2022-08-02 | [@andrea](/@andrea)</small>
+<small>2022-09-05 | [@andrea](/@andrea)</small>
 
 ![Stetoskop z nałożonymi kolorami flagi osób niebinarnych. https://unsplash.com/photos/yo01Z-9HQAw](/img-local/blog/stethoscope.jpg)
 
