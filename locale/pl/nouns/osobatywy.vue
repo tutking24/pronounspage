@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <NounsNav/>
 
         <h2>
@@ -74,7 +74,7 @@
         <section v-if="sources && Object.keys(sources).length">
             <Literature :sources="sources"/>
         </section>
-    </div>
+    </Page>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <Page>
         <NounsNav/>
 
         <h2>
@@ -78,7 +78,7 @@
         <Separator icon="atom-alt"/>
 
         <Dictionary load ref="dictionary"/>
-    </div>
+    </Page>
 </template>
 
 <script>
