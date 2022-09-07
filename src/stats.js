@@ -85,8 +85,9 @@ module.exports.calculateStats = async (db, allLocales) => {
 
     let heartbeat = {};
     try {
-         for (let pageStats of Object.values((await (await fetch(`${process.env.HEARTBEAT_LINK}/30d.json`)).json()).pages)) {
-             heartbeat[pageStats.url] = {
+         for (let [page, pageStats] of Object.entries((await (await fetch(`${process.env.HEARTBEAT_LINK}/30d.json`)).json()).pages)) {
+             if (page.startsWith('dns-')) { continue; }
+             heartbeat[`https://${page}`] = {
                  uptime: pageStats.uptime,
                  avgResponseTime: pageStats.avgResponseTime,
              };
