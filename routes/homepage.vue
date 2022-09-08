@@ -1,6 +1,7 @@
 <template>
     <Page>
         <UkraineBanner class="mb-4"/>
+        <AdPlaceholder phkey="small-homepage"/>
         <template v-if="$te('home.welcome')">
             <section>
                 <h2>
@@ -12,12 +13,13 @@
                 </p>
 
                 <div class="row">
-                    <div v-for="{icon, header, route} in mainLinks" class="col-12 col-lg my-4 text-center">
+                    <div v-for="{icon, header, route} in mainLinks" class="col my-4 text-center">
                         <nuxt-link :to="`/${route}`">
                             <p>
-                                <Icon :v="icon" size="3"/>
+                                <Icon :v="icon" size="2" class="d-inline-block d-lg-none"/>
+                                <Icon :v="icon" size="3" class="d-none d-lg-inline-block"/>
                             </p>
-                            <p class="h4">
+                            <p class="h5">
                                 <Spelling :text="$t(header)"/>
                             </p>
                         </nuxt-link>

@@ -18,4 +18,6 @@ export default {
     'main-6': 114,
 
     'footer': 115,
+
+    'small-homepage': 116,
 };
