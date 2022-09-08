@@ -1,7 +1,7 @@
-const nodemailer = require('nodemailer');
-const fs = require('fs');
-const Suml = require('suml');
-const forbidden = require('./forbidden');
+import nodemailer from 'nodemailer';
+import fs from 'fs';
+import Suml from 'suml';
+import forbidden from './forbidden';
 
 const color = '#C71585';
 const logo = fs.readFileSync(__dirname + '/../static/logo/logo-primary.svg').toString('utf-8');
@@ -128,7 +128,7 @@ const applyTemplate = (template, context, params) => {
     return template;
 }
 
-module.exports = (to, template, params = {}) => {
+export default (to, template, params = {}) => {
     sendEmail(
         process.env.MAILER_OVERWRITE || to,
         applyTemplate(template, 'subject', params),

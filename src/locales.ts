@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     ['de', 'Deutsch',             'https://de.pronouns.page', true],
     ['es', 'Español',             'https://pronombr.es',      true],
     ['eo', 'Esperanto',           'https://eo.pronouns.page', false],
@@ -20,4 +20,4 @@ module.exports = [
     ['yi', 'ייִדיש',               'https://yi.pronouns.page', false],
     ['zh', '中文',                'https://zh.pronouns.page', true],
     ['tok', 'toki pona',          'https://tok.pronouns.page', false],
-];
+] as Array<[string, string, string, boolean]>;

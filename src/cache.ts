@@ -1,7 +1,10 @@
 import fs from 'fs';
 
 export class CacheObject {
-    constructor(dir, filename, maxAgeMinutes) {
+    private path: string;
+    private maxAgeMinutes: number;
+
+    constructor(dir: string, filename: string, maxAgeMinutes: number) {
         const cacheDir = `${__dirname}/../cache/${dir}`
         if (filename.includes('..')) {
             throw 'Insecure';
@@ -11,18 +14,18 @@ export class CacheObject {
         this.maxAgeMinutes = maxAgeMinutes;
     }
 
-    async fetch(generator, enabled = true) {
+    async fetch(generator, enabled = true): Promise<Buffer | string> {
         if (process.env.NODE_ENV === 'development' || !enabled) {
             return await generator();
         }
 
-        if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (new Date() - this.maxAgeMinutes*60*1000)) {
-            let content = fs.readFileSync(this.path);
+        if (fs.existsSync(this.path) && fs.statSync(this.path).mtimeMs >= (Date.now() - this.maxAgeMinutes*60*1000)) {
+            let content: Buffer | string = fs.readFileSync(this.path);
             if (this.path.endsWith('.js') || this.path.endsWith('.txt')) {
                 content = content.toString('utf-8')
             }
             if (this.path.endsWith('.js')) {
-                content = JSON.parse(content);
+                content = JSON.parse(content as string);
             }
 
             return content;

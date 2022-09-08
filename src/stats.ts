@@ -1,7 +1,7 @@
-const {decodeTime} = require('ulid');
-const mailer = require('./mailer');
-const Plausible = require('plausible-api');
-const fetch = require('node-fetch');
+import {decodeTime} from 'ulid';
+import mailer from './mailer';
+import Plausible from 'plausible-api';
+import fetch from 'node-fetch';
 
 // TODO all the duplication...
 const buildDict = (fn, ...args) => {
@@ -60,7 +60,7 @@ const buildChart = (rows) => {
     return chart;
 }
 
-module.exports.statsFile = process.env.STATS_FILE.replace('%projectdir%', __dirname + '/..')
+export const statsFile = process.env.STATS_FILE.replace('%projectdir%', __dirname + '/..')
 
 const plausibleClient = new Plausible(process.env.PLAUSIBLE_API_KEY, process.env.PLAUSIBLE_API_HOST + '/api/v1/stats');
 
@@ -76,7 +76,7 @@ const checkPlausible = async (url) => {
     return plausible;
 }
 
-module.exports.calculateStats = async (db, allLocales) => {
+export const calculateStats = async (db, allLocales) => {
     const users = {
         overall: (await db.get(`SELECT count(*) AS c FROM users`)).c,
         admins: (await db.get(`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
@@ -152,5 +152,5 @@ module.exports.calculateStats = async (db, allLocales) => {
         mailer('contact@pronouns.page', 'cardsWarning', {count: cardsQueue});
     }
 
-    return { calculatedAt: parseInt(new Date() / 1000), users, home, locales, cardsQueue };
+    return { calculatedAt: parseInt(String(Date.now() / 1000)), users, home, locales, cardsQueue };
 }

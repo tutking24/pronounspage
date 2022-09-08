@@ -1,18 +1,20 @@
 import express from 'express';
 import authenticate from '../src/authenticate';
 import dbConnection from './db';
+import type { Database, SQLQuery } from './db';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import grant from "grant";
 import router from "./routes/user";
 import { loadSuml } from './loader';
-import {isGranted} from "../src/helpers";
+import { isGranted } from "../src/helpers";
 import buildLocaleList from "../src/buildLocaleList";
 import cookieSettings from "../src/cookieSettings";
 import SQL from "sql-template-strings";
 
-global.config = loadSuml('config');
-global.translations = loadSuml('translations');
+
+(global as any).config = loadSuml('config');
+(global as any).translations = loadSuml('translations');
 
 const app = express()
 app.enable('trust proxy')
@@ -34,7 +36,9 @@ app.use(session({
     saveUninitialized: false,
 }));
 
-class LazyDatabase {
+export class LazyDatabase {
+    private db: Database;
+
     constructor() {
         this.db = null;
     }
@@ -48,14 +52,14 @@ class LazyDatabase {
         }
     }
 
-    async get(...args) {
+    async get(sql: SQLQuery, ...args) {
         await this.init();
-        return this.db.get(...args)
+        return this.db.get(sql, ...args)
     }
 
-    async all(...args) {
+    async all(sql: SQLQuery, ...args) {
         await this.init();
-        return this.db.all(...args);
+        return this.db.all(sql, ...args);
     }
 
     async close() {
@@ -71,8 +75,8 @@ app.use(async function (req, res, next) {
     try {
         req.rawUser = authenticate(req);
         req.user = req.rawUser && req.rawUser.authenticated ? req.rawUser : null;
-        req.isGranted = (area = '', locale = global.config.locale) => req.user && isGranted(req.user, locale, area);
-        req.locales = buildLocaleList(global.config.locale, global.config.locale === '_');
+        req.isGranted = (area: string = '', locale = config.locale) => req.user && isGranted(req.user, locale, area);
+        req.locales = buildLocaleList(config.locale, config.locale === '_');
         req.db = new LazyDatabase();
         req.isUserAllowedToPost = async () => {
             const user = await req.db.get(SQL`SELECT bannedReason FROM users WHERE id = ${req.user.id}`);

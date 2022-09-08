@@ -1,4 +1,4 @@
-module.exports.config = {
+export const config = {
     defaults: {
         origin: process.env.BASE_URL,
         transport: 'session',
@@ -35,7 +35,7 @@ module.exports.config = {
     indieauth: {},
 }
 
-module.exports.handlers = {
+export const handlers = {
     twitter(r) {
         return {
             id: r.profile.id_str,

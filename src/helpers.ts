@@ -1,16 +1,17 @@
 import md5 from 'js-md5';
-import {Base64} from 'js-base64';
+import { Base64 } from 'js-base64';
 import _ from 'lodash';
+import type { RawUser } from "../src/authenticate";
 
-export const buildDict = (fn, ...args) => {
-    const dict = {};
+export const buildDict = <K extends keyof any, V, Args extends any[]>(fn: GeneratorFunc<[K, V], Args>, ...args: Args): Record<K, V> => {
+    const dict: Record<K, V> = {} as Record<K, V>;
     for (let [key, value] of fn(...args)) {
         dict[key] = value;
     }
     return dict;
 }
 
-export const buildList = (fn, ...args) => {
+export const buildList = <V, Args extends any[]>(fn: GeneratorFunc<V, Args>, ...args: Args): Array<V> => {
     const list = [];
     for (let value of fn(...args)) {
         list.push(value);
@@ -18,8 +19,24 @@ export const buildList = (fn, ...args) => {
     return list;
 }
 
-export const head = ({title, description, banner, noindex = false}) => {
-    const meta = { meta: [] };
+export interface Meta {
+    hid?: string;
+    name?: string;
+    property?: string;
+    content?: string;
+}
+export interface Head {
+    title?: string;
+    meta: Array<Meta>
+}
+export interface HeadParams {
+    title?: string;
+    description?: string;
+    banner?: string;
+    noindex?: boolean;
+}
+export const head = ({title, description, banner, noindex = false}: HeadParams): Head => {
+    const meta: Head = { meta: [] };
 
     if (title) {
         title = title.replace(/&#39;/g, '\'');
@@ -51,7 +68,7 @@ export const head = ({title, description, banner, noindex = false}) => {
     return meta;
 }
 
-export const clearUrl = url => {
+export const clearUrl = (url: string) => {
     url = url.trim()
         .replace('http://www.', '')
         .replace('https://www.', '')
@@ -69,8 +86,8 @@ export const clearUrl = url => {
         url = url.substr(0, hPos);
     }
 
-    if (url.substr(url.length - 1) === '/') {
-        url = url.substr(0, url.length - 1);
+    if (url.substring(url.length - 1) === '/') {
+        url = url.substring(0, url.length - 1);
     }
 
     url = decodeURIComponent(url);
@@ -82,7 +99,7 @@ export const clearUrl = url => {
     return url;
 }
 
-export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') => {
+export const makeId = (length: number, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'): string => {
     let result = '';
     const charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
@@ -100,7 +117,11 @@ export const gravatar = (user, size = 240) => {
     return `https://www.gravatar.com/avatar/${user.emailHash || md5(user.email)}?d=${encodeURIComponent(fallbackAvatar(user, size))}&s=${size}`;
 }
 
-export const dictToList = dict => {
+export interface DictEntry<K extends keyof any, V> {
+    key: K;
+    value: V;
+}
+export const dictToList = <K extends keyof any, V>(dict: Record<K, V>): Array<DictEntry<K, V>> => {
     const list = [];
     for (let key in dict) {
         if (dict.hasOwnProperty(key)) {
@@ -110,51 +131,78 @@ export const dictToList = dict => {
     return list;
 }
 
-export const listToDict = list => {
+export const listToDict = <K extends keyof any, V>(list: Array<DictEntry<K, V>>): Record<K, V> => {
     if (Object.keys(list).length === 0) {
-        return {}
+        return {} as any;
     }
-    const dict = {};
+    const dict: Record<K, V> = {} as any;
     for (let el of list) {
         dict[el.key] = el.value;
     }
     return dict;
 }
 
-export const curry = function (func) {
+// NOTE(tecc): Currying in TypeScript is dense
+//             Thank you to https://medium.com/codex/currying-in-typescript-ca5226c85b85
+type PartialTuple<Tuple extends any[], Extracted extends any[] = []> =
+    Tuple extends [infer Next, ...infer Remaining] ?
+        PartialTuple<Remaining, [...Extracted, Next]>
+        : [...Extracted, ...Tuple]
+    ;
+type Remaining<Provided extends any[], Expected extends any[]> =
+    Expected extends [infer E1, ...infer ERest] ?
+        Provided extends [infer P1, ...infer PRest] ?
+            P1 extends E1 ? Remaining<ERest, PRest> : never // make sure it's the correct type
+            : Expected
+        : []
+    ;
+type CurriedFunction<Provided extends any[], Function extends (...args: any[]) => any> =
+    <NewArgs extends PartialTuple<Remaining<Provided, Parameters<Function>>>>(...args: NewArgs) =>
+        CurriedFunctionOrReturnValue<[...Provided, ...NewArgs], Function>;
+type CurriedFunctionOrReturnValue<Provided extends any[], Function extends (...args: any[]) => any> =
+    Remaining<Provided, Parameters<Function>> extends [any, ...any[]] ?
+        CurriedFunction<Provided, Function>
+        : ReturnType<Function>;
+
+export function curry<Function extends (...args: any[]) => any>(func: Function): CurriedFunction<[], Function> {
     return function curried(...args) {
         if (args.length >= func.length) {
             return func.apply(this, args);
         } else {
             return function(...args2) {
-                return curried.apply(this, args.concat(args2));
+                return curried.apply(this, [...args, ...args2]);
             }
         }
     };
 }
 
-export const capitalise = function (word) {
+export const capitalise = function (word: string): string {
     return word.substring(0, 1).toUpperCase() + word.substring(1);
 }
 
-export const camelCase = function (words) {
+export const camelCase = function (words: string[]): string {
     const text = words.map(capitalise).join('');
     return text.substring(0, 1).toLowerCase() + text.substring(1);
 }
 
-export const now = function () {
-    return parseInt(Date.now() / 1000);
+/**
+ * Gets the current timestamp in seconds.
+ */
+export const now = function (): number {
+    return parseInt(String(Date.now() / 1000));
 }
 
-export const isEmoji = char => {
+export const isEmoji = (char: string): boolean => {
     return _.toArray(char).length === 1 && !!char.trim().match(/(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/)
 }
 
-export const isTroll = (body) => {
+export const isTroll = (body: string): boolean => {
     return ['cipeusz', 'feminazi', 'bruksela', 'zboczeń'].some(t => body.indexOf(t) > -1);
 }
 
-export const zip = (list, reverse) => {
+export function zip<K extends keyof any, V>(list: Array<[K, V]>, reverse: false): Record<K, V>;
+export function zip<K extends keyof any, V>(list: Array<[V, K]>, reverse: true): Record<K, V>;
+export function zip(list, reverse) {
     return buildDict(function* () {
         for (let [k, v] of list) {
             yield reverse ? [v, k] : [k, v];
@@ -163,7 +211,7 @@ export const zip = (list, reverse) => {
 }
 
 // https://stackoverflow.com/a/6274381/3297012
-export const shuffle = array => {
+export const shuffle = <T>(array: Array<T>): Array<T> => {
     const a = [...array];
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -172,7 +220,7 @@ export const shuffle = array => {
     return a;
 }
 
-export const isGranted = (user, locale, area = '') => {
+export const isGranted = (user: RawUser, locale, area = '') => {
     if (area === '*') {
         return user.roles.split('|').includes('*');
     }
@@ -232,7 +280,9 @@ const escapeChars = {
 export const escapeHtml = (text) => text.replace(/[&<>"]/g, tag => escapeChars[tag] || tag);
 
 export class ImmutableArray extends Array {
+    // NOTE(tecc): What is this function? It doesn't make sense
     sorted(a, b) {
+        // @ts-ignore
         return new ImmutableArray(...[...this].sort(a, b));
     }
 

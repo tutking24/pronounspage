@@ -2,6 +2,9 @@ import jwt from 'jsonwebtoken';
 import fs from 'fs';
 
 class Jwt {
+    private readonly privateKey: Buffer;
+    private readonly publicKey: Buffer;
+
     constructor(privateKey, publicKey) {
         this.privateKey = fs.readFileSync(privateKey);
         this.publicKey = fs.readFileSync(publicKey);
@@ -19,7 +22,7 @@ class Jwt {
     validate(token) {
         try {
             return jwt.verify(token, this.publicKey, {
-                algorithm: 'RS256',
+                algorithms: ['RS256'],
                 audience: process.env.ALL_LOCALES_URLS.split(','),
                 issuer: process.env.ALL_LOCALES_URLS.split(','),
             });

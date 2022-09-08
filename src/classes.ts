@@ -1,9 +1,13 @@
 import {buildDict, buildList, capitalise} from "./helpers";
-import MORPHEMES from '../data/pronouns/morphemes';
+// @ts-ignore
+import MORPHEMES from "../data/pronouns/morphemes";
 
-const config = process.env.CONFIG || global.config;
+const config: any = process.env.CONFIG || (global as any).config;
 
 export class ExamplePart {
+    variable: string;
+    str: string;
+
     constructor(variable, str) {
         this.variable = variable;
         this.str = str;
@@ -11,6 +15,10 @@ export class ExamplePart {
 }
 
 export class Example {
+    singularParts: ExamplePart[];
+    pluralParts: ExamplePart[];
+    isHonorific: boolean;
+
     constructor(singularParts, pluralParts, isHonorific = false) {
         this.singularParts = singularParts;
         this.pluralParts = pluralParts;
@@ -22,15 +30,15 @@ export class Example {
         let lastPosition = 0;
 
         for (let m of str.matchAll(/{('?[a-z0-9_]+)}/g)) {
-            const textBefore = str.substr(lastPosition, m.index - lastPosition);
+            const textBefore = str.substring(lastPosition, m.index - lastPosition);
             if (textBefore.length) {
                 parts.push(new ExamplePart(false, textBefore));
             }
-            parts.push(new ExamplePart(true, m[0].substr(1, m[0].length - 2)));
+            parts.push(new ExamplePart(true, m[0].substring(1, m[0].length - 2)));
             lastPosition = m.index + m[0].length;
         }
 
-        const textAfter = str.substr(lastPosition);
+        const textAfter = str.substring(lastPosition);
         if (textAfter.length) {
             parts.push(new ExamplePart(false, textAfter));
         }
@@ -60,16 +68,16 @@ export class Example {
 
             return pronunciation
                 ? (pronunciation.startsWith('=')
-                    ? pronunciation.substring(1)
-                    : `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
+                        ? pronunciation.substring(1)
+                        : `<phoneme alphabet="ipa" ph="${pronunciation}">${morpheme}</phoneme>`
                 )
                 : ( config.pronunciation.ipa && morpheme
-                    ? morpheme.split('').map(
-                        c => [' ', ',', '.', ':', ';', '–', '-'].includes(c)
-                            ? c
-                            : `<phoneme alphabet="ipa" ph="${c}">${c}</phoneme>`
+                        ? morpheme.split('').map(
+                            c => [' ', ',', '.', ':', ';', '–', '-'].includes(c)
+                                ? c
+                                : `<phoneme alphabet="ipa" ph="${c}">${c}</phoneme>`
                         ).join('')
-                    : morpheme
+                        : morpheme
                 );
         }
 
@@ -106,13 +114,32 @@ function clone(mainObject) {
 }
 
 export class Source {
+    id: string;
+    pronouns: string[];
+    type: string;
+    author: string;
+    title: string;
+    extra: string;
+    year: number;
+    fragments: string[];
+    comment: string;
+    link: string;
+    spoiler: boolean;
+    submitter: string;
+    approved: boolean;
+    base_id: string;
+    key: string;
+    versions: Source[];
+    locale: string;
+    images: string;
+
     constructor ({
-             id, pronouns, type, author, title, extra, year, fragments = '',
-             comment = null, link = null, spoiler = false,
-             submitter = null, approved, base_id = null,
-             key = null, versions = [], locale = config.locale,
-             images = null,
-    }) {
+                     id, pronouns, type, author, title, extra, year, fragments = '',
+                     comment = null, link = null, spoiler = false,
+                     submitter = null, approved, base_id = null,
+                     key = null, versions = [], locale = config.locale,
+                     images = null,
+                 }) {
         this.id = id;
         this.pronouns = pronouns ? pronouns.split(';') : [];
         this.type = type;
@@ -169,11 +196,20 @@ export class Source {
 
 
 export class SourceLibrary {
+    sources: Source[];
+    map: Record<string, Source[]>;
+    countApproved: number;
+    countPending: number;
+    pronouns: string[];
+    multiple: string[];
+    cache: Record<string, Source[]>;
+
+
     constructor(rawSources) {
         this.sources = rawSources.map(s => new Source(s));
         this.map = {};
-        const multiple = new Set();
-        const pronouns = new Set();
+        const multiple = new Set<string>();
+        const pronouns = new Set<string>();
         this.countApproved = 0;
         this.countPending = 0;
 
@@ -280,6 +316,20 @@ const escape = s => {
 }
 
 export class Pronoun {
+    canonicalName: string;
+    description: string;
+    normative: boolean;
+    morphemes: {};
+    pronunciations: {};
+    plural: any;
+    pluralHonorific: any;
+    aliases: any[];
+    history: string;
+    pronounceable: boolean;
+    thirdForm: string;
+    smallForm: string;
+    sourcesInfo: Record<keyof any, string>;
+
     constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, aliases = [], history = '', pronounceable = true, thirdForm = null, smallForm = null, sourcesInfo = null) {
         this.canonicalName = canonicalName;
         this.description = description;
@@ -312,10 +362,11 @@ export class Pronoun {
         if (MORPHEMES.length === 1) {
             return optionsN;
         }
-        const optionsG = (this.morphemes[MORPHEMES[1]] || '').split('&');
+        const optionsG: string[] = (this.morphemes[MORPHEMES[1]] || '').split('&');
         const optionsGAlt = MORPHEMES.length > 2 ? (this.morphemes[MORPHEMES[2]] || '').split('&') : [];
 
-        for (let i in optionsN) {
+        for (let iStr in optionsN) {
+            let i = iStr as unknown as number; // typescript being annoying again here
             let optionN = optionsN[i];
             let optionG = optionsG[i < optionsG.length - 1 ? i : optionsG.length - 1];
             if (optionN === optionG && optionsGAlt.length && !config.pronouns.threeForms) {
@@ -510,6 +561,11 @@ export class Pronoun {
 }
 
 export class PronounGroup {
+    name: string;
+    pronouns: string[];
+    description: string;
+    key: string | null;
+
     constructor(name, pronouns, description = null, key = null) {
         this.name = name;
         this.pronouns = pronouns;
@@ -519,13 +575,17 @@ export class PronounGroup {
 }
 
 export class PronounLibrary {
+    groups: PronounGroup[];
+    pronouns: Record<string, Pronoun>;
+    canonicalNames: string[];
+
     constructor(groups, pronouns) {
         this.groups = groups;
         this.pronouns = pronouns;
         this.canonicalNames = Object.keys(this.pronouns);
     }
 
-    *split(filter = null, includeOthers = true) {
+    *split(filter = null, includeOthers = true): Generator<[PronounGroup, Pronoun[]]> {
         let pronounsLeft = Object.keys(this.pronouns);
         const that = this;
 
@@ -535,7 +595,7 @@ export class PronounLibrary {
                     pronounsLeft = pronounsLeft.filter(i => i !== t);
                     const pronoun = that.pronouns[t] || t;
                     if (!filter || filter(pronoun)) {
-                        yield pronoun;
+                        yield pronoun as Pronoun;
                     }
                 }
             })];
@@ -601,6 +661,20 @@ export class PronounLibrary {
 }
 
 export class Noun {
+    id: string;
+    masc: string[];
+    fem: string[];
+    neutr: string[];
+    mascPl: string[];
+    femPl: string[];
+    neutrPl: string[];
+    sources: string[];
+    sourcesData: Source[];
+    approved: boolean;
+    base: string;
+    author: string;
+    declension: any;
+
     constructor({id, masc, fem, neutr, mascPl, femPl, neutrPl, sources = null, sourcesData = [], approved = true, base_id = null, author = null, declension = null}) {
         this.id = id;
         this.masc = masc.split('|');
@@ -634,6 +708,13 @@ export class Noun {
 }
 
 export class NounTemplate {
+    masc: string[];
+    fem: string[];
+    neutr: string[];
+    mascPl: string[];
+    femPl: string[];
+    neutrPl: string[];
+
     constructor(masc, fem, neutr, mascPl, femPl, neutrPl) {
         this.masc = masc;
         this.fem = fem;
@@ -665,6 +746,9 @@ export class NounTemplate {
 
 
 export class NounDeclension {
+    singular: any;
+    plural: any;
+
     constructor(endings) {
         this.singular = {}
         this.plural = {}
@@ -674,7 +758,7 @@ export class NounDeclension {
             }
             const value = endings[k] ? endings[k].split('/') : null;
             if (k.endsWith('_pl')) {
-                this.plural[k.substr(0, k.length - 3)] = value;
+                this.plural[k.substring(0, k.length - 3)] = value;
             } else {
                 this.singular[k] = value;
             }
@@ -722,6 +806,16 @@ export class NounDeclension {
 
 
 export class InclusiveEntry {
+    id: string;
+    insteadOf: string[];
+    say: string[];
+    because: string;
+    author: string;
+    approved: boolean;
+    base: string;
+    categories: string[];
+    links: any;
+    clarification: string | null;
     constructor({id, insteadOf, say, because, author, approved = true, base_id = null, categories = '', links = '[]', clarification = null}) {
         this.id = id;
         this.insteadOf = insteadOf.split('|');
@@ -756,6 +850,20 @@ export class InclusiveEntry {
 }
 
 export class TermsEntry {
+    id: string;
+    term: string[];
+    original: string[];
+    key: string | null;
+    definition: string;
+    author: string;
+    categories: string[];
+    flags: any;
+    images: string[];
+    approved: boolean;
+    base: string;
+    locale: string;
+    versions: TermsEntry[];
+
     constructor({id, term, original, key = null, definition, author, category = null, flags = '[]', images = '', approved = true, base_id = null, locale, versions = []}) {
         this.id = id;
         this.term = term.split('|');
@@ -797,6 +905,21 @@ export class TermsEntry {
 }
 
 export class Name {
+    id: string;
+    name: string;
+    origin: string;
+    meaning: string;
+    usage: string;
+    legally: string;
+    pros: string[];
+    cons: string[];
+    notablePeople: string[];
+    links: string[];
+    namedays: string[];
+    namedaysComment: string;
+    approved: boolean;
+    base: string;
+    author: string;
     constructor({id, name, origin, meaning, usage, legally, pros, cons, notablePeople, links, namedays, namedaysComment, approved, base_id = null, author = null}) {
         this.id = id;
         this.name = name;
@@ -830,8 +953,11 @@ export class Name {
     }
 }
 
-
 export class Person {
+    name: string;
+    description: string;
+    pronouns: Record<string, {display: string, link: string}[]>;
+    sources: string[];
     constructor(name, description, pronouns, sources = []) {
         this.name = name;
         this.description = description;

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-export const validateCaptcha = async (token) => {
+export const validateCaptcha = async (token: string) => {
     const res = await fetch('https://hcaptcha.com/siteverify', {
         method: 'POST',
         headers: {
