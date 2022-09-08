@@ -16,7 +16,7 @@ class Translator {
         );
     }
 
-    get(key, warn = true, base = false, useFallback = true) {
+    get(key, warn = false, base = false, useFallback = true) {
         let value = base ? this.baseTranslations : this.translations;
         for (let part of key.split('.')) {
             value = value[part];
