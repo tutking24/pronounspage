@@ -3,7 +3,7 @@
         <div class="main-asides d-flex flex-column flex-xxl-row justify-content-center align-items-center align-items-xxl-start">
             <aside class="aside-left">
                 <slot name="aside-left">
-                    <AdPlaceholder phkey="aside-left-middle"/>
+                    <AdPlaceholder phkey="aside-left-middle" class="d-none d-xxl-block"/>
                 </slot>
             </aside>
             <main>
