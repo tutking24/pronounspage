@@ -1,5 +1,5 @@
 <template>
-    <div v-if="config.header" class="mb-4">
+    <div v-if="config.header" class="mb-lg-4">
         <header>
         <div class="d-none d-lg-flex justify-content-between align-items-center flex-row nav-custom btn-group mb-0">
             <nuxt-link v-for="link in links" :key="link.link" :to="link.link" :class="`nav-item btn btn-sm ${link.header ? 'nav-header' : ''} ${isActiveRoute(link) ? 'active' : ''} ${link.header ? 'flex-grow-0' : ''}`">
