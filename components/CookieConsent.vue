@@ -62,7 +62,7 @@ export default {
         blur() {
             if (!this.enabled) { return false; }
 
-            if ([this.config.user.privacyRoute, this.config.user.termsRoute].includes(this.$route.path.substr(1))) {
+            if ([this.config.user.privacyRoute, this.config.user.termsRoute, 'why-ads'].includes(this.$route.path.substr(1))) {
                 return false;
             }
 
