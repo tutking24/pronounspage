@@ -939,7 +939,7 @@ privacy:
         optional:
             header: 'Optional cookies'
             description: >
-                We show ads to fund the project.
+                We show ads to fund the project {/why-ads=(more details here)}.
                 You can agree for related third-parties to store information about you
                 for the purposes of gathering statistics and personalising ads.
             details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'

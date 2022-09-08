@@ -392,6 +392,7 @@ blog:
         history: 'project-history'
         logo: 'new-logo'
         new-version: 'creating-new-language-version'
+        why-ads: 'why-ads'
 
 ads:
     enabled: true
