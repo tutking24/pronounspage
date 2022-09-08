@@ -75,6 +75,8 @@ It's not ideal, but I'm still trying to make it as fair to the users as possible
    while others focus more on getting the word out there in the first place –
    we'd like them to be able to focus more on the message and the activism without advertising noise,
    therefore we only enable ads on the English page;
+ - despite Ezoic's advice for maximising revenue, I don't want ads on the very top of the screen;
+   let's first provide main content and only after that think about interrupting it with ads, not the other way round; 
  - it should go without saying, but for completeness I'll mention that
    we wouldn't dare to keep asking you for donations or using arc.io widget anymore.
 
