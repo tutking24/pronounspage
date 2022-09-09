@@ -11,7 +11,6 @@ const copyAvatar = require('./avatarCopy');
         SELECT * FROM authenticators
         WHERE type IN ('mastodon', 'indieauth', 'twitter', 'discord', 'google', 'facebook')
             AND (validUntil IS NULL OR validUntil > ${now})
-            AND userId='01EMPVS2T10S9X0440N47WF8N2' -- FIXME
     `)
     let i = 0;
     for (let auth of auths) {
