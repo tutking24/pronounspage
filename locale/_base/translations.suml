@@ -571,6 +571,8 @@ user:
         enable: 'Enable MFA'
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
+    qr:
+        download: 'Download QR code'
 
 profile:
     description: 'Description'

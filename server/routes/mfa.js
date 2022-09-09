@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import {handleErrorAsync} from "../../src/helpers";
 import speakeasy from 'speakeasy';
-import QRCode from 'qrcode';
 import {saveAuthenticator, findAuthenticatorsByUser, invalidateAuthenticator, issueAuthentication, normalise} from './user';
 import cookieSettings from "../../src/cookieSettings";
 
@@ -40,11 +39,6 @@ router.get('/mfa/get-url', handleErrorAsync(async (req, res) => {
         length: 16,
         name: global.translations.title,
     });
-
-     secret.qr = await QRCode.toDataURL(secret.otpauth_url, {
-         margin: 2,
-         width: 200,
-     });
 
     return res.json(secret);
 }));

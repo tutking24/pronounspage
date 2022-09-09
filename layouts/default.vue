@@ -48,7 +48,9 @@
                         });
                 });
             };
-            this.setIsDark(this.detectDark());
+            const darkMode = this.detectDark();
+            this.setIsDark(darkMode);
+            this.$store.commit('setDarkMode', darkMode);
 
             if (!process.client) { return; }
 

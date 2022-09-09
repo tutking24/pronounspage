@@ -2,10 +2,11 @@
     <Profile v-if="profile" :user="user" :profile="profile" class="pb-3 mt-5" expandLinks>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
-                <Logo/>
+                <Logo style="font-size: 1.3em;"/>
                 <T>domain</T><span v-if="profile">/@{{user.username}}</span>
             </h1>
         </nuxt-link>
+        <QrCode :url="`https://${$t('domain')}/@${user.username}`" style="display: inline-block; width: 80px; height: 80px; margin-inline-start: 1rem;"/>
     </Profile>
     <NotFound v-else/>
 </template>

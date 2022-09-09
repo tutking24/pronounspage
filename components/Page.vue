@@ -28,6 +28,8 @@ main, aside {
     width: 100%;
     max-width: $container-width;
     padding: $spacer;
+    margin-inline-start: $spacer;
+    margin-inline-end: $spacer;
 }
 
 @include media-breakpoint-up('xxl', $grid-breakpoints) {

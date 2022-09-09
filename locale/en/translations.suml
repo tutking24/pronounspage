@@ -664,6 +664,8 @@ user:
                 You can keep your account by creating a card, otherwise it will get removed in a week.
                 If you don't want to keep your account, you don't need to do anything.
             cta: 'Create a card'
+    qr:
+        download: 'Download QR code'
 
 profile:
     description: 'Description'

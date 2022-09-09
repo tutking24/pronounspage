@@ -16,10 +16,15 @@
 
         <AdPlaceholder phkey="main-0"/>
 
+        <template v-slot:aside-left>
+            <ProfileShare :user="user" class="d-none d-xxl-block"/>
+            <AdPlaceholder phkey="aside-left-middle" class="d-none d-xxl-block"/>
+        </template>
+
         <template v-slot:aside-right>
             <div class="row">
                 <div class="my-2 col-12 col-lg-4 col-xxl-12">
-                    <AdPlaceholder phkey="aside-right-top" class="mb-3"/>
+                    <AdPlaceholder phkey="aside-right-top"/>
 
                     <div v-if="$user() && $user().username === user.username" class="list-group list-group-flare">
                         <div class="list-group-item pt-3">
@@ -80,7 +85,7 @@
                 </div>
 
                 <div class="my-2 col-12 col-lg-4 col-xxl-12">
-                    <AdPlaceholder phkey="aside-right-middle" class="mb-3"/>
+                    <AdPlaceholder phkey="aside-right-middle"/>
                     <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare">
                         <div class="list-group-item pt-3">
                             <h5>
@@ -114,18 +119,8 @@
                 </div>
 
                 <div class="my-2 col-12 col-lg-4 col-xxl-12">
-                    <div class="list-group list-group-flare">
-                        <div class="list-group-item pt-3">
-                            <h5>
-                                <Icon v="share"/>
-                                <T>share</T>
-                            </h5>
-                        </div>
-                        <div class="list-group-item small p-2 text-center">
-                            <Share nolabel shareApiSeparate/>
-                        </div>
-                    </div>
-                    <AdPlaceholder phkey="aside-right-bottom" class="mt-3"/>
+                    <ProfileShare :user="user" class="d-xxl-none"/>
+                    <AdPlaceholder phkey="aside-right-bottom"/>
                 </div>
             </div>
         </template>

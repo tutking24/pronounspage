@@ -10,7 +10,9 @@
     export default {
         mixins: [dark],
         mounted() {
-            this.setIsDark(this.detectDark());
+            const darkMode = this.detectDark();
+            this.setIsDark(darkMode);
+            this.$store.commit('setDarkMode', darkMode);
         }
     }
 </script>
