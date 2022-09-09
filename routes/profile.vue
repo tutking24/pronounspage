@@ -163,6 +163,10 @@
 
             <Ban :user="user"/>
         </div>
+
+        <template v-slot:aside-right>
+            <ProfileShare v-if="Object.keys(user.profiles).length" :user="user" showQrStart class="aside-home"/>
+        </template>
     </Page>
     <Page v-else>
         <NotFound/>
@@ -310,6 +314,10 @@
             top: 0;
             left: calc(100% + #{$aside-margin});
             width: min(300px, calc((100vw - #{$container-width}) / 2 - #{$aside-margin}));
+        }
+
+        .aside-home {
+            margin-top: 164px;
         }
     }
 

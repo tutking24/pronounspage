@@ -27,10 +27,11 @@
 export default {
     props: {
         user: { required: true },
+        showQrStart: { type: Boolean },
     },
     data() {
         return {
-            showQr: false,
+            showQr: this.showQrStart,
         }
     },
 }
