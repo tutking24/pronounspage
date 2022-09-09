@@ -36,7 +36,7 @@
             <div class="card-body d-flex flex-column flex-md-row">
                 <div class="mx-2 text-center">
                     <p class="mb-0">
-                        <Avatar :user="$user()"/>
+                        <Avatar :user="$user()" validate/>
                     </p>
                     <div class="mb-2">
                         <div v-if="$user().avatarSource === 'gravatar'" class="mt-3">

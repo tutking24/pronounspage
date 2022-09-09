@@ -1,6 +1,12 @@
 import {fallbackAvatar, gravatar, now} from "../src/helpers";
 import SQL from "sql-template-strings";
 
+
+const fromPayload = (payloadJson) => {
+    const payload = JSON.parse(payloadJson);
+    return payload.avatarCopy || payload.avatar;
+}
+
 export default async (db, user) => {
     if (user.avatarSource && user.avatarSource.startsWith('https://')) {
         return user.avatarSource;
@@ -8,7 +14,7 @@ export default async (db, user) => {
         return gravatar(user);
     } else if (user.avatarSource) {
         if (user.payload) {
-            return JSON.parse(user.payload).avatar;
+            return fromPayload(user.payload);
         }
         const auth = await db.get(SQL`
             SELECT payload FROM authenticators
@@ -17,7 +23,7 @@ export default async (db, user) => {
             AND (validUntil IS NULL OR validUntil > ${now()})
         `)
         if (auth) {
-            return JSON.parse(auth.payload).avatar;
+            return fromPayload(auth.payload);
         }
     }
 
