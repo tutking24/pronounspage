@@ -1310,6 +1310,7 @@ user:
         disable: 'Wyłącz MFA'
         disableConfirm: 'Czy na pewno chcesz wyłączyć MFA?'
     qr:
+        header: 'Kod QR'
         download: 'Pobierz kod QR'
 
 profile:
