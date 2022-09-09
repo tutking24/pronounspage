@@ -572,6 +572,7 @@ user:
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
     qr:
+        header: 'QR code'
         download: 'Download QR code'
 
 profile:

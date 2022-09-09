@@ -665,6 +665,7 @@ user:
                 If you don't want to keep your account, you don't need to do anything.
             cta: 'Create a card'
     qr:
+        header: 'QR code'
         download: 'Download QR code'
 
 profile:
