@@ -28,7 +28,7 @@
                     <T>user.mfa.init</T>
                 </div>
                 <p>
-                    <img :src="secret.qr" alt="QR Code" class="mw-100"/>
+                    <QrCode :url="secret.otpauth_url" style="max-width: 200px; margin: 0 auto;"/>
                     <br/>
                     <small>{{secret.base32}}</small>
                 </p>

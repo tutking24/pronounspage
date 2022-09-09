@@ -1309,6 +1309,8 @@ user:
         enable: 'Włącz MFA'
         disable: 'Wyłącz MFA'
         disableConfirm: 'Czy na pewno chcesz wyłączyć MFA?'
+    qr:
+        download: 'Pobierz kod QR'
 
 profile:
     description: 'Opis'

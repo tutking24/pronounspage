@@ -48,4 +48,5 @@ export default [
     'footer.stats.keys.responseTime',
     'privacy.header',
     'user.avatar.failed',
+    'user.qr.download',
 ];
