@@ -33,7 +33,7 @@
         <span v-else class="text-center">
             <span class="me-2">
                 <a v-if="providerOptions.avatars && connection.avatar" href="#" @click.prevent="$emit('setAvatar', provider)">
-                    <Avatar :src="connection.avatar" :user="$user()" dsize="2rem"/>
+                    <Avatar :src="connection.avatarCopy || connection.avatar" :user="$user()" dsize="2rem" validate/>
                 </a>
                 {{connection.name}}
             </span>

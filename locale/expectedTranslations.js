@@ -47,4 +47,5 @@ export default [
     'footer.stats.keys.uptime',
     'footer.stats.keys.responseTime',
     'privacy.header',
+    'user.avatar.failed',
 ];

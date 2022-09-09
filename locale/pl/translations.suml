@@ -1283,6 +1283,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Zmień'
+        failed: 'Odśwież połączenie z social media, by naprawić brakujący avatar.'
     deleteAccount: 'Usuń konto'
     deleteAccountConfirm: 'Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!'
     socialConnection:

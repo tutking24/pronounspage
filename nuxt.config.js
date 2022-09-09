@@ -207,7 +207,7 @@ export default {
         FLAGS: buildFlags(),
         FLAGS_ASTERISK: ['Heteroromantic', 'Heterosexual', 'Monoamorous', 'Monogamous'],
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
-        CLOUDFRONT: `https://${process.env.AWS_CLOUDFRONT_ID}.cloudfront.net`,
+        CLOUDFRONT: process.env.CLOUDFRONT,
         STATS_FILE: process.env.STATS_FILE,
         HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
         ALL_LOCALES_URLS: process.env.ALL_LOCALES_URLS,

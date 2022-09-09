@@ -13,6 +13,7 @@ import assert from "assert";
 import {addMfaInfo} from './mfa';
 import buildLocaleList from "../../src/buildLocaleList";
 import {lookupBanArchive} from '../ban';
+import copyAvatar from '../avatarCopy';
 
 const config = loadSuml('config');
 const translations = loadSuml('translations');
@@ -507,6 +508,11 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     if (auth) {
         await invalidateAuthenticator(req.db, auth.id);
     }
+    if (!payload.avatarCopy && payload.avatar) {
+        const tmp = await copyAvatar(req.params.provider, payload.avatar);
+        payload.avatarCopy = tmp;
+    }
+
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
 
     const buildRedirectUrl = () => {

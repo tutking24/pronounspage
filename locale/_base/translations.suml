@@ -545,6 +545,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Change'
+        failed: 'Please reconnect your social media to fix the missing avatar.'
     deleteAccount: 'Delete account'
     deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
     socialConnection:
