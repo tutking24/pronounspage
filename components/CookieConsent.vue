@@ -84,6 +84,12 @@ export default {
                 ezstandalone.setIsPWA();
                 ezstandalone.setDisablePersonalizedStatistics(!this.consent);
                 ezstandalone.setDisablePersonalizedAds(!this.consent);
+                if (typeof ezConsentCategories === 'object' && typeof __ezconsent === 'object') {
+                    window.ezConsentCategories.preferences = this.consent;
+                    window.ezConsentCategories.statistics = this.consent;
+                    window.ezConsentCategories.marketing = this.consent;
+                    __ezconsent.setEzoicConsentSettings(window.ezConsentCategories);
+                }
                 ezstandalone.define(Object.values(adPlaceholders));
                 ezstandalone.enable();
                 ezstandalone.display();
