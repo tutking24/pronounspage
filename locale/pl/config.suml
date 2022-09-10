@@ -726,6 +726,11 @@ links:
                 istniejących stereotypów i uprzedzeń. Za Amerykańskim Narodowym Stowarzyszeniem Komunikacji (NCA, 1999)
                 powtarzamy, że „etyczny sposób komunikacji zwiększa ludzką wartość i godność poprzez wspieranie
                 prawdomówności, uczciwości, odpowiedzialności, integralności osobistej oraz szacunku dla siebie i innych”.
+        -
+            icon: 'newspaper'
+            url: 'http://mbc.malopolska.pl/dlibra/docmetadata?id=26191&from=publication'
+            headline: 'O polskim rodzaju «wymijającym»'
+            extra: ' – Z. Kempf, w: Język Polski. 1988, nr 1, Towarzystwo Miłośników Języka Polskiego (od str. 14)'
     mediaGuests:
         -
             icon: 'newspaper'
