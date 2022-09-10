@@ -620,6 +620,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Schimbă'
+        failed: 'Te rog reconectează-ți contul de social media pentru a-ți repara avatarul.'
     deleteAccount: 'Șterge-ți contul'
     deleteAccountConfirm: 'Ești sigur că dorești să îți ștergi contul definitiv? Această acțiune este ireversibilă!'
     socialConnection:
@@ -655,6 +656,9 @@ user:
                 Poți păstra contul prin crearea unui card, altfel va fi șters într-o săptămână.
                 Dacă nu dorești să păstrezi contul, nu trebuie să faci nimic.
             cta: 'Crează un card'
+    qr:
+        header: 'Cod QR'
+        download: 'Descarcă codul QR'
 
 profile:
     description: 'Descriere'

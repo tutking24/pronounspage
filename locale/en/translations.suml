@@ -776,6 +776,7 @@ footer:
             visitDuration: 'Avg visit duration'
             uptime: 'Uptime'
             responseTime: 'Avg response time'
+        month: 'month'
 
 notFound:
     message: 'Page was not found'
