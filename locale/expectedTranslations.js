@@ -50,4 +50,5 @@ export default [
     'user.avatar.failed',
     'user.qr.header',
     'user.qr.download',
+    'footer.stats.month',
 ];

@@ -22,12 +22,12 @@
             <li v-if="activeStats.visitors" class="mb-2">
                 <Icon v="fingerprint"/>
                 <T>footer.stats.keys.visitors</T><T>quotation.colon</T>
-                <strong>{{ formatNumber(activeStats.visitors) }}</strong> / month
+                <strong>{{ formatNumber(activeStats.visitors) }}</strong> / <T>footer.stats.month</T>
             </li>
             <li v-if="activeStats.pageViews" class="mb-2">
                 <Icon v="mouse"/>
                 <T>footer.stats.keys.pageviews</T><T>quotation.colon</T>
-                <strong>{{ formatNumber(activeStats.pageViews) }}</strong> / month
+                <strong>{{ formatNumber(activeStats.pageViews) }}</strong> / <T>footer.stats.month</T>
             </li>
             <li v-if="activeStats.online" class="mb-2">
                 <Icon v="user-clock"/>

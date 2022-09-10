@@ -413,6 +413,10 @@ contact:
         entries:
             header: '記入を追加'
         technical:
+            header: 'プルリクエストを提出'
+            description: >
+                テクニカルなタスクは{https://gitlab.com/Avris/Zaimki/-/boards=この看板}で管理します。「To
+                Do」の欄から割り当てられていないタスクを選んで、仕事をするのを始まります。
             footer: 'テクニカルなタスク'
 
 translationMode:
@@ -469,6 +473,7 @@ user:
     avatar:
         header: 'プロフィール写真'
         change: '変更'
+        failed: 'プロフィール画像のエラーを修正するにはソーシャルメディアを再接続してください。'
     deleteAccount: 'アカウントを削除'
     deleteAccountConfirm: 'アカウトを削除してもよろしいですか？これは元に戻すことができません！'
     socialConnection:
@@ -477,7 +482,6 @@ user:
         refresh: '更新'
         disconnect: '切断'
         disconnectConfirm: 'この接続を削除してもよろしいですか？まだメールアドレスでログインできます。（%email%）'
-
     mfa:
         header: '多要素認証'
         init: >
@@ -495,6 +499,9 @@ user:
         enable: '多要素認証を有効にする'
         disable: '多要素認証を無効にする'
         disableConfirm: '多要素認証を無効にしてもよろしいですか？'
+    qr:
+        header: 'QRコード'
+        download: 'QRコードをダウンロード'
 
 profile:
     description: '自己紹介'

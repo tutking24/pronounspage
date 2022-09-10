@@ -1483,6 +1483,7 @@ footer:
             visitDuration: 'Średnia długość odwiedzin'
             uptime: 'Uptime'
             responseTime: 'Średni czas odpowiedzi serwera'
+    month: 'month'
 
 notFound:
     message: 'Strony nie znaleziono'
