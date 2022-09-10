@@ -768,6 +768,7 @@ footer:
             visitDuration: 'Media duratei vizitării'
             uptime: 'Timpul de funcționare'
             responseTime: 'Media timpului de răsp.'
+    month: 'lună'
 
 notFound:
     message: 'Pagina nu a fost găsită'
