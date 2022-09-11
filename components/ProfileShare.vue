@@ -9,11 +9,11 @@
         <div class="list-group-item small p-2 text-center">
             <Share nolabel shareApiSeparate/>
         </div>
-        <div class="list-group-item small p-2 text-center">
-            <button v-if="!showQr" class="btn btn-sm btn-outline-primary" @click="showQr = true">
-                <Icon v="scanner"/>
-                <T>user.qr.header</T>
-            </button>
+        <a v-if="!showQr" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="showQr = true">
+            <Icon v="scanner"/>
+            <T>user.qr.header</T>
+        </a>
+        <div v-else class="list-group-item small p-2 text-center">
             <QrCode v-if="showQr"
                     :url="`https://${$t('domain')}/@${user.username}`"
                     :text1="$t('domain')" :text2="`@${user.username}`"

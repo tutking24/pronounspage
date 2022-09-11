@@ -224,3 +224,16 @@ form[disabled] {
 .emoji {
     height: 1em;
 }
+
+.list-group-item-hoverable {
+    &:hover {
+        color: $primary;
+        border-inline-start: 3px solid $primary;
+        padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
+    }
+}
+.list-group-item-active {
+    color: $primary;
+    border-inline-start: 3px solid $primary;
+    padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
+}
