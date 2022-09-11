@@ -819,6 +819,15 @@ ban:
     header: '당신은 금지되었습니다. 프로필은 누구에게도 표시되지 않습니다.'
     banned: '금지'
     termsIntro: '{/terms=서비스 약관}에 따르면:'
+    # TODO
+    appeal: >
+        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
+        or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+    appealEmail: >
+        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
+        or be aware of some issues. If you think your account didn't breach our Terms of Service,
+        please respond to this email and we'll have another look in a bigger group.
 
 report:
     action: '남용 신고'

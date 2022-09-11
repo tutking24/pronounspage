@@ -796,6 +796,15 @@ ban:
     header: 'Du är bannlyst. Din profil kommer inte att visas för någon.'
     banned: 'Bannlyst'
     termsIntro: 'Enligt vår {/anvandarvillkor=Användarvillkor}:'
+    # TODO
+    appeal: >
+        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
+        or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+    appealEmail: >
+        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
+        or be aware of some issues. If you think your account didn't breach our Terms of Service,
+        please respond to this email and we'll have another look in a bigger group.
 
 report:
     action: 'Rapportera ovett'
