@@ -6,7 +6,8 @@
                     <Icon v="ban"/>
                     {{$t('ban.banned')}}
                 </p>
-                <p class="mb-0">{{user.bannedReason}}</p>
+                <p>{{user.bannedReason}}</p>
+                <p class="mb-0 small"><T>ban.appeal</T></p>
             </div>
         </section>
 
