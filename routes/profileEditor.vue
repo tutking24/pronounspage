@@ -2,6 +2,8 @@
     <Page>
     <MustLogin v-if="!$user()"/>
     <div v-else>
+        <AdPlaceholder phkey="small-homepage"/>
+
         <div class="mb-3 d-flex justify-content-between flex-column flex-md-row">
             <h2 class="text-nowrap">
                 <Avatar :user="$user()"/>
@@ -14,8 +16,6 @@
                 </nuxt-link>
             </div>
         </div>
-
-        <AdPlaceholder phkey="small-homepage"/>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
             <div v-if="$isGranted()" class="border border-primary rounded p-4">
