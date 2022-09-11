@@ -93,7 +93,7 @@ export const makeId = (length, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
 }
 
 export const fallbackAvatar = (user, size = 240) => {
-    return `https://avi.avris.it/${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
+    return `https://avi.avris.it/shape-${size}/${Base64.encode(user.username).replace(/\+/g, '-').replace(/\//g, '_')}.png`;
 }
 
 export const gravatar = (user, size = 240) => {
