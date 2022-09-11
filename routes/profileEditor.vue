@@ -15,6 +15,8 @@
             </div>
         </div>
 
+        <AdPlaceholder phkey="small-homepage"/>
+
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
             <div v-if="$isGranted()" class="border border-primary rounded p-4">
                 <h3 class="h4 mb-3">
