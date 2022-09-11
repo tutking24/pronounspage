@@ -8,7 +8,13 @@
             <Icon v="share"/>
             <span class="d-none d-md-inline"><T>share</T></span>
         </button>
-        <br v-if="hasShareApi && shareApiSeparate"/>
+        <button :class="['btn', justCopied ? 'btn-success' : 'btn-outline-primary', 'm-1']" ref="clipboard"
+                :data-clipboard-text="preset.url"
+                @click="copied" :aria-label="$t('crud.copy')" :title="$t('crud.copy')">
+            <Icon :v="justCopied ? 'clipboard-check' : 'clipboard'"/>
+            <span v-if="!hasShareApi" class="d-none d-md-inline"><T>crud.copy</T></span>
+        </button>
+        <br/>
         <SquareButton v-for="network in networks" :key="network" :link="link(network)" :colour="colour(network)" :aria-label="network">
             <Icon :v="icon(network)" set="b"/>
         </SquareButton>
@@ -16,6 +22,8 @@
 </template>
 
 <script>
+    import ClipboardJS from 'clipboard';
+
     // adapted from https://shareon.js.org (MIT)
     // can't use from yarn, because window.onload conflicts with SSR
 
@@ -56,14 +64,14 @@
         reddit: 'reddit-alien',
         telegram: 'telegram-plane',
         facebook: 'facebook-f',
+        vkontakte: 'vk',
     }
 
     export default {
         props: {
             title: { default: 'Zaimki.pl' },
-            networks: { default: _ => ['mastodon', 'twitter', 'reddit', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
+            networks: { default: _ => ['mastodon', 'twitter', 'facebook', 'telegram', 'whatsapp', 'messenger'] },
             nolabel: { type: Boolean },
-            shareApiSeparate: { type: Boolean },
         },
         data() {
             return {
@@ -76,12 +84,15 @@
                         text: '',
                         via: '',
                     },
-                }
+                },
+                justCopied: false,
             };
         },
         mounted() {
             if (process.client) {
                 this.hasShareApi = navigator.share !== undefined;
+
+                new ClipboardJS(this.$refs.clipboard);
             }
         },
         methods: {
@@ -100,6 +111,10 @@
                     title: this.preset.title,
                     text: this.preset.extra.text,
                 });
+            },
+            copied() {
+                this.justCopied = true;
+                setTimeout(() => this.justCopied = false, 2000);
             },
         },
     }
