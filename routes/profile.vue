@@ -40,10 +40,8 @@
                         </nuxt-link>
                         <template v-if="cardsEnabled">
                             <a v-if="!cardMenuVisible && !(profile.card === '' || profile.cardDark === '')" href="#" class="list-group-item list-group-item-action list-group-item-hoverable" @click.prevent="cardMenuVisible = true">
-                                <p class="small mb-0">
-                                    <Icon v="id-card"/>
-                                    <T>profile.card.link</T>
-                                </p>
+                                <Icon v="id-card"/>
+                                <T>profile.card.link</T>
                             </a>
                             <div v-else class="list-group-item">
                                 <p class="small">
@@ -293,19 +291,6 @@
 
 <style lang="scss" scoped>
     @import "assets/variables";
-
-    .list-group-item-hoverable {
-        &:hover {
-            color: $primary;
-            border-inline-start: 3px solid $primary;
-            padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
-        }
-    }
-    .list-group-item-active {
-        color: $primary;
-        border-inline-start: 3px solid $primary;
-        padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
-    }
 
     $aside-margin: 2 * $spacer;
     @include media-breakpoint-up('xxl') {
