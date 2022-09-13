@@ -1562,6 +1562,7 @@ terms:
                 misogyny: 'mizoginia'
                 harassment: 'nekanie'
                 impersonation: 'podszywanie się pod inne osoby'
+                selfHarm: 'podżeganie do samookaleczania i/lub samobójstwa',
                 childPornography: 'pornografia dziecięca'
                 unlawfulConduct: 'działanie w sposób bezprawny'
                 misinformation: 'dezinformacja'
@@ -1570,6 +1571,10 @@ terms:
                 trolling: 'trolowanie'
                 advertisement: 'reklamy'
                 copyright: 'naruszenia praw autorskich i znaków towarowych'
+            # TODO
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 Ponosisz odpowiedzialność za Treść, którą umieszczasz w Usługach.
                 Jeśli złamiesz ten Regulamin, usuniemy Twoje Treści bez uprzedniego powiadomienia,
@@ -1680,17 +1685,17 @@ ban:
     action: 'Zablokuj tę osobę'
     confirm: 'Czy na pewno chcesz zbanować @%username%?'
     header: 'Twoje konto jest zablokowane. Twoje profile nie są widoczne publicznie.'
-    banned: 'Zbanowanx'
+    banned: 'Konto nieaktywne'
     termsIntro: 'Zgodnie z naszym {/regulamin=Regulaminem}'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Zgłoś profil'

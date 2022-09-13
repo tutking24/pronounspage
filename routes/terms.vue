@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-07-23</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-09-13</em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>
@@ -30,6 +30,7 @@
         <p>
             <T>terms.content.content.violations</T>
             <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><template v-if="i !== forbidden.length - 1">, </template></template>.
+            <T>terms.content.content.violationsStrict</T>
         </p>
         <p><T>terms.content.content.responsibility</T></p>
 

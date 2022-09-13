@@ -800,6 +800,7 @@ terms:
                 misogyny: 'мізогінія'
                 harassment: 'домагання'
                 impersonation: 'видавання себе за іншу особу'
+                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'дитяча порнографія'
                 unlawfulConduct: 'протиправна поведінка'
                 misinformation: 'дезінформація'
@@ -808,6 +809,10 @@ terms:
                 trolling: 'тролінг'
                 advertisement: 'реклама'
                 copyright: 'порушення авторських прав або використання трейд марок'
+            # TODO
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 Ви відповідальні за будь-який контент, який публікуєте на сервісі.
                 Якщо ви порушите ці Умови надання послуг, ми видалимо ваш контент без попереднього повідомлення, а також можемо відкликати ваше право на користування сервісом.
@@ -910,18 +915,18 @@ ban:
     visible: '(користувач_ка буде це бачити)'
     action: 'Заблокувати ц_ю користувач_ку'
     confirm: 'Ви впевнені, що хочете заблокувати користувач_ку @%username%?'
-    header: 'Ви заблоковані. Ваш профіль не відображатиметься на сайті.'
-    banned: 'Користувач_ка заблокован_а'
+    header: 'Ваш профіль не відображатиметься на сайті.'
+    banned: 'Ваш профіль не відображатиметься на сайті.'
     termsIntro: 'Відповідно до наших {/terms=Умов надання послуг}'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Повідомити про насильство'

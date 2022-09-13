@@ -684,18 +684,18 @@ ban:
     visible: '（そのユーザーはこれを閲覧可能）'
     action: 'この人をアカウント停止'
     confirm: '@%username%をアカウント停止してもよろしいですか？'
-    header: 'あなたはアカウント停止されました。 誰もあなたのプロフィールを見ることはできません。'
-    banned: 'アカウント停止'
+    header: '誰もあなたのプロフィールを見ることはできません。'
+    banned: '誰もあなたのプロフィールを見ることはできません。'
     termsIntro: '私たちの{/利用規約=利用規約}によって'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: '不正使用の報告'

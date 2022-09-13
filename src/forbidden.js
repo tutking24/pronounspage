@@ -12,6 +12,7 @@ module.exports = [
     'misogyny',
     'harassment',
     'impersonation',
+    'selfHarm',
     'childPornography',
     'unlawfulConduct',
     'misinformation',
