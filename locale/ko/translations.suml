@@ -701,6 +701,7 @@ terms:
                 misogyny: 'misogyny'
                 harassment: 'harassment'
                 impersonation: 'impersonation'
+                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
                 unlawfulConduct: 'unlawful conduct'
                 misinformation: 'misinformation'
@@ -709,6 +710,10 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'advertisement'
                 copyright: 'copyright or trademark violations'
+            # TODO
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 You are responsible for any Content posted on the Service.
                 If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
@@ -816,18 +821,18 @@ ban:
     terms: '약관 규칙 위반(필수)'
     action: '차단하기'
     confirm: '@%username%을(를) 차단하시겠습니까?'
-    header: '당신은 금지되었습니다. 프로필은 누구에게도 표시되지 않습니다.'
-    banned: '금지'
+    header: '프로필은 누구에게도 표시되지 않습니다.'
+    banned: '프로필은 누구에게도 표시되지 않습니다.'
     termsIntro: '{/terms=서비스 약관}에 따르면:'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: '남용 신고'

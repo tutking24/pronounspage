@@ -726,6 +726,7 @@ terms:
                 misogyny: 'мизогиния'
                 harassment: 'харассмент'
                 impersonation: 'самозванство'
+                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'детская порнография'
                 unlawfulConduct: 'противоправное поведение'
                 misinformation: 'неверная информация'
@@ -734,6 +735,10 @@ terms:
                 trolling: 'троллинг'
                 advertisement: 'реклама'
                 copyright: 'нарушение авторских прав или использование трейд марок'
+            # TODO
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 Вы ответственны за любой контент, который публикуете на сервисе.
                 Если вы нарушите эти Условия представления услуг, мы удалим ваш контент без предварительного уведомления, а также можем отозвать ваше право на пользование сервисом.
@@ -836,18 +841,18 @@ ban:
     visible: '(пользователь_ница будет это видеть)'
     action: 'Заблокировать эт_у пользовател_ьницу'
     confirm: 'Вы уверены, что хотите заблокировать пользователь_ницу @%username%?'
-    header: 'Вы заблокированы. Ваш профиль не будет отображаться на сайте.'
-    banned: 'Пользователь_ница заблокирован_а'
+    header: 'Ваш профиль не будет отображаться на сайте.'
+    banned: 'Ваш профиль не будет отображаться на сайте.'
     termsIntro: 'В соответствии с нашими {/terms=Условиями предоставления услуг}'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Сообщить о насилии'

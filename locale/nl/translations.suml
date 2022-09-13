@@ -645,18 +645,18 @@ ban:
     terms: 'Voorwaarden die zijn geschonden (verplicht)'
     action: 'Verban deze persoon.'
     confirm: 'Weet je zeker dat je @%username%? wilt verbannnen?'
-    header: 'Je bent verbannen. Jouw profiel zal onzichtbaar zijn .'
-    banned: 'Verbannen.'
+    header: 'Jouw profiel zal onzichtbaar zijn.'
+    banned: 'Jouw profiel zal onzichtbaar zijn.'
     termsIntro: 'Volgens onze {/voorwaarden=gebruiksvoorwaarden}'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Rapporteer misbruik'

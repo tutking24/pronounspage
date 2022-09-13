@@ -849,6 +849,7 @@ terms:
                 misogyny: 'misogyny'
                 harassment: 'harassment'
                 impersonation: 'impersonation'
+                selfHarm: 'encouraging self-harm and/or suicide'
                 childPornography: 'child pornography'
                 unlawfulConduct: 'unlawful conduct'
                 misinformation: 'misinformation'
@@ -857,6 +858,9 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'advertisement'
                 copyright: 'copyright or trademark violations'
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 You are responsible for any Content posted on the Service.
                 If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
@@ -1008,17 +1012,17 @@ ban:
     terms: 'Terms rules broken (required)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
-    header: 'You''re banned. Your profile will not be shown to anyone.'
-    banned: 'Banned'
+    header: 'Your profile is no longer public.'
+    banned: 'Profile not published'
     termsIntro: 'According to our {/terms=Terms of Service}'
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Report abuse'

@@ -683,6 +683,7 @@ terms:
                 misogyny: 'kvinnohat'
                 harassment: 'trakasseri'
                 impersonation: 'personifiering'
+                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'barnpornografi'
                 unlawfulConduct: 'olagligt beteende'
                 misinformation: 'felaktig information'
@@ -691,6 +692,10 @@ terms:
                 trolling: 'trollning'
                 advertisement: 'annonsering'
                 copyright: 'copyright eller varumärkesintrång'
+            # TODO
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
                 Du är ansvarig för alla inlägg du laddar upp på denna tjänst.
                 Om du bryter dessa användarvillkor så kommer vi med förvarning att ta bort ditt innehåll och vi kanske upphäver din rätt till att använda tjänsten.
@@ -793,18 +798,18 @@ ban:
     terms: 'Termer av regler brutna (obligatorisk)'
     action: 'Bannlys denna person'
     confirm: 'Är du säker på att du vill bannlysa @%username%?'
-    header: 'Du är bannlyst. Din profil kommer inte att visas för någon.'
-    banned: 'Bannlyst'
+    header: 'Din profil kommer inte att visas för någon.'
+    banned: 'Din profil kommer inte att visas för någon.'
     termsIntro: 'Enligt vår {/anvandarvillkor=Användarvillkor}:'
     # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we'll have another look in a bigger group.
+        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we'll have another look in a bigger group.
+        please respond to this email and we might get another look in a bigger group.
 
 report:
     action: 'Rapportera ovett'
