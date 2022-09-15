@@ -31,7 +31,7 @@ we live in different timezones. But _how dare we_ not reply immediately?
 
 One other thing that we need to take into account when moderating is that while it’s our project,
 and we can decide who is allowed to use it, we’re also being transparent about the rules that are in place – 
-our Terms of Service. In my opinion they’re worded pretty well – it’s a relatively short document,
+our [Terms of Service](/terms). In my opinion they’re worded pretty well – it’s a relatively short document,
 written in plain English, without legalese, easy to understand. It forbids posting harmful content
 and lists a non-exhaustive list of examples while leaving us some space for interpretation.
 In the cases where users aren’t _openly_ hateful towards some group but _imply_ some bias against them
