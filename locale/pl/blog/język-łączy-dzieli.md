@@ -94,4 +94,4 @@ Może i „nie musimy mieć obowiązku” mówić do osoby niebinarnej używają
 i sprawiamy, że (bardzo słusznie) nie będą chciały z nami rozmawiać.
 
 Innymi słowy: nie używając języka inkluzywnego, dzielimy, zamiast łączyć.
-Jęśli język ma łączyć tylko tych, którym system sprzyja, to ja nie chcę takiego języka. 
+Jeśli język ma łączyć tylko tych, którym system sprzyja, to ja nie chcę takiego języka. 
