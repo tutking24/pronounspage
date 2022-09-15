@@ -91,7 +91,7 @@ Po angielsku do każdego zwracamy się zwyczajnie „you” (z _opcjonalnym_ „
 Podobnie możemy się wspólnie dogadać w kwestii zwracania się do osób niebinarnych.
 Może i „nie musimy mieć obowiązku” mówić do osoby niebinarnej używającej [rodzaju neutralnego](/rodzaj-neutralny)
 „byłoś”, „zrobiłoś” – ale nie respektując ich tożsamości, dajemy o samych sobie świadectwo
-i sprawiamy, że (bardzo słusznie) będą chciały z nami rozmawiać.
+i sprawiamy, że (bardzo słusznie) nie będą chciały z nami rozmawiać.
 
 Innymi słowy: nie używając języka inkluzywnego, dzielimy, zamiast łączyć.
 Jęśli język ma łączyć tylko tych, którym system sprzyja, to ja nie chcę takiego języka. 
