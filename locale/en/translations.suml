@@ -460,7 +460,7 @@ faq:
             question: 'Can I have multiple cards under one account?'
             answer:
                 - >
-                    That must me the most requested feature so far! 😅
+                    That must be the most requested feature so far! 😅
                     We're definitely onboard with the idea, it would help for example systems
                     or people who want to have a separate cards for more public use and for close friends.
                     Unfortunately, this feature requires <em>tons</em> of changes in the code as well as testing.
