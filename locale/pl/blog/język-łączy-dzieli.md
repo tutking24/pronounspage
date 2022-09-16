@@ -7,7 +7,7 @@
 Podesłano mi dzisiaj [link do fragmentu wykładu](https://www.facebook.com/watch/?v=1253316215424540)
 prof. Jerzego Bralczyka z komentarzem Macieja Kaweckiego:
 
-<p class="text-center"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkawecki.maciej%2Fvideos%2F1253316215424540%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+<p class="text-center"><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fkawecki.maciej%2Fvideos%2F1253316215424540%2F&show_text=true&width=560&t=0" style="max-width: 100%; width: 560px; height: 429px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
 
 I choć niezbyt mnie dziwi konserwatywne podejście starszej osoby,
 [która już wcześniej w podobnym tonie się wypowiadała](https://ksiazki.wp.pl/w-tvp-wysmiewali-osoby-niebinarne-profesor-bralczyk-rozumie-dlaczego-6616979703601760a),
@@ -48,7 +48,7 @@ Zanim nie zaczęli tego swojego powstania, to w cesarstwie był pokój!
 Ach tak, ten słynny łącznik znany z dzielenia: „i”! 🤦
 
 Dla analogii: po co mówić tak długo, „Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej”?
-Nie wystarczy samo „\[…] Wielkiej Brytanii”? Se Irlandczycy wymyślili, że im się część nazwy należy,
+Nie wystarczy samo „\[…] Wielkiej Brytanii”? Se Irlandczycy i Irlandki wymyśliły, że im się część nazwy należy,
 bo co, bo są osobnym narodem i są na osobnej wyspie? Może lepiej nazwijmy ten kraj po prostu „Anglia”,
 co się tam inne narody wychylają Anglii spod buta? Po co tak dzielić tym „i”?
 
