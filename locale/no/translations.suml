@@ -393,6 +393,11 @@ contact:
     language: >
         Vi er et internasjonalt team – de som har lagd en spesifikk språk versjon er ikke nødvendigvis den samme som får
         meldingen din. Så, hvis mulig, ville vi satt pris på om du kontaktet oss på <strong>Engelsk eller Polsk</strong>.
+    contribute:
+        version:
+            header: 'Lag en ny språk versjon'
+        translations:
+            header: 'Legg til eller rett oversettelser'
 
 support:
     header: 'Hjelp'
@@ -445,6 +450,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Endre'
+        failed: 'Vennligst koble til denne applikasjonen på nytt for å fikse avataren.'
     deleteAccount: 'Slett bruker'
     deleteAccountConfirm: 'Er du sikker på at du vil slette brukeren din? Dette kan du ikke angre på!'
     socialConnection:
@@ -470,6 +476,9 @@ user:
         enable: 'Aktiver MFA'
         disable: 'Deaktiver MFA'
         disableConfirm: 'Er du sikker på at du vil deaktivere MFA?'
+    qr:
+        header: 'QR kode'
+        download: 'Last ned QR kode'
 
 profile:
     description: 'Beskrivelse'
@@ -567,6 +576,13 @@ footer:
     financial: 'Financial transparency' # TODO
     technical: 'Teknisk'
     sibling: 'Søster prosjekter'
+    stats:
+        keys:
+            cards: 'Kort'
+            users: 'Registrerte brukere'
+        current: 'bare denne versjonen '
+        overall: 'alle språk versjoner'
+        header: 'Statistikk'
 
 notFound:
     message: 'Side var ikke funnet'
@@ -667,6 +683,16 @@ report:
     sent: 'Rapport sendt. Takk for hjelpen!'
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+
+translationMode:
+    changes: 'Endringer'
+    header: 'Oversettelses Modus'
+    welcome: >
+        Er det en oversettelse som mangler eller som er feil? Du kan klikke på den blå knappen nederst i høyre hjørne for
+        å skru Oversettelses Modus av og på. I denne modusen, vil å klikke på tekst åpne en boks hvor du kan foreslå
+        endringer. Husk å klikke på knappen hvor det står "Lagre endringer" når du er ferdig.
+    commit: 'Lagre endringer'
+    pause: 'Pause Oversettelses Modus'
 
 flags:
     Abroromantic: 'Abroromantisk'
