@@ -3,7 +3,7 @@ domain: 'zh.pronouns.page'
 description: '個人代詞和中性語言的用法例子'
 
 home:
-    link: 'Homepage'
+    link: '主頁'
     header: '代詞'
     headerLong: '代詞的清單'
     why: '代詞是什麼意思？'
@@ -41,7 +41,7 @@ home:
     whatisit: '代詞是什麼意思？'
 
     mission:
-        header: '我們的任務：'
+        header: '我們的使命：'
         summary: '我們爭取語言的自由、尊重和包容性。'
         freedom: >
             <strong>自由</strong>
@@ -102,7 +102,7 @@ sources:
         pronounsInfo: '輸入最簡單的代詞，鏈接中的方式，例如 “他”, “她”, “祂&牠”'
         type: '資料來源類型'
         author: '作者'
-        title: '書名'
+        title: '標題'
         extra: '附加資料（翻譯者，刊物名稱）'
         year: '發布年份 （中文版）'
         fragments: '碎片'
@@ -115,9 +115,9 @@ sources:
         key: '鍵'
         keyInfo: '用於在語言版本之間連接源並與字典連接的標誌符'
         images: '意象'
-        spoiler: 'Spoiler' # TODO
+        spoiler: '劇透內容'
     otherVersions: '在其他語言'
-    referenced: '榜樣'
+    referenced: '使用範例'
 
 nouns:
     header: '字典'
@@ -132,15 +132,15 @@ nouns:
     pending: '等待審核'
     edit: '提出改變'
     edited: '提議改變'
-    editing: '你正在編輯現有條目'
+    editing: '您正在編輯現有條目'
     empty: '沒有找到符合您條件的單詞'
 
     submit:
-        action: '遞交'
-        actionLong: '遞交一個字'
+        action: '提交'
+        actionLong: '提交一個字'
         thanks: '感謝您的貢獻！'
-        another: '遞交另一個'
-        moderation: '遞交的內容必須先批准才能發布。'
+        another: '提交另一個'
+        moderation: '提交的內容必須先批准才能發布。'
 
     template: '使用模板'
     root: '根'
