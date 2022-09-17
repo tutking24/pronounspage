@@ -337,8 +337,9 @@ people: ~
 english: ~
 
 contact:
-    header: '通訊錄'
+    header: '聯絡我們'
     authors: '網站的作者'
+    language: '我們是一個國際性的團隊，您的信息不一定會被某一種語言版本的作者閲讀。如可能的話，請以<strong>英語</strong>或<strong>波蘭語</strong>聯絡我們。'
     team:
         name: '中立語推行委員會'
         nameShort: '委員會'
@@ -357,8 +358,21 @@ contact:
         # TODO join: …
     contribute:
         header: '貢獻'
-
+        intro: 'Pronouns.page 是一個由志願者建立的開源專案，您亦可參與在其中！以下是一些我們需要幫助的地方。我們會邀請積極參與者來到我們的團隊。'
+        entries:
+            header: '添加條目'
+            description: '這個網站有很多地方（名詞、術語、包容性詞典）可提交及編輯不同的條目。如您覺得有錯漏的地方，請盡管提交您的條目。'
+        version:
+            header: '新增語言版本'
+            description: '新增語言版本的指南{https://en.pronouns.page/new-version=在這裏}。開始之前，請先{/contact=聯絡我們}以便協調工作。'
+        translations:
+            header: '增加或修正翻譯'
+            description: '在現有語言版本中發現有未翻譯或錯誤的字串？按下在頁面註腳的“翻譯建議”，然後跟着指示做。'
         technical:
+            header: '提交合併請求'
+            description: >
+                技術相關的工作可在{https://gitlab.com/Avris/Zaimki/-/boards=此看板}上找到。
+                您只需在“To-Do”欄上挑選一項任務，把您自己指派到該任務即可開始。如有問題請盡管問。
             footer: '技術任務'
 
 support:
@@ -599,7 +613,7 @@ quotation:
 localise:
     shorter: '添加更多'
     short: '添加語言文本'
-    long: '想要創建新的語言版本嗎？ 查看'
+    long: '想要創建新的語言版本嗎？請查看'
     longLink: '這本手冊！'
 
 images:
