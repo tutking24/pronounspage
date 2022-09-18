@@ -167,7 +167,19 @@ links:
             lang: ['en']
             url: 'https://www.genderinlanguage.com/spanish'
             headline: 'Gender in Language Project'
-    academic: []
+    academic:
+        -
+            icon: 'comment-alt-edit'
+            url: '/docs-local/Trabajo de fin de grado – Aleksandra Szmidt – Pronombres no binarios.pdf'
+            headline: 'Szmidt, A. (2022) Los pronombres no binarios en español: análisis de las opiniones de hispanohablantes sobre los pronombres neutros en cuanto al género.'
+            extra: 'Kraków.'
+            quote: >
+                Es conveniente indicar también que elle no es la única propuesta.
+                En la página <em>pronouns.page</em>, creada por un colectivo multinacional de personas LGBT
+                con el fin de promover el lenguaje no binario, en cuanto a la lengua española,
+                salvo el pronombre <em>elle</em> se proponen también otros neopronombres, como:
+                <em>ellu, elli, elloa, il, ól, xelle</em> \[CLN, 2021].
+                Con todo, el conocimiento de estas formas no es tan difundido.
     mediaGuests:
         -
             icon: 'play-circle'
