@@ -3,7 +3,7 @@ domain: 'zh.pronouns.page'
 description: '個人代詞和中性語言的用法例子'
 
 home:
-    link: 'Homepage'
+    link: '主頁'
     header: '代詞'
     headerLong: '代詞的清單'
     why: '代詞是什麼意思？'
@@ -23,7 +23,7 @@ home:
             為什麼這很重要？ 因為我們重視簡單的人類體面。
             如果你覺得“昶左”比較好聽，你也不會故意把“李強”叫成“昶左”。
             如果“昶左”是他的出生證明中的名字，
-            但他絕對討厭“昶左”並且更喜歡使用“李強”你也不會把他叫成“昶左”。
+            但他絕對討厭“昶左”並且更喜歡使用“李強”，你也不會把他叫成“昶左”。
             代詞是同一個故事 -
             如果你不想對某人無禮，請你使用正確的代詞。
             唯一的區別是我們通常知道名字，但不知道代詞。
@@ -41,7 +41,7 @@ home:
     whatisit: '代詞是什麼意思？'
 
     mission:
-        header: '我們的任務：'
+        header: '我們的使命：'
         summary: '我們爭取語言的自由、尊重和包容性。'
         freedom: >
             <strong>自由</strong>
@@ -65,7 +65,7 @@ pronouns:
         button: '生成鏈接到可互換形式'
         header: '可互換形式'
         raw: '可互換'
-    generated: '那些代詞是使用生成器創建的。  pronouns.page團隊對此不承擔任何責任。'
+    generated: '那些代詞是使用生成器創建的。pronouns.page團隊對此不承擔任何責任。'
     any:
         header: '任何代詞'
         short: '任何'
@@ -102,21 +102,22 @@ sources:
         pronounsInfo: '輸入最簡單的代詞，鏈接中的方式，例如 “他”, “她”, “祂&牠”'
         type: '資料來源類型'
         author: '作者'
-        title: '書名'
-        extra: '附加信（翻譯者，刊物名稱）'
+        title: '標題'
+        extra: '附加資料（翻譯者，刊物名稱）'
         year: '發布年份 （中文版）'
         fragments: '碎片'
+        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'  # TODO
         comment: '評論'
         link: '鏈接到內容'
         thanks: '感謝您的貢獻！'
         another: '提交另一個'
         moderation: '提交的內容必須先獲得批准才能發布。'
-        key: '键'
-        keyInfo: '用于在语言版本之间链接源并与字典链接的标识符'
+        key: '鍵'
+        keyInfo: '用於在語言版本之間連接源並與字典連接的標誌符'
         images: '意象'
-        spoiler: 'Spoiler' # TODO
+        spoiler: '劇透內容'
     otherVersions: '在其他語言'
-    referenced: '榜樣'
+    referenced: '使用範例'
 
 nouns:
     header: '字典'
@@ -131,15 +132,15 @@ nouns:
     pending: '等待審核'
     edit: '提出改變'
     edited: '提議改變'
-    editing: '你是在編輯現有條目'
+    editing: '您正在編輯現有條目'
     empty: '沒有找到符合您條件的單詞'
 
     submit:
-        action: '递交'
-        actionLong: '递交一個字'
+        action: '提交'
+        actionLong: '提交一個字'
         thanks: '感謝您的貢獻！'
-        another: '递交另一個'
-        moderation: '遞交的內容必須先批准才能發布。'
+        another: '提交另一個'
+        moderation: '提交的內容必須先批准才能發布。'
 
     template: '使用模板'
     root: '根'
@@ -156,10 +157,10 @@ nouns:
     plural: '複數'
     pluralShort: '複數'
 
-    image: 'Image' # TODO
+    image: '圖像'
 
 community: # TODO
-    header: 'Community'
+    header: '社羣'
     headerLong: 'Queer community'
 
 terminology: # TODO
@@ -336,11 +337,12 @@ people: ~
 english: ~
 
 contact:
-    header: '通訊錄'
+    header: '聯絡我們'
     authors: '網站的作者'
+    language: '我們是一個國際性的團隊，您的信息不一定會被某一種語言版本的作者閲讀。如可能的話，請以<strong>英語</strong>或<strong>波蘭語</strong>聯絡我們。'
     team:
         name: '中立語推行委員會'
-        nameShort: 'Collective'  # TODO
+        nameShort: '委員會'
         # TODO
         # We are a queer collective dedicated to assembling, researching, shaping and promoting
         # gender neutral and nonbinary language.
@@ -352,103 +354,117 @@ contact:
         logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。​​'
         members: '份子'
         member: '集體中的成員'
-        upcoming: '即將到來語言文本'
+        upcoming: '即將到來語言文本'  # TODO: change wording
         # TODO join: …
-    contribue:
+    contribute:
         header: '貢獻'
+        intro: 'Pronouns.page 是一個由志願者建立的開源專案，您亦可參與在其中！以下是一些我們需要幫助的地方。我們會邀請積極參與者來到我們的團隊。'
+        entries:
+            header: '添加條目'
+            description: '這個網站有很多地方（名詞、術語、包容性詞典）可提交及編輯不同的條目。如您覺得有錯漏的地方，請盡管提交您的條目。'
+        version:
+            header: '新增語言版本'
+            description: '新增語言版本的指南{https://en.pronouns.page/new-version=在這裏}。開始之前，請先{/contact=聯絡我們}以便協調工作。'
+        translations:
+            header: '增加或修正翻譯'
+            description: '在現有語言版本中發現有未翻譯或錯誤的字串？按下在頁面註腳的“翻譯建議”，然後跟着指示做。'
+        technical:
+            header: '提交合併請求'
+            description: >
+                技術相關的工作可在{https://gitlab.com/Avris/Zaimki/-/boards=此看板}上找到。
+                您只需在“To-Do”欄上挑選一項任務，把您自己指派到該任務即可開始。如有問題請盡管問。
+            footer: '技術任務'
 
 support:
     header: '支持'
     description: >
         如果你想為這個網站捐款，或者買啤酒給作者，你可以用下面的鏈接:
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: '銀行轉賬'
 
 user:
     header: '帳戶'
     headerLong: '你的帳戶'
     tokenExpired: '令牌過期了。請刷新網站，然後再試一次。'
     login:
-        # TODO
-        # help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: '電子郵件（如果您已經註冊了，可以用你的戶名）'
+        help: '您可使用社交媒體按鈕或輸入您的電郵地址以登入或創建新的賬戶。' # TODO: and then confirm the code you will have received in your mailbox
+        placeholder: '電子郵件（如果您已經註冊了，可以用你的用戶名）'
         action: '登錄'  # TODO 'Log in / register'
-        emailSent: '我們已經通過電子郵件向您發送了6位數字的代碼。請在這裡輸入。代碼是可以用一次，有效期為15分鐘。'
+        emailSent: '我們已經通過電子郵件向您發送了6位數字的代碼，請在這裡輸入。代碼只可使用一次，有效期為15分鐘。'
         userNotFound: '找不到用戶。'
         email:
             subject: '你的登錄代碼是：{{code}}'
             # TODO change: To confirm your email address, enter the following code on the website: %code%.
-            instruction: '要確認你的電郵地址，請使用以下代碼:'
+            instruction: '要確認你的電郵地址，請使用以下代碼：'
             extra: '如果你沒有要求這個代碼，請忽略消息。'
         why: >
             註冊可以讓你管理你的卡（{/@example=像這個}）。
-        passwordless: '該網站不存儲任何密碼。 {https://avris.it/blog/passwords-are-passé=更多信息。}'
+        passwordless: '此網站不儲存任何密碼，{https://avris.it/blog/passwords-are-passé=更多信息。}'
         instancePlaceholder: 'Instance' # TODO
         # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: '域名'
+        deprecated: '不建議使用'  # TODO: alternatively 不推薦使用 or 已過時 for closer meaning
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            這不是一個可靠的登入方式。
+            <a href="%link%" target="_blank" rel="noopener">請查看此連結以獲得詳細資料</a>.
+            我們建議您確保您有其它可用的登入方式。
     code:
-        action: '證實'
-        invalid: '不對代碼'
+        action: '確認'
+        invalid: '代碼不正確'
     account:
         changeUsername:
             header: '用戶名稱'
             action: '更改'
             invalid: '用戶名必須介於4到16個字符之間，並且只能包含數字，字母，點，連字符和下劃線。'
-            taken: '該用戶名已被使用。'
+            taken: '該用戶名稱已被使用。'
         changeEmail:
             header: '電郵地址'
             action: '更改'
-            invalid: '不對電子郵件'
-            taken: '這個電子郵件是已經用了'
+            invalid: '無效電子郵件'
+            taken: '這個電子郵件已被使用。'
         admin: '管理員'
     logout: '登出'
     avatar:
         header: '頭像'
         change: '更改'
+        failed: '請重新連接社交媒體以還原頭像。'
     deleteAccount: '刪除帳戶'
-    deleteAccountConfirm: '確定要刪除您的帳戶嗎？ 這將是不可逆的！'
+    deleteAccountConfirm: '確定要刪除您的帳戶嗎？這是不可逆轉的！'
     socialConnection:
         list: '社交媒體'
-        connect: '連結'
+        connect: '連接'
         refresh: '更新'
-        disconnect: '中斷連結'
-        disconnectConfirm: '確定要刪除此連接嗎？  （您始終可以使用電子郵件登錄 %email%)'
-    # TODO
+        disconnect: '刪除連接'
+        disconnectConfirm: '確定要刪除此連接嗎？（您仍可使用電子郵件登錄 %email%)'
     mfa:
-        header: '多重認證'
+        header: '多重驗證'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            在您的 Authenticator 應用程式（如 {https://authy.com/=Authy}）內掃描此QR碼（或輸入以下的金鑰），然後輸入在應用程式畫面上的六位數字代碼。
         recovery:
-            header: 'Recovery code'
-            save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: '啓用多重認證'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+            header: '備用代碼'
+            save: '請把以下的備用代碼儲存到一個安全的位置。如果您遺失了您的裝置，你可使用備用代碼代替多重驗證。'
+            saved: '好，我已把備用代碼儲存妥當！'
+            enter: '輸入備用代碼'
+        cancel: '取消登入'
+        enabled: '已啓用'
+        enable: '啓用多重驗證'
+        disable: '停用多重驗證'
+        disableConfirm: '您確定要停用多重驗證嗎？'
     qr:
+        header: 'QR碼'  # TODO: mainland: probably 二維碼 (also means 2d code, ambiguous)
         download: '下載QR碼'
 
 profile:
     description: '傳記'
     names: '名字'
     pronouns: '代詞'
-    pronounsInfo: '您可以輸入代詞（例如“他”或“他/你”）或鏈接（例如“http://zh.pronouns.page/佢”）'
-    # TODO add <strong></strong> around the words "pronoun" and "link"
+    pronounsInfo: >
+        您可以輸入代詞（例如“<strong>他</strong>”或“<strong>他/你</strong>”
+        或<strong>鏈接</strong>（例如“https://zh.pronouns.page/佢”）
     # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
     pronounsNotFound: '我們找不到這個代詞的鏈接'  # TODO 'Unrecognised format. Please check out the instruction above.'
     words: '詞匯'
-    birthday: '嵗'
-    birthdayInfo: '我們不發布您的生日，只發布計算出的年齡。'
+    birthday: '年齡'
+    birthdayInfo: '我們不會發布您的生日日期，只會發布計算出的年齡。'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
@@ -466,17 +482,17 @@ profile:
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '列'
 
-    list: '你的卡'
-    init: '創建'
+    list: '你的卡片'
+    init: '創建卡片'
     show: '顯示'
-    edit: '更改'
+    edit: '編輯'
     delete: '刪除'
-    deleteConfirm: '確定要刪除此卡嗎？'
+    deleteConfirm: '確定要刪除此卡片嗎？'
     editor:
-        header: '卡編輯'
-        save: '保存卡'
-        defaults: 'Restore defaults' # TODO
-        propagate: 'Propagate this change to your cards in all languages'  # TODO
+        header: '編輯卡片'
+        save: '保存卡片'
+        defaults: '還原至預設'
+        propagate: '將此變更發放至所有語言的卡片' # TODO: change wording
     opinion:
         yes: '至愛'
         jokingly: '諧謔'
@@ -491,45 +507,57 @@ profile:
     #    Then you can link to it in your bio or email footer.
     #    Just create an account {/account=here}.
     #bannerButton: '創造名片'
-    # TODO
     card:
         link: '名片圖片'
-        generate: 'Generate' # TODO
+        generate: '生成'
         generating: '生成中……'
     empty: '此用戶還沒有創造任何名片'
     loginRequired: '{/account=登入}以提交項目'
     personal:
         header: '個人'
-        description: '只有您能夠看見這個部分'
+        description: '只有您才能看見此部分'
     language:
         header: '語言'
-        description: '@%username% 的名片有其它語言的版本'
+        description: '@%username%的名片亦有其他語言的版本'
 
 share: '分享'
 
 crud:
-    approve: '贊成'
-    hide: '遮'
+    approve: '批准'
+    hide: '隱藏'
     remove: '刪除'
     removeConfirm: '您確定要刪除此項目嗎？'
     edit: '編輯'
-    add: '添'
+    add: '添加'
     filter: '篩選'
     filterLong: '篩選清單…'
     search: '搜索'
-    author: '添加人'
+    author: '提交者'
     saved: '更改保存成功'
-    copy: 'Copy link'  # TODO
-    download: 'Download'  # TODO
+    loginRequired: '提交項目前請{/account=登入}'
+    copy: '複製連結'
+    download: '下載'
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: '通訊錄, 社交媒體'
-    legal: 'Legal' # TODO
-    financial: 'Financial transparency' # TODO
-    technical: 'Technical' # TODO
-    sibling: 'Sibling projects' # TODO
+        {https://gitlab.com/Avris/Zaimki=原始碼}及內容採用{/license=OQL}條款授權。
+    links: '聯繫我們'
+    legal: '法律相關'
+    financial: '財務報告' # TODO: could also be 財政透明
+    technical: '技術相關'
+    sibling: '相關專案'
+    stats:
+        header: '統計'
+        overall: '全部語言'
+        current: '只此語言'
+        month: '月'
+        keys:
+            users: '已登記用戶'
+            cards: '名片'
+            visitors: '獨特訪問者'
+            pageviews: '瀏覽次數'
+            realTimeVisitors: '在線用戶'
+            responseTime: '平均反應時間'
 
 notFound:
     message: '找不到頁面'
@@ -544,29 +572,29 @@ confirm:
     yes: '是的，我有準兒!'
     no: '不是…'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: '儲存'
+    dismiss: '取消'
 
 terms:
     header: '服務條款'
     lastUpdate: '最近更新時間'
-    consent: '通過註冊，您正在接受 {/terms=服務條款}.'
+    consent: '通過註冊，您正在接受 {/terms=服務條款}.'  # TODO: weird wording
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: '私隱條款'
 
 admin:
     header: '管理面板'
     user:
         user: '帳戶'
-        createdAt: 'Registration date' # TODO
+        createdAt: '登記日期'
         email: '電郵地址'
         roles: '角色'
         profiles: '個人資料'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        confirmRole: '您確定將@%username%的角色變更為"%role%"?'
 
 table:
-    empty: '空……'
+    empty: '空白……'
     count: '計數'
     sort: '拖動排序'
     scrollUp: '滾動到頂部'
@@ -574,7 +602,7 @@ table:
 
 api:
     header: '公開API'
-    example: '例'
+    example: '例子'
     query: '查詢字符串參數'
 
 quotation:
@@ -585,7 +613,7 @@ quotation:
 localise:
     shorter: '添加更多'
     short: '添加語言文本'
-    long: '想要創建新的語言版本嗎？ 查看'
+    long: '想要創建新的語言版本嗎？請查看'
     longLink: '這本手冊！'
 
 images:
@@ -596,10 +624,9 @@ images:
 error:
     generic: '出了點問題，請重試...'
 
-# TODO
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: '為了防止垃圾信息及DDoS攻擊，請證明您不是一個機械人。'
+    invalid: '無效CAPTCHA，請重試。'
 
 mode:
     light: '明亮模式'
@@ -631,7 +658,23 @@ report:
     confirm: '您確定要舉報@%username%嗎？'
     sent: '您的舉報已被傳送。感謝您的幫助！'
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+    hoarding: '請不要舉報“用戶名稱囤積”的行為。我們會定時刪除沒有名片的用戶，您的報告並不會加快此過程。'
+
+translationMode:
+    header: '翻譯模式'
+    action: '翻譯建議'
+    # TODO
+    welcome: >
+        Is there a translation missing or an existing one needs a correction?
+        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
+        In this mode clicking on a bordered piece of text will open a dialogue box,
+        in which you can modify the translation and compare it to the English text.
+        Remember to click on the button “Commit changes” once you're done.
+    logIn: '提交翻譯前請登入。'
+    changes: '變更'
+    commit: '提交翻譯建議'
+    revert: '取消及還原翻譯'
+    pause: '暫停翻譯模式'
 
 flags:
     Abrosexual: '嫩性戀'
@@ -691,7 +734,7 @@ flags:
     Lesbiromantic: '女同浪漫傾向'
     Maverique: '孤膽性別'
     Monoamorous: '單元之爱'
-    Monogamous: '单偶制'
+    Monogamous: '單偶制'
     Muxe: 'Muxe'
     Nebularomantic: '星雲浪漫傾向'
     Neopronouns: '新代詞'
@@ -727,35 +770,35 @@ flags:
     Xenogender: '外性別'
 
 calendar: # TODO
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
-    date: '%date% %year%'
+    header: '日曆'
+    headerLong: '酷兒日曆'  # TODO: shit wording change later
+    date: '%year%年%date%日'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
-        4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
-        9: 'September'
-        10: 'October'
-        11: 'November'
-        12: 'December'
+        1: '1月'
+        2: '2月'
+        3: '3月'
+        4: '4月'
+        5: '5月'
+        6: '6月'
+        7: '7月'
+        8: '8月'
+        9: '9月'
+        10: '10月'
+        11: '11月'
+        12: '12月'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: '1月%day%'
+        2: '2月%day%'
+        3: '3月%day%'
+        4: '4月%day%'
+        5: '5月%day%'
+        6: '6月%day%'
+        7: '7月%day%'
+        8: '8月%day%'
+        9: '9月%day%'
+        10: '10月%day%'
+        11: '11月%day%'
+        12: '12月%day%'
     events:
         pride_month: 'Pride Month'
         trans_month: 'International Trans Awareness Month'
@@ -869,11 +912,11 @@ calendar: # TODO
     celebrating_week: 'is celebrated on'
     celebrating_month: 'is celebrated in'
     image:
-        header: 'Download an image'
+        header: '下載圖像'
     view:
         grid: 'Grid view'
         list: 'Events list'
-    link: 'Link'
+    link: '鏈接'
     full: 'Full calendar'
 
 ukraine:
