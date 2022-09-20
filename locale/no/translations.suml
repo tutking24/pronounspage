@@ -580,9 +580,12 @@ footer:
         keys:
             cards: 'Kort'
             users: 'Registrerte brukere'
-        current: 'bare denne versjonen '
+            realTimeVisitors: 'Online nå'
+            visitors: 'Unike brukere'
+        current: 'bare denne versjonen'
         overall: 'alle språk versjoner'
         header: 'Statistikk'
+        month: 'måned'
 
 notFound:
     message: 'Side var ikke funnet'
@@ -693,6 +696,8 @@ translationMode:
         endringer. Husk å klikke på knappen hvor det står "Lagre endringer" når du er ferdig.
     commit: 'Lagre endringer'
     pause: 'Pause Oversettelses Modus'
+    logIn: 'Du må være logget inn for å gi forslag til oversettelser'
+    action: 'Foreslå oversettelser'
 
 flags:
     Abroromantic: 'Abroromantisk'
