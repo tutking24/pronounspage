@@ -63,7 +63,8 @@ It's not ideal, but I'm still trying to make it as fair to the users as possible
    we want to respect everyone's privacy, whether they live in EU or not, whether a law requires us to or not;
  - those cookie consent banners often involve long paragraphs of legalese text and make accepting cookies way easier than rejecting them;
    our banner is short and simple (with links to [Privacy Policy](/privacy) for more details)
-   and gives a simple choice with both “Accept” and “Reject” buttons styled identically –
+   and gives a simple choice with both “Accept” and “Reject” buttons styled identically
+   (as opposed to hiding the rejection option under a less prominent button labeled “more options” or “show purposes”) –
    we appreciate you supporting the project by allowing them, but we totally respect your choice to keep more privacy;
  - we don't try to detect ad blockers or shame you for using them;
  - our profile of activity is quite different on the English version compared to the others;
@@ -75,7 +76,8 @@ It's not ideal, but I'm still trying to make it as fair to the users as possible
    while others focus more on getting the word out there in the first place –
    we'd like them to be able to focus more on the message and the activism without advertising noise,
    therefore we only enable ads on the English page;
- - despite Ezoic's advice for maximising revenue, I don't want ads on the very top of the screen;
+ - despite Ezoic's advice for maximising revenue, I don't want ads on the very top of the screen 
+   or ones that block the screen when navigating to a different page;
    let's first provide main content and only after that think about interrupting it with ads, not the other way round; 
  - it should go without saying, but for completeness I'll mention that
    we wouldn't dare to keep asking you for donations or using arc.io widget anymore.
