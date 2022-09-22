@@ -38,8 +38,8 @@ const replaceExtension = username => username
 ;
 
 export const saveAuthenticator = async (db, type, user, payload, validForMinutes = null) => {
-    if (await lookupBanArchive(db, type, payload)) {
-        throw 'banned';
+    if (!user && await lookupBanArchive(db, type, payload)) {
+        throw new Error('banned');
     }
     const id = ulid();
     await db.get(SQL`INSERT INTO authenticators (id, userId, type, payload, validUntil) VALUES (
@@ -316,8 +316,8 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
         return res.json({ error: 'user.account.changeEmail.invalid' })
     }
 
-    if (await lookupBanArchive(req.db, 'email', payload)) {
-        throw 'banned';
+    if (!user && await lookupBanArchive(req.db, 'email', payload)) {
+        return res.status(401).json({error: 'Unauthorised'});
     }
 
     let codeKey;
