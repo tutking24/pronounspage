@@ -397,6 +397,8 @@ contact:
                 also bedenke, dass wir vielleicht nicht viel Arbeit für dich haben, wenn du dabei helfen willst.
                 Aber wir könnten dich in anderen Bereichen (technische Arbeit, Design, Grafik usw.) noch brauchen
                 und in anderen Sprachen (einschließlich solcher, die bereits unterstützt werden, aber z. B. Übersetzungen neuer Funktionen benötigen).
+    contribute:
+        header: 'Mitmachen'
 
 support:
     header: 'Unterstütze uns'
@@ -447,6 +449,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Ändern'
+        failed: 'Bitte verbinde deine sozialen Medien erneut, um den fehlerhaften Avatar zu reparieren.'
     deleteAccount: 'Account löschen'
     deleteAccountConfirm: 'Bist sicher, dass du dein Account löschen möchtest? Dies ist nicht rückgängig zu machen!'
     socialConnection:
@@ -517,7 +520,7 @@ profile:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
         close: 'Nur wenn wir eng zusammen sind'
-        meh: 'Okay'
+        meh: 'In Ordnung'
         no: 'Nein'
 
     banner: >
@@ -559,12 +562,21 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und das Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
-    links: 'Kontakt, Social Media'
+        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und der Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
+    links: 'Kontakt & Social Media'
     legal: 'Rechtliches'
     financial: 'Finanzielle Transparenz'
     technical: 'Technisches'
     sibling: 'Geschwisterprojekte'
+    stats:
+        keys:
+            users: 'Registrierte Benutzer:innen'
+            realTimeVisitors: 'Momentan online'
+            pageviews: 'Seitenaufrufe'
+        month: 'Monat'
+        header: 'Statistiken'
+        current: 'Nur diese Version'
+        overall: 'Alle Sprachversionen'
 
 notFound:
     message: 'Seite wurde nicht gefunden'
@@ -663,6 +675,9 @@ report:
     sent: 'Deine Meldung wurde gesendet. Danke für deine Hilfe!'
     terms: 'Vergiss nicht, was unsere Nutzungsbedingungen verbieten'
     hoarding: 'Wir bitten dich, Konten aufgrund "Besetzung eines Benutzer*in-Namens" nicht zu melden. Wir löschen Konten ohne Visitenkarten automatisch nach einem Zeitraum der Inaktivität. Deine Meldung wird diesen Prozess nicht beschleunigen.'
+
+translationMode:
+    action: 'Übersetzungen vorschlagen'
 
 flags:
     Abroromantic: 'Abroromantisch'
