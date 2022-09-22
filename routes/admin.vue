@@ -223,6 +223,41 @@
 
         <section v-if="$isGranted('users')">
             <h3>
+                <Icon v="ban"/>
+                Pending bans
+                ({{banProposals ? banProposals.length : 0}})
+            </h3>
+            <Loading :value="banProposals">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Votes</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="proposal in banProposals">
+                        <td>
+                            <a :href="`https://pronouns.page/@${proposal.username}`" target="_blank" rel="noopener">@{{proposal.username}}</a>
+                            <ul class="list-unstyled">
+                                <li v-for="locale in proposal.profiles.split(',')" v-if="locales[locale]">
+                                    <LocaleLink :link="`/@${proposal.username}`" :locale="locale">
+                                        {{ locales[locale].name }}
+                                    </LocaleLink>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            {{proposal.votes}}
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </Loading>
+        </section>
+
+        <section v-if="$isGranted('users')">
+            <h3>
                 <Icon v="siren-on"/>
                 Abuse reports
                 ({{abuseReportsActiveCount}})
@@ -306,6 +341,7 @@ import {deepSet, head} from "../src/helpers";
                 missingTranslations: translator.listMissingTranslations(),
                 abuseReports: undefined,
                 translationProposals: undefined,
+                banProposals: undefined,
             }
         },
         async asyncData({ app, store }) {
@@ -325,6 +361,10 @@ import {deepSet, head} from "../src/helpers";
 
             this.$axios.$get(`/translations/proposals`)
                 .then(r => this.translationProposals = r)
+                .catch();
+
+            this.$axios.$get(`/admin/ban-proposals`)
+                .then(r => this.banProposals = r)
                 .catch();
         },
         methods: {

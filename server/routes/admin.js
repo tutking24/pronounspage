@@ -12,7 +12,7 @@ import buildLocaleList from "../../src/buildLocaleList";
 import {archiveBan, liftBan} from "../ban";
 import marked from 'marked';
 import {loadCurrentUser} from "./user";
-import {encodeTime} from "ulid";
+import {encodeTime, ulid} from "ulid";
 
 const router = Router();
 
@@ -194,12 +194,54 @@ router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
 
 const normalise = s => s.trim().toLowerCase();
 
-router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
+const fetchUserByUsername = async (db, username) => {
+    return await db.get(SQL`SELECT id, email FROM users WHERE usernameNorm = ${normalise(username)}`);
+}
+
+const fetchBanProposals = async (db, userId) => {
+    return await db.all(SQL`
+        SELECT * FROM ban_proposals WHERE userId = ${userId}
+    `);
+}
+
+router.get('/admin/ban-proposals', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const user = await req.db.get(SQL`SELECT id, email FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
+    const cutoff = encodeTime(Date.now() - 3*31*24*60*60*1000, 10) + '0'.repeat(16);
+
+    return res.json(await req.db.all(SQL`
+        SELECT u.username, group_concat(p.locale) as profiles, count(bp.id) / count(p.locale) as votes
+        FROM ban_proposals bp
+            LEFT JOIN users u ON bp.userId = u.id
+            LEFT JOIN profiles p on u.id = p.userId
+        WHERE bp.id > ${cutoff} 
+            AND u.bannedBy IS NULL
+        GROUP BY u.username
+    `));
+}));
+
+router.get('/admin/ban-proposals/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
+
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
+    return res.json(await fetchBanProposals(req.db, user.id));
+}));
+
+router.post('/admin/propose-ban/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
     if (!user) {
         return res.status(400).json({error: 'No such user'});
     }
@@ -209,19 +251,63 @@ router.post('/admin/ban/:username', handleErrorAsync(async (req, res) => {
             return res.status(400).json({error: 'Terms are required'});
         }
         await req.db.get(SQL`
+            DELETE FROM ban_proposals
+            WHERE userId = ${user.id} AND bannedBy = ${req.user.id}
+        `);
+        await req.db.get(SQL`
+            INSERT INTO ban_proposals (id, userId, bannedBy, bannedTerms, bannedReason) VALUES (
+                ${ulid()}, ${user.id},
+                ${req.user.id}, ${req.body.terms.join(',')}, ${req.body.reason}
+            )`
+        );
+    } else {
+        await req.db.get(SQL`
+            DELETE FROM ban_proposals
+            WHERE userId = ${user.id} AND bannedBy = ${req.user.id}
+        `);
+    }
+
+    return res.json(true);
+}));
+
+router.post('/admin/apply-ban/:username/:id', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
+    const proposals = await fetchBanProposals(req.db, user.id);
+
+    if (req.params.id && req.params.id !== '0') {
+        if (!req.isGranted('*') && proposals.length < 3) {
+            return res.status(401).json({error: 'Unauthorised'});
+        }
+        const proposal = await req.db.get(SQL`SELECT * FROM ban_proposals WHERE id = ${req.params.id}`);
+        if (!proposal || proposal.userId !== user.id) {
+            return res.status(400).json({error: 'Invalid ban proposal id'});
+        }
+        await req.db.get(SQL`
             UPDATE users
-            SET bannedReason = ${req.body.reason},
-                bannedTerms = ${req.body.terms.join(',')},
+            SET bannedReason = ${proposal.bannedReason},
+                bannedTerms = ${proposal.bannedTerms},
                 bannedBy = ${req.user.id},
                 banSnapshot = ${await profilesSnapshot(req.db, normalise(req.params.username))}
             WHERE id = ${user.id}
         `);
         await archiveBan(req.db, user);
-        mailer(user.email, 'ban', {reason: req.body.reason, username: normalise(req.params.username)});
+        mailer(user.email, 'ban', {reason: proposal.bannedReason, username: normalise(req.params.username)});
     } else {
+        if (!req.isGranted('*')) {
+            return res.status(401).json({error: 'Unauthorised'});
+        }
         await req.db.get(SQL`
             UPDATE users
-            SET bannedReason = null
+            SET bannedReason = null,
+               bannedBy = ${req.user.id}
             WHERE id = ${user.id}
         `);
         await liftBan(req.db, user);
