@@ -1442,11 +1442,11 @@ links:
             iconSet: 'b'
             url: 'https://www.instagram.com/inkluzywnamowa/'
             headline: '@inkluzywnamowa'
-        -
-            icon: 'facebook'
-            iconSet: 'b'
-            url: 'https://facebook.com/slownikempatyczny'
-            headline: 'Słownik Empatyczny Języka Polskiego'
+        #-
+        #    icon: 'facebook'
+        #    iconSet: 'b'
+        #    url: 'https://facebook.com/slownikempatyczny'
+        #    headline: 'Słownik Empatyczny Języka Polskiego'
         -
             icon: 'newspaper'
             url: 'https://www.facebook.com/absurdalnikmlem'
@@ -1552,17 +1552,17 @@ links:
                 - >
                     Tłumaczka Ola Lubińska konsultowała z nami {/korpus#bugsnax=użycie} {/onu=dukaizmów}.
                     W napisach końcowych gry znalazły się podziękowania dla ekipy zaimków.pl.
-        empatyczny:
-            author: ~
-            title: 'Słownik Empatyczny Języka Polskiego'
-            publisher: ~
-            link: 'https://www.facebook.com/slownikempatyczny/'
-            description:
-                - >
-                    Fanpage na Facebooku poświęcony empatii w warstwie językowej – jak mówić,
-                    by nie wykluczać i nie krzywdzić. „Bądźmy bardziej empatyczni wobec siebie, a będzie nam lepiej.”
-                - >
-                    Jesteśmy w stałej współpracy z ekipą Słownika Empatycznego.
+        #empatyczny:
+        #    author: ~
+        #    title: 'Słownik Empatyczny Języka Polskiego'
+        #    publisher: ~
+        #    link: 'https://www.facebook.com/slownikempatyczny/'
+        #    description:
+        #        - >
+        #            Fanpage na Facebooku poświęcony empatii w warstwie językowej – jak mówić,
+        #            by nie wykluczać i nie krzywdzić. „Bądźmy bardziej empatyczni wobec siebie, a będzie nam lepiej.”
+        #        - >
+        #            Jesteśmy w stałej współpracy z ekipą Słownika Empatycznego.
 
 people:
     enabled: false
