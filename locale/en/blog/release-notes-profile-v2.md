@@ -6,7 +6,7 @@ I gotta admit, I didn't plan the public API too well 😅
 I just never expected this website, let alone the API interface, to get so popular.
 So it's just a bunch of unversioned internal endpoints.
 You can _technically_ use all of them, but only for a few read-only endpoints
-I'm worrying account keeping backwards compatibility – they're listed on the [Public API](/api) page.
+I'm taking care of keeping backwards compatibility – they're listed on the [Public API](/api) page.
 
 Now comes the time when a new version is actually needed for one of them.
 We're planning to start adding a couple new features to cards/profiles –
