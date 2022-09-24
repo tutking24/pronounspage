@@ -361,21 +361,17 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            - '[no honorific]'
-            - 'mx.'
-            - 'mr.'
-            - 'ms.'
-            - 'sir'
-            - 'ma''am'
-            - 'madam'
-            - 'sai'
-            - 'mir'
-            - 'shazam'
-            - 'zam'
-            - 'comrade'
-        - ['person', 'man', 'woman', 'lady', 'dude', 'enby', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        - ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        - ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+            header: 'honorifics'
+            values: ['[no honorific]', 'mx.', 'mr.', 'ms.', 'sir', 'ma"am', 'madam', 'sai', 'mir', 'shazam', 'zam', 'comrade']
+        -
+            header: 'person and family descriptions'
+            values: ['person', 'man', 'woman', 'lady', 'dude', 'enby', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
+        -
+            header: 'compliments'
+            values: ['pretty', 'handsome', 'cute', 'hot', 'sexy']
+        -
+            header: 'relationship descriptions'
+            values: ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
         defaultPronoun: 'they'
 
@@ -420,7 +416,7 @@ api:
         terms_all: ['/api/terms']
         terms_search: ['/api/terms/search/agender']
 
-        profile_get: ['/api/profile/get/andrea']
+        profile_get: ['/api/profile/get/andrea?version=2']
 
         calendar_today: ['/api/calendar/today']
         calendar_day: ['/api/calendar/2022-11-23']

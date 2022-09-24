@@ -2,28 +2,66 @@ require('../src/dotenv')();
 
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
-const copyAvatar = require('./avatarCopy');
+//const copyAvatar = require('./avatarCopy');
+const { upgradeToV2, downgradeToV1 } = require('./profileV2');
 
 (async () => {
     const db = await dbConnection();
-    const now = parseInt(+new Date / 1000);
-    const auths = await db.all(SQL`
-        SELECT * FROM authenticators
-        WHERE type IN ('mastodon', 'indieauth', 'twitter', 'discord', 'google', 'facebook')
-            AND (validUntil IS NULL OR validUntil > ${now})
-    `)
+
+    const profiles = await db.all(SQL`SELECT * FROM profiles`);  //  WHERE userId = ${'01EMPVS2T10S9X0440N47WF8N2'} AND locale = ${'pl'}
     let i = 0;
-    for (let auth of auths) {
-        console.log(`${i++}/${auths.length} ${auth.userId} (${auth.type})`);
-        const payload = JSON.parse(auth.payload);
-        if (payload.avatarCopy || !payload.avatar) { continue; }
-        const copyUrl = await copyAvatar(auth.type, payload.avatar);
-        console.log(copyUrl);
-        if (copyUrl) {
-            payload.avatarCopy = copyUrl;
-            await db.get(SQL`UPDATE authenticators SET payload = ${JSON.stringify(payload)} WHERE id = ${auth.id}`);
+    for (let profile of profiles) {
+        if (i % 1000 === 0) {
+            console.log(`${i}/${profiles.length}`);
         }
+        i++;
+
+        const profileV1 = {
+            ...profile,
+            names: JSON.parse(profile.names),
+            pronouns: JSON.parse(profile.pronouns),
+            words: JSON.parse(profile.words),
+            customFlags: JSON.parse(profile.customFlags),
+        }
+        const profileV2 = upgradeToV2(profileV1);
+
+        await db.get(SQL`UPDATE profiles
+            SET 
+                names = ${JSON.stringify(profileV2.names)},
+                pronouns = ${JSON.stringify(profileV2.pronouns)},
+                words = ${JSON.stringify(profileV2.words)},
+                customFlags = ${JSON.stringify(profileV2.customFlags)}
+            WHERE id = ${profileV2.id}
+        `);
+
+        // console.log(profileV1);
+        // const profileV2 = upgradeToV2(profileV1);
+        // profileV2.names.push({value: 'test', opinion: '🙈'});
+        // console.log(profileV2);
+        // const profileV1Restored = downgradeToV1(profileV2);
+        // console.log(profileV1Restored);
+        // console.log('---')
     }
+
+
+    // const now = parseInt(+new Date / 1000);
+    // const auths = await db.all(SQL`
+    //     SELECT * FROM authenticators
+    //     WHERE type IN ('mastodon', 'indieauth', 'twitter', 'discord', 'google', 'facebook')
+    //         AND (validUntil IS NULL OR validUntil > ${now})
+    // `)
+    // let i = 0;
+    // for (let auth of auths) {
+    //     console.log(`${i++}/${auths.length} ${auth.userId} (${auth.type})`);
+    //     const payload = JSON.parse(auth.payload);
+    //     if (payload.avatarCopy || !payload.avatar) { continue; }
+    //     const copyUrl = await copyAvatar(auth.type, payload.avatar);
+    //     console.log(copyUrl);
+    //     if (copyUrl) {
+    //         payload.avatarCopy = copyUrl;
+    //         await db.get(SQL`UPDATE authenticators SET payload = ${JSON.stringify(payload)} WHERE id = ${auth.id}`);
+    //     }
+    // }
 })();
 
 // require('../src/dotenv')();

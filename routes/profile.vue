@@ -191,7 +191,7 @@
         },
         async asyncData({ app, route }) {
             return {
-                user: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}`),
+                user: await app.$axios.$get(`/profile/get/${encodeURIComponent(route.params.pathMatch)}?version=2`),
             };
         },
         async mounted() {

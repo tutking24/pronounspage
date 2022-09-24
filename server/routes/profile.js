@@ -8,6 +8,7 @@ import { caches }  from "../../src/cache";
 import fs from 'fs';
 import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
 import {socialProviders} from "../../src/socialProviders";
+import {downgradeToV1} from "../profileV2";
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -146,9 +147,16 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
 
     user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
 
+    let profiles = await fetchProfiles(req.db, req.params.username, isSelf);
+    if (req.query.version !== '2') {
+        for (let [locale, profile] of Object.entries(profiles)) {
+            profiles[locale] = downgradeToV1(profile);
+        }
+    }
+
     return res.json({
         ...user,
-        profiles: await fetchProfiles(req.db, req.params.username, isSelf),
+        profiles,
     });
 }));
 

@@ -1688,10 +1688,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['maskulatywy', 'feminatywy', 'neutratywy', 'dukatywy', 'osobatywy']
-        - ['per ty', 'per wy', 'pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
-        - ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
-        - ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
+        -
+            header: 'formy rzeczownikowe'
+            values: ['maskulatywy', 'feminatywy', 'neutratywy', 'dukatywy', 'osobatywy']
+        -
+            header: 'formy grzecznościowe'
+            values: ['per ty', 'per wy', 'pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
+        -
+            header: 'komplementy'
+            values: ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
+        -
+            header: 'opis związków'
+            values: ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
     flags:
         defaultPronoun: 'on_'
 
@@ -2242,4 +2250,4 @@ api:
         terms_all: ['/api/terms']
         terms_search: ['/api/terms/search/apłciow']
 
-        profile_get: ['/api/profile/get/andrea']
+        profile_get: ['/api/profile/get/andrea?version=2']

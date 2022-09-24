@@ -94,6 +94,11 @@ code {
     padding: .2em;
     border-radius: $border-radius-sm;
 }
+pre > code {
+    display: block;
+    padding: .5em;
+    user-select: all;
+}
 
 @for $columns from 1 through 12 {
     .table-fixed-#{$columns} {

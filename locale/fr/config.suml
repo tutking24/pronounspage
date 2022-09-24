@@ -122,10 +122,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[sans titre]', 'Mx.', 'M.', 'Mme.', 'MM.', 'Mmes.', 'Mlle.', 'Mlles.', 'Vve.', 'messieurs', 'monsieur', 'madame', 'mesdames', 'mademoiselle', 'mesdemoiselles', 'veuve']
-        - ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
-        - ['beauté', 'beau gosse', 'belle gosse']
-        - ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
+        -
+            header: ~
+            values: ['[sans titre]', 'Mx.', 'M.', 'Mme.', 'MM.', 'Mmes.', 'Mlle.', 'Mlles.', 'Vve.', 'messieurs', 'monsieur', 'madame', 'mesdames', 'mademoiselle', 'mesdemoiselles', 'veuve']
+        -
+            header: ~
+            values: ['personne', 'homme', 'femme', 'demoiselle', 'monsieur', 'mec', 'meuf', 'garçon', 'fille', 'poto', 'fréro', 'sœurette']
+        -
+            header: ~
+            values: ['beauté', 'beau gosse', 'belle gosse']
+        -
+            header: ~
+            values: ['ami', 'partenaire', 'mec', 'meuf', 'petit ami', 'petite amie', 'mari', 'femme', 'kissmate', 'chéri', 'chérie', 'mon amour']
     flags:
         defaultPronoun: 'iel'
 

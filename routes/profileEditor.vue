@@ -153,7 +153,7 @@
                 </ButtonList>
                 <PropagateCheckbox field="flags" :before="beforeChanges.flags" :after="flags" v-if="otherProfiles > 0" @change="propagateChanged"/>
 
-                <details class="form-group border rounded" :open="Object.keys(customFlags).length > 0">
+                <details class="form-group border rounded" :open="customFlags.length > 0">
                     <summary class="px-3 py-2">
                         <T>profile.flagsCustom</T>
                     </summary>
@@ -228,7 +228,7 @@
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
                     </h4>
-                    <OpinionListInput v-model="words[i]" group="words"/>
+                    <OpinionListInput v-model="words[i].values" group="words"/>
                 </template>
             </section>
 
@@ -246,18 +246,19 @@
 </template>
 
 <script>
-    import {head, dictToList, listToDict, buildList, buildDict} from "../src/helpers";
+    import {head, buildList, buildDict} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
     import link from '../plugins/link';
     import {minBirthdate, maxBirthdate, formatDate} from '../src/birthdate';
 
-    const defaultWords = config.profile.defaultWords.map(c => buildList(function* () {
-        for (let word of c) {
-            yield {key: word, value: 0};
+    const defaultWords = config.profile.defaultWords.map(({header, values}) => {
+        return {
+            header,
+            values: values.map(v => {return { value: v.replace(/"/g, `'`), opinion: 'meh' }}),
         }
-    }))
+    })
 
     const buildProfile = (profiles, currentLocale) => {
         for (let locale in profiles) {
@@ -267,14 +268,14 @@
             if (locale === currentLocale) {
                 const profile = profiles[locale];
                 return {
-                    names: dictToList(profile.names),
-                    pronouns: dictToList(profile.pronouns),
+                    names: profile.names,
+                    pronouns: profile.pronouns,
                     description: profile.description,
                     birthday: profile.birthday,
-                    links: Object.keys(profile.links).length ? profile.links : [],
+                    links: profile.links,
                     flags: profile.flags,
                     customFlags: profile.customFlags,
-                    words: profile.words.map(x => dictToList(x)),
+                    words: profile.words,
                     teamName: profile.teamName,
                     footerName: profile.footerName,
                     footerAreas: profile.footerAreas,
@@ -291,11 +292,11 @@
             }
             const profile = profiles[locale];
             return {
-                names: dictToList(profile.names),
+                names: profile.names,
                 pronouns: [],
                 description: '',
                 birthday: profile.birthday,
-                links: Object.keys(profile.links).length ? profile.links : [],
+                links: profile.links,
                 flags: profile.flags.filter(f => !f.startsWith('-')),
                 customFlags: profile.customFlags,
                 words: [...defaultWords],
@@ -344,7 +345,7 @@
                 return {};
             }
 
-            const profiles = (await app.$axios.$get(`/profile/get/${encodeURIComponent(store.state.user.username)}`, { headers: {
+            const profiles = (await app.$axios.$get(`/profile/get/${encodeURIComponent(store.state.user.username)}?version=2`, { headers: {
                 authorization: 'Bearer ' + store.state.token,
             } })).profiles;
 
@@ -367,14 +368,14 @@
                 this.saving = true;
                 try {
                     await this.$post(`/profile/save`, {
-                        names: listToDict(this.names),
-                        pronouns: listToDict(this.pronouns),
+                        names: this.names,
+                        pronouns: this.pronouns,
                         description: this.description,
                         birthday: formatDate(this.birthday),
                         links: [...this.links],
                         flags: [...this.flags],
                         customFlags: {...this.customFlags},
-                        words: this.words.map(x => listToDict(x)),
+                        words: this.words,
 
                         teamName: this.teamName,
                         footerName: this.footerName,
