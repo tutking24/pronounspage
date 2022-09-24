@@ -8,7 +8,7 @@ import { caches }  from "../../src/cache";
 import fs from 'fs';
 import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
 import {socialProviders} from "../../src/socialProviders";
-import {downgradeToV1} from "../profileV2";
+import {downgradeToV1, upgradeToV2} from "../profileV2";
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -176,6 +176,11 @@ const sanitiseBirthday = (bd) => {
 router.post('/profile/save', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    if (!Array.isArray(req.body.names)) {
+        // service worker cache sends v1 requests
+        req.body = upgradeToV2(req.body);
     }
 
     // TODO just make it a transaction...

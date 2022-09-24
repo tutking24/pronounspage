@@ -8,7 +8,7 @@ const { upgradeToV2, downgradeToV1 } = require('./profileV2');
 (async () => {
     const db = await dbConnection();
 
-    const profiles = await db.all(SQL`SELECT * FROM profiles`);  //  WHERE userId = ${'01EMPVS2T10S9X0440N47WF8N2'} AND locale = ${'pl'}
+    const profiles = await db.all(SQL`SELECT * FROM profiles WHERE names LIKE '{%'`);  //  WHERE userId = ${'01EMPVS2T10S9X0440N47WF8N2'} AND locale = ${'pl'}
     let i = 0;
     for (let profile of profiles) {
         if (i % 1000 === 0) {
