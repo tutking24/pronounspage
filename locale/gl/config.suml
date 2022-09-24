@@ -104,10 +104,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['senhor', 'senhora', 'senhore', 'dom', 'dona', 'done', 'tu', 'você']
-        - ['persona', 'home', 'mulher', 'garoto', 'garota', 'garote', 'rapaz', 'rapariga', 'raparigue', 'cara']
-        - ['lind_', 'formos_', 'bonit_', 'bel_', 'sexy']
-        - ['parceir_', 'namorad_', 'marid_', 'espos_', 'outra metade']
+        -
+            header: ~
+            values: ['senhor', 'senhora', 'senhore', 'dom', 'dona', 'done', 'tu', 'você']
+        -
+            header: ~
+            values: ['persona', 'home', 'mulher', 'garoto', 'garota', 'garote', 'rapaz', 'rapariga', 'raparigue', 'cara']
+        -
+            header: ~
+            values: ['lind_', 'formos_', 'bonit_', 'bel_', 'sexy']
+        -
+            header: ~
+            values: ['parceir_', 'namorad_', 'marid_', 'espos_', 'outra metade']
     flags:
         defaultPronoun: 'el_'
 

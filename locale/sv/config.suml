@@ -131,9 +131,15 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['person', 'man', 'kvinna', 'dam', 'snubbe', 'kille', 'tjej', 'kompis', 'bror', 'syster', 'syskon']
-        - ['snygg', 'stilig', 'söt', 'het', 'sexig']
-        - ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
+        -
+            header: ~
+            values: ['person', 'man', 'kvinna', 'dam', 'snubbe', 'kille', 'tjej', 'kompis', 'bror', 'syster', 'syskon']
+        -
+            header: ~
+            values: ['snygg', 'stilig', 'söt', 'het', 'sexig']
+        -
+            header: ~
+            values: ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
     flags:
         defaultPronoun: 'hen'
 

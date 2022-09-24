@@ -209,10 +209,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['señor', 'señora', 'señore', 'don', 'doña', 'doñe', 'usted', 'tú', 'vos']
-        - ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'pib_']
-        - ['lind_', 'guap_', 'bonit_', 'mon_', 'hermos_', 'sexi']
-        - ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
+        -
+            header: ~
+            values: ['señor', 'señora', 'señore', 'don', 'doña', 'doñe', 'usted', 'tú', 'vos']
+        -
+            header: ~
+            values: ['persona', 'hombre', 'mujer', 'chico', 'chica', 'chique', 'muchach_', 'tip_', 'herman_', 'tí_', 'güey', 'pib_']
+        -
+            header: ~
+            values: ['lind_', 'guap_', 'bonit_', 'mon_', 'hermos_', 'sexi']
+        -
+            header: ~
+            values: ['pareja', 'novi_', 'marid_', 'espos_', 'media naranja']
     flags:
         defaultPronoun: 'ell_'
 

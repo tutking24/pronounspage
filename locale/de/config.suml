@@ -152,10 +152,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['Weibliche Formen', 'Männliche Formen', 'Y-Formen', 'Inklusivum', 'Ojum', 'Person-Formen', 'Doppelpunkt-Formen', 'Unterstrich-Formen', 'Sternchen-Formen', 'Großbuchstabe-Formen']
-        - ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.', 'Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
-        - ['schön', 'süß', 'sexy', 'hübsch', 'attraktiv']
-        - ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
+        -
+            header: ~
+            values: ['Weibliche Formen', 'Männliche Formen', 'Y-Formen', 'Inklusivum', 'Ojum', 'Person-Formen', 'Doppelpunkt-Formen', 'Unterstrich-Formen', 'Sternchen-Formen', 'Großbuchstabe-Formen']
+        -
+            header: ~
+            values: ['[ohne Anrede]', 'Herr', 'Frau', 'Fräulein', 'Dame', 'Ind.', 'Bruder', 'Schwester', 'Geschwisterchen', 'Mann', 'Frau', 'Person']
+        -
+            header: ~
+            values: ['schön', 'süß', 'sexy', 'hübsch', 'attraktiv']
+        -
+            header: ~
+            values: ['Freund', 'Freundin', 'Liebling', 'Schatz', 'Geliebte/r', 'Liebschaft', 'Süße/r', 'Partner/in']
     flags:
         defaultPronoun: 'er'
 

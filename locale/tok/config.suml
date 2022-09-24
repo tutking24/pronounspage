@@ -133,10 +133,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['jan [nimi]', 'tonsi [nimi]', 'meli [nimi]', 'mije [nimi]']
-        - ['jan', 'mije', 'meli', 'tonsi', 'jan pona', 'mije lili', 'meli lili', 'tonsi lili', 'jan lili', 'pata', 'pata meli', 'pata mije', 'pata tonsi']
-        - ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
-        - ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
+        -
+            header: ~
+            values: ['jan [nimi]', 'tonsi [nimi]', 'meli [nimi]', 'mije [nimi]']
+        -
+            header: ~
+            values: ['jan', 'mije', 'meli', 'tonsi', 'jan pona', 'mije lili', 'meli lili', 'tonsi lili', 'jan lili', 'pata', 'pata meli', 'pata mije', 'pata tonsi']
+        -
+            header: ~
+            values: ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
+        -
+            header: ~
+            values: ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
     flags:
         defaultPronoun: 'ona'
 

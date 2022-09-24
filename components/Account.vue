@@ -231,7 +231,7 @@
             }
         },
         async mounted() {
-            this.profiles = (await this.$axios.$get(`/profile/get/${this.$user().username}`)).profiles;
+            this.profiles = (await this.$axios.$get(`/profile/get/${this.$user().username}?version=2`)).profiles;
             this.socialConnections = await this.$axios.$get(`/user/social-connections`);
             const user = await this.$axios.$get(`/user/current`);
             if (user) {

@@ -33,7 +33,7 @@
                 </p>
             </div>
 
-            <div v-if="profile.flags.length || Object.keys(profile.customFlags).length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
+            <div v-if="profile.flags.length || profile.customFlags.length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <ul class="list-inline">
                     <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
                         <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
@@ -43,9 +43,9 @@
                               :asterisk="flagsAsterisk.includes(flag)"
                         />
                     </li>
-                    <li v-for="(desc, flag) in profile.customFlags" class="list-inline-item p-1">
-                        <Flag :name="desc"
-                              :alt="desc"
+                    <li v-for="{value: flag, name} in profile.customFlags" class="list-inline-item p-1">
+                        <Flag :name="name"
+                              :alt="name"
                               :img="buildImageUrl(flag, 'flag')"
                               :terms="terms|| []"
                               custom/>
@@ -55,17 +55,17 @@
         </section>
 
         <section class="row">
-            <div v-if="Object.keys(profile.names).length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
+            <div v-if="profile.names.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="signature"/>
                     <T>profile.names</T>
                 </h3>
 
                 <ul class="list-unstyled">
-                    <li v-for="(opinion, name) in profile.names"><Opinion :word="convertName(name)" :opinion="opinion" :escape="false"/></li>
+                    <li v-for="{value: name, opinion} in profile.names"><Opinion :word="convertName(name)" :opinion="opinion" :escape="false"/></li>
                 </ul>
             </div>
-            <div v-if="Object.keys(profile.pronouns).length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
+            <div v-if="profile.pronouns.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
@@ -91,16 +91,16 @@
             </div>
         </section>
 
-        <section class="clearfix" v-if="Object.values(profile.words).map(w => Object.keys(w).length).reduce((a, b) => a + b, 0) > 0">
+        <section class="clearfix" v-if="profile.words.map(w => w.values.length).reduce((a, b) => a + b, 0) > 0">
             <h3>
                 <Icon v="scroll-old"/>
                 <T>profile.words</T>
             </h3>
 
             <div class="row">
-                <div v-for="group in profile.words" v-if="Object.keys(group).length" class="col-6 col-lg-3">
+                <div v-for="column in profile.words" v-if="column.values.length" class="col-6 col-lg-3">
                     <ul class="list-unstyled">
-                        <li v-for="(opinion, word) in group"><Opinion :word="word" :opinion="opinion"/></li>
+                        <li v-for="{value: word, opinion} in column.values"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>
                 </div>
             </div>
@@ -136,9 +136,7 @@
         computed: {
             pronounOpinions() {
                 const pronounOpinions = [];
-                for (let pronoun in this.profile.pronouns) {
-                    if (!this.profile.pronouns.hasOwnProperty(pronoun)) { continue; }
-
+                for (let {value: pronoun, opinion} of this.profile.pronouns) {
                     let link = pronoun
                         .trim()
                         .replace(new RegExp('^' + this.$base), '')
@@ -164,7 +162,7 @@
                         pronounOpinions.push({
                             link,
                             pronoun: link.replace(/:+/g, ' '),
-                            opinion: this.profile.pronouns[pronoun],
+                            opinion,
                         });
                         continue;
                     }
@@ -175,7 +173,7 @@
                         pronounOpinions.push({
                             link,
                             pronoun: pronounEntity,
-                            opinion: this.profile.pronouns[pronoun],
+                            opinion,
                         });
                     }
                 }
@@ -203,7 +201,7 @@
                 return mainPronoun;
             },
             countFlags() {
-                return this.profile.flags.length + Object.keys(this.profile.customFlags).length;
+                return this.profile.flags.length + this.profile.customFlags.length;
             },
             manyFlagsLayout() {
                 return this.countFlags > 36 || this.countFlags === 0 || !this.hasDescriptionColumn;
@@ -215,8 +213,8 @@
             },
             mainRowCount() {
                 let c = 0;
-                if (Object.keys(this.profile.names).length) { c++; }
-                if (Object.keys(this.profile.pronouns).length) { c++; }
+                if (this.profile.names.length) { c++; }
+                if (this.profile.pronouns.length) { c++; }
                 if (this.profile.links.length) { c++; }
                 return c;
             }

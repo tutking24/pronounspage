@@ -298,10 +298,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[fără onorific]', 'd-x', 'd-le', 'd-na', 'domnul', 'doamnă', 'mirul', 'mireasa', 'tovarășe']
-        - ['persoană', 'bărbat', 'femeie', 'doamnă', 'om', 'băiat', 'fată', 'prietenaș', 'amic', 'frate', 'soră', 'rudă']
-        - ['frumoasă', 'frumos', 'drăguț', 'hot', 'sexy', 'arătos', 'perfectă', 'perfect']
-        - ['prieten', 'partener', 'iubit', 'iubită', 'soț', 'soție', 'gagică', 'gagic', 'drag']
+        -
+            header: ~
+            values: ['[fără onorific]', 'd-x', 'd-le', 'd-na', 'domnul', 'doamnă', 'mirul', 'mireasa', 'tovarășe']
+        -
+            header: ~
+            values: ['persoană', 'bărbat', 'femeie', 'doamnă', 'om', 'băiat', 'fată', 'prietenaș', 'amic', 'frate', 'soră', 'rudă']
+        -
+            header: ~
+            values: ['frumoasă', 'frumos', 'drăguț', 'hot', 'sexy', 'arătos', 'perfectă', 'perfect']
+        -
+            header: ~
+            values: ['prieten', 'partener', 'iubit', 'iubită', 'soț', 'soție', 'gagică', 'gagic', 'drag']
     flags:
         defaultPronoun: 'el'
 

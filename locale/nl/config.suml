@@ -130,10 +130,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[geen aanspreekvorm]', 'dhr.', 'hr.', 'mr.', 'm.', 'mevr.', 'mw.', 'mej.', 'mx.']
-        - ['persoon', 'man', 'vrouw', 'dame', 'gozer', 'vent', 'jongen', 'meisje', 'maatje', 'makker', 'bro', 'zus']
-        - ['mooi', 'knap', 'schattig', 'lief', 'lekker ding', 'sexy']
-        - ['vriend', 'vriendin', 'vriendje', 'partner', 'schat(je)', 'lief(je)', 'duifje']
+        -
+            header: ~
+            values: ['[geen aanspreekvorm]', 'dhr.', 'hr.', 'mr.', 'm.', 'mevr.', 'mw.', 'mej.', 'mx.']
+        -
+            header: ~
+            values: ['persoon', 'man', 'vrouw', 'dame', 'gozer', 'vent', 'jongen', 'meisje', 'maatje', 'makker', 'bro', 'zus']
+        -
+            header: ~
+            values: ['mooi', 'knap', 'schattig', 'lief', 'lekker ding', 'sexy']
+        -
+            header: ~
+            values: ['vriend', 'vriendin', 'vriendje', 'partner', 'schat(je)', 'lief(je)', 'duifje']
     flags:
         defaultPronoun: 'hen'
 
