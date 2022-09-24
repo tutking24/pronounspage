@@ -326,4 +326,10 @@ body[data-theme="dark"] {
   .list-group-flare > :first-child {
     border-top: 3px solid $primary-dark !important;
   }
+
+  code {
+    color: lighten($code-color, 45%);
+    background-color: darken($code-color, 30%);
+    border: 1px solid lighten($code-color, 30%);
+  }
 }
