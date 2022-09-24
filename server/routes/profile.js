@@ -183,6 +183,11 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         req.body = upgradeToV2(req.body);
     }
 
+    if (!Array.isArray(req.body.customFlags)) {
+        // no idea WTF is happening here, but somehow we got values like {"0": ..., "1": ..., ...}
+        req.body.customFlags = Object.values(req.body.customFlags);
+    }
+
     // TODO just make it a transaction...
     const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
     if (ids.length) {
