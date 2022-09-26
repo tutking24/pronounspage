@@ -139,6 +139,7 @@ export default {
         { src: '~/plugins/globals.js' },
         { src: '~/plugins/auth.js' },
         { src: '~/plugins/datepicker.js', ssr: false },
+        { src: '~/plugins/track.js', ssr: false }
     ],
     components: true,
     buildModules: [],
@@ -163,11 +164,16 @@ export default {
     },
     plausible: {
         domain: process.env.PLAUSIBLE_DOMAIN || translations.domain,
+        // NOTE(privacy): Disables automatic tracking of page views, meaning we have to do it manually
+        //                If it's not done manually, a privacy issue occurs, which we *do not want*
+        //                - tecc
+        enableAutoPageviews: false
     },
     publicRuntimeConfig: {
         plausible: {
             domain: process.env.PLAUSIBLE_DOMAIN || translations.domain,
-            apiHost: process.env.PLAUSIBLE_API_HOST
+            apiHost: process.env.PLAUSIBLE_API_HOST,
+            enableAutoPageviews: false // see previous comment
         }
     },
     build: {
