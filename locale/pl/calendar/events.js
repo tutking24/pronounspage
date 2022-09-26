@@ -119,4 +119,16 @@ module.exports = [
             }
         }
     }, EventLevel.Day),
+
+    // Sep 24 - Oct 1
+    new Event('{https://www.facebook.com/voicecelebration/=Tydzień Głosu Osób Queerowych w Iranie}', 'Progress Pride', 9, function* (monthDays) {
+        let lastDay = null;
+        for (let d of monthDays) {
+            if (d.day >= 24) {
+                yield d;
+            }
+            lastDay = d;
+        }
+        yield new Day(lastDay.year, 10, 1);
+    }, EventLevel.Week),    
 ];
