@@ -29,6 +29,7 @@ export const plugin = function ({app}) {
 
             if (trackerOverride.handling === false) {
                 console.debug("[analytics] Page is blocked from tracking");
+                return;
             } else if (typeof trackerOverride.handling === "function") {
                 handler = trackerOverride.handling;
             } else {
