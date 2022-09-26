@@ -64,11 +64,11 @@ const wordsV1 = [
 ];
 
 const wordsV2 = [
-    { name: 'honorifics', values: [
+    { header: 'honorifics', values: [
         {value: 'sir', opinion: 'nope'},
         {value: 'madam', opinion: 'nope'},
     ] },
-    { name: 'relationship descriptions', values: [
+    { header: 'relationship descriptions', values: [
         {value: 'partner', opinion: 'yes'},
         {value: 'boyfriend', opinion: 'nope'},
         {value: 'girlfriend', opinion: 'nope'},
