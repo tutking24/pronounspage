@@ -214,6 +214,10 @@ links:
             url: 'https://pronouns.org/'
             headline: 'Pronouns.org'
         -
+            icon: 'comment-dots'
+            url: 'https://noheorshe.com/'
+            headline: 'no “he or she”'
+        -
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=46ehrFk-gLk'
             headline: 'Gender Neutral Pronouns: They''re Here, Get Used To Them'
