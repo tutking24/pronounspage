@@ -153,14 +153,15 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
     const statsAll = await fetchStats();
 
+    const plausible = statsAll.home.plausible;
     const stats = {
         calculatedAt: statsAll.calculatedAt,
         overall: {
             users: statsAll.users.overall,
             cards: 0,
-            pageViews: statsAll.home.plausible.pageviews,
-            visitors: statsAll.home.plausible.visitors,
-            online: statsAll.home.plausible.realTimeVisitors,
+            pageViews: plausible ? plausible.pageviews : 0,
+            visitors: plausible ? plausible.visitors : 0,
+            online: plausible ? plausible.realTimeVisitors : 0,
         },
         current: {},
     }
