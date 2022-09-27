@@ -413,9 +413,8 @@ contact:
         name: '“Neutrala Språkets Råd”-kollektivet'
         nameShort: 'Kollektivet'
         description: >
-            Vi är ett queer-kollektiv dedikerade till montering, vetenskapligt ifrågasättande, forskning, och befrämjande
-            könsneutral och ickebinärt språk.
-            Vi stödjer också handlingar mot jämlikhet och social rättvisa.
+            Vi är ett queerkollektiv dedikerade till sammansättning, forskning, skapandet och främjning av könsneutralt och ickebinärt språk.
+            Vi stödjer också handlingar för jämlikhet och social rättvisa.
         extra: []
         logo: 'Kollektivets logotyp är en kombination av transgendersymbolen och en pratbubbla som symboliserar språk.'
         members: 'Nuvarande medlemmar'
@@ -451,6 +450,35 @@ contact:
                 - 'länka ditt sociala media,'
                 - 'berätta ifall du har någon erfarenheter av att jobba som aktivist,'
                 - 'berätta om vad du skulle vilja hjälpa till med.'
+    contribute:
+        header: 'Bidra'
+        intro: >
+            Pronouns.page är ett öppet projekt drivet av volontärer
+            Du kan också bidra! Följande är några områden där vi hade varit tacksamma för din hjälp.
+            Aktiva bidragare blir inbjudna till vårat team.
+        entries:
+            header: 'Lägg till uppslag'
+            description: >
+                Många delar av webbsidan (substantiv, queerterminologi, den inklusiva ordboken, mm…) kan du föreslå uppslag och förändringar.
+                Om du tror att något saknas eller är fel, tevka inte på att skicka in ditt förslag.
+        version:
+            header: 'Skapa nya språkversioner'
+            description: >
+                Instruktioner för att skapa nya språkversioner finns {https://en.pronouns.page/new-version=här}.
+                Innan du börjar, {/kontakt=kontakta oss} för att samordna med andra som kanske arbetar med versionen också.
+        translations:
+            header: 'Addera eller korrigera språkversioner'
+            description: >
+                Är en översättningssträng i en redan existerande version fel eller inte översatt än?
+                Klicka på “Föreslå översättningar” i sidfoten och följ instruktionerna.
+        technical:
+            header: 'Skicka in pull requests'
+            description: >
+                Tekniska sysslor hanteras på {https://gitlab.com/Avris/Zaimki/-/boards=denna kanbantavla}.
+                Välj bara en otilldelad syssla från “To Do”-kolumnen, tilldela dig själv den och börja arbeta med den.
+                Var inte rädd för att fråga frågor.
+            footer: 'Tekniska sysslor'
+
 
 support:
     header: 'Stödja'
@@ -608,6 +636,20 @@ footer:
     financial: 'Finansiell insyn'
     technical: 'Teknisk'
     sibling: 'Syskonprojekt'
+    stats:
+        header: 'Statistik'
+        overall: 'alla språkversioner'
+        current: 'endast denna version'
+        keys:
+            users: 'Registrerade användare'
+            cards: 'Kort'
+            visitors: 'Unika besökare'
+            pageviews: 'Besökningar'
+            realTimeVisitors: 'Online just nu'
+            visitDuration: 'Medellängden på besök'
+            uptime: 'Drift'
+            responseTime: 'Medelresponstid'
+        month: 'månad'
 
 notFound:
     message: 'Sidan hittades inte'
@@ -622,8 +664,8 @@ confirm:
     yes: 'Ja, jag är säker'
     no: 'Nej, avbryt'
     ok: 'Okej'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: 'Spara' # TODO
+    dismiss: 'Kasta bort' # TODO
 
 terms:
     header: 'Användarvillkor'
@@ -771,7 +813,7 @@ quotation:
 
 localise:
     shorter: 'Lägg till mer'
-    short: 'Lägga till språkversioner'
+    short: 'Lägg till språkversioner'
     long: 'Vill du skapa en ny språkversion? Grymt bra! Vänligen kolla in'
     longLink: 'den här manualen!'
 
