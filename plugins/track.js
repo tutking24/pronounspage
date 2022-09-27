@@ -21,20 +21,23 @@ function redact(redactor, base = defaultHandler) {
     })
 }
 
+const USER_AT = /^\/@.+/;
+const USER_SUBPAGE = /^\/(u|card)\/.*/;
+
 const TRACKER_OVERRIDES = [
     {
         test(v) {
-            return /^\/@.+/.test(v);
+            return USER_AT.test(v) || USER_SUBPAGE.test(v);
         },
         handling: redact((v) => {
-            const parts = v.pathname.split('/').filter((v) => v.length > 0);
-            for (const i in parts) { // NOTE(tecc): This might be overengineering but that's fine
-                const part = parts[i];
-                if (/^@.+$/.test(part)) {
-                    parts[i] = '@--redacted--';
-                }
+            let pathname = v.pathname;
+            if (USER_AT.test(pathname)) {
+                pathname = pathname.replace(USER_AT, '/@--redacted--')
             }
-            v.pathname =  '/' + parts.join('/');
+            if (USER_SUBPAGE.test(pathname)) {
+                pathname = pathname.replace(USER_SUBPAGE, '/$1/--redacted--');
+            }
+            v.pathname = pathname;
             return v;
         })
     }
