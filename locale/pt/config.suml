@@ -83,7 +83,8 @@ faq:
     route: 'perguntas'
 
 links:
-    enabled: false
+    enabled: true
+    split: false
     route: 'ligações'
     blogRoute: 'blog'
     links: []
