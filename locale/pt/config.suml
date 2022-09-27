@@ -91,6 +91,22 @@ links:
     mediaMentions: []
     recommended: []
     blog: false
+    academic:
+        -
+            icon: 'comment-alt-edit'
+            url: 'https://repositorio.ufscar.br/handle/ufscar/16586'
+            headline: 'Gomes, Robert Moura Sena (2022) Por uma linguística (mais) popular: a construção do gênero neutro como dissidência linguística'
+            quote: >
+                Com a efervescência dos movimentos sociais, a compreensão de que a língua é também lugar
+                onde as identidades de uma coletividade se ancora fez com que ela se tornasse também objeto
+                de luta. Conforme o advento e intensificação do uso da internet, e marcadamente das redes
+                sociais online, novas formas de organização dos grupos socialmente minorizados
+                (comunidades indígenas, mulheres, negres, LGBTQIAPN+ e pessoas com deficiência, por
+                exemplo) tornaram-se mais evidentes. Em relação ao uso do gênero neutro como forma de
+                reconhecimento e representação da comunidade LGBTQIAPN+ nos espaços sociais, dentre
+                eles a própria língua, este pode ser interpretado como dissidência linguística - conceito
+                proposto nessa dissertação - como possibilidade de subversão, nesse caso, do sistema
+                linguístico.
 
 contact:
     enabled: true
