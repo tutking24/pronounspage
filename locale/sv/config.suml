@@ -140,6 +140,9 @@ profile:
         -
             header: ~
             values: ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
+        -
+            header: ~
+            values: ['']
     flags:
         defaultPronoun: 'hen'
 
