@@ -228,7 +228,7 @@
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
                     </h4>
-                    <OpinionListInput v-model="words[i].values" group="words"/>
+                    <OpinionListInput v-if="words[i]" v-model="words[i].values" group="words"/>
                 </template>
             </section>
 
