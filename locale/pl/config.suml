@@ -922,6 +922,11 @@ links:
             url: 'https://www.instagram.com/tv/CgxBjt4D8GQ/'
             headline: 'O języku niebinarnym'
             extra: '– rozmowa z Łukaszem Chmarą z wydawnictwa <strong>We Need YA</strong> z okazji premiery książki „Wszystkiego, co najlepsze”'
+        -
+            icon: 'play-circle'
+            url: 'https://youtube.com/watch?v=gTgG9IDOpNc'
+            headline: 'Niebinarny j. polski – zaimki.pl: Andrea Vos, Szymon Misiek'
+            extra: '– <strong>Trans Show</strong> Angeli Getler, odc. 3'
     mediaMentions:
         -
             icon: 'newspaper'
