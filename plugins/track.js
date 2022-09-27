@@ -7,13 +7,33 @@ function eventHandler(eventName) {
         plausible.trackEvent(eventName, {}, {});
     }
 }
+/**
+ * @param {(value: string) => string} redactor
+ * @param {(ctx) => void} base
+ * @return {(ctx) => void}
+ */
+function redact(redactor, base = defaultHandler) {
+    return (ctx) => base({
+        ...ctx,
+        to: redactor(ctx)
+    })
+}
 
 const TRACKER_OVERRIDES = [
     {
         test(v) {
             return /^\/@.+/.test(v);
         },
-        handling: eventHandler('Profile view')
+        handling: redact((v) => {
+            const parts = v.split('/').filter((v) => v.length > 0);
+            for (const i in parts) { // NOTE(tecc): This might be overengineering but that's fine
+                const part = parts[i];
+                if (/^@.+$/.test(part)) {
+                    parts[i] = '@--redacted--';
+                }
+            }
+            return '/' + parts.join('/');
+        })
     }
 ]
 
