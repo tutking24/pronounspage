@@ -87,7 +87,16 @@ links:
     split: false
     route: 'ligações'
     blogRoute: 'blog'
-    links: []
+    links:
+        -
+            icon: 'comment-alt-edit'
+            url: 'http://www.roseta.org.br/2022/09/14/afinal-qual-a-diferenca-entre-linguagem-neutra-e-linguagem-inclusiva-de-genero/'
+            headline: 'Afinal, qual a diferença entre Linguagem Neutra e Linguagem Inclusiva de Gênero?'
+        -
+            icon: 'comment-alt-edit'
+            lang: ['en']
+            url: 'http://www.roseta.org.br/en/2022/09/14/what-is-the-difference-between-gender-neutral-language-and-gender-inclusive-language-after-all/'
+            headline: 'What is the difference between Gender-Neutral Language and Gender-Inclusive Language after all?'
     mediaGuests: []
     mediaMentions: []
     recommended: []
