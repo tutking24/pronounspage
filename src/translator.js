@@ -9,7 +9,7 @@ class Translator {
         this.expectedTranslations = expectedTranslations;
     }
 
-    translate(key, params = {}, warn = true) {
+    translate(key, params = {}, warn = false) {
         return this.applyParams(
             this.get(key, warn),
             params,
