@@ -228,7 +228,7 @@
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
                     </h4>
-                    <OpinionListInput v-if="words[i]" v-model="words[i].values" group="words"/>
+                    <OpinionListInput v-model="words[i].values" group="words"/>
                 </template>
             </section>
 
@@ -260,6 +260,16 @@
         }
     })
 
+	function coerceWords(words) {
+		for (let i = 0; i < 4; i++) {
+			words[i] ??= {
+				header: null,
+				values: []
+			}
+		}
+		return words;
+	}
+
     const buildProfile = (profiles, currentLocale) => {
         for (let locale in profiles) {
             if (!profiles.hasOwnProperty(locale)) {
@@ -275,7 +285,7 @@
                     links: profile.links,
                     flags: profile.flags,
                     customFlags: profile.customFlags,
-                    words: profile.words,
+                    words: coerceWords(profile.words),
                     teamName: profile.teamName,
                     footerName: profile.footerName,
                     footerAreas: profile.footerAreas,
