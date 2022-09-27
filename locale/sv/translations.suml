@@ -577,6 +577,7 @@ profile:
     flagsCustomWarning: 'Denna flagga har laddats upp av en användare. Pronouns.page är inte ansvarig.'
     flagsAsterisk: 'Detta är inte en queeridentitet, fast vi inkluderar den för folk som är queer på andra sätt (t.ex. heterosexuella transa personer).'
     links: 'Länkar'
+    linksRecommended: 'Vi rekommenderar att länka'
     column: 'Kolumn'
 
     header: 'Kort'
@@ -1109,3 +1110,17 @@ calendar: # TODO
 ukraine:
     header: 'Vi står med Ukraina.'
     link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/sweden=Så här kan du hjälpa dem.}'
+
+translationMode:
+    header: 'Översättningsläge'
+    action: 'Föreslå översättningar'
+    welcome: >
+        Saknas en översättning eller behöver en existerande översättning korrigeras?
+        Du kan klicka på den blå knappen längst ner till höger för att slå översättningsläget på och av.
+        I detta läge finns det text i ramar; trycker man på de, öppnar man en dialog där man kan ändra översättningen och jämföra den med den engelska versionen.
+        Glöm inte att klicka på knappen "Skicka ändringar" när du är klar.
+    logIn: 'Du måste logga in innan du kan föreslå översättningar'
+    changes: 'Ändringar'
+    commit: 'Skicka ändringar'
+    revert: 'Återställ ändringar'
+    pause: 'Pausa översättningsläge'

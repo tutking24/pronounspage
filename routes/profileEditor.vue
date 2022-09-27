@@ -262,7 +262,7 @@
 
 	function coerceWords(words) {
 		for (let i = 0; i < 4; i++) {
-			words[i] ??= {
+			words[i] = words[i] ? words[i] : {
 				header: null,
 				values: []
 			}
