@@ -1,6 +1,8 @@
 function defaultHandler({plausible, to, from}) {
-    // console.debug("[analytics] Tracking default handler");
-    plausible.trackPageview()
+    console.debug("[analytics] Tracking default handler: %O", to);
+    plausible.trackPageview({
+        url: to.toString()
+    })
 }
 function eventHandler(eventName) {
     return function ({plausible, to, from}) {
@@ -8,14 +10,14 @@ function eventHandler(eventName) {
     }
 }
 /**
- * @param {(value: string) => string} redactor
+ * @param {(value: URL) => URL} redactor
  * @param {(ctx) => void} base
  * @return {(ctx) => void}
  */
 function redact(redactor, base = defaultHandler) {
     return (ctx) => base({
         ...ctx,
-        to: redactor(ctx)
+        to: redactor(ctx.to)
     })
 }
 
@@ -25,14 +27,15 @@ const TRACKER_OVERRIDES = [
             return /^\/@.+/.test(v);
         },
         handling: redact((v) => {
-            const parts = v.split('/').filter((v) => v.length > 0);
+            const parts = v.pathname.split('/').filter((v) => v.length > 0);
             for (const i in parts) { // NOTE(tecc): This might be overengineering but that's fine
                 const part = parts[i];
                 if (/^@.+$/.test(part)) {
                     parts[i] = '@--redacted--';
                 }
             }
-            return '/' + parts.join('/');
+            v.pathname =  '/' + parts.join('/');
+            return v;
         })
     }
 ]
@@ -48,7 +51,7 @@ export const plugin = function ({app}) {
             }
 
             if (trackerOverride.handling === false) {
-                console.debug("[analytics] Page is blocked from tracking");
+                // console.debug("[analytics] Page is blocked from tracking");
                 return;
             } else if (typeof trackerOverride.handling === "function") {
                 handler = trackerOverride.handling;
@@ -60,7 +63,11 @@ export const plugin = function ({app}) {
 
         // console.log("[analytics] Tracking pageview")
         try {
-            handler({plausible, to, from});
+            handler({
+                plausible,
+                to: new URL(to.fullPath, window.location.href),
+                from: new URL(from.fullPath, window.location.href)
+            });
         } catch (e) {
             console.error("Error whilst trying to handle navigation: %O", e);
         }
