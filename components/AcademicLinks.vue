@@ -1,5 +1,5 @@
 <template>
-    <section v-if="config.links.links.length">
+    <section v-if="config.links.academic.length">
         <h2 class="mb-3">
             <Icon v="vial"/>
             <T>links.academic</T>
