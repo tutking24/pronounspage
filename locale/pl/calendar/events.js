@@ -1,4 +1,4 @@
-const {Event, day, week, month, dayYear, EventLevel, weekStarting} = require("../../../src/calendar/helpers");
+const {Event, day, week, month, dayYear, EventLevel, weekStarting, Day} = require("../../../src/calendar/helpers");
 
 module.exports = [
     // --- months ---
@@ -130,5 +130,5 @@ module.exports = [
             lastDay = d;
         }
         yield new Day(lastDay.year, 10, 1);
-    }, EventLevel.Week),    
+    }, EventLevel.Week),
 ];
