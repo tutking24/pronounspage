@@ -224,7 +224,10 @@ export default {
         PLAUSIBLE_API_HOST: process.env.PLAUSIBLE_API_HOST,
         HEARTBEAT_LINK: process.env.HEARTBEAT_LINK,
     },
-    serverMiddleware: ['~/server/no-ssr.js', '~/server/index.js'],
+    serverMiddleware: [
+        // '~/server/no-ssr.js',
+        '~/server/index.js'
+    ],
     axios: {
         baseURL: process.env.BASE_URL + '/api',
     },
