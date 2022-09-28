@@ -10,6 +10,8 @@ import {isGranted} from "../src/helpers";
 import buildLocaleList from "../src/buildLocaleList";
 import cookieSettings from "../src/cookieSettings";
 import SQL from "sql-template-strings";
+import csurf from 'csurf'
+import csrfHandleError from "@privyid/nuxt-csrf/server-middleware/handle-error";
 
 global.config = loadSuml('config');
 global.translations = loadSuml('translations');
@@ -33,6 +35,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+app.use(csurf({ cookie: true }));
+app.use(csrfHandleError())
 
 class LazyDatabase {
     constructor() {

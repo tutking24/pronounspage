@@ -136,6 +136,7 @@ export default {
     },
     css: [],
     plugins: [
+        { src: '~/plugins/axios.js' },
         { src: '~/plugins/globals.js' },
         { src: '~/plugins/auth.js' },
         { src: '~/plugins/datepicker.js', ssr: false },
@@ -144,13 +145,14 @@ export default {
     components: true,
     buildModules: [],
     modules: [
+        '@privyid/nuxt-csrf',
         '@nuxtjs/pwa',
         '@nuxtjs/axios',
         ['@nuxtjs/redirect-module', {
             rules: config.redirects,
         }],
         'cookie-universal-nuxt',
-        'vue-plausible'
+        'vue-plausible',
     ],
     pwa: {
         manifest: {
