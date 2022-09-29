@@ -252,6 +252,7 @@
     import config from '../data/config.suml';
     import link from '../plugins/link';
     import {minBirthdate, maxBirthdate, formatDate} from '../src/birthdate';
+    import opinions from '../src/opinions';
 
     const defaultWords = config.profile.defaultWords.map(({header, values}) => {
         return {
@@ -260,15 +261,15 @@
         }
     })
 
-	function coerceWords(words) {
-		for (let i = 0; i < 4; i++) {
-			words[i] = words[i] ? words[i] : {
-				header: null,
-				values: []
-			}
-		}
-		return words;
-	}
+    function coerceWords(words) {
+        for (let i = 0; i < 4; i++) {
+            words[i] = words[i] || {
+                header: null,
+                values: []
+            }
+        }
+        return words;
+    }
 
     const buildProfile = (profiles, currentLocale) => {
         for (let locale in profiles) {
@@ -447,15 +448,13 @@
             mainPronoun() {
                 let mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
                 let mainOpinion = -1;
-                for (let {key: pronoun, value: opinion} of this.pronouns) {
-                    if (opinion === 2) {
-                        opinion = 0.5;
-                    }
-                    if (opinion > mainOpinion) {
+                for (let {value: pronoun, opinion} of this.pronouns) {
+                    const opinionValue = opinions[opinion]?.value || -1;
+                    if (opinionValue > mainOpinion) {
                         const p = this.normaliseAndBuildPronoun(pronoun);
                         if (p) {
                             mainPronoun = p;
-                            mainOpinion = opinion;
+                            mainOpinion = opinionValue;
                         }
                     }
                 }

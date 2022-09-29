@@ -116,6 +116,7 @@
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import spelling from "../plugins/spelling";
+    import opinions from '../src/opinions';
 
     export default {
         mixins: [ spelling ],
@@ -186,15 +187,10 @@
                     if (typeof pronoun === 'string') {
                         continue;
                     }
-                    if (opinion === 2) {
-                        opinion = 0.5;
-                    }
-                    if (opinion === 3) {
-                        opinion = 0.5;
-                    }
-                    if (opinion > mainOpinion) {
+                    const opinionValue = opinions[opinion]?.value || -1;
+                    if (opinionValue > mainOpinion) {
                         mainPronoun = pronoun;
-                        mainOpinion = opinion;
+                        mainOpinion = opinionValue;
                     }
                 }
 
