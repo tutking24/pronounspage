@@ -198,16 +198,16 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: 'honorifics'
+            header: 'Honorifics'
             values: ['[no honorific]', 'mx.', 'mr.', 'ms.', 'sir', 'ma"am', 'madam', 'sai', 'mir', 'shazam', 'zam', 'comrade']
         -
-            header: 'person and family descriptions'
+            header: 'Person and family descriptions'
             values: ['person', 'man', 'woman', 'lady', 'dude', 'enby', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
         -
-            header: 'compliments'
+            header: 'Compliments'
             values: ['pretty', 'handsome', 'cute', 'hot', 'sexy']
         -
-            header: 'relationship descriptions'
+            header: 'Relationship descriptions'
             values: ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
         defaultPronoun: 'ri'

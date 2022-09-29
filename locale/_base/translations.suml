@@ -590,6 +590,7 @@ profile:
         you can also use a colon shorthand (eg. “:star”).
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'Words'
+    wordsColumnHeader: 'Column header'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     flags: 'Flags'

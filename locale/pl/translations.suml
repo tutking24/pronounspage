@@ -1322,6 +1322,7 @@ profile:
         Użyj {/zaimki#generator=<strong>generatora</strong>} by wypełnić luki w zdaniach niestandardowymi formami.
     pronounsNotFound: 'Niepoprawny format. Szczegóły w instrukcji powyżej'
     words: 'Słowa'
+    wordsColumnHeader: 'Nagłówek kolumny'
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
     flags: 'Flagi'

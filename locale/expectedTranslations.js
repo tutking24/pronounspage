@@ -51,4 +51,5 @@ export default [
     'user.qr.header',
     'user.qr.download',
     'footer.stats.month',
+    'profile.wordsColumnHeader',
 ];

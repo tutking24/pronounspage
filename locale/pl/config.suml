@@ -1694,16 +1694,16 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: 'formy rzeczownikowe'
+            header: 'Formy rzeczownikowe'
             values: ['maskulatywy', 'feminatywy', 'neutratywy', 'dukatywy', 'osobatywy']
         -
-            header: 'formy grzecznościowe'
+            header: 'Formy grzecznościowe'
             values: ['per ty', 'per wy', 'pan', 'pani', 'państwo', 'pań', 'panu', 'osoba', 'mężczyzna', 'kobieta', 'enby', 'niebinie', 'facet', 'baba', 'ziom', 'laska', 'typ']
         -
-            header: 'komplementy'
+            header: 'Komplementy'
             values: ['ładn_', 'śliczn_', 'przystojn_', 'słodk_']
         -
-            header: 'opis związków'
+            header: 'Opis relacji'
             values: ['partner', 'osoba partnerska', 'chłopak', 'dziewczyna', 'mąż', 'żona', 'towarzysz', 'kochanie', 'ukochane', 'małżonie', 'druga połówka']
     flags:
         defaultPronoun: 'on_'
