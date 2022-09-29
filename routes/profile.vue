@@ -274,7 +274,7 @@
 
                 const bestKey = Math.max(...Object.keys(best));
 
-                return best[bestKey].slice(0, 3);
+                return bestKey >= 0 ? best[bestKey].slice(0, 3) : [];
             },
         },
         head() {
