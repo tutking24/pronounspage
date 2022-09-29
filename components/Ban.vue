@@ -163,7 +163,7 @@
         },
         computed: {
             canApplyBan() {
-                return !this.isBanned && this.$isGranted('users') && (this.banProposals.length >= 3 || this.$isGranted('*'));
+                return !this.isBanned && this.$isGranted('users') && (this.banProposals.length >= 2 || this.$isGranted('*'));
             },
         }
     }

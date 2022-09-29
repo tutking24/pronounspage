@@ -284,7 +284,7 @@ router.post('/admin/apply-ban/:username/:id', handleErrorAsync(async (req, res) 
     const proposals = await fetchBanProposals(req.db, user.id);
 
     if (req.params.id && req.params.id !== '0') {
-        if (!req.isGranted('*') && proposals.length < 3) {
+        if (!req.isGranted('*') && proposals.length < 2) {
             return res.status(401).json({error: 'Unauthorised'});
         }
         const proposal = await req.db.get(SQL`SELECT * FROM ban_proposals WHERE id = ${req.params.id}`);
