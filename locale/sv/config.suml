@@ -132,13 +132,13 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: ~
+            header: 'Person- och familjebeskrivningar'
             values: ['person', 'man', 'kvinna', 'dam', 'snubbe', 'kille', 'tjej', 'kompis', 'bror', 'syster', 'syskon']
         -
-            header: ~
+            header: 'Komplimanger'
             values: ['snygg', 'stilig', 'söt', 'het', 'sexig']
         -
-            header: ~
+            header: 'Förhållandeord'
             values: ['vän', 'partner', 'pojkvän', 'flickvän', 'make', 'fru', 'pusskamrat', 'käresta', 'älskling']
         -
             header: ~
