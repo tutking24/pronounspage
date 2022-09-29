@@ -672,10 +672,10 @@ confirm:
 terms:
     header: 'Användarvillkor'
     lastUpdate: 'Senast uppdaterad'
-    consent: 'Genom att registrera dig accepterar du {/terms=Användarvillkoren}.'
+    consent: 'Genom att registrera dig accepterar du {/anvandarvillkor=Användarvillkoren}.'
     translationDisclaimer: >
-        Den följande text är en hjälp översättning.
-        Den enda juridiska bindande version av användarvillkoren är den Engelska versionen, tillgänglig
+        Den följande text är en hjälpöversättning.
+        Den enda juridiskt bindande versionen av användarvillkoren är den engelska versionen, som är tillgänglig
         {https://en.pronouns.page/terms=här}.
     content:
         intro: >
