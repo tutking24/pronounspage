@@ -177,6 +177,7 @@
 <script>
     import { head } from "../src/helpers";
     import ClientOnly from 'vue-client-only'
+    import opinions from '../src/opinions';
 
     export default {
         components: { ClientOnly },
@@ -260,25 +261,20 @@
                 }
             },
             selectMainPronouns(pronouns) {
-                const best = {
-                    1: [], // yes
-                    0: [], // meh
-                    3: [], // close
-                    2: [], // jokingly
-                }
-                for (let pronoun in pronouns) {
-                    if (!pronouns.hasOwnProperty(pronoun)) { continue; }
-                    const opinion = pronouns[pronoun];
-                    if (best[opinion] !== undefined) {
-                        best[opinion].push(pronoun);
+                const best = {}
+                for (let {value: pronoun, opinion} of pronouns) {
+                    const opinionValue = opinions[opinion]?.value || 0;
+                    if (best[opinionValue] === undefined) {
+                        best[opinionValue] = [];
                     }
+                    best[opinionValue].push(pronoun);
                 }
-                for (let opinion of [1, 0, 3, 2]) {
-                    if (best[opinion].length) {
-                        return best[opinion].slice(0, 3);
-                    }
-                }
-                return [];
+
+                if (!Object.keys(best).length) { return []; }
+
+                const bestKey = Math.max(...Object.keys(best));
+
+                return best[bestKey].slice(0, 3);
             },
         },
         head() {
