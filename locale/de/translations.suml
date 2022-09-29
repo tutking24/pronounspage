@@ -573,6 +573,7 @@ footer:
             users: 'Registrierte Benutzer:innen'
             realTimeVisitors: 'Momentan online'
             pageviews: 'Seitenaufrufe'
+            cards: 'Karten'
         month: 'Monat'
         header: 'Statistiken'
         current: 'Nur diese Version'
@@ -598,7 +599,7 @@ terms:
     consent: 'Mit der Registrierung akzeptierst du die {/terms=Nutzungsbedingungen}.'
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Datenschutzbestimmung'
 
 admin:
     header: 'Verwaltungsbereich'
@@ -678,6 +679,7 @@ report:
 
 translationMode:
     action: 'Übersetzungen vorschlagen'
+    changes: 'Änderungen'
 
 flags:
     Abroromantic: 'Abroromantisch'
