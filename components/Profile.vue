@@ -34,6 +34,7 @@
             </div>
 
             <div v-if="profile.flags.length || profile.customFlags.length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
+                <ClientOnly>
                 <ul class="list-inline">
                     <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
                         <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
@@ -51,6 +52,7 @@
                               custom/>
                     </li>
                 </ul>
+                </ClientOnly>
             </div>
         </section>
 
@@ -117,8 +119,10 @@
     import { buildPronoun } from "../src/buildPronoun";
     import spelling from "../plugins/spelling";
     import opinions from '../src/opinions';
+    import ClientOnly from 'vue-client-only'
 
     export default {
+        components: { ClientOnly },
         mixins: [ spelling ],
         props: {
             user: { required: true },

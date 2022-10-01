@@ -176,11 +176,9 @@
 
 <script>
     import { head } from "../src/helpers";
-    import ClientOnly from 'vue-client-only'
     import opinions from '../src/opinions';
 
     export default {
-        components: { ClientOnly },
         data() {
              return {
                  terms: [],
