@@ -16,7 +16,7 @@ home:
             De flesta använder {/han=“han/honom”} eller {/hon=“hon/henne”}, så vi antar ofta automatiskt vad vi ska kalla någon baserat på deras utseende.
             Men det är faktiskt inte så enkelt…
         - >
-            Könsidentiteter är komplicerat. Vissa människor “ser inte ut som” deras könsidentitet.
+            Könsidentiteter är komplicerade. Vissa människor “ser inte ut som” deras könsidentitet.
             Vissa föredrar att bli kallade för något annat än vad man först skulle anta.
             Vissa personer passar inte in i det binära “man” eller “kvinna” och föredrar ett mer neutralt språk.
         - >
@@ -410,7 +410,7 @@ contact:
     header: 'Kontakt'
     authors: 'Författare till webbplatsen'
     team:
-        name: '“Neutrala Språkets Råd”-kollektivet'
+        name: '“Neutrala språkets råd”-kollektivet'
         nameShort: 'Kollektivet'
         description: >
             Vi är ett queerkollektiv dedikerade till sammansättning, forskning, skapandet och främjning av könsneutralt och ickebinärt språk.
@@ -485,7 +485,7 @@ support:
     description: >
         Om du vill chippa in för servern, domäner, klistermärken etc., eller helt enkelt köpa författarna en öl,
         så kan du använda länkarna nedan:
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: 'Banköverföring'
 
 user:
     header: 'Konto'
@@ -565,10 +565,11 @@ profile:
         eller <strong>länken</strong> (t.ex. “http://en.pronouns.page/e”)
         eller alla formerna (t.ex. “hen/henom/hens”).
         Kom ihåg att <strong>alla tre formerna</strong> är nödvändiga i sådana fall,
-        annars kommer appen bara att gissa vad det är du menar.
-        Du kan även använda {/pronouns#generator=<strong>the generator</strong>} för att fylla ut meningar med anpassade former.
+        annars kommer appen gissa vilka pronomen det är du menar.
+        Du kan även använda {/pronouns#generator=<strong>generatorn</strong>} för att fylla ut meningar med anpassade former.
     pronounsNotFound: 'Vi kan inte hitta någonting om dessa pronomen!'
-    words: 'Orden'
+    words: 'Ord'
+    wordsColumnHeader: 'Kolumnrubrik'
     birthday: 'Födelsedag'
     birthdayInfo: 'Vi publicerar inte din födelsedag, bara den kalkulerade åldern.'
     flags: 'Flaggor'
@@ -590,7 +591,7 @@ profile:
     editor:
         header: 'Kortredigerare'
         save: 'Spara ditt kort'
-        defaults: 'Återställ till standard versionen'
+        defaults: 'Återställ till standardversionen'
         propagate: 'Kopiera detta kort till ditt andra kort på alla språk'
     opinion:
         yes: 'Ja'
@@ -665,21 +666,21 @@ confirm:
     yes: 'Ja, jag är säker'
     no: 'Nej, avbryt'
     ok: 'Okej'
-    save: 'Spara' # TODO
-    dismiss: 'Kasta bort' # TODO
+    save: 'Spara'
+    dismiss: 'Kasta bort'
 
 terms:
     header: 'Användarvillkor'
     lastUpdate: 'Senast uppdaterad'
-    consent: 'Genom att registrera dig accepterar du {/terms=Användarvillkoren}.'
+    consent: 'Genom att registrera dig accepterar du {/anvandarvillkor=Användarvillkoren}.'
     translationDisclaimer: >
-        Den följande text är en hjälp översättning.
-        Den enda juridiska bindande version av användarvillkoren är den Engelska versionen, tillgänglig
+        Den följande text är en hjälpöversättning.
+        Den enda juridiskt bindande versionen av användarvillkoren är den engelska versionen, som är tillgänglig
         {https://en.pronouns.page/terms=här}.
     content:
         intro: >
             Dessa användarvillkor ger dig tillgång till och användningen till tjänsten på webbsidan.
-            <strong>pronouns.page</strong> sköts av det “Neutrala Språkets Råd” kollektivet
+            <strong>pronouns.page</strong> sköts av det “Neutrala språkets råd”-kollektivet
             som kan kontaktas via mail:
         consent: >
             När du använder våra tjänster så godkänner du att du ska följa dessa användarvillkor och att du tillåter
@@ -726,7 +727,7 @@ terms:
                 misogyny: 'kvinnohat'
                 harassment: 'trakasseri'
                 impersonation: 'personifiering'
-                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
+                selfHarm: 'uppmuntra självskada eller självmord'
                 childPornography: 'barnpornografi'
                 unlawfulConduct: 'olagligt beteende'
                 misinformation: 'felaktig information'
@@ -735,10 +736,9 @@ terms:
                 trolling: 'trollning'
                 advertisement: 'annonsering'
                 copyright: 'copyright eller varumärkesintrång'
-            # TODO
             violationsStrict: >
-                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
-                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
+                Vi reserverar rätten att tolka som hatretorik alla instanser av oklar, dold hatretorik
+                (t.ex. att säga till vissa folk att inte interagera med en p.g.a. deras queeridentitet, transfobiska hundvisslor som “superstraight” eller “semibisexuell”, mm).
             responsibility: >
                 Du är ansvarig för alla inlägg du laddar upp på denna tjänst.
                 Om du bryter dessa användarvillkor så kommer vi med förvarning att ta bort ditt innehåll och vi kanske upphäver din rätt till att använda tjänsten.
@@ -754,7 +754,9 @@ terms:
 privacy:
     header: 'Integritetspolicy'
     content:
-        # TODO intro
+        intro: >
+            Denna integritetspolicy beskriver hur tjänsten som tillhandahålls på webbsidan <strong>pronouns.page</strong> och relaterade webbplatser hanterar din personliga data.
+            Tjänsten tillhandahålls av "Neutrala språkets råd"-kollektivet som kan kontaktas via e-post genom:
         effort: >
             Vi ser till att vi sparar din data säkert och försäkrar att all personlig data
             blir inte beslagtagen eller skickat till en utomstående, förutom de betrodda partierna beskrivna här
@@ -1048,8 +1050,8 @@ calendar: # TODO
         mena_lesbian_day: 'Middle Eastern and North African {/terminologi#lesbian=Lesbian} and {/terminologi#queer=Queer} Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'Internationella dagen för suicidprevention'
-        suicide_prevention_month: 'Månad för suicidprevention'
+        suicide_prevention_day: 'Internationella dagen för självmordsförebyggande'
+        suicide_prevention_month: 'Månad för självmordsförebyggande'
         aids_awareness_month: 'AIDS Awareness Month'
         genderfluid_week: '{/terminologi#genderfluid=Genderfluid} Awareness Week'
         pan_week: 'Pan Week'
