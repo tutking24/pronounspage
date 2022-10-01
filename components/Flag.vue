@@ -1,15 +1,18 @@
 <template>
     <span class="flag-wrapper">
         <a v-if="link" :href="`/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" :title="alt">
-            <img :src="img" :alt="name" class="flag-mini rounded"/>
+            <img v-if="missing === false" :src="img" :alt="name" class="flag-mini rounded" @error="missing = true"/>
+            <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
             <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
         </a>
         <span v-else :title="alt">
-            <img :src="img" :alt="name" class="flag-mini rounded"/>
+            <img v-if="missing === false" :src="img" :alt="name" class="flag-mini rounded" @error="missing = true"/>
+            <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
             <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
         </span>
         <span class="flag-preview bg-white rouded p-2 border">
-            <img :src="img" :alt="name" class="rounded"/>
+            <img v-if="missing === false" :src="img" :alt="name" class="rounded" @error="missing = true"/>
+            <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
             <span v-if="asterisk" class="alert alert-warning small d-block mt-2 mb-0 p-2">
                 *
                 <T>profile.flagsAsterisk</T>
@@ -31,6 +34,11 @@
             terms: { },
             custom: { type: Boolean },
             asterisk: { type: Boolean },
+        },
+        data() {
+            return {
+                missing: false,
+            }
         },
         computed: {
             link() {
