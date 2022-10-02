@@ -271,6 +271,10 @@
         return words;
     }
 
+    function fixArrayObject(arrayObject) {
+        return Array.isArray(arrayObject) ? arrayObject : Object.values(arrayObject);
+    }
+
     const buildProfile = (profiles, currentLocale) => {
         for (let locale in profiles) {
             if (!profiles.hasOwnProperty(locale)) {
@@ -285,7 +289,7 @@
                     birthday: profile.birthday,
                     links: profile.links,
                     flags: profile.flags,
-                    customFlags: profile.customFlags,
+                    customFlags: fixArrayObject(profile.customFlags),
                     words: coerceWords(profile.words),
                     teamName: profile.teamName,
                     footerName: profile.footerName,
@@ -309,7 +313,7 @@
                 birthday: profile.birthday,
                 links: profile.links,
                 flags: profile.flags.filter(f => !f.startsWith('-')),
-                customFlags: profile.customFlags,
+                customFlags: fixArrayObject(profile.customFlags),
                 words: [...defaultWords],
                 teamName: profile.teamName,
                 footerName: profile.footerName,
@@ -327,7 +331,7 @@
             birthday: null,
             links: [],
             flags: [],
-            customFlags: {},
+            customFlags: [],
             words: [...defaultWords],
             teamName: '',
             footerName: '',
@@ -385,7 +389,7 @@
                         birthday: formatDate(this.birthday),
                         links: [...this.links],
                         flags: [...this.flags],
-                        customFlags: {...this.customFlags},
+                        customFlags: [...fixArrayObject(this.customFlags)],
                         words: this.words,
 
                         teamName: this.teamName,
