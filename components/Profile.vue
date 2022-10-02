@@ -101,6 +101,7 @@
 
             <div class="row">
                 <div v-for="column in profile.words" v-if="column.values.length" class="col-6 col-lg-3">
+                    <h4 v-if="column.header" class="h6">{{ column.header }}</h4>
                     <ul class="list-unstyled">
                         <li v-for="{value: word, opinion} in column.values"><Opinion :word="word" :opinion="opinion"/></li>
                     </ul>
@@ -191,7 +192,7 @@
                     if (typeof pronoun === 'string') {
                         continue;
                     }
-                    const opinionValue = opinions[opinion]?.value || -1;
+                    const opinionValue = opinions[opinion]?.value || 0;
                     if (opinionValue > mainOpinion) {
                         mainPronoun = pronoun;
                         mainOpinion = opinionValue;

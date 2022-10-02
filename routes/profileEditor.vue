@@ -228,6 +228,7 @@
                     <h4 class="h5">
                         <T>profile.column</T> {{i + 1}}
                     </h4>
+                    <input v-model="words[i].header" class="form-control form-control-sm mb-2" :placeholder="$t('profile.wordsColumnHeader')" maxlength="36"/>
                     <OpinionListInput v-model="words[i].values" group="words"/>
                 </template>
             </section>
@@ -453,7 +454,7 @@
                 let mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
                 let mainOpinion = -1;
                 for (let {value: pronoun, opinion} of this.pronouns) {
-                    const opinionValue = opinions[opinion]?.value || -1;
+                    const opinionValue = opinions[opinion]?.value || 0;
                     if (opinionValue > mainOpinion) {
                         const p = this.normaliseAndBuildPronoun(pronoun);
                         if (p) {
