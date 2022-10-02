@@ -97,7 +97,7 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
+        IT:
             language: 'it-IT'
             voice: 'Bianca'
             engine: 'neural'
@@ -183,6 +183,8 @@ links:
     mediaMentions: []
     recommended: []
     blog: false
+    zine:
+        enabled: false
 
 contact:
     enabled: true
@@ -198,7 +200,7 @@ user:
     enabled: true
     route: 'account'
     termsRoute: 'terms'
-    privacyRoute: 'privacy'  # TODO
+    privacyRoute: 'privacy'
 
 profile:
     enabled: true

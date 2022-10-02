@@ -86,8 +86,8 @@ pronouns:
 sources:
     header: 'Sources'
     headerLong: 'Examples from cultural texts'
-    headerLonger: 'Gender neutral language in cultural texts'
-    subheader: 'Text corpus of gender neutral language'
+    headerLonger: 'Nonbinary and gender neutral language in cultural texts'
+    subheader: 'Text corpus of nonbinary and gender neutral language'
     toc: 'Show table of contents'
     type:
         All: 'All'
@@ -97,6 +97,7 @@ sources:
         Series: 'Series'
         Song: 'Music'
         Poetry: 'Poetry'
+        Comics: 'Comics'
         Game: 'Game'
         Other: 'Other'
     submit:
@@ -119,9 +120,9 @@ sources:
         key: 'Key'
         keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
         images: 'Images'
+        spoiler: 'Spoiler'
     otherVersions: 'In other languages'
     referenced: 'Examples of use'
-
 
 nouns:
     header: 'Dictionary'
@@ -395,7 +396,9 @@ links:
 
 people: ~
 
-# optional, but would be nice to have
+# this section is a short English-language explanation of how gendered and gender-neutral forms work in your language
+# see for example: https://zaimki.pl/english
+# it's optional, but would be nice to have
 english:
     header: 'English'
     headerLong: 'An overview in English'
@@ -418,6 +421,10 @@ contact:
         Wanna send us queerphobic hate mail?
         Just give it up, we're not discussing with trolls.
         It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+    language: >
+        We're an international team – people who created a specific language version
+        might not be the same people who will read your message.
+        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
     team:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
@@ -452,19 +459,48 @@ contact:
             allies: >
                 Some of those things require a perspective of a nonbinary person, others not necessarily.
                 That's why we also invite binary allies.
-            how: 'How to join? Send us and email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
             application:
                 - 'introduce yourself,'
                 - 'link to your pronouns.page profile,'
                 - 'link to your social media,'
-                - 'say, if you have some experience in activist work,'
-                - 'say, what would you like to help with.'
+                - 'say if you have some experience in activist work,'
+                - 'say what you would like to help with.'
+    contribute:
+        header: 'Contribute'
+        intro: >
+            Pronouns.page is an open-source project created by volunteers.
+            You can add your contribution too! Here's some areas where we'd appreciate your help.
+            Active contributors will be invited to join our team.
+        entries:
+            header: 'Add entries'
+            description: >
+                Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
+                If you think something's missing or incorrect, don't hesitate to submit your entry.
+        translations:
+            header: 'Add or correct translations'
+            description: >
+                A translation string is missing or incorrect?
+                Click on “Propose translations” in the footer and follow instructions.
+        version:
+            header: 'Create a new language version'
+            description: >
+                Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
+                Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
+        technical:
+            header: 'Submit a pull request'
+            description: >
+                Technical tasks are managed on {https://gitlab.com/Avris/Zaimki/-/boards=this kanban board}.
+                Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
+                Don't hesitate to ask questions.
+            footer: 'Technical tasks'
 
 support:
     header: 'Support'
     description: >
         If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
         you can use the links below:
+    bankAccount: 'Bank transfer'
 
 user:
     header: 'Account'
@@ -484,7 +520,6 @@ user:
             Registering lets you manage your cards ({/@example=like this one}).
         passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instance'
-        # TODO
         domainPlaceholder: 'Domain'
         deprecated: 'Deprecated'
         depreciationNotice: >
@@ -510,6 +545,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Change'
+        failed: 'Please reconnect your social media to fix the missing avatar.'
     deleteAccount: 'Delete account'
     deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
     socialConnection:
@@ -535,6 +571,9 @@ user:
         enable: 'Enable MFA'
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
+    qr:
+        header: 'QR code'
+        download: 'Download QR code'
 
 profile:
     description: 'Description'
@@ -551,16 +590,16 @@ profile:
         you can also use a colon shorthand (eg. “:star”).
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'Words'
+    wordsColumnHeader: 'Column header'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     flags: 'Flags'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: 'Links'
     linksRecommended: 'We recommend linking to'
-    # TODO
     verifiedLinks:
         header: 'Verified links'
         info: >
@@ -588,6 +627,7 @@ profile:
         close: 'Only if we''re close'
         meh: 'Okay'
         no: 'Nope'
+    bannerButton: 'Create a card'
     card:
         link: 'Card picture'
         generate: 'Generate'
@@ -611,8 +651,8 @@ crud:
     removeConfirm: 'Are you sure you want to remove this item?'
     edit: 'Edit'
     add: 'Add'
-    filter: 'Filter'
-    filterLong: 'Filter the list…'
+    filter: 'Search…'
+    filterLong: 'Search…'
     search: 'Search…'
     author: 'Added by'
     saved: 'Changes saved successfully!'
@@ -628,6 +668,20 @@ footer:
     financial: 'Financial transparency'
     technical: 'Technical'
     sibling: 'Sibling projects'
+    stats:
+        header: 'Stats'
+        overall: 'all language versions'
+        current: 'only this version'
+        keys:
+            users: 'Registered users'
+            cards: 'Cards'
+            visitors: 'Unique visitors'
+            pageviews: 'Page views'
+            realTimeVisitors: 'Currently online'
+            visitDuration: 'Avg visit duration'
+            uptime: 'Uptime'
+            responseTime: 'Avg response time'
+        month: 'month'
 
 notFound:
     message: 'Page was not found'
@@ -642,16 +696,154 @@ confirm:
     yes: 'Yes, I''m sure'
     no: 'No, cancel'
     ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: 'Save'
+    dismiss: 'Dismiss'
 
 terms:
     header: 'Terms of Service'
     lastUpdate: 'Last Updated'
     consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
+    content:
+        intro: >
+            These Terms of Service govern your access to and use of the Service provided on the website
+            <strong>pronouns.page</strong> and related subdomains and domains,
+            operated by the “Neutral Language Council” collective
+            who can be contacted via email:
+        consent: >
+            By using the Services you agree to be bound by these Terms of Service and you consent
+            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
+        accounts:
+            header: 'Users and accounts'
+            age: >
+                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
+                You cannot create an account, if you're under 13 years old.
+                If you're under 16 years old, you need consent of the holder of parental responsibility.
+            authentication: >
+                When you create an account with us, you are responsible for safeguarding the authentication method
+                that you use to access the Service (that is: password to your email account and/or social media platform).
+                You agree not to disclose it to any third party.
+                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+            termination: >
+                We may terminate or suspend your account immediately, without prior notice or liability,
+                for any reason whatsoever, including without limitation if you breach the Terms.
+            inactivity: >
+                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+        content:
+            header: 'Content'
+            ownership: >
+                The Content you post on the Service is yours.
+                By posting it, you grant us a worldwide, royalty-free license
+                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+            liability: >
+                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
+                and in particular of any links to any external websites.
+            violations: >
+                It is forbidden to post on the Service any Content that might break the law or violate social norms,
+                including but not limited to:
+            violationsExamples:
+                totalitarian: 'propagation of totalitarian regimes'
+                hateSpeech: 'hate speech'
+                racism: 'racism'
+                xenophobia: 'xenophobia'
+                homophobia: 'homophobia'
+                transphobia: 'transphobia'
+                enbyphobia: 'enbyphobia'
+                queerphobia: 'queerphobia'
+                exclusionism: 'queer exclusionism'
+                sexism: 'sexism'
+                misogyny: 'misogyny'
+                harassment: 'harassment'
+                impersonation: 'impersonation'
+                selfHarm: 'encouraging self-harm and/or suicide'
+                childPornography: 'child pornography'
+                unlawfulConduct: 'unlawful conduct'
+                misinformation: 'misinformation'
+                doxxing: 'sharing of someone else''s personal data'
+                spam: 'spam'
+                trolling: 'trolling'
+                advertisement: 'advertisement'
+                copyright: 'copyright or trademark violations'
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
+            responsibility: >
+                You are responsible for any Content posted on the Service.
+                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
+                If you break the law, we will pass your information to law enforcement agencies.
+        closing:
+            header: 'General'
+            jurisdiction: >
+                The applicable law is the law of the Kingdom of Netherlands.
+            changes: >
+                We reserve the right to modify these Terms of Service at any time.
+                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Privacy Policy'
+    # you can skip translating the rest of the "privacy" section
+    content:
+        intro: >
+            This Privacy Policy describes how the Service provided on the website
+            <strong>pronouns.page</strong> and related subdomains and domains
+            manages your personal data.
+            The Service is operated by the “Neutral Language Council” collective
+            who can be contacted via email:
+        effort: >
+            We make every effort to store your data securely and to ensure that any non-public data we store
+            are not seized by or transferred to any third party, except those trusted parties described below.
+        data: >
+            Other than the data that you explicitly post on the Service as Content
+            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
+            no additional private data connected to your account is being stored or processed by the Service.
+        editRemoval: >
+            You may edit or remove any Content you have posted on the Service.
+        contact: >
+            When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+        cookies: >
+            We only use first-party cookies and local storage to keep you logged in and save your preferences.
+        plausible: >
+            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
+            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+        arc: >
+            We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
+            You can read more about them and their privacy policy
+            {https://arc.io/faq=<strong>here</strong>}.
+        hCaptcha: >
+            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
+            You can read their privacy policy
+            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
+        ezoic: >
+            In order to fund the project we show ads using a third party technology called <strong>Ezoic</strong>.
+            You can opt-in to allow them to personalise your experience.
+            Their privacy policy is available {https://g.ezoic.net/privacy/pronouns.page=<strong>here</strong>}.
+        logsBackups: >
+            Logs and backups are stored for no longer than 18 months.
+        gdpr: >
+            Your personal data are protected by the GDPR, which means you have the right
+            to see, correct, update and remove the data we store about you.
+    consent:
+        header: 'Cookie consent'
+        required:
+            header: 'Required cookies'
+            description: >
+                We use cookies and local storage to save your preferences (eg. dark mode)
+                and we use privacy-friendly third-party tools (hCaptcha, Plausible) that might store their own cookies.
+            details: 'You can read more in our {/privacy=Privacy Policy}.'
+        optional:
+            header: 'Optional cookies'
+            description: >
+                We show ads to fund the project.
+                You can agree for related third-parties to store information about you
+                for the purposes of gathering statistics and personalising ads.
+            details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'
+        accept: 'Accept'
+        reject: 'Reject'
+        revoke: 'Reset cookie consent settings'
 
 admin:
     header: 'Admin panel'
@@ -709,10 +901,9 @@ ban:
     terms: 'Terms rules broken (required)'
     action: 'Ban this person'
     confirm: 'Are you sure you want to ban @%username%?'
-    header: 'Your profile will not be shown to anyone.'
+    header: 'Your profile is no longer public.'
     banned: 'Profile not published'
     termsIntro: 'According to our {/terms=Terms of Service}'
-    # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
@@ -730,98 +921,113 @@ report:
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
 
+translationMode:
+    header: 'Translation Mode'
+    action: 'Propose translations'
+    welcome: >
+        Is there a translation missing or an existing one needs a correction?
+        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
+        In this mode clicking on a bordered piece of text will open a dialogue box,
+        in which you can modify the translation and compare it to the English text.
+        Remember to click on the button “Commit changes” once you're done.
+    logIn: 'You need to be logged in to propose translations'
+    changes: 'Changes'
+    commit: 'Commit changes'
+    revert: 'Revert changes'
+    pause: 'Pause Translation Mode'
+
 flags:
-    Abroromantic: 'Abrorrománti{inflection_c}'
+    Abroromantic: 'Abroromantic'
     Abrosexual: 'Abrosexual'
-    Achillean: 'Aquilean{inflection}'
-    Alloromantic_Asexual: 'Alorrománti{inflection_c} asexual'
-    Agender: 'Agénero'
-    Ambiamorous: 'Ambiamoros{inflection}'
-    Anarcha-Queer: 'Anarco-queer'
-    Androgyne: 'Andrógin{inflection}'
+    Achillean: 'Achillean'
+    Alloromantic_Asexual: 'Alloromantic Asexual'
+    Agender: 'Agender'
+    Ambiamorous: 'Ambiamorous'
+    Anarcha-Queer: 'Anarcha-Queer'
+    Androgyne: 'Androgyne'
     Androsexual: 'Androsexual'
-    Aporagender: 'Aporagénero'
-    Archaeopronouns: 'Arqueopronombres'
-    Aroace: 'Arro-as'
-    Aromantic: 'Arrománti{inflection_c}'
-    Aromantic_Allosexual: 'Arrománti{inflection_c} alosexual'
+    Aporagender: 'Aporagender'
+    Archaeopronouns: 'Archaeopronouns'
+    Aroace: 'Aroace'
+    Aromantic: 'Aromantic'
+    Aromantic_Allosexual: 'Aromantic Allosexual'
     Asexual: 'Asexual'
-    Autigender: 'Autisgénero'
-    Bear: 'Oso'
-    Bicurious: 'Bicurios{inflection}'
-    Bigender: 'Bigénero'
-    Biromantic: 'Birrománti{inflection_c}'
+    Autigender: 'Autigender'
+    Bear: 'Bear'
+    Bicurious: 'Bicurious'
+    Bigender: 'Bigender'
+    Biromantic: 'Biromantic'
     Bisexual: 'Bisexual'
     Butch: 'Butch'
-    Ceteroromantic: 'Ceterorrománti{inflection_c}'
+    Ceteroromantic: 'Ceteroromantic'
     Ceterosexual: 'Ceterosexual'
-    Cis_Ally: 'Aliad{inflection} cis'
-    Demiboy: 'Demichico'
-    Demigender: 'Demigénero'
-    Demigirl: 'Demichica'
-    Demiromantic: 'Demirrománti{inflection_c}'
+    Cis_Ally: 'Cis Ally'
+    Demiboy: 'Demiboy'
+    Demigender: 'Demigender'
+    Demigirl: 'Demigirl'
+    Demiromantic: 'Demiromantic'
     Demisexual: 'Demisexual'
-    Diamoric: 'Diamóri{inflection_c}'
-    Enbian: 'Nobian{inflection}'
+    Diamoric: 'Diamoric'
+    Enbian: 'Enbian'
     Fa*afafine: 'Fa''afafine'
-    Femme: 'Afeminad{inflection}'
+    Femme: 'Femme'
     Gay: 'Gay'
-    Gender_Questioning: 'Cuestionándose el género'
-    Genderfae: 'Hadagénero'
-    Genderfaun: 'Faunogénero'
-    Genderfluid: 'Género fluido'
-    Genderflux: 'Flujogénero'
-    Genderqueer: 'Género queer'
-    Greyasexual: 'Grisexual'
-    Greyaromantic: 'Grisrrománti{inflection_c}'
-    Gynesexual: 'Ginosexual'
+    Gender_Questioning: 'Gender Questioning'
+    Genderfae: 'Genderfae'
+    Genderfaun: 'Genderfaun'
+    Genderfluid: 'Genderfluid'
+    Genderflux: 'Genderflux'
+    Genderqueer: 'Genderqueer'
+    Greyasexual: 'Greyasexual'
+    Greyaromantic: 'Greyaromantic'
+    Gynesexual: 'Gynesexual'
     Heteroflexible: 'Heteroflexible'
-    Heteroromantic: 'Heterorrománti{inflection_c}'
+    Heteroromantic: 'Heteroromantic'
     Heterosexual: 'Heterosexual'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexible'
-    Homoromantic: 'Homorrománti{inflection_c}'
-    Intersex: 'Intersexual'
+    Homoromantic: 'Homoromantic'
+    Intersex: 'Intersex'
     LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Orgullo de cuero'
-    Lesbian: 'Lesbiana'
-    Lesbiromantic: 'Lesbirrománti{inflection_c}'
+    Leather_Pride: 'Leather Pride'
+    Lesbian: 'Lesbian'
+    Lesbiromantic: 'Lesbiromantic'
     Maverique: 'Maverique'
-    Monoamorous: 'Monoamoros{inflection}'
-    Monogamous: 'Monógam{inflection}'
+    Monoamorous: 'Monoamorous'
+    Monogamous: 'Monogamous'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebulosarrománti{inflection_c}'
-    Neopronouns: 'Neopronombres'
-    Neutrois: 'Neutrés'
-    Nonbinary: 'No binari{inflection}'
+    Nebularomantic: 'Nebularomantic'
+    Neopronouns: 'Neopronouns'
+    Neutrois: 'Neutrois'
+    Nonbinary: 'Nonbinary'
     Omnisexual: 'Omnisexual'
-    Omniromantic: 'Omnirrománti{inflection_c}'
-    Oriented_Aroace: 'Arro-as orientad{inflection}'
-    Pangender: 'Pangénero'
-    Panromantic: 'Panrrománti{inflection_c}'
+    Omniromantic: 'Omniromantic'
+    Oriented_Aroace: 'Oriented Aroace'
+    Pangender: 'Pangender'
+    Panromantic: 'Panromantic'
     Pansexual: 'Pansexual'
-    Polyamorous: 'Poliamoros{inflection}'
-    Polyromantic: 'Polirrománti{inflection_c}'
-    Polysexual: 'Polisexual'
-    Pomoromantic: 'Pomorrománti{inflection_c}'
+    Polyamorous: 'Polyamorous'
+    Polyromantic: 'Polyromantic'
+    Polysexual: 'Polysexual'
+    Pomoromantic: 'Pomoromantic'
     Pomosexual: 'Pomosexual'
-    Progress_Pride: 'Orgullo progresivo'
-    Queer: 'Queer (cuir)'
-    Queerian: 'Queerian{inflection}'
-    Queerplatonic: 'Queerplatóni{inflection_c}'
-    Quoiromantic: 'Querrománti{inflection_c}'
-    Sapphic: 'Sáfi{inflection_c}'
-    Sexuality_Questioning: 'Cuestionándose la sexualidad'
-    Straight_Ally: 'Aliad{inflection} hetero'
-    Toric: 'Tóri{inflection_c}'
-    Transfeminine: 'Transfemenin{inflection}'
-    Transgender: 'Transgénero'
-    Transmasculine: 'Transmasculin{inflection}'
-    Transneutral: 'Transneutr{inflection}'
-    Trigender: 'Trigénero'
-    Trixic: 'Tríci{inflection_c}'
-    Two_Spirit: 'Dos espíritus'
-    Xenogender: 'Xenogénero'
+    Progress_Pride: 'Progress Pride'
+    Queer: 'Queer'
+    Queerian: 'Queerian'
+    Queerplatonic: 'Queerplatonic'
+    Quoiromantic: 'Quoiromantic'
+    Sapphic: 'Sapphic'
+    Sexuality_Questioning: 'Sexuality Questioning'
+    Straight_Ally: 'Straight Ally'
+    Toric: 'Toric'
+    Transfeminine: 'Transfeminine'
+    Transgender: 'Transgender'
+    Transmasculine: 'Transmasculine'
+    Transneutral: 'Transneutral'
+    Trigender: 'Trigender'
+    Trixic: 'Trixic'
+    Two_Spirit: 'Two Spirit'
+    Xenogender: 'Xenogender'
 
 calendar:
     header: 'Calendar'
@@ -854,76 +1060,114 @@ calendar:
         11: 'November %day%'
         12: 'December %day%'
     events:
-        pride_month: '{/terminology#pride=Pride} Month'
-        trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
+        pride_month: 'Pride Month'
+        trans_month: 'International Trans Awareness Month'
         zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
-        asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
-        bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
-        drag_day: '{/terminology#drag=Drag} Day'
-        idahobit: 'International Day Against {/terminology#homophobia=Homophobia}, {/terminology#transphobia=Transphobia} and {/terminology#biphobia=Biphobia}'
-        intersex_day: '{/terminology#intersex=Intersex} Awareness Day'
-        intersex_remembrance_day: '{/terminology#intersex=Intersex} Day of Remembrance'
-        lesbian_day: 'International {/terminology#lesbian=Lesbian} Day'
-        lesbian_visibility_day: 'International {/terminology#lesbian=Lesbian} Visibility Day'
-        coming_out_day: '{/terminology#coming%20out=Coming Out} Day'
-        nonbinary_day: 'International {/terminology#nonbinary=Nonbinary People''s} Day'
-        pan_day: '{/terminology#pansexual=Pansexual} & {/terminology#panromantic=Panromantic} Awareness Day'
-        trans_remembrance_day: '{/terminology#transgender=Transgender} Day of Remembrance'
-        trans_visibility_day: 'International {/terminology#transgender=Trans} Day of Visibility'
+        agender_day: 'Agender Pride Day	'
+        asexuality_day: 'International Asexuality Day'
+        bisexuality_day: 'Celebrate Bisexuality Day'
+        drag_day: 'Drag Day'
+        idahobit: 'International Day Against Homophobia, Transphobia and Biphobia'
+        intersex_day: 'Intersex Awareness Day'
+        intersex_remembrance_day: 'Intersex Day of Remembrance'
+        lesbian_day: 'International Lesbian Day'
+        lesbian_visibility_day: 'International Lesbian Visibility Day'
+        coming_out_day: 'Coming Out Day'
+        nonbinary_day: 'International Nonbinary People''s Day'
+        pan_day: 'Pansexual & Panromantic Awareness Day'
+        trans_remembrance_day: 'Transgender Day of Remembrance'
+        trans_visibility_day: 'International Trans Day of Visibility'
         zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: '{/terminology#aromantic%20spectrum=Aromantic Spectrum} Awareness Week'
-        asexual_week: '{/terminology#asexual=Asexual} Awareness Week'
-        bisexual_week: '{/terminology#bisexual=Bisexual} Awareness Week'
+        arospec_week: 'Aromantic Spectrum Awareness Week'
+        asexual_week: 'Asexual Awareness Week'
+        bisexual_week: 'Bisexual Awareness Week'
         pronouns_day: 'Pronouns Day'
-        trans_week: '{/terminology#transgender=Trans} Awareness Week'
-        trans_parent_day: '{/terminology#transgender=Trans} Parent Day'
-        nonbinary_week: '{/terminology#nonbinary=Nonbinary} Awareness Week'
+        trans_week: 'Trans Awareness Week'
+        trans_parent_day: 'Trans Parent Day'
+        nonbinary_week: 'Nonbinary Awareness Week'
         nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: '{/terminology#polyamory=Polyamory} Day'
-        homophobia_sport: 'International Day Against {/terminology#homophobia=Homophobia} in Sports'
-        gay_uncles_day: '{/terminology#gay=Gay} Uncles Day'
-        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
-        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
-        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
-        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
-        nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents Day'
-        trans_prisoner: '{/terminology#transgender=Transgender} Prisoner Day of Action and Solidarity'
-        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Visibility Day'
-        genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
-        genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
+        polyamory_day: 'Polyamory Day'
+        homophobia_sport: 'International Day Against Homophobia in Sports'
+        gay_uncles_day: 'Gay Uncles Day'
+        lgbtq_stem: 'LGBTQ+ STEM Day'
+        trans_depathologization: 'International Day of Action for Trans Depathologization'
+        lgbti_book_day: 'International LGBTI Book Day'
+        human_rights_day: 'Human Rights Day'
+        nonbinary_parents_day: 'Nonbinary Parents'' Day'
+        trans_prisoner: 'Transgender Prisoner Day of Action and Solidarity'
+        xenogender_day: 'Xenogender Visibility Day'
+        genderqueer_day: 'Genderqueer Visibility Day'
+        genderfluid_day: 'Genderfluid Visibility Day'
         aids_day: 'World AIDS Day'
         tolerance_day: 'International Day of Tolerance'
         social_justice_day: 'World Day of Social Justice'
         stonewall_day: 'Anniversary of Stonewall Riots'
         domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: '{/terminology#polysexual=Polysexual} & {/terminology#polyromantic=Polyromantic} Visibility Day'
+        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
         orlando_day: 'Pulse Night of Remembrance'
         aids_memorial: 'International AIDS Candlelight Memorial'
         health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
-        demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
-        pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
-        transmasculine_day: '{/terminology#transmasculine=Transmasculine} People''s Day'
-        asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
-        bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
+        lesbian_visibility_week: 'Lesbian Visibility Week'
+        demigender_day: 'Demigender Awareness Day'
+        pan_pride_day: 'Pansexual Pride Day'
+        transmasculine_day: 'Transmasculine People''s Day'
+        asexual_visibility_day: 'Asexual Visibility Day'
+        bi_health_month: 'Bisexual Health Awareness Month'
         holocaust_remembrance_day: 'International Holocaust Remembrance Day'
         family_equality_day: 'International Family Equality Day'
-        aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
+        aro_month: 'Aromantic Awareness Month'
         black_ribbon_day: 'Black Ribbon Day'
-        black_queer_week: 'Black {/terminology#queer=Queer} History Week'
-        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
+        black_queer_week: 'Black Queer History Week'
+        mena_lesbian_day: 'West Asian and North African Lesbian and Queer Women''s Pride Day'
         hate_crime_awareness_week: 'Hate Crime Awareness Week'
         deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
         suicide_prevention_day: 'World Suicide Prevention Day'
         suicide_prevention_month: 'Suicide Prevention Month'
         aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
-        pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
+        genderfluid_week: 'Genderfluid Awareness Week'
+        pan_week: 'Pan Week'
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-    banner: 'We''re celebrating'
+        sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
+        world_sexual_health_day: 'World Sexual Health Day'
+        aids_vaccine_day: 'World AIDS Vaccine Day'
+        queer_youth_day: 'Queer Youth Day'
+        omnisexual_day: 'Omnisexual Visibility Day'
+        unlabeled_day: 'Unlabeled Visibility Day'
+        trans_youth_day: 'Trans Children and Youth Visibility Day'
+        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day'
+        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day'
+        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day'
+        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day'
+        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
+        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
+        trans_hiv_testing_day: 'Transgender HIV Testing Day'
+        mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'
+        mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'
+        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'
+        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'
+        spring_testing_week: 'Spring European HIV Testing Week'
+        autumn_testing_week: 'Autumn European HIV Testing Week'
+        sex_worker_day: 'International Sex Worker Day'
+        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day'
+        sex_worker_pride: 'Sex Worker Pride'
+        sex_worker_rights_day: 'International Sex Workers'' Rights Day'
+        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers'
+        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day'
+        omnisexual_awareness_day: 'Omnisexual Awareness Day'
+        hiv_is_not_a_crime: 'HIV Is Not A Crime Day'
+        trans_flag_day: 'Trans Flag Day'
+        alan_turing_day: 'Alan Turing Day'
+        nonbinary_kids_day: 'Nonbinary Kids'' Day'
+        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week'
+        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
+        trans_history_month: 'Transgender History Month'
+        transition_week: 'Transition Week'
+        bi_creators_day: 'Bisexual Creators Day'
+        wrath_month: 'Queer Wrath Month'
+        lesbian_aunts_day: 'Lesbian Aunts Day'
+    banner: 'We''re celebrating/commemorating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
     celebrating_week: 'is celebrated on'
@@ -938,4 +1182,4 @@ calendar:
 
 ukraine:
     header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/italy=Here''s how you can support it.}'
+    link: '{https://supportukrainenow.org=Here''s how you can support it.}'
