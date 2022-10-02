@@ -612,7 +612,12 @@ router.get('/admin/impersonate/:email', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    return res.json({token: await issueAuthentication(req.db, {email: req.params.email})});
+    let email = req.params.email;
+    if (!email.includes('@')) {
+        email = (await req.db.get(SQL`SELECT email FROM users WHERE usernameNorm = ${normalise(email)}`)).email;
+    }
+
+    return res.json({token: await issueAuthentication(req.db, {email: email})});
 }));
 
 export default router;

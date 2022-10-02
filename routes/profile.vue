@@ -116,6 +116,10 @@
                                 pronouns.page/u/{{user.username}}
                             </span>
                         </a>
+                        <a v-if="$isGranted('*')" href="#"
+                           class="list-group-item list-group-item-action list-group-item-hoverable small"
+                           @click.prevent="impersonate()"><Icon v="user-secret"/> Impersonate
+                        </a>
                     </div>
                 </div>
 
@@ -273,6 +277,13 @@
                 const bestKey = Math.max(...Object.keys(best));
 
                 return bestKey >= 0 ? best[bestKey].slice(0, 3) : [];
+            },
+            async impersonate() {
+                const { token } = await this.$axios.$get(`/admin/impersonate/${encodeURIComponent(this.username)}`);
+                this.$cookies.set('impersonator', this.$cookies.get('token'));
+                this.$cookies.set('token', token);
+                await this.$router.push('/' + this.config.user.route);
+                setTimeout(() => window.location.reload(), 500);
             },
         },
         head() {
