@@ -225,7 +225,7 @@ export default {
         HEARTBEAT_LINK: process.env.HEARTBEAT_LINK,
     },
     serverMiddleware: [
-        // '~/server/no-ssr.js',
+        '~/server/no-ssr.js',
         '~/server/index.js'
     ],
     axios: {
