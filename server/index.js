@@ -35,8 +35,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
-app.use(csurf({ cookie: true }));
-app.use(csrfHandleError())
+// app.use(csurf({ cookie: true }));
+// app.use(csrfHandleError())
 
 class LazyDatabase {
     constructor() {
