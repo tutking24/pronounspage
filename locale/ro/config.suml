@@ -299,16 +299,16 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: ~
+            header: 'Onorifice'
             values: ['[fără onorific]', 'd-x', 'd-le', 'd-na', 'domnul', 'doamnă', 'mirul', 'mireasa', 'tovarășe']
         -
-            header: ~
+            header: 'Descrieri familiale/personale'
             values: ['persoană', 'bărbat', 'femeie', 'doamnă', 'om', 'băiat', 'fată', 'prietenaș', 'amic', 'frate', 'soră', 'rudă']
         -
-            header: ~
+            header: 'Complimente'
             values: ['frumoasă', 'frumos', 'drăguț', 'hot', 'sexy', 'arătos', 'perfectă', 'perfect']
         -
-            header: ~
+            header: 'Descrieri în relație'
             values: ['prieten', 'partener', 'iubit', 'iubită', 'soț', 'soție', 'gagică', 'gagic', 'drag']
     flags:
         defaultPronoun: 'el'
