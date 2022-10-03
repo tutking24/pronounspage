@@ -9,8 +9,8 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Emne</th>
-                    <th>Gjenstand</th>
+                    <th>Subjekt</th>
+                    <th>Objekt</th>
                     <th>Possessiv</th>
                     <th>Refleksiv</th>
                 </tr>
