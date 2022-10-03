@@ -354,7 +354,7 @@ contact:
         logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。'
         members: '份子'
         member: '集體中的成員'
-        upcoming: '即將到來語言文本'  # TODO: change wording
+        upcoming: '即將推出的語言文本'
         # TODO join: …
     contribute:
         header: '貢獻'
@@ -413,12 +413,12 @@ user:
     account:
         changeUsername:
             header: '用戶名稱'
-            action: '更改'
+            action: '更改用戶名稱'
             invalid: '用戶名必須介於4到16個字符之間，並且只能包含數字，字母，點，連字符和下劃線。'
             taken: '該用戶名稱已被使用。'
         changeEmail:
             header: '電郵地址'
-            action: '更改'
+            action: '更改電郵地址'
             invalid: '無效電子郵件'
             taken: '這個電子郵件已被使用。'
         admin: '管理員'
@@ -454,7 +454,7 @@ user:
         download: '下載QR碼'
 
 profile:
-    description: '傳記'
+    description: '關於自己'
     names: '名字'
     pronouns: '代詞'
     pronounsInfo: >
@@ -492,7 +492,7 @@ profile:
         header: '編輯卡片'
         save: '保存卡片'
         defaults: '還原至預設'
-        propagate: '將此變更發放至所有語言的卡片' # TODO: change wording
+        propagate: '將此變更發放至所有語言的卡片'
     opinion:
         yes: '至愛'
         jokingly: '諧謔'
