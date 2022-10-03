@@ -329,6 +329,35 @@ faq:
                     Nicht-binäre Menschen können binäre Pronomen verwenden, einige Lesben verwenden {/er=er/ihm} aus kulturellen Gründen, etc.
                 - >
                     Sag einfach „Pronomen“.
+        flags:
+            question: 'Kann ich diese Flagge hinzufügen? Kann ich jene Flagge entfernen?'
+            answer:
+                - 'Nein.'
+                - >
+                    Das Verwalten der Flaggen- und Labellisten wird für unser Team immer zeitaufwändiger. Es ist auch
+                    eine Herausforderung, Trolle und Vandalen von gültigen, gutgläubigen Identitäten herauszufiltern. Wir
+                    wollen keine Identitätspolizei sein. Und wir wollen auch nicht unsere ganze Zeit mit der Verwaltung
+                    von Flaggen verbringen. Es ist letztlich ein Projekt über Sprache und Pronomen, nicht über Flaggen.
+                    Sie sind nur ein Bonus.
+                - >
+                    Wir haben unser Bestes getan, um eine Liste der beliebtesten und nach unserem besten Wissen,
+                    allgemein akzeptierten Flaggen auszuwählen. Wir planen nicht, diese Liste zu vergrößern oder zu
+                    verkleinern.
+                - >
+                    Wir sind uns bewusst, dass einige Flaggen von einigen möglicherweise nicht gemocht werden (z. B.
+                    aufgrund von Geschichten von TERFs, die versuchen, einen Begriff zu übernehmen und ihn transphob zu
+                    machen, aufgrund mehrerer verwirrender Definitionen oder sogar aufgrund von Aspekten des Lebens eines
+                    Mythoscharakter's). Wir sind selbst queer und trans, und wir kümmern uns um unsere trans-Geschwister.
+                    Leider ist es sehr schwierig, solche Entscheidungen zu treffen, wenn wir Nachrichten von
+                    Transmenschen erhalten, die darum bitten, eine Flagge hinzuzufügen, mit der sie sich ehrlich
+                    identifizieren, und auch von anderen Transmenschen, die darum bitten, sie zu entfernen, weil es
+                    Transmenschen ihrer meinung nach weh tut. Es ist nicht so, dass die Geschichte jedes Labels klar ist
+                    oder dass es eine maßgebliche Quelle gibt, um sie nachzuschlagen. Und selbst wenn Queerphobe
+                    versuchen, einige Begriffe verletzend zu machen, glauben wir an die Macht der Community, hasserfüllte
+                    Begriffe zurückzuerobern.
+                - >
+                    Wenn du eine Flagge nicht magst, verwende sie einfach nicht. Wenn deine Flagge fehlt, lade sie
+                    einfach hoch (sie wird dann als nutzergeneriert markiert, um Vandalismus vorzubeugen).
 
 links:
     header: 'Links'
