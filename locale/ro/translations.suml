@@ -675,6 +675,7 @@ profile:
         poți să folosești două puncte (ex: „:stea”).
     pronounsNotFound: 'Nu putem găsi acest pronume!'
     words: 'Cuvinte'
+    wordsColumnHeader: 'Titlul coloanei'
     birthday: 'Vârstă'
     birthdayInfo: 'Nu îți publicăm data nașterii, doar vârsta.'
     flags: 'Steaguri'

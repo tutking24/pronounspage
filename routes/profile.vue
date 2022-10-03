@@ -87,7 +87,7 @@
 
                 <div class="my-2 col-12 col-lg-4 col-xxl-12">
                     <AdPlaceholder phkey="aside-right-middle"/>
-                    <div v-if="Object.keys(user.profiles).length > 1" class="list-group list-group-flare">
+                    <div v-if="Object.keys(user.profiles).length > 1 || $isGranted('*')" class="list-group list-group-flare">
                         <div class="list-group-item pt-3">
                             <h5>
                                 <Icon v="language"/>
