@@ -116,16 +116,16 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: ~
+            header: '稱謂'
             values: ['沒有尊稱', '君', '先生', '小姐', '夫人', '同志', '太太']
         -
-            header: ~
+            header: '個人及家庭描述詞'
             values: ['男', '女', '哥哥/弟弟', '姐姐/妹妹', '朋友']
         -
-            header: ~
+            header: '讚美用詞'
             values: ['可愛', '美麗', '性感', '好看', '帥哥']
         -
-            header: ~
+            header: '關係用詞'
             values: ['男朋友', '女朋友', '知音', '丈夫', '妻子']
     flags:
         defaultPronoun: '他'
