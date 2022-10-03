@@ -398,6 +398,10 @@ contact:
             header: 'Lag en ny språk versjon'
         translations:
             header: 'Legg til eller rett oversettelser'
+        technical:
+            footer: 'Tekniske oppgaver'
+        entries:
+            header: 'Legg til bidrag'
 
 support:
     header: 'Hjelp'
@@ -582,6 +586,7 @@ footer:
             users: 'Registrerte brukere'
             realTimeVisitors: 'Online nå'
             visitors: 'Unike brukere'
+            uptime: 'Oppetid'
         current: 'bare denne versjonen'
         overall: 'alle språk versjoner'
         header: 'Statistikk'
@@ -601,6 +606,7 @@ confirm:
     no: 'Nei, kanseller'
     ok: 'OK'
     save: 'Lagre'
+    dismiss: 'Avvis'
 
 terms:
     header: 'Vilkår og betingelser'
