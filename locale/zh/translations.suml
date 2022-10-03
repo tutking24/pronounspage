@@ -458,23 +458,24 @@ profile:
     names: '名字'
     pronouns: '代詞'
     pronounsInfo: >
-        您可以輸入代詞（例如“<strong>他</strong>”或“<strong>他/你</strong>”
+        您可以輸入代詞（例如“<strong>他</strong>”或“<strong>他/你</strong>”）
         或<strong>鏈接</strong>（例如“https://zh.pronouns.page/佢”）
     # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-    pronounsNotFound: '我們找不到這個代詞的鏈接'  # TODO 'Unrecognised format. Please check out the instruction above.'
+    pronounsNotFound: '未能偵測此格式，請查看以上的指示。'
     words: '詞匯'
+    wordsColumnHeader: '標題'
     birthday: '年齡'
     birthdayInfo: '我們不會發布您的生日日期，只會發布計算出的年齡。'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
-    flagsCustomWarning: '此旗幟由一名用戶上傳。pronouns.page團隊不為此負責'
+    flagsCustomWarning: '此旗幟是由一名用戶上傳的，pronouns.page團隊不為此負責'
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
     # TODO
     verifiedLinks:
-        header: 'Verified links'
+        header: '已認證鏈結'
         info: >
             The links that one puts publicly in one's profile will be marked with the shield icon,
             if they are verified by logging in using the given authentication provider,
@@ -515,7 +516,7 @@ profile:
     loginRequired: '{/account=登入}以提交項目'
     personal:
         header: '個人'
-        description: '只有您才能看見此部分'
+        description: '只有您能看見此部分'
     language:
         header: '語言'
         description: '@%username%的名片亦有其他語言的版本'
@@ -554,6 +555,8 @@ footer:
         keys:
             users: '已登記用戶'
             cards: '名片'
+            uptime: '運行時間'
+            visitDuration: '平均瀏覽時間'
             visitors: '獨特訪問者'
             pageviews: '瀏覽次數'
             realTimeVisitors: '在線用戶'
@@ -568,9 +571,9 @@ authRequired:
     go: '進入登錄表格'
 
 confirm:
-    header: '你有準兒沒有？'
-    yes: '是的，我有準兒!'
-    no: '不是…'
+    header: '您確定？'
+    yes: '是的，我肯定'
+    no: '不，取消'
     ok: 'OK'
     save: '儲存'
     dismiss: '取消'
