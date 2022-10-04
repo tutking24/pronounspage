@@ -12,7 +12,6 @@
                     <th>Subjekt</th>
                     <th>Objekt</th>
                     <th>Possessiv</th>
-                    <th>Refleksiv</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -20,7 +19,6 @@
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
