@@ -17,7 +17,7 @@ we need to fix the schema.
 Originally, we had three “opinion” options: “Yes!” (`1`), “Meh” (`0`) and “Nope” (`-1`).
 While it made sense for that set to be represented by sortable integers, it doesn't anymore:
 we've added “Jokingly” and “Only, if we're close”, and they don't easily fit on a scale.
-In `v2` opinions will be represented by human-readable strings: `'yes'`, `'meh'`, `'nope'`, `'jokingly'` and `'close'`.
+In `v2` opinions will be represented by human-readable strings: `'yes'`, `'meh'`, `'no'`, `'jokingly'` and `'close'`.
 This also opens up the system to custom opinions.
 
 Fields `names`, `pronouns`, `customFlags` and `words` won't contain dictionaries (`value => opinion`) anymore,
@@ -31,7 +31,7 @@ const namesV1 = {
 
 const namesV2 = [
     { value: 'Zuzu', opinion: 'yes' },
-    { value: '[deadname]', opinion: 'nope' },
+    { value: '[deadname]', opinion: 'no' },
 ];
 ```
 
@@ -65,13 +65,13 @@ const wordsV1 = [
 
 const wordsV2 = [
     { header: 'honorifics', values: [
-        {value: 'sir', opinion: 'nope'},
-        {value: 'madam', opinion: 'nope'},
+        {value: 'sir', opinion: 'no'},
+        {value: 'madam', opinion: 'no'},
     ] },
     { header: 'relationship descriptions', values: [
         {value: 'partner', opinion: 'yes'},
-        {value: 'boyfriend', opinion: 'nope'},
-        {value: 'girlfriend', opinion: 'nope'},
+        {value: 'boyfriend', opinion: 'no'},
+        {value: 'girlfriend', opinion: 'no'},
     ] },
 ];
 ```
