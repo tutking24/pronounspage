@@ -1244,6 +1244,7 @@ user:
     header: 'Konto'
     headerLong: 'Twoje konto'
     tokenExpired: 'Sesja wygasła. Odśwież stronę i spróbuj ponownie.'
+    tooManyAttempts: 'Zbyt wiele prób. Dostęp do Twojego konta został tymczasowo zablokowany. Spróbuj później.'
     login:
         help: 'Aby zalogować się lub założyć konto, użyj opcji logowania za pomocą mediów społecznościowych lub wpisz swój email w polu poniżej, a następnie potwierdź kod, który otrzymasz na swoją skrzynkę.'
         placeholder: 'Email (lub nazwa użytkownicza, jeśli już posiadasz konto)'

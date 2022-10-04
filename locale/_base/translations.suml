@@ -506,6 +506,7 @@ user:
     header: 'Account'
     headerLong: 'Your account'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
+    tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
     login:
         help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
         placeholder: 'Email (or username, if you''re already registered)'

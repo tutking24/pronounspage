@@ -1,7 +1,14 @@
 import { Router } from 'express';
 import {handleErrorAsync} from "../../src/helpers";
 import speakeasy from 'speakeasy';
-import {saveAuthenticator, findAuthenticatorsByUser, invalidateAuthenticator, issueAuthentication, normalise} from './user';
+import {
+    saveAuthenticator,
+    findAuthenticatorsByUser,
+    invalidateAuthenticator,
+    issueAuthentication,
+    normalise,
+    fetchLoginAttempts, saveLoginAttempts
+} from './user';
 import cookieSettings from "../../src/cookieSettings";
 
 
@@ -92,6 +99,11 @@ router.post('/mfa/validate', handleErrorAsync(async (req, res) => {
 
     const authenticator = (await findAuthenticatorsByUser(req.db, req.rawUser, 'mfa_secret'))[0];
 
+    const { attemptCount, firstAttemptAt, block } = await fetchLoginAttempts(req.db, authenticator.userId);
+    if (block) {
+        return res.json({error: 'user.tooManyAttempts'});
+    }
+
     let tokenValidates = speakeasy.totp.verify({
         secret: authenticator.payload,
         encoding: 'base32',
@@ -104,6 +116,8 @@ router.post('/mfa/validate', handleErrorAsync(async (req, res) => {
     }
 
     if (!tokenValidates) {
+        await saveLoginAttempts(req.db, authenticator.userId, attemptCount + 1, firstAttemptAt || new Date());
+
         return res.json({error: 'user.code.invalid'});
     }
 

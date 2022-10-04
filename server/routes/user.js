@@ -248,6 +248,29 @@ const resetCards = async (db, id) => {
     await db.get(SQL`UPDATE profiles SET card = null, cardDark = null WHERE userId = ${id}`);
 }
 
+const MAX_LOGIN_ATTEMPTS_COUNT = 3;
+const MAX_LOGIN_ATTEMPTS_BLOCK_MS = 60 * 60 * 1000;
+
+export const fetchLoginAttempts = async (db, userId) => {
+    const user = await db.get(SQL`SELECT loginAttempts FROM users WHERE id = ${userId}`);
+
+    let [ attemptCount, firstAttemptAt ] = (user?.loginAttempts || '0|0').split('|');
+    attemptCount = parseInt(attemptCount);
+    firstAttemptAt = new Date(parseInt(firstAttemptAt));
+
+    if (firstAttemptAt < new Date() - MAX_LOGIN_ATTEMPTS_BLOCK_MS) {
+        attemptCount = 0;
+        firstAttemptAt = null;
+    }
+
+    return { attemptCount, firstAttemptAt, block: attemptCount >= MAX_LOGIN_ATTEMPTS_COUNT };
+};
+
+export const saveLoginAttempts = async (db, userId, attemptCount, firstOneAt) => {
+    const loginAttempts = `${attemptCount}|${firstOneAt.getTime()}`
+    await db.get(SQL`UPDATE users SET loginAttempts = ${loginAttempts} WHERE id = ${userId}`);
+}
+
 const router = Router();
 
 router.use(handleErrorAsync(reloadUser));
@@ -304,6 +327,13 @@ router.post('/user/init', handleErrorAsync(async (req, res) => {
 
     if (!user && !isEmail) {
         return res.json({error: 'user.login.userNotFound'})
+    }
+
+    if (user) {
+        const { block } = await fetchLoginAttempts(req.db, user.id);
+        if (block) {
+            return res.json({error: 'user.tooManyAttempts'});
+        }
     }
 
     const payload = {
@@ -363,7 +393,13 @@ router.post('/user/validate', handleErrorAsync(async (req, res) => {
         return res.json({error: 'user.tokenExpired'});
     }
 
+    const { attemptCount, firstAttemptAt, block } = await fetchLoginAttempts(req.db, authenticator.userId);
+    if (block) {
+        return res.json({error: 'user.tooManyAttempts'});
+    }
+
     if (authenticator.payload.code !== normalise(req.body.code)) {
+        await saveLoginAttempts(req.db, authenticator.userId, attemptCount + 1, firstAttemptAt || new Date());
         return res.json({error: 'user.code.invalid'});
     }
 
