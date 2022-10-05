@@ -95,3 +95,12 @@ i sprawiamy, że (bardzo słusznie) nie będą chciały z nami rozmawiać.
 
 Innymi słowy: nie używając języka inkluzywnego, dzielimy, zamiast łączyć.
 Jeśli język ma łączyć tylko tych, którym system sprzyja, to ja nie chcę takiego języka. 
+
+<div class="alert alert-info">
+    <p class="mb-0">
+        <span class="fal fa-link"></span>
+        <a href="https://www.o-jezyku.pl/2022/09/24/czy-mozna-ufac-autorytetom/" target="_blank" rel="noopener">
+            Polecamy również artykuł „Czy można ufać autorytetom?” na Portalu o języku.
+        </a>
+    </p>
+</div>
