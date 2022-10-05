@@ -59,6 +59,7 @@
             this.confirmAge();
 
             // TODO remove when adding back PWA
+            if (!navigator.serviceWorker) { return; }
             navigator.serviceWorker.getRegistrations().then(function(registrations) {
                 for(let registration of registrations) {
                     console.log('unregistering', registration);
