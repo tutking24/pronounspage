@@ -517,7 +517,7 @@ profile:
     pronounsNotFound: 'Nicht erkennbares Format. Bitte beachte die oben genannte Anweisung.'
     words: 'Wörter'
     birthday: 'Alter'
-    birthdayInfo: 'Wir veröffentlichen nicht dein Geburtstag, sondern nur das errechnete Alter.'
+    birthdayInfo: 'Wir veröffentlichen nicht deinen Geburtstag, sondern nur das errechnete Alter.'
     flags: 'Flaggen'
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
@@ -955,4 +955,5 @@ calendar:
 
 ukraine:
     header: 'Wir stehen der Ukraine bei.'
-    link: '{https://supportukrainenow.org/translate-and-share-this/konkrete-mglichkeiten-wie-man-der-ukraine-als-auslnder-helfen-kann=Wie du beisteuern kannst.}'
+    link: >
+        {https://supportukrainenow.org/translate-and-share-this/konkrete-mglichkeiten-wie-man-der-ukraine-als-auslnder-helfen-kann=Wie du mithelfen kannst.}
