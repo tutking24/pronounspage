@@ -394,6 +394,7 @@ contact:
         Vi er et internasjonalt team – de som har lagd en spesifikk språk versjon er ikke nødvendigvis den samme som får
         meldingen din. Så, hvis mulig, ville vi satt pris på om du kontaktet oss på <strong>Engelsk eller Polsk</strong>.
     contribute:
+        header: 'Bidra'
         version:
             header: 'Lag en ny språk versjon'
         translations:
@@ -587,6 +588,8 @@ footer:
             realTimeVisitors: 'Online nå'
             visitors: 'Unike brukere'
             uptime: 'Oppetid'
+            responseTime: 'Gjennomsnittlig respons tid'
+            visitDuration: 'Gjennomsnittlig besøks varighet'
         current: 'bare denne versjonen'
         overall: 'alle språk versjoner'
         header: 'Statistikk'
