@@ -252,6 +252,11 @@ links:
             headline: 'Bucking the Linguistic Binary: Gender Neutral Language in English, Swedish, French, and German'
             extra: '– Levi C. R. Hord'
         -
+            icon: 'book-open'
+            url: 'https://s.qiouyi.lu/course/introduction-to-neopronouns/'
+            headline: 'Introduction to Neopronouns'
+            extra: '– course by S. Qiouyi Lu (CC BY-SA)'
+        -
             icon: 'twitch'
             iconSet: 'b'
             url: 'https://pronouns.alejo.io/'
