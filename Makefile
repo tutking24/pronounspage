@@ -21,6 +21,7 @@ stop:
 	node_modules/.bin/avris-daemonise stop webserver
 
 deploy: install
+	mkdir -p ./cache
 	git log -n 1 --pretty=format:"%H" > ./cache/version
 	yarn build
 	node server/migrate.js
