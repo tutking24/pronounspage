@@ -21,10 +21,10 @@ stop:
 	node_modules/.bin/avris-daemonise stop webserver
 
 deploy: install
+	git log -n 1 --pretty=format:"%H" > ./cache/version
 	yarn build
 	node server/migrate.js
 	echo "\ncaches.keys().then(cs=>cs.forEach(c=>caches.delete(c)))" >> static/sw.js
-	git log -n 1 --pretty=format:"%H" > ./cache/version
 	ln -sfn ../data/img ./static/img-local
 	ln -sfn ../data/docs ./static/docs-local
 
