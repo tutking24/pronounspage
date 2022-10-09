@@ -1,7 +1,7 @@
 key	description	normative	pronoun_n	pronoun_d	pronoun_a	pronoun_g	possessive	article_n	article_g	article_d	article_a	demonstrative_n	demonstrative_g	demonstrative_d	demonstrative_a	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-er,er/sein	Maskulinum	TRUE	er	ihm	ihn	seiner	sein	der	des	dem	den	dieser	dieses	diesem	diesen	FALSE	FALSE	TRUE
+er,er/sein,er/ihm	Maskulinum	TRUE	er	ihm	ihn	seiner	sein	der	des	dem	den	dieser	dieses	diesem	diesen	FALSE	FALSE	TRUE
 sie,sie/ihr	Femininum	TRUE	sie	ihr	sie	ihrer	ihr	die	der	der	die	diese	dieser	dieser	diese	FALSE	FALSE	TRUE
-es,es/sein	Neutrum	TRUE	es	ihm	es	seiner	sein	das	des	dem	das	dieses	dieses	diesem	dieses	FALSE	FALSE	TRUE
+es,es/sein,es/ihm	Neutrum	TRUE	es	ihm	es	seiner	sein	das	des	dem	das	dieses	dieses	diesem	dieses	FALSE	FALSE	TRUE
 dey,dey/denen	Neopronomen „dey“	FALSE	dey	denen	dey	derer	deren									FALSE	FALSE	TRUE
 die,die/denen	Neopronomen „die“	FALSE	die	denen	die	deren	deren									FALSE	FALSE	TRUE
 el,el/em	Neopronomen „el“	FALSE	el	em	en	emser	ems									FALSE	FALSE	TRUE
@@ -11,12 +11,12 @@ en/em	Neopronomen „en“	FALSE	en	em	en		ens									FALSE	FALSE	TRUE	Erstellt
 ey,ey/emm	Neopronomen „ey“	FALSE	ey	emm	emm	eys	eys									FALSE	FALSE	TRUE
 et,et/siem	Neopronomen „et“	FALSE	et	siem	sien	sierer	sier									FALSE	FALSE	TRUE
 hän,hän/sim	Neopronomen „hän“	FALSE	hän	sim	sin	sirer	sir									FALSE	FALSE	TRUE
-hen,hen/hen	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FALSE	FALSE	TRUE	Aus dem Schwedischen, siehe: {https://sv.pronouns.page/hen=hen/henom}.  Auch verwendet im {https://geschlechtsneutralesdeutsch.com/=NoNa-System}.
-hie,hie/hein	Neopronomen „hie“	FALSE	hie	hiem	hie	heiner	hein									FALSE	FALSE	TRUE
+hen,hen/hen,hen/hem	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FALSE	FALSE	TRUE	Aus dem Schwedischen, siehe: {https://sv.pronouns.page/hen=hen/henom}.  Auch verwendet im {https://geschlechtsneutralesdeutsch.com/=NoNa-System}.
+hie,hie/hein,hie/hiem	Neopronomen „hie“	FALSE	hie	hiem	hie	heiner	hein									FALSE	FALSE	TRUE
 iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses	ikses									FALSE	FALSE	TRUE
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds	inds									FALSE	FALSE	TRUE	Vom Wort „Individuum“
 nin,nin/nim	Neopronomen „nin“	FALSE	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE	Erstellt von {https://www.geschlechtsneutral.com/lit/Liminalis-2008-Sylvain-Balzer.pdf=Cabala de Sylvain und Carsten Balzer}
-oj,oj/juj	Neopronomen „oj“	FALSE	oj	ojm	ojn	juj	juj									FALSE	FALSE	TRUE	Erstellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}. Siehe auch: {/substantive#Ojum=Ojum}.
+oj,oj/juj,oj/ojm	Neopronomen „oj“	FALSE	oj	ojm	ojn	juj	juj									FALSE	FALSE	TRUE	Erstellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}. Siehe auch: {/substantive#Ojum=Ojum}.
 per,per/per	Neopronomen „per“	FALSE	per	per	per	pers	pers									FALSE	FALSE	TRUE	Vom Wort „Person“
 ser,ser/sem	Neopronomen „ser“	FALSE	ser	sem	sen	ses	ses									FALSE	FALSE	TRUE
 sier,sier/siem	Neopronomen „sier“	FALSE	sier	siem	sien	sies	sies	dier	dies	diem	dien	dier	dies	diem	dien	FALSE	FALSE	TRUE	Erstellt von {https://www.annaheger.de/pronomen21/=Illi Anna Heger}
