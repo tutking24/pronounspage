@@ -16,6 +16,8 @@ const description = translations.description;
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 const logo = fs.readFileSync(__dirname + '/static/logo/logo.svg').toString('utf-8').replace('/></svg>', 'fill="currentColor"/></svg>');
+const versionFile = __dirname + '/cache/version';
+const version = fs.existsSync(versionFile) ? fs.readFileSync(versionFile).toString('utf-8') : null;
 
 process.env.LOCALE = locale;
 if (process.env.ENV) {
@@ -223,6 +225,7 @@ export default {
         JSONS: JSON.stringify(jsons),
         PLAUSIBLE_API_HOST: process.env.PLAUSIBLE_API_HOST,
         HEARTBEAT_LINK: process.env.HEARTBEAT_LINK,
+        VERSION: version,
     },
     serverMiddleware: [
         '~/server/no-ssr.js',

@@ -78,6 +78,13 @@
                     <ModeSwitch/>
                 </div>
 
+                <p class="small text-muted text-center">
+                    Version:
+                    {{ versionFrontend ? versionFrontend.substring(0, 8) : '–' }}
+                    /
+                    <Spinner v-if="versionBackend === undefined"/><span v-else>{{ versionBackend ? versionBackend.substring(0, 8) : '–' }}</span>
+                </p>
+
                 <!--
                 <p class="h6 mb-2">
                     <T>share</T><T>quotation.colon</T>
@@ -179,6 +186,8 @@ export default {
         return {
             links: [...getContactLinks(this.config), ...getSocialLinks(this.config)],
             supportLinks: [...getSupportLinks(this.config)],
+            versionFrontend: process.env.VERSION,
+            versionBackend: undefined,
         };
     },
     methods: {
@@ -191,6 +200,12 @@ export default {
             this.$store.commit('showTranslationMode');
             this.$cookies.set('translationModeVisible', true);
         },
-    }
+    },
+    async mounted() {
+        if (!process.client) { return; }
+
+        this.versionBackend = await this.$axios.$get('/version');
+        console.log(this.versionBackend);
+    },
 }
 </script>
