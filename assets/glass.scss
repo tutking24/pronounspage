@@ -11,7 +11,7 @@
         }
     }
 
-    .modal {
+    .modal, .cc-modal-bg {
         backdrop-filter: blur($glassBlur);
         background-color: rgba($black, .2) !important;
     }

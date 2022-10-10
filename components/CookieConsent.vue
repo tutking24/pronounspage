@@ -1,7 +1,7 @@
 <template>
-    <div v-if="visible">
-        <div :class="['modal', blur ? 'modal-shown d-block' : '']"></div>
-        <div class="cc-modal bg-white border-top border-primary small">
+    <div v-if="visible" class="cc-modal">
+        <div :class="['cc-modal-bg', blur ? 'd-block' : '']"></div>
+        <div class="cc-modal-box bg-white border-top border-primary small">
             <div class="container py-3">
                 <p class="d-flex justify-content-between">
                     <span class="h5">
@@ -109,7 +109,7 @@ export default {
 <style lang="scss">
 @import "assets/variables";
 
-.cc-modal {
+.cc-modal-box {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -117,5 +117,17 @@ export default {
     width: 100%;
     z-index: 100002;
     box-shadow: 0 -.5rem 1rem rgba($black, .15);
+}
+.cc-modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
 }
 </style>
