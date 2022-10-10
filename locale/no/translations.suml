@@ -395,14 +395,31 @@ contact:
         meldingen din. Så, hvis mulig, ville vi satt pris på om du kontaktet oss på <strong>Engelsk eller Polsk</strong>.
     contribute:
         header: 'Bidra'
+        intro: >
+            Pronouns.page er et åpent prosjekt laget av frivillige. Du kan bidra og! Her er noen steder hvor vi ville
+            satt pris på hjelpen din. De som er aktive i sine bidrag vil bli invitert til teamet vårt.
         version:
             header: 'Lag en ny språk versjon'
+            description: >
+                Intruksjoner for å lage en ny språk versjon er tilgjengelige {https://en.pronouns.page/new-version=her}.
+                Før du starter, vennligst {/contact=kontakt oss} for å koordinere med andre om det.
         translations:
             header: 'Legg til eller rett oversettelser'
+            description: >
+                Mangler en oversettelse eller er den feil? Klikk på "Foreslå oversettelser" i bunnen av siden og følg
+                instruksjonene.
         technical:
+            description: >
+                Tekniske oppgaver er behandlet på {https://gitlab.com/Avris/Zaimki/-/boards=dette kanban brettet}. Bare
+                velg en oppgave som ikke er tilordnet, tildel den til deg selv og begynn å jobb. Ikke nøl med å spørre
+                spørsmål.
+            header: 'Send inn en pull forespørsel'
             footer: 'Tekniske oppgaver'
         entries:
             header: 'Legg til bidrag'
+            description: >
+                Mange seksjoner på nettsiden (subjektiv, inklusiv ordbok...) har alternativer for å legge til og redigere
+                eksisterende bidrag. Hvis du tror at noe mangler eller er feil, nøl ikke med å ta disse i bruk.
 
 support:
     header: 'Hjelp'
@@ -516,7 +533,7 @@ profile:
             or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Kolonne'
-
+    wordsColumnHeader: 'Kolonne overskrift'
     header: 'Kort'
     list: 'Dine kort'
     init: 'Lag et kort'
@@ -590,6 +607,7 @@ footer:
             uptime: 'Oppetid'
             responseTime: 'Gjennomsnittlig respons tid'
             visitDuration: 'Gjennomsnittlig besøks varighet'
+            pageviews: 'Visninger for denne siden'
         current: 'bare denne versjonen'
         overall: 'alle språk versjoner'
         header: 'Statistikk'
@@ -704,6 +722,7 @@ translationMode:
         å skru Oversettelses Modus av og på. I denne modusen, vil å klikke på tekst åpne en boks hvor du kan foreslå
         endringer. Husk å klikke på knappen hvor det står "Lagre endringer" når du er ferdig.
     commit: 'Lagre endringer'
+    revert: 'Angre endringer'
     pause: 'Pause Oversettelses Modus'
     logIn: 'Du må være logget inn for å gi forslag til oversettelser'
     action: 'Foreslå oversettelser'
