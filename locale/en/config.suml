@@ -300,7 +300,12 @@ links:
             url: 'https://www.genderspecialist.com/blog/gender-neutral-family-language'
             headline: 'Gender Neutral Family Terms & Titles'
     academic: []
-    mediaGuests: []
+    mediaGuests:
+        -
+            icon: 'newspaper'
+            url: 'https://silver-langevin.medium.com/pronouns-page-one-of-the-most-important-queer-websites-out-d324b2479ef7'
+            headline: 'Pronouns Page — One of the Most Important Queer Websites Out There'
+            extra: ' – Silver Langevin'
     mediaMentions: []
     recommended:
         -

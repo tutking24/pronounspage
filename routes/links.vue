@@ -16,7 +16,7 @@
         <AdPlaceholder phkey="main-2"/>
         <AcademicLinks v-if="!config.links.split && config.links.academic.length > 0"/>
         <AdPlaceholder phkey="main-3"/>
-        <Media v-if="!config.links.split && (config.links.mediaGuests.length > 0 || config.links.mediaMentions.length > 0)"/>
+        <Media v-if="(config.links.mediaGuests.length + config.links.mediaMentions.length > 0) && (!config.links.split || (config.links.mediaGuests.length + config.links.mediaMentions.length <= 2))"/>
         <AdPlaceholder phkey="main-4"/>
         <Recommended/>
         <AdPlaceholder phkey="main-5"/>
