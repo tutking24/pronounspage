@@ -295,6 +295,10 @@ links:
             headline: 'A map of gender-diverse cultures'
             quote: >
                 On nearly every continent, and for all of recorded history, thriving cultures have recognized, revered, and integrated more than two genders.
+        -
+            icon: 'book-open'
+            url: 'https://www.genderspecialist.com/blog/gender-neutral-family-language'
+            headline: 'Gender Neutral Family Terms & Titles'
     academic: []
     mediaGuests: []
     mediaMentions: []
