@@ -205,7 +205,6 @@ export default {
         if (!process.client) { return; }
 
         this.versionBackend = await this.$axios.$get('/version');
-        console.log(this.versionBackend);
     },
 }
 </script>

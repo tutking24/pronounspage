@@ -170,6 +170,10 @@ form[disabled] {
     bottom: 3px !important;
 }
 
+.modal.modal-shown.d-block {
+    display: block !important;
+}
+
 @include media-breakpoint-up('lg') {
     .table-wide {
         margin-left: calc(-50vw + 50% + 3rem);
