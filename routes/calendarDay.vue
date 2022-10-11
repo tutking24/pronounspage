@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <component :is="basic ? 'div' : 'Page'">
     <div v-if="year.eventsByDate[day.toString()] || basic" :class="basic ? 'py-5' : ''">
         <CommunityNav v-if="!basic"/>
 
@@ -51,7 +51,7 @@
         </template>
     </div>
     <NotFound v-else/>
-    </Page>
+    </component>
 </template>
 
 <script>
