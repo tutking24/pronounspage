@@ -3,22 +3,24 @@
         <li v-for="(v, i) in iVal" ref="items">
             <div>
                 <div class="input-group input-group-sm mb-1">
-                    <button class="btn btn-light border handle" type="button" :aria-label="$t('table.sort')">
+                    <button :class="['btn', 'btn-light border', readonly ? '' : 'handle']" type="button" :aria-label="$t('table.sort')" :disabled="readonly">
                         <Icon v="bars"/>
                     </button>
-                    <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)">
-                        <input v-model="iVal[i]" type="text" class="form-control" required/>
+                    <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)" v-bind:i="i">
+                        <input v-model="iVal[i]" type="text" class="form-control" required :readonly="readonly"/>
                     </slot>
-                    <button class="btn btn-outline-danger" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')">
+                    <button :class="['btn', readonly ? 'btn-light border' : 'btn-outline-danger']" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')" :disabled="readonly">
                         <Icon v="times"/>
                     </button>
                 </div>
-                <slot name="validation" v-bind:val="iVal[i]"></slot>
+                <slot name="validation" v-bind:val="iVal[i]" v-bind:i="i"></slot>
             </div>
         </li>
 
         <li slot="footer">
-            <button class="btn btn-outline-success w-100 btn-sm" type="button" @click.prevent="add" :aria-label="$t('crud.add')">
+            <button  v-if="!readonly && (maxlength === null || iVal.length < maxlength)"
+                     class="btn btn-outline-success w-100 btn-sm" type="button"
+                     @click.prevent="add" :aria-label="$t('crud.add')">
                 <Icon v="plus"/>
             </button>
         </li>
@@ -37,6 +39,8 @@
             value: {},
             prototype: { 'default': '' },
             group: {},
+            readonly: { type: Boolean },
+            maxlength: { 'default': null },
         },
         data() {
             return {

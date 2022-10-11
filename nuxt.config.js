@@ -202,10 +202,15 @@ export default {
             config.module.rules.push({
                 test: /\.md$/,
                 use: ['html-loader', 'markdown-loader']
+            });
+            config.module.rules.push({
+                test: /\.ya?ml$/,
+                use: 'yaml-loader',
             })
         },
     },
     env: {
+        ENV: process.env.ENV,
         BASE_URL: process.env.BASE_URL,
         HOME_URL: process.env.HOME_URL || 'https://pronouns.page',
         TITLE: title,

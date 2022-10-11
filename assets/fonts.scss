@@ -1,6 +1,6 @@
 @use "sass:list";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&display=swap');
 
 @if list.index($fonts, 'Quicksand') {
     /* quicksand-regular - latin-ext_latin */

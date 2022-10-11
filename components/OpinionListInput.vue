@@ -1,62 +1,55 @@
 <template>
     <ListInput v-model="v" :prototype="{value: '', opinion: 'meh'}" :group="group">
         <template v-slot="s">
-            <button type="button" :class="['btn', s.val.opinion === 'yes' ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
-                    :aria-label="$t('profile.opinion.yes')"
-                    @click="s.update({...s.val, value: s.val.value, opinion: 'yes'})">
-                <Tooltip :text="$t('profile.opinion.yes')">
-                    <Icon v="heart"/>
-                </Tooltip>
+            <button type="button" :class="['btn', 'btn-outline-secondary', showOpinionSelector === s.i ? 'btn-secondary text-white border' : (validate(s.val) ? 'btn-outline-danger' : '')]"
+                    @click="showOpinionSelector = showOpinionSelector === s.i ? false : s.i">
+                <Icon :v="getIcon(s.val.opinion)"/>
             </button>
-            <button type="button" :class="['btn', s.val.opinion === 'jokingly' ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
-                    :aria-label="$t('profile.opinion.jokingly')"
-                    @click="s.update({...s.val, value: s.val.value, opinion: 'jokingly'})">
-                <Tooltip :text="$t('profile.opinion.jokingly')">
-                    <Icon v="grin-tongue"/>
-                </Tooltip>
-            </button>
-            <button type="button" :class="['btn', s.val.opinion === 'close' ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
-                    :aria-label="$t('profile.opinion.close')"
-                    @click="s.update({...s.val, value: s.val.value, opinion: 'close'})">
-                <Tooltip :text="$t('profile.opinion.close')">
-                    <Icon v="user-friends"/>
-                </Tooltip>
-            </button>
-            <button type="button" :class="['btn', s.val.opinion === 'meh' ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
-                    :aria-label="$t('profile.opinion.meh')"
-                    @click="s.update({...s.val, value: s.val.value, opinion: 'meh'})">
-                <Tooltip :text="$t('profile.opinion.meh')">
-                    <Icon v="thumbs-up"/>
-                </Tooltip>
-            </button>
-            <button type="button" :class="['btn', s.val.opinion === 'no' ? 'btn-primary' : 'btn-outline-secondary', 'btn-thin']"
-                    :aria-label="$t('profile.opinion.no')"
-                    @click="s.update({...s.val, value: s.val.value, opinion: 'no'})">
-                <Tooltip :text="$t('profile.opinion.no')">
-                    <Icon v="thumbs-down"/>
-                </Tooltip>
-            </button>
-            <input v-model="s.val.value" :class="['form-control', 'mw-input', invalid(s.val) ? 'border-danger' : '']" @keyup="s.update(s.val)" required/>
+            <input v-model="s.val.value" :class="['form-control', 'mw-input', validate(s.val) ? 'border-danger' : '']" @keyup="s.update(s.val)" required/>
+
+            <div v-if="showOpinionSelector === s.i" class="bg-light border rounded hanging shadow shadow-lg">
+                <ul class="list-unstyled icons-list p-1 text-center mb-0">
+                    <li v-for="(opinion, key) in opinions"
+                        class="list-inline-item">
+                        <button :class="['btn', key === s.val.opinion ? 'btn-dark' : 'btn-outline-dark', 'border-0 my-2']" @click.prevent="s.val.opinion = key; showOpinionSelector = false">
+                            <Icon :v="opinion.icon"/>
+                        </button>
+                    </li>
+                </ul>
+                <ul v-if="customOpinions.length" class="list-unstyled icons-list p-1 text-center mb-0">
+                    <li v-for="opinion in customOpinions"
+                        class="list-inline-item">
+                        <button :class="['btn', opinion.icon === s.val.opinion ? 'btn-dark' : 'btn-outline-dark', 'border-0 my-2']" @click.prevent="s.val.opinion = opinion.icon; showOpinionSelector = false">
+                            <Icon :v="opinion.icon"/>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </template>
         <template v-slot:validation="s">
-            <p v-if="invalid(s.val)" class="small text-danger">
+            <p v-if="validate(s.val)" class="small text-danger">
                 <Icon v="exclamation-triangle"/>
-                <span class="ml-1">{{$t(validation(s.val.value))}}</span>
+                <span class="ml-1">{{$t(validate(s.val))}}</span>
             </p>
         </template>
     </ListInput>
 </template>
 
 <script>
+    import opinions from '../src/opinions';
+
     export default {
         props: {
             value: {},
             group: {},
             validation: {},
+            customOpinions: { 'default': () => { return [] }},
         },
         data() {
             return {
                 v: this.value,
+                showOpinionSelector: false,
+                opinions,
             }
         },
         watch: {
@@ -64,20 +57,40 @@
             value(v) { this.v = v; }
         },
         methods: {
-            invalid(val) {
-                return this.validation && val.value && this.validation(val.value);
+            validate(val) {
+                if (!this.getIcon(val.opinion)) {
+                    return 'profile.opinions.validation.invalidOpinion';
+                }
+
+                if (!val.value) { return null; }
+
+                return this.validation && this.validation(val.value);
+            },
+            getIcon(opinion) {
+                if (opinions.hasOwnProperty(opinion)) {
+                    return opinions[opinion].icon;
+                }
+                for (let op of this.customOpinions) {
+                    if (op.icon === opinion) {
+                        return opinion;
+                    }
+                }
+
+                return '';
             },
         },
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "assets/variables";
 
-    @include media-breakpoint-down('sm', $grid-breakpoints) {
-        .btn-thin {
-            padding-left: map-get($spacers, 1) !important;
-            padding-right: map-get($spacers, 1) !important;
-        }
+    .hanging {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-width: 300px;
+        z-index: 5000;
     }
 </style>

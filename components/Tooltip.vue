@@ -24,6 +24,7 @@
             top: -2.2rem;
             left: -50%;
             font-weight: normal;
+            font-style: normal;
             font-size: .85rem;
             white-space: nowrap;
         }

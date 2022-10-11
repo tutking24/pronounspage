@@ -33,3 +33,14 @@ $square-button-size: 2.2rem;
 @import "~bootstrap/scss/utilities";
 
 @import '~@fortawesome/fontawesome-pro/scss/variables';
+
+$primary-dark: #ff95bb;
+
+$colours: (
+    'pink':   ('light': $primary,    'dark': $primary-dark),
+    'red':    ('light': $red,        'dark': $red-200),
+    'orange': ('light': $orange-600, 'dark': $orange-300),
+    'green':  ('light': $green,      'dark': $green-300),
+    'blue':   ('light': $blue-700,   'dark': $blue-200),
+    'grey':   ('light': $gray-600,   'dark': $gray-300),
+);

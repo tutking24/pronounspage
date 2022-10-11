@@ -1,29 +1,36 @@
 <template>
-    <ul class="list-inline small text-muted text-center mx-4">
-        <li class="list-inline-item">
-            <Icon v="heart"/>
-            =
-            <T>profile.opinion.yes</T>
-        </li>
-        <li class="list-inline-item">
-            <Icon v="grin-tongue"/>
-            =
-            <T>profile.opinion.jokingly</T>
-        </li>
-        <li class="list-inline-item">
-            <Icon v="user-friends"/>
-            =
-            <T>profile.opinion.close</T>
-        </li>
-        <li class="list-inline-item">
-            <Icon v="thumbs-up"/>
-            =
-            <T>profile.opinion.meh</T>
-        </li>
-        <li class="list-inline-item">
-            <Icon v="thumbs-down"/>
-            =
-            <T>profile.opinion.no</T>
-        </li>
-    </ul>
+    <div>
+        <ul class="list-inline small text-muted text-center mx-4">
+            <li v-for="(opinion, key) in opinions" class="list-inline-item">
+                <Icon :v="opinion.icon"/>
+                =
+                <T>profile.opinion.{{key}}</T>
+            </li>
+        </ul>
+        <ul v-if="Object.keys(custom).length > 0" class="list-inline small text-muted text-center mx-4">
+            <li class="list-inline-item">
+                <T>profile.opinions.custom</T>
+            </li>
+            <li v-for="(opinion, key) in custom" class="list-inline-item">
+                <Icon :v="opinion.icon"/>
+                =
+                {{opinion.description}}
+            </li>
+        </ul>
+    </div>
 </template>
+
+<script>
+import opinions from '../src/opinions';
+
+export default {
+    props: {
+        custom: { 'default': () => { return {} }},
+    },
+    data() {
+        return {
+            opinions: opinions,
+        }
+    },
+}
+</script>

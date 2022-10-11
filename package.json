@@ -65,6 +65,7 @@
     "vuedraggable": "^2.24.3",
     "vuejs-datepicker": "^1.6.2",
     "webpack": "^5.0",
+    "yaml-loader": "^0.8.0",
     "zh_cn_zh_tw": "^1.0.7"
   },
   "devDependencies": {
