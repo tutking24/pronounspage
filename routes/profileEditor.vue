@@ -97,7 +97,7 @@
                     <T>profile.opinions.header</T>
                 </h3>
                 <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
-                <LegendOpinionListInput v-model="opinions" maxlength="5"/>
+                <LegendOpinionListInput v-model="opinions" :maxlength="5"/>
             </section>
 
             <section class="form-group">
@@ -360,7 +360,7 @@
             credentials: [],
             credentialsLevel: null,
             credentialsName: null,
-            opinions: {},
+            opinions: [],
         };
     };
 
