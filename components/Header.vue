@@ -279,6 +279,15 @@
                         textLong: this.user ? '@' + this.user.username : this.$t('user.headerLong'),
                         extra: ['/editor', this.$user() ? '/@' + this.$user().username : null],
                     });
+                    if (this.$isGranted('panel')) {
+                        links.push({
+                            link: '/admin',
+                            icon: 'user-cog',
+                            text: this.$t('admin.header'),
+                            textLong: this.$t('admin.header'),
+                            extra: ['/admin/moderation'],
+                        });
+                    }
                 }
 
                 return links;
