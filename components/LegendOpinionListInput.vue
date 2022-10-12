@@ -48,7 +48,7 @@ export default {
             showIconSelector: false,
             colours,
             styles,
-            skipIcons: [...Object.values(opinions).map(op => op.icon), 'ad', 'helicopter'],
+            skipIcons: [...Object.values(opinions).map(op => op.icon), 'ad', 'helicopter', 'meh'],
         }
     },
     watch: {
