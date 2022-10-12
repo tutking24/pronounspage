@@ -500,6 +500,29 @@ profile:
         close: '只有密切朋友'
         meh: 'OK'
         no: '不好'
+    opinions:
+        header: '圖例及意見'
+        description: '描述…'
+        colours:
+            _: '(字體顏色…)'
+            pink: '粉紅色'
+            red: '紅色'
+            orange: '橙色'
+            green: '綠色'
+            blue: '藍色'
+            grey: '灰色'
+        styles:
+            _: '(字形…)'
+            bold: '粗體'
+            italics: '斜體'
+            small: '小'
+        validation:
+            missingIcon: '必須選擇圖示'
+            missingDescription: '必須填寫描述'
+            duplicateIcon: '圖示必須獨一無二'
+            duplicateDescription: '描述必須獨一無二'
+            invalidOpinion: '未能在以上的圖例找到已選擇的圖示'
+        custom: '用戶自定義的圖示:'
 
     #TODO
     #banner: >
@@ -635,6 +658,7 @@ mode:
     light: '明亮模式'
     automatic: '自動'
     dark: '黑暗模式'
+    reducedColours: '減少顏色'
 
 ban:
     reason: '封禁原因'
