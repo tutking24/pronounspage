@@ -234,7 +234,7 @@
                         <T>profile.column</T> {{i + 1}}
                     </h4>
                     <input v-model="words[i].header" class="form-control form-control-sm mb-2" :placeholder="$t('profile.wordsColumnHeader')" maxlength="36"/>
-                    <OpinionListInput v-model="words[i].values" group="words" :customOpinions="opinions" :maxitems="24"/>
+                    <OpinionListInput v-model="words[i].values" group="words" :customOpinions="opinions" :maxitems="32"/>
                 </template>
             </section>
 

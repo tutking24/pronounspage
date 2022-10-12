@@ -26,7 +26,7 @@
         </li>
         <li v-if="maxitems && iVal.length > maxitems" class="alert alert-danger">
             <Icon v="exclamation-triangle"/>
-            <span class="ml-1">{{$t('crud.validation.listmaxitems', {maxitems})}}</span>
+            <span class="ml-1">{{$t('crud.validation.listMaxLength', {maxlength: maxitems})}}</span>
         </li>
     </draggable>
 </template>
