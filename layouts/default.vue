@@ -43,7 +43,7 @@
                         .then(data => resolve(data))
                         .catch(async e => {
                             console.error(e);
-                            await this.$alert(this.$t('error.generic'), 'danger');
+                            await this.$alert(this.$t(e.response?.data?.error || 'error.generic'), 'danger');
                             reject();
                         });
                 });

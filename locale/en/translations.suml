@@ -780,6 +780,9 @@ crud:
     copy: 'Copy link'
     download: 'Download'
     loadAll: 'Load all…'
+    validation:
+        genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
+        listMaxLength: 'The maximum number of elements in this list is %maxlength%.'
 
 footer:
     license: >

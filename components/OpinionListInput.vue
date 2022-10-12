@@ -1,11 +1,11 @@
 <template>
-    <ListInput v-model="v" :prototype="{value: '', opinion: 'meh'}" :group="group">
+    <ListInput v-model="v" :prototype="{value: '', opinion: 'meh'}" :group="group" :maxitems="maxitems">
         <template v-slot="s">
             <button type="button" :class="['btn', 'btn-outline-secondary', showOpinionSelector === s.i ? 'btn-secondary text-white border' : (validate(s.val) ? 'btn-outline-danger' : '')]"
                     @click="showOpinionSelector = showOpinionSelector === s.i ? false : s.i">
                 <Icon :v="getIcon(s.val.opinion)"/>
             </button>
-            <input v-model="s.val.value" :class="['form-control', 'mw-input', validate(s.val) ? 'border-danger' : '']" @keyup="s.update(s.val)" required/>
+            <input v-model="s.val.value" :class="['form-control', 'mw-input', validate(s.val) ? 'border-danger' : '']" @keyup="s.update(s.val)" required :maxlength="maxlength"/>
 
             <div v-if="showOpinionSelector === s.i" class="bg-light border rounded hanging shadow shadow-lg">
                 <ul class="list-unstyled icons-list p-1 text-center mb-0">
@@ -44,6 +44,8 @@
             group: {},
             validation: {},
             customOpinions: { 'default': () => { return [] }},
+            maxlength: { 'default': 32 },
+            maxitems: { 'default': null },
         },
         data() {
             return {

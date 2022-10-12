@@ -73,4 +73,6 @@ export default [
     'profile.opinions.custom',
     'mode.reducedColours',
     'crud.loadAll',
+    'crud.validation.genericForm',
+    'crud.validation.listMaxLength',
 ];

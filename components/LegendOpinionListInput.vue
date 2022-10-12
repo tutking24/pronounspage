@@ -1,5 +1,5 @@
 <template>
-    <ListInput v-model="v" :prototype="prototype()" :group="group" :readonly="readonly" :maxlength="maxlength">
+    <ListInput v-model="v" :prototype="prototype()" :group="group" :readonly="readonly" :maxitems="maxitems">
         <template v-slot="s">
             <button type="button" :class="['btn', readonly ? 'btn-light border' : 'btn-outline-secondary', showIconSelector === s.i ? 'btn-secondary text-white border' : '']" :disabled="readonly"
                     @click="showIconSelector = showIconSelector === s.i ? false : s.i">
@@ -40,7 +40,7 @@ export default {
         value: {},
         group: {},
         readonly: { type: Boolean },
-        maxlength: { 'default': null },
+        maxitems: { 'default': null },
     },
     data() {
         return {

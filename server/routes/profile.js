@@ -163,7 +163,7 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     });
 }));
 
-const sanitiseBirthday = (bd) => {
+const cleanupBirthday = (bd) => {
     if (!bd) { return null; }
     const match = bd.match(/^(\d\d\d\d)-(\d\d)-(\d\d)$/);
     if (!match) { return null; }
@@ -178,16 +178,14 @@ const sanitiseBirthday = (bd) => {
 
 const cleanupOpinions = (opinions) => {
     const cleanOpinions = {}
-    let i = 0;
     for (let opinion of opinions) {
-        if (!opinion.icon || !opinion.description || i >= 5) { continue; }
+        if (!opinion.icon || !opinion.description) { continue; }
         cleanOpinions[opinion.icon] = {
             icon: opinion.icon,
             description: opinion.description.substring(0, 24),
             colour: opinion.colour && colours.includes(opinion.colour) ? opinion.colour : undefined,
             style: opinion.style && styles.includes(opinion.style) ? opinion.style : undefined,
         }
-        i++;
     }
     return cleanOpinions;
 }
@@ -207,7 +205,22 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         req.body.customFlags = Object.values(req.body.customFlags);
     }
 
+    if (req.body.opinions.length > 5
+        || req.body.names.length > 16
+        || req.body.pronouns.length > 24
+        || req.body.links.length > 16
+        || req.body.words.filter(c => c.values.length > 24).length > 0
+    ) {
+        return res.status(400).json({error: 'crud.validation.genericForm'});
+    }
+
     const opinions = cleanupOpinions(req.body.opinions);
+    const names = req.body.names.map(p => { return {...p, value: p.value.substring(0, 32)}});
+    const pronouns = req.body.pronouns.map(p => { return {...p, value: p.value.substring(0, 192)}});
+    const description = req.body.description.substring(0, 256);
+    const birthday = cleanupBirthday(req.body.birthday || null);
+    const links = req.body.links.filter(x => !!x);
+    const words = req.body.words.map(c => { return {...c, values: c.values.map(p => { return {...p, value: p.value.substring(0, 32)}})}});
 
     // TODO just make it a transaction...
     const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
@@ -215,14 +228,14 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         await req.db.get(SQL`UPDATE profiles
             SET
                 opinions = ${JSON.stringify(opinions)},
-                names = ${JSON.stringify(req.body.names)},
-                pronouns = ${JSON.stringify(req.body.pronouns)},
-                description = ${req.body.description},
-                birthday = ${sanitiseBirthday(req.body.birthday || null)},
-                links = ${JSON.stringify(req.body.links.filter(x => !!x))},
+                names = ${JSON.stringify(names)},
+                pronouns = ${JSON.stringify(pronouns)},
+                description = ${description},
+                birthday = ${birthday},
+                links = ${JSON.stringify(links)},
                 flags = ${JSON.stringify(req.body.flags)},
                 customFlags = ${JSON.stringify(req.body.customFlags)},
-                words = ${JSON.stringify(req.body.words)},
+                words = ${JSON.stringify(words)},
                 teamName = ${req.isGranted() ? req.body.teamName || null : ''},
                 footerName = ${req.isGranted() ? req.body.footerName || null : ''},
                 footerAreas = ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''},
@@ -235,12 +248,20 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         `);
     } else {
         await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
-            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(opinions)}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
-                ${req.body.description}, ${sanitiseBirthday(req.body.birthday || null)}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
-                ${JSON.stringify(req.body.words)}, 1,
-                ${req.isGranted() ? req.body.teamName || null : ''},
-                ${req.isGranted() ? req.body.footerName || null : ''},
-                ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''}
+            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale},
+                    ${JSON.stringify(opinions)}, 
+                    ${JSON.stringify(names)},
+                    ${JSON.stringify(pronouns)},
+                    ${description},
+                    ${birthday},
+                    ${links},
+                    ${JSON.stringify(req.body.flags)},
+                    ${JSON.stringify(req.body.customFlags)},
+                    ${JSON.stringify(words)},
+                    1,
+                    ${req.isGranted() ? req.body.teamName || null : ''},
+                    ${req.isGranted() ? req.body.footerName || null : ''},
+                    ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''}
         )`);
     }
 
@@ -295,7 +316,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
 
     if ((req.body.propagate || []).includes('birthday')) {
         await req.db.get(SQL`UPDATE profiles
-            SET birthday = ${sanitiseBirthday(req.body.birthday || null)}
+            SET birthday = ${cleanupBirthday(req.body.birthday || null)}
             WHERE userId = ${req.user.id};
         `);
     }

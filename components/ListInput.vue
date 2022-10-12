@@ -7,7 +7,7 @@
                         <Icon v="bars"/>
                     </button>
                     <slot v-bind:val="iVal[i]" v-bind:update="curry(update)(i)" v-bind:i="i">
-                        <input v-model="iVal[i]" type="text" class="form-control" required :readonly="readonly"/>
+                        <input v-model="iVal[i]" type="text" class="form-control" required :readonly="readonly" :maxlength="maxlength"/>
                     </slot>
                     <button :class="['btn', readonly ? 'btn-light border' : 'btn-outline-danger']" type="button" @click.prevent="remove(i)" :aria-label="$t('crud.remove')" :disabled="readonly">
                         <Icon v="times"/>
@@ -18,11 +18,15 @@
         </li>
 
         <li slot="footer">
-            <button  v-if="!readonly && (maxlength === null || iVal.length < maxlength)"
+            <button  v-if="!readonly && (maxitems === null || iVal.length < maxitems)"
                      class="btn btn-outline-success w-100 btn-sm" type="button"
                      @click.prevent="add" :aria-label="$t('crud.add')">
                 <Icon v="plus"/>
             </button>
+        </li>
+        <li v-if="maxitems && iVal.length > maxitems" class="alert alert-danger">
+            <Icon v="exclamation-triangle"/>
+            <span class="ml-1">{{$t('crud.validation.listmaxitems', {maxitems})}}</span>
         </li>
     </draggable>
 </template>
@@ -40,7 +44,8 @@
             prototype: { 'default': '' },
             group: {},
             readonly: { type: Boolean },
-            maxlength: { 'default': null },
+            maxlength: { 'default': 32 },
+            maxitems: { 'default': null },
         },
         data() {
             return {

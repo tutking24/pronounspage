@@ -1487,6 +1487,9 @@ crud:
     copy: 'Skopiuj link'
     download: 'Ściągnij'
     loadAll: 'Załaduj wszystko…'
+    validation:
+        genericForm: 'Wysłany formularz jest niepoprawny. Napraw błędy i spróbuj ponownie.'
+        listMaxLength: 'Maksymalna liczba elementów na tej liście to %maxlength%.'
 
 footer:
     license: >
