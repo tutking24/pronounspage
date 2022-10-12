@@ -206,9 +206,9 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     if (req.body.opinions.length > 5
-        || req.body.names.length > 16
-        || req.body.pronouns.length > 24
-        || req.body.links.length > 16
+        || req.body.names.length > 32
+        || req.body.pronouns.length > 32
+        || req.body.links.length > 32
         || req.body.words.filter(c => c.values.length > 32).length > 0
     ) {
         return res.status(400).json({error: 'crud.validation.genericForm'});

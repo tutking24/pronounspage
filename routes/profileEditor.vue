@@ -108,7 +108,7 @@
                 <p v-if="$te('profile.namesInfo')" class="small text-muted">
                     <T>profile.namesInfo</T>
                 </p>
-                <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="16"/>
+                <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="32"/>
                 <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
@@ -125,7 +125,7 @@
                         <T>profile.pronounsInfo</T>
                     </p>
                 </div>
-                <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions" :maxitems="24" :maxlength="192"/>
+                <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions" :maxitems="32" :maxlength="192"/>
             </section>
 
             <AdPlaceholder phkey="main-1"/>
@@ -177,7 +177,7 @@
                     <Icon v="link"/>
                     <T>profile.links</T>
                 </h3>
-                <ListInput v-model="links" v-slot="s" :maxitems="16">
+                <ListInput v-model="links" v-slot="s" :maxitems="32">
                     <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
                 </ListInput>
                 <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
