@@ -135,6 +135,9 @@
 
             <Separator icon="heart"/>
             <Support/>
+            <div class="text-center my-4 small">
+                <ReducedColoursSwitch/>
+            </div>
         </template>
     </Page>
     <Page v-else-if="user.username">

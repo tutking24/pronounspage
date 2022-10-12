@@ -9,6 +9,7 @@ import fs from 'fs';
 import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
 import {socialProviders} from "../../src/socialProviders";
 import {downgradeToV1, upgradeToV2} from "../profileV2";
+import { colours, styles } from '../../src/styling';
 
 const normalise = s => s.trim().toLowerCase();
 
@@ -66,6 +67,7 @@ const fetchProfiles = async (db, username, self) => {
     for (let profile of profiles) {
         const links = JSON.parse(profile.links);
         p[profile.locale] = {
+            opinions: JSON.parse(profile.opinions),
             names: JSON.parse(profile.names),
             pronouns: JSON.parse(profile.pronouns),
             description: profile.description,
@@ -102,6 +104,7 @@ function* isSuspicious(profile) {
         JSON.stringify(profile.pronouns),
         JSON.stringify(profile.names),
         JSON.stringify(profile.words),
+        JSON.stringify(profile.opinions),
     ]) {
         s = s.toLowerCase().replace(/\s+/g, ' ');
         for (let sus of susRegexes) {
@@ -173,6 +176,22 @@ const sanitiseBirthday = (bd) => {
     return formatDate(bd);
 }
 
+const cleanupOpinions = (opinions) => {
+    const cleanOpinions = {}
+    let i = 0;
+    for (let opinion of opinions) {
+        if (!opinion.icon || !opinion.description || i >= 5) { continue; }
+        cleanOpinions[opinion.icon] = {
+            icon: opinion.icon,
+            description: opinion.description.substring(0, 24),
+            colour: opinion.colour && colours.includes(opinion.colour) ? opinion.colour : undefined,
+            style: opinion.style && styles.includes(opinion.style) ? opinion.style : undefined,
+        }
+        i++;
+    }
+    return cleanOpinions;
+}
+
 router.post('/profile/save', handleErrorAsync(async (req, res) => {
     if (!req.user) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -188,11 +207,14 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         req.body.customFlags = Object.values(req.body.customFlags);
     }
 
+    const opinions = cleanupOpinions(req.body.opinions);
+
     // TODO just make it a transaction...
     const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
     if (ids.length) {
         await req.db.get(SQL`UPDATE profiles
             SET
+                opinions = ${JSON.stringify(opinions)},
                 names = ${JSON.stringify(req.body.names)},
                 pronouns = ${JSON.stringify(req.body.pronouns)},
                 description = ${req.body.description},
@@ -212,8 +234,8 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
             WHERE id = ${ids[0]}
         `);
     } else {
-        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
-            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
+        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
+            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale}, ${JSON.stringify(opinions)}, ${JSON.stringify(req.body.names)}, ${JSON.stringify(req.body.pronouns)},
                 ${req.body.description}, ${sanitiseBirthday(req.body.birthday || null)}, ${JSON.stringify(req.body.links.filter(x => !!x))}, ${JSON.stringify(req.body.flags)}, ${JSON.stringify(req.body.customFlags)},
                 ${JSON.stringify(req.body.words)}, 1,
                 ${req.isGranted() ? req.body.teamName || null : ''},

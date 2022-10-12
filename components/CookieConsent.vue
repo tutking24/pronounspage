@@ -54,7 +54,7 @@ export default {
     },
     computed: {
         enabled() {
-            return this.config.ads?.enabled;
+            return this.config.ads?.enabled && process.env.NODE_ENV !== 'development';
         },
         visible() {
             return this.enabled && this.consent === undefined;

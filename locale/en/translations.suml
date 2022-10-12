@@ -702,6 +702,29 @@ profile:
             or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Column'
+    opinions:
+        header: 'Legend/opinions'
+        description: 'Description…'
+        colours:
+            _: '(Font colour…)'
+            pink: 'Pink'
+            red: 'Red'
+            orange: 'Orange'
+            green: 'Green'
+            blue: 'Blue'
+            grey: 'Grey'
+        styles:
+            _: '(Style…)'
+            bold: 'Bold'
+            italics: 'Italics'
+            small: 'Small'
+        validation:
+            missingIcon: 'Icon is required'
+            missingDescription: 'Description is required'
+            duplicateIcon: 'Icon must be unique'
+            duplicateDescription: 'Description must be unique'
+            invalidOpinion: 'Selected icon was not found in the legend above'
+        custom: 'custom, added by the user:'
 
     header: 'Cards'
     list: 'Your cards'
@@ -756,6 +779,7 @@ crud:
     loginRequired: '{/account=Log in} to submit an entry'
     copy: 'Copy link'
     download: 'Download'
+    loadAll: 'Load all…'
 
 footer:
     license: >
@@ -1007,6 +1031,7 @@ mode:
     light: 'Light mode'
     automatic: 'Automatic'
     dark: 'Dark mode'
+    reducedColours: 'Reduced colours'
 
 ban:
     reason: 'Ban reason'

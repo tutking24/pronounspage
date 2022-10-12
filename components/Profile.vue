@@ -64,7 +64,7 @@
                 </h3>
 
                 <ul class="list-unstyled">
-                    <li v-for="{value: name, opinion} in profile.names"><Opinion :word="convertName(name)" :opinion="opinion" :escape="false"/></li>
+                    <li v-for="{value: name, opinion} in profile.names"><Opinion :word="convertName(name)" :opinion="opinion" :escape="false" :customOpinions="profile.opinions"/></li>
                 </ul>
             </div>
             <div v-if="profile.pronouns.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
@@ -75,7 +75,7 @@
 
                 <ul class="list-unstyled">
                     <li v-for="{link, pronoun, opinion} in pronounOpinions">
-                        <Opinion :word="typeof pronoun === 'string' ? pronoun : pronoun.name(glue)" :opinion="opinion" :link="`/${link}`"/>
+                        <Opinion :word="typeof pronoun === 'string' ? pronoun : pronoun.name(glue)" :opinion="opinion" :link="`/${link}`" :customOpinions="profile.opinions"/>
                     </li>
                 </ul>
             </div>
@@ -103,14 +103,14 @@
                 <div v-for="column in profile.words" v-if="column.values.length" class="col-6 col-lg-3">
                     <h4 v-if="column.header" class="h6">{{ column.header }}</h4>
                     <ul class="list-unstyled">
-                        <li v-for="{value: word, opinion} in column.values"><Opinion :word="word" :opinion="opinion"/></li>
+                        <li v-for="{value: word, opinion} in column.values"><Opinion :word="word" :opinion="opinion" :customOpinions="profile.opinions"/></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <OpinionLegend/>
+            <OpinionLegend :custom="profile.opinions"/>
         </section>
     </div>
 </template>

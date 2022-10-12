@@ -246,3 +246,18 @@ form[disabled] {
     border-inline-start: 3px solid $primary;
     padding-inline-start: calc(#{$list-group-item-padding-x} - 2px);
 }
+
+.bold {
+    font-weight: bold;
+}
+.italics {
+    font-style: italic;
+}
+
+body:not(.reduced-colours) {
+    @each $name, $value in $colours {
+        .colour-#{$name} {
+            color: map-get($value, 'light') !important;
+        }
+    }
+}

@@ -1,52 +1,48 @@
 <template>
-    <Twemoji>
-    <span>
-        <strong v-if="opinion === 'yes'">
-            <Tooltip :text="$t('profile.opinion.yes')">
-                <Icon v="heart" set="s"/>
-            </Tooltip>
-            <nuxt-link v-if="link" :to="link"><Spelling :escape="escape" :text="word"/></nuxt-link>
+    <span v-if="op" :class="[ op.style, `colour-${op.colour}`]">
+        <Tooltip :text="op.description">
+            <Icon :v="op.icon"/>
+        </Tooltip>
+        <Twemoji>
+            <nuxt-link v-if="link" :to="link" :class="`colour-${op.colour}`"><Spelling :escape="escape" :text="word"/></nuxt-link>
             <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </strong>
-        <span v-else-if="opinion === 'jokingly'">
-            <Tooltip :text="$t('profile.opinion.jokingly')">
-                <Icon v="grin-tongue"/>
-            </Tooltip>
-            <nuxt-link v-if="link" :to="link"><Spelling :escape="escape" :text="word"/></nuxt-link>
-            <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </span>
-        <span v-else-if="opinion === 'close'">
-            <Tooltip :text="$t('profile.opinion.close')">
-                <Icon v="user-friends"/>
-            </Tooltip>
-            <nuxt-link v-if="link" :to="link"><Spelling :escape="escape" :text="word"/></nuxt-link>
-            <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </span>
-        <span v-else-if="opinion === 'meh'">
-            <Tooltip :text="$t('profile.opinion.meh')">
-                <Icon v="thumbs-up"/>
-            </Tooltip>
-            <nuxt-link v-if="link" :to="link"><Spelling :escape="escape" :text="word"/></nuxt-link>
-            <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </span>
-        <span v-else-if="opinion === 'no'" class="text-muted small">
-            <Tooltip :text="$t('profile.opinion.no')">
-                <Icon v="thumbs-down"/>
-            </Tooltip>
-            <nuxt-link v-if="link" :to="link"><Spelling :escape="escape" :text="word"/></nuxt-link>
-            <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </span>
+        </Twemoji>
     </span>
-    </Twemoji>
 </template>
 
 <script>
+    import opinions from '../src/opinions';
+
     export default {
         props: {
             word: { required: true },
             opinion: { required: true },
             link: {},
             escape: { type: Boolean, 'default': () => true },
+            customOpinions: { 'default': () => { return {} }},
         },
+        data() {
+            return {
+                op: this.findOpinion(),
+            };
+        },
+        methods: {
+            findOpinion() {
+                if (opinions.hasOwnProperty(this.opinion)) {
+                    return {
+                        ...opinions[this.opinion],
+                        description: this.$t(`profile.opinion.${this.opinion}`),
+                    };
+                }
+
+                for (let op of Object.values(this.customOpinions)) {
+                    if (op.icon === this.opinion) {
+                        return op;
+                    }
+                }
+
+                return null;
+            },
+        }
     }
 </script>

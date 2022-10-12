@@ -92,7 +92,12 @@
             </div>
 
             <section>
-                <OpinionLegend/>
+                <h3 class="h4">
+                    <Icon v="comment-smile"/>
+                    <T>profile.opinions.header</T>
+                </h3>
+                <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
+                <LegendOpinionListInput v-model="opinions" :maxlength="5"/>
             </section>
 
             <section class="form-group">
@@ -103,7 +108,7 @@
                 <p v-if="$te('profile.namesInfo')" class="small text-muted">
                     <T>profile.namesInfo</T>
                 </p>
-                <OpinionListInput v-model="names"/>
+                <OpinionListInput v-model="names" :customOpinions="opinions"/>
                 <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
@@ -120,7 +125,7 @@
                         <T>profile.pronounsInfo</T>
                     </p>
                 </div>
-                <OpinionListInput v-model="pronouns" :validation="validatePronoun"/>
+                <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions"/>
             </section>
 
             <AdPlaceholder phkey="main-1"/>
@@ -229,7 +234,7 @@
                         <T>profile.column</T> {{i + 1}}
                     </h4>
                     <input v-model="words[i].header" class="form-control form-control-sm mb-2" :placeholder="$t('profile.wordsColumnHeader')" maxlength="36"/>
-                    <OpinionListInput v-model="words[i].values" group="words"/>
+                    <OpinionListInput v-model="words[i].values" group="words" :customOpinions="opinions"/>
                 </template>
             </section>
 
@@ -254,6 +259,7 @@
     import link from '../plugins/link';
     import {minBirthdate, maxBirthdate, formatDate} from '../src/birthdate';
     import opinions from '../src/opinions';
+    import t from '../src/translator';``
 
     const defaultWords = config.profile.defaultWords.map(({header, values}) => {
         return {
@@ -275,6 +281,18 @@
     function fixArrayObject(arrayObject) {
         return Array.isArray(arrayObject) ? arrayObject : Object.values(arrayObject);
     }
+
+    const opinionsToForm = (opinions) => buildList(function*() {
+        for (let [key, options] of Object.entries(opinions)) {
+            yield {
+                key,
+                icon: options.icon,
+                description: options.description || t.get(`profile.opinion.${key}`),
+                colour: options.colour || '',
+                style: options.style || '',
+            };
+        }
+    })
 
     const buildProfile = (profiles, currentLocale) => {
         for (let locale in profiles) {
@@ -298,6 +316,7 @@
                     credentials: profile.credentials,
                     credentialsLevel: profile.credentialsLevel,
                     credentialsName: profile.credentialsName,
+                    opinions: opinionsToForm(profile.opinions || {}),
                 };
             }
         }
@@ -322,6 +341,7 @@
                 credentials: [],
                 credentialsLevel: null,
                 credentialsName: null,
+                opinions: opinionsToForm(profile.opinions || {}),
             };
         }
 
@@ -340,6 +360,7 @@
             credentials: [],
             credentialsLevel: null,
             credentialsName: null,
+            opinions: [],
         };
     };
 
@@ -354,6 +375,7 @@
                 },
                 propagate: [],
                 flagsAsterisk: process.env.FLAGS_ASTERISK,
+                defaultOpinions: opinionsToForm(opinions),
             };
         },
         async asyncData({ app, store }) {
@@ -384,6 +406,7 @@
                 this.saving = true;
                 try {
                     await this.$post(`/profile/save`, {
+                        opinions: this.opinions,
                         names: this.names,
                         pronouns: this.pronouns,
                         description: this.description,

@@ -1343,6 +1343,29 @@ profile:
             albo (ficzer w budowie) poprzez umieszczenie tagu <code>rel="me"</code> wskazującego z powrotem na wizytówkę.
             Nasze linki również umieszczają <code>rel="me"</code>, aby zewnętrzne strony mogły potwierdzić wizytówkę również w odwrotną stronę.
     column: 'Kolumna'
+    opinions:
+        header: 'Legenda/opinie'
+        description: 'Opis…'
+        colours:
+            _: '(Kolor fontu…)'
+            pink: 'Różowy'
+            red: 'Czerwony'
+            orange: 'Pomarańczowy'
+            green: 'Zielony'
+            blue: 'Niebieski'
+            grey: 'Szary'
+        styles:
+            _: '(Styl tekstu…)'
+            bold: 'Pogrubiony'
+            italics: 'Kursywa'
+            small: 'Mały'
+        validation:
+            missingIcon: 'Ikona jest wymagana'
+            missingDescription: 'Opis jest wymagany'
+            duplicateIcon: 'Ikony muszą być unikalne'
+            duplicateDescription: 'Opishy muszą być unikalne'
+            invalidOpinion: 'Wybrana ikona nie jest dostępna w legendzie powyżej'
+        custom: 'dodane ręcznie:'
 
     header: 'Wizytówki'
     list: 'Twoje wizytówki'
@@ -1463,6 +1486,7 @@ crud:
     loginRequired: '{/konto=Zaloguj się}, aby zgłosić wpis'
     copy: 'Skopiuj link'
     download: 'Ściągnij'
+    loadAll: 'Załaduj wszystko…'
 
 footer:
     license: >
@@ -1679,6 +1703,7 @@ mode:
     light: 'Tryb dzienny'
     automatic: 'Auto'
     dark: 'Tryb nocny'
+    reducedColours: 'Zredukowane kolory'
 
 ban:
     reason: 'Powód blokady'
