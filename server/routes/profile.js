@@ -104,6 +104,7 @@ function* isSuspicious(profile) {
         JSON.stringify(profile.pronouns),
         JSON.stringify(profile.names),
         JSON.stringify(profile.words),
+        JSON.stringify(profile.opinions),
     ]) {
         s = s.toLowerCase().replace(/\s+/g, ' ');
         for (let sus of susRegexes) {

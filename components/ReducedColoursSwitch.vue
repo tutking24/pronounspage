@@ -15,7 +15,7 @@
         mounted() {
             if (!process.client) { return; }
 
-            this.reducedColours = !!(localStorage.getItem('reducedColours') || false);
+            this.reducedColours = localStorage.getItem('reducedColours') === 'true';
         },
         watch: {
             reducedColours(v) {
