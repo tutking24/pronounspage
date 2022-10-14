@@ -428,6 +428,8 @@ contact:
                 und in anderen Sprachen (einschließlich solcher, die bereits unterstützt werden, aber z. B. Übersetzungen neuer Funktionen benötigen).
     contribute:
         header: 'Mitmachen'
+        technical:
+            footer: 'Technische Aufgaben'
 
 support:
     header: 'Unterstütze uns'
@@ -533,6 +535,8 @@ profile:
             oder (im Aufbau) durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
             Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
     column: 'Spalte'
+    opinions:
+        header: 'Legende/Optionen'
 
     list: 'Deine Visitenkarten'
     init: 'Eine Visitenkarte erstellen'
@@ -603,6 +607,10 @@ footer:
             realTimeVisitors: 'Momentan online'
             pageviews: 'Seitenaufrufe'
             cards: 'Karten'
+            visitDuration: 'Durchschnittliche Besuchsdauer'
+            responseTime: 'Durchschnittliche Antwortszeit'
+            uptime: 'Betriebszeit'
+            visitors: 'Einmalige Besucher'
         month: 'Monat'
         header: 'Statistiken'
         current: 'Nur diese Version'
@@ -678,6 +686,7 @@ mode:
     light: 'Lichtmodus'
     automatic: 'Automatisch'
     dark: 'Dunkelmodus'
+    reducedColours: 'Reduzierte Farben'
 
 ban:
     reason: 'Grund der Sperrung'
