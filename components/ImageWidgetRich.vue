@@ -16,7 +16,11 @@
                 </div>
             </li>
             <li slot="footer">
-                <ImageUploader multiple :name="name" form @uploaded="addFiles" :sizes="sizes"/>
+                <ImageUploader v-if="maxitems === null || value.length < maxitems" multiple :name="name" form @uploaded="addFiles" :sizes="sizes"/>
+            </li>
+            <li v-if="maxitems && value.length > maxitems" class="alert alert-danger">
+                <Icon v="exclamation-triangle"/>
+                <span class="ml-1">{{$t('crud.validation.listMaxLength', {maxlength: maxitems})}}</span>
             </li>
         </draggable>
     </div>
@@ -35,6 +39,7 @@
             name: {'default': 'images'},
             maxLength: {'default': 24},
             sizes: {'default': 'all'},
+            maxitems: { 'default': null },
         },
         data() {
             return {

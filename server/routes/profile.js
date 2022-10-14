@@ -206,10 +206,11 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     if (req.body.opinions.length > 5
-        || req.body.names.length > 32
-        || req.body.pronouns.length > 32
-        || req.body.links.length > 32
-        || req.body.words.filter(c => c.values.length > 32).length > 0
+        || req.body.names.length > 64
+        || req.body.pronouns.length > 64
+        || req.body.links.length > 64
+        || req.body.customFlags.length > 128
+        || req.body.words.filter(c => c.values.length > 64).length > 0
     ) {
         return res.status(400).json({error: 'crud.validation.genericForm'});
     }
