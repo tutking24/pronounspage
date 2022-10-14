@@ -571,6 +571,23 @@ profile:
         description: '@%username%s kort er også tilgjengelig i følgende språk'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
+    opinions:
+        description: 'Beskrivelse…'
+        colours:
+            _: '(Font farge…)'
+            pink: 'Rosa'
+            red: 'Rød'
+            orange: 'Oransje'
+            green: 'Grønn'
+            blue: 'Blå'
+            grey: 'Grå'
+        styles:
+            small: 'Liten'
+            _: '(Stil…)'
+        validation:
+            missingDescription: 'Beskrivelse er obligatorisk'
+        custom: 'tilpasset, lagt til av brukeren:'
+        header: 'Meninger'
 
 share: 'Del'
 
@@ -589,6 +606,7 @@ crud:
     loginRequired: '{/account=Log in} for å'
     copy: 'Kopier link'
     download: 'Last ned'
+    loadAll: 'Last inn alle…'
 
 footer:
     license: >
