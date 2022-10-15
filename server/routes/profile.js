@@ -255,7 +255,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                     ${JSON.stringify(pronouns)},
                     ${description},
                     ${birthday},
-                    ${links},
+					${JSON.stringify(links)},
                     ${JSON.stringify(req.body.flags)},
                     ${JSON.stringify(req.body.customFlags)},
                     ${JSON.stringify(words)},
