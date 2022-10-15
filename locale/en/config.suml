@@ -187,6 +187,10 @@ links:
             headline: 'Why all cis allies should have pronouns in their bio'
         -
             icon: 'book-open'
+            url: 'https://www.glsen.org/activity/pronouns-guide-glsen'
+            headline: 'Pronoun Guide – from GLSEN'
+        -
+            icon: 'book-open'
             url: 'https://www.merriam-webster.com/words-at-play/singular-nonbinary-they'
             headline: 'Merriam Webster on the singular “they” as a nonbinary pronoun'
         -
