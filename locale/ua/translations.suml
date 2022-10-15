@@ -597,9 +597,13 @@ user:
             taken: 'Адреса цієї електронної пошти вже зайнята.'
         admin: 'Адмін'
     logout: 'Вихід'
+    qr:
+        download: 'Завантажити QR код'
+        header: 'QR код'
     avatar:
         header: 'Світлина профиля'
         change: 'Змінити'
+        failed: 'Будь ласка повторно підключіть вашу соціальну мережу щоб полагодити відсутній аватар.'
     deleteAccount: 'Видалити акаунт'
     deleteAccountConfirm: 'Ви впевнені, що хочите видатили Ваш акаунт? Це не можна буде скасувати!'
     socialConnection:
@@ -652,6 +656,27 @@ profile:
             or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Колонка'
+    opinions:
+        colours:
+            pink: 'Рожевий'
+            red: 'Чорвоний'
+            orange: 'Помаранчевий'
+            green: 'Зелений'
+            blue: 'Блакитний'
+            grey: 'Сірий'
+            _: '(Кольор шрифту...)'
+        styles:
+            _: '(Стиль...)'
+            bold: 'Жирний'
+            italics: 'Курсив'
+            small: 'Маленький'
+        description: 'Опис...'
+        validation:
+            duplicateIcon: 'Іконка повинна бути унікальною'
+            duplicateDescription: 'Опис має бути унікальним'
+            missingDescription: 'Потрібен опис'
+            missingIcon: 'Потрібна іконка'
+    wordsColumnHeader: 'Заголовок стовпця'
 
     header: 'Картки'
     list: 'Ваші картки'
@@ -707,6 +732,7 @@ crud:
     loginRequired: '{/account=Авторизуйтеся}, щоб підтвердити вхід до системи'
     copy: 'Копіювати посилання'
     download: 'Завантажити'
+    loadAll: 'Завантажити все...'
 
 footer:
     license: >
@@ -720,12 +746,16 @@ footer:
         header: 'Статистика'
         overall: 'всі мовні версії'
         current: 'тільки ця версія'
+        month: 'місяць'
         keys:
             cards: 'Картки'
             visitors: 'Унікальні відвідувачі'
             pageviews: 'Перегляди сторінок'
             realTimeVisitors: 'Зараз онлайн'
             users: 'Зареєстровані користувачі'
+            esponseTime: 'Середній час відповіді'
+            visitDuration: 'Середня довжина візиту'
+            uptime: 'Час роботи'
 
 notFound:
     message: 'Сторінка не знайдена'
@@ -908,6 +938,7 @@ mode:
     light: 'Світла тема'
     automatic: 'Автоматичний'
     dark: 'Темна тема'
+    reducedColours: 'Зменьшені кольори'
 
 ban:
     reason: 'Причина блокування'
@@ -939,6 +970,8 @@ report:
 translationMode:
     action: 'Запропонувати переклад'
     changes: 'Зміни'
+    pause: 'Призупинити режим перекладу'
+    header: 'Режим перекладу'
 
 flags:
     Abroromantic: 'Аброромантичн{adjective}'
