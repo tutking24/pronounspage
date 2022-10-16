@@ -43,4 +43,5 @@ $colours: (
     'green':  ('light': $green,      'dark': $green-300),
     'blue':   ('light': $blue-700,   'dark': $blue-200),
     'grey':   ('light': $gray-600,   'dark': $gray-600),
+    'default':('light': $body-color, 'dark': $light),
 );

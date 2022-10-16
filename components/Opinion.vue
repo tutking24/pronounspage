@@ -4,7 +4,7 @@
             <Icon :v="op.icon"/>
         </Tooltip>
         <Twemoji>
-            <nuxt-link v-if="link" :to="link" :class="`colour-${op.colour}`"><Spelling :escape="escape" :text="word"/></nuxt-link>
+            <nuxt-link v-if="link" :to="link" :class="`colour-${op.colour || 'default'}`"><Spelling :escape="escape" :text="word"/></nuxt-link>
             <span v-else><Spelling :escape="escape" :text="word"/></span>
         </Twemoji>
     </span>
