@@ -30,7 +30,6 @@
     </ListInput>
 </template>
 
-
 <script>
 import { colours, styles } from '../src/styling';
 import opinions from '../src/opinions';
@@ -80,6 +79,9 @@ export default {
             }
             if (this.v.filter(el => el.description === v.description).length > 1) {
                 return 'profile.opinions.validation.duplicateDescription';
+            }
+            if (v.description.match(/\bkys\b/i) || v.description.match(/\bkill\b/i)) {
+                return 'profile.opinions.validation.kys';
             }
 
             return null;

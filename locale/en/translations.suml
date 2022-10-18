@@ -724,6 +724,7 @@ profile:
             duplicateIcon: 'Icon must be unique'
             duplicateDescription: 'Description must be unique'
             invalidOpinion: 'Selected icon was not found in the legend above'
+            kys: 'Our Terms of Service forbid encouraging self-harm and/or suicide.'
         custom: 'custom, added by the user:'
 
     header: 'Cards'
