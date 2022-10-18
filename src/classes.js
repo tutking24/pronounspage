@@ -624,7 +624,12 @@ export class Noun {
 
         for (let field of ['masc', 'fem', 'neutr', 'mascPl', 'femPl', 'neutrPl']) {
             for (let value of this[field]) {
-                if (value.toLowerCase().indexOf(filter.toLowerCase()) > -1) {
+                const v = value.toLowerCase();
+                if (filter.startsWith('-') && v.endsWith(filter.substring(1))) {
+                    return true;
+                } else if (filter.endsWith('-') && v.startsWith(filter.substring(0, filter.length - 1))) {
+                    return true;
+                } else if (v.indexOf(filter.toLowerCase()) > -1) {
                     return true;
                 }
             }
