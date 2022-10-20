@@ -584,7 +584,12 @@ profile:
         styles:
             small: 'Liten'
             _: '(Stil…)'
+            italics: 'Kursiv'
         validation:
+            invalidOpinion: 'Valgt ikon var ikke funnet '
+            duplicateIcon: 'Ikon må være unikt'
+            duplicateDescription: 'Beskrivelse må være unik'
+            missingIcon: 'Ikon er obligatorisk'
             missingDescription: 'Beskrivelse er obligatorisk'
         custom: 'tilpasset, lagt til av brukeren:'
         header: 'Meninger'
@@ -607,6 +612,9 @@ crud:
     copy: 'Kopier link'
     download: 'Last ned'
     loadAll: 'Last inn alle…'
+    validation:
+        listMaxLength: 'Maks elementer i denne listen er %maxlength%.'
+        genericForm: 'Formen som har blitt sendt inn er ugyldig. Vennligst fiks probleme og send den igjen.'
 
 footer:
     license: >

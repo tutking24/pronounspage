@@ -369,7 +369,7 @@ links:
     mediaShort: 'Medien'
     media: 'Pronouns.page in den Medien'
 
-    social: 'Social Media'
+    social: 'Soziale Medien'
 
     languageVersions: 'Versionen in anderen Sprachen'
 
@@ -428,7 +428,33 @@ contact:
                 und in anderen Sprachen (einschließlich solcher, die bereits unterstützt werden, aber z. B. Übersetzungen neuer Funktionen benötigen).
     contribute:
         header: 'Mitmachen'
+        intro: >
+            Pronouns.page ist ein Open-Source-Projekt erstellt von Freiwilligen. Auch du kannst deinen Beitrag leisten!
+            Hier sind ein paar Bereiche, in denen wir uns um deinen Beitrag freuen würden! Aktive Mitwirkende werden
+            eingeladen, unserem Team beizutreten.
+        entries:
+            header: 'Einträge hinzufügen'
+            description: >
+                Viele Bereiche der Website (Substantive, queere Terminologie, inklusives Wörterbuch …) haben die
+                Möglichkeit, Einträge hinzuzufügen und zu bearbeiten. Wenn du der Meinung bist, dass etwas fehlt oder
+                falsch ist, zögere nicht, deinen Beitrag einzureichen.
+        version:
+            header: 'Erstelle eine neue Sprachversion'
+            description: >
+                Anweisungen zum Erstellen einer neuen Sprachversion findest du
+                {https://en.pronouns.page/new-version=hier}. Bevor du beginnst, {/contact=kontaktiere uns} bitte, um sich
+                mit anderen abzustimmen, die möglicherweise auch daran arbeiten können.
+        translations:
+            header: 'Übersetzungen hinzufügen oder korrigieren'
+            description: >
+                Eine Übersetzungszeichenfolge fehlt oder ist falsch? Klicke in der Fußzeile auf „Übersetzungen
+                vorschlagen“ und folgen Sie den Anweisungen.
         technical:
+            description: >
+                Technische Aufgaben werden auf {https://gitlab.com/Avris/Zaimki/-/boards=diesem kanban board} verwaltet.
+                Wählen einfach eine nicht zugewiesene Aufgabe aus der Spalte „To Do“ aus, weise sie dir selbst zu und
+                beginne mit der Arbeit daran. Zögere nicht, Fragen zu stellen.
+            header: 'Reiche eine Pull-Anfrage ein'
             footer: 'Technische Aufgaben'
 
 support:
@@ -537,6 +563,7 @@ profile:
     column: 'Spalte'
     opinions:
         header: 'Legende/Optionen'
+        custom: 'Benutzerdefiniert:'
 
     list: 'Deine Visitenkarten'
     init: 'Eine Visitenkarte erstellen'

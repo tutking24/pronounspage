@@ -657,6 +657,8 @@ profile:
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Колонка'
     opinions:
+        custom: 'додане користувач_кою:'
+        header: 'Легенда/думки'
         colours:
             pink: 'Рожевий'
             red: 'Чорвоний'
@@ -676,6 +678,7 @@ profile:
             duplicateDescription: 'Опис має бути унікальним'
             missingDescription: 'Потрібен опис'
             missingIcon: 'Потрібна іконка'
+            invalidOpinion: 'Обрана іконка не була знайдена у легенді вище'
     wordsColumnHeader: 'Заголовок стовпця'
 
     header: 'Картки'
@@ -733,6 +736,9 @@ crud:
     copy: 'Копіювати посилання'
     download: 'Завантажити'
     loadAll: 'Завантажити все...'
+    validation:
+        genericForm: 'Надана форма недійсна. Виправте проблеми та надішліть знову.'
+        listMaxLength: 'Максимальна кількість елементів в цьому списку %maxlength%.'
 
 footer:
     license: >
@@ -753,7 +759,7 @@ footer:
             pageviews: 'Перегляди сторінок'
             realTimeVisitors: 'Зараз онлайн'
             users: 'Зареєстровані користувачі'
-            esponseTime: 'Середній час відповіді'
+            responseTime: 'Середній час відповіді'
             visitDuration: 'Середня довжина візиту'
             uptime: 'Час роботи'
 
@@ -972,6 +978,14 @@ translationMode:
     changes: 'Зміни'
     pause: 'Призупинити режим перекладу'
     header: 'Режим перекладу'
+    logIn: 'Авторизуйтеся, щоб пропонувати переклад'
+    commit: 'Внести зміни'
+    revert: 'Відмінити'
+    welcome: >
+        Переклад відсутній або наявний потребує виправлення? Ви можете натиснути синю кнопку в нижньому правому куті, щоб
+        увімкнути або вимкнути режим перекладу. У цьому режимі після натискання виділеного фрагмента тексту відкриється
+        діалогове вікно, у якому ви можете змінити переклад і порівняти його з англійським текстом. Закінчивши, не забудьте
+        натиснути кнопку «Внести зміни».
 
 flags:
     Abroromantic: 'Аброромантичн{adjective}'
