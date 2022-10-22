@@ -45,16 +45,10 @@ home:
     mission:
         header: '私たちの使命'
         summary: '私たちは、言語における自由、尊敬、そして包括性を目指しています。'
-        freedom: >
-            <strong>自由</strong>
-            – 誰もが自分に合った代名詞を使うことができるように。
-        respect: >
-            <strong>尊敬</strong>
-            – 他者の代名詞が尊重されるように。
-        inclusiveness: >
-            <strong>包含性</strong>
-            – 知らない人やグループのことを言うときに、
-             ジェンダーを決めつけたり、どんな理由があっても排除したりしないように。
+    mission:
+        freedom: '<strong>自由</strong> – 誰もが自分に合った代名詞を使うことができるようにします。'
+        respect: '<strong>尊敬</strong> – 他者の代名詞が尊重されるようにします。'
+        inclusiveness: '<strong>包含性</strong> – 知らない人やグループに言及するとき、わたしたちはジェンダーを決めつけたり、どんな理由があっても排除したりしません。'
 
 pronouns:
     header: '三人称代名詞'
@@ -527,6 +521,24 @@ profile:
             うちのリンクも<code>rel="me"</code>のタッグがあるので、
             他のサイトは認証するのに使える。
     column: '欄'
+    opinions:
+        colours:
+            pink: 'ピンク色'
+            red: '赤色'
+            orange: 'オレンジ色'
+            green: '緑色'
+            blue: '青色'
+            grey: '灰色'
+            _: '(フォントの色を選択)'
+        styles:
+            bold: '太字'
+            italics: '斜体'
+            small: '小さな文字'
+            _: '(フォントのスタイルを選択)'
+        validation:
+            missingDescription: '記述が必要です'
+        description: '記述'
+        custom: 'カスタム、このユーザーが生成した：'
 
     list: 'あなたのカード'
     init: 'カードを作る'
@@ -675,6 +687,7 @@ mode:
     light: 'ライトモード'
     automatic: '自動'
     dark: 'ダークモード'
+    reducedColours: '最小限な色'
 
 ban:
     reason: 'アカウント停止の理由'
