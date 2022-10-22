@@ -14,11 +14,9 @@ import {addMfaInfo} from './mfa';
 import buildLocaleList from "../../src/buildLocaleList";
 import {lookupBanArchive} from '../ban';
 import copyAvatar from '../avatarCopy';
-
+import { usernameRegex, usernameUnsafeRegex } from '../../src/username';
 const config = loadSuml('config');
 const translations = loadSuml('translations');
-
-const USERNAME_CHARS = 'A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9._-';
 
 export const normalise = s => s.trim().toLowerCase();
 
@@ -109,7 +107,7 @@ const defaultUsername = async (db, email) => {
             email.substring(0, email.includes('@') ? email.indexOf('@') : email.length)
                 .padEnd(4, '0')
                 .substring(0, 14)
-                .replace(new RegExp(`[^${USERNAME_CHARS}]`, 'g'), '_')
+                .replace(usernameUnsafeRegex, '_')
         )
     );
 
@@ -413,7 +411,7 @@ router.post('/user/change-username', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    if (req.body.username.length < 4 || req.body.username.length > 16 || !req.body.username.match(new RegExp(`^[${USERNAME_CHARS}]+$`))) {
+    if (req.body.username.length < 4 || req.body.username.length > 16 || !req.body.username.match(usernameRegex)) {
         return res.json({ error: 'user.account.changeUsername.invalid' });
     }
 

@@ -77,8 +77,12 @@
 
                     <form @submit.prevent="changeUsername" :disabled="savingUsername">
                         <h3 class="h6"><T>user.account.changeUsername.header</T></h3>
-                        <input type="text" class="form-control" v-model="username"
+                        <input type="text" class="form-control mb-3" v-model="username"
                            required minlength="4" maxlength="16"/>
+                        <p v-if="usernameError" class="small text-danger">
+                            <Icon v="exclamation-triangle"/>
+                            <span class="ml-1">{{usernameError}}</span>
+                        </p>
                         <div class="d-none d-md-block mt-3">
                             <button class="btn btn-outline-primary" :disabled="username === user.username">
                                 <T>user.account.changeUsername.action</T>
@@ -191,6 +195,7 @@
     import {gravatar} from "../src/helpers";
     import cookieSettings from "../src/cookieSettings";
     import {mapState} from "vuex";
+    import { usernameRegex } from '../src/username';
 
     export default {
         data() {
@@ -367,14 +372,23 @@
             ]),
             canChangeEmail() {
                 return this.email && this.captchaToken;
-            }
+            },
+            usernameError() {
+                if (!this.username.match(usernameRegex)) {
+                    return this.$t('user.account.changeUsername.invalid');
+                }
+                if (this.username !== encodeURIComponent(this.username)) {
+                    return this.$t('user.account.changeUsername.nonascii', {encoded: encodeURIComponent(this.username)});
+                }
+                return null;
+            },
         },
         watch: {
             email(v) {
                 if (v !== this.$user().email) {
                     this.showCaptcha = true;
                 }
-            }
+            },
         }
     }
 </script>
