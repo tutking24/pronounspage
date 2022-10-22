@@ -429,6 +429,18 @@ faq:
                 - >
                     You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
                     Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
+        app:
+            question: 'Is there a pronouns.page mobile app?'
+            answer:
+                - >
+                    Developing multi-platform mobile apps requires a lot of extra effort,
+                    and at the moment we've decided to focus on other goals.
+                - >
+                    But this website is a {https://web.dev/learn/pwa/progressive-web-apps/=Progressive Web App},
+                    which means you can {https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen=add it to home screen}
+                    in your mobile browser –
+                    and it will behave <em>basically</em> like an app 😉
+
         unlisted-cards:
             question: 'Can someone search for my card?'
             answer:

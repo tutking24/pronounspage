@@ -148,7 +148,7 @@ export default {
     buildModules: [],
     modules: [
         '@privyid/nuxt-csrf',
-        //'@nuxtjs/pwa',
+        '@nuxtjs/pwa',
         '@nuxtjs/axios',
         ['@nuxtjs/redirect-module', {
             rules: config.redirects,
@@ -156,16 +156,16 @@ export default {
         'cookie-universal-nuxt',
         'vue-plausible',
     ],
-    // pwa: {
-    //     manifest: {
-    //         name: title,
-    //         short_name: title,
-    //         description: description,
-    //         background_color: '#ffffff',
-    //         theme_color: colour,
-    //         lang: locale,
-    //     }
-    // },
+    pwa: {
+        manifest: {
+            name: title,
+            short_name: title,
+            description: description,
+            background_color: '#ffffff',
+            theme_color: colour,
+            lang: locale,
+        }
+    },
     plausible: {
         domain: process.env.PLAUSIBLE_DOMAIN || translations.domain,
         // NOTE(privacy): Disables automatic tracking of page views, meaning we have to do it manually
