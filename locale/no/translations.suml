@@ -585,6 +585,7 @@ profile:
             small: 'Liten'
             _: '(Stil…)'
             italics: 'Kursiv'
+            bold: 'Fremhevet'
         validation:
             invalidOpinion: 'Valgt ikon var ikke funnet '
             duplicateIcon: 'Ikon må være unikt'
@@ -712,6 +713,7 @@ mode:
     light: 'Lyst tema'
     automatic: 'Automatisk'
     dark: 'Mørkt tema'
+    reducedColours: 'Reduserte farger'
 
 ban:
     reason: 'Grunn til forbud'
