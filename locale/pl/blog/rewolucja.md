@@ -37,7 +37,6 @@ A dzieje się w tej kwestii dużo. Wystarczy zajrzeć do <span class="fal fa-boo
 do sekcji <span class="fal fa-tv"></span> [Media](/media), <span class="fal fa-vial"></span> [Nauka](/nauka),
 czy na nasze <span class="fab fa-twitter"></span> [social media](https://twitter.com/neutratywy).
 Oczywiście, wciąż jeszcze długa droga przed nami, zanim zarówno sama niebinarność, jak i wyrażający ją język
-staną się powszechnie akceptowane i respektowane – ale po półtora roku działalności
-<img src="/img/collective-logo.svg" style="height: 1em; width: 1em; display: inline;" alt="Logo kolektywu"> [Rady Języka Neutralnego](/kolektyw-rjn)
+staną się powszechnie akceptowane i respektowane – ale po półtora roku działalności [Rady Języka Neutralnego](/kolektyw-rjn)
 chyba można zaryzykować stwierdzenie, że język jak najbardziej _może_ zmieniać się szybciej niż się wielu z nas wydaje –
 i że to wcale nie jest nic strasznego 😉
