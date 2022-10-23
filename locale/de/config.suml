@@ -125,6 +125,10 @@ links:
             icon: 'id-card'
             url: 'https://dgti.org/2021/09/05/der-ergaenzungsausweis-der-dgti-e-v/'
             headline: 'Der Ergänzungsausweis der dgti e.V.'
+        -
+            icon: 'users'
+            url: 'https://www.facebook.com/minas.offiziell'
+            headline: 'MinaS – Verein für Menschen im nichtbinären und agender Spektrum'
     academic: []
     mediaGuests: []
     mediaMentions: []

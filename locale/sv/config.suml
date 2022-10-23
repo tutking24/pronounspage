@@ -105,6 +105,10 @@ links:
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
             extra: '– inspiration for denna webbsida.'
+        -
+            icon: 'users'
+            url: 'https://www.facebook.com/SverigesIckebinara'
+            headline: 'SIB – Sveriges Ickebinära'
     academic: []
     mediaGuests: []
     mediaMentions: []
