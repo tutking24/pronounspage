@@ -95,7 +95,7 @@ faq:
     route: 'faq'
 
 links:
-    enabled: false
+    enabled: true
     split: false
     route: 'lankar'
     blogRoute: 'blogg'
