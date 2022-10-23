@@ -32,6 +32,10 @@ The word “enby” can mean whatever we want it to mean!
 
 So… What _do_ we want it to mean? It's hard to know for sure, but here's some indicators, if you're interested:
 
+According to [Gender Census 2022: Worldwide Report](https://www.gendercensus.com/results/2022-worldwide/)
+“enby” is one of the most common labels among nonbinary people.
+It's at the 6<sup>th</sup> place both in the ⩽30 group (32%) and in the ⩾31 group (29%).
+
 [GenderCensus asked on their Twitter recently](https://twitter.com/gendercensus/status/1554437753382764544),
 if the word “enby” implies an adult or a kid – and **71% of responders said it has no age connotations**.
 Admittedly, it's a sample of just 403 votes and the margin is way smaller than in questions about similar words (“girl”, “man”, “nonbinary”, …),
