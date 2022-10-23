@@ -421,6 +421,11 @@ faq:
                     If you don't like a flag, just don't use it.
                     If your flag is missing, just upload it
                     (it will be marked as user-generated to mitigate vandalism).
+                - >
+                    Interestingly, the Unicode Consortium
+                    {https://blog.emojipedia.org/propose-a-new-emoji-but-no-more-flags/=implemented a similar policy}
+                    regarding proposing new flags as emoji 😉
+
         custom-pronouns:
             question: 'My pronouns aren''t listed'
             answer:
