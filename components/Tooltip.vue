@@ -1,5 +1,5 @@
 <template>
-    <span class="tooltip-wrapper" :title="text" :aria-label="text">
+    <span class="tooltip-wrapper" :title="text" :aria-label="text" role="img">
         <slot></slot>
         <span class="tooltip-content bg-dark text-white border px-2 py-1 rounded">
             {{ text }}
