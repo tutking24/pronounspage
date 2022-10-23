@@ -78,6 +78,10 @@ export default {
         enableAds() {
             if (this.consent === undefined) { return; }
 
+            window._ezAllowed = (tcdata, purpose) => {
+                return !!this.consent;
+            }
+
             this.ezstandalone = window.ezstandalone || {};
             ezstandalone.cmd = ezstandalone.cmd || [];
             ezstandalone.cmd.push(() => {
