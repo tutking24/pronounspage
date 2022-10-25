@@ -17,15 +17,15 @@ home:
             enn det du kanskje forventer. Noen mennesker passer ikke inn i boksene med “mann” eller “kvinne”, og
             foretrekker mer nøytralt språk.
         - >
-            Dette verktøyet lar deg dele en link til pronomenene dine, med eksempler på konteksten de vil bli brukt i, slik
-            at du kan vise folk hvordan du liker å bli kalt.
+            Dette verktøyet lar deg dele en link til pronomenene dine, med eksempler på konteksten de vil bli brukt i,
+            slik at du kan vise folk hvordan du liker å bli kalt.
         - >
-            Hvorfor har det noe å si? På grunn av grunnleggende menneskelig anstendighet Du ville vel ikke kalt Anne
-            “Ingrid” bare fordi du liker det navnet bedre eller fordi du synes “hun ser ut som en Ingrid”? Selv dersom hun har
-            navnet “Ingrid” i fødselsattesten hennes men hun hater det, og foretrekker å bruke “Anne” – så ville du kalt henne
-            Anne. Det er likedan med pronomen. Hvis du ikke vil være frekk mot noen, kall de som de vil bli kalt… Den
-            eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen. Vi introduserer oss selv
-            med ett navn, men ikke med pronomen. La oss endre det!
+            Hvorfor har det noe å si? På grunn av grunnleggende menneskelig anstendighet. Du ville vel ikke kalt Anne
+            “Ingrid” bare fordi du liker det navnet bedre eller fordi du synes “hun ser ut som en Ingrid”? Selv dersom
+            hun har navnet “Ingrid” i fødselsattesten hennes men hun hater det, og foretrekker å bruke “Anne” – så ville
+            du kalt henne Anne. Det er likedan med pronomen. Hvis du ikke vil være frekk mot noen, kall de som de vil bli
+            kalt… Den eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen. Vi introduserer
+            oss selv med ett navn, men ikke med pronomen. La oss endre det!
     pronouns: 'Liste med populære pronomen'
     generator:
         header: 'Generator'
@@ -418,9 +418,8 @@ contact:
         entries:
             header: 'Legg til bidrag'
             description: >
-                Mange seksjoner på nettsiden (subjektiv, inklusiv ordbok...) har alternativer for å legge til og redigere
-                eksisterende bidrag. Hvis du tror at noe mangler eller er feil, nøl ikke med å ta disse i bruk.
-
+                Mange seksjoner på nettsiden (substantiv, inklusiv ordbok...) har alternativer for å legge til og
+                redigere eksisterende bidrag. Hvis du tror at noe mangler eller er feil, nøl ikke med å ta disse i bruk.
 support:
     header: 'Hjelp'
     description: >
