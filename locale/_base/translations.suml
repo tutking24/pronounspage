@@ -536,6 +536,9 @@ user:
             action: 'Change username'
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
             taken: 'This username is taken.'
+            nonascii: >
+                Warning: if you decide for a username that contains non-ASCII characters,
+                keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
         changeEmail:
             header: 'Email address'
             action: 'Change email'
