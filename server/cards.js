@@ -64,7 +64,7 @@ const shoot = async (db, mode) => {
 
     for (let {id, locale, username} of profiles) {
         const cardId = ulid();
-        let key = `card/${locale}/${username}-${cardId}.png`;
+        let key = `card/${locale}/${encodeURIComponent(username).replace(/'/g, '_')}-${cardId}.png`;
         if (mode === 'dark') {
             key = mode === 'dark' ? key.replace('.png', '-dark.png') : key;
         }
