@@ -927,6 +927,12 @@ links:
             url: 'https://youtube.com/watch?v=gTgG9IDOpNc'
             headline: 'Niebinarny j. polski – zaimki.pl: Andrea Vos, Szymon Misiek'
             extra: '– <strong>Trans Show</strong> Angeli Getler, odc. 3'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=l-YrKLBFXfI'
+            headline: 'Jak mówić, aby nie wykluczać? – webinar prowadzony przez Archiego Pałkę skierowany do osób nauczycielskich'
+            extra: ' – <strong>Stonewall TV</strong>'
+
     mediaMentions:
         -
             icon: 'newspaper'
