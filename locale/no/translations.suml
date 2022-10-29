@@ -541,7 +541,7 @@ profile:
     delete: 'Slett'
     deleteConfirm: 'Er du sikker på at du vil slette dette kortet?'
     editor:
-        header: 'Kort redigerer'
+        header: 'Kortredigerer'
         save: 'Lagre kort'
         defaults: 'Restaurer originale'
         propagate: 'Viderefør denne endringen til kortene dine på alle språk'
