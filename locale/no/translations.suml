@@ -498,7 +498,7 @@ user:
         disable: 'Deaktiver MFA'
         disableConfirm: 'Er du sikker på at du vil deaktivere MFA?'
     qr:
-        header: 'QR kode'
+        header: 'QR-kode'
         download: 'Last ned QR kode'
 
 profile:
@@ -558,7 +558,7 @@ profile:
         Bare lag en bruker {/account=her}.
     bannerButton: 'Lag et kort'
     card:
-        link: 'Kort bilde'
+        link: 'Kortbilde'
         generate: 'Generer'
         generating: 'Genererer, vennligst vent'
     empty: 'Denne personen har ikke laget noen kort ennå.'
@@ -618,12 +618,12 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL} lisensen.
+        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL}-lisensen.
     links: 'Kontakt, sosiale medier'
     legal: 'Legal' # TODO
-    financial: 'Financial transparency' # TODO
+    financial: 'Økonomisk gjennomsiktighet'
     technical: 'Teknisk'
-    sibling: 'Søster prosjekter'
+    sibling: 'Søsterprosjekter'
     stats:
         keys:
             cards: 'Kort'
@@ -635,7 +635,7 @@ footer:
             visitDuration: 'Gjennomsnittlig besøks varighet'
             pageviews: 'Visninger for denne siden'
         current: 'bare denne versjonen'
-        overall: 'alle språk versjoner'
+        overall: 'alle språkversjoner'
         header: 'Statistikk'
         month: 'måned'
 
