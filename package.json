@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/redirect-module": "^0.3.1",
     "@privyid/nuxt-csrf": "^1.0.0",
     "avris-columnist": "^0.3.1",
