@@ -33,7 +33,7 @@
                 <div class="alert alert-warning">
                     <h5>Ban proposals</h5>
                     <p>
-                        After at least 3 moderators had proposed bans,
+                        After at least 2 moderators had proposed bans,
                         you'll be able to pick one of the proposals in order to actually issue the ban.
                         If the proposed reasons/term points significantly differ
                         or if you think the person shouldn't be banned despite another moderator thinking otherwise,
@@ -52,19 +52,21 @@
                         <tbody>
                         <tr v-for="proposal in banProposals">
                             <td>{{$datetime($ulidTime(proposal.id))}}</td>
-                            <td class="small">
-                                (TODO)<br/>
-                                <span style="font-size: 0.5em">{{proposal.bannedBy}}</span>
+                            <td>
+                                <a :href="`https://pronouns.page/@${proposal.bannedByUsername}`" target="_blank" rel="noopener">
+                                    @{{proposal.bannedByUsername}}
+                                </a>
                             </td>
                             <td>{{proposal.bannedReason}}</td>
                             <td><ul><li v-for="term in proposal.bannedTerms.split(',')">{{term}}</li></ul></td>
                             <td>
+                                <button class="btn btn-outline-primary btn-sm" @click="copyProposal(proposal)">Copy</button>
                                 <button v-if="canApplyBan" class="btn btn-outline-danger btn-sm" @click="applyBan(proposal.id)">Apply ban</button>
                             </td>
                         </tr>
                         </tbody>
                     </table>
-                    <button v-if="isBanned && $isGranted('*')" class="btn btn-success btn-sm" @click="applyBan(0)">Unban</button>
+                    <button v-if="isBanned || banProposals.length > 0" class="btn btn-success btn-sm" @click="applyBan(0)">Unban / cancel proposals</button>
                 </div>
                 <textarea v-model="user.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
                 <div class="form-group">
@@ -138,7 +140,7 @@
                 }
             },
             async applyBan(proposalId) {
-                await this.$confirm(this.$t('ban.confirm', {username: this.user.username}), 'danger');
+                await this.$confirm(this.$t(proposalId ? 'ban.confirm' : 'ban.confirmUnban', {username: this.user.username}), 'danger');
                 this.saving = true;
                 try {
                     await this.$post(`/admin/apply-ban/${encodeURIComponent(this.user.username)}/${proposalId}`);
@@ -159,6 +161,10 @@
                 } finally {
                     this.saving = false;
                 }
+            },
+            copyProposal(proposal) {
+                this.user.bannedReason = proposal.bannedReason;
+                this.user.bannedTerms = proposal.bannedTerms.split(',');
             },
         },
         computed: {

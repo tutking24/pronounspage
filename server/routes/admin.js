@@ -201,7 +201,10 @@ const fetchUserByUsername = async (db, username) => {
 
 const fetchBanProposals = async (db, userId) => {
     return await db.all(SQL`
-        SELECT * FROM ban_proposals WHERE userId = ${userId}
+        SELECT p.*, a.username AS bannedByUsername
+        FROM ban_proposals p
+            LEFT JOIN users a ON p.bannedBy = a.id
+        WHERE userId = ${userId}
     `);
 }
 
@@ -302,9 +305,6 @@ router.post('/admin/apply-ban/:username/:id', handleErrorAsync(async (req, res) 
         await archiveBan(req.db, user);
         mailer(user.email, 'ban', {reason: proposal.bannedReason, username: normalise(req.params.username)});
     } else {
-        if (!req.isGranted('*')) {
-            return res.status(401).json({error: 'Unauthorised'});
-        }
         await req.db.get(SQL`
             UPDATE users
             SET bannedReason = null,
