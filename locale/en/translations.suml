@@ -206,7 +206,12 @@ terminology:
     headerLong: 'Dictionary of queer terminology'
     info:
         - >
-            A dictionary of terms related to the LGBTQ+ community.
+            This is a dictionary of terms related to the LGBTQ+ community.
+        - >
+            Keep in mind that identity labels are inherently subjective and flexible.
+            This dictionary is a community effort to find the most widely accepted definitions of queer terms,
+            but shouldn't be treated as any kind of authority on the subject.
+            The only authority on someone's identity and what words best describe it is… that person themself.
     term: 'Term'
     original: 'Etymology'
     category: 'Category'
