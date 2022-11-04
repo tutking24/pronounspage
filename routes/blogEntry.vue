@@ -43,6 +43,13 @@
         async asyncData({route}) {
             return parseMarkdown((await import(`../data/blog/${route.params.slug || route.meta[0].slug}.md`)).default);
         },
+        async mounted() {
+            if (!process.client) { return; }
+
+            if (this.content.includes('twitter-tweet')) {
+                await this.$loadScript('twitter', 'https://platform.twitter.com/widgets.js');
+            }
+        },
         head() {
             return head({
                 title: this.title,
