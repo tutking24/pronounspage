@@ -581,10 +581,11 @@ profile:
             blue: 'Blå'
             grey: 'Grå'
         styles:
-            small: 'Liten'
+            bold-italics: 'Fremhevet kursiv'
             _: '(Stil…)'
             italics: 'Kursiv'
             bold: 'Fremhevet'
+            small: 'Liten'
         validation:
             invalidOpinion: 'Valgt ikon var ikke funnet '
             duplicateIcon: 'Ikon må være unikt'

@@ -253,6 +253,14 @@ form[disabled] {
 .italics {
     font-style: italic;
 }
+.bold-italics {
+    font-weight: bold;
+    font-style: italic;
+}
+.semibold {
+    font-weight: 600;
+}
+
 
 body:not(.reduced-colours) {
     @each $name, $value in $colours {

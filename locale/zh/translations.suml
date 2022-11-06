@@ -513,6 +513,7 @@ profile:
             grey: '灰色'
         styles:
             _: '(字形…)'
+            bold-italics: '粗體 斜體'
             bold: '粗體'
             italics: '斜體'
             small: '小'

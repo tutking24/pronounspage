@@ -1361,6 +1361,7 @@ profile:
             grey: 'Szary'
         styles:
             _: '(Styl tekstu…)'
+            bold-italics: 'Pogrubiony & kursywa'
             bold: 'Pogrubiony'
             italics: 'Kursywa'
             small: 'Mały'

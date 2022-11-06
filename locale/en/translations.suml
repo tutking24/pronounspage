@@ -740,6 +740,7 @@ profile:
             grey: 'Grey'
         styles:
             _: '(Style…)'
+            bold-italics: 'Bold & italics'
             bold: 'Bold'
             italics: 'Italics'
             small: 'Small'
@@ -1361,4 +1362,4 @@ calendar:
 
 ukraine:
     header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org=Here''s how you can support it.}'
+    link: '{https://supportukrainenow.org=Here''s how you can support them.}'

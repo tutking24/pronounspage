@@ -706,6 +706,7 @@ profile:
             grey: 'Gri'
         styles:
             _: '(Stil…)'
+            bold-italics: 'BÎngroșat italic'
             bold: 'Îngroșat'
             italics: 'Italic'
             small: 'Mic'

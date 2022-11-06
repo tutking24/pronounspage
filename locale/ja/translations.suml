@@ -522,6 +522,7 @@ profile:
             grey: '灰色'
             _: '(フォントの色を選択)'
         styles:
+            bold-italics: '太字 斜体'
             bold: '太字'
             italics: '斜体'
             small: '小さな文字'

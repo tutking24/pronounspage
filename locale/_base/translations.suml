@@ -630,6 +630,7 @@ profile:
             grey: 'Grey'
         styles:
             _: '(Style…)'
+            bold-italics: 'Bold & italics'
             bold: 'Bold'
             italics: 'Italics'
             small: 'Small'
