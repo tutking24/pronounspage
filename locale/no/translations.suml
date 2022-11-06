@@ -10,22 +10,22 @@ home:
     about:
         - >
             Vi har alle pronomen. Dette er ordene vi bruker i stedet for å kalle noen ved navn hver gang vi nevner dem.
-            De fleste bruker {/han=“han/ham”} og {/hun=“hun/henne”}, så det er vanlig å anta hvilket vi skal bruke basert
-            på noens utseende. Men det er faktisk ikke så enkelt som dette...
+            De fleste bruker {/han=“han/ham”} og {/hun=“hun/henne”}, så det er vanlig å gjette hvilken vi skal bruke
+            basert på noens utseende. Men det er faktisk ikke så enkelt som dette...
         - >
-            Kjønn er komplisert. Noen mennesker “ser ikke ut” som et kjønn. Noen foretrekker å bli kalt på en annen måte
-            enn det du kanskje forventer. Noen mennesker passer ikke inn i boksene med “mann” eller “kvinne”, og
-            foretrekker mer nøytralt språk.
+            Kjønn er komplisert. Noen mennesker “ser ikke ut” som et kjønn. Noen foretrekker å bli kalt noe annet enn det
+            du kanskje forventer. Noen mennesker passer ikke inn i boksene med “mann” eller “kvinne”, og foretrekker
+            nøytrale utrykk.
         - >
             Dette verktøyet lar deg dele en link til pronomenene dine, med eksempler på konteksten de vil bli brukt i,
-            slik at du kan vise folk hvordan du liker å bli kalt.
+            slik at du kan vise folk hva du liker å bli kalt.
         - >
             Hvorfor har det noe å si? På grunn av grunnleggende menneskelig anstendighet. Du ville vel ikke kalt Anne
             “Ingrid” bare fordi du liker det navnet bedre eller fordi du synes “hun ser ut som en Ingrid”? Selv dersom
             hun har navnet “Ingrid” i fødselsattesten hennes men hun hater det, og foretrekker å bruke “Anne” – så ville
-            du kalt henne Anne. Det er likedan med pronomen. Hvis du ikke vil være frekk mot noen, kall de som de vil bli
-            kalt… Den eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen. Vi introduserer
-            oss selv med ett navn, men ikke med pronomen. La oss endre det!
+            du kalt henne Anne. Det samme gjelder med pronomen. Hvis du ikke vil være frekk mot noen, kall de som de vil
+            bli kalt… Den eneste forskjellen er at vi vanligvis vet navnet til en person, men ikke pronomen. Vi
+            introduserer oss selv med ett navn, men ikke med pronomen. La oss endre det!
     pronouns: 'Liste med populære pronomen'
     generator:
         header: 'Generator'
@@ -522,7 +522,7 @@ profile:
         Dette er ikke en skeiv identitet, men vi inkluderer den for de som er skeive på andre måter. (f.eks de som er
         trans og hetero).
     links: 'Lenker'
-    linksRecommended: 'Vi anbefaler å lenke til'
+    linksRecommended: 'Vi anbefaler å gå til'
     # TODO
     verifiedLinks:
         header: 'Verified links'
@@ -543,7 +543,7 @@ profile:
     editor:
         header: 'Kortredigerer'
         save: 'Lagre kort'
-        defaults: 'Restaurer originale'
+        defaults: 'Tilbake til orginalen'
         propagate: 'Viderefør denne endringen til kortene dine på alle språk'
     opinion:
         yes: 'Ja'
@@ -564,10 +564,10 @@ profile:
     empty: 'Denne personen har ikke laget noen kort ennå.'
     personal:
         header: 'Personlig'
-        description: 'Det er bare du som kan se denne delen'
+        description: 'Bare du kan se denne delen'
     language:
         header: 'Språk'
-        description: '@%username%s kort er også tilgjengelig i følgende språk'
+        description: '@%username%s kort er også tilgjengelig i disse språkene'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
     opinions:
@@ -1001,4 +1001,4 @@ calendar:
 
 ukraine:
     header: 'Vi står sammen med det ukrainske folk.'
-    link: '{https://supportukrainenow.org/=Her er hvordan du kan bidra.}'
+    link: '{https://supportukrainenow.org/=Hvordan du kan bidra.}'
