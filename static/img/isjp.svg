@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 36 36"
+   version="1.1"
+   id="svg967"
+   sodipodi:docname="isjp.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)">
+  <metadata
+     id="metadata973">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs971" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="913"
+     id="namedview969"
+     showgrid="false"
+     inkscape:zoom="20.416667"
+     inkscape:cx="14.130612"
+     inkscape:cy="17.608163"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg967" />
+  <path
+     fill="#DD2E44"
+     d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868-3.308 0-6.227 1.633-8.018 4.129-1.791-2.496-4.71-4.129-8.017-4.129-5.45 0-9.868 4.417-9.868 9.868 0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959.17-.721.268-1.469.268-2.242z"
+     id="path965" />
+  <path
+     id="rect1536"
+     style="fill:#e6e7e8;fill-opacity:1;stroke-width:1.00456"
+     d="M 9.9599026,1.915 C 4.4945945,1.915 0.065,6.3590727 0.065,11.844492 c 0,0.776874 0.0978992,1.530793 0.26637108,2.256346 0.19989047,1.246433 0.58848188,2.501433 1.09878122,3.746162 H 34.569849 c 0.509954,-1.244367 0.897265,-2.500136 1.096822,-3.746162 C 35.837148,13.375285 35.935,12.622373 35.935,11.844492 35.935,6.360079 31.504403,1.915 26.040098,1.915 22.722806,1.915 19.796031,3.5582169 18,6.0699776 16.20397,3.5582169 13.276191,1.9149999 9.9599026,1.915 Z" />
+</svg>

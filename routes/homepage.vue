@@ -13,8 +13,8 @@
                 </p>
 
                 <div class="row">
-                    <div v-for="{icon, header, route} in mainLinks" class="col my-4 text-center">
-                        <nuxt-link :to="`/${route}`">
+                    <div v-for="{icon, header, route, link} in mainLinks" :class="[mainLinks.length > 3 ? 'col-6 col-lg-3' : 'col', 'my-4', 'text-center']">
+                        <LocaleLink :link="link || route" :locale="link ? 'external' : config.locale">
                             <p>
                                 <Icon :v="icon" size="2" class="d-inline-block d-lg-none"/>
                                 <Icon :v="icon" size="3" class="d-none d-lg-inline-block"/>
@@ -22,7 +22,7 @@
                             <p class="h5">
                                 <Spelling :text="$t(header)"/>
                             </p>
-                        </nuxt-link>
+                        </LocaleLink>
                     </div>
                 </div>
 
@@ -115,6 +115,13 @@
                     icon: 'id-card',
                     header: 'profile.bannerButton',
                     route: this.config.user.route,
+                })
+            }
+            if (this.config.locale === 'pl') {
+                mainLinks.push({
+                    icon: 'isjp.svg',
+                    header: 'isjp.homepage',
+                    link: 'https://isjp.pl',
                 })
             }
 

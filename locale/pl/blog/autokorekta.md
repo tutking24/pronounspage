@@ -77,6 +77,14 @@ zapraszamy na [zaimki.pl](https://zaimki.pl) oraz do kontaktu mailowego na adres
 
 — [Rada Języka Neutralnego](/kolektyw-rjn)
 
+<section class="alert alert-success d-flex">
+    <img src="/img/isjp.svg" alt="Logo ISJP: biało-czerwone serce" class="mx-3" style="height: 3em"/>
+    <p class="mb-0">
+        <strong>Aktualizacja</strong>: wzięłośmy sprawę we własne ręce i zaczęłośmy pracę nad inkluzywnym słownikiem.<br/>
+        Zapraszamy na <a href="https://isjp.pl" target="_blank" rel="noopener"><strong>isjp.pl</strong></a>!
+    </p>
+</section>
+
 <section>
     <a href="https://chng.it/gFxppJDc" target="_blank" class="btn btn-primary btn-lg d-block">
         <span class="fal fa-signature"></span>

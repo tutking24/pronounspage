@@ -1449,6 +1449,11 @@ links:
 
     recommended:
         -
+            icon: 'isjp.svg'
+            url: 'https://isjp.pl'
+            headline: 'Inkluzywny Słownik Języka Polskiego'
+            extra: ' – słownik autokorekty rozszerzony o nowe formy.'
+        -
             icon: 'instagram'
             iconSet: 'b'
             url: 'https://www.instagram.com/inkluzywnamowa/'
