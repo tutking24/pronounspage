@@ -9,8 +9,8 @@ Because of how this website started as my personal project running on my infrast
 the Collective's finances and my personal finances are intertwined and many of the cost and income figures are estimations.
 [I described it in last year's post](/blog/financial-transparency-2020-2021), and for most of the year so far it was still the case,
 so I won't go into details again. Three things have changed in the last two months, though:
- - [I've migrated the entire project to separate VPN](/blog/server-migration), which raised the cost
-   but increased stability, improved resources available and allowed multiple contributors to access the VPN via SSH for maintenance.
+ - [I've migrated the entire project to separate VPS](/blog/server-migration), which raised the cost
+   but increased stability, improved resources available and allowed multiple contributors to access the VPS via SSH for maintenance.
  - Thanks to Bunq's free subaccounts I've set up [a proper bank account](https://bunq.me/PronounsPage) and digital credit card,
    which allows me to pay for project-related expenses directly instead of sending myself reimbursements.
  - I stopped covering some maintenance costs out of my own pocket, the Collective agreed to just reimburse me the estimated cost.
@@ -25,7 +25,7 @@ so I won't go into details again. Three things have changed in the last two mont
 
 ## Costs
 
- - The old VPN server cost us €64.37/quarter, new one (starting July) costs €27.25/month.
+ - The old VPS server cost us €64.37/quarter, new one (starting July) costs €27.25/month.
  - We're using AWS and its cost varies from month to month depending on usage.
    WorkMail (email hosting) is $4/m, SES (email sending) is ~$9/m, S3 (file storage) is ~$5/m
    and the data transfer cost was ~$14/m, which with optimisations and introduction of CloudFront dropped to around ~$3.
