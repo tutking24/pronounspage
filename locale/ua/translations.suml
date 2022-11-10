@@ -837,7 +837,7 @@ terms:
                 misogyny: 'мізогінія'
                 harassment: 'домагання'
                 impersonation: 'видавання себе за іншу особу'
-                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
+                selfHarm: 'заохочення до селфхарму та/або суїциду'
                 childPornography: 'дитяча порнографія'
                 unlawfulConduct: 'протиправна поведінка'
                 misinformation: 'дезінформація'
