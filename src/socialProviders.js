@@ -19,6 +19,7 @@ export const socialProviders = {
         linkRegex: (p) => `^https?://(?:www.)?twitter.com/${p.name}/?$`,
         redirectViaHome: true,
         avatars: true,
+        deprecated: 'https://en.pronouns.page/blog/twitter-login-deprecated',
     },
     discord: {
         name: 'Discord',
