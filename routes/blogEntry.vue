@@ -67,6 +67,10 @@
         hyphens: auto;
         text-align: justify;
 
+        h1 {
+            text-align: left;
+        }
+
         img {
             max-width: 100%;
         }
