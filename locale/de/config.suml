@@ -13,7 +13,18 @@ pronouns:
         name: 'Austauschbare Pronomen'
         description: 'Einige nichtbinäre Menschen nutzen mehr als eine Form von Pronomen und sind damit einverstanden, mit irgendwelchen dieser Pronomen angesprochen zu werden.'
         examples: ['er&sie', 'er&dey', 'sie&xier']
-    null: false
+    null:
+        description: >
+            Nameself
+        history: >
+            Einige Leute ziehen es vor, keine Pronomen zu verwenden, sondern mit ihrem Namen oder ihrer Initiale bezeichnet zu werden.
+        morphemes:
+            pronoun_n: '#'
+            pronoun_d: '#'
+            pronoun_a: '#'
+            possessive: '#s'
+        examples: [':Andrea', ':S']
+        template: 'Öffne eines der Beispiele und ersetze einfach den Namen/Anfangsbuchstaben in der URL durch Deinen eigenen.'
     emoji: false
     slashes: ['pronoun_n', 'possessive', 'pronoun_d', 'pronoun_a']
     others: 'Andere Pronomen'

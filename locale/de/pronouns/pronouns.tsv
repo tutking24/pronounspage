@@ -15,6 +15,7 @@ hen,hen/hen,hen/hem	Neopronomen „hen“	FALSE	hen	hem	hen	hens	hens									FA
 hie,hie/hein,hie/hiem	Neopronomen „hie“	FALSE	hie	hiem	hie	heiner	hein									FALSE	FALSE	TRUE
 iks,iks/iks	Neopronomen „iks“	FALSE	iks	iks	iks	ikses	ikses									FALSE	FALSE	TRUE
 ind,ind/inde	Neopronomen „ind“	FALSE	ind	inde	ind	inds	inds									FALSE	FALSE	TRUE	Vom Wort „Individuum“
+mensch,mensch/mensch	Neopronomen „mensch”	FALSE	mensch	mensch	mensch	menschs	menschs									FALSE	FALSE	TRUE	Oft wird „mensch” auch als {https://de.wikipedia.org/wiki/Generalisierendes_Personalpronomen=generalisierendes Pronomen} benutzt (statt „man”).@Eher als eines von mehreren Pronomen verwendet ({https://nibi.space/pronomen#mensch=laut nibi.space}).
 nin,nin/nim	Neopronomen „nin“	FALSE	nin	nim	nin	nimser	nims									FALSE	FALSE	TRUE	Erstellt von {https://www.geschlechtsneutral.com/lit/Liminalis-2008-Sylvain-Balzer.pdf=Cabala de Sylvain und Carsten Balzer}
 oj,oj/juj,oj/ojm	Neopronomen „oj“	FALSE	oj	ojm	ojn	juj	juj									FALSE	FALSE	TRUE	Erstellt von {https://www.frumble.de/blog/2021/03/26/ueberlegungen-zu-einer-genderneutralen-deutschen-grammatik=Frumble}. Siehe auch: {/substantive#Ojum=Ojum}.
 per,per/per	Neopronomen „per“	FALSE	per	per	per	pers	pers									FALSE	FALSE	TRUE	Vom Wort „Person“
