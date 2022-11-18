@@ -252,7 +252,7 @@ faq:
                 - >
                     Tambien es emportante normalizar el dezir tus pronombres kuando te presentas kon alguno.
                     “Shalom, so David, {/el=el/lo}”. No es zor – ma sinyifika muncho para las personas trans i no binarias!
-                    Es inkluzo mas kolay en el internet: Solo mete tus pronombres (o un atadijo a enshemplos de muestro sitio gueb) en tu <em>biografia</em>.
+                    Es inkluzo mas kolay en el internet: Solo mete tus pronombres (o un atadijo a enshemplos de muestro sitio web) en tu <em>biografia</em>.
                 - >
                     Tambien kale ke tener en mente ke munchas personas uzan un nombre i pronombres distintos en diferentes kontekstos.
                     Puede ke ainda no aygan salido del almario kon algunes kolegos de lavoro, ama se sientan komodes biviendo sus vedra kon amiges.
@@ -361,7 +361,7 @@ english: ~
 
 contact:
     header: 'Kontakto'
-    authors: 'Autores/as/xs del sitio gueb'
+    authors: 'Autores/as/xs del sitio web'
     team:
         name: 'Kooperativa “Konsilyo de Lingua Neutrala”'
         nameShort: 'Kooperativa'
@@ -395,12 +395,12 @@ user:
         email:
             subject: 'Tu kodiche de koneksion kon tu kuento es %code%'
             content: |
-                Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio gueb: %code%.
+                Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio web: %code%.
 
                 Si no demandates este kodiche, simplemente inyora este mesaje.
         why: >
             Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
-        passwordless: 'Este sitio gueb no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas enformasion.}'
+        passwordless: 'Este sitio web no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas enformasion.}'
         instancePlaceholder: 'Instansia'
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
@@ -478,7 +478,7 @@ profile:
             Los atadijos que une poza publikamente en su profil estaran markados kon el ikono de eskudo,
             si se verifikan konektandose kon el mantenedor de autentifikasyon desponible,
             o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
-            Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios gueb externos puedan tambyen verifikar tu karta por su lado.
+            Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios web externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
 
     header: 'Kartas'
@@ -501,7 +501,7 @@ profile:
         no: 'No'
 
     banner: >
-        Puedes tambien uzar muestro sitio gueb para krear una karta {/@example=komo esta},
+        Puedes tambien uzar muestro sitio web para krear una karta {/@example=komo esta},
         ke kontenga tus nombres, pronombres, bandieras de orgolyo, biervos preferidos ets.
         Dospues podras meter un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
         Simplemente krea un kuento {/account=aki}.
@@ -566,7 +566,7 @@ terms:
     consent: 'Al rejistrarte, akseptas los {/terminos=Terminos de Servisio}.'
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Politika de privasidad'
 
 admin:
     header: 'Panel de Administradores'
@@ -883,7 +883,7 @@ calendar:
         masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
         masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
         trans_history_month: 'Transgender History Month' # TODO
-        transition_week: 'Transition Week' # TODO
+        transition_week: 'Semana de la tranzision'
         bi_creators_day: 'Bisexual Creators Day' # TODO
         wrath_month: 'Queer Wrath Month' # TODO
         lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
