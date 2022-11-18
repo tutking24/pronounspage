@@ -20,7 +20,7 @@
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_short" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_i" :counter="counter"/></td>

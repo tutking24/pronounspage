@@ -458,10 +458,14 @@ export class Pronoun {
             }
 
             if (data.length === 22) {
+                data.splice(2, 0, data[4]);
                 data.splice(8, 0, data[8]);
                 data.splice(8, 0, data[8]);
             } else if (data.length === 23) {
+                data.splice(2, 0, data[4]);
                 data.splice(8, 0, data[8]);
+            } else if (data.length === 24) {
+                data.splice(2, 0, data[4]);
             }
         }
 

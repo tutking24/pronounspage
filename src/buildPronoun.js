@@ -70,7 +70,7 @@ export const buildPronoun = (pronouns, path) => {
 
     let pronoun = pronounStr.length === 1
         ? base
-        : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null));
+        : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null, config.locale));
 
     if (!config) {
         return pronoun;

@@ -30,7 +30,7 @@ export default class Compressor {
         return [dataFirst, ...compressed];
     }
 
-    static uncompress(data, base) {
+    static uncompress(data, base, locale) {
         if (!base) {
             return data;
         }
@@ -50,6 +50,10 @@ export default class Compressor {
                 uncompressed.push(base[i]);
                 i++;
             }
+        }
+
+        if (locale === 'pl' && uncompressed.length === 24 && base.length === 25) {
+            return Compressor.uncompress(data, [...base.slice(0, 2), ...base.slice(3)], locale);
         }
 
         return uncompressed;

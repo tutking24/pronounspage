@@ -1,6 +1,7 @@
 export default [
     'pronoun_n',
     'pronoun_g',
+    'pronoun_g_short',
     'pronoun_g_acc',
     'pronoun_d',
     'pronoun_a',
