@@ -14,6 +14,7 @@ when the company seems to be struggling with internal chaos.
 **We strongly recommend setting up a different login method
 and [disconnecting the PronounsPage app from Twitter](https://twitter.com/settings/connected_apps)**.
 
+[comment]: <> (https://twitter.com/IanColdwater/status/1592281503610048512)
 [comment]: <> (https://twitter.com/ihearthestia/status/1590888585825521665)
 [comment]: <> (https://twitter.com/iteamon/status/1590736948540284928)
 [comment]: <> (https://twitter.com/TCBullfrog/status/1590866499862147073)
