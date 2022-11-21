@@ -89,6 +89,16 @@ const templates = {
         text: 'Check them out here: https://[[domain]]/admin',
         html: '<p>Check them out here: <a href="https://[[domain]]/admin" target="_blank" rel="noopener">[[domain]]/admin</a></p>',
     },
+    modMessage: {
+        subject: '[[user.modMessage.subject]]',
+        text: `[[user.modMessage.intro]]\n\n{{nl2br:message}}\n\n[[user.modMessage.respond]]`,
+        html: `
+            <p>[[user.modMessage.intro]]</p>
+            <p style="color: #222; padding-left: 1em;padding-right: 1em;font-style: italic;">{{nl2br:message}}</p>
+            <p>[[user.modMessage.respond]]</p>
+            <p style="color: #999; font-size: 10px;">@{{modUsername}} → @{{username}}</p>
+        `,
+    },
 }
 
 const applyTemplate = (template, context, params) => {
@@ -121,6 +131,12 @@ const applyTemplate = (template, context, params) => {
                     ? Object.keys(value).map(s => `<li><strong>${s}:</strong> ${value[s]}</li>`).join('')
                     : Object.keys(value).map(s => ` - ${s}: ${value[s]}`).join('\n');
             }
+        }
+        if (key.startsWith('nl2br:')) {
+            const value = params[key.substring(6)];
+            return context === 'html'
+                ? value.replace(new RegExp('\\n', 'g'), '<br/>')
+                : value;
         }
         return params[key];
     });

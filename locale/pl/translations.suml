@@ -1318,6 +1318,10 @@ user:
     qr:
         header: 'Kod QR'
         download: 'Pobierz kod QR'
+    modMessage:
+        subject: 'Wiadomość od osoby moderującej'
+        intro: 'Hej! Jedna z naszych osób moderujących wysłała Ci następującą wiadomość:'
+        respond: 'Jeśli chcesz odpowiedzieć, możesz po prostu odpisać na tego maila.'
 
 profile:
     description: 'Opis'

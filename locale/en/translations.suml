@@ -693,6 +693,10 @@ user:
     qr:
         header: 'QR code'
         download: 'Download QR code'
+    modMessage:
+        subject: 'A message from a moderator'
+        intro: 'Hi! One of our moderators has sent you the following message:'
+        respond: 'If you want to respond, you can simply reply to this email.'
 
 profile:
     description: 'Description'

@@ -88,6 +88,46 @@
             <ModerationRules type="rulesUsers" emphasise class="mt-4"/>
             <AbuseReports v-if="abuseReports.length" :abuseReports="abuseReports" allowResolving/>
         </section>
+        <section v-if="$isGranted('users')">
+            <a v-if="!showMessages" href="#" @click.prevent="showMessages = true" class="small">
+                <Icon v="comment-exclamation"/>
+                Mod messages
+            </a>
+            <div v-else>
+                <h5>
+                    <Icon v="comment-exclamation"/>
+                    Mod messages
+                </h5>
+                <p>
+                    You can use this feature to warn a user without banning them, etc.
+                </p>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Sent on</th>
+                        <th>Sent by</th>
+                        <th>Message</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="message in messages">
+                        <td>{{$datetime($ulidTime(message.id))}}</td>
+                        <td>
+                            <a :href="`https://pronouns.page/@${message.adminUsername}`" target="_blank" rel="noopener">
+                                @{{message.adminUsername}}
+                            </a>
+                        </td>
+                        <td v-html="nl2br(message.message)"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <textarea v-model="message" class="form-control" rows="5" :disabled="saving" required></textarea>
+                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="sendMessage">
+                    <Icon v="comment-exclamation"/>
+                    Send
+                </button>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -109,6 +149,10 @@
                 showBanForm: !!this.user.bannedReason,
                 isBanned: !!this.user.bannedReason,
 
+                showMessages: false,
+                messages: undefined,
+                message: '',
+
                 saving: false,
 
                 forbidden,
@@ -123,6 +167,10 @@
             this.banProposals = await this.$axios.$get(`/admin/ban-proposals/${encodeURIComponent(this.user.username)}`);
             if (this.banProposals.length > 0) {
                 this.showBanForm = true;
+            }
+            this.messages = await this.$axios.$get(`/admin/mod-messages/${encodeURIComponent(this.user.username)}`);
+            if (this.messages.length > 0) {
+                this.showMessages = true;
             }
         },
         methods: {
@@ -166,6 +214,22 @@
                 this.user.bannedReason = proposal.bannedReason;
                 this.user.bannedTerms = proposal.bannedTerms.split(',');
             },
+            async sendMessage() {
+                if (!this.message) { return; }
+                await this.$confirm(`<strong>Please proof-read and confirm sending:</strong><br/><br/><div class="text-start">${this.nl2br(this.message)}</div>`, 'danger');
+                this.saving = true;
+                try {
+                    this.messages = await this.$post(`/admin/mod-message/${encodeURIComponent(this.user.username)}`, {
+                        message: this.message,
+                    });
+                    this.message = '';
+                } finally {
+                    this.saving = false;
+                }
+            },
+            nl2br(text) {
+                return text.replace(new RegExp('\\n', 'g'), '<br/>');
+            }
         },
         computed: {
             canApplyBan() {

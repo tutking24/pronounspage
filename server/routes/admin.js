@@ -371,6 +371,60 @@ router.post('/admin/reports/handle/:id', handleErrorAsync(async (req, res) => {
     return res.json(true);
 }));
 
+const fetchModMessages = async (db, user) => {
+    return db.all(SQL`
+        SELECT m.id, a.username as adminUsername, m.message
+        FROM user_messages m
+            LEFT JOIN users a ON m.adminId = a.id
+        WHERE m.userId = ${user.id}
+    `)
+}
+
+router.post('/admin/mod-message/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    if (!req.body.message) {
+        return res.status(400).json({error: 'Bad request'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
+
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
+    await req.db.get(SQL`INSERT INTO user_messages (id, userId, adminId, message) VALUES (
+        ${ulid()},
+        ${user.id},
+        ${req.user.id},
+        ${req.body.message}
+    )`);
+
+    mailer(user.email, 'modMessage', {
+        message: req.body.message,
+        username: req.params.username,
+        modUsername: req.user.username,
+    });
+
+    return res.json(await fetchModMessages(req.db, user));
+}));
+
+router.get('/admin/mod-messages/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
+
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
+    return res.json(await fetchModMessages(req.db, user));
+}));
+
 router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
