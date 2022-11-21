@@ -15,7 +15,7 @@ pronouns:
         examples: ['er&sie', 'er&dey', 'sie&xier']
     null:
         description: >
-            Nameself
+            Name / keine Pronomen
         history: >
             Einige Leute ziehen es vor, keine Pronomen zu verwenden, sondern mit ihrem Namen oder ihrer Initiale bezeichnet zu werden.
         morphemes:
