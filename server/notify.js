@@ -45,6 +45,7 @@ async function notify() {
         ...(await db.all(`SELECT 'names' as type, locale, count(*) as c FROM names WHERE approved = 0 AND deleted=0 GROUP BY locale`)),
         ...(await db.all(`SELECT 'translations' as type, locale, count(*) as c FROM translations WHERE status = 0 OR status = 1 GROUP BY locale`)),
         ...(await db.all(`SELECT 'reports' as type, null as locale, count(*) as c FROM reports WHERE isHandled = 0`)),
+        ...(await db.all(`SELECT 'ban-proposals' as type, null as locale, (SELECT count(*) FROM ban_proposals p LEFT JOIN users u ON p.userId = u.id WHERE u.bannedBy IS NULL) as c`)),
     ].filter(r => r.c > 0);
     if (!awaitingModeration.length) {
         console.log('No entries awaiting moderation');
