@@ -948,5 +948,6 @@ calendar: # TODO
     full: 'Full calendar'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/tw=Here''s how you can support it.}'
+    header: '我們支持烏克蘭。'
+    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/tw=點擊獲得援助信息}'
+
