@@ -18,6 +18,13 @@ export const contact = {
 
 export const socialLinks = {
     all: {
+        mastodon_pl: {
+            icon: 'mastodon',
+            iconSet: 'b',
+            url: 'https://kolektiva.social/@neutratywy',
+            headline: '@neutratywy@kolektiva.social',
+            lang: ['pl'],
+        },
         twitter_pl: {
             icon: 'twitter',
             iconSet: 'b',
