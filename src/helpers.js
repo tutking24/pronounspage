@@ -260,6 +260,19 @@ export class ImmutableArray extends Array {
     }
 }
 
+export const groupBy = function(list, fn) {
+    const grouped = {};
+    for (let el of list) {
+        const key = fn(el);
+        if (!grouped.hasOwnProperty(key)) {
+            grouped[key] = [];
+        }
+        grouped[key].push(el);
+    }
+
+    return grouped;
+}
+
 export const obfuscateEmail = (email) => {
     const [ username, hostname ] = email.toLowerCase().split('@');
     const tld = hostname.split('.').slice(-1).pop();

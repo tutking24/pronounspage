@@ -14,19 +14,16 @@
                     <T>footer.links</T><T>quotation.colon</T>
                 </p>
                 <ul class="list-unstyled mb-4">
-                    <li v-if="config.faq.enabled" class="mb-2">
-                        <nuxt-link :to="`/${config.faq.route}`">
-                            <Icon v="map-marker-question"/>
-                            <T>faq.headerLong</T>
-                        </nuxt-link>
-                    </li>
-                    <li v-for="link in links" :key="link.url" class="mb-2">
-                        <a :href="link.url" target="_blank" rel="me">
-                            <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                            <span v-for="lang in link.lang || []" class="badge bg-light text-dark border">{{lang}}</span>
-                            {{link.headline}}
-                        </a>
-                    </li>
+                    <template v-for="(groupLinks, group) in links">
+                        <li v-if="$t(`contact.groups.${group}`)"><strong><T>contact.groups.{{group}}</T><T>quotation.colon</T></strong></li>
+                        <li v-for="link in groupLinks" :key="link.url" class="mb-2">
+                            <a :href="link.url" target="_blank" rel="me">
+                                <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
+                                <span v-for="lang in link.lang || []" class="badge bg-light text-dark border">{{lang}}</span>
+                                {{link.headline}}
+                            </a>
+                        </li>
+                    </template>
                 </ul>
 
                 <p class="h6 mb-2">
@@ -189,11 +186,12 @@
 
 <script>
 import {getContactLinks, getSocialLinks, getSupportLinks} from '../src/contact';
+import {groupBy} from "../src/helpers";
 
 export default {
     data() {
         return {
-            links: [...getContactLinks(this.config), ...getSocialLinks(this.config)],
+            links: groupBy([...getContactLinks(this.config), ...getSocialLinks(this.config)], l => l.group),
             supportLinks: [...getSupportLinks(this.config)],
             versionFrontend: process.env.VERSION,
             versionBackend: undefined,

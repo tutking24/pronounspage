@@ -1142,6 +1142,10 @@ english:
 contact:
     header: 'Kontakt'
     authors: '{/neutratywy#autor=Autorza} strony'
+    groups:
+        all: ''
+        polish: 'Polskojęzyczne'
+        calendar: 'Bot kalendarza'
     faq: >
         Zanim napiszesz, zajrzyj do naszego {/pytania=FAQ} – być może odpowiedź na Twoje pytanie już się tam znajduje.
     quote: >

@@ -23,6 +23,7 @@
 
 <script>
     import ClipboardJS from 'clipboard';
+    import {COLOURS} from '../src/contact';
 
     // adapted from https://shareon.js.org (MIT)
     // can't use from yarn, because window.onload conflicts with SSR
@@ -42,22 +43,6 @@
         vkontakte: function (d) { return "https://vk.com/share.php?url=" + d.url + "&title=" + d.title + (d.extra.media ? "&image=" + d.extra.media : ''); },
         whatsapp: function (d) { return "whatsapp://send?text=" + d.title + "%0D%0A" + d.url + (d.extra.text ? "%0D%0A%0D%0A" + d.extra.text : ''); },
     };
-
-    const COLOURS = {
-        mastodon: '#3188d4',
-        facebook: '#1877F2',
-        linkedin: '#2867B2',
-        messenger: '#0099FF',
-        odnoklassniki: '#EE8208',
-        pinterest: '#e60023',
-        pocket: '#EF4154',
-        reddit: '#ff4500',
-        telegram: '#179CDE',
-        twitter: '#1da1f2',
-        viber: '#7360f2',
-        vkontakte: '#4680C2',
-        whatsapp: '#25D366',
-    }
 
     const ICONS = {
         messenger: 'facebook-messenger',

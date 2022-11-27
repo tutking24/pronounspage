@@ -5,21 +5,6 @@
             <T>contact.header</T>
         </h2>
 
-        <section>
-            <nuxt-link v-if="config.faq.enabled" :to="`/${config.faq.route}`"
-                class="btn btn-outline-primary border m-1"
-            >
-                <Icon v="map-marker-question"/>
-                <T>faq.header</T>
-            </nuxt-link>
-            <a v-for="link in links" :key="link.url"
-                :href="link.url" target="_blank" rel="noopener"
-                class="btn btn-outline-primary border m-1">
-                    <Icon :v="link.icon" :set="link.iconSet || 'l'"/>
-                    {{link.headline}}
-            </a>
-        </section>
-
         <section class="small">
             <p v-if="$te('contact.faq')">
                 <Icon v="map-marker-question"/>
@@ -55,6 +40,30 @@
             </p>
         </section>
 
+        <section v-for="(groupLinks, group) in links">
+            <h3 v-if="$t(`contact.groups.${group}`)"><T>contact.groups.{{group}}</T><T>quotation.colon</T></h3>
+            <div class="row">
+                <div v-for="link in groupLinks" :key="link.url"
+                     class="col-12 col-md-6 col-xl-4">
+                    <a
+                        :href="link.url" target="_blank" rel="noopener"
+                        class="card mb-3 text-decoration-none hover-shadow">
+                        <div class="card-body p-0 d-flex d-flex" style="height: 3rem"
+                             :style="`background-color: ${link.colour}; border: 2px solid ${link.colour}`"
+                        >
+                            <div class="text-white flex-grow-1 d-flex justify-content-center align-items-center">
+                                <Icon :v="link.icon" :set="link.iconSet || 'l'" size="2"/>
+                            </div>
+                            <img v-if="link.avatar" :src="`/img/social/${link.avatar}`" alt="" class="rounded" style="width: 3rem;"/>
+                        </div>
+                        <div class="card-body text-center">
+                            {{link.headline}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h3 class="mb-3">
                 <Icon v="users"/>
@@ -72,19 +81,19 @@
 </template>
 
 <script>
-    import { head } from "../src/helpers";
-    import {getContactLinks, getSocialLinks} from '../src/contact';
+import {head, groupBy} from "../src/helpers";
+import {getContactLinks, getSocialLinks} from '../src/contact';
 
-    export default {
-        data() {
-            return {
-                links: [...getContactLinks(this.config), ...getSocialLinks(this.config)],
-            };
-        },
-        head() {
-            return head({
-                title: this.$t('contact.header'),
-            });
-        },
-    }
+export default {
+    data() {
+        return {
+            links: groupBy([...getContactLinks(this.config), ...getSocialLinks(this.config)], l => l.group),
+        };
+    },
+    head() {
+        return head({
+            title: this.$t('contact.header'),
+        });
+    },
+}
 </script>

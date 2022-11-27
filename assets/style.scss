@@ -260,7 +260,9 @@ form[disabled] {
 .semibold {
     font-weight: 600;
 }
-
+.hover-shadow:hover {
+    @extend .shadow;
+}
 
 body:not(.reduced-colours) {
     @each $name, $value in $colours {
