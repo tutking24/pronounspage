@@ -239,7 +239,7 @@
                     <tr v-for="proposal in banProposals">
                         <td>
                             <a :href="`https://pronouns.page/@${proposal.username}`" target="_blank" rel="noopener">@{{proposal.username}}</a>
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled" v-if="proposal.profiles">
                                 <li v-for="locale in proposal.profiles.split(',')" v-if="locales[locale]">
                                     <LocaleLink :link="`/@${proposal.username}`" :locale="locale">
                                         {{ locales[locale].name }}
