@@ -101,5 +101,5 @@ export const mutations = {
     },
     toggleAdPlaceholdersVisible(state) {
         state.adPlaceholdersVisible = !state.adPlaceholdersVisible;
-    }
+    },
 }

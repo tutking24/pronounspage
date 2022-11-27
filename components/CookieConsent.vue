@@ -78,6 +78,13 @@ export default {
         enableAds() {
             if (this.consent === undefined) { return; }
 
+            if (this.$isGranted()) {
+                const adsVisible = parseInt(localStorage.getItem('adsVisible') || '0') === 1;
+                if (!adsVisible) {
+                    return;
+                }
+            }
+
             window._ezAllowed = (tcdata, purpose) => {
                 return !!this.consent;
             }

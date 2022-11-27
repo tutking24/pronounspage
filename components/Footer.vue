@@ -51,9 +51,18 @@
                             <T>contact.contribute.technical.footer</T>
                         </a>
                     </li>
+                    <li v-if="config.ads && config.ads.enabled && $isGranted()" class="mb-2">
+                        <a href="#" @click.prevent="toggleAds">
+                            <Icon v="ad"/>
+                            [admins]
+                            <span v-if="adsVisible">Disable ads</span>
+                            <span v-else>Enable ads</span>
+                        </a>
+                    </li>
                     <li v-if="config.ads && config.ads.enabled && $isGranted('*')" class="mb-2">
                         <a href="#" @click.prevent="$store.commit('toggleAdPlaceholdersVisible')">
                             <Icon v="ad"/>
+                            [admins]
                             Toggle ad placeholder visibility
                         </a>
                     </li>
@@ -188,7 +197,14 @@ export default {
             supportLinks: [...getSupportLinks(this.config)],
             versionFrontend: process.env.VERSION,
             versionBackend: undefined,
+            adsVisible: false,
         };
+    },
+    async mounted() {
+        if (!process.client) { return; }
+
+        this.versionBackend = await this.$axios.$get('/version');
+        this.adsVisible = parseInt(localStorage.getItem('adsVisible') || '0') === 1
     },
     methods: {
         async translationMode() {
@@ -200,11 +216,11 @@ export default {
             this.$store.commit('showTranslationMode');
             this.$cookies.set('translationModeVisible', true);
         },
-    },
-    async mounted() {
-        if (!process.client) { return; }
-
-        this.versionBackend = await this.$axios.$get('/version');
+        async toggleAds() {
+            if (!this.$isGranted()) { return; }
+            localStorage.setItem('adsVisible', this.adsVisible ? '0' : '1');
+            window.location.reload();
+        },
     },
 }
 </script>
