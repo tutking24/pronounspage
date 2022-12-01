@@ -759,7 +759,9 @@ profile:
             invalidOpinion: 'Selected icon was not found in the legend above'
             kys: 'Our Terms of Service forbid encouraging self-harm and/or suicide.'
         custom: 'custom, added by the user:'
-
+    expendableList:
+        more: '… and %count% more items'
+        show: '(click to show)'
     header: 'Cards'
     list: 'Your cards'
     init: 'Create a card'
@@ -914,6 +916,7 @@ terms:
                 impersonation: 'impersonation'
                 selfHarm: 'encouraging self-harm and/or suicide'
                 childPornography: 'child pornography'
+                pedophilia: 'broadly understood pedophilia advocacy'
                 unlawfulConduct: 'unlawful conduct'
                 misinformation: 'misinformation'
                 doxxing: 'sharing of someone else''s personal data'
@@ -921,6 +924,7 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'advertisement'
                 copyright: 'copyright or trademark violations'
+                miscellaneous: 'miscellaneous'
             violationsStrict: >
                 We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
                 (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
@@ -938,25 +942,13 @@ terms:
     update:
         header: 'We''ve updated our Terms of Service.'
         intro: >
-            Hi! We want to let you know that we've updated our Terms of Service. Here's an overview of the changes:
+            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on Jan 1st, 2023:
         changes:
             - >
-                In January we will start removing unused accounts to prevent username hoarding
-                (if there's both no card and no login for a month).
-            - >
-                We'd like to provide a safe space for all queer people regardless of age,
-                but we must also respect the law
-                and protect the privacy of people who can't legally consent to processing their data.
-                Now our Terms of Service are explicitly mentioning what has always been the case in accordance to GDPR:
-                you need to be at least 13 years old to create an account,
-                and in case of users aged 13-16 they need have parental consent for us to process their data.
-            - >
-                To improve accessibility, we have started translating our Terms of Service into all supported languages.
-                Those translations are just auxiliary, the only legally binding version remains English.
-            - >
-                Although queerphobia, transphobia, queer exclusionism and trolling
-                have always been understood as violating the Terms of Service under the generic term of “violating social norms”,
-                we're now explicitly listing them as forbidden.
+                The existing policy of banning profiles that advocate for pedophilia
+                (for example with so called “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=MAP}” flags),
+                which have been considered to fall under “Content that might break the law or violate social norms”,
+                will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
 
 privacy:
     header: 'Privacy Policy'

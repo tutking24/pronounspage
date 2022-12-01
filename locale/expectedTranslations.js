@@ -75,4 +75,6 @@ export default [
     'crud.loadAll',
     'crud.validation.genericForm',
     'crud.validation.listMaxLength',
+    'terms.content.content.violationsExamples.pedophilia',
+    'terms.content.content.violationsExamples.miscellaneous',
 ];

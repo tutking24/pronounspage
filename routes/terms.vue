@@ -5,7 +5,7 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-09-13</em></p>
+        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-12-01</em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>
@@ -29,7 +29,7 @@
         <p><T>terms.content.content.liability</T></p>
         <p>
             <T>terms.content.content.violations</T>
-            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><template v-if="i !== forbidden.length - 1">, </template></template>.
+            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><sup v-if="violation === 'pedophilia' && (new Date).getFullYear() === 2022"> (this clause comes into effect on Jan 1st, 2023)</sup><template v-if="i !== forbidden.length - 1">, </template></template>.
             <T>terms.content.content.violationsStrict</T>
         </p>
         <p><T>terms.content.content.responsibility</T></p>

@@ -14,6 +14,7 @@ module.exports = [
     'impersonation',
     'selfHarm',
     'childPornography',
+    'pedophilia',
     'unlawfulConduct',
     'misinformation',
     'doxxing',

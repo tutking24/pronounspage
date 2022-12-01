@@ -1607,6 +1607,7 @@ terms:
                 impersonation: 'podszywanie się pod inne osoby'
                 selfHarm: 'podżeganie do samookaleczania i/lub samobójstwa'
                 childPornography: 'pornografia dziecięca'
+                pedophilia: 'wspieranie szeroko rozumianej pedofilii'
                 unlawfulConduct: 'działanie w sposób bezprawny'
                 misinformation: 'dezinformacja'
                 doxxing: 'udostępnianie cudzych danych osobowych'
@@ -1614,6 +1615,7 @@ terms:
                 trolling: 'trolowanie'
                 advertisement: 'reklamy'
                 copyright: 'naruszenia praw autorskich i znaków towarowych'
+                miscellaneous: 'inne'
             # TODO
             violationsStrict: >
                 We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech

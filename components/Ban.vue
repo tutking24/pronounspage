@@ -72,15 +72,15 @@
                 <div class="form-group">
                     <p class="my-1"><label><strong><T>ban.terms</T><T>quotation.colon</T></strong></label></p>
                     <div style="columns: 3" class="small">
-                        <div class="form-check ps-0" v-for="violation in forbidden">
+                        <div class="form-check ps-0" v-for="violation in [...forbidden, 'miscellaneous']">
                             <label>
-                                <input type="checkbox" :value="violation" v-model="user.bannedTerms"/>
+                                <input type="checkbox" :value="violation" v-model="user.bannedTerms" :disabled="violation === 'pedophilia' && (new Date).getFullYear() === 2022"/>
                                 <T>terms.content.content.violationsExamples.{{violation}}</T>
                             </label>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="ban">
+                <button class="btn btn-danger d-block w-100 mt-2" :disabled="user.bannedReason === '' || saving" @click="ban">
                     <Icon v="ban"/>
                     <T>ban.action</T>
                 </button>

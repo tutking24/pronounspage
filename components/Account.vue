@@ -22,7 +22,7 @@
             </p>
             <ul>
                 <li v-for="change in $t('terms.update.changes')">
-                    {{ change }}
+                    <LinkedText :text="change"/>
                 </li>
             </ul>
             <p class="text-center">
@@ -229,10 +229,9 @@
 
                 impersonationActive: !!this.$cookies.get('impersonator'),
 
-                showTermsUpdate: false,
-                    // this.$ulidTime(this.$user().id) < new Date(2021, 11, 13) / 1000
-                    // && !this.$cookies.get('termsUpdateDismissed')
-                    // && (!this.$user().lastActive || this.$user().lastActive < +new Date(2021, 11, 18, 0, 0, 0))
+                showTermsUpdate:
+                    (new Date).getFullYear() === 2022
+                    && !this.$cookies.get('termsUpdateDismissed2')
             }
         },
         async mounted() {
@@ -359,7 +358,7 @@
                 window.location.reload();
             },
             dismissTermsUpdate() {
-                this.$cookies.set('termsUpdateDismissed', true);
+                this.$cookies.set('termsUpdateDismissed2', true);
                 this.showTermsUpdate = false;
             },
             addBrackets(str) {
