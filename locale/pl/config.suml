@@ -932,6 +932,11 @@ links:
             url: 'https://www.youtube.com/watch?v=l-YrKLBFXfI'
             headline: 'Jak mówić, aby nie wykluczać? – webinar prowadzony przez Archiego Pałkę skierowany do osób nauczycielskich'
             extra: ' – <strong>Stonewall TV</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://www.glamour.pl/artykul/jezyka-nie-skrzywdzisz-ale-mozesz-skrzywdzic-czlowieka-andrea-vos-i-anna-tess-golebiowska-o-jezyku-neutralnym-plciowo-221205101113'
+            headline: '„Języka nie skrzywdzisz, ale możesz skrzywdzić człowieka”. Andrea Vos i Anna Tess Gołębiowska o języku neutralnym płciowo'
+            extra: '– <strong>Glamour</strong>'
 
     mediaMentions:
         -
