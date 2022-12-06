@@ -1115,7 +1115,6 @@ calendar:
         pronouns_day: 'День местоимений'
         trans_week: 'Неделя осведомлённости о трансгендерных'
         trans_parent_day: 'День трансгендерных родителей'
-        nonbinary_week: 'Неделя осведомлённости о небинарных'
         nonbinary_week___timeDescription: 'В неделю (Пн-Вс) вокруг 14 июля'
         polyamory_day: 'День полиаморных'
         homophobia_sport: 'Международный день борьбы с гомофобией в спорте'
@@ -1135,7 +1134,6 @@ calendar:
         stonewall_day: 'Годовщина протестов в Стоунволле'
         domestic_violence: 'Дель осведомленности о домашнем насилии в отношении ЛГБТК+ людей'
         polysexual_day: 'День видимости полисексуальных и полиромантичных'
-        orlando_day: 'Ночь памяти о Pulse'
         aids_memorial: 'День памяти умерших от СПИДа'
         health_week: 'Неделя осведомлённости о здоровье ЛГБТК+ людей'
         lesbian_visibility_week: 'Неделя видимости лесбиянок'
@@ -1162,42 +1160,44 @@ calendar:
         freedressing_day: 'День свободного гардероба'
         sexual_health_day: 'День осведомлённости о сексуальном и репродуктивном здоровье'
         world_sexual_health_day: 'Всемирный день сексуального здоровья'
-        aids_vaccine_day: 'World AIDS Vaccine Day' # TODO
-        queer_youth_day: 'Queer Youth Day' # TODO
-        omnisexual_day: 'Omnisexual Visibility Day' # TODO
         unlabeled_day: 'Unlabeled Visibility Day' # TODO
-        trans_youth_day: 'Trans Children and Youth Visibility Day' # TODO
-        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day' # TODO
-        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day' # TODO
-        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day' # TODO
-        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day' # TODO
-        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO
-        trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO
-        mspec_lesbian_day: 'Mspec Lesbian Visbility & Awareness Day' # TODO
-        mspec_lesbian_week: 'Mspec Lesbian Visbility & Awareness Week' # TODO
-        mspec_gay_day: 'Mspec Gay Visbility & Awareness Day' # TODO
-        mspec_gay_week: 'Mspec Gay Visbility & Awareness Week' # TODO
-        spring_testing_week: 'Spring European HIV Testing Week' # TODO
-        autumn_testing_week: 'Autumn European HIV Testing Week' # TODO
-        sex_worker_day: 'International Sex Worker Day' # TODO
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day' # TODO
-        sex_worker_pride: 'Sex Worker Pride' # TODO
-        sex_worker_rights_day: 'International Sex Workers'' Rights Day' # TODO
         sex_worker_violence_day: 'International Day to End Violence Against Sex Workers' # TODO
-        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day' # TODO
         omnisexual_awareness_day: 'Omnisexual Awareness Day' # TODO
-        hiv_is_not_a_crime: 'HIV Is Not A Crime Day' # TODO
-        trans_flag_day: 'Trans Flag Day' # TODO
         alan_turing_day: 'Alan Turing Day' # TODO
         nonbinary_kids_day: 'Nonbinary Kids'' Day' # TODO
-        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
-        trans_history_month: 'Transgender History Month' # TODO
-        transition_week: 'Transition Week' # TODO
-        bi_creators_day: 'Bisexual Creators Day' # TODO
-        wrath_month: 'Queer Wrath Month' # TODO
-        lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
+        mspec_lesbian_day: 'День видимости м-спек лесбиянок'
+        mspec_lesbian_week: 'Неделя видимости м-спек лесбиянок'
+        mspec_gay_week: 'Неделя видимости м-спек геев'
+        mspec_gay_day: 'День видимости м-спек геев'
+        wrath_month: 'Месяц гнева'
+        omnisexual_day: 'День видимости омнисексуальности'
+        queer_youth_day: 'День квир-молодёжи'
+        youth_hiv_awareness_day: 'День осведомлённости о ВИЧ и СПИД среди молодёжи'
+        bi_creators_day: 'День бисексуальных творцов'
+        trans_hiv_testing_day: 'День тестирования на ВИЧ среди трансгендерных'
+        spring_testing_week: 'Неделя весеннего тестирования на ВИЧ в Европе'
+        aids_vaccine_day: 'День осведомленности о вакцине против ВИЧ '
+        hiv_is_not_a_crime: 'День декриминализации ВИЧ'
+        trans_flag_day: 'День трансфлага'
+        black_hiv_awareness_day: 'День осведомлённости о ВИЧ и СПИД среди чернокожих'
+        sex_worker_rights_day: 'Международный день прав секс-работникс'
+        women_hiv_awareness_day: 'День осведомлённости о ВИЧ и СПИД среди девушек'
+        sex_worker_day: 'Международный день секс-работникс'
+        transition_week: 'Неделя перехода'
+        trans_youth_day: 'День транс-молодёжи'
+        hiv_long_term_survivors_day: 'День долгожителей с ВИЧ'
+        omnisexual_omniromantic_day: 'День осведомлённости о омнисексуальности и омниромантичности'
+        orlando_day: 'Ночь памяти о жертвах в Pulse'
+        equal_pay_day: 'День равной оплаты ЛГБТК+ людям'
+        sex_worker_pride: 'День гордости секс-работникс'
+        gay_hiv_awareness_day: 'День осведомлённости о ВИЧ и СПИД среди гомосексуальных мужчин'
+        trans_history_month: 'Месяц истории трансгендерности'
+        masc_lesbian_day: 'День видимости маскулинных лесбиянок'
+        masc_lesbian_week: 'Неделя видимости маскулинных лесбиянок'
+        nonbinary_week: 'Неделя осведомлённости о небинарности и небинарных'
+        lesbian_aunts_day: 'День тёть-лесбиянок'
+        autumn_testing_week: 'Неделя осеннего тестирования на ВИЧ в Европе'
+
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
     celebrating_day: 'празднуется'
