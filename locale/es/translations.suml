@@ -471,6 +471,40 @@ contact:
                 - 'pon el link a tus redes sociales,'
                 - 'di si alguna vez antes ya habías trabajado de activista,'
                 - 'di en que querrías ayudar.'
+    language: >
+        Somos un equipo internacional – las personas que crean en un lenguaje específico pueden no ser las mismas que
+        lean tu mensaje. Así que, dentro de lo posible, apreciaríamos si tú nos contactaras en <strong>Inglés o
+        Polaco</strong>.
+    contribute:
+        intro: >
+            Pronouns.page es un proyecto de código abierto creado por voluntarios. ¡Tú puedes añadir tu contribución
+            también! Estas son algunas áreas en las que apreciaríamos que contribuyeras. Contribuciones activas serán
+            invitadas a unirse a nuestro equipo.
+        header: 'Contribuye'
+        entries:
+            header: 'Agrega entradas'
+            description: >
+                Varias secciones del sitio web (sustantivos, terminología queer, diccionario inclusivo…) tienen una
+                opción de añadir y editar entradas. Si piensas que algo está faltando o está incorrecto, no dudes en
+                subir tu propia entrada.
+        version:
+            header: 'Crea una versión nueva en otro idioma'
+            description: >
+                Las intrucciones para crear una nueva versión en otro idioma están disponibles
+                {https://en.pronouns.page/new-version=aquí}. Antes de empezar, por favor {/contact=contáctanos} para
+                coordinarte con otres que también puedan estar trabajando en esa versión también.
+        translations:
+            header: 'Agrega correcciones y traducciones'
+            description: >
+                ¡Una traducción está incompleta o incorrecta? Haz clic en “Traducciones propuestas” en el pie de página y
+                sigue las instrucciones.
+        technical:
+            description: >
+                Las tareas técnicas son manejadas en {https://gitlab.com/Avris/Zaimki/-/boards=esta tabla kanban}. Solo
+                escoje una tarea no asignada desde la columna “To Do”, asígnatela y empieza a trabajar en ella. No dudes
+                en hacer preguntas.
+    groups:
+        calendar: 'Bot Calendario Queer'
 
 support:
     header: 'Apóyanos'
@@ -1104,6 +1138,9 @@ calendar:
         list: 'Lista de eventos'
     link: 'Enlace'
     full: 'Calendario completo'
+
+translationMode:
+    action: 'Traducciones propuestas'
 
 ukraine:
     header: 'Somos solidaries con Ucrania.'
