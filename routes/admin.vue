@@ -376,7 +376,7 @@ import {deepSet, head} from "../src/helpers";
                 setTimeout(() => window.location.reload(), 500);
             },
             async acceptTranslationProposal(id) {
-                await this.$confirm('Do you want to accept this translation proposal?', 'success');
+                // await this.$confirm('Do you want to accept this translation proposal?', 'success');
                 await this.$post(`/translations/accept-proposal`, {id})
                 this.translationProposals = this.translationProposals.map(tp => {
                     if (tp.id === id) { tp.status = 1; }
