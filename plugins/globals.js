@@ -10,7 +10,7 @@ export default ({ app, store }) => {
 
     Vue.prototype.$base = process.env.BASE_URL;
 
-    Vue.prototype.$t = (key, params = {}) => translator.translate(key, params, warn);
+    Vue.prototype.$t = (key, params = {}, warn = false) => translator.translate(key, params, warn);
     Vue.prototype.$te = (key) => translator.has(key);
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
         pronoun.format(
