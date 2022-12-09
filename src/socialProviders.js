@@ -14,13 +14,6 @@ export const socialProviders = {
         iconMargin: true,
         avatars: false,
     },
-    twitter: {
-        name: 'Twitter',
-        linkRegex: (p) => `^https?://(?:www.)?twitter.com/${p.name}/?$`,
-        redirectViaHome: true,
-        avatars: true,
-        deprecated: 'https://en.pronouns.page/blog/twitter-login-deprecated',
-    },
     discord: {
         name: 'Discord',
         redirectViaHome: true,
@@ -30,6 +23,13 @@ export const socialProviders = {
         name: 'Google',
         redirectViaHome: true,
         avatars: true,
+    },
+    twitter: {
+        name: 'Twitter',
+        linkRegex: (p) => `^https?://(?:www.)?twitter.com/${p.name}/?$`,
+        redirectViaHome: true,
+        avatars: true,
+        deprecated: 'https://en.pronouns.page/blog/twitter-login-deprecated',
     },
     facebook: {
         name: 'Facebook',

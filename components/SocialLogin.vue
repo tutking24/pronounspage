@@ -1,5 +1,6 @@
 <template>
     <div v-if="options.instanceRequired && formShown" class="btn border-primary text-primary">
+        <div class="p-1">
         <Icon :v="options.icon || provider" set="b"/>
         {{ options.name }}
 
@@ -11,13 +12,16 @@
                 <Icon v="arrow-right"/>
             </button>
         </form>
+        </div>
     </div>
     <button v-else-if="options.instanceRequired && !formShown"
-            class="btn btn-outline-primary"
+            class="btn btn-outline-primary p-2"
             @click="showForm">
+        <div class="p-1">
         <Icon :v="options.icon || provider" set="b"
               :class="[options.icon && options.icon.endsWith('.png') ? 'mx-1 invertible' : '']"/>
         {{ options.name }}
+        </div>
     </button>
     <a v-else-if="options.deprecated" :href="link"
        class="btn btn-outline-secondary btn-sm"
@@ -29,8 +33,10 @@
     <a v-else :href="link"
        class="btn btn-outline-primary"
     >
+        <div class="p-1">
         <Icon :v="options.icon || provider" set="b"/>
         {{ options.name }}
+        </div>
     </a>
 </template>
 
