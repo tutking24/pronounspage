@@ -503,6 +503,7 @@ contact:
                 Las tareas técnicas son manejadas en {https://gitlab.com/Avris/Zaimki/-/boards=esta tabla kanban}. Solo
                 escoje una tarea no asignada desde la columna “To Do”, asígnatela y empieza a trabajar en ella. No dudes
                 en hacer preguntas.
+            footer: 'Tareas técnicas'
     groups:
         calendar: 'Bot Calendario Queer'
 
@@ -673,6 +674,16 @@ footer:
     financial: 'Transparencia financiera'
     technical: 'Parte técnica'
     sibling: 'Proyectos hermanos'
+    stats:
+        keys:
+            cards: 'Tarjetas'
+            visitors: 'Visitantes de ocasión única'
+            pageviews: 'Vistas de la página'
+            realTimeVisitors: 'Constantemente en línea'
+            users: 'Usuaries registrades'
+        month: 'mes'
+        current: 'solo esta versión'
+        overall: 'todas las versiones en diferentes idiomas'
 
 notFound:
     message: 'Página no encontrada'
