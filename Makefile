@@ -34,6 +34,7 @@ switch:
 	ln -sfn ./locale/${LANG} ./data
 	ln -sfn ../locale/${LANG}/img ./static/img-local
 	ln -sfn ../locale/${LANG}/docs ./static/docs-local
+	if [ -d ./locale/${LANG}/img/logo ]; then echo ""; else ln -s ../../_/img/logo ./locale/${LANG}/img/logo; fi
 
 migrate:
 	node server/migrate.js

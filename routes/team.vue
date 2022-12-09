@@ -8,7 +8,8 @@
         </h2>
 
         <figure class="float-end border rounded m-3">
-            <img src="/img/collective-logo.svg" alt="" class="invertible"/>
+            <img src="/img-local/logo/logo-full-path.svg" alt="" class="invertible"/>
+            <hr/>
             <figcaption>
                 <p><T>contact.team.logo</T></p>
                 <p class="text-center bigger mb-0">
@@ -23,7 +24,7 @@
                         <Icon v="cloud-download"/>
                         PNG
                     </a>
-                    <a href="/img-local/logo/logo-full.svg" class="btn btn-outline-primary btn-sm" download>
+                    <a href="/img-local/logo/logo-full-path.svg" class="btn btn-outline-primary btn-sm" download>
                         <Icon v="cloud-download"/>
                         SVG
                     </a>
