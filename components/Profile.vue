@@ -63,9 +63,11 @@
                     <T>profile.names</T>
                 </h3>
 
-                <ul class="list-unstyled">
-                    <li v-for="{value: name, opinion} in profile.names"><Opinion :word="convertName(name)" :opinion="opinion" :escape="false" :customOpinions="profile.opinions"/></li>
-                </ul>
+                <ExpandableList :values="profile.names" :limit="16" class="list-unstyled" :static="expandLinks">
+                    <template v-slot="s">
+                        <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :customOpinions="profile.opinions"/>
+                    </template>
+                </ExpandableList>
             </div>
             <div v-if="profile.pronouns.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
@@ -73,11 +75,11 @@
                     <T>profile.pronouns</T>
                 </h3>
 
-                <ul class="list-unstyled">
-                    <li v-for="{link, pronoun, opinion} in pronounOpinions">
-                        <Opinion :word="typeof pronoun === 'string' ? pronoun : pronoun.name(glue)" :opinion="opinion" :link="`/${link}`" :customOpinions="profile.opinions"/>
-                    </li>
-                </ul>
+                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="expandLinks">
+                    <template v-slot="s">
+                        <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`/${s.el.link}`" :customOpinions="profile.opinions"/>
+                    </template>
+                </ExpandableList>
             </div>
             <div v-if="profile.links.length" :class="['col-12', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
@@ -85,11 +87,11 @@
                     <T>profile.links</T>
                 </h3>
 
-                <ul class="list-unstyled">
-                    <li v-for="link in profile.links">
-                        <ProfileLink :link="link" :expand="expandLinks" :verifiedLinks="profile.verifiedLinks || {}"/>
-                    </li>
-                </ul>
+                <ExpandableList :values="profile.links" :limit="16" class="list-unstyled" :static="expandLinks">
+                    <template v-slot="s">
+                        <ProfileLink :link="s.el" :expand="expandLinks" :verifiedLinks="profile.verifiedLinks || {}"/>
+                    </template>
+                </ExpandableList>
             </div>
         </section>
 
@@ -102,9 +104,12 @@
             <div class="row">
                 <div v-for="column in profile.words" v-if="column.values.length" class="col-6 col-lg-3">
                     <h4 v-if="column.header" class="h6">{{ column.header }}</h4>
-                    <ul class="list-unstyled">
-                        <li v-for="{value: word, opinion} in column.values"><Opinion :word="word" :opinion="opinion" :customOpinions="profile.opinions"/></li>
-                    </ul>
+
+                    <ExpandableList :values="column.values" :limit="16" class="list-unstyled" :static="expandLinks">
+                        <template v-slot="s">
+                            <Opinion :word="s.el.value" :opinion="s.el.opinion" :customOpinions="profile.opinions"/>
+                        </template>
+                    </ExpandableList>
                 </div>
             </div>
         </section>
