@@ -387,7 +387,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const usernameIdMap = await usernamesToIds(req.db, req.body.circle.map(r => r.username));
     for (let connection of req.body.circle) {
         const toUserId = usernameIdMap[normalise(connection.username.replace(/^@/g, ''))];
-        const relationship = connection.relationship.substring(0, 64).trim();
+        const relationship = connection.relationship.substring(0, 32).trim();
         if (toUserId === undefined || !relationship) { continue; }
         await req.db.get(SQL`INSERT INTO user_connections (id, from_profileId, to_userId, relationship) VALUES (
             ${ulid()},
