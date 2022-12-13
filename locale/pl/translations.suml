@@ -1411,6 +1411,27 @@ profile:
     language:
         header: 'Język'
         description: 'Ta wizytówka jest dostępna w następujących językach'
+    circles:
+        header: 'Mój krąg'
+        info: >
+            W tym polu możesz oznaczyć <strong>najbliższe osoby</strong> wraz z informacją,
+            jakich słów używasz, by opisać Waszą relację (np. „partnerze”, „dziewczyna”, „mąż”).
+            Nie jesteśmy medium społecznościowym, <strong>to nie jest lista znajomych/followersów</strong>,
+            dlatego maksymalna długość tego pola jest dość ograniczona.
+            Pamiętaj, że osoby, które oznaczysz <strong>będą to widziały</strong>
+            – i mogą zgłosić Cię za nękanie jeśli umieścisz tu negatywne rzeczy na ich temat.
+            Jeśli macie siebie nawzajem w swoich kręgach, zostanie to oznaczone symbolem [s:shield-check].
+            Na {/konto=stronie swojego konta} możesz zobaczyć, kto Cię oznaczyło w swoich kręgach.
+        relationship: 'Relacja (np. „partnerze”, „najlepsza przyjaciółka”)'
+        mutual: 'Połączenie wzajemne'
+        yourMentions:
+            header: 'Oznaczono Cię w następujących kręgach'
+            description: >
+                Oto lista osób, które dodały Cię do swoich kręgów.
+                Jeśli dodasz je do swojego, to symbol [s:shield-check] pojawi się na obu Waszych wizytówkach.
+        validation:
+            userNotFound: 'Konto nie istnieje'
+            required: 'Relacja jest polem wymaganym'
 
 census:
     header: 'Spis'

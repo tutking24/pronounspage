@@ -238,6 +238,18 @@
                 </template>
             </section>
 
+            <section class="form-group">
+                <h3 class="h4">
+                    <Icon v="heart-circle"/>
+                    <T>profile.circles.header</T>
+                </h3>
+                <p class="small text-muted">
+                    <T>profile.circles.info</T>
+                </p>
+
+                <CircleListInput v-model="circle" :maxitems="16"/>
+            </section>
+
             <section>
                 <button class="btn btn-primary w-100" type="submit">
                     <Icon v="save"/>
@@ -317,6 +329,7 @@
                     credentialsLevel: profile.credentialsLevel,
                     credentialsName: profile.credentialsName,
                     opinions: opinionsToForm(profile.opinions || {}),
+                    circle: profile.circle,
                 };
             }
         }
@@ -342,6 +355,7 @@
                 credentialsLevel: null,
                 credentialsName: null,
                 opinions: opinionsToForm(profile.opinions || {}),
+                circle: profile.circle,
             };
         }
 
@@ -361,6 +375,7 @@
             credentialsLevel: null,
             credentialsName: null,
             opinions: [],
+            circle: [],
         };
     };
 
@@ -415,6 +430,7 @@
                         flags: [...this.flags],
                         customFlags: [...fixArrayObject(this.customFlags)],
                         words: this.words,
+                        circle: this.circle,
 
                         teamName: this.teamName,
                         footerName: this.footerName,

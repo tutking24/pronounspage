@@ -46,19 +46,22 @@ const verifyLinks = (links, authenticators) => {
 }
 
 const fetchProfiles = async (db, username, self) => {
+    const user = await db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(username)}`);
+    if (!user) {
+        return {};
+    }
+
     const profiles = await db.all(SQL`
         SELECT profiles.*
         FROM profiles
-            LEFT JOIN users on users.id == profiles.userId 
-        WHERE usernameNorm = ${normalise(username)}
+        WHERE userId = ${user.id}
         ORDER BY profiles.locale
     `);
 
     const linkAuthenticators = await db.all(SQL`
         SELECT a.type, a.payload
         FROM authenticators a
-            LEFT JOIN users u on u.id == a.userId
-        WHERE u.usernameNorm = ${normalise(username)}
+        WHERE a.userId = ${user.id}
         AND a.type IN (`.append(providersWithLinks.map(k => `'${k}'`).join(',')).append(SQL`)
         AND (a.validUntil IS NULL OR a.validUntil > ${now()})
     `));
@@ -66,6 +69,8 @@ const fetchProfiles = async (db, username, self) => {
     const p = {}
     for (let profile of profiles) {
         const links = JSON.parse(profile.links);
+        const circle = await fetchCircles(db, profile.id, user.id);
+
         p[profile.locale] = {
             opinions: JSON.parse(profile.opinions),
             names: JSON.parse(profile.names),
@@ -86,6 +91,7 @@ const fetchProfiles = async (db, username, self) => {
             credentialsName: profile.credentialsName,
             card: profile.card,
             cardDark: profile.cardDark,
+            circle,
         };
     }
     return p;
@@ -105,6 +111,7 @@ function* isSuspicious(profile) {
         JSON.stringify(profile.names),
         JSON.stringify(profile.words),
         JSON.stringify(profile.opinions),
+        JSON.stringify(profile.circle),
     ]) {
         s = s.toLowerCase().replace(/\s+/g, ' ');
         for (let sus of susRegexes) {
@@ -118,6 +125,72 @@ function* isSuspicious(profile) {
 
 const hasAutomatedReports = async (db, id) => {
     return (await db.get(SQL`SELECT COUNT(*) AS c FROM reports WHERE userId = ${id} AND isAutomatic = 1`)).c > 0;
+}
+
+const usernamesToIds = async(db, usernames) => {
+    const users = await db.all(SQL`
+        SELECT id, usernameNorm
+        FROM users
+        WHERE users.usernameNorm IN (`.append(usernames.map(k => `'${normalise(k)}'`).join(',')).append(SQL`)`
+    ));
+
+    const idMap = {}
+    for (let username of usernames) {
+        for (let {id, usernameNorm} of users) {
+            if (normalise(username) === usernameNorm) {
+                idMap[normalise(username)] = id;
+            }
+        }
+    }
+
+    return idMap;
+}
+
+const selectBestLocale = (availableLocales) => {
+    if (availableLocales.length === 1) {
+        return availableLocales[0];
+    }
+
+    if (availableLocales.includes(config.locale)) {
+        return config.locale;
+    }
+
+    return '_';
+}
+
+const fetchCircles = async(db, profileId, userId) => {
+    const connections = await db.all(SQL`
+        SELECT u.id, u.username, u.avatarSource, u.email, p.locale, c.relationship
+        FROM user_connections c
+            LEFT JOIN users u ON u.id = c.to_userId
+            LEFT JOIN profiles p ON p.userId = u.id
+        WHERE from_profileId = ${profileId}
+        ORDER BY c.id
+    `);
+
+    const mentions = await findCircleMentions(db, userId);
+
+    const circle = {};
+
+    for (let connection of connections) {
+        if (!circle.hasOwnProperty(connection.username)) {
+            circle[connection.username] = {
+                username: connection.username,
+                avatar: await avatar(db, connection),
+                circleMutual: mentions[connection.username] !== undefined,
+                locale: [],
+                relationship: connection.relationship,
+            };
+        }
+        circle[connection.username].locale.push(connection.locale);
+    }
+
+    for (let id in circle) {
+        if (!circle.hasOwnProperty(id)) { continue; }
+        circle[id].locale = selectBestLocale(circle[id].locale);
+    }
+
+    return Object.values(circle);
 }
 
 const router = Router();
@@ -161,6 +234,46 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
         ...user,
         profiles,
     });
+}));
+
+router.get('/profile/versions/:username', handleErrorAsync(async (req, res) => {
+    return res.json((await req.db.all(SQL`
+        SELECT
+            profiles.locale
+        FROM users
+            LEFT JOIN profiles ON profiles.userId = users.id
+        WHERE users.usernameNorm = ${normalise(req.params.username.replace(/^@/g, ''))}
+    `)).map(x => x.locale));
+}));
+
+const findCircleMentions = async (db, userId) => {
+    const mentionsRaw = await db.all(SQL`
+        SELECT
+            u.username, p.locale, c.relationship
+        FROM user_connections c
+            LEFT JOIN profiles p ON p.id = c.from_profileId
+            LEFT JOIN users u ON u.id = p.userId
+        WHERE c.to_userId = ${userId}
+    `);
+
+    const mentionsGrouped = {};
+    for (let {username, locale, relationship} of mentionsRaw) {
+        if (!mentionsGrouped.hasOwnProperty(username)) {
+            mentionsGrouped[username] = {};
+        }
+
+        mentionsGrouped[username][locale] = relationship;
+    }
+
+    return mentionsGrouped;
+}
+
+router.get('/profile/my-circle-mentions', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    return res.json(await findCircleMentions(req.db, req.user.id));
 }));
 
 const cleanupBirthday = (bd) => {
@@ -210,6 +323,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         || req.body.pronouns.length > 128
         || req.body.links.length > 128
         || req.body.customFlags.length > 128
+        || req.body.circle.length > 16
         || req.body.words.filter(c => c.values.length > 64).length > 0
     ) {
         return res.status(400).json({error: 'crud.validation.genericForm'});
@@ -225,7 +339,9 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
 
     // TODO just make it a transaction...
     const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
+    let profileId;
     if (ids.length) {
+        profileId = ids[0];
         await req.db.get(SQL`UPDATE profiles
             SET
                 opinions = ${JSON.stringify(opinions)},
@@ -245,17 +361,18 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 credentialsName = ${req.isGranted() ? req.body.credentialsName || null : null},
                 card = NULL,
                 cardDark = NULL
-            WHERE id = ${ids[0]}
+            WHERE id = ${profileId}
         `);
     } else {
+        profileId = ulid();
         await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
-            VALUES (${ulid()}, ${req.user.id}, ${global.config.locale},
-                    ${JSON.stringify(opinions)}, 
+            VALUES (${profileId}, ${req.user.id}, ${global.config.locale},
+                    ${JSON.stringify(opinions)},
                     ${JSON.stringify(names)},
                     ${JSON.stringify(pronouns)},
                     ${description},
                     ${birthday},
-					${JSON.stringify(links)},
+                    ${JSON.stringify(links)},
                     ${JSON.stringify(req.body.flags)},
                     ${JSON.stringify(req.body.customFlags)},
                     ${JSON.stringify(words)},
@@ -263,6 +380,20 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                     ${req.isGranted() ? req.body.teamName || null : ''},
                     ${req.isGranted() ? req.body.footerName || null : ''},
                     ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''}
+        )`);
+    }
+
+    await req.db.get(SQL`DELETE FROM user_connections WHERE from_profileId = ${profileId}`);
+    const usernameIdMap = await usernamesToIds(req.db, req.body.circle.map(r => r.username));
+    for (let connection of req.body.circle) {
+        const toUserId = usernameIdMap[normalise(connection.username)];
+        const relationship = connection.relationship.substring(0, 64).trim();
+        if (toUserId === undefined || !relationship) { continue; }
+        await req.db.get(SQL`INSERT INTO user_connections (id, from_profileId, to_userId, relationship) VALUES (
+            ${ulid()},
+            ${profileId},
+            ${toUserId},
+            ${relationship}
         )`);
     }
 
@@ -372,13 +503,13 @@ router.post('/profile/request-card', handleErrorAsync(async (req, res) => {
         await req.db.get(SQL`
             UPDATE profiles
             SET cardDark = ''
-            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND cardDark IS NULL 
+            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND cardDark IS NULL
         `);
     } else {
         await req.db.get(SQL`
             UPDATE profiles
             SET card = ''
-            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND card IS NULL 
+            WHERE userId=${req.user.id} AND locale=${global.config.locale} AND card IS NULL
         `);
     }
 

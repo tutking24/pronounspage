@@ -114,6 +114,27 @@
             </div>
         </section>
 
+        <section class="clearfix" v-if="profile.circle.length > 0 && !expandLinks">
+            <h3>
+                <Icon v="heart-circle"/>
+                <T>profile.circles.header</T>
+            </h3>
+            <div class="row">
+                <div v-for="connection in profile.circle" class="col-12 col-lg-4 pt-2 pb-2">
+                    <Avatar :user="connection" :src="connection.avatar" class="float-start me-2" dsize="4rem"/>
+                    <h4>
+                        <LocaleLink :link="`/@${connection.username}`" :locale="connection.locale">
+                            @{{connection.username}}
+                        </LocaleLink>
+                        <Tooltip v-if="connection.circleMutual" :text="$t('profile.circles.mutual')" class="small">
+                            <Icon v="shield-check" set="s"/>
+                        </Tooltip>
+                    </h4>
+                    <p>{{connection.relationship}}</p>
+                </div>
+            </div>
+        </section>
+
         <section>
             <OpinionLegend :custom="profile.opinions"/>
         </section>

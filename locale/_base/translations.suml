@@ -686,6 +686,27 @@ profile:
         description: '@%username%''s card is also available in the following languages'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
+    circles:
+        header: 'My circle'
+        info: >
+            In this field you can tag the <strong>people closest to you</strong>, along with information
+            which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
+            We're not a social medium, this is <strong>not a friends/followers list</strong>,
+            that's why the length of this field is pretty limited.
+            Keep in mind that people that you tag here <strong>will be able to see that</strong>
+            – and might report you for harassment, if you decide to put in negative things about them.
+            If a connection in your circle is mutual, it will be marked with [s:shield-check].
+            You can see who mentioned you on {/account=your account page}.
+        relationship: 'Relationship (eg. “partner”, “best friend”)'
+        mutual: 'This connection goes both ways'
+        yourMentions:
+            header: 'Your circles mentions'
+            description: >
+                Here's the list of people who added you to their circles.
+                If you add them back, a checkmark [s:shield-check] will appear in both your cards.
+        validation:
+            userNotFound: 'Such user doesn''t exist'
+            required: 'Relationship is a required field'
 
 share: 'Share'
 
