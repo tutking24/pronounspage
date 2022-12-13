@@ -14,7 +14,7 @@
             </button>
             <input v-model="s.val.relationship" type="text" class="form-control"
                    :placeholder="$t('profile.circles.relationship')"
-                   required maxlength="32"/>
+                   required maxlength="64"/>
         </template>
         <template v-slot:validation="s">
             <p v-if="validation(s.val)" class="small text-danger">
