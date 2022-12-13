@@ -131,14 +131,14 @@ const usernamesToIds = async(db, usernames) => {
     const users = await db.all(SQL`
         SELECT id, usernameNorm
         FROM users
-        WHERE users.usernameNorm IN (`.append(usernames.map(k => `'${normalise(k)}'`).join(',')).append(SQL`)`
+        WHERE users.usernameNorm IN (`.append(usernames.map(k => `'${normalise(k.replace(/^@/g, ''))}'`).join(',')).append(SQL`)`
     ));
 
     const idMap = {}
     for (let username of usernames) {
         for (let {id, usernameNorm} of users) {
-            if (normalise(username) === usernameNorm) {
-                idMap[normalise(username)] = id;
+            if (normalise(username.replace(/^@/g, '')) === usernameNorm) {
+                idMap[normalise(username.replace(/^@/g, ''))] = id;
             }
         }
     }
@@ -386,7 +386,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`DELETE FROM user_connections WHERE from_profileId = ${profileId}`);
     const usernameIdMap = await usernamesToIds(req.db, req.body.circle.map(r => r.username));
     for (let connection of req.body.circle) {
-        const toUserId = usernameIdMap[normalise(connection.username)];
+        const toUserId = usernameIdMap[normalise(connection.username.replace(/^@/g, ''))];
         const relationship = connection.relationship.substring(0, 64).trim();
         if (toUserId === undefined || !relationship) { continue; }
         await req.db.get(SQL`INSERT INTO user_connections (id, from_profileId, to_userId, relationship) VALUES (
