@@ -831,6 +831,16 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+    update:
+        header: 'We''ve updated our Terms of Service.'
+        intro: >
+            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on Jan 1st, 2023:
+        changes:
+            - >
+                The existing policy of banning profiles that advocate for pedophilia
+                (for example with so called “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=MAP}” flags),
+                which have been considered to fall under “Content that might break the law or violate social norms”,
+                will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
 
 privacy:
     header: 'Privacy Policy'
