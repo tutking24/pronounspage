@@ -601,6 +601,16 @@ profile:
     language:
         header: 'Sprache'
         description: 'Die Visitenkarte von @%username% ist auch in den folgenden Sprachen verfügbar'
+    circles:
+        info: >
+            In diesem Feld kannst du die <strong>Personen, die dir am nächsten sind</strong> per Usertag markieren,
+            zusammen mit Informationen, mit welchen (nicht-)geschlechtsspezifischen/-neutrale Wörtern du dich auf sie beziehst
+            (z. B. „Ehepartner“ vs. „Ehefrau“ vs. „Ehemann“). Wir sind kein soziales Medium, dies ist <strong>keine
+            Freunde/Follower-Liste</strong>, deshalb ist die Länge dieses Felds ziemlich begrenzt. Denke daran, dass
+            Personen, die du hier markierst, <strong>dies sehen können</strong> – und dich möglicherweise wegen
+            Belästigung melden, wenn dj sich entscheidest, negative Dinge über sie zu schreiben. Wenn eine Verbindung in
+            Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet. Auf {/account=deiner
+            Accountübersicht} kannst du dann auch sehen, wer dich erwähnt hat.
 
 share: 'Teilen'
 
