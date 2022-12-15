@@ -182,7 +182,7 @@ export const isGranted = (user, locale, area = '') => {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
-        if ((permissionLocale === '*' || permissionLocale === locale) && (permissionArea === '*' || permissionArea === area || area === '')) {
+        if ((permissionLocale === '*' || permissionLocale === locale) && ((permissionArea === '*' && area !== 'code') || permissionArea === area || area === '')) {
             return true;
         }
     }
@@ -297,3 +297,8 @@ export const deepSet = (obj, path, value) => {
     }
     o[a[0]] = value
 }
+
+export const findAdmins = async (db, locale, area) => {
+    const admins = await db.all(`SELECT username, email, roles, adminNotifications FROM users WHERE roles != ''`);
+    return admins.filter(admin => isGranted(admin, locale, area));
+};

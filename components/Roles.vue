@@ -47,6 +47,8 @@
                     'inclusive',
                     'census',
                     'names',
+                    'translations',
+                    'code',
                 ],
             };
         },

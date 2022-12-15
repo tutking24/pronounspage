@@ -1,8 +1,9 @@
 import { Router } from 'express';
 import SQL from 'sql-template-strings';
 import {ulid} from "ulid";
-import { handleErrorAsync } from "../../src/helpers";
+import {findAdmins, handleErrorAsync} from "../../src/helpers";
 import mailer from "../../src/mailer";
+import {deduplicateEmailPreset} from "./user";
 
 const router = Router();
 
@@ -28,8 +29,14 @@ router.post('/translations/propose', handleErrorAsync(async (req, res) => {
         )`)
     }
 
-    for (let email of ['contact@pronouns.page']) {
-        mailer(email, 'translationProposed', {locale: global.config.locale});
+    if (req.isGranted('translations')) {
+        for (let {email} of await findAdmins(req.db, global.config.locale, 'code')) {
+            await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale}, 60 * 60);
+        }
+    } else {
+        for (let {email} of await findAdmins(req.db, global.config.locale, 'translations')) {
+            await deduplicateEmailPreset(req.db, email, 'translationProposed', {locale: global.config.locale}, 60 * 60);
+        }
     }
 
     return res.json('OK');
@@ -71,6 +78,10 @@ router.post('/translations/accept-proposal', handleErrorAsync(async (req, res) =
     }
 
     await req.db.get(SQL`UPDATE translations SET status = ${TRANSLATION_STATUS.APPROVED} WHERE id = ${req.body.id}`)
+
+    for (let {email} of await findAdmins(req.db, global.config.locale, 'code')) {
+        await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale}, 60 * 60);
+    }
 
     return res.json('OK');
 }));

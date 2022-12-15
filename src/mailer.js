@@ -89,6 +89,11 @@ const templates = {
         text: 'Check them out here: https://[[domain]]/admin',
         html: '<p>Check them out here: <a href="https://[[domain]]/admin" target="_blank" rel="noopener">[[domain]]/admin</a></p>',
     },
+    translationToMerge: {
+        subject: '[{{locale}}] New translations ready to be merged',
+        text: 'Check them out here: https://[[domain]]/admin',
+        html: '<p>Check them out here: <a href="https://[[domain]]/admin" target="_blank" rel="noopener">[[domain]]/admin</a></p>',
+    },
     modMessage: {
         subject: '[[user.modMessage.subject]]',
         text: `[[user.modMessage.intro]]\n\n{{nl2br:message}}\n\n[[user.modMessage.respond]]`,

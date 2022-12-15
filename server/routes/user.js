@@ -193,8 +193,8 @@ export const validateEmail = async (email) => {
     }
 }
 
-const deduplicateEmail = async (db, email, cbSuccess, cbFail) => {
-    const count = (await db.get(SQL`SELECT COUNT(*) AS c FROM emails WHERE email = ${email} AND sentAt >= ${now() - 5 * 60}`)).c;
+export const deduplicateEmail = async (db, email, cbSuccess, cbFail, ttl = 5 * 60) => {
+    const count = (await db.get(SQL`SELECT COUNT(*) AS c FROM emails WHERE email = ${email} AND sentAt >= ${now() - ttl}`)).c;
     if (count > 0) {
         console.error('Duplicate email requests for ' + email);
         if (cbFail) { await cbFail(); }
@@ -202,6 +202,19 @@ const deduplicateEmail = async (db, email, cbSuccess, cbFail) => {
     }
     await cbSuccess();
     await db.get(SQL`INSERT INTO emails (email, sentAt) VALUES (${email}, ${now()});`);
+}
+
+export const deduplicateEmailPreset = async (db, email, template, params = {}, ttl = 5 * 60) => {
+    await deduplicateEmail(
+        db,
+        email,
+        async () => {
+            mailer(email, template, params);
+        },
+        async () => {
+        },
+        ttl,
+    );
 }
 
 const reloadUser = async (req, res, next) => {
