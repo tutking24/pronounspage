@@ -105,6 +105,10 @@ export default {
                 ezstandalone.enable();
                 ezstandalone.display();
             });
+
+            if (this.consent) {
+                this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
+            }
         },
     },
     watch: {
