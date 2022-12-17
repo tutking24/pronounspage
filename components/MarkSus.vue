@@ -38,6 +38,10 @@ export default {
             let html = this.$refs.original.innerHTML;
             for (let sus of this.moderation.susRegexes) {
                 html = html.replace(new RegExp(sus, 'gi'), m => {
+                    if (m === 'map') {
+                        // most probably an icon, skip
+                        return m;
+                    }
                     this.hasSus = true;
                     return `<mark>${m}</mark>`;
                 });

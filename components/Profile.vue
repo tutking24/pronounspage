@@ -24,13 +24,17 @@
 
         <section class="row">
             <div v-if="hasDescriptionColumn" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
-                <p v-for="line in profile.description.split('\n')" class="mb-1">
-                    <Twemoji><Spelling escape :text="line"/></Twemoji>
-                </p>
+                <div v-if="profile.description" class="mb-3">
+                    <p v-for="line in profile.description.split('\n')" class="mb-1">
+                        <Twemoji><Spelling escape :text="line"/></Twemoji>
+                    </p>
+                </div>
                 <p v-if="profile.age && profile.age >= minAge">
                     <Icon v="birthday-cake"/>
+                    <T>profile.birthday</T><T>quotation.colon</T>
                     {{ profile.age }}
                 </p>
+                <Timezone v-if="profile.timezone" :value="profile.timezone" :static="expandLinks"/>
             </div>
 
             <div v-if="profile.flags.length || profile.customFlags.length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
@@ -236,7 +240,9 @@
             hasDescriptionColumn() {
                 return (this.profile.age && this.profile.age > this.minAge)
                     || this.profile.description.trim().length
-                    || this.profile.team;
+                    || this.profile.team
+                    || this.profile.timezone
+                ;
             },
             mainRowCount() {
                 let c = 0;

@@ -724,6 +724,17 @@ profile:
     wordsColumnHeader: 'Column header'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    timezone:
+        header: 'Timezone'
+        placeholder: 'Select your timezone'
+        info: >
+            If you fill out this field, your card will tell people <strong>what time it is where you live</strong>.
+            Optionally, you can also chose to publish your approximate location.
+        detect: 'Detect'
+        publishArea: 'Publish the continent in your card'
+        publishLocation: 'Publish the area in your card'
+        time: 'It''s %time% on a %weekday% in my timezone'
+        approximate: 'It''s just an approximate location'
     flags: 'Flags'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'

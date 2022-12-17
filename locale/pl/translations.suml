@@ -1339,6 +1339,17 @@ profile:
     wordsColumnHeader: 'Nagłówek kolumny'
     birthday: 'Wiek'
     birthdayInfo: 'Nie pokazujemy publicznie pełnej daty urodzenia, jedynie obliczony wiek.'
+    timezone:
+        header: 'Strefa czasowa'
+        placeholder: 'Wybierz swoją strefę czasową'
+        info: >
+            Jeśli wypełnisz to pole, to Twoja wizytówka będzie pokazywać <strong>która jest u Ciebie godzina</strong>.
+            Opcjonalnie możesz też wprost wyświetlić swoją przybliżoną lokalizację.
+        detect: 'Automatycznie'
+        publishArea: 'Opublikuj kontynent w wizytówce'
+        publishLocation: 'Opublikuj obszar w wizytówce'
+        time: 'W mojej strefie czasowej jest teraz %time% (%weekday%)'
+        approximate: 'To tylko przybliżona lokalizacja'
     flags: 'Flagi'
     flagsInfo: >
         Przeciągnij swoje pride'owe flagi do poniższej ramki.

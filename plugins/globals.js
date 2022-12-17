@@ -2,7 +2,7 @@ import Vue from 'vue'
 import translator from '../src/translator';
 import config from '../data/config.suml';
 import {buildDict} from "../src/helpers";
-import {DateTime} from "luxon";
+import {DateTime, Settings} from "luxon";
 import {decodeTime} from 'ulid';
 
 export default ({ app, store }) => {
@@ -58,6 +58,8 @@ export default ({ app, store }) => {
 
         return promise;
     };
+
+    Settings.defaultLocale = config.locale;
 
     Vue.prototype.$datetime = (timestamp) => {
         const dt = DateTime.fromSeconds(timestamp);

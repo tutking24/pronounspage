@@ -83,6 +83,7 @@ const fetchProfiles = async (db, username, self) => {
             customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
             birthday: self ? profile.birthday : undefined,
+            timezone: profile.timezone ? JSON.parse(profile.timezone) : null,
             teamName: profile.teamName,
             footerName: profile.footerName,
             footerAreas: profile.footerAreas ? profile.footerAreas.split(',') : [],
@@ -336,6 +337,11 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const birthday = cleanupBirthday(req.body.birthday || null);
     const links = req.body.links.filter(x => !!x);
     const words = req.body.words.map(c => { return {...c, values: c.values.map(p => { return {...p, value: p.value.substring(0, 32)}})}});
+    const timezone = req.body.timezone ? {
+        tz: req.body.timezone.tz,
+        area: req.body.timezone.area,
+        loc: req.body.timezone.loc,
+    } : null;
 
     // TODO just make it a transaction...
     const ids = (await req.db.all(SQL`SELECT * FROM profiles WHERE userId = ${req.user.id} AND locale = ${global.config.locale}`)).map(row => row.id);
@@ -349,6 +355,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 pronouns = ${JSON.stringify(pronouns)},
                 description = ${description},
                 birthday = ${birthday},
+                timezone = ${JSON.stringify(timezone)},
                 links = ${JSON.stringify(links)},
                 flags = ${JSON.stringify(req.body.flags)},
                 customFlags = ${JSON.stringify(req.body.customFlags)},
@@ -365,13 +372,14 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         `);
     } else {
         profileId = ulid();
-        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
+        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, timezone, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
             VALUES (${profileId}, ${req.user.id}, ${global.config.locale},
                     ${JSON.stringify(opinions)},
                     ${JSON.stringify(names)},
                     ${JSON.stringify(pronouns)},
                     ${description},
                     ${birthday},
+                    ${JSON.stringify(timezone)},
                     ${JSON.stringify(links)},
                     ${JSON.stringify(req.body.flags)},
                     ${JSON.stringify(req.body.customFlags)},
@@ -449,6 +457,13 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     if ((req.body.propagate || []).includes('birthday')) {
         await req.db.get(SQL`UPDATE profiles
             SET birthday = ${cleanupBirthday(req.body.birthday || null)}
+            WHERE userId = ${req.user.id};
+        `);
+    }
+
+    if ((req.body.propagate || []).includes('timezone')) {
+        await req.db.get(SQL`UPDATE profiles
+            SET timezone = ${JSON.stringify(timezone)}
             WHERE userId = ${req.user.id};
         `);
     }

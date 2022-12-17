@@ -85,4 +85,12 @@ export default [
     'profile.circles.yourMentions.description',
     'profile.circles.validation.userNotFound',
     'profile.circles.validation.required',
+    'profile.timezone.header',
+    'profile.timezone.placeholder',
+    'profile.timezone.info',
+    'profile.timezone.detect',
+    'profile.timezone.publishArea',
+    'profile.timezone.publishLocation',
+    'profile.timezone.time',
+    'profile.timezone.approximate',
 ];

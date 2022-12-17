@@ -217,6 +217,18 @@
                 <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
 
+            <section class="form-group">
+                <h3 class="h4">
+                    <Icon v="clock"/>
+                    <T>profile.timezone.header</T>
+                </h3>
+                <p class="small text-muted">
+                    <T>profile.timezone.info</T>
+                </p>
+                <TimezoneSelect v-model="timezone"/>
+                <PropagateCheckbox field="timezone" :before="beforeChanges.timezone" :after="timezone" v-if="otherProfiles > 0" @change="propagateChanged"/>
+            </section>
+
             <AdPlaceholder phkey="main-5"/>
 
             <section class="form-group">
@@ -318,6 +330,7 @@
                     pronouns: profile.pronouns,
                     description: profile.description,
                     birthday: profile.birthday,
+                    timezone: profile.timezone,
                     links: profile.links,
                     flags: profile.flags,
                     customFlags: fixArrayObject(profile.customFlags),
@@ -344,6 +357,7 @@
                 pronouns: [],
                 description: '',
                 birthday: profile.birthday,
+                timezone: profile.timezone,
                 links: profile.links,
                 flags: profile.flags.filter(f => !f.startsWith('-')),
                 customFlags: fixArrayObject(profile.customFlags),
@@ -364,6 +378,7 @@
             pronouns: [],
             description: '',
             birthday: null,
+            timezone: null,
             links: [],
             flags: [],
             customFlags: [],
@@ -426,6 +441,7 @@
                         pronouns: this.pronouns,
                         description: this.description,
                         birthday: formatDate(this.birthday),
+                        timezone: this.timezone,
                         links: [...this.links],
                         flags: [...this.flags],
                         customFlags: [...fixArrayObject(this.customFlags)],
