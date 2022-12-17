@@ -31,11 +31,11 @@ router.post('/translations/propose', handleErrorAsync(async (req, res) => {
 
     if (req.isGranted('translations')) {
         for (let {email} of await findAdmins(req.db, global.config.locale, 'code')) {
-            await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale}, 60 * 60);
+            await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale});
         }
     } else {
         for (let {email} of await findAdmins(req.db, global.config.locale, 'translations')) {
-            await deduplicateEmailPreset(req.db, email, 'translationProposed', {locale: global.config.locale}, 60 * 60);
+            await deduplicateEmailPreset(req.db, email, 'translationProposed', {locale: global.config.locale});
         }
     }
 
@@ -80,7 +80,7 @@ router.post('/translations/accept-proposal', handleErrorAsync(async (req, res) =
     await req.db.get(SQL`UPDATE translations SET status = ${TRANSLATION_STATUS.APPROVED} WHERE id = ${req.body.id}`)
 
     for (let {email} of await findAdmins(req.db, global.config.locale, 'code')) {
-        await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale}, 60 * 60);
+        await deduplicateEmailPreset(req.db, email, 'translationToMerge', {locale: global.config.locale});
     }
 
     return res.json('OK');
