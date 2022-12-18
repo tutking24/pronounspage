@@ -611,6 +611,11 @@ profile:
             Belästigung melden, wenn dj sich entscheidest, negative Dinge über sie zu schreiben. Wenn eine Verbindung in
             Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet. Auf {/account=deiner
             Accountübersicht} kannst du dann auch sehen, wer dich erwähnt hat.
+    timezone:
+        time: 'Es ist %time% an einem %weekday% in meiner Zeitzone.'
+        areas:
+            Europe: 'Europa'
+        approximate: 'Es ist nur ein ungefährer Standort'
 
 share: 'Teilen'
 
