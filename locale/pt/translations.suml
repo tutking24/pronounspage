@@ -9,33 +9,31 @@ home:
     why: 'Por que os pronomes importam?'
     about:
         - >
-            As pessoas geralmente usam um tratamento gramatical em seus idiomas, incluindo, entre outros elementos, os pronomes.
-            Os pronomes são palavras que usamos no lugar de um nome para referir-nos a alguém já mencionade, ou a alguém desconhecide.
-            Há vários grupos de pronomes, assim como outras classes que podem demarcar gênero (gramatical), como artigos e desinências.
-            A maioria das pessoas usa os pronomes {/ele=«ele»} e {/ela=«ela»} e demais elementos associados a essas palavras.
-            A sociedade cissexista ensina desde sempre como tratar as pessoas com base numa aparência ou presunção de gênero.
-            Mas a realidade não é tão simples…
+            As pessoas geralmente usam um tratamento gramatical em seus idiomas, incluindo, entre outros elementos, os
+            pronomes. Os pronomes são palavras que usamos no lugar de um nome para referir-nos a alguém já mencionade, ou
+            a alguém desconhecide. Há vários grupos de pronomes, assim como outras classes que podem demarcar gênero
+            (gramatical), como artigos e desinências. A maioria das pessoas usa os pronomes {/ele="ele"} e {/ela="ela"} e
+            demais elementos associados a essas palavras. A sociedade cissexista ensina desde sempre como tratar as
+            pessoas com base numa aparência ou presunção de gênero. Mas a realidade não é tão simples…
         - >
-            O gênero é complexo. Há pessoas que não «correspondem» às expectativas sociais de gênero.
-            Há quem prefira ser tratade de uma maneira distinta ao que tais expectativas ditam.
-            Há ainda quem não se encaixe nas etiquetas «masculino» ou «feminino» e prefira termos alternativos.
+            O gênero é complexo. Há pessoas que não "correspondem" às expectativas sociais de gênero. Há quem prefira ser
+            tratade de uma maneira distinta ao que tais expectativas ditam. Há ainda quem não se encaixe nas etiquetas
+            "masculino" ou "feminino" e prefira termos alternativos.
         - >
-            Essa ferramenta permite que você encontre possíveis conjuntos de linguagem (artigos, pronomes, finais)
-            e outros elementos, com exemplos de uso em enunciações
-            para que possa mostrar às pessoas como prefere ser tratade.
+            Essa ferramenta permite que você encontre possíveis conjuntos de linguagem (artigos, pronomes, finais) e
+            outros elementos, com exemplos de uso em enunciações para que possa mostrar às pessoas como prefere ser
+            tratade.
         - >
-            Por que é importante? Por uma simples questão de decência com ê outre, de respeito com a individualidade da pessoa.
-            Você não chamaria «Lúcia» de «Alícia» só porque gosta mais desse nome
-            ou porque «fulana tem mais cara de Lúcia para você».
-            Ou, inclusive, se ela <em>sim</em> se chama «Lúcia» na sua certidão de nascimento,
-            mas odeia esse nome e prefere usar «Alícia».
-            É exatamente o mesmo com tratamento gramatical –
-            se não quer ser desrespeitose e intolerante com alguém, você se refere a elu corretamente.
-            A única diferença é que geralmente conhecemos os nomes, mas não o tratamento pessoal.
-            Ainda é comum nos apresentarmos com o nosso nome, mas não com o nosso tratamento gramatical. Vamos lá mudar isso!
+            Por que é importante? Por uma simples questão de decência com ê outre, de respeito com a individualidade da
+            pessoa. Você não chamaria "Lúcia" de "Alícia" só porque gosta mais desse nome ou porque "fulana tem mais cara
+            de Lúcia para você". Ou, inclusive, se ela <em>sim</em> se chama "Lúcia" na sua certidão de nascimento, mas
+            odeia esse nome e prefere usar "Alícia". É exatamente o mesmo com tratamento gramatical – se não quer ser
+            desrespeitose e intolerante com alguém, você se refere a elu corretamente. A única diferença é que geralmente
+            conhecemos os nomes, mas não o tratamento pessoal. Ainda é comum nos apresentarmos com o nosso nome, mas não
+            com o nosso tratamento gramatical. Vamos mudar isso!
         - >
-            Como gênero na língua portuguesa é mais que pronomes, estaremos utilizando aqui o termo conjunto de linguagem,
-            seguindo o modelo de descrição de artigo (definido)/pronome (pessoal)/final de palavra.
+            Como gênero na língua portuguesa é mais que pronomes, estaremos utilizando aqui o termo conjunto de
+            linguagem, seguindo o modelo de descrição de artigo (definido)/pronome (pessoal)/final de palavra.
     pronouns: 'Lista de conjuntos populares'
     generator:
         header: 'Gerador'
@@ -374,7 +372,6 @@ people: ~
 english: ~
 
 contact:
-    header: 'Contato'
     authors: 'Autories do site'
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
@@ -417,6 +414,45 @@ contact:
                 - 'links para suas redes sociais;'
                 - 'se você tem alguma experiência em ativismo;'
                 - 'as áreas em que você gostaria de contribuir.'
+    contribute:
+        header: 'Contribuir'
+        technical:
+            footer: 'Tarefas Técnicas'
+            description: >
+                Trabalhos mais técnicos são gerenciados {https://gitlab.com/Avris/Zaimki/-/boards= neste painel Kanban}.
+                Basta escolher uma tarefa na coluna "To Do", atribuí-la a si mesme e começar a trabalhar nela. Se tiver
+                alguma dúvida, pergunte-nos. 
+            header: 'Solicite alterações no código '
+        translations:
+            header: 'Adicione ou corrija traduções '
+            description: >
+                Viu alguma tradução que está faltando ou está incorreta? Clique em "Sugerir traduções" no rodapé e siga
+                as instruções.
+        version:
+            header: 'Crie uma nova versão em outro idioma '
+            description: >
+                Instruções para criar uma nova versão em outro idioma estão disponíveis
+                {https://en.pronouns.page/new-version=aqui}. Antes de começar, por favor, {/contact=contate-nos} para que
+                assim a gente possa coordenar com outres um trabalho em conjunto.
+        entries:
+            header: 'Adicione páginas'
+            description: >
+                Muitas seções do site (substantivos, terminologia queer, dicionário inclusivo...) podem ser editadas e
+                novo conteúdo pode ser adicionado. Se você acha que algo está faltando ou precisa de correção, não hesite
+                em contribuir. 
+        intro: >
+            Pronouns.page é um projeto de código aberto criado por voluntários. Você pode contribuir também! Aqui estão
+            algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
+            equipe. 
+    team:
+        description:
+            - >
+                Somos um grupo queer dedicado a juntar, pesquisar, moldar e promover gênero neutro e linguagem
+                não-binária. Também apoiamos ações visando igualdade e justiça social.
+
+translationMode:
+    action: 'Proponha traduções'
+    changes: 'Alterações '
 
 support:
     header: 'Apoie-nos'
@@ -451,6 +487,8 @@ user:
     code:
         action: 'Validar'
         invalid: 'Código inválido.'
+    qr:
+        header: 'Código QR'
     account:
         changeUsername:
             header: 'Nome de usuárie'
@@ -534,11 +572,13 @@ profile:
         defaults: 'Restaurar valores padrão'
         propagate: 'Salvar alterações em seus cartões em todas as línguas'
     opinion:
+        header: 'Legenda/opiniões  '
         yes: 'Sim'
         jokingly: 'É brincadeira'
         close: 'Só se somos pessoas próximas'
         meh: 'OK'
         no: 'Não'
+        custom: 'customizados, adicionados pêle usuárie:'
 
     banner: >
         Você pode usar o nosso site para criar cartões, {/@example=como esse},
@@ -553,7 +593,7 @@ profile:
     empty: 'Essa pessoa ainda não especificou suas informações pessoais'
 
     personal:
-        header: 'Personal'
+        header: 'Informações pessoais '
         description: 'Só você pode ver esta seção'
     language:
         header: 'Idioma'
@@ -585,6 +625,18 @@ footer:
     financial: 'Transparência financeira'
     technical: 'Parte técnica'
     sibling: 'Projetos irmãos'
+    stats:
+        header: 'Status'
+        overall: 'versão com todas as linguagens'
+        keys:
+            cards: 'Cartões '
+            visitors: 'Visitantes Únicos'
+            pageviews: 'Vizualizações de página'
+            realTimeVisitors: 'Atualmente online'
+            users: 'Usuários registrados'
+        month: 'mês'
+        current: 'apenas essa versão'
+    legal: 'Assuntos jurídicos'
 
 notFound:
     message: 'Página não encontrada'
@@ -606,7 +658,7 @@ terms:
     consent: 'Ao se registrar, você aceita os {/terinos=Termos de Serviço}.'
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Política de Privacidade'  # TODO
 
 admin:
     header: 'Panel de Admins'
@@ -626,7 +678,7 @@ table:
     more: 'Mostrar mais'
 
 api:
-    header: 'Public API'
+    header: 'API pública '
     example: 'Exemplo'
     query: 'Query string parameters'
 
@@ -657,6 +709,7 @@ mode:
     light: 'Modo claro'
     automatic: 'Automático'
     dark: 'Modo escuro'
+    reducedColours: 'Cores reduzidas '
 
 ban:
     reason: 'Razão de ban'
