@@ -50,6 +50,7 @@ export default {
     async mounted() {
         if (!this.enabled || !process.client) { return; }
         await this.$loadScript('ezstandalone', `https://www.ezojs.com/ezoic/sa.min.js`);
+        await this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
         this.enableAds();
     },
     computed: {
@@ -105,10 +106,6 @@ export default {
                 ezstandalone.enable();
                 ezstandalone.display();
             });
-
-            if (this.consent) {
-                this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
-            }
         },
     },
     watch: {
