@@ -965,7 +965,7 @@ mode:
     light: 'Світла тема'
     automatic: 'Автоматичний'
     dark: 'Темна тема'
-    reducedColours: 'Зменьшені кольори'
+    reducedColours: 'Зменшені кольори'
 
 ban:
     reason: 'Причина блокування'
