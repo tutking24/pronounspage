@@ -622,7 +622,17 @@ profile:
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Ссылки'
     linksRecommended: 'Рекомендуем перейти по этим ссылкам'
-    # TODO
+    timezone:
+        header: 'Часовой пояс'
+        placeholder: 'Выберите свой часовой пояс'
+        info: >
+            Если вы заполните это поле, то другие пользователь_ницы смогут увидеть <strong>ваш часовой пояс, и какое у
+            вас в данный момент время</strong>. При желании вы также можете указать своё приблизительное местоположение.
+        detect: 'Определить'
+        publishArea: 'Опубликовать ваш континент в карточке'
+        publishLocation: 'Опубликовать в карточке ваше приблизительное местоположение'
+        approximate: 'Это приблизительное местоположение'
+        time: 'В моём часовом поясе сейчас  %weekday%, моё время — %time%'
     verifiedLinks:
         header: 'Verified links'
         info: >
