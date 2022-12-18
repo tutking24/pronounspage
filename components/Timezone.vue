@@ -41,13 +41,17 @@ export default {
             dt: undefined,
         }
     },
+    methods: {
+        update() {
+            this.dt = DateTime.local().setZone(this.value.tz);
+            this.$forceUpdate();
+        }
+    },
     mounted() {
         if (!this.value) { return; }
 
-        setInterval(() => {
-            this.dt = DateTime.local().setZone(this.value.tz);
-            this.$forceUpdate();
-        }, 1000);
+        this.update();
+        setInterval(this.update, 500);
     },
 }
 </script>
