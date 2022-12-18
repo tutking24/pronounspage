@@ -188,7 +188,7 @@
                         <Icon :v="provider.icon" :set="provider.iconSet || 'l'"/>
                         {{ provider.name }}
                     </a>
-                    <T silent>profile.linksRecommendedAfter</T>
+                    <T>profile.linksRecommendedAfter</T>
                     😉
                 </p>
                 <p v-if="$te('profile.linksWarning')" class="small text-muted mt-2 mb-0">

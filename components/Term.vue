@@ -40,23 +40,23 @@
                     <span v-if="$te(`calendar.events.${event.name}___timeDescription`)">
                         <T>calendar.celebrating_custom</T>
                         <T>calendar.events.{{event.name}}___timeDescription</T>
-                        <T silent>calendar.celebrating_customAfter</T>
+                        <T>calendar.celebrating_customAfter</T>
                     </span>
                     <span v-else-if="event.level === EventLevel.Day">
                         <T>calendar.celebrating_day</T>
                         <T :params="{day: event.getRange()}">calendar.dates.{{ event.month }}</T>
-                        <T silent>calendar.celebrating_dayAfter</T>
+                        <T>calendar.celebrating_dayAfter</T>
                     </span>
                     <span v-else-if="event.level === EventLevel.Week">
                         <T>calendar.celebrating_week</T>
                         <T :params="{day: event.getRange()}">calendar.dates.{{ event.month }}</T>
-                        <T silent>calendar.celebrating_weekAfter</T>
+                        <T>calendar.celebrating_weekAfter</T>
                     </span>
                     <span v-else-if="event.level === EventLevel.Month">
                         <T>calendar.celebrating_month</T>
                         <T v-if="$te('calendar.months_abl')">calendar.months_abl.{{ event.month }}</T>
                         <T v-else>calendar.months.{{ event.month }}</T>
-                        <T silent>calendar.celebrating_monthAfter</T>
+                        <T>calendar.celebrating_monthAfter</T>
                     </span>
                 </li>
             </ul>

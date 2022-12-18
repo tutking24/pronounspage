@@ -9,7 +9,6 @@
     export default {
         props: {
             params: {},
-            silent: {type: Boolean},
             icon: {},
         },
         data() {
@@ -28,7 +27,7 @@
             txt() {
                 return this.modified
                     ? translator.applyParams(this.translationChanges[this.key], this.params || {})
-                    : translator.translate(this.key, this.params || {}, !this.silent);
+                    : translator.translate(this.key, this.params || {});
             }
         },
         methods: {

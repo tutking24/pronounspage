@@ -92,7 +92,7 @@
                     <Icon v="times"/>
                 </a>
                 <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
-                <T silent>census.banner</T>
+                <T>census.banner</T>
             </div>
         </div>
         <div v-if="$user() && $user().bannedReason" class="alert alert-danger mb-0 container">
