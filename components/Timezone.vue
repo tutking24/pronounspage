@@ -12,14 +12,13 @@
         <p v-if="value.area || value.loc">
             <template v-if="value.area">
                 <Icon :v="timezone.icon"/>
-                {{ timezone.area }}
+                <T>profile.timezone.areas.{{ timezone.area }}</T>
             </template>
             <span v-if="value.area && value.loc">/</span>
             <template v-if="value.loc">
-                <Tooltip :text="$t('profile.timezone.approximate')">
-                    <Icon v="map-marked-alt"/>
-                    {{ timezone.location }}
-                </Tooltip>
+                <Icon v="map-marked-alt"/>
+                {{ timezone.location }}
+                <br/><small class="text-muted"><T>profile.timezone.approximate</T></small>
             </template>
         </p>
     </div>

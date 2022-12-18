@@ -1350,6 +1350,17 @@ profile:
         publishLocation: 'Opublikuj obszar w wizytówce'
         time: 'W mojej strefie czasowej jest teraz %time% (%weekday%)'
         approximate: 'To tylko przybliżona lokalizacja'
+        areas:
+            Africa: 'Afryka'
+            America: 'Ameryka'
+            Antarctica: 'Antarktyka'
+            Arctic: 'Arktyka'
+            Asia: 'Azja'
+            Atlantic: 'Atlantyk'
+            Australia: 'Australia'
+            Europe: 'Europa'
+            Indian: 'Ocean Indyjski'
+            Pacific: 'Pacyfik'
     flags: 'Flagi'
     flagsInfo: >
         Przeciągnij swoje pride'owe flagi do poniższej ramki.

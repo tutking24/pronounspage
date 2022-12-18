@@ -18,7 +18,7 @@
                     <br class="d-md-none"/>
                     <strong>
                         <Icon :v="getTimezoneInfo(timezone).icon"/>
-                        {{ getTimezoneInfo(timezone).area }}
+                        <T>profile.timezone.areas.{{ getTimezoneInfo(timezone).area }}</T>
                     </strong>
                 </label>
             </div>
