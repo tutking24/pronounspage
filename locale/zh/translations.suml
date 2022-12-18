@@ -37,11 +37,11 @@ home:
         button: '顯示生成器'
         header2: '生成鏈接'
         base: '根據'
-        alt: '您還可以在每個字段中分別輸入可互換形式 - <code> 他&她 </code> = „他” 或 „她”.'
+        alt: '您還可以在每個字段中分別輸入可互換形式 — <code> 他&她 </code> = 「他」 或 「她」。'
     whatisit: '代詞是什麼意思？'
 
     mission:
-        header: '我們的使命：'
+        header: '我們的使命'
         summary: '我們爭取語言的自由、尊重和包容性。'
         freedom: >
             <strong>自由</strong>
@@ -128,8 +128,8 @@ nouns:
         - >
             名詞通常沒有性別。如果要指定性別，只需在開頭添加 “女/男”，例如女總統。
             但是，下面列出的是同時具有性別選擇和性別中立選擇的名詞。
-    approved: '批准的條目'
-    pending: '等待審核'
+    approved: '條已被批准的條目'
+    pending: '條正等待審核'
     edit: '提出改變'
     edited: '提議改變'
     editing: '您正在編輯現有條目'
@@ -176,8 +176,8 @@ terminology: # TODO
     definition: 'Definition'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: '常見問題'
+    headerLong: '常見問題'
     questions:
         nonbinary:
             question: 'What is nonbinary?'
@@ -383,7 +383,7 @@ support:
 
 user:
     header: '帳戶'
-    headerLong: '你的帳戶'
+    headerLong: '您的帳戶'
     tokenExpired: '令牌過期了。請刷新網站，然後再試一次。'
     login:
         help: '您可使用社交媒體按鈕或輸入您的電郵地址以登入或創建新的賬戶。' # TODO: and then confirm the code you will have received in your mailbox
@@ -394,19 +394,18 @@ user:
         email:
             subject: '你的登錄代碼是：{{code}}'
             # TODO change: To confirm your email address, enter the following code on the website: %code%.
-            instruction: '要確認你的電郵地址，請使用以下代碼：'
-            extra: '如果你沒有要求這個代碼，請忽略消息。'
+            instruction: '如要確認你的電郵地址，請使用以下代碼：%code%'
+            extra: '如果你沒有要求這個代碼，請忽略此電郵。'
         why: >
             註冊可以讓你管理你的卡（{/@example=像這個}）。
         passwordless: '此網站不儲存任何密碼，{https://avris.it/blog/passwords-are-passé=更多信息。}'
         instancePlaceholder: 'Instance' # TODO
-        # TODO
         domainPlaceholder: '域名'
         deprecated: '不建議使用'  # TODO: alternatively 不推薦使用 or 已過時 for closer meaning
         depreciationNotice: >
             這不是一個可靠的登入方式。
-            <a href="%link%" target="_blank" rel="noopener">請查看此連結以獲得詳細資料</a>.
-            我們建議您確保您有其它可用的登入方式。
+            <a href="%link%" target="_blank" rel="noopener">點擊此連結以獲得詳細資訊</a>。
+            我們建議您確保有其它可用的登入方式。
     code:
         action: '確認'
         invalid: '代碼不正確'
@@ -466,6 +465,17 @@ profile:
     wordsColumnHeader: '標題'
     birthday: '年齡'
     birthdayInfo: '我們不會發布您的生日日期，只會發布計算出的年齡。'
+    timezone:
+        header: '時區'
+        placeholder: '選擇您的時區'
+        info: >
+            如果您填上此欄位，您的卡片將可為其他人提供<strong>您所在地的時間</strong>。
+            您亦可選擇公開粗略的地點
+        detect: '自動偵測'
+        publishArea: '在卡片中公開大洲'
+        publishLocation: '在卡片中公開地域'
+        time: '今天在我的時區是%weekday%，現在是%time%'
+        approximate: '這只是一個粗略的位置'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
@@ -513,7 +523,7 @@ profile:
             grey: '灰色'
         styles:
             _: '(字形…)'
-            bold-italics: '粗體 斜體'
+            bold-italics: '粗體及斜體'
             bold: '粗體'
             italics: '斜體'
             small: '小'
@@ -544,6 +554,24 @@ profile:
     language:
         header: '語言'
         description: '@%username%的名片亦有其他語言的版本'
+    circles:
+        header: '我的圈子'
+        info: >
+            在此欄位中，您可加入<strong>與您關係密切的人</strong>，以及一些您用於稱呼他們的（中性）詞語。
+            我們不是一個社交媒體，這亦不是一個朋友圈或追蹤列表。可加入的用戶不是很多。
+            在此被加入的用戶<strong>會知道被加進您的圈子</strong>，並有可能舉報騷擾性的行為。
+            您可在{/account=用戶頁面}看見誰把你加入了他們的圈子。
+            如果您及某一個人同時把對方加進圈子，此關係將會以 [s:shield-check] 作標記。
+        relationship: '關係（如「至愛」、「最好的朋友」等）'
+        mutual: '這是一個雙向關係'
+        yourMentions:
+            header: '您所被加入的圈子'  # TODO: not exactly the same meaning but I have 0 idea how to translate it without it sound clunky
+            description: >
+                您可在這裏查看將您加入圈子的人們。
+                如果您在卡片上加上這些人，您們的卡片上將會顯示一個剔 [s:shield-check]。
+        validation:
+            userNotFound: '用戶並不存在'
+            required: '必須填寫關係'
 
 share: '分享'
 
@@ -562,11 +590,15 @@ crud:
     loginRequired: '提交項目前請{/account=登入}'
     copy: '複製連結'
     download: '下載'
+    loadAll: '載入全部…'
+    validation:
+        listMaxLength: '此列表最多只能有 %maxlength% 條項目。'
+        listgenericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
 
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=原始碼}及內容採用{/license=OQL}條款授權。
-    links: '聯繫我們'
+    links: '聯絡我們'
     legal: '法律相關'
     financial: '財務報告' # TODO: could also be 財政透明
     technical: '技術相關'
@@ -598,14 +630,17 @@ confirm:
     header: '您確定？'
     yes: '是的，我肯定'
     no: '不，取消'
-    ok: 'OK'
+    ok: '好'
     save: '儲存'
     dismiss: '取消'
 
 terms:
     header: '服務條款'
     lastUpdate: '最近更新時間'
-    consent: '通過註冊，您正在接受 {/terms=服務條款}.'  # TODO: weird wording
+    consent: '註冊即代表您接受{/terms=服務條款}。'
+    update:
+        header: '我們的服務條款已被更新'
+        intro: '您好！以下列出的是我們對{https://en.pronouns.page/terms=服務條款}的變更。新的服務條款將於2023年1月1日生效。'
 
 privacy:
     header: '私隱條款'
@@ -633,7 +668,7 @@ api:
     query: '查詢字符串參數'
 
 quotation:
-    start: '“'
+    start: '“'  # TODO: 「」, 『』, etc are usually more commonly used than ""s, unsure whether to replace or not.
     end: '”'
     colon: '：'
 
@@ -690,14 +725,11 @@ report:
 
 translationMode:
     header: '翻譯模式'
-    action: '翻譯建議'
-    # TODO
+    action: '提交翻譯建議'
     welcome: >
-        Is there a translation missing or an existing one needs a correction?
-        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
-        In this mode clicking on a bordered piece of text will open a dialogue box,
-        in which you can modify the translation and compare it to the English text.
-        Remember to click on the button “Commit changes” once you're done.
+        發現了未翻譯或翻譯出錯的地方嗎？您可按下在右下角的藍色按鈕以開啓或關掉翻譯模式。
+        在此模式中，點擊有邊框的文字會開啓一個可輸入文字的對話框。
+        您可在此修改翻譯，並對比英文原文。完成後記得儲存及提交。
     logIn: '提交翻譯前請登入。'
     changes: '變更'
     commit: '提交翻譯建議'
@@ -726,7 +758,7 @@ flags:
     Bigender: '雙性別'
     Biromantic: '雙性戀'
     Bisexual: '雙性戀'
-    Butch: 'T'
+    Butch: 'T'  # TODO
     Ceteroromantic: '另性戀'
     Ceterosexual: '另浪漫傾向'
     Cis_Ally: '順性别盟友'
@@ -737,8 +769,8 @@ flags:
     Demisexual: '半性戀'
     Diamoric: '開愛'
     Enbian: '非二元愛'
-    Fa*afafine: 'Fa''afafine'
-    Femme: 'P'
+    Fa*afafine: 'Fa''afafine'  # TODO
+    Femme: 'P'  # TODO
     Gay: '同性戀'
     Gender_Questioning: '性別質疑'
     Genderfae: '仙性別'
@@ -763,7 +795,7 @@ flags:
     Maverique: '孤膽性別'
     Monoamorous: '單元之爱'
     Monogamous: '單偶制'
-    Muxe: 'Muxe'
+    Muxe: 'Muxe'  # TODO
     Nebularomantic: '星雲浪漫傾向'
     Neopronouns: '新代詞'
     Neutrois: '中立性別'
