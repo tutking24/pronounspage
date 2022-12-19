@@ -414,6 +414,9 @@ contact:
                 - 'links para suas redes sociais;'
                 - 'se você tem alguma experiência em ativismo;'
                 - 'as áreas em que você gostaria de contribuir.'
+    header: 'Contato'
+    groups:
+        calendar: 'Bot Calendário Queer'
     contribute:
         header: 'Contribuir'
         technical:
@@ -451,7 +454,7 @@ contact:
                 não-binária. Também apoiamos ações visando igualdade e justiça social.
 
 translationMode:
-    action: 'Proponha traduções'
+    action: 'Propor traduções'
     changes: 'Alterações '
 
 support:
@@ -533,6 +536,8 @@ user:
         disableConfirm: 'Você tem certeza de que quer desativar a autenticação multifator?'
 
 profile:
+    circles:
+        header: 'Meu círculo'
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
@@ -624,10 +629,14 @@ footer:
     legal: 'Assuntos legais'
     financial: 'Transparência financeira'
     technical: 'Parte técnica'
-    sibling: 'Projetos irmãos'
+    sibling: 'Projetos parceiros'
     stats:
         header: 'Status'
         overall: 'versão com todas as linguagens'
+        stats:
+        keys:
+            visitDuration: 'Média da duração de visitas'
+            responseTime: 'Média de ping'
         keys:
             cards: 'Cartões '
             visitors: 'Visitantes Únicos'
