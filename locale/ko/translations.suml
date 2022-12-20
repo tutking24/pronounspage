@@ -512,7 +512,7 @@ user:
     deleteAccount: '어카운트 삭제'
     deleteAccountConfirm: '어카운트을 삭제하고 싶습니까? 이것은 되돌릴 수 없습니다!'
     socialConnection:
-        list: '소셜 미디어 연결'
+        list: 'SNS 연결'
         connect: '연결'
         refresh: '리프레시'
         disconnect: '연결 해제'

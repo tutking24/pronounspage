@@ -375,13 +375,13 @@ contact:
     authors: 'Autories do site'
     team:
         name: 'O coletivo "Conselho da Língua Neutra"'
-        nameShort: 'O coletivo'
+        nameShort: 'Coletivo'
         description:
             - >
                 Nós somos um grupo queer dedicado a juntar, pesquisar, moldar e promover
                 gênero neutro e linguagem não-binária.
                 Nós também apoiamos ações visando igualdade e justiça social.
-        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simboliza a língua.'
+        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simbolizam a linguagem.'
         members: 'Membres atuais'
         member: 'Membre do coletivo'
         upcoming: 'Próximas versões'
@@ -426,13 +426,13 @@ contact:
         intro: >
             Pronouns.page é um projeto de código aberto criado por voluntáries. Você pode contribuir também! Aqui estão
             algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
-            equipe. 
+            equipe.
         technical:
             footer: 'Tarefas Técnicas'
             description: >
                 Trabalhos mais técnicos são gerenciados {https://gitlab.com/Avris/Zaimki/-/boards= neste painel Kanban}.
                 Basta escolher uma tarefa na coluna "To Do", atribuí-la a si mesme e começar a trabalhar nela. Se tiver
-                alguma dúvida, pergunte-nos. 
+                alguma dúvida, pergunte-nos.
             header: 'Solicite alterações no código '
         translations:
             header: 'Adicione ou corrija traduções '
@@ -450,19 +450,7 @@ contact:
             description: >
                 Muitas seções do site (substantivos, terminologia queer, dicionário inclusivo...) podem ser editadas e
                 novo conteúdo pode ser adicionado. Se você acha que algo está faltando ou precisa de correção, não hesite
-                em contribuir. 
-        intro: >
-            Pronouns.page é um projeto de código aberto criado por voluntários. Você pode contribuir também! Aqui estão
-            algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
-            equipe. 
-    team:
-        name: 'O coletivo "Conselho da Língua Neutra"'
-        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simbolizam a linguagem.'
-        nameShort: 'Coletivo'
-        description:
-            - >
-                Somos um grupo queer dedicado a juntar, pesquisar, moldar e promover gênero neutro e linguagem
-                não-binária. Também apoiamos ações visando igualdade e justiça social.
+                em contribuir.
 
 translationMode:
     action: 'Sugerir traduções'
@@ -640,15 +628,14 @@ profile:
         publishLocation: 'Publicar a área em seu cartão'
         approximate: 'Isso é apenas uma localização aproximada'
     opinion:
-        header: 'Legenda/opiniões  '
+        header: 'Legenda/opiniões'
         yes: 'Claro'
         jokingly: 'Zoeirinha'
         close: 'Só se somos pessoas próximas'
         meh: 'OK'
         no: 'Não'
         custom: 'customizados, adicionados pêle usuárie:'
-         description: 'Descrição…'
-        header: 'Legenda/opiniões'
+        description: 'Descrição…'
         colours:
             _: '(Cor da fonte…)'
             pink: 'Rosa'
@@ -668,7 +655,6 @@ profile:
             duplicateIcon: 'O ícone deve ser único'
             duplicateDescription: 'A descrição deve ser única'
             invalidOpinion: 'O ícone selecionado não foi encontrado na legenda abaixo'
-        custom: 'customizados, adicionados pelo usuário:'
     wordsColumnHeader: 'Coluna de cabeçalho'
 
     banner: >
