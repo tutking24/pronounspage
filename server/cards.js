@@ -55,7 +55,7 @@ const shoot = async (db, mode) => {
         for (let buffer of await pr.run()) {
             const [, domain, username] = buffer.filename.match(/(.*)!card!@(.*)-1024x300\.png/);
             const locale = domainLocaleMap[domain];
-            results[locale + '/' + username] = buffer;
+            results[locale + '/' + username.replace(/[^A-Za-z0-9.-]/g, '_')] = buffer;
         }
     } catch (e) {
         console.error(e);
@@ -71,7 +71,7 @@ const shoot = async (db, mode) => {
 
         console.log(`Uploading @${username} (${locale}, ${mode}) – ${cardId}`);
 
-        const buffer = results[locale + '/' + username.replace(/\.+$/, '')];
+        const buffer = results[locale + '/' + username.replace(/\.+$/, '').replace(/[^A-Za-z0-9.-]/g, '_')];
 
         if (buffer === undefined) {
             console.error('Cannot find the proper buffer!');
