@@ -414,11 +414,19 @@ contact:
                 - 'links para suas redes sociais;'
                 - 'se você tem alguma experiência em ativismo;'
                 - 'as áreas em que você gostaria de contribuir.'
+    language: >
+        Nós somos um time internacional – as pessoas que criaram uma versão de linguagem específica talvez não sejam as
+        mesmas que lerão essa mensagem. Então, se possível, apreciaríamos caso você nos contatasse em <strong>Inglês ou
+        Polonês</strong>.
     header: 'Contato'
     groups:
         calendar: 'Bot Calendário Queer'
     contribute:
         header: 'Contribuir'
+        intro: >
+            Pronouns.page é um projeto de código aberto criado por voluntáries. Você pode contribuir também! Aqui estão
+            algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
+            equipe. 
         technical:
             footer: 'Tarefas Técnicas'
             description: >
@@ -448,14 +456,27 @@ contact:
             algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
             equipe. 
     team:
+        name: 'O coletivo "Conselho da Língua Neutra"'
+        logo: 'A logo do coletivo é uma combinação do símbolo transgênero e um balão de fala que simbolizam a linguagem.'
+        nameShort: 'Coletivo'
         description:
             - >
                 Somos um grupo queer dedicado a juntar, pesquisar, moldar e promover gênero neutro e linguagem
                 não-binária. Também apoiamos ações visando igualdade e justiça social.
 
 translationMode:
-    action: 'Propor traduções'
+    action: 'Sugerir traduções'
     changes: 'Alterações '
+    header: 'Modo de Tradução'
+    logIn: 'Você precisa fazer login para propor traduções'
+    commit: 'Enviar mudanças'
+    revert: 'Reverter mudanças'
+    pause: 'Pausar Modo de Tradução'
+    welcome: >
+        Há alguma tradução faltando ou que precisa ser corrigida? Você pode clicar no botão azul no canto inferior
+        direito para ativar ou desativar o Modo de Tradução. Durante esse modo, selecionar um campo de texto contornado
+        irá abrir uma caixa de diálogo, aonde você poderá modificar a tradução e compará-la com o texto em Inglês.
+        Lembre-se de clicar no botão "Enviar Mudanças" assim que estiver tudo pronto.
 
 support:
     header: 'Apoie-nos'
@@ -492,6 +513,7 @@ user:
         invalid: 'Código inválido.'
     qr:
         header: 'Código QR'
+        download: 'Baixar código QR'
     account:
         changeUsername:
             header: 'Nome de usuárie'
@@ -508,6 +530,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Mude'
+        failed: 'Por favor, reconecte sua mídia social para consertar o avatar ausente.'
     deleteAccount: 'Eliminar conta'
     deleteAccountConfirm: 'Confirma que quer eliminar a conta? Isso será irreversível!'
     socialConnection:
@@ -537,7 +560,25 @@ user:
 
 profile:
     circles:
+        info: >
+            Nesse campo você pode marcar as <strong>pessoas mais próximas de você</strong>, junto com informações de
+            palavras (não-)generizadas que você as refere (ex. “cônjuge” vs. “esposa” vs. “marido”). Não somos uma mídia
+            social, isso <strong>não é uma lista de amigos/seguidores</strong>, e é por isso que o tamanho da lista é bem
+            limitado. Tenha em mente que as pessoas que você marcar aqui <strong>poderão ver isso</strong> – e talvez te
+            reportarem por assédio caso você decida colocar informações negativas sobre elas. Se a conexão em seu círculo
+            é mútua, ela será marcada com [s:shield-check]. Você pode ver quem te mencionou na {/account=página de sua
+            conta}.
+        yourMentions:
+            header: 'Suas menções de círculos'
+            description: >
+                Aqui está a lista de pessoas que te adicionaram em seus círculos. Se você adicioná-las de volta, uma
+                marca registrada [s:shield-check] aparecerá em ambos os cartões.
         header: 'Meu círculo'
+        relationship: 'Relacionamento (ex. “parceire”, “melhor amigue”)'
+        mutual: 'Essa conexão é mútua.'
+        validation:
+            userNotFound: 'Este usuário não existe'
+            required: 'Relacionamento é um campo obrigatório'
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
@@ -576,14 +617,59 @@ profile:
         save: 'Salve o cartão'
         defaults: 'Restaurar valores padrão'
         propagate: 'Salvar alterações em seus cartões em todas as línguas'
+    timezone:
+        time: 'São %time% de um(a) %weekday% no meu fuso horário'
+        areas:
+            America: 'América'
+            Africa: 'África'
+            Antarctica: 'Antártica'
+            Arctic: 'Ártico'
+            Asia: 'Ásia'
+            Atlantic: 'Atlântico'
+            Australia: 'Austrália'
+            Europe: 'Europa'
+            Indian: 'Índia'
+            Pacific: 'Pacífico'
+        header: 'Fuso horário'
+        placeholder: 'Selecione seu fuso horário'
+        detect: 'Detectar'
+        publishArea: 'Publicar o continente em seu cartão'
+        info: >
+            Se você preencher este campo, seu cartão mostrará para as pessoas <strong>o horário atual de onde você
+            mora</strong>. Opcionalmente, você também pode escolher mostrar sua localização aproximada.
+        publishLocation: 'Publicar a área em seu cartão'
+        approximate: 'Isso é apenas uma localização aproximada'
     opinion:
         header: 'Legenda/opiniões  '
-        yes: 'Sim'
-        jokingly: 'É brincadeira'
+        yes: 'Claro'
+        jokingly: 'Zoeirinha'
         close: 'Só se somos pessoas próximas'
         meh: 'OK'
         no: 'Não'
         custom: 'customizados, adicionados pêle usuárie:'
+         description: 'Descrição…'
+        header: 'Legenda/opiniões'
+        colours:
+            _: '(Cor da fonte…)'
+            pink: 'Rosa'
+            orange: 'Laranja'
+            red: 'Vermelho'
+            green: 'Verde'
+            blue: 'Azul'
+            grey: 'Cinza'
+        styles:
+            _: '(Estilo…)'
+            bold: 'Negrito'
+            italics: 'Itálico'
+            small: 'Pequeno'
+        validation:
+            missingIcon: 'O ícone é requerido'
+            missingDescription: 'A descrição é requerida'
+            duplicateIcon: 'O ícone deve ser único'
+            duplicateDescription: 'A descrição deve ser única'
+            invalidOpinion: 'O ícone selecionado não foi encontrado na legenda abaixo'
+        custom: 'customizados, adicionados pelo usuário:'
+    wordsColumnHeader: 'Coluna de cabeçalho'
 
     banner: >
         Você pode usar o nosso site para criar cartões, {/@example=como esse},
@@ -621,6 +707,10 @@ crud:
     loginRequired: 'Faça {/conta=login} para participar do nosso banco de dados'
     copy: 'Copiar link'
     download: 'Baixar'
+    loadAll: 'Carregar tudo…'
+    validation:
+        genericForm: 'A forma submetida é inválida. Corrija os problemas e envie novamente.'
+        listMaxLength: 'o número máximo de elementos nessa lista é de %maxlength%.'
 
 footer:
     license: >
@@ -631,12 +721,14 @@ footer:
     technical: 'Parte técnica'
     sibling: 'Projetos parceiros'
     stats:
-        header: 'Status'
+        header: 'Estatísticas '
         overall: 'versão com todas as linguagens'
         stats:
         keys:
+            visitors: 'Visitantes únicos'
+            users: 'Usuáries registrades'
             visitDuration: 'Média da duração de visitas'
-            responseTime: 'Média de ping'
+            responseTime: 'Média do tempo de resposta'
         keys:
             cards: 'Cartões '
             visitors: 'Visitantes Únicos'
@@ -646,6 +738,7 @@ footer:
         month: 'mês'
         current: 'apenas essa versão'
     legal: 'Assuntos jurídicos'
+    sibling: 'Projetos parceiros'
 
 notFound:
     message: 'Página não encontrada'
@@ -660,6 +753,8 @@ confirm:
     yes: 'Sim'
     no: 'Não, cancelar'
     ok: 'OK'
+    save: 'Salvar'
+    dismiss: 'Dispensar'
 
 terms:
     header: 'Termos de Serviço'
