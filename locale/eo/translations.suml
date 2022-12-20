@@ -445,6 +445,14 @@ contact:
                 - 'link to your social media,'
                 - 'say, if you have some experience in activist work,'
                 - 'say, what would you like to help with.'
+    language: >
+        Ni estas internacia teamo - la homoj kiuj kreis specifan lingvoversion eble ne estas la samaj homoj, kiuj legos
+        vian mesaĝon. Do, se eble, ni dankus se vi kontaktis nin <strong>angle aŭ pola.
+    contribute:
+        header: 'Kontribuu'
+        intro: >
+            Pronouns.page estas malfermfonta projekto kreita de volontuloj. Vi ankaŭ povas aldoni vian kontribuon! Jen
+            kelkaj areoj kie ni farus dankas vian helpon. Aktivaj kontribuantoj estos invititaj aliĝi al nia teamo.
 
 support:
     header: 'Support'
@@ -542,7 +550,7 @@ profile:
     birthdayInfo: 'Ni ne publikgas vian naskiĝtagon, nur la kalkulitan aĝon.'
     flags: 'Flagoj'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
+    flagsCustom: 'Alŝutu kutimajn flagojn'
     flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: 'Ligiloj'
@@ -568,7 +576,7 @@ profile:
         header: 'Kartoredaktilo'
         save: 'Konigi vian karton'
         defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
+        propagate: 'Disvastigu ĉi tiun ŝanĝon al siaj kartoj en ĉiuj lingvoj'
     opinion:
         yes: 'Jes'
         jokingly: 'Ŝerce'
@@ -717,6 +725,20 @@ report:
     sent: 'Your report has been sent. Thanks for your help!'
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.' # TODO
+
+translationMode:
+    header: 'Reĝimo de tradukado'
+    action: 'Proponu tradukojn'
+    welcome: >
+        Ĉu mankas traduko aŭ ekzistanta bezonas korekton? Oni povas alklaki la bluan butonon en la malsupra dekstra
+        angulo por ŝanĝi la reĝimon de tradukado. En ĉi tiu reĝimo, klakante sur randa teksto malfermos dialogujon, en
+        kiu oni povas modifi la tradukon kaj komparu ĝin kun la angla teksto. Memoru klaki la butonon "fari ŝanĝojn" post
+        kiam oni estas farita.
+    logIn: 'Oni devas esti ensalutinta por proponi tradukojn'
+    changes: 'Ŝanĝoj'
+    commit: 'Faru ŝanĝojn'
+    revert: 'Reverti ŝanĝojn'
+    pause: 'Paŭzi reĝimon de tradukado'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'
@@ -925,6 +947,10 @@ calendar:
         black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day' # TODO
         hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day' # TODO
         trans_hiv_testing_day: 'Transgender HIV Testing Day' # TODO
+        mspec_lesbian_day: 'Spektro de multobla-altiro lesbaninx tago de videbleco kaj konscio'
+        mspec_lesbian_week: 'Spektro de multobla-altiro lesbaninx semajno de videbleco kaj konscio '
+        masc_lesbian_day: 'Vira lesba tago de videbleco kaj konscio'
+        masc_lesbian_week: 'Vira lesba semajno de videbleco kaj konscio'
     banner: 'We''re celebrating'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
