@@ -37,7 +37,8 @@ class Translator {
         return this.get(key, false, false, false) !== undefined;
     }
 
-    applyParams (value, params = {}) {
+    applyParams(value, params = {}) {
+        if (!value) { return value; }
         for (let k in params) {
             if (params.hasOwnProperty(k)) {
                 value = Array.isArray(value)
