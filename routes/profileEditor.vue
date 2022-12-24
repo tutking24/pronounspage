@@ -212,7 +212,7 @@
                     <T>profile.birthdayInfo</T>
                 </p>
                 <div class="input-group mb-3">
-                    <datepicker v-model="birthday" inline :disabled-dates="disabledDates" initial-view="year"/>
+                    <datepicker v-model="birthday" inline :disabled-dates="disabledDates" :open-date="disabledDates.from" :initial-view="birthday !== null ? 'day' : 'year'"/>
                 </div>
                 <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
             </section>
@@ -281,7 +281,7 @@
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
     import link from '../plugins/link';
-    import {minBirthdate, maxBirthdate, formatDate} from '../src/birthdate';
+    import {minBirthdate, maxBirthdate, formatDate, parseDate} from '../src/birthdate';
     import opinions from '../src/opinions';
     import t from '../src/translator';``
 
@@ -329,7 +329,7 @@
                     names: profile.names,
                     pronouns: profile.pronouns,
                     description: profile.description,
-                    birthday: profile.birthday,
+                    birthday: parseDate(profile.birthday),
                     timezone: profile.timezone,
                     links: profile.links,
                     flags: profile.flags,
@@ -356,7 +356,7 @@
                 names: profile.names,
                 pronouns: [],
                 description: '',
-                birthday: profile.birthday,
+                birthday: parseDate(profile.birthday),
                 timezone: profile.timezone,
                 links: profile.links,
                 flags: profile.flags.filter(f => !f.startsWith('-')),
