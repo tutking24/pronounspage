@@ -11,7 +11,9 @@ import {socialProviders} from "../../src/socialProviders";
 import {downgradeToV1, upgradeToV2} from "../profileV2";
 import { colours, styles } from '../../src/styling';
 
-const normalise = s => s.trim().toLowerCase();
+const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // https://stackoverflow.com/a/6969486/3297012
+const normalise = s => decodeURIComponent(s.trim().toLowerCase());
+const normaliseWithLink = s => normalise(s.replace(/^@/, '').replace(new RegExp('^https://.*?/@'), ''))
 
 const calcAge = birthday => {
     if (!birthday) {
@@ -132,14 +134,14 @@ const usernamesToIds = async(db, usernames) => {
     const users = await db.all(SQL`
         SELECT id, usernameNorm
         FROM users
-        WHERE users.usernameNorm IN (`.append(usernames.map(k => `'${normalise(k.replace(/^@/g, ''))}'`).join(',')).append(SQL`)`
+        WHERE users.usernameNorm IN (`.append(usernames.map(k => `'${normaliseWithLink(k)}'`).join(',')).append(SQL`)`
     ));
 
     const idMap = {}
     for (let username of usernames) {
         for (let {id, usernameNorm} of users) {
-            if (normalise(username.replace(/^@/g, '')) === usernameNorm) {
-                idMap[normalise(username.replace(/^@/g, ''))] = id;
+            if (normaliseWithLink(username) === usernameNorm) {
+                idMap[normaliseWithLink(username)] = id;
             }
         }
     }
@@ -243,7 +245,7 @@ router.get('/profile/versions/:username', handleErrorAsync(async (req, res) => {
             profiles.locale
         FROM users
             LEFT JOIN profiles ON profiles.userId = users.id
-        WHERE users.usernameNorm = ${normalise(req.params.username.replace(/^@/g, ''))}
+        WHERE users.usernameNorm = ${normaliseWithLink(req.params.username)}
     `)).map(x => x.locale));
 }));
 
@@ -394,7 +396,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     await req.db.get(SQL`DELETE FROM user_connections WHERE from_profileId = ${profileId}`);
     const usernameIdMap = await usernamesToIds(req.db, req.body.circle.map(r => r.username));
     for (let connection of req.body.circle) {
-        const toUserId = usernameIdMap[normalise(connection.username.replace(/^@/g, ''))];
+        const toUserId = usernameIdMap[normaliseWithLink(connection.username)];
         const relationship = connection.relationship.substring(0, 64).trim();
         if (toUserId === undefined || !relationship) { continue; }
         await req.db.get(SQL`INSERT INTO user_connections (id, from_profileId, to_userId, relationship) VALUES (

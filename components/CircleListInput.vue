@@ -27,6 +27,12 @@
 
 
 <script>
+
+// TODO remove duplication
+const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // https://stackoverflow.com/a/6969486/3297012
+const normalise = s => decodeURIComponent(s.trim().toLowerCase());
+const normaliseWithLink = s => normalise(s.replace(/^@/, '').replace(new RegExp('^https://.*?/@'), ''))
+
 export default {
     props: {
         value: {},
@@ -78,7 +84,12 @@ export default {
                 return;
             }
             this.validateUserHandle = setTimeout(async () => {
-                this.validateUserCache[v] = await this.$axios.$get(`/profile/versions/${encodeURIComponent(v)}`);
+                let res = await this.$axios.$get(`/profile/versions/${encodeURIComponent(normaliseWithLink(v))}`);
+                if (!Array.isArray(res)) {
+                    console.error(res);
+                    res = [];
+                }
+                this.validateUserCache[v] = res;
                 this.updateKey++;
             }, 500)
         },
