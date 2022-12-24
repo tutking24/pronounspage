@@ -6,7 +6,7 @@ home:
     link: '홈페이지'
     header: '대명사'
     headerLong: '대명사 목록'
-    welcome: 'Welcome to pronouns.page!'
+    welcome: 'pronouns.page로 환영합니다!'
     intro: >
         We're creating a source of information about nonbinary and gender neutral language.
     why: '대명사는 왜 그렇게 중요한가요?'
@@ -181,11 +181,10 @@ terminology:
     header: '술어'
     headerLong: '퀴어 용어 사전'
     info:
+        - '많은 LGBTQ 어휘는 영어에서 한글로 바꾼 단어들 입니다. 그런 이유로 그 단어들, 사용법, 뜻, 그리고 한글 변역들을 정리한 사전을 제시하고자 합니다.'
         - >
-            Many of the terms and phrases related to the LGBTQ+ community
-            are used as English inserts into Korean texts.
-            We'd like to present a glossary of those terms, describe their meaning,
-            and propose their <your language> translations.
+            정체에 대한 어휘는 주관적이고 바뀔 수 있다는 것을 기억해 주세요. 이 사전은 제일 일반적으로 인정된 퀴어 어휘를 찾으려는 커뮤니티 노력이지 어떤 어휘가 맞는지의 권한은 없습니다. 누군가의 정체와
+            그 정체의 맞은 단어가 뭔지에 권한이 있는 건... 그 사람 자신뿐이죠
     term: '용어'
     original: '어원'
     category: '카테고리'
@@ -195,9 +194,19 @@ terminology:
 faq:
     header: 'FAQ'
     headerLong: '자주 묻는 질문'
+        nonbinary:
+        how-to-know:
+        who-uses-it:
+        bio:
+        change:
+        get-used-to:
+        made-up:
+            answer:
+                - '내. 그렿죠. 모든 언어의 모든 단어들은 누군가가 지어넨 겁니다. 어떤 단어들는 다른 보다 더 오래 됬지만요.'
+
     questions:
         nonbinary:
-            question: '넌바이너리가 뭐지?'
+            question: '넌바이너리가 뭐죠?'
             answer:
                 - >
                     성별은 단순한 남성/여성 구분보다 훨씬 더 복잡합니다.
@@ -236,11 +245,9 @@ faq:
         made-up:
             question: '이 대명사는 만들어졌어!'
             answer:
-                - >
-                    내, 그럽니다, 모든 언어의 모든단어는 만들었읍니다.
-                    어떤 단어는 다른 것보다 더 낡읍니다.
+                - '내. 그렿죠. 모든 언어의 모든 단어들은 누군가가 지어넨 겁니다. 어떤 단어들는 다른 보다 더 오래 됬지만요.'
         how-to-know:
-            question: '내가 다른 사람을 부르는걸 어떻게 알지?'
+            question: '다른 사람들을 어떻게 불르면 되는지 어떻게 알죠?'
             answer:
                 - >
                     물어보시면 됩니다! 네, 조금 어색할 수도 있지만 하면 할수록 덜 어색해집니다.
@@ -262,7 +269,7 @@ faq:
                     어떤 사람들은 여러 대명사를 제공합니다.
                     그것은 그들이 그 모든 형태를 좋아한다는 것을 의미합니다. 일반적으로 첫 번째 것이 선호됩니다.
         who-uses-it:
-            question: '아무도 그것을 사용합니까?'
+            question: '누가 이런것을 사용하긴 합니까?'
             answer:
                 - >
                     네! 전 세계 수백만 명의 엔비들이 씁니다.
@@ -286,7 +293,7 @@ faq:
                     또한 신대명사에 일부를 읽을 수 있습니다 {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
                     on neopronouns.
         bio:
-            question: '소셜 미디어에서 내 대명사를 바이오에 넣어야 하는 이유는 무엇입니까?'
+            question: 'SNS에서 내 대명사를 자기소게에 넣어야 되는 이유는 뭐죠?'
             answer:
                 - >
                     시스이면(= 트랜스가 아님)이고 성별과 일치하는 "{/he=그대}" 또는 "{/she=그녀}"를 사용하는 경우,
@@ -307,14 +314,14 @@ faq:
                     그것은 우리가 더 편안하고 안전하며 환영받는 느낌을줍니다.
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
         change:
-            question: '대명사를 변경할 수 있습니까?'
+            question: '대명사를 바꿀 수 있습니까?'
             answer:
                 - >
                     물론이죠! 누군가가 자신의 견해, 스타일, 취미를 바꿀 때 아무도 놀라지 않는데…
                     그래서 그들이 자신의 정체성의 일부를 발견한 것이 왜 이상할까요?
                     이름이 마음에 들지 않거나, 자신에게 잘 맞는 레이블을 발견했을도 있습니다?
         get-used-to:
-            question: '새로운 <em>자신의</em> 대명사에 익숙해지지 않는 것이 이상한가요?'
+            question: '<em>자신의</em> 새로운 대명사가 익숙하지 않는 것이 이상한가요?'
             answer:
                 - >
                     아뇨! 태어날 때 부여된 성별과 일치하는 대명사를 오랜 세월 사용한 후
@@ -387,9 +394,7 @@ links:
     blog: '블로그'
     mediaShort: '미디어'
     media: '미디어의 Pronouns.page'
-
-    social: '소셜 미디어'
-
+    social: 'SNS'
     languageVersions: '다른 언어 버전'
 
 people: ~
@@ -417,6 +422,8 @@ contact:
         우리에게 동성애 혐오 메일을 보내고 싶습니까?
          그냥 포기하세요. 우리는 트롤과 논의하지 않습니다.
          귀하가 메시지를 작성하는 데 걸리는 시간보다 귀하를 음소거하고 스팸 폴더에 메시지를 넣는 데 걸리는 시간이 더 적습니다.
+    groups:
+        calendar: '퀴어 달력 봇'
     team:
         name: '"중립 언어 위원회" 집단'
         nameShort: '집단'
@@ -457,6 +464,19 @@ contact:
                 - '소셜 미디어 링크하고,'
                 - '활동가 활동에 약간의 경험이야기 주고,'
                 - '무엇을 도와주고 싶은지 말해보세요.'
+    contribute:
+        header: '기여'
+        intro: 'Pronouns.page는 자원봉사자들이 만든 오픈 소스 프로젝트입니다. 당신도 기여할 수 있습니다! 도움이 필요한 부분 들입니다. 적극적인 기여자들은 우리 팀에 합류하도록 초대됩니다.'
+        entries:
+            header: '추가 향목'
+            description: >
+                이 웹사이트의 많은 부분들(명사, 퀴어 어휘, 포괄적 사전, 등등)은 추가하고 편집할 수 있는 옵션이 있습니다. 뭔가가 빠졌거나 틀린 부분이 있다고 생각이 들면 주저하지 말고 항목을 제출해
+                주세요.
+        version:
+            header: '새로운 언어 버전 만들기'
+            description: >
+                새로운 언어 버전을 만들는 방법은 {https://en.pronouns.page/new-version=여기} 있습니다. 다른 기여자들이 벌써 통력하는 중일 수 있으니 같이 협력할 수 있게
+                시작 전 {/contact=문의해 주세요}.
 
 support:
     header: '지원'
@@ -467,7 +487,7 @@ support:
 
 user:
     header: '계정'
-    headerLong: '나의 계정'
+    headerLong: '내 계정'
     tokenExpired: '토큰이 만료되었습니다. 웹사이트를 리프레시하고 다시 시도하세요.'
     login:
         help: '로그인하거나 계정을 만들려면 소셜 미디어 버튼을 사용하거나 아래 필드에 이메일을 입력한 다음 우편함으로 받을 코드를 확인하세요.'
@@ -495,13 +515,13 @@ user:
         invalid: '유효하지 않은 코드'
     account:
         changeUsername:
-            header: '유저이름'
-            action: '변하기'
+            header: 'ID'
+            action: 'ID 바꾸기 '
             invalid: '사용자 이름은 4자에서 16자 사이여야 하며 숫자, 문자, 점, 하이픈 및 밑줄만 포함할 수 있습니다.'
             taken: '이 사용자 이름은 사용됩니다.'
         changeEmail:
             header: '이메일 주소'
-            action: '변하기'
+            action: '이메일 바꾸기'
             invalid: '잘못된 이메일 주소.'
             taken: '이 주소는 이미 가졌습니다.'
         admin: '관리자'
@@ -512,7 +532,7 @@ user:
     deleteAccount: '어카운트 삭제'
     deleteAccountConfirm: '어카운트을 삭제하고 싶습니까? 이것은 되돌릴 수 없습니다!'
     socialConnection:
-        list: '소셜 미디어 연결'
+        list: 'SNS 연결'
         connect: '연결'
         refresh: '리프레시'
         disconnect: '연결 해제'
@@ -568,12 +588,15 @@ profile:
             or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '열'
-
+    circles:
+        yourMentions:
+            header: '당신이 멘션된 서클들'
+            description: '당신을 서클로 추가한 사람들입니다. 만약 당신도 그를 추가하면 두 카드들에 체크마크가 [s:shield-check] 생겨요.'
     header: '카드'
     list: '나의 카드'
     init: '카드 만들기'
-    show: '보여주기'
-    edit: '편집하기'
+    show: '보기'
+    edit: '편집'
     delete: '삭제'
     deleteConfirm: '이 카드를 삭제하고 싶으니까?'
     editor:
@@ -621,11 +644,14 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
-    links: '연락처, 소셜 미디어'
+    links: '연락처, SNS'
     legal: '합법'
     financial: '재무 투명성'
     technical: '전문'
     sibling: '형제 프로젝트'
+    stats:
+        keys:
+            cards: '카드들'
 
 notFound:
     message: '페이지를 찾을 수 없습니다'
@@ -639,9 +665,9 @@ confirm:
     header: '확실합니까?'
     yes: '예, 확신합니다'
     no: '아니요, 취소해요'
-    ok: 'OK'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    ok: '네'
+    save: 'Save'
+    dismiss: 'Dismiss'
 
 terms:
     header: '서비스 약관'
@@ -725,6 +751,9 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+    update:
+        header: '이용약관을 업데이트했습니다.'
+        intro: '안녕하세요! 2023년 1월 1일부터 다음 같은  {https://en.pronouns.page/terms=Terms of Service}에 변경사항이 적용될 것을 알립니다'
 
 privacy:
     header: 'Privacy Policy'
@@ -1048,5 +1077,5 @@ calendar:
     full: '전체 캘린더'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/kr=Here''s how you can support it.}'
+    header: '우린 우크라이나와 함께합니다.'
+    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/kr=당신이 도울 수 있는 방법.}'
