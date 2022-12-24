@@ -675,6 +675,7 @@ footer:
     technical: 'Parte técnica'
     sibling: 'Proyectos hermanos'
     stats:
+        header: 'Estatus'
         keys:
             cards: 'Tarjetas'
             visitors: 'Visitantes de ocasión única'
@@ -1058,7 +1059,7 @@ calendar:
         nonbinary_week: 'Semana de la Conciencia No Binaria'
         polyamory_day: 'Día del {/terminologia#poliamor=Poliamor}'
         homophobia_sport: 'Día Internacional contra la {/terminologia#homofobia=Homofobia} en el Deporte'
-        gay_uncles_day: 'Día de los Tíos {/terminologia#gay=Gay}'
+        gay_uncles_day: 'Día de les Tíes {/terminologia#gay=Gay}'
         lgbtq_stem: 'Día de las personas LGBTQ+ en CTIM'
         trans_depathologization: 'Día por la Despatologización de {/terminologia#transgender=Transgénero}'
         lgbti_book_day: 'Día del Libro de Temática LGTBI'
@@ -1096,7 +1097,7 @@ calendar:
         aids_awareness_month: 'Mes de la Concientización sobre el Sida'
         genderfluid_week: 'Semana de la Conciencia de Género Fluido'
         pan_week: 'Semana de la Visibilidad Pan'
-        parents_day: 'Día de les Xadres Expansivo de Género'
+        parents_day: 'Día de les Xadres con expansión de Género'
         hiv_testing_day: 'Día Internacional de la Prueba del VIH'
         freedressing_day: 'Día de la Libertad de Vestimenta'
         sexual_health_day: 'Día de la Concientización sobre la Salud Sexual y Reproductiva'
@@ -1133,10 +1134,10 @@ calendar:
         masc_lesbian_week: 'Semana de Visibilidad y Concienca Lésbica Masculina'
         masc_lesbian_day: 'Dia de Visibilidad y Concienca Lésbica Masculina'
         trans_history_month: 'Mes de la Historia {/terminologia#transgender=Trans}' # TODO
-        transition_week: 'Transition Week' # TODO
-        bi_creators_day: 'Bisexual Creators Day' # TODO
+        transition_week: 'Semana de Transición'
+        bi_creators_day: 'Día de creadores bisexuales'
         wrath_month: 'Mes de la Ira'
-        lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
+        lesbian_aunts_day: 'Día de les tíes lesbianas'
     banner: 'Hoy celebramos'
     celebrating_custom: 'se celebra'
     celebrating_day: 'se celebra el'
