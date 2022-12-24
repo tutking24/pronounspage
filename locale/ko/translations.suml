@@ -194,16 +194,6 @@ terminology:
 faq:
     header: 'FAQ'
     headerLong: '자주 묻는 질문'
-        nonbinary:
-        how-to-know:
-        who-uses-it:
-        bio:
-        change:
-        get-used-to:
-        made-up:
-            answer:
-                - '내. 그렿죠. 모든 언어의 모든 단어들은 누군가가 지어넨 겁니다. 어떤 단어들는 다른 보다 더 오래 됬지만요.'
-
     questions:
         nonbinary:
             question: '넌바이너리가 뭐죠?'
