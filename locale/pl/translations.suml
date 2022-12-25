@@ -1402,7 +1402,16 @@ profile:
             duplicateDescription: 'Opishy muszą być unikalne'
             invalidOpinion: 'Wybrana ikona nie jest dostępna w legendzie powyżej'
         custom: 'dodane ręcznie:'
-
+        consistency: >
+            Oprócz domyślnych opcji opinii możesz też zdefiniować swoje własne.
+            Opcje, które istniały przed wprowadzeniem tej funkcji, muszą pozostać bez zmian, aby wizytówki były bardziej przewidywalne i spójne.
+            Jeśli ktosio zobaczy, powiedzmy, pogrubiony różowy tekst z ikonką serca,
+            będzie wiedzieć bez zaglądania do legendy, że chodzi o bardzo lubianą opcję.
+            Ale dodając własne opcje, możesz je dostosować, jak chcesz.
+            Nie planujemy wsparcia dla wybierania w pełni dowolnych kolorów,
+            ponieważ wybierając dostępne barwy ręcznie możemy zatroszczyć się o to,
+            by miały wystarczający kontrast, by odróżniały się od innych, i by miały wersję dla trybu nocnego –
+            – tak, aby wizytówki były czytelne i dostępne.
     header: 'Wizytówki'
     list: 'Twoje wizytówki'
     init: 'Stwórz wizytówkę'

@@ -675,7 +675,15 @@ profile:
             duplicateDescription: 'Description must be unique'
             invalidOpinion: 'Selected icon was not found in the legend above'
         custom: 'custom, added by the user:'
-
+        consistency: >
+            Next to the default opinion choices you can now specify your own.
+            Those that had already existed before we added customisation have to remain the same, to make cards more predictable and consistent.
+            Whoever stumbles across a card and sees, let’s say, a bold pink entry with a heart,
+            will know without checking the legend that it means an option that one likes very much.
+            Adding new opinions is customisable, though.
+            We're not planning to support fully customisable colours (like picking <em>just any</em> hex code)
+            because we'd rather hand-pick them to ensure they have enough contrast, distinguishability,
+            and a dark mode version – for the cards to be readable and accessible.
     header: 'Cards'
     list: 'Your cards'
     init: 'Create a card'
