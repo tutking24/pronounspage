@@ -11,6 +11,7 @@ module.exports = {
         return `${bd.getFullYear()}-${('0' + (bd.getMonth() + 1)).slice(-2)}-${('0' + bd.getDate()).slice(-2)}`;
     },
     parseDate(bd) {
+        if (typeof(bd) !== 'string') { return bd; }
         return new Date(
             parseInt(bd.substring(0, 4)),
             parseInt(bd.substring(5, 7)) - 1,
