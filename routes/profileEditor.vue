@@ -18,249 +18,247 @@
         </div>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
-            <div v-if="$isGranted()" class="border border-primary rounded p-4">
-                <h3 class="h4 mb-3">
+            <TabsNav :tabs="['opinions', 'names', 'pronouns', 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', $isGranted() ? 'admin' : undefined]"
+                     pills showheaders navclass="mb-3 border-bottom-0">
+                <template v-slot:admin-header>
                     <Icon v="user-cog"/>
                     Admin section
-                </h3>
+                </template>
+                <template v-slot:admin>
+                    <p class="small text-muted mb-0">
+                        This will be shown on the “Team” page.
+                        If you leave it empty, you won't show up there (for this language version).
+                        You can use a different display name in different language versions.
+                    </p>
 
-                <p class="small text-muted mb-0">
-                    This will be shown on the “Team” page.
-                    If you leave it empty, you won't show up there (for this language version).
-                    You can use a different display name in different language versions.
-                </p>
+                    <div class="form-group">
+                        <label for="teamName">Team page display name:</label>
+                        <input class="form-control" name="teamName" maxlength="64" v-model="teamName"/>
+                        <PropagateCheckbox field="teamName" :before="beforeChanges.teamName" :after="teamName" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                    </div>
 
-                <div class="form-group">
-                    <label for="teamName">Team page display name:</label>
-                    <input class="form-control" name="teamName" maxlength="64" v-model="teamName"/>
-                    <PropagateCheckbox field="teamName" :before="beforeChanges.teamName" :after="teamName" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                </div>
-
-                <hr/>
-
-                <p class="small text-muted mb-0">
-                    If you feel that you've contributed to this language version enough to get credited in the footer
-                    (not saying how much that is, that's on you to decide 😉),
-                    then add your name and areas here (in the local language!).
-                    The team as a whole will be credited in the footer either way.
-                </p>
-
-                <div class="form-group">
-                    <label for="footerName">Footer display name:</label>
-                    <input class="form-control" name="footerName" maxlength="64" v-model="footerName"/>
-                    <PropagateCheckbox field="footerName" :before="beforeChanges.footerName" :after="footerName" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                </div>
-
-                <div class="form-group">
-                    <label for="footerAreas">Areas responsible for / contributing to:</label>
-                    <ListInput v-model="footerAreas"/>
-                </div>
-
-                <template v-if="$te('contact.team.credentials')">
                     <hr/>
 
                     <p class="small text-muted mb-0">
-                        This will be displayed on the team page in the "Credentials" section.
-                        You might want to put here your full legal name here, but it's not required
-                        (you can leave this field empty).
+                        If you feel that you've contributed to this language version enough to get credited in the footer
+                        (not saying how much that is, that's on you to decide 😉),
+                        then add your name and areas here (in the local language!).
+                        The team as a whole will be credited in the footer either way.
                     </p>
 
                     <div class="form-group">
-                        <label for="credentials">Credentials:</label>
-                        <ListInput v-model="credentials"/>
+                        <label for="footerName">Footer display name:</label>
+                        <input class="form-control" name="footerName" maxlength="64" v-model="footerName"/>
+                        <PropagateCheckbox field="footerName" :before="beforeChanges.footerName" :after="footerName" v-if="otherProfiles > 0" @change="propagateChanged"/>
                     </div>
 
                     <div class="form-group">
-                        <label for="credentials">Credentials level:</label>
-                        <select v-model="credentialsLevel" class="form-select">
-                            <option :value="null"></option>
-                            <option :value="1">Higher education, but irrelevant field</option>
-                            <option :value="2">Bachelor (not completed yet)</option>
-                            <option :value="3">Bachelor</option>
-                            <option :value="4">Master (not completed yet)</option>
-                            <option :value="5">Master</option>
-                            <option :value="6">PhD (not completed yet)</option>
-                            <option :value="7">PhD</option>
-                        </select>
+                        <label for="footerAreas">Areas responsible for / contributing to:</label>
+                        <ListInput v-model="footerAreas"/>
                     </div>
 
-                    <div class="form-group">
-                        <label for="credentials">Name for credentials:</label>
-                        <input v-model="credentialsName" class="form-control" placeholder="(not required)"/>
-                    </div>
+                    <template v-if="$te('contact.team.credentials')">
+                        <hr/>
+
+                        <p class="small text-muted mb-0">
+                            This will be displayed on the team page in the "Credentials" section.
+                            You might want to put here your full legal name here, but it's not required
+                            (you can leave this field empty).
+                        </p>
+
+                        <div class="form-group">
+                            <label for="credentials">Credentials:</label>
+                            <ListInput v-model="credentials"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="credentials">Credentials level:</label>
+                            <select v-model="credentialsLevel" class="form-select">
+                                <option :value="null"></option>
+                                <option :value="1">Higher education, but irrelevant field</option>
+                                <option :value="2">Bachelor (not completed yet)</option>
+                                <option :value="3">Bachelor</option>
+                                <option :value="4">Master (not completed yet)</option>
+                                <option :value="5">Master</option>
+                                <option :value="6">PhD (not completed yet)</option>
+                                <option :value="7">PhD</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="credentials">Name for credentials:</label>
+                            <input v-model="credentialsName" class="form-control" placeholder="(not required)"/>
+                        </div>
+                    </template>
                 </template>
-            </div>
 
-            <section>
-                <h3 class="h4">
+                <template v-slot:opinions-header>
                     <Icon v="comment-smile"/>
                     <T>profile.opinions.header</T>
-                </h3>
-                <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
-                <LegendOpinionListInput v-model="opinions" :maxitems="5"/>
-            </section>
+                </template>
+                <template v-slot:opinions>
+                    <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
+                    <LegendOpinionListInput v-model="opinions" :maxitems="5"/>
+                    <AdPlaceholder phkey="main-0"/>
+                </template>
 
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:names-header>
                     <Icon v="signature"/>
                     <T>profile.names</T>
-                </h3>
-                <p v-if="$te('profile.namesInfo')" class="small text-muted">
-                    <T>profile.namesInfo</T>
-                </p>
-                <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128"/>
-                <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
-            </section>
+                </template>
+                <template v-slot:names>
+                    <p v-if="$te('profile.namesInfo')" class="small text-muted">
+                        <T>profile.namesInfo</T>
+                    </p>
+                    <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128"/>
+                    <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                    <AdPlaceholder phkey="main-1"/>
+                </template>
 
-            <AdPlaceholder phkey="main-0"/>
-
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:pronouns-header>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
-                </h3>
-                <div class="alert alert-info" v-if="$t('profile.pronounsInfo')">
-                    <p class="small mb-0">
-                        <Icon v="info-circle"/>
-                        <T>profile.pronounsInfo</T>
-                    </p>
-                </div>
-                <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions" :maxitems="128" :maxlength="192"/>
-            </section>
+                </template>
+                <template v-slot:pronouns>
+                    <div class="alert alert-info" v-if="$t('profile.pronounsInfo')">
+                        <p class="small mb-0">
+                            <Icon v="info-circle"/>
+                            <T>profile.pronounsInfo</T>
+                        </p>
+                    </div>
+                    <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions" :maxitems="128" :maxlength="192"/>
+                    <AdPlaceholder phkey="main-2"/>
+                </template>
 
-            <AdPlaceholder phkey="main-1"/>
-
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:description-header>
                     <Icon v="comment-edit"/>
                     <T>profile.description</T>
-                </h3>
-                <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
-            </section>
+                </template>
+                <template v-slot:description>
+                    <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
+                    <AdPlaceholder phkey="main-3"/>
+                </template>
 
-            <AdPlaceholder phkey="main-2"/>
-
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:flags-header>
                     <Icon v="flag"/>
                     <T>profile.flags</T>
-                </h3>
-                <p class="small text-muted mb-0">
-                    <T>profile.flagsInfo</T>
-                </p>
-                <ButtonList v-model="flags" :options="allFlags" v-slot="s">
-                    <Flag
-                        :name="s.desc.split('|')[0]"
-                        :alt="s.desc.split('|')[1]"
-                        :img="`/flags/${s.v}.png`"
-                        :asterisk="flagsAsterisk.includes(s.v)"
-                    />
-                </ButtonList>
-                <PropagateCheckbox field="flags" :before="beforeChanges.flags" :after="flags" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                </template>
+                <template v-slot:flags>
+                    <p class="small text-muted mb-0">
+                        <T>profile.flagsInfo</T>
+                    </p>
+                    <ButtonList v-model="flags" :options="allFlags" v-slot="s">
+                        <Flag
+                            :name="s.desc.split('|')[0]"
+                            :alt="s.desc.split('|')[1]"
+                            :img="`/flags/${s.v}.png`"
+                            :asterisk="flagsAsterisk.includes(s.v)"
+                        />
+                    </ButtonList>
+                    <PropagateCheckbox field="flags" :before="beforeChanges.flags" :after="flags" v-if="otherProfiles > 0" @change="propagateChanged"/>
 
-                <details class="form-group border rounded" :open="customFlags.length > 0">
-                    <summary class="px-3 py-2">
-                        <T>profile.flagsCustom</T>
-                    </summary>
-                    <div class="border-top">
-                        <ImageWidgetRich v-model="customFlags" sizes="flag" :maxitems="128"/>
-                    </div>
-                </details>
-                <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                <Answer question="flags" small/>
-            </section>
+                    <details class="form-group border rounded" :open="customFlags.length > 0">
+                        <summary class="px-3 py-2">
+                            <T>profile.flagsCustom</T>
+                        </summary>
+                        <div class="border-top">
+                            <ImageWidgetRich v-model="customFlags" sizes="flag" :maxitems="128"/>
+                        </div>
+                    </details>
+                    <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                    <Answer question="flags" small/>
+                    <AdPlaceholder phkey="main-4"/>
+                </template>
 
-            <AdPlaceholder phkey="main-3"/>
-
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:links-header>
                     <Icon v="link"/>
                     <T>profile.links</T>
-                </h3>
-                <ListInput v-model="links" v-slot="s" :maxitems="128">
-                    <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
-                </ListInput>
-                <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                <p class="small text-muted mb-0">
-                    <Icon v="ad"/>
-                    <T>profile.linksRecommended</T>
-                    <a v-for="provider in recommendedLinkProviders()" :href="provider.homepage" target="_blank" rel="noopener">
-                        <Icon :v="provider.icon" :set="provider.iconSet || 'l'"/>
-                        {{ provider.name }}
-                    </a>
-                    <T>profile.linksRecommendedAfter</T>
-                    😉
-                </p>
-                <p v-if="$te('profile.linksWarning')" class="small text-muted mt-2 mb-0">
-                    <Icon v="exclamation-triangle"/>
-                    <T>profile.linksWarning</T>
-                </p>
-            </section>
+                </template>
+                <template v-slot:links>
+                    <ListInput v-model="links" v-slot="s" :maxitems="128">
+                        <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
+                    </ListInput>
+                    <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                    <p class="small text-muted mb-0">
+                        <Icon v="ad"/>
+                        <T>profile.linksRecommended</T>
+                        <a v-for="provider in recommendedLinkProviders()" :href="provider.homepage" target="_blank" rel="noopener">
+                            <Icon :v="provider.icon" :set="provider.iconSet || 'l'"/>
+                            {{ provider.name }}
+                        </a>
+                        <T>profile.linksRecommendedAfter</T>
+                        😉
+                    </p>
+                    <p v-if="$te('profile.linksWarning')" class="small text-muted mt-2 mb-0">
+                        <Icon v="exclamation-triangle"/>
+                        <T>profile.linksWarning</T>
+                    </p>
+                    <AdPlaceholder phkey="main-5"/>
+                </template>
 
-            <AdPlaceholder phkey="main-4"/>
-
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:birthday-header>
                     <Icon v="birthday-cake"/>
                     <T>profile.birthday</T>
+                </template>
+                <template v-slot:birthday>
+                    <p class="small text-muted">
+                        <T>profile.birthdayInfo</T>
+                    </p>
+                    <div class="input-group mb-3">
+                        <datepicker v-model="birthday" inline :disabled-dates="disabledDates" :open-date="disabledDates.from" :initial-view="birthday !== null ? 'day' : 'year'"/>
+                    </div>
+                    <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
                     <button type="button" class="btn btn-outline-danger btn-sm" v-if="birthday !== null" @click="birthday = null">
                         <Icon v="times"/>
                         <T>crud.remove</T>
                     </button>
-                </h3>
-                <p class="small text-muted">
-                    <T>profile.birthdayInfo</T>
-                </p>
-                <div class="input-group mb-3">
-                    <datepicker v-model="birthday" inline :disabled-dates="disabledDates" :open-date="disabledDates.from" :initial-view="birthday !== null ? 'day' : 'year'"/>
-                </div>
-                <PropagateCheckbox field="birthday" :before="beforeChanges.birthday" :after="birthday" v-if="otherProfiles > 0" @change="propagateChanged"/>
-            </section>
+                    <AdPlaceholder phkey="main-6"/>
+                </template>
 
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:timezone-header>
                     <Icon v="clock"/>
                     <T>profile.timezone.header</T>
-                </h3>
-                <p class="small text-muted">
-                    <T>profile.timezone.info</T>
-                </p>
-                <TimezoneSelect v-model="timezone"/>
-                <PropagateCheckbox field="timezone" :before="beforeChanges.timezone" :after="timezone" v-if="otherProfiles > 0" @change="propagateChanged"/>
-            </section>
+                </template>
+                <template v-slot:timezone>
+                    <p class="small text-muted">
+                        <T>profile.timezone.info</T>
+                    </p>
+                    <TimezoneSelect v-model="timezone"/>
+                    <PropagateCheckbox field="timezone" :before="beforeChanges.timezone" :after="timezone" v-if="otherProfiles > 0" @change="propagateChanged"/>
+                    <AdPlaceholder phkey="main-0"/>
+                </template>
 
-            <AdPlaceholder phkey="main-5"/>
-
-            <section class="form-group">
-                <div class="h4 d-flex justify-content-between">
-                    <h3 class="h4">
-                        <Icon v="scroll-old"/>
-                        <T>profile.words</T>
-                    </h3>
+                <template v-slot:words-header>
+                    <Icon v="scroll-old"/>
+                    <T>profile.words</T>
+                </template>
+                <template v-slot:words>
+                    <template v-for="i in [0, 1, 2, 3]">
+                        <h4 class="h5">
+                            <T>profile.column</T> {{i + 1}}
+                        </h4>
+                        <input v-model="words[i].header" class="form-control form-control-sm mb-2" :placeholder="$t('profile.wordsColumnHeader')" maxlength="36"/>
+                        <OpinionListInput v-model="words[i].values" group="words" :customOpinions="opinions" :maxitems="128"/>
+                    </template>
                     <button type="button" class="btn btn-outline-warning btn-sm" @click.prevent="resetWords">
                         <T>profile.editor.defaults</T>
                     </button>
-                </div>
-                <template v-for="i in [0, 1, 2, 3]">
-                    <h4 class="h5">
-                        <T>profile.column</T> {{i + 1}}
-                    </h4>
-                    <input v-model="words[i].header" class="form-control form-control-sm mb-2" :placeholder="$t('profile.wordsColumnHeader')" maxlength="36"/>
-                    <OpinionListInput v-model="words[i].values" group="words" :customOpinions="opinions" :maxitems="128"/>
+                    <AdPlaceholder phkey="main-1"/>
                 </template>
-            </section>
 
-            <section class="form-group">
-                <h3 class="h4">
+                <template v-slot:circle-header>
                     <Icon v="heart-circle"/>
                     <T>profile.circles.header</T>
-                </h3>
-                <p class="small text-muted">
-                    <T>profile.circles.info</T>
-                </p>
+                </template>
+                <template v-slot:circle>
+                    <p class="small text-muted">
+                        <T>profile.circles.info</T>
+                    </p>
 
-                <CircleListInput v-model="circle" :maxitems="16"/>
-            </section>
+                    <CircleListInput v-model="circle" :maxitems="16"/>
+                    <AdPlaceholder phkey="main-2"/>
+                </template>
+            </TabsNav>
 
             <section>
                 <button class="btn btn-primary w-100" type="submit">
