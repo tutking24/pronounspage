@@ -609,8 +609,7 @@ profile:
             Freunde/Follower-Liste</strong>, deshalb ist die Länge dieses Felds ziemlich begrenzt. Denke daran, dass
             Personen, die du hier markierst, <strong>dies sehen können</strong> – und dich möglicherweise wegen
             Belästigung melden, wenn dj sich entscheidest, negative Dinge über sie zu schreiben. Wenn eine Verbindung in
-            Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet. Auf {/account=deiner
-            Accountübersicht} kannst du dann auch sehen, wer dich erwähnt hat.
+            Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet.
     timezone:
         time: 'Es ist %time% an einem %weekday% in meiner Zeitzone.'
         areas:

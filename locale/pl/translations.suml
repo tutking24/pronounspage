@@ -1443,7 +1443,6 @@ profile:
             Pamiętaj, że osoby, które oznaczysz <strong>będą to widziały</strong>
             – i mogą zgłosić Cię za nękanie jeśli umieścisz tu negatywne rzeczy na ich temat.
             Jeśli macie siebie nawzajem w swoich kręgach, zostanie to oznaczone symbolem [s:shield-check].
-            Na {/konto=stronie swojego konta} możesz zobaczyć, kto Cię oznaczyło w swoich kręgach.
         relationship: 'Relacja (np. „partnerze”, „najlepsza przyjaciółka”)'
         mutual: 'Połączenie wzajemne'
         yourMentions:

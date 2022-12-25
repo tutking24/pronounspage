@@ -554,8 +554,7 @@ profile:
             social, isso <strong>não é uma lista de amigos/seguidores</strong>, e é por isso que o tamanho da lista é bem
             limitado. Tenha em mente que as pessoas que você marcar aqui <strong>poderão ver isso</strong> – e talvez te
             reportarem por assédio caso você decida colocar informações negativas sobre elas. Se a conexão em seu círculo
-            é mútua, ela será marcada com [s:shield-check]. Você pode ver quem te mencionou na {/account=página de sua
-            conta}.
+            é mútua, ela será marcada com [s:shield-check].
         yourMentions:
             header: 'Suas menções de círculos'
             description: >

@@ -783,8 +783,7 @@ profile:
             acesta <strong>nu este o listă de urmăritori/prieteni</strong>, de aceea lungimea listei acesteia este destul
             de limitată. Ține minte că persoanele pe care le menționezi <strong>vor putea vedea acest lucru</strong> – și
             te-ar putea raporta pentru hărțuire, dacă decizi să spui lucruri negative despre dânșii. Dacă o conexiune în
-            cercul tău este reciprocă, va fi marcată cu [s:shield-check]. Poți vedea cine te-a menționat pe {/cont=pagina
-            contului tău}.
+            cercul tău este reciprocă, va fi marcată cu [s:shield-check].
         relationship: 'Relație (ex: „partener”, „cea mai bună prietenă”)'
         mutual: 'Conexiunea aceasta este reciprocă'
         yourMentions:

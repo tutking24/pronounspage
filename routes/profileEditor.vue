@@ -256,6 +256,9 @@
                     </p>
 
                     <CircleListInput v-model="circle" :maxitems="16"/>
+
+                    <CircleMentions/>
+
                     <AdPlaceholder phkey="main-2"/>
                 </template>
             </TabsNav>

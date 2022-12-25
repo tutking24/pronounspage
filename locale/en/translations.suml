@@ -834,7 +834,6 @@ profile:
             Keep in mind that people that you tag here <strong>will be able to see that</strong>
             – and might report you for harassment, if you decide to put in negative things about them.
             If a connection in your circle is mutual, it will be marked with [s:shield-check].
-            You can see who mentioned you on {/account=your account page}.
         relationship: 'Relationship (eg. “partner”, “best friend”)'
         mutual: 'This connection goes both ways'
         yourMentions:
