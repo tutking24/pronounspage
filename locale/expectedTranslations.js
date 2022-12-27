@@ -103,5 +103,4 @@ export default [
     'profile.timezone.areas.Europe',
     'profile.timezone.areas.Indian',
     'profile.timezone.areas.Pacific',
-    'profile.opinions.consistency',
 ];

@@ -492,6 +492,33 @@ faq:
                     or people who want to have a separate cards for more public use and for close friends.
                     Unfortunately, this feature requires <em>tons</em> of changes in the code as well as testing.
                     We'll try to prioritise it, but being swamped with other work, we can't really promise any specific date.
+        customise-opinions:
+            question: 'Can I customise the “legend/opinions” field even more?'
+            answer:
+                - >
+                    Next to the default opinion choices (like “Yes”, “Jokingly”, “Nope”) you can now specify your own.
+                    Those that had already existed before we added customisation have to remain the same, to make cards more predictable and consistent.
+                    Whoever stumbles across a card and sees, let’s say, a bold pink entry with a heart,
+                    will know without checking the legend that it means an option that one likes very much.
+                    Adding new opinions is customisable, though.
+                - >
+                    We're not planning to support fully customisable colours (like picking <em>just any</em> hex code)
+                    because we'd rather hand-pick them to ensure they have enough contrast, distinguishability,
+                    and a dark mode version – for the cards to be readable and accessible.
+        deletion-bug:
+            question: 'When I click a “delete” button nothing happens'
+            answer:
+                - >
+                    Some buttons on our website, mostly related to removing things that aren't easy to restore,
+                    show a modal window asking “are you sure you want to do XYZ?”.
+                    We're aware that some browser extensions mistakenly think
+                    that this modal window is a cookie popup or an ad and just hide it.
+                - >
+                    We're trying to be very explicit in our HTML markup which elements are which,
+                    so that such extensions have an easier time distinguishing them,
+                    but it's very difficult to accommodate all possible extensions.
+                - >
+                    Before you report an issue, please check if disabling such extensions fixes your problem.
 
 links:
     header: 'References'
@@ -786,15 +813,6 @@ profile:
             invalidOpinion: 'Selected icon was not found in the legend above'
             kys: 'Our Terms of Service forbid encouraging self-harm and/or suicide.'
         custom: 'custom, added by the user:'
-        consistency: >
-            Next to the default opinion choices you can now specify your own.
-            Those that had already existed before we added customisation have to remain the same, to make cards more predictable and consistent.
-            Whoever stumbles across a card and sees, let’s say, a bold pink entry with a heart,
-            will know without checking the legend that it means an option that one likes very much.
-            Adding new opinions is customisable, though.
-            We're not planning to support fully customisable colours (like picking <em>just any</em> hex code)
-            because we'd rather hand-pick them to ensure they have enough contrast, distinguishability,
-            and a dark mode version – for the cards to be readable and accessible.
     expendableList:
         more: '… and %count% more items'
         show: '(click to show)'

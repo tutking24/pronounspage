@@ -100,9 +100,6 @@
                     <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
                     <LegendOpinionListInput v-model="opinions" :maxitems="5"/>
                     <AdPlaceholder phkey="main-0"/>
-                    <p class="text-muted small">
-                        <T>profile.opinions.consistency</T>
-                    </p>
                 </template>
 
                 <template v-slot:names-header>
