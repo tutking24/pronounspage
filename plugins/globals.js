@@ -59,7 +59,12 @@ export default ({ app, store }) => {
         return promise;
     };
 
-    Settings.defaultLocale = config.locale;
+    try {
+        Settings.defaultLocale = config.locale;
+        DateTime.now().toFormat('y-MM-dd HH:mm'); // test if locale is supported by luxon
+    } catch {
+        Settings.defaultLocale = 'en';
+    }
 
     Vue.prototype.$datetime = (timestamp) => {
         const dt = DateTime.fromSeconds(timestamp);
