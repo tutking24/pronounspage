@@ -492,8 +492,10 @@ profile:
     pronouns: '三人称代名詞'
     pronounsInfo: '三人称代名詞（例えば「あの人」）かリンク（例えば「https://ja.pronouns.page/彼」）を入力してください。'
     pronounsNotFound: '無効なフォーマット。上に手順を参照してください。'
+    circles:
+        header: '私の仲間'
     words: '言葉'
-    birthday: '生年月日'
+    birthday: '年齢'
     birthdayInfo: 'なお、生年月日は公開されません。年齢のみが公開されます。'
     flags: '旗'
     flagsInfo: 'このフレームにあなたのプライドフラッグをドラッグ&ドロップします'
@@ -503,7 +505,21 @@ profile:
     links: 'リンク'
     linksRecommended: ''
     linksRecommendedAfter: 'にリンクすることをお勧めします。'
-    # TODO　CHECK-NEEDED
+    timezone:
+        areas:
+            Europe: 'ヨーロッパ'
+            Africa: 'アフリカ'
+            America: 'アメリカ'
+            Antarctica: '南極'
+            Arctic: '北極'
+            Asia: 'アジア'
+            Atlantic: 'アトランティック'
+            Australia: 'オーストラリア'
+            Indian: 'インド'
+            Pacific: 'パシフィック'
+        time: '私のタイムゾーンでは%weekday%の%time%です'
+        approximate: 'おおよその位置です'
+        header: 'タイムゾーン'
     verifiedLinks:
         header: '認証をされたリンク'
         info: >
