@@ -602,6 +602,11 @@ profile:
         header: 'Sprache'
         description: 'Die Visitenkarte von @%username% ist auch in den folgenden Sprachen verfügbar'
     circles:
+        yourMentions:
+            header: 'My circle Erwähnungen'
+            description: >
+                Hier ist die Liste der Personen, die du zu deinen Kreisen hinzugefügt hast. Wenn sie sich auch auf ihrer
+                Karte hinzufügen, erscheint ein Häkchen [s:shield-check] in euren beiden Karten.
         info: >
             In diesem Feld kannst du die <strong>Personen, die dir am nächsten sind</strong> per Usertag markieren,
             zusammen mit Informationen, mit welchen (nicht-)geschlechtsspezifischen/-neutrale Wörtern du dich auf sie beziehst
@@ -611,7 +616,13 @@ profile:
             Belästigung melden, wenn dj sich entscheidest, negative Dinge über sie zu schreiben. Wenn eine Verbindung in
             Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet.
     timezone:
+        header: 'Zeitzone'
+        detect: 'Erkennen'
         time: 'Es ist %time% an einem %weekday% in meiner Zeitzone.'
+        info: >
+            Wenn du dieses Feld ausfüllst, teilt deine Karte den Leuten mit, <strong>wie spät es an Ihrem Wohnort
+            ist</strong>. Optional kannst du auch deinen ungefähren Standort veröffentlichen.
+    flagsInfo: 'Ziehe deine Prideflaggen per drag & drop in diesen Rahmen.'
         areas:
             Europe: 'Europa'
         approximate: 'Es ist nur ein ungefährer Standort'
@@ -675,6 +686,11 @@ terms:
     header: 'Nutzungsbedingungen'
     lastUpdate: 'Zuletzt aktualisiert'
     consent: 'Mit der Registrierung akzeptierst du die {/terms=Nutzungsbedingungen}.'
+    update:
+        header: 'Wir haben unsere Nutzungsbedingungen aktualisiert.'
+        intro: >
+            Hi! Die folgenden Änderungen bei unseren {https://en.pronouns.page/terms=Nutzungsbedingungen} treten am 1.
+            Januar 2023 in Kraft:
 
 privacy:
     header: 'Datenschutzbestimmung'
