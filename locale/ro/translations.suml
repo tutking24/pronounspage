@@ -48,9 +48,8 @@ home:
         header: 'Misiunea noastră'
         summary: 'Noi luptăm pentru libertate, respect și incluziune în limbaj.'
         freedom: >
-            <strong>Libertate</strong>
-            – pentru ca oricine să poată folosi <em>pentru ei înșiși</em>
-            orice pronume simt că îi descriu cel mai bine.
+            <strong>Libertate</strong> – pentru ca oricine să-și poată folosi <em>pentru ei înșiși</em> orice pronume
+            simt că îi descriu cel mai bine.
         respect: >
             <strong>Respect</strong>
             – pentru ca pronumele <em>altora</em> să fie respectate.
@@ -118,7 +117,7 @@ sources:
         another: 'Trimite încă o sugestie.'
         moderation: 'Sugestiile vor trebui să fie aprobate înainte de a fi publicate.'
         key: 'Cheie'
-        keyInfo: 'Identificator pentru a insera link-uri din alte surse din variante în alte limbi, cu exemplu din dicționar'
+        keyInfo: 'Identificator pentru a lega diferite variante lingvistice al exemplului din dicționar'
         images: 'Imagini'
         spoiler: 'Spoiler'
     otherVersions: 'În alte limbi'
@@ -152,11 +151,11 @@ nouns:
     empty: 'Niciun cuvânt nu a fost găsit potrivit criteriilor date'
 
     submit:
-        action: 'Trimite'
+        action: 'Adaugă'
         actionLong: 'Trimite un cuvânt'
         thanks: 'Mulțumim pentru contribuție!'
         another: 'Trimite încă unul'
-        moderation: 'Contribuțiile trebuie să fie aprobate înainte de a fi publicate.'
+        moderation: 'Contribuțiile vor trebui să fie aprobate înainte de a deveni publice.'
 
     template: 'Folosește un șablon'
     root: 'Rădăcină' # or „Radical”
@@ -181,13 +180,16 @@ community:
 
 terminology:
     header: 'Terminologie'
-    headerLong: 'Dicționarul despre terminologia queer'
+    headerLong: 'Dicționarul cu terminologia queer'
     info:
         - >
-            Majoritatea termenilor și frazelor legate de comunitatea LGBTQ+
-            sunt folosite ca inserții englezești în textele românești.
-            Am dori să prezentăm un glosar al acestor termeni, să descriem sensul lor,
-            și să propunem traducerile românești ale lor.
+            Majoritatea termenilor și frazelor legate de comunitatea LGBTQ+ sunt folosite ca inserții englezești în
+            textele românești. Am dori să prezentăm un glosar al acestor termeni, să descriem sensul lor, și să propunem
+            traducerile românești ale lor.
+        - >
+            Ține minte că aceste etichete de identitate sunt subiective. Acest dicționar este un efort colectiv de a găsi
+            cele mai acceptate definiții ale termenilor queer, dar nu ar trebui tratat ca vreo autoritate. Singurul lucru
+            ce are dreptul de a corecta identitatea cuiva este... persoana respectivă.
     term: 'Termen'
     original: 'Etimologie'
     category: 'Categorie'
@@ -232,73 +234,81 @@ faq:
             question: 'Ce este termenul „non-binar”?'
             answer:
                 - >
-                    Genul este mult mai complicat decât o simplă diferență între bărbat și femeie.
-                    Chiar și dintr-un punct de vedere biologic, putem diferenția sexul cromozomial,
-                    sexul genetic, sexul hormonal, sexul fenotipic…
-                    Ele nu sunt necesar egale între ele și nu trebuie să fie binare.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mai multe informații (în limba Engleză) aici)}.
-                    Și când ajungem la aspectul cultural, „genul” este o construcție socială.
-                    În funcție de timp și locație, a fi „o femeie” sau „un bărbat” poate însemna a avea diferite
-                    drepturi, sarcini, norme… În europa, bărbații purtau tocuri și ciorapi,
-                    și persoanele native din America de Nord au recunoscut al treilea gen pentru secole
-                    {https://gender.wikia.org/wiki/Two-Spirit=(două-spirite)} etc. etc.
+                    Genul este mult mai complicat decât o simplă diferență între bărbat și femeie. Chiar și dintr-un
+                    punct de vedere biologic, putem diferenția sexul cromozomial, genetic, hormonal, fenotipic… Ele nu
+                    sunt întotdeauna egale între ele și nu trebuie să fie binare.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(mai multe informații (în lb. Engleză)
+                    aici)}. Și când ajungem la aspectul cultural, „genul” este o construcție socială. În funcție de timp
+                    și locație, a fi „o femeie” sau „un bărbat” poate însemna a avea diferite drepturi, sarcini, norme…
+                    În europa, bărbații purtau tocuri și ciorapi, și persoanele native din America de Nord au recunoscut
+                    al treilea gen pentru secole {https://gender.wikia.org/wiki/Two-Spirit=(două-spirite)} etc. etc.
                 - >
-                    Termenul non-binar este un termen-umbrelă ce descrie identitatea oamenilor
-                    care nu intru în diferențierea binară bărbat/femeie.
-                    El include persoanele ce sunt
-                    {https://gender.wikia.org/wiki/Agender=agen},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
+                    Termenul non-binar este un termen-umbrelă ce descrie identitatea oamenilor care nu intru în
+                    diferențierea binară bărbat/femeie. El include persoanele ce sunt
+                    {https://gender.wikia.org/wiki/Agender=agen}, {https://gender.wikia.org/wiki/Gender_Fluid=gen fluid},
                     {https://gender.wikia.org/wiki/Demigirl=demi-fete},
-                    {https://gender.wikia.org/wiki/Demiboy=demi-băieți},
-                    și {https://gender.wikia.org/wiki/Non-binary=multe multe altele}.
+                    {https://gender.wikia.org/wiki/Demiboy=demi-băieți}, și
+                    {https://gender.wikia.org/wiki/Non-binary=multe altele}.
                 - >
-                    Termenul non-binar nu este chiar ceva „între” masculinitate și feminitate. Mai de grabă „după”.
-                    Persoanele non-binare nu trebuie să fie androgine, nu trebuie să folosească pronume neutre etc.
-                    Este vorba despre a fi liber de genuri, nu despre a crea altele.
+                    Termenul non-binar nu este chiar ceva „între” masculinitate și feminitate, mai de grabă „după”.
+                    Persoanele non-binare nu trebuie să fie androgine, nu trebuie să folosească pronume neutre etc. Este
+                    vorba despre a fi liber de genuri, nu despre a crea altele.
         why-respect:
             question: 'De ce ar trebui să respect unele pronume <em>ciudate</em>?'
             answer:
-                - >
-                    Pentru că adresarea persoanelor în felul în care vor să fie adresate este baza relațiilor sociale.
-                    Nu ai striga-o pe Ana „Ștefania”, nu ai lăsa „domnule”/„doamnă” când te-ai adresa șefului tău etc.
-                    Și sunt unele persoane ce nu vor să fie referite nici ca „{/el=el}” și nici ca „{/ea=ea}”.
-                    Dacă nu accepți asta, te pune pe <em>tine</em> într-un statut rău.
-                - >
-                    „Pronumele ciudate” sunt doar o chestiune cu care trebuie să te obișnuiești.
+               - >
+                    Pentru că adresarea persoanelor în felul în care vor să fie adresate este baza relațiilor sociale. Nu
+                    ai striga-o pe Ana „Ștefania”, nu ai lăsa „domnule” când te-ai adresa șefului tău etc. Și există
+                    unele persoane ce nu vor să fie referite nici ca „{/el=el}” și nici ca „{/ea=ea}”. Dacă nu accepți
+                    asta, te pune pe <em>tine</em> într-un statut rău.
+                - '„Pronumele ciudate” sunt doar o chestiune cu care trebuie să te obișnuiești.'
         made-up:
             question: 'Pronumele astea sunt făcute!' # „acestea” could also be used. replace „făcute” with „false”?
             answer:
                 - >
-                    Da. Chiar sunt. La fel ca orice alt cuvânt din fiecare limbă.
-                    Unele cuvinte sunt doar mai vechi ca altele.
+                    Da. Chiar sunt. La fel ca orice alt cuvânt din orice altă limbă. Unele cuvinte sunt doar mai vechi ca
+                    altele.
         how-to-know:
             question: 'Cum aflu cum să mă adresez cuiva?' # rephrasing? maybe replacing „aflu” with „știu” to keep it closer to its english version
             answer:
                 - >
-                    Poți întreba! Da, poate fi un pic jenant, dar cu cât o facem mai mult, cu atât devine mai puțin jenant.
-                    Dacă putem întreba pe cineva de numele său, de ce nu și pronumele?
+                    Poți întreba! Da, poate fi un pic jenant, dar cu cât o facem mai mult, cu atât devine mai ușor. Dacă
+                    putem întreba pe cineva de numele său, de ce nu și pronumele?
                 - >
-                    (Doar, te rugăm, nu pune întrebarea ca „ești băiat sau fată?”.
-                    Întrebarea asta impune că sunt doar două răspunsuri corecte,
-                    și sugerează curiozitate nesănătoasă despre genitalele cuiva.
-                    În schimb, ai putea întreba „care sunt pronumele tale?” sau „cum ar trebui să mă refer la tine?”)
+                    (Doar, te rugăm, nu pune întrebarea ca „ești băiat sau fată?”. Întrebarea asta impune că sunt doar
+                    două răspunsuri corecte și sugerează curiozitate nesănătoasă despre genitalele cuiva. În schimb, ai
+                    putea întreba „care îți sunt pronumele?” sau „cum ar trebui să mă refer la tine?”)
                 - >
-                    Este important și să normalizăm spunerea pronumelor când ne introducem cuiva.
-                    „Bună, sunt Mihai, {/el=el/lui}”. Nu-i așa de greu - dar pentru persoanele trans și non-binare înseamnă foarte mult!
-                    E și mai ușor online: doar pune pronumele tale (sau un link la exemple de pe website-ul nostru) în biografia ta.
+                    Este important și să normalizăm spunerea pronumelor în introducerea noastră. „Bună, sunt Mihai,
+                    {/el=el/lui}”. Nu-i așa de greu - dar pentru persoanele trans și non-binare înseamnă foarte mult! E
+                    și mai ușor online: doar pune-ți pronumele tale (sau un link către exemplele de pe website-ul nostru)
+                    în biografia ta.
                 - >
-                    Ține minte că multe persoane pot folosi un nume diferit și un set de pronume diferite în funcție de situație.
-                    Poate nu sunt încă {/terminologie#coming out=„ieșiți”} la prieteni sau la colegii de muncă, dar poate sunt mai comfortabili în jurul prietenilor trăind adevărul lor.
-                    Gândește-te bine. Poate ar trebui să îi întrebi „ce pronume ar trebui să folosesc în fața șefului tău?” etc.
+                    Ține minte că multe persoane pot folosi un nume diferit și un set de pronume diferit în funcție de
+                    situație. Poate nu sunt încă {/terminologie#coming out=„ieșiți”} la prieteni sau la colegii de muncă,
+                    dar poate sunt mai comfortabili în jurul prietenilor trăind adevărul lor. Gândește-te bine, poate ar
+                    trebui să îi întrebi „ce pronume ar trebui să-ți folosesc în fața șefului tău?” etc.
                 - >
-                    Unele persoane dau mai multe pronume, ex: „{/el&ea=el/ea}” sau „{/ei&el=ei/el}”.
-                    Asta înseamnă că le plac toate formele acestea. De obicei, primul este cel preferat.
+                    Unele persoane dau mai multe pronume, ex: „{/el&ea=el/ea}” sau „{/ei&el=ei/el}”. Asta înseamnă că le
+                    plac toate formele acestea. De obicei, primul este cel preferat.
         who-uses-it:
-            question: 'Măcar folosește cineva asta?'
+            question: 'Măcar folosește cineva pronumele astea?'
             answer:
                 - >
-                    Da! Milioane de persoane non-binare peste tot în lume.
-                    Fiecare pronume listat aici are pe cineva care chiar îl folosește în viața de zi cu zi.
+                    Limbajul nu este vreo magie antică, pusă în piatră, dată de Dumnezeu. E doar un lucru pe care îl
+                    folosim pentru a comunica. Când îl schimbăm ca o societate, și când lumea din jurul nostru se
+                    schimbă, ajustăm limbajul pe care îl folosim pentru a putea descrie mai bine. Noi suntem utilizatorii
+                    ei, deci <em>noi suntem autoritatea</em>
+                - >
+                    Dicționarele nu se grăbesc să adauge aceste schimbări, dar asta nu înseamnă că schimbările respective
+                    sunt false în vreun fel. Dar eventual formele noi, dacă folosite destul de des, vor fi incluse în
+                    dicționare. De exemplu,
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster} acceptă
+                    folosința lui {https://en.pronouns.page/they=„they” la singular} ca un pronume non-binar în limba
+                    Engleză
+                - >
+                    Poți citi câteva {https://scholar.google.com/scholar?hl=en&q=neopronouns=lucrări academice} despre
+                    neo-pronume în lb. Engleză.
         authority:
             question: 'Sunt aceste pronume non-binare aprobate de vreo autoritate?' # rephrasing?
             answer:
@@ -321,50 +331,47 @@ faq:
             question: 'De ce mi-aș pune pronumele în biografie pe rețelele de socializare?'
             answer:
                 - >
-                    Dacă ești cis (= nu trans) și folosești „{/el=el}” sau „{/ea=ea}” potrivit genului tău,
-                    ai crede că pronumele tale sunt <em>evidente</em>.
-                    Și da, poate e adevărat - cât timp numele tău e menționat în profil (și e tradițional masculin sau feminin)
-                    sau dacă ai o poză cu tine ca avatar.
-                    Majoritatea oamenilor nu au - deci e greu să ghicești cum doresc să fie chemați.
+                    Dacă ești cis (= nu trans) și folosești „{/el=el}” sau „{/ea=ea}” potrivit genului tău, ai crede că
+                    pronumele tale sunt <em>evidente</em>. Și da, poate e adevărat - cât timp numele tău e menționat în
+                    profil (și e tradițional masculin sau feminin) sau dacă ai o poză cu tine ca avatar. Majoritatea
+                    oamenilor nu au - deci e greu să ghicești cum doresc să fie chemați.
                 - >
-                    Dar de obicei e mai mult de-atât: pronumele tale pot fi „evidente”,
-                    dar există oameni ale căror pronume nu sunt.
-                    Ei vor să fie adresați corect, chiar și dacă nu „trec” drept genul lor,
-                    chiar și dacă nu sunt tranziționați (sau chiar dacă nu vor să se tranziționeze în general).
-                    Persoanele non-binare de obicei „nu arată non-binar”, nu cerem nimănui androginie.
+                    Dar de obicei e mai mult de-atât: pronumele tale pot fi „evidente”, dar există oameni ale căror
+                    pronume nu sunt. Ei vor să fie adresați corect, chiar și dacă nu „trec” drept genul lor, chiar și
+                    dacă nu sunt tranziționați (sau chiar dacă nu vor să se tranziționeze în general). Persoanele
+                    non-binare de obicei „nu arată non-binar”, nu cerem nimănui androginie.
                 - >
-                    Distribuirea pronumelor noastre e foarte importantă pentru persoanele trans, non-binare sau non-conformate de gen.
-                    Din păcate, asta ne evidențiază.
-                    Dar dacă și persoanele cis fac la fel, înseamnă foarte mult pentru noi.
-                    Ne face să ne simțim mai comfortabili, siguri și bine veniți
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mai multe motive (în limba Engleză) aici).}
+                    Distribuirea pronumelor noastre e foarte importantă pentru persoanele trans, non-binare sau
+                    non-conformate de gen. Din păcate, asta ne evidențiază. Dar dacă și persoanele cis fac la fel,
+                    înseamnă foarte mult pentru noi. Ne face să ne simțim mai comfortabili, siguri și bine veniți
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(mai multe motive (în lb.
+                    Engleză) aici).}
         change:
             question: 'Îmi pot schimba pronumele?'
             answer:
                 - >
-                    Normal! Nimeni nu trebuie să fie surpins când cineva își schimbă viziunile, stilul, hobby-urile…
-                    Deci de ce ar fi ciudat că cineva a descoperit o parte a identității sale,
-                    a început să nu-i mai placă numele său, a descoperit o etichetă care se potrivește bine etc.?
+                    Normal! Nimeni nu trebuie să fie surpins când cineva își schimbă viziunile, stilul de viață,
+                    hobby-urile… Deci, de ce ar fi ciudat că cineva și-a descoperit o nouă parte a identității sale, a
+                    început să nu-i mai placă numele său, a descoperit o nouă etichetă care i se potrivește bine etc.?
         get-used-to:
             question: 'E ciudat că nu mă pot obișnui cu <em>noile mele</em> pronume?'
             answer:
                 - >
-                    Chiar deloc! După atâția ani în care ai folosit pronumele egale cu cele de la genul atribuit la naștere
-                    e greu să te adaptezi la cele noi.
+                    Chiar deloc! După atâția ani în care ai folosit pronumele egale cu cele ale genului atribuit la
+                    naștere e greu să te adaptezi la cele noi.
                 - >
-                    Pronumele ≠ genul.
-                    Genul tău nu se va schimba drastic doar din cauza că ai devenit confuz când cineva te-a strigat „ei”.
-                    Nu-ți face griji. Experimentează. Vezi ce ți se potrivește cel mai bine.
+                    Pronumele ≠ genul. Genul tău nu se va schimba drastic doar din cauza că ai devenit confuz când cineva
+                    te-a strigat „ei”. Nu-ți face griji, experimentează. Vezi ce ți se potrivește cel mai bine.
         preferred-pronouns:
             question: 'De ce n-aș putea spune „pronume preferate”?'
             answer:
                 - >
-                    Pentru că fraza asta sugerează că pronumele cuiva sunt doar o fiță.
-                    Dacă cineva doar „preferă” să fie strigată „ea”, nu s-ar simți _foarte_ rău dacă o strigăm „el”, nu?
-                    Arată a bărbat până la urmă, deci va fi mai ușor pentru mine!
+                    Pentru că fraza asta sugerează că pronumele cuiva sunt doar o fiță. Dacă cineva doar „preferă” să fie
+                    strigată „ea”, nu s-ar simți <em>foarte</em> rău dacă o strigăm „el”, nu? Arată a bărbat până la
+                    urmă, deci îmi va fi mai ușor!
                 - >
-                    Nu! Sunt pronumele noastre. Nu „pronumele noastre preferate”. Sunt numele nostru, nu „numele nostru preferat”.
-                    Dacă îți pasă de prietenii tăi trans, non-binari și de cei dragi, adresează-te corect.
+                    Nu! Sunt pronumele noastre. Nu „pronumele noastre preferate”. Sunt numele nostru, nu „numele nostru
+                    preferat”. Dacă îți pasă de prietenii tăi trans, non-binari și de cei dragi, adresează-te corect.
         gender-pronouns:
             question: 'De ce n-aș putea spune „pronumele genului”?'
             answer:
@@ -415,38 +422,36 @@ faq:
             question: 'E posibil ca cineva să-mi caute cardul?'
             answer:
                 - >
-                    Nu publicăm nicio listă de nume de utilizator prin care cineva ar putea căuta sau deschide unu câte unu.
-                    Oamenii ar trebui să-ți știe numele de utilizator doar dacă le dai un link către cardul tău (sau dacă au ghicit).
+                    Nu publicăm nicio listă de nume de utilizator prin care cineva să poată căuta sau deschide unu câte
+                    unu. Oamenii ar trebui să-ți știe numele de utilizator doar dacă le dai un link către cardul tău (sau
+                    dacă l-au ghicit).
                 - >
-                    Prin {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex}
-                    și {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt}
-                    cerem motoarelor de căutare să ignore cardurile.
-                    Ține minte că nu toate respectă aceste directive,
-                    și că le-am adăugat abia recent, deci paginile care au găsit deja carduri
-                    (ex: când căutătoarele lor dau de un link către cardul tău Pronouns.Page postat de către tine public)
-                    s-ar putea să le mai țină în cache pentru un anumit timp.
+                    Prin {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex} și
+                    {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt} cerem motoarelor de
+                    căutare să ignore cardurile. Ține minte că nu toate respectă aceste directive și că le-am adăugat
+                    recent, deci paginile care au găsit deja carduri (ex: când căutătoarele lor dau de un link către
+                    cardul tău Pronouns.Page postat de către tine public) s-ar putea să le mai țină în cache pentru un
+                    anumit timp.
                 - >
-                    Tu decizi ce-i în cardul tău – ține minte că lucrurile pe care le pui acolo (ex: linkuri către rețelele tale sociale),
-                    ar putea ajuta pe cineva să te identifice.
+                    Tu decizi ce-i în cardul tău – ține minte că lucrurile pe care le pui acolo (ex: linkuri către
+                    rețelele tale sociale) ar putea ajuta pe cineva să te identifice.
         verified-links:
             question: 'Cum verific linkurile din cardul meu?'
             answer:
                 - >
-                    În {/cont=setările contului tău} poți conecta și deconecta mai multe conturi third-party,
-                    ceea ce te lasă să le folosești pentru a te loga.
-                    Dacă decizi să publici și un link către profilul tău third-party în cardul tău,
-                    atunci linkul va fi marcat cu un scut ([shield-check]).
-                    El va include și un tag <code>rel="me"</code> pentru ca serviciile ca Mastodon să poată verifica și invers.
-                    Funcția asta merge doar cu Mastodon și Twitter până acum.
+                    În {/cont=setările contului tău} poți conecta și deconecta mai multe conturi third-party, ceea ce te
+                    lasă să le folosești pentru a te loga. Dacă decizi să publici și un link către profilul tău
+                    third-party în cardul tău, atunci linkul va fi marcat cu un scut ([shield-check]). El va include și
+                    un tag <code>rel="me"</code> pentru ca serviciile ca Mastodon să poată verifica. Funcția asta merge
+                    doar cu Mastodon și Twitter până acum.
         mutiple-cards:
             question: 'Pot avea mai multe carduri sub un singur cont?'
             answer:
                 - >
-                    Asta trebuie să fie cea mai cerută funcție de până acuma! 😅
-                    Suntem de acord cu ideea asta, ar ajuta la sisteme de exemplu
-                    sau pe persoanele ce doresc să aiba carduri separate pentru uz public și pentru prieteni apropiați.
-                    Din păcate, funcția asta necesită <em>o groază</em> de schimbări în cod, la fel și testare.
-                    Vom încerca s-o prioritizăm, dar neavând timp destul, nu putem promite nicio dată specifică.
+                    Asta trebuie să fie cea mai cerută funcție de până acuma! 😅 Suntem de acord cu ideea asta, ar ajuta
+                    la exemple și pe persoanele ce doresc să aiba carduri separate pentru uz public și pentru prieteni
+                    apropiați. Din păcate, funcția asta necesită <em>o groază</em> de schimbări în cod, la fel și
+                    testare. Vom încerca s-o prioritizăm, dar neavând timp destul, nu putem promite nicio dată specifică.
 
 links:
     header: 'Linkuri'
@@ -503,7 +508,7 @@ contact:
             Noi suportăm și acțiuni către egalitate și justiția socială.
         extra: []
         logo: 'Sigla colectivului este o combinație între simbolul transgender și o bulă de dialog ce simbolizează limbajul.'
-        members: 'Membrii actuali'
+        members: 'Membri actuali'
         member: 'Membru al colectivului'
         upcoming: 'Versiunile lingvistice viitoare'
         join:
@@ -543,21 +548,21 @@ contact:
     contribute:
         header: 'Contribuie'
         intro: >
-            Pronouns.page este un proiect cu sursă-deschisă (open-source) creat de către voluntari.
-            Îți poți adăuga și tu contribuția! Aici sunt câteva locuri unde ți-am aprecia ajutorul.
-            Contribuitorii activi vor fi invitați in echipă.
+            Pronouns.page este un proiect cu sursă-deschisă (open-source) creat de către voluntari. Poți contribui chiar
+            și tu! Aici sunt câteva locuri unde ți-am aprecia ajutorul. Colaboratorii activi vor fi invitați in echipă.
         entries:
-            header: 'Adaugă intrări'
+            header: 'Adaugă sau corectează traduceri'
             description: >
-                Multe secțiuni ale site-ului (cuvinte, terminologia queer, dicționarul inclusiv…) au o opțiune cu care poti adăuga sau modifica intrări.
-                Dacă tu consideri că ceva lipsește sau este incorect, nu ezita să trimiți intrarea ta.
+                Multe secțiuni ale site-ului (cuvinte, terminologia queer, dicționarul inclusiv…) au o opțiune cu care
+                poti adăuga sau modifica intrări. Dacă tu consideri că ceva lipsește sau este incorect, nu ezita să
+                trimiți modificarea ta.
         translations:
             header: 'Adaugă sau corecteaza traduceri'
             description: >
-                E vreo traducere greșită sau lipsă?
-                Apasă pe „Propune o traducere” din footer și urmărește instrucțiunile.
+                E vreo traducere greșită sau lipsă? Apasă pe „Propune o traducere” din josul paginii și urmărește
+                instrucțiunile.
         version:
-            header: 'Crează o nouă versiune lingvistică'
+            header: 'Creează o nouă versiune lingvistică'
             description: >
                 Instrucțiunile pentru crearea unei noi versiuni lingvistice se află {https://en.pronouns.page/new-version=aici} (în lb. Engleză).
                 Înainte de a te apuca, te rog {/contact=contactează-ne} pentru a coordona cu ceilalți care lucrează la aceeași traducere.
@@ -765,7 +770,7 @@ profile:
         Doar crează un cont {/cont=aici}.
     bannerButton: 'Crează un card'
     card:
-        link: 'Poza cardului'
+        link: 'Poză a cardului'
         generate: 'Generează'
         generating: 'Generare în progres… Poate dura câteva minute.'
     empty: 'Persoana aceasta nu are încă niciun card.'
@@ -834,7 +839,7 @@ footer:
             cards: 'Carduri'
             visitors: 'Vizitatori unici'
             pageviews: 'Vizualizări ale paginii'
-            realTimeVisitors: 'Persoane online'
+            realTimeVisitors: 'Persoane active'
             visitDuration: 'Media duratei vizitării'
             uptime: 'Timpul de funcționare'
             responseTime: 'Media timpului de răsp.'
@@ -1193,20 +1198,20 @@ calendar:
     events:
         pride_month: 'Luna {/terminologie#pride=Pride-ului}'
         trans_month: 'Luna Internațională a {/terminologie#transgender=Conștientizării persoanelor Transgender}'
-        zaimki_birthday: 'Ziua de naștere a Pronouns.page'
+        zaimki_birthday: ''Ziua Înfințării Pronouns.page'
         agender_day: 'Ziua Pride-ului {/terminologie#agen=Agen}'
         asexuality_day: 'Ziua Internațională a {/terminologie#asexual=Asexualității}'
-        bisexuality_day: 'Celebrează ziua {/terminologie#bisexual=Bisexualității}'
+        bisexuality_day: 'Ziua Celebrării {/terminologie#bisexual=Bisexualității}'
         drag_day: 'Ziua {/terminologie#drag=Drag}'
         idahobit: 'Ziua Internațională Contra {/terminologie#homofobie=Homofobiei}, {/terminologie#transfobie=Transfobiei} și {/terminologie#bifobie=Bifobiei}'
         intersex_day: 'Ziua Conștientizării persoanelor {/terminologie#intersex=Intersex}'
-        intersex_remembrance_day: 'Ziua de Reamintire a persoanelor {/terminologie#intersex=Intersex}'
+        intersex_remembrance_day: 'Ziua Reamintirii persoanelor {/terminologie#intersex=Intersex}'
         lesbian_day: 'Ziua Internațională a {/terminologie#lesbiană=Lesbianelor}'
-        lesbian_visibility_day: 'Ziua Internațională a Vizibilității {/terminologie#lesbiană=Lesbiene}'
+        lesbian_visibility_day: 'Ziua Internațională a Vizibilității {/terminologie#lesbiană=Lesbienelor}'
         coming_out_day: 'Ziua {/terminologie#coming%20out=Coming Out-ului}'
         nonbinary_day: 'Ziua Internațională a  {/terminologie#non-binar=Persoanelor Non-binare}'
         pan_day: 'Ziua Conștientizării {/terminologie#pansexual=Pansexualității} & {/terminologie#panromantic=Panromantismului}'
-        trans_remembrance_day: 'Ziua de Reamintire a persoanelor {/terminologie#transgen=Transgen}'
+        trans_remembrance_day: 'Ziua Reamintirii persoanelor {/terminologie#transgen=Transgen}'
         trans_visibility_day: 'Ziua Internațională a Vizibilității persoanelor {/terminologie#transgen=Trans}'
         zero_discrimination_day: 'Ziua Zero Discriminări'
         arospec_week: 'Săptămâna Conștientizării {/terminologie#spectrul%20aromantic=Spectrului Aromantic}'
@@ -1232,20 +1237,20 @@ calendar:
         nonbinary_parents_day: 'Ziua Părinților {/terminologie#non-binar=Non-binari}'
         trans_prisoner: 'Ziua Prizonierilor {/terminologie#transgen=Transgender} pentru Acțiune și Solidaritate'
         xenogender_day: 'Ziua Vizibilității persoanelor {https://nonbinary.wiki/wiki/Xenogender=Xenogender}'
-        genderqueer_day: 'Ziua vizibilității persoanelor {/terminologie#gen queer=Gen queer}'
-        genderfluid_day: 'Ziua vizibilității persoanelor {/terminologie#gen fluid=Gen fluid}'
-        aids_day: 'Ziua Lumii a lui SIDA'
+        genderqueer_day: 'Ziua vizibilității persoanelor de {/terminologie#gen queer=Gen queer}'
+        genderfluid_day: 'Ziua vizibilității persoanelor de {/terminologie#gen fluid=Gen fluid}'
+        aids_day: 'Ziua Mondială SIDA'
         tolerance_day: 'Ziua Internațională a Toleranței'
         social_justice_day: 'Ziua Lumii pentru Justiție Socială'
         stonewall_day: 'Aniversarea Revoltelor Stonwall'
         domestic_violence: 'Ziua Conștientizării Violenței Domestice LGBTQ'
         polysexual_day: 'Ziua Vizibilității a {/terminologie#polysexual=Polysexualității} & a {/terminologie#polyromantic=Polyromantismului}'
-        orlando_day: 'Pulse Night of Remembrance' # TODO
-        aids_memorial: 'Ziua Internațională Memorială a Luminii Lumânorilor SIDA'
+        orlando_day: 'Ziua Reamintirii Clubului de Noapte „Pulse”'
+        aids_memorial: 'Ziua Internațională Memorială a Flăcărilor Lumânărilor SIDA'
         aids_memorial___timeDescription: 'în a treia Duminică din Mai'
         health_week: 'Săptămâna Conștientizării Sănătății LGBT'
         health_week___timeDescription: 'de Luni până Vineri în ultima săptămână din Martie'
-        lesbian_visibility_week: 'Ziua Vizibilității {/terminologie#lesbiană=Lesbienelor}'
+        lesbian_visibility_week: 'Săptămâna Vizibilității {/terminologie#lesbiană=Lesbienelor}'
         demigender_day: 'Ziua Conștientizării persoanelor {/terminologie#demi-gen=Demi-gen}'
         pan_pride_day: 'Ziua {/terminologie#pansexual=Pansexual} Pride'
         transmasculine_day: 'Ziua Persoanelor {/terminologie#transmasculin=Transmasculine}'
@@ -1258,14 +1263,17 @@ calendar:
         black_ribbon_day: 'Ziua Panglicii Negre'
         black_queer_week: 'Săptămâna Istoriei {/terminologie#queer=Queer} Negre'
         black_queer_week___timeDescription: 'în a treia săptămână din Februarie'
-        mena_lesbian_day: 'Ziua Pride a {/terminologie#lesbiană=Lesbianelor} {https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Nord și Est Africane} și Femeilor {/terminologie#queer=Queer}'
+        mena_lesbian_day: >
+            Ziua Pride a {/terminologie#lesbiană=Lesbianelor}
+            {https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Nord
+            și Est Africane} și a Femeilor {/terminologie#queer=Queer}
         hate_crime_awareness_week: 'Săptămâna Conștientizării Crimei de Ură'
         hate_crime_awareness_week___timeDescription: 'de la a doua Sâmbătă până la a treia din Octombrie (inclusiv amândouă Sâmbete)'
         deaf_awareness_week: 'Săptămâna Conștientizării Surzilor LGBTQ'
-        suicide_prevention_day: 'Ziua Lumii a Prevenirii Sinuciderii'
+        suicide_prevention_day: 'Ziua Mondială a Prevenirii Sinuciderii'
         suicide_prevention_month: 'Luna Prevenirii Sinuciderii'
         aids_awareness_month: 'Luna Conștientizării SIDA'
-        genderfluid_week: 'Săptămâna Conștientizării persoanelor {/terminologie#gen fluid=Gen fluid}'
+        genderfluid_week: 'Săptămâna Conștientizării persoanelor de {/terminologie#gen fluid=Gen fluid}'
         pan_week: '{https://posi-pan.tumblr.com/panweek=Săptămâna Pan}'
         parents_day: 'Ziua Părinților cu Expansivă de Gen'
         parents_day___timeDescription: 'în prima Duminică din Decembrie'
@@ -1281,16 +1289,16 @@ calendar:
         hiv_long_term_survivors_day: 'Ziua Conștientizării Supraviețuitorilor HIV pe termen lung'
         women_hiv_awareness_day: 'Ziua Conștientizării Fetelor și Femeilor cu HIV/SIDA'
         youth_hiv_awareness_day: 'Ziua Conștientizării Minorilor cu HIV/SIDA'
-        gay_hiv_awareness_day: 'Ziua Conștientizării Bărbaților Gay cu HIV/SIDA'
+        gay_hiv_awareness_day: 'Ziua Conștientizării Bărbaților {Gay} cu HIV/SIDA'
         black_hiv_awareness_day: 'Ziua Conștientizării Persoanelor de Culoare cu HIV/SIDA'
-        hiv_aging_awareness_day: 'Ziua Conștientizării HIV/SIDA și a Îmbătrinirii'
-        trans_hiv_testing_day: 'Ziua Testărilor HIV pentru Transgenderi'
+        hiv_aging_awareness_day: 'Ziua Îmbătrânirii și a Conștientizării HIV/SIDA'
+        trans_hiv_testing_day: 'Ziua Testărilor HIV pentru {/terminologie#transgen=Transgenderi}'
         mspec_lesbian_day: '{https://twitter.com/MspecLesbianss=Ziua Vizibilității și Conștientizării Lesbianelor Mspec}'
         mspec_lesbian_week: '{https://twitter.com/MspecLesbianss=Săptămâna Vizibilității și Conștientizării Lesbianelor Mspec}'
-        mspec_gay_day: 'Ziua Vizibilității și Conștientizării Gayilor Mspec'
-        mspec_gay_week: 'Săptămâna Vizibilității și Conștientizării Gayilor Mspec'
-        spring_testing_week: 'Săptămâna Europeană de Testare HIV de Primăvară'
-        autumn_testing_week: 'Săptămâna Europeană de Testare HIV de Toamnă'
+        mspec_gay_day: 'Ziua Vizibilității și a Conștientizării Gayilor Mspec'
+        mspec_gay_week: 'Săptămâna Vizibilității și a Conștientizării Gayilor Mspec'
+        spring_testing_week: 'Săptămâna Europeană de Primăvară a Testării HIV'
+        autumn_testing_week: 'Săptămâna Europeană de Toamnă a Testării HIV'
         sex_worker_day: '{https://www.nswp.org/event/international-sex-workers-day-0=Ziua Internațională a Muncitorilor Sexuali}'
         equal_pay_day: 'Ziua Conștientizării Plăților Egale LGBTQIA+'
         sex_worker_pride: '{https://www.nswp.org/event/sex-worker-pride=Pride-ul Muncitorilor Sexuali}'
@@ -1302,8 +1310,8 @@ calendar:
         trans_flag_day: '{https://twitter.com/hrc/status/1296122309036650497=Ziua Steagului Trans}'
         alan_turing_day: 'Ziua Alan Turing' #???
         nonbinary_kids_day: 'Ziua Copiilor {/terminologie#non-binar=Non-binari}'
-        masc_lesbian_week: '{https://twitter.com/MascLesWeek=Săptămâna Vizibilității și a Conștientizării Lesbianelor Masculine}'
-        masc_lesbian_day: '{https://twitter.com/MascLesWeek=Ziua Vizibilității și a Conștientizării Lesbianelor Masculine}'
+        masc_lesbian_week: masc_lesbian_week: '{https://twitter.com/MascLesWeek=Săptămâna Conștientizării și a Vizibilității Lesbianelor Masculine}'
+        masc_lesbian_day: '{https://twitter.com/MascLesWeek=Ziua Conștientizării și a Vizibilității Lesbianelor Masculine}'
         trans_history_month: 'Luna Istoriei persoanelor {/terminologie#Transgen=Trans}'
         transition_week: 'Săptămâna {/terminologie#tranziționare=Tranziționării}'
         bi_creators_day: 'Ziua Creatorilor {/terminologie#bisexual=Bisexuali}'
@@ -1317,8 +1325,8 @@ calendar:
     image:
         header: 'Descarcă o imagine'
     view:
-        grid: 'Vizualizează ca grid'
-        list: 'Vezi lista cu evenimente'
+        grid: 'Grid'
+        list: 'Listă cu evenimente'
     link: 'Link'
     full: 'Calendar complet'
 
