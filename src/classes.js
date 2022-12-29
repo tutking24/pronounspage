@@ -206,7 +206,7 @@ export class SourceLibrary {
 
             if (pronoun === '') {
                 for (let p of this.pronouns) {
-                    if (!pronounLibrary.isCanonical(p) && !(config.sources.extraTypes || []).includes(p)) {
+                    if (pronounLibrary && !pronounLibrary.isCanonical(p) && !(config.sources.extraTypes || []).includes(p)) {
                         sources = [...sources, ...this.map[p]];
                     }
                 }

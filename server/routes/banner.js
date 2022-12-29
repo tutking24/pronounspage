@@ -64,9 +64,10 @@ router.get('/banner/:pronounName*.png', handleErrorAsync(async (req, res) => {
                 return canvas.toBuffer(mime);
             }
 
-            const avatarImage = await loadImage(await avatar(req.db, user));
-
-            drawCircle(context, avatarImage, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize);
+            try {
+                const avatarImage = await loadImage(await avatar(req.db, user));
+                drawCircle(context, avatarImage, width / leftRatio - imageSize / 2, height / 2 - imageSize / 2, imageSize);
+            } catch {}
 
             context.font = `regular 48pt '${fontName}'`
             context.fillText('@' + user.username, width / leftRatio + imageSize, height / 2)

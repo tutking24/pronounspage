@@ -5,7 +5,7 @@
     <a v-else-if="locale === 'external'" :href="link" target="_blank" rel="noopener">
         <slot></slot>
     </a>
-    <a v-else :href="(locale === '_' ? homeLink : locales[locale].url) + link">
+    <a v-else :href="(locale === '_' || locales[locale] === undefined ? homeLink : locales[locale].url) + link">
         <slot></slot>
     </a>
 </template>
