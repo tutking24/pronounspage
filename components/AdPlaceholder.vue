@@ -1,8 +1,13 @@
 <template>
-    <div v-if="config.ads && config.ads.enabled"
-         :id="`ezoic-pub-ad-placeholder-${phid}`"
-         :class="[adPlaceholdersVisible ? 'ad-placeholder' : '']"
-         v-html="adPlaceholdersVisible ? `${phkey} / ${phid}` : ''">
+    <div v-if="config.ads && config.ads.enabled && active"
+         :class="[adPlaceholdersVisible ? 'ad-placeholder' : '']">
+        <span v-if="adPlaceholdersVisible">{{phkey}} / {{adConfig.slotId}}</span>
+        <ins v-else class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8518361481036191"
+             :data-ad-slot="adConfig.slotId"
+             :data-ad-format="adConfig.adFormat"
+             :data-full-width-responsive="adConfig.responsive ? 'true' : ''"></ins>
     </div>
 </template>
 
@@ -15,8 +20,18 @@ export default {
         phkey: {required: true},
     },
     data() {
+        if (!adPlaceholders[this.phkey]) {
+            return { active: false, adConfig: {} };
+        }
+
+        const [slotId, adFormat, responsive] = adPlaceholders[this.phkey];
         return {
-            phid: adPlaceholders[this.phkey],
+            active: true,
+            adConfig: {
+                slotId,
+                adFormat,
+                responsive,
+            }
         }
     },
     computed: {

@@ -5,7 +5,11 @@
             <T>privacy.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-09-02</em></p>
+        <p class="small"><em>
+            <T>terms.lastUpdate</T><T>quotation.colon</T>
+            2022-12-29
+            (registration of a legal entity; switching ads providers)
+        </em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>
@@ -24,7 +28,7 @@
         <p><T>privacy.content.plausible</T></p>
         <p><T>privacy.content.hCaptcha</T></p>
         <p v-if="config.ads && config.ads.enabled">
-            <T>privacy.content.ezoic</T>
+            <T>privacy.content.adsense</T>
         </p>
         <p><T>privacy.content.logsBackups</T></p>
         <p><T>privacy.content.gdpr</T></p>
@@ -45,8 +49,7 @@
 export default {
     methods: {
         revokeCookieConsent() {
-            this.$cookies.remove('cookie-consent');
-            window.location.reload();
+            googlefc.callbackQueue.push(googlefc.showRevocationMessage);
         },
     },
 }

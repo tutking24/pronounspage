@@ -5,7 +5,11 @@
             <T>terms.header</T>
         </h2>
 
-        <p class="small"><em><T>terms.lastUpdate</T><T>quotation.colon</T> 2022-12-01</em></p>
+        <p class="small"><em>
+            <T>terms.lastUpdate</T><T>quotation.colon</T>
+            2022-12-29
+            (registration of a legal entity)
+        </em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
             <Icon v="exclamation-triangle"/>

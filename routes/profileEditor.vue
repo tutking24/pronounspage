@@ -99,7 +99,6 @@
                 <template v-slot:opinions>
                     <LegendOpinionListInput v-model="defaultOpinions" readonly class="mb-0"/>
                     <LegendOpinionListInput v-model="opinions" :maxitems="5"/>
-                    <AdPlaceholder phkey="main-0"/>
                 </template>
 
                 <template v-slot:names-header>
@@ -112,7 +111,6 @@
                     </p>
                     <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128"/>
                     <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                    <AdPlaceholder phkey="main-1"/>
                 </template>
 
                 <template v-slot:pronouns-header>
@@ -127,7 +125,6 @@
                         </p>
                     </div>
                     <OpinionListInput v-model="pronouns" :validation="validatePronoun" :customOpinions="opinions" :maxitems="128" :maxlength="192"/>
-                    <AdPlaceholder phkey="main-2"/>
                 </template>
 
                 <template v-slot:description-header>
@@ -136,7 +133,6 @@
                 </template>
                 <template v-slot:description>
                     <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
-                    <AdPlaceholder phkey="main-3"/>
                 </template>
 
                 <template v-slot:flags-header>
@@ -167,7 +163,6 @@
                     </details>
                     <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
                     <Answer question="flags" small/>
-                    <AdPlaceholder phkey="main-4"/>
                 </template>
 
                 <template v-slot:links-header>
@@ -193,7 +188,6 @@
                         <Icon v="exclamation-triangle"/>
                         <T>profile.linksWarning</T>
                     </p>
-                    <AdPlaceholder phkey="main-5"/>
                 </template>
 
                 <template v-slot:birthday-header>
@@ -212,7 +206,6 @@
                         <Icon v="times"/>
                         <T>crud.remove</T>
                     </button>
-                    <AdPlaceholder phkey="main-6"/>
                 </template>
 
                 <template v-slot:timezone-header>
@@ -225,7 +218,6 @@
                     </p>
                     <TimezoneSelect v-model="timezone"/>
                     <PropagateCheckbox field="timezone" :before="beforeChanges.timezone" :after="timezone" v-if="otherProfiles > 0" @change="propagateChanged"/>
-                    <AdPlaceholder phkey="main-0"/>
                 </template>
 
                 <template v-slot:words-header>
@@ -243,7 +235,6 @@
                     <button type="button" class="btn btn-outline-warning btn-sm" @click.prevent="resetWords">
                         <T>profile.editor.defaults</T>
                     </button>
-                    <AdPlaceholder phkey="main-1"/>
                 </template>
 
                 <template v-slot:circle-header>
@@ -259,7 +250,6 @@
 
                     <CircleMentions/>
 
-                    <AdPlaceholder phkey="main-2"/>
                 </template>
             </TabsNav>
 
@@ -270,7 +260,7 @@
                 </button>
             </section>
 
-            <AdPlaceholder phkey="main-6"/>
+            <AdPlaceholder phkey="main-0"/>
         </form>
     </div>
     </Page>

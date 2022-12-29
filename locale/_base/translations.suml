@@ -803,6 +803,7 @@ terms:
             These Terms of Service govern your access to and use of the Service provided on the website
             <strong>pronouns.page</strong> and related subdomains and domains,
             operated by the “Neutral Language Council” collective
+            and Nero Network (NL, KVK 88409120)
             who can be contacted via email:
         consent: >
             By using the Services you agree to be bound by these Terms of Service and you consent
@@ -892,6 +893,7 @@ privacy:
             <strong>pronouns.page</strong> and related subdomains and domains
             manages your personal data.
             The Service is operated by the “Neutral Language Council” collective
+            and Nero Network (NL, KVK 88409120)
             who can be contacted via email:
         effort: >
             We make every effort to store your data securely and to ensure that any non-public data we store
@@ -943,7 +945,7 @@ privacy:
             details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'
         accept: 'Accept'
         reject: 'Reject'
-        revoke: 'Reset cookie consent settings'
+        revoke: 'Revoke personalised ads consent'
 
 admin:
     header: 'Admin panel'

@@ -9,7 +9,6 @@
         <Footer/>
         <DialogueBox ref="dialogue"/>
         <Lightbox/>
-        <CookieConsent/>
     </div>
 </template>
 
@@ -62,6 +61,8 @@
             sorter();
 
             this.confirmAge();
+
+            this.loadAds();
         },
         methods: {
             async confirmAge() {
@@ -75,7 +76,26 @@
                 await this.$alert(this.$t('footer.ageLimit'));
 
                 localStorage.setItem('ageConfirmed', '1');
+            },
+            async loadAds() {
+                if (!this.adsEnabled) { return; }
+
+                await this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
+
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
             }
+        },
+        computed: {
+            adsEnabled() {
+                if (this.$isGranted()) {
+                    const adsVisible = parseInt(localStorage.getItem('adsVisible') || '0') === 1;
+                    if (!adsVisible) {
+                        return false;
+                    }
+                }
+
+                return this.config.ads?.enabled && process.env.NODE_ENV !== 'development';
+            },
         },
     }
 </script>
