@@ -37,6 +37,11 @@
                     this.$refs.dialogue.show(false, message, color, value, 'lg', resolve, reject);
                 });
             };
+            Vue.prototype.$alertRaw = (message, color='primary') => {
+                return new Promise((resolve, reject) => {
+                    this.$refs.dialogue.show(false, '<pre class="text-start"><code>' + message + '</code></pre>', color, undefined, 'lg', resolve, reject);
+                });
+            };
             Vue.prototype.$post = (url, data, options = {}, timeout = 30000) => {
                 return new Promise((resolve, reject) => {
                     this.$axios.$post(url, data, {...options, timeout})

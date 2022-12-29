@@ -25,6 +25,14 @@
             </div>
         </section>
         <section v-if="$isGranted('users')">
+            <div v-if="banSnapshot" class="my-3">
+                <a href="#" class="badge bg-info"
+                   @click.prevent="$alertRaw(banSnapshot)"
+                >
+                    <Icon v="camera-polaroid"/>
+                    Show snapshot at the time of banning
+                </a>
+            </div>
             <a v-if="!showBanForm" href="#" @click.prevent="showBanForm = true" class="small">
                 <Icon v="ban"/>
                 <T>ban.action</T>
@@ -149,6 +157,8 @@
                 showBanForm: !!this.user.bannedReason,
                 isBanned: !!this.user.bannedReason,
 
+                banSnapshot: undefined,
+
                 showMessages: false,
                 messages: undefined,
                 message: '',
@@ -165,6 +175,7 @@
             if (!this.$isGranted('users')) { return; }
             this.abuseReports = await this.$axios.$get(`/admin/reports/${this.user.id}`);
             this.banProposals = await this.$axios.$get(`/admin/ban-proposals/${encodeURIComponent(this.user.username)}`);
+            this.banSnapshot = await this.$axios.$get(`/admin/ban-snapshot/${this.user.id}`);
             if (this.banProposals.length > 0) {
                 this.showBanForm = true;
             }

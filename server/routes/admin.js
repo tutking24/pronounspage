@@ -208,6 +208,20 @@ const fetchBanProposals = async (db, userId) => {
     `);
 }
 
+router.get('/admin/ban-snapshot/:id', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const row = await req.db.get(SQL`
+        SELECT banSnapshot
+        FROM users
+        WHERE users.id = ${req.params.id}
+    `);
+
+    return res.json(row ? row.banSnapshot : null);
+}));
+
 router.get('/admin/ban-proposals', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('users')) {
         return res.status(401).json({error: 'Unauthorised'});
@@ -348,7 +362,7 @@ router.get('/admin/reports/:id', handleErrorAsync(async (req, res) => {
     }
 
     return res.json(await req.db.all(SQL`
-        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled
+        SELECT reports.id, sus.username AS susUsername, reporter.username AS reporterUsername, reports.comment, reports.isAutomatic, reports.isHandled, reports.snapshot
         FROM reports
         LEFT JOIN users sus ON reports.userId = sus.id
         LEFT JOIN users reporter ON reports.reporterId = reporter.id

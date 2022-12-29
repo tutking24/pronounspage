@@ -13,6 +13,9 @@
             <th class="text-nowrap">
                 Action
             </th>
+            <th class="text-nowrap" v-if="abuseReports.length && abuseReports[0].snapshot">
+                Snapshot
+            </th>
         </template>
 
         <template v-slot:row="s"><template v-if="s && s.el.susUsername">
@@ -41,6 +44,14 @@
                 >
                     <Icon v="thumbs-up"/>
                     I checked the profile, it's OK.
+                </a>
+            </td>
+            <td v-if="s.el.snapshot">
+                <a href="#" class="badge bg-info"
+                   @click.prevent="$alertRaw(s.el.snapshot)"
+                >
+                    <Icon v="camera-polaroid"/>
+                    Snapshot
                 </a>
             </td>
         </template></template>
