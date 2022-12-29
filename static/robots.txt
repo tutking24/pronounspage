@@ -2,3 +2,9 @@ User-agent: *
 Disallow: /@*
 Disallow: /u/*
 Disallow: /card/@*
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: EzoicBot
+Disallow:
