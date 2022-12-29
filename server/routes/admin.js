@@ -124,7 +124,7 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
     });
 }));
 
-const fetchStats = async () => {
+const fetchStats = async (req) => {
     if (fs.existsSync(statsFile)) {
         return JSON.parse(fs.readFileSync(statsFile));
     }
@@ -139,7 +139,7 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    const stats = await fetchStats();
+    const stats = await fetchStats(req);
 
     for (let locale in stats.locales) {
         if (stats.locales.hasOwnProperty(locale) && !req.isGranted('panel', locale)) {
@@ -151,7 +151,7 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
-    const statsAll = await fetchStats();
+    const statsAll = await fetchStats(req);
 
     const plausible = statsAll.home.plausible;
     const stats = {
