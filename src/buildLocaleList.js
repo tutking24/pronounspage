@@ -7,5 +7,22 @@ module.exports = (current, includeUnpublished = false) => {
             d[code] = {name, url, published, code};
         }
     }
-    return d;
+
+    // hoist current to top, then published, then unpublished
+    const sortedLocales = {};
+    if (d[current] !== undefined) {
+        sortedLocales[current] = d[current];
+    }
+    for (let [code, localeConfig] of Object.entries(d)) {
+        if (code !== current && localeConfig.published) {
+            sortedLocales[code] = localeConfig;
+        }
+    }
+    for (let [code, localeConfig] of Object.entries(d)) {
+        if (code !== current && !localeConfig.published) {
+            sortedLocales[code] = localeConfig;
+        }
+    }
+
+    return sortedLocales;
 }

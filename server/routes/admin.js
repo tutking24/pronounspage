@@ -3,16 +3,16 @@ import SQL from 'sql-template-strings';
 import avatar from '../avatar';
 import {buildDict, now, shuffle, handleErrorAsync} from "../../src/helpers";
 import locales from '../../src/locales';
-import {calculateStats, statsFile} from '../../src/stats';
 import fs from 'fs';
 import { caches }  from "../../src/cache";
 import mailer from "../../src/mailer";
 import {profilesSnapshot} from "./profile";
-import buildLocaleList from "../../src/buildLocaleList";
 import {archiveBan, liftBan} from "../ban";
 import marked from 'marked';
 import {loadCurrentUser} from "./user";
-import {encodeTime, ulid} from "ulid";
+import {encodeTime, decodeTime, ulid} from "ulid";
+import Suml from 'suml';
+import buildLocaleList from "../../src/buildLocaleList";
 
 const router = Router();
 
@@ -125,12 +125,19 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
 }));
 
 const fetchStats = async (req) => {
-    if (fs.existsSync(statsFile)) {
-        return JSON.parse(fs.readFileSync(statsFile));
+    const maxId = (await req.db.get(`SELECT MAX(id) AS maxId FROM stats`)).maxId;
+
+    const stats = {
+        calculatedAt: decodeTime(maxId) / 1000,
+    };
+
+    for (let statsRow of await req.db.all(SQL`SELECT locale, users, data FROM stats WHERE id = ${maxId}`)) {
+        stats[statsRow.locale] = {
+            users: statsRow.users,
+            ...JSON.parse(statsRow.data),
+        }
     }
 
-    const stats = await calculateStats(req.db, buildLocaleList(global.config.locale));
-    fs.writeFileSync(statsFile, JSON.stringify(stats));
     return stats;
 }
 
@@ -141,8 +148,10 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 
     const stats = await fetchStats(req);
 
-    for (let locale in stats.locales) {
-        if (stats.locales.hasOwnProperty(locale) && !req.isGranted('panel', locale)) {
+    for (let [locale, localeStats] of Object.entries(stats)) {
+        if (locale === '_' || locale === 'calculatedAt') { continue; }
+
+        if (!req.isGranted('panel', locale)) {
             delete stats.locales[locale];
         }
     }
@@ -153,24 +162,25 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
 router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
     const statsAll = await fetchStats(req);
 
-    const plausible = statsAll.home.plausible;
     const stats = {
         calculatedAt: statsAll.calculatedAt,
         overall: {
-            users: statsAll.users.overall,
+            users: statsAll._.users,
             cards: 0,
-            pageViews: plausible ? plausible.pageviews : 0,
-            visitors: plausible ? plausible.visitors : 0,
-            online: plausible ? plausible.realTimeVisitors : 0,
+            pageViews: statsAll._.plausible?.pageviews || 0,
+            visitors: statsAll._.plausible?.visitors || 0,
+            online: statsAll._.plausible?.realTimeVisitors || 0,
         },
         current: {},
     }
 
-    for (let [locale, localeStats] of Object.entries(statsAll.locales)) {
-        stats.overall.cards += localeStats.profiles;
+    for (let [locale, localeStats] of Object.entries(statsAll)) {
+        if (locale === '_' || locale === 'calculatedAt') { continue; }
+
+        stats.overall.cards += localeStats.users;
         if (locale === global.config.locale) {
             stats.current = {
-                cards: localeStats.profiles,
+                cards: localeStats.users,
             }
         }
         if (localeStats.plausible) {
@@ -191,6 +201,46 @@ router.get('/admin/stats-public', handleErrorAsync(async (req, res) => {
     }
 
     return res.json(stats);
+}));
+
+router.get('/admin/stats/users-chart/:locale', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const formatDate = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
+
+    const stats = {};
+    for (let {id, users} of await req.db.all(SQL`SELECT id, users FROM stats WHERE locale = ${req.params.locale} ORDER BY id ASC`)) {
+        const date = formatDate(new Date(decodeTime(id)));
+        stats[date] = users; // overwrite with the latest one for the day
+    }
+
+    const incrementsChart = {};
+    let prevUsers = null;
+    for (let [date, users] of Object.entries(stats)) {
+        incrementsChart[date] = prevUsers === null
+            ? users
+            : users - prevUsers
+
+        prevUsers = users;
+    }
+
+    return res.json(incrementsChart);
+}));
+
+router.get('/admin/all-locales', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('panel')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const locales = buildLocaleList(global.config.locale, true);
+    for (let locale in locales) {
+        if (!locales.hasOwnProperty(locale)) { continue; }
+        locales[locale].config = new Suml().parse(fs.readFileSync(`./locale/${locale}/config.suml`).toString());
+    }
+
+    return res.json(locales);
 }));
 
 const normalise = s => s.trim().toLowerCase();

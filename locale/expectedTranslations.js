@@ -1,4 +1,4 @@
-export default [
+module.exports = [
     'contact.language',
     'support.bankAccount',
     'confirm.save',

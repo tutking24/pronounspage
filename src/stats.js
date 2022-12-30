@@ -2,6 +2,10 @@ const {decodeTime} = require('ulid');
 const mailer = require('./mailer');
 const Plausible = require('plausible-api');
 const fetch = require('node-fetch');
+const { ulid } = require('ulid');
+const expectedTranslations = require('../locale/expectedTranslations')
+const fs = require('fs');
+const Suml = require('suml');
 
 // TODO all the duplication...
 const buildDict = (fn, ...args) => {
@@ -35,9 +39,19 @@ const sortByValue = (obj, reverse = false, firstN = -1) => {
     return zip(list, true);
 }
 
-const formatMonth = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
+const deepGet = (obj, path) => {
+    let value = obj;
+    for (let part of path.split('.')) {
+        value = value[part];
+        if (value === undefined) { break; }
+    }
 
-const buildChart = (rows) => {
+    return value;
+}
+
+const formatDate = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
+
+module.exports.buildChart = (rows) => {
     const dates = rows.map(row => new Date(decodeTime(row.id)));
 
     const chart = {};
@@ -45,22 +59,27 @@ const buildChart = (rows) => {
     let loop = dates[0];
     const end = dates[dates.length - 1];
     while(loop <= end){
-        chart[formatMonth(loop)] = 0;
+        chart[formatDate(loop)] = 0;
         loop = new Date(loop.setDate(loop.getDate() + 1));
     }
     if (!loop) {
         return {};
     }
-    chart[formatMonth(loop)] = 0;
+    chart[formatDate(loop)] = 0;
 
     for (let date of dates) {
-        chart[formatMonth(date)]++;
+        chart[formatDate(date)]++;
     }
 
-    return chart;
-}
+    const cumChart = {};
+    let cum = 0;
+    for (let [date, count] of Object.entries(chart)) {
+        cum += count;
+        cumChart[date] = cum;
+    }
 
-module.exports.statsFile = process.env.STATS_FILE.replace('%projectdir%', __dirname + '/..')
+    return cumChart;
+}
 
 const plausibleClient = new Plausible(process.env.PLAUSIBLE_API_KEY, process.env.PLAUSIBLE_API_HOST + '/api/v1/stats');
 
@@ -76,13 +95,7 @@ const checkPlausible = async (url) => {
     return plausible;
 }
 
-module.exports.calculateStats = async (db, allLocales) => {
-    const users = {
-        overall: (await db.get(`SELECT count(*) AS c FROM users`)).c,
-        admins: (await db.get(`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
-        chart: buildChart(await db.all(`SELECT id FROM users ORDER BY id`)),
-    };
-
+const checkHeartbeat = async () => {
     let heartbeat = {};
     try {
          for (let [page, pageStats] of Object.entries((await (await fetch(`${process.env.HEARTBEAT_LINK}/30d.json`)).json()).pages)) {
@@ -94,63 +107,83 @@ module.exports.calculateStats = async (db, allLocales) => {
          }
     } catch {}
 
-    const home = {
-        plausible: await checkPlausible('https://pronouns.page'),
-        heartbeat: heartbeat['https://pronouns.page'],
-    };
+    return heartbeat;
+}
 
-    const locales = {};
-    for (let locale in allLocales) {
-        if (!allLocales.hasOwnProperty(locale)) { continue; }
+module.exports.calculateStats = async (db, allLocales) => {
+    const id = ulid();
 
-        const profiles = await db.all(`SELECT pronouns, flags FROM profiles WHERE locale='${locale}'`);
-        const pronouns = {}
-        const flags = {}
-        for (let profile of profiles) {
-            const pr = JSON.parse(profile.pronouns);
-            for (let pronoun in pr) {
-                if (!pr.hasOwnProperty(pronoun)) { continue; }
-
-                if (pronoun.includes(',') || pr[pronoun] < 0) {
-                    continue;
-                }
-                const p = pronoun.replace(/^.*:\/\//, '').replace(/^\//, '').toLowerCase().replace(/^[a-z]+\.[^/]+\//, '');
-                if (pronouns[p] === undefined) {
-                    pronouns[p] = 0;
-                }
-                pronouns[p] += pr[pronoun] === 1 ? 1 : 0.5;
-            }
-
-            const fl = JSON.parse(profile.flags);
-            for (let flag of fl) {
-                if (flags[flag] === undefined) {
-                    flags[flag] = 0;
-                }
-                flags[flag] += 1;
-            }
-        }
-
-        locales[locale] = {
-            name: allLocales[locale].name,
-            url: allLocales[locale].url,
-            profiles: profiles.length,
-            pronouns: sortByValue(pronouns, true, 36),
-            flags: sortByValue(flags, true, 36),
-            nouns: {
-                approved: (await db.get(`SELECT count(*) AS c FROM nouns WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
-                awaiting: (await db.get(`SELECT count(*) AS c FROM nouns WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
-            },
-            chart: buildChart(await db.all(`SELECT id FROM profiles WHERE locale='${locale}' ORDER BY id`)),
-            plausible: await checkPlausible(allLocales[locale].url),
-            heartbeat: heartbeat[allLocales[locale].url],
-        };
-    }
+    const heartbeat = await checkHeartbeat();
 
     const cardsQueue = (await db.get(`SELECT count(*) as c FROM profiles WHERE card = '' OR cardDark = ''`)).c;
-
     if (cardsQueue > 64) {
         mailer('contact@pronouns.page', 'cardsWarning', {count: cardsQueue});
     }
 
-    return { calculatedAt: parseInt(new Date() / 1000), users, home, locales, cardsQueue };
+    const stats = [];
+    stats.push({
+        locale: '_',
+        users: (await db.get(`SELECT count(*) AS c FROM users`)).c,
+        data: {
+            admins: (await db.get(`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
+            userReports: (await db.get(`SELECT count(*) AS c FROM reports WHERE isHandled = 0`)).c,
+            bansPending: (await db.get(`SELECT count(*) AS c FROM ban_proposals p LEFT JOIN users u ON p.userId = u.id WHERE u.bannedBy IS NULL`)).c,
+            heartbeat: heartbeat['https://pronouns.page'],
+            plausible: await checkPlausible('https://pronouns.page'),
+            cardsQueue,
+        },
+    });
+
+    for (let locale in allLocales) {
+        if (!allLocales.hasOwnProperty(locale)) { continue; }
+
+        const translations = new Suml().parse(fs.readFileSync(`./locale/${locale}/translations.suml`).toString());
+        const missingTranslations = expectedTranslations.filter(key => deepGet(translations, key) === undefined).length;
+
+        stats.push({
+            locale,
+            users: (await db.get(`SELECT count(*) as c FROM profiles WHERE locale='${locale}'`)).c,
+            data: {
+                nouns: {
+                    approved: (await db.get(`SELECT count(*) AS c FROM nouns WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
+                    awaiting: (await db.get(`SELECT count(*) AS c FROM nouns WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
+                },
+                inclusive: {
+                    approved: (await db.get(`SELECT count(*) AS c FROM inclusive WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
+                    awaiting: (await db.get(`SELECT count(*) AS c FROM inclusive WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
+                },
+                terms: {
+                    approved: (await db.get(`SELECT count(*) AS c FROM terms WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
+                    awaiting: (await db.get(`SELECT count(*) AS c FROM terms WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
+                },
+                sources: {
+                    approved: (await db.get(`SELECT count(*) AS c FROM sources WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
+                    awaiting: (await db.get(`SELECT count(*) AS c FROM sources WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
+                },
+                names: {
+                    approved: (await db.get(`SELECT count(*) AS c FROM names WHERE locale='${locale}' AND approved=1 AND deleted=0`)).c,
+                    awaiting: (await db.get(`SELECT count(*) AS c FROM names WHERE locale='${locale}' AND approved=0 AND deleted=0`)).c,
+                },
+                translations: {
+                    missing: missingTranslations,
+                    awaitingApproval: (await db.get(`SELECT count(*) AS c FROM translations WHERE locale='${locale}' AND status=0`)).c,
+                    awaitingMerge:    (await db.get(`SELECT count(*) AS c FROM translations WHERE locale='${locale}' AND status=1`)).c,
+                },
+                plausible: await checkPlausible(allLocales[locale].url),
+                heartbeat: heartbeat[allLocales[locale].url],
+            }
+        });
+    }
+
+    const DOUBLE_APOSTROPHE = "''";
+    for (let statsLocale of stats) {
+        await db.get(`INSERT INTO stats (id, locale, users, data) VALUES (
+            '${id}',
+            '${statsLocale.locale}',
+            ${statsLocale.users},
+            '${JSON.stringify(statsLocale.data).replace(/'/g, DOUBLE_APOSTROPHE)}'
+        )`);
+    }
+
+    return stats;
 }

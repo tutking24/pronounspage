@@ -326,8 +326,18 @@ export default {
                 routes.push({path: '/' + encodeURIComponent(config.user.privacyRoute), component: resolve(__dirname, 'routes/privacy.vue')});
             }
             routes.push({ path: '/license', component: resolve(__dirname, 'routes/license.vue') });
+
             routes.push({ path: '/admin', component: resolve(__dirname, 'routes/admin.vue') });
+
+            routes.push({ path: '/admin/users', component: resolve(__dirname, 'routes/adminUsers.vue') });
+            routes.push({ path: '/admin/profiles', component: resolve(__dirname, 'routes/adminProfiles.vue') });
+
             routes.push({ path: '/admin/moderation', component: resolve(__dirname, 'routes/adminModeration.vue') });
+            routes.push({ path: '/admin/abuse-reports', component: resolve(__dirname, 'routes/adminAbuseReports.vue') });
+            routes.push({ path: '/admin/pending-bans', component: resolve(__dirname, 'routes/adminPendingBans.vue') });
+
+            routes.push({ path: '/admin/translations/missing', component: resolve(__dirname, 'routes/adminTranslationsMissing.vue') });
+            routes.push({ path: '/admin/translations/awaiting', component: resolve(__dirname, 'routes/adminTranslationsAwaiting.vue') });
 
             if (config.profile.enabled) {
                 routes.push({path: '/u/*', component: resolve(__dirname, 'routes/profile.vue')});

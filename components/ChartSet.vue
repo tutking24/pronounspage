@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-header">
             <div class="form-check form-check-inline"
-                 v-for="(desc, m) in {'': 'Hide chart', 'daily': 'Daily new chart', 'cumulative': 'Cumulative chart'}">
+                 v-for="(desc, m) in {'': 'Hide chart', 'daily': 'Daily change chart', 'cumulative': 'Cumulative chart'}">
                 <label class="form-check-label">
                     <input class="form-check-input" type="radio" v-model="mode" :value="m">
                     {{desc}}
