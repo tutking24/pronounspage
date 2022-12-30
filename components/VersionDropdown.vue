@@ -51,7 +51,7 @@
             return {
                 spellings: {
                     zh: {traditional: '繁體', simplified: '简体'},
-                    tok: {latin: 'Lasin', sitelen: 'sitelen pona'},
+                    tok: {latin: 'sitelen Lasina', sitelen: 'sitelen\xa0pona'},
                 }
             };
         },

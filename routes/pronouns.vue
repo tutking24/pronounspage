@@ -198,7 +198,7 @@
                         <LinkedText :text="config.pronouns.mirror.description"/>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li v-if="config.pronouns.any" class="list-group-item">
                     <p class="h5">
                         <nuxt-link :to="`/${config.pronouns.any}`"><T>pronouns.any.header</T></nuxt-link>
                     </p>

@@ -1,4 +1,3 @@
 singular	plural	isHonorific
-mi sona, la {pronoun_subject} li pona mute.		FALSE
-mi lanpan e ilo {pronoun_adjective}.		FALSE
-{pronoun_subject} li toki e: mi {reflexive}.		FALSE
+pilin mi la {pronoun} li pona mute.		FALSE
+mi wile e ilo {pi pronoun}.		FALSE
