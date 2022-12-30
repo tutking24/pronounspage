@@ -3,9 +3,9 @@ locale: 'tok'
 header: true
 
 pronouns:
-    enabled: true
-    route: 'supa_ona'
-    default: 'ona'
+    enabled: false
+    route: 'nimi'
+    default: 'jan'
     any: false
     plurals: false
     honorifics: false
@@ -14,22 +14,23 @@ pronouns:
     emoji: false
     mirror: false
     slashes: false
+    sentence:
+        prefixes: ['/li']
+        examples:
+            - 'nimi-mi.tk/li/jan Sonja'
 
 pronunciation:
-    enabled: true
+    enabled: false
     ipa: true
     voices:
-        PL:
+        TOK:
             language: 'es-US'
-            voice: 'Lupe'
+            voice: 'jan Lupe'
             engine: 'standard'
 
 sources:
-    enabled: true
-    route: 'lipu'
-    submit: true
+    enabled: false
     mergePronouns: {}
-    extraTypes: ['apeja e ona', 'nimi ijo']
 
 nouns:
     enabled: false
@@ -42,27 +43,13 @@ nouns:
     templates: true
 
 community:
-    route: 'nimi_ale'
+    route: 'kulupu-pi-nasin-toki'
 
 inclusive:
     enabled: false
 
 terminology:
-    enabled: true
-    published: true
-    categories:
-        - 'kule unpa'
-        - 'kule olin'
-        - 'kule nanpa tu wan'
-        - 'kule'
-        - 'lukin kule'
-        - 'jan li olin seme e jan'
-        - 'toki'
-        - 'suwi'
-        - 'alasa'
-        - 'ike (nimi apeja)'
-
-    route: 'nimi_ale'
+    enabled: false
 
 names:
     enabled: false
@@ -72,60 +59,37 @@ people:
 
 # optional, but would be nice to have
 english:
-    enabled: true
-    route: 'english'
-    pronounGroups:
-        -
-            name: 'Removing Ambiguity'
-            description:
-                - >
-                    toki pona has a single third-person pronoun, ona, that just means “it” or “they.”
-                    Often this can become vague. Most people solve this by adding the gender adjectives whenever there is a need,
-                    however, just like in English, there are people who have pronouns different from their gender,
-                    and some people don't like the neutral “ona” at all.
-            table: {mije: 'Masculine', meli: 'Feminine'}
+    enabled: false
 
 faq:
     enabled: true
-    route: 'seme_mute'
+    route: 'sona'
 
 links:
-    enabled: true
-    split: true
-    route: 'tawa'
-    blogRoute: 'lipu_lili'
-    links:
-        -
-            icon: 'globe-europe'
-            url: 'https://pronoun.is/'
-            headline: 'Pronoun.is'
-            extra: '– ni li pana sona e sitelen ni'
-    academic: []
-    mediaGuests: []
-    mediaMentions: []
-    recommended: []
-    blog: false
-    zine:
-        enabled: false
+    enabled: false
 
 contact:
     enabled: true
-    route: 'toki'
+    route: 'o-toki-tawa-mi'
     authors:
+        -
+            footerName: 'jan Tepo'
+            username: 'tbodt'
+            footerAreas: 'ante toki'
         -
             footerName: 'jan Sewe (soweli e wan esun)'
             username: 'GiggyMantis'
-            footerAreas: 'toki ante'
+            footerAreas: 'ante toki'
     team:
         enabled: true
-        route: 'kulupu_ni'
+        route: 'kulupu-pi-nasin-toki'
 
 support:
     enabled: true
 
 user:
     enabled: true
-    route: 'jan_mi'
+    route: 'mi'
     termsRoute: 'lawa'
     privacyRoute: 'privacy'  # TODO
 
@@ -135,22 +99,20 @@ profile:
     defaultWords:
         -
             header: ~
-            values: ['jan [nimi]', 'tonsi [nimi]', 'meli [nimi]', 'mije [nimi]']
+            values: []
         -
             header: ~
-            values: ['jan', 'mije', 'meli', 'tonsi', 'jan pona', 'mije lili', 'meli lili', 'tonsi lili', 'jan lili', 'pata', 'pata meli', 'pata mije', 'pata tonsi']
+            values: []
         -
             header: ~
-            values: ['lukin pona', 'suwi', 'unpa mute', 'olin', 'pona']
+            values: []
         -
             header: ~
-            values: ['jan pona', 'jan olin', 'meli olin', 'mije olin', 'tonsi olin', 'mije mi', 'meli mi', 'tonsi mi', 'unpa e mi', 'jan suwi mute', 'jan olin mute', 'a olin']
+            values: []
     flags:
         defaultPronoun: 'ona'
 
-calendar:
-    enabled: true
-    route: 'mun_mute'
+calendar: enabled: false
 
 census:
     enabled: false

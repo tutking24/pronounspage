@@ -1,5 +1,5 @@
 <template>
-    <Homepage v-if="config.pronouns.enabled"/>
+    <Homepage v-if="config.header"/>
     <Select v-else/>
 </template>
 
