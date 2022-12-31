@@ -87,12 +87,12 @@ const templates = {
     translationProposed: {
         subject: '[{{locale}}] New translations proposed',
         text: 'Check them out here: https://[[domain]]/admin',
-        html: '<p>Check them out here: <a href="https://[[domain]]/admin" target="_blank" rel="noopener">[[domain]]/admin</a></p>',
+        html: '<p>Check them out here: <a href="https://[[domain]]/admin/translations/awaiting" target="_blank" rel="noopener">[[domain]]/admin/translations/awaiting</a></p>',
     },
     translationToMerge: {
         subject: '[{{locale}}] New translations ready to be merged',
         text: 'Check them out here: https://[[domain]]/admin',
-        html: '<p>Check them out here: <a href="https://[[domain]]/admin" target="_blank" rel="noopener">[[domain]]/admin</a></p>',
+        html: '<p>Check them out here: <a href="https://[[domain]]/admin/translations/awaiting" target="_blank" rel="noopener">[[domain]]/admin/translations/awaiting</a></p>',
     },
     modMessage: {
         subject: '[[user.modMessage.subject]]',
