@@ -490,21 +490,18 @@ router.get('/admin/mod-messages/:username', handleErrorAsync(async (req, res) =>
 }));
 
 router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
-    if (!req.isGranted('users')) {
+    if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
     const dir = __dirname + '/../../moderation';
-    const susRegexes = fs.readFileSync(dir + '/sus.txt').toString('utf-8').split('\n').filter(x => !!x);
-    const rulesUsers = marked(fs.readFileSync(dir + '/rules-users.md').toString('utf-8'));
-    const rulesTerminology = marked(fs.readFileSync(dir + '/rules-terminology.md').toString('utf-8'));
-    const rulesSources = marked(fs.readFileSync(dir + '/rules-sources.md').toString('utf-8'));
 
     return res.json({
-        susRegexes,
-        rulesUsers,
-        rulesTerminology,
-        rulesSources,
+        susRegexes: fs.readFileSync(dir + '/sus.txt').toString('utf-8').split('\n').filter(x => !!x),
+        rulesUsers: marked(fs.readFileSync(dir + '/rules-users.md').toString('utf-8')),
+        rulesTerminology: marked(fs.readFileSync(dir + '/rules-terminology.md').toString('utf-8')),
+        rulesSources: marked(fs.readFileSync(dir + '/rules-sources.md').toString('utf-8')),
+        timesheets: marked(fs.readFileSync(dir + '/timesheets.md').toString('utf-8')),
     })
 }));
 
@@ -520,6 +517,26 @@ router.post('/admin/set-notification-frequency', handleErrorAsync(async (req, re
     await req.db.get(SQL`UPDATE users SET adminNotifications = ${req.body.frequency} WHERE id = ${req.user.id}`);
 
     return await loadCurrentUser(req, res);
+}));
+
+router.get('/admin/timesheet', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('panel')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const ts = (await req.db.get(SQL`SELECT timesheets FROM users WHERE id = ${req.user.id}`)).timesheets;
+
+    return res.json(ts ? JSON.parse(ts) : null);
+}));
+
+router.post('/admin/timesheet', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('panel')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get(SQL`UPDATE users SET timesheets = ${JSON.stringify(req.body.timesheets)} WHERE id = ${req.user.id}`)
+
+    return res.json('OK');
 }));
 
 export default router;

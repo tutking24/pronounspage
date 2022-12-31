@@ -332,6 +332,8 @@ export default {
             routes.push({ path: '/admin/users', component: resolve(__dirname, 'routes/adminUsers.vue') });
             routes.push({ path: '/admin/profiles', component: resolve(__dirname, 'routes/adminProfiles.vue') });
 
+            routes.push({ path: '/admin/timesheets', component: resolve(__dirname, 'routes/adminTimesheets.vue') });
+
             routes.push({ path: '/admin/moderation', component: resolve(__dirname, 'routes/adminModeration.vue') });
             routes.push({ path: '/admin/abuse-reports', component: resolve(__dirname, 'routes/adminAbuseReports.vue') });
             routes.push({ path: '/admin/pending-bans', component: resolve(__dirname, 'routes/adminPendingBans.vue') });

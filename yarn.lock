@@ -2076,6 +2076,11 @@ avris-futurus@^1.0.2:
   resolved "https://registry.yarnpkg.com/avris-futurus/-/avris-futurus-1.0.2.tgz#cb9929de17b4f0779d81d850d86216922a7c76f0"
   integrity sha512-qWLpSJRXwgBYyBaJmUOd/OOKdanb5EmfhFD1cMqTcu9256RR//9rvlr7rFYoWoQMoyEDqZa7WFvKFgmUq9vaAw==
 
+avris-generator@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/avris-generator/-/avris-generator-0.8.2.tgz#a021e5f0896a9c3e998decbce2abda06acc14f4e"
+  integrity sha512-dQA9vTgl/+EYw4Dpj7SxlA3qameeKonyiFSOOTRElgxI4CUy1j7YLmH3LFJUlxcPvUZkKiR7KhDrQbcjcadM4A==
+
 avris-sorter@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/avris-sorter/-/avris-sorter-0.0.3.tgz#8683de663ec521ae1b4da1c576dc84c9a7dd9f38"

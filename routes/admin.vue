@@ -71,6 +71,11 @@
             >
                 <button class="btn btn-primary btn-sm" @click="impersonate('example@pronouns.page')">Impersonate</button>
             </AdminDashboardCard>
+            <AdminDashboardCard
+                icon="file-spreadsheet"
+                link="/admin/timesheets"
+                header="Volunteering timesheets"
+            />
         </div>
 
         <template v-for="({name, config: localeConfig, url, published}, locale) in allLocales" v-if="$isGranted('panel', locale)">

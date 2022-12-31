@@ -16,6 +16,7 @@
     "@privyid/nuxt-csrf": "^1.0.0",
     "avris-columnist": "^0.3.1",
     "avris-futurus": "^1.0.2",
+    "avris-generator": "^0.8.2",
     "avris-sorter": "^0.0.3",
     "aws-sdk": "^2.799.0",
     "body-parser": "^1.19.0",
