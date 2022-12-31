@@ -152,7 +152,7 @@ router.get('/admin/stats', handleErrorAsync(async (req, res) => {
         if (locale === '_' || locale === 'calculatedAt') { continue; }
 
         if (!req.isGranted('panel', locale)) {
-            delete stats.locales[locale];
+            delete stats[locale];
         }
     }
 
