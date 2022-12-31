@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <Page wide>
     <NotFound v-if="!$isGranted('panel')"/>
     <div v-else>
         <h2>

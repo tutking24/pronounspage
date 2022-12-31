@@ -1,6 +1,6 @@
 <template>
-    <div class="col-12 col-lg-4">
-        <component :is="link ? 'a' : 'div'" :href="(baseUrl || '') + link" class="card mb-3" style="min-height: 164px;">
+    <div class="col-12 col-lg-3">
+        <component :is="link ? 'a' : 'div'" :href="(baseUrl || '') + link" class="card mb-3" style="min-height: 128px;">
             <div class="card-body text-center d-flex align-items-center">
                 <div class="w-100">
                     <h4>
