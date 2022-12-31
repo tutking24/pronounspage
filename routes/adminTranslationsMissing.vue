@@ -1,5 +1,5 @@
 <template>
-    <Page>
+    <Page wide>
     <NotFound v-if="!$isGranted('translations')"/>
     <div v-else>
         <p>
