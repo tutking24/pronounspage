@@ -9,7 +9,7 @@ const util = require('util');
 
 async function calculate() {
     const db = await dbConnection();
-    const stats = await calculateStats(db, buildLocaleList(null, true));
+    const stats = await calculateStats(db, buildLocaleList(null, true), __dirname + '/..');
     await db.close();
 
     console.log(util.inspect(stats, {showHidden: false, depth: null, colors: true}))

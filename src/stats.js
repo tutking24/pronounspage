@@ -110,7 +110,7 @@ const checkHeartbeat = async () => {
     return heartbeat;
 }
 
-module.exports.calculateStats = async (db, allLocales) => {
+module.exports.calculateStats = async (db, allLocales, projectDir) => {
     const id = ulid();
 
     const heartbeat = await checkHeartbeat();
@@ -137,7 +137,7 @@ module.exports.calculateStats = async (db, allLocales) => {
     for (let locale in allLocales) {
         if (!allLocales.hasOwnProperty(locale)) { continue; }
 
-        const translations = new Suml().parse(fs.readFileSync(`./locale/${locale}/translations.suml`).toString());
+        const translations = new Suml().parse(fs.readFileSync(`${projectDir}/locale/${locale}/translations.suml`).toString());
         const missingTranslations = expectedTranslations.filter(key => deepGet(translations, key) === undefined).length;
 
         stats.push({
