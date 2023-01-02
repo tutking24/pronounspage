@@ -8,7 +8,7 @@ home:
     headerLong: '대명사 목록'
     welcome: 'pronouns.page로 환영합니다!'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
+        '논바이너리와 성 중립 언어에 대한 정보 출처를 만들고 있읍니다.'
     why: '대명사는 왜 그렇게 중요한가요?'
     about:
         - >
@@ -121,6 +121,8 @@ sources:
     otherVersions: '다른 언어'
     referenced: '사용 예'
 
+translationMode:
+    action: '번역 제안하기'
 
 nouns:
     header: '사전'
@@ -467,6 +469,14 @@ contact:
             description: >
                 새로운 언어 버전을 만들는 방법은 {https://en.pronouns.page/new-version=여기} 있습니다. 다른 기여자들이 벌써 통력하는 중일 수 있으니 같이 협력할 수 있게
                 시작 전 {/contact=문의해 주세요}.
+        translations:
+            header: '번역 추가 또는 수정하기'
+            description: '변역이 안 돼있던지 틀린가요? 바닥글에 있는 "번역 제안하기"를 누르고 설명을 따르세요.'
+        technical:
+            header: '풀 요청 제출'
+            description: >
+                기술 작업은 {https://gitlab.com/Avris/Zaimki/-/boards=이 칸반 보드}에서 관리됩니다. "To Do" 열에 있는 할당돼있지 않은 작업들 중 한 작업 자신에게
+                할당한 후 작업을 시작하면 됩니다. 질문이 있다면 주저하지 말고 물어 주세요.
 
 support:
     header: '지원'
@@ -562,6 +572,26 @@ profile:
     words: '단어'
     birthday: '나이'
     birthdayInfo: '생일은 공개하지 않고 계산된 나이만 공개합니다.'
+    timezone:
+        areas:
+            Pacific: '태평양'
+            Indian: '인도'
+            Europe: '유럽'
+            Australia: '호주'
+            Atlantic: '대서양'
+            Asia: '아시아'
+            Arctic: '북극'
+            Antarctica: '남극'
+            America: '미국'
+            Africa: '아프리카'
+        approximate: '그냥 대략적인 위치입니다'
+        time: '내 시간대에는 %weekday% %time% (이)야!'
+        publishLocation: '카드에 이 영역를 제소하세요'
+        publishArea: '카드에 이 대륙을 제소하세요'
+        detect: '찾기 '
+        info: '이 부분을 작성하면 당신의 카드에 <strong> 당신이 사는 곳에 몇 시인지 </strong> 공개됩니다. 추가로 당신의 대략적인 위치도 공개할 수 있습니다.'
+        placeholder: '시간대를 고르세요'
+        header: '시간대'
     flags: '플래그'
     flagsInfo: '이 프레임에 프라이드 플래그를 끌어다 놓세요.'
     flagsCustom: '맞춤 플래그 업로드'
@@ -569,7 +599,27 @@ profile:
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: '링크'
     linksRecommended: '여기 연결하는 것이 좋습니다.'
-    # TODO
+    opinions:
+        colours:
+            _: '(글꼴 색갈…)'
+            pink: '분홍'
+            red: '빨강'
+            orange: '주황'
+            green: '초록'
+            blue: '파랑'
+            grey: '회색'
+        styles:
+            _: '(스타일…)'
+            bold: '볼드체'
+            italics: '기울임체'
+            small: '작은체'
+        validation:
+            missingIcon: '아이콘이 필요합니다'
+            missingDescription: '설명글이 필요합니다'
+            duplicateIcon: '아이콘은 고유해야 합니다'
+            duplicateDescription: '설명글은 고유해야 합니다'
+            invalidOpinion: '선택된 아이콘은 위 범례에 없습니다'
+        custom: '커스텀, 이 유저가 추가함:'
     verifiedLinks:
         header: 'Verified links'
         info: >
@@ -579,6 +629,7 @@ profile:
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '열'
     circles:
+        header: '내 서클'
         yourMentions:
             header: '당신이 멘션된 서클들'
             description: '당신을 서클로 추가한 사람들입니다. 만약 당신도 그를 추가하면 두 카드들에 체크마크가 [s:shield-check] 생겨요.'
@@ -630,6 +681,10 @@ crud:
     loginRequired: '{/account=로그인}하고 항목 제출하세요'
     copy: '링크 복사'
     download: '다운로드'
+    validation:
+        listMaxLength: '이 목록의 최대 요소 수는 %maxlength% 입니다.'
+        genericForm: '제출된 양식이 유효하지 않습니다. 문제를 고치고 다시 보내세요.'
+    loadAll: '모두 로드하기…'
 
 footer:
     license: >
@@ -640,8 +695,17 @@ footer:
     technical: '전문'
     sibling: '형제 프로젝트'
     stats:
+        overall: '모든 언어 버전들'
+        current: '이 버전만'
         keys:
             cards: '카드들'
+            visitors: '고유한 방문자들'
+            pageviews: '페이지 조회수'
+            realTimeVisitors: '현재 온라인인 유저들'
+            users: '등록 된 유저들'
+        month: '월'
+        header: '통계'
+            
 
 notFound:
     message: '페이지를 찾을 수 없습니다'
@@ -795,6 +859,8 @@ admin:
         roles: '권한'
         profiles: '프로필'
         confirmRole: '@%username%의 역할을 "%role%"(으)로 전환하시겠습니까?'
+        login:
+            deprecated: '더 이상 사용되지 않음'
 
 table:
     empty: '비음…'
@@ -835,6 +901,7 @@ mode:
     light: '라이트 모드'
     automatic: 'Automatic'
     dark: '다크 모드'
+    reducedColours: '감소된 색갈'
 
 ban:
     reason: '금지 사유'
