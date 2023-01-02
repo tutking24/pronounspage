@@ -1,4 +1,4 @@
-<template>
+\<template>
     <div v-if="config.ads && config.ads.enabled && active"
          :class="[adPlaceholdersVisible ? 'ad-placeholder' : '']">
         <span v-if="adPlaceholdersVisible">{{phkey}} / {{adConfig.slotId}}</span>
@@ -33,6 +33,10 @@ export default {
                 responsive,
             }
         }
+    },
+    mounted() {
+        if (!process.client) { return; }
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
     },
     computed: {
         ...mapState([

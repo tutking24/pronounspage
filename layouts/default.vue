@@ -81,8 +81,6 @@
                 if (!this.adsEnabled) { return; }
 
                 await this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
-
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
             }
         },
         computed: {
