@@ -51,7 +51,6 @@ export default ({ app, store }) => {
 
         const s = document.createElement('script');
         s.setAttribute('src', src);
-        s.setAttribute('crossorigin', 'anonymous')
         s.classList.add(`${name}-script`);
         s.onload = resolveFn;
         s.onerror = rejectFn;
