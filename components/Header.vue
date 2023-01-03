@@ -285,7 +285,16 @@
                             icon: 'user-cog',
                             text: this.$t('admin.header'),
                             textLong: this.$t('admin.header'),
-                            extra: ['/admin/moderation'],
+                            extra: [
+                                '/admin/users',
+                                '/admin/profiles',
+                                '/admin/timesheets',
+                                '/admin/moderation',
+                                '/admin/abuse-reports',
+                                '/admin/pending-bans',
+                                '/admin/translations/missing',
+                                '/admin/translations/awaiting',
+                            ],
                         });
                     }
                 }
