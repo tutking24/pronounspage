@@ -56,7 +56,7 @@
                             </div>
                             <img v-if="link.avatar" :src="`/img/social/${link.avatar}`" alt="" class="rounded" style="width: 3rem;"/>
                         </div>
-                        <div class="card-body text-center">
+                        <div class="card-body text-center h6 mb-0">
                             {{link.headline}}
                         </div>
                     </a>
