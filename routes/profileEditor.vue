@@ -27,6 +27,7 @@
                         This will be shown on the “Team” page.
                         If you leave it empty, you won't show up there (for this language version).
                         You can use a different display name in different language versions.
+                        Please only add yourself here, if you're actually working on <strong>this language version</strong>.
                     </p>
 
                     <div class="form-group">
@@ -41,6 +42,7 @@
                         If you feel that you've contributed to this language version enough to get credited in the footer
                         (not saying how much that is, that's on you to decide 😉),
                         then add your name and areas here (in the local language!).
+                        Please only add yourself here, if you're actually working on <strong>this language version</strong>.
                         The team as a whole will be credited in the footer either way.
                     </p>
 
