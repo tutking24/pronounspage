@@ -916,8 +916,9 @@ terms:
                 misogyny: 'misoginism'
                 harassment: 'hărțuire'
                 impersonation: 'impersonare'
-                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
+                selfHarm: 'encouraging self-harm and/or suicide'
                 childPornography: 'pornografie cu minori'
+                pedophilia: 'broadly understood pedophilia advocacy'
                 unlawfulConduct: 'conduită ilegală'
                 misinformation: 'dezinformare'
                 doxxing: 'distribuirea datelor personale ale cuiva'
@@ -925,7 +926,7 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'reclame'
                 copyright: 'violări ale drepturilor de autor copyright sau a unei mărci'
-            # TODO
+                miscellaneous: 'diverse alte lucruri'
             violationsStrict: >
                 We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
                 (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).

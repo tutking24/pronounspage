@@ -855,6 +855,7 @@ terms:
                 impersonation: 'impersonation'
                 selfHarm: 'encouraging self-harm and/or suicide'
                 childPornography: 'child pornography'
+                pedophilia: 'broadly understood pedophilia advocacy'
                 unlawfulConduct: 'unlawful conduct'
                 misinformation: 'misinformation'
                 doxxing: 'sharing of someone else''s personal data'
@@ -862,6 +863,7 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'advertisement'
                 copyright: 'copyright or trademark violations'
+                miscellaneous: 'miscellaneous'
             violationsStrict: >
                 We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
                 (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).

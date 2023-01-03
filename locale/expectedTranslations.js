@@ -75,8 +75,6 @@ module.exports = [
     'crud.loadAll',
     'crud.validation.genericForm',
     'crud.validation.listMaxLength',
-    'terms.content.content.violationsExamples.pedophilia',
-    'terms.content.content.violationsExamples.miscellaneous',
     'profile.circles.header',
     'profile.circles.info',
     'profile.circles.relationship',
