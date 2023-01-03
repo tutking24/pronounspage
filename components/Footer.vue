@@ -131,10 +131,6 @@
                         Using <a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">gradientmagic.com</a>
                         and <a href="https://twemoji.twitter.com/" target="_blank" rel="noopener">Twemoji</a>
                     </li>
-                    <li class="mb-2">
-                        <Icon v="money-bill-wave-alt"/>
-                        <Financial/>
-                    </li>
                 </ul>
 
                 <p class="h6 mb-2">

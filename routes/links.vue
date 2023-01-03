@@ -9,19 +9,18 @@
             </h2>
             <BlogEntriesList :posts="posts" details/>
         </section>
-        <AdPlaceholder phkey="main-0"/>
         <Endorsements/>
-        <AdPlaceholder phkey="main-1"/>
+        <AdPlaceholder phkey="main-0"/>
         <Links/>
-        <AdPlaceholder phkey="main-2"/>
+        <AdPlaceholder phkey="main-1"/>
         <AcademicLinks v-if="!config.links.split && config.links.academic.length > 0"/>
-        <AdPlaceholder phkey="main-3"/>
+        <AdPlaceholder phkey="main-2"/>
         <Media v-if="(config.links.mediaGuests.length + config.links.mediaMentions.length > 0) && (!config.links.split || (config.links.mediaGuests.length + config.links.mediaMentions.length <= 2))"/>
-        <AdPlaceholder phkey="main-4"/>
+        <AdPlaceholder phkey="main-3"/>
         <Recommended/>
-        <AdPlaceholder phkey="main-5"/>
+        <AdPlaceholder phkey="main-4"/>
         <Socials/>
-        <AdPlaceholder phkey="main-6"/>
+        <AdPlaceholder phkey="main-5"/>
         <LanguageVersions/>
         <section>
             <h2 class="mb-3">

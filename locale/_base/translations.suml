@@ -425,11 +425,14 @@ contact:
         all: ''
         calendar: 'Queer Calendar Bot'
     faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
+        Before you write, <strong>check out our </strong>{/faq=<strong>FAQ</strong>} – maybe the answer to your question is already there.
     technical: >
-        Do you have a technical issue or question? Please include your username and as many details as possible
+        Do you see <strong>a bug</strong> or have a technical question?
+        Please include your username and <strong>as many details as possible</strong> in your message
         (what does the error message say? are you on your phone or a desktop? which browser do you use?
         what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
+        Please also <strong>try disabling extensions</strong> that might be breaking the page
+        (eg. ad blockers mistakenly removing something that isn't an ad) and see if that helps.
     hate: >
         Wanna send us queerphobic hate mail?
         Just give it up, we're not discussing with trolls.

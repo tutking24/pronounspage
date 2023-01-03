@@ -56,7 +56,9 @@ so their ads wouldn't be relevant for most of our users. We contacted them, aski
 (they aren't) or if they know similarly privacy-friendly but more generic providers
 (they couldn't find them, that's why they started their own company).
 Ultimately, we went with [Ezoic](https://www.ezoic.com/) who claim to balance user experience and revenue in a smart way.
-It's not ideal, but I'm still trying to make it as fair to the users as possible, for example:
+(Update: for many reasons we're now experimenting with AdSense instead)
+It's not ideal, but I'm still trying to make it as fair to the users as possible,
+for example (as much as the providers allow such customisations):
 
  - GDPR requires that services ask for users' consent before storing tracking cookies for personalised ads;
    and apparently it's a standard practice to only show those consent banners to users covered by GDPR 🙄
@@ -76,9 +78,6 @@ It's not ideal, but I'm still trying to make it as fair to the users as possible
    while others focus more on getting the word out there in the first place –
    we'd like them to be able to focus more on the message and the activism without advertising noise,
    therefore we only enable ads on the English page;
- - despite Ezoic's advice for maximising revenue, I don't want ads on the very top of the screen 
-   or ones that block the screen when navigating to a different page;
-   let's first provide main content and only after that think about interrupting it with ads, not the other way round; 
  - it should go without saying, but for completeness I'll mention that
    we wouldn't dare to keep asking you for donations or using arc.io widget anymore.
 

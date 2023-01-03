@@ -11,8 +11,6 @@
             </div>
         </section>
 
-        <AdPlaceholder phkey="small-homepage"/>
-
         <MarkSus>
             <Profile :user="user" :profile="profile" :terms="terms"/>
         </MarkSus>
