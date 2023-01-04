@@ -3,7 +3,7 @@
         <div v-for="post in postsFull" class="columnist-column col-12 col-sm-6 col-md-4 mb-3">
             <div class="card shadow">
                 <nuxt-link v-if="post.hero" :to="generateLink(post.slug)" class="">
-                    <img :src="post.hero" class="w-100"/>
+                    <img :src="post.hero" class="w-100" loading="lazy"/>
                 </nuxt-link>
                 <nuxt-link :to="generateLink(post.slug)" class="card-body text-center h4 p-3 mb-0">
                     <Spelling :text="post.title"/>

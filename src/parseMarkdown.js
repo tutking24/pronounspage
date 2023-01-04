@@ -77,7 +77,7 @@ export default async function parseMarkdown(markdown) {
                         classNames = m[1];
                         attrs = attrs.replace(/alt="{(.*)}/, 'alt="');
                     }
-                    return `<div class="text-center"><img ${attrs} class="${classNames}"></div>`;
+                    return `<div class="text-center"><img ${attrs} class="${classNames}" loading="lazy"></div>`;
                 })
                 .replace(/{favicon=(.+?)}/g, '<img src="https://$1" alt="Favicon" style="width: 1em; height: 1em;"/>')
                 .replace(/{embed=\/\/(.+?)=(.+?)}/g, '<div style="position: relative;height: 0;padding-bottom: 56.25%;"><iframe src="https://$1" title="$2" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups" style="position: absolute;top: 0; left: 0;width: 100%;height: 100%;border:0;"></iframe></div>')
