@@ -25,6 +25,7 @@
                     <tr>
                         <th>Area</th>
                         <th v-for="month in months">{{month}}</th>
+                        <th>Sum</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,14 +33,35 @@
                         <th>{{area}}</th>
                         <td v-for="(month, m) in months">
                             <input v-model.number="timesheet[year][m][area]"
+                                   :ref="`cell-${m}-${areas.indexOf(area)}`"
                                    type="number"
                                    min="0"
                                    max="160"
                                    step="0.5"
                                    class="form-control form-control-sm"
                                    style="min-width: 3rem"
+                                   @focus="focusMonth = parseInt(m);focusArea = areas.indexOf(area)"
+                                   @keydown="cellKeydown"
                                    :disabled="dt(year, m) < closed || dt(year, m) > max"
                             />
+                        </td>
+                        <td>
+                            <strong>
+                                {{ sumCells(area, undefined) }}
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sum</th>
+                        <td v-for="(month, m) in months">
+                            <strong>
+                                {{ sumCells(undefined, m) }}
+                            </strong>
+                        </td>
+                        <td>
+                            <strong>
+                                {{ sumCells(undefined, undefined) }}
+                            </strong>
                         </td>
                     </tr>
                 </tbody>
@@ -145,6 +167,9 @@ export default {
             areas: AREAS,
             months: MONTHS,
             transferMethods: TRANSFER_METHODS,
+
+            focusMonth: null,
+            focusArea: null,
         }
     },
     async asyncData({ app }) {
@@ -209,6 +234,49 @@ export default {
                 }
             })
             await this.$alert('Saved successfully', 'success');
+        },
+        cellKeydown(e) {
+            let newFocusMonth = this.focusMonth;
+            let newFocusArea = this.focusArea;
+            switch (e.key) {
+                case 'ArrowLeft':
+                    newFocusMonth--;
+                    break;
+                case 'ArrowRight':
+                    newFocusMonth++;
+                    break;
+                case 'ArrowUp':
+                    newFocusArea--;
+                    break;
+                case 'ArrowDown':
+                    newFocusArea++;
+                    break;
+                default:
+                    return;
+            }
+            const $ref = this.$refs[`cell-${newFocusMonth}-${newFocusArea}`];
+            if (!$ref || !$ref.length || $ref[0].getAttribute('disabled')) {
+                return;
+            }
+            $ref[0].focus();
+            e.preventDefault();
+            e.stopPropagation();
+        },
+        sumCells(area, month) {
+            let sum = 0;
+            for (let m in this.timesheet[this.year]) {
+                if (month !== undefined && parseInt(m) !== parseInt(month)) { continue; }
+                for (let a in this.timesheet[this.year][m]) {
+                    if (area !== undefined && a !== area) { continue; }
+                    sum += this.timesheet[this.year][m][a] || 0;
+                }
+            }
+            return sum;
+        },
+    },
+    watch: {
+        year() {
+            this.$refs[`cell-1-0`][0].focus();
         },
     },
     head() {
