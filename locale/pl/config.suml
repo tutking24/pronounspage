@@ -1753,6 +1753,7 @@ calendar:
 census:
     enabled: true
     route: 'spis'
+    # when bumping edition, remember to also bump max birth year
     edition: '2023'
     start: '2023-02-01T00:00:00+01:00'
     end: '2023-02-28T23:59:59+02:00'
@@ -1798,7 +1799,7 @@ census:
         -
             type: 'number'
             min: 1900
-            max: 2009  # min. 13 lat, GDPR
+            max: 2010  # min. 13 lat, GDPR
             question: 'Twój rok urodzenia'
         -
             type: 'radio'
