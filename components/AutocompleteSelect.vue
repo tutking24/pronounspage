@@ -2,10 +2,11 @@
     <div class="select flex-grow-1">
         <input type="text" v-model="filter" class="form-control" @focus="show" @blur="hide" :placeholder="$t('profile.timezone.placeholder')"/>
         <div class="list-group shadow" v-show="shown">
-            <a v-for="option in options" v-if="!filter || option.toLowerCase().includes(filter.toLowerCase())"
+            <a v-for="(display, option) in options"
+               v-if="!filter || option.toLowerCase().includes(filter.toLowerCase()) || display.toLowerCase().includes(filter.toLowerCase())"
                class="list-group-item list-group-item-action" href="#"
                @click.prevent="select(option)">
-                {{ option }}
+                {{ display }}
             </a>
         </div>
     </div>
@@ -20,13 +21,13 @@ export default {
     },
     data() {
         return {
-            filter: this.value || '',
+            filter: this.options[this.value] || this.value || '',
             shown: false,
         }
     },
     watch: {
         value() {
-            this.filter = this.value;
+            this.filter = this.options[this.value] || this.value;
         },
     },
     methods: {

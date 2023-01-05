@@ -17,7 +17,7 @@
             <span v-if="value.area && value.loc">/</span>
             <template v-if="value.loc">
                 <Icon v="map-marked-alt"/>
-                {{ timezone.location }}
+                {{ timezone.displayLocation }}
                 <br/><small class="text-muted"><T>profile.timezone.approximate</T></small>
             </template>
         </p>

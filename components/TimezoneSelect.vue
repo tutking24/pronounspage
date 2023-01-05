@@ -48,7 +48,7 @@ export default {
     },
     data() {
         return {
-            timezones: [],
+            timezones: {},
             timezone: this.value?.tz,
             publishArea: !!this.value?.area,
             publishLocation: !!this.value?.loc,
@@ -57,7 +57,9 @@ export default {
     mounted() {
         if (!process.client) { return; }
 
-        this.timezones = Intl.supportedValuesOf('timeZone');
+        for (let tz of Intl.supportedValuesOf('timeZone')) {
+            this.timezones[tz] = this.timezoneDisplayName(tz);
+        }
     },
     methods: {
         detect() {

@@ -274,7 +274,7 @@
     import link from '../plugins/link';
     import {minBirthdate, maxBirthdate, formatDate, parseDate} from '../src/birthdate';
     import opinions from '../src/opinions';
-    import t from '../src/translator';``
+    import t from '../src/translator';
 
     const defaultWords = config.profile.defaultWords.map(({header, values}) => {
         return {
