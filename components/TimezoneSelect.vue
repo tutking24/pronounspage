@@ -30,7 +30,7 @@
                     <br class="d-md-none"/>
                     <strong>
                         <Icon v="map-marked-alt"/>
-                        {{ getTimezoneInfo(timezone).location }}
+                        {{ getTimezoneInfo(timezone).displayLocation }}
                     </strong>
                 </label>
             </div>
