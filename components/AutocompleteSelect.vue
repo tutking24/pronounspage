@@ -1,10 +1,12 @@
 <template>
     <div class="select flex-grow-1">
-        <input type="text" v-model="filter" class="form-control" @focus="show" @blur="hide" :placeholder="$t('profile.timezone.placeholder')"/>
+        <input type="text" v-model="filter" class="form-control" :placeholder="$t('profile.timezone.placeholder')"
+               ref="filter"
+               @focus="show" @blur="hide" @keydown="filterKeydown"
+        />
         <div class="list-group shadow" v-show="shown">
-            <a v-for="(display, option) in options"
-               v-if="!filter || option.toLowerCase().includes(filter.toLowerCase()) || display.toLowerCase().includes(filter.toLowerCase())"
-               class="list-group-item list-group-item-action" href="#"
+            <a v-for="(display, option) in visibleOptions"
+               :class="['list-group-item', 'list-group-item-action', highlightedOption === option ? 'active' : '']" href="#"
                @click.prevent="select(option)">
                 {{ display }}
             </a>
@@ -23,23 +25,62 @@ export default {
         return {
             filter: this.options[this.value] || this.value || '',
             shown: false,
+            highlighted: -1,
         }
     },
     watch: {
         value() {
             this.filter = this.options[this.value] || this.value;
+            this.highlighted = -1;
         },
     },
     methods: {
         select(option) {
             this.$emit('input', option);
             this.hide();
+            this.highlighted = -1;
         },
         show() {
             this.shown = true;
         },
         hide() {
             setTimeout(() => { this.shown = false; }, 100)
+        },
+        filterKeydown(e) {
+            if (!this.shown) {
+                this.show();
+            }
+
+            switch (e.key) {
+                case 'ArrowUp':
+                    this.highlighted--;
+                    break;
+                case 'ArrowDown':
+                    this.highlighted++;
+                    break;
+                case 'Enter':
+                    if (this.highlightedOption) {
+                        this.select(this.highlightedOption);
+                    }
+                    break;
+                default:
+                    return;
+            }
+
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    },
+    computed: {
+        visibleOptions() {
+            return Object.fromEntries(Object.entries(this.options).filter(([option, display]) => {
+                return !this.filter
+                    || option.toLowerCase().includes(this.filter.toLowerCase())
+                    || display.toLowerCase().includes(this.filter.toLowerCase())
+            }));
+        },
+        highlightedOption() {
+            return Object.keys(this.visibleOptions)[this.highlighted];
         },
     }
 }
