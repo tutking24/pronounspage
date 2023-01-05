@@ -9,20 +9,20 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Nominatief</th>
-                    <th>Accusatief</th>
-                    <th>Possessief</th>
-                    <th>Verbogen possessief</th>
-                    <th>Reflexief</th>
+                    <th>Onderwerp</th>
+                    <th>Lijdend voorwerp</th>
+                    <th>Meewerkend voorwerp</th>
+                    <th>Bezittelijk (bijvoeglijk)</th>
+                    <th>Bezittelijk (zelfstandig)</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="nominative" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="accusative" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="dative" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronominal_poss" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="predicative_poss" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
