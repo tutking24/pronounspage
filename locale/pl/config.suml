@@ -2029,6 +2029,7 @@ census:
             options:
                 - ['razi mnie, wolę „rodzaj neutralny”']
                 - ['nie przeszkadza mi']
+                - ['wolę „rodzaj nijaki”']
                 - ['nie mam zdania']
         -
             type: 'checkbox'
