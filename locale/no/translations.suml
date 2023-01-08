@@ -523,7 +523,43 @@ profile:
         trans og hetero).
     links: 'Lenker'
     linksRecommended: 'Vi anbefaler å gå til'
-    # TODO
+    circles:
+        header: 'Min sirkel'
+        info: >
+            Her kan du nevne <strong>de som er deg nærmest</strong>, sammen med ordene du kaller dem (feks. “ektefelle”
+            vs. “kone” vs. “mann”). Vi er ikke et sosialt medium, dette er ikke en <strong>liste av venner eller
+            følgere</strong>, derfor er lengden av dette feltet begrenset. Vær oppmerksom på at de du nevner her<strong>
+            kan se at du har nevnet dem – </strong> og kan rapportere deg for trakassering, hvis du velger å si negative
+            ting om dem. Om en forbindelse er gjensidig, vil den bli markert med [s:shield-check].
+        relationship: 'Forhold (feks. “partner”, “bestevenn”)'
+        mutual: 'Denne forbindelsen går begge veier'
+        validation:
+            required: 'Forhold er et påbudt felt'
+            userNotFound: 'Denne brukeren eksisterer ikke'
+        yourMentions:
+            description: >
+                Her er en liste av folk som har lagt deg til i sine sirkler. Hvis du legger dem til tilbake, vil en hake
+                [s:shield-check] vises i begge av kortene deres.
+    timezone:
+        header: 'Tidssone'
+        placeholder: 'Velg din tidssone'
+        detect: 'Oppdag'
+        time: 'Klokka er %time% på en %weekday% i min tidssone'
+        areas:
+            Africa: 'Afrika'
+            America: 'Amerika'
+            Europe: 'Europa'
+            Antarctica: 'Antarktis'
+            Arctic: 'Arktisk'
+            Atlantic: 'Atlantisk'
+            Pacific: 'Stillehavet '
+            Indian: 'Indisk'
+        publishLocation: 'Publiser området på profilen din'
+        publishArea: 'Publiser kontinentet på profilen din'
+        approximate: 'Området er bare tilnærmet'
+        info: >
+            Hvis du fyller ut dette feltet, vil kortet ditt vise <strong>hva klokka er der du bor</strong>. Eventuelt kan
+            du også velge å vise tilnærmet hvor du er.
     verifiedLinks:
         header: 'Verified links'
         info: >
