@@ -57,7 +57,7 @@ home:
 pronouns:
     header: 'Pronomen'
     headerLong: 'Pronomen'
-    examples: 'Beispiel-Nutzung in Sätzen'
+    examples: 'Beispielsätze'
     plural: 'Plural'
     intro: 'Meine Pronomen sind'
     normative: 'Normativ'
@@ -67,8 +67,8 @@ pronouns:
         raw: 'austauschbar'
     generated: 'Diese Pronomen wurden mit Hilfe eines Generators erstellt. Das Team von pronouns.page ist nicht verantwortlich für diese.'
     any:
-        header: 'Beliebige Pronomen'
-        short: 'beliebig'
+        header: 'Alle Pronomen/beliebige Pronomen'
+        short: 'alle'
         description: >
             Auch wenn es für manche Menschen sehr wichtig ist, dass bestimmte Pronomen benutzt werden, wenn über sie geredet wird, ist es anderen egal, welche Pronomen für sie verwendet werden.
         options: 'Überprüfe die Optionen [share]{/pronomen=hier}.'
