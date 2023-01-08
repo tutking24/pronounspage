@@ -116,13 +116,13 @@
                     route: this.config.user.route,
                 })
             }
-            if (this.config.locale === 'pl') {
-                mainLinks.push({
-                    icon: 'isjp.svg',
-                    header: 'isjp.homepage',
-                    link: 'https://isjp.pl',
-                })
-            }
+            // if (this.config.locale === 'pl') {
+            //     mainLinks.push({
+            //         icon: 'isjp.svg',
+            //         header: 'isjp.homepage',
+            //         link: 'https://isjp.pl',
+            //     })
+            // }
 
             return {
                 mainLinks,

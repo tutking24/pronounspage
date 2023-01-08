@@ -18,5 +18,15 @@
                 Emoji Pride Flags
             </a>
         </li>
+        <li class="mb-2">
+            <a v-if="config.locale === 'pl'" href="https://isjp.pl/" target="_blank" rel="noopener">
+                <Icon v="isjp.svg"/>
+                Inkluzywny Słownik Języka Polskiego
+            </a>
+            <a v-else href="https://isjp.pl/en" target="_blank" rel="noopener">
+                <Icon v="isjp.svg"/>
+                Inclusive Polish Spellcheck
+            </a>
+        </li>
     </ul>
 </template>
