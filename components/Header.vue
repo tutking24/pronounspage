@@ -305,8 +305,8 @@
                 if (!process.client) {
                     return false;
                 }
-                const finished = !!parseInt(window.localStorage.getItem('census-finished') || 0);
-                const dismissed = !!parseInt(window.localStorage.getItem('census-dismissed') || 0);
+                const finished = !!parseInt(window.localStorage.getItem(`census-${this.config.census.edition}-finished`) || 0);
+                const dismissed = !!parseInt(window.localStorage.getItem(`census-${this.config.census.edition}-dismissed`) || 0);
                 const alreadyIn = this.$route.path === '/' + this.config.census.route;
                 if (!this.config.census.enabled || finished || dismissed || this.censusDismissed || alreadyIn) {
                     return false;
@@ -337,7 +337,7 @@
                 this.hamburgerShown = st > 300;
             },
             dismissCensus() {
-                window.localStorage.setItem('census-dismissed', '1');
+                window.localStorage.setItem(`census-${this.config.census.edition}-dismissed`, '1');
                 this.censusDismissed = true;
             }
         },
