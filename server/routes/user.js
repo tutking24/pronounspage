@@ -163,6 +163,7 @@ export const issueAuthentication = async (db, user, fetch = true, guardMfa = fal
     delete user.suspiciousChecked;
     delete user.bannedBy;
     delete user.banSnapshot;
+    delete user.timesheets;
 
     if (extend) {
         user = {
@@ -298,6 +299,8 @@ export const loadCurrentUser = async (req, res) => {
         res.clearCookie('token');
         return res.json(null);
     }
+
+    delete dbUser.timesheets;
 
     const token = await issueAuthentication(req.db, dbUser, false);
     res.cookie('token', token, cookieSettings);
