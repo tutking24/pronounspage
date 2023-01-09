@@ -771,7 +771,7 @@ links:
                 a nie chcemy obrażać dzieci.
         -
             lang: ['es']
-            icon: 'play-circle'
+            icon: 'podcast'
             url: 'https://open.spotify.com/episode/286zTXBHA0ChWNaWSwgFa0'
             headline: 'El lenguaje inclusivo de lxs polacxs – Ausir i Dante w hiszpańskojęzycznym podcaście <strong>Proyecto Polonia</strong>'
         -
@@ -812,7 +812,7 @@ links:
             headline: 'Tip-top. Krok w stronę feminatywów.'
             extra: 'Sybil, <strong>Gdy Nauka jest Kobietą UAM</strong>'
         -
-            icon: 'play-circle'
+            icon: 'podcast'
             url: 'https://spoti.fi/3DsrA0J'
             headline: 'Język niebinarny dla początkujących'
             extra: ' – Archie w podcaście <strong>Dobrze zrozumieć</strong> w ramach kampanii {http://www.todziala.org=<strong>To działa!</strong>}'
@@ -891,7 +891,7 @@ links:
             headline: 'Webinar o inkluzywności języka z okazji Pride Month'
             extra: ' – Szymon i Andrea wraz z Babą od Polskiego u <strong>European Youth Parliament</strong>'
         -
-            icon: 'play-circle'
+            icon: 'podcast'
             url: 'https://www.jezykowekontrowersje.pl/podcast/'
             headline: 'Niebinarność, inkluzywność i język. Rozmowa z Szymonem Miśkiem.'
             extra: ' – Szymon w podkaście <strong>Językowe kontrowersje</strong>'
@@ -937,6 +937,11 @@ links:
             url: 'https://www.glamour.pl/artykul/jezyka-nie-skrzywdzisz-ale-mozesz-skrzywdzic-czlowieka-andrea-vos-i-anna-tess-golebiowska-o-jezyku-neutralnym-plciowo-221205101113'
             headline: '„Języka nie skrzywdzisz, ale możesz skrzywdzić człowieka”. Andrea Vos i Anna Tess Gołębiowska o języku neutralnym płciowo'
             extra: '– <strong>Glamour</strong>'
+        -
+            icon: 'radio'
+            url: 'https://audycje.tokfm.pl/podcast/133977,-Zaglada-jezyka-i-jego-jej-ich-psucie-Czy-wojne-o-feminatywy-zastapi-wojna-o-jezyk-neutralny-plciowo'
+            headline: 'Szymon Misiek u Anny Piekutowskiej'
+            extra: '– Poranek Radia <strong>TOK FM</strong>'
 
     mediaMentions:
         -
@@ -964,7 +969,7 @@ links:
                 Wprawdzie już nie prowadzę słowniczka neologizmów, dalej się jednak uważnie przyglądam przemianom języka.
                 Za najciekawsze słowo roku 2020 uważam "neutratyw".
         -
-            icon: 'play-circle'
+            icon: 'radio'
             url: 'https://rss.com/podcasts/bezwstydny/75056/'
             headline: 'Niebinarność, neutratywy i prawa człowieka – Rozmowa z W. Dynarskim (<strong>Bezwstydne</strong> Podcast)'
             extra: '– <span class="text-nowrap">o zaimki.pl</span> i neutratywach w okolicach 13:40'
@@ -1363,7 +1368,7 @@ links:
             extra: '– <strong>Mexico Magico Blog</strong>'
         -
             lang: ['de']
-            icon: 'play-circle'
+            icon: 'podcast'
             url: 'https://podcasts.apple.com/de/podcast/dr-anna-mr%C3%B3z-sprachwissenschaftlerin/id1485103251?i=1000540979499'
             headline: 'Ein Gespräch mit Dr. Anna Mróz (Sprachwissenschaftlerin)'
             extra: ' – <strong>Mit Polen auf Du und Du</strong> (od około 43 minuty)'
@@ -1397,7 +1402,7 @@ links:
             headline: 'Dramat transfoba. Osoby transpłciowe wciąż istnieją, nawet po międzynarodowym dniu ich widoczności'
             extra: ' – <strong>ASZdziennik</strong>'
         -
-            icon: 'play-circle'
+            icon: 'radio'
             url: 'https://audycje.tokfm.pl/podcast/121993,Czy-Jacek-Dukaj-wie-ze-jest-praojcem-polskich-neutratywow'
             headline: 'Czy Jacek Dukaj wie, że jest praojcem polskich neutratywów?'
             extra: ' – Nagłe zastępstwo, <strong>TOK FM</strong>'
