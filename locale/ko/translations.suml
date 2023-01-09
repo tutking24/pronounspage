@@ -118,6 +118,7 @@ sources:
         key: '키'
         keyInfo: '언어 버전 간 소스 연결 및 사전 연결 식별자'
         images: '이미지'
+        spoiler: '스포일러'
     otherVersions: '다른 언어'
     referenced: '사용 예'
 
@@ -414,6 +415,7 @@ contact:
          귀하가 메시지를 작성하는 데 걸리는 시간보다 귀하를 음소거하고 스팸 폴더에 메시지를 넣는 데 걸리는 시간이 더 적습니다.
     groups:
         calendar: '퀴어 달력 봇'
+    language: '우린 국제팀입니다 – 특정한 언어 버전을 만든 사람들은 당신의 메시지를 읽을 사람들과 다를 수 있습니다. 그러니 가능하다면 <strong>영어 아님 폴란드 어</strong>로 문의 부탁합니다.'
     team:
         name: '"중립 언어 위원회" 집단'
         nameShort: '집단'
@@ -467,6 +469,15 @@ contact:
             description: >
                 새로운 언어 버전을 만들는 방법은 {https://en.pronouns.page/new-version=여기} 있습니다. 다른 기여자들이 벌써 통력하는 중일 수 있으니 같이 협력할 수 있게
                 시작 전 {/contact=문의해 주세요}.
+        translations:
+            header: '번역 추가 또는 수정하기'
+            description: '번역 문자열이 없거나 틀립니까? 바닥글에서 "번역을 제안하기"을 클릭하고 지침을 따르세요.'
+        technical:
+            header: '풀 요청 제출하기'
+            description: >
+                기술 작업은 {https://gitlab.com/Avris/Zaimki/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
+                할당하고 작업을 시작하세요. 질문이 있으면 주저하지 말고 물어 주세요.
+            footer: '기술 작업'
 
 support:
     header: '지원'
@@ -519,6 +530,7 @@ user:
     avatar:
         header: '아바타'
         change: '변하기'
+        failed: '누락된 아바타를 수정하려면 소셜 미디어를 다시 연결해 주세요.'
     deleteAccount: '어카운트 삭제'
     deleteAccountConfirm: '어카운트을 삭제하고 싶습니까? 이것은 되돌릴 수 없습니다!'
     socialConnection:
@@ -544,6 +556,9 @@ user:
         enable: 'MFA 활성화'
         disable: 'MFA 비활성화'
         disableConfirm: 'MFA를 비활성화하시겠습니까?'
+    qr:
+        header: 'QR 코드'
+        download: 'QR 코드 다운 받기'
 
 profile:
     description: '설명'
@@ -569,7 +584,6 @@ profile:
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: '링크'
     linksRecommended: '여기 연결하는 것이 좋습니다.'
-    # TODO
     verifiedLinks:
         header: 'Verified links'
         info: >
@@ -579,6 +593,16 @@ profile:
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '열'
     circles:
+        header: '내 서클'
+        info: >
+            이 필드에선 <strong>당신과 가장 가까운 사람들</strong>이랑 당신들에 관계를 알려주는 그들이 (비) 성별적인 지칭(예: “배우자” 대 “아내” 대 “남편”)이랑 함께 태그 할 수
+            있습니다. 우리는 소셜 미디엄이 아니며, <strong>이것은 친구/추종자 목록이 아니기 때문에</strong> 이 분야의 길이가 상당히 제한적입니다. <strong>여기서 태그 한 사람들은
+            그것을 볼 수 있읍니다</strong> - 그들에 대해 부정적인 것을 쓰면 괴롭힘으로 보고 할 수 있습니다. 서클에 관계가 상호인 경우 [s:shield-check]로 마크 됩니다.
+        relationship: '관계 (예: “애인”, “단짝 친구”)'
+        mutual: '이 관계는 상호입니다'
+        validation:
+            userNotFound: '그런 유저는 없읍니다'
+            required: '관계 필드는 필수입니다'
         yourMentions:
             header: '당신이 멘션된 서클들'
             description: '당신을 서클로 추가한 사람들입니다. 만약 당신도 그를 추가하면 두 카드들에 체크마크가 [s:shield-check] 생겨요.'
@@ -612,7 +636,50 @@ profile:
     language:
         header: '언어'
         description: '@%username%''님의 카드는 다음 언어로도 제공됩니다.'
-
+    wordsColumnHeader: '열 헤더'
+    opinions:
+        header: '범례/의견'
+        description: '설명…'
+        colours:
+            _: '(글꼴 색깔…)'
+            pink: '분홍'
+            red: '빨강'
+            orange: '주황'
+            green: '초록'
+            blue: '파랑'
+            grey: '회색'
+        styles:
+            _: '(스타일…)'
+            bold: '볼드체'
+            italics: '이탤릭체'
+            small: '작은체'
+        validation:
+            missingIcon: '아이콘이 필요합니다'
+            missingDescription: '설명글이 필요합니다'
+            duplicateIcon: '아이콘은 독특해야합니다'
+            duplicateDescription: '설명글은 독특해야합니다'
+            invalidOpinion: '선택된 아이콘은 위 범례에서 발견되지 않았습니다'
+        custom: '커스텀, 유저가 추가함:'
+    timezone:
+        header: '시간대'
+        placeholder: '시간대를 선택하세요'
+        info: '이 필드를 작성하면 사람들이 카드에서 <strong>당신이 사는 곳에서 지금 몇 시인 줄</strong> 볼 수 있습니다. 선택적으로, 대략적인 위치도 게시하기로 선택할 수 있습니다.'
+        detect: '찾기'
+        publishArea: '카드에 대륙을 게시하기'
+        publishLocation: '카드에 영역을 게시하기'
+        time: '내 시간대에선 현재 %weekday% %time%(이)야'
+        approximate: '단지 대략적인 위치 일뿐입니다'
+        areas:
+            Africa: '아프리카'
+            America: '미국'
+            Antarctica: '남극'
+            Arctic: '북극'
+            Asia: '아시아'
+            Atlantic: '대서양'
+            Australia: '호주'
+            Europe: '유럽'
+            Indian: '인도'
+            Pacific: '태평양'
 share: '공유'
 
 crud:
@@ -630,6 +697,10 @@ crud:
     loginRequired: '{/account=로그인}하고 항목 제출하세요'
     copy: '링크 복사'
     download: '다운로드'
+    loadAll: '모두 보기…'
+    validation:
+        genericForm: '제출된 양식은 유효하지 않습니다. 문제를 수정해 다시 보내세요.'
+        listMaxLength: '이 목록의 최대 요소 수는 %maxlength%입니다.'
 
 footer:
     license: >
@@ -640,8 +711,19 @@ footer:
     technical: '전문'
     sibling: '형제 프로젝트'
     stats:
+        header: '통계'
+        overall: '모든 언어 버전'
+        current: '이 버전만'
         keys:
             cards: '카드들'
+            users: '등록 된 유저들'
+            visitors: '독특한 방문자들'
+            pageviews: '페이지 뷰'
+            realTimeVisitors: '지금 온라인'
+            visitDuration: '평균 방문 기간'
+            uptime: '가동 시간'
+            responseTime: '평균 응답 시간'
+        month: '월'
 
 notFound:
     message: '페이지를 찾을 수 없습니다'
@@ -747,7 +829,7 @@ terms:
         intro: '안녕하세요! 2023년 1월 1일부터 다음 같은  {https://en.pronouns.page/terms=Terms of Service}에 변경사항이 적용될 것을 알립니다'
 
 privacy:
-    header: 'Privacy Policy'
+    header: '개인 정보 정책'
     content:
         intro: >
             This Privacy Policy describes how the Service provided on the website
@@ -835,6 +917,7 @@ mode:
     light: '라이트 모드'
     automatic: 'Automatic'
     dark: '다크 모드'
+    reducedColours: '감소된 색깔'
 
 ban:
     reason: '금지 사유'
@@ -862,6 +945,18 @@ report:
     sent: '보고서가 전송되었습니다. 도움을 주셔서 감사합니다!'
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
+
+translationMode:
+    header: '번역 모드'
+    action: '번역 제안하기'
+    welcome: >
+        번역이 없거나 수정이 필요합니까? 오른쪽 하단의 파란색 버튼을 클릭하면 번역 모드를 키고 끌 수 있습니다. 이 모드에서는 테두리가 된 텍스트를 클릭하고 대화 상자가 열리면 번역을 수정해 영어 텍스트와
+        비교할 수 있습니다. 완료되면 "변화를 저지르기"버튼을 클릭하는 걸 까먹지 마세요.
+    logIn: '번역을 제안하려면 로그인이 되어야 합니다'
+    changes: '변화됨'
+    commit: '변화를 저지르기'
+    revert: '변화를 되돌리기'
+    pause: '번역 모드 중지하기'
 
 flags:
     Abroromantic: 'Abrorrománti{inflection_c}'
@@ -1056,6 +1151,12 @@ calendar:
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
+        mspec_lesbian_day: '엠스펙 (Mspec) 레즈비언 가시성 및 인식의 날'
+        mspec_lesbian_week: '엠스펙 (Mspec) 레즈비언 가시성 및 인식의 주'
+        mspec_gay_day: '엠스펙 (Mspec) 게이 가시성 및 인식의 날'
+        mspec_gay_week: '엠스펙 (Mspec) 게이 가시성 및 인식의 주'
+        masc_lesbian_day: '마스쿨린 레즈비언 가시성 및 인식의 날'
+        masc_lesbian_week: '마스쿨린 레즈비언 가시성 및 인식의 주'
     banner: '축하해요!'
     celebrating_custom: '축하합니다'
     celebrating_day: '축하하는 날'
