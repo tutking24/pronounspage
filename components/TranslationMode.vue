@@ -37,6 +37,11 @@
             return {
             }
         },
+        mounted() {
+            if (this.$isGranted('translations')) {
+                this.$store.commit('showTranslationMode');
+            }
+        },
         methods: {
             startTranslating() {
                 this.$store.commit('translationInit');
