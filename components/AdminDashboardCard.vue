@@ -8,7 +8,9 @@
                         {{ header }}
                     </h4>
                     <ul class="list-inline h5">
-                        <li v-for="{name, count, warning, danger, link} in counts || []" class="list-inline-item">
+                        <li v-for="{name, count, warning, danger, link, enabled} in counts || []"
+                            v-if="enabled === undefined || enabled === true"
+                            class="list-inline-item">
                             <component :is="link ? 'a' : 'span'"
                                        :href="(baseUrl || '') + link"
                                        :class="['badge', counterClass(count, warning, danger)]">

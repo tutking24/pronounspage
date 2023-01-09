@@ -178,7 +178,7 @@ export const isGranted = (user, locale, area = '') => {
     }
 
     for (let permission of user.roles.split('|')) {
-        if (permission === '*') {
+        if (permission === '*' && area !== 'code') {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');

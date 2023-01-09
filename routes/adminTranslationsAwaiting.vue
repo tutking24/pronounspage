@@ -51,19 +51,28 @@
                     </table>
                 </div>
 
-                <details class="border mb-3">
+                <details class="border mb-3" :open="$isGranted('code')">
                     <summary class="bg-light p-3">
                         <span class="badge bg-success">Merge</span>
                     </summary>
                     <div class="p-2">
                         <p>
-                            We still need to manually move the translations to the relevant SUML file,
+                            We still need to <strong>manually</strong> move the translations to the <code>translations.suml</code> file,
                             but at least it should be easy to copy paste bits from here:
                         </p>
                         <hr/>
+
                         <pre>{{translationsProposalsSuml}}</pre>
                         <hr/>
-                        <button class="btn btn-success" @click="markTranslationProposalsDone">Copied, mark as done</button>
+                        <button v-if="$isGranted('code')" class="btn btn-success" @click="markTranslationProposalsDone">
+                            Merged to the main branch, mark as done
+                        </button>
+                        <p v-else>
+                            If you know Git and YAML/SUML, you can create a pull request for these changes.
+                            You can also ask <nuxt-link to="/@andrea">@andrea</nuxt-link> for `code` permissions
+                            – `code` access means you'll be getting notifications about new translations awaiting merging
+                            and will be able to mark them as merged in the database.
+                        </p>
                     </div>
                 </details>
             </section>
@@ -103,7 +112,10 @@ export default {
             this.translationProposals = this.translationProposals.filter(tp => tp.id !== id);
         },
         async markTranslationProposalsDone() {
-            await this.$confirm('Did you put the translations in the SUML file and want to mark them as done?', 'success');
+            await this.$confirm(`This will mark all approved translations as done and they'll disappear from here –
+                but they'll only actually show up on production if they are added to the <code>translations.suml</code> file
+                and merged to the <code>main</code> branch.
+                Do you confirm that those translations are present in the <code>main</code> branch?`, 'success');
             await this.$post(`/translations/proposals-done`)
             this.translationProposals = this.translationProposals.filter(tp => tp.status === 1);
         },

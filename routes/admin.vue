@@ -150,7 +150,7 @@
                     :counts="[
                         {name: 'missing', link: '/admin/translations/missing', count: stats[locale].translations.missing, warning: 1, danger: 16},
                         {name: 'proposed', link: '/admin/translations/awaiting', count: stats[locale].translations.awaitingApproval, warning: 1, danger: 16},
-                        {name: 'not merged', link: '/admin/translations/awaiting', count: stats[locale].translations.awaitingMerge, warning: 1, danger: 16},
+                        {name: 'not merged', link: '/admin/translations/awaiting', count: stats[locale].translations.awaitingMerge, warning: 1, danger: 16, enabled: $isGranted('code')},
                     ]"
                 />
             </div>
