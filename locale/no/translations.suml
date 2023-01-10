@@ -608,6 +608,7 @@ profile:
             required: 'Forhold er et påbudt felt'
             userNotFound: 'Denne brukeren eksisterer ikke'
         yourMentions:
+            header: 'Din sirkel sine nevnelser'
             description: >
                 Her er en liste av folk som har lagt deg til i sine sirkler. Hvis du legger dem til tilbake, vil en hake
                 [s:shield-check] vises i begge av kortene deres.
@@ -701,7 +702,7 @@ terms:
     consent: 'Ved å registrere deg sier du ja til våre vilkår og betingelser {/vilkår=vilkår og betingelser}.'
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Personvernerklæring '
 
 admin:
     header: 'Administrator'
