@@ -731,6 +731,10 @@ links:
             url: 'http://mbc.malopolska.pl/dlibra/docmetadata?id=26191&from=publication'
             headline: 'O polskim rodzaju «wymijającym»'
             extra: ' – Z. Kempf, w: Język Polski. 1988, nr 1, Towarzystwo Miłośników Języka Polskiego (od str. 14)'
+        -
+            icon: 'play-circle'
+            url: 'https://www.youtube.com/watch?v=MYH2qGScEVk'
+            headline: 'FEMINATYWY. O genderowej nowomowie słów kilka. | Maciej Makselon | TEDxKoszalin'
     mediaGuests:
         -
             icon: 'newspaper'
