@@ -499,6 +499,7 @@ contact:
                 ¡Una traducción está incompleta o incorrecta? Haz clic en “Traducciones propuestas” en el pie de página y
                 sigue las instrucciones.
         technical:
+            header: 'Envía una solicitud de cambio'
             description: >
                 Las tareas técnicas son manejadas en {https://gitlab.com/Avris/Zaimki/-/boards=esta tabla kanban}. Solo
                 escoje una tarea no asignada desde la columna “To Do”, asígnatela y empieza a trabajar en ella. No dudes
