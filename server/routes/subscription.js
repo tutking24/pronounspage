@@ -23,13 +23,13 @@ router.post('/subscription/subscribe', handleErrorAsync(async (req, res) => {
     return res.json('Subscribed');
 }));
 
-// TODO /api/subscription/unsubscribe?email=andrea@avris.it
+// TODO /api/subscription/unsubscribe?email=andrea@avris.it&type=census
 router.get('/subscription/unsubscribe', handleErrorAsync(async (req, res) => {
     if (!req.query.email) {
         return res.status(400).json({error: 'Bad request'});
     }
 
-    await req.db.get(SQL`DELETE FROM subscriptions WHERE email = ${req.query.email}`)
+    await req.db.get(SQL`DELETE FROM subscriptions WHERE email = ${req.query.email} AND type = ${req.query.type}`)
 
     return res.json('Unsubscribed');
 }));

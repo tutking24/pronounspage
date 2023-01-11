@@ -107,7 +107,10 @@ const templates = {
 }
 
 const applyTemplate = (template, context, params) => {
-    template = templates[template][context];
+    if (typeof(template) === 'string') {
+        template = templates[template];
+    }
+    template = template[context];
 
     if (templates.base[context] !== undefined) {
         template = templates.base[context].replace('{{content}}', template);
