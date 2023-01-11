@@ -78,7 +78,7 @@
             />
         </div>
 
-        <template v-for="({name, config: localeConfig, url, published}, locale) in allLocales" v-if="$isGranted('panel', locale)">
+        <template v-for="({name, config: localeConfig, url, published}, locale) in allLocales" v-if="$isGranted('panel', locale) && stats[locale]">
             <h3>
                 {{ name }}
                 <small v-if="!published" class="text-muted">(not published yet)</small>
