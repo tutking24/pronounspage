@@ -409,6 +409,10 @@ english:
 contact:
     header: 'Kontakt'
     authors: 'Författare till webbplatsen'
+    language: >
+        Vi är ett internationellt team - personerna som översatte en specifik språkversion kommer antagligen
+        inte vara de som läser ditt meddelande.
+        Alltså hade vi varit tacksamma om du kontaktade oss på <strong>engelska</strong> eller på <strong>polska</strong>.
     team:
         name: '“Neutrala språkets råd”-kollektivet'
         nameShort: 'Kollektivet'
@@ -530,6 +534,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Ändra'
+        failed: Var vänlig anslut din sociala media igen för att fixa den saknade avataren.
     deleteAccount: 'Radera konto'
     deleteAccountConfirm: 'Är du säker på att du vill ta bort ditt konto? Detta kommer att vara permanent!'
     socialConnection:
@@ -538,6 +543,9 @@ user:
         refresh: 'Uppdatera'
         disconnect: 'Koppla från'
         disconnectConfirm: 'Är du säker på att du vill ta bort den här anslutning? (Du kan alltid logga in med e-postadress %email%)'
+    qr:
+        header: QR-kog
+        download: Ladda ned QR-koden
     mfa:
         header: 'Flerfaktorsautentisering (MFA)'
         init: >
@@ -593,6 +601,29 @@ profile:
         save: 'Spara ditt kort'
         defaults: 'Återställ till standardversionen'
         propagate: 'Kopiera detta kort till ditt andra kort på alla språk'
+    opinions:
+        header: Legend/åsikter
+        custom: anpasade åsikter, tillagda av användaren:
+        description: Beskrivning...
+        colours:
+            _: (Teckensnittsfärg...)
+            pink: Rosa
+            red: Röd
+            orange: Orange
+            green: Grön
+            blue: Blå
+            grey: Grå
+        styles:
+            _: (Stil...)
+            bold: Fetstil
+            italics: Kursiv
+            small: Liten
+        validation:
+            missingIcon: Ikon krävs
+            missingDescription: Beskrivning krävs
+            duplicateIcon: Ikonen måste vara unik
+            duplicateDescription: Beskrivningen måste vara unik
+            invalidOpinion: Vald ikon hittades ej i legenden
     opinion:
         yes: 'Ja'
         jokingly: 'Skämtsamt'
@@ -611,6 +642,55 @@ profile:
     language:
         header: 'Språk'
         description: '@%username%''s kort är också tillgänglig på dessa språk:'
+    verifiedLinks:
+        header: Verifierade länkar
+        info: De länkar som man publicerar i sin profil kommer bli markerade med sköldsikonen om de verifieras genom
+        att logga in med den respektiva auteniseringsleverantören, eller (ej klart) genom en <code>rel="me"</code>-tagg
+        som hänvisar tillbaka till kortet. Våra länkar inkluderar också en <code>rel="me"</code>-tagg, så att externa
+        webbsidor kan verifiera ditt kort andra vägen runt också.
+    circles:
+        header: Min cirkel
+        info: >
+            I detta fält kan du tagga <strong>de som står dig nära</strong>, samt som information som vilka ord du
+            använder för att hänvisa till dem (t.ex. "partner" mot "make" mot "maka").
+            Vi är inte en social media, och detta är <strong>inte en lista över dina vänner/följare</strong> - vilket
+            är varför längden på detta fält är begränsad.
+            Kom ihåg att folk som du taggar här <strong>kommer att kunna se det</strong> – och kanske kommer att
+            rapportera dig för trakasseri om du väljer att skriva negativa saker om dem.
+            Ifall en länk i din cirkel är ömsesidig kommer den markeras med [s:shild-check].
+        relationship: Relation (t.ex. "partner", "bästa vän")
+        mutual: Denna relation är ömsesidig
+        yourMentions:
+            header: Dina cirklar nämner
+            description: >
+                Detta är listan av folk som har lagt till dig till deras cirklar.
+                Ifall du också lägger till dem, kommer en bock [s:shild-check] visas på båda era kort.
+        validation:
+            userNotFound: Användaren existerar inte
+            required: Relation krävs
+    timezone:
+        header: Tidszon
+        placeholder: Välj din tidszon
+        info: >
+            Ifall du väljer att fylla i detta fält kommer ditt kort berätta för folk
+            <strong>vilken tid det är där du bor</strong>.
+            Du kan också välja att publicera ungefär vart du bor.
+        detect: Upptäck automatiskt
+        publishArea: Publicera kontinenten på ditt kort
+        publishLocation: Publicera området på ditt kort.
+        time: Det är en %weekday% klockan %time% i min tidszon
+        approximate: Detta är endast en ungefärlig plats
+        areas:
+            Africa: Afrika
+            America: Amerika
+            Antarctica: Antarktis
+            Arctic: Arktis
+            Asia: Asien
+            Atlantic: Atlanten
+            Australia: Australien
+            Europe: Europa
+            Indian: Indiska
+            Pacific: Stilla havet
 
 share: 'Dela'
 
@@ -629,6 +709,10 @@ crud:
     loginRequired: '{/account=Logga in} För att skicka in ett nytt inlägg'
     copy: 'Kopiera länk'
     download: 'Ladda ner'
+    loadAll: Ladda alla...
+    validation:
+        genericForm: Det inskickade formuläret är ogiltigt. Korrigera felen och skicka in den igen.
+        listMaxLength: Det maximala antalet element i denna lista är %maxlength%.
 
 footer:
     license: >
@@ -839,6 +923,7 @@ mode:
     dark: 'Mörkt läge'
     automatic: 'Automatiskt'
     light: 'Ljust läge'
+    reducedColours: Reducerade färger
 
 ban:
     reason: 'Anledning till bannlysning'
