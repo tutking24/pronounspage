@@ -603,7 +603,7 @@ crud:
     loadAll: '載入全部…'
     validation:
         listMaxLength: '此列表最多只能有 %maxlength% 條項目。'
-        listgenericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
+        genericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
 
 footer:
     license: >
