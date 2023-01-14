@@ -399,6 +399,16 @@ contact:
                 - 'een link stuur naar jouw social media,'
                 - 'vertelt of je ervaring hebt met activisme,'
                 - 'vertelt waarmee je zou willen helpen.'
+    contribute:
+        intro: >
+            Pronouns.page is een opensourceproject, dat gemaakt is door vrijwilligers. Jij kunt ook je steentje
+            bijdragen! Op deze punten zouden we je hulp op prijs stellen. Als je veel bijdraagt, krijg je misschien wel
+            een uitnodiging om bij het team te komen.
+        translations:
+            header: 'vertalingen toevoegen of corrigeren'
+            description: >
+                Klopt een vertaling niet, of ontbreekt er een? Klik dan op ‘vertalingen voorstellen’ in de voettekst, en
+                volg daar de instructies op.
 
 support:
     header: 'Ondersteun ons'
@@ -457,7 +467,6 @@ user:
         refresh: 'Vernieuw'
         disconnect: 'Ontkoppel'
         disconnectConfirm: 'Weet je zeker dat je deze koppeling wil verwijderen? (Je kunt altijd inloggen met e-mail %email%)'
-
     mfa:
         header: 'Multifactorauthenticatie'
         init: >
@@ -475,6 +484,9 @@ user:
         enable: 'Schakel MFA in'
         disable: 'Schakel MFA uit'
         disableConfirm: 'Weet je zeker dat je MFA wilt uitschakelen?'
+    qr:
+        header: 'QR-code'
+        download: 'QR-code downloaden'
 
 profile:
     description: 'Omschrijving'
@@ -498,8 +510,11 @@ profile:
     linksRecommended: 'We raden aan te linken naar'
     verifiedLinks:
         header: 'geverifieerde social media links'
-        info: > De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code> tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag, zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.
-
+        info: >
+            De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door
+            in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code>
+            tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag,
+            zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.
     column: 'Kolom'
 
     list: 'Jouw kaarten'
@@ -540,6 +555,45 @@ profile:
         header: 'Taal'
         description: 'De kaart van @%username% is ook in de volgende talen beschikbaar:'
 
+    wordsColumnHeader: 'kolomkop'
+    opinions:
+        description: 'beschrijving…'
+        colours:
+            _: '(tekstkleur…)'
+            pink: 'roze'
+            red: 'rood'
+            orange: 'oranje'
+            green: 'groen'
+            blue: 'blauw'
+            grey: 'grijs'
+        styles:
+            _: '(stijl…)'
+            bold: 'vet'
+            italics: 'cursief'
+            small: 'klein'
+        validation:
+            missingIcon: 'Een icoon is verplicht.'
+            missingDescription: 'Een beschrijving is verplicht.'
+            duplicateIcon: 'Iconen moeten uniek zijn.'
+            duplicateDescription: 'Beschrijvingen moeten uniek zijn.'
+            invalidOpinion: 'Het geselecteerde icoon komt niet voor in de legenda hierboven.'
+    timezone:
+        header: 'tijdzone'
+        placeholder: 'Jouw tijdzone selecteren'
+        detect: 'detecteren'
+        areas:
+            Africa: 'Afrika'
+            America: 'Amerika'
+            Arctic: 'Noordpoolgebied'
+            Asia: 'Azië'
+            Atlantic: 'Atlantische Oceaan'
+            Australia: 'Australië'
+            Europe: 'Europa'
+            Indian: 'Indische Oceaan'
+            Pacific: 'Stille Oceaan'
+        approximate: '’t Is maar een benadering'
+        time: 'Het is nu %weekday% %time% in mijn tijdzone.'
+
 share: 'Deel'
 
 crud:
@@ -566,6 +620,8 @@ footer:
     financial: 'Financiële transparantie'
     technical: 'Technisch'
     sibling: 'Zusterprojecten'
+    stats:
+        month: 'maand'
 
 notFound:
     message: 'Pagina niet gevonden'
@@ -638,6 +694,7 @@ mode:
     light: 'Lichte modus'
     automatic: 'Automatisch'
     dark: 'Donkere modus'
+    reducedColours: 'minder kleuren'
 
 ban:
     reason: 'Reden voor ban'
@@ -665,6 +722,19 @@ report:
     sent: 'Jouw rapportering was verzonden. Bedankt voor je hulp!'
     terms: 'Houd datgene wat verboden is volgens onze {/terms=Gebruiksvoorwaarden} in jouw achterhoofd.'
     hoarding: ' Rapporteer alsjeblieft geen gebruikers die gebruikersnamen hamsteren. We verwijderen automatisch accounts zonder kaarten na een periode van inactiviteit. Jouw melding zal dit proces niet verspoedigen.'
+
+translationMode:
+    header: 'vertaalstand'
+    action: 'Stel vertalingen voor'
+    welcome: >
+        Ontbreekt er een vertaling, of moet een bestaande vertaling gecorrigeerd worden? Dan kun je de vertaalstand
+        inschakelen met de blauwe knop linksonder. Je kunt dan op een omlijnd stuk tekst klikken in de rechterkolom. Dan
+        opent er een dialoogvenster, waarin je de vertaling kan bijwerken, en haar kunt vergelijken met het Engelse
+        origineel. Vergeet niet om op ‘wijzigingen doorvoeren’ te klikken als je klaar bent.
+    logIn: 'Je moet ingelogd zijn om vertalingssuggesties te doen.'
+    changes: 'wijzigingen'
+    commit: 'wijzigingen doorvoeren'
+    revert: 'wijzigingen verwerpen'
 
 flags:
     Abroromantic: 'Abroromantisch'
