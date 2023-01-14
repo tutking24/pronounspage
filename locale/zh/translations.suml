@@ -476,6 +476,17 @@ profile:
         publishLocation: '在卡片中公開地域'
         time: '今天在我的時區是%weekday%，現在是%time%'
         approximate: '這只是一個粗略的位置'
+        areas:
+            Africa: '非洲'
+            America: '美洲'
+            Antarctica: '南極洲'
+            Arctic: '北極洲'
+            Asia: '亞洲'
+            Atlantic: '大西洋'
+            Australia: '澳洲'
+            Europe: '歐洲'
+            Indian: '印度洋'
+            Pacific: '太平洋'
     flags: '旗幟'
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
@@ -592,7 +603,7 @@ crud:
     loadAll: '載入全部…'
     validation:
         listMaxLength: '此列表最多只能有 %maxlength% 條項目。'
-        listgenericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
+        genericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
 
 footer:
     license: >
