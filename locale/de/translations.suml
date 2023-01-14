@@ -380,6 +380,10 @@ english: ~
 contact:
     header: 'Kontakt'
     authors: 'Autor*innen der Website'
+    language: >
+        Wir sind ein internationales Team - die Personen, die eine bestimmte Sprachversion erstellt haben, sind
+        möglicherweise nicht dieselben, die deine Nachricht lesen werden. Daher würden wir es begrüßen, wenn du uns in
+        <strong>Englisch or Polnisch</strong> kontaktierst.
     team:
         name: 'Das „Rat für neutrale Sprache“ Kollektiv'
         nameShort: 'Kollektiv'
@@ -462,6 +466,7 @@ support:
     description: >
         Wenn du dich an den Kosten für Server, Domains, Aufkleber etc. beteiligen oder den Autor*innen einfach ein Bier ausgeben willst,
         kannst du den untenstehenden Link nutzen:
+    bankAccount: 'Banküberweisung'
 
 user:
     header: 'Account'
@@ -564,6 +569,13 @@ profile:
     opinions:
         header: 'Legende/Optionen'
         custom: 'Benutzerdefiniert:'
+        colours:
+            red: 'Rot'
+            green: 'Grün'
+            blue: 'Blau'
+            grey: 'Grau'
+        styles:
+            small: 'Klein'
 
     list: 'Deine Visitenkarten'
     init: 'Eine Visitenkarte erstellen'
@@ -613,9 +625,15 @@ profile:
     timezone:
         time: 'Es ist %time% an einem %weekday% in meiner Zeitzone.'
         areas:
+            Africa: 'Afrika'
+            America: 'Amerika'
+            Antarctica: 'Antarktika'
+            Arctic: 'Arktis'
+            Asia: 'Asien'
+            Atlantic: 'Atlantik'
             Europe: 'Europa'
+            Pacific: 'Pazifik'
         approximate: 'Es ist nur ein ungefährer Standort'
-
 share: 'Teilen'
 
 crud:
@@ -670,6 +688,8 @@ confirm:
     yes: 'Ja, ich bin sicher'
     no: 'Nein, abbrechen'
     ok: 'OK'
+    save: 'Speichern'
+    dismiss: 'Verwerfen'
 
 terms:
     header: 'Nutzungsbedingungen'
@@ -759,6 +779,11 @@ report:
 translationMode:
     action: 'Übersetzungen vorschlagen'
     changes: 'Änderungen'
+    header: 'Übersetzungsmodus'
+    logIn: 'Du musst eingeloggt sein, um Übersetzungen vorzuschlagen'
+    commit: 'Änderungen bestätigen'
+    revert: 'Änderungen widerrufen'
+    pause: 'Übersetzungsmodus pausieren'
 
 flags:
     Abroromantic: 'Abroromantisch'
