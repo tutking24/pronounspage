@@ -1,5 +1,9 @@
 singular	plural	isHonorific
-I think {pronoun_subject} is very nice.	I think {pronoun_subject} are very nice.	FALSE
-I asked {pronoun_object} if I can borrow {possessive_determiner} pencil.		FALSE
-{'pronoun_subject} told me that the house is {possessive_pronoun}.		FALSE
-{'pronoun_subject} said {pronoun_subject} would rather do it {reflexive}.		FALSE
+{pronoun}가 착하다 생각합니다.	{pronoun}들이 착하다 생각합니다.	FALSE
+{pronoun}분이 착하다 생각합니다.	{pronoun}분들이 착하다 생각합니다.	TRUE
+{pronoun}에게 {pronoun}의 연필을 빌려 달라고 했습니다.	{pronoun}들에게 {pronoun}들의 연필을 빌려 달라고 했습니다.	FALSE
+{pronoun}분에게 {pronoun}분의 연필을 빌려 달라고 했습니다.	{pronoun}분들에게 {pronoun}분들의 연필을 빌려 달라고 했습니다.	TRUE
+{pronoun}가 {pronoun}의 집이라고 했습니다.	{pronoun}들이 {pronoun}들의 집이라고 했습니다.	FALSE
+{pronoun}분이 {pronoun}분의 집이라고 했습니다.	{pronoun}분들이 {pronoun}분들의 집이라고 했습니다.	TRUE
+{pronoun}가 {pronoun} 자신이 하겠다고 했습니다.	{pronoun}들이 {pronoun}들 자신이 하겠다고 했습니다.	FALSE
+{pronoun}분이 {pronoun}분 자신이 하겠다고 했습니다.	{pronoun}분들이 {pronoun}분들 자신이 하겠다고 했습니다.	TRUE

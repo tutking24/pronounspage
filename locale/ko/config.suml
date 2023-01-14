@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'pronouns'
-    default: '그대'
+    default: '그'
     any: 'any'
     plurals: true
     honorifics: false
