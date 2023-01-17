@@ -2,6 +2,8 @@
 
 @import "fonts";
 
+@import "workarounds";
+
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
@@ -266,13 +268,4 @@ body:not(.reduced-colours) {
             color: map-get($value, 'light') !important;
         }
     }
-}
-
-// Ghostery is blocking all .d-block under pronouns.page 🤦 gotta make a workaround
-.d-block-force {
-    display: block !important;
-}
-
-.modal.modal-shown.d-block, .modal.modal-shown.d-block-force {
-    display: block !important;
 }

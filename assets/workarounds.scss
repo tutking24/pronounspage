@@ -1,0 +1,8 @@
+// Ghostery is blocking all .d-block under pronouns.page 🤦 gotta make a workaround
+.d-block-force {
+    display: block !important;
+}
+
+.modal.modal-shown.d-block, .modal.modal-shown.d-block-force {
+    display: block !important;
+}
