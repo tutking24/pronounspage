@@ -9,7 +9,7 @@
             </li>
         </ul>
         <div class="card">
-            <div v-for="tab in visibleTabs" :class="['card-body', activeTab === tab ? 'd-block' : 'd-none']">
+            <div v-for="tab in visibleTabs" :class="['card-body', activeTab === tab ? 'd-block-force' : 'd-none']">
                 <h3 v-if="showheaders" class="h4 mb-3">
                     <slot :name="`${tab}-header`"></slot>
                 </h3>

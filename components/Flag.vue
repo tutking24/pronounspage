@@ -13,11 +13,11 @@
         <span class="flag-preview bg-white rouded p-2 border">
             <img v-if="missing === false" :src="img" :alt="name" class="rounded" @error="missing = true"/>
             <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
-            <span v-if="asterisk" class="alert alert-warning small d-block mt-2 mb-0 p-2">
+            <span v-if="asterisk" class="alert alert-warning small d-block-force mt-2 mb-0 p-2">
                 *
                 <T>profile.flagsAsterisk</T>
             </span>
-            <span v-if="custom" class="alert alert-warning small d-block mt-2 mb-0 p-2">
+            <span v-if="custom" class="alert alert-warning small d-block-force mt-2 mb-0 p-2">
                 <Icon v="user"/>
                 <T>profile.flagsCustomWarning</T>
             </span>

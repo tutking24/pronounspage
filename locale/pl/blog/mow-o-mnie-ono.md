@@ -57,7 +57,7 @@ jako osoba niebinarna używająca po angielsku zaimka [they](https://en.pronouns
 Cieszę się, że jako RJN mogłyśmy być częścią powstawania „Mów o mnie ono” i mam nadzieję,
 że kolejne książki poruszające tematy związane z transpłciowością, które z pewnością będą się ukazywać, będą tej samej jakości.
 
-<a href="https://www.gwfoksal.pl/mow-o-mnie-ono-katarzyna-skrzydlowska-kalukin-sku63780d8e17b99ce879c9.html" target="_blank" rel="noopener" class="btn btn-outline-primary d-block my-5">
+<a href="https://www.gwfoksal.pl/mow-o-mnie-ono-katarzyna-skrzydlowska-kalukin-sku63780d8e17b99ce879c9.html" target="_blank" rel="noopener" class="btn btn-outline-primary d-block-force my-5">
     <span class="fal fa-shopping-basket"></span>
     Zamów na stronie Grupy Wydawniczej Foksal
 </a>

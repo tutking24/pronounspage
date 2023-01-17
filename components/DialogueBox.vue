@@ -1,5 +1,5 @@
 <template>
-    <div :class="['modal', shown ? 'd-block' : '', shownFull ? 'modal-shown' : '']" @click="hideClick">
+    <div :class="['modal', shown ? 'd-block-force' : '', shownFull ? 'modal-shown' : '']" @click="hideClick">
         <div :class="['modal-dialog', 'modal-dialog-centered', 'modal-dialog-scrollable', size ? 'modal-' + size : '']" role="document">
             <div class="modal-content shadow">
                 <div class="modal-header" v-if="header">

@@ -17,7 +17,7 @@ i jak do niego dołączyć. A także o wieeelu rzeczach nie na temat 😅
 Jeśli chcesz poznać, kim jesteśmy, i zobaczyć zajawkę tego, jak wyglądają narady Rady, możesz obejrzeć nagranie na Facebooku:
 
 <section>
-    <a href="https://www.facebook.com/neutratywy/videos/413774263292897" target="_blank" class="btn btn-lg btn-primary d-block">
+    <a href="https://www.facebook.com/neutratywy/videos/413774263292897" target="_blank" class="btn btn-lg btn-primary d-block-force">
         <span class="fal fa-video"></span>
         Nagranie live streamu
     </a>

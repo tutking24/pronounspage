@@ -23,7 +23,7 @@
                     <LinkedText :text="p"/>
                 </p>
                 <p v-if="book.review">
-                    <nuxt-link :to="`/${config.links.blogRoute}/${book.review}`" class="btn btn-outline-primary btn-sm d-block">
+                    <nuxt-link :to="`/${config.links.blogRoute}/${book.review}`" class="btn btn-outline-primary btn-sm d-block-force">
                         <Icon v="file-check"/>
                         <T>links.review</T>
                     </nuxt-link>

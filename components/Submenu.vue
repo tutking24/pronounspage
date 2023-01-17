@@ -9,7 +9,7 @@
                 <T>{{name}}</T>
             </router-link>
         </div>
-        <div class="d-block d-md-none btn-group-vertical btn-block mb-2 w-100">
+        <div class="d-block-force d-md-none btn-group-vertical btn-block mb-2 w-100">
             <router-link v-for="{name, icon, iconInverse, route, routesExtra, condition} in links" :key="name"
                          v-if="condition === undefined || condition === true"
                          :to="buildRoute(route)"

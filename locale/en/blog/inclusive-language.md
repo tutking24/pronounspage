@@ -12,7 +12,7 @@ A presentation prepared by Andrea for workshops with employees of a large tech c
 </p>
 
 <p>
-    <a href="/docs-local/Inclusive language.pdf" target="_blank" class="btn btn-primary d-block">
+    <a href="/docs-local/Inclusive language.pdf" target="_blank" class="btn btn-primary d-block-force">
         <span class="fal fa-file-pdf"></span>
         Slides
     </a>

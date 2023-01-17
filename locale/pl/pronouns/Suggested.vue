@@ -13,7 +13,7 @@
                 <Spelling text="mieć największy potencjał, by stać się „domyślnymi”, normatywnymi formami gramatycznymi. Szczegóły w naszym Manifeście:"/>
             </p>
 
-            <nuxt-link to="/manifest" class="btn btn-primary d-block">
+            <nuxt-link to="/manifest" class="btn btn-primary d-block-force">
                 <Icon v="file-contract"/>
                 <Spelling text="Manifest Niebinarnej Polszczyzny"/>
             </nuxt-link>

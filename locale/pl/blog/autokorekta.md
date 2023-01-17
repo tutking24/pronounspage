@@ -86,7 +86,7 @@ zapraszamy na [zaimki.pl](https://zaimki.pl) oraz do kontaktu mailowego na adres
 </section>
 
 <section>
-    <a href="https://chng.it/gFxppJDc" target="_blank" class="btn btn-primary btn-lg d-block">
+    <a href="https://chng.it/gFxppJDc" target="_blank" class="btn btn-primary btn-lg d-block-force">
         <span class="fal fa-signature"></span>
         Podpisz petycję na change.org
     </a>

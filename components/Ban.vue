@@ -15,7 +15,7 @@
                     </blockquote>
                     <p class="mb-0"><T>report.hoarding</T></p>
                 </div>
-                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving || !reportComment" @click="report">
+                <button class="btn btn-danger d-block-force w-100 mt-2" :disabled="saving || !reportComment" @click="report">
                     <Icon v="spider"/>
                     <T>report.action</T>
                 </button>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-danger d-block w-100 mt-2" :disabled="user.bannedReason === '' || saving" @click="ban">
+                <button class="btn btn-danger d-block-force w-100 mt-2" :disabled="user.bannedReason === '' || saving" @click="ban">
                     <Icon v="ban"/>
                     <T>ban.action</T>
                 </button>
@@ -130,7 +130,7 @@
                     </tbody>
                 </table>
                 <textarea v-model="message" class="form-control" rows="5" :disabled="saving" required></textarea>
-                <button class="btn btn-danger d-block w-100 mt-2" :disabled="saving" @click="sendMessage">
+                <button class="btn btn-danger d-block-force w-100 mt-2" :disabled="saving" @click="sendMessage">
                     <Icon v="comment-exclamation"/>
                     Send
                 </button>

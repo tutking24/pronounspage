@@ -170,10 +170,6 @@ form[disabled] {
     bottom: 3px !important;
 }
 
-.modal.modal-shown.d-block {
-    display: block !important;
-}
-
 @include media-breakpoint-up('lg') {
     .table-wide {
         margin-left: calc(-50vw + 50% + 3rem);
@@ -270,4 +266,13 @@ body:not(.reduced-colours) {
             color: map-get($value, 'light') !important;
         }
     }
+}
+
+// Ghostery is blocking all .d-block under pronouns.page 🤦 gotta make a workaround
+.d-block-force {
+    display: block !important;
+}
+
+.modal.modal-shown.d-block, .modal.modal-shown.d-block-force {
+    display: block !important;
 }

@@ -29,7 +29,7 @@
                                     <Icon v="sign-in"/>
                                     <T>user.login.action</T>
                                 </button>
-                                <button class="btn btn-primary mt-3 d-block d-md-none w-100" :disabled="!canInit">
+                                <button class="btn btn-primary mt-3 d-block-force d-md-none w-100" :disabled="!canInit">
                                     <Icon v="sign-in"/>
                                     <T>user.login.action</T>
                                 </button>

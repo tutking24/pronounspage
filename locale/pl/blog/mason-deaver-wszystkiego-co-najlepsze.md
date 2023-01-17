@@ -133,7 +133,7 @@ Aż ciepło na serduszku.
 Niezmiernie cieszy widok naszych pomysłów, projektów i postulatów będących tak serdecznie
 i z każdym dniem coraz odważniej przyjmowanych w świecie literackim ❤️
 
-<a href="https://weneedya.pl/produkt/wszystkiego-co-najlepsze/" target="_blank" rel="noopener" class="btn btn-outline-primary d-block my-5">
+<a href="https://weneedya.pl/produkt/wszystkiego-co-najlepsze/" target="_blank" rel="noopener" class="btn btn-outline-primary d-block-force my-5">
     <span class="fal fa-shopping-basket"></span>
     Zamów na stronie wydawnictwa We Need YA
 </a>

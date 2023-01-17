@@ -87,7 +87,7 @@
                                 <T>user.account.changeUsername.action</T>
                             </button>
                         </div>
-                        <div class="d-block d-md-none mt-3">
+                        <div class="d-block-force d-md-none mt-3">
                             <button class="btn btn-outline-primary w-100" :disabled="username === user.username">
                                 <T>user.account.changeUsername.action</T>
                             </button>
@@ -107,7 +107,7 @@
                                         <T>user.account.changeEmail.action</T>
                                     </button>
                                 </div>
-                                <div class="d-block d-md-none mt-3">
+                                <div class="d-block-force d-md-none mt-3">
                                     <button class="btn btn-outline-primary w-100" :disabled="!canChangeEmail">
                                         <T>user.account.changeEmail.action</T>
                                     </button>

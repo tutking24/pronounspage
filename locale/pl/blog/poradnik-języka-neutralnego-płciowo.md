@@ -11,7 +11,7 @@ Prezentacja Sybila stworzona na V Kongres Anarchistyczny Kongresono (kliknij na 
 </p>
 
 <p>
-    <a href="/docs-local/Poradnik języka neutralnego płciowo.pdf" target="_blank" class="btn btn-primary d-block">
+    <a href="/docs-local/Poradnik języka neutralnego płciowo.pdf" target="_blank" class="btn btn-primary d-block-force">
         <span class="fal fa-file-pdf"></span>
         Prezentacja
     </a>

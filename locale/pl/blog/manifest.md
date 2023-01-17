@@ -5,7 +5,7 @@
 ![Logo naszego kolektywu z wpisaną uniesioną pięścią, na tle rozmytej flagi osób niebinarnych](/img-local/blog/manifest-logo.png)
 
 <section>
-    <a href="/docs-local/Manifest Niebinarnej Polszczyzny.pdf" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/docs-local/Manifest Niebinarnej Polszczyzny.pdf" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-file-pdf"></span>
         Wersja do ściągnięcia
     </a>
@@ -88,7 +88,7 @@ a także osobom tłumaczącym na polski np. angielskie [singular „they”](htt
 rodzaju neutralnego jako dobrej i względnie akceptowanej alternatywy do form binarnych.
 
 <section>
-    <a href="/ono" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/ono" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o rodzaju neutralnym
     </a>
@@ -106,7 +106,7 @@ analogicznie do feminatywów, czyli wersji żeńskich, na przykład:
 Postulujemy, by były umieszczane w słownikach i używane do opisywania osób niebinarnych, które sobie tego życzą.
 
 <section>
-    <a href="/neutratywy" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/neutratywy" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Słownik Neutratywów Jezyka Polskiego
     </a>
@@ -142,7 +142,7 @@ Przycisk „zapomniałem hasła” na Twojej stronie możesz przemianować na �
 Twój transparent może mówić „nigdy nie będziesz szłx samx” zamiast form nacechowanych płciowo. 
 
 <section>
-    <a href="/onx" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/onx" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Przykłady użycia form z iksem
     </a>
@@ -167,7 +167,7 @@ Wprawdzie nie jest to forma „poprawna systemowo” jak pojedynczy rodzaj nijak
 ale została stworzona w analogii do niego, jest spójna, logiczna, i łatwa do zrozumienia i stworzenia.
 
 <section>
-    <a href="/ona/ich" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/ona/ich" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o mnogim rodzaju neutralnym
     </a>
@@ -189,7 +189,7 @@ miały alternatywną formę – w rodzaju neutralnym. Na przykład:
  - <u>Wszystkie</u> byłośmy pod wrażeniem.
 
 <section>
-    <a href="/ktosio" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/ktosio" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o neutralnych zaimkach
     </a>
@@ -206,7 +206,7 @@ Formy takie, które analogicznie do maskulatywów, feminatyów i neutratywów na
 Są normatywne i proste do stworzenia i zrozumienia.
 
 <section>
-    <a href="/osobatywy" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/osobatywy" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Więcej informacji o osobatywach
     </a>
@@ -219,7 +219,7 @@ na przykład za pomocą zmiany podmiotu zdania, użycia strony biernej, form bez
 Serdecznie zachęcamy do zapoznania się z nimi i używania ich w codziennej mowie. 
 
 <section>
-    <a href="/unikanie" target="_blank" class="btn btn-outline-primary d-block">
+    <a href="/unikanie" target="_blank" class="btn btn-outline-primary d-block-force">
         <span class="fal fa-book-reader"></span>
         Zbiór sposobów na unikanie form nacechowanych płciowo
     </a>

@@ -89,7 +89,7 @@ czyli w tym samym metaforycznym miejscu, co <span class="text-nowrap">zaimki.pl<
 To również chyba najobszerniejszy geograficznie opis obecnych zmagań społeczności queerowej – nieocenione źródło wiedzy i doświadczenia.
 To reportaż niewątpliwie warty przeczytania, warty zrozumienia, i warty polecenia.
 
-<a href="https://wydawnictwopoznanskie.pl/produkt/rozowa-linia/" target="_blank" rel="noopener" class="btn btn-outline-primary d-block my-5">
+<a href="https://wydawnictwopoznanskie.pl/produkt/rozowa-linia/" target="_blank" rel="noopener" class="btn btn-outline-primary d-block-force my-5">
     <span class="fal fa-shopping-basket"></span>
     Zamów na stronie Wydawnictwa Poznańskiego
 </a>

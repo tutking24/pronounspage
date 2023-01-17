@@ -15,7 +15,7 @@ information about your **_very rough_ location** as well as show visitors **what
 If you're curious why did I implement it the way I did, here's a blog post explaining the reasoning:
 
 <section>
-    <a href="https://avris.it/blog/privacy-friendly-location-field" target="_blank" class="btn btn-lg btn-primary d-block">
+    <a href="https://avris.it/blog/privacy-friendly-location-field" target="_blank" class="btn btn-lg btn-primary d-block-force">
         <span class="fal fa-link"></span>
         Avris » Privacy-friendly location field?
     </a>

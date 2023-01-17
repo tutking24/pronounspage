@@ -10,7 +10,7 @@ I manage my personal VPS, I manage some servers at work, but I wouldn't call mys
 So I'm super proud of myself and how well it went when I migrated a big project to a new machine 😊
 The downtime was just 15 minutes! Here's the story, if you're interested.
 
-<a href="https://avris.it/blog/pronouns-page-migration" target="_blank" rel="noopener" class="btn btn-outline-primary d-block my-5">
+<a href="https://avris.it/blog/pronouns-page-migration" target="_blank" rel="noopener" class="btn btn-outline-primary d-block-force my-5">
     <span class="fal fa-external-link"></span>
     Full text available on the author's blog
 </a>
