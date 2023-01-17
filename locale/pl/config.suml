@@ -1465,6 +1465,16 @@ links:
             url: 'https://aszdziennik.pl/143158,czasami-wystarczy-jedno-slowo-ksiazka-dla-dzieci-wie-jak-uczyc'
             headline: 'Tłumaczka książki dla dzieci pokazała, jak jednym słowem zatroszczyć się o wszystkie dzieci'
             extra: ' – <strong>ASZdziennik.pl</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://wiadomosci.gazeta.pl/wiadomosci/7,114883,29357242,kim-jest-dziabko-to-rodzic-naszego-rodzica-ale-jest-osoba.html'
+            headline: 'Kim jest "dziabko"? To rodzic naszego rodzica, ale jest osobą niebinarną'
+            extra: ' – <strong>gazeta.pl</strong>'
+            quote: >
+                Słownik Empatyczny Języka Polskiego, Rada Języka Neutralnego i Słownik Neutratywów Języka Polskiego
+                zaproponowały w ubiegłym roku słowo "dziabko". Dziabko, czyli niebinarny odpowiednik babci i dziadka,
+                czy też niebinarna osoba, będąca rodzicem naszego rodzica.
+                Eksperci zaproponowali też obchodzenie Dnia Dziabka po Dniu Babci i Dniu Dziadka - 23 stycznia.
 
     recommended:
         -
