@@ -12,7 +12,7 @@ Bella Ramsey to młodziutka osoba aktorska, która wcieliła się w rolę Ellie 
 
 Miesiąc temu rola w „Catherine Called Birdy” przyniosła Belli nominację do nagrody Critics Choice Award w kategorii „najlepszy młody aktor / najlepsza młoda aktorka” – ten brak podziału na płeć sprawił radość osobie, która od dziecka zastanawiała się nad swoją tożsamością płciową. Jako dziecko uwielbiała, gdy nieznajomi brali ją za chłopca.
 
-– Myślę, że moja płeć zawsze była bardzo płynna. Kiedy ktoś mówił o mnie „ona”, nie myślałam o tym, ale gdy nazywał mnie „on”, to było nieco ekscytujące. Jestem po prostu osobą. Nie przepadam za byciem określaną ze względu na płeć, ale jeśli chodzi o zaimki, naprawdę nie mogłabym przejmować się tym mniej – wyjaśniała. W czasie wypełniania rozmaitych formularzy, jeśli tylko ma taką opcję, Bella zaznacza „niebinarne”
+– Myślę, że moja płeć zawsze była bardzo płynna. Kiedy ktoś mówił o mnie „ona”, nie myślałam o tym, ale gdy nazywał mnie „on”, to było nieco ekscytujące. Jestem po prostu osobą. Nie przepadam za byciem określaną ze względu na płeć, ale jeśli chodzi o zaimki, naprawdę nie mogłabym przejmować się tym mniej – wyjaśniała. W czasie wypełniania rozmaitych formularzy, jeśli tylko ma taką opcję, Bella zaznacza „niebinarne”.
 
 Serial „The Last of Us” (HBO Max) spotkał się z niezwykle gorącym przyjęciem – według portalu Tomatometer średnia ocena z recenzji to 99%, a ocena publiczności – 96%. A oczekiwania były wysokie – gra „The Last of Us” sprzedała się w nakładzie ponad 20 milionów egzemplarzy. A to oznacza, że w mediach będą pojawiać się kolejne newsy o Belli. Oczywiście łatwo domyślić się, że część z nich będzie wymazywać jej tożsamość, ale przynajmniej część ją uszanuje.
 
@@ -26,7 +26,7 @@ Emma D’Arcy zagrało postać Rhaenyry Targaryen, dziedziczki Żelaznego Tronu,
 
 – To trochę surrealistyczne, ponieważ kiedy zaczynałom, naprawdę czułom, że muszę udawać i prezentować się jak kobieta, aby odnieść sukces w tej branży. W każdym razie uznałom, że nie chcę tego podtrzymywać i przestałom udawać – i co dziwne, to właśnie w tym momencie otrzymałom nominację do Złotego Globu w kategorii najlepsza aktorka. To jest piękna ironia. Myślę, że najważniejsze jest, że to oznacza, że przestrzeń dla osób transpłciowych oraz gender-nonconforming jest coraz większa. Czuję się więc bardzo uprzywilejowane – opowiadało Emma D’Arcy w wywiadzie z „E!News”.
 
-Ponieważ Emma D’Arcy korzysta z zaimków they/them (naszą propozycją jest, by tłumaczyć je na język polski jako ono/jego),
+Ponieważ Emma D’Arcy korzysta z zaimków they/them ([naszą propozycją](https://zaimki.pl/t%C5%82umaczenie) jest, by tłumaczyć je na język polski jako ono/jego),
 media – pisząc o nim – stają przed większym wyzwaniem niż w przypadku Belli Ramsey.
 [Noizz.pl](https://noizz.pl/lgbt/zlote-globy-2023-emma-darcy-nominowane-jako-najlepsza-aktorka-to-ironia/h77tc1x) zdecydowało się na formy [ono/jeno](https://zaimki.pl/ono/jeno),
 [Naekranie.pl](https://naekranie.pl/lekkie/zlote-globy-emma-darcy-niebinarna-aktorka-kategoria-1673530135) sięgnęło po [iksatywy](https://zaimki.pl/iksatywy) i [osobatywy](https://zaimki.pl/osobatywy),
@@ -45,7 +45,7 @@ ale też przynajmniej dwie napaści oraz kradzież z włamaniem. Jednocześnie w
 wystąpiło w trzech częściach serii „Fantastyczne zwierzęta i jak je znaleźć” jako Credence oraz „Lidze Sprawiedliwości” jako Flash.
 Na premierę czeka „The Flash” z Ezrą w roli głównej. Z tego powodu o przestępstwach Ezry jest głośniej niż gdyby popełniała je nieznana osoba – 
 a gdy media o nich informują, mierzą się z tym, jak przetłumaczyć płeć Ezry.
-[Filmweb](https://www.filmweb.pl/news/Ezra+Miller+z+ugod%C4%85.+Na+jakie+warunki+zgodzi%C5%82x+si%C4%99+ekranowy+Flash+z+uniwersum+DC-149155) postawił na iksatywy,
+[Filmweb](https://www.filmweb.pl/news/Ezra+Miller+z+ugod%C4%85.+Na+jakie+warunki+zgodzi%C5%82x+si%C4%99+ekranowy+Flash+z+uniwersum+DC-149155) postawił na [iksatywy](https://zaimki.pl/iksatywy),
 a [Poptown.eu](https://poptown.eu/przestepstwa-ezry-miller-to-nie-okazja-do-queerfobii/) – na [osobatywy](https://zaimki.pl/osobatywy) i [rodzaj neutralny](https://zaimki.pl/ono/jego).
 
 Przypadek Ezry Millera jest o tyle interesujący, że wiele osób uważa, że jego przestępstwa zwalniają z konieczności uszanowania jego tożsamości, tak jakby przestępstwa były automatycznym usprawiedliwieniem dla queerfobii. Podkreślmy – Ezra Miller popełniło paskudne czyny i powinno za nie odpowiedzieć, ponieważ najważniejsze jest dobro jego ofiar. Tyle że queerfobia nie pomaga ofiarom – tym bardziej, że osoba najbardziej skrzywdzona przez Ezrę Millera… też jest niebinarna. Gibson miało zaledwie 12 lat, gdy poznało Ezrę. Miller uzależniło je od siebie finansowo, z czasem zaczęło też podawać mu narkotyki i alkohol, aż w końcu przekonało Gibson do porzucenia szkoły i uprowadziło je, m.in. odcinając mu dostęp do telefonu i własnych pieniędzy i dokumentów.
