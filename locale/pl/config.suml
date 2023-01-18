@@ -1837,6 +1837,17 @@ census:
                 - ['językiem rodzimym']
                 - ['kolejnym językiem']
         -
+            type: 'radio'
+            question: >
+                Czy przeszkadza Ci określanie form takich jak „zrobiłom”, „powiedziałoś” nazwą „rodzaj nijaki”?
+            randomise: true
+            writein: true
+            options:
+                - ['razi mnie, wolę „rodzaj neutralny”']
+                - ['nie przeszkadza mi']
+                - ['nie przeszkadza mi określenie „rodzaj nijaki”, wolę je od „rodzaj neutralny”']
+                - ['nie mam zdania']
+        -
             type: 'checkbox'
             question: 'Jakimi formami chcesz mówić o sobie / chcesz by mówiono o Tobie?'
             randomise: true
@@ -2039,17 +2050,6 @@ census:
                 - ['wybrałom neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców']
                 - ['wybrałom nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców']
                 - ['wybrałom na imię rzeczownik, który tradycyjnie nie był używany jako imię']
-        -
-            type: 'radio'
-            question: >
-                Czy przeszkadza Ci określanie form takich jak „zrobiłom”, „powiedziałoś” nazwą „rodzaj nijaki”?
-            randomise: true
-            writein: true
-            options:
-                - ['razi mnie, wolę „rodzaj neutralny”']
-                - ['nie przeszkadza mi']
-                - ['wolę „rodzaj nijaki”']
-                - ['nie mam zdania']
         -
             type: 'checkbox'
             question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
