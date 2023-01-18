@@ -32,7 +32,7 @@ media – pisząc o nim – stają przed większym wyzwaniem niż w przypadku Be
 [Naekranie.pl](https://naekranie.pl/lekkie/zlote-globy-emma-darcy-niebinarna-aktorka-kategoria-1673530135) sięgnęło po [iksatywy](https://zaimki.pl/iksatywy) i [osobatywy](https://zaimki.pl/osobatywy),
 a [Vogue.pl](https://www.vogue.pl/a/rod-smoka-emma-darcy-wlada-bestiami) korzysta z form [oni/ich](https://zaimki.pl/oni/ich).
 
-Kolejną osobą aktorską, która używa zaimków they/them, jest Emma Corrin, które wcieliło się w rolę młodej księżnej Diany w serialu „Crown”
+Kolejną osobą aktorską, która używa zaimków they/them, jest Emma Corrin, które wcieliło się w rolę młodej księżnej Diany w serialu „Crown”.
 
 – Moja podróż była długa i wciąż mam jeszcze długą drogę do przebycia. (...) Społeczeństwo działa w sposób binarny i zajęło mi dużo czasu, zanim zdałom sobie sprawę, że istnieję gdzieś pomiędzy i wciąż nie do końca jestem pewne, gdzie dokładnie – opisywało swoją drogę. Aktualizując zaimki w mediach społecznościowych, Emma oznajmiło, że widoczność jest kluczowa. Ponadto w jego wpisach można zauważyć, że Emma na co dzień używa Binderów do spłaszczania klatki piersiowej.
 
