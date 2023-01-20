@@ -2,9 +2,11 @@
 
 <small>2023-01-20 | [@Tess](/@Tess)</small>
 
+{disable_twemoji}
+
 ![Ja w ciąży, w pozycji półleżącej na łóżku, obejmuję brzuch, mam na sobie czarną koszulkę z nadrukiem ultrasonogramu, na którym dziecko robi rączką gest 🤘](/img-local/blog/tess-ciąża.png)
 
-**Co czuje osoba niebinarna, gdy widzi dwie kreski na teście ciążowym? Czy opieka ginekologiczno-położnicza w Polsce jest przyjazna dla osób transpłciowych? Czy mamy nad czym pracować w kwestii inkluzywności języka, którym mówimy o ciąży? **
+**Co czuje osoba niebinarna, gdy widzi dwie kreski na teście ciążowym? Czy opieka ginekologiczno-położnicza w Polsce jest przyjazna dla osób transpłciowych? Czy mamy nad czym pracować w kwestii inkluzywności języka, którym mówimy o ciąży?**
 
 Wiele osób marzy o tym, by zostać rodzicami, są też takie, które zostają nimi nieco z przypadku. Osoby niebinarne nie różnią się w tym od reszty społeczeństwa. Zapraszamy do lektury cyklu o niebinarnym rodzicielstwie. Część pierwsza skupi się na doświadczeniu ciąży u osób niebinarnych.
 
