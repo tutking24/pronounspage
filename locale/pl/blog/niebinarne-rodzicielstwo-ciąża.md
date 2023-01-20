@@ -30,7 +30,7 @@ Dlatego, jeśli jesteś w ciąży i jesteś osobą niebinarną lub transpłciowy
 
 Niestety prowadzenie ciąży nie służy osobom, którym doskwiera mocna dysforia. W moim przypadku było o tyle łatwiej, że używam zarówno formy ono/jego, jak i ona/jej – osobom nieużywającym form żeńskich byłoby zdecydowanie trudniej. A aby zmienić ich sytuację, naprawdę nie trzeba dużo.
 
-Co ciekawe – tak naprawdę większa inkluzywność wsparłaby nie tylko osoby niebienarne i transpłciowe.
+Co ciekawe – tak naprawdę większa inkluzywność wsparłaby nie tylko osoby niebinarne i transpłciowe.
 
 Przykłady?
 
