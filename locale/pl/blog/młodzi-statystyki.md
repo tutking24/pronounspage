@@ -2,7 +2,9 @@
 
 <small>2023-01-23 | [@Tess](/@Tess)</small>
 
-Choć nauka nie ma żadnych wątpliwości co do istnienia niebinarności, to nadal nie wiemy, ile właściwie jest osób niebinarnych. Na szczęście danych przybywa. Dziś o spostrzeżeniach Oli Szelezin, badaczki społecznej.
+![Stockowe zdjęcie ilustracyjne przedstawiające osobę pracującą na laptopie](/img-local/blog/laptop-ręce.jpg)
+
+**Choć nauka nie ma żadnych wątpliwości co do istnienia niebinarności, to nadal nie wiemy, ile właściwie jest osób niebinarnych. Na szczęście danych przybywa. Dziś o spostrzeżeniach Oli Szelezin, badaczki społecznej.**
 
 Wypowiedź Oli Szelezin znalazłośmy na [profilu stowarzyszenia Miłość Nie Wyklucza](https://www.facebook.com/Miloscniewyklucza/posts/pfbid02dgHH7WLJddNsG9k9jKum5JMeNvRYxk19Fem7t8RusAqDREABgVXa8zAKRYjgZVfpl) – odezwała się w kontekście [coming outu Belli Ramsey](https://zaimki.pl/blog/popkultura-niebinarno%C5%9B%C4%87). Ponieważ jej spostrzeżenia uznałośmy za bardzo cenne, poprosiliśmy o możliwość zacytowania ich – i uzyskałośmy zgodę. Zapraszamy do lektury!
 
