@@ -749,7 +749,7 @@ privacy:
     header: 'Política de Privacidade'  # TODO
 
 admin:
-    header: 'Panel de Admins'
+    header: 'Painel de Admins'
     user:
         user: 'Usuárie'
         createdAt: 'Data de registro'
