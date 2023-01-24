@@ -29,6 +29,7 @@ export default {
         values: { required: true },
         limit: { required: true },
         static: { type: Boolean },
+        expand: { type: Boolean },
     },
     data() {
         let showLimit = this.values.length;
@@ -44,10 +45,17 @@ export default {
         }
 
         return {
-            allShown: false,
+            allShown: this.expand,
             showLimit,
             hiddenCount,
         }
+    },
+    watch: {
+        expand(v) {
+            if (v) {
+                this.allShown = true;
+            }
+        },
     },
 }
 </script>

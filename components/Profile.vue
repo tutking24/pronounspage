@@ -34,7 +34,7 @@
                     <T>profile.birthday</T><T>quotation.colon</T>
                     {{ profile.age }}
                 </p>
-                <Timezone v-if="profile.timezone" :value="profile.timezone" :static="expandLinks"/>
+                <Timezone v-if="profile.timezone" :value="profile.timezone" :static="static"/>
             </div>
 
             <div v-if="profile.flags.length || profile.customFlags.length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
@@ -67,7 +67,7 @@
                     <T>profile.names</T>
                 </h3>
 
-                <ExpandableList :values="profile.names" :limit="16" class="list-unstyled" :static="expandLinks">
+                <ExpandableList :values="profile.names" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
                         <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :customOpinions="profile.opinions"/>
                     </template>
@@ -79,7 +79,7 @@
                     <T>profile.pronouns</T>
                 </h3>
 
-                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="expandLinks">
+                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
                         <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`/${s.el.link}`" :customOpinions="profile.opinions"/>
                     </template>
@@ -91,9 +91,9 @@
                     <T>profile.links</T>
                 </h3>
 
-                <ExpandableList :values="profile.links" :limit="16" class="list-unstyled" :static="expandLinks">
+                <ExpandableList :values="profile.links" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <ProfileLink :link="s.el" :expand="expandLinks" :verifiedLinks="profile.verifiedLinks || {}"/>
+                        <ProfileLink :link="s.el" :expand="static" :verifiedLinks="profile.verifiedLinks || {}"/>
                     </template>
                 </ExpandableList>
             </div>
@@ -109,7 +109,7 @@
                 <div v-for="column in profile.words" v-if="column.values.length" class="col-6 col-lg-3">
                     <h4 v-if="column.header" class="h6">{{ column.header }}</h4>
 
-                    <ExpandableList :values="column.values" :limit="16" class="list-unstyled" :static="expandLinks">
+                    <ExpandableList :values="column.values" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                         <template v-slot="s">
                             <Opinion :word="s.el.value" :opinion="s.el.opinion" :customOpinions="profile.opinions"/>
                         </template>
@@ -118,7 +118,7 @@
             </div>
         </section>
 
-        <section class="clearfix" v-if="profile.circle.length > 0 && !expandLinks">
+        <section class="clearfix" v-if="profile.circle.length > 0 && !static">
             <h3>
                 <Icon v="heart-circle"/>
                 <T>profile.circles.header</T>
@@ -159,6 +159,7 @@
             user: { required: true },
             profile: { required: true },
             terms: { 'default': null },
+            static: { type: Boolean },
             expandLinks: { type: Boolean },
         },
         data() {

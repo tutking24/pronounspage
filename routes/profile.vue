@@ -11,8 +11,8 @@
             </div>
         </section>
 
-        <MarkSus>
-            <Profile :user="user" :profile="profile" :terms="terms"/>
+        <MarkSus @hasSus="hasSus = true">
+            <Profile :user="user" :profile="profile" :terms="terms" :expandLinks="hasSus"/>
         </MarkSus>
 
         <AdPlaceholder phkey="main-0"/>
@@ -191,6 +191,7 @@
                  cardMenuVisible: false,
 
                  cardsEnabled: true,
+                 hasSus: false,
             }
         },
         async asyncData({ app, route }) {

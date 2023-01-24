@@ -1,5 +1,5 @@
 <template>
-    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3 mt-5" expandLinks>
+    <Profile v-if="profile" :user="user" :profile="profile" class="pb-3 mt-5" static>
         <nuxt-link to="/">
             <h1 class="text-nowrap h5">
                 <Logo style="font-size: 1.3em;"/>

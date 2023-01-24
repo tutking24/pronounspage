@@ -43,6 +43,7 @@ export default {
                         return m;
                     }
                     this.hasSus = true;
+                    this.$emit('hasSus');
                     return `<mark>${m}</mark>`;
                 });
             }
