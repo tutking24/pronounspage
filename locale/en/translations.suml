@@ -743,10 +743,14 @@ user:
             subject: 'Your pronouns.page account is inactive and will soon be removed'
             content: >
                 Hi! We're periodically cleaning up our database
-                in order to free up the unused usernames.
+                in order to free up unused usernames.
                 Heads up: it looks like you haven't created any cards and haven't logged in for a while.
                 You can keep your account by creating a card, otherwise it will get removed in a week.
                 If you don't want to keep your account, you don't need to do anything.
+            clarification: >
+                If you're confused by this email cause you have a card already,
+                it's possible that you've simply created two accounts at some point and forgot about one.
+                This email is regarding:
             cta: 'Create a card'
     qr:
         header: 'QR code'
