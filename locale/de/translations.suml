@@ -623,6 +623,7 @@ profile:
     language:
         header: 'Sprache'
         description: 'Die Visitenkarte von @%username% ist auch in den folgenden Sprachen verfügbar'
+    wordsColumnHeader: 'Spaltenkopf'
     circles:
         info: >
             In diesem Feld kannst du die <strong>Personen, die dir am nächsten sind</strong> per Usertag markieren,
@@ -632,8 +633,18 @@ profile:
             Personen, die du hier markierst, <strong>dies sehen können</strong> – und dich möglicherweise wegen
             Belästigung melden, wenn dj sich entscheidest, negative Dinge über sie zu schreiben. Wenn eine Verbindung in
             Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet.
+        validation:
+            required: 'Beziehung ist ein erforderliches Feld'
     timezone:
+        header: 'Zeitzone'
+        placeholder: 'Wähle deine Zeitzone'
+        info: >
+            Wenn du dieses Feld ausfüllst, wird deine Visitenkarte den Leuten zeigen <strong>wie spät es an deinem
+            Wohnort ist</strong>. Optional kannst du auch deinen ungefähren Standort veröffentlichen.
         time: 'Es ist %time% an einem %weekday% in meiner Zeitzone.'
+        detect: 'Erkennen'
+        publishArea: 'Veröffentliche deinen Kontinent in deiner Visitenkarte'
+        publishLocation: 'Veröffentliche deine Region in deiner Visitenkarte'
         areas:
             Africa: 'Afrika'
             America: 'Amerika'
@@ -641,7 +652,9 @@ profile:
             Arctic: 'Arktis'
             Asia: 'Asien'
             Atlantic: 'Atlantik'
+            Australia: 'Australien'
             Europe: 'Europa'
+            Indian: 'Indien'
             Pacific: 'Pazifik'
         approximate: 'Es ist nur ein ungefährer Standort'
 share: 'Teilen'
@@ -661,6 +674,9 @@ crud:
     loginRequired: '{/account=Log dich ein} um Eintrag einzureichen'
     copy: 'Link kopieren'
     download: 'Herunterladen'
+    loadAll: 'Alle laden...'
+    validation:
+        listMaxLength: 'Die maximale Anzahl von Elementen in dieser Liste ist %maxlength%.'
 
 footer:
     license: >
@@ -787,6 +803,12 @@ report:
     hoarding: 'Wir bitten dich, Konten aufgrund "Besetzung eines Benutzer*in-Namens" nicht zu melden. Wir löschen Konten ohne Visitenkarten automatisch nach einem Zeitraum der Inaktivität. Deine Meldung wird diesen Prozess nicht beschleunigen.'
 
 translationMode:
+    welcome: >
+        Fehlt eine Übersetzung oder muss eine vorhandene Übersetzung korrigiert werden? Du kannst auf die blaue
+        Schaltfläche in der unteren rechten Ecke klicken, um den Übersetzungsmodus ein- und auszuschalten. Wenn du in
+        diesem Modus auf ein umrandetes Stück Text klickst, öffnet sich ein Dialogfeld, in dem du die Übersetzung ändern
+        und mit dem englischen Text vergleichen kannst. Vergiss nicht, auf die Schaltfläche "Änderungen übernehmen" zu
+        klicken, wenn du fertig bist.
     action: 'Übersetzungen vorschlagen'
     changes: 'Änderungen'
     header: 'Übersetzungsmodus'
