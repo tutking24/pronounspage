@@ -47,7 +47,7 @@
                         or if you think the person shouldn't be banned despite another moderator thinking otherwise,
                         please start a thread on Teams to discuss it.
                     </p>
-                    <table class="table table-striped">
+                    <table class="table table-striped" :style="!user.bannedReason && user.bannedBy ? `opacity: 0.5` : ``">
                         <thead>
                         <tr>
                             <th>Proposed at</th>
@@ -74,7 +74,12 @@
                         </tr>
                         </tbody>
                     </table>
-                    <button v-if="isBanned || banProposals.length > 0" class="btn btn-success btn-sm" @click="applyBan(0)">Unban / cancel proposals</button>
+                    <p v-if="!user.bannedReason && user.bannedBy">
+                        <Icon v="check-circle"/> Ban (proposals) were cancelled / account was unbanned.
+                    </p>
+                    <p v-else>
+                        <button v-if="isBanned || banProposals.length > 0" class="btn btn-success btn-sm" @click="applyBan(0)">Unban / cancel proposals</button>
+                    </p>
                 </div>
                 <textarea v-model="user.bannedReason" class="form-control" rows="3" :placeholder="$t('ban.reason') + ' ' + $t('ban.visible')" :disabled="saving"></textarea>
                 <div class="form-group">

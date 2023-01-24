@@ -209,6 +209,7 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
             users.avatarSource,
             users.bannedReason,
             users.bannedTerms,
+            users.bannedBy,
             users.roles != '' AS team
         FROM users
         WHERE users.usernameNorm = ${normalise(req.params.username)}
