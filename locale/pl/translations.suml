@@ -1405,6 +1405,9 @@ profile:
             duplicateDescription: 'Opishy muszą być unikalne'
             invalidOpinion: 'Wybrana ikona nie jest dostępna w legendzie powyżej'
         custom: 'dodane ręcznie:'
+    expendableList:
+        more: '… i %count% więcej'
+        show: '(klijnij, by rozwinąć)'
     header: 'Wizytówki'
     list: 'Twoje wizytówki'
     init: 'Stwórz wizytówkę'

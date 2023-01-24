@@ -698,6 +698,9 @@ profile:
             duplicateDescription: 'Description must be unique'
             invalidOpinion: 'Selected icon was not found in the legend above'
         custom: 'custom, added by the user:'
+    expendableList:
+        more: '… and %count% more items'
+        show: '(click to show)'
     header: 'Cards'
     list: 'Your cards'
     init: 'Create a card'
