@@ -4,7 +4,6 @@ const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
 const { LinkAnalyser } = require('../src/links');
 
-
 const timer = ms => new Promise( res => setTimeout(res, ms));
 
 (async () => {
@@ -17,7 +16,12 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
             await timer(1000);
             continue;
         }
-        const results = await Promise.all(chunk.map(({url}) => analyser.analyse(url)));
+        const results = await Promise.all(chunk.map(({url}) => Promise.race([
+            analyser.analyse(url),
+            new Promise((resolve, reject) =>
+                setTimeout(() => resolve({url: url, error: new Error('timeout')}), 12000)
+            ),
+        ])));
         for (let result of results) {
             // random TTL (0-30 days) in order to spread out the legacy load
             const expireAt = parseInt(new Date() / 1000) + parseInt(30*24*60*60*Math.random());
