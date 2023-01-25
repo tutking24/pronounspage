@@ -609,7 +609,7 @@ profile:
         info: >
             Los enlaces que une pone públicamente en su perfil estarán marcados con el ícono de escudo,
             si se verifican iniciando sesión con el proveedor de autenticación disponible,
-            o (en construcción) por una etiqueta <code>rel="yo"</code> que apunte de vuelta a la tarjeta.
+            o por una etiqueta <code>rel="yo"</code> que apunte de vuelta a la tarjeta.
             Nuestros enlaces también incluyen una etiqueta <code>rel="yo"</code>, para que sitios web externos puedan a su vez verificar tu tarjeta por su lado.
     column: 'Columna'
     list: 'Tus tarjetas'

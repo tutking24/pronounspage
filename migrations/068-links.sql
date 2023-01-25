@@ -1,0 +1,11 @@
+-- Up
+
+CREATE TABLE links (
+    url TEXT PRIMARY KEY,
+    expiresAt INTEGER NULL DEFAULT NULL,
+    favicon TEXT NULL DEFAULT NULL,
+    relMe TEXT NULL DEFAULT NULL,
+    nodeinfo TEXT NULL DEFAULT NULL
+)
+
+-- Down

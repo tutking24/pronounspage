@@ -566,7 +566,7 @@ profile:
         info: >
             Die Links, die man öffentlich in sein Profil stellt werden mit dem Schild-Icon gekennzeichnet,
             wenn sie durch Anmeldung mit dem angegebenen Authentifizierungsanbieter verifiziert werden,
-            oder (im Aufbau) durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
+            oder durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
             Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
     column: 'Spalte'
     opinions:

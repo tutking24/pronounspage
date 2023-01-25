@@ -512,7 +512,7 @@ profile:
         header: 'geverifieerde social media links'
         info: >
             De social media links zullen worden gemarkeerd door een schild icoon mits ze geverifieerd zijn door
-            in te loggen met de desbetreffende social media, of (onder constructie) door een <code>rel="me"</code>
+            in te loggen met de desbetreffende social media, of door een <code>rel="me"</code>
             tag die terugverwijst naar de kaart. Onze links bevatten ook een <code>rel="me"</code> tag,
             zodat externe websites omgekeerd jouw kaart ook kunnen verifieren.
     column: 'Kolom'

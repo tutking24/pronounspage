@@ -2,20 +2,22 @@ require('../src/dotenv')();
 
 const dbConnection = require('./db');
 const SQL = require('sql-template-strings');
+const {normaliseUrl} = require('../src/links');
 
 (async () => {
     const db = await dbConnection();
 
-    const profiles = await db.all(SQL`SELECT * FROM profiles WHERE links not like '[%'`);
+    const profiles = await db.all(SQL`SELECT links FROM profiles`);
     let i = 0;
-    for (let profile of profiles) {
+    for (let {links} of profiles) {
         if (i % 1000 === 0) {
             console.log(`${i}/${profiles.length}`);
-            i++;
         }
-        const links = profile.links.split(',');
-        const newLinks = JSON.stringify(links);
-        const sql = SQL`UPDATE profiles SET links = ${newLinks} WHERE id = ${profile.id}`;
-        await db.get(sql);
+        i++;
+        for (let url of JSON.parse(links)) {
+            url = normaliseUrl(url);
+            if (!url) { continue; }
+            await db.get(SQL`INSERT INTO links (url) VALUES (${url}) ON CONFLICT (url) DO UPDATE SET expiresAt = null`);
+        }
     }
 })();

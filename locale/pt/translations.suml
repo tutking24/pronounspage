@@ -588,7 +588,7 @@ profile:
         info: >
             Os links colocados publicamente em um perfil serão sinalizados com o ícone de escudo,
              se forem verificados fazendo login usando o provedor de autenticação fornecido,
-            ou (under construction) por uma tag <code>rel="me"</code>  apontando para o cartão.
+            ou por uma tag <code>rel="me"</code>  apontando para o cartão.
             Nossos links também incluem uma tag <code>rel="me"</code> para que websites externos também possam verificar seu cartão.
     column: 'Coluna'
 

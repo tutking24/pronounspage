@@ -504,7 +504,7 @@ profile:
         info: >
             Les liens affichés sur les profils des utilisateurs.ices seront précédés d'une icône de bouclier,
             s'ils ont utilisés la vérification en passant par l'authentification tierce,
-            ou (en construction) par le biais d'un tag <code>rel="me"</code> qui redirige sur la carte.
+            ou par le biais d'un tag <code>rel="me"</code> qui redirige sur la carte.
             Nos liens contiennent également un tag <code>rel="me"</code> pour que les sites tierces puissent vérifier votre carte également.
     column: 'Colonne'
 

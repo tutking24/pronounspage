@@ -91,7 +91,7 @@ export default {
                 cake: LINK_PROVIDERS.cake,
             };
         },
-        beautifyLink(link, expand = false, verifiedBy = undefined) {
+        beautifyLink(link, expand = false, verifiedBy = undefined, metadata = undefined) {
             for (let name in LINK_PROVIDERS) {
                 if (!LINK_PROVIDERS.hasOwnProperty(name)) { continue; }
                 const provider = LINK_PROVIDERS[name];
@@ -113,7 +113,7 @@ export default {
             }
 
             return {
-                icon: 'globe-europe',
+                icon: metadata?.favicon || 'globe-europe',
                 text: clearUrl(link),
             }
         }

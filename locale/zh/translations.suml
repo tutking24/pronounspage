@@ -494,14 +494,8 @@ profile:
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
-    # TODO
     verifiedLinks:
         header: '已認證鏈結'
-        info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: '列'
 
     list: '你的卡片'

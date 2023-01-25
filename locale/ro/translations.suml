@@ -690,7 +690,7 @@ profile:
         info: >
             Linkurile pe care le pune cineva public în profilul său vor fi marcate cu un scut
             dacă sunt verificate prin logarea în furnizorul de autentificare dat,
-            sau (în construcție) de un tag <code>rel="me"</code> ducând înapoi la card.
+            sau de un tag <code>rel="me"</code> ducând înapoi la card.
             Linkurile noastre includ și un tag <code>rel="me"</code> pentru ca site-urile externe să-ți poată verifica și cardul tău.
     timezone:
         header: 'Fus orar'

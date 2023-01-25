@@ -47,7 +47,6 @@ module.exports.upgradeToV2 = (profileV1) => {
 }
 
 module.exports.downgradeToV1 = (profileV2) => {
-    console.log(profileV2);
     return {
         ...profileV2,
         names: downgradeOpinionsListToV1(profileV2.names),

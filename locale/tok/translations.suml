@@ -643,13 +643,6 @@ profile:
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     links: 'Links'
     linksRecommended: 'We recommend linking to'
-    verifiedLinks:
-        header: 'Verified links'
-        info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or (under construction) by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Column'
     opinions:
         header: 'Legend/opinions'

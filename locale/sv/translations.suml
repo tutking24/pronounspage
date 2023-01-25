@@ -646,7 +646,7 @@ profile:
         header: 'Verifierade länkar'
         info: >
             De länkar som man publicerar i sin profil kommer bli markerade med sköldsikonen om de verifieras genom
-            att logga in med den respektiva auteniseringsleverantören, eller (ej klart) genom en <code>rel="me"</code>-tagg
+            att logga in med den respektiva auteniseringsleverantören, eller genom en <code>rel="me"</code>-tagg
             som hänvisar tillbaka till kortet. Våra länkar inkluderar också en <code>rel="me"</code>-tagg, så att externa
             webbsidor kan verifiera ditt kort andra vägen runt också.
     circles:

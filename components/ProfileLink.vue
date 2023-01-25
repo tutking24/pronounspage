@@ -15,6 +15,7 @@
         mixins: [link],
         props: {
             link: { required: true },
+            metadata: {},
             expand: { type: Boolean },
             verifiedLinks: { 'default': () => {return {}} },
         },
@@ -23,7 +24,7 @@
                 return this.link.trim();
             },
             niceLink() {
-                return this.beautifyLink(this.linkTrimmed, this.expand, this.verifiedBy);
+                return this.beautifyLink(this.linkTrimmed, this.expand, this.verifiedBy, this.metadata);
             },
             verifiedBy() {
                 return this.verifiedLinks[this.link];

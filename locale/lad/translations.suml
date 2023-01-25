@@ -477,7 +477,7 @@ profile:
         info: >
             Los atadijos que une poza publikamente en su profil estaran markados kon el ikono de eskudo,
             si se verifikan konektandose kon el mantenedor de autentifikasyon desponible,
-            o (en konstruksyon) por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
+            o por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
             Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios web externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
 

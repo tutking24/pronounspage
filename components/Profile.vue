@@ -93,7 +93,7 @@
 
                 <ExpandableList :values="profile.links" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <ProfileLink :link="s.el" :expand="static" :verifiedLinks="profile.verifiedLinks || {}"/>
+                        <ProfileLink :link="s.el" :expand="static" :verifiedLinks="profile.verifiedLinks || {}" :metadata="profile.linksMetadata[s.el]"/>
                     </template>
                 </ExpandableList>
             </div>

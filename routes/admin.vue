@@ -49,10 +49,19 @@
                 header="Moderation rules"
             />
             <AdminDashboardCard
+                v-if="$isGranted('code')"
                 icon="id-card"
                 header="Cards queue"
                 :counts="[
                     {count: stats._.cardsQueue, warning: 16, danger: 64},
+                ]"
+            />
+            <AdminDashboardCard
+                v-if="$isGranted('code')"
+                icon="link"
+                header="Links queue"
+                :counts="[
+                    {count: stats._.linksQueue, warning: 64, danger: 256},
                 ]"
             />
             <AdminDashboardCard

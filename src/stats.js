@@ -119,6 +119,10 @@ module.exports.calculateStats = async (db, allLocales, projectDir) => {
     if (cardsQueue > 64) {
         mailer('contact@pronouns.page', 'cardsWarning', {count: cardsQueue});
     }
+    const linksQueue = (await db.get(`SELECT count(*) as c FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000})`)).c;
+    if (linksQueue > 256) {
+        mailer('contact@pronouns.page', 'linksWarning', {count: linksQueue});
+    }
 
     const stats = [];
     stats.push({
@@ -131,6 +135,7 @@ module.exports.calculateStats = async (db, allLocales, projectDir) => {
             heartbeat: heartbeat['https://pronouns.page'],
             plausible: await checkPlausible('https://pronouns.page'),
             cardsQueue,
+            linksQueue,
         },
     });
 

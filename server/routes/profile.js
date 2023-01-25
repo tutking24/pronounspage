@@ -10,6 +10,8 @@ import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/bir
 import {socialProviders} from "../../src/socialProviders";
 import {downgradeToV1, upgradeToV2} from "../profileV2";
 import { colours, styles } from '../../src/styling';
+import {normaliseUrl} from "../../src/links";
+import locales from '../../src/locales';
 
 const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // https://stackoverflow.com/a/6969486/3297012
 const normalise = s => decodeURIComponent(s.trim().toLowerCase());
@@ -31,8 +33,25 @@ const calcAge = birthday => {
 const providersWithLinks = Object.keys(socialProviders)
     .filter(p => socialProviders[p].linkRegex !== undefined);
 
-const verifyLinks = (links, authenticators) => {
+const domains = ['https://pronouns.page', locales.map(l => l[2])];
+
+const verifyLinks = (links, authenticators, username, linksMetadata) => {
     const verifiedLinks = {};
+    for (let link of links) {
+        const linkMetadata = linksMetadata[link];
+        if (!linkMetadata || !linkMetadata.relMe) { continue; }
+        for (let relMe of linkMetadata.relMe) {
+            if (domains.filter(d => relMe.startsWith(d)).length === 0) { continue; }
+            try {
+                relMe = new URL(relMe).pathname;
+            } catch { continue; }
+            if (!relMe.startsWith('/@') && !relMe.startsWith('/u/')) { continue; }
+            relMe = relMe.replace(new RegExp('^/@'), '').replace(new RegExp('^/u/'), '');
+            if (normalise(username) === normalise(relMe)) {
+                verifiedLinks[link] = 'relMe';
+            }
+        }
+    }
     for (let provider of providersWithLinks) {
         for (let a of authenticators) {
             if (a.type !== provider) { continue; }
@@ -44,6 +63,7 @@ const verifyLinks = (links, authenticators) => {
             }
         }
     }
+
     return verifiedLinks;
 }
 
@@ -70,7 +90,15 @@ const fetchProfiles = async (db, username, self) => {
 
     const p = {}
     for (let profile of profiles) {
-        const links = JSON.parse(profile.links);
+        const links = JSON.parse(profile.links).map(l => normaliseUrl(l)).filter(l => !!l);
+        const linksMetadata = {};
+        for (let link of await db.all(SQL`SELECT * FROM links WHERE url IN (`.append(links.map(k => `'${k}'`).join(',')).append(SQL`)`))) {
+            linksMetadata[link.url] = {
+                favicon: link.favicon,
+                relMe: JSON.parse(link.relMe),
+                nodeinfo: JSON.parse(link.nodeinfo),
+            };
+        }
         const circle = await fetchCircles(db, profile.id, user.id);
 
         p[profile.locale] = {
@@ -79,8 +107,9 @@ const fetchProfiles = async (db, username, self) => {
             pronouns: JSON.parse(profile.pronouns),
             description: profile.description,
             age: calcAge(profile.birthday),
-            links: links,
-            verifiedLinks: verifyLinks(links, linkAuthenticators),
+            links,
+            linksMetadata,
+            verifiedLinks: verifyLinks(links, linkAuthenticators, username, linksMetadata),
             flags: JSON.parse(profile.flags),
             customFlags: JSON.parse(profile.customFlags),
             words: JSON.parse(profile.words),
@@ -469,6 +498,12 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
             SET timezone = ${JSON.stringify(timezone)}
             WHERE userId = ${req.user.id};
         `);
+    }
+
+    for (let url of links) {
+        url = normaliseUrl(url);
+        if (!url) { continue; }
+        await req.db.get(SQL`INSERT INTO links (url) VALUES (${url}) ON CONFLICT (url) DO UPDATE SET expiresAt = null`);
     }
 
     const sus = [...isSuspicious(req.body)];
