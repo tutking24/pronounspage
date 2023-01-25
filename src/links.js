@@ -57,7 +57,15 @@ class LinkAnalyser {
             return new URL(link, url);
         }
 
-        return new URL('/favicon.ico', url);
+        try {
+            const fallback = new URL('/favicon.ico', url);
+            const res = await fetch(fallback);
+            if (res.ok) {
+                return fallback;
+            }
+        } catch {}
+
+        return null;
     }
 
     async _fetchNodeInfo(url) {
