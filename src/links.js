@@ -61,7 +61,9 @@ class LinkAnalyser {
 
         try {
             const fallback = new URL('/favicon.ico', url);
-            const res = await fetch(fallback);
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 1000);
+            const res = await fetch(fallback, {signal: controller.signal});
             if (res.ok) {
                 return fallback;
             }
