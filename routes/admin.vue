@@ -2,21 +2,35 @@
     <Page wide>
     <NotFound v-if="!$isGranted('panel')"/>
     <div v-else>
-        <h2>
-            <Icon v="user-cog"/>
-            <T>admin.header</T>
-        </h2>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
+            <div>
+                <h2>
+                    <Icon v="user-cog"/>
+                    <T>admin.header</T>
+                </h2>
 
-        <p class="small"><em>
-            Stats calculated at:
-            {{$datetime(stats.calculatedAt)}}
-        </em></p>
+                <p class="small"><em>
+                    Stats calculated at:
+                    <span :class="stats.calculatedAt < (new Date() - 24*60*60*1000) / 1000 ? `badge bg-danger text-white` : ''">
+                        {{$datetime(stats.calculatedAt)}}
+                    </span>
+                </em></p>
+            </div>
+            <div class="form-check form-switch my-2">
+                <label>
+                    <input class="form-check-input" type="checkbox" v-model="filterAttention">
+                    <Icon v="filter"/>
+                    Only show items requiring attention
+                </label>
+            </div>
+        </div>
 
         <h3>General</h3>
 
         <div class="row mb-4">
             <AdminDashboardCard
                 v-if="$isGranted('users')"
+                v-show="!filterAttention"
                 icon="users"
                 header="Users"
                 link="/admin/users"
@@ -27,6 +41,7 @@
             />
             <AdminDashboardCard
                 v-if="$isGranted('users')"
+                v-show="!filterAttention || stats._.bansPending"
                 icon="ban"
                 header="Pending bans"
                 link="/admin/pending-bans"
@@ -36,6 +51,7 @@
             />
             <AdminDashboardCard
                 v-if="$isGranted('users')"
+                v-show="!filterAttention || stats._.userReports"
                 icon="siren-on"
                 header="Abuse reports"
                 link="/admin/abuse-reports"
@@ -44,12 +60,14 @@
                 ]"
             />
             <AdminDashboardCard
+                v-show="!filterAttention"
                 icon="user-cog"
                 link="/admin/moderation"
                 header="Moderation rules"
             />
             <AdminDashboardCard
                 v-if="$isGranted('code')"
+                v-show="!filterAttention || stats._.cardsQueue"
                 icon="id-card"
                 header="Cards queue"
                 :counts="[
@@ -58,6 +76,7 @@
             />
             <AdminDashboardCard
                 v-if="$isGranted('code')"
+                v-show="!filterAttention || stats._.linksQueue"
                 icon="link"
                 header="Links queue"
                 :counts="[
@@ -65,6 +84,7 @@
                 ]"
             />
             <AdminDashboardCard
+                v-show="!filterAttention"
                 icon="bell"
                 header="Email notifications"
             >
@@ -74,6 +94,7 @@
                 </span>
             </AdminDashboardCard>
             <AdminDashboardCard
+                v-show="!filterAttention"
                 v-if="$isGranted('users')"
                 icon="user-secret"
                 header="@example"
@@ -81,6 +102,7 @@
                 <button class="btn btn-primary btn-sm" @click="impersonate('example@pronouns.page')">Impersonate</button>
             </AdminDashboardCard>
             <AdminDashboardCard
+                v-show="!filterAttention"
                 icon="file-spreadsheet"
                 link="/admin/timesheets"
                 header="Volunteering timesheets"
@@ -94,6 +116,7 @@
             </h3>
             <div class="row mb-4">
                 <AdminDashboardCard
+                    v-show="!filterAttention"
                     :baseUrl="url"
                     icon="users"
                     header="Profiles"
@@ -102,7 +125,9 @@
                         {count: stats[locale].users},
                     ]"
                 />
-                <AdminDashboardCard v-if="localeConfig.nouns && localeConfig.nouns.enabled && $isGranted('nouns', locale) && (stats[locale].nouns.approved > 0 || stats[locale].nouns.awaiting > 0)"
+                <AdminDashboardCard
+                    v-if="localeConfig.nouns && localeConfig.nouns.enabled && $isGranted('nouns', locale) && (stats[locale].nouns.approved > 0 || stats[locale].nouns.awaiting > 0)"
+                    v-show="!filterAttention || stats[locale].nouns.awaiting"
                     :baseUrl="url"
                     icon="book"
                     header="Dictionary"
@@ -112,7 +137,9 @@
                         {name: 'awaiting', count: stats[locale].nouns.awaiting, warning: 1, danger: 16},
                     ]"
                 />
-                <AdminDashboardCard v-if="localeConfig.inclusive && localeConfig.inclusive.enabled && $isGranted('inclusive', locale) && (stats[locale].inclusive.approved > 0 || stats[locale].inclusive.awaiting > 0)"
+                <AdminDashboardCard
+                    v-if="localeConfig.inclusive && localeConfig.inclusive.enabled && $isGranted('inclusive', locale) && (stats[locale].inclusive.approved > 0 || stats[locale].inclusive.awaiting > 0)"
+                    v-show="!filterAttention || stats[locale].inclusive.awaiting"
                     :baseUrl="url"
                     icon="book-heart"
                     header="Inclusive"
@@ -122,7 +149,9 @@
                         {name: 'awaiting', count: stats[locale].inclusive.awaiting, warning: 1, danger: 16},
                     ]"
                 />
-                <AdminDashboardCard v-if="localeConfig.terminology && localeConfig.terminology.enabled && $isGranted('terms', locale) && (stats[locale].terms.approved > 0 || stats[locale].terms.awaiting > 0)"
+                <AdminDashboardCard
+                    v-if="localeConfig.terminology && localeConfig.terminology.enabled && $isGranted('terms', locale) && (stats[locale].terms.approved > 0 || stats[locale].terms.awaiting > 0)"
+                    v-show="!filterAttention || stats[locale].terms.awaiting"
                     :baseUrl="url"
                     icon="flag"
                     header="Terminology"
@@ -132,7 +161,9 @@
                         {name: 'awaiting', count: stats[locale].terms.awaiting, warning: 1, danger: 16},
                     ]"
                 />
-                <AdminDashboardCard v-if="localeConfig.sources && localeConfig.sources.enabled && $isGranted('sources', locale) && (stats[locale].sources.approved > 0 || stats[locale].sources.awaiting > 0)"
+                <AdminDashboardCard
+                    v-if="localeConfig.sources && localeConfig.sources.enabled && $isGranted('sources', locale) && (stats[locale].sources.approved > 0 || stats[locale].sources.awaiting > 0)"
+                    v-show="!filterAttention || stats[locale].sources.awaiting"
                     :baseUrl="url"
                     icon="books"
                     header="Sources"
@@ -142,7 +173,9 @@
                         {name: 'awaiting', count: stats[locale].sources.awaiting, warning: 1, danger: 16},
                     ]"
                 />
-                <AdminDashboardCard v-if="localeConfig.names && localeConfig.names.enabled && $isGranted('names', locale) && (stats[locale].names.approved > 0 || stats[locale].names.awaiting > 0)"
+                <AdminDashboardCard
+                    v-if="localeConfig.names && localeConfig.names.enabled && $isGranted('names', locale) && (stats[locale].names.approved > 0 || stats[locale].names.awaiting > 0)"
+                    v-show="!filterAttention || stats[locale].names.awaiting"
                     :baseUrl="url"
                     icon="signature"
                     header="Names"
@@ -152,7 +185,9 @@
                         {name: 'awaiting', count: stats[locale].names.awaiting, warning: 1, danger: 16},
                     ]"
                 />
-                <AdminDashboardCard v-if="$isGranted('translations', locale) && (stats[locale].translations.missing > 0 || stats[locale].translations.awaitingApproval > 0 || stats[locale].translations.awaitingMerge > 0)"
+                <AdminDashboardCard
+                    v-if="$isGranted('translations', locale) && (stats[locale].translations.missing > 0 || stats[locale].translations.awaitingApproval > 0 || stats[locale].translations.awaitingMerge > 0)"
+                    v-show="!filterAttention || stats[locale].translations.missing || stats[locale].translations.awaitingApproval || stats[locale].translations.awaitingMerge"
                     :baseUrl="url"
                     icon="language"
                     header="Translations"
@@ -175,6 +210,7 @@
         data() {
             return {
                 adminNotifications: this.$user() ? (this.$user().adminNotifications ?? 7) : 7,
+                filterAttention: false,
             }
         },
         async asyncData({ app }) {
