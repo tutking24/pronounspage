@@ -19,11 +19,12 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
         }
         const results = await Promise.all(chunk.map(({url}) => analyser.analyse(url)));
         for (let result of results) {
+            // random TTL (0-30 days) in order to spread out the legacy load
             if (result.error) {
-                await db.get(SQL`UPDATE links SET expiresAt = ${parseInt(new Date() / 1000) + 7*24*60*60} WHERE url=${result.url}`);
+                await db.get(SQL`UPDATE links SET expiresAt = ${parseInt(new Date() / 1000) + parseInt(30*24*60*60*Math.random())} WHERE url=${result.url}`);
             } else {
                 await db.get(SQL`UPDATE links
-                    SET expiresAt = ${parseInt(new Date() / 1000) + 7*24*60*60},
+                    SET expiresAt = ${parseInt(new Date() / 1000) + parseInt(30*24*60*60*Math.random())},
                         favicon = ${result.favicon},
                         relMe = ${JSON.stringify(result.relMe)},
                         nodeinfo = ${JSON.stringify(result.nodeinfo)}
