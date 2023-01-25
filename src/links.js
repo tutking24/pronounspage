@@ -29,10 +29,12 @@ class LinkAnalyser {
             };
         }
 
+        const favicon = await this._findFavicon(url, $document);
+
         return {
             url: url.toString(),
             relMe: await this._findRelMe($document),
-            favicon: (await this._findFavicon(url, $document)).toString(),
+            favicon: favicon ? favicon.toString() : null,
             nodeinfo: await this._fetchNodeInfo(url),
         }
     }
