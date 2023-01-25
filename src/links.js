@@ -1,6 +1,7 @@
 const AbortController = require('abort-controller');
 const fetch = require('node-fetch');
-const jsdom = require('jsdom');
+const {JSDOM} = require('jsdom');
+const VirtualConsole = require('jsdom/lib/jsdom/virtual-console');
 const SQL = require("sql-template-strings");
 
 const normaliseUrl = (url) => {
@@ -18,9 +19,9 @@ class LinkAnalyser {
         let $document;
         try {
             const controller = new AbortController();
-            const timeout = setTimeout(() => controller.abort(), 3000);
+            const timeout = setTimeout(() => controller.abort(), 10000);
             const htmlString = await (await fetch(url, {signal: controller.signal})).text();
-            $document = new jsdom.JSDOM(htmlString, { virtualConsole: new jsdom.virtualConsole() });
+            $document = new JSDOM(htmlString, { virtualConsole: new VirtualConsole() });
         } catch (e) {
             return {
                 url: url.toString(),
