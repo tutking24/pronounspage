@@ -11,7 +11,7 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
     const analyser = new LinkAnalyser();
     const db = await dbConnection();
     while (true) {
-        const chunk = await db.all(SQL`SELECT url FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000}) LIMIT 16`);
+        const chunk = await db.all(SQL`SELECT url FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000}) LIMIT 64`);
         console.log(`Fetching ${chunk.length} links: (${chunk.map(l => l.url).join(', ')})`);
         if (chunk.length === 0) {
             await timer(1000);
@@ -20,10 +20,10 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
         const results = await Promise.all(chunk.map(({url}) => analyser.analyse(url)));
         for (let result of results) {
             if (result.error) {
-                await db.get(SQL`UPDATE links SET expiresAt = ${(new Date() / 1000) + 7*24*60*60} WHERE url=${result.url}`);
+                await db.get(SQL`UPDATE links SET expiresAt = ${parseInt(new Date() / 1000) + 7*24*60*60} WHERE url=${result.url}`);
             } else {
                 await db.get(SQL`UPDATE links
-                    SET expiresAt = ${(new Date() / 1000) + 7*24*60*60},
+                    SET expiresAt = ${parseInt(new Date() / 1000) + 7*24*60*60},
                         favicon = ${result.favicon},
                         relMe = ${JSON.stringify(result.relMe)},
                         nodeinfo = ${JSON.stringify(result.nodeinfo)}
