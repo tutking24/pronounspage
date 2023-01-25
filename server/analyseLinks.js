@@ -10,7 +10,7 @@ const timer = ms => new Promise( res => setTimeout(res, ms));
     const analyser = new LinkAnalyser();
     const db = await dbConnection();
     while (true) {
-        const chunk = await db.all(SQL`SELECT url FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000}) LIMIT 64`);
+        const chunk = await db.all(SQL`SELECT url FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000}) ORDER BY RANDOM() LIMIT 64`);
         console.log(`Fetching ${chunk.length} links: (${chunk.map(l => l.url).join(', ')})`);
         if (chunk.length === 0) {
             await timer(1000);
