@@ -406,6 +406,10 @@ translationMode:
     action: '翻訳を申し入れる'
     changes: '変更個数'
     header: '翻訳モード'
+    pause: '翻訳モードをポーズ'
+    revert: '変更を取り消す'
+    commit: '変更を確定する'
+    logIn: '翻訳を申し入れるためにはログインする必要がある'
 
 support:
     header: 'サポート'
@@ -503,7 +507,6 @@ profile:
     links: 'リンク'
     linksRecommended: ''
     linksRecommendedAfter: 'にリンクすることをお勧めします。'
-    # TODO　CHECK-NEEDED
     verifiedLinks:
         header: '認証をされたリンク'
         info: >
@@ -566,7 +569,37 @@ profile:
     language:
         header: '言語'
         description: '@%username%のカードはこれらの言語もあります'
-
+    timezone:
+        time: '私のタイムゾーンでは％weekday％の％time％です'
+        approximate: '場所は精密ではありません'
+        header: 'タイムゾーン'
+        areas:
+            Africa: 'アフリカ'
+            America: 'アメリカ'
+            Asia: 'アジア'
+            Australia: 'オーストラリア'
+            Europe: 'ヨーロッパ'
+            Indian: 'インド'
+            Pacific: 'パシフィック'
+            Atlantic: 'アトランティック'
+            Arctic: '北極'
+            Antarctica: '南極'
+        publishArea: 'カードに大陸を見せる'
+        publishLocation: 'カードに地域を見せる'
+        placeholder: 'タイムゾーンを選択する'
+    circles:
+        validation:
+            userNotFound: 'このユーザーは存在しません'
+            required: '関係は必修なフィールドです'
+        relationship: '関係（例えば、「パートナー」、「友達」）'
+        header: 'サークル'
+    opinions:
+        validation:
+            missingIcon: 'アイコンは必修です'
+            duplicateIcon: 'アイコンはユニークでなければならない'
+            duplicateDescription: '説明はユニークでなければならない'
+        header: '凡例かオピニオン'
+    wordsColumnHeader: '桁のヘッダー'
 share: '共有'
 
 crud:
