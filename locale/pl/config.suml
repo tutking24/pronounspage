@@ -152,6 +152,11 @@ pronouns:
                 examples:
                     - [ 'coś bym dziś porobiło', 'coś bym dziś' ]
             -
+                header: 'Sprytne użycie przeczenia'
+                normative: true
+                examples:
+                    - ['byłam poza domem', 'nie było mnie w domu']
+            -
                 header: 'Skróty'
                 normative: true
                 examples:
