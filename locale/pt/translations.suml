@@ -749,7 +749,7 @@ privacy:
     header: 'Política de Privacidade'  # TODO
 
 admin:
-    header: 'Panel de Admins'
+    header: 'Painel de Admins'
     user:
         user: 'Usuárie'
         createdAt: 'Data de registro'
@@ -976,7 +976,7 @@ calendar:
         lesbian_day: 'Dia Internacional das Lésbicas'
         lesbian_visibility_day: 'Dia Internacional da Visibilidade Lésbica'
         coming_out_day: 'Dia de Sair do Armário'
-        nonbinary_day: 'Dia de Pessoas Não-Binárias'
+        nonbinary_day: 'Dia Internacional de Pessoas Não-Binárias'
         pan_day: 'Dia da Consciência Pansexual e Panromântica'
         trans_remembrance_day: 'Dia da Memória Transgênero'
         trans_visibility_day: 'Dia Internacional da Visibilidade Trans'
@@ -993,7 +993,7 @@ calendar:
         gay_uncles_day: 'Dia dos Tios Gays'
         lgbtq_stem: 'Dia de CTEM LGBTQ+'
         trans_depathologization: 'Dia de Ação pela Depatologização Trans'
-        lgbti_book_day: 'Dia do Livro com Tema LGBTI'
+        lgbti_book_day: 'Dia Internacional do Livro com Tema LGBTQI'
         human_rights_day: 'Dia dos Direitos Humanos'
         nonbinary_parents_day: 'Dia de Nans Não-Bináries'
         trans_prisoner: 'Dia de Ação e Solidariedade de Prisioneire Trans'
@@ -1016,7 +1016,7 @@ calendar:
         asexual_visibility_day: 'Dia da Visibilidade Assexual'
         bi_health_month: 'Mês de Consciência da Saúde das Pessoas Bissexuais'
         holocaust_remembrance_day: 'Dia Internacional da Lembrança do Holocausto'
-        family_equality_day: 'Dia Mundial da Igualdade Familiar'
+        family_equality_day: 'Dia Internacional da Igualdade Familiar'
         aro_month: 'Mês da Consciência do Espectro Arromântico'
         black_ribbon_day: 'Dia Europeu da Memória das Vítimas do Estalinismo e do Nazismo'
         black_queer_week: 'Semana da História das Pessoas Queer Negras'
@@ -1062,12 +1062,12 @@ calendar:
         trans_flag_day: 'Trans Flag Day' # TODO
         alan_turing_day: 'Dia de Alan Turing'
         nonbinary_kids_day: 'Dia da Visibilidade de Crianças e Adolescentes Não-Bináries'
-        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week' # TODO
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day' # TODO
+        masc_lesbian_week: 'Semana da Visibilidade e Consciência de Lésbicas Masculinas'
+        masc_lesbian_day: 'Dia da Visibilidade e Consciência de Lésbicas Masculinas'
         trans_history_month: 'Transgender History Month' # TODO
-        transition_week: 'Transition Week' # TODO
+        transition_week: 'Semana da Transição'
         bi_creators_day: 'Bisexual Creators Day' # TODO
-        wrath_month: 'Mês da Ira'
+        wrath_month: 'Mês da Ira Queer'
         lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
     banner: 'Hoje celebramos'
     celebrating_custom: 'celebra-se'
