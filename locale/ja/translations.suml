@@ -570,7 +570,7 @@ profile:
         header: '言語'
         description: '@%username%のカードはこれらの言語もあります'
     timezone:
-        time: '私のタイムゾーンでは％weekday％の％time％です'
+        time: '私のタイムゾーンでは%weekday%の%time%です'
         approximate: '場所は精密ではありません'
         header: 'タイムゾーン'
         areas:
