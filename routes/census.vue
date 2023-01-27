@@ -262,6 +262,13 @@
         },
         watch: {
             async q() {
+                if (this.question && this.question.conditionalOn) {
+                    if (this.answers[this.question.conditionalOn].filter(a => this.question.conditionalValue.includes(a)).length === 0) {
+                        this.q++;
+                        return;
+                    }
+                }
+
                 if (this.q === this.questions.length) {
                     await this.$post(`/census/submit`, {
                         answers: JSON.stringify(this.answers),

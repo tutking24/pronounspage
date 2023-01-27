@@ -1844,13 +1844,13 @@ census:
         -
             type: 'radio'
             question: >
-                Czy przeszkadza Ci określanie form takich jak „zrobiłom”, „powiedziałoś” nazwą „rodzaj nijaki”?
+                Jakiej nazwy używasz na formy typu „zrobiłom”, „powiedziałoś”, „(ono) było zmęczone”?
             randomise: true
             writein: true
             options:
-                - ['razi mnie, wolę „rodzaj neutralny”']
-                - ['nie przeszkadza mi']
-                - ['nie przeszkadza mi określenie „rodzaj nijaki”, wolę je od „rodzaj neutralny”']
+                - ['rodzaj nijaki']
+                - ['rodzaj neutralny']
+            optionsLast:
                 - ['nie mam zdania']
         -
             type: 'checkbox'
@@ -1899,6 +1899,40 @@ census:
                 mnogie:
                     operation: 'OR'
                     values: ['liczba mnoga, rodzaj męskoosobowy', 'liczba mnoga, rodzaj niemęskoosobowy', 'liczba mnoga, rodzaj neutralny', 'liczba mnoga, rodzaj postpłciowy']
+        -
+            type: 'radio'
+            conditionalOn: 7
+            conditionalValue:
+                - 'liczba mnoga, rodzaj męskoosobowy'
+                - 'liczba mnoga, rodzaj niemęskoosobowy'
+                - 'liczba mnoga, rodzaj neutralny'
+                - 'liczba mnoga, rodzaj postpłciowy'
+            question: >
+                Pytanie dla osób, które w pytaniu 8. zaznaczyły formy mnogie:
+                czy chcesz, by ta gramatyczna mnogość była odzwierciedlona również w formach rzeczownikowych?
+            randomise: true
+            options:
+                - ['tak', 'np. (ci) nauczyciele, (te) partnerza, (te) pracownice']
+                - ['nie', 'np. (ten) nauczyciel, (to) partnerze, (ta) pracownica']
+            optionsLast:
+                - ['wymiennie / bez różnicy / nie mam zdania']
+        -
+            type: 'radio'
+            conditionalOn: 7
+            conditionalValue:
+                - 'liczba mnoga, rodzaj męskoosobowy'
+                - 'liczba mnoga, rodzaj niemęskoosobowy'
+                - 'liczba mnoga, rodzaj neutralny'
+                - 'liczba mnoga, rodzaj postpłciowy'
+            question: >
+                Pytanie dla osób, które w pytaniu 8. zaznaczyły formy mnogie:
+                czy chcesz, by ta gramatyczna mnogość była używana również wtedy, gdy dana forma nie jest upłciowiona?
+            randomise: true
+            options:
+                - ['tak', 'skoro „zrobiliśmy”, to też „robimy”; skoro „powiedziałośmy” to też „mówimy”']
+                - ['nie', 'wprawdzie „zrobiliśmy” czy „powiedziałośmy” w l.mn., ale „robię” czy „mówię” nie wskazują na płeć, więc mogą być pojedyncze']
+            optionsLast:
+                - ['wymiennie / bez różnicy / nie mam zdania']
         -
             type: 'checkbox'
             question: 'Jak piszesz o sobie / chcesz, by pisano o Tobie?'
