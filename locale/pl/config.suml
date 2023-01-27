@@ -1779,7 +1779,7 @@ census:
     route: 'spis'
     # when bumping edition, remember to also bump max birth year
     edition: '2023'
-    start: '2023-02-01T00:00:00+01:00'
+    start: '2023-01-01T00:00:00+01:00'
     end: '2023-02-28T23:59:59+02:00'
     relevant: ['osobą niebinarną', 'nie wiem']
     questions:
