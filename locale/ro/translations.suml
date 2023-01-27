@@ -794,6 +794,18 @@ profile:
         validation:
             userNotFound: 'Acest utilizator nu există'
             required: 'Câmpul pentru relație este obligatoriu'
+    sensitive:
+        header: 'Avertizare despre conținut'
+        info: >
+            Unele conținuturi pot fi permise de către {/termeni=Termeni și Condiții}, dar pot să nu fie adecvate pentru
+            minori, pot să declanșeze atacuri traumatice unor oameni etc. Te rog fi respectuos cu persoanele care îți vor
+            vizita cardul și avertizează-i dinainte. Câteva exemple de avertizări de genu pot fi „mențiuni despre
+            alcool”, „insinuări sexuale”, „mențiuni despre o situație queerfobică”…
+        display: 'Continuă înspre card'
+        hide: 'Blurează cardul'
+        email:
+            subject: 'Avertizarea de conținut a fost aplicată cu succes'
+            content: 'Un moderator ți-a aplicat următoarele avertizări de conținut:'
 
 share: 'Distribuie'
 
