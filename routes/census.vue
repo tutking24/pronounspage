@@ -261,10 +261,14 @@
             },
         },
         watch: {
-            async q() {
+            async q(newValue, oldValue) {
                 if (this.question && this.question.conditionalOn) {
                     if (this.answers[this.question.conditionalOn].filter(a => this.question.conditionalValue.includes(a)).length === 0) {
-                        this.q++;
+                        if (newValue > oldValue) {
+                            this.q++;
+                        } else {
+                            this.q--;
+                        }
                         return;
                     }
                 }
