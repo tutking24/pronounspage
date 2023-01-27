@@ -101,4 +101,10 @@ module.exports = [
     'profile.timezone.areas.Europe',
     'profile.timezone.areas.Indian',
     'profile.timezone.areas.Pacific',
+    'profile.sensitive.header',
+    'profile.sensitive.info',
+    'profile.sensitive.display',
+    'profile.sensitive.hide',
+    'profile.sensitive.email.subject',
+    'profile.sensitive.email.content',
 ];

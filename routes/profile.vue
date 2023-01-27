@@ -11,9 +11,22 @@
             </div>
         </section>
 
-        <MarkSus @hasSus="hasSus = true">
-            <Profile :user="user" :profile="profile" :terms="terms" :expandLinks="hasSus"/>
-        </MarkSus>
+        <div class="position-relative">
+            <div v-if="profile.sensitive.length && !contentWarningDismissed" class="content-warning text-center">
+                <ContentWarning :warnings="profile.sensitive"
+                                @dismiss="contentWarningDismissed = true"
+                />
+            </div>
+            <MarkSus @hasSus="hasSus = true">
+                <Profile :user="user" :profile="profile" :terms="terms" :expandLinks="hasSus"/>
+            </MarkSus>
+            <div v-if="profile.sensitive.length && contentWarningDismissed" class="text-center">
+                <ContentWarning :warnings="profile.sensitive" dismissed
+                                class="small d-inline-block"
+                                @blur="contentWarningDismissed = false"
+                />
+            </div>
+        </div>
 
         <AdPlaceholder phkey="main-0"/>
 
@@ -129,7 +142,7 @@
         </template>
 
         <template v-slot:below>
-            <Ban :user="user"/>
+            <Ban :user="user" :profile="profile"/>
 
             <Separator icon="heart"/>
             <Support/>
@@ -192,6 +205,8 @@
 
                  cardsEnabled: true,
                  hasSus: false,
+
+                 contentWarningDismissed: false,
             }
         },
         async asyncData({ app, route }) {
@@ -318,5 +333,19 @@
 
     .list-group-flare > :first-child {
         border-top: 3px solid $primary;
+    }
+
+    .content-warning {
+        position: absolute;
+        left: -2*$glassBlur;
+        top: -2*$glassBlur;
+        width: calc(100% + 4*#{$glassBlur});
+        height: calc(100% + 4*#{$glassBlur});
+        background: $gray-400;
+        z-index: 30;
+        .alert {
+            margin: 3*$spacer auto;
+            display: inline-block;
+        }
     }
 </style>

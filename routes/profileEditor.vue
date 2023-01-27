@@ -16,7 +16,7 @@
         </div>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
-            <TabsNav :tabs="['opinions', 'names', 'pronouns', 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', $isGranted() ? 'admin' : undefined]"
+            <TabsNav :tabs="['opinions', 'names', 'pronouns', 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', 'sensitive', $isGranted() ? 'admin' : undefined]"
                      pills showheaders navclass="mb-3 border-bottom-0">
                 <template v-slot:admin-header>
                     <Icon v="user-cog"/>
@@ -249,7 +249,18 @@
                     <CircleListInput v-model="circle" :maxitems="16"/>
 
                     <CircleMentions/>
+                </template>
 
+                <template v-slot:sensitive-header>
+                    <Icon v="engine-warning"/>
+                    <T>profile.sensitive.header</T>
+                </template>
+                <template v-slot:sensitive>
+                    <p class="small text-muted">
+                        <T>profile.sensitive.info</T>
+                    </p>
+
+                    <ListInput v-model="sensitive" maxlength="64" maxitems="16"/>
                 </template>
             </TabsNav>
 
@@ -334,6 +345,7 @@
                     credentialsName: profile.credentialsName,
                     opinions: opinionsToForm(profile.opinions || {}),
                     circle: profile.circle,
+                    sensitive: profile.sensitive,
                 };
             }
         }
@@ -361,6 +373,7 @@
                 credentialsName: null,
                 opinions: opinionsToForm(profile.opinions || {}),
                 circle: profile.circle,
+                sensitive: [],
             };
         }
 
@@ -382,6 +395,7 @@
             credentialsName: null,
             opinions: [],
             circle: [],
+            sensitive: [],
         };
     };
 
@@ -438,6 +452,7 @@
                         customFlags: [...fixArrayObject(this.customFlags)],
                         words: this.words,
                         circle: this.circle,
+                        sensitive: this.sensitive,
 
                         teamName: this.teamName,
                         footerName: this.footerName,

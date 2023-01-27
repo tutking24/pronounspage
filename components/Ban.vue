@@ -98,7 +98,6 @@
                     <T>ban.action</T>
                 </button>
             </div>
-            <ModerationRules type="rulesUsers" emphasise class="mt-4"/>
             <AbuseReports v-if="abuseReports.length" :abuseReports="abuseReports" allowResolving/>
         </section>
         <section v-if="$isGranted('users')">
@@ -141,6 +140,24 @@
                 </button>
             </div>
         </section>
+        <section v-if="$isGranted('users') && profile">
+            <a v-if="!showSensitive" href="#" @click.prevent="showSensitive = true" class="small">
+                <Icon v="engine-warning"/>
+                Content warning
+            </a>
+            <div v-else>
+                <h5>
+                    <Icon v="engine-warning"/>
+                    Content warning
+                </h5>
+                <ListInput v-model="sensitive" maxlength="64" maxitems="16"/>
+                <button class="btn btn-danger d-block-force w-100 mt-2" :disabled="saving" @click="saveSensitive">
+                    <Icon v="engine-warning"/>
+                    Overwrite CWs and notify user
+                </button>
+            </div>
+        </section>
+        <ModerationRules v-if="$isGranted('users')" type="rulesUsers" class="mt-4"/>
     </div>
 </template>
 
@@ -152,6 +169,7 @@
         components: { ClientOnly },
         props: {
             user: { required: true },
+            profile: {},
         },
         data() {
             return {
@@ -167,6 +185,9 @@
                 showMessages: false,
                 messages: undefined,
                 message: '',
+
+                showSensitive: (this.profile?.sensitive || []).length,
+                sensitive: this.profile?.sensitive,
 
                 saving: false,
 
@@ -239,6 +260,18 @@
                         message: this.message,
                     });
                     this.message = '';
+                } finally {
+                    this.saving = false;
+                }
+            },
+            async saveSensitive() {
+                await this.$confirm(`Are you sure?`, 'danger');
+                this.saving = true;
+                try {
+                    await this.$post(`/admin/overwrite-sensitive/${encodeURIComponent(this.user.username)}`, {
+                        sensitive: this.sensitive,
+                    });
+                    window.location.reload();
                 } finally {
                     this.saving = false;
                 }

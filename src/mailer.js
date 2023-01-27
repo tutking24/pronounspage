@@ -9,6 +9,7 @@ const logoEncoded = 'data:image/svg+xml,' + encodeURIComponent(logo);
 
 const loadSuml = name => new Suml().parse(fs.readFileSync(`${__dirname}/../data/${name}.suml`).toString());
 const translations = loadSuml('translations');
+const fallbackTranslations = loadSuml('../_base/translations');
 
 const transporter = nodemailer.createTransport(process.env.MAILER_TRANSPORT, {from: process.env.MAILER_FROM});
 
@@ -110,6 +111,25 @@ const templates = {
             <p style="color: #999; font-size: 10px;">@{{modUsername}} → @{{username}}</p>
         `,
     },
+    sensitiveApplied: {
+        subject: '[[profile.sensitive.email.subject]]',
+        text: `[[profile.sensitive.email.content]]\n\n{{warnings}}`,
+        html: `
+            <p>[[profile.sensitive.email.content]] <strong>{{warnings}}</strong></p>
+            <p style="color: #999; font-size: 10px;">@{{modUsername}} → @{{username}}</p>
+        `,
+    },
+}
+
+const findTranslation = (translations, key) => {
+    let x = translations;
+    for (let part of key.split('.')) {
+        x = x[part];
+        if (x === undefined) {
+            return undefined;
+        }
+    }
+    return x;
 }
 
 const applyTemplate = (template, context, params) => {
@@ -125,11 +145,8 @@ const applyTemplate = (template, context, params) => {
     template = template.replace(/%reason%/g, '{{reason}}'); // TODO
 
     template = template.replace(/\[\[([^\]]+)]]/g, m => {
-        let x = translations;
-        for (let part of m.substring(2, m.length - 2).split('.')) {
-            x = x[part];
-        }
-        return x;
+        const key = m.substring(2, m.length - 2);
+        return findTranslation(translations, key) || findTranslation(fallbackTranslations, key);
     });
 
     template = template.replace(/{{([^}]+)}}/g, m => {

@@ -898,6 +898,18 @@ profile:
         validation:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
+    sensitive:
+        header: 'Content warning'
+        info: >
+            Some content might be allowed by our {/terms=Terms of Service},
+            but still not be appropriate for minors, be potentially triggering for people with traumas, etc.
+            Please be respectful to people visiting your card and warn them in advance.
+            Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
+        display: 'Continue to the card'
+        hide: 'Blur out the card'
+        email:
+            subject: 'Content warning applied on your profile'
+            content: 'A moderator has applied the following content warnings to your card:'
 
 share: 'Share'
 

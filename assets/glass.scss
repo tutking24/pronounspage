@@ -36,6 +36,11 @@
     .btn-group {
         backdrop-filter: blur($glassBlur-sm);
     }
+
+    .content-warning {
+        backdrop-filter: blur($glassBlur);
+        background-color: transparent !important;
+    }
 }
 
 //.input-group, .btn-group, .btn-group-vertical {

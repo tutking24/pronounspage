@@ -489,6 +489,34 @@ router.get('/admin/mod-messages/:username', handleErrorAsync(async (req, res) =>
     return res.json(await fetchModMessages(req.db, user));
 }));
 
+router.post('/admin/overwrite-sensitive/:username', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    if (req.body.sensitive === undefined || !Array.isArray(req.body.sensitive)) {
+        return res.status(400).json({error: 'Bad request'});
+    }
+
+    const user = await fetchUserByUsername(req.db, req.params.username);
+
+    if (!user) {
+        return res.status(400).json({error: 'No such user'});
+    }
+
+    await req.db.get(SQL`UPDATE profiles SET sensitive = ${JSON.stringify(req.body.sensitive)} WHERE userId=${user.id} AND locale=${global.config.locale}`);
+
+    if (req.body.sensitive.length) {
+        mailer(user.email, 'sensitiveApplied', {
+            warnings: req.body.sensitive.join('; '),
+            username: req.params.username,
+            modUsername: req.user.username,
+        });
+    }
+
+    return res.json(req.body.sensitive);
+}));
+
 router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});

@@ -124,6 +124,7 @@ const fetchProfiles = async (db, username, self) => {
             card: profile.card,
             cardDark: profile.cardDark,
             circle,
+            sensitive: JSON.parse(profile.sensitive),
         };
     }
     return p;
@@ -358,6 +359,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         || req.body.customFlags.length > 128
         || req.body.circle.length > 16
         || req.body.words.filter(c => c.values.length > 64).length > 0
+        || req.body.sensitive.length > 16
     ) {
         return res.status(400).json({error: 'crud.validation.genericForm'});
     }
@@ -369,6 +371,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const birthday = cleanupBirthday(req.body.birthday || null);
     const links = req.body.links.filter(x => !!x);
     const words = req.body.words.map(c => { return {...c, values: c.values.map(p => { return {...p, value: p.value.substring(0, 32)}})}});
+    const sensitive = req.body.sensitive.filter(x => !!x).map(x => x.substring(0, 64));
     const timezone = req.body.timezone ? {
         tz: req.body.timezone.tz,
         area: req.body.timezone.area,
@@ -392,6 +395,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 flags = ${JSON.stringify(req.body.flags)},
                 customFlags = ${JSON.stringify(req.body.customFlags)},
                 words = ${JSON.stringify(words)},
+                sensitive = ${JSON.stringify(sensitive)},
                 teamName = ${req.isGranted() ? req.body.teamName || null : ''},
                 footerName = ${req.isGranted() ? req.body.footerName || null : ''},
                 footerAreas = ${req.isGranted() ? req.body.footerAreas.join(',') || null : ''},
@@ -404,7 +408,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
         `);
     } else {
         profileId = ulid();
-        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, timezone, links, flags, customFlags, words, active, teamName, footerName, footerAreas)
+        await req.db.get(SQL`INSERT INTO profiles (id, userId, locale, opinions, names, pronouns, description, birthday, timezone, links, flags, customFlags, words, sensitive, active, teamName, footerName, footerAreas)
             VALUES (${profileId}, ${req.user.id}, ${global.config.locale},
                     ${JSON.stringify(opinions)},
                     ${JSON.stringify(names)},
@@ -416,6 +420,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                     ${JSON.stringify(req.body.flags)},
                     ${JSON.stringify(req.body.customFlags)},
                     ${JSON.stringify(words)},
+                    ${JSON.stringify(sensitive)},
                     1,
                     ${req.isGranted() ? req.body.teamName || null : ''},
                     ${req.isGranted() ? req.body.footerName || null : ''},

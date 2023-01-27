@@ -1458,6 +1458,18 @@ profile:
         validation:
             userNotFound: 'Konto nie istnieje'
             required: 'Relacja jest polem wymaganym'
+    sensitive:
+        header: 'Ostrzeżenie o zawartości'
+        info: >
+            Niektóre treści, choć zgodne z {/regulamin=naszym Regulaminem},
+            mogą być nieodpowiednie dla nieletnich, potencjalnie triggerujące dla osób z traumami, itp.
+            Okaż szacunek osobom odwiedzającym Twoją wizytówkę, ostrzegając je zawczasu.
+            Przykładowe ostrzeżenia o zawartości: “wspomnienie o alkoholu”, “podteksty seksualne”, “wspomnienie o queerfobicznej sytuacji”…
+        display: 'Przejdź do wizytówki'
+        hide: 'Schowaj wizytówkę'
+        email:
+            subject: 'Ostrzeżenie o zawartości zostało dodane do Twojej wizytówki'
+            content: 'Osoba moderująca dodała do Twojej wizytówki następujące ostrzeżenia o zawartości:'
 
 census:
     header: 'Spis'
