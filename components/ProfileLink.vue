@@ -1,7 +1,7 @@
 <template>
-    <span>
+    <span class="text-nowrap">
         <Icon :v="niceLink.icon" :set="niceLink.iconSet || 'l'"/>
-        <a :href="linkTrimmed" target="_blank" :rel="verifiedBy ? 'me' : 'noopener'">{{niceLink.text}}</a>
+        <a :href="linkTrimmed" target="_blank" :rel="verifiedBy ? 'me' : 'noopener'" class="link-ellipsis">{{niceLink.text}}</a>
         <button class="btn btn-sm p-0" v-if="verifiedBy" @click="verificationInfo">
             <Icon v="shield-check" set="s" class="small text-primary"/>
         </button>
@@ -45,5 +45,14 @@
 <style lang="scss" scoped>
     .icon {
         height: 1em;
+    }
+    .link-ellipsis {
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        line-height: 1em;
+        vertical-align: middle;
     }
 </style>

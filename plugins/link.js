@@ -60,7 +60,7 @@ const LINK_PROVIDERS = {
     },
     linktree: {
         regex: '^https?://(?:www.)?linktr.ee/([^/]+)',
-        icon: 'https://linktr.ee/static/favicon.ico',
+        icon: 'https://website.linktr.ee/favicon-32x32.png',
     },
     blogger: {
         regex: '^https?://([^/]+).(?:blogger|blogspot).com',
@@ -113,7 +113,7 @@ export default {
             }
 
             return {
-                icon: metadata?.favicon || 'globe-europe',
+                icon: [metadata?.favicon, 'globe-europe'],
                 text: clearUrl(link),
             }
         }

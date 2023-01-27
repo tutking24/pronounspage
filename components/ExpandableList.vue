@@ -16,7 +16,7 @@
                 <Icon v="plus-circle"/>
                 <T :params="{count: hiddenCount}">profile.expendableList.more</T>
                 <br/>
-                <Icon v=""/>
+                <Icon v="spacer"/>
                 <T>profile.expendableList.show</T>
             </a>
         </li>

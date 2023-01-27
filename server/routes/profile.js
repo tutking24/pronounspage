@@ -33,7 +33,7 @@ const calcAge = birthday => {
 const providersWithLinks = Object.keys(socialProviders)
     .filter(p => socialProviders[p].linkRegex !== undefined);
 
-const domains = ['https://pronouns.page', locales.map(l => l[2])];
+const domains = ['https://pronouns.page', ...locales.map(l => l[2])];
 
 const verifyLinks = (links, authenticators, username, linksMetadata) => {
     const verifiedLinks = {};

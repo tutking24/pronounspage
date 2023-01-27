@@ -75,10 +75,6 @@ export const clearUrl = url => {
 
     url = decodeURIComponent(url);
 
-    if (url.length > 48) {
-        url = url.substring(0, 28) + '...' + url.substring(url.length - 17);
-    }
-
     return url;
 }
 

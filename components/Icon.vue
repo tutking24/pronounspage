@@ -1,5 +1,5 @@
 <template>
-    <img v-if="iconSource" :src="iconSource" :style="`height: ${size}em; width: ${size}em; display: inline;`" alt="" class="icon"/>
+    <img v-if="iconSource" :src="iconSource" :style="`height: ${size}em; width: ${size}em; display: inline;`" alt="" class="icon" @error="fallBack"/>
     <span v-else :class="['fa' + iconSet, 'fa-' + icon, 'fa-fw']" :style="`font-size: ${size}em`"></span>
 </template>
 
@@ -11,9 +11,18 @@
             size: { default: 1 },
             inverse: { type: Boolean }
         },
+        data() {
+            let values = Array.isArray(this.v) ? this.v : [this.v];
+            values = values.filter(x => !!x);
+
+            return {
+                value: values.shift(),
+                fallbacks: values,
+            };
+        },
         computed: {
             valueParts() {
-                return this.v.split(':');
+                return this.value.split(':');
             },
             icon() {
                 return this.valueParts[this.valueParts.length - 1];
@@ -22,17 +31,24 @@
                 return this.valueParts.length > 1 ? this.valueParts[0] : this.set;
             },
             iconSource() {
-                if (this.v.startsWith('https://')) {
-                    return this.v;
+                if (this.value.startsWith('https://')) {
+                    return this.value;
                 }
-                if (this.v.endsWith('.svg')) {
-                    return `/img/${this.inverse ? this.v.replace('.svg', '-inverse.svg') : this.v}`;
+                if (this.value.endsWith('.svg')) {
+                    return `/img/${this.inverse ? this.value.replace('.svg', '-inverse.svg') : this.value}`;
                 }
-                if (this.v.endsWith('.png')) {
-                    return `/img/${this.inverse ? this.v.replace('.png', '-inverse.png') : this.v}`;
+                if (this.value.endsWith('.png')) {
+                    return `/img/${this.inverse ? this.value.replace('.png', '-inverse.png') : this.value}`;
                 }
                 return null;
             },
         },
+        methods: {
+            fallBack() {
+                if (!this.fallbacks.length) { return; }
+
+                this.value = this.fallbacks.shift();
+            },
+        }
     }
 </script>
