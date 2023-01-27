@@ -1940,6 +1940,9 @@ census:
             writein: true
             instruction:
                 - >
+                    Propozycje są podane w losowej kolejności.
+                    Przeczytaj uważnie, co zaznaczasz, żeby nie pomylić ze sobą podobnych opcji.
+                - >
                     Więcej informacji <a href="/" target="_blank">w zakładce „Zaimki”</a>.
             options:
                 - ['on/jego', '„on jest fajny”, „lubię jego zwierzątko”']
@@ -2026,7 +2029,7 @@ census:
             writein: true
             options:
                 - ['„per ty”', '= można „per ty” nawet w oficjalnych sytuacjach']
-                - ['„per wy”', '„skądeście przyszli”']
+                - ['„per wy”', 'podobnie do gwarowych form jak „gdzieście byli, dziadku?”']
                 - ['pan']
                 - ['pani']
                 - ['państwo (l. poj.)', '„czy chciałoby państwo…”']
@@ -2057,7 +2060,9 @@ census:
             question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
             instruction:
                 - >
-                    Więcej informacji <a href="/grupy" target="_blank">na naszym blogu</a>.
+                    Na przykład mówiąc o grupie kilku mężczyzn i kilku kobiet / kilku osób niebinarnych i kilku mężczyzn itp.
+                - >
+                    Więcej informacji o możliwych formach <a href="/grupy" target="_blank">na naszym blogu</a>.
             randomise: true
             writein: true
             options:
@@ -2086,9 +2091,9 @@ census:
                 - ['nic, używam imienia nadanego mi przez rodziców']
                 - ['jest neutralną/unisex formą imienia nadanego mi przez rodziców', 'np. Aleksander → Aleks']
                 - ['jest formą przeciwnej płci binarnej imienia nadanego mi przez rodziców', 'np. Wiktoria → Wiktor']
-                - ['wybrałom neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców']
-                - ['wybrałom nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców']
-                - ['wybrałom na imię rzeczownik, który tradycyjnie nie był używany jako imię']
+                - ['wybrał_m neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców']
+                - ['wybrał_m nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców']
+                - ['wybrał_m na imię rzeczownik, który tradycyjnie nie był używany jako imię']
         -
             type: 'checkbox'
             question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
