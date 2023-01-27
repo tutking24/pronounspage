@@ -22,7 +22,25 @@ const sendEmail = (to, subject, text = undefined, html = undefined) => {
     }, function(err) { if (err) { console.error(err); } })
 };
 
-const terms = translations.terms && translations.terms.content ? (translations.terms.content.content.violations + ' ' + Object.values(translations.terms.content.content.violationsExamples).join(', ')) : '';
+const findTranslation = (key) => {
+    return _findTranslation(translations, key) || _findTranslation(fallbackTranslations, key)
+}
+
+const _findTranslation = (translations, key) => {
+    let x = translations;
+    for (let part of key.split('.')) {
+        x = x[part];
+        if (x === undefined) {
+            return undefined;
+        }
+    }
+    return x;
+}
+
+const violations = findTranslation('terms.content.content.violationsExamples');
+delete violations['miscellaneous'];
+const terms = Object.values(violations).join(', ');
+
 
 const templates = {
     base: {
@@ -121,17 +139,6 @@ const templates = {
     },
 }
 
-const findTranslation = (translations, key) => {
-    let x = translations;
-    for (let part of key.split('.')) {
-        x = x[part];
-        if (x === undefined) {
-            return undefined;
-        }
-    }
-    return x;
-}
-
 const applyTemplate = (template, context, params) => {
     if (typeof(template) === 'string') {
         template = templates[template];
@@ -145,8 +152,7 @@ const applyTemplate = (template, context, params) => {
     template = template.replace(/%reason%/g, '{{reason}}'); // TODO
 
     template = template.replace(/\[\[([^\]]+)]]/g, m => {
-        const key = m.substring(2, m.length - 2);
-        return findTranslation(translations, key) || findTranslation(fallbackTranslations, key);
+        return findTranslation(m.substring(2, m.length - 2));
     });
 
     template = template.replace(/{{([^}]+)}}/g, m => {
