@@ -1844,7 +1844,7 @@ census:
         -
             type: 'radio'
             question: >
-                Jakiej nazwy używasz na formy typu „zrobiłom”, „powiedziałoś”, „(ono) było zmęczone”?
+                Jak powinno nazywać się formy typu „zrobiłom”, „powiedziałoś”, „(ono) było zmęczone”?
             randomise: true
             writein: true
             options:
