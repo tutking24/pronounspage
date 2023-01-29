@@ -10,7 +10,7 @@ Karolina Plewińska publikująca pod pseudonimem Szarosen to feministka, samorze
 
 <p class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/FBDstqeVk5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-Dziś Szarosen opublikowała w swoich kanałach społecznościowych grafikę Gang Queeraków. Przyznała, że nie sądziła, że osiągnie ona taką popularność – ponieważ zwykle większym zainteresowaniem cieszyły się komiksy niż ilustracje. Wśród postaci należących do Gangu Queeraków znalazły się m.in. Lesbijka Lucynka, Panseksualny Patryk czy Aromantyczna Ania, najwięcej emocji wzbudziła jednak Niebinarna Natalia. 
+Wczoraj Szarosen opublikowała w swoich kanałach społecznościowych grafikę Gang Queeraków. Przyznała, że nie sądziła, że osiągnie ona taką popularność – ponieważ zwykle większym zainteresowaniem cieszyły się komiksy niż ilustracje. Wśród postaci należących do Gangu Queeraków znalazły się m.in. Lesbijka Lucynka, Panseksualny Patryk czy Aromantyczna Ania, najwięcej emocji wzbudziła jednak Niebinarna Natalia. 
 
 <p class="text-center"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fszarosen%2Fposts%2F731911381624331&show_text=true&width=500" width="500" height="589" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></p>
 
