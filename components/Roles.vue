@@ -49,6 +49,7 @@
                     'names',
                     'translations',
                     'code',
+                    'org',
                 ],
             };
         },

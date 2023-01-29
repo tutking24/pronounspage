@@ -15,7 +15,7 @@ const isGranted = (user, locale, area) => {
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
         if ((permissionLocale === '*' || permissionLocale === locale || locale === null)
-            && ((permissionArea === '*' && area !== 'code') || permissionArea === area || area === '' || area === 'panel')
+            && ((permissionArea === '*' && area !== 'code' && area !== 'org') || permissionArea === area || area === '' || area === 'panel')
         ) {
             return true;
         }

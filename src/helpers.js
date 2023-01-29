@@ -174,12 +174,12 @@ export const isGranted = (user, locale, area = '') => {
     }
 
     for (let permission of user.roles.split('|')) {
-        if (permission === '*' && area !== 'code') {
+        if (permission === '*' && area !== 'code' && area !== 'org') {
             return true;
         }
         const [ permissionLocale, permissionArea ] = permission.split('-');
         if ((permissionLocale === '*' || permissionLocale === locale || locale === null)
-            && ((permissionArea === '*' && area !== 'code') || permissionArea === area || area === '' || (area === 'panel' && permissionArea !== 'users'))
+            && ((permissionArea === '*' && area !== 'code' && area !== 'org') || permissionArea === area || area === '' || (area === 'panel' && permissionArea !== 'users'))
         ) {
             return true;
         }

@@ -117,45 +117,8 @@
 import {head} from "../src/helpers";
 import {DateTime} from 'luxon';
 import gm from 'avris-generator';
+import {min, max, closed, MONTHS, AREAS, TRANSFER_METHODS} from '../src/timesheets';
 
-const max = DateTime.now();
-const min = DateTime.local(2020, 1, 1);
-const closed = DateTime.local(2020, 1, 1); // TODO DateTime.local(2023, 1, 1);
-
-const AREAS = [
-    'translation',
-    'moderation',
-    'content creation',
-    'coding',
-    'devops',
-    'user support',
-    'social media',
-    'media interviews',
-    'design',
-    'sensitivity reviews',
-    'administration',
-    'other',
-];
-const MONTHS = {
-    1: 'Jan',
-    2: 'Feb',
-    3: 'Mar',
-    4: 'Apr',
-    5: 'May',
-    6: 'Jun',
-    7: 'Jul',
-    8: 'Aug',
-    9: 'Sep',
-    10: 'Oct',
-    11: 'Nov',
-    12: 'Dec',
-};
-const TRANSFER_METHODS = {
-    'bank': 'Bank transfer',
-    'paypal': 'PayPal',
-    'charity': 'Charity',
-    'skip': 'Skip allowance',
-};
 
 export default {
     data() {
