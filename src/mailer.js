@@ -39,7 +39,7 @@ const _findTranslation = (translations, key) => {
 
 const violations = findTranslation('terms.content.content.violationsExamples');
 delete violations['miscellaneous'];
-const terms = Object.values(violations).join(', ');
+const terms = findTranslation('terms.content.content.violations') + ' ' +  Object.values(violations).join(', ');
 
 
 const templates = {
