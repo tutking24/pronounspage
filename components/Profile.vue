@@ -42,7 +42,7 @@
                 <ul class="list-inline">
                     <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
                         <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
-                              :alt="allFlags[flag]"
+                              :alt="$t('flags_alt.' + flag.replace(/'/g, '*').replace(/ /g, '_')) || allFlags[flag]"
                               :img="`/flags/${flag}.png`"
                               :terms="terms || []"
                               :asterisk="flagsAsterisk.includes(flag)"
