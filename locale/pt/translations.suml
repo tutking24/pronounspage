@@ -450,6 +450,9 @@ contact:
                 Muitas seções do site (substantivos, terminologia queer, dicionário inclusivo...) podem ser editadas e
                 novo conteúdo pode ser adicionado. Se você acha que algo está faltando ou precisa de correção, não hesite
                 em contribuir.
+    language: >
+        Somos uma equipe internacional – as pessoas que criaram uma versão em um idioma específico talvez não sejam as
+        mesmas que irão ler a sua mensagem. Então, se possível, nos contate em <strong>Inglês ou Polonês</strong>.
 
 translationMode:
     action: 'Sugerir traduções'
@@ -700,7 +703,7 @@ footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
     links: 'Contato, redes sociais'
-    legal: 'Assuntos legais'
+    legal: 'Assuntos jurídicos'
     financial: 'Transparência financeira'
     technical: 'Parte técnica'
     sibling: 'Projetos parceiros'
@@ -709,20 +712,15 @@ footer:
         overall: 'versão com todas as linguagens'
         stats:
         keys:
-            visitors: 'Visitantes únicos'
-            users: 'Usuáries registrades'
             visitDuration: 'Média da duração de visitas'
             responseTime: 'Média do tempo de resposta'
-        keys:
             cards: 'Cartões '
-            visitors: 'Visitantes Únicos'
+            visitors: 'Visitantes únicos'
             pageviews: 'Vizualizações de página'
             realTimeVisitors: 'Atualmente online'
-            users: 'Usuários registrados'
+            users: 'Usuáries registrades '
         month: 'mês'
         current: 'apenas essa versão'
-    legal: 'Assuntos jurídicos'
-    sibling: 'Projetos parceiros'
 
 notFound:
     message: 'Página não encontrada'
@@ -754,7 +752,7 @@ admin:
         user: 'Usuárie'
         createdAt: 'Data de registro'
         email: 'E-mail'
-        roles: 'Rol'
+        roles: 'Função'
         profiles: 'Perfis'
         confirmRole: 'Você quer mesmo mudar o nome de usuárie de @%username% para "%role%"?'
 
