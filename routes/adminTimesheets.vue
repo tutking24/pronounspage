@@ -2,10 +2,14 @@
     <Page wide>
     <NotFound v-if="!$isGranted('panel')"/>
     <div v-else>
-        <p>
+        <p class="d-flex justify-content-between">
             <nuxt-link to="/admin">
                 <Icon v="user-cog"/>
                 <T>admin.header</T>
+            </nuxt-link>
+            <nuxt-link to="/admin/timesheets/overview">
+                <Icon v="file-spreadsheet"/>
+                Overview
             </nuxt-link>
         </p>
         <div v-html="moderation.timesheets"/>

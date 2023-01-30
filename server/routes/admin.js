@@ -568,13 +568,17 @@ router.post('/admin/timesheet', handleErrorAsync(async (req, res) => {
 }));
 
 router.get('/admin/timesheets', handleErrorAsync(async (req, res) => {
-    if (!req.isGranted('org')) {
+    if (!req.isGranted('panel')) {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
     const timesheetsByUsername = {};
     for (let {username, timesheets} of await req.db.all(SQL`SELECT username, timesheets FROM users WHERE timesheets IS NOT NULL`)) {
-        timesheetsByUsername[username] = JSON.parse(timesheets);
+        timesheets = JSON.parse(timesheets);
+        if (!req.isGranted('org')) {
+            delete timesheets['details'];
+        }
+        timesheetsByUsername[username] = timesheets;
     }
 
     return res.json(timesheetsByUsername);

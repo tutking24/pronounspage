@@ -1,14 +1,17 @@
 <template>
     <Page wide>
-    <NotFound v-if="!$isGranted('org')"/>
+    <NotFound v-if="!$isGranted('panel')"/>
     <div v-else>
-        <p>
+        <p class="d-flex justify-content-between">
             <nuxt-link to="/admin">
                 <Icon v="user-cog"/>
                 <T>admin.header</T>
             </nuxt-link>
-        </p>
-        <h2>
+            <nuxt-link to="/admin/timesheets">
+                <Icon v="file-spreadsheet"/>
+                Fill out yours
+            </nuxt-link>
+        </p>        <h2>
             <Icon v="file-spreadsheet"/>
             Timesheets overview
         </h2>
@@ -49,10 +52,10 @@
             <tr v-for="(hours, username) in hoursSummary">
                 <th><LocaleLink locale="_" :link="`/@${username}`">@{{username}}</LocaleLink></th>
                 <td>{{ hours }}</td>
-                <td>{{ hoursSum && username !== 'andrea' ? ((100 * hours / hoursSum).toFixed(1) + '%') : '—'}}</td>
+                <td>{{ hoursSum && timesheets[username].transfer !== 'skip' ? ((100 * hours / hoursSum).toFixed(1) + '%') : '—'}}</td>
                 <td>
                     <p><strong>{{timesheets[username].transfer}}</strong></p>
-                    <ul>
+                    <ul v-if="timesheets[username]">
                         <li v-for="(value, key) in timesheets[username].details" v-if="value">
                             <strong>{{ key }}:</strong> {{ value }}
                         </li>
@@ -127,7 +130,7 @@ export default {
         hoursSum() {
             let sum = 0;
             for (let username in this.hoursSummary) {
-                if (!this.hoursSummary.hasOwnProperty(username) || username === 'andrea') { continue; }
+                if (!this.hoursSummary.hasOwnProperty(username) || this.timesheets[username].transfer === 'skip') { continue; }
                 sum += this.hoursSummary[username];
             }
             return sum;

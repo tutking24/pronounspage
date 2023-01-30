@@ -107,13 +107,6 @@
                 link="/admin/timesheets"
                 header="Volunteering timesheets"
             />
-            <AdminDashboardCard
-                v-if="$isGranted('org')"
-                v-show="!filterAttention"
-                icon="file-spreadsheet"
-                link="/admin/timesheets/overview"
-                header="Timesheets overview"
-            />
         </div>
 
         <template v-for="({name, config: localeConfig, url, published}, locale) in allLocales" v-if="$isGranted('panel', locale) && stats[locale]">
