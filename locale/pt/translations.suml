@@ -413,10 +413,6 @@ contact:
                 - 'links para suas redes sociais;'
                 - 'se você tem alguma experiência em ativismo;'
                 - 'as áreas em que você gostaria de contribuir.'
-    language: >
-        Nós somos um time internacional – as pessoas que criaram uma versão de linguagem específica talvez não sejam as
-        mesmas que lerão essa mensagem. Então, se possível, apreciaríamos caso você nos contatasse em <strong>Inglês ou
-        Polonês</strong>.
     header: 'Contato'
     groups:
         calendar: 'Bot Calendário Queer'
@@ -476,7 +472,7 @@ support:
 
 user:
     header: 'Conta'
-    headerLong: 'A conta'
+    headerLong: 'Conta'
     tokenExpired: 'O token expirou. Por favor atualize a página e tente novamente.'
     login:
         help: 'Iniciar sessão ou criar uma conta você pode usar os botões de redes sociais ou insirar seu endereço de e-mail no campo abaixo e confirme o código que você receberá em sua caixa de correio.'
@@ -493,7 +489,7 @@ user:
         passwordless: 'O site não grava qualquer senha. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instância'
         domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        deprecated: 'Método obsoleto'
         depreciationNotice: >
             Este não é um provedor de autenticação confiável.
             <a href="%link%" target="_blank" rel="noopener">Clique neste link para mais detalhes</a>.
@@ -516,12 +512,12 @@ user:
             invalid: 'Endereço de e-mail inválido.'
             taken: 'Este endereço já está em uso.'
         admin: 'Admin'
-    logout: 'Fechar sessão'
+    logout: 'Sair'
     avatar:
         header: 'Avatar'
         change: 'Mude'
         failed: 'Por favor, reconecte sua mídia social para consertar o avatar ausente.'
-    deleteAccount: 'Eliminar conta'
+    deleteAccount: 'Excluir conta'
     deleteAccountConfirm: 'Confirma que quer eliminar a conta? Isso será irreversível!'
     socialConnection:
         list: 'Conexões de redes sociais'
@@ -595,7 +591,7 @@ profile:
             Nossos links também incluem uma tag <code>rel="me"</code> para que websites externos também possam verificar seu cartão.
     column: 'Coluna'
 
-    list: 'Os cartões'
+    list: 'Cartões'
     init: 'Criar um cartão'
     show: 'Mostrar'
     edit: 'Editar'
@@ -627,15 +623,15 @@ profile:
             Se você preencher este campo, seu cartão mostrará para as pessoas <strong>o horário atual de onde você
             mora</strong>. Opcionalmente, você também pode escolher mostrar sua localização aproximada.
         publishLocation: 'Publicar a área em seu cartão'
-        approximate: 'Isso é apenas uma localização aproximada'
+        approximate: 'É apenas uma localização aproximada'
     opinion:
         header: 'Legenda/opiniões'
         yes: 'Claro'
-        jokingly: 'Zoeirinha'
-        close: 'Só se somos pessoas próximas'
+        jokingly: 'Na brincadeira'
+        close: 'Apenas se somos pessoas próximas'
         meh: 'OK'
         no: 'Não'
-        custom: 'customizados, adicionados pêle usuárie:'
+        custom: 'customizados, adicionados por usuárie:'
         description: 'Descrição…'
         colours:
             _: '(Cor da fonte…)'
@@ -718,7 +714,7 @@ footer:
             visitors: 'Visitantes únicos'
             pageviews: 'Vizualizações de página'
             realTimeVisitors: 'Atualmente online'
-            users: 'Usuáries registrades '
+            users: 'Usuáries registrades'
         month: 'mês'
         current: 'apenas essa versão'
 
@@ -801,7 +797,7 @@ ban:
     reason: 'Razão de ban'
     visible: '(isso vai ser visto para usuárie)'
     terms: 'Regras quebradas (obrigatório)'
-    action: 'Ban essa pessoa'
+    action: 'Banir essa pessoa'
     confirm: 'Você está certe que quer banir @%username%?'
     header: 'Seu perfil não mais aparecerá em nosso site.'
     banned: 'Seu perfil não mais aparecerá em nosso site.'
