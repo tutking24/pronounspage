@@ -340,6 +340,33 @@ faq:
                     Les personnes non-binaires peuvent utiliser des pronoms binaires, certaines lesbiennes utilisent {/il=il/lui} pour des raisons culturelles, etc.
                 - >
                     Dites simplement « pronoms ».
+        flags:
+            question: 'Pouvez-vous rajouter ce drapeau? Pouvez-vous enlever ce drapeau?'
+            answer:
+                - 'Non.'
+                - >
+                    Maintenir la liste de drapeaux et labels est une tâche qui consomme beaucoup de temps pour notre
+                    équipe. C'est aussi très difficile en terme de filtrer les trolls parmi les identités valides. Nous
+                    ne voulons pas devenir la police des identités et nous ne voulons pas passer tout notre temps à
+                    organiser des drapeaux. Ceci n'est qu'un projet de langues et pronoms, non pas de drapeaux. Ils ne
+                    sont qu'un bonus.
+                - >
+                    Nous avons fait notre mieux pour sélectionner les drapeaux les plus populaires et, selon nous, les
+                    plus souvent acceptés. Nous n'avons pas l'intention d'agrandir ou de rétrécire cette liste.
+                - >
+                    Nous sommes au courant que certains drapeaux ne sont pas appréciés pas certains (ex, des TERFs
+                    essayant de s'approprier des termes pour les rendre transphobique, par cause de définitions
+                    déroutantes, ou même par cause des aspects de vie de créatures de la mythologie). Nous sommes queer
+                    et trans nous-mêmes, nous nous soucions de nos frères et sœures trans. Malgré tout, c'est très dûr de
+                    faire des décisions quand nous recevons des messages de personnes trans qui nous demandent de
+                    rajouter un drapeau, puis que d'autres personnes trans nous demandent de l'enlever car cela les
+                    offense d'une manière ou d'une autre. Ce n'est pas comme si l'histoire de chaque label est claire ou
+                    comme si il y avait une source sûr et certaine pour faire des recherches. Et même si des queerphobes
+                    essayent de créer des termes nuisibles, nous croyons en l'esprit et le pouvoir de la communauté pour
+                    récupérer ces termes.
+                - >
+                    Si vous n'aimez pas un drapeau, ne l'utilisez pas. Si votre drapeau manque à la liste, uploadez-le
+                    (il sera marqué comme uploadé par l'utilisateur pour réduire le vandalisme).
 
 links:
     header: 'Liens'
@@ -403,6 +430,36 @@ contact:
                 - 'indiquerez des liens vers vos réseaux sociaux,'
                 - 'indiquerez, si vous en avez, des expériences dans l''activisme social,'
                 - 'indiquerez sur quel sujet vous voulez nous aider.'
+    contribute:
+        technical:
+            footer: 'Tâches techniques'
+            header: 'Soumettre une pull request'
+            description: >
+                Les tâches techniques sont gérées sur {https://gitlab.com/Avris/Zaimki/-/boards=ce tableau kanban}. Il
+                suffit de choisir une tâche non assignée dans la colonne "To Do", de se l'attribuer et de commencer à
+                travailler dessus. N'hésitez pas à poser des questions.
+        intro: >
+            Pronoms.fr est un projet open-source créé par des volontaires. Vous pouvez vous aussi apporter votre
+            contribution ! Voici quelques domaines dans lesquels nous apprécierions votre aide. Les contributeurs actifs
+            seront invités à rejoindre notre équipe.
+        header: 'Contribuer'
+        translations:
+            header: 'Ajouter ou corriger les traductions'
+            description: >
+                Une chaîne de traduction est manquante ou incorrecte ? Cliquez sur "Proposer des traductions" dans le
+                pied de page et suivez les instructions.
+        entries:
+            header: 'Ajouter des entrées'
+            description: >
+                De nombreuses sections du site (noms, terminologie queer, dictionnaire inclusif…) ont une option
+                permettant d'ajouter et de modifier des entrées. Si vous pensez que quelque chose manque ou est
+                incorrect, n'hésitez pas à soumettre votre entrée.
+        version:
+            header: 'Créer une version dans une nouvelle langue'
+            description: >
+                Les instructions pour créer une version dans une nouvelle langue sont disponibles
+                {https://en.pronouns.page/new-version=ici}. Avant de commencer, veuillez {/contact=nous contacter} pour
+                se coordonner avec d'autres personnes qui pourraient aussi y travailler.
 
 support:
     header: 'Soutien'
@@ -490,8 +547,11 @@ profile:
         Vous pouvez également utiliser {/pronoms#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
     pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
-    birthday: ' ge'
+    birthday: 'Âge'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
+    timezone:
+        approximate: 'ce n''est qu'une approximation'
+        time: 'Il est %time% sur %weekday% dans mon fuseau horaire'
     flags: 'Drapeaux'
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
     flagsCustom: 'Uploader un drapeau personnalisé'
@@ -507,6 +567,9 @@ profile:
             ou par le biais d'un tag <code>rel="me"</code> qui redirige sur la carte.
             Nos liens contiennent également un tag <code>rel="me"</code> pour que les sites tierces puissent vérifier votre carte également.
     column: 'Colonne'
+    opinions:
+        custom: 'customisés, rajoutés par l''utilisateur:'
+        header: 'Légende/opinions'
 
     list: 'Vos cartes'
     init: 'Créer une carte'
@@ -542,8 +605,11 @@ profile:
         header: 'Personnel'
         description: 'Seulement vous voyez cette section'
     language:
-        header: 'Langage'
+        header: 'Langue'
         description: 'La carte de @%username% est aussi disponible dans ces langages'
+    circles:
+        header: 'Mon cercle'
+
 
 share: 'Partager'
 
@@ -571,6 +637,17 @@ footer:
     financial: 'Transparence financière'
     technical: 'Technique'
     sibling: 'Projets similaires'
+    stats:
+        header: 'Statistiques'
+        keys:
+            cards: 'Cartes'
+            visitors: 'Visiteurs uniques'
+            realTimeVisitors: 'En ligne actuellement'
+            users: 'Utilisateurs enregistrés'
+            pageviews: 'Pages vues'
+        month: 'mois'
+        overall: 'toutes les versions linguistiques'
+        current: 'seule cette version'
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'
@@ -592,7 +669,7 @@ terms:
     consent: 'En vous inscrivant, vous acceptez les {/terms=Conditions d''utilisation}.'
 
 privacy:
-    header: 'Privacy Policy'  # TODO
+    header: 'Politique de confidentialité'
 
 admin:
     header: 'Panneau d’administration'
@@ -643,6 +720,7 @@ mode:
     light: 'Mode clair'
     automatic: 'Automatique'
     dark: 'Mode sombre'
+    reducedColours: 'Couleures réduites'
 
 ban:
     reason: 'Raison du bannissement'
@@ -670,6 +748,9 @@ report:
     sent: 'Votre signalement à bien été envoyé. Merci de votre aide !'
     terms: 'Rappel sur ce qui est interdit par nos {/termes=Conditions de Service}'
     hoarding: 'Merci de ne pas signaler un profil s''il n''est pas actif. Notre système supprime les comptes inactifs après un certain délai, pour éviter la surcharge de noms d''utilisateurs. Votre signalement n''accélère pas ce processus.'
+
+translationMode:
+    action: 'Proposer des traductions'
 
 flags:
     Abroromantic: 'Abroromantique'
