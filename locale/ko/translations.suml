@@ -908,7 +908,7 @@ captcha:
 
 mode:
     light: '라이트 모드'
-    automatic: 'Automatic'
+    automatic: '자동적 인'
     dark: '다크 모드'
     reducedColours: '감소된 색깔'
 
