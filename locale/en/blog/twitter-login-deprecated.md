@@ -6,7 +6,7 @@ We've always been [delegating user authentication](https://avris.it/blog/passwor
 to companies and open-source communities that have better resources than us to handle security concerns,
 like email providers (login via email confirmation code) and social media websites (login with OAuth).
 
-Unfortunately, it seems that Twitter might not be a company whose level of security shouldn't be trusted anymore.
+Unfortunately, it seems that Twitter might not be a company whose level of security should be trusted anymore.
 Their recent layoffs and resignations have left them with vastly reduced staff, including security stuff.
 Twitter's political significance makes it particularly vulnerable to hacker attacks, especially now
 when the company seems to be struggling with internal chaos.
