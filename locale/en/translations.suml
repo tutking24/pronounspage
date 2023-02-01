@@ -1,689 +1,510 @@
 title: 'Pronouns.page'
-domain: 'en.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+domain: 'ko.pronouns.page'
+description: '개인 대명사와 성별 중립 용어의 예.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    link: '홈페이지'
+    header: '대명사'
+    headerLong: '대명사 목록'
+    welcome: 'pronouns.page 로 환영합니다!'
     intro: >
         We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+    why: '대명사는 왜 그렇게 중요한가요?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            모든 사람들은 대명사를 사용합니다.
+            사람들에 대해 말할 때 당신은 그들의 이름을 말하기 보다는 그들의 대명사를 사용할 수 있습니다.
+            우리는 보통 누군가의 대명사를 외모에 따라 추정하지만, 그 것은 사실 그렇게 간단하지 않습니다.
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            젠더는 복잡한 개념입니다.
+            어떤 사람들은 자신의 성별처럼 “보이지 않습니다”.
+            어떤 사람들은 사람들이 생각하는 것과는 다른 방식으로 불리는 것을 선호합니다.
+            어떤 사람들은 “남성” 혹은 “여성” 카테고리에 맞지 않고 좀 더 성중립적인 언어를 선호한다.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            우리의 도구는 당신이 어떻게 불리는지 사람들에게 보여줄 수 있도록예시 문장과 함께 당신의
+            대명사에 대한 링크를 공유할 수 있게 해준다.
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            왜이렇게 중요하죠? 단순한 사람의 품위이기 때문입니다.
+            이름이 더 좋다고해서 서현이를 ‘인혜’라고 부르지 않습니다.
+            또는 서현이가 ‘인혜’같이 보여서.
+            아님 증명서에서 인혜라고 써있어도,
+            그 이름이 싫어서 ‘서현’이 이름을 쓰고 싶으면.
+            대명사와 똑같은 이야기입니다.
+            누군가한테 무례하고 싶지 않으면 옳은 대명사를 씁니다.
+    pronouns: '인기한 대명사'
     generator:
-        header: 'Generator'
+        header: '발전기'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            문장에있는 빈공간을 채울때 이 툴도 사용할수있습니다.
+            친구들한테 보낼수있는 링크를 만들 수 있습니다.
+        button: '발전기 보이기'
+        header2: '링크 발전하기'
+        base: '기반한 내용'
+        alt: '각 필드에 개별적으로 교환 가능한 양식을 입력할 수도 있습니다, eg. <code>그들/그녀</code> = “그” 아님 “그녀”.'
+        pronunciation: 'IPA를 사용하여 파이프 문자 뒤에 발음을 지정할 수도 있습니다. eg. <code>그들/geu-ne</code> = “그들” 의 발음은 /geu-ne/.'
+    whatisit: '대명사은 무슨 상황이지?'
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: '우리의 미션'
+        summary: '우리는 언어의 자유, 존중 및 포용을 위해 싸웁니다.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>자유</strong>
+            – <em>모두가<em> 자기한테
+            제일 편하는 대명사를 쓸수있도록.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>존중</strong>
+            – <em>다른 사람의<em> 대명사가 똑바로 쓰기 위해
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>포용</strong>
+            –우리가 모르는 사람에 대해 말할때,
+            성을 가정하지말고, 아무이유든 베제하지않다.
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
-    plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    header: '대명사'
+    headerLong: '대명사'
+    examples: '문장안에 예'
+    plural: '복유의'
+    intro: '나의 대명사는'
+    normative: '규범적'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: '교환 가능한 양식에 대한 링크 발정하기'
+        header: '교환 가능한 양식'
+        raw: '교환 가능'
+    generated: '이 대명사는 제너레이터를 사용하여 만들어졌습니다. pronouns.page 팀은 이에 대한 책임을 지지 않습니다.'
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: '아무 대명사'
+        short: '아무'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
-    sentence: >
-        You can modify the default links so that the URL reads like a sentence; for example:
+            많은 사람들한테는 똑바로 쓴 대명사가 중요하는데,
+            어떤 사람들은 아무 대명사가 괜찮습니다.
+        options: '옵션을 확인하세요. [share]{/pronouns=here}.'
+    others: '기타 양식'
+    othersRaw: '기타'
+    or: '아님'
+    grammarTable: '테이블'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Nonbinary and gender neutral language in cultural texts'
-    subheader: 'Text corpus of nonbinary and gender neutral language'
-    toc: 'Show table of contents'
+    header: '소스'
+    headerLong: '문화속 텍스트 예'
+    headerLonger: '문화 텍스트의 성 중립적 언어'
+    subheader: '성 중립 언어의 텍스트 코퍼스'
+    toc: '목차 표시'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Comics: 'Comics'
-        Game: 'Games'
-        Other: 'Other'
+        All: '모두'
+        Book: '책'
+        Article: '조항'
+        Movie: '영화'
+        Series: '시리즈'
+        Song: '음악'
+        Poetry: '시'
+        Game: '게임'
+        Other: '기타'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-        spoiler: 'Spoiler'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        header: '제출 추가'
+        action: '추가'
+        pronouns: '어떤 대명사가 쓰고있지?'
+        pronounsInfo: '대명사의 가장 간단한 형태를입력하세요. "그들","그와 그녀"'
+        type: '소스 유형'
+        author: '작가'
+        title: '제목'
+        extra: '추가 정보(번역가, 저널명, …)'
+        year: '출시년도(영어 버전)'
+        fragments: '파편'
+        fragmentsInfo: '대괄호를 사용하여 관련 대명사를 표시할 수 있습니다. "그런 다음 \[\[그들]]은 \[\[그들이]]가 \[\[그들]]에게 이 모든 일을 어떻게 수행했는지 보았습니다."'
+        comment: '댓글'
+        link: '콘텐츠 링크'
+        thanks: '참여해주셔서 감사합니다!'
+        another: '제출 더하기'
+        moderation: '제출물은 먼저 승인받아야합니다.'
+        key: '키'
+        keyInfo: '언어 버전 간 소스 연결 및 사전 연결 식별자'
+        images: '이미지'
+        spoiler: '스포일러'
+    otherVersions: '다른 언어'
+    referenced: '사용 예'
+
 
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: '사전'
+    headerLong: '중립 명사 사전'
+    headerLonger: '성 중립 언어 사전'
+    description: '그냥 대명사가 아닙니다! 성 중립 명사 사전을 확인하세요.'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
+            포용적이고 성 중립적인 것은 단지 누군가의 대명사를 존중하는 것이 아닙니다.
+            직업, 직위, 관계 등도 설명합니다.
+            그들의 성별을 가정하지 않는 방식으로.
+            모든 배우자가 "남편"이나 "아내"가 되는 것은 아닙니다.
         - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
+            성별을 모르는 사람에 대해 말할때,
+            아님 많은 사람에 대해 말할때,
+            특히 명시적으로 선호하는 논바이너리 사람들에게,
+            중립 형태를 사용하세요.
         - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
-        - >
-            Keep in mind that it's a dictionary of <em>ideas, proposals</em>.
-            Not all quoted forms will make sense in every context, not all are <em>fully</em> gender neutral
-            (but they're used by some nonbinary people to express themselves outside of the gender binary),
-            and not every word here can be used for any given nonbinary person – just ask what they prefer to be called.
+            아래에서 우리는 알아야할 할 단어의 사전을 준비했습니다.
+            자기의 제안을 추가할수있음니다.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+    approved: '승인된 항목'
+    pending: '중재를 기다리는 중'
+    edit: '변경 제안'
+    edited: '제안된 변경'
+    editing: '기존 항목을 수정 중입니다.'
+    empty: '귀하의 기준과 일치하는 단어를 찾을 수 없습니다.'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: '추가'
+        actionLong: '단어 추가'
+        thanks: '참여해주셔서 감사합니다!'
+        another: '더 추가하기'
+        moderation: '제출물은 게시되기 전에 승인을 받아야 합니다.'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: '템플릿 쓰기'
+    root: '룻'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
-    feminineShort: 'fem.'
-    neuter: 'neutral'
-    neuterShort: 'neutr.'
+    masculine: '남성 명사'
+    masculineShort: '남성'
+    feminine: '여성 명사'
+    feminineShort: '여성'
+    neuter: '성 중립'
+    neuterShort: '성 중립'
 
-    singular: 'singular'
-    singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
+    singular: '단수형'
+    singularShort: '단수형'
+    plural: '복수형'
+    pluralShort: '복수형'
 
-    image: 'Picture'
+    image: '이미지'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
-
-inclusive:
-    header: 'Inclusivity'
-    headerLong: 'Dictionary of inclusive language'
-    insteadOf: 'Instead of'
-    say: 'Better say'
-    because: 'Because'
-    info:
-        - >
-            Language is a carrier of thought, of culture, it's a basis of communication. It influences our thoughts and actions.
-            If we want to build a society that's open to diversity and accepting of otherness,
-            our language needs to be inclusive as well.
-        - >
-            Although we focus mostly on gender and sexuality issues on this website, inclusive language is much more than just that.
-            Below we work as a community to create a list of phrases that should be avoided, including an explanation of
-            why and what they could be replaced with.
-    categories: 'Categories'
-    sources: 'Sources'
-    clarification: 'Include a clarification'
-    clarificationDefault: 'We mean, of course, to avoid it in the pejorative meaning, not to stop using it entirely.'
+    header: '커뮤니티'
+    headerLong: '퀴어 커뮤니티'
 
 terminology:
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
+    header: '술어'
+    headerLong: '퀴어 용어 사전'
     info:
+        - '많은 LGBTQ 어휘는 영어에서 한글로 바꾼 단어들 입니다. 그런 이유로 그 단어들, 사용법, 뜻, 그리고 한글 변역들을 정리한 사전을 제시하고자 합니다.'
         - >
-            This is a dictionary of terms related to the LGBTQ+ community.
-        - >
-            Keep in mind that identity labels are inherently subjective and flexible.
-            This dictionary is a community effort to find the most widely accepted definitions of queer terms,
-            but shouldn't be treated as any kind of authority on the subject.
-            The only authority on someone's identity and what words best describe it is… that person themself.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
-    categories:
-        sexual_orientation:
-            name: 'Sexual orientation'
-            description: 'To whom (if anyone) is a person attracted sexually'
-        romantic_orientation:
-            name: 'Romantic orientation'
-            description: 'To whom (if anyone) is a person attracted romantically'
-        #tertiary_orientation:
-        attraction:
-            name: 'Attraction'
-            description: 'To whom (if anyone) is a person attracted in other ways'
-        gender:
-            name: 'Gender'
-            description: 'Who a person is'
-        gender_expression:
-            name: 'Gender expression'
-            description: 'The way in which one''s gender is shown to others'
-        relationship_model:
-            name: 'Relationship model'
-            description: 'How do a person''s relationships look like'
-        language:
-            name: 'Language'
-            description: 'Other language related to queerness'
-        politics:
-            name: 'Politics'
-            description: 'Terms related to the fight for queer liberation'
-        prejudice:
-            name: 'Prejudice'
-            description: 'Terms related to hate and discrimination towards queer people'
+            정체에 대한 어휘는 주관적이고 바뀔 수 있다는 것을 기억해 주세요. 이 사전은 제일 일반적으로 인정된 퀴어 어휘를 찾으려는 커뮤니티 노력이지 어떤 어휘가 맞는지의 권한은 없습니다. 누군가의 정체와
+            그 정체의 맞은 단어가 뭔지에 권한이 있는 건... 그 사람 자신뿐이죠
+    term: '용어'
+    original: '어원'
+    category: '카테고리'
+    images: '플래그 카탈로그 외부의 추가 이미지'
+    definition: '정의'
 
 faq:
     header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    headerLong: '자주 묻는 질문'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: '넌바이너리가 뭐죠?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    성별은 단순한 남성/여성 구분보다 훨씬 더 복잡합니다.
+                    순전히 생물학적인 관점에서도 우리는 염색체 성,
+                    유전적 성, 호르몬 성, 표현형 성 등등으로 구별합니다.
+                    반드시 서로 합동일 필요는 없으며 바이너리일 필요도 없습니다.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(더 읽기)}.
+                    그리고 우리가 문화적 측면에 도달했을 때 "젠더"는 사회적 구성물입니다.
+                    시간과 장소에 따라 "여자" 또는 "남자"가 되는 것은 다른 것을 의미할 수 있습니다.
+                    권리, 의무, 규범… 유럽에서 남성들은 하이힐과 스타킹을 입었고,
+                    북미 원주민들은 수세기 동안 제3의 성을 인정해 왔습니다.
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)},등등.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    논바이너리는 사람들의 정체성을 설명하는 포괄적인 용어입니다.
+                    이분법적인 남녀 구분에 맞지 않는 사람들입니다.
+                    예를 들어:
+                    {https://gender.wikia.org/wiki/Agender=에이젠더},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=젠더 플루이드},
+                    {https://gender.wikia.org/wiki/Demigirl=데미여자},
+                    {https://gender.wikia.org/wiki/Demiboy=데미담자},
+                    와 {https://gender.wikia.org/wiki/넌바이너리=등등}.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    논바이너리는 반드시 남성다움과 여성다움 "사이에" 있는 것이 아닙니다. "그 너머"에 더 가깝습니다.
+                    논바이너리 사람들은 양성일 필요도 없고, 중성 대명사를 사용할 필요도 없습니다.
+                    새로운 성 역할을 만드는 것이 아니라 성 역할에서 자유로워지는 것입니다.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: '<em>이상한</em> 대명사도 존중해야 합니까?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    사람들이 원하는 방식으로 이야기하는 것은 사람을 존중하는 것입니다.
+                    서현이를 인혜라고 안불리고, 또는 사장님을 이름으로 불르지 않으니다.
+                    그리고 어떤 사람들은 “{/남자=남자}” 나 “{/여자=여자}”라고 부르는 걸 안좋아합니다.
+                    그것을 안 받아들이는 사람들은 다른 사람한테 나쁘게 보입니다.
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
+                    “이상한 대명사” 는 그냥 익숙해야 합니다.
         made-up:
-            question: 'Those pronouns are made up!'
+            question: '이 대명사는 만들어졌어!'
             answer:
-                - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                - '내. 그렿죠. 모든 언어의 모든 단어들은 누군가가 지어넨 겁니다. 어떤 단어들는 다른 보다 더 오래 됬지만요.'
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: '다른 사람들을 어떻게 불르면 되는지 어떻게 알죠?'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    물어보시면 됩니다! 네, 조금 어색할 수도 있지만 하면 할수록 덜 어색해집니다.
+                    누군가의 이름을 물어볼 수 있다면 그들의 대명사는 왜 안 될까요?
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    ("넌 남자야 여자야?"라고 물어보지 마세요.
+                    이 질문은 정답이 두 개뿐이라는 것을 의미합니다.
+                    누군가의 성기에 대한 건강에 해로운 호기심을 암시합니다.
+                    대신 "대명사는 뭐야?"라고 물어볼 수 있습니다. 또는 "당신을 어떻게 언급해야합니까?”)
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    자신을 소개할 때 사람들에게 대명사를 말하는 것도 중요합니다.
+                    "안녕하세요, 저는 마이클입니다. {/he=그/그대}". 어렵지 않습니다. 하지만 트랜스젠더와 논바이너리 사람들에게 이것은 큰 의미가 있습니다!
+                    온라인에서는 훨씬 더 쉽습니다. 대명사(또는 우리의 웹사이트의 링크)를 약력에 추가하기만 하면 됩니다.
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among family or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    또한 많은 사람들이 상황에 따라 다른 이름과 다른 대명사를 사용할 수도 있습니다.
+                    그들은 아직 가족 사이에는 나오지 않았지만 친구 사이에서는 편안하게 자기가 원한 대명사를 쓰고 있습니다.
+                    예를 들어 "상사 앞에서 어떤 대명사를 사용해야 합니까?" 등을 물어볼 수 있습니다.
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    어떤 사람들은 여러 대명사를 제공합니다.
+                    그것은 그들이 그 모든 형태를 좋아한다는 것을 의미합니다. 일반적으로 첫 번째 것이 선호됩니다.
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: '누가 이런것을 사용하긴 합니까?'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    네! 전 세계 수백만 명의 엔비들이 씁니다.
+                    여기에 나열된 모든 대명사에는 일상 생활에서 실제로 사용하는 사람이 있습니다.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: '이러한 논바이너리 대명사는 일종의 권위에 의해 승인됩니까?'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    언어는 신이 내린 일종의 고대 마법이 아닙니다.
+                    그것은 우리가 의사 소통하는 데 사용하는 도구일 뿐입니다.
+                    우리가 사회로 변할 때, 그리고 우리를 둘러싼 세상이 변할 때,
+                    우리는 그것을 더 잘 설명할 수 있도록 우리가 사용하는 언어를 조정합니다.
+                    우리는 사용자이므로 사용 방법에 대한 <em>권한은 우리입니다</em>.
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    사전은 이러한 변경 사항을 포함하여 시작하는 데 시간이 걸립니다.
+                    어떤 식으로든 변경을 틀리게 만들지 않습니다.
+                    그러나 충분히 자주 사용된다면 결국 새로운 형태는 사전에 포함됩니다.
+                    예를 들어, {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster} 는
+                    {/they=singular “they”} 이진법이 아닌 대명사로 씁니다.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
+                    또한 신대명사에 일부를 읽을 수 있습니다 {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
                     on neopronouns.
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'SNS에서 내 대명사를 자기소게에 넣어야 되는 이유는 뭐죠?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    시스이면(= 트랜스가 아님)이고 성별과 일치하는 "{/he=그대}" 또는 "{/she=그녀}"를 사용하는 경우,
+                    대명사가 <em>명확한</em>다고 생각할 수도 있습니다..
+                    아마도 그것은 사실일 것입니다. 프로필에 귀하의 이름이 전통적으로 남성 또는 여성이라면,
+                    또는 아바타로 사진이 있는 경우.
+                    많은 사람들이 그렇지 않습니다. 그래서 그들이 어떻게 불리기를 원하는지 추측하기 어렵습니다.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    그러나 그것은 대부분 그 이상에 관한 것입니다. 대명사가 "명백"할 수 있지만,
+                    그 대명사가 아닌 사람들이 있습니다.
+                    그들은 성별로 "통과"하는지 여부에 관계없이 올바르게 처리되기를 원합니다.,
+                    전환 여부(또는 전환하려는 경우).
+                    논바이너리 사람들은 일반적으로 "논바이너리로 보이지 않습니다", 우리는 누구에게도 안드로겐을 빚지고 있지 않습니다.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
+                    우리의 대명사를 공유하는 것은 트랜스, 논바이너리 및 젠더 비순응자에게 매우 중요합니다.
+                    아아, 그것은 또한 우리를 폭로하고 골라냅니다.
+                    하지만 시스 사람들이 그렇게 한다면 그것은 우리에게 세상을 의미합니다.
+                    그것은 우리가 더 편안하고 안전하며 환영받는 느낌을줍니다.
                     {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
         change:
-            question: 'Can I change my pronouns?'
+            question: '대명사를 바꿀 수 있습니까?'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    물론이죠! 누군가가 자신의 견해, 스타일, 취미를 바꿀 때 아무도 놀라지 않는데…
+                    그래서 그들이 자신의 정체성의 일부를 발견한 것이 왜 이상할까요?
+                    이름이 마음에 들지 않거나, 자신에게 잘 맞는 레이블을 발견했을도 있습니다?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: '<em>자신의</em> 새로운 대명사가 익숙하지 않는 것이 이상한가요?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    아뇨! 태어날 때 부여된 성별과 일치하는 대명사를 오랜 세월 사용한 후
+                    다른 것으로 전환할 때 자신을 잊어버리기 쉽습니다.
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    대명사 ≠ 성별.
+                    누군가가 당신을 "그들"이라고 불렀을 때 혼란스러워했다고 해서 성별이 크게 바뀌지는 않습니다.
+                    걱정하지 마세요. 당신에게 가장 잘 맞는 것을 찾으세요.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: '왜 "선호 대명사"라고 하면 안 됩니까?'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    이 구절은 누군가의 대명사가 단지 변덕임을 암시하기 때문입니다.
+                    누군가가 그녀라고 불리는 것을 단지 "선호"한다면, 내가 그를 "그"라고 불러도 그는 _정말_ 기분이 좋지 않을 것입니다. 그렇죠?
+                    그들은 결국 남자처럼 보이므로 내가 더 쉬울 것입니다!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+                    아닙니다! 우리의 대명사입니다. 우리의 "선호하는 대명사"가 아닙니다. 그것은 우리의 "선호하는 이름"이 아니라 우리의 이름입니다.
+                    트랜스젠더 및 논바이너리 친구와 사랑하는 사람을 걱정한다면 올바른 방법으로 부르세요.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: '왜 "성대명사"라고 하면 안되나요?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    왜냐면 성 ≠ 대명사이기 때문입니다. 대명사는 그냥 문법입니다.
+                    이진법이 아닌 사람들은 이진법 대명사를 사용할 수 있고 일부 레즈비언은 문화적 이유로 {/he=he/him}을 사용합니다.
                 - >
-                    Simply say “pronouns”.
-        bigger-problems:
-            question: 'Aren''t there bigger problems to solve? Shouldn''t we focus on world hunger instead of some pronouns?'
-            answer:
-                - >
-                    The same issue might seem trivial for some while being very important to others.
-                    Imagine that almost every sentence you hear about yourself is grammatically built on a lie about your very identity.
-                    That even simple conversations make you dysphoric, no matter what they're about…
-                - >
-                    There are different kinds of problems in this world,
-                    but we shouldn't be comparing them as an excuse to dismiss those that we <em>don't really want to</em> solve.
-                    There's eight billion people on this planet – we can manage to work on multiple issues at once!
-                    Every person has different needs and different resources available.
-                - >
-                    Our collective doesn't have the resources to feed the world, to stop wars or global warming.
-                    What we do have, though, are the skills and energy to shape and promote a more inclusive language –
-                    so that's what we're doing, instead of giving up and doing nothing.
-                - >
-                    Respecting other people's pronouns and identity doesn't require much effort.
-                    Even if you're a person that's solving the biggest challenges that humanity is facing,
-                    you can easily manage to not be transphobic in the process.
+                    단순히 "대명사"라고 말하면 됩니다.
         flags:
-            question: 'Can you add this flag? Can you remove that flag?'
+            question: '이 플래그를 추가할 수 있습니까? 그 플래그를 제거할 수 있습니까?'
             answer:
                 - >
-                    No.
+                    아뇨.
                 - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
+                    플래그 및 레이블 목록을 유지 관리하는 것은 우리 팀에서 점점 더 많은 시간이 소요되는 작업입니다.
+                    또한, 유효하고 선의의 신원에서 트롤과 파괴자를 필터링하는 측면에서 도전적입니다.
+                    우리는 신분 경찰을 원하지 않습니다. 그리고 우리는 플래그 관리에 모든 시간을 보내고 싶지 않습니다.
+                    결국 플래그에 관한 것이 아니라 언어와 대명사에 관한 프로젝트입니다. 그들은 단지 보너스입니다.
                 - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
+                    우리는 가장 인기있는 플래그 목록을 선택하기 위해 최선을 다했습니다.
+                    그리고 우리가 아는 한 일반적으로 받아들여집니다.
+                    우리는 그 목록을 확장하거나 축소할 계획이 없습니다.
                 - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
+                    일부 플래그가 마음에 들지 않을 수 있음을 알고 있습니다.
+                    (예: TERF가 용어를 인수하여 트랜스포비아로 만들려는 역사 때문에
+                    여러 가지 혼란스러운 정의 때문에
+                    또는 신화 속 인물의 삶의 측면 때문에).
+                    우리는 퀴어이고 트랜스젠더이며 트랜스 형제자매를 돌봅니다.
+                    불행히도 그러한 결정을 내리는 것은 정말 어렵습니다
+                    트랜스젠더로부터 그들이 정직하게 식별할 수 있는 플래그를 추가해 달라는 메시지를 받을 때
+                    또한 트랜스젠더에게 상처를 주기 때문에 삭제를 요청하는 다른 트랜스젠더들로부터도 마찬가지입니다.
+                    모든 레이블의 역사가 명확하지 않거나 그것을 찾아볼 수 있는 권위 있는 출처가 있는 것은 아닙니다.
+                    그리고 퀴어 혐오자들이 어떤 용어를 상처로 만들려고 해도
+                    우리는 혐오스러운 용어를 되찾을 수 있는 커뮤니티의 힘을 믿습니다.
                 - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
-                - >
-                    Interestingly, the Unicode Consortium
-                    {https://blog.emojipedia.org/propose-a-new-emoji-but-no-more-flags/=implemented a similar policy}
-                    regarding proposing new flags as emoji 😉
-
+                    플래그가 마음에 들지 않으면 사용하지 마세요.
+                    플래그가 없는 경우 업로드하세요.
+                    (이는 기물 파손을 완화하기 위해 사용자 생성으로 표시됩니다).
         custom-pronouns:
-            question: 'My pronouns aren''t listed'
+            question: '내 대명사가 없어요!'
             answer:
                 - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
+                    홈페이지에 생성기를 사용하여 원하는 대명사 집합에 대한 링크를 만들 수 있습니다.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
-        app:
-            question: 'Is there a pronouns.page mobile app?'
-            answer:
-                - >
-                    Developing multi-platform mobile apps requires a lot of extra effort,
-                    and at the moment we've decided to focus on other goals.
-                - >
-                    But this website is a {https://web.dev/learn/pwa/progressive-web-apps/=Progressive Web App},
-                    which means you can {https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen=add it to home screen}
-                    in your mobile browser –
-                    and it will behave <em>basically</em> like an app 😉
-
-        unlisted-cards:
-            question: 'Can someone search for my card?'
-            answer:
-                - >
-                    We don't publish any list of active usernames that one could search through or open them one-by-one.
-                    People should only know your username, if you share a link with them (or if they randomly guess it).
-                - >
-                    Through {https://developers.google.com/search/docs/advanced/crawling/block-indexing=noindex}
-                    and {https://developers.google.com/search/docs/advanced/robots/intro=robots.txt}
-                    we ask search engines to stay away from the cards.
-                    Keep in mind, though, that not all of them respect such directives,
-                    and that we've only added them recently, so the webpages already crawled by them earlier
-                    (eg. when their crawlers stumbled upon a publicly posted link to your pronouns.page card)
-                    might stay in their cache for some time.
-                - >
-                    You decide what's in your card – remember that depending on what you put there (like links to your social media),
-                    it might be easy for people who stumble upon your card to identify you.
-        verified-links:
-            question: 'How do I get the links in my card verified?'
-            answer:
-                - >
-                    In your {/account=account settings} you can connect and disconnect multiple third-party accounts,
-                    which lets you use them as a login provider.
-                    If on top of that you decide to publish the link to your third-party profile in your card,
-                    then that link will be marked with a shield icon ([shield-check]).
-                    It will also include a <code>rel="me"</code> tag, so that services like Mastodon can verify it the other way round too.
-                    This feature only works with Mastodon and Twitter so far.
-        mutiple-cards:
-            question: 'Can I have multiple cards under one account?'
-            answer:
-                - >
-                    That must be the most requested feature so far! 😅
-                    We're definitely onboard with the idea, it would help for example systems
-                    or people who want to have a separate cards for more public use and for close friends.
-                    Unfortunately, this feature requires <em>tons</em> of changes in the code as well as testing.
-                    We'll try to prioritise it, but being swamped with other work, we can't really promise any specific date.
-        customise-opinions:
-            question: 'Can I customise the “legend/opinions” field even more?'
-            answer:
-                - >
-                    Next to the default opinion choices (like “Yes”, “Jokingly”, “Nope”) you can now specify your own.
-                    Those that had already existed before we added customisation have to remain the same, to make cards more predictable and consistent.
-                    Whoever stumbles across a card and sees, let’s say, a bold pink entry with a heart,
-                    will know without checking the legend that it means an option that one likes very much.
-                    Adding new opinions is customisable, though.
-                - >
-                    We're not planning to support fully customisable colours (like picking <em>just any</em> hex code)
-                    because we'd rather hand-pick them to ensure they have enough contrast, distinguishability,
-                    and a dark mode version – for the cards to be readable and accessible.
-        deletion-bug:
-            question: 'When I click a “delete” button nothing happens'
-            answer:
-                - >
-                    Some buttons on our website, mostly related to removing things that aren't easy to restore,
-                    show a modal window asking “are you sure you want to do XYZ?”.
-                    We're aware that some browser extensions mistakenly think
-                    that this modal window is a cookie popup or an ad and just hide it.
-                - >
-                    We're trying to be very explicit in our HTML markup which elements are which,
-                    so that such extensions have an easier time distinguishing them,
-                    but it's very difficult to accommodate all possible extensions.
-                - >
-                    Before you report an issue, please check if disabling such extensions fixes your problem.
+                    예를 들어 슬래시를 사용하여 5가지 형식을 나열할 수도 있습니다: {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
+                    이 경우 <strong>다섯 가지 양식</strong>이 모두 필요합니다. 그렇지 않으면 앱이 정확히 무엇을 의미하는지 추측만 할 수 있습니다.
 
 links:
-    header: 'References'
-    headerLong: 'Extra references'
-    links: 'Extra links'
-    recommended: 'We recommend'
-    blog: 'Blog'
-    mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
-
-    social: 'Social media'
-
-    languageVersions: 'Other language versions'
+    header: '링크'
+    headerLong: '추가 링크'
+    recommended: '우리는 추천합니다!'
+    blog: '블로그'
+    mediaShort: '미디어'
+    media: '미디어의 Pronouns.page'
+    social: 'SNS'
+    languageVersions: '다른 언어 버전'
 
 people: ~
 
-english: ~
+# optional, but would be nice to have
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of <language> nonbinary pronouns'
+    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            A summary in English…
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
-    groups:
-        all: ''
-        calendar: 'Queer Calendar Bot'
+    header: '연락'
+    authors: '웹사이트 작성자'
     faq: >
-        Before you write, <strong>check out our </strong>{/faq=<strong>FAQ</strong>} – maybe the answer to your question is already there.
+        작성하기 전에 {/faq=FAQ}를 확인하세요. 질문에 대한 답변이 이미 있을 수 있습니다.
     technical: >
-        Do you see <strong>a bug</strong> or have a technical question?
-        Please include your username and <strong>as many details as possible</strong> in your message
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-        Please also <strong>try disabling extensions</strong> that might be breaking the page
-        (eg. ad blockers mistakenly removing something that isn't an ad) and see if that helps.
+        기술적인 문제나 질문이 있습니까? 사용자 이름과 가능한 한 많은 세부 정보를 포함하세요.
+        (오류 메시지는 무엇을 말합니까? 휴대 전화 또는 데스크탑에 있습니까? 어떤 브라우저를 사용합니까?
+        문제를 재현하기 위해 어떤 단계를 수행할 수 있습니까? 스크린샷이나 화면 녹화를 첨부할 수 있습니까? 등등)
     hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
-    language: >
-        We're an international team – people who created a specific language version
-        might not be the same people who will read your message.
-        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
+        우리에게 동성애 혐오 메일을 보내고 싶습니까?
+         그냥 포기하세요. 우리는 트롤과 논의하지 않습니다.
+         귀하가 메시지를 작성하는 데 걸리는 시간보다 귀하를 음소거하고 스팸 폴더에 메시지를 넣는 데 걸리는 시간이 더 적습니다.
+    groups:
+        calendar: '퀴어 달력 봇'
+    language: '우린 국제팀입니다 – 특정한 언어 버전을 만든 사람들은 당신의 메시지를 읽을 사람들과 다를 수 있습니다. 그러니 가능하다면 <strong>영어 아님 폴란드 어</strong>로 문의 부탁합니다.'
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: '"중립 언어 위원회" 집단'
+        nameShort: '집단'
         description: >
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
-        extra:
-            - '{/blog/project-history=Short history of the project}'
-            - '{/blog/why-the-name=Why the name?}'
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
+            우리는 성 중립적이고 논바이너리 언어를 수집, 연구, 형성 및 홍보에 전념하는 퀴어 집단입니다.
+            우리는 또한 평등과 사회 정의를 위한 행동을 지지합니다.
+        extra: []
+        logo: '컬렉티브의 로고는 트랜스젠더 심볼과 언어를 상징하는 말풍선의 조합입니다.'
+        members: '현재 회원'
+        member: '집단의 구성원'
+        upcoming: '향후 언어 버전'
         join:
-            header: 'Join us!'
+            header: '우리와 함께!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                논-바이너리 및 성 중립적 언어에 관심이 있습니까?
+                우리 집단을 홍보하는 것을 돕고 싶습니까? 그럼 바로 연락하세요!
+                아무 도움을 환영합니다!
+            areasIntro: '도움을 줄 수 있는 분야는 다음과 같습니다:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
+                - '사전 및 용어집 확장 및 조정,'
+                - '출처 목록 확장 및 조정,'
+                - '그래픽 및 소셜 미디어 게시물 작성,'
+                - '다이렉트 메시지에 답장하기,'
+                - '프로필 조정,'
+                - '새 언어 버전 만들기,'
+                - '번역하기,'
+                - '언어 버전 추가 프로세스 조정,'
+                - '블로그 게시물 작성,'
+                - '프로그래밍'
                 - '…'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                그러한 것들 중 논바이너리 사람의 관점을 필요로 하고, 다른 것들은 반드시 그렇지는 않습니다.
+                이것이 우리가 바이너리 동맹국을 초대하는 이유입니다.
+            how: '가입하고 싶나요? 저희를 이메일{mailto:contact@pronouns.page=contact@pronouns.page}보내주세요. 그다음 후:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say if you have some experience in activist work,'
-                - 'say what you would like to help with.'
-            warning: >
-                At the moment we seem to have enough people helping with English and with moderation,
-                so keep in mind we might not have much work to give you, if that's what you want to help with.
-                But we could still need you in other areas (technical work, design, graphics, etc.)
-                and other languages (including ones that are already supported, but need eg. translations of new features).
+                - '자신을 소개하고,'
+                - 'pronouns.page 프로필 링크하고,'
+                - '소셜 미디어 링크하고,'
+                - '활동가 활동에 약간의 경험이야기 주고,'
+                - '무엇을 도와주고 싶은지 말해보세요.'
     contribute:
-        header: 'Contribute'
-        intro: >
-            Pronouns.page is an open-source project created by volunteers.
-            You can add your contribution too! Here's some areas where we'd appreciate your help.
-            Active contributors will be invited to join our team.
+        header: '기여'
+        intro: 'Pronouns.page는 자원봉사자들이 만든 오픈 소스 프로젝트입니다. 당신도 기여할 수 있습니다! 도움이 필요한 부분 들입니다. 적극적인 기여자들은 우리 팀에 합류하도록 초대됩니다.'
         entries:
-            header: 'Add entries'
+            header: '추가 향목'
             description: >
-                Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
-                If you think something's missing or incorrect, don't hesitate to submit your entry.
+                이 웹사이트의 많은 부분들(명사, 퀴어 어휘, 포괄적 사전, 등등)은 추가하고 편집할 수 있는 옵션이 있습니다. 뭔가가 빠졌거나 틀린 부분이 있다고 생각이 들면 주저하지 말고 항목을 제출해
+                주세요.
         version:
-            header: 'Create a new language version'
+            header: '새로운 언어 버전 만들기'
             description: >
-                Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
-                Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
+                새로운 언어 버전을 만들는 방법은 {https://en.pronouns.page/new-version=여기} 있습니다. 다른 기여자들이 벌써 통력하는 중일 수 있으니 같이 협력할 수 있게
+                시작 전 {/contact=문의해 주세요}.
         translations:
-            header: 'Add or correct translations'
-            description: >
-                A translation string in an existing language version is missing or incorrect?
-                Click on “Propose translations” in the footer and follow instructions.
+            header: '번역 추가 또는 수정하기'
+            description: '번역 문자열이 없거나 틀립니까? 바닥글에서 "번역을 제안하기"을 클릭하고 지침을 따르세요.'
         technical:
-            header: 'Submit a pull request'
+            header: '풀 요청 제출하기'
             description: >
-                Technical tasks are managed on {https://gitlab.com/Avris/Zaimki/-/boards=this kanban board}.
-                Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
-                Don't hesitate to ask questions.
-            footer: 'Technical tasks'
+                기술 작업은 {https://gitlab.com/Avris/Zaimki/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
+                할당하고 작업을 시작하세요. 질문이 있으면 주저하지 말고 물어 주세요.
+            footer: '기술 작업'
 
 support:
-    header: 'Support'
+    header: '지원'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
-    bankAccount: 'Bank transfer'
-    # bankAccountOwner: 'The account is the name of a project maintainer, Andrea Vos'
+        서버, 도메인, 스티커 등을 추가하는걸 구입하려는 경우,
+        아래 링크를 사용할 수 있습니다.
+    bankAccount: 'Bank transfer'  # TODO
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
-    tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
+    header: '계정'
+    headerLong: '내 계정'
+    tokenExpired: '토큰이 만료되었습니다. 웹사이트를 리프레시하고 다시 시도하세요.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you <strong>%email%</strong> an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        help: '로그인하거나 계정을 만들려면 소셜 미디어 버튼을 사용하거나 아래 필드에 이메일을 입력한 다음 우편함으로 받을 코드를 확인하세요.'
+        placeholder: '이메일(또는 이미 등록된 사용자 이름)'
+        action: '로그인' # TODO: 'Log in / register'
+        emailSent: '6자리 코드가 포함된 이메일을 보내드렸습니다. 여기에 입력하세요. 코드는 일회용이며 15분 동안 유효합니다.'
+        userNotFound: '사용자를 찾을 수 없습니다.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: '로그인 코드는 %code%입니다.'
+            instruction: '이메일 주소를 확인하려면 웹사이트에 다음 일회용 코드를 입력하세요: %code%.'
+            extra: '이 코드를 주문하지 않은 경우 이 메시지를 무시하세요.'
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
-        instancePlaceholder: 'Instance'
+            등록하면 카드를 ({/@example=이렇게}) 관리할 수 있습니다.
+        passwordless: '웹사이트는 비밀번호를 저장하지 않습니다. {https://avris.it/blog/passwords-are-passé=추가 정보.}'
+        instancePlaceholder: '사례'
+        # TODO
         domainPlaceholder: 'Domain'
         deprecated: 'Deprecated'
         depreciationNotice: >
@@ -691,346 +512,289 @@ user:
             <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
             We highly recommend making sure that you have a different login method available.
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: '확인'
+        invalid: '유효하지 않은 코드'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change username'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
-            nonascii: >
-                Warning: if you decide for a username that contains non-ASCII characters,
-                keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
+            header: 'ID'
+            action: 'ID 바꾸기 '
+            invalid: '사용자 이름은 4자에서 16자 사이여야 하며 숫자, 문자, 점, 하이픈 및 밑줄만 포함할 수 있습니다.'
+            taken: '이 사용자 이름은 사용됩니다.'
         changeEmail:
-            header: 'Email address'
-            action: 'Change email'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
-    logout: 'Log out'
+            header: '이메일 주소'
+            action: '이메일 바꾸기'
+            invalid: '잘못된 이메일 주소.'
+            taken: '이 주소는 이미 가졌습니다.'
+        admin: '관리자'
+    logout: '로그 아웃'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
-        failed: 'Please reconnect your social media to fix the missing avatar.'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        header: '아바타'
+        change: '변하기'
+        failed: '누락된 아바타를 수정하려면 소셜 미디어를 다시 연결해 주세요.'
+    deleteAccount: '어카운트 삭제'
+    deleteAccountConfirm: '어카운트을 삭제하고 싶습니까? 이것은 되돌릴 수 없습니다!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'SNS 연결'
+        connect: '연결'
+        refresh: '리프레시'
+        disconnect: '연결 해제'
+        disconnectConfirm: '이 연결을 제거하고 십나요? (항상 이메일 %email%을 사용하여 로그인할 수 있습니다.)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: '다단계 인증'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            TOTP 인증 앱(예: {https://authy.com/=Authy})에서 이 QR 코드를 스캔하거나 아래에 텍스트 코드를 입력하세요.
+            그런 다음 생성되는 초기 토큰을 입력합니다.
         recovery:
-            header: 'Recovery code'
+            header: '복구 코드'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
-    removeInactive:
-        email:
-            subject: 'Your pronouns.page account is inactive and will soon be removed'
-            content: >
-                Hi! We're periodically cleaning up our database
-                in order to free up unused usernames.
-                Heads up: it looks like you haven't created any cards and haven't logged in for a while.
-                You can keep your account by creating a card, otherwise it will get removed in a week.
-                If you don't want to keep your account, you don't need to do anything.
-            clarification: >
-                If you're confused by this email cause you have a card already,
-                it's possible that you've simply created two accounts at some point and forgot about one.
-                This email is regarding:
-            cta: 'Create a card'
+                다음 복구 코드를 안전한 장소에 저장하세요.
+                인증 장치를 분실한 경우 이를 사용하여 MFA를 우회할 수 있습니다.
+            saved: 'OK, 내가 구했어!'
+            enter: '복구 코드 입력'
+        cancel: '로그인 취소'
+        enabled: '활성화됨'
+        enable: 'MFA 활성화'
+        disable: 'MFA 비활성화'
+        disableConfirm: 'MFA를 비활성화하시겠습니까?'
     qr:
-        header: 'QR code'
-        download: 'Download QR code'
-    modMessage:
-        subject: 'A message from a moderator'
-        intro: 'Hi! One of our moderators has sent you the following message:'
-        respond: 'If you want to respond, you can simply reply to this email.'
+        header: 'QR 코드'
+        download: 'QR 코드 다운 받기'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: '설명'
+    names: '이름'
+    pronouns: '대명사'
     pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    wordsColumnHeader: 'Column header'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
-    timezone:
-        header: 'Timezone'
-        placeholder: 'Select your timezone'
-        info: >
-            If you fill out this field, your card will tell people <strong>what time it is where you live</strong>.
-            Optionally, you can also chose to publish your approximate location.
-        detect: 'Detect'
-        publishArea: 'Publish the continent in your card'
-        publishLocation: 'Publish the area in your card'
-        time: 'It''s %time% on a %weekday% in my timezone'
-        approximate: 'It''s just an approximate location'
-        areas:
-            Africa: 'Africa'
-            America: 'America'
-            Antarctica: 'Antarctica'
-            Arctic: 'Arctic'
-            Asia: 'Asia'
-            Atlantic: 'Atlantic'
-            Australia: 'Australia'
-            Europe: 'Europe'
-            Indian: 'Indian'
-            Pacific: 'Pacific'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
+        <strong>대명사</strong>를 입력할 수 있습니다(예: '그들' 또는 '그녀')
+        또는 <strong>링크</strong>(예: 'https://en.pronouns.page/e')
+        또는 사용자 정의 5가지 형식(예: "ze/zem/zir/zirs/zirself").
+        이 경우 <strong>다섯 가지 양식</strong>이 모두 필요합니다.
+        그렇지 않으면 앱은 정확히 무엇을 의미하는지 추측만 할 수 있습니다.
+        {/pronouns#generator=<strong>생성기</strong>}를 사용하여 맞춤 양식으로 문장을 채울 수도 있습니다.
+        대명사가 {/pronouns#nameself=<strong>네임드 패턴</strong>}을 따르는 경우,
+        콜론 속기(예: ":star")를 사용할 수도 있습니다.
+    pronounsNotFound: '인식할 수 없는 형식입니다. 위의 지침을 확인하세요.'
+    words: '단어'
+    birthday: '나이'
+    birthdayInfo: '생일은 공개하지 않고 계산된 나이만 공개합니다.'
+    flags: '플래그'
+    flagsInfo: '이 프레임에 프라이드 플래그를 끌어다 놓세요.'
+    flagsCustom: '맞춤 플래그 업로드'
+    flagsCustomWarning: '이 플래그는 사용자가 업로드했습니다. pronouns.page 팀은 이에 대한 책임을 지지 않습니다.'
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
-    links: 'Links'
-    linksRecommended: 'We recommend linking to'
-    verifiedLinks:
-        header: 'Verified links'
-        info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
-    column: 'Column'
-    opinions:
-        header: 'Legend/opinions'
-        description: 'Description…'
-        colours:
-            _: '(Font colour…)'
-            pink: 'Pink'
-            red: 'Red'
-            orange: 'Orange'
-            green: 'Green'
-            blue: 'Blue'
-            grey: 'Grey'
-        styles:
-            _: '(Style…)'
-            bold-italics: 'Bold & italics'
-            bold: 'Bold'
-            italics: 'Italics'
-            small: 'Small'
-        validation:
-            missingIcon: 'Icon is required'
-            missingDescription: 'Description is required'
-            duplicateIcon: 'Icon must be unique'
-            duplicateDescription: 'Description must be unique'
-            invalidOpinion: 'Selected icon was not found in the legend above'
-            kys: 'Our Terms of Service forbid encouraging self-harm and/or suicide.'
-        custom: 'custom, added by the user:'
-    expendableList:
-        more: '… and %count% more items'
-        show: '(click to show)'
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
-    editor:
-        header: 'Card editor'
-        save: 'Save your card'
-        defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
-    opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    banner: >
-        You can also use our website to create a card, {/@example=like this one},
-        containing your names, pronouns, pride flags, liked words, etc.
-        Then you can link to it in your bio or email footer.
-        Just create an account {/account=here}.
-    bannerButton: 'Create a card'
-    card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
-    personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
-    language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
+    links: '링크'
+    linksRecommended: '여기 연결하는 것이 좋습니다.'
+    column: '열'
     circles:
-        header: 'My circle'
+        header: '내 서클'
         info: >
-            In this field you can tag the <strong>people closest to you</strong>, along with information
-            which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
-            We're not a social medium, this is <strong>not a friends/followers list</strong>,
-            that's why the length of this field is pretty limited.
-            Keep in mind that people that you tag here <strong>will be able to see that</strong>
-            – and might report you for harassment, if you decide to put in negative things about them.
-            If a connection in your circle is mutual, it will be marked with [s:shield-check].
-        relationship: 'Relationship (eg. “partner”, “best friend”)'
-        mutual: 'This connection goes both ways'
-        yourMentions:
-            header: 'Your circles mentions'
-            description: >
-                Here's the list of people who added you to their circles.
-                If you add them back, a checkmark [s:shield-check] will appear in both your cards.
+            이 필드에선 <strong>당신과 가장 가까운 사람들</strong>이랑 당신들에 관계를 알려주는 그들이 (비) 성별적인 지칭(예: “배우자” 대 “아내” 대 “남편”)이랑 함께 태그 할 수
+            있습니다. 우리는 소셜 미디엄이 아니며, <strong>이것은 친구/추종자 목록이 아니기 때문에</strong> 이 분야의 길이가 상당히 제한적입니다. <strong>여기서 태그 한 사람들은
+            그것을 볼 수 있읍니다</strong> - 그들에 대해 부정적인 것을 쓰면 괴롭힘으로 보고 할 수 있습니다. 서클에 관계가 상호인 경우 [s:shield-check]로 마크 됩니다.
+        relationship: '관계 (예: “애인”, “단짝 친구”)'
+        mutual: '이 관계는 상호입니다'
         validation:
-            userNotFound: 'Such user doesn''t exist'
-            required: 'Relationship is a required field'
-    sensitive:
-        header: 'Content warning'
-        info: >
-            Some content might be allowed by our {/terms=Terms of Service},
-            but still not be appropriate for minors, be potentially triggering for people with traumas, etc.
-            Please be respectful to people visiting your card and warn them in advance.
-            Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
-        display: 'Continue to the card'
-        hide: 'Blur out the card'
-        email:
-            subject: 'Content warning applied on your profile'
-            content: 'A moderator has applied the following content warnings to your card:'
-
-share: 'Share'
+            userNotFound: '그런 유저는 없읍니다'
+            required: '관계 필드는 필수입니다'
+        yourMentions:
+            header: '당신이 멘션된 서클들'
+            description: '당신을 서클로 추가한 사람들입니다. 만약 당신도 그를 추가하면 두 카드들에 체크마크가 [s:shield-check] 생겨요.'
+    header: '카드'
+    list: '나의 카드'
+    init: '카드 만들기'
+    show: '보기'
+    edit: '편집'
+    delete: '삭제'
+    deleteConfirm: '이 카드를 삭제하고 싶으니까?'
+    editor:
+        header: '카드 편집기'
+        save: '카드 저장'
+        defaults: '기본값으로 복원'
+        propagate: '이 변경 사항을 모든 언어로 카드에 전파하세요.'
+    opinion:
+        yes: '네'
+        jokingly: '농담으로'
+        close: '가까울 때만'
+        meh: 'OK'
+        no: '아니'
+    bannerButton: '카드 만들기'
+    card:
+        link: '카드 사진'
+        generate: '발전하기'
+        generating: '생성 진행 중... 몇 분 정도 걸릴 수 있습니다.'
+    empty: '이 사람은 아직 카드를 만들지 않았습니다.'
+    personal:
+        header: '개인적'
+        description: '이 섹션은 나만 볼 수 있습니다.'
+    language:
+        header: '언어'
+        description: '@%username%''님의 카드는 다음 언어로도 제공됩니다.'
+    wordsColumnHeader: '열 헤더'
+    opinions:
+        header: '범례/의견'
+        description: '설명…'
+        colours:
+            _: '(글꼴 색깔…)'
+            pink: '분홍'
+            red: '빨강'
+            orange: '주황'
+            green: '초록'
+            blue: '파랑'
+            grey: '회색'
+        styles:
+            _: '(스타일…)'
+            bold: '볼드체'
+            italics: '이탤릭체'
+            small: '작은체'
+        validation:
+            missingIcon: '아이콘이 필요합니다'
+            missingDescription: '설명글이 필요합니다'
+            duplicateIcon: '아이콘은 독특해야합니다'
+            duplicateDescription: '설명글은 독특해야합니다'
+            invalidOpinion: '선택된 아이콘은 위 범례에서 발견되지 않았습니다'
+        custom: '커스텀, 유저가 추가함:'
+    timezone:
+        header: '시간대'
+        placeholder: '시간대를 선택하세요'
+        info: '이 필드를 작성하면 사람들이 카드에서 <strong>당신이 사는 곳에서 지금 몇 시인 줄</strong> 볼 수 있습니다. 선택적으로, 대략적인 위치도 게시하기로 선택할 수 있습니다.'
+        detect: '찾기'
+        publishArea: '카드에 대륙을 게시하기'
+        publishLocation: '카드에 영역을 게시하기'
+        time: '내 시간대에선 현재 %weekday% %time%(이)야'
+        approximate: '단지 대략적인 위치 일뿐입니다'
+        areas:
+            Africa: '아프리카'
+            America: '미국'
+            Antarctica: '남극'
+            Arctic: '북극'
+            Asia: '아시아'
+            Atlantic: '대서양'
+            Australia: '호주'
+            Europe: '유럽'
+            Indian: '인도'
+            Pacific: '태평양'
+share: '공유'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Search…'
-    filterLong: 'Search…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
-    loadAll: 'Load all…'
+    approve: '승인하기'
+    hide: '숨기'
+    remove: '제거하기'
+    removeConfirm: '이 항목을 제거합니까?'
+    edit: '편집하기'
+    add: '추가하기'
+    filter: '필터'
+    filterLong: '목록 필터링…'
+    search: '검색중…'
+    author: '추가한 사람'
+    saved: '저장 성공!'
+    loginRequired: '{/account=로그인}하고 항목 제출하세요'
+    copy: '링크 복사'
+    download: '다운로드'
+    loadAll: '모두 보기…'
     validation:
-        genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
-        listMaxLength: 'The maximum number of elements in this list is %maxlength% (more info {/blog/length-validation=in this blog post}).'
+        genericForm: '제출된 양식은 유효하지 않습니다. 문제를 수정해 다시 보내세요.'
+        listMaxLength: '이 목록의 최대 요소 수는 %maxlength%입니다.'
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact & social media'
-    legal: 'Legal'
-    financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+        {https://gitlab.com/Avris/Zaimki=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
+    links: '연락처, SNS'
+    legal: '합법'
+    financial: '재무 투명성'
+    technical: '전문'
+    sibling: '형제 프로젝트'
     stats:
-        header: 'Stats'
-        overall: 'all language versions'
-        current: 'only this version'
+        header: '통계'
+        overall: '모든 언어 버전'
+        current: '이 버전만'
         keys:
-            users: 'Registered users'
-            cards: 'Cards'
-            visitors: 'Unique visitors'
-            pageviews: 'Page views'
-            realTimeVisitors: 'Currently online'
-            visitDuration: 'Avg visit duration'
-            uptime: 'Uptime'
-            responseTime: 'Avg response time'
-        month: 'month'
+            cards: '카드들'
+            users: '등록 된 유저들'
+            visitors: '독특한 방문자들'
+            pageviews: '페이지 뷰'
+            realTimeVisitors: '지금 온라인'
+            visitDuration: '평균 방문 기간'
+            uptime: '가동 시간'
+            responseTime: '평균 응답 시간'
+        month: '월'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: '페이지를 찾을 수 없습니다'
+    back: '홈페이지로 돌아가기'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: '이 사이트를 보려면 로그인해야 합니다'
+    go: '로그인 폼으로 이동'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
-    ok: 'OK'
+    header: '확실합니까?'
+    yes: '예, 확신합니다'
+    no: '아니요, 취소해요'
+    ok: '네'
     save: 'Save'
     dismiss: 'Dismiss'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: '서비스 약관'
+    lastUpdate: '마지막 업데이트'
+    consent: '등록하면 {/terms=서비스 약관}에 동의하는 것입니다.'
+    #you can either leave the terms untranslated, or translate it and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
     content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page</strong> and related subdomains and domains,
-            operated by the “Neutral Language Council” collective
-            and Nero Network (NL, KVK 88409120)
-            who can be contacted via email:
+            이 서비스 약관은 웹 사이트에서 제공되는 서비스에 대한 액세스 및 사용에 적용됩니다.
+            <strong>pronouns.page</strong> "중립 언어 위원회" 집단에서 운영
+            & Nero Network (NL, KVK 88409120)
+             이메일로 연락하기:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
+            서비스를 사용함으로써 귀하는 본 서비스 약관에 동의하고 동의합니다.
+            아래 개인정보 보호정책에 설명된 대로 귀하의 데이터를 수집하고 처리합니다.
         accounts:
-            header: 'Users and accounts'
+            header: '사용자 및 계정'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                관할 법률에 따라 계정이 금지된 경우 계정을 만들 수 없습니다.
+                13세 미만인 경우 계정을 만들 수 없습니다.
+                만 16세 미만인 경우 친권자의 동의가 필요합니다.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                귀하가 당사에 계정을 생성할 때 인증 방법을 보호할 책임이 있습니다 (즉: 귀하의 이메일 계정 및/또는 소셜 미디어 플랫폼의 비밀번호).
+                 귀하는 이를 제3자에게 공개하지 않을 것에 동의합니다.
+                 보안 위반 또는 계정의 무단 사용을 알게 된 경우 즉시 당사에 알려야 합니다.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                당사는 사전 통지나 책임 없이 귀하의 계정을 즉시 종료하거나 정지할 수 있습니다.
+                귀하가 약관을 위반하는 경우를 포함하되 이에 국한되지 않는 이유를 불문합니다.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                카드가 없고 지난 30일 동안 활동이 없는 계정이 제거되고 사용자 이름이 해제됩니다.
         content:
-            header: 'Content'
+            header: '콘텐츠'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                귀하가 서비스에 게시하는 콘텐츠는 귀하의 것입니다.
+                이를 게시하면 전 세계적으로 로열티 프리 라이선스를 부여하게 됩니다.
+                어떤 방식으로든 그러한 콘텐츠를 사용, 복사, 재생산, 처리, 각색, 수정, 게시, 전송, 표시 및 배포합니다.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                우리는 서비스의 다른 사용자가 게시한 콘텐츠의 진실성 또는 안전성을 보증하거나 보증하지 않습니다.
+                특히 외부 웹사이트에 대한 모든 링크.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                법을 위반하거나 사회 규범을 위반할 수 있는 콘텐츠를 서비스에 게시하는 것은 금지되어 있습니다.
+                다음을 포함하지만 이에 국한되지 않습니다.
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
+                totalitarian: '전체주의 정권의 전파'
+                hateSpeech: '연설 증오'
+                racism: '민족적 우월감'
+                xenophobia: '외국 혐오증'
+                homophobia: '동성애 혐오증'
+                transphobia: '트랜스포비아'
+                enbyphobia: '비공포증'
                 queerphobia: 'queerphobia'
                 exclusionism: 'queer exclusionism'
                 sexism: 'sexism'
                 misogyny: 'misogyny'
                 harassment: 'harassment'
                 impersonation: 'impersonation'
-                selfHarm: 'encouraging self-harm and/or suicide'
+                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
-                pedophilia: 'broadly understood pedophilia advocacy'
                 unlawfulConduct: 'unlawful conduct'
                 misinformation: 'misinformation'
                 doxxing: 'sharing of someone else''s personal data'
@@ -1038,7 +802,7 @@ terms:
                 trolling: 'trolling'
                 advertisement: 'advertisement'
                 copyright: 'copyright or trademark violations'
-                miscellaneous: 'miscellaneous'
+            # TODO
             violationsStrict: >
                 We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
                 (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
@@ -1054,18 +818,11 @@ terms:
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
     update:
-        header: 'We''ve updated our Terms of Service.'
-        intro: >
-            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on Jan 1st, 2023:
-        changes:
-            - >
-                The existing policy of banning profiles that advocate for pedophilia
-                (for example with so called “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=MAP}” flags),
-                which have been considered to fall under “Content that might break the law or violate social norms”,
-                will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
+        header: '이용약관을 업데이트했습니다.'
+        intro: '안녕하세요! 2023년 1월 1일부터 다음 같은  {https://en.pronouns.page/terms=Terms of Service}에 변경사항이 적용될 것을 알립니다'
 
 privacy:
-    header: 'Privacy Policy'
+    header: '개인 정보 정책'
     content:
         intro: >
             This Privacy Policy describes how the Service provided on the website
@@ -1080,7 +837,7 @@ privacy:
         data: >
             Other than the data that you explicitly post on the Service as Content
             or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-            no additional private data connected to your account is being stored or processed by the Service.
+            no additional private data connected to your account is being stored or processed.
         editRemoval: >
             You may edit or remove any Content you have posted on the Service.
         contact: >
@@ -1088,67 +845,43 @@ privacy:
         cookies: >
             We only use first-party cookies and local storage to keep you logged in and save your preferences.
         plausible: >
-            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+            We use Plausible to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
+            You can read their privacy policy {https://plausible.io/privacy=here}.
         arc: >
-            We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
+            We use arc.io to cover the costs of website maintenance without introducing ads.
             You can read more about them and their privacy policy
-            {https://arc.io/faq=<strong>here</strong>}.
+            {https://arc.io/faq=here}.
         hCaptcha: >
-            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
+            We use hCaptcha to filter out bots and prevent DDoS attacks.
             You can read their privacy policy
-            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
-        adsense: >
-            In order to fund the project we show ads using third party vendors, including <strong>Google</strong>,
-            whose ads policy is available {https://support.google.com/adwordspolicy/answer/1316548=here}.
-            Google uses cookies that enable it to serve ads to our users based on previous visits to our site and other sites.
-            You may opt out of personalised advertising by not giving your consent when prompted,
-            by revoking your consent using a button below, or by visiting {https://adssettings.google.com/=Ads Settings}.
+            {https://www.hcaptcha.com/privacy=here}.
         logsBackups: >
             Logs and backups are stored for no longer than 18 months.
         gdpr: >
             Your personal data are protected by the GDPR, which means you have the right
             to see, correct, update and remove the data we store about you.
-    consent:
-        header: 'Cookie consent'
-        required:
-            header: 'Required cookies'
-            description: >
-                We use cookies and local storage to save your preferences (eg. dark mode)
-                and we use privacy-friendly third-party tools (hCaptcha, Plausible) that might store their own cookies.
-            details: 'You can read more in our {/privacy=Privacy Policy}.'
-        optional:
-            header: 'Optional cookies'
-            description: >
-                We show ads to fund the project {/why-ads=(more details here)}.
-                You can agree for related third-parties to store information about you
-                for the purposes of gathering statistics and personalising ads.
-            details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'
-        accept: 'Accept'
-        reject: 'Reject'
-        revoke: 'Revoke personalised ads consent'
 
 admin:
-    header: 'Admin panel'
+    header: '관리자 패널'
     user:
-        user: 'User'
+        user: '유저'
         createdAt: 'Registration date'
-        email: 'Email'
-        roles: 'Permissions'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        email: '이메일'
+        roles: '권한'
+        profiles: '프로필'
+        confirmRole: '@%username%의 역할을 "%role%"(으)로 전환하시겠습니까?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: '비음…'
+    count: '세움'
+    sort: '드래그하여 정렬'
+    scrollUp: '맨 위로 스크롤'
+    more: '자세히보기'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: '공개 API'
+    example: '예시'
+    query: '쿼리 문자열 매개변수'
 
 quotation:
     start: '“'
@@ -1156,39 +889,39 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: '더 추가하기'
+    short: '언어 버전 추가'
+    long: '새 언어 버전을 만들고 싶으십니까?'
+    longLink: '이 설명서를 확인하세요!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: '여기를 클릭하거나 사진을 여기로 드래그하세요.'
+        instructionShort: '업로드'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: '문제가 발생했습니다. 다시 시도하세요…'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: '스팸 및 DDoS 공격을 완화하는 봇이 아님을 증명하세요.'
+    invalid: '잘못된 CAPTCHA, 다시 시도하세요'
 
 mode:
-    light: 'Light mode'
-    automatic: 'Automatic'
-    dark: 'Dark mode'
-    reducedColours: 'Reduced colours'
+    light: '라이트 모드'
+    automatic: '자동적 인'
+    dark: '다크 모드'
+    reducedColours: '감소된 색깔'
 
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    confirmUnban: 'Are you sure you want to remove ban (proposals) of @%username%? Keep in mind that it''s probably worth discussing such cases on Teams'
-    header: 'Your profile is no longer public.'
-    banned: 'Profile not published'
-    termsIntro: 'According to our {/terms=Terms of Service}'
+    reason: '금지 사유'
+    visible: '(이것은 사용자에게 표시됩니다)'
+    terms: '약관 규칙 위반(필수)'
+    action: '차단하기'
+    confirm: '@%username%을(를) 차단하시겠습니까?'
+    header: '프로필은 누구에게도 표시되지 않습니다.'
+    banned: '프로필은 누구에게도 표시되지 않습니다.'
+    termsIntro: '{/terms=서비스 약관}에 따르면:'
+    # TODO
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
@@ -1199,407 +932,236 @@ ban:
         please respond to this email and we might get another look in a bigger group.
 
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
+    action: '남용 신고'
+    comment: '이 프로필의 문제점을 간략하게 설명해주세요.'
+    confirm: '@%username%을(를) 신고하시겠습니까?'
+    sent: '보고서가 전송되었습니다. 도움을 주셔서 감사합니다!'
     terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
     hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
 
 translationMode:
-    header: 'Translation Mode'
-    action: 'Propose translations'
+    header: '번역 모드'
+    action: '번역 제안하기'
     welcome: >
-        Is there a translation missing or an existing one needs a correction?
-        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
-        In this mode clicking on a bordered piece of text will open a dialogue box,
-        in which you can modify the translation and compare it to the English text.
-        Remember to click on the button “Commit changes” once you're done.
-    logIn: 'You need to be logged in to propose translations'
-    changes: 'Changes'
-    commit: 'Commit changes'
-    revert: 'Revert changes'
-    pause: 'Pause Translation Mode'
+        번역이 없거나 수정이 필요합니까? 오른쪽 하단의 파란색 버튼을 클릭하면 번역 모드를 키고 끌 수 있습니다. 이 모드에서는 테두리가 된 텍스트를 클릭하고 대화 상자가 열리면 번역을 수정해 영어 텍스트와
+        비교할 수 있습니다. 완료되면 "변화를 저지르기"버튼을 클릭하는 걸 까먹지 마세요.
+    logIn: '번역을 제안하려면 로그인이 되어야 합니다'
+    changes: '변화됨'
+    commit: '변화를 저지르기'
+    revert: '변화를 되돌리기'
+    pause: '번역 모드 중지하기'
 
 flags:
-    Abroromantic: 'Abroromantic'
+    Abroromantic: 'Abrorrománti{inflection_c}'
     Abrosexual: 'Abrosexual'
-    Achillean: 'Achillean'
-    Alloromantic_Asexual: 'Alloromantic Asexual'
-    Agender: 'Agender'
-    Ambiamorous: 'Ambiamorous'
-    Anarcha-Queer: 'Anarcha-Queer'
-    Androgyne: 'Androgyne'
+    Achillean: 'Aquilean{inflection}'
+    Alloromantic_Asexual: 'Alorrománti{inflection_c} asexual'
+    Agender: 'Agénero'
+    Ambiamorous: 'Ambiamoros{inflection}'
+    Anarcha-Queer: 'Anarco-queer'
+    Androgyne: 'Andrógin{inflection}'
     Androsexual: 'Androsexual'
-    Aporagender: 'Aporagender'
-    Archaeopronouns: 'Archaeopronouns'
-    Aroace: 'Aroace'
-    Aromantic: 'Aromantic'
-    Aromantic_Allosexual: 'Aromantic Allosexual'
+    Aporagender: 'Aporagénero'
+    Archaeopronouns: 'Arqueopronombres'
+    Aroace: 'Arro-as'
+    Aromantic: 'Arrománti{inflection_c}'
+    Aromantic_Allosexual: 'Arrománti{inflection_c} alosexual'
     Asexual: 'Asexual'
-    Autigender: 'Autigender'
-    Bear: 'Bear'
-    Bicurious: 'Bicurious'
-    Bigender: 'Bigender'
-    Biromantic: 'Biromantic'
+    Autigender: 'Autisgénero'
+    Bear: 'Oso'
+    Bicurious: 'Bicurios{inflection}'
+    Bigender: 'Bigénero'
+    Biromantic: 'Birrománti{inflection_c}'
     Bisexual: 'Bisexual'
     Butch: 'Butch'
-    Ceteroromantic: 'Ceteroromantic'
+    Ceteroromantic: 'Ceterorrománti{inflection_c}'
     Ceterosexual: 'Ceterosexual'
-    Cis_Ally: 'Cis Ally'
-    Demiboy: 'Demiboy'
-    Demigender: 'Demigender'
-    Demigirl: 'Demigirl'
-    Demiromantic: 'Demiromantic'
+    Cis_Ally: 'Aliad{inflection} cis'
+    Demiboy: 'Demichico'
+    Demigender: 'Demigénero'
+    Demigirl: 'Demichica'
+    Demiromantic: 'Demirrománti{inflection_c}'
     Demisexual: 'Demisexual'
-    Diamoric: 'Diamoric'
-    Enbian: 'Enbian'
+    Diamoric: 'Diamóri{inflection_c}'
+    Enbian: 'Nobian{inflection}'
     Fa*afafine: 'Fa''afafine'
-    Femme: 'Femme'
+    Femme: 'Afeminad{inflection}'
     Gay: 'Gay'
-    Gender_Questioning: 'Gender Questioning'
-    Genderfae: 'Genderfae'
-    Genderfaun: 'Genderfaun'
-    Genderfluid: 'Genderfluid'
-    Genderflux: 'Genderflux'
-    Genderqueer: 'Genderqueer'
-    Greyasexual: 'Greyasexual'
-    Greyaromantic: 'Greyaromantic'
-    Gynesexual: 'Gynesexual'
+    Gender_Questioning: 'Cuestionándose el género'
+    Genderfae: 'Hadagénero'
+    Genderfaun: 'Faunogénero'
+    Genderfluid: 'Género fluido'
+    Genderflux: 'Flujogénero'
+    Genderqueer: 'Género queer'
+    Greyasexual: 'Grisexual'
+    Greyaromantic: 'Grisrrománti{inflection_c}'
+    Gynesexual: 'Ginosexual'
     Heteroflexible: 'Heteroflexible'
-    Heteroromantic: 'Heteroromantic'
+    Heteroromantic: 'Heterorrománti{inflection_c}'
     Heterosexual: 'Heterosexual'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexible'
-    Homoromantic: 'Homoromantic'
-    Intersex: 'Intersex'
+    Homoromantic: 'Homorrománti{inflection_c}'
+    Intersex: 'Intersexual'
     LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Leather Pride'
-    Lesbian: 'Lesbian'
-    Lesbiromantic: 'Lesbiromantic'
+    Leather_Pride: 'Orgullo de cuero'
+    Lesbian: 'Lesbiana'
+    Lesbiromantic: 'Lesbirrománti{inflection_c}'
     Maverique: 'Maverique'
-    Monoamorous: 'Monoamorous'
-    Monogamous: 'Monogamous'
+    Monoamorous: 'Monoamoros{inflection}'
+    Monogamous: 'Monógam{inflection}'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebularomantic'
-    Neopronouns: 'Neopronouns'
-    Neutrois: 'Neutrois'
-    Nonbinary: 'Nonbinary'
+    Nebularomantic: 'Nebulosarrománti{inflection_c}'
+    Neopronouns: 'Neopronombres'
+    Neutrois: 'Neutrés'
+    Nonbinary: 'No binari{inflection}'
     Omnisexual: 'Omnisexual'
-    Omniromantic: 'Omniromantic'
-    Oriented_Aroace: 'Oriented Aroace'
-    Pangender: 'Pangender'
-    Panromantic: 'Panromantic'
+    Omniromantic: 'Omnirrománti{inflection_c}'
+    Oriented_Aroace: 'Arro-as orientad{inflection}'
+    Pangender: 'Pangénero'
+    Panromantic: 'Panrrománti{inflection_c}'
     Pansexual: 'Pansexual'
-    Polyamorous: 'Polyamorous'
-    Polyromantic: 'Polyromantic'
-    Polysexual: 'Polysexual'
-    Pomoromantic: 'Pomoromantic'
+    Polyamorous: 'Poliamoros{inflection}'
+    Polyromantic: 'Polirrománti{inflection_c}'
+    Polysexual: 'Polisexual'
+    Pomoromantic: 'Pomorrománti{inflection_c}'
     Pomosexual: 'Pomosexual'
-    Progress_Pride: 'Progress Pride'
-    Queer: 'Queer'
-    Queerian: 'Queerian'
-    Queerplatonic: 'Queerplatonic'
-    Quoiromantic: 'Quoiromantic'
-    Sapphic: 'Sapphic'
-    Sexuality_Questioning: 'Sexuality Questioning'
-    Straight_Ally: 'Straight Ally'
-    Toric: 'Toric'
-    Transfeminine: 'Transfeminine'
-    Transgender: 'Transgender'
-    Transmasculine: 'Transmasculine'
-    Transneutral: 'Transneutral'
-    Trigender: 'Trigender'
-    Trixic: 'Trixic'
-    Two_Spirit: 'Two Spirit'
-    Xenogender: 'Xenogender'
-
-flags_alt:
-    -de-Gay: ''
-    -Drag: ''
-    -en-Genderdoe: ''
-    -pl-Dukaizmy: ''
-    -pl-Gay: ''
-    -pl-Rodzaj_neutralny: ''
-    -pl-Rodzaj_nijaki: ''
-    _black-ribbon: ''
-    _Butch: ''
-    _hrc: ''
-    _law: ''
-    _mspec_lesbians: ''
-    _red-ribbon: ''
-    _sex-work: ''
-    _Unlabelled: ''
-    _yellow-ribbon: ''
-    _zaimki: ''
-    Abroromantic: ''
-    Abrosexual: ''
-    Achillean: ''
-    Agender: ''
-    Alloromantic_Asexual: ''
-    Ambiamorous: ''
-    Ambiamorous_: ''
-    Anarcha-Queer: ''
-    Androgyne: ''
-    Androsexual: ''
-    Aporagender: ''
-    Archaeopronouns: ''
-    Aroace: ''
-    Aromantic: ''
-    Aromantic_Allosexual: ''
-    Asexual: ''
-    Autigender: ''
-    Bear: ''
-    Bicurious: ''
-    Bigender: ''
-    Bigender_: ''
-    Biromantic: ''
-    Bisexual: ''
-    Butch: ''
-    Ceteroromantic: ''
-    Ceterosexual: ''
-    Cis_Ally: ''
-    Demiboy: ''
-    Demigender: ''
-    Demigirl: ''
-    Demiromantic: ''
-    Demisexual: ''
-    Diamoric: ''
-    Enbian: ''
-    Fa*afafine: ''
-    Femme: ''
-    Gay: 'Rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    Gay_: ''
-    Gender_Questioning: ''
-    Genderfae: ''
-    Genderfaun: ''
-    Genderfluid: ''
-    Genderflux: ''
-    Genderqueer: ''
-    Greyaromantic: ''
-    Greyasexual: ''
-    Gynesexual: ''
-    Heteroflexible: ''
-    Heteroromantic: ''
-    Heterosexual: ''
-    Hijra: ''
-    Homoflexible: ''
-    Homoromantic: ''
-    Intersex: ''
-    Leather_Pride: ''
-    Lesbian: ''
-    Lesbian_: ''
-    Lesbian__: ''
-    Lesbian___: ''
-    Lesbiromantic: ''
-    LGBTQ: 'Rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): white, pink, light blue, brown, black'
-    Maverique: ''
-    Monoamorous: ''
-    Monogamous: ''
-    Muxe: ''
-    Nebularomantic: ''
-    Neopronouns: ''
-    Neopronouns_: ''
-    Neutrois: ''
-    Nonbinary: 'Rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black'
-    Omniromantic: ''
-    Omnisexual: ''
-    Oriented_Aroace: ''
-    Pangender: ''
-    Panromantic: ''
-    Pansexual: ''
-    Polyamorous: ''
-    Polyamorous_: ''
-    Polyamorous__: ''
-    Polyamorous___: ''
-    Polyromantic: ''
-    Polysexual: ''
-    Pomoromantic: ''
-    Pomosexual: ''
-    Progress_Pride: 'Rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): white, pink, light blue, brown, black'
-    Progress_Pride_: 'Rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): yellow with a purple circle, white, pink, light blue, brown, black'
-    Queer: 'Rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): white, pink, light blue, brown, black'
-    Queer_: 'Rectangular flag with ivory white background and two downwards-pointing chevrons: light pink and washed-out purple'
-    Queerian: ''
-    Queerplatonic: ''
-    Quoiromantic: ''
-    Sapphic: ''
-    Sapphic_: ''
-    Sexuality_Questioning: ''
-    Straight_Ally: ''
-    Toric: ''
-    Transfeminine: ''
-    Transgender: ''
-    Transmasculine: ''
-    Transneutral: ''
-    Trigender: ''
-    Trixic: ''
-    Two_Spirit: ''
-    Two_Spirit_: ''
-    Xenogender: ''
+    Progress_Pride: 'Orgullo progresivo'
+    Queer: 'Queer (cuir)'
+    Queerian: 'Queerian{inflection}'
+    Queerplatonic: 'Queerplatóni{inflection_c}'
+    Quoiromantic: 'Querrománti{inflection_c}'
+    Sapphic: 'Sáfi{inflection_c}'
+    Sexuality_Questioning: 'Cuestionándose la sexualidad'
+    Straight_Ally: 'Aliad{inflection} hetero'
+    Toric: 'Tóri{inflection_c}'
+    Transfeminine: 'Transfemenin{inflection}'
+    Transgender: 'Transgénero'
+    Transmasculine: 'Transmasculin{inflection}'
+    Transneutral: 'Transneutr{inflection}'
+    Trigender: 'Trigénero'
+    Trixic: 'Tríci{inflection_c}'
+    Two_Spirit: 'Dos espíritus'
+    Xenogender: 'Xenogénero'
 
 calendar:
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
-    date: '%date%, %year%'
+    header: '달력'
+    headerLong: '퀴어 캘린더'
+    date: '%date% %year%'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
-        4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
-        9: 'September'
-        10: 'October'
-        11: 'November'
-        12: 'December'
+        1: '1 월'
+        2: '2 월'
+        3: '3 월'
+        4: '4 월'
+        5: '5 월'
+        6: '6 월'
+        7: '7 월'
+        8: '8 월'
+        9: '9 월'
+        10: '10 월'
+        11: '11 월'
+        12: '12 월'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: '1월 %일%'
+        2: '2월 %일%'
+        3: '3월 %일%'
+        4: '4월 %일%'
+        5: '5월 %일%'
+        6: '6월 %일%'
+        7: '7월 %일%'
+        8: '8월 %일%'
+        9: '9월 %일%'
+        10: '10월 %일%'
+        11: '11월 %일%'
+        12: '12월 %일%'
     events:
-        pride_month: '{/terminology#pride=Pride} Month'
-        trans_month: 'International {/terminology#transgender=Trans Awareness} Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: '{/terminology#agender=Agender} Pride Day	'
-        asexuality_day: 'International {/terminology#asexual=Asexuality} Day'
-        bisexuality_day: 'Celebrate {/terminology#bisexual=Bisexuality} Day'
-        drag_day: '{/terminology#drag=Drag} Day'
-        idahobit: 'International Day Against {/terminology#homophobia=Homophobia}, {/terminology#transphobia=Transphobia} and {/terminology#biphobia=Biphobia}'
-        intersex_day: '{/terminology#intersex=Intersex} Awareness Day'
-        intersex_remembrance_day: '{/terminology#intersex=Intersex} Day of Remembrance'
-        lesbian_day: 'International {/terminology#lesbian=Lesbian} Day'
-        lesbian_visibility_day: 'International {/terminology#lesbian=Lesbian} Visibility Day'
-        coming_out_day: '{/terminology#coming%20out=Coming Out} Day'
-        nonbinary_day: 'International {/terminology#nonbinary=Nonbinary People''s} Day'
-        pan_day: '{/terminology#pansexual=Pansexual} & {/terminology#panromantic=Panromantic} Awareness Day'
-        trans_remembrance_day: '{/terminology#transgender=Transgender} Day of Remembrance'
-        trans_visibility_day: 'International {/terminology#transgender=Trans} Day of Visibility'
-        zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: '{/terminology#aromantic%20spectrum=Aromantic Spectrum} Awareness Week'
-        arospec_week___timeDescription: 'in the full week starting on a Sunday following Valentine''s Day'
-        asexual_week: '{/terminology#asexual=Asexual} Awareness Week'
-        asexual_week___timeDescription: 'in the last full week of October (starting on Sunday)'
-        bisexual_week: '{/terminology#bisexual=Bisexual} Awareness Week'
-        pronouns_day: 'Pronouns Day'
-        pronouns_day___timeDescription: 'on the 3rd Wednesday of October'
-        trans_week: '{/terminology#transgender=Trans} Awareness Week'
-        trans_parent_day: '{/terminology#transgender=Trans} Parent Day'
-        trans_parent_day___timeDescription: 'on the first Sunday of November'
-        nonbinary_week: '{/terminology#nonbinary=Nonbinary} Awareness Week'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: '{/terminology#polyamory=Polyamory} Day'
-        homophobia_sport: 'International Day Against {/terminology#homophobia=Homophobia} in Sports'
-        gay_uncles_day: '{/terminology#gay=Gay} Uncles Day'
-        gay_uncles_day___timeDescription: 'on the second Sunday in August'
-        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Day}'
-        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=International Day of Action for Trans Depathologization}'
-        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=International LGBTI Book Day}'
-        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=Human Rights Day}'
-        nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Parents'' Day'
-        trans_prisoner: '{/terminology#transgender=Trans} Prisoner Day of Action and Solidarity'
-        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Visibility Day'
-        genderqueer_day: '{/terminology#genderqueer=Genderqueer} Visibility Day'
-        genderfluid_day: '{/terminology#genderfluid=Genderfluid} Visibility Day'
-        aids_day: 'World AIDS Day'
-        tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'World Day of Social Justice'
-        stonewall_day: 'Anniversary of Stonewall Riots'
-        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: '{/terminology#polysexual=Polysexual} & {/terminology#polyromantic=Polyromantic} Visibility Day'
-        orlando_day: 'Pulse Night of Remembrance'
-        aids_memorial: 'International AIDS Candlelight Memorial'
-        aids_memorial___timeDescription: 'on the third Sunday of May'
-        health_week: 'LGBT Health Awareness Week'
-        health_week___timeDescription: 'from Monday to Friday in the last week of March'
-        lesbian_visibility_week: '{/terminology#lesbian=Lesbian} Visibility Week'
-        demigender_day: '{/terminology#demigender=Demigender} Awareness Day'
-        pan_pride_day: '{/terminology#pansexual=Pansexual} Pride Day'
-        transmasculine_day: 'Day of {/terminology#transmasculine=Transmasculine} Struggle and Resistance'
-        asexual_visibility_day: '{/terminology#asexual=Asexual} Visibility Day'
-        bi_health_month: '{/terminology#bisexual=Bisexual} Health Awareness Month'
-        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
-        family_equality_day: 'International Family Equality Day'
-        family_equality_day___timeDescription: 'on the first Sunday of May'
-        aro_month: '{/terminology#aromantic=Aromantic} Awareness Month'
-        black_ribbon_day: '{https://en.wikipedia.org/wiki/Black_Ribbon_Day=Black Ribbon Day}'
-        black_queer_week: 'Black {/terminology#queer=Queer} History Week'
-        black_queer_week___timeDescription: 'in the third week of February'
-        mena_lesbian_day: '{https://www.ankhfrance.org/sarahhegazy=West Asian and North African} {/terminology#lesbian=Lesbian} and {/terminology#queer=Queer} Women''s Pride Day'
-        hate_crime_awareness_week: 'Hate Crime Awareness Week'
-        hate_crime_awareness_week___timeDescription: 'from the second to the third Saturday of October (inclusive both Saturdays)'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'World Suicide Prevention Day'
-        suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Awareness Week'
+        pride_month: '{/terminology#pride=프라이드} 월'
+        trans_month: '국제 {/terminology#transgender=트랜스젠더 인식} 달'
+        zaimki_birthday: 'Pronouns.page의 생일'
+        agender_day: '{/terminology#agender=에이젠더} 프라이드 날'
+        asexuality_day: '국제 {/terminology#asexual=무성애} 날'
+        bisexuality_day: '{/terminology#bisexual=양성애} 날을 기념하세요!'
+        drag_day: '{/terminology#drag=드래그} 날'
+        idahobit: '국제 {/terminology#homophobia=호모포비아} 반대 날, {/terminology#transphobia=트랜스포비아} 와 {/terminology#biphobia=바이포비아}'
+        intersex_day: '{/terminology#intersex=인터섹스} 인식 날'
+        intersex_remembrance_day: '{/terminology#intersex=인터섹스} 추모 날'
+        lesbian_day: '국제 {/terminology#lesbian=레즈비언} 날'
+        lesbian_visibility_day: '국제 {/terminology#lesbian=레즈비언} 가시성 날'
+        coming_out_day: '{/terminology#coming%20out=커밍아웃} 날'
+        nonbinary_day: '국제 {/terminology#nonbinary=논바이너리} 날'
+        pan_day: '{/terminology#pansexual=팬섹슈얼} & {/terminology#panromantic=판로맨틱} 인식 날'
+        trans_remembrance_day: '{/terminology#transgender=트랜스젠더} 현충일'
+        trans_visibility_day: '국제 {/terminology#transgender=트랜스} 가시 날'
+        zero_discrimination_day: '차별 없는 날'
+        arospec_week: '{/terminology#aromantic%20spectrum=아로마틱 스펙트럼} 인식 주간'
+        asexual_week: '{/terminology#asexual=무성애자} 인식 주간'
+        bisexual_week: '{/terminology#bisexual=양성애자} 인식 주간'
+        pronouns_day: '대명사 날'
+        trans_week: '{/terminology#transgender=트랜스} 인식 주간'
+        trans_parent_day: '{/terminology#transgender=트랜스} 부모의 날'
+        nonbinary_week: '{/terminology#nonbinary=논바이너리} 인식 주간'
+        nonbinary_week___timeDescription: '7월 14일 전후의 주(월~일)'
+        polyamory_day: '{/terminology#polyamory=폴리아모리} 날'
+        homophobia_sport: '국제 스포츠 {/terminology#homophobia=호모포비아} 반대 날'
+        gay_uncles_day: '{/terminology#gay=게이} 삼촌의 날'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM 날}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=트랜스 병리학을 위한 국제 행동의 날}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=국제 LGBTI 책의 날}'
+        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=인권의 날}'
+        nonbinary_parents_day: '{/terminology#nonbinary=논바이너리} 어버이날'
+        trans_prisoner: '{/terminology#transgender=트랜스젠더} 죄수 행동과 연대의 날'
+        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=제노젠더} 가시의 날'
+        genderqueer_day: '{/terminology#genderqueer=젠더퀴어} 가시의 날'
+        genderfluid_day: '{/terminology#genderfluid=젠더플루이드} 가시의 날'
+        aids_day: '세계 에이즈의 날'
+        tolerance_day: '국제 관용의 날'
+        social_justice_day: '세계 사회 정의의 날'
+        stonewall_day: '스톤월 폭동 기념일'
+        domestic_violence: 'LGBTQ 가정 폭력 인식의 날'
+        polysexual_day: '{/terminology#polysexual=다성애자} & {/terminology#polyromantic=폴리로만티} 가시의 날'
+        orlando_day: '펄스 추모의 밤'
+        aids_memorial: '국제 에이즈 촛불 기념관'
+        health_week: 'LGBT 건강 인식 주간'
+        lesbian_visibility_week: '{/terminology#lesbian=레즈비언} 가시성 주간'
+        demigender_day: '{/terminology#demigender=데미젠더} 인식의 날'
+        pan_pride_day: '{/terminology#pansexual=팬섹슈얼} 프라이드 날'
+        transmasculine_day: '{/terminology#transmasculine=트랜스남성} 인민의 날'
+        asexual_visibility_day: '{/terminology#asexual=무성} 가시의 날'
+        bi_health_month: '{/terminology#bisexual=양성애자} 건강 인식의 달'
+        holocaust_remembrance_day: '국제 홀로코스트 현충일'
+        family_equality_day: '국제 가족 평등의 날'
+        aro_month: '{/terminology#aromantic=아로마틱} 인식의 달'
+        black_ribbon_day: '블랙 리본 데이'
+        black_queer_week: '흑인 {/terminology#queer=퀴어} 역사 주간'
+        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=중동 및 북아프리카} {/terminology#lesbian=레즈비언} & {/terminology#queer=퀴어} 여성의 프라이드 데이'
+        hate_crime_awareness_week: '증오 범죄 인식 주간'
+        deaf_awareness_week: '청각 장애인 LGBTQ 인식 주간'
+        suicide_prevention_day: '세계 자살 예방의 날'
+        suicide_prevention_month: '자살 예방의 달'
+        aids_awareness_month: '에이즈 인식의 달'
+        genderfluid_week: '{/terminology#genderfluid=젠더플루이드} 인식 주간'
         pan_week: '{https://posi-pan.tumblr.com/panweek=Pan Week}'
         parents_day: 'Gender Expansive Parents'' Day'
-        parents_day___timeDescription: 'on the first Sunday of December'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
-        world_sexual_health_day: 'World Sexual Health Day'
-        aids_vaccine_day: 'World AIDS Vaccine Day'
-        queer_youth_day: '{/terminology#queer=Queer} Youth Day'
-        omnisexual_day: '{/terminology#omnisexual=Omnisexual} Visibility Day'
-        unlabeled_day: '{https://unlabeledidentity.carrd.co/=Unlabelled Visibility Day}'
-        trans_youth_day: '{https://elmarplatense.com/2021/05/14/se-conmemoro-el-primer-dia-de-la-visibilidad-de-las-nineces-y-adolescencias-trans-en-general-pueyrredon/=Trans Children and Youth Visibility Day}'
-        hiv_long_term_survivors_day: '{https://www.hiv.gov/events/awareness-days/hiv-long-term-survivors-day=HIV Long-Term Survivors Awareness Day}'
-        women_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nwghaad.html=Women and Girls HIV/AIDS Awareness Day}'
-        youth_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nyhaad.html=Youth HIV/AIDS Awareness Day}'
-        gay_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/ngmhaad.html=Gay Men''s HIV/AIDS Awareness Day}'
-        black_hiv_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nbhaad.html=Black HIV/AIDS Awareness Day}'
-        hiv_aging_awareness_day: '{https://www.cdc.gov/hiv/library/awareness/nhaad.html=HIV/AIDS and Aging Awareness Day}'
-        trans_hiv_testing_day: '{https://www.cdc.gov/hiv/library/awareness/nthtd.html=Transgender HIV Testing Day}'
-        mspec_lesbian_day: '{https://twitter.com/MspecLesbianss=Mspec Lesbian Visibility & Awareness Day}'
-        mspec_lesbian_week: '{https://twitter.com/MspecLesbianss=Mspec Lesbian Visibility & Awareness Week}'
-        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'
-        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'
-        spring_testing_week: 'Spring European HIV Testing Week'
-        autumn_testing_week: 'Autumn European HIV Testing Week'
-        sex_worker_day: '{https://www.nswp.org/event/international-sex-workers-day-0=International Sex Worker Day}'
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day'
-        sex_worker_pride: '{https://www.nswp.org/event/sex-worker-pride=Sex Worker Pride}'
-        sex_worker_rights_day: '{https://www.nswp.org/event/international-sex-workers-rights-day=International Sex Workers'' Rights Day}'
-        sex_worker_violence_day: '{https://www.nswp.org/event/international-day-end-violence-against-sex-workers-6=International Day to End Violence Against Sex Workers}'
-        omnisexual_omniromantic_day: '{/terminology#omnisexual=Omnisexual} and {/terminology#omniromantic=Omniromantic} Pride and Visibility Day'
-        omnisexual_awareness_day: '{/terminology#omnisexual=Omnisexual} Awareness Day'
-        hiv_is_not_a_crime: '{https://www.hivisnotacrime-etaf.org/=HIV Is Not a Crime Awareness Day}'
-        trans_flag_day: '{https://twitter.com/hrc/status/1296122309036650497=Trans Flag Day}'
-        alan_turing_day: 'Alan Turing Day'
-        nonbinary_kids_day: '{/terminology#nonbinary=Nonbinary} Kids'' Day'
-        masc_lesbian_week: '{https://twitter.com/MascLesWeek=Masculine Lesbian Visibility and Awareness Week}'
-        masc_lesbian_day: '{https://twitter.com/MascLesWeek=Masculine Lesbian Visibility and Awareness Day}'
-        trans_history_month: '{/terminology#transgender=Transgender} History Month'
-        transition_week: '{/terminology#transition=Transition} Week'
-        bi_creators_day: '{/terminology#bisexual=Bisexual} Creators Day'
-        wrath_month: 'Queer Wrath Month'
-        lesbian_aunts_day: '{/terminology#lesbian=Lesbian} Aunts Day'
-    banner: 'We''re celebrating/commemorating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+        mspec_lesbian_day: '엠스펙 (Mspec) 레즈비언 가시성 및 인식의 날'
+        mspec_lesbian_week: '엠스펙 (Mspec) 레즈비언 가시성 및 인식의 주'
+        mspec_gay_day: '엠스펙 (Mspec) 게이 가시성 및 인식의 날'
+        mspec_gay_week: '엠스펙 (Mspec) 게이 가시성 및 인식의 주'
+        masc_lesbian_day: '마스쿨린 레즈비언 가시성 및 인식의 날'
+        masc_lesbian_week: '마스쿨린 레즈비언 가시성 및 인식의 주'
+    banner: '축하해요!'
+    celebrating_custom: '축하합니다'
+    celebrating_day: '축하하는 날'
+    celebrating_week: '축하하는 주'
+    celebrating_month: '축하하는 달'
     image:
-        header: 'Download an image'
-    view:
-        grid: 'Grid view'
-        list: 'Events list'
-    link: 'Link'
-    full: 'Full calendar'
+        header: '이미지 다운로드'
+        overview: '개요'
+        labels: '라벨'
+    link: '링크'
+    full: '전체 캘린더'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org=Here''s how you can support them.}'
+    header: '우린 우크라이나와 함께합니다.'
+    link: '{https://supportukrainenow.org/translate-and-share-this/local-versions/kr=당신이 도울 수 있는 방법.}'
