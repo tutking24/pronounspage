@@ -6,7 +6,7 @@ home:
     link: '홈페이지'
     header: '대명사'
     headerLong: '대명사 목록'
-    welcome: 'pronouns.page로 환영합니다!'
+    welcome: 'pronouns.page 로 환영합니다!'
     intro: >
         We're creating a source of information about nonbinary and gender neutral language.
     why: '대명사는 왜 그렇게 중요한가요?'
