@@ -12,13 +12,15 @@
             inverse: { type: Boolean }
         },
         data() {
-            let values = Array.isArray(this.v) ? this.v : [this.v];
-            values = values.filter(x => !!x);
+            return this.buildQueue(this.v);
+        },
+        watch: {
+            v(v) {
+                const {value, fallback} = this.buildQueue(v);
 
-            return {
-                value: values.shift(),
-                fallbacks: values,
-            };
+                this.value = value;
+                this.fallback = fallback;
+            },
         },
         computed: {
             valueParts() {
@@ -44,6 +46,19 @@
             },
         },
         methods: {
+            buildQueue(v) {
+                let values = Array.isArray(v) ? v : [v];
+                values = values.filter(x => !!x);
+
+                if (!values.length) {
+                    values = ['spacer'];
+                }
+
+                return {
+                    value: values.shift(),
+                    fallbacks: values,
+                };
+            },
             fallBack() {
                 if (!this.fallbacks.length) { return; }
 
