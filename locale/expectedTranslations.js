@@ -107,4 +107,5 @@ module.exports = [
     'profile.sensitive.hide',
     'profile.sensitive.email.subject',
     'profile.sensitive.email.content',
+    'crud.validation.invalidLink',
 ];

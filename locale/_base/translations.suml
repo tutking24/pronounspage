@@ -787,6 +787,7 @@ crud:
     validation:
         genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
         listMaxLength: 'The maximum number of elements in this list is %maxlength%.'
+        invalidLink: 'Invalid URL format'
 
 footer:
     license: >

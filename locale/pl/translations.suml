@@ -1563,6 +1563,7 @@ crud:
     validation:
         genericForm: 'Wysłany formularz jest niepoprawny. Napraw błędy i spróbuj ponownie.'
         listMaxLength: 'Maksymalna liczba elementów na tej liście to %maxlength%.'
+        invalidLink: 'Niepoprawny format URL'
 
 footer:
     license: >

@@ -226,6 +226,15 @@ const fetchCircles = async(db, profileId, userId) => {
     return Object.values(circle);
 }
 
+const isValidLink = (url) => {
+    try {
+        url = new URL(url);
+        return ['http:', 'https:', 'mailto:'].includes(url.protocol);
+    } catch {
+        return false;
+    }
+}
+
 const router = Router();
 
 router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
@@ -369,7 +378,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const pronouns = req.body.pronouns.map(p => { return {...p, value: p.value.substring(0, 192)}});
     const description = req.body.description.substring(0, 256);
     const birthday = cleanupBirthday(req.body.birthday || null);
-    const links = req.body.links.filter(x => !!x);
+    const links = req.body.links.filter(x => !!x && isValidLink(x));
     const words = req.body.words.map(c => { return {...c, values: c.values.map(p => { return {...p, value: p.value.substring(0, 32)}})}});
     const sensitive = req.body.sensitive.filter(x => !!x).map(x => x.substring(0, 64));
     const timezone = req.body.timezone ? {
