@@ -94,6 +94,7 @@
                     icon: 'id-card',
                     endpoints: {
                         profile_get: ['GET', '/api/profile/get/{username}?version=2', undefined, ['Note that the <code>birthday</code> field will only be available when querying your own account; otherwise only the calucaled <code>age</code> might be available (if the person has filled out their birthday)']],
+                        profile_get_by_id: ['GET', '/api/profile/get-id/{id}?version=2', undefined, ['Note that the <code>birthday</code> field will only be available when querying your own account; otherwise only the calucaled <code>age</code> might be available (if the person has filled out their birthday)']],
                     },
                 }, {
                     enabled: this.config.calendar.enabled,

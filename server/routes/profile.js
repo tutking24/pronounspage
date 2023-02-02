@@ -237,9 +237,36 @@ const isValidLink = (url) => {
 
 const router = Router();
 
-router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
+const fetchProfilesRoute = async (req, res, user) => {
     const isSelf = req.user && req.user.username === req.params.username;
     const isAdmin = req.isGranted('users');
+
+    if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
+        return res.json({
+            profiles: {},
+        });
+    }
+
+    user.emailHash = md5(user.email);
+    delete user.email;
+    user.avatar = await avatar(req.db, user);
+
+    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
+
+    let profiles = await fetchProfiles(req.db, user.username, isSelf);
+    if (req.query.version !== '2') {
+        for (let [locale, profile] of Object.entries(profiles)) {
+            profiles[locale] = downgradeToV1(profile);
+        }
+    }
+
+    return res.json({
+        ...user,
+        profiles,
+    });
+}
+
+router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     const user = await req.db.get(SQL`
         SELECT
             users.id,
@@ -254,29 +281,25 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
         WHERE users.usernameNorm = ${normalise(req.params.username)}
     `);
 
-    if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
-        return res.json({
-            profiles: {},
-        });
-    }
+    return await fetchProfilesRoute(req, res, user);
+}));
 
-    user.emailHash = md5(user.email);
-    delete user.email;
-    user.avatar = await avatar(req.db, user);
+router.get('/profile/get-id/:id', handleErrorAsync(async (req, res) => {
+    const user = await req.db.get(SQL`
+        SELECT
+            users.id,
+            users.username,
+            users.email,
+            users.avatarSource,
+            users.bannedReason,
+            users.bannedTerms,
+            users.bannedBy,
+            users.roles != '' AS team
+        FROM users
+        WHERE users.id = ${req.params.id}
+    `);
 
-    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
-
-    let profiles = await fetchProfiles(req.db, req.params.username, isSelf);
-    if (req.query.version !== '2') {
-        for (let [locale, profile] of Object.entries(profiles)) {
-            profiles[locale] = downgradeToV1(profile);
-        }
-    }
-
-    return res.json({
-        ...user,
-        profiles,
-    });
+    return await fetchProfilesRoute(req, res, user);
 }));
 
 router.get('/profile/versions/:username', handleErrorAsync(async (req, res) => {
