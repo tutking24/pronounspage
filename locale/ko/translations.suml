@@ -731,7 +731,7 @@ confirm:
     yes: '예, 확신합니다'
     no: '아니요, 취소해요'
     ok: '네'
-    save: '변경 사항을'
+    save: '변경사항 저장 을'
     dismiss: '변경사항 제거'
 
 terms:
