@@ -1,8 +1,8 @@
 singular	plural	isHonorific
 Myślę, że {pronoun_n} jest bardzo mił{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	FALSE
 Tęsknię za {pronoun_possessive} śmiechem.		FALSE
-Chciał{verb_end_inter}bym {pronoun_g} posłuchać.		FALSE
-Chciał{verb_end_inter}bym posłuchać właśnie {pronoun_g_acc}.		FALSE
+Chciał{verb_end_inter}bym {pronoun_g} posłuchać.	Chci{verb_middle_inter}śmy {pronoun_g} posłuchać.	FALSE
+Chciał{verb_end_inter}bym posłuchać właśnie {pronoun_g_acc}.	Chci{verb_middle_inter}śmy posłuchać właśnie {pronoun_g_acc}.	FALSE
 Napiszę do {pronoun_g_prep} później.		FALSE
 Powiedział{verb_middle_inter}m {pronoun_d}, że {pronoun_a} lubię.	Powiedzi{verb_middle_inter}śmy {pronoun_d}, że {pronoun_a} lubimy.	FALSE
 Powiedział{verb_middle_inter}m to właśnie {pronoun_d_acc}.	Powiedzi{verb_middle_inter}śmy to właśnie {pronoun_d_acc}.	FALSE
