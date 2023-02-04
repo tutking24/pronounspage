@@ -21,7 +21,7 @@
                         <li><nuxt-link :to="`/${config.census.route}/admin`">{{countResponses.awaiting}} <T>census.repliesAwaiting</T></nuxt-link></li>
                     </ul>
                     <hr/>
-                    <ChartSet v-for="(editionGraph, edition) in countResponses.graphs"
+                    <ChartSet v-for="(editionGraph, edition) in countResponses.graphs" :key="edition"
                               :header="edition" :name="`useful responses (${edition})`" :data="editionGraph"
                               class="mb-3"
                     />
