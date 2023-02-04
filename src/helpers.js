@@ -300,3 +300,13 @@ export const findAdmins = async (db, locale, area) => {
     const admins = await db.all(`SELECT username, email, roles, adminNotifications FROM users WHERE roles != ''`);
     return admins.filter(admin => isGranted(admin, locale, area));
 };
+
+export const isValidLink = (url) => {
+    try {
+        url = new URL(url);
+        return ['http:', 'https:', 'mailto:'].includes(url.protocol);
+    } catch {
+        return false;
+    }
+}
+

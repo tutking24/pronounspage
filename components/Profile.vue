@@ -41,19 +41,24 @@
                 <ClientOnly>
                 <ul class="list-inline">
                     <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
-                        <Flag :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
-                              :alt="$t('flags_alt.' + flag.replace(/'/g, '*').replace(/ /g, '_')) || allFlags[flag]"
+                        <Flag :termkey="allFlags[flag]"
+                              :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
+                              :alt="$t('flags_alt.' + flag.replace(/'/g, '*').replace(/ /g, '_'))"
                               :img="`/flags/${flag}.png`"
                               :terms="terms || []"
                               :asterisk="flagsAsterisk.includes(flag)"
                         />
                     </li>
-                    <li v-for="{value: flag, name} in profile.customFlags" class="list-inline-item p-1">
-                        <Flag :name="name"
-                              :alt="name"
+                    <li v-for="{value: flag, name, description, alt, link} in profile.customFlags" class="list-inline-item p-1">
+                        <Flag :termkey="name"
+                              :name="name"
+                              :alt="alt || ''"
                               :img="buildImageUrl(flag, 'flag')"
                               :terms="terms|| []"
-                              custom/>
+                              custom
+                              :description="description"
+                              :customlink="link"
+                        />
                     </li>
                 </ul>
                 </ClientOnly>

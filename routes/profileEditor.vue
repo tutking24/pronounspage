@@ -158,7 +158,7 @@
                             <T>profile.flagsCustom</T>
                         </summary>
                         <div class="border-top">
-                            <ImageWidgetRich v-model="customFlags" sizes="flag" :maxitems="128"/>
+                            <CustomFlagsWidget v-model="customFlags" sizes="flag" :maxitems="128"/>
                         </div>
                     </details>
                     <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
@@ -286,7 +286,7 @@
 </template>
 
 <script>
-    import {head, buildList, buildDict} from "../src/helpers";
+    import {head, buildList, buildDict, isValidLink} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
@@ -419,6 +419,7 @@
                 propagate: [],
                 flagsAsterisk: process.env.FLAGS_ASTERISK,
                 defaultOpinions: opinionsToForm(opinions),
+                isValidLink,
             };
         },
         async asyncData({ app, store }) {
@@ -515,14 +516,6 @@
                 this.propagate = this.propagate.filter(f => f !== field);
                 if (checked) {
                     this.propagate.push(field);
-                }
-            },
-            isValidLink(url) {
-                try {
-                    url = new URL(url);
-                    return ['http:', 'https:', 'mailto:'].includes(url.protocol);
-                } catch {
-                    return false;
                 }
             },
         },
