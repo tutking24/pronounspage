@@ -731,8 +731,8 @@ confirm:
     yes: '예, 확신합니다'
     no: '아니요, 취소해요'
     ok: '네'
-    save: 'Save'
-    dismiss: 'Dismiss'
+    save: '변경사항 저장 을'
+    dismiss: '변경사항 제거'
 
 terms:
     header: '서비스 약관'
@@ -790,17 +790,17 @@ terms:
                 queerphobia: 'queerphobia'
                 exclusionism: 'queer exclusionism'
                 sexism: 'sexism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
+                misogyny: '여성 혐오'
+                harassment: '괴롭힘'
+                impersonation: '사칭'
                 selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
                 unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
+                misinformation: '오보'
                 doxxing: 'sharing of someone else''s personal data'
-                spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
+                spam: '스팸'
+                trolling: '트롤링'
+                advertisement: '광고'
                 copyright: 'copyright or trademark violations'
             # TODO
             violationsStrict: >
