@@ -158,7 +158,7 @@
                             <T>profile.flagsCustom</T>
                         </summary>
                         <div class="border-top">
-                            <ImageWidgetRich v-model="customFlags" sizes="flag" :maxitems="128"/>
+                            <CustomFlagsWidget v-model="customFlags" sizes="flag" :maxitems="128"/>
                         </div>
                     </details>
                     <PropagateCheckbox field="customFlags" :before="beforeChanges.customFlags" :after="customFlags" v-if="otherProfiles > 0" @change="propagateChanged"/>
@@ -170,8 +170,16 @@
                     <T>profile.links</T>
                 </template>
                 <template v-slot:links>
-                    <ListInput v-model="links" v-slot="s" :maxitems="128">
-                        <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
+                    <ListInput v-model="links" :maxitems="128">
+                        <template v-slot="s">
+                            <input v-model="s.val" type="url" class="form-control" @keyup="s.update(s.val)" @paste="$nextTick(() => s.update(s.val))" @change="s.update(s.val)" required/>
+                        </template>
+                        <template v-slot:validation="s">
+                            <p v-if="s.val && !isValidLink(s.val)" class="small text-danger">
+                                <Icon v="exclamation-triangle"/>
+                                <span class="ml-1">{{$t('crud.validation.invalidLink')}}</span>
+                            </p>
+                        </template>
                     </ListInput>
                     <PropagateCheckbox field="links" :before="beforeChanges.links" :after="links" v-if="otherProfiles > 0" @change="propagateChanged"/>
                     <p class="small text-muted mb-0">
@@ -278,7 +286,7 @@
 </template>
 
 <script>
-    import {head, buildList, buildDict} from "../src/helpers";
+    import {head, buildList, buildDict, isValidLink} from "../src/helpers";
     import { pronouns } from "~/src/data";
     import { buildPronoun } from "../src/buildPronoun";
     import config from '../data/config.suml';
@@ -411,6 +419,7 @@
                 propagate: [],
                 flagsAsterisk: process.env.FLAGS_ASTERISK,
                 defaultOpinions: opinionsToForm(opinions),
+                isValidLink,
             };
         },
         async asyncData({ app, store }) {

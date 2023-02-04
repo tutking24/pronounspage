@@ -1371,6 +1371,12 @@ profile:
     flagsCustom: 'Dodaj inne flagi'
     flagsCustomWarning: 'Ta flaga została wgrana przez osobę użytkującą. Ekipa zaimki.pl nie jest za nią odpowiedzialna.'
     flagsAsterisk: 'To nie jest queerowa tożsamość, ale uwględniamy ją tutaj przez wzgląd na osoby, które są queerowe na inne sposoby (np. hetero osoby trans).'
+    flagsCustomForm:
+        label: 'Nazwa etykietki'
+        description: '(nieobowiązkowe) Krótki opis etykietki'
+        link: '(nieobowiązkowe) Link do strony z informacjami o etykietce'
+        alt: '(nieobowiązkowe) Opis obrazka dla czytników ekranowych'
+        altExample: 'Przykładowy opis obrazka dla czytników ekranowych'
     links: 'Linki'
     linksRecommended: 'Polecamy dodać link do'
     verifiedLinks:
@@ -1563,6 +1569,8 @@ crud:
     validation:
         genericForm: 'Wysłany formularz jest niepoprawny. Napraw błędy i spróbuj ponownie.'
         listMaxLength: 'Maksymalna liczba elementów na tej liście to %maxlength%.'
+        invalidLink: 'Niepoprawny format URL'
+    alt: 'Opis obrazka'
 
 footer:
     license: >

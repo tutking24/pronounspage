@@ -107,4 +107,11 @@ module.exports = [
     'profile.sensitive.hide',
     'profile.sensitive.email.subject',
     'profile.sensitive.email.content',
+    'crud.validation.invalidLink',
+    'profile.flagsCustomForm.label',
+    'profile.flagsCustomForm.description',
+    'profile.flagsCustomForm.link',
+    'profile.flagsCustomForm.alt',
+    'profile.flagsCustomForm.altExample',
+    'crud.alt',
 ];

@@ -219,7 +219,7 @@ export default {
         LOCALE: config.locale,
         LOCALES: locales,
         FLAGS: buildFlags(),
-        FLAGS_ASTERISK: ['Heteroromantic', 'Heterosexual', 'Monoamorous', 'Monogamous'],
+        FLAGS_ASTERISK: ['Heteroromantic', 'Heterosexual', 'Monoamorous', 'Monogamous', 'Cis Ally', 'Straight Ally'],
         BUCKET: `https://${process.env.AWS_S3_BUCKET}.s3-${process.env.AWS_REGION}.amazonaws.com`,
         CLOUDFRONT: process.env.CLOUDFRONT,
         STATS_FILE: process.env.STATS_FILE,

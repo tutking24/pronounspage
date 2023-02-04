@@ -3,7 +3,7 @@ import SQL from 'sql-template-strings';
 import md5 from "js-md5";
 import {ulid} from "ulid";
 import avatar from "../avatar";
-import {handleErrorAsync, now} from "../../src/helpers";
+import {handleErrorAsync, now, isValidLink} from "../../src/helpers";
 import { caches }  from "../../src/cache";
 import fs from 'fs';
 import { minBirthdate, maxBirthdate, formatDate, parseDate } from '../../src/birthdate';
@@ -228,9 +228,36 @@ const fetchCircles = async(db, profileId, userId) => {
 
 const router = Router();
 
-router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
+const fetchProfilesRoute = async (req, res, user) => {
     const isSelf = req.user && req.user.username === req.params.username;
     const isAdmin = req.isGranted('users');
+
+    if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
+        return res.json({
+            profiles: {},
+        });
+    }
+
+    user.emailHash = md5(user.email);
+    delete user.email;
+    user.avatar = await avatar(req.db, user);
+
+    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
+
+    let profiles = await fetchProfiles(req.db, user.username, isSelf);
+    if (req.query.version !== '2') {
+        for (let [locale, profile] of Object.entries(profiles)) {
+            profiles[locale] = downgradeToV1(profile);
+        }
+    }
+
+    return res.json({
+        ...user,
+        profiles,
+    });
+}
+
+router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
     const user = await req.db.get(SQL`
         SELECT
             users.id,
@@ -245,29 +272,25 @@ router.get('/profile/get/:username', handleErrorAsync(async (req, res) => {
         WHERE users.usernameNorm = ${normalise(req.params.username)}
     `);
 
-    if (!user || (user.bannedReason !== null && !isAdmin && !isSelf)) {
-        return res.json({
-            profiles: {},
-        });
-    }
+    return await fetchProfilesRoute(req, res, user);
+}));
 
-    user.emailHash = md5(user.email);
-    delete user.email;
-    user.avatar = await avatar(req.db, user);
+router.get('/profile/get-id/:id', handleErrorAsync(async (req, res) => {
+    const user = await req.db.get(SQL`
+        SELECT
+            users.id,
+            users.username,
+            users.email,
+            users.avatarSource,
+            users.bannedReason,
+            users.bannedTerms,
+            users.bannedBy,
+            users.roles != '' AS team
+        FROM users
+        WHERE users.id = ${req.params.id}
+    `);
 
-    user.bannedTerms = user.bannedTerms ? user.bannedTerms.split(',') : [];
-
-    let profiles = await fetchProfiles(req.db, req.params.username, isSelf);
-    if (req.query.version !== '2') {
-        for (let [locale, profile] of Object.entries(profiles)) {
-            profiles[locale] = downgradeToV1(profile);
-        }
-    }
-
-    return res.json({
-        ...user,
-        profiles,
-    });
+    return await fetchProfilesRoute(req, res, user);
 }));
 
 router.get('/profile/versions/:username', handleErrorAsync(async (req, res) => {
@@ -369,7 +392,16 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     const pronouns = req.body.pronouns.map(p => { return {...p, value: p.value.substring(0, 192)}});
     const description = req.body.description.substring(0, 256);
     const birthday = cleanupBirthday(req.body.birthday || null);
-    const links = req.body.links.filter(x => !!x);
+    const links = req.body.links.filter(x => !!x && isValidLink(x));
+    const customFlags = req.body.customFlags.filter(x => x.name && (!x.link || isValidLink(x.link))).map(x => {
+        return {
+            value: x.value,
+            name: x.name.substring(0, 24),
+            description: x.description ? x.description.substring(0, 512) : null,
+            alt: x.alt ? x.alt.substring(0, 512) : null,
+            link: x.link ? normaliseUrl(x.link) : null,
+        }
+    });
     const words = req.body.words.map(c => { return {...c, values: c.values.map(p => { return {...p, value: p.value.substring(0, 32)}})}});
     const sensitive = req.body.sensitive.filter(x => !!x).map(x => x.substring(0, 64));
     const timezone = req.body.timezone ? {
@@ -393,7 +425,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                 timezone = ${JSON.stringify(timezone)},
                 links = ${JSON.stringify(links)},
                 flags = ${JSON.stringify(req.body.flags)},
-                customFlags = ${JSON.stringify(req.body.customFlags)},
+                customFlags = ${JSON.stringify(customFlags)},
                 words = ${JSON.stringify(words)},
                 sensitive = ${JSON.stringify(sensitive)},
                 teamName = ${req.isGranted() ? req.body.teamName || null : ''},
@@ -418,7 +450,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
                     ${JSON.stringify(timezone)},
                     ${JSON.stringify(links)},
                     ${JSON.stringify(req.body.flags)},
-                    ${JSON.stringify(req.body.customFlags)},
+                    ${JSON.stringify(customFlags)},
                     ${JSON.stringify(words)},
                     ${JSON.stringify(sensitive)},
                     1,

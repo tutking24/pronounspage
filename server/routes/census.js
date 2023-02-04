@@ -60,6 +60,13 @@ const isTroll = (answers, writins) => {
     return false; // no free-text provided
 }
 
+const boolToInt = (value) => {
+    if (value === null) { return null; }
+    if (value === true) { return 1; }
+    if (value === false) { return 0; }
+    throw `Invalid value ${value}`
+}
+
 const router = Router();
 
 router.get('/census/finished', handleErrorAsync(async (req, res) => {
@@ -80,8 +87,8 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
         ${req.body.answers},
         ${req.body.writins},
         ${await hasFinished(req)},
-        ${isRelevant(answers) ? 1 : 0},
-        ${isTroll(answers, writins) ? 1 : 0}
+        ${boolToInt(isRelevant(answers))},
+        ${boolToInt(isTroll(answers, writins))}
     )`);
 
     return res.json(id);

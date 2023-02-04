@@ -6,7 +6,7 @@ home:
     link: '홈페이지'
     header: '대명사'
     headerLong: '대명사 목록'
-    welcome: 'pronouns.page로 환영합니다!'
+    welcome: 'pronouns.page 로 환영합니다!'
     intro: >
         We're creating a source of information about nonbinary and gender neutral language.
     why: '대명사는 왜 그렇게 중요한가요?'
@@ -731,8 +731,8 @@ confirm:
     yes: '예, 확신합니다'
     no: '아니요, 취소해요'
     ok: '네'
-    save: 'Save'
-    dismiss: 'Dismiss'
+    save: '변경사항 저장 을'
+    dismiss: '변경사항 제거'
 
 terms:
     header: '서비스 약관'
@@ -790,17 +790,17 @@ terms:
                 queerphobia: 'queerphobia'
                 exclusionism: 'queer exclusionism'
                 sexism: 'sexism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
+                misogyny: '여성 혐오'
+                harassment: '괴롭힘'
+                impersonation: '사칭'
                 selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
                 unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
+                misinformation: '오보'
                 doxxing: 'sharing of someone else''s personal data'
-                spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
+                spam: '스팸'
+                trolling: '트롤링'
+                advertisement: '광고'
                 copyright: 'copyright or trademark violations'
             # TODO
             violationsStrict: >
@@ -908,7 +908,7 @@ captcha:
 
 mode:
     light: '라이트 모드'
-    automatic: 'Automatic'
+    automatic: '자동적 인'
     dark: '다크 모드'
     reducedColours: '감소된 색깔'
 

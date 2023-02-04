@@ -1876,7 +1876,7 @@ census:
                 - ['liczba mnoga, rodzaj męskoosobowy', '„byliśmy zmęczeni”']
                 - ['liczba mnoga, rodzaj niemęskoosobowy', '„byłyśmy zmęczone”']
                 - ['liczba mnoga, rodzaj neutralny', '„byłośmy zmęczone”']
-                - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczone”']
+                - ['liczba mnoga, rodzaj postpłciowy', '„byłuśmy zmęczony”']
                 - ['unikanie form nacechowanych płciowo', '„dopadło mnie zmęczenie”']
             aggregates:
                 binarne:

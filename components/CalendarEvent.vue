@@ -1,7 +1,7 @@
 <template>
     <span>
         <span v-if="range" class="badge bg-primary">{{ event.getRange(year) }}</span>
-        <Flag v-if="event.flag" name="" :alt="$t('flags_alt.' + event.flag.replace(/'/g, '*').replace(/ /g, '_')) || ''" :img="`/flags/${event.flag}.png`"/>
+        <Flag v-if="event.flag" termkey="" name="" :alt="$t('flags_alt.' + event.flag.replace(/'/g, '*').replace(/ /g, '_')) || ''" :img="`/flags/${event.flag}.png`"/>
         <Icon v-else v="arrow-circle-right"/>
         <T v-if="$te(`calendar.events.${eventName}`)" :params="{param: eventParam}">calendar.events.{{eventName}}</T>
         <LinkedText v-else :text="eventName"/>
