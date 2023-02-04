@@ -484,7 +484,7 @@ support:
     description: >
         서버, 도메인, 스티커 등을 추가하는걸 구입하려는 경우,
         아래 링크를 사용할 수 있습니다.
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: '은행 송금'
 
 user:
     header: '계정'
@@ -493,7 +493,7 @@ user:
     login:
         help: '로그인하거나 계정을 만들려면 소셜 미디어 버튼을 사용하거나 아래 필드에 이메일을 입력한 다음 우편함으로 받을 코드를 확인하세요.'
         placeholder: '이메일(또는 이미 등록된 사용자 이름)'
-        action: '로그인' # TODO: 'Log in / register'
+        action: '로그인' # TODO: '로그인 또는 등록'
         emailSent: '6자리 코드가 포함된 이메일을 보내드렸습니다. 여기에 입력하세요. 코드는 일회용이며 15분 동안 유효합니다.'
         userNotFound: '사용자를 찾을 수 없습니다.'
         email:
