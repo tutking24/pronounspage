@@ -13,6 +13,7 @@ module.exports = [
     ['pt', 'Português',           'https://pt.pronouns.page', true],
     ['ro', 'Română',              'https://ro.pronouns.page', true],
     ['sv', 'Svenska',             'https://sv.pronouns.page', true],
+    ['tr', 'Türkçe',              'https://tr.pronouns.page', false],
     ['ru', 'Русский',             'https://ru.pronouns.page', true],
     ['ua', 'Українська',          'https://ua.pronouns.page', true],
     ['ja', '日本語',               'https://ja.pronouns.page', true],
