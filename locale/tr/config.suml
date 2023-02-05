@@ -4,25 +4,25 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'pronouns'
+    route: 'zamirler'
     default: 'he'
-    any: 'any'
+    any: 'heehangi zamir'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Interchangeable forms'
+        name: 'Değiştirilebilir formlar'
         description: >
-            Many nonbinary people use more than one form interchangeably
-            and are fine with being called either of them.
-            Some like when others alternate between those forms when talking about them.
+            İkili olmayan birçok kişi, birbirinin yerine birden fazla form kullanır,
+            ve bunlardan herhangi biri olarak adlandırılmaktan rahatsız olmazlar.
+            Bazıları, diğerleri hakkında konuşurken bu formlar arasında gidip gelmeyi sever.
         examples: ['he&she', 'he&they', 'she&they']
     null:
         description: >
             {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
             {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
         history: >
-            Some people prefer not using any pronouns, instead being referred by name, initial,
-            omitting pronouns with passive voice, or restructuring the sentence.
+            Bazı insanlar zamir kullanmamayı tercih eder, bunun yerine adı, baş harfi,
+            Edilgen sesle zamirleri atlamak veya cümleyi yeniden yapılandırmayı tercih ederler.
             See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
             {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
         morphemes:
@@ -32,11 +32,11 @@ pronouns:
             possessive_pronoun: '#''s'
             reflexive: '#self'
         examples: [':Andrea', ':S']
-        template: 'Open one of the examples and simply replace the name/initial in the URL with your own.'
-        routes: ['avoiding']
+        template: 'Örneklerden birini açın ve URL''deki adı/baş harfini kendinizinkiyle değiştirin.'
+        routes: ['kaçınmak', 'zamir-yok', 'null', 'zamirsiz', 'boş zamir', 'nameself']
         ideas:
             -
-                header: 'Use names or initials instead of pronouns'
+                header: 'Zamirler yerine isim ya da baş harf kullanmak'
                 normative: true
                 examples:
                     - ['I talked to him yesterday', 'I talked to {/:Sky=Sky} yesterday']
@@ -45,7 +45,7 @@ pronouns:
                         - 'Her graduation starts soon'
                         - '{/:J=J}''s graduation starts soon'
             -
-                header: 'Passive voice'
+                header: 'Pasif ses'
                 normative: true
                 examples:
                     - ['He answered the phone', 'The phone was answered']
@@ -53,27 +53,27 @@ pronouns:
                         - 'Wen takes good care of her cat'
                         - 'Wen''s cat is well cared for'
             -
-                header: 'Rephrasing the sentence (circumlocution)'
+                header: 'Cümleyi yeniden ifade etme (dolaylı konuşma)'
                 normative: true
                 examples:
                     - ['Lior did it all by himself', 'Lior did it all without any help']
                     - ['Gael talks in his sleep', 'Gael talks while sleeping']
             -
-                header: 'Replacing a pronoun with a descriptive noun or phrase'
+                header: 'Bir zamirin tanımlayıcı bir isim veya ifade ile değiştirilmesi'
                 normative: true
                 examples:
                     - ['She landed the plane safely', 'The pilot landed the plane safely']
                     - ['This is Lea, she is into painting', 'This is Lea. My friend is into painting']
                     - ['She argues that…', 'The person who started this discussion argues that…']
             -
-                header: 'Dropping pronouns'
+                header: 'Zamirleri düşürme'
                 normative: true
                 examples:
                     - ['Did you buy Tex her gift?', 'Did you buy Tex a gift?']
                     - ['Yes, I bought it for her. I will give it to her tomorrow.', 'Yes, I bought it. I will give it tomorrow.']
     emoji:
-        description: 'Emojiself pronouns'
-        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} pronouns are intended for online communication and not supposed to be pronounced.'
+        description: 'Emojiself zamirleri'
+        history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} online olarak kullanılır ve tellaffuz edilmezler.'
         morphemes:
             pronoun_subject: '#'
             pronoun_object: '#'
@@ -81,18 +81,9 @@ pronouns:
             possessive_pronoun: '#''s'
             reflexive: '#self'
         examples: ['💫', '💙']
-        template: 'Open one of the examples and simply replace the emoji in the URL with your own.'
-    mirror:
-        route: 'mirror'
-        name: 'Mirror pronouns / Mirrorpronominal'
-        description: >
-            A person who uses mirror pronouns wants to be referred to with the same pronouns as the person talking.
-        example:
-            - 'Person A uses mirror pronouns.'
-            - 'Person B uses {/she=she/her}, so when she talks about person A, she uses “she/her” to refer to her.'
-            - 'Person C uses {/ze=ze/hir} interchangeably with {/fae=fæ/fær}, so when ze talks about person A, fea uses either ze/hir or fæ/fær to refer to fær.'
+        template: 'Örneklerden birini açın ve URL''deki emojiyi kendi emojinizle değiştirin..'
     slashes: true
-    others: 'Other pronouns'
+    others: 'Diğer zamirler'
 
 pronunciation:
     enabled: true
@@ -104,14 +95,14 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'kaynaklar'
     submit: true
     mergePronouns: {}
-    extraTypes: ['avoiding', 'nounself']
+    extraTypes: ['kaçınmak', 'nounself']
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'sözlük'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -120,7 +111,7 @@ nouns:
     templates: true
 
 community:
-    route: 'terminology'
+    route: 'terminoloji'
 
 inclusive:
     enabled: false
@@ -129,18 +120,18 @@ terminology:
     enabled: true
     published: true
     categories:
-        - 'sexual orientation'
-        - 'romantic orientation'
-        - 'tertiary orientation'
-        - 'gender'
-        - 'gender expression'
-        - 'relationship model'
-        - 'language'
-        - 'attraction'
-        - 'politics'
-        - 'prejudice'
+        - 'cinsel yönelim'
+        - 'romantik yönelim'
+        - 'üçüncül yönelim'
+        - 'cinsiyet'
+        - 'cinsiyet ifadesi'
+        - 'ilişki modeli'
+        - 'dil'
+        - 'çekim'
+        - 'politika'
+        - 'ön yargı'
 
-    route: 'terminology'
+    route: 'terminoloji'
 
 names:
     enabled: false
@@ -148,39 +139,38 @@ names:
 people:
     enabled: false
 
-# optional, but would be nice to have
 english:
-    enabled: true
-    route: 'english'
-    pronounGroups:
-        -
-            name: 'Normative forms'
-            description:
-                - >
-                    Because of the limitations of <language> grammar, or simply because they just prefer it that way,
-                    many nonbinary people decide to simply use “he” ({/on=„on”}) or “she” ({/ona=„ona”})
-                    – either the same as their gender assigned at birth or the opposite.
-                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
-            table: {on: 'Masculine', ona: 'Feminine'}
+    enabled: false
 
 faq:
     enabled: true
-    route: 'faq'
+    route: 'SSS'
 
 links:
     enabled: true
     split: false
-    route: 'links'
+    route: 'linkler'
     blogRoute: 'blog'
     links:
         -
             icon: 'globe-europe'
             url: 'https://pronoun.is/'
             headline: 'Pronoun.is'
-            extra: '– inspiration for this website.'
+            extra: '– bu websitenin ilhamı.'
     academic: []
     mediaGuests: []
     mediaMentions: []
+    socials:
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/PronounsPage'
+            headline: '@PronounsPage'
+        -
+            icon: 'twitter'
+            iconSet: 'b'
+            url: 'https://twitter.com/CalendarQueer'
+            headline: '@CalendarQueer'
     recommended: []
     blog: false
     zine:
@@ -206,24 +196,16 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        -
-            header: 'Honorifics'
-            values: ['[no honorific]', 'mx.', 'mr.', 'ms.', 'sir', 'ma"am', 'madam', 'sai', 'mir', 'shazam', 'zam', 'comrade']
-        -
-            header: 'Person and family descriptions'
-            values: ['person', 'man', 'woman', 'lady', 'dude', 'enby', 'boy', 'girl', 'buddy', 'pal', 'bro', 'sis', 'sib']
-        -
-            header: 'Compliments'
-            values: ['pretty', 'handsome', 'cute', 'hot', 'sexy']
-        -
-            header: 'Relationship descriptions'
-            values: ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
+        - ['[saygı ifadesi yok]',  'yoldaş']
+        - ['kişi', 'adam', 'kadın', 'bayan', 'kanka', 'erkek', 'kız', 'ahbap', 'dost', 'aga', 'aşko', 'kardeş']
+        - ['güzel', 'yakısıklı', 'tatlı', 'ateşli', 'seksi']
+        - ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
     flags:
         defaultPronoun: 'they'
 
 calendar:
     enabled: true
-    route: 'calendar'
+    route: 'takvim'
 
 census:
     enabled: false

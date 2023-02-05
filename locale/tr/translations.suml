@@ -1,561 +1,478 @@
 title: 'Pronouns.page'
 domain: 'tr.pronouns.page'
-description: 'Usage examples of personal pronouns and gender neutral language.'
+description: 'Kişisel zamirlerin ve cinsiyetten bağımsız dilin kullanım örnekleri.'
 
 home:
-    link: 'Homepage'
-    header: 'Pronouns'
-    headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    link: 'Anasayfa'
+    header: 'Zamirler(Pronouns)'
+    headerLong: 'Zamirler listesi'
+    welcome: 'pronouns.page sayfasına hoşgeldiniz!'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+        Cinsiyetten bağımsız bir dil hakkında bilgi kaynağı oluşturuyoruz.
+    whatisit: 'Zamirlerin Olayı Ne?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            Zamirler(“pronouns”) bir kişiye seslenirken her defasında ismini söylemek yerine kullanabileceğimiz kelimelerdir.
+
+            Ama bazı dillerde, örnek olarak Türkçede, Zamirler kişinin cinsiyetine bakmaksızın aynıdır,
+            bazılarında ise, mesela İngilizcede farklı insanlar için farklı zamirler, isimler hatta fiiller kullanılır.
+            Çoğu bay ve bayan transcinsiyet kategorisine girmez ve cinsiyetlerine uygun zamirleri kullanmak icin bir şey anlatmalarına gerek kalmaz.
+            Bunun sonucu olarak birine nasıl hitap edeceğimize, otomatik olarak yalnızca dış görünüşü baz alırız.
+            Ancak bu iş aslında o kadar kolay değil.
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
+            Cinsiyet komplikedir. Bazı insanlar kendi cinsiyetleri gibi "görünmez".
+            Bazıları sandığınızın aksine başka bir şekilde hitap edilmeyi ister.
+            Bazı insanlar "erkek" ya da "kadın"  kutucuklarına sığmaz. Daha nötr bir dil tercih ederler.
         - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
+            Pronouns Page sayfası, insanların size nasıl hiap etmesinden hoşlandığınızı gösterebilmeniz için zamirlerinizin linkini örnek cümlelerle paylaşabilmenize olanak tanır.          .
         - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
-    generator:
-        header: 'Generator'
-        description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
-        button: 'Show the generator'
-        header2: 'Generate a link'
-        base: 'Based on'
-        alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
-        pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+            Bu neden önemli? Cevap ortada: basit insan ahlakı.
+            Sırf “Yaren” ismini daha çok sevdiğin için Zeynep'e “Yaren” demezsin. Kimse oyle bir şey yapmaz.
+            Veya, Zeynep sana “bir Yaren gibi” gözüktüğünden ona Zeynep demeyi reddetmezsin.
+            Belki doğum sertifikasında "Yaren" ismi <em>olabilir</em>
+            Ama o, bu isimden nefret edip “Zeynep” ismini tercih edebilir. Çok acayip bir durum değil.
+            Tabii ki bu olay cinsiyet bazlı dillerde daha komplike bir sorun. Ve dilimizde bu sorunu aşmaya çalışmak oldukça önemli. Bir insanın isim, zamir, cinsiyet ve cinsiyet belirten sıfatlardaki tercihlerini önemsemek ve bunlara saygı duymak, ahlak seviyemizi gösterir ve dilimiz de diğer diller kadar önemlidir.
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'Bizim Vazifemiz'
+        summary: 'Her dilde herkes için saygı, özgürlük ve kapsayıcılık için savaşıyoruz.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>Özgürlük</strong>
+            – çünkü <em>herkesin kendisine</em>
+            en uygun olan zamiri kullanmaya hakki vardir.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>Saygi</strong>
+            – çünkü <em>diğer kişilerin zamirine</em> saygıyla bakılmalıdır..
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>Dahil Olmak, ve Dahil Etmek</strong>
+            – cunku bilmediğimiz insanlarin zamirleri tahmin edilemez ve tahmin edilmemelidir.
+
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
-    plural: 'Plural'
-    intro: 'My pronouns are'
-    normative: 'Normative'
+    header: 'Zamirler'
+    headerLong: 'Zamirler'
+    examples: 'Cumlede nasil gozukecegini anlamak icin ornek kullanim'
+    plural: 'Birden Çok'
+    intro: 'Benim zamirlerim'
+    normative: 'Genel Zamirler'
     alt:
-        button: 'Generate a link to interchangeable forms'
-        header: 'Interchangeable forms'
-        raw: 'interchangeable'
-    generated: 'Those pronouns have been created using a generator. The team of pronouns.page is not responsible for it.'
+        button: 'Değiştirilebilir formlar için bir bağlantı yaratin'
+        header: 'Değiştirilebilir Formlar'
+        raw: 'Değiştirilebilir'
+    generated: 'Bu cinsiyet belirten kelimeler bir jeneratör ile olusturulmustur. Bunlar icin '
     any:
-        header: 'Any pronouns'
-        short: 'any'
+        header: 'Bütün Cinsiyet Belirten Kelimeler Uygundur'
+        short: 'hepsi'
         description: >
-            Even though for many people it's incredibly important that people use specific pronouns to talk about them,
-            others don't mind being addressed in any way – as long as the context is clear as to who one talks about.
-        options: 'check out the options [share]{/pronouns=here}.'
-    others: 'Other forms'
-    othersRaw: 'other'
-    or: 'or'
-    grammarTable: 'Table'
+            Bazi kisiler icin hangi cinsiyet belirten kelimeler onemli olsa bile, bazilari bu belirtmelere cok takmaz, ve hepsini uygun bulurlar—
+            tabii, kiminle konusuldugunu konusan anlatabilirse.
+options: 'diger seceneklere de goz atin [share]{/pronouns=here}.'
+others: 'Diger Turler'
+othersRaw: 'diger'
+or: 'veya'
+grammarTable: 'Tablo'
 
 sources:
-    header: 'Sources'
-    headerLong: 'Examples from cultural texts'
-    headerLonger: 'Nonbinary and gender neutral language in cultural texts'
-    subheader: 'Text corpus of nonbinary and gender neutral language'
-    toc: 'Show table of contents'
+    header: 'Kaynaklar'
+    headerLong: 'Kültürel Metinlerden Örnekler'
+    headerLonger: 'Kültürel Metinlerde Non-Binary Kisiler'
+    subheader: 'Non-binary Text Corpus'
+    toc: 'İçerikler'
     type:
-        All: 'All'
-        Book: 'Books'
-        Article: 'Articles'
-        Movie: 'Movies'
-        Series: 'Series'
-        Song: 'Music'
-        Poetry: 'Poetry'
-        Comics: 'Comics'
-        Game: 'Game'
-        Other: 'Other'
+        All: 'Bütün Seçenekler'
+        Book: 'Kitaplar'
+        Article: 'Literatür ve Makaleler'
+        Movie: 'Filmler'
+        Series: 'Diziler'
+        Song: 'Muzik'
+        Poetry: 'Siirler'
+        Game: 'Oyun'
+        Other: 'Diger'
     submit:
-        header: 'Submit an example to be added'
-        action: 'Submit'
-        pronouns: 'Which pronouns have been used?'
-        pronounsInfo: 'Enter the simplest form of the pronoun, the way it''s in the link, np. “they”, “e/em/es”, “he&she”'
-        type: 'Source type'
-        author: 'Author'
-        title: 'Title'
-        extra: 'Additional info (translator, name of journal, …)'
-        year: 'Release year (of the English version)'
-        fragments: 'Fragments'
+        header: 'Baska bir örnek eklemek için gonder.'
+        action: 'Gönder'
+        pronouns: 'Hangi cinsiyet belirten kelimeler kullanilmistir?'
+        pronounsInfo: 'Linkteki gibi en basit zamir veya cinsiyet belirten kelimeyi yaz: ör. “they”, “e/em/es”, “he&she”'
+        type: 'Kaynak Türü'
+        author: 'Yazar'
+        title: 'Baslik'
+        extra: 'Ek Bilgi (tercüman, bültenin yazari …)'
+        year: 'Yayinlama Yili (Türkçe Versiyonun)'
+        fragments: 'Fragmanlar'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
-        comment: 'Comment'
-        link: 'Link to the content'
-        thanks: 'Thanks for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
-        key: 'Key'
-        keyInfo: 'Identifier for linking sources between language versions and linking with the dictionary'
-        images: 'Images'
-        spoiler: 'Spoiler'
-    otherVersions: 'In other languages'
-    referenced: 'Examples of use'
+        comment: 'Yorum Yap'
+        link: 'Icerige Link'
+        thanks: 'Katkınız için teşekkürler!'
+        another: 'Baska bir gonderi yap.'
+        moderation: 'Gonderileriniz yayinlanmadan once pronouns.page takimindan onaylanmalidir.'
+        key: 'Kaynaklar'
+        keyInfo: 'Kaynakları dil sürümleri arasında sözlükle bağlantı kurmak için tanımlayıcı.'
+        images: 'Fotograflar'
+    otherVersions: 'Diger Dillerde'
+    referenced: 'Kullanimlari İçin Örnekler'
+
 
 nouns:
-    header: 'Dictionary'
-    headerLong: 'Dictionary of neutral nouns'
-    headerLonger: 'Dictionary of gender neutral language'
-    description: 'It''s not just pronouns! Check out our dictionary of gender neutral nouns.'
+    header: 'Sözlük'
+    headerLong: 'Cinsiyet bakimindan tarafsız isimler sözlüğü'
+    headerLonger: 'Cinsiyet Bakimindan Tarafsiz İsim'
+    description: 'Sadece zamir turunde kelimeler degil! Cinsiyet belirten diğer kelime listemizede bakin.'
     intro:
         - >
-            Inclusive and gender neutral is not just respecting someone's pronouns.
-            It's also describing their job, position, relationship etc.
-            in a way that doesn't assume their gender.
-            Not all firefighters are “firemen”. Not every spouse is a “husband” or a “wife”.
-        - >
-            When referring to someone whose gender you don't know,
-            to a group of people of mixed gender,
-            and especially to nonbinary people who explicitly prefer them,
-            use the neutral forms.
-        - >
-            Below we present a dictionary of the words to watch out for.
-            You can contribute to it and add your suggestions.
-        - >
-            Keep in mind that it's a dictionary of <em>ideas, proposals</em>.
-            Not all quoted forms will make sense in every context, not all are <em>fully</em> gender neutral
-            (but they're used by some nonbinary people to express themselves outside of the gender binary),
-            and not every word here can be used for any given nonbinary person – just ask what they prefer to be called.
+            Kapsayıcı ve cinsiyetten bağımsız olmak, sadece birinin zamir turu kelimelerine saygı duymak değildir.
+            Ayrıca işlerini, pozisyonlarını, ilişkilerini (vb.)
+            cinsiyetlerini varsayılmayan bir şekilde söyleyebilmektir.
+            Tüm hemşireler “hemşir-e” değildir. Her eş “koca” veya “karı” değildir.
 
-    approved: 'approved entries'
-    pending: 'awaiting moderation'
-    edit: 'Propose a change'
-    edited: 'Proposed change of'
-    editing: 'You''re editing an existing entry'
-    empty: 'No words found that match your criteria.'
+        - >
+            Cinsiyetini bilmediğin birinden bahsederken,
+            karışık cinsiyetten bir grup insana,
+            ve özellikle onların erkek veya kadin olmadigini açıkça tercih eden kişilere,
+            nötr formlardan olusan bir dil ile atifta bulunun.
+        - >
+            Aşağıda dikkat edilmesi gereken kelimelerin bir sözlüğünü sunuyoruz.
+            Buna katkıda bulunabilir ve önerilerinizi ekleyebilirsiniz.
+
+    approved: 'onaylanan sozler'
+    pending: 'moderasyon bekliyor'
+    edit: 'Değişim talep et'
+    edited: 'Değişimi talep edildi'
+    editing: 'Var olan bir girişi değiştiriyorsunuz'
+    empty: 'Aramalarınıza uygun kelime bulunamadı.'
 
     submit:
-        action: 'Submit'
-        actionLong: 'Submit a word'
-        thanks: 'Thank you for contributing!'
-        another: 'Submit another one'
-        moderation: 'Submissions will have to get approved before getting published.'
+        action: 'Gönder'
+        actionLong: 'Bir kelime gönder'
+        thanks: 'katkıda bulunduğunuz için teşekkürler!'
+        another: 'Baßka bir kelime gónder'
+        moderation: 'Gönderimlerin yayınlanmadan önce onaylanması gerekecektir.'
 
-    template: 'Use a template'
-    root: 'Root'
+    template: 'Şablon kullan'
+    root: 'Kökü'
 
-    masculine: 'masculine'
-    masculineShort: 'masc.'
-    feminine: 'feminine'
+    masculine: 'maskülen'
+    masculineShort: 'mask.'
+    feminine: 'feminen'
     feminineShort: 'fem.'
-    neuter: 'neutral'
-    neuterShort: 'neutr.'
+    neuter: 'nötr'
+    neuterShort: 'nötr.'
 
-    singular: 'singular'
-    singularShort: 'sing.'
-    plural: 'plural'
-    pluralShort: 'pl.'
+    singular: 'tekil'
+    singularShort: 'tek.'
+    plural: 'çoğul'
+    pluralShort: 'ç.'
 
-    image: 'Picture'
+    image: 'Resim'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'Topluluk'
+    headerLong: 'Queer Topluluk'
 
 terminology:
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
+    header: 'Terminoloji'
+    headerLong: 'Queer terminoloji sözlüğü'
     info:
         - >
-            Many of the terms and phrases related to the LGBTQ+ community
-            are used as English inserts into <your language> texts.
-            We'd like to present a glossary of those terms, describe their meaning,
-            and propose their <your language> translations.
-        - >
-            Keep in mind that identity labels are inherently subjective and flexible.
-            This dictionary is a community effort to find the most widely accepted definitions of queer terms,
-            but shouldn't be treated as any kind of authority on the subject.
-            The only authority on someone's identity and what words best describe it is… that person themself.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
+            LGBTQ+ topluluğuyla ilgili terimler sözlüğü.
+    term: 'Terim'
+    original: 'Etimoloji'
+    category: 'Kategori'
+    images: 'ek görseller, bayraklar dışında'
+    definition: 'Anlamı'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: 'SSS'
+    headerLong: 'Sıkça sorulan sorular'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: 'Nonbinary nedir?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
+                    Cinsiyet sadece basit bir kadın/erkek'ten daha fazladır.
+                    Tamamen biyolojik bir bakış açısından bile kromozomal cinsiyeti ayırt ederiz,
+                    Genetik cinsiyet, hormonal cinsiyet, fenotipik cinsiyet…
+                    Birbirleriyle uyumlu olmaları gerekmez, bu yüzden ikili olmaları gerekmez.
+                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(daha fazla bilgi)}.
+                    Ve kültürel yönüne geldiğimizde, "toplumsal cinsiyet" sosyal bir yapıdır.
+                    Zaman ve mekana bağlı olarak "kadın" veya "erkek" olmak farklı haklara, normlara ve ve görevlere sahip olabilir.
+                    Avrupa'da erkekler külotlu çorap ve topuklu ayakkabı giyerlerdi,
+                    ve Kuzey Amerika'nın yerli halkları, yüzyıllardır üçüncü bir cinsiyeti tanıyorlar.
+                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, vs. vs.
                 - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
+                    Nonbinary, kadın/erkek taraflarına uymayan insanların
+                    kimliğini tanımlayan şemsiye bir terimdir.
+                    Örneğin, şu kişileri içerir:
                     {https://gender.wikia.org/wiki/Agender=agender},
                     {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
                     {https://gender.wikia.org/wiki/Demigirl=demigirls},
                     {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    ve {https://gender.wikia.org/wiki/Non-binary=many many others}.
                 - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
+                    Nonbinary feminenlik ve maskülenlik "arasında" bir şey değildir. Daha çok "ilerisinde" gibidir.
+                    Nonbinary insanlar androjen olmak zorunda değildirler, nötr zamirler kullanmak zorunda değildirler, vb.
+                    Cinsiyet rollerinden ayrı kalmaktır olayı, yenilerini üretmek değil.
         why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+            question: 'Neden bazı <em>tuhaf</em> zamirlere saygı duymam gerekli?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
+                    Çünkü insanlara nasıl hitap edilmesini istiyorsa öyle hitap etmek toplumsal ilişkilerin temelidir.
+                    Ashley'e "Samantha" demezsiniz, amirinize hitap ederken "efendim"/"hanımefendi" kelimesini çıkarmazsınız vs.
+                    Ve “{/he=he}” ya da “{/she=she}” zamirlerini kullanmayan insanlar vardır.
+                    Ve bunu kabullenmezseniz, bu sadece <em>sizi</em> kötü gösterir.
                 - >
-                    “Strange pronouns” are just a matter of getting used to.
+                    “Tuhaf zamirler” sadece alışmanın bir maddesidir.
         made-up:
-            question: 'Those pronouns are made up!'
+            question: 'Bu zamirler uydurulmuş!'
             answer:
                 - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    Evet. Evet öyleler. Tüm dillerdeki tüm kelimeler de öyle.
+                    Sadece bazı kelimeler daha eski.
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: 'Birine nasıl sesleniceğimi nasıl bileceğim?'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    Sorabilirsin! Evet, tuhaf olabilir ama ne kadar çok sorarsak o kadar az tuhaflaşır.
+                    Birine ismini sorabiliyorsak, neden zamirlerini soramayalım?
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    (Sadece "kız mısın erkek mi" cümlesini kullanmayın.
+                    Bu soru sadece iki "doğru" cinsiyetin olduğunu savunur,
+                    ve birinin cinsel alanları hakkında sağlıksız bir merak bulundurur.
+                    Onun yerine “zamirlerin neler?” ya da “sana nasıl hitap edeyim?” sorularını sorabilirsiniz.)
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    Kendinizi tanıtırken insanlara zamirlerinizi söyleyerek normalleştirmek de önemlidir.
+                     “Selam, ben Ahmet, zamirlerim {/he=he/him}”. Gerçekten zor değil – ama trans ve non binary insanlar için çok önemli!
+                     online çok daha kolay: sadece zamirlerini (ya da websitemizdeki örnekleri) biyografine koy.
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    Ayrıca birçok kişinin duruma bağlı olarak farklı bir isim ve farklı bir zamir seti kullanabileceğini unutmayın.
+                    Arkadaş ya da iş arkadaşlarına daha açılmamış olabilirler, ama başka arkadaşlarıyla doğruyu paylaşacak kadar rahat ve yakın hissedebilirler.
+                    Akıllı olun. Emin olmak için şu soruyu sorabilirsiniz, “müdürünün önünde hangi zamirleri kullanayım?”, vs.
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    Bazı insanlar birden çok zamir kullanır, örn. “{/he&she=he/she}” ya da “{/they&he=they/he}”.
+                    Bu, kullandıkları zamirlerin her formunu beğendikleri anlamına gelir. Çoğunlukla ilk olan tercih edilendir.
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: 'Bunu kullanan var mı ki?'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    Elbette! Milyonlarca non-binary kişi dünya çapında kullanıyor.
+                    Burda kullanılan her zamiri gerçek hayatta birileri kullanıyor.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: 'Bu nonbinary zamirler bir topluluk tarafından falan mı onaylanıyor?'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    Dil, tanrı vergisi, taşa kazınmış kadim bir sihir değildir.
+                    Sadece iletişim için kullandığımız bir alettir.
+                    Bir toplum olarak değiştiğimizde, ve etrafımızdaki dünya değiştiğinde,
+                    Dil üzerinde oynamalar yaparız ki bazı şeyleri daha iyi betimleyebilelim.
+                    Dilin kullanıcıları biziz, yani onu kullanma konusunda <em>topluluk da biziz</em>.
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    Sözlükler bu değişiklikleri dahil etmeye başlamak için zaman harcarlar,
+                    ve bu olayları hiçbir yönden gayrimeşru yapmaz.
+                    Ama yeni formlar, eğer onları daha çok kullanîrsak, sözlüklere eklenicekler.
+                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, örnek olarak,
+                    {/they=singular “they”} zamirini non-binary bir zamir olarak kabul eder.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
+                    Ayrıca neopronounlar ûzerine yazılan bu yazıyı da okuyabilirsiniz.{https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'Neden zamirlerimi sosyal medya profillerime koymalıyım?'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    Cis bir bireyseniz (= not trans) ve cinsiyetinize uygun olarak “{/he=he}” ya da “{/she=she}” zamirlerini kullanıyorsanız,
+                    zamirlerinizin <em>belli</em> olduğunu düşünebilirsiniz.
+                    Ve evet, belki de bu doğrudur – isminiz biyografinizde varsa (ve geleneksel olarak bir kadın ya da erkek ismiyse)
+                     ya da profil fotoğrafınızda kendi resminiz varsa.
+                    Çoğu insan değildir – bu yüzden nasıl seslenilmek isteyeceklerini tahmin edemeyiz.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    Ama bu çoğunlukla bindan daha fazladır: sizin zamirleriniz belki “belli” olabilir,
+                    ama zamirleri belli olmayan çok insan var.
+                    Doğru belli edilmek istenirler, cinsiyetleri olarak “geçebilseler” bile,
+                    cinsiyet değiştirdilerse (ya da değiştirmek isteseler bile).
+                    Nonbinary insanlar genellikle “nonbinary gözükmezler”, hiç kimseye androjenlik borcumuz yok.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    Zamirlerimizi paylaşmak trans, non binary ve doğum cinsiyeti uyumsuz insanlar için önemlidir.
+                    Ne yazık ki, aynı zamanda bizi ifşa ediyor ve ayırıyor.
+                    Ama eğer cis insanlar da aynısını yaparsa, bu bize dünyaları verir.
+                    Daha hoş karşılanmış, rahat ve mutlu hissetmemize sebep olur.
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(daha fazla nedenleri).}
         change:
-            question: 'Can I change my pronouns?'
+            question: 'Zamirlerimi değiştirebilir miyim?'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    Elbette! Birinin görüşü, tarzı, hobileri değişince kimse şaşırmaz…
+                    Öyleyse kimliklerinin bir parçasını keşfetmeleri neden garip olsun ki,
+                    isminizi beğenmeyi bıraktınız, kendinize uyan bir etiket mi keşfettiniz vs.?
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: '<em>kendi</em> yeni zamirlerim?’e alışamamam garip mi?'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    Hiç de değil! Doğumda atanan zamirlerin yıllar boyu kullanımı sonrası
+                    farklı olanları kullanırken kendini adapte etmesi zordur..
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    zamir ≠ cinsiyet.
+                    Biri sizi “them” diye çağırınca ve bu sizin kafanızı karıştırıp sorgulamanıza sebep olduysa bu cinsiyetinizi büyük ölçüde değiştirmiyor.
+                    Korkma. Deneyimle. Sana en çok uyanı bul.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: 'Neden “tercih edilen zamirler” dememeliyim?'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    Çünkü bu cümle birinin zamirinin yalnızca bir heves olduğunu belirtiyor.
+                    Eğer biri she olarak çağırılmayı “tercih ediyorsa”, eğer ben o kişiye “he” diye seslenirsem o kişi _gerçekten_ kötü hissetmeyecek, değil mi?
+                    Tam anlamıyla bir erkek gibi görünüyor bu yüzden benim için ona böyle seslenmem daha kolay!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+                    Hayır! Bunlar bizim zamirlerimiz. Bizim “tercih ettiğimiz zamirler” değil. Bunlar bizim isimlerimiz, bizim “tercih ettiğimiz isimler” değil.
+                    Eğer sen de nonbinary ve trans sevdiklerini önemsiyorsan, onları doğru yollarla çağır.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: 'Neden “cinsiyet zamiri” dememeliyim?'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    Çünkü cinsiyet ≠ zamir. Zamirler sadece dil bilgisidir.
+                    Nonbinary kişiler ikili zamirler kullanabilir, bazı lezbiyenler {/he=he/him} zamirlerini kullanabilir.
                 - >
-                    Simply say “pronouns”.
-        bigger-problems:
-            question: 'Aren''t there bigger problems to solve? Shouldn''t we focus on world hunger instead of some pronouns?'
-            answer:
-                - >
-                    The same issue might seem trivial for some while being very important to others.
-                    Imagine that almost every sentence you hear about yourself is grammatically built on a lie about your very identity.
-                    That even simple conversations make you dysphoric, no matter what they're about…
-                - >
-                    There are different kinds of problems in this world,
-                    but we shouldn't be comparing them as an excuse to dismiss those that we <em>don't really want to</em> solve.
-                    There's eight billion people on this planet – we can manage to work on multiple issues at once!
-                    Every person has different needs and different resources available.
-                - >
-                    Our collective doesn't have the resources to feed the world, to stop wars or global warming.
-                    What we do have, though, are the skills and energy to shape and promote a more inclusive language –
-                    so that's what we're doing, instead of giving up and doing nothing.
-                - >
-                    Respecting other people's pronouns and identity doesn't require much effort.
-                    Even if you're a person that's solving the biggest challenges that humanity is facing,
-                    you can easily manage to not be transphobic in the process.
+                    Sadece “zamir” de.
         flags:
-            question: 'Can you add this flag? Can you remove that flag?'
+            question: 'Bu bayrağı ekleyebilir misiniz? Bu bayrağı kaldırabilir misiniz?'
             answer:
                 - >
-                    No.
+                    Hayır.
                 - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
+                    Bayrak ve etiketlerin denetimi ekibimiz için gittikçe daha çok zaman alan bir süreç.
+                    Ayrıca iyi niyetli ve gerçekten dürüst kişiler ile kötü niyetli trolleri ayırmak açısından da zor.
+                    Kimlik polisi olmak istemiyoruz. Tüm günümüzü bayrakları düzeltmeye ayırmak da istemiyoruz.
+                    Bu dil ve zamirlerle ilgili bir proje, bayraklarla ilgili değil. Bayraklar sadece bonus.
                 - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
+                    Kendi bilgimiz dahilinde en popüler ve en bilinen bayrakların bir listesini yapmak için elimizden geleni yaptık.
+                    Bu listeyi genişletmek veya kaldırmak niyetinde değiliz.
                 - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
+                    Bazı bayrakların bazı kişiler tarafından beğenilmeyebileceğinin farkındayız.
+
+                    Bizler kendimiz queer ve transız, trans kardeşlerimizi önemsiyoruz.
+                    Maalesef bu kararları almak oldukça zor.
+                    Çünkü bazı trans bireyler bizden kendi kimliklerini yansıtan bir bayrak eklememizi istiyor,
+                    diğer yandan bazı trans bireylerse bu bayrağın bir şekile onlara zarar verdiği sebebiyle kaldırılmasını istiyor.
+                    Çünkü her kimlik etiketinin net bir geçmişi yok ve bu geçmişleri araştırabileceğimiz güvenilir kaynak da yok.
+                    Ve queerfobikler bazı terimleri incitici bir hale getirmeye çalışsa bile,
+                    biz topluluğun bu nefret dolu terimleri kendine geri kazandırma gücüne inanıyoruz..
                 - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
+                    Eğer bir bayrağı sevmiyorsan onu kullanma.
+                    Eğer bir bayrak kayıpsa/eksikse onu kendin yükle.
+                    (vandalizmi azaltmak için yüklediğin bayrakların kullanıcı tarafından eklendiği özel olarak belirtilir).
         custom-pronouns:
-            question: 'My pronouns aren''t listed'
+            question: 'Benim zamirlerim listede yok.'
             answer:
                 - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
+                    Anasayfada bir jeneratör var, onu istediğin herhangi bir zamir setini oluşturup bağlamak için kullanabilirsin.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
-
+                    Ayrıca eğik çizgiler kullanarak bir zamirin 5 farklı formunu listeleyebilirsin, örn. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
+                    Bu durumda o zamirin 5 farklı formunu da yazman gerekir, aksi takdirde uygulama neyi kast ettiğiniz hakkında yalnızca tahminde bulunabilir.
+        business:
+            question: 'Bir işletme misiniz?'
+            answer:
+                - >
+                    Hayır. Bizler gönüllüyüz.
+                    Bu siteyi kendi çalışmalarımızla kurduk.
+                    Bakım masraflarının bir kısmı {https://arc.io/faq=arc.io plugin} tarafından karşılandı,
+                    geri kalanını kendi cebimizden ödedik.
+                    ve {/contact#support=sizin bağışlarınız} ile – bunun için çok minnettarız! ❤️
+                - >
+                    Bu ayrıca eğer bizi {/blog/we-are-inclusive=our inclusivity} sebebiyle “boykot ediyorsan” ,
+                    bize bir iyilik yapıyorsun. Senin üzerinden para kazanıyor değiliz.
+                    Dışlayıcı ve queerfobikler burada hoş karşılanmaz.
 links:
-    header: 'Links'
-    headerLong: 'Extra links'
-    recommended: 'We recommend'
+    header: 'Linkler'
+    headerLong: 'Fazla linkler'
+    recommended: 'Öneririz'
     blog: 'Blog'
-    mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
+    mediaShort: 'Medya'
+    media: 'Pronouns.page medyada'
 
-    social: 'Social media'
+    social: 'Sosyal medya'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'Diğer dil versiyonları'
 
 people: ~
 
-# this section is a short English-language explanation of how gendered and gender-neutral forms work in your language
-# see for example: https://zaimki.pl/english
-# it's optional, but would be nice to have
-english:
-    header: 'English'
-    headerLong: 'An overview in English'
-    headerLonger: 'An overview of <language> nonbinary pronouns'
-    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
-    intro:
-        - >
-            A summary in English…
+english: ~
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
-    groups:
-        all: ''
-        calendar: 'Queer Calendar Bot'
+    header: 'İletişim'
+    authors: 'Websitenin yazarları'
     faq: >
-        Before you write, <strong>check out our </strong>{/faq=<strong>FAQ</strong>} – maybe the answer to your question is already there.
+        Yazmadan önce, {/faq=Sık sorulan sorular}’ı kontrol etmeyi unutma – belki de sorunun cevabı orada mevcuttur.
     technical: >
-        Do you see <strong>a bug</strong> or have a technical question?
-        Please include your username and <strong>as many details as possible</strong> in your message
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-        Please also <strong>try disabling extensions</strong> that might be breaking the page
-        (eg. ad blockers mistakenly removing something that isn't an ad) and see if that helps.
+        Teknik bir problemin veya sorun mu var? Lütfen kullanıcı adını ve mümkün olduğu kadar ayrıntı belirt.
+        (hata mesajı ne diyordu? mobilde misin yoksa bilgisayarda mısın? hangi internet tarayıcısını kullanıyorsun?
+         bu sorunu azaltmak için neler yapabiliriz? ekran görüntüsü, video kaydı vb. Gönderebilir misin?)
     hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
-    language: >
-        We're an international team – people who created a specific language version
-        might not be the same people who will read your message.
-        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
+        Bize queerfobik nefret mailleri göndermek mi istiyorsun?
+        Sadece vazgeç, trollerle tartışmıyoruz.
+        Seni sessize alıp mailini “spam” kutucuğuna koymak senin maili yazmandan daha kısa sürer.
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
-        description: >
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
-        extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
+        name: '“Cinsiyetsiz Dil Konseyi” kolektifi'
+        nameShort: 'Kolektif'
+        description:
+            - >
+                Bizler cinsiyetsiz ve cinsiyetten bağımsız dili araştırıp şekillendirip tanıtmaya çalışan queer bir kolektifiz.
+                Bizler ayrıca sosyal adalet ve eşitlik çerçevesindeki hareketleri destekliyoruz.
+
+        extra:
+            - '{/blog/project-history=Short history of the project}'
+            - '{/blog/why-the-name=Why the name?}'
+        logo: 'Kolektifin logosu, trans sembolü ve ili sembolize eden konuşma balonunun bir araya gelmiş halidir.'
+        members: 'Mevcut üyeler'
+        member: 'Kolektif üyesi'
+        upcoming: 'Gelecek dil sürümleri'
         join:
-            header: 'Join us!'
+            header: 'Bize katıl!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                Nonbinary ve cinsiyetsiz dili önemsiyor musun?
+                Kolektifimize bunu tanıtmada yardımcı olmak istiyor musun? Harika!
+                Fazladan yardıma tamamen açığız!
+            areasIntro: 'Yardımcı olabileceğin alanlara örnek olarak:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
+                - 'sözlükleri genişletip denetleme,'
+                - 'kaynak listesini genişletip denetleme,'
+                - 'grafikler ve sosyal medya postları oluşturma,'
+                - 'direkt mesajları cevaplama,'
+                - 'profilleri yönetme,'
+                - 'yeni bir dil versiyonu ekleme,'
+                - 'çeviri,'
+                - 'yeni dil versiyonlarını ekleme sürecini denetleme,'
+                - 'blog postları yazma,'
+                - 'programlama,'
                 - '…'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                Bunlardan bazıları nonbinary bir kişinin perspektifini gerektirir, diğerleri fazla değil.
+                  Bu yüzden nonbinary olmayan destekçileri de davet ediyoruz.
+            how: 'Nasıl katılabilirim? Bu adresten bize bir mail yolla. {mailto:contact@pronouns.page=contact@pronouns.page}, içinde de:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say if you have some experience in activist work,'
-                - 'say what you would like to help with.'
-    contribute:
-        header: 'Contribute'
-        intro: >
-            Pronouns.page is an open-source project created by volunteers.
-            You can add your contribution too! Here's some areas where we'd appreciate your help.
-            Active contributors will be invited to join our team.
-        entries:
-            header: 'Add entries'
-            description: >
-                Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
-                If you think something's missing or incorrect, don't hesitate to submit your entry.
-        translations:
-            header: 'Add or correct translations'
-            description: >
-                A translation string is missing or incorrect?
-                Click on “Propose translations” in the footer and follow instructions.
-        version:
-            header: 'Create a new language version'
-            description: >
-                Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
-                Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
-        technical:
-            header: 'Submit a pull request'
-            description: >
-                Technical tasks are managed on {https://gitlab.com/Avris/Zaimki/-/boards=this kanban board}.
-                Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
-                Don't hesitate to ask questions.
-            footer: 'Technical tasks'
+                - 'Kendini tanıt,'
+                - 'pronouns.page profilini bırak,'
+                - 'Sosyal medyanı bırak,'
+                - 'Eğer daha önce deneyimin olduysa söyle,'
+                - 'Neye yardım etmek istediğini söyle.'
 
 support:
-    header: 'Support'
+    header: 'Destek'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
-    bankAccount: 'Bank transfer'
+        Eğer sunucu, bağlantı ve stickerlar vs. için bağış yapmak ya da sadece yazarlara bir bira almak istersen,
+         Aşşağıdaki linkleri kullanabilirsin:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
-    tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
+    header: 'Hesap'
+    headerLong: 'Hesabın'
+    tokenExpired: 'Tokenin süresi doldu. Lütfen sayfayı yenileyip tekrar deneyin.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you <strong>%email%</strong> an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        placeholder: 'E-posta (ya da kullanıcı adı, zaten kayıt olduysan)'
+        action: 'Giriş yap'
+        emailSent: 'Sana 6 haneli bir e-posta gönderdik. Buraya gir. Kod sadece tek kullanımlık ve 15 dakika süre zafında geçerlidir.'
+        userNotFound: 'Kullanıcı bulunamadı.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'Giriş kodun %code%'
+            content: |
+                E-posta hesabını onaylamak için sana verilen tek kullanımlık kodu siteye gir: %code%.
+                Eğer bu kodu sen istemediysen sadece bu iletiyi görmezden gel.
+
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            Hesabına giriş yapman kartlarını yönetebilmene/onları düzenleyebilmene olanak sağlar ({/@example=tıpkı bunun gibi}).
+        passwordless: 'Bu websitesi hiçbir şifreyi kaydetmez. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Domain'
         deprecated: 'Deprecated'
@@ -564,36 +481,36 @@ user:
             <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
             We highly recommend making sure that you have a different login method available.
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'Geçerli'
+        invalid: 'Geçersiz kod.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change username'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'Kullanıcı adı'
+            action: 'Değiştir'
+            invalid: 'Kullanıcı adı 4-16 karakter uzunluğunda olmalı ve yalnızca sayılar, harfler, nokta, tire ve alt tire içermelidir.'
+            taken: 'Bu kullanıcı adı alınmış.'
             nonascii: >
                 Warning: if you decide for a username that contains non-ASCII characters,
                 keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
         changeEmail:
-            header: 'Email address'
-            action: 'Change email'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
-    logout: 'Log out'
+            header: 'E-posta Adresi'
+            action: 'Değiştirme'
+            invalid: 'Geçersiz e-posta adresi.'
+            taken: 'Bu e-posta adresi alınmış.'
+        admin: 'Yönetici'
+    logout: 'Çıkış yap'
     avatar:
         header: 'Avatar'
-        change: 'Change'
+        change: 'Değiştir'
         failed: 'Please reconnect your social media to fix the missing avatar.'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+    deleteAccount: 'Hesabı sil'
+    deleteAccountConfirm: 'Hesabını kaldırmak istediğinden emin misin? Bunun geri dönüşü olmayacak!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'Sosyal medya bağlantıları'
+        connect: 'Bağlan'
+        refresh: 'Yenile'
+        disconnect: 'Bağlantıyı kes'
+        disconnectConfirm: 'Bu bağlantıyı kaldırmak istediğine emin misin? (Her zaman e-posta hesabını kullanarak giriş yapabilirsin %email%)'
     mfa:
         header: 'Multi-factor authentication'
         init: >
@@ -620,23 +537,23 @@ user:
         respond: 'If you want to respond, you can simply reply to this email.'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'Açıklama'
+    names: 'İsimler'
+    pronouns: 'Zamirler'
     pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
+        Hir <strong>pronoun</strong> (Örn. “they” ya da “she/her”) girebilirsin
+        Ya da <strong>link</strong> (eg. “https://en.pronouns.page/e”)
+        Veya özel 5 form yapabilirsin (eg. “ze/zem/zir/zirs/zirself”).
+        Unutma ki <strong>beş form da</strong> gereklidir,
+        diğer türlü uygulama sadece neyi anlatmaya çalıştığını tahmin edebilr.
+        Ayrıca cümleleri kendi formlarınla doldurmak için {/pronouns#generator=<strong>Jeneratörûmüzü</strong>} de kullanabilirsin.
+         Eğer zamirlerin{/pronouns#nameself=<strong>nameself desenini</strong>} kullanıyorsa,
+        çift nokta da kullanabilirsin (eg. “:star”).
+    pronounsNotFound: 'Bilinmeyen format. Lütfen yukarıdaki talimatları okuyun.'
+    words: 'Kelimeler'
     wordsColumnHeader: 'Column header'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthday: 'Yaş'
+    birthdayInfo: 'Yaşını yayınlamayacağız. Sadece yaşının hesaplabini yaptik.'
     timezone:
         header: 'Timezone'
         placeholder: 'Select your timezone'
@@ -659,10 +576,10 @@ profile:
             Europe: 'Europe'
             Indian: 'Indian'
             Pacific: 'Pacific'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
+    flags: 'Bayraklar'
+    flagsInfo: 'Onur bayraklarınızı bu çerçeveye tutup bırakın.'
+    flagsCustom: 'Kendi bayrağını yükle'
+    flagsCustomWarning: 'Bu bayrak bir kullanıcı tarafından yüklenmiştir. pronouns.page takımı bundan sorumle değildir.'
     flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
     flagsCustomForm:
         label: 'Label name'
@@ -670,8 +587,8 @@ profile:
         link: '(optional) Link to more info'
         alt: '(optional) Alternative text describing the appearance of the flag (see below)'
         altExample: 'An example of how the alternative text might be phrased'
-    links: 'Links'
-    linksRecommended: 'We recommend linking to'
+    links: 'Linkler'
+    linksRecommended: 'Buralara bağlamanızı tavsiye ediyoruz'
     verifiedLinks:
         header: 'Verified links'
         info: >
@@ -679,7 +596,7 @@ profile:
             if they are verified by logging in using the given authentication provider,
             or by a <code>rel="me"</code> tag pointing back to the card.
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
-    column: 'Column'
+    column: 'Kolon'
     opinions:
         header: 'Legend/opinions'
         description: 'Description…'
@@ -707,30 +624,34 @@ profile:
     expendableList:
         more: '… and %count% more items'
         show: '(click to show)'
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+    header: 'Kartlar'
+    list: 'Kartların'
+    init: 'Kart oluştur'
+    show: 'Göster'
+    edit: 'Düzenle'
+    delete: 'Sil'
+    deleteConfirm: 'Bu kardı silmek istediğinden emin misin?'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
-        defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
+        header: 'Kard editörü'
+        save: 'Kardını kaydet'
+        defaults: 'Varsayılana dön'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    bannerButton: 'Create a card'
+        yes: 'Evet'
+        jokingly: 'Şakasına'
+        close: 'Sadece yakınsak'
+        meh: 'Ehh'
+        no: 'Hayır'
+    banner: >
+        Bir kart oluşturmak için bizim websitemizi kullanabilirsin.   {/@example=bunun gibi},
+         İçinde sana seslenilmesinden hoşlandığın isimlerin, zamirlerin, kelimelerin/takma adların; lgbt bayraklarının vb. olduğu.
+          Sonra da bu kartın linkini biyografine, sosyal medya hesaplarına veya e-postana bağlayabilirsin.
+          Sadece {/account=buradan} bir hesap oluşturun.
+    bannerButton: 'Kart oluştur'
     card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
+        link: 'Kart Resmi'
+        generate: 'Oluştur'
+        generating: 'Oluşturuluyor… Birkaç dakika sürebilir.'
+    empty: 'Bu kişi daha hiç kart yaratmamış.'
     personal:
         header: 'Personal'
         description: 'Only you can see this section'
@@ -772,23 +693,23 @@ profile:
             subject: 'Content warning applied on your profile'
             content: 'A moderator has applied the following content warnings to your card:'
 
-share: 'Share'
+share: 'Paylaş'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Search…'
-    filterLong: 'Search…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
+    approve: 'Kabul et'
+    hide: 'Gizle'
+    remove: 'Kaldır'
+    removeConfirm: 'Bu maddeyi silmek istediğinizden emin misiniz?'
+    edit: 'Düzenle'
+    add: 'Ekle'
+    filter: 'Filtre'
+    filterLong: 'Listeyi Filtrele…'
+    search: 'Ara…'
+    author: 'Tarafından eklendi'
+    saved: 'Değişiklikler başarıyla kaydedildi!'
+    loginRequired: 'Bir girdi açmak için {/account=Kayıt ol}'
+    copy: 'Bağlantı kopyala'
+    download: 'İndir'
     loadAll: 'Load all…'
     validation:
         genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
@@ -799,7 +720,7 @@ crud:
 footer:
     license: >
         {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media'
+    links: 'İletişim, sosyal medya, destek'
     legal: 'Legal'
     financial: 'Financial transparency'
     technical: 'Technical'
@@ -820,202 +741,47 @@ footer:
         month: 'month'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'Sayfa bulunamadı'
+    back: 'Ana sayfaya dön'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'Bu sayfayı görmek için giriş yapman gerekli'
+    go: 'Giriş formuna git'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
-    ok: 'OK'
+    header: 'Emin misin?'
+    yes: 'Evet, eminim.'
+    no: 'Hayır, iptal.'
+    ok: 'Tamam.'
     save: 'Save'
     dismiss: 'Dismiss'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
-    #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
-    #translationDisclaimer: >
-    #    The following text is just an auxiliary translation.
-    #    The only legally binding version of the Terms of Service is the English one, available
-    #    {https://en.pronouns.page/terms=here}.
-    content:
-        intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page</strong> and related subdomains and domains,
-            operated by the “Neutral Language Council” collective
-            and Nero Network (NL, KVK 88409120)
-            who can be contacted via email:
-        consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
-        accounts:
-            header: 'Users and accounts'
-            age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
-            authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
-            termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
-            inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
-        content:
-            header: 'Content'
-            ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
-            liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
-            violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
-            violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
-                queerphobia: 'queerphobia'
-                exclusionism: 'queer exclusionism'
-                sexism: 'sexism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
-                selfHarm: 'encouraging self-harm and/or suicide'
-                childPornography: 'child pornography'
-                pedophilia: 'broadly understood pedophilia advocacy'
-                unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
-                doxxing: 'sharing of someone else''s personal data'
-                spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
-                copyright: 'copyright or trademark violations'
-                miscellaneous: 'miscellaneous'
-            violationsStrict: >
-                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
-                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
-            responsibility: >
-                You are responsible for any Content posted on the Service.
-                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-                If you break the law, we will pass your information to law enforcement agencies.
-        closing:
-            header: 'General'
-            jurisdiction: >
-                The applicable law is the law of the Kingdom of Netherlands.
-            changes: >
-                We reserve the right to modify these Terms of Service at any time.
-                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    update:
-        header: 'We''ve updated our Terms of Service.'
-        intro: >
-            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on Jan 1st, 2023:
-        changes:
-            - >
-                The existing policy of banning profiles that advocate for pedophilia
-                (for example with so called “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=MAP}” flags),
-                which have been considered to fall under “Content that might break the law or violate social norms”,
-                will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
-
-privacy:
-    header: 'Privacy Policy'
-    # you can skip translating the rest of the "privacy" section
-    content:
-        intro: >
-            This Privacy Policy describes how the Service provided on the website
-            <strong>pronouns.page</strong> and related subdomains and domains
-            manages your personal data.
-            The Service is operated by the “Neutral Language Council” collective
-            and Nero Network (NL, KVK 88409120)
-            who can be contacted via email:
-        effort: >
-            We make every effort to store your data securely and to ensure that any non-public data we store
-            are not seized by or transferred to any third party, except those trusted parties described below.
-        data: >
-            Other than the data that you explicitly post on the Service as Content
-            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-            no additional private data connected to your account is being stored or processed by the Service.
-        editRemoval: >
-            You may edit or remove any Content you have posted on the Service.
-        contact: >
-            When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
-        cookies: >
-            We only use first-party cookies and local storage to keep you logged in and save your preferences.
-        plausible: >
-            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
-        arc: >
-            We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
-            You can read more about them and their privacy policy
-            {https://arc.io/faq=<strong>here</strong>}.
-        hCaptcha: >
-            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
-            You can read their privacy policy
-            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
-        ezoic: >
-            In order to fund the project we show ads using a third party technology called <strong>Ezoic</strong>.
-            You can opt-in to allow them to personalise your experience.
-            Their privacy policy is available {https://g.ezoic.net/privacy/pronouns.page=<strong>here</strong>}.
-        logsBackups: >
-            Logs and backups are stored for no longer than 18 months.
-        gdpr: >
-            Your personal data are protected by the GDPR, which means you have the right
-            to see, correct, update and remove the data we store about you.
-    consent:
-        header: 'Cookie consent'
-        required:
-            header: 'Required cookies'
-            description: >
-                We use cookies and local storage to save your preferences (eg. dark mode)
-                and we use privacy-friendly third-party tools (hCaptcha, Plausible) that might store their own cookies.
-            details: 'You can read more in our {/privacy=Privacy Policy}.'
-        optional:
-            header: 'Optional cookies'
-            description: >
-                We show ads to fund the project.
-                You can agree for related third-parties to store information about you
-                for the purposes of gathering statistics and personalising ads.
-            details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'
-        accept: 'Accept'
-        reject: 'Reject'
-        revoke: 'Revoke personalised ads consent'
+    header: 'Kullanım Şartları'
+    lastUpdate: 'Son güncelleme'
+    consent: 'Kayıt olarak {/terms=Kullanım Şartları}’mızı kabul ediyorsun.'
 
 admin:
-    header: 'Admin panel'
+    header: 'Admin Paneli'
     user:
-        user: 'User'
+        user: 'Kullanıcı'
         createdAt: 'Registration date'
         email: 'Email'
-        roles: 'Permissions'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        roles: 'Yetkiler'
+        profiles: 'Profiller'
+        confirmRole: ' @%username%''nın rolünü "%role%" olarak değiştirmek istediğine emin misin?'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: 'Boş…'
+    count: 'Say'
+    sort: 'Düzenlemek için sürükle'
+    scrollUp: 'Yukarıya çık'
+    more: 'Daha fazla'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: 'Genel API'
+    example: 'Örnek'
+    query: 'Sorgu dizisi parametreleri'
 
 quotation:
     start: '“'
@@ -1023,39 +789,38 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: 'Daha fazla ekle'
+    short: 'Dil versiyonu ekleme'
+    long: 'Yeni bir dil versiyonu mu oluşturmak istiyorsun? Süper! Lütfen bu sayfaya bak!'
+    longLink: 'Bu kılavuz!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: 'Buraya tıklayın veya resimlerinizi buraya sürükleyin.'
+        instructionShort: 'Yükle.'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'Bir hata oluştu, lütfen tekrar deneyin.'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'Lütfen spam ve DDoS saldırılarını engellemek için bot olmadığınızı kanıtlayın.'
+    invalid: 'Geçersiz CAPTCHA, Lütfen tekrar deneyin.'
 
 mode:
-    light: 'Light mode'
+    dark: 'Karanlık mod'
+    light: 'Aydınlık Mod'
     automatic: 'Automatic'
-    dark: 'Dark mode'
     reducedColours: 'Reduced colours'
 
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    confirmUnban: 'Are you sure you want to remove ban (proposals) of @%username%? Keep in mind that it''s probably worth discussing such cases on Teams'
-    header: 'Your profile is no longer public.'
-    banned: 'Profile not published'
-    termsIntro: 'According to our {/terms=Terms of Service}'
+    reason: 'Ban sebebi'
+    visible: '(Bu kullanıcıya açık olacaktır.)'
+    terms: 'Çiğnenen kurallar (gerekli)'
+    action: 'Bu kişiyi Banla'
+    confirm: '@%username%?''i Banlamak istediğinden emin misin?'
+    header: 'Banlandın. Profilin kimseye gözükmeyecek.'
+    banned: 'Banlandı.'
+    termsIntro: ' {/terms=Kullanım Şartlarımız}:a göre'
     appeal: >
         Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
@@ -1066,12 +831,12 @@ ban:
         please respond to this email and we might get another look in a bigger group.
 
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
+    action: 'suistimal raporla'
+    comment: 'Lütfen açık bir şekilde bu profilde yaşadığınız problemi anlatın.'
+    confirm: '@%username%?''i Şikayet etmek istediğinden emin misin?'
+    sent: 'Raporun gönderildi, yardımın için teşekkürler!'
+    terms: '{/terms=Kullanım Şartları}''na göre neyin yasak olduğunu aklına tut.'
+    hoarding: 'Lütfen “kullanıcı adı istifleme” için rapor gönderme. Biz zaten otomatik olarak kartı olmayan profilleri belli bir zaman geçtikten sonra aktif olmadıklarından kaldırıyoruz. Gönderdiğin rapor bu işi daha hızlı hale getirmeyecek.'
 
 translationMode:
     header: 'Translation Mode'
@@ -1089,212 +854,212 @@ translationMode:
     pause: 'Pause Translation Mode'
 
 flags:
-    Abroromantic: 'Abroromantic'
-    Abrosexual: 'Abrosexual'
-    Achillean: 'Achillean'
-    Alloromantic_Asexual: 'Alloromantic Asexual'
-    Agender: 'Agender'
-    Ambiamorous: 'Ambiamorous'
-    Anarcha-Queer: 'Anarcha-Queer'
-    Androgyne: 'Androgyne'
-    Androsexual: 'Androsexual'
-    Aporagender: 'Aporagender'
-    Archaeopronouns: 'Archaeopronouns'
-    Aroace: 'Aroace'
-    Aromantic: 'Aromantic'
-    Aromantic_Allosexual: 'Aromantic Allosexual'
-    Asexual: 'Asexual'
-    Autigender: 'Autigender'
+    Abroromantic: 'Abroromantik'
+    Abrosexual: 'Abroseksüel'
+    Achillean: 'Akhilleyan'
+    Alloromantic_Asexual: 'Alloromantik Aseksüel'
+    Agender: 'Cinsiyetsiz'
+    Ambiamorous: 'Ambiamori'
+    Anarcha-Queer: 'Anarşist-Kuir'
+    Androgyne: 'Androjin'
+    Androsexual: 'Androseksüel'
+    Aporagender: 'Ayrı Cinsiyet'
+    Archaeopronouns: 'Arkeozamirler'
+    Aroace: 'Aroas'
+    Aromantic: 'Aromantik'
+    Aromantic_Allosexual: 'Aromantik Alloseksüel'
+    Asexual: 'Aseksüel'
+    Autigender: 'Oticinsiyet'
     Bear: 'Bear'
-    Bicurious: 'Bicurious'
-    Bigender: 'Bigender'
-    Biromantic: 'Biromantic'
-    Bisexual: 'Bisexual'
+    Bicurious: 'Bi-merak'
+    Bigender: 'Bicinsiyet'
+    Biromantic: 'Biromantik'
+    Bisexual: 'Biseksüel'
     Butch: 'Butch'
-    Ceteroromantic: 'Ceteroromantic'
-    Ceterosexual: 'Ceterosexual'
-    Cis_Ally: 'Cis Ally'
-    Demiboy: 'Demiboy'
-    Demigender: 'Demigender'
-    Demigirl: 'Demigirl'
-    Demiromantic: 'Demiromantic'
-    Demisexual: 'Demisexual'
-    Diamoric: 'Diamoric'
-    Enbian: 'Enbian'
+    Ceteroromantic: 'Seteroromantik'
+    Ceterosexual: 'Seteroseksüel'
+    Cis_Ally: 'Cis Destekçi'
+    Demiboy: 'Demierkek'
+    Demigender: 'Demicinsiyet'
+    Demigirl: 'Demikız'
+    Demiromantic: 'Demiromantik'
+    Demisexual: 'Demiseksüel'
+    Diamoric: 'Diamorik'
+    Enbian: 'Enbiyen'
     Fa*afafine: 'Fa''afafine'
     Femme: 'Femme'
-    Gay: 'Gay'
-    Gender_Questioning: 'Gender Questioning'
+    Gay: 'Gey'
+    Gender_Questioning: 'Cinsiyet Sorguluyor'
     Genderfae: 'Genderfae'
     Genderfaun: 'Genderfaun'
-    Genderfluid: 'Genderfluid'
-    Genderflux: 'Genderflux'
-    Genderqueer: 'Genderqueer'
-    Greyasexual: 'Greyasexual'
-    Greyaromantic: 'Greyaromantic'
-    Gynesexual: 'Gynesexual'
-    Heteroflexible: 'Heteroflexible'
-    Heteroromantic: 'Heteroromantic'
-    Heterosexual: 'Heterosexual'
-    Hijra: 'Hijra'
-    Homoflexible: 'Homoflexible'
-    Homoromantic: 'Homoromantic'
-    Intersex: 'Intersex'
-    LGBTQ: 'LGBTQ'
-    Leather_Pride: 'Leather Pride'
-    Lesbian: 'Lesbian'
-    Lesbiromantic: 'Lesbiromantic'
+    Genderfluid: 'Akışkan Cinsiyet'
+    Genderflux: 'Genderfluks'
+    Genderqueer: 'Kuir Cinsiyet'
+    Greyasexual: 'Griseksüel'
+    Greyaromantic: 'Griromantik'
+    Gynesexual: 'Jinoseksüel'
+    Heteroflexible: 'Hetero-esnek'
+    Heteroromantic: 'Heteroromantik'
+    Heterosexual: 'Heteroseksüel'
+    Hijra: 'Hicra'
+    Homoflexible: 'Homo-esnek'
+    Homoromantic: 'Homoromantik'
+    Intersex: 'İnterseks'
+    LGBTQ: 'LGBTİ+'
+    Leather_Pride: 'Deri Onur'
+    Lesbian: 'Lezbiyen'
+    Lesbiromantic: 'Lezbiromantik'
     Maverique: 'Maverique'
-    Monoamorous: 'Monoamorous'
-    Monogamous: 'Monogamous'
+    Monoamorous: 'Monoamori'
+    Monogamous: 'Monogami'
     Muxe: 'Muxe'
-    Nebularomantic: 'Nebularomantic'
-    Neopronouns: 'Neopronouns'
+    Nebularomantic: 'Nebularomantik'
+    Neopronouns: 'Neozamirler'
     Neutrois: 'Neutrois'
-    Nonbinary: 'Nonbinary'
-    Omnisexual: 'Omnisexual'
-    Omniromantic: 'Omniromantic'
-    Oriented_Aroace: 'Oriented Aroace'
-    Pangender: 'Pangender'
-    Panromantic: 'Panromantic'
-    Pansexual: 'Pansexual'
-    Polyamorous: 'Polyamorous'
-    Polyromantic: 'Polyromantic'
-    Polysexual: 'Polysexual'
-    Pomoromantic: 'Pomoromantic'
-    Pomosexual: 'Pomosexual'
-    Progress_Pride: 'Progress Pride'
+    Nonbinary: 'Nonbinary (İkili Cinsiyet Sisteminin Dışında)'
+    Omnisexual: 'Omniseksüel'
+    Omniromantic: 'Omniromantik'
+    Oriented_Aroace: 'Yönelimli Aroas'
+    Pangender: 'Pancinsiyet'
+    Panromantic: 'Panromantik'
+    Pansexual: 'Panseksüel'
+    Polyamorous: 'Poliamori'
+    Polyromantic: 'Poliromantik'
+    Polysexual: 'Poliseksüel'
+    Pomoromantic: 'Pomoromantik'
+    Pomosexual: 'Pomoseksüel'
+    Progress_Pride: 'İlerleme Onuru'
     Queer: 'Queer'
-    Queerian: 'Queerian'
-    Queerplatonic: 'Queerplatonic'
-    Quoiromantic: 'Quoiromantic'
-    Sapphic: 'Sapphic'
-    Sexuality_Questioning: 'Sexuality Questioning'
-    Straight_Ally: 'Straight Ally'
-    Toric: 'Toric'
-    Transfeminine: 'Transfeminine'
-    Transgender: 'Transgender'
-    Transmasculine: 'Transmasculine'
-    Transneutral: 'Transneutral'
-    Trigender: 'Trigender'
-    Trixic: 'Trixic'
-    Two_Spirit: 'Two Spirit'
-    Xenogender: 'Xenogender'
+    Queerian: 'Queeriyan'
+    Queerplatonic: 'Queerplatonik'
+    Quoiromantic: 'Ne-romantik'
+    Sapphic: 'Saffik'
+    Sexuality_Questioning: 'Yönelimini Sorguluyor'
+    Straight_Ally: 'Hetero Destekçi'
+    Toric: 'Torik'
+    Transfeminine: 'Transfeminen'
+    Transgender: 'Transcinsiyet'
+    Transmasculine: 'Transmaskülen'
+    Transneutral: 'Transnötr'
+    Trigender: 'Tricinsiyet'
+    Trixic: 'Triksik'
+    Two_Spirit: 'İki Ruhlu'
+    Xenogender: 'Zenocinsiyet'
 
 calendar:
-    header: 'Calendar'
-    headerLong: 'Queer Calendar'
+    header: 'Takvim'
+    headerLong: 'Queer Takvimi'
     date: '%date% %year%'
     months:
-        1: 'January'
-        2: 'February'
-        3: 'March'
-        4: 'April'
-        5: 'May'
-        6: 'June'
-        7: 'July'
-        8: 'August'
-        9: 'September'
-        10: 'October'
-        11: 'November'
-        12: 'December'
+        1: 'Ocak'
+        2: 'Şubat'
+        3: 'Mart'
+        4: 'Nisan'
+        5: 'Mayıs'
+        6: 'Haziran'
+        7: 'Temmuz'
+        8: 'Ağustos'
+        9: 'Eylül'
+        10: 'Ekim'
+        11: 'Kasım'
+        12: 'Aralık'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: 'Ocak %day%'
+        2: 'Şubat %day%'
+        3: 'Mart %day%'
+        4: 'Nisan %day%'
+        5: 'Mayıs %day%'
+        6: 'Haziran %dy%'
+        7: 'Temmuz %day%'
+        8: 'Ağustos %day%'
+        9: 'Eylül %day%'
+        10: 'Ekim %day%'
+        11: 'Kasım %day%'
+        12: 'Aralık %day%'
     events:
-        pride_month: 'Pride Month'
-        trans_month: 'International Trans Awareness Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: 'Agender Pride Day	'
-        asexuality_day: 'International Asexuality Day'
-        bisexuality_day: 'Celebrate Bisexuality Day'
-        drag_day: 'Drag Day'
-        idahobit: 'International Day Against Homophobia, Transphobia and Biphobia'
-        intersex_day: 'Intersex Awareness Day'
-        intersex_remembrance_day: 'Intersex Day of Remembrance'
-        lesbian_day: 'International Lesbian Day'
-        lesbian_visibility_day: 'International Lesbian Visibility Day'
-        coming_out_day: 'Coming Out Day'
-        nonbinary_day: 'International Nonbinary People''s Day'
-        pan_day: 'Pansexual & Panromantic Awareness Day'
-        trans_remembrance_day: 'Transgender Day of Remembrance'
-        trans_visibility_day: 'International Trans Day of Visibility'
-        zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: 'Aromantic Spectrum Awareness Week'
-        asexual_week: 'Asexual Awareness Week'
-        bisexual_week: 'Bisexual Awareness Week'
-        pronouns_day: 'Pronouns Day'
-        trans_week: 'Trans Awareness Week'
-        trans_parent_day: 'Trans Parent Day'
-        nonbinary_week: 'Nonbinary Awareness Week'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: 'Polyamory Day'
-        homophobia_sport: 'International Day Against Homophobia in Sports'
-        gay_uncles_day: 'Gay Uncles Day'
-        lgbtq_stem: 'LGBTQ+ STEM Day'
-        trans_depathologization: 'International Day of Action for Trans Depathologization'
-        lgbti_book_day: 'International LGBTI Book Day'
-        human_rights_day: 'Human Rights Day'
-        nonbinary_parents_day: 'Nonbinary Parents'' Day'
-        trans_prisoner: 'Transgender Prisoner Day of Action and Solidarity'
-        xenogender_day: 'Xenogender Visibility Day'
-        genderqueer_day: 'Genderqueer Visibility Day'
-        genderfluid_day: 'Genderfluid Visibility Day'
-        aids_day: 'World AIDS Day'
-        tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'World Day of Social Justice'
-        stonewall_day: 'Anniversary of Stonewall Riots'
-        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
-        orlando_day: 'Pulse Night of Remembrance'
-        aids_memorial: 'International AIDS Candlelight Memorial'
-        health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: 'Lesbian Visibility Week'
-        demigender_day: 'Demigender Awareness Day'
-        pan_pride_day: 'Pansexual Pride Day'
-        transmasculine_day: 'Transmasculine People''s Day'
-        asexual_visibility_day: 'Asexual Visibility Day'
-        bi_health_month: 'Bisexual Health Awareness Month'
-        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
-        family_equality_day: 'International Family Equality Day'
-        aro_month: 'Aromantic Awareness Month'
-        black_ribbon_day: 'Black Ribbon Day'
-        black_queer_week: 'Black Queer History Week'
-        mena_lesbian_day: 'West Asian and North African Lesbian and Queer Women''s Pride Day'
-        hate_crime_awareness_week: 'Hate Crime Awareness Week'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'World Suicide Prevention Day'
-        suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: 'Genderfluid Awareness Week'
+        pride_month: '{/terminology#pride=Onur} Ayı'
+        trans_month: 'Uluslararası {/terminology#transgender=Trans Farkındalık} Ayı'
+        zaimki_birthday: 'Pronouns.page’in Doğum Günü'
+        agender_day: '{/terminology#agender=Agender} Pride Day '
+        asexuality_day: 'Uluslararası {/terminology#asexual=Aseksüel} Günü'
+        bisexuality_day: 'Uluslararası {/terminology#bisexual=Biseksüel} Günü'
+        drag_day: '{/terminology#drag=Drag} Day'
+        idahobit: 'Uluslararası {/terminology#homophobia=Homofobi}, {/terminology#transphobia=Transfobi} and {/terminology#biphobia=Bifobi} Karşıtlık Günü'
+        intersex_day: '{/terminology#intersex=Intersex} Farkındalık Günü'
+        intersex_remembrance_day: '{/terminology#intersex=Interseks} Anma Günü'
+        lesbian_day: 'Uluslararası {/terminology#lesbian=Lezbiyen} Günü'
+        lesbian_visibility_day: 'Uluslararası {/terminology#lesbian=Lezbiyen} Görünürlük Günü'
+        coming_out_day: '{/terminology#coming%20out=Açılma} Günü'
+        nonbinary_day: 'Uluslararası {/terminology#nonbinary=Nonbinary İnsanlar}ın Günü'
+        pan_day: '{/terminology#pansexual=Panseksüell} & {/terminology#panromantic=Panromantik} Farkındalık Günü'
+        trans_remembrance_day: '{/terminology#transgender=Trans} Anma Günü'
+        trans_visibility_day: 'International {/terminology#transgender=Trans} Görünürlük Günü'
+        zero_discrimination_day: 'Sıfır Ayrımcılık Günü'
+        arospec_week: '{/terminology#aromantic%20spectrum=Aromantik Spektrum} Farkındalık Haftası'
+        asexual_week: '{/terminology#asexual=Aseksüell} Farkındalık Haftası'
+        bisexual_week: '{/terminology#bisexual=Biseksüel} Farkındalık Haftası'
+        pronouns_day: 'Zamir Günü'
+        trans_week: '{/terminology#transgender=Trans} Farkındalık Haftası'
+        trans_parent_day: '{/terminology#transgender=Trans} Ebeveyn Günü'
+        nonbinary_week: '{/terminology#nonbinary=Nonbinary} Farkındalık Haftası'
+        nonbinary_week___timeDescription: '14 Temmuz’a Karşılık Gelen Hafta (Pazar-Pazartesi)'
+        polyamory_day: '{/terminology#polyamory=Polyamory} Günü'
+        homophobia_sport: 'Uluslararası Sporda {/terminology#homophobia=Homofobi} Karşıtlık Günü'
+        gay_uncles_day: '{/terminology#gay=Gay} Amcalar Günü'
+        lgbtq_stem: '{https://prideinstem.org/lgbtstemday/=LGBTQ+ STEM Günü}'
+        trans_depathologization: '{https://tgeu.org/stop-trans-pathologisation/=Trans Depatologizasyon için Uluslararası Eylem Günü}'
+        lgbti_book_day: '{https://creacuervos.com/dia-internacional-del-libro-de-tematica-lgbti/=Uluslararası LGBTI Kitap Günü}'
+        human_rights_day: '{https://en.wikipedia.org/wiki/Human_Rights_Day=} İnsan Hakları Günü'
+        nonbinary_parents_day: '{/terminology#nonbinary=Nonbinary} Ebeveynler Günü'
+        trans_prisoner: '{/terminology#transgender=Transgender} Tutuklular Eylem ve Dayanışma Günü'
+        xenogender_day: '{https://nonbinary.wiki/wiki/Xenogender=Xenogender} Görünürlük Günü'
+        genderqueer_day: '{/terminology#genderqueer=Genderqueer} Görünürlük Günü'
+        genderfluid_day: '{/terminology#genderfluid=Genderfluid} Görünürlük Günü'
+        aids_day: 'Dünya AIDS Günü'
+        tolerance_day: 'Uluslararası Hoşgörü Günü'
+        social_justice_day: 'Dünya Sosyal Adalet Günü'
+        stonewall_day: 'Stonewall İsyanlarının Yıldönümü'
+        domestic_violence: 'LGBTQ Ailevi Şiddet Farkındalık Günü'
+        polysexual_day: '{/terminology#polysexual=Polyseksüel} & {/terminology#polyromantic=Polyromantik} Görünürlük Günü'
+        orlando_day: 'Pulse Anma Haftası'
+        aids_memorial: 'Uluslararası AIDS Mum Işığı Anıtı'
+        health_week: 'LGBT Sağlık Farkındalığı Haftası'
+        lesbian_visibility_week: '{/terminology#lesbian=Lezbiyen} Görünürlük Haftası'
+        demigender_day: '{/terminology#demigender=Demicinsiyet} Farkındalık Günü'
+        pan_pride_day: '{/terminology#pansexual=Panseksüel} Onur günü'
+        transmasculine_day: '{/terminology#transmasculine=Transmaskülen} Kişiler Günü'
+        asexual_visibility_day: '{/terminology#asexual=Aseksüel} Görünürlük Günü'
+        bi_health_month: '{/terminology#bisexual=Biseksüel} Sağlığı Farkındalık Ayı'
+        holocaust_remembrance_day: 'Uluslararası Holokost Anma Günü'
+        family_equality_day: 'Uluslararası Aile Eşitliği Günü'
+        aro_month: '{/terminology#aromantic=Aromantik} Farkındalık Haftası'
+        black_ribbon_day: 'Siyah kurdele günü'
+        black_queer_week: 'Siyahi {/terminology#queer=Queer} Tarihi Haftası'
+        mena_lesbian_day: '{https://cihrs.org/%E2%80%8Efirst-annual-mena-lesbian-and-queer-womens-pride-day-in-honor-of-sarah-hegazi/?lang=en=Middle Eastern and North African} {/terminology#lesbian=Lezbiyen} ve {/terminology#queer=Queer} Kadınlarının Onur Günü'
+        hate_crime_awareness_week: 'Nefret Suçu Farkındalık Haftası'
+        deaf_awareness_week: 'Sağır LGBTQ Farkındalık Haftası'
+        suicide_prevention_day: 'Dünya İntihar Önleme Günü'
+        suicide_prevention_month: 'İntihar Önleme Ayı'
+        aids_awareness_month: 'AIDS Farkındalık Ayı'
+        genderfluid_week: '{/terminology#genderfluid=Genderfluid} Farkındalık Haftası'
         pan_week: 'Pan Week'
         parents_day: 'Gender Expansive Parents'' Day'
         hiv_testing_day: 'International HIV Testing Day'
         freedressing_day: 'Freedressing Awareness Day'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
-        world_sexual_health_day: 'World Sexual Health Day'
-        aids_vaccine_day: 'World AIDS Vaccine Day'
-        queer_youth_day: 'Queer Youth Day'
-        omnisexual_day: 'Omnisexual Visibility Day'
-        unlabeled_day: 'Unlabeled Visibility Day'
-        trans_youth_day: 'Trans Children and Youth Visibility Day'
-        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day'
-        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day'
-        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day'
-        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day'
-        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
-        trans_hiv_testing_day: 'Transgender HIV Testing Day'
+        sexual_health_day: 'Cinsel ve Üreme Sağlığı Farkındalık Günü'
+        world_sexual_health_day: 'Dünya Cinsel Sağlık Günü'
+        aids_vaccine_day: 'Dünya AIDS Aşısı Günü'
+        queer_youth_day: 'Queer Gençlik Günü'
+        ominsexual_day: 'Omniseksüel Görünürlük Günü'
+        unlabeled_day: 'Etiketsiz Farkındalık Günü'
+        trans_youth_day: 'Trans Genç ve Çocuk Farkındalık Günü'
+        hiv_long_term_survivors_day: 'HIV Uzun Süreli Hayatta Kalanlar İçin Farkındalık Günü'
+        women_hiv_awareness_day: 'Kadın ve Kız HIV/AIDS Farkındalık Günü'
+        youth_hiv_awareness_day: 'Gençlik HIV/AIDS Farkınalık Günü'
+        gay_hiv_awareness_day: 'Gay Erkek  HIV/AIDS Farkındalık Günü'
+        black_hiv_awareness_day: 'Siyah HIV/AIDS Farkındalık Günü'
+        hiv_aging_awareness_day: 'HIV/AIDS'
+        trans_hiv_testing_day: 'Trans HIV/AIDS Test Yaptırma Günü'
         mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'
         mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'
         mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'
@@ -1319,18 +1084,20 @@ calendar:
         bi_creators_day: 'Bisexual Creators Day'
         wrath_month: 'Queer Wrath Month'
         lesbian_aunts_day: 'Lesbian Aunts Day'
-    banner: 'We''re celebrating/commemorating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+    banner: 'Kutluyoruz'
+    celebrating_custom: 'Şu XZ kutlanır'
+    celebrating_day: 'Bu gün kutlanır'
+    celebrating_week: 'Bu hafta kutlanır'
+    celebrating_month: 'Bu ay kutlanır'
     image:
-        header: 'Download an image'
+        header: 'Bir görüntü indir'
+        overview: 'Genel bakış'
+        labels: 'Sınıflandırma'
     view:
         grid: 'Grid view'
         list: 'Events list'
-    link: 'Link'
-    full: 'Full calendar'
+    link: 'Bağlantı'
+    full: 'Tam Takvim'
 
 ukraine:
     header: 'We stand with Ukraine.'
