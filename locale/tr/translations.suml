@@ -465,7 +465,7 @@ user:
         emailSent: 'Sana 6 haneli bir e-posta gönderdik. Buraya gir. Kod sadece tek kullanımlık ve 15 dakika süre zafında geçerlidir.'
         userNotFound: 'Kullanıcı bulunamadı.'
         email:
-            subject: 'Giriş kodun %code%'
+            subject: 'Giriş kodun {{code}}'
             content: |
                 E-posta hesabını onaylamak için sana verilen tek kullanımlık kodu siteye gir: %code%.
                 Eğer bu kodu sen istemediysen sadece bu iletiyi görmezden gel.
