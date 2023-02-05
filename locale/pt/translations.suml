@@ -374,7 +374,7 @@ english: ~
 contact:
     authors: 'Autories do site'
     team:
-        name: 'O coletivo "Conselho da Língua Neutra"'
+        name: 'O coletivo "Conselho da Linguagem Neutra"'
         nameShort: 'Coletivo'
         description:
             - >
@@ -624,6 +624,14 @@ profile:
             mora</strong>. Opcionalmente, você também pode escolher mostrar sua localização aproximada.
         publishLocation: 'Publicar a área em seu cartão'
         approximate: 'É apenas uma localização aproximada'
+    sensitive:
+        header: 'Aviso de conteúdo'
+        info: >
+            Alguns conteúdos são permitidos pelos nossos {/terms=Terms of Service}, mas que ainda podem não ser
+            apropriados para menores de idade, potencialmente engatilhando pessoas com traumas, etc. Por favor, aja com
+            respeito com quem visita seu cartão e avise previamente sobre tal conteúdo. Exemplos de Aviso de Conteúdo
+            podem ser a "menção ao álcool", " insinuações sexuais", "menção á uma situação queerfóbica"...
+        hide: ' Desfocar o cartão'
     opinion:
         header: 'Legenda/opiniões'
         yes: 'Claro'
@@ -632,12 +640,12 @@ profile:
         meh: 'OK'
         no: 'Não'
         custom: 'customizados, adicionados por usuárie:'
-        description: 'Descrição…'
+        description: 'Descrição...'
         colours:
             _: '(Cor da fonte…)'
             pink: 'Rosa'
-            orange: 'Laranja'
             red: 'Vermelho'
+            orange: 'Laranja'
             green: 'Verde'
             blue: 'Azul'
             grey: 'Cinza'
@@ -647,9 +655,9 @@ profile:
             italics: 'Itálico'
             small: 'Pequeno'
         validation:
-            missingIcon: 'O ícone é requerido'
-            missingDescription: 'A descrição é requerida'
-            duplicateIcon: 'O ícone deve ser único'
+            missingIcon: 'Ícone é necessário'
+            missingDescription: 'Descrição é necessária'
+            duplicateIcon: 'Ícone deve ser único'
             duplicateDescription: 'A descrição deve ser única'
             invalidOpinion: 'O ícone selecionado não foi encontrado na legenda abaixo'
     wordsColumnHeader: 'Coluna de cabeçalho'
