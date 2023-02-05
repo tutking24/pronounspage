@@ -687,7 +687,13 @@ profile:
     flagsInfo: 'Перетягніть ваші прайд-прапори в цю рамку.'
     flagsCustom: 'Завантажити користувацький прайд-прапор'
     flagsCustomWarning: 'Цей прайд-прапор був доданий користувач_кою. Команда pronouns.page не несе відповідальності за це.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
+    flagsCustomForm:
+        label: 'Назва лейбла'
+        description: '(опціонально) Короткий опис лейбла'
+        link: '(опціонально) Посилання на інформацію про це'
+        alt: '(опціонально) Альтернативний текст, що описує вигляд прапора (приклад нижче)'
+        altExample: 'Приклад формулювання альтернативного тексту'
     links: 'Посилання'
     linksRecommended: 'Рекомендуємо перейти за цими посиланням'
     timezone:
@@ -840,6 +846,8 @@ crud:
     validation:
         genericForm: 'Надана форма недійсна. Виправте проблеми та надішліть знову.'
         listMaxLength: 'Максимальна кількість елементів в цьому списку %maxlength%.'
+        invalidLink: 'Неправильний формат посилання'
+    alt: 'Альтернативний текст'
 
 footer:
     license: >
