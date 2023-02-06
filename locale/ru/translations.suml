@@ -508,7 +508,7 @@ contact:
             header: 'Отправить запрос на изменения'
             footer: 'Технические задачи	'
             description: >
-                Технические задания перечислены {https://gitlab.com/Avris/Zaimki/-/boards=здесь}. Просто выберите
+                Технические задания перечислены {https://gitlab.com/PronounsPage/PronounsPage/-/boards=здесь}. Просто выберите
                 невыполненные задания в списке“To Do” и займитесь ими. Не стесняйтесь задавать вопросы!
 translationMode:
     action: 'Предложить перевод'
@@ -772,7 +772,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Исходный код} и содержимое лицензированы {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Исходный код} и содержимое лицензированы {/license=OQL}.
     links: 'Связаться с нами, социальные сети'
     legal: 'Юридические вопросы'
     financial: 'Финансовая прозрачность'

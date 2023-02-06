@@ -371,7 +371,7 @@ contact:
         technical:
             header: '提交合併請求'
             description: >
-                技術相關的工作可在{https://gitlab.com/Avris/Zaimki/-/boards=此看板}上找到。
+                技術相關的工作可在{https://gitlab.com/PronounsPage/PronounsPage/-/boards=此看板}上找到。
                 您只需在“To-Do”欄上挑選一項任務，把您自己指派到該任務即可開始。如有問題請盡管問。
             footer: '技術任務'
 
@@ -601,7 +601,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=原始碼}及內容採用{/license=OQL}條款授權。
+        {https://gitlab.com/PronounsPage/PronounsPage=原始碼}及內容採用{/license=OQL}條款授權。
     links: '聯絡我們'
     legal: '法律相關'
     financial: '財務報告' # TODO: could also be 財政透明

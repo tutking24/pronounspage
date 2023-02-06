@@ -582,7 +582,7 @@ contact:
                 працювати.
         technical:
             description: >
-                Керування технічними завданнями здійснюється на {https://gitlab.com/Avris/Zaimki/-/boards=цій канбан
+                Керування технічними завданнями здійснюється на {https://gitlab.com/PronounsPage/PronounsPage/-/boards=цій канбан
                 дощці}. Просто виберіть непоставлене завдання зі стовпця "To Do", призначте його собі та починайте над
                 ним працювати. Не соромтеся задавати запитання.
             header: 'Надішліть запит на отримання'
@@ -843,7 +843,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Вихідний код} та вміст ліцензовані {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Вихідний код} та вміст ліцензовані {/license=OQL}.
     links: 'Зв''язатися з нами, соціальні мережі'
     legal: 'Легально'
     financial: 'Фінансова прозорість'

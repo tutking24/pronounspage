@@ -486,7 +486,7 @@ contact:
         technical:
             header: 'Submit a pull request'
             description: >
-                Technical tasks are managed on {https://gitlab.com/Avris/Zaimki/-/boards=this kanban board}.
+                Technical tasks are managed on {https://gitlab.com/PronounsPage/PronounsPage/-/boards=this kanban board}.
                 Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
                 Don't hesitate to ask questions.
             footer: 'Technical tasks'
@@ -653,7 +653,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Il codice sorgente} e i contenuti sono rilasciati secondo la licenza {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Il codice sorgente} e i contenuti sono rilasciati secondo la licenza {/license=OQL}.
     links: 'Contatti, social media'
     legal: 'Questioni legali'
     financial: 'Trasparenza finanziaria'

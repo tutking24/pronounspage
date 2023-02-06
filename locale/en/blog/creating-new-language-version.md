@@ -13,7 +13,7 @@ We'll invite you to our [Teams](https://www.microsoft.com/en-us/microsoft-365/mi
 and offer support.
 
 If you know how to work with tools like Git, Yarn, JavaScript etc.,
-you can head to [the source code](https://gitlab.com/Avris/Zaimki/),
+you can head to [the source code](https://gitlab.com/PronounsPage/PronounsPage/),
 clone the repository and set up the project according to the instruction in README.md.
 You'll be able to see the changes in real time as you make them.
 Push them to a separate branch and submit a pull request.
@@ -22,7 +22,7 @@ Otherwise, don't worry. You can still help localise the project without knowing 
 I'll prepare all the necessary files in a dedicated Teams channel – you can just start editing.
 
 Alternatively:
-Click [here](https://gitlab.com/Avris/Zaimki/-/archive/main/Zaimki-main.zip) to download a zip file with the code.
+Click [here](https://gitlab.com/PronounsPage/PronounsPage/-/archive/main/Zaimki-main.zip) to download a zip file with the code.
 Don't mind everything else, just create a copy of the `/locale/_base` directory,
 calling the copy according to the new language code.
 Instead of `_base` (a version of English modified for this purpose) you can use a different language as a base,
@@ -32,7 +32,7 @@ eg. for translating into Slavic languages it might be better to start with `pl` 
 Inside that directory hides all the config and code related to the specific language.
 The most important files are:
 
-## [translation.suml](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/_base/translations.suml)
+## [translation.suml](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/_base/translations.suml)
 
 This file contains translation keys with corresponding values.
 Basically, keep everything before the colon as it is, and translate everything after the colon into your language.
@@ -44,7 +44,7 @@ Also, remember that not everything in this file will necessarily require a trans
 For instance, the Polish locale contains translations for the “names” module,
 which a new language will probably not have right away (although might be added later).
 
-## [config.suml](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/_base/config.suml)
+## [config.suml](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/_base/config.suml)
 
 Although this file is very important, I don't expect you to handle it, if you're not a technical person.
 Still, some translations are also included there, so please go through it and see if you can do something useful there.
@@ -54,16 +54,16 @@ This file contains for example a definition of [links](/link), [authors](/contac
 You can either adjust those definitions directly in this file if you can,
 or you can just put them in some Word or Excel file for me to handle.
 
-## [pronouns/pronouns.tsv](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/_base/pronouns/pronouns.tsv)
+## [pronouns/pronouns.tsv](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/_base/pronouns/pronouns.tsv)
 
 This file is a table of pronouns. You can edit it in Excel or just a text editor (just keep the tabs where they were).
 Columns from `pronoun_subject` to `reflexive` can be removed and replaced with other forms relevant to your language.
 
-## [pronouns/pronounGroups.tsv](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/_base/pronouns/pronounGroups.tsv)
+## [pronouns/pronounGroups.tsv](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/_base/pronouns/pronounGroups.tsv)
 
 This table contains the groups of pronouns.
 
-## [pronouns/examples.tsv](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/_base/pronouns/examples.tsv)
+## [pronouns/examples.tsv](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/_base/pronouns/examples.tsv)
 
 This table contains the example sentences – with placeholders for the pronouns to be inserted into.
 If plural sentence is the same as singular you can leave the second column empty.

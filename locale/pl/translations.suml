@@ -1240,7 +1240,7 @@ contact:
         technical:
             header: 'Zgłoś pull requesta'
             description: >
-                Technicznymi zadaniami zarządzamy poprzez {https://gitlab.com/Avris/Zaimki/-/boards=ten kanban board}.
+                Technicznymi zadaniami zarządzamy poprzez {https://gitlab.com/PronounsPage/PronounsPage/-/boards=ten kanban board}.
                 Wybierz nieprzypisanego do nikogo taska z kolumny „To Do”, przypisz go do siebie i zacznij pracę.
                 Nie bój się zadawać pytań.
             footer: 'Zadania techniczne'
@@ -1574,7 +1574,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL}.
     links: 'Kontakt, social media'
     legal: 'Prawne'
     financial: 'Przejrzystość finansowa'

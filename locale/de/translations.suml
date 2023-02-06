@@ -455,7 +455,7 @@ contact:
                 vorschlagen“ und folgen Sie den Anweisungen.
         technical:
             description: >
-                Technische Aufgaben werden auf {https://gitlab.com/Avris/Zaimki/-/boards=diesem kanban board} verwaltet.
+                Technische Aufgaben werden auf {https://gitlab.com/PronounsPage/PronounsPage/-/boards=diesem kanban board} verwaltet.
                 Wählen einfach eine nicht zugewiesene Aufgabe aus der Spalte „To Do“ aus, weise sie dir selbst zu und
                 beginne mit der Arbeit daran. Zögere nicht, Fragen zu stellen.
             header: 'Reiche eine Pull-Anfrage ein'
@@ -680,7 +680,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Der Quellcode} und der Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
+        {https://gitlab.com/PronounsPage/PronounsPage=Der Quellcode} und der Inhalt sind unter der {/license=OQL} Lizenz veröffentlicht.
     links: 'Kontakt & Social Media'
     legal: 'Rechtliches'
     financial: 'Finanzielle Transparenz'

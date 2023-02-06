@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-git clone git@gitlab.com:Avris/Zaimki.git
+git clone git@gitlab.com:PronounsPage/PronounsPage.git
 ```
 
 We're using FontAwesome Pro, so to set up a local copy without having a FA license,

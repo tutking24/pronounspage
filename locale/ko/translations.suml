@@ -475,7 +475,7 @@ contact:
         technical:
             header: '풀 요청 제출하기'
             description: >
-                기술 작업은 {https://gitlab.com/Avris/Zaimki/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
+                기술 작업은 {https://gitlab.com/PronounsPage/PronounsPage/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
                 할당하고 작업을 시작하세요. 질문이 있으면 주저하지 말고 물어 주세요.
             footer: '기술 작업'
 
@@ -697,7 +697,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
+        {https://gitlab.com/PronounsPage/PronounsPage=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
     links: '연락처, SNS'
     legal: '합법'
     financial: '재무 투명성'

@@ -719,7 +719,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Source code} and content are licensed under {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Source code} and content are licensed under {/license=OQL}.
     links: 'İletişim, sosyal medya, destek'
     legal: 'Legal'
     financial: 'Financial transparency'

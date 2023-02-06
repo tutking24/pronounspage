@@ -565,7 +565,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Code source} et le contenu sont sous licence {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Code source} et le contenu sont sous licence {/license=OQL}.
     links: 'Contact, réseaux sociaux'
     legal: 'Légal'
     financial: 'Transparence financière'

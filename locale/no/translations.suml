@@ -410,7 +410,7 @@ contact:
                 instruksjonene.
         technical:
             description: >
-                Tekniske oppgaver er behandlet på {https://gitlab.com/Avris/Zaimki/-/boards=dette kanban brettet}. Bare
+                Tekniske oppgaver er behandlet på {https://gitlab.com/PronounsPage/PronounsPage/-/boards=dette kanban brettet}. Bare
                 velg en oppgave som ikke er tilordnet, tildel den til deg selv og begynn å jobb. Ikke nøl med å spørre
                 spørsmål.
             header: 'Send inn en pull forespørsel'
@@ -651,7 +651,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kildekode} og Innholdet er lisensiert under {/license=OQL}-lisensen.
+        {https://gitlab.com/PronounsPage/PronounsPage=Kildekode} og Innholdet er lisensiert under {/license=OQL}-lisensen.
     links: 'Kontakt, sosiale medier'
     legal: 'Legal' # TODO
     financial: 'Økonomisk gjennomsiktighet'

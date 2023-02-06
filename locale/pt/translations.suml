@@ -425,7 +425,7 @@ contact:
         technical:
             footer: 'Tarefas Técnicas'
             description: >
-                Trabalhos mais técnicos são gerenciados {https://gitlab.com/Avris/Zaimki/-/boards= neste painel Kanban}.
+                Trabalhos mais técnicos são gerenciados {https://gitlab.com/PronounsPage/PronounsPage/-/boards= neste painel Kanban}.
                 Basta escolher uma tarefa na coluna "To Do", atribuí-la a si mesme e começar a trabalhar nela. Se tiver
                 alguma dúvida, pergunte-nos.
             header: 'Solicite alterações no código '
@@ -697,7 +697,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=O código-fonte} e o conteúdo são licenciados sob a licença {/license=OQL}.
     links: 'Contato, redes sociais'
     legal: 'Assuntos jurídicos'
     financial: 'Transparência financeira'
