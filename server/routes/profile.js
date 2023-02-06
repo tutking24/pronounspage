@@ -92,7 +92,7 @@ const fetchProfiles = async (db, username, self) => {
     for (let profile of profiles) {
         const links = JSON.parse(profile.links).map(l => normaliseUrl(l)).filter(l => !!l);
         const linksMetadata = {};
-        for (let link of await db.all(SQL`SELECT * FROM links WHERE url IN (`.append(links.map(k => `'${k}'`).join(',')).append(SQL`)`))) {
+        for (let link of await db.all(SQL`SELECT * FROM links WHERE url IN (`.append(links.map(k => `'${k.replace(/'/g, "''")}'`).join(',')).append(SQL`)`))) {
             linksMetadata[link.url] = {
                 favicon: link.favicon,
                 relMe: JSON.parse(link.relMe),
