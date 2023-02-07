@@ -374,7 +374,7 @@ english: ~
 contact:
     authors: 'Autories do site'
     team:
-        name: 'O coletivo "Conselho da Língua Neutra"'
+        name: 'O coletivo "Conselho da Linguagem Neutra"'
         nameShort: 'Coletivo'
         description:
             - >
@@ -624,6 +624,14 @@ profile:
             mora</strong>. Opcionalmente, você também pode escolher mostrar sua localização aproximada.
         publishLocation: 'Publicar a área em seu cartão'
         approximate: 'É apenas uma localização aproximada'
+    sensitive:
+        header: 'Aviso de conteúdo'
+        info: >
+            Alguns conteúdos são permitidos pelos nossos {/terms=Terms of Service}, mas que ainda podem não ser
+            apropriados para menores de idade, potencialmente engatilhando pessoas com traumas, etc. Por favor, aja com
+            respeito com quem visita seu cartão e avise previamente sobre tal conteúdo. Exemplos de Aviso de Conteúdo
+            podem ser a "menção ao álcool", " insinuações sexuais", "menção á uma situação queerfóbica"...
+        hide: ' Desfocar o cartão'
     opinion:
         header: 'Legenda/opiniões'
         yes: 'Claro'
