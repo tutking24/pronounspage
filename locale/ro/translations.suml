@@ -683,6 +683,12 @@ profile:
     flagsCustom: 'Încarcă steaguri personalizate'
     flagsCustomWarning: 'Acest steag a fost încărcat de către un utilizator. Echipa pronouns.page nu este responsabilă pentru el.'
     flagsAsterisk: 'Aceasta nu este o identitate queer, dar o includem pentru persoanele ce sunt queer în alte feluri (ex: persoanele trans straight).'
+    flagsCustomForm:
+        label: 'Nume etichetă'
+        description: '(opțional) O descriere scurtă a etichetei'
+        link: '(opțional) Link pentru mai multe informații'
+        alt: '(opțional) Text alternativ ce descrie aspectul steagului (vezi mai jos)'
+        altExample: 'Un exemplu cum ar putea fi structurat un text alternativ'
     links: 'Linkuri'
     linksRecommended: 'Recomandăm să adaugi linkuri la'
     verifiedLinks:
@@ -828,6 +834,8 @@ crud:
     validation:
         genericForm: 'Formularul trimis este invalid. Repară greșelile și trimite-l din nou.'
         listMaxLength: 'Numărul maxim de elemente din lista aceasta este de: %maxlength%.'
+        invalidLink: 'Format URL invalid'
+    alt: 'Text alternativ'
 
 footer:
     license: >
