@@ -13,6 +13,7 @@ const locale = config.locale;
 const locales = buildLocaleList(locale);
 const title = translations.title;
 const description = translations.description;
+const keywords = (translations?.seo?.keywords || []).join(', ')
 const banner = process.env.BASE_URL + '/api/banner/zaimki.png';
 const colour = '#C71585';
 const logo = fs.readFileSync(__dirname + '/static/logo/logo.svg').toString('utf-8').replace('/></svg>', 'fill="currentColor"/></svg>');
@@ -115,6 +116,8 @@ export default {
             { charset: 'utf-8' },
 
             { hid: 'description', name: 'description', content: description },
+
+            { hid: 'keywords', name: 'keywords', content: keywords },
 
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: title },
@@ -231,6 +234,7 @@ export default {
         PLAUSIBLE_API_HOST: process.env.PLAUSIBLE_API_HOST,
         HEARTBEAT_LINK: process.env.HEARTBEAT_LINK,
         VERSION: version,
+        KEYWORDS: keywords,
     },
     serverMiddleware: [
         '~/server/no-ssr.js',

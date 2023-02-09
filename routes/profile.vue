@@ -195,6 +195,8 @@
 <script>
     import { head } from "../src/helpers";
     import opinions from '../src/opinions';
+    import {buildPronoun} from "../src/buildPronoun";
+    import {pronouns} from "../src/data";
 
     export default {
         data() {
@@ -304,11 +306,21 @@
             },
         },
         head() {
+            const mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
+
             return head({
                 title: `@${this.username}`,
                 description: this.profile ? this.profile.description : null,
                 banner: `api/banner/@${this.username}.png`,
                 noindex: true,
+                keywords: this.profile ? this.profile.flags.map(flag => {
+                    const flagName = process.env.FLAGS[flag];
+                    return flag.startsWith('-')
+                        ? flagName
+                        : mainPronoun.format(
+                            this.$t(`flags.${flagName.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || flagName
+                        );
+                }) : undefined,
             });
         },
     }
