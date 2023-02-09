@@ -95,6 +95,17 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
     return res.json(id);
 }));
 
+const normaliseCensusGraph = (graph) => {
+    const newGraph = {};
+    Object.entries(graph).forEach(([date, count]) => {
+        date = date.substring(5); // remove year
+        if (date.startsWith('02')) { // only accept February (other months might appear because of a timezone bug, dismiss them)
+            newGraph[date] = count;
+        }
+    });
+    return newGraph;
+}
+
 router.get('/census/count', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('census')) {
         return res.json({
@@ -137,16 +148,16 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
             Object.entries(
                 groupBy(
                     await req.db.all(SQL`
-                    SELECT edition, id
-                    FROM census
-                    WHERE locale = ${global.config.locale}
-                          AND relevant = 1
-                          AND troll = 0
-                `),
+                        SELECT edition, id
+                        FROM census
+                        WHERE locale = ${global.config.locale}
+                              AND relevant = 1
+                              AND troll = 0
+                    `),
                     r => r.edition
                 )
             ).map(([edition, rows]) => {
-                return [edition, buildChart(rows, false)];
+                return [edition, normaliseCensusGraph(buildChart(rows, false))];
             })
         ),
     });
