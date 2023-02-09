@@ -309,7 +309,7 @@
             return head({
                 title: this.$t('census.headerLong'),
                 description: this.$t('census.description')[0],
-                banner: 'img-local/census-banner.png',
+                banner: 'img-local/census/census-banner.png',
             });
         },
     };
