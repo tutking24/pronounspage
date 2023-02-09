@@ -795,7 +795,7 @@ terms:
                 impersonation: '사칭'
                 selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
-                unlawfulConduct: 'unlawful conduct'
+                unlawfulConduct: '불법 행위를'
                 misinformation: '오보'
                 doxxing: 'sharing of someone else''s personal data'
                 spam: '스팸'
@@ -964,7 +964,7 @@ flags:
     Aporagender: 'Aporagénero'
     Archaeopronouns: 'Arqueopronombres'
     Aroace: 'Arro-as'
-    Aromantic: 'Arrománti{inflection_c}'
+    Aromantic: '로맨틱 끌림{inflection_c}'
     Aromantic_Allosexual: 'Arrománti{inflection_c} alosexual'
     Asexual: '무성애자'
     Autigender: 'Autisgénero'
