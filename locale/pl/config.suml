@@ -745,6 +745,12 @@ links:
             url: 'https://ryzykonarracyjne.pl/blog/artykuly/ryzykowne-artykuly-feminatywy-w-rpg-a-na-co-to-komu/'
             headline: 'Ryzykowne artykuły: Feminatywy w RPG? A na co to komu?'
             extra: ' – Ryzyko Narracyjne'
+        -
+            lang: ['en']
+            icon: 'books'
+            url: 'https://www.thepolishcourse.com/how-to-speak-and-write-polish-in-a-gender-neutral-way/'
+            headline: 'How to speak and write Polish in an inclusive way?'
+            extra: ' – The Polish Course'
     mediaGuests:
         -
             icon: 'newspaper'
