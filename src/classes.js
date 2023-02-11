@@ -467,6 +467,27 @@ export class Pronoun {
             } else if (data.length === 24) {
                 data.splice(2, 0, data[4]);
             }
+
+            if (data.length < 30) {
+                data = [
+                    data[0],
+                    data[1],
+                    // g
+                    data[2],
+                    data[1],
+                    data[1].replace(/^je/, 'nie'),
+                    // d
+                    data[4].replace(/^je/, ''),
+                    data[4],
+                    data[4].replace(/^je/, 'nie'),
+                    // a
+                    data[5].replace(/^je/, ''),
+                    data[5],
+                    data[5].replace(/^je/, 'nie'),
+                    // rest
+                    ...data.slice(6),
+                ];
+            }
         }
 
         if (config.pronouns.plurals) {

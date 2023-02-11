@@ -1,10 +1,8 @@
 # Co warto wiedzieć o używaniu (i tworzeniu) zaimków?
 
-<small>2023-02-01 | [@Szymon](/@Szymon)</small>
+<small>2023-02-11 | [@Szymon](/@Szymon)</small>
 
-<!-- ![TODO](/img-local/blog/TODO.jpg) -->
-
-**// TODO: przydałaby się ilustracja**
+![Zdjęcie wyciętych kawałków papieru z podpisami ułożonych w trzy grupy: „je-”, „nie–” i „-nu”; „ni-”, „j–” i „-ą”; „nie-”, „je–” i „-go”](/img-local/blog/zaimki-wycinanki.jpg)
 
 Ostatnio trochę odświeżyłyśmy podstrony z zaimkami, dodając więcej przykładowych zdań, 
 by w pełni zaprezentować wszystkie formy w jakich występują.

@@ -63,7 +63,6 @@
                                     </li>
                                 </ul>
                             </div>
-
                             <div class="alert alert-primary">
                                 <p class="h3 mb-0 text-center">
                                     <Spelling :text="selectedPronoun.name(glue)"/>
@@ -75,7 +74,6 @@
                                     />
                                 </p>
                             </div>
-
                             <p>
                                 <T>pronouns.examples</T><T>quotation.colon</T>
                             </p>

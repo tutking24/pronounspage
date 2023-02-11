@@ -52,6 +52,7 @@ export default class Compressor {
             }
         }
 
+        // i know, i know…
         if (locale === 'pl' && uncompressed.length === 24 && base.length === 25) {
             return Compressor.uncompress(data, [...base.slice(0, 2), ...base.slice(3)], locale);
         }
