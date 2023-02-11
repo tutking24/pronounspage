@@ -20,6 +20,7 @@
                         <li>{{countResponses.usable}} <T>census.repliesUsable</T></li>
                         <li><nuxt-link :to="`/${config.census.route}/admin`">{{countResponses.awaiting}} <T>census.repliesAwaiting</T></nuxt-link></li>
                     </ul>
+                    <ChartSet name="useful responses" :data="countResponses.graphs" init="cumulative" class="mb-3"/>
                 </div>
             </section>
 
@@ -304,7 +305,7 @@
             return head({
                 title: this.$t('census.headerLong'),
                 description: this.$t('census.description')[0],
-                banner: 'img-local/census-banner.png',
+                banner: 'img-local/census/census-banner.png',
             });
         },
     };

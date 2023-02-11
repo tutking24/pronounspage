@@ -5,6 +5,20 @@
 <script>
     import {sleep} from "../src/helpers";
 
+    const COLOURS = [
+        '#C71585',
+        '#dc3545',
+        '#fd7e14',
+        '#ffc107',
+        '#198754',
+        '#20c997',
+        '#0dcaf0',
+        '#0d6efd',
+        '#6610f2',
+        '#6f42c1',
+        '#d63384',
+    ];
+
     export default {
         props: {
             label: { required: true },
@@ -28,6 +42,19 @@
             this.drawChart();
         },
         methods: {
+            buildDataset(data, label, colour) {
+                return {
+                    label: label,
+                    data: this.cumulative
+                        ? this.accumulate(Object.values(data))
+                        : Object.values(data),
+                    fill: false,
+                    borderColor: colour,
+                }
+            },
+            isMultiDataset(data) {
+                return Object.values(data).length > 0 && typeof(Object.values(data)[0]) === 'object';
+            },
             async drawChart() {
                 let tries = 0;
                 while (window.Chart === undefined) {
@@ -36,18 +63,22 @@
                         return;
                     }
                 }
+
+                let colourIndex = 0;
                 new Chart(this.$el.getContext('2d'), {
                     type: this.type,
                     data: {
-                        labels: Object.keys(this.data),
-                        datasets: [{
-                            label: this.label,
-                            data: this.cumulative
-                                ? this.accumulate(Object.values(this.data))
-                                : Object.values(this.data),
-                            fill: false,
-                            borderColor: '#C71585',
-                        }],
+                        labels: this.isMultiDataset(this.data)
+                            ? Array.from(Object.values(this.data).reduce((carry, item) => {
+                                for (let key in item) {
+                                    carry.add(key);
+                                }
+                                return carry;
+                            }, new Set()))
+                            : Object.keys(this.data),
+                        datasets: this.isMultiDataset(this.data)
+                            ? Object.entries(this.data).map(([key, data]) => this.buildDataset(data, key, COLOURS[colourIndex++ % COLOURS.length]))
+                            : [ this.buildDataset(this.data, this.label, COLOURS[0]) ],
                     },
                     options: this.options,
                 });

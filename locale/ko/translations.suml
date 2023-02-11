@@ -475,7 +475,7 @@ contact:
         technical:
             header: '풀 요청 제출하기'
             description: >
-                기술 작업은 {https://gitlab.com/Avris/Zaimki/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
+                기술 작업은 {https://gitlab.com/PronounsPage/PronounsPage/-/boards=이 칸반 보드}에서 관리됩니다. "To Do"열에서 할당이 돼있지 않은 작업들 중 한 직접 자신에게
                 할당하고 작업을 시작하세요. 질문이 있으면 주저하지 말고 물어 주세요.
             footer: '기술 작업'
 
@@ -484,7 +484,7 @@ support:
     description: >
         서버, 도메인, 스티커 등을 추가하는걸 구입하려는 경우,
         아래 링크를 사용할 수 있습니다.
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: '은행 송금'
 
 user:
     header: '계정'
@@ -493,7 +493,7 @@ user:
     login:
         help: '로그인하거나 계정을 만들려면 소셜 미디어 버튼을 사용하거나 아래 필드에 이메일을 입력한 다음 우편함으로 받을 코드를 확인하세요.'
         placeholder: '이메일(또는 이미 등록된 사용자 이름)'
-        action: '로그인' # TODO: 'Log in / register'
+        action: '로그인' # TODO: '로그인 또는 등록'
         emailSent: '6자리 코드가 포함된 이메일을 보내드렸습니다. 여기에 입력하세요. 코드는 일회용이며 15분 동안 유효합니다.'
         userNotFound: '사용자를 찾을 수 없습니다.'
         email:
@@ -697,7 +697,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
+        {https://gitlab.com/PronounsPage/PronounsPage=소스 코드}의 콘텐츠는 {/license=OQL}의라이센스 됐습니다.
     links: '연락처, SNS'
     legal: '합법'
     financial: '재무 투명성'
@@ -789,13 +789,13 @@ terms:
                 enbyphobia: '비공포증'
                 queerphobia: 'queerphobia'
                 exclusionism: 'queer exclusionism'
-                sexism: 'sexism'
+                sexism: '성 차별'
                 misogyny: '여성 혐오'
                 harassment: '괴롭힘'
                 impersonation: '사칭'
                 selfHarm: 'encouraging self-harm and/or suicide'  # TODO
                 childPornography: 'child pornography'
-                unlawfulConduct: 'unlawful conduct'
+                unlawfulConduct: '불법 행위를'
                 misinformation: '오보'
                 doxxing: 'sharing of someone else''s personal data'
                 spam: '스팸'
@@ -956,7 +956,7 @@ flags:
     Abrosexual: 'Abrosexual'
     Achillean: 'Aquilean{inflection}'
     Alloromantic_Asexual: 'Alorrománti{inflection_c} asexual'
-    Agender: 'Agénero'
+    Agender: '에이젠더'
     Ambiamorous: 'Ambiamoros{inflection}'
     Anarcha-Queer: 'Anarco-queer'
     Androgyne: 'Andrógin{inflection}'
@@ -964,29 +964,29 @@ flags:
     Aporagender: 'Aporagénero'
     Archaeopronouns: 'Arqueopronombres'
     Aroace: 'Arro-as'
-    Aromantic: 'Arrománti{inflection_c}'
+    Aromantic: '로맨틱 끌림{inflection_c}'
     Aromantic_Allosexual: 'Arrománti{inflection_c} alosexual'
-    Asexual: 'Asexual'
+    Asexual: '무성애자'
     Autigender: 'Autisgénero'
     Bear: 'Oso'
     Bicurious: 'Bicurios{inflection}'
-    Bigender: 'Bigénero'
+    Bigender: '바이젠더'
     Biromantic: 'Birrománti{inflection_c}'
-    Bisexual: 'Bisexual'
+    Bisexual: '양성애자'
     Butch: 'Butch'
     Ceteroromantic: 'Ceterorrománti{inflection_c}'
     Ceterosexual: 'Ceterosexual'
     Cis_Ally: 'Aliad{inflection} cis'
-    Demiboy: 'Demichico'
-    Demigender: 'Demigénero'
-    Demigirl: 'Demichica'
+    Demiboy: '일부 남성'
+    Demigender: '일부 성별'
+    Demigirl: '일부 여성'
     Demiromantic: 'Demirrománti{inflection_c}'
     Demisexual: 'Demisexual'
     Diamoric: 'Diamóri{inflection_c}'
     Enbian: 'Nobian{inflection}'
     Fa*afafine: 'Fa''afafine'
     Femme: 'Afeminad{inflection}'
-    Gay: 'Gay'
+    Gay: '게이'
     Gender_Questioning: 'Cuestionándose el género'
     Genderfae: 'Hadagénero'
     Genderfaun: 'Faunogénero'
@@ -998,14 +998,14 @@ flags:
     Gynesexual: 'Ginosexual'
     Heteroflexible: 'Heteroflexible'
     Heteroromantic: 'Heterorrománti{inflection_c}'
-    Heterosexual: 'Heterosexual'
+    Heterosexual: '이성애자'
     Hijra: 'Hijra'
     Homoflexible: 'Homoflexible'
     Homoromantic: 'Homorrománti{inflection_c}'
     Intersex: 'Intersexual'
     LGBTQ: 'LGBTQ'
     Leather_Pride: 'Orgullo de cuero'
-    Lesbian: 'Lesbiana'
+    Lesbian: '레즈비언'
     Lesbiromantic: 'Lesbirrománti{inflection_c}'
     Maverique: 'Maverique'
     Monoamorous: 'Monoamoros{inflection}'
@@ -1014,7 +1014,7 @@ flags:
     Nebularomantic: 'Nebulosarrománti{inflection_c}'
     Neopronouns: 'Neopronombres'
     Neutrois: 'Neutrés'
-    Nonbinary: 'No binari{inflection}'
+    Nonbinary: '논바이너리{inflection}'
     Omnisexual: 'Omnisexual'
     Omniromantic: 'Omnirrománti{inflection_c}'
     Oriented_Aroace: 'Arro-as orientad{inflection}'
@@ -1036,7 +1036,7 @@ flags:
     Straight_Ally: 'Aliad{inflection} hetero'
     Toric: 'Tóri{inflection_c}'
     Transfeminine: 'Transfemenin{inflection}'
-    Transgender: 'Transgénero'
+    Transgender: '성전환자'
     Transmasculine: 'Transmasculin{inflection}'
     Transneutral: 'Transneutr{inflection}'
     Trigender: 'Trigénero'

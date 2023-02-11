@@ -478,7 +478,7 @@ contact:
         technical:
             header: 'Skicka in pull requests'
             description: >
-                Tekniska sysslor hanteras på {https://gitlab.com/Avris/Zaimki/-/boards=denna kanbantavla}.
+                Tekniska sysslor hanteras på {https://gitlab.com/PronounsPage/PronounsPage/-/boards=denna kanbantavla}.
                 Välj bara en otilldelad syssla från “To Do”-kolumnen, tilldela dig själv den och börja arbeta med den.
                 Var inte rädd för att fråga frågor.
             footer: 'Tekniska sysslor'
@@ -717,7 +717,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Källkod} och innehåll är licensierad under {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Källkod} och innehåll är licensierad under {/license=OQL}.
     links: 'Kontakt och sociala medier'
     legal: 'Rättslig'
     financial: 'Finansiell insyn'

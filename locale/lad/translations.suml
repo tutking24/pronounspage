@@ -539,7 +539,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=El kodiche fuente} i el kontenido estan publikados debasho de la lisensia {/license=OQL}.
     links: 'Kontakto, redes sosyalas, apoyo'
     legal: 'Kozas legalas'
     financial: 'Transparensia pekunaria'

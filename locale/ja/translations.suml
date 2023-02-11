@@ -398,7 +398,7 @@ contact:
         technical:
             header: 'プルリクエストを提出'
             description: >
-                テクニカルなタスクは{https://gitlab.com/Avris/Zaimki/-/boards=この「看板」}で管理します。「To
+                テクニカルなタスクは{https://gitlab.com/PronounsPage/PronounsPage/-/boards=この「看板」}で管理します。「To
                 Do」の欄から割り当てられていないタスクを選んでください。質問がある場合はお気軽に！
             footer: 'テクニカルなタスク'
 
@@ -619,7 +619,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=ソースコード}と内容は{/license=「定見的クィアライセンス」}の下でライセンスされています。
+        {https://gitlab.com/PronounsPage/PronounsPage=ソースコード}と内容は{/license=「定見的クィアライセンス」}の下でライセンスされています。
     links: '連絡先、ソーシャルメディア'
     legal: '法的情報'
     financial: '財務報告'

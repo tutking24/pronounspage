@@ -564,7 +564,7 @@ contact:
         technical:
             header: 'Trimite un pull request'
             description: >
-                Sarcinile tehnice sunt gestionate pe {https://gitlab.com/Avris/Zaimki/-/boards=această tablă kanban}.
+                Sarcinile tehnice sunt gestionate pe {https://gitlab.com/PronounsPage/PronounsPage/-/boards=această tablă kanban}.
                 Doar alege o sarcină neasociată din coloana “To Do”, asociază-ți-o și apucă-te să lucrezi la ea.
                 Să nu-ți fie frică să pui întrebări!
             footer: 'Sarcini tehnice'
@@ -831,7 +831,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Codul sursă} și conținutul sunt sub licența {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Codul sursă} și conținutul sunt sub licența {/license=OQL}.
     links: 'Date de contact, rețele de socializare, suportă cauza'
     legal: 'Legal'
     financial: 'Transparență financiară'

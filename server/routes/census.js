@@ -3,8 +3,9 @@ import SQL from 'sql-template-strings';
 import sha1 from 'sha1';
 import {ulid} from "ulid";
 import Papa from 'papaparse';
-import {handleErrorAsync} from "../../src/helpers";
+import {groupBy, handleErrorAsync, ImmutableArray} from "../../src/helpers";
 import {intersection, difference} from "../../src/sets";
+import {buildChart} from "../../src/stats";
 
 const getIp = req => {
     try {
@@ -94,6 +95,17 @@ router.post('/census/submit', handleErrorAsync(async (req, res) => {
     return res.json(id);
 }));
 
+const normaliseCensusGraph = (graph) => {
+    const newGraph = {};
+    Object.entries(graph).forEach(([date, count]) => {
+        date = date.substring(5); // remove year
+        if (date.startsWith('02')) { // only accept February (other months might appear because of a timezone bug, dismiss them)
+            newGraph[date] = count;
+        }
+    });
+    return newGraph;
+}
+
 router.get('/census/count', handleErrorAsync(async (req, res) => {
     if (!req.isGranted('census')) {
         return res.json({
@@ -101,6 +113,7 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
             nonbinary: 0,
             usable: 0,
             awaiting: 0,
+            graphs: {},
         });
     }
 
@@ -131,6 +144,22 @@ router.get('/census/count', handleErrorAsync(async (req, res) => {
               AND edition = ${global.config.census.edition}
               AND troll IS NULL
         `)).c,
+        graphs: Object.fromEntries(
+            Object.entries(
+                groupBy(
+                    await req.db.all(SQL`
+                        SELECT edition, id
+                        FROM census
+                        WHERE locale = ${global.config.locale}
+                              AND relevant = 1
+                              AND troll = 0
+                    `),
+                    r => r.edition
+                )
+            ).map(([edition, rows]) => {
+                return [edition, normaliseCensusGraph(buildChart(rows, false))];
+            })
+        ),
     });
 }));
 

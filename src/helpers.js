@@ -18,7 +18,7 @@ export const buildList = (fn, ...args) => {
     return list;
 }
 
-export const head = ({title, description, banner, noindex = false}) => {
+export const head = ({title, description, banner, noindex = false, keywords}) => {
     const meta = { meta: [] };
 
     if (title) {
@@ -46,6 +46,10 @@ export const head = ({title, description, banner, noindex = false}) => {
 
     if (noindex) {
         meta.meta.push({ hid: 'robots', name: 'robots', content: 'noindex'});
+    }
+
+    if (keywords) {
+        meta.meta.push({ hid: 'keywords', name: 'keywords', content: process.env.KEYWORDS + ', ' + keywords.join(', ')});
     }
 
     return meta;

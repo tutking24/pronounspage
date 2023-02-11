@@ -86,14 +86,20 @@
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
         </div>
-        <div v-show="showCensus" class="container">
-            <div class="alert alert-info mb-0">
-                <a href="#" class="float-end" @click.prevent="dismissCensus">
-                    <Icon v="times"/>
-                </a>
-                <Icon v="user-chart" size="2" class="d-inline-block float-start me-3 mt-2"/>
-                <T>census.banner</T>
-            </div>
+        <div v-show="showCensus" class="container position-relative">
+            <nuxt-link :to="`/${config.census.route}`">
+                <img src="/img-local/census/census-banner-horizontal.png"
+                     alt="Na tle flagi osób niebinarnych (cztery poziome pasy: żółty, biały, fioletowy, czarny) tekst: Trwa trzecia edycja największego badania języka osób niebinarnych! Jakich form używamy? Jak unikamy upłciowionego języka? Jak nasz język rozwija się i zmienia? Wypełnij naszą ankietę, by pomóc nam to zbadać! Niebinarny Spis Powszechny 2023; zaimki.pl/spis"
+                     class="w-100 shadow d-none d-md-block"/>
+                <img src="/img-local/census/census-banner-horizontal-mobile.png"
+                     alt="Na tle flagi osób niebinarnych (cztery poziome pasy: żółty, biały, fioletowy, czarny) tekst: Trwa trzecia edycja największego badania języka osób niebinarnych! Jakich form używamy? Jak unikamy upłciowionego języka? Jak nasz język rozwija się i zmienia? Wypełnij naszą ankietę, by pomóc nam to zbadać! Niebinarny Spis Powszechny 2023; zaimki.pl/spis"
+                     class="w-100 shadow d-md-none"/>
+            </nuxt-link>
+            <a href="#"
+               class="position-absolute p-2 bg-primary text-white btn-dismiss"
+               @click.prevent="dismissCensus">
+                <Icon v="times"/>
+            </a>
         </div>
         <div v-if="$user() && $user().bannedReason" class="alert alert-danger mb-0 container">
             <p class="h4 mb-2">
@@ -308,7 +314,8 @@
                 const finished = !!parseInt(window.localStorage.getItem(`census-${this.config.census.edition}-finished`) || 0);
                 const dismissed = !!parseInt(window.localStorage.getItem(`census-${this.config.census.edition}-dismissed`) || 0);
                 const alreadyIn = this.$route.path === '/' + this.config.census.route;
-                if (!this.config.census.enabled || finished || dismissed || this.censusDismissed || alreadyIn) {
+                const isHomepage = this.$route.path === '/';
+                if (!this.config.census.enabled || (!isHomepage && (finished || dismissed)) || this.censusDismissed || alreadyIn) {
                     return false;
                 }
                 const start = DateTime.fromISO(this.config.census.start).toLocal();
@@ -468,6 +475,16 @@
         .higher {
             position: relative;
             top: -0.1em;
+        }
+    }
+
+    .btn-dismiss {
+        top: 0;
+        right: 0;
+        opacity: 0.5;
+        transition: opacity .25s ease-in-out;
+        &:hover {
+            opacity: 1;
         }
     }
 </style>

@@ -18,9 +18,11 @@
 
         <h3>
             Year:
-            <button class="btn btn-sm btn-primary" @click="year--" :disabled="year - 1 < min.year"><Icon v="caret-left"/></button>
-            {{year}}
-            <button class="btn btn-sm btn-primary" @click="year++" :disabled="year + 1 > max.year"><Icon v="caret-right"/></button>
+            <button v-for="y in years" :key="y"
+                    :class="['btn', y === year ? 'btn-primary' : 'btn-outline-primary', 'mx-2']"
+                    @click="year = y">
+                {{y}}
+            </button>
         </h3>
 
         <div class="table-responsive">
@@ -96,11 +98,17 @@
                 <label for="paypal_email" class="form-label">Email</label>
                 <input v-model="transferDetails.paypal_email" type="email" class="form-control" id="paypal_email" placeholder="paypal-user@email.com">
             </div>
-            <div v-if="transferMethod === 'charity'" class="mb-3">
+            <div v-if="transferMethod !== 'skip' && transferMethod !== 'charity'" class="mb-3">
+                <p><em>There's a legal limit of how much we can send as volunteer allowance, so please also pick a charity in case it's exceeded.</em></p>
+            </div>
+            <div v-if="transferMethod !== 'skip'" class="mb-3">
+                <p><em>You can also leave the charity details empty – in that case we'll set aside that share and pick a charity together at the end of year, or whenever need arises.</em></p>
+            </div>
+            <div v-if="transferMethod !== 'skip'" class="mb-3">
                 <label for="charity_name" class="form-label">Charity name</label>
                 <input v-model="transferDetails.charity_name" type="text" class="form-control" id="charity_name" placeholder="Trevor Project">
             </div>
-            <div v-if="transferMethod === 'charity'" class="mb-3">
+            <div v-if="transferMethod !== 'skip'" class="mb-3">
                 <label for="charity_url" class="form-label">Link</label>
                 <input v-model="transferDetails.charity_url" type="email" class="form-control" id="charity_url" placeholder="https://www.thetrevorproject.org/">
             </div>
@@ -126,8 +134,14 @@ import {min, max, closed, MONTHS, AREAS, TRANSFER_METHODS} from '../src/timeshee
 
 export default {
     data() {
+        const years = [];
+        for (let y = min.year; y <= max.year; y++) {
+            years.push(y);
+        }
+
         return {
             year: max.year,
+            years,
             min,
             max,
             closed,

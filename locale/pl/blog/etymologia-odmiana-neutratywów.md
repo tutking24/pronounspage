@@ -41,7 +41,7 @@ i sugerować te same końcówki neutratywów dla rzeczowników o tych samych ko�
 albo o tym samym pochodzeniu (np. -um dla wyrazów zapożyczonych z łaciny).
 Możesz przejrzeć nasze schematy końcówek, otwierając formularz zgłaszania propozycji,
 a następnie klikając na przycisk „Użyj szablonu”
-(albo i bezpośrednio [w kodzie źródłowym](https://gitlab.com/Avris/Zaimki/-/blob/main/locale/pl/nouns/nounTemplates.tsv)).
+(albo i bezpośrednio [w kodzie źródłowym](https://gitlab.com/PronounsPage/PronounsPage/-/blob/main/locale/pl/nouns/nounTemplates.tsv)).
 
 Słowotwórstwo oparte o istniejące sufiksy sprawia też, że odmiana neutratywów powinna być względnie intuicyjna.
 W razie problemów, zawsze można oczywiście sprawdzić tabelki odmiany w [Słowniku Neutratywów](/neutratywy),

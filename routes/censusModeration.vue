@@ -15,11 +15,15 @@
         </div>
         <div v-else>
             <div class="alert alert-info">
-                {{queue.count}} <T>census.repliesAwaiting</T>
+                <p>{{queue.count}} <T>census.repliesAwaiting</T></p>
+                <label class="form-check form-switch d-inline-block">
+                    <input class="form-check-input" type="checkbox" role="switch" v-model="hideEmpty">
+                    Hide answers with no write-ins
+                </label>
             </div>
 
             <ol>
-                <li v-for="(question, i) in config.census.questions">
+                <li v-for="(question, i) in config.census.questions" :key="i" v-if="!hideEmpty || queue.next.writins[i.toString()] || (queue.next.answers[i.toString()] && question.type === 'textarea')">
                     <p>{{question.question}}</p>
                     <p v-if="queue.next.answers[i.toString()]" :class="question.type === 'textarea' ? 'bg-primary text-white p-2 rounded' : ''"><strong>{{queue.next.answers[i.toString()]}}</strong></p>
                     <p v-if="queue.next.writins[i.toString()]" class="bg-primary text-white p-2 rounded"><strong><em>{{queue.next.writins[i.toString()]}}</em></strong></p>
@@ -42,6 +46,7 @@
         data() {
             return {
                 queue: undefined,
+                hideEmpty: false,
             }
         },
         async mounted() {

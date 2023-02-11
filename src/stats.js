@@ -51,7 +51,7 @@ const deepGet = (obj, path) => {
 
 const formatDate = d => `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;
 
-module.exports.buildChart = (rows) => {
+module.exports.buildChart = (rows, cumulative = true) => {
     const dates = rows.map(row => new Date(decodeTime(row.id)));
 
     const chart = {};
@@ -69,6 +69,10 @@ module.exports.buildChart = (rows) => {
 
     for (let date of dates) {
         chart[formatDate(date)]++;
+    }
+
+    if (!cumulative) {
+        return chart;
     }
 
     const cumChart = {};

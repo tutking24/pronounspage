@@ -8,7 +8,7 @@
                         <h2>
                             @{{user.username}}
                         </h2>
-                        <p v-if="profile.teamName || profile.footerName" class="mb-2">
+                        <p v-if="user.team || profile.teamName || profile.footerName" class="mb-2">
                             <nuxt-link :to="`/${config.contact.team.route}`" class="badge bg-primary text-white">
                                 <Icon v="collective-logo.svg" class="inverted"/>
                                 <T>contact.team.member</T>

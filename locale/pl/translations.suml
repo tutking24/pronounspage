@@ -1240,7 +1240,7 @@ contact:
         technical:
             header: 'Zgłoś pull requesta'
             description: >
-                Technicznymi zadaniami zarządzamy poprzez {https://gitlab.com/Avris/Zaimki/-/boards=ten kanban board}.
+                Technicznymi zadaniami zarządzamy poprzez {https://gitlab.com/PronounsPage/PronounsPage/-/boards=ten kanban board}.
                 Wybierz nieprzypisanego do nikogo taska z kolumny „To Do”, przypisz go do siebie i zacznij pracę.
                 Nie bój się zadawać pytań.
             footer: 'Zadania techniczne'
@@ -1528,9 +1528,10 @@ census:
         Jesteś osobą niebinarną? Też weź udział w Spisie!
     subscribe:
         encouragement: >
-            Chcesz otrzymywać przypominajki o przyszłych edycjach Spisu?
-            Możesz podać poniżej swój adres email – wyślemy jedną wiadomość rocznie, zero spamu,
-            i oczywiście bez powiązania adresu z Twoimi odpowiedziami.
+            Nie chcesz przegapić kolejnej edycji? Raportu z wnioskami ze Spisu?
+            Możesz podać tutaj swój adres email – wyślemy Ci dwie wiadomości rocznie:
+            gdy zacznie się nowa edycja, i gdy opublikujemy raport ze Spisu.
+            Oczywiście bez powiązania adresu z Twoimi odpowiedziami.
         action: 'Zapisz się'
         unsubscribe: 'Wypisz się'
         success: 'Zapisałośmy Twój adres, przypomnimy o następnej edycji!'
@@ -1574,7 +1575,7 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/Avris/Zaimki=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Kod źródłowy} oraz treści są udostępnione na licencji {/license=OQL}.
     links: 'Kontakt, social media'
     legal: 'Prawne'
     financial: 'Przejrzystość finansowa'

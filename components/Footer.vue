@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="mb-2">
-                        <a href="https://gitlab.com/Avris/Zaimki/-/boards">
+                        <a href="https://gitlab.com/PronounsPage/PronounsPage/-/boards">
                             <Icon v="code-merge"/>
                             <T>contact.contribute.technical.footer</T>
                         </a>
@@ -148,7 +148,7 @@
                         </LocaleLink>
                     </li>
                     <li class="mb-2">
-                        <a href="https://gitlab.com/Avris/Zaimki" target="_blank" rel="noopener">
+                        <a href="https://gitlab.com/PronounsPage/PronounsPage" target="_blank" rel="noopener">
                             <Icon v="gitlab" set="b"/>
                             Source code
                         </a>
