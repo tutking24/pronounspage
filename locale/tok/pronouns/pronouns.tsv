@@ -1,2 +1,5 @@
 key	description	normative	pronoun	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-ona	nimi ona li ken toki e ijo ale	TRUE	ona	FALSE	FALSE	TRUE
+ona		TRUE	ona	FALSE	FALSE	TRUE
+jan Sewe		TRUE	jan Sewe	FALSE	FALSE	TRUE
+jan Tepo		TRUE	jan Tepo	FALSE	FALSE	TRUE
+jan Anatea		TRUE	jan Anatea	FALSE	FALSE	TRUE

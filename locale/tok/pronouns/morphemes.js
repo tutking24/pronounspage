@@ -1,3 +1,3 @@
-const MORPHEMES = [
+export default [
     'pronoun',
 ];

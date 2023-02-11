@@ -113,8 +113,9 @@
     export default {
         components: {LinkedText, GrammarTables },
         data() {
-            const key = decodeURIComponent(this.$route.path.substr(1).replace(/\/$/, ''));
-            const selectedPronoun = this.config.pronouns.enabled
+            const key = this.getPronounKeyFromUrl();
+
+            const selectedPronoun = this.config.pronouns.enabled && key
                 ? buildPronoun(pronouns, key)
                 : null;
 
@@ -131,7 +132,7 @@
                 counterHandle: null,
                 counterSpeed: 1000,
 
-                isNull: key.startsWith(':'),
+                isNull: key && key.startsWith(':'),
             }
         },
         async asyncData({app}) {
@@ -156,6 +157,16 @@
             }) : {};
         },
         methods: {
+            getPronounKeyFromUrl() {
+                let url = this.$route.path;
+                if (this.config.pronouns.prefix) {
+                    if (!url.startsWith(this.config.pronouns.prefix)) {
+                        return null;
+                    }
+                    url = url.substring(this.config.pronouns.prefix.length);
+                }
+                return decodeURIComponent(url.substr(1).replace(/\/$/, ''));
+            },
             addSlash(link) {
                 return link + (['*', `'`].includes(link.substr(link.length - 1)) ? '/' : '');
             },

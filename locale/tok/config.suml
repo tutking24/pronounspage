@@ -3,9 +3,9 @@ locale: 'tok'
 header: true
 
 pronouns:
-    enabled: false
+    enabled: true
     route: 'nimi'
-    default: 'jan'
+    default: 'ona'
     any: false
     plurals: false
     honorifics: false
@@ -13,11 +13,10 @@ pronouns:
     null: false
     emoji: false
     mirror: false
-    slashes: false
-    sentence:
-        prefixes: ['/li']
-        examples:
-            - 'nimi-mi.tk/li/jan Sonja'
+    slashes: true
+    prefix: '/li'
+    autoOpenGenerator: true
+    disableDescriptions: true
 
 pronunciation:
     enabled: false
@@ -25,7 +24,7 @@ pronunciation:
     voices:
         TOK:
             language: 'es-US'
-            voice: 'jan Lupe'
+            voice: 'Lupe'
             engine: 'standard'
 
 sources:

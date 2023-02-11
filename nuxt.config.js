@@ -356,7 +356,7 @@ export default {
             }
 
             if (config.pronouns.enabled) {
-                for (let prefix of [...(config.pronouns.sentence ? config.pronouns.sentence.prefixes : []), '']) {
+                for (let prefix of [...(config.pronouns?.sentence?.prefixes || []), config.pronouns?.prefix || '']) {
                     routes.push({ path: `${prefix}/${encodeURIComponent(config.pronouns.any)}`, component: resolve(__dirname, 'routes/any.vue') });
                     routes.push({ path: `${prefix}/${encodeURIComponent(config.pronouns.any)}::group`, component: resolve(__dirname, 'routes/any.vue') });
                     if (config.pronouns.null && config.pronouns.null.routes) {

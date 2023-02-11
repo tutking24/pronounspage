@@ -3,7 +3,7 @@
         <section>
             <Suggested/>
 
-            <div v-if="config.pronouns.sentence" class="alert alert-info small mt-3">
+            <div v-if="config.pronouns.sentence && config.pronouns.sentence.examples" class="alert alert-info small mt-3">
                 <Icon v="lightbulb-on"/>
                 <T>pronouns.sentence</T>
                 <ul class="mb-0">
@@ -54,7 +54,7 @@
                                             </li>
                                             <li class="list-inline-item" v-for="(pronoun, pronounName) in groupPronouns">
                                                 <button :class="['btn', pronoun.name(glue) === selectedPronoun.name(glue) ? 'btn-primary' : 'btn-outline-primary', 'btn-sm', 'my-1']"
-                                                        @click="selectedPronoun = groupPronouns[pronounName].clone()"
+                                                        @click="selectedPronoun = groupPronouns[pronounName].clone(true)"
                                                 >
                                                     <Spelling :text="pronoun.name(glue)"/>
                                                 </button>
@@ -67,12 +67,15 @@
                             <div class="alert alert-primary">
                                 <p class="h3 mb-0 text-center">
                                     <Spelling :text="selectedPronoun.name(glue)"/>
-                                    <br/>
-                                    <input v-model="selectedPronoun.description"
-                                           class="form-control form-input p-0 form-control-sm"
-                                           :size="selectedPronoun.description.length + 3"
-                                           maxlength="64"
-                                    />
+                                    <template v-if="!config.pronouns.disableDescriptions">
+                                        <br/>
+                                        <input v-model="selectedPronoun.description"
+                                               class="form-control form-input p-0 form-control-sm"
+                                               :size="selectedPronoun.description.length ? selectedPronoun.description.length + 3 : 16"
+                                               maxlength="64"
+                                               :placeholder="$t('profile.description')"
+                                        />
+                                    </template>
                                 </p>
                             </div>
 
@@ -247,13 +250,13 @@
                 pronouns,
                 pronounLibrary,
 
-                selectedPronoun: pronouns[this.config.pronouns.default].clone(),
+                selectedPronoun: pronouns[this.config.pronouns.default].clone(true),
                 selectedMorpheme: '',
 
                 customiseMultiple: false,
                 multiple: this.config.pronouns.multiple ? this.config.pronouns.multiple.examples[0].split('&') : [],
 
-                customise: false,
+                customise: this.config.pronouns.autoOpenGenerator || false,
 
                 glue: ' ' + this.$t('pronouns.or') + ' ',
             }
@@ -280,7 +283,7 @@
                 return null;
             },
             usedBaseEquals() {
-                return this.usedBase && this.pronouns[this.usedBase].equals(this.selectedPronoun);
+                return this.usedBase && this.selectedPronoun.equals(this.pronouns[this.usedBase], true);
             },
             longLink() {
                 const base = this.pronouns[this.selectedPronoun.morphemes[MORPHEMES[0]]];
@@ -296,14 +299,22 @@
                 if (!this.selectedPronoun.pronoun()) {
                     return null;
                 }
-                return this.addSlash(this.$base + '/' + (this.usedBaseEquals ? this.usedBase : this.longLink));
+
+                const slashes = this.selectedPronoun.toStringSlashes();
+                const commas = this.usedBaseEquals ? this.usedBase : this.longLink;
+
+                const link = slashes && slashes.length < commas.length
+                    ? slashes
+                    : commas;
+
+                return this.addSlash(this.$base + (this.config.pronouns.prefix || '') + '/' + link);
             },
             linkMultiple() {
                 if (!this.multiple.length) {
                     return null;
                 }
 
-                return this.addSlash(this.$base + '/' + this.multiple.join('&'));
+                return this.addSlash(this.$base + (this.config.pronouns.prefix || '') + '/' + this.multiple.join('&'));
             },
         },
         methods: {

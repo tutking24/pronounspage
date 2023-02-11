@@ -282,7 +282,7 @@ const escape = s => {
 export class Pronoun {
     constructor (canonicalName, description, normative, morphemes, plural, pluralHonorific, aliases = [], history = '', pronounceable = true, thirdForm = null, smallForm = null, sourcesInfo = null) {
         this.canonicalName = canonicalName;
-        this.description = description;
+        this.description = description || '';
         this.normative = normative;
         this.morphemes = {}
         this.pronunciations = {}
@@ -342,10 +342,10 @@ export class Pronoun {
         return this.nameOptions().join(glue)
     }
 
-    clone() {
+    clone(removeDescription = false) {
         return new Pronoun(
             this.canonicalName,
-            this.description,
+            removeDescription ? '' : this.description,
             this.normative,
             clone(this.morphemes),
             [...this.plural],
@@ -356,8 +356,8 @@ export class Pronoun {
         );
     }
 
-    equals(other) {
-        return this.toString() === other.toString();
+    equals(other, ignoreBaseDescription = false) {
+        return this.toString() === other.clone(ignoreBaseDescription).toString();
     }
 
     merge(other) {
@@ -447,6 +447,14 @@ export class Pronoun {
 
     toString() {
         return this.toArray().join(',');
+    }
+
+    toStringSlashes() {
+        if (!config.pronouns.slashes || this.description) {
+            return null;
+        }
+
+        return Object.values(this.morphemes).join('/');
     }
 
     static from(data) {
