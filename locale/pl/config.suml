@@ -740,6 +740,11 @@ links:
             icon: 'play-circle'
             url: 'https://www.youtube.com/watch?v=MYH2qGScEVk'
             headline: 'FEMINATYWY. O genderowej nowomowie słów kilka. | Maciej Makselon | TEDxKoszalin'
+        -
+            icon: 'newspaper'
+            url: 'https://ryzykonarracyjne.pl/blog/artykuly/ryzykowne-artykuly-feminatywy-w-rpg-a-na-co-to-komu/'
+            headline: 'Ryzykowne artykuły: Feminatywy w RPG? A na co to komu?'
+            extra: ' – Ryzyko Narracyjne'
     mediaGuests:
         -
             icon: 'newspaper'
