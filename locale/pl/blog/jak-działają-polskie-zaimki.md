@@ -8,10 +8,10 @@ Ostatnio trochę odświeżyłyśmy podstrony z zaimkami, dodając więcej przyk�
 by w pełni zaprezentować wszystkie formy w jakich występują.
 Zadbałyśmy o to, żeby ukazywały pełen paradygmat (czyli wzór odmiany) danego zaimka.
 Przy tej okazji przydatny może być tekst o tym, jak właściwie te zaimki w polszczyźnie działają.
-Mówiąc i pisząc przy użyciu standardowych form takich jak _ona_ czy _on_ nie musimy się raczej nad tym zastanawiać,
+Mówiąc i pisząc przy użyciu standardowych form takich jak _[ona](/ona)_ czy _[on](/on)_ nie musimy się raczej nad tym zastanawiać,
 ale jeśli chcemy napisać tekst zawierający dukaizmy (albo taki tekst zredagować), może być już trudniej.
-Praktyka pokazuje też, że nawet – obecne przecież w standardowej polszczyźnie – ono czasem sprawia problemy
-(tym bardziej, jeśli korzystamy z niestandardowego wzoru odmiany jak _ono/jeno_ czy _ono/jej_).
+Praktyka pokazuje też, że nawet – obecne przecież w standardowej polszczyźnie – _[ono](/ono)_ czasem sprawia problemy
+(tym bardziej, jeśli korzystamy z niestandardowego wzoru odmiany jak _[ono/jeno](/ono/jeno)_ czy _[ono/jej](/ono/jej)_).
 
 Chciałbym w tym tekście przybliżyć reguły rządzące odmianą zaimków,
 do których możemy się odwołać używając niestandardowych form albo takie tworząc, by upewnić się,
@@ -54,21 +54,21 @@ np. w rodzaju męskim synkretyczne są dopełniacz i biernik (tj. _(je)go/niego_
 w żeńskim – dopełniacz i celownik (tj. _ją/nią_), a w neutralnym (oraz męskim) – narzędnik i miejscownik (tj. _nim_).
 
 Zaraz zaraz, ktoś zapyta, a co z „przeglądam się w **jej** oczach”?
-Skąd forma na _j-_ po przyimku? Ściśle rzecz biorąc, w tym zdaniu jej to nie dopełniacz od _ona_,
+Skąd forma na _j-_ po przyimku? Ściśle rzecz biorąc, w tym zdaniu _jej_ to nie dopełniacz od _ona_,
 tylko zaimek dzierżawczy (odpowiada na pytanie „w czyich oczach?”, a nie „w kogo oczach?”).
 Tak się składa, że wszystkie polskie zaimki trzecioosobowe mają formę dzierżawczą równą dopełniaczowi
 (i nieodmienną – tj. _mój, moja, mojej, moich, moimi, twoje, twoją, twojego, twoi_ etc.,
 ale tylko _jego, jej, ich_ bez względu na rodzaj, liczbę i przypadek określanego rzeczownika).
 Ale jeśli się uprzeć, można powiedzieć, że potrzebujemy 13 lub 10 form.
 
-Trochę ciężko to ogarnąć. Dla podsumowania, przegląd wszystkich możliwych form zaimka ono:
+Trochę ciężko to ogarnąć. Dla podsumowania, przegląd wszystkich możliwych form zaimka _ono_:
 
 - Mianownik: „**Ono** jest bardzo miłe.”
 - Forma dzierżawcza: „Tęsknię za **jego** śmiechem.”
 - Dopełniacz nieakcentowany: „Chciałobym **go** posłuchać.”
 - Dopełniacz akcentowany: „Chciałobym posłuchać właśnie **jego**.”
 - Dopełniacz z przyimkiem: „Napiszę do **niego** później.”
-- Celownik nieakcentowany: „Powiedziałom mu, że **je** lubię.”
+- Celownik nieakcentowany: „Powiedziałom **mu**, że je lubię.”
 - Celownik akcentowany: „Powiedziałom to właśnie **jemu**,”
 - Celownik z przyimkiem: „To wszystko dzięki **niemu**.”
 - Biernik nieakcentowany: „Spotkałom **je** wczoraj.”
@@ -95,14 +95,14 @@ Inne osoby stosujące dukaizmy przyjmują inne strategie, np. Ginny Nawrocki w o
 w ogóle nie korzystają z form skróconych (_jenu_ pojawia się także w pozycji nieakcentowanej),
 a nawet dodają przedrostek _je-_ do miejscownika i narzędnika, tworząc formę _jenum_, której nie znajdziemy u Dukaja.
 Jak dotąd, Dukaj jest też jedyną osobą, która używa formy _(je)wu_ w celowniku; inne osoby używają _(je)nu_.
-Choć Dukaj podaje tylko wersję z <w> [w swoim oświadczeniu nt. dukaizmów](https://www.facebook.com/wydawnictwoliterackie/posts/pfbid02F3B9grQr7fDugGRB1Ne4AXrcf43PRhcXrvGc86TXJRmEGbGXFEqKnyeaSodaAC69l),
+Choć Dukaj podaje tylko wersję z &lt;w&gt; [w swoim oświadczeniu nt. dukaizmów](https://www.facebook.com/wydawnictwoliterackie/posts/pfbid02F3B9grQr7fDugGRB1Ne4AXrcf43PRhcXrvGc86TXJRmEGbGXFEqKnyeaSodaAC69l),
 to sam nie zawsze jest konsekwentny w książce:
 
-- „manifestuje się, bo Cesarz **wu** pozwala” (nieakcentowany biernik – forma krótka z <w>);
-- ale też „kij **nu** w oko!” (forma krótka, ale już  z <n>);
-- albo „o co **jenu** chodzi” (akcentowana dłuższa forma z <n>).
+- „manifestuje się, bo Cesarz **wu** pozwala” (nieakcentowany biernik – forma krótka z &lt;w&gt;);
+- ale też „kij **nu** w oko!” (forma krótka, ale już  z &lt;n&gt;);
+- albo „o co **jenu** chodzi” (akcentowana dłuższa forma z &lt;n&gt;).
 
-W sekcji nt. zaimka _onu_ podajemy pełen wzorzec odmiany biorący pod uwagę zamysł Dukaja (<w> w celowniku)
+W sekcji nt. zaimka _[onu](/onu)_ podajemy pełen wzorzec odmiany biorący pod uwagę zamysł Dukaja (&lt;w&gt; w celowniku)
 i reguły występujące w odmianie standardowych zaimków:
 
 - Mianownik: „**Onu** jest bardzo miłu.”

@@ -32,7 +32,7 @@
 
         <p class="small">
             Skąd w polszczyźnie tyle różnych form zaimków? Zapraszamy do lektury artykułu:
-            <nuxt-link to="/blog/jak-działają-polskie-zaimki">Co warto wiedzieć o używaniu (i tworzeniu) zaimków?</nuxt-link>
+            <nuxt-link to="/jak-działają-zaimki">Co warto wiedzieć o używaniu (i tworzeniu) zaimków?</nuxt-link>
         </p>
 
         <div class="table-responsive">

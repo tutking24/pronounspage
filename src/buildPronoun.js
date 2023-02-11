@@ -77,6 +77,16 @@ export const buildPronoun = (pronouns, path) => {
             baseArray[8],
             ...baseArray.slice(11)
         ];
+        if (pronounStrLen < 24) {
+            baseArray.splice(2, 1);
+        } else if (pronounStrLen < 23) {
+            baseArray.splice(8, 1);
+            baseArray.splice(2, 1);
+        } else if (pronounStrLen < 22) {
+            baseArray.splice(8, 1);
+            baseArray.splice(8, 1);
+            baseArray.splice(2, 1);
+        }
     }
 
     let pronoun = pronounStr.length === 1
