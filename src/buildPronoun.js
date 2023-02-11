@@ -67,10 +67,31 @@ export const buildPronoun = (pronouns, path) => {
             base = base.merge(pronounsWithAliases[option])
         }
     }
+    let baseArray = base ? base.toArray() : null;
+    // i know, it's ugly… didn't think about BC much and now it's a huge mess…
+    const pronounStrLen = pronounStr.map(x => x.startsWith('!') ? parseInt(x.substring(1)) : 1).reduce((c, a) => c + a, 0);
+    if (config.locale === 'pl' && baseArray && pronounStrLen < 30) {
+        baseArray = [
+            ...baseArray.slice(0, 4),
+            baseArray[5],
+            baseArray[8],
+            ...baseArray.slice(11)
+        ];
+        if (pronounStrLen < 24) {
+            baseArray.splice(2, 1);
+        } else if (pronounStrLen < 23) {
+            baseArray.splice(8, 1);
+            baseArray.splice(2, 1);
+        } else if (pronounStrLen < 22) {
+            baseArray.splice(8, 1);
+            baseArray.splice(8, 1);
+            baseArray.splice(2, 1);
+        }
+    }
 
     let pronoun = pronounStr.length === 1
         ? base
-        : Pronoun.from(Compressor.uncompress(pronounStr, base ? base.toArray() : null, config.locale));
+        : Pronoun.from(Compressor.uncompress(pronounStr, baseArray, config.locale));
 
     if (!config) {
         return pronoun;

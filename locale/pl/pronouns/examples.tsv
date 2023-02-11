@@ -1,16 +1,22 @@
 singular	plural	isHonorific
 Myślę, że {pronoun_n} jest bardzo mił{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	Myślę, że {pronoun_n} są bardzo mi{adjective_ll}{adjective_n}, przyjaciels{adjective_n_k} i urzekając{adjective_n_c}.	FALSE
-Tęsknię za {pronoun_g} śmiechem.		FALSE
-Będę {pronoun_g_short} potrzebować.		FALSE
-Napiszę do {pronoun_g_acc} później.		FALSE
+Tęsknię za {pronoun_possessive} śmiechem.		FALSE
+Chciał{verb_end_inter}bym {pronoun_g} posłuchać.	Chci{verb_middle_inter}śmy {pronoun_g} posłuchać.	FALSE
+Chciał{verb_end_inter}bym posłuchać właśnie {pronoun_g_acc}.	Chci{verb_middle_inter}śmy posłuchać właśnie {pronoun_g_acc}.	FALSE
+Napiszę do {pronoun_g_prep} później.		FALSE
 Powiedział{verb_middle_inter}m {pronoun_d}, że {pronoun_a} lubię.	Powiedzi{verb_middle_inter}śmy {pronoun_d}, że {pronoun_a} lubimy.	FALSE
+Powiedział{verb_middle_inter}m to właśnie {pronoun_d_acc}.	Powiedzi{verb_middle_inter}śmy to właśnie {pronoun_d_acc}.	FALSE
+To wszystko dzięki {pronoun_d_prep}.		FALSE
+Spotkał{verb_middle_inter}m {pronoun_a} wczoraj.	Spotk{verb_middle_inter}śmy {pronoun_a} wczoraj.
+Spotkał{verb_middle_inter}m właśnie {pronoun_a_acc}.	Spotk{verb_middle_inter}śmy właśnie {pronoun_a_acc}.
+Wycelował{verb_middle_inter}m w {pronoun_a_prep} palcem.	Wycelow{verb_middle_inter}śmy w {pronoun_a_prep} palcem.
+Po{verb_go}{verb_middle_inter}m z {pronoun_i} do szkoły.	Po{verb_go}śmy z {pronoun_i} do szkoły.	FALSE
+Rozmawialiśmy o {pronoun_l} ostatnio.		FALSE
 Chciał{verb_end_inter}byś pójść do kina?	Chci{verb_middle_inter}byście pójść do kina?	FALSE
 Czy będziesz grał{verb_end_about} z nami?	Czy będziecie gra{verb_end_about} z nami?	FALSE
 Kiedy będziesz m{verb_o}gł{verb_end_about} się z nami spotkać?	Kiedy będziecie m{verb_o}g{verb_end_about} się z nami spotkać?	FALSE
 Gdy był{verb_middle_inter}m w domu, zacz{verb_nasal}ł{verb_middle_inter}m gotować.	Gdy by{verb_end_inter}śmy w domu, zacz{verb_nasal}śmy gotować.	FALSE
 Dostał{verb_middle_inter}m wyniki egzaminu i jestem z nich zadowolon{adjective_n}.	Dosta{verb_end_inter}śmy wyniki egzaminu i jesteśmy z nich zadowol{adjective_middle}n{adjective_n}.	FALSE
-Po{verb_go}{verb_middle_inter}m z {pronoun_i} do szkoły.	Po{verb_go}śmy z {pronoun_i} do szkoły.	FALSE
-Rozmawialiśmy o {pronoun_l} ostatnio.		FALSE
 Każd{adjective_n} z nich chciał{verb_end_about} czego innego.	Wszys{pronoun_all} z nich chci{verb_middle_about} czego innego.	FALSE
 To miło, że nas {honorific} odwiedza.	To miło, że nas {honorific} odwiedzają.	TRUE
 Czy będzie {honorific} kontynuować subskrypcję?	Czy będą {honorific} kontynuować subskrypcję?	TRUE

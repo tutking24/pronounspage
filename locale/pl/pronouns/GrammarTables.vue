@@ -20,15 +20,20 @@
                 <tbody>
                 <tr>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_short" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_acc" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_g_prep" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d_acc" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_d_prep" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a_acc" :counter="counter"/> / <Morpheme :pronoun="selectedPronoun" morpheme="pronoun_a_prep" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_i" :counter="counter"/></td>
                     <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_l" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>
         </div>
+
+        <p class="small">
+            Skąd w polszczyźnie tyle różnych form zaimków? Zapraszamy do lektury artykułu:
+            <nuxt-link to="/jak-działają-zaimki">Co warto wiedzieć o używaniu (i tworzeniu) zaimków?</nuxt-link>
+        </p>
 
         <div class="table-responsive">
             <table class="table table-sm">
