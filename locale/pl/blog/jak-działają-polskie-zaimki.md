@@ -126,4 +126,4 @@ ale gubią się w morzu parametrów du ustawienia.
 
 Jeśli podajesz treści z tego tekstu dalej, będzie mi miło, jeśli go zalinkujesz lub zacytujesz, np. tak:
 
- - Misiek, Szymon, 2023. „Co warto wiedzieć o używaniu (i tworzeniu) zaimków?”, Zaimki.pl Kolektyw „Rada Języka Neutralnego.” zaimki.pl/blog/jak-działają-polskie-zaimki \[data dostępu]
+ - Misiek, Szymon, 2023. „Co warto wiedzieć o używaniu (i tworzeniu) zaimków?”, Zaimki.pl Kolektyw „Rada Języka Neutralnego.” zaimki.pl/jak-działają-zaimki \[data dostępu]
