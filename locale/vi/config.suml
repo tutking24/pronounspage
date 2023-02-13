@@ -10,7 +10,7 @@ pronouns:
     plurals: true
     honorifics: false
     multiple:
-        name: 'Hoán đổi cách xưng hô'
+        name: 'Đại từ xưng hô hoán đổi'
         description: >
             Nhiều người phi nhị giới (nonbinary) sử dụng nhiều đại từ nhân xưng song song nhau
             và ổn với việc được gọi bằng bất cứ từ nào.
