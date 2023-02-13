@@ -10,17 +10,7 @@
                     <em><LinkedText :text="pronounGroup.group.description"/></em>
                 </div>
                 <ul class="list-unstyled">
-                    <li v-for="pronoun in pronounGroup.groupPronouns" :key="pronoun.canonicalName">
-                        <nuxt-link v-if="typeof pronoun === 'string'" :to="'/' + pronoun">
-                            <strong><Spelling :text="pronoun.replace(/&/g, ' ' + $t('pronouns.or') + ' ')"/></strong>
-                        </nuxt-link>
-                        <nuxt-link v-else :to="addSlash('/' + pronoun.canonicalName)">
-                            <strong><Spelling :text="pronoun.name(glue)"/></strong><small v-if="pronoun.smallForm">/<Spelling :text="pronoun.morphemes[pronoun.smallForm]"/></small>
-                            –
-                            <small><Spelling :text="pronoun.description"/></small>
-                        </nuxt-link>
-                        <NormativeBadge v-if="pronoun.normative"/>
-                    </li>
+                    <SimplePronounList :pronouns="pronounGroup.groupPronouns"/>
                 </ul>
             </li>
             <nuxt-link :to="`/${config.pronouns.route}`" class="list-group-item list-group-item-action text-center">
