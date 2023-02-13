@@ -904,6 +904,9 @@ profile:
         validation:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
+        removeSelf:
+            action: 'Remove yourself'
+            confirm: 'Are you sure you want to remove your profile from @%username%''s circle?'
     sensitive:
         header: 'Content warning'
         info: >

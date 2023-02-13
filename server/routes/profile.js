@@ -620,4 +620,22 @@ router.get('/profile/has-card', handleErrorAsync(async (req, res) => {
     return res.json(card);
 }));
 
+router.post('/profile/remove-self-circle/:username', handleErrorAsync(async (req, res) => {
+    if (!req.user) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+    const user = await req.db.get(SQL`SELECT id FROM users WHERE usernameNorm = ${normalise(req.params.username)}`);
+    if (!user) {
+        return res.status(400).json({error: 'Missing user'});
+    }
+
+    await req.db.get(SQL`
+        DELETE FROM user_connections WHERE to_userId = ${req.user.id} AND from_profileId IN (
+            SELECT id FROM profiles WHERE userId = ${user.id}
+        )
+    `);
+
+    return res.json('OK');
+}));
+
 export default router;

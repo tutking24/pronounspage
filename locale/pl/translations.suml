@@ -1464,6 +1464,9 @@ profile:
         validation:
             userNotFound: 'Konto nie istnieje'
             required: 'Relacja jest polem wymaganym'
+        removeSelf:
+            action: 'Usuń się'
+            confirm: 'Czy na pewno chcesz usunąć link do swojej wizytówki z kręgów osoby @%username%?'
     sensitive:
         header: 'Ostrzeżenie o zawartości'
         info: >

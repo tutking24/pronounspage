@@ -25,6 +25,12 @@
                             </li>
                         </ul>
                     </td>
+                    <td style="max-width: 4rem">
+                        <button class="btn btn-link btn-sm text-danger" @click="removeSelf(username)">
+                            <Icon v="trash"/>
+                            <T>profile.circles.removeSelf.action</T>
+                        </button>
+                    </td>
                 </tr>
             </template>
         </table>
@@ -40,6 +46,13 @@ export default {
     },
     async mounted() {
         this.circleMentions = await this.$axios.$get(`/profile/my-circle-mentions`);
+    },
+    methods: {
+        async removeSelf(username) {
+            await this.$confirm(this.$t('profile.circles.removeSelf.confirm', {username}), 'warning');
+            await this.$post(`/profile/remove-self-circle/${encodeURIComponent(username)}`);
+            window.location.reload();
+        }
     }
 }
 </script>
