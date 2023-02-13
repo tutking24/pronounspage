@@ -4,21 +4,21 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'đại từ nhân xưng'
+    route: 'cách xưng hô'
     default: 'anh ấy'
     any: 'bất kì'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Đại từ nhân xưng hoán đổi'
+        name: 'Hoán đổi cách xưng hô'
         description: >
             Nhiều người phi nhị giới (nonbinary) sử dụng nhiều đại từ nhân xưng song song nhau
-            và ổn với việc được gọi bằng bất cứ đại từ nào.
+            và ổn với việc được gọi bằng bất cứ từ nào.
             Một vài người lại muốn người khác dùng đan xen các đại từ nhân xưng khi đang nói về họ.
         examples: ['anh ấy&cô ấy', 'anh ấy&họ', 'cô ấy&họ']
     null:
         description: >
-            {/avoiding=Tránh các đại từ chỉ giới tính} / {/no-pronouns=không dùng đại từ nhân xưng} / {/nameself=đại từ là tên}
+            {/avoiding=Tránh các từ chỉ giới tính} / {/no-pronouns=không dùng đại từ nhân xưng} / {/nameself=đại từ là tên}
         history: >
             Có người không muốn dùng bất cứ đại từ nhân xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
             việc lược bỏ đại từ nhân xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
@@ -67,15 +67,15 @@ pronouns:
     emoji: false
     mirror:
         route: 'nhất dạng'
-        name: 'Đại từ nhân xưng giống người đang đối thoại (nhất dạng)'
+        name: 'Xưng hô giống người đang đối thoại (dùng đại từ nhất dạng)'
         description: >
-            Một người dùng đại từ nhất dạng muốn được dùng cùng đại từ nhân xưng với người nói.
+            Một người dùng đại từ nhất dạng muốn được dùng cùng cách xưng hô với người nói.
         example:
             - 'Bạn A dùng đại từ nhất dạng.'
             - 'Bạn B dùng {/cô ấy=cô ấy}, khi B nhắc đến A, B cũng dùng “cô ấy” để nhắc tới cô ấy (A).'
             - 'Bạn C dùng {/anh ấy=anh ấy} song song với {/họ=họ}, vì vậy, khi C nhắc đến A, C dùng anh ấy hoặc họ để nói tới họ (A).'
     slashes: false
-    others: 'Các đại từ nhân xưng khác'
+    others: 'Các cách xưng hô khác'
 
 pronunciation:
     enabled: false
@@ -185,8 +185,8 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: 'Cách xưng hô (Kính ngữ)'
-            values: ['[không có kính ngữ]', 'Bạn', 'Cậu', 'Mày', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí']
+            header: 'Cách xưng hô'
+            values: ['[không dùng]', 'Bạn', 'Cậu', 'Mày', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí']
         -
             header: 'Từ chỉ người và quan hệ huyết thống'
             values: ['bạn', 'nam', 'nữ', 'anh/em trai', 'chị/em gái', 'ông', 'bà', 'bro', 'sis']
