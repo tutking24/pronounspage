@@ -114,17 +114,35 @@ const checkHeartbeat = async () => {
     return heartbeat;
 }
 
+const deduplicateAdminMail = (projectDir, type, seconds) => {
+    const filename = `${projectDir}/dedup-${type}`;
+    if (!fs.existsSync(filename)) {
+        fs.writeFileSync(filename, +new Date() + '')
+        return true;
+    }
+
+    try {
+        const lastSent = new Date(parseInt(fs.readFileSync(filename)));
+        if (new Date() - lastSent < seconds * 1000) {
+            return false;
+        }
+    } catch {}
+
+    fs.writeFileSync(filename, +new Date() + '')
+    return true;
+}
+
 module.exports.calculateStats = async (db, allLocales, projectDir) => {
     const id = ulid();
 
     const heartbeat = await checkHeartbeat();
 
     const cardsQueue = (await db.get(`SELECT count(*) as c FROM profiles WHERE card = '' OR cardDark = ''`)).c;
-    if (cardsQueue > 64) {
+    if (cardsQueue > 64 && deduplicateAdminMail(projectDir, 'cards', 60 * 60)) {
         mailer('contact@pronouns.page', 'cardsWarning', {count: cardsQueue});
     }
     const linksQueue = (await db.get(`SELECT count(*) as c FROM links WHERE (expiresAt IS NULL OR expiresAt <= ${new Date() / 1000})`)).c;
-    if (linksQueue > 256) {
+    if (linksQueue > 256 && deduplicateAdminMail(projectDir, 'links', 60 * 60)) {
         mailer('contact@pronouns.page', 'linksWarning', {count: linksQueue});
     }
 

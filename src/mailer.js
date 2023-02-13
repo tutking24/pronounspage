@@ -107,7 +107,7 @@ const templates = {
     linksWarning: {
         subject: 'Links queue is getting long',
         text: 'There\'s {{count}} links in the queue!',
-        html: '<p>There\'s {{count}} cards in the queue!</p>',
+        html: '<p>There\'s {{count}} links in the queue!</p>',
     },
     translationProposed: {
         subject: '[{{locale}}] New translations proposed',
