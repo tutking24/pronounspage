@@ -12,7 +12,7 @@ pronouns:
     multiple:
         name: 'Danh xưng hoán đổi'
         description: >
-            Nhiều người phi nhị giới (nonbinary) sử dụng nhiều danh xưng song song nhau
+            Nhiều người phi nhị tính (nonbinary) sử dụng nhiều danh xưng song song nhau
             và ổn với việc được gọi bằng bất cứ từ nào.
             Một vài người lại muốn người khác dùng đan xen các danh xưng khi đang nói về họ.
         examples: ['anh ấy&cô ấy', 'anh ấy&họ', 'cô ấy&họ']
