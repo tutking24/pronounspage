@@ -1,0 +1,1443 @@
+title: 'Pronouns.page'
+domain: 'vi.pronouns.page'
+description: 'Những ví dụ về cách sử dụng danh xưng và ngôn ngữ phi giới tính.'
+
+home:
+    link: 'Trang chủ'
+    header: 'Danh xưng'
+    headerLong: 'Danh sách các danh xưng'
+    welcome: 'Chào mừng đến với pronouns.page!'
+    intro: >
+        Chúng tôi đang tạo một nguồn thông tin về ngôn ngữ phi giới tính.
+    why: 'Chỉ là cách xưng hô thôi thì có gì vậy?'
+    about:
+        - >
+            Danh xưng là những đại từ dùng để chỉ mỗi khi ta không muốn đề cập trực tiếp hoặc đề cập liên tục về người đó.
+            Đa số mọi người dùng {/anh ấy=“anh ấy”} và {/cô ấy=“cô ấy”}, vậy nên chúng ta tự quyết định dùng từ nào để gọi người khác dựa vào ngoại hình của người ấy.
+            Nhưng thực ra chuyện này không đơn giản vậy đâu…
+        - >
+            Giới tính rất phức tạp, một vài người “trông không giống” giới tính của họ.
+            Một vài người muốn được gọi bằng cách khác bạn nghĩ.
+            Lại có những người không thuộc nhóm “nam” hay “nữ” và muốn dùng những từ trung tính hơn.
+        - >
+            Công cụ này giúp bạn chia sẻ một đường link đến những cách gọi bạn mong muốn được gọi, kèm với những ví dụ câu,
+            để bạn có thể cho mọi người biết bạn muốn được gọi như thế nào.
+        - >
+            Tại sao nó lại quan trọng? Đơn giản vì đây là phép lịch sự, và tôn trọng lẫn nhau.
+            Chắc hẳn bạn không muốn gọi Nam là “Lan” chỉ vì bạn thích cái tên đó hơn đâu,
+            hoặc vì “cô ấy có ngoại hình hợp tên Lan hơn”.
+            Hoặc cho dù cô ấy <em>có</em> tên “Lan” trông giấy khai sinh
+            nhưng cô ấy cực kì ghét nó và chỉ muốn dùng tên “Nam”.
+            Và danh xưng cũng vậy đó –
+            nếu bạn không muốn thô lỗ với ai đó, làm ơn gọi họ đúng cách họ muốn.
+            Có sự khác biệt duy nhất là chúng ta thường biết tên, nhưng không biết danh xưng.
+            Chúng ta giới thiệu bản thân bằng cái tên, nhưng không nói về danh xưng. Hãy cùng nhau thay đổi điều đó nào!
+    pronouns: 'Danh sách các danh xưng phổ biến'
+    generator:
+        header: 'Trình tạo danh xưng'
+        description: >
+            Bạn cũng có thể sử dụng công cụ này bằng cách điền từ vào chỗ trống trong câu
+            và tạo một đường link để chia sẻ với người khác.
+        button: 'Hiển thị trình tạo danh xưng'
+        header2: 'Tạo đường link'
+        base: 'Dựa trên'
+        alt: 
+            - 'Bạn cũng có thể nhập danh xưng hoán đổi ở trong mỗi ô tách biệt nhau, ví dụ <code>anh ấy&cô ấy</code> = “anh ấy” hoặc “cô ấy”.'
+            - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên lạc với {/@jerryv=biên dịch tiếng Việt} của chúng tôi về vấn đề này.'
+    whatisit: 'Danh xưng thì có gì vậy?'
+    mission:
+        header: 'Sứ mệnh của chúng tôi'
+        summary: 'Chúng tôi chiến đấu cho tính tự do, tính tôn trọng và tính toàn diện của ngôn ngữ.'
+        freedom: >
+            <strong>Tự do</strong>
+            – để <em>mọi người</em> có thể sử dụng
+            danh xưng họ cảm thấy miêu tả họ tốt nhất.
+        respect: >
+            <strong>Tôn trọng</strong>
+            – để danh xưng của <em>người khác</em> được tôn trọng.
+        inclusiveness: >
+            <strong>Toàn diện</strong>
+            – để khi ta nói tới một người ta không quen biết hoặc một nhóm người,
+            ta không tự đoán giới tính của họ và không cô lập họ vì bất kỳ lý do gì.
+
+pronouns:
+    header: 'Các danh xưng'
+    headerLong: 'Các danh xưng'
+    examples: 'Ví dụ trong câu'
+    plural: 'Số nhiều'
+    intro: 'Tôi dùng các danh xưng'
+    normative: 'Chuẩn mực'
+    alt:
+        button: 'Tạo đường link tới danh xưng hoán đổi'
+        header: 'Danh xưng hoán đổi'
+        raw: 'hoán đổi'
+    generated: 'Những danh xưng này đã được tạo bằng trình tạo danh xưng. Nhóm pronouns.page không chịu bất kì trách nhiệm gì về nó.'
+    any:
+        header: 'Bất kì danh xưng nào'
+        short: 'bất kì'
+        description: >
+            Mặc dù đối với nhiều người, việc mọi người sử dụng danh xưng cụ thể để nói về họ là rất quan trọng,
+            có những người không phiền khi được xưng bằng bất cứ cách nào – miễn là người nói nói rõ mình đang nói đến ai.
+        options: 'Xem tùy chọn [chia sẻ]{/danh xưng=tại đây}.'
+    others: 'Các từ khác'
+    othersRaw: 'khác'
+    or: 'hoặc'
+    grammarTable: 'Bảng'
+
+sources:
+    header: 'Nguồn'
+    headerLong: 'Ví dụ từ các văn bản'
+    headerLonger: 'Ngôn ngữ phi giới tính trong các văn bản'
+    subheader: 'Tổng hợp văn bản của ngôn ngữ phi giới tính'
+    toc: 'Hiển thị mục lục'
+    type:
+        All: 'Tất cả'
+        Book: 'Sách'
+        Article: 'Báo'
+        Movie: 'Phim'
+        Series: 'Series'
+        Song: 'Nhạc'
+        Poetry: 'Thơ'
+        Comics: 'Truyện'
+        Game: 'Game'
+        Other: 'Khác'
+    submit:
+        header: 'Gửi một ví dụ để được thêm vào'
+        action: 'Gửi'
+        pronouns: 'Những danh xưng nào đã được sử dụng?'
+        pronounsInfo: 'Nhập thể đơn giản nhất của danh xưng, như trong liên kết, ví dụ “họ”, “em ấy”, “cậu ấy”'
+        type: 'Thể loại nguồn'
+        author: 'Tác giả'
+        title: 'Tiêu đề'
+        extra: 'Thông tin thêm (người dịch, tên tạp chí,…)'
+        year: 'Năm xuất bản (bản tiếng Việt)'
+        fragments: 'Đánh dấu'
+        fragmentsInfo: 'Bạn có thể đánh dấu các danh xưng được nhắc tới bằng dấu ngoặc vuông: “Và sau đó \[\[họ]] thấy cái cách \[\[họ]] tự gây ra điều đó cho chính bản thân \[\[họ]].”'
+        comment: 'Bình luận'
+        link: 'Đường liên kết đến nội dung'
+        thanks: 'Cảm ơn bạn đã đóng góp!'
+        another: 'Gửi thêm'
+        moderation: 'Các ví dụ sẽ phải được phê duyệt trước khi được thêm vào.'
+        key: 'Mã định danh'
+        keyInfo: 'Mã định danh để liên kết các nguồn ở các phiên bản ngôn ngữ khác và liên kết với từ điển'
+        images: 'Ảnh'
+        spoiler: 'Spoiler'
+    otherVersions: 'Trong các ngôn ngữ khác'
+    referenced: 'Ví dụ'
+
+nouns:
+    header: 'Từ điển'
+    headerLong: 'Từ điển danh từ trung tính'
+    headerLonger: 'Từ điển ngôn ngữ phi giới tính'
+    description: 'Không chỉ có danh xưng thôi đâu! Ghé qua từ điển danh từ phi giới tính của chúng tôi xem này.'
+    intro:
+        - >
+            Trung tính và toàn diện không chỉ là tôn trọng cách xưng hô của một người.
+            Nó còn là cách mô tả công việc, vị trí, mối quan hệ của họ, v.v.
+            theo cách không tự đoán giới tính của họ.
+            Không phải tất cả lính cứu hỏa đều là “thanh niên cứu hỏa”. Không phải hôn phu nào cũng là “chồng” hay “vợ”.
+        - >
+            Khi đề cập đến một người mà bạn không biết giới tính,
+            với một nhóm người có giới tính khác nhau,
+            và đặc biệt là đối với những người phi nhị giới, những người chắc chắn sẽ muốn sử dụng chúng hơn,
+            hãy sử dụng các từ trung tính.
+        - >
+            Dưới đây là một từ điển các từ cần chú ý.
+            Bạn có thể đóng góp cho từ điển và thêm đề xuất của bạn.
+        - >
+            Hãy nhớ rằng đây là một từ điển các <em>ý tưởng và đề xuất</em>.
+            Không phải tất cả các từ được trích dẫn đều có nghĩa trong mọi ngữ cảnh, không phải tất cả đều <em>hoàn toàn</em> trung tính.
+            (nhưng chúng được một số người phi nhị giới sử dụng để thể hiện bản thân bên ngoài giới tính nam nữ),
+            và không phải mọi từ ở đây đều có thể được sử dụng cho bất kỳ người phi nhị giới nào – nên hãy hỏi họ cách họ muốn được gọi.
+
+    approved: 'các mục đã được phê duyệt'
+    pending: 'đang chờ kiểm duyệt'
+    edit: 'Đề xuất thay đổi'
+    edited: 'Đã đề xuất thay đổi'
+    editing: 'Bạn đang chỉnh sửa một mục hiện có'
+    empty: 'Không tìm thấy từ nào phù hợp với tiêu chí của bạn.'
+
+    submit:
+        action: 'Gửi'
+        actionLong: 'Gửi từ'
+        thanks: 'Cảm ơn bạn đã đóng góp!'
+        another: 'Gửi thêm'
+        moderation: 'Các từ sẽ phải được phê duyệt trước khi được thêm vào.'
+
+    template: 'Sử dụng một mẫu'
+
+    masculine: 'nam tính'
+    masculineShort: 'nam'
+    feminine: 'nữ tính'
+    feminineShort: 'nữ'
+    neuter: 'trung tính'
+    neuterShort: 'trung'
+
+    singular: 'số ít'
+    singularShort: 'ít'
+    plural: 'số nhiều'
+    pluralShort: 'nhiều'
+
+    image: 'Ảnh'
+
+community:
+    header: 'Cộng đồng'
+    headerLong: 'Cộng đồng đồng tính'
+
+terminology:
+    header: 'Thuật ngữ'
+    headerLong: 'Từ điển thuật ngữ đồng tính'
+    info:
+        - >
+            Nhiều thuật ngữ và cụm từ liên quan đến cộng đồng LGBTQ+
+            được mượn từ tiếng Anh vào tiếng Việt.
+            Đây là một bảng chú giải những thuật ngữ đó, mô tả ý nghĩa của chúng,
+            và đề xuất bản dịch tiếng Việt cho chúng.
+        - >
+            Hãy nhớ rằng các nhãn nhận dạng vốn rất chủ quan và linh hoạt.
+            Từ điển này là một nỗ lực của cộng đồng nhằm tìm ra những định nghĩa được chấp nhận rộng rãi nhất về các thuật ngữ đồng tính,
+            nhưng không nên được coi là bất kỳ loại thẩm quyền nào về vấn đề này.
+            Người duy nhất được thẩm quyền về danh tính của họ và những từ nào mô tả họ đúng nhất là… chính người đó.
+    term: 'Thuật ngữ'
+    original: 'Ngữ nguyên học'
+    category: 'Thể loại'
+    images: 'Hình ảnh bổ sung từ bên ngoài danh mục cờ'
+    definition: 'Khái niệm'
+
+faq:
+    header: 'Câu hỏi thường gặp'
+    headerLong: 'Những câu hỏi thường gặp'
+    questions:
+        nonbinary:
+            question: 'Phi nhị giới là gì?'
+            answer:
+                - >
+                    Giới tính phức tạp hơn rất nhiều so với sự phân biệt nam/nữ đơn giản.
+                    Ngay cả từ quan điểm sinh học thuần túy, chúng ta phân biệt giới tính nhiễm sắc thể, giới tính di truyền, giới tính nội tiết tố, giới tính kiểu hình…
+                    Chúng không nhất thiết phải đồng dạng với nhau, chúng không nhất thiết phải là nam hay nữ.
+                    Và khi chúng ta đề cập đến khía cạnh văn hóa, “giới tính” chỉ là một thứ được xây dựng của xã hội.
+                    Depending on time and location being “a woman” or “a man” can mean having radically different
+                    Tùy thuộc vào thời gian và địa điểm, trở thành “phụ nữ” hay “đàn ông” có thể có nghĩa là có những quyền, nghĩa vụ, chuẩn mực hoàn toàn khác nhau… Ở châu Âu, đàn ông thường đi giày cao gót và tất chân, còn người dân bản địa ở Bắc Mỹ đã công nhận giới tính thứ ba từ lâu.
+                - >
+                    Phi nhị giới là một thuật ngữ chung mô tả danh tính của những người không phù hợp với sự phân biệt nam/nữ đơn thuần.
+                    Ví dụ, nó bao gồm những người
+                    {https://vi.wikipedia.org/wiki/V%C3%B4_t%C3%ADnh_luy%E1%BA%BFn_%C3%A1i=vô tính},
+                    {https://gender.wikia.org/wiki/Gender_Fluid= (Linh hoạt giới)},
+                    {https://gender.wikia.org/wiki/Demigirl=bán nữ},
+                    {https://gender.wikia.org/wiki/Demiboy=bán nam},
+                    và {https://vi.wikipedia.org/wiki/Phi_nh%E1%BB%8B_nguy%C3%AAn_gi%E1%BB%9Bi=rất nhiều người khác}.
+                - >
+                    Phi nhị giới không nhất thiết phải là thứ gì đó “giữa” nam tính và nữ tính, mà nó “vượt ra ngoài”.
+                    Những người phi nhị giới không cần phải ái nam ái nữ, không phải sử dụng danh xưng trung tính, v.v.
+                    Đó là việc thoát khỏi các vai trò về giới tính, không phải tạo ra những giới tính mới.
+        why-respect:
+            question: 'Tại sao tôi phải tôn trọng một số danh xưng <em>lạ</em>?'
+            answer:
+                - >
+                    Bởi vì xưng hô với mọi người theo cách mà họ muốn được xưng hô là cơ sở của các mối quan hệ xã hội.
+                    Bạn không gọi Nam là “Lan”, bạn không bỏ “ông”/“bà” khi giao tiếp với bề trên, v.v.
+                    Và có những người không muốn bị gọi là “{/anh ấy=anh ấy}” or “{/cô ấy=cô ấy}”.
+                    Nếu bạn không chấp nhận điều đó, điều đó chỉ cho thấy <em>bạn</em> không tôn trọng người khác.
+                - >
+                    “Danh xưng lạ” chỉ là vấn đề làm quen mà thôi.
+        made-up:
+            question: 'Những danh xưng này được bịa ra mà thôi!'
+            answer:
+                - >
+                    Đúng. Đúng vậy đấy. Và mỗi từ trong mọi ngôn ngữ cũng vậy.
+                    Chỉ là một số từ cũ hơn những từ khác mà thôi.
+        how-to-know:
+            question: 'Làm thế nào để tôi xưng hô với một ai đó?'
+            answer:
+                - >
+                    Bạn chỉ cần hỏi thôi! Đúng, nó có thể hơi khó xử, nhưng chúng ta càng làm nhiều thì càng bớt khó xử thôi.
+                    Nếu chúng ta có thể hỏi ai đó tên của họ, tại sao không hỏi luôn danh xưng của họ?
+                - >
+                    (Có điều, làm ơn đừng diễn đạt câu hỏi như “bạn là con trai hay con gái?”.
+                    Câu hỏi này ngụ ý rằng chỉ có hai câu trả lời đúng,
+                    và nó cho thấy sự tò mò không lành mạnh về bộ phận sinh dục của người khác.
+                    Thay vào đó, bạn chỉ cần hỏi “mình nên xưng hô với bạn như thế nào?” hoặc “danh xưng của bạn là gì?”)
+                - >
+                    Điều quan trọng nữa là hãy bình thường hóa việc nói cho mọi người biết danh xưng của bạn khi bạn giới thiệu bản thân.
+                    “Xin chào, tôi là Việt Anh, hãy gọi tôi là {/anh=anh ấy} hoặc {/bạn=bạn ấy}”. Việc này không khó đâu – nhưng đối với những người chuyển giới và phi nhị giới, điều đó có ý nghĩa rất lớn đó!
+                    Việc này thậm chí còn dễ dàng hơn khi làm online: chỉ cần ghi danh xưng của bạn (hoặc đường link đến các ví dụ từ trang web của chúng tôi) vào phần mô tả của bạn thôi.
+                - >
+                    Bạn cũng nên nhớ rằng nhiều người có thể sử dụng một tên khác và một bộ danh xưng khác tùy thuộc vào tình huống.
+                    Họ có thể chưa tiết lộ giới tính (come out) với bạn bè hoặc đồng nghiệp, nhưng đã come out với những người bạn thoải mái với họ.
+                    Hãy để ý chút nha. Ví dụ, bạn có thể hỏi họ “tôi nên sử dụng danh xưng nào trước mặt sếp của bạn?”, v.v.
+                - >
+                    Một số người dùng nhiều danh xưng, eg. “{/anh ấy&cô ấy=anh ấy/cô ấy}” or “{/họ&anh ấy=họ/anh ấy}”.
+                    Điều đó có nghĩa là họ thích tất cả các danh xưng đó. Thông thường, từ đầu tiên là từ được ưu tiên của họ.
+        who-uses-it:
+            question: 'Có ai dùng những từ này không vậy?'
+            answer:
+                - >
+                    Có chứ! Hàng triệu người phi nhị giới trên thế giới dùng danh xưng khác.
+                    Mỗi danh xưng được liệt kê ở đây đều có người thực sự sử dụng nó trong cuộc sống hàng ngày.
+        authority:
+            question: 'Những danh xưng phi giới tính đó có được chấp thuận bởi các thẩm quyền về ngôn ngữ không?'
+            answer:
+                - >
+                    Ngôn ngữ không phải là một loại phép thuật cổ xưa được Phật hay Chúa ban cho.
+                    Nó chỉ là một công cụ mà chúng ta sử dụng để giao tiếp.
+                    Khi xã hội chúng ta thay đổi, và khi thế giới xung quanh chúng ta thay đổi,
+                    chúng ta điều chỉnh ngôn ngữ ta sử dụng để có thể mô tả sự vật, sự việc tốt hơn.
+                    Chúng ta là người dùng của nó, vì vậy <em>chúng ta</em> có quyền quyết định về cách sử dụng nó.
+                - >
+                    Từ điển mất thời gian để bắt đầu ghi chép những thay đổi đó,
+                    tuy nhiên điều đó không làm sự thay đổi trở nên vô nghĩa.
+                    Nhưng cuối cùng, các từ mới nếu được sử dụng đủ thường xuyên thì sẽ được đưa vào từ điển mà thôi.
+                - >
+                    Bạn cũng có thể tham khảo các {https://scholar.google.com/scholar?hl=vi&q=neopronoun =bài báo học thuật}
+                    về neopronoun.
+        bio:
+            question: 'Tại sao tôi nên đặt danh xưng của mình trong tiểu sử trên mạng xã hội?'
+            answer:
+                - >
+                    Nếu bạn là người hợp giới (không phải người chuyển giới) và bạn dùng “{/anh ấy=anh ấy}” hoặc “{/cô ấy=cô ấy}” hợp với giới tính của bạn,
+                    bạn có thể nghĩ rằng danh xưng của bạn là một thứ <em>hiển nhiên</em>.
+                    Và đúng, có thể điều đó là hiển nhiên – miễn là tên của bạn được đề cập trong hồ sơ (và là tên gốc nam hoặc nữ)
+                    hoặc nếu bạn có hình ảnh của bạn làm hình đại diện.
+                    Nhiều người thì không – vì vậy rất khó đoán họ muốn được gọi như thế nào.
+                - >
+                    Nhưng thực ra là hơn thế: danh xưng của bạn có thể “rõ ràng”,
+                    nhưng có những người không có danh xưng rõ.
+                    Họ muốn được xưng hô một cách chính xác, cho dù họ có “đúng” giới tính của mình hay không,
+                    họ đã chuyển giới hay chưa (hoặc họ có muốn chuyển giới không).
+                    Những người phi nhị giới thường “không có vẻ ngoài lai giới”, và họ không mắc nợ ái nam ái nữ với bất kỳ ai.
+                - >
+                    Việc chia sẻ danh xưng của bạn là rất quan trọng đối với những người chuyển giới, phi nhị giới và không theo chuẩn giới tính.
+                    Hơn thế, nó cũng vạch trần và cô lập chúng tôi nữa.
+                    Nhưng nếu mọi người, dù hợp giới hay chuyển giới, đều làm như vậy, điều đó sẽ có ý nghĩa rất lớn đối với chúng tôi.
+                    Điều đó khiến chúng tôi cảm thấy thoải mái, an toàn và được chào đón hơn.
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(nhiều lý do hơn ở đây - bài viết bằng tiếng Anh).}
+        change:
+            question: 'Tôi có thể thay đổi danh xưng của mình không?'
+            answer:
+                - >
+                    Tất nhiên rồi! Chẳng ai ngạc nhiên khi ai đó thay đổi quan điểm, phong cách, sở thích…
+                    Vậy tại sao ta lại thấy lạ khi họ phát hiện ra một phần danh tính của mình,
+                    không thích tên của họ, phát hiện ra một nhãn khác phù hợp với họ, v.v.?
+        get-used-to:
+            question: 'Có lạ gì không khi tôi không thể quen với các danh xưng mới <em>của tôi</em>?'
+            answer:
+                - >
+                    Không hề! Sau nhiều năm sử dụng danh xưng phù hợp với giới tính được chỉ định khi sinh của mình,
+                    ta rất dễ dàng quên mất chính mình khi chuyển sang những từ khác.
+                - >
+                    Danh xưng ≠ giới tính.
+                    Giới tính của bạn sẽ không thể thay đổi chỉ vì bạn đã bối rối một lần khi có ai đó gọi bạn là “họ” đâu.
+                    Đừng lo. Hãy thử đi. Hãy xem từ gì hợp với bạn nhất.
+        preferred-pronouns:
+            question: 'Tại sao lại không nên nói “danh xưng ưa thích”?'
+            answer:
+                - >
+                    Bởi vì cụm từ này gợi ý rằng danh xưng của ai đó chỉ là một ý thích bất chợt.
+                    Nếu ai đó chỉ “thích” được gọi là cô ấy, anh ấy sẽ không _thực sự_ cảm thấy tồi tệ, nếu tôi gọi anh ấy là “anh ấy”, phải không nhỉ?
+                    Đằng nào thì họ trông giống như một chàng trai mà, vì vậy sẽ dễ dàng hơn đấy chứ!
+                - >
+                    Không! Không, không và không. Đó là danh xưng của chúng tôi. Không phải “danh xưng ưa thích” của chúng tôi. Cũng như việc đó là tên của chúng tôi, chứ không phải “tên ưa thích” hay “biệt danh” của chúng tôi.
+                    Nếu bạn quan tâm đến những người bạn và người thân phi nhị giới của mình, thì xin hãy gọi họ cho đúng cách.
+        gender-pronouns:
+            question: 'Tại sao tôi không nên nói “danh xưng mang giới tính”?'
+            answer:
+                - >
+                    Bởi vì giới tính ≠ danh xưng. Danh xưng chỉ là ngữ pháp.
+                    Những người phi nhị giới có thể sử dụng nam/nữ bình thường, một vài người đồng tính nữ sử dụng {/anh ấy=anh ấy} vì lí do văn hóa, v.v.
+                - >
+                    Chỉ cần nói “danh xưng” hoặc “đại từ nhân xưng” là đủ.
+        bigger-problems:
+            question: 'Không có vấn đề nào lớn hơn để giải quyết ư? Sao ta không tập trung vào giải quyết nạn đói thế giới thay vì một số danh xưng như thế này?'
+            answer:
+                - >
+                    Một vấn đề có vẻ rất tầm thường đối với một số người nhưng lại rất quan trọng đối với những người khác.
+                    Hãy tưởng tượng hầu hết mọi câu bạn nghe về bản thân đều là những lời nói dối về chính danh tính của bạn do những hạn chế và bất cập của ngữ pháp tiếng Việt.
+                    Ngay cả những cuộc trò chuyện đơn giản cũng khiến bạn trở nên khó chịu, bất kể chúng nói về điều gì…
+                - >
+                    Có rất nhiều loại vấn đề khác nhau trên thế giới này,
+                    nhưng chúng ta không nên dùng chúng làm cái cớ để loại bỏ những vấn đề mà chúng ta <em>không thực sự muốn</em> giải quyết.
+                    Trên Trái Đất có những tám tỷ người – chúng ta có thể giải quyết nhiều vấn đề cùng một lúc cơ mà!
+                    Mọi người đều có nhu cầu riêng và nguồn lực của mỗi người thì khác nhau.
+                - >
+                    Nhóm của chúng tôi không có đủ nguồn lực để nuôi sống thế giới, xóa đói giảm nghèo, ngăn chặn chiến tranh hay làm giảm sự nóng lên toàn cầu.
+                    Tuy nhiên, những gì chúng tôi có là các kỹ năng và sự nhiệt huyết để định hình và thúc đẩy một ngôn ngữ toàn diện hơn –
+                    vì vậy đó là những gì chúng tôi đang làm, thay vì bỏ mặc và đứng im nhìn.
+                - >
+                    Sự tôn trọng danh xưng và danh tính của người khác không đòi hỏi nhiều nỗ lực.
+                    Kể cả khi bạn là người đang giải quyết những thách thức lớn nhất mà toàn nhân loại đang phải đối mặt,
+                    bạn cũng có thể dễ dàng tránh việc kì thị hoặc tạo sự kì thị người dị giới.
+        flags:
+            question: 'Bạn có thể thêm cờ này không? Bạn có thể loại bỏ cờ kia không?'
+            answer:
+                - >
+                    Không.
+                - >
+                    Duy trì danh sách cờ và nhãn là một công việc ngày càng tốn nhiều thời gian cho nhóm của chúng tôi.
+                    Việc lọc ra những kẻ lừa đảo và phá hoại khỏi các danh tính hợp lệ cũng là một thách thức lớn.
+                    Chúng tôi không muốn trở thành “công an danh tính”. Và chúng tôi cũng không muốn dành toàn bộ thời gian cho việc quản lý các lá cờ.
+                    Bởi dù sao thì đây là một dự án về ngôn ngữ và danh xưng, không phải về cờ. Đó chỉ là một thứ phụ thôi.
+                - >
+                    Chúng tôi đã cố gắng hết sức để chọn một danh sách các cờ phổ biến nhất
+                    và, theo hiểu biết tốt nhất của chúng tôi, thường được chấp nhận.
+                    Chúng tôi không có kế hoạch mở rộng hoặc thu hẹp danh sách đó.
+                - >
+                    Chúng tôi biết rằng một số cờ có thể không được một vài người thích
+                    (ví dụ: do đã từng có các TERF (người ủng hộ nữ quyền nhưng lại kì thị người chuyển giới) cố gắng chiếm lấy một thuật ngữ và khiến nó mang nghĩa kỳ thị,
+                    vì nhiều định nghĩa khó hiểu,
+                    hoặc thậm chí vì các khía cạnh của cuộc sống của một nhân vật thần thoại).
+                    Bản thân chúng tôi là những người đồng tính và chuyển giới, chúng tôi rất quan tâm đến anh chị em chuyển giới của mình chứ.
+                    Tuy nhiên, rất khó để đưa ra quyết định như vậy
+                    khi chúng tôi nhận được tin nhắn từ cả những người chuyển giới yêu cầu thêm cờ mà họ thật sự mong muốn,
+                    và cả từ những người chuyển giới khác yêu cầu xóa nó đi vì bằng một cách nào đó nó gây tổn thương cho những người chuyển giới.
+                    Không phải lịch sử của nhãn nào, lá cờ nào đều rõ ràng và không có một nguồn đáng tin cậy để tra cứu về nó.
+                    Và ngay cả khi những người kì thị đồng tính cố làm một số thuật ngữ mang nghĩa tổn thương,
+                    chúng tôi tin vào sức mạnh của cộng đồng để “đòi lại” những từ kích động ấy.
+                - >
+                    Nếu bạn không thích một lá cờ, đừng sử dụng nó.
+                    Nếu cờ của bạn bị thiếu, hãy tải nó lên
+                    (nó sẽ được đánh dấu là do người dùng tải lên để giảm sự phá hoại).
+        custom-pronouns:
+            question: 'Danh xưng của tôi không được liệt kê'
+            answer:
+                - >
+                    Trên trang chủ có trình tạo danh xưng, bạn có thể sử dụng nó để tạo liên kết đến bất kỳ anh nào bạn thích.
+
+links:
+    header: 'Liên kết'
+    headerLong: 'Liên kết thêm'
+    recommended: 'Chúng tôi đề xuất'
+    blog: 'Blog'
+    mediaShort: 'Phương tiện truyền thông'
+    media: 'Pronouns.page trên các phương tiện truyền thông'
+
+    social: 'Mạng xã hội'
+
+    languageVersions: 'Những ngôn ngữ khác'
+
+people: ~
+
+english:
+    header: 'English'
+    headerLong: 'An overview in English'
+    headerLonger: 'An overview of Vietnamese nonbinary pronouns'
+    description: 'If you don''t speak Vietnamese, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    intro:
+        - >
+            Vietnamese pronouns are extensively used in daily life.
+            Many of them are gender-neutral, but only using such pronouns limits you to conversing with friends your own age.
+            When addressing others, especially seniors and strangers,
+            you _have to_ use kinship terms, the majority of which are strongly gendered..
+            Vietnamese nonbinary people frequently have a lot of headache regarding pronouns,
+            and often just go with whatever people call them.
+
+contact:
+    header: 'Liên lạc'
+    authors: 'Những tác giả của trang web này'
+    groups:
+        all: ''
+        calendar: 'Bot đăng lịch đồng tính'
+    faq: >
+        Trước khi bạn gửi tin nhắn, hãy <strong>xem</strong> mục {/faq=<strong>Câu hỏi thường gặp</strong>} của chúng tôi – có thể câu trả lời cho câu hỏi của bạn đã có sẵn ở đó rồi.
+    technical: >
+        Bạn có gặp <strong>lỗi</strong> hoặc có câu hỏi kỹ thuật nào không?
+        Vui lòng bao gồm tên người dùng (username) của bạn và <strong>càng nhiều chi tiết càng tốt</strong> trong tin nhắn của bạn
+        (thông báo lỗi như thế nào? bạn đang sử dụng điện thoại hay máy tính? bạn sử dụng trình duyệt nào?
+        những bước cần thực hiện để tái hiện sự cố là gì? bạn có thể đính kèm ảnh chụp màn hình hoặc bản ghi màn hình không? v.v.)
+        Ngoài ra, vui lòng <strong>thử vô hiệu hóa những tiện ích mở rộng</strong> có thể làm lỗi trang (ví dụ: trình chặn quảng cáo chặn nhầm thứ không phải là quảng cáo) và xem nó có giúp gì không.
+    hate: >
+        Bạn muốn gửi cho chúng tôi tin nhắn kì thị ư?
+        Hãy bỏ cuộc đi, vì chúng tôi không nói chuyện với những người phá đám đâu.
+        Chúng tôi mất ít thời gian hơn để đưa email của bạn vào thư rác so với thời gian bạn viết nó đấy.
+    language: >
+        Chúng tôi là một nhóm hoạt động quốc tế, vậy nên những người đã tạo một phiên bản ngôn ngữ cụ thể có thể không phải là những người sẽ đọc tin nhắn của bạn.
+        Vì vậy, nếu có thể, hãy liên hệ với chúng tôi bằng <strong>tiếng Anh</strong>.
+        Nếu bạn chỉ có thể giao tiếp bằng tiếng Việt, hãy chuyển lời qua {/@jerryv=biên dịch tiếng Việt} của chúng tôi để chúng tôi có thể hỗ trợ bạn một cách nhanh nhất.
+    team:
+        name: 'Nhóm “Hội đồng ngôn ngữ trung lập”'
+        nameShort: 'Nhóm'
+        description: >
+            Chúng tôi là một tập thể đồng tính chuyên tập hợp, nghiên cứu, định hình và thúc đẩy ngôn ngữ trung lập về giới tính.
+            Chúng tôi cũng ủng hộ những hành động hướng tới bình đẳng và công bằng xã hội.
+        extra: []
+        logo: 'Biểu tượng của nhóm là sự kết hợp giữa biểu tượng người chuyển giới (transgender) và bong bóng lời nói tượng trưng cho ngôn ngữ.'
+        members: 'Thành viên hiện tại'
+        member: 'Thành viên của tập thể'
+        upcoming: 'Phiên bản ngôn ngữ sắp tới'
+        join:
+            header: 'Hãy tham gia với chúng tôi!'
+            encouragement: >
+                Bạn có quan tâm đến ngôn ngữ không phân biệt giới tính không?
+                Bạn có muốn giúp nhóm của chúng tôi trong việc thúc đẩy, truyền bá ngôn ngữ này không? Thật tuyệt đấy!
+                Mọi sự trợ giúp đều rất được hoan nghênh!
+            areasIntro: 'Các lĩnh vực mà bạn có thể giúp đỡ là:'
+            areas:
+                - 'mở rộng và kiểm duyệt từ điển và bảng thuật ngữ,'
+                - 'mở rộng và kiểm duyệt danh sách các nguồn,'
+                - 'tạo đồ họa và bài đăng trên các nền tảng mạng xã hội,'
+                - 'trả lời tin nhắn trực tiếp,'
+                - 'kiểm duyệt hồ sơ,'
+                - 'tạo một phiên bản ngôn ngữ mới,'
+                - 'dịch thuật,'
+                - 'điều phối quá trình thêm các phiên bản ngôn ngữ,'
+                - 'viết bài đăng trên blog,'
+                - 'lập trình,'
+                - 'v.v.'
+            allies: >
+                Có một số thứ đòi hỏi quan điểm của một người phi nhị giới, có những thứ khác thì lại không nhất thiết.
+                Đó là lý do chúng tôi cũng mời các đồng minh “thẳng”.
+            how: 'Làm thế nào để tham gia? Gửi email cho chúng tôi tới {mailto:contact@pronouns.page=contact@pronouns.page}, trong đó bạn:'
+            application:
+                - 'giới thiệu bản thân,'
+                - 'liên kết đến trang pronouns.page của bạn,'
+                - 'liên kết mạng xã hội của bạn,'
+                - 'nói kinh nghiệm của bạn trong công việc hoạt động xã hội (nếu có),'
+                - 'nói những gì bạn muốn giúp đỡ với.'
+    contribute:
+        header: 'Đóng góp'
+        intro: >
+            Pronouns.page là một dự án nguồn mở được tạo bởi các tình nguyện viên.
+            Bạn cũng có thể đóng góp đó! Đây là một số mảng mà chúng tôi cần sự giúp đỡ của bạn.
+            Những người đóng góp tích cực sẽ được mời tham gia nhóm của chúng tôi.
+        entries:
+            header: 'Thêm mục'
+            description: >
+                Nhiều phần của trang web (danh từ, thuật ngữ đồng tính, từ điển dị tính…) có tùy chọn để thêm và chỉnh sửa mục nhập.
+                Nếu bạn nghĩ rằng có mục còn thiếu hoặc không chính xác, đừng ngần ngại gửi góp ý.
+        translations:
+            header: 'Thêm hoặc sửa bản dịch'
+            description: >
+                Có bản dịch bị thiếu hoặc không chính xác ư?
+                Hãy nhấn vào “Đề xuất bản dịch” ở dưới chân trang và làm theo hướng dẫn.
+        version:
+            header: 'Tạo phiên bản ngôn ngữ mới'
+            description: >
+                Hướng dẫn tạo phiên bản ngôn ngữ mới có thể được tìm thấy {https://en.pronouns.page/new-version=ở đây}.
+                Trước khi bắt đầu, vui lòng {/contact=liên hệ} với chúng tôi để phối hợp với những người khác cũng có thể đang làm việc này.
+        technical:
+            header: 'Gửi pull request'
+            description: >
+                Các nhiệm vụ kỹ thuật được quản lý trên {https://gitlab.com/PronounsPage/PronounsPage/-/boards=bảng kanban này}.
+                Bạn chỉ cần chọn một nhiệm vụ chưa được giao từ cột “Việc cần làm”, giao nhiệm vụ đó cho chính bạn và bắt đầu làm.
+                Đừng ngần ngại đặt câu hỏi nhé.
+            footer: 'Nhiệm vụ kỹ thuật'
+
+support:
+    header: 'Hỗ trợ'
+    description: >
+        Nếu bạn muốn đóng góp cho máy chủ, tên miền, nhãn dán, v.v. hoặc chỉ đơn giản là mua cà phê cho tác giả làm việc,
+        bạn có thể sử dụng các liên kết dưới đây:
+    bankAccount: 'Thẻ ghi nợ/tín dụng quốc tế'
+
+user:
+    header: 'Tài khoản'
+    headerLong: 'Tài khoản của bạn'
+    tokenExpired: 'Phiên đăng nhập đã hết hạn. Vui lòng tải lại trang web và thử lại.'
+    tooManyAttempts: 'Đã truy cập quá nhiều lần. Quyền truy cập vào tài khoản của bạn đã tạm thời bị khóa. Vui lòng thử lại sau.'
+    login:
+        help: 'Để đăng nhập hoặc tạo tài khoản, bạn có thể sử dụng các nút mạng xã hội hoặc nhập email của mình vào trường bên dưới, sau đó xác nhận mã bạn sẽ nhận được trong email.'
+        placeholder: 'Email (hoặc tên người dùng, nếu bạn đã có tài khoản)'
+        action: 'Đăng nhập / đăng kí'
+        emailSent: 'Chúng tôi đã gửi cho bạn một <strong>%email%</strong> email có mã OTP gồm 6 chữ số. Hãy nhập mã vào đây. Mã này chỉ sử dụng một lần và có hiệu lực trong 15 phút.'
+        userNotFound: 'Không tìm thấy tài khoản.'
+        email:
+            subject: 'Mã đăng nhập của bạn là {{code}}'
+            instruction: 'Để xác nhận địa chỉ email của bạn, hãy nhập mã OTP sau trên trang web:'
+            extra: 'Nếu bạn không đăng nhập vào trang web này, bạn có thể bỏ qua thông báo.'
+        why: >
+            Việc đăng ký cho phép bạn quản lý thẻ của mình, ({/@example=ví dụ như thẻ này}).
+        passwordless: 'Trang web này không lưu trữ bất kỳ mật khẩu nào. {https://avris.it/blog/passwords-are-passé=Tìm hiểu thêm tại đây - bài viết bằng tiếng Anh.}'
+        instancePlaceholder: 'Instance'
+        domainPlaceholder: 'Tên miền'
+        deprecated: 'Đã bị hủy bỏ'
+        depreciationNotice: >
+            Đây không phải là nhà cung cấp xác thực đáng tin cậy.
+            <a href="%link%" target="_blank" rel="noopener">Hãy đọc ở đây để biết thêm chi tiết</a>.
+            Chúng tôi khuyên bạn dùng một phương thức đăng nhập khác.
+    code:
+        action: 'Xác minh'
+        invalid: 'Mã không hợp lệ.'
+    account:
+        changeUsername:
+            header: 'Tên người dùng (Username)'
+            action: 'Thay đổi tên người dùng'
+            invalid: 'Tên người dùng phải có độ dài từ 4 đến 16 ký tự và chỉ được chứa số, chữ cái, dấu chấm, dấu gạch nối và dấu gạch dưới.'
+            taken: 'Tên người dùng này được sử dụng.'
+            nonascii: >
+                Lưu ý: nếu bạn chọn tên người dùng chứa các ký tự không phải ASCII, hãy nhớ rằng trong một số trường hợp, liên kết tới hồ sơ của bạn sẽ được mã hóa thành một chuỗi ký tự kém ưa nhìn hơn: “@%encoded%”.
+        changeEmail:
+            header: 'Địa chỉ email'
+            action: 'Thay đổi email'
+            invalid: 'Email không hợp lệ.'
+            taken: 'Địa chỉ này đã được sử dụng.'
+        admin: 'Admin'
+    logout: 'Đăng xuất'
+    avatar:
+        header: 'Ảnh đại diện'
+        change: 'Thay đổi'
+        failed: 'Vui lòng kết nối lại với mạng xã hội của bạn để sửa hình đại diện bị mất.'
+    deleteAccount: 'Xóa tài khoản'
+    deleteAccountConfirm: 'Bạn có chắc chắn muốn xóa tài khoản của mình không? Việc này sẽ không thể phục hồi được tài khoản của bạn.'
+    socialConnection:
+        list: 'Kết nối mạng xã hội'
+        connect: 'Kết nối'
+        refresh: 'Làm mới'
+        disconnect: 'Hủy kết nối'
+        disconnectConfirm: 'Bạn có chắc chắn muốn xóa kết nối này không? (Bạn luôn có thể đăng nhập bằng email %email%)'
+    mfa:
+        header: 'Xác minh hai bước'
+        init: >
+            Quét mã QR sau (hoặc nhập đoạn mã phía dưới) trong ứng dụng xác thực TOTP của bạn (ví dụ {https://authy.com/=Authy})
+            và sau đó nhập mã được tạo.
+        recovery:
+            header: 'Mã khôi phục'
+            save: >
+                Hãy lưu các mã khôi phục sau ở nơi an toàn.
+                Bạn có thể sử dụng chúng để bỏ qua xác minh 2 bước trong trường hợp bạn bị mất thiết bị xác thực của mình.
+            saved: 'Ok, tôi đã lưu mã rồi!'
+            enter: 'Nhập mã khôi phục'
+        cancel: 'Hủy đăng nhập'
+        enabled: 'Đã bật'
+        enable: 'Thiết lập xác minh 2 bước'
+        disable: 'Tắt xác minh 2 bước'
+        disableConfirm: 'Bạn có chắc chắn muốn tắt xác minh 2 bước không?'
+    qr:
+        header: 'Mã QR'
+        download: 'Tải mã QR'
+    modMessage:
+        subject: 'Tin nhắn từ một mod'
+        intro: 'Chào bạn! Một trong những mod của chúng tôi đã gửi cho bạn tin nhắn sau:'
+        respond: 'Nếu bạn muốn trả lời, bạn chỉ cần trả lời email này.'
+
+profile:
+    description: 'Mô tả'
+    names: 'Tên'
+    pronouns: 'Danh xưng'
+    pronounsInfo: >
+        Bạn có thể nhập một <strong>danh xưng</strong> (ví dụ “anh ấy” hoặc “cô ấy”)
+        hoặc một <strong>đường link</strong> (ví dụ “https://vi.pronouns.page/Vanh”).
+        Bạn cũng có thể dùng {/pronouns#generator=<strong>trình tạo danh xưng</strong>} để điền vào câu với các danh xưng tùy ý.
+        Nếu danh xưng của bạn là {/pronouns#nameself=<strong>tên</strong>},
+        bạn cũng có thể sử dụng dấu hai chấm (ví dụ “:Vanh”).
+    pronounsNotFound: 'Định dạng không được chấp nhận. Vui lòng xem hướng dẫn ở trên.'
+    words: 'Số từ'
+    wordsColumnHeader: 'Tiêu đề cột'
+    birthday: 'Tuổi'
+    birthdayInfo: 'Chúng tôi không công khai ngày sinh của bạn, mà chỉ tính tuổi từ ngày sinh đó.'
+    timezone:
+        header: 'Múi giờ'
+        placeholder: 'Chọn múi giờ của bạn'
+        info: >
+            Nếu bạn điền vào trường này, thẻ của bạn sẽ cho mọi người biết <strong>thời gian ở nơi bạn sống</strong>.
+            Bạn cũng có thể chọn công khai vị trí gần đúng của mình. (Với những bạn ở Việt Nam, vị trí sẽ hiện là Bangkok (Thái Lan).)
+        detect: 'Phát hiện'
+        publishArea: 'Công khai châu lục trong thẻ của bạn'
+        publishLocation: 'Công khai vị trí trong thẻ của bạn'
+        time: 'Bây giờ là %time% vào ngày %weekday% ở giờ của mình'
+        approximate: 'Đây chỉ là vị trí gần đúng'
+        areas:
+            Africa: 'Châu Phi'
+            America: 'Châu Mỹ'
+            Antarctica: 'Nam Cực'
+            Arctic: 'Bắc Cực'
+            Asia: 'Châu Á'
+            Atlantic: 'Đại Tây Dương'
+            Australia: 'Châu Úc'
+            Europe: 'Châu Âu'
+            Indian: 'Ấn Độ Dương'
+            Pacific: 'Thái Bình Dương'
+    flags: 'Lá cờ'
+    flagsInfo: 'Kéo và thả cờ pride của bạn vào khung này.'
+    flagsCustom: 'Tải lên cờ tùy chỉnh'
+    flagsCustomWarning: 'Lá cờ này đã được tải lên bởi một người dùng. Nhóm pronouns.page không chịu trách nhiệm về nó.'
+    flagsAsterisk: 'Đây không phải là bản dạng giới, nhưng chúng tôi bao gồm bản dạng này cho những người đồng tính theo những cách khác (ví dụ: người chuyển giới thẳng).'
+    flagsCustomForm:
+        label: 'Tên nhãn'
+        description: '(không bắt buộc) Mô tả ngắn về nhãn'
+        link: '(không bắt buộc) Liên kết thêm thông tin'
+        alt: '(không bắt buộc) Văn bản thay thế mô tả sự xuất hiện của lá cờ này (xem bên dưới)'
+        altExample: 'Một ví dụ về cách văn bản thay thế có thể được diễn đạt'
+    links: 'Liên kết'
+    linksRecommended: 'Chúng tôi đề xuất liên kết đến'
+    verifiedLinks:
+        header: 'Liên kết đã được xác minh'
+        info: >
+            Các liên kết mà một người đặt công khai trong hồ sơ sẽ được đánh dấu bằng biểu tượng khiên có dấu tích,
+            nếu chúng được xác minh bằng cách đăng nhập bằng cách sử dụng mạng xã hội nhất định hoặc bằng mã <code>rel="me"</code> trỏ lại thẻ này.
+            Các liên kết của chúng tôi cũng bao gồm thẻ <code>rel="me"</code> để các trang web khác cũng có thể xác minh thẻ của bạn.
+    column: 'Cột'
+    opinions:
+        header: 'Chú thích/ý kiến'
+        description: 'Mô tả…'
+        colours:
+            _: '(Màu chữ…)'
+            pink: 'Hồng'
+            red: 'Đỏ'
+            orange: 'Cam'
+            green: 'Xanh lá'
+            blue: 'Xanh da trời'
+            grey: 'Xám'
+        styles:
+            _: '(Kiểu chữ…)'
+            bold-italics: 'In đậm & nghiêng'
+            bold: 'In đậm'
+            italics: 'In nghiêng'
+            small: 'Cỡ chữ nhỏ'
+        validation:
+            missingIcon: 'Biểu tượng là bắt buộc'
+            missingDescription: 'Phần mô tả là bắt buộc'
+            duplicateIcon: 'Biểu tượng cần phải độc nhất'
+            duplicateDescription: 'Mô tả cần phải độc nhất'
+            invalidOpinion: 'Không tìm thấy biểu tượng đã chọn trong phần chú thích ở trên'
+        custom: 'tùy chỉnh:'
+    expendableList:
+        more: '… và %count% mục khác'
+        show: '(nhấn để mở rộng)'
+    header: 'Thẻ'
+    list: 'Thẻ của bạn'
+    init: 'Tạo một thẻ'
+    show: 'Hiển thị'
+    edit: 'Chỉnh sửa'
+    delete: 'Xóa'
+    deleteConfirm: 'Bạn có chắc chắn muốn xóa thẻ này không?'
+    editor:
+        header: 'Trình sửa thẻ'
+        save: 'Lưu thẻ của bạn'
+        defaults: 'Khôi phục mặc định'
+        propagate: 'Thay đổi mục này trên cả các ngôn ngữ khác'
+    opinion:
+        yes: 'Được'
+        jokingly: 'Chỉ khi đùa'
+        close: 'Nếu đủ thân'
+        meh: 'Ổn'
+        no: 'Không'
+    bannerButton: 'Tạo thẻ'
+    card:
+        link: 'Ảnh của thẻ'
+        generate: 'Tạo ảnh'
+        generating: 'Quá trình tạo đang diễn ra... Có thể mất vài phút.'
+    empty: 'Người dùng này chưa tạo bất kỳ thẻ nào.'
+    personal:
+        header: 'Cá nhân'
+        description: 'Chỉ bạn mới có thể xem phần này'
+    language:
+        header: 'Ngôn ngữ'
+        description: 'Thẻ của @%username%' cũng có ở các ngôn ngữ sau'
+    circles:
+        header: 'Vòng bạn bè của tôi'
+        info: >
+            Trong trường này, bạn có thể gắn thẻ <strong>những người thân với bạn nhất</strong> cùng với
+            những từ (phi) giới tính mà bạn dùng để chỉ họ (ví dụ: “bạn đời” hoặc “vợ” hoặc “chồng”).
+            Trang này không phải là mạng xã hội, đây <strong>không phải danh sách bạn bè hay người theo dõi</strong>, vậy nên trường này được để khá ngắn.
+            Hãy nhớ rằng những người mà bạn gắn thẻ ở đây <strong>sẽ thấy nội dung bạn viết</strong>
+            – và có thể báo cáo bạn về hành vi quấy rối, nếu bạn viết những điều tiêu cực về họ.
+            Nếu một người trong vòng bạn bè của bạn cũng thêm bạn vào vòng của họ, mối quan hệ này sẽ được đánh dấu bằng [s:shield-check].
+        relationship: 'Mối quan hệ (ví dụ “bạn đời”, “bạn thân“)'
+        mutual: 'Mối quan hệ này có qua lại'
+        yourMentions:
+            header: 'Vòng bạn bè của người khác'
+            description: >
+                Đây là danh sách những người đã thêm bạn vào vòng bạn bè của họ.
+                Nếu bạn cũng thêm họ, dấu tích [s:shield-check] sẽ xuất hiện trong thẻ của cả hai bạn.
+        validation:
+            userNotFound: 'Người dùng không tồn tại'
+            required: 'Mối quan hệ là trường bắt buộc'
+    sensitive:
+        header: 'Cảnh báo nội dung'
+        info: >
+            Một số nội dung có thể được cho phép theo như {/terms=Điều khoản dịch vụ} của chúng tôi,
+            nhưng vẫn không phù hợp với trẻ vị thành niên, hoặc có khả năng gợi tổn thương, v.v.
+            Hãy tôn trọng những người đến xem thẻ của bạn và cảnh báo họ trước.
+            Ví dụ về CW có thể là “có đề cập đến rượu”, “gợi dục”, “đề cập đến sự kỳ thị người đồng tính”,…
+        display: 'Tiếp tục đến thẻ'
+        hide: 'Làm mờ thẻ'
+        email:
+            subject: 'Cảnh báo nội dung đã được áp dụng trên hồ sơ của bạn'
+            content: 'Một mod đã thêm các cảnh báo nội dung sau cho thẻ của bạn:'
+
+share: 'Chia sẻ'
+
+crud:
+    approve: 'Chấp thuận'
+    hide: 'Ẩn'
+    remove: 'Xóa'
+    removeConfirm: 'Bạn có chắc chắn muốn xóa mục này không?'
+    edit: 'Chỉnh sửa'
+    add: 'Thêm'
+    filter: 'Tìm kiếm…'
+    filterLong: 'Tìm kiếm…'
+    search: 'Tìm kiếm…'
+    author: 'Đã được thêm bởi'
+    saved: 'Đã lưu thay đổi thành công!'
+    loginRequired: '{/account=Đăng nhập} để gửi mục'
+    copy: 'Sao chép đường link'
+    download: 'Tải xuống'
+    loadAll: 'Hiện tất cả…'
+    validation:
+        genericForm: 'Biểu mẫu không hợp lệ. Vui lòng khắc phục sự cố và gửi lại.'
+        listMaxLength: 'Số phần tử tối đa trong danh sách này là %maxlength%.'
+        invalidLink: 'Định dạng URL không hợp lệ'
+    alt: 'Văn bản thay thế'
+
+footer:
+    license: >
+        {https://gitlab.com/PronounsPage/PronounsPage=Mã nguồn} và nội dung được cấp phép theo {/license=OQL}.
+    links: 'Liên hệ, mạng xã hội'
+    legal: 'Pháp lý'
+    financial: 'Minh bạch tài chính'
+    technical: 'Kỹ thuật'
+    sibling: 'Dự án khác'
+    stats:
+        header: 'Thống kê'
+        overall: 'tất cả các phiên bản ngôn ngữ'
+        current: 'chỉ phiên bản này'
+        keys:
+            users: 'Số người dùng đã đăng ký'
+            cards: 'Số thẻ'
+            visitors: 'Số người xem trang'
+            pageviews: 'Lượt xem trang'
+            realTimeVisitors: 'Hiện đang trực tuyến'
+            visitDuration: 'Thời lượng truy cập trung bình'
+            uptime: 'Thời gian hoạt động'
+            responseTime: 'Thời gian phản hồi trung bình'
+        month: 'tháng'
+
+notFound:
+    message: 'Không tìm thấy trang'
+    back: 'Quay trở lại trang chủ'
+
+authRequired:
+    message: 'Bạn phải đăng nhập để xem trang web này'
+    go: 'Chuyển đến trang đăng nhập'
+
+confirm:
+    header: 'Bạn có chắc không?'
+    yes: 'Có, tôi chắc chắn'
+    no: 'Không, hủy đi'
+    ok: 'Ok'
+    save: 'Lưu'
+    dismiss: 'Bỏ qua'
+
+terms:
+    header: 'Điều khoản dịch vụ'
+    lastUpdate: 'Cập nhật lần cuối'
+    consent: 'Bằng cách đăng ký, bạn chấp nhận {/terms=Điều khoản Dịch vụ} của chúng tôi.'
+    #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
+    #translationDisclaimer: >
+    #    The following text is just an auxiliary translation.
+    #    The only legally binding version of the Terms of Service is the English one, available
+    #    {https://en.pronouns.page/terms=here}.
+    content:
+        intro: >
+            These Terms of Service govern your access to and use of the Service provided on the website
+            <strong>pronouns.page</strong> and related subdomains and domains,
+            operated by the “Neutral Language Council” collective
+            and Nero Network (NL, KVK 88409120)
+            who can be contacted via email:
+        consent: >
+            By using the Services you agree to be bound by these Terms of Service and you consent
+            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
+        accounts:
+            header: 'Users and accounts'
+            age: >
+                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
+                You cannot create an account, if you're under 13 years old.
+                If you're under 16 years old, you need consent of the holder of parental responsibility.
+            authentication: >
+                When you create an account with us, you are responsible for safeguarding the authentication method
+                that you use to access the Service (that is: password to your email account and/or social media platform).
+                You agree not to disclose it to any third party.
+                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+            termination: >
+                We may terminate or suspend your account immediately, without prior notice or liability,
+                for any reason whatsoever, including without limitation if you breach the Terms.
+            inactivity: >
+                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+        content:
+            header: 'Content'
+            ownership: >
+                The Content you post on the Service is yours.
+                By posting it, you grant us a worldwide, royalty-free license
+                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+            liability: >
+                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
+                and in particular of any links to any external websites.
+            violations: >
+                It is forbidden to post on the Service any Content that might break the law or violate social norms,
+                including but not limited to:
+            violationsExamples:
+                totalitarian: 'propagation of totalitarian regimes'
+                hateSpeech: 'hate speech'
+                racism: 'racism'
+                xenophobia: 'xenophobia'
+                homophobia: 'homophobia'
+                transphobia: 'transphobia'
+                enbyphobia: 'enbyphobia'
+                queerphobia: 'queerphobia'
+                exclusionism: 'queer exclusionism'
+                sexism: 'sexism'
+                misogyny: 'misogyny'
+                harassment: 'harassment'
+                impersonation: 'impersonation'
+                selfHarm: 'encouraging self-harm and/or suicide'
+                childPornography: 'child pornography'
+                pedophilia: 'broadly understood pedophilia advocacy'
+                unlawfulConduct: 'unlawful conduct'
+                misinformation: 'misinformation'
+                doxxing: 'sharing of someone else''s personal data'
+                spam: 'spam'
+                trolling: 'trolling'
+                advertisement: 'advertisement'
+                copyright: 'copyright or trademark violations'
+                miscellaneous: 'miscellaneous'
+            violationsStrict: >
+                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
+            responsibility: >
+                You are responsible for any Content posted on the Service.
+                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
+                If you break the law, we will pass your information to law enforcement agencies.
+        closing:
+            header: 'General'
+            jurisdiction: >
+                The applicable law is the law of the Kingdom of Netherlands.
+            changes: >
+                We reserve the right to modify these Terms of Service at any time.
+                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+    update:
+        header: 'We''ve updated our Terms of Service.'
+        intro: >
+            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on Jan 1st, 2023:
+        changes:
+            - >
+                The existing policy of banning profiles that advocate for pedophilia
+                (for example with so called “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=MAP}” flags),
+                which have been considered to fall under “Content that might break the law or violate social norms”,
+                will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
+
+privacy:
+    header: 'Chính sách bảo mật'
+    # you can skip translating the rest of the "privacy" section
+    content:
+        intro: >
+            This Privacy Policy describes how the Service provided on the website
+            <strong>pronouns.page</strong> and related subdomains and domains
+            manages your personal data.
+            The Service is operated by the “Neutral Language Council” collective
+            and Nero Network (NL, KVK 88409120)
+            who can be contacted via email:
+        effort: >
+            We make every effort to store your data securely and to ensure that any non-public data we store
+            are not seized by or transferred to any third party, except those trusted parties described below.
+        data: >
+            Other than the data that you explicitly post on the Service as Content
+            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
+            no additional private data connected to your account is being stored or processed by the Service.
+        editRemoval: >
+            You may edit or remove any Content you have posted on the Service.
+        contact: >
+            When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+        cookies: >
+            We only use first-party cookies and local storage to keep you logged in and save your preferences.
+        plausible: >
+            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
+            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+        arc: >
+            We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
+            You can read more about them and their privacy policy
+            {https://arc.io/faq=<strong>here</strong>}.
+        hCaptcha: >
+            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
+            You can read their privacy policy
+            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
+        ezoic: >
+            In order to fund the project we show ads using a third party technology called <strong>Ezoic</strong>.
+            You can opt-in to allow them to personalise your experience.
+            Their privacy policy is available {https://g.ezoic.net/privacy/pronouns.page=<strong>here</strong>}.
+        logsBackups: >
+            Logs and backups are stored for no longer than 18 months.
+        gdpr: >
+            Your personal data are protected by the GDPR, which means you have the right
+            to see, correct, update and remove the data we store about you.
+    consent:
+        header: 'Cookie consent'
+        required:
+            header: 'Required cookies'
+            description: >
+                We use cookies and local storage to save your preferences (eg. dark mode)
+                and we use privacy-friendly third-party tools (hCaptcha, Plausible) that might store their own cookies.
+            details: 'You can read more in our {/privacy=Privacy Policy}.'
+        optional:
+            header: 'không bắt buộc cookies'
+            description: >
+                We show ads to fund the project.
+                You can agree for related third-parties to store information about you
+                for the purposes of gathering statistics and personalising ads.
+            details: 'You can read more in Ezoic''s {https://g.ezoic.net/privacy/pronouns.page=Privacy Policy}.'
+        accept: 'Accept'
+        reject: 'Reject'
+        revoke: 'Revoke personalised ads consent'
+
+admin:
+    header: 'Bảng quản trị'
+    user:
+        user: 'Người dùng'
+        createdAt: 'Ngày đăng kí'
+        email: 'Email'
+        roles: 'Quyền'
+        profiles: 'Các hồ sơ'
+        confirmRole: 'Bạn có chắc chắn muốn thay đổi vai trò của @%username% sang "%role%" không?'
+
+table:
+    empty: 'Trống…'
+    count: 'Tổng số'
+    sort: 'Kéo để sắp xếp'
+    scrollUp: 'Trở lên trên cùng'
+    more: 'Hiển thị nhiều hơn'
+
+api:
+    header: 'API công khai'
+    example: 'Ví dụ'
+    query: 'Query string parameters (Các tham số chuỗi truy vấn URL)'
+
+quotation:
+    start: '“'
+    end: '”'
+    colon: ':'
+
+localise:
+    shorter: 'Thêm'
+    short: 'Thêm phiên bản ngôn ngữ'
+    long: 'Bạn muốn tạo một phiên bản ngôn ngữ mới ư? Tuyệt lắm! Xin vui lòng xem'
+    longLink: 'hướng dẫn này!'
+
+images:
+    upload:
+        instruction: 'Nhấn vào đây hoặc kéo các bức ảnh của bạn vào đây'
+        instructionShort: 'Tải lên'
+
+error:
+    generic: 'Đã xảy ra lỗi. Vui lòng thử lại…'
+
+captcha:
+    reason: 'Vui lòng chứng minh bạn không phải là robot để giảm thiểu các cuộc tấn công DDoS và thư rác.'
+    invalid: 'CAPTCHA không hợp lệ, vui lòng thử lại'
+
+mode:
+    light: 'Chế độ sáng'
+    automatic: 'Tự động'
+    dark: 'Chế độ tối'
+    reducedColours: 'Giảm màu'
+
+ban:
+    reason: 'Lí do cấm'
+    visible: '(sẽ được hiển thị cho người dùng)'
+    terms: 'Quy tắc điều khoản bị phá vỡ (bắt buộc)'
+    action: 'Cấm người này'
+    confirm: 'Bạn có chắc chắn muốn cấm @%username% không?'
+    confirmUnban: 'Bạn có chắc chắn muốn xóa lệnh cấm (đề xuất) của @%username% không? Hãy nhớ rằng những trường hợp như vậy nên được thảo luận trên nhóm Teams'
+    header: 'Hồ sơ của bạn không còn công khai.'
+    banned: 'Hồ sơ không được công khai.'
+    termsIntro: 'Theo {/terms=Điều khoản dịch vụ} của chúng tôi'
+    appeal: >
+        Việc điều hành (mod) là một chủ đề khá phức tạp và tế nhị. Nó được thực hiện bởi các tình nguyện viên, và họ có thể không phải lúc nào cũng đồng ý với nhau
+        hoặc nhận thức được một số vấn đề. Nếu bạn cho rằng tài khoản của mình không vi phạm {/terms=Điều khoản dịch vụ} của chúng tôi,
+        vui lòng liên hệ với chúng tôi tại {mailto:contact@pronouns.page=contact@pronouns.page} và chúng tôi sẽ xem xét trường hợp của bạn trong một nhóm lớn hơn.
+    appealEmail: >
+        Việc điều hành (mod) là một chủ đề khá phức tạp và tế nhị. Nó được thực hiện bởi các tình nguyện viên, và họ có thể không phải lúc nào cũng đồng ý với nhau
+        hoặc nhận thức được một số vấn đề. Nếu bạn cho rằng tài khoản của mình không vi phạm Điều khoản dịch vụ của chúng tôi,
+        vui lòng trả lời email này và chúng tôi sẽ xem xét trường hợp của bạn trong một nhóm lớn hơn.
+
+report:
+    action: 'Báo cáo lạm dụng'
+    comment: 'Vui lòng giải thích ngắn gọn về vấn đề của hồ sơ này'
+    confirm: 'Bạn có chắc chắn muốn báo cáo @%username% không?'
+    sent: 'Báo cáo của bạn đã được gửi đi. Cảm ơn bạn đã giúp đỡ!'
+    terms: 'Hãy lưu ý những khoản bị cấm theo {/terms=Điều khoản dịch vụ} của chúng tôi'
+    hoarding: 'Vui lòng không báo cáo về việc “tích trữ tên người dùng”. Chúng tôi tự động xóa các tài khoản không có thẻ sau một thời gian không hoạt động. Báo cáo của bạn sẽ không đẩy nhanh tiến độ việc này.'
+
+translationMode:
+    header: 'Chế độ dịch thuật'
+    action: 'Đề xuất bản dịch'
+    welcome: >
+        Có bản dịch nào bị thiếu hoặc cần chỉnh sửa không?
+        Bạn có thể nhấn vào nút màu xanh lam ở góc dưới cùng bên phải để bật và tắt Chế độ dịch.
+        Trong chế độ này, nhấn vào một đoạn văn bản có viền sẽ mở hộp thoại,
+        trong đó bạn có thể sửa đổi bản dịch và so sánh nó với văn bản tiếng Anh.
+        Hãy nhớ nhấn vào nút “Thực hiện thay đổi” sau khi bạn hoàn tất.
+    logIn: 'Bạn cần đăng nhập để đề xuất bản dịch'
+    changes: 'Các thay đổi'
+    commit: 'Thực hiện thay đổi'
+    revert: 'Hủy bỏ thay đổi'
+    pause: 'Tạm dừng Chế độ dịch thuật'
+
+flags:
+    Abroromantic: 'Linh hoại tình cảm'
+    Abrosexual: 'Linh hoạt tính dục'
+    Achillean: 'Achilles'
+    Alloromantic_Asexual: 'Hữu ái vô tính'
+    Agender: 'Vô giới'
+    Ambiamorous: 'Lưỡng ái'
+    Anarcha-Queer: 'Đồng tính vô chính phủ'
+    Androgyne: 'Lưỡng giới'
+    Androsexual: 'Tính nam luyến ái'
+    Aporagender: 'Giải giới'   # no VN equivalent, loanword from Chinese 解性別
+    Archaeopronouns: 'Archaeopronouns'   # no VN equivalent
+    Aroace: 'Vô ái vô tính'
+    Aromantic: 'Vô ái'
+    Aromantic_Allosexual: 'Vô ái hữu tính'
+    Asexual: 'Vô tính'
+    Autigender: 'Tự kỷ giới'
+    Bear: 'Gấu'
+    Bicurious: 'Hiếu kì song tính'
+    Bigender: 'Song giới'
+    Biromantic: 'Song ái'
+    Bisexual: 'Song tính'
+    Butch: 'Les nam tính'
+    Ceteroromantic: 'Phi nhị ái'
+    Ceterosexual: 'Phi nhị tính'
+    Cis_Ally: 'Đồng minh hợp giới'
+    Demiboy: 'Á nam'
+    Demigender: 'Á giới'
+    Demigirl: 'Á nữ'
+    Demiromantic: 'Á ái'
+    Demisexual: 'Á tính'
+    Diamoric: 'Phi nhị giới'   # no VN equivalent
+    Enbian: 'Phi nhị giới'
+    Fa*afafine: 'Fa''afafine'   # no VN equivalent
+    Femme: 'Les nữ tính'
+    Gay: 'Đồng tính nam'
+    Gender_Questioning: 'Tìm hiểu giới tính'
+    Genderfae: 'Linh hoạt giới phi nam'
+    Genderfaun: 'Linh hoạt giới phi nữ'
+    Genderfluid: 'Linh hoạt giới'
+    Genderflux: 'Dao động giới'
+    Genderqueer: 'Đa dạng giới/Phi nhị giới'
+    Greyasexual: 'Bán vô tính'
+    Greyaromantic: 'Bán ái'
+    Gynesexual: 'Tính nữ luyến ái'
+    Heteroflexible: 'Linh hoạt thiên dị tính'
+    Heteroromantic: 'Dị ái'
+    Heterosexual: 'Dị tính (Thẳng)'
+    Hijra: 'Hijra'   # no VN equivalent
+    Homoflexible: 'Linh hoạt thiên đồng tính'
+    Homoromantic: 'Đồng ái'
+    Intersex: 'Liên giới tính'
+    LGBTQ: 'LGBTQ'
+    Leather_Pride: 'Leather Pride'   # no VN equivalent
+    Lesbian: 'Đồng tính nữ'
+    Lesbiromantic: 'Đồng ái nữ'
+    Maverique: 'Phi giới tính'
+    Monoamorous: 'Đơn tính'
+    Monogamous: 'Đơn ái'
+    Muxe: 'Muxe'   # no VN equivalent
+    Nebularomantic: 'Nebularomantic'   # no VN equivalent
+    Neopronouns: 'Neopronoun'
+    Neutrois: 'Trung giới'
+    Nonbinary: 'Phi nhị giới'
+    Omnisexual: 'Toàn tính'
+    Omniromantic: 'Toàn ái'
+    Oriented_Aroace: 'Vô ái vô tính định hướng'
+    Pangender: 'Toàn giới'
+    Panromantic: 'Toàn ái'
+    Pansexual: 'Toàn tính'
+    Polyamorous: 'Đa tình'
+    Polyromantic: 'Đa ái'
+    Polysexual: 'Đa tính'
+    Pomoromantic: 'Không xác định xu hướng tình cảm'
+    Pomosexual: 'Không xác định xu hướng tính dục'
+    Progress_Pride: 'Progress Pride'   # no VN equivalent
+    Queer: 'Đa dạng'
+    Queerian: 'Đa dạng ái'
+    Queerplatonic: 'Đa dạng vô tính'
+    Quoiromantic: 'Bối rối'
+    Sapphic: 'Đồng tính nữ'
+    Sexuality_Questioning: 'Tìm hiểu xu hướng tính dục'
+    Straight_Ally: 'Đồng minh thẳng'
+    Toric: 'Toric'   # no VN equivalent
+    Transfeminine: 'Chuyển giới nữ tính'
+    Transgender: 'Chuyển giới'
+    Transmasculine: 'Chuyển giới nam tính'
+    Transneutral: 'Chuyển giới trung tính'
+    Trigender: 'Tam tính'
+    Trixic: 'Trixic'   # no VN equivalent
+    Two_Spirit: 'Two-Spirit'   # no VN equivalent
+    Xenogender: 'Ngoại giới'   # no VN equivalent, loanword from Chinese 外性別
+
+flags_alt:
+    -de-Gay: 'Lá cờ sọc, thường có sáu màu theo thứ tự từ trên xuống dưới là: đỏ, cam, vàng, lục, lam, và tím'
+    -Drag: 'Lá cờ hình chữ nhật có ba sọc dọc có chiều rộng bằng nhau: tím nhạt, trắng và lam; trên nền trắng có một chiếc vương miện màu hồng có ba đầu nhọn.'
+    -en-Genderdoe: ''
+    -pl-Dukaizmy: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a white ghost with black eyes, open mouth, and a speech bubble saying “łu!”'
+    -pl-Gay: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
+    -pl-Rodzaj_neutralny: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a black moose holding a crowbar.'
+    -pl-Rodzaj_nijaki: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a black moose holding a crowbar.'
+    _black-ribbon: 'Dải băng rôn màu đen'
+    _Butch: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau, tạo thành dải màu từ xanh xám đậm ở trên, đến trắng ở giữa, đến tím ở dưới'
+    _hrc: 'Logo hình vuông có nền đỏ và dấu bình đẳng “=” màu hồng'
+    _law: 'Kí hiệu “§”'
+    _mspec_lesbians: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: hồng nhạt, đỏ tươi, tím, xanh dương, xanh mòng két'
+    _red-ribbon: 'A red ribbon'
+    _sex-work: 'Một chiếc ô màu đỏ đang mở'
+    _Unlabelled: 'Lá cờ hình chữ nhật có bốn sọc ngang có chiều rộng bằng nhau: xanh nhạt, trắng, xanh nhạt, cam nhạt'
+    _yellow-ribbon: 'A yellow ribbon'
+    _zaimki: 'Logo pronouns.page: hai chữ “P” cách điệu, chữ đầu xoay 180°'
+    Abroromantic: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: xanh mòng két, xanh bạc hà, trắng, hồng và đỏ hồng; một hình trái tim ở giữa làm cho màu sắc bên trong rực rỡ hơn và bên ngoài nhẹ nhàng hơn'
+    Abrosexual: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: xanh mòng két, xanh bạc hà, trắng, hồng và đỏ hồng'
+    Achillean: ''
+    Agender: 'Lá cờ hình chữ nhật có bảy sọc ngang có chiều rộng bằng nhau: đen, xám, trắng, xanh lá chanh, trắng, xám, đen'
+    Alloromantic_Asexual: ''
+    Ambiamorous: ''
+    Ambiamorous_: ''
+    Anarcha-Queer: 'Lá cờ hình chữ nhật có một đường chéo chia cờ làm hai phần; phần phía trên bên trái màu hồng, phần phía dưới bên phải màu đen'
+    Androgyne: ''
+    Androsexual: ''
+    Aporagender: ''
+    Archaeopronouns: ''
+    Aroace: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: cam, vàng, trắng, lục lam, xanh đậm'
+    Aromantic: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: xanh lá cây, xanh lục nhạt, trắng, xám, đen'
+    Aromantic_Allosexual: ''
+    Asexual: 'Cờ của nhóm người vô tính bao gồm 4 sọc ngang: đen, xám, trắng và tím theo thứ tự từ trên xuống dưới.'
+    Autigender: ''
+    Bear: 'Lá cờ hình chữ nhật, có bảy sọc ngang có chiều rộng bằng nhau: nâu, da cam, vàng, vàng tươi, trắng, xám, đen; ở góc trên bên trái có dấu chân gấu màu đen.'
+    Bicurious: ''
+    Bigender: ''
+    Bigender_: ''
+    Biromantic: 'Lá cờ hình chữ nhật có các sọc ngang màu hồng rộng, màu tím hẹp và màu xanh lam rộng; có một hình trái tim ở giữa làm cho màu sắc bên trong rực rỡ hơn và bên ngoài nhẹ nhàng hơn'
+    Bisexual: 'Lá cờ hình chữ nhật có các sọc ngang sau: sọc rộng màu hồng, sọc tím hẹp và sọc xanh rộng'
+    Butch: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau, tạo thành dải màu từ xanh xám đậm ở trên, đến trắng ở giữa, đến tím ở dưới'
+    Ceteroromantic: ''
+    Ceterosexual: ''
+    Cis_Ally: 'Lá cờ hình chữ nhật, có năm sọc ngang có chiều rộng bằng nhau: lam, hồng, trắng, hồng, lam; phủ một chữ V ngược màu đen'
+    Demiboy: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau: xám đậm, xám nhạt, lục lam, trắng, lục lam, xám nhạt, xám đậm'
+    Demigender: ''
+    Demigirl: 'Lá cờ hình chữ nhật có bảy sọc ngang có chiều rộng bằng nhau: xám đậm, xám nhạt, hồng, trắng, hồng, xám nhạt, xám đậm'
+    Demiromantic: ''
+    Demisexual: ''
+    Diamoric: ''
+    Enbian: ''
+    Fa*afafine: ''
+    Femme: ''
+    Gay: 'Lá cờ sọc, thường có sáu màu theo thứ tự từ trên xuống dưới là: đỏ, cam, vàng, lục, lam, và tím'
+    Gay_: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau: xanh đậm, lục lam hơi lục, xanh mòng két, trắng, lục lam, xanh tía, tím'
+    Gender_Questioning: ''
+    Genderfae: ''
+    Genderfaun: ''
+    Genderfluid: 'Lá cờ hình chữ nhật có 5 sọc ngang có chiều rộng bằng nhau: hồng, trắng, tím, đen, lam'
+    Genderflux: ''
+    Genderqueer: ''
+    Greyaromantic: ''
+    Greyasexual: ''
+    Gynesexual: ''
+    Heteroflexible: 'Lá cờ hình chữ nhật có ba sọc ngang có chiều rộng bằng nhau: xanh dương, trắng và hồng; có một sọc dọc ở giữa có màu giống như cờ cầu vồng: đỏ, cam, vàng, lục, lam, tím'
+    Heteroromantic: 'Lá cờ hình chữ nhật có ba sọc ngang có chiều rộng bằng nhau: xanh dương, trắng và hồng; có hình trái tim ở giữa làm cho màu sắc bên trong rực rỡ hơn và bên ngoài nhẹ nhàng hơn'
+    Heterosexual: 'Lá cờ hình chữ nhật với ba sọc ngang có chiều rộng bằng nhau: xanh dương, trắng và hồng'
+    Hijra: 'Lá cờ hình chữ nhật có các sọc ngang theo thứ tự từ trên xuống: sọc rộng màu hồng, sọc hẹp màu trắng, màu đỏ, màu trắng, và sọc rộng màu xanh nhạt'
+    Homoflexible: 'Lá cờ hình chữ nhật có sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím; thêm một sọc dọc ở giữa có màu giống như lá cờ dị tính: xanh lam, trắng và hồng'
+    Homoromantic: 'Lá cờ hình chữ nhật có sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím; có một hình trái tim ở giữa làm cho màu sắc bên trong rực rỡ hơn và bên ngoài nhẹ nhàng hơn'
+    Intersex: 'Lá cờ hình chữ nhật có nền màu vàng và một vòng tròn màu tím ở giữa'
+    Leather_Pride: 'Lá cờ hình chữ nhật, có chín sọc ngang có chiều rộng bằng nhau: đen, xanh lam, đen, xanh lam, trắng, xanh lam, đen, xanh lam, đen; ở góc trên bên trái có trái tim màu đỏ nghiêng một góc'
+    Lesbian: 'Lá cờ hình chữ nhật với năm sọc ngang có chiều rộng bằng nhau: đỏ cam, cam, trắng, đỏ tươi, đỏ đậm'
+    Lesbian_: 'Lá cờ hình chữ nhật có nền màu tím và khuyên môi màu đen ở giữa'
+    Lesbian__: 'Lá cờ hình chữ nhật với sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím'
+    Lesbian___: 'Lá cờ hình chữ nhật có bốn sọc ngang có chiều rộng bằng nhau: tím, hồng, vàng, lục'
+    Lesbiromantic: 'Lá cờ hình chữ nhật có năm sọc ngang có chiều rộng bằng nhau: đỏ cam, cam, trắng, đỏ tươi, đỏ sậm; có một hình trái tim ở giữa làm cho màu sắc bên trong rực rỡ hơn và bên ngoài nhẹ nhàng hơn'
+    LGBTQ: 'Lá cờ sọc, thường có sáu màu theo thứ tự từ trên xuống dưới là: đỏ, cam, vàng, lục, lam, và tím'
+    Maverique: ''
+    Monoamorous: ''
+    Monogamous: ''
+    Muxe: ''
+    Nebularomantic: ''
+    Neopronouns: ''
+    Neopronouns_: ''
+    Neutrois: ''
+    Nonbinary: 'Lá cờ hình chữ nhật có bốn sọc ngang có chiều rộng bằng nhau: vàng, trắng, tím, đen'
+    Omniromantic: ''
+    Omnisexual: ''
+    Oriented_Aroace: ''
+    Pangender: ''
+    Panromantic: ''
+    Pansexual: ''
+    Polyamorous: 'Lá cờ hình chữ nhật có nền chia đôi theo hình sóng: phần trên màu đỏ thẫm, phần dưới màu hồng nhạt hơn; ở giữa có một trái tim màu trắng ngà bao gồm biểu tượng vô cực “∞” và một chữ V'
+    Polyamorous_: 'Lá cờ hình chữ nhật có ba sọc ngang có chiều rộng bằng nhau: xanh, đỏ, đen; có kí hiệu pi “π” màu vàng'
+    Polyamorous__: 'Lá cờ hình chữ nhật có bốn sọc ngang có chiều rộng bằng nhau: xanh lá nhạt, xanh lá đậm, xanh da trời và xanh biển; có một trái tim màu trắng đan xen với biểu tượng vô cực “∞”'
+    Polyamorous___: 'Lá cờ hình chữ nhật có ba sọc ngang có chiều rộng bằng nhau: xanh, đỏ, đen; ở giữa có một trái tim màu vàng đan xen với biểu tượng vô cực “∞”'
+    Polyromantic: ''
+    Polysexual: ''
+    Pomoromantic: ''
+    Pomosexual: ''
+    Progress_Pride: 'Lá cờ hình chữ nhật có sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím; một hình tam giác ở phía bên trái bao gồm các sọc có màu sau (từ bên trái sang): trắng, hồng, xanh nhạt, nâu, đen'
+    Progress_Pride_: 'Lá cờ hình chữ nhật có sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím; một hình tam giác ở phía bên trái bao gồm các sọc có màu sau (từ bên trái sang): sọc vàng có vòng tròn màu tím, sọc trắng, hồng, xanh nhạt, nâu, đen'
+    Queer: 'Lá cờ hình chữ nhật với sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím'
+    Queer_: 'Lá cờ hình chữ nhật có nền trắng ngà và hai chữ V màu hồng nhạt và tím đậm hướng xuống dưới'
+    Queerian: ''
+    Queerplatonic: ''
+    Quoiromantic: ''
+    Sapphic: ''
+    Sapphic_: ''
+    Sexuality_Questioning: ''
+    Straight_Ally: 'Lá cờ hình chữ nhật có sáu sọc ngang có chiều rộng bằng nhau: đỏ, cam, vàng, lục, lam và tím; có một chữ V ngược màu đen'
+    Toric: ''
+    Transfeminine: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau tạo ra một dải màu từ màu xanh lam ở trên cùng, đến màu hồng ở giữa và đến màu xanh lam ở dưới cùng'
+    Transgender: 'Lá cờ hình chữ nhật có năm sọc ngang có chiều rộng bằng nhau: lam, hồng, trắng, hồng, lam'
+    Transmasculine: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau tạo ra một dải màu từ màu hồng ở trên cùng, đến màu xanh lam ở giữa và màu hồng ở dưới cùng'
+    Transneutral: 'Lá cờ hình chữ nhật với bảy sọc ngang có chiều rộng bằng nhau tạo ra một dải màu từ màu xanh lam ở trên cùng, đến màu vàng ở giữa và màu hồng ở dưới cùng'
+    Trigender: ''
+    Trixic: ''
+    Two_Spirit: ''
+    Two_Spirit_: ''
+    Xenogender: ''
+
+calendar:
+    header: 'Lịch'
+    headerLong: 'Lịch đồng tính'
+    date: '%date% %year%'
+    months:
+        1: 'Tháng Một'
+        2: 'Tháng Hai'
+        3: 'Tháng Ba'
+        4: 'Tháng Tư'
+        5: 'Tháng Năm'
+        6: 'Tháng Sáu'
+        7: 'Tháng Bảy'
+        8: 'Tháng Tám'
+        9: 'Tháng Chín'
+        10: 'Tháng Mười'
+        11: 'Tháng Mười một'
+        12: 'Tháng Mười hai'
+    dates:
+        1: '%day% tháng 1'
+        2: '%day% tháng 2'
+        3: '%day% tháng 3'
+        4: '%day% tháng 4'
+        5: '%day% tháng 5'
+        6: '%day% tháng 6'
+        7: '%day% tháng 7'
+        8: '%day% tháng 8'
+        9: '%day% tháng 9'
+        10: '%day% tháng 10'
+        11: '%day% tháng 11'
+        12: '%day% tháng 12'
+    events:
+        pride_month: 'Tháng tự hào LGBT'
+        trans_month: 'Tháng Nhận thức về người Chuyển giới'
+        zaimki_birthday: 'Ngày sinh của Dự án Pronouns.page'
+        agender_day: 'Ngày Quốc tế Vô giới'
+        asexuality_day: 'Ngày Quốc tế Vô tính'
+        bisexuality_day: 'Ngày Kỉ niệm Song tính'
+        drag_day: 'Ngày Thời trang Hoán giới'
+        idahobit: 'Ngày Quốc tế chống kì thị đồng tính, song tính, lưỡng tính và chuyển giới'
+        intersex_day: 'Ngày Nhận thức về người Liên giới tính'
+        intersex_remembrance_day: 'Ngày tưởng nhớ về người Liên giới tính'
+        lesbian_day: 'Ngày Quốc tế Đồng tính nữ'
+        lesbian_visibility_day: 'Ngày Hiện diện Người Đồng tính nữ'
+        coming_out_day: 'Ngày Come Out'
+        nonbinary_day: 'Ngày Quốc tế Phi nhị giới'
+        pan_day: 'Ngày Nhận thức về Người Toàn tính và Toàn giới'
+        trans_remembrance_day: 'Ngày Tưởng niệm Người chuyển giới'
+        trans_visibility_day: 'Ngày Quốc tế Hiện diện Người Chuyển Giới'
+        zero_discrimination_day: 'Ngày Không phân biệt đối xử'
+        arospec_week: 'Tuần lễ Nhận thức về Phổ người Vô ái'
+        asexual_week: 'Tuần lễ Nhận thức về người Vô tính'
+        bisexual_week: 'Tuần lễ Nhận thức về người Song tính'
+        pronouns_day: 'Ngày Danh xưng'
+        trans_week: 'Tuần lễ Nhận thức về người Chuyển giới'
+        trans_parent_day: 'Ngày Phụ huynh Chuyển giới'
+        nonbinary_week: 'Tuần lễ Nhận thức về Phổ phi nhị giới'
+        nonbinary_week___timeDescription: 'tuần được bắt đầu từ Chủ Nhật hoặc thứ Hai trước ngày Quốc tế Phi nhị giới vào 14 tháng 7.'
+        polyamory_day: 'Ngày Đa ái'
+        homophobia_sport: 'Ngày quốc tế chống kì thị người đồng tính trong thể thao'
+        gay_uncles_day: 'Ngày Các chú Đồng tính'
+        lgbtq_stem: 'Ngày STEM (khoa học, công nghệ, kỹ thuật và toán học) của cộng đồng LGBTQ+'
+        trans_depathologization: 'Ngày Quốc tế Hành động vì Giải trừ bệnh tật cho người chuyển giới'
+        lgbti_book_day: 'Ngày Quốc tế Sách LGBTI'
+        human_rights_day: 'Ngày Nhân quyền'
+        nonbinary_parents_day: 'Ngày Phụ huynh Phi nhị giới'
+        trans_prisoner: 'Ngày Hành động và Đoàn kết của Tù nhân Chuyển giới'
+        xenogender_day: 'Ngày Hiện diện Người Ngoại giới'
+        genderqueer_day: 'Ngày Hiện diện Người Đa dạng giới'
+        genderfluid_day: 'Ngày Hiện diện Người Linh hoạt giới'
+        aids_day: 'Ngày thế giới phòng chống bệnh AIDS'
+        tolerance_day: 'Ngày Khoan dung Quốc tế'
+        social_justice_day: 'Ngày Công lý xã hội Thế giới'
+        stonewall_day: 'Ngày bạo loạn Stonewall'
+        domestic_violence: 'Ngày Nhận thức về Bạo lực gia đình LGBTQ'
+        polysexual_day: 'Ngày Nhận thức về người Đa tính và Đa ái'
+        orlando_day: 'Pulse Night of Remembrance'   #no VN equivalent
+        aids_memorial: 'Lễ Thắp nến Tưởng niệm HIV/AIDS Quốc tế'
+        health_week: 'Tuần lễ Nhận thức về Sức khỏe LGBT'
+        lesbian_visibility_week: 'Tuần lễ Nhận thức về người Đồng tính nữ'
+        demigender_day: 'Ngày Nhận thức về người Á giới'
+        pan_pride_day: 'Ngày Tự hào Toàn tính'
+        transmasculine_day: 'Ngày của Người Chuyển giới nam tính'
+        asexual_visibility_day: 'Ngày Hiện diện Người Vô tính'
+        bi_health_month: 'Tháng Nhận thức về Sức khỏe Người Song tính'
+        holocaust_remembrance_day: 'Ngày Tưởng niệm Holocaust Quốc tế'
+        family_equality_day: 'Ngày Gia đình Cầu vồng'
+        aro_month: 'Tháng Nhận thức về Người Vô ái'
+        black_ribbon_day: 'Ngày Băng đen'
+        black_queer_week: 'Tuần lễ Lịch sử Người đồng tính da đen'
+        mena_lesbian_day: 'Ngày tự hào của Người Đồng tính nữ Tây Á và Bắc Phi'
+        hate_crime_awareness_week: 'Tuần lễ Nhận thức Tội ác thù địch'
+        deaf_awareness_week: 'Tuần lễ Nhận thức về Người LGBTQ khiếm thính'
+        suicide_prevention_day: 'Ngày Thế giới Phòng chống Tự sát'
+        suicide_prevention_month: 'Tháng Phòng chống Tự sát'
+        aids_awareness_month: 'Tháng Nhận thức về HIV/AIDS'
+        genderfluid_week: 'Tuần lễ Nhận thức về Người Linh hoạt giới'
+        pan_week: 'Tuần Toàn tính'
+        parents_day: 'Gender Expansive Parents'' Day'   # no VN equivalent
+        hiv_testing_day: 'Ngày Xét nghiệm HIV Quốc tế'
+        freedressing_day: 'Ngày Nhận thức về Tự do trang phục'
+        sexual_health_day: 'Ngày Nhận thức về Sức khỏe Sinh sản và Tình dục'
+        world_sexual_health_day: 'Ngày Sức khỏe Tình dục thế giới'
+        aids_vaccine_day: 'Ngày Vaccine HIV/AIDS Quốc tế'
+        queer_youth_day: 'Ngày Thanh niên Đa dạng giới'
+        omnisexual_day: 'Ngày Hiện diện Người Toàn tính'
+        unlabeled_day: 'Unlabeled Visibility Day'   # no VN equivalent
+        trans_youth_day: 'Ngày Nhận thức về Thiếu nhi - Thanh niên chuyển giới'
+        hiv_long_term_survivors_day: 'Ngày Nhận thức về Những người sống lâu dài với HIV'
+        women_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Phụ nữ và Trẻ em nữ'
+        youth_hiv_awareness_day: 'Ngày Thanh niên Nhận thức về HIV/AIDS'
+        gay_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người đồng tính nam'
+        black_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người da đen'
+        hiv_aging_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người cao tuổi'
+        trans_hiv_testing_day: 'Ngày Xét nghiệm HIV Người chuyển giới'
+        mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'   # no VN equivalent
+        mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'   # no VN equivalent
+        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'   # no VN equivalent
+        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'   # no VN equivalent
+        spring_testing_week: 'Tuần lễ Xét nghiệm HIV mùa xuân ở châu Âu'
+        autumn_testing_week: 'Tuần lễ Xét nghiệm HIV mùa thu ở châu Âu'
+        sex_worker_day: 'Ngày Lao động tình dục Quốc tế'
+        equal_pay_day: 'Ngày Bình đẳng Thu nhập LGBTQIA+'
+        sex_worker_pride: 'Tự hào Lao động tình dục'
+        sex_worker_rights_day: 'Ngày Quốc tế về Quyền của Người Lao động tình dục'
+        sex_worker_violence_day: 'Ngày Quốc tế Chấm dứt bạo lực đối với Lao động tình dục'
+        omnisexual_omniromantic_day: 'Ngày Tự hào và Nhận thức về Người Toàn tính và Người Toàn giới'
+        omnisexual_awareness_day: 'Ngày Nhận thức về Người Toàn tính'
+        hiv_is_not_a_crime: 'Ngày HIV Không phải là tội ác'
+        trans_flag_day: 'Ngày Giương cờ Chuyển giới'
+        alan_turing_day: 'Ngày Alan Turing'
+        nonbinary_kids_day: 'Ngày Thiếu nhi Phi nhị giới'
+        masc_lesbian_week: 'Tuần lễ Nhận thức và Hiểu biết về Người Đồng tính nữ Nam tính'
+        masc_lesbian_day: 'Ngày Nhận thức và Hiểu biết về Người Đồng tính nữ Nam tính'
+        trans_history_month: 'Tháng Lịch sử Người Chuyển giới'
+        transition_week: 'Tuần Chuyển giới'
+        bi_creators_day: 'Ngày Người Sáng tạo Nội dung Song tinh'
+        wrath_month: 'Tháng Thịnh nộ Đồng tính'
+        lesbian_aunts_day: 'Ngày Các dì Đồng tính'
+    banner: 'Chúng tôi đang kỉ niệm/tưởng nhớ'
+    celebrating_custom: 'được kỉ niệm'
+    celebrating_day: 'được tổ chức vào ngày'
+    celebrating_week: 'được tổ chức vào tuần'
+    celebrating_month: 'được tổ chức trong'
+    image:
+        header: 'Tải ảnh'
+    view:
+        grid: 'Chế độ hiển thị theo ô'
+        list: 'danh sách sự kiện'
+    link: 'Link'
+    full: 'Lịch đầy đủ'
+
+ukraine:
+    header: 'Chúng tôi sát cánh với Ukraine.'
+    link: '{https://supportukrainenow.org=Đây là cách bạn có thể hỗ trợ họ.}'

@@ -1,0 +1,5 @@
+singular	plural	isHonorific
+Tôi thấy {pronoun_subject} trông thật xinh.		FALSE
+Tôi đã hỏi {pronoun_object} cho tôi mượn cái bút chì của {possessive_determiner}.		FALSE
+{'pronoun_subject} đã bảo tôi rằng ngôi nhà này là của {possessive_pronoun}.		FALSE
+{'pronoun_subject} nói rằng {pronoun_subject} muốn làm cái này {reflexive}.		FALSE

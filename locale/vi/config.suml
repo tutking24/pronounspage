@@ -1,0 +1,211 @@
+locale: 'vi'
+
+header: true
+
+pronouns:
+    enabled: true
+    route: 'danh xưng'
+    default: 'anh ấy'
+    any: 'bất kì'
+    plurals: true
+    honorifics: false
+    multiple:
+        name: 'Danh xưng hoán đổi'
+        description: >
+            Nhiều người phi nhị tính (nonbinary) sử dụng nhiều danh xưng song song nhau
+            và ổn với việc được gọi bằng bất cứ từ nào.
+            Một vài người lại muốn người khác dùng đan xen các danh xưng khi đang nói về họ.
+        examples: ['anh ấy&cô ấy', 'anh ấy&họ', 'cô ấy&họ']
+    null:
+        description: >
+            {/avoiding=Tránh các từ chỉ giới tính} / {/no-pronouns=không dùng danh xưng} / {/nameself=danh xưng là tên}
+        history: >
+            Có người không muốn dùng bất cứ danh xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
+            việc lược bỏ danh xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
+        morphemes:
+            base_pronoun: '#'
+        examples: [':Vanh', ':A']
+        template: 'Bạn chỉ cần mở một trong các ví dụ trên và thay thế tên/tên tắt ở link bằng tên bạn.'
+        routes: ['tránh']
+        ideas:
+            -
+                header: 'Dùng tên hoặc kí hiệu thay cho danh xưng'
+                normative: true
+                examples:
+                    - ['Hôm qua tôi đã nói chuyện với anh ấy', 'Hôm qua tôi đã nói chuyện với {/:Vanh=Vanh}']
+                    - ['Cô ấy đẹp ghê', '{/:Giang=Giang} đẹp ghê']
+                    -
+                        - 'Lễ tốt nghiệp của cậu ấy sắp bắt đầu'
+                        - 'Lễ tốt nghiệp của {/:A=A} sắp bắt đầu'
+            -
+                header: 'Câu nói bị động'
+                normative: true
+                examples:
+                    - ['Anh ấy đã trả lời điện thoại', 'Điện thoại đã được trả lời']
+                    -
+                        - 'Thảo chăm sóc rất tận tâm cho con mèo của cô ấy'
+                        - 'Con mèo của Thảo được chăm sóc rất tận tâm'
+            -
+                header: 'Thay đổi cấu trúc câu nói (nói vòng)'
+                normative: true
+                examples:
+                    - ['Nam đã giúp cả gia đình anh ấy vượt khó khăn', 'Nam đã giúp gia đình vượt khó khăn']
+                    - ['Hải nói trong khi anh ấy đang ngủ', 'Hải nói trong lúc ngủ']
+            -
+                header: 'Thay danh xưng bằng từ hoặc cụm từ miêu tả'
+                normative: true
+                examples:
+                    - ['Cô ấy đã hạ cánh máy bay an toàn', 'Phi công đã hạ cánh máy bay an toàn']
+                    - ['Đây là Minh, cô ấy thích vẽ.', 'Đây là Minh, bạn tôi, một người rất thích vẽ.']
+                    - ['Luận điểm của anh ấy là…', 'Người bắt đầu cuộc tranh luận cho rằng…']
+            -
+                header: 'Bỏ danh xưng'
+                normative: true
+                examples:
+                    - ['Em đã mua quà cho Ngọc chưa?', 'Em đã mua quà cho Ngọc chưa?']
+                    - ['Dạ, em mua rồi ạ. Ngày mai em sẽ tặng anh ấy ạ.', 'Dạ, em mua rồi ạ. Mai em mang quà đi tặng ạ.']
+    emoji: false
+    mirror:
+        route: 'nhất dạng'
+        name: 'Xưng hô giống người đang đối thoại (dùng danh xưng nhất dạng)'
+        description: >
+            Một người dùng danh xưng nhất dạng muốn được dùng cùng danh xưng với người nói.
+        example:
+            - 'Bạn A dùng danh xưng nhất dạng.'
+            - 'Bạn B dùng {/cô ấy=cô ấy}, khi B nhắc đến A, B cũng dùng “cô ấy” để nhắc tới cô ấy (A).'
+            - 'Bạn C dùng {/anh ấy=anh ấy} song song với {/họ=họ}, vì vậy, khi C nhắc đến A, C dùng anh ấy hoặc họ để nói tới họ (A).'
+    slashes: false
+    others: 'Các danh xưng khác'
+
+pronunciation:
+    enabled: false
+    voices: {}
+
+sources:
+    enabled: true
+    route: 'sources'
+    submit: true
+    mergePronouns: {}
+
+nouns:
+    enabled: true
+    route: 'dictionary'
+    collapsable: false
+    plurals: true
+    pluralsRequired: false
+    declension: false
+    submit: true
+    templates: true
+
+community:
+    route: 'thuật ngữ'
+
+inclusive:
+    enabled: false
+
+terminology:
+    enabled: true
+    published: true
+    categories:
+        - 'xu hướng tính dục'
+        - 'xu hướng cảm xúc'
+        - 'xu hướng thứ ba'
+        - 'giới tính'
+        - 'thể hiện bản thân theo giới tính'
+        - 'relationship model'
+        - 'ngôn ngữ'
+        - 'sự thu hút'
+        - 'chính trị'
+        - 'định kiến'
+
+    route: 'thuật ngữ'
+
+names:
+    enabled: false
+
+people:
+    enabled: false
+
+# optional, but would be nice to have
+english:
+    enabled: true
+    route: 'english'
+    pronounGroups:
+        -
+            name: 'Normative forms'
+            description:
+                - >
+                    Because of the limitations of the Vietnamese grammar, or simply because they just prefer it that way,
+                    many nonbinary people decide to simply use “he” ({/anh ấy=anh ấy}) or “she” ({/cô ấy=cô ấy})
+                    – either the same as their gender assigned at birth or the opposite.
+                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
+            table: {anh ấy: 'Masculine', cô ấy: 'Feminine'}
+
+faq:
+    enabled: true
+    route: 'faq'
+
+links:
+    enabled: true
+    split: false
+    route: 'links'
+    blogRoute: 'blog'
+    links:
+        -
+            icon: 'globe-europe'
+            url: 'https://pronoun.is/'
+            headline: 'Pronoun.is'
+            extra: '– nguồn cảm hứng cho trang web này.'
+    academic: []
+    mediaGuests: []
+    mediaMentions: []
+    recommended: []
+    blog: false
+    zine:
+        enabled: false
+
+contact:
+    enabled: true
+    route: 'liên hệ'
+    team:
+        enabled: true
+        route: 'nhóm'
+
+support:
+    enabled: true
+
+user:
+    enabled: true
+    route: 'người dùng'
+    termsRoute: 'điều khoản'
+    privacyRoute: 'quyền riêng tư'
+
+profile:
+    enabled: true
+    editorEnabled: true
+    defaultWords:
+        -
+            header: 'Danh xưng'
+            values: ['[không dùng]', 'Bạn', 'Cậu', 'Nó', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí', 'Họ']
+        -
+            header: 'Từ chỉ người và quan hệ huyết thống'
+            values: ['bạn', 'nam', 'nữ', 'anh/em trai', 'chị/em gái', 'ông', 'bà', 'bro', 'sis']
+        -
+            header: 'Lời khen'
+            values: ['xinh', 'đẹp trai', 'cute', 'sexy', 'cuốn hút', 'quyến rũ']
+        -
+            header: 'Từ miêu tả mối quan hệ'
+            values: ['bạn', 'bạn đồng hành', 'bạn tình', 'bạn thân', 'gấu', 'baby', 'bạn trai', 'bạn gái', 'bạn vui', 'chồng', 'vợ', 'cục cưng', 'em yêu', 'anh yêu']
+    flags:
+        defaultPronoun: 'họ'
+
+calendar:
+    enabled: true
+    route: 'lịch'
+
+census:
+    enabled: false
+
+redirects: []
+
+api: ~
