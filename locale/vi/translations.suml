@@ -41,7 +41,7 @@ home:
         button: 'Hiển thị trình tạo danh xưng'
         header2: 'Tạo đường link'
         base: 'Dựa trên'
-        alt: 
+        alt:
             - 'Bạn cũng có thể nhập danh xưng hoán đổi ở trong mỗi ô tách biệt nhau, ví dụ <code>anh ấy&cô ấy</code> = “anh ấy” hoặc “cô ấy”.'
             - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên lạc với {/@jerryv=biên dịch tiếng Việt} của chúng tôi về vấn đề này.'
     whatisit: 'Danh xưng thì có gì vậy?'
@@ -721,7 +721,7 @@ profile:
         description: 'Chỉ bạn mới có thể xem phần này'
     language:
         header: 'Ngôn ngữ'
-        description: 'Thẻ của @%username%' cũng có ở các ngôn ngữ sau'
+        description: 'Thẻ của @%username%'' cũng có ở các ngôn ngữ sau'
     circles:
         header: 'Vòng bạn bè của tôi'
         info: >

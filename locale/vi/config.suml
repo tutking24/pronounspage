@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'danh xưng'
-    default: 'anh ấy'
+    default: 'anh'
     any: 'bất kì'
     plurals: true
     honorifics: false
@@ -128,18 +128,20 @@ people:
 
 # optional, but would be nice to have
 english:
-    enabled: true
+    enabled: false
     route: 'english'
-    pronounGroups:
-        -
-            name: 'Normative forms'
-            description:
-                - >
-                    Because of the limitations of the Vietnamese grammar, or simply because they just prefer it that way,
-                    many nonbinary people decide to simply use “he” ({/anh ấy=anh ấy}) or “she” ({/cô ấy=cô ấy})
-                    – either the same as their gender assigned at birth or the opposite.
-                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
-            table: {anh ấy: 'Masculine', cô ấy: 'Feminine'}
+#    pronounGroups:
+#        -
+#            name: 'Normative forms'
+#            description:
+#                - >
+#                    Because of the limitations of the Vietnamese grammar, or simply because they just prefer it that way,
+#                    many nonbinary people decide to simply use “he” ({/anh ấy=anh ấy}) or “she” ({/cô ấy=cô ấy})
+#                    – either the same as their gender assigned at birth or the opposite.
+#                    That doesn't make them any less nonbinary! Pronouns ≠ gender.
+#            table:
+#                anh ấy: 'Masculine'
+#                cô ấy: 'Feminine'
 
 faq:
     enabled: true
