@@ -4,24 +4,24 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'cách xưng hô'
+    route: 'danh xưng'
     default: 'anh ấy'
     any: 'bất kì'
     plurals: true
     honorifics: false
     multiple:
-        name: 'Đại từ xưng hô hoán đổi'
+        name: 'Danh xưng hoán đổi'
         description: >
-            Nhiều người phi nhị giới (nonbinary) sử dụng nhiều đại từ nhân xưng song song nhau
+            Nhiều người phi nhị giới (nonbinary) sử dụng nhiều danh xưng song song nhau
             và ổn với việc được gọi bằng bất cứ từ nào.
-            Một vài người lại muốn người khác dùng đan xen các đại từ nhân xưng khi đang nói về họ.
+            Một vài người lại muốn người khác dùng đan xen các danh xưng khi đang nói về họ.
         examples: ['anh ấy&cô ấy', 'anh ấy&họ', 'cô ấy&họ']
     null:
         description: >
-            {/avoiding=Tránh các từ chỉ giới tính} / {/no-pronouns=không dùng đại từ nhân xưng} / {/nameself=đại từ là tên}
+            {/avoiding=Tránh các từ chỉ giới tính} / {/no-pronouns=không dùng danh xưng} / {/nameself=danh xưng là tên}
         history: >
-            Có người không muốn dùng bất cứ đại từ nhân xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
-            việc lược bỏ đại từ nhân xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
+            Có người không muốn dùng bất cứ danh xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
+            việc lược bỏ danh xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
         morphemes:
             base_pronoun: '#'
         examples: [':Vanh', ':A']
@@ -29,7 +29,7 @@ pronouns:
         routes: ['tránh']
         ideas:
             -
-                header: 'Dùng tên hoặc kí hiệu thay cho đại từ nhân xưng'
+                header: 'Dùng tên hoặc kí hiệu thay cho danh xưng'
                 normative: true
                 examples:
                     - ['Hôm qua tôi đã nói chuyện với anh ấy', 'Hôm qua tôi đã nói chuyện với {/:Vanh=Vanh}']
@@ -52,14 +52,14 @@ pronouns:
                     - ['Nam đã giúp cả gia đình anh ấy vượt khó khăn', 'Nam đã giúp gia đình vượt khó khăn']
                     - ['Hải nói trong khi anh ấy đang ngủ', 'Hải nói trong lúc ngủ']
             -
-                header: 'Thay đại từ nhân xưng bằng từ hoặc cụm từ miêu tả'
+                header: 'Thay danh xưng bằng từ hoặc cụm từ miêu tả'
                 normative: true
                 examples:
                     - ['Cô ấy đã hạ cánh máy bay an toàn', 'Phi công đã hạ cánh máy bay an toàn']
                     - ['Đây là Minh, cô ấy thích vẽ.', 'Đây là Minh, bạn tôi, một người rất thích vẽ.']
                     - ['Luận điểm của anh ấy là…', 'Người bắt đầu cuộc tranh luận cho rằng…']
             -
-                header: 'Bỏ đại từ nhân xưng'
+                header: 'Bỏ danh xưng'
                 normative: true
                 examples:
                     - ['Em đã mua quà cho Ngọc chưa?', 'Em đã mua quà cho Ngọc chưa?']
@@ -67,15 +67,15 @@ pronouns:
     emoji: false
     mirror:
         route: 'nhất dạng'
-        name: 'Xưng hô giống người đang đối thoại (dùng đại từ nhất dạng)'
+        name: 'Xưng hô giống người đang đối thoại (dùng danh xưng nhất dạng)'
         description: >
-            Một người dùng đại từ nhất dạng muốn được dùng cùng cách xưng hô với người nói.
+            Một người dùng danh xưng nhất dạng muốn được dùng cùng danh xưng với người nói.
         example:
-            - 'Bạn A dùng đại từ nhất dạng.'
+            - 'Bạn A dùng danh xưng nhất dạng.'
             - 'Bạn B dùng {/cô ấy=cô ấy}, khi B nhắc đến A, B cũng dùng “cô ấy” để nhắc tới cô ấy (A).'
             - 'Bạn C dùng {/anh ấy=anh ấy} song song với {/họ=họ}, vì vậy, khi C nhắc đến A, C dùng anh ấy hoặc họ để nói tới họ (A).'
     slashes: false
-    others: 'Các cách xưng hô khác'
+    others: 'Các danh xưng khác'
 
 pronunciation:
     enabled: false
@@ -185,7 +185,7 @@ profile:
     editorEnabled: true
     defaultWords:
         -
-            header: 'Cách xưng hô'
+            header: 'Danh xưng'
             values: ['[không dùng]', 'Bạn', 'Cậu', 'Mày', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí']
         -
             header: 'Từ chỉ người và quan hệ huyết thống'
