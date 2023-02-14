@@ -186,7 +186,7 @@ profile:
     defaultWords:
         -
             header: 'Danh xưng'
-            values: ['[không dùng]', 'Bạn', 'Cậu', 'Mày', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí']
+            values: ['[không dùng]', 'Bạn', 'Cậu', 'Mày', 'Nó', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí']
         -
             header: 'Từ chỉ người và quan hệ huyết thống'
             values: ['bạn', 'nam', 'nữ', 'anh/em trai', 'chị/em gái', 'ông', 'bà', 'bro', 'sis']
