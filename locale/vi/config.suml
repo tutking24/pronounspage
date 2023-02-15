@@ -4,21 +4,21 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'danh xưng'
+    route: 'danh-xưng'
     default: 'anh'
-    any: 'bất kì'
+    any: 'bất-kì'
     plurals: true
     honorifics: false
     multiple:
         name: 'Danh xưng hoán đổi'
         description: >
-            Nhiều người phi nhị tính (nonbinary) sử dụng nhiều danh xưng song song nhau
+            Nhiều người phi nhị giới (nonbinary) sử dụng nhiều danh xưng song song nhau
             và ổn với việc được gọi bằng bất cứ từ nào.
             Một vài người lại muốn người khác dùng đan xen các danh xưng khi đang nói về họ.
-        examples: ['anh ấy&cô ấy', 'anh ấy&họ', 'cô ấy&họ']
+        examples: ['anh&cô', 'anh&họ', 'cô&họ']
     null:
         description: >
-            {/avoiding=Tránh các từ chỉ giới tính} / {/no-pronouns=không dùng danh xưng} / {/nameself=danh xưng là tên}
+            {/tránh=Tránh các từ chỉ giới tính} / {/bỏ-danh-xưng=không dùng danh xưng} / {/tên=danh xưng là tên}
         history: >
             Có người không muốn dùng bất cứ danh xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
             việc lược bỏ danh xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
@@ -26,7 +26,7 @@ pronouns:
             base_pronoun: '#'
         examples: [':Vanh', ':A']
         template: 'Bạn chỉ cần mở một trong các ví dụ trên và thay thế tên/tên tắt ở link bằng tên bạn.'
-        routes: ['tránh']
+        routes: ['tránh', 'bỏ-danh-xưng', 'tên']
         ideas:
             -
                 header: 'Dùng tên hoặc kí hiệu thay cho danh xưng'
@@ -66,7 +66,7 @@ pronouns:
                     - ['Dạ, em mua rồi ạ. Ngày mai em sẽ tặng anh ấy ạ.', 'Dạ, em mua rồi ạ. Mai em mang quà đi tặng ạ.']
     emoji: false
     mirror:
-        route: 'nhất dạng'
+        route: 'nhất-dạng'
         name: 'Xưng hô giống người đang đối thoại (dùng danh xưng nhất dạng)'
         description: >
             Một người dùng danh xưng nhất dạng muốn được dùng cùng danh xưng với người nói.
@@ -83,13 +83,13 @@ pronunciation:
 
 sources:
     enabled: true
-    route: 'sources'
+    route: 'nguồn'
     submit: true
     mergePronouns: {}
 
 nouns:
     enabled: true
-    route: 'dictionary'
+    route: 'từ-điển'
     collapsable: false
     plurals: true
     pluralsRequired: false
@@ -98,7 +98,7 @@ nouns:
     templates: true
 
 community:
-    route: 'thuật ngữ'
+    route: 'thuật-ngữ'
 
 inclusive:
     enabled: false
@@ -118,7 +118,7 @@ terminology:
         - 'chính trị'
         - 'định kiến'
 
-    route: 'thuật ngữ'
+    route: 'thuật-ngữ'
 
 names:
     enabled: false
@@ -150,7 +150,7 @@ faq:
 links:
     enabled: true
     split: false
-    route: 'links'
+    route: 'liên-kết'
     blogRoute: 'blog'
     links:
         -
@@ -168,7 +168,7 @@ links:
 
 contact:
     enabled: true
-    route: 'liên hệ'
+    route: 'liên-hệ'
     team:
         enabled: true
         route: 'nhóm'
@@ -178,9 +178,9 @@ support:
 
 user:
     enabled: true
-    route: 'người dùng'
-    termsRoute: 'điều khoản'
-    privacyRoute: 'quyền riêng tư'
+    route: 'tài-khoản'
+    termsRoute: 'điều-khoản'
+    privacyRoute: 'chính-sách-bảo-mật'
 
 profile:
     enabled: true
