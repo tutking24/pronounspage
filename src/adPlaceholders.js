@@ -2,11 +2,11 @@ export default {
     'support': {slotId: 2557549454, adFormat: 'auto', responsive: true},
 
     'aside-left-top': null,
-    'aside-left-middle': {slotId: 4999879969, adFormat: 'auto', responsive: true},
+    'aside-left-middle': {slotId: 8917042232, adFormat: 'autorelaxed'}, // prev: {slotId: 4999879969, adFormat: 'auto', responsive: true},
     'aside-left-bottom': null,
 
     'aside-right-top': null,
-    'aside-right-middle': {slotId: 8917042232, adFormat: 'autorelaxed'}, // prev: {slotId: 2369847195, adFormat: 'auto', responsive: true},
+    'aside-right-middle': null, // prev: {slotId: 2369847195, adFormat: 'auto', responsive: true},
     'aside-right-bottom': {slotId: 6664353412, adFormat: 'auto', responsive: true},
 
     'main-0': {slotId: 3137058361, adFormat: 'auto', adLayout: 'in-article'}, // prev: {slotId: 8172838213, adFormat: 'auto', responsive: true},
