@@ -76,7 +76,15 @@ i opisania rzeczywistości, że są narzędziem, dzięki któremu mówimy sobie 
 Łatwo jest powiedzieć komuś „po prostu bądź sobą” – ale trudno jest wiedzieć, kim się właściwie jest, 
 jeśli nie ma się punktu odniesienia, jeśli nie wie się, co w ogóle jest możliwe.
 
-Nie mówię tego, by jakkolwiek atakować atakować [osoby nieużywające etykietek](/terminologia#bez%20etykiety) 
+Udawanie, że płeć nie istnieje, może też być groźne. Przemoc często ma płeć – czy mamy ignorować też na przykład to,
+że ograniczanie praw reprodukcyjnych wiąże się z tym, jak postrzegane są role płciowe?
+Odmawianie osobom trans prawa do tożsamości płciowej używając wymówki „nie wierzę w płeć”
+można by porównać do postulatu zniesienia granic: wprawdzie to cudowna, utopijna wizja świata i fajnie do niej dążyć,
+ale wymaga ona systemowych zmian, a nie pustych deklaracji i atakowania najbardziej bezbronnych.
+Jeśli powiedzmy bronisz osobom imigranckim otrzymania obywatelstwa, „bo ja nie wierzę w granice”,
+to wcale nie naprawiasz systemu, tylko pod pretekstem niezgody na system, cementujesz go.
+
+Nie mówię tego wszystkiego, by jakkolwiek atakować atakować [osoby nieużywające etykietek](/terminologia#bez%20etykiety) 
 czy używające [dowolnych zaimków](/dowolne) – nie ma w tym najzupełniej nic złego! 
 Każde ma swoje powody, swój tok rozumowania, i swoje preferencje. 
 Natomiast muszę przyznać, że boli mnie czytanie żądań typu „przestań widzieć płeć!”,
