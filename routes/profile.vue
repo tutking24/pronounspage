@@ -11,6 +11,8 @@
             </div>
         </section>
 
+        <AdPlaceholder phkey="small-homepage"/>
+
         <div class="position-relative">
             <div v-if="profile.sensitive.length && !contentWarningDismissed" class="content-warning text-center">
                 <ContentWarning :warnings="profile.sensitive"

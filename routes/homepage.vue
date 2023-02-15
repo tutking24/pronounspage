@@ -1,6 +1,7 @@
 <template>
     <Page>
         <UkraineBanner class="mb-4"/>
+        <AdPlaceholder phkey="small-homepage"/>
         <template v-if="$te('home.welcome')">
             <section>
                 <h2>
