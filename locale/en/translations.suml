@@ -1100,6 +1100,9 @@ privacy:
         plausible: >
             We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
             You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+        gtm: >
+            We use <strong>Google Tag Manager</strong> to analyse traffic on the website. Such data has no relation to your username.
+            You can read their privacy policy {https://support.google.com/tagmanager/answer/9323295=<strong>here</strong>}.
         arc: >
             We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
             You can read more about them and their privacy policy

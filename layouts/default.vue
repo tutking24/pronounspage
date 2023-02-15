@@ -63,6 +63,7 @@
             this.confirmAge();
 
             this.loadAds();
+            this.loadGTM();
         },
         methods: {
             async confirmAge() {
@@ -81,7 +82,17 @@
                 if (!this.adsEnabled) { return; }
 
                 await this.$loadScript('adsense', `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8518361481036191`);
-            }
+            },
+            async loadGTM() {
+                if (!this.adsEnabled) { return; }
+
+                await this.$loadScript('gtm', 'https://www.googletagmanager.com/gtag/js?id=G-TDJEP12Q3M');
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-TDJEP12Q3M');
+            },
         },
         computed: {
             adsEnabled() {
