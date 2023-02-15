@@ -7,8 +7,8 @@
 
         <p class="small"><em>
             <T>terms.lastUpdate</T><T>quotation.colon</T>
-            2022-12-29
-            (registration of a legal entity; switching ads providers)
+            2023-02-15
+            (Google Tag Manager)
         </em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
@@ -29,6 +29,7 @@
         <p><T>privacy.content.hCaptcha</T></p>
         <p v-if="config.ads && config.ads.enabled">
             <T>privacy.content.adsense</T>
+            <T>privacy.content.gtm</T>
         </p>
         <p><T>privacy.content.logsBackups</T></p>
         <p><T>privacy.content.gdpr</T></p>
