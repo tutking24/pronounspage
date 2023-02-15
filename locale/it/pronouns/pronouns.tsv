@@ -1,7 +1,8 @@
 key	description	normative	pronoun_n	pronoun_d	pronoun_a	possessive	article	article_indefinite	noun	noun_i	adjective	past_participle	h	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-lui,lui/lo	Maschile	TRUE	lui	gli	lo	suo	il	un	o	io	o	o		FALSE	FALSE	TRUE				
-lei,lei/la	Femminile	TRUE	lei	le	la	sua	la	una	a	io	a	a		FALSE	FALSE	TRUE				
-loro,loro/li	Maschile plurale	TRUE	loro	loro	li	suoi	i		i	i	i	i	h	TRUE	TRUE	TRUE				
-loro/le	Femminile plurale	TRUE	loro	loro	le	suoi	le		i	i	i	i	h	TRUE	TRUE	TRUE				
-loi,loi/lu	Inclusivo	FALSE	loi	lu	lu	su	ilu	unu	u	iu	u	u		FALSE	FALSE	TRUE				
-loie,loie/lie	Inclusivo plurale	FALSE	loie	loro	lie	suoie	ilie		ie	ie	ie	ie	h	TRUE	TRUE	TRUE				
+lui,lui/lo	Maschile	TRUE	lui	gli	lo	suo	il	un	o	io	o	o		FALSE	FALSE	TRUE
+lei,lei/la	Femminile	TRUE	lei	le	la	sua	la	una	a	io	a	a		FALSE	FALSE	TRUE
+loro,loro/li	Maschile plurale	TRUE	loro	loro	li	suoi	i		i	i	i	i	h	TRUE	TRUE	TRUE
+loro/le	Femminile plurale	TRUE	loro	loro	le	suoi	le		i	i	i	i	h	TRUE	TRUE	TRUE
+loi,loi/lu	Inclusivo	FALSE	loi	lu	lu	su	ilu	unu	u	iu	u	u		FALSE	FALSE	TRUE	Forme proposte da {/\@andrea=&#64;andrea}
+loie,loie/lie	Inclusivo plurale	FALSE	loie	loro	lie	suoie	ilie		ie	ie	ie	ie	h	TRUE	TRUE	TRUE	Forme proposte da {/\@andrea=&#64;andrea}
+ləi,ləi/lə	Forme con schwa	FALSE	ləi	lə	lə	suə	lə	unə	ə	iə	ə	ə		FALSE	FALSE	TRUE
