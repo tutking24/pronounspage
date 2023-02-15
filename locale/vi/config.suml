@@ -4,7 +4,7 @@ header: true
 
 pronouns:
     enabled: true
-    route: 'danh xưng'
+    route: 'pronouns'
     default: 'anh'
     any: 'bất kì'
     plurals: true
@@ -66,7 +66,7 @@ pronouns:
                     - ['Dạ, em mua rồi ạ. Ngày mai em sẽ tặng anh ấy ạ.', 'Dạ, em mua rồi ạ. Mai em mang quà đi tặng ạ.']
     emoji: false
     mirror:
-        route: 'nhất dạng'
+        route: 'mirror'
         name: 'Xưng hô giống người đang đối thoại (dùng danh xưng nhất dạng)'
         description: >
             Một người dùng danh xưng nhất dạng muốn được dùng cùng danh xưng với người nói.
@@ -98,7 +98,7 @@ nouns:
     templates: true
 
 community:
-    route: 'thuật ngữ'
+    route: 'terminology'
 
 inclusive:
     enabled: false
@@ -118,7 +118,7 @@ terminology:
         - 'chính trị'
         - 'định kiến'
 
-    route: 'thuật ngữ'
+    route: 'terminology'
 
 names:
     enabled: false
@@ -168,7 +168,7 @@ links:
 
 contact:
     enabled: true
-    route: 'liên hệ'
+    route: 'contact'
     team:
         enabled: true
         route: 'nhóm'
@@ -178,9 +178,9 @@ support:
 
 user:
     enabled: true
-    route: 'người dùng'
-    termsRoute: 'điều khoản'
-    privacyRoute: 'quyền riêng tư'
+    route: 'account'
+    termsRoute: 'terms'
+    privacyRoute: 'privacy'
 
 profile:
     enabled: true
@@ -203,7 +203,7 @@ profile:
 
 calendar:
     enabled: true
-    route: 'lịch'
+    route: 'calendar'
 
 census:
     enabled: false
