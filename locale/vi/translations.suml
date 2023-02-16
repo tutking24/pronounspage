@@ -1106,7 +1106,7 @@ flags:
     Fa*afafine: 'Fa''afafine'   # no VN equivalent
     Femme: 'Les nữ tính'
     Gay: 'Đồng tính nam'
-    Gender_Questioning: 'Tìm hiểu giới tính'
+    Gender_Questioning: 'Chưa xác định giới tính'
     Genderfae: 'Linh hoạt giới phi nam'
     Genderfaun: 'Linh hoạt giới phi nữ'
     Genderfluid: 'Linh hoạt giới'
@@ -1362,7 +1362,7 @@ calendar:
         stonewall_day: 'Ngày bạo loạn Stonewall'
         domestic_violence: 'Ngày Nhận thức về Bạo lực gia đình LGBTQ'
         polysexual_day: 'Ngày Nhận thức về người Đa tính và Đa ái'
-        orlando_day: 'Pulse Night of Remembrance'   #no VN equivalent
+        orlando_day: 'Ngày Tưởng nhớ Vụ thảm sát hộp đêm Orlando'
         aids_memorial: 'Lễ Thắp nến Tưởng niệm HIV/AIDS Quốc tế'
         health_week: 'Tuần lễ Nhận thức về Sức khỏe LGBT'
         lesbian_visibility_week: 'Tuần lễ Nhận thức về người Đồng tính nữ'
@@ -1384,7 +1384,7 @@ calendar:
         aids_awareness_month: 'Tháng Nhận thức về HIV/AIDS'
         genderfluid_week: 'Tuần lễ Nhận thức về Người Linh hoạt giới'
         pan_week: 'Tuần Toàn tính'
-        parents_day: 'Gender Expansive Parents'' Day'   # no VN equivalent
+        parents_day: 'Ngày Phụ huynh Phi nhị giới'
         hiv_testing_day: 'Ngày Xét nghiệm HIV Quốc tế'
         freedressing_day: 'Ngày Nhận thức về Tự do trang phục'
         sexual_health_day: 'Ngày Nhận thức về Sức khỏe Sinh sản và Tình dục'
@@ -1392,7 +1392,7 @@ calendar:
         aids_vaccine_day: 'Ngày Vaccine HIV/AIDS Quốc tế'
         queer_youth_day: 'Ngày Thanh niên Đa dạng giới'
         omnisexual_day: 'Ngày Hiện diện Người Toàn tính'
-        unlabeled_day: 'Unlabeled Visibility Day'   # no VN equivalent
+        unlabeled_day: 'Ngày Hiện diện Người Vô nhãn'
         trans_youth_day: 'Ngày Nhận thức về Thiếu nhi - Thanh niên chuyển giới'
         hiv_long_term_survivors_day: 'Ngày Nhận thức về Những người sống lâu dài với HIV'
         women_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Phụ nữ và Trẻ em nữ'
@@ -1401,10 +1401,10 @@ calendar:
         black_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người da đen'
         hiv_aging_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người cao tuổi'
         trans_hiv_testing_day: 'Ngày Xét nghiệm HIV Người chuyển giới'
-        mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'   # no VN equivalent
-        mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'   # no VN equivalent
-        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'   # no VN equivalent
-        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'   # no VN equivalent
+        mspec_lesbian_day: 'Ngày Nhận thức và Hiện diện của Người Đồng tính nữ Đa phổ'
+        mspec_lesbian_week: 'Tuần lễ Nhận thức và Hiện diện của Người Đồng tính nữ Đa phổ'
+        mspec_gay_day: 'Ngày Nhận thức và Hiện diện của Người Đồng tính nam Đa phổ'
+        mspec_gay_week: 'Tuần lễ Nhận thức và Hiện diện của Người Đồng tính nam Đa phổ'
         spring_testing_week: 'Tuần lễ Xét nghiệm HIV mùa xuân ở châu Âu'
         autumn_testing_week: 'Tuần lễ Xét nghiệm HIV mùa thu ở châu Âu'
         sex_worker_day: 'Ngày Lao động tình dục Quốc tế'
