@@ -150,8 +150,8 @@ nouns:
             (nhưng chúng được một số người phi nhị giới sử dụng để thể hiện bản thân bên ngoài giới tính nam nữ),
             và không phải mọi từ ở đây đều có thể được sử dụng cho bất kì người phi nhị giới nào – nên hãy hỏi họ cách họ muốn được gọi.
 
-    approved: 'các mục đã được phê duyệt'
-    pending: 'đang chờ kiểm duyệt'
+    approved: 'mục đã được phê duyệt'
+    pending: 'mục đang chờ kiểm duyệt'
     edit: 'Đề xuất thay đổi'
     edited: 'Đã đề xuất thay đổi'
     editing: 'Bạn đang chỉnh sửa một mục hiện có'
