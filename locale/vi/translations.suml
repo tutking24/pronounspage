@@ -43,7 +43,7 @@ home:
         base: 'Dựa trên'
         alt:
             - 'Bạn cũng có thể nhập danh xưng hoán đổi ở trong mỗi ô tách biệt nhau, ví dụ <code>anh ấy&cô ấy</code> = “anh ấy” hoặc “cô ấy”.'
-            - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên hệ với {/@jerryv=biên dịch tiếng Việt} của chúng tôi về vấn đề này.'
+            - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên hệ với {/@jerryv=admin tiếng Việt} của chúng tôi về vấn đề này.'
     whatisit: 'Danh xưng thì có gì vậy?'
     mission:
         header: 'Sứ mệnh của chúng tôi'
@@ -58,7 +58,7 @@ home:
         inclusiveness: >
             <strong>Toàn diện</strong>
             – để khi ta nói tới một người ta không quen biết hoặc một nhóm người,
-            ta không tự đoán giới tính của họ và không cô lập họ vì bất kì lý do gì.
+            ta không tự phỏng đoán giới tính của họ và không cô lập họ vì bất kì lý do gì.
 
 pronouns:
     header: 'Các danh xưng'
@@ -77,7 +77,7 @@ pronouns:
         short: 'bất kì'
         description: >
             Mặc dù đối với nhiều người, việc mọi người sử dụng danh xưng cụ thể để nói về họ là rất quan trọng,
-            có những người không phiền khi được xưng bằng bất cứ cách nào – miễn là người nói nói rõ mình đang nói đến ai.
+            có những người không phiền khi được xưng bằng bất cứ cách nào – miễn là người nói nói rõ mình đang đề cập đến ai.
         options: 'Xem tùy chọn [chia sẻ]{/danh-xưng=tại đây}.'
     others: 'Các từ khác'
     othersRaw: 'khác'
@@ -129,12 +129,12 @@ nouns:
     header: 'Từ điển'
     headerLong: 'Từ điển danh từ trung tính'
     headerLonger: 'Từ điển ngôn ngữ phi giới tính'
-    description: 'Không chỉ có danh xưng thôi đâu! Ghé qua từ điển danh từ phi giới tính của chúng tôi xem này.'
+    description: 'Không chỉ có danh xưng thôi đâu! Ghé qua từ điển danh từ phi giới tính của chúng tôi xem nhé.'
     intro:
         - >
-            Trung tính và toàn diện không chỉ là tôn trọng cách xưng hô của một người.
+            Trung tính và sự toàn diện không chỉ là tôn trọng cách xưng hô của một người.
             Nó còn là cách mô tả công việc, vị trí, mối quan hệ của họ, v.v.
-            theo cách không tự đoán giới tính của họ.
+            theo cách không tự phỏng đoán giới tính của họ.
             Không phải tất cả lính cứu hỏa đều là “thanh niên cứu hỏa”. Không phải hôn phu nào cũng là “chồng” hay “vợ”.
         - >
             Khi đề cập đến một người mà bạn không biết giới tính,
@@ -216,7 +216,6 @@ faq:
                     Ngay cả từ quan điểm sinh học thuần túy, chúng ta phân biệt giới tính nhiễm sắc thể, giới tính di truyền, giới tính nội tiết tố, giới tính kiểu hình…
                     Chúng không nhất thiết phải đồng dạng với nhau, chúng không nhất thiết phải là nam hay nữ.
                     Và khi chúng ta đề cập đến khía cạnh văn hóa, “giới tính” chỉ là một thứ được xây dựng của xã hội.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
                     Tùy thuộc vào thời gian và địa điểm, trở thành “phụ nữ” hay “đàn ông” có thể có nghĩa là có những quyền, nghĩa vụ, chuẩn mực hoàn toàn khác nhau… Ở châu Âu, đàn ông thường đi giày cao gót và tất chân, còn người dân bản địa ở Bắc Mỹ đã công nhận giới tính thứ ba từ lâu.
                 - >
                     Phi nhị giới là một thuật ngữ chung mô tả danh tính của những người không phù hợp với sự phân biệt nam/nữ đơn thuần.
@@ -245,25 +244,25 @@ faq:
             answer:
                 - >
                     Đúng. Đúng vậy đấy. Và mỗi từ trong mọi ngôn ngữ cũng vậy.
-                    Chỉ là một số từ cũ hơn những từ khác mà thôi.
+                    Chỉ là một số từ cổ hơn những từ khác mà thôi.
         how-to-know:
             question: 'Làm thế nào để tôi xưng hô với một ai đó?'
             answer:
                 - >
-                    Bạn chỉ cần hỏi thôi! Đúng, nó có thể hơi khó xử, nhưng chúng ta càng làm nhiều thì càng bớt khó xử thôi.
+                    Bạn chỉ cần hỏi thôi! Đúng, điều đó có thể hơi khó xử, nhưng chúng ta càng làm nhiều thì càng bớt khó xử thôi.
                     Nếu chúng ta có thể hỏi ai đó tên của họ, tại sao không hỏi luôn danh xưng của họ?
                 - >
                     (Có điều, làm ơn đừng diễn đạt câu hỏi như “bạn là con trai hay con gái?”.
                     Câu hỏi này ngụ ý rằng chỉ có hai câu trả lời đúng,
-                    và nó cho thấy sự tò mò không lành mạnh về bộ phận sinh dục của người khác.
+                    và nó cho thấy một sự tò mò không hề lành mạnh về bộ phận sinh dục của người khác.
                     Thay vào đó, bạn chỉ cần hỏi “mình nên xưng hô với bạn như thế nào?” hoặc “danh xưng của bạn là gì?”)
                 - >
-                    Điều quan trọng nữa là hãy bình thường hóa việc nói cho mọi người biết danh xưng của bạn khi bạn giới thiệu bản thân.
+                    Điều quan trọng hơn là hãy bình thường hóa việc nói cho mọi người biết danh xưng của bạn khi bạn giới thiệu bản thân.
                     “Xin chào, tôi là Việt Anh, hãy gọi tôi là {/anh=anh ấy}, {/bạn=bạn ấy} hoặc {/họ=họ}”. Việc này không khó đâu – nhưng đối với những người chuyển giới và phi nhị giới, điều đó có ý nghĩa rất lớn đó!
                     Việc này thậm chí còn dễ dàng hơn khi làm online: chỉ cần ghi danh xưng của bạn (hoặc đường link đến các ví dụ từ trang web của chúng tôi) vào phần mô tả của bạn thôi.
                 - >
                     Bạn cũng nên nhớ rằng nhiều người có thể sử dụng một tên khác và một bộ danh xưng khác tùy thuộc vào tình huống.
-                    Họ có thể chưa tiết lộ bản dạng giới (come out) với bạn bè hoặc đồng nghiệp, nhưng đã come out với những người bạn thoải mái với họ.
+                    Họ có thể chưa công khai giới tính (come out) với bạn bè hoặc đồng nghiệp, nhưng đã công khai với những người mà họ thấy thoải mái.
                     Hãy để ý chút nhé. Ví dụ, bạn có thể hỏi họ “tôi nên sử dụng danh xưng nào trước mặt sếp của bạn vậy?”, v.v.
                 - >
                     Một số người dùng nhiều danh xưng, eg. “{/anh&cô=anh ấy/cô ấy}” or “{/họ&anh=họ/anh ấy}”.
@@ -275,7 +274,7 @@ faq:
                     Có chứ! Hàng triệu người phi nhị giới trên thế giới dùng danh xưng khác.
                     Mỗi danh xưng được liệt kê ở đây đều có người thực sự sử dụng nó trong cuộc sống hàng ngày.
         authority:
-            question: 'Những danh xưng phi giới tính đó có được chấp thuận bởi các thẩm quyền về ngôn ngữ không?'
+            question: 'Những danh xưng phi giới tính đó có được chấp thuận bởi các thẩm quyền ngôn ngữ học không?'
             answer:
                 - >
                     Ngôn ngữ không phải là một loại phép thuật cổ xưa được Phật hay Chúa ban cho.
@@ -300,11 +299,11 @@ faq:
                     hoặc nếu bạn có hình ảnh của bạn làm hình đại diện.
                     Nhiều người thì không – vì vậy rất khó đoán họ muốn được gọi như thế nào.
                 - >
-                    Nhưng thực ra là hơn thế: danh xưng của bạn có thể “rõ ràng”,
+                    Nhưng thực tế thì không như thế: danh xưng của bạn có thể “rõ ràng”,
                     nhưng có những người không có danh xưng rõ.
                     Họ muốn được xưng hô một cách chính xác, cho dù họ có “đúng” giới tính của mình hay không,
                     họ đã chuyển giới hay chưa (hoặc họ có muốn chuyển giới không).
-                    Những người phi nhị giới thường “không có vẻ ngoài lai giới”, và họ không mắc nợ ái nam ái nữ với bất kì ai.
+                    Những người phi nhị giới thường “không có vẻ ngoài lai giới”, và họ không mắc nợ sự ái nam ái nữ với bất kì ai.
                 - >
                     Việc chia sẻ danh xưng của bạn là rất quan trọng đối với những người chuyển giới, phi nhị giới và không theo chuẩn giới tính.
                     Hơn thế, nó cũng vạch trần và cô lập chúng tôi nữa.
@@ -382,7 +381,7 @@ faq:
                     Chúng tôi không có kế hoạch mở rộng hoặc thu hẹp danh sách đó.
                 - >
                     Chúng tôi biết rằng một số cờ có thể không được một vài người thích
-                    (ví dụ: do đã từng có các TERF (người ủng hộ nữ quyền nhưng lại kì thị người chuyển giới) cố gắng chiếm lấy một thuật ngữ và khiến nó mang nghĩa kì thị,
+                    (ví dụ: do đã từng có các TERF (người ủng hộ nữ quyền nhưng kì thị người chuyển giới) cố gắng chiếm lấy một thuật ngữ và khiến nó mang nghĩa kì thị,
                     vì nhiều định nghĩa khó hiểu,
                     hoặc thậm chí vì các khía cạnh của cuộc sống của một nhân vật thần thoại).
                     Bản thân chúng tôi là những người đồng tính và chuyển giới, chúng tôi rất quan tâm đến anh chị em chuyển giới của mình chứ.
@@ -400,7 +399,7 @@ faq:
             question: 'Danh xưng của tôi không được liệt kê'
             answer:
                 - >
-                    Trên trang chủ có trình tạo danh xưng, bạn có thể sử dụng nó để tạo liên kết đến bất kì anh nào bạn thích.
+                    Trên trang chủ có trình tạo danh xưng, bạn có thể sử dụng nó để tạo liên kết đến bất kì danh xưng nào bạn thích.
 
 links:
     header: 'Liên kết'
@@ -451,7 +450,7 @@ contact:
     language: >
         Chúng tôi là một tập thể hoạt động quốc tế, vậy nên những người đã tạo một phiên bản ngôn ngữ cụ thể có thể không phải là những người sẽ đọc tin nhắn của bạn.
         Vì vậy, nếu có thể, hãy liên hệ với chúng tôi bằng <strong>tiếng Anh</strong>.
-        Nếu bạn chỉ có thể giao tiếp bằng tiếng Việt, hãy chuyển lời qua {/@jerryv=biên dịch tiếng Việt} của chúng tôi để chúng tôi có thể hỗ trợ bạn một cách nhanh nhất.
+        Nếu bạn chỉ có thể giao tiếp bằng tiếng Việt, hãy chuyển lời qua {/@jerryv=admin tiếng Việt} của chúng tôi để chúng tôi có thể hỗ trợ bạn một cách nhanh nhất.
     team:
         name: 'Tập thể “Hội đồng Ngôn ngữ Trung tính”'
         nameShort: 'Tập thể'
@@ -526,7 +525,7 @@ support:
     description: >
         Nếu bạn muốn đóng góp cho máy chủ, tên miền, nhãn dán, v.v. hoặc chỉ đơn giản là mua cà phê cho tác giả làm việc,
         bạn có thể sử dụng các liên kết dưới đây:
-    bankAccount: 'Thẻ ghi nợ/tín dụng quốc tế'
+    bankAccount: 'Chuyển khoản ngân hàng (ở châu Âu)'
 
 user:
     header: 'Tài khoản'
@@ -537,7 +536,7 @@ user:
         help: 'Để đăng nhập hoặc tạo tài khoản, bạn có thể sử dụng các nút mạng xã hội hoặc nhập email của mình vào trường bên dưới, sau đó xác nhận mã bạn sẽ nhận được trong email.'
         placeholder: 'Email (hoặc tên người dùng, nếu bạn đã có tài khoản)'
         action: 'Đăng nhập / đăng kí'
-        emailSent: 'Chúng tôi đã gửi cho bạn một <strong>%email%</strong> email có mã OTP gồm 6 chữ số. Hãy nhập mã vào đây. Mã này chỉ sử dụng một lần và có hiệu lực trong 15 phút.'
+        emailSent: 'Chúng tôi đã gửi cho bạn một email <strong>%email%</strong> có mã OTP gồm 6 chữ số. Hãy nhập mã vào đây. Mã này chỉ sử dụng một lần và có hiệu lực trong 15 phút.'
         userNotFound: 'Không tìm thấy tài khoản.'
         email:
             subject: 'Mã đăng nhập của bạn là {{code}}'
@@ -652,9 +651,9 @@ profile:
     flagsAsterisk: 'Đây không phải là bản dạng giới, nhưng chúng tôi bao gồm bản dạng này cho những người đồng tính theo những cách khác (ví dụ: người chuyển giới thẳng).'
     flagsCustomForm:
         label: 'Tên nhãn'
-        description: '(không bắt buộc) Mô tả ngắn về nhãn'
-        link: '(không bắt buộc) Liên kết thêm thông tin'
-        alt: '(không bắt buộc) Văn bản thay thế mô tả sự xuất hiện của lá cờ này (xem bên dưới)'
+        description: '(Không bắt buộc) Mô tả ngắn về nhãn'
+        link: '(Không bắt buộc) Liên kết thêm thông tin'
+        alt: '(Không bắt buộc) Văn bản thay thế mô tả sự xuất hiện của lá cờ này (xem bên dưới)'
         altExample: 'Một ví dụ về cách văn bản thay thế có thể được diễn đạt'
     links: 'Liên kết'
     linksRecommended: 'Chúng tôi đề xuất liên kết đến'
@@ -721,7 +720,7 @@ profile:
         description: 'Chỉ bạn mới có thể xem phần này'
     language:
         header: 'Ngôn ngữ'
-        description: 'Thẻ của @%username%'' cũng có ở các ngôn ngữ sau'
+        description: 'Thẻ của @%username% cũng có ở các ngôn ngữ sau'
     circles:
         header: 'Vòng bạn bè của tôi'
         info: >
@@ -744,7 +743,7 @@ profile:
     sensitive:
         header: 'Cảnh báo nội dung'
         info: >
-            Một số nội dung có thể được cho phép theo như {/terms=Điều khoản dịch vụ} của chúng tôi,
+            Một số nội dung có thể được cho phép theo như {/điều-khoản=Điều khoản Dịch vụ} của chúng tôi,
             nhưng vẫn không phù hợp với trẻ vị thành niên, hoặc có khả năng gợi tổn thương, v.v.
             Hãy tôn trọng những người đến xem thẻ của bạn và cảnh báo họ trước.
             Ví dụ về CW có thể là “có đề cập đến rượu”, “gợi dục”, “đề cập đến sự kì thị người đồng tính”,…
@@ -812,7 +811,7 @@ authRequired:
 confirm:
     header: 'Bạn có chắc không?'
     yes: 'Có, tôi chắc chắn'
-    no: 'Không, hủy đi'
+    no: 'Hủy'
     ok: 'Ok'
     save: 'Lưu'
     dismiss: 'Bỏ qua'
