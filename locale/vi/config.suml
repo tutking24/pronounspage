@@ -73,7 +73,7 @@ pronouns:
         example:
             - 'Bạn A dùng danh xưng nhất dạng.'
             - 'Bạn B dùng {/cô ấy=cô ấy}, khi B nhắc đến A, B cũng dùng “cô ấy” để nhắc tới cô ấy (A).'
-            - 'Bạn C dùng {/anh ấy=anh ấy} song song với {/họ=họ}, vì vậy, khi C nhắc đến A, C dùng anh ấy hoặc họ để nói tới họ (A).'
+            - 'Bạn C dùng {/anh ấy=anh ấy} song song với {/họ=họ}, vì vậy, khi C nhắc đến A, C dùng “anh ấy” hoặc “họ” để nói tới họ (A).'
     slashes: false
     others: 'Các danh xưng khác'
 
@@ -112,7 +112,7 @@ terminology:
         - 'xu hướng thứ ba'
         - 'giới tính'
         - 'thể hiện bản thân theo giới tính'
-        - 'relationship model'
+        - 'mối quan hệ'
         - 'ngôn ngữ'
         - 'sự thu hút'
         - 'chính trị'
