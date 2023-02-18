@@ -103,6 +103,12 @@
             </AdminDashboardCard>
             <AdminDashboardCard
                 v-show="!filterAttention"
+                icon="b:discord"
+                link="https://discord.gg/PNDumDjvnP"
+                header="Team Discord"
+            />
+            <AdminDashboardCard
+                v-show="!filterAttention"
                 icon="file-spreadsheet"
                 link="/admin/timesheets"
                 header="Volunteering timesheets"
