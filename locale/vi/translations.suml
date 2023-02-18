@@ -43,7 +43,7 @@ home:
         base: 'Dựa trên'
         alt:
             - 'Bạn cũng có thể nhập danh xưng hoán đổi ở trong mỗi ô tách biệt nhau, ví dụ <code>anh ấy&cô ấy</code> = “anh ấy” hoặc “cô ấy”.'
-            - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên hệ với {/@jerryv=biên dịch tiếng Việt} của chúng tôi về vấn đề này.'
+            - 'Bản tùy biến này không hoàn hảo vì nó không thể bao trùm được đầy đủ các chi tiết cụ thể của một số danh xưng, nhưng nó đã được đơn giản hóa để thuận tiện khi làm việc. Tuy nhiên, nếu chức năng hiện tại không đủ để hiển thị danh xưng của bạn, hãy liên hệ với {/@jerryv=admin tiếng Việt} của chúng tôi về vấn đề này.'
     whatisit: 'Danh xưng thì có gì vậy?'
     mission:
         header: 'Sứ mệnh của chúng tôi'
@@ -58,7 +58,7 @@ home:
         inclusiveness: >
             <strong>Toàn diện</strong>
             – để khi ta nói tới một người ta không quen biết hoặc một nhóm người,
-            ta không tự đoán giới tính của họ và không cô lập họ vì bất kỳ lý do gì.
+            ta không tự phỏng đoán giới tính của họ và không cô lập họ vì bất kì lý do gì.
 
 pronouns:
     header: 'Các danh xưng'
@@ -77,7 +77,7 @@ pronouns:
         short: 'bất kì'
         description: >
             Mặc dù đối với nhiều người, việc mọi người sử dụng danh xưng cụ thể để nói về họ là rất quan trọng,
-            có những người không phiền khi được xưng bằng bất cứ cách nào – miễn là người nói nói rõ mình đang nói đến ai.
+            có những người không phiền khi được xưng bằng bất cứ cách nào – miễn là người nói nói rõ mình đang đề cập đến ai.
         options: 'Xem tùy chọn [chia sẻ]{/danh-xưng=tại đây}.'
     others: 'Các từ khác'
     othersRaw: 'khác'
@@ -129,12 +129,12 @@ nouns:
     header: 'Từ điển'
     headerLong: 'Từ điển danh từ trung tính'
     headerLonger: 'Từ điển ngôn ngữ phi giới tính'
-    description: 'Không chỉ có danh xưng thôi đâu! Ghé qua từ điển danh từ phi giới tính của chúng tôi xem này.'
+    description: 'Không chỉ có danh xưng thôi đâu! Ghé qua từ điển danh từ phi giới tính của chúng tôi xem nhé.'
     intro:
         - >
-            Trung tính và toàn diện không chỉ là tôn trọng cách xưng hô của một người.
+            Trung tính và sự toàn diện không chỉ là tôn trọng cách xưng hô của một người.
             Nó còn là cách mô tả công việc, vị trí, mối quan hệ của họ, v.v.
-            theo cách không tự đoán giới tính của họ.
+            theo cách không tự phỏng đoán giới tính của họ.
             Không phải tất cả lính cứu hỏa đều là “thanh niên cứu hỏa”. Không phải hôn phu nào cũng là “chồng” hay “vợ”.
         - >
             Khi đề cập đến một người mà bạn không biết giới tính,
@@ -148,7 +148,7 @@ nouns:
             Hãy nhớ rằng đây là một từ điển các <em>ý tưởng và đề xuất</em>.
             Không phải tất cả các từ được trích dẫn đều có nghĩa trong mọi ngữ cảnh, không phải tất cả đều <em>hoàn toàn</em> trung tính.
             (nhưng chúng được một số người phi nhị giới sử dụng để thể hiện bản thân bên ngoài giới tính nam nữ),
-            và không phải mọi từ ở đây đều có thể được sử dụng cho bất kỳ người phi nhị giới nào – nên hãy hỏi họ cách họ muốn được gọi.
+            và không phải mọi từ ở đây đều có thể được sử dụng cho bất kì người phi nhị giới nào – nên hãy hỏi họ cách họ muốn được gọi.
 
     approved: 'các mục đã được phê duyệt'
     pending: 'đang chờ kiểm duyệt'
@@ -196,7 +196,7 @@ terminology:
         - >
             Hãy nhớ rằng các nhãn nhận dạng vốn rất chủ quan và linh hoạt.
             Từ điển này là một nỗ lực của cộng đồng nhằm tìm ra những định nghĩa được chấp nhận rộng rãi nhất về các thuật ngữ đồng tính,
-            nhưng không nên được coi là bất kỳ loại thẩm quyền nào về vấn đề này.
+            nhưng không nên được coi là bất kì loại thẩm quyền nào về vấn đề này.
             Người duy nhất được thẩm quyền về danh tính của họ và những từ nào mô tả họ đúng nhất là… chính người đó.
     term: 'Thuật ngữ'
     original: 'Ngữ nguyên học'
@@ -216,7 +216,6 @@ faq:
                     Ngay cả từ quan điểm sinh học thuần túy, chúng ta phân biệt giới tính nhiễm sắc thể, giới tính di truyền, giới tính nội tiết tố, giới tính kiểu hình…
                     Chúng không nhất thiết phải đồng dạng với nhau, chúng không nhất thiết phải là nam hay nữ.
                     Và khi chúng ta đề cập đến khía cạnh văn hóa, “giới tính” chỉ là một thứ được xây dựng của xã hội.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
                     Tùy thuộc vào thời gian và địa điểm, trở thành “phụ nữ” hay “đàn ông” có thể có nghĩa là có những quyền, nghĩa vụ, chuẩn mực hoàn toàn khác nhau… Ở châu Âu, đàn ông thường đi giày cao gót và tất chân, còn người dân bản địa ở Bắc Mỹ đã công nhận giới tính thứ ba từ lâu.
                 - >
                     Phi nhị giới là một thuật ngữ chung mô tả danh tính của những người không phù hợp với sự phân biệt nam/nữ đơn thuần.
@@ -245,25 +244,25 @@ faq:
             answer:
                 - >
                     Đúng. Đúng vậy đấy. Và mỗi từ trong mọi ngôn ngữ cũng vậy.
-                    Chỉ là một số từ cũ hơn những từ khác mà thôi.
+                    Chỉ là một số từ cổ hơn những từ khác mà thôi.
         how-to-know:
             question: 'Làm thế nào để tôi xưng hô với một ai đó?'
             answer:
                 - >
-                    Bạn chỉ cần hỏi thôi! Đúng, nó có thể hơi khó xử, nhưng chúng ta càng làm nhiều thì càng bớt khó xử thôi.
+                    Bạn chỉ cần hỏi thôi! Đúng, điều đó có thể hơi khó xử, nhưng chúng ta càng làm nhiều thì càng bớt khó xử thôi.
                     Nếu chúng ta có thể hỏi ai đó tên của họ, tại sao không hỏi luôn danh xưng của họ?
                 - >
                     (Có điều, làm ơn đừng diễn đạt câu hỏi như “bạn là con trai hay con gái?”.
                     Câu hỏi này ngụ ý rằng chỉ có hai câu trả lời đúng,
-                    và nó cho thấy sự tò mò không lành mạnh về bộ phận sinh dục của người khác.
+                    và nó cho thấy một sự tò mò không hề lành mạnh về bộ phận sinh dục của người khác.
                     Thay vào đó, bạn chỉ cần hỏi “mình nên xưng hô với bạn như thế nào?” hoặc “danh xưng của bạn là gì?”)
                 - >
-                    Điều quan trọng nữa là hãy bình thường hóa việc nói cho mọi người biết danh xưng của bạn khi bạn giới thiệu bản thân.
+                    Điều quan trọng hơn là hãy bình thường hóa việc nói cho mọi người biết danh xưng của bạn khi bạn giới thiệu bản thân.
                     “Xin chào, tôi là Việt Anh, hãy gọi tôi là {/anh=anh ấy}, {/bạn=bạn ấy} hoặc {/họ=họ}”. Việc này không khó đâu – nhưng đối với những người chuyển giới và phi nhị giới, điều đó có ý nghĩa rất lớn đó!
                     Việc này thậm chí còn dễ dàng hơn khi làm online: chỉ cần ghi danh xưng của bạn (hoặc đường link đến các ví dụ từ trang web của chúng tôi) vào phần mô tả của bạn thôi.
                 - >
                     Bạn cũng nên nhớ rằng nhiều người có thể sử dụng một tên khác và một bộ danh xưng khác tùy thuộc vào tình huống.
-                    Họ có thể chưa tiết lộ bản dạng giới (come out) với bạn bè hoặc đồng nghiệp, nhưng đã come out với những người bạn thoải mái với họ.
+                    Họ có thể chưa công khai giới tính (come out) với bạn bè hoặc đồng nghiệp, nhưng đã công khai với những người mà họ thấy thoải mái.
                     Hãy để ý chút nhé. Ví dụ, bạn có thể hỏi họ “tôi nên sử dụng danh xưng nào trước mặt sếp của bạn vậy?”, v.v.
                 - >
                     Một số người dùng nhiều danh xưng, eg. “{/anh&cô=anh ấy/cô ấy}” or “{/họ&anh=họ/anh ấy}”.
@@ -275,7 +274,7 @@ faq:
                     Có chứ! Hàng triệu người phi nhị giới trên thế giới dùng danh xưng khác.
                     Mỗi danh xưng được liệt kê ở đây đều có người thực sự sử dụng nó trong cuộc sống hàng ngày.
         authority:
-            question: 'Những danh xưng phi giới tính đó có được chấp thuận bởi các thẩm quyền về ngôn ngữ không?'
+            question: 'Những danh xưng phi giới tính đó có được chấp thuận bởi các thẩm quyền ngôn ngữ học không?'
             answer:
                 - >
                     Ngôn ngữ không phải là một loại phép thuật cổ xưa được Phật hay Chúa ban cho.
@@ -300,11 +299,11 @@ faq:
                     hoặc nếu bạn có hình ảnh của bạn làm hình đại diện.
                     Nhiều người thì không – vì vậy rất khó đoán họ muốn được gọi như thế nào.
                 - >
-                    Nhưng thực ra là hơn thế: danh xưng của bạn có thể “rõ ràng”,
+                    Nhưng thực tế thì không như thế: danh xưng của bạn có thể “rõ ràng”,
                     nhưng có những người không có danh xưng rõ.
                     Họ muốn được xưng hô một cách chính xác, cho dù họ có “đúng” giới tính của mình hay không,
                     họ đã chuyển giới hay chưa (hoặc họ có muốn chuyển giới không).
-                    Những người phi nhị giới thường “không có vẻ ngoài lai giới”, và họ không mắc nợ ái nam ái nữ với bất kỳ ai.
+                    Những người phi nhị giới thường “không có vẻ ngoài lai giới”, và họ không mắc nợ sự ái nam ái nữ với bất kì ai.
                 - >
                     Việc chia sẻ danh xưng của bạn là rất quan trọng đối với những người chuyển giới, phi nhị giới và không theo chuẩn giới tính.
                     Hơn thế, nó cũng vạch trần và cô lập chúng tôi nữa.
@@ -382,7 +381,7 @@ faq:
                     Chúng tôi không có kế hoạch mở rộng hoặc thu hẹp danh sách đó.
                 - >
                     Chúng tôi biết rằng một số cờ có thể không được một vài người thích
-                    (ví dụ: do đã từng có các TERF (người ủng hộ nữ quyền nhưng lại kì thị người chuyển giới) cố gắng chiếm lấy một thuật ngữ và khiến nó mang nghĩa kỳ thị,
+                    (ví dụ: do đã từng có các TERF (người ủng hộ nữ quyền nhưng kì thị người chuyển giới) cố gắng chiếm lấy một thuật ngữ và khiến nó mang nghĩa kì thị,
                     vì nhiều định nghĩa khó hiểu,
                     hoặc thậm chí vì các khía cạnh của cuộc sống của một nhân vật thần thoại).
                     Bản thân chúng tôi là những người đồng tính và chuyển giới, chúng tôi rất quan tâm đến anh chị em chuyển giới của mình chứ.
@@ -400,7 +399,7 @@ faq:
             question: 'Danh xưng của tôi không được liệt kê'
             answer:
                 - >
-                    Trên trang chủ có trình tạo danh xưng, bạn có thể sử dụng nó để tạo liên kết đến bất kỳ anh nào bạn thích.
+                    Trên trang chủ có trình tạo danh xưng, bạn có thể sử dụng nó để tạo liên kết đến bất kì danh xưng nào bạn thích.
 
 links:
     header: 'Liên kết'
@@ -451,12 +450,12 @@ contact:
     language: >
         Chúng tôi là một tập thể hoạt động quốc tế, vậy nên những người đã tạo một phiên bản ngôn ngữ cụ thể có thể không phải là những người sẽ đọc tin nhắn của bạn.
         Vì vậy, nếu có thể, hãy liên hệ với chúng tôi bằng <strong>tiếng Anh</strong>.
-        Nếu bạn chỉ có thể giao tiếp bằng tiếng Việt, hãy chuyển lời qua {/@jerryv=biên dịch tiếng Việt} của chúng tôi để chúng tôi có thể hỗ trợ bạn một cách nhanh nhất.
+        Nếu bạn chỉ có thể giao tiếp bằng tiếng Việt, hãy chuyển lời qua {/@jerryv=admin tiếng Việt} của chúng tôi để chúng tôi có thể hỗ trợ bạn một cách nhanh nhất.
     team:
-        name: 'Tập thể “Hội đồng ngôn ngữ trung lập”'
+        name: 'Tập thể “Hội đồng Ngôn ngữ Trung tính”'
         nameShort: 'Tập thể'
         description: >
-            Chúng tôi là một tập thể đồng tính chuyên tập hợp, nghiên cứu, định hình và thúc đẩy ngôn ngữ trung lập về giới tính.
+            Chúng tôi là một tập thể người đồng tính chuyên tập hợp, nghiên cứu, định hình và thúc đẩy ngôn ngữ trung lập về giới tính.
             Chúng tôi cũng ủng hộ những hành động hướng tới bình đẳng và công bằng xã hội.
         extra: []
         logo: 'Biểu tượng của tập thể là sự kết hợp giữa biểu tượng người chuyển giới (transgender) và bong bóng lời nói tượng trưng cho ngôn ngữ.'
@@ -526,7 +525,7 @@ support:
     description: >
         Nếu bạn muốn đóng góp cho máy chủ, tên miền, nhãn dán, v.v. hoặc chỉ đơn giản là mua cà phê cho tác giả làm việc,
         bạn có thể sử dụng các liên kết dưới đây:
-    bankAccount: 'Thẻ ghi nợ/tín dụng quốc tế'
+    bankAccount: 'Chuyển khoản ngân hàng (ở châu Âu)'
 
 user:
     header: 'Tài khoản'
@@ -537,7 +536,7 @@ user:
         help: 'Để đăng nhập hoặc tạo tài khoản, bạn có thể sử dụng các nút mạng xã hội hoặc nhập email của mình vào trường bên dưới, sau đó xác nhận mã bạn sẽ nhận được trong email.'
         placeholder: 'Email (hoặc tên người dùng, nếu bạn đã có tài khoản)'
         action: 'Đăng nhập / đăng kí'
-        emailSent: 'Chúng tôi đã gửi cho bạn một <strong>%email%</strong> email có mã OTP gồm 6 chữ số. Hãy nhập mã vào đây. Mã này chỉ sử dụng một lần và có hiệu lực trong 15 phút.'
+        emailSent: 'Chúng tôi đã gửi cho bạn một email <strong>%email%</strong> có mã OTP gồm 6 chữ số. Hãy nhập mã vào đây. Mã này chỉ sử dụng một lần và có hiệu lực trong 15 phút.'
         userNotFound: 'Không tìm thấy tài khoản.'
         email:
             subject: 'Mã đăng nhập của bạn là {{code}}'
@@ -545,7 +544,7 @@ user:
             extra: 'Nếu bạn không đăng nhập vào trang web này, bạn có thể bỏ qua thông báo.'
         why: >
             Việc đăng ký cho phép bạn quản lý thẻ của mình, ({/@example=ví dụ như thẻ này}).
-        passwordless: 'Trang web này không lưu trữ bất kỳ mật khẩu nào. {https://avris.it/blog/passwords-are-passé=Tìm hiểu thêm tại đây - bài viết bằng tiếng Anh.}'
+        passwordless: 'Trang web này không lưu trữ bất kì mật khẩu nào. {https://avris.it/blog/passwords-are-passé=Tìm hiểu thêm tại đây - bài viết bằng tiếng Anh.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Tên miền'
         deprecated: 'Đã xóa bỏ'
@@ -652,9 +651,9 @@ profile:
     flagsAsterisk: 'Đây không phải là bản dạng giới, nhưng chúng tôi bao gồm bản dạng này cho những người đồng tính theo những cách khác (ví dụ: người chuyển giới thẳng).'
     flagsCustomForm:
         label: 'Tên nhãn'
-        description: '(không bắt buộc) Mô tả ngắn về nhãn'
-        link: '(không bắt buộc) Liên kết thêm thông tin'
-        alt: '(không bắt buộc) Văn bản thay thế mô tả sự xuất hiện của lá cờ này (xem bên dưới)'
+        description: '(Không bắt buộc) Mô tả ngắn về nhãn'
+        link: '(Không bắt buộc) Liên kết thêm thông tin'
+        alt: '(Không bắt buộc) Văn bản thay thế mô tả sự xuất hiện của lá cờ này (xem bên dưới)'
         altExample: 'Một ví dụ về cách văn bản thay thế có thể được diễn đạt'
     links: 'Liên kết'
     linksRecommended: 'Chúng tôi đề xuất liên kết đến'
@@ -715,13 +714,13 @@ profile:
         link: 'Ảnh của thẻ'
         generate: 'Tạo ảnh'
         generating: 'Quá trình tạo đang diễn ra... Có thể mất vài phút.'
-    empty: 'Người dùng này chưa tạo bất kỳ thẻ nào.'
+    empty: 'Người dùng này chưa tạo bất kì thẻ nào.'
     personal:
         header: 'Cá nhân'
         description: 'Chỉ bạn mới có thể xem phần này'
     language:
         header: 'Ngôn ngữ'
-        description: 'Thẻ của @%username%'' cũng có ở các ngôn ngữ sau'
+        description: 'Thẻ của @%username% cũng có ở các ngôn ngữ sau'
     circles:
         header: 'Vòng bạn bè của tôi'
         info: >
@@ -744,10 +743,10 @@ profile:
     sensitive:
         header: 'Cảnh báo nội dung'
         info: >
-            Một số nội dung có thể được cho phép theo như {/terms=Điều khoản dịch vụ} của chúng tôi,
+            Một số nội dung có thể được cho phép theo như {/điều-khoản=Điều khoản Dịch vụ} của chúng tôi,
             nhưng vẫn không phù hợp với trẻ vị thành niên, hoặc có khả năng gợi tổn thương, v.v.
             Hãy tôn trọng những người đến xem thẻ của bạn và cảnh báo họ trước.
-            Ví dụ về CW có thể là “có đề cập đến rượu”, “gợi dục”, “đề cập đến sự kỳ thị người đồng tính”,…
+            Ví dụ về CW có thể là “có đề cập đến rượu”, “gợi dục”, “đề cập đến sự kì thị người đồng tính”,…
         display: 'Tiếp tục đến thẻ'
         hide: 'Làm mờ thẻ'
         email:
@@ -812,7 +811,7 @@ authRequired:
 confirm:
     header: 'Bạn có chắc không?'
     yes: 'Có, tôi chắc chắn'
-    no: 'Không, hủy đi'
+    no: 'Hủy'
     ok: 'Ok'
     save: 'Lưu'
     dismiss: 'Bỏ qua'
@@ -822,87 +821,87 @@ terms:
     lastUpdate: 'Cập nhật lần cuối vào'
     consent: 'Bằng cách đăng ký, bạn chấp nhận {/điều-khoản=Điều khoản Dịch vụ} của chúng tôi.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
-    #translationDisclaimer: >
-    #    Văn bản sau đây chỉ là một bản dịch phụ trợ.
-    #    Phiên bản có tính ràng buộc pháp lý duy nhất của Điều khoản Dịch vụ là phiên bản tiếng Anh ở
-    #    {https://en.pronouns.page/terms=here}.
+    translationDisclaimer: >
+        Văn bản sau đây chỉ là một bản dịch phụ trợ.
+        Phiên bản có tính ràng buộc pháp lý duy nhất của Điều khoản Dịch vụ là phiên bản tiếng Anh ở
+        {https://en.pronouns.page/terms=đây}.
     content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page</strong> and related subdomains and domains,
-            operated by the “Neutral Language Council” collective
-            and Nero Network (NL, KVK 88409120)
-            who can be contacted via email:
+            Các Điều khoản Dịch vụ này chi phối việc bạn truy cập và sử dụng Dịch vụ được cung cấp trên trang web
+            <strong>pronouns.page</strong> và các tên miền phụ và tên miền liên quan,
+            vận hành bởi tập thể “Hội đồng Ngôn ngữ Trung tính”
+            và Nero Network (Hà Lan, số Đăng ký Thương mại KVK 88409120)
+            và có thể liên hệ qua email:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
+            Bằng cách sử dụng Dịch vụ, bạn đồng ý với các Điều khoản Dịch vụ này và bạn đồng ý
+            để chúng tôi thu thập và xử lý dữ liệu của bạn như được mô tả trong {/chính-sách-bảo-mật=Chính sách Bảo mật của chúng tôi}.
         accounts:
-            header: 'Users and accounts'
+            header: 'Người dùng và tài khoản'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                Bạn không thể tạo tài khoản nếu bạn bị cấm làm việc này theo luật của quốc gia/vùng lãnh thổ của bạn.
+                Bạn không thể tạo tài khoản nếu bạn dưới 13 tuổi.
+                Nếu bạn dưới 16 tuổi, bạn cần có sự đồng ý của cha mẹ hoặc người giám hộ để tạo tài khoản.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                Khi bạn tạo tài khoản với chúng tôi, bạn chịu trách nhiệm bảo vệ phương thức xác thực
+                mà bạn sử dụng để truy cập Dịch vụ (nghĩa là: mật khẩu cho tài khoản email và/hoặc nền tảng mạng xã hội của bạn).
+                Bạn đồng ý không tiết lộ nó cho bất kì bên thứ ba nào.
+                Bạn phải thông báo cho chúng tôi ngay lập tức khi bạn nhận thấy bất kì hành vi vi phạm bảo mật nào, đặc biệt là khi tài khoản của bạn bị trái phép sử dụng.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                Chúng tôi có thể chấm dứt hoặc đình chỉ tài khoản của bạn ngay lập tức mà không cần thông báo trước hoặc chịu trách nhiệm pháp lý,
+                vì bất kì lý do gì, bao gồm nhưng không giới hạn việc bạn vi phạm Điều khoản Dịch vụ.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                Tài khoản không có bất kì thẻ nào và không hoạt động trong 30 ngày trước đó sẽ bị xóa và tên người dùng của họ sẽ khả dụng để đăng kí.
         content:
-            header: 'Content'
+            header: 'Nội dung'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                Nội dung bạn đăng trên Dịch vụ là của bạn.
+                Bằng cách đăng nó, bạn cấp cho chúng tôi giấy phép quốc tế phi bản quyền
+                để sử dụng, sao chép, tái tạo, xử lý, điều chỉnh, sửa đổi, xuất bản, truyền tải, hiển thị và phân phối Nội dung đó theo bất kì cách nào.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                Chúng tôi không xác nhận hoặc đảm bảo tính trung thực hoặc an toàn của Nội dung được đăng bởi những người dùng Dịch vụ,
+                và đặc biệt là bất kì liên kết nào đến bất kì trang web bên ngoài nào.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                Nghiêm cấm đăng trên Dịch vụ bất kì Nội dung nào có thể vi phạm pháp luật hoặc vi phạm các chuẩn mực xã hội,
+                bao gồm nhưng không giới hạn bởi những nội dung:
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
-                queerphobia: 'queerphobia'
-                exclusionism: 'queer exclusionism'
-                sexism: 'sexism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
-                selfHarm: 'encouraging self-harm and/or suicide'
-                childPornography: 'child pornography'
-                pedophilia: 'broadly understood pedophilia advocacy'
-                unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
-                doxxing: 'sharing of someone else''s personal data'
+                totalitarian: 'truyền bá những chế độ toàn trị'
+                hateSpeech: 'phát ngôn thù hận'
+                racism: 'phân biệt chủng tộc'
+                xenophobia: 'phát ngôn bài ngoại'
+                homophobia: 'kì thị sự đồng tính'
+                transphobia: 'kì thị người chuyển giới'
+                enbyphobia: 'kì thị người phi nhị giới'
+                queerphobia: 'kì thị người đồng tính'
+                exclusionism: 'bài trừ người đồng tính'
+                sexism: 'phân biệt giới tính'
+                misogyny: 'kì thị phụ nữ'
+                harassment: 'quấy rối'
+                impersonation: 'mạo danh người khác'
+                selfHarm: 'khuyến khích tự làm hại bản thân và/hoặc tự tử'
+                childPornography: 'ấu dâm'
+                pedophilia: 'ủng hộ ấu dâm dưới mọi hình thức'
+                unlawfulConduct: 'những hành vi trái pháp luật'
+                misinformation: 'truyền bá tin giả, tin sai lệch'
+                doxxing: 'chia sẻ thông tin cá nhân của người khác'
                 spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
-                copyright: 'copyright or trademark violations'
-                miscellaneous: 'miscellaneous'
+                trolling: 'troll'
+                advertisement: 'quảng cáo'
+                copyright: 'vi phạm bản quyền hoặc thương hiệu'
+                miscellaneous: 'khác'
             violationsStrict: >
-                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
+                Chúng tôi bảo lưu quyền interpret as hate-speech all instances of non-obvious, concealed hate speech
                 (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
             responsibility: >
-                You are responsible for any Content posted on the Service.
-                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-                If you break the law, we will pass your information to law enforcement agencies.
+                Bạn chịu trách nhiệm về bất kì Nội dung nào được đăng trên Dịch vụ này.
+                Nếu bạn vi phạm các Điều khoản Dịch vụ này, chúng tôi sẽ xóa Nội dung của bạn mà không cần thông báo trước và chúng tôi có thể thu hồi giấy phép và quyền sử dụng Dịch vụ của bạn.
+                Nếu bạn vi phạm pháp luật, chúng tôi sẽ chuyển thông tin của bạn cho các cơ quan thực thi pháp luật.
         closing:
-            header: 'General'
+            header: 'Điều khoản chung'
             jurisdiction: >
-                The applicable law is the law of the Kingdom of Netherlands.
+                Luật pháp được áp dụng là luật của Vương quốc Hà Lan.
             changes: >
-                We reserve the right to modify these Terms of Service at any time.
-                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+                Chúng tôi có quyền sửa đổi các Điều khoản dịch vụ này bất cứ lúc nào.
+                Nếu có thay đổi quan trọng, chúng tôi sẽ thông báo ít nhất 30 ngày trước khi bất kì Điều khoản dịch vụ mới nào có hiệu lực.
     update:
         header: 'Chúng tôi đã cập nhật Điều khoản Dịch vụ.'
         intro: >
@@ -1106,7 +1105,7 @@ flags:
     Fa*afafine: 'Fa''afafine'   # no VN equivalent
     Femme: 'Les nữ tính'
     Gay: 'Đồng tính nam'
-    Gender_Questioning: 'Tìm hiểu giới tính'
+    Gender_Questioning: 'Chưa xác định giới tính'
     Genderfae: 'Linh hoạt giới phi nam'
     Genderfaun: 'Linh hoạt giới phi nữ'
     Genderfluid: 'Linh hoạt giới'
@@ -1362,7 +1361,7 @@ calendar:
         stonewall_day: 'Ngày bạo loạn Stonewall'
         domestic_violence: 'Ngày Nhận thức về Bạo lực gia đình LGBTQ'
         polysexual_day: 'Ngày Nhận thức về người Đa tính và Đa ái'
-        orlando_day: 'Pulse Night of Remembrance'   #no VN equivalent
+        orlando_day: 'Ngày Tưởng nhớ Vụ thảm sát hộp đêm Orlando'
         aids_memorial: 'Lễ Thắp nến Tưởng niệm HIV/AIDS Quốc tế'
         health_week: 'Tuần lễ Nhận thức về Sức khỏe LGBT'
         lesbian_visibility_week: 'Tuần lễ Nhận thức về người Đồng tính nữ'
@@ -1384,7 +1383,7 @@ calendar:
         aids_awareness_month: 'Tháng Nhận thức về HIV/AIDS'
         genderfluid_week: 'Tuần lễ Nhận thức về Người Linh hoạt giới'
         pan_week: 'Tuần Toàn tính'
-        parents_day: 'Gender Expansive Parents'' Day'   # no VN equivalent
+        parents_day: 'Ngày Phụ huynh Phi nhị giới'
         hiv_testing_day: 'Ngày Xét nghiệm HIV Quốc tế'
         freedressing_day: 'Ngày Nhận thức về Tự do trang phục'
         sexual_health_day: 'Ngày Nhận thức về Sức khỏe Sinh sản và Tình dục'
@@ -1392,7 +1391,7 @@ calendar:
         aids_vaccine_day: 'Ngày Vaccine HIV/AIDS Quốc tế'
         queer_youth_day: 'Ngày Thanh niên Đa dạng giới'
         omnisexual_day: 'Ngày Hiện diện Người Toàn tính'
-        unlabeled_day: 'Unlabeled Visibility Day'   # no VN equivalent
+        unlabeled_day: 'Ngày Hiện diện Người Vô nhãn'
         trans_youth_day: 'Ngày Nhận thức về Thiếu nhi - Thanh niên chuyển giới'
         hiv_long_term_survivors_day: 'Ngày Nhận thức về Những người sống lâu dài với HIV'
         women_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Phụ nữ và Trẻ em nữ'
@@ -1401,10 +1400,10 @@ calendar:
         black_hiv_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người da đen'
         hiv_aging_awareness_day: 'Ngày Nhận thức về HIV/AIDS của Người cao tuổi'
         trans_hiv_testing_day: 'Ngày Xét nghiệm HIV Người chuyển giới'
-        mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'   # no VN equivalent
-        mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'   # no VN equivalent
-        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'   # no VN equivalent
-        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'   # no VN equivalent
+        mspec_lesbian_day: 'Ngày Nhận thức và Hiện diện của Người Đồng tính nữ Đa phổ'
+        mspec_lesbian_week: 'Tuần lễ Nhận thức và Hiện diện của Người Đồng tính nữ Đa phổ'
+        mspec_gay_day: 'Ngày Nhận thức và Hiện diện của Người Đồng tính nam Đa phổ'
+        mspec_gay_week: 'Tuần lễ Nhận thức và Hiện diện của Người Đồng tính nam Đa phổ'
         spring_testing_week: 'Tuần lễ Xét nghiệm HIV mùa xuân ở châu Âu'
         autumn_testing_week: 'Tuần lễ Xét nghiệm HIV mùa thu ở châu Âu'
         sex_worker_day: 'Ngày Lao động tình dục Quốc tế'
