@@ -618,7 +618,7 @@ profile:
         Nếu danh xưng của bạn là {/pronouns#nameself=<strong>tên</strong>},
         bạn cũng có thể sử dụng dấu hai chấm (ví dụ “:Vanh”).
     pronounsNotFound: 'Định dạng không được chấp nhận. Vui lòng xem hướng dẫn ở trên.'
-    words: 'Số từ'
+    words: 'Đại từ'
     wordsColumnHeader: 'Tiêu đề cột'
     birthday: 'Tuổi'
     birthdayInfo: 'Chúng tôi không công khai ngày sinh của bạn, mà chỉ tính tuổi từ ngày sinh đó.'
