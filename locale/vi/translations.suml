@@ -150,8 +150,8 @@ nouns:
             (nhưng chúng được một số người phi nhị giới sử dụng để thể hiện bản thân bên ngoài giới tính nam nữ),
             và không phải mọi từ ở đây đều có thể được sử dụng cho bất kì người phi nhị giới nào – nên hãy hỏi họ cách họ muốn được gọi.
 
-    approved: 'các mục đã được phê duyệt'
-    pending: 'đang chờ kiểm duyệt'
+    approved: 'mục đã được phê duyệt'
+    pending: 'mục đang chờ kiểm duyệt'
     edit: 'Đề xuất thay đổi'
     edited: 'Đã đề xuất thay đổi'
     editing: 'Bạn đang chỉnh sửa một mục hiện có'
@@ -190,7 +190,7 @@ terminology:
     info:
         - >
             Nhiều thuật ngữ và cụm từ liên quan đến cộng đồng LGBTQ+
-            được mượn từ tiếng Anh vào tiếng Việt.
+            được mượn từ tiếng Anh và tiếng Hán vào tiếng Việt.
             Đây là một bảng chú giải những thuật ngữ đó, mô tả ý nghĩa của chúng,
             và đề xuất bản dịch tiếng Việt cho chúng.
         - >
@@ -199,7 +199,7 @@ terminology:
             nhưng không nên được coi là bất kì loại thẩm quyền nào về vấn đề này.
             Người duy nhất được thẩm quyền về danh tính của họ và những từ nào mô tả họ đúng nhất là… chính người đó.
     term: 'Thuật ngữ'
-    original: 'Ngữ nguyên học'
+    original: 'Nguồn gốc từ'
     category: 'Thể loại'
     images: 'Hình ảnh bổ sung từ bên ngoài danh mục cờ'
     definition: 'Khái niệm'
@@ -618,7 +618,7 @@ profile:
         Nếu danh xưng của bạn là {/pronouns#nameself=<strong>tên</strong>},
         bạn cũng có thể sử dụng dấu hai chấm (ví dụ “:Vanh”).
     pronounsNotFound: 'Định dạng không được chấp nhận. Vui lòng xem hướng dẫn ở trên.'
-    words: 'Số từ'
+    words: 'Đại từ'
     wordsColumnHeader: 'Tiêu đề cột'
     birthday: 'Tuổi'
     birthdayInfo: 'Chúng tôi không công khai ngày sinh của bạn, mà chỉ tính tuổi từ ngày sinh đó.'
@@ -627,7 +627,7 @@ profile:
         placeholder: 'Chọn múi giờ của bạn'
         info: >
             Nếu bạn điền vào trường này, thẻ của bạn sẽ cho mọi người biết <strong>thời gian ở nơi bạn sống</strong>.
-            Bạn cũng có thể chọn công khai vị trí gần đúng của mình. (Với những bạn ở Việt Nam, vị trí sẽ hiện là Bangkok (Thái Lan).)
+            Bạn cũng có thể chọn công khai vị trí gần đúng của mình. (Với những bạn ở Việt Nam, vị trí có thể sẽ hiện là Bangkok (Thái Lan).)
         detect: 'Phát hiện'
         publishArea: 'Công khai châu lục trong thẻ của bạn'
         publishLocation: 'Công khai vị trí trong thẻ của bạn'
