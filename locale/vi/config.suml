@@ -88,7 +88,7 @@ sources:
     mergePronouns: {}
 
 nouns:
-    enabled: true
+    enabled: false
     route: 'từ-điển'
     collapsable: false
     plurals: true
