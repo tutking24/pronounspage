@@ -942,6 +942,7 @@ crud:
         genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
         listMaxLength: 'The maximum number of elements in this list is %maxlength% (more info {/blog/length-validation=in this blog post}).'
         invalidLink: 'Invalid URL format'
+    alt: 'Alt text'
 
 footer:
     license: >
