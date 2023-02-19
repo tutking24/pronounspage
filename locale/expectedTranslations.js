@@ -114,6 +114,6 @@ module.exports = [
     'profile.flagsCustomForm.alt',
     'profile.flagsCustomForm.altExample',
     'crud.alt',
-    'profile.circle.removeSelf.action',
-    'profile.circle.removeSelf.confirm',
+    'profile.circles.removeSelf.action',
+    'profile.circles.removeSelf.confirm',
 ];
