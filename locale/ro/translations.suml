@@ -12,26 +12,24 @@ home:
     why: 'Care-i treaba cu pronumele?'
     about:
         - >
-            Cu toții avem pronume. Sunt acele cuvinte pe care le folosim când vorbim despre cineva fără a îi menționa numele de fiecare dată.
-            Cei mai mulți oameni folosesc {/el=„el/pe el”} și {/ea=„ea/pe ea”}, deci presupunem automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care se vorbește.
-            Însă, nu e așa de simplu…
+            Cu toții avem pronume. Sunt acele cuvinte pe care le folosim când vorbim despre cineva fără a îi menționa
+            numele de fiecare dată. Cei mai mulți oameni folosesc {/el=„el/pe el”} și {/ea=„ea/pe ea”}, deci presupunem
+            automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care se vorbește. Însă,
+            nu e așa de simplu…
         - >
-            Genul e complicat. Nu toți „arată” ca genul cu care se identifică.
-            Unele persoane preferă să li se spună în alte feluri decât ai presupune.
-            Alții pur și simplu nu intră în categoria de „masculin” sau „feminin” și preferă un limbaj mai neutru.
+            Genul e complicat. Nu toți „arată” ca genul cu care se identifică. Unele persoane preferă să li se spună în
+            alte feluri decât ai presupune. Alții pur și simplu nu intră în categoria de „masculin” sau „feminin” și
+            preferă un limbaj mai neutru.
         - >
-            Acest website te ajută să distribui un link către pronumele tale cu exemple contextuale,
-            pentru a le putea prezenta oamenilor cum dorești să te adreseze.
+            Acest website te ajută să distribui un link către pronumele tale cu exemple contextuale, pentru a le putea
+            prezenta oamenilor cum dorești să ți se adreseze.
         - >
-            „De ce contează?” Din simplă decență umană.
-            Nu i-ai zice Anei „Ștefania” doar pentru că ție îți place mai mult acel nume
-            sau pentru că „are față de Ștefania”.
-            Sau chiar dacă <em>ar avea</em> numele „Ștefania” pe certificatul ei de naștere,
-            dar ea îl urăște nespus și îi place mai mult „Ana”.
-            E aceeași poveste și cu pronumele –
-            dacă nu dorești să fii nepoliticos, adresează-te cum se cuvine.
-            Singura diferență e că de obicei le cunoaștem numele, dar nu și pronumele.
-            Ne introducem altora folosindu-ne doar numele, nu și pronumele. A venit vremea să schimbăm acest lucru!
+            „De ce contează?” Din simplă decență umană. Nu i-ai zice Anei „Ștefania” doar pentru că ție îți place mai
+            mult acel nume sau pentru că „are față de Ștefania”. Sau chiar dacă <em>ar avea</em> numele „Ștefania” pe
+            certificatul ei de naștere, dar ea îl urăște nespus și îi place mai mult „Ana”. E aceeași poveste și cu
+            pronumele – dacă nu dorești să fii nepoliticos, adresează-te cum se cuvine. Singura diferență e că de obicei
+            le cunoaștem numele, dar nu și pronumele. Ne introducem altora folosindu-ne doar numele, nu și pronumele. A
+            venit vremea să schimbăm acest lucru!
     pronouns: 'Lista pronumelor populare'
     generator:
         header: 'Generator'
@@ -48,9 +46,8 @@ home:
         header: 'Misiunea noastră'
         summary: 'Noi luptăm pentru libertate, respect și incluziune în limbaj.'
         freedom: >
-            <strong>Libertate</strong>
-            – pentru ca oricine să poată folosi <em>pentru ei înșiși</em>
-            orice pronume simt că îi descriu cel mai bine.
+            <strong>Libertate</strong> – pentru ca oricine să-și poată folosi <em>pentru ei înșiși</em> orice pronume
+            simt că îi descriu cel mai bine.
         respect: >
             <strong>Respect</strong>
             – pentru ca pronumele <em>altora</em> să fie respectate.
@@ -478,10 +475,11 @@ english: # TODO
             That doesn't make them any less non-binary! As we all know, pronouns ≠ gender.
 
 contact:
-    header: 'Contactează-ne'
+    header: 'Contact'
     authors: 'Autorii site-ului'
     faq: >
-        Înainte de a ne scrie, vezi {/intrebari=întrebările adresate frecvent} - poate răspunsul întrebării tale e deja acolo.
+        Înainte de a ne scrie, citește {/intrebari=întrebările adresate frecvent} - răspunsul întrebării tale poate e
+        deja acolo.
     technical: >
         Ai vreo problemă tehnică sau vreo întrebare? Te rog includeți numele tău de utilizator și cât mai multe detalii posibile.
         (ce zice eroarea? ești pe telefon sau pe calculator? ce browser folosești?
@@ -494,13 +492,14 @@ contact:
         Suntem o echipă internațională – persoanele ce au creat o versiune lingvistică specifică
         pot să nu fie aceleași persoane care îți vor citi mesajul.
         Deci, dacă e posibil, apreciem dacă ne-ai contacta în <strong>Engleză sau în Poloneză</strong>.
+    groups:
+        calendar: 'Robotul „Queer Calendar”'
     team:
         name: 'Colectivul „Consiliul Limbajului Neutru”' # „The “Neutral Language Council” collective”
         nameShort: 'Colectiv'
         description: >
-            Noi suntem un colectiv queer dedicat să asambleze, să cerceteze, să formeze și să promoveze
-            limbajul neutru și non-binar.
-            Noi suportăm și acțiuni către egalitate și justiția socială.
+            Noi suntem un colectiv queer dedicat să asambleze, să cerceteze, să formeze și să promoveze limbajul neutru
+            și non-binar. Noi suportăm și acțiunile îndreptate către egalitate și justiție socială.
         extra: []
         logo: 'Sigla colectivului este o combinație între simbolul transgender și o bulă de dialog ce simbolizează limbajul.'
         members: 'Membrii actuali'
@@ -682,6 +681,12 @@ profile:
     flagsInfo: 'Trage din steagurile de mai jos și introdu-le aici.'
     flagsCustom: 'Încarcă steaguri personalizate'
     flagsCustomWarning: 'Acest steag a fost încărcat de către un utilizator. Echipa pronouns.page nu este responsabilă pentru el.'
+    flagsCustomForm:
+        label: 'Nume etichetă'
+        description: '(opțional) O descriere scurtă a etichetei'
+        link: '(opțional) Link pentru mai multe informații'
+        alt: '(opțional) Text alternativ ce descrie aspectul steagului (vezi mai jos)'
+        altExample: 'Un exemplu cum ar putea fi structurat un text alternativ'
     flagsAsterisk: 'Aceasta nu este o identitate queer, dar o includem pentru persoanele ce sunt queer în alte feluri (ex: persoanele trans straight).'
     links: 'Linkuri'
     linksRecommended: 'Recomandăm să adaugi linkuri la'
@@ -828,11 +833,13 @@ crud:
     validation:
         genericForm: 'Formularul trimis este invalid. Repară greșelile și trimite-l din nou.'
         listMaxLength: 'Numărul maxim de elemente din lista aceasta este de: %maxlength%.'
+        invalidLink: 'Format URL invalid'
+    alt: 'Text alternativ'
 
 footer:
     license: >
         {https://gitlab.com/PronounsPage/PronounsPage=Codul sursă} și conținutul sunt sub licența {/license=OQL}.
-    links: 'Date de contact, rețele de socializare, suportă cauza'
+    links: 'Date de contact, rețele de socializare'
     legal: 'Legal'
     financial: 'Transparență financiară'
     technical: 'Tehnic'
@@ -1035,7 +1042,7 @@ captcha:
 
 mode:
     light: 'Modul luminos'
-    automatic: 'Automatic'
+    automatic: 'Automat'
     dark: 'Modul întunecat'
     reducedColours: 'Culori reduse'
 
