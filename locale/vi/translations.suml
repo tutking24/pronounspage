@@ -627,7 +627,7 @@ profile:
         placeholder: 'Chọn múi giờ của bạn'
         info: >
             Nếu bạn điền vào trường này, thẻ của bạn sẽ cho mọi người biết <strong>thời gian ở nơi bạn sống</strong>.
-            Bạn cũng có thể chọn công khai vị trí gần đúng của mình. (Với những bạn ở Việt Nam, vị trí sẽ hiện là Bangkok (Thái Lan).)
+            Bạn cũng có thể chọn công khai vị trí gần đúng của mình. (Với những bạn ở Việt Nam, vị trí có thể sẽ hiện là Bangkok (Thái Lan).)
         detect: 'Phát hiện'
         publishArea: 'Công khai châu lục trong thẻ của bạn'
         publishLocation: 'Công khai vị trí trong thẻ của bạn'
