@@ -198,6 +198,7 @@ const fetchCircles = async(db, profileId, userId) => {
             LEFT JOIN users u ON u.id = c.to_userId
             LEFT JOIN profiles p ON p.userId = u.id
         WHERE from_profileId = ${profileId}
+            AND u.bannedReason IS NULL
         ORDER BY c.id
     `);
 
