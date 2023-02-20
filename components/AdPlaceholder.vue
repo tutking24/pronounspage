@@ -6,6 +6,7 @@
             <Debug :v="adConfig"/>
         </template>
         <ins v-else class="adsbygoogle"
+             style="display:block;padding-block-start: 1em;padding-block-end: 1em;"
              data-ad-client="ca-pub-8518361481036191"
              :data-ad-slot="adConfig.slotId"
              :data-ad-format="adConfig.adFormat"
@@ -52,7 +53,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .ad-placeholder {
     background-color: #b2caec;
     width: 100%;
@@ -60,17 +61,12 @@ export default {
     padding: 1em;
 }
 
-.adsbygoogle {
-    display:block;
-    &:not(:empty) {
-        padding-block-start: 1em;
-        padding-block-end: 1em;
-        text-decoration: none;
-        &:before {
-            content: attr(data-label);
-            display: block;
-            font-size: 0.7rem;
-        }
+.adsbygoogle:not(:empty) {
+    text-decoration: none;
+    &:before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.7rem;
     }
 }
 </style>
