@@ -12,8 +12,7 @@
              :data-ad-layout="adConfig.adLayout"
              :data-full-width-responsive="adConfig.responsive ? 'true' : ''"
              role="alert"
-             :data-label="$t('support.ad')"
-        >aaa</ins>
+             :data-label="$t('support.ad')"></ins>
     </div>
 </template>
 
