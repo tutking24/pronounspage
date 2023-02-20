@@ -9,27 +9,26 @@
                 {{display}}
             </button>
         </div>
-        <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm" class="d-inline-block" :end="end">
+        <Dropdown v-if="Object.keys(locales).length > 1" btnClass="btn-outline-secondary btn-sm" class="d-inline-block" :end="end" menuClass="locale-dropdown shadow">
             <template v-slot:toggle>
                 <Icon v="language"/>
                 {{locales[config.locale].name}}
             </template>
 
             <template v-slot:menu>
-                <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale">
+                <li v-for="(options, locale) in locales" :key="locale" v-if="locale !== config.locale" class="w-50">
                     <a :href="options.url" class="dropdown-item">
                         {{options.name}}
                     </a>
                 </li>
                 <li class="dropdown-divider"></li>
-                <li>
+                <li class="w-50">
                     <a href="https://pronouns.page" class="dropdown-item small">
                         <Logo class="mb-1"/>
                         pronouns.page
                     </a>
                 </li>
-                <li class="dropdown-divider"></li>
-                <li>
+                <li class="w-50">
                     <LocaleLink locale="en" link="/new-version" class="dropdown-item small">
                         <Icon v="plus"/>
                         <T>localise.shorter</T>

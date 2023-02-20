@@ -273,3 +273,20 @@ body:not(.reduced-colours) {
         }
     }
 }
+
+.locale-dropdown.show {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    .dropdown-divider {
+        width: 100%;
+    }
+    @include media-breakpoint-down('md', $grid-breakpoints) {
+        width: calc(100vw - 2rem);
+        right: auto;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
