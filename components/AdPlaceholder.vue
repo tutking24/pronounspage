@@ -63,10 +63,10 @@ export default {
 .adsbygoogle {
     display:block;
     &:not(:empty) {
-        padding-block-start: .5em;
-        padding-block-end: .5em;
+        padding-block-start: 1em;
+        padding-block-end: 1em;
         text-decoration: none;
-        &:after {
+        &:before {
             content: attr(data-label);
             display: block;
             font-size: 0.7rem;
