@@ -6,7 +6,7 @@
             <Debug :v="adConfig"/>
         </template>
         <ins v-else class="adsbygoogle"
-             style="display:block;padding-block-start: 1em;padding-block-end: 1em;"
+             style="display:block;margin-block: 1em;"
              data-ad-client="ca-pub-8518361481036191"
              :data-ad-slot="adConfig.slotId"
              :data-ad-format="adConfig.adFormat"
