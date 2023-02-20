@@ -11,7 +11,15 @@ export default ({ app, store }) => {
     Vue.prototype.$base = process.env.BASE_URL;
 
     Vue.prototype.$t = (key, params = {}, warn = false) => translator.translate(key, params, warn);
-    Vue.prototype.$te = (key) => translator.has(key);
+    Vue.prototype.$te = (key, fallback = false) => {
+        if (translator.has(key)) {
+            return true;
+        }
+        if (fallback && translator.hasFallback(key)) {
+            return true;
+        }
+        return false;
+    }
     Vue.prototype.$translateForPronoun = (str, pronoun) =>
         pronoun.format(
             translator.translate(`flags.${str.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || str

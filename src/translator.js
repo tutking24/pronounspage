@@ -37,6 +37,10 @@ class Translator {
         return this.get(key, false, false, false) !== undefined;
     }
 
+    hasFallback(key) {
+        return this.get(key, false, true, false) !== undefined;
+    }
+
     applyParams(value, params = {}) {
         if (!value) { return value; }
         for (let k in params) {
