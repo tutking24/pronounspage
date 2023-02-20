@@ -664,6 +664,7 @@ support:
         you can use the links below:
     bankAccount: 'Bank transfer'
     # bankAccountOwner: 'The account is the name of a project maintainer, Andrea Vos'
+    ad: 'Ad'
 
 user:
     header: 'Account'
