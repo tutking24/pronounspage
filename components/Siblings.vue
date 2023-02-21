@@ -28,5 +28,17 @@
                 Inclusive Polish Spellcheck
             </a>
         </li>
+        <li class="mb-2">
+            <a href="https://isgc.app/" target="_blank" rel="noopener">
+                <Icon v="isgc.png"/>
+                GCChecker
+            </a>
+        </li>
+        <li class="mb-2">
+            <a href="https://callmebymygender.top/" target="_blank" rel="noopener">
+                <Icon v="cmbmg.png"/>
+                Call me by my gender
+            </a>
+        </li>
     </ul>
 </template>
