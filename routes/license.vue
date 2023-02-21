@@ -1,9 +1,7 @@
 <template>
     <Page>
     <div class="blog-post">
-        <Twemoji>
-            <div v-html="content"></div>
-        </Twemoji>
+        <div v-html="content"></div>
 
         <Separator icon="heart"/>
         <Support/>

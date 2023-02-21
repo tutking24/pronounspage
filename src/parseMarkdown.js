@@ -1,5 +1,3 @@
-import twemoji from 'twemoji';
-
 const census_groups = {
     'location_poland': 'Osoby mieszkające w Polsce',
     'location_abroad': 'Osoby mieszkające za granicą',
@@ -85,14 +83,10 @@ export default async function parseMarkdown(markdown) {
                 .replace(/<p>{census_groups}<\/p>(.+?)<p>{\/census_groups}<\/p>/gms, mainPlusDetails(census_groups, false))
                 .replace(/<p>{census_comparisons}<\/p>(.+?)<p>{\/census_comparisons}<\/p>/gms, mainPlusDetails(census_comparisons, true))
                 .replace(/{json=([^=}]+)=([^=}]+)}/g, fetchJson)
-                .replace(/<p>{twemoji}<\/p>(.+?)<p>{\/twemoji}<\/p>/gms, (_, c) => twemoji.parse(c))
                 .replace(/<h1 id="🏳️🌈-/g, '<h1 id="') // license header
             + '</div>'
         ;
         content = content.replace(/{table_of_contents}/g, generateToC(content));
-
-        const disableTwemoji = content.includes('<p>{disable_twemoji}</p>');
-        content = content.replace(/<p>{disable_twemoji}<\/p>/g, '');
 
         const titleMatch = content.match('<h1[^>]*>([^<]+)</h1>');
         const title = titleMatch ? titleMatch[1] : null;
@@ -110,7 +104,6 @@ export default async function parseMarkdown(markdown) {
             img,
             intro: intro.length ? intro.slice(0, 24).join(' ') : null,
             content,
-            disableTwemoji,
         }
     } catch {
         return {

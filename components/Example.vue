@@ -1,14 +1,12 @@
 <template>
     <span>
-        <Twemoji>
-            <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
-                <strong v-if="part.variable"><Spelling escape :text="pronoun.getMorpheme(part.str, counter)"/></strong>
-                <span v-else><Spelling :text="part.str"/></span>
-            </span>
-            <small v-if="link">
-                (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling escape :text="pronoun.canonicalName"/></nuxt-link>)
-            </small>
-        </Twemoji>
+        <span v-for="part in example[(example.isHonorific ? pronoun.isPluralHonorific(counter) : pronoun.isPlural(counter)) ? 'pluralParts' : 'singularParts']">
+            <strong v-if="part.variable"><Spelling escape :text="pronoun.getMorpheme(part.str, counter)"/></strong>
+            <span v-else><Spelling :text="part.str"/></span>
+        </span>
+        <small v-if="link">
+            (<nuxt-link :to="'/' + pronoun.canonicalName"><Spelling escape :text="pronoun.canonicalName"/></nuxt-link>)
+        </small>
         <template v-if="config.pronunciation.enabled && pronunciation && pronoun.pronounceable && example.pronounce(pronoun)">
             <a v-for="(pLink, name) in pronunciationLinks"
                class="mr-2"

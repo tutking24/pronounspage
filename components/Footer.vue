@@ -129,7 +129,7 @@
                     <li class="mb-2">
                         <Icon v="tools"/>
                         Using <a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">gradientmagic.com</a>
-                        and <a href="https://twemoji.twitter.com/" target="_blank" rel="noopener">Twemoji</a>
+                        and <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji" target="_blank" rel="noopener">Noto Color Emoji</a>
                     </li>
                 </ul>
 
