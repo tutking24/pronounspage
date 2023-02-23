@@ -797,6 +797,9 @@ profile:
         validation:
             userNotFound: 'Acest utilizator nu există'
             required: 'Câmpul pentru relație este obligatoriu'
+        removeSelf:
+            action: 'Scoate-te'
+            confirm: 'Ești sigur că dorești să-ți scoți profilul din cercul lui @%username%?'
     sensitive:
         header: 'Avertizare despre conținut'
         info: >
