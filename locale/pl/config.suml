@@ -289,7 +289,7 @@ links:
                     zin na temat odkrywania swojej płci oraz życia jako osoba niebinarna.
                     Szeroki zakres tematyczny oraz dowolność formy zaowocowały dużą różnorodnością zgłoszeń
                     – od opowiadań i wierszy, przez prozę poetycją, eseje i rysunki, do opowieści-diagramu.
-                    Zaparszamy do lektury!
+                    Zapraszamy do lektury!
                 downloads:
                     pdf-wide:
                         filename: 'Poczytałosie 2022 spread.pdf'
@@ -306,6 +306,10 @@ links:
                     #mobi:
                     #    filename: 'Poczytałosie 2022.mobi'
                     #    icon: 'tablet-alt'
+                extra:
+                    - 'ISBN wersji elektronicznej: {https://e-isbn.pl/IsbnWeb/onix/summary.html?record_id=7417234=978-83-950468-3-4}'
+                    - 'ISBN wersji papierowej: {https://e-isbn.pl/IsbnWeb/onix/summary.html?record_id=7417232=978-83-950468-1-0}'
+
     academic:
         -
             icon: 'comment-alt-edit'
