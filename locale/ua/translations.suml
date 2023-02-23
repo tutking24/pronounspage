@@ -731,6 +731,9 @@ profile:
         validation:
             userNotFound: 'Користувач не існує'
             required: 'Статус стосунків обов‘язкове поле'
+        removeSelf:
+            action: 'Прибрати себе'
+            confirm: 'Ви впевнені, що хочете прибрати себе з кола @%username%?'
     column: 'Колонка'
     opinions:
         custom: 'додане користувач_кою:'
