@@ -1,7 +1,7 @@
 <template>
     <ul class="list-inline">
         <li class="list-inline-item">
-            <T>mode.accessibility</T>
+            <T>mode.accessibility</T><T>quotation.colon</T>
         </li>
         <li class="list-inline-item">
             <label class="form-check form-switch d-inline-block">
