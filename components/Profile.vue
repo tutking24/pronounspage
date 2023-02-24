@@ -74,7 +74,7 @@
 
                 <ExpandableList :values="profile.names" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :customOpinions="profile.opinions"/>
+                        <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :link="config.locale === 'tok' ? `${config.pronouns.prefix}/${s.el.value}` : null" :customOpinions="profile.opinions"/>
                     </template>
                 </ExpandableList>
             </div>
@@ -86,7 +86,7 @@
 
                 <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`/${s.el.link}`" :customOpinions="profile.opinions"/>
+                        <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`${config.pronouns.prefix || ''}/${s.el.link}`" :customOpinions="profile.opinions"/>
                     </template>
                 </ExpandableList>
             </div>
@@ -191,7 +191,7 @@
                         continue;
                     }
 
-                    if (!link.startsWith(':')) {
+                    if (!link.startsWith(':') && this.config.locale !== 'tok') {
                         link = link.toLowerCase();
                     }
 

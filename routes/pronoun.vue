@@ -55,7 +55,7 @@
         </section>
 
         <section v-if="selectedPronoun.history">
-            <template v-for="part in selectedPronoun.history.replace(/\\@/g, '###').split('@')">
+            <template v-for="part in selectedPronoun.history.replace(/\\@/g, '###').split('@')" v-if="part !== '__generator__' || !config.pronouns.disableDisclaimer">
                 <div v-if="part === '__generator__'" class="alert alert-warning">
                     <Icon v="exclamation-triangle"/>
                     <T>pronouns.generated</T>
