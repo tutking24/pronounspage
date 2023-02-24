@@ -383,9 +383,9 @@ links:
     mediaShort: 'Media'
     media: 'Pronouns.page in the media'
 
-    social: 'mi pi ilo ante'
+    social: 'mi lon ma ilo ante'
 
-    languageVersions: 'lipu ni pi toki ante'
+    languageVersions: 'lipu ni li lon toki ante'
 
 people: ~
 
@@ -467,9 +467,9 @@ contact:
     contribute:
         header: 'o pana e pali'
         intro: >
-            lipu Pronouns.page li pali kulupu. jan mute li pana e pali.
+            lipu Pronouns.page li pali kulupu. jan mute li pana e pali tan wile pona tan wile mani ala.
             sina kin li ken! mi wile e pali ni.
-            sina pali mute la sina ken lon kulupu pi jan pali.
+            sina pali mute la mi ken kama e sina lon kulupu pali mi.
         entries:
             header: 'Add entries'
             description: >
@@ -583,7 +583,7 @@ user:
 
 profile:
     description: 'Description'
-    names: 'Names'
+    names: 'nimi'
     pronouns: 'Pronouns'
     pronounsInfo: >
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
@@ -666,11 +666,11 @@ profile:
         defaults: 'Restore defaults'
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
+        yes: 'pona'
+        jokingly: 'musi'
+        close: 'jan Only if we''re close'
+        meh: 'pona lili'
+        no: 'ike'
     bannerButton: 'Create a card'
     card:
         link: 'Card picture'
@@ -678,8 +678,8 @@ profile:
         generating: 'Generation in progress… It could take a few minutes.'
     empty: 'This person hasn''t created any cards yet.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'ijo sina'
+        description: 'sina taso li ken lukin e ni'
     language:
         header: 'Language'
         description: '@%username%''s card is also available in the following languages'
@@ -948,7 +948,7 @@ api:
 quotation:
     start: '“'
     end: '”'
-    colon: ':'
+    colon: ''
 
 localise:
     shorter: 'o pana e toki sina'
