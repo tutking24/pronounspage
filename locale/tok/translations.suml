@@ -1,70 +1,53 @@
-title: 'Pronouns.page'
+title: 'lipu pi nimi mi'
 domain: 'tok.pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
 home:
-    link: 'Homepage'
+    link: 'lipu open'
     header: 'Pronouns'
     headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    welcome: 'lipu nimi la kama pona'
     intro: >
         We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+    why: 'lipu ni li lon tan seme?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            mi toki e sina la mi wile kepeken nimi sina. sina soweli Kasijona la mi o toki ala e ni: sina jan Punima. mi ni la sina ken pilin nasa li ken pilin ike.
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
-        - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
-        - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            ilo ni la sina ken pana e nimi sina tawa lipu.
+            lipu la ale li ken sona e ni: ona o toki e sina kepeken nimi seme?
+    pronouns: 'nasin nimi jan mute'
     generator:
-        header: 'Generator'
+        header: 'ilo nimi'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
+            sina pana e nimi tawa ni la ilo li toki e jan kepeken nimi ni.
         button: 'Show the generator'
         header2: 'Generate a link'
         base: 'Based on'
         alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+    whatisit: 'ni li suli tan seme?'
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'wile mi'
+        summary: 'mi utala tawa ni: nasin toki o pona tawa jan ale.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>nimi pona o ken.</strong><br>
+            jan ale li ante. <em>ona taso</em> li sona pona e ni: nimi seme li pona tawa ona.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>ale o nimi pona e jan ante.</strong><br>
+            jan li sona e nimi pona ona la ale o pona o kepeken nimi wile ona.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>sona ala la nimi o awen pona.</strong><br>
+            ken la mi sona ala e jan e nimi wile ona.
+            ken la mi toki e nasin jan e jan wan ala.
+            nimi o pona lon ni kin.
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
+    header: 'nimi'
+    headerLong: 'nimi jan'
+    examples: 'o kepeken lon toki sama ni'
     plural: 'Plural'
-    intro: 'My pronouns are'
+    intro: 'nimi mi li'
     normative: 'Normative'
     alt:
         button: 'Generate a link to interchangeable forms'
@@ -400,9 +383,9 @@ links:
     mediaShort: 'Media'
     media: 'Pronouns.page in the media'
 
-    social: 'Social media'
+    social: 'mi pi ilo ante'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'lipu ni pi toki ante'
 
 people: ~
 
@@ -412,28 +395,30 @@ people: ~
 english:
     header: 'English'
     headerLong: 'An overview in English'
-    headerLonger: 'An overview of <language> nonbinary pronouns'
-    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    headerLonger: 'An overview of Toki Pona pronouns'
+    description: 'If you don''t speak Toki Pona, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
     intro:
         - >
-            A summary in English…
+            Toki Pona doesn't have gendered pronouns at all. The pronoun {/li/ona=ona} can refer to anyone and anything. So this version of Pronouns.page makes no mention of pronouns, and is essentially a website for telling people what your name is.
+        - >
+            TODO(tbodt): finish writing this
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
+    header: 'o toki tawa mi'
+    authors: 'jan ni li pali e lipu'
     groups:
         all: ''
         calendar: 'Queer Calendar Bot'
     faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
+        sina wile e sona la, nanpa wan la o lukin e {/faq=lipu pi sona suli}. sona wile li lon ala la o toki tawa mi.
     technical: >
         Do you have a technical issue or question? Please include your username and as many details as possible
         (what does the error message say? are you on your phone or a desktop? which browser do you use?
         what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
     hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+        sina wile toki jaki utala e ike tonsi tawa mi la, o ala.
+        mi toki ala tawa jan ike.
+        sina pali e toki ike sina kepeken tenpo lili, taso mi weka e toki sina e sina kepeken tenpo lili lili.
     language: >
         We're an international team – people who created a specific language version
         might not be the same people who will read your message.
@@ -442,9 +427,9 @@ contact:
         name: 'The “Neutral Language Council” collective'
         nameShort: 'Collective'
         description: >
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
+            mi kulupu li wile e ni: toki li ken toki pona e kule jan ale.
+            nasin toki la mi alasa li pali li pona li pana.
+            kin la mi lukin sewi e kulupu anpa ale.
         extra: []
         logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
         members: 'Current members'
@@ -480,11 +465,11 @@ contact:
                 - 'say if you have some experience in activist work,'
                 - 'say what you would like to help with.'
     contribute:
-        header: 'Contribute'
+        header: 'o pana e pali'
         intro: >
-            Pronouns.page is an open-source project created by volunteers.
-            You can add your contribution too! Here's some areas where we'd appreciate your help.
-            Active contributors will be invited to join our team.
+            lipu Pronouns.page li pali kulupu. jan mute li pana e pali.
+            sina kin li ken! mi wile e pali ni.
+            sina pali mute la sina ken lon kulupu pi jan pali.
         entries:
             header: 'Add entries'
             description: >
@@ -506,7 +491,7 @@ contact:
                 Technical tasks are managed on {https://gitlab.com/PronounsPage/PronounsPage/-/boards=this kanban board}.
                 Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
                 Don't hesitate to ask questions.
-            footer: 'Technical tasks'
+            footer: 'o pali tawa ilo lipu'
 
 support:
     header: 'Support'
@@ -767,8 +752,8 @@ footer:
         month: 'month'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'lipu li lon ala'
+    back: 'o tawa lipu open'
 
 authRequired:
     message: 'You must log in to see this site'
@@ -939,7 +924,7 @@ privacy:
         revoke: 'Reset cookie consent settings'
 
 admin:
-    header: 'Admin panel'
+    header: 'ilo lawwa'
     user:
         user: 'User'
         createdAt: 'Registration date'
@@ -966,8 +951,8 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
+    shorter: 'o pana e toki sina'
+    short: 'o pali e lipu ni pi toki sina'
     long: 'Want to create a new language version? Awesome! Please check out'
     longLink: 'this manual!'
 
@@ -984,10 +969,10 @@ captcha:
     invalid: 'Invalid CAPTCHA, please try again'
 
 mode:
-    light: 'Light mode'
-    automatic: 'Automatic'
-    dark: 'Dark mode'
-    reducedColours: 'Reduced colours'
+    light: 'walo'
+    automatic: 'sama ilo sina'
+    dark: 'pimeja'
+    reducedColours: 'kule o wawa lili'
 
 ban:
     reason: 'Ban reason'
@@ -1018,7 +1003,7 @@ report:
 
 translationMode:
     header: 'Translation Mode'
-    action: 'Propose translations'
+    action: 'o toki ni e lipu ni'
     welcome: >
         Is there a translation missing or an existing one needs a correction?
         You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
@@ -1276,5 +1261,5 @@ calendar:
     full: 'Full calendar'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org=Here''s how you can support it.}'
+    header: 'ma Ukawina o wawa.'
+    link: '{https://supportukrainenow.org=o wawa e ona.}'
