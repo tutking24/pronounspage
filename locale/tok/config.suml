@@ -110,8 +110,10 @@ profile:
             values: []
     flags:
         defaultPronoun: 'ona'
+    longNames: true
 
-calendar: enabled: false
+calendar:
+    enabled: false
 
 census:
     enabled: false

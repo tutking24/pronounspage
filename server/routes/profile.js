@@ -389,7 +389,7 @@ router.post('/profile/save', handleErrorAsync(async (req, res) => {
     }
 
     const opinions = cleanupOpinions(req.body.opinions);
-    const names = req.body.names.map(p => { return {...p, value: p.value.substring(0, 32)}});
+    const names = req.body.names.map(p => { return {...p, value: p.value.substring(0, global.config.profile.longNames ? 256 : 32)}});
     const pronouns = req.body.pronouns.map(p => { return {...p, value: p.value.substring(0, 192)}});
     const description = req.body.description.substring(0, 256);
     const birthday = cleanupBirthday(req.body.birthday || null);

@@ -110,7 +110,7 @@
                     <p v-if="$te('profile.namesInfo')" class="small text-muted">
                         <T>profile.namesInfo</T>
                     </p>
-                    <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128"/>
+                    <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128" :maxlength="config.profile.longNames ? 255 : 32"/>
                     <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </template>
 
