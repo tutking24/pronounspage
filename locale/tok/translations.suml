@@ -608,7 +608,7 @@ profile:
         detect: 'Detect'
         publishArea: 'Publish the continent in your card'
         publishLocation: 'Publish the area in your card'
-        time: 'It''s %time% on a %weekday% in my timezone'
+        time: 'mi la tenpo ni li %time% lon tenpo suno %weekday%'
         approximate: 'It''s just an approximate location'
         areas:
             Africa: 'ma Apika'
@@ -668,7 +668,7 @@ profile:
     opinion:
         yes: 'pona'
         jokingly: 'musi'
-        close: 'jan Only if we''re close'
+        close: 'jan poka taso'
         meh: 'pona lili'
         no: 'ike'
     bannerButton: 'Create a card'
@@ -681,12 +681,12 @@ profile:
         header: 'ijo sina'
         description: 'sina taso li ken lukin e ni'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
+        header: 'toki'
+        description: 'toki ante ni la lipu ni li lon'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
     circles:
-        header: 'My circle'
+        header: 'jan mi'
         info: >
             In this field you can tag the <strong>people closest to you</strong>, along with information
             which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
@@ -711,7 +711,7 @@ share: 'Share'
 crud:
     approve: 'Approve'
     hide: 'Hide'
-    remove: 'Remove'
+    remove: 'o weka e ni'
     removeConfirm: 'Are you sure you want to remove this item?'
     edit: 'Edit'
     add: 'Add'
@@ -737,7 +737,7 @@ footer:
     technical: 'Technical'
     sibling: 'Sibling projects'
     stats:
-        header: 'Stats'
+        header: 'nanpa'
         overall: 'all language versions'
         current: 'only this version'
         keys:
