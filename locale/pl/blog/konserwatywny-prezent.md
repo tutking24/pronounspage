@@ -45,3 +45,7 @@ To „DoRzeczy” odnotowało ten fakt z opóźnieniem, niemniej – doceniamy i
     <span class="fab fa-facebook"></span>
     Post na fb
 </a>
+
+Zdjęcia podrzuciła nam Maria Bolek z [O języku](https://o-jezyku.pl),
+a materiał jako pierwszy wypatrzyła Martyna F. Zachorska, czyli [Pani od Feminatywów](https://instagram.com/paniodfeminatywow).
+Dziękujemy!
