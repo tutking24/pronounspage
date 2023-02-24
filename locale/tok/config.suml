@@ -17,6 +17,7 @@ pronouns:
     prefix: '/li'
     autoOpenGenerator: true
     disableDescriptions: true
+    disableDisclaimer: true
 
 pronunciation:
     enabled: false
