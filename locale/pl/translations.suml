@@ -1795,7 +1795,9 @@ mode:
     light: 'Tryb dzienny'
     automatic: 'Auto'
     dark: 'Tryb nocny'
+    accessibility: 'Accessibility settings'
     reducedColours: 'Zredukowane kolory'
+    reducedItems: 'Zredukowana liczba widocznych elementów'
 
 ban:
     reason: 'Powód blokady'

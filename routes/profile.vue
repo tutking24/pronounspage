@@ -149,7 +149,7 @@
             <Separator icon="heart"/>
             <Support/>
             <div class="text-center my-4 small">
-                <ReducedColoursSwitch/>
+                <AccessibilitySettings/>
             </div>
         </template>
     </Page>

@@ -12,6 +12,7 @@ export const state = () => ({
     translationMode: false,
     translationChanges: {},
     adPlaceholdersVisible: false,
+    reducedItems: false,
 })
 
 export const mutations = {
@@ -102,4 +103,7 @@ export const mutations = {
     toggleAdPlaceholdersVisible(state) {
         state.adPlaceholdersVisible = !state.adPlaceholdersVisible;
     },
+    setReducedItems(state, value) {
+        state.reducedItems = value;
+    }
 }

@@ -1050,7 +1050,9 @@ mode:
     light: 'Light mode'
     automatic: 'Automatic'
     dark: 'Dark mode'
+    accessibility: 'Accessibility settings'
     reducedColours: 'Reduced colours'
+    reducedItems: 'Reduced number of items shown'
 
 ban:
     reason: 'Ban reason'

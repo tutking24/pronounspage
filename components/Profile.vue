@@ -256,7 +256,7 @@
                 if (this.profile.pronouns.length) { c++; }
                 if (this.profile.links.length) { c++; }
                 return c;
-            }
+            },
         },
     };
 </script>

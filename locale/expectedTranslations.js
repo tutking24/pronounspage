@@ -116,4 +116,6 @@ module.exports = [
     'crud.alt',
     'profile.circles.removeSelf.action',
     'profile.circles.removeSelf.confirm',
+    'mode.accessibility',
+    'mode.reducedItems',
 ];
