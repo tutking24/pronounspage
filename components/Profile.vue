@@ -78,13 +78,13 @@
                     </template>
                 </ExpandableList>
             </div>
-            <div v-if="profile.pronouns.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
+            <div v-if="profile.pronouns.length && !config.profile.noPronouns" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
                 </h3>
 
-                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks" v-if="!config.profile.noPronouns">
+                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
                         <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`${config.pronouns.prefix || ''}/${s.el.link}`" :customOpinions="profile.opinions"/>
                     </template>
