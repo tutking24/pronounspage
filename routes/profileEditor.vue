@@ -17,7 +17,7 @@
         </div>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
-            <TabsNav :tabs="['opinions', 'names', !config.profile.noPronouns ? 'pronouns' : undefined, 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', 'sensitive', $isGranted() ? 'admin' : undefined]"
+            <TabsNav :tabs="['opinions', 'names', config.pronouns.enabled ? 'pronouns' : undefined, 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', 'sensitive', $isGranted() ? 'admin' : undefined]"
                      pills showheaders navclass="mb-3 border-bottom-0">
                 <template v-slot:admin-header>
                     <Icon v="user-cog"/>
