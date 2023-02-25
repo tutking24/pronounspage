@@ -252,46 +252,43 @@ contact:
         might not be the same people who will read your message.
         So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: 'kulupu pi nasin toki pi kule jan ale'
+        nameShort: 'kulupu pi nasin toki'
         description: >
             mi kulupu li wile e ni: toki li ken toki pona e kule jan ale.
             nasin toki la mi alasa li pali li pona li pana.
             kin la mi lukin sewi e kulupu anpa ale.
         extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
+        logo: 'sitelen pi kulupu ni la sitelen tonsi en sitelen toki li wan.'
+        members: 'jan ni li lon kulupu'
+        member: 'li lon kulupu pali pi lipu ni'
         upcoming: 'Upcoming language versions'
         join:
-            header: 'Join us!'
+            header: 'o pali lon kulupu!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                sina wile pona e nasin toki li wile pana e pali tawa kulupu mi la pona mute!
+                mi wile e pali sina!
+            areasIntro: 'mi ken wile e pali ni:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
+                - 'o pona e lipu nimi o pana e nimi sin'
+                - 'o pona e lipu ni: ona li toki e lipu ante mute'
+                - 'o pana e toki pona e sitelen pona tawa ale lon lipu mi kulupu'
+                - 'jan li toki tawa mi kulupu la o toki tawa ona'
+                - 'o weka e lipu jan ike'
+                - 'o pali e lipu sama kepeken toki ante'
+                - 'o lawa e pali ni: jan li pali e lipu sama kepeken toki ante'
+                - 'o pali e lipu lili lon lipu ni o toki e ijo sin'
+                - 'o pali e ilo'
+                - 'pali ante mute'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                pali mute li wile e sona tonsi la jan tonsi o pali ni. pali ante mute li wile ala e ni la mi ken wile e jan pi tonsi ala.
+            how: 'sina wile kama lon kulupu la, o toki tawa mi kepeken nimi {mailto:contact@pronouns.page=contact@pronouns.page} o toki e ni:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say if you have some experience in activist work,'
-                - 'say what you would like to help with.'
+                - 'sina seme?'
+                - 'lipu pronouns.page la lipu sina li lon seme?'
+                - 'sina pana e toki tawa ale lon lipu ante seme?'
+                - 'sina pali ala pali sama ni lon tenpo pini: sina utala tawa pona kulupu?'
+                - 'sina wile pana e pali seme?'
     contribute:
         header: 'o pana e pali'
         intro: >
@@ -322,11 +319,12 @@ contact:
             footer: 'o pali tawa ilo lipu'
 
 support:
-    header: 'Support'
+    header: 'o pana e mani'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
-    bankAccount: 'Bank transfer'
+        lipu ni li wile e mani tawa ijo ilo mute.
+        kin la jan pali li ken wile e telo nasa lili.
+        sina wile pana e mani tawa ni la o kepeken nasin ni:
+    bankAccount: 'o pana e mani tan poki mani'
 
 user:
     header: 'Account'
@@ -348,7 +346,7 @@ user:
         passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        deprecated: 'moli'
         depreciationNotice: >
             This is not a reliable authentication provider.
             <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
@@ -402,7 +400,7 @@ user:
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
     qr:
-        header: 'QR code'
+        header: 'sitelen QR'
         download: 'Download QR code'
     modMessage:
         subject: 'A message from a moderator'
@@ -480,11 +478,11 @@ profile:
             duplicateIcon: 'Icon must be unique'
             duplicateDescription: 'Description must be unique'
             invalidOpinion: 'Selected icon was not found in the legend above'
-        custom: 'custom, added by the user:'
+        custom: 'ni li pilin sin tan jan ni:'
     header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
+    list: 'lipu nimi sina'
+    init: 'o pali e lipu'
+    show: 'o lukin'
     edit: 'o ante'
     delete: 'Delete'
     deleteConfirm: 'Are you sure you want to delete this card?'
@@ -501,9 +499,9 @@ profile:
         no: 'ike'
     bannerButton: 'o lipu e nimi sina e sina'
     card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
+        link: 'ilo o sitelen e lipu'
+        generate: 'o pali e sitelen'
+        generating: 'ilo li pali… ni li kepeken tenpo.'
     empty: 'This person hasn''t created any cards yet.'
     personal:
         header: 'ijo sina'
@@ -558,11 +556,11 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/PronounsPage/PronounsPage=Source code} and content are licensed under {/license=OQL}.
+         lawa {/license=OQL} li lawa e {https://gitlab.com/PronounsPage/PronounsPage=mama ilo lipu} e toki lipu.
     links: 'Contact, social media'
     legal: 'Legal'
     financial: 'Financial transparency'
-    technical: 'Technical'
+    technical: 'ijo ilo'
     sibling: 'Sibling projects'
     stats:
         header: 'nanpa'
@@ -597,7 +595,7 @@ confirm:
 
 terms:
     header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
+    lastUpdate: 'lipu ni li kama ante lon tenpo'
     consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
     #translationDisclaimer: >
@@ -690,8 +688,7 @@ terms:
                 will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
 
 privacy:
-    header: 'Privacy Policy'
-    # you can skip translating the rest of the "privacy" section
+    header: 'lipu lawa pi jo sona'
     content:
         intro: >
             This Privacy Policy describes how the Service provided on the website
@@ -700,29 +697,52 @@ privacy:
             The Service is operated by the “Neutral Language Council” collective
             who can be contacted via email:
         effort: >
-            We make every effort to store your data securely and to ensure that any non-public data we store
-            are not seized by or transferred to any third party, except those trusted parties described below.
+            sina pana e toki pi len ala e sona len tawa mi.
+            mi wile jo pona e ni sina.
+            mi pali suli tawa ni.
+            sina pana e ijo la jan ante o kama ala lukin e ona la mi wile len pona e ni sina.
+            sona sina li tawa tan mi tawa kulupu pona ante.
+            mi toki e kulupu pona lon anpa.
         data: >
-            Other than the data that you explicitly post on the Service as Content
-            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-            no additional private data connected to your account is being stored or processed by the Service.
+            mi awen ala e sona len mute sina.
+            mi jo ala e ona.
+            mi kepeken ala ona.
+            taso mi jo a e sona ni:
+            sina toki e ijo tawa jan ante lon mi la mi jo e ona.
+            sina kama lon sijelo sina kepeken sijelo pi ilo ante la mi jo e nimi len OAuth pi sijelo ni.
         editRemoval: >
-            You may edit or remove any Content you have posted on the Service.
+            sina toki e ijo tawa jan ante lon mi la sina ken ante e ona li ken weka e ona.
         contact: >
-            When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+            sina toki tawa mi kepeken ilo Email la mi jo e nimi sina pi ilo Email.
+            ni la mi kin li ken toki tawa sina.
         cookies: >
-            We only use first-party cookies and local storage to keep you logged in and save your preferences.
+            sina lon mi la mi pana e sona lili ni tawa ilo sina:
+            sina jan seme?
+            sina wile e seme lon lipu ni?
+            sina weka tan lipu ni la sona ni li awen lon ilo sina.
+            ni la sina kama sin tawa lipu la sona li awen lon li pona e lipu.
+            ona li lon sin e sijelo sina li pana e wile sina tawa lipu.
+            sona ni li awen lon ilo sina taso.
+            kin kulupu esun ante li pana ala e sona tawa ilo sina tan wile mi.
+            ni la sona sina li awen lon anpa len.
         plausible: >
-            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+            jan seme li kama lon mi?
+            tenpo kama li seme?
+            mute jan li seme?
+            mi wile sona e ni.
+            mi kepeken ilo <strong>Plausible</strong> tawa ni.
+            ilo li kama jo e sona ni.
+            sona ni li jo ala e nimi sina e nimi IP pi ilo sina.
+            {https://plausible.io/privacy=lipu lawa jo ona ni} li lawa e ilo ni.
         arc: >
             We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
             You can read more about them and their privacy policy
             {https://arc.io/faq=<strong>here</strong>}.
         hCaptcha: >
-            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
-            You can read their privacy policy
-            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
+            mi wile ala e ni: ilo ike li utala e mi.
+            mi wile weka e ilo ni.
+            mi kepeken ilo <strong>hCaptcha</strong> tawa ni.
+            {https://www.hcaptcha.com/privacy=lipu lawa jo ona ni} li lawa e ilo ni.
         ezoic: >
             In order to fund the project we show ads using a third party technology called <strong>Ezoic</strong>.
             You can opt-in to allow them to personalise your experience.
@@ -730,8 +750,10 @@ privacy:
         logsBackups: >
             Logs and backups are stored for no longer than 18 months.
         gdpr: >
-            Your personal data are protected by the GDPR, which means you have the right
-            to see, correct, update and remove the data we store about you.
+            ma Elopa la lawa jo GDPR li len pona.
+            lawa ni li lawa e sona sina lon mi.
+            lawa ni li ni e sona sina:
+            sina wile la sina ken lukin e ona li ken ante e ona li ken weka e ona.
     consent:
         header: 'Cookie consent'
         required:
@@ -822,7 +844,7 @@ ban:
         please respond to this email and we might get another look in a bigger group.
 
 report:
-    action: 'Report abuse'
+    action: 'lipu ni li ike'
     comment: 'Please explain briefly what''s wrong with this profile'
     confirm: 'Are you sure you want to report @%username%?'
     sent: 'Your report has been sent. Thanks for your help!'
