@@ -117,6 +117,7 @@ profile:
     flags:
         defaultPronoun: 'ona'
     longNames: true
+    noPronouns: true
 
 calendar:
     enabled: false

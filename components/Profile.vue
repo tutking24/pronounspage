@@ -84,7 +84,7 @@
                     <T>profile.pronouns</T>
                 </h3>
 
-                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
+                <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks" v-if="!config.profile.noPronouns">
                     <template v-slot="s">
                         <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`${config.pronouns.prefix || ''}/${s.el.link}`" :customOpinions="profile.opinions"/>
                     </template>
