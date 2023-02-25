@@ -8,8 +8,8 @@ home:
     headerLong: 'List of pronouns'
     welcome: 'lipu nimi la kama pona'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'lipu ni li lon tan seme?'
+        lipu ni li pana e nimi wile jan e sona tonsi.
+    why: 'lipu li lon tan seme?'
     about:
         - >
             mi toki e sina la mi wile kepeken nimi sina. sina soweli Kasijona la mi o toki ala e ni: sina jan Punima. mi ni la sina ken pilin nasa li ken pilin ike.
@@ -29,7 +29,7 @@ home:
     whatisit: 'ni li suli tan seme?'
     mission:
         header: 'wile mi'
-        summary: 'mi utala tawa ni: nasin toki o pona tawa jan ale.'
+        summary: 'nasin toki o pona tawa jan ale.'
         freedom: >
             <strong>nimi pona o ken.</strong><br>
             jan ale li ante. <em>ona taso</em> li sona pona e ni: nimi seme li pona tawa ona.
@@ -188,192 +188,20 @@ terminology:
     definition: 'Definition'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: 'sona'
+    headerLong: 'sona pi nasin nimi jan'
     questions:
-        nonbinary:
-            question: 'What is nonbinary?'
+        toki-inli:
+            question: 'lipu Pronouns.page li lon tan ni: toki Inli li ike li nasin mije meli e nimi "ona". toki pona li ike ala la lipu ni o toki pona tan seme?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
-                - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
-                - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
-        why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
+                    mi ante e toki la mi ante mute e nasin ilo kin. mi weka e ni: lipu li wile toki e kule mute pi nimi "ona". nasin lipu li kama ni: sina ken toki e nimi sina.
+        mu:
+            question: 'mu?'
             answer:
                 - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
-                - >
-                    “Strange pronouns” are just a matter of getting used to.
-        made-up:
-            question: 'Those pronouns are made up!'
-            answer:
-                - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
-        how-to-know:
-            question: 'How do I know how to address someone?'
-            answer:
-                - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
-                - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
-                - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
-                - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
-                - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
-        who-uses-it:
-            question: 'Does anyone even use that?'
-            answer:
-                - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
-        authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
-            answer:
-                - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
-                - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
-                - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
-        bio:
-            question: 'Why should I put my pronouns in bio on social media?'
-            answer:
-                - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
-                - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
-                - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
-        change:
-            question: 'Can I change my pronouns?'
-            answer:
-                - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
-        get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
-            answer:
-                - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
-                - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
-        preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
-            answer:
-                - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
-                - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
-        gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
-            answer:
-                - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
-                - >
-                    Simply say “pronouns”.
-        flags:
-            question: 'Can you add this flag? Can you remove that flag?'
-            answer:
-                - >
-                    No.
-                - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
-                - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
-                - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
-                - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
-        custom-pronouns:
-            question: 'My pronouns aren''t listed'
-            answer:
-                - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
-                - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
+                    mu! mu mu.
+
 
 links:
     header: 'Links'
@@ -595,7 +423,7 @@ profile:
         If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
         you can also use a colon shorthand (eg. “:star”).
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
+    words: 'nimi ante'
     wordsColumnHeader: 'Column header'
     birthday: 'Age'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
@@ -667,11 +495,11 @@ profile:
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
         yes: 'pona'
-        jokingly: 'musi'
-        close: 'jan poka taso'
+        jokingly: 'lon musi taso'
+        close: 'tan jan poka taso'
         meh: 'pona lili'
         no: 'ike'
-    bannerButton: 'Create a card'
+    bannerButton: 'o lipu e nimi sina e sina'
     card:
         link: 'Card picture'
         generate: 'Generate'
@@ -706,7 +534,7 @@ profile:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
 
-share: 'Share'
+share: 'o pana e ni tawa jan ante'
 
 crud:
     approve: 'Approve'
@@ -738,18 +566,18 @@ footer:
     sibling: 'Sibling projects'
     stats:
         header: 'nanpa'
-        overall: 'all language versions'
-        current: 'only this version'
+        overall: 'lipu ale pi toki ante'
+        current: 'lipu ni taso'
         keys:
             users: 'Registered users'
-            cards: 'Cards'
-            visitors: 'Unique visitors'
-            pageviews: 'Page views'
+            cards: 'lipu'
+            visitors: 'mun li sike e ma la jan'
+            pageviews: 'mun la lukin'
             realTimeVisitors: 'Currently online'
             visitDuration: 'Avg visit duration'
             uptime: 'Uptime'
             responseTime: 'Avg response time'
-        month: 'month'
+        month: 'li lon lipu ni'
 
 notFound:
     message: 'lipu li lon ala'
@@ -1003,7 +831,7 @@ report:
 
 translationMode:
     header: 'Translation Mode'
-    action: 'o toki ni e lipu ni'
+    action: 'o toki pona e ilo ni'
     welcome: >
         Is there a translation missing or an existing one needs a correction?
         You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
@@ -1011,9 +839,9 @@ translationMode:
         in which you can modify the translation and compare it to the English text.
         Remember to click on the button “Commit changes” once you're done.
     logIn: 'You need to be logged in to propose translations'
-    changes: 'Changes'
-    commit: 'Commit changes'
-    revert: 'Revert changes'
+    changes: 'ante'
+    commit: 'o pana e ante'
+    revert: 'o weka e ante'
     pause: 'Pause Translation Mode'
 
 flags:
