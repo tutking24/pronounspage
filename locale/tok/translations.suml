@@ -196,6 +196,10 @@ faq:
             answer:
                 - >
                     mi ante e toki la mi ante mute e nasin ilo kin. mi weka e ni: lipu li wile toki e kule mute pi nimi "ona". nasin lipu li kama ni: sina ken toki e nimi sina.
+        flags:
+            question: 'o pana e sitelen kule ni! o weka e sitelen kule ni!'
+            answer:
+                - >
         mu:
             question: 'mu?'
             answer:
@@ -327,7 +331,7 @@ support:
     bankAccount: 'o pana e mani tan poki mani'
 
 user:
-    header: 'Account'
+    header: 'sina'
     headerLong: 'Your account'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
     tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
@@ -342,8 +346,8 @@ user:
             instruction: 'To confirm your email address, enter the following single-use code on the website:'
             extra: 'If you didn''t order this code, simply ignore this message.'
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            sina kama sijelo lon ilo la sina ken pali e lipu sina ({/@example=sama lipu ni}).
+        passwordless: 'ilo li wile ala e ni: sina pali e nimi len open. {https://avris.it/blog/passwords-are-passé=o kama sona e nasin ante mi.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Domain'
         deprecated: 'moli'
@@ -423,7 +427,7 @@ profile:
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'nimi ante'
     wordsColumnHeader: 'Column header'
-    birthday: 'Age'
+    birthday: 'mute pi tenpo sike mi li'
     birthdayInfo: 'We do not publish your birthday, just the calculated age.'
     timezone:
         header: 'Timezone'
@@ -459,19 +463,19 @@ profile:
         header: 'Legend/opinions'
         description: 'Description…'
         colours:
-            _: '(Font colour…)'
-            pink: 'Pink'
-            red: 'Red'
-            orange: 'Orange'
-            green: 'Green'
-            blue: 'Blue'
-            grey: 'Grey'
+            _: '(kule…)'
+            pink: 'loje walo'
+            red: 'loje'
+            orange: 'loje jelo'
+            green: 'laso kasi'
+            blue: 'laso telo'
+            grey: 'pimeja'
         styles:
-            _: '(Style…)'
-            bold-italics: 'Bold & italics'
-            bold: 'Bold'
-            italics: 'Italics'
-            small: 'Small'
+            _: '(namako…)'
+            bold-italics: 'wawa en tawa poka'
+            bold: 'wawa'
+            italics: 'poka'
+            small: 'lili'
         validation:
             missingIcon: 'Icon is required'
             missingDescription: 'Description is required'
@@ -492,10 +496,10 @@ profile:
         defaults: 'Restore defaults'
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
-        yes: 'pona'
+        yes: 'pona a'
         jokingly: 'lon musi taso'
         close: 'tan jan poka taso'
-        meh: 'pona lili'
+        meh: 'ike ala'
         no: 'ike'
     bannerButton: 'o lipu e nimi sina e sina'
     card:
@@ -524,7 +528,7 @@ profile:
         relationship: 'Relationship (eg. “partner”, “best friend”)'
         mutual: 'This connection goes both ways'
         yourMentions:
-            header: 'Your circles mentions'
+            header: 'jan ante ni la sina lon lipu pi jan ona'
             description: >
                 Here's the list of people who added you to their circles.
                 If you add them back, a checkmark [s:shield-check] will appear in both your cards.
@@ -558,17 +562,17 @@ footer:
     license: >
          lawa {/license=OQL} li lawa e {https://gitlab.com/PronounsPage/PronounsPage=mama ilo lipu} e toki lipu.
     links: 'Contact, social media'
-    legal: 'Legal'
+    legal: 'toki pi nasin lawa'
     financial: 'Financial transparency'
     technical: 'ijo ilo'
-    sibling: 'Sibling projects'
+    sibling: 'pali ante mi'
     stats:
         header: 'nanpa'
         overall: 'lipu ale pi toki ante'
         current: 'lipu ni taso'
         keys:
-            users: 'Registered users'
-            cards: 'lipu'
+            users: 'mi jo e jan'
+            cards: 'mi jo e lipu nimi'
             visitors: 'mun li sike e ma la jan'
             pageviews: 'mun la lukin'
             realTimeVisitors: 'Currently online'
@@ -596,7 +600,7 @@ confirm:
 terms:
     header: 'Terms of Service'
     lastUpdate: 'lipu ni li kama ante lon tenpo'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    consent: 'sina kama sijelo lon la {/lawa=nasin lawa mi} li pona tawa sina.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -823,6 +827,7 @@ mode:
     automatic: 'sama ilo sina'
     dark: 'pimeja'
     reducedColours: 'kule o wawa lili'
+    reducedItems: 'ijo o mute suli ala'
 
 ban:
     reason: 'Ban reason'
