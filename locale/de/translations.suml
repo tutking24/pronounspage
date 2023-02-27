@@ -558,6 +558,8 @@ profile:
     flagsInfo: 'Ziehe deine Pride Flaggen per drag & drop in diesen Rahmen.'
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
     flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
+    flagsCustomForm:
+        altExample: 'Ein Beispiel dafür, wie der ''Alternativtext' formuliert werden könnte'
     flagsAsterisk: 'Dies ist keine queere Identität, aber wir nehmen es für Menschen auf, die auf andere Weise queer sind (z. B. heterosexuelle trans Personen).'
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
@@ -569,6 +571,8 @@ profile:
             oder durch ein <code>rel="me"</code>-Tag, das zurück auf die Visitenarte zeigt.
             Unsere Links enthalten auch ein <code>rel="me"</code>-Tag, damit externe Websites deine Visitenkarte auch umgekehrt verifizieren können.
     column: 'Spalte'
+    sensitive:
+        header: 'Content-/Triggerwarnung'
     opinions:
         header: 'Legende/Optionen'
         description: 'Beschreibung...'
@@ -909,6 +913,12 @@ flags:
     Trixic: 'Trixisch'
     Two_Spirit: 'Two-Spirit'
     Xenogender: 'Xenogeschlechtlich'
+
+flags_alt:
+    Progress_Pride_: >
+        Eine rechteckige Flagge mit sechs gleich breiten horizontalen Streifen: rot, orange, gelb, grün, blau und lila;
+        ein Chevron (Dreieck) auf der linken Seite, bestehend aus Streifen der folgenden Farben (von links): gelb mit
+        einem violetten Kreis, weiß, rosa, hellblau, braun, schwarz
 
 calendar:
     header: 'Kalender'
