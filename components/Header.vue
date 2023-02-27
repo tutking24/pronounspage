@@ -239,6 +239,7 @@
                     || (this.config.census && this.config.census.enabled)
                     || (this.config.inclusive && this.config.inclusive.enabled)
                     || (this.config.people && this.config.people.enabled)
+                    || (this.config.contact && this.config.contact.team && this.config.contact.team.enabled)
                 ) {
                     const extra = [
                         this.config.terminology && this.config.terminology.enabled ? '/' + this.config.terminology.route : '',
