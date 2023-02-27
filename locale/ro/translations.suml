@@ -599,7 +599,7 @@ user:
         passwordless: 'Acest website nu stochează parole. {https://avris.it/blog/passwords-are-passé=Mai multe informații.}'
         instancePlaceholder: 'Instanță' # TODO
         domainPlaceholder: 'Domeniu'
-        deprecated: 'Nefolosit'
+        deprecated: 'Nesigur'
         depreciationNotice: >
             Acesta nu-i un furnizor de autentificare sigur.
             <a href="%link%" target="_blank" rel="noopener">Verifică acest link pentru mai multe detalii</a>.
@@ -1049,6 +1049,8 @@ mode:
     automatic: 'Automat'
     dark: 'Modul întunecat'
     reducedColours: 'Culori reduse'
+    accessibility: 'Accesibilitate'
+    reducedItems: 'Număr redus de itemi vizibili'
 
 ban:
     reason: 'Motivul suspendării'
