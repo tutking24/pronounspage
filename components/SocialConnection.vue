@@ -38,7 +38,7 @@
                 {{connection.name}}
             </span>
             <br class="d-md-none"/>
-            <a :href="(providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`) + (providerOptions.instanceRequired ? '?instance=' + connection.name.split('@')[1] : '')"
+            <a :href="(providerOptions.redirectViaHome ? `${homeUrl}/api/user/social-redirect/${provider}/${config.locale}` : `/api/connect/${provider}`) + (providerOptions.instanceRequired ? '?instance=' + connection.name.split('@').slice(-1)[0] : '')"
                class="badge bg-light text-dark border">
                 <Icon v="sync"/>
                 <T>user.socialConnection.refresh</T>
