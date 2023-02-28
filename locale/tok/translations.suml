@@ -579,7 +579,7 @@ footer:
             cards: 'mi jo e lipu nimi'
             visitors: 'mun li sike e ma la jan'
             pageviews: 'mun la lukin'
-            realTimeVisitors: 'Currently online'
+            realTimeVisitors: 'sina lukin e ni la jan ante lukin li'
             visitDuration: 'Avg visit duration'
             uptime: 'Uptime'
             responseTime: 'Avg response time'
