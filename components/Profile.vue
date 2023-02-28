@@ -31,7 +31,7 @@
                 </div>
                 <p v-if="profile.age && profile.age >= minAge">
                     <Icon v="birthday-cake"/>
-                    <T>profile.birthday</T><T>quotation.colon</T>
+                    <T v-if="$te('profile.age')">profile.age</T><T v-else>profile.birthday</T><T>quotation.colon</T>
                     {{ profile.age }}
                 </p>
                 <Timezone v-if="profile.timezone" :value="profile.timezone" :static="static"/>

@@ -164,8 +164,8 @@ nouns:
     image: 'Picture'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'kulupu'
+    headerLong: 'kulupu tonsi'
 
 terminology:
     header: 'Terminology'
@@ -332,32 +332,32 @@ support:
 
 user:
     header: 'sina'
-    headerLong: 'Your account'
+    headerLong: 'sina'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
     tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you <strong>%email%</strong> an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
+        help: 'sina ken pana e lon sina tawa ilo kepeken nasin tu. ken la o luka e nena pi ilo ante lon poka. ken la o pana e nimi sina pi ilo Email la ilo li pana e nanpa nasa tawa ni la o pana e nanpa sama tawa ilo.'
+        placeholder: 'ilo Email la nimi sina (ilo ni la sina jo e nimi la ni kin li ken)'
+        action: 'o lon'
+        emailSent: 'mi pana e nanpa nasa luka wan tawa sina <strong>%email%</strong>. o pana e nanpa lon ni. nanpa ni li ken e sina lon tenpo wan taso lon tenpo poka taso.'
         userNotFound: 'User not found.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'nanpa nasa sina li {{code}}'
+            instruction: 'o pana e nanpa ni lon ilo la mi kama sona e sina:'
+            extra: 'sina wile ala e nanpa ni la o weka e lipu ni. ale li pona.'
         why: >
-            sina kama sijelo lon ilo la sina ken pali e lipu sina ({/@example=sama lipu ni}).
+            sina kama lon ilo la sina ken pali e lipu sina ({/@example=sama lipu ni}).
         passwordless: 'ilo li wile ala e ni: sina pali e nimi len open. {https://avris.it/blog/passwords-are-passé=o kama sona e nasin ante mi.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Domain'
-        deprecated: 'moli'
+        deprecated: 'pakala'
         depreciationNotice: >
             This is not a reliable authentication provider.
             <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
             We highly recommend making sure that you have a different login method available.
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'o lon'
+        invalid: 'nanpa li ike.'
     account:
         changeUsername:
             header: 'Username'
@@ -375,8 +375,8 @@ user:
         admin: 'Admin'
     logout: 'Log out'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
+        header: 'sitelen'
+        change: 'o ante e sitelen'
         failed: 'Please reconnect your social media to fix the missing avatar.'
     deleteAccount: 'Delete account'
     deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
@@ -427,8 +427,9 @@ profile:
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
     words: 'nimi ante'
     wordsColumnHeader: 'Column header'
-    birthday: 'mute pi tenpo sike mi li'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthday: 'tenpo suno pi sike sin'
+    birthdayInfo: 'mi pana ala e ni tawa lipu sina. mi nanpa e mute pi tenpo sike sina li pana e ni taso.'
+    age: 'mi lon tenpo sike'
     timezone:
         header: 'Timezone'
         placeholder: 'Select your timezone'
@@ -460,8 +461,8 @@ profile:
     linksRecommended: 'We recommend linking to'
     column: 'Column'
     opinions:
-        header: 'Legend/opinions'
-        description: 'Description…'
+        header: 'sitelen pilin'
+        description: 'sona…'
         colours:
             _: '(kule…)'
             pink: 'loje walo'
@@ -471,7 +472,7 @@ profile:
             blue: 'laso telo'
             grey: 'pimeja'
         styles:
-            _: '(namako…)'
+            _: '(selo…)'
             bold-italics: 'wawa en tawa poka'
             bold: 'wawa'
             italics: 'poka'
@@ -535,6 +536,9 @@ profile:
         validation:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
+        removeSelf:
+            action: 'o weka e mi'
+            confirm: 'sina wile ala wile weka a e sina tan lipu jan pi jan @%username%?'
 
 share: 'o pana e ni tawa jan ante'
 
@@ -561,11 +565,11 @@ crud:
 footer:
     license: >
          lawa {/license=OQL} li lawa e {https://gitlab.com/PronounsPage/PronounsPage=mama ilo lipu} e toki lipu.
-    links: 'Contact, social media'
+    links: 'o toki tawa mi'
     legal: 'toki pi nasin lawa'
     financial: 'Financial transparency'
     technical: 'ijo ilo'
-    sibling: 'pali ante mi'
+    sibling: 'pali poka'
     stats:
         header: 'nanpa'
         overall: 'lipu ale pi toki ante'
@@ -600,7 +604,7 @@ confirm:
 terms:
     header: 'Terms of Service'
     lastUpdate: 'lipu ni li kama ante lon tenpo'
-    consent: 'sina kama sijelo lon la {/lawa=nasin lawa mi} li pona tawa sina.'
+    consent: 'sina kama lon ilo la {/lawa=nasin lawa mi} li pona tawa sina.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -788,7 +792,7 @@ admin:
         confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 
 table:
-    empty: 'Empty…'
+    empty: 'ala…'
     count: 'Count'
     sort: 'Drag to sort'
     scrollUp: 'Scroll to the top'
@@ -819,8 +823,8 @@ error:
     generic: 'Something went wrong, please try again…'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'sina ilo ala ilo? mi wile sona tan ni: ilo mute li lukin jaki mute e lipu ni.'
+    invalid: 'pakala. ken la sina ilo. sina ilo ala la o pali sin.'
 
 mode:
     light: 'walo'
