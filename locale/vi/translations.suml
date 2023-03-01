@@ -740,6 +740,9 @@ profile:
         validation:
             userNotFound: 'Người dùng không tồn tại'
             required: 'Mối quan hệ là trường bắt buộc'
+        removeSelf:
+            action: 'Xóa hồ sơ của bạn'
+            confirm: 'Bạn có chắc chắn muốn xóa hồ sơ của bạn khỏi vòng bạn bè của @%username% không?'
     sensitive:
         header: 'Cảnh báo nội dung'
         info: >
@@ -1026,6 +1029,8 @@ mode:
     automatic: 'Tự động'
     dark: 'Chế độ tối'
     reducedColours: 'Giảm màu'
+    accessibility: 'Cài đặt trợ năng'
+    reducedItems: 'Giảm số mục hiển thị'
 
 ban:
     reason: 'Lí do cấm'
