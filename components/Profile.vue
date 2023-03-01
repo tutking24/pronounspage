@@ -26,12 +26,12 @@
             <div v-if="hasDescriptionColumn" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <div v-if="profile.description" class="mb-3">
                     <p v-for="line in profile.description.split('\n')" class="mb-1">
-                        <Twemoji><Spelling escape :text="line"/></Twemoji>
+                        <Spelling escape :text="line"/>
                     </p>
                 </div>
                 <p v-if="profile.age && profile.age >= minAge">
                     <Icon v="birthday-cake"/>
-                    <T>profile.birthday</T><T>quotation.colon</T>
+                    <T v-if="$te('profile.age')">profile.age</T><T v-else>profile.birthday</T><T>quotation.colon</T>
                     {{ profile.age }}
                 </p>
                 <Timezone v-if="profile.timezone" :value="profile.timezone" :static="static"/>
@@ -74,11 +74,11 @@
 
                 <ExpandableList :values="profile.names" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :customOpinions="profile.opinions"/>
+                        <Opinion :word="convertName(s.el.value)" :opinion="s.el.opinion" :escape="false" :link="config.locale === 'tok' && config.pronouns.enabled ? `${config.pronouns.prefix}/${s.el.value}` : null" :customOpinions="profile.opinions"/>
                     </template>
                 </ExpandableList>
             </div>
-            <div v-if="profile.pronouns.length" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
+            <div v-if="profile.pronouns.length && config.pronouns.enabled" :class="['col-6', mainRowCount === 3 ? 'col-lg-4' : 'col-lg-6']">
                 <h3>
                     <Icon v="tags"/>
                     <T>profile.pronouns</T>
@@ -86,7 +86,7 @@
 
                 <ExpandableList :values="pronounOpinions" :limit="16" class="list-unstyled" :static="static" :expand="expandLinks">
                     <template v-slot="s">
-                        <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`/${s.el.link}`" :customOpinions="profile.opinions"/>
+                        <Opinion :word="typeof s.el.pronoun === 'string' ? s.el.pronoun : s.el.pronoun.name(glue)" :opinion="s.el.opinion" :link="`${config.pronouns.prefix || ''}/${s.el.link}`" :customOpinions="profile.opinions"/>
                     </template>
                 </ExpandableList>
             </div>
@@ -191,7 +191,7 @@
                         continue;
                     }
 
-                    if (!link.startsWith(':')) {
+                    if (!link.startsWith(':') && this.config.locale !== 'tok') {
                         link = link.toLowerCase();
                     }
 
@@ -253,10 +253,10 @@
             mainRowCount() {
                 let c = 0;
                 if (this.profile.names.length) { c++; }
-                if (this.profile.pronouns.length) { c++; }
+                if (this.profile.pronouns.length && this.config.pronouns.enabled) { c++; }
                 if (this.profile.links.length) { c++; }
                 return c;
-            }
+            },
         },
     };
 </script>

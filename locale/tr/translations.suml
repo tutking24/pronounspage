@@ -448,12 +448,35 @@ contact:
                 - 'Sosyal medyanı bırak,'
                 - 'Eğer daha önce deneyimin olduysa söyle,'
                 - 'Neye yardım etmek istediğini söyle.'
+    language: >
+        Biz uluslararası bir birliğiz– Belirli bir dil sürümünü oluşturan kişiler, mesajınızı okuyacak olan kişilerle
+        aynı olmayabilir. Yani eğer mümkünse, bizimle <strong>İngilizce ya da Lehçe</strong> olarak iletişim kurmanızı tercih ederiz.
+    contribute:
+        header: 'Katkı yap'
+        intro: >
+            Pronouns.page, gönüllüler tarafından oluşturulan açık kaynaklı bir projedir. Siz de katkınızı
+            ekleyebilirsiniz! Yardımınız için minnettar olacağımız bazı alanlar burada. Aktif katkıda bulunanlar
+            takımımıza katılmaya davet edilecektir.
+        entries:
+            header: 'Entry ekle'
+        translations:
+            header: 'Çeviri değiştir veya ekle'
+            description: 'Bir çeviri dizisi eksik veya yanlış mı? Alt bilgide "Çeviri öner"e tıklayın ve talimatları izleyin.'
+        version:
+            header: 'Yeni bir dil versiyonu oluşturun'
+            description: >
+                Yeni bir dil versiyonu oluşturma talimatları {https://en.pronouns.page/new-version=burada}. Başlamadan
+                önce, lütfen {/contact=bizimle iletişime geçin} çünkü başkaları da yeni dil versiyonuna başlamış
+                olabilir.
+        technical:
+            footer: 'Teknik görevler'
 
 support:
     header: 'Destek'
     description: >
         Eğer sunucu, bağlantı ve stickerlar vs. için bağış yapmak ya da sadece yazarlara bir bira almak istersen,
          Aşşağıdaki linkleri kullanabilirsin:
+    bankAccount: 'Banka transferi'
 
 user:
     header: 'Hesap'
@@ -760,6 +783,9 @@ terms:
     header: 'Kullanım Şartları'
     lastUpdate: 'Son güncelleme'
     consent: 'Kayıt olarak {/terms=Kullanım Şartları}’mızı kabul ediyorsun.'
+
+privacy:
+    header: 'Gizlilik Politikası'
 
 admin:
     header: 'Admin Paneli'

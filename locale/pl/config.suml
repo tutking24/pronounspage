@@ -289,7 +289,7 @@ links:
                     zin na temat odkrywania swojej płci oraz życia jako osoba niebinarna.
                     Szeroki zakres tematyczny oraz dowolność formy zaowocowały dużą różnorodnością zgłoszeń
                     – od opowiadań i wierszy, przez prozę poetycją, eseje i rysunki, do opowieści-diagramu.
-                    Zaparszamy do lektury!
+                    Zapraszamy do lektury!
                 downloads:
                     pdf-wide:
                         filename: 'Poczytałosie 2022 spread.pdf'
@@ -306,6 +306,10 @@ links:
                     #mobi:
                     #    filename: 'Poczytałosie 2022.mobi'
                     #    icon: 'tablet-alt'
+                extra:
+                    - 'ISBN wersji elektronicznej: {https://e-isbn.pl/IsbnWeb/onix/summary.html?record_id=7417234=978-83-950468-3-4}'
+                    - 'ISBN wersji papierowej: {https://e-isbn.pl/IsbnWeb/onix/summary.html?record_id=7417232=978-83-950468-1-0}'
+
     academic:
         -
             icon: 'comment-alt-edit'
@@ -1491,6 +1495,32 @@ links:
                 zaproponowały w ubiegłym roku słowo "dziabko". Dziabko, czyli niebinarny odpowiednik babci i dziadka,
                 czy też niebinarna osoba, będąca rodzicem naszego rodzica.
                 Eksperci zaproponowali też obchodzenie Dnia Dziabka po Dniu Babci i Dniu Dziadka - 23 stycznia.
+        -
+            icon: 'newspaper'
+            headline: 'Osoby uczniowskie, czyli genderowa nowomowa'
+            extra: ' – <strong>DoRzeczy</strong>'
+            quote: >
+                Autorzy strony internetowej zaimki.pl dokładają wprawdzie starań, by przekonywać ludzi,
+                jak ważne są zaimki trans, ale jest to jednak nisza i margines.
+            response: >
+                Nasza odpowiedź: {/blog/konserwatywny-prezent=„Miły prezent od konserwatywnej dziennikarki”}
+        -
+            icon: 'newspaper'
+            url: 'https://noizz.pl/lgbt/ojciec-powiedzial-mi-ze-nasza-wiez-zostala-zerwana-jestem-niebinarne/zjzv9ws'
+            headline: 'Ojciec powiedział mi, że nasza więź została zerwana. Jestem niebinarne'
+            extra: ' – <strong>noizz.pl</strong>'
+            quote: >
+                Dopiero kiedy pojawił się Słownik Neutratywów Języka Polskiego, a potem zaczął się rozrastać
+                i coraz więcej osób się o nim dowiadywało, zaczęłom się zastanawiać nad tym,
+                czy może by jednak nie zacząć posługiwać się innymi zaimkami. Myśl o zaimkach pchnęła mnie do tego,
+                żebym zastanowiło się nad swoją tranzycją w tamtym momencie.
+        -
+            icon: 'newspaper'
+            url: 'https://niestatystyczny.pl/2022/05/08/1000-slow-dziennie-rozmowa-z-peterem-v-brettem/'
+            headline: '1000 słów dziennie – rozmowa z Peterem V. Brettem'
+            extra: ' – <strong>niestatystyczny.pl</strong>'
+            quote: >
+                Czy korzystałeś z opracowań na temat tego, jak mówią o sobie osoby niebinarne, np. z pronouns.page?
 
     recommended:
         -

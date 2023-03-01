@@ -641,7 +641,7 @@ profile:
         description: 'Bara du ser det här'
     language:
         header: 'Språk'
-        description: '@%username%''s kort är också tillgänglig på dessa språk:'
+        description: '@%username%''s kort är också tillgänglig på dessa språk'
     verifiedLinks:
         header: 'Verifierade länkar'
         info: >

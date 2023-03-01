@@ -626,6 +626,15 @@ profile:
         info: >
             Hvis du fyller ut dette feltet, vil kortet ditt vise <strong>hva klokka er der du bor</strong>. Eventuelt kan
             du også velge å vise tilnærmet hvor du er.
+    verifiedLinks:
+        header: 'Verifiserte linker'
+    sensitive:
+        header: ' Innholdsadvarsel '
+        display: 'Fortsett til kortet'
+    flagsCustomForm:
+        altExample: 'Et eksempel på hvordan den alternative teksten kan se ut'
+        alt: '(valgfritt) Alternativ tekst som beskriver hvordan flagget ser ut (se nedenfor)'
+        link: '(valgfritt) Link til mer info'
 
 share: 'Del'
 

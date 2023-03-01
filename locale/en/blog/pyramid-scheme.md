@@ -4,8 +4,6 @@
 
 <img src="/img-local/blog/alpha-males.png" class="d-none" alt="Screenshot of a tweet quoted below. A meme with a muscular doge labeled “Trans Guys – I am a man, in spite of a society that insisted otherwise from birth” and a sad doge labeled “Alpha Males – To be a man, I have to do arbitrary performative nonsense perfectly or my card will be revoked!”"/>
 
-{disable_twemoji}
-
 <div class="alert alert-warning"><span class="fal fa-exclamation-triangle"></span> CW: homophobic slur</div>
 
 At a recent meeting of the International Nonbinary Network Felix from [SIB](https://www.facebook.com/SverigesIckebinara)
@@ -13,15 +11,11 @@ said a sentence that really stuck with me. Paraphrasing:
 
 > Gender binary is a pyramid scheme — if you don't recruit a bunch of people and police their behaviour, the whole system will collapse.
 
-{twemoji}
-
 Back when I thought I was a man, I kept finding “being a man” to be quite exhausting.
 Your voice can't be too high. You can't shave your armpits, that's for girls.
 Your football skills must be at least adequate. And you have to _enjoy_ playing it.
 You can't paint your nails, what are you, a fag? You have to be strong and brave… you chicken!
 That's not manly! Men don't cry! … Oh, just shut up! 🤮
-
-{/twemoji}
 
 And that's how I felt being on the _privileged_ side of the patriarchy!
 If I had been <abbr title="assigned female at birth">AFAB</abbr>,
@@ -62,10 +56,6 @@ Can you imagine, how beautiful the world would be if we just stopped policing ot
 If TERFs stopped trying to restrict who can be a woman, if truscums stopped trying restrict who can be trans,
 if, I don't know, your basketball buddies stopped making fun of you for liking soap operas?
 
-{twemoji}
-
 Trans people are hit way harder by gender norms, so we're fighting back harder.
 But it's not just our fight. We can _all_ benefit from dismantling that pyramid scheme.
 By simply not contributing to it anymore 😉
-
-{/twemoji}

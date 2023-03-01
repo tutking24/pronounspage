@@ -17,7 +17,7 @@
         </div>
 
         <form @submit.prevent="save" :class="[saving ? 'saving' : '']">
-            <TabsNav :tabs="['opinions', 'names', 'pronouns', 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', 'sensitive', $isGranted() ? 'admin' : undefined]"
+            <TabsNav :tabs="['opinions', 'names', config.pronouns.enabled ? 'pronouns' : undefined, 'description', 'flags', 'links', 'birthday', 'timezone', 'words', 'circle', 'sensitive', $isGranted() ? 'admin' : undefined]"
                      pills showheaders navclass="mb-3 border-bottom-0">
                 <template v-slot:admin-header>
                     <Icon v="user-cog"/>
@@ -110,7 +110,7 @@
                     <p v-if="$te('profile.namesInfo')" class="small text-muted">
                         <T>profile.namesInfo</T>
                     </p>
-                    <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128"/>
+                    <OpinionListInput v-model="names" :customOpinions="opinions" :maxitems="128" :maxlength="config.profile.longNames ? 255 : 32"/>
                     <PropagateCheckbox field="names" :before="beforeChanges.names" :after="names" v-if="otherProfiles > 0" @change="propagateChanged"/>
                 </template>
 

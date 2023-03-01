@@ -47,6 +47,7 @@
                         or if you think the person shouldn't be banned despite another moderator thinking otherwise,
                         please start a thread on Teams to discuss it.
                     </p>
+                    <div class="table-responsive">
                     <table class="table table-striped" :style="!user.bannedReason && user.bannedBy ? `opacity: 0.5` : ``">
                         <thead>
                         <tr>
@@ -74,6 +75,7 @@
                         </tr>
                         </tbody>
                     </table>
+                    </div>
                     <p v-if="!user.bannedReason && user.bannedBy">
                         <Icon v="check-circle"/> Ban (proposals) were cancelled / account was unbanned.
                     </p>

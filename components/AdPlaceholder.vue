@@ -6,12 +6,14 @@
             <Debug :v="adConfig"/>
         </template>
         <ins v-else class="adsbygoogle"
-             style="display:block"
+             style="display:block;margin-block: 1em;"
              data-ad-client="ca-pub-8518361481036191"
              :data-ad-slot="adConfig.slotId"
              :data-ad-format="adConfig.adFormat"
              :data-ad-layout="adConfig.adLayout"
-             :data-full-width-responsive="adConfig.responsive ? 'true' : ''"></ins>
+             :data-full-width-responsive="adConfig.responsive ? 'true' : ''"
+             role="alert"
+             :data-label="$t('support.ad')"></ins>
     </div>
 </template>
 
@@ -51,11 +53,20 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .ad-placeholder {
     background-color: #b2caec;
     width: 100%;
     height: 200px;
     padding: 1em;
+}
+
+.adsbygoogle:not(:empty) {
+    text-decoration: none;
+    &:before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.7rem;
+    }
 }
 </style>

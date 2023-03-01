@@ -88,7 +88,7 @@ sources:
     mergePronouns: {}
 
 nouns:
-    enabled: true
+    enabled: false
     route: 'từ-điển'
     collapsable: false
     plurals: true
@@ -111,7 +111,7 @@ terminology:
         - 'xu hướng cảm xúc'
         - 'xu hướng thứ ba'
         - 'giới tính'
-        - 'thể hiện bản thân theo giới tính'
+        - 'bản dạng giới'
         - 'mối quan hệ'
         - 'ngôn ngữ'
         - 'sự thu hút'
@@ -191,7 +191,7 @@ profile:
             values: ['[không dùng]', 'Bạn', 'Cậu', 'Nó', 'Ông', 'Bà', 'Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em', 'Con', 'Cháu', 'Đồng chí', 'Họ']
         -
             header: 'Từ chỉ người và quan hệ huyết thống'
-            values: ['bạn', 'nam', 'nữ', 'anh/em trai', 'chị/em gái', 'ông', 'bà', 'bro', 'sis']
+            values: ['bạn', 'nam giới', 'nữ giới', 'anh/em trai', 'chị/em gái', 'ông', 'bà', 'bro', 'sis']
         -
             header: 'Lời khen'
             values: ['xinh', 'đẹp trai', 'cute', 'sexy', 'cuốn hút', 'quyến rũ']

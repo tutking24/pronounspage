@@ -3,13 +3,13 @@ locale: 'tok'
 header: true
 
 pronouns:
-    enabled: true
+    enabled: false
     route: 'nimi'
     default: 'ona'
     any: false
     plurals: false
     honorifics: false
-    multiple: false
+    multiple: true
     null: false
     emoji: false
     mirror: false
@@ -17,6 +17,7 @@ pronouns:
     prefix: '/li'
     autoOpenGenerator: true
     disableDescriptions: true
+    disableDisclaimer: true
 
 pronunciation:
     enabled: false
@@ -58,7 +59,8 @@ people:
 
 # optional, but would be nice to have
 english:
-    enabled: false
+    enabled: true
+    route: 'english'
 
 faq:
     enabled: true
@@ -74,11 +76,15 @@ contact:
         -
             footerName: 'jan Tepo'
             username: 'tbodt'
-            footerAreas: 'ante toki'
+            footerAreas: 'li ante e toki li pali e ilo'
+        -
+            footerName: 'jan Anteja'
+            username: 'Avris'
+            footerAreas: 'li pali e ilo'
         -
             footerName: 'jan Sewe (soweli e wan esun)'
             username: 'GiggyMantis'
-            footerAreas: 'ante toki'
+            footerAreas: 'li ante e toki'
     team:
         enabled: true
         route: 'kulupu-pi-nasin-toki'
@@ -110,8 +116,10 @@ profile:
             values: []
     flags:
         defaultPronoun: 'ona'
+    longNames: true
 
-calendar: enabled: false
+calendar:
+    enabled: false
 
 census:
     enabled: false

@@ -28,6 +28,11 @@
                                 </a>
                             </li>
                         </ul>
+                        <ul v-if="release.extra" class="small">
+                            <li v-for="line in release.extra">
+                                <LinkedText :text="line"/>
+                            </li>
+                        </ul>
                         <p v-if="downloadsCount(release)">
                             <Icon v="download"/>
                             {{ downloadsCount(release) }}

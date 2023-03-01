@@ -3,7 +3,7 @@
         <span v-if="range" class="badge bg-primary">{{ event.getRange(year) }}</span>
         <Flag v-if="event.flag" termkey="" name="" :alt="$t('flags_alt.' + event.flag.replace(/'/g, '*').replace(/ /g, '_')) || ''" :img="`/flags/${event.flag}.png`"/>
         <Icon v-else v="arrow-circle-right"/>
-        <T v-if="$te(`calendar.events.${eventName}`)" :params="{param: eventParam}">calendar.events.{{eventName}}</T>
+        <T v-if="$te(`calendar.events.${eventName}`, true)" :params="{param: eventParam}">calendar.events.{{eventName}}</T>
         <LinkedText v-else :text="eventName"/>
         <a v-if="ics" :href="`/api/queer-calendar-${config.locale}-${year}-${event.getUuid()}.ics`" class="small" :aria-label="$t('crud.download') + ' .ics'" :title="$t('crud.download') + ' .ics'">
             <Icon v="calendar-plus"/>

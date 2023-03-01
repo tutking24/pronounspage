@@ -1,9 +1,11 @@
+@use "sass:list";
+
 @import "../data/variables";
 $fontExtra: null !default;
-$fonts: $fontHeadings $fontText $fontExtra;
+$fonts: list.join(list.join($fontHeadings, $fontText), $fontExtra);
 
-$font-family-sans-serif: $fontText, "Noto Emoji", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$headings-font-family: $fontHeadings, "Noto Emoji", $fontText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: list.join($fontText, ("Noto Color Emoji", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")) !default;
+$headings-font-family: list.join($fontHeadings, ("Noto Color Emoji", $fontText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji")) !default;
 
 $primary: #C71585;
 $alert-border-level: -3;

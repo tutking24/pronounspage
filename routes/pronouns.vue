@@ -115,7 +115,7 @@
                                 <T>home.generator.pronunciation</T>
                             </p>
                             -->
-                            <div v-if="!usedBaseEquals" class="alert alert-warning">
+                            <div v-if="!usedBaseEquals && !config.pronouns.disableDisclaimer" class="alert alert-warning">
                                 <Icon v="exclamation-triangle"/>
                                 <T>pronouns.generated</T>
                             </div>

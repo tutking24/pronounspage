@@ -149,7 +149,7 @@
             <Separator icon="heart"/>
             <Support/>
             <div class="text-center my-4 small">
-                <ReducedColoursSwitch/>
+                <AccessibilitySettings/>
             </div>
         </template>
     </Page>
@@ -284,20 +284,15 @@
                 }
             },
             selectMainPronouns(pronouns) {
-                const best = {}
+                const best = []
                 for (let {value: pronoun, opinion} of pronouns) {
                     const opinionValue = opinions[opinion]?.value || 0;
-                    if (best[opinionValue] === undefined) {
-                        best[opinionValue] = [];
+                    if (opinionValue >= 0) {
+                        best.push(pronoun);
                     }
-                    best[opinionValue].push(pronoun);
                 }
 
-                if (!Object.keys(best).length) { return []; }
-
-                const bestKey = Math.max(...Object.keys(best));
-
-                return bestKey >= 0 ? best[bestKey].slice(0, 3) : [];
+                return best.slice(0, 3);
             },
             async impersonate() {
                 const { token } = await this.$axios.$get(`/admin/impersonate/${encodeURIComponent(this.username)}`);
@@ -308,7 +303,9 @@
             },
         },
         head() {
-            const mainPronoun = buildPronoun(pronouns, this.config.profile.flags.defaultPronoun);
+            const mainPronoun = this.config.profile.flags?.defaultPronoun
+                ? buildPronoun(pronouns, this.config.profile.flags.defaultPronoun)
+                : null;
 
             return head({
                 title: `@${this.username}`,
@@ -319,9 +316,9 @@
                     const flagName = process.env.FLAGS[flag];
                     return flag.startsWith('-')
                         ? flagName
-                        : mainPronoun.format(
+                        : (mainPronoun ? mainPronoun.format(
                             this.$t(`flags.${flagName.replace(/ /g, '_').replace(/'/g, `*`)}`, {}, false) || flagName
-                        );
+                        ) : flagName);
                 }) : undefined,
             });
         },

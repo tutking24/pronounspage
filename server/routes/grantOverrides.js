@@ -6,7 +6,6 @@ import SQL from 'sql-template-strings';
 import fetch from 'node-fetch';
 import assert from 'assert';
 import { handleErrorAsync } from "../../src/helpers";
-import queryString from 'query-string';
 
 const normalizeDomainName = (domain) => {
     const url = new URL('https://' + domain.replace(/^https?:\/\//, ''));
@@ -140,7 +139,7 @@ router.get('/user/social/indieauth', handleErrorAsync(async (req, res, next) => 
         },
     }).then(res => res.text());
 
-    const profile = queryString.parse(response);
+    const profile = JSON.parse(response);
 
     if (!profile || !profile.me) { next(); return; }
 

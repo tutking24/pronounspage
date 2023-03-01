@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import {mapState} from "vuex";
+
 export default {
     props: {
         values: { required: true },
@@ -32,22 +34,37 @@ export default {
         expand: { type: Boolean },
     },
     data() {
-        let showLimit = this.values.length;
-        let hiddenCount = 0;
+        return this.calcData();
+    },
+    methods: {
+        calcData() {
+            let showLimit = this.values.length;
+            let hiddenCount = 0;
+            const limit = this.reducedItems ? 4 : this.limit;
 
-        if (this.values.length > this.limit) {
-            showLimit = this.limit;
-            hiddenCount = this.values.length - this.limit;
-        }
-        if (hiddenCount === 1) {
-            showLimit--;
-            hiddenCount++;
-        }
+            if (this.values.length > limit) {
+                showLimit = limit;
+                hiddenCount = this.values.length - limit;
+            }
+            if (hiddenCount === 1) {
+                showLimit--;
+                hiddenCount++;
+            }
 
-        return {
-            allShown: this.expand,
-            showLimit,
-            hiddenCount,
+            return {
+                allShown: this.expand,
+                showLimit,
+                hiddenCount,
+            }
+        },
+    },
+    mounted() {
+        // not sure why that's necessary, but screw it…
+
+        if (!process.client) { return; }
+
+        for (let [key, value] of Object.entries(this.calcData())) {
+            this[key] = value;
         }
     },
     watch: {
@@ -56,6 +73,16 @@ export default {
                 this.allShown = true;
             }
         },
+        reducedItems() {
+            for (let [key, value] of Object.entries(this.calcData())) {
+                this[key] = value;
+            }
+        }
     },
+    computed: {
+        ...mapState([
+            'reducedItems',
+        ]),
+    }
 }
 </script>

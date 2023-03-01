@@ -12,10 +12,7 @@
 
         <AdPlaceholder phkey="main-0"/>
 
-        <Spelling v-if="disableTwemoji" :text="content"/>
-        <Twemoji v-else>
-            <Spelling :text="content"/>
-        </Twemoji>
+        <Spelling :text="content"/>
 
         <AdPlaceholder phkey="main-1"/>
 

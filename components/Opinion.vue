@@ -3,10 +3,8 @@
         <Tooltip :text="op.description">
             <Icon :v="op.icon"/>
         </Tooltip>
-        <Twemoji>
-            <nuxt-link v-if="link" :to="link" :class="`colour-${op.colour || 'default'}`"><Spelling :escape="escape" :text="word"/></nuxt-link>
-            <span v-else><Spelling :escape="escape" :text="word"/></span>
-        </Twemoji>
+        <nuxt-link v-if="link" :to="link" :class="`colour-${op.colour || 'default'}`"><Spelling :escape="escape" :text="word"/></nuxt-link>
+        <span v-else><Spelling :escape="escape" :text="word"/></span>
     </span>
 </template>
 

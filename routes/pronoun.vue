@@ -18,16 +18,14 @@
             <div class="alert alert-primary">
                 <h2 class="text-center mb-0">
                     <template v-if="nameOptions.length === 1">
-                        <Twemoji><strong><Spelling :text="selectedPronoun.name(glue)"/></strong><small v-if="selectedPronoun.smallForm">/<Spelling :text="selectedPronoun.morphemes[selectedPronoun.smallForm]"/></small></Twemoji>
+                        <strong><Spelling :text="selectedPronoun.name(glue)"/></strong><small v-if="selectedPronoun.smallForm">/<Spelling :text="selectedPronoun.morphemes[selectedPronoun.smallForm]"/></small>
                     </template>
                     <template v-else>
                         <template v-for="(nameOption, i) in nameOptions">
                             <nuxt-link :to="'/' + addSlash(nameOption)">
-                                <Twemoji>
-                                    <strong>
-                                        <Spelling :text="nameOption" escape/>
-                                    </strong>
-                                </Twemoji>
+                                <strong>
+                                    <Spelling :text="nameOption" escape/>
+                                </strong>
                             </nuxt-link>
                             <span v-if="i < nameOptions.length - 1"><Spelling :text="glue"/></span>
                         </template>
@@ -35,9 +33,9 @@
                 </h2>
                 <p class="h6 small text-center mb-0 mt-2" v-if="selectedPronoun.description">
                     <em>
-                        (<Twemoji><LinkedText escape noicons :text="Array.isArray(selectedPronoun.description)
+                        (<LinkedText escape noicons :text="Array.isArray(selectedPronoun.description)
                             ? ($t('pronouns.alt.header') + ': ' + selectedPronoun.description.join(glue))
-                            : selectedPronoun.description"/></Twemoji>)
+                            : selectedPronoun.description"/>)
                     </em>
                 </p>
             </div>
@@ -57,7 +55,7 @@
         </section>
 
         <section v-if="selectedPronoun.history">
-            <template v-for="part in selectedPronoun.history.replace(/\\@/g, '###').split('@')">
+            <template v-for="part in selectedPronoun.history.replace(/\\@/g, '###').split('@')" v-if="part !== '__generator__' || !config.pronouns.disableDisclaimer">
                 <div v-if="part === '__generator__'" class="alert alert-warning">
                     <Icon v="exclamation-triangle"/>
                     <T>pronouns.generated</T>

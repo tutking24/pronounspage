@@ -3,12 +3,12 @@
         <a v-if="link" :href="link.startsWith('http') ? link : `/${config.nouns.route}/${config.terminology.route}#${link.toLowerCase()}`" target="_blank" rel="noopener" :title="alt">
             <img v-if="missing === false" :src="img" :alt="alt" class="flag-mini rounded" @error="missing = true"/>
             <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
-            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
+            <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup>
         </a>
         <span v-else :title="alt">
             <img v-if="missing === false" :src="img" :alt="alt" class="flag-mini rounded" @error="missing = true"/>
             <LocaleLink locale="en" v-else link="/blog/missing-flags" class="text-danger"><Icon v="exclamation-circle"/></LocaleLink>
-            <Twemoji><Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup></Twemoji>
+            <Spelling escape :text="name"/><sup v-if="custom" class="text-muted"><small><Icon v="user"/></small></sup><sup v-if="asterisk" class="text-muted"><small>*</small></sup>
         </span>
         <span class="flag-preview bg-white rouded p-2 border">
             <img v-if="missing === false" :src="img" :alt="alt" class="rounded" @error="missing = true"/>
