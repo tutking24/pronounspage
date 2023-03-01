@@ -996,8 +996,8 @@ mode:
     automatic: 'Автоматический'
     dark: 'Тёмная тема'
     reducedColours: 'Убрать цвета'
-    accessibility: 'Настройки специальных возможностей'
-    reducedItems: 'Уменьшенные предметы'
+    accessibility: 'Специальные возможности'
+    reducedItems: 'Уменьшить количество отображаемых элементов	'
 
 ban:
     reason: 'Причина блокировки'
@@ -1269,6 +1269,7 @@ calendar:
         nonbinary_week: 'Неделя осведомлённости о небинарности и небинарных'
         lesbian_aunts_day: 'День тёть-лесбиянок'
         autumn_testing_week: 'Неделя осеннего тестирования на ВИЧ в Европе'
+        hiv_aging_awareness_day: 'День осведомленности о ВИЧ/СПИДе при старении'
 
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'
