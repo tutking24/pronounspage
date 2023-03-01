@@ -196,10 +196,18 @@ profile:
     enabled: true
     editorEnabled: true
     defaultWords:
-        - ['[saygı ifadesi yok]',  'yoldaş']
-        - ['kişi', 'adam', 'kadın', 'bayan', 'kanka', 'erkek', 'kız', 'ahbap', 'dost', 'aga', 'aşko', 'kardeş']
-        - ['güzel', 'yakısıklı', 'tatlı', 'ateşli', 'seksi']
-        - ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
+        -
+            header: ~
+            words: ['[saygı ifadesi yok]',  'yoldaş']
+        -
+            header: ~
+            words: ['kişi', 'adam', 'kadın', 'bayan', 'kanka', 'erkek', 'kız', 'ahbap', 'dost', 'aga', 'aşko', 'kardeş']
+        -
+            header: ~
+            words: ['güzel', 'yakısıklı', 'tatlı', 'ateşli', 'seksi']
+        -
+            header: ~
+            words: ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
     flags:
         defaultPronoun: 'they'
 
