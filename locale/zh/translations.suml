@@ -159,21 +159,21 @@ nouns:
 
     image: '圖像'
 
-community: # TODO
+community:
     header: '社羣'
-    headerLong: 'Queer community'
+    headerLong: '酷兒社區'
 
-terminology: # TODO
-    header: 'Terminology'
-    headerLong: 'Dictionary of queer terminology'
+terminology:
+    header: '術語'
+    headerLong: '酷兒術語詞典'
     info:
         - >
-            A dictionary of terms related to the LGBTQ+ community.
-    term: 'Term'
-    original: 'Etymology'
-    category: 'Category'
-    images: 'Additional images, from outside the flag catalogue'
-    definition: 'Definition'
+            與LGBTQ+社區相關的術語詞典。
+    term: '術語'
+    original: '術語'
+    category: '類別'
+    images: '其他圖片，來自旗幟目錄之外'
+    definition: '定義'
 
 faq:
     header: '常見問題'
@@ -491,7 +491,7 @@ profile:
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
     flagsCustomWarning: '此旗幟是由一名用戶上傳的，pronouns.page團隊不為此負責'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: '這不是酷兒身份，但我們將其包含為了其他方面很酷兒的人（例如異性戀跨性別者）中。'
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
     verifiedLinks:
@@ -540,13 +540,12 @@ profile:
             invalidOpinion: '未能在以上的圖例找到已選擇的圖示'
         custom: '用戶自定義的圖示:'
 
-    #TODO
-    #banner: >
-    #    You can also use our website to create a card, {/@example=like this one},
-    #    containing your names, pronouns, pride flags, liked words, etc.
-    #    Then you can link to it in your bio or email footer.
-    #    Just create an account {/account=here}.
-    #bannerButton: '創造名片'
+    banner: >
+        您還可以使用我們的網站創建一張卡片，{/@example=例如這張卡片}，
+        包含你的名字、代詞、驕傲旗幟、喜歡的詞等的卡片。
+        然後你可以在你的簡歷或電子郵件頁腳中鏈接到它。
+        只需在{/account=這裡創建一個帳戶}.
+    bannerButton: '創造名片'
     card:
         link: '名片圖片'
         generate: '生成'
@@ -576,6 +575,9 @@ profile:
         validation:
             userNotFound: '用戶並不存在'
             required: '必須填寫關係'
+        removeSelf:
+            action: '刪除你自己'
+            confirm: '您確定要從@%username%的圈子中刪除您的個人資料嗎？'
 
 share: '分享'
 
@@ -604,7 +606,7 @@ footer:
         {https://gitlab.com/PronounsPage/PronounsPage=原始碼}及內容採用{/license=OQL}條款授權。
     links: '聯絡我們'
     legal: '法律相關'
-    financial: '財務報告' # TODO: could also be 財政透明
+    financial: '財務報告'
     technical: '技術相關'
     sibling: '相關專案'
     stats:
@@ -699,6 +701,8 @@ mode:
     automatic: '自動'
     dark: '黑暗模式'
     reducedColours: '減少顏色'
+    accessibility: '輔助功能設置'
+    reducedItems: '減少物品數量' # TODO bad wording
 
 ban:
     reason: '封禁原因'
@@ -724,7 +728,7 @@ report:
     comment: '請簡述資料有什麼問題'
     confirm: '您確定要舉報@%username%嗎？'
     sent: '您的舉報已被傳送。感謝您的幫助！'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}' # TODO
+    terms: '請記住我們的{/terms=服務條款}禁止的內容'
     hoarding: '請不要舉報“用戶名稱囤積”的行為。我們會定時刪除沒有名片的用戶，您的報告並不會加快此過程。'
 
 translationMode:
