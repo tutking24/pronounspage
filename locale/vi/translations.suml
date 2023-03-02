@@ -615,7 +615,7 @@ profile:
         Bạn có thể nhập một <strong>danh xưng</strong> (ví dụ “anh ấy” hoặc “cô ấy”)
         hoặc một <strong>đường link</strong> (ví dụ “https://vi.pronouns.page/:Vanh”).
         Bạn cũng có thể dùng {/pronouns#generator=<strong>trình tạo danh xưng</strong>} để điền vào câu với các danh xưng tùy ý.
-        Nếu danh xưng của bạn là {/pronouns#nameself=<strong>tên</strong>},
+        Nếu danh xưng của bạn là {/tránh=<strong>tên</strong>},
         bạn cũng có thể sử dụng dấu hai chấm (ví dụ “:Vanh”).
     pronounsNotFound: 'Định dạng không được chấp nhận. Vui lòng xem hướng dẫn ở trên.'
     words: 'Đại từ'
