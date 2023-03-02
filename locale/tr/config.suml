@@ -6,7 +6,7 @@ pronouns:
     enabled: true
     route: 'zamirler'
     default: 'ben'
-    any: 'heehangi zamir'
+    any: 'heehangi-zamir'
     plurals: true
     honorifics: false
     multiple:
