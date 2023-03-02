@@ -5,8 +5,8 @@ header: true
 pronouns:
     enabled: true
     route: 'zamirler'
-    default: 'he'
-    any: 'heehangi zamir'
+    default: 'ben'
+    any: 'heehangi-zamir'
     plurals: true
     honorifics: false
     multiple:
@@ -18,22 +18,23 @@ pronouns:
         examples: ['he&she', 'he&they', 'she&they']
     null:
         description: >
-            {/avoiding=Avoiding gendered forms} / {/no-pronouns=no pronouns} / {/null=null pronouns} /
-            {/pronounless=pronounless} / {/nullpronominal=nullpronominal} / {/nameself=nameself}
+            {/kaçınmak=Kaçınmak} / {/zamir-yok=zamir-yok} / {/null=null} /
+            {/zamirsiz=zamirsiz} / {/boş-zamir=boş zamir} / {/nameself=nameself}
         history: >
             Bazı insanlar zamir kullanmamayı tercih eder, bunun yerine adı, baş harfi,
             Edilgen sesle zamirleri atlamak veya cümleyi yeniden yapılandırmayı tercih ederler.
             See: {https://twitter.com/lypomania/status/1290274971642544128=lypomania's guide},
             {https://lgbta.wikia.org/wiki/Nullpronominal=Nullpronominal on LGBTA Wiki}
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
+            accusative: '#'
+            dative: '#'
+            locative: '#'
+            ablative: '#'
+            genitive: '#'
+            possessive: '#'
         examples: [':Andrea', ':S']
         template: 'Örneklerden birini açın ve URL''deki adı/baş harfini kendinizinkiyle değiştirin.'
-        routes: ['kaçınmak', 'zamir-yok', 'null', 'zamirsiz', 'boş zamir', 'nameself']
+        routes: ['kaçınmak', 'zamir-yok', 'null', 'zamirsiz', 'boş-zamir', 'nameself']
         ideas:
             -
                 header: 'Zamirler yerine isim ya da baş harf kullanmak'
@@ -75,14 +76,15 @@ pronouns:
         description: 'Emojiself zamirleri'
         history: '{https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emojiself} online olarak kullanılır ve tellaffuz edilmezler.'
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: '#'
-            possessive_determiner: '#''s'
-            possessive_pronoun: '#''s'
-            reflexive: '#self'
+            accusative: '#'
+            dative: '#'
+            locative: '#'
+            ablative: '#'
+            genitive: '#'
+            possessive: '#'
         examples: ['💫', '💙']
         template: 'Örneklerden birini açın ve URL''deki emojiyi kendi emojinizle değiştirin..'
-    slashes: true
+    slashes: false
     others: 'Diğer zamirler'
 
 pronunciation:
@@ -209,7 +211,7 @@ profile:
             header: ~
             words: ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'o'
 
 calendar:
     enabled: true

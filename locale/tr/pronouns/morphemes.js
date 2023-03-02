@@ -1,7 +1,10 @@
 export default [
-    'pronoun_subject',
-    'pronoun_object',
-    'possessive_determiner',
-    'possessive_pronoun',
-    'reflexive',
+    'accusative',
+    'dative',
+    'locative',
+    'ablative',
+    'genitive',
+    'direct_verb_form',
+    'reflexive_suffix',
+    'possessive',
 ];
