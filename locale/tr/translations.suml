@@ -549,9 +549,9 @@ user:
             enter: 'Kurtarma kodunu girin'
         cancel: 'Girişi iptal et'
         enabled: 'Etkinleştirilmiş'
-        enable: 'MFA'yı etkinleştir'
-        disable: 'MFA'yı devre dışı bırak'
-        disableConfirm: 'MFA'yı devre dışı bırakmak istediğinizden emin misiniz?'
+        enable: 'MFA''yı etkinleştir'
+        disable: 'MFA''yı devre dışı bırak'
+        disableConfirm: 'MFA''yı devre dışı bırakmak istediğinizden emin misiniz?'
     qr:
         header: 'QR kod'
         download: 'QR kodunu indir'
@@ -682,7 +682,7 @@ profile:
         description: 'Bu bölümü sadece siz görebilirsiniz'
     language:
         header: 'Dil'
-        description: '@%username%'in kartı aşağıdaki dillerde de mevcuttur'
+        description: '@%username%''in kartı aşağıdaki dillerde de mevcuttur'
     circles:
         header: 'My circle'
         info: >
@@ -736,7 +736,7 @@ crud:
     loadAll: 'Hepsini yükle…'
     validation:
         genericForm: 'Gönderilen form geçersiz. Sorunları düzeltin ve tekrar gönderin.'
-        listMaxLength: 'Bu listedeki maksimum öğe sayısı %maxlength%'dur.'
+        listMaxLength: 'Bu listedeki maksimum öğe sayısı %maxlength%''dur.'
         invalidLink: 'Geçersiz URL biçimi'
     alt: 'Alternatif metin'
 
