@@ -12,11 +12,11 @@ home:
     whatisit: 'Zamirlerin Olayı Ne?'
     about:
         - >
-            Zamirler(“pronouns”) bir kişiye seslenirken her defasında ismini söylemek yerine kullanabileceğimiz kelimelerdir.
+            Zamirler (“pronouns”) bir kişiye seslenirken her defasında ismini söylemek yerine kullanabileceğimiz kelimelerdir.
 
-            Ama bazı dillerde, örnek olarak Türkçede, Zamirler kişinin cinsiyetine bakmaksızın aynıdır,
-            bazılarında ise, mesela İngilizcede farklı insanlar için farklı zamirler, isimler hatta fiiller kullanılır.
-            Çoğu bay ve bayan transcinsiyet kategorisine girmez ve cinsiyetlerine uygun zamirleri kullanmak icin bir şey anlatmalarına gerek kalmaz.
+            Ama bazı dillerde, örnek olarak Türkçede, zamirler kişinin cinsiyetine bakmaksızın aynıdır.
+            İngilizce gibi bazı dillerde ise farklı insanlar için farklı zamirler, isimler hatta fiiller kullanılır.
+            Çoğu bay ve bayan (cinsiyet belirtmek amaçlı değildir!) “transcinsiyet” kategorisine girmez ve cinsiyetlerine uygun zamirleri kullanmak icin bir şey anlatmalarına gerek kalmaz.
             Bunun sonucu olarak birine nasıl hitap edeceğimize, otomatik olarak yalnızca dış görünüşü baz alırız.
             Ancak bu iş aslında o kadar kolay değil.
         - >
@@ -24,11 +24,11 @@ home:
             Bazıları sandığınızın aksine başka bir şekilde hitap edilmeyi ister.
             Bazı insanlar "erkek" ya da "kadın"  kutucuklarına sığmaz. Daha nötr bir dil tercih ederler.
         - >
-            Pronouns Page sayfası, insanların size nasıl hiap etmesinden hoşlandığınızı gösterebilmeniz için zamirlerinizin linkini örnek cümlelerle paylaşabilmenize olanak tanır.          .
+            Pronouns Page sayfası, insanların size nasıl hitap etmesinden hoşlandığınızı gösterebilmeniz için zamirlerinizin linkini örnek cümlelerle paylaşabilmenize olanak tanır.
         - >
             Bu neden önemli? Cevap ortada: basit insan ahlakı.
-            Sırf “Yaren” ismini daha çok sevdiğin için Zeynep'e “Yaren” demezsin. Kimse oyle bir şey yapmaz.
-            Veya, Zeynep sana “bir Yaren gibi” gözüktüğünden ona Zeynep demeyi reddetmezsin.
+            Sırf “Yaren” ismini daha çok sevdiğin için Zeynep'e “Yaren” demezsin. Kimse öyle bir şey yapmaz.
+            Veya, Zeynep sana “bir Yaren gibi” gözüktüğünden ona Zeynep demeyi reddedemezsin.
             Belki doğum sertifikasında "Yaren" ismi <em>olabilir</em>
             Ama o, bu isimden nefret edip “Zeynep” ismini tercih edebilir. Çok acayip bir durum değil.
             Tabii ki bu olay cinsiyet bazlı dillerde daha komplike bir sorun. Ve dilimizde bu sorunu aşmaya çalışmak oldukça önemli. Bir insanın isim, zamir, cinsiyet ve cinsiyet belirten sıfatlardaki tercihlerini önemsemek ve bunlara saygı duymak, ahlak seviyemizi gösterir ve dilimiz de diğer diller kadar önemlidir.
@@ -41,7 +41,7 @@ home:
             en uygun olan zamiri kullanmaya hakki vardir.
         respect: >
             <strong>Saygi</strong>
-            – çünkü <em>diğer kişilerin zamirine</em> saygıyla bakılmalıdır..
+            – çünkü <em>diğer kişilerin zamirine</em> saygıyla bakılmalıdır.
         inclusiveness: >
             <strong>Dahil Olmak, ve Dahil Etmek</strong>
             – cunku bilmediğimiz insanlarin zamirleri tahmin edilemez ve tahmin edilmemelidir.
@@ -50,7 +50,7 @@ home:
 pronouns:
     header: 'Zamirler'
     headerLong: 'Zamirler'
-    examples: 'Cumlede nasil gozukecegini anlamak icin ornek kullanim'
+    examples: 'Cumlede nasil gözükeceğini anlamak icin örnek kullanım'
     plural: 'Birden Çok'
     intro: 'Benim zamirlerim'
     normative: 'Genel Zamirler'
@@ -58,24 +58,24 @@ pronouns:
         button: 'Değiştirilebilir formlar için bir bağlantı yaratin'
         header: 'Değiştirilebilir Formlar'
         raw: 'Değiştirilebilir'
-    generated: 'Bu cinsiyet belirten kelimeler bir jeneratör ile olusturulmustur. Bunlar icin '
+    generated: 'Bu cinsiyet belirten kelimeler bir jeneratör ile olusturulmustur.'
     any:
         header: 'Bütün Cinsiyet Belirten Kelimeler Uygundur'
         short: 'hepsi'
         description: >
-            Bazi kisiler icin hangi cinsiyet belirten kelimeler onemli olsa bile, bazilari bu belirtmelere cok takmaz, ve hepsini uygun bulurlar—
-            tabii, kiminle konusuldugunu konusan anlatabilirse.
-options: 'diger seceneklere de goz atin [share]{/pronouns=here}.'
+            Bazı kişiler için hangi cinsiyet olduğunu belirten kelimeler önemli olsa bile, bazıları bu belirtmeleri çok umursamaz ve hepsini uygun bulurlar—
+            tabii, kiminle konuşulduğunu konuşan anlatabilirse.
+options: 'Diğer seçeneklere de göz atın [paylaş]{/pronouns=burada}.'
 others: 'Diger Turler'
 othersRaw: 'diger'
 or: 'veya'
-grammarTable: 'Tablo'
+grammarTable: 'Dilbilgisi Tablosu'
 
 sources:
     header: 'Kaynaklar'
     headerLong: 'Kültürel Metinlerden Örnekler'
     headerLonger: 'Kültürel Metinlerde Non-Binary Kisiler'
-    subheader: 'Non-binary Text Corpus'
+    subheader: 'Non-binary Text Corpus' # TODO
     toc: 'İçerikler'
     type:
         All: 'Bütün Seçenekler'
@@ -83,44 +83,44 @@ sources:
         Article: 'Literatür ve Makaleler'
         Movie: 'Filmler'
         Series: 'Diziler'
-        Song: 'Muzik'
-        Poetry: 'Siirler'
+        Song: 'Müzik'
+        Poetry: 'Şiirler'
         Game: 'Oyun'
-        Other: 'Diger'
+        Other: 'Diğer'
     submit:
-        header: 'Baska bir örnek eklemek için gonder.'
+        header: 'Baska bir örnek eklemek için gönder.'
         action: 'Gönder'
-        pronouns: 'Hangi cinsiyet belirten kelimeler kullanilmistir?'
-        pronounsInfo: 'Linkteki gibi en basit zamir veya cinsiyet belirten kelimeyi yaz: ör. “they”, “e/em/es”, “he&she”'
+        pronouns: 'Hangi cinsiyet belirten kelimeler kullanılmıştır?'
+        pronounsInfo: 'Linkteki gibi en basit zamir veya cinsiyet belirten kelimeyi yaz: ör. “ben”, “sen”, “onlar”'
         type: 'Kaynak Türü'
         author: 'Yazar'
-        title: 'Baslik'
+        title: 'Başlık'
         extra: 'Ek Bilgi (tercüman, bültenin yazari …)'
-        year: 'Yayinlama Yili (Türkçe Versiyonun)'
+        year: 'Yayınlama Yılı (Türkçe Versiyon İçin)'
         fragments: 'Fragmanlar'
-        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'
+        fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”' # TODO
         comment: 'Yorum Yap'
         link: 'Icerige Link'
         thanks: 'Katkınız için teşekkürler!'
-        another: 'Baska bir gonderi yap.'
-        moderation: 'Gonderileriniz yayinlanmadan once pronouns.page takimindan onaylanmalidir.'
+        another: 'Başka bir gönderi oluştur.'
+        moderation: 'Gönderileriniz yayınlanmadan önce Pronouns.page ekibi moderasyonu tarafından onaylanmalıdır.'
         key: 'Kaynaklar'
         keyInfo: 'Kaynakları dil sürümleri arasında sözlükle bağlantı kurmak için tanımlayıcı.'
-        images: 'Fotograflar'
-    otherVersions: 'Diger Dillerde'
-    referenced: 'Kullanimlari İçin Örnekler'
+        images: 'Fotoğraflar'
+    otherVersions: 'Diğer Diller'
+    referenced: 'Kullanımları İçin Örnekler'
 
 
 nouns:
     header: 'Sözlük'
-    headerLong: 'Cinsiyet bakimindan tarafsız isimler sözlüğü'
-    headerLonger: 'Cinsiyet Bakimindan Tarafsiz İsim'
-    description: 'Sadece zamir turunde kelimeler degil! Cinsiyet belirten diğer kelime listemizede bakin.'
+    headerLong: 'Cinsiyet Bakımından Nötr İsimler Sözlüğü'
+    headerLonger: 'Cinsiyet Bakımından Nötr İsim'
+    description: 'Sadece zamir olarak belirten kelimeler yok! Cinsiyet belirten diğer kelime listemize de bakın.'
     intro:
         - >
-            Kapsayıcı ve cinsiyetten bağımsız olmak, sadece birinin zamir turu kelimelerine saygı duymak değildir.
+            Kapsayıcı ve cinsiyetten bağımsız olmak, sadece birinin zamir bakımından hitap şekline saygı duymakla sınırlı değildir.
             Ayrıca işlerini, pozisyonlarını, ilişkilerini (vb.)
-            cinsiyetlerini varsayılmayan bir şekilde söyleyebilmektir.
+            cinsiyetlerini varsaymayan bir biçimde söyleyebilmektir.
             Tüm hemşireler “hemşir-e” değildir. Her eş “koca” veya “karı” değildir.
 
         - >
@@ -142,8 +142,8 @@ nouns:
     submit:
         action: 'Gönder'
         actionLong: 'Bir kelime gönder'
-        thanks: 'katkıda bulunduğunuz için teşekkürler!'
-        another: 'Baßka bir kelime gónder'
+        thanks: 'Katkıda bulunduğunuz için teşekkürler!'
+        another: 'Başka bir kelime gönder'
         moderation: 'Gönderimlerin yayınlanmadan önce onaylanması gerekecektir.'
 
     template: 'Şablon kullan'
@@ -176,7 +176,7 @@ terminology:
     term: 'Terim'
     original: 'Etimoloji'
     category: 'Kategori'
-    images: 'ek görseller, bayraklar dışında'
+    images: 'Ek görseller (bayraklar dışında)'
     definition: 'Anlamı'
 
 faq:
@@ -189,7 +189,7 @@ faq:
                 - >
                     Cinsiyet sadece basit bir kadın/erkek'ten daha fazladır.
                     Tamamen biyolojik bir bakış açısından bile kromozomal cinsiyeti ayırt ederiz,
-                    Genetik cinsiyet, hormonal cinsiyet, fenotipik cinsiyet…
+                    genetik cinsiyet, hormonal cinsiyet, fenotipik cinsiyet…
                     Birbirleriyle uyumlu olmaları gerekmez, bu yüzden ikili olmaları gerekmez.
                     {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(daha fazla bilgi)}.
                     Ve kültürel yönüne geldiğimizde, "toplumsal cinsiyet" sosyal bir yapıdır.
@@ -201,21 +201,21 @@ faq:
                     Nonbinary, kadın/erkek taraflarına uymayan insanların
                     kimliğini tanımlayan şemsiye bir terimdir.
                     Örneğin, şu kişileri içerir:
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    ve {https://gender.wikia.org/wiki/Non-binary=many many others}.
+                    {https://gender.wikia.org/wiki/Agender=cinsiyetsiz},
+                    {https://gender.wikia.org/wiki/Gender_Fluid=akışkan cinsiyet},
+                    {https://gender.wikia.org/wiki/Demigirl=demikız},
+                    {https://gender.wikia.org/wiki/Demiboy=demierkek},
+                    ve {https://gender.wikia.org/wiki/Non-binary=birçok diğerleri}.
                 - >
                     Nonbinary feminenlik ve maskülenlik "arasında" bir şey değildir. Daha çok "ilerisinde" gibidir.
                     Nonbinary insanlar androjen olmak zorunda değildirler, nötr zamirler kullanmak zorunda değildirler, vb.
-                    Cinsiyet rollerinden ayrı kalmaktır olayı, yenilerini üretmek değil.
+                    Olayı cinsiyet rollerinden ayrı kalmaktır, yenilerini üretmek değil.
         why-respect:
             question: 'Neden bazı <em>tuhaf</em> zamirlere saygı duymam gerekli?'
             answer:
                 - >
                     Çünkü insanlara nasıl hitap edilmesini istiyorsa öyle hitap etmek toplumsal ilişkilerin temelidir.
-                    Ashley'e "Samantha" demezsiniz, amirinize hitap ederken "efendim"/"hanımefendi" kelimesini çıkarmazsınız vs.
+                    Yağmur’a "Damla" demezsiniz, amirinize hitap ederken "Efendim"/"Hanımefendi" kelimelerini kullanmazsınız.
                     Ve “{/he=he}” ya da “{/she=she}” zamirlerini kullanmayan insanlar vardır.
                     Ve bunu kabullenmezseniz, bu sadece <em>sizi</em> kötü gösterir.
                 - >
@@ -224,7 +224,7 @@ faq:
             question: 'Bu zamirler uydurulmuş!'
             answer:
                 - >
-                    Evet. Evet öyleler. Tüm dillerdeki tüm kelimeler de öyle.
+                    Evet. Evet öyleler. Tüm dillerdeki dğer bütün kelimeler de öyle.
                     Sadece bazı kelimeler daha eski.
         how-to-know:
             question: 'Birine nasıl sesleniceğimi nasıl bileceğim?'
@@ -233,10 +233,10 @@ faq:
                     Sorabilirsin! Evet, tuhaf olabilir ama ne kadar çok sorarsak o kadar az tuhaflaşır.
                     Birine ismini sorabiliyorsak, neden zamirlerini soramayalım?
                 - >
-                    (Sadece "kız mısın erkek mi" cümlesini kullanmayın.
+                    (Sadece "Kız mısın/Erkek misin?" sorusunu sormayın.
                     Bu soru sadece iki "doğru" cinsiyetin olduğunu savunur,
                     ve birinin cinsel alanları hakkında sağlıksız bir merak bulundurur.
-                    Onun yerine “zamirlerin neler?” ya da “sana nasıl hitap edeyim?” sorularını sorabilirsiniz.)
+                    Onun yerine “Zamirlerin neler?” ya da “Sana nasıl hitap edeyim?” sorularını sorabilirsiniz.)
                 - >
                     Kendinizi tanıtırken insanlara zamirlerinizi söyleyerek normalleştirmek de önemlidir.
                      “Selam, ben Ahmet, zamirlerim {/he=he/him}”. Gerçekten zor değil – ama trans ve non binary insanlar için çok önemli!
@@ -413,8 +413,8 @@ contact:
                 Bizler ayrıca sosyal adalet ve eşitlik çerçevesindeki hareketleri destekliyoruz.
 
         extra:
-            - '{/blog/project-history=Short history of the project}'
-            - '{/blog/why-the-name=Why the name?}'
+            - '{/blog/project-history=Projenin kısa tarihi}'
+            - '{/blog/why-the-name=Neden bu isim?}'
         logo: 'Kolektifin logosu, trans sembolü ve ili sembolize eden konuşma balonunun bir araya gelmiş halidir.'
         members: 'Mevcut üyeler'
         member: 'Kolektif üyesi'
@@ -444,7 +444,7 @@ contact:
             how: 'Nasıl katılabilirim? Bu adresten bize bir mail yolla. {mailto:contact@pronouns.page=contact@pronouns.page}, içinde de:'
             application:
                 - 'Kendini tanıt,'
-                - 'pronouns.page profilini bırak,'
+                - 'Pronouns.page profilini bırak,'
                 - 'Sosyal medyanı bırak,'
                 - 'Eğer daha önce deneyimin olduysa söyle,'
                 - 'Neye yardım etmek istediğini söyle.'
@@ -474,8 +474,8 @@ contact:
 support:
     header: 'Destek'
     description: >
-        Eğer sunucu, bağlantı ve stickerlar vs. için bağış yapmak ya da sadece yazarlara bir bira almak istersen,
-         Aşşağıdaki linkleri kullanabilirsin:
+            Eğer sunucu, bağlantı ve stickerlar vs. için bağış yapmak ya da sadece yazarlara bir bira almak istersen,
+            Aşşağıdaki linkleri kullanabilirsin:
     bankAccount: 'Banka transferi'
 
 user:
@@ -496,13 +496,13 @@ user:
         why: >
             Hesabına giriş yapman kartlarını yönetebilmene/onları düzenleyebilmene olanak sağlar ({/@example=tıpkı bunun gibi}).
         passwordless: 'Bu websitesi hiçbir şifreyi kaydetmez. {https://avris.it/blog/passwords-are-passé=More info.}'
-        instancePlaceholder: 'Instance'
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        instancePlaceholder: 'Instance' # TODO
+        domainPlaceholder: 'Alan adı'
+        deprecated: 'Kullanımdan kaldırıldı'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Bu, güvenli bir kimlik doğrulama sağlayıcısı değil.
+            <a href="%link%" target="_blank" rel="noopener">Daha fazla ayrıntı için bu bağlantıya göz atın</a>.
+            Farklı bir oturum açma yöntemi kullanmanızı önemle tavsiye ederiz.
     code:
         action: 'Geçerli'
         invalid: 'Geçersiz kod.'
@@ -512,6 +512,7 @@ user:
             action: 'Değiştir'
             invalid: 'Kullanıcı adı 4-16 karakter uzunluğunda olmalı ve yalnızca sayılar, harfler, nokta, tire ve alt tire içermelidir.'
             taken: 'Bu kullanıcı adı alınmış.'
+            # TODO
             nonascii: >
                 Warning: if you decide for a username that contains non-ASCII characters,
                 keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
@@ -525,7 +526,7 @@ user:
     avatar:
         header: 'Avatar'
         change: 'Değiştir'
-        failed: 'Please reconnect your social media to fix the missing avatar.'
+        failed: 'Eksik avatarı düzeltmek için lütfen sosyal medyanızı yeniden bağlayın.'
     deleteAccount: 'Hesabı sil'
     deleteAccountConfirm: 'Hesabını kaldırmak istediğinden emin misin? Bunun geri dönüşü olmayacak!'
     socialConnection:
@@ -535,29 +536,29 @@ user:
         disconnect: 'Bağlantıyı kes'
         disconnectConfirm: 'Bu bağlantıyı kaldırmak istediğine emin misin? (Her zaman e-posta hesabını kullanarak giriş yapabilirsin %email%)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'Çok faktörlü kimlik doğrulma (MFA)'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            TOTP kimlik doğrulayıcı uygulamanızda (ör. {https://authy.com/=Authy}) bu QR kodunu tarayın (veya aşağıdaki metin kodunu girin)
+            ve ardından oluşturulan ilk belirteci girin.
         recovery:
-            header: 'Recovery code'
+            header: 'Kurtarma kodu'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                Aşağıdaki kurtarma kodlarını güvenli bir yere kaydedin.
+                Kimlik doğrulama cihazınızı kaybetmeniz durumunda MFA'yı atlamak için bunları kullanabileceksiniz.
+            saved: 'Tamam, onları kurtardım!'
+            enter: 'Kurtarma kodunu girin'
+        cancel: 'Girişi iptal et'
+        enabled: 'Etkinleştirilmiş'
+        enable: 'MFA'yı etkinleştir'
+        disable: 'MFA'yı devre dışı bırak'
+        disableConfirm: 'MFA'yı devre dışı bırakmak istediğinizden emin misiniz?'
     qr:
-        header: 'QR code'
-        download: 'Download QR code'
+        header: 'QR kod'
+        download: 'QR kodunu indir'
     modMessage:
-        subject: 'A message from a moderator'
-        intro: 'Hi! One of our moderators has sent you the following message:'
-        respond: 'If you want to respond, you can simply reply to this email.'
+        subject: 'Moderatörden mesaj'
+        intro: 'Merhaba! Moderatörlerimizden biri size şu mesajı gönderdi:'
+        respond: 'Yanıt vermek istiyorsanız, bu e-postayı yanıtlamanız yeterlidir.'
 
 profile:
     description: 'Açıklama'
@@ -574,36 +575,37 @@ profile:
         çift nokta da kullanabilirsin (eg. “:star”).
     pronounsNotFound: 'Bilinmeyen format. Lütfen yukarıdaki talimatları okuyun.'
     words: 'Kelimeler'
-    wordsColumnHeader: 'Column header'
+    wordsColumnHeader: 'Sütun başlığı'
     birthday: 'Yaş'
     birthdayInfo: 'Yaşını yayınlamayacağız. Sadece yaşının hesaplabini yaptik.'
     timezone:
-        header: 'Timezone'
-        placeholder: 'Select your timezone'
+        header: 'Saat dilimi'
+        placeholder: 'Saat diliminizi seçin'
+        # TODO
         info: >
             If you fill out this field, your card will tell people <strong>what time it is where you live</strong>.
             Optionally, you can also chose to publish your approximate location.
-        detect: 'Detect'
-        publishArea: 'Publish the continent in your card'
-        publishLocation: 'Publish the area in your card'
-        time: 'It''s %time% on a %weekday% in my timezone'
-        approximate: 'It''s just an approximate location'
+        detect: 'Tespit etmek'
+        publishArea: 'Kıtayı kartınızda yayınlayın'
+        publishLocation: 'Alanı kartınızda yayınlayın'
+        time: 'Benim saat dilimimde %weekday% günü saat %time%'
+        approximate: 'Bu sadece yaklaşık bir konumdur'
         areas:
-            Africa: 'Africa'
-            America: 'America'
-            Antarctica: 'Antarctica'
-            Arctic: 'Arctic'
-            Asia: 'Asia'
-            Atlantic: 'Atlantic'
-            Australia: 'Australia'
-            Europe: 'Europe'
-            Indian: 'Indian'
-            Pacific: 'Pacific'
+            Africa: 'Afrika'
+            America: 'Amerika'
+            Antarctica: 'Antarktika'
+            Arctic: 'Arktik'
+            Asia: 'Asya'
+            Atlantic: 'Atlantik'
+            Australia: 'Avustralya'
+            Europe: 'Avrupa'
+            Indian: 'Hint'
+            Pacific: 'Pasifik'
     flags: 'Bayraklar'
     flagsInfo: 'Onur bayraklarınızı bu çerçeveye tutup bırakın.'
     flagsCustom: 'Kendi bayrağını yükle'
     flagsCustomWarning: 'Bu bayrak bir kullanıcı tarafından yüklenmiştir. pronouns.page takımı bundan sorumle değildir.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
+    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
     flagsCustomForm:
         label: 'Label name'
         description: '(optional) A short description of the label'
@@ -613,7 +615,7 @@ profile:
     links: 'Linkler'
     linksRecommended: 'Buralara bağlamanızı tavsiye ediyoruz'
     verifiedLinks:
-        header: 'Verified links'
+        header: 'Doğrulanmış bağlantılar'
         info: >
             The links that one puts publicly in one's profile will be marked with the shield icon,
             if they are verified by logging in using the given authentication provider,
@@ -621,32 +623,32 @@ profile:
             Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
     column: 'Kolon'
     opinions:
-        header: 'Legend/opinions'
-        description: 'Description…'
+        header: 'Legend/opinions' # TODO
+        description: 'Açıklama…'
         colours:
-            _: '(Font colour…)'
-            pink: 'Pink'
-            red: 'Red'
-            orange: 'Orange'
-            green: 'Green'
-            blue: 'Blue'
-            grey: 'Grey'
+            _: '(Yazı rengi…)'
+            pink: 'Pembe'
+            red: 'Kırmızı'
+            orange: 'Turuncu'
+            green: 'Yeşil'
+            blue: 'Mavi'
+            grey: 'Gri'
         styles:
-            _: '(Style…)'
-            bold-italics: 'Bold & italics'
-            bold: 'Bold'
-            italics: 'Italics'
-            small: 'Small'
+            _: '(Yazı stili…)'
+            bold-italics: 'Kalın ve italik'
+            bold: 'Kalın'
+            italics: 'Italik'
+            small: 'Küçük'
         validation:
-            missingIcon: 'Icon is required'
-            missingDescription: 'Description is required'
-            duplicateIcon: 'Icon must be unique'
-            duplicateDescription: 'Description must be unique'
+            missingIcon: 'Simge gerekli'
+            missingDescription: 'Açıklama gerekli'
+            duplicateIcon: 'Simge benzersiz olmalıdır'
+            duplicateDescription: 'Açıklama benzersiz olmalıdır'
             invalidOpinion: 'Selected icon was not found in the legend above'
-        custom: 'custom, added by the user:'
+        custom: 'Özel:'
     expendableList:
-        more: '… and %count% more items'
-        show: '(click to show)'
+        more: '… ve %count% ürün daha'
+        show: '(göstermek için tıklayın)'
     header: 'Kartlar'
     list: 'Kartların'
     init: 'Kart oluştur'
@@ -676,13 +678,11 @@ profile:
         generating: 'Oluşturuluyor… Birkaç dakika sürebilir.'
     empty: 'Bu kişi daha hiç kart yaratmamış.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'Kişisel'
+        description: 'Bu bölümü sadece siz görebilirsiniz'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'Dil'
+        description: '@%username%'in kartı aşağıdaki dillerde de mevcuttur'
     circles:
         header: 'My circle'
         info: >
@@ -704,17 +704,17 @@ profile:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
     sensitive:
-        header: 'Content warning'
+        header: 'İçerik Uyarısı'
         info: >
             Some content might be allowed by our {/terms=Terms of Service},
             but still not be appropriate for minors, be potentially triggering for people with traumas, etc.
             Please be respectful to people visiting your card and warn them in advance.
             Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
-        display: 'Continue to the card'
-        hide: 'Blur out the card'
+        display: 'Karta devam et'
+        hide: 'Kartı bulanıklaştır'
         email:
-            subject: 'Content warning applied on your profile'
-            content: 'A moderator has applied the following content warnings to your card:'
+            subject: 'Profilinize uygulanan içerik uyarısı'
+            content: 'Bir moderatör, kartınıza aşağıdaki içerik uyarılarını uyguladı:'
 
 share: 'Paylaş'
 
@@ -733,23 +733,23 @@ crud:
     loginRequired: 'Bir girdi açmak için {/account=Kayıt ol}'
     copy: 'Bağlantı kopyala'
     download: 'İndir'
-    loadAll: 'Load all…'
+    loadAll: 'Hepsini yükle…'
     validation:
-        genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
-        listMaxLength: 'The maximum number of elements in this list is %maxlength%.'
-        invalidLink: 'Invalid URL format'
-    alt: 'Alt text'
+        genericForm: 'Gönderilen form geçersiz. Sorunları düzeltin ve tekrar gönderin.'
+        listMaxLength: 'Bu listedeki maksimum öğe sayısı %maxlength%'dur.'
+        invalidLink: 'Geçersiz URL biçimi'
+    alt: 'Alternatif metin'
 
 footer:
     license: >
-        {https://gitlab.com/PronounsPage/PronounsPage=Source code} and content are licensed under {/license=OQL}.
+        {https://gitlab.com/PronounsPage/PronounsPage=Kaynak kodu} ve içerik {/license=OQL} kapsamında lisanslanmıştır.
     links: 'İletişim, sosyal medya, destek'
-    legal: 'Legal'
-    financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+    legal: 'Yasal'
+    financial: 'Mali şeffaflık'
+    technical: 'Teknik'
+    sibling: 'Kardeş projeler'
     stats:
-        header: 'Stats'
+        header: 'İstatistikler'
         overall: 'all language versions'
         current: 'only this version'
         keys:
