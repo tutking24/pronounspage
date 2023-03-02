@@ -198,16 +198,16 @@ profile:
     defaultWords:
         -
             header: ~
-            words: ['[saygı ifadesi yok]',  'yoldaş']
+            values: ['[saygı ifadesi yok]',  'yoldaş']
         -
             header: ~
-            words: ['kişi', 'adam', 'kadın', 'bayan', 'kanka', 'erkek', 'kız', 'ahbap', 'dost', 'aga', 'aşko', 'kardeş']
+            values: ['kişi', 'adam', 'kadın', 'bayan', 'kanka', 'erkek', 'kız', 'ahbap', 'dost', 'aga', 'aşko', 'kardeş']
         -
             header: ~
-            words: ['güzel', 'yakısıklı', 'tatlı', 'ateşli', 'seksi']
+            values: ['güzel', 'yakısıklı', 'tatlı', 'ateşli', 'seksi']
         -
             header: ~
-            words: ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
+            values: ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
     flags:
         defaultPronoun: 'o'
 
