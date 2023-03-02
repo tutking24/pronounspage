@@ -5,7 +5,7 @@ header: true
 pronouns:
     enabled: true
     route: 'zamirler'
-    default: 'he'
+    default: 'ben'
     any: 'heehangi zamir'
     plurals: true
     honorifics: false
@@ -209,7 +209,7 @@ profile:
             header: ~
             words: ['arkadaş', 'partner', 'erkek arkadaş', 'kız arkadaş', 'neşe arkadaşı', 'koca', 'karı', 'kissmate', 'canım', 'sevgili', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'o'
 
 calendar:
     enabled: true
