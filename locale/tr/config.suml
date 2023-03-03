@@ -8,13 +8,13 @@ pronouns:
 pronunciation:
     enabled: true
     voices:
-        GB:
-            language: 'en-GB'
-            voice: 'Emma'
-            engine: 'neural'
+        TR:
+            language: 'tr-TR'
+            voice: 'Filiz'
+            engine: 'standard'
 
 sources:
-    enabled: true
+    enabled: false
     route: 'kaynaklar'
     submit: true
     mergePronouns: {}
