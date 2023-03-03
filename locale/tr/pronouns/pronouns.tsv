@@ -1,7 +1,2 @@
-key   	description    	normative 	ablative 	genitive 	locative 	dative 	accusative 	direct_verb_form 	reflexive_suffix 	possessive 	plural 	pluralHonorific 	pronounceable 	history 	thirdForm 	smallForm 	sourcesInfo
-ben   	Normatif "ben" 	TRUE      	benden   	benim    	bende    	bana   	beni       	i                	im               	benim      	FALSE  	FALSE           	TRUE
-sen   	Normatif "sen" 	TRUE      	senden   	senin    	sende    	sana   	seni       	i                	in               	senin      	FALSE  	FALSE           	TRUE
-o     	"o"            	TRUE      	ondan    	onun     	onda     	ona    	onu        	i                	i                	onun       	FALSE  	FALSE           	TRUE
-biz   	"biz"          	TRUE      	bizden   	bizim    	bizde    	bize   	bizi       	i                	imiz             	bizim      	TRUE   	TRUE            	TRUE
-siz   	"siz"          	TRUE      	senden   	seniň    	sende    	size   	seni       	i                	ileri            	sizin      	TRUE   	TRUE            	TRUE
-onlar 	"onlar"        	TRUE      	onlardan 	onların  	onlarda  	onlara 	onları     	i                	ileri            	onların    	TRUE   	FALSE           	TRUE
+key	description	normative	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+o
