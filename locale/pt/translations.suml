@@ -469,6 +469,7 @@ support:
     description: >
         Se você quiser de doar para o servidor, os domínios, stickers etc., ou simplemente comprar uma cerveja para ês autores,
         podem usar as ligações seguintes:
+    bankAccount: ' Transferência bancária'
 
 user:
     header: 'Conta'
@@ -564,6 +565,9 @@ profile:
         validation:
             userNotFound: 'Este usuário não existe'
             required: 'Relacionamento é um campo obrigatório'
+        removeSelf:
+            confirm: 'Você tem certeza de que quer remover seu perfil do círculo de @%username%?'
+            action: 'Remover-se'
     description: 'Descrição'
     names: 'Nomes'
     pronouns: 'Pronomes'
@@ -603,7 +607,7 @@ profile:
         defaults: 'Restaurar valores padrão'
         propagate: 'Salvar alterações em seus cartões em todas as línguas'
     timezone:
-        time: 'São %time% de um(a) %weekday% no meu fuso horário'
+        time: 'São %time% de um(a) %weekday% dentro do meu fuso horário'
         areas:
             America: 'América'
             Africa: 'África'
@@ -681,6 +685,16 @@ profile:
             respeito com quem visita seu cartão e avise previamente sobre tal conteúdo. Exemplos de Aviso de Conteúdo
             podem ser a "menção ao álcool", " insinuações sexuais", "menção á uma situação queerfóbica"...
         hide: ' Desfocar o cartão'
+        email:
+            content: 'Ume moderadore aplicou o seguinte aviso de conteúdo em seu cartão:'
+            subject: 'Aviso de conteúdo aplicado em seu perfil'
+        display: 'Continuar para o cartão'
+    flagsCustomForm:
+        altExample: 'Um exemplo de como um texto alternativo pode ser fraseado '
+        alt: '(opcional) Texto alternativo descrevendo a aparência da bandeira (veja abaixo)'
+        link: '(opcional) Link para mais informações'
+        description: '(opcional) Uma pequena descrição do rótulo'
+        label: 'Nome do rótulo'
 
 share: 'Compartilhar'
 
@@ -703,6 +717,8 @@ crud:
     validation:
         genericForm: 'A forma submetida é inválida. Corrija os problemas e envie novamente.'
         listMaxLength: 'o número máximo de elementos nessa lista é de %maxlength%.'
+        invalidLink: 'Formato de URL inválido'
+    alt: 'Texto alternativo'
 
 footer:
     license: >
@@ -724,6 +740,7 @@ footer:
             pageviews: 'Vizualizações de página'
             realTimeVisitors: 'Atualmente online'
             users: 'Usuáries registrades'
+            uptime: ' Tempo de atividade'
         month: 'mês'
         current: 'apenas essa versão'
 
@@ -800,7 +817,9 @@ mode:
     light: 'Modo claro'
     automatic: 'Automático'
     dark: 'Modo escuro'
+    accessibility: 'Configurações de acessibilidade'
     reducedColours: 'Cores reduzidas '
+    reducedItems: 'Número reduzido de itens mostrados'
 
 ban:
     reason: 'Razão de ban'
@@ -921,6 +940,12 @@ flags:
     Trixic: 'Tríxi{inflection_c}'
     Two_Spirit: 'Dois-espíritos'
     Xenogender: 'Xenogênero'
+
+flags_alt:
+    Progress_Pride_: >
+        Uma bandeira retangular com seis listras horizontais de mesma largura: vermelha, laranja, amarela, verde, azul e
+        roxa; uma divisa (triangular) no lado esquerdo, composta pelas seguintes cores (à partir da esquerda): amarela
+        com um círculo roxo, branca, rosa, azul clara, marrom, preta
 
 calendar:
     header: 'Calendário'
