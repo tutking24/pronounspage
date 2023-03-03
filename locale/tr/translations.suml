@@ -210,123 +210,6 @@ faq:
                     Nonbinary feminenlik ve maskülenlik "arasında" bir şey değildir. Daha çok "ilerisinde" gibidir.
                     Nonbinary insanlar androjen olmak zorunda değildirler, nötr zamirler kullanmak zorunda değildirler, vb.
                     Olayı cinsiyet rollerinden ayrı kalmaktır, yenilerini üretmek değil.
-        why-respect:
-            question: 'Neden bazı <em>tuhaf</em> zamirlere saygı duymam gerekli?'
-            answer:
-                - >
-                    Çünkü insanlara nasıl hitap edilmesini istiyorsa öyle hitap etmek toplumsal ilişkilerin temelidir.
-                    Yağmur’a "Damla" demezsiniz, amirinize hitap ederken "Efendim"/"Hanımefendi" kelimelerini kullanmazsınız.
-                    Ve “{/he=he}” ya da “{/she=she}” zamirlerini kullanmayan insanlar vardır.
-                    Ve bunu kabullenmezseniz, bu sadece <em>sizi</em> kötü gösterir.
-                - >
-                    “Tuhaf zamirler” sadece alışmanın bir maddesidir.
-        made-up:
-            question: 'Bu zamirler uydurulmuş!'
-            answer:
-                - >
-                    Evet. Evet öyleler. Tüm dillerdeki dğer bütün kelimeler de öyle.
-                    Sadece bazı kelimeler daha eski.
-        how-to-know:
-            question: 'Birine nasıl sesleniceğimi nasıl bileceğim?'
-            answer:
-                - >
-                    Sorabilirsin! Evet, tuhaf olabilir ama ne kadar çok sorarsak o kadar az tuhaflaşır.
-                    Birine ismini sorabiliyorsak, neden zamirlerini soramayalım?
-                - >
-                    (Sadece "Kız mısın/Erkek misin?" sorusunu sormayın.
-                    Bu soru sadece iki "doğru" cinsiyetin olduğunu savunur,
-                    ve birinin cinsel alanları hakkında sağlıksız bir merak bulundurur.
-                    Onun yerine “Zamirlerin neler?” ya da “Sana nasıl hitap edeyim?” sorularını sorabilirsiniz.)
-                - >
-                    Kendinizi tanıtırken insanlara zamirlerinizi söyleyerek normalleştirmek de önemlidir.
-                     “Selam, ben Ahmet, zamirlerim {/he=he/him}”. Gerçekten zor değil – ama trans ve non binary insanlar için çok önemli!
-                     online çok daha kolay: sadece zamirlerini (ya da websitemizdeki örnekleri) biyografine koy.
-                - >
-                    Ayrıca birçok kişinin duruma bağlı olarak farklı bir isim ve farklı bir zamir seti kullanabileceğini unutmayın.
-                    Arkadaş ya da iş arkadaşlarına daha açılmamış olabilirler, ama başka arkadaşlarıyla doğruyu paylaşacak kadar rahat ve yakın hissedebilirler.
-                    Akıllı olun. Emin olmak için şu soruyu sorabilirsiniz, “müdürünün önünde hangi zamirleri kullanayım?”, vs.
-                - >
-                    Bazı insanlar birden çok zamir kullanır, örn. “{/he&she=he/she}” ya da “{/they&he=they/he}”.
-                    Bu, kullandıkları zamirlerin her formunu beğendikleri anlamına gelir. Çoğunlukla ilk olan tercih edilendir.
-        who-uses-it:
-            question: 'Bunu kullanan var mı ki?'
-            answer:
-                - >
-                    Elbette! Milyonlarca non-binary kişi dünya çapında kullanıyor.
-                    Burda kullanılan her zamiri gerçek hayatta birileri kullanıyor.
-        authority:
-            question: 'Bu nonbinary zamirler bir topluluk tarafından falan mı onaylanıyor?'
-            answer:
-                - >
-                    Dil, tanrı vergisi, taşa kazınmış kadim bir sihir değildir.
-                    Sadece iletişim için kullandığımız bir alettir.
-                    Bir toplum olarak değiştiğimizde, ve etrafımızdaki dünya değiştiğinde,
-                    Dil üzerinde oynamalar yaparız ki bazı şeyleri daha iyi betimleyebilelim.
-                    Dilin kullanıcıları biziz, yani onu kullanma konusunda <em>topluluk da biziz</em>.
-                - >
-                    Sözlükler bu değişiklikleri dahil etmeye başlamak için zaman harcarlar,
-                    ve bu olayları hiçbir yönden gayrimeşru yapmaz.
-                    Ama yeni formlar, eğer onları daha çok kullanîrsak, sözlüklere eklenicekler.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, örnek olarak,
-                    {/they=singular “they”} zamirini non-binary bir zamir olarak kabul eder.
-                - >
-                    Ayrıca neopronounlar ûzerine yazılan bu yazıyı da okuyabilirsiniz.{https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-        bio:
-            question: 'Neden zamirlerimi sosyal medya profillerime koymalıyım?'
-            answer:
-                - >
-                    Cis bir bireyseniz (= not trans) ve cinsiyetinize uygun olarak “{/he=he}” ya da “{/she=she}” zamirlerini kullanıyorsanız,
-                    zamirlerinizin <em>belli</em> olduğunu düşünebilirsiniz.
-                    Ve evet, belki de bu doğrudur – isminiz biyografinizde varsa (ve geleneksel olarak bir kadın ya da erkek ismiyse)
-                     ya da profil fotoğrafınızda kendi resminiz varsa.
-                    Çoğu insan değildir – bu yüzden nasıl seslenilmek isteyeceklerini tahmin edemeyiz.
-                - >
-                    Ama bu çoğunlukla bindan daha fazladır: sizin zamirleriniz belki “belli” olabilir,
-                    ama zamirleri belli olmayan çok insan var.
-                    Doğru belli edilmek istenirler, cinsiyetleri olarak “geçebilseler” bile,
-                    cinsiyet değiştirdilerse (ya da değiştirmek isteseler bile).
-                    Nonbinary insanlar genellikle “nonbinary gözükmezler”, hiç kimseye androjenlik borcumuz yok.
-                - >
-                    Zamirlerimizi paylaşmak trans, non binary ve doğum cinsiyeti uyumsuz insanlar için önemlidir.
-                    Ne yazık ki, aynı zamanda bizi ifşa ediyor ve ayırıyor.
-                    Ama eğer cis insanlar da aynısını yaparsa, bu bize dünyaları verir.
-                    Daha hoş karşılanmış, rahat ve mutlu hissetmemize sebep olur.
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(daha fazla nedenleri).}
-        change:
-            question: 'Zamirlerimi değiştirebilir miyim?'
-            answer:
-                - >
-                    Elbette! Birinin görüşü, tarzı, hobileri değişince kimse şaşırmaz…
-                    Öyleyse kimliklerinin bir parçasını keşfetmeleri neden garip olsun ki,
-                    isminizi beğenmeyi bıraktınız, kendinize uyan bir etiket mi keşfettiniz vs.?
-        get-used-to:
-            question: '<em>kendi</em> yeni zamirlerim?’e alışamamam garip mi?'
-            answer:
-                - >
-                    Hiç de değil! Doğumda atanan zamirlerin yıllar boyu kullanımı sonrası
-                    farklı olanları kullanırken kendini adapte etmesi zordur..
-                - >
-                    zamir ≠ cinsiyet.
-                    Biri sizi “them” diye çağırınca ve bu sizin kafanızı karıştırıp sorgulamanıza sebep olduysa bu cinsiyetinizi büyük ölçüde değiştirmiyor.
-                    Korkma. Deneyimle. Sana en çok uyanı bul.
-        preferred-pronouns:
-            question: 'Neden “tercih edilen zamirler” dememeliyim?'
-            answer:
-                - >
-                    Çünkü bu cümle birinin zamirinin yalnızca bir heves olduğunu belirtiyor.
-                    Eğer biri she olarak çağırılmayı “tercih ediyorsa”, eğer ben o kişiye “he” diye seslenirsem o kişi _gerçekten_ kötü hissetmeyecek, değil mi?
-                    Tam anlamıyla bir erkek gibi görünüyor bu yüzden benim için ona böyle seslenmem daha kolay!
-                - >
-                    Hayır! Bunlar bizim zamirlerimiz. Bizim “tercih ettiğimiz zamirler” değil. Bunlar bizim isimlerimiz, bizim “tercih ettiğimiz isimler” değil.
-                    Eğer sen de nonbinary ve trans sevdiklerini önemsiyorsan, onları doğru yollarla çağır.
-        gender-pronouns:
-            question: 'Neden “cinsiyet zamiri” dememeliyim?'
-            answer:
-                - >
-                    Çünkü cinsiyet ≠ zamir. Zamirler sadece dil bilgisidir.
-                    Nonbinary kişiler ikili zamirler kullanabilir, bazı lezbiyenler {/he=he/him} zamirlerini kullanabilir.
-                - >
-                    Sadece “zamir” de.
         flags:
             question: 'Bu bayrağı ekleyebilir misiniz? Bu bayrağı kaldırabilir misiniz?'
             answer:
@@ -354,14 +237,6 @@ faq:
                     Eğer bir bayrağı sevmiyorsan onu kullanma.
                     Eğer bir bayrak kayıpsa/eksikse onu kendin yükle.
                     (vandalizmi azaltmak için yüklediğin bayrakların kullanıcı tarafından eklendiği özel olarak belirtilir).
-        custom-pronouns:
-            question: 'Benim zamirlerim listede yok.'
-            answer:
-                - >
-                    Anasayfada bir jeneratör var, onu istediğin herhangi bir zamir setini oluşturup bağlamak için kullanabilirsin.
-                - >
-                    Ayrıca eğik çizgiler kullanarak bir zamirin 5 farklı formunu listeleyebilirsin, örn. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Bu durumda o zamirin 5 farklı formunu da yazman gerekir, aksi takdirde uygulama neyi kast ettiğiniz hakkında yalnızca tahminde bulunabilir.
         business:
             question: 'Bir işletme misiniz?'
             answer:
