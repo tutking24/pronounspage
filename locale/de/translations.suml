@@ -559,6 +559,8 @@ profile:
     flagsCustom: 'Benutzerdefinierte Flaggen hochladen'
     flagsCustomWarning: 'Diese Flagge wurde von einer*m Nutzer*in hochgeladen. Das Team von pronouns.page ist nicht dafür verantwortlich.'
     flagsAsterisk: 'Dies ist keine queere Identität, aber wir nehmen es für Menschen auf, die auf andere Weise queer sind (z. B. heterosexuelle trans Personen).'
+    flagsCustomForm:
+        altExample: 'Ein Beispiel dafür, wie der ''Alternativtext' formuliert werden könnte'
     links: 'Links'
     linksRecommended: 'Wir empfehlen Verlinkung zu'
     verifiedLinks:
@@ -635,6 +637,8 @@ profile:
             Ihrem Kreis auf Gegenseitigkeit beruht, wird sie mit [s:shield-check] gekennzeichnet.
         validation:
             required: 'Beziehung ist ein erforderliches Feld'
+    sensitive:
+        header: 'Content-/Triggerwarnung'
     timezone:
         header: 'Zeitzone'
         placeholder: 'Wähle deine Zeitzone'
@@ -658,6 +662,12 @@ profile:
             Pacific: 'Pazifik'
         approximate: 'Es ist nur ein ungefährer Standort'
 share: 'Teilen'
+
+flags_alt:
+    Progress_Pride_: >
+        Eine rechteckige Flagge mit sechs gleich breiten horizontalen Streifen: rot, orange, gelb, grün, blau und lila;
+        ein Chevron (Dreieck) auf der linken Seite, bestehend aus Streifen der folgenden Farben (von links): gelb mit
+        einem violetten Kreis, weiß, rosa, hellblau, braun, schwarz
 
 crud:
     approve: 'Freigeben'
