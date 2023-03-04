@@ -566,6 +566,9 @@ user:
         refresh: 'Actualizar'
         disconnect: 'Desconectar'
         disconnectConfirm: '¿Confirmas que quieres eliminar esta conexión? (Siempre puedes iniciar sesión usando el correo electrónico %email%)'
+    qr:
+        header: 'Código QR'
+        download: 'Descargar código QR'
 
     mfa:
         header: 'Autenticación en dos pasos'
@@ -597,6 +600,19 @@ profile:
     words: 'Palabras'
     birthday: 'Edad'
     birthdayInfo: 'No publicamos la fecha de tu cumpleaños, sólo la edad calculada.'
+    timezone:
+        detect: 'Detectar'
+        areas:
+            Pacific: 'Pacífico'
+            Africa: 'África'
+            America: 'América'
+            Antarctica: 'Antártida'
+            Arctic: 'Ártico'
+            Atlantic: 'Atlántico'
+            Europe: 'Europa'
+            Indian: 'India'
+        header: 'Zona horaria'
+        placeholder: 'Selecciona tu zona horaria'
     flags: 'Banderas'
     flagsInfo: 'Arrastra tus banderas de orgullo a este marco.'
     flagsCustom: 'Sube una bandera personalizada'
@@ -623,12 +639,24 @@ profile:
         save: 'Guarda tu tarjeta'
         defaults: 'Restaurar valores predeterminados'
         propagate: 'Guardar cambios en tus tarjetas en todos los idiomas'
-    opinion:
+    opinions:
         yes: 'Sí'
         jokingly: 'En broma'
         close: 'Solo si somos personas cercanas'
         meh: 'Okey'
         no: 'No'
+        colours:
+            pink: 'Rosa'
+            red: 'Rojo'
+            orange: 'Naranja'
+            green: 'Verde'
+            blue: 'Azul'
+            grey: 'Gris'
+            _: '(Color de fuente…)'
+        description: 'Descripción…'
+        styles:
+            bold: 'Negritas'
+            italics: 'Itálica'
 
     banner: >
         Puedes también usar nuestro sitio web para crear una tarjeta {/@example=como esta},
@@ -648,6 +676,10 @@ profile:
     language:
         header: 'Idioma'
         description: 'La tarjeta de @%username% también está disponible en los siguientes idiomas'
+    circles:
+        relationship: 'Relación (p. ej. "pareja", "mejor amigx")'
+        validation:
+            userNotFound: 'Tal usuario no existe'
 
 share: 'Compartir'
 
@@ -869,6 +901,7 @@ mode:
     light: 'Modo claro'
     automatic: 'Automático'
     dark: 'Modo oscuro'
+    accessibility: 'Ajustes de accesibilidad'
 
 ban:
     reason: 'Razón para banear'
@@ -1154,6 +1187,10 @@ calendar:
     full: 'Calendario completo'
 
 translationMode:
+    header: 'Modo de traducción'
+    changes: 'Cambios'
+    revert: 'Revertir cambios'
+    pause: 'Pausar modo de traducción
     action: 'Traducciones propuestas'
 
 ukraine:
