@@ -45,7 +45,7 @@
     "nepali-calendar-js": "^1.0.4",
     "node-fetch": "^2.6.1",
     "nodemailer": "^6.7.8",
-    "nuxt": "^2.15.2",
+    "nuxt": "^2.16.1",
     "pageres": "^6.2.3",
     "plausible-api": "https://github.com/avo7/plausible-api.git#main",
     "qr-code-styling": "^1.6.0-rc.1",
