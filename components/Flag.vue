@@ -21,7 +21,7 @@
                 <Icon v="user"/>
                 <T>profile.flagsCustomWarning</T>
             </span>
-            <span v-if="description" class="d-block-force alert p-2"><strong>{{name}}</strong> — {{description}}</span>
+            <span v-if="name && description" class="d-block-force alert p-2"><strong>{{name}}</strong> — {{description}}</span>
             <span v-if="alt" class="d-block-force alert p-2 small mb-0 text-muted"><T>crud.alt</T><T>quotation.colon</T> {{alt}}</span>
         </span>
     </span>
@@ -30,8 +30,8 @@
 <script>
     export default {
         props: {
-            termkey: { required: true },
-            name: { required: true },
+            termkey: {  },
+            name: {  },
             alt: { required: true },
             img: { required: true },
             description: { },
@@ -56,28 +56,30 @@
                 }
 
                 let fallback = null;
+                const termkey = this.termkey || '';
+                const name = this.name || '';
 
                 for (let term of this.terms || []) {
                     // exact match
-                    if (term.key && term.key.toLowerCase() === this.termkey.toLowerCase()) {
+                    if (term.key && term.key.toLowerCase() === termkey.toLowerCase()) {
                         return term.key;
                     }
-                    if (term.term.toLowerCase() === this.name.toLowerCase()) {
-                        return this.name;
+                    if (term.term.toLowerCase() === name.toLowerCase()) {
+                        return name;
                     }
-                    if (term.original.toLowerCase() === this.termkey.toLowerCase()) {
-                        return this.termkey;
+                    if (term.original.toLowerCase() === termkey.toLowerCase()) {
+                        return termkey;
                     }
 
                     // fallback
-                    if (term.key && term.key.toLowerCase().includes(this.termkey.toLowerCase())) {
+                    if (term.key && term.key.toLowerCase().includes(termkey.toLowerCase())) {
                         fallback = term.key;
                     }
-                    if (term.term.toLowerCase().includes(this.name.toLowerCase())) {
-                        fallback = this.name;
+                    if (term.term.toLowerCase().includes(name.toLowerCase())) {
+                        fallback = name;
                     }
-                    if (term.original.toLowerCase().includes(this.termkey.toLowerCase())) {
-                        fallback = this.termkey;
+                    if (term.original.toLowerCase().includes(termkey.toLowerCase())) {
+                        fallback = termkey;
                     }
                 }
 
