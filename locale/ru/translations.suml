@@ -534,7 +534,7 @@ support:
     description: >
         Если хотите скинуться на сервер, домены, стикеры и т. д., или просто купить нам пива,
         перейдите по одной из ссылок:
-    bankAccount: 'Bank transfer'  # TODO
+    bankAccount: 'Банковский перевод (IBAN)'
 
 user:
     header: 'Аккаунт'
@@ -554,25 +554,24 @@ user:
             Регистрация позволяет вам управлять своими аккаунтами/карточками ({/@example=как, например, этой}).
         passwordless: 'Сайт не хранит пароли. {https://avris.it/blog/passwords-are-passé=Больше информации}'
         instancePlaceholder: 'инстанция'
-        # TODO
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        domainPlaceholder: 'Доменное имя'
+        deprecated: 'Устаревший'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            Это не надежный поставщик аутентификации.
+            <a href="%link%" target="_blank" rel="noopener">Проверьте эту ссылку для более подробной информации</a>.
+            Мы настоятельно рекомендуем использовать другой доступный метод входа.
     code:
         action: 'Подтвердить'
         invalid: 'Неверный код.'
     account:
         changeUsername:
             header: 'Имя пользователикс'
-            action: 'Изменить'  # TODO more explicitly "Change username"
+            action: 'Изменить имя пользователикс'
             invalid: 'Имя пользователикс должно состоять из 4-16 знаков и содержать в себе только цифры, буквы алфавита, точки, дефисы и нижнее подчёркивание.'
             taken: 'Это имя уже занято'
         changeEmail:
             header: 'Адрес электронной почты'
-            action: 'Изменить'  # TODO more explicitly "Change email"
+            action: 'Изменить адрес электронной почты'
             invalid: 'Неверный адрес электронной почты.'
             taken: 'Адрес электронной почты занят.'
         admin: 'Админ'
@@ -624,7 +623,7 @@ profile:
     flagsInfo: 'Перетащите ваши прайд-флаги в эту рамку.'
     flagsCustom: 'Загрузить пользовательский прайд-флаг'
     flagsCustomWarning: 'Этот прайд-флаг был добавлен пользователикс. Команда pronouns.page не несет ответственность за это.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).' # TODO
+    flagsAsterisk: 'Это не квир-идентичность, но мы включаем ее для людей, которые являются квир-людьми в других отношениях (например, гетеросексуальные трансгендеры).'
     links: 'Ссылки'
     linksRecommended: 'Рекомендуем перейти по этим ссылкам'
     timezone:
@@ -828,8 +827,8 @@ confirm:
     yes: 'Да'
     no: 'Нет, отменить'
     ok: 'Ок'
-    save: 'Save' # TODO
-    dismiss: 'Dismiss' # TODO
+    save: 'Сохранять'
+    dismiss: 'Увольнять'
 
 terms:
     header: 'Условия предоставления услуг'
@@ -889,7 +888,7 @@ terms:
                 misogyny: 'мизогиния'
                 harassment: 'харассмент'
                 impersonation: 'самозванство'
-                selfHarm: 'encouraging self-harm and/or suicide'  # TODO
+                selfHarm: 'поощрение членовредительства и (или) самоубийства'
                 childPornography: 'детская порнография'
                 unlawfulConduct: 'противоправное поведение'
                 misinformation: 'неверная информация'
@@ -898,10 +897,9 @@ terms:
                 trolling: 'троллинг'
                 advertisement: 'реклама'
                 copyright: 'нарушение авторских прав или использование трейд марок'
-            # TODO
             violationsStrict: >
-                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
-                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
+                Мы оставляем за собой право интерпретировать как язык ненависти все случаи неочевидного, скрытого языка ненависти.
+                (например, говоря некоторым людям «DNI» (не взаимодействуй) из-за их гендерной идентичность, трансфобных «собачьего свистков», таких как «супернатурал», «супер-гетеро» или «полубисексуал» и т. д.).
             responsibility: >
                 Вы ответственны за любой контент, который публикуете на сервисе.
                 Если вы нарушите эти Условия представления услуг, мы удалим ваш контент без предварительного уведомления, а также можем отозвать ваше право на пользование сервисом.
@@ -998,6 +996,8 @@ mode:
     automatic: 'Автоматический'
     dark: 'Тёмная тема'
     reducedColours: 'Убрать цвета'
+    accessibility: 'Специальные возможности'
+    reducedItems: 'Уменьшить количество отображаемых элементов	'
 
 ban:
     reason: 'Причина блокировки'
@@ -1269,6 +1269,7 @@ calendar:
         nonbinary_week: 'Неделя осведомлённости о небинарности и небинарных'
         lesbian_aunts_day: 'День тёть-лесбиянок'
         autumn_testing_week: 'Неделя осеннего тестирования на ВИЧ в Европе'
+        hiv_aging_awareness_day: 'День осведомленности о ВИЧ/СПИДе при старении'
 
     banner: 'Мы празднуем'
     celebrating_custom: 'празднуется'

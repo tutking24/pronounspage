@@ -615,7 +615,7 @@ profile:
         Bạn có thể nhập một <strong>danh xưng</strong> (ví dụ “anh ấy” hoặc “cô ấy”)
         hoặc một <strong>đường link</strong> (ví dụ “https://vi.pronouns.page/:Vanh”).
         Bạn cũng có thể dùng {/pronouns#generator=<strong>trình tạo danh xưng</strong>} để điền vào câu với các danh xưng tùy ý.
-        Nếu danh xưng của bạn là {/pronouns#nameself=<strong>tên</strong>},
+        Nếu danh xưng của bạn là {/tránh=<strong>tên</strong>},
         bạn cũng có thể sử dụng dấu hai chấm (ví dụ “:Vanh”).
     pronounsNotFound: 'Định dạng không được chấp nhận. Vui lòng xem hướng dẫn ở trên.'
     words: 'Đại từ'
@@ -740,6 +740,9 @@ profile:
         validation:
             userNotFound: 'Người dùng không tồn tại'
             required: 'Mối quan hệ là trường bắt buộc'
+        removeSelf:
+            action: 'Xóa hồ sơ của bạn'
+            confirm: 'Bạn có chắc chắn muốn xóa hồ sơ của bạn khỏi vòng bạn bè của @%username% không?'
     sensitive:
         header: 'Cảnh báo nội dung'
         info: >
@@ -1026,6 +1029,8 @@ mode:
     automatic: 'Tự động'
     dark: 'Chế độ tối'
     reducedColours: 'Giảm màu'
+    accessibility: 'Cài đặt trợ năng'
+    reducedItems: 'Giảm số mục hiển thị'
 
 ban:
     reason: 'Lí do cấm'
@@ -1070,7 +1075,7 @@ translationMode:
     pause: 'Tạm dừng Chế độ dịch thuật'
 
 flags:
-    Abroromantic: 'Linh hoại tình cảm'
+    Abroromantic: 'Linh hoạt tình cảm'
     Abrosexual: 'Linh hoạt tính dục'
     Achillean: 'Achilles'
     Alloromantic_Asexual: 'Hữu ái vô tính'

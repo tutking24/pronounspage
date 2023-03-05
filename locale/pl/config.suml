@@ -1504,6 +1504,23 @@ links:
                 jak ważne są zaimki trans, ale jest to jednak nisza i margines.
             response: >
                 Nasza odpowiedź: {/blog/konserwatywny-prezent=„Miły prezent od konserwatywnej dziennikarki”}
+        -
+            icon: 'newspaper'
+            url: 'https://noizz.pl/lgbt/ojciec-powiedzial-mi-ze-nasza-wiez-zostala-zerwana-jestem-niebinarne/zjzv9ws'
+            headline: 'Ojciec powiedział mi, że nasza więź została zerwana. Jestem niebinarne'
+            extra: ' – <strong>noizz.pl</strong>'
+            quote: >
+                Dopiero kiedy pojawił się Słownik Neutratywów Języka Polskiego, a potem zaczął się rozrastać
+                i coraz więcej osób się o nim dowiadywało, zaczęłom się zastanawiać nad tym,
+                czy może by jednak nie zacząć posługiwać się innymi zaimkami. Myśl o zaimkach pchnęła mnie do tego,
+                żebym zastanowiło się nad swoją tranzycją w tamtym momencie.
+        -
+            icon: 'newspaper'
+            url: 'https://niestatystyczny.pl/2022/05/08/1000-slow-dziennie-rozmowa-z-peterem-v-brettem/'
+            headline: '1000 słów dziennie – rozmowa z Peterem V. Brettem'
+            extra: ' – <strong>niestatystyczny.pl</strong>'
+            quote: >
+                Czy korzystałeś z opracowań na temat tego, jak mówią o sobie osoby niebinarne, np. z pronouns.page?
 
     recommended:
         -

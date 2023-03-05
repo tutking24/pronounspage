@@ -1,70 +1,53 @@
-title: 'Pronouns.page'
+title: 'lipu pi nimi mi'
 domain: 'tok.pronouns.page'
 description: 'Usage examples of personal pronouns and gender neutral language.'
 
 home:
-    link: 'Homepage'
+    link: 'lipu open'
     header: 'Pronouns'
     headerLong: 'List of pronouns'
-    welcome: 'Welcome to pronouns.page!'
+    welcome: 'lipu nimi la kama pona'
     intro: >
-        We're creating a source of information about nonbinary and gender neutral language.
-    why: 'What''s the deal with pronouns?'
+        lipu ni li pana e nimi wile jan e sona tonsi.
+    why: 'lipu li lon tan seme?'
     about:
         - >
-            Pronouns are those words that we use instead of calling someone by their name every time we mention them.
-            Most people use {/he=“he/him”} and {/she=“she/her”}, so we automatically assume which one to call them based on someone's looks.
-            But it's actually not that simple…
+            mi toki e sina la mi wile kepeken nimi sina. sina soweli Kasijona la mi o toki ala e ni: sina jan Punima. mi ni la sina ken pilin nasa li ken pilin ike.
         - >
-            Gender is complicated. Some people “don't look like” their gender.
-            Some prefer being called in a different way from what you'd assume.
-            Some people don't fit into the boxes of “male” or “female” and prefer more neutral language.
-        - >
-            This tool lets you share a link to your pronouns, with example sentences,
-            so that you can show people how you like to be called.
-        - >
-            Why does it matter? Because of simple human decency.
-            You wouldn't call Ashley “Samantha” just because you like that name more
-            or because “she looks like a Samantha to you”.
-            Or even if she <em>does</em> have the name “Samantha” in her birth certificate
-            but she absolutely hates it and prefers to use “Ashley”.
-            And it's the exact same story with pronouns –
-            if you don't want to be rude towards someone, please address them properly.
-            The only difference is that we usually know names, but not pronouns.
-            We introduce ourselves with a name, but not pronouns. Let's change that!
-    pronouns: 'List of popular pronouns'
+            ilo ni la sina ken pana e nimi sina tawa lipu.
+            lipu la ale li ken sona e ni: ona o toki e sina kepeken nimi seme?
+    pronouns: 'nasin nimi jan mute'
     generator:
-        header: 'Generator'
+        header: 'ilo nimi'
         description: >
-            You can also use this tool where you fill out the blanks in sentences
-            and generate a link ready to share with others.
+            sina pana e nimi tawa ni la ilo li toki e jan kepeken nimi ni.
         button: 'Show the generator'
         header2: 'Generate a link'
         base: 'Based on'
         alt: 'You can also enter interchangeable forms in each field separately, eg. <code>him&her</code> = “him” or “her”.'
         pronunciation: 'You can also specify the pronunciation after a pipe character, using IPA, eg. <code>faerself|fɛɹsɛlf</code> = “faerself” pronounced as /fɛɹsɛlf/.'
-    whatisit: 'What''s the deal with pronouns?'
+    whatisit: 'ni li suli tan seme?'
     mission:
-        header: 'Our mission'
-        summary: 'We fight for freedom, respect and inclusiveness in language.'
+        header: 'wile mi'
+        summary: 'nasin toki o pona tawa jan ale.'
         freedom: >
-            <strong>Freedom</strong>
-            – so that everyone can use <em>for themselves</em>
-            whatever pronouns they feel describe them best.
+            <strong>nimi pona o ken.</strong><br>
+            jan ale li ante. <em>ona taso</em> li sona pona e ni: nimi seme li pona tawa ona.
         respect: >
-            <strong>Respect</strong>
-            – so that <em>other people's</em> pronouns are respected.
+            <strong>ale o nimi pona e jan ante.</strong><br>
+            jan li sona e nimi pona ona la ale o pona o kepeken nimi wile ona.
         inclusiveness: >
-            <strong>Inclusiveness</strong>
-            – so that when we're referring to a person we don't know or a group of people,
-            we don't assume their gender and don't exclude them for any reason.
+            <strong>sona ala la nimi o awen pona.</strong><br>
+            ken la mi sona ala e jan e nimi wile ona.
+            ken la mi toki e nasin jan e jan wan ala.
+            nimi o pona lon ni kin.
 
 pronouns:
-    header: 'Pronouns'
-    headerLong: 'Pronouns'
-    examples: 'Example usage in sentences'
+    header: 'nimi'
+    headerLong: 'nimi jan'
+    examples: 'o kepeken lon toki sama ni'
     plural: 'Plural'
-    intro: 'My pronouns are'
+    intro: 'nimi mi li'
     normative: 'Normative'
     alt:
         button: 'Generate a link to interchangeable forms'
@@ -181,8 +164,8 @@ nouns:
     image: 'Picture'
 
 community:
-    header: 'Community'
-    headerLong: 'Queer community'
+    header: 'kulupu'
+    headerLong: 'kulupu tonsi'
 
 terminology:
     header: 'Terminology'
@@ -205,192 +188,24 @@ terminology:
     definition: 'Definition'
 
 faq:
-    header: 'FAQ'
-    headerLong: 'Frequently asked questions'
+    header: 'sona'
+    headerLong: 'sona pi nasin nimi jan'
     questions:
-        nonbinary:
-            question: 'What is nonbinary?'
+        toki-inli:
+            question: 'lipu Pronouns.page li lon tan ni: toki Inli li ike li nasin mije meli e nimi "ona". toki pona li ike ala la lipu ni o toki pona tan seme?'
             answer:
                 - >
-                    Gender is way more complicated than just a simple distinction male/female.
-                    Even from a purely biological standpoint we distinguish chromosomal sex,
-                    genetic sex, hormonal sex, phenotypic sex…
-                    They aren't necessarily congruent with each other, they don't have to be binary.
-                    {https://twitter.com/RebeccaRHelm/status/1207834357639139328=(more info here)}.
-                    And when we get to the cultural aspect, “gender” is a social construct.
-                    Depending on time and location being “a woman” or “a man” can mean having radically different
-                    rights, duties, norms… In Europe men used to wear high heels and stockings,
-                    and native peoples of North America have been recognising a third gender for centuries
-                    {https://gender.wikia.org/wiki/Two-Spirit=(two-spirit)}, etc. etc.
-                - >
-                    Nonbinary is an umbrella term describing the identity of people
-                    who don't fit the binary man/woman distinction.
-                    It includes for instance people who are
-                    {https://gender.wikia.org/wiki/Agender=agender},
-                    {https://gender.wikia.org/wiki/Gender_Fluid=gender fluid},
-                    {https://gender.wikia.org/wiki/Demigirl=demigirls},
-                    {https://gender.wikia.org/wiki/Demiboy=demiboys},
-                    and {https://gender.wikia.org/wiki/Non-binary=many many others}.
-                - >
-                    Nonbinary isn't necessarily something “between” masculinity and femininity. More like “beyond”.
-                    Nonbinary people don't have to be androgynous, don't have to use neutral pronouns, etc.
-                    It's about being free from gender roles, not about creating new ones.
-        why-respect:
-            question: 'Why should I respect some <em>strange</em> pronouns?'
-            answer:
-                - >
-                    Because addressing people in the way they want to be addressed is the basis of social relations.
-                    You wouldn't call Ashley “Samantha”, you wouldn't drop “sir”/“madam” when addressing your supervisor, etc.
-                    And there's people who don't want to be called either “{/he=he}” or “{/she=she}”.
-                    If you don't accept that, it only shows <em>you</em> in bad light.
-                - >
-                    “Strange pronouns” are just a matter of getting used to.
-        made-up:
-            question: 'Those pronouns are made up!'
-            answer:
-                - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
-        how-to-know:
-            question: 'How do I know how to address someone?'
-            answer:
-                - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
-                - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
-                - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
-                - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
-                - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
-        who-uses-it:
-            question: 'Does anyone even use that?'
-            answer:
-                - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
-        authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
-            answer:
-                - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
-                - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
-                - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
-        bio:
-            question: 'Why should I put my pronouns in bio on social media?'
-            answer:
-                - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
-                - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
-                - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
-        change:
-            question: 'Can I change my pronouns?'
-            answer:
-                - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
-        get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
-            answer:
-                - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
-                - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
-        preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
-            answer:
-                - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
-                - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
-        gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
-            answer:
-                - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
-                - >
-                    Simply say “pronouns”.
+                    mi ante e toki la mi ante mute e nasin ilo kin. mi weka e ni: lipu li wile toki e kule mute pi nimi "ona". nasin lipu li kama ni: sina ken toki e nimi sina.
         flags:
-            question: 'Can you add this flag? Can you remove that flag?'
+            question: 'o pana e sitelen kule ni! o weka e sitelen kule ni!'
             answer:
                 - >
-                    No.
-                - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
-                - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
-                - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
-                - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
-        custom-pronouns:
-            question: 'My pronouns aren''t listed'
+        mu:
+            question: 'mu?'
             answer:
                 - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
-                - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
+                    mu! mu mu.
+
 
 links:
     header: 'Links'
@@ -400,9 +215,9 @@ links:
     mediaShort: 'Media'
     media: 'Pronouns.page in the media'
 
-    social: 'Social media'
+    social: 'mi lon ma ilo ante'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'lipu ni li lon toki ante'
 
 people: ~
 
@@ -412,79 +227,78 @@ people: ~
 english:
     header: 'English'
     headerLong: 'An overview in English'
-    headerLonger: 'An overview of <language> nonbinary pronouns'
-    description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
+    headerLonger: 'An overview of Toki Pona pronouns'
+    description: 'If you don''t speak Toki Pona, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
     intro:
         - >
-            A summary in English…
+            Toki Pona doesn't have gendered pronouns at all. The pronoun {/li/ona=ona} can refer to anyone and anything. So this version of Pronouns.page makes no mention of pronouns, and is essentially a website for telling people what your name is.
+        - >
+            TODO(tbodt): finish writing this
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
+    header: 'o toki tawa mi'
+    authors: 'jan ni li pali e lipu'
     groups:
         all: ''
         calendar: 'Queer Calendar Bot'
     faq: >
-        Before you write, check out our {/faq=FAQ} – maybe the answer to your question is already there.
+        sina wile e sona la, nanpa wan la o lukin e {/faq=lipu pi sona suli}. sona wile li lon ala la o toki tawa mi.
     technical: >
         Do you have a technical issue or question? Please include your username and as many details as possible
         (what does the error message say? are you on your phone or a desktop? which browser do you use?
         what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
     hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+        sina wile toki jaki utala e ike tonsi tawa mi la, o ala.
+        mi toki ala tawa jan ike.
+        sina pali e toki ike sina kepeken tenpo lili, taso mi weka e toki sina e sina kepeken tenpo lili lili.
     language: >
         We're an international team – people who created a specific language version
         might not be the same people who will read your message.
         So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: 'kulupu pi nasin toki pi kule jan ale'
+        nameShort: 'kulupu pi nasin toki'
         description: >
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
+            mi kulupu li wile e ni: toki li ken toki pona e kule jan ale.
+            nasin toki la mi alasa li pali li pona li pana.
+            kin la mi lukin sewi e kulupu anpa ale.
         extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
+        logo: 'sitelen pi kulupu ni la sitelen tonsi en sitelen toki li wan.'
+        members: 'jan ni li lon kulupu'
+        member: 'li lon kulupu pali pi lipu ni'
         upcoming: 'Upcoming language versions'
         join:
-            header: 'Join us!'
+            header: 'o pali lon kulupu!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                sina wile pona e nasin toki li wile pana e pali tawa kulupu mi la pona mute!
+                mi wile e pali sina!
+            areasIntro: 'mi ken wile e pali ni:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
+                - 'o pona e lipu nimi o pana e nimi sin'
+                - 'o pona e lipu ni: ona li toki e lipu ante mute'
+                - 'o pana e toki pona e sitelen pona tawa ale lon lipu mi kulupu'
+                - 'jan li toki tawa mi kulupu la o toki tawa ona'
+                - 'o weka e lipu jan ike'
+                - 'o pali e lipu sama kepeken toki ante'
+                - 'o lawa e pali ni: jan li pali e lipu sama kepeken toki ante'
+                - 'o pali e lipu lili lon lipu ni o toki e ijo sin'
+                - 'o pali e ilo'
+                - 'pali ante mute'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                pali mute li wile e sona tonsi la jan tonsi o pali ni. pali ante mute li wile ala e ni la mi ken wile e jan pi tonsi ala.
+            how: 'sina wile kama lon kulupu la, o toki tawa mi kepeken nimi {mailto:contact@pronouns.page=contact@pronouns.page} o toki e ni:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say if you have some experience in activist work,'
-                - 'say what you would like to help with.'
+                - 'sina seme?'
+                - 'lipu pronouns.page la lipu sina li lon seme?'
+                - 'sina pana e toki tawa ale lon lipu ante seme?'
+                - 'sina pali ala pali sama ni lon tenpo pini: sina utala tawa pona kulupu?'
+                - 'sina wile pana e pali seme?'
     contribute:
-        header: 'Contribute'
+        header: 'o pana e pali'
         intro: >
-            Pronouns.page is an open-source project created by volunteers.
-            You can add your contribution too! Here's some areas where we'd appreciate your help.
-            Active contributors will be invited to join our team.
+            lipu Pronouns.page li pali kulupu. jan mute li pana e pali tan wile pona tan wile mani ala.
+            sina kin li ken! mi wile e pali ni.
+            sina pali mute la mi ken kama e sina lon kulupu pali mi.
         entries:
             header: 'Add entries'
             description: >
@@ -506,43 +320,44 @@ contact:
                 Technical tasks are managed on {https://gitlab.com/PronounsPage/PronounsPage/-/boards=this kanban board}.
                 Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
                 Don't hesitate to ask questions.
-            footer: 'Technical tasks'
+            footer: 'o pali tawa ilo lipu'
 
 support:
-    header: 'Support'
+    header: 'o pana e mani'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
-    bankAccount: 'Bank transfer'
+        lipu ni li wile e mani tawa ijo ilo mute.
+        kin la jan pali li ken wile e telo nasa lili.
+        sina wile pana e mani tawa ni la o kepeken nasin ni:
+    bankAccount: 'o pana e mani tan poki mani'
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
+    header: 'sina'
+    headerLong: 'sina'
     tokenExpired: 'Token has expired. Please refresh the website and try again.'
     tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you <strong>%email%</strong> an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
+        help: 'sina ken pana e lon sina tawa ilo kepeken nasin tu. ken la o luka e nena pi ilo ante lon poka. ken la o pana e nimi sina pi ilo Email la ilo li pana e nanpa nasa tawa ni la o pana e nanpa sama tawa ilo.'
+        placeholder: 'ilo Email la nimi sina (ilo ni la sina jo e nimi la ni kin li ken)'
+        action: 'o lon'
+        emailSent: 'mi pana e nanpa nasa luka wan tawa sina <strong>%email%</strong>. o pana e nanpa lon ni. nanpa ni li ken e sina lon tenpo wan taso lon tenpo poka taso.'
         userNotFound: 'User not found.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'nanpa nasa sina li {{code}}'
+            instruction: 'o pana e nanpa ni lon ilo la mi kama sona e sina:'
+            extra: 'sina wile ala e nanpa ni la o weka e lipu ni. ale li pona.'
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
+            sina kama lon ilo la sina ken pali e lipu sina ({/@example=sama lipu ni}).
+        passwordless: 'ilo li wile ala e ni: sina pali e nimi len open. {https://avris.it/blog/passwords-are-passé=o kama sona e nasin ante mi.}'
         instancePlaceholder: 'Instance'
         domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+        deprecated: 'pakala'
         depreciationNotice: >
             This is not a reliable authentication provider.
             <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
             We highly recommend making sure that you have a different login method available.
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'o lon'
+        invalid: 'nanpa li ike.'
     account:
         changeUsername:
             header: 'Username'
@@ -560,8 +375,8 @@ user:
         admin: 'Admin'
     logout: 'Log out'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
+        header: 'sitelen'
+        change: 'o ante e sitelen'
         failed: 'Please reconnect your social media to fix the missing avatar.'
     deleteAccount: 'Delete account'
     deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
@@ -589,7 +404,7 @@ user:
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
     qr:
-        header: 'QR code'
+        header: 'sitelen QR'
         download: 'Download QR code'
     modMessage:
         subject: 'A message from a moderator'
@@ -598,7 +413,7 @@ user:
 
 profile:
     description: 'Description'
-    names: 'Names'
+    names: 'nimi'
     pronouns: 'Pronouns'
     pronounsInfo: >
         You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
@@ -610,10 +425,11 @@ profile:
         If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
         you can also use a colon shorthand (eg. “:star”).
     pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
+    words: 'nimi ante'
     wordsColumnHeader: 'Column header'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+    birthday: 'tenpo suno pi sike sin'
+    birthdayInfo: 'mi pana ala e ni tawa lipu sina. mi nanpa e mute pi tenpo sike sina li pana e ni taso.'
+    age: 'mi lon tenpo sike'
     timezone:
         header: 'Timezone'
         placeholder: 'Select your timezone'
@@ -623,19 +439,19 @@ profile:
         detect: 'Detect'
         publishArea: 'Publish the continent in your card'
         publishLocation: 'Publish the area in your card'
-        time: 'It''s %time% on a %weekday% in my timezone'
+        time: 'mi la tenpo ni li %time% lon tenpo suno %weekday%'
         approximate: 'It''s just an approximate location'
         areas:
-            Africa: 'Africa'
-            America: 'America'
-            Antarctica: 'Antarctica'
-            Arctic: 'Arctic'
-            Asia: 'Asia'
-            Atlantic: 'Atlantic'
-            Australia: 'Australia'
-            Europe: 'Europe'
-            Indian: 'Indian'
-            Pacific: 'Pacific'
+            Africa: 'ma Apika'
+            America: 'ma Mewika'
+            Antarctica: 'ma lete Antasika'
+            Arctic: 'ma lete Asika'
+            Asia: 'ma Asija'
+            Atlantic: 'telo Alansi'
+            Australia: 'ma Oselija'
+            Europe: 'ma Elopa'
+            Indian: 'ma Palata'
+            Pacific: 'telo Pasipi'
     flags: 'Flags'
     flagsInfo: 'Drag & drop your pride flags into this frame.'
     flagsCustom: 'Upload custom flags'
@@ -645,34 +461,34 @@ profile:
     linksRecommended: 'We recommend linking to'
     column: 'Column'
     opinions:
-        header: 'Legend/opinions'
-        description: 'Description…'
+        header: 'sitelen pilin'
+        description: 'sona…'
         colours:
-            _: '(Font colour…)'
-            pink: 'Pink'
-            red: 'Red'
-            orange: 'Orange'
-            green: 'Green'
-            blue: 'Blue'
-            grey: 'Grey'
+            _: '(kule…)'
+            pink: 'loje walo'
+            red: 'loje'
+            orange: 'loje jelo'
+            green: 'laso kasi'
+            blue: 'laso telo'
+            grey: 'pimeja'
         styles:
-            _: '(Style…)'
-            bold-italics: 'Bold & italics'
-            bold: 'Bold'
-            italics: 'Italics'
-            small: 'Small'
+            _: '(selo…)'
+            bold-italics: 'wawa en tawa poka'
+            bold: 'wawa'
+            italics: 'poka'
+            small: 'lili'
         validation:
             missingIcon: 'Icon is required'
             missingDescription: 'Description is required'
             duplicateIcon: 'Icon must be unique'
             duplicateDescription: 'Description must be unique'
             invalidOpinion: 'Selected icon was not found in the legend above'
-        custom: 'custom, added by the user:'
+        custom: 'ni li pilin sin tan jan ni:'
     header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
+    list: 'lipu nimi sina'
+    init: 'o pali e lipu'
+    show: 'o lukin'
+    edit: 'o ante'
     delete: 'Delete'
     deleteConfirm: 'Are you sure you want to delete this card?'
     editor:
@@ -681,27 +497,27 @@ profile:
         defaults: 'Restore defaults'
         propagate: 'Propagate this change to your cards in all languages'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    bannerButton: 'Create a card'
+        yes: 'pona a'
+        jokingly: 'lon musi taso'
+        close: 'tan jan poka taso'
+        meh: 'ike ala'
+        no: 'ike'
+    bannerButton: 'o lipu e nimi sina e sina'
     card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
+        link: 'ilo o sitelen e lipu'
+        generate: 'o pali e sitelen'
+        generating: 'ilo li pali… ni li kepeken tenpo.'
     empty: 'This person hasn''t created any cards yet.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'ijo sina'
+        description: 'sina taso li ken lukin e ni'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
+        header: 'toki'
+        description: 'toki ante ni la lipu ni li lon'
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
     circles:
-        header: 'My circle'
+        header: 'jan mi'
         info: >
             In this field you can tag the <strong>people closest to you</strong>, along with information
             which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
@@ -713,20 +529,23 @@ profile:
         relationship: 'Relationship (eg. “partner”, “best friend”)'
         mutual: 'This connection goes both ways'
         yourMentions:
-            header: 'Your circles mentions'
+            header: 'jan ante ni la sina lon lipu pi jan ona'
             description: >
                 Here's the list of people who added you to their circles.
                 If you add them back, a checkmark [s:shield-check] will appear in both your cards.
         validation:
             userNotFound: 'Such user doesn''t exist'
             required: 'Relationship is a required field'
+        removeSelf:
+            action: 'o weka e mi'
+            confirm: 'sina wile ala wile weka a e sina tan lipu jan pi jan @%username%?'
 
-share: 'Share'
+share: 'o pana e ni tawa jan ante'
 
 crud:
     approve: 'Approve'
     hide: 'Hide'
-    remove: 'Remove'
+    remove: 'o weka e ni'
     removeConfirm: 'Are you sure you want to remove this item?'
     edit: 'Edit'
     add: 'Add'
@@ -745,30 +564,30 @@ crud:
 
 footer:
     license: >
-        {https://gitlab.com/PronounsPage/PronounsPage=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media'
-    legal: 'Legal'
+         lawa {/license=OQL} li lawa e {https://gitlab.com/PronounsPage/PronounsPage=mama ilo lipu} e toki lipu.
+    links: 'o toki tawa mi'
+    legal: 'toki pi nasin lawa'
     financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+    technical: 'ijo ilo'
+    sibling: 'pali poka'
     stats:
-        header: 'Stats'
-        overall: 'all language versions'
-        current: 'only this version'
+        header: 'nanpa'
+        overall: 'lipu ale pi toki ante'
+        current: 'lipu ni taso'
         keys:
-            users: 'Registered users'
-            cards: 'Cards'
-            visitors: 'Unique visitors'
-            pageviews: 'Page views'
-            realTimeVisitors: 'Currently online'
+            users: 'mi jo e jan'
+            cards: 'mi jo e lipu nimi'
+            visitors: 'mun li sike e ma la jan'
+            pageviews: 'mun la lukin'
+            realTimeVisitors: 'sina lukin e ni la jan ante lukin li'
             visitDuration: 'Avg visit duration'
             uptime: 'Uptime'
             responseTime: 'Avg response time'
-        month: 'month'
+        month: 'li lon lipu ni'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'lipu li lon ala'
+    back: 'o tawa lipu open'
 
 authRequired:
     message: 'You must log in to see this site'
@@ -784,8 +603,8 @@ confirm:
 
 terms:
     header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    lastUpdate: 'lipu ni li kama ante lon tenpo'
+    consent: 'sina kama lon ilo la {/lawa=nasin lawa mi} li pona tawa sina.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -877,8 +696,7 @@ terms:
                 will now be explicitly enumerated. See: {https://en.pronouns.page/blog/terms-pedophilia=this blog post}.
 
 privacy:
-    header: 'Privacy Policy'
-    # you can skip translating the rest of the "privacy" section
+    header: 'lipu lawa pi jo sona'
     content:
         intro: >
             This Privacy Policy describes how the Service provided on the website
@@ -887,29 +705,52 @@ privacy:
             The Service is operated by the “Neutral Language Council” collective
             who can be contacted via email:
         effort: >
-            We make every effort to store your data securely and to ensure that any non-public data we store
-            are not seized by or transferred to any third party, except those trusted parties described below.
+            sina pana e toki pi len ala e sona len tawa mi.
+            mi wile jo pona e ni sina.
+            mi pali suli tawa ni.
+            sina pana e ijo la jan ante o kama ala lukin e ona la mi wile len pona e ni sina.
+            sona sina li tawa tan mi tawa kulupu pona ante.
+            mi toki e kulupu pona lon anpa.
         data: >
-            Other than the data that you explicitly post on the Service as Content
-            or share with us implicitly (eg. OAuth access tokens, if you use social login options),
-            no additional private data connected to your account is being stored or processed by the Service.
+            mi awen ala e sona len mute sina.
+            mi jo ala e ona.
+            mi kepeken ala ona.
+            taso mi jo a e sona ni:
+            sina toki e ijo tawa jan ante lon mi la mi jo e ona.
+            sina kama lon sijelo sina kepeken sijelo pi ilo ante la mi jo e nimi len OAuth pi sijelo ni.
         editRemoval: >
-            You may edit or remove any Content you have posted on the Service.
+            sina toki e ijo tawa jan ante lon mi la sina ken ante e ona li ken weka e ona.
         contact: >
-            When you contact us by email we store your email address in order to answer you and to ask you follow-up questions.
+            sina toki tawa mi kepeken ilo Email la mi jo e nimi sina pi ilo Email.
+            ni la mi kin li ken toki tawa sina.
         cookies: >
-            We only use first-party cookies and local storage to keep you logged in and save your preferences.
+            sina lon mi la mi pana e sona lili ni tawa ilo sina:
+            sina jan seme?
+            sina wile e seme lon lipu ni?
+            sina weka tan lipu ni la sona ni li awen lon ilo sina.
+            ni la sina kama sin tawa lipu la sona li awen lon li pona e lipu.
+            ona li lon sin e sijelo sina li pana e wile sina tawa lipu.
+            sona ni li awen lon ilo sina taso.
+            kin kulupu esun ante li pana ala e sona tawa ilo sina tan wile mi.
+            ni la sona sina li awen lon anpa len.
         plausible: >
-            We use <strong>Plausible</strong> to analyse traffic on the website. Such data has no relation to your username, and your IP is anonymised.
-            You can read their privacy policy {https://plausible.io/privacy=<strong>here</strong>}.
+            jan seme li kama lon mi?
+            tenpo kama li seme?
+            mute jan li seme?
+            mi wile sona e ni.
+            mi kepeken ilo <strong>Plausible</strong> tawa ni.
+            ilo li kama jo e sona ni.
+            sona ni li jo ala e nimi sina e nimi IP pi ilo sina.
+            {https://plausible.io/privacy=lipu lawa jo ona ni} li lawa e ilo ni.
         arc: >
             We use <strong>arc.io</strong> to cover the costs of website maintenance without introducing ads.
             You can read more about them and their privacy policy
             {https://arc.io/faq=<strong>here</strong>}.
         hCaptcha: >
-            We use <strong>hCaptcha</strong> to filter out bots and prevent attacks.
-            You can read their privacy policy
-            {https://www.hcaptcha.com/privacy=<strong>here</strong>}.
+            mi wile ala e ni: ilo ike li utala e mi.
+            mi wile weka e ilo ni.
+            mi kepeken ilo <strong>hCaptcha</strong> tawa ni.
+            {https://www.hcaptcha.com/privacy=lipu lawa jo ona ni} li lawa e ilo ni.
         ezoic: >
             In order to fund the project we show ads using a third party technology called <strong>Ezoic</strong>.
             You can opt-in to allow them to personalise your experience.
@@ -917,8 +758,10 @@ privacy:
         logsBackups: >
             Logs and backups are stored for no longer than 18 months.
         gdpr: >
-            Your personal data are protected by the GDPR, which means you have the right
-            to see, correct, update and remove the data we store about you.
+            ma Elopa la lawa jo GDPR li len pona.
+            lawa ni li lawa e sona sina lon mi.
+            lawa ni li ni e sona sina:
+            sina wile la sina ken lukin e ona li ken ante e ona li ken weka e ona.
     consent:
         header: 'Cookie consent'
         required:
@@ -939,7 +782,7 @@ privacy:
         revoke: 'Reset cookie consent settings'
 
 admin:
-    header: 'Admin panel'
+    header: 'ilo lawa'
     user:
         user: 'User'
         createdAt: 'Registration date'
@@ -949,7 +792,7 @@ admin:
         confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
 
 table:
-    empty: 'Empty…'
+    empty: 'ala…'
     count: 'Count'
     sort: 'Drag to sort'
     scrollUp: 'Scroll to the top'
@@ -963,11 +806,11 @@ api:
 quotation:
     start: '“'
     end: '”'
-    colon: ':'
+    colon: ''
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
+    shorter: 'o pana e toki sina'
+    short: 'o pali e lipu ni pi toki sina'
     long: 'Want to create a new language version? Awesome! Please check out'
     longLink: 'this manual!'
 
@@ -980,14 +823,15 @@ error:
     generic: 'Something went wrong, please try again…'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: 'sina ilo ala ilo? mi wile sona tan ni: ilo mute li lukin jaki mute e lipu ni.'
+    invalid: 'pakala. ken la sina ilo. sina ilo ala la o pali sin.'
 
 mode:
-    light: 'Light mode'
-    automatic: 'Automatic'
-    dark: 'Dark mode'
-    reducedColours: 'Reduced colours'
+    light: 'walo'
+    automatic: 'sama ilo sina'
+    dark: 'pimeja'
+    reducedColours: 'kule o wawa lili'
+    reducedItems: 'ijo o mute suli ala'
 
 ban:
     reason: 'Ban reason'
@@ -1009,7 +853,7 @@ ban:
         please respond to this email and we might get another look in a bigger group.
 
 report:
-    action: 'Report abuse'
+    action: 'lipu ni li ike'
     comment: 'Please explain briefly what''s wrong with this profile'
     confirm: 'Are you sure you want to report @%username%?'
     sent: 'Your report has been sent. Thanks for your help!'
@@ -1018,7 +862,7 @@ report:
 
 translationMode:
     header: 'Translation Mode'
-    action: 'Propose translations'
+    action: 'o toki pona e ilo ni'
     welcome: >
         Is there a translation missing or an existing one needs a correction?
         You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
@@ -1026,9 +870,9 @@ translationMode:
         in which you can modify the translation and compare it to the English text.
         Remember to click on the button “Commit changes” once you're done.
     logIn: 'You need to be logged in to propose translations'
-    changes: 'Changes'
-    commit: 'Commit changes'
-    revert: 'Revert changes'
+    changes: 'ante'
+    commit: 'o pana e ante'
+    revert: 'o weka e ante'
     pause: 'Pause Translation Mode'
 
 flags:
@@ -1276,5 +1120,5 @@ calendar:
     full: 'Full calendar'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org=Here''s how you can support it.}'
+    header: 'ma Ukawina o wawa.'
+    link: '{https://supportukrainenow.org=o wawa e ona.}'

@@ -23,7 +23,8 @@ pronouns:
             Có người không muốn dùng bất cứ danh xưng nào, thay vào đó là tên, tên viết tắt/kí hiệu,
             việc lược bỏ danh xưng bằng cấu trúc câu bị động, hoặc thay đổi cấu trúc câu nói.
         morphemes:
-            base_pronoun: '#'
+            3rd_person: '#'
+            2nd_person: '#'
         examples: [':Vanh', ':A']
         template: 'Bạn chỉ cần mở một trong các ví dụ trên và thay thế tên/tên tắt ở link bằng tên bạn.'
         routes: ['tránh', 'bỏ-danh-xưng', 'tên']
