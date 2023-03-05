@@ -185,7 +185,9 @@ export default {
     },
     build: {
         postcss: {
-            plugins: postCssPlugins,
+            postcssOptions: {
+                plugins: postCssPlugins,
+            }
         },
         extend (config, ctx) {
             config.module.rules.push({
