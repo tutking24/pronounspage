@@ -885,6 +885,8 @@ terms:
             violations: >
                 It is forbidden to post on the Service any Content that might break the law or violate social norms,
                 including but not limited to:
+            violationsSeparator: ', '
+            violationsEnd: '. '
             violationsExamples:
                 totalitarian: 'propagation of totalitarian regimes'
                 hateSpeech: 'hate speech'

@@ -237,7 +237,7 @@ english:
 
 contact:
     header: 'o toki tawa mi'
-    authors: 'jan ni li pali e lipu'
+    authors: 'jan mama lipu'
     groups:
         all: ''
         calendar: 'Queer Calendar Bot'
@@ -305,17 +305,17 @@ contact:
                 Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
                 If you think something's missing or incorrect, don't hesitate to submit your entry.
         translations:
-            header: 'Add or correct translations'
+            header: 'o pona e toki lon ilo ni'
             description: >
                 A translation string is missing or incorrect?
                 Click on “Propose translations” in the footer and follow instructions.
         version:
-            header: 'Create a new language version'
+            header: 'o pali e lipu sama pi toki sin'
             description: >
                 Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
                 Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
         technical:
-            header: 'Submit a pull request'
+            header: 'o pana e toki ilo'
             description: >
                 Technical tasks are managed on {https://gitlab.com/PronounsPage/PronounsPage/-/boards=this kanban board}.
                 Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
@@ -360,19 +360,19 @@ user:
         invalid: 'nanpa li ike.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change username'
+            header: 'ilo ni la nimi sina'
+            action: 'o ante e nimi'
             invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            taken: 'jan ante li kepeken nimi ni.'
             nonascii: >
                 Warning: if you decide for a username that contains non-ASCII characters,
                 keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
         changeEmail:
-            header: 'Email address'
+            header: 'ilo Email la nimi sina'
             action: 'Change email'
             invalid: 'Invalid email address.'
             taken: 'This address is taken.'
-        admin: 'Admin'
+        admin: 'wawa'
     logout: 'Log out'
     avatar:
         header: 'sitelen'
@@ -387,7 +387,7 @@ user:
         disconnect: 'Disconnect'
         disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'ilo ante sina la mi ken sona e ni: sina sina a.'
         init: >
             Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
             and then enter the initial token that gets generated.
@@ -400,7 +400,7 @@ user:
             enter: 'Enter recovery code'
         cancel: 'Cancel login'
         enabled: 'Enabled'
-        enable: 'Enable MFA'
+        enable: 'o pana e ilo ante sina'
         disable: 'Disable MFA'
         disableConfirm: 'Are you sure you want to disable MFA?'
     qr:
@@ -517,7 +517,7 @@ profile:
         # if your language has declension and it's hard to fit the username in that sentence,
         # just make is 'This card is…'
     circles:
-        header: 'jan mi'
+        header: 'kulupu mi'
         info: >
             In this field you can tag the <strong>people closest to you</strong>, along with information
             which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
@@ -529,7 +529,7 @@ profile:
         relationship: 'Relationship (eg. “partner”, “best friend”)'
         mutual: 'This connection goes both ways'
         yourMentions:
-            header: 'jan ante ni la sina lon lipu pi jan ona'
+            header: 'jan ante ni la sina lon kulupu ona'
             description: >
                 Here's the list of people who added you to their circles.
                 If you add them back, a checkmark [s:shield-check] will appear in both your cards.
@@ -538,7 +538,7 @@ profile:
             required: 'Relationship is a required field'
         removeSelf:
             action: 'o weka e mi'
-            confirm: 'sina wile ala wile weka a e sina tan lipu jan pi jan @%username%?'
+            confirm: 'sina wile ala wile weka a e sina tan kulupu pi jan @%username%?'
 
 share: 'o pana e ni tawa jan ante'
 
@@ -602,88 +602,109 @@ confirm:
     dismiss: 'Dismiss'
 
 terms:
-    header: 'Terms of Service'
+    header: 'lipu lawa'
     lastUpdate: 'lipu ni li kama ante lon tenpo'
     consent: 'sina kama lon ilo la {/lawa=nasin lawa mi} li pona tawa sina.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
-    #translationDisclaimer: >
-    #    The following text is just an auxiliary translation.
-    #    The only legally binding version of the Terms of Service is the English one, available
-    #    {https://en.pronouns.page/terms=here}.
+    translationDisclaimer: >
+        {https://en.pronouns.page/terms=lipu lawa lon} li toki Inli.
+        ona taso li lawa.
+        lipu ni li lawa ala li pana e sona taso tan toki Inli.
     content:
         intro: >
-            These Terms of Service govern your access to and use of the Service provided on the website
-            <strong>pronouns.page</strong> and related subdomains and domains,
-            operated by the “Neutral Language Council” collective
-            who can be contacted via email:
+            lipu lawa ni li lawa e ni: sina kepeken mi.
+            mi seme? mi lipu pronouns.page. lipu ante mi kin li mi.
+            kulupu Neutral Language Council en kulupu Nero Network (NL, KVK 88409120) li lawa e mi.
+            sina wile toki tawa ona la o toki tawa poki lipu ni:
         consent: >
-            By using the Services you agree to be bound by these Terms of Service and you consent
-            to us collecting and processing your data as described in {/privacy=our Privacy Policy}.
+            sina kepeken mi la sina kute e lawa ni li ken e ni:
+            mi awen e toki sina e sona sina li kepeken ona.
+            mi ni la mi kute e {/privacy=lipu lawa pi jo sona}.
         accounts:
-            header: 'Users and accounts'
+            header: 'sijelo ilo sina'
             age: >
-                You cannot create an account, if you're barred from it under the laws of your jurisdiction.
-                You cannot create an account, if you're under 13 years old.
-                If you're under 16 years old, you need consent of the holder of parental responsibility.
+                mi ken wile ala e ni: sina pali e sijelo sina lon mi.
+                mi wile e ni lon seme?
+                ken la lawa pi ma sina li wile e ni: sina o pali ala e sijelo.
+                ni la mi kin li wile e ni.
+                ken la tenpo sike suno 13 la sina lili.
+                ni kin la sina o pali ala e sijelo.
+                ken la sina suli lili la sina lon tenpo sike 13 lon tenpo sike 16 ala.
+                ni la wile pi mama sina li lawa e ken sijelo.
             authentication: >
-                When you create an account with us, you are responsible for safeguarding the authentication method
-                that you use to access the Service (that is: password to your email account and/or social media platform).
-                You agree not to disclose it to any third party.
-                You must notify us immediately when you become aware of any breach of security or unauthorized use of your account.
+                sina pali e sijelo lon mi la sina lawa e nasin ni:
+                sina kama lon sijelo sina.
+                sina o awen pona e nasin ni.
+                o pana ala e ken ni: jan ante li ken kepeken sijelo sina.
+                jan ante li kama lon sijelo sina la o toki a e ni tawa mi lon tenpo ni.
             termination: >
-                We may terminate or suspend your account immediately, without prior notice or liability,
-                for any reason whatsoever, including without limitation if you breach the Terms.
+                ale la mi ken moli e sijelo sina.
+                mi ken toki ala e kama ni tawa sina.
+                mi ken wile ni tan ni:
+                sina kute ala e lipu lawa ni.
+                mi ken moli e sijelo tan ijo ante ale kin.
             inactivity: >
-                Accounts without any cards and no activity in the last 30 days will be removed and their usernames freed up.
+                jan li pali e sijelo li pali ala e lipu nimi li kepeken sijelo ala lon tenpo mun wan la mi moli e sijelo.
+                kin jan ante li kama ken kepeken nimi ona.
         content:
-            header: 'Content'
+            header: 'toki sina'
             ownership: >
-                The Content you post on the Service is yours.
-                By posting it, you grant us a worldwide, royalty-free license
-                to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute such Content in any way.
+                sina toki lon mi la sina ken e ni: toki sina la ma ale en nasin ale la mi ken kepeken li ken ante ale li ken pana ale.
+                nasin pi wile mi la mi sin anu mute anu pana e ona.
             liability: >
-                We do not endorse or guarantee truthfulness or safety of the Content posted by other users of the Service,
-                and in particular of any links to any external websites.
+                jan ante li toki lon mi la
+                toki ona li ken lon ala li ken pona ala li ken ike.
+                kin suli la toki li nasin tawa lipu ante tawa ilo ante tawa ma ante la mi ken ala sona e ni.
             violations: >
-                It is forbidden to post on the Service any Content that might break the law or violate social norms,
-                including but not limited to:
+                toki sina li kute ala e lawa ma li ike tawa nasin kulupu jan la sina o toki ala e ni lon mi.
+                ike li ken sama ni:
+            violationsSeparator: '. '
+            violationsEnd: ''
             violationsExamples:
-                totalitarian: 'propagation of totalitarian regimes'
-                hateSpeech: 'hate speech'
-                racism: 'racism'
-                xenophobia: 'xenophobia'
-                homophobia: 'homophobia'
-                transphobia: 'transphobia'
-                enbyphobia: 'enbyphobia'
-                queerphobia: 'queerphobia'
-                exclusionism: 'queer exclusionism'
-                sexism: 'sexism'
-                misogyny: 'misogyny'
-                harassment: 'harassment'
-                impersonation: 'impersonation'
-                selfHarm: 'encouraging self-harm and/or suicide'
-                childPornography: 'child pornography'
-                unlawfulConduct: 'unlawful conduct'
-                misinformation: 'misinformation'
-                doxxing: 'sharing of someone else''s personal data'
-                spam: 'spam'
-                trolling: 'trolling'
-                advertisement: 'advertisement'
-                copyright: 'copyright or trademark violations'
+                totalitarian: 'o pona ala e lawa ma ni: lawa li anpa ale e jan li kute ala e ona'
+                hateSpeech: 'o toki utala ala e kule jan'
+                racism: 'o toki ike ala e jan pi kule selo ante'
+                xenophobia: 'o toki ike ala e jan pi ma ante'
+                homophobia: 'o toki ike ala e ni: jan li olin pi kule sama'
+                transphobia: 'o toki ike ala e jan tonsi ni: kon ona en sijelo ona li ante'
+                enbyphobia: 'o toki ike ala e jan tonsi ni: ona li meli la li mije ala'
+                queerphobia: 'o toki ala e ni: olin nasa li ike'
+                exclusionism: 'o wile ala e ni: jan pi olin nasa o weka'
+                sexism: 'o toki ala e ni: mije anu tonsi li ike'
+                misogyny: 'o toki ala e ni: meli li ike'
+                harassment: 'o pali ala e ike ni: jan li ike pilin tan pali ni'
+                impersonation: 'o toki ala e ni: sina jan ante'
+                selfHarm: 'o toki ala e ni: jan o pakala anu moli e ona sama'
+                childPornography: 'o pana ala e sitelen ni: jan lili li unpa'
+                pedophilia: 'o toki ala e ni: jan o ken unpa e jan lili'
+                unlawfulConduct: 'o kute e lawa ma'
+                misinformation: 'o toki ala e sona ike e sona weka'
+                doxxing: 'o pana ala e sona len pi jan ante'
+                spam: 'o mu jaki ala'
+                trolling: 'o wile ala e ni: jan li ike pilin tan toki sina'
+                advertisement: 'o toki ala e wile ni: jan o esun e ijo'
+                copyright: 'o kute e lawa jo. o kepeken pali pi jan ante lon nasin ike ala'
             violationsStrict: >
-                We reserve the right to interpret as hate-speech all instances of non-obvious, concealed hate speech
-                (eg. telling some people to “DNI” because of their queer identity, transphobic dogwhistles like “superstraight” or “semibisexual”, etc.).
+                ken la sina toki ike li len e ni kepeken nimi nasa.
+                mi pilin taso e ni la mi ken pali sama ni:
+                sina toki ike.
             responsibility: >
-                You are responsible for any Content posted on the Service.
-                If you violate these Terms of Service, we will remove your Content without prior notice and we might revoke your license to use the Service.
-                If you break the law, we will pass your information to law enforcement agencies.
+                sina toki lon mi la sina lawa e toki ni.
+                sina kute ala e lipu lawa ni la mi weka e toki sina.
+                mi ken toki ala e ni tawa sina.
+                ken la mi moli kin e sijelo sina.
+                kin sina kute ala e lawa ma la mi toki e ni e ijo sina tawa lawa ma.
         closing:
-            header: 'General'
+            header: 'ijo ante'
             jurisdiction: >
-                The applicable law is the law of the Kingdom of Netherlands.
+                sina kute ala e lipu ni la
+                pakala suli li kama la tomo pi lawa ma o pona e pakala ni.
+                ni la lawa pi ma Netelan li lawa e tomo ni.
             changes: >
-                We reserve the right to modify these Terms of Service at any time.
-                If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
+                tenpo ale la mi ken ante e lipu lawa ni.
+                ante ni li suli la mi toki e ni tawa sina.
+                ni la mun li sike wan lon ma la mi pana e ante ni tawa lipu.
+                ni la lipu sin ni li lawa.
 
 privacy:
     header: 'lipu lawa pi jo sona'

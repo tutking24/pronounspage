@@ -33,7 +33,7 @@
         <p><T>terms.content.content.liability</T></p>
         <p>
             <T>terms.content.content.violations</T>
-            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><sup v-if="violation === 'ableism' && new Date < new Date(2023, 3, 6)"> (this clause comes into effect on April 6th, 2023)</sup><template v-if="i !== forbidden.length - 1">, </template></template>.
+            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><sup v-if="violation === 'ableism' && new Date < new Date(2023, 3, 6)"> (this clause comes into effect on April 6th, 2023)</sup><template v-if="i !== forbidden.length - 1"><T>terms.content.content.violationsSeparator</T></template></template><T>terms.content.content.violationsEnd</T>
             <T>terms.content.content.violationsStrict</T>
         </p>
         <p><T>terms.content.content.responsibility</T></p>
