@@ -5,7 +5,7 @@
                @focus="show" @blur="hide" @keydown="filterKeydown"
         />
         <div class="list-group shadow" v-show="shown">
-            <a v-for="(display, option) in visibleOptions"
+            <a v-for="(display, option) in visibleOptions()"
                :class="['list-group-item', 'list-group-item-action', highlightedOption === option ? 'active' : '']" href="#"
                @click.prevent="select(option)">
                 {{ display }}
@@ -72,11 +72,7 @@ export default {
                 default:
                     break;
             }
-
-            this.$forceUpdate();
-        }
-    },
-    computed: {
+        },
         visibleOptions() {
             return Object.fromEntries(Object.entries(this.options).filter(([option, display]) => {
                 return !this.filter
@@ -84,8 +80,10 @@ export default {
                     || display.toLowerCase().includes(this.filter.toLowerCase())
             }));
         },
+    },
+    computed: {
         highlightedOption() {
-            return Object.keys(this.visibleOptions)[this.highlighted];
+            return Object.keys(this.visibleOptions())[this.highlighted];
         },
     }
 }
