@@ -54,21 +54,26 @@ export default {
             switch (e.key) {
                 case 'ArrowUp':
                     this.highlighted--;
+                    e.preventDefault();
+                    e.stopPropagation();
                     break;
                 case 'ArrowDown':
                     this.highlighted++;
+                    e.preventDefault();
+                    e.stopPropagation();
                     break;
                 case 'Enter':
                     if (this.highlightedOption) {
                         this.select(this.highlightedOption);
+                        e.preventDefault();
+                        e.stopPropagation();
                     }
                     break;
                 default:
-                    return;
+                    break;
             }
 
-            e.preventDefault();
-            e.stopPropagation();
+            this.$forceUpdate();
         }
     },
     computed: {
