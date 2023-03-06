@@ -560,6 +560,11 @@ links:
             url: 'http://www.uwm.edu.pl/polonistyka/pracejezykoznawcze/pol/pliki/Prace_Jezykoznawcze_24_1_2022.pdf'
             headline: 'Językowe wykładniki niebinarności płci w polszczyźnie.'
             extra: ' – dr hab. Małgorzata Gębka-Wolak, prof. UMK i dr Aleksandra Walkiewicz; Prace Językoznawcze XXIV/1 2022; Uniwersyste Warmińsko-Mazurski w Olsztynie'
+        -
+            icon: 'comment-alt-edit'
+            url: '/docs-local/Klaudia Wojtasik – Polski język niebinarny studium lingwistyczno-społeczne.pdf'
+            headline: 'Polski język niebinarny — studium lingwistyczno-społeczne'
+            extra: ' – Klaudia Wojtasik, II Liceum Ogólnokształcące im. Marii Konopnickiej w Inowrocławiu'
     links:
         -
             icon: 'globe-europe'
