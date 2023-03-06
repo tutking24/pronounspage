@@ -558,7 +558,7 @@ confirm:
     header: 'Konfirmas esta dechizion?'
     yes: 'Si, lo esto'
     no: 'No, anular'
-    ok: 'D'akodro''
+    ok: 'D''akodro'
 
 terms:
     header: 'Terminos de Servisio'
