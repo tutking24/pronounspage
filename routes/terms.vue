@@ -7,8 +7,8 @@
 
         <p class="small"><em>
             <T>terms.lastUpdate</T><T>quotation.colon</T>
-            2022-12-29
-            (registration of a legal entity)
+            2023-03-06
+            (explicit mention of ableism)
         </em></p>
 
         <div v-if="$te('terms.translationDisclaimer')" class="alert alert-warning">
@@ -33,7 +33,7 @@
         <p><T>terms.content.content.liability</T></p>
         <p>
             <T>terms.content.content.violations</T>
-            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><sup v-if="violation === 'pedophilia' && (new Date).getFullYear() === 2022"> (this clause comes into effect on Jan 1st, 2023)</sup><template v-if="i !== forbidden.length - 1">, </template></template>.
+            <template v-for="(violation, i) in forbidden"><T>terms.content.content.violationsExamples.{{violation}}</T><sup v-if="violation === 'ableism' && new Date < new Date(2023, 3, 6)"> (this clause comes into effect on April 6th, 2023)</sup><template v-if="i !== forbidden.length - 1">, </template></template>.
             <T>terms.content.content.violationsStrict</T>
         </p>
         <p><T>terms.content.content.responsibility</T></p>

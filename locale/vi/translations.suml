@@ -905,16 +905,6 @@ terms:
             changes: >
                 Chúng tôi có quyền sửa đổi các Điều khoản dịch vụ này bất cứ lúc nào.
                 Nếu có thay đổi quan trọng, chúng tôi sẽ thông báo ít nhất 30 ngày trước khi bất kì Điều khoản dịch vụ mới nào có hiệu lực.
-    update:
-        header: 'Chúng tôi đã cập nhật Điều khoản Dịch vụ.'
-        intro: >
-            Xin chào! Những thay đổi sau đối với {https://en.pronouns.page/terms=Điều khoản Dịch vụ} của chúng tôi sẽ có hiệu lực từ ngày 1 tháng 1 năm 2023:
-        changes:
-            - >
-                Chính sách hiện tại về việc cấm các hồ sơ ủng hộ việc ấu dâm
-                (ví dụ như cờ “{https://www.adamhorowitzlaw.com/blog/2022/05/minor-attracted-persons-a-troubling-phrase/=Minor Attracted Persons (Người bị thu hút bởi trẻ vị thành niên)}”),
-                vốn được coi là thuộc “Nội dung có thể vi phạm pháp luật hoặc vi phạm các chuẩn mực xã hội”,
-                giờ đây sẽ được liệt kê rõ ràng. Xem {https://en.pronouns.page/blog/terms-pedophilia=bài đăng trên blog này} - bài viết bằng tiếng Anh.
 
 privacy:
     header: 'Chính sách bảo mật'

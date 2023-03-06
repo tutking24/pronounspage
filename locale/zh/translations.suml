@@ -644,9 +644,6 @@ terms:
     header: '服務條款'
     lastUpdate: '最近更新時間'
     consent: '註冊即代表您接受{/terms=服務條款}。'
-    update:
-        header: '我們的服務條款已被更新'
-        intro: '您好！以下列出的是我們對{https://en.pronouns.page/terms=服務條款}的變更。新的服務條款將於2023年1月1日生效。'
 
 privacy:
     header: '私隱條款'

@@ -89,7 +89,7 @@
                     <div style="columns: 3" class="small">
                         <div class="form-check ps-0" v-for="violation in [...forbidden, 'miscellaneous']">
                             <label>
-                                <input type="checkbox" :value="violation" v-model="user.bannedTerms" :disabled="violation === 'pedophilia' && (new Date).getFullYear() === 2022"/>
+                                <input type="checkbox" :value="violation" v-model="user.bannedTerms" :disabled="violation === 'ableism' && new Date < new Date(2023, 3, 6)"/>
                                 <T>terms.content.content.violationsExamples.{{violation}}</T>
                             </label>
                         </div>

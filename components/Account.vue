@@ -230,9 +230,8 @@
 
                 impersonationActive: !!this.$cookies.get('impersonator'),
 
-                showTermsUpdate:
-                    (new Date).getFullYear() === 2022
-                    && !this.$cookies.get('termsUpdateDismissed2'),
+                showTermsUpdate: new Date < new Date(2023, 3, 6)
+                    && !this.$cookies.get('termsUpdateDismissed3'),
             }
         },
         async mounted() {
@@ -359,7 +358,7 @@
                 window.location.reload();
             },
             dismissTermsUpdate() {
-                this.$cookies.set('termsUpdateDismissed2', true);
+                this.$cookies.set('termsUpdateDismissed3', true);
                 this.showTermsUpdate = false;
             },
             addBrackets(str) {

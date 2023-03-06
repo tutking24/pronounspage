@@ -10,6 +10,7 @@ module.exports = [
     'exclusionism',
     'sexism',
     'misogyny',
+    'ableism',
     'harassment',
     'impersonation',
     'selfHarm',

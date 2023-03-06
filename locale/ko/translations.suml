@@ -817,9 +817,6 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    update:
-        header: '이용약관을 업데이트했습니다.'
-        intro: '안녕하세요! 2023년 1월 1일부터 다음 같은  {https://en.pronouns.page/terms=Terms of Service}에 변경사항이 적용될 것을 알립니다'
 
 privacy:
     header: '개인 정보 정책'
