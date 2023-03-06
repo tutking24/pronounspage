@@ -10,7 +10,7 @@ home:
     about:
         - >
             Todos, todas i todes tenemos pronombres. Son los biervos ke uzamos en lugar del nombre para azer referensia a alguno a kien ya mensionimos.
-            La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos otomatikamente kualo uzar kon base en sus apariensya.
+            La majorita de las personas uza {/el=“el”} i {/eya=“eya”}, ansi ke asumimos otomatikamente kualo uzar kon baza en sus apariensya.
             Ma en realidad no es tan simple…
         - >
             El djenero es komplikado. Algunas personas no “se ven” komo sus djenero.
@@ -38,7 +38,7 @@ home:
         button: 'Amostrar el jenerador'
         header2: 'Jenerar un atadijo'
         base: 'Kon baza en'
-        alt: 'Tambien puedes introduzir formas interkambiables por separado en kada kampo, por enshemplo <code>el&eya</code> = „el” o eya”.'
+        alt: 'Tambien puedes introduzir formas interkambiavles por separado en kada kampo, por enshemplo <code>el&eya</code> = „el” o eya”.'
         pronunciation: 'Tambien puedes espesifikar la pronunsiasion de una entrada uzando el AFI, por enshemplo <code>eyx|ˈe.ʝe</code> = „eyx”, se pronunsia /ˈe.ʝe/.'
     whatisit: 'Por ke emportan los pronombres?'
 
@@ -66,9 +66,9 @@ pronouns:
     intro: 'Mis pronombres son'
     normative: 'Normativo'
     alt:
-        button: 'Jenerar un atadijo a las formas interkambiables'
-        header: 'Formas interkambiables'
-        raw: 'interkambiable'
+        button: 'Jenerar un atadijo a las formas interkambiavles'
+        header: 'Formas interkambiavles'
+        raw: 'interkambiavle'
     generated: 'Estos pronombres tienen sido kreados kon un jenerador. La taifa de pronouns.page no es responsavla de eyos.'
     any:
         header: 'Kualkier pronombre'
@@ -224,7 +224,7 @@ faq:
             question: 'Por ke deveria respektar los pronombres <em>raros</em> de otruna persona?'
             answer:
                 - >
-                    Porke referirse a las personas en la manera ke lo preferan es la base de las relasiones sosyalas.
+                    Porke referirse a las personas en la manera ke lo preferan es la baza de las relasiones sosyalas.
                     No yamarias “Rashel” a Miriam, no le avlarias “de tu” a tu patronx, ets.
                     I hay personas ke no keren ser yamadas “{/el=el}” o “{/eya=eya}”.
                     Si no puedes akseptarlo, eso solo avla mal <em>de ti</em>.
@@ -247,12 +247,12 @@ faq:
                 - >
                     (Solo ke por favor no demandes “eres ninyo o ninya?”.
                     Esta demanda implica ke solo ay dos repuestas korektas,
-                    i sugjera una kuryozidad poco saludable por los djenitales de otras personas.
+                    i sugjera una kuryozidad poco saludavle por los djenitales de otras personas.
                     En su lugar, puedes demandar “kualos son tus pronombres?” o “Komo me deveria referir a ti?”)
                 - >
                     Tambien es emportante normalizar el dezir tus pronombres kuando te presentas kon alguno.
                     “Shalom, so David, {/el=el/lo}”. No es zor – ma sinyifika muncho para las personas trans i no binarias!
-                    Es inkluzo mas kolay en el internet: Solo mete tus pronombres (o un atadijo a enshemplos de muestro sitio web) en tu <em>biografia</em>.
+                    Es inkluzo mas kolay en el internet: Solo mete tus pronombres (o un atadijo a enshemplos de muestro sitio internetiko) en tu <em>biografia</em>.
                 - >
                     Tambien kale ke tener en mente ke munchas personas uzan un nombre i pronombres distintos en diferentes kontekstos.
                     Puede ke ainda no aygan salido del almario kon algunes kolegos de lavoro, ama se sientan komodes biviendo sus vedra kon amiges.
@@ -361,7 +361,7 @@ english: ~
 
 contact:
     header: 'Kontakto'
-    authors: 'Autores/as/xs del sitio web'
+    authors: 'Autores/as/xs del sitio'
     team:
         name: 'Kooperativa “Konsilyo de Lingua Neutrala”'
         nameShort: 'Kooperativa'
@@ -395,12 +395,12 @@ user:
         email:
             subject: 'Tu kodiche de koneksion kon tu kuento es %code%'
             content: |
-                Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio web: %code%.
+                Para konfirmar tu adreso de posta elektronika, introduze este kodiche en el sitio internetiko: %code%.
 
                 Si no demandates este kodiche, simplemente inyora este mesaje.
         why: >
             Rejistrarte te permete kontentarte tus kartas ({/@example=komo esta}).
-        passwordless: 'Este sitio web no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas enformasion.}'
+        passwordless: 'Este sitio internetiko no guadra los kodes. {https://avris.it/blog/passwords-are-passé=Mas enformasion.}'
         instancePlaceholder: 'Instansia'
         domainPlaceholder: 'Dominio'
         deprecated: 'Despresyado'
@@ -468,7 +468,7 @@ profile:
     flags: 'Bandieras'
     flagsInfo: 'Arrastra tus bandieras de orgolyo a este marko.'
     flagsCustom: 'Karga una bandiera personalizada'
-    flagsCustomWarning: 'Esta bandiera fue kargada por un utilizadore. La taifa de pronouns.page no es responsable de eya.'
+    flagsCustomWarning: 'Esta bandiera fue kargada por un utilizadore. La taifa de pronouns.page no es responsavle de eya.'
     flagsAsterisk: 'Esta no es una identidad kuir, pero la inkluimos para personas ke son kuir de otras maneras (por enshemplo personas trans eteroseksualas).'
     links: 'Atadijos'
     linksRecommended: 'Rekomendamos atadijos a'
@@ -478,7 +478,7 @@ profile:
             Los atadijos que une poza publikamente en su profil estaran markados kon el ikono de eskudo,
             si se verifikan konektandose kon el mantenedor de autentifikasyon desponible,
             o por una etiketa <code>rel="yo"</code> que apunte de vuelta a la karta.
-            Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios web externos puedan tambyen verifikar tu karta por su lado.
+            Muestros atadijos tambeyn inkluyen una etiketa <code>rel="yo"</code>, para que sitios internetikos externos puedan tambyen verifikar tu karta por su lado.
     column: 'Kolona'
 
     header: 'Kartas'
@@ -501,7 +501,7 @@ profile:
         no: 'No'
 
     banner: >
-        Puedes tambien uzar muestro sitio web para krear una karta {/@example=komo esta},
+        Puedes tambien uzar muestro sitio internetiko para krear una karta {/@example=komo esta},
         ke kontenga tus nombres, pronombres, bandieras de orgolyo, biervos preferidos ets.
         Dospues podras meter un atadijo a la karta en tu biografia o  tu sinyatura de posta elektronika.
         Simplemente krea un kuento {/account=aki}.
@@ -558,7 +558,7 @@ confirm:
     header: 'Konfirmas esta dechizion?'
     yes: 'Si, lo esto'
     no: 'No, anular'
-    ok: 'OK'
+    ok: 'D'akodro''
 
 terms:
     header: 'Terminos de Servisio'
@@ -689,11 +689,11 @@ flags:
     Greyasexual: 'Grizo-aseksua{inflection_l}'
     Greyaromantic: 'Grizo-aromantik{inflection}'
     Gynesexual: 'Jineseksua{inflection_l}'
-    Heteroflexible: 'Eterofleksible'
+    Heteroflexible: 'Eterofleksivle'
     Heteroromantic: 'Eteroromantik{inflection}'
     Heterosexual: 'Eteroseksua{inflection_l}'
     Hijra: 'Hidjra'
-    Homoflexible: 'Omofleksible'
+    Homoflexible: 'Omofleksivle'
     Homoromantic: 'Omoromantik{inflection}'
     Intersex: 'Interseksua{inflection_l}'
     LGBTQ: 'LGBTQ'
