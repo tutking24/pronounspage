@@ -30,7 +30,7 @@
                     <T>contact.contribute.header</T><T>quotation.colon</T>
                 </p>
                 <ul class="list-unstyled mb-4">
-                    <li class="mb-2">
+                    <li class="mb-2" v-if="!config.disableTranslationProposals">
                         <a href="#" @click.prevent="translationMode">
                             <Icon v="language"/>
                             <T>translationMode.action</T>

@@ -1,5 +1,5 @@
 <template>
-    <div v-if="translationModeVisible && $user()" :class="['scroll-btn', 'd-print-none', 'd-flex', 'align-items-center', config.ads && config.ads.enabled ? 'higher' : '']">
+    <div v-if="translationModeVisible && $user() && !config.disableTranslationProposals" :class="['scroll-btn', 'd-print-none', 'd-flex', 'align-items-center', config.ads && config.ads.enabled ? 'higher' : '']">
         <template v-if="translationMode">
             <button class="btn btn-info btn-sm m-1 px-3 py-1 d-flex justify-content-center align-items-center" @click="showChanges">
                 <small><T>translationMode.changes</T><T>quotation.colon</T> {{ changesCount }}</small>

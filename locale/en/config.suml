@@ -2,6 +2,8 @@ locale: 'en'
 
 header: true
 
+disableTranslationProposals: true
+
 pronouns:
     enabled: true
     route: 'pronouns'
