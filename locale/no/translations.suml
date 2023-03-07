@@ -662,7 +662,7 @@ footer:
     license: >
         {https://gitlab.com/PronounsPage/PronounsPage=Kildekode} og Innholdet er lisensiert under {/license=OQL}-lisensen.
     links: 'Kontakt, sosiale medier'
-    legal: 'Legal' # TODO
+    legal: 'Lovlig'
     financial: 'Økonomisk gjennomsiktighet'
     technical: 'Teknisk'
     sibling: 'Søsterprosjekter'
