@@ -403,6 +403,10 @@ contact:
                 - 'indiquerez des liens vers vos réseaux sociaux,'
                 - 'indiquerez, si vous en avez, des expériences dans l''activisme social,'
                 - 'indiquerez sur quel sujet vous voulez nous aider.'
+    contribute:
+        technical:
+            footer: 'Tâches techniques'
+        header: 'Contribuer'
 
 support:
     header: 'Soutien'
@@ -490,7 +494,13 @@ profile:
         Vous pouvez également utiliser {/pronoms#generator=<strong>le générateur</strong>} pour compléter nos phrases avec vos pronoms.
     pronounsNotFound: 'Format inconnu. Veuillez vérifier les instructions ci-dessus.'
     words: 'Mots'
-    birthday: ' ge'
+    birthday: 'Âge'
+    opinions:
+        header: 'Légende/opinions'
+    circles:
+        header: 'Mon cercle'
+    sensitive:
+        header: 'Avertissement de contenu'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
     flags: 'Drapeaux'
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
@@ -544,6 +554,16 @@ profile:
     language:
         header: 'Langage'
         description: 'La carte de @%username% est aussi disponible dans ces langages'
+    timezone:
+        approximate: 'C’est juste un emplacement approximatif'
+        time: 'Il est %time% un %weekday% dans mon fuseau horaire'
+        header: 'Fuseau horaire'
+        detect: 'Détecter'
+        publishArea: 'Publier le continent sur votre carte'
+        publishLocation: 'Publier la zone sur votre carte'
+        info: >
+            Si vous remplissez ce champ, votre carte dira aux autres <strong>quelle heure il est où vous vivez</strong>.
+            Facultativement, vous pouvez aussi choisir de publier votre localisation approximative.
 
 share: 'Partager'
 
@@ -571,6 +591,16 @@ footer:
     financial: 'Transparence financière'
     technical: 'Technique'
     sibling: 'Projets similaires'
+    stats:
+        header: 'Statistiques'
+        keys:
+            users: 'Utilisateurs enregistrés'
+            realTimeVisitors: 'Actuellement en ligne'
+            pageviews: 'Pages vues'
+            visitors: 'Visiteurs unique'
+            cards: 'Cartes'
+        month: 'mois'
+        current: 'seulement cette version'
 
 notFound:
     message: 'La page demandée n’a pas été trouvée'
@@ -643,6 +673,7 @@ mode:
     light: 'Mode clair'
     automatic: 'Automatique'
     dark: 'Mode sombre'
+    reducedColours: 'Couleurs réduites'
 
 ban:
     reason: 'Raison du bannissement'
@@ -922,6 +953,10 @@ calendar:
         list: 'Liste des événements'
     link: 'Liens'
     full: 'Calendrier complet'
+
+translationMode:
+    action: 'Proposer des traductions'
+    changes: 'Changements'
 
 ukraine:
     header: 'Nous soutenons l''Ukraine.'
