@@ -225,8 +225,15 @@
                     new Noun({
                         id: 'jegomość',
                         masc: 'jegomość', fem: 'jejmość', neutr: 'jenumość',
-                        mascPl: 'ichmości', femPl: 'ichmości', neutrPl: 'ichmości',
-                        declension: dukajDeclension,
+                        mascPl: 'ichmoście', femPl: 'ichmoście', neutrPl: 'ichmoście',
+                        // declension: new NounDeclension({
+                        //     M: 'mość', D: 'mościa', C: 'mościowi', B: 'mościa', N: 'mościem', Msc: 'mościem', W: 'mościu',
+                        //     M_pl: 'moście', D_pl: 'mościów', C_pl: 'mościom', B_pl: 'mościów', N_pl: 'mościami', Msc_pl: 'mościami', W_pl: 'moście',
+                        // }),
+                        declension: new NounDeclension({
+                            M: 'mość', D: 'mościu', C: 'mościu', B: 'mościu', N: 'mościum', Msc: 'mościum', W: 'mościu',
+                            M_pl: 'moście', D_pl: 'mościch', C_pl: 'mościm', B_pl: 'mościm', N_pl: 'mościch', Msc_pl: 'mościmi', W_pl: 'moście',
+                        }),
                     }),
                 ],
                 dukajDeclension,
