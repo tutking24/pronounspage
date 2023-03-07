@@ -584,6 +584,9 @@ user:
         enable: 'Habilitar A2P'
         disable: 'Deshabilitar A2P'
         disableConfirm: '¿Estás segure de que quieres deshabilitar la A2P?'
+    qr:
+        header: 'Código QR'
+        download: 'Descargar código QR'
 
 profile:
     description: 'Descripción'
@@ -629,6 +632,19 @@ profile:
         close: 'Solo si somos personas cercanas'
         meh: 'Okey'
         no: 'No'
+    opinions:
+        colours:
+            pink: 'Rosa'
+            red: 'Rojo'
+            orange: 'Naranja'
+            green: 'Verde'
+            blue: 'Azul'
+            grey: 'Gris'
+            _: '(Color de fuente…)'
+        description: 'Descripción…'
+        styles:
+            bold: 'Negritas'
+            italics: 'Itálica'
 
     banner: >
         Puedes también usar nuestro sitio web para crear una tarjeta {/@example=como esta},
@@ -648,6 +664,23 @@ profile:
     language:
         header: 'Idioma'
         description: 'La tarjeta de @%username% también está disponible en los siguientes idiomas'
+    circles:
+        relationship: 'Relación (p. ej. "pareja", "mejor amigx")'
+        validation:
+            userNotFound: 'Tal usuario no existe'
+    timezone:
+        detect: 'Detectar'
+        areas:
+            Pacific: 'Pacífico'
+            Africa: 'África'
+            America: 'América'
+            Antarctica: 'Antártida'
+            Arctic: 'Ártico'
+            Atlantic: 'Atlántico'
+            Europe: 'Europa'
+            Indian: 'India'
+        header: 'Zona horaria'
+        placeholder: 'Selecciona tu zona horaria'
 
 share: 'Compartir'
 
@@ -869,6 +902,7 @@ mode:
     light: 'Modo claro'
     automatic: 'Automático'
     dark: 'Modo oscuro'
+    accessibility: 'Ajustes de accesibilidad'
 
 ban:
     reason: 'Razón para banear'
@@ -1155,6 +1189,10 @@ calendar:
 
 translationMode:
     action: 'Traducciones propuestas'
+    header: 'Modo de traducción'
+    changes: 'Cambios'
+    revert: 'Revertir cambios'
+    pause: 'Pausar modo de traducción'
 
 ukraine:
     header: 'Somos solidaries con Ucrania.'
