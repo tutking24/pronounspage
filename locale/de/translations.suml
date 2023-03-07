@@ -657,6 +657,11 @@ profile:
             Indian: 'Indien'
             Pacific: 'Pazifik'
         approximate: 'Es ist nur ein ungefährer Standort'
+    flagsCustomForm:
+        altExample: 'Ein Beispiel dafür, wie der ''Alternativtext' formuliert werden könnte'
+    sensitive:
+        header: 'Content-/Triggerwarnung'
+
 share: 'Teilen'
 
 crud:
@@ -1059,6 +1064,12 @@ calendar:
         list: 'Ereignisliste'
     link: 'Link'
     full: 'Ganzer Kalender'
+
+flags_alt:
+    Progress_Pride_: >
+        Eine rechteckige Flagge mit sechs gleich breiten horizontalen Streifen: rot, orange, gelb, grün, blau und lila;
+        ein Chevron (Dreieck) auf der linken Seite, bestehend aus Streifen der folgenden Farben (von links): gelb mit
+        einem violetten Kreis, weiß, rosa, hellblau, braun, schwarz
 
 ukraine:
     header: 'Wir stehen der Ukraine bei.'
