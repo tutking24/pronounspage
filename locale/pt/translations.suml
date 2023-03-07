@@ -736,7 +736,7 @@ footer:
             visitDuration: 'Média da duração de visitas'
             responseTime: 'Média do tempo de resposta'
             cards: 'Cartões '
-            visitors: 'Visitantes únicos'
+            visitors: 'Visitantes úniques'
             pageviews: 'Vizualizações de página'
             realTimeVisitors: 'Atualmente online'
             users: 'Usuáries registrades'
