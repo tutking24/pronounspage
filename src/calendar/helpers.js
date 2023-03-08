@@ -66,7 +66,7 @@ module.exports.EventLevel = {
 }
 
 module.exports.Event = class {
-    constructor(name, flag, month, generator, level, terms = [], timeDescription = null, localCalendar = null) {
+    constructor(name, flag, month, generator, level, terms = [], timeDescription = null, localCalendar = null, yearCondition = null) {
         this.name = name;
         this.flag = flag;
         this.month = month;
@@ -75,11 +75,16 @@ module.exports.Event = class {
         this.terms = terms;
         this.timeDescription = timeDescription;
         this.localCalendar = localCalendar;
+        this.yearCondition = yearCondition;
         this.daysMemoise = {}
     }
 
     getDays(year) {
         year = parseInt(year);
+
+        if (this.yearCondition && !this.yearCondition(year)) {
+            return [];
+        }
 
         if (this.daysMemoise === undefined) {
             // shouldn't happen, but somehow does, but only on prod?

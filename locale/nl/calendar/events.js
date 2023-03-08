@@ -3,7 +3,8 @@ const {Event, day, week, month, dayYear, EventLevel, Day} = require("../../../sr
 module.exports = [
 
     // --- months ---
-    new Event('LHBT-geschiedenismaand', 'Progress Pride', 2, month, EventLevel.Month),
+    new Event('{https://www.queergeschiedenismaand.nl/=Queer Geschiedenismaand}', 'Progress Pride', 2, month, EventLevel.Month, [], null, null, y => [2021, 2022].includes(y)),
+    new Event('{https://www.queergeschiedenismaand.nl/=Queer Geschiedenismaand}', 'Progress Pride', 3, month, EventLevel.Month, [], null, null, y => y >= 2023),
 
     // --- static date ---
     new Event('Marriage Equality Day (Nederland)', '_hrc', 4, day(1), EventLevel.Day),
