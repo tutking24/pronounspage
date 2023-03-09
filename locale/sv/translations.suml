@@ -647,7 +647,7 @@ profile:
         description: 'Bara du ser det här'
     language:
         header: 'Språk'
-        description: '@%username%''s kort är också tillgänglig på dessa språk'
+        description: '@%username%s kort är också tillgänglig på dessa språk'
     verifiedLinks:
         header: 'Verifierade länkar'
         info: >
@@ -677,7 +677,7 @@ profile:
             required: 'Relation krävs'
         removeSelf:
             action: 'Ta bort dig själv'
-            confirm: 'Är du säker på att du vill ta bort din profil ifrån @%username%''s cirkel?'
+            confirm: 'Är du säker på att du vill ta bort din profil ifrån @%username%s cirkel?'
 
     timezone:
         header: 'Tidszon'
@@ -792,38 +792,39 @@ terms:
             Dessa användarvillkor ger dig tillgång till och användningen till tjänsten på webbsidan.
             <strong>pronouns.page</strong> sköts av det “Neutrala språkets råd”-kollektivet
             & Nero Network (NL, KVK 88409120)
-            som kan kontaktas via mail:
+            som kan kontaktas via e-post:
         consent: >
             När du använder våra tjänster så godkänner du att du ska följa dessa användarvillkor och att du tillåter
             oss att samla och bearbeta din data som beskriven i vår {/integritetspolicy=Integritetspolicy}.
         accounts:
             header: 'Användare och konton'
             age: >
-                Du får inte skapa ett konto om du är avstängd från det enligt lagarna i din jurisdiktion.
+                Du får inte skapa ett konto om du ej är tillåten att göra det enligt lagarna i din jurisdiktion.
                 Du får inte heller skapa ett konto om du är under 13 år.
                 Om du är under 16 år behöver du tillåtelsen av din vårdnadshavare för att skapa ett konto.
             authentication: >
                 När du skapar ett konto hos oss så är det ditt ansvar att skydda autentiseringsmetoden
-                som du använder för att få tillgång till tjänsten (Dvs: lösenordet till ditt mailkonto och/eller sociala medier plattformar).
-                Du godkänner att inte avslöja det till någon annan.
-                Du måste notifiera oss omedelbart om du blir medveten om något inbrott eller obehörig användning på ditt konto.
+                som du använder för att få tillgång till tjänsten (dvs: lösenordet till ditt e-postkonto och/eller sociala medier).
+                Du godkänner att du inte ska avslöja det till någon annan.
+                Du måste meddela oss omedelbart om du blir medveten om något inbrott eller obehörig användning på ditt konto.
             termination: >
                 Vi får avsluta eller stänga av ditt konto omedelbart utan en förvarning
-                för vilken anledning som helst, inkluderande utan begränsning ifall du bryter villkoren.
+                för vilken anledning som helst, inklusive utan begränsning ifall du bryter dessa villkor.
             inactivity: >
-                Konton utan några kort eller som har varit inaktiva på de senaste 30 dagarna kommer att bli borttagna och deras användarnamn kommer att bli tillgängliga.
+                Konton utan några kort eller som har varit inaktiva på de senaste 30 dagarna kommer att bli
+                borttagna och deras användarnamn kommer att bli tillgängliga.
         content:
-            header: 'Inlägg'
+            header: 'Innehåll'
             ownership: >
-                Inläggen du lägger upp på tjänsten är dina.
-                När du lägger upp det, ger du oss tillgång världen över ett royalty-free licens
-                till att använda, kopiera, reproducera, processa, anpassa, modifiera, publisera, överföra, visa och distribuera ditt innehåll på vilket sätt som helst.
+                Innehåll som du lägger upp på tjänsten är ditt.
+                När du publicerar innehåll ger du oss rätten att använda, kopiera, reproducera, processa, anpassa,
+                modifiera, publisera, överföra, visa och distribuera ditt innehåll på vilket sätt som helst.
             liability: >
-                Vi varken stödjer eller garanterar ärlighet eller säkerhet av inlägg som är upplagt av andra användare av tjänsten,
-                och särskilda länkar till andra externa webbsidor.
+                Vi varken stödjer eller garanterar ärlighet eller säkerhet av innehåll som publicerats av andra användare,
+                speciellt länkar till externa webbsidor.
             violations: >
-                Det är förbjudet att lägga upp på tjänsten något som möjligtvis bryter mot lagen eller kränker de sociala normerna,
-                som följande inkluderande men inte begränsade till:
+                Det är förbjudet att publicera innehåll på tjänsten som möjligtvis bryter mot lagen eller kränker sociala normer,
+                inklusive men inte begränsat till:
             violationsExamples:
                 totalitarian: 'spridning av totalitära regimer'
                 hateSpeech: 'hattal'
@@ -848,19 +849,20 @@ terms:
                 advertisement: 'annonsering'
                 copyright: 'copyright eller varumärkesintrång'
             violationsStrict: >
-                Vi reserverar rätten att tolka som hatretorik alla instanser av oklar, dold hatretorik
-                (t.ex. att säga till vissa folk att inte interagera med en p.g.a. deras queeridentitet, transfobiska hundvisslor som “superstraight” eller “semibisexuell”, mm).
+                Vi reserverar rätten att tolka alla instanser av oklar, dold hatretorik
+                (t.ex. att säga till vissa folk att inte interagera med en p.g.a. deras queeridentitet, transfobiska hundvisslor som “superstraight” eller “semibisexuell”, mm) som hatretorik.
             responsibility: >
-                Du är ansvarig för alla inlägg du laddar upp på denna tjänst.
-                Om du bryter dessa användarvillkor så kommer vi med förvarning att ta bort ditt innehåll och vi kanske upphäver din rätt till att använda tjänsten.
-                Om du bryter mot lagen så kommer vi att skicka vidare din information till brottsbekämpande organisationer.
+                Du är ansvarig för allt innehåll du laddar upp på tjänsten.
+                Om du bryter dessa användarvillkor så kommer vi att ta bort ditt innehåll och möjligtvis upphäva din rätt att använda tjänsten.
+                Om du bryter mot lagen så kommer vi att skicka vidare din information till brottsbekämpande myndigheter.
         closing:
             header: 'Övrigt'
             jurisdiction: >
                 Den tillämpade lagen är lagen av Kungadömet av Nederländerna.
             changes: >
                 Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst.
-                Ifall en förändring är materiell kommer vi att förse åtminstone en förvarning på 30 dagar innan användarvillkoren träder i kraft.
+                Ifall en förändring är materiell kommer vi att meddela dig om ändringarna 30 dagar innan
+                de materiella ändringarna träder i kraft.
 
 privacy:
     header: 'Integritetspolicy'
@@ -908,7 +910,7 @@ admin:
         email: 'E-post'
         roles: 'Behörigheter'
         profiles: 'Profiler'
-        confirmRole: 'Är du säker på att du vill byta @%username%''sroll till "%role%"?'
+        confirmRole: 'Är du säker på att du vill byta @%username%s roll till "%role%"?'
 
 table:
     empty: 'Tom…'
@@ -963,9 +965,9 @@ ban:
     banned: 'Din profil kommer inte att visas för någon.'
     termsIntro: 'Enligt vår {/anvandarvillkor=Användarvillkor}:'
     appeal: >
-        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
-        or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
+        Modererering är ett invecklat och ömtåligt ämne. Hos oss utförs det av volontärer som kanske inte alltid håller
+        med varandra eller är medvetna om vissa problem. Ifall du tycker att ditt konto inte bröt mot våra {/anvandarvillkor=användarvillkor},
+        kontakta oss via e-post ({mailto:contact@pronouns.page=contact@pronouns.page}) så kanske vi tar en titt på det som en större grupp.
     appealEmail: >
         Modererering är ett invecklat och ömtåligt ämne. Hos oss utförs det av volontärer som kanske inte alltid håller
         med varandra eller är medvetna om vissa problem. Ifall du tycker att ditt konto inte bröt mot våra användarvillkor,
