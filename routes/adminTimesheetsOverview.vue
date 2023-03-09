@@ -101,7 +101,9 @@ export default {
         },
         isInRange(year, month) {
             const x = DateTime.local(year, month, 15);
-            return x >= DateTime.local(this.startYear, this.startMonth, 1) && x <= DateTime.local(this.endYear, this.endMonth, 30);
+            const begin = DateTime.local(this.startYear, this.startMonth, 1).startOf('month');
+            const end = DateTime.local(this.endYear, this.endMonth, 1).endOf('month');
+            return x.ts >= begin.ts && x.ts <= end.ts;
         }
     },
     computed: {
