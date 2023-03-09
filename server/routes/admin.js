@@ -127,6 +127,12 @@ router.get('/admin/users', handleErrorAsync(async (req, res) => {
 const fetchStats = async (req) => {
     const maxId = (await req.db.get(`SELECT MAX(id) AS maxId FROM stats`)).maxId;
 
+    if (maxId == null) {
+        return {
+            _: {}
+        };
+    }
+
     const stats = {
         calculatedAt: decodeTime(maxId) / 1000,
     };
