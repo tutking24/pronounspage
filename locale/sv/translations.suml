@@ -584,6 +584,12 @@ profile:
     flagsInfo: 'Dra och släpp dina pride flaggor här.'
     flagsCustom: 'Ladda upp anpassad flagga'
     flagsCustomWarning: 'Denna flagga har laddats upp av en användare. Pronouns.page är inte ansvarig.'
+    flagsCustomForm:
+        label: 'Etikett'
+        description: '(frivillig) En kort beskrivning av etiketten'
+        link: '(frivillig) Länk till mer information'
+        alt: '(frivillig) Alternativ text som beskriver utseendet av flaggan (se nedan)'
+        altExample: 'Ett exempel på hur alttexten kan vara skriven'
     flagsAsterisk: 'Detta är inte en queeridentitet, fast vi inkluderar den för folk som är queer på andra sätt (t.ex. heterosexuella transa personer).'
     links: 'Länkar'
     linksRecommended: 'Vi rekommenderar att länka'
@@ -669,6 +675,10 @@ profile:
         validation:
             userNotFound: 'Användaren existerar inte'
             required: 'Relation krävs'
+        removeSelf:
+            action: 'Ta bort dig själv'
+            confirm: 'Är du säker på att du vill ta bort din profil ifrån @%username%''s cirkel?'
+
     timezone:
         header: 'Tidszon'
         placeholder: 'Välj din tidszon'
@@ -693,9 +703,23 @@ profile:
             Indian: 'Indiska'
             Pacific: 'Stilla havet'
 
+    sensitive:
+        header: 'Innehållsvarning'
+        info: >
+            Visst innehåll som må vara tillåtet av våra användarvillkor kanske ärolämpligt för unga, utlösandes för folk
+            med trauma, eller på något annat sätt olämpligt. Var snäll och respektera de som ska kolla på ditt kort och
+            varna dem innan de ser det. Exempel på varningar kan vara "hänvisningar till alkohol", "sexuella innuendon",
+            "hänvisningar till en queerfobisk situation", mm.
+        display: 'Visa ändå'
+        hide: 'Sudda ut kortet'
+        email:
+            subject: 'Innehållsvarningar tilllämpade på din profil'
+            content: 'En moderator har tillämpat dessa innehållsvarningarna på ditt kort:'
+
 share: 'Dela'
 
 crud:
+    alt: 'Alttext'
     approve: 'Godkänn'
     hide: 'Göm'
     remove: 'Ta bort'
@@ -714,6 +738,7 @@ crud:
     validation:
         genericForm: 'Det inskickade formuläret är ogiltigt. Korrigera felen och skicka in den igen.'
         listMaxLength: 'Det maximala antalet element i denna lista är %maxlength%.'
+        invalidLink: 'Ogiltigt URL-format'
 
 footer:
     license: >
@@ -925,6 +950,8 @@ mode:
     automatic: 'Automatiskt'
     light: 'Ljust läge'
     reducedColours: 'Reducerade färger'
+    accessibility: 'Tillgänglighetsinställningar'
+    reducedItems: 'Reducerat antal visade element'
 
 ban:
     reason: 'Anledning till bannlysning'
@@ -940,9 +967,9 @@ ban:
         or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
         please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
     appealEmail: >
-        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
-        or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we might get another look in a bigger group.
+        Modererering är ett invecklat och ömtåligt ämne. Hos oss utförs det av volontärer som kanske inte alltid håller
+        med varandra eller är medvetna om vissa problem. Ifall du tycker att ditt konto inte bröt mot våra användarvillkor,
+        svara på detta mejl så kanske vi tar en titt på det som en större grupp.
 
 report:
     action: 'Rapportera ovett'
@@ -950,7 +977,7 @@ report:
     confirm: 'Är du säker på att du vill rapportera @%username%?'
     sent: 'Din rapport har skickats till oss. Tack för hjälpen!'
     terms: 'Var snäll och håll reda på vad som är förbjudet enligt våra {/anvandarvillkor=Användarvillkor}'
-    hoarding: 'Var snäll och inte anmäl en användare för “användarnamnssamlande”. Vi tar bort konton utan kort efter en tid av inaktivitet automatiskt. Din anmälan kommer inte att göra det snabbare.'
+    hoarding: 'Var snäll och anmäl ej användare för användarnamnssamlande. Vi tar bort konton utan kort efter en tid av inaktivitet automatiskt. Din anmälan kommer inte att göra det snabbare.'
 
 flags:
     Abroromantic: 'Abroromantisk'
