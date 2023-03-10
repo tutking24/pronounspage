@@ -23,7 +23,7 @@
                 <a :href="`https://pronouns.page/@${s.el.susUsername}`" target="_blank" rel="noopener">@{{s.el.susUsername}}</a>
                 <ul v-if="s.el.profiles" class="small list-inline">
                     <li v-for="locale in s.el.profiles.split(',')" class="list-inline-item mt-2">
-                        <LocaleLink :locale="locale" :link="`/@${s.el.susUsername}`">{{ locales[locale].name }}</LocaleLink>
+                        <LocaleLink :locale="locale" :link="`/@${s.el.susUsername}`">{{ locales[locale]?.name || locale }}</LocaleLink>
                     </li>
                 </ul>
             </td>
