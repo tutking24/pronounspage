@@ -219,7 +219,7 @@ profile:
             header: 'Relationship descriptions'
             values: ['friend', 'partner', 'boyfriend', 'girlfriend', 'enbyfriend', 'joyfriend', 'husband', 'wife', 'kissmate', 'darling', 'beloved', 'boo']
     flags:
-        defaultPronoun: 'they'
+        defaultPronoun: 'loi'  # TODO pick one properly
 
 calendar:
     enabled: true
