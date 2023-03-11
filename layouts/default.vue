@@ -53,6 +53,7 @@
                     !this.locales[this.config.locale]
                     || !this.locales[this.config.locale].published
                     || process.env.NODE_ENV === 'test'
+                    || process.env.BASE_URL.includes('test.pronouns.page')
                 ),
                 testerPassword: '',
                 testerPasswordCookie: this.$cookies.get(TESTER_PASSWORD_COOKIE_KEY),
