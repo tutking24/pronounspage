@@ -25,7 +25,7 @@
         <section class="row">
             <div v-if="hasDescriptionColumn" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <div v-if="profile.description" class="mb-3">
-                    <p v-for="line in profile.description.split('\n')" class="mb-1">
+                    <p v-for="line in profile.description.split('\n')" class="mb-1" style="word-break: break-word;">
                         <Spelling escape :text="line"/>
                     </p>
                 </div>
