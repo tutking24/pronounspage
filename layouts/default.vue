@@ -31,6 +31,7 @@
         <DialogueBox ref="dialogue"/>
         <Lightbox/>
     </div>
+
 </template>
 
 <script>
@@ -48,9 +49,11 @@
         mixins: [dark],
         data() {
             return {
-                requiresLogin: !this.locales[this.config.locale]
+                requiresLogin: this.config.locale !== '_' && (
+                    !this.locales[this.config.locale]
                     || !this.locales[this.config.locale].published
-                    || process.env.NODE_ENV === 'test',
+                    || process.env.NODE_ENV === 'test'
+                ),
                 testerPassword: '',
                 testerPasswordCookie: this.$cookies.get(TESTER_PASSWORD_COOKIE_KEY),
             }
