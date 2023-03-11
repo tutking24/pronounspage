@@ -1,13 +1,11 @@
 <template>
     <ul>
-        <li v-for="(el, i) in values">
-            <template v-if="allShown || i < showLimit">
-                <slot v-bind:el="el" v-bind:i="i">
-                    {{ el }}
-                </slot>
-            </template>
+        <li v-for="(el, i) in values" :class="itemClass" v-if="allShown || i < showLimit">
+            <slot v-bind:el="el" v-bind:i="i">
+                {{ el }}
+            </slot>
         </li>
-        <li v-if="!allShown && hiddenCount > 0" class="small">
+        <li v-if="!allShown && hiddenCount > 0" :class="[itemClass, 'small']">
             <span v-if="static">
                 <Icon v="plus-circle"/>
                 <T :params="{count: hiddenCount}">profile.expendableList.more</T>
@@ -15,8 +13,10 @@
             <a v-else href="#" @click.prevent="allShown = true">
                 <Icon v="plus-circle"/>
                 <T :params="{count: hiddenCount}">profile.expendableList.more</T>
-                <br/>
-                <Icon v="spacer"/>
+                <template v-if="!(itemClass || '').includes('list-inline-item')">
+                    <br/>
+                    <Icon v="spacer"/>
+                </template>
                 <T>profile.expendableList.show</T>
             </a>
         </li>
@@ -30,8 +30,10 @@ export default {
     props: {
         values: { required: true },
         limit: { required: true },
+        reducedLimit: { 'default': 4 },
         static: { type: Boolean },
         expand: { type: Boolean },
+        itemClass: {},
     },
     data() {
         return this.calcData();
@@ -40,7 +42,7 @@ export default {
         calcData() {
             let showLimit = this.values.length;
             let hiddenCount = 0;
-            const limit = this.reducedItems ? 4 : this.limit;
+            const limit = (this.reducedItems === undefined || this.reducedItems) ? this.reducedLimit : this.limit;
 
             if (this.values.length > limit) {
                 showLimit = limit;

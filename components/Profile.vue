@@ -39,28 +39,29 @@
 
             <div v-if="profile.flags.length || profile.customFlags.length" :class="['col-12', manyFlagsLayout ? '' : 'col-lg-6']">
                 <ClientOnly>
-                <ul class="list-inline">
-                    <li v-for="flag in profile.flags" v-if="allFlags[flag]" class="list-inline-item p-1">
-                        <Flag :termkey="allFlags[flag]"
-                              :name="flag.startsWith('-') ? allFlags[flag] : $translateForPronoun(allFlags[flag], mainPronoun)"
-                              :alt="$t('flags_alt.' + flag.replace(/'/g, '*').replace(/ /g, '_'))"
-                              :img="`/flags/${flag}.png`"
-                              :terms="terms || []"
-                              :asterisk="flagsAsterisk.includes(flag)"
-                        />
-                    </li>
-                    <li v-for="{value: flag, name, description, alt, link} in profile.customFlags" class="list-inline-item p-1">
-                        <Flag :termkey="name"
-                              :name="name"
-                              :alt="alt || ''"
-                              :img="buildImageUrl(flag, 'flag')"
-                              :terms="terms|| []"
-                              custom
-                              :description="description"
-                              :customlink="link"
-                        />
-                    </li>
-                </ul>
+                    <ExpandableList :values="[...profile.flags.filter(flag => allFlags[flag]), ...profile.customFlags]"
+                                    :limit="32" :reducedLimit="8" class="list-inline" itemClass="list-inline-item p-1" :static="static" :expand="expandLinks">
+                        <template v-slot="s">
+                            <Flag v-if="typeof(s.el) === 'string'"
+                                  :termkey="allFlags[s.el]"
+                                  :name="s.el.startsWith('-') ? allFlags[s.el] : $translateForPronoun(allFlags[s.el], mainPronoun)"
+                                  :alt="$t('flags_alt.' + s.el.replace(/'/g, '*').replace(/ /g, '_'))"
+                                  :img="`/flags/${s.el}.png`"
+                                  :terms="terms || []"
+                                  :asterisk="flagsAsterisk.includes(s.el)"
+                            />
+                            <Flag v-else
+                                  :termkey="s.el.name"
+                                  :name="s.el.name"
+                                  :alt="s.el.alt || ''"
+                                  :img="buildImageUrl(s.el.value, 'flag')"
+                                  :terms="terms|| []"
+                                  custom
+                                  :description="s.el.description"
+                                  :customlink="s.el.link"
+                            />
+                        </template>
+                    </ExpandableList>
                 </ClientOnly>
             </div>
         </section>
