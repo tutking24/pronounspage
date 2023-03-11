@@ -1,5 +1,26 @@
 <template>
-    <div class="body">
+    <div v-if="requiresLogin && !testerPasswordValid" class="body">
+        <div class="container">
+            <div class="alert alert-warning m-3 text-center">
+                <Icon v="exclamation-triangle"/>
+                This is a test server
+            </div>
+            <div class="m-3">
+                <div class="input-group py-1">
+                    <input class="form-control" type="password" placeholder="Password" v-model="testerPassword" @keydown.enter.prevent="checkTesterPassword"/>
+                    <button type="button" class="btn btn-primary btn-sm border" @click.prevent="checkTesterPassword">
+                        <Icon v="sign-in"/>
+                        Sign in
+                    </button>
+                </div>
+                <p v-if="testerPasswordCookie && !testerPasswordValid" class="small text-danger">
+                    <Icon v="exclamation-triangle"/>
+                    Password invalid
+                </p>
+            </div>
+        </div>
+    </div>
+    <div v-else class="body">
         <div class="flex-grow-1 vh">
             <Header/>
             <Nuxt/>
@@ -17,9 +38,23 @@
     import dark from "../plugins/dark";
     import sorter from "avris-sorter";
     import {sleep} from "../src/helpers";
+    import md5 from 'js-md5';
+
+    // no need to be super secure, just a sign that the page is not public
+    const TESTER_PASSWORD_COOKIE_KEY = 'tester-password';
+    const TESTER_PASSWORD_HASH = '82feeb96d60170e714df8fb062301e90';
 
     export default {
         mixins: [dark],
+        data() {
+            return {
+                requiresLogin: !this.locales[this.config.locale]
+                    || !this.locales[this.config.locale].published
+                    || process.env.NODE_ENV === 'test',
+                testerPassword: '',
+                testerPasswordCookie: this.$cookies.get(TESTER_PASSWORD_COOKIE_KEY),
+            }
+        },
         mounted() {
             Vue.prototype.$alert = (message, color='primary') => {
                 return new Promise((resolve, reject) => {
@@ -93,6 +128,10 @@
                 gtag('js', new Date());
                 gtag('config', 'G-TDJEP12Q3M');
             },
+            checkTesterPassword() {
+                this.$cookies.set(TESTER_PASSWORD_COOKIE_KEY, this.testerPassword);
+                this.testerPasswordCookie = this.testerPassword;
+            },
         },
         computed: {
             adsEnabled() {
@@ -104,6 +143,9 @@
                 }
 
                 return this.config.ads?.enabled && process.env.NODE_ENV !== 'development';
+            },
+            testerPasswordValid() {
+                return this.testerPasswordCookie && md5(this.testerPasswordCookie) === TESTER_PASSWORD_HASH;
             },
         },
     }
