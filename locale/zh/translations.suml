@@ -37,7 +37,7 @@ home:
         button: '顯示生成器'
         header2: '生成鏈接'
         base: '根據'
-        alt: '您還可以在每個字段中分別輸入可互換形式 — <code> 他&她 </code> = 「他」 或 「她」。'
+        alt: '您還可以在每個字段中分別輸入可互換形式 — <code>他&她</code> =「他」 或 「她」。'
     whatisit: '代詞是什麼意思？'
 
     mission:
@@ -86,7 +86,7 @@ sources:
     toc: '顯示目錄'
     type:
         All: '所有'
-        Book: '書'
+        Book: '書籍'
         Article: '文章'
         Movie: '電影'
         Series: '電視劇'
@@ -104,7 +104,7 @@ sources:
         author: '作者'
         title: '標題'
         extra: '附加資料（翻譯者，刊物名稱）'
-        year: '發布年份 （中文版）'
+        year: '發布年份（中文版）'
         fragments: '碎片'
         fragmentsInfo: 'You can mark the relevant pronouns using square brackets: “Then \[\[they]] saw how \[\[they]] did all of that to \[\[themselves]].”'  # TODO
         comment: '評論'
@@ -145,10 +145,12 @@ nouns:
     template: '使用模板'
     root: '根'
 
+    # TODO: 陽剛 and 陰柔 sounds waaay better than (translated) men-ish and woman-ish
+    # but i'm not exactly sure about the implications and how other people see them
     masculine: '男子氣'
     masculineShort: '男子氣'
-    feminine: '男子氣'
-    feminineShort: '男子氣'
+    feminine: '女子氣'
+    feminineShort: '女子氣'
     neuter: '中性'
     neuterShort: '中性'
 
@@ -172,7 +174,7 @@ terminology:
     term: '術語'
     original: '術語'
     category: '類別'
-    images: '其他圖片，來自旗幟目錄之外'
+    images: '來自旗幟目錄之外的圖片'
     definition: '定義'
 
 faq:
@@ -180,7 +182,7 @@ faq:
     headerLong: '常見問題'
     questions:
         nonbinary:
-            question: 'What is nonbinary?'
+            question: '什麼是非二元性別？'
             answer:
                 - >
                     Gender is way more complicated than just a simple distinction male/female.
@@ -352,7 +354,7 @@ contact:
                 {https://pronouns.page=Pronouns.page} 及相關舉措
                  由“中立語推行委員會”集體創建。
         logo: '集體的標誌是跨性別符號和象徵語言的講話泡泡的結合。'
-        members: '份子'
+        members: '成員'
         member: '集體中的成員'
         upcoming: '即將推出的語言文本'
         # TODO join: …
@@ -372,7 +374,7 @@ contact:
             header: '提交合併請求'
             description: >
                 技術相關的工作可在{https://gitlab.com/PronounsPage/PronounsPage/-/boards=此看板}上找到。
-                您只需在“To-Do”欄上挑選一項任務，把您自己指派到該任務即可開始。如有問題請盡管問。
+                只需在“To-Do”欄上挑選一項任務，把自己指派到該任務即可開始。如有問題請盡管問。
             footer: '技術任務'
 
 support:
@@ -394,7 +396,7 @@ user:
         email:
             subject: '你的登錄代碼是：{{code}}'
             # TODO change: To confirm your email address, enter the following code on the website: %code%.
-            instruction: '如要確認你的電郵地址，請使用以下代碼：%code%'
+            instruction: '如要確認你的電郵地址，請在網站中使用以下代碼：%code%'
             extra: '如果你沒有要求這個代碼，請忽略此電郵。'
         why: >
             註冊可以讓你管理你的卡（{/@example=像這個}）。
@@ -458,8 +460,8 @@ profile:
     pronouns: '代詞'
     pronounsInfo: >
         您可以輸入代詞（例如“<strong>他</strong>”或“<strong>他/你</strong>”）
-        或<strong>鏈接</strong>（例如“https://zh.pronouns.page/佢”）
-    # TODO add: You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
+        或貼上<strong>鏈接</strong>（例如“https://zh.pronouns.page/佢”）。
+        您亦可使用{/pronouns#generator=<strong>代詞生成器</strong>}，填空句子以生成不同格式的代詞。
     pronounsNotFound: '未能偵測此格式，請查看以上的指示。'
     words: '詞匯'
     wordsColumnHeader: '標題'
@@ -491,6 +493,12 @@ profile:
     flagsInfo: '將您的驕傲旗幟拖放到此框架中.'
     flagsCustom: '上傳自定義旗幟'
     flagsCustomWarning: '此旗幟是由一名用戶上傳的，pronouns.page團隊不為此負責'
+    flagsCustomForm:
+        label: '標籤名稱'
+        description: '（選填）標籤的簡單説明'
+        link: '（選填）鏈接至更多資料'
+        alt: '（選填）描述旗幟的外觀的替代文本（參考以下)'
+        altExample: '替代文本的範例'
     flagsAsterisk: '這不是酷兒身份，但我們將其包含為了其他方面很酷兒的人（例如異性戀跨性別者）中。'
     links: '鏈接'
     linksRecommended: '我們建議鏈接至'
@@ -578,6 +586,18 @@ profile:
         removeSelf:
             action: '刪除你自己'
             confirm: '您確定要從@%username%的圈子中刪除您的個人資料嗎？'
+    sensitive:
+        header: '敏感內容警告'
+        info: >
+            一些在我們的{/terms=使用條款}中允許的內容可能不適合未成年人，或會勾起其他人的創傷等。
+            請使用此內容警告，以提示訪問您的卡片的人。
+        
+        # TODO: add: Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
+        display: '繼續前往卡片'
+        hide: '隱藏卡片'
+        email:
+            subject: '敏感內容警告已套用在您的卡片上'
+            content: '一名管理員在您的卡片上套用了敏感內容警告。'
 
 share: '分享'
 
@@ -600,6 +620,8 @@ crud:
     validation:
         listMaxLength: '此列表最多只能有 %maxlength% 條項目。'
         genericForm: '剛才提交的資料無效，請複查資料是否正確後重試。'
+        invalidLink: '錯誤鏈接格式'
+    alt: '替代文本'
 
 footer:
     license: >
@@ -612,7 +634,7 @@ footer:
     stats:
         header: '統計'
         overall: '全部語言'
-        current: '只此語言'
+        current: '僅此語言'
         month: '月'
         keys:
             users: '已登記用戶'
@@ -699,12 +721,12 @@ mode:
     dark: '黑暗模式'
     reducedColours: '減少顏色'
     accessibility: '輔助功能設置'
-    reducedItems: '減少物品數量' # TODO bad wording
+    reducedItems: '減少顯示項目'
 
 ban:
     reason: '封禁原因'
     visible: '（用戶可以看見這個）'
-    terms: 'Terms rules broken (required)'  # TODO
+    terms: '被破壞的規則（必填）'
     action: '封禁用戶'
     confirm: '您確定要封禁@%username%嗎'
     header: '你的資料不會對任何人顯示。'
@@ -872,7 +894,7 @@ calendar: # TODO
         asexuality_day: 'International Asexuality Day'
         bisexuality_day: 'Celebrate Bisexuality Day'
         drag_day: 'Drag Day'
-        idahobit: 'International Day Against Homophobia, Transphobia and Biphobia'
+        idahobit: '國際不再恐同日'
         intersex_day: 'Intersex Awareness Day'
         intersex_remembrance_day: 'Intersex Day of Remembrance'
         lesbian_day: 'International Lesbian Day'
@@ -902,7 +924,7 @@ calendar: # TODO
         xenogender_day: 'Xenogender Visibility Day'
         genderqueer_day: 'Genderqueer Visibility Day'
         genderfluid_day: 'Genderfluid Visibility Day'
-        aids_day: 'World AIDS Day'
+        aids_day: '世界愛滋病日'
         tolerance_day: 'International Day of Tolerance'
         social_justice_day: 'World Day of Social Justice'
         stonewall_day: 'Anniversary of Stonewall Riots'
@@ -971,7 +993,7 @@ calendar: # TODO
         bi_creators_day: 'Bisexual Creators Day'
         wrath_month: 'Queer Wrath Month'
         lesbian_aunts_day: 'Lesbian Aunts Day'
-    banner: 'We''re celebrating'
+    banner: '我們在慶祝'
     celebrating_custom: 'is celebrated'
     celebrating_day: 'is celebrated on'
     celebrating_week: 'is celebrated on'
@@ -982,7 +1004,7 @@ calendar: # TODO
         grid: 'Grid view'
         list: 'Events list'
     link: '鏈接'
-    full: 'Full calendar'
+    full: '完整日曆'
 
 ukraine:
     header: '我們支持烏克蘭。'
