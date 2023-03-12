@@ -16,7 +16,7 @@
         <section>
             <p>
                 In order to start translating, enable translation mode with the button in bottom right corner.
-                Then you can propose translations both her as well as in context anywhere on the site.
+                Then you can propose translations both here as well as in context anywhere on the site.
             </p>
             <div class="table-responsive">
                 <table class="table table-bordered">
