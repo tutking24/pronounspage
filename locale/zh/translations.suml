@@ -1,3 +1,7 @@
+# NOT: we're using traditional spelling here
+# because we can automatically generate simplified spelling out of it,
+# but not the other way around
+
 title: 'Pronouns.page'
 domain: 'zh.pronouns.page'
 description: '個人代詞和中性語言的用法例子'
@@ -591,7 +595,7 @@ profile:
         info: >
             一些在我們的{/terms=使用條款}中允許的內容可能不適合未成年人，或會勾起其他人的創傷等。
             請使用此內容警告，以提示訪問您的卡片的人。
-        
+
         # TODO: add: Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
         display: '繼續前往卡片'
         hide: '隱藏卡片'
