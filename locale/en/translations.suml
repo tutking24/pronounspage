@@ -789,7 +789,7 @@ profile:
         publishArea: 'Publish the continent in your card'
         publishLocation: 'Publish the area in your card'
         time: 'It''s %time% on a %weekday% in my timezone'
-        approximate: 'It''s just an approximate location'
+        approximate: 'Location is just approximate'
         areas:
             Africa: 'Africa'
             America: 'America'
