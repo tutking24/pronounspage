@@ -411,6 +411,10 @@ contact:
             invités à rejoindre notre équipe.
         entries:
             header: 'Ajouter des entrées'
+            description: >
+                Plusieurs sections du site Web (noms, terminologie queer, dictionnaire inclusif…) ont une option pour
+                ajouter et modifier des entrées. Si vous pensez que quelque chose manque ou ne va pas, n'hésitez pas à
+                télécharger votre propre entrée.
         version:
             header: 'Créer une nouvelle version dans une autre langue'
             description: >
@@ -684,6 +688,9 @@ terms:
     consent: 'En vous inscrivant, vous acceptez les {/terms=Conditions d''utilisation}.'
     update:
         header: 'Nous avons mis à jour nos conditions d''utilisation.'
+        intro: >
+            Salut! Les changements suivants à nos {https://en.pronouns.page/terms=Conditions D'utilisation} entrera en
+            vigueur le 4 avril 2023 :
 
 privacy:
     header: 'Privacy Policy'  # TODO
