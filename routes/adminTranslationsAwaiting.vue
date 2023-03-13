@@ -76,6 +76,46 @@
                     </div>
                 </details>
             </section>
+
+            <details v-if="contributors.length" class="border mb-3">
+                <summary class="bg-light p-3">
+                    Contributors
+                </summary>
+                <div class="p-2">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Contributor</th>
+                                <th>Approved translations</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="{username, isMember, count} in contributors">
+                                <td>
+                                    <nuxt-link :to="`/@${username}`">@{{username}}</nuxt-link>
+                                    <span v-if="isMember" class="badge bg-primary text-white">
+                                <Icon v="collective-logo.svg" class="inverted"/>
+                                <T>contact.team.member</T>
+                            </span>
+                                </td>
+                                <td>
+                                    {{ count }}
+                                </td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="2" class="small">
+                                    This overview only considers translations submitted via the web interface, got gitlab/gdocs.
+                                    Let's use it to consider inviting people to the team.
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </details>
         </div>
     </Page>
 </template>
@@ -94,6 +134,7 @@ export default {
     async asyncData({ app }) {
         return {
             translationProposals: await app.$axios.$get(`/translations/proposals`),
+            contributors: await app.$axios.$get(`/translations/contributors`),
         };
     },
     methods: {

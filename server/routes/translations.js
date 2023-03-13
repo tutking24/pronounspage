@@ -98,4 +98,25 @@ router.post('/translations/proposals-done', handleErrorAsync(async (req, res) =>
     return res.json('OK');
 }));
 
+router.get('/translations/contributors', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('translations')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    const contributors = [];
+    for (let {author_id, c} of await req.db.all(SQL`SELECT author_id, count(*) AS c FROM translations
+        WHERE locale = ${global.config.locale} AND status >= ${TRANSLATION_STATUS.APPROVED}
+        GROUP BY author_id
+    `)) {
+        const { username, roles } = await req.db.get(SQL`SELECT username, roles FROM users WHERE id=${author_id}`);
+        contributors.push({
+            username,
+            isMember: !!roles,
+            count: c,
+        });
+    }
+
+    return res.json(contributors);
+}));
+
 export default router;
