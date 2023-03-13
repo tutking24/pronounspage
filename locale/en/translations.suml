@@ -421,6 +421,33 @@ faq:
                     Respecting other people's pronouns and identity doesn't require much effort.
                     Even if you're a person that's solving the biggest challenges that humanity is facing,
                     you can easily manage to not be transphobic in the process.
+        why-two-forms:
+            question: 'Why are pronouns usually given as two forms, like “she/her”, instead of just saying “she” or instead of listing all the forms?'
+            answer:
+                - >
+                    In English there are five forms of gendered personal pronouns, so if we wanted to be precise,
+                    we'd need to list all of them, for example: “they/them/their/theirs/themselves” or “he/him/his/his/himself”.
+                    That's already <em>a lot</em> to put in your bio or introduce yourself with, and some languages require way more info than that
+                    (eg. in Polish {https://zaimki.pl/jak-dzia%C5%82aj%C4%85-zaimki=there are up to 12 forms of gendered personal pronouns alone},
+                    plus different endings of nouns, adjectives and verbs).
+                    But usually not all of that information is necessary in those situations,
+                    the whole pronoun set could be easily “compressed” to just a “she” or “he” or “xe”, etc.
+                - >
+                    On the other hand though, reducing it to just one form won't have the advantage of adding extra context.
+                    If a person sees just a “ve” in someone's bio and they're not familiar with the neopronoun “{/ve=ve/ver}”,
+                    they will struggle to understand the meaning of that random “ve”.
+                    But it became pretty much a standard convention that “xxx/yyy” means a pronoun set –
+                    so there's a big chance that upon seeing “ve/ver” they'll know immediately that those are the person's pronouns.
+                - >
+                    Adding a second (or sometimes third) form also clears up some ambiguities,
+                    eg. between {/ze/hir=ze/hir} and {/ze/zir=ze/zir} or between {/e/em/eir=e/em/eir} and {/e/em/es=e/em/es}.
+                - >
+                    Basically, the two-forms convention is a compromise between keeping it brief
+                    and making it very obvious that a given string of characters is a pronoun set,
+                    and it also keeps things unambiguous.
+                    This convention became so popular that it made its way into other languages
+                    (although not strictly, for example in Portuguese people usually give three forms)
+                    and we even incorporated the <code>(   /   )</code> into {/logo=our logo}.
         flags:
             question: 'Can you add this flag? Can you remove that flag?'
             answer:
