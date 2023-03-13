@@ -62,6 +62,7 @@
                             <td>
                                 <a :href="'https://pronouns.page/@' + s.el.username">@{{s.el.username}}</a>
                                 <a v-if="$isGranted('*')" href="#" class="badge bg-primary text-white" @click.prevent="impersonate(s.el.email)"><Icon v="user-secret"/></a>
+                                <a v-if="$isGranted('users')" href="#" class="badge bg-danger text-white" @click.prevent="erasure(s.el.id, s.el.email)"><Icon v="truck-plow"/></a>
                             </td>
                             <td>
                                 {{$datetime($ulidTime(s.el.id))}}
@@ -148,6 +149,18 @@ export default {
             await this.$router.push('/' + this.config.user.route);
             setTimeout(() => window.location.reload(), 500);
         },
+        async erasure(id, email) {
+            await this.$confirm(`Are you sure you want to remove this account (${email})? ` +
+                'This should only be done in two cases: ' +
+                'an explicit GPDR request directly from the user, ' +
+                'or having proof that owner is not yet 13 years old.', 'danger');
+
+            if (await this.$axios.$post(`/user/data-erasure/${id}`)) {
+                await this.$alert(`Account ${email} removed successfully`, 'success');
+            } else {
+                await this.$alert(this.$t('error.generic', 'danger'));
+            }
+        },
     },
     watch: {
         userFilter() {
@@ -157,7 +170,7 @@ export default {
 
             this.userFilterDelayHandle = setTimeout(() => {
                 this.userFilterDelayed = this.userFilter;
-            }, 500);
+            }, 750);
         },
     },
     computed: {

@@ -499,8 +499,19 @@ router.post('/user/delete', handleErrorAsync(async (req, res) => {
         return res.status(401).json({error: 'Unauthorised'});
     }
 
-    await req.db.get('PRAGMA foreign_keys = ON')
-    await req.db.get(SQL`DELETE FROM users WHERE id = ${req.user.id}`)
+    await req.db.get('PRAGMA foreign_keys = ON');
+    await req.db.get(SQL`DELETE FROM users WHERE id = ${req.user.id}`);
+
+    return res.json(true);
+}));
+
+router.post('/user/data-erasure/:id', handleErrorAsync(async (req, res) => {
+    if (!req.isGranted('users')) {
+        return res.status(401).json({error: 'Unauthorised'});
+    }
+
+    await req.db.get('PRAGMA foreign_keys = ON');
+    await req.db.get(SQL`DELETE FROM users WHERE id = ${req.params.id}`);
 
     return res.json(true);
 }));
