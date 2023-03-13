@@ -285,7 +285,7 @@ faq:
                     Vous pouvez aussi lire des {https://scholar.google.com/scholar?hl=en&q=neopronouns=travaux académiques}
                     sur les néopronoms.
         bio:
-            question: 'Pourquoi devrais-je mettre mes pronoms dans ma bio sur les réseaux sociaux ?'
+            question: 'Pourquoi devrais-je mettre mes pronoms dans ma biographie sur les réseaux sociaux ?'
             answer:
                 - >
                     Si vous êtes cis (c’est à dire si vous n’êtes pas trans) et que vous utilisez  « {/il=il} » or « {/elle=elle} »
@@ -404,9 +404,35 @@ contact:
                 - 'indiquerez, si vous en avez, des expériences dans l''activisme social,'
                 - 'indiquerez sur quel sujet vous voulez nous aider.'
     contribute:
-        technical:
-            footer: 'Tâches techniques'
         header: 'Contribuer'
+        intro: >
+            Pronoms.fr est un projet public-source créé par des volontaires. Vous pouvez également ajouter votre
+            contribution ! Voici quelques domaines où nous apprécierions votre aide. Les contributeurs actifs seront
+            invités à rejoindre notre équipe.
+        entries:
+            header: 'Ajouter des entrées'
+        version:
+            header: 'Créer une nouvelle version dans une autre langue'
+            description: >
+                Les instructions pour créer une nouvelle version dans une autre langue sont disponibles
+                {https://en.pronouns.page/new-version=ici}. Avant de commencer, veuillez nous contacter pour vous
+                coordonner avec d'autres personnes qui pourraient également travailler sur cette version.
+        translations:
+            header: 'Ajouter ou corriger des traductions'
+            description: >
+                Une traduction est manquante ou incorrecte ? Cliquez sur « Proposer des traductions » dans le pied de
+                page et suivez les instructions.
+        technical:
+            header: 'Soumettre une demande de modification'
+            description: >
+                Les tâches techniques sont gérées sur {https://gitlab.com/PronounsPage/PronounsPage/-/boards=ce tableau
+                kanban}. Tout simplement choisissez une tâche non assignée dans la colonne "À faire", assignez-la à
+                vous-même et commencez à travailler dessus. N'hésitez pas à poser des questions.
+            footer: 'Tâches techniques'
+    language: >
+        Nous sommes une équipe internationale – Les personnes qui ont créé la version du site dans votre langue ne seront
+        peut-être pas les mêmes personnes qui lisent votre message. Donc, si possible, nous vous serions reconnaissants
+        de nous contacter en <strong>Anglais ou en Polonais</strong>.
 
 support:
     header: 'Soutien'
@@ -483,6 +509,9 @@ user:
         enable: 'Activer l''authentification multi-facteur'
         disable: 'Désactiver l''authentification multi-facteur'
         disableConfirm: 'Voulez-vous vraiment désactiver l''authentification multi-facteur ?'
+    qr:
+        header: 'Code QR'
+        download: 'Télécharger le code QR'
 
 profile:
     description: 'Description'
@@ -497,10 +526,33 @@ profile:
     birthday: 'Âge'
     opinions:
         header: 'Légende/opinions'
+        colours:
+            pink: 'Rose'
+            red: 'Rouge'
+            green: 'Vert'
+            blue: 'Bleu'
+            grey: 'Gris'
+        styles:
+            bold: 'Gras'
+            italics: 'Italique'
+            small: 'Petit'
+        validation:
+            missingIcon: 'L''icône est requise'
+            missingDescription: 'La description est requise'
+            duplicateIcon: 'L''icône doit être unique'
+            duplicateDescription: 'La description doit être unique'
+        custom: 'personnalisé, ajouté par l''utilisateur·rice :'
     circles:
         header: 'Mon cercle'
     sensitive:
         header: 'Avertissement de contenu'
+        info: >
+            Certains contenus peuvent être autorisés par nos {/terms=Conditions d'utilisation}, mais ne pas convenir aux
+            mineurs, être potentiellement déclencheurs pour les personnes souffrant de traumatismes, etc. Veuillez
+            respecter les personnes visitant votre carte et les avertir à l'avance. Des exemples de CW pourraient être
+            "mention d'alcool", "insinuations sexuelles", "mention d'une situation queerphobe".
+        email:
+            content: 'Un·e moderateur·rice a appliqué à votre carte les avertissement de contenu suivants :'
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
     flags: 'Drapeaux'
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
@@ -564,6 +616,15 @@ profile:
         info: >
             Si vous remplissez ce champ, votre carte dira aux autres <strong>quelle heure il est où vous vivez</strong>.
             Facultativement, vous pouvez aussi choisir de publier votre localisation approximative.
+        areas:
+            Africa: 'Afrique'
+            America: 'Amérique'
+            Antarctica: 'Antarctique'
+            Arctic: 'Arctique'
+            Asia: 'Asie'
+            Atlantic: 'Atlantique'
+            Australia: 'Australie'
+            Pacific: 'Pacifique'
 
 share: 'Partager'
 
@@ -582,6 +643,7 @@ crud:
     loginRequired: '{/compte=Connectez-vous} pour proposer un mot'
     copy: 'Copier le lien'
     download: 'Télécharger'
+    alt: 'Texte alternatif'
 
 footer:
     license: >
@@ -620,6 +682,8 @@ terms:
     header: 'Conditions d''utilisation'
     lastUpdate: 'Dernière mise à jour'
     consent: 'En vous inscrivant, vous acceptez les {/terms=Conditions d''utilisation}.'
+    update:
+        header: 'Nous avons mis à jour nos conditions d''utilisation.'
 
 privacy:
     header: 'Privacy Policy'  # TODO
@@ -674,6 +738,7 @@ mode:
     automatic: 'Automatique'
     dark: 'Mode sombre'
     reducedColours: 'Couleurs réduites'
+    accessibility: 'Paramètres d''accessibilité'
 
 ban:
     reason: 'Raison du bannissement'
