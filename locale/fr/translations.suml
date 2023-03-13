@@ -285,7 +285,7 @@ faq:
                     Vous pouvez aussi lire des {https://scholar.google.com/scholar?hl=en&q=neopronouns=travaux académiques}
                     sur les néopronoms.
         bio:
-            question: 'Pourquoi devrais-je mettre mes pronoms dans ma bio sur les réseaux sociaux ?'
+            question: 'Pourquoi devrais-je mettre mes pronoms dans ma biographie sur les réseaux sociaux ?'
             answer:
                 - >
                     Si vous êtes cis (c’est à dire si vous n’êtes pas trans) et que vous utilisez  « {/il=il} » or « {/elle=elle} »
@@ -405,8 +405,30 @@ contact:
                 - 'indiquerez sur quel sujet vous voulez nous aider.'
     contribute:
         technical:
+            header: 'Soumettre une demande de modification'
+            description: >
+                Les tâches techniques sont gérées sur {https://gitlab.com/PronounsPage/PronounsPage/-/boards=ce tableau
+                kanban}. Tout simplement choisissez une tâche non assignée dans la colonne "À faire", assignez-la à
+                vous-même et commencez à travailler dessus. N'hésitez pas à poser des questions.
             footer: 'Tâches techniques'
         header: 'Contribuer'
+        entries:
+            header: 'Ajouter des entrées'
+        version:
+            header: 'Créer une nouvelle version dans une autre langue'
+            description: >
+                Les instructions pour créer une nouvelle version dans une autre langue sont disponibles
+                {https://en.pronouns.page/new-version=ici}. Avant de commencer, veuillez nous contacter pour vous
+                coordonner avec d'autres personnes qui pourraient également travailler sur cette version.
+        translations:
+            header: 'Ajouter ou corriger des traductions'
+            description: >
+                Une traduction est manquante ou incorrecte ? Cliquez sur « Proposer des traductions » dans le pied de
+                page et suivez les instructions.
+    language: >
+        Nous sommes une équipe internationale – Les personnes qui ont créé la version du site dans votre langue ne seront
+        peut-être pas les mêmes personnes qui lisent votre message. Donc, si possible, nous vous serions reconnaissants
+        de nous contacter en <strong>Anglais ou en Polonais</strong>.
 
 support:
     header: 'Soutien'
@@ -501,6 +523,11 @@ profile:
         header: 'Mon cercle'
     sensitive:
         header: 'Avertissement de contenu'
+        info: >
+            Certains contenus peuvent être autorisés par nos {/terms=Conditions d'utilisation}, mais ne pas convenir aux
+            mineurs, être potentiellement déclencheurs pour les personnes souffrant de traumatismes, etc. Veuillez
+            respecter les personnes visitant votre carte et les avertir à l'avance. Des exemples de CW pourraient être
+            "mention d'alcool", "insinuations sexuelles", "mention d'une situation queerphobe".
     birthdayInfo: 'Nous ne publions pas votre date de naissance, seulement l’âge calculé.'
     flags: 'Drapeaux'
     flagsInfo: 'Glissez et déposer vos drapeaux de fierté dans ce cadre.'
@@ -620,6 +647,8 @@ terms:
     header: 'Conditions d''utilisation'
     lastUpdate: 'Dernière mise à jour'
     consent: 'En vous inscrivant, vous acceptez les {/terms=Conditions d''utilisation}.'
+    update:
+        header: 'Nous avons mis à jour nos conditions d''utilisation.'
 
 privacy:
     header: 'Privacy Policy'  # TODO
