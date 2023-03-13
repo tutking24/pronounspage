@@ -23,7 +23,7 @@ Creating Pronouns.page is a hard but very rewarding work. But as rewarding as it
 situations like that make it really hard not to have a mental breakdown and want to
 just shut the project down and finally catch a break – even if you believe wholeheartedly that you’re right.
 And even if you’re wrong, it still hurts to see people who never contributed a second of their time into the development
-of this open-source project but start bossing you around and demand to “ban them immediately!” or whatnot.
+of this collaborative, public-source project but start bossing you around and demand to “ban them immediately!” or whatnot.
 It hurts to see people not respecting your time, demanding some actions here and now,
 tagging us in threads we’re already tagged in just to rush us – without giving us time to discuss anything,
 to think, to vote, to rest… None of us do this full time, we have jobs, we have school,

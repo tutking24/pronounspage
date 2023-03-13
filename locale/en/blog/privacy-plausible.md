@@ -10,7 +10,7 @@ and to ask crawlers via the [robots.txt](/robots.txt) file not to index those su
 Recently, when we moved our traffic analytics from [Matomo](https://matomo.org/) to [Plausible](https://plausible.io/),
 I decided to take advantage of its feature to publish [the traffic overview page](https://stats.pronouns.page/en.pronouns.page?period=30d).
 It's meant to increase transparency (you can check for yourself what data we store – that they're anonymised and high-level),
-to support a cool open-source project by showing what tools we use,
+to support a cool public-source project by showing what tools we use,
 and to brag a bit and show what kinds of traffic is the server dealing with.
 
 Unfortunately, what I didn't notice is that in the “top pages” section it would also show some card links,
