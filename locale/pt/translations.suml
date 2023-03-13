@@ -417,11 +417,11 @@ contact:
     groups:
         calendar: 'Bot Calendário Queer'
     contribute:
-        header: 'Contribuir'
+        header: 'Contribua'
         intro: >
-            Pronouns.page é um projeto de código aberto criado por voluntáries. Você pode contribuir também! Aqui estão
-            algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades a se juntar à nossa
-            equipe.
+            Pronouns.page é um projeto colaborativo e de fonte pública criado por voluntáries. Você pode contribuir
+            também! Aqui estão algumas áreas onde a sua ajuda será bem-vinda. Contribuidores atives serão convidades à se
+            juntar para nossa equipe.
         technical:
             footer: 'Tarefas Técnicas'
             description: >
@@ -949,7 +949,7 @@ flags_alt:
 
 calendar:
     header: 'Calendário'
-    headerLong: 'Calendário queer'
+    headerLong: 'Calendário Queer'
     date: '%date% %year%'
     months:
         1: 'Janeiro'
@@ -1097,7 +1097,7 @@ calendar:
         bi_creators_day: 'Bisexual Creators Day' # TODO
         wrath_month: 'Mês da Ira Queer'
         lesbian_aunts_day: 'Lesbian Aunts Day' # TODO
-    banner: 'Hoje celebramos'
+    banner: 'Hoje celebramos/comemoramos'
     celebrating_custom: 'celebra-se'
     celebrating_day: 'celebra-se em'
     celebrating_week: 'celebra-se em'
