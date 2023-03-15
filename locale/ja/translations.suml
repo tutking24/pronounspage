@@ -523,18 +523,32 @@ profile:
             green: '緑色'
             blue: '青色'
             grey: '灰色'
-            _: '(フォントの色を選択)'
+            _: '(フォントの色...)'
         styles:
-            bold-italics: '太字 斜体'
+            bold-italics: '太字斜体'
             bold: '太字'
             italics: '斜体'
-            small: '小さな文字'
-            _: '(フォントのスタイルを選択)'
+            small: '細字'
+            _: '(フォントのスタイル...)'
+        description: '説明...'
         validation:
-            missingDescription: '記述が必要です'
-        description: '記述'
-        custom: 'カスタム、このユーザーが生成した：'
-
+            missingDescription: '説明が必要です'
+            invalidOpinion: '選んだアイコンは上の凡例にありません'
+            missingIcon: 'アイコンは必修です'
+            duplicateIcon: 'アイコンはユニークでなければならない'
+            duplicateDescription: '説明はユニークでなければならない'
+        custom: 'ユーザーによって追加したカスタムな凡例:'
+        header: '凡例かオピニオン'
+    sensitive:
+        header: 'コンテンツに関するの警告'
+        hide: 'カードをぼかす'
+        display: 'カードを続ける'
+    flagsCustomForm:
+        label: 'ラベル名'
+        description: '（オプション）ラベルの説明'
+        link: '（オプション）詳細情報へのリンク'
+        alt: '（オプション）旗の外観を説明される代替テキスト（下の例）'
+        altExample: '代替テキストの例'
     list: 'あなたのカード'
     init: 'カードを作る'
     show: '見る'
@@ -593,12 +607,6 @@ profile:
             required: '関係は必修なフィールドです'
         relationship: '関係（例えば、「パートナー」、「友達」）'
         header: 'サークル'
-    opinions:
-        validation:
-            missingIcon: 'アイコンは必修です'
-            duplicateIcon: 'アイコンはユニークでなければならない'
-            duplicateDescription: '説明はユニークでなければならない'
-        header: '凡例かオピニオン'
     wordsColumnHeader: '桁のヘッダー'
 share: '共有'
 
@@ -616,6 +624,7 @@ crud:
     loginRequired: '記入を送信するには、{/アカウント=ログイン}する必要があります。'
     copy: 'リンクをコピー'
     download: 'ダウンロード'
+    alt: '代替テキスト'
 
 footer:
     license: >
