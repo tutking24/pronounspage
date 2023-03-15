@@ -18,21 +18,21 @@ pronouns:
         examples: ['el&ea', 'el&ei', 'ea&ei']
     null:
         description: >
-            {/avoiding=Evitarea pronumelor cu gen} / {/no-pronouns=fără pronume} / {/null=pronume nul} / {/nullpronominal=nul-pronominal} / {/nameself=nameself}
+            {/evitare=Evitarea pronumelor cu gen} / {/fara-pronume=fără pronume} / {/nume=doar nume}
         history: >
             Unele persoane preferă să nu folosească niciun pronume, fiind referiți după nume, inițială,
             evitând pronume cu voce pasivă sau restructurând propoziția.
             Vezi: {https://twitter.com/lypomania/status/1290274971642544128=ghidul lui lypomania (în lb. Engleză)},
             {https://lgbta.wikia.org/wiki/Nullpronominal=Nul-pronominal pe LGBTA Wiki (în lb. Engleză)}
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: 'pe #'
-            possessive_determiner: 'lui #' # except neos
-            possessive_pronoun: 'a lui #' # except neos
-            reflexive: '' # so we dont repeat ourselves
+            pronoun_n: '#'
+            pronoun_dg: 'lui #'
+            strengthening: 'însuși'
+            first_article: 'L-am'
+            second_article: ''
         examples: [':Andrea', ':S']
         template: 'Deschide unul dintre exemple și înlocuiește numele/inițiala din URL cu a ta.'
-        routes: ['avoiding']
+        routes: ['evitare', 'fara-pronume', 'nume']
         ideas:
             -
                 header: 'Folosește nume sau inițiale în loc de pronume'
@@ -40,9 +40,6 @@ pronouns:
                 examples:
                     - ['Am vorbit cu el ieri', 'Am vorbit cu {/:Felix=Felix} ieri']
                     - ['Ea este foarte frumoasă', '{/:Vex=Vex} este foarte frumoasă']
-                    -
-                        - 'Absolvirea sa începe în curând'
-                        - 'Absolvirea lui {/:J=J} începe în curând'
             -
                 header: 'Voce pasivă'
                 normative: true
@@ -74,11 +71,11 @@ pronouns:
         description: 'Pronume Emoji'
         history: 'Pronumele {https://lgbta.wikia.org/wiki/Emojiself_Pronouns=Emoji} sunt destinate pentru comunicarea online și nu ar trebui pronunțate'
         morphemes:
-            pronoun_subject: '#'
-            pronoun_object: 'pe #'
-            possessive_determiner: 'lui #'
-            possessive_pronoun: 'al lui #'
-            reflexive: '#self'
+            pronoun_n: '#'
+            pronoun_dg: 'lui #'
+            strenghtening: 'însuși'
+            first_article: 'L-am'
+            second_article: ''
         examples: ['💫', '💙']
         template: 'Deschide unul dintre exemple și înlocuiește emojiul din URL cu al tău.'
     mirror:
@@ -90,15 +87,9 @@ pronouns:
             - 'Persoana A folosește pronume-oglindă.'
             - 'Persoana B folosește {/ea=ea/ei}, deci când ea vorbește despre persoana A, ea folosește „ea/ei” să se refere la ea.'
             - 'Persoana C folosește {/ze=ze/hir} substituibil cu {/fae=fæ/fær}, deci când ze vorbește despre persoana A, fea folosește ori ze/hir or fæ/fær să se refere la fær.'
-    slashes: true
+    slashes: ['pronoun_n', 'pronoun_dg', 'strengthening']
     others: 'Alte pronume'
-    #sentence:
-    #    subdomains: ['my', 'our']
-    #    prefixes: ['/are']
-    #    examples:
-    #        - 'my.pronouns.page/are/they/them'
-    #        - 'my.pronouns.page/are/xe&she'
-    #        - 'our.pronouns.page/are/they/them'
+    threeForms: true
 
 pronunciation:
     enabled: true
@@ -308,7 +299,7 @@ profile:
             header: 'Complimente'
             values: ['frumoasă', 'frumos', 'drăguț', 'hot', 'sexy', 'arătos', 'perfectă', 'perfect']
         -
-            header: 'Descrieri în relație'
+            header: 'Descrieri ale relației'
             values: ['prieten', 'partener', 'iubit', 'iubită', 'soț', 'soție', 'gagică', 'gagic', 'drag']
     flags:
         defaultPronoun: 'el'

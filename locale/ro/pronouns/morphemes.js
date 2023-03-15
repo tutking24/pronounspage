@@ -1,7 +1,7 @@
 export default [
-    'pronoun_subject',
-    'pronoun_object',
-    'possessive_determiner',
-    'possessive_pronoun',
-    'reflexive',
+    'pronoun_n',
+    'pronoun_dg',
+    'strengthening',
+    'first_article',
+    'second_article'
 ];

@@ -9,20 +9,16 @@
             <table class="table table-sm">
                 <thead>
                 <tr>
-                    <th>Nominativ</th>
-                    <th>Acuzativ</th>
-                    <th>Dativ</th>
-                    <th>Genitiv</th>
-                    <th>Pronumele reflexiv</th>
+                    <th>Nominativ/Acuzativ/Vocativ</th>
+                    <th>Dativ/Genitiv</th>
+                    <th>Întărire</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_subject" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_object" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_determiner" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="possessive_pronoun" :counter="counter"/></td>
-                    <td><Morpheme :pronoun="selectedPronoun" morpheme="reflexive" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_n" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="pronoun_dg" :counter="counter"/></td>
+                    <td><Morpheme :pronoun="selectedPronoun" morpheme="strengthening" :counter="counter"/></td>
                 </tr>
                 </tbody>
             </table>

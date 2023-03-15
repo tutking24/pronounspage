@@ -12,22 +12,22 @@ home:
     why: 'Care-i treaba cu pronumele?'
     about:
         - >
-            Cu toții avem pronume. Sunt acele cuvinte pe care le folosim când vorbim despre cineva fără a îi menționa
-            numele de fiecare dată. Cei mai mulți oameni folosesc {/el=„el/pe el”} și {/ea=„ea/pe ea”}, deci presupunem
-            automat pe care dintre ele să le folosim bazându-ne pe înfățișarea persoanei despre care se vorbește. Însă,
-            nu e așa de simplu…
+            Cu toții avem pronume. Sunt acele cuvinte pe care le folosim atunci când ne referim la cineva, fără a îi menționa
+            numele de fiecare dată. Cei mai mulți oameni folosesc {/el=„el/lui”} și {/ea=„ea/ei”}, așadar presupunem
+            automat care dintre acestea să le folosim, bazându-ne pe înfățișarea persoanei respective. Însă,
+            nu este așa de simplu…
         - >
-            Genul e complicat. Nu toți „arată” ca genul cu care se identifică. Unele persoane preferă să li se spună în
+            Genul este complicat. Nu toți „arată” ca genul cu care se identifică. Unele persoane preferă să li se spună în
             alte feluri decât ai presupune. Alții pur și simplu nu intră în categoria de „masculin” sau „feminin” și
             preferă un limbaj mai neutru.
         - >
-            Acest website te ajută să distribui un link către pronumele tale cu exemple contextuale, pentru a le putea
+            Acest website te ajută să-ți distribui un link către pronumele tale cu ajutorul unor exemple contextuale, pentru a le putea
             prezenta oamenilor cum dorești să ți se adreseze.
         - >
             „De ce contează?” Din simplă decență umană. Nu i-ai zice Anei „Ștefania” doar pentru că ție îți place mai
             mult acel nume sau pentru că „are față de Ștefania”. Sau chiar dacă <em>ar avea</em> numele „Ștefania” pe
             certificatul ei de naștere, dar ea îl urăște nespus și îi place mai mult „Ana”. E aceeași poveste și cu
-            pronumele – dacă nu dorești să fii nepoliticos, adresează-te cum se cuvine. Singura diferență e că de obicei
+            pronumele – dacă nu dorești să fii nepoliticos, adresează-te cum se cuvine. Singura diferență este că, de obicei,
             le cunoaștem numele, dar nu și pronumele. Ne introducem altora folosindu-ne doar numele, nu și pronumele. A
             venit vremea să schimbăm acest lucru!
     pronouns: 'Lista pronumelor populare'
@@ -55,7 +55,7 @@ home:
         inclusiveness: >
             <strong>Incluziune</strong>
             – pentru ca atunci când ne referim la o persoană pe care nu o cunoaștem sau la un grup de oameni,
-            să nu le asumăm genul și să nu-i excludem sub niciun motiv.
+            să nu le asumăm genul și să nu-i excludem sub absolut niciun motiv.
 
 pronouns:
     header: 'Pronume'
@@ -479,10 +479,10 @@ contact:
     header: 'Contact'
     authors: 'Autorii site-ului'
     faq: >
-        Înainte de a ne scrie, citește {/intrebari=întrebările adresate frecvent} - răspunsul întrebării tale poate e
+        Înainte de a ne scrie, citește {/intrebari=întrebările adresate frecvent} - răspunsul întrebării tale se poate afla
         deja acolo.
     technical: >
-        Ai vreo problemă tehnică sau vreo întrebare? Te rog includeți numele tău de utilizator și cât mai multe detalii posibile.
+        Ai vreo problemă tehnică sau vreo întrebare? Te rog include-ți numele tău de utilizator și cât mai multe detalii posibile.
         (ce zice eroarea? ești pe telefon sau pe calculator? ce browser folosești?
         ce pași putem urmări pentru a reproduce problema? poți atașa o captură sau o înregistrare a ecranului? etc.)
     hate: >
@@ -542,7 +542,7 @@ contact:
     contribute:
         header: 'Contribuie'
         intro: >
-            Pronouns.page este un proiect cu sursă-deschisă creat de către voluntari.
+            Pronouns.page este un proiect cu sursă publică, creat de către voluntari.
             Îți poți adăuga și tu contribuția! Aici sunt câteva locuri unde ți-am aprecia ajutorul.
             Contribuitorii activi vor fi invitați in echipă.
         entries:
@@ -551,15 +551,15 @@ contact:
                 Multe secțiuni ale site-ului (cuvinte, terminologia queer, dicționarul inclusiv…) au o opțiune cu care poti adăuga sau modifica intrări.
                 Dacă tu consideri că ceva lipsește sau este incorect, nu ezita să trimiți intrarea ta.
         translations:
-            header: 'Adaugă sau corecteaza traduceri'
+            header: 'Adaugă sau corectează traduceri'
             description: >
                 E vreo traducere greșită sau lipsă?
-                Apasă pe „Propune o traducere” din footer și urmărește instrucțiunile.
+                Apasă pe butonul „Propune o traducere” din footer și urmărește instrucțiunile.
         version:
-            header: 'Crează o nouă versiune lingvistică'
+            header: 'Creează o nouă versiune lingvistică'
             description: >
                 Instrucțiunile pentru crearea unei noi versiuni lingvistice se află {https://en.pronouns.page/new-version=aici} (în lb. Engleză).
-                Înainte de a te apuca, te rog {/contact=contactează-ne} pentru a coordona cu ceilalți care lucrează la aceeași traducere.
+                Înainte de a te apuca, te rog {/contact=contactează-ne} pentru a coordona cu celelalte persoane ce lucrează la aceeași traducere.
         technical:
             header: 'Trimite un pull request'
             description: >
@@ -658,7 +658,7 @@ user:
                 Se pare că nu ai creat niciun card și nu te-ai logat pentru ceva timp.
                 Poți păstra contul prin crearea unui card, altfel va fi șters într-o săptămână.
                 Dacă nu dorești să păstrezi contul, nu trebuie să faci nimic.
-            cta: 'Crează un card'
+            cta: 'Creează un card'
     qr:
         header: 'Cod QR'
         download: 'Descarcă codul QR'
@@ -704,7 +704,7 @@ profile:
         detect: 'Detectează'
         publishArea: 'Publică-ți continentul pe card'
         publishLocation: 'Publică-ți zona pe card'
-        time: 'Este ora %time% intr-o zi de %weekday% în fusul meu orar'
+        time: 'Este ora %time% într-o zi de %weekday% în fusul meu orar'
         approximate: 'E doar o locație aproximativă'
         areas:
             Africa: 'Africa'
@@ -731,7 +731,7 @@ profile:
             grey: 'Gri'
         styles:
             _: '(Stil…)'
-            bold-italics: 'BÎngroșat italic'
+            bold-italics: 'Îngroșat italic'
             bold: 'Îngroșat'
             italics: 'Italic'
             small: 'Mic'
@@ -745,7 +745,7 @@ profile:
 
     header: 'Carduri'
     list: 'Cardurile tale'
-    init: 'Crează un card'
+    init: 'Creează un card'
     show: 'Arată'
     edit: 'Editează'
     delete: 'Șterge'
@@ -765,10 +765,10 @@ profile:
         Poți folosi site-ul nostru și pentru a crea un card {/@example=ca acesta},
         conținând numele tale, pronumele tale, steagurile tale, cuvintele tale plăcute etc.
         Apoi poți pune un link spre el în biografie sau în footer-ul e-mailului.
-        Doar crează un cont {/cont=aici}.
-    bannerButton: 'Crează un card'
+        Doar creează un cont {/cont=aici}.
+    bannerButton: 'Creează un card'
     card:
-        link: 'Poza cardului'
+        link: 'Poză a cardului'
         generate: 'Generează'
         generating: 'Generare în progres… Poate dura câteva minute.'
     empty: 'Persoana aceasta nu are încă niciun card.'

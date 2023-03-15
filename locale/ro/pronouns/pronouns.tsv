@@ -1,16 +1,17 @@
-key	description	normative	pronoun_subject	pronoun_object	possessive_determiner	possessive_pronoun	reflexive	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
-el, el/lui	Nominativ „el/lui”	TRUE	el	pe el	lui	a lui	însuși	FALSE	FALSE	TRUE
-ea, ea/ei	Nominativ „ea/ei”	TRUE	ea	pe ea	ei	 a ei	însăși	FALSE	FALSE	TRUE
-ei,ei/lor	Singular „ei/lor”	TRUE	ei	pe ei	lor	a lor	înșiși	FALSE	FALSE	TRUE	Pronumele „they/them”, provenit din limba engleză, este folosit în limba română majoritar în limbajul informal, luând forma pluralului pronumelui masculin.
-unul, unul/unuia	Pronumele Nehotărât „unul/unuia”	TRUE	unul	pe unu	unuia	a unuia	însuși	FALSE	FALSE	TRUE	„Unul/unuia” este folosit in limba română pentru descrierea unei persoane neindentificate. Acesta are forme la feminin cât și la masculin, cel mai comun fiind folosit la genul masculin, fiind clasificat ca „pronume nehotărât”
-co,co/cos	Neo-pronume „co”	FALSE	co	pe co	lui co	a lui co	însuși	FALSE	FALSE	TRUE	Create de Mary Orovan în 1970, derivate de la pronumele Indo-Europeane <em>*ko</em>.
-ey,ey/lui ey	Pronume „Elverson”	FALSE	ey	pe ey	lui ey	a lui ey	însuși	FALSE	FALSE	TRUE	{https://web.archive.org/web/20211130005355/https://research.cristanwilliams.com/2012/02/24/1975-transgender-cross-gender/=Inventate de Christine M. Elverson} în 1975, au fost create pentru un concurs, al cărui scop era formarea singularului „they/them”. Aceste forme au fost create prin eliminarea silabei „th” de la „they”.
-hu,hu/lui hu	Pronume „Humanist”	FALSE	hu	pe hu	lui hu	a lui hu	însuși	FALSE	FALSE	TRUE	Inventate de Sasha Newborn în1982, bazate pe cuvântul „human”.
-ne,ne/lui ne	Neo-pronumele „ne”	FALSE	ne	pe ne	lui ne	a lui ne	însuși	FALSE	FALSE	TRUE
-per,per/lui per	Pronume „Person”	FALSE	per	pe per	lui per	a lui per	însuși	FALSE	FALSE	TRUE	Inventate de John Clark într-un număr al <em>Newsletter of the American Anthropological Association</em> în 1972, derivat de la cuvântul  „person”.
-thon,thon/lui thon	Neo-pronumele „thon”	FALSE	thon	pe thon	lui thon	a lui thon	însuși	FALSE	FALSE	TRUE	Create de Charles Crozat Converse în 1858, „thon/thons/thonself” este primul exemplu cunoscut de creare a unui pronume neutru genului. „Thon” este o prescurtare a termenilor „that one”.
-ve,ve/lui	Neo-pronumele „ve”	FALSE	ve	pe ve	lui ve	a lui ve	însuși	FALSE	FALSE	TRUE	Folosite de.Greg Egan în <em>Distress</em> (1995) și <em>Diaspora</em> (1998), cât și de Keri Hulme în <em>The Bone People</em> (1984).
-vi,vi/lui vi	Neo-pronumele „vi”	FALSE	vi	pe vi	lui vi	a lui vi	însuși	FALSE	FALSE	TRUE
-xe,xe/lui xe	Neo-pronumele „xe”	FALSE	xe	pe xe	lui xe	a lui xe	însuși	FALSE	FALSE	TRUE	Create de Don Rickter într-un numar al <em>Unitarian Universalist</em> în 1973.
-ze/lui ze	Neo-pronumele „zer”	FALSE	ze	pe ze	lui ze	a lui ze	însuși	FALSE	FALSE	TRUE	Pe baza pronumelui personal german, persoana a treia <em>sie</em>.
-zhe,zhe/lui zhe	Neo-pronumele „zhe”	FALSE	zhe	pe zhe	lui zhe	a lui zhe	însuși	FALSE	FALSE	TRUE
+key	description	normative	pronoun_n	pronoun_dg	strengthening	first_article	second_article	plural	pluralHonorific	pronounceable	history	thirdForm	smallForm	sourcesInfo
+el,el/lui	Masculinul „el/lui”	TRUE	el	lui	însuși	L-am		FALSE	FALSE	TRUE
+ea,ea/ei	Femininul „ea/ei”	TRUE	ea	ei	însăși	Am	-o	FALSE	FALSE	TRUE
+ei,ei/lor	Singularul „ei/lor”	TRUE	ei	lor	înșiși	I-		TRUE	FALSE	TRUE	Pronumele „they/them”, provenit din limba engleză, este folosit în limba română majoritar în limbajul informal, luând forma pluralului pronumelui masculin.
+ele,ele/lor	Singularul „ele/lor”	TRUE	ele	lor	înseși	Le-		TRUE	FALSE	TRUE	Pronumele „they/them”, provenit din limba engleză, este folosit în limba română majoritar în limbajul informal, luând forma pluralului pronumelui masculin.
+unul,unul/unuia	Nehotărâtul „unul/unuia”	TRUE	unul	unuia	însuși	L-am		FALSE	FALSE	TRUE	„Unul/unuia” este folosit in limba română pentru descrierea unei persoane neindentificate. Acesta are forme la feminin cât și la masculin, cel mai comun fiind folosit la genul masculin, fiind clasificat ca „pronume nehotărât”
+co,co/lui co	Neo-pronumele „co”	FALSE	co	lui co	însuși	L-am		FALSE	FALSE	TRUE	Create de Mary Orovan în 1970, derivate de la pronumele Indo-Europeane <em>*ko</em>.
+ey,ey/lui ey	Pronumele „Elverson”	FALSE	ey	lui ey	însuși	L-am		FALSE	FALSE	TRUE	{https://web.archive.org/web/20211130005355/https://research.cristanwilliams.com/2012/02/24/1975-transgender-cross-gender/=Inventate de Christine M. Elverson} în 1975, au fost create pentru un concurs, al cărui scop era formarea singularului „they/them”. Aceste forme au fost create prin eliminarea silabei „th” de la „they”.
+hu,hu/lui hu	Pronumele „Humanist”	FALSE	hu	lui hu	însuși	L-am		FALSE	FALSE	TRUE	Inventate de Sasha Newborn în1982, bazate pe cuvântul „human”.
+ne,ne/lui ne	Neo-pronumele „ne”	FALSE	ne	lui ne	însuși	L-am		FALSE	FALSE	TRUE
+per,per/lui per	Pronumele „Person”	FALSE	per	lui per	însuși	L-am		FALSE	FALSE	TRUE	Inventate de John Clark într-un număr al <em>Newsletter of the American Anthropological Association</em> în 1972, derivat de la cuvântul  „person”.
+thon,thon/lui thon	Neo-pronumele „thon”	FALSE	thon	lui thon	însuși	L-am		FALSE	FALSE	TRUE	Create de Charles Crozat Converse în 1858, „thon/thons/thonself” este primul exemplu cunoscut de creare a unui pronume neutru genului. „Thon” este o prescurtare a termenilor „that one”.
+ve,ve/lui ve	Neo-pronumele „ve”	FALSE	ve	lui ve	însuși	L-am		FALSE	FALSE	TRUE	Folosite de.Greg Egan în <em>Distress</em> (1995) și <em>Diaspora</em> (1998), cât și de Keri Hulme în <em>The Bone People</em> (1984).
+vi,vi/lui vi	Neo-pronumele „vi”	FALSE	vi	lui vi	însuși	L-am		FALSE	FALSE	TRUE
+xe,xe/lui xe	Neo-pronumele „xe”	FALSE	xe	lui xe	însuși	L-am		FALSE	FALSE	TRUE	Create de Don Rickter într-un numar al <em>Unitarian Universalist</em> în 1973.
+ze,ze/lui ze	Neo-pronumele „zer”	FALSE	ze	lui ze	însuși	L-am		FALSE	FALSE	TRUE	Pe baza pronumelui personal german, persoana a treia <em>sie</em>.
+zhe,zhe/lui zhe	Neo-pronumele „zhe”	FALSE	zhe	lui zhe	însuși	L-am		FALSE	FALSE	TRUE
