@@ -347,33 +347,30 @@ faq:
         flags:
             question: 'Kan du lägga till den här flaggan? Kan du ta bort den här flaggan?'
             answer:
+                - 'Nej.'
                 - >
-                    Nej.
+                    Att underhålla en hel lista av flaggor och läggningar är en ökande tidskonsumerande arbete för vårt
+                    team. Det är dessutom en utmaning att filtrera ut trolls och vandalism från legitima, hjälpsama
+                    individer. Vi vill inte vara identitetspoliser, men vi vill inte spendera all vår tid på att
+                    underhålla flagor heller. Detta är ett projekt om språk och pronomen, trots allt, och inte om
+                    flaggor. De är bara en bonus.
                 - >
-                    Att underhålla en hel lista av flaggor och läggningar är en ökande tidskonsumerande arbete för vårt team.
-                    Det är dessutom en utmaning att filtrera ut trolls och vandalism från legitima, hjälpsama individer.
-                    Vi vill inte vara identitetspoliser, men vi vill inte spendera all vår tid på att underhålla flagor heller.
-                    Detta är ett projekt om språk och pronomen, trots allt, och inte om flaggor. De är bara en bonus.
+                    Vi har gjort vårt bästa för att välja en lista av flagor som är mest känd bland människor och såsom
+                    vi uppfattar det, är allmänt accepterat. Vi planerar inte att göra listan större eller mindre.
                 - >
-                    Vi har gjort vårt bästa för att välja en lista av flagor som är mest känd bland människor
-                    och såsom vi uppfattar det, är allmänt accepterat.
-                    Vi planerar inte att göra listan större eller mindre.
+                    Vi är medvetna att några flaggor kanske inte är populära bland några. (ex. en historik av TERFs som
+                    har försökt att ta över termen och göra den transfobisk, för att den har många förvirrande
+                    definitioner, Eller till och med på grund av att den har aspekter av liv från en mytisk karaktär.) Vi
+                    är queer och trans vi själva, vi bryr oss om våra trans syskon. Tyvärr så är det verkligen svårt att
+                    göra sådana beslut när vi får ett meddelande från trans personer som frågar om att få en flagga som
+                    de uppriktigt identifierar sig med, och också från andra trans personer som ber om att få den
+                    borttagen för att det skadar trans personer. Det är inte som att det finns historia för varje
+                    läggning är uppenbar eller att det finns en auktoritär källa att kolla upp det på. Och även ifall
+                    queerphobes försöker att göra vissa termer sårande för andra, så tror vi på denna gemenskaps styrka
+                    att ta tillbaka de hatfulla termerna.
                 - >
-                    Vi är medvetna att några flaggor kanske inte är populära bland några.
-                    (ex. en historik av TERFs som har försökt att ta över termen och göra den transfobisk,
-                    för att den har många förvirrande definitioner,
-                    Eller till och med på grund av att den har aspekter av liv från en mytisk karaktär.)
-                    Vi är queer och trans vi själva, vi bryr oss om våra trans syskon.
-                    Tyvärr så är det verkligen svårt att göra sådana beslut
-                    när vi får ett meddelande från trans personer som frågar om att få en flagga som de uppriktigt identifierar sig med,
-                    och också från andra trans personer som ber om att få den borttagen för att det skadar trans personer.
-                    Det är inte som att det finns historia för varje läggning är uppenbar eller att det finns en auktoritär källa att kolla upp det på.
-                    Och även ifall queerphobes försöker att göra vissa termer sårande för andra,
-                    så tror vi på denna gemenskapens styrka att ta tillbaka de hatfulla termerna.
-                - >
-                    Ifall du inte gillar en flagga, använd den inte.
-                    Ifall din flagga saknas, ladda upp den bara.
-                    (den kommer att bli märkt som användargenererad för att lindra vandalism).
+                    Ifall du inte gillar en flagga, använd den inte. Ifall din flagga saknas, ladda upp den bara. (den
+                    kommer att bli märkt som användargenererad för att lindra vandalism).
         custom-pronouns:
             question: 'Mina pronomen finns inte på listan'
             answer:
@@ -858,11 +855,11 @@ terms:
         closing:
             header: 'Övrigt'
             jurisdiction: >
-                Den tillämpade lagen är lagen av Kungadömet av Nederländerna.
+                Den tillämpade lagen är lagen av Konungariket Nederländerna.
             changes: >
-                Vi reserverar rättigheten till att modifiera dessa användarvillkoren när som helst.
-                Ifall en förändring är materiell kommer vi att meddela dig om ändringarna 30 dagar innan
-                de materiella ändringarna träder i kraft.
+                Vi reserverar rättigheten till att modifiera dessa användarvillkor när som helst. Ifall en förändring är
+                materiell kommer vi att meddela dig om ändringarna 30 dagar innan de materiella ändringarna träder i
+                kraft.
 
 privacy:
     header: 'Integritetspolicy'
@@ -930,7 +927,7 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Lägg till mer'
+    shorter: 'Lägg till fler'
     short: 'Lägg till språkversioner'
     long: 'Vill du skapa en ny språkversion? Grymt bra! Vänligen kolla in'
     longLink: 'den här manualen!'
