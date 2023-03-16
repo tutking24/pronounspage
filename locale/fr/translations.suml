@@ -548,6 +548,14 @@ profile:
         custom: 'personnalisé, ajouté par l''utilisateur·rice :'
     circles:
         header: 'Mon cercle'
+        info: >
+            Dans ce champ vous pouvez rajouter <strong>les personnes proches de vous</strong>, ainsi que les termes
+            (non-)genrés que vous utilisez pour leur faire référence (par exemple, "conjoint" vs. "épouse" vs. "mari").
+            Nous ne sommes pas un média social, ceci n'est <strong>pas une liste d'amis/abonnés</strong>, voilà pourquoi
+            la longueur de cette liste est plutôt limitée. Gardez à l'esprit que les personnes que vous rajoutez ici
+            <strong>peuvent le voir</strong> – et peuvent vous signaler pour harcèlement si vous écrivez des choses
+            négatives à propos d'eux. Si une connexion dans votre cercle est mutuelle, elle sera marquée par
+            [s:shield-check].
     sensitive:
         header: 'Avertissement de contenu'
         info: >
