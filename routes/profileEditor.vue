@@ -133,7 +133,7 @@
                     <T>profile.description</T>
                 </template>
                 <template v-slot:description>
-                    <textarea class="form-control form-control-sm" v-model="description" maxlength="256" rows="8"/>
+                    <textarea class="form-control form-control-sm" v-model="description" maxlength="1024" rows="8"/>
                 </template>
 
                 <template v-slot:flags-header>
