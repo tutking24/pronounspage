@@ -25,7 +25,7 @@ import diff from 'generic-diff';
 
 export default {
     props: {
-        view: {'default': 'diff'},
+        view: {'default': 'before'},
         switchable: {type: Boolean},
         block: {type: Boolean}
     },
@@ -58,8 +58,8 @@ export default {
     methods: {
         update() {
             this.diff = diff(
-                this.$refs.before.innerHTML,
-                this.$refs.after.innerHTML,
+                this.$refs.before.innerHTML.replace(/data-v-.*?=".*?"/g, ''),
+                this.$refs.after.innerHTML.replace(/data-v-.*?=".*?"/g, ''),
             )
 
             this.$refs.diff.innerHTML = this.diff.map(function (edit) {
