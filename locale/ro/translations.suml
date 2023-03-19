@@ -1223,7 +1223,7 @@ calendar:
     events:
         pride_month: 'Luna {/terminologie#pride=Pride-ului}'
         trans_month: 'Luna Internațională a {/terminologie#transgender=Conștientizării persoanelor Transgender}'
-        zaimki_birthday: 'Ziua de naștere a Pronouns.page'
+        zaimki_birthday: 'Ziua Înființării Pronouns.page'
         agender_day: 'Ziua Pride-ului {/terminologie#agen=Agen}'
         asexuality_day: 'Ziua Internațională a {/terminologie#asexual=Asexualității}'
         bisexuality_day: 'Celebrează ziua {/terminologie#bisexual=Bisexualității}'
