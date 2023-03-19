@@ -556,6 +556,11 @@ profile:
             <strong>peuvent le voir</strong> – et peuvent vous signaler pour harcèlement si vous écrivez des choses
             négatives à propos d'eux. Si une connexion dans votre cercle est mutuelle, elle sera marquée par
             [s:shield-check].
+        yourMentions:
+            header: 'Vos mentions'
+            description: >
+                Voici une liste des personnes qui vous ont mentionné/rajouté dans leur cercle. Si vous les rajoutez à
+                votre cercle en retour, un crochet [s:shield-check] apparaîtra sur vos cartes respectives.
     sensitive:
         header: 'Avertissement de contenu'
         info: >
