@@ -531,7 +531,7 @@ router.get('/admin/moderation', handleErrorAsync(async (req, res) => {
     const dir = __dirname + '/../../moderation';
 
     return res.json({
-        susRegexes: fs.readFileSync(dir + '/sus.txt').toString('utf-8').split('\n').filter(x => !!x),
+        susRegexes: fs.readFileSync(dir + '/sus.txt').toString('utf-8').split('\n').filter(x => !!x && !x.startsWith('#')),
         rulesUsers: marked(fs.readFileSync(dir + '/rules-users.md').toString('utf-8')),
         rulesTerminology: marked(fs.readFileSync(dir + '/rules-terminology.md').toString('utf-8')),
         rulesSources: marked(fs.readFileSync(dir + '/rules-sources.md').toString('utf-8')),
