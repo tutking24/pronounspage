@@ -601,7 +601,7 @@ profile:
     opinion:
         yes: 'Ja'
         jokingly: 'Scherzhaft'
-        close: 'Nur wenn wir eng zusammen sind'
+        close: 'Nur wenn wir uns nahestehen'
         meh: 'In Ordnung'
         no: 'Nein'
 
@@ -682,6 +682,7 @@ crud:
     loadAll: 'Alle laden...'
     validation:
         listMaxLength: 'Die maximale Anzahl von Elementen in dieser Liste ist %maxlength%.'
+    alt: 'Beschreibung der Flagge'
 
 footer:
     license: >
@@ -779,6 +780,8 @@ mode:
     automatic: 'Automatisch'
     dark: 'Dunkelmodus'
     reducedColours: 'Reduzierte Farben'
+    accessibility: 'Einstellungen zur Barrierefreiheit'
+    reducedItems: 'Reduzierte Anzahl von Elementen'
 
 ban:
     reason: 'Grund der Sperrung'
