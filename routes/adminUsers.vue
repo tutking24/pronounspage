@@ -61,7 +61,7 @@
                         <template v-slot:row="s">
                             <td>
                                 <a :href="'https://pronouns.page/@' + s.el.username">@{{s.el.username}}</a>
-                                <a v-if="$isGranted('*')" href="#" class="badge bg-primary text-white" @click.prevent="impersonate(s.el.email)"><Icon v="user-secret"/></a>
+                                <a v-if="$isGranted('*') || $isGranted('impersonate')" href="#" class="badge bg-primary text-white" @click.prevent="impersonate(s.el.email)"><Icon v="user-secret"/></a>
                                 <a v-if="$isGranted('users')" href="#" class="badge bg-danger text-white" @click.prevent="erasure(s.el.id, s.el.email)"><Icon v="truck-plow"/></a>
                             </td>
                             <td>
