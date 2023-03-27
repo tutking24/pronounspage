@@ -96,14 +96,14 @@ english:
             name: 'Positional forms'
             description:
                 - >
-                    In Japanese there is no singular “they”, however, there are many alternatives in the field
-                    of “that person” or “this person” many of which are commonly used in place of gendered pronouns,
+                    In Japanese there is no singular “they”. However, there are many terms translating to
+                    of “that person” or “this person”, many of which are commonly used in place of gendered pronouns,
                     even for those who don't regularly use gender-neutral pronouns.
                     The most common forms of “that person” are split into three sections:
                     far, near to listener, near to speaker, and the question marker, represented by あ/そ/こ/ど \[a/so/ko/do] respectively.
                     So, while the gendered pronouns He {/彼=彼} \[kaɾe/kare] and She {/彼女=彼女} \[kanodʑo/kanojo]
                     do not require any changes dependant on position of the subject,
-                    all the gender-neutral animate pronouns and inanimate pronouns require that distinction to be made.
+                    all of the gender-neutral animate pronouns and inanimate pronouns require that distinction to be made.
                 - >
                     For example, a common gender-neutral third-person pronoun
                     {/あの人=あの人} \[anoçito/anohito] literally meaning “That person over there”,
@@ -128,10 +128,10 @@ english:
             name: 'Possession and plurality'
             description:
                 - >
-                    Plural and possessive pronouns in Japanese are very simple to do, with a few naunces to look out for, however.
+                    Plural and possessive pronouns in Japanese are very simple to create, with a few naunces to look out for, however.
                     Possessive pronouns are the easiest ones to make, simply add the particle の \[no] onto the end of the pronoun,
                     followed by the thing that is possessed.
-                    For example, “That person's (over there) shirt” would be あの人<strong>の</strong>シャーツ.
+                    For example, “That person's (over there) shirt” would be あの人<strong>の</strong>シャーツ \[ajatsɯ̥ no ɕaatsɯ̥/ayatsu no shaatsu].
                 - >
                     Plurality is slightly different however, as the particle used is determined once again by familiarity and politeness.
                     There are two main ones used (though there are a few others), those being ら \[ɾa/ra] and 達 \[tatɕi・i̥/tachi]
