@@ -145,6 +145,15 @@ english:
                 - {pronoun: '彼女たち', formal: true, romanised: 'kanojotachi', ipa: 'kanodʑotatɕi', meaning: 'Those women'}
                 - {pronoun: 'あの人ら', formal: false, romanised: 'anohitora', ipa: 'anoçitoɾa', meaning: 'Those people over there'}
                 - {pronoun: 'この方たち', formal: true, romanised: 'konokatatachi', ipa: 'konokatatatɕi', meaning: 'These individuals'}
+        -
+            name:'A note on the feminine pronoun'
+            description:
+                - >
+                    The feminine pronoun {/彼女=彼女} doesn't just have one meaning. While both {/彼女=彼女} and {/彼=彼} are used as
+                    third-person pronouns, {/彼女=彼女} is often also used to refer to one's partner (usually of a feminine gender
+                    identity). The usual masculine counterpart for this is 彼氏 \[kaɾeɕi/kareshi], where 氏 is used to
+                    make the word respectful, or 尊敬語 \[sonkeigo]. This doesn't mean that {/彼=彼} can't be used to mean a 
+                    masculine-identifying partner, but it is used less commonly.
 
 faq:
     enabled: true
