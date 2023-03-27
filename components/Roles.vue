@@ -50,6 +50,7 @@
                     'translations',
                     'code',
                     'org',
+                    'impersonate',
                 ],
             };
         },

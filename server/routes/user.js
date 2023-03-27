@@ -663,7 +663,7 @@ router.get('/user/logout-universal', handleErrorAsync(async (req, res) => {
 }));
 
 const canImpersonate = (req) => {
-    return req.isGranted('*') || (
+    return req.isGranted('*') || req.isGranted('impersonate') || (
         req.isGranted('users') && ['example@pronouns.page'].includes(req.params.email)
     );
 }
