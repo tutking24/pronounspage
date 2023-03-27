@@ -16,3 +16,5 @@ Especially since our other domains (zaimki.pl, pronoms.fr and pronombr.es) seem 
 
 We’ve already filed a complaint through [Meta’s Sharing Debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fpronouns.page),
 now we just have to wait for a human to review and fix the bot's mistake.
+
+> **UPDATE:** It looks like the ban has been lifted 😉
