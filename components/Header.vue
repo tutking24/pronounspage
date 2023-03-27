@@ -380,6 +380,7 @@
 
         .nav-custom {
             .btn {
+                border: none;
                 border-inline-start: 1px solid $gray-500;
                 border-radius: 0;
 
@@ -415,6 +416,7 @@
 
     .nav-custom-start {
         .btn {
+            border: none;
             border-inline-start: 1px solid $gray-500;
             border-radius: 0;
 
@@ -440,6 +442,7 @@
 
         .nav-custom:not(.nav-custom-start) {
             .nav-item {
+                border: none;
                 border-bottom: 1px solid $gray-500;
                 border-radius: 0;
 
