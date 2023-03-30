@@ -407,6 +407,7 @@ router.get('/admin/reports', handleErrorAsync(async (req, res) => {
             LEFT JOIN users reporter ON reports.reporterId = reporter.id
             LEFT JOIN profiles p on sus.id = p.userId
         WHERE reports.id > ${cutoff}
+          AND sus.username IS NOT NULL
         GROUP BY reports.id
         ORDER BY min(reports.isHandled) ASC, reports.id DESC
     `));

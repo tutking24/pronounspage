@@ -152,7 +152,9 @@ module.exports.calculateStats = async (db, allLocales, projectDir) => {
         users: (await db.get(`SELECT count(*) AS c FROM users`)).c,
         data: {
             admins: (await db.get(`SELECT count(*) AS c FROM users WHERE roles!=''`)).c,
-            userReports: (await db.get(`SELECT count(*) AS c FROM reports WHERE isHandled = 0`)).c,
+            userReports: (await db.get(`SELECT count(*) AS c FROM reports
+                LEFT JOIN users sus ON reports.userId = sus.id
+                WHERE isHandled = 0 AND sus.username IS NOT NULL`)).c,
             bansPending: (await db.get(`SELECT count(*) AS c FROM ban_proposals p LEFT JOIN users u ON p.userId = u.id WHERE u.bannedBy IS NULL`)).c,
             heartbeat: heartbeat['https://pronouns.page'],
             plausible: await checkPlausible('https://pronouns.page'),
