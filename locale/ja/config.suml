@@ -146,7 +146,7 @@ english:
                 - {pronoun: 'あの人ら', formal: false, romanised: 'anohitora', ipa: 'anoçitoɾa', meaning: 'Those people over there'}
                 - {pronoun: 'この方たち', formal: true, romanised: 'konokatatachi', ipa: 'konokatatatɕi', meaning: 'These individuals'}
         -
-            name:'A note on the feminine pronoun'
+            name: 'A note on the feminine pronoun'
             description:
                 - >
                     The feminine pronoun {/彼女=彼女} doesn't just have one meaning. While both {/彼女=彼女} and {/彼=彼} are used as
