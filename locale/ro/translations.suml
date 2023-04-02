@@ -668,14 +668,12 @@ profile:
     names: 'Nume'
     pronouns: 'Pronume'
     pronounsInfo: >
-        Poți introduce un <strong>pronume</strong> (ex: „ei/lui” sau „ea/ei”),
-        un <strong>link</strong> (ex: „https://ro.pronouns.page/ne”)
-        sau cele cinci forme (ex: „el/pe el/lui/a lui/însuși”).
-        Ține minte că <strong>toate cele cinci forme</strong> sunt necesare în cazul acesta,
-        altfel, aplicația poate doar să ghicească ce vrei să spui.
-        Poți folosi {/pronume#generator=<strong>generatorul</strong>} pentru a umple niște exemple cu forme personalizate.
-        Dacă pronumele tale urmăresc {/pronume#nameself=<strong>modelul nameself</strong>},
-        poți să folosești două puncte (ex: „:stea”).
+        Poți introduce un <strong>pronume</strong> (ex: „ei/lui” sau „ea/ei”), un <strong>link</strong> (ex:
+        „https://ro.pronouns.page/ne”) sau cele cinci forme (ex: „el/luii/însuși”). Ține minte că <strong>toate cele
+        cinci forme</strong> sunt necesare în cazul acesta, altfel, aplicația poate doar să ghicească ce vrei să spui.
+        Poți folosi {/pronume#generator=<strong>generatorul</strong>} pentru a umple niște exemple cu forme
+        personalizate. Dacă pronumele tale urmăresc {/pronume#nameself=<strong>modelul nameself</strong>}, poți să
+        folosești două puncte (ex: „:stea”).
     pronounsNotFound: 'Nu putem găsi acest pronume!'
     words: 'Cuvinte'
     wordsColumnHeader: 'Titlul coloanei'
