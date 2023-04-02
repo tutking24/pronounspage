@@ -5,7 +5,7 @@
                 {{ el }}
             </slot>
         </li>
-        <li v-if="!allShown && hiddenCount > 0" :class="[itemClass, 'small']">
+        <li v-show="!allShown && hiddenCount > 0" :class="[itemClass, 'small']">
             <span v-if="static">
                 <Icon v="plus-circle"/>
                 <T :params="{count: hiddenCount}">profile.expendableList.more</T>
