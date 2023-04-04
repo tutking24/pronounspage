@@ -1526,7 +1526,11 @@ links:
             extra: ' – <strong>niestatystyczny.pl</strong>'
             quote: >
                 Czy korzystałeś z opracowań na temat tego, jak mówią o sobie osoby niebinarne, np. z pronouns.page?
-
+        -
+            icon: 'podcast'
+            url: 'https://open.spotify.com/episode/1B1rQ3FtqjamBrkv9yyejC'
+            headline: 'O rodzaju gramatycznym i filozofii języka'
+            extra: ' – podcast <strong>Oswoić Gender</strong>'
     recommended:
         -
             icon: 'isjp.svg'
