@@ -1575,6 +1575,11 @@ links:
             icon: 'books'
             url: 'https://grupawydawniczaalpaka.pl/'
             headline: 'Grupa Wydawnicza Alpaka'
+        -
+            icon: 'books'
+            url: 'https://przewodnikpomnogosci.pl/'
+            headline: 'Przewodnik po Mnogości'
+            extra: ' – strona daje wybór form, którymi zwraca się do osoby czytającej'
     names:
         -
             icon: 'pen-nib'
