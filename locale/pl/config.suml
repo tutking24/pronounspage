@@ -1531,6 +1531,42 @@ links:
             url: 'https://open.spotify.com/episode/1B1rQ3FtqjamBrkv9yyejC'
             headline: 'O rodzaju gramatycznym i filozofii języka'
             extra: ' – podcast <strong>Oswoić Gender</strong>'
+        -
+            icon: 'newspaper'
+            url: 'https://wyborcza.pl/7,75517,29535749,polska-literatura-niebinarna.html'
+            headline: '"Gdy jakieś kłiry to przeczytają, pomyślą, że to też o nich". Polska literatura niebinarna'
+            extra: ' – <strong>wyborcza.pl</strong>'
+            quote:
+                - >
+                    Neutratywy, jak wyjaśniają osoby stojące za Słownikiem Neutratywów Języka Polskiego,
+                    to "słowa ukute na neutralne wersje słów nacechowanych płciowo, analogicznie do feminatywów".
+                    Na stronie Słownika poznać można także iksatywy - „chciałxbyś", „przyszłxś" czy formy nazwane "osobatywami",
+                    gdy zamiast pisać "dziennikarze i dziennikarki", decydujemy się napisać "osoby dziennikarskie".
+                    Czy "ktosio" za dwadzieścia lat będzie używało tych form?
+                - >
+                    - To dopiero początek skomplikowanych zmian - mówi językoznawca Mateusz Adamczyk.
+                    - W naszym języku silnie zaznacza się rodzaj, a w przypadku form osobowych jest on mocno skorelowany z płcią.
+                    Jesteśmy na etapie poszukiwania rozwiązań, choć część z nich mamy w języku od początków jego istnienia.
+                    Rodzaj neutralny (w tradycyjnej gramatyce nazywany nijakim) jest tego najlepszym przykładem.
+                    Formy takie jak: „zrobiłom", „poszło", „widziałośmy" to formy, które dawniej spotkać można było w literaturze,
+                    a dziś wchodzą do codziennej komunikacji. Ich plusem jest to, że łatwo je utworzyć, są systemowe, regularne. (…)
+                - >
+                    Mateusz Adamczyk zauważa, że mamy do czynienia z "wyjątkową sytuacją w historii rozwoju języka".
+                    - Chyba nie zdarzyło się jeszcze, by dobrze zorganizowana oddolna inicjatywa
+                    tak wyraźnie domagała się zmian w języku ogólnym. Podoba mi się to z co najmniej dwóch powodów.
+                    Po pierwsze, sama idea jest mi bliska. A po drugie – ta sytuacja pokazuje,
+                    że zmienia się nasze myślenie o języku. Przywiązanie do koncepcji nienaruszalnej normy,
+                    instytucjonalnych rozwiązań, niepodważalnych językowych autorytetów słabnie.
+                    Coraz więcej w nas pewności, że język należy do osób, które się nim posługują
+                    - że język należy do nas - mówi językoznawca.
+        -
+            icon: 'books'
+            url: 'https://przewodnikpomnogosci.pl/'
+            headline: 'Przewodnik po Mnogości'
+            quote: >
+                Na stronie staramy się korzystać z języka neutralnego płciowo według wskazówek opracowanych
+                przez autorza strony zaimki.pl (jeżeli koncept jest dla ciebie nowy, zachęcamy cię do zapoznania się z nim na ich stronie).
+
     recommended:
         -
             icon: 'isjp.svg'
