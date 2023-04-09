@@ -82,6 +82,22 @@
                 </p>
             </div>
         </div>
+        <div v-if="config.locale === 'en' && new Date() < new Date(2023, 4, 9, 0, 0, 0) && $route.path === '/'" class="container">
+            <div class="alert alert-light shadow my-3">
+                <p class="h4">
+                    <Icon v="chart-pie"/>
+                    Take part in the Gender Census 2023!
+                </p>
+                <p>
+                    The 10th annual international Gender Census 2023 is now open until 9th May 2023!
+
+                    It's for anyone whose gender (or lack thereof) isn't described by the M/F binary. It's short and easy, and results are useful in academia, business and self-advocacy.
+                </p>
+                <p class="mb-0">
+                    <a href="https://survey.gendercensus.com" target="_blank" rel="noopener" class="btn btn-primary">survey.gendercensus.com</a>
+                </p>
+            </div>
+        </div>
         <div v-if="locales[config.locale].published === false" class="alert alert-warning mb-0 mx-5 text-center">
             <Icon v="exclamation-triangle"/>
             This language version is still under construction!
