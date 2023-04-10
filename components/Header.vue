@@ -89,12 +89,17 @@
                     Take part in the Gender Census 2023!
                 </p>
                 <p>
-                    The 10th annual international Gender Census 2023 is now open until 9th May 2023!
-
-                    It's for anyone whose gender (or lack thereof) isn't described by the M/F binary. It's short and easy, and results are useful in academia, business and self-advocacy.
+                    Our friend who's running the annual international Gender Census
+                    is currently collecting answers in the 10th edition of the survey!
+                    It's open until 9th May 2023.
+                    It's for anyone whose gender (or lack thereof) isn't described by the M/F binary.
+                    It's short and easy, and results are useful in academia, business and self-advocacy.
                 </p>
                 <p class="mb-0">
-                    <a href="https://survey.gendercensus.com" target="_blank" rel="noopener" class="btn btn-primary">survey.gendercensus.com</a>
+                    <a href="https://survey.gendercensus.com" target="_blank" rel="noopener" class="btn btn-primary">
+                        <Icon v="arrow-alt-right"/>
+                        survey.gendercensus.com
+                    </a>
                 </p>
             </div>
         </div>
