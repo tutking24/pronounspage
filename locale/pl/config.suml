@@ -1930,6 +1930,8 @@ census:
             options:
                 - ['rodzaj nijaki']
                 - ['rodzaj neutralny']
+                - ['rodzaj niebinarny']
+                - ['rodzaj łosiowy']
             optionsLast:
                 - ['nie mam zdania']
         -
@@ -2135,6 +2137,14 @@ census:
                 - ['strach przed transfobią/enbyfobią', 'użycie niestandardowych form ujawniałoby moją tożsamość, a nie zawsze jest to bezpieczne']
                 - ['ciężko mi się przyzwyczaić']
                 - ['nie jestem wyoutowanx']
+                - ['problemy z opanowaniem gramatyki tych form']
+                - ['nie chcę innym sprawiać problemów, robić zamieszania']
+                - ['męczy mnie tłumaczenie tematu, nie chcę ściągać uwagi na temat mojej płci']
+                - ['nie chcę brzmieć niepoważnie, nieprofesjonalnie, ośmieszyć się']
+                - ['żadna z proponowanych form mi nie odpowiada']
+                - ['jeszcze nie wiem, których form chcę używać']
+                - ['osoby z mojego otoczenia i tak by ich nie używały']
+                - ['poczucie osamotnienia w używaniu nienormatywnych form']
         -
             type: 'checkbox'
             question: 'Jakie formy preferujesz do opisania grupy osób mieszanych płci?'
@@ -2162,9 +2172,24 @@ census:
                 - ['opinie osób eksperckich', 'np. opinia RJP o poprawności form „byłom”, „zrobiłoś”; prof. Bralczyk zachęcający do używania neutrum, itp.']
                 - ['presja otoczenia']
                 - ['bliższe identyfikowanie się z daną binarną płcią']
+                - ['komfort, poczucie dopasowania, vibe']
+                - ['estetyka']
+                - ['przyzwyczajenie']
+                - ['łatwość użycia']
+                - ['używanie tych form daje mi euforię płciową']
+                - ['inspiracja książką, filmem, serialem, …']
+                - ['inspiracja osobą z mojego otoczenia']
         -
             type: 'radio'
             question: 'Co wpłynęło na Twój wybór imienia?'
+            instruction:
+                - >
+                    Chodzi o imię, którego używasz (lub chcesz używać) w codziennym życiu,
+                    niezależnie od formalnej zmiany lub jej braku.
+                - >
+                    Jeśli używasz wielu imion (lub ksywek), wybierz jedno, o którym chcesz opowiedzieć
+                    (np. to, z którym czujesz się najbardziej komfortowo; którego używasz wśród osób znających Twoją tożsamość;
+                    którego chcesz używać, jak się wyoutujesz; którego używasz najczęściej).
             randomise: true
             writein: true
             options:
@@ -2174,6 +2199,13 @@ census:
                 - ['wybrał_m neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców']
                 - ['wybrał_m nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców']
                 - ['wybrał_m na imię rzeczownik, który tradycyjnie nie był używany jako imię']
+            aggregates:
+                nadane:
+                    operation: 'OR'
+                    values: ['nic, używam imienia nadanego mi przez rodziców', 'jest neutralną/unisex formą imienia nadanego mi przez rodziców', 'jest formą przeciwnej płci binarnej imienia nadanego mi przez rodziców']
+                wybrane:
+                    operation: 'OR'
+                    values: ['wybrał_m neutralne/unisex imię niezwiązane z tym nadanym mi przez rodziców', 'wybrał_m nacechowane binarnie imię niezwiązane z tym nadanym mi przez rodziców', 'wybrał_m na imię rzeczownik, który tradycyjnie nie był używany jako imię']
         -
             type: 'checkbox'
             question: 'Jakich zaimków chcesz, by używano wobec Ciebie po angielsku?'
@@ -2248,6 +2280,7 @@ census:
                 - ['niebinie']
                 - ['apłciow_']
                 - ['agenderow_']
+                - ['bipłciow_']
                 - ['bigenderow_']
                 - ['kłir']
                 - ['androgyniczn_']
@@ -2346,6 +2379,7 @@ census:
                 - ['panseksualn_']
                 - ['multiseksualn_']
                 - ['omniseksualn_']
+                - ['poliseksualn_']
 
                 - ['gej']
                 - ['lesbijka']
@@ -2377,11 +2411,21 @@ census:
 
                 - ['pomoseksualn_']
                 - ['bez etykiety']
+            aggregates:
+                mspec:
+                    operation: 'OR'
+                    values: ['biseksualn_', 'panseksualn_', 'multiseksualn_', 'omniseksualn_', 'poliseksualn_']
+                aspec:
+                    operation: 'OR'
+                    values: ['aseksualn_', 'demiseksualn_', 'szaroseksualn_']
+        # TODO: dodać orientację romantyczną
+        # TODO: przemyśleć dodanie pytania o tranzycję (nie planowana / planowana / w trakcie / nie wiem…; podział na społeczną, medyczną, prawną…)
         -
             type: 'textarea'
             question: 'Czy masz jakieś dodatkowe uwagi? (nieobowiązkowe)'
             optional: true
     results:
+        spis-2023: 'Raport ze Spisu 2023'
         spis-2022: 'Raport ze Spisu 2022'
         spis-2021: 'Raport ze Spisu 2021'
 

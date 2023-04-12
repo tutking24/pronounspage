@@ -213,6 +213,10 @@ router.get('/census/export', handleErrorAsync(async (req, res) => {
                 }
             } else {
                 answer[`${i}_`] = (answers[i.toString()] || '').replace(/\n/g, ' | ');
+                for (let aggr in question.aggregates || {}) {
+                    if (!question.aggregates.hasOwnProperty(aggr)) { continue; }
+                    answer[`${i}_aggr_${aggr}`] = calculateAggregate(question.aggregates[aggr], new Set([answer[`${i}_`]])) ? 1 : '';
+                }
             }
             if (question.writein) {
                 answer[`${i}__writein`] = (writins[i.toString()] || '').replace(/\n/g, ' | ');

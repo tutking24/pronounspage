@@ -1,3 +1,4 @@
+// TODO make generic
 const census_groups = {
     'location_poland': 'Osoby mieszkające w Polsce',
     'location_abroad': 'Osoby mieszkające za granicą',
@@ -28,8 +29,32 @@ const mainPlusDetails = (dict, wide) => (_, content) => {
 const fetchJson = (_, filename, key) => {
     if (jsons === undefined) { jsons = JSON.parse(process.env.JSONS); }
     let c = jsons[filename];
+    // terrible conventions, i know… i'm so tired…
+    let explicitSign = false;
+    let absolute = false;
+    if (key.startsWith('@')) {
+        explicitSign = true;
+        key = key.substring(1);
+    }
+    if (key.startsWith('^')) {
+        absolute = true;
+        key = key.substring(1);
+    }
     for (let part of key.split('.')) {
         c = c[part];
+        if (c === undefined) {
+            return `<span class="badge bg-danger text-white">item "${part}" is undefined (file ${filename})</span>`;
+        }
+    }
+    if (typeof c === 'number') {
+        if (absolute) {
+            c = Math.abs(c);
+        }
+        if (explicitSign && c > 0) {
+            c = '+' + c;
+        }
+        // TODO make generic
+        c = c.toString().replace('.', ',');
     }
     return c;
 }

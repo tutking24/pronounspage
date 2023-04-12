@@ -28,6 +28,32 @@ Serdecznie zapraszamy do udziału w Niebinarnym Spisie Powszechnym! By wesprzeć
             </p>
             <p style="color: #999; font-size: 10px;">Ta wiadomość wysyłana jest do osób, które zapisały się na przypominajkę. Jeśli chcesz z niej zrezygnować, <a href="https://zaimki.pl/api/subscription/unsubscribe?email={{emailEncoded}}&type=census">kliknij tutaj</a>.</p>
         `,
+    },
+    {
+        name: 'spis-2023-raport',
+        sendAt: new Date(2023, 3, 12, 12, 0, 0),
+        type: 'census',
+        locales: ['pl'],
+        subject: 'Przedstawiamy raport z trzeciej edycji Niebinarnego Spisu Powszechnego!',
+        text: `Już po raz trzeci przeprowadziłośmy Niebinarny Spis Powszechny – największe badanie języka, jakim posługują się polskojęzyczne osoby niebinarne.
+
+W tym roku udało nam się zebrać rekordową liczbę odpowiedzi, aż 3022! Rozszerzyłośmy też ankietę o kilka dodatkowych pytań i porównałośmy wyniki z dwiema poprzednimi edycjami. Zaowocowało to najbardziej rozbudowanym raportem o niebinarszczyźnie!
+
+Report dostępny jest pod adresem https://zaimki.pl/blog/spis-2023 – serdecznie zapraszamy do lektury 😉
+
+(Ta wiadomość wysyłana jest do osób, które zapisały się na przypominajkę. Jeśli chcesz z niej zrezygnować, wejdź na https://zaimki.pl/api/subscription/unsubscribe?email={{emailEncoded}}&type=census)
+        `,
+        html: `
+            <p>Już po raz trzeci przeprowadziłośmy Niebinarny Spis Powszechny – największe badanie języka, jakim posługują się polskojęzyczne osoby niebinarne.</p>
+            <p>W tym roku udało nam się zebrać rekordową liczbę odpowiedzi, aż 3022! Rozszerzyłośmy też ankietę o kilka dodatkowych pytań i porównałośmy wyniki z dwiema poprzednimi edycjami. Zaowocowało to najbardziej rozbudowanym raportem o niebinarszczyźnie!</p>
+            <p>Report dostępny jest pod adresem <a href="https://zaimki.pl/blog/spis-2023" target="_blank" rel="noopener">zaimki.pl/blog/spis-2023</a> – serdecznie zapraszamy do lektury 😉</p>
+            <p style="text-align: center; padding-top: 16px; padding-bottom: 16px;">
+                <a href="https://zaimki.pl/blog/spis-2023" target="_blank" rel="noopener" style="background-color: #C71585; color: #fff; padding: 8px 16px; border: none; border-radius: 6px;text-decoration: none">
+                    zaimki.pl/blog/spis-2023
+                </a>
+            </p>
+            <p style="color: #999; font-size: 10px;">Ta wiadomość wysyłana jest do osób, które zapisały się na przypominajkę. Jeśli chcesz z niej zrezygnować, <a href="https://zaimki.pl/api/subscription/unsubscribe?email={{emailEncoded}}&type=census">kliknij tutaj</a>.</p>
+        `,
     }
 ];
 
