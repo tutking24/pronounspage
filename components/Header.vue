@@ -122,6 +122,16 @@
                 <Icon v="times"/>
             </a>
         </div>
+        <div v-if="config.locale === 'pl' && new Date() < new Date(2023, 4, 1, 0, 0, 0) && ['/', '/spis'].includes($route.path)" class="container position-relative">
+            <nuxt-link to="/blog/spis-2023">
+                <img src="/img-local/census/census-banner-report-horizontal.png"
+                     alt="Na tle flagi osób niebinarnych (cztery poziome pasy: żółty, biały, fioletowy, czarny) tekst: Przedstawiamy raport z trzeciej edycji największego badania języka osób niebinarnych! Niebinarny Spis Powszechny 2023; zaimki.pl/spis"
+                     class="w-100 shadow d-none d-md-block"/>
+                <img src="/img-local/census/census-banner-report-horizontal-mobile.png"
+                     alt="Na tle flagi osób niebinarnych (cztery poziome pasy: żółty, biały, fioletowy, czarny) tekst: Niebinarny Spis Powszechny 2023; Przeczytaj raport z badania! zaimki.pl/spis"
+                     class="w-100 shadow d-md-none"/>
+            </nuxt-link>
+        </div>
         <div v-if="$user() && $user().bannedReason" class="alert alert-danger mb-0 container">
             <p class="h4 mb-2">
                 <Icon v="ban"/>
