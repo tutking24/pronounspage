@@ -113,6 +113,11 @@ def generateBar(
         yaxis=None,
         font=dict(family=fontFamily, size=14),
     )
+    # i can't believe i have to do that because a professor can't read a graph 🤦
+    if name == 'age':
+        fig.update_layout(
+            xaxis=dict(tickvals=[13, 20, 30, 40, 50, 60, 70]),
+        )
     for trace in fig.select_traces():
         trace.update(
             hovertemplate='%{x}<br>%{y:.2f}%' + ('<br>%{meta}' if is_multi else '') + '<extra></extra>',
