@@ -44,3 +44,11 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+@import "assets/variables";
+
+.small .fa-fw {
+    width: #{$fa-fw-width / $small-font-size}em;
+}
+</style>
