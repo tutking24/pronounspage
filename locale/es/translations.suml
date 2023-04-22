@@ -633,6 +633,7 @@ profile:
         meh: 'Okey'
         no: 'No'
     opinions:
+        header: 'Leyenda/opiniones'
         colours:
             pink: 'Rosa'
             red: 'Rojo'
@@ -665,10 +666,26 @@ profile:
         header: 'Idioma'
         description: 'La tarjeta de @%username% también está disponible en los siguientes idiomas'
     circles:
+        yourMentions:
+            header: 'Tu circulo familiar y/o de amigos'
+        header: 'Mi circulo'
+        info: >
+            En esta seccion tu puedes tagear a <strong>personas cercanas a ti</strong>, junto a información con palabras
+            (sin genero) con las que te refieras hacia ellxs (ejemplos: "cónyuge", "esposa", "marido") No somos una red
+            social, esto <strong>no es una lista de amigos/seguidores</strong>, es por eso que la cantidad maxima es algo
+            limitada. Ten en cuenta que las personas que tagees aquí <strong>serán capaces de ver eso</strong> — y podrán
+            reportarte por acoso si tu decides agregar cosas negativas sobre ellxs. Si la conexión de tu círculo es
+            mutua, este será marcado con [s:shield-check].
         relationship: 'Relación (p. ej. "pareja", "mejor amigx")'
         validation:
             userNotFound: 'Tal usuario no existe'
     timezone:
+        time: 'Son las %time% en el día %weekday% en mi zona horaria.'
+        info: >
+            Si completa este campo, su tarjeta le dirá a las personas <strong>qué hora es donde vive</strong>.
+            Opcionalmente, también puede optar por publicar su ubicación aproximada.
+        publishArea: 'Publica el continente en tu tarjeta'
+        publishLocation: 'Publica el area en tu tarjeta'
         detect: 'Detectar'
         areas:
             Pacific: 'Pacífico'
@@ -681,7 +698,17 @@ profile:
             Indian: 'India'
         header: 'Zona horaria'
         placeholder: 'Selecciona tu zona horaria'
-
+    sensitive:
+        header: 'Advertencia de contenido'
+        info: >
+            Cierto contenido debe seguir nuestro {/terms=Terminos de Servicio} pero aún no es apropiado para menores, ser
+            potencialmente desencadenante para personas con traumas, etc. Porfavor se reapetuoso con las personas que
+            visitan tu tarjeta y advierte antes de que avancen. Algunos ejemplos de CW pueden ser, "mención al alcohol",
+            "insinuaciones sexuales", "menciones a situaciones queerphobicas", etc.
+        hide: 'Desenfocar la tarjeta'
+        display: 'Continuar a la tarjeta '
+    flagsCustomForm:
+        altExample: 'Un ejemplo de cómo podría redactarse el texto alternativo'
 share: 'Compartir'
 
 crud:
@@ -871,7 +898,7 @@ table:
     more: 'Mostrar más'
 
 api:
-    header: 'Public API'
+    header: 'API pública'
     example: 'Ejemplo'
     query: 'Query string parameters'
 
@@ -903,6 +930,8 @@ mode:
     automatic: 'Automático'
     dark: 'Modo oscuro'
     accessibility: 'Ajustes de accesibilidad'
+    reducedColours: 'Colores reducidos '
+    reducedItems: 'Reducir número de items que se muestran '
 
 ban:
     reason: 'Razón para banear'
@@ -1023,6 +1052,12 @@ flags:
     Trixic: 'Tríci{inflection_c}'
     Two_Spirit: 'Dos espíritus'
     Xenogender: 'Xenogénero'
+
+flags_alt:
+    Progress_Pride_: >
+        Una bandera rectangular con seis franjas horizontales de igual ancho: rojo, naranja, amarillo, verde, azul y
+        morado; un cheurón (triángulo) en el lado izquierdo compuesto por franjas de los siguientes colores (desde la
+        izquierda): amarillo con un círculo púrpura, blanco, rosado, azul claro, marrón y negro.
 
 calendar:
     header: 'Calendario'
