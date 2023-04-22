@@ -1,5 +1,5 @@
 locale: 'ar'
-rtl: true
+dir: 'rtl'
 
 header: true
 
