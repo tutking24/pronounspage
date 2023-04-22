@@ -496,7 +496,7 @@ contact:
         translations:
             header: 'Agrega correcciones y traducciones'
             description: >
-                ¡Una traducción está incompleta o incorrecta? Haz clic en “Traducciones propuestas” en el pie de página y
+                ¡Una traducción está incompleta o incorrecta? Haz clic en “Proponer traducciones” en el pie de página y
                 sigue las instrucciones.
         technical:
             header: 'Envía una solicitud de cambio'
@@ -1223,7 +1223,7 @@ calendar:
     full: 'Calendario completo'
 
 translationMode:
-    action: 'Traducciones propuestas'
+    action: 'Proponer traducciones'
     header: 'Modo de traducción'
     changes: 'Cambios'
     revert: 'Revertir cambios'
