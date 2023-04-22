@@ -15,6 +15,7 @@ module.exports = [
     ['sv', 'Svenska',             'https://sv.pronouns.page', true],
     ['tr', 'Türkçe',              'https://tr.pronouns.page', false],
     ['vi', 'Tiếng Việt',          'https://vi.pronouns.page', true],
+    ['ar', 'اَلْعَرَبِيَّةُ',             'https://ar.pronouns.page', true],
     ['ru', 'Русский',             'https://ru.pronouns.page', true],
     ['ua', 'Українська',          'https://ua.pronouns.page', true],
     ['ja', '日本語',               'https://ja.pronouns.page', true],
