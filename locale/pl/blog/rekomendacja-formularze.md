@@ -61,6 +61,7 @@ Zestaw wielu cech fizycznych, które często wrzuca się pod parasol „płci bi
  - trzeciorzędowe cechy płciowe (biust, zarost na twarzy, wysokość głosu, jabłko Adama, …)
 
 Fajne źródło [tutaj](http://avant.edu.pl/wp-content/uploads/R_Zieminska_Teoria_feministyczna_a_niebinarne_pojecie_plci.pdf).
+Więcej na ten temat piszemy też w poście: [Ile jest płci?](/blog/ile-jest-płci) 
 
 Pamiętaj też, że **płeć ≠ zaimki**. Jeśli chcesz wiedzieć, jak się do kogoś zwracać, to spytaj… jak się najlepiej zwracać – a nie o płeć.
 Osoby trans często są pytane o płeć w bardzo negatywny sposób, implikujący wręcz niezdrową ciekawość „ale co masz w gaciach?”.

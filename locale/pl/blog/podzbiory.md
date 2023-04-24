@@ -17,8 +17,10 @@ który skupia się na formułowaniu komunikatów w taki sposób, by nie pogłęb
 i by każda adresowana osoba czuła się włączona mimo silnej androcentryczności polszczyzny.
 Chodzi tu na przykład o [osobatywy](/osobatywy), [formy z iksami](/onx) czy [neutralną liczbę mnogą](/ona/ich).
 
-Inną, choć blisko powiązaną kwestią, jest to, jak osoby niebinarne wyrażają swoją płeć w języku.
-**Język niebinarny** to chociażby [rodzaj neutralny](/ono) i [neutratywy](/neutratywy) czy [dukaizmy](/onu) i [dukatywy](/dukatywy).
+Płci jest jednak więcej niż dwie (zob. [Ile jest płci?](/blog/ile-jest-płci)),
+a osoby, które się w dwóch „domyślnych” kategoriach nie mieszczą, też chcą jakoś się wyrazić w języku.
+Te kwestie to **język niebinarny**,
+czyli chociażby [rodzaj neutralny](/ono) i [neutratywy](/neutratywy) czy [dukaizmy](/onu) i [dukatywy](/dukatywy).
 
 Niektóre formy można by zaliczyć do obu kategorii. 
 Wiele osób niebinarnych zamiast na przykład „studentka” czy „student” mówi o sobie „osoba studiująca” – wyrażając tym językowo swoją płeć.
