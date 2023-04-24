@@ -28,14 +28,16 @@
 
         <AdPlaceholder phkey="main-0"/>
 
-        <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
-                :question="question"
-                :id="question" :ref="question.replace(/-/g, '_')"
-                @click="setHash('', question)"
-                v-show="!filter
-                     || $t(`faq.questions.${question}.question`).toLowerCase().includes(filter.toLowerCase())
-                     || $t(`faq.questions.${question}.answer`).join('|').toLowerCase().includes(filter.toLowerCase())"
-        />
+        <section itemscope itemtype="https://schema.org/FAQPage">
+            <Answer v-for="question in Object.keys($t('faq.questions'))" :key="question"
+                    :question="question"
+                    :id="question" :ref="question.replace(/-/g, '_')"
+                    @click="setHash('', question)"
+                    v-show="!filter
+                         || $t(`faq.questions.${question}.question`).toLowerCase().includes(filter.toLowerCase())
+                         || $t(`faq.questions.${question}.answer`).join('|').toLowerCase().includes(filter.toLowerCase())"
+            />
+        </section>
 
         <AdPlaceholder phkey="main-1"/>
 

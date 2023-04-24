@@ -887,6 +887,16 @@ faq:
                 - >
                     Wiele form, które {/zaimki=tutaj proponujemy}, można zastosować właśnie w takich sytuacjach, np.:
                     „{/on/a=moi drodzy/drogie}”, „drogie osoby”, „{/on*=wszys* chętn*}”, „{/onx=jesteś wspaniałx}”, itp.
+        ile-płci:
+            question: 'Ile jest płci?'
+            answer:
+                - >
+                    Płeć, zarówno społeczna, jak i biologiczna, jest bardziej skomplikowana niż binarny podział –
+                    nie jest czymś, co można zliczyć.
+                    To jak pytanie, <em>ile jest kolorów</em>? – wprawdzie granica między zielonym a niebieskim jest umowna,
+                    ale mówienie, że są dwa: <em>jasny</em> i <em>ciemny</em>, to niedopowiedzenie.
+                - >
+                    Więcej na ten temat piszemy w poście: {/blog/ile-jest-płci=Ile jest płci?}
         zmiana:
             question: 'Czy mogę zmienić swoje zaimki?'
             answer:

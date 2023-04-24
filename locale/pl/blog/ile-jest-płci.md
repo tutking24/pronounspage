@@ -1,4 +1,4 @@
-# Ile właściwie jest płci?
+# Ile jest płci
 
 <small>2021-10-12 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
 
@@ -146,10 +146,10 @@ jest zwyczajnie głupie.
 
 ## Ile jest płci?
 
-Płeć (i społeczna, i biologiczna) jest bardziej skomplikowana niż binarny podział –
-ale nie oznacza to, że płci da się policzyć.
-To jak pytanie „ile jest kolorów?” – wprawdzie granica między zielonym a niebieskim jest umowna,
-ale mówienie, że są dwa: „jasny” i „ciemny”, to niedopowiedzenie.
+Płeć, zarówno społeczna, jak i biologiczna, jest bardziej skomplikowana niż binarny podział –
+nie jest czymś, co można zliczyć.
+To jak pytanie, _ile jest kolorów_? – wprawdzie granica między zielonym a niebieskim jest umowna,
+ale mówienie, że są dwa: _jasny_ i _ciemny_, to niedopowiedzenie.
 
 ## Wielorakość płci
 
