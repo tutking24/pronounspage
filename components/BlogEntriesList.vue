@@ -75,7 +75,7 @@
                 })
             },
             generateLink(slug) {
-                return this.shortcuts[slug] !== undefined
+                return this.shortcuts[slug] !== undefined && !(this.config.blog.keepFullPath || []).includes(slug)
                     ? `/${this.shortcuts[slug]}`
                     : `/blog/${slug}`;
             }

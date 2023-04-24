@@ -297,6 +297,7 @@ export default {
                     for (let shortcut in config.blog.shortcuts) {
                         if (!config.blog.shortcuts.hasOwnProperty(shortcut)) { continue; }
                         const slug = config.blog.shortcuts[shortcut];
+                        if ((config.blog.keepFullPath || []).includes(slug)) { continue; }
                         routes.push({ path: '/' + encodeURIComponent(shortcut), component: resolve(__dirname, 'routes/blogEntry.vue'), meta: {slug}, name: 'blogEntryShortcut:' + shortcut });
                     }
                 }

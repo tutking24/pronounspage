@@ -2437,6 +2437,7 @@ blog:
         rodzaj-neutralny: 'rodzaj-neutralny'
         jak-działają-zaimki: 'jak-działają-polskie-zaimki'
         ktosio: 'zaimki-nie-tylko-osobowe'
+        ile-jest-płci: 'ile-jest-płci'
         autokorekta: 'autokorekta'
         tłumaczenie: 'ściągawka-tłumaczenie'
         neologizmy: 'skąd-się-biorą-słowa'
@@ -2444,6 +2445,8 @@ blog:
         podzbiory: 'podzbiory'
         liczebniki: 'inkluzywne-liczebniki'
         zaimki-postpłciowe: 'zaimki-postpłciowe'
+    keepFullPath:
+        - 'ile-jest-płci'
 
 redirects:
     - { from: '^/slowniki/neutratywy$', to: '/neutratywy' }

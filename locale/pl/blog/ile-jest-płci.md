@@ -44,7 +44,7 @@ przeniesiony na chromosom X – i nawet o tym nie wiedzieć! Istnieją osoby [in
 osoby, których genitalia nie są jednoznaczne,
 osoby, których trzeciorzędowe cechy płciowe „nie zgadzają się” z wewnętrznymi narządami, etc. etc.
 
-Często słyszymy, że „interpłciowość to aberracja, zaburzeni”, i że „fakt iż część osób wykracza poza normę, nie sprawia, że norma nie istnieje”.
+Często słyszymy, że „interpłciowość to aberracja, zaburzenie”, i że „fakt iż część osób wykracza poza normę, nie sprawia, że norma nie istnieje”.
 Ale interpłciowe ciała nie są „zaburzone”, są po prostu mniej typowe niż ciała osób diadycznych (=nie-interpłciowych).
 Jak pokazują badania
 ([Raport organizacji Human Rights Watch (USA)](https://www.hrw.org/report/2017/07/25/i-want-be-nature-made-me/medically-unnecessary-surgeries-intersex-children-us),
@@ -147,7 +147,7 @@ jest zwyczajnie głupie.
 ## Ile jest płci?
 
 Płeć (i społeczna, i biologiczna) jest bardziej skomplikowana niż binarny podział –
-ale nie oznacza to, że da się je policzyć.
+ale nie oznacza to, że płci da się policzyć.
 To jak pytanie „ile jest kolorów?” – wprawdzie granica między zielonym a niebieskim jest umowna,
 ale mówienie, że są dwa: „jasny” i „ciemny”, to niedopowiedzenie.
 
@@ -165,9 +165,10 @@ A od zarania dziejów istniały osoby niewpasowujące się w ten binarny podzia�
 Istniało i istnieje też wiele kultur, które takie osoby akceptują i tworzą dla nich miejsce w społeczności.
 
 Współcześnie powstaje wiele określeń próbujących opisać różnorodne doświadczenia związane z płciowością:
-na przykład jej zmienność w czasie („genderfluid”, „genderflux”),
-zewnętrzną prezentację odmienną od oczekiwanej przez społeczeństwo („androgynous”, „gender nonconforming”),
-czy niemożność opisania jej przez jej relację z męskością i kobiecością (xenogenders).
+na przykład jej zmienność w czasie („[genderfluid](/terminologia#genderfluid)”, „[genderflux](/terminologia#genderflux)”),
+zewnętrzną prezentację odmienną od oczekiwanej przez społeczeństwo
+(„[androgynous](/terminologia#androgynous)”, „[gender nonconforming](/terminologia#nonkonformizm)”),
+czy niemożność opisania jej przez jej relację z męskością i kobiecością ([xenogenders](/terminologia#ksenopłciowość)).
 A wszystkie je można zebrać pod parasolem niebinarności.
 
 **Ile osób, tyle doświadczeń.**
