@@ -1,4 +1,4 @@
-# Ile jest płci?
+# Ile właściwie jest płci?
 
 <small>2021-10-12 | [@andrea](/@andrea), [@szymon](/@szymon)</small>
 
@@ -144,9 +144,16 @@ super, że przeniósł do mainstreamu świadomość istnienia niebinarności;
 ale traktowanie ich listy 56 customowych płci jako jakiegokolwiek „oficjalnego” stanowiska „ideologii gender”
 jest zwyczajnie głupie.
 
-## No więc ile ich w końcu jest?
+## Ile jest płci?
 
-Krótko i szczerze mówiąc: **nie mamy pojęcia**. Nikt nie ma.
+Płeć (i społeczna, i biologiczna) jest bardziej skomplikowana niż binarny podział –
+ale nie oznacza to, że da się je policzyć.
+To jak pytanie „ile jest kolorów?” – wprawdzie granica między zielonym a niebieskim jest umowna,
+ale mówienie, że są dwa: „jasny” i „ciemny”, to niedopowiedzenie.
+
+## Wielorakość płci
+
+Krótko i szczerze mówiąc: **nie mamy pojęcia**, ile jest płci. Nikt nie ma.
 
 Płeć jest konstruktem społecznym, który nie chce się trzymać żadnych sztywnych ram.
 Nawet w obrębie najbardziej uproszczonego rozumienia płci jako czegoś czysto binarnego
