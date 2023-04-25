@@ -55,7 +55,7 @@
                 </a>
             </li>
             <li>
-                <nuxt-link :to="`${config.contact.team.route}`" target="_blank" rel="noopener">
+                <nuxt-link :to="`/${config.contact.team.route}`" target="_blank" rel="noopener">
                     Team logo
                 </nuxt-link>
             </li>
