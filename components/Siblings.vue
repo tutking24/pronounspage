@@ -40,5 +40,11 @@
                 Call me by my gender
             </a>
         </li>
+        <li class="mb-2">
+            <a href="https://tonetags.astrid.sh/" target="_blank" rel="noopener">
+                <Icon v="tonetag.png"/>
+                Tone tags
+            </a>
+        </li>
     </ul>
 </template>
