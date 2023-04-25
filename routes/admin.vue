@@ -109,6 +109,12 @@
             />
             <AdminDashboardCard
                 v-show="!filterAttention"
+                icon="palette"
+                link="/admin/design"
+                header="Design guidelines"
+            />
+            <AdminDashboardCard
+                v-show="!filterAttention"
                 icon="file-spreadsheet"
                 link="/admin/timesheets"
                 header="Volunteering timesheets"

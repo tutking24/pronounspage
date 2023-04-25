@@ -349,6 +349,8 @@ export default {
             routes.push({ path: '/admin/translations/missing', component: resolve(__dirname, 'routes/adminTranslationsMissing.vue') });
             routes.push({ path: '/admin/translations/awaiting', component: resolve(__dirname, 'routes/adminTranslationsAwaiting.vue') });
 
+            routes.push({ path: '/admin/design', component: resolve(__dirname, 'routes/adminDesign.vue') });
+
             if (config.profile.enabled) {
                 routes.push({path: '/u/*', component: resolve(__dirname, 'routes/profile.vue')});
                 routes.push({path: '/@*', component: resolve(__dirname, 'routes/profile.vue')});
