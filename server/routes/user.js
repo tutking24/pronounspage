@@ -538,13 +538,15 @@ router.get('/user/social-redirect/:provider/:locale', handleErrorAsync(async (re
 // happens on home
 router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
     if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
-        return res.status(400).redirect('/' + config.user.route);
+        console.error('Social login failed, session incomplete', req.params.provider, req.session);
+        return res.status(400).json({error: 'Something went wrong… Please try again.'})
     }
 
     const payload = socialLoginHandlers[req.params.provider](req.session.grant.response);
 
     if (payload.id === undefined) {
-        return res.status(400).redirect('/' + config.user.route);
+        console.error('Social login failed, payload has no id', req.params.provider, req.payload);
+        return res.status(400).json({error: 'Something went wrong… Please try again.'})
     }
 
     const auth = await req.db.get(SQL`
@@ -570,8 +572,7 @@ router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
         await invalidateAuthenticator(req.db, auth.id);
     }
     if (!payload.avatarCopy && payload.avatar) {
-        const tmp = await copyAvatar(req.params.provider, payload.avatar);
-        payload.avatarCopy = tmp;
+        payload.avatarCopy = await copyAvatar(req.params.provider, payload.avatar);
     }
 
     await saveAuthenticator(req.db, req.params.provider, dbUser, payload);
