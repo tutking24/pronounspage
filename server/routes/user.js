@@ -537,7 +537,9 @@ router.get('/user/social-redirect/:provider/:locale', handleErrorAsync(async (re
 
 // happens on home
 router.get('/user/social/:provider', handleErrorAsync(async (req, res) => {
-    if (!req.session.grant || !req.session.grant.response || !req.session.grant.response.access_token || !socialLoginHandlers[req.params.provider]) {
+    if (!req.session.grant || !req.session.grant.response
+        || (!req.session.grant.response.access_token && !req.session.grant.response.jwt)
+        || !socialLoginHandlers[req.params.provider]) {
         console.error('Social login failed, session incomplete.', req.params.provider, req.session, req.session.grant.response);
         return res.status(400).json({error: 'Something went wrong… Please try again.'})
     }

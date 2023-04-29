@@ -25,6 +25,9 @@ if (process.env.ENV) {
     process.env.NODE_ENV = process.env.ENV;
 }
 
+const applePrivateKeyFile = `${__dirname}/keys/AuthKey_${process.env.APLLE_KEY_ID}.p8`;
+process.env.APPLE_PRIVATE_KEY = fs.existsSync(applePrivateKeyFile) ? fs.readFileSync(applePrivateKeyFile).toString('utf-8') : null;
+
 const allVersionsUrls = buildList(function*() {
     if (process.env.NODE_ENV === 'development') {
         yield 'http://pronouns.test:3000';
