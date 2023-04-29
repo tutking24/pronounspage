@@ -175,11 +175,11 @@ nouns:
     plural: 'جمع'
     pluralShort: 'جمع'
 
-   image: 'الصورة'
+    image: 'الصورة'
 
 community:
-   header: 'المجتمع'
-   headerLong: 'مجتمع المثليين'
+    header: 'المجتمع'
+    headerLong: 'مجتمع المثليين'
 
 terminology:
     header: 'المصطلح'
