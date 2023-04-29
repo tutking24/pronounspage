@@ -19,6 +19,11 @@ export const socialProviders = {
         redirectViaHome: true,
         avatars: true,
     },
+    apple: {
+        name: 'Apple',
+        redirectViaHome: true,
+        avatars: true,
+    },
     google: {
         name: 'Google',
         redirectViaHome: true,

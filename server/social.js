@@ -1,3 +1,22 @@
+const jwt = require('jsonwebtoken');
+
+const getAppleClientSecret = () => {
+    const headers = {
+        kid: process.env.APPLE_KEY_ID,
+        typ: undefined
+    }
+    const claims = {
+        'iss': process.env.APPLE_TEAM_ID,
+        'aud': 'https://appleid.apple.com',
+        'sub': process.env.APPLE_CLIENT_ID,
+    }
+    return jwt.sign(claims, process.env.APPLE_PRIVATE_KEY, {
+        algorithm: 'ES256',
+        header: headers,
+        expiresIn: '180d'
+    });
+}
+
 module.exports.config = {
     defaults: {
         origin: process.env.BASE_URL,
@@ -29,6 +48,19 @@ module.exports.config = {
         secret: process.env.DISCORD_SECRET,
         callback: '/api/user/social/discord',
         scope: ['identify', 'email'],
+    },
+    apple: {
+        key: process.env.APPLE_CLIENT_ID,
+        secret: getAppleClientSecret(),
+
+        callback: '/api/user/social/apple',
+        scope: ['openid', 'name', 'email'],
+        response: ['raw', 'jwt'],
+        nonce: true,
+        custom_params: {
+            response_type: 'code id_token',
+            response_mode: 'form_post',
+        },
     },
     // non-grant, but things break if it's not there
     mastodon: {},
@@ -97,4 +129,12 @@ module.exports.handlers = {
             instance: r.instance,
         }
     },
+    apple(r) {
+        const payload = r.jwt.id_token.payload
+        return {
+            id: payload.email,
+            email: payload.email_verified ? payload.email : null,
+            name: payload.email,
+        };
+    }
 };
