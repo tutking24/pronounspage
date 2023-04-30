@@ -121,6 +121,7 @@ sources:
         key: 'المفتاح'
         keyInfo: 'المعرّف لربط المصادر بين النسخ اللغوية والربط مع القاموس'
         images: 'الصور'
+        spoiler: 'Spoiler'
     otherVersions: 'في لغات أخرى'
     referenced: 'أمثلة على الإستخدام'
 

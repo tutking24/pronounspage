@@ -1,6 +1,5 @@
 module.exports = [
     'contact.language',
-    'support.bankAccount',
     'confirm.save',
     'confirm.dismiss',
     'calendar.events.mspec_lesbian_day',
