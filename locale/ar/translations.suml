@@ -6,9 +6,9 @@ home:
     link: 'الصفحة الرئيسية '
     header: 'الضمائر'
     headerLong: 'قائمة الضمائر'
-    welcome: 'مرحبًا بكم في صفحة الضمائر!'
+    welcome: 'مرحبًا بكم في موقعنا!'
     intro: >
-        إننا نَقوم بعمل مصدر للبيانات عن لُغة الهوية غير الثُنائية واللُغة المحايدة للجنس.
+        إننا نَقوم بعمل مصدر للبيانات عن لُغة الهوية غير الثنائية واللُغة المحايدة للجنس.
     why: 'ما هي الضمائر؟'
     about:
         - >
@@ -32,7 +32,7 @@ home:
             إذا كنت لا تريد أن تكون لئيمًا تجاه شخص ما، فيٌرجى أن تناديه بطريقة ملائمة بناءًا على ما يريدونه.
             الفرق الوحيد أننا في الغالب نعلم أسماء الآخرين، لكن ليس ضمائرهم.
             نحن نُعرّف أنفُسنا بالأسماء، لا بالضمائر. فَلِنُغير هذا!
-    pronouns: 'قائمة بالضمائر المعروفة'
+    pronouns: 'قائمة الضمائر المعروفة'
     generator:
         header: 'الموَلِّد'
         description: >
@@ -98,7 +98,7 @@ sources:
         Series: 'المسلسلات'
         Song: 'الموسيقى '
         Poetry: 'الشعر'
-        Comics: 'الكتب الهزلية'
+        Comics: 'القصص'
         Game: 'الألعاب'
         Other: 'أخرى'
     submit:
@@ -182,7 +182,7 @@ community:
     headerLong: 'مجتمع المثليين'
 
 terminology:
-    header: 'المصطلح'
+    header: 'المصطلحات'
     headerLong: 'قاموس مجتمع المثليين'
     info:
         - >
@@ -239,189 +239,184 @@ faq:
                 - >
                     "الضمائر الغريبة" هي مجرد مسألة وقت لتعتاد عليها.
         made-up:
-            question: 'Those pronouns are made up!'
+            question: 'تم اختراع تلك الضمائر!'
             answer:
                 - >
-                    Yes. Yes they are. And so is every single word in every language.
-                    Some words are just older than others.
+                    نعم. وكذلك كل كلمة في كل لغة.
+                    إن بعض الكلمات فقط أقدم من غيرها.
         how-to-know:
-            question: 'How do I know how to address someone?'
+            question: 'كيف اعرف كيفية مخاطبة شخص ما؟'
             answer:
                 - >
-                    You can just ask! Yes, it might be a bit awkward, but the more we do it, the less awkward it gets.
-                    If we can ask somebody their name, why not their pronouns?
+                    يمكنك فقط أن تسأل! نعم، قد يكون الأمر محرجًا بعض الشيء، ولكن كلما قمنا به أكثر، كلما أصبح الأمر أقل صعوبة.
+                    إذا استطعنا أن نسأل شخصًا ما عن اسمهم، فلماذا لا يمكننا بضمائرهم؟
                 - >
-                    (Just please don't phrase it as “are you a boy or a girl?”.
-                    This question implies that there's just two correct answers,
-                    and it suggests unhealthy curiosity about someone's genitals.
-                    Instead, you could just ask “what are your pronouns?” or “how should I refer to you?”)
+                    (فقط من فضلك لا تقولها على صورة "هل أنت فتى أم فتاة؟"
+                    يشير هذا السؤال إلى وجود إجابتين صحيحتين فقط،
+                    ويشير إلى فضول غير صحي حول الأعضاء التناسلية لشخص ما.
+                    بدلاً من ذلك، يمكنك فقط أن تسأل "ما هي ضمائرك؟" أو "كيف أشير إليك؟")
                 - >
-                    It's also important to normalise simply telling people your pronouns when you introduce yourself.
-                    “Hi, I'm Michæl, {/he=he/him}”. It's not hard – but for trans and nonbinary people it means so much!
-                    It's even easier done online: just put your pronouns (or a link to examples from our website) to your bio.
+                    من المهم أيضًا إخبار الأشخاص بضمائرك عندما تقدم نفسك.
+                    "مرحبًا، أنا خالد، {/he=هو/له}". هذا ليس بالأمر الصعب - ولكن بالنسبة للأشخاص المتحولين جنسيًا وغير الثنائيين ، فهذا يعني الكثير!
                 - >
-                    Remember also that many people might use a different name and a different set of pronouns depending on situation.
-                    They might not be out among friends or coworkers yet, but among friends be comfortable living their truth.
-                    Be mindful. You might for instance ask them “which pronouns should I use in front of your boss?”, etc.
+                    تذكر أيضًا أن العديد من الأشخاص قد يستخدمون اسمًا مختلفًا ومجموعة مختلفة من الضمائر حسب الموقف.
+                    قد لا يكونون في الخارج بين الأصدقاء أو زملاء العمل حتى الآن ، ولكن بين الأصدقاء يجب أن يعيشوا حقيقتهم.
+                    كن يقظًا. قد تسألهم على سبيل المثال "ما هي الضمائر التي يجب أن أستخدمها أمام رئيسك في العمل؟" ، إلخ.
                 - >
-                    Some people give multiple pronouns, eg. “{/he&she=he/she}” or “{/they&he=they/he}”.
-                    That means they like all of those forms. Usually, the first one is the preferred one.
+                    يعطي بعض الناس ضمائر متعددة ، على سبيل المثال. {/he&she=هو/هي} أو {/they&he=هم/هو}
+                    هذا يعني أنهم يحبون كل تلك الأشكال. كعادة، الأول هو المفضل.
         who-uses-it:
-            question: 'Does anyone even use that?'
+            question: 'هل يستخدم أحدٌ ذلك حتى؟'
             answer:
                 - >
-                    Yes! Millions of enbies all around the world.
-                    Every pronoun listed here has someone that actually uses it in everyday life.
+                    نعم! الملايين من الأشخاص في جميع أنحاء العالم.
+                    كل ضمير مدرج هنا لديه شخص يستخدمه بالفعل في الحياة اليومية.
         authority:
-            question: 'Are those nonbinary pronouns approved by some kind of authority?'
+            question: 'هل هذه الضمائر غير الثنائية موافق عليها من قبل نوع من السلطة؟'
             answer:
                 - >
-                    Language is not some kind of god-given, ancient magic set in stone.
-                    It's just a tool that we use to communicate.
-                    When we change as a society, and when the world around us changes,
-                    we adjust the language we use to be able to better describe it.
-                    We're its users, so <em>we're the authority</em> on how we want to use it.
+                    اللغة ليست نوعًا من السحر القديم الذي منحه الله في حجر.
+                    إنها مجرد أداة نستخدمها للتواصل.
+                    عندما نتغير كمجتمع وعندما يتغير العالم من حولنا،
+                    نقوم بتعديل اللغة التي نستخدمها لنكون قادرين على وصفها بشكل أفضل.
+                    نحن مستخدموها، لذا نحن المسؤولون في كيفية استخدامها.
                 - >
-                    Dictionaries take their time to start including those changes,
-                    which doesn't make the change illegitimate in any way.
-                    But eventually the new forms, if used often enough, get included in dictionaries.
-                    {https://www.merriam-webster.com/words-at-play/singular-nonbinary-they=Merriam Webster}, for example,
-                    accepts the use of {/they=singular “they”} as a nonbinary pronoun.
+                    تأخذ القواميس وقتها لبدء تضمين تلك التغييرات،
+                    وهذا لا يجعل التغيير غير مشروع بأي شكل من الأشكال.
+                    ولكن في نهاية المطاف، يتم تضمين الأشكال الجديدة في القواميس، إذا تم استخدامها كثيرًا بشكل كافٍ.
                 - >
-                    You can also read some {https://scholar.google.com/scholar?hl=en&q=neopronouns=academic papers}
-                    on neopronouns.
+                    يمكنك قراءة بعض {https://scholar.google.com/scholar؟hl=ar&q=neopronouns=الأوراق الأكاديمية}
+                    على الضمائر المعروفة بال "neopronouns"
         bio:
-            question: 'Why should I put my pronouns in bio on social media?'
+            question: 'لماذا يجب أن أضع الضمائر الخاصة بي في السيرة الذاتية على وسائل التواصل الاجتماعي؟'
             answer:
                 - >
-                    If you're cis (= not trans) and you use “{/he=he}” or “{/she=she}” matching your gender,
-                    you might think that your pronouns are <em>obvious</em>.
-                    And yeah, maybe that's true – as long as your name is mentioned in the profile (and is traditionally male of female)
-                    or if you have your picture as avatar.
-                    Many people don't – so it's hard to guess how they want to be called.
+                    اذا كنت cis (= اي غير متحول/ة) وكنت تستخدم "{he/=هو}" أو "{/she=هي}" لمطابقة جنسك،
+                    قد تعتقد أن ضمائرك واضحة.
+                    ونعم، قد يكون هذا صحيحًا - طالما أن اسمك مذكور في الملف الشخصي (وهو تقليديًا ذكري أو أنثى)
+                    أو إذا كانت لديك صورة حسابك هي أنت.
+                    كثير من الناس لا يفعلون ذلك - لذلك من الصعب تخمين كيف يريدون الاتصال بهم.
                 - >
-                    But it's mostly about something more than that: your pronouns might be “obvious”,
-                    but there are people whose pronouns are not.
-                    They want to be addressed correctly, whether or not they “pass” as their gender,
-                    whether or not they have transitioned (or if they want to transition at all).
-                    Nonbinary people usually “don't look nonbinary”, we don't owe anyone androgyny.
+                    لكن الأمر يتعلق في الغالب بشيء أكثر من ذلك: قد تكون ضمائرك "واضحة"،
+                    لكن هناك أشخاص الذين ضمائرهم ليست كذلك.
+                    يريدون أن يتم التعامل معهم بشكل صحيح ، سواء كانوا "يشبهون" بجنسهم أم لا،
+                    ما إذا كانوا قد انتقلوا أم لا (أو إذا كانوا يريدون الانتقال على الإطلاق).
+                    الأشخاص غير الثنائيين عادة "لا يبدون غير ثنائيين" ، نحن لا ندين لأي شخص العنصرية الجنسية.
                 - >
-                    Sharing our pronouns is very important for trans, nonbinary and gender nonconforming people.
-                    Alas, it also exposes and singles us out.
-                    But if cis people do the same, it means the world for us.
-                    It makes us feel more comfortable, safe and welcome
-                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio=(more reasons here).}
+                    تعد مشاركة الضمائر مهمة جدًا للأشخاص المتحولين وغير ثنائيي الجنس وغير المطابقين للجنس.
+                    للأسف، إنه يفضحنا ويفردنا.
+                    ولكن إذا فعل الناس موافقين الجنس الشيء نفسه، فهذا يعني العالم بالنسبة لنا.
+                    إنه يجعلنا نشعر بمزيد من الراحة والأمان والترحيب
+                    {https://avris.it/blog/why-everyone-should-have-pronouns-in-their-bio= (مزيد من الأسباب هنا).}
         change:
-            question: 'Can I change my pronouns?'
+            question: 'هل يمكنني تغيير الضمائر الخاصة بي؟'
             answer:
                 - >
-                    Of course! Nobody is surprised when someone changes their views, style, hobbies…
-                    So why would it be strange that they discovered a part of their identity,
-                    stopped liking their name, discovered a label that fits them well, etc.?
+                    بالطبع! لا أحد يتفاجأ عندما يغير شخص ما وجهات نظره وأسلوبه وهواياته ...
+                    فلماذا يكون من الغريب اكتشاف جزء من هويتهم،
+                    توقفت عن الإعجاب بأسمائهم، واكتشفت ملصق يناسبهم جيدًا، وما إلى ذلك؟
         get-used-to:
-            question: 'Is it strange that I can''t get used to <em>my own</em> new pronouns?'
+            question: 'هل من الغريب أنني لا أستطيع التعود على الضمائر الجديدة الخاصة بي؟'
             answer:
                 - >
-                    Not at all! After many years of using pronouns congruent with one's gender assigned at birth
-                    it's easy to forget oneself when switching to different ones.
+                    مُطْلَقاً! بعد سنوات عديدة من استخدام الضمائر المطابقة للجنس المحدد عند الولادة
+                    من السهل أن ينسى المرء نفسه عند التبديل إلى أشكال مختلفة.
                 - >
-                    Pronouns ≠ gender.
-                    Your gender won't drastically change just because you got confused once when someone called you “them”.
-                    Don't worry. Experiment. See what fits you best.
+                    الضمائر ≠ الجنس.
+                    لن يتغير جنسك بشكل جذري لمجرد أنك مرتبك مرة واحدة عندما اتصل بك أحدهم "هم".
+                    لا تقلق. قم بالتجربة. انظر إلى ما يناسبك أكثر.
         preferred-pronouns:
-            question: 'Why shouldn''t I say “preferred pronouns”?'
+            question: 'لماذا لا يجب أن أقول "الضمائر المفضلة"؟'
             answer:
                 - >
-                    Because this phrase suggests that someone's pronouns are just a whim.
-                    If someone just “prefers” to be called she, he won't _really_ feel bad, if I call him a “he”, right?
-                    They look like a guy, after all, so it's gonna be easier for me!
+                    لأن هذه العبارة تشير إلى أن ضمائر شخص ما هي مجرد لا شيء.
+                    إذا كان شخص ما "يفضل" فقط أن يتم مناداتها ، فلن يشعر _حقًا_ بالسوء ، إذا كنت أسميه "هو" ، أليس كذلك؟
+                    إنهم يبدون كرجل، بعد كل شيء، لذلك سيكون الأمر أسهل بالنسبة لي!
                 - >
-                    No! It's our pronouns. Not our “preferred pronouns”. It's our names, not our “preferred names”.
-                    If you care about your trans and nonbinary friends and loved ones, then call them the right way.
+                    لا! إنها ضمائرنا. ليس لدينا "الضمائر المفضلة".  كما هي إنها أسماؤنا، وليست "الأسماء المفضلة لدينا".
+                    إذا كنت تهتم بأصدقائك وأحبائك المتحولين جنسيًا وغير الثنائيين، فاستخدم الضمائر الصحيحة لهم.
         gender-pronouns:
-            question: 'Why shouldn''t I say “gender pronouns”?'
+            question: 'لماذا لا يجب أن أقول "ضمائر الجنس"؟'
             answer:
                 - >
-                    Because gender ≠ pronouns. Pronouns are just grammar.
-                    Nonbinary folks can use binary pronouns, some lesbians use {/he=he/him} for cultural reasons, etc.
+                    لأن الجنس ≠ الضمائر. الضمائر هي مجرد قواعد.
+                    يمكن للأشخاص غير الثنائيين استخدام الضمائر الثنائية، وبعض المثليات يستخدمون الضمير {/he=هو/له} لأسباب ثقافية، وما إلى ذلك.
                 - >
-                    Simply say “pronouns”.
+                    ببساطة قل "الضمائر".
         bigger-problems:
-            question: 'Aren''t there bigger problems to solve? Shouldn''t we focus on world hunger instead of some pronouns?'
+            question: 'أليست هناك مشاكل أكبر لحلها؟ ألا يجب أن نركز على الجوع في العالم بدلاً من بعض الضمائر؟'
             answer:
                 - >
-                    The same issue might seem trivial for some while being very important to others.
-                    Imagine that almost every sentence you hear about yourself is grammatically built on a lie about your very identity.
-                    That even simple conversations make you dysphoric, no matter what they're about…
+                    قد تبدو نفس المشكلة تافهة بالنسبة للبعض بينما تكون مهمة جدًا للآخرين.
+                    تخيل أن كل جملة تقريبًا تسمعها عن نفسك مبنية نحويًا على كذبة تتعلق بهويتك.
+                    حتى أن المحادثات البسيطة تجعلك تشعر بالضيق ، بغض النظر عن موضوعها...
                 - >
-                    There are different kinds of problems in this world,
-                    but we shouldn't be comparing them as an excuse to dismiss those that we <em>don't really want to</em> solve.
-                    There's eight billion people on this planet – we can manage to work on multiple issues at once!
-                    Every person has different needs and different resources available.
+                    هناك أنواع مختلفة من المشاكل في هذا العالم،
+                    لكن لا ينبغي مقارنتها كعذر لرفض تلك التي لا نريد حلها حقًا.
+                    هناك ثمانية مليارات شخص على هذا الكوكب - يمكننا العمل على قضايا متعددة في وقت واحد!
+                    كل شخص لديه احتياجات مختلفة وموارد مختلفة متاحة.
                 - >
-                    Our collective doesn't have the resources to feed the world, to stop wars or global warming.
-                    What we do have, though, are the skills and energy to shape and promote a more inclusive language –
-                    so that's what we're doing, instead of giving up and doing nothing.
+                    جماعتنا لا تملك الموارد لإطعام العالم ، لوقف الحروب أو الاحتباس الحراري.
+                    لكن ما لدينا هو المهارات والطاقة اللازمة لتشكيل وتعزيز لغة أكثر شمولاً -
+                    لذلك هذا ما نفعله، بدلاً من الاستسلام وعدم القيام بأي شيء.
                 - >
-                    Respecting other people's pronouns and identity doesn't require much effort.
-                    Even if you're a person that's solving the biggest challenges that humanity is facing,
-                    you can easily manage to not be transphobic in the process.
+                    لا يتطلب احترام ضمائر وهوية الآخرين الكثير من الجهد.
+                    حتى لو كنت شخصًا يحل أكبر التحديات التي تواجهها البشرية،
+                    يمكنك بسهولة إدارة ألا تكون عنصريًا تجاه المتحولين جنسياً في هذه العملية.
         flags:
-            question: 'Can you add this flag? Can you remove that flag?'
+            question: 'هل يمكنك إضافة هذا العلم؟ هل يمكنك إزالة هذا العلم؟'
             answer:
                 - >
-                    No.
+                    لا.
                 - >
-                    Maintaining the list of flags and labels is an increasingly time-consuming task for our team.
-                    It's also challenging in terms of filtering out trolls and vandals from valid, good-faith identities.
-                    We don't want to be identity police. And we don't want to spend all our time on managing flags either.
-                    It's a project about language and pronouns, after all, not about flags. They're just a bonus.
+                    يعد الاحتفاظ بقائمة الأعلام والتسميات مهمة تستغرق وقتًا طويلاً لفريقنا.
+                    كما أنه يمثل تحديًا من حيث التمييز  والتصفية بين المخربون و الصالحون ذوي النية الحسنة.
+                    لا نريد أن نكون شرطة هوية. ولا نريد قضاء كل وقتنا في إدارة الأعلام أيضًا.
+                    إنه مشروع حول اللغة والضمائر ، بعد كل شيء ، ليس عن الأعلام. إنها مجرد مكافأة.
                 - >
-                    We did our best to select a list of flags that are the most popular
-                    and, to our best knowledge, generally accepted.
-                    We are not planning to extend or shrink that list.
+                    لقد بذلنا جهدنا لتحديد قائمة الأعلام الأكثر شيوعًا
+                    وعلى حد علمنا ، مقبولة بشكل عام.
+                    نحن لا نخطط لتمديد أو تقليص تلك القائمة.
                 - >
-                    We are aware that a few flags might not be liked by some
-                    (eg. because of a history of TERFs trying to take over a term and make it transphobic,
-                    because of multiple confusing definitions,
-                    or even because of aspects of a life of a mythical character).
-                    We are queer and trans ourselves, we care about our trans siblings.
-                    Unfortunately, it's really hard to make such decisions
-                    when we get messages both from trans people asking to add a flag they honestly identify with,
-                    and also from other trans people asking to remove it because it somehow hurts trans people.
-                    It's not like history of every label is clear or like there's an authoritative source to look it up.
-                    And even if queerphobes try to make some terms hurtful,
-                    we believe in the community's power to reclaim hateful terms.
+                    نحن ندرك أن بعض الأعلام قد لا يحبها البعض
+                    (على سبيل المثال, الحالات  من النسويات الراديكاليات الإقصائيات للمتحولين جنسيًا الذين حاولوا الاستيلاء على مصطلح وجعله عنصري تجاه المتحولين جنسياً،
+                    بسبب التعاريف المتعددة الحيرة،
+                    أو حتى بسبب جوانب الحياة ذات الطابع الأسطوري).
+                    نحن شاذون ومتحولون جنسيًا لأنفسنا، نحن نهتم بإخوتنا المتحولين جنسيًا.
+                    لسوء الحظ، من الصعب حقًا اتخاذ مثل هذه القرارات
+                    عندما نتلقى رسائل من الأشخاص المتحولين جنسيًا يطلبون إضافة علامة يتعرفون عليها بصدق،
+                    وأيضًا من الأشخاص المتحولين الآخرين الذين يطلبون إزالته لأنه يؤذي بطريقة ما الأشخاص المتحولين جنسيًا.
+                    ليس الأمر كما لو كان تاريخ كل ملصق واضحًا أو كأن هناك مصدرًا موثوقًا للبحث عنه.
+                    وحتى لو حاول العنصريون أن يجعلوا بعض المصطلحات مؤذية،
+                    نحن نؤمن بقدرة المجتمع على استعادة العبارات البغيضة.
                 - >
-                    If you don't like a flag, just don't use it.
-                    If your flag is missing, just upload it
-                    (it will be marked as user-generated to mitigate vandalism).
+                    إذا كنت لا تحب العلم، فلا تستخدمه.
+                    إذا كان العلم الخاص بك مفقودًا، فما عليك سوى تحميله
+                    (سيتم تمييزه على أنه تم إنشاؤه بواسطة المستخدم للتخفيف من التخريب).
         custom-pronouns:
-            question: 'My pronouns aren''t listed'
+            question: 'الضمائر الخاصة بي ليست مدرجة'
             answer:
+
                 - >
-                    There's a generator on the homepage, you can use it to create a link to any pronoun set you like.
+                    يوجد مولّد على الصفحة الرئيسية، يمكنك استخدامه لإنشاء رابط لأي مجموعة ضمير تريدها.
                 - >
-                    You can also just list the five forms using slashes, eg. {/ze/zem/zir/zirs/zirself=ze/zem/zir/zirs/zirself}.
-                    Keep in mind that <strong>all five forms</strong> are required in that case, otherwise the app can only guess what exactly you mean.
+                    يمكنك أيضًا سرد النماذج الخمسة فقط باستخدام الشرطة المائلة، على سبيل المثال. {/ze/zem/zir/zirself=ze/zem/zir/zirs/zirself}.
+                    ضع في اعتبارك أن <strong> جميع الأشكال الخمسة </ strong> مطلوبة في هذه الحالة ، وإلا فلن يتمكن التطبيق إلا من تخمين ما تقصده بالضبط.
 
 links:
     header: 'الروابط'
     headerLong: 'الروابط الإضافية'
-    recommended: 'We recommend'
-    blog: 'Blog'
-    mediaShort: 'Media'
-    media: 'Pronouns.page in the media'
+    recommended: 'نحن ننصح'
+    blog: 'المدونة'
+    mediaShort: 'وسائل الإعلام'
+    media: 'موقعنا في وسائل الإعلام'
 
-    social: 'Social media'
+    social: 'مواقع التواصل الاجتماعي'
 
-    languageVersions: 'Other language versions'
+    languageVersions: 'إصدارات اللغات الأخرى'
 
 people: ~
 
-# this section is a short English-language explanation of how gendered and gender-neutral forms work in your language
-# see for example: https://zaimki.pl/english
-# it's optional, but would be nice to have
 english:
     header: 'English'
     headerLong: 'An overview in English'
@@ -429,411 +424,410 @@ english:
     description: 'If you don''t speak <language>, yet still are interested in how this language tries to cope with the omnipresent binaries, we''ve prepared a short overview of those ideas in English.'
     intro:
         - >
-            A summary in English…
+            Arabic is a language that semi-relies on gender.
+            As one can use the plural pronoun {هم/لهم} as a neutral pronoun (equivalent to {/they=they/them}),
+            Or the masculine pronoun {هو/له} which can also be used as a neutral pronoun (equivalent to {/he=he/him}).
+            However, Arabic does not cope well with neopronouns at all, which makes it hard for some people.
 
 contact:
-    header: 'Contact'
-    authors: 'Authors of the website'
+    header: 'التواصل'
+    authors: 'مؤلفو الموقع'
     groups:
         all: ''
-        calendar: 'Queer Calendar Bot'
+        calendar: 'روبوت اليومية المثلية'
     faq: >
-        Before you write, <strong>check out our </strong>{/faq=<strong>FAQ</strong>} – maybe the answer to your question is already there.
+        قبل أن تكتب، <strong>راجع</strong> {/faq=الأسئلة الشائعة} - فربما تكون الإجابة عن سؤالك موجودة بالفعل.
     technical: >
-        Do you see <strong>a bug</strong> or have a technical question?
-        Please include your username and <strong>as many details as possible</strong> in your message
-        (what does the error message say? are you on your phone or a desktop? which browser do you use?
-        what steps can we do to reproduce the issue? can you attach a screenshot or a screen recording? etc.)
-        Please also <strong>try disabling extensions</strong> that might be breaking the page
-        (eg. ad blockers mistakenly removing something that isn't an ad) and see if that helps.
+        هل ترى <strong>خطأً</strong> أو لديك سؤال تقني؟
+        الرجاء تضمين اسم المستخدم و <strong>أكبر قدر ممكن من التفاصيل</strong> في رسالتك
+        (ماذا تقول رسالة الخطأ؟ هل أنت على هاتفك أم سطح مكتب؟ ما هو المتصفح الذي تستخدمه؟
+        ما الخطوات التي يمكننا القيام بها لإعادة إظهار المشكلة؟ هل يمكنك إرفاق لقطة شاشة أو تسجيل شاشة؟ إلخ.)
+        يرجى أيضًا <strong>محاولة تعطيل الإضافات المعروفة بال(Browser Extensions)</strong> التي قد تؤدي إلى كسر الصفحة
+        (على سبيل المثال ، تقوم أدوات منع الإعلانات بإزالة شيء غير إعلاني عن طريق الخطأ)
     hate: >
-        Wanna send us queerphobic hate mail?
-        Just give it up, we're not discussing with trolls.
-        It takes us less time to mute you and put your message in the spam folder than it took you to write it.
+        هل تريد أن ترسل إلينا رسائل عنصرية؟
+        فقط استسلم، نحن لا نناقش مع المخربون.
+        يستغرق كتم صوتك ووضع رسالتك في مجلد الرسائل غير المرغوب فيها وقتًا أقل مما سوف يستغرقك الأمر في كتابة رسالتك.
     language: >
-        We're an international team – people who created a specific language version
-        might not be the same people who will read your message.
-        So, if possible, we'd appreciate, if you contacted us in <strong>English or Polish</strong>.
+        نحن فريق دولي - الأشخاص أنشأوا إصدارًا بلُغة معينة
+        قد لا يكونون نفس الأشخاص الذين سيقرؤون رسالتك.
+        لذلك، إذا كان ذلك ممكنًا، فنحن نُقدّر إذا تواصلت معنا باللغة <strong>الإنجليزية أو البولندية</ strong>.
     team:
-        name: 'The “Neutral Language Council” collective'
-        nameShort: 'Collective'
+        name: 'جماعية مجلس اللغة المحايد للجنس'
+        nameShort: 'الجماعية'
         description: >
-            We are a queer collective dedicated to assembling, researching, shaping and promoting
-            gender neutral and nonbinary language.
-            We also support actions towards equality and social justice.
+            نحن مجموعة من مثلي الجنس مخلصين للتجميع والبحث والتشكيل والترويج
+            للغة المحايدة للجنس والغير ثنائية.
+            نحن ندعم أيضًا الإجراءات نحو المساواة والعدالة الاجتماعية.
         extra: []
-        logo: 'Logo of the collective is a combination of the transgender symbol and a speech bubble that symbolises language.'
-        members: 'Current members'
-        member: 'Member of the collective'
-        upcoming: 'Upcoming language versions'
+        logo: 'شعار المجموعة هو مزيج من رمز المتحولين جنسياً و فقاعة كلام ترمز إلى اللغة.'
+        members: 'الأعضاء الحاليين'
+        member: 'عضو الجماعية'
+        upcoming: 'إصدارات اللغات القادمة'
         join:
-            header: 'Join us!'
+            header: 'انضم إلينا!'
             encouragement: >
-                Do you care about non-binary and gender-neutral language?
-                Do you want to help our collective in promoting it? Cool!
-                Extra help is very welcome!
-            areasIntro: 'Areas in which you might be able to help are for example:'
+                هل تهتم باللغة غير الثنائية والحيادية بين الجنسين؟
+                هل تريد مساعدة جماعتنا في الترويج لها؟ رائع!
+                المساعدة الإضافية مرحب بها للغاية!
+            areasIntro: 'المجالات التي قد تكون قادرًا على المساعدة فيها هي على سبيل المثال:'
             areas:
-                - 'expanding and moderating dictionaries and glossaries,'
-                - 'expanding and moderating the list of sources,'
-                - 'creating graphics and social media posts,'
-                - 'replying to direct messages,'
-                - 'moderating profiles,'
-                - 'creating a new language version,'
-                - 'translating,'
-                - 'coordinating the process of adding language versions,'
-                - 'writing blog posts,'
-                - 'programming,'
-                - '…'
+                - 'توسيع وتعديل القواميس والمسارد،'
+                - 'توسيع وتعديل قائمة المصادر،'
+                - 'إنشاء رسومات ومنشورات على وسائل التواصل الاجتماعي،'
+                - 'الرد على الرسائل المباشرة،'
+                - 'الإشراف على الحسابات والبطاقات،'
+                - 'إنشاء نسخة لغة جديدة،'
+                - 'الترجمة،'
+                - 'تنسيق عملية إضافة إصدارات اللغات،'
+                - 'كتابة مشاركات المدونة،'
+                - 'البرمجة،'
+                - '...'
             allies: >
-                Some of those things require a perspective of a nonbinary person, others not necessarily.
-                That's why we also invite binary allies.
-            how: 'How to join? Send us an email to {mailto:contact@pronouns.page=contact@pronouns.page}, in which you:'
+                تتطلب بعض هذه الأشياء منظورًا لشخص غير ثنائي، والبعض الآخر ليس بالضرورة.
+                لهذا السبب ندعو أيضًا الحلفاء الثنائيين.
+            how: 'كيف تنضم؟ أرسل إلينا بريدًا إلكترونيًا إلى {mailto: contact @ pronouns.page = contact @ pronouns.page} ، حيث يمكنك:'
             application:
-                - 'introduce yourself,'
-                - 'link to your pronouns.page profile,'
-                - 'link to your social media,'
-                - 'say if you have some experience in activist work,'
-                - 'say what you would like to help with.'
+                - 'التعريف بنفسك،'
+                - ' إرسال رابط إلى حسابك في موقعنا،'
+                - 'إرسال وسائل التواصل الإجتماعي الخاص بك،'
+                - 'قل إذا كان لديك بعض الخبرة في العمل النشط،'
+                - 'قل ما تريد المساعدة به.'
     contribute:
-        header: 'Contribute'
+        header: 'المساهمة'
         intro: >
-            Pronouns.page is a collaborative, public-source project created by volunteers.
-            You can add your contribution too! Here's some areas where we'd appreciate your help.
-            Active contributors will be invited to join our team.
+            موقعنا الإلكتروني هو مشروع تعاوني ذي مصدر عام أنشأه متطوعون.
+            يمكنك إضافة مساهمتك أيضا! إليك بعض المجالات التي نقدر مساعدتك فيها.
+            سيتم دعوة المساهمين النشطين للانضمام إلى فريقنا.
         entries:
-            header: 'Add entries'
+            header: 'الإدخالات'
             description: >
-                Many sections of the website (nouns, queer terminology, inclusive dictionary…) have an option to add and edit entries.
-                If you think something's missing or incorrect, don't hesitate to submit your entry.
+                العديد من أقسام الموقع (الأسماء، المصطلحات الغريبة، القاموس الشامل،وغيرها...) لديها خيار لإضافة وتعديل الإدخالات.
+                إذا كنت تعتقد أن شيئًا ما مفقود أو غير صحيح، فلا تتردد في إرسال مشاركتك.
         translations:
-            header: 'Add or correct translations'
+            header: 'أضف أو صحح الترجمات'
             description: >
-                A translation string is missing or incorrect?
-                Click on “Propose translations” in the footer and follow instructions.
+                سلسلة الترجمة مفقودة أو غير صحيحة؟
+                انقر على "اقتراح ترجمات" في الهامش السفلي واتبع التعليمات.
         version:
-            header: 'Create a new language version'
+            header: 'قم بإنشاء نسخة للغة جديدة'
             description: >
-                Instructions for creating a new language version are available {https://en.pronouns.page/new-version=here}.
-                Before starting, please {/contact=contact us} to coordinate with others that might be working on it too.
+                تتوفر إرشادات حول إنشاء إصدار لغة جديد {https://en.pronouns.page/new-version=هنا}.
+                قبل البدء ، يرجى {/contact=التواصل معنا} للتنسيق مع الآخرين الذين قد يعملون على ذلك أيضًا
         technical:
-            header: 'Submit a pull request'
+            header: 'قم بتقديم طلب سحب'
             description: >
-                Technical tasks are managed on {https://gitlab.com/PronounsPage/PronounsPage/-/boards=this kanban board}.
-                Just pick an unassigned task from the “To Do” column, assign it to yourself and start working on it.
-                Don't hesitate to ask questions.
-            footer: 'Technical tasks'
+                تتم إدارة المهام الفنية والتقنية على {https://gitlab.com/PronounsPage/PronounsPage/-/boards=هذا اللوح}.
+                ما عليك سوى اختيار مهمة غير معينة من عمود "المهام الواجبة" ، وتعيينها لنفسك والبدء في العمل عليها.
+                لا تتردد في طرح الأسئلة.
+            footer: 'المهام الفنية والتقنية'
 
 support:
-    header: 'Support'
+    header: 'المساعدة'
     description: >
-        If you want to chip in for the server, domains, stickers etc., or simply buy the authors a beer,
-        you can use the links below:
+        إذا كنت تريد الاشتراك في الخادم أو المجالات أو الملصقات وما إلى ذلك، أو ببساطة شراء بيرة للمؤلفين،
+        يمكنك استخدام الروابط أدناه:
 
 user:
-    header: 'Account'
-    headerLong: 'Your account'
-    tokenExpired: 'Token has expired. Please refresh the website and try again.'
-    tooManyAttempts: 'Too many attempts. Access to your account has been temporarily locked. Please try again later.'
+    header: 'الحساب'
+    headerLong: 'الحساب الخاص بك'
+    tokenExpired: 'انتهت صلاحية الرمز. يرجى تحديث الموقع وحاول مرة أخرى.'
+    tooManyAttempts: 'محاولات كثيرة. تم قفل الوصول إلى حسابك مؤقتًا. الرجاء معاودة المحاولة في وقت لاحق.'
     login:
-        help: 'To log in or create an account you can either use the social media buttons or enter your email in the field below and then confirm the code you will have received in your mailbox.'
-        placeholder: 'Email (or username, if you''re already registered)'
-        action: 'Log in / register'
-        emailSent: 'We''ve sent you an email with a 6-digit code. Enter it here. The code is single-use and stays valid for 15 minutes.'
-        userNotFound: 'User not found.'
+        help: 'لتسجيل الدخول أو إنشاء حساب ، يمكنك إما استخدام أزرار وسائل التواصل الاجتماعي أو إدخال بريدك الإلكتروني في الحقل أدناه ثم تأكيد الرمز الذي ستتلقاه في صندوق البريد الخاص بك.'
+        placeholder: 'البريد الإلكتروني (أو اسم المستخدم ، إذا كنت مسجلاً بالفعل)'
+        action: 'تسجيل حساب جديد / تسجيل الدخول'
+        emailSent: 'لقد أرسلنا إليك بريدًا إلكترونيًا يحتوي على رمز مكون من 6 أرقام. ادخله هنا. الرمز يستخدم مرة واحدة ويبقى صالحًا لمدة 15 دقيقة.'
+        userNotFound: 'لم يتم العثور على المستخدم.'
         email:
-            subject: 'Your login code is {{code}}'
-            instruction: 'To confirm your email address, enter the following single-use code on the website:'
-            extra: 'If you didn''t order this code, simply ignore this message.'
+            subject: 'رمز تسجيل الدخول الخاص بك هو {{code}}'
+            instruction: 'لتأكيد عنوان بريدك الإلكتروني، أدخل الرمز التالي (المُستخدم مرة واحدة) على الموقع:'
+            extra: 'إذا لم تطلب هذا الرمز، فتجاهل هذه الرسالة ببساطة.'
         why: >
-            Registering lets you manage your cards ({/@example=like this one}).
-        passwordless: 'The website doesn''t store any passwords. {https://avris.it/blog/passwords-are-passé=More info.}'
-        instancePlaceholder: 'Instance'
-        domainPlaceholder: 'Domain'
-        deprecated: 'Deprecated'
+            يتيح لك التسجيل إدارة بطاقاتك ({/@example= مثل هذه}).
+        passwordless: 'لا يخزن موقع الويب أي كلمات مرور. {https://avris.it/blog/passwords-are-passé= مزيد من المعلومات.}'
+        instancePlaceholder: 'مثيلات'
+        domainPlaceholder: 'النطاق'
+        deprecated: 'إهمال'
         depreciationNotice: >
-            This is not a reliable authentication provider.
-            <a href="%link%" target="_blank" rel="noopener">Check out this link for more details</a>.
-            We highly recommend making sure that you have a different login method available.
+            هذا ليس موفر توثيق موثوق به.
+            <a href="٪link٪" target="_blank" rel="noopener">تحقق من هذا الرابط لمزيد من التفاصيل</a>.
+            ننصح بشدة بالتأكد من توفر طريقة تسجيل دخول مختلفة.
     code:
-        action: 'Validate'
-        invalid: 'Invalid code.'
+        action: 'تحقق'
+        invalid: 'رمز غير صالح، يرجى المحاولة مرة أخرى.'
     account:
         changeUsername:
-            header: 'Username'
-            action: 'Change username'
-            invalid: 'Username must be between 4 and 16 characters long and can only contain numbers, letters, dots, hyphens and underscores.'
-            taken: 'This username is taken.'
+            header: 'اسم المستخدم'
+            action: 'تغيير اسم المستخدم'
+            invalid: 'يجب أن يتراوح طول اسم المستخدم بين 4 و 16 حرفًا ولا يمكن أن يحتوي إلا على أرقام وأحرف ونقاط وواصلات وشرطات سفلية.'
+            taken: 'اسم المستخدم هذا مأخوذ.'
             nonascii: >
-                Warning: if you decide for a username that contains non-ASCII characters,
-                keep in mind that in some contexts the link to your profile will be encoded as a less friendly string: “@%encoded%”.
+                Warning: إذا قررت اختيار اسم مستخدم يحتوي على أحرف ليست من الشفرة القياسية الأمريكية لتبادل المعلومات،
+                ضع في اعتبارك أنه في بعض الحالات سيتم ترميز الرابط إلى حسابك كسلسلة أقل ملاءمة: "@%encoded%"
         changeEmail:
-            header: 'Email address'
-            action: 'Change email'
-            invalid: 'Invalid email address.'
-            taken: 'This address is taken.'
-        admin: 'Admin'
-    logout: 'Log out'
+            header: 'البريد الإلكتروني'
+            action: 'تغيير البريد الإلكتروني'
+            invalid: 'هذا البريد الإلكتروني غير متاح.'
+            taken: 'هذا البريد الإلكتروني مأخوذ.'
+        admin: 'مسؤول'
+    logout: 'تسجيل الخروج'
     avatar:
-        header: 'Avatar'
-        change: 'Change'
-        failed: 'Please reconnect your social media to fix the missing avatar.'
-    deleteAccount: 'Delete account'
-    deleteAccountConfirm: 'Are you sure you want to remove your account? This will be irreversible!'
+        header: 'صورة حساب المستخدم'
+        change: 'تغيير'
+        failed: 'يرجى إعادة توصيل الوسائط الاجتماعية الخاصة بك لإصلاح صورة الحساب المفقودة.'
+    deleteAccount: 'حذف الحساب'
+    deleteAccountConfirm: 'هل أنت متأكد أنك تريد حذف حسابك؟ هذه العملية لا رجوع فيها!'
     socialConnection:
-        list: 'Social media connections'
-        connect: 'Connect'
-        refresh: 'Refresh'
-        disconnect: 'Disconnect'
-        disconnectConfirm: 'Are you sure you want to remove this connection? (You can always log in using email %email%)'
+        list: 'اتصالات وسائل التواصل الاجتماعي'
+        connect: 'اربط'
+        refresh: 'تحديث'
+        disconnect: 'قطع الاتصال'
+        disconnectConfirm: 'هل أنت متأكد أنك تريد إزالة هذا الاتصال؟ (يمكنك دائمًا تسجيل الدخول باستخدام البريد الإلكتروني %email%)'
     mfa:
-        header: 'Multi-factor authentication'
+        header: 'التوثيق المتعدد للعوامل (2FA)'
         init: >
-            Scan this QR code (or enter the text code below) in your TOTP authenticator app (eg. {https://authy.com/=Authy})
-            and then enter the initial token that gets generated.
+            امسح رمز الاستجابة السريعة هذا ضوئيًا (أو أدخل الرمز النصي أدناه) في تطبيق TOTP المصدق (مثلًا، {https://authy.com/=Authy})
+            ثم أدخل الرمز المميز الذي يتم إنشاؤه.
         recovery:
-            header: 'Recovery code'
+            header: 'الرموز المميز'
             save: >
-                Save the following recovery codes in a safe place.
-                You'll be able to use them to bypass MFA in case you ever lose your authentication device.
-            saved: 'OK, I''ve saved them!'
-            enter: 'Enter recovery code'
-        cancel: 'Cancel login'
-        enabled: 'Enabled'
-        enable: 'Enable MFA'
-        disable: 'Disable MFA'
-        disableConfirm: 'Are you sure you want to disable MFA?'
+                احفظ الرموز المميزة التالية في مكانٍ آمن.
+                ستتمكن من استخدامها لتجاوز التوثيق المتعدد للعوامل (2FA) في حالة فقدان جهاز التوثيق الخاص بك.
+            saved: 'حسنًا ، لقد حفظتهم!'
+            enter: 'قم بإدخال الرمز المميز'
+        cancel: 'إلغاء تسجيل الدخول'
+        enabled: 'تم التشغيل'
+        enable: 'تشغيل التوثيق المتعدد للعوامل (2FA)'
+        disable: 'توقيف التوثيق المتعدد للعوامل (2FA)'
+        disableConfirm: 'هل أنت متأكد أنك تريد توقيف التوثيق المتعدد للعوامل (2FA)؟'
     qr:
-        header: 'QR code'
-        download: 'Download QR code'
+        header: 'رمز الاستجابة السريعة'
+        download: 'تحميل رمز الاستجابة السريعة'
     modMessage:
-        subject: 'A message from a moderator'
-        intro: 'Hi! One of our moderators has sent you the following message:'
-        respond: 'If you want to respond, you can simply reply to this email.'
+        subject: 'رسالة من إحدى المشرفين'
+        intro: 'أهلاً! أرسل لك أحد المشرفين لدينا الرسالة التالية:'
+        respond: 'إذا كنت تريد الرد ، يمكنك ببساطة الرد على هذا البريد الإلكتروني.'
 
 profile:
-    description: 'Description'
-    names: 'Names'
-    pronouns: 'Pronouns'
+    description: 'الوصف'
+    names: 'الأسماء'
+    pronouns: 'الضمائر'
     pronounsInfo: >
-        You can enter a <strong>pronoun</strong> (eg. “they” or “she/her”)
-        or a <strong>link</strong> (eg. “https://en.pronouns.page/e”)
-        or the custom five forms (eg. “ze/zem/zir/zirs/zirself”).
-        Keep in mind that <strong>all five forms</strong> are required in that case,
-        otherwise the app can only guess what exactly do you mean.
-        You can also use {/pronouns#generator=<strong>the generator</strong>} to fill out sentences with custom forms.
-        If your pronouns follow the {/pronouns#nameself=<strong>nameself pattern</strong>},
-        you can also use a colon shorthand (eg. “:star”).
-    pronounsNotFound: 'Unrecognised format. Please check out the instruction above.'
-    words: 'Words'
-    wordsColumnHeader: 'Column header'
-    birthday: 'Age'
-    birthdayInfo: 'We do not publish your birthday, just the calculated age.'
+        يمكنك إدخال <strong>ضمير</strong> (على سبيل المثال، "هم" أو "هي/لها")
+        أو <strong>رابط</strong> (مثل "https://en.pronouns.page/e")
+        أو النماذج الخمسة المخصصة (مثل "ze / zem / zir / zirs / zirself").
+        ضع في اعتبارك أن <strong>جميع الأشكال الخمسة</strong> مطلوبة في هذه الحالة،
+        وإلا فإن التطبيق يمكنه فقط تخمين ما تقصده بالضبط.
+        يمكنك أيضًا استخدام {/pronouns#generator=المولّد} لملء الجمل بنماذج مخصصة.
+    pronounsNotFound: 'تنسيق غير معروف. يرجى التحقق من التعليمات أعلاه.'
+    words: 'الكلمات'
+    wordsColumnHeader: 'رأسية عمودية'
+    birthday: 'العمر'
+    birthdayInfo: 'نحن لا ننشر تاريخ ميلادك، فقط العمر المحسوب.'
     timezone:
-        header: 'Timezone'
-        placeholder: 'Select your timezone'
+        header: 'المنطقة الزمنية'
+        placeholder: 'قم باختيار منطقتك الزمنية'
         info: >
-            If you fill out this field, your card will tell people <strong>what time it is where you live</strong>.
-            Optionally, you can also chose to publish your approximate location.
-        detect: 'Detect'
-        publishArea: 'Publish the continent in your card'
-        publishLocation: 'Publish the area in your card'
-        time: 'It''s %time% on a %weekday% in my timezone'
-        approximate: 'It''s just an approximate location'
+            إذا قمت بملء هذا الحقل، فستخبر بطاقتك الأشخاص <strong>بتوقيت المكان الذي تعيش فيه</strong>.
+            اختياريًا، يمكنك أيضًا اختيار نشر موقعك التقريبي.
+        detect: 'اكتشف'
+        publishArea: 'انشر القارة في بطاقتك'
+        publishLocation: 'انشر المنطقة في بطاقتك'
+        time: ' إنها%time% في %weekday% في المنطقة الزمنية الخاصة بي'
+        approximate: 'إنه مجرد موقع تقريبي'
         areas:
-            Africa: 'Africa'
-            America: 'America'
-            Antarctica: 'Antarctica'
-            Arctic: 'Arctic'
-            Asia: 'Asia'
-            Atlantic: 'Atlantic'
-            Australia: 'Australia'
-            Europe: 'Europe'
-            Indian: 'Indian'
-            Pacific: 'Pacific'
-    flags: 'Flags'
-    flagsInfo: 'Drag & drop your pride flags into this frame.'
-    flagsCustom: 'Upload custom flags'
-    flagsCustomWarning: 'This flag has been uploaded by a user. The team of pronouns.page is not responsible for it.'
-    flagsAsterisk: 'This is not a queer identity, but we include it for people who are queer in other ways (eg. straight trans people).'
+            Africa: 'أفريقيا'
+            America: 'أمريكا'
+            Antarctica: 'القطب الجنوبي'
+            Arctic: 'القطب الشمالي'
+            Asia: 'آسيا'
+            Atlantic: 'الأطلنطي/الأطلسي'
+            Australia: 'أستراليا'
+            Europe: 'أوروبا'
+            Indian: 'الهندية'
+            Pacific: 'الهادي'
+    flags: 'الأعلام'
+    flagsInfo: 'اسحب وأفلت الأعلام في هذا الإطار.'
+    flagsCustom: 'تحميل الأعلام'
+    flagsCustomWarning: 'تم تحميل هذا العلم من قبل مستخدم ما. فريق العمل ليس مسؤولاً عن ذلك.'
+    flagsAsterisk: 'هذه ليست هوية مثلية، لكننا نقوم بتضمينها للأشخاص الذين يتسمون بالمثلية بطرق أخرى (على سبيل المثال، الأشخاص المتحولين جنسيًا الذين يحبون الجنس الآخر فقط).'
     flagsCustomForm:
-        label: 'Label name'
-        description: '(optional) A short description of the label'
-        link: '(optional) Link to more info'
-        alt: '(optional) Alternative text describing the appearance of the flag (see below)'
-        altExample: 'An example of how the alternative text might be phrased'
-    links: 'Links'
-    linksRecommended: 'We recommend linking to'
+        label: 'اسم اللاصق'
+        description: '(اختياري) وصف قصير لللاصق'
+        link: '(اختياري) رابط لمزيد من المعلومات'
+        alt: '(اختياري) نص بديل يصف مظهر العلم (انظر أدناه)'
+        altExample: 'مثال على كيفية صياغة النص البديل'
+    links: 'الروابط'
+    linksRecommended: 'ننصح بالربط بـ'
     verifiedLinks:
-        header: 'Verified links'
+        header: 'الروابط الموثوقة'
         info: >
-            The links that one puts publicly in one's profile will be marked with the shield icon,
-            if they are verified by logging in using the given authentication provider,
-            or by a <code>rel="me"</code> tag pointing back to the card.
-            Our links also include a <code>rel="me"</code> tag, so that external websites can verify your card the other way round too.
-    column: 'Column'
+            سيتم تمييز الروابط التي يضعها المرء بشكل عام في حسابه الخاص به بأيقونة الدرع،
+            إذا تم التحقق منها عن طريق تسجيل الدخول باستخدام مزود التوثيق المحدد،
+            أو بواسطة علامة <code> rel="أنا"</code> تشير مرة أخرى إلى البطاقة.
+            تتضمن روابطنا أيضًا علامة <code>rel="أنا"</code>، بحيث يمكن لمواقع الويب الخارجية التحقق من بطاقتك بطريقة أخرى أيضًا.
+    column: 'عمود'
     opinions:
-        header: 'Legend/opinions'
-        description: 'Description…'
+        header: 'الآراء'
+        description: 'الوصف...'
         colours:
-            _: '(Font colour…)'
-            pink: 'Pink'
-            red: 'Red'
-            orange: 'Orange'
-            green: 'Green'
-            blue: 'Blue'
-            grey: 'Grey'
+            _: '(لون الكتابة...)'
+            pink: 'وردي/زهري'
+            red: 'أحمر'
+            orange: 'برتقالي'
+            green: 'أخضر'
+            blue: 'أزرق'
+            grey: 'رمادي'
         styles:
-            _: '(Style…)'
-            bold-italics: 'Bold & italics'
-            bold: 'Bold'
-            italics: 'Italics'
-            small: 'Small'
+            _: '(طريقة الكتابة...)'
+            bold-italics: 'الكتابة العريضة والمائلة'
+            bold: 'الكتابة العريضة'
+            italics: 'الكتابة المائلة'
+            small: 'الكتابة الصغيرة'
         validation:
-            missingIcon: 'Icon is required'
-            missingDescription: 'Description is required'
-            duplicateIcon: 'Icon must be unique'
-            duplicateDescription: 'Description must be unique'
-            invalidOpinion: 'Selected icon was not found in the legend above'
-        custom: 'custom, added by the user:'
+            missingIcon: 'الرمز ضروري'
+            missingDescription: 'الوصف ضروري'
+            duplicateIcon: 'يجب على الرمز أن يكون فريدًا من نوعه'
+            duplicateDescription: 'يجب على الوصف أن يكون فريدًا من نوعه'
+            invalidOpinion: 'لم يتم العثور على الرمز المحدد في الوسيلة أعلاه'
+        custom: 'مخصص، تمت الإضافة من قبل المستخدم:'
     expendableList:
-        more: '… and %count% more items'
-        show: '(click to show)'
-    header: 'Cards'
-    list: 'Your cards'
-    init: 'Create a card'
-    show: 'Show'
-    edit: 'Edit'
-    delete: 'Delete'
-    deleteConfirm: 'Are you sure you want to delete this card?'
+        more: '… و  %count%  من العناصر أخرى'
+        show: '(اضغط لرؤيته)'
+    header: 'البطاقات'
+    list: 'البطاقات الخاصة بك'
+    init: 'عمل بطاقة'
+    show: 'عرض البطاقة'
+    edit: 'تحرير البطاقة'
+    delete: 'حذف البطاقة'
+    deleteConfirm: 'هل أنت متأكد أنك تريد حذف هذه البطاقة؟'
     editor:
-        header: 'Card editor'
-        save: 'Save your card'
-        defaults: 'Restore defaults'
-        propagate: 'Propagate this change to your cards in all languages'
+        header: 'محرر البطاقة'
+        save: 'حفظ التغيرات'
+        defaults: 'الرجوع إلى الأصل'
+        propagate: 'انشر هذا التغيير على البطاقات الخاصة بك بجميع اللغات'
     opinion:
-        yes: 'Yes'
-        jokingly: 'Jokingly'
-        close: 'Only if we''re close'
-        meh: 'Okay'
-        no: 'Nope'
-    bannerButton: 'Create a card'
+        yes: 'المفضل'
+        jokingly: 'بطريقة مزاحية'
+        close: 'فقط إن كنا قريبين'
+        meh: 'حسنًا'
+        no: 'لا'
+    bannerButton: 'إنشاء بطاقة'
     card:
-        link: 'Card picture'
-        generate: 'Generate'
-        generating: 'Generation in progress… It could take a few minutes.'
-    empty: 'This person hasn''t created any cards yet.'
+        link: 'صورة البطاقة'
+        generate: 'إنشاء'
+        generating: 'جارٍ الإنشاء... قد يستغرق الأمر بضع دقائق.'
+    empty: 'لم ينشئ هذا الشخص أية بطاقات حتى الآن.'
     personal:
-        header: 'Personal'
-        description: 'Only you can see this section'
+        header: 'الخاص'
+        description: 'فقط أنت يمكنك رؤية هذا القسم'
     language:
-        header: 'Language'
-        description: '@%username%''s card is also available in the following languages'
-        # if your language has declension and it's hard to fit the username in that sentence,
-        # just make is 'This card is…'
+        header: 'اللغة'
+        description: 'هذه البطاقة متاحة أيضًا باللغات التالية:'
     circles:
-        header: 'My circle'
+        header: 'دائرة المعارف'
         info: >
-            In this field you can tag the <strong>people closest to you</strong>, along with information
-            which (non-)gendered words you refer to them with (eg. “spouse” vs. “wife” vs. “husband”).
-            We're not a social medium, this is <strong>not a friends/followers list</strong>,
-            that's why the length of this field is pretty limited.
-            Keep in mind that people that you tag here <strong>will be able to see that</strong>
-            – and might report you for harassment, if you decide to put in negative things about them.
-            If a connection in your circle is mutual, it will be marked with [s:shield-check].
-        relationship: 'Relationship (eg. “partner”, “best friend”)'
-        mutual: 'This connection goes both ways'
+            في هذا الحقل، يمكنك وضع علامة على <strong>الأشخاص الأقرب إليك</strong> ، بالإضافة إلى المعلومات
+            التي تحوي الكلمات غير المصنفة جنسيًا التي تشير إليهم بها (على سبيل المثال، "زوج" مقابل "الزوجة" مقابل "شريك").
+            لسنا وسيطًا اجتماعيًا، فهذه <strong>ليست قائمة أصدقاء/متابعين</strong>،
+            هذا هو السبب في أن طول هذا المجال محدود جدًا.
+            ضع في اعتبارك أن الأشخاص الذين تضع علامة باسمهم هنا <strong>سيكونون قادرين على رؤية ذلك</strong>
+            - وقد يبلغون عن مضايقتك ، إذا قررت وضع أشياء سلبية عنهم.
+            إذا كان الاتصال في دائرتك متبادلاً ، فسيتم تمييزه بـ [s: shield-check].
+        relationship: 'العلاقة (مثل "الشريك"، "الصديق المفضل")'
+        mutual: 'هذا الاتصال يسير في كلا الاتجاهين'
         yourMentions:
-            header: 'Your circles mentions'
+            header: 'دائرة المعارف الخاصة بك تذكر'
             description: >
-                Here's the list of people who added you to their circles.
-                If you add them back, a checkmark [s:shield-check] will appear in both your cards.
+                هذه قائمة بالأشخاص الذين أضافوك إلى دوائرهم.
+                إذا قمت بإضافتها مرة أخرى ، فستظهر علامة [s:shield-check] في كلتا البطاقتين.
         validation:
-            userNotFound: 'Such user doesn''t exist'
-            required: 'Relationship is a required field'
+            userNotFound: 'هذا المستخدم غير موجود'
+            required: 'العلاقة هي حقل ضروري'
         removeSelf:
-            action: 'Remove yourself'
-            confirm: 'Are you sure you want to remove your profile from @%username%''s circle?'
+            action: 'قم بإزالة نفسك'
+            confirm: 'هل أنت متأكد من أنك تريد إزالة نفسك من دائرة %@username%؟'
     sensitive:
-        header: 'Content warning'
+        header: 'التحذير من المحتوى'
         info: >
-            Some content might be allowed by our {/terms=Terms of Service},
-            but still not be appropriate for minors, be potentially triggering for people with traumas, etc.
-            Please be respectful to people visiting your card and warn them in advance.
-            Examples of CW could be “mention of alcohol”, “sexual innuendos”, “mention of a queerphobic situation”…
-        display: 'Continue to the card'
-        hide: 'Blur out the card'
+            قد تسمح {/Terms=شروط الخدمة} ببعض المحتويات،
+            ولكن لا يزال غير مناسب للأشخاص تحت السن القانوني، يحتمل أن يكون مثيرًا للأشخاص الذين يعانون من الصدمات، وما إلى ذلك.
+            يرجى احترام الأشخاص الذين يزورون بطاقتك وتحذيرهم مسبقًا.
+            يمكن أن تكون الأمثلة "ذِكْر الكحول"، "التلميحات الجنسية"، "ذِكْر الحوادث الصادمة"، وما إلى ذلك...
+        display: 'تابع إلى البطاقة'
+        hide: 'طمس البطاقة'
         email:
-            subject: 'Content warning applied on your profile'
-            content: 'A moderator has applied the following content warnings to your card:'
+            subject: 'تم تطبيق  عملية التحذير  من محتوى على الحساب الخاص بك'
+            content: 'قام أحد المشرفيين بتطبيق تحذيرات المحتوى التالية على بطاقتك:'
 
-share: 'Share'
+share: 'شارك'
 
 crud:
-    approve: 'Approve'
-    hide: 'Hide'
-    remove: 'Remove'
-    removeConfirm: 'Are you sure you want to remove this item?'
-    edit: 'Edit'
-    add: 'Add'
-    filter: 'Search…'
-    filterLong: 'Search…'
-    search: 'Search…'
-    author: 'Added by'
-    saved: 'Changes saved successfully!'
-    loginRequired: '{/account=Log in} to submit an entry'
-    copy: 'Copy link'
-    download: 'Download'
-    loadAll: 'Load all…'
+    approve: 'وافق'
+    hide: 'اخفي'
+    remove: 'أزِل'
+    removeConfirm: 'هل أنت متأكد أنك تريد إزالة هذا العنصر؟'
+    edit: 'حرر'
+    add: 'ضف'
+    filter: 'ابحث...'
+    filterLong: 'ابحث...'
+    search: 'ابحث...'
+    author: 'أضيفت من قبل:'
+    saved: 'التغييرات تم حفظها بنجاح!'
+    loginRequired: 'يجب عليك {/account=تسجيل الدخول} لإرسال إدخال'
+    copy: 'نسخ الرابط'
+    download: 'تحميل'
+    loadAll: 'تحميل الكل...'
     validation:
-        genericForm: 'The submitted form is invalid. Correct the issues and send it again.'
-        listMaxLength: 'The maximum number of elements in this list is %maxlength%.'
-        invalidLink: 'Invalid URL format'
-    alt: 'Alt text'
+        genericForm: 'النموذج المقدم غير صالح. قم بتصحيح المشكلات وإرسالها مرة أخرى.'
+        listMaxLength: 'الحد الأقصى لعدد العناصر في هذه القائمة هو %maxlength%.'
+        invalidLink: 'تنسيق عنوان الرابط غير صالح'
+    alt: 'نص بديل'
 
 footer:
     license: >
-        {https://gitlab.com/PronounsPage/PronounsPage=Source code} and content are licensed under {/license=OQL}.
-    links: 'Contact, social media'
-    legal: 'Legal'
-    financial: 'Financial transparency'
-    technical: 'Technical'
-    sibling: 'Sibling projects'
+        تم ترخيص {https://gitlab.com/PronounsPage/PronounsPage=الشفرة المصدرية} والمحتوى بموجب {/License=OQL}.
+    links: 'الاتصال، وسائل التواصل الاجتماعي'
+    legal: 'قانوني'
+    financial: 'الشفافية المالية'
+    technical: 'تقني'
+    sibling: 'مشاريع الأشقاء'
     stats:
-        header: 'Stats'
-        overall: 'all language versions'
-        current: 'only this version'
+        header: 'احصائيات'
+        overall: 'جميع إصدارات اللغات'
+        current: 'فقط هذا الإصدار'
         keys:
-            users: 'Registered users'
-            cards: 'Cards'
-            visitors: 'Unique visitors'
-            pageviews: 'Page views'
-            realTimeVisitors: 'Currently online'
-            visitDuration: 'Avg visit duration'
-            uptime: 'Uptime'
-            responseTime: 'Avg response time'
-        month: 'month'
+            users: 'المستخدمون المسجلون'
+            cards: 'البطاقات'
+            visitors: 'الزائرين فريدين من نوعهم'
+            pageviews: 'مشاهدات الصفحة'
+            realTimeVisitors: 'حاليا على الموقع'
+            visitDuration: 'متوسط مدة الزيارة'
+            uptime: 'مدة التشغيل'
+            responseTime: 'متوسط وقت الاستجابة'
+        month: 'الشهر'
 
 notFound:
-    message: 'Page was not found'
-    back: 'Go back to the homepage'
+    message: 'لم يتم العثور على الصفحة'
+    back: 'العودة إلى الصفحة الرئيسية'
 
 authRequired:
-    message: 'You must log in to see this site'
-    go: 'Go to the login form'
+    message: 'يجب عليك تسجيل الدخول لرؤية هذا الموقع'
+    go: 'انتقل إلى نموذج تسجيل الدخول'
 
 confirm:
-    header: 'Are you sure?'
-    yes: 'Yes, I''m sure'
-    no: 'No, cancel'
-    ok: 'OK'
-    save: 'Save'
-    dismiss: 'Dismiss'
+    header: 'هل أنت متأكد؟'
+    yes: 'نعم، أنا متأكد'
+    no: 'لا، الغي'
+    ok: 'حسنًا'
+    save: 'حفظ'
+    dismiss: 'ترك'
 
 terms:
-    header: 'Terms of Service'
-    lastUpdate: 'Last Updated'
-    consent: 'By registering you''re accepting the {/terms=Terms of Service}.'
+    header: 'شروط الخدمة'
+    lastUpdate: 'آخر تحديث'
+    consent: 'بالتسجيل ، فأنت تقبل {/terms=شروط الخدمة}.'
     #you can leave the terms untranslated, or translate it (copy it from the English version) and include the following disclaimer:
     #translationDisclaimer: >
     #    The following text is just an auxiliary translation.
@@ -919,16 +913,6 @@ terms:
             changes: >
                 We reserve the right to modify these Terms of Service at any time.
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
-    # no need to translate this part:
-    update:
-        header: 'We''ve updated our Terms of Service.'
-        intro: >
-            Hi! The following changes to our {https://en.pronouns.page/terms=Terms of Service} will come into effect on April 4th, 2023:
-        changes:
-            - >
-                On our website we've never been allowing “Content that might break the law or violate social norms”.
-                It's a pretty broad rule, but we also provide a (non-exhaustive) list of examples of content that we consider harmful.
-                <strong>Ableist speech</strong> was missing from that list, but now it will be explicitly enumerated.
 
 privacy:
     header: 'Privacy Policy'
@@ -997,26 +981,26 @@ privacy:
         revoke: 'Revoke personalised ads consent'
 
 admin:
-    header: 'Admin panel'
+    header: 'لوحة الادارة'
     user:
-        user: 'User'
-        createdAt: 'Registration date'
-        email: 'Email'
-        roles: 'Permissions'
-        profiles: 'Profiles'
-        confirmRole: 'Are you sure you want to switch @%username%''s role to "%role%"?'
+        user: 'المستخدم'
+        createdAt: 'تاريخ التسجيل'
+        email: 'البريد الإلكتروني'
+        roles: 'الصلاحيات'
+        profiles: 'الملفات الشخصية'
+        confirmRole: 'هل أنت متأكد أنك تريد تغير دور @%username% إلى "%role%"؟'
 
 table:
-    empty: 'Empty…'
-    count: 'Count'
-    sort: 'Drag to sort'
-    scrollUp: 'Scroll to the top'
-    more: 'Show more'
+    empty: 'قم بإفراغ'
+    count: 'قم بالعد'
+    sort: 'اسحب للترتيب'
+    scrollUp: 'انتقل إلى الأعلى'
+    more: 'أظهر المزيد'
 
 api:
-    header: 'Public API'
-    example: 'Example'
-    query: 'Query string parameters'
+    header: 'واجهة برمجة تطبيقات عامة'
+    example: 'مثال'
+    query: 'معاملات سلسلة الاستعلام'
 
 quotation:
     start: '“'
@@ -1024,72 +1008,72 @@ quotation:
     colon: ':'
 
 localise:
-    shorter: 'Add more'
-    short: 'Adding language versions'
-    long: 'Want to create a new language version? Awesome! Please check out'
-    longLink: 'this manual!'
+    shorter: 'أضف المزيد'
+    short: 'إضافة إصدارات اللغات'
+    long: 'هل ترغب في إنشاء نسخة جديدة بلغة أخرى؟ رائع! يرجى الاطلاع على'
+    longLink: 'هذا الدليل!'
 
 images:
     upload:
-        instruction: 'Click here or drag your pics here'
-        instructionShort: 'Upload'
+        instruction: 'انقر هنا أو اسحب صورك هنا'
+        instructionShort: 'تحميل'
 
 error:
-    generic: 'Something went wrong, please try again…'
+    generic: 'حدث خطأ ما. أعد المحاولة من فضلك…'
 
 captcha:
-    reason: 'Please prove you''re not a bot to mitigate spam and DDoS attacks.'
-    invalid: 'Invalid CAPTCHA, please try again'
+    reason: '.يرجى إثبات أنك لست روبوتًا للحد من هجمات البريد الالكتروني وهجمات الإسقاط الموزع'
+    invalid: 'عملية التحقق غير صالحة، يرجى المحاولة مرة أخرى'
 
 mode:
-    light: 'Light mode'
-    automatic: 'Automatic'
-    dark: 'Dark mode'
-    accessibility: 'Accessibility settings'
-    reducedColours: 'Reduced colours'
-    reducedItems: 'Reduced number of items shown'
+    light: 'الوضعية المضيئة'
+    automatic: 'أوتوماتيكي'
+    dark: 'الوضعيةالمظلمة'
+    accessibility: 'إعدادات الوصول'
+    reducedColours: 'ألوان مخفضة'
+    reducedItems: 'تم تقليل عدد العناصر المعروضة'
 
 ban:
-    reason: 'Ban reason'
-    visible: '(this will be visible to the user)'
-    terms: 'Terms rules broken (required)'
-    action: 'Ban this person'
-    confirm: 'Are you sure you want to ban @%username%?'
-    confirmUnban: 'Are you sure you want to remove ban (proposals) of @%username%? Keep in mind that it''s probably worth discussing such cases on Teams'
-    header: 'Your profile is no longer public.'
-    banned: 'Profile not published'
-    termsIntro: 'According to our {/terms=Terms of Service}'
+    reason: 'سبب الحظر'
+    visible: '(سيكون هذا مرئيًا للمستخدم)'
+    terms: 'قواعد الشروط معطلة (مطلوب)'
+    action: 'حظر هذا الشخص'
+    confirm: 'هل أنت متأكد أنك تريد حظر @%username%؟'
+    confirmUnban: 'هل أنت متأكد من رغبتك في رفع (اقتراحات) الحظر ل@%username%؟ يرجى مراعاة أنه قد يكون من الأفضل مناقشة مثل هذه الحالات على تطبيق Microsoft Teams.'
+    header: 'لم يعد حسابك عامًا.'
+    banned: 'لم يتم نشر حسابك.'
+    termsIntro: 'وفقًا ل{/Terms=شروط الخدمة}'
     appeal: >
-        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
-        or be aware of some issues. If you think your account didn't breach our {/terms=Terms of Service},
-        please contact us at {mailto:contact@pronouns.page=contact@pronouns.page} and we might get another look in a bigger group.
+        الإشراف على الحسابات موضوع معقد وحساس. يتم القيام به من قبل متطوعين قد لا يتفقون دائمًا مع بعضهم البعض،
+        أو كن على علم ببعض المشاكل. إذا كنت تعتقد أن حسابك لم ينتهك {/Terms=شروط الخدمة}،
+        يرجى التواصل بنا على {mailto:contact@pronouns.page=contact@pronouns.page} وقد نلقي نظرة أخرى في مجموعة أكبر.
     appealEmail: >
-        Moderation is a complex and delicate subject. It's being done by volunteers who might not always agree with each other
-        or be aware of some issues. If you think your account didn't breach our Terms of Service,
-        please respond to this email and we might get another look in a bigger group.
+        الإشراف على الحسابات موضوع معقد وحساس. يتم القيام به من قبل متطوعين قد لا يتفقون دائمًا مع بعضهم البعض،
+        أو كن على علم ببعض المشاكل. إذا كنت تعتقد أن حسابك لم ينتهك شروط الخدمة،
+        يرجى الرد على هذا البريد الإلكتروني وقد نلقي نظرة أخرى في مجموعة أكبر.
 
 report:
-    action: 'Report abuse'
-    comment: 'Please explain briefly what''s wrong with this profile'
-    confirm: 'Are you sure you want to report @%username%?'
-    sent: 'Your report has been sent. Thanks for your help!'
-    terms: 'Keep in mind what''s forbidden according to our {/terms=Terms of Service}'
-    hoarding: 'Please don''t report for “username hoarding”. We automatically remove accounts without cards after a period of inactivity. Your report will not make it faster.'
+    action: 'بلغ عن سوء معاملة'
+    comment: 'يرجى شرح ما هو الخطأ في هذا الملف بشكل قصير'
+    confirm: 'هل أنت متأكد أنك تريد الإبلاغ عن @%username%؟'
+    sent: 'تم إرسال التقرير الخاص بك. شكرا لمساعدتك!'
+    terms: 'ضع في اعتبارك ما هو محظور وفقًا ل {/Terms=شروط الخدمة}'
+    hoarding: 'الرجاء عدم الإبلاغ عن "اكتناز لاسم المستخدم". نقوم تلقائيًا بإزالة الحسابات بدون بطاقات بعد فترة من عدم النشاط. التقرير الخاص بك لن يجعله أسرع.'
 
 translationMode:
-    header: 'Translation Mode'
-    action: 'Propose translations'
+    header: 'وضع الترجمة'
+    action: 'افترح الترجمة'
     welcome: >
-        Is there a translation missing or an existing one needs a correction?
-        You can click on the blue button in the bottom right corner to turn the Translation Mode on and off.
-        In this mode clicking on a bordered piece of text will open a dialogue box,
-        in which you can modify the translation and compare it to the English text.
-        Remember to click on the button “Commit changes” once you're done.
-    logIn: 'You need to be logged in to propose translations'
-    changes: 'Changes'
-    commit: 'Commit changes'
-    revert: 'Revert changes'
-    pause: 'Pause Translation Mode'
+        هل هناك ترجمة مفقودة أو هناك ترجمة موجودة تحتاج إلى تصحيح؟
+        يمكنك النقر فوق الزر الأزرق في الزاوية اليمنى السفلية لتشغيل وضع الترجمة وإيقاف تشغيله.
+        في هذا الوضع، سيؤدي النقر فوق جزء نص بحدود إلى فتح مربع حوار،
+        حيث يمكنك تعديل الترجمة ومقارنتها بالنص الإنجليزي.
+        تذكر النقر فوق الزر "حفظ التغييرات" بمجرد الانتهاء.
+    logIn: 'تحتاج إلى تسجيل الدخول لاقتراح الترجمات'
+    changes: 'التغييرات'
+    commit: 'حفظ التغييرات'
+    revert: 'تراجع عن التغييرات'
+    pause: 'إيقاف وضع الترجمة مؤقتًا'
 
 flags:
     Abroromantic: 'Abroromantic'
@@ -1184,133 +1168,9 @@ flags:
     Two_Spirit: 'Two Spirit'
     Xenogender: 'Xenogender'
 
-flags_alt:
-    -de-Gay: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    -Drag: 'A rectangular flag with three equal-width vertical stripes: light purple, white and blue; emblem on the white field: a pink crown with three pointy ends.'
-    -en-Genderdoe: ''
-    -pl-Dukaizmy: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a white ghost with black eyes, open mouth, and a speech bubble saying “łu!”'
-    -pl-Gay: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    -pl-Rodzaj_neutralny: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a black moose holding a crowbar.'
-    -pl-Rodzaj_nijaki: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black; emblem: a black moose holding a crowbar.'
-    _black-ribbon: 'A black ribbon'
-    _Butch: 'A rectangular flag with seven equal-width horizontal stripes, forming a gradient from dark grey blue on top, to white in the middle, to purple on the bottom'
-    _hrc: 'A square logo with red background and a pink equality sign “=”'
-    _law: 'A paragraph symbol: “§”'
-    _mspec_lesbians: 'A rectangular flag with five equal-width horizontal stripes: light pink, magenta, purple, blue, teal'
-    _red-ribbon: 'A red ribbon'
-    _sex-work: 'An open red umbrella'
-    _Unlabelled: 'A rectangular flag with four equal-width horizontal stripes: light green, white, light blue, light orange'
-    _yellow-ribbon: 'A yellow ribbon'
-    _zaimki: 'Logo of pronouns.page: two stylised letters “P”, first one rotated by 180°'
-    Abroromantic: 'A rectangular flag with five equal-width horizontal stripes: tealish green, peppermint green, white, pink, and pinkish red; a heart shape in the middle that makes colours on its inside more vibrant and on the outside – subdued'
-    Abrosexual: 'A rectangular flag with five equal-width horizontal stripes: tealish green, peppermint green, white, pink, and pinkish red'
-    Achillean: 'A rectangular flag with three equal width horizontal stripes. The top and bottom are light blue, and the middle is white. In the center is a light green flower with two green leaves on each side of it'
-    Agender: 'A rectangular flag with seven equal-width horizontal stripes: black, grey, white, lime green, white, grey, black'
-    Alloromantic_Asexual: ''
-    Ambiamorous: ''
-    Ambiamorous_: ''
-    Anarcha-Queer: 'A rectangular flag split along the positive diagonal; upper-left part pink, bottom-right part black'
-    Androgyne: 'A rectangular flag with three equal width vertical stripes: pink, purple, blue'
-    Androsexual: 'A rectangular flag with three equal width horizontal stripes: blue, brown, purple'
-    Aporagender: 'A rectangular flag with five equal width horizontal stripes: pink, light purple, yellow, light purple, blue'
-    Archaeopronouns: 'A rectangular flag with three horizontal stripes. The top and bottom stripes are equal width, and are colored grey and yellow respectively. The smaller middle stripe is white.'
-    Aroace: 'A rectangular flag with five equal-width horizontal stripes: orange, yellow, white, cyan, dark blue'
-    Aromantic: 'A rectangular flag with five equal-width horizontal stripes: green, light green, white, grey, black'
-    Aromantic_Allosexual: ''
-    Asexual: 'A rectangular flag with four equal-width horizontal stripes: black, grey, white, purple'
-    Autigender: 'A rectangular flag with five equal width horizontal stripes, creating a gradient from green on top, to dark green on the bottom. In the center is a black infinity symbol.'
-    Bear: 'A rectangular flag with seven equal-width horizontal stripes: brown, orange, yellow, bright yellow, white, grey, black; emblem in upper hoist quarter: a black footprint of a bear.'
-    Bicurious: ''
-    Bigender: 'A rectangular flag with seven equal width horizontal stripes: dusty dark pink, pink, light purple, white, light purple, blue, dark blue'
-    Bigender_: 'A rectangular flag with five equal width horizontal stripes: pink, yellow, white, purple, blue'
-    Biromantic: 'A rectangular flag with the following horizontal stripes: a wide pink, a narrow purple, and a wide blue; a heart shape in the middle that makes colours on its inside more vibrant and on the outside – subdued'
-    Bisexual: 'A rectangular flag with the following horizontal stripes: a wide pink, a narrow purple, and a wide blue'
-    Butch: 'A rectangular flag with seven equal-width horizontal stripes, forming a gradient from dark grey blue on top, to white in the middle, to purple on the bottom'
-    Ceteroromantic: ''
-    Ceterosexual: 'A rectangular flag with four equal width horizontal stripes: yellow, green, white, black'
-    Cis_Ally: 'A rectangular flag with five equal-width horizontal stripes: blue, pink, white, pink, blue; overlaid a black upwards-facing chevron'
-    Demiboy: 'A rectangular flag with seven equal-width horizontal stripes: dark grey, light grey, cyan, white, cyan, light grey, dark grey'
-    Demigender: 'A rectangular flag with seven equal width horizontal stripes: grey, light grey, light yellow, white, light grey, grey'
-    Demigirl: 'A rectangular flag with seven equal-width horizontal stripes: dark grey, light grey, pink, white, pink, light grey, dark grey'
-    Demiromantic: ''
-    Demisexual: ''
-    Diamoric: 'A rectangular flag with three equal width horizontal stripes: light green, white, light green. In the center is a crimson flower.'
-    Enbian: ''
-    Fa*afafine: 'A rectangular flag with three equal width vertical stripes: dark red, yellow, dark red. In the center is a red flower.'
-    Femme: 'A rectangular flag with seven equal width horizontal stripes: purple, a lighter purple, pastel purple, white, baby purple, pink, violet'
-    Gay: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    Gay_: 'A rectangular flag with seven equal-width horizontal stripes: dark green, greenish cyan, teal, white, cyan, purply blue, purple'
-    Gender_Questioning: ''
-    Genderfae: 'A rectangular flag with seven equal width horizontal stripes: green, light green, light yellow, white, pink, purple, violet'
-    Genderfaun: 'A rectangular flag with seven equal width horizontal stripes: orange, yellow, light yellow, white, aqua, blue, purple'
-    Genderfluid: 'A rectangular flag with five equal-width horizontal stripes: pink, white, purple, black, blue'
-    Genderflux: 'A rectangular flag with six equal width horizontal stripes: pink, a lighter pink, grey, blue, a darker blue, yellow'
-    Genderqueer: 'A rectangular flag with three equal width horizontal stripes: purple, white, green'
-    Greyaromantic: ''
-    Greyasexual: 'A rectangular flag with five equal width horizontal stripes: purple, grey, white, grey, purple'
-    Gynesexual: ''
-    Heteroflexible: 'A rectangular flag with three equal-width horizontal stripes: blue, white and pink; an extra vertical stripe through the middle that’s coloured like a rainbow flag: red, orange, yellow, green, blue, purple'
-    Heteroromantic: 'A rectangular flag with three equal-width horizontal stripes: blue, white and pink; a heart shape in the middle that makes colours on its inside more vibrant and on the outside – subdued'
-    Heterosexual: 'A rectangular flag with three equal-width horizontal stripes: blue, white and pink'
-    Hijra: 'A rectangular flag with following horizontal stripes, from the top: a wide pink, narrow white, crimson and white, wide light blue'
-    Homoflexible: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; an extra vertical stripe through the middle that’s coloured like a heterosexual flag: blue, white and pink'
-    Homoromantic: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a heart shape in the middle that makes colours on its inside more vibrant and on the outside – subdued'
-    Intersex: 'A rectangular flag with a yellow background and a purple circle in the centre'
-    Leather_Pride: 'A rectangular flag with nine equal-width horizontal stripes: black, blue, black, blue, white,blue, black, blue, black; emblem in upper hoist quarter: a red heart symbol at an angle'
-    Lesbian: 'A rectangular flag with five equal-width horizontal stripes: orangy red, orange, white, light magenta, dark magenta'
-    Lesbian_: 'A rectangular flag with a purple background and black labrys (two-bladed-axe) in the middle'
-    Lesbian__: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    Lesbian___: 'A rectangular flag with four equal-width horizontal stripes: purple, pink, yellow, green'
-    Lesbiromantic: 'A rectangular flag with five equal-width horizontal stripes: orangy red, orange, white, light magenta, dark magenta; a heart shape in the middle that makes colours on its inside more vibrant and on the outside – subdued'
-    LGBTQ: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    Maverique: 'A rectangular flag with three equal width horizontal stripes: yellow, white, orange'
-    Monoamorous: ''
-    Monogamous: ''
-    Muxe: ''
-    Nebularomantic: 'A rectangular flag with seven equal width horizontal stripes: dusty dark red, red, light red, white, blue, dusty dark blue, dark blue'
-    Neopronouns: 'A rectangular flag with three horizontal stripes. The top and bottom stripes are equal width, and are colored green and purple respectively. The smaller middle stripe is white.'
-    Neopronouns_: 'A rectangular flag with five equal width horizontal stripes: green, blue, white, light yellow, off orange'
-    Neutrois: 'A rectangular flag with three equal width horizontal stripes: white, green, black'
-    Nonbinary: 'A rectangular flag with four equal-width horizontal stripes: yellow, white, purple, black'
-    Omniromantic: ''
-    Omnisexual: 'A rectangular flag with five equal width horizontal stripes: pink, a darker pink, dark purple, bluish purple, light bluish purple'
-    Oriented_Aroace: 'A rectangular flag with four equal width horizontal stripes: dark blue, light dusty blue, white, aqua green'
-    Pangender: 'A rectangular flag with seven equal width horizontal stripes: yellow, light pink, light violet, white, light violet, light pink, yellow'
-    Panromantic: ''
-    Pansexual: 'A rectangular flag with three equal width horizontal stripes: pink, yellow, blue'
-    Polyamorous: 'A rectangular flag with a background split in two in the shape of a wave: top part crimson, bottom a lighter crimson-pink; emblem in the middle: an ivory white heart composed of the infinity symbol “∞” and a downwards-pointing chevron'
-    Polyamorous_: 'A rectangular flag with three equal-width horizontal stripes: blue, red, black; emblem in the middle: a yellow Green letter pi “π”'
-    Polyamorous__: 'A rectangular flag with four equal-width horizontal stripes: light green, darker green, light blue and dark blue; emblem: a white heart intertwined with the infinity symbol “∞”'
-    Polyamorous___: 'A rectangular flag with three equal-width horizontal stripes: blue, red, black; emblem in the middle: a yellow heart intertwined with the infinity symbol “∞”'
-    Polyromantic: ''
-    Polysexual: 'A rectangular flag with three equal width horizontal stripes: pink, green, blue'
-    Pomoromantic: 'A rectangular flag with seven equal width horizontal stripes: pink, light pink, white, light green, white, light pink, pink'
-    Pomosexual: 'A rectangular flag with seven equal width horizontal stripes: pink, light pink, white, light purple, white, light pink, pink'
-    Progress_Pride: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): white, pink, light blue, brown, black'
-    Progress_Pride_: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; a chevron (triangle) on the left side composed of stripes of the following colours (from the left): yellow with a purple circle, white, pink, light blue, brown, black'
-    Queer: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple'
-    Queer_: 'A rectangular flag with ivory white background and two downwards-pointing chevrons: light pink and washed-out purple'
-    Queerian: ''
-    Queerplatonic: 'A rectangular flag with five equal width horizontal stripes: yellow, pink, white, grey, black'
-    Quoiromantic: 'A rectangular flag with four equal width horizontal stripes: black, green, blue, grey'
-    Sapphic: 'A rectangular flag with three equal width horizontal stripes: pink, white, pink. In the center is a purple flower'
-    Sapphic_: 'A rectangular flag with four equal width horizontal stripes: purple, pink, yellow, green'
-    Sexuality_Questioning: ''
-    Straight_Ally: 'A rectangular flag with six equal-width horizontal stripes: red, orange, yellow, green, blue and purple; overlaid a white upwards-facing chevron'
-    Toric: ''
-    Transfeminine: 'A rectangular flag with seven equal-width horizontal stripes creating a gradient from blue on top, through pink in the middle, to blue on the bottom'
-    Transgender: 'A rectangular flag with five equal-width horizontal stripes: blue, pink, white, pink, blue'
-    Transmasculine: 'A rectangular flag with seven equal-width horizontal stripes creating a gradient from pink on top, through blue in the middle, to pink on the bottom'
-    Transneutral: 'A rectangular flag with seven equal-width horizontal stripes creating a gradient from blue on top, through yellow in the middle, to pink on the bottom'
-    Trigender: 'A rectangular flag with five equal width horizontal stripes: pink, purple, green, purple, pink'
-    Trixic: ''
-    Two_Spirit: 'A rectangular flag with six equal width horizontal stripes: black, white, yellow, red, blue, green. In the center is a symbol colored black of a sun, along with a symbol colored black of a half-moon'
-    Two_Spirit_: ''
-    Xenogender: 'A rectangular flag with seven equal width horizontal stripes: red, light red, orange, yellow, blue, violet, purple. In the center is a symbol resembling a four-striped rainbow, the bottom parts being connected by a horizontal line. In the middle of the symbol is an upside down five pointed star.'
-
 calendar:
     header: 'اليومية'
-    headerLong: 'اليومية'
+    headerLong: 'اليومية المثلية'
     date: '%date% %year%'
     months:
         1: 'يناير/كانون الثاني'
