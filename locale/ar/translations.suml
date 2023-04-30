@@ -916,7 +916,7 @@ terms:
                 If a change is material we will provide at least 30 days notice prior to any new Terms of Service taking effect.
 
 privacy:
-    header: 'Privacy Policy'
+    header: 'سياسة الخصوصية'
     # you can skip translating the rest of the "privacy" section
     content:
         intro: >
@@ -1321,5 +1321,5 @@ calendar:
     full: 'Full calendar'
 
 ukraine:
-    header: 'We stand with Ukraine.'
-    link: '{https://supportukrainenow.org=Here''s how you can support it.}'
+    header: 'نحن نقف مع أوكرانيا.'
+    link: '{https://supportukrainenow.org=إليك كيف يمكنك تقديم الدعم.}'
