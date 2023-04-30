@@ -1,5 +1,5 @@
 // Database of names
-// source: https://dane.gov.pl/dataset/1667,lista-imion-wystepujacych-w-rejestrze-pesel-osoby-zyjace
+// source: https://dane.gov.pl/pl/dataset/1667,lista-imion-wystepujacych-w-rejestrze-pesel-osoby-zyjace
 // update: yearly, in January
 
 import peselK1 from './K1.tsv';
