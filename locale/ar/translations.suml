@@ -29,7 +29,7 @@ home:
             وحتى لو كانت تحمل اسم "فاطمة" في شهادة ميلادها على سبيل المثال،
             لكنها تكرهه و تفضل استعمال "زينب".
             وهذا ينطبق مع الضمائر أيضًا.
-            إذا كنت لا تريد أن تكون لئيمًا تجاه شخص ما، فيٌرجى أن تناديه بطريقة ملائمة بناءًا على ما يريدونه.
+            إذا كنت لا تريد أن تكون لئيمًا تجاه الأشخاص، فيُرجى أن تناديهم بطريقة ملائمة بناءًا على ما يريدونه.
             الفرق الوحيد أننا في الغالب نعلم أسماء الآخرين، لكن ليس ضمائرهم.
             نحن نُعرّف أنفُسنا بالأسماء، لا بالضمائر. فَلِنُغير هذا!
     pronouns: 'قائمة الضمائر المعروفة'
@@ -41,7 +41,7 @@ home:
         button: 'عرض المولّد'
         header2: 'إنشاء رابط'
         base: 'بناءًا على'
-        alt: 'يمكنك أيضًا إدخال أشكال متبادلة في كل حقل بشكل منفصل, مثل <code>"هو" و "هي"</code> = "هو"أو"هي"  '
+        alt: 'يمكنك أيضًا إدخال أشكال متبادلة في كل حقل بشكل منفصل، مثل <code>"هو" و "هي"</code> = "هو"أو"هي"  '
         pronunciation: >
             :يمكنك أيضًا تحديد النطق بعد حرف العلامة الرأسية، باستخدام الأبجدية الصوتية الدولية، على سبيل المثال
             <code>faerself|fɛɹsɛlf</code> = “faerself” تُلفَظ /fɛɹsɛlf/.
@@ -121,7 +121,7 @@ sources:
         key: 'المفتاح'
         keyInfo: 'المعرّف لربط المصادر بين النسخ اللغوية والربط مع القاموس'
         images: 'الصور'
-        spoiler: 'Spoiler'
+        spoiler: 'حرق'
     otherVersions: 'في لغات أخرى'
     referenced: 'أمثلة على الإستخدام'
 
@@ -189,12 +189,12 @@ terminology:
         - >
             العديد من المصطلحات والعبارات المتعلقة بمجتمع المثليين وغير التقليديين جنسيًا
             تستخدم كإدراجات إنجليزية في النصوص باللغة العربية.
-            نود تقديم قائمة بالمصطلحات، وشرح معانيها,
+            نود تقديم قائمة بالمصطلحات، وشرح معانيها،
             واقتراح ترجماتها باللغة العربية.
     term: 'المصطلح'
-    original: 'علم أصول الكلمات'
+    original: 'أصل الكلمة'
     category: 'الفئة'
-    images: 'صور إضافية, من خارج مجموعة الأعلام'
+    images: 'صور إضافية، من خارج مجموعة الأعلام'
     definition: 'التعريف'
 
 
@@ -395,7 +395,7 @@ faq:
                     إذا كان العلم الخاص بك مفقودًا، فما عليك سوى تحميله
                     (سيتم تمييزه على أنه تم إنشاؤه بواسطة المستخدم للتخفيف من التخريب).
         custom-pronouns:
-            question: 'الضمائر الخاصة بي ليست مدرجة'
+            question: 'الضمائر الخاصة بي ليست مدرجة.'
             answer:
 
                 - >
@@ -450,7 +450,7 @@ contact:
         فقط استسلم، نحن لا نناقش مع المخربون.
         يستغرق كتم صوتك ووضع رسالتك في مجلد الرسائل غير المرغوب فيها وقتًا أقل مما سوف يستغرقك الأمر في كتابة رسالتك.
     language: >
-        نحن فريق دولي - الأشخاص أنشأوا إصدارًا بلُغة معينة
+        نحن فريق دولي - الأشخاص أنشؤا إصدارًا بلُغة معينة
         قد لا يكونون نفس الأشخاص الذين سيقرؤون رسالتك.
         لذلك، إذا كان ذلك ممكنًا، فنحن نُقدّر إذا تواصلت معنا باللغة <strong>الإنجليزية أو البولندية</ strong>.
     team:
@@ -463,7 +463,7 @@ contact:
         extra: []
         logo: 'شعار المجموعة هو مزيج من رمز المتحولين جنسياً و فقاعة كلام ترمز إلى اللغة.'
         members: 'الأعضاء الحاليين'
-        member: 'عضو الجماعية'
+        member: 'عضو من أعضاء الجماعية'
         upcoming: 'إصدارات اللغات القادمة'
         join:
             header: 'انضم إلينا!'
@@ -498,10 +498,10 @@ contact:
         header: 'المساهمة'
         intro: >
             موقعنا الإلكتروني هو مشروع تعاوني ذي مصدر عام أنشأه متطوعون.
-            يمكنك إضافة مساهمتك أيضا! إليك بعض المجالات التي نقدر مساعدتك فيها.
+            يمكنك إضافة مساهمتك أيضًا! إليك بعض المجالات التي نقدر مساعدتك فيها.
             سيتم دعوة المساهمين النشطين للانضمام إلى فريقنا.
         entries:
-            header: 'الإدخالات'
+            header: 'إدخالات'
             description: >
                 العديد من أقسام الموقع (الأسماء، المصطلحات الغريبة، القاموس الشامل،وغيرها...) لديها خيار لإضافة وتعديل الإدخالات.
                 إذا كنت تعتقد أن شيئًا ما مفقود أو غير صحيح، فلا تتردد في إرسال مشاركتك.
@@ -514,7 +514,7 @@ contact:
             header: 'قم بإنشاء نسخة للغة جديدة'
             description: >
                 تتوفر إرشادات حول إنشاء إصدار لغة جديد {https://en.pronouns.page/new-version=هنا}.
-                قبل البدء ، يرجى {/contact=التواصل معنا} للتنسيق مع الآخرين الذين قد يعملون على ذلك أيضًا
+                قبل البدء، يرجى {/contact=التواصل معنا} للتنسيق مع الآخرين الذين قد يعملون على ذلك أيضًا
         technical:
             header: 'قم بتقديم طلب سحب'
             description: >
@@ -595,7 +595,7 @@ user:
             save: >
                 احفظ الرموز المميزة التالية في مكانٍ آمن.
                 ستتمكن من استخدامها لتجاوز التوثيق المتعدد للعوامل (2FA) في حالة فقدان جهاز التوثيق الخاص بك.
-            saved: 'حسنًا ، لقد حفظتهم!'
+            saved: 'حسنًا، لقد حفظتهم!'
             enter: 'قم بإدخال الرمز المميز'
         cancel: 'إلغاء تسجيل الدخول'
         enabled: 'تم التشغيل'
@@ -635,7 +635,7 @@ profile:
         detect: 'اكتشف'
         publishArea: 'انشر القارة في بطاقتك'
         publishLocation: 'انشر المنطقة في بطاقتك'
-        time: ' إنها%time% في %weekday% في المنطقة الزمنية الخاصة بي'
+        time: 'إن الساعة لدي الآن هي %time% في يوم %weekday% في المنطقة الزمنية الخاصة بي'
         approximate: 'إنه مجرد موقع تقريبي'
         areas:
             Africa: 'أفريقيا'
@@ -735,7 +735,7 @@ profile:
             هذا هو السبب في أن طول هذا المجال محدود جدًا.
             ضع في اعتبارك أن الأشخاص الذين تضع علامة باسمهم هنا <strong>سيكونون قادرين على رؤية ذلك</strong>
             - وقد يبلغون عن مضايقتك ، إذا قررت وضع أشياء سلبية عنهم.
-            إذا كان الاتصال في دائرتك متبادلاً ، فسيتم تمييزه بـ [s: shield-check].
+            إذا كان الاتصال في دائرتك متبادلاً ، فسيتم تمييزه بـ [s:shield-check].
         relationship: 'العلاقة (مثل "الشريك"، "الصديق المفضل")'
         mutual: 'هذا الاتصال يسير في كلا الاتجاهين'
         yourMentions:
@@ -982,7 +982,7 @@ privacy:
         revoke: 'Revoke personalised ads consent'
 
 admin:
-    header: 'لوحة الادارة'
+    header: 'لوحة الإدارة'
     user:
         user: 'المستخدم'
         createdAt: 'تاريخ التسجيل'
@@ -1063,7 +1063,7 @@ report:
 
 translationMode:
     header: 'وضع الترجمة'
-    action: 'افترح الترجمة'
+    action: 'اقترح الترجمة'
     welcome: >
         هل هناك ترجمة مفقودة أو هناك ترجمة موجودة تحتاج إلى تصحيح؟
         يمكنك النقر فوق الزر الأزرق في الزاوية اليمنى السفلية لتشغيل وضع الترجمة وإيقاف تشغيله.
@@ -1174,151 +1174,151 @@ calendar:
     headerLong: 'اليومية المثلية'
     date: '%date% %year%'
     months:
-        1: 'يناير/كانون الثاني'
-        2: 'فبراير/شباط'
-        3: 'مارس/آذار'
-        4: 'أبريل/نيسان'
-        5: 'مايو/آيار'
-        6: 'يونيو/حزيران'
-        7: 'يوليو/تموز'
-        8: 'أغسطس/آب'
-        9: 'سبتمبر/أيلول'
-        10: 'أكتوبر/تشرين أول'
-        11: 'نوفمبر/تشرين ثاني'
-        12: 'ديسمبر/كانون أول'
+        1: 'كانون ثاني'
+        2: 'شباط'
+        3: 'آذار'
+        4: 'نيسان'
+        5: 'آيار'
+        6: 'حزيران'
+        7: 'تموز'
+        8: 'آب'
+        9: 'أيلول'
+        10: 'تشرين أول'
+        11: 'تشرين ثاني'
+        12: 'كانون أول'
     dates:
-        1: 'January %day%'
-        2: 'February %day%'
-        3: 'March %day%'
-        4: 'April %day%'
-        5: 'May %day%'
-        6: 'June %day%'
-        7: 'July %day%'
-        8: 'August %day%'
-        9: 'September %day%'
-        10: 'October %day%'
-        11: 'November %day%'
-        12: 'December %day%'
+        1: 'كانون ثاني %day%'
+        2: 'شباط %day%'
+        3: 'آذار %day%'
+        4: 'نيسان %day%'
+        5: 'آيار %day%'
+        6: 'حزيران %day%'
+        7: 'تموز %day%'
+        8: 'آب %day%'
+        9: 'أيلول %day%'
+        10: 'تشرين أول %day%'
+        11: 'تشرين ثاني %day%'
+        12: 'كانون أول %day%'
     events:
-        pride_month: 'Pride Month'
-        trans_month: 'International Trans Awareness Month'
-        zaimki_birthday: 'Birthday of Pronouns.page'
-        agender_day: 'Agender Pride Day    '
-        asexuality_day: 'International Asexuality Day'
-        bisexuality_day: 'Celebrate Bisexuality Day'
-        drag_day: 'Drag Day'
-        idahobit: 'International Day Against Homophobia, Transphobia and Biphobia'
-        intersex_day: 'Intersex Awareness Day'
-        intersex_remembrance_day: 'Intersex Day of Remembrance'
-        lesbian_day: 'International Lesbian Day'
-        lesbian_visibility_day: 'International Lesbian Visibility Day'
-        coming_out_day: 'Coming Out Day'
-        nonbinary_day: 'International Nonbinary People''s Day'
-        pan_day: 'Pansexual & Panromantic Awareness Day'
-        trans_remembrance_day: 'Transgender Day of Remembrance'
-        trans_visibility_day: 'International Trans Day of Visibility'
-        zero_discrimination_day: 'Zero Discrimination Day'
-        arospec_week: 'Aromantic Spectrum Awareness Week'
-        asexual_week: 'Asexual Awareness Week'
-        bisexual_week: 'Bisexual Awareness Week'
-        pronouns_day: 'Pronouns Day'
-        trans_week: 'Trans Awareness Week'
-        trans_parent_day: 'Trans Parent Day'
-        nonbinary_week: 'Nonbinary Awareness Week'
-        nonbinary_week___timeDescription: 'in the week (Mon-Sun) surrounding July 14'
-        polyamory_day: 'Polyamory Day'
-        homophobia_sport: 'International Day Against Homophobia in Sports'
-        gay_uncles_day: 'Gay Uncles Day'
-        lgbtq_stem: 'LGBTQ+ STEM Day'
-        trans_depathologization: 'International Day of Action for Trans Depathologization'
-        lgbti_book_day: 'International LGBTI Book Day'
-        human_rights_day: 'Human Rights Day'
-        nonbinary_parents_day: 'Nonbinary Parents'' Day'
-        trans_prisoner: 'Transgender Prisoner Day of Action and Solidarity'
-        xenogender_day: 'Xenogender Visibility Day'
-        genderqueer_day: 'Genderqueer Visibility Day'
-        genderfluid_day: 'Genderfluid Visibility Day'
-        aids_day: 'World AIDS Day'
-        tolerance_day: 'International Day of Tolerance'
-        social_justice_day: 'World Day of Social Justice'
-        stonewall_day: 'Anniversary of Stonewall Riots'
-        domestic_violence: 'LGBTQ Domestic Violence Awareness Day'
-        polysexual_day: 'Polysexual & Polyromantic Visibility Day'
-        orlando_day: 'Pulse Night of Remembrance'
-        aids_memorial: 'International AIDS Candlelight Memorial'
-        health_week: 'LGBT Health Awareness Week'
-        lesbian_visibility_week: 'Lesbian Visibility Week'
-        demigender_day: 'Demigender Awareness Day'
-        pan_pride_day: 'Pansexual Pride Day'
-        transmasculine_day: 'Transmasculine People''s Day'
-        asexual_visibility_day: 'Asexual Visibility Day'
-        bi_health_month: 'Bisexual Health Awareness Month'
-        holocaust_remembrance_day: 'International Holocaust Remembrance Day'
-        family_equality_day: 'International Family Equality Day'
-        aro_month: 'Aromantic Awareness Month'
-        black_ribbon_day: 'Black Ribbon Day'
-        black_queer_week: 'Black Queer History Week'
-        mena_lesbian_day: 'West Asian and North African Lesbian and Queer Women''s Pride Day'
-        hate_crime_awareness_week: 'Hate Crime Awareness Week'
-        deaf_awareness_week: 'Deaf LGBTQ Awareness Week'
-        suicide_prevention_day: 'World Suicide Prevention Day'
-        suicide_prevention_month: 'Suicide Prevention Month'
-        aids_awareness_month: 'AIDS Awareness Month'
-        genderfluid_week: 'Genderfluid Awareness Week'
-        pan_week: 'Pan Week'
-        parents_day: 'Gender Expansive Parents'' Day'
-        hiv_testing_day: 'International HIV Testing Day'
-        freedressing_day: 'Freedressing Awareness Day'
-        sexual_health_day: 'Sexual and Reproductive Health Awareness Day'
-        world_sexual_health_day: 'World Sexual Health Day'
-        aids_vaccine_day: 'World AIDS Vaccine Day'
-        queer_youth_day: 'Queer Youth Day'
-        omnisexual_day: 'Omnisexual Visibility Day'
-        unlabeled_day: 'Unlabeled Visibility Day'
-        trans_youth_day: 'Trans Children and Youth Visibility Day'
-        hiv_long_term_survivors_day: 'HIV Long-Term Survivors Awareness Day'
-        women_hiv_awareness_day: 'Women and Girls HIV/AIDS Awareness Day'
-        youth_hiv_awareness_day: 'Youth HIV/AIDS Awareness Day'
-        gay_hiv_awareness_day: 'Gay Men''s HIV/AIDS Awareness Day'
-        black_hiv_awareness_day: 'Black HIV/AIDS Awareness Day'
-        hiv_aging_awareness_day: 'HIV/AIDS and Aging Awareness Day'
-        trans_hiv_testing_day: 'Transgender HIV Testing Day'
-        mspec_lesbian_day: 'Mspec Lesbian Visibility & Awareness Day'
-        mspec_lesbian_week: 'Mspec Lesbian Visibility & Awareness Week'
-        mspec_gay_day: 'Mspec Gay Visibility & Awareness Day'
-        mspec_gay_week: 'Mspec Gay Visibility & Awareness Week'
-        spring_testing_week: 'Spring European HIV Testing Week'
-        autumn_testing_week: 'Autumn European HIV Testing Week'
-        sex_worker_day: 'International Sex Worker Day'
-        equal_pay_day: 'LGBTQIA+ Equal Pay Awareness Day'
-        sex_worker_pride: 'Sex Worker Pride'
-        sex_worker_rights_day: 'International Sex Workers'' Rights Day'
-        sex_worker_violence_day: 'International Day to End Violence Against Sex Workers'
-        omnisexual_omniromantic_day: 'Omnisexual and Omniromantic Pride and Visibility Day'
-        omnisexual_awareness_day: 'Omnisexual Awareness Day'
-        hiv_is_not_a_crime: 'HIV Is Not A Crime Day'
-        trans_flag_day: 'Trans Flag Day'
-        alan_turing_day: 'Alan Turing Day'
-        nonbinary_kids_day: 'Nonbinary Kids'' Day'
-        masc_lesbian_week: 'Masculine Lesbian Visibility and Awareness Week'
-        masc_lesbian_day: 'Masculine Lesbian Visibility and Awareness Day'
-        trans_history_month: 'Transgender History Month'
-        transition_week: 'Transition Week'
-        bi_creators_day: 'Bisexual Creators Day'
-        wrath_month: 'Queer Wrath Month'
-        lesbian_aunts_day: 'Lesbian Aunts Day'
-    banner: 'We''re celebrating/commemorating'
-    celebrating_custom: 'is celebrated'
-    celebrating_day: 'is celebrated on'
-    celebrating_week: 'is celebrated on'
-    celebrating_month: 'is celebrated in'
+        pride_month: 'شهر فخر المثلية'
+        trans_month: 'شهر التوعية الدولي حول الأشخاص المتحولين جنسيًا'
+        zaimki_birthday: 'عيد ميلاد موقعنا'
+        agender_day: 'يوم فخر الأشخاص اللاجنسيين'
+        asexuality_day: 'اليوم الدولي الخاص باللاجنسية'
+        bisexuality_day: 'يوم ازدواجية التوجه الجنسي'
+        drag_day: 'يوم التقمص الجنسي'
+        idahobit: 'اليوم الدولي لمكافحة العنصرية ضد المثلية والتحول الجنسي والثنائية المثلية'
+        intersex_day: 'يوم التوعية بالأشخاص بين الجنسين'
+        intersex_remembrance_day: 'يوم تذكر الأشخاص بين الجنسين المتوفين'
+        lesbian_day: 'اليوم الدولي للمثليات'
+        lesbian_visibility_day: 'اليوم الدولية لإظهار رؤية المثليات'
+        coming_out_day: 'يوم الخروج بالمثلي'
+        nonbinary_day: 'اليوم الدولي للأشخاص غير ثنائيي الجنسية'
+        pan_day: 'اليوم الدولي للتوعية بالجنسانية والرومانسية الشاملة'
+        trans_remembrance_day: 'يوم تذكر الأشخاص المتحولين المتوفين'
+        trans_visibility_day: 'اليوم الدولي لإظهار رؤية الأشخاص المتحولين جنسيًا'
+        zero_discrimination_day: 'اليوم العالمي للحد من التمييز'
+        arospec_week: 'أسبوع التوعية بطيف الرومانسية اللاجنسية'
+        asexual_week: 'أسبوع التوعية باللاجنسية'
+        bisexual_week: 'أسبوع التوعية بازدواجية التوجه الجنسي'
+        pronouns_day: 'يوم الضمائر'
+        trans_week: 'أسبوع التوعية بالتحول الجنسي'
+        trans_parent_day: 'يوم الوالدان المتحولان جنسيًا'
+        nonbinary_week: 'أسبوع التوعية بالأشخاص غير ثنائيين الجنس'
+        nonbinary_week___timeDescription: 'في الأسبوع (من الإثنين إلى الأحد) الذي يحيط تاريخ 14 كانون ثاني'
+        polyamory_day: 'يوم العلاقات العاطفية المتعددة'
+        homophobia_sport: 'اليوم الدولي لمكافحة العنصرية ضد المثلية في الرياضة'
+        gay_uncles_day: 'يوم الأعماء المثليين'
+        lgbtq_stem: 'اليوم الدولي للمثليين في العلوم والتكنولوجيا والهندسة والرياضيات'
+        trans_depathologization: 'اليوم الدولي للعمل من أجل إزالة التصنيف الطبي للأشخاص المتحولين جنسيًا'
+        lgbti_book_day: 'اليوم الدولي للكتب المتعلقة بالمثليين'
+        human_rights_day: 'اليوم العالمي لحقوق الإنسان'
+        nonbinary_parents_day: 'يوم الوالدان غير الثنائيين'
+        trans_prisoner: 'يوم العمل والتضامن مع السجناء المتحولين جنسيًا'
+        xenogender_day: 'اليوم الدولي لإظهار الوعي بشأن الجنسية غير الثنائية'
+        genderqueer_day: 'يوم التوعية بالجنسية الذي تتباين خارج المعايير التقليدية'
+        genderfluid_day: 'يوم التوعية بالجنسية المتغيرة'
+        aids_day: 'اليوم العالمي لمافحة الإيدز'
+        tolerance_day: 'اليوم الدولي  للتسامح'
+        social_justice_day: 'اليوم العالمي للعدالة الإجتماعية'
+        stonewall_day: 'الذكرى السنوية لأحاث أعمال الشغب في ستون وال (Stonewall)'
+        domestic_violence: 'اليوم الدولي للتوعية بالعنف الأسري ضد المثليين'
+        polysexual_day: 'اليوم الدولي للتوعية بالجنسانية والرومانسية المتعددة'
+        orlando_day: 'ليلة تذكر ضحايا حادث إطلاق النار في ملهى بولس'
+        aids_memorial: 'الإحتفال الدولي بالشموع لذكرى الإيدز'
+        health_week: 'الأسبوع الدولي للتوعية بصحة المثليين'
+        lesbian_visibility_week: 'أسبوع إظهار الرؤية للمثليات'
+        demigender_day: 'يوم التوعية بالأشخاص بين الجنسين'
+        pan_pride_day: 'يوم فخر الجنسانية الشاملة'
+        transmasculine_day: 'يوم الأشخاص متحولين الرجولية'
+        asexual_visibility_day: 'يوم إظهار الرؤية للأشخاص اللاجنسيين'
+        bi_health_month: 'شهر التوعية بصحة الأشخاص مزدوجي الميول الجنسي'
+        holocaust_remembrance_day: 'اليوم الدولي لتذكر ضحايا المحرقة النازية'
+        family_equality_day: 'اليوم الدولي للمساواة الأسرية'
+        aro_month: 'شهر التوعية باللاعاطفية رومانسية'
+        black_ribbon_day: 'يوم الشريط الأسود'
+        black_queer_week: 'أسبوع التاريخي للمثليين السود'
+        mena_lesbian_day: 'يوم فخر المثليات في الغرب الآسيوي وشمال أفريقيا'
+        hate_crime_awareness_week: 'أسبوع التوعية بالجرائم الكراهية'
+        deaf_awareness_week: 'أسبوع التوعية بالمثليين الصم'
+        suicide_prevention_day: 'اليوم العالمي لمنع الانتحار'
+        suicide_prevention_month: 'شهر منع الانتحار'
+        aids_awareness_month: 'شهر التوعية بمرض الإيدز'
+        genderfluid_week: 'أسبوع التوعية بالأشخاص بين الجنسين'
+        pan_week: 'أسبوع الشمولية الجنسية'
+        parents_day: 'يوم الوالدين المثليين'
+        hiv_testing_day: 'اليوم الدولي لفحص فيروس نقص المناعة البشرية'
+        freedressing_day: 'يوم الحرية في اللباس'
+        sexual_health_day: 'يوم التوعية بالصحة الجنسية'
+        world_sexual_health_day: 'اليوم العالمي للصحة الجنسية'
+        aids_vaccine_day: 'اليوم العالمي للقاح الإيدز'
+        queer_youth_day: 'يوم الشباب المثليين'
+        omnisexual_day: 'يوم  التوعية بوجود الجنسانية الشاملة'
+        unlabeled_day: 'يوم التوعية بوجود الأشخاص غير المصنفين جنسيًا'
+        trans_youth_day: 'يوم التوعية بوجود الأطفال والشباب المتحولين جنسيًا'
+        hiv_long_term_survivors_day: 'يوم التوعية بالمصابين بفيروس نفس المناعة البشرية منذ فترة طويلة'
+        women_hiv_awareness_day: 'يوم التوعية بالنساء والفتيات المصابين بفيروس نقص المناعة البشرية/مرض الإيدز'
+        youth_hiv_awareness_day: 'يوم التوعية بالشباب المصابين بفيروس نقص المناعة البشرية/مرض الإيدز'
+        gay_hiv_awareness_day: 'يوم التوعية بالرجال المثليين المصابين بفيروس نقص المناعة البشرية/مرض الإيدز'
+        black_hiv_awareness_day: 'يوم التوعية بالأشخاص السود المصابين بفيروس نقص المناعة البشرية/مرض الإيدز'
+        hiv_aging_awareness_day: 'يوم التوعية  بفيروس نقص المناعة البشرية/مرض الإيدز والشيخوخة'
+        trans_hiv_testing_day: 'يوم فحص فيروس نقص المناعة البشرية للمتحولين جنسيًا'
+        mspec_lesbian_day: 'يوم التوعية بوجود المثليات الشاملات جنسيًا'
+        mspec_lesbian_week: 'أسبوع التوعية بوجود المثليات الشاملات جنسيًا'
+        mspec_gay_day: 'يوم التوعية بوجود المثلية الشاملة للجنس'
+        mspec_gay_week: 'أسبوع التوعية بوجود المثلية الشاملة للجنس'
+        spring_testing_week: 'الأسبوع الأوروبي  لفحص فيروس نقص المناعة البشرية/الإيدز في الربيع'
+        autumn_testing_week: 'الأسبوع الأوروبي  لفحص فيروس نقص المناعة البشرية/الإيدز في الخريف'
+        sex_worker_day: 'اليوم الدولي للعاملات والعاملين الجنسيين'
+        equal_pay_day: 'يوم التوعية بمساواة الأجر للمثليين'
+        sex_worker_pride: 'فخر العاملات والعاملين الجنسيين'
+        sex_worker_rights_day: 'اليوم الدولي لحقوق للعاملات والعاملين الجنسيين'
+        sex_worker_violence_day: 'اليوم الدولي لإنهاء العنف ضد العاملات والعاملين الجنسيين'
+        omnisexual_omniromantic_day: 'يوم فخر الجنسانية والرومانسية الشاملة'
+        omnisexual_awareness_day: 'يوم التوعية بالجنسانية والرومانسية الشاملة'
+        hiv_is_not_a_crime: 'يوم التوعية بأن فيروس نقص المناعة البشرية ليست جريمة'
+        trans_flag_day: 'يوم علم المتحولين جنسيًا'
+        alan_turing_day: 'يوم الحقوق المتساوي للمثليين (تكريمًا لآلآن تورينغ)'
+        nonbinary_kids_day: 'يوم الأطفال غير الثنائيين'
+        masc_lesbian_week: 'أسبوع التوعية للمثليات الظاهرات بالذكورية'
+        masc_lesbian_day: 'يوم التوعية للمثليات الظاهرات بالذكورية'
+        trans_history_month: 'شهر تاريخ المتحوليين جنسيًا'
+        transition_week: 'أسبوع الانتقال'
+        bi_creators_day: 'يوم صناع ازدواجية التوجه الجنسي'
+        wrath_month: 'شهر الغضب المثلي'
+        lesbian_aunts_day: 'يوم العمات المثليات'
+    banner: 'نحن نحتفل ب'
+    celebrating_custom: 'يحتفل به'
+    celebrating_day: 'يحتفل به في يوم'
+    celebrating_week: 'يحتفل به في'
+    celebrating_month: 'يحتفل به في'
     image:
-        header: 'Download an image'
+        header: 'تحميل صورة'
     view:
-        grid: 'Grid view'
-        list: 'Events list'
-    link: 'Link'
-    full: 'Full calendar'
+        grid: 'العرض بالطريقة الشبكية'
+        list: 'قائمة الأحداث'
+    link: 'الرابط'
+    full: 'اليومية الكاملة'
 
 ukraine:
     header: 'نحن نقف مع أوكرانيا.'
